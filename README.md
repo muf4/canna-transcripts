@@ -2,5 +2,10 @@
 Cannabis breeding and growing-related transcriptions from non-written sources
 
 # Credits
-The Pot Cast - @the_pot_cast | https://www.youtube.com/@The_Pot_Cast
-JADAM | https://www.youtube.com/@JADAMORGANIC
+
+| Author | Link |
+| --- | --- |
+| The Pot Cast | https://www.youtube.com/@The_Pot_Cast |
+| JADAM | https://www.youtube.com/@JADAMORGANIC |
+| Future Cannabis Project | https://www.youtube.com/@FCP1 - https://www.youtube.com/@FCP2 |
+| The Breeders Syndicate | https://www.youtube.com/@BreedersSyndicate |
