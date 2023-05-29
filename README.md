@@ -9,3 +9,4 @@ Cannabis breeding and growing-related transcriptions from non-written sources
 | JADAM | https://www.youtube.com/@JADAMORGANIC |
 | Future Cannabis Project | https://www.youtube.com/@FCP1 </br> https://www.youtube.com/@FCP2 |
 | The Breeders Syndicate | https://www.youtube.com/@BreedersSyndicate |
+| Shaping Fire | https://www.youtube.com/@ShangoLos |
