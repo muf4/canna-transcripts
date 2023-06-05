@@ -12,3 +12,4 @@ Cannabis breeding and growing-related transcriptions from non-written sources
 | Shaping Fire | https://www.youtube.com/@ShangoLos |
 | Calyx & Crew Podcast | https://www.youtube.com/@CalyxCrewPodcast |
 | Restore Hemp | https://www.youtube.com/@RestoreHemp |
+| Cornell SIPS | https://www.youtube.com/user/CornellHorticulture |
