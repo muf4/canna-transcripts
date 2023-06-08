@@ -1,0 +1,452 @@
+[00:01.660 --> 00:25.300]  I'm going to talk about surface temperature measurements using infrared
+[00:25.300 --> 00:30.440]  radiometers. If you have any questions while I'm talking feel free to raise
+[00:30.440 --> 00:34.880]  your hand and ask and I'll do my best to address it. I have lots of slides unlike
+[00:34.880 --> 00:39.920]  Bruce so we're going to shift technologies just a little bit. Surface
+[00:39.920 --> 00:43.120]  temperature can be a very important variable in lots of environmental
+[00:43.120 --> 00:48.560]  applications and I'm going to talk about it more in relation to plants today but
+[00:48.560 --> 00:52.800]  bear in mind that you can use infrared technology to measure soil surface
+[00:52.800 --> 00:57.720]  temperatures, snow surface temperatures, roadways if you're interested in road
+[00:57.720 --> 01:06.640]  conditions for example. The three key components to an infrared radiometer
+[01:06.640 --> 01:11.080]  listed here you have to have a radiation detector, you have to have an internal
+[01:11.080 --> 01:16.960]  temperature sensor, and then you have to have a housing to contain the two and be
+[01:16.960 --> 01:21.960]  rugged so that it's stable in changing environmental conditions.
+[01:21.960 --> 01:35.400]  The basic operation is as follows. We all know from from physics that all
+[01:35.400 --> 01:42.360]  objects that have a temperature above absolute zero emit infrared radiation.
+[01:42.440 --> 01:46.760]  Whatever you point the sensor at is going to be emitting infrared radiation
+[01:46.760 --> 01:53.760]  towards the sensor. In this case it's a plant canopy and the sensor itself has
+[01:53.760 --> 01:58.000]  the temperature above absolute zero so it's also going to be emitting radiation
+[01:58.000 --> 02:03.120]  back out so to speak. The signal that's actually measured by the
+[02:03.120 --> 02:08.720]  radiation detector inside the radiometer is proportional on this
+[02:08.720 --> 02:12.360]  difference between the absorbed radiation that's coming from the surface
+[02:12.360 --> 02:15.960]  that you're pointing it at and the emitted radiation from the detector
+[02:15.960 --> 02:24.560]  itself. Those signals can be quite small. An example of a common infrared
+[02:24.560 --> 02:31.400]  radiometer output 60 microvolts that's 0.06 millivolts per degree C
+[02:31.400 --> 02:35.040]  difference between the target that you're looking at and the temperature of
+[02:35.200 --> 02:41.160]  the sensor itself. What this means is if you're making an analog measurement of
+[02:41.160 --> 02:44.840]  this, you're measuring the voltage directly, you need a high-resolution
+[02:44.840 --> 02:51.640]  voltmeter in order to measure that small signal and to get an accurate number.
+[02:51.640 --> 02:57.280]  I've listed here about one microvolt is required. You have to have a high-end
+[02:57.440 --> 03:06.460]  data logger or voltmeter to do this. When the absorbed radiation, the amount of
+[03:06.460 --> 03:11.580]  radiation coming in is less than the amount of radiation going out, then the
+[03:11.580 --> 03:15.660]  radiation balance at the detector itself is negative and you'll get a negative
+[03:15.660 --> 03:21.540]  voltage. The opposite is true when you have more radiation coming in than
+[03:21.540 --> 03:26.260]  what's going out. The radiation balance at the detector is positive and you'll
+[03:26.260 --> 03:30.660]  get a positive voltage rather than a negative voltage. In addition to
+[03:30.660 --> 03:36.420]  needing a voltmeter that can measure small signals in the microvolt range, you
+[03:36.420 --> 03:44.380]  also need one that can measure polarity both positive and negative voltages.
+[03:44.380 --> 03:53.920]  I mentioned a minute ago that we all remember from physics
+[03:53.920 --> 03:58.880]  radiation and temperature are closely linked. All objects with a temperature
+[03:58.880 --> 04:05.000]  above absolute zero emit radiation. The actual equation that quantifies the
+[04:05.000 --> 04:10.400]  relationship between the two is called the Stefan-Boltzmann equation where the
+[04:10.400 --> 04:15.240]  energy emitted by an object in this place, in this case it's a plant
+[04:15.240 --> 04:21.200]  canopy, is equal to a constant that's the sigma times the fourth power of the
+[04:21.200 --> 04:27.920]  absolute temperature. If we're able to to measure the radiation being emitted
+[04:27.920 --> 04:32.320]  or the energy being emitted by an object, then we can calculate the temperature and
+[04:32.320 --> 04:40.800]  that's the basic premise for how these infrared sensors work.
+[04:40.800 --> 04:45.080]  Another important component of infrared sensors that I didn't actually list on the
+[04:45.080 --> 04:50.320]  previous slide is the the filter that goes in front of the radiation detector.
+[04:50.320 --> 04:55.320]  Radiation detectors tend to be black bodies meaning they're good
+[04:55.320 --> 04:59.680]  absorbers of all the wavelengths of radiation that are incident on them.
+[04:59.680 --> 05:03.280]  Remember we only want to measure the wavelengths that are related to the
+[05:03.280 --> 05:09.200]  temperature of the surface. In order to build a radiometer that measures
+[05:09.200 --> 05:13.760]  what we're interested in, we have to put a filter in front of it to give us the
+[05:13.760 --> 05:19.280]  just the wavelengths of radiation that we're interested in. The radiation
+[05:19.280 --> 05:23.960]  detector should include a filter that blocks all of the long wave radiation
+[05:23.960 --> 05:28.720]  that's outside of what we call the atmospheric window. The atmospheric
+[05:28.720 --> 05:33.320]  window is the wavelengths between 8 and 14 micron and I have a graph here that
+[05:33.320 --> 05:40.360]  shows wavelength on the x-axis from 5 to 20 micron and then transmittance of the
+[05:40.360 --> 05:47.840]  atmosphere on the y-axis. The reason we choose 8 to 14 micron is that's the
+[05:47.840 --> 05:52.520]  the wavelength range that's called the atmospheric window and it's essentially
+[05:52.520 --> 05:57.480]  the the wavelengths where the atmosphere is transparent to long wave radiation.
+[05:57.480 --> 06:05.040]  Meaning if you point a sensor with a filter that has 8 to 14 micron window on
+[06:05.040 --> 06:09.760]  it that that radiation is going to come through the atmosphere rather than be
+[06:09.760 --> 06:15.640]  absorbed by the molecules water vapor and CO2 in the
+[06:15.640 --> 06:21.880]  atmosphere. It's just the the wavelengths where the sensor sees
+[06:21.880 --> 06:30.320]  through the atmosphere so to speak. Below 8 micron there's lots of absorption by
+[06:30.320 --> 06:37.080]  water vapor molecules and above 14 micron there's lots of absorption by
+[06:37.080 --> 06:43.760]  carbon dioxide molecules. We want to try to measure the the surface radiation
+[06:43.800 --> 06:48.680]  and not the atmospheric radiation therefore we need a filter that matches
+[06:48.680 --> 06:56.080]  the atmospheric window. Just to give you an idea of calibration I got a couple
+[06:56.080 --> 07:01.280]  quick pictures right here. This shows the calibration system that we use at
+[07:01.280 --> 07:06.520]  Apogee instruments to calibrate infrared radiometers and there's lots of these
+[07:06.520 --> 07:09.840]  things commercially available and we're going to let you play around with some
+[07:09.840 --> 07:15.040]  of these handheld devices later. You can get models like this really cheaply at
+[07:15.040 --> 07:20.240]  the hardware store and you point them at the surface that you want you pull the
+[07:20.240 --> 07:24.000]  trigger and it gives you a temperature. I just measure the temperature of the
+[07:24.000 --> 07:30.640]  floor as 71 Fahrenheit or if we convert it to Celsius about 22 Celsius.
+[07:30.640 --> 07:35.600]  These are fine especially for demonstration purposes or just
+[07:35.600 --> 07:39.960]  spot checks where high accuracy isn't required. The main difference between
+[07:39.960 --> 07:44.280]  something like this that you can buy at the hardware store for a few dollars and
+[07:44.280 --> 07:49.800]  something like this that we manufacture at Apogee instruments is really the
+[07:49.800 --> 07:56.200]  calibration. Something like this the accuracy is probably one to two Celsius.
+[07:56.200 --> 08:05.560]  Here I'm just showing the the sensors. The uncertainty of the the calibration
+[08:05.560 --> 08:10.800]  is about 0.2 Celsius. There's an order of magnitude difference between the
+[08:10.800 --> 08:17.400]  accuracy of something like this and a research grade instrument. What you're
+[08:17.400 --> 08:22.040]  looking at here is actually a two component system and it's kind of hard
+[08:22.040 --> 08:26.720]  to see it but in the next slide I think it will become clear. There's this cap
+[08:26.720 --> 08:31.960]  piece that sits on top of a large piece of aluminum. The piece of aluminum has a big
+[08:31.960 --> 08:38.420]  hole in it shaped like a cone and that's painted flat black. We use that as the
+[08:38.420 --> 08:42.520]  black-body radiation source that we can fine-tune the temperatures and get
+[08:42.520 --> 08:48.400]  specific values of temperature independent of the the sensor
+[08:48.400 --> 08:52.800]  temperatures themselves. This cap piece is another block of aluminum that has a
+[08:52.800 --> 08:58.840]  bunch of holes in it that you can slide the sensors into and then independently
+[08:58.840 --> 09:04.400]  control their temperature. What you have is a target or the black-body cone
+[09:04.400 --> 09:08.560]  and a cap that fit together but we can independently control the temperatures
+[09:08.560 --> 09:14.640]  of the two and set this temperature at one value and the sensors at a
+[09:14.640 --> 09:20.040]  different value and derive a whole set of data that allows us to get sensor
+[09:20.040 --> 09:24.960]  specific calibration coefficients for all the radiometers. We can fine-tune
+[09:24.960 --> 09:31.480]  it to 0.2 C uncertainty. Just to give you an idea there's the actual
+[09:31.480 --> 09:36.680]  calibration device with the cap piece pulled off of it so you can see that
+[09:36.680 --> 09:43.920]  it's a black-body. I have another one a small one that we'll use for a really
+[09:43.920 --> 09:49.360]  brief demonstration later. This is called a Leslie cube or if you look
+[09:49.360 --> 09:53.720]  it up on the internet sometimes it's called professor's Leslie's cube. I don't
+[09:53.720 --> 09:57.200]  know who professor Leslie is but I'd like to meet him someday because it's a
+[09:57.200 --> 10:01.720]  really simple and powerful device that we'll use in a few minutes to illustrate
+[10:01.720 --> 10:08.200]  the concept of emissivity. Essentially what you're looking at here and what
+[10:08.200 --> 10:11.960]  you're looking at here are similar devices that you can use to calibrate
+[10:12.000 --> 10:22.020]  the instruments. Once you have a functional sensor that's calibrated
+[10:22.020 --> 10:26.260]  and you take it to the field to make measurements, it's not just a simple
+[10:26.260 --> 10:29.620]  matter of putting the sensor out there and recording the temperature that it
+[10:29.620 --> 10:34.340]  gives you and accepting that as the true value of surface temperature. We
+[10:34.340 --> 10:39.620]  actually have to correct for emissivity effects. Emissivity is just the
+[10:39.620 --> 10:44.700]  fraction of black-body emittance. Something like this black-body cone
+[10:44.700 --> 10:48.900]  here, the black-body cone that I showed you on the previous slide, they have very
+[10:48.900 --> 10:55.020]  high emissivities well over 0.99 meaning they're almost black bodies. A black body
+[10:55.020 --> 11:01.420]  is a perfect emitter meaning it emits all of the theoretically possible
+[11:01.420 --> 11:07.500]  radiation for its temperature. Something that has an emissivity less than one is
+[11:07.500 --> 11:12.620]  often called a gray body and it's basically it's not a perfect emitter
+[11:12.620 --> 11:17.940]  meaning it emits some fraction of radiation less than it otherwise would
+[11:17.940 --> 11:24.700]  if it were a black body. Emissivity is how we quantify the fraction of
+[11:24.700 --> 11:32.180]  black-body emittance. If you have a surface with an emissivity of one for
+[11:32.180 --> 11:37.980]  example, the only radiation coming from the surface that arrives at the sensor
+[11:37.980 --> 11:45.500]  is radiation that was emitted by the surface. If you have a surface
+[11:45.500 --> 11:51.020]  that's not a black body so the emissivity is less
+[11:51.020 --> 11:56.220]  than one here we'll say 0.98 which is a pretty good estimate of emissivity for a
+[11:56.220 --> 12:01.540]  plant canopy. That means most of the radiation incident on the detector is
+[12:01.580 --> 12:05.940]  coming from the surface of interest but there's actually a small fraction of
+[12:05.940 --> 12:11.060]  radiation coming from the background and if it's outside the background is the
+[12:11.060 --> 12:17.420]  sky. There will be a small fraction of radiation incident at the surface that's
+[12:17.420 --> 12:24.860]  coming from the sky. The reason why is that the long wave reflection at the
+[12:24.860 --> 12:32.860]  surface is 1 minus the emissivity. If our emissivity is 0.98 that
+[12:32.860 --> 12:40.620]  means our reflection of long wave is 0.02. Essentially you have 98%
+[12:40.620 --> 12:44.620]  of your radiation is coming from the plants which we're trying to measure and
+[12:44.620 --> 12:49.260]  2% is coming from the background or the sky because being reflected off of
+[12:49.260 --> 12:55.100]  the plant surface towards the radiometer. You might ask yourself why
+[12:55.100 --> 13:01.820]  is that a big deal? The plant temperature and sky
+[13:01.820 --> 13:06.340]  temperature might not be the same number. If they are the same number, if they're
+[13:06.340 --> 13:10.420]  close to the same number, it doesn't matter if you're reflecting a small
+[13:10.420 --> 13:15.540]  fraction of the sky radiation towards the sensor. It's similar to the plant
+[13:15.540 --> 13:19.180]  canopy temperature but if the sky temperature is significantly different
+[13:19.180 --> 13:28.980]  it can lead to errors. We can correct for this effect with a relatively
+[13:28.980 --> 13:33.220]  simple equation and the equations listed up here. I won't go through the
+[13:33.220 --> 13:38.060]  derivation but the information that you need to go into the equation to correct
+[13:38.060 --> 13:42.940]  for emissivity are the actual measured temperature itself which we get from the
+[13:42.940 --> 13:47.300]  sensor. Then you need some measurement or estimate of the background
+[13:47.300 --> 13:51.700]  temperature and then a measurement or estimate of the surface emissivity.
+[13:51.700 --> 13:58.140]  You see once we have those numbers they go in the equation here and give us a
+[13:58.140 --> 14:05.540]  estimate of the the true surface temperature. Just by way of example on a
+[14:05.540 --> 14:10.980]  clear day the background temperature and again if we're outdoors this is the sky
+[14:10.980 --> 14:17.980]  can be really cold in the 8 to 14 wavelength range that the temperature
+[14:17.980 --> 14:22.740]  sensor is measuring. We might measure a surface temperature of a plant canopy of
+[14:22.740 --> 14:29.460]  25 Celsius. A clear day the sky temperature is negative 40 Celsius.
+[14:29.460 --> 14:34.620]  If our plant canopy emissivity is 0.98 our actual surface temperature is
+[14:35.180 --> 14:40.140]  about a degree higher close to 26 Celsius than the measured temperature.
+[14:40.140 --> 14:45.780]  Emissivity can have a big impact on temperature measurements and it's
+[14:45.780 --> 14:51.580]  important that we account for it if our application requires accuracy better
+[14:51.580 --> 14:59.380]  than you know a degree Celsius or so. Just to give you another example on a
+[14:59.380 --> 15:04.820]  cloudy day we'll assume again a measured temperature of 25 Celsius but
+[15:04.820 --> 15:08.780]  on a cloudy day the sky temperature isn't nearly as cold as it is on a
+[15:08.780 --> 15:13.740]  clear day. 15 Celsius is a much better estimate of background temperature on a
+[15:13.740 --> 15:18.620]  cloudy day. Again assuming a plant canopy temperature of 0.98 now the
+[15:18.620 --> 15:23.260]  surface temperature the true surface temperature is only about 0.2 Celsius
+[15:23.260 --> 15:31.140]  above what our sensor gave us. The emissivity effect will vary with the
+[15:31.140 --> 15:38.260]  sky conditions. Clear sky is cold, cloudy the sky is warm. When we get a break
+[15:38.260 --> 15:43.620]  we'll actually walk outside with some of these low-cost handheld infrared sensors
+[15:43.620 --> 15:47.420]  and you can point them up and measure the temperature of the sky and measure
+[15:47.420 --> 15:53.220]  the temperature of the surface and get a feel for how big the differences are.
+[15:54.180 --> 16:00.340]  This table just shows a handful of emissivity values for environmental
+[16:00.340 --> 16:07.100]  surfaces and some man-made surfaces concrete and polished aluminum.
+[16:07.100 --> 16:11.980]  Fortunately most of the surfaces that we're interested in measuring things
+[16:11.980 --> 16:17.700]  like plant leaves and plant canopies, soil, water, they're close to black bodies.
+[16:17.700 --> 16:23.540]  Not quite because none of them have an emissivity of 1. Deep plant canopies that
+[16:23.540 --> 16:31.300]  have a lot of leaves can be really close to black bodies 0.99 in some cases.
+[16:31.300 --> 16:35.660]  The emissivity effect tends to be small in environmental applications but again
+[16:35.660 --> 16:40.700]  it can be quite important especially if we have clear sky conditions.
+[16:40.700 --> 16:46.580]  This just gives you an idea of background temperature. Clear sky will be very cold,
+[16:46.580 --> 16:50.620]  overcast sky will be near air temperature. This is a simple equation
+[16:50.620 --> 16:56.700]  that we derived in Logan Utah that you can use to estimate the background
+[16:56.700 --> 17:02.500]  temperature or the sky temperature in the 8 to 14 micron range. You take the
+[17:02.500 --> 17:09.620]  the air temperature and you add 50 times the fraction of clouds and then subtract 60.
+[17:09.620 --> 17:15.940]  The fraction of clouds is basically what percentage of the
+[17:15.940 --> 17:24.300]  hemisphere of sky is cloud cover and what percentage is clear.
+[17:24.300 --> 17:32.500]  Let's take a quick break. I'm about maybe halfway through and we have a break for tea
+[17:32.500 --> 17:38.820]  time in just a few minutes. I'm going to ask if James would go fill our little
+[17:38.820 --> 17:45.380]  Leslie cube full of hot water and just show you the emissivity effect in real
+[17:45.380 --> 17:47.180]  time.
+[17:47.180 --> 17:51.700]  Just hot water from the toilet, just put it in right there, fill it all the way.
+[17:51.700 --> 17:58.180]  All we're going to do is I have a couple infrared sensors here and
+[17:58.180 --> 18:03.260]  when we take a break you're welcome to play around with these. It's a
+[18:03.260 --> 18:07.980]  really simple power button and then you point it at what you want to measure and
+[18:08.100 --> 18:13.100]  it outputs the temperature on the screen in Celsius. For example if I
+[18:13.100 --> 18:20.580]  pointed at the ceiling and we get around 22 Celsius, I pointed at the floor we get
+[18:20.580 --> 18:25.140]  about the same number and that makes sense. The room here is essentially
+[18:25.140 --> 18:29.220]  the same temperature and so the surfaces in the room should be about the same
+[18:29.220 --> 18:34.820]  temperature. All we're going to do is measure the blackbody surface of
+[18:34.820 --> 18:41.580]  the Leslie cube and then the side of the Leslie cube. Take a look at these
+[18:41.580 --> 18:48.300]  numbers for a second and I can tell you the side of the Leslie cube it's
+[18:48.300 --> 18:53.540]  polished stainless steel. Polished aluminum has an emissivity of around
+[18:53.540 --> 18:59.660]  0.03 to 0.05. Polished stainless steel will be something similar. I don't know
+[18:59.660 --> 19:03.540]  the exact number but it will be something similar. What we're going to do
+[19:03.540 --> 19:09.620]  is fill the the Leslie cube full of hot water. We know that the
+[19:09.620 --> 19:14.900]  blackbody cone of the Leslie cube is close to a blackbody so its emissivity
+[19:14.900 --> 19:21.420]  is very near one. Any ideas what the temperature of the blackbody cone will
+[19:21.420 --> 19:27.060]  be versus the stainless steel side of the Leslie cube if we measure it with
+[19:27.060 --> 19:33.500]  one of these sensors? Let's just assume the water temperature will be 50 or 60
+[19:33.540 --> 19:43.120]  Celsius. What should the blackbody cone surface temperature be?
+[19:43.120 --> 19:49.720]  It should be close to the true temperature because it's a
+[19:49.720 --> 19:55.160]  blackbody meaning it's emitting the maximum amount of radiation it
+[19:55.160 --> 20:00.800]  should emit for that temperature. What about if we pointed at the side of
+[20:00.880 --> 20:06.560]  the Leslie cube and measure the polished aluminum surface what should
+[20:06.560 --> 20:17.480]  the temperature be? What's that? Yeah, y22. We should see a temperature that's
+[20:17.480 --> 20:23.200]  pretty close to the room temperature because remember 1 minus the emissivity
+[20:23.200 --> 20:28.000]  is the long wave reflectivity. Let's just assume that the emissivity of
+[20:28.000 --> 20:35.120]  this flat side is 0.05 that means 95% of the radiation that we're measuring
+[20:35.120 --> 20:39.840]  should be reflected from the room. We should see something that's maybe
+[20:39.840 --> 20:45.520]  about 22 Celsius because the ceiling and the floor were about 22 when we
+[20:45.520 --> 20:50.320]  measured them. I'll turn it on and I don't know how well you can see the
+[20:50.320 --> 20:53.360]  screen I'll yell out the numbers for those of you that can't see the screen.
+[20:53.360 --> 21:00.080]  If we pointed at the blackbody surface and the unit actually does some
+[21:00.080 --> 21:05.120]  averaging and so it's up to temperature now it looks like it's about 38.6
+[21:05.120 --> 21:14.320]  Celsius. Now if I pointed at the panel on the side we're getting about 26
+[21:14.320 --> 21:20.560]  Celsius so not quite as cold as the 22 that I measured on the floor and
+[21:20.720 --> 21:25.760]  that might be because the emissivity is actually a little bit higher maybe the
+[21:25.760 --> 21:30.960]  emissivity is like 0.1 or 0.2. What we're actually doing is getting an
+[21:30.960 --> 21:35.240]  average temperature somewhere between the true temperature and the room
+[21:35.240 --> 21:39.560]  temperature because the emissivity is somewhere between 0 and 1 and I don't
+[21:39.560 --> 21:51.680]  know exactly what it is. Oh increase the distance, sure. This is an
+[21:51.680 --> 21:55.840]  excellent question because you're actually jumping ahead in my slides. The
+[21:55.840 --> 22:00.120]  next thing I'm going to talk about in my slideshow is the field of view and so
+[22:00.120 --> 22:05.840]  what happens is if we put it right up next to the blackbody we should measure
+[22:05.840 --> 22:12.600]  something around 38 and again we are about 38.4. If I slowly start to
+[22:12.600 --> 22:21.680]  move it away in the front row what's happening? It's getting colder and
+[22:21.680 --> 22:27.440]  colder so now we're about probably 12 centimeters maybe 14 centimeters away
+[22:27.440 --> 22:32.160]  and we're reading 30 instead of 38. What's happening is we're moving it
+[22:32.160 --> 22:40.040]  further and further from the blackbody we're seeing more and more within the
+[22:40.040 --> 22:43.720]  footprint that this thing measures and so now we're starting to move it away
+[22:43.720 --> 22:48.800]  and we're seeing the the sides where it's polished aluminum in addition to
+[22:48.880 --> 22:54.400]  the blackbody and that's determined by the the field of view of the sensor.
+[22:54.400 --> 22:59.400]  I might actually be able to do another demonstration. Let me see if I have a
+[22:59.400 --> 23:02.320]  light in my bag.
+[23:02.320 --> 23:06.320]  Let me make a comment while you're getting set up for that.
+[23:06.320 --> 23:13.480]  If you look on the internet for manufacturers of infrared radiometers
+[23:13.480 --> 23:18.280]  you will see some manufacturers that sell an instrument with a dial on the
+[23:18.280 --> 23:24.360]  back that is allegedly corrects for emissivity and they say this is a
+[23:24.360 --> 23:28.920]  terrific feature our instruments more accurate because we dial in
+[23:28.920 --> 23:34.520]  emissivity. What they do is take the reading and multiply it by the emissivity.
+[23:34.520 --> 23:36.960]  Actually they divide by the emissivity.
+[23:36.960 --> 23:43.040]  Or divide, but it often makes the measurement worse instead of better
+[23:43.040 --> 23:47.280]  because they're not including the reflected radiation that Mark's
+[23:47.280 --> 23:53.200]  talking about. So boy does that confuse a lot of people. They act like this is a
+[23:53.200 --> 23:59.720]  simple dial you can just correct for this and it drives people that
+[23:59.720 --> 24:04.560]  know what they're doing crazy because it confuses the issue. You can't just take a
+[24:04.560 --> 24:08.040]  dial and correct for emissivity.
+[24:08.040 --> 24:14.160]  Good point Bruce. So if you have infrared radiometers that have a dial on them
+[24:14.160 --> 24:18.560]  that allow you to tune it to the emissivity of the surface I would
+[24:18.560 --> 24:23.360]  strongly recommend that you set that dial to one so that it doesn't make that
+[24:23.360 --> 24:26.960]  correction. Actually it will make the correction. It'll take the measurement
+[24:26.960 --> 24:31.600]  and it'll divide it by one so you get the actual measurement. Then use the
+[24:31.600 --> 24:36.200]  equation that I gave you on the previous slide to make the emissivity correction
+[24:36.200 --> 24:39.360]  the right way.
+[24:39.400 --> 24:44.160]  Alright so if there's no more questions about emissivity. Yeah go ahead.
+[24:44.160 --> 24:48.640]  Sorry we've got real problems with emissivity down in Antarctica because our
+[24:48.640 --> 24:53.880]  moss temperatures in the full Sun and it can get up to 20 degrees Celsius and the
+[24:53.880 --> 24:57.560]  air temperature is obviously much colder than that. So if we use infrared
+[24:57.560 --> 25:03.280]  sensors down there we're finding a low degree of accuracy. Also the mosses
+[25:03.280 --> 25:09.240]  the emissivity can change according to their wet, dry, underwater, frozen, whatever.
+[25:09.240 --> 25:16.240]  Right. Is there any quick solution for correcting for emissivity if the
+[25:16.240 --> 25:20.640]  emissivity is changing over time? I think the answer to that is you have to
+[25:20.640 --> 25:26.440]  actually characterize the emissivity. You need to know what it is within
+[25:26.440 --> 25:30.440]  whatever degrees of uncertainty you're comfortable with in order to use the
+[25:30.440 --> 25:34.960]  equation that I've shown here. So there are ways to measure the emissivity
+[25:34.960 --> 25:40.920]  and if you want I can give you some direction with regards to papers in the
+[25:40.920 --> 25:46.920]  literature that will describe how to measure emissivity. But yeah in order to
+[25:46.920 --> 25:49.960]  use the equation to correct for emissivity you have to have a pretty good
+[25:49.960 --> 25:58.680]  handle on it. You need to know what it is. Yeah. But most you can get close by
+[25:58.680 --> 26:05.360]  looking it up because you look at water 0.96 to 0.98 biological surfaces are
+[26:05.360 --> 26:12.480]  full of water and so they're always in 0.96 to 0.98 like our skin is a high
+[26:12.480 --> 26:20.360]  emissivity because it's hydrated, it's full of water. Now sometimes it matters if it's 0.96 or
+[26:20.360 --> 26:25.840]  it's 0.98 but biological surfaces that are full of water are always a high
+[26:25.840 --> 26:32.280]  emissivity. But still you can have significant errors if you don't do anything about it.
+[26:32.280 --> 26:36.360]  I think it's because the moss temperature is so different from the
+[26:36.360 --> 26:41.320]  air temperature even a slight difference in emissivity can drastically alter
+[26:41.320 --> 26:48.440]  your measurements. There's no doubt. My examples only showed I had an
+[26:48.440 --> 26:52.640]  example for a clear sky and a cloudy sky but I could have just easily had an
+[26:52.640 --> 26:57.600]  example for clear sky with an emissivity of 0.98 and clear sky with an
+[26:57.640 --> 27:04.280]  emissivity of 0.95 and we could look at the error there. There will be an
+[27:04.280 --> 27:08.560]  error as a function of emissivity and so if you don't know the exact emissivity
+[27:08.560 --> 27:11.400]  either have to live with that uncertainty or you have to measure the
+[27:11.400 --> 27:18.440]  emissivity so you know what it is. Any other questions? Let's talk about
+[27:18.440 --> 27:26.200]  field of view for a second. The actual area or the footprint that's
+[27:26.200 --> 27:31.120]  being measured by the radiometer will depend on three things. One of them is
+[27:31.120 --> 27:36.320]  the field of view of the radiometer, one of them is the mounting height or the
+[27:36.320 --> 27:39.480]  distance of the radiometer from the surface that you're trying to measure,
+[27:39.480 --> 27:44.240]  and the other one is the angle of the radiometer whether it's looking straight
+[27:44.240 --> 27:52.400]  down or at an angle. The field of view of the radiometer is defined as
+[27:52.400 --> 27:59.440]  the angle or the half angle of the cone apex where the cone base is the area
+[27:59.440 --> 28:05.840]  surface being measured and the apex is right here. Just to illustrate this
+[28:05.840 --> 28:11.560]  particular model has a half angle field of view of 22 degrees or a full angle
+[28:11.560 --> 28:16.980]  field of view of 44 degrees. The best way that I like to think of field of
+[28:16.980 --> 28:20.520]  view and the best way that I like to illustrate it is with a flashlight and
+[28:20.520 --> 28:25.080]  this is not necessarily a flashlight it's just a pen with an LED on the end
+[28:25.080 --> 28:30.280]  but I think I can make it work for demonstration purposes. We're all
+[28:30.280 --> 28:35.360]  familiar if we go into a dark room and we hold a flashlight close to the wall
+[28:35.360 --> 28:41.440]  and perpendicular to the wall we get a small circle where it's pretty high
+[28:41.440 --> 28:47.320]  intensity light. Then if we start moving the flashlight away from the
+[28:47.320 --> 28:55.240]  wall the circle gets bigger spreads out. If we hold the pen or the flashlight
+[28:55.240 --> 28:58.840]  next to the wall and then we start to angle it so it's no longer perpendicular
+[28:58.840 --> 29:07.240]  to the wall the footprint or the spot on the wall it now spreads out into an
+[29:07.240 --> 29:12.600]  ellipse rather than a circle. The field of view of a radiometer is
+[29:12.600 --> 29:19.200]  analogous to the spot or the light dot that a flashlight makes on a wall. If
+[29:19.200 --> 29:23.480]  your radiometer is perpendicular to the surface that you're trying to measure
+[29:23.480 --> 29:29.920]  it's going to have a footprint of a circle. If you're pretty close to the
+[29:29.920 --> 29:33.480]  surface you're trying to measure that footprint is going to be small. If you
+[29:33.480 --> 29:38.520]  move the radiometer further from the surface the footprint gets bigger and
+[29:38.520 --> 29:43.640]  bigger meaning you're averaging more and more of the ground area into the
+[29:43.640 --> 29:50.200]  temperature measurement. Just like when we moved the flashlight away from the
+[29:50.200 --> 29:56.000]  wall not only did the circle get bigger but it got less and less intense.
+[29:56.000 --> 30:01.600]  If your radiometer is perpendicular to the surface you see a circle as
+[30:01.600 --> 30:10.020]  soon as you start to angle it the footprint spreads out into an ellipse.
+[30:10.020 --> 30:15.100]  Here are the different field of view options of infrared sensors that Apogee
+[30:15.100 --> 30:19.100]  builds and other companies that make infrared radiometers are likely to have
+[30:19.100 --> 30:23.860]  different fields of view. There's three of them that have a circular field of
+[30:23.860 --> 30:28.820]  view just different angles that make the footprint either a little bit smaller or
+[30:28.820 --> 30:33.060]  a little bit larger. Then this one has a horizontal field of view. This one's
+[30:33.060 --> 30:39.420]  actually designed to look at row crops. The field of view is wide in this
+[30:39.420 --> 30:45.220]  dimension but narrow in this dimension. If you orient it
+[30:45.220 --> 30:51.060]  horizontally like this with row crops looking that are running this way then
+[30:51.060 --> 30:55.300]  you can try to minimize the soil that is in the field of view and maximize the
+[30:55.300 --> 31:02.300]  plant area that's in the field of view using a horizontal field of view.
+[31:02.300 --> 31:06.900]  What often comes up is that's all well and good I understand that putting it
+[31:06.900 --> 31:10.180]  close to the surface gives me a small footprint and moving it away from the
+[31:10.180 --> 31:15.100]  surface gives me a big footprint but how do I actually attach numbers to the
+[31:15.100 --> 31:20.420]  footprint? There's a tool that you can find on the Apogee instruments web page
+[31:20.420 --> 31:27.460]  that allows you to calculate in dimensions of meter squared how much
+[31:27.460 --> 31:34.140]  land area am I going to see if I have a sensor with this field of view for
+[31:34.140 --> 31:39.940]  example, this height above the surface for example, and this angle from
+[31:39.940 --> 31:46.180]  perpendicular. You have to know three numbers in order to to get a footprint
+[31:46.180 --> 31:51.700]  calculation. You have to know the the field of view of the radiometer, the
+[31:51.700 --> 31:55.860]  height above the surface that you've mounted your radiometer, and then the
+[31:55.860 --> 32:00.660]  angle of the radiometer from perpendicular. Once you input those
+[32:00.660 --> 32:05.100]  three numbers into the calculator it will spit out meter squared of ground
+[32:05.100 --> 32:10.020]  area that you that you're going to actually measure on the ground.
+[32:10.020 --> 32:15.220]  Another question that comes up often in relation to field of view is what do I
+[32:15.260 --> 32:20.020]  do in this situation where I have partial canopy cover? Maybe it is row
+[32:20.020 --> 32:25.660]  crops or maybe it's a forest where the trees are are fairly sparse and you're
+[32:25.660 --> 32:29.660]  trying to measure the plant canopy temperature but you have all of the soil
+[32:29.660 --> 32:36.260]  that you see in the background. A couple techniques and I won't spend too
+[32:36.260 --> 32:40.860]  much time on these. One way that you can deal with this is angle the radiometer
+[32:40.860 --> 32:45.900]  to try to maximize the canopy within the field of view. You can see if
+[32:45.900 --> 32:49.740]  it's looking straight down you're going to see something like you know half of
+[32:49.740 --> 32:56.820]  the area within the footprint is soil and the other half is plants. Now if
+[32:56.820 --> 33:01.300]  you angle it most of what you see is in the in the area is plants. You might
+[33:01.300 --> 33:07.660]  still have a little sliver of soil here that you see but by angling it you can
+[33:07.660 --> 33:13.380]  try to get more plant area and less soil area in the footprint. Another way
+[33:13.380 --> 33:17.180]  that you can deal with this is you can measure or estimate the soil temperature
+[33:17.180 --> 33:23.940]  and then approximate the fractions of canopy and fraction of soil that are
+[33:23.940 --> 33:31.620]  within the field of view. You can use a simple equation to try to estimate
+[33:31.620 --> 33:36.700]  the canopy temperature if you know roughly what the fraction of canopy is
+[33:36.740 --> 33:42.900]  and the fraction of soil is and the soil temperature. The inputs you need here
+[33:42.900 --> 33:49.980]  are this is the actual measured surface temperature from the sensor. This would
+[33:49.980 --> 33:55.620]  be a measurement or estimate of the soil temperature. This one is the fraction of
+[33:55.620 --> 33:59.860]  canopy in the field of view and one minus that number is the fraction of
+[33:59.860 --> 34:04.180]  soil within the field of view. If you have reasonable estimates of soil
+[34:04.220 --> 34:08.300]  temperature and then the fraction of field of view that's occupied by canopy
+[34:08.300 --> 34:14.820]  and soil you can try to estimate canopy temperature from the data and
+[34:14.820 --> 34:18.260]  eliminate the soil temperature if canopy temperature is the number that
+[34:18.260 --> 34:27.260]  you're looking for. I have a few more slides that deal with an application of
+[34:27.380 --> 34:33.820]  infrared measurements of surface temperature or we can take time for tea.
+[34:33.820 --> 34:40.220]  You want to see the application? It won't take too much time. I'll try to be
+[34:40.220 --> 34:49.180]  brief. Just a real quick summary of infrared thermometry or infrared
+[34:49.180 --> 34:55.860]  radiometry. Small signals require a high-resolution voltmeter. That's if you
+[34:55.860 --> 35:01.140]  have an analog sensor. Nowadays a lot of sensors have analog to digital
+[35:01.140 --> 35:05.900]  converters on board the sensor and then they output digital signals like SDI-12
+[35:05.900 --> 35:11.180]  or Modbus. If you want to make surface temperature measurements but
+[35:11.180 --> 35:15.260]  you don't have a way to measure these small voltages that doesn't mean you
+[35:15.260 --> 35:19.100]  can't make the measurement it just means you need to buy a version that outputs a
+[35:19.100 --> 35:24.860]  digital signal like Modbus or SDI-12. Emissivity correction is required. We
+[35:24.860 --> 35:28.660]  spent quite a bit of time on that one. Remember the radiometer averages
+[35:28.660 --> 35:32.740]  everything within the field of view. If you have things within the field of
+[35:32.740 --> 35:37.140]  view that you don't want to see, you either have to reposition the sensor to
+[35:37.140 --> 35:41.620]  eliminate them from the field of view or if it's the case of plant canopies and
+[35:41.620 --> 35:46.300]  soil there's ways you can try to estimate one temperature if you know
+[35:46.300 --> 35:53.020]  the other. To move on to the application really quick. In the past
+[35:53.020 --> 35:57.980]  we've often made stomatal conductance measurements with these little handheld
+[35:57.980 --> 36:02.380]  devices or sometimes they're not little. This is a full
+[36:02.380 --> 36:07.180]  photosynthesis system from Likor. Some of you may be familiar with this. This is a
+[36:07.180 --> 36:12.940]  porometer from Decagon. They allow you to clamp on to leaves and measure
+[36:12.940 --> 36:17.860]  stomatal conductance. These are great instruments but all you get is the
+[36:17.860 --> 36:22.300]  stomatal conductance of a single leaf that you clamped on. It also
+[36:22.380 --> 36:25.500]  requires a person to be in the field with the instrument to make the
+[36:25.500 --> 36:31.940]  measurement. A few years ago myself and Bruce and one of our colleagues set
+[36:31.940 --> 36:38.220]  out to use infrared radiometers to try to measure plant canopy stomatal
+[36:38.220 --> 36:45.420]  conductance automatically. Basically using weather data and with the addition
+[36:45.420 --> 36:49.580]  of an infrared measurement of the canopy temperature to estimate stomatal
+[36:49.580 --> 36:55.060]  conductance. I won't spend too much time here but you're looking at a picture
+[36:55.060 --> 37:01.940]  of the the surface energy balance. The equations over here are all the
+[37:01.940 --> 37:06.540]  equations necessary to describe the surface energy balance and the number
+[37:06.540 --> 37:12.140]  that we're interested in here is the plant canopy stomatal conductance.
+[37:12.140 --> 37:17.860]  Without going into detail we can rearrange all of the equations that are
+[37:17.860 --> 37:26.380]  shown here for the surface and we can solve for this number. Everything is
+[37:26.380 --> 37:30.580]  described in the paper on this slide and if you're interested in the paper I can
+[37:30.580 --> 37:36.780]  easily send you a PDF of it. When we do that it gives us an equation that
+[37:36.780 --> 37:42.660]  that calculates plant canopy stomatal conductance if we have these
+[37:42.660 --> 37:46.740]  measurements or estimates. We have to have the canopy temperature, air
+[37:46.740 --> 37:53.060]  temperature, humidity, radiation, wind speed, and then some information about
+[37:53.060 --> 37:59.500]  the height of the plants and the leaf area index. In the previous slide I was
+[37:59.500 --> 38:04.180]  showing a picture of one of our weather stations and so here's where we're
+[38:04.180 --> 38:08.980]  getting all of our our weather data. Then all of these things that you see here
+[38:08.980 --> 38:13.780]  are the infrared radiometers and these ones are looking at a corn canopy. This
+[38:13.820 --> 38:19.340]  was in Nebraska I believe. I'll just show you some data where we actually
+[38:19.340 --> 38:26.420]  calculated stomatal conductance from the measurements that we made. What you're
+[38:26.420 --> 38:32.500]  looking at here is canopy stomatal conductance on the y-axis and then x-axis
+[38:32.500 --> 38:39.500]  says day of year. This is day of year 195 through day of year 206. Those
+[38:39.540 --> 38:44.060]  would be roughly mid-july or right in the middle of the summer in the
+[38:44.060 --> 38:49.020]  northern hemisphere. There's two lines on this stomatal conductance graph
+[38:49.020 --> 38:54.500]  here, a green line and a black line. The green line is actually a model
+[38:54.500 --> 38:58.500]  calculation of canopy stomatal conductance and we're calling it
+[38:58.500 --> 39:05.740]  potential conductance. What it is is an estimate of what we expect the
+[39:05.900 --> 39:11.020]  canopy stomatal conductance to be if the plants are well watered and not
+[39:11.020 --> 39:16.260]  stressed. Then the black line is our actual data, the canopy stomatal
+[39:16.260 --> 39:20.460]  conductance that we calculated from our weather measurements and our measurement
+[39:20.460 --> 39:26.460]  of the canopy temperature from the infrared sensor. You can see these
+[39:26.460 --> 39:32.100]  couple days here the black line matches the green line pretty well indicating
+[39:32.140 --> 39:37.180]  the plants are well watered because the calculated values of stomatal
+[39:37.180 --> 39:41.980]  conductance are matching the modeled values and again the modeled values
+[39:41.980 --> 39:47.180]  give us what we expect the theoretical value to be for well watered conditions.
+[39:47.180 --> 39:52.500]  Then you can see for a few days in a row the black line is well below the
+[39:52.500 --> 39:56.980]  green line meaning the actual values are well under the potential values
+[39:56.980 --> 40:03.340]  indicating the plants are water stressed. Then over here it jumps back
+[40:03.340 --> 40:09.740]  up again and we have two or three days where the actual matches the potential
+[40:09.740 --> 40:14.500]  pretty well before it starts to go down. You can see the same thing in this graph
+[40:14.500 --> 40:19.940]  here, this is just the ratio of the two so you take the black line divided by
+[40:19.940 --> 40:25.180]  the green line. If we're near one it means the two match, if we're below one
+[40:25.180 --> 40:29.500]  it means the black line is lower than the green line. Any ideas what
+[40:29.500 --> 40:35.060]  happened right here where it jumps up?
+[40:36.460 --> 40:44.220]  Well you can see it declines there. Mother Nature irrigated we got almost an
+[40:44.220 --> 40:49.740]  inch of rainfall. The cornfield that I showed was naturally irrigated and
+[40:49.820 --> 40:55.780]  when the rain fell it bumped back up like we would expect it to do.
+[40:55.780 --> 41:00.660]  This is just one application that you could potentially pursue with infrared
+[41:00.660 --> 41:04.980]  measurements. They can give you information about plant canopy water
+[41:04.980 --> 41:09.060]  status and plant response to their environment. Here we're looking at still
+[41:09.060 --> 41:16.700]  model response. One more graph this just shows a plot of the potential value so a
+[41:16.700 --> 41:21.820]  reference value on this axis and then the actual value or calculated value on
+[41:21.820 --> 41:27.660]  this axis. This is from the exact same experiment in Nebraska in the United
+[41:27.660 --> 41:32.980]  States and it was corn. All we're doing here is plotting the two for the
+[41:32.980 --> 41:38.260]  days immediately after rainfall when we expect that our actual value should
+[41:38.260 --> 41:43.540]  match our model value and indeed that's what we get. As long as the plants are
+[41:43.540 --> 41:47.220]  well watered the two numbers match so it indicates that our method of getting
+[41:47.220 --> 41:55.940]  actual is working pretty well. The outliers are possibly when the canopy
+[41:55.940 --> 42:01.020]  was wet. You'll get data that don't necessarily match the model if
+[42:01.020 --> 42:07.860]  the leaf surfaces are wet. That's all I have for still model conductance for
+[42:07.860 --> 42:13.020]  the application. Are there any questions about any of the IR measurement details
+[42:13.020 --> 42:21.300]  that we covered? Any questions about this specific application?

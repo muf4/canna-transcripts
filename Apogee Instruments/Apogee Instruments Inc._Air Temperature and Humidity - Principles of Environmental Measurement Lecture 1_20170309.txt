@@ -1,0 +1,754 @@
+[00:01.660 --> 00:27.150]  I'm Bruce Bugbee. We are here because I
+[00:27.150 --> 00:28.890]  got asked to give a talk at a conference
+[00:28.890 --> 00:31.690]  next week in Canberra. It's a controlled
+[00:31.690 --> 00:35.730]  environments conference and that brought
+[00:35.730 --> 00:38.770]  us over here and Apogee along with
+[00:38.770 --> 00:41.930]  Peter has got a booth there, but we took
+[00:41.930 --> 00:44.370]  the opportunity to come early to talk
+[00:44.370 --> 00:47.890]  about environmental instrumentation. What
+[00:47.890 --> 00:49.650]  we're going to talk about is really some
+[00:49.650 --> 00:52.130]  basic stuff and I can see lots of you
+[00:52.130 --> 00:53.970]  are interested in remote sensing and
+[00:53.970 --> 00:57.170]  that's on the list toward the end, the
+[00:57.170 --> 00:59.810]  hyperspectral imaging, those techniques.
+[00:59.810 --> 01:02.330]  But of course as you all know that stuff
+[01:02.330 --> 01:05.290]  has to be ground truth and how well do
+[01:05.290 --> 01:06.850]  we make the measurements on the ground
+[01:06.850 --> 01:09.050]  to do that. Now some of you do modeling
+[01:09.050 --> 01:12.490]  and models need good data and boy it's
+[01:12.490 --> 01:15.010]  no surprise to know that a lot of the
+[01:15.010 --> 01:16.930]  data we put in models is not the highest
+[01:17.010 --> 01:20.090]  quality data, so it leads to some
+[01:20.090 --> 01:23.890]  problems. Mark and I have worked
+[01:23.890 --> 01:30.010]  together for a long time on making better
+[01:30.010 --> 01:33.250]  environmental measurements and along the
+[01:33.250 --> 01:36.770]  way we develop better instruments.
+[01:36.770 --> 01:39.690]  I teach a class in environmental
+[01:39.690 --> 01:42.570]  instrumentation at the University, Utah
+[01:42.570 --> 01:45.530]  State University, and we've done other
+[01:45.570 --> 01:49.410]  workshops on this, on these instruments
+[01:49.410 --> 01:50.930]  and that's what we're going to try and
+[01:50.930 --> 01:52.930]  get through today. We're going to
+[01:52.930 --> 01:54.570]  make it up a little as we go because of
+[01:54.570 --> 01:58.330]  the timing of trying to get through as
+[01:58.330 --> 02:01.570]  much as we can and leave you with the
+[02:01.570 --> 02:03.850]  resources to pursue everything in more
+[02:03.850 --> 02:07.170]  detail at the end of this. I want to
+[02:07.170 --> 02:10.730]  set some of the stage.
+[02:10.730 --> 02:13.530]  We're going to treat
+[02:13.530 --> 02:16.930]  this a little like a class and we have
+[02:16.930 --> 02:19.250]  plenty of these. We got our first
+[02:19.250 --> 02:22.370]  handout and this is just a
+[02:22.370 --> 02:25.050]  what you see on the
+[02:25.050 --> 02:31.850]  screen. We'll do our best to get to
+[02:31.850 --> 02:34.530]  everything in here. I really appreciate
+[02:34.530 --> 02:37.090]  Marcus and the University. This is a
+[02:37.090 --> 02:41.890]  great classroom. All the high-tech
+[02:41.930 --> 02:47.010]  imaging stuff to present for you.
+[02:47.010 --> 02:48.890]  Some of you may have seen this quote before,
+[02:48.890 --> 02:52.610]  but it's meant as a joke, but
+[02:52.610 --> 02:54.650]  boy there's a lot of truth in this
+[02:54.650 --> 02:57.610]  statement. Everybody believes a
+[02:57.610 --> 02:59.290]  measurement except the guy who made it
+[02:59.290 --> 03:01.690]  and nobody believes a model except the
+[03:01.690 --> 03:04.130]  guy who came up with the model.
+[03:04.130 --> 03:07.570]  The gist of this is we ought to be pretty
+[03:07.570 --> 03:10.130]  skeptical of measurements. Some of these
+[03:10.130 --> 03:11.530]  measurements we're talking about are
+[03:11.690 --> 03:14.170]  hard to make and when you're the guy
+[03:14.170 --> 03:15.930]  making them you realize how hard they
+[03:15.930 --> 03:17.650]  are to make and then a modeler grabs the
+[03:17.650 --> 03:19.450]  numbers and well it's been shown that
+[03:19.450 --> 03:23.370]  this and this. This is a great
+[03:23.370 --> 03:25.570]  quote to keep coming back to as a
+[03:25.570 --> 03:30.570]  reference point. Then this quote,
+[03:30.570 --> 03:36.050]  let me put these halfway
+[03:36.050 --> 03:39.570]  down so that we can see the screen just
+[03:39.610 --> 03:42.650]  a bit better. Let me couple this quote
+[03:42.650 --> 03:49.960]  with a parallel quote. Never believe an
+[03:49.960 --> 03:52.360]  observation unless it can be
+[03:52.360 --> 04:01.440]  substantiated with theory.
+[04:01.440 --> 04:03.360]  You can see that fine
+[04:03.360 --> 04:07.600]  dark wise. Really our
+[04:07.600 --> 04:09.680]  measurements alone aren't going to
+[04:09.680 --> 04:12.320]  get us where we need to be and models
+[04:12.320 --> 04:14.000]  alone aren't going to get us to where we
+[04:14.000 --> 04:15.520]  need to be. We're going back and forth
+[04:15.520 --> 04:19.720]  constantly and people making measurements
+[04:19.720 --> 04:21.840]  need to be aware of the theory behind
+[04:21.840 --> 04:24.000]  the measurements so you can tell when
+[04:24.000 --> 04:27.520]  you're collecting bad data. People making
+[04:27.520 --> 04:30.040]  models need to work closely with people
+[04:30.040 --> 04:32.240]  making measurements so they can assess
+[04:32.240 --> 04:35.520]  the quality of the data. Model
+[04:35.520 --> 04:37.680]  skills and measurement skills for
+[04:37.680 --> 04:41.240]  starters have been largely neglected.
+[04:41.240 --> 04:43.560]  We talk about the Internet of
+[04:43.560 --> 04:45.240]  things, we just throw thousands of
+[04:45.240 --> 04:47.240]  low-cost sensors out there and oh great
+[04:47.240 --> 04:49.920]  what a recipe for disaster to collect a
+[04:49.920 --> 04:52.720]  lot of bad data fast. If you
+[04:52.720 --> 04:54.720]  understand the principles which we hope
+[04:54.720 --> 04:57.320]  to review, you can tell when the
+[04:57.320 --> 05:00.080]  measurements aren't of the highest
+[05:00.080 --> 05:02.640]  quality and when you should be skeptical
+[05:02.640 --> 05:05.640]  and hopefully prevent proliferation of
+[05:05.640 --> 05:08.800]  bad stuff. These are two general
+[05:08.800 --> 05:13.440]  principles leading to this. We're
+[05:13.440 --> 05:15.200]  starting with measurement of air
+[05:15.200 --> 05:17.440]  temperature, just the most fundamental
+[05:17.440 --> 05:20.400]  thing. Everybody puts air
+[05:20.400 --> 05:22.080]  temperature in the models, it's a basis
+[05:22.080 --> 05:26.360]  for all kinds of things. As you'll
+[05:26.360 --> 05:28.840]  see one of the key measurements that's
+[05:28.840 --> 05:31.880]  very powerful is surface to air
+[05:31.880 --> 05:35.400]  temperature difference and leaf to air
+[05:35.440 --> 05:37.480]  temperature difference. That's a
+[05:37.480 --> 05:39.200]  powerful measurement because we can tell
+[05:39.200 --> 05:41.160]  how fast the plants are transpiring
+[05:41.160 --> 05:43.560]  water. Mark is going to talk about
+[05:43.560 --> 05:45.920]  infrared measurements of surface in just
+[05:45.920 --> 05:49.520]  a few minutes. What we found as we
+[05:49.520 --> 05:52.520]  pursued this more and more for irrigation
+[05:52.520 --> 05:55.640]  scheduling and for hydration of plants
+[05:55.640 --> 05:58.280]  is our measurements of the surface
+[05:58.280 --> 06:00.680]  temperature were often better than
+[06:00.680 --> 06:02.440]  our measurements of the air temperature.
+[06:02.440 --> 06:05.440]  As a company that led us to come
+[06:05.440 --> 06:07.480]  back to air temperature measurements
+[06:07.480 --> 06:10.040]  and look at challenges with doing that.
+[06:10.040 --> 06:13.040]  This is many years. I'm going to start
+[06:13.040 --> 06:16.280]  with air temperature measurement and
+[06:16.280 --> 06:23.920]  with luck, single screen, external video.
+[06:23.920 --> 06:35.070]  If we can pull this up,
+[06:39.350 --> 06:43.830]  it should be external video.
+[06:43.830 --> 06:46.390]  I may have to push the HDMI
+[06:46.390 --> 06:51.710]  again. There it is. This is the first
+[06:51.710 --> 06:53.830]  slide from a talk of this, just
+[06:53.830 --> 06:57.150]  principles of measuring air temperature.
+[06:57.270 --> 07:00.310]  We're going to talk about two things.
+[07:00.310 --> 07:02.870]  The type of sensor that we do use to
+[07:02.870 --> 07:05.430]  measure air temperature and then how we
+[07:05.430 --> 07:09.510]  shield that sensor from radiation. You
+[07:09.510 --> 07:11.510]  think how hard can it be to measure air
+[07:11.510 --> 07:13.390]  temperature, but if you put a thermometer
+[07:13.390 --> 07:17.790]  out and they almost always read high. If
+[07:17.790 --> 07:20.350]  there's any radiation coming into that
+[07:20.350 --> 07:22.870]  sensor it goes high. It's not the correct
+[07:22.990 --> 07:27.590]  air temperature. Now we're talking
+[07:27.590 --> 07:29.510]  about automated measurements. Everything
+[07:29.510 --> 07:31.470]  we talk about is automated, hooked up to
+[07:31.470 --> 07:33.550]  a data acquisition system. Now we got
+[07:33.550 --> 07:38.070]  electronic temperature sensors. In
+[07:38.070 --> 07:40.310]  the history of weather measurement we
+[07:40.310 --> 07:42.150]  have collected a lot of bad data with
+[07:42.150 --> 07:45.030]  higher air temperatures than really
+[07:45.030 --> 07:47.830]  exist because of radiation hitting the
+[07:47.830 --> 07:51.270]  sensor and going above air temperature.
+[07:51.390 --> 07:55.870]  Let's take a look at some radiation
+[07:55.870 --> 07:59.910]  shields. This is very basic stuff. You
+[07:59.910 --> 08:01.510]  look at all the weather stations out
+[08:01.510 --> 08:03.710]  there collecting data and the vast
+[08:03.710 --> 08:06.150]  majority have one of these multi-plate
+[08:06.150 --> 08:09.510]  shields on them. We all pat ourselves
+[08:09.510 --> 08:11.950]  in the back and say yes that's shielded.
+[08:11.950 --> 08:14.910]  The sensors up inside this and the sun
+[08:14.910 --> 08:18.030]  can't hit it and the wind blows and
+[08:18.030 --> 08:20.310]  cools it off and we've got a great
+[08:20.350 --> 08:23.270]  measurement of air temperature. That's
+[08:23.270 --> 08:26.510]  true if the wind is blowing and the sun
+[08:26.510 --> 08:29.070]  is not shining too brightly, but what
+[08:29.070 --> 08:31.790]  happens if the wind is not blowing fast
+[08:31.790 --> 08:34.910]  and the sun is shining right on it or if
+[08:34.910 --> 08:37.170]  the sun is coming at somewhat of a low
+[08:37.170 --> 08:39.590]  angle and it comes right into this thing.
+[08:39.590 --> 08:44.870]  These we have shown in publications can
+[08:44.870 --> 08:49.110]  have errors of 3 degrees C for air
+[08:49.110 --> 08:51.470]  temperature. This is not a trivial error.
+[08:51.470 --> 08:52.990]  It doesn't happen all the time, but they
+[08:52.990 --> 08:57.070]  can have errors this big. A record was a
+[08:57.070 --> 08:59.950]  place over snow in the mountains of Utah
+[08:59.950 --> 09:02.190]  in the winter where the sun reflected
+[09:02.190 --> 09:04.590]  off the snow and hit these things. We
+[09:04.590 --> 09:07.390]  measured a 13 degree C temperature
+[09:07.390 --> 09:12.110]  error with a static shield like this.
+[09:12.110 --> 09:14.390]  Now we're people working on models of
+[09:14.390 --> 09:17.030]  snow melt. If they use that data
+[09:17.030 --> 09:19.390]  their models are way off. There are huge
+[09:19.390 --> 09:22.470]  errors with this. What's the solution?
+[09:22.470 --> 09:24.790]  Well manufacturers of static shields
+[09:24.790 --> 09:27.510]  work on different plate configurations
+[09:27.510 --> 09:29.990]  and different designs, but they still
+[09:29.990 --> 09:33.150]  have problems when the wind isn't
+[09:33.150 --> 09:36.350]  blowing. Wind blowing means three
+[09:36.350 --> 09:41.030]  meters a second is enough to minimize
+[09:41.030 --> 09:43.510]  the errors, but that's a reasonable
+[09:43.510 --> 09:45.790]  breeze. What about all the data collect
+[09:45.830 --> 09:48.710]  when the wind isn't blowing? The next
+[09:48.710 --> 09:52.270]  level up from this is to go with one of
+[09:52.270 --> 09:55.230]  these kinds of sensors, shields rather,
+[09:55.230 --> 09:58.070]  which has a fan in it. It's an
+[09:58.070 --> 10:01.950]  aspirated shield and now the wind is
+[10:01.950 --> 10:04.750]  blowing all the time. The sensors inside
+[10:04.750 --> 10:07.710]  and protected, those are far more
+[10:07.710 --> 10:11.150]  accurate. They greatly minimize these
+[10:11.150 --> 10:14.150]  errors. Now we're talking errors of a few
+[10:14.190 --> 10:16.470]  tenths of a degree C instead of whole
+[10:16.470 --> 10:21.670]  degree C. Why don't we just all
+[10:21.670 --> 10:24.190]  switch to these if they're
+[10:24.190 --> 10:27.270]  demonstrably more accurate. The problem
+[10:27.270 --> 10:30.910]  is they're expensive and they require
+[10:30.910 --> 10:34.070]  power. If you're at a remote station
+[10:34.070 --> 10:37.830]  with solar power, some of these shields
+[10:37.830 --> 10:42.670]  take somewhere between 250 to 400
+[10:42.710 --> 10:44.750]  milliamps and you start to do the
+[10:44.750 --> 10:47.550]  calculations, you need a really big panel
+[10:47.550 --> 10:50.150]  and a really big battery to run those or
+[10:50.150 --> 10:54.710]  you need AC power. We don't have AC
+[10:54.710 --> 10:57.950]  power so this was the state several
+[10:57.950 --> 11:00.670]  years ago and we said we got to have
+[11:00.670 --> 11:02.150]  better measurements of air temperature.
+[11:02.150 --> 11:04.710]  We started a research project to
+[11:04.710 --> 11:07.390]  design a better shield and that resulted
+[11:07.390 --> 11:10.150]  in this shield here which has a
+[11:10.190 --> 11:13.990]  Qanda radius inlet and we were able to
+[11:13.990 --> 11:17.670]  get a shield that takes 30 to 80
+[11:17.670 --> 11:20.950]  milliamps of power. It's got a
+[11:20.950 --> 11:23.830]  variable speed fan that can slow down.
+[11:23.830 --> 11:25.750]  If you don't need the high-speed fan you
+[11:25.750 --> 11:29.270]  can slow it down. The sun isn't shining,
+[11:29.270 --> 11:30.630]  you don't have to have the fan on so
+[11:30.630 --> 11:34.870]  high. We made this aspirated shield
+[11:34.870 --> 11:37.110]  with much lower power and it can be now
+[11:37.110 --> 11:42.270]  used on solar-powered stations.
+[11:42.270 --> 11:46.270]  The cost is less, considerably less than
+[11:46.270 --> 11:51.870]  these. That's the shield story. Anytime
+[11:51.870 --> 11:53.910]  you look at temperature data depending
+[11:53.910 --> 11:56.630]  on what you're doing, we ought to be
+[11:56.630 --> 11:59.710]  skeptical about the wind speed at the
+[11:59.710 --> 12:01.710]  site. If it's a site with high wind
+[12:01.710 --> 12:04.510]  speeds we're probably fine with the
+[12:04.510 --> 12:07.110]  static shields, but if it's a site that
+[12:07.110 --> 12:09.830]  doesn't always have high wind speeds be
+[12:09.830 --> 12:15.350]  careful of the temperature data.
+[12:15.350 --> 12:20.510]  We can have greater confidence in temperature data taken at night time than in day time.
+[12:20.510 --> 12:23.310]  Absolutely, good point. At night time
+[12:23.310 --> 12:26.230]  there's no radiation coming in and that
+[12:26.230 --> 12:31.270]  data should be accurate. We're interested in minimum temperature.
+[12:31.270 --> 12:34.950]  Yes, and it's even better if there's
+[12:34.950 --> 12:37.190]  some breeze at night, but the problem is
+[12:37.190 --> 12:41.630]  greatly diminished at night. In fact
+[12:41.630 --> 12:43.750]  that's somehow when we're doing rigorous
+[12:43.750 --> 12:45.830]  tests at these we check to see that
+[12:45.830 --> 12:48.430]  everything lines up at night and that's
+[12:48.430 --> 12:50.830]  our reference. Now we wait for the
+[12:50.830 --> 12:54.430]  next day with the sun.
+[12:54.430 --> 12:57.350]  Minimum temperatures, which almost
+[12:57.350 --> 12:59.670]  always occur at night, are much more
+[12:59.670 --> 13:01.830]  accurate than maximum. Think of how many
+[13:01.830 --> 13:03.630]  models we have that are min-max
+[13:03.630 --> 13:06.270]  temperature from old data stations. The
+[13:06.270 --> 13:09.150]  min's fine and the max is the daily max
+[13:09.150 --> 13:11.510]  every day is one or two degrees too high.
+[13:11.510 --> 13:16.030]  That's a big error and that's our data
+[13:16.030 --> 13:17.750]  set that we're working with, historic
+[13:17.750 --> 13:20.990]  data set, but now we know, yikes, some of
+[13:20.990 --> 13:27.750]  our predictions are based on data that
+[13:27.750 --> 13:30.430]  has trouble. A couple other slides of
+[13:30.430 --> 13:33.310]  this, most widely measured variable.
+[13:33.310 --> 13:36.950]  Lots of people are studying this problem.
+[13:36.950 --> 13:40.990]  20 peer-reviewed papers in the last 14
+[13:40.990 --> 13:42.230]  years, there's a bunch of them here,
+[13:42.230 --> 13:45.270]  that's just example. We're going to make
+[13:45.270 --> 13:47.710]  these slides available as PDFs so you
+[13:47.710 --> 13:49.990]  can sit and study this stuff in great
+[13:49.990 --> 13:54.750]  detail. This problem is not trivial
+[13:54.750 --> 13:56.430]  as evidenced by the number of people
+[13:56.550 --> 13:59.150]  studying it. Most of these are on shield
+[13:59.150 --> 14:00.910]  designs and they're academic studies.
+[14:00.910 --> 14:02.390]  They built a shield to tell you the
+[14:02.390 --> 14:06.230]  errors of other stuff, but they're not
+[14:06.230 --> 14:10.950]  designed to yield
+[14:10.950 --> 14:14.150]  commercial solutions.
+[14:14.150 --> 14:17.390]  Ross is it?
+[14:17.390 --> 14:27.910]  Thank you for asking that. If we
+[14:27.910 --> 14:31.110]  go back to those shields, as soon as you
+[14:31.110 --> 14:35.230]  get, and now I'm not sure how well I can
+[14:35.230 --> 14:37.390]  go back, but as soon as you get moisture
+[14:37.390 --> 14:39.150]  on a static shield, which happens a lot
+[14:39.150 --> 14:41.470]  if it's raining or misting or fogging or
+[14:41.470 --> 14:44.790]  even at night condensation on the shield,
+[14:44.790 --> 14:47.390]  now it reads too low because they've got
+[14:47.390 --> 14:50.190]  evaporative cooling and it's below the
+[14:50.190 --> 14:53.510]  true air temperature. That problem is
+[14:53.510 --> 14:56.030]  also diminished by an aspirated shield
+[14:56.030 --> 14:59.470]  which is drawing the air through it.
+[14:59.470 --> 15:02.110]  We've seen that a lot when there's any
+[15:02.110 --> 15:03.550]  kind of moisture on the shield you
+[15:03.550 --> 15:08.070]  always get evaporative cooling.
+[15:08.070 --> 15:09.910]  By the way, now that Peter's got my coffee, I
+[15:09.910 --> 15:11.710]  got to tell you how fun it is to come to
+[15:11.710 --> 15:13.510]  Australia and drink your coffee. It's
+[15:13.550 --> 15:18.910]  terrific. I love good coffee and this
+[15:18.910 --> 15:21.270]  morning at the hotel I'm complimenting
+[15:21.270 --> 15:22.710]  them on the great coffee and they said
+[15:22.710 --> 15:24.470]  yeah we visited the United States and
+[15:24.470 --> 15:28.270]  your coffee is for shit, they said.
+[15:28.270 --> 15:31.870]  It is. What a joy to come here and
+[15:31.870 --> 15:36.190]  have a coffee. I did reverse order.
+[15:36.190 --> 15:37.670]  There's shields, now we're going to talk a
+[15:37.670 --> 15:41.550]  little bit about sensors. There's
+[15:41.550 --> 15:44.310]  three kinds of sensors that people can
+[15:44.310 --> 15:48.950]  put in shields and here they are.
+[15:48.950 --> 15:52.270]  Thermocouples, time-honored thermocouples.
+[15:52.270 --> 15:55.390]  They're cheap, you can run dozens of them,
+[15:55.390 --> 15:59.190]  hook them up to a datalogger. Thermistors
+[15:59.190 --> 16:04.350]  and platinum resistance thermometers or
+[16:04.350 --> 16:07.230]  platinum resistance thermistors. These
+[16:07.230 --> 16:09.070]  are the three categories that are
+[16:09.270 --> 16:12.830]  fundamentally used. This is a thermistor
+[16:12.830 --> 16:15.790]  that's super tiny. The first point
+[16:15.790 --> 16:20.110]  here is small is always better with a
+[16:20.110 --> 16:24.190]  temperature sensor because it stays in
+[16:24.190 --> 16:26.230]  better equilibrium with the air
+[16:26.230 --> 16:29.390]  temperature. All of these
+[16:29.390 --> 16:31.670]  are pretty tiny sensors. This is only
+[16:31.670 --> 16:33.870]  three millimeters. We have to put the old
+[16:33.870 --> 16:36.030]  units for people in the United States on
+[16:36.030 --> 16:40.030]  the screen. These are all pretty
+[16:40.030 --> 16:43.470]  small sensors. Platinum resistance
+[16:43.470 --> 16:45.790]  thermometers have long been
+[16:45.790 --> 16:47.990]  thought to be the gold standard for
+[16:47.990 --> 16:50.630]  temperature measurement. They're very
+[16:50.630 --> 16:52.710]  small signal but they're rugged,
+[16:52.710 --> 16:56.190]  they're stable, they're expensive, and
+[16:56.190 --> 16:59.270]  they're slightly bigger. Now I want
+[16:59.270 --> 17:01.790]  to show you the problems with platinum
+[17:01.790 --> 17:05.430]  resistance thermometers. Thermistors,
+[17:05.830 --> 17:10.110]  in our experience, are very underrated as
+[17:10.110 --> 17:12.470]  a technology for measuring air
+[17:12.470 --> 17:16.110]  temperature. They got a bad rap years ago
+[17:16.110 --> 17:18.430]  because if moisture gets in a thermistor
+[17:18.430 --> 17:21.310]  it can cause drift, but if you can
+[17:21.310 --> 17:23.990]  prevent moisture from getting inside
+[17:23.990 --> 17:28.110]  the sensor, not water but humidity, then
+[17:28.110 --> 17:30.710]  thermistors are very very stable.
+[17:30.710 --> 17:33.550]  This is an epoxy coated thermistor
+[17:33.550 --> 17:37.670]  that we found to be very stable in very
+[17:37.670 --> 17:40.670]  rugged environments and it's a much
+[17:40.670 --> 17:45.910]  bigger signal. In our experience this is
+[17:45.910 --> 17:49.390]  a sensor of choice compared to PRTs.
+[17:49.390 --> 17:52.470]  Even if cost was no object it's a sensor
+[17:52.470 --> 17:56.150]  of choice. Thermocouples are the least
+[17:56.150 --> 17:58.110]  accurate of the three. They require
+[17:58.110 --> 18:00.630]  reference temperatures and they're
+[18:00.630 --> 18:02.430]  just the least accurate of the three
+[18:02.430 --> 18:04.430]  although they're cheap you can
+[18:04.430 --> 18:09.150]  make a lot of thermocouples.
+[18:09.150 --> 18:11.790]  Small is better.
+[18:11.790 --> 18:16.950]  PRTs are not all the same. People think
+[18:16.950 --> 18:19.350]  oh I have a PRT, yeah well what kind of
+[18:19.350 --> 18:22.270]  a PRT? You can study this a bit
+[18:22.270 --> 18:25.270]  later. There's class C, B, A, 1 3rd, 1 10th,
+[18:25.270 --> 18:28.430]  DIN, and here's the accuracy specs.
+[18:28.430 --> 18:31.190]  Here's this yellow bead that we've
+[18:31.190 --> 18:33.710]  really liked and we sell this with the
+[18:33.710 --> 18:37.750]  shields. 0.1 degree C accuracy, these are
+[18:37.750 --> 18:41.670]  the relative cost of these. Now we did it.
+[18:41.670 --> 18:43.390]  I'm going to show you a tiny bit of data
+[18:43.390 --> 18:46.750]  in which we compared these two sensors.
+[18:46.750 --> 18:50.870]  A class A with an epoxy bead. You
+[18:50.870 --> 18:53.110]  can see they have similar specifications.
+[18:53.110 --> 18:56.230]  How did this come out? What we did was put
+[18:56.230 --> 18:58.190]  them in an accelerated aging chamber
+[18:58.190 --> 19:00.510]  where we cycle the temperature up and
+[19:00.510 --> 19:03.030]  down, up and down, in high humidity to
+[19:03.030 --> 19:05.350]  try and cause failures of the sensor.
+[19:05.350 --> 19:07.390]  Accelerated aging is one of the
+[19:07.390 --> 19:10.110]  tests that any good instrument company
+[19:10.110 --> 19:12.190]  runs in all their sensors. We always try
+[19:12.190 --> 19:13.710]  to build stuff and then we try to make
+[19:13.710 --> 19:16.390]  it fail and we test it and test it until
+[19:16.390 --> 19:20.070]  we see what its limits are. We do
+[19:20.070 --> 19:23.990]  that. Here's the comparison 96 cycles
+[19:23.990 --> 19:26.630]  minus 20 to plus 60. The water is
+[19:26.630 --> 19:29.910]  condensing and freezing and bad. There's
+[19:29.910 --> 19:32.830]  the data over the number of cycles. Take
+[19:32.830 --> 19:34.750]  them out and check them. The red lines are
+[19:34.750 --> 19:37.270]  the PRTs and the blue lines are the
+[19:37.270 --> 19:39.590]  thermistors. If you look at this data
+[19:39.590 --> 19:42.910]  you say well let's normalize it to zero
+[19:42.910 --> 19:46.190]  on day one and those thermistors were
+[19:46.190 --> 19:49.790]  more stable than the PRTs. It's an
+[19:49.790 --> 19:52.150]  example of the kind of testing that we
+[19:52.150 --> 19:55.790]  do on sensors and that's led us to use
+[19:55.790 --> 19:58.030]  this specific thermistor for air
+[19:58.070 --> 20:07.800]  temperature. This is the story of
+[20:07.800 --> 20:11.640]  radiation sensors and there's lots of
+[20:11.640 --> 20:14.160]  data and lots of tests and lots of sites.
+[20:14.160 --> 20:18.760]  I think what I'd like to do next for a
+[20:18.760 --> 20:22.760]  few minutes is talk about humidity.
+[20:22.760 --> 20:24.160]  Along with temperature we're doing
+[20:24.160 --> 20:25.960]  humidity and whether it's fire
+[20:25.960 --> 20:31.240]  forecasting. We don't specifically
+[20:31.240 --> 20:34.040]  sell a humidity probe but there's many
+[20:34.040 --> 20:36.520]  available. They're getting better all the
+[20:36.520 --> 20:39.560]  time. We've got our favorite sensors and
+[20:39.560 --> 20:41.560]  we've done a lot of accelerated aging
+[20:41.560 --> 20:45.200]  testing with humidity probes too. I'm not
+[20:45.200 --> 20:47.400]  so much going to talk about choices
+[20:47.400 --> 20:51.840]  among humidity sensors as I am with the
+[20:51.840 --> 20:55.560]  principles of psychometrics, which means
+[20:56.160 --> 21:00.280]  what's the difference between relative
+[21:00.280 --> 21:03.800]  humidity and absolute humidity? Now I
+[21:03.800 --> 21:07.680]  suspect many of you in here could write
+[21:07.680 --> 21:10.760]  a really nice test question answer to
+[21:10.760 --> 21:14.640]  that question, but absolute humidity is
+[21:14.640 --> 21:19.680]  what drives pretty much all environmental
+[21:19.680 --> 21:24.120]  responses. Stomatal responses and
+[21:24.160 --> 21:26.520]  atmospheric humidity responses and yet
+[21:26.520 --> 21:30.120]  what we measure is relative humidity.
+[21:30.120 --> 21:32.840]  I'm going to take a minute to go through
+[21:32.840 --> 21:39.880]  this and I've taught this several times
+[21:39.880 --> 21:46.200]  and nowadays we're going to have, I got
+[21:46.200 --> 21:48.760]  plenty of these, so in the end we'll
+[21:48.760 --> 21:53.960]  stack them up at the end.
+[21:53.960 --> 22:17.670]  Hopefully this will switch.
+[22:17.670 --> 22:24.390]  This is the time-honored psychometric
+[22:24.390 --> 22:28.990]  chart and what I find is modern students
+[22:29.030 --> 22:30.950]  never seen this chart, they do these all
+[22:30.950 --> 22:32.590]  the time, but they just type a number in
+[22:32.590 --> 22:34.310]  a computer and it gives them an output
+[22:34.310 --> 22:36.950]  and you ask them about the relationships
+[22:36.950 --> 22:38.550]  and they just don't know. I don't know,
+[22:38.550 --> 22:41.550]  the computer calculated it for me. I find
+[22:41.550 --> 22:46.230]  that really dangerous. If you type
+[22:46.230 --> 22:47.870]  psychometric chart on the internet you
+[22:47.870 --> 22:50.670]  get thousands of images of this for
+[22:50.670 --> 22:53.390]  different elevations. There's a chart for
+[22:53.390 --> 22:55.230]  low temperature and high temperature.
+[22:55.230 --> 22:59.110]  We're at 1500 meters in
+[22:59.110 --> 23:02.870]  Logan, Utah. This is a 1500 meter
+[23:02.870 --> 23:04.630]  chart which is the one I happen to have,
+[23:04.630 --> 23:09.630]  but the one for sea level is very
+[23:09.630 --> 23:12.390]  similar. The principles are identical and
+[23:12.390 --> 23:14.990]  if you overlay them there's a
+[23:14.990 --> 23:17.950]  small difference.
+[23:17.950 --> 23:21.910]  We use this for an example. There are
+[23:21.910 --> 23:28.270]  five cardinal humidity parameters and
+[23:28.270 --> 23:30.870]  if you know any two of those you can
+[23:30.870 --> 23:34.310]  calculate the other three. In a computer
+[23:34.310 --> 23:36.110]  you can type them in, but what I want to show
+[23:36.110 --> 23:38.830]  you is how to do that on a chart. This
+[23:38.830 --> 23:43.470]  bottom axis right here, dry bulb, that's a
+[23:43.470 --> 23:45.390]  manual thermometer. We don't do this
+[23:45.390 --> 23:47.430]  anymore, we use electronic measurements
+[23:47.430 --> 23:49.510]  but all the charts still say dry bulb
+[23:49.510 --> 23:51.910]  and that just means air temperature
+[23:51.910 --> 23:53.390]  with measured with something that's not
+[23:53.390 --> 23:56.470]  wet. Air temperature is the bottom.
+[23:56.470 --> 23:59.470]  The next thing before we had fancy
+[23:59.470 --> 24:02.670]  electronic instruments, the second thing
+[24:02.670 --> 24:05.990]  we measured was wet bulb. This is a
+[24:05.990 --> 24:08.470]  sling psychrometer and if you're older
+[24:08.470 --> 24:10.390]  you know these things and people
+[24:10.390 --> 24:12.430]  like slide rules whip them out. You
+[24:12.430 --> 24:14.110]  need to know the humidity and swing it.
+[24:14.110 --> 24:18.030]  One of these gets wet and one's
+[24:18.030 --> 24:19.590]  dry and you have to swing this pretty
+[24:19.590 --> 24:21.470]  good for a couple minutes. What do you
+[24:21.470 --> 24:27.440]  think the humidity is in here? Relative
+[24:27.440 --> 24:30.680]  because this can't calculate absolute
+[24:30.680 --> 24:33.880]  right? This is going to be a little
+[24:33.880 --> 24:36.320]  tricky, but guess what this is an old
+[24:36.320 --> 24:38.000]  one and it reads out in those ancient
+[24:38.000 --> 24:42.680]  units called Fahrenheit. We're at
+[24:42.680 --> 24:47.840]  64 Fahrenheit, this chart is in
+[24:47.840 --> 24:50.760]  Celsius. We're going to convert. We're at
+[24:50.760 --> 24:58.480]  75 so we're 24 Celsius in this room, 23
+[24:58.480 --> 25:10.800]  Celsius and we are at 17 wet bulb 17.
+[25:10.800 --> 25:12.720]  Let's calculate the humidity with this.
+[25:12.720 --> 25:15.400]  By the way, see these are so slick, this is
+[25:15.400 --> 25:19.560]  see how nonlinear this chart is. The old
+[25:19.560 --> 25:21.320]  guys know how to use slide rules, that's
+[25:21.320 --> 25:22.720]  you're getting really old if you still
+[25:22.720 --> 25:25.200]  know that. This is an example of a slide
+[25:25.200 --> 25:26.720]  rule because you put the wet and dry
+[25:26.720 --> 25:28.200]  bulb in here and slide it and it will
+[25:28.200 --> 25:30.800]  tell you the humidity. No batteries, no
+[25:30.800 --> 25:32.800]  computer, I just love these old
+[25:32.800 --> 25:36.200]  instruments. How do we find this
+[25:36.200 --> 25:43.320]  on a chart? The wet bulb temperature is
+[25:43.320 --> 25:46.880]  read up here on this line and what did
+[25:46.880 --> 25:50.960]  we just say? Let's find it. 24, so right
+[25:50.960 --> 25:58.040]  there is 24 and 17, here's 15, 16, here's
+[25:58.040 --> 26:05.120]  17 wet bulb. From this line, I keep
+[26:05.120 --> 26:07.760]  wanting to draw it on the board, we go up
+[26:07.760 --> 26:13.360]  straight up from this here, we come in
+[26:13.360 --> 26:19.520]  at a diagonal here.
+[26:19.520 --> 26:34.800]  There's our point on the graph for what we just measure.
+[26:34.800 --> 26:38.160]  We're getting 52% humidity.
+[26:38.160 --> 26:40.120]  If I would have swung this longer
+[26:40.120 --> 26:41.640]  this probably would have come down and
+[26:41.640 --> 26:44.680]  but you get the idea. It's the
+[26:44.680 --> 26:47.400]  intersection of those two points for
+[26:47.400 --> 26:50.080]  humidity. Now we've entered two things,
+[26:50.080 --> 26:52.800]  wet bulb and dry bulb and we calculated
+[26:52.800 --> 26:55.320]  a third thing that relative humidity is
+[26:55.320 --> 26:56.680]  these curved lines. That's where I'm
+[26:56.680 --> 26:58.760]  getting 52%. Now what else can we
+[26:58.760 --> 27:02.920]  tell from this? Dew point temperature, the
+[27:02.920 --> 27:05.720]  temperature at which water condenses on
+[27:05.720 --> 27:08.960]  a surface on a leaf, anything. You pull a
+[27:09.000 --> 27:11.200]  can of beer out of your fridge and put
+[27:11.200 --> 27:13.360]  it in your room and water condenses on it
+[27:13.360 --> 27:15.920]  because it's below the dew point. Dew
+[27:15.920 --> 27:20.760]  point on this chart is red sideways
+[27:20.760 --> 27:27.440]  going over here and it's the second
+[27:27.440 --> 27:32.040]  scale or it's red this way.
+[27:32.040 --> 27:36.520]  How did that happen? I put my hand on
+[27:36.640 --> 27:56.260]  something. Dew points red
+[27:56.260 --> 27:58.740]  sideways. Dew point right here, the dew
+[27:58.740 --> 28:03.220]  point in this room 10, 11, 12, 13.5
+[28:03.220 --> 28:05.380]  degrees. Any temperature below that
+[28:05.380 --> 28:07.540]  water will change state and condense.
+[28:07.540 --> 28:10.380]  Above it, it'll never happen and you can
+[28:10.380 --> 28:13.860]  read it either direction. Now we have
+[28:13.860 --> 28:17.900]  dry bulb, wet bulb, relative humidity,
+[28:17.980 --> 28:26.220]  dew point temperature, and the final
+[28:26.220 --> 28:30.980]  parameter that we want to know on this
+[28:30.980 --> 28:36.500]  is the absolute humidity of the air and
+[28:36.500 --> 28:40.180]  that's also read on this on this scale
+[28:40.180 --> 28:42.940]  here. It says absolute humidity, this
+[28:42.940 --> 28:46.060]  is in grams per kilogram and it's 12
+[28:46.180 --> 28:49.380]  grams per little less than 12.
+[28:49.380 --> 28:54.540]  I hit that again right there. I'm going to
+[28:54.540 --> 28:56.580]  move this over and I won't hit it so
+[28:56.580 --> 29:00.820]  much. There's an example of two inputs
+[29:00.820 --> 29:02.500]  and you can tell how any two of these
+[29:02.500 --> 29:04.740]  you always get a point and then you
+[29:04.740 --> 29:06.280]  calculate the spread out you get the
+[29:06.280 --> 29:09.940]  other three parameters from this. Here's
+[29:09.940 --> 29:12.700]  the key thing. Now we just did absolute
+[29:12.700 --> 29:16.660]  humidity, it's the mass or the moles of
+[29:16.660 --> 29:19.900]  water vapor and air, the absolute density
+[29:19.900 --> 29:22.980]  not the relative. Here's the key
+[29:22.980 --> 29:26.140]  thing with this. If we're calculating
+[29:26.140 --> 29:29.380]  rates of evaporation from a surface, what
+[29:29.380 --> 29:34.180]  we want to know is the absolute humidity
+[29:34.180 --> 29:38.260]  deficit or the vapor pressure deficit.
+[29:38.260 --> 29:41.260]  We calculate that in computers and
+[29:41.260 --> 29:43.420]  models all the time. We can get that
+[29:43.420 --> 29:47.100]  from this chart. In this room at this
+[29:47.100 --> 29:50.180]  temperature we keep going up here to
+[29:50.180 --> 29:55.340]  this line. This is a hundred percent
+[29:55.340 --> 30:00.660]  humidity in this room. This is the actual
+[30:00.660 --> 30:03.820]  humidity. Now let's take that sideways to
+[30:03.820 --> 30:10.800]  get the absolute humidity and it's a
+[30:10.800 --> 30:12.920]  point right there and it looks like this
+[30:12.960 --> 30:17.800]  is 23 and I'm going to round this off to
+[30:17.800 --> 30:22.160]  12. The deficit in this room is 23
+[30:22.160 --> 30:26.120]  minus 12 and it's this line right
+[30:26.120 --> 30:31.880]  here. That's the absolute humidity
+[30:31.880 --> 30:34.600]  deficit in this room or out wherever you
+[30:34.600 --> 30:37.400]  measure this thing. This is what drives
+[30:37.400 --> 30:40.920]  evaporation and transpiration. It is not
+[30:40.920 --> 30:44.400]  relative humidity. You can ask the
+[30:44.400 --> 30:47.320]  question if we had a wet dish rag here
+[30:47.320 --> 30:50.520]  and we wanted to calculate how long it
+[30:50.520 --> 30:53.480]  would take to dry. This is one of my
+[30:53.480 --> 30:55.320]  favorite test questions because you can
+[30:55.320 --> 30:58.200]  trip students up all the time. In one
+[30:58.200 --> 31:01.120]  case we're going to put it at eighty
+[31:01.120 --> 31:05.680]  percent humidity but 30 degrees C and
+[31:05.680 --> 31:09.400]  the other case the other way around.
+[31:09.400 --> 31:11.840]  You have the eighty percent humidity and 30
+[31:11.840 --> 31:15.280]  degrees C or we're going to put it at
+[31:15.280 --> 31:20.600]  sixty percent humidity and 15 degrees C.
+[31:20.600 --> 31:23.480]  They said well it will dry faster in
+[31:23.480 --> 31:26.680]  the lower humidity. No it won't. Sixty
+[31:26.680 --> 31:29.120]  percent humidity down here is this
+[31:29.120 --> 31:32.160]  big of a deficit and over here eighty
+[31:32.160 --> 31:35.280]  percent humidity is a bigger deficit.
+[31:35.280 --> 31:37.840]  Humidity interacts with temperature to
+[31:37.880 --> 31:42.000]  create this vapor pressure deficit which
+[31:42.000 --> 31:45.480]  you can see from this chart. You don't
+[31:45.480 --> 31:47.680]  need the whole chart that's why this
+[31:47.680 --> 31:50.680]  subset is in here. Here's the curve and
+[31:50.680 --> 31:54.360]  the equation for a hundred percent and
+[31:54.360 --> 31:56.440]  if you know relative humidity which is
+[31:56.440 --> 31:59.120]  what we usually measure you can multiply
+[31:59.120 --> 32:01.640]  the saturation by the relative humidity
+[32:01.640 --> 32:04.600]  and then you can easily calculate this
+[32:04.600 --> 32:06.240]  without the chart because you got you
+[32:06.240 --> 32:10.000]  always got a point on this chart.
+[32:10.000 --> 32:12.440]  Here's digital values for that line.
+[32:12.440 --> 32:16.520]  That's psychometrics in 10 minutes or so
+[32:16.520 --> 32:20.440]  and I find that useful to have a good
+[32:20.440 --> 32:22.400]  understanding of that, intuitive
+[32:22.400 --> 32:24.440]  understanding so you can get a sense of
+[32:24.440 --> 32:27.080]  when people collect bad data and how to
+[32:27.080 --> 32:30.000]  use humidity data to put it in
+[32:30.000 --> 32:34.000]  units that we want to understand.
+[32:34.000 --> 32:38.720]  I'll stop here except for one
+[32:38.720 --> 32:44.400]  brief comment. We put wind on here in
+[32:44.400 --> 32:47.280]  the first section and this is a separate
+[32:47.280 --> 32:53.080]  category of measurements. We all measure
+[32:53.080 --> 32:55.920]  wind with cup anemometers. That's so
+[32:55.920 --> 32:59.920]  common but an emerging technology is
+[32:59.920 --> 33:03.960]  sonic anemometers which I don't have
+[33:04.000 --> 33:08.320]  a picture of them here, but they measure
+[33:08.320 --> 33:10.680]  wind speed by the speed of sound and
+[33:10.680 --> 33:13.720]  historically those have been about a
+[33:13.720 --> 33:16.480]  thousand dollars for the instrument and
+[33:16.480 --> 33:19.360]  the cup anemometers are 300 to 500 US
+[33:19.360 --> 33:21.000]  dollars and that's about half the price
+[33:21.000 --> 33:26.080]  relative. Sonic anemometers are getting
+[33:26.080 --> 33:29.280]  cheaper and they're more accurate and
+[33:29.280 --> 33:31.040]  they're particularly more accurate
+[33:31.040 --> 33:33.280]  because at wind speeds below a half a
+[33:33.400 --> 33:35.760]  meter per second the cup stop turning
+[33:35.760 --> 33:39.400]  and that just reads a zero and it's
+[33:39.400 --> 33:42.000]  never really zero. Sonic
+[33:42.000 --> 33:44.760]  anemometers go all the way down to zero.
+[33:44.760 --> 33:48.080]  This is another example of the march
+[33:48.080 --> 33:50.480]  of technology making measurements more
+[33:50.480 --> 33:54.200]  accurate and prices are coming down. I
+[33:54.200 --> 33:56.760]  don't think we're going to see a switch
+[33:56.760 --> 33:59.200]  overnight to sonic anemometers but in
+[33:59.200 --> 34:02.000]  some locations with low wind speeds
+[34:02.120 --> 34:05.040]  sonic anemometers are the instrument
+[34:05.040 --> 34:07.320]  measurement of choice if you need to
+[34:07.320 --> 34:09.440]  build models in places where there's
+[34:09.440 --> 34:12.560]  not high winds. That's about all I
+[34:12.560 --> 34:17.440]  want to say about wind speed. Any
+[34:17.440 --> 34:19.360]  questions? Some of you have been asking
+[34:19.360 --> 34:22.160]  questions. Yes? You mentioned the types of
+[34:22.160 --> 34:26.760]  instruments that measure temperature
+[34:26.760 --> 34:29.280]  with but how about humidity because
+[34:29.600 --> 34:32.600]  some things are done, it's always related
+[34:32.600 --> 34:37.120]  to the humidity measurement. It's
+[34:37.120 --> 34:40.000]  related to the temperature. What is what
+[34:40.000 --> 34:42.320]  exactly measures the humidity? What
+[34:42.320 --> 34:46.320]  is the device or material? Good question.
+[34:46.320 --> 34:48.960]  There's different ways to measure
+[34:48.960 --> 34:51.160]  humidity but by far the most common one
+[34:51.160 --> 34:53.120]  is what's called a capacitance probe.
+[34:53.120 --> 34:56.840]  Looks like a like a fat sharpie.
+[34:56.840 --> 35:00.840]  They're roughly this size. In the end of
+[35:00.840 --> 35:05.200]  this is a chip that changes the
+[35:05.200 --> 35:09.320]  capacitance based on the adsorption and
+[35:09.320 --> 35:11.760]  desorption of water vapor molecules.
+[35:11.760 --> 35:14.120]  That's the fundamental physics of how it
+[35:14.120 --> 35:20.400]  measures humidity. It's
+[35:20.400 --> 35:23.040]  been around for 20 years, 30 years and
+[35:23.040 --> 35:27.320]  they've gotten better and better.
+[35:27.320 --> 35:29.160]  Then alongside of that is a
+[35:29.160 --> 35:33.520]  temperature sensor. Those two
+[35:33.520 --> 35:35.120]  things, that's why I did psychometrics,
+[35:35.120 --> 35:37.520]  temperature and humidity together give
+[35:37.520 --> 35:40.200]  you the whole package for this deficit.
+[35:40.200 --> 35:43.520]  Remember I said small is better? Look how
+[35:43.520 --> 35:46.600]  big that is. These can have bigger errors
+[35:46.600 --> 35:49.760]  in a static shield because there's not
+[35:49.760 --> 35:52.640]  the wind cooling off the sensor. We
+[35:52.720 --> 35:55.280]  like to have a separate temperature
+[35:55.280 --> 35:57.800]  sensor and then calculate the humidity
+[35:57.800 --> 36:06.440]  from this. This heats up because of
+[36:06.440 --> 36:08.480]  the radiation hitting it even inside a
+[36:08.480 --> 36:11.920]  shield. You would go man you know my
+[36:11.920 --> 36:14.480]  humidity is not right because that the
+[36:14.480 --> 36:16.360]  sensor is a little hotter than it should be.
+[36:16.360 --> 36:18.680]  Here's something you can see from a
+[36:18.680 --> 36:22.360]  psychometric chart. These errors of
+[36:22.400 --> 36:25.000]  heating this tend to be self-correcting.
+[36:25.000 --> 36:30.040]  Let's say the humidity is 52 and this
+[36:30.040 --> 36:32.280]  the true humidity is 52 in this room and
+[36:32.280 --> 36:33.720]  we're measuring this and the sun
+[36:33.720 --> 36:36.960]  shining on it and it heats up. As it
+[36:36.960 --> 36:40.000]  heats up it goes this way, but the
+[36:40.000 --> 36:42.280]  humidity goes down, automatically goes
+[36:42.280 --> 36:45.160]  down because it's heating up and
+[36:45.160 --> 36:48.240]  the absolute humidity tends to
+[36:48.240 --> 36:51.200]  be self-correcting. The humidity is wrong,
+[36:51.240 --> 36:53.240]  the temperature is wrong, but they're
+[36:53.240 --> 36:55.400]  wrong in the same direction and this
+[36:55.400 --> 36:57.680]  data point moves horizontally on this
+[36:57.680 --> 36:59.680]  graph somewhere over in here because
+[36:59.680 --> 37:01.280]  most of the time what we want to know is
+[37:01.280 --> 37:04.240]  that absolute humidity. Not sure if this
+[37:04.240 --> 37:06.560]  is exactly your question.
+[37:06.560 --> 37:08.640]  I have had this problem
+[37:08.640 --> 37:11.240]  because the temperature is not calibrated
+[37:11.240 --> 37:14.400]  well so the humidity is wrong.
+[37:14.400 --> 37:16.320]  Then I wonder if there were different
+[37:16.320 --> 37:17.880]  types in the same way there are
+[37:17.920 --> 37:22.320]  different types of materials that you
+[37:22.320 --> 37:24.000]  use for the temperature if there are
+[37:24.000 --> 37:26.040]  different things. So I understand that
+[37:26.040 --> 37:29.800]  most of the humidity sensors will use
+[37:29.800 --> 37:37.400]  this chip? Yes. There is no other...
+[37:37.400 --> 37:40.000]  No, there are other ways.
+[37:40.000 --> 37:43.240]  You can do absorption and some
+[37:43.240 --> 37:45.440]  really expensive ways to do humidity.
+[37:45.440 --> 37:47.280]  Something like average and commercial.
+[37:47.280 --> 37:50.800]  This is by far the dominant way.
+[37:50.800 --> 37:54.360]  We can talk later about differences
+[37:54.360 --> 37:57.040]  among brands. The biggest thing we see is
+[37:57.040 --> 37:59.880]  stability of these. You know you get
+[37:59.880 --> 38:01.640]  them out of a box and all of them are
+[38:01.640 --> 38:04.200]  good and now you check them again a year
+[38:04.200 --> 38:07.040]  or two later for drift and that's
+[38:07.040 --> 38:12.680]  where we see differences among types.
+[38:12.680 --> 38:16.600]  It's a combination of this
+[38:16.720 --> 38:19.320]  and this. It's another reason I like this
+[38:19.320 --> 38:21.080]  chart because you can see what happens
+[38:21.080 --> 38:22.280]  if you go this way.
+[38:22.280 --> 38:24.640]  That's self-correcting error. John?
+[38:24.640 --> 38:28.880]  You said there's what drives transpiration and evaporation
+[38:28.880 --> 38:31.160]  is more absolute humidity. Yes.
+[38:31.160 --> 38:35.160]  Peter would know this better than me, but I think in the Penman-Monteith equation
+[38:35.160 --> 38:39.160]  they use relative humidity in that equation.
+[38:39.160 --> 38:43.160]  Does that make any difference?
+[38:43.720 --> 38:45.720]  Do you remember that Mark?
+[38:45.720 --> 38:48.720]  Yeah, I can answer this question.
+[38:48.720 --> 38:50.720]  What they're doing in Penman-Monteith is
+[38:50.720 --> 38:54.720]  a routine application like in a data logger
+[38:54.720 --> 38:58.120]  for example. I know Campbell
+[38:58.120 --> 39:00.120]  Scientific data loggers really well so
+[39:00.120 --> 39:02.880]  I'll use that as an example. You just go
+[39:02.880 --> 39:04.920]  input the weather measurements that are
+[39:04.920 --> 39:06.720]  necessary into an instruction that
+[39:06.720 --> 39:08.400]  they've already pre-programmed into
+[39:08.400 --> 39:11.120]  Campbell Scientific software and the
+[39:11.120 --> 39:13.320]  input there is relative humidity and
+[39:13.320 --> 39:16.080]  temperature. In actuality the
+[39:16.080 --> 39:18.040]  pre-programmed instruction has some
+[39:18.040 --> 39:20.880]  code running in the background that's
+[39:20.880 --> 39:23.000]  calculating the absolute humidity just
+[39:23.000 --> 39:25.800]  like Bruce explained. So the Penman-Monteith
+[39:25.800 --> 39:28.560]  equation itself uses the vapor
+[39:28.560 --> 39:31.120]  pressure deficit which is absolute
+[39:31.120 --> 39:33.520]  humidity minus the actual humidity of the air.
+[39:33.520 --> 39:35.280]  There's a difference here. But a lot of times when
+[39:35.280 --> 39:37.960]  you see the equation in a data
+[39:37.960 --> 39:40.880]  logger instruction or sometimes as it's
+[39:40.880 --> 39:43.120]  explained maybe in a textbook they always
+[39:43.120 --> 39:44.520]  talk about the measurement you're making
+[39:44.520 --> 39:46.160]  is relative humidity and that's because
+[39:46.160 --> 39:51.120]  the sensors that we have measure relative humidity.
+[39:51.120 --> 39:53.440]  We don't have sensors to do absolute
+[39:53.440 --> 39:56.080]  humidity. We always calculate it from
+[39:56.080 --> 39:59.280]  the data and sometimes it just
+[39:59.280 --> 40:02.520]  shows up on the screen. But the
+[40:02.520 --> 40:05.080]  fundamental physics is the absolute
+[40:05.080 --> 40:06.800]  humidity.
+[40:06.800 --> 40:11.360]  Just a quick comment, less modern glasshouse
+[40:11.360 --> 40:13.600]  climate control systems control the
+[40:13.600 --> 40:14.960]  humidity deficit.
+[40:14.960 --> 40:18.680]  Yeah, excellent. It's
+[40:18.680 --> 40:20.360]  calculated in the background by the
+[40:20.360 --> 40:22.200]  microprocessors in the
+[40:22.200 --> 40:23.920]  greenhouse. That's one of the
+[40:23.920 --> 40:25.920]  wonderful advances of the march of
+[40:25.920 --> 40:29.960]  technology to do that.

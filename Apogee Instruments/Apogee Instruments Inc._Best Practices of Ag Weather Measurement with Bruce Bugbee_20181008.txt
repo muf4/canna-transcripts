@@ -1,0 +1,576 @@
+[00:00.000 --> 00:05.680]  I'm Bruce Bugbee. I'm the president of Apogee. I started Apogee in my garage a long time
+[00:05.680 --> 00:14.760]  ago and I am currently also a professor right up here at Utah State University for those
+[00:14.760 --> 00:21.600]  of you who don't know me. My background is plant physiology and I teach plant physiology.
+[00:21.600 --> 00:27.640]  I also teach a course in environmental instrumentation at the university. These are all graduate
+[00:27.640 --> 00:36.120]  level classes for students aspiring to get good at what you guys are already good at.
+[00:36.120 --> 00:40.720]  And I tell them if you can get good at this people will come because your services will
+[00:40.720 --> 00:48.360]  be in great demand. As a background for my class I always divide that into three things.
+[00:48.360 --> 00:56.600]  Part of instrumentation is having some understanding of what we call the physics of signal transduction.
+[00:56.600 --> 01:04.120]  And that means how does some sensor out there convert wind into an electrical signal for
+[01:04.120 --> 01:10.440]  a data logger? How does it convert temperature, anything, into an electrical signal? And when
+[01:10.440 --> 01:15.880]  students have a better understanding of that they can far better diagnose their systems
+[01:15.880 --> 01:23.960]  to understand what's going on. A second part of it is interfacing sensors to data loggers.
+[01:24.280 --> 01:30.040]  Campbell Scientific every year very graciously donates a whole set of data loggers for this
+[01:30.040 --> 01:37.800]  class. And so they get trained on Campbell's loggers. Interfacing them, stuff like voltage
+[01:37.800 --> 01:44.040]  dividers and hooking them up. And then the third part is programming the data logger.
+[01:44.040 --> 01:51.160]  It's been a popular class and it's too bad people don't teach classes like this more
+[01:51.160 --> 01:57.480]  because I think increasingly we see people that just give me the data. Yeah, right,
+[01:57.480 --> 02:01.720]  there's high quality data and there's low quality data and if you don't know the difference you're
+[02:01.720 --> 02:10.920]  about to make bad models and a lot of problems. So I'm going to get to this in a second. I thought
+[02:10.920 --> 02:15.880]  I'd start, there's so much stuff we can talk about in a class like this and I see some really
+[02:15.880 --> 02:23.320]  knowledgeable people in the audience so we can have some exchange and instead of me lecturing we
+[02:23.320 --> 02:30.840]  can have some exchange of information. And obviously if you teach a whole semester class
+[02:30.840 --> 02:38.280]  in this no way you can condense that into 60 minutes. You just hit some highlights of it.
+[02:39.080 --> 02:48.120]  So I welcome your comments and questions as we go along in this. One of the things that
+[02:48.120 --> 02:57.960]  we get asked a lot at Apogee is how do you decide on what new sensors to work on?
+[02:59.960 --> 03:07.720]  And usually people say could you make a sensor to measure this? And the answer is always yes.
+[03:08.760 --> 03:14.840]  But then our question is of course how many would you buy if we made that? And well I would buy one
+[03:14.840 --> 03:19.640]  and both of my buddies would buy one and you should make that, you know. And what it really
+[03:19.640 --> 03:29.400]  comes down to is an estimate of the worldwide size of the market for some new sensor and sometimes
+[03:29.400 --> 03:39.240]  it's an improvement on an old sensor. And how much R&D would it take to make the first one?
+[03:40.200 --> 03:48.600]  And both of those are broad guesses and anybody affiliated with instrument companies goes through
+[03:48.600 --> 03:55.960]  the same thing. And you hope that the market will be as big as you hope for and the R&D won't be
+[03:55.960 --> 04:05.400]  too much worse than you think and off you go into a new project. As companies get bigger and as
+[04:05.400 --> 04:13.640]  Apogee has gotten bigger we can undertake more ambitious projects. And one of them that you're
+[04:13.640 --> 04:20.040]  going to see in the hallway, I'm not necessarily going to talk about it here, one of them is our
+[04:20.040 --> 04:27.160]  new weighing precipitation gauge. And we had the great fortune of the Bureau of Land Management
+[04:27.160 --> 04:33.240]  came to us and they said could you make an improved gauge? And I'd been working with load cells in my
+[04:33.240 --> 04:38.760]  laboratory at the university for lysimeters to weigh plants and I thought how hard can that be?
+[04:38.760 --> 04:44.920]  We know how to measure stuff with load cells. Yeah that was over three years ago and we're still
+[04:45.000 --> 04:52.520]  polishing the product. The R&D for that has been a lot more than we anticipated, but the market is
+[04:52.520 --> 05:00.200]  even bigger than we anticipated too. So that's an emerging cutting edge thing for the company.
+[05:00.920 --> 05:08.120]  Apogee is of course primarily a sensor company and we started out making radiation sensors.
+[05:08.200 --> 05:15.400]  The very first product was called a quantum sensor which measures photons for photosynthesis
+[05:15.400 --> 05:20.920]  because that's right out of my background. And at the time, this was 20 some years ago,
+[05:22.200 --> 05:27.480]  the only one that was really widely used, well there was Sky Instruments in the UK
+[05:28.360 --> 05:34.280]  and Lycor in the United States. And I think back then Kip and Sonen might have had one, I can't
+[05:34.680 --> 05:40.680]  remember when theirs exactly started. But all of those were quite expensive and we realized if we
+[05:40.680 --> 05:48.840]  could just take a simple photodiode and hook it up to a voltmeter and we would have an adequate
+[05:48.840 --> 05:57.640]  quantum sensor. And in fact this morning I went to the antique instrument collection because we have
+[05:58.600 --> 06:04.600]  antique instrument collection because we have some glass cases down at Apogee now where
+[06:05.560 --> 06:10.920]  I've been able to display my antique instruments which I just love. And as the word has spread,
+[06:10.920 --> 06:16.280]  people retire at universities and a couple people have bequeathed their instrument collection
+[06:16.280 --> 06:24.840]  to us so we're getting better antique instruments. It's really fun. This is the first product Apogee
+[06:24.840 --> 06:31.960]  ever built and it says quantum meter, quantum is a mole of photons and the sensor's in the top.
+[06:33.240 --> 06:37.960]  And look what it came from, just a low cost voltmeter. We didn't have big startup costs
+[06:37.960 --> 06:43.880]  and we just took it apart and modified the voltmeter and made this first sensor. And it
+[06:43.880 --> 06:53.160]  still works and it's in the museum now. But we built it from there. We kept upgrading this and
+[06:53.160 --> 07:01.080]  spread out to other projects. But because the cost was, it didn't do anything another meter
+[07:01.080 --> 07:09.400]  didn't do, it's just that it was cheaper and it helped a lot of people and we started the
+[07:09.960 --> 07:15.800]  company to do this. Here's another thing that I grabbed out of the antique instrument collection.
+[07:16.760 --> 07:23.720]  This is my first cell phone, the pop-up antenna. And man we thought this was such cool technology.
+[07:25.720 --> 07:30.360]  That's in the museum now. If you get a chance it's fun. If you like instruments and like old
+[07:30.360 --> 07:39.000]  instruments it's fun to go down memory lane and see all these things. I think what I'd like to
+[07:39.720 --> 07:46.840]  like to start with first is just the simplest measurement of temperature and the simplest
+[07:46.840 --> 07:54.200]  measurement of air temperature. We got involved with this because one of the big selling products
+[07:54.200 --> 08:03.160]  for Apogee is an infrared radiometer to get surface temperatures. And it's one of our
+[08:03.160 --> 08:10.680]  more expensive instruments, a high-end instrument. Really good at getting surface temperatures. But
+[08:10.680 --> 08:17.880]  what we always really need to know to determine energy balance in plant canopies and irrigation
+[08:17.880 --> 08:27.400]  requirements of crops is the leaf to air temperature difference. Okay this is environmental
+[08:27.400 --> 08:34.440]  science 101. You need leaf temperature, you need air temperature. What we realized was the air
+[08:34.440 --> 08:45.240]  temperatures were wrong when they were measured in a standard multi-plate static shield. And they're
+[08:45.240 --> 08:52.120]  wrong because the sun shines on the shield, heats it up. If the wind is not blowing fast enough
+[08:52.120 --> 08:58.840]  it reads high. And we've always known they read high, but I'll show you some data about how big
+[08:58.840 --> 09:05.640]  that error can be. The world record for the error of a static shield, we have a
+[09:07.800 --> 09:13.240]  station at Peter Sinks. I think I have a slide on Peter Sinks. It's just up in the mountains. It's a
+[09:13.240 --> 09:21.960]  big bowl, low cold air pools in there. And we have measured the second lowest temperature
+[09:23.000 --> 09:30.680]  in the continental United States here at Peter Sinks with our climate center group. I can show
+[09:30.680 --> 09:35.960]  you some data of that in a minute. But there's snow on the ground up there and really cold, so we need
+[09:35.960 --> 09:42.840]  precision measurements of temperature to a tenth of a degree C. We also have a static shield up there
+[09:43.400 --> 09:53.640]  and an apogee aspirated shield. Not long ago we measured a 13.5 Celsius error in the static
+[09:53.640 --> 09:59.880]  shield was 13.5 Celsius warmer than the acerated shield. The sensors were precise sensors
+[10:01.960 --> 10:08.280]  in both. Huge. We're calling that the new world record for the error of a static shield.
+[10:08.840 --> 10:13.560]  But we often see one and two degrees C difference. Partly it's when there's snow in the ground,
+[10:13.560 --> 10:19.160]  the snow reflects and it bounces up from the bottom and it causes big errors in static shields.
+[10:19.960 --> 10:26.440]  But just that simple measurement, wow. That's the primary measurement, air temperature.
+[10:27.000 --> 10:33.080]  And the primary way we measure it, and we have done for a long time, can have
+[10:34.040 --> 10:43.480]  much bigger errors than we realize. So let's start with the sensor. What sensor would you use
+[10:44.120 --> 10:55.320]  to do measure temperature? Now we, of course, we have thermocouples, but we've primarily relied on
+[10:56.040 --> 11:01.640]  PRTs, platinum resistance thermometers, to get accurate measurements of air temperature. And
+[11:01.720 --> 11:09.480]  I always, those have been the gold standard for a very long time. But they're expensive
+[11:10.120 --> 11:19.160]  and they're bigger. Can we get this bigger? Can I slide this back and make it bigger without
+[11:19.720 --> 11:25.800]  screwing everything up? We might be able to, maybe there's a cord, but
+[11:26.120 --> 11:33.640]  if we can't, oh yeah, there you go. That helps. I could have done that. That'll help a little.
+[11:35.240 --> 11:43.160]  What's this thing right here? That helps. That's good. That's good. Now, oh, there we go.
+[11:44.600 --> 11:50.520]  This slide, yeah, thanks. Let's turn those off. There we go. Now we're, something we can look at.
+[11:50.760 --> 12:00.440]  There's some pretty fine print on this slide. These slides are from a talk that I gave
+[12:01.800 --> 12:06.600]  a few years ago at the American Society of Agronomy, had a special symposium on
+[12:08.360 --> 12:13.960]  emerging instruments, emerging trends, and weather. And we talked about temperature measurements.
+[12:14.520 --> 12:22.200]  But this is thermistors versus PRTs. And the first point in this measurement of temperature is
+[12:23.000 --> 12:29.240]  small is better. And if you've worked with that, man, we have used some very fine wire thermocouples
+[12:29.240 --> 12:34.600]  to get accurate measurements of temperature because they stay in equilibrium with the air
+[12:34.600 --> 12:43.240]  temperature better. So, okay, there's a human hair. We could put a thermocouple in here,
+[12:43.960 --> 12:48.840]  and they get pretty small down around human hairs, as you know, they're super fragile and hard to
+[12:48.840 --> 12:55.000]  build and all that. But we can get fine wire thermistors quite small now. That thermistor is
+[12:55.000 --> 13:02.440]  used in human and animal physiology. You can inject it into living organisms inside of a syringe,
+[13:02.440 --> 13:10.840]  so they get temperature. So that's small. Then for reference, there's a 24-gauge thermocouple.
+[13:11.800 --> 13:19.400]  Then epoxy-B thermistor, and then a pretty standard PRT, and then a thermistor at the
+[13:19.400 --> 13:27.480]  bottom inside a ceramic sheath. So huge range of sizes. As we get bigger, they are less,
+[13:28.600 --> 13:35.240]  they do not stay in thermal equilibrium with the air. And I'm not talking about response time.
+[13:35.960 --> 13:42.280]  It's the equilibrium temperature. A big sensor absorbs more solar radiation, and it always
+[13:42.280 --> 13:49.080]  warms above the air temperature, depending on the radiation and the wind speed. And sometimes
+[13:49.080 --> 13:54.280]  we measure radiation and wind and back correct what the real temperature was, and pretty soon
+[13:54.280 --> 13:59.320]  you have fudge factors in here, and you'd like to just have accurate sensors. You don't have to have
+[13:59.320 --> 14:07.400]  a lot of fudge factors, but there's a range of sensors. Let's see. I guess I'm pushing the
+[14:07.400 --> 14:19.160]  button, right? We didn't know. Small is better. So when we say PRTs, they are absolutely not
+[14:19.160 --> 14:26.600]  created equal. People act like they are. Oh, I have a PRT. Well, what kind of a PRT?
+[14:27.320 --> 14:37.160]  These are the five main classes, CBA, 1 3rd DIN, 1 10th DIN. And there's a picture up there again.
+[14:38.200 --> 14:47.160]  Look at the error specifications for these PRTs. The 1 10th DIN is a tremendous,
+[14:47.160 --> 14:53.560]  that's a wonderful sensor, but it's 15 times as expensive as the Class C. And oftentimes
+[14:54.520 --> 15:00.600]  people are a little vague about what PRT is in their instrument. They just say it's a PRT,
+[15:00.600 --> 15:07.400]  but you need to know what kind of a PRT. Big differences in PRTs and accuracy.
+[15:08.520 --> 15:18.360]  Now, I'm going to talk about the disadvantages of PRTs, other than cost to get good accuracy.
+[15:18.440 --> 15:24.920]  Here is that epoxy bead thermistor up there that was shown in the first slide.
+[15:26.520 --> 15:34.760]  Small, generally smaller than most of the PRTs. There's the accuracy spec. This is what we call
+[15:34.760 --> 15:39.320]  a precision thermistor. This is, by the way, used for the reference temperature in Campbell
+[15:39.480 --> 15:46.440]  scientific data loggers inside the can. Pretty good spec, 0.1 degree C,
+[15:47.480 --> 15:53.080]  and the relative cost is about 1x. So if you look at this slide for very long,
+[15:54.040 --> 16:04.280]  PRTs are a very cost-effective option for measuring temperatures. I'm sorry, thermistors,
+[16:05.160 --> 16:10.760]  provided it's the right thermistor with the right specs. This is a more expensive thermistor.
+[16:11.320 --> 16:24.120]  Now, historically, when I was in graduate school, people were cycling thermistors. Some of the
+[16:24.120 --> 16:30.280]  older faculty that did then, they would buy them and they'd temperature cycle them. What are you
+[16:30.760 --> 16:35.720]  doing? I'm stabilizing it because after I cycle it enough, I find it stabilizes,
+[16:35.720 --> 16:44.440]  and then I calibrate the thermistor. Thermistors have come a long way in the past several decades.
+[16:44.440 --> 16:50.360]  They're much more stable, and they have much better accuracy standards, and there are some
+[16:50.360 --> 17:00.040]  papers in the literature with groups like NIST, reference groups, and other things that are
+[17:00.840 --> 17:06.120]  that now are starting to use thermistors as reference standards for temperatures.
+[17:07.320 --> 17:13.080]  PRTs are still, the expensive PRTs are still the gold standard, but thermistors are
+[17:13.080 --> 17:20.520]  much cheaper and getting really close. That's this particular thermistor. I think,
+[17:21.080 --> 17:29.800]  let me make one point right here. Thermistors can be less stable than a PRT. There's a reason to go
+[17:29.800 --> 17:37.960]  with a PRT because of long-term stability, but the reason thermistors drift, there's two reasons
+[17:37.960 --> 17:48.520]  they drift. High temperatures and moisture. High temperatures means higher than 60 degrees C,
+[17:49.320 --> 17:58.280]  and that starts, and so the high temperatures are warmer than our environmental temperatures,
+[17:58.280 --> 18:03.960]  so it's not really a problem. Moisture is a problem. If they absorb moisture, the resistance
+[18:03.960 --> 18:10.600]  changes and they drift, and that can be a killer. So the way to get thermistors accurate is to
+[18:10.600 --> 18:20.520]  encase them in a waterproof epoxy or glass, and this is in a waterproof epoxy, and I'll show you
+[18:20.520 --> 18:28.120]  some data on the stability of this sensor in just a minute. So it's possible to make thermistors very
+[18:28.120 --> 18:35.080]  stable. For example, Campbell Scientific sells one inside of a stainless steel sheath. I think
+[18:35.080 --> 18:41.000]  that's called the SS, I forget the number, but inside of stainless steel it's encased, so it's
+[18:41.000 --> 18:47.800]  stable. This particular one is not encased and it's stable because it's epoxy coated, but that's
+[18:47.800 --> 18:53.640]  a key consideration with thermistors. Now consider that all the PRTs are resistance sensors as well,
+[18:54.280 --> 18:59.800]  but they're encased in stainless steel to keep moisture away from and keep them stable.
+[19:00.760 --> 19:11.720]  So here's one of the... the next slide shows you a hidden cost of sensors, and the more you work
+[19:11.720 --> 19:20.360]  with these you start to get an appreciation for this. How many channels on a data logger does your
+[19:20.360 --> 19:27.000]  sensor take up? And now that we have digital sensors and evolving data loggers with digital
+[19:27.400 --> 19:34.920]  data loggers, wow, digital sensors allow you to put a lot of sensors on a smaller data logger.
+[19:34.920 --> 19:40.280]  The days in which we had big lots of channels and multiplexers and CR7s,
+[19:41.160 --> 19:46.120]  we have a lot more digital sensors. But look at what a thermistor takes up.
+[19:51.220 --> 19:57.940]  This is three and... two, three, and four wire resistance measurements.
+[20:00.580 --> 20:07.300]  You can measure resistance with two wires, which is the secondary instrument. This is
+[20:07.300 --> 20:10.980]  off the internet. The secondary instrument in this case would be a Campbell's logger.
+[20:11.940 --> 20:19.940]  That's two channels. It gets more accurate when you have a third wire for a reference and you
+[20:19.940 --> 20:27.300]  have a three wire measurement. And to achieve those tenth of a degree C accuracies, you really
+[20:27.300 --> 20:34.100]  ought to have a four wire measurement and a four wire thermistor. That's a more expensive
+[20:34.100 --> 20:41.940]  thermistor because there's more wires and it takes up four analog channels on the data logger. So
+[20:44.740 --> 20:51.780]  thermistors are... they're expensive from the standpoint of channels. Now of course you can
+[20:51.780 --> 20:59.860]  digitally measure them and send a digital signal too. What I want to show you now is that our data
+[21:01.060 --> 21:09.940]  collected over many cycles of accelerated aging tests to see how much drift we could cause in
+[21:09.940 --> 21:16.100]  these thermistors. Because if they drift, that's a big problem we need to know. So we do accelerated
+[21:16.100 --> 21:22.660]  aging. Up and down temperature. We have a tray of water in the bottom of the chamber so they
+[21:22.660 --> 21:27.460]  freeze and they get cold and then they are high humidity. So it's a very worst case scenario.
+[21:28.180 --> 21:35.700]  And we cycle them. In this particular data set, 96 cycles minus 20 to plus 60.
+[21:36.020 --> 21:46.740]  This is the data. The blue lines are those yellow bead thermistors and the red line is class A PRTs.
+[21:46.740 --> 21:55.620]  Now that's not the highest quality PRTs, but you can see the offsets and this graph right here
+[21:55.620 --> 22:02.900]  shows after we normalize it to the initial temperatures. Those thermistors were more stable
+[22:02.980 --> 22:15.060]  than that class A PRT in this test. So it provides evidence that thermistors can be very stable over a long period of time.
+[22:18.020 --> 22:26.820]  It's another even more rigorous test. 10 months, 584 cycles. This is now with
+[22:27.780 --> 22:34.980]  high quality PRTs, two replicate PRTs, deviation from the mean. They were both very, very accurate.
+[22:35.860 --> 22:42.500]  Here's the data. 12 replicate thermistors. It looks like the other data but it's in a test.
+[22:42.500 --> 22:50.980]  And those thermistors were within, once we got rid of the offset, they were within 0.05 C.
+[22:51.060 --> 22:56.900]  So the point is thermistors can be impressively stable if they're encased properly.
+[22:58.420 --> 23:04.660]  So here's an example. I talked about Peter Sinks. Example of what we do with Peter Sinks.
+[23:04.660 --> 23:12.820]  There's a picture of it. It's a big basin up in the mountains. And we're sort of,
+[23:13.780 --> 23:16.900]  you don't have to live here very long and you learn this story.
+[23:18.420 --> 23:28.900]  1985, we measured minus 56.3 C at Peter Sinks. It was the record low temperature for Utah and
+[23:28.900 --> 23:35.940]  the second coldest temperature ever recorded in the continental United States. Second, yeah. What
+[23:35.940 --> 23:40.820]  was the first? We're still going for that first place. We haven't got it yet. Global warming's not
+[23:40.820 --> 23:51.780]  helping us. The coldest temperature ever measured was minus 69.7 at Rogers Pass, Montana, 1954. So
+[23:51.780 --> 23:59.860]  look at the difference. We missed it by four-tenths of a degree Fahrenheit, the record. So we're
+[23:59.860 --> 24:05.220]  waiting for it. We'd just love it if we got a super cold winter and we could get that record.
+[24:05.220 --> 24:11.140]  So we got a lot of instruments up there to do this. This is a picture of the station up there
+[24:11.940 --> 24:20.820]  with the bottom of the bowl. And there's where we have these two yellow bead thermistors and two
+[24:20.820 --> 24:31.300]  replicate high quality PRTs. Those are inside of that aspirated shield looking up from the bottom.
+[24:36.100 --> 24:41.140]  I've got some data in here on the comparison of those, and they've been up there for several
+[24:41.140 --> 24:45.620]  years now. I've forgotten. Bob, do you remember how long this has been up there? I don't know.
+[24:45.620 --> 24:52.500]  It's, I don't know, five or eight years or something like that. So just replicant measurements
+[24:52.500 --> 24:59.860]  inside an aspirated shield to get, and they're both tracking really closely within a
+[25:00.820 --> 25:10.420]  tenth of a degree C. So that's the story on measuring temperature. We're big fans of
+[25:10.420 --> 25:15.780]  precision thermistors, and in fact the Apogee aspirated shield has this yellow bead thermistor
+[25:15.780 --> 25:26.100]  inside of it for air temperature. The next thing I want to talk about is the importance of aspirated
+[25:26.100 --> 25:30.820]  shields, because it's one thing to have a good sensor, but we mentioned a minute ago if you don't
+[25:30.820 --> 25:38.020]  have it in the right housing, you're going to have an error from the housing. Andrew Sanford's here.
+[25:38.020 --> 25:43.940]  Andrew, you've worked on this stuff your whole life. You got any additional comments of PRTs?
+[25:45.780 --> 25:50.180]  Well, I need to say that most meteorological services treat them as a reference.
+[25:50.820 --> 25:51.620]  They what?
+[25:51.620 --> 25:53.780]  They treat them as a reference instrument.
+[25:53.780 --> 25:54.820]  Yeah, yeah.
+[25:54.820 --> 25:56.340]  We can't break that mold.
+[25:56.340 --> 25:58.180]  Yeah, yeah.
+[25:58.180 --> 26:00.740]  We're looking at how to calibrate them and then how to measure them.
+[26:02.260 --> 26:05.620]  So I think it's good that you offer them when you're a shielder.
+[26:05.620 --> 26:13.380]  Yeah, they still are a reference instrument to me, and that is as the reference instrument.
+[26:14.500 --> 26:16.980]  Is it possible to make a bad PRT sensor?
+[26:17.860 --> 26:23.620]  Yeah, yeah, yeah. Just be careful if you're getting PRTs.
+[26:25.060 --> 26:35.060]  This next series of slides is a separate talk, and I'm going to close this and open the next talk here.
+[26:38.500 --> 26:39.060]  Let's see.
+[26:41.460 --> 26:42.020]  If I was...
+[26:42.260 --> 27:04.990]  This is slides from another talk that we gave at another professional conference.
+[27:06.990 --> 27:14.030]  Mark Blonquist, if you haven't already met him, is here, and he's the chief scientist at Apogee.
+[27:14.030 --> 27:17.790]  In Apogee, we decided we don't have vice presidents, we have chiefs.
+[27:17.790 --> 27:20.910]  We have chief scientist, chief operating officer, and
+[27:20.990 --> 27:23.550]  Ryan Lindsay is a mechanical engineer.
+[27:25.230 --> 27:33.390]  These are slides about the performance of an aspirated shield that Apogee has sold for a while,
+[27:33.950 --> 27:38.670]  which also took a lot longer to develop and refine than we thought.
+[27:40.430 --> 27:45.390]  But it has helped us understand the errors that we are making.
+[27:45.630 --> 27:54.270]  But it has helped us understand the errors that we are all getting when we use static shields,
+[27:54.910 --> 28:01.070]  because we all use those. They're cheap, and there's improvements in those, by the way.
+[28:01.070 --> 28:05.790]  I mean, some static shields are better than others, but if the sun is shining and the wind's not
+[28:05.790 --> 28:13.790]  blowing, they're going to heat up. So this is just a little diagram of wind and solar radiation and
+[28:13.790 --> 28:19.710]  what you get with air temperature. So let's take a look.
+[28:22.750 --> 28:30.510]  This is Jonathan Wright, is with MetSpec in the UK, and MetSpec is a company that's made an
+[28:30.510 --> 28:37.150]  improved static shield that we have tested extensively. Martin F. is at Campbell Scientific.
+[28:37.150 --> 28:42.270]  We deployed these in a lot of cases, collected a lot of data over the years.
+[28:43.070 --> 28:49.310]  This is a lot of text, but it basically, it says to determine the quantity, the amount of error
+[28:49.310 --> 28:56.190]  of static shields, ultimately so we can get accurate leaf to air temperature differences.
+[28:59.710 --> 29:07.870]  This is a hot topic, and when you think about science, what do we do in science? We do research.
+[29:08.830 --> 29:16.510]  And the word research is re-search. We take what we thought we knew and study it again. And boy,
+[29:16.510 --> 29:20.830]  do we find a lot of stuff that we thought we knew and we didn't really know it very well.
+[29:20.830 --> 29:30.350]  That's all of science. So this is not just us looking at these errors. There's 30 peer-reviewed
+[29:30.590 --> 29:39.710]  papers on the errors of static shields over the last 15 years. It's particularly big now. If we're
+[29:39.710 --> 29:43.790]  going to quantify global warming and air temperatures, well, we've got to measure air
+[29:43.790 --> 29:48.270]  temperature. And I say, look, we can solve global warming. Everybody just switch to aspirated
+[29:48.270 --> 29:53.070]  shields and the problem will go away because it's going to make the earth appear to be cooling.
+[29:53.550 --> 30:02.030]  So these are a couple of comparison shields in this data set. It's a multi-plate shield. RM Young
+[30:02.030 --> 30:07.950]  has for long made a aspirated shield. We call it the Darth Vader shield because of the way the
+[30:07.950 --> 30:14.350]  helmet looks. It opens up to get the sensors in there. Here's the problem. It's not widely used
+[30:15.070 --> 30:22.910]  at all because it is a very power hungry fan. It's a centrifugal blower. You're not going to
+[30:22.910 --> 30:29.870]  run that unless you have massive solar panels. And our stations are places where we have low power.
+[30:29.870 --> 30:39.630]  So the Apogee's goal was to make an accurate aspirated shield that is also very low power.
+[30:40.510 --> 30:45.630]  These were some of the shields we compared it to.
+[30:48.990 --> 30:57.070]  And then statics have a humidity probe. Now back to Peter Sinks. Here's some data.
+[30:59.710 --> 31:05.870]  Difference from the active shield. Now the active shield is always cooler,
+[31:05.870 --> 31:12.830]  but this data is just what you might think. And there's the wind speed. So they don't,
+[31:13.950 --> 31:18.670]  after the wind is three to four meters a second, we're down in the errors of
+[31:18.670 --> 31:24.110]  0.1, 0.2 degrees C, but the errors were much worse over snow.
+[31:26.670 --> 31:32.830]  So if you need to make measurements over snow, static shields have particular problems because
+[31:32.830 --> 31:38.110]  they're designed to block the radiation coming in from the top. They're not designed to block
+[31:38.110 --> 31:44.990]  reflected radiation. So some of those errors get to one, one and a half C. These are
+[31:45.710 --> 31:52.350]  multiple measurements over a long period of time, all summarized. Now we come back down to the
+[31:52.350 --> 32:00.590]  valley. And this is measurements in the backyard at Campbell Scientific. Multiple types of shields,
+[32:00.590 --> 32:09.550]  a sonic anemometer to get wind speed, multiple replicates. All of them have that small yellow
+[32:09.550 --> 32:17.790]  bead thermistor inside the shield. So they're all measuring an accurate temperature. There's the
+[32:17.790 --> 32:26.510]  Met One. There's the Apogee. Those are Met spec shields. So all the types of shields. I won't go
+[32:26.510 --> 32:36.910]  into all the brands, but there's a lot of stuff on here. So this,
+[32:42.430 --> 32:47.070]  I think this data right here is just the temperature difference of the,
+[32:47.070 --> 32:50.430]  of the, this is the variation of just the yellow bead thermistor.
+[32:50.990 --> 32:57.790]  And now we get to the data from, I can't remember, I think we ran this for about a year
+[32:57.790 --> 33:06.350]  in the, in the field. And this graph on, let's see, your right shows a similar thing that we saw
+[33:06.350 --> 33:15.790]  at Peter Sinks only now. This is not over snow. This was just over grass. But now we compared
+[33:16.670 --> 33:22.190]  a small thermistor inside the shield with a humidity probe in the shield. And that's how
+[33:22.190 --> 33:28.830]  we all do it is a humidity probe in that shield. Well, that's thermally massive. So that heats up
+[33:28.830 --> 33:35.150]  more than the yellow bead thermistor. And now even when we got pretty significant wind speeds,
+[33:35.150 --> 33:43.150]  we still were down around 0.2 degrees C heating from that humidity probe.
+[33:43.310 --> 33:48.590]  The fact that this line flattens out suggests there's some offset in that humidity probe. It
+[33:48.590 --> 33:54.510]  didn't even go to zero by eight or nine meters a second. But the humidity probes confound the
+[33:54.510 --> 34:01.630]  problem because they're just big, even if they have an accurate PRT in them. More data. We've
+[34:01.630 --> 34:07.230]  done this in the, what we call the backyard at Apogee Instruments, a big grassy area where we
+[34:07.470 --> 34:12.430]  what we call the backyard at Apogee Instruments, a big grassy area where we just,
+[34:12.430 --> 34:18.990]  same as Campbell's, are set up to do continuous testing of products, characterize long-term
+[34:18.990 --> 34:26.190]  stability of them. This is the, that's a picture taken from the roof of Apogee of this line of
+[34:26.190 --> 34:33.870]  shields. We were pleased that the Apogee shield slightly outperformed the RM Yong shield,
+[34:34.750 --> 34:43.710]  even with a much smaller fan, almost a tenth of the power for the fan. This is solar radiation
+[34:43.710 --> 34:50.030]  and heating. And now we're talking differences in tenths of a degree C among types of aspirated
+[34:50.030 --> 34:56.510]  shields. So the air is getting small, but we're trying to get down as close as we can to zero.
+[34:57.390 --> 35:05.790]  So that's the, that's the, that's an example of testing that we've done on temperature sensors
+[35:05.790 --> 35:15.630]  and aspirated shields. The aspirated shield and the Apogee shield, it has PWM modulation. Running
+[35:15.630 --> 35:22.030]  full blast, it takes 80 milliamps. Now remember that RM Yong is right around 500 milliamps,
+[35:22.990 --> 35:30.030]  so it's a big drop from that. But what we have found is you only need to run the fan full blast
+[35:30.590 --> 35:36.110]  if it's no wind and the sun is full, so you can turn the fan down, especially at night,
+[35:36.110 --> 35:40.190]  you can turn the fan down. If the wind is blowing, you can turn the fan down. Sun's
+[35:41.710 --> 35:47.870]  setting, turn the fan down. So you can optimize power and it's not, we have many stations running
+[35:47.950 --> 35:54.350]  that aspirated shield from a relatively small solar panel. Still takes a lot more than the
+[35:54.350 --> 36:04.270]  datalogger, but it's much less than previous aspirated shields. This hasn't really caught on,
+[36:04.270 --> 36:11.150]  I mean the Apogee just had steady sales of this, but I still feel like, man, people,
+[36:11.150 --> 36:16.270]  if people knew the errors they have, they'd be more interested in trying to do aspirated shield
+[36:16.270 --> 36:22.270]  measurements. And frankly, I think most people just eliminate it right away because they say,
+[36:22.270 --> 36:25.790]  well, I don't have the power to run a fan aspirated shield. I know they're better.
+[36:26.670 --> 36:33.150]  But boy, solar panels and batteries, you don't have to be that much bigger to run the aspirated
+[36:33.150 --> 36:44.030]  shield. So that's temperature. Just sensors and shields, just for getting an accurate measurement
+[36:44.030 --> 36:52.830]  of temperature. One of the places that aspirated shields have found an application
+[36:53.870 --> 37:02.110]  is in temperature monitoring in fruit orchards, where if you know anything about fruit production,
+[37:04.110 --> 37:10.670]  they live and die by late spring frost, which can kill the flowers and wipe out their yield for the
+[37:10.670 --> 37:20.990]  year. And as the temperatures start to get close to freezing, they start wind machines, they start
+[37:20.990 --> 37:27.390]  running water sprinklers to keep their plants from freezing. In Utah, the growers tell me
+[37:27.390 --> 37:36.590]  those wind machines cost $10,000 an hour to run. But it's worth it because the value of the crop
+[37:36.590 --> 37:44.430]  is greater than the cost of running their wind machines. $10,000 an hour. Man, if they could
+[37:44.430 --> 37:49.950]  delay turning those on for half an hour, they paid for their measurement system in one night.
+[37:50.670 --> 37:54.270]  So they need to know, they don't want to turn them on unless they have to,
+[37:54.270 --> 38:00.270]  but when they need them, they got to run them. And how are they measuring temperature in a static
+[38:00.270 --> 38:10.030]  shield? Okay. And they say, well, it's at night. It's not solar loading on the shield, so I don't
+[38:10.030 --> 38:17.230]  really have to have an aspirated shield. I don't have the data in here, but when we did tests in
+[38:17.230 --> 38:24.590]  an orchard, these are calm nights. They get radiation frost, so it's calm and there's
+[38:24.590 --> 38:34.190]  not wind to mix the air. The lag time on those static shields was enormous. I mean, the temperature
+[38:34.190 --> 38:40.030]  in those was like a half an hour to reach the true air temperature, whereas an aspirated shield is
+[38:40.030 --> 38:47.310]  fast response. They got the air temperature right away. So the growers, the fruit growers, are
+[38:47.310 --> 38:53.070]  increasingly using aspirated shields, not just to get more accurate temperatures, but to get faster
+[38:53.070 --> 39:03.630]  response temperatures at night. We also use them, we have a network in Cache Valley of, we have a
+[39:03.630 --> 39:12.670]  project here called, can I turn these lights back on, Chris? We're over here. I can probably get
+[39:12.670 --> 39:20.590]  them here. Hold on, let's see. There. I'm just going to talk for a minute. We have a project here in Cache
+[39:20.590 --> 39:27.550]  Valley called the Atmospheric Mixing Project. It's run through the university and it's, so far,
+[39:27.550 --> 39:34.430]  it's been largely funded with the gracious help of the instrument companies. But I don't know how
+[39:34.430 --> 39:39.950]  many visits you guys have been here and you probably don't come in January, but we get inversions. All
+[39:39.950 --> 39:45.390]  the time in January, cold air settles and that cold air sits there and it's trapped and all of our
+[39:45.470 --> 39:52.110]  emissions stay with us and the air quality deteriorates. So the state of Utah is getting a
+[39:52.110 --> 39:57.870]  black eye for low air quality, so they're starting to put more money into this. We are interested in
+[39:57.870 --> 40:03.470]  the magnitude of atmospheric mixing during these inversions because people think, oh, there's no
+[40:03.470 --> 40:12.510]  mixing, it's just trapped air. So with these sensors, we have seen large eddies of air. It's
+[40:12.510 --> 40:19.790]  cold, cold, and all of a sudden, whoa, the temperature jumps two degrees C as warmer air
+[40:19.790 --> 40:26.270]  mixes with the air and then it comes back down. And you can see these patterns of air mixing in
+[40:26.270 --> 40:32.270]  the valley and we would only see that with accurate measurements of air temperature with a fast
+[40:32.270 --> 40:40.030]  response shield. That's another thing that's been helpful for us. I've given talks about this
+[40:40.030 --> 40:44.830]  project, atmospheric mixing, and it's really of interest if you live here because you want to
+[40:44.830 --> 40:52.910]  have good air in the winter. But it's a fascinating project. We're using carbon dioxide as a tracer gas
+[40:52.910 --> 40:58.430]  to look at the atmospheric mixing. We're finding some really fascinating stuff. There's more
+[40:58.430 --> 41:05.950]  atmospheric mixing than we used to think and it's all because we've got good instruments out there
+[41:05.950 --> 41:14.900]  so we can see it. I told you to interrupt me if you had questions. We're just listening.
+[41:18.260 --> 41:26.580]  Let me ask you, what are some of the instruments that, I don't have comprehensive knowledge on all
+[41:26.580 --> 41:30.500]  instruments, but I don't want to talk about instruments that you're not interested in.
+[41:31.140 --> 41:34.980]  Let me ask you what things you're most interested in. Yes?
+[41:35.140 --> 41:37.540]  We've sold a few of your leaf and bark scents.
+[41:39.540 --> 41:48.740]  Yes. I don't have a picture in here, but those were developed, part of my work at the university
+[41:48.740 --> 41:54.900]  is funded by the fruit growers. Utah is not a major agricultural state, but it is a major
+[41:54.900 --> 41:59.860]  fruit growing state. I think we're second in the nation for tart cherries, for example.
+[42:00.500 --> 42:06.180]  I don't forget the few hundred million dollars a year of fruit sold.
+[42:09.780 --> 42:16.420]  So these guys need to do frost protection. So we made this flat disc that's painted black
+[42:16.980 --> 42:24.980]  to get a low cost way to get a surface temperature on a cold night with no wind.
+[42:25.940 --> 42:31.620]  And I think we call that the leaf and bud sensor. It has just a thermistor sticking out too.
+[42:33.780 --> 42:37.620]  When you run the numbers from energy balance numbers,
+[42:40.180 --> 42:48.900]  surface temperatures, we've measured nine degrees C colder than the air temperature at night.
+[42:49.860 --> 42:58.820]  Nine Celsius. This is turf temperature now. And one of our climate people, we have a station on
+[42:58.820 --> 43:04.420]  campus that measures this in real time graphs. And one of my favorite stories is one of our elite
+[43:04.420 --> 43:10.020]  climate scientists said, Bruce, something is wrong with your numbers. It says the turf is nine
+[43:10.020 --> 43:15.860]  degrees C colder than the air. And so one of my colleagues jumped in. He says, let me give you a
+[43:15.860 --> 43:20.900]  lecture on atmospheric physics. That's real data. There's nothing wrong with the sensors.
+[43:20.900 --> 43:28.100]  It's cooling to the air. And so now a fruit grower doesn't really care what the air temperature is.
+[43:28.100 --> 43:34.580]  They care what their bud temperature is. And so this is a low cost way to estimate bud temperatures.
+[43:34.580 --> 43:43.300]  We often model it depending on wind speed and, well, mostly wind speed and sky, long wave radiation
+[43:43.300 --> 43:52.340]  to the sky. So that's why we sell that. On that same note, this is something I use in teaching.
+[43:53.700 --> 43:58.180]  If you take a box, let me draw this, see if I can draw and talk.
+[44:02.180 --> 44:06.980]  I know this analogy works because I've seen my students use it to teach other students.
+[44:06.980 --> 44:11.220]  So it stuck with them. It's on that exact topic.
+[44:13.460 --> 44:18.260]  And I've done this. I got pictures of doing this in my backyard. Here's a big
+[44:20.180 --> 44:28.340]  insulated box, all insulated. On the bottom of this, we put a little dish of water,
+[44:30.100 --> 44:32.660]  paint it black, black saucer with water in it.
+[44:33.220 --> 44:36.420]  Now we take this at night, put it outside under a clear sky.
+[44:37.940 --> 44:45.300]  And let's take July. So it's a good warm July night. The temperature over here is 20 degrees C.
+[44:46.500 --> 44:53.700]  But this insulation prevents this from warming up. This can be cellophane over the top or it can just
+[44:53.700 --> 45:01.380]  be open, but there's not a lot of wind. Here's the question. What happens to the temperature of the
+[45:02.340 --> 45:08.660]  water in that dish on a clear sky night, especially in the mountains here with
+[45:09.940 --> 45:13.460]  close to outer space, dry air, very clear sky?
+[45:15.220 --> 45:20.340]  So you hook this up to your Campbell Scientific daylogger with one of those precision thermistors.
+[45:20.340 --> 45:26.340]  You drill a tiny little hole, you measure it, and you get the, yeah, I don't know, the CR100,000X
+[45:26.340 --> 45:33.700]  over here, you measure that temperature. The water starts to come in equilibrium
+[45:34.420 --> 45:42.180]  with the sky temperature because of radiation. This is losing, shown here in red,
+[45:46.020 --> 45:53.220]  losing energy by long wave radiation to the sky. And it loses it and it loses it. And the sky
+[45:53.220 --> 46:00.340]  temperature, well, the temperature of outer space is zero Kelvin. Sky is really cold.
+[46:01.380 --> 46:06.900]  This can't warm back up because it's got all this insulation and there's not wind to blow
+[46:06.900 --> 46:15.940]  warm air in here. It gets colder and colder. And finally, the water freezes. On a warm summer night,
+[46:15.940 --> 46:22.500]  you can make water freeze. So when I teach this, I show pictures of me with this setup sitting
+[46:22.500 --> 46:30.820]  there at night with my computer and measuring this, and you can make the water freeze. Then the
+[46:30.820 --> 46:37.300]  sun comes up and you cover it and you have a thermally, an environmentally cooled refrigerator.
+[46:38.020 --> 46:42.980]  And in fact, in some cases in the tropics with no electricity, you can use this to
+[46:42.980 --> 46:52.980]  keep stuff cool. But it's a powerful example of what radiation can do to surface temperatures
+[46:52.980 --> 47:02.500]  and why understanding radiation is important to understanding surface temperatures beyond
+[47:02.500 --> 47:09.060]  air temperature. We get into this a lot because of our infrared sensor for surface temperatures.
+[47:09.380 --> 47:17.940]  And this in this gradient from leaf to air for mostly for agricultural irrigation, predicting
+[47:18.580 --> 47:23.860]  transpiration rates of crops. That's a long answer to the leaf and bud sensor, but
+[47:24.500 --> 47:30.580]  the leaf and bud sensor is a much cheaper sensor than the infrared stuff. So for fruit growers,
+[47:31.220 --> 47:33.220]  they can buy it. Where do you sell them?
+[47:33.460 --> 47:33.960]  Who?
+[47:38.180 --> 47:43.860]  It's a... Oh really? And they need to worry about freezing?
+[47:52.420 --> 47:59.780]  Yeah, good. And they've worked for you? That's good. Yeah, the fruit growers in Utah use them.
+[48:00.740 --> 48:04.900]  So other measurements that you're
+[48:07.620 --> 48:10.100]  stuck on? If I don't know about it, I'll tell you.
+[48:15.580 --> 48:21.500]  We... Okay, let me move, let me say a few things about humidity. That might be the next most
+[48:21.500 --> 48:29.020]  important parameter that we worry about. And this is just now my broad experience over doing this.
+[48:29.580 --> 48:36.380]  When I was in graduate school a long time ago, capacitance chip sensors came out. And Vaisala
+[48:36.380 --> 48:41.740]  was the first to do these. And everybody is, wow, you know, because we were really doing the wet
+[48:41.740 --> 48:48.780]  bulb psychrometers and man, all these super labor intensive ways to get humidity. And capacitance
+[48:48.780 --> 48:56.380]  sensors came out and they were a huge breakthrough. But they were not so stable. And they get
+[48:56.380 --> 49:05.740]  contaminated with some other gas. And they go haywire. That was 30 years ago. And now we have
+[49:05.740 --> 49:11.980]  multiple companies making these. The coatings are much better. The sensors are far more stable. And
+[49:11.980 --> 49:22.460]  now that's... We use capacitance humidity sensors all over the place. Both Campbell Scientific
+[49:22.460 --> 49:32.620]  and Apogee have started selling capacitance type humidity sensors from a company called EE Electronics.
+[49:34.140 --> 49:41.740]  And our tests with those over long-term periods of time indicate impressive stability of those
+[49:41.740 --> 49:47.180]  sensors. So we not only do we get better job knowing leaf and air temperatures, but
+[49:47.980 --> 49:54.940]  the capacitance humidity sensors have come a long way. And they continue to come a long way. Sensors
+[49:54.940 --> 50:02.140]  getting better and cheaper. That's one of the things that drives this whole enterprise, this
+[50:02.140 --> 50:12.060]  weather measurement, is the progress worldwide that we have made in better sensors and better
+[50:12.620 --> 50:17.660]  electronics to measure those sensors. And of course now the new frontier is just getting the
+[50:17.660 --> 50:23.900]  data in the cloud and getting it sent by wireless so you can see all the data and better summarize
+[50:23.900 --> 50:33.340]  it in real time. My field is agriculture and the weather is... Not many disciplines where weather
+[50:33.340 --> 50:41.180]  is more important than food production. So it's been a big thing for agricultural weather. And
+[50:41.180 --> 50:47.980]  of course now climate change, effects of climate change continue to drive it. So but it's fun to
+[50:47.980 --> 50:54.860]  see the new developments in sensors every year. Whether we build them and we sell them or somebody
+[50:54.860 --> 51:03.980]  else builds them. Now I got to tell you a story. There's a international show in Europe each year,
+[51:03.980 --> 51:11.180]  METTEC. It's called Meteorological Technology International, MTI. And it's all the major
+[51:11.180 --> 51:16.780]  equipment manufacturers getting together and showing their stuff. So it's organized. There's a
+[51:16.780 --> 51:25.740]  company that organizes it. And I... Apogee's gone, so's Campbell's, for many years in a row. And
+[51:26.700 --> 51:34.860]  you get to know the organizers. And so they go, wow, we can't believe these instrument people,
+[51:34.860 --> 51:40.700]  these meteorologists. You guys are all talking to each other. We do a show that's an automotive
+[51:40.700 --> 51:45.740]  show and people put curtains around their booth because they're so confidential about what they're
+[51:45.740 --> 51:50.940]  doing. They're just paranoid about their competitors finding out some little secret.
+[51:51.020 --> 51:55.820]  And here you guys are just complimenting each other on the new instruments you're building.
+[51:55.820 --> 52:00.380]  It's, he says, it's night and day different than the automotive people. That makes this
+[52:00.380 --> 52:06.860]  field so much fun. It's so science driven and we're competing on good science, not
+[52:07.500 --> 52:17.820]  smoke and mirrors and things. It's... And that also pushes people to make better instruments too.
+[52:17.820 --> 52:25.180]  Keep going. How about solar radiation? Another key parameter.
+[52:27.340 --> 52:35.020]  The classic... I have pictures in here of, you know, what thermopile pyranometers look like.
+[52:35.020 --> 52:39.420]  They were built by Eppley for years and years. When I was in graduate school, it was, whoa,
+[52:39.420 --> 52:45.900]  you got an Eppley, you know. I haven't visited Eppley, but they cannot have much of a science
+[52:45.900 --> 52:52.140]  department because they haven't released an improved pyranometer in a very long time.
+[52:53.260 --> 52:58.940]  But the shape is still the same. White flying saucer with the glass dome and a black body
+[52:58.940 --> 53:06.940]  underneath. So Kip and Zonen has been working on this. And then right down the street is Huxaflux,
+[53:06.940 --> 53:13.980]  both in the same city, both making, competing with each other for the best
+[53:14.540 --> 53:19.340]  pyranometers in the world. And it's a big market because of solar photovoltaics,
+[53:19.340 --> 53:29.900]  precisely measuring that. But the instruments are still expensive. So maybe 30 years ago,
+[53:30.940 --> 53:40.300]  LICOR came out with a silicon pyranometer, way cheaper. And it's calibrated to sun and you get
+[53:40.300 --> 53:48.540]  close to the same accuracy for a fraction of the cost. And I think this is used worldwide.
+[53:50.460 --> 53:57.980]  So that became a standard on lots of weather stations. And many, probably 20 years ago,
+[53:57.980 --> 54:06.300]  Apogee also made a silicon pyranometer. And that lower cost than LICOR, but the same
+[54:06.940 --> 54:14.460]  type of sensor to get solar radiation. Those are fine as long as
+[54:16.700 --> 54:22.860]  you have a sunny day in the same conditions that they were calibrated in, because they
+[54:22.860 --> 54:28.620]  sub-sample the solar spectrum. And if anytime you sub-sample and predict the whole thing,
+[54:29.420 --> 54:32.700]  you're okay as long as your calibration conditions don't change.
+[54:33.660 --> 54:42.300]  One of the tests Apogee has done is how accurate are those sensors on cloudy days? Clouds,
+[54:42.300 --> 54:46.140]  the water vapor absorption bands mean that there's more shortwave,
+[54:46.860 --> 54:54.300]  that's all shortwave, that more shorter wavelength radiation. Those sensors can have
+[54:54.300 --> 55:03.260]  up to a 14% error on a cloudy day because of a spectral shift caused by water vapor absorption
+[55:03.260 --> 55:06.940]  in the clouds. And this had been really underappreciated.
+[55:10.060 --> 55:21.740]  So Apogee started looking at approaches to measure all the wavelengths without having to use the cost
+[55:21.740 --> 55:32.140]  of the black body pyranometer that is used by Kip and Sonen and Huxaflux. And a few years ago,
+[55:32.140 --> 55:36.860]  so then we find things and test and test and test, the whole roof is, not the whole roof,
+[55:36.860 --> 55:42.300]  but most of the roof at Apogee is covered with test sensors as always. We built a staircase to
+[55:42.300 --> 55:53.180]  go up there to keep doing tests. Apogee developed a black body pyranometer that's small, it's a
+[55:53.180 --> 55:59.740]  blue color, that doesn't sub-sample the spectrum anymore, measures the whole thing, doesn't have
+[55:59.740 --> 56:10.300]  that cloudy day error. It's close to the same accuracy as those more expensive, larger black
+[56:10.300 --> 56:17.180]  body pyranometers by Kip and Sonen and Huxaflux. We've got some on the other side of the door,
+[56:17.900 --> 56:26.460]  the guys will show them to you. It's sold here by Campbell Scientific. It's another story, but we
+[56:26.460 --> 56:30.780]  had a lot of meetings to decide what color that should be. And actually Campbell's chose the color,
+[56:30.780 --> 56:36.940]  but it's a certain blue to be a trademark color of blue. And it's striking, you see that's a unique
+[56:36.940 --> 56:42.220]  blue color. And it says Campbell Scientific on the front and you turn it around on the back and
+[56:42.220 --> 56:48.460]  it says in two-point font, it says manufactured by Apogee Instruments. So we make that and Campbell
+[56:48.460 --> 56:54.860]  sells it in the United States. That's a pretty big breakthrough. That sensor is much lower cost,
+[56:54.860 --> 57:05.180]  much smaller digital output compared to the Delft Netherlands bigger sensors.
+[57:06.060 --> 57:12.460]  There's another example of a continuing march to get more cost-effective measurements,
+[57:12.460 --> 57:19.340]  better measurements for lower cost, fast response, all of those things. Radiation has certainly been
+[57:19.340 --> 57:26.220]  a core strength of Apogee, starting with quantum sensors and pyranometers. Once Apogee got
+[57:27.020 --> 57:37.020]  a black body pyranometer, that led to the development of a net radiometer. And they're
+[57:37.020 --> 57:45.020]  on the other side of the door. But, wow, perfect. Yes, this is my helper here. Thank you for
+[57:45.020 --> 57:52.780]  remembering this. There's a picture. Net radiation is something that's so expensive that we've almost
+[57:53.260 --> 57:58.540]  always modeled it instead of try to measure it. So we have some papers in the literature about
+[57:58.540 --> 58:05.020]  the errors you get when you try and model it. And the sensors are big. They're not only expensive,
+[58:05.020 --> 58:12.380]  but they're heavy. So with this new technology, we could make a much smaller net radiometer. And net
+[58:12.380 --> 58:20.380]  radiation means up and down shortwave and up and down longwave radiation. So there's four sensors
+[58:20.380 --> 58:29.500]  in this. And it gives you the full radiation energy balance for a canopy for precision
+[58:29.500 --> 58:35.980]  measurements of all kinds of things, including irrigation requirements of agricultural crops.
+[58:37.260 --> 58:43.660]  So to get reflected radiation, you can't be sub-sampling the radiation. You need to measure
+[58:43.660 --> 58:49.500]  it all. So these went into this sensor. Then you get the sensor and, oh, remember those channels
+[58:49.500 --> 58:55.980]  on the data logger? You got four sensors. You have four differential channels. Oof, you've used
+[58:55.980 --> 59:04.220]  up your whole data logger just to measure net radiation. Here comes SDI 12 output, Modbus output.
+[59:05.100 --> 59:13.260]  This has SDI 12 output. And all of those numbers are put into one and sent to the data logger. So
+[59:14.220 --> 59:21.740]  when we were able to offer this at a considerably lower cost than the larger ones. And we had lots
+[59:21.740 --> 59:28.620]  and lots of test data on this, comparing them to Kipp and Zonen and Huxiflux pyranometers.
+[59:29.980 --> 59:36.460]  This is another steady march of sensors. And coupled with the digital output, so it's easier to
+[59:37.100 --> 59:40.060]  interface this with a data logger now.
+[59:43.420 --> 59:49.340]  Yeah, we're pleased. This is, sometimes you build stuff and it catches on, and this is one that did.
+[59:49.340 --> 59:54.620]  The sales on this have been bigger than we thought they would be, the worldwide sales.
+[59:56.140 --> 59:57.980]  Let's see, what else I want to say about this?
+[59:58.780 --> 01:00:07.930]  Yeah, that comes from radiation measurement being a core expertise. The long wave radiation is the
+[01:00:07.930 --> 01:00:14.330]  same thing as our infrared sensors, which are managing long wave radiation. So the up and down
+[01:00:14.330 --> 01:00:23.770]  long waves come from our expertise into a long wave. Again, lots of testing. So, yes?
+[01:00:24.330 --> 01:00:31.690]  With your testing, so FLE, they're old, but they seem to be quite well respected by people.
+[01:00:31.690 --> 01:00:32.010]  They do.
+[01:00:32.010 --> 01:00:32.970]  I'm not familiar with.
+[01:00:32.970 --> 01:00:33.370]  They do.
+[01:00:33.370 --> 01:00:38.970]  I've watched the new stuff. How does the FET sensors compare to, say, FLEs?
+[01:00:42.890 --> 01:00:49.370]  Let me start by saying, if you get a good reputation, if you get a bad reputation,
+[01:00:49.370 --> 01:00:52.810]  it's hard to change it. If you get a good reputation, hard to change it too.
+[01:00:52.810 --> 01:00:53.450]  Right.
+[01:00:54.330 --> 01:01:02.090]  For the reasons you say. And I mean, in fact, are my EPLIs in the museum, Chris? I think one of them
+[01:01:02.090 --> 01:01:06.730]  is. I have some in my lab that we don't use them anymore, but they're in there.
+[01:01:09.610 --> 01:01:16.890]  There's a couple problems with EPLIs. One is really quite poor cosine response.
+[01:01:17.850 --> 01:01:22.730]  It's at the low angle light is either under measured or over measured.
+[01:01:22.730 --> 01:01:30.170]  And there's multiple papers in the literature on this. And man, if I was in charge of EPLI,
+[01:01:30.170 --> 01:01:36.810]  I'd be going to work on fixing that problem. But to my knowledge, they have not. They have not
+[01:01:36.810 --> 01:01:41.850]  released new sensors that fix that problem. That causes errors. And this is a competitive market.
+[01:01:41.850 --> 01:01:47.210]  You're trying to get these numbers to 1 or 2 percent a day, and now you've got a 5 percent
+[01:01:47.210 --> 01:01:54.650]  cosine error at the end of the day. They've also had issues with temperature. It has to be accurate
+[01:01:54.650 --> 01:01:59.130]  over a range of temperatures, you know, because all you're trying to do is solar radiation,
+[01:01:59.130 --> 01:02:06.890]  not temperature. That's one of the big things. It's a thermopile device. So that's one of the
+[01:02:06.890 --> 01:02:12.330]  big things that Kipp and Zonen and Huxaflux have made great progress on, making their
+[01:02:12.330 --> 01:02:21.450]  measurements more accurate. So it depends on who you talk to. I mean, if you're talking to
+[01:02:21.450 --> 01:02:30.970]  kind of cutting edge meteorologists, EPLI is sort of in the dust. But it depends, you know,
+[01:02:30.970 --> 01:02:38.810]  how much you've looked at the new improvements of sensors over the years. I mean, I always think
+[01:02:38.810 --> 01:02:42.490]  maybe they'll come out with something new, but to my knowledge, they haven't.
+[01:02:42.490 --> 01:02:47.050]  Okay, so you feel like you've done the deed, clearly.
+[01:02:47.930 --> 01:02:50.090]  I really do. I really do.
+[01:02:50.090 --> 01:02:56.970]  Is there any situation where it was better or not really?
+[01:02:56.970 --> 01:03:02.650]  Oh, man. Maybe if you had some network of EPLIs and you wanted to have consistency,
+[01:03:02.650 --> 01:03:11.770]  but I wouldn't recommend them for a new network. Part of it is driven by the fierce competition
+[01:03:11.770 --> 01:03:18.170]  between Huxaflux and Kipp and Zonen. I mean, they're both in Delft in the Netherlands,
+[01:03:18.170 --> 01:03:24.970]  and I don't know how far apart they... What are they? Two or three kilometers apart or something?
+[01:03:25.530 --> 01:03:26.330]  One.
+[01:03:26.330 --> 01:03:27.050]  Three kilometers.
+[01:03:27.050 --> 01:03:34.170]  Yeah, yeah. Point three kilometers apart. They got binoculars looking at each other, I guess.
+[01:03:35.130 --> 01:03:40.890]  And man, and then one of my favorites is Huxaflux comes out with an ad,
+[01:03:41.530 --> 01:03:46.490]  the quest for global domination is over. Introducing the new Huxaflux. And
+[01:03:47.370 --> 01:03:53.130]  that's the kind of competition there. It's pretty fierce. And they both make really good instruments.
+[01:03:55.690 --> 01:04:01.930]  But they're high end, so it leaves the door open to come in at an intermediate price point.
+[01:04:03.610 --> 01:04:10.490]  All instruments, you draw a graph and you get... Let's see if I can draw this graph up here.
+[01:04:24.400 --> 01:04:28.640]  This is going to be a really classic instrument graph.
+[01:04:29.360 --> 01:04:50.680]  And a graph always looks something like this. And you really pay a lot of money
+[01:04:51.880 --> 01:04:59.160]  to go from here to there. It's, you know, those last few percent to get really expensive.
+[01:05:00.200 --> 01:05:06.200]  And none of us has an unlimited supply of money to go from here to there.
+[01:05:07.400 --> 01:05:13.560]  So we're always trying to pick the most cost effective sensors. And you go down in here and
+[01:05:13.560 --> 01:05:21.960]  you get cheap. So depending on what you're doing, there's a zone in there that's a real
+[01:05:24.200 --> 01:05:30.440]  cost effective midpoint. And that's certainly served Apogee well, is identifying that for
+[01:05:30.440 --> 01:05:35.160]  different markets. If we could build something with this accuracy for this price,
+[01:05:36.760 --> 01:05:43.000]  it'll be very cost effective. And that's the case with this net radiometers and
+[01:05:43.000 --> 01:05:51.240]  and pyranometers is trying to hit some point in here where we're almost as good at accuracy and
+[01:05:51.240 --> 01:05:57.640]  half the cost. So that sort of thing. But it depends on the application too, which brings
+[01:05:57.640 --> 01:06:04.280]  up customer support. Man, if you can't educate your customers, you shouldn't be in business.
+[01:06:05.480 --> 01:06:12.280]  The goal is to help them make better measurements, teach them the options, and don't
+[01:06:12.280 --> 01:06:17.720]  inappropriately push your own stuff. I mean, I would never say that the Apogee pyranometers are
+[01:06:17.720 --> 01:06:23.880]  better than Kipp and Zonen and Huxaflux. They're not. But they're close. And here's the test data
+[01:06:23.880 --> 01:06:30.680]  to show that. The price is easy because you can look that number up, but the performance requires
+[01:06:30.680 --> 01:06:38.200]  a lot of test data. And even specifications. Oh God, don't get me started on that. People write
+[01:06:38.200 --> 01:06:46.280]  these specs. Andrew could tell you this too. Some companies exceed their specs regularly. And
+[01:06:46.280 --> 01:06:50.520]  frankly, Campbell Scientific is a company that exceeds their specs. I can tell you
+[01:06:51.400 --> 01:06:58.520]  a dozen stories where we tested specs and in every case the data loggers exceeded the specs.
+[01:06:59.560 --> 01:07:06.200]  Some companies, oh man, they're absurd. They can't even come close to meeting the specs they publish.
+[01:07:06.200 --> 01:07:13.640]  This is lesser companies selling all kinds of things. But the more a company tests a product,
+[01:07:13.640 --> 01:07:19.480]  the better they can define the performance and the specs. It takes a long time to get the sensor
+[01:07:20.280 --> 01:07:28.680]  to market when you're spending all that time doing it. So the goal is to help customers
+[01:07:28.680 --> 01:07:34.680]  understand specifications and what's the most appropriate sensor for their market. And really,
+[01:07:34.680 --> 01:07:40.680]  any company that can educate their customers has got customers for life. They love it that
+[01:07:40.680 --> 01:07:47.640]  they learn from the people in that company and they will come back. Of course, if you do something
+[01:07:47.640 --> 01:07:55.330]  wrong, you got to fix it. All those sorts of things too. How are we doing on time?
+[01:07:59.890 --> 01:08:04.530]  Yeah, it's too bad there's a door because it'd be nice to have the workshop around here. But
+[01:08:07.570 --> 01:08:13.570]  I mean, my whole life is teaching and I have the great honor to teach some really smart graduate
+[01:08:13.570 --> 01:08:20.370]  students. Some of them are now working at Campbell's. I mean, sorry, well, that's true.
+[01:08:20.370 --> 01:08:24.450]  Some of them are working at Campbell's and some of them are working at Apogee. And that's one of
+[01:08:24.450 --> 01:08:31.090]  the things that makes the companies go is access to the talent of the university. Lots of those
+[01:08:31.090 --> 01:08:35.170]  people, they love living here. They don't want to leave. So they turn down higher paying jobs and
+[01:08:35.170 --> 01:08:42.050]  stay here for work for the companies. But one of the things I've learned about teaching is you
+[01:08:42.050 --> 01:08:47.490]  never teach anything when you stand up and give a lecture. All the learning happens when you go
+[01:08:47.490 --> 01:08:55.490]  outside and apply the theory that you learned in the classroom. Students come back all the time
+[01:08:55.490 --> 01:09:01.650]  and they say, oh man, I learned more in the first year that I, after I graduated than I did in my
+[01:09:01.650 --> 01:09:07.810]  four years getting my bachelor's degree. And I go, thank you. We set you up for that. All that theory,
+[01:09:08.370 --> 01:09:11.730]  boom, everything clicked when you, the learning happened when they did it.
+[01:09:12.930 --> 01:09:19.650]  And when they get to ask their own questions and drill it in. So that's why we set up lots of time
+[01:09:19.650 --> 01:09:29.090]  to look at the instruments and ask questions. Get to know our people that do the customer support.
+[01:09:29.090 --> 01:09:37.250]  So when you need help, you know who to ask. I'll be here and I'm happy to interact with you more.
+[01:09:37.250 --> 01:09:44.610]  I look forward to interacting with you more. Thanks for coming. I guess we have dinner after
+[01:09:44.610 --> 01:09:51.010]  this too. You guys are from all over the world, right? So it's a great honor to talk to you.
+[01:09:53.010 --> 01:09:59.250]  Thanks.
