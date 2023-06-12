@@ -14,3 +14,4 @@ Cannabis breeding and growing-related transcriptions from non-written sources
 | Restore Hemp | https://www.youtube.com/@RestoreHemp |
 | Cornell SIPS | https://www.youtube.com/user/CornellHorticulture |
 | Apogee Instruments | https://www.youtube.com/@ApogeeInstrumentsInc |
+| The Grow From Your Heart Podcast | https://www.youtube.com/@TheGrowFromYourHeartPodcast |
