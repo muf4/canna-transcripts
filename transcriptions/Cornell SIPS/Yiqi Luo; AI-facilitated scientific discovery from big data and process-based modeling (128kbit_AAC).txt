@@ -1,0 +1,864 @@
+[SPEAKER_03]: This is a production of Cornell
+University.
+[SPEAKER_00]: So today I'm going to talk about how AI
+facilitates the scientific discovery from
+[SPEAKER_00]: big data and process-based modeling.
+[SPEAKER_00]: And probably, as you may be aware,
+AI is a big area.
+[SPEAKER_00]: It's, you know, so many different methods
+and so powerful in different areas.
+[SPEAKER_00]: So today I just want to share the
+experience my lab had and using AI in our
+[SPEAKER_00]: research.
+[SPEAKER_00]: So today I'm going to talk about why we
+developed a product, which is,
+[SPEAKER_00]: you know, as an AI modeling tool,
+and how we use the product to understand
+[SPEAKER_00]: the mechanisms underlying soil carbon
+storage and to understand the
+[SPEAKER_00]: climatological temperature sensitivity for
+soil organic carbon along soil profile.
+[SPEAKER_00]: Now my lab is developing a so-called BIM,
+Biogeochemistry-Informed Neural Network,
+[SPEAKER_00]: as another AI modeling tool.
+[SPEAKER_00]: So in each of the slides, I have a bottom
+to indicate the different part of my talk.
+[SPEAKER_00]: And probably most of us has been
+influenced so much by, like, chart-GTP
+[SPEAKER_00]: regarding AI, AI method.
+[SPEAKER_00]: And chart-GTP basically uses so-called
+foundation models, which are pre-trained
+[SPEAKER_00]: with massive data sets.
+[SPEAKER_00]: And then when user to make a question or
+make a request, to a chart-GTP,
+[SPEAKER_00]: and then the chart-GTP will use the new
+data sets, relevant data sets to that
+[SPEAKER_00]: particular questions to do fine-tuning
+before they make, you know, answer your
+[SPEAKER_00]: questions.
+[SPEAKER_00]: So the chart-GTP, while there are many of
+those so-called large language models
+[SPEAKER_00]: available, those large language models
+require lots of data.
+[SPEAKER_00]: When we use it, most of the time we use
+that as a black box model.
+[SPEAKER_00]: And, you know, these kind of AI tools can
+generate the results that may not
+[SPEAKER_00]: physically or biologically consistent with
+our understanding.
+[SPEAKER_00]: So AI tools without clear, mechanistic
+understanding may not effectively help us
+[SPEAKER_00]: to understand the science.
+[SPEAKER_00]: And, but, you know, last year,
+two Nobel prizes awarded to physics and in
+[SPEAKER_00]: physics and chemistry to the scientists to
+make a great contribution to advances in
+[SPEAKER_00]: chemistry and the physics.
+[SPEAKER_00]: And especially like the award in
+chemistry, they certainly can use the AI
+[SPEAKER_00]: for advanced science.
+[SPEAKER_00]: So it's, and particularly the,
+you know, Professor John Hopfield recently
+[SPEAKER_00]: made a note that basically he think that
+word is understandable.
+[SPEAKER_00]: And he said that you should be able to
+take anything apart, understand the
+[SPEAKER_00]: relationship between its constituents,
+do experiments, on that basis to be able
+[SPEAKER_00]: to develop a quantitative understanding of
+its behavior.
+[SPEAKER_00]: And so, so how to use the AI as a
+scientific tool is a major issues we have
+[SPEAKER_00]: been thinking about.
+[SPEAKER_00]: Today, I'm going to introduce an AI tool
+my lab has developed, so-called Pruda.
+[SPEAKER_00]: That's basically combine process based
+modeling, and the neural network,
+[SPEAKER_00]: and also data assimilation approach.
+[SPEAKER_00]: Process based model is used a lot of
+understanding about the process,
+[SPEAKER_00]: and the machine learning most of the time
+used as a tool for data mining.
+[SPEAKER_00]: And then the Pruda, the tool we have
+developed is try to combine the best out
+[SPEAKER_00]: there for that ability capability for data
+mining through machine learning and the
+[SPEAKER_00]: process based understandings.
+[SPEAKER_00]: Now I discuss why we developed this
+approach Pruda as a tool to understanding.
+[SPEAKER_00]: We try to understand the soil carbon
+dynamic.
+[SPEAKER_00]: Probably as many of you know, the soil is
+so critical for agriculture.
+[SPEAKER_00]: And now also so critical for carbon
+sequestration towards the so-called
+[SPEAKER_00]: climate smart agriculture.
+[SPEAKER_00]: So how to predict the soil carbon dynamic
+and the storage is a major issue.
+[SPEAKER_00]: And in this figure on the y-axis is a
+model predict the soil carbon density from
+[SPEAKER_00]: 11 models that was used in the IPCC fifth
+assessment.
+[SPEAKER_00]: And x-axis is observation based soil
+carbon density.
+[SPEAKER_00]: So you can see from this figure that if
+the model can predict the soil carbon
+[SPEAKER_00]: density well enough, then most of those
+dots are supposed to be scattered around
+[SPEAKER_00]: the one to one line.
+[SPEAKER_00]: But you can see from this figure the model
+basically has no idea what's happening in
+[SPEAKER_00]: the real world.
+[SPEAKER_00]: These uncertainty model earth system
+modeling actually propagates to those
+[SPEAKER_00]: prediction regarding the land carbon sink
+and the climate dynamics.
+[SPEAKER_00]: So this is one of the three major sources
+that cause that uncertainty in future
+[SPEAKER_00]: climate prediction.
+[SPEAKER_00]: So my lab has been try to understand and
+try to improve how we can predict the soil
+[SPEAKER_00]: carbon dynamic well.
+[SPEAKER_00]: And in order to predict the soil carbon or
+anything, if we want to make more
+[SPEAKER_00]: realistic prediction, we need a perfect
+model structure perfect the model
+[SPEAKER_00]: parameterization and also forcing
+variables.
+[SPEAKER_00]: So my lab has examined all those three
+elements and one by one.
+[SPEAKER_00]: First, we developed a framework to unify
+all the land carbon cycle and nitrogen and
+[SPEAKER_00]: fast form models use a matrix equations.
+[SPEAKER_00]: As long as those model uses so-called pool
+and fluxes structure so we can unify all
+[SPEAKER_00]: of them.
+[SPEAKER_00]: So basically we studied the bunch of
+models to try to understand what's the
+[SPEAKER_00]: fundamental principles underline them.
+[SPEAKER_00]: And then we discovered that no matter what
+kind of model structure, as long as they
+[SPEAKER_00]: use the so-called pool and the fluxes of
+schemes and all the model can be
+[SPEAKER_00]: represented by these matrix equations that
+accounts carbon input into the system.
+[SPEAKER_00]: And then this is a carbon dynamic,
+basically carbon transformation in the
+[SPEAKER_00]: system and also including release from the
+system.
+[SPEAKER_00]: So basically this is a matrix equation.
+[SPEAKER_00]: We have converted about 40 models into
+matrix form.
+[SPEAKER_00]: And also another group from Mach Planck
+Institute in Germany they also converted
+[SPEAKER_00]: about the 20 non-linear microbial model
+into this matrix form.
+[SPEAKER_00]: So now we have that once we have the
+unified framework, we can study models at
+[SPEAKER_00]: a different level of a complexity on the
+one overarching theory.
+[SPEAKER_00]: And here is the examples.
+[SPEAKER_00]: And the NCAR National Center for
+Atmospheric Risk Research, they developed
+[SPEAKER_00]: the so-called community land model with
+carbon-nitrogen dynamics.
+[SPEAKER_00]: This is probably literally is one of the
+most complicated model in the whole world.
+[SPEAKER_00]: They used about nearly 1000 pools to
+describe carbon-nitrogen dynamics and the
+[SPEAKER_00]: use of six modules to describe them.
+[SPEAKER_00]: Now my lab have converted into two
+equations for carbon and nitrogen cycles
+[SPEAKER_00]: in vegetation and the soil.
+[SPEAKER_00]: And once we converted to two equations,
+these structures become highly modular and
+[SPEAKER_00]: we can make a much more powerful
+diagnostic capacity.
+[SPEAKER_00]: We make the spin up much faster,
+faster by about 50 times.
+[SPEAKER_00]: So once we converted to the unified
+framework, now we can pinpoint the sources
+[SPEAKER_00]: of model uncertainties.
+[SPEAKER_00]: In these particular studies, we study,
+we use the eight models and ranging from
+[SPEAKER_00]: 10 model with two pool versus awkwardly
+model from France, that's with 101 the
+[SPEAKER_00]: pools, no matter how complicated or the
+complexity we can all represent the
+[SPEAKER_00]: different models in one unified frame,
+basically model structure is the same.
+[SPEAKER_00]: So once we represented all those models,
+all the model in the same framework,
+[SPEAKER_00]: then we did an experiment.
+[SPEAKER_00]: So we used these eight models and feed the
+same forcing and all the models also GPP.
+[SPEAKER_00]: And then we find out that actually more
+under them, among the models that the
+[SPEAKER_00]: uncertainties diverges as time goes.
+[SPEAKER_00]: So next, since now we have unified
+framework, now we can standardize the
+[SPEAKER_00]: primary of eight models.
+[SPEAKER_00]: And then we can shrink these model
+uncertainties to zero.
+[SPEAKER_00]: So what does that mean?
+[SPEAKER_00]: Those study, that means these simulation
+modeling approach that has been used by
+[SPEAKER_00]: community for 60 years.
+[SPEAKER_00]: So the simulation modeling approach,
+basically we develop the model by given
+[SPEAKER_00]: structure.
+[SPEAKER_00]: And then we assign the model as a
+parameter value and use the metadata to
+[SPEAKER_00]: drive, to predict.
+[SPEAKER_00]: So those simulation modeling does not use
+much data to improve model parameter,
+[SPEAKER_00]: parameterization.
+[SPEAKER_00]: So that's lead to the divergency model
+predictions.
+[SPEAKER_00]: So next step, we, we use the so-called the
+data assimilation, try to understand how
+[SPEAKER_00]: model parameterization will influence the
+model dynamic.
+[SPEAKER_00]: Now, many people use the digital twin to
+describe these data assimilation approach,
+[SPEAKER_00]: basically try to use the model mimic the
+real world as much as we can.
+[SPEAKER_00]: So data assimilation, the idea is we are
+not only need the model structure,
+[SPEAKER_00]: but we also use the relevant observations
+through data assimilation to estimate the
+[SPEAKER_00]: parameter, make the model to predict the
+real world phenomena as much as we can.
+[SPEAKER_00]: So that's basically, that's why the
+digital twin came from, your prediction.
+[SPEAKER_00]: My lab has been doing this since about 20
+years ago.
+[SPEAKER_00]: My first post I hired to do this is 2003
+to 2005 at the regional scales.
+[SPEAKER_00]: And in the past about 20, I mean,
+especially first 15 years, we did a
+[SPEAKER_00]: variety of analysis using these digital
+twin types.
+[SPEAKER_00]: And certainly we improved this model
+prediction very much.
+[SPEAKER_00]: I mean, the lot, the residue decreased,
+the spatial representation of a soil
+[SPEAKER_00]: carbon improved, but still the accuracy is
+not ideal.
+[SPEAKER_00]: The accuracy can, you know, improve the
+tool that like about R square of a point
+[SPEAKER_00]: of four, but still no matter what we do,
+still we not cannot improve them.
+[SPEAKER_00]: So then we analyze, we thinking about this
+issue, why, you know, once we use the
+[SPEAKER_00]: data, the digital twin still cannot
+perform well enough.
+[SPEAKER_00]: So we try to understand the reason,
+basically the parameter value in those
+[SPEAKER_00]: models, in those earth system model at the
+global scale assumed to be constant over
+[SPEAKER_00]: space and the time.
+[SPEAKER_00]: And the, but actually these assumption may
+be problematic.
+[SPEAKER_00]: These assumption works for model to be
+used at the local scale for short term,
+[SPEAKER_00]: it's fine.
+[SPEAKER_00]: But once we do the long term and the
+largest scale simulation, it may not,
+[SPEAKER_00]: not works.
+[SPEAKER_00]: Basically parameter in the models is a
+representative property for those
+[SPEAKER_00]: processes.
+[SPEAKER_00]: And for example, the soil property and the
+microbial dynamic in Ithaca, in the model,
+[SPEAKER_00]: it's assumed the same as in Africa or
+South America.
+[SPEAKER_00]: So this is, you know, biologically or
+ecologically, it doesn't make sense,
+[SPEAKER_00]: but the currently models still make those
+assumptions.
+[SPEAKER_00]: So once we realize that, and we propose
+that we really need spatially and a
+[SPEAKER_00]: temporary varying parameter in order to
+make the digital twin works well.
+[SPEAKER_00]: So that's how we incorporate the deep
+learning into our scheme to develop,
+[SPEAKER_00]: we develop the so-called process guided
+deep learning and the data driven
+[SPEAKER_00]: modeling.
+[SPEAKER_00]: And basically at the data assimilation
+approach, we add the deep learning.
+[SPEAKER_00]: So now you can see we used about 60,000
+vertical profile for soil carbon worldwide
+[SPEAKER_00]: and put into this product.
+[SPEAKER_00]: Now we get the R-square 0.62.
+[SPEAKER_00]: So these R-square accuracy is very close,
+very similar to those machine learning
+[SPEAKER_00]: without any process, basically so-called
+soil mapping.
+[SPEAKER_00]: People use a soil mapping that may use the
+neural network without any process.
+[SPEAKER_00]: So this is accuracy, it's almost reached
+the level that we, so far we cannot do
+[SPEAKER_00]: much at the, at least at the global scale.
+[SPEAKER_00]: So now hopefully now I introduce,
+basically discuss the why we use this
+[SPEAKER_00]: introducing the AI modeling tools to do,
+to combine the process understanding and
+[SPEAKER_00]: the data mining.
+[SPEAKER_00]: So first the issue we try to adjust the
+use of these method is the so-called
+[SPEAKER_00]: microbial to evaluate microbial rule in
+soil carbon, organic carbon formation and
+[SPEAKER_00]: the persistent.
+[SPEAKER_00]: And the recently the soil scientists and
+led by Michael Schmidt and Johannes also
+[SPEAKER_00]: contributed to this paper.
+[SPEAKER_00]: The new framework emphasize the rule of
+microbe and the mineral in soil,
+[SPEAKER_00]: organic formation and persistence.
+[SPEAKER_00]: But we still need to find a way to
+evaluate the relative importance of
+[SPEAKER_00]: various process in soil.
+[SPEAKER_00]: So in this particular study, we first
+defined the so-called microbial carbon use
+[SPEAKER_00]: efficiency as biomass, microbial biomass
+produced divided by substrate uptake.
+[SPEAKER_00]: And these actually microbial carbon use
+efficiency has represented dual rules.
+[SPEAKER_00]: So one point is microbe consume the soil
+organic substrate for to get the energy
+[SPEAKER_00]: and the growth.
+[SPEAKER_00]: And also the soil microbe also contribute
+to soil organic substrate.
+[SPEAKER_00]: So the relative rule, relative importance
+of those two rules and might determine the
+[SPEAKER_00]: soil organic carbon formation and the
+persistence.
+[SPEAKER_00]: So one hypothesis in the floating in the
+literature is that the higher microbial
+[SPEAKER_00]: carbon use efficiency will lead to the
+accrual of a soil organic carbon storage.
+[SPEAKER_00]: As long as the microbial carbon use
+efficiency stimulate microbial biomass and
+[SPEAKER_00]: the necromancy formation and then
+contribute the soil organic carbon.
+[SPEAKER_00]: But also the other ideas has been greatly
+discussed in the literature that if
+[SPEAKER_00]: microbial carbon use efficiency increased
+and the microbial biomass increased and
+[SPEAKER_00]: lead to more extracellular enzyme
+activities, actually soil organic carbon
+[SPEAKER_00]: can decrease.
+[SPEAKER_00]: So as mentioned in our product,
+we have model structures that represent
+[SPEAKER_00]: the microbial activities.
+[SPEAKER_00]: Now we can test, see under what kind of
+conditions the soil organic carbon will
+[SPEAKER_00]: increase versus decrease with the
+microbial carbon use efficiency.
+[SPEAKER_00]: We find out two critical parameters.
+[SPEAKER_00]: One is a resonance time for microbe.
+[SPEAKER_00]: Another is a resonance time for enzyme.
+[SPEAKER_00]: And then those different parameters will
+lead to that different patterns.
+[SPEAKER_00]: So now the issue is what the real world,
+the observation will tell us about those
+[SPEAKER_00]: parameters.
+[SPEAKER_00]: So that's the basically under the,
+if we can use the real world data to tell
+[SPEAKER_00]: us, then we can evaluate the relative
+importance of for those process
+[SPEAKER_00]: represented in this model.
+[SPEAKER_00]: So what we did is use the, as I mentioned
+that we use the 60,000 vertical soil
+[SPEAKER_00]: profile data and to constrain the model.
+[SPEAKER_00]: And then we estimate each of the seven
+components that contribute to the soil
+[SPEAKER_00]: organic carbon storage.
+[SPEAKER_00]: And then we make that evaluation to see
+that their relative importance use two
+[SPEAKER_00]: type of sensitivity.
+[SPEAKER_00]: And the one type of the sensitivity is
+so-called spatially same constant
+[SPEAKER_00]: parameter versus the variance parameter.
+[SPEAKER_00]: As I mentioned earlier that currently
+earth system model all use the constant
+[SPEAKER_00]: parameter over the globe.
+[SPEAKER_00]: Now we estimate the spatially variance
+parameter.
+[SPEAKER_00]: So if we use the spatially constant
+parameter versus the variance parameter,
+[SPEAKER_00]: we can see that microbial carbon use
+efficiency has the largest impact on the
+[SPEAKER_00]: simulated carbon.
+[SPEAKER_00]: We also did the sensitivity analysis,
+which has been done regularly in the
+[SPEAKER_00]: modeling or also indicate the microbial
+carbon use efficiency is most important.
+[SPEAKER_00]: So we also use the model generated the
+relationship of a soil organic carbon
+[SPEAKER_00]: versus the microbial carbon use
+efficiency.
+[SPEAKER_00]: And also observation use the matter
+analysis to basically to verify the model
+[SPEAKER_00]: predictions.
+[SPEAKER_00]: So this is basically one of the study we
+have done to use these, you know,
+[SPEAKER_00]: AI facilitate the AI modeling tools to
+understand the mechanisms.
+[SPEAKER_00]: So next, we also use these tool for
+another study, try to understand the
+[SPEAKER_00]: mechanisms.
+[SPEAKER_00]: So another study we call the
+climatological temperature sensitivity for
+[SPEAKER_00]: soil organic carbon to warming.
+[SPEAKER_00]: So what we did is we first again use these
+global database of vertical soil carbon.
+[SPEAKER_00]: And then we use a different layer of a
+soil.
+[SPEAKER_00]: We use each of the two centimeter as a
+soil layer.
+[SPEAKER_00]: And then we get the data from this
+database.
+[SPEAKER_00]: And then we use these, at each thin layer,
+we have soil organic carbon versus
+[SPEAKER_00]: temperature.
+[SPEAKER_00]: We got the temperature sensitivity,
+sorry, temperature sensitivity.
+[SPEAKER_00]: And then use those along the different
+layer, we got the observed apparent
+[SPEAKER_00]: temperature sensitivity 210 versus depth.
+[SPEAKER_00]: Basically, this indicate that temperature
+sensitivity for soil organic carbon at the
+[SPEAKER_00]: surface is highest, most sensitive.
+[SPEAKER_00]: And then towards the deep layer,
+the sensitivity is very, very low.
+[SPEAKER_00]: So that's basically observation based.
+[SPEAKER_00]: So now these observation based gradients
+for temperature sensitivity could cost by
+[SPEAKER_00]: lots of mechanisms and very complicated.
+[SPEAKER_00]: So now how can we know which mechanism
+really influence them?
+[SPEAKER_00]: In the real world, it's very difficult to
+do experiment.
+[SPEAKER_00]: And certainly we need the innovation,
+innovative approach to do experiment.
+[SPEAKER_00]: But now we have modeling, we will see
+whether we can use model AI modeling to
+[SPEAKER_00]: help teaser that part.
+[SPEAKER_00]: So this is observation, observe the part
+apparent temperature function.
+[SPEAKER_00]: We use the microbial based model,
+non-linear model after use the data
+[SPEAKER_00]: simulation.
+[SPEAKER_00]: You can see we cannot reproduce that
+pattern.
+[SPEAKER_00]: And we use the CLM model and before
+product.
+[SPEAKER_00]: So this pattern also doesn't reproduce.
+[SPEAKER_00]: But after we use the product to train the
+CLM, and then we find that the pattern,
+[SPEAKER_00]: it's very, very similar.
+[SPEAKER_00]: So now we can use model as digital twin to
+represent observation.
+[SPEAKER_00]: And also we need to make sure that
+actually the model, the parameter for
+[SPEAKER_00]: intrinsic temperature sensitivity actually
+relatively constant.
+[SPEAKER_00]: So this apparent one has a huge depth
+dependency, but the intrinsic one,
+[SPEAKER_00]: it's more or less constant.
+[SPEAKER_00]: So this is a huge contrast.
+[SPEAKER_00]: So now we have a digital twin to the real
+world pattern.
+[SPEAKER_00]: Now we can use this digital twin to
+understand what causes these apparent
+[SPEAKER_00]: temperature sensitivity.
+[SPEAKER_00]: Why that's different from the model
+intrinsic temperature sensitivity use this
+[SPEAKER_00]: matrix equation.
+[SPEAKER_00]: As I mentioned that we use this matrix
+equation to unify all the land carbon
+[SPEAKER_00]: cycle models, as long as they use the so
+called pull and flex structures.
+[SPEAKER_00]: So in these equations, there are seven
+terms.
+[SPEAKER_00]: I mean, there are six terms, but represent
+seven processes.
+[SPEAKER_00]: Now we can tease them apart, use the
+processes.
+[SPEAKER_00]: So what we did, the first thing we did we
+used to manipulate A parameter matrix,
+[SPEAKER_00]: A.
+[SPEAKER_00]: A is basically a transformation matrix.
+[SPEAKER_00]: That's another is K, K is decomposability
+matrix vectors.
+[SPEAKER_00]: So we make the globally uniformed A
+matrix.
+[SPEAKER_00]: And now you can see that once we use the
+globally uniformed matrix, we unify the A.
+[SPEAKER_00]: This is the apparent sensitivity.
+[SPEAKER_00]: This is the intrinsic.
+[SPEAKER_00]: Now we manipulate the A matrix and then we
+lift the Q10 vertical profile closer to
+[SPEAKER_00]: the intrinsic one.
+[SPEAKER_00]: Now we unify the K separately,
+also make it closer to the intrinsic one.
+[SPEAKER_00]: But once we unify both A and K,
+actually this is very close to the
+[SPEAKER_00]: intrinsic one.
+[SPEAKER_00]: So based on this, we can see that probably
+those processes related to microbial
+[SPEAKER_00]: carbon transformation and the absorption
+and also related to organic carbon
+[SPEAKER_00]: decomposability play the huge role to
+influence the temperature sensitivity in
+[SPEAKER_00]: the real world.
+[SPEAKER_00]: So we also manipulate other parameters
+like water scalar and the depth scalar.
+[SPEAKER_00]: They do have effect, but they cannot match
+the intrinsic one well.
+[SPEAKER_00]: So here, if we unify all these parameters,
+actually the theoretically we can see this
+[SPEAKER_00]: even temperature sensitivity could
+increase with the depth.
+[SPEAKER_00]: So this is opposite from the observed
+apparent one.
+[SPEAKER_00]: So this is the challenge.
+[SPEAKER_00]: Now we can use a digital train to try to
+see what the potential mechanisms
+[SPEAKER_00]: underline those observed pattern.
+[SPEAKER_00]: But the challenge is still how to get
+empirical evidence to support those AI
+[SPEAKER_00]: modeling analysis.
+[SPEAKER_00]: So this is another challenge.
+[SPEAKER_00]: So now currently our lab is developing
+so-called Biogeochemistry-Informed Neural
+[SPEAKER_00]: Network by a graduate student,
+Hao Di.
+[SPEAKER_00]: And he's a second year graduate student.
+[SPEAKER_00]: And then after he joined our lab,
+now he put the matrix equation into neural
+[SPEAKER_00]: network.
+[SPEAKER_00]: And then we find out the accuracy is very
+high, even slightly higher than the
+[SPEAKER_00]: product, computationally much faster than
+product by 50 times.
+[SPEAKER_00]: And as I mentioned, our matrix equations
+spin up already faster than the regular
+[SPEAKER_00]: model by 50 times.
+[SPEAKER_00]: Now this is another 50 times over that 50
+times.
+[SPEAKER_00]: So basically now being make the spin up
+faster by 2000, more than 2000 times
+[SPEAKER_00]: faster than the current lab model.
+[SPEAKER_00]: So this offer the explanatory power and we
+try to do the transfer learning,
+[SPEAKER_00]: try to use this technique for the carbon
+farming at the farm level.
+[SPEAKER_00]: So let me make a summary.
+[SPEAKER_00]: By 2017, we identified the issue that's
+need to be solved by AI.
+[SPEAKER_00]: We luckily enough recruit a graduate
+student who developed a product.
+[SPEAKER_00]: And he used the product to study the
+microbial carbon use efficiency and the
+[SPEAKER_00]: soil organic carbon relationship.
+[SPEAKER_00]: And he also used this to study the
+modeling convergence.
+[SPEAKER_00]: And another graduate student studied
+Intrinsic versus ApprentiQ10.
+[SPEAKER_00]: Now Hao Di is developing the BIM.
+[SPEAKER_00]: And currently we have a few postdocs,
+a graduate student now using BIM to study
+[SPEAKER_00]: time course of forest dynamic and
+disturbance regime and the greenhouse gas
+[SPEAKER_00]: emissions.
+[SPEAKER_00]: So what we have learned in the past is
+basically AI modeling can enable us to
+[SPEAKER_00]: discover mechanisms to underline systems
+behavior from big data and a process-based
+[SPEAKER_00]: model.
+[SPEAKER_00]: AI is very powerful to accelerate the
+computational efficiency, achieve a high
+[SPEAKER_00]: accuracy in the model.
+[SPEAKER_00]: Data fitting is basically accuracy in
+digital training now and democratize the
+[SPEAKER_00]: scientific discovery.
+[SPEAKER_00]: But AI is a tool like any other tools and
+it is powerful only if we can identify
+[SPEAKER_00]: scientific issues that need AI to address.
+[SPEAKER_00]: And many people contributed to our
+studies.
+[SPEAKER_00]: I don't have time to say each of them.
+[SPEAKER_00]: We also get basically funding from AI
+Institute and we also supported by AI
+[SPEAKER_00]: Foundation AI for Science, the Schmid
+Foundation, and the other LTR sites,
+[SPEAKER_00]: Spruce sites, funding from NSF,
+DOE, and the USDA.
+[SPEAKER_00]: And also take this opportunity to do some
+advertisement.
+[SPEAKER_00]: If any of your students at Cornell,
+you are welcome to join our training
+[SPEAKER_00]: course.
+[SPEAKER_00]: It's free for Cornell people.
+[SPEAKER_00]: But we do take a little bit tuition fee
+for people outside.
+[SPEAKER_00]: Thank you very much.
+[SPEAKER_03]: Yeah, no problem.
+[SPEAKER_03]: I mean, your presentation is very nice.
+[SPEAKER_03]: I'm just wondering in the data simulation
+part, you mentioned that the parameters
+[SPEAKER_03]: are constant when you apply the data
+assimilation method in global simulation.
+[SPEAKER_03]: But I know some data simulation methods
+which can also update the parameters.
+[SPEAKER_03]: So I just wondering what's the difference
+between these methods and the product.
+[SPEAKER_00]: Well, you said update probably you're
+talking about like a karma filter.
+Yeah.
+[SPEAKER_00]: Karma filter has been used very widely by
+engineering.
+[SPEAKER_00]: Engineering scientists or professors,
+I mean the disciplines.
+[SPEAKER_00]: And it's true.
+[SPEAKER_00]: The karma filter is due the time update
+once you have observation along the time.
+[SPEAKER_00]: So one thing is this karma filter probably
+might not be useful tool for carbon cycle
+[SPEAKER_00]: or broadly speaking, biogeochemical cycle
+research because it's an update to the
+[SPEAKER_00]: state and the parameter at the same times.
+[SPEAKER_00]: Once you update the state variable,
+sorry, this is very technical.
+[SPEAKER_00]: And then these become, you know,
+that come out to get the mass balance.
+[SPEAKER_00]: So back to them, almost all the earth
+system model, you still use the constant
+[SPEAKER_00]: parameter now.
+[SPEAKER_03]: Yeah, thank you.
+[SPEAKER_03]: And another problem is that I'm just
+wondering, I mean, I noticed that you use
+[SPEAKER_03]: the AI model to train the parameters,
+to optimize the parameters.
+[SPEAKER_03]: But you have to get to the true value of
+the parameter.
+[SPEAKER_03]: It's very different to get this data.
+[SPEAKER_03]: So I'm just wondering how do you get to
+the parameters?
+[SPEAKER_00]: Well, that's a very important question.
+[SPEAKER_00]: And usually those parameter is not
+observable in the real world.
+[SPEAKER_00]: It's right.
+[SPEAKER_00]: Most of them.
+[SPEAKER_00]: So what we can do is we use the so-called
+OSSE, the observational system simulation
+[SPEAKER_00]: experiment to test whether the method can
+be authentically reproduced.
+[SPEAKER_00]: So OSSE, again, this is a very technical
+issue.
+[SPEAKER_00]: And the OSSE is basically use the model
+given the parameter to use the model to
+[SPEAKER_00]: produce the output and then use the output
+to train the model again to see how
+[SPEAKER_00]: accurately they recover the parameter
+comparing to original parameter.
+[SPEAKER_00]: So in both being and the product we did
+this experiment.
+[SPEAKER_03]: Okay, I understand.
+[SPEAKER_03]: So you mean the parameters also be
+reversed and then you use this reverse
+[SPEAKER_03]: parameters to validate.
+[SPEAKER_03]: Okay, thank you.
+Yeah.
+[SPEAKER_00]: Thank you.
+[SPEAKER_00]: That's a great question.
+[SPEAKER_00]: Sorry, it's a very technical talk.
+Yeah.
+[SPEAKER_01]: Yiji, I had a question.
+[SPEAKER_01]: So you had, at one point you were looking
+at the microbial parameters and you
+[SPEAKER_01]: identified that the residence time of the
+microbial biomass and then the residence
+[SPEAKER_01]: time of the enzymes were having an impact.
+[SPEAKER_00]: Yeah.
+[SPEAKER_01]: Were you able to see which of those two
+parameters maybe mattered the most?
+[SPEAKER_01]: Or if could you comment on how important
+those parameters were for your soil carbon
+[SPEAKER_01]: estimation?
+[SPEAKER_00]: Yeah, those let me see if I can get back
+to the slides.
+[SPEAKER_00]: And you can see the different combination
+of the those two parameters were really
+[SPEAKER_00]: influenced.
+[SPEAKER_00]: So for example, like this one is,
+you know, the microbial time of microbe is
+[SPEAKER_00]: five.
+[SPEAKER_00]: And this, yeah, this that's make it.
+[SPEAKER_00]: So let me see if this enzyme turnover
+time, if enzyme turnover time fast,
+[SPEAKER_00]: and then these become negative.
+[SPEAKER_00]: So those are model exercise.
+[SPEAKER_00]: And then actually, once we do data
+assimilation, we can constrain each of the
+[SPEAKER_00]: parameter.
+[SPEAKER_00]: So apparently, because now we get to the
+most relationship probably look like this.
+[SPEAKER_00]: So look like probably this enzyme turnover
+time, I really, we need to check out the
+[SPEAKER_00]: real data, but based on the relationship
+we got after data assimilation,
+[SPEAKER_00]: probably somewhere around here.
+[SPEAKER_00]: So the microbe turnover time around 1.5
+probably.
+[SPEAKER_01]: OK, thanks.
+[SPEAKER_00]: Well, if you need the real, I mean,
+exactly the value we can dig into our
+[SPEAKER_00]: results.
+[SPEAKER_01]: Thanks.
+[SPEAKER_01]: We have a question also in the chat from
+Allison.
+[SPEAKER_01]: So she has two questions.
+[SPEAKER_01]: The first is, what do you mean by AI can
+be a force for democratizing data?
+[SPEAKER_00]: Well, not the data probably.
+[SPEAKER_00]: So what I meant is, you know, my lab has
+been doing the data assimilation for about
+[SPEAKER_00]: 20 some years.
+[SPEAKER_00]: And actually, now we find that being is
+much easier and can do data assimilation
+[SPEAKER_00]: in a much better way.
+[SPEAKER_00]: So actually, this is probably much easier
+to use.
+[SPEAKER_00]: And before, when I take a new student or
+postdoc, they always take a long time to
+[SPEAKER_00]: learn about data assimilation.
+[SPEAKER_00]: Now being probably make the process much
+easier.
+[SPEAKER_01]: OK.
+[SPEAKER_01]: And the second question she has is,
+you ended with a really strong point that
+[SPEAKER_01]: AI is only powerful if researchers are
+answering important questions.
+[SPEAKER_01]: So how can you gain input on what the most
+important questions stakeholders need
+[SPEAKER_01]: answers to?
+[SPEAKER_01]: And what questions do your team think are
+the most important to address with AI
+[SPEAKER_01]: going forward?
+[SPEAKER_00]: Well, this is a very great question on
+questions.
+[SPEAKER_00]: Well, you know, I guess talking with
+farmers and also asking scientific,
+[SPEAKER_00]: I mean, each of the scientists generate
+their own questions in a different way.
+[SPEAKER_00]: And certainly, like the kind of a seminar
+and the lab meeting and talk with the
+[SPEAKER_00]: farmers and really depends on your own
+work.
+[SPEAKER_00]: I guess a different, you know,
+different people have a different way to
+[SPEAKER_00]: generate the questions.
+[SPEAKER_00]: I understand that probably I didn't answer
+your question very well.
+[SPEAKER_01]: Do we have any other questions in the
+audience?
+[SPEAKER_01]: Yeah, I have one over here.
+[SPEAKER_01]: Why don't you go ahead and I played with
+the microphone.
+[SPEAKER_01]: So let's see if Yuqi can hear you.
+[SPEAKER_02]: Thank you for the presentation.
+[SPEAKER_02]: It seems something went over my head,
+but it really seems like they made you
+[SPEAKER_02]: earn your tenure here.
+[SPEAKER_02]: It's really interesting.
+[SPEAKER_02]: So hold on.
+[SPEAKER_01]: Yuqi, can you hear him?
+[SPEAKER_00]: Yes.
+[SPEAKER_02]: Yeah, if I understand correctly,
+a lot of your research is based in
+[SPEAKER_02]: forests.
+[SPEAKER_02]: But when changing and applying it to
+agriculture, we have like management
+[SPEAKER_02]: practices that can influence these
+dynamics that you're describing.
+[SPEAKER_02]: Do you see a possibility of using your
+work and moving it towards our cultural
+[SPEAKER_02]: focused questions despite the complexity
+of different management decisions on a
+[SPEAKER_02]: spatial scale like the globe?
+[SPEAKER_00]: Yes, that's a great question.
+[SPEAKER_00]: And certainly, you know, after I joined
+the Soil and the Crop Sciences session,
+[SPEAKER_00]: this is a very important issue we are
+exploring.
+[SPEAKER_00]: And certainly, we don't want to just,
+you know, work on forests or grassland or
+[SPEAKER_00]: global scales, but also try to make some
+contributions to soil and crop science
+[SPEAKER_00]: sections.
+[SPEAKER_00]: So what I was thinking is probably towards
+the end, can you still see?
+[SPEAKER_00]: Let me see.
+[SPEAKER_00]: Can you see my slides?
+[SPEAKER_00]: Let me see.
+[SPEAKER_00]: Towards the end, we are, you know,
+I only mentioned very briefly,
+[SPEAKER_00]: we are currently doing so-called transfer
+learning.
+[SPEAKER_00]: And probably if, you know, you might know
+that currently none of the soil models can
+[SPEAKER_00]: predict well.
+[SPEAKER_00]: If even, you know, even we have like bean
+or produce, we still cannot apply to the
+[SPEAKER_00]: individual farmers because these,
+you know, individual farmer may not have
+[SPEAKER_00]: enough data.
+[SPEAKER_00]: So what we are thinking about is the
+so-called transfer learning.
+[SPEAKER_00]: So the idea is very similar to like a
+charter GDP.
+[SPEAKER_00]: Charter GDP trend a lot of, you know,
+trend with a lot of data, big data.
+[SPEAKER_00]: But when they answer, when it answer your
+particular questions, and the charter GDP
+[SPEAKER_00]: borrow the information from other data
+sets, try to answer your questions.
+[SPEAKER_00]: So this is actually is called a transfer
+learning.
+[SPEAKER_00]: So the idea if we apply to here is if we
+can train the model, I mean, the let's
+[SPEAKER_00]: bean or produce with a lot of data at the
+global scales, then we supposed to apply
+[SPEAKER_00]: that knowledge to particular farm.
+[SPEAKER_00]: So this is the idea we are exploring,
+try to try to apply to the individual
+[SPEAKER_00]: farms.
+[SPEAKER_00]: So this idea probably also applicable to
+any, you know, any of these subject areas,
+[SPEAKER_00]: for example, crop year, or the wheat,
+wheat control, and, you know, some other
+[SPEAKER_00]: issues.
+[SPEAKER_00]: Yeah, nitrogen fixation, yeah.
+[SPEAKER_00]: So these are the kind of things that we
+are thinking about.
+[SPEAKER_00]: I understand we still haven't made a great
+contribution to soil and crop session for
+[SPEAKER_00]: individual farm, I mean, the for farm
+year.
+[SPEAKER_00]: Does it make sense?
+[SPEAKER_01]: Yeah.
+[SPEAKER_01]: Thanks, Yu-Chi.
+[SPEAKER_01]: We're at time.
+[SPEAKER_01]: So if we could thank Yu-Chi again.
+[SPEAKER_00]: Well, thank you all for listening and for
+great questions.
+[SPEAKER_03]: This has been a production of Cornell
+University on the web at Cornell.edu.
+[SPEAKER_03]: Thank you.
+[SPEAKER_03]: Thank you.
+Thank you, Yu-Chi.

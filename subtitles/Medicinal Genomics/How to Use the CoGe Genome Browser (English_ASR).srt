@@ -1,0 +1,3564 @@
+1
+00:00:00,060 --> 00:00:06,028
+all right so today we're gonna walk
+
+2
+00:00:02,189 --> 00:00:08,580
+through utilizing the Koji browser this
+
+3
+00:00:06,028 --> 00:00:11,309
+is a genome browser where we have a lot
+
+4
+00:00:08,580 --> 00:00:13,769
+of ties into canopy dia so much of the
+
+5
+00:00:11,308 --> 00:00:18,210
+data that was in this bio archive
+
+6
+00:00:13,769 --> 00:00:22,230
+preprint we have over here is now up in
+
+7
+00:00:18,210 --> 00:00:25,019
+viewable in encoding so this this
+
+8
+00:00:22,230 --> 00:00:26,880
+consists of well the paper at 42 genomes
+
+9
+00:00:25,018 --> 00:00:28,169
+there's now 47 genomes that are up in
+
+10
+00:00:26,879 --> 00:00:30,448
+Koji and that number will keep planning
+
+11
+00:00:28,170 --> 00:00:33,030
+but these are whole genome shotguns done
+
+12
+00:00:30,449 --> 00:00:36,840
+with Illumina all mapped to a packed bio
+
+13
+00:00:33,030 --> 00:00:38,700
+generated pan trio reference a pan
+
+14
+00:00:36,840 --> 00:00:41,670
+genome is just multiple genomes that are
+
+15
+00:00:38,700 --> 00:00:45,539
+that build a reference together and we
+
+16
+00:00:41,670 --> 00:00:47,850
+have a a maternal reference a paternal
+
+17
+00:00:45,539 --> 00:00:50,090
+reference and an offspring reference all
+
+18
+00:00:47,850 --> 00:00:52,469
+assembled with Pacific Biosciences here
+
+19
+00:00:50,090 --> 00:00:55,050
+these is a long Reed sequencer that
+
+20
+00:00:52,469 --> 00:00:57,780
+generates reference grade genomes and
+
+21
+00:00:55,049 --> 00:00:59,369
+the N 50 s of these genomes are really
+
+22
+00:00:57,780 --> 00:01:02,939
+contiguous the most contiguous genomes
+
+23
+00:00:59,369 --> 00:01:04,948
+and been put public so and 50 is the
+
+24
+00:01:02,939 --> 00:01:06,780
+average size of the context in the
+
+25
+00:01:04,948 --> 00:01:08,429
+genome and the average for these are
+
+26
+00:01:06,780 --> 00:01:12,210
+over a million bases or usually around 3
+
+27
+00:01:08,430 --> 00:01:13,470
+million bases in length and that number
+
+28
+00:01:12,209 --> 00:01:15,089
+goes a little bit further north if you
+
+29
+00:01:13,469 --> 00:01:18,450
+get rid of some of the small contexts so
+
+30
+00:01:15,090 --> 00:01:19,770
+anyway the the important thing to know
+
+31
+00:01:18,450 --> 00:01:21,540
+about these genomes is they have the
+
+32
+00:01:19,769 --> 00:01:23,609
+highest busco score out there busco is a
+
+33
+00:01:21,540 --> 00:01:27,810
+tool that's utilized to measure the
+
+34
+00:01:23,609 --> 00:01:28,890
+completeness of genomes ok so that can
+
+35
+00:01:27,810 --> 00:01:30,509
+be seen right here here's the mother
+
+36
+00:01:28,890 --> 00:01:32,340
+father and the offspring this is the end
+
+37
+00:01:30,509 --> 00:01:35,368
+50 number the average size the contact
+
+38
+00:01:32,340 --> 00:01:37,409
+lengths and again this is including a
+
+39
+00:01:35,368 --> 00:01:38,549
+lot of small context a lot of people
+
+40
+00:01:37,409 --> 00:01:40,109
+like to screen out the things that are
+
+41
+00:01:38,549 --> 00:01:41,640
+under 50 KB and these numbers climb a
+
+42
+00:01:40,109 --> 00:01:43,739
+little bit but we've left them in there
+
+43
+00:01:41,640 --> 00:01:46,319
+for completeness you can see the genome
+
+44
+00:01:43,739 --> 00:01:47,759
+size is very the the paternal genomes
+
+45
+00:01:46,319 --> 00:01:52,319
+are bigger because they have a Y
+
+46
+00:01:47,759 --> 00:01:54,569
+chromosome this one's a female and the
+
+47
+00:01:52,319 --> 00:01:57,718
+bosco scores is the percent completeness
+
+48
+00:01:54,569 --> 00:02:02,279
+by looking for around 2,400 or so genes
+
+49
+00:01:57,718 --> 00:02:04,199
+that should be in all plant genomes and
+
+50
+00:02:02,280 --> 00:02:05,670
+so this is approaching the highest we've
+
+51
+00:02:04,200 --> 00:02:06,899
+seen I don't think we've ever seen this
+
+52
+00:02:05,670 --> 00:02:09,000
+number and assembly go higher than
+
+53
+00:02:06,899 --> 00:02:10,288
+ninety seven point eight that's not a
+
+54
+00:02:09,000 --> 00:02:12,449
+reference that we're working on right
+
+55
+00:02:10,288 --> 00:02:13,909
+now that's a little bit a little bit
+
+56
+00:02:12,449 --> 00:02:18,109
+different than these but
+
+57
+00:02:13,909 --> 00:02:20,479
+no nevertheless this is the set of
+
+58
+00:02:18,110 --> 00:02:23,810
+references we're using to map all of the
+
+59
+00:02:20,479 --> 00:02:25,340
+other 40 genomes against this okay now
+
+60
+00:02:23,810 --> 00:02:27,080
+in addition to mapping those 40 whole
+
+61
+00:02:25,340 --> 00:02:31,250
+genomes shotguns against this data set
+
+62
+00:02:27,080 --> 00:02:32,900
+we have done I so seek which is single
+
+63
+00:02:31,250 --> 00:02:35,319
+molecule sequencing unpacked by all of
+
+64
+00:02:32,900 --> 00:02:37,700
+the RNA transcripts across five tissues
+
+65
+00:02:35,319 --> 00:02:40,669
+this gives us an idea of where the genes
+
+66
+00:02:37,699 --> 00:02:43,449
+are you can see we've got about 27,000
+
+67
+00:02:40,669 --> 00:02:46,729
+maternal genes and 32,000 paternal genes
+
+68
+00:02:43,449 --> 00:02:49,879
+the exome size is anywhere between 40 to
+
+69
+00:02:46,729 --> 00:02:50,659
+50 mega bases the coding size is a
+
+70
+00:02:49,879 --> 00:02:52,909
+little smarter than that
+
+71
+00:02:50,659 --> 00:02:54,799
+so the the c.d.s size is different than
+
+72
+00:02:52,909 --> 00:02:56,750
+the exome size because the exome can
+
+73
+00:02:54,800 --> 00:02:59,740
+have the 5 Prime and the three prime
+
+74
+00:02:56,750 --> 00:03:00,979
+untranslated regions all right these are
+
+75
+00:02:59,740 --> 00:03:04,010
+utrs
+
+76
+00:03:00,979 --> 00:03:05,659
+okay so you we make an RNA molecule you
+
+77
+00:03:04,009 --> 00:03:07,639
+often include the promoter in the
+
+78
+00:03:05,659 --> 00:03:10,009
+Terminator in the RNA which aren't
+
+79
+00:03:07,639 --> 00:03:12,049
+necessarily read into proteins they're
+
+80
+00:03:10,009 --> 00:03:15,620
+just used to regulate it that's how the
+
+81
+00:03:12,050 --> 00:03:18,140
+exome includes the the CD s so the CD s
+
+82
+00:03:15,620 --> 00:03:20,349
+is always the subset of the exome and
+
+83
+00:03:18,139 --> 00:03:24,559
+then if you look at how much genetic
+
+84
+00:03:20,349 --> 00:03:27,859
+distance these things span across since
+
+85
+00:03:24,560 --> 00:03:29,810
+genes can have large introns that means
+
+86
+00:03:27,860 --> 00:03:31,660
+these are the gaps in between the the
+
+87
+00:03:29,810 --> 00:03:35,120
+expressed regions there were the exons
+
+88
+00:03:31,659 --> 00:03:38,329
+this this this really spreads across 120
+
+89
+00:03:35,120 --> 00:03:41,030
+to 160 mega bases in the plant so a lot
+
+90
+00:03:38,330 --> 00:03:43,219
+of data in there a21 I want to share a
+
+91
+00:03:41,030 --> 00:03:46,780
+couple other points of this data set to
+
+92
+00:03:43,219 --> 00:03:49,639
+you this here is a copy number map of
+
+93
+00:03:46,780 --> 00:03:51,729
+all of the other genomes that we
+
+94
+00:03:49,639 --> 00:03:54,379
+sequenced against the Jamaican lion
+
+95
+00:03:51,729 --> 00:03:56,780
+paternal reference okay so this paternal
+
+96
+00:03:54,379 --> 00:04:00,169
+reference has y chromosomes in there and
+
+97
+00:03:56,780 --> 00:04:03,229
+you can see there's zero coverage over
+
+98
+00:04:00,169 --> 00:04:06,530
+any of those contexts in all of these
+
+99
+00:04:03,229 --> 00:04:09,319
+lines and it turns out those ones all
+
+100
+00:04:06,530 --> 00:04:11,780
+happen to be the males these ones we
+
+101
+00:04:09,319 --> 00:04:13,039
+know are female and I'm sorry these ones
+
+102
+00:04:11,780 --> 00:04:15,199
+all happen to be the females and these
+
+103
+00:04:13,039 --> 00:04:16,459
+ones happen to be the males male female
+
+104
+00:04:15,199 --> 00:04:20,389
+and you can see there's coverage of
+
+105
+00:04:16,459 --> 00:04:21,560
+those regions in the males and there
+
+106
+00:04:20,389 --> 00:04:24,560
+isn't any of the females that's how we
+
+107
+00:04:21,560 --> 00:04:26,418
+identify the Y chromosome it's actually
+
+108
+00:04:24,560 --> 00:04:27,680
+a little bit bigger than this there's
+
+109
+00:04:26,418 --> 00:04:29,089
+some some
+
+110
+00:04:27,680 --> 00:04:30,918
+versions of the y-chromosome that are
+
+111
+00:04:29,089 --> 00:04:33,469
+known as the pseudo autosomal region
+
+112
+00:04:30,918 --> 00:04:35,599
+which is still recombining with y which
+
+113
+00:04:33,470 --> 00:04:37,100
+means it still has some highs are y and
+
+114
+00:04:35,600 --> 00:04:38,240
+x those the portions of wine x are still
+
+115
+00:04:37,100 --> 00:04:40,820
+recombining which means it still has
+
+116
+00:04:38,240 --> 00:04:42,680
+some homology to the X chromosome and
+
+117
+00:04:40,819 --> 00:04:44,329
+then down here you can see the females
+
+118
+00:04:42,680 --> 00:04:47,509
+have twice the amount of coverage on
+
+119
+00:04:44,329 --> 00:04:49,038
+these contexts and they have they're
+
+120
+00:04:47,509 --> 00:04:51,379
+normally covered in the mail so this is
+
+121
+00:04:49,038 --> 00:04:54,409
+the putative X chromosome material as
+
+122
+00:04:51,379 --> 00:04:56,600
+well so the X chromosome probably
+
+123
+00:04:54,410 --> 00:04:58,580
+entails some of these other areas as
+
+124
+00:04:56,600 --> 00:05:00,080
+well it's usually around over 100 mega
+
+125
+00:04:58,579 --> 00:05:02,209
+bases and when we add up everything
+
+126
+00:05:00,079 --> 00:05:04,339
+that's going on the Y the Y's the
+
+127
+00:05:02,209 --> 00:05:07,038
+largest chromosome as well so al are
+
+128
+00:05:04,339 --> 00:05:08,719
+just a little bit larger than X that
+
+129
+00:05:07,038 --> 00:05:10,159
+copy number of maps just helps you to
+
+130
+00:05:08,720 --> 00:05:12,860
+identify which ones are definitively
+
+131
+00:05:10,160 --> 00:05:15,949
+male and female this is a pedigree that
+
+132
+00:05:12,860 --> 00:05:18,590
+was sequenced okay so we did PacBio
+
+133
+00:05:15,949 --> 00:05:21,650
+sequencing on this one this one in this
+
+134
+00:05:18,589 --> 00:05:23,029
+one this one is a runt it's a parent at
+
+135
+00:05:21,649 --> 00:05:24,709
+this stage in its life but you'll see
+
+136
+00:05:23,029 --> 00:05:26,448
+some pictures for that it's actually a
+
+137
+00:05:24,709 --> 00:05:28,189
+runt and we chose that as the offspring
+
+138
+00:05:26,449 --> 00:05:29,538
+of sequence because we thought we might
+
+139
+00:05:28,189 --> 00:05:32,449
+learn something about yield in that
+
+140
+00:05:29,538 --> 00:05:34,699
+genome since it seems to lack it and
+
+141
+00:05:32,449 --> 00:05:36,470
+then all the other ones we put through
+
+142
+00:05:34,699 --> 00:05:38,210
+Illumina sequencing and mapped it back
+
+143
+00:05:36,470 --> 00:05:40,099
+to the maternal or paternal reference
+
+144
+00:05:38,209 --> 00:05:44,810
+which you're going to see all of these
+
+145
+00:05:40,098 --> 00:05:46,579
+BAM files in this koji database a couple
+
+146
+00:05:44,810 --> 00:05:49,430
+different aspects that you're welcome to
+
+147
+00:05:46,579 --> 00:05:51,589
+read in this paper these are the single
+
+148
+00:05:49,430 --> 00:05:53,598
+nucleotide polymorphisms and the
+
+149
+00:05:51,589 --> 00:05:55,339
+insertions and deletions under 50 bases
+
+150
+00:05:53,598 --> 00:05:57,680
+that are found across all of the 40
+
+151
+00:05:55,339 --> 00:05:59,719
+genomes we've got the type ones the type
+
+152
+00:05:57,680 --> 00:06:01,550
+twos and the type 3 plants up here the
+
+153
+00:05:59,720 --> 00:06:03,259
+jamaican lion family is in here you can
+
+154
+00:06:01,550 --> 00:06:04,819
+see there's less variation amongst it's
+
+155
+00:06:03,259 --> 00:06:06,650
+their own family that's because we're
+
+156
+00:06:04,819 --> 00:06:08,629
+mapping the family back to its to its
+
+157
+00:06:06,649 --> 00:06:10,519
+parent and of course there's less
+
+158
+00:06:08,629 --> 00:06:12,889
+variance that way but as you begin to
+
+159
+00:06:10,519 --> 00:06:16,310
+map hemp samples and other type 1
+
+160
+00:06:12,889 --> 00:06:19,639
+samples against against this these
+
+161
+00:06:16,310 --> 00:06:23,689
+genomes you start to see a much much
+
+162
+00:06:19,639 --> 00:06:26,870
+more diversion in diversity so ok so you
+
+163
+00:06:23,689 --> 00:06:28,370
+will see VCF files inside koji that I'm
+
+164
+00:06:26,870 --> 00:06:33,949
+going to show you that describe some of
+
+165
+00:06:28,370 --> 00:06:35,990
+this data this is a coverage correlation
+
+166
+00:06:33,949 --> 00:06:38,810
+analysis of the whole genome sequencing
+
+167
+00:06:35,990 --> 00:06:40,668
+data now this is just here a note the
+
+168
+00:06:38,810 --> 00:06:41,269
+scale here this is very very high
+
+169
+00:06:40,668 --> 00:06:43,189
+leaking
+
+170
+00:06:41,269 --> 00:06:44,810
+in coverage across the genomes but
+
+171
+00:06:43,189 --> 00:06:46,310
+there's a couple genomes in here that
+
+172
+00:06:44,810 --> 00:06:48,699
+are some of the most diverse genomes
+
+173
+00:06:46,310 --> 00:06:52,009
+we've ever seen this is the the 83 set
+
+174
+00:06:48,699 --> 00:06:55,189
+this is a unique set of plants minimus
+
+175
+00:06:52,009 --> 00:06:56,720
+owns and they may have some some hops
+
+176
+00:06:55,189 --> 00:06:57,978
+heritage to them as well there's been
+
+177
+00:06:56,720 --> 00:07:00,289
+some really interesting crossbreeding
+
+178
+00:06:57,978 --> 00:07:01,038
+they've been trying to do hops but most
+
+179
+00:07:00,288 --> 00:07:02,478
+the sequence we're seeing is
+
+180
+00:07:01,038 --> 00:07:04,310
+predominantly cannabis but you can see
+
+181
+00:07:02,478 --> 00:07:08,269
+is of course the most divergent cannabis
+
+182
+00:07:04,310 --> 00:07:10,220
+sequence we have here so here's a
+
+183
+00:07:08,269 --> 00:07:14,500
+picture of a de you can see its leaves
+
+184
+00:07:10,220 --> 00:07:17,150
+kind of look like basil not serrated and
+
+185
+00:07:14,500 --> 00:07:18,589
+it's it's powdery mildew resistant its
+
+186
+00:07:17,149 --> 00:07:21,258
+neighbors that are loaded with it never
+
+187
+00:07:18,589 --> 00:07:22,668
+seem to transfer it over to here we've
+
+188
+00:07:21,259 --> 00:07:24,800
+also seen some of that in Jamaican Lyon
+
+189
+00:07:22,668 --> 00:07:26,448
+family they are powdery mildew resistant
+
+190
+00:07:24,800 --> 00:07:28,879
+we probably have some pictures of that
+
+191
+00:07:26,449 --> 00:07:30,770
+we can share as well this is jail five
+
+192
+00:07:28,879 --> 00:07:32,240
+which turned into being a hyper branched
+
+193
+00:07:30,769 --> 00:07:33,529
+runt when it came out of the growth
+
+194
+00:07:32,240 --> 00:07:35,180
+chamber it was grown in the same
+
+195
+00:07:33,529 --> 00:07:37,758
+conditions as all its siblings which are
+
+196
+00:07:35,180 --> 00:07:39,530
+towering over it in this photo so
+
+197
+00:07:37,759 --> 00:07:41,629
+there's some interesting things that we
+
+198
+00:07:39,529 --> 00:07:43,609
+learned about what might be driving the
+
+199
+00:07:41,629 --> 00:07:46,069
+lack of growth in that plant now that
+
+200
+00:07:43,610 --> 00:07:48,560
+you can read about more in the paper so
+
+201
+00:07:46,069 --> 00:07:50,478
+what you're gonna see are a variety of
+
+202
+00:07:48,560 --> 00:07:53,658
+heat maps that look like this throughout
+
+203
+00:07:50,478 --> 00:07:56,089
+the paper and these are largely heat
+
+204
+00:07:53,658 --> 00:07:58,579
+maps looking at copy number changes of
+
+205
+00:07:56,089 --> 00:08:01,728
+DNA in the genome what we noticed in
+
+206
+00:07:58,579 --> 00:08:03,620
+cannabis is that it loves to insert and
+
+207
+00:08:01,728 --> 00:08:05,718
+delete copies of genes in fact this is
+
+208
+00:08:03,620 --> 00:08:07,280
+how it did a can of cannabinoid
+
+209
+00:08:05,718 --> 00:08:08,750
+gene expansion in the plan is it just
+
+210
+00:08:07,279 --> 00:08:10,579
+kept making more copies of these things
+
+211
+00:08:08,750 --> 00:08:12,468
+and that's why there's upwards to 90 of
+
+212
+00:08:10,579 --> 00:08:14,750
+these genes in the genome that have a
+
+213
+00:08:12,468 --> 00:08:17,930
+what looks like an F ad binding domain
+
+214
+00:08:14,750 --> 00:08:19,519
+and a berberine bridge which is two of
+
+215
+00:08:17,930 --> 00:08:21,829
+the characteristics of cannabinoids and
+
+216
+00:08:19,519 --> 00:08:23,269
+phases there's a p fam domain that
+
+217
+00:08:21,829 --> 00:08:25,609
+searches for these in the genome and
+
+218
+00:08:23,269 --> 00:08:27,589
+that number ranks up there around 90 now
+
+219
+00:08:25,610 --> 00:08:29,060
+not all of those nine your active some
+
+220
+00:08:27,589 --> 00:08:30,529
+of them are broken or truncated it don't
+
+221
+00:08:29,060 --> 00:08:32,509
+have the proper start and stop codons
+
+222
+00:08:30,529 --> 00:08:34,549
+and so we've we've then filtered those
+
+223
+00:08:32,509 --> 00:08:36,288
+for a smaller set of genes that you'll
+
+224
+00:08:34,549 --> 00:08:39,049
+see that we're going to touch on in some
+
+225
+00:08:36,288 --> 00:08:41,000
+of these slides but nevertheless you can
+
+226
+00:08:39,049 --> 00:08:44,809
+do very interesting studies when you
+
+227
+00:08:41,000 --> 00:08:48,169
+have sequenced whole genome sequencing
+
+228
+00:08:44,809 --> 00:08:49,338
+data with very few PCR cycles that's an
+
+229
+00:08:48,169 --> 00:08:51,469
+important aspect of doing the method
+
+230
+00:08:49,339 --> 00:08:52,880
+prep here but when you do that you can
+
+231
+00:08:51,470 --> 00:08:54,440
+then throw the data up against the
+
+232
+00:08:52,879 --> 00:08:54,799
+Jamaican line reference and ask which
+
+233
+00:08:54,440 --> 00:08:56,540
+part
+
+234
+00:08:54,799 --> 00:08:57,919
+the genome were missing which genes are
+
+235
+00:08:56,539 --> 00:08:59,599
+missing on which genes are amplified
+
+236
+00:08:57,919 --> 00:09:02,269
+that's what you're looking at this heat
+
+237
+00:08:59,600 --> 00:09:05,810
+map here is that the genes that are that
+
+238
+00:09:02,269 --> 00:09:08,839
+are in red have been amplified quite a
+
+239
+00:09:05,809 --> 00:09:11,239
+bit and the genes that are blue have
+
+240
+00:09:08,839 --> 00:09:14,420
+been deleted so you can see already just
+
+241
+00:09:11,240 --> 00:09:16,850
+in these set of samples here that there
+
+242
+00:09:14,419 --> 00:09:19,879
+is kind of a characteristic of certain
+
+243
+00:09:16,850 --> 00:09:24,230
+TL peas being deleted and certain chitin
+
+244
+00:09:19,879 --> 00:09:25,939
+aces and mlo regions being amplified and
+
+245
+00:09:24,230 --> 00:09:29,899
+also some tightness that have been
+
+246
+00:09:25,940 --> 00:09:32,690
+perhaps deleted or amplified so now what
+
+247
+00:09:29,899 --> 00:09:34,339
+we've been doing is tracking powdery
+
+248
+00:09:32,690 --> 00:09:36,769
+mildew resistance status across multiple
+
+249
+00:09:34,339 --> 00:09:40,940
+cultivars to see if any of these
+
+250
+00:09:36,769 --> 00:09:42,649
+patterns map with resistance status and
+
+251
+00:09:40,940 --> 00:09:44,600
+the reason we're looking at chitin aces
+
+252
+00:09:42,649 --> 00:09:46,278
+and vomiting like proteins and mlo is
+
+253
+00:09:44,600 --> 00:09:48,350
+these are all the genes and hops that
+
+254
+00:09:46,278 --> 00:09:49,549
+have been hunted down over the years to
+
+255
+00:09:48,350 --> 00:09:52,639
+be involved in powder and mildew
+
+256
+00:09:49,549 --> 00:09:54,409
+resistance so we already have a few
+
+257
+00:09:52,639 --> 00:09:55,879
+candidates in here genes that we believe
+
+258
+00:09:54,409 --> 00:09:57,379
+are involved in the powdery mildew
+
+259
+00:09:55,879 --> 00:09:58,759
+resistance in Jamaican Lyon and we've
+
+260
+00:09:57,379 --> 00:10:00,500
+cloned those and expressed them and
+
+261
+00:09:58,759 --> 00:10:03,799
+demonstrate they actually destroy fungi
+
+262
+00:10:00,500 --> 00:10:05,360
+now that being said we think we have
+
+263
+00:10:03,799 --> 00:10:07,909
+found a reason for powdered mildew
+
+264
+00:10:05,360 --> 00:10:09,230
+resistance in Jamaican Lyon we believe
+
+265
+00:10:07,909 --> 00:10:11,990
+there's gonna be convergent evolution
+
+266
+00:10:09,230 --> 00:10:14,778
+when there's this many chitin aces and
+
+267
+00:10:11,990 --> 00:10:16,129
+this many tlps other plants are gonna
+
+268
+00:10:14,778 --> 00:10:17,870
+probably find a collection of these
+
+269
+00:10:16,129 --> 00:10:19,610
+things to amplify that give them
+
+270
+00:10:17,870 --> 00:10:21,169
+resistance as well but may not show the
+
+271
+00:10:19,610 --> 00:10:23,269
+same pattern that we see in the Jamaican
+
+272
+00:10:21,169 --> 00:10:25,129
+wine genetics ok so there's multiple
+
+273
+00:10:23,269 --> 00:10:26,659
+ways to probably scan the resistance cat
+
+274
+00:10:25,129 --> 00:10:28,669
+and while we think we found one of them
+
+275
+00:10:26,659 --> 00:10:32,778
+it probably may not be 100% reflective
+
+276
+00:10:28,669 --> 00:10:35,240
+of resistance in other lines okay so
+
+277
+00:10:32,778 --> 00:10:36,528
+here's a set that we pulled out that we
+
+278
+00:10:35,240 --> 00:10:38,778
+know that we believe are playing a role
+
+279
+00:10:36,528 --> 00:10:41,689
+so we've cloned a few of these in fact
+
+280
+00:10:38,778 --> 00:10:43,939
+this TLP 2563 has in fact been cloned
+
+281
+00:10:41,690 --> 00:10:46,370
+you'll see that work in this paper that
+
+282
+00:10:43,940 --> 00:10:48,560
+when it is cloned expressed in e.coli
+
+283
+00:10:46,370 --> 00:10:51,019
+and purified out of a coli and then
+
+284
+00:10:48,559 --> 00:10:53,958
+placed onto films that are growing
+
+285
+00:10:51,019 --> 00:10:55,970
+Penicillium and Fusarium we get this
+
+286
+00:10:53,958 --> 00:10:58,518
+type of inhibition in growth when these
+
+287
+00:10:55,970 --> 00:11:00,680
+chitin aces and TLPs are present
+
+288
+00:10:58,519 --> 00:11:02,269
+here's a few serie moxie sperm and it's
+
+289
+00:11:00,679 --> 00:11:04,099
+got less growth over here where we've
+
+290
+00:11:02,269 --> 00:11:06,440
+applied some of the compound than some
+
+291
+00:11:04,100 --> 00:11:08,360
+of the enzyme and we're put down here it
+
+292
+00:11:06,440 --> 00:11:11,300
+tends to change the the
+
+293
+00:11:08,360 --> 00:11:12,919
+a few sarin expression in Fusarium now
+
+294
+00:11:11,299 --> 00:11:15,169
+Fusarium is known that when you give it
+
+295
+00:11:12,919 --> 00:11:17,028
+mica sides it stops making these
+
+296
+00:11:15,169 --> 00:11:19,939
+pigments it's a sign of it going into
+
+297
+00:11:17,028 --> 00:11:21,049
+Apatow sis and cell death so there's
+
+298
+00:11:19,940 --> 00:11:22,700
+more to read about this in this paper
+
+299
+00:11:21,049 --> 00:11:24,828
+but if you really want to dig through
+
+300
+00:11:22,700 --> 00:11:26,480
+this data you want to get familiar with
+
+301
+00:11:24,828 --> 00:11:28,370
+koji which is the genome browser that
+
+302
+00:11:26,480 --> 00:11:31,190
+allows you to surf all this stuff now we
+
+303
+00:11:28,370 --> 00:11:34,639
+left off the last tutorial talking about
+
+304
+00:11:31,190 --> 00:11:37,640
+CBD and THC genetics this here is a heat
+
+305
+00:11:34,639 --> 00:11:40,278
+map looking at those three genes that we
+
+306
+00:11:37,639 --> 00:11:42,889
+scan in canopy dia the inactive CBD
+
+307
+00:11:40,278 --> 00:11:46,850
+synthase the active cvd synthase and the
+
+308
+00:11:42,889 --> 00:11:49,399
+active CBD synthase and you can see this
+
+309
+00:11:46,850 --> 00:11:51,740
+type of pattern here that is inversely
+
+310
+00:11:49,399 --> 00:11:53,778
+correlated and predicts the typing of
+
+311
+00:11:51,740 --> 00:11:55,730
+the plants the type 1 2 &amp; 3 status is
+
+312
+00:11:53,778 --> 00:11:58,370
+completely predictable by the presence
+
+313
+00:11:55,730 --> 00:12:00,259
+and absence of these genes you'll notice
+
+314
+00:11:58,370 --> 00:12:02,870
+this region isn't almost always
+
+315
+00:12:00,259 --> 00:12:04,370
+correlated of maybe not here there's a
+
+316
+00:12:02,870 --> 00:12:06,440
+little bit difference but the deletion
+
+317
+00:12:04,370 --> 00:12:07,700
+sometimes extends to be a little bit
+
+318
+00:12:06,440 --> 00:12:10,430
+shorter a little bit longer in this
+
+319
+00:12:07,700 --> 00:12:12,800
+region of the genome and we get a more
+
+320
+00:12:10,429 --> 00:12:14,569
+or less a very similar prediction with
+
+321
+00:12:12,799 --> 00:12:16,879
+the gene even right next door to THC
+
+322
+00:12:14,570 --> 00:12:18,860
+synthase ok now as I mentioned in the
+
+323
+00:12:16,879 --> 00:12:21,620
+last tutorial there's many other ways to
+
+324
+00:12:18,860 --> 00:12:25,070
+knock out THC synthase we have seen some
+
+325
+00:12:21,620 --> 00:12:26,720
+type 4 plants that have this gene in red
+
+326
+00:12:25,070 --> 00:12:28,430
+making you think that it's a type 1
+
+327
+00:12:26,720 --> 00:12:30,649
+plant but it actually has some point
+
+328
+00:12:28,429 --> 00:12:33,319
+mutations that knock out really key
+
+329
+00:12:30,649 --> 00:12:35,570
+amino acids and I want to show you how
+
+330
+00:12:33,320 --> 00:12:37,430
+you can take your VCF file from strains
+
+331
+00:12:35,570 --> 00:12:39,589
+each loaded into Koji and look for those
+
+332
+00:12:37,429 --> 00:12:41,479
+things because right now the tools we
+
+333
+00:12:39,589 --> 00:12:43,699
+have in the reports aren't digging that
+
+334
+00:12:41,480 --> 00:12:45,560
+deep yet the data is there in your in
+
+335
+00:12:43,698 --> 00:12:47,149
+your sequencing data but our software
+
+336
+00:12:45,559 --> 00:12:48,828
+tools haven't gotten smart enough to go
+
+337
+00:12:47,149 --> 00:12:50,750
+in there and identify the variants and
+
+338
+00:12:48,828 --> 00:12:52,159
+decide which ones really damaging and
+
+339
+00:12:50,750 --> 00:12:54,078
+which one is and to give you like a
+
+340
+00:12:52,159 --> 00:12:57,289
+23andme report on every single base
+
+341
+00:12:54,078 --> 00:12:59,419
+we're building that right now but in the
+
+342
+00:12:57,289 --> 00:13:01,189
+meantime we want to enable you to be
+
+343
+00:12:59,419 --> 00:13:04,509
+able to load this stuff into the Koji
+
+344
+00:13:01,190 --> 00:13:07,010
+genome browser and surf it yourself ok
+
+345
+00:13:04,509 --> 00:13:10,009
+so just to give you a sense the
+
+346
+00:13:07,009 --> 00:13:15,740
+complexity that's behind this these are
+
+347
+00:13:10,009 --> 00:13:18,828
+a very large set of cannabinoid synthase
+
+348
+00:13:15,740 --> 00:13:20,778
+genes 39 of them with 11 other genes
+
+349
+00:13:18,828 --> 00:13:21,189
+that our next-door neighbors to them
+
+350
+00:13:20,778 --> 00:13:23,889
+that
+
+351
+00:13:21,190 --> 00:13:26,380
+often times of disappear or appear with
+
+352
+00:13:23,889 --> 00:13:28,120
+them there in linkage okay so when these
+
+353
+00:13:26,379 --> 00:13:30,070
+jeans get deleted they sometimes delete
+
+354
+00:13:28,120 --> 00:13:31,659
+their neighbors too and that's important
+
+355
+00:13:30,070 --> 00:13:33,550
+to track because if you breed for
+
+356
+00:13:31,659 --> 00:13:35,589
+certain cannabinoids synthase genes to
+
+357
+00:13:33,549 --> 00:13:37,089
+be present or absence in your plants you
+
+358
+00:13:35,590 --> 00:13:38,980
+really kind of kind of keep track of the
+
+359
+00:13:37,090 --> 00:13:42,910
+neighbors it's dragon down with it okay
+
+360
+00:13:38,980 --> 00:13:45,930
+so this is a case here where these sets
+
+361
+00:13:42,909 --> 00:13:49,149
+of genes this is a gene on context
+
+362
+00:13:45,929 --> 00:13:52,599
+it looks at context 756 right there see
+
+363
+00:13:49,149 --> 00:13:54,579
+756 this is the cannabic roaming cluster
+
+364
+00:13:52,600 --> 00:13:56,649
+it's labeled as inactive THC synthase
+
+365
+00:13:54,580 --> 00:13:58,420
+because that's what NCBI first learned
+
+366
+00:13:56,649 --> 00:14:00,850
+of this as it was submitted as an
+
+367
+00:13:58,419 --> 00:14:02,589
+inactive THC synthase meaning it makes
+
+368
+00:14:00,850 --> 00:14:04,240
+very little or no THC synthase but it
+
+369
+00:14:02,590 --> 00:14:06,070
+might make some and that's something to
+
+370
+00:14:04,240 --> 00:14:07,750
+keep your eye on it's now been cloned
+
+371
+00:14:06,070 --> 00:14:09,190
+and it's known to be the cannabic Romijn
+
+372
+00:14:07,750 --> 00:14:11,850
+synthase cluster okay
+
+373
+00:14:09,190 --> 00:14:14,710
+so you'll see that many of the lines
+
+374
+00:14:11,850 --> 00:14:17,950
+have copies of this particularly some of
+
+375
+00:14:14,710 --> 00:14:20,440
+these ones where our are in fact hemp
+
+376
+00:14:17,950 --> 00:14:22,240
+lines so when you breed for hemp lines
+
+377
+00:14:20,440 --> 00:14:23,410
+you gotta make sure you if you're a hemp
+
+378
+00:14:22,240 --> 00:14:25,210
+line that still has eight of these
+
+379
+00:14:23,409 --> 00:14:26,949
+inactive ths and it's just they may
+
+380
+00:14:25,210 --> 00:14:30,220
+cause a problem they may leak on you and
+
+381
+00:14:26,950 --> 00:14:32,320
+and still be a slightly active right so
+
+382
+00:14:30,220 --> 00:14:33,910
+a lot of growers right now wanna breed
+
+383
+00:14:32,320 --> 00:14:36,940
+hemp lines that have this to megabase
+
+384
+00:14:33,909 --> 00:14:38,500
+deletion this there is a common deletion
+
+385
+00:14:36,940 --> 00:14:41,500
+in the population where this whole
+
+386
+00:14:38,500 --> 00:14:44,259
+cassette is knocked out it also happens
+
+387
+00:14:41,500 --> 00:14:46,809
+to knock out these other genes on contig
+
+388
+00:14:44,259 --> 00:14:50,019
+7:56 down here now our paper describes
+
+389
+00:14:46,809 --> 00:14:52,509
+these these other genes here are in fact
+
+390
+00:14:50,019 --> 00:14:54,939
+pathogen resistance genes okay they're
+
+391
+00:14:52,509 --> 00:14:56,799
+aquaporin receptors they are gibberellin
+
+392
+00:14:54,940 --> 00:14:59,170
+receptors there's you know they're
+
+393
+00:14:56,799 --> 00:15:01,990
+important features that go with them so
+
+394
+00:14:59,169 --> 00:15:04,329
+you want to be careful and look at your
+
+395
+00:15:01,990 --> 00:15:06,279
+plants to know if you are breeding for
+
+396
+00:15:04,330 --> 00:15:07,839
+one of these things you might want to
+
+397
+00:15:06,279 --> 00:15:09,789
+pick one that doesn't have as many of
+
+398
+00:15:07,839 --> 00:15:12,070
+those pathogen resistant genes knocked
+
+399
+00:15:09,789 --> 00:15:14,019
+out like this one here Tibor still has
+
+400
+00:15:12,070 --> 00:15:16,839
+many of those pathogens Susan's genes
+
+401
+00:15:14,019 --> 00:15:18,250
+but it doesn't have the inactive THC
+
+402
+00:15:16,839 --> 00:15:20,260
+synthase so the cannabic row means are
+
+403
+00:15:18,250 --> 00:15:22,600
+gone so this is a great line to perhaps
+
+404
+00:15:20,259 --> 00:15:24,879
+try and breed into a type 3 compliant a
+
+405
+00:15:22,600 --> 00:15:27,310
+hemp line it may not make a lot of resin
+
+406
+00:15:24,879 --> 00:15:29,620
+so it may need to be paired with
+
+407
+00:15:27,309 --> 00:15:33,459
+something that does alright you can also
+
+408
+00:15:29,620 --> 00:15:34,899
+see several type 1 plants often have the
+
+409
+00:15:33,460 --> 00:15:36,639
+cannabic Romijn cluster
+
+410
+00:15:34,899 --> 00:15:38,528
+and you would really never know if
+
+411
+00:15:36,639 --> 00:15:39,789
+they're making residual THC because you
+
+412
+00:15:38,528 --> 00:15:42,759
+already have a THC synthesis and they're
+
+413
+00:15:39,789 --> 00:15:44,860
+making plenty but you will see a lot of
+
+414
+00:15:42,759 --> 00:15:47,829
+plants that don't have the THC synthase
+
+415
+00:15:44,860 --> 00:15:49,959
+gene and do have a CVD synthase gene but
+
+416
+00:15:47,828 --> 00:15:51,609
+also have kinetic Romi that may be a
+
+417
+00:15:49,958 --> 00:15:53,888
+problem as we mentioned in the last
+
+418
+00:15:51,610 --> 00:15:56,558
+thing so anyway there's a lot of
+
+419
+00:15:53,889 --> 00:15:58,509
+cannabic an eye but chroming gene su are
+
+420
+00:15:56,558 --> 00:16:00,249
+a lot of cannabinoid synthase genes to
+
+421
+00:15:58,509 --> 00:16:02,649
+keep in mind as you're doing these
+
+422
+00:16:00,249 --> 00:16:04,600
+things and breeding because ultimately
+
+423
+00:16:02,649 --> 00:16:07,778
+these are going to be the source of pain
+
+424
+00:16:04,600 --> 00:16:10,689
+residual cannabinoid expression is not
+
+425
+00:16:07,778 --> 00:16:12,458
+just related to the major genes that are
+
+426
+00:16:10,688 --> 00:16:13,719
+producing these things many of these old
+
+427
+00:16:12,458 --> 00:16:16,388
+genes might be producing other
+
+428
+00:16:13,720 --> 00:16:18,600
+cannabinoids rare ones or small amounts
+
+429
+00:16:16,389 --> 00:16:22,230
+of THC and CBD synthase which could
+
+430
+00:16:18,600 --> 00:16:27,939
+wreak havoc in in a hemp compliance
+
+431
+00:16:22,230 --> 00:16:32,139
+program so okay so feel free to find
+
+432
+00:16:27,938 --> 00:16:35,289
+this paper at bio archive and let's go
+
+433
+00:16:32,139 --> 00:16:38,919
+to Koji so if you if you google koji co
+
+434
+00:16:35,289 --> 00:16:42,419
+GE comparative genomics you'll end up at
+
+435
+00:16:38,919 --> 00:16:44,588
+a site like this alright there is a
+
+436
+00:16:42,419 --> 00:16:46,719
+tutorial here but I'm going to try and
+
+437
+00:16:44,589 --> 00:16:48,610
+do that for you there's a lot of genomes
+
+438
+00:16:46,720 --> 00:16:50,920
+in here you see there's 50 1000 genomes
+
+439
+00:16:48,610 --> 00:16:52,360
+in this thing there happens to be a lot
+
+440
+00:16:50,919 --> 00:16:54,039
+of our cannabis genomes in here too
+
+441
+00:16:52,360 --> 00:16:56,230
+so if you search for cannabis genomes
+
+442
+00:16:54,039 --> 00:16:57,099
+you're gonna get a lot of them you want
+
+443
+00:16:56,230 --> 00:17:00,159
+to click on the one in here that's
+
+444
+00:16:57,100 --> 00:17:01,629
+certified so right down here there is a
+
+445
+00:17:00,159 --> 00:17:04,148
+Jamaican lion mother that's been
+
+446
+00:17:01,629 --> 00:17:06,130
+certified and there is a male that's
+
+447
+00:17:04,148 --> 00:17:07,898
+been certified the certification just
+
+448
+00:17:06,130 --> 00:17:10,120
+means that the koji team has combed over
+
+449
+00:17:07,898 --> 00:17:11,500
+the annotations and in the genome
+
+450
+00:17:10,119 --> 00:17:14,250
+structure and they believe it meets a
+
+451
+00:17:11,500 --> 00:17:17,078
+certain standard and they they certify
+
+452
+00:17:14,250 --> 00:17:19,720
+so these are the best
+
+453
+00:17:17,078 --> 00:17:22,178
+busco score and and fifty genomes out
+
+454
+00:17:19,720 --> 00:17:23,709
+there you will know we have not put them
+
+455
+00:17:22,179 --> 00:17:25,990
+into chromosomes yet while we are
+
+456
+00:17:23,709 --> 00:17:27,459
+playing with that or cautious on calling
+
+457
+00:17:25,990 --> 00:17:29,230
+the chromosomes because they're all very
+
+458
+00:17:27,459 --> 00:17:31,659
+similar sizes and as we just showed you
+
+459
+00:17:29,230 --> 00:17:33,970
+there are frequent to Megabass deletions
+
+460
+00:17:31,659 --> 00:17:35,919
+that may make you miss call chromosome 5
+
+461
+00:17:33,970 --> 00:17:37,450
+versus chromosome 6 because these things
+
+462
+00:17:35,919 --> 00:17:39,490
+are really close in size and when
+
+463
+00:17:37,450 --> 00:17:42,548
+there's a 2 Meg deletion there you can
+
+464
+00:17:39,490 --> 00:17:44,649
+quickly make chromosome 6 mistaken for
+
+465
+00:17:42,548 --> 00:17:47,329
+chromosome 5 I'm not saying they're on 5
+
+466
+00:17:44,648 --> 00:17:48,979
+or 6 and just as an example there are
+
+467
+00:17:47,329 --> 00:17:50,658
+a lot of these chromosomes are almost
+
+468
+00:17:48,980 --> 00:17:53,480
+identical in size and so the deletions
+
+469
+00:17:50,659 --> 00:17:54,860
+matter okay
+
+470
+00:17:53,480 --> 00:17:57,019
+you may see chromosome from us a little
+
+471
+00:17:54,859 --> 00:18:00,528
+bit later this year but for the most
+
+472
+00:17:57,019 --> 00:18:03,230
+part that level of resolution is a
+
+473
+00:18:00,528 --> 00:18:09,169
+little bit academic at the moment let's
+
+474
+00:18:03,230 --> 00:18:12,620
+open up one of these browsers okay so
+
+475
+00:18:09,169 --> 00:18:13,399
+this we're now into this genome it will
+
+476
+00:18:12,619 --> 00:18:16,158
+show you there's a couple different
+
+477
+00:18:13,398 --> 00:18:17,719
+annotations that we've thrown in here it
+
+478
+00:18:16,159 --> 00:18:19,190
+will also give you a handful of
+
+479
+00:18:17,720 --> 00:18:21,860
+experiments that are public and
+
+480
+00:18:19,190 --> 00:18:24,380
+available for you to surf if you want to
+
+481
+00:18:21,859 --> 00:18:28,308
+download this genome right there is a
+
+482
+00:18:24,380 --> 00:18:31,010
+download button there is a GFF download
+
+483
+00:18:28,308 --> 00:18:32,720
+in here as well we have had some people
+
+484
+00:18:31,009 --> 00:18:34,398
+report that downloading from GFS from
+
+485
+00:18:32,720 --> 00:18:37,220
+koji changes the format a little bit so
+
+486
+00:18:34,398 --> 00:18:38,509
+just be aware of that and there are two
+
+487
+00:18:37,220 --> 00:18:40,389
+different ways to download it there's
+
+488
+00:18:38,509 --> 00:18:42,200
+like through this tab and one other tab
+
+489
+00:18:40,388 --> 00:18:43,490
+that when you click on the actual
+
+490
+00:18:42,200 --> 00:18:45,769
+experiment itself I think when you
+
+491
+00:18:43,490 --> 00:18:47,929
+download that you get the exact file we
+
+492
+00:18:45,769 --> 00:18:49,429
+put in there if you download off of this
+
+493
+00:18:47,929 --> 00:18:51,980
+there might be some modification is that
+
+494
+00:18:49,429 --> 00:18:54,380
+Koji added so two different ways to
+
+495
+00:18:51,980 --> 00:18:59,269
+download those just be aware of it okay
+
+496
+00:18:54,380 --> 00:19:01,940
+so let's go browse this genome and this
+
+497
+00:18:59,269 --> 00:19:05,058
+is gonna bring up what's known as a
+
+498
+00:19:01,940 --> 00:19:06,919
+genome browser and what its gonna ask
+
+499
+00:19:05,058 --> 00:19:08,089
+you for are what coordinates do you want
+
+500
+00:19:06,919 --> 00:19:15,860
+to go to what part of the map are you
+
+501
+00:19:08,089 --> 00:19:18,199
+looking for okay so here we are this is
+
+502
+00:19:15,859 --> 00:19:20,869
+um it's a probably last thing we looked
+
+503
+00:19:18,200 --> 00:19:23,269
+at let's just go over to let's go to
+
+504
+00:19:20,869 --> 00:19:26,569
+kind of go to THC synthase that's what
+
+505
+00:19:23,269 --> 00:19:30,700
+everyone wants to see 741 I have to know
+
+506
+00:19:26,569 --> 00:19:30,700
+this is a four four one seven zero zero
+
+507
+00:19:36,849 --> 00:19:39,849
+okay
+
+508
+00:19:41,648 --> 00:19:55,008
+where are we oh there we go okay so this
+
+509
+00:19:52,009 --> 00:19:56,778
+shows you the ATC's and G's if you're
+
+510
+00:19:55,009 --> 00:19:58,878
+not familiar with this is an amino acid
+
+511
+00:19:56,778 --> 00:19:59,959
+translation in three different frames in
+
+512
+00:19:58,878 --> 00:20:02,868
+the top strand and three different
+
+513
+00:19:59,959 --> 00:20:04,639
+frames in the bottom strand you can read
+
+514
+00:20:02,868 --> 00:20:05,749
+three different frames of DNA when
+
+515
+00:20:04,638 --> 00:20:08,928
+you're trying to convert it into
+
+516
+00:20:05,749 --> 00:20:10,219
+proteins and these red marks are stop
+
+517
+00:20:08,929 --> 00:20:13,190
+codons
+
+518
+00:20:10,219 --> 00:20:14,869
+so usually genes don't have those and so
+
+519
+00:20:13,190 --> 00:20:16,609
+one way to know what frame your is just
+
+520
+00:20:14,868 --> 00:20:19,548
+look for the longest stretch that
+
+521
+00:20:16,608 --> 00:20:20,989
+doesn't have and you stop codons and
+
+522
+00:20:19,548 --> 00:20:22,338
+with T and sheets in space that's pretty
+
+523
+00:20:20,989 --> 00:20:24,379
+easy you can see there's some Athenian
+
+524
+00:20:22,338 --> 00:20:30,878
+right there you go further back to the
+
+525
+00:20:24,378 --> 00:20:30,878
+start of the gene zoom out a little bit
+
+526
+00:20:32,499 --> 00:20:38,690
+baby steps there you go so start the
+
+527
+00:20:36,019 --> 00:20:42,138
+gene stop at the gene if you click on
+
+528
+00:20:38,690 --> 00:20:44,749
+this you'll get a little messenger RNA
+
+529
+00:20:42,138 --> 00:20:48,618
+with a note of what the database thinks
+
+530
+00:20:44,749 --> 00:20:50,389
+this is we've done some annotation on
+
+531
+00:20:48,618 --> 00:20:52,189
+this and adjusted some of the start and
+
+532
+00:20:50,388 --> 00:20:54,078
+stop codons just to make sure that it's
+
+533
+00:20:52,190 --> 00:20:56,479
+it's in fact what is seen in the
+
+534
+00:20:54,078 --> 00:20:58,158
+literature you can download the sequence
+
+535
+00:20:56,479 --> 00:21:01,219
+of it by hitting that fast a button if
+
+536
+00:20:58,159 --> 00:21:03,859
+you want don't do something like this
+
+537
+00:21:01,219 --> 00:21:05,328
+there's the sequence in fact this is
+
+538
+00:21:03,858 --> 00:21:06,949
+what we use to clone some of those
+
+539
+00:21:05,328 --> 00:21:08,328
+powdery mildew resistance genes we just
+
+540
+00:21:06,950 --> 00:21:11,749
+clicked on the gene grab this from the
+
+541
+00:21:08,328 --> 00:21:14,479
+start codon set it off to Gen script to
+
+542
+00:21:11,749 --> 00:21:18,348
+get a cloned and sequenced and expressed
+
+543
+00:21:14,479 --> 00:21:20,319
+and now we have protein in a few weeks
+
+544
+00:21:18,348 --> 00:21:22,729
+okay so what are you looking at here
+
+545
+00:21:20,319 --> 00:21:25,548
+this is as I said the the coding
+
+546
+00:21:22,729 --> 00:21:27,919
+sequence c.d.s if you want to add more
+
+547
+00:21:25,548 --> 00:21:30,588
+features in here you can easily take
+
+548
+00:21:27,919 --> 00:21:32,919
+that C D s and it'll add it down here
+
+549
+00:21:30,588 --> 00:21:35,288
+you can remove that track if you want
+
+550
+00:21:32,919 --> 00:21:38,570
+you can remove that track if you want
+
+551
+00:21:35,288 --> 00:21:41,838
+put it back we'll end up down here and
+
+552
+00:21:38,569 --> 00:21:44,138
+then you can also see that we have all
+
+553
+00:21:41,838 --> 00:21:48,158
+of these other reads here this here is
+
+554
+00:21:44,138 --> 00:21:50,808
+female leaf RNA sequence okay this is
+
+555
+00:21:48,159 --> 00:21:52,549
+when we did I so seek sequencing all
+
+556
+00:21:50,808 --> 00:21:53,750
+these RNA molecules popped out from the
+
+557
+00:21:52,548 --> 00:21:56,329
+leaves that works
+
+558
+00:21:53,750 --> 00:21:57,950
+synthase that's to be expected this is a
+
+559
+00:21:56,329 --> 00:22:01,159
+type 2 plant
+
+560
+00:21:57,950 --> 00:22:02,840
+hello here is a whole genome shotgun of
+
+561
+00:22:01,160 --> 00:22:04,550
+grapes topper another genome that's been
+
+562
+00:22:02,839 --> 00:22:05,929
+aligned to this and you can kind of comb
+
+563
+00:22:04,549 --> 00:22:08,149
+through this and look for variants if
+
+564
+00:22:05,930 --> 00:22:10,220
+you want let's get that out here cuz it
+
+565
+00:22:08,150 --> 00:22:10,550
+takes up a lot of memory and work with
+
+566
+00:22:10,220 --> 00:22:15,430
+these
+
+567
+00:22:10,549 --> 00:22:17,539
+okay so here's th DS and thanks now
+
+568
+00:22:15,430 --> 00:22:19,549
+other things you might want to look at
+
+569
+00:22:17,539 --> 00:22:21,619
+well if you had your own sample you
+
+570
+00:22:19,549 --> 00:22:24,109
+could load that into the genome browser
+
+571
+00:22:21,619 --> 00:22:26,179
+a VCF file off a canapé dia and see
+
+572
+00:22:24,109 --> 00:22:27,799
+where all that all the snips are in your
+
+573
+00:22:26,180 --> 00:22:30,920
+genome then we're gonna do that in just
+
+574
+00:22:27,799 --> 00:22:34,549
+a moment let me just show you something
+
+575
+00:22:30,920 --> 00:22:40,250
+that functionality here okay so these
+
+576
+00:22:34,549 --> 00:22:42,409
+are all the public data possible we you
+
+577
+00:22:40,250 --> 00:22:43,579
+can hit the structural variation file
+
+578
+00:22:42,410 --> 00:22:45,560
+here we'll show you where the very
+
+579
+00:22:43,579 --> 00:22:46,879
+large-scale insertions and deletions are
+
+580
+00:22:45,559 --> 00:22:49,220
+on the genome and I don't think you're
+
+581
+00:22:46,880 --> 00:22:51,620
+gonna find any in Jamaican lion or over
+
+582
+00:22:49,220 --> 00:22:53,029
+TSU synthase but you may find some other
+
+583
+00:22:51,619 --> 00:22:57,229
+hits over here here's a here's a
+
+584
+00:22:53,029 --> 00:23:01,009
+deletion shows you its size and some of
+
+585
+00:22:57,230 --> 00:23:05,329
+its attributes now let's go into THC
+
+586
+00:23:01,009 --> 00:23:06,890
+synthase and let's ask her so what do we
+
+587
+00:23:05,329 --> 00:23:08,899
+have in the 40 genomes project in terms
+
+588
+00:23:06,890 --> 00:23:10,280
+of the VCF file VCF files are variant
+
+589
+00:23:08,900 --> 00:23:14,300
+call format sand they'll have some of
+
+590
+00:23:10,279 --> 00:23:17,629
+the snips let me see if that peppers
+
+591
+00:23:14,299 --> 00:23:18,740
+this with variants it does you see there
+
+592
+00:23:17,630 --> 00:23:21,050
+must be another one up here that does
+
+593
+00:23:18,740 --> 00:23:26,690
+that we have a forty genomes in public
+
+594
+00:23:21,049 --> 00:23:28,730
+oh oh there's some annotations in here
+
+595
+00:23:26,690 --> 00:23:31,039
+this may give you some the gene calls
+
+596
+00:23:28,730 --> 00:23:33,680
+okay it's kind of redundant oh there is
+
+597
+00:23:31,039 --> 00:23:35,690
+some work from a group I think 20 labs
+
+598
+00:23:33,680 --> 00:23:37,970
+that did some aspect profiling and you
+
+599
+00:23:35,690 --> 00:23:39,500
+can see how many of these genes have
+
+600
+00:23:37,970 --> 00:23:42,500
+they actually detected them aspect
+
+601
+00:23:39,500 --> 00:23:45,079
+peptide for and in fact THC synthase
+
+602
+00:23:42,500 --> 00:23:47,150
+pops out now in our experience 98.8% of
+
+603
+00:23:45,079 --> 00:23:49,819
+what been ours what has found and is
+
+604
+00:23:47,150 --> 00:23:51,830
+published we find in the RNA set in
+
+605
+00:23:49,819 --> 00:23:54,230
+Jamaican Lyon but we only found about
+
+606
+00:23:51,829 --> 00:23:55,519
+only about yeah he found about 12,000
+
+607
+00:23:54,230 --> 00:23:57,559
+peptides and you saw from her slides
+
+608
+00:23:55,519 --> 00:24:00,079
+over there that we we have like 27 to 32
+
+609
+00:23:57,559 --> 00:24:03,440
+thousand genes and so we're only about
+
+610
+00:24:00,079 --> 00:24:04,819
+40% of his proteins are or 40% of the
+
+611
+00:24:03,440 --> 00:24:06,830
+RNA that we have found is accounted for
+
+612
+00:24:04,819 --> 00:24:09,558
+the protein did it that's that's not
+
+613
+00:24:06,829 --> 00:24:11,028
+not unheard of some of the proteins may
+
+614
+00:24:09,558 --> 00:24:12,440
+not be heavily expressed and then the
+
+615
+00:24:11,028 --> 00:24:16,009
+sensitivity machine may and may not pick
+
+616
+00:24:12,440 --> 00:24:17,570
+him up otherwise so all right so we have
+
+617
+00:24:16,009 --> 00:24:19,819
+a variety of experiments here you can
+
+618
+00:24:17,569 --> 00:24:22,028
+throw on top of this we have the RNA
+
+619
+00:24:19,819 --> 00:24:24,918
+from the female flowers from the leaves
+
+620
+00:24:22,028 --> 00:24:26,509
+from the roots of course there's not a
+
+621
+00:24:24,919 --> 00:24:26,929
+lot of THC synthase expressed in the
+
+622
+00:24:26,509 --> 00:24:29,990
+roots
+
+623
+00:24:26,929 --> 00:24:31,730
+you can see down here let me just get
+
+624
+00:24:29,990 --> 00:24:34,429
+more room here so nothing from the roots
+
+625
+00:24:31,730 --> 00:24:36,589
+the seeded female flowers RNA went down
+
+626
+00:24:34,429 --> 00:24:39,500
+a little bit there not be surprised once
+
+627
+00:24:36,589 --> 00:24:42,009
+you start putting seeds out you can see
+
+628
+00:24:39,500 --> 00:24:44,538
+the expression goes down on THC synthase
+
+629
+00:24:42,009 --> 00:24:46,339
+not surprising and then there's male
+
+630
+00:24:44,538 --> 00:24:48,288
+flowers too and the male flowers aren't
+
+631
+00:24:46,339 --> 00:24:49,908
+making a whole lot of THC synthase all
+
+632
+00:24:48,288 --> 00:24:52,730
+right I think that's probably not
+
+633
+00:24:49,909 --> 00:24:55,909
+surprising to anyone in this field the
+
+634
+00:24:52,730 --> 00:24:58,880
+other thing we have in here are BAM
+
+635
+00:24:55,909 --> 00:25:01,850
+files this is these are binary after
+
+636
+00:24:58,880 --> 00:25:03,528
+mapping files okay of about 50 or so
+
+637
+00:25:01,849 --> 00:25:07,490
+strain seek samples that are public in
+
+638
+00:25:03,528 --> 00:25:10,190
+canopy dia so let's take a look at Queen
+
+639
+00:25:07,490 --> 00:25:11,839
+Jesus now Queen Jesus actually started
+
+640
+00:25:10,190 --> 00:25:13,519
+out that wants a type 2 3 plant santak
+
+641
+00:25:11,839 --> 00:25:15,439
+has a type 4 plant so those aren't gonna
+
+642
+00:25:13,519 --> 00:25:16,909
+have a lot of sequence over this this is
+
+643
+00:25:15,440 --> 00:25:19,580
+a THC synthase so let's have something
+
+644
+00:25:16,909 --> 00:25:23,000
+that's a type 1 so you can see what the
+
+645
+00:25:19,579 --> 00:25:25,250
+sequence looks like a type 1 may be
+
+646
+00:25:23,000 --> 00:25:27,048
+serious happiness would be a type 1 so
+
+647
+00:25:25,250 --> 00:25:29,210
+you can see there's some reads that are
+
+648
+00:25:27,048 --> 00:25:31,700
+covering this region and if we zoom in
+
+649
+00:25:29,210 --> 00:25:33,769
+on those reads you can see there's
+
+650
+00:25:31,700 --> 00:25:35,298
+sequence coverage now there is a region
+
+651
+00:25:33,769 --> 00:25:37,759
+of THC synthase that is a little bit
+
+652
+00:25:35,298 --> 00:25:40,730
+tricky to cover because it has homology
+
+653
+00:25:37,759 --> 00:25:42,470
+to a lot of other cannabinoids and face
+
+654
+00:25:40,730 --> 00:25:44,960
+genes and so it's hard to place reads in
+
+655
+00:25:42,470 --> 00:25:46,069
+some portions of it and sometimes the
+
+656
+00:25:44,960 --> 00:25:47,360
+coverage might be just be a little light
+
+657
+00:25:46,069 --> 00:25:50,210
+there let's see if we get another one
+
+658
+00:25:47,359 --> 00:25:51,859
+that's got a little bit more there you
+
+659
+00:25:50,210 --> 00:25:53,659
+go this region is all tile but there's
+
+660
+00:25:51,859 --> 00:25:59,388
+sometimes some lack of reads there in
+
+661
+00:25:53,659 --> 00:26:01,519
+the middle let's pull up or maybe
+
+662
+00:25:59,388 --> 00:26:04,219
+Liberty haze we'll have some depth there
+
+663
+00:26:01,519 --> 00:26:05,659
+yeah you can get a lot of these now if
+
+664
+00:26:04,220 --> 00:26:07,308
+you go to something like our Magnolia
+
+665
+00:26:05,659 --> 00:26:10,370
+I'm gonna bet you won't see any Ruiz
+
+666
+00:26:07,308 --> 00:26:13,038
+is a type 3 plant and it is deleted in
+
+667
+00:26:10,369 --> 00:26:14,778
+that region ok so this is the underlying
+
+668
+00:26:13,038 --> 00:26:19,158
+data that's behind the plots in canopy
+
+669
+00:26:14,778 --> 00:26:20,569
+dia now if we did something like put a
+
+670
+00:26:19,159 --> 00:26:24,170
+whole genome shotgun
+
+671
+00:26:20,569 --> 00:26:25,939
+this I think what you'll find these are
+
+672
+00:26:24,170 --> 00:26:27,590
+whole-genome shotguns right let's find a
+
+673
+00:26:25,940 --> 00:26:30,200
+whole genome shotgun that's a type one
+
+674
+00:26:27,589 --> 00:26:32,629
+and see what we see
+
+675
+00:26:30,200 --> 00:26:34,759
+reads tiled all the way across the
+
+676
+00:26:32,630 --> 00:26:36,470
+region why well whole genome shotgun
+
+677
+00:26:34,759 --> 00:26:39,379
+takes the whole genome and sequences it
+
+678
+00:26:36,470 --> 00:26:42,559
+so we don't have to try to fish
+
+679
+00:26:39,380 --> 00:26:44,510
+THC synthase out of the genome to get
+
+680
+00:26:42,559 --> 00:26:46,339
+coverage over it with a hybridization
+
+681
+00:26:44,509 --> 00:26:47,750
+capture system we just sequence
+
+682
+00:26:46,339 --> 00:26:50,000
+everything is well I'm more expensive
+
+683
+00:26:47,750 --> 00:26:52,430
+but it's a lot more thorough and it will
+
+684
+00:26:50,000 --> 00:26:54,650
+it will miss less snips as a result of
+
+685
+00:26:52,430 --> 00:26:59,180
+this particularly in genes that have lot
+
+686
+00:26:54,650 --> 00:27:00,620
+of homology okay so you can load up all
+
+687
+00:26:59,180 --> 00:27:01,759
+different types of samples here and look
+
+688
+00:27:00,619 --> 00:27:04,009
+for variants now let's talk about
+
+689
+00:27:01,759 --> 00:27:11,839
+looking at variants I think if you want
+
+690
+00:27:04,009 --> 00:27:17,599
+to look at variants we probably look at
+
+691
+00:27:11,839 --> 00:27:19,039
+a VCF file and alright so now that we're
+
+692
+00:27:17,599 --> 00:27:21,169
+looking at your VCF file I'm getting a
+
+693
+00:27:19,039 --> 00:27:23,869
+little more serious here and putting on
+
+694
+00:27:21,170 --> 00:27:26,360
+a professional look but in all
+
+695
+00:27:23,869 --> 00:27:29,359
+seriousness now well what we need to do
+
+696
+00:27:26,359 --> 00:27:32,709
+in Koji is to actually load up your VCF
+
+697
+00:27:29,359 --> 00:27:35,719
+file and you have to have a cyber
+
+698
+00:27:32,710 --> 00:27:37,759
+saccade a day in tukoji but it's really
+
+699
+00:27:35,720 --> 00:27:39,829
+simple fill out an email address you'll
+
+700
+00:27:37,759 --> 00:27:41,390
+get a koji account in the day and then
+
+701
+00:27:39,829 --> 00:27:42,980
+you can upload your own data to this
+
+702
+00:27:41,390 --> 00:27:45,290
+browser and overlay with all the data
+
+703
+00:27:42,980 --> 00:27:47,240
+that we have public so the way you do
+
+704
+00:27:45,289 --> 00:27:50,839
+that is you go over here to experiments
+
+705
+00:27:47,240 --> 00:27:55,099
+you click new you click new experiment
+
+706
+00:27:50,839 --> 00:27:58,299
+or load exp and this should bring up a
+
+707
+00:27:55,099 --> 00:28:00,319
+window that allows us to load up a file
+
+708
+00:27:58,299 --> 00:28:03,230
+so we're gonna hit the upload button
+
+709
+00:28:00,319 --> 00:28:05,750
+here and choose a file and you want to
+
+710
+00:28:03,230 --> 00:28:07,039
+pick your VCF file there's one right
+
+711
+00:28:05,750 --> 00:28:09,319
+there now these can be a little big
+
+712
+00:28:07,039 --> 00:28:12,940
+sometimes so we'll just let's just see
+
+713
+00:28:09,319 --> 00:28:12,939
+how well it soaks this up
+
+714
+00:28:14,589 --> 00:28:22,389
+we're in that range right now and once
+
+715
+00:28:19,480 --> 00:28:26,039
+this realizes this is the VCF file you
+
+716
+00:28:22,390 --> 00:28:28,360
+hit next fill out some meta information
+
+717
+00:28:26,039 --> 00:28:29,920
+now I already have a version of this
+
+718
+00:28:28,359 --> 00:28:33,069
+running that we can skip to all that
+
+719
+00:28:29,920 --> 00:28:34,690
+thing is thinking this is what you'll
+
+720
+00:28:33,069 --> 00:28:37,089
+ultimately receive when you're done
+
+721
+00:28:34,690 --> 00:28:38,740
+loading it after the files been loaded
+
+722
+00:28:37,089 --> 00:28:41,019
+up you'll have all this information and
+
+723
+00:28:38,740 --> 00:28:42,759
+it will it will collect some of the
+
+724
+00:28:41,019 --> 00:28:44,139
+metadata some of the metadata it asked
+
+725
+00:28:42,759 --> 00:28:46,059
+for you can see in the background here
+
+726
+00:28:44,140 --> 00:28:47,320
+ask for a name you could put a
+
+727
+00:28:46,059 --> 00:28:48,429
+description we didn't put much in
+
+728
+00:28:47,319 --> 00:28:51,339
+because it's just a test
+
+729
+00:28:48,430 --> 00:28:53,200
+a version the site that it was generated
+
+730
+00:28:51,339 --> 00:28:54,849
+to whether it's restricted we left it
+
+731
+00:28:53,200 --> 00:28:57,009
+it's private right here so you can load
+
+732
+00:28:54,849 --> 00:28:59,339
+your data in and you can view it against
+
+733
+00:28:57,009 --> 00:29:01,420
+all the data we have in our database
+
+734
+00:28:59,339 --> 00:29:03,849
+privately and you don't have to put your
+
+735
+00:29:01,420 --> 00:29:09,759
+put any of your findings public in this
+
+736
+00:29:03,849 --> 00:29:12,250
+regard okay so that's what that looks
+
+737
+00:29:09,759 --> 00:29:14,319
+like you'll see here this is an
+
+738
+00:29:12,250 --> 00:29:16,150
+important step I've bounced over to this
+
+739
+00:29:14,319 --> 00:29:18,309
+to this step here to make sure that's a
+
+740
+00:29:16,150 --> 00:29:19,540
+VCF file there's a lot of different
+
+741
+00:29:18,309 --> 00:29:21,519
+files you can upload but you want to
+
+742
+00:29:19,539 --> 00:29:24,819
+make sure you call it what this is and
+
+743
+00:29:21,519 --> 00:29:26,379
+when you go next it'll ask I haven't
+
+744
+00:29:24,819 --> 00:29:28,359
+really used these features yet this will
+
+745
+00:29:26,380 --> 00:29:29,860
+send you an email when it's done but it
+
+746
+00:29:28,359 --> 00:29:31,269
+only takes a few minutes for a VCF file
+
+747
+00:29:29,859 --> 00:29:34,599
+that's more important for BAM files I
+
+748
+00:29:31,269 --> 00:29:36,220
+can take an hour and there's notebook
+
+749
+00:29:34,599 --> 00:29:38,980
+features in here that I've not yet
+
+750
+00:29:36,220 --> 00:29:40,930
+explored and then when you hit next here
+
+751
+00:29:38,980 --> 00:29:42,519
+it's gonna start uploading I'm just
+
+752
+00:29:40,930 --> 00:29:44,950
+gonna actually cancel out of this
+
+753
+00:29:42,519 --> 00:29:49,629
+because we've already done that section
+
+754
+00:29:44,950 --> 00:29:52,029
+over here and then just hit OK so now
+
+755
+00:29:49,630 --> 00:29:55,970
+that we have that loaded up what we can
+
+756
+00:29:52,029 --> 00:29:58,759
+do is look for it
+
+757
+00:29:55,970 --> 00:30:00,049
+in a lot of the data that's up here and
+
+758
+00:29:58,759 --> 00:30:09,319
+I'm just gonna search for it I think
+
+759
+00:30:00,049 --> 00:30:13,309
+it's there we go right there so that's
+
+760
+00:30:09,319 --> 00:30:15,970
+the VCF file we load it up we're gonna
+
+761
+00:30:13,309 --> 00:30:15,970
+hit view data
+
+762
+00:30:18,549 --> 00:30:24,460
+we can even make it public just like
+
+763
+00:30:20,440 --> 00:30:27,340
+that real easy hit browse and it will
+
+764
+00:30:24,460 --> 00:30:29,799
+probably load up the genome with this
+
+765
+00:30:27,339 --> 00:30:31,209
+VCF file layered against it now it's a
+
+766
+00:30:29,799 --> 00:30:32,950
+variant call format that just means
+
+767
+00:30:31,210 --> 00:30:34,569
+every line is a list of a coordinate of
+
+768
+00:30:32,950 --> 00:30:36,220
+the genome with a particular base change
+
+769
+00:30:34,569 --> 00:30:39,849
+and some quality information about that
+
+770
+00:30:36,220 --> 00:30:41,650
+base change for instance is how many
+
+771
+00:30:39,849 --> 00:30:44,019
+reads are contributing to that base
+
+772
+00:30:41,650 --> 00:30:45,610
+change so when you're zoomed really far
+
+773
+00:30:44,019 --> 00:30:47,849
+out like this you start to get a density
+
+774
+00:30:45,609 --> 00:30:51,689
+plot of where all the polymorphisms are
+
+775
+00:30:47,849 --> 00:30:57,009
+now let's go again to our favorite gene
+
+776
+00:30:51,690 --> 00:30:58,929
+four four one seven now if you don't
+
+777
+00:30:57,009 --> 00:31:00,220
+recall four four one seven I have that
+
+778
+00:30:58,929 --> 00:31:01,450
+burned in my brain but you don't have to
+
+779
+00:31:00,220 --> 00:31:03,370
+have it burned into your brain you can
+
+780
+00:31:01,450 --> 00:31:08,289
+just go up here and say I like I like
+
+781
+00:31:03,369 --> 00:31:10,149
+take THC touch' hydro is search oh I
+
+782
+00:31:08,289 --> 00:31:11,769
+forgot to check all these and then hit
+
+783
+00:31:10,150 --> 00:31:14,559
+OK and it will come up with a list of
+
+784
+00:31:11,769 --> 00:31:18,670
+all the different THC like genes in the
+
+785
+00:31:14,558 --> 00:31:20,649
+content and I'm gonna bet that one's a
+
+786
+00:31:18,670 --> 00:31:22,690
+right no and that's not it that's it
+
+787
+00:31:20,650 --> 00:31:24,160
+right there that's the one that is the
+
+788
+00:31:22,690 --> 00:31:26,410
+active T issue synthase
+
+789
+00:31:24,160 --> 00:31:34,500
+I just kind of remember that by the
+
+790
+00:31:26,410 --> 00:31:34,500
+coordinate and let's see
+
+791
+00:31:35,259 --> 00:31:42,148
+let's get some of this play we want to
+
+792
+00:31:39,220 --> 00:31:42,149
+see what jeans are
+
+793
+00:31:44,640 --> 00:31:53,840
+feature c.d.s there we go the coding
+
+794
+00:31:48,569 --> 00:31:57,529
+sequence squish that back zoom this out
+
+795
+00:31:53,839 --> 00:32:01,678
+and what you're seeing here are
+
+796
+00:31:57,529 --> 00:32:05,220
+different variants c-to-t variant at
+
+797
+00:32:01,679 --> 00:32:08,330
+this coordinate near TSU synthase you
+
+798
+00:32:05,220 --> 00:32:08,329
+can see another one over here
+
+799
+00:32:08,390 --> 00:32:15,840
+and the blur here right now you zoom out
+
+800
+00:32:13,500 --> 00:32:18,200
+a lot in this you'll see many many more
+
+801
+00:32:15,839 --> 00:32:18,199
+snips
+
+802
+00:32:25,329 --> 00:32:30,369
+and each one of those is variant alright
+
+803
+00:32:28,720 --> 00:32:33,610
+so that's how you load your data into
+
+804
+00:32:30,369 --> 00:32:35,769
+Koji and there's a there's a ways to
+
+805
+00:32:33,609 --> 00:32:38,289
+load fast queues in here as well so it's
+
+806
+00:32:35,769 --> 00:32:40,210
+a it's a very helpful tool allows you to
+
+807
+00:32:38,289 --> 00:32:41,920
+search around the genome and look for
+
+808
+00:32:40,210 --> 00:32:45,069
+particular key genes by looking through
+
+809
+00:32:41,920 --> 00:32:46,660
+this feature function there's also some
+
+810
+00:32:45,069 --> 00:32:47,950
+other comparative genomic tools in here
+
+811
+00:32:46,660 --> 00:32:50,320
+that people should know about if you
+
+812
+00:32:47,950 --> 00:32:51,730
+were to actually go back there's
+
+813
+00:32:50,319 --> 00:32:52,750
+actually a tutorial on how use this so
+
+814
+00:32:51,730 --> 00:32:55,120
+I'm gonna point into the tutorial
+
+815
+00:32:52,750 --> 00:32:59,559
+because that's probably a better way to
+
+816
+00:32:55,119 --> 00:33:01,689
+do it but there are other comparative
+
+817
+00:32:59,559 --> 00:33:06,429
+genomic tools in here given this as the
+
+818
+00:33:01,690 --> 00:33:10,150
+comparative genomics genome browser if
+
+819
+00:33:06,430 --> 00:33:12,100
+you go up to I think tools up here
+
+820
+00:33:10,150 --> 00:33:13,540
+you'll see those likes in maps a very
+
+821
+00:33:12,099 --> 00:33:14,980
+good tool to do genome to genome
+
+822
+00:33:13,539 --> 00:33:21,039
+alignments in fact let's do one right
+
+823
+00:33:14,980 --> 00:33:26,829
+now takes in map and a line now it will
+
+824
+00:33:21,039 --> 00:33:29,619
+only do alignments of genomes that are
+
+825
+00:33:26,829 --> 00:33:31,119
+I'm going to use to map to that have
+
+826
+00:33:29,619 --> 00:33:34,509
+annotations on them and they're very few
+
+827
+00:33:31,119 --> 00:33:38,019
+of them have annotations right now my
+
+828
+00:33:34,509 --> 00:33:40,230
+instant map maybe it's in that 3d let me
+
+829
+00:33:38,019 --> 00:33:40,230
+see
+
+830
+00:33:40,420 --> 00:33:46,050
+oh that's crazy I don't want to do
+
+831
+00:33:43,240 --> 00:33:46,049
+three-dimensional genome
+
+832
+00:33:51,660 --> 00:34:01,110
+all righty sit map - we're on select
+
+833
+00:33:58,119 --> 00:34:03,189
+organisms so if you just go here and go
+
+834
+00:34:01,109 --> 00:34:06,659
+cannabis it's gonna bring you up a lot
+
+835
+00:34:03,190 --> 00:34:12,940
+of different versions of cannabis and
+
+836
+00:34:06,660 --> 00:34:14,740
+let's take what you're making lion as I
+
+837
+00:34:12,940 --> 00:34:20,070
+mean isn't one and then let's do the
+
+838
+00:34:14,739 --> 00:34:20,069
+same over here cannabis
+
+839
+00:34:23,630 --> 00:34:29,450
+and let me see no coatings let me see
+
+840
+00:34:26,570 --> 00:34:32,480
+they don't this one so CVT rx has
+
+841
+00:34:29,449 --> 00:34:34,389
+annotations purple kush just not of
+
+842
+00:34:32,480 --> 00:34:40,190
+annotations yet although they're in NCBI
+
+843
+00:34:34,389 --> 00:34:46,839
+this does not have annotations maybe
+
+844
+00:34:40,190 --> 00:34:46,840
+that one does now okay
+
+845
+00:34:48,789 --> 00:34:55,898
+so there let's put on CB DRX Jeremy it's
+
+846
+00:34:54,610 --> 00:34:58,059
+hidden map now this is gonna run a
+
+847
+00:34:55,898 --> 00:35:01,119
+program in the background and it will
+
+848
+00:34:58,059 --> 00:35:02,349
+get back to you the map now that
+
+849
+00:35:01,119 --> 00:35:04,029
+probably doesn't look very good to
+
+850
+00:35:02,349 --> 00:35:09,449
+anyone here so there are some features
+
+851
+00:35:04,030 --> 00:35:09,450
+in here that will make this compare them
+
+852
+00:35:13,989 --> 00:35:23,879
+and more meaningful way if you want this
+
+853
+00:35:19,449 --> 00:35:26,769
+at 24 or and for and I think the most
+
+854
+00:35:23,880 --> 00:35:31,019
+important feature you know you had total
+
+855
+00:35:26,769 --> 00:35:31,019
+chromosomes where 10 has that's a
+
+856
+00:35:39,650 --> 00:35:47,650
+now let's do some KNK s it's always fun
+
+857
+00:35:43,869 --> 00:35:47,650
+now let's give that a shot
+
+858
+00:35:51,219 --> 00:35:56,869
+now if you're if you've run an analysis
+
+859
+00:35:54,889 --> 00:35:59,089
+on here it will remember that and only
+
+860
+00:35:56,869 --> 00:36:00,380
+run the piece of your analysis that's
+
+861
+00:35:59,090 --> 00:36:03,260
+needed like this
+
+862
+00:36:00,380 --> 00:36:04,550
+Diana right now if it's been run before
+
+863
+00:36:03,260 --> 00:36:07,250
+and you happen to compare the same
+
+864
+00:36:04,550 --> 00:36:09,110
+genomes you know side by side it'll just
+
+865
+00:36:07,250 --> 00:36:10,940
+recall the old time that you ran that it
+
+866
+00:36:09,110 --> 00:36:12,200
+has a running memory of the analyses
+
+867
+00:36:10,940 --> 00:36:14,990
+that you front of the pass but if you
+
+868
+00:36:12,199 --> 00:36:17,829
+change any one of these numbers it's
+
+869
+00:36:14,989 --> 00:36:17,829
+going to have to rerun it
+
+870
+00:36:23,690 --> 00:36:26,740
+that would take a little time
+
+871
+00:36:32,590 --> 00:36:36,120
+close out of some of these now
+
+872
+00:36:39,050 --> 00:36:43,850
+and we may have to come back to that
+
+873
+00:36:40,699 --> 00:36:45,710
+later timing but this usually gives you
+
+874
+00:36:43,849 --> 00:36:48,319
+some dot plots comparing one genome to
+
+875
+00:36:45,710 --> 00:36:49,909
+another and you'll see some of these in
+
+876
+00:36:48,320 --> 00:36:51,350
+our manuscript actually so we don't have
+
+877
+00:36:49,909 --> 00:36:53,059
+to wait for this but there are actually
+
+878
+00:36:51,349 --> 00:36:56,389
+in one of our figures but you can see
+
+879
+00:36:53,059 --> 00:36:57,679
+Jamaican line lined up to to CBDR X it
+
+880
+00:36:56,389 --> 00:37:00,949
+just gives you an understanding of which
+
+881
+00:36:57,679 --> 00:37:02,569
+context in our genome are the
+
+882
+00:37:00,949 --> 00:37:04,609
+corresponding contexts and their genome
+
+883
+00:37:02,570 --> 00:37:06,890
+it actually gives you an excel file that
+
+884
+00:37:04,610 --> 00:37:09,320
+you can use to download if you ever want
+
+885
+00:37:06,889 --> 00:37:11,480
+to do you know comparative genomics
+
+886
+00:37:09,320 --> 00:37:13,670
+between two different genomes alright so
+
+887
+00:37:11,480 --> 00:37:16,659
+lots of good tools in there and we'll
+
+888
+00:37:13,670 --> 00:37:19,490
+leave it at that and probably put in a
+
+889
+00:37:16,659 --> 00:37:22,039
+another tutorial on some other
+
+890
+00:37:19,489 --> 00:37:24,549
+functionality on this as the eo3
+
+891
+00:37:22,039 --> 00:37:24,550
+thank you
+

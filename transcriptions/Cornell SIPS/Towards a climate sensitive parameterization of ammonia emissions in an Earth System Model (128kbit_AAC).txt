@@ -1,0 +1,928 @@
+[SPEAKER_00]: This is a production of Cornell
+University.
+[SPEAKER_03]: Thank you for inviting me.
+[SPEAKER_03]: And as you can see from my background,
+I'm not a soil scientist.
+[SPEAKER_03]: I study atmospheric chemistry and climate.
+[SPEAKER_03]: But for better or worse, sometimes one has
+to cross disciplinary boundaries.
+[SPEAKER_03]: And to see the problem solved,
+in other words, to look at ammonia
+[SPEAKER_03]: emissions on a global scale in a
+comprehensive Earth system model,
+[SPEAKER_03]: there was no soil scientist or
+biogeochemist or anyone that really wanted
+[SPEAKER_03]: to address this problem on global scales.
+[SPEAKER_03]: And so here I am.
+[SPEAKER_03]: Before I begin, I should acknowledge
+Stuart Riddick.
+[SPEAKER_03]: So Stuart was a postdoc here.
+[SPEAKER_03]: He later left for University of Cambridge.
+[SPEAKER_03]: So he initially formulated much of this
+model.
+[SPEAKER_03]: And he formulated its structure.
+[SPEAKER_03]: And also Dan Ward, who's sitting in the
+audience today, he's done a lot of work
+[SPEAKER_03]: since Stuart left, getting the model in
+shape and understanding how it behaves.
+[SPEAKER_03]: So both Stuart and Dan did a lot of the
+actual work on this project.
+[SPEAKER_03]: So before I begin, I thought I should list
+here my questions that I'm going to
+[SPEAKER_03]: address in this research.
+[SPEAKER_03]: So they're probably different than many of
+the talks you've heard in this seminar.
+[SPEAKER_03]: So this is my series.
+[SPEAKER_03]: And I work on the global scale.
+[SPEAKER_03]: And I'm interested in climate.
+[SPEAKER_03]: So the large-scale questions is,
+how do fertilizer manure and ammonia
+[SPEAKER_03]: emissions change the climate?
+[SPEAKER_03]: And how will climate impact these
+emissions?
+[SPEAKER_03]: How do these emissions modify the nitrogen
+cascade?
+[SPEAKER_03]: And how do the emissions change global
+pollution and health?
+[SPEAKER_03]: So again, I'm interested in the global
+scale.
+[SPEAKER_03]: And most of the work I do is in model
+simulations.
+[SPEAKER_03]: It's not in the laboratory.
+[SPEAKER_03]: It's not experimental in that sense.
+[SPEAKER_03]: So this is a picture of Paris,
+March 14, 2014.
+[SPEAKER_03]: And this pollution event was attributed to
+springtime fertilization.
+[SPEAKER_03]: It was very hot at that time in Paris.
+[SPEAKER_03]: It's about the springtime when people
+applied their fertilizer.
+[SPEAKER_03]: And it pretty much shut down the city for
+a week.
+[SPEAKER_03]: Cars could only drive on even or odd days.
+[SPEAKER_03]: Public transportation was free.
+[SPEAKER_03]: They decreased the driving speed limit.
+[SPEAKER_03]: Trucks were routed around the city.
+[SPEAKER_03]: So a lot of this has been blamed on
+fertilization and ammonia emissions.
+[SPEAKER_03]: So after introduction, I'm going to talk
+about the model.
+[SPEAKER_03]: I'm going to talk about some of the
+nitty-gritty, get the results,
+[SPEAKER_03]: and then conclusions.
+[SPEAKER_03]: So for the background, as I'm sure many of
+you are aware, that the nitrogen input
+[SPEAKER_03]: into the Earth system has increased
+dramatically in the 20th century and has
+[SPEAKER_03]: increased really since Haber and Bosch
+invented the process for making ammonia
+[SPEAKER_03]: fertilizer.
+[SPEAKER_03]: And so one can see this increase
+especially here after about 1940.
+[SPEAKER_03]: And this increase has been thought to
+contribute to the large population
+[SPEAKER_03]: increase over the 20th century.
+[SPEAKER_03]: And incidentally, as I read a little bit
+about Haber, Haber was also not only
+[SPEAKER_03]: invented nitrogen, this process,
+but he also is known as the father of
+[SPEAKER_03]: chemical warfare.
+[SPEAKER_03]: He invented a lot of chemical weapons.
+[SPEAKER_03]: So he's an interesting character with
+pluses for humanity and definitely some
+[SPEAKER_03]: minuses.
+[SPEAKER_03]: So what's going to happen in the future?
+[SPEAKER_03]: And in the future, as the population
+increase, the feeling is that the demand
+[SPEAKER_03]: for nitrogen is also going to increase.
+[SPEAKER_03]: And so this shows a number of scenarios
+for nitrogen fertilizer consumption.
+[SPEAKER_03]: So this is ANSET 2100.
+[SPEAKER_03]: And these scenarios are driven by
+population growth, shown here in red,
+[SPEAKER_03]: biofuels shown in green, and then
+decreasing the emissions as efficiency in
+[SPEAKER_03]: agriculture, food equities increasing.
+[SPEAKER_03]: So we don't quite know what's going to
+happen in the future.
+[SPEAKER_03]: So these are the type of scenarios that
+are used in climate models.
+[SPEAKER_03]: This is how the climate models work to
+predict the future, is there's likely
+[SPEAKER_03]: going to be an increase in nitrogen
+fertilizer consumption.
+[SPEAKER_03]: And if you look in what's input into most
+climate models, the ammonia emissions are
+[SPEAKER_03]: like this, reflecting this increase in
+nitrogen, but this neglects the impact of
+[SPEAKER_03]: climate on the emissions.
+[SPEAKER_03]: So ammonia emissions are very sensitive to
+climate.
+[SPEAKER_03]: If you add the impact of climate,
+then might guess that the ammonia
+[SPEAKER_03]: emissions increase by almost a factor of
+two.
+[SPEAKER_03]: So this impact of agriculture and the
+increase of nitrogen emissions is quite a
+[SPEAKER_03]: bit different than what one expects from
+industry and cars.
+[SPEAKER_03]: And here, almost all the scenarios expect
+the other component or the main component
+[SPEAKER_03]: of nitrogen input into the system to
+decrease.
+[SPEAKER_03]: And this is because already industrial
+countries have decreased the amount of NOx
+[SPEAKER_03]: emitted into the air for air pollution
+regions.
+[SPEAKER_03]: And it's expected that other countries
+too, for example, China, will also follow
+[SPEAKER_03]: along suit and decrease their emissions of
+NOx into the atmosphere.
+[SPEAKER_03]: So in the future, fertilizer is likely to
+increase.
+[SPEAKER_03]: Ammonia emissions due to fertilizer are
+likely to increase.
+[SPEAKER_03]: And NOx emissions, are likely to decrease,
+like that's the current thinking.
+[SPEAKER_03]: So this is a figure of the nitrogen
+cascade.
+[SPEAKER_03]: And nitrogen is essentially put into the
+system, largely into the farms in terms of
+[SPEAKER_03]: fertilizer.
+[SPEAKER_03]: It's also manure here and in terms of
+combustion.
+[SPEAKER_03]: And this is mostly in terms of NOx.
+[SPEAKER_03]: So the nitrogen, so the ammonia emissions
+from the farms are estimated to be about
+[SPEAKER_03]: 40 teragrams per year.
+[SPEAKER_03]: The nitrogen ammonia is evaporated off
+from the farms and then is cascaded down
+[SPEAKER_03]: in the nitrogen cascade and it lands on
+forests, natural ecosystems, et cetera,
+[SPEAKER_03]: as you go down.
+[SPEAKER_03]: So to understand the nitrogen cascade,
+to be able to simulate it, you have to get
+[SPEAKER_03]: these ammonia emissions correct from the
+farm.
+[SPEAKER_03]: And one can see that there are of greater
+importance than the combustion emissions.
+[SPEAKER_03]: And they're meant to increase in the
+future, whereas these are meant to
+[SPEAKER_03]: decrease.
+[SPEAKER_03]: So getting these, getting ammonia
+emissions correct is an important part of
+[SPEAKER_03]: being able to simulate the future nitrogen
+cascade.
+[SPEAKER_03]: What does nitrogen do to climate?
+[SPEAKER_03]: So in this figure here, I showed the
+radiative forcing of various species on
+[SPEAKER_03]: the climate.
+[SPEAKER_03]: So this is essentially, you put these
+species into the atmosphere and you look
+[SPEAKER_03]: at the change in energy balance at the
+Earth's surface due to these species.
+[SPEAKER_03]: And one can see that the change in energy
+balance from pre-industrial to 2011 is
+[SPEAKER_03]: estimated to be about 2.3 watts per meter
+squared on the Earth's surface,
+[SPEAKER_03]: according to this diagram.
+[SPEAKER_03]: Now this is known as the radiative
+forcing.
+[SPEAKER_03]: Where does nitrogen come into this?
+[SPEAKER_03]: Nitrogen is a form of fertilizer.
+[SPEAKER_03]: And it's estimated that because the
+nitrogen emissions have increased,
+[SPEAKER_03]: that more CO2 has been uptaken by the
+atmosphere.
+[SPEAKER_03]: And so this has changed to radiative
+forcing by between five and 10%.
+[SPEAKER_03]: And to all emissions associated with
+fertilizer use, it's changed to radiative
+[SPEAKER_03]: forcing by about 0.17.
+[SPEAKER_03]: Nox emissions, through its atmospheric
+count, by chemistry decreases methane and
+[SPEAKER_03]: increases ozone, associated changes in
+atmospheric forcing.
+[SPEAKER_03]: And then the ammonia emissions itself,
+ammonia readily forms an aerosol in the
+[SPEAKER_03]: atmosphere.
+[SPEAKER_03]: Aerosols tend to be reflective and this
+has acted to cool the Earth's surface.
+[SPEAKER_03]: So the nitrogen emissions have a lot of
+climate effects from warming to cooling.
+[SPEAKER_03]: And probably one of the most important
+impacts is in the aerosols.
+[SPEAKER_03]: Aerosols are particulates in the air that
+essentially cool the Earth.
+[SPEAKER_03]: And if you look at various years,
+so this goes from 2000 to 2100,
+[SPEAKER_03]: this is from simulation.
+[SPEAKER_03]: And it's projected that by 2100 these
+yellow line here, which is ammonia nitrate
+[SPEAKER_03]: emissions, ammonia nitrate aerosols will
+be the dominant aerosol species.
+[SPEAKER_03]: So right now the dominant species is
+sulfur.
+[SPEAKER_03]: It's projected that sulfur will decrease
+as the air is cleaned up over China and
+[SPEAKER_03]: other regions and that ammonia nitrates
+will become the dominant aerosol type,
+[SPEAKER_03]: which acts to cool the Earth.
+[SPEAKER_03]: Okay,
+[SPEAKER_03]: so in the beginning of the talk was input
+of ammonia emissions into an Earth system
+[SPEAKER_03]: model.
+[SPEAKER_03]: And it could be that some of you are not
+really familiar with what we mean by an
+[SPEAKER_03]: Earth system model.
+[SPEAKER_03]: So here's kind of a timeline of how
+they're developed.
+[SPEAKER_03]: So in 1896, 1900, using hand calculations,
+Arrhenius predicted five to six degree
+[SPEAKER_03]: warming for double CO2.
+[SPEAKER_03]: And then it waited almost a century till
+general circulation models were able to
+[SPEAKER_03]: include double CO2.
+[SPEAKER_03]: And the difference between a hand
+calculation and a general circulation
+[SPEAKER_03]: model, larger model of the Earth and ocean
+was they allowed feedback due to water
+[SPEAKER_03]: vapor and clouds, although generally these
+models got about the same result as
+[SPEAKER_03]: Arrhenius got by hand.
+[SPEAKER_03]: And then later on, okay, you can predict
+the climate of the 20th century until you
+[SPEAKER_03]: allow for the cooling due to aerosol
+scattering.
+[SPEAKER_03]: These were included in the late 1990s into
+these models.
+[SPEAKER_03]: And then around the early 2000,
+the carbon cycle was incorporated,
+[SPEAKER_03]: because if you add CO2 to the atmosphere,
+it's taken up, about half of it's taken up
+[SPEAKER_03]: by the ocean and the land.
+[SPEAKER_03]: And so this allows, if you want to include
+a transient response, if you want to
+[SPEAKER_03]: simulate the climate from now until 2100,
+you need to incorporate carbon cycle.
+[SPEAKER_03]: And if you incorporate carbon cycle,
+you need nitrogen.
+[SPEAKER_03]: But nitrogen emissions were generally not
+simulated.
+[SPEAKER_03]: And ammonia emissions were generally not
+simulated in these models, which is where
+[SPEAKER_03]: the study comes in.
+[SPEAKER_03]: Okay.
+[SPEAKER_03]: So now I'm going to start talking about
+the ammonia emission model in the middle
+[SPEAKER_03]: of a Earth system model.
+[SPEAKER_03]: The Earth system model is essentially,
+it's a numerical model.
+[SPEAKER_03]: It's formulated as a number of grid
+squares like here.
+[SPEAKER_03]: So they range in the horizontal and in the
+vertical.
+[SPEAKER_03]: And each square here, each of these grid
+squares, we have a model, a
+[SPEAKER_03]: parameterization that simulates ammonia
+emissions.
+Okay.
+[SPEAKER_03]: So that's where, so this is how it fits
+into this large scale model.
+[SPEAKER_03]: And these are the questions I remind you
+of the questions I want to address from
+[SPEAKER_03]: the beginning.
+[SPEAKER_03]: And these are global questions.
+[SPEAKER_03]: How does ammonia emissions influence
+climate?
+[SPEAKER_03]: So the idea is to take a, essentially a
+process level model by extend it to global
+[SPEAKER_03]: scales.
+[SPEAKER_03]: And to do this, we have to simplify local
+details to know the global simulation.
+[SPEAKER_03]: So we can't put all the details in this
+kind of model.
+[SPEAKER_03]: Many of the details are not available
+globally.
+[SPEAKER_03]: It's very hard to get details of crop
+type, soil type, et cetera, fertilizer
+[SPEAKER_03]: day, et cetera, globally.
+[SPEAKER_03]: And the highly complex regional models are
+not appropriate for global simulations
+[SPEAKER_03]: because the global simulations were
+simulating many things.
+[SPEAKER_03]: They're simulating the ocean, the
+atmosphere, aerosols, et cetera.
+[SPEAKER_03]: So we have to simplify the model.
+[SPEAKER_03]: We want to base this type of model in
+physics and chemistry to the extent
+[SPEAKER_03]: possible, because things that are based on
+imperial parameterizations won't be
+[SPEAKER_03]: sensitive to changes in temperatures,
+changes in precipitation.
+[SPEAKER_03]: So if we base it on basic physics and
+chemistry, then we think we can
+[SPEAKER_03]: incorporate the changes due to
+precipitation and changes in temperature.
+[SPEAKER_03]: Modeling is an iterative procedure.
+[SPEAKER_03]: I think it's important to remember that.
+[SPEAKER_03]: I've talked about modeling here at
+Cornell, and many times people ask,
+[SPEAKER_03]: well, it's too complicated.
+[SPEAKER_03]: How can you simulate that?
+[SPEAKER_03]: Forget it.
+[SPEAKER_03]: And the thing to recognize is that,
+OK, if you don't simulate it, it's not
+[SPEAKER_03]: going to be in there.
+[SPEAKER_03]: So you can simulate it to 0th order,
+and you have some idea of how it's going,
+[SPEAKER_03]: and you can improve it.
+[SPEAKER_03]: So it's good to start somewhere.
+[SPEAKER_03]: And so I'm interested in examining the
+response of the emissions to force and
+[SPEAKER_03]: changes in climate, temperature,
+precipitation, and eventually changes in
+[SPEAKER_03]: management processes.
+[SPEAKER_03]: Incidentally, if anyone has any questions,
+ask me as they go.
+[SPEAKER_03]: I'd just like to contrast the model I'm
+going to present with a standard model.
+[SPEAKER_03]: So to most ammonia emissions in global
+models are based on emission factors.
+[SPEAKER_03]: So for example, you take the dairy cattle,
+you take the kilogram nitrogen per head
+[SPEAKER_03]: per year, you multiply it by the ammonia
+loss, and you get a number.
+[SPEAKER_03]: And that's what you stick as your
+emissions in the model.
+[SPEAKER_03]: And traditionally, these have been split
+into one region, into two different
+[SPEAKER_03]: regions, depending on whether the
+agricultural practices were relevant for
+[SPEAKER_03]: developed countries or developing
+countries.
+[SPEAKER_03]: So the standard type of models people have
+used to predict global nitrogen,
+[SPEAKER_03]: global ammonia emissions have not included
+any dependence on temperature or rainfall.
+[SPEAKER_03]: So what we do is we take a fertilizer
+amount, or manure amount, and we know this
+[SPEAKER_03]: fairly well.
+[SPEAKER_03]: There have been some studies publishing
+nitrogen in fertilizer and nitrogen in
+[SPEAKER_03]: manure globally.
+[SPEAKER_03]: And we take this amount.
+[SPEAKER_03]: And we feed it into a model for fertilizer
+manure.
+[SPEAKER_03]: And then it can go three ways.
+[SPEAKER_03]: The nitrogen in there can go to wash off
+if it rains.
+[SPEAKER_03]: It can go into emissions.
+[SPEAKER_03]: And the emissions depend on the
+meteorology.
+[SPEAKER_03]: They depend on the wind speed and the
+temperature and the surface roughness.
+[SPEAKER_03]: So they depend on the bandular turbulence.
+[SPEAKER_03]: And temperature.
+[SPEAKER_03]: Or the nitrogen incorporated into
+fertilizer and manure can go into the land
+[SPEAKER_03]: model, which is another part of this
+larger system model.
+[SPEAKER_03]: And within the land model, the nitrogen is
+a portion to vegetation, to soil organic
+[SPEAKER_03]: matter.
+[SPEAKER_03]: It goes up and it denitrifies.
+[SPEAKER_03]: It can go into leaching runoff.
+[SPEAKER_03]: It can go into fires, et cetera.
+[SPEAKER_03]: So this is the base model that's already
+incorporated.
+[SPEAKER_03]: And we're adding this parameterization on
+top of it.
+[SPEAKER_03]: Then we need another important thing in
+these large scale models is to conserve
+[SPEAKER_03]: carbon and nitrogen.
+[SPEAKER_03]: So when you add fertilizer, this is new
+nitrogen created.
+[SPEAKER_03]: So you don't have to worry about that.
+[SPEAKER_03]: But for manure, manure comes from nitrogen
+that's eaten from the plants.
+[SPEAKER_03]: So you have cows eat plants.
+[SPEAKER_03]: They excrete manure.
+[SPEAKER_03]: And then you have to take the carbon and
+nitrogen out of the plants to make the
+[SPEAKER_03]: manure.
+[SPEAKER_03]: So these type of models is very important
+to conserve carbon and nitrogen,
+[SPEAKER_03]: because you want to look at how the
+budgets change.
+[SPEAKER_03]: OK.
+[SPEAKER_03]: This is a cow for Stewart.
+[SPEAKER_03]: Stewart is Scottish, so I think it's a
+Scottish cow.
+[SPEAKER_03]: So what we've done, if we have a pool of
+ammonical nitrogen here, as I said,
+[SPEAKER_03]: this can wash off.
+[SPEAKER_03]: It can go to gas.
+[SPEAKER_03]: Or it can go into the land model to the
+nitrogen pools here.
+[SPEAKER_03]: Fertilizer goes into this pool,
+as does manure.
+[SPEAKER_03]: And manure is divided into three separate
+pools, depending on how fast it's broken
+[SPEAKER_03]: down by bacteria.
+[SPEAKER_03]: And then again, there's a cycle from the
+land model back to the plants to conserve
+[SPEAKER_03]: the carbon and nitrogen from the manure.
+[SPEAKER_03]: 10, total ammonical nitrogen.
+OK.
+[SPEAKER_03]: So for fertilizer, it goes into a pool.
+[SPEAKER_03]: So you add the fertilizer to it.
+[SPEAKER_03]: It goes into this pool.
+[SPEAKER_03]: This quickly decays.
+[SPEAKER_03]: It depends on the temperature,
+how fast it decays.
+[SPEAKER_03]: And it goes into tan pool.
+[SPEAKER_03]: For simplicity, we only apply the
+fertilizer towards the beginning of the
+[SPEAKER_03]: growing season when planting conditions
+for corn are met.
+[SPEAKER_03]: And this is determined from meteorology.
+[SPEAKER_03]: So if it gets warmer in the spring,
+this fertilization application will occur
+[SPEAKER_03]: warmer.
+[SPEAKER_03]: Warm years will occur at different times
+than cold years.
+[SPEAKER_03]: And throughout, we don't consider
+agriculture.
+[SPEAKER_03]: We don't consider agricultural practices
+in the model.
+[SPEAKER_03]: So agricultural management is going to
+have to be added on at a later stage.
+OK.
+[SPEAKER_03]: Manure.
+[SPEAKER_03]: So as I said, it goes into three different
+pools.
+[SPEAKER_03]: This is a tan pool here.
+[SPEAKER_03]: These pools, these available, resistant,
+unavailable decay at different rates.
+[SPEAKER_03]: They break down at different weight
+grades, depending on temperature.
+[SPEAKER_03]: So one day for this available pool,
+much longer for this resistant pool.
+[SPEAKER_03]: And this unavailable pool essentially gets
+incorporated into the soils.
+[SPEAKER_03]: We assume the manure is spread on the
+fields continually throughout the year.
+[SPEAKER_03]: And again, this is a place where we
+decided not to consider agricultural
+[SPEAKER_03]: practices, putting on the fields a few
+times, or keeping the cattle in
+[SPEAKER_03]: stockyards, et cetera.
+[SPEAKER_03]: We just assumed it was spread continually
+onto the fields.
+[SPEAKER_03]: OK.
+[SPEAKER_03]: And then the tan pool, what goes on in
+here?
+[SPEAKER_03]: We essentially have an equation for the
+ammonia gas that's in equilibrium within a
+[SPEAKER_03]: water solution within this pool.
+[SPEAKER_03]: So the gas depends on the amount of N in
+this pool.
+[SPEAKER_03]: And then there's some rate constants below
+it depends on the pH and some Henry's law
+[SPEAKER_03]: rate constants as given here.
+[SPEAKER_03]: And it depends on the amount of water.
+[SPEAKER_03]: In the pool.
+[SPEAKER_03]: So we have to predict the amount of water
+also in this tan pool.
+[SPEAKER_03]: And the rate equations are such that the
+gas, the amount of gas emitted increases
+[SPEAKER_03]: exponentially with temperature.
+[SPEAKER_03]: So there's an exponential temperature
+increase here.
+[SPEAKER_03]: As this warms, it becomes less soluble to
+ammonia.
+[SPEAKER_03]: And there's more ammonia gas sitting right
+on the boundary of the pool.
+[SPEAKER_03]: OK.
+[SPEAKER_03]: Let's do this.
+[SPEAKER_03]: The emissions are essentially proportional
+to the amount of gas sitting on the
+[SPEAKER_03]: boundary of the tan pool minus the amount
+in the atmosphere divided by some
+[SPEAKER_03]: resistances.
+[SPEAKER_03]: OK.
+[SPEAKER_03]: And then as we take the wash off from the
+global news model, runoff from the tan
+[SPEAKER_03]: pool, and then there's conversion from the
+tan pool to the soil pool, which we simply
+[SPEAKER_03]: account for as diffusion, either of
+ammonium or nitrate.
+[SPEAKER_03]: And they have different diffusion
+rates.
+[SPEAKER_03]: OK.
+[SPEAKER_03]: So I think I talked about these
+assumptions.
+[SPEAKER_03]: Let's go on to the results.
+[SPEAKER_03]: So this is a distribution from Potter et
+al.
+[SPEAKER_03]: 2010 of nitrogen from manure and nitrogen
+from fertilizer.
+[SPEAKER_03]: And one can see for both manure and
+fertilizer, they are Europe, India,
+[SPEAKER_03]: China.
+[SPEAKER_03]: Midwest here are areas of heavy
+application.
+[SPEAKER_03]: And then from manure, it brings in a
+number of other areas.
+[SPEAKER_03]: Brazil here, Sub-Saharan Africa,
+across this region here.
+[SPEAKER_03]: OK.
+[SPEAKER_03]: So this is used as input to the model.
+[SPEAKER_03]: And then we see what happens.
+[SPEAKER_03]: And so we predict nitrogen emissions.
+[SPEAKER_03]: This is the 10-year average in the model.
+[SPEAKER_03]: This is from manure.
+[SPEAKER_03]: This is from fertilizer.
+[SPEAKER_03]: And again, for the nitrogen emissions,
+you can see these hot spots over India and
+[SPEAKER_03]: China.
+[SPEAKER_03]: You can see hot spots here over this part
+of Africa, India, et cetera.
+[SPEAKER_03]: And this is because the emissions increase
+exponentially with temperature.
+[SPEAKER_03]: So you warm the temperature.
+[SPEAKER_03]: You get more fraction of the tan pool that
+evaporates as emissions.
+[SPEAKER_02]: Yeah?
+[SPEAKER_02]: These are from
+[SPEAKER_03]: the surface, but the units are kilograms
+per year.
+[SPEAKER_03]: So they're surface emissions per unit area
+per year.
+[SPEAKER_03]: So what we do is we account for a canopy
+capture of the emissions.
+[SPEAKER_03]: So this is we're looking at the emissions
+from the land model.
+[SPEAKER_03]: Once we connect it to the atmosphere,
+then we'll be able to simulate how much
+[SPEAKER_03]: goes up and how much goes down.
+[SPEAKER_03]: So you're right.
+[SPEAKER_03]: There's a bidirectional flux of ammonia
+that's very hot.
+[SPEAKER_03]: Very hard to simulate.
+[SPEAKER_03]: So here we assume some canopy capture from
+some numbers in the literature.
+[SPEAKER_03]: But that is one of the assumptions that
+will be changed.
+[SPEAKER_03]: So here, again, you can see in these over
+India, sub-Saharan Africa, where it's
+[SPEAKER_03]: warm, a large percentage of the ammonia
+and the emissions are released as ammonia
+[SPEAKER_03]: gas into the atmosphere.
+[SPEAKER_01]: Yes?
+OK.
+OK.
+OK.
+[SPEAKER_01]: Right.
+[SPEAKER_03]: OK.
+[SPEAKER_01]: OK.
+[SPEAKER_03]: Well, I mean, there are two things in your
+question.
+[SPEAKER_03]: One is the database.
+[SPEAKER_03]: I mean, maybe.
+[SPEAKER_03]: I mean, this is one of the best databases
+available.
+[SPEAKER_03]: And what they did is to combine this,
+they counted animals in each country.
+[SPEAKER_03]: And they took information from FAO,
+et cetera.
+[SPEAKER_03]: And so this is the best, as far as I know,
+database for fertilizer and animals.
+[SPEAKER_03]: Now, maybe it might not be correct.
+[SPEAKER_03]: I don't know.
+[SPEAKER_03]: But this is exactly one of the problems in
+trying to apply these things globally is
+[SPEAKER_03]: that we just don't have that good data.
+[SPEAKER_03]: OK?
+[SPEAKER_03]: OK.
+[SPEAKER_03]: So evaluation.
+[SPEAKER_03]: How do we do?
+[SPEAKER_03]: I want to go over this pretty quickly.
+[SPEAKER_03]: Because here, I'm showing some evaluations
+from previous versions of the model,
+[SPEAKER_03]: though I expect it will be similar in this
+current version.
+[SPEAKER_03]: And this shows manure emissions versus
+model versus measure.
+[SPEAKER_03]: And the measurement, our score is 0.84.
+[SPEAKER_03]: And the average amount percent evaporation
+changes from 5% to 90%.
+[SPEAKER_03]: And one can tell this correlation between
+the model and measurements is largely
+[SPEAKER_03]: driven by this change in temperature.
+[SPEAKER_03]: When temperature is high, you get large
+emissions of ammonia, as might be
+[SPEAKER_03]: expected.
+[SPEAKER_03]: Correlation with fertilizer is not as
+good, but it's still significant.
+[SPEAKER_03]: And here, again, it's probably driven by
+temperature.
+[SPEAKER_03]: We've looked at different emissions of
+fertilizer at different latitudes.
+[SPEAKER_03]: OK.
+[SPEAKER_03]: I should say, as this has already been
+brought up, valuing ammonia emissions are
+[SPEAKER_03]: very difficult.
+[SPEAKER_03]: The concentrations are not
+well-characterized.
+[SPEAKER_03]: Emissions are bidirectional.
+[SPEAKER_03]: They can be up and down, depending on the
+time of day.
+[SPEAKER_03]: Ground-based measurements are challenging.
+[SPEAKER_03]: They're highly dependent on meteorology.
+[SPEAKER_03]: And the emissions are captured by the
+canopy and describe a rather complex
+[SPEAKER_03]: resistance model.
+[SPEAKER_03]: So when you make a model, you have to
+evaluate it.
+[SPEAKER_03]: But evaluation here is challenging.
+[SPEAKER_03]: So another way to evaluate a model is to
+compare it against other emission
+[SPEAKER_03]: inventories.
+[SPEAKER_03]: So in each of these diagrams is our
+emission inventory.
+[SPEAKER_03]: This is the most recent one.
+[SPEAKER_03]: This is one which has come from a data
+inversion.
+[SPEAKER_03]: This is another one which has developed
+within the last four years.
+[SPEAKER_03]: And this is a standard one used by global
+atmospheric fathers.
+[SPEAKER_03]: These are split between manure and
+fertilization emissions.
+[SPEAKER_03]: We can see that we, our emission
+inventory, is about all of them,
+[SPEAKER_03]: in fact, are about the same amount of
+nitrogen.
+[SPEAKER_03]: Our split between ammonia emissions from
+fertilizer and manure is a little bit
+[SPEAKER_03]: different than these two.
+[SPEAKER_03]: We show more fertilizer, less manure.
+[SPEAKER_03]: So it's between this one and this one by
+Edgar.
+[SPEAKER_03]: So we write right between.
+[SPEAKER_03]: I should say that all these inventories
+here, it's a great deal of uncertainty on
+[SPEAKER_03]: these global numbers.
+[SPEAKER_03]: We can look at different regions.
+[SPEAKER_03]: Our U.S.
+[SPEAKER_03]: emissions.
+[SPEAKER_03]: So this is us, us, and us.
+[SPEAKER_03]: China, notice that the scale is one,
+is to 12.
+[SPEAKER_03]: U.S.
+[SPEAKER_03]: and Europe is to 4.5.
+[SPEAKER_03]: So all of the emission inventories predict
+higher emissions in China than even over
+[SPEAKER_03]: the U.S.
+[SPEAKER_03]: And Europe, our emissions over the U.S.
+[SPEAKER_03]: are higher than these other inventories,
+largely because we have larger fertilizer
+[SPEAKER_03]: emissions.
+[SPEAKER_03]: Same with, and over Europe, where our
+manure emissions are a little bit lower
+[SPEAKER_03]: than some of these others.
+[SPEAKER_03]: But generally, considering what we're
+trying to do in this model, we're pretty
+[SPEAKER_03]: pleased with these results.
+[SPEAKER_03]: We're capturing the emissions within the
+range of the other emission inventories,
+[SPEAKER_03]: where there's a great deal there also.
+Yeah?
+[SPEAKER_03]: Yes, we do.
+[SPEAKER_03]: Yeah.
+[SPEAKER_03]: Yes.
+[SPEAKER_03]: Yeah.
+[SPEAKER_03]: So we assume 50% of the nitrogen is from
+urine, 50% from manure.
+[SPEAKER_03]: And then the manure piles have different
+rates of breakdown.
+[SPEAKER_03]: Okay, so, oops.
+[SPEAKER_03]: Okay, so once the manure is in this tent
+pool, then there are different ways it can
+[SPEAKER_03]: go.
+[SPEAKER_03]: It can volatilize to the atmosphere.
+[SPEAKER_03]: It's competed.
+[SPEAKER_03]: So if it's washed out a lot, it won't
+volatilize as much.
+[SPEAKER_03]: And so this shows the runoff from manure
+and runoff from fertilizer.
+[SPEAKER_03]: One can see the runoff in these models.
+[SPEAKER_03]: Again, as concentrated as one might expect
+in regions of high application and in
+[SPEAKER_03]: moist regions, Eastern U.S., Europe,
+China, India, shown here, fertilizer,
+[SPEAKER_03]: manure, and that's this percent runoff.
+[SPEAKER_03]: So again, it's these regions.
+[SPEAKER_03]: China, Europe has quite a high percent,
+Eastern U.S., and this region and over
+[SPEAKER_03]: Brazil in both fertilizer and manure.
+[SPEAKER_03]: So this is one of the things that we can
+use this model to do, is that in the
+[SPEAKER_03]: future, as precipitation changes,
+presumably these patterns of manure loss
+[SPEAKER_03]: due to runoff will also change in the
+future.
+[SPEAKER_01]: Yeah?
+[SPEAKER_03]: Yeah, so this is surface runoff.
+[SPEAKER_03]: There will be additional runoff from
+leaching once it gets, once the nitrogen
+[SPEAKER_03]: from there goes into soils, it can be
+runoff first.
+[SPEAKER_03]: But this is sort of the...
+[SPEAKER_03]: No, no, it's not.
+[SPEAKER_03]: So in another work, again, this is
+preliminary results from Cindy Nevesen et
+[SPEAKER_03]: al.
+[SPEAKER_03]: And what she's doing is looking at
+observed river export of nitrogen from
+[SPEAKER_03]: rivers around the world.
+[SPEAKER_03]: And we can also calculate this quantity in
+the model.
+[SPEAKER_03]: I mean, the calculation is indirect.
+[SPEAKER_03]: We need to know how the rivers run,
+how much of the nitrogen in the rivers is
+[SPEAKER_03]: denitrified.
+[SPEAKER_03]: But one can see it's a way of bounding.
+[SPEAKER_03]: It's another way of constraining these
+type of parameterizations in earth system
+[SPEAKER_03]: models by looking at the runoff in rivers
+where it sure is pretty good data.
+[SPEAKER_03]: Global fate of applied nitrogen.
+[SPEAKER_03]: Fertilizer.
+[SPEAKER_03]: The emissions are globally just under 25%.
+[SPEAKER_03]: The runoff is a little bit higher,
+and most of it goes into the soil.
+[SPEAKER_03]: For the manure, because the manure is
+applied slowly throughout the year,
+[SPEAKER_03]: it's not applied as quickly.
+[SPEAKER_03]: You see there's less ammonia emissions,
+less runoff, and more gets into the soil.
+[SPEAKER_03]: If anyone looks at developing countries or
+developed countries, developing countries
+[SPEAKER_03]: tend to occur where it's warmer.
+[SPEAKER_03]: And you can see that in developing
+countries that the emissions, ammonia
+[SPEAKER_03]: emissions, generally are higher than in
+these developed countries.
+[SPEAKER_03]: This is global, US, Europe, India,
+China.
+[SPEAKER_03]: So you can see Europe, there's quite a,
+in these calculations, there's quite a bit
+[SPEAKER_03]: high ammonia emissions.
+[SPEAKER_03]: So this may have to do partly with when we
+apply the fertilizer.
+[SPEAKER_00]: Yeah.
+[SPEAKER_03]: Yeah, this is largely temperature.
+[SPEAKER_03]: So we assume the soil, so it does have a
+significance, but we assume so far it's
+[SPEAKER_03]: seven, okay, because Stewart's assurance
+assured me that the pH of manure is about
+[SPEAKER_03]: seven, and a lot of soils are buffered to
+be about pH of seven.
+[SPEAKER_03]: But that is, I mean, it is definitely
+affected by soil pH, so we haven't
+[SPEAKER_03]: incorporated that.
+[SPEAKER_03]: That's a good question.
+Yeah.
+[SPEAKER_03]: Well, the losses implies most of the
+nitrogen put up, that implies that's where
+[SPEAKER_03]: the N-phase of the nitrogen from manure
+fertilizers, the soil organic matter.
+[SPEAKER_03]: Okay?
+[SPEAKER_03]: But it doesn't mean it's increasing,
+because so it can be lost from the soils
+[SPEAKER_03]: either by leaching, by denitrification,
+by forest fires, by other means,
+[SPEAKER_03]: okay?
+[SPEAKER_03]: So it's not a yearly increase,
+it's just, where is it going once it's in
+[SPEAKER_03]: the manure?
+[SPEAKER_02]: That's right, yeah.
+[SPEAKER_03]: Yeah, this green here is essentially
+leaving our model, and then it can go into
+[SPEAKER_03]: plants, it can be leached out,
+a number of other things.
+[SPEAKER_03]: Okay, and then one advantage of models is
+you can see what's happened over the last
+[SPEAKER_03]: 150 years, and this is the case for global
+manure, this amount applied, this is the
+[SPEAKER_03]: amount going into soils, runoff,
+and into emissions.
+[SPEAKER_03]: And so you can see over time that the
+amount going into soil has decreased,
+[SPEAKER_03]: as the amount going into emissions and
+runoff has increased over the last
+[SPEAKER_03]: percentage wise, over 150 years.
+[SPEAKER_03]: For fertilizer, we get quite a big
+different picture, fertilizers added all
+[SPEAKER_03]: at once, and in the beginning,
+when very low amounts of fertilizer added,
+[SPEAKER_03]: these calculations suggest that only a
+little bit, most of it was incorporated
+[SPEAKER_03]: into the soils, but as much larger
+quantities were added very quickly,
+[SPEAKER_03]: that less could be incorporated into
+soils, and larger percentages were going
+[SPEAKER_03]: into the air, as ammonia or into runoff.
+[SPEAKER_03]: Sensitivities, we've looked at some of
+them, I think in the interest of time.
+[SPEAKER_03]: I won't go over these.
+[SPEAKER_03]: I want to briefly review future work.
+[SPEAKER_03]: Obviously, agriculture management
+practices are important and can impact the
+[SPEAKER_03]: emissions fertilization dates,
+spreading practices, feed yards,
+[SPEAKER_03]: and this is a view of Sutton et al.,
+how one should do climate dependent
+[SPEAKER_03]: ammonia emissions.
+[SPEAKER_03]: Some of them should be onto the fields,
+as we did, some of it should be applied as
+[SPEAKER_03]: manure, where you might use a
+parameterization like ours.
+[SPEAKER_03]: Some of it goes into unidirectional
+emissions due to feed lots, and these
+[SPEAKER_03]: should probably be parameterized
+differently, because this is in a
+[SPEAKER_03]: controlled environment.
+[SPEAKER_03]: They're not immediately sensitive to
+rainfall or the temperature outside,
+[SPEAKER_03]: and these can be computed using emission
+factors.
+[SPEAKER_03]: There could be quite a bit of work adding
+more management practices, and even future
+[SPEAKER_03]: management practices, into such a model to
+see how emissions might change as a
+[SPEAKER_03]: function of climate.
+[SPEAKER_03]: Obviously, once we get the emissions into
+the atmosphere, then we can see what the
+[SPEAKER_03]: atmosphere does, and in the atmosphere,
+once we do that, there are many,
+[SPEAKER_03]: many ways to evaluate the model,
+many more ways to evaluate it.
+[SPEAKER_03]: You can evaluate against atmospheric
+measurements, against satellite data,
+[SPEAKER_03]: against wet deposition, against aerosol
+data, et cetera.
+[SPEAKER_03]: We're eager to look at how emissions will
+change in the changing world as the amount
+[SPEAKER_03]: of manure and fertilizer probably
+increases, as management practices change
+[SPEAKER_03]: and as the climate changes.
+[SPEAKER_03]: The conclusion, ammonia is poorly modeled
+in Earth system models, and I hope I made
+[SPEAKER_03]: the case that there is importance in being
+able to incorporate it in these models to
+[SPEAKER_03]: look at the impact of ammonia on climate,
+but also there's an importance of looking
+[SPEAKER_03]: at the impact of climate on ammonia
+emissions.
+[SPEAKER_03]: Emissions are expected to increase as the
+population grows, implications for
+[SPEAKER_03]: nitrogen cascade, for formation of
+aerosols, and there's implications,
+[SPEAKER_03]: which I didn't talk about, for global
+pollution and health.
+[SPEAKER_03]: Talked about climate-dependent global
+parameterization of the emissions,
+[SPEAKER_03]: responsive to temperature precipitation,
+it has the ability to conserve nitrogen,
+[SPEAKER_03]: carbon, and it suggests strong
+geographical and diurnal temperature
+[SPEAKER_03]: dependence.
+[SPEAKER_03]: So these I talked about, these are first
+steps, and it can obviously, there are
+[SPEAKER_03]: many improvements possible, and then there
+are numerous applications to better
+[SPEAKER_03]: understand the role of nitrogen as climate
+changes.
+[SPEAKER_03]: So I thank you for your attention.
+[SPEAKER_03]: I would, if any of you have feedback,
+I would very much appreciate it.
+[SPEAKER_03]: As I said, I'm not a soil scientist,
+but I would very much appreciate any
+[SPEAKER_03]: feedback from people who are in the field
+or know how this type of parameterization
+[SPEAKER_03]: could be improved.
+[SPEAKER_03]: And I'm going to have to run off to class
+in just a few minutes, but thanks for your
+[SPEAKER_03]: attention.
+[SPEAKER_03]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_03]: Thank you.
+[SPEAKER_03]: Thank you.
+[SPEAKER_03]: Thank you.
+Thank you.
+Thank you.
+Thank you.

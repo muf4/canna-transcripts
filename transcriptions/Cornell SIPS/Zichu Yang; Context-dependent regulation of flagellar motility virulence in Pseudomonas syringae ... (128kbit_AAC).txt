@@ -1,0 +1,1140 @@
+[SPEAKER_03]: This is a production of Cornell
+University.
+[SPEAKER_00]: So today, my talk, first, I want to thank
+Brian for his kind introduction.
+[SPEAKER_00]: It has always been a great pleasure for me
+to work in this lab since I was undergrad.
+[SPEAKER_00]: And I believe that will convey to you
+through my presentation.
+[SPEAKER_00]: So today, we're going to talk about
+utility regulation in this pathogenic
+[SPEAKER_00]: system.
+[SPEAKER_00]: And the first thing I want to touch on is
+to show you a little bit about this
+[SPEAKER_00]: bacteria.
+[SPEAKER_00]: So here, you have a picture of our
+rod-shaped pseudomonas cell.
+[SPEAKER_00]: This is a reginosa cell, unfortunately,
+not a syringae.
+[SPEAKER_00]: But this is the highest resolution I can
+find on the internet.
+[SPEAKER_00]: So you can see that we have a rod-shaped
+cell with polar flagella, which we'll
+[SPEAKER_00]: touch on in a minute.
+[SPEAKER_00]: But our species, Pseudomonas syringae is a
+plant, a pathogenic bacteria that has a
+[SPEAKER_00]: wide host range because there's over 60
+total passivars.
+[SPEAKER_00]: The model strand we're interested in is DC
+3000, which is a tomato pathogen,
+[SPEAKER_00]: but can also affect Arabdopsis as well as
+tomato.
+[SPEAKER_00]: This strain has been developed as a model
+strand, largely thanks to people in this
+[SPEAKER_00]: department on this very campus.
+[SPEAKER_00]: Because people like Alan Comer and Greg
+Martin we know a lot and a lot about their
+[SPEAKER_00]: type III secretion system and the
+effectors.
+[SPEAKER_00]: But today, I'm going to talk about not the
+virulence part of it, but the motility
+[SPEAKER_00]: part of it.
+[SPEAKER_00]: And I got into this because when I joined
+the lab back in 2017, Swingle Lab has
+[SPEAKER_00]: already been working on motility for a
+while.
+[SPEAKER_00]: And this is the result at the time when I
+joined the lab, where you have Pseudomonas
+[SPEAKER_00]: DC 3000 use this motility to evade plant
+immunity, especially the part of PTI,
+[SPEAKER_00]: which is where the plant are detecting
+flagella.
+[SPEAKER_00]: So without going too much into the detail
+about this model, which concerns a chapter
+[SPEAKER_00]: of my thesis that I won't be present here
+today, but will probably come up in my B
+[SPEAKER_00]: exam, I just want to say that at the time
+we already know a little bit about
+[SPEAKER_00]: motility control in DC 3000 has this
+ecological function.
+[SPEAKER_00]: So what motility are we talking about?
+[SPEAKER_00]: There are total five different types of
+motility that are present in bacteria.
+[SPEAKER_00]: And we're mostly concerned about swimming
+motility in this strain.
+[SPEAKER_00]: So several features of swimming motility
+I'd like to point out is one, it requires
+[SPEAKER_00]: the bacteria to be inside of a certain
+liquid or semi-liquid environment.
+[SPEAKER_00]: Two, it needs this flagellum, it needs
+flagellum as the main organ, if you would
+[SPEAKER_00]: say, or as a main structure it relies on
+to facilitate the movement.
+[SPEAKER_00]: And three, it is consuming energy.
+[SPEAKER_00]: The flagellum rotation relies on proton
+motor force to power itself, to generate
+[SPEAKER_00]: the torque and pull the bacteria forward.
+[SPEAKER_00]: Now, motility in bacteria in general has
+been topic of study for past half century
+[SPEAKER_00]: or more.
+[SPEAKER_00]: And the most well-known model of motility
+regulation in all of bacteria is
+[SPEAKER_00]: chemotaxis.
+[SPEAKER_00]: This is kind of an algorithm building the
+bacteria, if you would say, that follows a
+[SPEAKER_00]: very simple logic.
+[SPEAKER_00]: It always wants to improve the chemical
+environment for the bacteria.
+[SPEAKER_00]: And here I'm showing you that if you put a
+hypothetical scenario where you have from
+[SPEAKER_00]: cold color to warm color, the
+concentration of, say, a nutrient or some
+[SPEAKER_00]: kind of chemical the bacteria really
+likes, and you have our polar flagellum
+[SPEAKER_00]: bacteria, such as zoonomas, moving or
+swimming inside this environment.
+[SPEAKER_00]: So what you would observe in any case
+would be kind of a run and tumble model,
+[SPEAKER_00]: which describes the movement and the
+sudden break and then the disassociation
+[SPEAKER_00]: of all the polar flagellum and then
+reorientation at a random angle.
+[SPEAKER_00]: And it's also described as a bias random
+walk because the randomness of the break,
+[SPEAKER_00]: but also it's biased towards in such a way
+that when it's going above or when it's
+[SPEAKER_00]: climbing the gradient of the nutrient or
+the chemical it actually likes,
+[SPEAKER_00]: it has a lower probability of stop and
+reorient.
+[SPEAKER_00]: So the biased random walk well ended up
+help the bacteria move to a higher
+[SPEAKER_00]: concentration of the chemical that it
+actually likes.
+[SPEAKER_00]: So zoonomas is a well annotated strain.
+[SPEAKER_00]: It's one of the first fully sequenced
+plant pathogenic bacterium.
+[SPEAKER_00]: Thanks to that, we can fully transfer the
+knowledge we know on E.
+[SPEAKER_00]: coli and all other bacteria about this
+chemotaxis regulation into this strain.
+[SPEAKER_00]: Now this is a very complicated system and
+I won't go into much detail about it,
+[SPEAKER_00]: but all I want to show here is that we
+know what these genes are in our genome
+[SPEAKER_00]: and we can find them by any kind of like
+screening we have.
+[SPEAKER_00]: So let's touch a little bit on what
+motility can do in general.
+[SPEAKER_00]: The most basic function of motility in any
+bacteria is try to get to different
+[SPEAKER_00]: location where there are nutrients
+present.
+[SPEAKER_00]: And it's kind of like the two sides of the
+same coin that you can also kind of get
+[SPEAKER_00]: away from your claw mates.
+[SPEAKER_00]: So as a group of the same identical
+strands, you are evading competition with
+[SPEAKER_00]: your king.
+[SPEAKER_00]: And that way your group in general or
+overall will have a higher efficiency at
+[SPEAKER_00]: uptaking nutrients into your organism.
+[SPEAKER_00]: And help with reproduction and so on or
+other important functions.
+[SPEAKER_00]: So as I elude to a little bit earlier,
+our group has been working on the bacteria
+[SPEAKER_00]: using its motility to evade plant
+immunity.
+[SPEAKER_00]: So what other motility, what other
+functions can motility achieve in a plant
+[SPEAKER_00]: pathogenic bacteria?
+[SPEAKER_00]: Well, in our example, the plant,
+these are cells that get into plant
+[SPEAKER_00]: apoplasts.
+[SPEAKER_00]: And the challenge is facing there is that
+the PTI is detecting it.
+[SPEAKER_00]: The PTI is detecting using flagellating
+and so on.
+[SPEAKER_00]: So that adaptation, as our lab has
+previously found, is that it can use LGU
+[SPEAKER_00]: to downregulate motility as well as
+flagella synthesis there.
+[SPEAKER_00]: You can apply the same logic to other
+locations where the plant pathogenic
+[SPEAKER_00]: bacteria can land on, such as leaf surface
+before they enter the apoplast.
+[SPEAKER_00]: Steve Lindow's group in UC Berkeley has
+previously found that some of the
+[SPEAKER_00]: challenges plant pathogenic bacteria can
+face on top of leaf surface includes it
+[SPEAKER_00]: has very unevenly distributed nutrient.
+[SPEAKER_00]: And as we all know, if you're ever taken a
+30-10 or 40-10, you know that there is
+[SPEAKER_00]: also very limited entrance into apoplasts
+for any bacterial pathogen of plants.
+[SPEAKER_00]: So that could potentially be mitigated by
+chemotaxis.
+[SPEAKER_00]: There has been literature showing that
+bacteria can use some kind of organic acid
+[SPEAKER_00]: as a signal they're tracking to find those
+natural openings and wounds.
+[SPEAKER_00]: Well, but there are also other known
+challenges that are present on the plant
+[SPEAKER_00]: surface, such as the extra environmental
+hazard from the sun, the UV lights,
+[SPEAKER_00]: and also Steve Lindow's group has also
+shown that there's very high osmotic
+[SPEAKER_00]: stress on top of that.
+[SPEAKER_00]: And another thing that haven't been
+discussed a lot in the literature is on
+[SPEAKER_00]: top of plant surface, you can have the
+competition with the epiphyte microbiome.
+[SPEAKER_00]: And we don't yet know a whole lot about
+what the bacteria is doing to deal with or
+[SPEAKER_00]: to cope with those challenges.
+[SPEAKER_00]: But as a small spoiler, I think we have
+found some evidence in our screening.
+[SPEAKER_00]: And later I will show you the data that
+they might have some mechanism already in
+[SPEAKER_00]: place for that.
+[SPEAKER_00]: In addition to that, I'd like to also
+introduce to you to the idea that desis
+[SPEAKER_00]: resultant is a social bacteria in that it
+engages in social behavior, such as
+[SPEAKER_00]: cell-cell communication.
+[SPEAKER_00]: Here I'm showing you that it does harbor a
+typical chromosome system.
+[SPEAKER_00]: This is how the bacteria is most famously
+known to interact with its own species as
+[SPEAKER_00]: well as some other species.
+[SPEAKER_00]: And they can co-coordinate expression of
+genes and so on.
+[SPEAKER_00]: And desis resultant also engage in
+production of public goods.
+[SPEAKER_00]: Such as surfactant and siderophore.
+[SPEAKER_00]: So here you are seeing the typical or the
+most famous yellow pigment pyoveridin in
+[SPEAKER_00]: our strain.
+[SPEAKER_00]: So with all that, I'd like to present a
+question I'd like to discuss today.
+[SPEAKER_00]: That is, what ecological functions can
+desis resultant achieve with its motility
+[SPEAKER_00]: control?
+[SPEAKER_00]: Because now we already kind of know it can
+do a little bit of dealing with the host,
+[SPEAKER_00]: maybe help with its virulence.
+[SPEAKER_00]: And with that, I'd like to present the
+first two chapters of my thesis.
+[SPEAKER_00]: The first project I want to get into is a
+TN-seq-based screen of novel swimming
+[SPEAKER_00]: motility genes in desis resultant.
+[SPEAKER_00]: This is a collaborative project between
+our lab and the Philadelphia lab,
+[SPEAKER_00]: mainly with Dr. Tyler Hellman,
+who joined us a couple of years back as a
+[SPEAKER_00]: postdoc.
+[SPEAKER_00]: So at the time, we already know that we
+want to find novel motility regulators in
+[SPEAKER_00]: desis resultant because the LGU,
+we have done a couple screenings with the
+[SPEAKER_00]: LGU project and with various success.
+[SPEAKER_00]: And Tyler at the time joined us with a
+very powerful tool that is TN-seq.
+[SPEAKER_00]: So what exactly is TN-seq?
+[SPEAKER_00]: Well, TN-seq in its essentiality is asking
+the same questions over and over again
+[SPEAKER_00]: across a genome.
+[SPEAKER_00]: That is, if a strain has a point mutation
+introduced by transposon insertion,
+[SPEAKER_00]: in a given locus in the genome,
+does that strain grow better or worse
+[SPEAKER_00]: under any type of environmental selection
+you impose or not impose?
+[SPEAKER_00]: So you can imagine that we have two
+strands here, each represented here.
+[SPEAKER_00]: Those black dashes represent their
+relative abundance or how many copies they
+[SPEAKER_00]: are in a population.
+[SPEAKER_00]: The first strand we have here has an
+insertion on the tip of gene A.
+[SPEAKER_00]: And the second strand we're talking about
+here has an insertion that at the end of
+[SPEAKER_00]: the gene B.
+[SPEAKER_00]: So what you can do here is you can pull
+this library population, pull them,
+[SPEAKER_00]: and let them go through some kind of
+selection.
+[SPEAKER_00]: And after they grow, you can sample the
+posterior or the after selection
+[SPEAKER_00]: population and then count the relative
+abundance of the copies of each of those
+[SPEAKER_00]: strands.
+[SPEAKER_00]: And with that, you can see that gene A,
+in this hypothetical scenario,
+[SPEAKER_00]: its abundance decreased after the
+selection, whereas gene B remained more or
+[SPEAKER_00]: less the same.
+[SPEAKER_00]: And with that, we can say, oh,
+gene A, the loss of function in gene A is
+[SPEAKER_00]: preventing the growth of that strand under
+our selection criteria.
+[SPEAKER_00]: So with that, we can scale it up and make
+it a full screen.
+[SPEAKER_00]: Instead of just one strand per gene,
+you can have multiple now.
+[SPEAKER_00]: And so for each one of those strands,
+you can calculate the relative abundance
+[SPEAKER_00]: of the before and after our selection in
+the respective populations.
+[SPEAKER_00]: And with all of those strand fineness or
+the strand relative abundance,
+[SPEAKER_00]: you can calculate the gene average
+fineness.
+[SPEAKER_00]: So that will be a ratio that is either
+below 1, equal to 1, or above 1.
+[SPEAKER_00]: And this helps us to establish a link
+between a growth genotype to a gene's
+[SPEAKER_00]: function to a gene's contribution to a
+selected function.
+[SPEAKER_00]: And this selection is totally arbitrary.
+[SPEAKER_00]: We can manipulate it as we want.
+[SPEAKER_00]: And how to come to us with this method,
+as well as a library that has been
+[SPEAKER_00]: generated by Dr. Jennifer Louise in UC
+Berkeley, which has been mapped but
+[SPEAKER_00]: hasn't, unfortunately, been published.
+[SPEAKER_00]: And another note here is that in the data
+I will present to you in the following
+[SPEAKER_00]: slides, those ratios will be converted by
+log scale.
+[SPEAKER_00]: So everything that's below 1 will now be
+negative, and everything above 1 will be
+[SPEAKER_00]: positive.
+[SPEAKER_00]: So now we have this powerful tool.
+[SPEAKER_00]: The next thing to figure out is how do we
+link that to motility, because we're
+[SPEAKER_00]: essentially interested in motility.
+[SPEAKER_00]: Motility contributing genes.
+[SPEAKER_00]: Well, at the time when I joined the lab,
+this method of using soft obverse swimming
+[SPEAKER_00]: media to quantify the swimming phenotype
+is already long established in the lab.
+[SPEAKER_00]: And also, it's a standard method in the
+field.
+[SPEAKER_00]: So what you do here is you just inoculate
+your bacterial strand in the middle of a
+[SPEAKER_00]: 0.3% auger plate.
+[SPEAKER_00]: In this case, I'm showing you a minimal
+medium that is MOBS-based.
+[SPEAKER_00]: And you let it grow, or this is resolved
+in this particular media recipe.
+[SPEAKER_00]: It really takes 48 hours for you to get to
+the size of a decent measurement.
+[SPEAKER_00]: And if we're dealing with some kind of
+mutant that does not actually move or
+[SPEAKER_00]: somehow have impaired motility,
+the colony simply does not expand from the
+[SPEAKER_00]: inoculation point.
+[SPEAKER_00]: So the logic of this assay is that low
+motility strands cannot move far from the
+[SPEAKER_00]: inoculation point.
+[SPEAKER_00]: So how do we incorporate that and the
+TN-seq method to make a screen?
+[SPEAKER_00]: Well, the most easiest thing to do is just
+brute force and fuse them together.
+[SPEAKER_00]: So that's what we started doing.
+[SPEAKER_00]: So we take the library culture,
+and we make an inoculum from that,
+[SPEAKER_00]: which is easy.
+[SPEAKER_00]: And we take the time zero sample,
+as you do in all TN-seq experiments.
+[SPEAKER_00]: And we just inoculate and let the swimming
+assay go with a library.
+[SPEAKER_00]: So this is not a single strand,
+but a pool of bacterial strands that each
+[SPEAKER_00]: has a single mutation somewhere in the
+genome.
+[SPEAKER_00]: And we let them grow.
+[SPEAKER_00]: We sample everything that's in the red
+circle, which is a whole colony.
+[SPEAKER_00]: And we use that as our samples to repeat
+this process.
+[SPEAKER_00]: And in addition to that, we also keep a
+sample for DNA extraction and BAR-seq.
+[SPEAKER_00]: So in that, you can see that the selection
+we're imposing here is not much.
+[SPEAKER_00]: It's just the growth in the media recipe
+we provide them, as well as the swimming
+[SPEAKER_00]: auger.
+[SPEAKER_00]: So the expected hits we are looking for
+here is that we're looking for nutrient
+[SPEAKER_00]: restrictions, because this is a minimal
+medium, and also metabolism genes,
+[SPEAKER_00]: and help them going through those
+nutrients.
+[SPEAKER_00]: But we're also thinking, because this is a
+nutrient-limiting environment,
+[SPEAKER_00]: so motility will help in this case.
+[SPEAKER_00]: And we're not sure how many of those we
+will find.
+[SPEAKER_00]: So let's just roll with this and set up a
+baseline.
+[SPEAKER_00]: But in the end, what we found is we
+actually hit quite a lot of motility
+[SPEAKER_00]: genes.
+[SPEAKER_00]: So here I'm showing you the four tiers of
+flagellum motility regulation that is
+[SPEAKER_00]: present in pseudomonas aeruginosa.
+[SPEAKER_00]: And I'm transplanting that here in DC3000
+genome.
+[SPEAKER_00]: So here you can see some of them are in
+white.
+[SPEAKER_00]: Those are the ones that are missing
+homologs in our strand.
+[SPEAKER_00]: The ones in gray are the ones we didn't
+find in our mutant library at all.
+[SPEAKER_00]: And the red ones are the ones that we
+found across the seven replicates we did
+[SPEAKER_00]: with seven total passages we did.
+[SPEAKER_00]: At any point of time, they have a
+significant penalty for loss of function.
+[SPEAKER_00]: So that means those strands, if the
+bacteria has a loss of function in any of
+[SPEAKER_00]: those genes, they're not growing,
+or we're not getting them from the final
+[SPEAKER_00]: samples.
+[SPEAKER_00]: Black means exactly opposite of that,
+meaning that they are always being
+[SPEAKER_00]: recovered.
+[SPEAKER_00]: So we found a total of 34 out of 47 of
+this.
+[SPEAKER_00]: And that is pretty nice.
+[SPEAKER_00]: But also, we're still facing the problem
+that we need to distinguish them from the
+[SPEAKER_00]: nutrient restriction genes and metabolism
+genes.
+[SPEAKER_00]: So to counter that, after a long time of
+trying to figure out what to do,
+[SPEAKER_00]: I came up with this scheme.
+[SPEAKER_00]: I think it's intuitive, at least,
+is that if we add another layer of
+[SPEAKER_00]: selection, what if now I select against
+motility?
+[SPEAKER_00]: If the environment itself is selecting for
+motility and I then add an arbitrary
+[SPEAKER_00]: selection against motility, doesn't that
+mean only the motility genes will respond
+[SPEAKER_00]: to this selection?
+[SPEAKER_00]: They are still growing in the same
+nutrient condition and all, so if those
+[SPEAKER_00]: genes are having high finish, phenotypes,
+they should be present in both groups.
+[SPEAKER_00]: But if there is a difference between those
+two selection schemes, those should be the
+[SPEAKER_00]: response I detect from just the motility
+contributing genes.
+[SPEAKER_00]: So we went with this model.
+[SPEAKER_00]: And the first thing we expect is,
+well, now we're selecting against
+[SPEAKER_00]: motility, so the motility should decrease
+on population level.
+[SPEAKER_00]: And voila, they did, which is pretty neat.
+[SPEAKER_00]: And when we then look into how the finish
+for genes are behaving across these
+[SPEAKER_00]: passages, we found a very clear split,
+that when we're selecting for everything,
+[SPEAKER_00]: the population kind of evolved this way.
+[SPEAKER_00]: And when we're selecting just for the
+non-motile population in the middle of the
+[SPEAKER_00]: plate, the population evolved in a very
+different trajectory.
+[SPEAKER_00]: So what do we find?
+[SPEAKER_00]: So this is a good start.
+[SPEAKER_00]: We think we're hitting something.
+[SPEAKER_00]: So we look into the highest finish values
+or finish phenotypes we have in all of
+[SPEAKER_00]: these lists of genes.
+[SPEAKER_00]: And we found three groups of them that are
+behaving very differently.
+[SPEAKER_00]: The first group, represented by the
+chemotaxis genes, QB and QY, these are
+[SPEAKER_00]: known chemotaxis motility contributors,
+they have a finish that is lower when the
+[SPEAKER_00]: whole population is passing, when the
+plate itself is selecting for motility.
+[SPEAKER_00]: But when we then added the extra layer of
+selection, they reversed back their finish
+[SPEAKER_00]: to be positive, meaning now losing those
+genes are not as bad for the strands once
+[SPEAKER_00]: we select for low motility.
+[SPEAKER_00]: The second group represented by
+flagellular motor genes, MOTA and MOTB,
+[SPEAKER_00]: do the exact opposite.
+[SPEAKER_00]: Their response is flipped.
+[SPEAKER_00]: And that is still a mystery to us why they
+will do this.
+[SPEAKER_00]: And then the third group of genes,
+which I think most of this audience will
+[SPEAKER_00]: be interested in, is why we hit
+hypothorese equation genes.
+[SPEAKER_00]: They are active, and they are having a
+positive finish scores in either cases,
+[SPEAKER_00]: meaning that they're on in the minimal
+medium situation.
+[SPEAKER_00]: But MOB's minimal medium is not the
+euro-hard minimal medium pH.
+[SPEAKER_00]: So we're very curious why they're actually
+on here.
+[SPEAKER_00]: And we tested them.
+[SPEAKER_00]: They didn't broadly do anything to
+motility, unfortunately.
+[SPEAKER_00]: And those three groups, when we plot out
+every gene and their responses across all
+[SPEAKER_00]: our passages, you can see a very clear
+split of these three groups.
+[SPEAKER_00]: So because we have so many more questions
+about the second and the third group of
+[SPEAKER_00]: genes, we ended up focusing on the
+chemotaxis genes because we know what
+[SPEAKER_00]: their phenotypes should look like once we
+go into individual mutational study of
+[SPEAKER_00]: these genes.
+[SPEAKER_00]: And the three other members of this group
+are PSPD-046, which is a cycloid IGMP
+[SPEAKER_00]: enzyme.
+[SPEAKER_00]: So this links it to motility in its nature
+just by what we know about cycloid IGMP.
+[SPEAKER_00]: And we find that, well, indeed,
+you have a phenotype where you knock it
+[SPEAKER_00]: out, and it impairs motility.
+[SPEAKER_00]: And when you complement it back,
+the motility comes back a little bit,
+[SPEAKER_00]: not fully, but partially.
+[SPEAKER_00]: Also, this is an overexpression instead of
+its natural promoters.
+[SPEAKER_00]: 1042 is another interesting one because
+this is an anti-signal factor for
+[SPEAKER_00]: oxidative stress that has been shown by
+the previous member of a social lab.
+[SPEAKER_00]: And it has not really been linked to
+motility or confirmed to link to motility
+[SPEAKER_00]: in the past.
+[SPEAKER_00]: And we found it has a very clean impaired
+motility by knockout, and overexpression
+[SPEAKER_00]: completely restored the motility phenotype
+here.
+[SPEAKER_00]: So that's telling us that there are
+linkage between stress response and
+[SPEAKER_00]: motility control.
+[SPEAKER_00]: The ecology of it, we don't know yet.
+[SPEAKER_00]: And then the oddball of them all,
+the hypothetical protein PSPTO-4029.
+[SPEAKER_00]: Absolutely stunning result in that
+knocking it out does not really do that
+[SPEAKER_00]: much.
+[SPEAKER_00]: It slightly impairs motility.
+[SPEAKER_00]: But when we overexpressed it, it abolishes
+motility.
+[SPEAKER_00]: So very odd.
+[SPEAKER_00]: And we don't know anything about it.
+[SPEAKER_00]: So that's where we get sidetracked into go
+full in on 4229.
+[SPEAKER_00]: So this is a hypothetical protein.
+[SPEAKER_00]: As many of them are, they're small
+proteins.
+[SPEAKER_00]: It has a total amino acid 273.
+[SPEAKER_00]: Only annotation on the protein is HDOD
+domain from 23 to 210, which does not tell
+[SPEAKER_00]: you really anything.
+[SPEAKER_00]: HDOD domain is such a general term that
+incorporates all kinds of functions.
+[SPEAKER_00]: It doesn't really contain much
+information.
+[SPEAKER_00]: And I'm showing you kind of a model here.
+[SPEAKER_00]: So we tried a whole bunch of methods
+trying to figure out what this protein is
+[SPEAKER_00]: doing.
+[SPEAKER_00]: The one that ended up working for us is
+aeroprom PCR.
+[SPEAKER_00]: So this is we generate another library.
+[SPEAKER_00]: Well, that's a lot of library generation
+within one talk.
+[SPEAKER_00]: There's one more.
+[SPEAKER_00]: So we generate a library of sequence each
+with few single point mutations by
+[SPEAKER_00]: aeroprom PCR.
+[SPEAKER_00]: So this is you're trying to use a
+different polymerase and so on,
+[SPEAKER_00]: trying to get an aero sequence happening
+during PCR.
+[SPEAKER_00]: And then we fuse that.
+[SPEAKER_00]: We put all of them into our expression
+constructs and ask them to perform on
+[SPEAKER_00]: swimming media.
+[SPEAKER_00]: So what happens there is because we know
+the wild type, 4229 overexpressed
+[SPEAKER_00]: phenotype, is complete abolishment of
+motility.
+[SPEAKER_00]: It's very easy to screen for them.
+[SPEAKER_00]: And we ended up getting 4229.
+[SPEAKER_00]: So we have 40 different plasmids that are
+having failed to suppress motility
+[SPEAKER_00]: phenotypes.
+[SPEAKER_00]: So here I'm showing all the sequence we
+got, amino acid sequence we got that are
+[SPEAKER_00]: still fall-ins.
+[SPEAKER_00]: And I'd like to diverge for concentration
+into the conservation plot here in yellow.
+[SPEAKER_00]: These are where we found among those
+fall-in sequences that are having
+[SPEAKER_00]: mutations from the wild type which is on
+top.
+[SPEAKER_00]: And also we use this tool called Scanit
+which can predict protein-protein
+[SPEAKER_00]: interaction by just inputting amino acid
+sequence that is recently developed.
+[SPEAKER_00]: And that gives us a prediction on each
+amino acid residual how likely they are
+[SPEAKER_00]: involved in protein-protein interaction.
+[SPEAKER_00]: And we indeed find the highest predicted
+interacting site is kind of like aligning
+[SPEAKER_00]: with a hotspot here.
+[SPEAKER_00]: So we went in and we did the mutation.
+[SPEAKER_00]: We replaced those two arginines that are
+being flagged out with alinings.
+[SPEAKER_00]: And we found that the phenotype is gone.
+[SPEAKER_00]: So great.
+[SPEAKER_00]: Now we know there is an important residual
+for this suppression phenotype.
+[SPEAKER_00]: The ecology of it, again, no idea.
+[SPEAKER_00]: So what I have to tell you so far for just
+one of those for the first project is that
+[SPEAKER_00]: one, TN-seq is, again, very powerful as
+well.
+[SPEAKER_00]: As Laurie told you a couple weeks ago.
+[SPEAKER_00]: And as long as you can select a function,
+this is a tool that can get you most of
+[SPEAKER_00]: the genes you're interested in or give you
+great candidates.
+[SPEAKER_00]: Second, swimming motility in disease
+development can be co-regulated by stress
+[SPEAKER_00]: response with no previously known
+connections to motility.
+[SPEAKER_00]: Fortu29 has a dominant suppression
+phenotype on motility.
+[SPEAKER_00]: It's swimming, but as an additional note,
+it's also swarming.
+[SPEAKER_00]: I didn't show the phenotype here.
+[SPEAKER_00]: And yeah, because we know nothing about
+the ecological significance of this,
+[SPEAKER_00]: there is a lot more study to do if we want
+to follow up on them.
+[SPEAKER_00]: So I hope this has piqued some of your
+interest in motility, because the next
+[SPEAKER_00]: story is going to be a little bit more
+wild than this.
+[SPEAKER_00]: I'm showing, I don't know how much it's
+showing here, but I'm showing you a very
+[SPEAKER_00]: weirdly shaped disease-resistant colony
+here.
+[SPEAKER_00]: And this is something we found almost
+coincidentally or by accident back in the
+[SPEAKER_00]: days.
+[SPEAKER_00]: And this is a socially induced
+disease-resistant swimming motility we
+[SPEAKER_00]: call baited expansion.
+[SPEAKER_00]: So back when I joined the lab,
+Brian and Kern was interested in the
+[SPEAKER_00]: phenotype.
+[SPEAKER_00]: When you put two colonies of the same
+species, bacteria, onto swimming media,
+[SPEAKER_00]: they somehow form this gap.
+[SPEAKER_00]: And they behave slightly different than
+they were if they are growing alone.
+[SPEAKER_00]: So I had the job to replicate this
+phenotype a bunch of times.
+[SPEAKER_00]: And in doing that, we also incorporate the
+inter-species interactions as sort of like
+[SPEAKER_00]: a second control for these phenotypes.
+[SPEAKER_00]: So in doing that, what I realized is
+Slumans are doing something weird.
+[SPEAKER_00]: When Slumans is paired against Dekia on
+third day, or paired with E.
+[SPEAKER_00]: coli or Xanthomonas on fifth day,
+you start to see the colonies are doing
+[SPEAKER_00]: something on these edges that are closer
+to the interaction partner.
+[SPEAKER_00]: And I was very interested in this.
+[SPEAKER_00]: I don't know what they're doing,
+but I want to study it.
+[SPEAKER_00]: So I tried to standardize it.
+[SPEAKER_00]: The problem is these colonies are not
+really standardized.
+[SPEAKER_00]: This one is on day three, this one day
+five, day five.
+[SPEAKER_00]: So I need a way to bring them to a more
+comparable level.
+[SPEAKER_00]: So my solution, because the strands were
+using our model strands and our strands
+[SPEAKER_00]: with more genetic resource wisdom,
+I was able to get non-motor mutants of
+[SPEAKER_00]: them and standardize this phenotype to
+such.
+[SPEAKER_00]: So you can see that when you have an
+unbated control of these results,
+[SPEAKER_00]: then it's more regular, it's radial,
+and it's symmetric.
+[SPEAKER_00]: Whereas when you have a E.
+[SPEAKER_00]: coli bait here, it starts to behave
+non-symmetric, the same with Dekia.
+[SPEAKER_00]: But when you put another DC3,000 as its
+interacting partner here, it's back to
+[SPEAKER_00]: being radial.
+[SPEAKER_00]: So great.
+[SPEAKER_00]: Now we have a standardized phenotype.
+[SPEAKER_00]: I can start to quantify this.
+[SPEAKER_00]: The first thing we quantify is how much
+growth they are having on each side,
+[SPEAKER_00]: or how much of the bacteria colony is
+expanding on each direction regarding the
+[SPEAKER_00]: position of the bait.
+[SPEAKER_00]: So here you can see the blue lines here
+represents the proximal, because it's
+[SPEAKER_00]: proximal to the bait.
+[SPEAKER_00]: And the red is the distal, because it's
+away from the bait, from the both stars at
+[SPEAKER_00]: the inoculation point.
+[SPEAKER_00]: And the quantification of that is laying
+out here.
+[SPEAKER_00]: You can see that with E.
+[SPEAKER_00]: coli or Dekia as a bait, the overall
+colony expansion is up.
+[SPEAKER_00]: But within the two sides of the colony,
+the proximal especially is up.
+[SPEAKER_00]: It is induced by the presence of the bait.
+[SPEAKER_00]: And we recently come up with this,
+actually, is to trace the colony edges and
+[SPEAKER_00]: then just overlay them to show that there
+is a significant difference in how the
+[SPEAKER_00]: colony morphology is happening.
+[SPEAKER_00]: So here you can see that even with control
+plasmids, so they're growing slightly
+[SPEAKER_00]: slower than the previously shown,
+you still have the extra growth or
+[SPEAKER_00]: expansion on the side that is close to the
+bait, proximal to the bait.
+[SPEAKER_00]: So the next question I had for this was,
+is this chemotaxis?
+[SPEAKER_00]: Because this looks very much like
+chemotaxis to me for two reasons.
+[SPEAKER_00]: One, it's directional.
+[SPEAKER_00]: Chemotaxis is always directional.
+[SPEAKER_00]: And two, we observed in many of our
+replicates that if the closer location of
+[SPEAKER_00]: a single bacteria is located, or of a
+colony, this is a resultant colony,
+[SPEAKER_00]: to a bait, you seem to get stronger
+effect.
+[SPEAKER_00]: So those are chemotaxis-like features of
+what we're seeing here.
+[SPEAKER_00]: However, our collection of chemotaxis
+mutants are usually non-motile,
+[SPEAKER_00]: which means you just don't get motility,
+and you can't really use them to test
+[SPEAKER_00]: whether they are behind this phenotype.
+[SPEAKER_00]: So the next thing we could do was to test
+for inducibility.
+[SPEAKER_00]: So the idea of that test is if you have a
+chemotaxis like behavior where it's
+[SPEAKER_00]: tracking some kind of accumulable chemical
+signals, or depletion of that,
+[SPEAKER_00]: you can just let the depletion or
+accumulation happen for longer,
+[SPEAKER_00]: and then that should provoke even stronger
+response.
+[SPEAKER_00]: And we kind of find that.
+[SPEAKER_00]: This is a pilot I'm showing with Arrhenia
+amalobora EA273 as the bait.
+[SPEAKER_00]: And you can see that this bait here has
+been inoculated 24 hours before the
+[SPEAKER_00]: DC3,000 colony is inoculated.
+[SPEAKER_00]: On the right, you have a bait that's the
+same species of Arrhenia that's inoculated
+[SPEAKER_00]: at the same time point as your DC3,000.
+[SPEAKER_00]: And you can see a very clear behavior
+difference.
+[SPEAKER_00]: This one has stronger behavior.
+[SPEAKER_00]: We can also replicate that with the
+tracing.
+[SPEAKER_00]: But with E.
+[SPEAKER_00]: coli, it still provokes a very different
+colony morphology.
+[SPEAKER_00]: But in this case, it's more lateral
+expansion.
+[SPEAKER_00]: So it's more on the sides of the colony.
+[SPEAKER_00]: So with that, our conclusion here is that
+it is something that's accumulating.
+[SPEAKER_00]: It's either accumulating of a signal or
+depletion of a signal, but it's
+[SPEAKER_00]: accumulable in its nature.
+[SPEAKER_00]: The next thing we did here is we're
+interested in what is the driving force
+[SPEAKER_00]: for this behavior to manifest.
+[SPEAKER_00]: And at the time, we have two hypotheses.
+[SPEAKER_00]: It can be either growth difference.
+[SPEAKER_00]: So maybe this part is growing more.
+[SPEAKER_00]: Or it is a major motility difference.
+[SPEAKER_00]: And to test that, what I ended up doing is
+I ended up cutting the plate in half.
+[SPEAKER_00]: So that separates the whole plate into two
+sides.
+[SPEAKER_00]: One is proximal to the bait.
+[SPEAKER_00]: The other is distal to the bait.
+[SPEAKER_00]: And I'm curious whether those two parts of
+the colony are actually having similar
+[SPEAKER_00]: amount of viable cells.
+[SPEAKER_00]: So we did the test.
+[SPEAKER_00]: And indeed, when a colony is baited,
+the proximal side is having more viable
+[SPEAKER_00]: cells than the distal side.
+[SPEAKER_00]: Whereas when it's just a normal colony
+growing on its own, that didn't happen.
+[SPEAKER_00]: But to our biggest surprise here is that
+we couldn't detect the immediate finish
+[SPEAKER_00]: benefit of doing the behavior.
+[SPEAKER_00]: Because the total viable cells in the
+colony is not significantly different.
+[SPEAKER_00]: So that pushed us more leaning towards
+this is a motility phenotype rather than a
+[SPEAKER_00]: growth phenotype.
+[SPEAKER_00]: So we recently, with the help of the new
+fancy microscope we got, we were able to
+[SPEAKER_00]: look at that more closely under that.
+[SPEAKER_00]: And here, I'm showing you on the top.
+[SPEAKER_00]: So in this panel, the bait is towards the
+left.
+[SPEAKER_00]: On the top, I'm showing you the sampling,
+a field of view that's fixed coordinate on
+[SPEAKER_00]: the proximal edge of the population.
+[SPEAKER_00]: And on the bottom, it's on the distal.
+[SPEAKER_00]: And you can see that on the proximal,
+you have a... So the DC 3000 here is
+[SPEAKER_00]: tagged with GFP.
+[SPEAKER_00]: And you can see on the proximal edge,
+you have faster growth.
+[SPEAKER_00]: The intensity changes over the 90 minutes
+course a lot.
+[SPEAKER_00]: Whereas on the bottom, there's not much.
+[SPEAKER_00]: But also, you can see the movement of the
+cells.
+[SPEAKER_00]: So it might be a little bit hard to see on
+this resolution, but the first white line
+[SPEAKER_00]: is where I marked the initial edge at the
+beginning of 48 hours post-inoculation is.
+[SPEAKER_00]: And this line here is where I could,
+on a higher resolution, find the edge of
+[SPEAKER_00]: this colony.
+[SPEAKER_00]: The same is for the bottom.
+[SPEAKER_00]: So the short of the story is over 90
+minutes of observation, the proximal edge
+[SPEAKER_00]: moved about 600 microns, whereas the
+distal edge moved only less than 200
+[SPEAKER_00]: microns.
+[SPEAKER_00]: So we're seeing that there is a movement
+difference here.
+[SPEAKER_00]: Well, since we're seeing that much
+difference in behavior of those two edges,
+[SPEAKER_00]: we're now interested in if we can find any
+genetic markers for them.
+[SPEAKER_00]: So the approach we took here is we want to
+sample those edge populations and see if
+[SPEAKER_00]: we can find a transcriptomic difference.
+[SPEAKER_00]: And indeed, we do.
+[SPEAKER_00]: So here, I'm showing you exactly where we
+sampled on each plate.
+[SPEAKER_00]: We used the most distal edge or the most
+proximal edge to abate within our
+[SPEAKER_00]: DC-terrizontal colony.
+[SPEAKER_00]: And we run RNA-seq with those.
+[SPEAKER_00]: And at the end of the day, what we found
+is the proximal edges that are most close
+[SPEAKER_00]: to a E.
+[SPEAKER_00]: coli bait and the proximal edge that's
+most close to a D-kia bait are behaving
+[SPEAKER_00]: very, very differently than all the other
+edges we were able to sample.
+[SPEAKER_00]: And those edges kind of mix together,
+which is more clear on this PCA plot.
+[SPEAKER_00]: So you have the D-kia in blue and E.
+[SPEAKER_00]: coli in this red eclipse.
+[SPEAKER_00]: So we went into the list.
+[SPEAKER_00]: We think we found something.
+[SPEAKER_00]: And we want to use a list of
+differentially regulated genes.
+[SPEAKER_00]: The biggest full change we found was with
+this hypothetical gene and another
+[SPEAKER_00]: hypothetical gene, PSPTO5639.
+[SPEAKER_00]: It does not have any information.
+[SPEAKER_00]: But in the very close neighborhood,
+we also find this more aging.
+[SPEAKER_00]: And we were able to confirm both of them
+are indeed induced in that region.
+[SPEAKER_00]: In the proximal population towards abate
+by QRTPCR.
+[SPEAKER_00]: So what does that do?
+[SPEAKER_00]: MOA-A is annotated.
+[SPEAKER_00]: And we know from its annotation that in
+cosmolibinum cofactor biosynthesis protein
+[SPEAKER_00]: A.
+[SPEAKER_00]: It's also a GTPase for what we know.
+[SPEAKER_00]: MOCO is a highly conserved function across
+bacterial species and also across
+[SPEAKER_00]: kingdoms.
+[SPEAKER_00]: So humans and plants have molybdenum
+cofactors.
+[SPEAKER_00]: They're involved in redox enzymes.
+[SPEAKER_00]: And also, those are involved in global
+sulfur, nitrogen, and carbon cycles.
+[SPEAKER_00]: Additionally, MOA-A was the only hit among
+all the RNA-Z data we have within this
+[SPEAKER_00]: MOCO function, within all the genes that
+are linked to molybdenum cofactor
+[SPEAKER_00]: function.
+[SPEAKER_00]: So well, but we're geneticists.
+[SPEAKER_00]: What can we do?
+[SPEAKER_00]: We knock it out and find out that it
+somehow mitigates or eliminates the
+[SPEAKER_00]: phenotype.
+[SPEAKER_00]: But when you put it back, you have the
+extra growth.
+[SPEAKER_00]: As you can see, the tiny wild type control
+here.
+[SPEAKER_00]: When you add it back by overexpression,
+that extra growth comes back.
+[SPEAKER_00]: So great.
+[SPEAKER_00]: MOA-A is our guy.
+[SPEAKER_00]: But is it the GTPase part, or is it the
+MOCO part?
+[SPEAKER_00]: Because GTPase interacts with GTP that
+also can potentially interact with cyclic
+[SPEAKER_00]: digem B.
+[SPEAKER_00]: So we're really curious which approach did
+it take to actually influence fertility
+[SPEAKER_00]: and, in this case, our behavior.
+[SPEAKER_00]: So we look into what's in the MOCO
+biosynthesis.
+[SPEAKER_00]: And this is a MOCO biosynthesis genes in
+E.
+coli.
+[SPEAKER_00]: And we picked another essential gene for
+this biosynthesis function.
+[SPEAKER_00]: We picked the MOA-A, which is the last in
+the step of MOCO assembly, where it
+[SPEAKER_00]: inserts the molybdenum actually to the
+cofactor complex.
+[SPEAKER_00]: And we did the genetic thing again by
+knocking it out.
+[SPEAKER_00]: And again, we were able to see this
+phenotype or this behavior disappeared
+[SPEAKER_00]: when we knock it out and come back when we
+overexpressed it.
+[SPEAKER_00]: So great.
+[SPEAKER_00]: Now we know MOCO is our guy instead of
+just MOA.
+[SPEAKER_00]: So what I have told you so far is that,
+in this chapter, is that swimming motility
+[SPEAKER_00]: is socially inducible.
+[SPEAKER_00]: And the behavior we call beta expansion is
+tracking some kind of accumulable signals,
+[SPEAKER_00]: be it the actual accumulation or
+depletion.
+[SPEAKER_00]: We also know that beta expansion results
+more from motility rather than growth from
+motility.
+[SPEAKER_00]: Our extraction or viable cell counting
+assay.
+[SPEAKER_00]: And last but not least, MOCO contributes
+to the development.
+[SPEAKER_00]: And it seems to be essential to the whole
+behavior.
+[SPEAKER_00]: And now we enter the wild speculation
+part.
+[SPEAKER_00]: Is it just me, or does this look like a
+charge to you, too?
+[SPEAKER_00]: Like, this looks very aggressive to me,
+right?
+[SPEAKER_00]: So we don't yet know that much about this
+ecology.
+[SPEAKER_00]: We have speculations here.
+[SPEAKER_00]: And one of our speculations is that this
+is a competition behavior.
+[SPEAKER_00]: And it's trying to get closer for either
+territorial range or get into a closer
+[SPEAKER_00]: position to initiate one of the cell-cell
+interaction mechanisms, such as type 6
+[SPEAKER_00]: secretion or actual cell killing.
+[SPEAKER_00]: We have no information of those genes
+being upregulated in our RNA-seq data at
+[SPEAKER_00]: all, not type 6, not any like toxin
+production or any thing like that.
+[SPEAKER_00]: But we cannot rule out once they get
+there, they might do it.
+[SPEAKER_00]: But again, this is just fascinating.
+[SPEAKER_00]: And I've been looking at this and think of
+this for the last six years.
+[SPEAKER_00]: And we still haven't cracked it yet.
+[SPEAKER_00]: So as a summary, I hope those materials
+have picture interest in motility in our
+[SPEAKER_00]: very closely studied DC 3000 bacteria.
+[SPEAKER_00]: I hope that helps you appreciate that
+motility regulations can respond to social
+[SPEAKER_00]: interactions as well as environmental
+stress.
+[SPEAKER_00]: And there is a lot more ecology to be
+studied in this system.
+[SPEAKER_00]: With that, I'd like to thank the past and
+current Steve Swingle lab members,
+[SPEAKER_00]: our collaborators Dr. Jen Lewis,
+Dr. Tyler Hellman, boys in the audience,
+[SPEAKER_00]: and the Cornell T.
+[SPEAKER_00]: rex and BRC that helps us with a lot of
+the sequencing stuff we do.
+[SPEAKER_00]: I'd like to also thank my committee
+members and everyone that's interacting in
+[SPEAKER_00]: the office daily, as well as the amazing
+postdoc and graduate student body.
+[SPEAKER_00]: I'd like to make one more comment.
+[SPEAKER_00]: I have a bunch of friends who told me I'm
+the happiest graduate student they ever
+[SPEAKER_00]: see.
+[SPEAKER_00]: And I think that's largely because I'm in
+this amazing community and I work in an
+[SPEAKER_00]: amazing lab.
+[SPEAKER_00]: And with that, I'd like to have my birds
+take questions from me, but I will speak
+[SPEAKER_00]: for them.
+[SPEAKER_00]: So any questions for Igor?
+Josh.
+[SPEAKER_02]: So in the second part of the talk,
+bacterial baiting and such, the ones
+[SPEAKER_02]: that's swarming towards or charging as you
+put it, can you keep those bacteria?
+[SPEAKER_02]: And or if you mix them together or
+co-inoculate at the same time or put them
+[SPEAKER_02]: really close to each other, does the
+pseudomonas kill the E.
+[SPEAKER_02]: coli or whatever else is there?
+[SPEAKER_00]: So we have done some asses.
+[SPEAKER_00]: So the question is, if we just
+co-inoculate the two bacteria together,
+[SPEAKER_00]: are there evidence of killing happening?
+[SPEAKER_00]: We haven't been able to observe any like
+killing with like stands and stuff yet.
+[SPEAKER_00]: We were able to see suppression,
+but if we co-inoculate in liquid culture,
+[SPEAKER_00]: but that could also just be nutrient
+competition instead of active killing.
+[SPEAKER_00]: We don't have a lot of evidence on or we
+have very few evidence on that actual
+[SPEAKER_00]: toxin production or anything is involved
+in these interactions.
+[SPEAKER_00]: So our main hypothesis right now is that
+it's a competition behavior, but it's on
+[SPEAKER_00]: the level of exploitive competition where
+it's just trying to grab more nutrient for
+[SPEAKER_00]: itself.
+[SPEAKER_00]: Lori.
+[SPEAKER_03]: Really great talk.
+[SPEAKER_03]: I had a question about your TNC data.
+[SPEAKER_03]: So you pulled out these like type 3
+secretion signals.
+[SPEAKER_03]: Do you think since this is like,
+I guess a social interaction, like do you
+[SPEAKER_03]: think there's a possibility of like
+another way that you could look for things
+[SPEAKER_03]: that might be signals that are going
+between cells?
+[SPEAKER_03]: Presumably those would not come out of a
+TNC because they need like sharing.
+[SPEAKER_03]: But like, is there some other way you
+could look for like what those type 3
+[SPEAKER_03]: secretion signals are, like what they're
+signaling or what they're sensing or
+[SPEAKER_03]: whatever?
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: So the question is, is there alternative
+methods to screen for or look for like a
+[SPEAKER_00]: signal that is being transferred in
+between the bait and the decision colony?
+[SPEAKER_00]: Our lab has done something before trying
+to go like mass spec and stuff like that.
+[SPEAKER_00]: We didn't really get anywhere with that.
+[SPEAKER_00]: I remember one of the, so that happened
+when I was still undergrad, I think.
+[SPEAKER_00]: And another undergrad at the time,
+Mikhail, who was working on this.
+[SPEAKER_00]: And I remember the comment he made was
+there's so much processing.
+[SPEAKER_00]: So what he was trying to do was trying to
+extract the gel in between the colonies
+[SPEAKER_00]: and trying to figure out if we can find
+something in there.
+[SPEAKER_00]: I remember the comment back then was they
+were super processed.
+[SPEAKER_00]: Like there are so many layers of
+processing that he was pretty negative
+[SPEAKER_00]: about like potentially finding anything.
+[SPEAKER_00]: And I don't think we ended up finding.
+[SPEAKER_03]: The secretion genes you found,
+do they, is there anything known about
+[SPEAKER_03]: what they're transporting?
+[SPEAKER_03]: Like that helps get at that at all?
+[SPEAKER_00]: The secretion genes I found, are there any
+information about what they could be?
+[SPEAKER_00]: So for the social motility, so MOA is not
+a secret.
+[SPEAKER_00]: So molybdenum cofactor in general are not,
+well, I think all of them are not
+[SPEAKER_00]: secreted.
+[SPEAKER_00]: They are cytoplasmic.
+[SPEAKER_00]: So we don't, that actually didn't point
+out to any directions that leads to like a
+[SPEAKER_00]: potential secreted signal into the space.
+[SPEAKER_03]: I guess I'm talking about the hits from
+your TMZ screen, your technical secretion
+[SPEAKER_03]: hits.
+[SPEAKER_00]: Oh, okay.
+[SPEAKER_00]: So that actually does not involve,
+does not relate to the motility,
+[SPEAKER_00]: so social motility.
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: Adam.
+[SPEAKER_00]: So Adam's question is, did we confirm the
+type III secretion genes were active in
+[SPEAKER_00]: the MOBs minimal media condition?
+[SPEAKER_00]: We did not go into that.
+[SPEAKER_00]: So when we found that the type III
+secretion genes are there, what we did is
+[SPEAKER_00]: we pulled out all the mutants we have on
+type III and did motility assays with
+[SPEAKER_00]: them.
+[SPEAKER_00]: And we found that they weren't really
+affecting motility.
+[SPEAKER_00]: So the only other explanation is they were
+on and they were taking a toll on the
+[SPEAKER_00]: metabolism or on the energy for the
+bacteria so that their growth might be
+[SPEAKER_00]: negatively affected by having them there.
+[SPEAKER_00]: So that's our hypothesis for why we might
+have those hits.
+[SPEAKER_00]: Zoom chat.
+[SPEAKER_00]: A lot of congratulations.
+[SPEAKER_00]: Thank you all.
+[SPEAKER_00]: But no question.
+[SPEAKER_01]: So no further questions.
+[SPEAKER_01]: Let's thank Igor.
+[SPEAKER_03]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_03]: Thank you.
+[SPEAKER_03]: Thank you.
+Thank you.

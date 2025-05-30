@@ -1,0 +1,1381 @@
+[SPEAKER_01]: This is a production of Cornell
+University.
+[SPEAKER_03]: All right.
+[SPEAKER_03]: Thank you, Liz.
+[SPEAKER_03]: I apparently have a lot of slides,
+so I'm going to try to go quickly through
+[SPEAKER_03]: them.
+[SPEAKER_03]: And I might gloss over a few things.
+[SPEAKER_03]: But these are the objectives for the talk.
+[SPEAKER_03]: I just want to look at some basically
+examples that I think illustrate why
+[SPEAKER_03]: polyploids are challenging to work with
+from an informatics perspective and a
+[SPEAKER_03]: biological perspective.
+[SPEAKER_03]: I want to take the time to use those
+examples to just look at some of the tools
+[SPEAKER_03]: and resources that we've developed or
+adopted from other groups and adapted to
+[SPEAKER_03]: our needs, using them for our particular
+research community, but hoping that
+[SPEAKER_03]: they'll find more broad adoption.
+[SPEAKER_03]: And the last is probably the most
+audacious of the three bullet points.
+[SPEAKER_03]: But I've been working on abstract algebra
+as kind of a side hobby.
+[SPEAKER_03]: And I want to try to make a case that it's
+actually of relevance to understanding how
+[SPEAKER_03]: complexity develops out of sort of
+nonlinear multiplicative relationships
+[SPEAKER_03]: like those that come out of putting two
+genomes together.
+[SPEAKER_03]: So we'll see how that goes.
+[SPEAKER_03]: All right.
+[SPEAKER_03]: So just a quick kind of overview of
+polyploidy in general.
+[SPEAKER_03]: It happens all the time, seemingly,
+in plants.
+[SPEAKER_03]: It's known to happen in some other
+systems, but way in the evolutionary past.
+[SPEAKER_03]: So if you work in plants, you know all
+about it.
+[SPEAKER_03]: If you don't work in plants, it's kind of
+a weird little niche.
+[SPEAKER_03]: But there are a lot of distinctions to be
+made about types of polyploidy and how
+[SPEAKER_03]: many genomes come together at once and how
+recently it was.
+[SPEAKER_03]: And those are all important for thinking
+about the actual approach you're going to
+[SPEAKER_03]: take with particular analytic solutions.
+[SPEAKER_03]: And I've heard that the thinking is that
+one of the reasons why plants are so
+[SPEAKER_03]: tolerant of polyploidy is that most of
+them don't actually have sex chromosomes.
+[SPEAKER_03]: And that facilitates the combination of
+genomes.
+[SPEAKER_03]: There are challenges to the plant
+associated with actually working out what
+[SPEAKER_03]: to do with having multiple genomes.
+[SPEAKER_03]: But after they've done that, they tend to
+be a little bit more resilient.
+[SPEAKER_03]: And so a lot of crops that we work with
+certainly have come from polyploid events,
+[SPEAKER_03]: possibly because the gene redundancy kind
+of gives you new opportunities.
+[SPEAKER_03]: We'll look at some of those questions a
+little bit further on.
+[SPEAKER_03]: And they tend to occur in extreme
+environments, partially because those
+[SPEAKER_03]: environments tend to induce polyploid
+formation, but also the thinking is that
+[SPEAKER_03]: they are, because of the built-in
+redundancy, they're better able to adapt
+[SPEAKER_03]: to such conditions.
+[SPEAKER_03]: So as I said, there are a lot of different
+types of polyploidy.
+[SPEAKER_03]: So one distinguishes between allo and
+auto, depending on whether or not the two
+[SPEAKER_03]: genomes that are being duplicated are the
+same or different.
+[SPEAKER_03]: There's a type of polyploidy that has to
+do with somatic cells, doesn't actually
+[SPEAKER_03]: lead to new species.
+[SPEAKER_03]: But basically, mitotic events not actually
+separating the results of genome doubling
+[SPEAKER_03]: into separate cells.
+[SPEAKER_03]: So that's endopolyploidy.
+[SPEAKER_03]: And then distinctions are made in terms of
+how recent the polyploidy event is and how
+[SPEAKER_03]: far along the evolutionary trajectory it's
+gotten so that it's effectively become a
+[SPEAKER_03]: diploid genetically again.
+[SPEAKER_03]: And depending on whether you're an
+auto-polyploid or an allopolyploid,
+[SPEAKER_03]: that introduces auto-polyploids basically
+all of their chromosomes, well,
+[SPEAKER_03]: the homeologous chromosomes, as we call
+them, can potentially recombine with one
+[SPEAKER_03]: another.
+[SPEAKER_03]: And so that introduces new possibilities
+in terms of the genetics that need to be
+[SPEAKER_03]: thought about carefully.
+[SPEAKER_03]: So as Liz mentioned, we're interested in
+comparative genomics.
+[SPEAKER_03]: We've developed a tool for basically
+looking at gene content across species.
+[SPEAKER_03]: Each of these glyphs represents a gene.
+[SPEAKER_03]: It's colored in terms of gene families
+they've been associated with.
+[SPEAKER_03]: And when you're dealing with, say,
+simple species like primates and mice,
+[SPEAKER_03]: you have nice, fairly simple relationships
+between the gene content in the various
+[SPEAKER_03]: genomes, one-to-one relationships in
+general with occasional presence,
+[SPEAKER_03]: absence, or copy number variation.
+[SPEAKER_03]: It's pretty easy to just pick out.
+[SPEAKER_03]: But when you're thinking about comparisons
+between genomes, each of which has a kind
+[SPEAKER_03]: of separate duplication history,
+things become a lot more complicated.
+[SPEAKER_03]: And so here we have a few different
+species that have different polyploidy
+[SPEAKER_03]: histories, some ancient duplications that
+they share, and then more recent
+[SPEAKER_03]: duplications that have been separate in
+the different species.
+[SPEAKER_03]: And so we've got a little track of a
+soybean chromosome at the top.
+[SPEAKER_03]: We can see that it's been through two
+whole genome doublings.
+[SPEAKER_03]: One of the tracks is much more similar.
+[SPEAKER_03]: That's the more recent duplication event.
+[SPEAKER_03]: And then you've got some more ancient
+events that are closer to one another
+[SPEAKER_03]: because their doubling resulted from that
+more recent event but further away from
+[SPEAKER_03]: them.
+[SPEAKER_03]: Even something that you tend to think of
+as a small genome like Arabidopsis has,
+[SPEAKER_03]: again, chromosome doublings or whole
+genome doublings involved with a lot of
+[SPEAKER_03]: gene loss.
+[SPEAKER_03]: Afterwards, you can easily see here
+patterns of fractionation of the
+[SPEAKER_03]: subgenomes that resulted from these whole
+genome duplication events.
+[SPEAKER_03]: Tomato actually went through a Hexploidy
+event.
+[SPEAKER_03]: And this tool basically allows you to
+dynamically query databases for tracks
+[SPEAKER_03]: that have a certain gene content
+associated with them and then pull in from
+[SPEAKER_03]: disparate databases tracks that seem to
+have similar gene content in terms of the
+[SPEAKER_03]: gene family assignments and then
+ultimately ask questions about the
+[SPEAKER_03]: evolutionary history behind genes that
+have been aligned through sentinel
+[SPEAKER_03]: together and their phylogenetic
+relationships.
+[SPEAKER_03]: And so you can see that out of those four,
+for that particular gene, which was from a
+[SPEAKER_03]: antipsychic acid-responsive transcription
+factor family, out of the soybean
+[SPEAKER_03]: homeologues, three of them retained that
+gene and it was lost in one, similarly
+[SPEAKER_03]: with tomato.
+[SPEAKER_03]: Two were retained, one was lost,
+and Arabidopsis also retained two.
+[SPEAKER_03]: So this gives us a nice way of exploring
+relationships among the genes but the
+[SPEAKER_03]: question that still is difficult is,
+well, what happens to function as these
+[SPEAKER_03]: things have duplicated and then gone their
+separate ways?
+[SPEAKER_03]: And that's not so easy to resolve.
+[SPEAKER_03]: So we're also interested in, well,
+some polyploid species like soybean are
+[SPEAKER_03]: economically valuable and have a lot of
+research that goes into them.
+[SPEAKER_03]: They have their own database resources
+with curators pulling in information from
+[SPEAKER_03]: the literature.
+[SPEAKER_03]: Can we make use of comparative genomic
+techniques to essentially take something
+[SPEAKER_03]: like CalP, which does not have that more
+recent whole genome duplication event,
+[SPEAKER_03]: and figure out, okay, do I have any,
+say, SNPs associated with seed weight in
+[SPEAKER_03]: regions in this genome, which I know has
+sort of more or less two copies of genes
+[SPEAKER_03]: for every copy of a gene here,
+and find out, well, yes, there is a region
+[SPEAKER_03]: where I found an association between the
+trait of interest that is similar to one
+[SPEAKER_03]: of the homeologues regions in soybean
+where they've also observed similar
+[SPEAKER_03]: variation.
+[SPEAKER_03]: So that's obviously a nice way of taking
+candid genes and figuring out,
+[SPEAKER_03]: well, have I seen evidence in some other
+species that changes to this gene actually
+[SPEAKER_03]: affect the trait of interest.
+[SPEAKER_03]: All right, so here comes the tough part,
+making the case for polynomials.
+[SPEAKER_03]: So just as polyploids involve
+multiplication of kind of independently
+[SPEAKER_03]: behaving linear genomes, polynomials are
+kind of like that in that you're taking
+[SPEAKER_03]: together linear factors and if you think
+about it in this direction, it's pretty
+[SPEAKER_03]: easy to go through and use the
+distributive property or things that you
+[SPEAKER_03]: learned.
+[SPEAKER_03]: I was in Lansing High School, so I learned
+this from Mr. Cottmell.
+[SPEAKER_03]: You do the first outside inside last trick
+and figure out exactly how to do your
+[SPEAKER_03]: factorization.
+[SPEAKER_03]: It's essentially no different no matter
+how many factors you have.
+[SPEAKER_03]: You're doing combinatorial distributive
+multiplication and you're essentially
+[SPEAKER_03]: taking the roots of the equation and
+seeing them come out in the coefficients
+[SPEAKER_03]: in kind of interesting ways that these are
+what's referred to as the elementary
+[SPEAKER_03]: symmetric polynomials, which means that it
+doesn't really matter how you permute
+[SPEAKER_03]: them, you get the same result.
+[SPEAKER_03]: And this ends up being very important in
+terms of theory involved in what it
+[SPEAKER_03]: actually means to solve a polynomial
+equation.
+[SPEAKER_03]: So there are numerical techniques that
+allow you to approximate solutions.
+[SPEAKER_03]: But what algebraic people want to do is to
+say, what is the actual algorithm?
+[SPEAKER_03]: Can I find a formula like this old guy?
+[SPEAKER_03]: You probably remember the quadratic
+equation.
+[SPEAKER_03]: It's not exactly simple, but it's fairly
+straightforward.
+[SPEAKER_03]: You probably remember how to get there.
+[SPEAKER_03]: You either memorized it or you learned
+completing the square and can re-derive
+[SPEAKER_03]: it.
+[SPEAKER_03]: It's not too bad, but once you go even to
+a computer to do a cubic equation,
+[SPEAKER_03]: things get really a lot harder.
+[SPEAKER_03]: And this is a Renaissance mathematician,
+Tartaglia, who figured out how to deal
+[SPEAKER_03]: with these things by first performing a
+little trick and making a depressed cubic
+[SPEAKER_03]: and then eventually getting to a formula
+that in some sense is analogous to the
+[SPEAKER_03]: quadratic equation, but it's a lot more
+complicated.
+[SPEAKER_03]: And you get also interesting things with
+higher degree equations like what they
+[SPEAKER_03]: call cases irreductible, which basically
+means that you can have three real valued
+[SPEAKER_03]: roots, but if they're not rational,
+you can't actually represent them with
+[SPEAKER_03]: this kind of representation without
+involving imaginary numbers, even though
+[SPEAKER_03]: the results that you get are not
+themselves imaginary.
+[SPEAKER_03]: So as you start to increase the number of
+factors of things, life gets interesting.
+[SPEAKER_03]: And going even further, it was eventually
+demonstrated after people had solved the
+[SPEAKER_03]: cubic and the quartic.
+[SPEAKER_03]: They were working real hard to try to
+solve the quintic, and eventually through
+[SPEAKER_03]: the work of Abel and Galois, they
+discovered that in fact, you can have
+[SPEAKER_03]: fifth degree equations and higher,
+where you simply can't represent the roots
+[SPEAKER_03]: in any way using that sort of
+representation.
+[SPEAKER_03]: And whether or not you can get to some
+sort of representation like that,
+[SPEAKER_03]: is basically dependent on this notion of
+symmetry among the roots and how the
+[SPEAKER_03]: coefficients impose constraints upon the
+roots, whether you can represent
+[SPEAKER_03]: relationships among the roots starting
+from what they call the field of the
+[SPEAKER_03]: coefficients.
+[SPEAKER_03]: So an example of that would be cyclotomic
+polynomials, which sort of distribute
+[SPEAKER_03]: themselves in the complex plane around the
+circle.
+[SPEAKER_03]: They have a kind of a very restricted
+form, and it can be shown that any
+[SPEAKER_03]: cyclotomic, you can represent the roots in
+terms of these kind of specialized
+[SPEAKER_03]: quadratic, or not quadratic, but radical
+towers from the field of coefficients.
+[SPEAKER_03]: Okay, well, there are other times when
+taking together a bunch of disparate
+[SPEAKER_03]: things that are simple to deal with,
+relatively simple individually,
+[SPEAKER_03]: and you try to put them together and
+things get complicated quickly,
+[SPEAKER_03]: even when you're doing kind of the
+multiplication aspect of things.
+[SPEAKER_03]: So this is a project from which many of
+the following examples are taken,
+[SPEAKER_03]: an NSF-funded project that we've been
+working on to try to take a lot of
+[SPEAKER_03]: disparate information resources and unify
+them in some way.
+[SPEAKER_03]: There are some technical challenge in
+this.
+[SPEAKER_03]: There are many sociological challenges to
+actually getting something like this to
+[SPEAKER_03]: work.
+[SPEAKER_03]: But I won't go into that too much,
+other than to say that many of what I show
+[SPEAKER_03]: would not be possible without our
+collaboration with many of these groups.
+[SPEAKER_03]: So here's my first example.
+[SPEAKER_03]: Cultivated peanut, it's a recently formed
+allotetraploid that was formed from a few
+[SPEAKER_03]: diploid wild species.
+[SPEAKER_03]: So the original genome sequencing was done
+on the diploids.
+[SPEAKER_03]: They kind of recognized early on that the
+diploids were close enough together that
+[SPEAKER_03]: it would be challenging using the
+sequencing technologies available at the
+[SPEAKER_03]: time if you were to just sequence the
+tetraploid directly.
+[SPEAKER_03]: To figure out which parts went with which
+subgenomes.
+[SPEAKER_03]: So they approached it by figuring out
+which were the actual progenitor species.
+[SPEAKER_03]: And actually one of them is sort of
+there's only one accession of this species
+[SPEAKER_03]: out there.
+[SPEAKER_03]: And they believe that it was transported
+down into the range of the other species
+[SPEAKER_03]: by prehistoric humans, allowing this
+hybridization event that eventually led to
+[SPEAKER_03]: the cultivated polyploid.
+[SPEAKER_03]: So you can see it sort of there amidst the
+range of the other species.
+[SPEAKER_03]: So you can kind of synthetically create
+what the amphideploids, which I think it's
+[SPEAKER_03]: just a fancy way of saying an
+allotetraploid from these things that were
+[SPEAKER_03]: created synthetically.
+[SPEAKER_03]: So that's the strategic approach.
+[SPEAKER_03]: And you can see that there are some,
+if you're comparing chromosomes
+[SPEAKER_03]: corresponding chromosomes from the two,
+they are different structurally in some
+[SPEAKER_03]: ways, but there's kind of a clear one to
+one correspondence between the two
+[SPEAKER_03]: chromosomes.
+[SPEAKER_03]: So one of the interesting things about
+peanut is that because of this extreme
+[SPEAKER_03]: genetic bottleneck that it went through,
+they think that there was essentially a
+[SPEAKER_03]: single hybridization event that ended up
+propagating into all of the cult wars that
+[SPEAKER_03]: we have today.
+[SPEAKER_03]: So it's very non-diverse from a
+traditional allelic sense, but
+[SPEAKER_03]: phenotypically there's quite a bit of
+diversity associated with things.
+[SPEAKER_03]: And so this was kind of a question for
+people as to how is it possible for such a
+[SPEAKER_03]: limited genetic base to generate all of
+this phenotypic diversity.
+[SPEAKER_03]: So when they, this was actually something
+that they began to see when the diploids
+[SPEAKER_03]: were sequenced and compared to data that
+was available for the tetraploid.
+[SPEAKER_03]: But essentially what's happening is that
+the two sub-genomes within the cultivated
+[SPEAKER_03]: tetraploid are interacting in different
+ways such that in some cases you have a
+[SPEAKER_03]: segment of one sub-genome that's replacing
+the other ones.
+[SPEAKER_03]: This is just a representation kind of
+showing copy number of the two different
+[SPEAKER_03]: homeologous genomes.
+[SPEAKER_03]: So here we have at the end of chromosome
+14, I think it is, from a particular
+[SPEAKER_03]: variety of peanut, a place where the B
+ancestral genome exists in two copies and
+[SPEAKER_03]: the A has been replaced with it.
+[SPEAKER_03]: In other regions where A has been lost,
+B has been retained, or the other way
+[SPEAKER_03]: around.
+[SPEAKER_03]: So essentially what's going, what seems to
+be going on to a large extent with peanut
+[SPEAKER_03]: is that different patterns of this
+interactivity between the sub-genomes are
+[SPEAKER_03]: generating this type of phenotypic
+diversity.
+[SPEAKER_03]: And they were actually able to show that
+they made one of these synthetic crosses
+[SPEAKER_03]: and kept it going for a few generations
+and were actually able to reproduce some
+[SPEAKER_03]: of this phenotypic diversity within that
+pedigree.
+[SPEAKER_03]: So I thought, well, okay, if that's the
+case, we've got the TIF runner genome
+[SPEAKER_03]: sequenced.
+[SPEAKER_03]: Could we actually see what they were
+showing in that diagram using some of the
+[SPEAKER_03]: tools that we've produced?
+[SPEAKER_03]: So here's that so-called genome context
+viewer again showing us the two
+[SPEAKER_03]: homeologous segments of cultivated peanut
+and then the progenitor genomes.
+[SPEAKER_03]: And at this level, you can see some cases
+in which it seems as though the gene
+[SPEAKER_03]: content of the two homeologous segments is
+reflecting the B genome rather than the A
+[SPEAKER_03]: genome.
+[SPEAKER_03]: But it might be a little difficult to
+argue that that couldn't also just be
+[SPEAKER_03]: vagaries of annotation effects or
+misassemblies and things like that.
+[SPEAKER_03]: But if you go ahead and select,
+say, the gene right at the end of the
+[SPEAKER_03]: chromosomes, and then look at it within
+the context of the tree, you can actually
+[SPEAKER_03]: see the pattern fairly clearly in terms of
+the sequence level relationships that
+[SPEAKER_03]: indeed, in this case, the B genome genic
+sequence is much closer to the two copies
+[SPEAKER_03]: from the tetraploid than the other genome
+sequences.
+[SPEAKER_03]: And you can interact with this tool in
+ways that collapse down the tree and just
+[SPEAKER_03]: those genes of interest and then see that
+reflected in the multiple sequence
+[SPEAKER_03]: alignment.
+[SPEAKER_03]: And you can see various places at which
+the A genome representative is indeed
+[SPEAKER_03]: different from the others at a number of
+positions.
+[SPEAKER_03]: But of course, if we take another gene
+from that same region of the genome,
+[SPEAKER_03]: it might reside in a gene family that's a
+little bit more complicated.
+[SPEAKER_03]: So here again, we've got the B genome with
+the two tetraploids taken from the same
+[SPEAKER_03]: region and behaving similarly in terms of
+tree topology.
+[SPEAKER_03]: But there are other subclades of this tree
+with different sorts of patterns
+[SPEAKER_03]: associated with them.
+[SPEAKER_03]: So you can pretty easily, using this tool,
+again, collapse down to the set of genes
+[SPEAKER_03]: that may be of interest in your particular
+context and then go in the reverse
+[SPEAKER_03]: direction to say, well, let's look at
+their genomic content in different
+[SPEAKER_03]: contexts and figure out not starting with
+the premise that you're looking at things
+[SPEAKER_03]: that are all centenic, but asking the
+question, how would I group these things
+[SPEAKER_03]: given their gene family neighborhoods in
+such a way that I see the centenic
+[SPEAKER_03]: relationships that exist among members of
+this gene family?
+[SPEAKER_03]: So I guess this is the next gene down from
+the end of the chromosome that I chose.
+[SPEAKER_03]: So this would be our chromosome 14 genes.
+[SPEAKER_03]: And then this is the other gene family or
+other clades that you can see has kind of
+[SPEAKER_03]: a more complicated picture in terms of the
+gene duplications within that region.
+[SPEAKER_03]: And again, some of the aspects of the way
+that those sequences appear in the tree
+[SPEAKER_03]: may be driven by our annotation sorts of
+artifacts.
+[SPEAKER_03]: But we believe that these sorts of tools
+are valuable for people who want to ask
+[SPEAKER_03]: particular questions that will enable them
+to browse the data fairly effectively,
+[SPEAKER_03]: even in the context of having these kind
+of fairly complicated relationships
+[SPEAKER_03]: between and within plant genomes.
+[SPEAKER_03]: So we're really excited about our
+development of this tool and hoping that
+[SPEAKER_03]: other groups will eventually start to pick
+it up too.
+[SPEAKER_03]: All right, so moving on to a different
+example of challenges associated with
+[SPEAKER_03]: polyploidy.
+[SPEAKER_03]: This is a genome sequence project that
+we've involved with for a number of years,
+[SPEAKER_03]: actually more years than I care to admit.
+[SPEAKER_03]: But it's been a bit difficult going,
+both for technical and funding reasons,
+[SPEAKER_03]: I guess.
+[SPEAKER_03]: But you know, so alfalfa, cultivated
+alfalfa, is a species that is an
+[SPEAKER_03]: auto-tetraploid.
+[SPEAKER_03]: And making life more complicated still,
+it's an out-crosser.
+[SPEAKER_03]: So there's a lot of diversity within the
+genome itself.
+[SPEAKER_03]: It's related to metacargotrenet.
+[SPEAKER_03]: And casula, which is a kind of a model
+species for legumes.
+[SPEAKER_03]: And so if you look at something like k-mer
+frequency spectra in metacargot,
+[SPEAKER_03]: you get a really clean result showing you
+a sort of a croissant distribution of your
+[SPEAKER_03]: k-mer frequencies, which is what you would
+expect from single-copy sequence content
+[SPEAKER_03]: classically.
+[SPEAKER_03]: And you can model things about genome size
+and heterozygosity, which effectively this
+[SPEAKER_03]: has none, using this type of setup.
+[SPEAKER_03]: When you try to do the same thing with
+sativa, things get a lot more complicated
+[SPEAKER_03]: in terms of the set of k-mer peaks that
+you're dealing with and your attempt to
+[SPEAKER_03]: fit models of those kind of mixed model
+distributions of k-mers present at
+[SPEAKER_03]: different copy numbers that you're
+sampling from a large pool that you've
+[SPEAKER_03]: generated from whole genome shotgun
+sequencing.
+[SPEAKER_03]: Well, so one thing that we did in that
+context, kind of similar maybe to the
+[SPEAKER_03]: peanut genome, there was a diploidized
+version of cultivated alfalfa that had
+[SPEAKER_03]: been taken from a tetraploid and made into
+a diploid.
+[SPEAKER_03]: And we thought, great, this will be
+simpler.
+[SPEAKER_03]: We can start with that and then leverage
+it to help us when we're dealing with the
+[SPEAKER_03]: tetraploid itself.
+[SPEAKER_03]: All right, so we had a lot of different
+data sets that we had available.
+[SPEAKER_03]: We started thinking it would be easy with
+Illumina sequencing, and then as that
+[SPEAKER_03]: proved not to be the case, we moved on to
+different types of data.
+[SPEAKER_03]: So packed biosequencing, I'm not exactly
+sure how familiar you guys all are with
+[SPEAKER_03]: next-gen sequencing, but there are a
+number of different technologies,
+[SPEAKER_03]: not all of them sequence-based,
+but they all have kind of their strengths
+[SPEAKER_03]: and weaknesses with respect to getting at
+complex genomes.
+[SPEAKER_03]: And so we've tried a number of things.
+[SPEAKER_03]: And one thing that's kind of a little bit
+unique about auto-tetraploids in terms of
+[SPEAKER_03]: using linkage maps is that you do your
+linkage mapping typically using,
+[SPEAKER_03]: say, single-dose heterozygotes.
+[SPEAKER_03]: So they sort of behave from that
+perspective like diploids, where it's this
+[SPEAKER_03]: or that segregating, and you can just keep
+your eye on the informative haplotype and
+[SPEAKER_03]: figure out how it's segregating with other
+informative haplotypes from the same
+[SPEAKER_03]: linkage group.
+[SPEAKER_03]: So I'm maybe trying to stretch that
+algebraic analogy, but as you think about
+[SPEAKER_03]: roots of numbers that are more than just
+the square root, where maybe you think
+[SPEAKER_03]: about positive or negative, as you go to
+higher roots, you have to think about all
+[SPEAKER_03]: of the different directions in the complex
+plane that you could be talking about when
+[SPEAKER_03]: you're talking about the root of a number.
+[SPEAKER_03]: So things with genotyping get more
+complicated as well.
+[SPEAKER_03]: So just trying to get a handle on what the
+material was in terms of, you know,
+[SPEAKER_03]: what is it that we're trying to assemble
+here?
+[SPEAKER_03]: Do we essentially want to get eight
+chromosomes like Medicago has,
+[SPEAKER_03]: even though we know there are 32?
+[SPEAKER_03]: But for each of the 32, four of them
+should be, in some sense, homeologous to
+[SPEAKER_03]: one another.
+[SPEAKER_03]: But at some level of diversity from one
+another.
+[SPEAKER_03]: Or do we really want a 32 chromosome sort
+of pan-genome within the context of our
+[SPEAKER_03]: single cultivar of alfalfa?
+[SPEAKER_03]: You know, and in some sense, every time
+you create a cross of alfalfa,
+[SPEAKER_03]: you're going to get a different
+combination of these things.
+[SPEAKER_03]: So in some sense, it's kind of quixotic to
+try to get the haplotypes.
+[SPEAKER_03]: But if you're clonally propagating it,
+you'll preserve them at least,
+[SPEAKER_03]: and you can ask questions about,
+you know, is this technology suitable for
+[SPEAKER_03]: understanding issues of haplotype phasing
+across long distances?
+[SPEAKER_03]: So probably not surprisingly, you know,
+we found that short-read assemblies were
+[SPEAKER_03]: compressing things down a lot,
+more towards the expected haploid genome
+[SPEAKER_03]: size.
+[SPEAKER_03]: But there was a lot of fragmentation.
+[SPEAKER_03]: If you think about your N50s relative to
+chromosome sizes, they're not looking very
+[SPEAKER_03]: good.
+[SPEAKER_03]: Even with the long-read technologies,
+the contig sizes that we're getting out of
+[SPEAKER_03]: those are very small.
+[SPEAKER_03]: Not as small as the short-reads,
+but at the level of smallness that it's
+[SPEAKER_03]: even challenging to kind of take some of
+the other technologies and apply them to
+[SPEAKER_03]: them.
+[SPEAKER_03]: And the other thing is that the long-read
+assemblies, you know, were definitely
+[SPEAKER_03]: producing genomes that were closer to
+capturing several of the haplotypes,
+[SPEAKER_03]: not maybe all four.
+[SPEAKER_03]: But, you know, and even in CATL,
+which we had approached as a diploid
+[SPEAKER_03]: thinking it would be simpler.
+[SPEAKER_03]: Well, it was in some sense, but still,
+there's a lot of heterozygosity there,
+[SPEAKER_03]: and enough that with the high error rates
+combined with the heterozygosity,
+[SPEAKER_03]: there are a lot of issues with actually
+dealing with long-reads and figuring out,
+[SPEAKER_03]: you know, well, is this just a repeat?
+[SPEAKER_03]: Is this just a highly-error sequence,
+or is it actually a divergent haplotype?
+[SPEAKER_03]: So anyway, when we finally kind of took
+one of the long-read assemblies as our
+[SPEAKER_03]: base, then we started exploring kind of
+higher-order genome scaffolding
+[SPEAKER_03]: technologies like optical maps or Hi-C of
+various flavors.
+[SPEAKER_03]: And one of the companies we worked with,
+Phase Genomics, their algorithm,
+[SPEAKER_03]: basically, you would tell it how many
+chromosomes you wanted to get out,
+[SPEAKER_03]: which in some ways seems a little bit of a
+danger sign, but, you know, we could tell
+[SPEAKER_03]: them, well, we would like to try it with
+eight chromosomes, we'd like to try it
+[SPEAKER_03]: with 32, and you can see that there were
+some significant differences, and I will
+[SPEAKER_03]: say, not differences that always made a
+lot of sense to us in trying to do that.
+[SPEAKER_03]: I talked a little bit about the Kamer
+frequency spectra.
+[SPEAKER_03]: So, you know, depending on what size you
+choose your Kamer at, you will either pick
+[SPEAKER_03]: up stuff that is effectively single-copy
+across all the homeologs and present at
+[SPEAKER_03]: higher frequencies, and then smaller peaks
+represent things that are single-dosage or
+[SPEAKER_03]: double-dosage.
+[SPEAKER_03]: I think that, you know, this progression
+as you get closer to using longer Kamers
+[SPEAKER_03]: and showing that your peaks, your
+higher-order peaks effectively are being
+[SPEAKER_03]: erased, you know, is effectively showing
+us that within about 71 base pairs,
+[SPEAKER_03]: you know, you're gonna get two SNPs that
+actually differentiate between all four
+[SPEAKER_03]: haplophytes.
+[SPEAKER_03]: So, it's quite a complex genome to work
+with from an assembly perspective.
+[SPEAKER_03]: But when you look, so these are the same,
+so using 25 MERS as our basis,
+[SPEAKER_03]: we're using kind of the Kamer frequency
+plots against the actual genomes that
+[SPEAKER_03]: we've assembled and looking to see,
+well, for Kamers that are in this peak,
+[SPEAKER_03]: do we capture them once as expected or
+twice, and well, I guess this is actually
+[SPEAKER_03]: the, this is the peak of 4X, so it's
+shared between all four haplotypes.
+[SPEAKER_03]: So, you might expect that to be captured
+at 4X.
+[SPEAKER_03]: And, you know, again, it's not surprising
+that what you see is that the short read
+[SPEAKER_03]: data tends to pick up the, you know,
+single-copy stuff, and, you know,
+[SPEAKER_03]: some of the haplotypes are not being
+represented, so they're at 0X.
+[SPEAKER_03]: But it's not really a simple picture,
+and even within CATL where the Kamer
+[SPEAKER_03]: frequency plot looks a little ragged
+because we don't have the same depth of
+[SPEAKER_03]: coverage, because we're using packed bio
+data, which isn't as deep, and you can't
+[SPEAKER_03]: really use it prior to correction,
+which is one reason it becomes less deep.
+[SPEAKER_03]: Things look complicated, as you would
+expect with a heterozygous genome.
+[SPEAKER_03]: So, BUSCO analysis is something that a lot
+of people do to kind of assess how well
+[SPEAKER_03]: their genomes have done in terms of
+capturing genes that are expected to be
+[SPEAKER_03]: present in single-copy.
+[SPEAKER_03]: And, of course, whether or not you expect
+it to be single-copy is, again,
+[SPEAKER_03]: kind of relative to your expectation for
+the ploidy level and the amount of time
+[SPEAKER_03]: things have had to become single-copy,
+again, following the whole genome
+[SPEAKER_03]: duplication event.
+[SPEAKER_03]: And, you know, in terms of genic content,
+again, the short-read technologies in
+[SPEAKER_03]: general, well, these are different now
+assembly algorithms being applied to
+[SPEAKER_03]: short-read or long-read, and, you know,
+again, you can see that short-read
+[SPEAKER_03]: technologies are doing an okay job of
+picking up gene content, but just,
+[SPEAKER_03]: you know, basically making a single copy,
+whereas the longer-read technologies are
+[SPEAKER_03]: picking up two or three copies of these
+things.
+[SPEAKER_03]: And when you look at genes from M.
+[SPEAKER_03]: truncatula just across the board for
+things that you wouldn't necessarily
+[SPEAKER_03]: expect to be in single-copy, you get a
+somewhat similar picture, but definitely
+[SPEAKER_03]: more things appearing in multiple,
+you know, four or five or higher levels of
+[SPEAKER_03]: ploidy.
+[SPEAKER_03]: So not a real change, but kind of tendency
+to be able to pick multi-copy gene
+[SPEAKER_03]: families, I suppose.
+[SPEAKER_03]: All right.
+[SPEAKER_03]: So we had a – well, we had the M.
+[SPEAKER_03]: truncatula genome, and prior evidence made
+from genetic maps within CTIVA showed us
+[SPEAKER_03]: that essentially the two genomes are
+collinear, despite the fact that even at
+[SPEAKER_03]: the haploid genome size, one is quite
+expanded, almost twice as big as the other
+[SPEAKER_03]: one.
+[SPEAKER_03]: There are a couple of interesting things
+that turn out not to really be about
+[SPEAKER_03]: differences between CTIVA and truncatula,
+but the particular accession that was
+[SPEAKER_03]: chosen for the genome sequencing of
+truncatula had some peculiarities,
+[SPEAKER_03]: and they show up when you compare it to
+other truncatulas.
+[SPEAKER_03]: But when you, you know, essentially try to
+use truncatula as your basis, you would
+[SPEAKER_03]: expect that it would do a pretty good job
+of showing you collinearity.
+[SPEAKER_03]: And depending on how fragmented your
+assembly is, you know, genome dot plots
+[SPEAKER_03]: are a nice way of showing relationships
+between different genomes, but when you
+[SPEAKER_03]: see something like this, where,
+you know, the labels of one axis are so
+[SPEAKER_03]: dense that you can't even read them,
+it basically just means that you've got a
+[SPEAKER_03]: lot of degrees of freedom that you have to
+make things look like diagonals.
+[SPEAKER_03]: And if there are real structural events
+going on between your genomes,
+[SPEAKER_03]: you're not likely to see them.
+[SPEAKER_03]: But as you start applying more aggressive
+scaffolding technologies, then you get the
+[SPEAKER_03]: chance to be wrong.
+[SPEAKER_03]: And, you know, this is an example of some
+of the things that were coming out of the
+[SPEAKER_03]: Hi-C data, where they're doing a pretty
+good job of kind of figuring out which
+[SPEAKER_03]: chromosome a particular scaffold belongs
+to, and getting it in the right
+[SPEAKER_03]: neighborhood.
+[SPEAKER_03]: But effectively, what they're doing,
+even when you tell them to kind of produce
+[SPEAKER_03]: 32 chromosomes, is not really give you 32
+chromosome haplotypes, but give you each
+[SPEAKER_03]: of the eight chromosomes in four pieces,
+where each of the pieces kind of
+[SPEAKER_03]: represents a strange little jumble of all
+the haplotypes that you had for that,
+[SPEAKER_03]: because the Hi-C data isn't really able of
+resolving these kind of haplotype phasing
+[SPEAKER_03]: issues, at least not in the hands of the
+algorithm that was applied to it.
+[SPEAKER_03]: So just zooming in on this a little bit
+more on one of the chromosomes,
+[SPEAKER_03]: you can start to see, on the one hand,
+probably some assembly artifacts that are
+[SPEAKER_03]: coming in from some of the scaffolding
+technologies.
+[SPEAKER_03]: I would not expect this to be a real
+relationship between alfalfa scaffold and
+[SPEAKER_03]: truncatula.
+[SPEAKER_03]: You can see another one of those sort of
+crow's feet representations there.
+[SPEAKER_03]: But you can also clearly see, you know,
+we are picking up fairly good
+[SPEAKER_03]: representation of two haplotypes along,
+you know, in many cases, along wide
+[SPEAKER_03]: stretches, and in some cases, it's a
+little bit more fragmented.
+[SPEAKER_03]: Again, if we take our, original
+non-scaffolded, just long-read
+[SPEAKER_03]: technologies, you can start to kind of
+trace a picture, but you have a lot of
+[SPEAKER_03]: degrees of freedom to make this into
+little, you know, sort of line segments
+[SPEAKER_03]: that are showing you collinearity.
+[SPEAKER_03]: As you apply something like optical
+mapping, these lines become much longer
+[SPEAKER_03]: and more coherent.
+[SPEAKER_03]: And, you know, these seem to represent
+haplotypes, but there's still kind of a
+[SPEAKER_03]: question about can you really trust that
+the phasing that this is sort of saying
+[SPEAKER_03]: that you have along your haplotype is
+actually accurate?
+[SPEAKER_03]: Because, you know, a bio-nano map doesn't
+actually have sequence data associated
+[SPEAKER_03]: with it.
+[SPEAKER_03]: It's just kind of a pattern, which we'll
+see in another slide.
+[SPEAKER_03]: So this is the kind of a gomish of
+haplotypes that the Hi-C data is producing
+[SPEAKER_03]: for this region.
+[SPEAKER_03]: Again, probably in the right general
+vicinity, but it's certainly not making a
+[SPEAKER_03]: single coherent haplotype as instructed by
+the 32 chromosomes.
+[SPEAKER_03]: And then if we apply a Hi-C plus bio-nano,
+which kind of allows you to make breaks
+[SPEAKER_03]: where necessary.
+[SPEAKER_03]: And, you know, one limitation of the
+non-sequence basis of something like an
+[SPEAKER_03]: optical map is that your scaffolds kind of
+have to be a certain size to begin with in
+[SPEAKER_03]: order for them to get a purchase into the
+genetic map, or sorry, not the optical
+[SPEAKER_03]: map, which I'll show in another slide.
+[SPEAKER_03]: So this, then again, is using the same
+tool to look at the haplotypes that we've
+[SPEAKER_03]: derived from that region.
+[SPEAKER_03]: And here's a just kind of the crow's foot
+sort of thing that we were seeing in the
+[SPEAKER_03]: dot plot looked at from the genetic
+perspective and turned on its side for
+[SPEAKER_03]: CATL.
+[SPEAKER_03]: So that's what I would consider to be an
+artifact scaffold.
+[SPEAKER_03]: But we also see some kind of interesting
+things within our alfalfa blocks where,
+[SPEAKER_03]: you know, this is just kind of a contig
+that the optical map was not able to place
+[SPEAKER_03]: probably because it wasn't long enough and
+didn't have enough restriction sites to
+[SPEAKER_03]: really create a pattern to put it into
+place.
+[SPEAKER_03]: But you can basically imagine that it fits
+right in there.
+[SPEAKER_03]: Here's another example where you have a
+little region.
+[SPEAKER_03]: We didn't happen to pick it up using the
+kind of Syntony-based way of looking at
+[SPEAKER_03]: things that we're using here.
+[SPEAKER_03]: But another kind of interesting question,
+then again, along the same lines about,
+[SPEAKER_03]: well, what do people who want to use an
+alfalfa genome really want out of a
+[SPEAKER_03]: reference?
+[SPEAKER_03]: You know, the tendency would be to say,
+well, let's just choose the longest
+[SPEAKER_03]: haplotype and kind of do a minimum tiling
+thing and choose the most contiguous and
+[SPEAKER_03]: least redundant path through those dot
+plots that we can.
+[SPEAKER_03]: But there does seem to be a lot of
+evidence that there's gene loss between
+[SPEAKER_03]: the different homologs, as some polyploid
+theory might lead you to believe could be
+[SPEAKER_03]: the case.
+[SPEAKER_03]: And so, you know, if you just chose one
+representative homolog, then you might be
+[SPEAKER_03]: missing important gene content that was
+actually present on another one of these
+[SPEAKER_03]: copies.
+[SPEAKER_03]: And so, you know, as I sort of alluded to
+the fact that you've got kind of a pan
+[SPEAKER_03]: genome for the price of a single genome
+with alfalfa.
+[SPEAKER_03]: And, you know, I'm thinking, you know,
+eventually we might come to the place
+[SPEAKER_03]: where instead of thinking about single
+reference genomes, we think about
+[SPEAKER_03]: consolidated references that could
+basically take all the four homologs,
+[SPEAKER_03]: kind of abstract them out into a single
+representation that was maximally useful
+[SPEAKER_03]: for somebody actually trying to do things
+in alfalfa.
+[SPEAKER_03]: All right, so optical maps turned out to
+be a bit of a surprise for me.
+[SPEAKER_03]: You know, I was thinking that they
+wouldn't really have enough information to
+[SPEAKER_03]: be able to distinguish the homologs.
+[SPEAKER_03]: But what we were seeing is that when we
+took the original contigs and then started
+[SPEAKER_03]: placing them up against the scaffolds that
+it would produce, we saw that they were
+[SPEAKER_03]: kind of breaking the contigs and
+distributing them across different
+[SPEAKER_03]: scaffolds in a kind of a pattern that
+suggested that maybe what was going on was
+[SPEAKER_03]: it was trying to make a haplotype
+consistent phasing.
+[SPEAKER_03]: And so, this is kind of what optical maps
+look like.
+[SPEAKER_03]: You sort of do an in silico digestion of
+your sequence data that you've produced
+[SPEAKER_03]: wherever, you know, the enzymes that
+you're using, you find their cut sites and
+[SPEAKER_03]: you look at the pattern that this would
+create.
+[SPEAKER_03]: And then you look at all of the labeled
+molecules that you've put together using
+[SPEAKER_03]: assembly-like techniques and look at the
+patterns that they show.
+[SPEAKER_03]: And so, in this case, we can kind of see
+some clear regions where maps created
+[SPEAKER_03]: using different enzymes are showing places
+where you get a very clear crossover
+[SPEAKER_03]: between the sequence scaffold showing a
+pattern that's associated with this map up
+[SPEAKER_03]: to here and this map up to here and then
+switches over to not matching this one,
+[SPEAKER_03]: but matching this other one which hadn't
+matched before.
+[SPEAKER_03]: So, that seems to be pretty good evidence.
+[SPEAKER_03]: In my mind, these things are actually
+heterozygous enough that the haplotypes
+[SPEAKER_03]: are actually fairly well distinguished
+even when you don't have the sequence
+[SPEAKER_03]: information.
+[SPEAKER_03]: So, finally, you know, we're trying to
+make use of these genetic maps,
+[SPEAKER_03]: and even that's been a bit of a challenge
+because the markers that were developed
+[SPEAKER_03]: were developed using one of the short read
+assemblies.
+[SPEAKER_03]: And so, those short read assemblies kind
+of represent little mosaic haplotypes even
+[SPEAKER_03]: within the context of, you know,
+fairly short stretches of flanking
+[SPEAKER_03]: sequence.
+[SPEAKER_03]: So, what you'd kind of like to do is to
+say, well, you know, I know this was a SNP
+[SPEAKER_03]: chosen because it had three copies and,
+you know, three of the home analogs and
+[SPEAKER_03]: one copy of an allele and the other one.
+[SPEAKER_03]: So, what I really want to do is establish,
+you know, what's the informative allele,
+[SPEAKER_03]: which linkage group did it go to,
+and do it within the context of the
+[SPEAKER_03]: linkage phased sort of representation of
+those SNPs.
+[SPEAKER_03]: Am I also phasing those particular alleles
+within the context of sequence analysis?
+[SPEAKER_03]: And so, this is showing us a dot plot
+where the different 32 linkage groups
+[SPEAKER_03]: genetically are being represented.
+[SPEAKER_03]: And you can see that it's fairly collinear
+with a little bit of noise off the
+[SPEAKER_03]: diagonal showing where a particular
+allele, you know, really ought to be in
+[SPEAKER_03]: this linkage group that was actually put
+into a scaffold with something else that
+[SPEAKER_03]: it doesn't really belong to.
+[SPEAKER_03]: And then finally, getting down to the
+actual sequence level of the haplotypes,
+[SPEAKER_03]: it was a bit of a surprise to me to see
+that at the end of the day, even though we
+[SPEAKER_03]: didn't really end up using CATL to be kind
+of a substrate for working on the higher
+[SPEAKER_03]: level, putting together of the tetraploid
+genome, when you start looking at the
+[SPEAKER_03]: haplotype structure that you have in terms
+of the different things appearing in these
+[SPEAKER_03]: two genomes, they're actually,
+it seems as though you're seeing in some
+[SPEAKER_03]: cases at least similar haplotypes
+resolving out of those two genomes,
+[SPEAKER_03]: which to my, I don't know that much about
+the history of CATL, but I don't think it
+[SPEAKER_03]: was actually really derived in any way
+from this material.
+[SPEAKER_03]: So, that was kind of a nice result.
+[SPEAKER_03]: And then up here we're kind of showing
+what a multiple sequence alignment tool
+[SPEAKER_03]: for whole genomes kind of does when you
+try to give it things that actually have
+[SPEAKER_03]: multiple genome copies, but you're just
+sort of saying, well, you know,
+[SPEAKER_03]: take this species and align it here,
+and I expect there to really be one
+[SPEAKER_03]: region, but it's finding that you've given
+it several copies of this region with
+[SPEAKER_03]: different characteristics.
+[SPEAKER_03]: It's kind of just mashing them into one
+consensus-like thing that is much more
+[SPEAKER_03]: nicely resolved down here.
+[SPEAKER_03]: All right, so this is the kind of the last
+example, and this represents more recent
+[SPEAKER_03]: work that's actually just a proposal that
+was recently submitted that we've been
+[SPEAKER_03]: generating a lot of preliminary data on.
+[SPEAKER_03]: And so, you know, people have been looking
+at functional genomics, omics data in bulk
+[SPEAKER_03]: tissues for a long time now.
+[SPEAKER_03]: And one, you know, it's great,
+it's powerful, it provides us with a lot
+[SPEAKER_03]: of information, but one problem is that,
+you know, in fact, you've got a genome
+[SPEAKER_03]: that in some sense is the same in all of
+these parts of the plant, but it's doing
+[SPEAKER_03]: different things.
+[SPEAKER_03]: And, you know, when you aggregate things
+together, you can obviously miss
+[SPEAKER_03]: interesting things that might be going in
+the parts, and sometimes you can just get
+[SPEAKER_03]: patterns which are actually the opposite
+when you look across the aggregate than
+[SPEAKER_03]: the things within the meaningful
+subgroupings that you had might have
+[SPEAKER_03]: related, and that's called Simpson's
+paradox.
+[SPEAKER_03]: So the question is, you know, well,
+if we start looking at things at finer
+[SPEAKER_03]: levels of resolution within the system,
+a multicellular complex system,
+[SPEAKER_03]: will we be able to answer questions that
+we couldn't address when we were just
+[SPEAKER_03]: looking at things in the aggregate?
+[SPEAKER_03]: And this is work that Mark LeBeau has been
+spearheading.
+[SPEAKER_03]: So just kind of giving a little bit more
+substance to what I was saying,
+[SPEAKER_03]: you know, the root systems of these
+various species, although they have,
+[SPEAKER_03]: in many cases, the same cell types,
+where cell type, I'll just let you decide
+[SPEAKER_03]: for yourself what that might actually
+mean.
+[SPEAKER_03]: They look pretty different in terms of
+their structure and the number of
+[SPEAKER_03]: components of different types that they
+have.
+[SPEAKER_03]: So you can kind of easily imagine that
+when you're averaging out in kind of
+[SPEAKER_03]: different weighted averages across these
+different pools, you would not really be
+[SPEAKER_03]: able to compare all that easily across
+them in meaningful ways if you wanted to,
+[SPEAKER_03]: say, look at, even if you had done a kind
+of a carefully controlled experiment where
+[SPEAKER_03]: you defined, you know, what is the section
+of the root that is homologous in
+[SPEAKER_03]: Arabidopsis to Mecado, some of these other
+things, you know, you may just be limited
+[SPEAKER_03]: in terms of the actual biology,
+in terms of what averaging is happening.
+[SPEAKER_03]: And so when you try to do comparisons in
+terms of evolutionary questions,
+[SPEAKER_03]: you just might not really have great data
+to work with.
+[SPEAKER_03]: So recently, as I'm sure many of you are
+aware, technologies that have been around
+[SPEAKER_03]: in the animal space for a number of years
+have just begun to be applied to plants.
+[SPEAKER_03]: You know, it's not that we're slow on the
+uptake, it's that we've had real
+[SPEAKER_03]: challenges in terms of cell walls and the
+ability to actually take plant tissue and
+[SPEAKER_03]: dissociate the cells into, say,
+contexts in which you can actually do
+[SPEAKER_03]: single cell biology.
+[SPEAKER_03]: But within the last year, a number of
+papers have come out, including John
+[SPEAKER_03]: Schieffelbein, who's on the previous
+slide, who's looked at Arabidopsis root
+[SPEAKER_03]: development for many years.
+[SPEAKER_03]: He published a paper using protoplasting
+on Arabidopsis root cells and basically
+[SPEAKER_03]: created a Arabidopsis root atlas from that
+data, as a number of groups, other groups
+[SPEAKER_03]: have been looking at.
+[SPEAKER_03]: And I was recently made aware of an effort
+that's, there's a workshop happening soon
+[SPEAKER_03]: to kind of start thinking about what it
+really means to generate a plant cell
+[SPEAKER_03]: atlas, similar to the sorts of atlases
+that are being developed in, say,
+[SPEAKER_03]: human and mouse and other systems that are
+a little bit more mature in terms of these
+[SPEAKER_03]: technologies.
+[SPEAKER_03]: So I think it's a really exciting area and
+something that, you know, I'm hoping that
+[SPEAKER_03]: we'll get funded to work on.
+[SPEAKER_03]: So Mark's approach has been a little
+different in that he's working with single
+[SPEAKER_03]: nucleus data rather than single cell or
+protoplast and single cell data.
+[SPEAKER_03]: And a number of the possible advantages to
+doing that are enumerated here.
+[SPEAKER_03]: So one of the ways that I relate this to
+the basic question of polyploidy,
+[SPEAKER_03]: and I thank Jeff Doyle for turning me on
+to this question about what happens,
+[SPEAKER_03]: you know, transcriptionally with cells
+that have different endopolyploidy levels.
+[SPEAKER_03]: You know, a lot of these platforms will
+have different biases in terms of cell
+[SPEAKER_03]: sizes that they're able to actually
+incorporate into their microfluidics or
+[SPEAKER_03]: their droplets.
+[SPEAKER_03]: And so that's at least somewhat minimized
+with the use of nuclear data.
+[SPEAKER_03]: But I think at the end of the day,
+it's probably just the fact that you don't
+[SPEAKER_03]: have to tune your system as much when
+you're trying to go across different
+[SPEAKER_03]: species working with the nuclear isolation
+protocols.
+[SPEAKER_03]: So hopefully we will be at a point soon
+where we can actually engage in some of
+[SPEAKER_03]: the comparative functional omics that we
+are hoping that these technologies will
+[SPEAKER_03]: really start to bring to bear on these
+questions.
+[SPEAKER_03]: And we're thinking that a lot of the
+biological questions, you know,
+[SPEAKER_03]: may actually have slightly different kind
+of takes that you get when you're
+[SPEAKER_03]: restricting to yourself to what's going on
+in the nucleus.
+[SPEAKER_03]: But that could be viewed, you know,
+in some cases as an advantage rather than
+[SPEAKER_03]: possibly just a difference.
+[SPEAKER_03]: And there are some real challenges to,
+you know, when you're going to the single
+[SPEAKER_03]: cell level, you're already faced with
+challenges with really low amounts of
+[SPEAKER_03]: starting material.
+[SPEAKER_03]: And when you're limiting yourself to only
+what's going on from the nucleus,
+[SPEAKER_03]: it's even more challenging.
+[SPEAKER_03]: But, you know, one basic question with
+using the single nucleus approach is,
+[SPEAKER_03]: well, can we even get a picture of these
+systems that's comparable in some ways to
+[SPEAKER_03]: what's coming, starting to come out of the
+single cell studies?
+[SPEAKER_03]: And so these are the kinds of pictures
+that are created by some of the
+[SPEAKER_03]: informatics systems associated with single
+cell.
+[SPEAKER_03]: Essentially, each data point is an
+individual cell, and they're being spread
+[SPEAKER_03]: out into this kind of two-dimensional
+projection.
+[SPEAKER_03]: You can think about this sort of like PCA,
+except PCAs are kind of designed to look
+[SPEAKER_03]: at the dimensions that maximize variance
+across what are the dimensions across
+[SPEAKER_03]: which most variance occurs.
+[SPEAKER_03]: These techniques are a little bit more in
+tune with looking at complex sorts of
+[SPEAKER_03]: relationships where neighborhoods are more
+important.
+[SPEAKER_03]: T-SNE was the one that people kind of
+started out using.
+[SPEAKER_03]: I first heard about it a couple years ago
+at PAG, and already it's been kind of
+[SPEAKER_03]: started to be deprecated in favor of more
+sophisticated techniques.
+[SPEAKER_03]: But in any case, you can see that if you
+do kind of a co-clustering that takes into
+[SPEAKER_03]: account kind of possible batches or batch
+effects between the different experiments,
+[SPEAKER_03]: and then you project them into the same
+space and then separate out the single
+[SPEAKER_03]: cell dots from the single nucleus dots,
+you get a fairly coherent picture in terms
+[SPEAKER_03]: of the overall structure where different
+areas are populated by both cells and
+[SPEAKER_03]: nuclei.
+[SPEAKER_03]: But there are some things that we're
+picking up that don't seem to be present
+[SPEAKER_03]: at all in the single cell data.
+[SPEAKER_03]: So that could be a case in which there are
+just certain cell types that are biased
+[SPEAKER_03]: for whatever reason against being picked
+up in a photo-plasting approaches that
+[SPEAKER_03]: we're able to pick up with the nuclei.
+[SPEAKER_03]: So it's fun to look at these plots.
+[SPEAKER_03]: You can see sort of patterns.
+[SPEAKER_03]: But at the end of the day, what you really
+want to do is to sort of figure out,
+[SPEAKER_03]: well, what are these cell types?
+[SPEAKER_03]: And so if you're working in Arabidopsis,
+you have marker genes that have been
+[SPEAKER_03]: established for cell types over many
+years.
+[SPEAKER_03]: And you can use the patterns of expression
+to kind of tease apart what these clusters
+[SPEAKER_03]: likely represent biologically.
+[SPEAKER_03]: Similarly, in soybean, which is a
+paleopolyploid, we're able to sort of do a
+[SPEAKER_03]: similar thing, figure out what the
+clusters represent, and then start to look
+[SPEAKER_03]: at effects of treatments like inoculation
+with symbionts and show differential
+[SPEAKER_03]: expression between the genes that are in
+the same cluster but being affected by the
+[SPEAKER_03]: treatments differently.
+[SPEAKER_03]: So I probably won't have too much time to
+talk about this.
+[SPEAKER_03]: But Jeff and I have worked since the early
+days of NGS sequencing on questions
+[SPEAKER_03]: around, well, when you get new polyploids
+being formed from hybridization of
+[SPEAKER_03]: diploids in these polyploid complexes,
+essentially, you call them all telentelo,
+[SPEAKER_03]: but they're really different species,
+different genomes, different combinations
+[SPEAKER_03]: of genomes.
+[SPEAKER_03]: What actually happens with the expression
+of these homeologs when you put these
+[SPEAKER_03]: genomes together?
+[SPEAKER_03]: And can you access those questions using
+some of these sequencing technologies
+[SPEAKER_03]: where sometimes you see one homeolog
+effectively gets suppressed and the other
+[SPEAKER_03]: one is sort of dominant.
+[SPEAKER_03]: Sometimes you get things like
+sub-functionalization.
+[SPEAKER_03]: And so we're trying to take the
+single-cell data and basically ask those
+[SPEAKER_03]: questions by taking the data from the
+single cells that's been aggregated across
+[SPEAKER_03]: the clusters and then defining indices
+that describe, in terms of gene pairs
+[SPEAKER_03]: related to one another through homeology
+from ancient whole genome duplication
+[SPEAKER_03]: events, what are the sorts of patterns
+that you can see?
+[SPEAKER_03]: So this is a case where, for this
+particular case, if you look at a
+[SPEAKER_03]: particular gene pair, sometimes one gene
+is the dominant partner, sometimes the
+[SPEAKER_03]: other gene is the dominant partner,
+and sometimes you don't see any bias or
+[SPEAKER_03]: you don't have enough read count data to
+really see significant bias.
+[SPEAKER_03]: Sometimes you see clear preference of one
+homeolog over another.
+[SPEAKER_03]: And then similarly, are different tissues
+different in terms of the ways in which
+[SPEAKER_03]: they use different homeologs to become the
+cells that they want to be through the
+[SPEAKER_03]: developmental processes?
+[SPEAKER_03]: So finally, in addition to transcriptomic
+data, we're using ATAC-seq data,
+[SPEAKER_03]: which really is looking at chromosome
+structure and how the chromosomes remodel
+[SPEAKER_03]: themselves through interaction with the
+histones to try to make gene expression
+[SPEAKER_03]: possible.
+[SPEAKER_03]: So there are some integrative techniques
+that have been developed similar to what
+[SPEAKER_03]: you might use when you're trying to
+integrate, say, a data set from one
+[SPEAKER_03]: species to another.
+[SPEAKER_03]: So if you're going from one species to a
+data set from another species,
+[SPEAKER_03]: you're kind of making some assumptions
+about what expression would look like with
+[SPEAKER_03]: respect to the accessibility of genes that
+are being expressed, integrating that way,
+[SPEAKER_03]: and then trying to figure out what the
+clustering is.
+[SPEAKER_03]: And then you can start asking questions
+about differential accessibility over the
+[SPEAKER_03]: ATAC-seq data aggregated across your
+clusters, ATAC-seq being even more sparse
+[SPEAKER_03]: than the RNA-seq data is.
+[SPEAKER_03]: So here are the people who I haven't
+already mentioned in the course of this
+[SPEAKER_03]: talk, but I'd just like to acknowledge on
+the various projects and take questions.
+[SPEAKER_02]: Are there any questions?
+[SPEAKER_01]: Fascinating talk.
+[SPEAKER_01]: Thank you very much.
+[SPEAKER_01]: I guess I have a question about prevalence
+of those presence absence variants,
+[SPEAKER_01]: which you're seeing in other questions.
+So one of the things that ended up
+happening is autotrash bits ended up
+developing a large amount of genetic load
+that kind of trace about what the
+[SPEAKER_01]: prevalence of those presence absence
+variants are and whether or not it's
+[SPEAKER_01]: missing pieces that are actually
+contributing a lot to that.
+[SPEAKER_03]: So I would say it's not a question we've
+looked at carefully yet.
+[SPEAKER_03]: We haven't actually done a gene annotation
+of the tetrapoid, mostly just for reasons
+[SPEAKER_03]: of running out of funding.
+[SPEAKER_03]: So the data I was presenting was actually
+taking the truncatula genes and just
+[SPEAKER_03]: projecting them onto the tetrapoid and
+showing it from that perspective.
+[SPEAKER_03]: So there's a little bit of guesswork
+involved with that.
+[SPEAKER_03]: But in terms of seeing fairly large
+deletions present in genetic regions,
+[SPEAKER_03]: when you look at individual examples,
+I would guess that it's not uncommon to
+[SPEAKER_03]: see those types of mutations changes being
+maintained within the gene pools.
+[SPEAKER_02]: Any other questions?
+[SPEAKER_00]: Sure.
+[SPEAKER_00]: So what are you finding in terms of the
+similarity in cell clusters between
+[SPEAKER_00]: soybean and Arabidopsis, given the
+morphological differences you showed?
+[SPEAKER_00]: Right.
+[SPEAKER_03]: Well, that is a question I unfortunately
+can't address at this point.
+[SPEAKER_03]: Mark has been very active in taking the
+marker genes that he's studied and just
+[SPEAKER_03]: establishing the identity of the cell
+clusters.
+[SPEAKER_03]: And I think our soybean data isn't yet
+that.
+[SPEAKER_03]: It's not as good as our Arabidopsis data.
+[SPEAKER_03]: I said that the nuclear data would involve
+less protocol tweaking.
+[SPEAKER_03]: But I think there is some protocol
+tweaking just in terms of basic sizes of
+[SPEAKER_03]: nuclei for the larger genomes.
+[SPEAKER_03]: He mentioned something about
+centrifugation being an issue.
+[SPEAKER_03]: So I'm imagining that there are some
+bursting issues that he's still working
+[SPEAKER_03]: out.
+[SPEAKER_02]: So Andrew?
+[SPEAKER_02]: Right.
+[SPEAKER_02]: Thank you.
+[SPEAKER_01]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_01]: Thank you.
+[SPEAKER_01]: Thank you.
+Thank you.

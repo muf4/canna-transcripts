@@ -1,0 +1,6476 @@
+1
+00:00:00,240 --> 00:00:06,160
+coming up on garden talk the ai is it is
+
+2
+00:00:03,439 --> 00:00:08,480
+people training those systems then
+
+3
+00:00:06,160 --> 00:00:11,039
+everyone could have the power of those
+
+4
+00:00:08,480 --> 00:00:12,880
+expert opinions via computer vision
+
+5
+00:00:11,039 --> 00:00:15,359
+without a person actually looking
+
+6
+00:00:12,880 --> 00:00:18,160
+personally at their plants one of them
+
+7
+00:00:15,359 --> 00:00:21,118
+would be a ph either increase or
+
+8
+00:00:18,160 --> 00:00:22,960
+decrease you typically don't need both
+
+9
+00:00:21,118 --> 00:00:26,719
+you'll find you want to correct one
+
+10
+00:00:22,960 --> 00:00:29,519
+direction only i built six scales which
+
+11
+00:00:26,719 --> 00:00:31,919
+are all wi-fi enabled or part of the
+
+12
+00:00:29,518 --> 00:00:33,039
+system and every minute they report
+
+13
+00:00:31,920 --> 00:00:34,239
+their weight
+
+14
+00:00:33,039 --> 00:00:36,000
+you really shouldn't actually have a
+
+15
+00:00:34,238 --> 00:00:38,479
+clogging issue if you always have a
+
+16
+00:00:36,000 --> 00:00:41,359
+pre-filter by the way for your pump
+
+17
+00:00:38,479 --> 00:00:42,959
+automation is there to help you to
+
+18
+00:00:41,359 --> 00:00:44,960
+enable you
+
+19
+00:00:42,960 --> 00:00:47,679
+and to do a lot of the things that you
+
+20
+00:00:44,960 --> 00:00:47,679
+don't want to do
+
+21
+00:00:52,000 --> 00:00:55,840
+what's up everybody if you that don't
+
+22
+00:00:53,198 --> 00:00:57,198
+know me my name is chris aka mr growit
+
+23
+00:00:55,840 --> 00:01:00,000
+and you're tuned into the garden talk
+
+24
+00:00:57,198 --> 00:01:01,920
+podcast this episode number 37. in this
+
+25
+00:01:00,000 --> 00:01:03,840
+episode i interviewed simon the creator
+
+26
+00:01:01,920 --> 00:01:05,600
+of the plant studio many of you like to
+
+27
+00:01:03,840 --> 00:01:07,118
+automate your garden in some way whether
+
+28
+00:01:05,599 --> 00:01:09,199
+that be through auto watering
+
+29
+00:01:07,118 --> 00:01:10,640
+environmental controls there are so many
+
+30
+00:01:09,200 --> 00:01:12,560
+different things you can do to automate
+
+31
+00:01:10,640 --> 00:01:14,640
+your garden in this episode we talk
+
+32
+00:01:12,560 --> 00:01:16,879
+about the future of gardening complete
+
+33
+00:01:14,640 --> 00:01:18,719
+automation simon has developed a way to
+
+34
+00:01:16,879 --> 00:01:21,039
+just about completely automate your
+
+35
+00:01:18,719 --> 00:01:23,200
+garden so you the gardener can be hands
+
+36
+00:01:21,040 --> 00:01:24,560
+off most of the time thanks to all of
+
+37
+00:01:23,200 --> 00:01:26,799
+you who support this podcast through
+
+38
+00:01:24,560 --> 00:01:30,079
+patreon if you'd like to support you can
+
+39
+00:01:26,799 --> 00:01:31,680
+do so by going to patreon.com mr growit
+
+40
+00:01:30,078 --> 00:01:33,039
+before we get into it i want to
+
+41
+00:01:31,680 --> 00:01:35,439
+acknowledge that one of my goals for
+
+42
+00:01:33,040 --> 00:01:37,840
+this podcast is to bring zero cost for
+
+43
+00:01:35,438 --> 00:01:40,158
+information about gardening all plants
+
+44
+00:01:37,840 --> 00:01:41,759
+to the general public that being said
+
+45
+00:01:40,159 --> 00:01:43,600
+i'd like to thank the sponsors of this
+
+46
+00:01:41,759 --> 00:01:45,040
+podcast who helped make that goal
+
+47
+00:01:43,599 --> 00:01:46,478
+possible
+
+48
+00:01:45,040 --> 00:01:48,560
+big shout out to dutch pro for
+
+49
+00:01:46,478 --> 00:01:50,239
+sponsoring this podcast dutch pro is a
+
+50
+00:01:48,560 --> 00:01:52,560
+plant fertilizer company that has been
+
+51
+00:01:50,239 --> 00:01:54,719
+around for over 30 years they have base
+
+52
+00:01:52,560 --> 00:01:58,000
+nutrients and they also have additives
+
+53
+00:01:54,719 --> 00:02:01,280
+such as pk boosters root stimulators
+
+54
+00:01:58,000 --> 00:02:04,078
+calmag silica a nutrient optimizer and a
+
+55
+00:02:01,280 --> 00:02:05,599
+foiler feed they also have ph regulators
+
+56
+00:02:04,078 --> 00:02:07,679
+to help ensure that the nutrients can be
+
+57
+00:02:05,599 --> 00:02:09,758
+uptaken properly i will leave a link to
+
+58
+00:02:07,680 --> 00:02:11,439
+dutch pro's amazon store down in the
+
+59
+00:02:09,758 --> 00:02:14,559
+description section below and you can
+
+60
+00:02:11,439 --> 00:02:16,318
+use coupon code mr grow 10dp for a
+
+61
+00:02:14,560 --> 00:02:18,080
+discount on their products
+
+62
+00:02:16,318 --> 00:02:21,039
+thanks to spider farmer for sponsoring
+
+63
+00:02:18,080 --> 00:02:24,160
+this podcast they have board style led
+
+64
+00:02:21,039 --> 00:02:25,359
+grow lights bar style led grow lights
+
+65
+00:02:24,159 --> 00:02:28,239
+grow tents
+
+66
+00:02:25,360 --> 00:02:30,480
+in-line fans and carbon filters they
+
+67
+00:02:28,239 --> 00:02:33,120
+also have complete grow tank kits which
+
+68
+00:02:30,479 --> 00:02:36,560
+include lighting a ventilation system
+
+69
+00:02:33,120 --> 00:02:38,640
+grow pots a trellis net a timer
+
+70
+00:02:36,560 --> 00:02:41,840
+and a monitor for both temperature and
+
+71
+00:02:38,639 --> 00:02:43,598
+humidity coupon code mr growit5 will get
+
+72
+00:02:41,840 --> 00:02:45,360
+you a discount on their products and
+
+73
+00:02:43,598 --> 00:02:47,518
+i'll leave a link to their amazon store
+
+74
+00:02:45,360 --> 00:02:49,519
+down in the description section below a
+
+75
+00:02:47,519 --> 00:02:52,080
+big supporter of this podcast is ac
+
+76
+00:02:49,519 --> 00:02:53,439
+infiniti they sponsor this podcast and i
+
+77
+00:02:52,080 --> 00:02:55,519
+use their products
+
+78
+00:02:53,439 --> 00:02:58,158
+ac infinity now has gardening tools and
+
+79
+00:02:55,519 --> 00:02:59,280
+accessories such as heavy duty fabric
+
+80
+00:02:58,158 --> 00:03:02,878
+grill pots
+
+81
+00:02:59,280 --> 00:03:05,439
+trimmers grow room glasses drying racks
+
+82
+00:03:02,878 --> 00:03:06,799
+plant ties and trellis nuts
+
+83
+00:03:05,439 --> 00:03:08,959
+they also have all of the equipment
+
+84
+00:03:06,800 --> 00:03:11,280
+needed for a ventilation system
+
+85
+00:03:08,959 --> 00:03:12,959
+i will leave a link to ac infiniti down
+
+86
+00:03:11,280 --> 00:03:15,120
+in the description section below and you
+
+87
+00:03:12,959 --> 00:03:16,840
+can use discount code mr growit during
+
+88
+00:03:15,120 --> 00:03:20,000
+checkout for a discount on their
+
+89
+00:03:16,840 --> 00:03:22,400
+products all right we are back welcome
+
+90
+00:03:20,000 --> 00:03:24,959
+to the garden talk podcast today i am
+
+91
+00:03:22,400 --> 00:03:27,360
+joined with simon he is the creator of
+
+92
+00:03:24,959 --> 00:03:29,360
+the plant studio how are you doing today
+
+93
+00:03:27,360 --> 00:03:30,959
+great thanks thanks for having me chris
+
+94
+00:03:29,360 --> 00:03:32,879
+yeah thanks for coming on my voice is
+
+95
+00:03:30,959 --> 00:03:34,479
+still a bit raspy apologize for that
+
+96
+00:03:32,878 --> 00:03:36,798
+luckily simon will be doing most of the
+
+97
+00:03:34,479 --> 00:03:38,878
+talking in this episode so you won't
+
+98
+00:03:36,799 --> 00:03:40,640
+have to deal with my raspiness yeah i'm
+
+99
+00:03:38,878 --> 00:03:42,079
+excited for this one today uh we're
+
+100
+00:03:40,639 --> 00:03:44,958
+going to talk about the future of
+
+101
+00:03:42,080 --> 00:03:47,440
+gardening so complete automation you've
+
+102
+00:03:44,959 --> 00:03:49,280
+done quite a bit of work with an
+
+103
+00:03:47,439 --> 00:03:50,400
+automated
+
+104
+00:03:49,280 --> 00:03:52,799
+system
+
+105
+00:03:50,400 --> 00:03:54,640
+box whatever you want to call it an
+
+106
+00:03:52,799 --> 00:03:57,360
+indoor growth setup called the plant
+
+107
+00:03:54,639 --> 00:03:58,719
+studio and before we get too far ahead
+
+108
+00:03:57,360 --> 00:04:00,799
+you're going to be talking all about
+
+109
+00:03:58,719 --> 00:04:02,959
+that today and just automation in
+
+110
+00:04:00,799 --> 00:04:04,799
+general that can be applied to you know
+
+111
+00:04:02,959 --> 00:04:06,719
+homegrown in particular i feel like
+
+112
+00:04:04,799 --> 00:04:08,319
+before we get into the details on all of
+
+113
+00:04:06,719 --> 00:04:10,080
+that though can you tell us a little bit
+
+114
+00:04:08,318 --> 00:04:11,518
+about yourself and kind of how you got
+
+115
+00:04:10,080 --> 00:04:14,879
+into this space
+
+116
+00:04:11,519 --> 00:04:17,519
+sure yeah my name is uh simon romanski
+
+117
+00:04:14,878 --> 00:04:19,918
+i'm uh live in massachusetts i'm
+
+118
+00:04:17,519 --> 00:04:22,879
+originally from england that's where my
+
+119
+00:04:19,918 --> 00:04:24,478
+accent comes from uh i've been growing
+
+120
+00:04:22,879 --> 00:04:26,478
+for a few years
+
+121
+00:04:24,478 --> 00:04:28,399
+i
+
+122
+00:04:26,478 --> 00:04:30,319
+i think i got into growing i mean i'm a
+
+123
+00:04:28,399 --> 00:04:33,039
+technical person so i think i got into
+
+124
+00:04:30,319 --> 00:04:34,639
+growing when i was um in disneyland i
+
+125
+00:04:33,040 --> 00:04:37,120
+think it was that it was epcot and
+
+126
+00:04:34,639 --> 00:04:39,040
+there's a ride called the living land
+
+127
+00:04:37,120 --> 00:04:42,959
+which is a ride that goes through a
+
+128
+00:04:39,040 --> 00:04:45,120
+greenhouse and i remember looking at
+
+129
+00:04:42,959 --> 00:04:45,839
+all these different methods of growing
+
+130
+00:04:45,120 --> 00:04:49,600
+and
+
+131
+00:04:45,839 --> 00:04:52,319
+it just looked very technical and it it
+
+132
+00:04:49,600 --> 00:04:55,280
+just i was blown away by it and in
+
+133
+00:04:52,319 --> 00:04:56,959
+particular i remember the aeroponics uh
+
+134
+00:04:55,279 --> 00:05:00,000
+section they had these plants on the
+
+135
+00:04:56,959 --> 00:05:02,079
+this track that would uh revolve around
+
+136
+00:05:00,000 --> 00:05:03,439
+and they would be suspended they're just
+
+137
+00:05:02,079 --> 00:05:04,879
+holding the plants and the roots are
+
+138
+00:05:03,439 --> 00:05:06,478
+just dangling in the air then they would
+
+139
+00:05:04,879 --> 00:05:07,918
+take them through this little chamber
+
+140
+00:05:06,478 --> 00:05:10,800
+where they would get their
+
+141
+00:05:07,918 --> 00:05:12,799
+mist their water and nutrients basically
+
+142
+00:05:10,800 --> 00:05:14,639
+and i i just was blown away the fact
+
+143
+00:05:12,800 --> 00:05:17,038
+that you know plants could even be grown
+
+144
+00:05:14,639 --> 00:05:19,918
+that way so i think the it's always been
+
+145
+00:05:17,038 --> 00:05:22,560
+the technical that interesting uh you
+
+146
+00:05:19,918 --> 00:05:24,719
+know different side of growing that i
+
+147
+00:05:22,560 --> 00:05:27,759
+found interesting and really what got me
+
+148
+00:05:24,720 --> 00:05:30,560
+started at least um i do think a little
+
+149
+00:05:27,759 --> 00:05:33,360
+differently after growing uh it's not
+
+150
+00:05:30,560 --> 00:05:36,079
+all about the hydroponics i'm definitely
+
+151
+00:05:33,360 --> 00:05:39,038
+a fan of lots of other you know living
+
+152
+00:05:36,079 --> 00:05:41,038
+soils and things like that so um but
+
+153
+00:05:39,038 --> 00:05:43,360
+that's basically where i really think i
+
+154
+00:05:41,038 --> 00:05:45,199
+got my my start from
+
+155
+00:05:43,360 --> 00:05:46,400
+nice nice and i know before we started
+
+156
+00:05:45,199 --> 00:05:49,280
+recording you talked about how you went
+
+157
+00:05:46,399 --> 00:05:51,038
+to school for is it engineering uh
+
+158
+00:05:49,279 --> 00:05:52,638
+mechanical yeah or software engineering
+
+159
+00:05:51,038 --> 00:05:54,639
+or can you talk to us about that
+
+160
+00:05:52,639 --> 00:05:57,360
+yeah i went for um it was information
+
+161
+00:05:54,639 --> 00:06:00,240
+management and technology and basically
+
+162
+00:05:57,360 --> 00:06:01,038
+it's almost it's a went to syracuse um
+
+163
+00:06:00,240 --> 00:06:03,759
+and
+
+164
+00:06:01,038 --> 00:06:07,360
+it's a cross between computer science
+
+165
+00:06:03,759 --> 00:06:10,080
+and management so uh i always say i
+
+166
+00:06:07,360 --> 00:06:12,800
+don't consider myself a programmer more
+
+167
+00:06:10,079 --> 00:06:16,000
+of a developer so i like
+
+168
+00:06:12,800 --> 00:06:17,439
+making solutions with technology as
+
+169
+00:06:16,000 --> 00:06:18,478
+opposed to just
+
+170
+00:06:17,439 --> 00:06:20,800
+you know
+
+171
+00:06:18,478 --> 00:06:22,959
+i don't write the uh the drivers for
+
+172
+00:06:20,800 --> 00:06:26,079
+stuff and all the the super technical
+
+173
+00:06:22,959 --> 00:06:28,638
+stuff but there are so many tools and
+
+174
+00:06:26,079 --> 00:06:30,639
+frameworks and apis and things out there
+
+175
+00:06:28,639 --> 00:06:33,199
+that i love kind of
+
+176
+00:06:30,639 --> 00:06:35,759
+putting stuff together in order to solve
+
+177
+00:06:33,199 --> 00:06:37,759
+problems so that's that's really that's
+
+178
+00:06:35,759 --> 00:06:39,759
+what i went to school for and it you
+
+179
+00:06:37,759 --> 00:06:42,240
+know it's it's been a fit for me ever
+
+180
+00:06:39,759 --> 00:06:43,680
+since gotcha you talked about what you
+
+181
+00:06:42,240 --> 00:06:45,199
+just mentioned it kind of relates to
+
+182
+00:06:43,680 --> 00:06:47,038
+what i used to do i used to work for
+
+183
+00:06:45,199 --> 00:06:49,680
+amazon.com worked in the fulfillment
+
+184
+00:06:47,038 --> 00:06:51,199
+center for eight years i was actually in
+
+185
+00:06:49,680 --> 00:06:53,360
+their support side of things too working
+
+186
+00:06:51,199 --> 00:06:55,199
+with worldwide operations but one thing
+
+187
+00:06:53,360 --> 00:06:56,560
+that they do in their fulfillment
+
+188
+00:06:55,199 --> 00:06:58,478
+centers and i'm sure there's some people
+
+189
+00:06:56,560 --> 00:07:01,280
+watching this that have worked at amazon
+
+190
+00:06:58,478 --> 00:07:03,038
+or work at amazon right now but
+
+191
+00:07:01,279 --> 00:07:04,478
+they pound in your head like the process
+
+192
+00:07:03,038 --> 00:07:06,800
+improvement side of things like
+
+193
+00:07:04,478 --> 00:07:08,639
+streamlining so my mindset has always
+
+194
+00:07:06,800 --> 00:07:11,199
+been like how do we make things more
+
+195
+00:07:08,639 --> 00:07:12,800
+efficient how do we automate things to
+
+196
+00:07:11,199 --> 00:07:15,280
+reduce the amount of labor hours that
+
+197
+00:07:12,800 --> 00:07:16,879
+are are put towards a process
+
+198
+00:07:15,279 --> 00:07:18,879
+yeah so
+
+199
+00:07:16,879 --> 00:07:19,759
+that was actually my first job was and
+
+200
+00:07:18,879 --> 00:07:22,159
+um
+
+201
+00:07:19,759 --> 00:07:23,759
+was working in fulfillment i worked at a
+
+202
+00:07:22,160 --> 00:07:25,280
+fulfillment center
+
+203
+00:07:23,759 --> 00:07:26,639
+and i like the
+
+204
+00:07:25,279 --> 00:07:29,119
+um
+
+205
+00:07:26,639 --> 00:07:31,280
+the order and inventory management
+
+206
+00:07:29,120 --> 00:07:33,120
+and and the back end seeing the packages
+
+207
+00:07:31,279 --> 00:07:34,719
+and the orders and inventory came in and
+
+208
+00:07:33,120 --> 00:07:38,560
+basically what i did for this company is
+
+209
+00:07:34,720 --> 00:07:40,000
+i kind of webified them um it was uh
+
+210
+00:07:38,560 --> 00:07:41,680
+dating myself a little bit it was a
+
+211
+00:07:40,000 --> 00:07:43,120
+while ago where people were still like
+
+212
+00:07:41,680 --> 00:07:45,199
+that the internet built some people
+
+213
+00:07:43,120 --> 00:07:47,598
+didn't even have uh dedicated internet
+
+214
+00:07:45,199 --> 00:07:49,360
+access uh you know continuous internet
+
+215
+00:07:47,598 --> 00:07:52,719
+access and um
+
+216
+00:07:49,360 --> 00:07:56,560
+i basically had something uh wrote
+
+217
+00:07:52,720 --> 00:07:59,199
+some web tools and a web application to
+
+218
+00:07:56,560 --> 00:07:59,918
+allow clients
+
+219
+00:07:59,199 --> 00:08:02,560
+to
+
+220
+00:07:59,918 --> 00:08:04,878
+look and check on inventories inventory
+
+221
+00:08:02,560 --> 00:08:07,038
+and orders themselves without having to
+
+222
+00:08:04,879 --> 00:08:08,879
+call the customer service rep because
+
+223
+00:08:07,038 --> 00:08:10,800
+when i started all these calls were
+
+224
+00:08:08,879 --> 00:08:12,319
+coming in i thought that's crazy why why
+
+225
+00:08:10,800 --> 00:08:14,240
+are you calling you should be able to
+
+226
+00:08:12,319 --> 00:08:16,800
+just look that up yourself
+
+227
+00:08:14,240 --> 00:08:19,038
+so that's kind of where i began was
+
+228
+00:08:16,800 --> 00:08:19,759
+really fulfillment and again i just like
+
+229
+00:08:19,038 --> 00:08:22,240
+the
+
+230
+00:08:19,759 --> 00:08:24,479
+solution providing i like going back in
+
+231
+00:08:22,240 --> 00:08:26,879
+the you know in the warehouse because i
+
+232
+00:08:24,478 --> 00:08:28,000
+worked in the front office and
+
+233
+00:08:26,879 --> 00:08:29,840
+seeing
+
+234
+00:08:28,000 --> 00:08:31,120
+were those pack slips or did it make
+
+235
+00:08:29,839 --> 00:08:33,679
+sense for
+
+236
+00:08:31,120 --> 00:08:36,479
+the pic pack ship part of the
+
+237
+00:08:33,679 --> 00:08:38,000
+fulfillment and so yeah that's
+
+238
+00:08:36,479 --> 00:08:39,120
+similar also with the with the
+
+239
+00:08:38,000 --> 00:08:41,120
+fulfillment
+
+240
+00:08:39,120 --> 00:08:42,719
+yeah so definitely some similarities
+
+241
+00:08:41,120 --> 00:08:44,480
+there and then you took those skills and
+
+242
+00:08:42,719 --> 00:08:46,560
+now you've applied them to horticulture
+
+243
+00:08:44,480 --> 00:08:49,360
+which is pretty cool can you give us a
+
+244
+00:08:46,559 --> 00:08:50,799
+high level overview of the plant studio
+
+245
+00:08:49,360 --> 00:08:53,039
+that you have created
+
+246
+00:08:50,799 --> 00:08:56,000
+yeah i'm sure it's a
+
+247
+00:08:53,039 --> 00:08:58,240
+it's a cultivation machine and it's
+
+248
+00:08:56,000 --> 00:09:00,799
+basically there to control
+
+249
+00:08:58,240 --> 00:09:03,600
+everything above the ground and below
+
+250
+00:09:00,799 --> 00:09:06,079
+the ground it's not really ground
+
+251
+00:09:03,600 --> 00:09:07,839
+pots or chambers or whatever your grow
+
+252
+00:09:06,080 --> 00:09:11,120
+method is but
+
+253
+00:09:07,839 --> 00:09:12,080
+basically root zone and uh environment
+
+254
+00:09:11,120 --> 00:09:14,639
+above
+
+255
+00:09:12,080 --> 00:09:16,959
+and the whole point of it was really to
+
+256
+00:09:14,639 --> 00:09:20,240
+automate as much of the time consuming
+
+257
+00:09:16,958 --> 00:09:22,719
+stuff as possible because i you know
+
+258
+00:09:20,240 --> 00:09:26,000
+when it comes to watering i would forget
+
+259
+00:09:22,720 --> 00:09:27,680
+or if i'm away or if uh you know did if
+
+260
+00:09:26,000 --> 00:09:32,639
+you're doing hydroponics and you're
+
+261
+00:09:27,679 --> 00:09:35,039
+wanting to monitor the the ph or um
+
+262
+00:09:32,639 --> 00:09:38,000
+water levels and temperatures and stuff
+
+263
+00:09:35,039 --> 00:09:40,319
+like that so basically i did it so that
+
+264
+00:09:38,000 --> 00:09:43,200
+i didn't have to spend as much time
+
+265
+00:09:40,320 --> 00:09:45,040
+doing the stuff that i didn't enjoy
+
+266
+00:09:43,200 --> 00:09:47,278
+doing i i didn't mind the plant
+
+267
+00:09:45,039 --> 00:09:49,360
+manipulation stuff but i don't like the
+
+268
+00:09:47,278 --> 00:09:52,240
+stuff where you have to constantly stay
+
+269
+00:09:49,360 --> 00:09:54,959
+on top of it or you know having to go
+
+270
+00:09:52,240 --> 00:09:56,399
+and manually change things in the room
+
+271
+00:09:54,958 --> 00:09:58,319
+environmentally
+
+272
+00:09:56,399 --> 00:10:00,080
+in order you know because
+
+273
+00:09:58,320 --> 00:10:01,920
+you know that the temperature's too high
+
+274
+00:10:00,080 --> 00:10:05,120
+the humidity is off or something like
+
+275
+00:10:01,919 --> 00:10:07,439
+that so that was that was basically my
+
+276
+00:10:05,120 --> 00:10:09,759
+i always say i'm i'm inherently lazy but
+
+277
+00:10:07,440 --> 00:10:12,160
+i'll also go way out of my way to try
+
+278
+00:10:09,759 --> 00:10:14,639
+and automate and to simplify it for
+
+279
+00:10:12,159 --> 00:10:16,719
+myself gotcha and actually on your
+
+280
+00:10:14,639 --> 00:10:18,559
+website i'll mention it right now so
+
+281
+00:10:16,720 --> 00:10:20,160
+people can check it out if they want to
+
+282
+00:10:18,559 --> 00:10:22,559
+and kind of get a visual of what we're
+
+283
+00:10:20,159 --> 00:10:25,559
+about to dive deeper into
+
+284
+00:10:22,559 --> 00:10:30,078
+it's www.plant
+
+285
+00:10:25,559 --> 00:10:30,879
+s-t-u-d dot io it's plant studio but
+
+286
+00:10:30,078 --> 00:10:33,519
+it's
+
+287
+00:10:30,879 --> 00:10:35,600
+you don't even need the ws it's plant
+
+288
+00:10:33,519 --> 00:10:37,600
+stud dot io
+
+289
+00:10:35,600 --> 00:10:39,440
+and so it
+
+290
+00:10:37,600 --> 00:10:41,519
+couldn't get the dot com but uh you know
+
+291
+00:10:39,440 --> 00:10:43,120
+i kinda like the dot io makes sense in a
+
+292
+00:10:41,519 --> 00:10:45,360
+way because it is all about you know
+
+293
+00:10:43,120 --> 00:10:47,679
+input and output so it's plant studio
+
+294
+00:10:45,360 --> 00:10:49,440
+with the dot before the io so check that
+
+295
+00:10:47,679 --> 00:10:50,719
+out if you are interested in that i'll
+
+296
+00:10:49,440 --> 00:10:53,040
+have in the link in the description
+
+297
+00:10:50,720 --> 00:10:55,040
+section below on youtube so you can
+
+298
+00:10:53,039 --> 00:10:57,120
+easily access that there's a great video
+
+299
+00:10:55,039 --> 00:10:59,360
+right on the home page which talks about
+
+300
+00:10:57,120 --> 00:11:00,560
+just a ton of things within a very short
+
+301
+00:10:59,360 --> 00:11:02,959
+period of time
+
+302
+00:11:00,559 --> 00:11:06,000
+about all this automation so let's let's
+
+303
+00:11:02,958 --> 00:11:09,039
+dive deeper into this let's start with
+
+304
+00:11:06,000 --> 00:11:10,559
+the grow area what size growth space is
+
+305
+00:11:09,039 --> 00:11:12,719
+it you know is and what is the plant
+
+306
+00:11:10,559 --> 00:11:15,838
+studio made out of
+
+307
+00:11:12,720 --> 00:11:19,440
+um well so the grow area is it's a five
+
+308
+00:11:15,839 --> 00:11:20,240
+by nine and it has um
+
+309
+00:11:19,440 --> 00:11:23,279
+uh
+
+310
+00:11:20,240 --> 00:11:24,079
+so basically a two light setup and uh
+
+311
+00:11:23,278 --> 00:11:26,399
+it's
+
+312
+00:11:24,078 --> 00:11:28,719
+eight feet tall because high always
+
+313
+00:11:26,399 --> 00:11:30,799
+becomes a big issue when growing you you
+
+314
+00:11:28,720 --> 00:11:32,879
+a lot of people especially indoors are
+
+315
+00:11:30,799 --> 00:11:34,879
+limited by the height size i'm pretty
+
+316
+00:11:32,879 --> 00:11:37,838
+fortunate to be able to have you know
+
+317
+00:11:34,879 --> 00:11:41,039
+pretty high ceilings um the overall
+
+318
+00:11:37,839 --> 00:11:43,120
+dimensions inside the the grow machine
+
+319
+00:11:41,039 --> 00:11:45,199
+is five by 12
+
+320
+00:11:43,120 --> 00:11:46,959
+but the that extra
+
+321
+00:11:45,200 --> 00:11:48,480
+three feet of space is there to
+
+322
+00:11:46,958 --> 00:11:51,439
+accommodate you know the air
+
+323
+00:11:48,480 --> 00:11:53,039
+conditioning dehumidifier fans and
+
+324
+00:11:51,440 --> 00:11:56,399
+and uh basically the equipment that
+
+325
+00:11:53,039 --> 00:11:59,278
+helps manage the environment and gives
+
+326
+00:11:56,399 --> 00:12:02,958
+me some space to actually to you know to
+
+327
+00:11:59,278 --> 00:12:04,559
+get inside the the machine uh to
+
+328
+00:12:02,958 --> 00:12:06,958
+tend to the plants
+
+329
+00:12:04,559 --> 00:12:09,599
+and um that the machine itself is the
+
+330
+00:12:06,958 --> 00:12:12,958
+the box itself is made by um from
+
+331
+00:12:09,600 --> 00:12:15,519
+insulated panels that i came up with
+
+332
+00:12:12,958 --> 00:12:18,799
+it's basically
+
+333
+00:12:15,519 --> 00:12:20,078
+wood that is
+
+334
+00:12:18,799 --> 00:12:23,359
+sandwiches
+
+335
+00:12:20,078 --> 00:12:26,799
+some high density insulated foam and
+
+336
+00:12:23,360 --> 00:12:31,278
+then these panels slot together to make
+
+337
+00:12:26,799 --> 00:12:35,439
+um you know to to make a well insulated
+
+338
+00:12:31,278 --> 00:12:38,078
+um and sealed box so they um you know
+
+339
+00:12:35,440 --> 00:12:39,839
+it's not your typical stick construction
+
+340
+00:12:38,078 --> 00:12:41,519
+like frame where people frame it and
+
+341
+00:12:39,839 --> 00:12:44,880
+then put it up and then insulate it
+
+342
+00:12:41,519 --> 00:12:46,560
+these are like panels okay so this is a
+
+343
+00:12:44,879 --> 00:12:49,439
+sealed environment just to confirm it's
+
+344
+00:12:46,559 --> 00:12:51,759
+a sealed environment you don't have a
+
+345
+00:12:49,440 --> 00:12:53,600
+an intake vent an exhaust fan
+
+346
+00:12:51,759 --> 00:12:55,759
+everything's just kind of recirculating
+
+347
+00:12:53,600 --> 00:12:58,560
+within that environment is that correct
+
+348
+00:12:55,759 --> 00:13:00,319
+yeah yeah i i actually uh i learned this
+
+349
+00:12:58,559 --> 00:13:02,638
+the hard way because
+
+350
+00:13:00,320 --> 00:13:04,879
+my initial grow um
+
+351
+00:13:02,639 --> 00:13:06,799
+was um
+
+352
+00:13:04,879 --> 00:13:08,559
+i didn't have any i wasn't considering
+
+353
+00:13:06,799 --> 00:13:10,879
+any kind of air circulation i mean
+
+354
+00:13:08,559 --> 00:13:14,319
+that's that's how clueless i was and i
+
+355
+00:13:10,879 --> 00:13:16,240
+went away i came back and um i was
+
+356
+00:13:14,320 --> 00:13:18,720
+growing tomatoes in the in the early
+
+357
+00:13:16,240 --> 00:13:21,360
+days and i basically came back and it
+
+358
+00:13:18,720 --> 00:13:22,320
+was just a horrible stink
+
+359
+00:13:21,360 --> 00:13:24,399
+and
+
+360
+00:13:22,320 --> 00:13:26,720
+i didn't know i thought something was
+
+361
+00:13:24,399 --> 00:13:28,399
+rotten and basically i realized that
+
+362
+00:13:26,720 --> 00:13:29,600
+when you
+
+363
+00:13:28,399 --> 00:13:31,440
+um
+
+364
+00:13:29,600 --> 00:13:35,360
+basically uh
+
+365
+00:13:31,440 --> 00:13:37,279
+drown or just deprive the plants um not
+
+366
+00:13:35,360 --> 00:13:39,519
+drown actually it's like just remove all
+
+367
+00:13:37,278 --> 00:13:41,519
+the co2 from the air
+
+368
+00:13:39,519 --> 00:13:42,879
+uh they are not happy just like we
+
+369
+00:13:41,519 --> 00:13:45,919
+wouldn't like you know getting rid of
+
+370
+00:13:42,879 --> 00:13:49,679
+our oxygen and they just make an
+
+371
+00:13:45,919 --> 00:13:51,679
+a crazy smell so when i smelled and i
+
+372
+00:13:49,679 --> 00:13:54,078
+realized i go oh
+
+373
+00:13:51,679 --> 00:13:56,399
+i i need to change the air then i
+
+374
+00:13:54,078 --> 00:13:58,000
+realized i had two different choices
+
+375
+00:13:56,399 --> 00:14:00,639
+and you can either and that's a lot of
+
+376
+00:13:58,000 --> 00:14:02,958
+the choices it's like do you circulate i
+
+377
+00:14:00,639 --> 00:14:05,440
+mean do you do you have a sealed room or
+
+378
+00:14:02,958 --> 00:14:07,679
+do you um circulate and bring in the
+
+379
+00:14:05,440 --> 00:14:09,279
+outside in uh environment
+
+380
+00:14:07,679 --> 00:14:12,638
+and um
+
+381
+00:14:09,278 --> 00:14:17,198
+in the end i just decided that a sealed
+
+382
+00:14:12,639 --> 00:14:18,959
+room is just much easier to control
+
+383
+00:14:17,198 --> 00:14:20,000
+and to maintain
+
+384
+00:14:18,958 --> 00:14:22,479
+because
+
+385
+00:14:20,000 --> 00:14:24,879
+i'm not pulling any i'm not dependent on
+
+386
+00:14:22,480 --> 00:14:26,800
+an outside environment that i'm then
+
+387
+00:14:24,879 --> 00:14:28,879
+pulling into that room
+
+388
+00:14:26,799 --> 00:14:30,958
+sometimes it might make sense it's
+
+389
+00:14:28,879 --> 00:14:33,439
+cooler outside i can bring the air in
+
+390
+00:14:30,958 --> 00:14:36,239
+and it could cool it down and it's to
+
+391
+00:14:33,440 --> 00:14:38,480
+the humidity builds up quickly and
+
+392
+00:14:36,240 --> 00:14:41,440
+sometimes you go well we've got to pump
+
+393
+00:14:38,480 --> 00:14:43,039
+the air out and get rid of that that
+
+394
+00:14:41,440 --> 00:14:44,480
+extra humidity
+
+395
+00:14:43,039 --> 00:14:45,759
+but then
+
+396
+00:14:44,480 --> 00:14:48,079
+um
+
+397
+00:14:45,759 --> 00:14:49,679
+again you're dependent on that outside
+
+398
+00:14:48,078 --> 00:14:52,000
+environment
+
+399
+00:14:49,679 --> 00:14:54,319
+so the trade-off though is then if
+
+400
+00:14:52,000 --> 00:14:55,679
+you're dealing with temperatures
+
+401
+00:14:54,320 --> 00:14:59,199
+typically you're going to be dealing
+
+402
+00:14:55,679 --> 00:15:01,838
+with cooling um because the lights put
+
+403
+00:14:59,198 --> 00:15:02,958
+off heat it's insulated so now you have
+
+404
+00:15:01,839 --> 00:15:05,120
+to cool
+
+405
+00:15:02,958 --> 00:15:07,278
+the heat of the lights you have to cool
+
+406
+00:15:05,120 --> 00:15:08,879
+that excess heat that comes off the
+
+407
+00:15:07,278 --> 00:15:10,879
+dehumidifier
+
+408
+00:15:08,879 --> 00:15:12,879
+because it does still put out heat just
+
+409
+00:15:10,879 --> 00:15:15,360
+despite the fact that it's got the the
+
+410
+00:15:12,879 --> 00:15:18,159
+cooling side you know it overall
+
+411
+00:15:15,360 --> 00:15:21,519
+generates more than it um removes
+
+412
+00:15:18,159 --> 00:15:23,439
+um but again the benefit was also
+
+413
+00:15:21,519 --> 00:15:26,639
+controlling the environment not pulling
+
+414
+00:15:23,440 --> 00:15:28,240
+any pests or any pathogens potentially
+
+415
+00:15:26,639 --> 00:15:29,919
+in
+
+416
+00:15:28,240 --> 00:15:32,320
+the down
+
+417
+00:15:29,919 --> 00:15:34,958
+the tricky part is making sure that you
+
+418
+00:15:32,320 --> 00:15:38,639
+can size the equipment
+
+419
+00:15:34,958 --> 00:15:39,679
+so that it is able to deal with
+
+420
+00:15:38,639 --> 00:15:42,159
+say
+
+421
+00:15:39,679 --> 00:15:44,958
+late stages of growth where your plants
+
+422
+00:15:42,159 --> 00:15:47,198
+are big and they're putting off a lot of
+
+423
+00:15:44,958 --> 00:15:48,719
+um they're transpiring a lot there's a
+
+424
+00:15:47,198 --> 00:15:52,078
+lot of humidity
+
+425
+00:15:48,720 --> 00:15:53,440
+and um the lights are full bright um
+
+426
+00:15:52,078 --> 00:15:54,958
+cranked up
+
+427
+00:15:53,440 --> 00:15:56,639
+and um
+
+428
+00:15:54,958 --> 00:15:59,198
+you know that that's that's a little
+
+429
+00:15:56,639 --> 00:16:01,680
+that that was a little tricky but um i
+
+430
+00:15:59,198 --> 00:16:02,639
+would say that my my one tip is as far
+
+431
+00:16:01,679 --> 00:16:04,879
+as
+
+432
+00:16:02,639 --> 00:16:07,198
+people being able to size correctly you
+
+433
+00:16:04,879 --> 00:16:09,278
+take take the wattage of all the things
+
+434
+00:16:07,198 --> 00:16:12,000
+that you have in that box
+
+435
+00:16:09,278 --> 00:16:14,078
+and then multiply that by four
+
+436
+00:16:12,000 --> 00:16:15,039
+and then whatever number you get from
+
+437
+00:16:14,078 --> 00:16:18,638
+that
+
+438
+00:16:15,039 --> 00:16:20,078
+is basically how many btus you would
+
+439
+00:16:18,639 --> 00:16:21,120
+need to
+
+440
+00:16:20,078 --> 00:16:23,359
+remove
+
+441
+00:16:21,120 --> 00:16:26,560
+that you would get so for me
+
+442
+00:16:23,360 --> 00:16:30,240
+about 3 000 my machine running at full
+
+443
+00:16:26,559 --> 00:16:31,958
+capacity uh with both lights on uh with
+
+444
+00:16:30,240 --> 00:16:34,399
+the air conditioning and the
+
+445
+00:16:31,958 --> 00:16:36,559
+dehumidification running and when i'm
+
+446
+00:16:34,399 --> 00:16:39,360
+running the large dehumidifier
+
+447
+00:16:36,559 --> 00:16:43,679
+there's about 3 000 watts max that that
+
+448
+00:16:39,360 --> 00:16:46,959
+runs so 3 000 times 4 1200
+
+449
+00:16:43,679 --> 00:16:51,519
+12 000 excuse me and 12 000 is
+
+450
+00:16:46,958 --> 00:16:54,078
+considered one ton so i i have a one ton
+
+451
+00:16:51,519 --> 00:16:56,959
+mini split and it's actually
+
+452
+00:16:54,078 --> 00:16:59,039
+more than capable of cooling because
+
+453
+00:16:56,958 --> 00:17:02,078
+you know with your watts
+
+454
+00:16:59,039 --> 00:17:04,558
+that is for also heat watch the the
+
+455
+00:17:02,078 --> 00:17:06,558
+like light a lot of that is going into
+
+456
+00:17:04,558 --> 00:17:09,279
+your photons and it's not coming off
+
+457
+00:17:06,558 --> 00:17:12,078
+directly as as heat so
+
+458
+00:17:09,279 --> 00:17:14,160
+it's good to over more oversized you
+
+459
+00:17:12,078 --> 00:17:15,678
+don't want to go too big but you
+
+460
+00:17:14,160 --> 00:17:17,279
+definitely have to make sure that you
+
+461
+00:17:15,679 --> 00:17:19,759
+can keep up with the the heat and the
+
+462
+00:17:17,279 --> 00:17:21,678
+humidity in that in the you know sealed
+
+463
+00:17:19,759 --> 00:17:24,240
+room that makes sense and just to
+
+464
+00:17:21,679 --> 00:17:26,480
+reiterate you said two lights that
+
+465
+00:17:24,240 --> 00:17:27,838
+you're running the leds
+
+466
+00:17:26,480 --> 00:17:30,000
+and according to your website that they
+
+467
+00:17:27,838 --> 00:17:31,918
+come in at 2.3 micromoles per joule so
+
+468
+00:17:30,000 --> 00:17:33,519
+you got some good efficiency there i
+
+469
+00:17:31,919 --> 00:17:35,440
+know people going to be asking this can
+
+470
+00:17:33,519 --> 00:17:37,679
+you tell us what diodes and driver
+
+471
+00:17:35,440 --> 00:17:39,840
+you're using for those lights i you know
+
+472
+00:17:37,679 --> 00:17:42,400
+i don't know i've had these for a few
+
+473
+00:17:39,839 --> 00:17:43,918
+years they're the fluence um
+
+474
+00:17:42,400 --> 00:17:47,360
+spider
+
+475
+00:17:43,919 --> 00:17:49,280
+the spider x plus and
+
+476
+00:17:47,359 --> 00:17:51,119
+they don't actually even make these bars
+
+477
+00:17:49,279 --> 00:17:52,160
+anymore which is almost unfortunate
+
+478
+00:17:51,119 --> 00:17:54,399
+because i
+
+479
+00:17:52,160 --> 00:17:58,000
+i'm definitely a big fan of the bar
+
+480
+00:17:54,400 --> 00:17:59,120
+style light fixtures
+
+481
+00:17:58,000 --> 00:18:00,480
+because
+
+482
+00:17:59,119 --> 00:18:03,199
+i believe it's
+
+483
+00:18:00,480 --> 00:18:05,919
+most closely represents the sun
+
+484
+00:18:03,200 --> 00:18:08,319
+and when it comes to like uh penetration
+
+485
+00:18:05,919 --> 00:18:10,559
+of the light for your plants
+
+486
+00:18:08,319 --> 00:18:12,879
+if you've got my whole ceiling basically
+
+487
+00:18:10,558 --> 00:18:15,200
+there's like 16 bars that go from the
+
+488
+00:18:12,880 --> 00:18:17,919
+back to the you know all the way across
+
+489
+00:18:15,200 --> 00:18:20,880
+the grow area and
+
+490
+00:18:17,919 --> 00:18:23,520
+the sun is basically like a giant beam
+
+491
+00:18:20,880 --> 00:18:26,400
+coming down it's not it as much as a
+
+492
+00:18:23,519 --> 00:18:28,160
+spotlight it's a point
+
+493
+00:18:26,400 --> 00:18:30,080
+as far as we're concerned the photons
+
+494
+00:18:28,160 --> 00:18:31,200
+are coming um
+
+495
+00:18:30,079 --> 00:18:33,759
+they
+
+496
+00:18:31,200 --> 00:18:34,880
+they're not coming from a point um
+
+497
+00:18:33,759 --> 00:18:37,839
+it doesn't it's
+
+498
+00:18:34,880 --> 00:18:38,799
+it makes a lot more sense and
+
+499
+00:18:37,839 --> 00:18:42,240
+um
+
+500
+00:18:38,798 --> 00:18:44,879
+the other thing i liked with the leds um
+
+501
+00:18:42,240 --> 00:18:47,919
+is that you can get them a lot closer to
+
+502
+00:18:44,880 --> 00:18:50,720
+your plants um i i
+
+503
+00:18:47,919 --> 00:18:51,679
+depending on what style of leds that you
+
+504
+00:18:50,720 --> 00:18:54,240
+use
+
+505
+00:18:51,679 --> 00:18:56,559
+it will vary how much
+
+506
+00:18:54,240 --> 00:18:58,400
+how many how much your photons drop off
+
+507
+00:18:56,558 --> 00:19:00,399
+based on the distance
+
+508
+00:18:58,400 --> 00:19:01,919
+because the fluents don't have the
+
+509
+00:19:00,400 --> 00:19:03,679
+lenses on these
+
+510
+00:19:01,919 --> 00:19:08,160
+the diodes
+
+511
+00:19:03,679 --> 00:19:10,480
+i find that the the drop off in your ptm
+
+512
+00:19:08,160 --> 00:19:11,919
+ppfd is really
+
+513
+00:19:10,480 --> 00:19:15,279
+um
+
+514
+00:19:11,919 --> 00:19:18,000
+if the photon rate drops off a lot
+
+515
+00:19:15,279 --> 00:19:18,960
+if you just for every foot you you bring
+
+516
+00:19:18,000 --> 00:19:21,519
+it up
+
+517
+00:19:18,960 --> 00:19:23,919
+so you know i do play around with
+
+518
+00:19:21,519 --> 00:19:25,839
+dimming the lights but then also being
+
+519
+00:19:23,919 --> 00:19:28,320
+able to bring the lights
+
+520
+00:19:25,839 --> 00:19:31,519
+down closer to the canopy
+
+521
+00:19:28,319 --> 00:19:34,639
+using less electricity generating less
+
+522
+00:19:31,519 --> 00:19:36,319
+heat less air conditioning to require to
+
+523
+00:19:34,640 --> 00:19:39,200
+cool it
+
+524
+00:19:36,319 --> 00:19:40,079
+but again towards the end those lights
+
+525
+00:19:39,200 --> 00:19:43,360
+are just
+
+526
+00:19:40,079 --> 00:19:45,279
+just cranked up and uh the plants they
+
+527
+00:19:43,359 --> 00:19:46,719
+they don't care they they want as much
+
+528
+00:19:45,279 --> 00:19:48,960
+as you can give them
+
+529
+00:19:46,720 --> 00:19:51,360
+gotcha that makes sense a couple more
+
+530
+00:19:48,960 --> 00:19:53,519
+things about the actual equipment and
+
+531
+00:19:51,359 --> 00:19:55,839
+setup before we dive into the actual
+
+532
+00:19:53,519 --> 00:19:57,200
+platform so with the sealed environment
+
+533
+00:19:55,839 --> 00:20:00,319
+generally speaking i think a lot of
+
+534
+00:19:57,200 --> 00:20:02,720
+people know this is you gotta run co2 i
+
+535
+00:20:00,319 --> 00:20:05,038
+believe you're running co2 tanks
+
+536
+00:20:02,720 --> 00:20:07,919
+inside the studio you probably have a
+
+537
+00:20:05,038 --> 00:20:09,119
+you must have a humidifier dehumidifier
+
+538
+00:20:07,919 --> 00:20:11,200
+can you talk to us about the equipment
+
+539
+00:20:09,119 --> 00:20:12,719
+and then also air circulation can you
+
+540
+00:20:11,200 --> 00:20:13,440
+talk to us about how all of that is kind
+
+541
+00:20:12,720 --> 00:20:15,279
+of
+
+542
+00:20:13,440 --> 00:20:17,919
+set up within the space and how the air
+
+543
+00:20:15,279 --> 00:20:19,038
+circulation is achieved in there yeah so
+
+544
+00:20:17,919 --> 00:20:22,320
+um
+
+545
+00:20:19,038 --> 00:20:26,400
+uh the the co2 side of things i have two
+
+546
+00:20:22,319 --> 00:20:30,480
+tanks uh that sit outside they uh piped
+
+547
+00:20:26,400 --> 00:20:34,159
+in and the co2 which naturally drops uh
+
+548
+00:20:30,480 --> 00:20:36,159
+there's uh two tubes above the fan which
+
+549
+00:20:34,159 --> 00:20:38,960
+sits at one end of the which is the
+
+550
+00:20:36,159 --> 00:20:40,159
+machine side of the the system side of
+
+551
+00:20:38,960 --> 00:20:41,600
+the studio
+
+552
+00:20:40,159 --> 00:20:45,440
+that
+
+553
+00:20:41,599 --> 00:20:49,439
+blows the co2 and circulates it around
+
+554
+00:20:45,440 --> 00:20:52,159
+as it's needed i have a sensor that can
+
+555
+00:20:49,440 --> 00:20:55,200
+be raised and lowered um
+
+556
+00:20:52,159 --> 00:20:58,880
+manually from the machine side
+
+557
+00:20:55,200 --> 00:21:03,120
+that i keep at basically canopy level
+
+558
+00:20:58,880 --> 00:21:07,280
+so that co2 sensor is basically i'm i i
+
+559
+00:21:03,119 --> 00:21:10,959
+do run elevated co2 levels um
+
+560
+00:21:07,279 --> 00:21:12,240
+which is a big benefit of having a
+
+561
+00:21:10,960 --> 00:21:14,960
+sealed room
+
+562
+00:21:12,240 --> 00:21:17,759
+and the other thing is that
+
+563
+00:21:14,960 --> 00:21:20,880
+because the room is so well sealed
+
+564
+00:21:17,759 --> 00:21:24,879
+that for an entire grow i won't
+
+565
+00:21:20,880 --> 00:21:27,760
+use maybe 10 pounds of co2
+
+566
+00:21:24,880 --> 00:21:28,799
+and i think a lot of people struggle
+
+567
+00:21:27,759 --> 00:21:30,960
+with
+
+568
+00:21:28,798 --> 00:21:33,839
+tanks saying well you know i'm burning
+
+569
+00:21:30,960 --> 00:21:36,079
+through tanks all the time but when the
+
+570
+00:21:33,839 --> 00:21:38,319
+room is really well sealed
+
+571
+00:21:36,079 --> 00:21:40,158
+um it's it's
+
+572
+00:21:38,319 --> 00:21:42,879
+very it's a minimal
+
+573
+00:21:40,159 --> 00:21:46,000
+overhead um i did have one at one
+
+574
+00:21:42,880 --> 00:21:48,799
+situation where my tank did run out
+
+575
+00:21:46,000 --> 00:21:51,440
+and um what i ended up doing was you
+
+576
+00:21:48,798 --> 00:21:54,240
+know i have a secondary tank when it
+
+577
+00:21:51,440 --> 00:21:57,120
+detects that one tank is is you know
+
+578
+00:21:54,240 --> 00:21:59,759
+when when when the tank is on
+
+579
+00:21:57,119 --> 00:22:02,158
+and the system sees that the co2 levels
+
+580
+00:21:59,759 --> 00:22:05,119
+aren't rising it will then assume that
+
+581
+00:22:02,159 --> 00:22:05,840
+that tank is empty and then flip over to
+
+582
+00:22:05,119 --> 00:22:08,639
+the
+
+583
+00:22:05,839 --> 00:22:10,798
+the secondary tank because again you
+
+584
+00:22:08,640 --> 00:22:13,038
+know what happens if the co2 runs out
+
+585
+00:22:10,798 --> 00:22:16,480
+and you don't want to just change out
+
+586
+00:22:13,038 --> 00:22:18,720
+your co2 before it totally depletes just
+
+587
+00:22:16,480 --> 00:22:20,720
+uh just in case because you know you've
+
+588
+00:22:18,720 --> 00:22:23,360
+got extra co2 in there you might as well
+
+589
+00:22:20,720 --> 00:22:26,798
+use it until it's gone so i i have the
+
+590
+00:22:23,359 --> 00:22:29,279
+redundancy in the on the co2 and the air
+
+591
+00:22:26,798 --> 00:22:30,558
+circulation currently i have a fan that
+
+592
+00:22:29,279 --> 00:22:33,440
+um
+
+593
+00:22:30,558 --> 00:22:36,558
+an oscillating fan and it's a small room
+
+594
+00:22:33,440 --> 00:22:39,519
+and it does really well at keeping
+
+595
+00:22:36,558 --> 00:22:41,678
+pretty good airflow in there i also have
+
+596
+00:22:39,519 --> 00:22:44,720
+a carbon filter
+
+597
+00:22:41,679 --> 00:22:46,000
+and it is they it pulls the air from
+
+598
+00:22:44,720 --> 00:22:49,279
+lower down
+
+599
+00:22:46,000 --> 00:22:52,319
+um and basically goes up it's it's a 10
+
+600
+00:22:49,279 --> 00:22:55,279
+inch pipe and then shoots that air
+
+601
+00:22:52,319 --> 00:22:57,439
+over the over the plants also so it's
+
+602
+00:22:55,279 --> 00:23:00,158
+kind of constantly stirring
+
+603
+00:22:57,440 --> 00:23:02,798
+but even with those two systems i find
+
+604
+00:23:00,159 --> 00:23:05,679
+that i think i could improve on air
+
+605
+00:23:02,798 --> 00:23:07,119
+circulation so my now my next upgrade is
+
+606
+00:23:05,679 --> 00:23:10,798
+i will have
+
+607
+00:23:07,119 --> 00:23:13,439
+two tubes going along the sides
+
+608
+00:23:10,798 --> 00:23:14,879
+on the floor and along the ceiling which
+
+609
+00:23:13,440 --> 00:23:17,440
+are connected
+
+610
+00:23:14,880 --> 00:23:19,919
+for the entire length of the box and
+
+611
+00:23:17,440 --> 00:23:21,038
+then i'll be circulating the air from
+
+612
+00:23:19,919 --> 00:23:22,640
+either
+
+613
+00:23:21,038 --> 00:23:24,400
+from the underneath
+
+614
+00:23:22,640 --> 00:23:27,200
+and and pulling the the cool air from
+
+615
+00:23:24,400 --> 00:23:29,360
+underneath bringing it up to the the
+
+616
+00:23:27,200 --> 00:23:31,200
+ceiling and um
+
+617
+00:23:29,359 --> 00:23:33,199
+sending it out that way across these
+
+618
+00:23:31,200 --> 00:23:34,720
+long pipes so it's not just blowing out
+
+619
+00:23:33,200 --> 00:23:37,600
+goes down the pipe and then comes out
+
+620
+00:23:34,720 --> 00:23:38,720
+all the holes in the pipe to give more
+
+621
+00:23:37,599 --> 00:23:40,399
+of a
+
+622
+00:23:38,720 --> 00:23:43,120
+trying to get more of a laminar flow
+
+623
+00:23:40,400 --> 00:23:45,360
+because they said with co2
+
+624
+00:23:43,119 --> 00:23:46,719
+for the plants to really benefit from it
+
+625
+00:23:45,359 --> 00:23:49,519
+doesn't need
+
+626
+00:23:46,720 --> 00:23:51,839
+a lot of agitation but it just needs
+
+627
+00:23:49,519 --> 00:23:54,319
+constant air movement and it's the
+
+628
+00:23:51,839 --> 00:23:56,798
+stagnant areas within the canopy that
+
+629
+00:23:54,319 --> 00:23:58,558
+become the problem uh it doesn't always
+
+630
+00:23:56,798 --> 00:24:02,158
+require just big fans blasting
+
+631
+00:23:58,558 --> 00:24:04,879
+everything just enough slow movement um
+
+632
+00:24:02,159 --> 00:24:05,840
+and and the plants uh supposedly fine
+
+633
+00:24:04,880 --> 00:24:07,760
+that's what that's what i've been
+
+634
+00:24:05,839 --> 00:24:09,439
+reading i always i do a lot of research
+
+635
+00:24:07,759 --> 00:24:11,359
+and then i come up with um try and come
+
+636
+00:24:09,440 --> 00:24:13,679
+up with a solution to see if that
+
+637
+00:24:11,359 --> 00:24:15,759
+actually helps and i'm still playing
+
+638
+00:24:13,679 --> 00:24:17,200
+with the idea of am i going to take the
+
+639
+00:24:15,759 --> 00:24:18,798
+air from the top
+
+640
+00:24:17,200 --> 00:24:19,759
+bring it down to the
+
+641
+00:24:18,798 --> 00:24:22,319
+floor
+
+642
+00:24:19,759 --> 00:24:23,839
+and let that you know hot air will that
+
+643
+00:24:22,319 --> 00:24:25,678
+rise
+
+644
+00:24:23,839 --> 00:24:27,278
+or would i be better off doing it the
+
+645
+00:24:25,679 --> 00:24:28,960
+other way around but
+
+646
+00:24:27,278 --> 00:24:31,038
+it's easy enough to flip the direction
+
+647
+00:24:28,960 --> 00:24:32,400
+of the fan and i'll be experimenting
+
+648
+00:24:31,038 --> 00:24:34,400
+with both ways and
+
+649
+00:24:32,400 --> 00:24:36,559
+figure out which which works best i
+
+650
+00:24:34,400 --> 00:24:38,640
+guess okay so that's co2 and air
+
+651
+00:24:36,558 --> 00:24:40,558
+circulation now for the
+
+652
+00:24:38,640 --> 00:24:42,480
+humidifier and dehumidifier that's
+
+653
+00:24:40,558 --> 00:24:44,639
+controlling your relative humidity and
+
+654
+00:24:42,480 --> 00:24:46,159
+also the heater and the air conditioner
+
+655
+00:24:44,640 --> 00:24:48,000
+that's controlling the temperature are
+
+656
+00:24:46,159 --> 00:24:51,600
+those pieces of equipment
+
+657
+00:24:48,000 --> 00:24:53,839
+inside the box or is it outside the box
+
+658
+00:24:51,599 --> 00:24:56,480
+everything is inside because everything
+
+659
+00:24:53,839 --> 00:24:59,038
+except for the co2 is inside the the
+
+660
+00:24:56,480 --> 00:25:02,640
+tanks for the co2 are external so that
+
+661
+00:24:59,038 --> 00:25:03,599
+and that gets uh pumped in i mean
+
+662
+00:25:02,640 --> 00:25:06,880
+um
+
+663
+00:25:03,599 --> 00:25:09,918
+all the electric work um is i have an
+
+664
+00:25:06,880 --> 00:25:12,320
+actual a sub panel on the outside and
+
+665
+00:25:09,919 --> 00:25:15,520
+then conduit that
+
+666
+00:25:12,319 --> 00:25:18,079
+goes into the surface mount boxes um for
+
+667
+00:25:15,519 --> 00:25:21,359
+the outlets and even those
+
+668
+00:25:18,079 --> 00:25:24,240
+are sealed um with foam
+
+669
+00:25:21,359 --> 00:25:25,038
+so that no air escapes
+
+670
+00:25:24,240 --> 00:25:28,319
+um
+
+671
+00:25:25,038 --> 00:25:31,200
+so yeah the dehumidifiers inside that's
+
+672
+00:25:28,319 --> 00:25:34,240
+also one currently i'm still using
+
+673
+00:25:31,200 --> 00:25:36,480
+your regular a regular dehumidifier and
+
+674
+00:25:34,240 --> 00:25:38,880
+i found that i um
+
+675
+00:25:36,480 --> 00:25:40,839
+when the the plants were smaller i did
+
+676
+00:25:38,880 --> 00:25:43,360
+better using a smaller
+
+677
+00:25:40,839 --> 00:25:46,000
+dehumidifier um so that it wasn't
+
+678
+00:25:43,359 --> 00:25:47,678
+cycling as much and then as they get
+
+679
+00:25:46,000 --> 00:25:50,558
+bigger i switched to a larger
+
+680
+00:25:47,679 --> 00:25:51,840
+dehumidifier and then if if when when
+
+681
+00:25:50,558 --> 00:25:54,399
+you can also the great thing with the
+
+682
+00:25:51,839 --> 00:25:55,119
+box it can also be used for for the you
+
+683
+00:25:54,400 --> 00:25:57,360
+know
+
+684
+00:25:55,119 --> 00:26:00,079
+post post harvest and in the drying
+
+685
+00:25:57,359 --> 00:26:02,798
+phase and when it that happens then i
+
+686
+00:26:00,079 --> 00:26:05,918
+actually switched to a um desiccant
+
+687
+00:26:02,798 --> 00:26:08,319
+based dehumidifier which is
+
+688
+00:26:05,919 --> 00:26:10,000
+uh able to deal with the cooler
+
+689
+00:26:08,319 --> 00:26:12,000
+temperatures
+
+690
+00:26:10,000 --> 00:26:13,679
+it doesn't have the volume
+
+691
+00:26:12,000 --> 00:26:15,839
+but you can have a much cooler
+
+692
+00:26:13,679 --> 00:26:16,880
+temperature and remove
+
+693
+00:26:15,839 --> 00:26:20,079
+um
+
+694
+00:26:16,880 --> 00:26:23,120
+i found it's just a lot more efficient
+
+695
+00:26:20,079 --> 00:26:24,720
+at for power usage and it just works a
+
+696
+00:26:23,119 --> 00:26:28,719
+lot better so
+
+697
+00:26:24,720 --> 00:26:33,200
+i also am planning on incorporating a
+
+698
+00:26:28,720 --> 00:26:34,720
+larger built-in ducted dehumidifier
+
+699
+00:26:33,200 --> 00:26:36,480
+um
+
+700
+00:26:34,720 --> 00:26:39,600
+so that um
+
+701
+00:26:36,480 --> 00:26:41,519
+again to to give more control uh you can
+
+702
+00:26:39,599 --> 00:26:44,319
+get dehumidifiers these days that are
+
+703
+00:26:41,519 --> 00:26:46,000
+wi-fi based so you can see if it's
+
+704
+00:26:44,319 --> 00:26:47,759
+getting you know if your humidity is
+
+705
+00:26:46,000 --> 00:26:50,558
+getting too high you could remotely go
+
+706
+00:26:47,759 --> 00:26:51,679
+in and and lower that
+
+707
+00:26:50,558 --> 00:26:53,678
+and
+
+708
+00:26:51,679 --> 00:26:55,278
+again with the bigger systems there's
+
+709
+00:26:53,679 --> 00:26:57,840
+always um a
+
+710
+00:26:55,278 --> 00:27:00,480
+control panel interface where you can
+
+711
+00:26:57,839 --> 00:27:03,359
+then take some electronics and i could
+
+712
+00:27:00,480 --> 00:27:05,759
+then take my computers my environment
+
+713
+00:27:03,359 --> 00:27:06,798
+controller and have those directly
+
+714
+00:27:05,759 --> 00:27:08,879
+control
+
+715
+00:27:06,798 --> 00:27:11,278
+the dehumidifier rather than just having
+
+716
+00:27:08,880 --> 00:27:13,520
+it constantly on and turning it on and
+
+717
+00:27:11,278 --> 00:27:16,240
+off with turning the the outlet on and
+
+718
+00:27:13,519 --> 00:27:18,960
+off which can be done but isn't really
+
+719
+00:27:16,240 --> 00:27:20,240
+an ideal way of of doing it gotcha we'll
+
+720
+00:27:18,960 --> 00:27:21,919
+get deeper into the environmental
+
+721
+00:27:20,240 --> 00:27:24,079
+controller and the
+
+722
+00:27:21,919 --> 00:27:26,320
+studio platform in a minute here last
+
+723
+00:27:24,079 --> 00:27:29,439
+thing i want to cover is can this system
+
+724
+00:27:26,319 --> 00:27:30,798
+be used for soil cocoa and or
+
+725
+00:27:29,440 --> 00:27:32,640
+hydroponics
+
+726
+00:27:30,798 --> 00:27:35,918
+yeah yeah because
+
+727
+00:27:32,640 --> 00:27:38,000
+really the the environment itself
+
+728
+00:27:35,919 --> 00:27:40,880
+which is just your your air temperature
+
+729
+00:27:38,000 --> 00:27:43,599
+humidity and co2 levels doesn't really
+
+730
+00:27:40,880 --> 00:27:44,480
+mind what method that you're using to
+
+731
+00:27:43,599 --> 00:27:47,599
+grow
+
+732
+00:27:44,480 --> 00:27:48,720
+uh aeroponics was my initial because i
+
+733
+00:27:47,599 --> 00:27:50,959
+thought
+
+734
+00:27:48,720 --> 00:27:52,798
+well it's a great way the roots get tons
+
+735
+00:27:50,960 --> 00:27:55,200
+of oxygen this way and i don't have to
+
+736
+00:27:52,798 --> 00:27:56,319
+deal with the media
+
+737
+00:27:55,200 --> 00:27:57,440
+at all
+
+738
+00:27:56,319 --> 00:27:59,599
+and so
+
+739
+00:27:57,440 --> 00:28:02,960
+that's one less thing to deal with
+
+740
+00:27:59,599 --> 00:28:06,158
+and i've had great success using
+
+741
+00:28:02,960 --> 00:28:09,360
+aeroponics um and it's it is kind of a
+
+742
+00:28:06,159 --> 00:28:12,240
+crazy way of growing because you you
+
+743
+00:28:09,359 --> 00:28:13,918
+missed the roots for for three seconds
+
+744
+00:28:12,240 --> 00:28:16,240
+every three minutes
+
+745
+00:28:13,919 --> 00:28:17,278
+and besides that they're just dangling
+
+746
+00:28:16,240 --> 00:28:18,480
+in
+
+747
+00:28:17,278 --> 00:28:20,798
+the dark
+
+748
+00:28:18,480 --> 00:28:24,079
+and you know this is high pressure
+
+749
+00:28:20,798 --> 00:28:26,960
+aeroponics this is not like your typical
+
+750
+00:28:24,079 --> 00:28:29,519
+cloner that has those little ray red
+
+751
+00:28:26,960 --> 00:28:32,399
+nozzles um just
+
+752
+00:28:29,519 --> 00:28:35,278
+spraying constantly this is a highly
+
+753
+00:28:32,398 --> 00:28:36,798
+atomized um mist
+
+754
+00:28:35,278 --> 00:28:40,159
+with um
+
+755
+00:28:36,798 --> 00:28:42,839
+special nozzles and it's that that it's
+
+756
+00:28:40,159 --> 00:28:46,159
+very fine and the mist
+
+757
+00:28:42,839 --> 00:28:46,959
+um the emitters are at the bottom and as
+
+758
+00:28:46,159 --> 00:28:50,320
+they
+
+759
+00:28:46,960 --> 00:28:53,120
+uh they fire they would they
+
+760
+00:28:50,319 --> 00:28:56,480
+they they circulate and it really swirls
+
+761
+00:28:53,119 --> 00:28:59,119
+around inside and it stays suspended for
+
+762
+00:28:56,480 --> 00:29:01,278
+a while before it even settles so it's a
+
+763
+00:28:59,119 --> 00:29:03,599
+great way of basically touching all the
+
+764
+00:29:01,278 --> 00:29:07,119
+different like all the the parts of the
+
+765
+00:29:03,599 --> 00:29:10,079
+route and getting great coverage um but
+
+766
+00:29:07,119 --> 00:29:12,798
+again i my last my last grow was in
+
+767
+00:29:10,079 --> 00:29:14,798
+cocoa which was just a departure i
+
+768
+00:29:12,798 --> 00:29:17,119
+wanted to try something different
+
+769
+00:29:14,798 --> 00:29:18,960
+because i didn't want these big chambers
+
+770
+00:29:17,119 --> 00:29:21,038
+and plants locked into a chamber i
+
+771
+00:29:18,960 --> 00:29:22,960
+wanted to have some flexibility of
+
+772
+00:29:21,038 --> 00:29:24,319
+plants and being able to actually move
+
+773
+00:29:22,960 --> 00:29:25,200
+them around
+
+774
+00:29:24,319 --> 00:29:27,359
+and
+
+775
+00:29:25,200 --> 00:29:30,080
+so i did a coco grow
+
+776
+00:29:27,359 --> 00:29:33,439
+and um my but my next grow is actually
+
+777
+00:29:30,079 --> 00:29:35,038
+going to be using a living soil and
+
+778
+00:29:33,440 --> 00:29:37,679
+i've got uh
+
+779
+00:29:35,038 --> 00:29:40,558
+a whole different a whole new system set
+
+780
+00:29:37,679 --> 00:29:42,320
+up that that i think is going to be um
+
+781
+00:29:40,558 --> 00:29:45,200
+interesting to see
+
+782
+00:29:42,319 --> 00:29:48,240
+you know what what i can produce
+
+783
+00:29:45,200 --> 00:29:49,360
+using uh using that setup gotcha that's
+
+784
+00:29:48,240 --> 00:29:51,599
+pretty cool that you built in the
+
+785
+00:29:49,359 --> 00:29:52,959
+flexibility to be able to use the
+
+786
+00:29:51,599 --> 00:29:54,558
+different types of mediums like that
+
+787
+00:29:52,960 --> 00:29:56,079
+right because they are
+
+788
+00:29:54,558 --> 00:29:58,319
+they are certainly different
+
+789
+00:29:56,079 --> 00:30:00,079
+in numerous ways
+
+790
+00:29:58,319 --> 00:30:01,119
+and you've incorporated the different
+
+791
+00:30:00,079 --> 00:30:03,519
+ways
+
+792
+00:30:01,119 --> 00:30:05,439
+within the plant studio platform so can
+
+793
+00:30:03,519 --> 00:30:06,639
+you talk to us about uh plant studio
+
+794
+00:30:05,440 --> 00:30:09,360
+platform
+
+795
+00:30:06,640 --> 00:30:11,278
+yeah that the platform this is the
+
+796
+00:30:09,359 --> 00:30:14,000
+almost the hardest part to understand of
+
+797
+00:30:11,278 --> 00:30:15,919
+the system because it's the
+
+798
+00:30:14,000 --> 00:30:17,919
+this is where it's like my my background
+
+799
+00:30:15,919 --> 00:30:21,360
+as a web developer
+
+800
+00:30:17,919 --> 00:30:24,080
+is um it's the computers and there are
+
+801
+00:30:21,359 --> 00:30:25,439
+basic there are three computers inside
+
+802
+00:30:24,079 --> 00:30:26,319
+the or
+
+803
+00:30:25,440 --> 00:30:29,440
+in
+
+804
+00:30:26,319 --> 00:30:32,879
+three computers for the gross system
+
+805
+00:30:29,440 --> 00:30:34,080
+one of the computers is controlling the
+
+806
+00:30:32,880 --> 00:30:36,960
+um
+
+807
+00:30:34,079 --> 00:30:40,079
+the lights the temperature the co2
+
+808
+00:30:36,960 --> 00:30:42,240
+humidity managing basically everything
+
+809
+00:30:40,079 --> 00:30:43,839
+above the you know it's that when do the
+
+810
+00:30:42,240 --> 00:30:44,880
+lights come on and off
+
+811
+00:30:43,839 --> 00:30:46,879
+um
+
+812
+00:30:44,880 --> 00:30:48,159
+and you know what's your nighttime
+
+813
+00:30:46,880 --> 00:30:49,600
+temperature
+
+814
+00:30:48,159 --> 00:30:52,159
+um
+
+815
+00:30:49,599 --> 00:30:54,879
+and uh what co2 levels you know turning
+
+816
+00:30:52,159 --> 00:30:56,480
+the co2 uh making sure the co2 doesn't
+
+817
+00:30:54,880 --> 00:30:57,519
+run at night time
+
+818
+00:30:56,480 --> 00:30:59,759
+um
+
+819
+00:30:57,519 --> 00:31:02,480
+so that that's the the environment
+
+820
+00:30:59,759 --> 00:31:05,599
+controller the reservoir controller
+
+821
+00:31:02,480 --> 00:31:08,399
+separate system totally non-dependent on
+
+822
+00:31:05,599 --> 00:31:12,000
+the environment controller
+
+823
+00:31:08,398 --> 00:31:12,000
+that has the
+
+824
+00:31:12,240 --> 00:31:16,480
+manages or monitors the ph
+
+825
+00:31:14,798 --> 00:31:18,558
+your ec
+
+826
+00:31:16,480 --> 00:31:21,759
+temperature the depth
+
+827
+00:31:18,558 --> 00:31:24,720
+um sensing all the different um
+
+828
+00:31:21,759 --> 00:31:26,960
+attributes of the of the reservoir and
+
+829
+00:31:24,720 --> 00:31:29,839
+the way it actually does that is
+
+830
+00:31:26,960 --> 00:31:30,798
+i have a circulation pump and it pumps
+
+831
+00:31:29,839 --> 00:31:33,839
+through
+
+832
+00:31:30,798 --> 00:31:35,679
+uh pvc pipe and that's where the sensors
+
+833
+00:31:33,839 --> 00:31:38,398
+are so instead of putting the sensors
+
+834
+00:31:35,679 --> 00:31:41,360
+actually in the reservoir itself
+
+835
+00:31:38,398 --> 00:31:42,239
+it circulates the reservoir
+
+836
+00:31:41,359 --> 00:31:44,558
+and
+
+837
+00:31:42,240 --> 00:31:47,120
+senses those
+
+838
+00:31:44,558 --> 00:31:48,798
+variables the values um
+
+839
+00:31:47,119 --> 00:31:51,678
+as it does so
+
+840
+00:31:48,798 --> 00:31:55,038
+and uh the idea was also
+
+841
+00:31:51,679 --> 00:31:57,679
+when i do um dosing and and things like
+
+842
+00:31:55,038 --> 00:31:59,599
+that it also serves as a the circulator
+
+843
+00:31:57,679 --> 00:32:01,840
+is also a mixing system
+
+844
+00:31:59,599 --> 00:32:04,798
+and it makes it easier to if you wanted
+
+845
+00:32:01,839 --> 00:32:06,798
+to switch something out um and also with
+
+846
+00:32:04,798 --> 00:32:08,639
+the reservoir level going up and down
+
+847
+00:32:06,798 --> 00:32:10,480
+how do you you know keeping your scent
+
+848
+00:32:08,640 --> 00:32:12,960
+making sure your senses are always in
+
+849
+00:32:10,480 --> 00:32:16,159
+the water is obviously important
+
+850
+00:32:12,960 --> 00:32:18,558
+so the um the system is able to fill and
+
+851
+00:32:16,159 --> 00:32:20,880
+drain itself automatically and this was
+
+852
+00:32:18,558 --> 00:32:23,599
+something that was this is one of those
+
+853
+00:32:20,880 --> 00:32:25,278
+ones where i just got tired of trying to
+
+854
+00:32:23,599 --> 00:32:28,319
+you know i didn't want to carry buckets
+
+855
+00:32:25,278 --> 00:32:31,599
+around and empty it that's the pain that
+
+856
+00:32:28,319 --> 00:32:33,119
+is hydroponics and um
+
+857
+00:32:31,599 --> 00:32:34,000
+so the
+
+858
+00:32:33,119 --> 00:32:36,959
+um
+
+859
+00:32:34,000 --> 00:32:39,679
+it can drain almost totally empty the
+
+860
+00:32:36,960 --> 00:32:41,278
+reservoir but also when it fills it i
+
+861
+00:32:39,679 --> 00:32:43,759
+can then specify
+
+862
+00:32:41,278 --> 00:32:46,240
+how much i want to put in and i actually
+
+863
+00:32:43,759 --> 00:32:48,798
+do everything based on liters instead of
+
+864
+00:32:46,240 --> 00:32:50,798
+gallons and it's not because i'm english
+
+865
+00:32:48,798 --> 00:32:53,278
+because i did grow up with you know i do
+
+866
+00:32:50,798 --> 00:32:55,519
+i do think of everything in gallons but
+
+867
+00:32:53,278 --> 00:32:56,720
+when it comes to dosing
+
+868
+00:32:55,519 --> 00:32:58,798
+everything seems to be done in
+
+869
+00:32:56,720 --> 00:33:00,399
+milliliters i mean sometimes you would
+
+870
+00:32:58,798 --> 00:33:03,200
+get those tablespoons or you guys a
+
+871
+00:33:00,398 --> 00:33:04,479
+tablespoon is that a teaspoon and it get
+
+872
+00:33:03,200 --> 00:33:06,558
+you know but
+
+873
+00:33:04,480 --> 00:33:08,558
+now it's all milliliters and you know
+
+874
+00:33:06,558 --> 00:33:11,038
+liters a thousand liters so it gives you
+
+875
+00:33:08,558 --> 00:33:13,839
+a better idea of proportions
+
+876
+00:33:11,038 --> 00:33:16,480
+um but again it's been great that when i
+
+877
+00:33:13,839 --> 00:33:19,439
+go to fill it up 25 gallons is maybe
+
+878
+00:33:16,480 --> 00:33:22,399
+close to about 80 liters or something
+
+879
+00:33:19,440 --> 00:33:24,558
+like that so i just say 80 liters
+
+880
+00:33:22,398 --> 00:33:27,439
+it just puts that water in and then i go
+
+881
+00:33:24,558 --> 00:33:29,918
+and dose from there and so you know the
+
+882
+00:33:27,440 --> 00:33:31,759
+dosing side of the reservoir controller
+
+883
+00:33:29,919 --> 00:33:33,120
+which again is this little computer
+
+884
+00:33:31,759 --> 00:33:34,398
+controls
+
+885
+00:33:33,119 --> 00:33:37,119
+i have five
+
+886
+00:33:34,398 --> 00:33:39,199
+pumps and they you can choose whatever
+
+887
+00:33:37,119 --> 00:33:42,479
+liquid you want to
+
+888
+00:33:39,200 --> 00:33:44,000
+mix in and typically you'd have your
+
+889
+00:33:42,480 --> 00:33:47,278
+a and b
+
+890
+00:33:44,000 --> 00:33:50,558
+multi-part nutrient and then maybe some
+
+891
+00:33:47,278 --> 00:33:52,398
+micro or i have a cal mag
+
+892
+00:33:50,558 --> 00:33:53,839
+and then you'd have one of them would be
+
+893
+00:33:52,398 --> 00:33:56,639
+a ph
+
+894
+00:33:53,839 --> 00:33:59,439
+um either increase or decrease you
+
+895
+00:33:56,640 --> 00:34:01,200
+typically don't need both you'll find
+
+896
+00:33:59,440 --> 00:34:03,278
+that you got a drift in one dir you know
+
+897
+00:34:01,200 --> 00:34:04,240
+you you want to correct one direction
+
+898
+00:34:03,278 --> 00:34:06,960
+only
+
+899
+00:34:04,240 --> 00:34:08,960
+so you know one of them is a ph
+
+900
+00:34:06,960 --> 00:34:12,079
+adjuster and the other or all
+
+901
+00:34:08,960 --> 00:34:15,280
+nutrients or additive um
+
+902
+00:34:12,079 --> 00:34:17,839
+based and those inject
+
+903
+00:34:15,280 --> 00:34:20,720
+in line with that circulator so after it
+
+904
+00:34:17,838 --> 00:34:22,159
+goes by your temperature your ph and
+
+905
+00:34:20,719 --> 00:34:24,078
+your ec
+
+906
+00:34:22,159 --> 00:34:27,760
+there is and you'll see
+
+907
+00:34:24,079 --> 00:34:29,200
+in the video it's the the clear acrylic
+
+908
+00:34:27,760 --> 00:34:30,159
+piece of pipe
+
+909
+00:34:29,199 --> 00:34:32,638
+the
+
+910
+00:34:30,159 --> 00:34:34,480
+the drops going in that's dropping into
+
+911
+00:34:32,639 --> 00:34:36,320
+the circulation
+
+912
+00:34:34,480 --> 00:34:37,199
+of the um
+
+913
+00:34:36,320 --> 00:34:39,039
+of
+
+914
+00:34:37,199 --> 00:34:40,480
+where the you know where the sensors are
+
+915
+00:34:39,039 --> 00:34:41,199
+basically
+
+916
+00:34:40,480 --> 00:34:43,119
+so
+
+917
+00:34:41,199 --> 00:34:46,239
+that's the the
+
+918
+00:34:43,119 --> 00:34:49,519
+um you know the the reservoir controller
+
+919
+00:34:46,239 --> 00:34:51,598
+and um
+
+920
+00:34:49,519 --> 00:34:54,398
+what's nice is with the computer part of
+
+921
+00:34:51,599 --> 00:34:56,240
+it then is like i can then specify a
+
+922
+00:34:54,398 --> 00:34:58,960
+program and saying all right
+
+923
+00:34:56,239 --> 00:35:01,118
+at this time empty the reservoir put
+
+924
+00:34:58,960 --> 00:35:04,240
+this many liters into it
+
+925
+00:35:01,119 --> 00:35:06,880
+dose this much into it of a
+
+926
+00:35:04,239 --> 00:35:10,399
+wait until you see that the ppms has
+
+927
+00:35:06,880 --> 00:35:13,039
+stabilized so that you know that it's
+
+928
+00:35:10,400 --> 00:35:17,358
+well mixed and then once you see that
+
+929
+00:35:13,039 --> 00:35:20,880
+the the ec has uh stabilized then going
+
+930
+00:35:17,358 --> 00:35:22,719
+to your next uh your b nutrient and then
+
+931
+00:35:20,880 --> 00:35:24,559
+once that's stabilized you could specify
+
+932
+00:35:22,719 --> 00:35:27,439
+time or say let it see if it's
+
+933
+00:35:24,559 --> 00:35:30,320
+stabilized before doing the next one and
+
+934
+00:35:27,440 --> 00:35:32,400
+then it goes along and then with the ph
+
+935
+00:35:30,320 --> 00:35:34,559
+again you can i
+
+936
+00:35:32,400 --> 00:35:37,200
+a lot of it is just algorithms different
+
+937
+00:35:34,559 --> 00:35:38,719
+algorithms for ph
+
+938
+00:35:37,199 --> 00:35:41,279
+and um
+
+939
+00:35:38,719 --> 00:35:43,358
+but the whole thing is basically
+
+940
+00:35:41,280 --> 00:35:45,760
+set my reservoir up
+
+941
+00:35:43,358 --> 00:35:46,719
+so that it's ready then to feed the
+
+942
+00:35:45,760 --> 00:35:49,760
+plants
+
+943
+00:35:46,719 --> 00:35:51,598
+so that's the reservoir controller
+
+944
+00:35:49,760 --> 00:35:54,320
+totally independent of the environment
+
+945
+00:35:51,599 --> 00:35:56,160
+controller but then for the human side
+
+946
+00:35:54,320 --> 00:35:58,079
+of things now that that's the control
+
+947
+00:35:56,159 --> 00:36:00,559
+it's like the human interface that's
+
+948
+00:35:58,079 --> 00:36:03,039
+where you can manage its base uh pretty
+
+949
+00:36:00,559 --> 00:36:06,639
+basic i can go in and turn the lights on
+
+950
+00:36:03,039 --> 00:36:07,920
+turn the lights off um with the you know
+
+951
+00:36:06,639 --> 00:36:11,118
+and i could
+
+952
+00:36:07,920 --> 00:36:12,880
+turn the fans on circulation pumps and
+
+953
+00:36:11,119 --> 00:36:16,160
+what have you
+
+954
+00:36:12,880 --> 00:36:18,960
+um so that's the that computers to
+
+955
+00:36:16,159 --> 00:36:20,639
+control it but then also to monitor it
+
+956
+00:36:18,960 --> 00:36:24,800
+because
+
+957
+00:36:20,639 --> 00:36:26,719
+all this information every single minute
+
+958
+00:36:24,800 --> 00:36:28,079
+the system reads
+
+959
+00:36:26,719 --> 00:36:30,879
+every value
+
+960
+00:36:28,079 --> 00:36:33,359
+and so in a day i'm getting about 40 000
+
+961
+00:36:30,880 --> 00:36:35,358
+data points at every minute what is the
+
+962
+00:36:33,358 --> 00:36:37,199
+temperature what's the ec what's the air
+
+963
+00:36:35,358 --> 00:36:39,679
+temperature what's the co2 level what's
+
+964
+00:36:37,199 --> 00:36:41,118
+the depth of the reservoir
+
+965
+00:36:39,679 --> 00:36:43,719
+what's the the
+
+966
+00:36:41,119 --> 00:36:46,559
+air conditioner or the the watts of the
+
+967
+00:36:43,719 --> 00:36:49,439
+dehumidifier because i track the power
+
+968
+00:36:46,559 --> 00:36:51,279
+usage of things like the dehumidifier
+
+969
+00:36:49,440 --> 00:36:53,599
+because that enables me to see if i've
+
+970
+00:36:51,280 --> 00:36:56,079
+sized it correctly if i see that thing
+
+971
+00:36:53,599 --> 00:36:57,119
+is peaked and running all the time then
+
+972
+00:36:56,079 --> 00:36:58,960
+you're going to need a bigger
+
+973
+00:36:57,119 --> 00:37:01,200
+dehumidifier
+
+974
+00:36:58,960 --> 00:37:03,039
+or it's set up incorrectly where it's
+
+975
+00:37:01,199 --> 00:37:05,039
+short cycling because
+
+976
+00:37:03,039 --> 00:37:08,320
+uh something's blowing on it or it's
+
+977
+00:37:05,039 --> 00:37:10,719
+it's just not moving the air properly so
+
+978
+00:37:08,320 --> 00:37:11,920
+the the human interface part
+
+979
+00:37:10,719 --> 00:37:14,559
+is
+
+980
+00:37:11,920 --> 00:37:16,639
+again it's gathering the data but also
+
+981
+00:37:14,559 --> 00:37:19,199
+it's what and again you can see in the
+
+982
+00:37:16,639 --> 00:37:22,879
+video it shows that the graphs it's what
+
+983
+00:37:19,199 --> 00:37:24,879
+i'll put up in my bedroom up on the tv
+
+984
+00:37:22,880 --> 00:37:27,039
+and i'll be you know live streaming you
+
+985
+00:37:24,880 --> 00:37:30,079
+know i have here's exactly showing you
+
+986
+00:37:27,039 --> 00:37:32,159
+know gauges what what my current ph is
+
+987
+00:37:30,079 --> 00:37:34,560
+and if it gets too high
+
+988
+00:37:32,159 --> 00:37:36,319
+it can send off an alert but it also
+
+989
+00:37:34,559 --> 00:37:38,559
+changes so i have everything kind of
+
+990
+00:37:36,320 --> 00:37:42,240
+green when things start going red that's
+
+991
+00:37:38,559 --> 00:37:46,000
+a problem so um also with this human
+
+992
+00:37:42,239 --> 00:37:48,559
+interface component um computer
+
+993
+00:37:46,000 --> 00:37:50,559
+it allows me to go back at any point in
+
+994
+00:37:48,559 --> 00:37:53,679
+time of the grow
+
+995
+00:37:50,559 --> 00:37:55,838
+and see exactly at that stage
+
+996
+00:37:53,679 --> 00:37:59,279
+what that environment was
+
+997
+00:37:55,838 --> 00:38:02,239
+so it gives me history for analysis so
+
+998
+00:37:59,280 --> 00:38:04,240
+every grow i have all that information
+
+999
+00:38:02,239 --> 00:38:06,159
+it might seem overkill to say well you
+
+1000
+00:38:04,239 --> 00:38:09,039
+don't need to do it every minute
+
+1001
+00:38:06,159 --> 00:38:10,960
+but with some of these systems and these
+
+1002
+00:38:09,039 --> 00:38:12,320
+time series databases and things that
+
+1003
+00:38:10,960 --> 00:38:13,199
+they have out there
+
+1004
+00:38:12,320 --> 00:38:15,039
+it's
+
+1005
+00:38:13,199 --> 00:38:17,279
+it's not that much information it's not
+
+1006
+00:38:15,039 --> 00:38:19,759
+a hide a 4k video that's streaming it's
+
+1007
+00:38:17,280 --> 00:38:21,119
+got more bandwidth in in probably a
+
+1008
+00:38:19,760 --> 00:38:23,359
+minute than you'd you'd have in an
+
+1009
+00:38:21,119 --> 00:38:24,240
+entire grow so
+
+1010
+00:38:23,358 --> 00:38:26,719
+um
+
+1011
+00:38:24,239 --> 00:38:30,159
+if you can gather that information why
+
+1012
+00:38:26,719 --> 00:38:32,639
+not have it and again it's very easy to
+
+1013
+00:38:30,159 --> 00:38:35,199
+then go back and with the you know with
+
+1014
+00:38:32,639 --> 00:38:36,239
+a mouse i can just select a certain time
+
+1015
+00:38:35,199 --> 00:38:38,480
+span
+
+1016
+00:38:36,239 --> 00:38:41,838
+and it shows me all
+
+1017
+00:38:38,480 --> 00:38:43,199
+the stage all the um the readings from
+
+1018
+00:38:41,838 --> 00:38:45,119
+all the sensors
+
+1019
+00:38:43,199 --> 00:38:47,838
+at that point in time and i think it's
+
+1020
+00:38:45,119 --> 00:38:49,920
+just a a really useful thing to have so
+
+1021
+00:38:47,838 --> 00:38:51,199
+that's really what people and i spend my
+
+1022
+00:38:49,920 --> 00:38:53,599
+most time
+
+1023
+00:38:51,199 --> 00:38:56,239
+using is the human interface the other
+
+1024
+00:38:53,599 --> 00:38:58,880
+things just do their job i'm not that i
+
+1025
+00:38:56,239 --> 00:39:03,679
+try and you know they they manage the
+
+1026
+00:38:58,880 --> 00:39:03,680
+system gotcha you uncovered a lot there
+
+1027
+00:39:04,400 --> 00:39:07,039
+so
+
+1028
+00:39:05,119 --> 00:39:08,800
+you have a lot of control with this
+
+1029
+00:39:07,039 --> 00:39:10,800
+plant studio platform i mean guys check
+
+1030
+00:39:08,800 --> 00:39:12,640
+out the video that is in the link in the
+
+1031
+00:39:10,800 --> 00:39:14,000
+description on the website you'll see
+
+1032
+00:39:12,639 --> 00:39:15,598
+exactly what we're talking about what
+
+1033
+00:39:14,000 --> 00:39:18,079
+exactly what simon just explained with
+
+1034
+00:39:15,599 --> 00:39:20,480
+the graphs and so on and so forth now
+
+1035
+00:39:18,079 --> 00:39:22,880
+for the reservoir controller you said
+
+1036
+00:39:20,480 --> 00:39:25,358
+that's controlled on one computer and it
+
+1037
+00:39:22,880 --> 00:39:26,640
+really sounds just so hands-off i know a
+
+1038
+00:39:25,358 --> 00:39:28,239
+lot of people are probably listening to
+
+1039
+00:39:26,639 --> 00:39:29,838
+this and their their ears are really
+
+1040
+00:39:28,239 --> 00:39:33,039
+perking up because
+
+1041
+00:39:29,838 --> 00:39:34,078
+it completely automates feeding entirely
+
+1042
+00:39:33,039 --> 00:39:35,679
+and you can have several different
+
+1043
+00:39:34,079 --> 00:39:38,720
+bottles hooked up to this
+
+1044
+00:39:35,679 --> 00:39:40,480
+and it can dose and it can wait
+
+1045
+00:39:38,719 --> 00:39:42,959
+for things to be stable then it could do
+
+1046
+00:39:40,480 --> 00:39:44,559
+the next dose and then wait and it's
+
+1047
+00:39:42,960 --> 00:39:47,119
+just i've never
+
+1048
+00:39:44,559 --> 00:39:48,320
+seen this level of automation before
+
+1049
+00:39:47,119 --> 00:39:49,358
+you know particularly on the homegrown
+
+1050
+00:39:48,320 --> 00:39:51,680
+side of things i know there are some
+
+1051
+00:39:49,358 --> 00:39:53,358
+commercial operations that are automated
+
+1052
+00:39:51,679 --> 00:39:55,598
+i don't know how automated they are but
+
+1053
+00:39:53,358 --> 00:39:56,559
+for the most part the fact that you can
+
+1054
+00:39:55,599 --> 00:39:58,000
+actually
+
+1055
+00:39:56,559 --> 00:39:59,759
+control the water levels right your
+
+1056
+00:39:58,000 --> 00:40:02,079
+hands off on the water level your hands
+
+1057
+00:39:59,760 --> 00:40:03,520
+off on dosing nutrients your hands off
+
+1058
+00:40:02,079 --> 00:40:04,318
+on ph
+
+1059
+00:40:03,519 --> 00:40:05,759
+right
+
+1060
+00:40:04,318 --> 00:40:07,679
+and then you're even hands off when it
+
+1061
+00:40:05,760 --> 00:40:08,800
+comes to your environment completely
+
+1062
+00:40:07,679 --> 00:40:10,719
+because you have an environmental
+
+1063
+00:40:08,800 --> 00:40:14,960
+controller i was going to ask you where
+
+1064
+00:40:10,719 --> 00:40:16,559
+the probes are located within the space
+
+1065
+00:40:14,960 --> 00:40:19,039
+but you have a you have basically a
+
+1066
+00:40:16,559 --> 00:40:20,719
+controller of probes that hook up to the
+
+1067
+00:40:19,039 --> 00:40:23,279
+environmental controller that's going to
+
+1068
+00:40:20,719 --> 00:40:24,399
+automatically turn on and off your
+
+1069
+00:40:23,280 --> 00:40:25,920
+humidifier
+
+1070
+00:40:24,400 --> 00:40:28,000
+dehumidifier
+
+1071
+00:40:25,920 --> 00:40:29,920
+air conditioner heater in order to
+
+1072
+00:40:28,000 --> 00:40:31,440
+control those those measurements right
+
+1073
+00:40:29,920 --> 00:40:34,079
+those variables
+
+1074
+00:40:31,440 --> 00:40:35,920
+where is the the probes located for like
+
+1075
+00:40:34,079 --> 00:40:38,640
+co2 and temp and
+
+1076
+00:40:35,920 --> 00:40:41,440
+that's the one that is hanging i have
+
+1077
+00:40:38,639 --> 00:40:43,358
+conduit that goes uh from the en
+
+1078
+00:40:41,440 --> 00:40:45,200
+environment controller
+
+1079
+00:40:43,358 --> 00:40:47,519
+which is it's just to the left of the
+
+1080
+00:40:45,199 --> 00:40:48,639
+the wall mounted mini split
+
+1081
+00:40:47,519 --> 00:40:51,039
+and
+
+1082
+00:40:48,639 --> 00:40:52,400
+it basically goes along the ceiling
+
+1083
+00:40:51,039 --> 00:40:54,559
+right into the middle
+
+1084
+00:40:52,400 --> 00:40:55,358
+of the grow area
+
+1085
+00:40:54,559 --> 00:40:58,000
+so
+
+1086
+00:40:55,358 --> 00:40:59,598
+as i uh basically
+
+1087
+00:40:58,000 --> 00:41:02,079
+that's not automated the raising and
+
+1088
+00:40:59,599 --> 00:41:03,838
+lowering of that that sensor but that
+
+1089
+00:41:02,079 --> 00:41:06,400
+sensor is the temperature humidity and
+
+1090
+00:41:03,838 --> 00:41:07,199
+co2 sensor on on
+
+1091
+00:41:06,400 --> 00:41:09,519
+um
+
+1092
+00:41:07,199 --> 00:41:12,799
+on a wire basically
+
+1093
+00:41:09,519 --> 00:41:15,599
+so that is hardwired to the environment
+
+1094
+00:41:12,800 --> 00:41:17,519
+controller itself gotcha and then one
+
+1095
+00:41:15,599 --> 00:41:19,519
+other piece which i don't i think you
+
+1096
+00:41:17,519 --> 00:41:20,880
+might have briefly covered it is it's
+
+1097
+00:41:19,519 --> 00:41:22,800
+shown in the video
+
+1098
+00:41:20,880 --> 00:41:25,280
+is it automatically is calculating your
+
+1099
+00:41:22,800 --> 00:41:27,760
+energy consumption and putting a dollar
+
+1100
+00:41:25,280 --> 00:41:29,440
+sign to it right so it's telling you
+
+1101
+00:41:27,760 --> 00:41:31,280
+literally it's having a water how much
+
+1102
+00:41:29,440 --> 00:41:32,720
+water you're using putting a dollar
+
+1103
+00:41:31,280 --> 00:41:33,760
+amount to it how much you're spending
+
+1104
+00:41:32,719 --> 00:41:36,159
+for water
+
+1105
+00:41:33,760 --> 00:41:38,000
+nutrients dollar amount electricity
+
+1106
+00:41:36,159 --> 00:41:40,078
+consumption dollar amount
+
+1107
+00:41:38,000 --> 00:41:41,920
+so you're getting down to that granular
+
+1108
+00:41:40,079 --> 00:41:44,560
+level that will vary based obviously on
+
+1109
+00:41:41,920 --> 00:41:48,400
+where you live in in the new england
+
+1110
+00:41:44,559 --> 00:41:50,318
+water here is is pretty cheap um
+
+1111
+00:41:48,400 --> 00:41:53,440
+california i know that's that's a
+
+1112
+00:41:50,318 --> 00:41:57,199
+different story and the the electricity
+
+1113
+00:41:53,440 --> 00:42:01,280
+is the the biggest
+
+1114
+00:41:57,199 --> 00:42:05,919
+resource uh i do try i track the the
+
+1115
+00:42:01,280 --> 00:42:08,560
+electric the co2 usage the water and the
+
+1116
+00:42:05,920 --> 00:42:11,358
+nutrients because you know how many
+
+1117
+00:42:08,559 --> 00:42:14,880
+milliliters you put in of each nutrient
+
+1118
+00:42:11,358 --> 00:42:16,559
+i also have a database saying this is
+
+1119
+00:42:14,880 --> 00:42:18,400
+the nutrient i got
+
+1120
+00:42:16,559 --> 00:42:21,759
+i spent this much for the nutrient and
+
+1121
+00:42:18,400 --> 00:42:23,599
+it has this many milliliters in it so i
+
+1122
+00:42:21,760 --> 00:42:26,000
+know on a per milliliter how much is
+
+1123
+00:42:23,599 --> 00:42:27,039
+that nutrient cost on a per milliliter
+
+1124
+00:42:26,000 --> 00:42:29,920
+basis
+
+1125
+00:42:27,039 --> 00:42:32,639
+so when i feed it i know how much that
+
+1126
+00:42:29,920 --> 00:42:34,960
+that feeding even cost uh you know my
+
+1127
+00:42:32,639 --> 00:42:37,199
+electrici my electric cost
+
+1128
+00:42:34,960 --> 00:42:39,679
+when it is really cranking for me here
+
+1129
+00:42:37,199 --> 00:42:42,879
+is about five dollars a day
+
+1130
+00:42:39,679 --> 00:42:46,159
+is my is my cost and by having a sealed
+
+1131
+00:42:42,880 --> 00:42:48,400
+room the ac and the dehumidifier are
+
+1132
+00:42:46,159 --> 00:42:50,799
+kind of close to half
+
+1133
+00:42:48,400 --> 00:42:53,440
+the other half of the lights
+
+1134
+00:42:50,800 --> 00:42:55,680
+so that is the price that you pay
+
+1135
+00:42:53,440 --> 00:42:59,039
+i have been thinking about you know ways
+
+1136
+00:42:55,679 --> 00:43:01,960
+of you know using the winter uh the cold
+
+1137
+00:42:59,039 --> 00:43:04,800
+outside can i use that as a means of
+
+1138
+00:43:01,960 --> 00:43:07,199
+dehumidifying or cooling without
+
+1139
+00:43:04,800 --> 00:43:10,079
+directly bringing that air in using some
+
+1140
+00:43:07,199 --> 00:43:12,639
+kind of a chiller system and and making
+
+1141
+00:43:10,079 --> 00:43:13,760
+it more efficient
+
+1142
+00:43:12,639 --> 00:43:16,000
+however
+
+1143
+00:43:13,760 --> 00:43:18,480
+for simplicity's sake having everything
+
+1144
+00:43:16,000 --> 00:43:21,039
+in the room just um is definitely the
+
+1145
+00:43:18,480 --> 00:43:22,880
+way to start um in a sealed room i think
+
+1146
+00:43:21,039 --> 00:43:24,838
+it's a good way of starting you could
+
+1147
+00:43:22,880 --> 00:43:28,480
+always go to air
+
+1148
+00:43:24,838 --> 00:43:30,559
+exchange if um if it makes sense if the
+
+1149
+00:43:28,480 --> 00:43:31,599
+environment is conducive
+
+1150
+00:43:30,559 --> 00:43:34,239
+to that
+
+1151
+00:43:31,599 --> 00:43:35,920
+but again i'm about knowing that it's
+
+1152
+00:43:34,239 --> 00:43:37,439
+totally controlled and not being able to
+
+1153
+00:43:35,920 --> 00:43:39,599
+have an excuse and saying well that was
+
+1154
+00:43:37,440 --> 00:43:42,400
+a hot day and all the humidity has been
+
+1155
+00:43:39,599 --> 00:43:46,640
+killing me i don't i you know this this
+
+1156
+00:43:42,400 --> 00:43:49,119
+box could be run in any environment um
+
+1157
+00:43:46,639 --> 00:43:51,679
+as long as the ambient environment where
+
+1158
+00:43:49,119 --> 00:43:53,599
+the reservoir is obviously doesn't get
+
+1159
+00:43:51,679 --> 00:43:55,039
+below freezing you know i can i have a
+
+1160
+00:43:53,599 --> 00:43:58,079
+heater i have a chiller for the
+
+1161
+00:43:55,039 --> 00:44:01,279
+reservoir which is outside of the
+
+1162
+00:43:58,079 --> 00:44:03,760
+uh the studio box itself
+
+1163
+00:44:01,280 --> 00:44:05,760
+so that that um
+
+1164
+00:44:03,760 --> 00:44:06,880
+that's something that again i'm
+
+1165
+00:44:05,760 --> 00:44:10,000
+constantly
+
+1166
+00:44:06,880 --> 00:44:13,440
+trying to improve the efficiency
+
+1167
+00:44:10,000 --> 00:44:16,000
+of the resources used for growing
+
+1168
+00:44:13,440 --> 00:44:19,280
+and you know that's why i'm also
+
+1169
+00:44:16,000 --> 00:44:20,880
+uh excited to try out the soil doing a
+
+1170
+00:44:19,280 --> 00:44:23,040
+soil grow next
+
+1171
+00:44:20,880 --> 00:44:25,838
+because um you know
+
+1172
+00:44:23,039 --> 00:44:29,599
+my last grow i i
+
+1173
+00:44:25,838 --> 00:44:30,559
+decided to put each plant on a scale
+
+1174
+00:44:29,599 --> 00:44:32,318
+and
+
+1175
+00:44:30,559 --> 00:44:34,559
+this is going to ask you about next is
+
+1176
+00:44:32,318 --> 00:44:35,920
+if we could talk about the scale side of
+
+1177
+00:44:34,559 --> 00:44:38,880
+things that's pretty mind-blowing as
+
+1178
+00:44:35,920 --> 00:44:41,039
+well yeah so and that that's even
+
+1179
+00:44:38,880 --> 00:44:43,680
+changed from from
+
+1180
+00:44:41,039 --> 00:44:46,239
+that grow until now
+
+1181
+00:44:43,679 --> 00:44:49,358
+initially the
+
+1182
+00:44:46,239 --> 00:44:50,799
+the idea was how do i you know when to
+
+1183
+00:44:49,358 --> 00:44:52,880
+water plants a lot of people would say
+
+1184
+00:44:50,800 --> 00:44:55,519
+well you you pick them up and you you
+
+1185
+00:44:52,880 --> 00:44:57,920
+get a sense of how you know the weight
+
+1186
+00:44:55,519 --> 00:44:59,280
+and um gives you a better sense than
+
+1187
+00:44:57,920 --> 00:45:01,838
+just trying to stick your finger in the
+
+1188
+00:44:59,280 --> 00:45:02,640
+top and feeling how dry the soil is
+
+1189
+00:45:01,838 --> 00:45:05,838
+and
+
+1190
+00:45:02,639 --> 00:45:08,799
+so i built six scales
+
+1191
+00:45:05,838 --> 00:45:11,279
+which are all wi-fi enabled or part of
+
+1192
+00:45:08,800 --> 00:45:12,560
+the system and every minute they report
+
+1193
+00:45:11,280 --> 00:45:14,079
+their weight
+
+1194
+00:45:12,559 --> 00:45:15,599
+so when i
+
+1195
+00:45:14,079 --> 00:45:18,880
+fertigate
+
+1196
+00:45:15,599 --> 00:45:21,200
+i was using these covers
+
+1197
+00:45:18,880 --> 00:45:23,119
+that have two misters in them and it
+
+1198
+00:45:21,199 --> 00:45:24,159
+would water all the plants at the same
+
+1199
+00:45:23,119 --> 00:45:25,119
+time
+
+1200
+00:45:24,159 --> 00:45:28,000
+and
+
+1201
+00:45:25,119 --> 00:45:29,200
+it worked great in the beginning
+
+1202
+00:45:28,000 --> 00:45:31,440
+but
+
+1203
+00:45:29,199 --> 00:45:33,838
+and and the nice thing is i could see
+
+1204
+00:45:31,440 --> 00:45:35,519
+also by doing that that all the plants
+
+1205
+00:45:33,838 --> 00:45:37,440
+were actually getting water if one of
+
+1206
+00:45:35,519 --> 00:45:39,440
+them were to clog i've never had a
+
+1207
+00:45:37,440 --> 00:45:41,200
+clogging issue you really shouldn't
+
+1208
+00:45:39,440 --> 00:45:43,200
+actually have a clogging issue if you
+
+1209
+00:45:41,199 --> 00:45:45,519
+always have a pre-filter by the way for
+
+1210
+00:45:43,199 --> 00:45:48,559
+your pump i'd always recommend you have
+
+1211
+00:45:45,519 --> 00:45:50,079
+to put a pre-filter on the pump
+
+1212
+00:45:48,559 --> 00:45:53,279
+that really almost
+
+1213
+00:45:50,079 --> 00:45:55,039
+mitigates um clogging issues
+
+1214
+00:45:53,280 --> 00:45:55,839
+and um
+
+1215
+00:45:55,039 --> 00:45:57,759
+so
+
+1216
+00:45:55,838 --> 00:45:59,358
+all the plants i could see would be
+
+1217
+00:45:57,760 --> 00:46:01,839
+getting
+
+1218
+00:45:59,358 --> 00:46:04,239
+liter a few a couple liters when that
+
+1219
+00:46:01,838 --> 00:46:05,838
+when they were smaller and it was very
+
+1220
+00:46:04,239 --> 00:46:08,078
+accurate they all got the same amount
+
+1221
+00:46:05,838 --> 00:46:09,838
+they their weight would all increase but
+
+1222
+00:46:08,079 --> 00:46:12,160
+then as one plant would
+
+1223
+00:46:09,838 --> 00:46:14,400
+um overtake and have different water
+
+1224
+00:46:12,159 --> 00:46:15,920
+requirements of the other now i'm like
+
+1225
+00:46:14,400 --> 00:46:18,160
+well i don't want to give them all the
+
+1226
+00:46:15,920 --> 00:46:20,159
+same amount of water one needs more than
+
+1227
+00:46:18,159 --> 00:46:22,480
+the other so i'd end up taking some of
+
+1228
+00:46:20,159 --> 00:46:24,960
+the misters and i'd say hey give it to
+
+1229
+00:46:22,480 --> 00:46:26,800
+this guy so he gets extra and he gets
+
+1230
+00:46:24,960 --> 00:46:28,800
+one less because there's two misters per
+
+1231
+00:46:26,800 --> 00:46:30,560
+plant but now you're going away from the
+
+1232
+00:46:28,800 --> 00:46:33,280
+whole automation thing
+
+1233
+00:46:30,559 --> 00:46:36,400
+so my latest setup that i actually
+
+1234
+00:46:33,280 --> 00:46:37,920
+haven't run yet is a
+
+1235
+00:46:36,400 --> 00:46:40,639
+manifold it's like an irrigation
+
+1236
+00:46:37,920 --> 00:46:44,880
+manifold but um
+
+1237
+00:46:40,639 --> 00:46:48,318
+but it's also why it's controlled by the
+
+1238
+00:46:44,880 --> 00:46:50,640
+reservoir controller that can say
+
+1239
+00:46:48,318 --> 00:46:55,119
+send water only to this plant
+
+1240
+00:46:50,639 --> 00:46:57,679
+so now i can water each individual plant
+
+1241
+00:46:55,119 --> 00:47:00,240
+um separately
+
+1242
+00:46:57,679 --> 00:47:01,199
+and what that's going to allow for
+
+1243
+00:47:00,239 --> 00:47:02,559
+is
+
+1244
+00:47:01,199 --> 00:47:04,799
+you know you can try different
+
+1245
+00:47:02,559 --> 00:47:06,880
+experiments i could let some plants if
+
+1246
+00:47:04,800 --> 00:47:08,318
+they're all cloned then that would be
+
+1247
+00:47:06,880 --> 00:47:11,039
+almost ideal because you could really
+
+1248
+00:47:08,318 --> 00:47:12,800
+then understand different watering
+
+1249
+00:47:11,039 --> 00:47:16,159
+patterns and how they affect those
+
+1250
+00:47:12,800 --> 00:47:18,000
+plants do you want to do a deep watering
+
+1251
+00:47:16,159 --> 00:47:20,639
+less frequently
+
+1252
+00:47:18,000 --> 00:47:21,760
+small watering more frequently
+
+1253
+00:47:20,639 --> 00:47:24,078
+and
+
+1254
+00:47:21,760 --> 00:47:26,000
+the other part is that also because it
+
+1255
+00:47:24,079 --> 00:47:28,240
+ties into the reservoir
+
+1256
+00:47:26,000 --> 00:47:29,119
+i could then potentially
+
+1257
+00:47:28,239 --> 00:47:31,519
+um
+
+1258
+00:47:29,119 --> 00:47:33,358
+mix in the reservoir
+
+1259
+00:47:31,519 --> 00:47:35,920
+a different mix
+
+1260
+00:47:33,358 --> 00:47:37,440
+potentially for each plant so i could
+
+1261
+00:47:35,920 --> 00:47:39,358
+put in
+
+1262
+00:47:37,440 --> 00:47:41,200
+and i'm actually gonna have to downsize
+
+1263
+00:47:39,358 --> 00:47:43,358
+the reservoir a little bit if i'm doing
+
+1264
+00:47:41,199 --> 00:47:46,159
+on an individual plant basis
+
+1265
+00:47:43,358 --> 00:47:48,639
+but by with a smaller reservoir i can
+
+1266
+00:47:46,159 --> 00:47:49,920
+then mix up some nutrients send it to
+
+1267
+00:47:48,639 --> 00:47:52,400
+plan a
+
+1268
+00:47:49,920 --> 00:47:55,200
+and then i can flush that out or you
+
+1269
+00:47:52,400 --> 00:47:56,800
+know empty empty um you know give it all
+
+1270
+00:47:55,199 --> 00:47:58,719
+everything that's in the reservoir empty
+
+1271
+00:47:56,800 --> 00:48:00,240
+it out and then
+
+1272
+00:47:58,719 --> 00:48:03,279
+for the next plant
+
+1273
+00:48:00,239 --> 00:48:05,358
+give it a different nutrient and maybe a
+
+1274
+00:48:03,280 --> 00:48:08,240
+different quantity so again you could
+
+1275
+00:48:05,358 --> 00:48:11,279
+then set up different
+
+1276
+00:48:08,239 --> 00:48:13,519
+uh tests experiments for all these
+
+1277
+00:48:11,280 --> 00:48:15,839
+different plants and that to me is a
+
+1278
+00:48:13,519 --> 00:48:18,079
+great way of doing your uh phenotype
+
+1279
+00:48:15,838 --> 00:48:20,639
+hunting because you obviously you know
+
+1280
+00:48:18,079 --> 00:48:22,880
+you start with your genetics but
+
+1281
+00:48:20,639 --> 00:48:24,558
+different
+
+1282
+00:48:22,880 --> 00:48:26,880
+nutrients
+
+1283
+00:48:24,559 --> 00:48:27,760
+what works for some might not work for
+
+1284
+00:48:26,880 --> 00:48:30,240
+others
+
+1285
+00:48:27,760 --> 00:48:32,559
+and this way i think it's a good way of
+
+1286
+00:48:30,239 --> 00:48:33,679
+automating staying consistent because i
+
+1287
+00:48:32,559 --> 00:48:35,359
+think a lot of people when you're
+
+1288
+00:48:33,679 --> 00:48:37,279
+growing they go well i'm not going to
+
+1289
+00:48:35,358 --> 00:48:40,078
+mix up a different batch for each
+
+1290
+00:48:37,280 --> 00:48:42,400
+different plan but if it's automated
+
+1291
+00:48:40,079 --> 00:48:44,318
+it doesn't then let the machine do the
+
+1292
+00:48:42,400 --> 00:48:47,519
+work you don't you just sit and watch
+
+1293
+00:48:44,318 --> 00:48:49,279
+and get an idea of you know what effect
+
+1294
+00:48:47,519 --> 00:48:51,838
+that has that's still coming down to the
+
+1295
+00:48:49,280 --> 00:48:54,880
+person to look at the plants to see if
+
+1296
+00:48:51,838 --> 00:48:56,558
+it's a happy plant or not and um to see
+
+1297
+00:48:54,880 --> 00:48:58,160
+what kind of results you get and that to
+
+1298
+00:48:56,559 --> 00:49:00,400
+me as far as the gardening that that
+
+1299
+00:48:58,159 --> 00:49:01,279
+seems like that's the the enjoyable part
+
+1300
+00:49:00,400 --> 00:49:03,519
+of it
+
+1301
+00:49:01,280 --> 00:49:05,119
+that's so cool that's really really cool
+
+1302
+00:49:03,519 --> 00:49:07,759
+so the last piece i wanted to have you
+
+1303
+00:49:05,119 --> 00:49:10,480
+talk about which is really fascinating
+
+1304
+00:49:07,760 --> 00:49:12,079
+is the imaging computer you have that
+
+1305
+00:49:10,480 --> 00:49:13,440
+inspects the plant health can you talk
+
+1306
+00:49:12,079 --> 00:49:16,318
+to us about that
+
+1307
+00:49:13,440 --> 00:49:18,880
+yeah so that's actually a separate
+
+1308
+00:49:16,318 --> 00:49:21,199
+computer it's uh it's really a small
+
+1309
+00:49:18,880 --> 00:49:24,720
+computer that i had hooked up to an old
+
+1310
+00:49:21,199 --> 00:49:27,519
+slr that that i had and um you know the
+
+1311
+00:49:24,719 --> 00:49:29,439
+they just you want a a good camera with
+
+1312
+00:49:27,519 --> 00:49:31,358
+a good lens is gonna take much better
+
+1313
+00:49:29,440 --> 00:49:32,159
+pictures and um
+
+1314
+00:49:31,358 --> 00:49:35,119
+so
+
+1315
+00:49:32,159 --> 00:49:36,318
+it's set up so that every 10 minutes of
+
+1316
+00:49:35,119 --> 00:49:38,480
+the plant
+
+1317
+00:49:36,318 --> 00:49:40,400
+plan of the plant's life
+
+1318
+00:49:38,480 --> 00:49:42,719
+they have their picture taken
+
+1319
+00:49:40,400 --> 00:49:45,440
+and the idea is that it only takes their
+
+1320
+00:49:42,719 --> 00:49:48,399
+picture but it also stores it
+
+1321
+00:49:45,440 --> 00:49:49,200
+on that monitoring computer
+
+1322
+00:49:48,400 --> 00:49:52,318
+so
+
+1323
+00:49:49,199 --> 00:49:54,799
+every at any point in time not only
+
+1324
+00:49:52,318 --> 00:49:58,639
+could i go back and say what was i
+
+1325
+00:49:54,800 --> 00:50:01,280
+feeding or what what was the ec and ph
+
+1326
+00:49:58,639 --> 00:50:02,239
+but you can also see how the plants
+
+1327
+00:50:01,280 --> 00:50:04,000
+looked
+
+1328
+00:50:02,239 --> 00:50:05,439
+and the thing that i actually found that
+
+1329
+00:50:04,000 --> 00:50:07,838
+i mean originally i did it because i
+
+1330
+00:50:05,440 --> 00:50:09,920
+thought it was just kind of cool i i was
+
+1331
+00:50:07,838 --> 00:50:12,639
+like everyone likes a time lapse i don't
+
+1332
+00:50:09,920 --> 00:50:14,159
+know if you've seen the um amazing fungi
+
+1333
+00:50:12,639 --> 00:50:16,318
+uh
+
+1334
+00:50:14,159 --> 00:50:20,399
+showing on netflix and all those time
+
+1335
+00:50:16,318 --> 00:50:22,800
+lapses are just uh mesmerizing yeah and
+
+1336
+00:50:20,400 --> 00:50:26,400
+the the cool thing is i think
+
+1337
+00:50:22,800 --> 00:50:28,800
+when you feed your plants
+
+1338
+00:50:26,400 --> 00:50:31,599
+you can't see how they're doing at that
+
+1339
+00:50:28,800 --> 00:50:33,519
+point of that how they're responding
+
+1340
+00:50:31,599 --> 00:50:35,519
+but if you put it in a time lapse and
+
+1341
+00:50:33,519 --> 00:50:38,079
+you get to look at them
+
+1342
+00:50:35,519 --> 00:50:40,239
+over that even over one day you know you
+
+1343
+00:50:38,079 --> 00:50:41,440
+know you've got your six pictures an
+
+1344
+00:50:40,239 --> 00:50:44,558
+hour
+
+1345
+00:50:41,440 --> 00:50:46,639
+and in a day you get to see
+
+1346
+00:50:44,559 --> 00:50:48,559
+did they seem to respond well or not
+
+1347
+00:50:46,639 --> 00:50:51,598
+because people seem to have a good sense
+
+1348
+00:50:48,559 --> 00:50:53,519
+of a happy or an unhappy plan and
+
+1349
+00:50:51,599 --> 00:50:55,359
+definitely seeing the growth
+
+1350
+00:50:53,519 --> 00:50:57,920
+you can watch it within one day it's
+
+1351
+00:50:55,358 --> 00:51:00,719
+pretty easy to see growth
+
+1352
+00:50:57,920 --> 00:51:03,440
+just even at a 10 minute interval
+
+1353
+00:51:00,719 --> 00:51:05,199
+pictures so again it's partly for i
+
+1354
+00:51:03,440 --> 00:51:08,000
+thought it was cool
+
+1355
+00:51:05,199 --> 00:51:10,078
+but i found it really useful so then i i
+
+1356
+00:51:08,000 --> 00:51:12,960
+am able to run a script and at the end
+
+1357
+00:51:10,079 --> 00:51:15,359
+of the day it can it can just generate
+
+1358
+00:51:12,960 --> 00:51:17,838
+that day's time lapse or i could say
+
+1359
+00:51:15,358 --> 00:51:20,880
+give me over the last three days or from
+
+1360
+00:51:17,838 --> 00:51:24,078
+the beginning of the grow until now so i
+
+1361
+00:51:20,880 --> 00:51:25,920
+watch time lapses all the time just to
+
+1362
+00:51:24,079 --> 00:51:27,519
+get a feel for the plants and you know
+
+1363
+00:51:25,920 --> 00:51:28,800
+just because it's kind of cool to watch
+
+1364
+00:51:27,519 --> 00:51:30,880
+also i guess
+
+1365
+00:51:28,800 --> 00:51:32,880
+yeah that is really cool i don't do as
+
+1366
+00:51:30,880 --> 00:51:35,039
+many time lapses as i should a lot of
+
+1367
+00:51:32,880 --> 00:51:36,720
+people like to see the time lapses in in
+
+1368
+00:51:35,039 --> 00:51:37,920
+videos and i don't do many of them i've
+
+1369
+00:51:36,719 --> 00:51:39,039
+only done a handful of them i know
+
+1370
+00:51:37,920 --> 00:51:41,280
+there's a lot of content creators that
+
+1371
+00:51:39,039 --> 00:51:43,358
+do a lot of time lapses but that's
+
+1372
+00:51:41,280 --> 00:51:45,359
+really cool that you're able to add that
+
+1373
+00:51:43,358 --> 00:51:46,799
+into your automated system and you know
+
+1374
+00:51:45,358 --> 00:51:48,719
+for planned health purposes so you can
+
+1375
+00:51:46,800 --> 00:51:50,800
+see how well your yeah is doing as far
+
+1376
+00:51:48,719 --> 00:51:53,519
+as the health of the plan yeah that the
+
+1377
+00:51:50,800 --> 00:51:54,318
+other part is um i should have mentioned
+
+1378
+00:51:53,519 --> 00:51:56,880
+is
+
+1379
+00:51:54,318 --> 00:51:59,119
+it's also a great way of
+
+1380
+00:51:56,880 --> 00:52:01,519
+again if you have a high enough res
+
+1381
+00:51:59,119 --> 00:52:05,280
+picture being able to take something and
+
+1382
+00:52:01,519 --> 00:52:08,000
+then maybe identifying
+
+1383
+00:52:05,280 --> 00:52:11,040
+plant issues that you're having
+
+1384
+00:52:08,000 --> 00:52:13,119
+deficiencies uh over watering is that
+
+1385
+00:52:11,039 --> 00:52:14,800
+underwatering like sometimes you can
+
+1386
+00:52:13,119 --> 00:52:16,400
+look at a plant and you get a sense of
+
+1387
+00:52:14,800 --> 00:52:18,880
+that so
+
+1388
+00:52:16,400 --> 00:52:21,280
+that's also something i continue to grow
+
+1389
+00:52:18,880 --> 00:52:24,318
+i do want to get it so that i can
+
+1390
+00:52:21,280 --> 00:52:27,119
+getting closer on the individual leaves
+
+1391
+00:52:24,318 --> 00:52:28,960
+so that you can start to identify
+
+1392
+00:52:27,119 --> 00:52:31,920
+what you know what might be going on
+
+1393
+00:52:28,960 --> 00:52:34,639
+with the plant itself uh from a health
+
+1394
+00:52:31,920 --> 00:52:37,838
+standpoint so that's that's the other
+
+1395
+00:52:34,639 --> 00:52:39,679
+aspect i think is useful uh ideally i'd
+
+1396
+00:52:37,838 --> 00:52:42,239
+love to tie it into some kind of a
+
+1397
+00:52:39,679 --> 00:52:44,159
+computer vision where the system can
+
+1398
+00:52:42,239 --> 00:52:45,838
+kind of look and go
+
+1399
+00:52:44,159 --> 00:52:48,399
+that looks like you've got a calcium
+
+1400
+00:52:45,838 --> 00:52:50,078
+deficiency that looks like that's um
+
+1401
+00:52:48,400 --> 00:52:52,079
+you know it's been over watered or
+
+1402
+00:52:50,079 --> 00:52:53,839
+underwatered or that whatever the
+
+1403
+00:52:52,079 --> 00:52:56,640
+problem may may be
+
+1404
+00:52:53,838 --> 00:52:58,000
+and um again i i know some people might
+
+1405
+00:52:56,639 --> 00:52:59,679
+say well you know that's going to take
+
+1406
+00:52:58,000 --> 00:53:02,559
+an expert a person
+
+1407
+00:52:59,679 --> 00:53:05,118
+in order to be able to identify that but
+
+1408
+00:53:02,559 --> 00:53:06,720
+people have to realize too that with the
+
+1409
+00:53:05,119 --> 00:53:10,160
+computer vision
+
+1410
+00:53:06,719 --> 00:53:11,679
+a lot of that stuff and the ai is it is
+
+1411
+00:53:10,159 --> 00:53:13,199
+people training
+
+1412
+00:53:11,679 --> 00:53:15,199
+those systems
+
+1413
+00:53:13,199 --> 00:53:17,919
+so it's really is a person
+
+1414
+00:53:15,199 --> 00:53:19,759
+takes pictures and they say
+
+1415
+00:53:17,920 --> 00:53:22,079
+this is this problem and this looks like
+
+1416
+00:53:19,760 --> 00:53:24,000
+that problem and after you've given the
+
+1417
+00:53:22,079 --> 00:53:27,280
+machine enough of those
+
+1418
+00:53:24,000 --> 00:53:28,880
+it gets better identifying it itself so
+
+1419
+00:53:27,280 --> 00:53:31,200
+then everyone doesn't have to be an
+
+1420
+00:53:28,880 --> 00:53:33,519
+expert on that you can have experts who
+
+1421
+00:53:31,199 --> 00:53:34,480
+have identified these issues and then
+
+1422
+00:53:33,519 --> 00:53:37,199
+that
+
+1423
+00:53:34,480 --> 00:53:39,838
+gets then everyone could have the power
+
+1424
+00:53:37,199 --> 00:53:41,838
+of those expert opinions
+
+1425
+00:53:39,838 --> 00:53:44,480
+via computer vision without a person
+
+1426
+00:53:41,838 --> 00:53:47,199
+actually looking them personally at
+
+1427
+00:53:44,480 --> 00:53:49,599
+their plants so i do think that the
+
+1428
+00:53:47,199 --> 00:53:53,598
+ai and the machine learning stuff
+
+1429
+00:53:49,599 --> 00:53:55,200
+is is a fascinating and definitely a um
+
+1430
+00:53:53,599 --> 00:53:57,359
+we'll definitely be seeing a lot more of
+
+1431
+00:53:55,199 --> 00:54:00,159
+that um and it's it's already been done
+
+1432
+00:53:57,358 --> 00:54:02,318
+quite a bit also nice nice
+
+1433
+00:54:00,159 --> 00:54:03,759
+so when will this plant studio be
+
+1434
+00:54:02,318 --> 00:54:06,558
+available and you know how much does
+
+1435
+00:54:03,760 --> 00:54:10,079
+something like this cost
+
+1436
+00:54:06,559 --> 00:54:13,119
+it's it's not currently available um
+
+1437
+00:54:10,079 --> 00:54:15,200
+unfortunately um it it and
+
+1438
+00:54:13,119 --> 00:54:17,680
+it's something that
+
+1439
+00:54:15,199 --> 00:54:20,318
+it's difficult because it requires it's
+
+1440
+00:54:17,679 --> 00:54:23,199
+a large
+
+1441
+00:54:20,318 --> 00:54:26,558
+box it's a large machine but also
+
+1442
+00:54:23,199 --> 00:54:28,639
+requires um an electrician
+
+1443
+00:54:26,559 --> 00:54:30,480
+to bring in um
+
+1444
+00:54:28,639 --> 00:54:32,239
+you know a circuit
+
+1445
+00:54:30,480 --> 00:54:35,760
+i have a
+
+1446
+00:54:32,239 --> 00:54:38,399
+30 amp 240 volt
+
+1447
+00:54:35,760 --> 00:54:40,799
+circuit going to a sub panel
+
+1448
+00:54:38,400 --> 00:54:42,400
+and again i'm not an electrician so i
+
+1449
+00:54:40,798 --> 00:54:44,798
+have to have an electrician hook that up
+
+1450
+00:54:42,400 --> 00:54:47,200
+if you have the mini split depending on
+
+1451
+00:54:44,798 --> 00:54:49,519
+the distance that you're running it
+
+1452
+00:54:47,199 --> 00:54:51,439
+you might have to you you have to have
+
+1453
+00:54:49,519 --> 00:54:54,880
+someone come in who has
+
+1454
+00:54:51,440 --> 00:54:57,119
+access who can charge it with the um
+
+1455
+00:54:54,880 --> 00:54:59,838
+required refrigerant
+
+1456
+00:54:57,119 --> 00:55:02,000
+to get that going so it's it's kind of
+
+1457
+00:54:59,838 --> 00:55:03,759
+like you know putting an addition on a
+
+1458
+00:55:02,000 --> 00:55:06,400
+house or something you need like these
+
+1459
+00:55:03,760 --> 00:55:08,240
+these subs to the who can all do their
+
+1460
+00:55:06,400 --> 00:55:11,280
+part um
+
+1461
+00:55:08,239 --> 00:55:13,039
+you know to to get everything going um
+
+1462
+00:55:11,280 --> 00:55:14,400
+it's not to say i wouldn't like to get
+
+1463
+00:55:13,039 --> 00:55:17,759
+to that point
+
+1464
+00:55:14,400 --> 00:55:20,480
+um and that is also why i've made a lot
+
+1465
+00:55:17,760 --> 00:55:21,520
+of the like the the reservoir controller
+
+1466
+00:55:20,480 --> 00:55:24,480
+itself
+
+1467
+00:55:21,519 --> 00:55:27,838
+i made i didn't want to cut out with
+
+1468
+00:55:24,480 --> 00:55:30,798
+wood so i actually got a cnc machine
+
+1469
+00:55:27,838 --> 00:55:33,199
+learned to use a cnc machine designed it
+
+1470
+00:55:30,798 --> 00:55:34,960
+had the cnc cut all the parts out and
+
+1471
+00:55:33,199 --> 00:55:37,919
+then put it together
+
+1472
+00:55:34,960 --> 00:55:40,720
+so it was a perfect fit so it works well
+
+1473
+00:55:37,920 --> 00:55:43,200
+for replication i've never replicated it
+
+1474
+00:55:40,719 --> 00:55:45,919
+again using that yet i've still because
+
+1475
+00:55:43,199 --> 00:55:47,598
+i i've been getting into the details of
+
+1476
+00:55:45,920 --> 00:55:48,960
+the software and stuff
+
+1477
+00:55:47,599 --> 00:55:50,240
+but um
+
+1478
+00:55:48,960 --> 00:55:52,559
+you know and it
+
+1479
+00:55:50,239 --> 00:55:54,959
+it's it'd be pretty expensive because a
+
+1480
+00:55:52,559 --> 00:55:57,440
+lot of the components that i use are
+
+1481
+00:55:54,960 --> 00:55:58,880
+really good but one thing you have to
+
+1482
+00:55:57,440 --> 00:56:01,200
+keep in mind is
+
+1483
+00:55:58,880 --> 00:56:04,318
+you need good sensors to get good data
+
+1484
+00:56:01,199 --> 00:56:06,719
+if your ph sensor is not accurate
+
+1485
+00:56:04,318 --> 00:56:10,798
+it's garbage in garbage out
+
+1486
+00:56:06,719 --> 00:56:11,838
+so you you need good quality information
+
+1487
+00:56:10,798 --> 00:56:14,318
+and
+
+1488
+00:56:11,838 --> 00:56:16,880
+if you want the efficiency of
+
+1489
+00:56:14,318 --> 00:56:18,480
+the air conditioning you need something
+
+1490
+00:56:16,880 --> 00:56:21,119
+that's going to be have a high seer
+
+1491
+00:56:18,480 --> 00:56:22,400
+rating it'll cost you less to run it
+
+1492
+00:56:21,119 --> 00:56:24,880
+you could do it
+
+1493
+00:56:22,400 --> 00:56:27,440
+less expensive units and stuff
+
+1494
+00:56:24,880 --> 00:56:29,039
+so um i know it's not exactly answering
+
+1495
+00:56:27,440 --> 00:56:31,200
+your question
+
+1496
+00:56:29,039 --> 00:56:33,279
+but it is something that i i do think
+
+1497
+00:56:31,199 --> 00:56:35,439
+about and i um
+
+1498
+00:56:33,280 --> 00:56:37,280
+i you know i am um
+
+1499
+00:56:35,440 --> 00:56:39,358
+definitely definitely working on it for
+
+1500
+00:56:37,280 --> 00:56:41,359
+sure gotcha yeah even if it was just
+
+1501
+00:56:39,358 --> 00:56:43,358
+individual components you know whether
+
+1502
+00:56:41,358 --> 00:56:45,199
+it be the controllers or even like the
+
+1503
+00:56:43,358 --> 00:56:47,039
+software right i'm sure people would
+
+1504
+00:56:45,199 --> 00:56:49,519
+loved i'm sure people are listening to
+
+1505
+00:56:47,039 --> 00:56:51,759
+salivating how the software is
+
+1506
+00:56:49,519 --> 00:56:53,519
+and how uh you know automated it can be
+
+1507
+00:56:51,760 --> 00:56:55,359
+you know just if it was a plug-and-play
+
+1508
+00:56:53,519 --> 00:56:56,719
+version where you could attach your own
+
+1509
+00:56:55,358 --> 00:56:58,558
+equipment that you have in your growth
+
+1510
+00:56:56,719 --> 00:57:00,879
+space to the software i think that would
+
+1511
+00:56:58,559 --> 00:57:03,359
+be extremely beneficial so hope to see
+
+1512
+00:57:00,880 --> 00:57:04,880
+something like that in the future
+
+1513
+00:57:03,358 --> 00:57:06,480
+so wrapping things up how can the
+
+1514
+00:57:04,880 --> 00:57:07,920
+listeners find you and what do you have
+
+1515
+00:57:06,480 --> 00:57:08,960
+upcoming in the future
+
+1516
+00:57:07,920 --> 00:57:12,400
+um
+
+1517
+00:57:08,960 --> 00:57:14,440
+my email my easiest ways to email me is
+
+1518
+00:57:12,400 --> 00:57:16,400
+my email simon
+
+1519
+00:57:14,440 --> 00:57:22,358
+romansky.com that's
+
+1520
+00:57:16,400 --> 00:57:22,358
+uh s-i-m-o-n at roman ski.com
+
+1521
+00:57:22,480 --> 00:57:26,079
+plantstudio
+
+1522
+00:57:25,119 --> 00:57:28,880
+dot planche.stud.io
+
+1523
+00:57:26,079 --> 00:57:31,599
+is my uh website
+
+1524
+00:57:28,880 --> 00:57:32,640
+and um i'm planning on doing i want to
+
+1525
+00:57:31,599 --> 00:57:36,318
+do more
+
+1526
+00:57:32,639 --> 00:57:39,199
+social media and and interact more with
+
+1527
+00:57:36,318 --> 00:57:41,759
+people like minded people out there or
+
+1528
+00:57:39,199 --> 00:57:44,159
+even people who could compliment what i
+
+1529
+00:57:41,760 --> 00:57:45,760
+do i i don't consider myself
+
+1530
+00:57:44,159 --> 00:57:48,639
+to have a green thumb
+
+1531
+00:57:45,760 --> 00:57:51,520
+i am able to automate and i i've learned
+
+1532
+00:57:48,639 --> 00:57:54,159
+a lot from youtube and uh listening to
+
+1533
+00:57:51,519 --> 00:57:57,280
+shows like yours as far as the the more
+
+1534
+00:57:54,159 --> 00:57:59,920
+the cultivation side of things but i you
+
+1535
+00:57:57,280 --> 00:58:01,839
+know my angle and my what i bring really
+
+1536
+00:57:59,920 --> 00:58:04,240
+is the the systems and the the
+
+1537
+00:58:01,838 --> 00:58:05,679
+automation to it so
+
+1538
+00:58:04,239 --> 00:58:08,719
+you know i'm
+
+1539
+00:58:05,679 --> 00:58:11,598
+basically just i also want to help
+
+1540
+00:58:08,719 --> 00:58:13,679
+people understand that automation
+
+1541
+00:58:11,599 --> 00:58:15,838
+it seems complicated
+
+1542
+00:58:13,679 --> 00:58:18,639
+and some people go well it's also prone
+
+1543
+00:58:15,838 --> 00:58:20,639
+to error and if that doesn't work then
+
+1544
+00:58:18,639 --> 00:58:22,639
+then it's gonna you know then then
+
+1545
+00:58:20,639 --> 00:58:25,679
+what's to happen to my grow
+
+1546
+00:58:22,639 --> 00:58:29,279
+but i think most people will find that
+
+1547
+00:58:25,679 --> 00:58:31,279
+is there to help you to enable you
+
+1548
+00:58:29,280 --> 00:58:32,640
+and to do a lot of the things that you
+
+1549
+00:58:31,280 --> 00:58:34,720
+don't want to do
+
+1550
+00:58:32,639 --> 00:58:36,798
+you know i'd say don't carry a bucket of
+
+1551
+00:58:34,719 --> 00:58:39,118
+water from one to another even something
+
+1552
+00:58:36,798 --> 00:58:40,719
+as simple like using something like um
+
+1553
+00:58:39,119 --> 00:58:42,318
+some of these diaphragm pumps you can
+
+1554
+00:58:40,719 --> 00:58:45,039
+get for 50 bucks
+
+1555
+00:58:42,318 --> 00:58:47,679
+that has a built-in pressure switch so
+
+1556
+00:58:45,039 --> 00:58:50,159
+you can stick a hose in a bucket
+
+1557
+00:58:47,679 --> 00:58:52,000
+and it self primes it pumps the water
+
+1558
+00:58:50,159 --> 00:58:53,679
+and sends it to where you want to be use
+
+1559
+00:58:52,000 --> 00:58:54,960
+something like that don't don't make it
+
+1560
+00:58:53,679 --> 00:58:58,000
+hard on yourself
+
+1561
+00:58:54,960 --> 00:59:00,798
+so use some of the stuff out there
+
+1562
+00:58:58,000 --> 00:59:02,960
+make your and enjoy it more i would
+
+1563
+00:59:00,798 --> 00:59:05,838
+start at least monitor and get get an
+
+1564
+00:59:02,960 --> 00:59:06,798
+inexpensive camera to look at your your
+
+1565
+00:59:05,838 --> 00:59:09,838
+grow
+
+1566
+00:59:06,798 --> 00:59:12,239
+and you could even pan over to a
+
+1567
+00:59:09,838 --> 00:59:13,838
+temperature and humidity sensor that's
+
+1568
+00:59:12,239 --> 00:59:16,078
+just a standalone sitting there and now
+
+1569
+00:59:13,838 --> 00:59:19,039
+you can remotely see it and you can get
+
+1570
+00:59:16,079 --> 00:59:21,119
+these cameras for like 35 bucks that can
+
+1571
+00:59:19,039 --> 00:59:22,798
+pan and tilt and they want you to get
+
+1572
+00:59:21,119 --> 00:59:24,480
+the subscription for it but if you're
+
+1573
+00:59:22,798 --> 00:59:25,838
+just doing a live view to check on your
+
+1574
+00:59:24,480 --> 00:59:27,280
+plants and see what the current
+
+1575
+00:59:25,838 --> 00:59:29,679
+environment is
+
+1576
+00:59:27,280 --> 00:59:32,640
+why not do that it's a very inexpensive
+
+1577
+00:59:29,679 --> 00:59:34,399
+way of being able to kind of
+
+1578
+00:59:32,639 --> 00:59:37,039
+have some remote
+
+1579
+00:59:34,400 --> 00:59:39,119
+access to your grow and to give you some
+
+1580
+00:59:37,039 --> 00:59:41,519
+hopefully comfort that that everything's
+
+1581
+00:59:39,119 --> 00:59:42,480
+going well so you know that that would
+
+1582
+00:59:41,519 --> 00:59:45,920
+be my
+
+1583
+00:59:42,480 --> 00:59:48,639
+advice um for people and again people
+
+1584
+00:59:45,920 --> 00:59:50,639
+feel free if any of this is interesting
+
+1585
+00:59:48,639 --> 00:59:53,039
+and would like to reach out to me you
+
+1586
+00:59:50,639 --> 00:59:55,039
+know please do so i'll leave a link to
+
+1587
+00:59:53,039 --> 00:59:56,639
+simon's instagram page on instagram as
+
+1588
+00:59:55,039 --> 00:59:58,880
+well i'll link that down in the
+
+1589
+00:59:56,639 --> 01:00:00,400
+description section below and also a
+
+1590
+00:59:58,880 --> 01:00:02,240
+link to the website will be down in the
+
+1591
+01:00:00,400 --> 01:00:04,160
+description section below if you enjoyed
+
+1592
+01:00:02,239 --> 01:00:06,318
+this video click that like button if you
+
+1593
+01:00:04,159 --> 01:00:08,879
+haven't already subscribe to the channel
+
+1594
+01:00:06,318 --> 01:00:10,079
+release episodes every single weekend
+
+1595
+01:00:08,880 --> 01:00:12,079
+i'd love to know in the comments section
+
+1596
+01:00:10,079 --> 01:00:13,920
+what type of automation do you have in
+
+1597
+01:00:12,079 --> 01:00:16,400
+your garden let us know down in the
+
+1598
+01:00:13,920 --> 01:00:18,400
+comment section below lastly if you are
+
+1599
+01:00:16,400 --> 01:00:20,639
+tuning in on apple podcast please leave
+
+1600
+01:00:18,400 --> 01:00:22,880
+a rating and review we are coming up to
+
+1601
+01:00:20,639 --> 01:00:24,798
+i believe 200 ratings and reviews so
+
+1602
+01:00:22,880 --> 01:00:26,079
+almost there need your help to get there
+
+1603
+01:00:24,798 --> 01:00:28,400
+and thank you to everyone who has left a
+
+1604
+01:00:26,079 --> 01:00:30,079
+rating in review so far simon thank you
+
+1605
+01:00:28,400 --> 01:00:32,639
+so much for coming on to the podcast
+
+1606
+01:00:30,079 --> 01:00:34,480
+today this has been an eye-opener and a
+
+1607
+01:00:32,639 --> 01:00:36,960
+sense to know that there is this
+
+1608
+01:00:34,480 --> 01:00:39,199
+automation being worked on and things
+
+1609
+01:00:36,960 --> 01:00:41,280
+will be easier for people in the garden
+
+1610
+01:00:39,199 --> 01:00:43,118
+you know particularly indoors and i'm
+
+1611
+01:00:41,280 --> 01:00:45,280
+excited for the future so thanks for
+
+1612
+01:00:43,119 --> 01:00:47,200
+coming on and thank you so much chris i
+
+1613
+01:00:45,280 --> 01:00:49,200
+really i appreciate
+
+1614
+01:00:47,199 --> 01:00:51,439
+you uh having me on to talk about this
+
+1615
+01:00:49,199 --> 01:00:52,480
+stuff and um thank you thanks a lot it's
+
+1616
+01:00:51,440 --> 01:00:54,720
+been great
+
+1617
+01:00:52,480 --> 01:00:57,838
+absolutely all right enjoy the rest of
+
+1618
+01:00:54,719 --> 01:00:57,838
+your day
+
+1619
+01:01:13,358 --> 01:01:15,440
+you
+

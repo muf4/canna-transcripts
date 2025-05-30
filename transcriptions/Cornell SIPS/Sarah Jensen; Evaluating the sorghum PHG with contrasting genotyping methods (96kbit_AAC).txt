@@ -1,0 +1,319 @@
+[SPEAKER_01]: This is a production of Cornell
+University.
+[SPEAKER_00]: So I'm going to start out and remind you
+about what I talked about last year,
+[SPEAKER_00]: which was also the practical haplotype
+graph.
+[SPEAKER_00]: And so last year, I talked a lot about
+building the practical haplotype graph in
+[SPEAKER_00]: sorghum and how we were trying to use it
+in a breeding program, which is run by
+[SPEAKER_00]: Gael Presois and based in Port-au-Prince,
+Haiti.
+Okay.
+[SPEAKER_00]: And so we've used the practical haplotype
+graph in that program for genomic
+[SPEAKER_00]: selection a couple times now.
+[SPEAKER_00]: And in the last year, really, one of the
+things that we've done is we've tested the
+[SPEAKER_00]: practical haplotype graph with different
+genotyping methods.
+[SPEAKER_00]: And so today, actually, what I wanted to
+talk about is how we've tested the PHG and
+[SPEAKER_00]: share some of those genotyping methods and
+the results with and without the practical
+[SPEAKER_00]: haplotype graph.
+Okay.
+[SPEAKER_00]: So to start out, we have our nice genomic
+selection scheme on the right here.
+[SPEAKER_00]: And in any GS scheme, we have this point
+where we need to genotype the progeny
+[SPEAKER_00]: population.
+[SPEAKER_00]: And we have a lot of options for
+genotyping.
+[SPEAKER_00]: And so this list on the left is absolutely
+not an exhaustive list, but it does list
+[SPEAKER_00]: some of the possibilities that we have.
+[SPEAKER_00]: But really, what we want is a technology
+that's going to be cheap.
+[SPEAKER_00]: It's going to be fast.
+[SPEAKER_00]: And we also really want a technology
+that's fairly easy to use both across
+[SPEAKER_00]: breeding programs and also across species.
+[SPEAKER_00]: And so when we start to subset down this
+list based on those criteria, we can
+[SPEAKER_00]: actually cross out a lot of the things
+that are on this list to begin with.
+[SPEAKER_00]: But two of the ones that are left are
+RHAMP-seq or RAMP-seq and SCIM sequencing.
+[SPEAKER_00]: And so these are two genotyping methods
+that I have used with the practical
+[SPEAKER_00]: haplotype graph.
+[SPEAKER_00]: And so that's what I'm going to be
+presenting for you guys today.
+[SPEAKER_00]: Now, last year, I put up a slide and I
+said, okay, the practical haplotype graph
+[SPEAKER_00]: is really designed to be an imputation
+tool.
+[SPEAKER_00]: And so it's been designed to work with a
+lot of different types of sequence data.
+[SPEAKER_00]: And I used GBS as an example of that.
+[SPEAKER_00]: I put up GBS data and I showed,
+okay, we can use GBS for genomic selection
+[SPEAKER_00]: in Guyel's breeding program.
+[SPEAKER_00]: And we can also use that same sequence
+data with the practical haplotype graph in
+[SPEAKER_00]: Guyel's breeding program.
+[SPEAKER_00]: So this year, I'm not going to show you
+GBS data with the practical haplotype
+[SPEAKER_00]: graph, but I am going to use that GBS data
+as our baseline.
+[SPEAKER_00]: We know that GBS is a really an effective
+technology.
+[SPEAKER_00]: And so we're always trying to get
+prediction accuracies with new
+[SPEAKER_00]: technologies that are at least equivalent
+to that, okay?
+[SPEAKER_00]: So I'll start actually by talking about
+SCIM sequence.
+[SPEAKER_00]: And when I talk about SCIM sequence,
+what I'm really talking about is a
+[SPEAKER_00]: protocol that was designed by Nextera.
+[SPEAKER_00]: And essentially, they take a TN5
+transposase that jumps into the genome at
+[SPEAKER_00]: different positions randomly across the
+entire genome.
+[SPEAKER_00]: And then we sequence out from those
+positions.
+[SPEAKER_00]: And so that gives us a very sparse initial
+data set.
+[SPEAKER_00]: And it's also completely random.
+[SPEAKER_00]: So we're not capturing one specific or
+consistent marker set with this
+[SPEAKER_00]: technology.
+[SPEAKER_00]: But it is really cheap.
+[SPEAKER_00]: It costs less than $10 per sample.
+[SPEAKER_00]: And so it is a viable option or something
+that we'd like to be able to use with a
+[SPEAKER_00]: breeding program.
+[SPEAKER_00]: And so the question at the bottom then
+becomes, does imputation with the
+[SPEAKER_00]: practical haplotype graph make it possible
+to use this technology?
+[SPEAKER_00]: So I'm going to put up this slide first.
+[SPEAKER_00]: This is a plot very similar to one I
+showed you last year.
+[SPEAKER_00]: And both in this plot and in plots for the
+rest of my talk, if the box is blue,
+[SPEAKER_00]: it's GBS data.
+[SPEAKER_00]: So that's just the baseline, okay?
+[SPEAKER_00]: GBS works well for prediction accuracy.
+[SPEAKER_00]: And that really comes down to the fact
+that because this is based on random
+[SPEAKER_00]: sequencing, there's no consistency.
+[SPEAKER_00]: There's no overlap in positions that we're
+actually sequencing.
+[SPEAKER_00]: And so this is where the practical
+haplotype graph can come in.
+[SPEAKER_00]: If we take that sequence data and we run
+it through the PHG to impute missing
+[SPEAKER_00]: information, we actually get these dark
+green boxes here.
+[SPEAKER_00]: And so you can see that the practical
+haplotype graph is actually helping us to
+[SPEAKER_00]: restore that prediction accuracy.
+[SPEAKER_00]: And we can get an equivalent prediction
+accuracy, approximately the same number of
+[SPEAKER_00]: markers as we would have with GBS.
+[SPEAKER_00]: And we can do it at half the cost.
+[SPEAKER_00]: And so the answer to the question then is
+yes.
+[SPEAKER_00]: With SCIM sequencing, we can use the
+practical haplotype graph for effective
+[SPEAKER_00]: genomic selection.
+[SPEAKER_00]: So the second technology is RAMP-seq or
+RHAMP-seq.
+[SPEAKER_00]: This is an amplicon based sequencing
+method and it targets specific regions.
+[SPEAKER_00]: So it does give you fewer markers,
+but it's offered as a service by a couple
+[SPEAKER_00]: of different companies.
+[SPEAKER_00]: And that means it's very little work for
+breeders to use.
+[SPEAKER_00]: And so we like it for that reason.
+[SPEAKER_00]: And so RAMP-seq, when we put up a plot
+like this, you see that using RAMP-seq
+[SPEAKER_00]: positions or amplicons on their own
+actually works really well.
+[SPEAKER_00]: We're already about the same level as GBS
+with this light purple, those light purple
+[SPEAKER_00]: boxes.
+[SPEAKER_00]: And I do want to point out that this is
+targeting about 2,000 loci across the
+[SPEAKER_00]: genome.
+[SPEAKER_00]: And they've been designed specifically for
+sorghum, but not specifically for Guyel's
+[SPEAKER_00]: program.
+[SPEAKER_00]: Now, when we take that sequence data and
+we run it through the practical haplotype
+[SPEAKER_00]: graph, we get these dark purple boxes.
+[SPEAKER_00]: And that doesn't look so good because you
+can see we're not improving our prediction
+[SPEAKER_00]: accuracy, we're actually really decreasing
+them.
+[SPEAKER_00]: And so that tells us two things.
+[SPEAKER_00]: The first is that in Guyel's program,
+the 2,000 markers that we're capturing
+[SPEAKER_00]: with RHAMP-seq is enough to do effective
+genomic selection.
+[SPEAKER_00]: And the second thing is it's telling us
+that with this technology right now,
+[SPEAKER_00]: the practical haplotype graph is probably
+just adding random noise.
+[SPEAKER_00]: And so this is something that actually the
+programmers have changed actually how
+[SPEAKER_00]: we're imputing these genotypes.
+[SPEAKER_00]: And so in the next couple of months,
+I'll be looking at if those changes have
+[SPEAKER_00]: actually improved this kind of plot.
+[SPEAKER_00]: But the answer right now is that no,
+with RAMP-seq, the practical haplotype
+[SPEAKER_00]: graph doesn't really help us and isn't
+really necessary at all.
+[SPEAKER_00]: So that brings us to this nice point where
+we have a couple different options for
+[SPEAKER_00]: genotyping.
+[SPEAKER_00]: And the option that a breeder chooses
+really should be designed or should be
+[SPEAKER_00]: chosen based on both their breeding goals
+and the budget that they're willing to
+[SPEAKER_00]: spend.
+[SPEAKER_00]: So I'm going to build this plot a little
+bit up on the right here.
+[SPEAKER_00]: On the x-axis, we have the number of SNPs.
+[SPEAKER_00]: It only goes to 3,000, but you can imagine
+we could extend that fairly significantly.
+[SPEAKER_00]: And then on the y-axis, we have cost per
+sample.
+[SPEAKER_00]: So I'll be plotting data that comes from
+AgriPlex Genomics.
+[SPEAKER_00]: That's one of the companies that produces
+this RHAMP-seq amplicon-based sequencing.
+[SPEAKER_00]: And as I plot those, I've also colored,
+hopefully you can see it, OK, the
+[SPEAKER_00]: background of this plot to show you at
+that location in the graph, what is our
+[SPEAKER_00]: best sequencing option cost-wise.
+[SPEAKER_00]: And so just as an example, if we had a
+point where this x is on the screen,
+[SPEAKER_00]: that means we want more than 2,000 markers
+and we're willing to pay more than $15 per
+[SPEAKER_00]: sample.
+[SPEAKER_00]: And so GBS is a good genotyping strategy
+in that particular case.
+[SPEAKER_00]: Does that make sense?
+[SPEAKER_00]: Great.
+[SPEAKER_00]: So let's add some data.
+[SPEAKER_00]: If we start adding data, we can see that
+if we're working in a species that has a
+[SPEAKER_00]: lot of breeding efforts going on,
+maybe we expect that across all breeding
+[SPEAKER_00]: programs, there could be 80,000 or even
+100,000 individuals that are being
+[SPEAKER_00]: genotyped.
+[SPEAKER_00]: Then we're following the blue and purple
+lines on this plot.
+[SPEAKER_00]: And actually, RHAMP-seq is going to be our
+best bet.
+[SPEAKER_00]: We can get about 2,000 markers from
+RHAMP-seq, and we're still under that $10
+[SPEAKER_00]: per sample goal that we'd like to be
+hitting.
+[SPEAKER_00]: If we're working in a species that has
+more moderate breeding efforts,
+[SPEAKER_00]: maybe we have 10,000 or 25,000 samples
+that we expect to be genotyped,
+[SPEAKER_00]: then we're following the orange and green
+lines on this plot.
+[SPEAKER_00]: And we can really decide between RHAMP-seq
+and skim sequencing with the practical
+[SPEAKER_00]: haplotype graph.
+[SPEAKER_00]: Both will give us a cost-effective option
+for genotyping, and we really want to be
+[SPEAKER_00]: paying attention then to how many markers
+we need, because the cost for 1,000
+[SPEAKER_00]: markers is fairly equivalent.
+[SPEAKER_00]: And then last, if we're working in a small
+breeding program, we're following the red
+[SPEAKER_00]: line here, and skim sequence with the
+practical haplotype graph is really going
+[SPEAKER_00]: to be the most effective option for us in
+this case.
+[SPEAKER_00]: I also want to point out that the data
+from AgriPlex only goes up to 2,000
+[SPEAKER_00]: markers, but I sort of tried to
+extrapolate out from that, and that's what
+[SPEAKER_00]: the dotted lines on this plot are.
+[SPEAKER_00]: And so if you extrapolate out,
+if you need more than 2,000 markers,
+[SPEAKER_00]: either for your breeding program or
+because you want to be doing other genomic
+[SPEAKER_00]: analyses, then something like GBS or skim
+sequencing with the practical haplotype
+[SPEAKER_00]: graph is going to be a really good option
+for you.
+[SPEAKER_00]: So that gets us back to our original
+question.
+[SPEAKER_00]: When is the practical haplotype graph most
+useful?
+[SPEAKER_00]: And the answer is, one, if we're working
+in a species that has fairly small
+[SPEAKER_00]: breeding efforts, the PHG can help get us
+cost-effective genotyping.
+[SPEAKER_00]: Another is that if we're working in medium
+or large breeding programs, but we want
+[SPEAKER_00]: more than 1,000 or 2,000 markers,
+the PHG can also help fill in some of that
+[SPEAKER_00]: marker information that we might want.
+[SPEAKER_00]: And then the third is, if we're working in
+a breeding program or set of programs,
+[SPEAKER_00]: and we want to have a consistent set of
+SNPs, the practical haplotype graph can
+[SPEAKER_00]: actually output a consistent SNP set,
+and so that can help with that kind of
+[SPEAKER_00]: consistency as well if we need it.
+[SPEAKER_00]: So I am about out of time.
+[SPEAKER_00]: Hopefully, I've convinced you that the PHG
+does have its uses, and we have used it
+[SPEAKER_00]: effectively in Gael's breeding program,
+although I don't have time to talk about
+[SPEAKER_00]: that here.
+[SPEAKER_00]: There's a lot of people that have worked
+on this, and so I do want to acknowledge
+[SPEAKER_00]: everybody in the Buckler Lab, everybody in
+Gael's program at SHIBAS, and then Jeff
+[SPEAKER_00]: Morris and Kabete Muleta at the Morris
+Lab, who have also put a lot of time into
+[SPEAKER_00]: this project.
+[SPEAKER_00]: But I'm going to wrap up.
+[SPEAKER_00]: So if you guys have questions,
+I'd be happy to try and answer those now,
+[SPEAKER_00]: or we can talk afterward as well.
+[SPEAKER_00]: Thanks.
+[SPEAKER_00]: Good question.
+[SPEAKER_00]: So the question was, all of the box plots
+I showed, are the taxa being shown here
+[SPEAKER_00]: the same?
+[SPEAKER_00]: And the answer is yes.
+[SPEAKER_00]: This is actually all data from the
+training population that Gael made,
+[SPEAKER_00]: and so there's about 250 taxa in that data
+set, and it's consistent across all of the
+[SPEAKER_00]: marker technologies.
+[SPEAKER_00]: Great.
+[SPEAKER_00]: Thanks, guys.
+[SPEAKER_00]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_00]: Thank you.
+Thank you.
+Thank you.

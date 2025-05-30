@@ -1,0 +1,1645 @@
+[SPEAKER_05]: This is a production of Cornell
+University.
+[SPEAKER_00]: It's great to be here, especially with so
+many soils folks.
+[SPEAKER_00]: Like I said, I am the soils person at the
+National Center for Atmospheric Research,
+[SPEAKER_00]: so I'm trying to justify like why soils
+matter all the time, and so it's awesome
+[SPEAKER_00]: to be in a room full of dirt nerds.
+[SPEAKER_00]: And this topic I think is really important
+in the sense that, especially what I'm
+[SPEAKER_00]: calling knowledge model integration,
+I'll talk some about what the knowledge
+[SPEAKER_00]: is, but really that knowledge is the stuff
+that you guys are working on here in the
+[SPEAKER_00]: conversations that I've had with students
+and post-docs and faculty.
+[SPEAKER_00]: It's the stuff that you guys are doing and
+the models that I'm talking about are
+[SPEAKER_00]: large scale models like Dan said,
+so global scale models that run at really
+[SPEAKER_00]: coarse resolutions and how do we integrate
+this fine scale knowledge into coarse
+[SPEAKER_00]: scale models and what are the kind of
+simplifying assumptions that we have to
+[SPEAKER_00]: make.
+[SPEAKER_00]: So that's at a high level what's driving
+some of the questions that I'm talking
+[SPEAKER_00]: about.
+[SPEAKER_00]: And I make the distinction between this
+knowledge model integration between what's
+[SPEAKER_00]: more commonly known as data model
+integration.
+[SPEAKER_00]: And so you might have an example,
+and this is kind of just an illustrative
+[SPEAKER_00]: vignette of how oftentimes model
+development happens, but you have an idea
+[SPEAKER_00]: of what the truth is and some data that
+lets you know, okay, this is in this idea
+[SPEAKER_00]: of truth, this might be, to take a
+different example, somebody with great
+[SPEAKER_00]: hair who's a sharp dresser and has
+wonderful songs that's been loved by
+[SPEAKER_00]: generations.
+[SPEAKER_00]: And so if that's your idea of truth,
+you might make some models that represent
+[SPEAKER_00]: that idea of truth.
+[SPEAKER_00]: So great hair, sharp dresser, wonderful
+songs, loved by generations.
+[SPEAKER_00]: And you could do that and you could maybe
+resolve with data, make those models look
+[SPEAKER_00]: more like the truth or the idea of truth
+that you have.
+[SPEAKER_00]: But this would be a case where you have
+high uncertainty in your models and
+[SPEAKER_00]: relatively low confidence.
+[SPEAKER_00]: So again, data can bridge that uncertainty
+gap, you can reduce the uncertainty with
+[SPEAKER_00]: data, but you're not gonna be able to
+address the confidence gap.
+[SPEAKER_00]: And so in this idea, you're still gonna
+have low confidence.
+[SPEAKER_00]: So instead, you could come up with
+different models that have different
+[SPEAKER_00]: structural underpinnings that still meet
+that base requirement of great hair,
+[SPEAKER_00]: sharp dresser, wonderful songs,
+loved by generations.
+[SPEAKER_00]: But here you've got, you're sampling the
+space of that truth wider.
+[SPEAKER_00]: And so you might still have high
+uncertainty, but I'd argue that we have
+[SPEAKER_00]: more confidence in the model because we're
+sampling the space around truth more
+[SPEAKER_00]: completely.
+[SPEAKER_00]: So in bringing that into the Earth system
+and what I like to think of putting the
+[SPEAKER_00]: Earth in the Earth system, Earth system
+models are really based in the geoscience
+[SPEAKER_00]: community from atmospheric physics and
+fluid dynamics and in the ocean,
+[SPEAKER_00]: thinking about ocean circulation and
+original versions of these models
+[SPEAKER_00]: literally black boxed the land surface.
+[SPEAKER_00]: And the reason they did that was because
+they needed to get air to warm over land
+[SPEAKER_00]: faster than it did over water to get
+circulation patterns right.
+[SPEAKER_00]: So the idea of putting Earth or putting
+terrestrial processes in Earth system
+[SPEAKER_00]: models is really still a very nascent
+field.
+[SPEAKER_00]: This is science that's happened within my
+lifetime.
+[SPEAKER_00]: So in making the Earth green, we've made
+huge improvements in terms of representing
+[SPEAKER_00]: kind of the green slime that's on top of
+the Earth and how the carbon cycle works.
+[SPEAKER_00]: And so representing the carbon cycle again
+in these models is a really new idea.
+[SPEAKER_00]: It's science that's around 20 years old.
+[SPEAKER_00]: And so then what we can do then in terms
+of biology I think is a really,
+[SPEAKER_00]: it's a brand new field.
+[SPEAKER_00]: And my goal in this talk is to illustrate
+some ideas of how we can increase the
+[SPEAKER_00]: confidence that we have in these models by
+considering life.
+[SPEAKER_00]: So my background is as a ecologist and as
+a biologist.
+[SPEAKER_00]: And I only moved into modeling in my
+postdoc and now as a project scientist at
+[SPEAKER_00]: NCAR.
+[SPEAKER_00]: And I think these new tools that we have,
+especially in this DNA images there
+[SPEAKER_00]: intentionally, I think new tools that we
+have in peering into the very small,
+[SPEAKER_00]: very small scales can really inform our
+large scale representations.
+[SPEAKER_00]: So what I'd like to talk about today is
+kind of in two parts.
+[SPEAKER_00]: One is talking about functional traits and
+how functional traits, especially in soil
+[SPEAKER_00]: microorganisms can affect, or how we can
+start thinking about how they may affect
+[SPEAKER_00]: the global carbon cycle.
+[SPEAKER_00]: And then the second one is to talk about
+nutrient limitation.
+[SPEAKER_00]: And I chose that kind of for two reasons.
+[SPEAKER_00]: One is coming to kind of a more soils and
+agricultural focused building.
+[SPEAKER_00]: I wanted to talk about how we think about
+nutrient limitation in large scale models.
+[SPEAKER_00]: Because there's I think some really
+pressing needs to advance that science.
+[SPEAKER_00]: So if we step back and think about how we
+do this model knowledge integration,
+[SPEAKER_00]: generally the way I would argue that
+science kind of works is you have some
+[SPEAKER_00]: sort of scientific paradigm which is based
+on measurements.
+[SPEAKER_00]: Those measurements inform a theory,
+and so theories about how carbon is
+[SPEAKER_00]: stabilized in soils.
+[SPEAKER_00]: And then you come up with numerical models
+that are both represent, that both use the
+[SPEAKER_00]: data to parameterize the models that are
+based on your theoretical understanding of
+[SPEAKER_00]: how the system works.
+[SPEAKER_00]: So that happens in soils.
+[SPEAKER_00]: And it really matters how it happens in
+soils.
+[SPEAKER_00]: And you guys here know this, but soils
+store more carbon than all the plants and
+[SPEAKER_00]: all the atmosphere combined.
+[SPEAKER_00]: And so it's the largest terrestrial carbon
+reservoir that we have.
+[SPEAKER_00]: And it's also the source for all the rock
+derived nutrients that plants use.
+[SPEAKER_00]: And there's, again, tons and tons of
+nitrogen in soils too.
+[SPEAKER_00]: So in terms of biogeochemical cycling,
+soils really are critical for thinking of
+[SPEAKER_00]: that.
+[SPEAKER_00]: But the models that we have for thinking
+about how soils function biogeochemically
+[SPEAKER_00]: are relatively simple.
+[SPEAKER_00]: And they're based on these ideas of
+chemical or calcitrons and somewhat dated
+[SPEAKER_00]: ideas about how carbon turns over.
+[SPEAKER_00]: And so you might have a fast pool here
+represented by candy bars of yummy,
+[SPEAKER_00]: tasty, easy to decompose substrates.
+[SPEAKER_00]: Microbes eat that.
+[SPEAKER_00]: And microbes are represented in models
+like this, but they're represented
+[SPEAKER_00]: implicitly.
+[SPEAKER_00]: And so they eat that yummy sticky carbon,
+and then they turn it into carbon that's
+[SPEAKER_00]: not so tasty and it's not so delicious.
+[SPEAKER_00]: That might have a slower turnover time.
+[SPEAKER_00]: And so this kind of idea is actually
+represented in all of the models that are
+[SPEAKER_00]: used at global scales to represent the
+global carbon cycle.
+[SPEAKER_00]: And so these first order models with kind
+of a cascade of decomposition reactions
+[SPEAKER_00]: are well represented in these global scale
+models.
+[SPEAKER_00]: And the only problem is they're not very
+good at meeting their target.
+[SPEAKER_00]: And so this is kind of a bit of an aside.
+[SPEAKER_00]: But we do a really, really bad job
+representing carbon, at least the initial
+model.
+[SPEAKER_00]: These are the initial carbon stocks that
+we think are all around the globe.
+[SPEAKER_00]: So even though these models are based on
+the same set of assumptions, they're kind
+[SPEAKER_00]: of based around the same subset of truth,
+they do a really poor job hitting the
+[SPEAKER_00]: mark.
+[SPEAKER_00]: And then on top of it, we've learned a lot
+about how carbon is stabilized in soils
+[SPEAKER_00]: over the last 20 years.
+[SPEAKER_00]: And there's kind of an increasing chorus
+as it time to rethink how we represent
+[SPEAKER_00]: carbon in soils.
+[SPEAKER_00]: And so the biggest thing we've learned is
+that actually this kind of decomposition
+[SPEAKER_00]: cascade of increasingly recalcitrant
+carbon is probably unrealistic.
+[SPEAKER_00]: And what reality happens is microbes eat
+carbon.
+[SPEAKER_00]: It might not taste very good to begin
+with.
+[SPEAKER_00]: But once a microbe ingests carbon and it
+assimilates it into their biomass,
+[SPEAKER_00]: that microbial biomass is really tasty to
+other microbes.
+[SPEAKER_00]: And so they go from a carbon molecule that
+might be inherently slow to turnover,
+[SPEAKER_00]: and they turn it into something that would
+naturally turnover faster, except there's
+[SPEAKER_00]: a lock on the candy box now.
+[SPEAKER_00]: And so this is carbon that's
+physiochemically protected within
+[SPEAKER_00]: aggregates or on mineral surfaces.
+[SPEAKER_00]: And so even though it's maybe
+thermodynamically would be favorable to
+[SPEAKER_00]: decompose, microbes can't get to it in the
+first place.
+[SPEAKER_00]: And that's what actually preserves carbon
+in soils.
+[SPEAKER_00]: So for all of this, the microbial catalyst
+really matters.
+[SPEAKER_00]: The microbe that's there is key in this
+transformation of moving carbon from one
+[SPEAKER_00]: pool to another.
+[SPEAKER_00]: And then the conditions matter,
+too.
+[SPEAKER_00]: So there's different kinds of microbes.
+[SPEAKER_00]: They're incredibly complex systems.
+[SPEAKER_00]: And one of the things I like to think
+about is how can we take kind of
+[SPEAKER_00]: simplistic representations of microbial
+diversity and apply those in models at
+[SPEAKER_00]: large scales.
+[SPEAKER_00]: So if we think about this knowledge model
+integration kind of paradigm, there seems
+[SPEAKER_00]: to be a lot of cracks in the model.
+[SPEAKER_00]: So we're collecting new measurements that
+are contradicting this idea of a three
+[SPEAKER_00]: pool model and chemical recalcitrance
+that's revising our theoretical ideas
+[SPEAKER_00]: about how carbon is stabilized in soils.
+[SPEAKER_00]: And so then what are the numerical models
+that we need to start testing and
+[SPEAKER_00]: evaluating and refining some of these
+ideas?
+[SPEAKER_00]: And this is where the knowledge part is
+really critical and why I'm excited to
+[SPEAKER_00]: talk to so many folks here is because the
+theory and the measurements that you guys
+[SPEAKER_00]: are all making I think are really critical
+to informing models in ways that hopefully
+[SPEAKER_00]: kind of completes this cycle.
+[SPEAKER_00]: So once you have a model that better
+reflects your theory, you can understand
+[SPEAKER_00]: what measurements you need to kind of
+improve this whole system.
+[SPEAKER_00]: So how do we do that?
+[SPEAKER_00]: By going out and first off taking samples
+and then thinking about microbes
+[SPEAKER_00]: explicitly in models.
+[SPEAKER_00]: And so thinking about microbes and
+microbial diversity I think is a key piece
+[SPEAKER_00]: of this.
+[SPEAKER_00]: But it's no slight task.
+[SPEAKER_00]: If you went out to the flower beds and
+grabbed a tablespoon of soil, there's
+[SPEAKER_00]: nearly as many microbes in that tablespoon
+of soil as there are people on earth.
+[SPEAKER_00]: And so this is a hugely complex problem in
+thinking about ways that you can represent
+[SPEAKER_00]: this at large spacial scales is somewhat
+daunting.
+[SPEAKER_00]: And so what I want to articulate is kind
+of just one axis of this theory
+[SPEAKER_00]: measurement modeling paradigm that really
+emphasizes the theory and the modeling
+[SPEAKER_00]: pieces of this.
+[SPEAKER_00]: And one of the things that I think this
+project that we're starting to work on is
+[SPEAKER_00]: also then thinking about the measurements
+that we'll need to take.
+[SPEAKER_00]: And so at global scales, functional traits
+are really important for certain parts of
+[SPEAKER_00]: the carbon cycle.
+[SPEAKER_00]: So on land, we think about plant
+functional traits and the way that
+[SPEAKER_00]: differences between evergreen trees and
+grasses and deciduous trees are
+[SPEAKER_00]: responsible for moving carbon in different
+ways based on the kind of biological
+[SPEAKER_00]: diversity that we can see fortunately from
+space in terms of how different plant
+[SPEAKER_00]: functional types respond.
+[SPEAKER_00]: In global models at large scales,
+we even think about plankton functional
+[SPEAKER_00]: types.
+[SPEAKER_00]: So there's different aspects of the ocean
+carbon cycle that control the biology and
+[SPEAKER_00]: biological pump and how quickly carbon
+sinks in the ocean.
+[SPEAKER_00]: And different plankton groups respond to
+temperature and salinity and nutrients in
+[SPEAKER_00]: different ways.
+[SPEAKER_00]: And that's the kind of biological imprint
+of the blue carbon cycle.
+[SPEAKER_00]: So we think about the green carbon cycle.
+[SPEAKER_00]: We think about the blue carbon cycle.
+[SPEAKER_00]: And what I'm arguing is that we really
+need to start thinking about the brown
+[SPEAKER_00]: carbon cycle and functional traits and
+ways that we can simplify the diversity of
+[SPEAKER_00]: soils, which granted is huge, and
+especially focusing on how that affects
+[SPEAKER_00]: biogeochemical cycles.
+[SPEAKER_00]: So how do we do that?
+[SPEAKER_00]: With a really simple approach.
+[SPEAKER_00]: So I'm highly reductionist in
+acknowledging that from the start.
+[SPEAKER_00]: Because I want to be able to take these
+ideas that are founded on theory,
+[SPEAKER_00]: but then apply them at really,
+really large scales.
+[SPEAKER_00]: And so in this idea of microbes,
+we're implicitly thinking about two
+[SPEAKER_00]: groups.
+[SPEAKER_00]: You can think of them as a fast group and
+a slow group.
+[SPEAKER_00]: You can think about them as bacteria and
+fungi.
+[SPEAKER_00]: You can think about them as copiotrophic
+and oligotrophic.
+[SPEAKER_00]: Whatever axis of variation you want to
+slice through these.
+[SPEAKER_00]: But for the purposes of what I'm talking
+about today, I'm going to just call them
+[SPEAKER_00]: fast and slow.
+[SPEAKER_00]: So there's one group of organisms that has
+really fast kinetics.
+[SPEAKER_00]: And so they produce biomass and turn over
+at high rates.
+[SPEAKER_00]: But they're also less efficient.
+[SPEAKER_00]: And so these fast microbes are kind of the
+live fast, die young, but relatively
+[SPEAKER_00]: inefficient in how they handle carbon.
+[SPEAKER_00]: And comparing that with the slow microbes,
+which are kind of an ecological framework.
+[SPEAKER_00]: You're K strategists, so they grow slowly.
+[SPEAKER_00]: They're much more efficient how they
+handle carbon.
+[SPEAKER_00]: But they have a different life history
+strategy.
+[SPEAKER_00]: So these two microbes eat different kinds
+of plant litter.
+[SPEAKER_00]: And this borrows heavily on the kind of
+chemical recalcitrant theories,
+[SPEAKER_00]: where you've got yummy, tasty,
+quickly decomposable litter that might be
+[SPEAKER_00]: low lignin, but high nitrogen content.
+[SPEAKER_00]: And then there's relatively recalcitrant
+litter, stuff that has high lignin content
+[SPEAKER_00]: and low nitrogen.
+[SPEAKER_00]: And then there's three soil organic matter
+pools in this model.
+[SPEAKER_00]: So there's a yummy, tasty pool that maybe
+chemically looks a whole lot like this
+[SPEAKER_00]: metabolic plant litter.
+[SPEAKER_00]: But it's available to microbes.
+[SPEAKER_00]: And so it's not chemically or physically
+protected.
+[SPEAKER_00]: Then there's this physicochemically
+protected stuff.
+[SPEAKER_00]: This might be heavy fraction in the
+measurements.
+[SPEAKER_00]: This might be stuff that's on mineral
+surfaces or in aggregates.
+[SPEAKER_00]: But somehow it's physically protected from
+microbes.
+[SPEAKER_00]: And then there's also this structurally
+protected pool.
+[SPEAKER_00]: And so this is stuff that maybe looks more
+like plant residues, highly lignified
+[SPEAKER_00]: potentially.
+[SPEAKER_00]: And this is maybe more like light fraction
+in the measurement.
+[SPEAKER_00]: So you've got kind of heavy fraction,
+physically protected stuff, versus the
+[SPEAKER_00]: light fraction, chemically protected stuff
+in this model.
+[SPEAKER_00]: And then the carbon that the microbes can
+eat.
+[SPEAKER_00]: So this is a model that we're calling
+MIMICS.
+[SPEAKER_00]: And I worked on this with Stuart Grandy
+and Cynthia Collins.
+[SPEAKER_00]: I'm calling back who Cynthia used to be at
+UNH with Stuart.
+[SPEAKER_00]: And the model's a little bit more
+complicated in the sense that we allow
+[SPEAKER_00]: both the fast and the slow microbial pools
+to eat both kinds of litter.
+[SPEAKER_00]: But they also can only eat this available
+soil organic matter.
+[SPEAKER_00]: So they don't have access to the
+physicochemically protected stuff.
+[SPEAKER_00]: And the chemically protected stuff has to
+be depolymerized somehow before it's
+[SPEAKER_00]: become available.
+[SPEAKER_00]: And then it goes into biomass.
+[SPEAKER_00]: And so then when we think about evaluating
+a model like this across scales,
+[SPEAKER_00]: this is kind of a nice theoretical model.
+[SPEAKER_00]: What are the data that we can use to try
+to evaluate it?
+[SPEAKER_00]: And I think we probably have the most data
+thinking about kind of plot level
+[SPEAKER_00]: measurements, maybe cross continental
+measurements, but looking at landscape
+[SPEAKER_00]: variation and then their potential
+response to perturbations.
+[SPEAKER_00]: What I want to use these data then are for
+global projections.
+[SPEAKER_00]: So moving up in scale, how can we take
+these kind of site level measurements and
+[SPEAKER_00]: have any confidence that what we're saying
+at global scales matter?
+[SPEAKER_00]: And then moving down, what are some ways
+that we can think about functional
+[SPEAKER_00]: diversity and some of the assumptions that
+are built into a model like this?
+[SPEAKER_00]: And how can we revise and refine those
+assumptions to kind of improve confidence
+[SPEAKER_00]: across the spectrum?
+[SPEAKER_00]: So I want to focus at the landscape scale
+first.
+[SPEAKER_00]: And these are results that I'll show from
+some litter decomposition experiments.
+[SPEAKER_00]: And here, talking about litter
+decomposition is kind of like,
+[SPEAKER_00]: eh, not very exciting.
+[SPEAKER_00]: But when you talk about litter
+decomposition at a place like NCAR,
+[SPEAKER_00]: they are fascinated to know how you
+actually watch leaves decompose.
+[SPEAKER_00]: That's just like an unheard of thing for
+atmospheric scientists.
+[SPEAKER_00]: And so as you know, you can put litter
+bags out on the field and harvest them
+[SPEAKER_00]: sequentially and kind of watch how quickly
+they decompose.
+[SPEAKER_00]: And so the data that I'm looking at here
+come from the LIDAT data set.
+[SPEAKER_00]: LIDAT was a 10-year experiment with sites
+basically from the Arctic all the way down
+[SPEAKER_00]: to the tropics and at 20-some different
+sites.
+[SPEAKER_00]: They decomposed six different kinds of
+litter both above and below ground for a
+[SPEAKER_00]: decade.
+[SPEAKER_00]: So these are results just from Harvard
+Forest.
+[SPEAKER_00]: And the observations are shown with the
+closed circles.
+[SPEAKER_00]: And the model results for mimics are shown
+with the mean of all the six different
+[SPEAKER_00]: litter types as shown by the heavy line.
+[SPEAKER_00]: And the standard deviation around those is
+the shaded area.
+[SPEAKER_00]: And what's important to notice here is
+that we both kind of capture the shape of
+[SPEAKER_00]: the curve and maybe miss the tail a little
+bit at the end.
+[SPEAKER_00]: But then more importantly, we're able to
+capture because of the ideas of litter
+[SPEAKER_00]: quality that are built into mimics,
+we kind of capture the effect of litter
+[SPEAKER_00]: quality as well.
+[SPEAKER_00]: So we're capturing the climate effect,
+which is basically giving you the slope of
+[SPEAKER_00]: the line and then the effect of litter
+quality, which gives you the spread among
+[SPEAKER_00]: the observations.
+[SPEAKER_00]: So the model is tuned up for Harvard
+Forest.
+[SPEAKER_00]: And then we looked at it kind of to
+validate at Bonanza Creek.
+[SPEAKER_00]: So Bonanza Creek's in kind of the interior
+of Alaska.
+[SPEAKER_00]: It's a much colder climate, much drier.
+[SPEAKER_00]: And you can see that mimics does a pretty
+good job here.
+[SPEAKER_00]: So tuning the model to one site and we can
+look at it at another and have some
+[SPEAKER_00]: confidence that we're kind of doing the
+right thing.
+[SPEAKER_00]: But remember, LIDAT was done not at two
+sites, but at 26 sites.
+[SPEAKER_00]: And so these are the results from all of
+the time points from all of the sites over
+[SPEAKER_00]: a decade worth of observations.
+[SPEAKER_00]: The colors here are showing different
+biomes.
+[SPEAKER_00]: So we're kind of lumping things based on
+Arctic tundra, tropical forest,
+[SPEAKER_00]: deciduous forest, evergreen forest.
+[SPEAKER_00]: And again, mimics and descent here,
+which is a kind of I would say the gold
+[SPEAKER_00]: standard of what most models use,
+a first order model based on these ideas
+[SPEAKER_00]: of chemical or calcitrons.
+[SPEAKER_00]: It's hard to distinguish between the two
+of them.
+[SPEAKER_00]: They generally do a good job.
+[SPEAKER_00]: Both models do a relatively good job
+representing the mass remaining.
+[SPEAKER_00]: So what I'd argue is that what we're
+starting to do is sample the space around
+[SPEAKER_00]: this kind of hypothetical truth box
+better.
+[SPEAKER_00]: We've got Descent and Roth C and some
+other model that's similar to those two.
+[SPEAKER_00]: And now we've got another great dresser,
+fabulous hair, influenced generations.
+[SPEAKER_00]: And hopefully we're sampling the space
+around that truth better.
+[SPEAKER_00]: What really matters then is how you
+extrapolate these models and what they
+[SPEAKER_00]: show you in terms of global response.
+[SPEAKER_00]: And so I want to spend a little bit of
+time talking about the global response of
+[SPEAKER_00]: these models, both in terms of their spin
+up and what they look like at steady state
+[SPEAKER_00]: and then how they might respond to
+different perturbations in the future.
+[SPEAKER_00]: And so in this experiment, we took using a
+different set of models now that one of
+[SPEAKER_00]: the things I've learned is that model
+development happens really, really fast at
+[SPEAKER_00]: a place like NCAR.
+[SPEAKER_00]: And so there's new versions of the model.
+[SPEAKER_00]: I came to NCAR and we were using one
+version of CLM.
+[SPEAKER_00]: Since then, we've come up with two new
+ones since then.
+[SPEAKER_00]: So there's all kinds of data that you can
+use at a place like this.
+[SPEAKER_00]: So this is using the almost latest and
+greatest version of the model,
+[SPEAKER_00]: but not quite, and comparing to OBS on the
+top from the Harmonized World Soil
+[SPEAKER_00]: Database.
+[SPEAKER_00]: So these are just soil carbon stocks from
+the surface down to a meter.
+[SPEAKER_00]: You can throw a lot of darts at the
+observations.
+[SPEAKER_00]: There's actually a ton of observational
+uncertainty when you try to look at global
+[SPEAKER_00]: carbon stocks, especially down to a meter.
+[SPEAKER_00]: Several different groups have had several
+different maps.
+[SPEAKER_00]: And one recent estimate puts the number
+twice of what that top plot shows.
+[SPEAKER_00]: So there's a huge amount of observational
+uncertainty.
+[SPEAKER_00]: This version of CLM is pretty nifty in the
+sense it has vertically resolved carbon.
+[SPEAKER_00]: And because it's got vertically resolved
+representation of soil carbon pools,
+[SPEAKER_00]: which allows you to develop permafrost
+carbon at high latitudes.
+[SPEAKER_00]: That's why you see so much red at high
+latitudes in this model.
+[SPEAKER_00]: And then MIMIX is just using a single
+bucket.
+[SPEAKER_00]: We're just extrapolating these ideas from
+the surface all the way down to a meter,
+[SPEAKER_00]: which is a huge simplification.
+[SPEAKER_00]: But it's numerically a lot faster to solve
+if you don't have to think about all the
+[SPEAKER_00]: soil layers down to a meter depth.
+[SPEAKER_00]: And so I'd say that both of these models
+kind of look reasonable.
+[SPEAKER_00]: They have global soil carbon stocks that
+roughly match the observations.
+[SPEAKER_00]: And I should also add that both of these
+models are better than the Star Wars,
+[SPEAKER_00]: the Sorem troopers throwing darts.
+[SPEAKER_00]: So all the CMIP5 models are worse than
+both of these up here.
+[SPEAKER_00]: So we've learned something in the last few
+years since the CMIP models came out.
+[SPEAKER_00]: And then you can look at how they respond
+to different perturbations.
+[SPEAKER_00]: So we took the steady state pools that
+were spun up using identical forcing so
+[SPEAKER_00]: the same climate, same NPP inputs.
+[SPEAKER_00]: And then look at how they respond here to
+elevated CO2.
+[SPEAKER_00]: So when you juice a model with CO2,
+models like the community land model or
+[SPEAKER_00]: really any Earth system model that have
+kind of bulb area and far core
+[SPEAKER_00]: photosynthesis in them respond by
+increasing plant productivity.
+[SPEAKER_00]: So when you increase plant productivity,
+you increase litter fall.
+[SPEAKER_00]: And again, these models have the same
+response, but from these initial pools,
+[SPEAKER_00]: how they respond in future years.
+[SPEAKER_00]: So this is going from present day out to
+2100 with only the elevated CO2 response
+[SPEAKER_00]: in the model.
+[SPEAKER_00]: So we're not looking at temperature
+sensitivity here at all.
+[SPEAKER_00]: But you can see that CLM, which is the
+community land model and mimics the
+[SPEAKER_00]: microbial model that I've been working
+with, show really divergent trajectories
+[SPEAKER_00]: in terms of the amount of carbon you can
+store on land under elevated CO2.
+[SPEAKER_00]: So this matters in the sense that if we're
+trying to make policy recommendations
+[SPEAKER_00]: about how much carbon we can put in the
+atmosphere to reach COP21 or to reach RCP
+[SPEAKER_00]: 8.5, to reach some target, we need to know
+how much carbon the land can store.
+[SPEAKER_00]: And what these models are telling you is
+that you can get a factor two,
+[SPEAKER_00]: you get twice as much carbon depending on
+which model you use.
+[SPEAKER_00]: So we need to make policy recommendations
+that might be realistic if we think that
+[SPEAKER_00]: the land surface is going to continue
+acting as a carbon sink.
+[SPEAKER_00]: What's even more interesting to me is then
+the spatial distribution of these.
+[SPEAKER_00]: So what happens in the model is that
+tropical NPP, tropical productivity really
+[SPEAKER_00]: blows up.
+[SPEAKER_00]: So you can see that in the CLM results
+where the carbon stocks are proportional
+[SPEAKER_00]: to NPP.
+[SPEAKER_00]: And so any place that NPP increases,
+that's where you end up storing carbon in
+[SPEAKER_00]: the model like CLM.
+[SPEAKER_00]: In a model like mimics, you can actually
+lose carbon at high latitudes,
+[SPEAKER_00]: and that's because of priming.
+[SPEAKER_00]: So again, this isn't a thermal response.
+[SPEAKER_00]: This is just an elevated CO2 response.
+[SPEAKER_00]: So in a microbial explicit model,
+when you feed microbes more carbon,
+[SPEAKER_00]: the microbial biomass pool gets bigger.
+[SPEAKER_00]: The bigger that microbial biomass pool is,
+it can churn through more soil carbon.
+[SPEAKER_00]: And in places like high latitudes,
+you actually lose it.
+[SPEAKER_00]: Bigger microbial biomass pools at low
+latitudes here are actually stabilized
+[SPEAKER_00]: because of assumptions that the model
+makes about how finely textured soils
+[SPEAKER_00]: stabilize carbon.
+[SPEAKER_00]: So you get this really divergent spatial
+pattern between the two.
+[SPEAKER_00]: But again, the assumptions that you make
+in the model and the assumptions that you
+[SPEAKER_00]: make about how different parts of the
+model respond to perturbations really
+[SPEAKER_00]: matter in terms of how these trajectories
+play out over time.
+[SPEAKER_00]: So I'm absolutely not arguing that these
+results are right.
+[SPEAKER_00]: But because this is a microbial explicit
+model, I want to start to think about ways
+[SPEAKER_00]: that we can use some of these fine scale
+data to refine our kind of projections and
+[SPEAKER_00]: improve the confidence ultimately at
+global scales.
+[SPEAKER_00]: So again, this is no small challenge.
+[SPEAKER_00]: When you sequence the genomes and the
+metagenomes and do proteomics and all the
+[SPEAKER_00]: other crazy cool stuff that you guys have
+learned to do to soils, you get just a
+[SPEAKER_00]: wealth of data.
+[SPEAKER_00]: And figuring out how to take that wealth
+of data and distill it down into something
+[SPEAKER_00]: that is simple enough for me and my model
+to understand is really, really tricky.
+[SPEAKER_00]: And I guess the challenge that I'd like to
+make is that in some ways, I feel like
+[SPEAKER_00]: this omics revolution is still,
+in some ways, still in the 17th or 18th
+[SPEAKER_00]: century and really just cataloging and
+counting organisms.
+[SPEAKER_00]: But we still are, at least in my
+understanding, is we're still kind of
+[SPEAKER_00]: lacking some of the function in this,
+especially broad scale functioning related
+[SPEAKER_00]: to carbon cycle.
+[SPEAKER_00]: And so the challenge then is moving from
+these kind of super detailed bubble
+[SPEAKER_00]: diagrams of what microbes are in the soil
+to what they're actually doing and
+[SPEAKER_00]: especially thinking about that in a
+functional sense.
+[SPEAKER_00]: And it could be more complicated than this
+two microbes situation that I've drawn up.
+[SPEAKER_00]: But I think that's part of the trick of
+what Dan and Johannes and our groups are
+[SPEAKER_00]: trying to think about.
+[SPEAKER_00]: And so a few of these slides are blatantly
+plagiarized from work that Dan and his
+[SPEAKER_00]: group have been doing.
+[SPEAKER_00]: And I'm going to try not to butcher the
+science too much as I talk about these.
+[SPEAKER_00]: But what SIP technology and Dan's group
+were able to do is to take an
+[SPEAKER_00]: environmental sample here, soils from a
+local ag field, and labelize that soil
+[SPEAKER_00]: with 13C so that instead of looking at the
+entire microbial community that's in
+[SPEAKER_00]: soils, you're only looking at the microbes
+that are active, the microbes that took up
+[SPEAKER_00]: this label.
+[SPEAKER_00]: And so in this sample, there's all these
+other microbes that are in the soils,
+[SPEAKER_00]: but they're not active.
+[SPEAKER_00]: They didn't take up the substrate.
+[SPEAKER_00]: So using SIP, you can label microbes and
+you're only labeling the active part of
+[SPEAKER_00]: the community.
+[SPEAKER_00]: And then you centrifuge the sample down to
+separate the DNA and you're able to look
+[SPEAKER_00]: at just the 13C DNA and see who's there
+and potentially what they're doing and
+[SPEAKER_00]: kind of forget about the rest.
+[SPEAKER_00]: You don't need to worry about the rest of
+the non-active part of the community as
+[SPEAKER_00]: much.
+[SPEAKER_00]: But again, there's some huge challenges in
+going from the stuff that's published in
+[SPEAKER_00]: FEMS and the journals like that.
+[SPEAKER_00]: I don't know how PCA axes map onto this
+map.
+[SPEAKER_00]: And that's one of the tricks, I think,
+is figuring out how to have this kind of
+[SPEAKER_00]: interdisciplinary dialogue and thinking
+about ways that blips on this screen can
+[SPEAKER_00]: turn into blips on this screen.
+[SPEAKER_00]: And so these are some kind of preliminary
+results from Dan's group.
+[SPEAKER_00]: And this is a PCA going through one of
+these experiments, one of these SIP
+[SPEAKER_00]: experiments where they added a whole
+cocktail of 13C labeled substrates to
+[SPEAKER_00]: soils and then looking at the variation in
+who was active at what times and for how
+long.
+[SPEAKER_00]: And basically looking at the identity of
+who was there.
+[SPEAKER_00]: So what's explained by the first axis of
+this PCA is basically an oligotrophic to
+[SPEAKER_00]: copiotrophic ratio in my mind.
+[SPEAKER_00]: And so what you have on the right side are
+organisms that group functionally and they
+[SPEAKER_00]: tend to be relatively fast growing.
+[SPEAKER_00]: They have high copy number.
+[SPEAKER_00]: They're utilizing relatively soluble
+substrates.
+[SPEAKER_00]: And they're relatively low diversity.
+[SPEAKER_00]: In contrast, on the left side of the PCA,
+these are slower growing organisms with
+[SPEAKER_00]: low copy number.
+[SPEAKER_00]: They're utilizing relatively insoluble
+substrates.
+[SPEAKER_00]: And they're really highly diverse.
+[SPEAKER_00]: So it's a whole bunch of organisms that
+are on this kind of slow growing side of
+[SPEAKER_00]: things.
+[SPEAKER_00]: So when we think about a model,
+this is, at least for me, I was super
+[SPEAKER_00]: excited that Dan was like, your model
+seems to make sense.
+[SPEAKER_00]: I was like, yay.
+[SPEAKER_00]: It's not totally, oh.
+[SPEAKER_00]: I've got a seminar to go to.
+[SPEAKER_00]: Oh, it's not this one, though.
+[SPEAKER_00]: Let's see.
+[SPEAKER_00]: There it is.
+[SPEAKER_00]: So I totally lost my strength for that.
+[SPEAKER_00]: So there's support for this kind of
+copiotrophic to oligotrophic or this fast
+[SPEAKER_00]: or slow dichotomy.
+[SPEAKER_00]: And one of the things I think that would
+be really interesting with these data,
+[SPEAKER_00]: and Dan and I were staring at all these
+little curves on his screen yesterday,
+[SPEAKER_00]: but this is kind of a growth response.
+[SPEAKER_00]: Basically, where you can look at abundance
+over time.
+[SPEAKER_00]: You can look at the slope of these fast
+growing organisms and the slope of these
+[SPEAKER_00]: slow growing organisms and start to inform
+some of the kinetics that are in the
+[SPEAKER_00]: model.
+[SPEAKER_00]: So there's temperature sensitive VMAX and
+KM parameters that go into a model like
+[SPEAKER_00]: MIMIX.
+[SPEAKER_00]: And then I've just kind of made some
+assumptions up that give you fast and slow
+[SPEAKER_00]: turnover.
+[SPEAKER_00]: But my hope is that we can actually
+constrain what's really an infinite amount
+[SPEAKER_00]: of diversity.
+[SPEAKER_00]: With some of these results in the sense
+that you can estimate growth rate curves
+[SPEAKER_00]: from these.
+[SPEAKER_00]: So this is one example where hopefully SIP
+data can really be directly translated
+[SPEAKER_00]: into a model.
+[SPEAKER_00]: And I should also note, none of Dan's
+curves look nearly as nice as this.
+[SPEAKER_00]: This is me idealizing the data that he's
+going to be producing.
+[SPEAKER_00]: So then there's also some evidence from
+these results that substrate quality
+[SPEAKER_00]: really matters.
+[SPEAKER_00]: Again, these fast growing organisms are
+the ones that are eating relatively
+[SPEAKER_00]: soluble substrates.
+[SPEAKER_00]: Whereas the slow growing ones are eating
+relatively insoluble substrates.
+[SPEAKER_00]: So it's slightly different than this kind
+of metabolic and structural litter idea
+[SPEAKER_00]: that's in MIMIX.
+[SPEAKER_00]: But it's still this idea that there are
+differences in microbial, in the food that
+[SPEAKER_00]: microbes are eating.
+[SPEAKER_00]: And those differences really matter in
+terms of how they map on to who's getting
+[SPEAKER_00]: it, who has access to them.
+[SPEAKER_00]: And then lastly, and this is I think where
+you'll see Johannes and his group come in,
+[SPEAKER_00]: is that after the microbes access the
+food, then they die and either get eaten
+[SPEAKER_00]: by other microbes, or they stick to
+mineral surfaces, or they form aggregates.
+[SPEAKER_00]: And figuring out the fate of these
+microbial residues is really, really
+[SPEAKER_00]: critical.
+[SPEAKER_00]: And it's absolutely just made up in the
+model.
+[SPEAKER_00]: There's absolutely no data that goes into
+it.
+[SPEAKER_00]: The amount of carbon that goes into this
+physiochemically protected pool is
+[SPEAKER_00]: determined by clay content, which kind of
+makes sense, but not really if you look at
+[SPEAKER_00]: the data.
+[SPEAKER_00]: The amount that's available is kind of
+just parameterized so that it's not too
+[SPEAKER_00]: big and not too small.
+[SPEAKER_00]: But the flux rates around that really
+could use some information, especially
+[SPEAKER_00]: where these turnover products go.
+[SPEAKER_00]: Are these fast turnover microbes,
+are they covered with sticky residues that
+[SPEAKER_00]: actually adhere to mineral surfaces?
+[SPEAKER_00]: And that's what confers physicochemical
+stabilization.
+[SPEAKER_00]: Or is it because these slow microbes are
+actually growing on mineral surfaces to
+[SPEAKER_00]: begin with, and potentially exuding these
+extracellular saccharides that are then
+[SPEAKER_00]: sticking to other soil particles.
+[SPEAKER_00]: And that's what's forming aggregates.
+[SPEAKER_00]: And I don't have any idea about how this
+faster slow dichotomy plays out in terms
+[SPEAKER_00]: of the ultimate stabilization of soil
+carbon.
+[SPEAKER_00]: That's really critical moving forward.
+[SPEAKER_00]: We have some assumptions in the model,
+and I look at those as tests.
+[SPEAKER_00]: Like here's a hypothesis, and you can come
+up with a model with a different model
+[SPEAKER_00]: structure or different parameters in the
+model that are an alternative hypothesis.
+[SPEAKER_00]: And then the trick is figuring out the
+experiments that can really isolate that.
+[SPEAKER_00]: So I think there's some really incredible
+opportunities for this knowledge data
+[SPEAKER_00]: integration or knowledge and model
+integration.
+[SPEAKER_00]: And hopefully this is kind of a
+theoretical framework.
+[SPEAKER_00]: I guess one of the things I like to think
+about is using models like this as the
+[SPEAKER_00]: best test of our knowledge in terms of how
+we think a system works.
+[SPEAKER_00]: And it's obviously a gross simplification
+but does this provide kind of a
+[SPEAKER_00]: theoretical framework that we can
+understand some of the SIPP data,
+[SPEAKER_00]: that we can understand other microbial
+omics data, and then we can think about
+[SPEAKER_00]: other visualization techniques to see
+where those microbial residues end up and
+[SPEAKER_00]: what confers stabilization over long
+terms.
+[SPEAKER_00]: So I wanted to kind of wrap up by talking
+a little bit about how this works.
+[SPEAKER_00]: How we handle nutrient limitation.
+[SPEAKER_00]: And again, this is at large scale.
+[SPEAKER_00]: So one of the things I was kind of
+consistently struck by, again,
+[SPEAKER_00]: coming from a more ecological university
+framework than moving up to NCAR is that
+[SPEAKER_00]: really the science in some ways is 10 to
+20 years behind the stuff that you guys
+[SPEAKER_00]: all are thinking about.
+[SPEAKER_00]: And I think one of the tricks is figuring
+out how we can transfer knowledge from
+[SPEAKER_00]: universities up to places like NCAR.
+[SPEAKER_00]: And really start a dialogue so that it's a
+two-way street.
+[SPEAKER_00]: And so nutrient limitation is an awesome
+way to do that because we're so far
+[SPEAKER_00]: behind.
+[SPEAKER_00]: And so until it's illegal, we're going to
+keep dumping CO2 in the atmosphere.
+[SPEAKER_00]: And doing that really just juices the
+terrestrial carbon cycle.
+[SPEAKER_00]: And the real question is, how long can we
+do that for?
+[SPEAKER_00]: And how much carbon can the land surface
+take up?
+[SPEAKER_00]: So it's a huge amount of uncertainty in
+models about kind of the ecosystem service
+[SPEAKER_00]: that the land surface provides in terms of
+how much additional atmospheric carbon
+[SPEAKER_00]: dioxide we can absorb.
+[SPEAKER_00]: But if you look at the cement models going
+all the way from 1850 through 2100,
+[SPEAKER_00]: this is the change in net primary
+productivity that they show.
+[SPEAKER_00]: So it's a six-fold range in terms of how
+much NPP will increase.
+[SPEAKER_00]: They start off at different places to
+begin with.
+[SPEAKER_00]: They don't all start off at the same
+place.
+[SPEAKER_00]: This is the difference.
+[SPEAKER_00]: But it's a six-fold range in terms of the
+amount of how much NPP will increase by
+[SPEAKER_00]: 2100.
+[SPEAKER_00]: And then how much will the land surface
+soak up?
+[SPEAKER_00]: And again, this is under RCP 8.5.
+[SPEAKER_00]: So it's kind of the business as usual.
+[SPEAKER_00]: Things are going to get really hot and
+lots of CO2 in the atmosphere.
+[SPEAKER_00]: And there's basically a three-fold range
+in terms of how much carbon the land
+[SPEAKER_00]: surface will absorb.
+[SPEAKER_00]: So there's a huge amount of uncertainty.
+[SPEAKER_00]: But again, these are all models that use
+basically the same photosynthesis routine
+[SPEAKER_00]: and basically the same kind of soil carbon
+representations.
+[SPEAKER_00]: So effectively, these are all elvises.
+[SPEAKER_00]: And we still have this huge amount of
+uncertainty.
+[SPEAKER_00]: So the question that I have is,
+is this amount of terrestrial carbon
+[SPEAKER_00]: uptake overblown?
+[SPEAKER_00]: And again, it's really critical to know if
+we need to know the allowable emissions
+[SPEAKER_00]: that are going to get us to certain
+desirable targets, we need to know how
+[SPEAKER_00]: much the land surface can soak up.
+[SPEAKER_00]: And we know from agriculture and from the
+$1 billion fertilizer industry that
+[SPEAKER_00]: fertilizer really matters.
+[SPEAKER_00]: Things like nitrogen and phosphorus and
+potassium are really, really critical in
+[SPEAKER_00]: controlling aspects of the carbon cycle,
+at least in agricultural fields.
+[SPEAKER_00]: And we know in the ocean that nutrients
+really matter.
+[SPEAKER_00]: So parts of the ocean tend to be
+nitrogen-limited or silica-limited or
+[SPEAKER_00]: iron-limited.
+[SPEAKER_00]: But again, nutrient limitation really
+matters.
+[SPEAKER_00]: And so even people like Redfield in the
+ocean came up with these ratios of kind of
+[SPEAKER_00]: predictable ways that biomass is a
+significant source of nitrogen in the
+[SPEAKER_00]: oceans.
+[SPEAKER_00]: But even on land, we can start to take
+away, we can start to make some
+[SPEAKER_00]: assumptions about how much nitrogen,
+how much phosphorus you need to fix a unit
+[SPEAKER_00]: of carbon or to take it out of the
+atmosphere.
+[SPEAKER_00]: So we know that new productivity of plants
+are going to grow more.
+[SPEAKER_00]: They're going to need more nitrogen.
+[SPEAKER_00]: They're going to need more phosphorus
+around.
+[SPEAKER_00]: And in the study, we made some really
+gross simplifications and fixed those
+[SPEAKER_00]: ratios about if you build leaves or if you
+build wood or if you build grass or if you
+[SPEAKER_00]: build roots, how much carbon and nitrogen
+phosphorus you need for all of those
+[SPEAKER_00]: different tissues to be built.
+[SPEAKER_00]: And then we kind of took this idea of
+Liebig's law of the minimum, that if you
+[SPEAKER_00]: don't have enough nitrogen or you don't
+have enough phosphorus, that limits the
+[SPEAKER_00]: amount of carbon that you could actually
+take in.
+[SPEAKER_00]: So we took this map of nitrogen fixation
+and nitrogen deposition and rolled it out
+[SPEAKER_00]: through 2100.
+[SPEAKER_00]: Same thing for phosphorus weathering.
+[SPEAKER_00]: This actually came from Natalie.
+[SPEAKER_00]: And so the amount of phosphorus weathering
+and the amount of new phosphorus that we
+[SPEAKER_00]: could expect to come into ecosystems.
+[SPEAKER_00]: And then we took a map of plant biomass,
+so where plants are growing now,
+[SPEAKER_00]: and assumed that that distribution
+wouldn't change through 2100.
+[SPEAKER_00]: So a huge amount of assumptions and kind
+of held all those assumptions constant.
+[SPEAKER_00]: But then we wanted to look at how changes
+in NPP and changes in the land carbon sink
+[SPEAKER_00]: could evolve over time if we assumed that
+plants had a limited supply of nitrogen
+[SPEAKER_00]: and phosphorus to them.
+[SPEAKER_00]: So what's shown in red is the potential
+nitrogen effect and what's shown in purple
+[SPEAKER_00]: is the combined nitrogen and phosphorus
+effect.
+[SPEAKER_00]: And so not surprisingly, if we assume that
+to build this new tissue, you need new
+[SPEAKER_00]: nitrogen and new phosphorus to go with it,
+we decrease the kind of acceleration of
+[SPEAKER_00]: NPP throughout the 20th century.
+[SPEAKER_00]: Kind of interestingly, the period that we
+have observations, it's pretty impossible
+[SPEAKER_00]: to distinguish between those three lines.
+[SPEAKER_00]: But again, once you in the next 80 years,
+it's really going to play out that you end
+[SPEAKER_00]: up with different trajectories.
+[SPEAKER_00]: So these are the same set of models and
+just kind of a fancy back of the envelope
+[SPEAKER_00]: calculation about how changes in NPP might
+take place.
+[SPEAKER_00]: And then we map that on to how changes in
+land uptake would happen.
+[SPEAKER_00]: And so to me, what's really disturbing is
+we've gone, even though NPP is increasing
+[SPEAKER_00]: by the end of the 21st century,
+you end up having the land is no longer a
+[SPEAKER_00]: carbon sink, it's a carbon source.
+[SPEAKER_00]: And so you have this loss of carbon from
+terrestrial ecosystems.
+[SPEAKER_00]: That based on this map should be happening
+now-ish.
+[SPEAKER_00]: So in terms of ecosystem benefits,
+this analysis suggests that without
+[SPEAKER_00]: thinking about nitrogen cycling and
+without thinking about phosphorus cycling,
+[SPEAKER_00]: that the amount of kind of ecosystem
+benefit we can expect by pumping more and
+[SPEAKER_00]: more CO2 into the atmosphere will kind of
+be diminishing over time.
+[SPEAKER_00]: So this is also a huge opportunity then
+for model knowledge integration,
+[SPEAKER_00]: the assumptions that went into this.
+[SPEAKER_00]: The study are grossly oversimplified.
+[SPEAKER_00]: And we know that there's a lot more
+complexity to these systems.
+[SPEAKER_00]: In the CMIP-5 suite of models,
+there was only two that had a nitrogen
+[SPEAKER_00]: cycle in them.
+[SPEAKER_00]: And of all those land models, they both
+used a version of the community land
+[SPEAKER_00]: model, which is the land component of the
+NCAR system model.
+[SPEAKER_00]: So there's 11 models in the study.
+[SPEAKER_00]: Two of them use nitrogen.
+[SPEAKER_00]: And they actually use the same land model.
+[SPEAKER_00]: So it's really just an N of 1.
+[SPEAKER_00]: So we only have one Elvis that we can
+compare to, which is really frightening.
+[SPEAKER_00]: We've known for hundreds of years that
+nitrogen matters.
+[SPEAKER_00]: But we haven't been able to put it in
+models.
+[SPEAKER_00]: So there's obviously a lot of
+opportunities for progress.
+[SPEAKER_00]: And this has been a big focus of what
+we've been doing at NCAR for the last
+[SPEAKER_00]: several years is improving both the carbon
+and nitrogen cycles.
+[SPEAKER_00]: But more recently, we've really been
+focused a lot on aspects of the nitrogen
+[SPEAKER_00]: cycle.
+[SPEAKER_00]: And so now, instead of three Elvises,
+we get three bikes.
+[SPEAKER_00]: So the community land model is,
+again, the terrestrial component of the
+[SPEAKER_00]: community earth system model.
+[SPEAKER_00]: And it's run at NCAR and built on by a
+host of DOE and university collaborators.
+[SPEAKER_00]: I think in this latest version of CLM,
+there's something like 50 different
+[SPEAKER_00]: partner institutions that contributed to
+the development of the model.
+[SPEAKER_00]: So it's a huge model.
+[SPEAKER_00]: And I think of it as the Firefox of the
+earth system models.
+[SPEAKER_00]: Everybody can put their science in there.
+[SPEAKER_00]: And we kind of suss out what's good and
+what's bad and what needs to stay and what
+[SPEAKER_00]: needs to go.
+[SPEAKER_00]: But the first version of the community
+land model that had nitrogen in it was
+[SPEAKER_00]: called CLM4.
+[SPEAKER_00]: A couple years ago, we released a newer
+version of the model that had that
+[SPEAKER_00]: vertically resolved soil carbon and a
+whole lot of improvements to terrestrial
+[SPEAKER_00]: photosynthesis.
+[SPEAKER_00]: That's CLM4.5.
+[SPEAKER_00]: And then within CLM5 is a whole ton of
+extra science.
+[SPEAKER_00]: And really, what I'm going to just focus
+on now is some of the changes that have
+[SPEAKER_00]: gone on with the nitrogen cycle.
+[SPEAKER_00]: But there's also a lot of functionality in
+terms of how we think about crops and land
+[SPEAKER_00]: management and having a whole lot of
+functionality that should open doors for
+[SPEAKER_00]: kind of more science to be done.
+[SPEAKER_00]: And so what this offers, then,
+is a window into what, in the modeling
+[SPEAKER_00]: world, we call structural uncertainty.
+[SPEAKER_00]: But basically, that's kind of,
+as modelers, we don't know how the real
+[SPEAKER_00]: world works.
+[SPEAKER_00]: And so you come up with different models,
+different bicycles, in this case,
+[SPEAKER_00]: different Elvis's, different Madonna's,
+and figure out how to best represent those
+[SPEAKER_00]: processes.
+[SPEAKER_00]: And so here's a really nice example where
+we have models that are actually from the
+[SPEAKER_00]: same family.
+[SPEAKER_00]: And I'll force them in these experiments
+with the same historical climate
+[SPEAKER_00]: reanalysis, which is called the GSWP3,
+stands for the global soil water.
+[SPEAKER_00]: So this kind of gives you a snapshot of
+what climate looked like over the last
+[SPEAKER_00]: century.
+[SPEAKER_00]: So the spin up happened.
+[SPEAKER_00]: And then we did a 20th century transient
+run, much like what I showed you before,
+[SPEAKER_00]: with transient land use and active crops.
+[SPEAKER_00]: And there's a control simulation and then
+a plus nitrogen simulation.
+[SPEAKER_00]: And this was kind of my attempt to think
+about, well, as an ecologist, if I wanted
+[SPEAKER_00]: to learn how my system was nutrient
+limited, a good way to test that is with
+[SPEAKER_00]: the nutrient addition.
+[SPEAKER_00]: And so in this addition, we added 5 grams
+of nitrogen per meter squared,
+[SPEAKER_00]: which is 50 kilograms per hectare.
+[SPEAKER_00]: So kind of like agricultural levels of
+fertilizer application, but applied
+[SPEAKER_00]: globally.
+[SPEAKER_00]: And unlike doing this in the real world,
+this finished in a day, which is pretty
+[SPEAKER_00]: awesome.
+[SPEAKER_00]: So you can do global runs with three
+different models and get them done in a
+[SPEAKER_00]: day.
+[SPEAKER_00]: And then you have so much data,
+you don't know what to do with it.
+[SPEAKER_00]: So this is a result just looking at the
+differences in the carbon cycle.
+[SPEAKER_00]: So this is the structural uncertainty just
+of the carbon cycle.
+[SPEAKER_00]: In terms of something like GPP.
+[SPEAKER_00]: So this is terrestrial gross primary
+productivity.
+[SPEAKER_00]: And you can see that in these simulations,
+I'm just showing 1955 through 2010.
+[SPEAKER_00]: So you can see there's a pretty big
+variation in terms of what GPP is like.
+[SPEAKER_00]: But the slope of those lines is pretty
+similar, which kind of tells you that the
+[SPEAKER_00]: CO2 fertilization effect is fairly similar
+in all of these models.
+[SPEAKER_00]: It's actually a little bit steeper in the
+red line, which is CLM5.
+[SPEAKER_00]: But they're all roughly within ballpark in
+terms of what we think terrestrial GPP
+[SPEAKER_00]: should be kind of present day.
+[SPEAKER_00]: We can look at a map of then of what these
+GPP estimates look like.
+[SPEAKER_00]: And you can kind of see that you go from
+really bright yellow colors and the
+[SPEAKER_00]: tropics in CLM4 to then kind of higher
+productivity at high latitudes in CLM5.
+[SPEAKER_00]: And even more so, much more reasonable
+representation to productivity both at
+[SPEAKER_00]: high and low latitudes in CLM5.
+[SPEAKER_00]: So we have a few metrics for how the
+carbon cycle and water cycle and energy
+[SPEAKER_00]: cycle works at global scales.
+[SPEAKER_00]: And one of them is for GPP.
+[SPEAKER_00]: And there's a product called ILAM that Jim
+Randerson at UCI and others at some of the
+[SPEAKER_00]: DOE labs are working on that lets you test
+models like this and score them and kind
+[SPEAKER_00]: of give them a skill score about how well
+they represent the water cycle and the
+[SPEAKER_00]: carbon cycle.
+[SPEAKER_00]: And so fortunately, even though we've
+crammed all of this science, into CLM5,
+[SPEAKER_00]: it's doing a better job than previous
+versions of the model.
+[SPEAKER_00]: So we're not going to lose our jobs yet.
+[SPEAKER_00]: So we seem to be doing a pretty good job.
+[SPEAKER_00]: And then you can look at the change with
+nitrogen fertilization.
+[SPEAKER_00]: So this is the change with nitrogen
+fertilization, which happened in 1986.
+[SPEAKER_00]: And CLM4 really blows up in terms of how
+much productivity increases with nutrient
+[SPEAKER_00]: additions.
+[SPEAKER_00]: CLM45 not quite as much.
+[SPEAKER_00]: And the response is even more muted with
+CLM5, which is interesting when you think
+[SPEAKER_00]: about how nitrogen limited is your model.
+[SPEAKER_00]: CLM5 is much less nitrogen limited than
+predecessors of the model, at least in
+[SPEAKER_00]: terms of its GPP response.
+[SPEAKER_00]: So where does it happen globally?
+[SPEAKER_00]: This is a map that differences the
+fertilized response from the unfertilized
+[SPEAKER_00]: response.
+[SPEAKER_00]: And so you can see in CLM4, it's really
+globally, but especially strong in the
+[SPEAKER_00]: tropics, which is probably unrealistic.
+[SPEAKER_00]: What we think we know about tropical
+forests is there might be some of them
+[SPEAKER_00]: that are nitrogen limited, but they're not
+that nitrogen limited.
+[SPEAKER_00]: So that was one of the things that we
+changed in moving to CLM5, is we reduced
+[SPEAKER_00]: the nitrogen limitation in tropical
+forests.
+[SPEAKER_00]: And you can see that the core of the
+Amazon is no longer nitrogen limited in
+[SPEAKER_00]: these runs.
+[SPEAKER_00]: And then interestingly, we've largely
+gotten rid of nitrogen limitation,
+[SPEAKER_00]: at least in terms of GPP.
+[SPEAKER_00]: Globally here, with the exception of C4,
+we've gotten rid of nitrogen limitation in
+[SPEAKER_00]: grasslands.
+[SPEAKER_00]: And so tropical savannas are still really,
+really strongly nitrogen limited in this
+[SPEAKER_00]: version of the model.
+[SPEAKER_00]: Again, I'm not saying that any of these,
+this one is almost certainly unrealistic,
+[SPEAKER_00]: but I couldn't say for sure whether one of
+these nitrogen responses looks better.
+[SPEAKER_00]: This is going to be a huge shift,
+but now we're going to look at the same
+[SPEAKER_00]: set of plots.
+[SPEAKER_00]: Instead of looking at GPP, look at NPP.
+[SPEAKER_00]: And I think here, the responses are a
+little bit more interesting.
+[SPEAKER_00]: So whereas we saw this real big difference
+in terms of the GPP response, the NPP
+[SPEAKER_00]: response, which in some ways is more
+important, that's the carbon that's left
+[SPEAKER_00]: over after plants respire it, is more
+similar between CLM4.5 and CLM5.
+[SPEAKER_00]: And so again, in the tropics, you see this
+huge NPP response in CLM4.
+[SPEAKER_00]: And really what's happening here is these
+trees are just turning into giant baobab
+[SPEAKER_00]: trees.
+[SPEAKER_00]: Their LAI is already, their leaf area
+index is already, they have too many
+[SPEAKER_00]: leaves to begin with.
+[SPEAKER_00]: And then when you give them more carbon,
+they can't build more leaves, and so all
+[SPEAKER_00]: they do is get really fat.
+[SPEAKER_00]: And chunky.
+[SPEAKER_00]: So these are really woody, really just
+chunky trees.
+[SPEAKER_00]: So this is kind of unrealistic.
+[SPEAKER_00]: Here, it's sort of a similar response,
+but it's again more of a poleward shift.
+[SPEAKER_00]: And so you get stem densities at high
+latitudes that are probably in boreal
+[SPEAKER_00]: forests that are probably unrealistic in
+CLM4.5.
+[SPEAKER_00]: And the response in CLM5 I think is really
+interesting.
+[SPEAKER_00]: So you see temperate forests kind of
+responding in ways that may or may not be
+[SPEAKER_00]: relevant.
+[SPEAKER_00]: And this is one of the things that Christy
+and some others of us are trying to think
+[SPEAKER_00]: about is which, do we have enough data to
+suss out whether one of these responses is
+[SPEAKER_00]: more realistic than the other?
+[SPEAKER_00]: And again, it's not necessarily to,
+my goal isn't necessarily to say which
+[SPEAKER_00]: version of the model is right or wrong.
+[SPEAKER_00]: Hopefully it's this one.
+[SPEAKER_00]: But it's to kind of, it's to start to
+understand like do we have now that we're
+[SPEAKER_00]: representing at least fluxes in ways that
+may be realistic.
+[SPEAKER_00]: In terms of global responses, these in
+terms of the percent changes are both
+[SPEAKER_00]: within kind of meta-analysis ranges of
+error.
+[SPEAKER_00]: So we seem to be doing an OK response.
+[SPEAKER_00]: And do we have enough data to suss out
+whether one is more likely or the other?
+[SPEAKER_00]: And I don't really have a sense for that.
+[SPEAKER_00]: So then lastly, these are the changes in
+total vegetation carbon storage.
+[SPEAKER_00]: So again, because CLM4 builds big woody,
+chunky trees, it packs on too much carbon
+[SPEAKER_00]: and has a probably unrealistic vegetation
+carbon response.
+[SPEAKER_00]: And it's most muted in CLM5.
+[SPEAKER_00]: And if any of you are interested,
+I can talk for a long time about why that
+[SPEAKER_00]: is.
+[SPEAKER_00]: But again, so now we've got all these
+different bikes.
+[SPEAKER_00]: And which one is better?
+[SPEAKER_00]: And which one should we get rid of?
+[SPEAKER_00]: And which one should we keep?
+[SPEAKER_00]: I think there's a whole lot of
+opportunities that we can start thinking
+[SPEAKER_00]: about ways that what are the data products
+that we need to constrain things like the
+[SPEAKER_00]: representation of nutrient limitation in a
+model like CLM?
+[SPEAKER_00]: And how can that inform kind of the next,
+what are the next model development steps
+[SPEAKER_00]: that we need to take moving forward?
+[SPEAKER_00]: And so it wasn't that long ago when the
+idea of explicitly considering microbial
+[SPEAKER_00]: activity in large CL models seems totally
+unrealistic.
+[SPEAKER_00]: But I think one of the things that I've
+shown and that others have shown is that
+[SPEAKER_00]: it's not only feasible, but it's also
+probably important to start considering in
+[SPEAKER_00]: the sense that a lot of these models are
+actually, they give you better confidence
+[SPEAKER_00]: and they tend to reduce uncertainties.
+[SPEAKER_00]: Maybe not reduce uncertainties,
+but they improve confidence moving
+[SPEAKER_00]: forward.
+[SPEAKER_00]: Similarly, consideration of microbial
+diversity in biogeochemical models seems
+[SPEAKER_00]: really useful.
+[SPEAKER_00]: It seems kind of far-fetched, not that
+long ago, but hopefully I've convinced you
+[SPEAKER_00]: that it's at least achievable.
+[SPEAKER_00]: Whether or not it should be done is,
+I think, open for debate.
+[SPEAKER_00]: But I think it opens doors for new
+collaborations and new interactions that
+[SPEAKER_00]: can hopefully both accelerate,
+that can hopefully accelerate developments
+[SPEAKER_00]: in both modeling and empirical fields.
+[SPEAKER_00]: And then lastly, I think it's also
+important to consider the broader
+[SPEAKER_00]: implications of some of the work that you
+guys do and hopefully open some doors for
+[SPEAKER_00]: ways to think about applying the science
+in large scale.
+[SPEAKER_00]: Models like CLM.
+[SPEAKER_00]: So with that, I'll open it up for
+questions.
+[SPEAKER_02]: Thanks a lot, very interesting.
+[SPEAKER_02]: I'm just wondering if you can say a little
+bit more about pools and fluxes in your
+[SPEAKER_02]: carbon model compared to sort of a fast,
+slow, and non-reactive.
+[SPEAKER_02]: So essentially, you've got two pools of
+carbon and you've got fluxes between them.
+[SPEAKER_02]: Yep.
+[SPEAKER_02]: Right, pretty similar.
+[SPEAKER_00]: What's different?
+[SPEAKER_00]: Yeah, so I think the bigger difference is
+on this side of the model.
+[SPEAKER_00]: It's not surprising that the LiDET results
+look good, because we're basically only
+[SPEAKER_00]: evaluating the left side of the model with
+that study.
+[SPEAKER_00]: So in terms of the partitioning that I use
+between structural and metabolic carbon,
+[SPEAKER_00]: it's identical to what's in Dacent.
+[SPEAKER_00]: So that's no different at all.
+[SPEAKER_00]: And Dacent uses three litter pools.
+[SPEAKER_00]: I'm only using two.
+[SPEAKER_00]: But they're very similar in the sense.
+[SPEAKER_00]: What's different is that in a model like
+Dacent, these have predefined turnover
+[SPEAKER_00]: times, which is the k value.
+[SPEAKER_00]: It's the decay rate that are modified by
+environmental scalers.
+[SPEAKER_00]: So that uses just a first order linear.
+[SPEAKER_00]: It's a first order linear model.
+[SPEAKER_00]: What MIMICS uses is a reverse
+Michaelis-Mitten model.
+[SPEAKER_00]: And so both the size of the microbial
+biomass pool and the size of the substrate
+[SPEAKER_00]: pool matter.
+[SPEAKER_00]: So in terms of the math, it's not just the
+size of this pool that determines its flux
+[SPEAKER_00]: out of it.
+[SPEAKER_00]: It's the size of both of these pools that
+determines the transfer rates.
+[SPEAKER_00]: So that's what's different on the kinetic
+side of the litter decomposition.
+[SPEAKER_00]: What's different over here is that whereas
+you could kind of make the analogy that
+[SPEAKER_00]: this is a fast pool and this is a slow
+pool and this is an inert pool or
+[SPEAKER_00]: something like that.
+[SPEAKER_00]: And it's basically just, I guess,
+how it's wired.
+[SPEAKER_00]: So microbial residues can go right into
+this inert pool.
+[SPEAKER_00]: And what changes in that inert pool
+doesn't decompose.
+[SPEAKER_00]: But it basically, I think of it as
+desorbing or aggregates breaking down.
+[SPEAKER_00]: So there's some environmental factor that
+controls how quickly this turns over.
+[SPEAKER_00]: And it's not under microbial control.
+[SPEAKER_00]: So this actually behaves much like a first
+order model, except that it doesn't have
+[SPEAKER_00]: any CO2 fluxes.
+[SPEAKER_00]: And this pool has to depolymerize,
+which is under microbial control.
+[SPEAKER_00]: So if you get a larger microbial biomass,
+you'll both lose more carbon here,
+[SPEAKER_00]: but you'll also lose it out of these two
+pools.
+[SPEAKER_00]: So that's the difference is these
+feedbacks between the size of the
+[SPEAKER_00]: microbial biomass pool affects the rest of
+the system.
+[SPEAKER_00]: Whereas in a first order model,
+it's just the size of the pool itself that
+[SPEAKER_00]: matters, the donor pool in that sense.
+[SPEAKER_00]: Yeah, Johannes.
+[SPEAKER_04]: Thank you very much.
+[SPEAKER_04]: Do you see how this model would have a
+future where you get rid of the left side,
+[SPEAKER_04]: the substrate quality, and handle
+everything in terms of accessibility?
+[SPEAKER_04]: Yeah, sorry.
+[SPEAKER_00]: Oh, you mean like just have this stuff so
+that litter inputs go directly into here?
+[SPEAKER_04]: Yeah.
+[SPEAKER_00]: Yeah, I think especially when you think
+about vertically resolving it,
+[SPEAKER_00]: the litter inputs at depth in soils
+aren't.
+[SPEAKER_00]: The inputs at depth are likely trickling
+down from above somehow.
+[SPEAKER_00]: They're not necessarily plant residues.
+[SPEAKER_00]: So you could.
+[SPEAKER_00]: I haven't thought about the math very much
+to know how that would mess things up.
+[SPEAKER_00]: But I think it makes sense.
+[SPEAKER_00]: Yeah, one of the things that a model like
+this needs is to be vertically resolved to
+[SPEAKER_00]: kind of fit into a system.
+[SPEAKER_00]: A CLM type structure.
+[SPEAKER_00]: And at depth, you would assume that this
+would be zero.
+[SPEAKER_00]: Similarly, on the surface, you would
+assume that none of this would really
+[SPEAKER_00]: matter.
+[SPEAKER_00]: You could just have that stuff.
+[SPEAKER_00]: Yeah, that's a good suggestion.
+[SPEAKER_00]: Yeah?
+[SPEAKER_00]: Yeah, I think there's a time.
+[SPEAKER_00]: I mean, the model is totally naive to the
+idea of stabilization.
+[SPEAKER_00]: And so the sense that some external factor
+would affect below ground processes,
+[SPEAKER_00]: I think, is exactly why I'm interested in
+building models like this.
+[SPEAKER_00]: Because then you can ask that question.
+[SPEAKER_00]: I don't know what kind of data you would
+need.
+[SPEAKER_00]: Like how some sort of input on this side
+affects something over here is interesting
+[SPEAKER_00]: to think about.
+[SPEAKER_00]: And it's interesting that, to me,
+the part of this that's fascinating is to
+[SPEAKER_00]: think about how either a sandy soil or a
+clay soil or a high iron and aluminum
+[SPEAKER_00]: oxide soil versus a one-to-one clay would
+look different.
+[SPEAKER_00]: So I think there's no concept of
+aggregates explicitly in here.
+[SPEAKER_00]: So you could think about explicit
+aggregate formation.
+[SPEAKER_00]: I haven't thought about that, especially
+at large scales.
+[SPEAKER_00]: But I think at smaller scales,
+it makes a lot of sense.
+[SPEAKER_00]: Yeah?
+[SPEAKER_03]: You didn't talk much about temperature.
+[SPEAKER_03]: But I know in terms of enzyme kinetics,
+they're usually pretty predictable
+[SPEAKER_03]: relationships between temperature and
+activity.
+[SPEAKER_03]: But for an organism, it's not always
+straightforward.
+[SPEAKER_03]: So the optimum temperature is often really
+close to the maximum temperature,
+[SPEAKER_03]: at least for a microbe.
+[SPEAKER_03]: And that's why you get a fever when you're
+sick.
+[SPEAKER_03]: Because if you increase your temperature
+at 1 degree Celsius, then it can really
+[SPEAKER_03]: kill off the organism or slow its growth.
+[SPEAKER_03]: And so I wonder if any of these models
+consider the organismal rather than
+[SPEAKER_03]: enzymatic effect of temperature and
+whether or not there are temperature
+[SPEAKER_03]: thresholds on particular activities.
+[SPEAKER_01]: They don't.
+[SPEAKER_00]: That's an easy answer.
+[SPEAKER_00]: And when we think about it in some terms,
+in the plant response, so there's a
+[SPEAKER_00]: temperature acclimation term in the
+photosynthetic part of the model.
+[SPEAKER_00]: You could think about doing an acclimation
+type term or a threshold type response.
+[SPEAKER_00]: It'll change your answers, for sure.
+[SPEAKER_00]: But yeah.
+[SPEAKER_00]: I think about that more in terms of
+latitudinal gradients, in terms of the
+[SPEAKER_00]: temperature response that you might get in
+a high latitude soil could be steeper.
+[SPEAKER_00]: You could imagine you might have a
+stronger temperature response going from 0
+[SPEAKER_00]: degrees to 1 degree C than you get from
+going from.
+[SPEAKER_02]: And there's a lot of carbon up there.
+Yeah.
+[SPEAKER_00]: And the temperature response function that
+we have has that kind of response that is
+[SPEAKER_00]: stronger at low temperatures.
+[SPEAKER_00]: But we don't think about acclimation or
+how microbes have the agency, I guess,
+[SPEAKER_00]: beyond.
+[SPEAKER_00]: Eating carbon right now.
+[SPEAKER_00]: That's an interesting idea.
+[SPEAKER_05]: Yeah.
+[SPEAKER_00]: Yeah.
+[SPEAKER_05]: Yeah,
+[SPEAKER_00]: that was actually a big, I think,
+motivation for thinking about this.
+[SPEAKER_00]: If you use a century type model,
+the best way to store carbon in soils is
+[SPEAKER_00]: this pathway.
+[SPEAKER_00]: So you stick in high lignin, slow to
+decompose stuff that turns over at a slow
+[SPEAKER_00]: rate and goes into this kind of chemically
+inert pool.
+[SPEAKER_00]: Kind of the theory behind mimics,
+at least right now, is that the best way
+[SPEAKER_00]: to store carbon, at least in finely
+textured soils, is to add this labile
+[SPEAKER_00]: stuff that builds microbial biomass more
+quickly, that turns over relatively fast,
+[SPEAKER_00]: and that is stabilized.
+[SPEAKER_00]: And these long turnover pools.
+[SPEAKER_00]: So that works now in clayey soils.
+[SPEAKER_00]: So the way the model's parameterized is
+that in clayey soils, this top route is
+[SPEAKER_00]: the best way to stabilize carbon in soils.
+[SPEAKER_00]: And in sandy soils, this bottom route is
+still the best way to store carbon in
+[SPEAKER_00]: soils.
+[SPEAKER_00]: So that's a different prediction that you
+get from a model with this kind of
+[SPEAKER_00]: different structure.
+[SPEAKER_00]: Whether it's right, I don't know.
+[SPEAKER_00]: But in terms of what should people in New
+York do, that's a question that matters.
+[SPEAKER_05]: Should we throw fertilizer over our
+forest?
+[SPEAKER_00]: Ask Christy.
+[SPEAKER_00]: Lime the forest.
+[SPEAKER_00]: I think you have to lime the forest.
+[SPEAKER_05]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_05]: Thank you.
+[SPEAKER_05]: Thank you.
+Thank you.

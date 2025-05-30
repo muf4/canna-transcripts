@@ -1,0 +1,3392 @@
+1
+00:00:01,120 --> 00:00:04,759
+this is a production of Cornell
+
+2
+00:00:07,599 --> 00:00:13,120
+University thank you we thank you
+
+3
+00:00:09,800 --> 00:00:17,080
+everyone for joining me today to discuss
+
+4
+00:00:13,119 --> 00:00:19,439
+my research um and uh uh well I try to
+
+5
+00:00:17,079 --> 00:00:22,839
+be make it a little bit different uh
+
+6
+00:00:19,439 --> 00:00:26,920
+with the previous talk that I recently
+
+7
+00:00:22,839 --> 00:00:29,399
+gave uh at Cornell so um today we'll
+
+8
+00:00:26,920 --> 00:00:31,560
+focus a little bit more on applications
+
+9
+00:00:29,399 --> 00:00:34,359
+so at you can tell from the title
+
+10
+00:00:31,559 --> 00:00:37,399
+monitoring plant stress through water
+
+11
+00:00:34,359 --> 00:00:39,960
+use perspective using remote sensing and
+
+12
+00:00:37,399 --> 00:00:39,960
+cloud
+
+13
+00:00:40,359 --> 00:00:45,799
+computing and I think you know this is
+
+14
+00:00:42,679 --> 00:00:49,600
+really um nice day to give a seminar
+
+15
+00:00:45,799 --> 00:00:54,319
+talk is a Halloween and also a special
+
+16
+00:00:49,600 --> 00:00:56,198
+India F Festival day so um and for for
+
+17
+00:00:54,320 --> 00:00:58,920
+the Halloween we have like a check or
+
+18
+00:00:56,198 --> 00:01:02,079
+treat it's the same for our environment
+
+19
+00:00:58,920 --> 00:01:06,599
+to do treat well otherwise you know it
+
+20
+00:01:02,079 --> 00:01:10,840
+can get spooky right so um as we all
+
+21
+00:01:06,599 --> 00:01:13,559
+know that the projected population in
+
+22
+00:01:10,840 --> 00:01:16,680
+2050 will be a large amount of
+
+23
+00:01:13,560 --> 00:01:20,240
+population so we also need increase our
+
+24
+00:01:16,680 --> 00:01:23,400
+food production to feed this increased
+
+25
+00:01:20,239 --> 00:01:26,519
+population and uh when we do that we
+
+26
+00:01:23,400 --> 00:01:29,560
+really need to assess how the current
+
+27
+00:01:26,519 --> 00:01:32,118
+agriculture model Works to help us
+
+28
+00:01:29,560 --> 00:01:34,840
+achieve achieve both the food security
+
+29
+00:01:32,118 --> 00:01:39,040
+and also the environmental goal so study
+
+30
+00:01:34,840 --> 00:01:41,600
+is indicated as the first figure here
+
+31
+00:01:39,040 --> 00:01:46,118
+that with the current agriculture model
+
+32
+00:01:41,599 --> 00:01:50,839
+you know we could somehow get less for
+
+33
+00:01:46,118 --> 00:01:54,959
+the food security goal but our impact on
+
+34
+00:01:50,840 --> 00:01:58,079
+environment could be large and this is
+
+35
+00:01:54,959 --> 00:02:01,158
+not what we want to see so to transition
+
+36
+00:01:58,078 --> 00:02:04,319
+this from the top scen scario to the
+
+37
+00:02:01,159 --> 00:02:07,439
+second scenario with that we achieve the
+
+38
+00:02:04,319 --> 00:02:09,639
+goal for both security food security and
+
+39
+00:02:07,438 --> 00:02:12,719
+also environmental goal I think we
+
+40
+00:02:09,639 --> 00:02:17,000
+really need to have innovation in
+
+41
+00:02:12,719 --> 00:02:20,400
+agriculture management to help us as you
+
+42
+00:02:17,000 --> 00:02:23,519
+can also tell that water is a large
+
+43
+00:02:20,400 --> 00:02:27,719
+component from the agriculture
+
+44
+00:02:23,519 --> 00:02:30,480
+impact and this impact could be further
+
+45
+00:02:27,719 --> 00:02:33,120
+compounded by the draw
+
+46
+00:02:30,479 --> 00:02:36,079
+and with the draw events it's getting so
+
+47
+00:02:33,120 --> 00:02:39,280
+hard to predict and also the draw start
+
+48
+00:02:36,080 --> 00:02:42,480
+to show up in areas that historically
+
+49
+00:02:39,280 --> 00:02:47,039
+don't experience drot so this is the US
+
+50
+00:02:42,479 --> 00:02:49,518
+jot monitor on the top for the conus and
+
+51
+00:02:47,039 --> 00:02:52,519
+on the second panel here is for the uh
+
+52
+00:02:49,519 --> 00:02:54,599
+New York State um as we can tell
+
+53
+00:02:52,519 --> 00:02:58,519
+although New York State we don't really
+
+54
+00:02:54,598 --> 00:03:01,518
+have those very severe draw which is the
+
+55
+00:02:58,519 --> 00:03:04,560
+dark red color we do have draw and the
+
+56
+00:03:01,519 --> 00:03:08,480
+draw tends to happen more frequent and
+
+57
+00:03:04,560 --> 00:03:10,959
+if you zoom into a certain time period
+
+58
+00:03:08,479 --> 00:03:14,079
+and look at when the draw happens for
+
+59
+00:03:10,959 --> 00:03:17,519
+each of the year you can tell
+
+60
+00:03:14,080 --> 00:03:20,200
+that the the lines in this figure here
+
+61
+00:03:17,519 --> 00:03:22,439
+they are July for each year so this
+
+62
+00:03:20,199 --> 00:03:25,199
+shows that draw tends to happen during
+
+63
+00:03:22,439 --> 00:03:31,318
+the growing season and when the crop the
+
+64
+00:03:25,199 --> 00:03:34,719
+plants needs the water to grow so
+
+65
+00:03:31,318 --> 00:03:37,399
+for not just agriculture for natural
+
+66
+00:03:34,719 --> 00:03:40,719
+resource for natural environment water
+
+67
+00:03:37,400 --> 00:03:44,640
+just so critical uh because they could
+
+68
+00:03:40,719 --> 00:03:48,680
+eat too much water too less water both
+
+69
+00:03:44,639 --> 00:03:52,359
+extreme can be harmful for agriculture
+
+70
+00:03:48,680 --> 00:03:56,200
+and for our natural environment so with
+
+71
+00:03:52,360 --> 00:03:59,120
+like especially when we have draw plant
+
+72
+00:03:56,199 --> 00:04:01,759
+doesn't have enough access to the water
+
+73
+00:03:59,120 --> 00:04:06,280
+they start to be showing the stress
+
+74
+00:04:01,759 --> 00:04:09,280
+signal and this stress could um making a
+
+75
+00:04:06,280 --> 00:04:11,840
+lot of other effect to develop other
+
+76
+00:04:09,280 --> 00:04:15,120
+other than just a draw there will be a
+
+77
+00:04:11,840 --> 00:04:17,840
+disease The Pest and also this
+
+78
+00:04:15,120 --> 00:04:21,519
+eventually will impact the yield and
+
+79
+00:04:17,839 --> 00:04:25,758
+also for natural Forest it will impact
+
+80
+00:04:21,519 --> 00:04:28,600
+the forest e ecosystem serving functions
+
+81
+00:04:25,759 --> 00:04:31,319
+so for now people like with remote
+
+82
+00:04:28,600 --> 00:04:36,520
+sensing we can start to monitoring
+
+83
+00:04:31,319 --> 00:04:40,759
+General Trends um and with this this is
+
+84
+00:04:36,519 --> 00:04:44,639
+a USD USD Force service model that they
+
+85
+00:04:40,759 --> 00:04:47,479
+use ndvi to try to find the stress
+
+86
+00:04:44,639 --> 00:04:49,600
+signals because if you find the stress
+
+87
+00:04:47,478 --> 00:04:52,159
+signal then you can start to think about
+
+88
+00:04:49,600 --> 00:04:57,000
+how you want to treat the
+
+89
+00:04:52,160 --> 00:05:00,280
+stresses but one question here is ndbi
+
+90
+00:04:57,000 --> 00:05:03,839
+is showing like basically how green your
+
+91
+00:05:00,279 --> 00:05:07,279
+land surface is but when the plant is
+
+92
+00:05:03,839 --> 00:05:11,198
+under stress it doesn't necessary to
+
+93
+00:05:07,279 --> 00:05:14,799
+change Cotter or to stretch their leaves
+
+94
+00:05:11,199 --> 00:05:18,520
+as the first response to the stress um
+
+95
+00:05:14,800 --> 00:05:21,800
+so here we are really eager to look for
+
+96
+00:05:18,519 --> 00:05:25,198
+an earlier signal that can tell us the
+
+97
+00:05:21,800 --> 00:05:30,160
+stress before the leaf turns to yellow
+
+98
+00:05:25,199 --> 00:05:33,720
+or before the leaves start to drop so
+
+99
+00:05:30,160 --> 00:05:37,680
+eval transpiration this is a process
+
+100
+00:05:33,720 --> 00:05:40,240
+that um the water goes the water go
+
+101
+00:05:37,680 --> 00:05:43,360
+through the plant and return back to the
+
+102
+00:05:40,240 --> 00:05:47,240
+atmosphere and it uses the same path as
+
+103
+00:05:43,360 --> 00:05:51,600
+a stomata we is a similar pass as the
+
+104
+00:05:47,240 --> 00:05:55,160
+carbon assimilation so what we've think
+
+105
+00:05:51,600 --> 00:05:59,080
+before the we' change color we will see
+
+106
+00:05:55,160 --> 00:06:02,319
+a signal of water use change and which
+
+107
+00:05:59,079 --> 00:06:05,038
+could be earlier signal for stress
+
+108
+00:06:02,319 --> 00:06:08,720
+detection so talk a little bit more
+
+109
+00:06:05,038 --> 00:06:11,879
+about uo transporation is actually two
+
+110
+00:06:08,720 --> 00:06:15,400
+term together one is evaporation another
+
+111
+00:06:11,879 --> 00:06:17,719
+one is transporation so for evaporation
+
+112
+00:06:15,399 --> 00:06:20,120
+as you can tell is the water returns
+
+113
+00:06:17,720 --> 00:06:23,120
+back to the atmosphere from different
+
+114
+00:06:20,120 --> 00:06:26,319
+surfaces while the transpiration is the
+
+115
+00:06:23,120 --> 00:06:30,280
+more biological part of the water use
+
+116
+00:06:26,319 --> 00:06:34,000
+which is go through which is the B water
+
+117
+00:06:30,279 --> 00:06:36,879
+that P extract from the soil then return
+
+118
+00:06:34,000 --> 00:06:39,439
+that back to the atmosphere so combining
+
+119
+00:06:36,879 --> 00:06:43,279
+these two we call the we call these
+
+120
+00:06:39,439 --> 00:06:46,680
+processes together as U transporation
+
+121
+00:06:43,279 --> 00:06:49,478
+and this is the second largest component
+
+122
+00:06:46,680 --> 00:06:51,079
+in the hydrological cycle of course the
+
+123
+00:06:49,478 --> 00:06:54,560
+first one is the
+
+124
+00:06:51,079 --> 00:06:57,959
+precipitation um and when we talk about
+
+125
+00:06:54,560 --> 00:07:01,959
+uo transporation actually historically
+
+126
+00:06:57,959 --> 00:07:05,680
+this is a parameter is hard to measure
+
+127
+00:07:01,959 --> 00:07:08,758
+and it's hard to model um especially if
+
+128
+00:07:05,680 --> 00:07:12,759
+you consider the difference between
+
+129
+00:07:08,759 --> 00:07:15,240
+potential ET and actual ET so a lot of
+
+130
+00:07:12,759 --> 00:07:18,840
+previous studies we use potential ET we
+
+131
+00:07:15,240 --> 00:07:23,038
+use weight per pressure deficit um
+
+132
+00:07:18,839 --> 00:07:26,959
+that's uh because it was just easier to
+
+133
+00:07:23,038 --> 00:07:29,519
+to to calculate from the meterological
+
+134
+00:07:26,959 --> 00:07:33,000
+parameters however there's key differ
+
+135
+00:07:29,519 --> 00:07:37,159
+difference between this two um
+
+136
+00:07:33,000 --> 00:07:40,279
+terminology so the potential ET is the
+
+137
+00:07:37,160 --> 00:07:43,560
+ideal condition and how much water can
+
+138
+00:07:40,279 --> 00:07:46,839
+be returned back to the atmosphere so as
+
+139
+00:07:43,560 --> 00:07:49,759
+you can tell if we it's it's sunny if
+
+140
+00:07:46,839 --> 00:07:53,279
+it's windy and if it's dry you would
+
+141
+00:07:49,759 --> 00:07:57,038
+expect a higher potential ET because the
+
+142
+00:07:53,279 --> 00:07:58,198
+atmosphere just needs a lot of water so
+
+143
+00:07:57,038 --> 00:08:02,158
+this is the
+
+144
+00:07:58,199 --> 00:08:06,598
+demand which is mostly for the potential
+
+145
+00:08:02,158 --> 00:08:09,399
+ET part but whether we can provide that
+
+146
+00:08:06,598 --> 00:08:12,079
+much water to return back to Atmosphere
+
+147
+00:08:09,399 --> 00:08:15,519
+so that's the limitation combining both
+
+148
+00:08:12,079 --> 00:08:19,639
+the demand and the limitation together
+
+149
+00:08:15,519 --> 00:08:21,799
+is the actual eapo transporation so for
+
+150
+00:08:19,639 --> 00:08:24,439
+the the limitation part we need to
+
+151
+00:08:21,800 --> 00:08:27,759
+consider whether we have enough water in
+
+152
+00:08:24,439 --> 00:08:30,519
+the soil to support this and whether the
+
+153
+00:08:27,759 --> 00:08:33,158
+vegetation is health and the stomata is
+
+154
+00:08:30,519 --> 00:08:36,360
+all open ready to do the
+
+155
+00:08:33,158 --> 00:08:40,599
+transporation and also how rough the
+
+156
+00:08:36,360 --> 00:08:44,399
+surface is the soil surface and also the
+
+157
+00:08:40,599 --> 00:08:48,200
+canopy surface all these can impact
+
+158
+00:08:44,399 --> 00:08:52,320
+actual uo transpiration which is the AET
+
+159
+00:08:48,200 --> 00:08:56,120
+so today I will talk about the AET and I
+
+160
+00:08:52,320 --> 00:08:59,480
+will go through the methods that we um
+
+161
+00:08:56,120 --> 00:09:02,839
+we improved developed improved and also
+
+162
+00:08:59,480 --> 00:09:06,600
+so the product that we developed and
+
+163
+00:09:02,839 --> 00:09:08,120
+also applications so first we'll talk
+
+164
+00:09:06,600 --> 00:09:10,839
+about the
+
+165
+00:09:08,120 --> 00:09:12,799
+algorithm for the actual uo
+
+166
+00:09:10,839 --> 00:09:15,920
+transporation of course there are you
+
+167
+00:09:12,799 --> 00:09:20,000
+know now with machine learning there are
+
+168
+00:09:15,919 --> 00:09:23,759
+a lot of methods there are uh this um
+
+169
+00:09:20,000 --> 00:09:26,799
+process based model and it can be also
+
+170
+00:09:23,759 --> 00:09:29,439
+machine learning data driven model and
+
+171
+00:09:26,799 --> 00:09:33,039
+here what I'm going to talk about is
+
+172
+00:09:29,440 --> 00:09:35,519
+energy balance model so why is energy
+
+173
+00:09:33,039 --> 00:09:37,879
+balance think about you know like in
+
+174
+00:09:35,519 --> 00:09:41,440
+physics there are actually a lot of
+
+175
+00:09:37,879 --> 00:09:43,078
+assumptions is the balance Mass
+
+176
+00:09:41,440 --> 00:09:46,200
+conservation you know energy
+
+177
+00:09:43,078 --> 00:09:50,679
+conservation so um the energy balance
+
+178
+00:09:46,200 --> 00:09:54,000
+method is we assume the net radiation we
+
+179
+00:09:50,679 --> 00:09:58,120
+get like the energy we get on the
+
+180
+00:09:54,000 --> 00:09:59,958
+Earth's surface it will be petitioned to
+
+181
+00:09:58,120 --> 00:10:03,959
+three energy
+
+182
+00:09:59,958 --> 00:10:08,759
+components one is how much energy is
+
+183
+00:10:03,958 --> 00:10:12,239
+stored in the soil and another part is
+
+184
+00:10:08,759 --> 00:10:15,360
+how much energy is used to change the
+
+185
+00:10:12,240 --> 00:10:17,759
+air temperature like when you feel is
+
+186
+00:10:15,360 --> 00:10:21,919
+hot outside it's cold outside that's a
+
+187
+00:10:17,759 --> 00:10:26,799
+sensible heat and then the rest of that
+
+188
+00:10:21,919 --> 00:10:31,838
+is latent heat which is the energy used
+
+189
+00:10:26,799 --> 00:10:35,199
+to transfer the water from the soil or
+
+190
+00:10:31,839 --> 00:10:37,760
+water surface back to a waer condition
+
+191
+00:10:35,200 --> 00:10:40,200
+so which is the part of the energy that
+
+192
+00:10:37,759 --> 00:10:43,000
+is used for eaper
+
+193
+00:10:40,200 --> 00:10:46,120
+transporation so in a lot of this energy
+
+194
+00:10:43,000 --> 00:10:49,120
+balance models we actually calculate
+
+195
+00:10:46,120 --> 00:10:52,360
+this latent heat which is the L term
+
+196
+00:10:49,120 --> 00:10:55,919
+there uh as a residual of this system
+
+197
+00:10:52,360 --> 00:10:59,959
+because um it's just so hard to directly
+
+198
+00:10:55,919 --> 00:11:03,799
+estimate it um so here I'm showing you
+
+199
+00:10:59,958 --> 00:11:06,838
+one of these energy balance model which
+
+200
+00:11:03,799 --> 00:11:10,479
+is called Alexi dis Alex model and this
+
+201
+00:11:06,839 --> 00:11:14,560
+is the model that that have been um work
+
+202
+00:11:10,480 --> 00:11:19,039
+on since my postal and it was developed
+
+203
+00:11:14,559 --> 00:11:22,000
+by my postal weather and for this model
+
+204
+00:11:19,039 --> 00:11:24,559
+it actually has two components one
+
+205
+00:11:22,000 --> 00:11:27,799
+component is on the course resolution
+
+206
+00:11:24,559 --> 00:11:30,518
+which is a Lexi model the reason we have
+
+207
+00:11:27,799 --> 00:11:34,000
+this is because
+
+208
+00:11:30,519 --> 00:11:36,720
+to have this energy closure we need to
+
+209
+00:11:34,000 --> 00:11:40,440
+have a system that you can consider the
+
+210
+00:11:36,720 --> 00:11:43,800
+closure right so to consider this system
+
+211
+00:11:40,440 --> 00:11:47,279
+we need the atmospheric boundary layer
+
+212
+00:11:43,799 --> 00:11:50,199
+condition so that's the hard part to get
+
+213
+00:11:47,278 --> 00:11:53,000
+so that we rely on the geostationary
+
+214
+00:11:50,200 --> 00:11:56,200
+data which is the weather forast
+
+215
+00:11:53,000 --> 00:11:58,720
+satellite in the space because it's it's
+
+216
+00:11:56,200 --> 00:12:02,160
+course resolution but it's very frequent
+
+217
+00:11:58,720 --> 00:12:04,720
+so from that we can grab the information
+
+218
+00:12:02,159 --> 00:12:07,838
+of the atmospheric boundary layer
+
+219
+00:12:04,720 --> 00:12:11,360
+development information then we can have
+
+220
+00:12:07,839 --> 00:12:15,240
+a closed system to consider the energy
+
+221
+00:12:11,360 --> 00:12:19,480
+balance so for the course resolution
+
+222
+00:12:15,240 --> 00:12:22,399
+part one key input is land surface
+
+223
+00:12:19,480 --> 00:12:26,039
+temperature so this goes to the cooling
+
+224
+00:12:22,399 --> 00:12:28,799
+effect of Ule transporation um is I
+
+225
+00:12:26,039 --> 00:12:31,198
+always like to to use this example as
+
+226
+00:12:28,799 --> 00:12:35,719
+you know in the hot summer days when you
+
+227
+00:12:31,198 --> 00:12:38,719
+sweat actually your skin is cooler and
+
+228
+00:12:35,720 --> 00:12:41,240
+this is the same for vegetation
+
+229
+00:12:38,720 --> 00:12:44,160
+transpiration if you have water
+
+230
+00:12:41,240 --> 00:12:46,959
+transferred back to Atmosphere it uses
+
+231
+00:12:44,159 --> 00:12:51,078
+the energy so it has the cooling effect
+
+232
+00:12:46,958 --> 00:12:53,638
+your Leaf surface will be cooler so
+
+233
+00:12:51,078 --> 00:12:56,078
+that's why land surface temperature is a
+
+234
+00:12:53,639 --> 00:12:58,278
+very important parameter that we use in
+
+235
+00:12:56,078 --> 00:13:01,198
+the model other than that we also need
+
+236
+00:12:58,278 --> 00:13:04,039
+to know the condition of land surface
+
+237
+00:13:01,198 --> 00:13:06,838
+which we use vegetation index so we know
+
+238
+00:13:04,039 --> 00:13:09,639
+where the the vegetation is and where we
+
+239
+00:13:06,839 --> 00:13:13,440
+know the bare soil is so that we can
+
+240
+00:13:09,639 --> 00:13:16,959
+estimate e and t because e is from
+
+241
+00:13:13,440 --> 00:13:20,560
+different surfaces and T is from the
+
+242
+00:13:16,958 --> 00:13:23,000
+fence so that's the course resolution
+
+243
+00:13:20,559 --> 00:13:26,958
+and for the final spal resolution we
+
+244
+00:13:23,000 --> 00:13:30,879
+call it a disaggregation of Alexi so
+
+245
+00:13:26,958 --> 00:13:34,439
+which is this Alexi so for for dxi we
+
+246
+00:13:30,879 --> 00:13:36,879
+borrow this air T air estimation for the
+
+247
+00:13:34,440 --> 00:13:41,680
+boundary condition that we estimated
+
+248
+00:13:36,879 --> 00:13:44,240
+from Alexi and use that in the dis Alexi
+
+249
+00:13:41,679 --> 00:13:46,679
+but change the land surface and
+
+250
+00:13:44,240 --> 00:13:50,320
+vegetation index uh land surface
+
+251
+00:13:46,679 --> 00:13:52,719
+temperature and vation indexing input to
+
+252
+00:13:50,320 --> 00:13:55,959
+a finer special resolution satellite
+
+253
+00:13:52,720 --> 00:13:59,360
+data which now we use lens set eost
+
+254
+00:13:55,958 --> 00:14:02,799
+stress and we so these are different
+
+255
+00:13:59,360 --> 00:14:06,000
+satellites in the space so now you can
+
+256
+00:14:02,799 --> 00:14:09,319
+see this is really uh hierarchical
+
+257
+00:14:06,000 --> 00:14:12,320
+structure that involves satellite data
+
+258
+00:14:09,320 --> 00:14:16,000
+from different spatial resolution and
+
+259
+00:14:12,320 --> 00:14:19,720
+for satellite data normally if it's
+
+260
+00:14:16,000 --> 00:14:22,440
+different uh spatial resolution it's
+
+261
+00:14:19,720 --> 00:14:25,639
+different in temporal resolution the
+
+262
+00:14:22,440 --> 00:14:28,639
+temporal resolution meaning is how often
+
+263
+00:14:25,639 --> 00:14:32,879
+it comes back to the same place we also
+
+264
+00:14:28,639 --> 00:14:36,159
+call this as revisiting timee so
+
+265
+00:14:32,879 --> 00:14:38,919
+combining all these different satellites
+
+266
+00:14:36,159 --> 00:14:42,679
+together uh we can estimate eapo
+
+267
+00:14:38,919 --> 00:14:45,559
+transporation at different spatial and
+
+268
+00:14:42,679 --> 00:14:48,479
+temporal resolution normally closer
+
+269
+00:14:45,559 --> 00:14:51,399
+spatial resolution has more frequent
+
+270
+00:14:48,480 --> 00:14:54,079
+revisiting and finer spatial resolution
+
+271
+00:14:51,399 --> 00:14:57,600
+has a longer revisiting
+
+272
+00:14:54,078 --> 00:14:59,638
+time so as you can tell that for a a lot
+
+273
+00:14:57,600 --> 00:15:03,278
+of agriculture
+
+274
+00:14:59,639 --> 00:15:06,720
+applications what we need is high in
+
+275
+00:15:03,278 --> 00:15:09,639
+both in both spatial resolution and in
+
+276
+00:15:06,720 --> 00:15:13,320
+both in temporal resolution so that's
+
+277
+00:15:09,639 --> 00:15:17,639
+why we came up with a data Fusion method
+
+278
+00:15:13,320 --> 00:15:19,800
+then we can combine the advantages of
+
+279
+00:15:17,639 --> 00:15:24,720
+high frequency from course resolution
+
+280
+00:15:19,799 --> 00:15:28,519
+data and the uh High special resolution
+
+281
+00:15:24,720 --> 00:15:30,560
+uh observations from those satellite
+
+282
+00:15:28,519 --> 00:15:34,639
+that they don't have a very frequent
+
+283
+00:15:30,559 --> 00:15:38,599
+revisit time so combining all this we
+
+284
+00:15:34,639 --> 00:15:40,480
+want to get a daily field scale uo
+
+285
+00:15:38,600 --> 00:15:43,680
+Transportation
+
+286
+00:15:40,480 --> 00:15:46,399
+estimation so I will give a little bit
+
+287
+00:15:43,679 --> 00:15:51,159
+more about this data Fusion like
+
+288
+00:15:46,399 --> 00:15:54,519
+multisource data um system because I
+
+289
+00:15:51,159 --> 00:15:57,639
+want to guess a little bit new in new
+
+290
+00:15:54,519 --> 00:16:01,198
+things in my slides that I didn't talk
+
+291
+00:15:57,639 --> 00:16:05,839
+in my interview uh talk and also another
+
+292
+00:16:01,198 --> 00:16:07,278
+talks so this is a different sources of
+
+293
+00:16:05,839 --> 00:16:10,560
+land surface
+
+294
+00:16:07,278 --> 00:16:12,919
+temperature as we identified that land
+
+295
+00:16:10,559 --> 00:16:16,399
+surface temperature is really important
+
+296
+00:16:12,919 --> 00:16:18,399
+input for our energy balance model so
+
+297
+00:16:16,399 --> 00:16:21,198
+these are the satellite that we are
+
+298
+00:16:18,399 --> 00:16:24,159
+currently using which the first is G
+
+299
+00:16:21,198 --> 00:16:27,039
+stationary one is the go data the
+
+300
+00:16:24,159 --> 00:16:30,719
+weather satellite for the uh United
+
+301
+00:16:27,039 --> 00:16:34,679
+States modes and we is polar orbit polar
+
+302
+00:16:30,720 --> 00:16:38,199
+orbit means they that go through um uh
+
+303
+00:16:34,679 --> 00:16:42,599
+the the polar part so that's the modus
+
+304
+00:16:38,198 --> 00:16:46,679
+and we the spal resolution is 500 meter
+
+305
+00:16:42,600 --> 00:16:51,000
+but is daily risi and lset lanet has
+
+306
+00:16:46,679 --> 00:16:53,439
+been a really um golden observations for
+
+307
+00:16:51,000 --> 00:16:58,039
+us working on field scale because it
+
+308
+00:16:53,440 --> 00:17:00,519
+provides 30 m uh spal resolution and all
+
+309
+00:16:58,039 --> 00:17:03,838
+but the revision time is relatively
+
+310
+00:17:00,519 --> 00:17:06,519
+longer because it's 16 days but now we
+
+311
+00:17:03,839 --> 00:17:09,318
+have two lens set in the space lens at 8
+
+312
+00:17:06,519 --> 00:17:11,359
+and lens and nine so combining these two
+
+313
+00:17:09,318 --> 00:17:15,438
+together we can get the revisiting time
+
+314
+00:17:11,359 --> 00:17:18,359
+to eight days and then the ISS orbit is
+
+315
+00:17:15,439 --> 00:17:21,439
+the ecost stress sensor ecost stress is
+
+316
+00:17:18,359 --> 00:17:24,318
+a thermal only sensor so it only
+
+317
+00:17:21,439 --> 00:17:28,038
+measures um the land surface temperature
+
+318
+00:17:24,318 --> 00:17:29,839
+is on the International Space Station um
+
+319
+00:17:28,038 --> 00:17:31,798
+it because it is on the International
+
+320
+00:17:29,839 --> 00:17:35,279
+Space Station so it goes to a very
+
+321
+00:17:31,798 --> 00:17:36,839
+different orbit the revisiting time is
+
+322
+00:17:35,279 --> 00:17:40,279
+about 4
+
+323
+00:17:36,839 --> 00:17:44,399
+days and also considering like in the
+
+324
+00:17:40,279 --> 00:17:46,639
+future we also have multiple uh sensors
+
+325
+00:17:44,400 --> 00:17:50,440
+that is planned in the future for
+
+326
+00:17:46,640 --> 00:17:54,240
+example the Trish from European um and L
+
+327
+00:17:50,440 --> 00:17:57,120
+next which will be launched in 2030
+
+328
+00:17:54,240 --> 00:17:59,839
+which uh is will be launched by NASA and
+
+329
+00:17:57,119 --> 00:18:02,839
+hosted by USGS
+
+330
+00:17:59,839 --> 00:18:06,439
+so why we need all these data together
+
+331
+00:18:02,839 --> 00:18:10,399
+this is a simple uh like identification
+
+332
+00:18:06,440 --> 00:18:13,640
+of uh these different
+
+333
+00:18:10,400 --> 00:18:15,919
+data their frequency and this area
+
+334
+00:18:13,640 --> 00:18:19,360
+actually is for California California is
+
+335
+00:18:15,919 --> 00:18:21,640
+already clear during green season um and
+
+336
+00:18:19,359 --> 00:18:24,359
+you would see a more added value
+
+337
+00:18:21,640 --> 00:18:26,559
+actually for a cloudy area so for the
+
+338
+00:18:24,359 --> 00:18:29,558
+first one is lens set eight and nine
+
+339
+00:18:26,558 --> 00:18:33,639
+which is the key input currently for a
+
+340
+00:18:29,558 --> 00:18:37,079
+lot of operational product of V then
+
+341
+00:18:33,640 --> 00:18:39,720
+Sentinel 2 is the European satellite
+
+342
+00:18:37,079 --> 00:18:41,399
+which doesn't have thermal observation
+
+343
+00:18:39,720 --> 00:18:43,240
+so it doesn't measure land surface
+
+344
+00:18:41,400 --> 00:18:46,280
+temperature but we can get vegetation
+
+345
+00:18:43,240 --> 00:18:48,640
+index from Sentinel and eost stress is
+
+346
+00:18:46,279 --> 00:18:51,000
+thermal only it's just a measure lens of
+
+347
+00:18:48,640 --> 00:18:53,400
+temperature so combine these all
+
+348
+00:18:51,000 --> 00:18:56,480
+together we can see a lot of more
+
+349
+00:18:53,400 --> 00:18:59,480
+samples that we can get over a growing
+
+350
+00:18:56,480 --> 00:19:02,240
+season which can help us to better
+
+351
+00:18:59,480 --> 00:19:05,000
+estimate eapa transpiration because if
+
+352
+00:19:02,240 --> 00:19:08,279
+you don't have satellite observations
+
+353
+00:19:05,000 --> 00:19:10,960
+you can only do is interpolate between
+
+354
+00:19:08,279 --> 00:19:12,918
+the two days that you have observation
+
+355
+00:19:10,960 --> 00:19:16,159
+uh which is not ideal the ideal
+
+356
+00:19:12,919 --> 00:19:18,679
+condition is we can get observation for
+
+357
+00:19:16,159 --> 00:19:21,880
+um each day but there will be a long
+
+358
+00:19:18,679 --> 00:19:25,080
+long way to go um and also comparing
+
+359
+00:19:21,880 --> 00:19:28,840
+with the lanet and Eco stress this is
+
+360
+00:19:25,079 --> 00:19:32,038
+how many clear images that we can use
+
+361
+00:19:28,839 --> 00:19:36,119
+for a year this is in
+
+362
+00:19:32,038 --> 00:19:38,839
+2022 um with darker color is more images
+
+363
+00:19:36,119 --> 00:19:42,079
+over that area so you can see lens set
+
+364
+00:19:38,839 --> 00:19:45,000
+really have limited images and combining
+
+365
+00:19:42,079 --> 00:19:47,599
+with Eco stress they're a lot more so
+
+366
+00:19:45,000 --> 00:19:51,000
+the difference is we use eal the the
+
+367
+00:19:47,599 --> 00:19:54,240
+number of Eco stress minus the number of
+
+368
+00:19:51,000 --> 00:19:57,279
+lens set so we can get the number how
+
+369
+00:19:54,240 --> 00:20:00,079
+many more images we can get so the
+
+370
+00:19:57,279 --> 00:20:02,798
+question is okay so we have all these
+
+371
+00:20:00,079 --> 00:20:05,079
+satellite observations and there will be
+
+372
+00:20:02,798 --> 00:20:08,079
+more in the future whether you can
+
+373
+00:20:05,079 --> 00:20:12,399
+directly use them together
+
+374
+00:20:08,079 --> 00:20:16,798
+um actually not because they are so
+
+375
+00:20:12,400 --> 00:20:19,880
+different they the key differ is the
+
+376
+00:20:16,798 --> 00:20:23,359
+spatial resolution is different so as
+
+377
+00:20:19,880 --> 00:20:26,400
+you can tell that lens at 8 eal stress
+
+378
+00:20:23,359 --> 00:20:29,879
+and wears this is the relatively the
+
+379
+00:20:26,400 --> 00:20:34,080
+image from the sensor and it get course
+
+380
+00:20:29,880 --> 00:20:37,039
+and course so what we want is field
+
+381
+00:20:34,079 --> 00:20:41,079
+scale and if you look at the we sta you
+
+382
+00:20:37,038 --> 00:20:44,279
+don't really tell the field anymore so
+
+383
+00:20:41,079 --> 00:20:47,720
+what we need to to do is we need to
+
+384
+00:20:44,279 --> 00:20:51,440
+first to unify the land surface
+
+385
+00:20:47,720 --> 00:20:53,679
+temperature from different sensors and
+
+386
+00:20:51,440 --> 00:20:56,320
+here we use the data mining sharpener
+
+387
+00:20:53,679 --> 00:20:59,200
+which is a machine learning based method
+
+388
+00:20:56,319 --> 00:21:03,038
+for the land surface temperature
+
+389
+00:20:59,200 --> 00:21:05,480
+uh which we can sharpen the course
+
+390
+00:21:03,038 --> 00:21:08,480
+resolution of land surface temperature
+
+391
+00:21:05,480 --> 00:21:11,599
+to a field scale then we can put this as
+
+392
+00:21:08,480 --> 00:21:13,360
+input into our model to estimate field
+
+393
+00:21:11,599 --> 00:21:16,119
+scale U
+
+394
+00:21:13,359 --> 00:21:20,278
+transporation okay so now with all these
+
+395
+00:21:16,119 --> 00:21:24,079
+you know stellite method uh energy
+
+396
+00:21:20,278 --> 00:21:27,240
+balance what we actually want to get is
+
+397
+00:21:24,079 --> 00:21:29,839
+a 30 m daay evap transpiration
+
+398
+00:21:27,240 --> 00:21:32,599
+estimation so that we can use it for
+
+399
+00:21:29,839 --> 00:21:34,879
+different applications so now we are
+
+400
+00:21:32,599 --> 00:21:37,439
+going to start with some applications
+
+401
+00:21:34,880 --> 00:21:41,480
+because uh this talk will focus on the
+
+402
+00:21:37,440 --> 00:21:44,880
+plant stress detect I will use our vard
+
+403
+00:21:41,480 --> 00:21:48,240
+work at California as example to
+
+404
+00:21:44,880 --> 00:21:51,200
+demonstrate how we detect PL stress
+
+405
+00:21:48,240 --> 00:21:53,798
+using U Transportation data so this is
+
+406
+00:21:51,200 --> 00:21:57,558
+the gack project which is a
+
+407
+00:21:53,798 --> 00:22:02,720
+collaboration between NASA G gallo and
+
+408
+00:21:57,558 --> 00:22:05,879
+USDA so the Project Lead um is Bill
+
+409
+00:22:02,720 --> 00:22:09,798
+custas and uh and also Mara Anderson who
+
+410
+00:22:05,880 --> 00:22:12,240
+my co viser um so this is a project that
+
+411
+00:22:09,798 --> 00:22:16,240
+we have been working on for many years
+
+412
+00:22:12,240 --> 00:22:20,278
+actually um and these are the sites that
+
+413
+00:22:16,240 --> 00:22:23,519
+we selected they are EG Gallow vard and
+
+414
+00:22:20,278 --> 00:22:27,079
+for each of the sit we have observation
+
+415
+00:22:23,519 --> 00:22:30,200
+capabilities the instrument flux to
+
+416
+00:22:27,079 --> 00:22:32,839
+final Camp all this observations built
+
+417
+00:22:30,200 --> 00:22:32,840
+in this
+
+418
+00:22:33,798 --> 00:22:40,400
+sides and we evaluate our modeled U
+
+419
+00:22:38,159 --> 00:22:42,320
+transporation for each of the site by
+
+420
+00:22:40,400 --> 00:22:45,720
+comparing with the flex Tower
+
+421
+00:22:42,319 --> 00:22:48,000
+observations so here uh it can give us
+
+422
+00:22:45,720 --> 00:22:50,319
+confidence how we can further use the
+
+423
+00:22:48,000 --> 00:22:53,880
+model of the U transporation so you can
+
+424
+00:22:50,319 --> 00:22:57,639
+tell that the the Dots here observations
+
+425
+00:22:53,880 --> 00:23:01,679
+and the red line is our simulated daily
+
+426
+00:22:57,640 --> 00:23:05,278
+30 m field scale ET which performs very
+
+427
+00:23:01,679 --> 00:23:08,640
+well and other than just look at how it
+
+428
+00:23:05,278 --> 00:23:11,880
+works for these flux Tower we can also
+
+429
+00:23:08,640 --> 00:23:15,919
+look at the spatial pattern so this is
+
+430
+00:23:11,880 --> 00:23:19,840
+the ET the cumulative ET for the spard
+
+431
+00:23:15,919 --> 00:23:22,960
+area and start from the uh the the start
+
+432
+00:23:19,839 --> 00:23:24,879
+of the green season and all the way to
+
+433
+00:23:22,960 --> 00:23:28,240
+the peak of the green season so you can
+
+434
+00:23:24,880 --> 00:23:30,919
+tell how these different field they
+
+435
+00:23:28,240 --> 00:23:34,200
+start start to use a different amount of
+
+436
+00:23:30,919 --> 00:23:37,200
+irrigation over the year and also um
+
+437
+00:23:34,200 --> 00:23:40,919
+these are the the vineyard and there
+
+438
+00:23:37,200 --> 00:23:46,200
+also like the natural uh trees over
+
+439
+00:23:40,919 --> 00:23:48,600
+there uh so it's very uh useful for The
+
+440
+00:23:46,200 --> 00:23:51,640
+Growers that they can look at this
+
+441
+00:23:48,599 --> 00:23:55,240
+spatial map to understand how the
+
+442
+00:23:51,640 --> 00:23:57,600
+different water is used then how this
+
+443
+00:23:55,240 --> 00:23:59,519
+water use can be transferred to a stress
+
+444
+00:23:57,599 --> 00:24:02,639
+signal
+
+445
+00:23:59,519 --> 00:24:06,000
+so we actually using a very simple
+
+446
+00:24:02,640 --> 00:24:09,600
+anomaly method so the anomaly normally
+
+447
+00:24:06,000 --> 00:24:11,679
+Compares with a baseline right so if you
+
+448
+00:24:09,599 --> 00:24:15,119
+have a long-term observation you know
+
+449
+00:24:11,679 --> 00:24:18,720
+the Baseline and for each of the they
+
+450
+00:24:15,119 --> 00:24:21,479
+the data comes you can compare that ET
+
+451
+00:24:18,720 --> 00:24:24,839
+value with the Baseline and that can
+
+452
+00:24:21,480 --> 00:24:27,720
+give you a signal of stress but here we
+
+453
+00:24:24,839 --> 00:24:28,918
+are not actually directly compare the ET
+
+454
+00:24:27,720 --> 00:24:33,120
+value because
+
+455
+00:24:28,919 --> 00:24:36,960
+it changes a lot it's not just impacted
+
+456
+00:24:33,119 --> 00:24:39,479
+by the plant itself a lot of actually is
+
+457
+00:24:36,960 --> 00:24:43,120
+impacted by the weather right today and
+
+458
+00:24:39,480 --> 00:24:45,798
+tomorrow the plant won't change much but
+
+459
+00:24:43,119 --> 00:24:48,479
+you probably see the ET change a lot if
+
+460
+00:24:45,798 --> 00:24:51,119
+today is sunny and tomorrow is cloudy U
+
+461
+00:24:48,480 --> 00:24:54,200
+so we normalize the eapa transformation
+
+462
+00:24:51,119 --> 00:24:57,879
+use the reference ET to remove this
+
+463
+00:24:54,200 --> 00:25:01,399
+day-by-day difference of um the the uh
+
+464
+00:24:57,880 --> 00:25:05,919
+weather condition then we use this ratio
+
+465
+00:25:01,398 --> 00:25:10,319
+to calculate the F anomaly so this is
+
+466
+00:25:05,919 --> 00:25:12,080
+the index that we use to capture the
+
+467
+00:25:10,319 --> 00:25:16,319
+stress
+
+468
+00:25:12,079 --> 00:25:20,000
+um so this is the one example of one of
+
+469
+00:25:16,319 --> 00:25:23,038
+the venard is the on the top is this F
+
+470
+00:25:20,000 --> 00:25:25,759
+value um the red line is our model the
+
+471
+00:25:23,038 --> 00:25:29,278
+black dots are the
+
+472
+00:25:25,759 --> 00:25:33,519
+observations we can use these data to
+
+473
+00:25:29,278 --> 00:25:36,798
+look at these abnormal values and when
+
+474
+00:25:33,519 --> 00:25:39,720
+you compare this abnormal values with
+
+475
+00:25:36,798 --> 00:25:43,000
+the uh the far the the vineard
+
+476
+00:25:39,720 --> 00:25:45,759
+management you will see all these
+
+477
+00:25:43,000 --> 00:25:48,640
+differences comparing with the normal
+
+478
+00:25:45,759 --> 00:25:51,000
+condition uh sometimes it's due to the
+
+479
+00:25:48,640 --> 00:25:54,000
+drought as you can tell the California
+
+480
+00:25:51,000 --> 00:25:57,919
+drought sometimes is due to the
+
+481
+00:25:54,000 --> 00:26:01,720
+management for example this is a time
+
+482
+00:25:57,919 --> 00:26:07,840
+period reared that the graph and the
+
+483
+00:26:01,720 --> 00:26:11,480
+trimed so this is we use this um anomaly
+
+484
+00:26:07,839 --> 00:26:14,079
+index to help us identify what's
+
+485
+00:26:11,480 --> 00:26:17,960
+different comparing with the
+
+486
+00:26:14,079 --> 00:26:20,839
+Baseline so with this we can look at you
+
+487
+00:26:17,960 --> 00:26:24,200
+know the spatial pattern of water used
+
+488
+00:26:20,839 --> 00:26:27,678
+for different years among different
+
+489
+00:26:24,200 --> 00:26:31,240
+monsters and then when we use this value
+
+490
+00:26:27,679 --> 00:26:35,840
+to minus as the Baseline we can clearly
+
+491
+00:26:31,240 --> 00:26:39,240
+tell which part is not performing as
+
+492
+00:26:35,839 --> 00:26:41,678
+supposed to be so this is different as
+
+493
+00:26:39,240 --> 00:26:44,919
+of what Baseline tell use that the red
+
+494
+00:26:41,679 --> 00:26:47,640
+color means it's lower than the Baseline
+
+495
+00:26:44,919 --> 00:26:50,679
+which gave you a signal of either you
+
+496
+00:26:47,640 --> 00:26:54,000
+know the plant needs water because they
+
+497
+00:26:50,679 --> 00:26:57,278
+are using less amount of water or there
+
+498
+00:26:54,000 --> 00:26:59,880
+is also a signal that there might be
+
+499
+00:26:57,278 --> 00:27:03,519
+some kind of dis disase or pest for
+
+500
+00:26:59,880 --> 00:27:07,720
+those field that impacted the plant
+
+501
+00:27:03,519 --> 00:27:10,599
+water use then throwers can use this map
+
+502
+00:27:07,720 --> 00:27:14,240
+to look at to the field to look at the
+
+503
+00:27:10,599 --> 00:27:18,439
+field for further management so GPX is a
+
+504
+00:27:14,240 --> 00:27:24,079
+large project I'm a part of it um and
+
+505
+00:27:18,440 --> 00:27:28,320
+what is very excited is actually just uh
+
+506
+00:27:24,079 --> 00:27:32,038
+this Tuesday and Wednesday um the a few
+
+507
+00:27:28,319 --> 00:27:35,439
+leaders of the grx project visited us
+
+508
+00:27:32,038 --> 00:27:38,798
+and kitty gold from hotic culture um and
+
+509
+00:27:35,440 --> 00:27:41,679
+me we've together hosted them at Geneva
+
+510
+00:27:38,798 --> 00:27:45,359
+campus so as you can tell Bill kustas
+
+511
+00:27:41,679 --> 00:27:48,919
+Martha Anderson Joe alfy um are here to
+
+512
+00:27:45,359 --> 00:27:52,158
+visit our Geneva venard site and this is
+
+513
+00:27:48,919 --> 00:27:56,200
+also part of my new research that I want
+
+514
+00:27:52,159 --> 00:27:58,840
+to bring the G par experience to our uh
+
+515
+00:27:56,200 --> 00:28:02,000
+New York Vineyard grower
+
+516
+00:27:58,839 --> 00:28:04,398
+and to see under different climate
+
+517
+00:28:02,000 --> 00:28:07,960
+conditions with different uh uh
+
+518
+00:28:04,398 --> 00:28:10,759
+varieties of groups how much we learned
+
+519
+00:28:07,960 --> 00:28:14,319
+from gacks can help the growers in New
+
+520
+00:28:10,759 --> 00:28:16,919
+York so uh stay tuned hopefully next
+
+521
+00:28:14,319 --> 00:28:19,678
+time I will have some results for this
+
+522
+00:28:16,919 --> 00:28:24,038
+and we are planning a flux Tower over
+
+523
+00:28:19,679 --> 00:28:27,000
+one of Kitt's field site so she has the
+
+524
+00:28:24,038 --> 00:28:30,278
+disease measurement um and I will have
+
+525
+00:28:27,000 --> 00:28:32,759
+the water and carbon flux measurement uh
+
+526
+00:28:30,278 --> 00:28:34,640
+collectively I think we will have a lot
+
+527
+00:28:32,759 --> 00:28:38,200
+of interesting
+
+528
+00:28:34,640 --> 00:28:42,200
+findings okay so uh other than the the
+
+529
+00:28:38,200 --> 00:28:45,798
+the crops actually we also I also did a
+
+530
+00:28:42,200 --> 00:28:48,120
+lot of work for natural Forest um but
+
+531
+00:28:45,798 --> 00:28:51,720
+because of time I'm not going to to talk
+
+532
+00:28:48,119 --> 00:28:54,798
+about this in detail but we did use this
+
+533
+00:28:51,720 --> 00:28:57,440
+water use information to help us to
+
+534
+00:28:54,798 --> 00:29:00,000
+understand Plantation management the
+
+535
+00:28:57,440 --> 00:29:03,278
+thinning harest these are all the
+
+536
+00:29:00,000 --> 00:29:05,440
+signals that you can find from water use
+
+537
+00:29:03,278 --> 00:29:07,880
+and these are all published papers if
+
+538
+00:29:05,440 --> 00:29:11,880
+you're interested you can look at them
+
+539
+00:29:07,880 --> 00:29:15,080
+and look at Missouri Forest draw impact
+
+540
+00:29:11,880 --> 00:29:19,360
+um and also how the forest compositions
+
+541
+00:29:15,079 --> 00:29:23,038
+management impact different water use
+
+542
+00:29:19,359 --> 00:29:26,199
+and also the uh restoration of uh
+
+543
+00:29:23,038 --> 00:29:28,879
+different kinds in the Southeast area
+
+544
+00:29:26,200 --> 00:29:31,519
+which is a large conservation effort in
+
+545
+00:29:28,880 --> 00:29:35,559
+sou East and now and also Wildfire
+
+546
+00:29:31,519 --> 00:29:39,079
+impact over the uh west of us so these
+
+547
+00:29:35,558 --> 00:29:41,480
+are the The Works that we have published
+
+548
+00:29:39,079 --> 00:29:44,119
+so now you can tell that you know we
+
+549
+00:29:41,480 --> 00:29:47,079
+spend a lot of time to explore how we
+
+550
+00:29:44,119 --> 00:29:49,839
+can use this data and when people start
+
+551
+00:29:47,079 --> 00:29:54,199
+to adapt to this method there's new
+
+552
+00:29:49,839 --> 00:29:58,678
+issue is how we can provide people the
+
+553
+00:29:54,200 --> 00:30:01,679
+data because this is very compal
+
+554
+00:29:58,679 --> 00:30:04,919
+um resource
+
+555
+00:30:01,679 --> 00:30:08,919
+intensive so for a local server we
+
+556
+00:30:04,919 --> 00:30:11,120
+cannot estimate large aere so that's why
+
+557
+00:30:08,919 --> 00:30:13,519
+the ear a few earlier studies you can
+
+558
+00:30:11,119 --> 00:30:17,000
+tell they are just limited with small
+
+559
+00:30:13,519 --> 00:30:20,120
+aere because just we cannot run it for a
+
+560
+00:30:17,000 --> 00:30:23,319
+large area so how we can provide this
+
+561
+00:30:20,119 --> 00:30:26,319
+Regional data to people are interested
+
+562
+00:30:23,319 --> 00:30:29,158
+so this is another key project that I
+
+563
+00:30:26,319 --> 00:30:32,960
+also have been worked on for multiple
+
+564
+00:30:29,159 --> 00:30:35,960
+years and I'm super excited to see how
+
+565
+00:30:32,960 --> 00:30:39,679
+this project turned to so this is open
+
+566
+00:30:35,960 --> 00:30:42,079
+ET project it started with a a lot of
+
+567
+00:30:39,679 --> 00:30:44,120
+collaboration efforts from different
+
+568
+00:30:42,079 --> 00:30:46,599
+government agencies and
+
+569
+00:30:44,119 --> 00:30:51,038
+universities and actually at that
+
+570
+00:30:46,599 --> 00:30:56,359
+time we started to think how we can
+
+571
+00:30:51,038 --> 00:30:58,960
+provide this data to the end users not
+
+572
+00:30:56,359 --> 00:31:02,359
+just in the scientific community
+
+573
+00:30:58,960 --> 00:31:05,120
+so what we did is we bring we brought
+
+574
+00:31:02,359 --> 00:31:09,240
+our model into the cloud which is the
+
+575
+00:31:05,119 --> 00:31:13,158
+Google engine so we use we we integrated
+
+576
+00:31:09,240 --> 00:31:16,399
+six different ET models into engine then
+
+577
+00:31:13,159 --> 00:31:18,960
+we can directly do all the estimations
+
+578
+00:31:16,398 --> 00:31:21,599
+in the cloud nothing need to be done
+
+579
+00:31:18,960 --> 00:31:24,440
+locally everything is in the cloud and
+
+580
+00:31:21,599 --> 00:31:28,158
+the results are saved in the cloud and
+
+581
+00:31:24,440 --> 00:31:32,480
+to e to make the the accessible of the
+
+582
+00:31:28,159 --> 00:31:34,760
+the data we also developed a website
+
+583
+00:31:32,480 --> 00:31:37,639
+which is this
+
+584
+00:31:34,759 --> 00:31:41,240
+open.org um and you can look at the
+
+585
+00:31:37,638 --> 00:31:43,798
+water use from different fields and we
+
+586
+00:31:41,240 --> 00:31:47,359
+also developed the API that people can
+
+587
+00:31:43,798 --> 00:31:50,158
+directly download images and time series
+
+588
+00:31:47,359 --> 00:31:53,000
+do a little bit more Advanced Data
+
+589
+00:31:50,159 --> 00:31:57,919
+extraction so the six models that we
+
+590
+00:31:53,000 --> 00:32:02,720
+have is these wellestablished six models
+
+591
+00:31:57,919 --> 00:32:08,360
+and Alexa dxi was one of them um and we
+
+592
+00:32:02,720 --> 00:32:11,079
+also have a another emble value because
+
+593
+00:32:08,359 --> 00:32:14,158
+a lot of times users they don't need six
+
+594
+00:32:11,079 --> 00:32:17,519
+values especially when these six values
+
+595
+00:32:14,159 --> 00:32:21,039
+are all different so they want one value
+
+596
+00:32:17,519 --> 00:32:24,120
+which is emble so we also like studied a
+
+597
+00:32:21,038 --> 00:32:27,119
+lot how to get to this emble value and
+
+598
+00:32:24,119 --> 00:32:30,119
+we went through careful evaluation and
+
+599
+00:32:27,119 --> 00:32:32,839
+the evaluation results turned out that
+
+600
+00:32:30,119 --> 00:32:35,638
+Ensemble actually performs the best
+
+601
+00:32:32,839 --> 00:32:38,959
+which is also what we want to see um and
+
+602
+00:32:35,638 --> 00:32:42,038
+we also have published
+
+603
+00:32:38,960 --> 00:32:45,159
+another uh evaluation paper that was
+
+604
+00:32:42,038 --> 00:32:49,119
+published earlier this year um on nature
+
+605
+00:32:45,159 --> 00:32:54,159
+water which is also the C page and uh
+
+606
+00:32:49,119 --> 00:32:56,798
+from this study we evaluated our open
+
+607
+00:32:54,159 --> 00:33:00,440
+product comparing with different flx
+
+608
+00:32:56,798 --> 00:33:02,480
+Towers all all across the conus so um
+
+609
+00:33:00,440 --> 00:33:04,720
+the that paper have very detailed
+
+610
+00:33:02,480 --> 00:33:07,599
+information about the performance of
+
+611
+00:33:04,720 --> 00:33:11,399
+different models and the performance
+
+612
+00:33:07,599 --> 00:33:15,839
+models at different locations um so now
+
+613
+00:33:11,398 --> 00:33:19,000
+we have the ET data we are still uh like
+
+614
+00:33:15,839 --> 00:33:22,038
+work very hard to expand this to the
+
+615
+00:33:19,000 --> 00:33:24,919
+east um so now I think it we have a
+
+616
+00:33:22,038 --> 00:33:28,919
+little bit more but uh didn't get to the
+
+617
+00:33:24,919 --> 00:33:31,759
+New York state yet and and this is where
+
+618
+00:33:28,919 --> 00:33:34,679
+the multisource data could be very
+
+619
+00:33:31,759 --> 00:33:38,240
+helpful for the next stage because we
+
+620
+00:33:34,679 --> 00:33:40,559
+all know the EAS us is cloudier than the
+
+621
+00:33:38,240 --> 00:33:44,079
+Western us and we will need more
+
+622
+00:33:40,558 --> 00:33:47,480
+satellites to work on this and this is
+
+623
+00:33:44,079 --> 00:33:50,960
+the if you get to the open website you
+
+624
+00:33:47,480 --> 00:33:53,720
+can zoom into the website we already
+
+625
+00:33:50,960 --> 00:33:56,759
+have build field boundary there you can
+
+626
+00:33:53,720 --> 00:34:00,038
+look at the water use for each of the
+
+627
+00:33:56,759 --> 00:34:05,319
+field um and currently we have data from
+
+628
+00:34:00,038 --> 00:34:07,879
+2016 to present I think and also we have
+
+629
+00:34:05,319 --> 00:34:10,480
+this API there you can use it to
+
+630
+00:34:07,880 --> 00:34:13,760
+download data if you're interested to
+
+631
+00:34:10,480 --> 00:34:16,960
+explore in a certain area we are also
+
+632
+00:34:13,760 --> 00:34:19,760
+building this Farms Tool uh to use this
+
+633
+00:34:16,960 --> 00:34:23,918
+Farms tool farmers can bring their own
+
+634
+00:34:19,760 --> 00:34:27,200
+boundary shape file into the platform so
+
+635
+00:34:23,918 --> 00:34:32,279
+that they can get routinely report of
+
+636
+00:34:27,199 --> 00:34:35,678
+their Fields water use um so I I do see
+
+637
+00:34:32,280 --> 00:34:39,679
+there's limited of time um and but I
+
+638
+00:34:35,679 --> 00:34:43,280
+also want to show you that with the open
+
+639
+00:34:39,679 --> 00:34:46,159
+we are not limited to small areas we can
+
+640
+00:34:43,280 --> 00:34:49,359
+do Regional studies but still keep this
+
+641
+00:34:46,159 --> 00:34:51,878
+fine spatial resolution um this is a
+
+642
+00:34:49,358 --> 00:34:54,119
+study that my PhD student she is
+
+643
+00:34:51,878 --> 00:34:56,759
+currently working on look at Lower
+
+644
+00:34:54,119 --> 00:35:00,039
+Mississippi Alou PL agriculture
+
+645
+00:34:56,760 --> 00:35:03,160
+activities and how these activities
+
+646
+00:35:00,039 --> 00:35:06,519
+impact the water use so this is the
+
+647
+00:35:03,159 --> 00:35:10,078
+study area and along the Miss River you
+
+648
+00:35:06,519 --> 00:35:13,838
+can see it's a highly cultivated area
+
+649
+00:35:10,079 --> 00:35:16,640
+and we did we use the open data to
+
+650
+00:35:13,838 --> 00:35:20,920
+analyze the like for these different
+
+651
+00:35:16,639 --> 00:35:23,960
+crop types soybean is a green color corn
+
+652
+00:35:20,920 --> 00:35:27,760
+coton and rice uh how these different
+
+653
+00:35:23,960 --> 00:35:31,480
+crops use different amount of water um
+
+654
+00:35:27,760 --> 00:35:35,960
+and here we can get a very typical uh
+
+655
+00:35:31,480 --> 00:35:39,358
+plant water use curve so this is aage
+
+656
+00:35:35,960 --> 00:35:42,358
+from out cor years which agrees a lot
+
+657
+00:35:39,358 --> 00:35:45,679
+with what we uh observed in the field
+
+658
+00:35:42,358 --> 00:35:49,480
+that the yellow Lin corn it shows a
+
+659
+00:35:45,679 --> 00:35:53,559
+higher water use during the first stage
+
+660
+00:35:49,480 --> 00:35:56,559
+of the the green stage and the coton
+
+661
+00:35:53,559 --> 00:35:59,920
+doesn't need that much water so this is
+
+662
+00:35:56,559 --> 00:36:03,279
+what we get statistically from the open
+
+663
+00:35:59,920 --> 00:36:06,000
+data um and we can also look at how
+
+664
+00:36:03,280 --> 00:36:08,319
+these we can look at the water
+
+665
+00:36:06,000 --> 00:36:11,039
+accounting for this
+
+666
+00:36:08,318 --> 00:36:13,199
+region the same as you know you
+
+667
+00:36:11,039 --> 00:36:15,880
+understand your bank account we also
+
+668
+00:36:13,199 --> 00:36:19,519
+want to understand the water account how
+
+669
+00:36:15,880 --> 00:36:22,800
+much water we use at different locations
+
+670
+00:36:19,519 --> 00:36:25,440
+and how much water is extracted from
+
+671
+00:36:22,800 --> 00:36:29,560
+groundwater the groundwater information
+
+672
+00:36:25,440 --> 00:36:32,559
+is this scue bar that uh shows all
+
+673
+00:36:29,559 --> 00:36:35,318
+negative value the negative value is
+
+674
+00:36:32,559 --> 00:36:39,159
+like is always withdraw so that's also
+
+675
+00:36:35,318 --> 00:36:42,880
+explains why this area we see a
+
+676
+00:36:39,159 --> 00:36:46,480
+consistent groundwater depletion and for
+
+677
+00:36:42,880 --> 00:36:49,440
+these draw years we do see a higher uh
+
+678
+00:36:46,480 --> 00:36:52,400
+groundw withdraw uh to maintain the
+
+679
+00:36:49,440 --> 00:36:54,519
+agriculture activity over this area and
+
+680
+00:36:52,400 --> 00:36:57,280
+again we can also look at the spatial
+
+681
+00:36:54,519 --> 00:37:00,119
+pattern for like different area they
+
+682
+00:36:57,280 --> 00:37:02,640
+tend to use different amount of water
+
+683
+00:37:00,119 --> 00:37:05,358
+over a green season so this is the same
+
+684
+00:37:02,639 --> 00:37:09,519
+area starts from May all the way to
+
+685
+00:37:05,358 --> 00:37:12,759
+August on the top is leaf area index and
+
+686
+00:37:09,519 --> 00:37:15,960
+the the second panel is the U
+
+687
+00:37:12,760 --> 00:37:18,520
+transporation which is the water use um
+
+688
+00:37:15,960 --> 00:37:20,800
+so I will try to go quick because this
+
+689
+00:37:18,519 --> 00:37:24,519
+will be something I'll will further work
+
+690
+00:37:20,800 --> 00:37:27,318
+on is very high resolution ET because 30
+
+691
+00:37:24,519 --> 00:37:30,838
+m sometimes can be limited for specialty
+
+692
+00:37:27,318 --> 00:37:34,719
+C alter um like the specialty crops this
+
+693
+00:37:30,838 --> 00:37:38,239
+is the vard um the from KT is
+
+694
+00:37:34,719 --> 00:37:41,519
+field that we do need uh like finer
+
+695
+00:37:38,239 --> 00:37:44,838
+spatial resolution details and part of
+
+696
+00:37:41,519 --> 00:37:48,599
+my group's work is using UAV data so we
+
+697
+00:37:44,838 --> 00:37:51,559
+fly drones to collect images then we can
+
+698
+00:37:48,599 --> 00:37:54,480
+really get very detailed information on
+
+699
+00:37:51,559 --> 00:37:57,559
+the ground this is the two site fully
+
+700
+00:37:54,480 --> 00:38:01,400
+irrigated and deficit site and you can
+
+701
+00:37:57,559 --> 00:38:04,480
+see how these are input be different and
+
+702
+00:38:01,400 --> 00:38:07,200
+this is our U transporation estimation
+
+703
+00:38:04,480 --> 00:38:10,000
+the first one uh you can also tell how
+
+704
+00:38:07,199 --> 00:38:12,358
+different the uo transportation use for
+
+705
+00:38:10,000 --> 00:38:14,719
+the fully irrigated deficit they are
+
+706
+00:38:12,358 --> 00:38:18,598
+next to each other but they are very
+
+707
+00:38:14,719 --> 00:38:22,399
+different so this is a 3 meter uh evapo
+
+708
+00:38:18,599 --> 00:38:25,240
+Transportation data and this is 30 meter
+
+709
+00:38:22,400 --> 00:38:27,960
+so now you can tell how why we want to
+
+710
+00:38:25,239 --> 00:38:30,838
+go a little bit further is this should
+
+711
+00:38:27,960 --> 00:38:33,760
+be fine for corn Bel You Know Field
+
+712
+00:38:30,838 --> 00:38:36,119
+crops but for a lot of the specialty
+
+713
+00:38:33,760 --> 00:38:38,720
+crops we do need a finer special
+
+714
+00:38:36,119 --> 00:38:42,519
+resolution my group is also working on a
+
+715
+00:38:38,719 --> 00:38:46,239
+deep learning method to help us directly
+
+716
+00:38:42,519 --> 00:38:50,400
+sharpen the open ET 30 meter data using
+
+717
+00:38:46,239 --> 00:38:54,719
+Planet observations to get 3 meter ET
+
+718
+00:38:50,400 --> 00:38:58,559
+for the uh like the the specialty crop
+
+719
+00:38:54,719 --> 00:39:01,279
+management and we now like lot of
+
+720
+00:38:58,559 --> 00:39:03,880
+interest from different field they want
+
+721
+00:39:01,280 --> 00:39:07,240
+to look at like either the water use or
+
+722
+00:39:03,880 --> 00:39:10,280
+like plant response or in know water
+
+723
+00:39:07,239 --> 00:39:14,439
+accounting uh you can see there are new
+
+724
+00:39:10,280 --> 00:39:17,599
+ET data every day like you can see new
+
+725
+00:39:14,440 --> 00:39:22,039
+Publications every day using ET or try
+
+726
+00:39:17,599 --> 00:39:26,240
+to produce ET so with a lot of these new
+
+727
+00:39:22,039 --> 00:39:28,358
+effort how we can have a standard to
+
+728
+00:39:26,239 --> 00:39:31,039
+evaluate these
+
+729
+00:39:28,358 --> 00:39:33,759
+uh new data right like if I change just
+
+730
+00:39:31,039 --> 00:39:37,239
+change a model appli to a area can I
+
+731
+00:39:33,760 --> 00:39:40,760
+claim it as a new model or whether uh my
+
+732
+00:39:37,239 --> 00:39:44,078
+evaluation method is a standard method
+
+733
+00:39:40,760 --> 00:39:47,079
+there is no standard now so what I'm
+
+734
+00:39:44,079 --> 00:39:50,359
+currently doing is I'm leading a group
+
+735
+00:39:47,079 --> 00:39:53,880
+of scientists uh internationally from
+
+736
+00:39:50,358 --> 00:39:56,519
+different country Australia China Europe
+
+737
+00:39:53,880 --> 00:40:00,119
+um that we are trying to understand
+
+738
+00:39:56,519 --> 00:40:03,960
+what's the current stat um status of the
+
+739
+00:40:00,119 --> 00:40:07,800
+silite based uo Transportation product
+
+740
+00:40:03,960 --> 00:40:10,679
+and uh through this agu talk we will
+
+741
+00:40:07,800 --> 00:40:12,760
+further uh establish a working group
+
+742
+00:40:10,679 --> 00:40:15,719
+that will work together to get a
+
+743
+00:40:12,760 --> 00:40:20,040
+protocol that to help the entire remote
+
+744
+00:40:15,719 --> 00:40:24,519
+sensing Community to get a standard for
+
+745
+00:40:20,039 --> 00:40:26,920
+the ET data evaluation so with this I'm
+
+746
+00:40:24,519 --> 00:40:29,039
+going to conclude my talk so it's
+
+747
+00:40:26,920 --> 00:40:32,440
+basically the take-home message is we
+
+748
+00:40:29,039 --> 00:40:35,279
+spend a lot of effort to make this as a
+
+749
+00:40:32,440 --> 00:40:39,000
+product open to the public especially
+
+750
+00:40:35,280 --> 00:40:41,680
+open to the users and then I like this
+
+751
+00:40:39,000 --> 00:40:44,079
+data can be used for a lot of
+
+752
+00:40:41,679 --> 00:40:47,519
+applications water accounting plan
+
+753
+00:40:44,079 --> 00:40:50,440
+stress detection on Farm U
+
+754
+00:40:47,519 --> 00:40:53,639
+management and we are still working on a
+
+755
+00:40:50,440 --> 00:40:56,280
+lot more of this uh exciting
+
+756
+00:40:53,639 --> 00:40:58,279
+applications and I also want to thank my
+
+757
+00:40:56,280 --> 00:41:02,519
+founding agency
+
+758
+00:40:58,280 --> 00:41:02,519
+uh for all these work thank you so
+
+759
+00:41:04,838 --> 00:41:12,039
+much we have time
+
+760
+00:41:07,679 --> 00:41:14,279
+for I yeah johanes we do have time for
+
+761
+00:41:12,039 --> 00:41:16,559
+questions thank you so much very
+
+762
+00:41:14,280 --> 00:41:20,839
+impressive I'm really excited about this
+
+763
+00:41:16,559 --> 00:41:24,119
+um I a question about data ownership you
+
+764
+00:41:20,838 --> 00:41:27,639
+mentioned aspiration is and evidence for
+
+765
+00:41:24,119 --> 00:41:29,599
+it that it's open accessible but who the
+
+766
+00:41:27,639 --> 00:41:33,519
+data you're working with Google Earth
+
+767
+00:41:29,599 --> 00:41:35,760
+Google probably know uses the data for
+
+768
+00:41:33,519 --> 00:41:37,039
+all kinds of things and maybe claims
+
+769
+00:41:35,760 --> 00:41:39,000
+some ownership so what are the
+
+770
+00:41:37,039 --> 00:41:41,279
+conversations about that not that I
+
+771
+00:41:39,000 --> 00:41:44,199
+trust actually governments any better
+
+772
+00:41:41,280 --> 00:41:47,880
+especially with past potentially coming
+
+773
+00:41:44,199 --> 00:41:50,559
+upon us next week but um no who who can
+
+774
+00:41:47,880 --> 00:41:53,400
+be trusted with these very important
+
+775
+00:41:50,559 --> 00:41:55,519
+public goods and how do you and your
+
+776
+00:41:53,400 --> 00:41:57,880
+colleagues are talking about ownership
+
+777
+00:41:55,519 --> 00:42:00,159
+of these data for the future
+
+778
+00:41:57,880 --> 00:42:02,519
+oh thank you so much for this important
+
+779
+00:42:00,159 --> 00:42:06,679
+question the question is about ownership
+
+780
+00:42:02,519 --> 00:42:10,079
+of the uh I would say open ET data so um
+
+781
+00:42:06,679 --> 00:42:14,000
+we do have a lot of discussion um and uh
+
+782
+00:42:10,079 --> 00:42:17,440
+what we actually have now is we uh
+
+783
+00:42:14,000 --> 00:42:21,599
+trying to define a better um
+
+784
+00:42:17,440 --> 00:42:24,159
+intelligence property um certificate for
+
+785
+00:42:21,599 --> 00:42:26,800
+this data so there is like a more
+
+786
+00:42:24,159 --> 00:42:30,759
+computer science field there are a bunch
+
+787
+00:42:26,800 --> 00:42:33,359
+of the is IP certificate we can use and
+
+788
+00:42:30,760 --> 00:42:36,680
+later we choose one of them there's a
+
+789
+00:42:33,358 --> 00:42:38,960
+number I cannot recall it uh so there
+
+790
+00:42:36,679 --> 00:42:42,639
+there we choose one of that so that data
+
+791
+00:42:38,960 --> 00:42:45,599
+is open and people can uh grab it modify
+
+792
+00:42:42,639 --> 00:42:49,239
+it which I don't know whether we want to
+
+793
+00:42:45,599 --> 00:42:54,000
+see that um but for further uh actually
+
+794
+00:42:49,239 --> 00:42:56,838
+the open group we formed a nonprofit uh
+
+795
+00:42:54,000 --> 00:43:01,599
+organization um I think two two years
+
+796
+00:42:56,838 --> 00:43:04,799
+ago so we are um having a a nonprofit
+
+797
+00:43:01,599 --> 00:43:09,039
+organization that we have board member
+
+798
+00:43:04,800 --> 00:43:13,920
+uh we also are uh we have the capability
+
+799
+00:43:09,039 --> 00:43:17,318
+to respond to uh allocate the founding
+
+800
+00:43:13,920 --> 00:43:20,200
+between different uh science teams and
+
+801
+00:43:17,318 --> 00:43:22,358
+how the Google engine is involved I
+
+802
+00:43:20,199 --> 00:43:25,719
+don't think they really claim the
+
+803
+00:43:22,358 --> 00:43:29,078
+ownership but uh I do see the the tricky
+
+804
+00:43:25,719 --> 00:43:32,480
+part because among our like a in group
+
+805
+00:43:29,079 --> 00:43:35,079
+discussion we discussed a lot about when
+
+806
+00:43:32,480 --> 00:43:39,760
+Google's engine is going to start to
+
+807
+00:43:35,079 --> 00:43:41,119
+charge us and how much it will charge us
+
+808
+00:43:39,760 --> 00:43:45,040
+and this
+
+809
+00:43:41,119 --> 00:43:48,760
+is Hospital yeah and all the discussion
+
+810
+00:43:45,039 --> 00:43:48,759
+about open AI is is very
+
+811
+00:43:52,280 --> 00:43:59,839
+similar yes yeah but um well so far
+
+812
+00:43:56,199 --> 00:44:03,719
+Google engine has been supportive but uh
+
+813
+00:43:59,838 --> 00:44:04,799
+we had some discussions about that yeah
+
+814
+00:44:03,719 --> 00:44:08,159
+thank
+
+815
+00:44:04,800 --> 00:44:08,160
+you other
+
+816
+00:44:08,559 --> 00:44:12,800
+questions question so it seems like most
+
+817
+00:44:10,960 --> 00:44:16,159
+of the applications have been focused on
+
+818
+00:44:12,800 --> 00:44:18,880
+sort of water stress in the crops yeah
+
+819
+00:44:16,159 --> 00:44:20,399
+and in Upstate New York we often might
+
+820
+00:44:18,880 --> 00:44:24,079
+have the other problem where we have too
+
+821
+00:44:20,400 --> 00:44:28,039
+much water I'm specifically think about
+
+822
+00:44:24,079 --> 00:44:30,559
+soil and nitrous oxide loss and I wonder
+
+823
+00:44:28,039 --> 00:44:32,838
+if this tool could be useful for making
+
+824
+00:44:30,559 --> 00:44:35,240
+like field level predictions as to sort
+
+825
+00:44:32,838 --> 00:44:37,239
+of timing a fertilizer application or
+
+826
+00:44:35,239 --> 00:44:40,118
+spatial distribution of fertilizer to
+
+827
+00:44:37,239 --> 00:44:42,879
+try to minimize into to find wet spots
+
+828
+00:44:40,119 --> 00:44:46,079
+and then avoid those wet spots or wet t
+
+829
+00:44:42,880 --> 00:44:49,400
+yes for sure I think this will be a very
+
+830
+00:44:46,079 --> 00:44:51,318
+uh interesting application and actually
+
+831
+00:44:49,400 --> 00:44:54,240
+uh like through the last two days
+
+832
+00:44:51,318 --> 00:44:57,199
+workshop with gack team we were thinking
+
+833
+00:44:54,239 --> 00:45:00,759
+about because for the vineard here you
+
+834
+00:44:57,199 --> 00:45:04,358
+know not just like field crops wyard um
+
+835
+00:45:00,760 --> 00:45:08,119
+Apple alard they all have this uh like
+
+836
+00:45:04,358 --> 00:45:10,920
+more water issue um so uh we were
+
+837
+00:45:08,119 --> 00:45:15,480
+thinking about to explore the data to
+
+838
+00:45:10,920 --> 00:45:19,000
+see whether the higher ET could be
+
+839
+00:45:15,480 --> 00:45:22,199
+related to some of these uh like what
+
+840
+00:45:19,000 --> 00:45:26,079
+you talked about um the the unarm
+
+841
+00:45:22,199 --> 00:45:28,399
+management and could be link with the
+
+842
+00:45:26,079 --> 00:45:32,400
+past and dis
+
+843
+00:45:28,400 --> 00:45:35,440
+Yep this will be I I think something new
+
+844
+00:45:32,400 --> 00:45:38,639
+to to the ET Community to
+
+845
+00:45:35,440 --> 00:45:38,639
+explore thank
+
+846
+00:45:38,960 --> 00:45:44,519
+you this has been a production of
+
+847
+00:45:41,599 --> 00:45:47,519
+Cornell University on the web at
+
+848
+00:45:44,519 --> 00:45:47,519
+cornell.edu
+

@@ -1,0 +1,3852 @@
+1
+00:00:02,990 --> 00:00:06,859
+yeah so similar to last week's speaker
+
+2
+00:00:05,330 --> 00:00:09,280
+the last time I was in this room I was
+
+3
+00:00:06,859 --> 00:00:11,539
+actually defending my PhD dissertation
+
+4
+00:00:09,279 --> 00:00:13,518
+and then I was talking of course about
+
+5
+00:00:11,539 --> 00:00:17,599
+mapping in a rabid obtuse and today I'll
+
+6
+00:00:13,519 --> 00:00:19,879
+be talking about mapping in tomato he
+
+7
+00:00:17,599 --> 00:00:22,160
+full disclosure I'm not actually a plant
+
+8
+00:00:19,879 --> 00:00:24,079
+breeder I'm a bioinformatician but a lot
+
+9
+00:00:22,160 --> 00:00:25,789
+of the projects that I work on have
+
+10
+00:00:24,079 --> 00:00:27,949
+direct applications to useful
+
+11
+00:00:25,789 --> 00:00:30,500
+agricultural traits so hopefully that
+
+12
+00:00:27,949 --> 00:00:32,479
+counts and then also Joyce mentioned I
+
+13
+00:00:30,500 --> 00:00:35,268
+have a little bit of an heirloom tomato
+
+14
+00:00:32,479 --> 00:00:37,128
+obsession so here's my rainbow of
+
+15
+00:00:35,268 --> 00:00:38,988
+tomatoes from my garden two years ago
+
+16
+00:00:37,128 --> 00:00:41,689
+last summer wasn't so great because it's
+
+17
+00:00:38,988 --> 00:00:44,119
+a bit wet and various disease problems
+
+18
+00:00:41,689 --> 00:00:47,839
+occurred but two years ago it was great
+
+19
+00:00:44,119 --> 00:00:51,719
+so these are my babies
+
+20
+00:00:47,840 --> 00:00:55,920
+so I'll be talking about tomato and also
+
+21
+00:00:51,719 --> 00:00:57,929
+closely related species today so in this
+
+22
+00:00:55,920 --> 00:00:59,609
+phylogeny you can see what I'm
+
+23
+00:00:57,929 --> 00:01:02,340
+considering members of the tomato clade
+
+24
+00:00:59,609 --> 00:01:05,069
+so there are 13 species in the tomato
+
+25
+00:01:02,340 --> 00:01:07,350
+clade you can see that one of them is
+
+26
+00:01:05,069 --> 00:01:09,599
+actually missing here but I'll be
+
+27
+00:01:07,349 --> 00:01:12,089
+focusing on these today and there's also
+
+28
+00:01:09,599 --> 00:01:13,890
+solanum lycopersicum IDs which you can
+
+29
+00:01:12,090 --> 00:01:16,049
+see at the bottom of the tree so that
+
+30
+00:01:13,890 --> 00:01:17,670
+that is also in other species we'll be
+
+31
+00:01:16,049 --> 00:01:21,060
+talking about today which is an
+
+32
+00:01:17,670 --> 00:01:23,040
+out-group so the nice thing about these
+
+33
+00:01:21,060 --> 00:01:26,640
+is that they can actually be crossed
+
+34
+00:01:23,040 --> 00:01:28,290
+with varying levels of difficulty so the
+
+35
+00:01:26,640 --> 00:01:30,390
+ones towards the bottom of the tree tend
+
+36
+00:01:28,290 --> 00:01:32,640
+to have selfing at that ability and also
+
+37
+00:01:30,390 --> 00:01:34,290
+unilateral and compatibility which can
+
+38
+00:01:32,640 --> 00:01:37,500
+make it a bit more difficult to cross
+
+39
+00:01:34,290 --> 00:01:39,868
+those two cultivated tomato ones towards
+
+40
+00:01:37,500 --> 00:01:42,409
+the top of the trees towards the top of
+
+41
+00:01:39,868 --> 00:01:47,519
+the tree are tend to be self compatible
+
+42
+00:01:42,409 --> 00:01:50,219
+these are mainly found in western South
+
+43
+00:01:47,519 --> 00:01:53,609
+America so Peru and Ecuador as you can
+
+44
+00:01:50,219 --> 00:01:56,000
+see a map here see if I can get this
+
+45
+00:01:53,609 --> 00:01:56,000
+thing to work
+
+46
+00:01:56,719 --> 00:02:01,859
+maybe this there we go so here and
+
+47
+00:02:00,540 --> 00:02:04,050
+there's also two species that are found
+
+48
+00:02:01,859 --> 00:02:06,209
+in the Galapagos Islands this is a
+
+49
+00:02:04,049 --> 00:02:08,639
+little bit blurry go up again see and
+
+50
+00:02:06,209 --> 00:02:16,439
+she's mania which are found solely in
+
+51
+00:02:08,639 --> 00:02:18,298
+the Galapagos Islands they look kind of
+
+52
+00:02:16,439 --> 00:02:19,919
+similar the different wild species of
+
+53
+00:02:18,299 --> 00:02:23,549
+tomato you can see some of the diversity
+
+54
+00:02:19,919 --> 00:02:25,439
+here so have work ideas tends to have a
+
+55
+00:02:23,549 --> 00:02:28,670
+lot of trichomes so it looks kind of
+
+56
+00:02:25,439 --> 00:02:31,349
+fuzzy you can see in the middle here
+
+57
+00:02:28,669 --> 00:02:33,059
+there are some seedlings that we were
+
+58
+00:02:31,349 --> 00:02:34,889
+growing in our greenhouse at the bottom
+
+59
+00:02:33,060 --> 00:02:37,739
+you can see however Kai Dee's the
+
+60
+00:02:34,889 --> 00:02:39,689
+reference tomato is something like a
+
+61
+00:02:37,739 --> 00:02:43,500
+first-come Hines so that's growing in
+
+62
+00:02:39,689 --> 00:02:45,359
+the middle of this tray here I don't
+
+63
+00:02:43,500 --> 00:02:47,900
+think this is really working and then at
+
+64
+00:02:45,360 --> 00:02:49,890
+the top we have pimping Ella folium so
+
+65
+00:02:47,900 --> 00:02:53,549
+pimping Ella folium is pretty closely
+
+66
+00:02:49,889 --> 00:02:55,769
+related to the cultivated tomato you can
+
+67
+00:02:53,549 --> 00:02:57,719
+see there's variation in fruit color and
+
+68
+00:02:55,770 --> 00:03:00,240
+size so the wild species tend to have
+
+69
+00:02:57,719 --> 00:03:01,120
+smaller fruits and they also tend to
+
+70
+00:03:00,240 --> 00:03:03,040
+ripen too
+
+71
+00:03:01,120 --> 00:03:05,860
+so they never actually changed to Red's
+
+72
+00:03:03,039 --> 00:03:08,229
+like your typical garden tomato there's
+
+73
+00:03:05,860 --> 00:03:11,110
+also the two species from the Galapagos
+
+74
+00:03:08,229 --> 00:03:14,469
+Islands cheese mania and go up again see
+
+75
+00:03:11,110 --> 00:03:19,269
+that are orange fruited so that's kind
+
+76
+00:03:14,469 --> 00:03:22,419
+of unique and you see here a number of
+
+77
+00:03:19,269 --> 00:03:27,009
+fruit that we got from Roger at T GRC so
+
+78
+00:03:22,419 --> 00:03:29,109
+he sent those and from there fruits that
+
+79
+00:03:27,009 --> 00:03:30,669
+they grow there so that was that was
+
+80
+00:03:29,110 --> 00:03:35,310
+really nice for one of our experiments
+
+81
+00:03:30,669 --> 00:03:35,309
+and you can see the diversity in color
+
+82
+00:03:35,800 --> 00:03:41,150
+here's some of our wild species growing
+
+83
+00:03:38,120 --> 00:03:43,789
+in the greenhouse so you can see that
+
+84
+00:03:41,150 --> 00:03:46,460
+they're indeterminate so they get quite
+
+85
+00:03:43,789 --> 00:03:48,679
+large they have this sprawling phenotype
+
+86
+00:03:46,460 --> 00:03:50,750
+as opposed to some of your more common
+
+87
+00:03:48,680 --> 00:03:52,909
+Gulf cultivated tomatoes which are
+
+88
+00:03:50,750 --> 00:04:00,650
+determinate and and don't get nearly as
+
+89
+00:03:52,909 --> 00:04:02,780
+tall so as I said you can cross the wild
+
+90
+00:04:00,650 --> 00:04:05,680
+species with cultivated tomato and this
+
+91
+00:04:02,780 --> 00:04:07,879
+turns out to be really useful because
+
+92
+00:04:05,680 --> 00:04:10,250
+cultivated tomato has undergone three
+
+93
+00:04:07,879 --> 00:04:11,389
+bottlenecks so there was the original
+
+94
+00:04:10,250 --> 00:04:14,479
+bottleneck that happened during
+
+95
+00:04:11,389 --> 00:04:17,060
+domestication and then the second
+
+96
+00:04:14,479 --> 00:04:19,488
+bottleneck happens when they moved to
+
+97
+00:04:17,060 --> 00:04:21,920
+when they were transported to Europe and
+
+98
+00:04:19,488 --> 00:04:24,019
+then a third bottleneck occurred and
+
+99
+00:04:21,920 --> 00:04:27,050
+they were transported back to the US for
+
+100
+00:04:24,019 --> 00:04:30,409
+breeding there so it's estimated
+
+101
+00:04:27,050 --> 00:04:33,829
+something like five percent of the
+
+102
+00:04:30,410 --> 00:04:35,689
+diversity so there's a huge loss of
+
+103
+00:04:33,829 --> 00:04:37,699
+diversity in the cultivated tomato and
+
+104
+00:04:35,689 --> 00:04:40,040
+so what's nice is you can take the web
+
+105
+00:04:37,699 --> 00:04:42,019
+species which which have a lot more
+
+106
+00:04:40,040 --> 00:04:44,300
+diversity and interesting traits and
+
+107
+00:04:42,019 --> 00:04:47,870
+then you can cross these two to the
+
+108
+00:04:44,300 --> 00:04:50,960
+cultivated tomato and you might think so
+
+109
+00:04:47,870 --> 00:04:52,370
+here's some more of my Tomatoes you
+
+110
+00:04:50,959 --> 00:04:53,810
+might think that they're you know
+
+111
+00:04:52,370 --> 00:04:57,199
+looking at that fruit shape that there's
+
+112
+00:04:53,810 --> 00:04:59,030
+actually quite a diversity of phenotypes
+
+113
+00:04:57,199 --> 00:05:03,620
+there but it's actually controlled by a
+
+114
+00:04:59,029 --> 00:05:05,359
+few low sigh so few genes need to sort
+
+115
+00:05:03,620 --> 00:05:10,790
+of this diversity of phenotypes that you
+
+116
+00:05:05,360 --> 00:05:14,000
+see here so the allowed species have
+
+117
+00:05:10,790 --> 00:05:15,650
+been used and breeding for a number of
+
+118
+00:05:14,000 --> 00:05:18,649
+things so this has been happening for
+
+119
+00:05:15,649 --> 00:05:20,829
+the last several decades so they can be
+
+120
+00:05:18,649 --> 00:05:23,359
+used in breeding for disease resistance
+
+121
+00:05:20,829 --> 00:05:26,389
+so you can see one of our collaborators
+
+122
+00:05:23,360 --> 00:05:28,790
+on a project is interested in tomato
+
+123
+00:05:26,389 --> 00:05:32,689
+yellow leaf virus so he has a cultivar
+
+124
+00:05:28,790 --> 00:05:34,370
+that is resistant to that so you can see
+
+125
+00:05:32,689 --> 00:05:36,410
+in the bottom picture on this line is
+
+126
+00:05:34,370 --> 00:05:37,129
+called gh 13 the plants in the back are
+
+127
+00:05:36,410 --> 00:05:39,169
+nice and healthy
+
+128
+00:05:37,129 --> 00:05:42,788
+the resistance and the ones in the
+
+129
+00:05:39,168 --> 00:05:45,439
+foreground are not resistant to curl and
+
+130
+00:05:42,788 --> 00:05:47,990
+today also be talking about bacterial
+
+131
+00:05:45,439 --> 00:05:49,219
+spec so that's another trait that wild
+
+132
+00:05:47,990 --> 00:05:53,300
+species have been used
+
+133
+00:05:49,220 --> 00:05:55,610
+to increase resistance to that problem
+
+134
+00:05:53,300 --> 00:05:58,370
+the weld species can also be used in
+
+135
+00:05:55,610 --> 00:06:00,080
+quality and nutrition and then some
+
+136
+00:05:58,370 --> 00:06:06,410
+other things like leaf morphology and
+
+137
+00:06:00,079 --> 00:06:08,269
+flowering time so today I'll be talking
+
+138
+00:06:06,410 --> 00:06:09,920
+about some different projects that we've
+
+139
+00:06:08,269 --> 00:06:12,229
+had and the common theme and all of
+
+140
+00:06:09,920 --> 00:06:15,500
+these is using bioinformatics approaches
+
+141
+00:06:12,230 --> 00:06:17,750
+to map genes of interest and tomatoes
+
+142
+00:06:15,500 --> 00:06:20,750
+and their wild relatives so the first
+
+143
+00:06:17,750 --> 00:06:23,720
+thing I'll talk about is defining
+
+144
+00:06:20,750 --> 00:06:26,720
+introgression boundaries and this
+
+145
+00:06:23,720 --> 00:06:28,400
+started originally is something else and
+
+146
+00:06:26,720 --> 00:06:32,210
+when I first came to Lucas's lab as a
+
+147
+00:06:28,399 --> 00:06:34,189
+postdoc we were handed the sequence from
+
+148
+00:06:32,209 --> 00:06:36,199
+go up against easily annum go up against
+
+149
+00:06:34,189 --> 00:06:39,139
+e so this was an interesting species
+
+150
+00:06:36,199 --> 00:06:41,389
+because like I said it came from the
+
+151
+00:06:39,139 --> 00:06:44,240
+Galapagos Island so it evolved in
+
+152
+00:06:41,389 --> 00:06:45,860
+relative isolation until recently except
+
+153
+00:06:44,240 --> 00:06:48,379
+for a couple other species that were
+
+154
+00:06:45,860 --> 00:06:51,350
+finds in the island it's very closely
+
+155
+00:06:48,379 --> 00:06:53,509
+related to like a purse to comb and most
+
+156
+00:06:51,350 --> 00:06:55,250
+of the work done at that time and even
+
+157
+00:06:53,509 --> 00:07:01,819
+now it's it's a bit unclear where it
+
+158
+00:06:55,250 --> 00:07:03,800
+falls on the tree so the go up against
+
+159
+00:07:01,819 --> 00:07:05,659
+he actually falls here with cheese mania
+
+160
+00:07:03,800 --> 00:07:08,569
+eyepin Piniella folium and lycopersicum
+
+161
+00:07:05,660 --> 00:07:11,870
+so it's a little unclear how these
+
+162
+00:07:08,569 --> 00:07:15,409
+species are related whenever you do
+
+163
+00:07:11,870 --> 00:07:17,149
+phylogeny x' so we wanted to do some
+
+164
+00:07:15,410 --> 00:07:21,080
+work to try to clarify that using the
+
+165
+00:07:17,149 --> 00:07:23,299
+genome sequence and also since we knew
+
+166
+00:07:21,079 --> 00:07:25,728
+that Heinz which is our reference genome
+
+167
+00:07:23,300 --> 00:07:27,949
+has pimping Ella folium and its
+
+168
+00:07:25,728 --> 00:07:30,918
+parentage we also wanted to figure out
+
+169
+00:07:27,949 --> 00:07:32,478
+where and the reference genome Hines we
+
+170
+00:07:30,918 --> 00:07:35,329
+could find introgression x' from pimping
+
+171
+00:07:32,478 --> 00:07:38,029
+ella folium so in order to do that we
+
+172
+00:07:35,329 --> 00:07:39,918
+selected an old heirloom line yellow
+
+173
+00:07:38,029 --> 00:07:42,559
+pair so you can see another one of my
+
+174
+00:07:39,918 --> 00:07:44,478
+garden pictures there so this is an old
+
+175
+00:07:42,560 --> 00:07:46,250
+heirloom line that existed prior to
+
+176
+00:07:44,478 --> 00:07:48,560
+modern breeding programs so it should be
+
+177
+00:07:46,250 --> 00:07:52,149
+free of introgression so this was our
+
+178
+00:07:48,560 --> 00:07:52,149
+control basically
+
+179
+00:07:52,649 --> 00:07:57,719
+to do this we devise a pipeline that's
+
+180
+00:07:55,350 --> 00:08:00,720
+that's adapted from wait a tall paper
+
+181
+00:07:57,720 --> 00:08:03,900
+that came out in 2009 so we had five
+
+182
+00:08:00,720 --> 00:08:05,970
+different species that we looked at so
+
+183
+00:08:03,899 --> 00:08:08,698
+we had the reference signs genome that
+
+184
+00:08:05,970 --> 00:08:11,759
+we used to map all of our resequencing
+
+185
+00:08:08,699 --> 00:08:14,310
+data on - we had the go up again see
+
+186
+00:08:11,759 --> 00:08:16,620
+pimping Ella folium data that came from
+
+187
+00:08:14,310 --> 00:08:18,300
+the tomato genome project so that was
+
+188
+00:08:16,620 --> 00:08:20,280
+publicly available
+
+189
+00:08:18,300 --> 00:08:23,160
+we had our yellow peri sequencing data
+
+190
+00:08:20,279 --> 00:08:25,829
+and then of course potato sequence is
+
+191
+00:08:23,160 --> 00:08:28,889
+available at the time so we mapped all
+
+192
+00:08:25,829 --> 00:08:32,879
+these to Heinz the resequencing data -
+
+193
+00:08:28,889 --> 00:08:34,918
+Heinz and then we created genomes from
+
+194
+00:08:32,879 --> 00:08:37,519
+these so we substituted in the snips in
+
+195
+00:08:34,918 --> 00:08:40,769
+any place we had a gap we mask those out
+
+196
+00:08:37,519 --> 00:08:42,269
+we also then masked with repeat masker
+
+197
+00:08:40,769 --> 00:08:44,098
+so we could get rid of any repetitive
+
+198
+00:08:42,269 --> 00:08:46,919
+regions that we couldn't be really sure
+
+199
+00:08:44,099 --> 00:08:48,750
+where they mapped to Heinz then we did
+
+200
+00:08:46,919 --> 00:08:51,778
+whole genome alignments with these five
+
+201
+00:08:48,750 --> 00:08:52,799
+species we ran helps you tried to
+
+202
+00:08:51,778 --> 00:08:56,850
+delimit where the phylogenetic
+
+203
+00:08:52,799 --> 00:08:59,039
+breakpoints were occurring along along
+
+204
+00:08:56,850 --> 00:09:01,589
+the alignments then each one of these
+
+205
+00:08:59,039 --> 00:09:04,740
+partitions we ran this Derby is on to
+
+206
+00:09:01,589 --> 00:09:08,010
+determine a tree for that partition and
+
+207
+00:09:04,740 --> 00:09:09,690
+then all these trees were mapped back on
+
+208
+00:09:08,009 --> 00:09:11,730
+to the Hines genomes that we were able
+
+209
+00:09:09,690 --> 00:09:16,100
+to see where a change in topology
+
+210
+00:09:11,730 --> 00:09:19,200
+occurred along the chromosome in
+
+211
+00:09:16,100 --> 00:09:21,750
+conjunction with that we also plotted
+
+212
+00:09:19,200 --> 00:09:24,089
+the density of snips across the Hines
+
+213
+00:09:21,750 --> 00:09:26,549
+genome so this was resequencing data so
+
+214
+00:09:24,089 --> 00:09:28,709
+we used a standard snip calling pipeline
+
+215
+00:09:26,549 --> 00:09:31,349
+map the data called snips and then we
+
+216
+00:09:28,708 --> 00:09:34,049
+put these into bins of ten kilobases and
+
+217
+00:09:31,350 --> 00:09:36,540
+then we plotted the density of snips
+
+218
+00:09:34,049 --> 00:09:39,149
+along the chromosome so here you can see
+
+219
+00:09:36,539 --> 00:09:41,370
+at the at the top of the diagram or at
+
+220
+00:09:39,149 --> 00:09:44,309
+the picture we have on yellow pear and
+
+221
+00:09:41,370 --> 00:09:47,159
+then the the second species is go up
+
+222
+00:09:44,309 --> 00:09:49,500
+again see and the third is folium so if
+
+223
+00:09:47,159 --> 00:09:52,980
+you look at yellow pear where where that
+
+224
+00:09:49,500 --> 00:09:55,169
+red circle oval is you see there's sort
+
+225
+00:09:52,980 --> 00:09:57,720
+of this little peak and the snip density
+
+226
+00:09:55,169 --> 00:10:02,629
+and then if you come down to the last
+
+227
+00:09:57,720 --> 00:10:02,629
+plot you see that there's a reduction in
+
+228
+00:10:02,720 --> 00:10:06,060
+so that's a putative introgression
+
+229
+00:10:05,490 --> 00:10:08,370
+and
+
+230
+00:10:06,059 --> 00:10:10,439
+we took that location and then also used
+
+231
+00:10:08,370 --> 00:10:11,549
+our data from the whole genome plots we
+
+232
+00:10:10,440 --> 00:10:14,730
+found that there was a change in
+
+233
+00:10:11,549 --> 00:10:18,750
+topology so you would expect Heinz and
+
+234
+00:10:14,730 --> 00:10:20,250
+yellow pair to be clustered together in
+
+235
+00:10:18,750 --> 00:10:22,559
+the tree since they're actually both
+
+236
+00:10:20,250 --> 00:10:25,200
+from lycopersicum so that's sort of the
+
+237
+00:10:22,559 --> 00:10:27,029
+expected topology if you move on to
+
+238
+00:10:25,200 --> 00:10:28,920
+topology too you see that it's flipped
+
+239
+00:10:27,029 --> 00:10:32,399
+so now Heinz is actually closer to pin
+
+240
+00:10:28,919 --> 00:10:34,500
+Piniella folium so this is indicative of
+
+241
+00:10:32,399 --> 00:10:36,959
+an inch regression and then when you go
+
+242
+00:10:34,500 --> 00:10:39,659
+outside that little blip you see it goes
+
+243
+00:10:36,960 --> 00:10:41,700
+back to the original topology so by
+
+244
+00:10:39,659 --> 00:10:43,949
+using this method we were able to find
+
+245
+00:10:41,700 --> 00:10:45,540
+four regions in the Heinz reference
+
+246
+00:10:43,950 --> 00:10:48,360
+genome where there introgression x'
+
+247
+00:10:45,539 --> 00:10:50,639
+have occurred so one is on chromosome
+
+248
+00:10:48,360 --> 00:10:53,610
+four we're not really sure what that is
+
+249
+00:10:50,639 --> 00:10:55,350
+it might just have been happenstance we
+
+250
+00:10:53,610 --> 00:10:57,779
+don't know of any known resistance genes
+
+251
+00:10:55,350 --> 00:11:01,320
+that are in that region and chromosome 9
+
+252
+00:10:57,779 --> 00:11:04,019
+we have verticillium genes so we were
+
+253
+00:11:01,320 --> 00:11:05,970
+able to find introgression from pin
+
+254
+00:11:04,019 --> 00:11:07,889
+panella folia that in Piniella folium
+
+255
+00:11:05,970 --> 00:11:12,240
+that introduced those genes into Heinz
+
+256
+00:11:07,889 --> 00:11:14,460
+and then we have the I gene for Fusarium
+
+257
+00:11:12,240 --> 00:11:16,889
+wilt resistance on chromosome 11 so we
+
+258
+00:11:14,460 --> 00:11:19,440
+were able to delimit the introgression
+
+259
+00:11:16,889 --> 00:11:21,809
+x' for each of these genes and Heinz
+
+260
+00:11:19,440 --> 00:11:24,030
+which now is really useful because Heinz
+
+261
+00:11:21,809 --> 00:11:26,189
+is our reference for other things that
+
+262
+00:11:24,029 --> 00:11:27,929
+we're going to do so we want to be able
+
+263
+00:11:26,190 --> 00:11:29,250
+to rule out these introgression x' that
+
+264
+00:11:27,929 --> 00:11:31,709
+are occurring in our in our reference
+
+265
+00:11:29,250 --> 00:11:33,720
+genome so that we we don't think that
+
+266
+00:11:31,710 --> 00:11:35,280
+they're something of interest in the
+
+267
+00:11:33,720 --> 00:11:43,050
+population that were that we're actually
+
+268
+00:11:35,279 --> 00:11:45,899
+looking at okay so now I'll talk a bit
+
+269
+00:11:43,049 --> 00:11:47,579
+about napping a single gene I'm using a
+
+270
+00:11:45,899 --> 00:11:49,159
+mapping mapping population with the
+
+271
+00:11:47,580 --> 00:11:52,470
+close relative the Heinz
+
+272
+00:11:49,159 --> 00:11:55,620
+so this was some some work done by Sarah
+
+273
+00:11:52,470 --> 00:11:57,629
+Hines and Greg Martin's lab and it was
+
+274
+00:11:55,620 --> 00:12:00,000
+really fortuitous because we had just
+
+275
+00:11:57,629 --> 00:12:01,559
+sequenced yellow pair and Sarah shows up
+
+276
+00:12:00,000 --> 00:12:04,200
+in my office and says you just found
+
+277
+00:12:01,559 --> 00:12:06,299
+this interesting phenotype with yellow
+
+278
+00:12:04,200 --> 00:12:09,540
+pair and I heard you have the sequence
+
+279
+00:12:06,299 --> 00:12:11,429
+so it got off to a really good start and
+
+280
+00:12:09,539 --> 00:12:13,919
+so the phenotype is that yellow pair
+
+281
+00:12:11,429 --> 00:12:15,599
+actually has reduced resistance to
+
+282
+00:12:13,919 --> 00:12:17,549
+bacterial infection which you can see
+
+283
+00:12:15,600 --> 00:12:19,740
+here on the leaf on the right you can
+
+284
+00:12:17,549 --> 00:12:24,019
+see much more symptoms of
+
+285
+00:12:19,740 --> 00:12:26,220
+then on the on the leaves on the left so
+
+286
+00:12:24,019 --> 00:12:29,179
+this is great because we had the
+
+287
+00:12:26,220 --> 00:12:31,440
+sequence so we can go ahead and try to
+
+288
+00:12:29,179 --> 00:12:37,709
+find some candidate genes for this
+
+289
+00:12:31,440 --> 00:12:39,210
+phenotype and just to remind you again
+
+290
+00:12:37,710 --> 00:12:41,639
+this tree is really blurry but the two
+
+291
+00:12:39,210 --> 00:12:43,710
+arrows are pointing to like a Persico
+
+292
+00:12:41,639 --> 00:12:46,319
+and pin Vennela folium so these are two
+
+293
+00:12:43,710 --> 00:12:48,180
+very closely related species and these
+
+294
+00:12:46,320 --> 00:12:51,660
+are the two species that were used in
+
+295
+00:12:48,179 --> 00:12:54,299
+the cross so le 1589 is pimping ella
+
+296
+00:12:51,659 --> 00:12:55,500
+folium and that is the same accession
+
+297
+00:12:54,299 --> 00:12:58,559
+that was used in the tomato genome
+
+298
+00:12:55,500 --> 00:13:00,029
+project so we had C punts for that we
+
+299
+00:12:58,559 --> 00:13:02,879
+had the yellow pair from our previous
+
+300
+00:13:00,029 --> 00:13:05,399
+work and so Sarah cross these two to
+
+301
+00:13:02,879 --> 00:13:08,789
+develop the mapping population and then
+
+302
+00:13:05,399 --> 00:13:11,129
+she took all the susceptible she took a
+
+303
+00:13:08,789 --> 00:13:16,079
+batch of susceptible plants which we use
+
+304
+00:13:11,129 --> 00:13:19,350
+for the next step of the analysis this
+
+305
+00:13:16,080 --> 00:13:23,759
+was our overview of the pipeline that we
+
+306
+00:13:19,350 --> 00:13:25,500
+use to identify the gene so the first
+
+307
+00:13:23,759 --> 00:13:27,779
+thing was to take those susceptible
+
+308
+00:13:25,500 --> 00:13:31,470
+plants so Sarah put them in two batches
+
+309
+00:13:27,779 --> 00:13:33,929
+of 13 plants and three pools so those
+
+310
+00:13:31,470 --> 00:13:37,200
+were then sequenced on one lane of
+
+311
+00:13:33,929 --> 00:13:39,179
+aluminum and those were mapped onto the
+
+312
+00:13:37,200 --> 00:13:41,400
+yellow pear genome so from her previous
+
+313
+00:13:39,179 --> 00:13:43,109
+work and they go up against e project we
+
+314
+00:13:41,399 --> 00:13:47,399
+already had a yellow pear genome so we
+
+315
+00:13:43,110 --> 00:13:49,950
+mapped these reads from from her samples
+
+316
+00:13:47,399 --> 00:13:52,500
+onto yellow pear and then we called
+
+317
+00:13:49,950 --> 00:13:54,810
+snips so whenever we call snips the
+
+318
+00:13:52,500 --> 00:13:57,179
+snips that we find should be coming from
+
+319
+00:13:54,809 --> 00:13:59,129
+Pimpin ella folium so they should be
+
+320
+00:13:57,179 --> 00:14:01,589
+pimpin ella folium and then we plotted
+
+321
+00:13:59,129 --> 00:14:04,799
+these the frequency of these across the
+
+322
+00:14:01,590 --> 00:14:06,690
+chromosome and then once we had a region
+
+323
+00:14:04,799 --> 00:14:11,579
+of interest then we went in to see what
+
+324
+00:14:06,690 --> 00:14:14,430
+actual genes were there so this is from
+
+325
+00:14:11,580 --> 00:14:17,160
+her paper and that's what the plotting
+
+326
+00:14:14,429 --> 00:14:18,809
+of the frequency look like from pimping
+
+327
+00:14:17,159 --> 00:14:22,049
+ella folium as we go across the
+
+328
+00:14:18,809 --> 00:14:23,419
+chromosomes and if you look at try to
+
+329
+00:14:22,049 --> 00:14:26,789
+use this thing again there we go
+
+330
+00:14:23,419 --> 00:14:29,909
+chromosome four which is great
+
+331
+00:14:26,789 --> 00:14:31,679
+where my red thought was briefly you'll
+
+332
+00:14:29,909 --> 00:14:33,778
+see that there is a reduced frequency of
+
+333
+00:14:31,679 --> 00:14:37,588
+pimping ella pimpin out for you
+
+334
+00:14:33,778 --> 00:14:39,899
+Oh Liam snip in the dense it's frequency
+
+335
+00:14:37,589 --> 00:14:42,120
+of the snips and it drops off towards
+
+336
+00:14:39,899 --> 00:14:44,879
+the beginning of the chromosome so that
+
+337
+00:14:42,120 --> 00:14:47,068
+was our region of interest to try to
+
+338
+00:14:44,879 --> 00:14:49,379
+find the gene that's responsible for
+
+339
+00:14:47,068 --> 00:14:52,019
+this phenotype so the really great thing
+
+340
+00:14:49,379 --> 00:14:53,730
+about that was that as I said we had the
+
+341
+00:14:52,019 --> 00:14:56,159
+yellow pair we had the panzanella folium
+
+342
+00:14:53,730 --> 00:14:59,759
+we went into that region and we look for
+
+343
+00:14:56,159 --> 00:15:02,850
+any snips that were causing a change in
+
+344
+00:14:59,759 --> 00:15:04,889
+the and the coding sequence and so what
+
+345
+00:15:02,850 --> 00:15:07,800
+we found is that there was one gene and
+
+346
+00:15:04,889 --> 00:15:09,778
+yellow pair that had some deletions that
+
+347
+00:15:07,799 --> 00:15:12,508
+were causing a shift frame shift in the
+
+348
+00:15:09,778 --> 00:15:13,889
+coding sequence and that was only
+
+349
+00:15:12,509 --> 00:15:15,870
+happening in yellow pair it wasn't
+
+350
+00:15:13,889 --> 00:15:19,318
+happening in pin Fenella folium or Hinds
+
+351
+00:15:15,870 --> 00:15:21,299
+or the other accession that we looked at
+
+352
+00:15:19,318 --> 00:15:25,169
+so this is a pretty good indication that
+
+353
+00:15:21,299 --> 00:15:27,120
+that that was our G so we developed some
+
+354
+00:15:25,169 --> 00:15:29,849
+markers and Sarah went on to do some
+
+355
+00:15:27,120 --> 00:15:31,679
+fine mapping to confirm and it does turn
+
+356
+00:15:29,850 --> 00:15:33,659
+out that that was the actual gene
+
+357
+00:15:31,679 --> 00:15:36,028
+conferring the phenotype and then she
+
+358
+00:15:33,659 --> 00:15:38,909
+went on to do a number of very elegant
+
+359
+00:15:36,028 --> 00:15:41,308
+experiments in the lab to elucidate what
+
+360
+00:15:38,909 --> 00:15:42,659
+what this gene is actually doing if you
+
+361
+00:15:41,308 --> 00:15:49,620
+want to know more about that I'd highly
+
+362
+00:15:42,659 --> 00:15:52,620
+recommend reading for paper alright so
+
+363
+00:15:49,620 --> 00:15:56,188
+the next thing another project is moving
+
+364
+00:15:52,620 --> 00:15:58,470
+onto qtls and here we're mapping to an
+
+365
+00:15:56,188 --> 00:16:00,688
+intermediate relative so not not as
+
+366
+00:15:58,470 --> 00:16:04,350
+close to cultivated Tomatoes with an L
+
+367
+00:16:00,688 --> 00:16:05,969
+folium and this was some where we're
+
+368
+00:16:04,350 --> 00:16:10,170
+coming out of Greg's lab so a former
+
+369
+00:16:05,970 --> 00:16:12,269
+postdoc in his lab C long bao notice
+
+370
+00:16:10,169 --> 00:16:15,318
+that in this particular accession of
+
+371
+00:16:12,269 --> 00:16:18,269
+Habra Tydeus we have resistance to
+
+372
+00:16:15,318 --> 00:16:21,028
+Pseudomonas so you can see and the leaf
+
+373
+00:16:18,269 --> 00:16:23,399
+on the left looks nice and clean and
+
+374
+00:16:21,028 --> 00:16:25,558
+then you can see the really susceptible
+
+375
+00:16:23,399 --> 00:16:27,328
+one on the right and then there was also
+
+376
+00:16:25,558 --> 00:16:30,178
+an intermediate phenotype here which you
+
+377
+00:16:27,328 --> 00:16:31,769
+can see in the in the middle so again
+
+378
+00:16:30,178 --> 00:16:35,458
+keep in mind this is a little bit more
+
+379
+00:16:31,769 --> 00:16:38,039
+distant species that we're using in this
+
+380
+00:16:35,458 --> 00:16:39,479
+study so the reason that's important to
+
+381
+00:16:38,039 --> 00:16:42,750
+keep in mind is that some of these
+
+382
+00:16:39,480 --> 00:16:44,250
+issues with detecting recombination and
+
+383
+00:16:42,750 --> 00:16:47,990
+then also using Hines as a reference
+
+384
+00:16:44,250 --> 00:16:47,990
+genome gets a little bit more tricky
+
+385
+00:16:49,029 --> 00:16:56,899
+so this is from his paper an overview of
+
+386
+00:16:52,419 --> 00:16:58,699
+how we did the analysis so he mapped PT
+
+387
+00:16:56,899 --> 00:17:02,840
+OS which is essentially cultivated
+
+388
+00:16:58,700 --> 00:17:06,500
+tomato to Hobart IDs developed an f1 and
+
+389
+00:17:02,840 --> 00:17:09,709
+then f2 population f2 s were bar coded
+
+390
+00:17:06,500 --> 00:17:13,150
+individually and then sequenced and then
+
+391
+00:17:09,709 --> 00:17:15,680
+we align these two Hinds we called snips
+
+392
+00:17:13,150 --> 00:17:18,470
+one of the problems we ran into is that
+
+393
+00:17:15,680 --> 00:17:21,519
+the read depth was a bit on the low side
+
+394
+00:17:18,470 --> 00:17:25,640
+so we had to create a tool that would
+
+395
+00:17:21,519 --> 00:17:27,230
+actually create bins of genotypes as you
+
+396
+00:17:25,640 --> 00:17:29,210
+go across the chromosome so since the
+
+397
+00:17:27,230 --> 00:17:31,910
+snip density was so low as oftentimes
+
+398
+00:17:29,210 --> 00:17:35,240
+difficult to accurately call
+
+399
+00:17:31,910 --> 00:17:37,279
+heterozygous sites so by taking an
+
+400
+00:17:35,240 --> 00:17:38,990
+average across the bin we were able to
+
+401
+00:17:37,279 --> 00:17:41,149
+determine what the overall consensus
+
+402
+00:17:38,990 --> 00:17:43,160
+genotype should be for a region so that
+
+403
+00:17:41,150 --> 00:17:47,320
+was how we handled the low low coverage
+
+404
+00:17:43,160 --> 00:17:50,990
+data in this case so then we took those
+
+405
+00:17:47,319 --> 00:17:53,659
+average genotype calls and went on to
+
+406
+00:17:50,990 --> 00:17:57,769
+perform standard linkage analysis with
+
+407
+00:17:53,660 --> 00:18:00,110
+our QTL so in doing that we found some
+
+408
+00:17:57,769 --> 00:18:02,389
+we found a region on chromosome 2 in a
+
+409
+00:18:00,109 --> 00:18:05,119
+region on chromosome 8 the region on
+
+410
+00:18:02,390 --> 00:18:06,530
+chromosome 8 ended up being basically
+
+411
+00:18:05,119 --> 00:18:08,750
+the whole chromosome and there was very
+
+412
+00:18:06,529 --> 00:18:12,279
+little recombination there so he decided
+
+413
+00:18:08,750 --> 00:18:15,109
+to move forward with chromosome 2 since
+
+414
+00:18:12,279 --> 00:18:19,819
+it was a little bit more more
+
+415
+00:18:15,109 --> 00:18:21,529
+approachable so we went on similar to
+
+416
+00:18:19,819 --> 00:18:25,549
+Sarah's project to design some markers
+
+417
+00:18:21,529 --> 00:18:27,079
+so we used the fabric ID sequence that
+
+418
+00:18:25,549 --> 00:18:29,960
+we had from the resequencing because
+
+419
+00:18:27,079 --> 00:18:33,529
+there isn't an abra Katie's genome like
+
+420
+00:18:29,960 --> 00:18:35,539
+there is for Hines and so we develop
+
+421
+00:18:33,529 --> 00:18:38,690
+some markers based on his sequence and
+
+422
+00:18:35,539 --> 00:18:41,889
+then he was able to find that to about a
+
+423
+00:18:38,690 --> 00:18:44,269
+1 mega base region on chromosome 2 and
+
+424
+00:18:41,890 --> 00:18:47,000
+there are a number of genes candidate
+
+425
+00:18:44,269 --> 00:18:49,639
+genes there that he did some further
+
+426
+00:18:47,000 --> 00:18:51,799
+work on to look at expression it was a
+
+427
+00:18:49,640 --> 00:18:54,230
+little bit tricky though so this this
+
+428
+00:18:51,799 --> 00:18:56,389
+project was obviously more tricky than
+
+429
+00:18:54,230 --> 00:18:58,910
+the fo3 project for a couple of reasons
+
+430
+00:18:56,390 --> 00:19:00,440
+first of all we're looking at a QTL so
+
+431
+00:18:58,910 --> 00:19:01,729
+we don't have this single strong effect
+
+432
+00:19:00,440 --> 00:19:04,399
+locus
+
+433
+00:19:01,729 --> 00:19:06,558
+and also as I mentioned it's a more
+
+434
+00:19:04,398 --> 00:19:08,958
+distant cross so we had this problem
+
+435
+00:19:06,558 --> 00:19:11,628
+with reduced recombination and some of
+
+436
+00:19:08,959 --> 00:19:13,070
+the chromosomes and then also there
+
+437
+00:19:11,628 --> 00:19:14,838
+isn't a have work IDs referenced you
+
+438
+00:19:13,069 --> 00:19:17,058
+know so whenever you're doing something
+
+439
+00:19:14,838 --> 00:19:19,519
+like this if you don't have a reference
+
+440
+00:19:17,058 --> 00:19:22,388
+genome for both of the parents you don't
+
+441
+00:19:19,519 --> 00:19:25,038
+really know what is in that in that
+
+442
+00:19:22,388 --> 00:19:27,228
+segment there so it's possible that
+
+443
+00:19:25,038 --> 00:19:28,999
+there could be genes that are in there
+
+444
+00:19:27,229 --> 00:19:31,459
+that aren't in hinds all of these gene
+
+445
+00:19:28,999 --> 00:19:34,278
+models were predicting from the hinds
+
+446
+00:19:31,459 --> 00:19:37,489
+annotation so we know that oftentimes
+
+447
+00:19:34,278 --> 00:19:40,038
+resistance genes they can be rapidly
+
+448
+00:19:37,489 --> 00:19:43,190
+evolving and they can change by copy
+
+449
+00:19:40,038 --> 00:19:45,169
+number so what would be of interest is
+
+450
+00:19:43,190 --> 00:19:47,269
+to have a hyper kinase genome to see if
+
+451
+00:19:45,169 --> 00:19:49,399
+those same genes are actually found in
+
+452
+00:19:47,269 --> 00:19:53,959
+hauberk IDs in that region so this was a
+
+453
+00:19:49,398 --> 00:19:55,458
+good good experience for us to give us
+
+454
+00:19:53,959 --> 00:19:59,359
+sort of the rationale for having a
+
+455
+00:19:55,459 --> 00:20:06,459
+reference genome for other projects so
+
+456
+00:19:59,358 --> 00:20:10,308
+sort of alluding to another project here
+
+457
+00:20:06,459 --> 00:20:11,839
+so knowing now we know that having a
+
+458
+00:20:10,308 --> 00:20:15,009
+reference genome for the more divergent
+
+459
+00:20:11,838 --> 00:20:17,569
+tomato species is really helpful we
+
+460
+00:20:15,009 --> 00:20:22,069
+moved on to a project with like a person
+
+461
+00:20:17,569 --> 00:20:23,868
+so this is a very divergent species so
+
+462
+00:20:22,069 --> 00:20:27,218
+it's actually an out-group to the tomato
+
+463
+00:20:23,868 --> 00:20:29,358
+clade and you can still cross it with
+
+464
+00:20:27,219 --> 00:20:32,989
+cultivated tomato but it's a bit more
+
+465
+00:20:29,358 --> 00:20:35,178
+difficult and it's interesting so this
+
+466
+00:20:32,989 --> 00:20:37,338
+this was also another nice accident so
+
+467
+00:20:35,179 --> 00:20:40,129
+there was a postdoc there still as a
+
+468
+00:20:37,338 --> 00:20:42,440
+postdoc in Jim Jim and Tony's lab that
+
+469
+00:20:40,128 --> 00:20:46,118
+was doing some work on the like a purse
+
+470
+00:20:42,440 --> 00:20:48,528
+acquittees inch regression lines out and
+
+471
+00:20:46,118 --> 00:20:51,408
+and I feel that they're you currently
+
+472
+00:20:48,528 --> 00:20:55,578
+using this is a couple years ago and it
+
+473
+00:20:51,409 --> 00:20:59,359
+was really good conditions for spec that
+
+474
+00:20:55,578 --> 00:21:02,088
+year so re the postdoc was interested in
+
+475
+00:20:59,358 --> 00:21:04,908
+in looking at some fruit quality related
+
+476
+00:21:02,088 --> 00:21:07,578
+things in the in theone introgression
+
+477
+00:21:04,909 --> 00:21:09,829
+lines but since the conditions respect
+
+478
+00:21:07,578 --> 00:21:11,418
+were really good he was able to see that
+
+479
+00:21:09,828 --> 00:21:15,069
+there was some some plants that were
+
+480
+00:21:11,419 --> 00:21:16,660
+actually resistant to the spec so now
+
+481
+00:21:15,069 --> 00:21:20,139
+it's super interesting because it has
+
+482
+00:21:16,660 --> 00:21:23,290
+two really cool things going on now so
+
+483
+00:21:20,140 --> 00:21:26,470
+we wrote a proposal to the tryout triad
+
+484
+00:21:23,289 --> 00:21:29,379
+foundation at that we have it BTI and
+
+485
+00:21:26,470 --> 00:21:31,990
+rewarded a bit of money to to pursue
+
+486
+00:21:29,380 --> 00:21:33,900
+this project so you can see here than
+
+487
+00:21:31,990 --> 00:21:36,220
+the introgression lines where they've
+
+488
+00:21:33,900 --> 00:21:38,530
+found various low side that are involved
+
+489
+00:21:36,220 --> 00:21:44,289
+either in fruit quality so carotenoid
+
+490
+00:21:38,529 --> 00:21:45,910
+biosynthesis or pathogen resistance so
+
+491
+00:21:44,289 --> 00:21:49,779
+with the triad what we were able to do
+
+492
+00:21:45,910 --> 00:21:52,500
+is make the genome for like a purse of
+
+493
+00:21:49,779 --> 00:21:54,700
+quality so we were able to sequence it
+
+494
+00:21:52,500 --> 00:21:56,619
+using our funds which was really great
+
+495
+00:21:54,700 --> 00:22:01,000
+because it's really helped a lot of our
+
+496
+00:21:56,619 --> 00:22:05,079
+downstream work so what we did was we
+
+497
+00:22:01,000 --> 00:22:08,380
+sequenced the genome at about ATX
+
+498
+00:22:05,079 --> 00:22:10,960
+coverage using PacBio sequence and then
+
+499
+00:22:08,380 --> 00:22:12,429
+we corrected those reads so if you're
+
+500
+00:22:10,960 --> 00:22:14,230
+not familiar with pat bio and it's a
+
+501
+00:22:12,429 --> 00:22:16,540
+very very high error rate so the first
+
+502
+00:22:14,230 --> 00:22:19,599
+thing you need to do with it is map all
+
+503
+00:22:16,539 --> 00:22:21,730
+of the map the reads to the longest
+
+504
+00:22:19,599 --> 00:22:24,009
+roughly 20% of the reads and then
+
+505
+00:22:21,730 --> 00:22:26,679
+correct those reads so that's what you
+
+506
+00:22:24,009 --> 00:22:31,390
+use for assembly we tried two different
+
+507
+00:22:26,679 --> 00:22:33,640
+assembly tools so Falcon is known as the
+
+508
+00:22:31,390 --> 00:22:36,070
+diploid assembler and then we also tried
+
+509
+00:22:33,640 --> 00:22:38,830
+Kenya which is a modified version of
+
+510
+00:22:36,069 --> 00:22:40,928
+Solaris onblur that's used for PacBio
+
+511
+00:22:38,829 --> 00:22:42,789
+so we ran two different assemblies
+
+512
+00:22:40,929 --> 00:22:45,970
+actually many different assemblies using
+
+513
+00:22:42,789 --> 00:22:49,329
+two different tools and we found based
+
+514
+00:22:45,970 --> 00:22:52,509
+on n 50 values average length you know
+
+515
+00:22:49,329 --> 00:22:54,869
+the resulting assembly size that the
+
+516
+00:22:52,509 --> 00:22:58,150
+Kent can new assembly was the better one
+
+517
+00:22:54,869 --> 00:23:00,729
+so we move forward at that and we did
+
+518
+00:22:58,150 --> 00:23:03,160
+polishing using both the PAC bio reads
+
+519
+00:23:00,730 --> 00:23:05,200
+and then also we had Illumina reads so
+
+520
+00:23:03,160 --> 00:23:07,150
+we we mapped all those onto our genome
+
+521
+00:23:05,200 --> 00:23:10,150
+and tried to remove as much of the error
+
+522
+00:23:07,150 --> 00:23:13,750
+as possible because PacBio often leave
+
+523
+00:23:10,150 --> 00:23:16,660
+in Dells so those obviously you don't
+
+524
+00:23:13,750 --> 00:23:20,890
+want to have and then we took that
+
+525
+00:23:16,660 --> 00:23:23,169
+polished assembly and we use that we
+
+526
+00:23:20,890 --> 00:23:26,850
+sent that off to dovetail to do hi-c and
+
+527
+00:23:23,169 --> 00:23:28,980
+also there Chicago libraries
+
+528
+00:23:26,849 --> 00:23:31,278
+and that was magical because whenever we
+
+529
+00:23:28,980 --> 00:23:33,538
+got that back it is chromosome length
+
+530
+00:23:31,278 --> 00:23:37,288
+assembly so we basically have our
+
+531
+00:23:33,538 --> 00:23:38,730
+assembly and 12 pseudo molecules once we
+
+532
+00:23:37,288 --> 00:23:40,919
+got that back then we just did a little
+
+533
+00:23:38,730 --> 00:23:43,230
+bit more work to fill in gaps because
+
+534
+00:23:40,919 --> 00:23:45,389
+the hi-c will create gaps in the genome
+
+535
+00:23:43,230 --> 00:23:47,159
+which are just ends so you can take your
+
+536
+00:23:45,388 --> 00:23:48,839
+PacBio reads and again map them and
+
+537
+00:23:47,159 --> 00:23:54,630
+sometimes you can span those gaps and
+
+538
+00:23:48,839 --> 00:23:56,879
+fill in the missing sequence so this is
+
+539
+00:23:54,630 --> 00:23:59,879
+what our assemblies are looking like so
+
+540
+00:23:56,880 --> 00:24:09,049
+far compared to the published pignoli I
+
+541
+00:23:59,878 --> 00:24:09,048
+and the publish lycopersicum genomes so
+
+542
+00:24:09,200 --> 00:24:14,879
+you can see that the hi-c did a great
+
+543
+00:24:11,638 --> 00:24:16,769
+job we didn't have really any good
+
+544
+00:24:14,878 --> 00:24:20,428
+genetic Maps to use for like personally
+
+545
+00:24:16,769 --> 00:24:23,278
+so the hi-c was able to pull in all of
+
+546
+00:24:20,429 --> 00:24:24,950
+these scaffolds and get our genome
+
+547
+00:24:23,278 --> 00:24:27,960
+assembly up the pseudo molecule level
+
+548
+00:24:24,950 --> 00:24:30,058
+the longest sequence and like a persica
+
+549
+00:24:27,960 --> 00:24:32,669
+Lidia's it's 133 mega bases so that's
+
+550
+00:24:30,058 --> 00:24:35,668
+basically a whole chromosome which is
+
+551
+00:24:32,669 --> 00:24:37,559
+really great hunting size is huge which
+
+552
+00:24:35,669 --> 00:24:39,179
+is again good because we want to predict
+
+553
+00:24:37,558 --> 00:24:41,308
+gene models so if you don't have really
+
+554
+00:24:39,179 --> 00:24:47,429
+long stretches that continuous sequence
+
+555
+00:24:41,308 --> 00:24:49,619
+you're not and the total length is is
+
+556
+00:24:47,429 --> 00:24:52,169
+comparable to what we expect the genome
+
+557
+00:24:49,619 --> 00:24:55,258
+size to be for like a person quiz so
+
+558
+00:24:52,169 --> 00:25:00,809
+we're pretty happy with our results for
+
+559
+00:24:55,259 --> 00:25:03,210
+this this genome these are this is sort
+
+560
+00:25:00,808 --> 00:25:05,369
+of a standard analysis that's done with
+
+561
+00:25:03,210 --> 00:25:07,230
+with genome assemblies and also
+
+562
+00:25:05,369 --> 00:25:10,168
+annotations to give you an idea of how
+
+563
+00:25:07,230 --> 00:25:11,339
+complete your your genome assembly is so
+
+564
+00:25:10,169 --> 00:25:13,470
+these are genes
+
+565
+00:25:11,339 --> 00:25:15,449
+Kuzco or a set of genes that should be
+
+566
+00:25:13,470 --> 00:25:18,028
+universally conserved and they should be
+
+567
+00:25:15,450 --> 00:25:20,490
+present in single copy and the plant
+
+568
+00:25:18,028 --> 00:25:22,319
+lineage so you you look for these in
+
+569
+00:25:20,490 --> 00:25:26,490
+your genome to see how many of them you
+
+570
+00:25:22,319 --> 00:25:28,769
+can find and you can see so a 29 one
+
+571
+00:25:26,490 --> 00:25:30,569
+that's like a person ladies and you can
+
+572
+00:25:28,769 --> 00:25:33,058
+see that we have very very few missing
+
+573
+00:25:30,569 --> 00:25:35,369
+we actually have fewer missing than if
+
+574
+00:25:33,058 --> 00:25:38,369
+you run the same analysis on tomato 2.5
+
+575
+00:25:35,369 --> 00:25:40,919
+so it's not really statistically
+
+576
+00:25:38,369 --> 00:25:43,409
+significant but it's it's pretty cool
+
+577
+00:25:40,920 --> 00:25:44,310
+and then these three other assemblies in
+
+578
+00:25:43,410 --> 00:25:46,769
+blue or other
+
+579
+00:25:44,309 --> 00:25:48,359
+PacBio assembly as we did with coffee so
+
+580
+00:25:46,769 --> 00:25:52,559
+I just have those there as a basis of
+
+581
+00:25:48,359 --> 00:25:54,329
+comparison and overall things are
+
+582
+00:25:52,559 --> 00:25:56,339
+looking really good we do have a bit of
+
+583
+00:25:54,329 --> 00:25:59,159
+a higher duplication level and like a
+
+584
+00:25:56,339 --> 00:26:01,919
+person ease of the boosts go set but I
+
+585
+00:25:59,160 --> 00:26:03,600
+find that if I remove so whenever you do
+
+586
+00:26:01,920 --> 00:26:06,720
+the hi-c you get your pseudo molecules
+
+587
+00:26:03,599 --> 00:26:08,879
+and then you get some other sort of
+
+588
+00:26:06,720 --> 00:26:11,220
+context that weren't pulled in so if I
+
+589
+00:26:08,880 --> 00:26:13,530
+remove those that number drops and I
+
+590
+00:26:11,220 --> 00:26:14,730
+think a lot of that stuff that didn't
+
+591
+00:26:13,529 --> 00:26:17,069
+get pulled in is actually another
+
+592
+00:26:14,730 --> 00:26:18,630
+haplotype that was assembled of course
+
+593
+00:26:17,069 --> 00:26:21,480
+there's also probably chloroplasts in
+
+594
+00:26:18,630 --> 00:26:23,070
+there as well but that would be what
+
+595
+00:26:21,480 --> 00:26:25,110
+would be causing this this duplication
+
+596
+00:26:23,069 --> 00:26:26,579
+because like a person Queenie's it's
+
+597
+00:26:25,109 --> 00:26:29,339
+very heterozygous so we would expect
+
+598
+00:26:26,579 --> 00:26:30,659
+that there would be some cases where the
+
+599
+00:26:29,339 --> 00:26:37,109
+two haplotypes didn't get merged
+
+600
+00:26:30,660 --> 00:26:40,230
+together and they assembly all right so
+
+601
+00:26:37,109 --> 00:26:43,229
+of course what people really care about
+
+602
+00:26:40,230 --> 00:26:45,779
+with genome assemblies is finding the
+
+603
+00:26:43,230 --> 00:26:49,970
+genes so our next step was to run
+
+604
+00:26:45,779 --> 00:26:52,529
+software called maker so maker works by
+
+605
+00:26:49,970 --> 00:26:55,740
+first you repeat master genome because
+
+606
+00:26:52,529 --> 00:26:58,139
+it's you leave the repeats in there it
+
+607
+00:26:55,740 --> 00:27:02,370
+confuses the gene prediction software so
+
+608
+00:26:58,140 --> 00:27:05,640
+you repeat repeat mask and then you
+
+609
+00:27:02,369 --> 00:27:08,159
+train some ab initio gene predictors so
+
+610
+00:27:05,640 --> 00:27:10,440
+we used a Gustus and snap so you train
+
+611
+00:27:08,160 --> 00:27:14,370
+those with a training set so that you
+
+612
+00:27:10,440 --> 00:27:16,019
+have a model for what the genes should
+
+613
+00:27:14,369 --> 00:27:18,089
+look like for the particular species
+
+614
+00:27:16,019 --> 00:27:21,059
+that you're annotating and you put all
+
+615
+00:27:18,089 --> 00:27:23,129
+this into maker you also give it EST is
+
+616
+00:27:21,059 --> 00:27:25,440
+RNA seek data all kinds of expression
+
+617
+00:27:23,130 --> 00:27:28,470
+data basically feed that into maker and
+
+618
+00:27:25,440 --> 00:27:31,250
+then it'll give you a bunch of predicted
+
+619
+00:27:28,470 --> 00:27:33,839
+gene models that are never 100% correct
+
+620
+00:27:31,250 --> 00:27:38,099
+but they're a good starting point of
+
+621
+00:27:33,839 --> 00:27:41,519
+where coding regions should be so and we
+
+622
+00:27:38,099 --> 00:27:43,829
+did that we got about almost 38,000 gene
+
+623
+00:27:41,519 --> 00:27:45,329
+models though this is comparable to what
+
+624
+00:27:43,829 --> 00:27:47,599
+you see in Familia and like a person
+
+625
+00:27:45,329 --> 00:27:50,599
+come they should be pretty similar and
+
+626
+00:27:47,599 --> 00:27:54,168
+then we took these and then we tried to
+
+627
+00:27:50,599 --> 00:27:57,829
+do functional prediction with those
+
+628
+00:27:54,169 --> 00:28:01,700
+you know what are they likely to encode
+
+629
+00:27:57,829 --> 00:28:04,460
+and we use this using blast sequence
+
+630
+00:28:01,700 --> 00:28:08,259
+similarity and then also InterPro scan
+
+631
+00:28:04,460 --> 00:28:08,259
+which looks for domains in the protein
+
+632
+00:28:09,278 --> 00:28:14,089
+and this is a nifty little tool that
+
+633
+00:28:12,798 --> 00:28:16,700
+we're really trying to encourage people
+
+634
+00:28:14,089 --> 00:28:20,538
+to use so as I said with the annotation
+
+635
+00:28:16,700 --> 00:28:22,639
+you never have things 100% accurate so
+
+636
+00:28:20,538 --> 00:28:25,970
+one way of helping with that is to set
+
+637
+00:28:22,638 --> 00:28:28,278
+up these instances of web Apollo and so
+
+638
+00:28:25,970 --> 00:28:30,350
+users can come in and actually edit
+
+639
+00:28:28,278 --> 00:28:33,079
+their gene of interest so that's that's
+
+640
+00:28:30,349 --> 00:28:35,209
+what this is here so basically what you
+
+641
+00:28:33,079 --> 00:28:36,798
+have of your gene model up at the top
+
+642
+00:28:35,210 --> 00:28:39,350
+that's the predicted gene model from
+
+643
+00:28:36,798 --> 00:28:41,839
+maker and then you have tracks below
+
+644
+00:28:39,349 --> 00:28:44,689
+that show all of your RNA seek data we
+
+645
+00:28:41,839 --> 00:28:46,730
+had Isis secure I used to see a sequence
+
+646
+00:28:44,690 --> 00:28:48,440
+that comes from PacBio sequence and
+
+647
+00:28:46,730 --> 00:28:49,579
+what's nice about it is it should in
+
+648
+00:28:48,440 --> 00:28:51,739
+those cases give you a full-length
+
+649
+00:28:49,579 --> 00:28:54,499
+transcript so those are really good for
+
+650
+00:28:51,739 --> 00:28:57,379
+annotation we have RNA seed from
+
+651
+00:28:54,499 --> 00:29:00,259
+different tissues and all you need is an
+
+652
+00:28:57,378 --> 00:29:02,148
+account so we have this set up for
+
+653
+00:29:00,259 --> 00:29:03,858
+cultivated tomato - if any of you are
+
+654
+00:29:02,148 --> 00:29:07,189
+working on that and are interested in
+
+655
+00:29:03,858 --> 00:29:08,778
+particular genes you can contact us and
+
+656
+00:29:07,190 --> 00:29:11,149
+we can set you up with an account you
+
+657
+00:29:08,778 --> 00:29:13,249
+can go in and actually change gene
+
+658
+00:29:11,148 --> 00:29:14,928
+models and correct them and all this
+
+659
+00:29:13,249 --> 00:29:16,220
+goes into a database and then whenever
+
+660
+00:29:14,929 --> 00:29:17,749
+we release a next version of the
+
+661
+00:29:16,220 --> 00:29:20,350
+annotation all of your changes will be
+
+662
+00:29:17,749 --> 00:29:20,350
+incorporated
+
+663
+00:29:21,630 --> 00:29:25,870
+and I just thought I'd throw this out
+
+664
+00:29:24,250 --> 00:29:28,058
+there in case any of you are interested
+
+665
+00:29:25,869 --> 00:29:29,979
+in like a Persico eighties we will be
+
+666
+00:29:28,058 --> 00:29:32,230
+making this publicly available and the
+
+667
+00:29:29,980 --> 00:29:34,360
+next week or two so this will be
+
+668
+00:29:32,230 --> 00:29:39,579
+pre-publication it'll be free for anyone
+
+669
+00:29:34,359 --> 00:29:46,240
+to use as long as you agree to and it'll
+
+670
+00:29:39,579 --> 00:29:49,649
+be on sole genomics database so you can
+
+671
+00:29:46,240 --> 00:29:49,650
+let me know if you're interested in that
+
+672
+00:29:50,519 --> 00:29:56,859
+alright so now that we have this genome
+
+673
+00:29:53,940 --> 00:29:59,080
+we want to move forward with with the
+
+674
+00:29:56,859 --> 00:30:01,178
+projects to look at these genes that are
+
+675
+00:29:59,079 --> 00:30:03,730
+involved in disease resistance and fruit
+
+676
+00:30:01,179 --> 00:30:06,400
+quality so how do we do that
+
+677
+00:30:03,730 --> 00:30:09,640
+so we developed a pipeline for making
+
+678
+00:30:06,400 --> 00:30:13,570
+for predicting for creating markers to
+
+679
+00:30:09,640 --> 00:30:16,030
+map traits and in these crosses so since
+
+680
+00:30:13,569 --> 00:30:19,240
+like a person CODIS and like a Persico
+
+681
+00:30:16,029 --> 00:30:21,759
+more so divergent oftentimes it's
+
+682
+00:30:19,240 --> 00:30:23,140
+difficult to get enough recombination if
+
+683
+00:30:21,759 --> 00:30:26,410
+you have if you generate enough to
+
+684
+00:30:23,140 --> 00:30:28,570
+actually map genes very well so one of
+
+685
+00:30:26,410 --> 00:30:31,630
+the things that was done was to cross
+
+686
+00:30:28,569 --> 00:30:34,109
+like a purse of COI T's to Pei which is
+
+687
+00:30:31,630 --> 00:30:37,120
+a little bit closer so we can actually
+
+688
+00:30:34,109 --> 00:30:40,539
+get more recombination and and find that
+
+689
+00:30:37,119 --> 00:30:43,539
+gene so because of this I did we made
+
+690
+00:30:40,539 --> 00:30:46,839
+the pipeline so that it would give us
+
+691
+00:30:43,539 --> 00:30:48,549
+markers that are for use in crosses
+
+692
+00:30:46,839 --> 00:30:50,199
+between like a purse acquittees and
+
+693
+00:30:48,549 --> 00:30:54,159
+pinellia and crosses between like a
+
+694
+00:30:50,200 --> 00:30:56,319
+personal use and Heinz so we mapped like
+
+695
+00:30:54,160 --> 00:30:59,070
+a purse acquiesce to the published
+
+696
+00:30:56,319 --> 00:31:02,678
+finially i genome and Heinz genome and
+
+697
+00:30:59,069 --> 00:31:04,359
+then we used mummer for that and then we
+
+698
+00:31:02,679 --> 00:31:06,250
+took those results and we identified any
+
+699
+00:31:04,359 --> 00:31:09,178
+region where we had an end all that was
+
+700
+00:31:06,250 --> 00:31:12,369
+greater than 30 base pairs but less than
+
+701
+00:31:09,179 --> 00:31:15,759
+200 and those parameters can be tweaked
+
+702
+00:31:12,369 --> 00:31:18,189
+but that's what we used and then we use
+
+703
+00:31:15,759 --> 00:31:21,549
+primer 3 just to design primers on
+
+704
+00:31:18,190 --> 00:31:23,410
+either side of that endo that we could
+
+705
+00:31:21,549 --> 00:31:26,279
+use to distinguish differences in the
+
+706
+00:31:23,410 --> 00:31:28,720
+aptitude population excuses markers and
+
+707
+00:31:26,279 --> 00:31:30,730
+to confirm that these would actually
+
+708
+00:31:28,720 --> 00:31:32,289
+work in PCR then we took them and we
+
+709
+00:31:30,730 --> 00:31:34,420
+blasted them back to the respective
+
+710
+00:31:32,289 --> 00:31:35,889
+genomes because
+
+711
+00:31:34,420 --> 00:31:38,470
+since the genomes are quite different
+
+712
+00:31:35,890 --> 00:31:40,030
+sometimes the primers wouldn't match a
+
+713
+00:31:38,470 --> 00:31:42,250
+hundred percent or sometimes they would
+
+714
+00:31:40,029 --> 00:31:44,980
+map too far apart or do something
+
+715
+00:31:42,250 --> 00:31:49,000
+unexpected so it's important to do that
+
+716
+00:31:44,980 --> 00:31:52,720
+last step and so in doing that for like
+
+717
+00:31:49,000 --> 00:31:55,480
+a purse acquittees and ping-mei we have
+
+718
+00:31:52,720 --> 00:31:56,980
+about thousand markers and for like a
+
+719
+00:31:55,480 --> 00:31:59,980
+purse acquittees and like a purse to
+
+720
+00:31:56,980 --> 00:32:02,349
+comb we've got about 600 markers and the
+
+721
+00:31:59,980 --> 00:32:04,690
+reason there's less for like a purse
+
+722
+00:32:02,349 --> 00:32:06,309
+acquittees and like a purse economy
+
+723
+00:32:04,690 --> 00:32:08,620
+because again they're more divergent so
+
+724
+00:32:06,309 --> 00:32:11,980
+less things aligned then also and we
+
+725
+00:32:08,619 --> 00:32:13,359
+would blast the primers back since we
+
+726
+00:32:11,980 --> 00:32:14,920
+were predicting them on one genome
+
+727
+00:32:13,359 --> 00:32:17,049
+oftentimes those primers wouldn't match
+
+728
+00:32:14,920 --> 00:32:18,460
+100% and the other genome so there are
+
+729
+00:32:17,049 --> 00:32:19,990
+some tweaks we can make to the pipeline
+
+730
+00:32:18,460 --> 00:32:26,620
+to brought a lot more markers if we
+
+731
+00:32:19,990 --> 00:32:30,069
+needed to all right so the last mapping
+
+732
+00:32:26,619 --> 00:32:34,599
+approach that this is a work in progress
+
+733
+00:32:30,069 --> 00:32:38,589
+as well and again a collaboration with
+
+734
+00:32:34,599 --> 00:32:42,549
+with Greg Martin's lab is to see how we
+
+735
+00:32:38,589 --> 00:32:49,049
+can use G was and tomato to look look at
+
+736
+00:32:42,549 --> 00:32:51,730
+novel disease phenotypes so for this
+
+737
+00:32:49,049 --> 00:32:54,639
+there is a lot of data that's publicly
+
+738
+00:32:51,730 --> 00:32:57,759
+available for various tomato lines and
+
+739
+00:32:54,640 --> 00:33:00,250
+also wild species I'm Fenella folium so
+
+740
+00:32:57,759 --> 00:33:03,009
+we've taken advantage of this so there's
+
+741
+00:33:00,250 --> 00:33:05,980
+a paper where they see plants 360 lines
+
+742
+00:33:03,009 --> 00:33:10,539
+there's most of those were like a purse
+
+743
+00:33:05,980 --> 00:33:12,549
+accom there's another dataset of 100
+
+744
+00:33:10,539 --> 00:33:16,029
+line some of those include wild species
+
+745
+00:33:12,549 --> 00:33:18,519
+and then we also have snip chip data and
+
+746
+00:33:16,029 --> 00:33:22,359
+some other things that were just put
+
+747
+00:33:18,519 --> 00:33:25,450
+into the SRA NCBI mm-hmm so we took all
+
+748
+00:33:22,359 --> 00:33:29,199
+of this data and we generated this big
+
+749
+00:33:25,450 --> 00:33:31,180
+tree from all of it and this this isn't
+
+750
+00:33:29,200 --> 00:33:34,150
+that tree but it kind of gives you the
+
+751
+00:33:31,180 --> 00:33:36,789
+idea this is a subset of those
+
+752
+00:33:34,150 --> 00:33:39,100
+accessions that which is a little bit
+
+753
+00:33:36,789 --> 00:33:41,259
+easier for presentation purposes but it
+
+754
+00:33:39,099 --> 00:33:43,179
+gives you some idea of how things sort
+
+755
+00:33:41,259 --> 00:33:44,680
+of fall out so it's how you would expect
+
+756
+00:33:43,180 --> 00:33:48,100
+like a person combs cluster together
+
+757
+00:33:44,680 --> 00:33:51,610
+then you have your landraces
+
+758
+00:33:48,099 --> 00:33:54,279
+here by the star and heirloom lines the
+
+759
+00:33:51,609 --> 00:33:55,869
+blue is sarasu for meso sarasu for me is
+
+760
+00:33:54,279 --> 00:33:57,519
+generally believed to be admixture
+
+761
+00:33:55,869 --> 00:34:00,849
+between some vanilla folium and like
+
+762
+00:33:57,519 --> 00:34:03,970
+Persico then the green at the top we
+
+763
+00:34:00,849 --> 00:34:06,009
+have pimping Ella folium and then the
+
+764
+00:34:03,970 --> 00:34:10,148
+yellow is some more divergent wild
+
+765
+00:34:06,009 --> 00:34:14,190
+species so this was useful because now
+
+766
+00:34:10,148 --> 00:34:17,019
+we can select from these clusters
+
+767
+00:34:14,190 --> 00:34:18,608
+representatives to do for to use for
+
+768
+00:34:17,019 --> 00:34:21,009
+screening so we want to get a broad
+
+769
+00:34:18,608 --> 00:34:23,679
+picture of the diversity that's present
+
+770
+00:34:21,010 --> 00:34:28,540
+in tomato based on this work with the
+
+771
+00:34:23,679 --> 00:34:30,820
+resequencing data so Sara Hein
+
+772
+00:34:28,539 --> 00:34:35,789
+too was a postdoc in Greg's lab and
+
+773
+00:34:30,820 --> 00:34:38,169
+Samantha have that work to select
+
+774
+00:34:35,789 --> 00:34:40,300
+samples from this tree and then to
+
+775
+00:34:38,168 --> 00:34:41,799
+procure seed for them so I think right
+
+776
+00:34:40,300 --> 00:34:44,530
+now in Sandy's office they're running
+
+777
+00:34:41,800 --> 00:34:49,659
+like a whole germ plasm storage center
+
+778
+00:34:44,530 --> 00:34:52,510
+there's a lot of seed from this and then
+
+779
+00:34:49,659 --> 00:34:55,628
+Robin and Holly are also in Greg's lab
+
+780
+00:34:52,510 --> 00:34:59,020
+are involved in screening so they're
+
+781
+00:34:55,628 --> 00:35:00,880
+screening for a novel phenotypes
+
+782
+00:34:59,019 --> 00:35:08,079
+pathogen phenotypes of Pseudomonas
+
+783
+00:35:00,880 --> 00:35:09,490
+responses to Pseudomonas and what's
+
+784
+00:35:08,079 --> 00:35:11,829
+really nice is that since we have all
+
+785
+00:35:09,489 --> 00:35:14,199
+the sequence data and now we're getting
+
+786
+00:35:11,829 --> 00:35:16,750
+these phenotypes a tie-in with it we can
+
+787
+00:35:14,199 --> 00:35:19,019
+try to use G was to get at the low side
+
+788
+00:35:16,750 --> 00:35:24,639
+they were causing these interesting
+
+789
+00:35:19,019 --> 00:35:28,989
+responses so this is some work done by
+
+790
+00:35:24,639 --> 00:35:31,989
+Adrian Powell and he's been using so the
+
+791
+00:35:28,989 --> 00:35:34,239
+first thing that he tried to do was we
+
+792
+00:35:31,989 --> 00:35:37,779
+know F ls3 is involved in pathogen
+
+793
+00:35:34,239 --> 00:35:41,019
+response we have sequence from a number
+
+794
+00:35:37,780 --> 00:35:43,720
+of individuals or non responders and lot
+
+795
+00:35:41,019 --> 00:35:45,579
+more who were responders so taking all
+
+796
+00:35:43,719 --> 00:35:48,579
+the sequence data and the phenotypes
+
+797
+00:35:45,579 --> 00:35:50,019
+that we already have he did some work to
+
+798
+00:35:48,579 --> 00:35:52,659
+see if we could actually detect the
+
+799
+00:35:50,019 --> 00:35:54,940
+known G and you can tell from the
+
+800
+00:35:52,659 --> 00:35:57,009
+Manhattan plot he was able to do this
+
+801
+00:35:54,940 --> 00:36:00,400
+there is a bit of noise but you see this
+
+802
+00:35:57,010 --> 00:36:00,790
+nice strong peak on chromosome 4 and if
+
+803
+00:36:00,400 --> 00:36:02,380
+you
+
+804
+00:36:00,789 --> 00:36:04,000
+you zoom into where that is occurring
+
+805
+00:36:02,380 --> 00:36:06,220
+that actually is at the Ethel s three
+
+806
+00:36:04,000 --> 00:36:08,050
+locus so right now
+
+807
+00:36:06,219 --> 00:36:09,759
+Adrian's working on fine-tuning this and
+
+808
+00:36:08,050 --> 00:36:12,250
+then he'll be interested in applying
+
+809
+00:36:09,760 --> 00:36:19,240
+this to the new phenotypes that are
+
+810
+00:36:12,250 --> 00:36:21,420
+coming out of the screen and the last
+
+811
+00:36:19,239 --> 00:36:25,299
+thing I wanted to talk about briefly
+
+812
+00:36:21,420 --> 00:36:29,050
+it's a little bit of advertising for one
+
+813
+00:36:25,300 --> 00:36:32,380
+of our group number so he wrote this
+
+814
+00:36:29,050 --> 00:36:35,110
+program called snip Benner and this is
+
+815
+00:36:32,380 --> 00:36:38,140
+useful for the creation of BIM maps so
+
+816
+00:36:35,110 --> 00:36:40,750
+if you're if you have GPS data or RNA
+
+817
+00:36:38,139 --> 00:36:43,389
+seek data and you generate a lot of
+
+818
+00:36:40,750 --> 00:36:46,329
+snips oftentimes that that can be a bit
+
+819
+00:36:43,389 --> 00:36:49,029
+too much information the bin maps are a
+
+820
+00:36:46,329 --> 00:36:53,650
+way of sort of reducing the complexity
+
+821
+00:36:49,030 --> 00:36:58,600
+of that data so the first thing it does
+
+822
+00:36:53,650 --> 00:37:03,070
+is he so in this case it's been tested
+
+823
+00:36:58,599 --> 00:37:06,069
+with rails so it takes each line and it
+
+824
+00:37:03,070 --> 00:37:11,730
+looks for the crossover points in each
+
+825
+00:37:06,070 --> 00:37:14,080
+line and then based on on an algorithm
+
+826
+00:37:11,730 --> 00:37:16,809
+it takes those crossover points and
+
+827
+00:37:14,079 --> 00:37:19,869
+constructs have been mapped from that
+
+828
+00:37:16,809 --> 00:37:21,369
+data and then and also the other thing
+
+829
+00:37:19,869 --> 00:37:23,889
+about it there are some other tools that
+
+830
+00:37:21,369 --> 00:37:26,349
+do some similar things but this one if
+
+831
+00:37:23,889 --> 00:37:32,469
+you have a VCF file it basically will
+
+832
+00:37:26,349 --> 00:37:33,610
+take VCF files from any set color and
+
+833
+00:37:32,469 --> 00:37:37,089
+this is just a little overview of
+
+834
+00:37:33,610 --> 00:37:39,190
+basically how it works so at the top we
+
+835
+00:37:37,090 --> 00:37:41,800
+have the reel so first it does a step
+
+836
+00:37:39,190 --> 00:37:45,389
+that I'm not showing here where it uses
+
+837
+00:37:41,800 --> 00:37:48,250
+some hidden markov models to identify
+
+838
+00:37:45,389 --> 00:37:49,989
+the genotype so do you know type Colin
+
+839
+00:37:48,250 --> 00:37:51,940
+can be messy so it does some work to
+
+840
+00:37:49,989 --> 00:37:53,949
+sort of smooth those out and determine
+
+841
+00:37:51,940 --> 00:37:56,590
+the recombination breakpoints which you
+
+842
+00:37:53,949 --> 00:37:59,879
+can see at the top and then it uses an
+
+843
+00:37:56,590 --> 00:38:03,000
+algorithm to take those recombination
+
+844
+00:37:59,880 --> 00:38:07,920
+Maps and collapse them into a bin map
+
+845
+00:38:03,000 --> 00:38:07,920
+which can then be used in QTL mapping
+
+846
+00:38:09,920 --> 00:38:13,700
+so this has actually been used in a
+
+847
+00:38:11,780 --> 00:38:17,420
+paper that we hope will be coming out
+
+848
+00:38:13,699 --> 00:38:21,439
+soon by ET ganda and jim japanese lab so
+
+849
+00:38:17,420 --> 00:38:24,260
+he used snipping her too in his analysis
+
+850
+00:38:21,440 --> 00:38:27,260
+of some fruit quality traits and a
+
+851
+00:38:24,260 --> 00:38:30,050
+pimping Ella folium tomato real
+
+852
+00:38:27,260 --> 00:38:31,610
+population so that will be coming out
+
+853
+00:38:30,050 --> 00:38:32,960
+soon in the meantime if you really want
+
+854
+00:38:31,610 --> 00:38:35,360
+to play with a tool it is publicly
+
+855
+00:38:32,960 --> 00:38:38,570
+available on github so you can go there
+
+856
+00:38:35,360 --> 00:38:41,090
+and try it out so far we've only used it
+
+857
+00:38:38,570 --> 00:38:44,000
+on Rails but I believe that each eye has
+
+858
+00:38:41,090 --> 00:38:45,800
+been testing it out on an f2 population
+
+859
+00:38:44,000 --> 00:38:47,150
+actually that's two population from that
+
+860
+00:38:45,800 --> 00:38:49,430
+have work IDs project that I talked
+
+861
+00:38:47,150 --> 00:38:51,740
+about so if you're interested in using
+
+862
+00:38:49,429 --> 00:38:59,179
+it on f2 we can touch base with him and
+
+863
+00:38:51,739 --> 00:39:02,989
+see see how it's working ok so nearing
+
+864
+00:38:59,179 --> 00:39:05,210
+the end here so as I said I work as a
+
+865
+00:39:02,989 --> 00:39:07,039
+bioinformatician and I'm very very just
+
+866
+00:39:05,210 --> 00:39:08,480
+absolutely thrilled that I get to work
+
+867
+00:39:07,039 --> 00:39:10,130
+with all these wonderful people in
+
+868
+00:39:08,480 --> 00:39:13,909
+molecular labs that are willing to share
+
+869
+00:39:10,130 --> 00:39:16,250
+their data with us and let us let us
+
+870
+00:39:13,909 --> 00:39:17,960
+mine their data for exciting things so
+
+871
+00:39:16,250 --> 00:39:19,730
+as you probably noticed a lot of this
+
+872
+00:39:17,960 --> 00:39:22,039
+work was done in conjunction with Greg
+
+873
+00:39:19,730 --> 00:39:26,269
+Martin's lab specifically I'd like to
+
+874
+00:39:22,039 --> 00:39:29,059
+thank Zi long Val who worked on these
+
+875
+00:39:26,269 --> 00:39:32,179
+projects their hind who was the lead on
+
+876
+00:39:29,059 --> 00:39:35,029
+the fo three projects on Samantha who's
+
+877
+00:39:32,179 --> 00:39:37,489
+doing the work with the mapping of the
+
+878
+00:39:35,030 --> 00:39:39,740
+like a person Queenie's genes and then
+
+879
+00:39:37,489 --> 00:39:41,689
+also Robin Holly who are doing this big
+
+880
+00:39:39,739 --> 00:39:45,379
+screen and working with Adria on the G
+
+881
+00:39:41,690 --> 00:39:48,530
+was in the juvenile lab specifically I'd
+
+882
+00:39:45,380 --> 00:39:50,480
+like to thank Ari who's done a lot of
+
+883
+00:39:48,530 --> 00:39:52,550
+the RNA sequencing for like persik
+
+884
+00:39:50,480 --> 00:39:57,159
+wienies genome which allowed us to do
+
+885
+00:39:52,550 --> 00:39:59,269
+the gene model prediction e ty who
+
+886
+00:39:57,159 --> 00:40:02,659
+worked with David on the stiffener
+
+887
+00:39:59,269 --> 00:40:04,280
+project and you men who is awesome or
+
+888
+00:40:02,659 --> 00:40:07,819
+any extraction give us really high
+
+889
+00:40:04,280 --> 00:40:09,470
+quality RNA sequence for their RNA for
+
+890
+00:40:07,820 --> 00:40:14,300
+our Isis leak sequencing for the
+
+891
+00:40:09,469 --> 00:40:16,339
+annotation also the Muller lab who is
+
+892
+00:40:14,300 --> 00:40:18,410
+always extremely helpful and obviously I
+
+893
+00:40:16,340 --> 00:40:19,760
+spend a lot of time there and the glove
+
+894
+00:40:18,409 --> 00:40:22,309
+again see work was done when I was a
+
+895
+00:40:19,760 --> 00:40:24,980
+postdoc in his lab
+
+896
+00:40:22,309 --> 00:40:28,159
+our collab our collaborator Buuren years
+
+897
+00:40:24,980 --> 00:40:29,869
+ago and specifically Alessandra and his
+
+898
+00:40:28,159 --> 00:40:31,059
+lab who has helped with the like Persico
+
+899
+00:40:29,869 --> 00:40:35,329
+nice genome project
+
+900
+00:40:31,059 --> 00:40:37,099
+Roger T GRC who always is sending a seed
+
+901
+00:40:35,329 --> 00:40:41,000
+and things that we need to get get our
+
+902
+00:40:37,099 --> 00:40:43,250
+work done and of course the BC BC group
+
+903
+00:40:41,000 --> 00:40:46,010
+which is joints mentioned is is newly
+
+904
+00:40:43,250 --> 00:40:48,829
+formed so David who wrote the step in
+
+905
+00:40:46,010 --> 00:40:50,870
+our software and Adrian who is doing G
+
+906
+00:40:48,829 --> 00:40:51,559
+was analysis amongst many many other
+
+907
+00:40:50,869 --> 00:40:54,710
+things
+
+908
+00:40:51,559 --> 00:40:56,659
+and so here's David's in the left corner
+
+909
+00:40:54,710 --> 00:40:58,610
+there and Adrian's on the right and then
+
+910
+00:40:56,659 --> 00:41:01,250
+there's some photobombing in the middle
+
+911
+00:40:58,610 --> 00:41:03,230
+there and this is a really exciting day
+
+912
+00:41:01,250 --> 00:41:05,809
+for us because this is when we got our
+
+913
+00:41:03,230 --> 00:41:08,389
+first PC PC server and that empty slot
+
+914
+00:41:05,809 --> 00:41:10,820
+that we're peering into is where our new
+
+915
+00:41:08,389 --> 00:41:14,059
+one terabyte memory server is currently
+
+916
+00:41:10,820 --> 00:41:15,980
+residing it's working very very hard on
+
+917
+00:41:14,059 --> 00:41:21,199
+assembling a milkweed genome for George
+
+918
+00:41:15,980 --> 00:41:23,719
+and ER right now so exciting day and of
+
+919
+00:41:21,199 --> 00:41:25,549
+course money it's good that you know
+
+920
+00:41:23,719 --> 00:41:27,980
+people give us money to do things so
+
+921
+00:41:25,550 --> 00:41:30,110
+huge thanks the BTI has supported a
+
+922
+00:41:27,980 --> 00:41:32,949
+number of the things that the BC BC
+
+923
+00:41:30,110 --> 00:41:36,980
+group is doing and a stuff that
+
+924
+00:41:32,949 --> 00:41:40,730
+occasionally does hand out money and the
+
+925
+00:41:36,980 --> 00:41:41,329
+Triad foundation for like a purse
+
+926
+00:41:40,730 --> 00:41:44,420
+acquittees
+
+927
+00:41:41,329 --> 00:41:47,840
+project and one last thing
+
+928
+00:41:44,420 --> 00:41:49,550
+one last advertisement for any of the
+
+929
+00:41:47,840 --> 00:41:52,460
+grad students and postdocs or really
+
+930
+00:41:49,550 --> 00:41:54,920
+anyone if you are interested or want to
+
+931
+00:41:52,460 --> 00:41:57,110
+know more about bioinformatics problem
+
+932
+00:41:54,920 --> 00:41:58,639
+with your project you run this
+
+933
+00:41:57,110 --> 00:42:00,740
+bioinformatics hour at BTI
+
+934
+00:41:58,639 --> 00:42:02,210
+on Wednesdays 1:00 to 2:00 and Thursday
+
+935
+00:42:00,739 --> 00:42:05,959
+is 10:00 to 11:00 in the Resource Center
+
+936
+00:42:02,210 --> 00:42:08,750
+where the fish tank is but I hear it's
+
+937
+00:42:05,960 --> 00:42:10,909
+going away so if you want to stop by
+
+938
+00:42:08,750 --> 00:42:14,030
+during those times it's free you can
+
+939
+00:42:10,909 --> 00:42:17,299
+come and talk to us and maybe we can
+
+940
+00:42:14,030 --> 00:42:20,750
+help you and also we'll be starting the
+
+941
+00:42:17,300 --> 00:42:22,250
+bioinformatics course on March 13th
+
+942
+00:42:20,750 --> 00:42:24,619
+so and these are the topics that we'll
+
+943
+00:42:22,250 --> 00:42:26,840
+be covering so if those are things that
+
+944
+00:42:24,619 --> 00:42:28,670
+are useful to you that you'd like to
+
+945
+00:42:26,840 --> 00:42:30,890
+know more about just send me an email
+
+946
+00:42:28,670 --> 00:42:35,180
+and I can let you know the schedule and
+
+947
+00:42:30,889 --> 00:42:35,779
+and sign you up so I think that's it
+
+948
+00:42:35,179 --> 00:42:38,279
+thank you
+
+949
+00:42:35,780 --> 00:42:42,109
+your attention
+
+950
+00:42:38,280 --> 00:42:42,109
+[Applause]
+
+951
+00:42:42,250 --> 00:42:56,420
+yeah so he wants something very diverse
+
+952
+00:42:52,480 --> 00:42:58,490
+process so for the G ones that I
+
+953
+00:42:56,420 --> 00:43:03,190
+mentioned that particular that was just
+
+954
+00:42:58,489 --> 00:43:03,189
+looking within like a personal yeah I
+
+955
+00:43:05,079 --> 00:43:09,679
+think Adrian who is sitting behind you
+
+956
+00:43:08,059 --> 00:43:12,049
+and can you can correct me if I'm wrong
+
+957
+00:43:09,679 --> 00:43:13,429
+but um I think we're trying to stick to
+
+958
+00:43:12,050 --> 00:43:14,840
+like a person comb because whenever you
+
+959
+00:43:13,429 --> 00:43:16,519
+add pimping Ella folium then there's
+
+960
+00:43:14,840 --> 00:43:25,059
+structure issues and all these other
+
+961
+00:43:16,519 --> 00:43:25,059
+things so yeah other questions
+
+962
+00:43:30,849 --> 00:43:39,670
+this has been a production of Cornell
+
+963
+00:43:33,889 --> 00:43:39,670
+University on the web at cornell edu
+

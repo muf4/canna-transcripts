@@ -1,0 +1,839 @@
+[SPEAKER_02]: I'm Bruce.
+[SPEAKER_02]: We are here because I got asked to give a
+talk at a conference next week in
+[SPEAKER_02]: Canberra.
+[SPEAKER_02]: It's a controlled environments conference
+and that brought us over here and Apogee
+[SPEAKER_02]: along with Peter has got a booth there but
+we took the opportunity to come early to
+[SPEAKER_02]: talk about environmental instrumentation.
+[SPEAKER_02]: What we're going to talk about is really
+some basic stuff and I can see lots of you
+[SPEAKER_02]: are interested in remote sensing and
+that's on the list toward the end,
+[SPEAKER_02]: the hyperspectral imaging, those
+techniques.
+[SPEAKER_02]: But of course as you all know that stuff
+has to be ground truth and how well do we
+[SPEAKER_02]: make the measurements on the ground to do
+that.
+[SPEAKER_02]: Now some of you do modeling and models
+need good data and boy it's no surprise to
+[SPEAKER_02]: know that a lot of the data we put in
+models is not the highest quality data so
+[SPEAKER_02]: it leads to some problems.
+[SPEAKER_02]: Mark and I have worked together for a long
+time on making better environmental
+[SPEAKER_02]: measurements and along the way we develop
+better instruments but I teach a class in
+[SPEAKER_02]: environmental instrumentation at the
+University, Utah State University and
+[SPEAKER_02]: we've done other workshops on this.
+[SPEAKER_02]: These instruments and that's what we're
+going to try and get through today and
+[SPEAKER_02]: we're going to make it up a little as we
+go because of the timing of trying to get
+[SPEAKER_02]: through as much as we can and leave you
+with the resources to pursue everything in
+[SPEAKER_02]: more detail at the end of this.
+[SPEAKER_02]: So I want to set some of the stage.
+[SPEAKER_02]: So we're going to treat this a little like
+a class and we have plenty of these.
+[SPEAKER_02]: We got our first handout and this is just
+what you see on the screen.
+[SPEAKER_02]: We'll do our best to get to everything in
+here.
+[SPEAKER_02]: I really appreciate Marcus and the
+University.
+[SPEAKER_02]: This is a great classroom.
+[SPEAKER_02]: All the high-tech imaging stuff to present
+for you.
+[SPEAKER_02]: So some of you may have seen this quote
+before but it's meant as a joke but boy
+[SPEAKER_02]: there's a lot of truth in this statement.
+[SPEAKER_02]: Everybody believes a measurement except
+the guy who made it and nobody believes a
+[SPEAKER_02]: model except the guy who came up with the
+model and the gist of this is we ought to
+[SPEAKER_02]: be pretty skeptical of measurements.
+[SPEAKER_02]: Some of these measurements we're talking
+about are hard to make and when you're the
+[SPEAKER_02]: guy making them you really realize how
+hard they are to make and then a modeler
+[SPEAKER_02]: grabs the numbers and well it's been shown
+that this and this.
+[SPEAKER_02]: So this is a great quote to keep coming
+back to as a reference point.
+[SPEAKER_02]: Then this quote, let me put these halfway
+down so that we can see the screen just a
+[SPEAKER_02]: bit better.
+[SPEAKER_02]: Let me couple this quote with a parallel
+quote.
+[SPEAKER_02]: Never believe in observation unless it can
+be substantiated with theory.
+[SPEAKER_02]: You can see that fine, Dr. Rice.
+[SPEAKER_02]: Really measurements alone aren't going to
+get us where we need to be and models
+[SPEAKER_02]: alone aren't going to get us to where we
+need to be.
+[SPEAKER_02]: We're going back and forth constantly.
+[SPEAKER_02]: People making measurements need to be
+aware of the theory behind the
+[SPEAKER_02]: measurements so you can tell when you're
+collecting bad data.
+[SPEAKER_02]: People making models need to work closely
+with people making measurements so they
+[SPEAKER_02]: can assess the quality of the data.
+[SPEAKER_02]: Model skills and measurement skills for
+starters have been largely neglected.
+[SPEAKER_02]: I mean we have talked about the internet
+of things.
+[SPEAKER_02]: We just throw thousands of low-cost
+sensors out there and oh great what a
+[SPEAKER_02]: recipe for disaster to collect a lot of
+bad data fast.
+[SPEAKER_02]: So if you understand the principles which
+we hope to review you can tell when the
+[SPEAKER_02]: measurements aren't of the highest quality
+and when you should be skeptical and
+[SPEAKER_02]: hopefully prevent proliferation of bad
+stuff.
+[SPEAKER_02]: So these are two general principles
+leading to this.
+[SPEAKER_02]: We're starting with measurement of air
+temperature.
+[SPEAKER_02]: Just the most fundamental thing.
+[SPEAKER_02]: Everybody puts air temperature in the
+models.
+[SPEAKER_02]: It's a basis for all kinds of things and
+as you'll see one of the key measurements
+[SPEAKER_02]: that's very powerful is surface to air
+temperature difference and leaf to air
+[SPEAKER_02]: temperature difference and that's a
+powerful measurement because we can tell
+[SPEAKER_02]: how fast the plants are transpiring water
+and Mark is going to talk about infrared
+[SPEAKER_02]: measurements of surface in just a few
+minutes.
+[SPEAKER_02]: What we found as we pursued this more and
+more for irrigation scheduling and for
+[SPEAKER_02]: hydration of plants is our measurements of
+the surface temperature were often better
+[SPEAKER_02]: than our measurements of the air
+temperature.
+[SPEAKER_02]: So as a company that led us to come back
+to air temperature measurements and look
+[SPEAKER_02]: at challenges with doing that.
+[SPEAKER_02]: This is many years.
+[SPEAKER_02]: So I'm going to start with air temperature
+measurement and with luck single screen
+[SPEAKER_02]: external video.
+[SPEAKER_02]: See if we can pull this up.
+[SPEAKER_02]: That should be external video.
+[SPEAKER_02]: Oh HD.
+[SPEAKER_02]: That should be.
+[SPEAKER_02]: Maybe I have to push the HDMI again.
+[SPEAKER_02]: There it is.
+[SPEAKER_02]: This is the first slide from a talk of
+this.
+[SPEAKER_02]: Just principles of measuring air
+temperature.
+[SPEAKER_02]: Now we're going to talk about two things.
+[SPEAKER_02]: The type of sensor that we do use to
+measure air temperature and then how we
+[SPEAKER_02]: shield that sensor from radiation.
+[SPEAKER_02]: You think how hard can it be to measure
+air temperature but if you put a
+[SPEAKER_02]: thermometer out and they almost always
+read high.
+[SPEAKER_02]: If there's any radiation coming into that
+sensor it goes high.
+[SPEAKER_02]: It's not the correct air temperature.
+[SPEAKER_02]: So now we're talking about automated
+measurements.
+[SPEAKER_02]: So everything we talk about is automated
+hooked up to a data acquisition system.
+[SPEAKER_02]: So now we got electronic temperature
+sensors and in the history of weather
+[SPEAKER_02]: measurement we have collected a lot of bad
+data with higher air temperatures than
+[SPEAKER_02]: really exist because of radiation hitting
+the sensor and going above air
+[SPEAKER_02]: temperature.
+[SPEAKER_02]: So let's take a look at some radiation
+shields.
+[SPEAKER_02]: This is very basic stuff.
+[SPEAKER_02]: You look at all the weather stations out
+there collecting data and the vast
+[SPEAKER_02]: majority have one of these multi-plate
+shields on them and we all pat ourselves
+[SPEAKER_02]: in the back and say yes that's shielded.
+[SPEAKER_02]: The sensors up inside this and the sun
+can't hit it and the wind blows and cools
+[SPEAKER_02]: it off and we've got a great measurement
+of air temperature.
+[SPEAKER_02]: That's true if the wind is blowing and the
+sun is not shining too brightly but what
+[SPEAKER_02]: happens if the wind is not blowing fast
+and the sun is shining right on it or if
+[SPEAKER_02]: the sun is coming at somewhat of a low
+angle and it comes right into this thing.
+[SPEAKER_02]: These we have shown in publications can
+have errors of 3 degrees C.
+[SPEAKER_02]: For air temperature this is not a trivial
+error.
+[SPEAKER_02]: It doesn't happen all the time but they
+can have errors this big.
+[SPEAKER_02]: A record was a place over snow in the
+mountains of Utah in the winter where the
+[SPEAKER_02]: sun reflected off the snow and hit these
+things.
+[SPEAKER_02]: We measured a 13 degree C temperature
+error with a static shield like this and
+[SPEAKER_02]: now we're people working on models of snow
+melt.
+[SPEAKER_02]: If they use that data their models are way
+off there's huge errors with this.
+[SPEAKER_02]: What's the solution?
+[SPEAKER_02]: Manufacturers of static shields work on
+different plate configurations and
+[SPEAKER_02]: different designs but they still have
+problems when the wind isn't blowing.
+[SPEAKER_02]: Wind blowing means three meters a second
+is enough to minimize the errors but
+[SPEAKER_02]: that's a reasonable breeze.
+[SPEAKER_02]: What about all the data collected when the
+wind isn't blowing?
+[SPEAKER_02]: The next level up from this is to go with
+one of these kinds of sensors,
+[SPEAKER_02]: shields rather, which has a fan in it.
+[SPEAKER_02]: It's an aspirated shield and now the wind
+is blowing all the time.
+[SPEAKER_02]: The sensors inside are protected.
+[SPEAKER_02]: Those are far more accurate.
+[SPEAKER_02]: They greatly minimize these errors.
+[SPEAKER_02]: Now we're talking errors of a few tenths
+of a degree C instead a whole degree C.
+[SPEAKER_02]: Great, why don't we just all switch to
+these if they're demonstrably more
+[SPEAKER_02]: accurate.
+[SPEAKER_02]: The problem is they're expensive and they
+require power so if you're at a remote
+[SPEAKER_02]: station with solar power some of these
+shields take somewhere between 250 to 400
+[SPEAKER_02]: milliamps and you start to do the
+calculations.
+[SPEAKER_02]: You need a really big panel and a really
+big battery to run those or you need AC
+[SPEAKER_02]: power and we don't have AC power.
+[SPEAKER_02]: This was the state several years ago and
+we said we got to have better measurements
+[SPEAKER_02]: of air temperature so we started a
+research project to design a better shield
+[SPEAKER_02]: and that resulted in this shield here
+which has a Coanda radius inlet and we
+[SPEAKER_02]: were able to get a shield that takes 30 to
+80 milliamps of power.
+[SPEAKER_02]: It's got a variable speed fan that can
+slow down.
+[SPEAKER_02]: If you don't need the high-speed fan you
+can slow it down.
+[SPEAKER_02]: The sun isn't shining.
+[SPEAKER_02]: You don't have to have the fan on so high.
+[SPEAKER_02]: So we made this aspirated shield with much
+lower power and it can be now used on
+[SPEAKER_02]: solar powered stations and the cost is
+less, considerably less than these.
+[SPEAKER_02]: So that's the shield story.
+[SPEAKER_02]: Anytime you look at temperature data
+depending on what you're doing we ought to
+[SPEAKER_02]: be skeptical about the wind speed at the
+site.
+[SPEAKER_02]: If it's a site with high wind speeds we're
+probably fine with the static shields but
+[SPEAKER_02]: if it's a site that doesn't always have
+high wind speeds be careful of the
+[SPEAKER_02]: temperature data.
+[SPEAKER_00]: Absolutely,
+[SPEAKER_02]: good point.
+[SPEAKER_02]: So at night time there's no radiation
+coming in and that data should be
+[SPEAKER_02]: accurate.
+[SPEAKER_02]: Yes, yes and it's even better if there's
+some breeze at night but the problem is
+[SPEAKER_02]: greatly diminished at night and in fact
+that's some of how when we are doing
+[SPEAKER_02]: rigorous tests of these we check to see
+that everything lines up at night and
+[SPEAKER_02]: that's our reference and now we wait for
+the next day with the sun.
+[SPEAKER_02]: Minimum temperatures at which almost
+always occur at night are much more
+[SPEAKER_02]: accurate than maximum.
+[SPEAKER_02]: Think of how many models we have that are
+min-max temperature from old data
+[SPEAKER_02]: stations.
+[SPEAKER_02]: The min's fine and the max is the daily
+max every day is one or two degrees too
+[SPEAKER_02]: high.
+[SPEAKER_02]: That's a big error and that's our data set
+that we're working with, historic data
+[SPEAKER_02]: set, but now we know yikes some of our
+predictions are based on data that has
+[SPEAKER_02]: trouble.
+[SPEAKER_02]: So a couple other slides of this.
+[SPEAKER_02]: Most widely measured variable,
+lots of people are studying this problem.
+[SPEAKER_02]: 20 peer-reviewed papers in the last 14
+years, here's a bunch of them here let's
+[SPEAKER_02]: just give an example.
+[SPEAKER_02]: We're going to make these slides available
+as PDFs so you can sit and study this
+[SPEAKER_02]: stuff in great detail.
+[SPEAKER_02]: But this problem is not trivial as
+evidenced by the number of people studying
+[SPEAKER_02]: it.
+[SPEAKER_02]: Most of these are on shield designs and
+they're academic studies.
+[SPEAKER_02]: They built a shield to tell you the errors
+of other stuff but they're not,
+[SPEAKER_02]: yeah they didn't, they weren't designed to
+yield commercial solutions.
+[SPEAKER_03]: Thank you for asking that.
+[SPEAKER_02]: So if we go back to those shields,
+as soon as you get, and now I'm not sure
+[SPEAKER_02]: how well I can go back, but as soon as you
+get moisture on a static shield,
+[SPEAKER_02]: which happens a lot if it's raining or
+misting or fogging or even at night
+[SPEAKER_02]: condensation on the shield, now it reads
+too low because they've got evaporative
+[SPEAKER_02]: cooling and it's below the true air
+temperature.
+[SPEAKER_02]: That problem is also diminished by an
+aspirated shield which is drawing the air
+[SPEAKER_02]: through it.
+[SPEAKER_02]: So we've seen that a lot when there's any
+kind of moisture on the shield you always
+[SPEAKER_02]: get evaporative cooling.
+[SPEAKER_02]: By the way, now that Peter's got my
+coffee, I got to tell you how fun it is to
+[SPEAKER_02]: come to Australia and drink your coffee.
+[SPEAKER_02]: It's terrific.
+[SPEAKER_02]: I love good coffee and this morning at the
+hotel I'm complimenting him on the great
+[SPEAKER_02]: coffee and they said, yeah we visited the
+United States and your coffee is for shit,
+[SPEAKER_02]: they said.
+[SPEAKER_02]: And it is.
+[SPEAKER_02]: What a joy to come here and have a coffee.
+[SPEAKER_02]: So I did reverse order.
+[SPEAKER_02]: There's shields, now we're going to talk a
+little bit about sensors.
+[SPEAKER_02]: So there's three kinds of sensors that
+people can put in shields and here they
+[SPEAKER_02]: are.
+[SPEAKER_02]: Thermocouples, time-honored thermocouples.
+[SPEAKER_02]: They're cheap, you can run dozens of them,
+hook them up to a data logger.
+[SPEAKER_02]: Thermistors and platinum resistance
+thermometers or platinum resistance
+[SPEAKER_02]: thermistors.
+[SPEAKER_02]: These are the three categories that are
+fundamentally used.
+[SPEAKER_02]: This is a thermistor that's super tiny.
+[SPEAKER_02]: So the first point here is small is always
+better with a temperature sensor because
+[SPEAKER_02]: it stays in better equilibrium with the
+air temperature.
+[SPEAKER_02]: All of these are pretty tiny sensors.
+[SPEAKER_02]: This is only three millimeters.
+[SPEAKER_02]: We had to put the old units for people in
+the United States on the screen but these
+[SPEAKER_02]: are all pretty small sensors.
+[SPEAKER_02]: Platinum resistance thermometers have long
+been thought to be the gold standard for
+[SPEAKER_02]: temperature measurement.
+[SPEAKER_02]: They're very small signal but they're
+rugged, they're stable, they're expensive
+[SPEAKER_02]: and they're slightly bigger and now I want
+to show you the problems with platinum
+[SPEAKER_02]: resistance thermometers.
+[SPEAKER_02]: Thermistors in our experience are very
+underrated as a technology for measuring
+[SPEAKER_02]: air temperature.
+[SPEAKER_02]: They got a bad rap years ago because if
+moisture gets in a thermistor it can cause
+[SPEAKER_02]: drift but if you can prevent moisture from
+getting inside the sensor, not water but
+[SPEAKER_02]: humidity, then thermistors are very very
+stable and this is an epoxy coated
+[SPEAKER_02]: thermistor that we've found to be very
+stable in very rugged environments and
+[SPEAKER_02]: it's a much bigger signal.
+[SPEAKER_02]: In our experience this is a sensor of
+choice compared to PRTs.
+[SPEAKER_02]: Even if cost was no object it's a sensor
+of choice.
+[SPEAKER_02]: Thermocouples are the least accurate of
+the three.
+[SPEAKER_02]: They require reference temperatures and
+they're just the least accurate of the
+[SPEAKER_02]: three although they're cheap.
+[SPEAKER_02]: You can make a lot of thermocouples.
+[SPEAKER_02]: You saw the slide, small is better.
+[SPEAKER_02]: PRTs are not all the same.
+[SPEAKER_02]: People think oh I have a PRT, yeah well
+what kind of a PRT and you can study this
+[SPEAKER_02]: a bit later.
+[SPEAKER_02]: There's class C, B, A, 1 3rd, 1 10th,
+DIN and here's the accuracy specs.
+[SPEAKER_02]: So here's this yellow bead that we've
+really liked and we sell this with the
+[SPEAKER_02]: shields.
+[SPEAKER_02]: 0.1 degree C accuracy, these are the
+relative cost of these.
+[SPEAKER_02]: So now I'm going to show you a tiny bit of
+data in which we compared these two
+[SPEAKER_02]: sensors, a class A with an epoxy bead.
+[SPEAKER_02]: So there you can see they have similar
+specifications.
+[SPEAKER_02]: How'd this come out?
+[SPEAKER_02]: Well what we did was put them in an
+accelerated aging chamber where we cycled
+[SPEAKER_02]: the temperature up and down, up and down
+in high humidity to try and cause failure.
+[SPEAKER_02]: And that's one, accelerated aging is one
+of the tests that any good instrument
+[SPEAKER_02]: company runs in all their sensors.
+[SPEAKER_02]: We always try to build stuff and then we
+try to make it fail and we test it and
+[SPEAKER_02]: test it until we see what its limits are.
+[SPEAKER_02]: So we do that.
+[SPEAKER_02]: Here's the comparison.
+[SPEAKER_02]: 96 cycles, minus 20 to plus 60.
+[SPEAKER_02]: So with the water it's condensing and
+freezing and bad.
+[SPEAKER_02]: There's the data over the number of
+cycles.
+[SPEAKER_02]: Take them out and check them.
+[SPEAKER_02]: The red line are the PRTs and the blue
+lines are the thermistors.
+[SPEAKER_02]: And if you look at this data you say well
+let's normalize it to zero on day one and
+[SPEAKER_02]: those thermistors were more stable than
+the PRTs.
+[SPEAKER_02]: So it's an example of the kind of testing
+that we do on sensors and that's led us to
+[SPEAKER_02]: use this specific thermistor for air
+temperature.
+[SPEAKER_02]: I think,
+[SPEAKER_02]: so this is the story of radiation sensors
+and there's lots of data and lots of tests
+[SPEAKER_02]: and lots of sites.
+[SPEAKER_02]: But I think what I'd like to do next for a
+few minutes is talk about humidity.
+[SPEAKER_02]: So along with temperature we're doing
+humidity and whether it's fire forecasting
+[SPEAKER_02]: and we don't specifically sell a humidity
+probe but there's many available.
+[SPEAKER_02]: They're getting better all the time.
+[SPEAKER_02]: We've got our favorite sensors and we've
+done a lot of accelerated aging testing
+[SPEAKER_02]: with humidity probes too.
+[SPEAKER_02]: But I'm not so much going to talk about
+choices among humidity sensors as I am
+[SPEAKER_02]: with the principles of psychometrics,
+which means what's the difference between
+[SPEAKER_02]: relative humidity and absolute humidity.
+[SPEAKER_02]: Now I suspect many of you in here could
+write a really nice test question answer
+[SPEAKER_02]: to that question.
+[SPEAKER_02]: But absolute humidity is what drives
+pretty much all environmental responses,
+[SPEAKER_02]: model responses and atmospheric humidity
+responses and yet what we measure is
+[SPEAKER_02]: relative humidity.
+[SPEAKER_02]: So I'm going to take a minute to go
+through this and I've taught this several
+[SPEAKER_02]: times and nowadays we're going to have,
+I've got plenty of these so in the end
+[SPEAKER_02]: we'll stack them up at the end.
+[SPEAKER_02]: This is,
+[SPEAKER_02]: hopefully this will switch,
+[SPEAKER_02]: there.
+[SPEAKER_02]: This is the time-honored, there we go,
+psychometric chart and what I find is
+[SPEAKER_02]: modern students never seen this chart.
+[SPEAKER_02]: They do these all the time but they just
+type a number in a computer and it gives
+[SPEAKER_02]: them an output and you ask them about the
+relationships and they just don't know.
+[SPEAKER_02]: I don't know the computer calculated it
+for me.
+[SPEAKER_02]: I find that really dangerous.
+[SPEAKER_02]: So if you type psychometric chart in the
+internet you get thousands of images of
+[SPEAKER_02]: this for different elevations.
+[SPEAKER_02]: There's a chart for low temperature and
+high temperature.
+[SPEAKER_02]: This is, we're at 1,500 meters in Logan,
+Utah.
+[SPEAKER_02]: So this is a 1,500 meter chart,
+which is the one I happen to have but the
+[SPEAKER_02]: one for sea level is very similar.
+[SPEAKER_02]: The principles are identical and if you
+overlaid them there's a, it's a small,
+[SPEAKER_02]: just a small difference.
+[SPEAKER_02]: So we use this for an example.
+[SPEAKER_02]: So there are five cardinal humidity
+parameters and if you know any two of
+[SPEAKER_02]: those you can calculate the other three
+and a computer you can type them in.
+[SPEAKER_02]: But what I want to show you is how to do
+that on a chart.
+[SPEAKER_02]: This bottom axis right here, dry bulb,
+that's a manual thermometer.
+[SPEAKER_02]: We don't do this anymore.
+[SPEAKER_02]: We use electronic measurements but all the
+charts still say dry bulb and that just
+[SPEAKER_02]: means air temperature measured with
+something that's not wet.
+[SPEAKER_02]: So air temperature is the bottom.
+[SPEAKER_02]: The next thing before we had fancy
+electronic instruments, the second thing
+[SPEAKER_02]: we measured was wet bulb and this is a
+sling psychrometer and if you're older you
+[SPEAKER_02]: know these things and people keep,
+like slide rolls, whip them out.
+[SPEAKER_02]: You need to know the humidity and swing it
+and so one of these gets wet.
+[SPEAKER_02]: And one's dry and you have to swing this
+pretty good for a couple minutes.
+[SPEAKER_02]: What do you think the humidity is in here?
+[SPEAKER_02]: Relative.
+[SPEAKER_02]: Because this can't calculate absolute,
+right?
+[SPEAKER_02]: This is going to be a little tricky but
+and guess what?
+[SPEAKER_02]: This is an old one and it reads out in
+those ancient units called Fahrenheit.
+[SPEAKER_02]: So we're at 64 Fahrenheit.
+[SPEAKER_02]: This mic charts in Celsius.
+[SPEAKER_02]: We're going to convert.
+[SPEAKER_02]: We're at 75, so we're 24 Celsius in this
+room, 23 Celsius and we are at 17,
+[SPEAKER_02]: wet bulb 17.
+[SPEAKER_02]: So let's calculate the humidity with this.
+[SPEAKER_02]: By the way, see these are so slick.
+[SPEAKER_02]: See how nonlinear this chart is.
+[SPEAKER_02]: The old guys know how to use slide rolls.
+[SPEAKER_02]: You're getting really old if you still
+know that.
+[SPEAKER_02]: This is an example of a slide roll because
+you put the wet and dry bulb in here and
+[SPEAKER_02]: slide it and it'll tell you the humidity.
+[SPEAKER_02]: No batteries, no computer.
+[SPEAKER_02]: I just love these old instruments.
+[SPEAKER_02]: So how do we find this on a chart?
+[SPEAKER_02]: The wet bulb temperature is read up here
+on this line and what did we just say?
+[SPEAKER_02]: Let's find it.
+[SPEAKER_02]: 24, so right there is 24 and 17,
+here's 15, 16, here's 17, wet bulb.
+[SPEAKER_02]: From this line, I keep wanting to draw it
+on the board.
+[SPEAKER_02]: We go up, straight up from this here.
+[SPEAKER_02]: We come in at a diagonal here
+[SPEAKER_02]: so we're getting, there's our,
+I hit something.
+[SPEAKER_02]: Oh, it went away.
+[SPEAKER_02]: It autocorrected.
+[SPEAKER_02]: There's our point on the graph for what we
+just measured.
+[SPEAKER_02]: We're getting 52% humidity.
+[SPEAKER_02]: If I would have swung this longer,
+this probably would have come down,
+[SPEAKER_02]: but you get the idea.
+[SPEAKER_02]: It's the intersection of those two points
+for humidity.
+[SPEAKER_02]: So now we've entered two things,
+wet bulb and dry bulb and we calculated a
+[SPEAKER_02]: third thing that relative humidity are
+these curved lines.
+[SPEAKER_02]: That's where I'm getting 52%.
+[SPEAKER_02]: Now, what else can we tell from this?
+[SPEAKER_02]: Dew point temperature, the temperature at
+which water condenses on a surface,
+[SPEAKER_02]: on a leaf, anything.
+[SPEAKER_02]: You pull a can of beer out of your fridge
+and put it in your room and water
+[SPEAKER_02]: condenses on it because it's below the dew
+point.
+[SPEAKER_02]: Dew point on this chart, is red sideways
+going over here.
+[SPEAKER_02]: It's the second scale or it's red this
+way.
+[SPEAKER_02]: How did that happen?
+[SPEAKER_02]: Did I put my hand on something?
+[SPEAKER_02]: Dew point's red sideways.
+[SPEAKER_02]: Dew point right here, the dew point in
+this room, 10, 11, 12, 13.5 degrees.
+[SPEAKER_02]: Any temperature below that water will
+change state and condense.
+[SPEAKER_02]: Above it, it'll never happen and you can
+read it either direction.
+[SPEAKER_02]: So now we have dry bulb, wet bulb,
+relative humidity, dew point temperature
+[SPEAKER_02]: and the final parameter that we want to
+know on this is the absolute humidity of
+[SPEAKER_02]: the air and that's also read on this,
+on this scale here and it says absolute
+[SPEAKER_02]: humidity.
+[SPEAKER_02]: This is in grams per kilogram and it's 12.
+[SPEAKER_02]: Grams per, little less than 12,
+right?
+[SPEAKER_02]: Did I hit that again?
+[SPEAKER_02]: Right there.
+[SPEAKER_02]: I'm going to move this over and I won't
+hit it so much.
+[SPEAKER_02]: So there's an example of two inputs and
+you can tell how any two of these,
+[SPEAKER_02]: you always get a point and then you
+calculate, you spread out and you get the
+[SPEAKER_02]: other three parameters from this.
+[SPEAKER_02]: Here's the key thing.
+[SPEAKER_02]: Now we just did absolute humidity.
+[SPEAKER_02]: It's the mass or the moles of water vapor
+and air.
+[SPEAKER_02]: The absolute density, not the relative,
+but here's the key thing with this.
+[SPEAKER_02]: If we're calculating rates of evaporation
+from a surface, what we want to know is
+[SPEAKER_02]: the absolute humidity deficit or the vapor
+pressure deficit and we calculate that in
+[SPEAKER_02]: computers and models all the time.
+[SPEAKER_02]: We can get that from this chart.
+[SPEAKER_02]: In this room, at this temperature,
+we keep going up here to this line.
+[SPEAKER_02]: This is 100% humidity in this room.
+[SPEAKER_02]: This is the actual humidity.
+[SPEAKER_02]: Now let's take that sideways to get the
+absolute humidity and it's a point right
+[SPEAKER_02]: there and it looks like this is 23 and I'm
+going to round this off to 12.
+[SPEAKER_02]: So the deficit in this room is 23 minus 12
+and it's this line right here.
+[SPEAKER_02]: That's the absolute humidity deficit in
+this room or out wherever you measure this
+[SPEAKER_02]: thing.
+[SPEAKER_02]: This is what drives evaporation and
+transpiration.
+[SPEAKER_02]: It is not relative humidity.
+[SPEAKER_02]: You can ask the question if we had a wet
+dish rag here and we wanted to calculate
+[SPEAKER_02]: how long it would take to dry and this is
+one of my favorite test questions because
+[SPEAKER_02]: you can trip students up all the time.
+[SPEAKER_02]: In one case, we're going to put it at 80%
+humidity but 30 degrees C and the other
+[SPEAKER_02]: case, the other way around, you have the
+80% humidity and 30 degrees C or we're
+[SPEAKER_02]: going to put it at 60% humidity and 15
+degrees C and they said, well,
+[SPEAKER_02]: it'll dry faster in the lower humidity.
+[SPEAKER_02]: No, it won't.
+[SPEAKER_02]: 60% humidity down here is this big of a
+deficit and over here, 80% humidity is a
+[SPEAKER_02]: bigger deficit.
+[SPEAKER_02]: So humidity interacts with temperature to
+create this vapor pressure deficit which
+[SPEAKER_02]: you can see from this chart.
+[SPEAKER_02]: You don't need the whole chart.
+[SPEAKER_02]: That's why this subset is in here.
+[SPEAKER_02]: Here's the curve and the equation for 100%
+and if you know relative humidity,
+[SPEAKER_02]: which is what we usually measure,
+you can multiply the saturation by the
+[SPEAKER_02]: relative humidity and then you can easily
+calculate this without the chart because
+[SPEAKER_02]: you always got a point on this chart and
+here's digital values for that line.
+[SPEAKER_02]: That's psychometrics in 10 minutes or so
+and I find that useful to have a good
+[SPEAKER_02]: understanding of that, intuitive
+understanding so you can get a sense of
+[SPEAKER_02]: when people collect bad data and how to
+use humidity data to put it in units that
+[SPEAKER_02]: we want to understand.
+[SPEAKER_02]: I think I'll stop here except for one
+brief comment.
+[SPEAKER_02]: We put wind on here in the first section
+and this is a separate category of
+[SPEAKER_02]: measurements.
+[SPEAKER_02]: We all measure wind with cup anemometers.
+[SPEAKER_02]: That's so common but an emerging
+technology is sonic anemometers which I
+[SPEAKER_02]: don't have a picture of them here but they
+measure wind speed by the speed of sound
+[SPEAKER_02]: and historically those have been about a
+thousand dollars for the instrument and
+[SPEAKER_02]: the cup anemometers are 300 to 500 US
+dollars and that's about half the price
+[SPEAKER_02]: relative.
+[SPEAKER_02]: Sonic anemometers are getting cheaper and
+they're more accurate and they're
+[SPEAKER_02]: particularly more accurate because at wind
+speeds below a half a meter per second the
+[SPEAKER_02]: cup stopped turning and that just reads a
+zero and there's never really zero.
+[SPEAKER_02]: Sonic anemometers go all the way down to
+zero.
+[SPEAKER_02]: So this is another example of the march of
+technology making measurements more
+[SPEAKER_02]: accurate and prices are coming down.
+[SPEAKER_02]: I don't think we're going to see a switch
+overnight to sonic anemometers but in some
+[SPEAKER_02]: locations with low wind speeds sonic
+anemometers are the instrument measurement
+[SPEAKER_02]: of choice if you if you need to build
+models in places where there's not high
+[SPEAKER_02]: winds.
+[SPEAKER_02]: So that's about all I want to say about
+wind speed.
+[SPEAKER_02]: Any questions that some of you have been
+asking questions?
+[SPEAKER_05]: Yes.
+[SPEAKER_05]: You mentioned the types of instruments
+that you measure temperature with but how
+[SPEAKER_05]: about humidity?
+[SPEAKER_05]: Because some things I've done it's always
+related to the humidity measurement.
+[SPEAKER_05]: It's related to the temperature.
+[SPEAKER_05]: What is what exactly measures the
+humidity?
+[SPEAKER_05]: What is the device or the material?
+[SPEAKER_02]: Good question.
+[SPEAKER_02]: So there's different ways to measure
+humidity but by far the most common one is
+[SPEAKER_02]: what's called a capacitance probe.
+[SPEAKER_02]: Looks like a fat Sharpie.
+[SPEAKER_02]: You know they're roughly this size.
+[SPEAKER_02]: In the end of this is a chip that changes
+the capacitance based on the adsorption
+[SPEAKER_02]: and desorption of water vapor molecules.
+[SPEAKER_02]: That's the fundamental physics of how it
+measures humidity.
+[SPEAKER_02]: It's been around for 20 years,
+30 years and they've gotten better and
+[SPEAKER_02]: better.
+[SPEAKER_02]: And then alongside of that is a
+temperature sensor.
+[SPEAKER_02]: So it does and those two things that's why
+I did psychometrics.
+[SPEAKER_02]: Temperature and humidity together give you
+the whole package for this deficit.
+[SPEAKER_02]: Remember I said small is better?
+[SPEAKER_02]: Look how big that is.
+[SPEAKER_02]: These can have bigger errors in a static
+shield because there's not the wind
+[SPEAKER_02]: cooling off the sensor.
+[SPEAKER_02]: So we have like to have a separate
+temperature sensor and then calculate the
+[SPEAKER_02]: humidity from this.
+[SPEAKER_02]: This heats up because of the radiation
+hitting it even inside a shield.
+[SPEAKER_02]: So you would go man you know my humidity
+is not right because that the sensor is a
+[SPEAKER_02]: little hotter than it should be.
+[SPEAKER_02]: Here's something you can see from a
+psychometric chart.
+[SPEAKER_02]: These errors of heating of this tend to be
+self-corrected.
+[SPEAKER_02]: Let's say the true humidity is 52 in this
+room and we're measuring this and the sun
+[SPEAKER_02]: shining on it and it heats up.
+[SPEAKER_02]: As it heats up it goes this way.
+[SPEAKER_02]: But the humidity goes down, automatically
+goes down because it's heating up and the
+[SPEAKER_02]: absolute humidity tends to be
+self-correcting.
+[SPEAKER_02]: The humidity is wrong, the temperature is
+wrong, but they're wrong in the same
+[SPEAKER_02]: direction.
+[SPEAKER_02]: This data point moves horizontally on this
+graph somewhere over in here because most
+[SPEAKER_02]: of the time what we want to know is that
+absolute humidity.
+[SPEAKER_02]: Not sure if this is exactly your question.
+[SPEAKER_05]: I have had this problem because the
+temperature is not calibrated well so the
+[SPEAKER_05]: humidity is wrong.
+[SPEAKER_05]: But then I wonder if there were different
+types in the same way there are different
+[SPEAKER_05]: types of materials that you use for the
+temperature if there are different things.
+[SPEAKER_05]: So I understand that most of the humidity
+sensors will use this chip?
+[SPEAKER_02]: Yes.
+[SPEAKER_02]: There are other ways.
+[SPEAKER_02]: You can do some really expensive ways to
+do humidity.
+[SPEAKER_05]: Something like average and commercial.
+[SPEAKER_02]: This is by far the dominant way.
+[SPEAKER_02]: We can talk later about differences among
+brands.
+[SPEAKER_02]: The biggest thing we see is stability of
+these.
+[SPEAKER_02]: You get them out of a box and all of them
+are good.
+[SPEAKER_02]: Now you check them again a year or two
+later for drift and that's where we see
+[SPEAKER_02]: differences among types.
+[SPEAKER_02]: It's a combination of this.
+[SPEAKER_02]: It's another reason I like this chart
+because you can see what happens if you go
+[SPEAKER_02]: this way.
+[SPEAKER_02]: That's self-correcting error.
+[SPEAKER_00]: What they are doing in Penman-Monteith is
+a routine application.
+[SPEAKER_04]: In a data logger for example, I know
+Campbell Scientific data loggers really
+[SPEAKER_04]: well so I'll use that as an example.
+[SPEAKER_04]: You just go and input the weather
+measurements that are necessary into an
+[SPEAKER_04]: instruction that they've already
+pre-programmed in the Campbell Scientific
+[SPEAKER_04]: software.
+[SPEAKER_04]: The input there is relative humidity and
+temperature.
+[SPEAKER_04]: In actuality, the pre-programmed
+instruction has some code running in the
+[SPEAKER_04]: background.
+[SPEAKER_04]: It's calculating the absolute humidity.
+[SPEAKER_04]: Just like Bruce explained, the
+Penman-Monteith equation itself uses the
+[SPEAKER_04]: vapor pressure deficit which is absolute
+humidity minus the actual humidity of the
+[SPEAKER_04]: air.
+[SPEAKER_04]: A lot of times when you see the equation
+in a data logger instruction or sometimes
+[SPEAKER_04]: as it's explained maybe in a textbook,
+they always talk about the measurement
+[SPEAKER_04]: you're making is relative humidity.
+[SPEAKER_04]: That's because the sensors that we have
+measure relative humidity.
+[SPEAKER_02]: We don't have sensors to do absolute
+humidity.
+[SPEAKER_02]: We always calculate it from the data and
+sometimes it just shows up on the screen.
+[SPEAKER_02]: The fundamental physics is the absolute
+humidity.
+[SPEAKER_01]: Excellent.
+[SPEAKER_02]: It's calculated in the background by the
+microprocessors in the greenhouse.
+[SPEAKER_02]: That's one of the wonderful advances of
+the march of technology to do that.
+Thank you.
+Thank you.
+Thank you.

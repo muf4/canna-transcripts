@@ -1,0 +1,3816 @@
+1
+00:00:00,799 --> 00:00:04,440
+this is a production of Cornell
+
+2
+00:00:09,320 --> 00:00:16,359
+University let's talk about genomes so
+
+3
+00:00:13,638 --> 00:00:18,320
+uh frany said she when I met her just a
+
+4
+00:00:16,359 --> 00:00:20,840
+little while ago she said she likes to
+
+5
+00:00:18,320 --> 00:00:22,439
+work with things she can see and so you
+
+6
+00:00:20,839 --> 00:00:26,320
+know who wants to work with DNA which
+
+7
+00:00:22,439 --> 00:00:28,679
+you can't see so um the problem of
+
+8
+00:00:26,320 --> 00:00:30,240
+seeing the DNA is really important for
+
+9
+00:00:28,678 --> 00:00:33,479
+understanding how the genome works and
+
+10
+00:00:30,239 --> 00:00:35,960
+so we're talk going to talk about data
+
+11
+00:00:33,479 --> 00:00:38,238
+visualization so uh before I start I'd
+
+12
+00:00:35,960 --> 00:00:40,039
+like to just some of you may have missed
+
+13
+00:00:38,238 --> 00:00:43,640
+it but in the beginning of September
+
+14
+00:00:40,039 --> 00:00:45,079
+there was a major scientific Advance 30
+
+15
+00:00:43,640 --> 00:00:46,960
+Publications were published
+
+16
+00:00:45,079 --> 00:00:49,759
+simultaneously in science nature and
+
+17
+00:00:46,960 --> 00:00:52,520
+other journals uh which is the fruit
+
+18
+00:00:49,759 --> 00:00:55,280
+coming out of the encode project and the
+
+19
+00:00:52,520 --> 00:00:58,359
+latest phase of the encode project and
+
+20
+00:00:55,280 --> 00:01:00,879
+so this was a paradigm shifting uh
+
+21
+00:00:58,359 --> 00:01:02,359
+outcome and it it it says something
+
+22
+00:01:00,878 --> 00:01:04,798
+about the genome which I'd really like
+
+23
+00:01:02,359 --> 00:01:08,000
+to communicate to you the leader of this
+
+24
+00:01:04,799 --> 00:01:10,240
+this vast Consortium of scientists uh
+
+25
+00:01:08,000 --> 00:01:11,799
+something like several I think over a
+
+26
+00:01:10,239 --> 00:01:14,359
+hundred scientists who were part of the
+
+27
+00:01:11,799 --> 00:01:17,000
+Consortium over aund million doar spent
+
+28
+00:01:14,359 --> 00:01:18,840
+on this it's basically phase three of
+
+29
+00:01:17,000 --> 00:01:20,078
+the Genome Project you know once you
+
+30
+00:01:18,840 --> 00:01:21,719
+have a genome you have to figure out
+
+31
+00:01:20,078 --> 00:01:23,279
+what it's doing and so they've been
+
+32
+00:01:21,719 --> 00:01:25,319
+trying to understand what what the
+
+33
+00:01:23,280 --> 00:01:27,960
+genome does this is what the leader of
+
+34
+00:01:25,319 --> 00:01:31,000
+program said he said the genome is a
+
+35
+00:01:27,959 --> 00:01:33,078
+jungle of information is multi-layered
+
+36
+00:01:31,000 --> 00:01:36,000
+and multi-dimensional and that higher
+
+37
+00:01:33,078 --> 00:01:38,078
+genomes are mostly functional a major
+
+38
+00:01:36,000 --> 00:01:41,599
+major paradigm shift in terms of
+
+39
+00:01:38,078 --> 00:01:44,839
+understanding of the genome and so uh
+
+40
+00:01:41,599 --> 00:01:46,359
+the bottom line is that not only does we
+
+41
+00:01:44,840 --> 00:01:48,240
+usually think of the genetic code you
+
+42
+00:01:46,359 --> 00:01:50,280
+know the code that goes from DNA to RNA
+
+43
+00:01:48,239 --> 00:01:53,000
+to protein well that only accounts for 1
+
+44
+00:01:50,280 --> 00:01:55,439
+to 2% of the genome there are many other
+
+45
+00:01:53,000 --> 00:01:58,680
+codes many many codes in the genome many
+
+46
+00:01:55,438 --> 00:02:00,359
+languages and they overlap and if you
+
+47
+00:01:58,680 --> 00:02:02,240
+ask a computer scientist if they could
+
+48
+00:02:00,359 --> 00:02:04,319
+write overlapping code they would just
+
+49
+00:02:02,239 --> 00:02:07,399
+you know their eyes would go crossed so
+
+50
+00:02:04,319 --> 00:02:09,399
+this is uh this is a amazing reality but
+
+51
+00:02:07,399 --> 00:02:13,120
+it it it suggests that understanding The
+
+52
+00:02:09,399 --> 00:02:14,800
+genome will be the challenge for the uh
+
+53
+00:02:13,120 --> 00:02:17,800
+people who raised their hand who were
+
+54
+00:02:14,800 --> 00:02:19,840
+born before uh 1980 this is that
+
+55
+00:02:17,800 --> 00:02:22,439
+generation's challenge to figure out
+
+56
+00:02:19,840 --> 00:02:24,519
+what in the world is going on inside the
+
+57
+00:02:22,439 --> 00:02:26,639
+genome and what they've discovered so
+
+58
+00:02:24,519 --> 00:02:29,159
+far most people acknowledge is just the
+
+59
+00:02:26,639 --> 00:02:33,399
+tip of the iceberg so how do you try to
+
+60
+00:02:29,159 --> 00:02:34,878
+even approach all this uh new data I
+
+61
+00:02:33,400 --> 00:02:37,800
+just like to tell you about what data
+
+62
+00:02:34,878 --> 00:02:40,079
+visualization is it's an area of science
+
+63
+00:02:37,800 --> 00:02:41,840
+it's uh here's the bottom line the best
+
+64
+00:02:40,080 --> 00:02:46,319
+pattern recognition software in the
+
+65
+00:02:41,840 --> 00:02:48,719
+universe is our brain and so uh you can
+
+66
+00:02:46,318 --> 00:02:50,238
+program a computer to look for a pattern
+
+67
+00:02:48,719 --> 00:02:52,800
+but it'll only look for the pattern you
+
+68
+00:02:50,239 --> 00:02:54,480
+asked it to look for whereas our brain
+
+69
+00:02:52,800 --> 00:02:57,519
+everything we look our brain
+
+70
+00:02:54,479 --> 00:02:59,799
+automatically recognizes patterns and so
+
+71
+00:02:57,519 --> 00:03:01,039
+that's um that's something that is
+
+72
+00:02:59,800 --> 00:03:02,519
+unique to the human brain they still
+
+73
+00:03:01,039 --> 00:03:04,598
+haven't developed a computer that can
+
+74
+00:03:02,519 --> 00:03:08,360
+recognize a face for
+
+75
+00:03:04,598 --> 00:03:11,598
+example so data visualization is the is
+
+76
+00:03:08,360 --> 00:03:14,920
+the um involves the process of making
+
+77
+00:03:11,598 --> 00:03:16,919
+data Visual and when it's visual then
+
+78
+00:03:14,919 --> 00:03:19,958
+our brain can take over and easily
+
+79
+00:03:16,919 --> 00:03:22,919
+recognize patterns and that's the origin
+
+80
+00:03:19,959 --> 00:03:25,560
+of this program called Skittle and so if
+
+81
+00:03:22,919 --> 00:03:28,479
+you look some of you have seen uh
+
+82
+00:03:25,560 --> 00:03:30,959
+genomic data and it's just endless A's
+
+83
+00:03:28,479 --> 00:03:32,560
+T's C's and G's you will find that your
+
+84
+00:03:30,959 --> 00:03:34,080
+brain can't really you know when you
+
+85
+00:03:32,560 --> 00:03:36,519
+look at a few million of those your
+
+86
+00:03:34,080 --> 00:03:38,319
+brain doesn't see any pattern if you do
+
+87
+00:03:36,519 --> 00:03:40,959
+something as simple as adding color to
+
+88
+00:03:38,318 --> 00:03:43,479
+the scheme you can start to see patterns
+
+89
+00:03:40,959 --> 00:03:45,360
+and so um Skittle the first first
+
+90
+00:03:43,479 --> 00:03:47,000
+dimension of Skittle is simple
+
+91
+00:03:45,360 --> 00:03:50,519
+colorization of
+
+92
+00:03:47,000 --> 00:03:50,519
+nucleotides so
+
+93
+00:03:50,799 --> 00:03:55,640
+um I've
+
+94
+00:03:52,878 --> 00:03:58,280
+suggested now for the people in Geneva
+
+95
+00:03:55,639 --> 00:04:01,719
+I'm just going to take a minute and show
+
+96
+00:03:58,280 --> 00:04:03,199
+them some live uh running of the program
+
+97
+00:04:01,719 --> 00:04:05,878
+and I'd be happy to share it with you
+
+98
+00:04:03,199 --> 00:04:08,479
+when I'm back up in Geneva uh maybe next
+
+99
+00:04:05,878 --> 00:04:11,280
+week but uh bear with me just for a
+
+100
+00:04:08,479 --> 00:04:13,199
+moment and I'm going to escape this and
+
+101
+00:04:11,280 --> 00:04:17,478
+close
+
+102
+00:04:13,199 --> 00:04:19,560
+this and I'm going to pull up Skittle
+
+103
+00:04:17,478 --> 00:04:24,599
+program whoops that's not the one I
+
+104
+00:04:19,560 --> 00:04:27,800
+wanted there it is okay so this is a and
+
+105
+00:04:24,600 --> 00:04:32,280
+maybe maybe the people in Geneva can see
+
+106
+00:04:27,800 --> 00:04:35,520
+this but this is display of
+
+107
+00:04:32,279 --> 00:04:38,279
+40,000 approximately 40,000
+
+108
+00:04:35,519 --> 00:04:41,279
+pixels and each pixel represents a
+
+109
+00:04:38,279 --> 00:04:43,758
+nucleotide so the this is chromosome 10
+
+110
+00:04:41,279 --> 00:04:46,239
+of corn and the first pixel is green
+
+111
+00:04:43,759 --> 00:04:47,720
+meaning it's a guanine okay so you're
+
+112
+00:04:46,240 --> 00:04:50,560
+looking at
+
+113
+00:04:47,720 --> 00:04:53,880
+40,000 letters but because it's
+
+114
+00:04:50,560 --> 00:04:55,959
+colorized you can start to see patterns
+
+115
+00:04:53,879 --> 00:04:58,159
+and so uh over here the way Skittle
+
+116
+00:04:55,959 --> 00:05:00,000
+works is there's basic settings at the
+
+117
+00:04:58,160 --> 00:05:02,639
+top you can determine the width WID of
+
+118
+00:05:00,000 --> 00:05:06,319
+this you can determine zoom in and zoom
+
+119
+00:05:02,639 --> 00:05:08,680
+out you can do uh determine go Zoom to
+
+120
+00:05:06,319 --> 00:05:10,918
+any starting point you want there's ways
+
+121
+00:05:08,680 --> 00:05:13,879
+of bringing in new data like from a
+
+122
+00:05:10,918 --> 00:05:15,680
+genome browser and there there are basic
+
+123
+00:05:13,879 --> 00:05:18,240
+functions that will be can be tied to
+
+124
+00:05:15,680 --> 00:05:20,038
+your mouth and then over here there are
+
+125
+00:05:18,240 --> 00:05:22,400
+different
+
+126
+00:05:20,038 --> 00:05:24,599
+displays so right now we're looking at a
+
+127
+00:05:22,399 --> 00:05:27,879
+simple nucleotide display so this is raw
+
+128
+00:05:24,600 --> 00:05:31,120
+data this is the data uh it's just the
+
+129
+00:05:27,879 --> 00:05:34,000
+the data as a genome as a fastop file
+
+130
+00:05:31,120 --> 00:05:35,519
+colorized
+
+131
+00:05:34,000 --> 00:05:37,879
+so
+
+132
+00:05:35,519 --> 00:05:41,240
+the let me just show
+
+133
+00:05:37,879 --> 00:05:44,120
+you what's the gray the gray are
+
+134
+00:05:41,240 --> 00:05:44,120
+unsequenced
+
+135
+00:05:44,800 --> 00:05:51,038
+gaps so let's just see what we can do
+
+136
+00:05:47,439 --> 00:05:54,038
+here um one of the things we can do is
+
+137
+00:05:51,038 --> 00:05:56,680
+we can change a d diameter you can
+
+138
+00:05:54,038 --> 00:06:00,279
+perhaps see that I'm making it
+
+139
+00:05:56,680 --> 00:06:03,240
+narrower and if I close if I change it
+
+140
+00:06:00,279 --> 00:06:06,079
+enough you see a new pattern so
+
+141
+00:06:03,240 --> 00:06:09,120
+basically these are tandem
+
+142
+00:06:06,079 --> 00:06:10,439
+repeats and if I said I love you I love
+
+143
+00:06:09,120 --> 00:06:13,840
+you I love you I love you that's a
+
+144
+00:06:10,439 --> 00:06:16,560
+tandem repeat and if you have a a line
+
+145
+00:06:13,839 --> 00:06:18,439
+break after the U every time all the
+
+146
+00:06:16,560 --> 00:06:20,399
+letters of I love you I love you will
+
+147
+00:06:18,439 --> 00:06:22,360
+line up and you'll get these columns
+
+148
+00:06:20,399 --> 00:06:23,638
+straight up and down columns right so
+
+149
+00:06:22,360 --> 00:06:26,879
+that's what you're seeing here is a
+
+150
+00:06:23,639 --> 00:06:30,439
+tandem repeat and this is a large tandem
+
+151
+00:06:26,879 --> 00:06:33,038
+repeat and it's throughout the the corn
+
+152
+00:06:30,439 --> 00:06:36,399
+genome it's especially abundant in the
+
+153
+00:06:33,038 --> 00:06:38,439
+centr region and it's uh but it's
+
+154
+00:06:36,399 --> 00:06:41,239
+throughout the genome it may represent 5
+
+155
+00:06:38,439 --> 00:06:42,918
+or 10% of the genome so it's a major
+
+156
+00:06:41,240 --> 00:06:45,918
+element and if I told you talked about
+
+157
+00:06:42,918 --> 00:06:48,478
+TM repeats without a visualization you
+
+158
+00:06:45,918 --> 00:06:50,399
+wouldn't immediately get it when you see
+
+159
+00:06:48,478 --> 00:06:51,918
+a picture of it it's really obvious
+
+160
+00:06:50,399 --> 00:06:54,478
+isn't
+
+161
+00:06:51,918 --> 00:06:57,680
+it okay so
+
+162
+00:06:54,478 --> 00:06:59,120
+um that just I'm going to jump back to
+
+163
+00:06:57,680 --> 00:07:03,519
+the PowerPoint for the sake of the
+
+164
+00:06:59,120 --> 00:07:06,240
+people at Geneva but um but perhaps that
+
+165
+00:07:03,519 --> 00:07:06,240
+is helpful to
+
+166
+00:07:14,598 --> 00:07:17,918
+you
+
+167
+00:07:16,319 --> 00:07:20,759
+okay
+
+168
+00:07:17,918 --> 00:07:22,318
+so people at Geneva I'd be happy just
+
+169
+00:07:20,759 --> 00:07:26,840
+ask me and I'll show you how Skittle
+
+170
+00:07:22,319 --> 00:07:28,720
+Works later um okay this is a picture of
+
+171
+00:07:26,839 --> 00:07:30,439
+the cor genome and I like it because it
+
+172
+00:07:28,720 --> 00:07:34,759
+shows a couple things that are very
+
+173
+00:07:30,439 --> 00:07:37,719
+significant one is uh it shows the
+
+174
+00:07:34,759 --> 00:07:40,840
+um the very different nucleotide
+
+175
+00:07:37,720 --> 00:07:43,280
+percentages there are areas that are GC
+
+176
+00:07:40,839 --> 00:07:44,799
+rich and there are areas that are at
+
+177
+00:07:43,279 --> 00:07:48,079
+Rich and sometimes you have areas that
+
+178
+00:07:44,800 --> 00:07:49,800
+are cusing rich they're mostly red and
+
+179
+00:07:48,079 --> 00:07:52,318
+and so you have
+
+180
+00:07:49,800 --> 00:07:55,199
+um it's not you might picture it as a
+
+181
+00:07:52,319 --> 00:07:58,280
+uniform blend but actually there's these
+
+182
+00:07:55,199 --> 00:08:01,240
+huge variations this these areas that
+
+183
+00:07:58,279 --> 00:08:03,758
+are GC rich are where the genes are so
+
+184
+00:08:01,240 --> 00:08:05,120
+these are genic regions and if you look
+
+185
+00:08:03,759 --> 00:08:07,319
+really carefully you'll see a tanm
+
+186
+00:08:05,120 --> 00:08:09,000
+repeat here and a tanm repeat at the
+
+187
+00:08:07,319 --> 00:08:10,319
+beginning of the end of this Gene so
+
+188
+00:08:09,000 --> 00:08:14,879
+let's just look at that a little more
+
+189
+00:08:10,319 --> 00:08:18,960
+carefully um this is a similar tandem
+
+190
+00:08:14,879 --> 00:08:20,840
+this is a similar genic region and uh
+
+191
+00:08:18,959 --> 00:08:23,719
+you can see there's a couple of things
+
+192
+00:08:20,839 --> 00:08:25,359
+one one is it's GC Rich another thing is
+
+193
+00:08:23,720 --> 00:08:27,479
+that if you look really carefully in
+
+194
+00:08:25,360 --> 00:08:30,319
+here you'll see a
+
+195
+00:08:27,478 --> 00:08:32,799
+texture which is called a which which we
+
+196
+00:08:30,319 --> 00:08:35,240
+call the threer pattern but that
+
+197
+00:08:32,799 --> 00:08:38,918
+reflects codon preference in other words
+
+198
+00:08:35,240 --> 00:08:40,839
+you can recognize protein coding regions
+
+199
+00:08:38,918 --> 00:08:43,360
+okay I'm sorry I haven't explained what
+
+200
+00:08:40,839 --> 00:08:46,080
+this new display is this is the repeat
+
+201
+00:08:43,360 --> 00:08:49,200
+map so if you have a light colored pixel
+
+202
+00:08:46,080 --> 00:08:51,720
+here that means that a string this long
+
+203
+00:08:49,200 --> 00:08:54,399
+has repeated once if you have a series
+
+204
+00:08:51,720 --> 00:08:56,040
+of pixels here that means you can see it
+
+205
+00:08:54,399 --> 00:08:58,759
+correlates with this repeat here where
+
+206
+00:08:56,039 --> 00:09:01,159
+these are lining up so this is a very
+
+207
+00:08:58,759 --> 00:09:03,919
+very sensitive map of repeating units
+
+208
+00:09:01,159 --> 00:09:07,159
+within the genome and it's it's much
+
+209
+00:09:03,919 --> 00:09:09,759
+more sensitive than any other uh genome
+
+210
+00:09:07,159 --> 00:09:12,439
+tool for detecting repetition within the
+
+211
+00:09:09,759 --> 00:09:14,000
+genome and what you see here very
+
+212
+00:09:12,440 --> 00:09:16,160
+carefully if you look really carefully
+
+213
+00:09:14,000 --> 00:09:20,759
+is there's a pattern of dark dark light
+
+214
+00:09:16,159 --> 00:09:23,639
+dark dark light and uh that pattern is
+
+215
+00:09:20,759 --> 00:09:26,200
+throughout the Genome of all organisms
+
+216
+00:09:23,639 --> 00:09:30,000
+and it it represents the nature of the
+
+217
+00:09:26,200 --> 00:09:32,278
+protein coding uh the Cod on
+
+218
+00:09:30,000 --> 00:09:34,519
+preferences and what's significant here
+
+219
+00:09:32,278 --> 00:09:36,360
+is that there's a tandm repeat at the
+
+220
+00:09:34,519 --> 00:09:39,600
+beginning and the end of the genic
+
+221
+00:09:36,360 --> 00:09:41,240
+region and so that means that those tanm
+
+222
+00:09:39,600 --> 00:09:44,079
+repeats this is something you find
+
+223
+00:09:41,240 --> 00:09:45,879
+throughout the cor genome it is in
+
+224
+00:09:44,078 --> 00:09:48,439
+thousands and thousands of places in the
+
+225
+00:09:45,879 --> 00:09:49,958
+quino it means normally people have
+
+226
+00:09:48,440 --> 00:09:52,880
+always thought that tanm repeats are
+
+227
+00:09:49,958 --> 00:09:55,199
+junk DNA they're just Pro mistakes that
+
+228
+00:09:52,879 --> 00:09:57,039
+happen during DNA replication but what
+
+229
+00:09:55,200 --> 00:09:58,759
+we find is that these are strategically
+
+230
+00:09:57,039 --> 00:10:01,278
+at the beginning and the end of these
+
+231
+00:09:58,759 --> 00:10:03,399
+genic regions so they're not junk
+
+232
+00:10:01,278 --> 00:10:04,919
+they're they're precisely where they're
+
+233
+00:10:03,399 --> 00:10:06,559
+supposed to be and they always match
+
+234
+00:10:04,919 --> 00:10:08,159
+they come in pairs they kind of
+
+235
+00:10:06,559 --> 00:10:10,439
+represent the beginning and the end of
+
+236
+00:10:08,159 --> 00:10:13,799
+the Exxon the Quin protein quoting
+
+237
+00:10:10,440 --> 00:10:16,120
+region the other interesting thing is um
+
+238
+00:10:13,799 --> 00:10:18,919
+it's a little bit off scale here but we
+
+239
+00:10:16,120 --> 00:10:23,440
+we can look at where the annotated exons
+
+240
+00:10:18,919 --> 00:10:25,399
+recognized exons are and most of the
+
+241
+00:10:23,440 --> 00:10:26,839
+things we see with Skittle have never
+
+242
+00:10:25,399 --> 00:10:29,679
+been described before in other words
+
+243
+00:10:26,839 --> 00:10:33,040
+they've been invisible to the normal
+
+244
+00:10:29,679 --> 00:10:34,239
+Gene searches and so we're seeing uh
+
+245
+00:10:33,039 --> 00:10:38,199
+functional
+
+246
+00:10:34,240 --> 00:10:41,079
+units within the genome that weren't
+
+247
+00:10:38,200 --> 00:10:42,560
+visible using other Technologies for
+
+248
+00:10:41,078 --> 00:10:45,439
+analyzing
+
+249
+00:10:42,559 --> 00:10:48,719
+genomes so this is an example of a
+
+250
+00:10:45,440 --> 00:10:50,880
+similar similar genic region it's very
+
+251
+00:10:48,720 --> 00:10:53,519
+ATR you recognize it right away right
+
+252
+00:10:50,879 --> 00:10:55,559
+it's very distinct here you can see the
+
+253
+00:10:53,519 --> 00:10:58,000
+the texture that I spoke of can you see
+
+254
+00:10:55,559 --> 00:10:59,838
+that texture in the back that's that's
+
+255
+00:10:58,000 --> 00:11:02,278
+very distinctive of protein coding
+
+256
+00:10:59,839 --> 00:11:04,480
+regions and then you can see here this
+
+257
+00:11:02,278 --> 00:11:06,759
+is called an xon track this is these
+
+258
+00:11:04,480 --> 00:11:10,959
+lines are just marking where there's a
+
+259
+00:11:06,759 --> 00:11:13,759
+protein coding Exxon and what you see is
+
+260
+00:11:10,958 --> 00:11:17,399
+uh in this case this Exxon has been
+
+261
+00:11:13,759 --> 00:11:21,559
+identified by previous researchers as a
+
+262
+00:11:17,399 --> 00:11:23,919
+a functional Gene genic unit but 99% of
+
+263
+00:11:21,559 --> 00:11:26,679
+these structures that we see have not
+
+264
+00:11:23,919 --> 00:11:29,240
+been identified previously as exons so
+
+265
+00:11:26,679 --> 00:11:31,919
+we have a new way of of identifying
+
+266
+00:11:29,240 --> 00:11:34,000
+exons in any genome which is very
+
+267
+00:11:31,919 --> 00:11:36,519
+sensitive and very
+
+268
+00:11:34,000 --> 00:11:38,759
+exciting uh just it's more of the same
+
+269
+00:11:36,519 --> 00:11:41,879
+you can see a genic region That's What I
+
+270
+00:11:38,759 --> 00:11:44,360
+Call bracketed by tandem repeats and the
+
+271
+00:11:41,879 --> 00:11:46,519
+tanm repeats again are these are these
+
+272
+00:11:44,360 --> 00:11:48,839
+repeating
+
+273
+00:11:46,519 --> 00:11:51,440
+units so that's uh that's really
+
+274
+00:11:48,839 --> 00:11:54,040
+exciting here's a closer look at the T
+
+275
+00:11:51,440 --> 00:11:56,760
+this texture and you can actually see
+
+276
+00:11:54,039 --> 00:12:00,120
+that the the the greenish yellow the
+
+277
+00:11:56,759 --> 00:12:02,838
+guanines are lining up because this is a
+
+278
+00:12:00,120 --> 00:12:05,159
+very non-random this is the Exxon okay
+
+279
+00:12:02,839 --> 00:12:07,600
+we know this is the Exxon we can see
+
+280
+00:12:05,159 --> 00:12:10,639
+that it has the exonic signature and we
+
+281
+00:12:07,600 --> 00:12:13,720
+can actually see the In The Raw data we
+
+282
+00:12:10,639 --> 00:12:16,959
+can actually see that uh the the third
+
+283
+00:12:13,720 --> 00:12:19,440
+nucleotide tends to always be a g is
+
+284
+00:12:16,958 --> 00:12:21,039
+this a linear sequence on itself yeah
+
+285
+00:12:19,440 --> 00:12:22,639
+I'm sorry I should have expressed that
+
+286
+00:12:21,039 --> 00:12:24,799
+it's like a book so you go to the end of
+
+287
+00:12:22,639 --> 00:12:27,879
+the line and go back to the beginning so
+
+288
+00:12:24,799 --> 00:12:29,639
+it's rastered so
+
+289
+00:12:27,879 --> 00:12:32,838
+um
+
+290
+00:12:29,639 --> 00:12:35,000
+another question yes
+
+291
+00:12:32,839 --> 00:12:38,079
+genome okay
+
+292
+00:12:35,000 --> 00:12:40,159
+so this display link this 88,000
+
+293
+00:12:38,078 --> 00:12:42,319
+nucleotides are present in this picture
+
+294
+00:12:40,159 --> 00:12:45,360
+right here out of three
+
+295
+00:12:42,320 --> 00:12:46,639
+billion so um so you'd have thousands
+
+296
+00:12:45,360 --> 00:12:49,879
+and thousands and thousands and
+
+297
+00:12:46,639 --> 00:12:52,278
+thousands of pages like this oh my good
+
+298
+00:12:49,879 --> 00:12:54,439
+so you can I've spent uh just looking at
+
+299
+00:12:52,278 --> 00:12:57,600
+one chromosome you can spend hours and
+
+300
+00:12:54,440 --> 00:12:59,199
+just get a a few uh highlights of that
+
+301
+00:12:57,600 --> 00:13:02,278
+chromosome so there's a huge huge amount
+
+302
+00:12:59,198 --> 00:13:04,799
+of data um this is again what we one of
+
+303
+00:13:02,278 --> 00:13:06,320
+the things we can do is we can if we see
+
+304
+00:13:04,799 --> 00:13:08,319
+a tandem repeat here we know there's a
+
+305
+00:13:06,320 --> 00:13:11,120
+tandm rep here because here's the repeat
+
+306
+00:13:08,320 --> 00:13:14,160
+map so now we have a new display if we
+
+307
+00:13:11,120 --> 00:13:16,799
+click on the first nucleotide of that
+
+308
+00:13:14,159 --> 00:13:18,838
+line what happens is it will take that
+
+309
+00:13:16,799 --> 00:13:21,759
+line and search the whole genome for
+
+310
+00:13:18,839 --> 00:13:23,760
+that sequence and color wherever the you
+
+311
+00:13:21,759 --> 00:13:26,480
+find it so this is basically just
+
+312
+00:13:23,759 --> 00:13:29,000
+showing that yes this genic region is
+
+313
+00:13:26,480 --> 00:13:30,800
+flanked by tandem repeats at both sides
+
+314
+00:13:29,000 --> 00:13:32,480
+and the fact that it's the same color
+
+315
+00:13:30,799 --> 00:13:36,559
+means it's the same
+
+316
+00:13:32,480 --> 00:13:38,480
+sequence so you can search um this is a
+
+317
+00:13:36,559 --> 00:13:40,559
+similar one A different flanking
+
+318
+00:13:38,480 --> 00:13:42,560
+sequence and U now we're going to jump
+
+319
+00:13:40,559 --> 00:13:45,319
+to Grape so that's just a the reason I
+
+320
+00:13:42,559 --> 00:13:47,439
+used corn to begin with is this the only
+
+321
+00:13:45,320 --> 00:13:49,120
+plant genome I know of where I have the
+
+322
+00:13:47,440 --> 00:13:50,920
+Exxon track data where people have
+
+323
+00:13:49,120 --> 00:13:53,278
+actually figured out where the protein
+
+324
+00:13:50,919 --> 00:13:55,240
+coating regions are but uh let's just
+
+325
+00:13:53,278 --> 00:13:58,120
+consider another horticulturally
+
+326
+00:13:55,240 --> 00:14:00,600
+important crop and that is uh the grape
+
+327
+00:13:58,120 --> 00:14:02,639
+genome and here again you can see very
+
+328
+00:14:00,600 --> 00:14:05,079
+distinct tandem repeat now you see there
+
+329
+00:14:02,639 --> 00:14:07,360
+are variations within the tandem repeat
+
+330
+00:14:05,078 --> 00:14:10,319
+and the question could be asked is that
+
+331
+00:14:07,360 --> 00:14:13,199
+noise like mutations or is that actually
+
+332
+00:14:10,320 --> 00:14:15,759
+information these patterns uh often
+
+333
+00:14:13,198 --> 00:14:18,679
+remind me of again ancient history when
+
+334
+00:14:15,759 --> 00:14:21,919
+we had Punch Cards for computer analysis
+
+335
+00:14:18,679 --> 00:14:24,919
+so uh and you can see how the repeat map
+
+336
+00:14:21,919 --> 00:14:26,719
+very very uh easily detects this and
+
+337
+00:14:24,919 --> 00:14:29,838
+also the how the repeat map is telling
+
+338
+00:14:26,720 --> 00:14:33,000
+us that right here there is an
+
+339
+00:14:29,839 --> 00:14:35,399
+on so visualization data visualization
+
+340
+00:14:33,000 --> 00:14:36,360
+is a powerful tool when you're exploring
+
+341
+00:14:35,399 --> 00:14:38,919
+the
+
+342
+00:14:36,360 --> 00:14:41,959
+unknown this is uh just more tandem
+
+343
+00:14:38,919 --> 00:14:44,719
+repeats uh some of them are you know
+
+344
+00:14:41,958 --> 00:14:47,039
+very uh conserved some of them are
+
+345
+00:14:44,720 --> 00:14:50,680
+broken up is that by Design or by
+
+346
+00:14:47,039 --> 00:14:53,120
+mutation I don't know does the
+
+347
+00:14:50,679 --> 00:14:55,399
+automatically generate patterns that you
+
+348
+00:14:53,120 --> 00:14:59,120
+see on the left because you know the
+
+349
+00:14:55,399 --> 00:15:02,440
+frame was wider orar you wouldn't good
+
+350
+00:14:59,120 --> 00:15:04,959
+good point so um this the repeat map
+
+351
+00:15:02,440 --> 00:15:07,440
+finds these repeats instantly and
+
+352
+00:15:04,958 --> 00:15:10,599
+regardless of your frame width you have
+
+353
+00:15:07,440 --> 00:15:12,079
+to find you have to bring this red line
+
+354
+00:15:10,600 --> 00:15:13,879
+in you see the red line might have been
+
+355
+00:15:12,078 --> 00:15:16,120
+here I brought it over to the over the
+
+356
+00:15:13,879 --> 00:15:19,480
+white first white line and that tells me
+
+357
+00:15:16,120 --> 00:15:23,000
+number one it tells me that um this is a
+
+358
+00:15:19,480 --> 00:15:25,519
+66 base pair repeat the 66 base pairs
+
+359
+00:15:23,000 --> 00:15:27,559
+from here to here and then I can set the
+
+360
+00:15:25,519 --> 00:15:29,720
+width and then everything lines up and I
+
+361
+00:15:27,559 --> 00:15:32,559
+can see what's going on
+
+362
+00:15:29,720 --> 00:15:34,839
+so uh we do have a function which I I
+
+363
+00:15:32,559 --> 00:15:37,479
+didn't while we were live I didn't hit
+
+364
+00:15:34,839 --> 00:15:39,199
+the alignment cylinder display but
+
+365
+00:15:37,480 --> 00:15:41,319
+basically it takes the tanm repeat and
+
+366
+00:15:39,198 --> 00:15:43,278
+turns it into a coil and then adjusts
+
+367
+00:15:41,318 --> 00:15:45,519
+the coil width till all the tanm repeats
+
+368
+00:15:43,278 --> 00:15:48,759
+are visible we actually believe that
+
+369
+00:15:45,519 --> 00:15:51,519
+tanm repeats coil in the nucleus and so
+
+370
+00:15:48,759 --> 00:15:53,000
+they form like solenoid like structures
+
+371
+00:15:51,519 --> 00:15:54,360
+and that that's what these repeats are
+
+372
+00:15:53,000 --> 00:15:58,278
+all
+
+373
+00:15:54,360 --> 00:16:01,278
+about so this is a just a striking uh
+
+374
+00:15:58,278 --> 00:16:02,879
+compon component of if you zoom out so
+
+375
+00:16:01,278 --> 00:16:06,318
+you're looking at a whole grape
+
+376
+00:16:02,879 --> 00:16:09,278
+chromosome what you see is this 66 base
+
+377
+00:16:06,318 --> 00:16:13,000
+pair repeat is massively throughout the
+
+378
+00:16:09,278 --> 00:16:17,159
+center of this chromosome like just
+
+379
+00:16:13,000 --> 00:16:21,120
+um um millions of nucleotides are are
+
+380
+00:16:17,159 --> 00:16:24,000
+just coding for this repeat
+
+381
+00:16:21,120 --> 00:16:27,120
+so okay this is the same repeat actually
+
+382
+00:16:24,000 --> 00:16:29,679
+showing the the solenoid display and so
+
+383
+00:16:27,120 --> 00:16:32,679
+you can see we believe that this is not
+
+384
+00:16:29,679 --> 00:16:34,838
+in nature it can't raster that rastering
+
+385
+00:16:32,679 --> 00:16:36,958
+you know this is a nice 2D display but
+
+386
+00:16:34,839 --> 00:16:39,480
+this is meant to be a 3D display we can
+
+387
+00:16:36,958 --> 00:16:42,239
+make that spin and we can uh we believe
+
+388
+00:16:39,480 --> 00:16:44,399
+this is the actual structure in biology
+
+389
+00:16:42,240 --> 00:16:47,198
+it this keeps coiling because it DNA it
+
+390
+00:16:44,399 --> 00:16:49,318
+turns out wants to align with its own
+
+391
+00:16:47,198 --> 00:16:52,719
+similar sequence and so the logical
+
+392
+00:16:49,318 --> 00:16:52,719
+thing for a repeat is to form a
+
+393
+00:16:52,839 --> 00:16:59,680
+coil so this is uh again Eng grape
+
+394
+00:16:57,078 --> 00:17:01,559
+showing uh but we don't have it there's
+
+395
+00:16:59,679 --> 00:17:03,439
+no published exons to my knowledge for
+
+396
+00:17:01,559 --> 00:17:07,159
+grape but we would predict there's an
+
+397
+00:17:03,440 --> 00:17:09,919
+Exon here almost certainly an Exxon here
+
+398
+00:17:07,160 --> 00:17:13,000
+and and possibly xon here the blue line
+
+399
+00:17:09,919 --> 00:17:15,000
+is a strength indicator and when it goes
+
+400
+00:17:13,000 --> 00:17:17,558
+to purple that means Bingo you've
+
+401
+00:17:15,000 --> 00:17:17,558
+definitely got an
+
+402
+00:17:18,759 --> 00:17:24,439
+Exxon so just more ex evidence of
+
+403
+00:17:22,000 --> 00:17:27,720
+exons
+
+404
+00:17:24,439 --> 00:17:29,160
+um a little more of the same so I'm just
+
+405
+00:17:27,720 --> 00:17:30,960
+going to keep moving because you know I
+
+406
+00:17:29,160 --> 00:17:32,798
+could show you zillions of pictures I
+
+407
+00:17:30,960 --> 00:17:34,880
+mentioned that there are thousands and
+
+408
+00:17:32,798 --> 00:17:37,759
+th these are just a few snapshots of the
+
+409
+00:17:34,880 --> 00:17:40,080
+genome but the Tomato genome is a Sim
+
+410
+00:17:37,759 --> 00:17:41,798
+another horticulturally important crop
+
+411
+00:17:40,079 --> 00:17:44,399
+where they've completed the genome and
+
+412
+00:17:41,798 --> 00:17:48,720
+assembled it and what you see here again
+
+413
+00:17:44,400 --> 00:17:52,038
+is um there's some strange uh repeats
+
+414
+00:17:48,720 --> 00:17:54,079
+here which are fuzzy they're IL defined
+
+415
+00:17:52,038 --> 00:17:55,640
+uh we have the threer pattern which is
+
+416
+00:17:54,079 --> 00:17:58,119
+very strong indication that there's
+
+417
+00:17:55,640 --> 00:18:01,159
+protein coating here and then and then
+
+418
+00:17:58,119 --> 00:18:04,399
+these other ones are possible
+
+419
+00:18:01,159 --> 00:18:05,840
+exons since exons only represent 1 to 2%
+
+420
+00:18:04,400 --> 00:18:08,120
+of the genome it's critical to be able
+
+421
+00:18:05,839 --> 00:18:10,519
+to identify where they
+
+422
+00:18:08,119 --> 00:18:14,079
+are more potential
+
+423
+00:18:10,519 --> 00:18:16,918
+exons um and showing some of the larger
+
+424
+00:18:14,079 --> 00:18:19,079
+tandem repeats that would be you know
+
+425
+00:18:16,919 --> 00:18:21,000
+these really big wavy repeats that I
+
+426
+00:18:19,079 --> 00:18:24,639
+show you there's a name for that it's
+
+427
+00:18:21,000 --> 00:18:26,679
+called Alpha satellite DNA and uh and so
+
+428
+00:18:24,640 --> 00:18:28,480
+all plants and animals when you see the
+
+429
+00:18:26,679 --> 00:18:31,559
+wavy pattern you know you're looking at
+
+430
+00:18:28,480 --> 00:18:33,519
+Alpha satellite DNA the all ha organisms
+
+431
+00:18:31,558 --> 00:18:35,918
+show this wavy
+
+432
+00:18:33,519 --> 00:18:39,519
+pattern and oh I know I want to go back
+
+433
+00:18:35,919 --> 00:18:42,600
+for a second um you see that there's a
+
+434
+00:18:39,519 --> 00:18:45,679
+region here that's got more red and
+
+435
+00:18:42,599 --> 00:18:47,599
+green and versus the other Bluer areas
+
+436
+00:18:45,679 --> 00:18:49,840
+so this is a GCR region so it's a
+
+437
+00:18:47,599 --> 00:18:53,158
+potentially a gene and again you'll see
+
+438
+00:18:49,839 --> 00:18:55,519
+it's bracketed by a tanm repeats so the
+
+439
+00:18:53,159 --> 00:18:58,320
+same pattern we saw in corn is showing
+
+440
+00:18:55,519 --> 00:19:00,798
+up in tomato and to my knowledge this
+
+441
+00:18:58,319 --> 00:19:02,678
+pattern has never been seen before and
+
+442
+00:19:00,798 --> 00:19:04,599
+until I've seen it in the last few
+
+443
+00:19:02,679 --> 00:19:07,120
+months as I've been looking at plant
+
+444
+00:19:04,599 --> 00:19:09,279
+genomes more so this is this is the idea
+
+445
+00:19:07,119 --> 00:19:10,879
+of data visualization is it will show
+
+446
+00:19:09,279 --> 00:19:13,038
+you patterns that the computer wouldn't
+
+447
+00:19:10,880 --> 00:19:14,720
+have spotted what we see is these things
+
+448
+00:19:13,038 --> 00:19:17,038
+come in pairs and they tend to bracket
+
+449
+00:19:14,720 --> 00:19:18,640
+protein coating region what are they
+
+450
+00:19:17,038 --> 00:19:24,158
+doing we don't know but it gives us
+
+451
+00:19:18,640 --> 00:19:24,159
+reason to want to do research on that
+
+452
+00:19:24,359 --> 00:19:29,079
+um a lot of things are actually
+
+453
+00:19:27,119 --> 00:19:32,639
+repeated uh
+
+454
+00:19:29,079 --> 00:19:36,079
+uh so there's a lot of repetition in the
+
+455
+00:19:32,640 --> 00:19:38,759
+genome so that's uh more of these
+
+456
+00:19:36,079 --> 00:19:40,000
+bracketed areas you see this is a this
+
+457
+00:19:38,759 --> 00:19:42,839
+is an
+
+458
+00:19:40,000 --> 00:19:44,960
+important um clue as to what's going on
+
+459
+00:19:42,839 --> 00:19:47,759
+in the genome
+
+460
+00:19:44,960 --> 00:19:50,759
+and none of these have been annotated so
+
+461
+00:19:47,759 --> 00:19:52,679
+it's all you know it's really showing us
+
+462
+00:19:50,759 --> 00:19:54,919
+things about the genome we wouldn't have
+
+463
+00:19:52,679 --> 00:19:56,400
+known without it then the rice genome
+
+464
+00:19:54,919 --> 00:19:59,880
+this is really a pretty picture it's a
+
+465
+00:19:56,400 --> 00:20:03,840
+picture of the uh the centromeric Alpha
+
+466
+00:19:59,880 --> 00:20:07,320
+DNA Alpha DNA of rice and I'll just show
+
+467
+00:20:03,839 --> 00:20:08,798
+it quickly because rice like corn the
+
+468
+00:20:07,319 --> 00:20:11,240
+monocots are really have really
+
+469
+00:20:08,798 --> 00:20:13,079
+different genomes they have a you just
+
+470
+00:20:11,240 --> 00:20:16,038
+notice the color is different there's
+
+471
+00:20:13,079 --> 00:20:18,079
+much more red and green greenish yellow
+
+472
+00:20:16,038 --> 00:20:20,200
+and much less blue so when you're in the
+
+473
+00:20:18,079 --> 00:20:22,199
+dcot everything's bluish and
+
+474
+00:20:20,200 --> 00:20:24,038
+everything's orangish when you go here
+
+475
+00:20:22,200 --> 00:20:26,600
+we've zoomed in so you can see a little
+
+476
+00:20:24,038 --> 00:20:29,200
+more specifically the patterns that are
+
+477
+00:20:26,599 --> 00:20:31,719
+occurring within the the deviations
+
+478
+00:20:29,200 --> 00:20:33,440
+within the tandem repeat and there's
+
+479
+00:20:31,720 --> 00:20:35,558
+some interesting things that are going
+
+480
+00:20:33,440 --> 00:20:37,798
+on here that would be worthy of
+
+481
+00:20:35,558 --> 00:20:40,639
+exploration and you can see here in
+
+482
+00:20:37,798 --> 00:20:42,480
+Greater detail it goes a a dark column a
+
+483
+00:20:40,640 --> 00:20:44,200
+dark column a light column a dark column
+
+484
+00:20:42,480 --> 00:20:47,880
+a dark column a light column so you can
+
+485
+00:20:44,200 --> 00:20:50,558
+see more clearly uh what's what what
+
+486
+00:20:47,880 --> 00:20:52,159
+that threer display is what it's telling
+
+487
+00:20:50,558 --> 00:20:54,720
+us it's telling us every third
+
+488
+00:20:52,159 --> 00:20:56,720
+nucleotide is similar to the three to
+
+489
+00:20:54,720 --> 00:20:59,720
+the one that was three nucleotides
+
+490
+00:20:56,720 --> 00:21:04,440
+before it and and that so basically the
+
+491
+00:20:59,720 --> 00:21:06,919
+lighter the pixel the more the
+
+492
+00:21:04,440 --> 00:21:10,320
+similarity averaged over the whole
+
+493
+00:21:06,919 --> 00:21:12,640
+string so another thing that uh is a
+
+494
+00:21:10,319 --> 00:21:16,278
+major feature of genomes that we're
+
+495
+00:21:12,640 --> 00:21:18,919
+seeing is the every other pattern and
+
+496
+00:21:16,278 --> 00:21:22,960
+this is basically black and blue
+
+497
+00:21:18,919 --> 00:21:26,600
+alternating uh sprinkled with uh with
+
+498
+00:21:22,960 --> 00:21:29,679
+greens and reds and so we have no idea
+
+499
+00:21:26,599 --> 00:21:32,000
+what that is but it's out plant and
+
+500
+00:21:29,679 --> 00:21:33,798
+animal genomes so I don't doubt for a
+
+501
+00:21:32,000 --> 00:21:37,400
+minute that it's doing
+
+502
+00:21:33,798 --> 00:21:41,079
+something um this is just more evidence
+
+503
+00:21:37,400 --> 00:21:44,320
+of exons in rice this pattern is very
+
+504
+00:21:41,079 --> 00:21:45,879
+strong and you can also see the GC rich
+
+505
+00:21:44,319 --> 00:21:48,200
+and you can even see the alignment
+
+506
+00:21:45,880 --> 00:21:50,559
+things are lining up here partially
+
+507
+00:21:48,200 --> 00:21:53,640
+because the because of this pattern it's
+
+508
+00:21:50,558 --> 00:21:55,918
+very very strong it means it constrains
+
+509
+00:21:53,640 --> 00:21:57,240
+most of the nucleotides in the genome a
+
+510
+00:21:55,919 --> 00:21:58,840
+lot of us you know we've been taught
+
+511
+00:21:57,240 --> 00:22:00,720
+that most nucleotides are just drifting
+
+512
+00:21:58,839 --> 00:22:03,199
+and they don't matter uh most
+
+513
+00:22:00,720 --> 00:22:06,278
+nucleotides in genome have a function
+
+514
+00:22:03,200 --> 00:22:09,278
+and therefore um need an
+
+515
+00:22:06,278 --> 00:22:11,119
+explanation more more axons just really
+
+516
+00:22:09,278 --> 00:22:13,480
+rice is really
+
+517
+00:22:11,119 --> 00:22:19,439
+really strong
+
+518
+00:22:13,480 --> 00:22:22,599
+signal um okay so that's that's
+
+519
+00:22:19,440 --> 00:22:24,840
+the kind of a quick overview of what
+
+520
+00:22:22,599 --> 00:22:28,359
+plant genomes look like when they're
+
+521
+00:22:24,839 --> 00:22:30,720
+visualized with Skittle Skittle is a a
+
+522
+00:22:28,359 --> 00:22:32,319
+um program that's in development in fact
+
+523
+00:22:30,720 --> 00:22:35,360
+some of these features the feature that
+
+524
+00:22:32,319 --> 00:22:37,879
+measures the the where the exons are the
+
+525
+00:22:35,359 --> 00:22:40,240
+strength of that signal uh was just is
+
+526
+00:22:37,880 --> 00:22:42,679
+just two days old Josiah emailed me the
+
+527
+00:22:40,240 --> 00:22:45,359
+latest revision uh so it's all still
+
+528
+00:22:42,679 --> 00:22:47,840
+being improved but what what we believe
+
+529
+00:22:45,359 --> 00:22:49,599
+we have here is a universal genome
+
+530
+00:22:47,839 --> 00:22:52,000
+browser now some of you know what a
+
+531
+00:22:49,599 --> 00:22:53,319
+genome browser is but basically if you
+
+532
+00:22:52,000 --> 00:22:55,240
+looking at you know let's say three
+
+533
+00:22:53,319 --> 00:22:57,240
+billion letters and you're trying to
+
+534
+00:22:55,240 --> 00:22:58,919
+figure out what it all codes for you
+
+535
+00:22:57,240 --> 00:23:00,640
+can't just look at at the letters and so
+
+536
+00:22:58,919 --> 00:23:02,759
+they've made genome browsers that help
+
+537
+00:23:00,640 --> 00:23:05,759
+you spot where the genes are help you
+
+538
+00:23:02,759 --> 00:23:09,000
+analyze where the junk or the repeat is
+
+539
+00:23:05,759 --> 00:23:10,960
+and other types of um you know
+
+540
+00:23:09,000 --> 00:23:13,400
+understanding of how the genome is
+
+541
+00:23:10,960 --> 00:23:16,278
+operating we feel that Skittle is the
+
+542
+00:23:13,400 --> 00:23:18,159
+foundation for developing all those all
+
+543
+00:23:16,278 --> 00:23:19,159
+those browsers are one-dimensional
+
+544
+00:23:18,159 --> 00:23:21,919
+they're
+
+545
+00:23:19,159 --> 00:23:24,640
+strings and so this is a two-dimensional
+
+546
+00:23:21,919 --> 00:23:26,720
+display two-dimensional analysis and be
+
+547
+00:23:24,640 --> 00:23:28,840
+and uh it lets us we believe it's the
+
+548
+00:23:26,720 --> 00:23:31,440
+next generation of genome browser and
+
+549
+00:23:28,839 --> 00:23:34,319
+that this we when we get Skittle fully
+
+550
+00:23:31,440 --> 00:23:36,038
+developed we can uh annotate and
+
+551
+00:23:34,319 --> 00:23:38,558
+recognize every feature within the
+
+552
+00:23:36,038 --> 00:23:40,720
+genome in a way that's fundamentally
+
+553
+00:23:38,558 --> 00:23:44,319
+better than genome browsers today so
+
+554
+00:23:40,720 --> 00:23:46,200
+we're excited about that um and it's uh
+
+555
+00:23:44,319 --> 00:23:48,759
+already I think bearing fruit in terms
+
+556
+00:23:46,200 --> 00:23:51,278
+of giving us new insight into plant
+
+557
+00:23:48,759 --> 00:23:55,119
+genomes and other genomes but uh I
+
+558
+00:23:51,278 --> 00:23:58,159
+wanted to add just briefly um some work
+
+559
+00:23:55,119 --> 00:24:00,639
+that my colleague Josiah Seaman did on
+
+560
+00:23:58,159 --> 00:24:03,000
+his own so Josiah Seaman you know a
+
+561
+00:24:00,640 --> 00:24:06,000
+computer scientist I have to I digress
+
+562
+00:24:03,000 --> 00:24:11,278
+for a second
+
+563
+00:24:06,000 --> 00:24:14,038
+um so I was um I was never interested in
+
+564
+00:24:11,278 --> 00:24:16,839
+computer science not even a little bit
+
+565
+00:24:14,038 --> 00:24:18,759
+and um and so I looked that as a
+
+566
+00:24:16,839 --> 00:24:20,278
+necessary evil I mentioned that you know
+
+567
+00:24:18,759 --> 00:24:22,158
+I was the last one in our department to
+
+568
+00:24:20,278 --> 00:24:24,519
+switch from the typewriter to to a
+
+569
+00:24:22,159 --> 00:24:26,760
+computer for word processing and then
+
+570
+00:24:24,519 --> 00:24:28,798
+when email came along I absolutely did
+
+571
+00:24:26,759 --> 00:24:30,240
+not want to be bothered email I was
+
+572
+00:24:28,798 --> 00:24:32,398
+absolutely the last person in our
+
+573
+00:24:30,240 --> 00:24:35,399
+department to finally connect to the
+
+574
+00:24:32,398 --> 00:24:38,239
+email so it's really funny to me that in
+
+575
+00:24:35,398 --> 00:24:40,599
+the last 10 years I've uh played a role
+
+576
+00:24:38,240 --> 00:24:43,278
+in developing what I think are the two
+
+577
+00:24:40,599 --> 00:24:45,480
+most exciting bioinformatics programs
+
+578
+00:24:43,278 --> 00:24:47,880
+available and of course the reason is I
+
+579
+00:24:45,480 --> 00:24:49,240
+had the good sense to partner up with
+
+580
+00:24:47,880 --> 00:24:51,480
+some really brilliant computer
+
+581
+00:24:49,240 --> 00:24:54,679
+scientists because I'm still practically
+
+582
+00:24:51,480 --> 00:24:58,319
+computer illiterate but um but Josiah
+
+583
+00:24:54,679 --> 00:25:00,960
+Josiah is one of those people and um
+
+584
+00:24:58,319 --> 00:25:03,240
+he developed all the programming that
+
+585
+00:25:00,960 --> 00:25:06,000
+went into this and
+
+586
+00:25:03,240 --> 00:25:08,440
+uh it turns out that you can look at any
+
+587
+00:25:06,000 --> 00:25:11,519
+patterns with Skittle like you can look
+
+588
+00:25:08,440 --> 00:25:14,240
+open up any text file you can open up
+
+589
+00:25:11,519 --> 00:25:17,119
+Moby Dick and see what the pattern is
+
+590
+00:25:14,240 --> 00:25:18,919
+you can also open up computer code so
+
+591
+00:25:17,119 --> 00:25:21,798
+the way he found out he could open up
+
+592
+00:25:18,919 --> 00:25:23,960
+computer code was when you start Skittle
+
+593
+00:25:21,798 --> 00:25:25,398
+it asks you what file you want to open
+
+594
+00:25:23,960 --> 00:25:28,440
+and he forgot that he had already opened
+
+595
+00:25:25,398 --> 00:25:30,839
+Skittles so he used Skittle open the
+
+596
+00:25:28,440 --> 00:25:33,679
+skittle executable code does that make
+
+597
+00:25:30,839 --> 00:25:35,918
+sense and he immediately saw some really
+
+598
+00:25:33,679 --> 00:25:39,360
+surprising patterns so it turns out that
+
+599
+00:25:35,919 --> 00:25:41,440
+Skittle can be used for analyzing um
+
+600
+00:25:39,359 --> 00:25:43,319
+execu code and that's machine language
+
+601
+00:25:41,440 --> 00:25:45,558
+so it's something no computer no
+
+602
+00:25:43,319 --> 00:25:48,278
+computer scientist almost no computer
+
+603
+00:25:45,558 --> 00:25:49,678
+scientist can read machine language so
+
+604
+00:25:48,278 --> 00:25:52,720
+this is the first time we actually get
+
+605
+00:25:49,679 --> 00:25:54,640
+to look at computer code uh I don't have
+
+606
+00:25:52,720 --> 00:25:56,360
+the uh that would make a really
+
+607
+00:25:54,640 --> 00:25:57,720
+interesting talk but I just want to give
+
+608
+00:25:56,359 --> 00:26:01,038
+you some highlights from what he said
+
+609
+00:25:57,720 --> 00:26:04,399
+saw um this is Moby
+
+610
+00:26:01,038 --> 00:26:06,839
+Dick so there's no no pattern no
+
+611
+00:26:04,398 --> 00:26:09,719
+nucleotide bi this is the repeat map
+
+612
+00:26:06,839 --> 00:26:10,918
+there's no significant amount of repeats
+
+613
+00:26:09,720 --> 00:26:13,399
+that'd be pretty boring wouldn't it to
+
+614
+00:26:10,919 --> 00:26:17,159
+have two the same chapter twice in a row
+
+615
+00:26:13,398 --> 00:26:20,839
+um so the genome for decades has been
+
+616
+00:26:17,159 --> 00:26:24,360
+called The Book of Life but we assert
+
+617
+00:26:20,839 --> 00:26:27,398
+strongly that the actual genome has no
+
+618
+00:26:24,359 --> 00:26:29,719
+uh physical similarity to a book and a
+
+619
+00:26:27,398 --> 00:26:33,398
+book is passive but a computer program
+
+620
+00:26:29,720 --> 00:26:34,440
+is active and runs it's alive so here's
+
+621
+00:26:33,398 --> 00:26:39,158
+what
+
+622
+00:26:34,440 --> 00:26:41,840
+uh we this is a zoomed out version of a
+
+623
+00:26:39,159 --> 00:26:44,720
+one one of these is executable code
+
+624
+00:26:41,839 --> 00:26:48,720
+zoomed out so you look at the whole code
+
+625
+00:26:44,720 --> 00:26:51,399
+uh maybe 60,000 bytes of code and the
+
+626
+00:26:48,720 --> 00:26:52,640
+other one is a zoomed out so you can see
+
+627
+00:26:51,398 --> 00:26:54,879
+most of a
+
+628
+00:26:52,640 --> 00:26:59,159
+chromosome which one is code and which
+
+629
+00:26:54,880 --> 00:27:01,799
+one is ex uh which one is you know they
+
+630
+00:26:59,159 --> 00:27:03,320
+both have these uh these these major
+
+631
+00:27:01,798 --> 00:27:07,000
+shifts in color
+
+632
+00:27:03,319 --> 00:27:09,480
+change uh so in DNA we would call the in
+
+633
+00:27:07,000 --> 00:27:12,079
+chromosomes we'd say these are isocor
+
+634
+00:27:09,480 --> 00:27:14,319
+where you have a change in the use of
+
+635
+00:27:12,079 --> 00:27:16,879
+where the the use of the nucleotides
+
+636
+00:27:14,319 --> 00:27:18,839
+changes in a fundamental way well it
+
+637
+00:27:16,880 --> 00:27:20,799
+turns out that computer code does the
+
+638
+00:27:18,839 --> 00:27:23,480
+same thing but we actually know what
+
+639
+00:27:20,798 --> 00:27:25,000
+causes these shifts in in color see we
+
+640
+00:27:23,480 --> 00:27:27,720
+know how computer code works but we
+
+641
+00:27:25,000 --> 00:27:29,480
+don't know how genomes work and the fact
+
+642
+00:27:27,720 --> 00:27:31,759
+that we're seeing similarities means we
+
+643
+00:27:29,480 --> 00:27:33,240
+could use one to understand the other
+
+644
+00:27:31,759 --> 00:27:35,440
+when you have a change here they're
+
+645
+00:27:33,240 --> 00:27:37,759
+going like from Pearl to
+
+646
+00:27:35,440 --> 00:27:39,679
+Fortran it's computer it's when you
+
+647
+00:27:37,759 --> 00:27:41,200
+change languages you change your letter
+
+648
+00:27:39,679 --> 00:27:43,798
+use profile
+
+649
+00:27:41,200 --> 00:27:47,038
+right these These are clearly language
+
+650
+00:27:43,798 --> 00:27:49,759
+changes and these are in gen genome are
+
+651
+00:27:47,038 --> 00:27:51,359
+most likely changes to one of the many
+
+652
+00:27:49,759 --> 00:27:55,558
+you know there are many languages in DNA
+
+653
+00:27:51,359 --> 00:27:55,558
+yes sir in the genome
+
+654
+00:27:56,519 --> 00:27:59,798
+thec
+
+655
+00:27:58,079 --> 00:28:04,199
+computer code what's the the computer
+
+656
+00:27:59,798 --> 00:28:07,200
+code is uh z0 is a01 we need two bits to
+
+657
+00:28:04,200 --> 00:28:09,919
+get the four color scheme the book uh
+
+658
+00:28:07,200 --> 00:28:12,319
+the book was I think actually we had 26
+
+659
+00:28:09,919 --> 00:28:15,038
+colors
+
+660
+00:28:12,319 --> 00:28:16,480
+yeah but they were Shades that your eye
+
+661
+00:28:15,038 --> 00:28:20,640
+couldn't
+
+662
+00:28:16,480 --> 00:28:23,960
+distinguish so uh so in terms of these
+
+663
+00:28:20,640 --> 00:28:25,840
+changes in letter use uh computer code
+
+664
+00:28:23,960 --> 00:28:27,679
+and and he looked at other executable
+
+665
+00:28:25,839 --> 00:28:29,199
+code other than his own program we both
+
+666
+00:28:27,679 --> 00:28:34,120
+up lots of and it's it's pretty
+
+667
+00:28:29,200 --> 00:28:36,319
+Universal pattern um then he looked at
+
+668
+00:28:34,119 --> 00:28:39,278
+um again we're zooming out so we're
+
+669
+00:28:36,319 --> 00:28:41,480
+looking at a whole chromosome this is um
+
+670
+00:28:39,278 --> 00:28:44,159
+what's called the repeat map but on a
+
+671
+00:28:41,480 --> 00:28:47,558
+higher scale so here we have for example
+
+672
+00:28:44,159 --> 00:28:50,640
+a long stretch of red which means that a
+
+673
+00:28:47,558 --> 00:28:53,319
+short repeat um less than 20 base pairs
+
+674
+00:28:50,640 --> 00:28:55,278
+long is repeating and it's repeating for
+
+675
+00:28:53,319 --> 00:28:58,639
+thousands and maybe tens of thousands of
+
+676
+00:28:55,278 --> 00:29:00,640
+letters here just this huge repeat and
+
+677
+00:28:58,640 --> 00:29:02,559
+so you can map where all these repeats
+
+678
+00:29:00,640 --> 00:29:05,720
+are in a chromosome and you see they
+
+679
+00:29:02,558 --> 00:29:08,038
+tend to be all at near the beginning
+
+680
+00:29:05,720 --> 00:29:10,600
+well it turns out that the uh computer
+
+681
+00:29:08,038 --> 00:29:13,038
+code is also filled with
+
+682
+00:29:10,599 --> 00:29:16,278
+repeats and for example here would be
+
+683
+00:29:13,038 --> 00:29:20,879
+another stretch of red that also is a 10
+
+684
+00:29:16,278 --> 00:29:23,640
+to 20 uh character repeat and and you'll
+
+685
+00:29:20,880 --> 00:29:25,559
+see that which which one is if I asked
+
+686
+00:29:23,640 --> 00:29:26,759
+you if I hadn't already given it away
+
+687
+00:29:25,558 --> 00:29:29,240
+you wouldn't know which one was a
+
+688
+00:29:26,759 --> 00:29:31,919
+computer code and which one was the
+
+689
+00:29:29,240 --> 00:29:34,278
+genome would you and so if we look
+
+690
+00:29:31,919 --> 00:29:38,600
+closer at these repeats which of these
+
+691
+00:29:34,278 --> 00:29:40,519
+repeats is plant repeat and which one is
+
+692
+00:29:38,599 --> 00:29:45,839
+from computer
+
+693
+00:29:40,519 --> 00:29:48,880
+code this is plant this a computer so
+
+694
+00:29:45,839 --> 00:29:51,359
+um the the the tandem repeats in
+
+695
+00:29:48,880 --> 00:29:54,278
+computer code are incredibly similar to
+
+696
+00:29:51,359 --> 00:29:55,918
+what we see in Plants amazingly similar
+
+697
+00:29:54,278 --> 00:29:57,919
+so here's the interesting thing is for
+
+698
+00:29:55,919 --> 00:29:59,720
+decades people have seen
+
+699
+00:29:57,919 --> 00:30:02,480
+we have known that there are these tanm
+
+700
+00:29:59,720 --> 00:30:05,679
+repeats and they said obviously repeats
+
+701
+00:30:02,480 --> 00:30:07,720
+are junk well are the repeats in
+
+702
+00:30:05,679 --> 00:30:11,679
+computer code junk are there is there a
+
+703
+00:30:07,720 --> 00:30:14,120
+single bit in a computer code that's not
+
+704
+00:30:11,679 --> 00:30:16,880
+functional so it's strongly suggest
+
+705
+00:30:14,119 --> 00:30:19,278
+these tanm re beats aren't here that
+
+706
+00:30:16,880 --> 00:30:21,720
+this isn't a coincidence it reflects
+
+707
+00:30:19,278 --> 00:30:23,798
+functionality and that the the we
+
+708
+00:30:21,720 --> 00:30:25,880
+actually know what these repeats are for
+
+709
+00:30:23,798 --> 00:30:28,440
+these are data
+
+710
+00:30:25,880 --> 00:30:30,919
+files like phone directory would be a
+
+711
+00:30:28,440 --> 00:30:33,000
+data file the first this would be like
+
+712
+00:30:30,919 --> 00:30:34,840
+some Universal thing like telephone
+
+713
+00:30:33,000 --> 00:30:39,278
+number and then people have different
+
+714
+00:30:34,839 --> 00:30:41,480
+numbers so data files uh in computer
+
+715
+00:30:39,278 --> 00:30:43,759
+code give you this perhaps these are
+
+716
+00:30:41,480 --> 00:30:47,798
+data
+
+717
+00:30:43,759 --> 00:30:51,879
+files so these another element of plant
+
+718
+00:30:47,798 --> 00:30:53,278
+genome is that U they're called what are
+
+719
+00:30:51,880 --> 00:30:55,720
+dispersed repeats you know you can have
+
+720
+00:30:53,278 --> 00:30:57,720
+repeats where they're head to toe or you
+
+721
+00:30:55,720 --> 00:31:01,600
+can have the same repeating element all
+
+722
+00:30:57,720 --> 00:31:05,399
+throughout the genome and so these these
+
+723
+00:31:01,599 --> 00:31:07,638
+would be called um these would be plant
+
+724
+00:31:05,398 --> 00:31:10,239
+this would be like a transposable
+
+725
+00:31:07,638 --> 00:31:12,439
+element and these would be words that
+
+726
+00:31:10,240 --> 00:31:15,120
+are common within the computer language
+
+727
+00:31:12,440 --> 00:31:17,399
+so you can actually you know write in
+
+728
+00:31:15,119 --> 00:31:21,278
+any sequence you want and it'll look
+
+729
+00:31:17,398 --> 00:31:22,798
+through through the uh script and find
+
+730
+00:31:21,278 --> 00:31:25,119
+wherever it occurs so you can find out
+
+731
+00:31:22,798 --> 00:31:27,000
+how abundant certain words are so word
+
+732
+00:31:25,119 --> 00:31:31,719
+structure use or transposable elements
+
+733
+00:31:27,000 --> 00:31:35,638
+are very similar within code and within
+
+734
+00:31:31,720 --> 00:31:38,480
+genomes so the bottom line is uh what
+
+735
+00:31:35,638 --> 00:31:41,199
+he's seen is that genomes and executable
+
+736
+00:31:38,480 --> 00:31:43,558
+code have amazing similarities they both
+
+737
+00:31:41,200 --> 00:31:45,080
+use linear strings of code they both use
+
+738
+00:31:43,558 --> 00:31:47,038
+multiple languages they both use
+
+739
+00:31:45,079 --> 00:31:49,558
+parallel processing which means you know
+
+740
+00:31:47,038 --> 00:31:51,879
+you can have lots of genes being reading
+
+741
+00:31:49,558 --> 00:31:54,119
+at the same time like each like lots of
+
+742
+00:31:51,880 --> 00:31:56,600
+processors in your computer uh they both
+
+743
+00:31:54,119 --> 00:31:59,278
+have uh strong character bias where the
+
+744
+00:31:56,599 --> 00:32:01,240
+the total color shift occurs they both
+
+745
+00:31:59,278 --> 00:32:03,798
+use extensive use of recurrent tandem
+
+746
+00:32:01,240 --> 00:32:06,200
+repeats they both use commonly dispersed
+
+747
+00:32:03,798 --> 00:32:08,398
+repeats or words they both use large
+
+748
+00:32:06,200 --> 00:32:10,519
+scale localization of the repeats at
+
+749
+00:32:08,398 --> 00:32:12,359
+near the end ends of the program and
+
+750
+00:32:10,519 --> 00:32:14,399
+they both have passive and active
+
+751
+00:32:12,359 --> 00:32:17,638
+information a book just sits there you
+
+752
+00:32:14,398 --> 00:32:21,398
+can read it or not a program runs and
+
+753
+00:32:17,638 --> 00:32:23,638
+it's self-changing self-modifying so uh
+
+754
+00:32:21,398 --> 00:32:26,119
+all of this is consistent with a trend
+
+755
+00:32:23,638 --> 00:32:29,638
+within genetics more and more
+
+756
+00:32:26,119 --> 00:32:33,599
+genomicists are saying the genome is
+
+757
+00:32:29,638 --> 00:32:35,278
+executable code and that's really a
+
+758
+00:32:33,599 --> 00:32:37,798
+better understanding than the idea that
+
+759
+00:32:35,278 --> 00:32:42,038
+it's an instruction manual and so it's
+
+760
+00:32:37,798 --> 00:32:45,558
+just really um exciting to see uh that
+
+761
+00:32:42,038 --> 00:32:48,599
+Skittle strongly supports that and it
+
+762
+00:32:45,558 --> 00:32:51,440
+goes from a simile or an analogy to
+
+763
+00:32:48,599 --> 00:32:53,439
+actually a um something we can measure
+
+764
+00:32:51,440 --> 00:32:56,159
+where we can actually measure the the
+
+765
+00:32:53,440 --> 00:32:57,679
+features that are in common so I just
+
+766
+00:32:56,159 --> 00:33:00,120
+like to conclude
+
+767
+00:32:57,679 --> 00:33:02,399
+uh I believe there are deep hidden
+
+768
+00:33:00,119 --> 00:33:04,319
+there's deep hidden Beauty in the genome
+
+769
+00:33:02,398 --> 00:33:09,398
+and so I've gazed at these colorful
+
+770
+00:33:04,319 --> 00:33:11,200
+pictures for um hundreds of hours and uh
+
+771
+00:33:09,398 --> 00:33:13,278
+it's really cool The genome has many
+
+772
+00:33:11,200 --> 00:33:15,798
+levels of structure we've only detected
+
+773
+00:33:13,278 --> 00:33:18,278
+a small fraction of it the nucleotide
+
+774
+00:33:15,798 --> 00:33:19,359
+bias is very strong uh which is
+
+775
+00:33:18,278 --> 00:33:22,679
+interesting
+
+776
+00:33:19,359 --> 00:33:25,678
+because uh blue blue black areas want to
+
+777
+00:33:22,679 --> 00:33:27,519
+mutate to red green and red green areas
+
+778
+00:33:25,679 --> 00:33:29,919
+want to mutate to blue black so it's
+
+779
+00:33:27,519 --> 00:33:34,240
+very hard to imagine how to create or
+
+780
+00:33:29,919 --> 00:33:37,159
+sustain those biases um tan repeats it's
+
+781
+00:33:34,240 --> 00:33:39,038
+clear because they bracket the genes can
+
+782
+00:33:37,159 --> 00:33:42,360
+carry information they are not
+
+783
+00:33:39,038 --> 00:33:44,720
+necessarily junk tan repeats can we can
+
+784
+00:33:42,359 --> 00:33:47,439
+we show can lo would logically form into
+
+785
+00:33:44,720 --> 00:33:49,919
+large coils which might have function we
+
+786
+00:33:47,440 --> 00:33:53,038
+see ubiquitous tumer and threer patterns
+
+787
+00:33:49,919 --> 00:33:55,360
+which threer seems to reflect codon bias
+
+788
+00:33:53,038 --> 00:33:57,798
+protein cating bias and then there are
+
+789
+00:33:55,359 --> 00:34:02,079
+many levels of order still waiting to be
+
+790
+00:33:57,798 --> 00:34:04,918
+found and higher genomes are most like
+
+791
+00:34:02,079 --> 00:34:06,519
+computer code that's that's uh the
+
+792
+00:34:04,919 --> 00:34:09,398
+bottom line of what we've been learning
+
+793
+00:34:06,519 --> 00:34:12,159
+the last few years using Skittle that's
+
+794
+00:34:09,398 --> 00:34:12,159
+a good place to
+
+795
+00:34:18,838 --> 00:34:24,559
+stop well the one connection I
+
+796
+00:34:21,480 --> 00:34:27,000
+would suggest is that uh there's
+
+797
+00:34:24,559 --> 00:34:29,199
+communication at every level you know
+
+798
+00:34:27,000 --> 00:34:31,519
+know from the molecules to the cells to
+
+799
+00:34:29,199 --> 00:34:33,559
+the tissues to communication between
+
+800
+00:34:31,519 --> 00:34:36,280
+organisms and then of course there's the
+
+801
+00:34:33,559 --> 00:34:38,320
+brain function which is all kinds of
+
+802
+00:34:36,280 --> 00:34:41,480
+levels of communication there so
+
+803
+00:34:38,320 --> 00:34:44,039
+information is at the at the heart of
+
+804
+00:34:41,480 --> 00:34:47,559
+21st century biology it's all really
+
+805
+00:34:44,039 --> 00:34:50,719
+about information science and
+
+806
+00:34:47,559 --> 00:34:54,559
+um and everything is integrated at a
+
+807
+00:34:50,719 --> 00:34:56,480
+level that blows our mind and so uh it's
+
+808
+00:34:54,559 --> 00:35:00,559
+very hard to conceive of how that
+
+809
+00:34:56,480 --> 00:35:02,199
+integration ation could have ever Arisen
+
+810
+00:35:00,559 --> 00:35:03,480
+and so it's just a really interesting
+
+811
+00:35:02,199 --> 00:35:05,519
+question that I think more and more
+
+812
+00:35:03,480 --> 00:35:08,679
+people are going to be asking is biology
+
+813
+00:35:05,519 --> 00:35:13,039
+is much more fantastic than we ever
+
+814
+00:35:08,679 --> 00:35:15,358
+imagined and uh so it's just a real it
+
+815
+00:35:13,039 --> 00:35:19,480
+makes it exciting to be a biologist in
+
+816
+00:35:15,358 --> 00:35:21,078
+the 21st century right so um basically
+
+817
+00:35:19,480 --> 00:35:23,320
+for data visualization you have to be
+
+818
+00:35:21,079 --> 00:35:25,160
+creative in in presenting the data in
+
+819
+00:35:23,320 --> 00:35:27,960
+new ways to the human brain the human
+
+820
+00:35:25,159 --> 00:35:30,440
+brain works by methods we have no idea
+
+821
+00:35:27,960 --> 00:35:32,320
+but um when we do see a pattern like I'm
+
+822
+00:35:30,440 --> 00:35:34,000
+seeing this pattern where I have a what
+
+823
+00:35:32,320 --> 00:35:36,359
+looks like a large coding region that
+
+824
+00:35:34,000 --> 00:35:38,760
+has not previously been identified as a
+
+825
+00:35:36,358 --> 00:35:40,239
+Exxon and I see it's bracketed by tandem
+
+826
+00:35:38,760 --> 00:35:43,240
+repeats and I realize that's a highly
+
+827
+00:35:40,239 --> 00:35:46,479
+ordered structure and uh what Josiah
+
+828
+00:35:43,239 --> 00:35:48,239
+points out is he says uh Skittle is for
+
+829
+00:35:46,480 --> 00:35:50,199
+discovering the pattern but then you
+
+830
+00:35:48,239 --> 00:35:52,159
+have to write special computer code to
+
+831
+00:35:50,199 --> 00:35:53,919
+analyze the pattern so now we can go
+
+832
+00:35:52,159 --> 00:35:55,759
+back and ask the computer to find every
+
+833
+00:35:53,920 --> 00:35:57,240
+instance on that chromosome where that
+
+834
+00:35:55,760 --> 00:35:59,839
+pattern happens that's that's the next
+
+835
+00:35:57,239 --> 00:35:59,838
+step for that
+
+836
+00:35:59,920 --> 00:36:04,318
+research
+
+837
+00:36:02,000 --> 00:36:08,039
+yeah what's the plan for Skittle and
+
+838
+00:36:04,318 --> 00:36:09,759
+it's under development it becomes fin
+
+839
+00:36:08,039 --> 00:36:11,679
+it's it's available free of charge you
+
+840
+00:36:09,760 --> 00:36:13,599
+can download it anytime it's really easy
+
+841
+00:36:11,679 --> 00:36:15,159
+to you know it's a really easy to
+
+842
+00:36:13,599 --> 00:36:16,920
+understand how to use it but it will
+
+843
+00:36:15,159 --> 00:36:20,000
+continue it's being updated almost
+
+844
+00:36:16,920 --> 00:36:22,280
+weekly so and actually Josiah's just
+
+845
+00:36:20,000 --> 00:36:24,159
+introduced a feature so if you're online
+
+846
+00:36:22,280 --> 00:36:25,960
+and you're using Skittle and he updates
+
+847
+00:36:24,159 --> 00:36:27,879
+it there a little thing will come up on
+
+848
+00:36:25,960 --> 00:36:29,960
+Skittle that says update now and you'll
+
+849
+00:36:27,880 --> 00:36:31,519
+get the latest version so he realizes
+
+850
+00:36:29,960 --> 00:36:34,599
+that it's going to be under rapid and
+
+851
+00:36:31,519 --> 00:36:36,318
+continuous Improvement so so they don't
+
+852
+00:36:34,599 --> 00:36:38,640
+have there's nothing like Skittle no one
+
+853
+00:36:36,318 --> 00:36:40,759
+has a program like Skittle um I wish
+
+854
+00:36:38,639 --> 00:36:43,799
+they would take notice of Skittle but
+
+855
+00:36:40,760 --> 00:36:45,079
+they haven't uh I think as we uh
+
+856
+00:36:43,800 --> 00:36:46,440
+actually this corn pattern that I
+
+857
+00:36:45,079 --> 00:36:48,440
+described when we show that we use
+
+858
+00:36:46,440 --> 00:36:50,400
+Skittle to discover that which I which
+
+859
+00:36:48,440 --> 00:36:53,000
+is I think a major feature of the Corn
+
+860
+00:36:50,400 --> 00:36:54,720
+genome uh then people will say oh I
+
+861
+00:36:53,000 --> 00:36:55,679
+guess maybe I should look into this
+
+862
+00:36:54,719 --> 00:36:58,078
+Skittle
+
+863
+00:36:55,679 --> 00:37:00,199
+business because it is a powerful tool
+
+864
+00:36:58,079 --> 00:37:02,359
+to just see what's going on and also for
+
+865
+00:37:00,199 --> 00:37:04,118
+teaching if you were teaching genome to
+
+866
+00:37:02,358 --> 00:37:06,960
+students and you just show them A's T's
+
+867
+00:37:04,119 --> 00:37:08,800
+C's and G's you you they it doesn't snc
+
+868
+00:37:06,960 --> 00:37:10,639
+in but with Skittle actually you can
+
+869
+00:37:08,800 --> 00:37:12,000
+start to see oh I see what's going on
+
+870
+00:37:10,639 --> 00:37:13,679
+here there's I start to see the
+
+871
+00:37:12,000 --> 00:37:16,039
+different types of organization within
+
+872
+00:37:13,679 --> 00:37:18,879
+the genome so I think uh it's both a
+
+873
+00:37:16,039 --> 00:37:22,960
+research tool and a a great teaching
+
+874
+00:37:18,880 --> 00:37:27,519
+tool the Bott yes we we basically upload
+
+875
+00:37:22,960 --> 00:37:29,159
+uh any fasta file and uh it it basically
+
+876
+00:37:27,519 --> 00:37:31,000
+the first thing it does is just colorize
+
+877
+00:37:29,159 --> 00:37:32,480
+the letters that's really simple but as
+
+878
+00:37:31,000 --> 00:37:35,159
+soon as that happens you start to see
+
+879
+00:37:32,480 --> 00:37:37,519
+patterns then it allows us to change the
+
+880
+00:37:35,159 --> 00:37:39,519
+width or zoom in and out and it allows
+
+881
+00:37:37,519 --> 00:37:41,960
+us to put up the repeat map or the
+
+882
+00:37:39,519 --> 00:37:45,599
+cylinder display or several other
+
+883
+00:37:41,960 --> 00:37:48,159
+display options so but the raw data is
+
+884
+00:37:45,599 --> 00:37:49,800
+that colorful screen and you're actually
+
+885
+00:37:48,159 --> 00:37:51,759
+looking at the genome when you look at
+
+886
+00:37:49,800 --> 00:37:53,640
+that just like you are see looking at a
+
+887
+00:37:51,760 --> 00:37:55,599
+fast file but it's a lot more
+
+888
+00:37:53,639 --> 00:37:59,838
+interesting than a fast
+
+889
+00:37:55,599 --> 00:38:04,200
+file so your repeat
+
+890
+00:37:59,838 --> 00:38:06,078
+file the data so so the repeat map takes
+
+891
+00:38:04,199 --> 00:38:08,318
+the first line whatever whatever the
+
+892
+00:38:06,079 --> 00:38:11,079
+width is it reads the first line and
+
+893
+00:38:08,318 --> 00:38:12,960
+then Compares that to the this to the
+
+894
+00:38:11,079 --> 00:38:14,920
+one nucleotide over the line that
+
+895
+00:38:12,960 --> 00:38:16,720
+represents the next nucleotide over and
+
+896
+00:38:14,920 --> 00:38:18,920
+then it Compares that first line with
+
+897
+00:38:16,719 --> 00:38:22,959
+every other possible alignment on in the
+
+898
+00:38:18,920 --> 00:38:25,318
+view and then for every alignment it it
+
+899
+00:38:22,960 --> 00:38:27,000
+gives a score for the similarity and
+
+900
+00:38:25,318 --> 00:38:31,039
+decides how bright the pixel should be
+
+901
+00:38:27,000 --> 00:38:34,280
+for that spot so it's uh it performs a
+
+902
+00:38:31,039 --> 00:38:37,199
+massive uh calculation each time you
+
+903
+00:38:34,280 --> 00:38:39,720
+move the screen to recognize all the
+
+904
+00:38:37,199 --> 00:38:42,118
+possible similarities between the first
+
+905
+00:38:39,719 --> 00:38:44,399
+string and all the other parts of that
+
+906
+00:38:42,119 --> 00:38:46,559
+display the WID thing seems to me that
+
+907
+00:38:44,400 --> 00:38:51,880
+the WID
+
+908
+00:38:46,559 --> 00:38:55,960
+detn is you optimize the WID to come up
+
+909
+00:38:51,880 --> 00:38:59,039
+with so the dis the display pattern the
+
+910
+00:38:55,960 --> 00:39:01,519
+the the map which is black and the gray
+
+911
+00:38:59,039 --> 00:39:04,119
+the gray scale uh that actually doesn't
+
+912
+00:39:01,519 --> 00:39:06,838
+change as you change width it is it is
+
+913
+00:39:04,119 --> 00:39:09,358
+just measuring the repeats so you'll see
+
+914
+00:39:06,838 --> 00:39:13,039
+those repeats uh regardless of the
+
+915
+00:39:09,358 --> 00:39:15,799
+display and then the cylinder display uh
+
+916
+00:39:13,039 --> 00:39:18,639
+finds the best alignment but the regular
+
+917
+00:39:15,800 --> 00:39:21,039
+display you have to manually uh adjust
+
+918
+00:39:18,639 --> 00:39:24,480
+the width to get those nice uh visual
+
+919
+00:39:21,039 --> 00:39:28,279
+patterns of the U tandem repeats so
+
+920
+00:39:24,480 --> 00:39:33,480
+there's possibly even a pattern
+
+921
+00:39:28,280 --> 00:39:33,480
+wi like you at different you may find
+
+922
+00:39:33,880 --> 00:39:40,079
+commonality so there's a the 66 myrr
+
+923
+00:39:37,079 --> 00:39:43,560
+that I found in tomato was also in
+
+924
+00:39:40,079 --> 00:39:46,039
+corn yeah there's there's uh and and
+
+925
+00:39:43,559 --> 00:39:47,880
+when you find a repeat you'll find that
+
+926
+00:39:46,039 --> 00:39:49,838
+it's a family of repeats throughout that
+
+927
+00:39:47,880 --> 00:39:53,240
+chromosome and all the chromosomes of
+
+928
+00:39:49,838 --> 00:39:55,199
+that species very few repeats are novel
+
+929
+00:39:53,239 --> 00:39:56,919
+they're they're they're like words
+
+930
+00:39:55,199 --> 00:39:58,199
+they're doing something and
+
+931
+00:39:56,920 --> 00:40:00,639
+and they and they're found in many
+
+932
+00:39:58,199 --> 00:40:04,318
+different places in the
+
+933
+00:40:00,639 --> 00:40:06,598
+genome so basically um as as we discover
+
+934
+00:40:04,318 --> 00:40:08,358
+these new layers of information we would
+
+935
+00:40:06,599 --> 00:40:10,599
+like to have it like you know how
+
+936
+00:40:08,358 --> 00:40:12,400
+oldfashioned overhead transparencies you
+
+937
+00:40:10,599 --> 00:40:14,480
+could put several on top and they you
+
+938
+00:40:12,400 --> 00:40:16,559
+could see how they all line up we'd like
+
+939
+00:40:14,480 --> 00:40:17,880
+to have Skittle have transparent Pages
+
+940
+00:40:16,559 --> 00:40:19,799
+some you you could adjust the
+
+941
+00:40:17,880 --> 00:40:21,400
+transparency so we can see where the
+
+942
+00:40:19,800 --> 00:40:23,200
+exons are we can see where the
+
+943
+00:40:21,400 --> 00:40:24,480
+transcriptional factor binding sites are
+
+944
+00:40:23,199 --> 00:40:26,679
+we can see where the histone binding
+
+945
+00:40:24,480 --> 00:40:30,440
+sites are we can see where the fold
+
+946
+00:40:26,679 --> 00:40:32,399
+folding uh motifs are because there's
+
+947
+00:40:30,440 --> 00:40:34,119
+layer upon layer of information and the
+
+948
+00:40:32,400 --> 00:40:36,240
+only way is to have layered a layered
+
+949
+00:40:34,119 --> 00:40:39,800
+display so that's the
+
+950
+00:40:36,239 --> 00:40:39,799
+next uh that's in the
+
+951
+00:40:40,760 --> 00:40:44,680
+works thank you very much
+
+952
+00:40:52,239 --> 00:40:57,959
+thanks this has been a production of
+
+953
+00:40:54,880 --> 00:41:00,960
+Cornell University on the web at
+
+954
+00:40:57,960 --> 00:41:00,960
+cornell.edu
+

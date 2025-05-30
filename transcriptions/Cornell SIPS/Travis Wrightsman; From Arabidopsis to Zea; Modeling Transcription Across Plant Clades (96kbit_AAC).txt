@@ -1,0 +1,366 @@
+[SPEAKER_00]: This is a production of Cornell
+University.
+[SPEAKER_00]: Great.
+[SPEAKER_00]: Thanks for that introduction, Jacob.
+[SPEAKER_00]: I didn't realize today was a cassava
+theme, but at least I'll be talking about
+[SPEAKER_00]: Arabidopsis, which was a dicot.
+[SPEAKER_00]: So there we go.
+[SPEAKER_00]: So for today, I just want to generally
+introduce the concepts behind one of my
+[SPEAKER_00]: PhD projects to use deep learning models
+to model transcriptional processes across
+[SPEAKER_00]: Arabidopsis and maze, and also show a
+little bit of the preliminary data that
+[SPEAKER_00]: I've done from this work.
+[SPEAKER_00]: So just to start off, we're all very aware
+of the different methodologies used to
+[SPEAKER_00]: locate causal loci over the past decades
+of reading.
+[SPEAKER_00]: And we're familiar with QTL mapping and
+also GWAS that we've recently switched to
+[SPEAKER_00]: because of its higher resolution.
+[SPEAKER_00]: But we are still limited in our resolution
+because of linkage, and it's still very
+[SPEAKER_00]: difficult to separate correlated variance
+with the actual causal variance.
+[SPEAKER_00]: And so the question always remains,
+how can we increase the resolution to
+[SPEAKER_00]: target those actual causal variance?
+[SPEAKER_00]: Another thing we need to consider is that,
+at least with QTL and GWAS, you are
+[SPEAKER_00]: directly relating the phenotype with the
+genotype data through a linear model,
+[SPEAKER_00]: and you're generally ignoring the complex
+nonlinear biological processes that
+[SPEAKER_00]: underline these.
+[SPEAKER_00]: And at least recent studies have begun to
+associate the quantitative difference in
+[SPEAKER_00]: genotype with quantitative differences at
+the RNA level, the protein level,
+[SPEAKER_00]: and also the metabolite level.
+[SPEAKER_00]: And today I'll be focusing on how I'm
+looking at the transcriptional level
+[SPEAKER_00]: between DNA and RNA.
+[SPEAKER_00]: So the flavor of deep learning model that
+I'm using is called a convolutional neural
+[SPEAKER_00]: network.
+[SPEAKER_00]: And you might be familiar with the term
+from the context of image recognition or
+[SPEAKER_00]: image classification, where it's the
+current state of the art.
+[SPEAKER_00]: And since convolution is a matrix
+operation, the first thing we're going to
+[SPEAKER_00]: have to do to our DNA is convert it into a
+matrix.
+[SPEAKER_00]: And so the way we do that is we're simply
+going to have a matrix the length of our
+[SPEAKER_00]: sequence and four columns for our ACTG.
+[SPEAKER_00]: And we're just going to put ones in each
+column corresponding to the basis.
+[SPEAKER_00]: So we're going to end up with a sparse
+matrix of zeros and ones.
+[SPEAKER_00]: Then what we're going to do is we're going
+to take our orange box here, which is
+[SPEAKER_00]: basically our sliding window.
+[SPEAKER_00]: We also have corresponding matrices known
+as filters, which I like to think of as
+[SPEAKER_00]: sort of like position weight matrices for
+those familiar with that.
+[SPEAKER_00]: Basically, it's a matrix that weights base
+occurrence in certain positions of the
+window.
+[SPEAKER_00]: So we're going to put one in each window
+over others.
+[SPEAKER_00]: What you're going to do is you're going to
+multiply those two matrices, well,
+[SPEAKER_00]: do a convolution on two of those matrices.
+[SPEAKER_00]: And the result you expect to be higher in
+the right column, which would be a very
+[SPEAKER_00]: dark red color, if the two matrices are
+more similar.
+[SPEAKER_00]: So if your motif is in the window.
+[SPEAKER_00]: And so the way we can sort of visualize
+that is if we slide along the sequence,
+[SPEAKER_00]: and now we've hit a match, and we get a
+high output value in the right hand
+[SPEAKER_00]: column.
+[SPEAKER_00]: The next thing we're going to do is we're
+going to apply what's known as an
+[SPEAKER_00]: activation function.
+[SPEAKER_00]: And in this case, it's what's known as a
+relu.
+[SPEAKER_00]: All the relu does is turn all the negative
+values to zero and keeps all your positive
+[SPEAKER_00]: values the same way.
+[SPEAKER_00]: And this is one of the examples of
+nonlinear functions that we can use in
+[SPEAKER_00]: neural networks.
+[SPEAKER_00]: So one diagram you may be familiar with,
+if you've seen a couple of deep learning
+[SPEAKER_00]: slides before, is this architecture
+diagram of the fully connected layer.
+[SPEAKER_00]: These are typically done after your
+convolutional layers.
+[SPEAKER_00]: And they basically consist of a bunch of
+neurons that are connected to each,
+[SPEAKER_00]: these are the white dots, to each of the
+output labels from the previous layer with
+[SPEAKER_00]: a series of edges that each have their
+associated weights.
+[SPEAKER_00]: And so all you're going to do for each of
+those neurons is take each of your output
+[SPEAKER_00]: data, multiply it by the respective
+weight, sum that result, and apply another
+[SPEAKER_00]: activation function.
+[SPEAKER_00]: That's your result.
+[SPEAKER_00]: And you're going to do this for each layer
+of your model.
+[SPEAKER_00]: And then your final layer is your output
+layer.
+[SPEAKER_00]: And that's just going to have what value
+you want, which in my case would be mRNA
+[SPEAKER_00]: expression levels.
+[SPEAKER_00]: So all of that is assuming you have all
+the parameters that you want.
+[SPEAKER_00]: You have your filter matrices estimated.
+[SPEAKER_00]: You have those weights estimated.
+[SPEAKER_00]: But what if you're starting from scratch
+with a data set and say RNA-seq,
+[SPEAKER_00]: and you want to estimate those parameters?
+[SPEAKER_00]: How do you do that?
+[SPEAKER_00]: And so we just call it training neural
+networks or training models, which is
+[SPEAKER_00]: essentially fitting a model to the data
+model.
+[SPEAKER_00]: And the way we do that is we divide our
+input data up into batches.
+[SPEAKER_00]: For each of those batches, well,
+first we're going to initialize all the
+[SPEAKER_00]: parameters to small random values.
+[SPEAKER_00]: And then we're going to take our first
+batch.
+[SPEAKER_00]: We're going to make a prediction,
+which should be pretty bad because it's
+[SPEAKER_00]: just a random model at this point.
+[SPEAKER_00]: Then we're going to take the error from
+that prediction and the model architecture
+[SPEAKER_00]: and feed that into a training algorithm.
+[SPEAKER_00]: And that training algorithm is going to
+tell us the direction to update those
+[SPEAKER_00]: parameters to minimize our error.
+[SPEAKER_00]: We're going to repeat those steps until
+we're out of data.
+[SPEAKER_00]: That's one epoch.
+[SPEAKER_00]: And then normally, you would run a couple
+of epochs to converge on an accurate
+[SPEAKER_00]: model.
+[SPEAKER_00]: I do want to emphasize that these filters
+I showed earlier, they start out random
+[SPEAKER_00]: because you initialize them randomly.
+[SPEAKER_00]: And as a consequence of the training
+process, they gradually become more
+[SPEAKER_00]: defined as motifs if you think of them as
+PWMs versus ray matrices.
+[SPEAKER_00]: And that is one way that these CNNs can
+extract features from your data because
+[SPEAKER_00]: you don't give it these filters in
+advance.
+[SPEAKER_00]: It learns how to accurately predict
+expression by learning these motifs.
+[SPEAKER_00]: So one of the common criticisms of deep
+learning models is that even though
+[SPEAKER_00]: they're highly predictive and they get
+strong accuracies, how do we interpret
+[SPEAKER_00]: what they're actually learning?
+[SPEAKER_00]: And they're generally considered to have
+low interpretability.
+[SPEAKER_00]: But in recent years, there's been a number
+of techniques to open up that black box
+[SPEAKER_00]: and interpret what the model is actually
+learning.
+[SPEAKER_00]: One example of this is deep lift.
+[SPEAKER_00]: And the way deep lift works simply is by
+taking a random background sequence or a
+[SPEAKER_00]: reference sequence.
+[SPEAKER_00]: It could be some random DNA or maybe tuned
+to the background frequencies of your
+[SPEAKER_00]: specific organism.
+[SPEAKER_00]: And then you take a true positive,
+let's say a gene that you expect to have
+[SPEAKER_00]: high expression.
+[SPEAKER_00]: You run both through the model.
+[SPEAKER_00]: And then you can directly compare the
+intermediate layers of the model and
+[SPEAKER_00]: determine basically what parts of the
+input are most predictive of changes in
+[SPEAKER_00]: the output.
+[SPEAKER_00]: So some recent results.
+[SPEAKER_00]: Or not recent, but some previous results
+from a postdoc in our lab, Hai Wang,
+[SPEAKER_00]: who gave the deep learning seminar at the
+beginning of the semester.
+[SPEAKER_00]: He took three ideas.
+[SPEAKER_00]: One was to use the promoter sequence
+defined as 1,500 base pairs around the
+[SPEAKER_00]: transcription start site.
+[SPEAKER_00]: The terminator sequence is just 1,500 base
+pairs around the transcription termination
+[SPEAKER_00]: site.
+[SPEAKER_00]: And also a combination of the two to
+predict expression using a CNN.
+[SPEAKER_00]: And his results are on the right.
+[SPEAKER_00]: And you can basically see that the
+promoter and the terminator model did the
+[SPEAKER_00]: best.
+[SPEAKER_00]: With R-squareds of about 0.45.
+[SPEAKER_00]: And I do want to emphasize that although
+those R-squareds aren't that high,
+[SPEAKER_00]: we don't expect to have an R-squared of
+one to predict expression from
+[SPEAKER_00]: cis-regulatory sequence.
+[SPEAKER_00]: Because we know that biologically that
+doesn't explain all the variation there.
+[SPEAKER_00]: So these are actually pretty good
+considering the input data.
+[SPEAKER_00]: So another thing I'd like to talk about is
+how we can possibly extend this mRNA model
+[SPEAKER_00]: to generalized different tissues.
+[SPEAKER_00]: Because we know that the DNA is the same
+in different tissues.
+[SPEAKER_00]: But things like epigenetics can change.
+[SPEAKER_00]: But the model isn't currently taking that
+into account.
+[SPEAKER_00]: And so one way we can think of is by
+adding extra columns to this matrix that
+[SPEAKER_00]: correspond to epigenetic signals that
+would be present and differ between
+[SPEAKER_00]: tissues.
+[SPEAKER_00]: So that the model can learn how to predict
+differences in tissue expression.
+[SPEAKER_00]: And so one example could be methylation,
+open chromatin signals, histone
+[SPEAKER_00]: modifications, and also other epigenetic
+marks.
+[SPEAKER_00]: And another concept I want to touch upon
+is transfer learning.
+[SPEAKER_00]: And the way I like to explain it is
+teaching an old dog new tricks.
+[SPEAKER_00]: You have a model that you've already
+trained on one large data set that
+[SPEAKER_00]: achieves high accuracy.
+[SPEAKER_00]: And now you want to apply that model in
+another related data set that's probably
+[SPEAKER_00]: smaller.
+[SPEAKER_00]: So if you train a model from scratch,
+you would not get as high of an accuracy
+[SPEAKER_00]: probably.
+[SPEAKER_00]: But what you can do is freeze some of the
+processes parameters in the first model
+[SPEAKER_00]: that's been trained on the related data
+set and retrain only part of the model in
+[SPEAKER_00]: the smaller data set.
+[SPEAKER_00]: And you would expect to achieve slightly
+higher accuracies with smaller data.
+[SPEAKER_00]: So how does that apply in our case?
+[SPEAKER_00]: Well, if you take an organism like
+Rabidopsis, which generally has a more
+[SPEAKER_00]: diverse and larger collection of RNA-seq
+data sets, you might say that we could
+[SPEAKER_00]: train more accurate models to predict a
+Rabidopsis expression.
+[SPEAKER_00]: And so because we have a lot more data
+there.
+[SPEAKER_00]: But if we want to transfer it into a crop
+species that probably doesn't have the
+[SPEAKER_00]: diverse array of data as a Rabidopsis,
+well, how could we do that?
+[SPEAKER_00]: So if we go back and think about the
+convolutional neural network that I
+[SPEAKER_00]: introduced earlier, this part of the
+network is sort of how it learns to
+[SPEAKER_00]: identify motifs, at least in the
+convolution stage.
+[SPEAKER_00]: And then the neural network stage is
+really where it learns how these motifs
+[SPEAKER_00]: interact together to regulate and modulate
+expression.
+[SPEAKER_00]: And so if we, in this example,
+make the assumption that between,
+[SPEAKER_00]: let's say, a Rabidopsis and Maze,
+these motifs are conserved that drive
+[SPEAKER_00]: expression.
+[SPEAKER_00]: Let's say they're transcription factor
+binding sites that don't change.
+[SPEAKER_00]: But the way they relate to each other and
+drive high or low expression differs.
+[SPEAKER_00]: So what we can do is take an
+Rabidopsis-trained model, erase,
+[SPEAKER_00]: let's say, the last layer's weights,
+and then retrain it on Maze data,
+[SPEAKER_00]: just those last parameters.
+[SPEAKER_00]: And now we have a model that doesn't have
+to relearn how to recognize motifs,
+[SPEAKER_00]: but can just simply be tuned to the
+species-specific connections.
+[SPEAKER_00]: And so this is some preliminary results
+that I've done in a Rabidopsis using
+[SPEAKER_00]: Heismal.
+[SPEAKER_00]: And so what you're looking at on the left
+is a prediction of mean expression across
+[SPEAKER_00]: all tissues for all genes in a Rabidopsis.
+[SPEAKER_00]: And what you can sort of tell is that it's
+similar in accuracy to Heismal model.
+[SPEAKER_00]: And if you compare generally the
+distributions across all tissues,
+[SPEAKER_00]: what I want to emphasize is the models
+have comparable results.
+[SPEAKER_00]: So they do also work in a Rabidopsis.
+[SPEAKER_00]: OK.
+[SPEAKER_00]: So the questions that I want to answer
+with the rest of this work is basically,
+[SPEAKER_00]: can these multi-tissue transcriptional
+models be trained with epigenetic
+[SPEAKER_00]: information?
+[SPEAKER_00]: Is this a good idea?
+[SPEAKER_00]: And will it generalize across tissues?
+[SPEAKER_00]: Another question I'd like to ask that's
+answer is, can we train models on one
+[SPEAKER_00]: species, for example, a Rabidopsis,
+and then use those as useful starting
+[SPEAKER_00]: models to retrain and retune in other
+species to achieve similar accuracies,
+[SPEAKER_00]: but with less available data?
+[SPEAKER_00]: All right.
+[SPEAKER_00]: And with that, I'd just like to
+acknowledge the Buckler Lab, and
+[SPEAKER_00]: specifically, Hygium, and Catherine,
+and Emory for their discussions on this
+[SPEAKER_00]: project, as well as my funding sources.
+[SPEAKER_00]: And I'd be happy to take any questions.
+Mike.
+When you're training on the Rabidopsis
+data, are you only training on one
+genotype per se?
+Or are you going into, like, 1,001
+genomes?
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: Great question.
+[SPEAKER_00]: So the question was, am I training on only
+one Rabidopsis genotype or all potentially
+[SPEAKER_00]: 1,001?
+[SPEAKER_00]: So currently, I'm only training on
+Columbia Zero, the reference genotype.
+[SPEAKER_00]: But the plan is to use all 1,001
+genotypes.
+[SPEAKER_00]: Are there any questions from Zoom?
+[SPEAKER_00]: I don't think so.
+[SPEAKER_00]: OK.
+[SPEAKER_00]: Well, thank you very much, Travis.
+[SPEAKER_00]: Great.
+[SPEAKER_00]: Thanks, guys.
+[SPEAKER_00]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_00]: Thank you.
+Thank you.
+Thank you.

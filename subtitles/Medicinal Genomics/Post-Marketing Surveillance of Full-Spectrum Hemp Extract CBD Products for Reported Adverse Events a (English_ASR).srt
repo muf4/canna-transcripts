@@ -1,0 +1,2244 @@
+1
+00:00:02,459 --> 00:00:06,838
+hello
+
+2
+00:00:04,440 --> 00:00:10,019
+um are your brains tapped
+
+3
+00:00:06,839 --> 00:00:11,519
+pretty full yeah I would imagine uh so
+
+4
+00:00:10,019 --> 00:00:13,620
+whoever's after me I will be taking
+
+5
+00:00:11,519 --> 00:00:15,480
+about 20 minutes so we're running
+
+6
+00:00:13,619 --> 00:00:16,919
+probably 10 minutes late so you've got
+
+7
+00:00:15,480 --> 00:00:18,359
+some time
+
+8
+00:00:16,920 --> 00:00:20,760
+um so let me tell you a quick story
+
+9
+00:00:18,359 --> 00:00:22,320
+about this this is a paper that we just
+
+10
+00:00:20,760 --> 00:00:24,118
+submitted
+
+11
+00:00:22,320 --> 00:00:25,260
+um that I have to say quite honestly I
+
+12
+00:00:24,118 --> 00:00:27,839
+have never
+
+13
+00:00:25,260 --> 00:00:29,760
+got so much pushback from reviewers and
+
+14
+00:00:27,839 --> 00:00:33,479
+and you'll see why in a second but
+
+15
+00:00:29,760 --> 00:00:36,539
+there's also a reason here that uh that
+
+16
+00:00:33,479 --> 00:00:38,519
+I'm presenting this data so just FYI I
+
+17
+00:00:36,539 --> 00:00:40,439
+am not a employee of Charlotte's Web I'm
+
+18
+00:00:38,520 --> 00:00:42,899
+going to talk about Charlotte's Web
+
+19
+00:00:40,439 --> 00:00:45,299
+products but essentially what we did is
+
+20
+00:00:42,899 --> 00:00:47,520
+this surveillance of their products I
+
+21
+00:00:45,299 --> 00:00:49,319
+have to commend Charlotte's Web for
+
+22
+00:00:47,520 --> 00:00:51,420
+actually doing the right thing and
+
+23
+00:00:49,320 --> 00:00:53,939
+really getting involved with trying to
+
+24
+00:00:51,420 --> 00:00:56,160
+create more of a safety database
+
+25
+00:00:53,939 --> 00:00:58,378
+so here's where we're going to go today
+
+26
+00:00:56,159 --> 00:00:59,759
+we're going to start with what I call
+
+27
+00:00:58,378 --> 00:01:02,939
+the problem
+
+28
+00:00:59,759 --> 00:01:06,780
+we'll go to the methods we use to help
+
+29
+00:01:02,939 --> 00:01:07,500
+add to data to solve the problem
+
+30
+00:01:06,780 --> 00:01:09,118
+um
+
+31
+00:01:07,500 --> 00:01:12,060
+we'll talk about the data we'll talk
+
+32
+00:01:09,118 --> 00:01:15,118
+about the AES the actual Adverse Events
+
+33
+00:01:12,060 --> 00:01:17,100
+and then we will go into this serious
+
+34
+00:01:15,118 --> 00:01:20,040
+Adverse Events and then finally we'll
+
+35
+00:01:17,099 --> 00:01:21,539
+talk about the limitations of everything
+
+36
+00:01:20,040 --> 00:01:24,118
+we've done here
+
+37
+00:01:21,540 --> 00:01:27,000
+okay so safety data
+
+38
+00:01:24,118 --> 00:01:30,840
+right so we've got some clinical trials
+
+39
+00:01:27,000 --> 00:01:33,359
+um that's great but clinical trials can
+
+40
+00:01:30,840 --> 00:01:35,880
+often be a group of people that don't
+
+41
+00:01:33,359 --> 00:01:40,618
+necessarily represent the population
+
+42
+00:01:35,879 --> 00:01:41,578
+so we've got to we we need more safety
+
+43
+00:01:40,618 --> 00:01:43,560
+data
+
+44
+00:01:41,578 --> 00:01:46,199
+my feeling in general for all
+
+45
+00:01:43,560 --> 00:01:47,640
+cannabinoids and this could this method
+
+46
+00:01:46,200 --> 00:01:51,420
+that I'm going to talk about could apply
+
+47
+00:01:47,640 --> 00:01:54,359
+to all cannabinoids and there's also a
+
+48
+00:01:51,420 --> 00:01:56,640
+huge barrier for research cbd's relaxed
+
+49
+00:01:54,359 --> 00:01:59,280
+a little bit but because of schedule one
+
+50
+00:01:56,640 --> 00:02:02,519
+there's so many I mean I remember what I
+
+51
+00:01:59,280 --> 00:02:05,359
+had to do to just get a CB1 antagonist
+
+52
+00:02:02,519 --> 00:02:09,500
+when I was doing laboratory work it was
+
+53
+00:02:05,359 --> 00:02:09,500
+uh a bit onerous
+
+54
+00:02:09,899 --> 00:02:13,500
+um so again Charlotte's Web has made
+
+55
+00:02:11,818 --> 00:02:15,179
+this data available and essentially I
+
+56
+00:02:13,500 --> 00:02:16,318
+took the data and did what I could with
+
+57
+00:02:15,180 --> 00:02:18,360
+it
+
+58
+00:02:16,318 --> 00:02:21,419
+okay so let's talk about methods we used
+
+59
+00:02:18,360 --> 00:02:25,379
+so first and this may seem like a simple
+
+60
+00:02:21,419 --> 00:02:28,679
+method but it's actually uh per uh FDA
+
+61
+00:02:25,378 --> 00:02:31,679
+regulation there's a phone number on the
+
+62
+00:02:28,680 --> 00:02:33,900
+these um oh I thought I had a
+
+63
+00:02:31,680 --> 00:02:35,819
+the animation there anyway there's a
+
+64
+00:02:33,900 --> 00:02:38,159
+phone number uh here at the bottom of
+
+65
+00:02:35,818 --> 00:02:39,780
+this label that points out where you can
+
+66
+00:02:38,159 --> 00:02:41,219
+get a hold of somebody if you're having
+
+67
+00:02:39,780 --> 00:02:43,439
+some sort of an issue with the product
+
+68
+00:02:41,219 --> 00:02:45,000
+that's a really important piece and
+
+69
+00:02:43,439 --> 00:02:46,579
+that's often something that's not done
+
+70
+00:02:45,000 --> 00:02:50,159
+in the Cannabis industry unfortunately
+
+71
+00:02:46,580 --> 00:02:52,080
+so if you want to call and put it talk
+
+72
+00:02:50,159 --> 00:02:54,359
+about an adverse event you've got that
+
+73
+00:02:52,080 --> 00:02:56,700
+option
+
+74
+00:02:54,360 --> 00:02:59,720
+now we put together a database in the
+
+75
+00:02:56,699 --> 00:03:07,139
+database we followed industry standards
+
+76
+00:02:59,719 --> 00:03:08,959
+based on the CPC cpsc the EPA and the
+
+77
+00:03:07,139 --> 00:03:12,000
+FDA
+
+78
+00:03:08,959 --> 00:03:14,580
+unfortunately what this database doesn't
+
+79
+00:03:12,000 --> 00:03:17,039
+include is is it includes some patient
+
+80
+00:03:14,580 --> 00:03:19,440
+demographics but not a lot of it and
+
+81
+00:03:17,039 --> 00:03:21,120
+it's not designed to collect the
+
+82
+00:03:19,439 --> 00:03:23,759
+specific reason why the consumer used
+
+83
+00:03:21,120 --> 00:03:25,439
+the product although sometimes uh show
+
+84
+00:03:23,759 --> 00:03:28,280
+this web and their system was able to
+
+85
+00:03:25,439 --> 00:03:28,280
+pick up that reason
+
+86
+00:03:28,439 --> 00:03:34,560
+okay so
+
+87
+00:03:30,199 --> 00:03:36,780
+safety call is a group out of I think
+
+88
+00:03:34,560 --> 00:03:38,219
+they're in Jersey either somewhere on
+
+89
+00:03:36,780 --> 00:03:40,939
+the East Coast
+
+90
+00:03:38,219 --> 00:03:43,739
+and they have set up a really excellent
+
+91
+00:03:40,939 --> 00:03:46,139
+surveillance program for all of Industry
+
+92
+00:03:43,739 --> 00:03:48,780
+so whether you're using bug spray or
+
+93
+00:03:46,139 --> 00:03:51,059
+you're using CBD products or you're
+
+94
+00:03:48,780 --> 00:03:54,299
+using a dietary supplement safety call
+
+95
+00:03:51,060 --> 00:03:57,060
+has got a service that allows you to
+
+96
+00:03:54,299 --> 00:03:59,099
+track any sort of Adverse Events
+
+97
+00:03:57,060 --> 00:04:00,840
+and this is the scheme they use and I'll
+
+98
+00:03:59,098 --> 00:04:03,419
+go through each step of this phase one
+
+99
+00:04:00,840 --> 00:04:05,400
+phase two and phase three
+
+100
+00:04:03,419 --> 00:04:08,039
+so phase one let's talk about that so
+
+101
+00:04:05,400 --> 00:04:10,260
+intake and documentation
+
+102
+00:04:08,039 --> 00:04:14,280
+um so you get a narrative of the product
+
+103
+00:04:10,259 --> 00:04:16,019
+used in reported adverse effects on this
+
+104
+00:04:14,280 --> 00:04:18,060
+um and you're looking for accurate
+
+105
+00:04:16,019 --> 00:04:20,459
+identification of products or active
+
+106
+00:04:18,060 --> 00:04:22,860
+ingredients and I have to say that you
+
+107
+00:04:20,459 --> 00:04:25,319
+look at a lot of published studies on
+
+108
+00:04:22,860 --> 00:04:29,819
+herbal medicines in general and their
+
+109
+00:04:25,319 --> 00:04:32,040
+Adverse Events and or their case studies
+
+110
+00:04:29,819 --> 00:04:34,259
+where there was an issue and they never
+
+111
+00:04:32,040 --> 00:04:36,900
+characterized the product so we we don't
+
+112
+00:04:34,259 --> 00:04:38,939
+even know if it's a really the right
+
+113
+00:04:36,899 --> 00:04:40,258
+product that we're talking about or if
+
+114
+00:04:38,939 --> 00:04:43,379
+it actually had the right ingredients
+
+115
+00:04:40,259 --> 00:04:45,660
+that it it claimed it had
+
+116
+00:04:43,379 --> 00:04:47,819
+um also we got we did pick up some of
+
+117
+00:04:45,660 --> 00:04:51,180
+the demographics as I mentioned
+
+118
+00:04:47,819 --> 00:04:52,860
+but often not everything and then we
+
+119
+00:04:51,180 --> 00:04:55,019
+looked at circumstances and time course
+
+120
+00:04:52,860 --> 00:04:56,819
+of exposure
+
+121
+00:04:55,019 --> 00:04:59,579
+and then finally specific adverse
+
+122
+00:04:56,819 --> 00:05:01,560
+effects experienced and sufficient
+
+123
+00:04:59,579 --> 00:05:04,139
+symptom characterization to be able to
+
+124
+00:05:01,560 --> 00:05:07,439
+categorize it is this real is it
+
+125
+00:05:04,139 --> 00:05:11,418
+something we need to pursue further
+
+126
+00:05:07,439 --> 00:05:11,418
+um phase two what was done here
+
+127
+00:05:14,418 --> 00:05:19,198
+is essentially a follow-up of phase one
+
+128
+00:05:17,100 --> 00:05:21,419
+incidents so
+
+129
+00:05:19,199 --> 00:05:24,240
+detailed information was collected
+
+130
+00:05:21,418 --> 00:05:26,339
+regarding the most recent exposure the
+
+131
+00:05:24,240 --> 00:05:27,840
+history of exposure
+
+132
+00:05:26,339 --> 00:05:30,119
+um the details of the adverse symptoms
+
+133
+00:05:27,839 --> 00:05:32,579
+treatment of the adverse symptoms if
+
+134
+00:05:30,120 --> 00:05:35,220
+there was any treatment brief but
+
+135
+00:05:32,579 --> 00:05:38,459
+relevant medical and Drug history if
+
+136
+00:05:35,220 --> 00:05:41,100
+they could gather that sometimes it they
+
+137
+00:05:38,459 --> 00:05:44,038
+couldn't and then if subjects received
+
+138
+00:05:41,100 --> 00:05:47,639
+Medical Treatments medical records were
+
+139
+00:05:44,038 --> 00:05:49,800
+obtained sometimes now all of this seems
+
+140
+00:05:47,639 --> 00:05:51,180
+rather nebulous because you're dealing
+
+141
+00:05:49,800 --> 00:05:53,220
+with consumers you're not dealing with
+
+142
+00:05:51,180 --> 00:05:54,660
+somebody that's in a hospital so you get
+
+143
+00:05:53,220 --> 00:05:56,460
+what you can from them and sometimes
+
+144
+00:05:54,660 --> 00:05:59,520
+they refuse to answer or sometimes they
+
+145
+00:05:56,459 --> 00:06:01,138
+don't know or sometimes there's a it's
+
+146
+00:05:59,519 --> 00:06:02,899
+an email chain and there's just not
+
+147
+00:06:01,139 --> 00:06:05,639
+enough data there
+
+148
+00:06:02,899 --> 00:06:07,379
+phase three is where the rubber hits the
+
+149
+00:06:05,639 --> 00:06:09,478
+road and you actually get a healthcare
+
+150
+00:06:07,379 --> 00:06:12,779
+provider a physician experienced an
+
+151
+00:06:09,478 --> 00:06:15,060
+adverse drug events involved so they
+
+152
+00:06:12,779 --> 00:06:16,379
+look at temporality they look at
+
+153
+00:06:15,060 --> 00:06:18,660
+biological physiological or
+
+154
+00:06:16,379 --> 00:06:20,519
+pharmacological plausibility and they
+
+155
+00:06:18,660 --> 00:06:22,199
+look at alternative causes that could
+
+156
+00:06:20,519 --> 00:06:23,818
+have happened
+
+157
+00:06:22,199 --> 00:06:26,460
+um and so that's really how this whole
+
+158
+00:06:23,819 --> 00:06:29,039
+system was set up
+
+159
+00:06:26,459 --> 00:06:30,599
+and then further in phase three uh d
+
+160
+00:06:29,038 --> 00:06:33,240
+challenge did the product exposure
+
+161
+00:06:30,600 --> 00:06:35,699
+withdrawal result in amelioration or
+
+162
+00:06:33,240 --> 00:06:38,699
+elimination of the symptoms or reported
+
+163
+00:06:35,699 --> 00:06:40,199
+effects and then the re-challenge did a
+
+164
+00:06:38,699 --> 00:06:41,939
+re-challenge occur and I have to say
+
+165
+00:06:40,199 --> 00:06:43,379
+when we get to the saes they're going to
+
+166
+00:06:41,939 --> 00:06:45,839
+be disappointed because a lot of times
+
+167
+00:06:43,379 --> 00:06:47,339
+this wasn't done but I'll go through
+
+168
+00:06:45,839 --> 00:06:49,318
+them nevertheless
+
+169
+00:06:47,339 --> 00:06:51,239
+and then after the review
+
+170
+00:06:49,319 --> 00:06:54,000
+what's the opinion
+
+171
+00:06:51,240 --> 00:06:56,280
+was it real
+
+172
+00:06:54,000 --> 00:06:58,199
+so
+
+173
+00:06:56,279 --> 00:07:01,439
+the seriousness and need for follow-up
+
+174
+00:06:58,199 --> 00:07:04,500
+this is that last slide phase three
+
+175
+00:07:01,439 --> 00:07:07,740
+is done by a board-certified position
+
+176
+00:07:04,500 --> 00:07:10,019
+in a case meets the the serious adverse
+
+177
+00:07:07,740 --> 00:07:12,060
+event criteria safety cough repair is
+
+178
+00:07:10,019 --> 00:07:14,159
+the appropriate midwatch form and then
+
+179
+00:07:12,060 --> 00:07:18,180
+reports that
+
+180
+00:07:14,160 --> 00:07:19,680
+now this is a period of 18 months and it
+
+181
+00:07:18,180 --> 00:07:23,699
+also gives you an idea of Charlotte's
+
+182
+00:07:19,680 --> 00:07:27,300
+Web sales but it's a period of 18 months
+
+183
+00:07:23,699 --> 00:07:28,978
+and this is what was used to grade the
+
+184
+00:07:27,300 --> 00:07:30,740
+Adverse Events and this is a typical
+
+185
+00:07:28,978 --> 00:07:33,060
+this is not
+
+186
+00:07:30,740 --> 00:07:35,579
+cannabinoid friendly this is just what
+
+187
+00:07:33,060 --> 00:07:37,800
+is used in the industry to grade Adverse
+
+188
+00:07:35,579 --> 00:07:40,680
+Events so grade one is considered very
+
+189
+00:07:37,800 --> 00:07:43,680
+mild you get to grade three it's more
+
+190
+00:07:40,680 --> 00:07:45,860
+severe you get the grade five well you
+
+191
+00:07:43,680 --> 00:07:45,860
+died
+
+192
+00:07:45,918 --> 00:07:51,478
+uh now the dose range now what
+
+193
+00:07:48,978 --> 00:07:53,519
+Charlotte's Web has determined is that
+
+194
+00:07:51,478 --> 00:07:55,800
+they've got about a 1.4 milligram per
+
+195
+00:07:53,519 --> 00:07:58,978
+kilogram of CBD average daily
+
+196
+00:07:55,800 --> 00:08:00,598
+consumption and I'd love to hear
+
+197
+00:07:58,978 --> 00:08:02,818
+comments from the Physicians as we as we
+
+198
+00:08:00,598 --> 00:08:06,360
+get to the end of this but
+
+199
+00:08:02,819 --> 00:08:08,819
+um it's it's uh it seems on the low end
+
+200
+00:08:06,360 --> 00:08:10,740
+to me but uh maybe maybe that's just my
+
+201
+00:08:08,819 --> 00:08:12,539
+naivete
+
+202
+00:08:10,740 --> 00:08:14,098
+um certain suggestions vary by product
+
+203
+00:08:12,538 --> 00:08:16,318
+with the highest recommended serving
+
+204
+00:08:14,098 --> 00:08:17,339
+size of about 30 milligrams three times
+
+205
+00:08:16,319 --> 00:08:18,960
+a day so now you're getting 90
+
+206
+00:08:17,339 --> 00:08:20,758
+milligrams
+
+207
+00:08:18,959 --> 00:08:24,000
+um
+
+208
+00:08:20,759 --> 00:08:25,439
+and then the results what we found was
+
+209
+00:08:24,000 --> 00:08:27,538
+there were about two million product
+
+210
+00:08:25,439 --> 00:08:30,959
+sales now
+
+211
+00:08:27,538 --> 00:08:33,000
+product sales is what we had to use to
+
+212
+00:08:30,959 --> 00:08:37,079
+be able to establish any sort of
+
+213
+00:08:33,000 --> 00:08:38,940
+Statistics or at least numbers and I
+
+214
+00:08:37,080 --> 00:08:40,560
+realize there's a huge limitation here
+
+215
+00:08:38,940 --> 00:08:44,099
+we'll talk about that limitation in a
+
+216
+00:08:40,559 --> 00:08:46,139
+second but it one product per house was
+
+217
+00:08:44,099 --> 00:08:48,240
+really one person using it or multiple
+
+218
+00:08:46,139 --> 00:08:50,039
+people using it so it's just hard to
+
+219
+00:08:48,240 --> 00:08:52,500
+know based on product sales but that's
+
+220
+00:08:50,039 --> 00:08:54,480
+what we've got right you just can't know
+
+221
+00:08:52,500 --> 00:08:56,220
+when something's out there now there's a
+
+222
+00:08:54,480 --> 00:09:00,720
+history of using product sales with
+
+223
+00:08:56,220 --> 00:09:03,420
+other data such as some of the hair
+
+224
+00:09:00,720 --> 00:09:05,940
+sprays and bug sprays and that sort of
+
+225
+00:09:03,419 --> 00:09:07,860
+thing so you know we used what we could
+
+226
+00:09:05,940 --> 00:09:10,019
+we had to back it up with past
+
+227
+00:09:07,860 --> 00:09:12,778
+experience and in fact there was past
+
+228
+00:09:10,019 --> 00:09:15,778
+experience where they used product sales
+
+229
+00:09:12,778 --> 00:09:19,919
+the number of AES not serious A's but
+
+230
+00:09:15,778 --> 00:09:22,259
+AES was 431 during this period now if
+
+231
+00:09:19,919 --> 00:09:24,059
+you if we correlate that and like I said
+
+232
+00:09:22,259 --> 00:09:26,819
+we can't really do that but if you were
+
+233
+00:09:24,059 --> 00:09:28,619
+to say roughly 2 million people were
+
+234
+00:09:26,820 --> 00:09:33,440
+using the product
+
+235
+00:09:28,620 --> 00:09:35,580
+and there were 431 AES well that's about
+
+236
+00:09:33,440 --> 00:09:39,000
+0.022 percent
+
+237
+00:09:35,580 --> 00:09:42,060
+AES per unit sold
+
+238
+00:09:39,000 --> 00:09:45,659
+again it's a weak number but it is a
+
+239
+00:09:42,059 --> 00:09:48,479
+start now SAE occurrence was about point
+
+240
+00:09:45,659 --> 00:09:49,799
+zero zero zero three six percent per
+
+241
+00:09:48,480 --> 00:09:54,440
+unit sold
+
+242
+00:09:49,799 --> 00:09:54,439
+so again it gives us some data
+
+243
+00:09:54,480 --> 00:09:59,039
+um seven serious AES were categorized in
+
+244
+00:09:57,839 --> 00:10:02,279
+this time
+
+245
+00:09:59,039 --> 00:10:05,639
+of the AES 98.4 percent were classified
+
+246
+00:10:02,278 --> 00:10:05,639
+as non-serious
+
+247
+00:10:05,879 --> 00:10:10,679
+now here's a summary of the Adverse
+
+248
+00:10:08,220 --> 00:10:12,778
+Events I don't by any means stretch the
+
+249
+00:10:10,679 --> 00:10:14,338
+imagination I don't expect you to be
+
+250
+00:10:12,778 --> 00:10:15,419
+able to read this but we'll pull it out
+
+251
+00:10:14,339 --> 00:10:18,899
+for you
+
+252
+00:10:15,419 --> 00:10:21,059
+and so what we see is gastro effects
+
+253
+00:10:18,899 --> 00:10:24,839
+gastrointestinal effects were the most
+
+254
+00:10:21,059 --> 00:10:27,419
+common nausea about 25 people
+
+255
+00:10:24,839 --> 00:10:30,180
+um General gastrointestinal symptoms
+
+256
+00:10:27,419 --> 00:10:32,759
+about 16 abdominal discomfort about 11
+
+257
+00:10:30,179 --> 00:10:36,838
+people and or
+
+258
+00:10:32,759 --> 00:10:38,759
+products sold and diarrhea about 10.
+
+259
+00:10:36,839 --> 00:10:40,980
+and then if we look at the central
+
+260
+00:10:38,759 --> 00:10:44,278
+nervous system headache was common
+
+261
+00:10:40,980 --> 00:10:46,320
+dizziness common for Adverse Events that
+
+262
+00:10:44,278 --> 00:10:48,958
+is this is really a very small
+
+263
+00:10:46,320 --> 00:10:51,720
+percentage but headaches dizziness and
+
+264
+00:10:48,958 --> 00:10:52,879
+seizures and then if we look at the
+
+265
+00:10:51,720 --> 00:10:57,660
+central
+
+266
+00:10:52,879 --> 00:11:01,100
+psych affects anxiety in about 23 users
+
+267
+00:10:57,659 --> 00:11:03,240
+in insomnia in about 13 users
+
+268
+00:11:01,100 --> 00:11:05,519
+and so
+
+269
+00:11:03,240 --> 00:11:08,100
+there's our numbers if you look at
+
+270
+00:11:05,519 --> 00:11:11,339
+serious Adverse Events and we can use
+
+271
+00:11:08,100 --> 00:11:13,500
+per unit sold we could see about 0.36
+
+272
+00:11:11,339 --> 00:11:15,000
+saes per 100
+
+273
+00:11:13,500 --> 00:11:18,019
+000 units
+
+274
+00:11:15,000 --> 00:11:20,940
+I'd say that's pretty good
+
+275
+00:11:18,019 --> 00:11:24,299
+so in terms of the essays there were two
+
+276
+00:11:20,940 --> 00:11:25,740
+GI issues two neuro two psych and one
+
+277
+00:11:24,299 --> 00:11:28,439
+ocular
+
+278
+00:11:25,740 --> 00:11:31,620
+and you all go through these and you can
+
+279
+00:11:28,440 --> 00:11:33,660
+help you can help me determine if you
+
+280
+00:11:31,620 --> 00:11:35,220
+think they're real but I I have an
+
+281
+00:11:33,659 --> 00:11:37,559
+opinion
+
+282
+00:11:35,220 --> 00:11:40,800
+okay so let's look at this one 35 year
+
+283
+00:11:37,559 --> 00:11:42,899
+old uh using Charlotte's Web uh hemp
+
+284
+00:11:40,799 --> 00:11:45,539
+extract which is about 17 milligrams per
+
+285
+00:11:42,899 --> 00:11:48,360
+ml for about 45 days for anxiety and
+
+286
+00:11:45,539 --> 00:11:50,939
+depression the dose was unclear she was
+
+287
+00:11:48,360 --> 00:11:52,700
+titrating up to 40 milligrams a day well
+
+288
+00:11:50,940 --> 00:11:54,839
+we really don't know from there
+
+289
+00:11:52,700 --> 00:11:57,360
+unspecified Pharmaceuticals so there
+
+290
+00:11:54,839 --> 00:11:59,459
+were Pharmaceuticals on board as well
+
+291
+00:11:57,360 --> 00:12:01,919
+uh and then this person developed
+
+292
+00:11:59,458 --> 00:12:04,379
+agitation chills night sweats insomnia
+
+293
+00:12:01,919 --> 00:12:07,559
+and loss of appetite and then into a
+
+294
+00:12:04,379 --> 00:12:09,600
+fever stop the CBD went to the energy
+
+295
+00:12:07,559 --> 00:12:10,559
+care center and was advised to go to the
+
+296
+00:12:09,600 --> 00:12:13,079
+ER
+
+297
+00:12:10,559 --> 00:12:14,819
+if his fever didn't resolve his fever
+
+298
+00:12:13,078 --> 00:12:18,120
+continued for approximately 78 more
+
+299
+00:12:14,820 --> 00:12:19,920
+seven to eight more days and he began to
+
+300
+00:12:18,120 --> 00:12:22,339
+experience headaches nausea and vomiting
+
+301
+00:12:19,919 --> 00:12:22,338
+with blood
+
+302
+00:12:22,578 --> 00:12:28,078
+he presented to the ER blood and urine
+
+303
+00:12:25,500 --> 00:12:29,639
+no specific diagnosis was made released
+
+304
+00:12:28,078 --> 00:12:34,039
+Tom with instructions to follow up with
+
+305
+00:12:29,639 --> 00:12:37,860
+his PCP symptoms resolved within 10 days
+
+306
+00:12:34,039 --> 00:12:40,078
+and that's what we've got uh did he stop
+
+307
+00:12:37,860 --> 00:12:42,959
+the CBD we don't know did he continue
+
+308
+00:12:40,078 --> 00:12:45,599
+you know that's what we've got
+
+309
+00:12:42,958 --> 00:12:47,819
+um so uh it sounds like the stomach flu
+
+310
+00:12:45,600 --> 00:12:51,420
+I mean
+
+311
+00:12:47,820 --> 00:12:54,060
+right okay so SAE two
+
+312
+00:12:51,419 --> 00:12:56,519
+grade three 79 year old female who began
+
+313
+00:12:54,059 --> 00:12:59,159
+using Charlotte's Web original formula
+
+314
+00:12:56,519 --> 00:13:00,839
+that's about 50 milligrams per ml 25
+
+315
+00:12:59,159 --> 00:13:03,240
+milligrams per meal three to four times
+
+316
+00:13:00,839 --> 00:13:04,980
+daily and then she escalated the dose we
+
+317
+00:13:03,240 --> 00:13:08,419
+don't know what kind of dose escalation
+
+318
+00:13:04,980 --> 00:13:10,560
+she did unfortunately
+
+319
+00:13:08,419 --> 00:13:13,139
+approximately one month after starting
+
+320
+00:13:10,559 --> 00:13:14,458
+the product increase the dose and
+
+321
+00:13:13,139 --> 00:13:17,159
+continue dosing three to four times
+
+322
+00:13:14,458 --> 00:13:18,419
+daily for a month she deseed using the
+
+323
+00:13:17,159 --> 00:13:20,879
+product because she was no longer
+
+324
+00:13:18,419 --> 00:13:23,159
+experiencing pain
+
+325
+00:13:20,879 --> 00:13:24,899
+okay and then one month later she
+
+326
+00:13:23,159 --> 00:13:27,778
+resumed taking an unspecified amount of
+
+327
+00:13:24,899 --> 00:13:29,639
+the product to help with sleep
+
+328
+00:13:27,778 --> 00:13:31,559
+well at this point she developed nausea
+
+329
+00:13:29,639 --> 00:13:32,879
+vomiting and diarrhea and reported to
+
+330
+00:13:31,559 --> 00:13:35,599
+the ER where she was treated for
+
+331
+00:13:32,879 --> 00:13:39,958
+dehydration with IV fluids and in that
+
+332
+00:13:35,600 --> 00:13:41,399
+nausea medication through her IV line
+
+333
+00:13:39,958 --> 00:13:43,199
+um
+
+334
+00:13:41,399 --> 00:13:44,940
+so the ER doctor thought or Simpsons
+
+335
+00:13:43,200 --> 00:13:46,800
+were due to food poisoning and if she
+
+336
+00:13:44,940 --> 00:13:48,839
+was and she was released the same day
+
+337
+00:13:46,799 --> 00:13:50,699
+three days later she took another
+
+338
+00:13:48,839 --> 00:13:53,959
+unspecified dose of the product to help
+
+339
+00:13:50,700 --> 00:13:55,980
+with sleep and again got sick she
+
+340
+00:13:53,958 --> 00:13:59,518
+discontinued using the product at this
+
+341
+00:13:55,980 --> 00:14:01,259
+time now if this is accurate it sounds
+
+342
+00:13:59,519 --> 00:14:03,600
+likely that this could have been an
+
+343
+00:14:01,259 --> 00:14:06,439
+actual event however there's a lot that
+
+344
+00:14:03,600 --> 00:14:06,440
+we don't know here
+
+345
+00:14:06,600 --> 00:14:10,620
+oh and her back pain returned the
+
+346
+00:14:08,458 --> 00:14:13,199
+following month so she began using an
+
+347
+00:14:10,620 --> 00:14:16,740
+unspecified dose of CBD and smaller
+
+348
+00:14:13,200 --> 00:14:19,079
+doses again develop nausea vomiting and
+
+349
+00:14:16,740 --> 00:14:21,480
+diarrhea so now we've got three two or
+
+350
+00:14:19,078 --> 00:14:25,019
+three re-challenges here so
+
+351
+00:14:21,480 --> 00:14:26,759
+um it does look like a likely uh
+
+352
+00:14:25,019 --> 00:14:30,120
+SAE
+
+353
+00:14:26,759 --> 00:14:31,500
+now another essay 41 year old females as
+
+354
+00:14:30,120 --> 00:14:34,459
+an aggravation of her pre-existing
+
+355
+00:14:31,500 --> 00:14:34,458
+seizure disorder
+
+356
+00:14:34,500 --> 00:14:39,419
+um the dose was unknown and buried again
+
+357
+00:14:37,320 --> 00:14:41,459
+your ER doctor thought our symptoms were
+
+358
+00:14:39,419 --> 00:14:42,838
+due to food poisoning and she was
+
+359
+00:14:41,458 --> 00:14:44,638
+released the same day I think I must
+
+360
+00:14:42,839 --> 00:14:47,220
+have a slide mixed up here
+
+361
+00:14:44,639 --> 00:14:49,379
+uh her past medical history unspecified
+
+362
+00:14:47,220 --> 00:14:52,079
+brain surgery over 10 years yeah there
+
+363
+00:14:49,379 --> 00:14:53,879
+was a juggling of things here I don't
+
+364
+00:14:52,078 --> 00:14:55,500
+know how this happened
+
+365
+00:14:53,879 --> 00:14:57,480
+um she reported that the number of her
+
+366
+00:14:55,500 --> 00:14:59,519
+normal seizures decreased from 30 to 40
+
+367
+00:14:57,480 --> 00:15:02,699
+per month to about eight per month while
+
+368
+00:14:59,519 --> 00:15:05,698
+using the product over five years
+
+369
+00:15:02,698 --> 00:15:07,259
+after five years of use she gets a
+
+370
+00:15:05,698 --> 00:15:10,278
+sudden increase
+
+371
+00:15:07,259 --> 00:15:10,278
+in her seizures
+
+372
+00:15:12,139 --> 00:15:20,360
+so what what was that one was it
+
+373
+00:15:16,458 --> 00:15:20,359
+there's just not a lot of information
+
+374
+00:15:22,440 --> 00:15:26,940
+okay 80 year old
+
+375
+00:15:24,778 --> 00:15:29,220
+using Charlotte's Web original formula
+
+376
+00:15:26,940 --> 00:15:32,339
+again 50 milligrams per ml times four
+
+377
+00:15:29,220 --> 00:15:34,560
+years for nerve pain
+
+378
+00:15:32,339 --> 00:15:36,240
+so she increased her dose and shortly
+
+379
+00:15:34,559 --> 00:15:39,059
+after she increased her dose she became
+
+380
+00:15:36,240 --> 00:15:40,500
+lightheaded and Confused Her speech was
+
+381
+00:15:39,059 --> 00:15:42,958
+slurred in her eyes wooden folks now
+
+382
+00:15:40,500 --> 00:15:46,320
+this is four years in
+
+383
+00:15:42,958 --> 00:15:49,439
+she presented to the ER CT scan was
+
+384
+00:15:46,320 --> 00:15:51,660
+negative Doc suggested a TIA the
+
+385
+00:15:49,440 --> 00:15:54,440
+symptoms subsided within 30 minutes and
+
+386
+00:15:51,659 --> 00:15:56,939
+she was released to return home
+
+387
+00:15:54,440 --> 00:15:58,380
+approximately two months later she
+
+388
+00:15:56,940 --> 00:15:59,279
+developed the same symptoms and went to
+
+389
+00:15:58,379 --> 00:16:01,980
+the ER
+
+390
+00:15:59,278 --> 00:16:04,799
+the symptoms subsided within 30 minutes
+
+391
+00:16:01,980 --> 00:16:06,240
+CT scan with normal admitted to the
+
+392
+00:16:04,799 --> 00:16:08,698
+hospital until she may have had another
+
+393
+00:16:06,240 --> 00:16:10,860
+Tia if she had a TIA in the first place
+
+394
+00:16:08,698 --> 00:16:13,319
+she was released the next day with the
+
+395
+00:16:10,860 --> 00:16:15,300
+recommendation of follow-up with her PCP
+
+396
+00:16:13,320 --> 00:16:16,220
+she called her up with her PCP and her
+
+397
+00:16:15,299 --> 00:16:19,859
+neurologist
+
+398
+00:16:16,220 --> 00:16:21,778
+and the PCP stated there was probably an
+
+399
+00:16:19,860 --> 00:16:23,820
+interaction between her gabapentin and
+
+400
+00:16:21,778 --> 00:16:26,220
+the THC and the hemp product which
+
+401
+00:16:23,820 --> 00:16:29,720
+probably is unlikely if you really look
+
+402
+00:16:26,220 --> 00:16:29,720
+at the data with Gabapentin
+
+403
+00:16:30,919 --> 00:16:35,958
+the CBD and her Gabapentin dose was
+
+404
+00:16:33,778 --> 00:16:38,639
+decreased by 50 percent
+
+405
+00:16:35,958 --> 00:16:39,958
+now this one is interesting as well and
+
+406
+00:16:38,639 --> 00:16:43,079
+this is a disruptive mood just
+
+407
+00:16:39,958 --> 00:16:45,299
+regulation nine-year-old female her dose
+
+408
+00:16:43,078 --> 00:16:49,278
+she was using 17 milligrams at night and
+
+409
+00:16:45,299 --> 00:16:52,258
+seven seven milligrams during the day
+
+410
+00:16:49,278 --> 00:16:53,879
+and would we what do we see here she
+
+411
+00:16:52,259 --> 00:16:55,800
+gave her daughter the the mother gave
+
+412
+00:16:53,879 --> 00:16:58,019
+the daughter the 17 milligram product at
+
+413
+00:16:55,799 --> 00:17:00,359
+night the following even evening no
+
+414
+00:16:58,019 --> 00:17:04,019
+product was used okay so she's got about
+
+415
+00:17:00,360 --> 00:17:06,179
+24 hours here the next morning now we're
+
+416
+00:17:04,019 --> 00:17:08,220
+at 36 hours roughly the next morning the
+
+417
+00:17:06,179 --> 00:17:10,620
+child's mother gave the gives the child
+
+418
+00:17:08,220 --> 00:17:12,298
+the seven milligram product within a few
+
+419
+00:17:10,619 --> 00:17:14,519
+hours the child began to exhibit
+
+420
+00:17:12,298 --> 00:17:16,558
+behavioral changes she was given another
+
+421
+00:17:14,519 --> 00:17:19,078
+dose of the seven milligram milligram
+
+422
+00:17:16,558 --> 00:17:21,000
+product in the afternoon
+
+423
+00:17:19,078 --> 00:17:22,259
+child then became angry punched her
+
+424
+00:17:21,000 --> 00:17:25,619
+mother and her mother's boyfriend and
+
+425
+00:17:22,259 --> 00:17:26,939
+began yelling suicidal statements
+
+426
+00:17:25,619 --> 00:17:29,279
+sounds like a good strategy to get
+
+427
+00:17:26,939 --> 00:17:29,880
+attention right
+
+428
+00:17:29,279 --> 00:17:31,678
+um
+
+429
+00:17:29,880 --> 00:17:33,840
+there's no information on what
+
+430
+00:17:31,679 --> 00:17:35,940
+psychiatric medications this patient was
+
+431
+00:17:33,839 --> 00:17:37,619
+on or if these medications were abruptly
+
+432
+00:17:35,940 --> 00:17:39,600
+ceased and replaced with the CBD product
+
+433
+00:17:37,619 --> 00:17:42,779
+so we really don't know much here so
+
+434
+00:17:39,599 --> 00:17:45,259
+it's hard to pin this to the product
+
+435
+00:17:42,779 --> 00:17:45,259
+itself
+
+436
+00:17:45,359 --> 00:17:48,599
+now here's another one another psych
+
+437
+00:17:47,160 --> 00:17:50,940
+eight-year-old female using original
+
+438
+00:17:48,599 --> 00:17:54,058
+formula hip extract oil for autism
+
+439
+00:17:50,940 --> 00:17:57,179
+spectrum disorder dose is 25 milligrams
+
+440
+00:17:54,058 --> 00:17:59,038
+by mouth once to twice daily
+
+441
+00:17:57,179 --> 00:18:01,380
+each time the child received the product
+
+442
+00:17:59,038 --> 00:18:03,599
+she acted out and cried briefly
+
+443
+00:18:01,380 --> 00:18:05,220
+day four usual dose in the morning and
+
+444
+00:18:03,599 --> 00:18:06,959
+went to school
+
+445
+00:18:05,220 --> 00:18:09,240
+the school nurse called the report child
+
+446
+00:18:06,960 --> 00:18:10,679
+was having a seizure vomiting drooling
+
+447
+00:18:09,240 --> 00:18:12,859
+staring into space and with their eyes
+
+448
+00:18:10,679 --> 00:18:15,240
+rolled back in her head intermittently
+
+449
+00:18:12,859 --> 00:18:17,699
+non-responsive transported to the ER by
+
+450
+00:18:15,240 --> 00:18:20,120
+ambulance where she was responsive upon
+
+451
+00:18:17,700 --> 00:18:20,120
+arrival
+
+452
+00:18:21,359 --> 00:18:24,719
+the treating physician agreed that she
+
+453
+00:18:22,919 --> 00:18:26,220
+experienced a seizure he did not think
+
+454
+00:18:24,720 --> 00:18:28,500
+the product contributed to her symptoms
+
+455
+00:18:26,220 --> 00:18:30,538
+no treatment was given she was released
+
+456
+00:18:28,500 --> 00:18:33,259
+after approximately five hours and she
+
+457
+00:18:30,538 --> 00:18:35,759
+was asymptomatic upon release
+
+458
+00:18:33,259 --> 00:18:37,879
+remained asymptomatic one week later at
+
+459
+00:18:35,759 --> 00:18:41,240
+the time of the report did she continue
+
+460
+00:18:37,880 --> 00:18:41,240
+we don't know
+
+461
+00:18:43,980 --> 00:18:50,759
+okay uh and then the last one 70 year 73
+
+462
+00:18:47,460 --> 00:18:52,860
+year old female dose of 30 milligrams uh
+
+463
+00:18:50,759 --> 00:18:54,900
+daily hemp oil extract for arthritis
+
+464
+00:18:52,859 --> 00:18:56,399
+pain
+
+465
+00:18:54,900 --> 00:18:59,940
+uh three weeks after starting the
+
+466
+00:18:56,400 --> 00:19:01,740
+product developed changes in her vision
+
+467
+00:18:59,940 --> 00:19:03,179
+movement or Vision at a lower part of
+
+468
+00:19:01,740 --> 00:19:05,538
+her right eye when nothing was there
+
+469
+00:19:03,179 --> 00:19:09,080
+flashing lights and steady lights
+
+470
+00:19:05,538 --> 00:19:12,359
+diagnosed with ischemic optic neuropathy
+
+471
+00:19:09,079 --> 00:19:15,240
+they deseed the product and return for a
+
+472
+00:19:12,359 --> 00:19:18,479
+follow-up she was on steroid eye drops
+
+473
+00:19:15,240 --> 00:19:19,859
+as a treatment nine days later returned
+
+474
+00:19:18,480 --> 00:19:22,740
+to our ophthalmologist for depth
+
+475
+00:19:19,859 --> 00:19:24,178
+perception and visual field test with no
+
+476
+00:19:22,740 --> 00:19:26,880
+significant change
+
+477
+00:19:24,179 --> 00:19:28,679
+two months later had a 20 Improvement in
+
+478
+00:19:26,880 --> 00:19:30,059
+her vision and the ophthalmologist and
+
+479
+00:19:28,679 --> 00:19:33,120
+the PCP gave her permission to start
+
+480
+00:19:30,058 --> 00:19:34,678
+using a CP CBD again and one month after
+
+481
+00:19:33,119 --> 00:19:36,058
+restarting the product reported that she
+
+482
+00:19:34,679 --> 00:19:37,798
+believed her vision was continuing to
+
+483
+00:19:36,058 --> 00:19:39,960
+approve but she had not yet had another
+
+484
+00:19:37,798 --> 00:19:40,918
+test to confirm this
+
+485
+00:19:39,960 --> 00:19:42,538
+um
+
+486
+00:19:40,919 --> 00:19:44,759
+I don't know it doesn't sound very
+
+487
+00:19:42,538 --> 00:19:46,500
+likely
+
+488
+00:19:44,759 --> 00:19:48,419
+now
+
+489
+00:19:46,500 --> 00:19:51,419
+um previously documented AE so let's
+
+490
+00:19:48,419 --> 00:19:53,360
+look at the epidiolex study and here's
+
+491
+00:19:51,419 --> 00:19:57,480
+what we've got we've got samulence at 25
+
+492
+00:19:53,359 --> 00:20:00,899
+of of the AES not 25 of people but 25 of
+
+493
+00:19:57,480 --> 00:20:02,419
+the AES a decreased appetite uh 22
+
+494
+00:20:00,900 --> 00:20:06,059
+diarrhea 20
+
+495
+00:20:02,419 --> 00:20:08,759
+elevated transaminase is about 16 now
+
+496
+00:20:06,058 --> 00:20:11,399
+fatigue malays asthenia about 12 percent
+
+497
+00:20:08,759 --> 00:20:15,359
+at lethargy lethargy excuse me eight
+
+498
+00:20:11,400 --> 00:20:17,880
+percent and convulsions about 11 percent
+
+499
+00:20:15,359 --> 00:20:20,099
+and these doses are about tenfold higher
+
+500
+00:20:17,880 --> 00:20:22,380
+than is typically used by Charlotte's
+
+501
+00:20:20,099 --> 00:20:25,740
+Web uh consumers
+
+502
+00:20:22,380 --> 00:20:28,200
+so let's compare these comparison of A's
+
+503
+00:20:25,740 --> 00:20:29,940
+on one side we've got the postmark and
+
+504
+00:20:28,200 --> 00:20:32,160
+surveillance done with these lower dose
+
+505
+00:20:29,940 --> 00:20:33,798
+products Charles Webb's products on the
+
+506
+00:20:32,160 --> 00:20:37,259
+other end we've got the epidialyte
+
+507
+00:20:33,798 --> 00:20:40,619
+clinical trials and you do see a
+
+508
+00:20:37,259 --> 00:20:41,220
+commonality in terms of gastrointestinal
+
+509
+00:20:40,619 --> 00:20:44,159
+um
+
+510
+00:20:41,220 --> 00:20:47,160
+but other than that the fatigue and
+
+511
+00:20:44,160 --> 00:20:50,779
+malays uh a little bit there but if you
+
+512
+00:20:47,160 --> 00:20:53,279
+consider nausea but really uh
+
+513
+00:20:50,779 --> 00:20:56,720
+not a lot of correlations let's talk
+
+514
+00:20:53,279 --> 00:20:56,720
+about limitations of this data
+
+515
+00:20:57,079 --> 00:21:04,019
+multiple reliable methods to collect AES
+
+516
+00:21:00,779 --> 00:21:05,779
+so some of the AES
+
+517
+00:21:04,019 --> 00:21:07,859
+spontaneous reporting through National
+
+518
+00:21:05,779 --> 00:21:09,480
+pharmacovigilance databases collecting
+
+519
+00:21:07,859 --> 00:21:11,759
+practice data soliciting events from
+
+520
+00:21:09,480 --> 00:21:13,919
+Healthcare professionals they all have
+
+521
+00:21:11,759 --> 00:21:15,179
+their weaknesses direct observation so
+
+522
+00:21:13,919 --> 00:21:17,460
+they've all got weaknesses they've all
+
+523
+00:21:15,179 --> 00:21:20,100
+got strengths so surveying patients
+
+524
+00:21:17,460 --> 00:21:22,798
+obviously has some weaknesses but this
+
+525
+00:21:20,099 --> 00:21:25,980
+provides a starting point
+
+526
+00:21:22,798 --> 00:21:28,019
+um for this sort of work and it is
+
+527
+00:21:25,980 --> 00:21:30,839
+sub-optimal data collection we've been
+
+528
+00:21:28,019 --> 00:21:32,460
+great to have seen more stuff here so
+
+529
+00:21:30,839 --> 00:21:35,038
+confounding factors we could have had
+
+530
+00:21:32,460 --> 00:21:37,079
+here underlying medical conditions
+
+531
+00:21:35,038 --> 00:21:40,798
+obviously prescription medications
+
+532
+00:21:37,079 --> 00:21:43,139
+obviously dietary changes so biological
+
+533
+00:21:40,798 --> 00:21:44,579
+variability life stressors or they're
+
+534
+00:21:43,140 --> 00:21:46,520
+all uh
+
+535
+00:21:44,579 --> 00:21:49,740
+considerable
+
+536
+00:21:46,519 --> 00:21:52,319
+and also just correlating units to
+
+537
+00:21:49,740 --> 00:21:54,000
+people is very very difficult so I'm
+
+538
+00:21:52,319 --> 00:21:57,240
+getting told I need to get off the stage
+
+539
+00:21:54,000 --> 00:21:59,819
+here so I am going to jump to my last
+
+540
+00:21:57,240 --> 00:22:02,940
+slide here
+
+541
+00:21:59,819 --> 00:22:04,439
+and what I'd like to point out is
+
+542
+00:22:02,940 --> 00:22:07,200
+let's
+
+543
+00:22:04,440 --> 00:22:09,240
+as an industry let's support this sort
+
+544
+00:22:07,200 --> 00:22:11,340
+of work and as an industry if you're
+
+545
+00:22:09,240 --> 00:22:13,259
+running a company this is a really good
+
+546
+00:22:11,339 --> 00:22:16,558
+chance for you to actually add to the
+
+547
+00:22:13,259 --> 00:22:18,599
+database it is considered not as strong
+
+548
+00:22:16,558 --> 00:22:22,500
+as clinical trials but it is regular
+
+549
+00:22:18,599 --> 00:22:24,899
+data and FDA and uh European medicine
+
+550
+00:22:22,500 --> 00:22:27,599
+Agency use this sort of data to make
+
+551
+00:22:24,900 --> 00:22:30,120
+decisions it's consumer reported data to
+
+552
+00:22:27,599 --> 00:22:33,959
+make decisions about about safety so I'd
+
+553
+00:22:30,119 --> 00:22:36,658
+really encourage you to consider
+
+554
+00:22:33,960 --> 00:22:38,519
+stepping up to the plate and and doing
+
+555
+00:22:36,659 --> 00:22:39,600
+more of this sort of thing especially if
+
+556
+00:22:38,519 --> 00:22:41,359
+we could do this with some of the other
+
+557
+00:22:39,599 --> 00:22:44,699
+cannabinoids CBG
+
+558
+00:22:41,359 --> 00:22:46,379
+thcv it'd be a huge plus to the safety
+
+559
+00:22:44,700 --> 00:22:48,700
+data
+
+560
+00:22:46,380 --> 00:22:52,420
+that's it thank you
+
+561
+00:22:48,700 --> 00:22:52,420
+[Laughter]
+

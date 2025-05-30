@@ -1,0 +1,1489 @@
+[SPEAKER_02]: This is a production of Cornell
+University.
+[SPEAKER_02]: Thank you.
+[SPEAKER_04]: Thank you all so much for the chance to be
+here today.
+[SPEAKER_04]: It's been really fun, both the
+conversations I've had over the last two
+[SPEAKER_04]: days, and also just getting to wander
+around campus again after about 15 years
+[SPEAKER_04]: since I first showed up here.
+[SPEAKER_04]: So we had a conversation at dinner last
+night about some of the digital ag stuff
+[SPEAKER_04]: that is going on here at Cornell.
+[SPEAKER_04]: So I want to highlight, before I get into
+my talk, this is my research group as of
+[SPEAKER_04]: last summer.
+[SPEAKER_04]: I work at the University of Nebraska,
+Lincoln.
+[SPEAKER_04]: But a lot of the stuff I'm going to tell
+you about is only possible because we were
+[SPEAKER_04]: collaborating with folks like Yu Funga,
+who's a biological systems engineer,
+[SPEAKER_04]: and Yu Mo and Yu Hong, who are both
+statisticians at the University of
+[SPEAKER_04]: Nebraska.
+[SPEAKER_04]: So it's really being able to work with
+folks across different disciplines that
+[SPEAKER_04]: lets us do really, really cool stuff that,
+to me, seems extraordinarily hard.
+[SPEAKER_04]: And to them, it's quite easy.
+[SPEAKER_04]: And then we get to turn that around.
+[SPEAKER_04]: Also, Brandy Sigmund, who is an actual
+developmental geneticist, which is fun.
+[SPEAKER_04]: So I'm going to start with a broad
+question.
+[SPEAKER_04]: Then we're going to move into some
+economics, then into some quantitative
+[SPEAKER_04]: genetics, and come back to broad
+conceptual stuff.
+[SPEAKER_04]: So that broad question here, which is one
+of the central questions of all genetics,
+[SPEAKER_04]: is how do we find which genes determine
+the characteristics of maize or any
+[SPEAKER_04]: organism?
+[SPEAKER_04]: And I like to bring this up because I want
+you to think about what actually we mean
+[SPEAKER_04]: when we say the word gene.
+[SPEAKER_04]: So when I first started out in grad
+school, the maize genome had just come
+[SPEAKER_04]: out.
+[SPEAKER_04]: There were about 32,000 gene models.
+[SPEAKER_04]: Then there was a revision that went up
+from about 32,000 to about 40,000.
+[SPEAKER_04]: Another revision that went up to about
+60,000.
+[SPEAKER_04]: So about the time that I got my own lab,
+we were adding about 5,000 genes to the
+[SPEAKER_04]: genome every year.
+[SPEAKER_04]: Now, if it takes one grad student five
+years to characterize one gene,
+[SPEAKER_04]: you can see that just for maize,
+we would need about 25,000 graduate
+[SPEAKER_04]: students.
+[SPEAKER_04]: And about $1.25 billion a year in funding
+to keep up.
+[SPEAKER_04]: Now, obviously, this would not be
+sustainable for a lot of reasons working
+[SPEAKER_04]: with government policy and NSF and all
+that.
+[SPEAKER_04]: It also is clearly not what's happening.
+[SPEAKER_04]: Maize is not adding a lot of new genes to
+the genome.
+[SPEAKER_04]: What was happening is we were using
+different criteria and had different
+[SPEAKER_04]: evidence for what constitutes a gene
+model.
+[SPEAKER_04]: So if you go into Google Scholar and you
+type in what is a gene, you will find this
+[SPEAKER_04]: review from more than a decade ago now.
+[SPEAKER_04]: Where they proposed this very complicated
+and almost legalistic definition of what a
+[SPEAKER_04]: gene is.
+[SPEAKER_04]: And I will say that Ed mentioned I've
+worked with some companies and there's
+[SPEAKER_04]: some very good things about that.
+[SPEAKER_04]: One of the negative things is you spend a
+lot of time talking to lawyers about IP
+[SPEAKER_04]: law and organizational law.
+[SPEAKER_04]: Who's going to have control of which part
+of the company if one of the partners gets
+[SPEAKER_04]: divorced?
+[SPEAKER_04]: Especially the partners who aren't married
+yet.
+[SPEAKER_04]: So it feels like a lot of pressure to have
+to be divorced before you get married.
+[SPEAKER_04]: Anyway, so I would say that this is a
+definition that only a lawyer could be
+[SPEAKER_04]: happy with.
+[SPEAKER_04]: So if you go back to the origin of the
+term gene, and I didn't know this until
+[SPEAKER_04]: about six months ago, it was originally
+proposed by this Danish geneticist.
+[SPEAKER_04]: And this is not the original Danish.
+[SPEAKER_04]: This was a translation to German.
+[SPEAKER_04]: I know just enough German to find the
+right sentence to paste into Google
+[SPEAKER_04]: Translate.
+[SPEAKER_04]: The word gene is completely free of any
+hypothesis.
+[SPEAKER_04]: It only expresses the assured fact that at
+any rate, many characteristics of the
+[SPEAKER_04]: organism are conditioned by special
+separable and therefore self-existent
+[SPEAKER_04]: fundamentals that occur in the gametes.
+[SPEAKER_04]: So genes are the things in the genome that
+actually control the characteristics of
+[SPEAKER_04]: the organism.
+[SPEAKER_04]: And I'm going to argue, yeah, not all gene
+models are going to correspond to genes.
+[SPEAKER_04]: So one of the wonderful things about the
+grasses is that they have very conserved
+[SPEAKER_04]: sentinel.
+[SPEAKER_04]: So sentinel is the conservation of the
+same genes in the same order.
+[SPEAKER_04]: So what you're seeing here is a graphic
+from Koji, which is an online comparative
+[SPEAKER_04]: genomics tool.
+[SPEAKER_04]: It's run by Eric Lyons at University of
+Arizona.
+[SPEAKER_04]: And each of these, we have a nice gene
+model comparing a region in rice,
+[SPEAKER_04]: in foxtail millet, in sorghum,
+and in maize.
+[SPEAKER_04]: And these red-orange boxes are regions of
+homologous sequence identified on BLAST.
+[SPEAKER_04]: And what you can see is that we have some
+of the same genes in the same order.
+[SPEAKER_04]: There's also a tandem duplication in
+sorghum.
+[SPEAKER_04]: So we have two copies of this particular
+gene.
+[SPEAKER_04]: I think this might be Phytochrome B.
+[SPEAKER_04]: I'd have to check on that.
+[SPEAKER_04]: So we have these genes that are gene
+models that are conserved at the same
+[SPEAKER_04]: locations across all the grasses.
+[SPEAKER_04]: We also have lots of gene models that are
+not conserved at the same locations in
+[SPEAKER_04]: different grasses.
+[SPEAKER_04]: So these are synthetic orthologous genes.
+[SPEAKER_04]: These are non-synthetic genes.
+[SPEAKER_04]: And the fact that we see them here but not
+in other species means that they inserted
+[SPEAKER_04]: into their present location in the genome
+since the divergence of these different
+[SPEAKER_04]: species.
+[SPEAKER_04]: So if we look at the genes that actually
+have known characterized functions.
+[SPEAKER_04]: So some geneticists walk through a field.
+[SPEAKER_04]: They said, that plant is so interestingly
+weird.
+[SPEAKER_04]: I'm going to spend those five years of my
+life figuring out what is the gene
+[SPEAKER_04]: responsible for why that plant looks
+weird.
+[SPEAKER_04]: Those genes are eight times as likely to
+be these conserved synthetic genes as the
+[SPEAKER_04]: non-conserved, the non-synthetic genes,
+which are evolutionarily more recent,
+[SPEAKER_04]: and may or may not have functions.
+[SPEAKER_04]: Now, there's also an argument that maybe
+these non-synthetic genes are involved in
+[SPEAKER_04]: processes that aren't as immediately
+obvious as you walk through the field.
+[SPEAKER_04]: There's at least one exception where that
+is the case, which is if you look at
+[SPEAKER_04]: disease resistance genes, these are almost
+always the non-synthetic fraction of the
+[SPEAKER_04]: genome.
+[SPEAKER_04]: But a lot of these genes do appear to be
+sequences with the potential to code for
+[SPEAKER_04]: protein, or that actually do code for
+protein, but they're in search of a
+[SPEAKER_04]: functional role still.
+[SPEAKER_04]: And there are lots of other ways that you
+can see differences between the conserved
+[SPEAKER_04]: synthetic genes.
+[SPEAKER_04]: So they tend to have very different
+methylation profiles, the synthetically
+[SPEAKER_04]: conserved genes.
+[SPEAKER_04]: The non-synthetic genes tend to look a lot
+like intergenic sequence.
+[SPEAKER_04]: Synthetic genes are expressed at higher
+levels.
+[SPEAKER_04]: This is from a Wall-E paper a couple years
+ago.
+[SPEAKER_04]: But more interesting to me, if you look at
+non-synthetic genes, which are expressed,
+[SPEAKER_04]: they make significant amounts of mRNA,
+they're much less likely to have that mRNA
+[SPEAKER_04]: translated into protein than the conserved
+synthetic genes.
+[SPEAKER_04]: So this would be very consistent with them
+having fewer phenotypic consequences,
+[SPEAKER_04]: because even though there are ways to
+produce phenotypic consequences without
+[SPEAKER_04]: making a protein, it's a lot easier to
+have a phenotype if you do make a protein.
+[SPEAKER_04]: So given a lot of these differences,
+we put together just a very simple PCA
+[SPEAKER_04]: analysis.
+[SPEAKER_04]: So what you see here is a 2D.
+[SPEAKER_04]: Anyway, you're seeing essentially a kernel
+density plot.
+[SPEAKER_04]: Of both all the annotated gene models in
+red here and these gold standard genes
+[SPEAKER_04]: that have been identified based on a
+forward genetic phenotype.
+[SPEAKER_04]: And this is a subset of the trait.
+[SPEAKER_04]: We put about a dozen traits into this
+basic PC.
+[SPEAKER_04]: Based on ones we knew that there were
+significant differences between genes with
+[SPEAKER_04]: known phenotypes and those without.
+[SPEAKER_04]: And we see that there's a relatively large
+separation.
+[SPEAKER_04]: So a lot of the annotated genes in the
+maize genome are concentrated over here.
+[SPEAKER_04]: They're more likely to show up to show
+presence-absence variation.
+[SPEAKER_04]: They're less likely to be satinically
+conserved.
+[SPEAKER_04]: They're less likely to show evidence of
+being translated into protein.
+[SPEAKER_04]: But the genes with known phenotypes and
+the cluster over on this side of the
+[SPEAKER_04]: distribution.
+[SPEAKER_04]: So with this, I'm going to give you a few
+takeaways from this very broad idea,
+[SPEAKER_04]: which is that we really do need to
+remember that gene models are hypotheses.
+[SPEAKER_04]: So a gene model is a hypothesis that this
+particular portion of the genome is
+[SPEAKER_04]: actually a gene that actually plays a role
+in determining the phenotype of an
+[SPEAKER_04]: organism.
+[SPEAKER_04]: And I've been very guilty of this myself,
+that I sort of treat all gene models as
+[SPEAKER_04]: equally likely to cause phenotypes.
+[SPEAKER_04]: And that's not true.
+[SPEAKER_04]: And we wouldn't treat that any other kind
+of hypothesis the same way.
+[SPEAKER_04]: There are some hypotheses that are more
+likely to be true, some that are less
+[SPEAKER_04]: likely to be true.
+[SPEAKER_04]: The ones that seem very unexpected that
+then end up being consistent with
+[SPEAKER_04]: observation are really, really exciting.
+[SPEAKER_04]: But we can do a lot to prioritize which
+hypotheses make sense to test,
+[SPEAKER_04]: which hypotheses you spend a lot of time
+studying.
+[SPEAKER_04]: I think we do a lot better job of this
+with gene models as well.
+[SPEAKER_04]: I'm going to come back to that at the very
+end of the talk.
+[SPEAKER_04]: But now to jump a little bit from very
+broad, how do we identify the genes likely
+[SPEAKER_04]: to have any phenotypic consequence to
+linking specific genes to specific
+[SPEAKER_04]: phenotypes.
+[SPEAKER_04]: Now, it was funny.
+[SPEAKER_04]: I was meeting with some folks at the lab
+yesterday, and they had reconstructed
+[SPEAKER_04]: almost this exact same slide.
+[SPEAKER_04]: I think probably everyone working in
+high-density phenotyping has a version of
+[SPEAKER_04]: this, which is that genotyping has gone
+from extraordinarily expensive to
+[SPEAKER_04]: essentially a trivial part of the cost.
+[SPEAKER_04]: Honestly, collecting the samples and doing
+the DNA extractions may cost more at this
+[SPEAKER_04]: point when you factor in the labor.
+[SPEAKER_04]: Phenotyping, on the other hand,
+has not gotten substantially cheaper.
+[SPEAKER_04]: Anything that's probably gone up because
+the cost of human labor, particularly
+[SPEAKER_04]: skilled human labor, is going up faster
+than inflation.
+[SPEAKER_04]: High throughput phenotyping is a reaction
+to the recognition of this imbalance
+[SPEAKER_04]: between the decreasing cost of genotyping
+and the constant or increasing cost of
+[SPEAKER_04]: phenotyping.
+[SPEAKER_04]: It's also an interesting concept because
+there's not a good definition of
+[SPEAKER_04]: high-throughput phenotyping.
+[SPEAKER_04]: It's defined by what it's not.
+[SPEAKER_04]: So high-throughput phenotyping is not
+driving a combine through the field and
+[SPEAKER_04]: getting yield.
+[SPEAKER_04]: And it is not sending a bunch of students
+into the field with protractors and rulers
+[SPEAKER_04]: and notebooks to write things down.
+[SPEAKER_04]: Because the students who are willing to do
+that are willing to go out on a cornfield
+[SPEAKER_04]: or a sorghum field in the middle of summer
+here in Ithaca, Nebraska, they're a very
+[SPEAKER_04]: limited pool.
+[SPEAKER_04]: I don't think we can really grow that pool
+very much.
+[SPEAKER_04]: They're a non-renewable resource.
+[SPEAKER_04]: So if we want to get more data,
+we need other strategies.
+[SPEAKER_04]: And either of those two things,
+you can say that you're high-throughput
+[SPEAKER_04]: phenotyping as long as you're measuring
+something about plants.
+[SPEAKER_04]: All right, now we want to invest a lot in
+high-throughput phenotyping.
+[SPEAKER_04]: It's really not clear what it is.
+[SPEAKER_04]: So I'm going to walk you through the three
+major steps, the three major bottlenecks
+[SPEAKER_04]: we found in terms of actually using this
+to do something useful to understand how
+[SPEAKER_04]: plants work.
+[SPEAKER_04]: So we have a little flowchart here.
+[SPEAKER_04]: Yeah, three transitions.
+[SPEAKER_04]: So growing plants, I do know how to do
+that.
+[SPEAKER_04]: I'm not great at it.
+[SPEAKER_04]: I kill them occasionally.
+[SPEAKER_04]: But we can grow plants, and we can collect
+rates from them.
+[SPEAKER_04]: But the first challenge is an engineering
+challenge, which is once you have all
+[SPEAKER_04]: these plants, how do you collect new and
+interesting kinds of data from them other
+[SPEAKER_04]: than having somebody out there with a
+notebook?
+[SPEAKER_04]: And so this is an engineering challenge.
+[SPEAKER_04]: I mentioned I'm fortunate to work with
+this engineer, Yufeng Du, at the
+[SPEAKER_04]: University of Nebraska.
+[SPEAKER_04]: So we both have this field-based system.
+[SPEAKER_04]: Frank is a former postdoc in Yufeng's lab
+who's now on staff just to keep this
+[SPEAKER_04]: field-based system up and running where we
+have a large payload that can move back
+[SPEAKER_04]: and forth throughout the field.
+[SPEAKER_04]: And we can send up both heavier and more
+expensive instruments on this than we
+[SPEAKER_04]: could on a drone because we don't have to
+worry about it crashing or veering off.
+[SPEAKER_04]: The other system, which came online about
+the same time I was hired at the
+[SPEAKER_04]: University of Nebraska, is just one of
+these conveyor belt greenhouses.
+[SPEAKER_04]: Some of you may have visited Dan Forth or
+Pioneer.
+[SPEAKER_04]: So you've seen these.
+[SPEAKER_04]: The thing that sets Nebraska's apart from
+other people's is not that we can grow
+[SPEAKER_04]: more plants, not that we're cheaper.
+[SPEAKER_04]: It's really expensive to run, but the fact
+that we can grow plants to such a large
+[SPEAKER_04]: size.
+[SPEAKER_04]: So with this facility, we can grow plants
+up to about 2.3 meters and still move them
+[SPEAKER_04]: through.
+[SPEAKER_04]: Here and have them imaged with a series of
+cameras every day, collect weights and the
+[SPEAKER_04]: specific amount of water being used by
+each plant each day.
+[SPEAKER_04]: So that's enough to grow grain type
+sorghums all the way to maturity.
+[SPEAKER_04]: It's enough to grow some but not all maize
+inbreds to maturity.
+[SPEAKER_04]: If you try and grow maize hybrids on this,
+they get above that 2.3 meter threshold
+[SPEAKER_04]: and start hitting into the ceiling as they
+go through and the plants toppling over.
+[SPEAKER_04]: And that's not very much fun.
+[SPEAKER_04]: And then it turns out the greenhouse staff
+have to detassle your plants so they can
+[SPEAKER_04]: still move through the system.
+[SPEAKER_04]: At which point, I would argue there's not
+a lot of useful quantitative data.
+[SPEAKER_04]: But what you get out of this is a series
+of different imaging types.
+[SPEAKER_04]: So what you see here is one plant being
+imaged on one day.
+[SPEAKER_04]: So we have an RGB camera.
+[SPEAKER_04]: The plant is photographed from different
+angles around about 180 degree arc.
+[SPEAKER_04]: We also have a thermal IR camera.
+[SPEAKER_04]: You'll notice that the plant is about the
+same color as the background.
+[SPEAKER_04]: That's because originally these plants sat
+in the dark for about 10 minutes before
+[SPEAKER_04]: they were imaged, at which point they
+equilibrate with air temperature.
+[SPEAKER_04]: We've now fixed this by having a tunnel
+where they're under high light and exposed
+[SPEAKER_04]: to the same heat and air conditions as in
+the greenhouse before they're imaged.
+[SPEAKER_04]: The rest of this camera, which I'm not
+going to talk about very much today,
+[SPEAKER_04]: is a hyperspectral camera, which I am.
+[SPEAKER_04]: So as you know, in the human eye,
+we have three different cones to perceive
+[SPEAKER_04]: different wavelengths of light.
+[SPEAKER_04]: The hyperspectral camera, in this case,
+is perceiving 243 distinct wavelengths of
+[SPEAKER_04]: light.
+[SPEAKER_04]: So there are lots of colors that are going
+to look the same to your eye or mine that
+[SPEAKER_04]: can be distinguished with this camera.
+[SPEAKER_04]: So we have lots and lots of data.
+[SPEAKER_04]: I'm working with great engineers to
+collect the data.
+[SPEAKER_04]: But there's a step that I think is
+underappreciated.
+[SPEAKER_04]: Probably you folks do appreciate this.
+[SPEAKER_04]: But when you talk to people outside of the
+plant biology community, it's very hard to
+[SPEAKER_04]: do QTL mapping or GWAS or anything on a
+bunch of pictures.
+[SPEAKER_04]: I've actually seen people propose ways to
+do that a little bit.
+[SPEAKER_04]: But really what we need is a giant
+spreadsheet of numerical measurements of
+[SPEAKER_04]: something we care about with the plant.
+[SPEAKER_04]: And that becomes a computer vision or a
+machine learning challenge.
+[SPEAKER_04]: How do we go with pictures or LIDAR point
+clouds or hyperspectral data cubes and
+[SPEAKER_04]: actually measure things we care about with
+the plant?
+[SPEAKER_04]: And there are a lot of approaches to that.
+[SPEAKER_04]: But I'm going to tell you about a couple
+things going on in my lab that I think are
+[SPEAKER_04]: pretty interesting.
+[SPEAKER_04]: So one approach is to use neural nets.
+[SPEAKER_04]: So you give the computer lots and lots of
+pictures with known traits.
+[SPEAKER_04]: And we'll learn from that how to score new
+pictures.
+[SPEAKER_04]: The challenge we have is that even though
+we have all these phenotyping facilities
+[SPEAKER_04]: actually getting enough training data to
+train a neural net can be challenging.
+[SPEAKER_04]: So this is work actually by an
+undergraduate in my lab, Tom Hoban,
+[SPEAKER_04]: who took software that was originally
+designed to make 3D models of plants for
+[SPEAKER_04]: video games and used this to create models
+of corn plants, which he can insert into a
+[SPEAKER_04]: semi-accurate replication of the same
+chamber we were collecting real plants
+[SPEAKER_04]: from.
+[SPEAKER_04]: So in a matter of about eight hours,
+he could make about 26,000 of these
+[SPEAKER_04]: synthetic corn plants with different
+parameters.
+[SPEAKER_04]: And known 3D structures.
+[SPEAKER_04]: We worked out what it would have cost to
+grow these on the actual phenotyping
+[SPEAKER_04]: facility.
+[SPEAKER_04]: It was about $80,000 worth of data.
+[SPEAKER_04]: And we can use these simulated images to
+train a computer to predict real images.
+[SPEAKER_04]: What you're looking at here is prediction
+of leaf counting.
+[SPEAKER_04]: So this is the correlation.
+[SPEAKER_04]: If you just show pictures to two different
+people and have them count the number of
+[SPEAKER_04]: leaves on the corn plant, the correlation
+is about 0.9.
+[SPEAKER_04]: So it's good, but it's not perfect.
+[SPEAKER_04]: The first thing to recognize is we're not
+going to get a perfect correlation,
+[SPEAKER_04]: because we can't get perfect correlation
+between different human beings.
+[SPEAKER_04]: So our goal is 0.9.
+[SPEAKER_04]: We're not able to get there.
+[SPEAKER_04]: What this is showing, and I won't walk you
+through in too much detail, is that when
+[SPEAKER_04]: data is very scarce, so about 300 images
+per class or less, adding in the synthetic
+[SPEAKER_04]: data actually improves our accuracy over
+just using the real images.
+[SPEAKER_04]: And these are not particularly accurate
+representations of a corn plant.
+[SPEAKER_04]: I hope it's recognizably a corn plant.
+[SPEAKER_04]: There's clearly a lot more we can do to
+make this look more like a corn plant and
+[SPEAKER_04]: so increase the usefulness of simulated
+data.
+[SPEAKER_04]: So that's one approach to teaching
+computers how to measure things from
+[SPEAKER_04]: images.
+[SPEAKER_04]: Another is those taking advantage of
+things like hyperspectral cameras,
+[SPEAKER_04]: which perceive the world in very different
+ways the way a human being does.
+[SPEAKER_04]: So what you see here is a hyperspectral
+data cube from a particular sorghum plant.
+[SPEAKER_04]: This is work from Alejandro Pages,
+who is a computer science undergraduate in
+[SPEAKER_04]: the lab.
+[SPEAKER_04]: And so what he did is he took a bunch of
+these images, put them up on a web tool
+[SPEAKER_04]: called Zooniverse, which is a citizen
+science tool.
+[SPEAKER_04]: So a lot of this, if you go on the
+website, it's like game cameras in Africa.
+[SPEAKER_04]: Are there zebras in the images?
+[SPEAKER_04]: How many zebras?
+[SPEAKER_04]: That sort of thing.
+[SPEAKER_04]: But we put up all these sorghum plants and
+just asked people to say, OK, where are
+[SPEAKER_04]: the stems?
+[SPEAKER_04]: Where are the leaves?
+[SPEAKER_04]: Where are the petals?
+[SPEAKER_04]: And miraculously, some people were willing
+to do that, even given the option of
+[SPEAKER_04]: looking at cool zebras and giraffes.
+[SPEAKER_04]: So we very rapidly got a training data set
+of about 8,000 data points, each of which
+[SPEAKER_04]: is one pixel.
+[SPEAKER_04]: Within each pixel, we have 243 different
+wavelength intensities.
+[SPEAKER_04]: Looking at that, we can develop very
+separate reflectance parameters for what
+[SPEAKER_04]: these different classes of pixels look
+like, the leaf, the stalk, the pentacle,
+[SPEAKER_04]: the background.
+[SPEAKER_04]: Now, as a human being, it's very easy to
+look at a standard picture of a sorghum
+[SPEAKER_04]: plant and tell me where is the leaf,
+where is the stem, where is the pentacle.
+[SPEAKER_04]: It turned out to be a very challenging
+problem for the computer to do that from
+[SPEAKER_04]: the RGB image.
+[SPEAKER_04]: But with the hyperspectral data,
+the computer can do a very good job of
+[SPEAKER_04]: separating these different classes.
+[SPEAKER_04]: One of the things I think is actually cool
+is it does make mistakes.
+[SPEAKER_04]: And you can see what it's doing is it
+thinks that the midribs of the sorghum
+[SPEAKER_04]: leaves are stem.
+[SPEAKER_04]: So you have this dense, lignified tissue,
+and that's getting misclassified.
+[SPEAKER_04]: So even the mistakes are things that make
+sense.
+[SPEAKER_04]: I'm going to come back to that.
+[SPEAKER_04]: Oh, so the nice thing about being able to
+separate out the different parts of the
+[SPEAKER_04]: sorghum plant is we can start to measure
+traits that make more sense biologically.
+[SPEAKER_04]: So one of the first things whenever
+students join the lab is they learn how to
+[SPEAKER_04]: segment out just, this is an RGB photo of
+sorghum plants.
+[SPEAKER_04]: And this is actually the same sorghum
+plant over time.
+[SPEAKER_04]: And the image is segmented, so we have the
+plant pixels circled in red.
+[SPEAKER_04]: You can see there's some mistakes down
+here.
+[SPEAKER_04]: But it's possible to measure the whole
+height of the plant.
+[SPEAKER_04]: What you will note is that the height of
+the whole plant goes up.
+[SPEAKER_04]: And then goes down, because as the flag
+leaf first comes up, it's pointing
+[SPEAKER_04]: straight up.
+[SPEAKER_04]: And then as the pinnacle starts to emerge,
+the angle of that leaf changes.
+[SPEAKER_04]: So we get this bump in the analysis.
+[SPEAKER_04]: By having this organ-aware segmentation,
+we can instead look at the same sorghum
+[SPEAKER_04]: plant and look at just the height of the
+stem and pinnacle.
+[SPEAKER_04]: And so we get a much more consistent
+growth curve that is doing a better job of
+[SPEAKER_04]: reflecting how the plant is growing than
+looking at the total height, which is
+[SPEAKER_04]: influenced just by this leaf sort of
+flapping up and down as the plant grows.
+[SPEAKER_04]: And this is important because when you
+look at a lot of traits that are measured
+[SPEAKER_04]: from hyperspectral or from phenotyping
+data, you'll get something like this.
+[SPEAKER_04]: So these are two traits, just plant height
+and biomass.
+[SPEAKER_04]: And here we've got ground truth,
+which is measured again by students with
+[SPEAKER_04]: rollers and notebooks and scales.
+[SPEAKER_04]: And this is the estimated measurement.
+[SPEAKER_04]: That's for both of these from the images.
+[SPEAKER_04]: And these correlations look pretty good.
+[SPEAKER_04]: This is a question that my student Jukani
+thought to ask, though, is the error
+[SPEAKER_04]: that's left here, is it random?
+[SPEAKER_04]: If it's random error, we'll just throw
+more plants at it.
+[SPEAKER_04]: We'll get really good accurate estimates.
+[SPEAKER_04]: Or is it systematic?
+[SPEAKER_04]: And what he found was that it was
+systematic.
+[SPEAKER_04]: So there were certain genotypes that were
+systematically having their biomass
+[SPEAKER_04]: underpredicted and others that were
+systematically having their biomass
+[SPEAKER_04]: overpredicted.
+[SPEAKER_04]: So about half of that variation is
+heritable.
+[SPEAKER_04]: It's controlled by genetics.
+[SPEAKER_04]: So there are differences in the
+architecture of the plant that are
+[SPEAKER_04]: producing systematic errors in our
+measurement.
+[SPEAKER_04]: So if we were using this to do,
+say, train a genomic prediction model for
+[SPEAKER_04]: biomass, we wouldn't just be predicting
+biomass.
+[SPEAKER_04]: We'd also be predicting the phenotypes
+that lead to errors in measurement of
+[SPEAKER_04]: biomass from phenotyping data.
+[SPEAKER_04]: So it is important if we can get getting
+more accuracy is very important,
+[SPEAKER_04]: not just because it's more accuracy,
+but because we're removing systematic
+[SPEAKER_04]: biases in the way that the data is being
+collected.
+[SPEAKER_04]: So now to the fun bit.
+[SPEAKER_04]: So we've gone from growing plants.
+[SPEAKER_04]: We've developed robots and sensors and
+things to collect data and then computer
+[SPEAKER_04]: algorithms to turn all that data into
+giant spreadsheets full of numbers.
+[SPEAKER_04]: But I really am a biologist at heart.
+[SPEAKER_04]: I would like to actually map some genes or
+find something.
+[SPEAKER_04]: And there are some interesting
+quantitative genetics challenges,
+[SPEAKER_04]: opportunities, whatever you want to call
+them, that occur because of the types of
+[SPEAKER_04]: data that are produced by hyperkinetyping.
+[SPEAKER_04]: So this is the same sorghum plant from the
+last section.
+[SPEAKER_04]: You can see the two different measurements
+of height.
+[SPEAKER_04]: You can also see the heritability of
+height as measured by these two methods,
+[SPEAKER_04]: both from the individual data points and
+also from fitting a nonparametric curve to
+[SPEAKER_04]: each of the heights.
+[SPEAKER_04]: And you can see that, generally,
+the heritability from the fitted curve is
+[SPEAKER_04]: a little bit higher than from the raw
+data.
+[SPEAKER_04]: It's not a perfect pattern.
+[SPEAKER_04]: And we think this is because we're able to
+borrow data from adjacent data points to
+[SPEAKER_04]: get a more accurate measurement.
+[SPEAKER_04]: So another student in my lab, Chenyang
+Yao, is working on using this to do
+[SPEAKER_04]: mapping in the sorghum association panel,
+which is a population of about 400 sorghum
+[SPEAKER_04]: lines, most of which are conversion lines.
+[SPEAKER_04]: So they were collected from all over the
+world across to the US germplasm to
+[SPEAKER_04]: intergress both photoperiod and
+sensitivity genes that will actually
+[SPEAKER_04]: flower if we grow them in the summer in
+Nebraska.
+[SPEAKER_04]: And also dwarfing genes so that they will
+be plants like this and not plants taller
+[SPEAKER_04]: than the ceiling.
+[SPEAKER_04]: Now, if you grow this population in the
+field and you're interested in plant
+[SPEAKER_04]: height, it's very easy to map two of the,
+at least two, maybe three of the large
+[SPEAKER_04]: effect genes that are involved in sorghum
+height because there are still some very,
+[SPEAKER_04]: very tall sorghum plants in our
+population.
+[SPEAKER_04]: Now, I mentioned in the greenhouse,
+we can only grow plants about 2.3 meters.
+[SPEAKER_04]: So if we take out the extremely tall
+plants that are producing a strong signal
+[SPEAKER_04]: and use the same data, we now are not able
+to map any of these dwarfing genes.
+[SPEAKER_04]: We know they're real.
+[SPEAKER_04]: We know where they are.
+[SPEAKER_04]: We know we can't find them with the
+population we're going to work with.
+[SPEAKER_04]: So what you see here are the height curves
+of a large number of the different sorghum
+[SPEAKER_04]: plants collected from this experiment in
+the greenhouse.
+[SPEAKER_04]: So this is days after planting.
+[SPEAKER_04]: This is the height in centimeters.
+[SPEAKER_04]: And you can see that when the plant gets
+ready to have the panicle emerge,
+[SPEAKER_04]: you have this large bolting response,
+which happens at different times for
+[SPEAKER_04]: different plants.
+[SPEAKER_04]: And it just looks very, very messy.
+[SPEAKER_04]: And it's not quite clear what to do with
+it.
+[SPEAKER_04]: This is actually pearl millet,
+not sorghum, because it looks cooler.
+[SPEAKER_04]: But you're seeing images.
+[SPEAKER_04]: I think these are collected every two days
+of this pearl millet plant throughout its
+[SPEAKER_04]: life cycle.
+[SPEAKER_04]: As a human being, it's very easy to look
+at this plant and see, oh, look,
+[SPEAKER_04]: there's this transition.
+[SPEAKER_04]: It goes from just making leaves to now it
+has some panicles at the top.
+[SPEAKER_04]: And then it goes into senescence.
+[SPEAKER_04]: You will also notice that there's this
+person who comes in and is doing some sort
+[SPEAKER_04]: of maintenance during one of the days
+while we were collecting images.
+[SPEAKER_04]: So again, this is a thing that is easy for
+a human to do.
+[SPEAKER_04]: But Chen Yong was able to train a neural
+net using less than 1,000 images to get
+[SPEAKER_04]: relatively good accuracy at identifying
+when is this transition point from
+[SPEAKER_04]: vegetative development to reproductive
+development.
+[SPEAKER_04]: And what's cool about this, again,
+is that even the errors are the kinds of
+[SPEAKER_04]: errors a human might make.
+[SPEAKER_04]: So the transition point we're targeting is
+when does the panicle first become
+[SPEAKER_04]: visible.
+[SPEAKER_04]: So the computer, there's a little bit of
+panicle shooting out here.
+[SPEAKER_04]: The computer misclassified this as not
+flowering.
+[SPEAKER_04]: This plant is about to flower.
+[SPEAKER_04]: The panicle is right here in the stem.
+[SPEAKER_04]: You've got the flag leaf up here.
+[SPEAKER_04]: And the computer got confused and decided
+this was a flowering plant.
+[SPEAKER_04]: So these are a lot of the same kinds of
+mistakes that I would expect particularly
+[SPEAKER_04]: a bored human being to make if I was
+hiring high school students or people
+[SPEAKER_04]: online or something to do these
+classifications.
+[SPEAKER_04]: So once we have this classification data,
+instead of using planting as our benchmark
+[SPEAKER_04]: for comparing everything, we can shift the
+data around to days before panicle
+[SPEAKER_04]: emergence.
+[SPEAKER_04]: And we start to get much more similar
+shapes of growth.
+[SPEAKER_04]: What you'll notice is now we have
+different time ranges measured for each
+[SPEAKER_04]: plant.
+[SPEAKER_04]: And with this, the first thing we can do
+is just scan through and do genome-wide
+[SPEAKER_04]: association study for height on every
+different day.
+[SPEAKER_04]: Let's see.
+[SPEAKER_04]: OK.
+[SPEAKER_04]: So this is, as you can see, DWARF2 and
+DWARF1, DWARF2, and DWARF4, which I think
+[SPEAKER_04]: is not actually DWARF4.
+[SPEAKER_04]: I think that's mislabeled.
+[SPEAKER_04]: Show up and then later on in development
+we don't catch anything.
+[SPEAKER_04]: So that's animated.
+[SPEAKER_04]: It's a little hard to follow.
+[SPEAKER_04]: So here's another way of displaying the
+same data.
+[SPEAKER_04]: So what you see here on the y-axis is the
+10 chromosomes of sorghum.
+[SPEAKER_04]: And going across, we've highlighted
+genomic bins when there's at least one
+[SPEAKER_04]: significant step in that day of the
+analysis.
+[SPEAKER_04]: And there are several relatively long
+peaks that correspond to some of the genes
+[SPEAKER_04]: that we would expect to be able to map.
+[SPEAKER_04]: Either if we benchmark on days after
+planting, or if we benchmark on days after
+[SPEAKER_04]: pancreas emergence.
+[SPEAKER_04]: We're running lots and lots of GWAS here.
+[SPEAKER_04]: And if I tell you where the known genes
+are, you can find them.
+[SPEAKER_04]: But it's hard for me to look at this and
+say with confidence, OK, we really have
+[SPEAKER_04]: identified.
+[SPEAKER_04]: We want to identify because there's a lot
+of noise also there in the analysis.
+[SPEAKER_04]: So this is where we started talking to
+another statistician at the University of
+[SPEAKER_04]: Nebraska, Yuhang Xu.
+[SPEAKER_04]: He was a recent hire.
+[SPEAKER_04]: And his expertise is on working with
+nonparametric regression and the curves
+[SPEAKER_04]: you can generate from that.
+[SPEAKER_04]: And actually how do you break that down
+into how different individuals vary with
+[SPEAKER_04]: respect to those curves.
+[SPEAKER_04]: So you see here in gray are all the curves
+for all of the sorghum plants in our
+[SPEAKER_04]: population, as well as both the empirical
+estimate of sort of the center value or
+[SPEAKER_04]: the average pattern and the estimated
+pattern from his nonparametric regression.
+[SPEAKER_04]: And you can then do a functional principal
+component analysis to identify what are
+[SPEAKER_04]: the major components of variation,
+which is what you see on the other side of
+[SPEAKER_04]: this slide.
+[SPEAKER_04]: So PC1, which explains about 2 thirds of
+the variance, is essentially just taller
+[SPEAKER_04]: versus shorter.
+[SPEAKER_04]: So never really understand what determines
+what's plus and what's minus.
+[SPEAKER_04]: But you can see if you have a more
+negative value for PC1, the plant is
+[SPEAKER_04]: taller essentially throughout development.
+[SPEAKER_04]: You have a more positive value of shorter.
+[SPEAKER_04]: PC2, on the other hand, is essentially a
+trade-off.
+[SPEAKER_04]: So you have, and this explains another 20%
+to 30%, I'm going to have it on a later
+[SPEAKER_04]: slide, where you're taller earlier and
+shorter later.
+[SPEAKER_04]: So now for every plant, we can describe
+this curve as a combination of four
+[SPEAKER_04]: principal components, these two explain
+most of the variation.
+[SPEAKER_04]: And we can do GWAS just using these
+principal components that describe the
+[SPEAKER_04]: shape of the curve as our metrics instead.
+[SPEAKER_04]: And when we do that, we get some very
+clean signals.
+[SPEAKER_04]: So OK, 68% and 20%.
+[SPEAKER_04]: DWARF1 and DWARF2 are both identified with
+principal component 1 and DWARF3 with
+[SPEAKER_04]: principal component 2.
+[SPEAKER_04]: And what's interesting about this is we
+know a little bit about the biology of how
+[SPEAKER_04]: these different genes affect plant height.
+[SPEAKER_04]: So DWARF1, DWARF2 affect essentially all
+the internodes.
+[SPEAKER_04]: DWARF3 is affecting the lower internodes,
+but not the elongation of the peduncle,
+[SPEAKER_04]: so the stem that leads up.
+[SPEAKER_04]: So the panicle.
+[SPEAKER_04]: So what you'd expect here is this would
+have a substantial effect on height before
+[SPEAKER_04]: flowering, but then you wouldn't.
+[SPEAKER_04]: Can I run them again backwards?
+[SPEAKER_04]: Anyway, I'm not going to dig myself a
+deeper hole in this slide.
+[SPEAKER_04]: What I'm going to say is that they affect
+height differently, and it's consistent
+[SPEAKER_04]: with the patterns of the PCs.
+[SPEAKER_04]: And I will defer to Chenyang, now my
+student, on why that all makes sense.
+[SPEAKER_04]: All right.
+[SPEAKER_04]: So yeah, we can integrate data across
+multiple time points, and we're able to
+[SPEAKER_04]: recover statistical power to identify
+genes that we know are there, because we
+[SPEAKER_04]: can identify them in a larger population
+by integrating all this time series data.
+[SPEAKER_04]: People have done this previously using
+parametric models, where you decide,
+[SPEAKER_04]: OK, plants are going to grow and show a
+logarithmic pattern of growth.
+[SPEAKER_04]: What we found here was not actually that
+different from logarithmic patterns.
+[SPEAKER_04]: But what I like about it is it doesn't
+force that assumption.
+[SPEAKER_04]: So a lot of the really interesting stuff
+in biology is the really weird,
+[SPEAKER_04]: unexpected stuff.
+[SPEAKER_04]: And nonparametric curve fitting can
+capture weird, unexpected stuff,
+[SPEAKER_04]: whereas fitting the sigmoidal curves
+cannot.
+[SPEAKER_04]: So the last quantitative genetics point I
+want to talk about is the challenge of
+[SPEAKER_04]: high dimensional or nearly high
+dimensional data.
+[SPEAKER_04]: So technically, I'm told by my
+statistician collaborators, I cannot call
+[SPEAKER_04]: it high dimensional until I've measured
+more phenotypes from a number of
+[SPEAKER_04]: individuals in my population, which is a
+high bar.
+[SPEAKER_04]: So here, I'm going to talk about having
+hundreds of phenotypes, whether or not it
+[SPEAKER_04]: is a truly high dimensional data set.
+[SPEAKER_04]: Now, because of both high phenotyping and
+large collaborative projects, it's
+[SPEAKER_04]: becoming more and more common to have
+many, many traits toward the same
+[SPEAKER_04]: population in biology.
+[SPEAKER_04]: We also see this from medical data record
+mining in humans, and also from large
+[SPEAKER_04]: numbers of molecular phenotypes,
+so looking at hundreds of metabolites or
+[SPEAKER_04]: thousands of gene expression levels across
+whole populations.
+[SPEAKER_04]: And so this presents a challenge of
+multiple testing, because the conventional
+[SPEAKER_04]: approach to doing this would be to do
+separate GWAS for every single trait.
+[SPEAKER_04]: And this becomes a lot of tests very,
+very fast.
+[SPEAKER_04]: So a student in my lab, Chi Kai-Ling,
+working with a statistician at Iowa State,
+[SPEAKER_04]: was interested in trying some other
+methods to deal with this data.
+[SPEAKER_04]: And the data set we used was from here at
+Cornell with the Mays 282 Association
+[SPEAKER_04]: Panel.
+[SPEAKER_04]: And so you can see that there were large
+numbers of traits measured, and many of
+[SPEAKER_04]: those traits were scored in up to 16
+different environments.
+[SPEAKER_04]: So we had a total of 260 trait data sets
+to work with.
+[SPEAKER_04]: And the challenge of this is, so if we do
+GWAS for any one trait, so what you're
+[SPEAKER_04]: seeing here is GWAS for a single SNP and a
+single gene.
+[SPEAKER_04]: And instead of having all the SNPs on the
+x-axis, each of these represents the
+[SPEAKER_04]: significance for one of the traits in the
+data set.
+[SPEAKER_04]: So if I run a GWAS for one of these,
+these are flowering time traits.
+[SPEAKER_04]: A lot of them are statistically
+significant on their own.
+[SPEAKER_04]: If we take into account all the hypotheses
+that are being tested across all of the
+[SPEAKER_04]: phenotypes, none of them are significant
+anymore.
+[SPEAKER_04]: So we would like to be able to do some
+sort of a more integrated test to utilize
+[SPEAKER_04]: the data from all these traits together,
+because clearly, if you're detecting the
+[SPEAKER_04]: signal in many, many different
+measurements of the phenotype,
+[SPEAKER_04]: we should be able to sort of combine and
+leverage that signal.
+[SPEAKER_04]: See, the approach used here is first to
+identify sets of SNPs within a gene to
+[SPEAKER_04]: cluster and then select a single
+representative SNP for group of markers
+[SPEAKER_04]: that are in high LD with each other.
+[SPEAKER_04]: The first half of this model is just
+looking at multiple SNPs, but a single
+[SPEAKER_04]: phenotype, and is fitting a very
+complicated statistical model,
+[SPEAKER_04]: which I will be up front as essentially a
+black box to me.
+[SPEAKER_04]: So I can trust my statistical collaborator
+and then test that the results that come
+[SPEAKER_04]: out make sense.
+[SPEAKER_04]: Go through a step-wise selection procedure
+to select subsets of all those of the
+[SPEAKER_04]: phenotypes that show a significant signal
+for that gene.
+[SPEAKER_04]: Do a new comparison between our initial
+model, which is attempting to explain the
+[SPEAKER_04]: variation for all the SNPs within that
+gene.
+[SPEAKER_04]: We kept after filtering using both
+principal components, population structure
+[SPEAKER_04]: variation, as well as selected subset of
+the traits from the whole 260 set.
+[SPEAKER_04]: I'll say there's a preprint that we'll go
+into the methodology here in a lot more
+[SPEAKER_04]: detail.
+[SPEAKER_04]: We also have the R code that was used up
+on GitHub.
+[SPEAKER_04]: Because of the step-wise selection
+procedure, there are essentially really
+[SPEAKER_04]: large numbers of hypotheses that are being
+tested.
+[SPEAKER_04]: So the p-value distribution we see is
+quite skewed relative to what we would
+[SPEAKER_04]: expect from the number of tests we're
+actually running instead of implicitly
+[SPEAKER_04]: running.
+[SPEAKER_04]: So we ended up doing a lot of permutation
+testing just to determine what is the
+[SPEAKER_04]: distribution of p-value as we would expect
+to see, because they end up being very
+[SPEAKER_04]: extreme anyway.
+[SPEAKER_04]: And from this, we can establish what we
+hope is an accurate false discovery rate
+[SPEAKER_04]: cutoff.
+[SPEAKER_04]: And doing this takes quite a bit of time,
+even making some compromises.
+[SPEAKER_04]: So there are things we know we could be
+doing better that we're not, because it
+[SPEAKER_04]: still takes about seven years of CPU time
+to analyze 32,000 gene models a maze.
+[SPEAKER_04]: And then we get the results.
+[SPEAKER_04]: And the results look like this.
+[SPEAKER_04]: So I already talked you through.
+[SPEAKER_04]: On the top, we have each phenotype stored
+here along the x-axis.
+[SPEAKER_04]: On the top, you have the p-values for the
+individual phenotypes.
+[SPEAKER_04]: On the second side, you have either the
+selected phenotypes or the non-selected
+[SPEAKER_04]: phenotypes for this gene, and then an
+overall significance score for the gene as
+[SPEAKER_04]: a whole, whether we see a significant
+association between these two SNPs in this
+[SPEAKER_04]: gene and all the phenotypes measured for
+this population.
+[SPEAKER_04]: As I think probably came across in the way
+I explained this, a lot of the stats I
+[SPEAKER_04]: don't understand the details of,
+so I want to see whether or not the
+[SPEAKER_04]: associations that are identified by this
+model make any sense at all.
+[SPEAKER_04]: Fortunately, we have a couple of ways to
+do that.
+[SPEAKER_04]: So the first is looking at overlap between
+the genes that are identified in this
+[SPEAKER_04]: population with this set of data in this
+method and genes that were identified in
+[SPEAKER_04]: different populations using different
+methods.
+[SPEAKER_04]: So here we're comparing the genes that
+were identified by a number of different
+[SPEAKER_04]: models in the 282 population to genes that
+were identified in the nested association
+[SPEAKER_04]: mapping population, which shares some of
+the same haplotypes.
+[SPEAKER_04]: There's a larger population with different
+structure.
+[SPEAKER_04]: I talked to Ed yesterday, and there may be
+some problems with this analysis.
+[SPEAKER_04]: So we're going to work on some other ways
+to validate it.
+[SPEAKER_04]: But in principle, anyway, if we have more
+accuracy, we should see more overlap
+[SPEAKER_04]: between the genes we identify in our
+population and the genes identified in a
+[SPEAKER_04]: different population for some of the same
+phenotypes than the genes identified by
+[SPEAKER_04]: conventional algorithms.
+[SPEAKER_04]: So you see here, we have some data on
+version two of the maize genome and some
+[SPEAKER_04]: in version four, so we're constrained to
+only the genes that actually have
+[SPEAKER_04]: one-to-one correspondence between the two
+versions of the genome.
+[SPEAKER_04]: About 14% of those genes were identified
+as linked to phenotypes in the nested
+[SPEAKER_04]: association mapping population.
+[SPEAKER_04]: Then we can look at the subsets of genes
+identified by different GWAS algorithms,
+[SPEAKER_04]: and they are enriched.
+[SPEAKER_04]: So the genes identified in the 282
+association population are more likely to
+[SPEAKER_04]: also have been identified in the nested
+association mapping population.
+[SPEAKER_04]: So that's good.
+[SPEAKER_04]: That's what we expected.
+[SPEAKER_04]: And then this phenome-wide analysis that
+my students, in fact, came up with,
+[SPEAKER_04]: we see a substantially higher overlap that
+is significantly higher than the overlaps
+[SPEAKER_04]: seen with any of the conventional GWAS
+methods.
+[SPEAKER_04]: This is the internal control here,
+so this is multiple SNP single trait.
+[SPEAKER_04]: So it is utilizing multiple markers within
+the gene, but not trying to do the
+[SPEAKER_04]: selection and picking a subset of traits
+to test together.
+[SPEAKER_04]: We can also look at the kinds of genes
+that are being identified by the GPWAS
+[SPEAKER_04]: model compared to conventional GWAS.
+[SPEAKER_04]: What you're seeing here is a Go enrichment
+analysis.
+[SPEAKER_04]: So when identifying essentially the same
+number of genes, we see much more
+[SPEAKER_04]: enrichment of a wide range of enrichment
+and purification of Go terms in the GPWAS
+[SPEAKER_04]: gene set relative to genes identified by
+GWAS on the same underlying phenotypic and
+[SPEAKER_04]: genotypic data.
+[SPEAKER_04]: So I'm not going to go into this too much,
+but I'm just going to assert that this
+[SPEAKER_04]: demonstrates that we at least are
+identifying a less random subset of the
+[SPEAKER_04]: genome, which could be a good or a bad
+thing.
+[SPEAKER_04]: We can also look at the specific
+phenotypes that are being identified as
+[SPEAKER_04]: associated with individual genes that have
+been characterized through four genetics.
+[SPEAKER_04]: So this is an example of ANT301,
+which is a classical mutant that was
+[SPEAKER_04]: cloned back in, I think, 95.
+[SPEAKER_04]: So we know a lot about phenotypes that are
+the mutants of this gene exhibit.
+[SPEAKER_04]: We also know the phenotypes that were
+identified as associated with it based on
+[SPEAKER_04]: the GPWAS model.
+[SPEAKER_04]: And a lot of these match up.
+[SPEAKER_04]: Not all of them, but a lot.
+[SPEAKER_04]: So that gives us some sort of qualitative
+degree of confidence.
+[SPEAKER_04]: The thing that I think is most exciting
+about the genes identified by this method,
+[SPEAKER_04]: though, is not any of these, but the ways
+that they are different from the average
+[SPEAKER_04]: gene in the genome.
+[SPEAKER_04]: So we're going to compare.
+[SPEAKER_04]: Here we have all the genes, our
+conventional GPWAS genes, and another
+[SPEAKER_04]: control, which are a set of these
+classical mutants, which, again,
+[SPEAKER_04]: are those genes that somebody walked
+through a field and said, that phenotype
+[SPEAKER_04]: is so interesting, I need to clone it.
+[SPEAKER_04]: So you can see that if we just look at it
+having an average expression level higher
+[SPEAKER_04]: than a single FPKM, all of these sets are
+much more likely to be expressed at levels
+[SPEAKER_04]: above background.
+[SPEAKER_04]: Then the overall set of gene models in the
+genome.
+[SPEAKER_04]: If we look at KAKS, so a measure of how
+effectively purifying selection is
+[SPEAKER_04]: operating on these, we can only do this
+with a subset of genes that are actually
+[SPEAKER_04]: conserved and sorted.
+[SPEAKER_04]: We see that both the classical mutants and
+the GPWAS genes have a statistically
+[SPEAKER_04]: significant shift of distribution towards
+lower KAKS ratios, which indicates that
+[SPEAKER_04]: they're subject to stronger purifying
+selection than the average gene in the
+[SPEAKER_04]: genome.
+[SPEAKER_04]: There are a couple of other markers.
+[SPEAKER_04]: I told you about synthetic conservation,
+which is almost all of the classical
+[SPEAKER_04]: mutants are these synthetically conserved
+genes.
+[SPEAKER_04]: In this particular set, about 94 of them.
+[SPEAKER_04]: We also see a substantial enrichment both
+for genes identified by conventional GWAS
+[SPEAKER_04]: and by GPWAS relative to the background
+set.
+[SPEAKER_04]: And conversely, in Mays, there are a lot
+of genes that exhibit presence-absence
+[SPEAKER_04]: variations.
+[SPEAKER_04]: So they're in B73, say, but they're absent
+from other genetic backgrounds.
+[SPEAKER_04]: And we see that while this is quite common
+for the genes set as a whole, it is much
+[SPEAKER_04]: rarer for genes identified with
+quantitative genetics.
+[SPEAKER_04]: And GPWAS is closer to the really low
+level that we see for classical mutants.
+[SPEAKER_04]: So any quantitative genetics approach to
+identifying genes that are associated with
+[SPEAKER_04]: genotype identifies genes that look more
+like classical mutants than the overall
+[SPEAKER_04]: population of gene models.
+[SPEAKER_04]: And the approach that CHI is using seems
+to identify a population that looks even
+[SPEAKER_04]: more like those classical mutants than
+conventional GWAS.
+[SPEAKER_04]: So to summarize, we're identifying this
+population of genes that we think are
+[SPEAKER_04]: associated with phenotypic variation.
+[SPEAKER_04]: They're more broadly expressed.
+[SPEAKER_04]: They're more conserved at the same
+positions across species, less likely to
+[SPEAKER_04]: exhibit presence-absence variation.
+[SPEAKER_04]: They also tend to be longer genes,
+which we see also for the classical
+[SPEAKER_04]: mutants.
+[SPEAKER_04]: And so we can take this figure that I
+showed you at the beginning of the
+[SPEAKER_04]: presentation, and we can calculate
+essentially a gene function score,
+[SPEAKER_04]: which is just the inverse of that
+principal component 1.
+[SPEAKER_04]: So a score over here means you look more
+like a classical mutant.
+[SPEAKER_04]: A score over here means you look more like
+the gene models that don't look like
+[SPEAKER_04]: classical mutants.
+[SPEAKER_04]: You can see the distribution of all the
+gene models of the genome has a large peak
+[SPEAKER_04]: over here.
+[SPEAKER_04]: And both the classical mutants and the
+GPWAS genes exhibit similar distributions
+[SPEAKER_04]: shifted towards this end of the spectrum.
+[SPEAKER_04]: So at the beginning of this talk,
+I told you that I think we can do a much
+[SPEAKER_04]: better job of deciding which gene models
+represent hypotheses that likely are
+[SPEAKER_04]: valid, that they likely do explain
+something about how the genome determines
+[SPEAKER_04]: the characteristics of an organism,
+and which gene models are much less likely
+[SPEAKER_04]: to play a significant role in determining
+phenotype as a whole.
+[SPEAKER_04]: And while I have some students who are
+working on doing much better jobs of this
+[SPEAKER_04]: prediction than what I have right now,
+I hope that these students do such a thing
+[SPEAKER_04]: as possible, that we really can look at
+gene models and do a better job of saying,
+[SPEAKER_04]: you know, these probably are interesting
+and worthy of a lot more study.
+[SPEAKER_04]: These probably we don't want to burn out
+Brad's students trying to find a
+[SPEAKER_04]: phenotype.
+[SPEAKER_04]: So with that, I would like to thank my
+wonderful lab, my colleagues, both
+[SPEAKER_04]: engineering, statistics, and biology,
+and all of you for your attention here
+[SPEAKER_04]: today.
+[SPEAKER_04]: I'd be happy to take any questions.
+[SPEAKER_03]: I'll start off with one.
+[SPEAKER_03]: Is there a bias for cloning genes they've
+already been cloned at price or something,
+[SPEAKER_03]: or other species out there?
+[SPEAKER_03]: Yeah.
+[SPEAKER_04]: That's a very good question.
+[SPEAKER_04]: So that means I don't have a perfect
+answer.
+[SPEAKER_04]: I would say because we're using primarily
+genes that were identified prior to 2011,
+[SPEAKER_04]: I think the benefit of being cloned in
+rice was much smaller, because a lot of
+[SPEAKER_04]: that happened before we had a maize genome
+to compare to.
+[SPEAKER_04]: It would be really interesting.
+[SPEAKER_04]: I've got a student working on getting the
+2011 to 2019 genes.
+[SPEAKER_04]: I would predict we'd see a bigger effect
+of already having a characterized function
+[SPEAKER_04]: in rice or another grass in that later.
+[SPEAKER_03]: So you could essentially just add that in
+the model too.
+[SPEAKER_03]: When cloned in rice.
+[SPEAKER_03]: Yeah.
+[SPEAKER_02]: Yes.
+[SPEAKER_02]: Last slide.
+[SPEAKER_02]: So I worked on a project with a PhD where
+I found that genes that are highly
+[SPEAKER_02]: expressed in the Poetius species,
+and we compared their analysis across four
+[SPEAKER_02]: Poetius species on the genes that are
+highly expressed, also tend to be broadly
+[SPEAKER_02]: expressed, and the AKSs.
+[SPEAKER_02]: So in this model, we're trying to predict
+when gene models are known by some
+[SPEAKER_02]: hypothesis.
+[SPEAKER_02]: We're trying to tease apart the effects of
+these correlated characters.
+[SPEAKER_04]: That's a very good question.
+[SPEAKER_04]: Let me go back to this.
+[SPEAKER_04]: Yeah.
+[SPEAKER_04]: So the question was that you've observed a
+lot of correlation already between the
+[SPEAKER_04]: average level of expression, the breadth
+of expression across many different
+[SPEAKER_04]: tissues, the KAKS, which was not in this
+particular model because we only had it
+[SPEAKER_04]: for synthetically conserved genes.
+[SPEAKER_04]: And there was another one.
+[SPEAKER_02]: Oh, OK.
+[SPEAKER_04]: So we certainly see that.
+[SPEAKER_04]: That's one of the things I like about
+being able to visualize the data this way
+[SPEAKER_04]: is we do see a lot of these do seem to
+show up similarly when we project them
+[SPEAKER_04]: into the PCA space.
+[SPEAKER_04]: I think that there are some genes,
+though, we see that do have very high
+[SPEAKER_04]: expression that are not evolutionarily
+conserved.
+[SPEAKER_04]: And so being able to pull out some of the
+categories that are exceptions to the
+[SPEAKER_04]: overall trend and look at those would be
+very interesting in terms of figuring out
+[SPEAKER_04]: whether the reason a lot of these are
+showing up is that they're all correlated,
+[SPEAKER_04]: say, with expression, or whether they have
+separate predictive power.
+[SPEAKER_04]: I haven't done that yet.
+[SPEAKER_04]: I would be interested to find out the
+answer and share it with you.
+[SPEAKER_02]: So for the non-parametric regression
+models, how sensitive are those methods to
+sparse data?
+[SPEAKER_04]: So that's a good question.
+[SPEAKER_04]: We can configure how flexible it's going
+to be with individual data points.
+[SPEAKER_04]: One of the things I really like about it,
+though, is it does tolerate uneven data.
+[SPEAKER_04]: So if we have dense sampling in some parts
+and much less dense in other parts,
+[SPEAKER_04]: we're still able to fit reasonably good
+curves.
+[SPEAKER_04]: One of the points I didn't talk about a
+lot with this is the way that the images
+[SPEAKER_04]: are collected.
+[SPEAKER_04]: We actually can grow twice as many plants
+as it can be photographed in a day.
+[SPEAKER_04]: So the only reason we're able to make this
+comparison is because we're able to use
+[SPEAKER_04]: the non-parametric regression to fill in
+the values so that we can look at the
+[SPEAKER_04]: whole population at the same time.
+[SPEAKER_04]: Yes?
+[SPEAKER_03]: As far as the counting leaves of the sort
+of plants and simulating the images,
+[SPEAKER_03]: what's the difference between making up a
+computer and corn and then just taking
+[SPEAKER_03]: more pictures of the same plants you have?
+[SPEAKER_03]: Because maybe counting leaves is simple
+enough for not overfitting, but I was
+[SPEAKER_03]: like, why would you just take more
+pictures of the same plants you already
+[SPEAKER_03]: have to put your training model?
+[SPEAKER_03]: As far as the simulating.
+[SPEAKER_04]: You're talking about just taking photos
+from more angles?
+[SPEAKER_03]: Yeah,
+[SPEAKER_03]: I don't know.
+[SPEAKER_03]: The simulating plant seems odd.
+[SPEAKER_03]: It uses a training model.
+[SPEAKER_03]: Obviously it helps train the model.
+[SPEAKER_03]: I'm just curious what that difference
+would be.
+[SPEAKER_04]: So there are a number of data augmentation
+approaches you can use with real images.
+[SPEAKER_04]: You can mirror the image and do adding
+noise.
+[SPEAKER_04]: I think that we would rapidly hit a point
+of emission return in terms of the number
+[SPEAKER_04]: of different angles you can photograph the
+plant from and still get noticeably
+[SPEAKER_04]: different images.
+[SPEAKER_04]: So what I like about the simulated
+approach, and I haven't shown that this is
+[SPEAKER_04]: the case, is that in principle we're
+sampling a really wide parameter space in
+[SPEAKER_04]: terms of what a corn plant looks like.
+[SPEAKER_04]: And in some ways that's a problem.
+[SPEAKER_04]: So I'm not going to jump all the way back
+to that slide, but one of the issues we
+[SPEAKER_04]: had is we don't actually have an
+alternating phylotaxi in the simulated
+[SPEAKER_04]: plants.
+[SPEAKER_04]: The guy who made the corn plant model for
+video games, I don't think realized that
+[SPEAKER_04]: that was what corn plants did.
+[SPEAKER_04]: So we could do more work to converge on a
+biologically informed 3D model.
+[SPEAKER_04]: The bigger challenge, and it's not such an
+issue for leaf counting, is you also need
+[SPEAKER_04]: the, you don't just need the photos,
+you need the ground truth.
+[SPEAKER_04]: And so for a lot of sort of complex
+structural traits, it can be very
+[SPEAKER_04]: challenging to collect the ground truth
+from large numbers of real plants.
+[SPEAKER_04]: You have the full 3D model of the corn
+plant, you already know all the ground
+[SPEAKER_04]: truth.
+[SPEAKER_04]: So it's not just the collecting images,
+but collecting the ground truth where you
+[SPEAKER_04]: save effort.
+[SPEAKER_04]: So there are about 100 genes, and so these
+are ones that were identified first by
+[SPEAKER_04]: phenotype, and then somebody actually
+cloned it that way, rather than either
+[SPEAKER_04]: just a statistical association between the
+gene and phenotype, or reverse genetics of
+[SPEAKER_04]: somebody said, hey, this gene looks
+interesting, let's knock it out,
+[SPEAKER_04]: and then try really hard to find a
+phenotype.
+[SPEAKER_00]: You've been concentrating a lot on the
+morphological phenotypes?
+Yes.
+[SPEAKER_00]: And maybe much of this then pertains to
+those, because historically that's what
+[SPEAKER_00]: people mapped in those genes that were
+cloned first.
+[SPEAKER_00]: But what about when you start looking at
+physiological traits and things that
+[SPEAKER_00]: aren't morphologically observable in this
+way?
+[SPEAKER_00]: Wouldn't that shift the entire gene space
+that you're working with?
+[SPEAKER_04]: That is a good question.
+[SPEAKER_04]: So as I mentioned, certainly for the
+disease resistance genes, those behave so
+[SPEAKER_04]: differently from everything else.
+[SPEAKER_04]: In terms of the stuff involved in
+physiology or biochemistry that isn't
+[SPEAKER_04]: reflected in morphology, I'm not sure I
+could make a good prediction right now,
+[SPEAKER_04]: but the great thing is we're getting those
+data sets more and more every day.
+[SPEAKER_04]: So very soon, I'm confident I would have
+an answer on whether they would behave the
+[SPEAKER_04]: same as the genes controlling
+morphological traits, or if they show very
+[SPEAKER_04]: different patterns.
+[SPEAKER_00]: I guess I'm trying to think about the
+transcription factors that do such
+[SPEAKER_00]: different things in different species.
+[SPEAKER_00]: And I mean, my take home is a lot of what
+is regulated and at least the things that
+[SPEAKER_00]: we've been interested in are regulated by
+transcription factors.
+[SPEAKER_00]: And they're A, expressed often at very low
+levels, and B, very specific kinds in
+[SPEAKER_00]: tissues, and C, they affect the kinds of
+phenotypes we're interested in,
+[SPEAKER_00]: but the same transcription factor does
+completely opposite things or different
+[SPEAKER_00]: things in different species.
+[SPEAKER_00]: So that's why I'm just trying to...
+[SPEAKER_00]: Reach into the gene space that I'm
+interested in, that I don't know if it's
+[SPEAKER_00]: collected.
+[SPEAKER_04]: Yeah, I would agree.
+[SPEAKER_04]: It's not answered.
+[SPEAKER_04]: But the data sets are out there,
+so I need to get you an answer.
+[SPEAKER_01]: Quick question.
+[SPEAKER_01]: Yeah.
+[SPEAKER_01]: I really like your models that separate
+leaves from stalks from chemicals.
+[SPEAKER_01]: Those results look really nice.
+[SPEAKER_01]: I'm wondering whether the weights for
+those models, as is, generalize well to
+[SPEAKER_01]: other grasses that you have similar data
+sets for.
+[SPEAKER_04]: Actually, that's one of the things on
+Shenyang's to-do list is to run this.
+[SPEAKER_04]: We have chromolitanase data and see
+whether it's translatable or if we need a
+[SPEAKER_04]: new training set for each species we work
+on.
+[SPEAKER_04]: They do work very well across the 400
+sorghum genotypes.
+[SPEAKER_04]: So at least it's not genotype specific,
+which is always the problem with a lot of
+[SPEAKER_04]: these.
+[SPEAKER_04]: Thanks.
+[SPEAKER_03]: Okay.
+[SPEAKER_03]: Well, why don't we wrap it up here.
+[SPEAKER_03]: Thanks, Jimmy.
+[SPEAKER_03]: Thank you for your time.
+[SPEAKER_02]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_02]: Thank you.
+[SPEAKER_02]: Thank you.
+Thank you.

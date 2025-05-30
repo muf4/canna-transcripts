@@ -1,0 +1,2240 @@
+1
+00:00:05,730 --> 00:00:11,039
+okay so I'm paranoid of the voice of God
+
+2
+00:00:09,808 --> 00:00:16,410
+so I'm gonna be dashing through this
+
+3
+00:00:11,038 --> 00:00:17,669
+presentation so this is if you haven't
+
+4
+00:00:16,410 --> 00:00:19,259
+quite captured the power of
+
+5
+00:00:17,669 --> 00:00:20,580
+cryptocurrency hopefully this project
+
+6
+00:00:19,259 --> 00:00:21,929
+will sum it up a lot of people think
+
+7
+00:00:20,579 --> 00:00:23,729
+it's used for nefarious uses but
+
+8
+00:00:21,929 --> 00:00:26,099
+actually they're now funding scientific
+
+9
+00:00:23,730 --> 00:00:28,230
+purposes scientific projects their
+
+10
+00:00:26,099 --> 00:00:30,960
+funding charities all over the world and
+
+11
+00:00:28,230 --> 00:00:33,509
+- decided back in the in the spring time
+
+12
+00:00:30,960 --> 00:00:35,520
+to fund this project and what is this
+
+13
+00:00:33,509 --> 00:00:36,628
+project about well John gave a great
+
+14
+00:00:35,520 --> 00:00:38,400
+description what you can do with the
+
+15
+00:00:36,628 --> 00:00:40,109
+current genomes you can do a lot however
+
+16
+00:00:38,399 --> 00:00:42,600
+if you look around other plant genomes
+
+17
+00:00:40,109 --> 00:00:44,759
+that have much larger a much smaller
+
+18
+00:00:42,600 --> 00:00:46,439
+economic impact in cannabis their
+
+19
+00:00:44,759 --> 00:00:48,989
+genomes are much better shape than ours
+
+20
+00:00:46,439 --> 00:00:50,280
+the cannabis genome right now is in is
+
+21
+00:00:48,990 --> 00:00:51,690
+in horrible shape compared to these
+
+22
+00:00:50,280 --> 00:00:54,030
+things and it does create some artifacts
+
+23
+00:00:51,689 --> 00:00:55,769
+Philippe showed some artifacts where you
+
+24
+00:00:54,030 --> 00:00:57,450
+try and replicate markers and the
+
+25
+00:00:55,770 --> 00:00:59,430
+primers fall in snips and it doesn't
+
+26
+00:00:57,450 --> 00:01:01,800
+reproduce and we've seen this with a lot
+
+27
+00:00:59,429 --> 00:01:03,390
+of the vendors supplying sequencing
+
+28
+00:01:01,799 --> 00:01:05,759
+services as well that the things just
+
+29
+00:01:03,390 --> 00:01:07,109
+don't fully reproduce lab to lab we got
+
+30
+00:01:05,759 --> 00:01:10,289
+to changed that and the best way to
+
+31
+00:01:07,109 --> 00:01:12,030
+change that is to actually sequence the
+
+32
+00:01:10,289 --> 00:01:14,009
+genome to a quality of at least what the
+
+33
+00:01:12,030 --> 00:01:16,049
+human genome project had back in 2001
+
+34
+00:01:14,009 --> 00:01:19,019
+and the metric back then was to get to
+
+35
+00:01:16,049 --> 00:01:20,600
+about 500 KB and 50 what that means is
+
+36
+00:01:19,019 --> 00:01:23,728
+the average length of the sequence
+
+37
+00:01:20,599 --> 00:01:26,339
+contig in the assembly was about 500,000
+
+38
+00:01:23,728 --> 00:01:27,840
+letters this is not perfect this is we
+
+39
+00:01:26,340 --> 00:01:29,579
+want chromosomes that are hundreds of
+
+40
+00:01:27,840 --> 00:01:31,228
+millions of bases long that are
+
+41
+00:01:29,578 --> 00:01:32,879
+completely contiguous and completely
+
+42
+00:01:31,228 --> 00:01:35,009
+phased but this is the best we could do
+
+43
+00:01:32,879 --> 00:01:36,989
+back then nowadays I think you'll find
+
+44
+00:01:35,009 --> 00:01:38,399
+the hurdle rate for a good genome people
+
+45
+00:01:36,989 --> 00:01:40,349
+will say is if you're in the mega base
+
+46
+00:01:38,399 --> 00:01:42,778
+Club they want this n 50 number to be
+
+47
+00:01:40,349 --> 00:01:44,489
+north of a million bases and I'm gonna
+
+48
+00:01:42,778 --> 00:01:48,718
+show you how we pulled this off on the
+
+49
+00:01:44,489 --> 00:01:50,339
+Cannabis genome so there are several
+
+50
+00:01:48,718 --> 00:01:52,078
+reasons to do this that Jon touched on I
+
+51
+00:01:50,340 --> 00:01:53,520
+won't go very long we want
+
+52
+00:01:52,078 --> 00:01:55,379
+marker-assisted selection we want
+
+53
+00:01:53,519 --> 00:01:56,700
+accelerated breeding we want reliable
+
+54
+00:01:55,379 --> 00:01:59,759
+snip chips which I don't think you can
+
+55
+00:01:56,700 --> 00:02:01,799
+get off the existing references and we
+
+56
+00:01:59,759 --> 00:02:03,478
+we want to do this on as many genomes as
+
+57
+00:02:01,799 --> 00:02:05,759
+possible not just any one sort of
+
+58
+00:02:03,478 --> 00:02:07,560
+victory' genome we want a pan genome we
+
+59
+00:02:05,759 --> 00:02:09,990
+want type 1 genomes type two genomes
+
+60
+00:02:07,560 --> 00:02:12,479
+type 3 genomes type 4 type 5 you name it
+
+61
+00:02:09,990 --> 00:02:15,299
+hemp lines we really want 12 really
+
+62
+00:02:12,479 --> 00:02:17,488
+powerfully done genomes to make sense of
+
+63
+00:02:15,299 --> 00:02:19,230
+what's going on now some some
+
+64
+00:02:17,489 --> 00:02:20,730
+terminology here you're probably you
+
+65
+00:02:19,229 --> 00:02:22,500
+to hearing about context this is what a
+
+66
+00:02:20,729 --> 00:02:24,268
+normal assembly turns into a couple
+
+67
+00:02:22,500 --> 00:02:25,919
+hundred thousand of these and we really
+
+68
+00:02:24,269 --> 00:02:27,780
+want to get it into chromosomes like
+
+69
+00:02:25,919 --> 00:02:29,699
+this and there's a technologies from
+
+70
+00:02:27,780 --> 00:02:31,408
+phaz genomics impact bio that help do
+
+71
+00:02:29,699 --> 00:02:32,969
+this that we'll touch on but this is
+
+72
+00:02:31,408 --> 00:02:34,560
+really important for you to understand
+
+73
+00:02:32,969 --> 00:02:36,419
+where those chromosomes came from like
+
+74
+00:02:34,560 --> 00:02:38,009
+if they're in certain organelles or if
+
+75
+00:02:36,419 --> 00:02:40,859
+they're in certain microbes that often
+
+76
+00:02:38,009 --> 00:02:42,628
+contaminate genome assemblies so we
+
+77
+00:02:40,860 --> 00:02:44,430
+started off sequencing a jamaican lion
+
+78
+00:02:42,628 --> 00:02:45,989
+strain and this was a strain that I
+
+79
+00:02:44,430 --> 00:02:47,730
+selected mainly because it had some
+
+80
+00:02:45,989 --> 00:02:49,560
+impact on my father he was using type 2
+
+81
+00:02:47,729 --> 00:02:51,539
+strains but there was also some
+
+82
+00:02:49,560 --> 00:02:52,829
+controversy over IP and we figured let's
+
+83
+00:02:51,539 --> 00:02:55,348
+see if we can shed some light on that
+
+84
+00:02:52,829 --> 00:02:56,819
+and I also like teasing mark Lewis once
+
+85
+00:02:55,348 --> 00:02:58,169
+in a while and trolling him a little bit
+
+86
+00:02:56,818 --> 00:03:00,298
+so I decided that let's sleep on
+
+87
+00:02:58,169 --> 00:03:01,949
+something that that he may have bred I
+
+88
+00:03:00,299 --> 00:03:05,159
+think this is actually dates back to
+
+89
+00:03:01,949 --> 00:03:08,578
+2007 and there's some awards that won
+
+90
+00:03:05,159 --> 00:03:11,489
+and it is a type 2 plant and it looks as
+
+91
+00:03:08,579 --> 00:03:12,870
+if it is beta care off the lean dominant
+
+92
+00:03:11,489 --> 00:03:15,569
+a little bit immersing in there as well
+
+93
+00:03:12,870 --> 00:03:17,459
+these might vary based on conditions
+
+94
+00:03:15,568 --> 00:03:18,869
+this is all grown in a hydro to get rid
+
+95
+00:03:17,459 --> 00:03:21,450
+of microbes or at least to limit the
+
+96
+00:03:18,870 --> 00:03:22,799
+microbes but you can see the the the
+
+97
+00:03:21,449 --> 00:03:27,328
+reports down here in terms of the DH
+
+98
+00:03:22,799 --> 00:03:30,930
+it's about a 2 to 1 CBD to THC line so
+
+99
+00:03:27,329 --> 00:03:32,760
+how do we do this well - as Chuck just
+
+100
+00:03:30,930 --> 00:03:33,959
+described it consists of these master
+
+101
+00:03:32,759 --> 00:03:35,459
+node owners that are all over the world
+
+102
+00:03:33,959 --> 00:03:37,019
+that vote on how to spend their Treasury
+
+103
+00:03:35,459 --> 00:03:39,180
+and you submit them proposals and they
+
+104
+00:03:37,019 --> 00:03:40,590
+decide will this help us improve our
+
+105
+00:03:39,180 --> 00:03:42,239
+network and they're interested in
+
+106
+00:03:40,590 --> 00:03:43,650
+solving the banking problem in cannabis
+
+107
+00:03:42,239 --> 00:03:45,180
+industry and they saw this conference
+
+108
+00:03:43,650 --> 00:03:45,599
+and they saw this genome and said let's
+
+109
+00:03:45,180 --> 00:03:47,189
+do it
+
+110
+00:03:45,598 --> 00:03:49,108
+let's build the best reference in the
+
+111
+00:03:47,189 --> 00:03:50,639
+world and then we can maybe even build a
+
+112
+00:03:49,109 --> 00:03:53,609
+seed to sale tracking system that is
+
+113
+00:03:50,639 --> 00:03:55,980
+forensic in quality so they voted on
+
+114
+00:03:53,609 --> 00:03:57,629
+this in in June third and this is what's
+
+115
+00:03:55,979 --> 00:03:59,729
+crazy about the process is you submit
+
+116
+00:03:57,629 --> 00:04:00,840
+the the grant application we should
+
+117
+00:03:59,729 --> 00:04:04,018
+probably spend it a week before the
+
+118
+00:04:00,840 --> 00:04:06,900
+deadline and and by a week later we had
+
+119
+00:04:04,019 --> 00:04:09,090
+- in our bank ready to spend and were
+
+120
+00:04:06,900 --> 00:04:11,189
+able to kick the project off so this is
+
+121
+00:04:09,090 --> 00:04:12,870
+the summer time June third we started
+
+122
+00:04:11,189 --> 00:04:14,759
+you PCR screening for type two plants
+
+123
+00:04:12,870 --> 00:04:15,989
+this is little color metric ass that we
+
+124
+00:04:14,759 --> 00:04:18,810
+have that can tell you whether it's type
+
+125
+00:04:15,989 --> 00:04:20,160
+1 2 or 3 we all then went into Illumina
+
+126
+00:04:18,810 --> 00:04:22,978
+sequencing to screen for hetero zygosity
+
+127
+00:04:20,160 --> 00:04:24,090
+just pick a plant that had the less of
+
+128
+00:04:22,978 --> 00:04:26,490
+that because that would be better to
+
+129
+00:04:24,089 --> 00:04:28,079
+sequenced as a first genome and then we
+
+130
+00:04:26,490 --> 00:04:30,389
+got to go back to these old-school - the
+
+131
+00:04:28,079 --> 00:04:31,740
+tools of actually doing pulsed field gel
+
+132
+00:04:30,389 --> 00:04:32,919
+electrophoresis to get high molecular
+
+133
+00:04:31,740 --> 00:04:35,050
+weight DNA this is
+
+134
+00:04:32,920 --> 00:04:36,790
+really critical if you get DNA as long
+
+135
+00:04:35,050 --> 00:04:38,020
+as possible because the read lengths we
+
+136
+00:04:36,790 --> 00:04:39,760
+have now in these single molecule
+
+137
+00:04:38,019 --> 00:04:42,490
+sequencers can actually get out to fifty
+
+138
+00:04:39,759 --> 00:04:44,170
+to a hundred thousand bases and so we
+
+139
+00:04:42,490 --> 00:04:45,610
+chose to do this on the Pacific
+
+140
+00:04:44,170 --> 00:04:47,470
+Biosciences platform because it had the
+
+141
+00:04:45,610 --> 00:04:48,699
+highest accuracy there are some other
+
+142
+00:04:47,470 --> 00:04:50,650
+nanopores up there that have longer
+
+143
+00:04:48,699 --> 00:04:51,879
+reads for the accuracy right now when we
+
+144
+00:04:50,649 --> 00:04:53,259
+played around with that last year at cam
+
+145
+00:04:51,879 --> 00:04:55,629
+and we couldn't get those assemblies to
+
+146
+00:04:53,259 --> 00:04:58,060
+gel so we turn back to pack bio and look
+
+147
+00:04:55,629 --> 00:05:00,040
+for higher accuracy reads and fed at DNA
+
+148
+00:04:58,060 --> 00:05:02,230
+that could actually get us these 32,000
+
+149
+00:05:00,040 --> 00:05:04,420
+base pair reads and we assembled this by
+
+150
+00:05:02,230 --> 00:05:07,569
+August third and put it public at about
+
+151
+00:05:04,420 --> 00:05:10,720
+a 650 KB and 50 so we beat the Human
+
+152
+00:05:07,569 --> 00:05:12,879
+Genome Project draft I should say in a
+
+153
+00:05:10,720 --> 00:05:15,640
+matter of a couple months 60 days from
+
+154
+00:05:12,879 --> 00:05:18,129
+getting funded to putting it public and
+
+155
+00:05:15,639 --> 00:05:20,050
+this isn't the end of the story we then
+
+156
+00:05:18,129 --> 00:05:21,939
+decided to team up with faze genomics to
+
+157
+00:05:20,050 --> 00:05:24,040
+turn this thing into a perfection genome
+
+158
+00:05:21,939 --> 00:05:26,500
+and what these folks do is they use
+
+159
+00:05:24,040 --> 00:05:28,689
+something called chromatin capture which
+
+160
+00:05:26,500 --> 00:05:30,519
+basically cross links the proteins that
+
+161
+00:05:28,689 --> 00:05:34,149
+are attached to the DNA and it tends to
+
+162
+00:05:30,519 --> 00:05:35,529
+mostly do that to inter chromosomally so
+
+163
+00:05:34,149 --> 00:05:36,669
+you don't get chromosome to chromosome
+
+164
+00:05:35,529 --> 00:05:38,469
+cross links as much as you get
+
+165
+00:05:36,670 --> 00:05:40,120
+neighboring DNA cross links and so what
+
+166
+00:05:38,470 --> 00:05:41,860
+you can get from this technology are
+
+167
+00:05:40,120 --> 00:05:43,360
+pieces of DNA sequence that are millions
+
+168
+00:05:41,860 --> 00:05:45,100
+of bases apart but are on the same
+
+169
+00:05:43,360 --> 00:05:47,530
+chromosome and then you can order up all
+
+170
+00:05:45,100 --> 00:05:49,629
+your chromosomes into pretty pictures so
+
+171
+00:05:47,529 --> 00:05:52,359
+we did 600 million high c reads like
+
+172
+00:05:49,629 --> 00:05:54,490
+this on Illumina to to get the high C
+
+173
+00:05:52,360 --> 00:05:56,830
+data together threw it into an assembly
+
+174
+00:05:54,490 --> 00:06:00,009
+and we ended up with a 5.4 mega base and
+
+175
+00:05:56,829 --> 00:06:01,569
+50 genome still not perfect but but you
+
+176
+00:06:00,009 --> 00:06:03,490
+know we're up above the mega base Club
+
+177
+00:06:01,569 --> 00:06:05,079
+but we realized you know what we really
+
+178
+00:06:03,490 --> 00:06:06,670
+want to get this into like the 50
+
+179
+00:06:05,079 --> 00:06:08,800
+megabase range so that we have full
+
+180
+00:06:06,670 --> 00:06:11,290
+chromosomes that are touching and we can
+
+181
+00:06:08,800 --> 00:06:12,939
+phase the genome so we went back and did
+
+182
+00:06:11,290 --> 00:06:14,770
+more PacBio sequencing on their latest
+
+183
+00:06:12,939 --> 00:06:17,139
+chemistry it's a version 6 chemistry
+
+184
+00:06:14,769 --> 00:06:18,879
+that does 42,000 base pair reads and I
+
+185
+00:06:17,139 --> 00:06:20,229
+think it can do longer this is probably
+
+186
+00:06:18,879 --> 00:06:22,389
+limited on the type in the quality of
+
+187
+00:06:20,230 --> 00:06:24,340
+DNA we gave them and it gave the
+
+188
+00:06:22,389 --> 00:06:26,379
+laboratory that was doing this you
+
+189
+00:06:24,339 --> 00:06:28,569
+really need to get that DNA as long as
+
+190
+00:06:26,379 --> 00:06:30,279
+you can so that you can maximize that
+
+191
+00:06:28,569 --> 00:06:32,589
+the throughput on these on these systems
+
+192
+00:06:30,279 --> 00:06:34,750
+so this one into another assembly a
+
+193
+00:06:32,589 --> 00:06:36,819
+falcon assembly and this raw assembly
+
+194
+00:06:34,750 --> 00:06:38,560
+unscaled it without any of the high C
+
+195
+00:06:36,819 --> 00:06:41,170
+data trying to glue the context together
+
+196
+00:06:38,560 --> 00:06:43,629
+came out at three times this one mega
+
+197
+00:06:41,170 --> 00:06:46,000
+base Club all right we're at 3.7 mega
+
+198
+00:06:43,629 --> 00:06:46,269
+bases of just the PacBio date alone and
+
+199
+00:06:46,000 --> 00:06:48,730
+that
+
+200
+00:06:46,269 --> 00:06:52,449
+fantastic to give you some perspective
+
+201
+00:06:48,730 --> 00:06:54,009
+on where that is in it slider so is she
+
+202
+00:06:52,449 --> 00:06:56,139
+where other historical assemblies were
+
+203
+00:06:54,009 --> 00:06:57,730
+and then of course we quickly uploaded
+
+204
+00:06:56,139 --> 00:06:59,289
+this into a preprint server because our
+
+205
+00:06:57,730 --> 00:07:00,819
+funding cycle is ending by the end of
+
+206
+00:06:59,290 --> 00:07:02,620
+October and we really wanted to have the
+
+207
+00:07:00,819 --> 00:07:05,680
+chapter closed on starting a funding to
+
+208
+00:07:02,620 --> 00:07:07,920
+end of funding we're gonna have a pre
+
+209
+00:07:05,680 --> 00:07:11,230
+printout that represents all this data
+
+210
+00:07:07,920 --> 00:07:12,520
+so what are these platforms Sara gave a
+
+211
+00:07:11,230 --> 00:07:14,470
+great talk in the other hallway and what
+
+212
+00:07:12,519 --> 00:07:16,269
+Pacific Biosciences is these are single
+
+213
+00:07:14,470 --> 00:07:17,470
+molecule sequencers so that trace you
+
+214
+00:07:16,269 --> 00:07:19,029
+see if there is actually a single
+
+215
+00:07:17,470 --> 00:07:20,650
+molecule going through a zero mode
+
+216
+00:07:19,029 --> 00:07:22,209
+waveguide with a polymerase that's
+
+217
+00:07:20,649 --> 00:07:23,620
+putting in fluorescently labelled
+
+218
+00:07:22,209 --> 00:07:26,560
+nucleotides and you are watching a movie
+
+219
+00:07:23,620 --> 00:07:28,180
+of a polymerase replicating DNA at a
+
+220
+00:07:26,560 --> 00:07:30,639
+single molecule levels absolutely
+
+221
+00:07:28,180 --> 00:07:32,199
+mind-blowing Star Trek stuff and they
+
+222
+00:07:30,639 --> 00:07:33,430
+can do millions of these wells at a time
+
+223
+00:07:32,199 --> 00:07:35,319
+which is which is which is fascinating
+
+224
+00:07:33,430 --> 00:07:37,449
+and then the other one is this this high
+
+225
+00:07:35,319 --> 00:07:39,279
+C approach that phase genomics was doing
+
+226
+00:07:37,449 --> 00:07:40,750
+and what this does is it really gives
+
+227
+00:07:39,279 --> 00:07:42,069
+you three-dimensional structures of the
+
+228
+00:07:40,750 --> 00:07:43,870
+genome because their genomes not these
+
+229
+00:07:42,069 --> 00:07:46,209
+perfect beautiful linear chromosomes
+
+230
+00:07:43,870 --> 00:07:47,829
+it's actually a big Gordian knot and
+
+231
+00:07:46,209 --> 00:07:49,810
+when you cross link that you end up
+
+232
+00:07:47,829 --> 00:07:51,159
+cross-linking certain DNA into certain
+
+233
+00:07:49,810 --> 00:07:52,839
+compartments of cells like the
+
+234
+00:07:51,160 --> 00:07:54,250
+mitochondrial DNA ends up in one place
+
+235
+00:07:52,839 --> 00:07:56,519
+and the chloroplast ends up in another
+
+236
+00:07:54,250 --> 00:07:58,540
+and then all of them might the the
+
+237
+00:07:56,519 --> 00:07:59,709
+microbial contamination end up
+
+238
+00:07:58,540 --> 00:08:01,300
+cross-linked in their own buckets
+
+239
+00:07:59,709 --> 00:08:03,009
+because they have they have nucleuses
+
+240
+00:08:01,300 --> 00:08:04,540
+and other cell walls that are kind of
+
+241
+00:08:03,009 --> 00:08:06,879
+constraining them so this helps
+
+242
+00:08:04,540 --> 00:08:08,439
+partition cells into the buckets that
+
+243
+00:08:06,879 --> 00:08:10,209
+the DNA actually exists in inside the
+
+244
+00:08:08,439 --> 00:08:13,899
+cell so you can do much more complete
+
+245
+00:08:10,209 --> 00:08:15,519
+and thorough assembly so this is one of
+
+246
+00:08:13,899 --> 00:08:16,989
+the first ones that we did and the most
+
+247
+00:08:15,519 --> 00:08:18,609
+I think the most remarkable thing about
+
+248
+00:08:16,990 --> 00:08:19,990
+this technique is that you don't need
+
+249
+00:08:18,610 --> 00:08:21,250
+high molecular weight do you need to do
+
+250
+00:08:19,990 --> 00:08:23,410
+this you take the tissue and you just
+
+251
+00:08:21,250 --> 00:08:25,060
+cross-linked it with formaldehyde and
+
+252
+00:08:23,410 --> 00:08:27,070
+then you chop the DNA up but once it's
+
+253
+00:08:25,060 --> 00:08:28,810
+cross-linked this huge loops of mega
+
+254
+00:08:27,069 --> 00:08:30,279
+bases apart get cut and you like ate
+
+255
+00:08:28,810 --> 00:08:32,590
+them and you're effectively reading the
+
+256
+00:08:30,279 --> 00:08:34,120
+ends of these large loops of DNA and you
+
+257
+00:08:32,590 --> 00:08:35,680
+end up building these maps and so what
+
+258
+00:08:34,120 --> 00:08:37,090
+the map that you have here is a contact
+
+259
+00:08:35,679 --> 00:08:38,769
+map it's one of the earliest ones that
+
+260
+00:08:37,090 --> 00:08:40,180
+we have so it typically you want to say
+
+261
+00:08:38,769 --> 00:08:41,500
+really bright line in the middle we're
+
+262
+00:08:40,179 --> 00:08:43,179
+not completely getting that yet with
+
+263
+00:08:41,500 --> 00:08:45,460
+cannabis because of the the repeat
+
+264
+00:08:43,179 --> 00:08:47,379
+content in it but it is bucketing now
+
+265
+00:08:45,460 --> 00:08:49,300
+into ten nice chromosomes which is what
+
+266
+00:08:47,379 --> 00:08:52,149
+we want to see we want to see chromosome
+
+267
+00:08:49,299 --> 00:08:54,039
+1 through chromosome through all the way
+
+268
+00:08:52,149 --> 00:08:55,959
+through the x and y chromosomes as well
+
+269
+00:08:54,039 --> 00:08:57,669
+and we want to see two of them all right
+
+270
+00:08:55,960 --> 00:09:00,100
+because the cannabis is diploid
+
+271
+00:08:57,669 --> 00:09:01,419
+most of the time and that's the neck
+
+272
+00:09:00,100 --> 00:09:03,129
+Faye's that we have to do no pun
+
+273
+00:09:01,419 --> 00:09:05,379
+intended is we have to then take this
+
+274
+00:09:03,129 --> 00:09:07,480
+diploid genome and split it into the two
+
+275
+00:09:05,379 --> 00:09:10,000
+maternal paternal chromosomes for every
+
+276
+00:09:07,480 --> 00:09:12,430
+one of them and then organize them
+
+277
+00:09:10,000 --> 00:09:14,318
+okay so just put the brakes on here and
+
+278
+00:09:12,429 --> 00:09:16,508
+look at what types assembly as we
+
+279
+00:09:14,318 --> 00:09:18,698
+traditionally have so back in 2001
+
+280
+00:09:16,509 --> 00:09:20,589
+John's group and our group played around
+
+281
+00:09:18,698 --> 00:09:22,059
+with assembling these some of these
+
+282
+00:09:20,589 --> 00:09:23,800
+genomes with Illumina data and they
+
+283
+00:09:22,059 --> 00:09:26,138
+ended up in hundreds of thousands of
+
+284
+00:09:23,799 --> 00:09:28,479
+pieces and the average contact size was
+
+285
+00:09:26,139 --> 00:09:30,879
+like around 3,000 bases okay
+
+286
+00:09:28,480 --> 00:09:32,139
+that's that's very small contig size
+
+287
+00:09:30,879 --> 00:09:35,289
+when you consider the human genome
+
+288
+00:09:32,139 --> 00:09:37,389
+declared victory on a draft at 500,000
+
+289
+00:09:35,289 --> 00:09:38,828
+bases and then many other people started
+
+290
+00:09:37,389 --> 00:09:40,568
+chipping and steep hill put out a really
+
+291
+00:09:38,828 --> 00:09:42,969
+nice assembly that then bumped this
+
+292
+00:09:40,568 --> 00:09:44,469
+number up likewise Philo's put one in
+
+293
+00:09:42,970 --> 00:09:46,769
+there and I think that the N 50 number
+
+294
+00:09:44,470 --> 00:09:49,089
+got up to 159 KB that was the longest
+
+295
+00:09:46,769 --> 00:09:51,009
+can most contiguous assembly and it was
+
+296
+00:09:49,089 --> 00:09:52,839
+on kin atomic which was a type 3 strain
+
+297
+00:09:51,009 --> 00:09:54,669
+so we weren't getting much information
+
+298
+00:09:52,839 --> 00:09:56,050
+out of the THC genetics from that strain
+
+299
+00:09:54,669 --> 00:09:58,629
+but it was still giving us great insight
+
+300
+00:09:56,049 --> 00:10:01,120
+into maybe the CBD genetics so then we
+
+301
+00:09:58,629 --> 00:10:04,360
+jumped on to Jamaican Lian and started
+
+302
+00:10:01,120 --> 00:10:07,389
+pumping these numbers up into the 648
+
+303
+00:10:04,360 --> 00:10:09,519
+region in the 665 region with just the
+
+304
+00:10:07,389 --> 00:10:11,379
+pack bio assembly alone and then when
+
+305
+00:10:09,519 --> 00:10:13,959
+they terminate when we top this off with
+
+306
+00:10:11,379 --> 00:10:17,110
+version six chemistry these numbers all
+
+307
+00:10:13,958 --> 00:10:19,179
+jump to 3.7 mega base and 50 results so
+
+308
+00:10:17,110 --> 00:10:20,769
+it's really we're really talking about
+
+309
+00:10:19,179 --> 00:10:22,870
+thousands of fold improvement over
+
+310
+00:10:20,769 --> 00:10:26,019
+contiguity from where we started in 2011
+
+311
+00:10:22,870 --> 00:10:28,810
+to what we have what we have today so
+
+312
+00:10:26,019 --> 00:10:31,149
+very fast response working with with
+
+313
+00:10:28,809 --> 00:10:34,149
+cryptocurrency folks say they they move
+
+314
+00:10:31,149 --> 00:10:36,600
+very quickly and it really helps to get
+
+315
+00:10:34,149 --> 00:10:39,009
+the public the data out there publicly
+
+316
+00:10:36,600 --> 00:10:40,600
+we did play around with trying to figure
+
+317
+00:10:39,009 --> 00:10:42,188
+out some aspects of this genome with the
+
+318
+00:10:40,600 --> 00:10:43,149
+existing assemblies we had we published
+
+319
+00:10:42,188 --> 00:10:44,948
+a preprint that we never really
+
+320
+00:10:43,149 --> 00:10:47,589
+converted into a paper because it just
+
+321
+00:10:44,948 --> 00:10:49,899
+opened up this onion of confusion once
+
+322
+00:10:47,589 --> 00:10:52,389
+we did this we we did we did PCR
+
+323
+00:10:49,899 --> 00:10:53,828
+amplification of THC synthase with two
+
+324
+00:10:52,389 --> 00:10:54,759
+different primer sets and some primer
+
+325
+00:10:53,828 --> 00:10:56,620
+sets that were described in the
+
+326
+00:10:54,759 --> 00:10:59,019
+literature from a group name from the
+
+327
+00:10:56,620 --> 00:11:01,060
+Onofre paper we're sitting right inside
+
+328
+00:10:59,019 --> 00:11:02,500
+the gene so when they amplified this
+
+329
+00:11:01,059 --> 00:11:03,758
+they were the primers were sitting on
+
+330
+00:11:02,500 --> 00:11:05,438
+the start and stop codon and they're a
+
+331
+00:11:03,759 --> 00:11:07,000
+little bit blind to the variation in the
+
+332
+00:11:05,438 --> 00:11:07,958
+start and the stop codons and that's
+
+333
+00:11:07,000 --> 00:11:09,879
+going to mean something in a minute
+
+334
+00:11:07,958 --> 00:11:12,099
+but you'll see when we amplify with
+
+335
+00:11:09,879 --> 00:11:13,450
+those Onofre primers we amplify a lot of
+
+336
+00:11:12,100 --> 00:11:14,920
+copies and we don't know where they
+
+337
+00:11:13,450 --> 00:11:16,210
+the genome we just amplify them in
+
+338
+00:11:14,919 --> 00:11:17,860
+sequence them and we know that they're
+
+339
+00:11:16,210 --> 00:11:19,870
+unique copies because they have high
+
+340
+00:11:17,860 --> 00:11:21,340
+confidence polymorphisms between them
+
+341
+00:11:19,870 --> 00:11:22,299
+but we don't know the order of them in
+
+342
+00:11:21,340 --> 00:11:23,379
+the genome and I don't know where they
+
+343
+00:11:22,299 --> 00:11:24,639
+go in the genome and we don't
+
+344
+00:11:23,379 --> 00:11:26,590
+necessarily know if they're fully active
+
+345
+00:11:24,639 --> 00:11:28,149
+in the genome we just saw there's a lot
+
+346
+00:11:26,590 --> 00:11:30,460
+of those copies we then backed those
+
+347
+00:11:28,149 --> 00:11:32,500
+primers out to amplify with more unique
+
+348
+00:11:30,460 --> 00:11:34,389
+regions in the genome and we started
+
+349
+00:11:32,500 --> 00:11:35,919
+getting much fewer genes that were
+
+350
+00:11:34,389 --> 00:11:36,970
+coming through and the ones that were
+
+351
+00:11:35,919 --> 00:11:38,319
+coming through seem to all be
+
+352
+00:11:36,970 --> 00:11:39,670
+full-length there weren't any stop
+
+353
+00:11:38,320 --> 00:11:40,660
+codons in them and they looked as if
+
+354
+00:11:39,669 --> 00:11:44,259
+they were really good
+
+355
+00:11:40,659 --> 00:11:46,419
+th-these in face context now when you
+
+356
+00:11:44,259 --> 00:11:48,370
+get a good genome reference this is what
+
+357
+00:11:46,419 --> 00:11:50,289
+happens is they all show up in a tandem
+
+358
+00:11:48,370 --> 00:11:52,120
+array so interestingly enough THC
+
+359
+00:11:50,289 --> 00:11:54,129
+synthase has replicated itself almost
+
+360
+00:11:52,120 --> 00:11:56,590
+like it's kind of skidded across the
+
+361
+00:11:54,129 --> 00:11:58,720
+genome and so here's one region and one
+
+362
+00:11:56,590 --> 00:12:00,940
+contact that has five different copies
+
+363
+00:11:58,720 --> 00:12:03,070
+of THC synthase but they're all mutated
+
+364
+00:12:00,940 --> 00:12:04,540
+substantially in fact I don't even know
+
+365
+00:12:03,070 --> 00:12:06,280
+if we want to call some of these th T's
+
+366
+00:12:04,539 --> 00:12:08,829
+in face because they're mutated probably
+
+367
+00:12:06,279 --> 00:12:10,569
+they're probably only 85% identity and
+
+368
+00:12:08,830 --> 00:12:12,040
+then likewise you can look at another
+
+369
+00:12:10,570 --> 00:12:13,780
+con take that is the one that contains
+
+370
+00:12:12,039 --> 00:12:15,399
+can have a chromium synthase now we know
+
+371
+00:12:13,779 --> 00:12:18,549
+that this thing actually is for tandem
+
+372
+00:12:15,399 --> 00:12:19,720
+copies about 30 or 40 KB apart and you
+
+373
+00:12:18,549 --> 00:12:21,969
+probably can't see this but there are
+
+374
+00:12:19,720 --> 00:12:23,920
+some mutations in the three prime end
+
+375
+00:12:21,970 --> 00:12:26,050
+and the 5 prime end that changed the
+
+376
+00:12:23,919 --> 00:12:27,459
+amino acid structure such that primers
+
+377
+00:12:26,049 --> 00:12:28,329
+probably missed this in the past because
+
+378
+00:12:27,460 --> 00:12:30,610
+they would haven't placed on those
+
+379
+00:12:28,330 --> 00:12:32,379
+sequences theirs happens to be two more
+
+380
+00:12:30,610 --> 00:12:33,820
+copies of this and another content in
+
+381
+00:12:32,379 --> 00:12:35,529
+the genome that's now been linked by the
+
+382
+00:12:33,820 --> 00:12:37,030
+hi-c data so there's actually six copies
+
+383
+00:12:35,529 --> 00:12:39,250
+of this thing and they're all slightly
+
+384
+00:12:37,029 --> 00:12:41,110
+diverged and we don't know if they fold
+
+385
+00:12:39,250 --> 00:12:42,759
+at the same rate or if they maybe fold
+
+386
+00:12:41,110 --> 00:12:44,409
+some of the other rare cannabinoids that
+
+387
+00:12:42,759 --> 00:12:45,759
+these need to be cloned and expressed
+
+388
+00:12:44,409 --> 00:12:47,559
+and a lot of the work that John's done
+
+389
+00:12:45,759 --> 00:12:48,669
+on this gene needs to be repeated with
+
+390
+00:12:47,559 --> 00:12:50,919
+maybe some of these and that some of
+
+391
+00:12:48,669 --> 00:12:52,959
+these variants this is how many we're
+
+392
+00:12:50,919 --> 00:12:54,669
+finding that have at least 80% identity
+
+393
+00:12:52,960 --> 00:12:56,259
+there's 30 different DNA sequences and
+
+394
+00:12:54,669 --> 00:12:57,729
+this is a cladogram of them and the
+
+395
+00:12:56,259 --> 00:13:00,370
+scaffolds that they're sitting on on the
+
+396
+00:12:57,730 --> 00:13:01,750
+genome so we can see there's a lot of
+
+397
+00:13:00,370 --> 00:13:03,970
+cannabinoid diversity cannabinoid
+
+398
+00:13:01,750 --> 00:13:05,230
+synthase diversity and then if you if
+
+399
+00:13:03,970 --> 00:13:06,580
+you kind of Whittle those down and say
+
+400
+00:13:05,230 --> 00:13:08,139
+well which one is a really full-length
+
+401
+00:13:06,580 --> 00:13:09,400
+and possibly functional because some of
+
+402
+00:13:08,139 --> 00:13:12,009
+these are so mutated maybe they're just
+
+403
+00:13:09,399 --> 00:13:14,350
+they're just pseudogenes and we get down
+
+404
+00:13:12,009 --> 00:13:15,669
+to it about 18 of these different THC
+
+405
+00:13:14,350 --> 00:13:17,290
+synthase jeans that look like they're
+
+406
+00:13:15,669 --> 00:13:18,219
+they possibly could be in actually
+
+407
+00:13:17,289 --> 00:13:20,230
+encode for something that's a
+
+408
+00:13:18,220 --> 00:13:21,310
+full-length don't know what they do we
+
+409
+00:13:20,230 --> 00:13:22,840
+need to be teaming up with people that
+
+410
+00:13:21,309 --> 00:13:24,938
+can probably clone these express them
+
+411
+00:13:22,840 --> 00:13:27,829
+and get more information on
+
+412
+00:13:24,938 --> 00:13:29,688
+now in terms of assay development as
+
+413
+00:13:27,828 --> 00:13:31,849
+Philippe was touching on this is what we
+
+414
+00:13:29,688 --> 00:13:33,980
+were dealing with before is that this is
+
+415
+00:13:31,850 --> 00:13:35,959
+a mapping to the references that were
+
+416
+00:13:33,980 --> 00:13:37,339
+made back in 2011 and if you're not
+
+417
+00:13:35,958 --> 00:13:39,708
+careful when you map to these genomes
+
+418
+00:13:37,339 --> 00:13:40,939
+these blue reads are paired reads that
+
+419
+00:13:39,708 --> 00:13:42,258
+means they're Illumina reads we have a
+
+420
+00:13:40,938 --> 00:13:43,938
+forward and reverse read and they both
+
+421
+00:13:42,259 --> 00:13:46,159
+map to the genome the thing highlights
+
+422
+00:13:43,938 --> 00:13:47,629
+it blue red and green are ones where we
+
+423
+00:13:46,159 --> 00:13:48,828
+can only map one of the reads to the
+
+424
+00:13:47,629 --> 00:13:50,539
+genome and not the other and so
+
+425
+00:13:48,828 --> 00:13:52,008
+something's wrong and those ones you
+
+426
+00:13:50,539 --> 00:13:53,688
+should always kind of discount us with
+
+427
+00:13:52,009 --> 00:13:56,509
+and I should trust them but even with
+
+428
+00:13:53,688 --> 00:13:58,039
+these blue ones you can see paired reads
+
+429
+00:13:56,509 --> 00:13:59,688
+there are four snips in here that
+
+430
+00:13:58,039 --> 00:14:02,238
+probably don't really exist and what
+
+431
+00:13:59,688 --> 00:14:04,428
+this is when you map these same reads to
+
+432
+00:14:02,239 --> 00:14:06,619
+Jamaican lie and you see that those
+
+433
+00:14:04,428 --> 00:14:08,539
+reads then map to those other genes that
+
+434
+00:14:06,619 --> 00:14:10,009
+we just found that are tandem and so it
+
+435
+00:14:08,539 --> 00:14:11,568
+cleans up a lot of your mapping it
+
+436
+00:14:10,009 --> 00:14:13,789
+cleans up a lot of your polymorphism
+
+437
+00:14:11,568 --> 00:14:15,349
+discovery and now we have a reference
+
+438
+00:14:13,789 --> 00:14:17,088
+where we can actually maybe go ahead and
+
+439
+00:14:15,350 --> 00:14:19,339
+make a snip chip out of this and not be
+
+440
+00:14:17,089 --> 00:14:21,949
+confusing all the signals that that we
+
+441
+00:14:19,339 --> 00:14:23,929
+might get out of the chip so phase
+
+442
+00:14:21,948 --> 00:14:25,519
+genomics then stepped into this to try
+
+443
+00:14:23,928 --> 00:14:27,798
+and phase the genome which is using this
+
+444
+00:14:25,519 --> 00:14:29,869
+hi-c stuff to peel apart the maternal
+
+445
+00:14:27,798 --> 00:14:32,688
+and paternal haplotypes so that we can
+
+446
+00:14:29,869 --> 00:14:34,309
+have a perfectly phased genome and when
+
+447
+00:14:32,688 --> 00:14:35,778
+they run this through a bus going now
+
+448
+00:14:34,308 --> 00:14:37,909
+I'm starting out of busco but this is a
+
+449
+00:14:35,778 --> 00:14:40,129
+cost analysis it looks at how many
+
+450
+00:14:37,909 --> 00:14:42,769
+pieces of the genome you have it's it's
+
+451
+00:14:40,129 --> 00:14:44,298
+up in the 800 range there and you can
+
+452
+00:14:42,769 --> 00:14:46,818
+see the end 50 numbers are getting
+
+453
+00:14:44,298 --> 00:14:48,110
+closer to 5.4 mega bases the more
+
+454
+00:14:46,818 --> 00:14:50,448
+complete genomes a little bit more 80
+
+455
+00:14:48,110 --> 00:14:52,369
+rich I don't have time to go into this
+
+456
+00:14:50,448 --> 00:14:53,899
+we are publishing this on - and what
+
+457
+00:14:52,369 --> 00:14:55,999
+that means is we're using an incentive
+
+458
+00:14:53,899 --> 00:14:58,339
+I'd review system to speed it up we
+
+459
+00:14:55,999 --> 00:15:00,139
+select 3 3 reviewers we end up putting
+
+460
+00:14:58,339 --> 00:15:02,209
+out a cryptocurrency bounty for doing
+
+461
+00:15:00,139 --> 00:15:03,589
+the review and everything every
+
+462
+00:15:02,208 --> 00:15:04,998
+communication they do ends up getting
+
+463
+00:15:03,589 --> 00:15:07,100
+hashed onto the blockchain so it's
+
+464
+00:15:04,999 --> 00:15:09,678
+completely censorship resistant and
+
+465
+00:15:07,100 --> 00:15:11,778
+transparent so the phasing stuff is
+
+466
+00:15:09,678 --> 00:15:13,308
+tough right this is what typical genomes
+
+467
+00:15:11,778 --> 00:15:16,428
+should look like as it should have two
+
+468
+00:15:13,308 --> 00:15:18,828
+different copies of this of this genome
+
+469
+00:15:16,428 --> 00:15:20,688
+and then what typically happens is
+
+470
+00:15:18,828 --> 00:15:22,159
+genomes get collapsed if they're not if
+
+471
+00:15:20,688 --> 00:15:23,599
+they're really homozygous like humans
+
+472
+00:15:22,159 --> 00:15:24,948
+they get collapsed into one copy they
+
+473
+00:15:23,600 --> 00:15:25,999
+can't discern the material from the
+
+474
+00:15:24,948 --> 00:15:27,678
+paternal because there's only a snip
+
+475
+00:15:25,999 --> 00:15:30,168
+every hundred bases mean or every
+
+476
+00:15:27,678 --> 00:15:32,088
+thousand bases we wanted we wanted to
+
+477
+00:15:30,168 --> 00:15:33,828
+tease those apart and you do this with a
+
+478
+00:15:32,089 --> 00:15:35,449
+program called purge applet eggs which
+
+479
+00:15:33,828 --> 00:15:37,068
+looks for coverage differences among the
+
+480
+00:15:35,448 --> 00:15:37,389
+contexts rips the ones that are high out
+
+481
+00:15:37,068 --> 00:15:39,279
+of the
+
+482
+00:15:37,389 --> 00:15:41,319
+sure and then you can begin to zip these
+
+483
+00:15:39,279 --> 00:15:44,709
+things into even better maps and we have
+
+484
+00:15:41,320 --> 00:15:47,710
+here and if you add in bigger data from
+
+485
+00:15:44,710 --> 00:15:50,230
+PacBio these things turn into this mess
+
+486
+00:15:47,710 --> 00:15:51,580
+now this is actually not a mess it looks
+
+487
+00:15:50,230 --> 00:15:54,070
+like a mess for you but actually we're
+
+488
+00:15:51,580 --> 00:15:57,100
+seeing here is the numbers that popped
+
+489
+00:15:54,070 --> 00:15:58,870
+out of this 475 mega base in 50 contexts
+
+490
+00:15:57,100 --> 00:16:01,029
+this means we have perfect chromosomes
+
+491
+00:15:58,870 --> 00:16:02,590
+that are all sorted now there might be a
+
+492
+00:16:01,029 --> 00:16:03,879
+couple gaps in between the scaffolding
+
+493
+00:16:02,590 --> 00:16:05,110
+from high C which we can fill with a
+
+494
+00:16:03,879 --> 00:16:07,600
+couple other programs that they're
+
+495
+00:16:05,110 --> 00:16:09,340
+recommending like Polar Star and another
+
+496
+00:16:07,600 --> 00:16:11,230
+tool that helps to connect those things
+
+497
+00:16:09,340 --> 00:16:12,879
+called PB jelly and we're in that
+
+498
+00:16:11,230 --> 00:16:14,409
+process right now to just now polish
+
+499
+00:16:12,879 --> 00:16:16,299
+these things and fill the gaps but I
+
+500
+00:16:14,409 --> 00:16:18,459
+think it's safe to say that we now have
+
+501
+00:16:16,299 --> 00:16:21,279
+a genome that is better than most of the
+
+502
+00:16:18,460 --> 00:16:22,930
+other agricultural crops out there and
+
+503
+00:16:21,279 --> 00:16:24,220
+this is just more statistics I won't
+
+504
+00:16:22,929 --> 00:16:25,569
+bore you with but what the future is
+
+505
+00:16:24,220 --> 00:16:27,639
+going to hold is we have a cross of this
+
+506
+00:16:25,570 --> 00:16:30,220
+going on so we can get a tree oh it's
+
+507
+00:16:27,639 --> 00:16:31,750
+with its brother and what we're gonna do
+
+508
+00:16:30,220 --> 00:16:34,269
+in the future is a lot more methylation
+
+509
+00:16:31,750 --> 00:16:35,710
+sequence a lot more RNA sequencing and
+
+510
+00:16:34,269 --> 00:16:37,090
+we're gonna do some more trio work and
+
+511
+00:16:35,710 --> 00:16:39,280
+maybe build some some really powerful
+
+512
+00:16:37,090 --> 00:16:40,660
+snip chips so I want to thank all these
+
+513
+00:16:39,279 --> 00:16:42,159
+people involved there's a lot of
+
+514
+00:16:40,659 --> 00:16:43,959
+volunteers that jumped into this project
+
+515
+00:16:42,159 --> 00:16:48,029
+and made this work and I should leave
+
+516
+00:16:43,960 --> 00:16:48,030
+some time for a question or two thanks
+
+517
+00:16:52,769 --> 00:17:01,210
+please come up to the mics and ask any
+
+518
+00:16:55,000 --> 00:17:03,850
+questions hey Kevin thanks a lot for for
+
+519
+00:17:01,210 --> 00:17:06,009
+the talk I do have a question you
+
+520
+00:17:03,850 --> 00:17:08,949
+mentioned the the repeats on on the THC
+
+521
+00:17:06,009 --> 00:17:11,890
+and cannabinoid synthase and I think you
+
+522
+00:17:08,949 --> 00:17:13,300
+probably saw a lot on Turpin synthesis
+
+523
+00:17:11,890 --> 00:17:16,300
+can you comment a little bit on
+
+524
+00:17:13,299 --> 00:17:17,859
+oh thank you for bringing it up so we've
+
+525
+00:17:16,299 --> 00:17:19,389
+done a little bit of looking into the
+
+526
+00:17:17,859 --> 00:17:23,319
+terpene synthase genes as well to be
+
+527
+00:17:19,390 --> 00:17:24,490
+honest luca and and keep a Lynette steep
+
+528
+00:17:23,319 --> 00:17:25,448
+hill have been digging it a little bit
+
+529
+00:17:24,490 --> 00:17:26,680
+more we've got a kind of a little
+
+530
+00:17:25,449 --> 00:17:28,089
+community here that I know that you're
+
+531
+00:17:26,680 --> 00:17:29,920
+involved with that they're staring down
+
+532
+00:17:28,088 --> 00:17:32,230
+that they're remapping all of John's RNA
+
+533
+00:17:29,920 --> 00:17:34,509
+sequencing data onto the new assemblies
+
+534
+00:17:32,230 --> 00:17:36,970
+and the terpene synthase cluster is even
+
+535
+00:17:34,509 --> 00:17:39,390
+bigger there's many more of those to
+
+536
+00:17:36,970 --> 00:17:39,390
+work through
+
+537
+00:17:42,650 --> 00:17:50,690
+I this I'm kind of new to this does this
+
+538
+00:17:47,210 --> 00:17:55,519
+mean anything of value can be sold or
+
+539
+00:17:50,690 --> 00:17:57,140
+distributed to anybody or everybody are
+
+540
+00:17:55,519 --> 00:17:59,240
+you referring to the blockchain side of
+
+541
+00:17:57,140 --> 00:18:01,220
+this or or the Cannabis sequencing is
+
+542
+00:17:59,240 --> 00:18:03,279
+out of this if I have a photograph of
+
+543
+00:18:01,220 --> 00:18:09,400
+Jimi Hendrix does that mean it can be
+
+544
+00:18:03,279 --> 00:18:12,680
+somehow quantified into some massive
+
+545
+00:18:09,400 --> 00:18:14,330
+distribution or so there are there are
+
+546
+00:18:12,680 --> 00:18:17,269
+things going on on the theorem network
+
+547
+00:18:14,329 --> 00:18:19,699
+where people will get art and hash it
+
+548
+00:18:17,269 --> 00:18:21,019
+onto aetherium and you can get certain
+
+549
+00:18:19,700 --> 00:18:23,029
+number of digital copies that are
+
+550
+00:18:21,019 --> 00:18:26,029
+verifiable so that that art is
+
+551
+00:18:23,029 --> 00:18:27,889
+effectively scarce digitally if you will
+
+552
+00:18:26,029 --> 00:18:29,299
+and there's some unique attributes the
+
+553
+00:18:27,890 --> 00:18:32,630
+music industry that that plays a role in
+
+554
+00:18:29,299 --> 00:18:37,490
+but I think I'm getting a getting the
+
+555
+00:18:32,630 --> 00:18:39,020
+god light coming up on me over here so I
+
+556
+00:18:37,490 --> 00:18:41,509
+think with this we're going to turn this
+
+557
+00:18:39,019 --> 00:18:43,400
+over into a more Q&amp;A with the panel to
+
+558
+00:18:41,509 --> 00:18:44,930
+talk about medicinal cannabis and I
+
+559
+00:18:43,400 --> 00:18:48,250
+would like to invite all of our
+
+560
+00:18:44,930 --> 00:18:48,250
+panelists up for this this event
+

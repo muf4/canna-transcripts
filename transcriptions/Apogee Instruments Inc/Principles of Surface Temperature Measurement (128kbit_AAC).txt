@@ -1,0 +1,742 @@
+[SPEAKER_00]: I'm Bruce Bugbee.
+[SPEAKER_00]: Welcome to the next installment of a
+series of talks on principles of
+[SPEAKER_00]: environmental measurement.
+[SPEAKER_00]: Today we're going to talk about
+measurement of surface temperature.
+[SPEAKER_00]: It's a very powerful and yet very
+challenging measurement.
+[SPEAKER_00]: Many people make errors in this
+measurement.
+[SPEAKER_00]: Our goal is to help you eliminate the
+errors.
+[SPEAKER_00]: I'm joined in this effort by Mark
+Blonquist.
+[SPEAKER_00]: He and I have worked together for more
+than 10 years trying to make accurate
+[SPEAKER_00]: measurements of surface temperature.
+[SPEAKER_00]: You would think you could just take a
+sensor and put it on a surface and measure
+[SPEAKER_00]: the surface temperature, but let's draw a
+little diagram to show the problems of
+[SPEAKER_00]: that.
+[SPEAKER_00]: Here's a surface.
+[SPEAKER_00]: Now we take a sensor and put it on the
+surface right against to it.
+[SPEAKER_00]: This sensor has some wires coming out to
+go to a data logger, but as you can see
+[SPEAKER_00]: this part of the sensor is touching the
+surface and measuring that.
+[SPEAKER_00]: Over here we have air temperature touching
+all the rest of the sensor, so anytime you
+[SPEAKER_00]: do this it's a combination of air
+temperature and surface temperature.
+[SPEAKER_00]: Now this measurement gets better if you
+can get a very tiny sensor.
+[SPEAKER_00]: It's better, but it's still not the true
+surface temperature.
+[SPEAKER_00]: It's always an average.
+[SPEAKER_00]: Then people dig holes and puncture and put
+sensors in here and do things like that.
+[SPEAKER_00]: Now you're measuring the surface plus the
+temperature behind the surface.
+[SPEAKER_00]: Anytime you try and do this with a
+physical sensor you can never get the true
+[SPEAKER_00]: surface temperature.
+[SPEAKER_00]: That's why we use infrared sensors.
+[SPEAKER_00]: On this diagram I can draw a sensor like
+this which measure only the true radiation
+[SPEAKER_00]: coming right from the surface.
+[SPEAKER_00]: Whether it's a soil surface or a leaf
+surface or a road surface it's the true
+[SPEAKER_00]: surface temperature.
+[SPEAKER_00]: So let's take a look at some of the
+applications of this.
+[SPEAKER_00]: The biggest use of Apogee sensors has been
+in agriculture for canopies to model
+[SPEAKER_00]: conductance or irrigation scheduling of
+plants.
+[SPEAKER_00]: Here's a couple of examples in the field.
+[SPEAKER_00]: Here's the sensors pointing at a corn
+canopy.
+[SPEAKER_00]: Here's one sensor over a small plant.
+[SPEAKER_00]: This has allowed us to precision irrigate
+crops and determine the water status of
+[SPEAKER_00]: plants, precision water stress plants,
+by measuring the canopy surface.
+[SPEAKER_00]: This principle is real simple.
+[SPEAKER_00]: Anything that's out of water heats up.
+[SPEAKER_00]: If there's plenty of water you stay cool.
+[SPEAKER_00]: We've joked about having a headband and a
+little infrared sensor pointed at your
+[SPEAKER_00]: forehead like for runners to tell when
+they need to drink more water.
+[SPEAKER_00]: If their forehead is heating up they need
+more water.
+[SPEAKER_00]: It's the same thing with plants.
+[SPEAKER_00]: So this is a huge application.
+[SPEAKER_00]: Another application is predicting
+snowmelt.
+[SPEAKER_00]: Here's high in the mountains.
+[SPEAKER_00]: The surface temperature changes rapidly.
+[SPEAKER_00]: We want to know how fast that snow is
+melting and running down.
+[SPEAKER_00]: For agriculture this is a huge area of
+research worldwide because tiny changes in
+[SPEAKER_00]: global temperature mean that the snow
+melts a lot faster and we get the water
+[SPEAKER_00]: earlier and we run out at the end of the
+summer.
+[SPEAKER_00]: We really need to predict snowmelt and
+there's many scientists around the world
+[SPEAKER_00]: engaged in this.
+[SPEAKER_00]: A third application is transportation.
+[SPEAKER_00]: Icy road analysis.
+[SPEAKER_00]: This is in Italy.
+[SPEAKER_00]: Here's an Apogee sensor off the corner of
+their truck telling when to put salt down.
+[SPEAKER_00]: It's a real-time response telling when to
+put salt down on a field.
+[SPEAKER_00]: You can also use these on a bridge.
+[SPEAKER_00]: Danger, ice on bridge and that's
+determined by the temperature of the
+[SPEAKER_00]: bridge.
+[SPEAKER_00]: So there's a couple of applications.
+[SPEAKER_00]: Now let's start looking at some of the key
+things.
+[SPEAKER_00]: Emissivity.
+[SPEAKER_00]: This is one of the most challenging things
+to understand.
+[SPEAKER_00]: This is the fraction of radiation from the
+surface that gets to the sensor.
+[SPEAKER_00]: Now let's back up and go to the
+fundamental equation that starts all this.
+[SPEAKER_00]: This is E is for energy.
+[SPEAKER_00]: I can write this E N E R G Y equals a
+constant called sigma.
+[SPEAKER_00]: This is the Stefan-Boltzmann constant.
+[SPEAKER_00]: It can look it up and this is multiplied
+by temperature.
+[SPEAKER_00]: So this is pretty simple.
+[SPEAKER_00]: If this is a constant, energy is
+proportional to temperature.
+[SPEAKER_00]: If the temperature goes up, the energy
+goes up.
+[SPEAKER_00]: This is fundamentally how we tell
+radiation from a surface is the energy
+[SPEAKER_00]: emitted from it.
+[SPEAKER_00]: Here's where it gets complicated.
+[SPEAKER_00]: This is temperature in Kelvin.
+[SPEAKER_00]: So a one Kelvin temperature is about 300
+in a room.
+[SPEAKER_00]: A one degree C change is only one part in
+300 parts.
+[SPEAKER_00]: So it's a small change in energy but this
+is one of the few things in science that
+[SPEAKER_00]: is raised to the fourth power.
+[SPEAKER_00]: Kelvin temperature raised to the fourth
+power is energy.
+[SPEAKER_00]: So obviously this is a very nonlinear
+thing.
+[SPEAKER_00]: We've got graphs on the website that show
+this exact relationship.
+[SPEAKER_00]: So it gets more challenging.
+[SPEAKER_00]: Let's touch this up a little bit and read
+an equal sign here.
+[SPEAKER_00]: This is only true for an object that is
+infinitely black and it radiates all of
+[SPEAKER_00]: its energy to the surface.
+[SPEAKER_00]: A third parameter, I've hardly got room
+for it but you get the idea, is
+[SPEAKER_00]: emissivity.
+[SPEAKER_00]: This is a number that ranges from 0 to 1
+and it's a multiplier times this whole
+[SPEAKER_00]: thing.
+[SPEAKER_00]: So we need to know emissivity of the
+surface.
+[SPEAKER_00]: That's characteristic of the circus.
+[SPEAKER_00]: Then we put this constant in, this sigma,
+and then we solve based on the energy we
+[SPEAKER_00]: solve for the temperature of the surface.
+[SPEAKER_00]: This is called the Stefan-Boltzmann law.
+[SPEAKER_00]: Boltzmann came up with it, Stefan added to
+it.
+[SPEAKER_00]: It's fundamental to all radiation physics.
+[SPEAKER_00]: You don't need to know this law to use
+them but it helps to understand the
+[SPEAKER_00]: principles, particularly this idea of
+emissivity.
+[SPEAKER_00]: So let's take a look at emissivity.
+[SPEAKER_00]: To get accuracy we custom calibrate every
+sensor.
+[SPEAKER_00]: This is 12 sensors in a complex oven that
+controls temperature and they're further
+[SPEAKER_00]: controlled here.
+[SPEAKER_00]: The sensor bodies are controlled at one
+temperature.
+[SPEAKER_00]: The targets controlled at another
+temperature.
+[SPEAKER_00]: Every single sensor is custom calibrated
+using this device.
+[SPEAKER_00]: So if we know temperature we can get
+radiation but when we point these at
+[SPEAKER_00]: something we need to know that they're
+pointing at something very black.
+[SPEAKER_00]: So let's take a look at how black that is.
+[SPEAKER_00]: This is the errors by the way.
+[SPEAKER_00]: They're specified at plus or minus 0.2
+degrees.
+[SPEAKER_00]: This is a typical 12 sensors.
+[SPEAKER_00]: This two times the standard deviation is
+only 0.12.
+[SPEAKER_00]: So it's a generous spec to say they're
+plus or minus 2.
+[SPEAKER_00]: Look at the temperature range from minus
+30 up to 65, 70 out here.
+[SPEAKER_00]: So they're calibrated over a wide
+temperature range.
+[SPEAKER_00]: This is replicate sensors on top of each
+other.
+[SPEAKER_00]: So now let's take a look at that black
+body.
+[SPEAKER_00]: Take the top off.
+[SPEAKER_00]: This looks like a hole right?
+[SPEAKER_00]: This is not a hole.
+[SPEAKER_00]: This is a cavity that's painted very flat
+black.
+[SPEAKER_00]: It's a cone-shaped cavity and it looks
+like you could put your hand in it and
+[SPEAKER_00]: that's what's called a black body.
+[SPEAKER_00]: So a black body has an emissivity very
+close to 1.2 to 0.0.
+[SPEAKER_00]: In fact nothing really can theoretically
+get to 0.0.
+[SPEAKER_00]: So this black body is more like 0.999 and
+that's how we calibrate the sensors
+[SPEAKER_00]: against this black body keeping it purely
+black.
+[SPEAKER_00]: So now let's go back to this concept of
+emissivity or forward to it.
+[SPEAKER_00]: Here's a typical surface.
+[SPEAKER_00]: I'm going to show you some emissivities in
+a minute.
+[SPEAKER_00]: A plant canopy can have an emissivity very
+close to 1.
+[SPEAKER_00]: So wow that's so close to 1.
+[SPEAKER_00]: Let's just call it 1 and call it good.
+[SPEAKER_00]: But 98% of the radiation comes from the
+surface and now let's look at where the
+[SPEAKER_00]: rest of the radiation comes from.
+[SPEAKER_00]: The other part comes from the sky and this
+part right here, this tiny arrow,
+[SPEAKER_00]: is zero point zero two or two percent from
+the sky.
+[SPEAKER_00]: So this sensor is averaging in some cases
+a very cold sky temperature with the
+[SPEAKER_00]: temperature of the canopy and it's
+important to correct for this in the
+[SPEAKER_00]: software of the sensor.
+[SPEAKER_00]: This is well characterized.
+[SPEAKER_00]: We know the typical emissivities of
+canopies so we can use this to pin point
+[SPEAKER_00]: measurements.
+[SPEAKER_00]: There's the equation.
+[SPEAKER_00]: Fraction reflected is one minus the
+emissivity so it's 0.2.
+[SPEAKER_00]: This is the correction factor.
+[SPEAKER_00]: We need to know this is the equation but
+it's more important to know the inputs.
+[SPEAKER_00]: Measured temperature of the sensor.
+[SPEAKER_00]: That's this temperature right here.
+[SPEAKER_00]: Background temperature up here is the sky
+temperature and degree C and then we need
+[SPEAKER_00]: to know this.
+[SPEAKER_00]: Now we typically look this number up.
+[SPEAKER_00]: We measure this.
+[SPEAKER_00]: We measure this and we can solve for the
+canopy temperature.
+[SPEAKER_00]: I'm not going to go into the details of
+this equation right here but suffice it to
+[SPEAKER_00]: say that this is well described on the
+Apogee website and we've described it in
+[SPEAKER_00]: manuscripts we've written.
+[SPEAKER_00]: The take-home message is all objects
+measure the object plus averaging in some
+[SPEAKER_00]: of the background temperature and if you
+keep that in mind you realize that errors
+[SPEAKER_00]: you can get into.
+[SPEAKER_00]: Let's take an example.
+[SPEAKER_00]: Clear day 25 degrees measured.
+[SPEAKER_00]: The background is minus 40 so that's a
+typical background of the very clear sky.
+[SPEAKER_00]: The infinity of outer space is zero Kelvin
+so that's tells you why we get such cold
+[SPEAKER_00]: sky temperatures.
+[SPEAKER_00]: Emissivity 0.98.
+[SPEAKER_00]: What we measured was 25 and the actual
+surface temperature was 25.95.
+[SPEAKER_00]: Almost a one degree C error if we don't
+account for emissivity even though this is
+[SPEAKER_00]: very high.
+[SPEAKER_00]: Let's take a cloudy day on here.
+[SPEAKER_00]: 25.
+[SPEAKER_00]: Now the sky is much warmer and this error
+is much smaller.
+[SPEAKER_00]: On a cloudy day.
+[SPEAKER_00]: Again these are examples of why it's so
+important to correct for emissivity.
+[SPEAKER_00]: Let's look at the field of view.
+[SPEAKER_00]: All sensors have a cone-shaped field of
+view.
+[SPEAKER_00]: Here's the target right here and it's
+critical to understand what you're looking
+[SPEAKER_00]: at.
+[SPEAKER_00]: To do the trigonometry of this we called
+this angle here and this angle here and
+[SPEAKER_00]: now we've got a right angle and this is
+the half angle here.
+[SPEAKER_00]: This describes how big the target is.
+[SPEAKER_00]: Apogee describes this in two ways.
+[SPEAKER_00]: The ratio of the distance to the target to
+the target diameter.
+[SPEAKER_00]: This ratio you don't need to know
+trigonometry to understand that ratio.
+[SPEAKER_00]: We also describe it as the half angle
+right here.
+[SPEAKER_00]: This distance here.
+[SPEAKER_00]: Apogee sells a series of sensors at
+different fields of view but it's
+[SPEAKER_00]: imperative to know what you're looking at
+because you do not want to be averaging
+[SPEAKER_00]: the sky, the sidewalks, other things off
+in the sides.
+[SPEAKER_00]: It's important that this be small but it's
+even more important that we know what
+[SPEAKER_00]: we're looking at.
+[SPEAKER_00]: This is described in two ways.
+[SPEAKER_00]: Distance to target divided by target
+diameter and then the angle.
+[SPEAKER_00]: Let's take a look at the area that is
+measured with this.
+[SPEAKER_00]: It depends on three things.
+[SPEAKER_00]: This field of view that we just talked
+about.
+[SPEAKER_00]: Obviously mounting height.
+[SPEAKER_00]: The higher up, if this sensor is up here,
+we're at the same field of view.
+[SPEAKER_00]: We're going to see a much larger circle.
+[SPEAKER_00]: That's the second parameter and then the
+angle.
+[SPEAKER_00]: We don't always point these down.
+[SPEAKER_00]: Sometimes and often we point them like
+this and now it sees an oval shaped out
+[SPEAKER_00]: here.
+[SPEAKER_00]: These three parameters determine what
+we're looking at.
+[SPEAKER_00]: The next slide walks you through this on
+what we see with these.
+[SPEAKER_00]: This is an example.
+[SPEAKER_00]: Here's one that was 22 degrees field of
+view.
+[SPEAKER_00]: This is one of the Apogee sensors.
+[SPEAKER_00]: Let's look at the field of view options.
+[SPEAKER_00]: These are one, two, three, four options
+that Apogee offers for fields of view.
+[SPEAKER_00]: This is an example over a target.
+[SPEAKER_00]: Narrow, medium, wider, and then
+rectangular.
+[SPEAKER_00]: Again the rectangular.
+[SPEAKER_00]: We don't want to see any sky.
+[SPEAKER_00]: We don't want to see any ground.
+[SPEAKER_00]: Because this is important, Apogee has a
+field of view tool that is on this website
+[SPEAKER_00]: right here.
+[SPEAKER_00]: You can find this on the Apogee website.
+[SPEAKER_00]: You put in the type of sensor you have,
+the model number.
+[SPEAKER_00]: It'll tell you the angles and then it
+tells you the area that's integrated by
+[SPEAKER_00]: that.
+[SPEAKER_00]: By doing a bunch of trigonometry
+calculations.
+[SPEAKER_00]: It's just a worksheet.
+[SPEAKER_00]: You type in the inputs and it tells you
+the area.
+[SPEAKER_00]: All of these are really to help you fully
+understand what you're looking at,
+[SPEAKER_00]: what's in the field of view, what's not.
+[SPEAKER_00]: It's important to be sufficiently narrow,
+but it's important not to see bad things.
+[SPEAKER_00]: These are the four options, pictures of
+them.
+[SPEAKER_00]: Here's that rectangular, narrow,
+medium, wide.
+[SPEAKER_00]: These are on the website.
+[SPEAKER_00]: Lots of options to pinpoint what you're
+looking at.
+[SPEAKER_00]: Next critical thing is the infrared
+spectral response.
+[SPEAKER_00]: Sensors can cover a wide range,
+but it's important not to measure water
+[SPEAKER_00]: vapor in the air.
+[SPEAKER_00]: We want to see right through the
+atmosphere, right to the surface.
+[SPEAKER_00]: Lower quality sensors have measured much
+of this radiation.
+[SPEAKER_00]: This slide shows us some of the
+interferences from these things on here.
+[SPEAKER_00]: Water vapor interferes right here.
+[SPEAKER_00]: This is water vapor in the air.
+[SPEAKER_00]: We do not want to measure the water vapor
+in the air.
+[SPEAKER_00]: We want to see right through it.
+[SPEAKER_00]: I think we've got over here carbon dioxide
+in the air.
+[SPEAKER_00]: It has bands down here that absorb,
+but there is this atmosphere window,
+[SPEAKER_00]: as it's called, 8 to 14 microns in which
+neither water vapor nor CO2 interfere with
+[SPEAKER_00]: the infrared signal.
+[SPEAKER_00]: The Apogee sensors are calibrated just to
+measure this wavelength, which means they
+[SPEAKER_00]: can see through many kilometers of
+atmosphere because it's very transparent.
+[SPEAKER_00]: This is something that defines the sensor,
+defines how it's calibrated.
+[SPEAKER_00]: Once it's done, all you need to know is
+it's calibrated to utilize the atmospheric
+[SPEAKER_00]: window.
+[SPEAKER_00]: It's not something you need to know on a
+day-to-day basis when you're using it,
+[SPEAKER_00]: except when you're correct for the
+emissivity.
+[SPEAKER_00]: It's important to know that it does
+atmospheric window.
+[SPEAKER_00]: What do we do when we're trying to measure
+a canopy and it doesn't cover all the
+[SPEAKER_00]: ground?
+[SPEAKER_00]: This is a common problem.
+[SPEAKER_00]: You can't just point it at the plant.
+[SPEAKER_00]: If we put it right here, we could get it,
+so it's only the plant, but plants move
+[SPEAKER_00]: around.
+[SPEAKER_00]: We want to average bigger areas.
+[SPEAKER_00]: It's not possible to always have it right
+above a plant.
+[SPEAKER_00]: In this scenario, this fraction of the
+radiation is from the ground and this
+[SPEAKER_00]: fraction is from the plant.
+[SPEAKER_00]: We've got a case of partial canopy cover.
+[SPEAKER_00]: What this is measuring is both of these
+together.
+[SPEAKER_00]: To solve that, we put it on an angle.
+[SPEAKER_00]: Now the same field of view, look at this,
+all plants.
+[SPEAKER_00]: It doesn't see the ground.
+[SPEAKER_00]: This is only possible with a narrow field
+of view, so you can see out over the top
+[SPEAKER_00]: of the field.
+[SPEAKER_00]: This is a common application to mount it
+at an angle, so you only see the plants.
+[SPEAKER_00]: There are still cases with young plants
+where you see some of the ground,
+[SPEAKER_00]: and the next slide shows that.
+[SPEAKER_00]: To separate the ground from the plants,
+we measure the soil temperature.
+[SPEAKER_00]: I'll put degrees C right here.
+[SPEAKER_00]: Then what we measure up here, and we
+mathematically separate out the plant
+[SPEAKER_00]: temperature from the signal here and the
+measured soil temperature.
+[SPEAKER_00]: This is the approach, fraction of canopy,
+fraction of ground.
+[SPEAKER_00]: It's possible to calculate these
+fractions, and we have some manuscripts
+[SPEAKER_00]: that explain doing this.
+[SPEAKER_00]: It's a common problem.
+[SPEAKER_00]: Here's the equation, temperature of the
+canopy.
+[SPEAKER_00]: This is all to the fourth degree.
+[SPEAKER_00]: Power, all done in software, in the
+datalogger.
+[SPEAKER_00]: Temperature of the surface, temperature of
+the soil, calculating the canopy
+[SPEAKER_00]: temperature.
+[SPEAKER_00]: Now let's start using these to calculate
+what we call canopies to model
+[SPEAKER_00]: conductance.
+[SPEAKER_00]: If we point these, if we put a sensor
+right here, and we point it at this leaf,
+[SPEAKER_00]: seeing the leaf, let's say the leaf is
+slightly above air temperature,
+[SPEAKER_00]: two degrees above air temperature.
+[SPEAKER_00]: We write in our notebooks, this leaf is
+water stressed because the leaves are
+[SPEAKER_00]: hotter than the air.
+[SPEAKER_00]: That would be correct, but now the wind
+comes up.
+[SPEAKER_00]: Here's conduction and convection.
+[SPEAKER_00]: The wind comes up, the leaf cools off.
+[SPEAKER_00]: Well, we write in our notebooks,
+oh, the water stress went away.
+[SPEAKER_00]: It didn't go away.
+[SPEAKER_00]: The wind started blowing, so we have to
+measure and correct for the effect of
+[SPEAKER_00]: wind.
+[SPEAKER_00]: The sun goes under a cloud.
+[SPEAKER_00]: We have to measure and correct for the
+effect of wind speed.
+[SPEAKER_00]: We also have to measure the relative
+humidity of the air.
+[SPEAKER_00]: That determines the driving gradient.
+[SPEAKER_00]: If the air is humid, the plants are going
+to warm up.
+[SPEAKER_00]: If they're not out of water, they just
+can't cool from transpiration as fast.
+[SPEAKER_00]: All of these parameters in here are
+necessary to pinpoint water stress for
+[SPEAKER_00]: plants over a wide range of environments.
+[SPEAKER_00]: This is an example slide that we use to
+show this.
+[SPEAKER_00]: The overriding equation for this is Rn,
+which is net radiation.
+[SPEAKER_00]: That's the sum of this outgoing shortwave,
+incoming shortwave, incoming longwave,
+[SPEAKER_00]: and over here, leaf radiation.
+[SPEAKER_00]: These four all go into net radiation.
+[SPEAKER_00]: That equals transpiration, and I'll put TR
+for transpiration, plus conduction and
+[SPEAKER_00]: convection.
+[SPEAKER_00]: Usually that's called H.
+[SPEAKER_00]: This is a simple equation, and by
+measuring all these, we pinpoint the water
+[SPEAKER_00]: status of the plant.
+[SPEAKER_00]: Let's take another look at this in another
+diagram.
+[SPEAKER_00]: This is a lot of equations, a lot of math,
+but this is where this comes from.
+[SPEAKER_00]: This is from this manuscript by Mark
+Bonquist, our colleague John Norman,
+[SPEAKER_00]: at the University of Wisconsin,
+and myself from 2009.
+[SPEAKER_00]: It's a paper that works through all of
+this, and I refer you to the paper for
+[SPEAKER_00]: details, but here's that equation I just
+drew right here.
+[SPEAKER_00]: Net radiation, H is for conduction and
+convection, delta E is for transpiration,
+[SPEAKER_00]: and this is photosynthesis.
+[SPEAKER_00]: Some of the energy goes into
+photosynthesis in this equation,
+[SPEAKER_00]: and we account for that.
+[SPEAKER_00]: This H here is further broken down into
+the canopy to air temperatures times
+[SPEAKER_00]: conductance.
+[SPEAKER_00]: That gives us H.
+[SPEAKER_00]: It's further broken down into
+transpiration.
+[SPEAKER_00]: This difference here is saturation vapor
+pressure, so we measure these parameters,
+[SPEAKER_00]: calculate transpiration, and this is
+canopy and stomatal conductance to get GT
+[SPEAKER_00]: canopies to model conductance.
+[SPEAKER_00]: These are all the parameters necessary to
+measure that.
+[SPEAKER_00]: It's a lot of parameters, but the
+information is extremely valuable,
+[SPEAKER_00]: so we take these equations and substitute
+them all in this, and this is part of
+[SPEAKER_00]: Mark's excellence in advanced algebra,
+and we get an equation that integrates all
+[SPEAKER_00]: of them here.
+[SPEAKER_00]: This is canopy-stomatal conductance
+mathematically into all of these.
+[SPEAKER_00]: I don't know if I can erase my line there.
+[SPEAKER_00]: This equation is all done in data loggers
+with these inputs, and we've done this now
+[SPEAKER_00]: over many fields to pinpoint water status,
+and I'd like to show you some of that
+[SPEAKER_00]: data.
+[SPEAKER_00]: The next slides show that.
+[SPEAKER_00]: The advantage of this, it's a
+physiological variable related to stomatal
+[SPEAKER_00]: conductance, and everything's in here.
+[SPEAKER_00]: It can work anywhere in the world as long
+as you have these inputs to it.
+[SPEAKER_00]: Let's take a look at some of these
+examples.
+[SPEAKER_00]: This was at Nebraska a couple summers ago.
+[SPEAKER_00]: We measured, we'd have a model that gives
+us the potential stomatal conductance.
+[SPEAKER_00]: If the plant is well-watered, it should
+transpire at the potential rate.
+[SPEAKER_00]: You can see here's day and night and day
+and the night the stomates are closed.
+[SPEAKER_00]: Some of these aren't smooth because there
+was clouds and other parameters,
+[SPEAKER_00]: and this is our measured parameters.
+[SPEAKER_00]: What we calculate is the ratio of these
+two.
+[SPEAKER_00]: How open were the stomates?
+[SPEAKER_00]: This is canopy-stomatal conductance in
+moles per meter squared per second,
+[SPEAKER_00]: a fundamental measurement, the ratio of
+actual to potential, and that's what this
+[SPEAKER_00]: is.
+[SPEAKER_00]: The potential should always be one.
+[SPEAKER_00]: Now here's some cases where it got above
+one, and we think this was wet leaves that
+[SPEAKER_00]: made this go above one because obviously
+it should never get above the potential,
+[SPEAKER_00]: but look what happens after a rainfall
+here.
+[SPEAKER_00]: It gets less and now look at what happens
+in the day.
+[SPEAKER_00]: It also went down during the course of the
+day.
+[SPEAKER_00]: They were more open in the morning than
+the evening.
+[SPEAKER_00]: Further down, further down as they dried
+out.
+[SPEAKER_00]: Then let's look at, this is the slope of
+this.
+[SPEAKER_00]: Now let's look at what happens right here.
+[SPEAKER_00]: Another rainfall, 20 millimeters of
+rainfall happened right here.
+[SPEAKER_00]: The stomates jump back up to their
+potential and even slightly above.
+[SPEAKER_00]: Then they started that downward march
+again.
+[SPEAKER_00]: This is the power of using infrared
+thermometry to sort out the water
+[SPEAKER_00]: potential and the stomatal conductance of
+the plants.
+[SPEAKER_00]: This is the average conductance of all of
+the leaves in the field of view of the
+[SPEAKER_00]: plant.
+[SPEAKER_00]: It's an automated measurement.
+[SPEAKER_00]: It can be made day after day.
+[SPEAKER_00]: Alright, let's look at our next parameter.
+[SPEAKER_00]: This is a graph now of potential canopies
+to model conductance and actual.
+[SPEAKER_00]: Here's our one-to-one line.
+[SPEAKER_00]: If they're always near the potential to
+fall on that line, they're close to this.
+[SPEAKER_00]: The other environmental parameters affect
+this.
+[SPEAKER_00]: Humidity, wind, solar radiation,
+but each case they're close to their
+[SPEAKER_00]: potential.
+[SPEAKER_00]: What happened up here?
+[SPEAKER_00]: This is, we think, wet leaves.
+[SPEAKER_00]: When the leaves are wet, we get numbers
+that are above one.
+[SPEAKER_00]: It's just a few values, but this shows the
+power of this technique for pinpointing
+[SPEAKER_00]: water stress in plants.
+[SPEAKER_00]: We have just a few more slides.
+[SPEAKER_00]: In conclusion, canopy temperatures can be
+used to determine plant canopy water
+[SPEAKER_00]: stress and, in this example, canopies to
+model conductance.
+[SPEAKER_00]: There's simple methods to do this.
+[SPEAKER_00]: Complex methods are the ones I've
+described here where we measure all the
+[SPEAKER_00]: parameters and account for all of them.
+[SPEAKER_00]: The complex measurements work over a wider
+range of conditions than the simple
+[SPEAKER_00]: measurements.
+[SPEAKER_00]: Emissivity, that correction for that can
+be significant.
+[SPEAKER_00]: We measure sky temperature and
+mathematically correct that, and then
+[SPEAKER_00]: field of view.
+[SPEAKER_00]: We talked about that.
+[SPEAKER_00]: Partial canopy cover, we need to sort that
+out.
+[SPEAKER_00]: This is the reference to the paper we're
+talking about.
+[SPEAKER_00]: Apogee can give you copies of this.
+[SPEAKER_00]: It's on the website, so this shows the
+details of making this measurement.
+[SPEAKER_00]: I have one more slide I want to talk
+about.
+[SPEAKER_00]: Maintenance of these sensors.
+[SPEAKER_00]: It's one thing to get a new sensor and get
+accurate data, but how about week after
+[SPEAKER_00]: week, month after month, getting accurate
+data.
+[SPEAKER_00]: Three things cause problems.
+[SPEAKER_00]: One, optical path interferences.
+[SPEAKER_00]: This is true of all radiation measurement
+instruments.
+[SPEAKER_00]: Spiders right here can make a nest inside
+this window.
+[SPEAKER_00]: Some places never see this.
+[SPEAKER_00]: Other places have a lot of spiders.
+[SPEAKER_00]: There's a spider nest inside that.
+[SPEAKER_00]: When that happens, the sensor suddenly
+flatlines.
+[SPEAKER_00]: It just starts reading its own
+temperature, so you can tell when it
+[SPEAKER_00]: happens.
+[SPEAKER_00]: You get in there with a Q-tip.
+[SPEAKER_00]: This is so important that Apogee sells
+these scientific Q-tips with this.
+[SPEAKER_00]: Put it right in that sensor.
+[SPEAKER_00]: You can clean that right out.
+[SPEAKER_00]: You can also use some methanol to further
+clean this.
+[SPEAKER_00]: Sometimes it can be helpful or just water,
+but you got to keep that sensor clean.
+[SPEAKER_00]: Second thing is calcium deposits.
+[SPEAKER_00]: When sprinkler irrigation blasts this
+thing day after day, if it's being hit by
+[SPEAKER_00]: moisture, it doesn't hurt the sensor.
+[SPEAKER_00]: This is very waterproof, but it evaporates
+and it leaves a little film, a hard water
+[SPEAKER_00]: film, on the inside window of the sensor.
+[SPEAKER_00]: Only happens when you have water shooting
+up on it.
+[SPEAKER_00]: That evaporates.
+[SPEAKER_00]: You get this film.
+[SPEAKER_00]: People sometimes use things like Windex.
+[SPEAKER_00]: To get that off, that doesn't help.
+[SPEAKER_00]: Not at all.
+[SPEAKER_00]: You have to clean calcium with a dilute
+acid.
+[SPEAKER_00]: In fact, it doesn't even have to be that
+dilute because the sensor is very rugged.
+[SPEAKER_00]: Again, take the Q-tips, dip them,
+and vinegar can work or a dilute acid.
+[SPEAKER_00]: You can clean it with acid and it comes
+right off.
+[SPEAKER_00]: Don't try things like acetone to clean it,
+because that doesn't clean off salt
+[SPEAKER_00]: deposits.
+[SPEAKER_00]: The third biggie is dust and dirt.
+[SPEAKER_00]: This happens in all windows, happens in
+the windows of your house.
+[SPEAKER_00]: This you can clean with window cleaning
+products like ammonium, cleans this.
+[SPEAKER_00]: You can use methanol, even acetone in
+here.
+[SPEAKER_00]: The key, don't push too hard because you
+scratch the window.
+[SPEAKER_00]: Let the chemistry clean the window,
+not mechanically screen it.
+[SPEAKER_00]: Here's the Apogee website that talks about
+chemistry.
+[SPEAKER_00]: We're preparing for this Apogee
+radiometer.
+[SPEAKER_00]: That's the summary of the principles of
+making this measurement, the things you
+[SPEAKER_00]: need to watch out for.
+[SPEAKER_00]: You can spend your life getting better and
+better at this, but you can see,
+[SPEAKER_00]: I think, that this is a very powerful
+measurement.
+[SPEAKER_00]: We're excited to work with you to help
+collect better data.
+[SPEAKER_00]: Thanks for listening.
+Thank you.

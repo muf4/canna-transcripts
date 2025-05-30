@@ -1,0 +1,211 @@
+[SPEAKER_00]: Hi, my name is John Huber and in this
+video we'll be going over a quick set of
+[SPEAKER_00]: instructions on how to set up a laboratory
+spectral radiometer for reflectance
+[SPEAKER_00]: measurements.
+[SPEAKER_00]: Now for these reflectance measurements
+you're going to need a few things.
+[SPEAKER_00]: You're going to need obviously your
+spectral radiometer, the computer that
+[SPEAKER_00]: it'll interface with, a reflectance
+standard, a stable light source,
+[SPEAKER_00]: in my case I am going to use a reflectance
+probe with a flashlight built into it,
+[SPEAKER_00]: and the unit's fiber optic cable.
+[SPEAKER_00]: Now as far as reflectance standards go,
+I've got a sheet of spectral on here.
+[SPEAKER_00]: It is the same material as our AS004
+reflectance standard.
+[SPEAKER_00]: So this material reflects all light within
+the spectral radiometer's sensitivity
+[SPEAKER_00]: range and so it'll work very well as a
+light reference.
+[SPEAKER_00]: So the first step to setting up your
+spectral radiometer will be first to make
+[SPEAKER_00]: sure you've got StellarNet SpectralWiz
+installed and working on your computer.
+[SPEAKER_00]: After that you're going to want to make
+sure your spectral radiometer is plugged
+[SPEAKER_00]: in, which mine is.
+[SPEAKER_00]: And then after that the next step will be
+to plug in the fiber optic cable.
+[SPEAKER_00]: So you'll want to note the end that says
+it plugs into the spectral radiometer.
+[SPEAKER_00]: It has a little arrow pointing to where
+the spectral radiometer should be.
+[SPEAKER_00]: So I'm going to go ahead and plug that end
+in first.
+[SPEAKER_00]: And then if you're just using the fiber
+optic cable for your reflectance
+[SPEAKER_00]: measurements, you'll want to position it
+in a fixed position for the duration of
+[SPEAKER_00]: your measurements.
+[SPEAKER_00]: In my case I'm going to put it into this
+reflectance probe here, which will also
+[SPEAKER_00]: serve as my light source.
+[SPEAKER_00]: It's very important that you have a stable
+light source throughout your measurements.
+[SPEAKER_00]: So once you've got everything hooked up,
+the next thing you'll want to do is start
+[SPEAKER_00]: up SpectralWiz.
+[SPEAKER_00]: And to do that, we do recommend that you
+run it as an administrator.
+[SPEAKER_00]: So I'm going to go ahead and navigate to
+its install directory on the C drive,
+[SPEAKER_00]: Program Files, StellarNet, SpectralWiz.
+[SPEAKER_00]: And then the executable is this swd file.
+[SPEAKER_00]: I'm going to right click it and run it as
+an administrator.
+[SPEAKER_00]: Doing this makes sure the program has the
+privileges that it needs to function
+[SPEAKER_00]: properly.
+[SPEAKER_00]: Otherwise Windows is going to create some
+false files in another directory that
+[SPEAKER_00]: you'll need to delete for the program to
+work right.
+[SPEAKER_00]: So once you've got StellarNet SpectralWiz
+running, you're going to want to make sure
+[SPEAKER_00]: you're in scope mode.
+[SPEAKER_00]: So select view and scope mode.
+[SPEAKER_00]: And then once you've got that set up,
+you'll want to make sure your light source
+[SPEAKER_00]: is on.
+[SPEAKER_00]: So I'm going to turn the little flashlight
+in my probe here on.
+[SPEAKER_00]: And then you're going to position your
+fiber optic cable over your reflectance
+[SPEAKER_00]: standard target.
+[SPEAKER_00]: Now once you've got it positioned over the
+target, your next step is to optimize the
+[SPEAKER_00]: integration time.
+[SPEAKER_00]: So when you're optimizing the integration
+time, your goal is to make sure that this
+[SPEAKER_00]: graph here occupies as much of the Y axis
+here as possible without cutting off at
+[SPEAKER_00]: the top.
+[SPEAKER_00]: So right now the graph is too low.
+[SPEAKER_00]: I'm going to show you what it looks like
+when it's too high.
+[SPEAKER_00]: So you go view, now you go setup,
+detector integration time.
+[SPEAKER_00]: And to make the graph go higher,
+you simply increase this integration time
+[SPEAKER_00]: number.
+[SPEAKER_00]: To make it go lower, you decrease it.
+[SPEAKER_00]: So I'm going to increase it by too much
+just as an example.
+[SPEAKER_00]: So as you can see, the graph is cutting
+off slightly at the top here, which means
+[SPEAKER_00]: my integration time is too high.
+[SPEAKER_00]: I need to bring it down.
+[SPEAKER_00]: So I'll go setup, detector integration
+time.
+[SPEAKER_00]: I'm going to bring it down a little bit to
+1450 here.
+[SPEAKER_00]: Now your integration time is going to vary
+depending on the brightness of your light
+[SPEAKER_00]: source.
+[SPEAKER_00]: The brighter the light source,
+the lower your integration time will be.
+[SPEAKER_00]: So in this case, this integration time
+looks like it's good.
+[SPEAKER_00]: It's occupying a good portion of the Y
+axis, but it's not being cut off at all.
+[SPEAKER_00]: So we're going to let it sit for a while
+to make sure it's stable, which it looks
+[SPEAKER_00]: like it is.
+[SPEAKER_00]: So once it's stable, your next step is to
+obtain a dark scan.
+[SPEAKER_00]: So the key to obtaining a good dark scan
+is just to make sure that there's no light
+[SPEAKER_00]: getting into your spectral radiometer.
+[SPEAKER_00]: So for this procedure, I'm going to unplug
+the fiber optic cable and then cover the
+[SPEAKER_00]: opening port.
+[SPEAKER_00]: And when you do this, you should see a
+nice flat line at the bottom.
+[SPEAKER_00]: It's OK if there are some tiny bumps in
+it.
+[SPEAKER_00]: We're going to flatten those out with the
+dark scan.
+[SPEAKER_00]: So I prefer to release old dark scans
+first.
+[SPEAKER_00]: This is optional, but usually it leads to
+better dark scans overall in my
+[SPEAKER_00]: experience.
+[SPEAKER_00]: So to release an old dark scan,
+you'll want to right click this button
+[SPEAKER_00]: here with the dark scan icon.
+[SPEAKER_00]: And when you do that, you'll notice that a
+small square forms in the lower left
+[SPEAKER_00]: corner of the graph.
+[SPEAKER_00]: That means that the old dark scan has been
+erased.
+[SPEAKER_00]: And when you're ready to save a new dark
+scan, just left click the button here.
+[SPEAKER_00]: You'll notice the line is nice and flat
+along the bottom, and the value down here
+[SPEAKER_00]: is bouncing very close to zero.
+[SPEAKER_00]: It'll vary by a bit, but it should always
+remain close to zero.
+[SPEAKER_00]: So now that we've got a good dark scan,
+I'm going to plug the fiber optic cable
+[SPEAKER_00]: back in.
+[SPEAKER_00]: And then I'm going to replace the probe
+over their standard.
+[SPEAKER_00]: And then we're going to make sure that our
+integration time still looks good,
+[SPEAKER_00]: which it still occupies most of the y-axis
+here, so that's still a good integration
+[SPEAKER_00]: time.
+[SPEAKER_00]: So once you've got your dark scan and your
+integration time set, the next thing you
+[SPEAKER_00]: need to do is go into transmission mode.
+[SPEAKER_00]: So you go View, Transmission.
+[SPEAKER_00]: And now the next step after that is simply
+to click this light reference button here.
+[SPEAKER_00]: And that will establish your reflectance
+standard as the standard for 100%
+[SPEAKER_00]: reflectance.
+[SPEAKER_00]: And at this point, you are now ready to
+start taking reflectance measurements.
+[SPEAKER_00]: So I'm just going to take a quick
+measurement off of the black tabletop
+[SPEAKER_00]: here.
+[SPEAKER_00]: And as you can see, the black tabletop is
+absorbing most of the visible spectrum,
+[SPEAKER_00]: but is beginning to reflect the far red
+spectrum beyond 700.
+[SPEAKER_00]: Nanometers, which we'd expect to see.
+[SPEAKER_00]: So once you have a good spectrum,
+and you're satisfied with it, and you want
+[SPEAKER_00]: to save it, you go up to File,
+Save, Sample.
+[SPEAKER_00]: You'll pick a location to save your file
+and give it a name.
+[SPEAKER_00]: I'm going to call this one Test.
+[SPEAKER_00]: And now this window comes up.
+[SPEAKER_00]: It allows you to define your starting
+wavelength, your ending wavelength,
+[SPEAKER_00]: and your wavelength increments.
+[SPEAKER_00]: For this file, I'm going to just keep the
+starting and ending wavelengths and then
+[SPEAKER_00]: change the wavelength increments to one
+nanometer.
+[SPEAKER_00]: Once you've done that, you click OK.
+[SPEAKER_00]: And your spectrum is saved.
+[SPEAKER_00]: And now if you want to open your spectrum
+up in a program like Microsoft Excel,
+[SPEAKER_00]: all you need to do is open up Excel,
+click File, Open, browse to the location
+[SPEAKER_00]: where you saved your file, and then you
+want to make sure that Excel is looking
+[SPEAKER_00]: for all files and not just Excel files.
+[SPEAKER_00]: Find your file and open it.
+[SPEAKER_00]: And then you want to make sure it's
+delimited by spaces.
+[SPEAKER_00]: Click Finish.
+[SPEAKER_00]: And there's our spectrum file.
+[SPEAKER_00]: And that concludes the brief tutorial on
+how to take a reflectance measurement.
+[SPEAKER_00]: Thank you for watching.

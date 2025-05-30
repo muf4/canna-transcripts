@@ -1,0 +1,310 @@
+[SPEAKER_00]: This is a production of Cornell
+University.
+[SPEAKER_00]: It is a pleasure to share with you for the
+first time part of my research work.
+[SPEAKER_00]: The title of my talk is identifying
+potential atherotic group in Nigeria
+[SPEAKER_00]: cassava using data from ITA breeding
+program.
+[SPEAKER_00]: Cassava, my favorite crop, belongs to the
+family of ephobiasias, that is flowering
+[SPEAKER_00]: plants.
+[SPEAKER_00]: It is predominantly classified as an
+art-crossing species despite having both
+[SPEAKER_00]: male and female reproductive organs.
+[SPEAKER_00]: It is a plenally propagated crop.
+[SPEAKER_00]: Cassava is extremely heterogeneous.
+[SPEAKER_00]: Because of this heterogeneity nature of
+this crop, to improve the performance of
+[SPEAKER_00]: population cross is always a big challenge
+in identifying the optimal palatal
+[SPEAKER_00]: combinations.
+[SPEAKER_00]: One possible way to address this obstacle
+is to use reciprocal recurrent selection
+[SPEAKER_00]: through which you can identify two
+atherotic groups to optimize the
+[SPEAKER_00]: performances of the cross.
+[SPEAKER_00]: There are three main objectives of this
+study to estimate additive and
+[SPEAKER_00]: non-additive genetic variants and assess
+their predictive ability in genomic
+[SPEAKER_00]: predation.
+[SPEAKER_00]: The result from this objective will be
+used to simulate progeny from palatal
+[SPEAKER_00]: combination, knowing very well that to
+evaluate thousands of progeny from a pair
+[SPEAKER_00]: of cross is always impractical in the feed
+evaluation.
+[SPEAKER_00]: So there is need for us to do simulation.
+[SPEAKER_00]: So based on the simulation, we are going
+to use the result to predict genetic
+[SPEAKER_00]: merits of parents toward identifying
+atherotic group.
+[SPEAKER_00]: So this is the general concept of the
+whole study.
+[SPEAKER_00]: So we tend to have two population,
+the training population.
+[SPEAKER_00]: So this will consist of historical data
+from next-gen project in ITA breeding
+[SPEAKER_00]: programs.
+[SPEAKER_00]: So we are going to use those historical
+data to predict the performances of the
+[SPEAKER_00]: progeny simulated from the candidate
+population.
+[SPEAKER_00]: For the candidate population, we have to
+start by identifying existing germplasm in
+[SPEAKER_00]: the breeding program.
+[SPEAKER_00]: From there, we are going to simulate
+half-dialel among the clones.
+[SPEAKER_00]: So we are going to simulate 100 progeny
+per family, and we are going to predict
+[SPEAKER_00]: their performances by using the historical
+data from the training populations.
+[SPEAKER_00]: So based on the main performances of those
+progeny and their genetic similarity,
+[SPEAKER_00]: we are going to classify them into two
+atherotic groups.
+[SPEAKER_00]: So what is NEON?
+[SPEAKER_00]: So we have started to pull a number of
+trials together.
+[SPEAKER_00]: So we have a total number of 38 trials
+across different evaluation stages,
+[SPEAKER_00]: clone evaluation, preliminary year trial,
+advanced year trial, and uniform year
+[SPEAKER_00]: trial across two locations, Ibarra and
+Ikenne.
+[SPEAKER_00]: So we have a total number of 7,342 data
+points.
+[SPEAKER_00]: So we still have SNP data.
+[SPEAKER_00]: So there's need for that in order to
+capture the segregation among individuals
+[SPEAKER_00]: within the same family.
+[SPEAKER_00]: So after doing all the quality checks,
+so we end up having training population
+[SPEAKER_00]: size of 684 samples by 12,317 sleep
+marker.
+[SPEAKER_00]: So we do all sorts of analysis using
+different kinds of applications.
+[SPEAKER_00]: So one of them is somalibri in R.
+[SPEAKER_00]: So to start with, the traditional practice
+for you to analyze data is to do some
+[SPEAKER_00]: exploratory analysis to have idea of what
+your data looks like.
+[SPEAKER_00]: So this is the bus plot and histogram
+showing the distribution of fresh fruit
+[SPEAKER_00]: trees.
+[SPEAKER_00]: As you can see, the data seem to
+approximate normal distributions,
+[SPEAKER_00]: except that of clone evaluation,
+which is a little bit skewed to the right.
+[SPEAKER_00]: As you can see, the point, which is the
+mean, is a little bit higher than the
+[SPEAKER_00]: median.
+[SPEAKER_00]: So for the SNP data, you know it's always
+characterized with error noise value due
+[SPEAKER_00]: to how that data is sequenced.
+[SPEAKER_00]: So this is the pipeline we follow to get
+rid of error noise values.
+[SPEAKER_00]: So we fitter based on site missingness,
+mannerly frequency, fitter load depth
+[SPEAKER_00]: samples, mean depth sites, and the
+threshold I use is the one in parentheses.
+[SPEAKER_00]: So after fittering the data, so we have to
+impose this clean data using Begu.
+[SPEAKER_00]: So I also use Blink to convert it to
+dosage formats.
+[SPEAKER_00]: And there's need to have APMA formats so
+that we can use that to get the genetic
+[SPEAKER_00]: distance.
+[SPEAKER_00]: So this is the detail of how we went about
+cleaning the data.
+[SPEAKER_00]: Cassava being a deep blood organism,
+the SNP data is biallelic.
+[SPEAKER_00]: So this is the frequency of the first
+allele, frequency of the second allele.
+[SPEAKER_00]: So we use just a manner, we fitter for
+mannerly frequency using 1%.
+[SPEAKER_00]: For the site missingness, we use threshold
+of 10% so that those sites that have 10
+[SPEAKER_00]: and above across the sample should be
+removed.
+[SPEAKER_00]: Likewise, we did the same thing for the
+sample.
+[SPEAKER_00]: So we use a threshold of 10% so that those
+samples that have 10% and above missing
+[SPEAKER_00]: data across the sites should be removed,
+should be excluded.
+[SPEAKER_00]: For the site depth, the depth here is the
+number of sequencers per site.
+[SPEAKER_00]: So we use threshold of 10 or 100 so that
+those samples between 10 or 100 should be
+[SPEAKER_00]: retained.
+[SPEAKER_00]: So those below 10, those are the sites
+with low sequence error.
+[SPEAKER_00]: So there are some sites that have high
+depth due to probably repeat region.
+[SPEAKER_00]: So those ones are also eliminated.
+[SPEAKER_00]: So we are interested in this region here.
+[SPEAKER_00]: So after all these fittering criteria,
+so we end up having 962 samples.
+[SPEAKER_00]: By 12,317 markers.
+[SPEAKER_00]: So having got the clean SNP data,
+so I use SOMA library in R because it has
+[SPEAKER_00]: the kernel to extract the genomic
+relationship matrix.
+[SPEAKER_00]: So using the formula adapted from NDelMA
+2011 and Faraday 2008.
+[SPEAKER_00]: So this is the relationship matrix.
+[SPEAKER_00]: As you can see here, so the question is,
+from these three components of epistasis,
+[SPEAKER_00]: which ones will I use in my models?
+[SPEAKER_00]: So I try to come up with these correlation
+matrices by extracting up diagonal
+[SPEAKER_00]: elements.
+[SPEAKER_00]: As you can see, additive by additive is
+less, has the least covariance with
+[SPEAKER_00]: additive and dominance.
+[SPEAKER_00]: So I try to use this.
+[SPEAKER_00]: Some may have you, why do you have to use
+additive by additive?
+[SPEAKER_00]: Knowing that cassava is an out-crossing
+species.
+[SPEAKER_00]: So unlike a separate crop like wheat,
+where additive by additive is well
+[SPEAKER_00]: pronounced.
+[SPEAKER_00]: I'll talk more on that later.
+[SPEAKER_00]: So to start with the analysis of the data,
+I use two-stage approach.
+[SPEAKER_00]: So the first approach is to analyze the
+phenotypic data.
+[SPEAKER_00]: So from the kernel evaluation trial,
+this is the model I use.
+[SPEAKER_00]: So kernel evaluation trial is early stage
+of breeding program where we have so many
+[SPEAKER_00]: lines to evaluate it because of
+insufficient planting materials.
+[SPEAKER_00]: So we have to use checks.
+[SPEAKER_00]: Chests have to be replicated in every
+blocks.
+[SPEAKER_00]: And for the other evaluation stages,
+we have enough planting material.
+[SPEAKER_00]: So we normally use randomized complete dot
+design.
+[SPEAKER_00]: This is the border fitted.
+[SPEAKER_00]: So where the genotypes are taken to be
+random to estimate the genotypic variance.
+[SPEAKER_00]: And this is the G-prop model fitted.
+[SPEAKER_00]: So you can see this is the fresh seed.
+[SPEAKER_00]: This is the intercept part of the model.
+[SPEAKER_00]: And this is additive effect.
+[SPEAKER_00]: So the same thing for the, so we use this
+as the baseline model.
+[SPEAKER_00]: So the other multiple kernel models,
+in addition to additive effect,
+[SPEAKER_00]: we have dominance here.
+[SPEAKER_00]: We have epistatic effect.
+[SPEAKER_00]: And dominance and epistatic effect here.
+[SPEAKER_00]: So this is studentized residual from the
+phenotypic data, which is a very good
+[SPEAKER_00]: statistics to detect an outlayer.
+[SPEAKER_00]: And this is the variance component
+estimated from those different evaluation
+[SPEAKER_00]: stages.
+[SPEAKER_00]: As you can see that the residual variance
+keep declining from early stage to later
+[SPEAKER_00]: stage.
+[SPEAKER_00]: And this is because at late stage of
+breeding, we have, it's a kind of a trial
+[SPEAKER_00]: with a large plus size.
+[SPEAKER_00]: So have you fitted those G-prop models?
+[SPEAKER_00]: So the field statistics reveal that the
+model which incorporate additive dominance
+[SPEAKER_00]: and epistatic seem to give the best
+prediction abilities.
+[SPEAKER_00]: So as you can see here, and this is
+histogram showing the distribution of
+[SPEAKER_00]: those predictions.
+[SPEAKER_00]: And accuracy.
+[SPEAKER_00]: So this is the, I tried to partition the
+total variance, total genetic variance
+[SPEAKER_00]: into different sources.
+[SPEAKER_00]: As you can see here, the dominance and
+epistatic seem to contribute a very large
+[SPEAKER_00]: effect.
+[SPEAKER_00]: So meaning that we cannot ignore the
+importance of non-dominance effect,
+[SPEAKER_00]: which means that the model that has
+additive and non-additive is likely to
+[SPEAKER_00]: give you good prediction for genetic
+merits.
+[SPEAKER_00]: So the lesson learned from this lesson is
+that the model that include additive and
+[SPEAKER_00]: non-additive effect predicts genetic
+merits accurately, and the dominance
+[SPEAKER_00]: effect is not completely independent of
+additive effects.
+[SPEAKER_00]: So meaning that they overlap.
+[SPEAKER_00]: And dominance effect seem to play a major
+role in flushing threshold.
+[SPEAKER_00]: So the future work is to consult with IT
+research team to assemble the candidate
+[SPEAKER_00]: pools from which we have to, from which
+the authority group will be defined.
+[SPEAKER_00]: So I still need to explore other genomic
+prediction method to compare the result
+[SPEAKER_00]: with the existing ones.
+[SPEAKER_00]: So I need to simulate a probability of 100
+progeny for each pair of parental
+[SPEAKER_00]: combinations.
+[SPEAKER_00]: So I give special thanks to my special
+committees for their support.
+[SPEAKER_00]: For the advice from time to time to all
+the member of John Luke group,
+[SPEAKER_00]: friends for advice in one way or the
+other.
+[SPEAKER_00]: Thanks to Melinda Bill Gates, UK Hage for
+the financial support toward the research
+[SPEAKER_00]: work.
+[SPEAKER_00]: Thank you all for listening.
+[SPEAKER_01]: Have you tried fitting these models?
+[SPEAKER_01]: So you do the additive fit, and then you
+add a dominance kernel, and then you add
+[SPEAKER_01]: an epistatic kernel.
+[SPEAKER_01]: Have you actually tried to fit just a
+dominance or just an epistatic and compare
+[SPEAKER_01]: that to the additive itself?
+[SPEAKER_01]: So the question is, so you have this thing
+where you're doing like a nested,
+[SPEAKER_01]: right?
+[SPEAKER_01]: So you start with an additive only,
+then you have an additive plus dominance,
+[SPEAKER_01]: then you have additive plus dominance plus
+epistasis.
+[SPEAKER_01]: The question is, have you tried to fit
+just dominance or just epistasis?
+[SPEAKER_01]: It's been my experience that you end up
+with really similar prediction,
+[SPEAKER_01]: at least in an inbred, by modeling only
+epistasis, I could end up with really
+[SPEAKER_01]: similar prediction accuracy.
+[SPEAKER_01]: This is the additive.
+[SPEAKER_00]: The only thing I tried to do is,
+I did that early this morning.
+[SPEAKER_00]: So instead of using the additive by
+additive as epistatic components,
+[SPEAKER_00]: I tried to use additive by dominance to
+see what is going to happen.
+[SPEAKER_00]: But what I observed is that the process
+irritability is much higher, around 0.67.
+[SPEAKER_00]: But when I look at the prediction
+accuracy, it's almost the same thing with
+[SPEAKER_00]: that of additive by additive.
+[SPEAKER_01]: Yeah, that's because there's a big scale
+on it.
+[SPEAKER_01]: We have time for one more question.
+[SPEAKER_01]: Thank you.
+[SPEAKER_00]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_00]: Thank you.
+Thank you.
+Thank you.

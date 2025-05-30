@@ -1,0 +1,423 @@
+[SPEAKER_00]: This is a production of Cornell
+University.
+[SPEAKER_00]: Thanks, everyone.
+[SPEAKER_00]: Thanks for the introduction.
+[SPEAKER_00]: Just to note, I am part of the Buckler and
+Robbins Labs co-mentored.
+[SPEAKER_00]: So yeah, today I'm going to talk about a
+cassava practical haplotype graph for
+[SPEAKER_00]: efficient imputation in hepatitis C.
+[SPEAKER_00]: All right.
+[SPEAKER_00]: OK, sorry.
+[SPEAKER_00]: So first, I want to talk about what is a
+practical haplotype graph.
+[SPEAKER_00]: It's a tool for imputation.
+[SPEAKER_00]: It's a tool to help capture genomic
+variants across the genome with minimal
+[SPEAKER_00]: sequence input.
+[SPEAKER_00]: So that's kind of the purpose of it.
+[SPEAKER_00]: And why would we impute?
+[SPEAKER_00]: There's a lot of different reasons to
+impute.
+[SPEAKER_00]: Some of the main ones in breeding we think
+about are kind of allowing data from
+[SPEAKER_00]: different genotyping sources to be used
+together and also to kind of capture more
+[SPEAKER_00]: whole genome variants for maybe leverage
+other additional annotations.
+[SPEAKER_00]: So just a basic kind of layout of what
+taking a PhD looks like.
+[SPEAKER_00]: Basically, we take some whole genome
+sequence, sometimes in assemblies,
+[SPEAKER_00]: extract haplotypes, and populate a
+database.
+[SPEAKER_00]: Then we take to kind of test it.
+[SPEAKER_00]: We take some low coverage genotyping,
+pass it through the alliance of the
+[SPEAKER_00]: database, and get out basically all the
+haplotypes.
+[SPEAKER_00]: So how does it work?
+[SPEAKER_00]: Well, first, we break up the genome into
+these haplotype ranges we call reference
+[SPEAKER_00]: ranges.
+[SPEAKER_00]: We then populate the database with
+haplotypes from some parental germplasm or
+[SPEAKER_00]: a diversity panel.
+[SPEAKER_00]: And then we make a trellis graph as a
+graph structure that kind of captures the
+[SPEAKER_00]: relationship between adjacent haplotypes.
+[SPEAKER_00]: And now that we have this kind of
+pan-genome, we can take maybe an
+[SPEAKER_00]: un-genotype taxa, get some reads for it,
+align it to the pan-genome.
+[SPEAKER_00]: And then we're going to use a hidden
+Markov model to find the most likely path
+[SPEAKER_00]: through the database, which then gives us
+our haplotypes for that new taxa.
+[SPEAKER_00]: But it's not just that simple,
+because working in a heterozygous crop
+[SPEAKER_00]: like cassava, you have to model two copies
+of the genome.
+[SPEAKER_00]: So instead, we align the reads,
+but they hit multiple places.
+[SPEAKER_00]: And we then get the two most likely paths
+representing the two copies of the genome.
+[SPEAKER_00]: So first, I just want to introduce what
+this looks like in simulation.
+[SPEAKER_00]: Simulations can help us kind of test our
+methodology, see what things look like
+[SPEAKER_00]: under ideal conditions.
+[SPEAKER_00]: And so the simulation I'm going to show
+here basically take 20 parents.
+[SPEAKER_00]: These are real cassava clones,
+simulate five generations of random
+[SPEAKER_00]: mating, and then I test the mutation in
+100 offspring.
+[SPEAKER_00]: And so just to test the mutation,
+we sample the offspring.
+[SPEAKER_00]: We test the offspring at low coverage.
+[SPEAKER_00]: Use the PHG to impute the missing
+genotypes.
+[SPEAKER_00]: Determine accuracy by comparing to the
+true, which we know because the
+[SPEAKER_00]: simulation.
+[SPEAKER_00]: And then compare also how it does with the
+invitation to a beagle, which is a very
+[SPEAKER_00]: common invitation software that people
+use.
+[SPEAKER_00]: So this is what it looks like,
+at least for the simulation.
+[SPEAKER_00]: We see the PHG in red.
+[SPEAKER_00]: I can't see my mouse.
+[SPEAKER_00]: But the PHG in red outperforms beagle in
+the simulated scenario across many of the
+[SPEAKER_00]: x-axis' depth of coverage for sequencing.
+[SPEAKER_00]: And this big gap between them,
+especially at the lower coverages,
+[SPEAKER_00]: that's really due to the fact that the
+beagle can't really distinguish between
+[SPEAKER_00]: heterozygous and homozygous calls with
+that little of data.
+[SPEAKER_00]: So just because if you see something once,
+you don't know if that's homozygous.
+[SPEAKER_00]: Maybe you're not capturing the second
+allele.
+[SPEAKER_00]: So now I've shown this really should work.
+[SPEAKER_00]: It does work in simulation, even with two
+copies of the genome being modeled.
+[SPEAKER_00]: The question is, where do we get the
+haplotypes for real data?
+[SPEAKER_00]: Because it's not quite as simple as it may
+look.
+[SPEAKER_00]: So I'm going to be showing you some of the
+data I'm using from the HapMap2 population
+[SPEAKER_00]: created or kind of consolidated a few
+years ago by Ramu and the Bucker Lab.
+[SPEAKER_00]: It's got 2 in 41 clones, mainly from some
+cultivated varieties that are clones,
+[SPEAKER_00]: but also there's some wild lines in there
+as well.
+[SPEAKER_00]: So how do we find haplotypes?
+[SPEAKER_00]: Well, one of the challenges I'm going to
+talk about is getting phased haplotypes is
+[SPEAKER_00]: not as easy as it sounds from whole genome
+sequence.
+[SPEAKER_00]: Just imagine these three sites,
+two of which are segregating.
+[SPEAKER_00]: We've got heterozygous sites 1 and 3.
+[SPEAKER_00]: So you're like, OK, we've got the
+genotype.
+[SPEAKER_00]: But that is not a haplotype.
+[SPEAKER_00]: We don't know if the genome looks like
+this with two haplotypes, ACG and CCT,
+[SPEAKER_00]: or ACT and CCG.
+[SPEAKER_00]: And so even with two snips or two serating
+sites, this can be harder to distinguish.
+[SPEAKER_00]: And in reality, it's much bigger,
+far more possibilities than just these two
+[SPEAKER_00]: with more snips.
+[SPEAKER_00]: So how can we resolve the truth phase?
+[SPEAKER_00]: Well, what we can do and what we show here
+is we've sampled enough of these clones so
+[SPEAKER_00]: we can find clones that are homozygous at
+this region for these different
+[SPEAKER_00]: haplotypes.
+[SPEAKER_00]: And we can see, oh, here, maybe the true
+phase is actually ACG and CCT.
+[SPEAKER_00]: And so looking for these IBD or identity
+by descent regions, we can get the true
+[SPEAKER_00]: phase of these haplotypes.
+[SPEAKER_00]: And so that's how I've created this Casava
+data base of this PHE, is by sampling the
+[SPEAKER_00]: IBD regions of genome and using those runs
+of homozygosity that were most likely
+[SPEAKER_00]: generated through breeding or selection.
+[SPEAKER_00]: And then also capture, if there are runs
+of homozygosity, you can capture
+[SPEAKER_00]: relationships between adjacent haplotypes.
+[SPEAKER_00]: And not only that, but one of the things
+we have to address is that this method is
+[SPEAKER_00]: going to create a sparse database,
+because not every haplotype is being
+[SPEAKER_00]: sampled in every taxa.
+[SPEAKER_00]: And so here, this is the same picture I
+showed before with some missing
+[SPEAKER_00]: haplotypes.
+[SPEAKER_00]: One of the things we've done to kind of
+make this viable is by taking the reads
+[SPEAKER_00]: from these haplotypes we've sampled,
+we actually realign them to the graph,
+[SPEAKER_00]: find the most likely paths, and fill in
+those gaps with most likely haplotypes
+[SPEAKER_00]: from the haplotypes we've sampled.
+[SPEAKER_00]: What this realigning of the whole genome
+sequence data does is it fills in the
+[SPEAKER_00]: gaps, kind of fill up the graph to improve
+the transitions and the the model as a
+[SPEAKER_00]: whole, but doesn't add any new information
+or new haplotypes.
+[SPEAKER_00]: And so now we'll just show, we run an
+imputation from this PHE, and same kind of
+[SPEAKER_00]: thing with the other tests, but I held out
+a test set that were not sampled,
+[SPEAKER_00]: sampled their reads to a low coverage and
+impute the missing sites.
+[SPEAKER_00]: And so here, the results from that,
+and we'll see it's not the beagles follows
+[SPEAKER_00]: the same relationship as the simulation,
+but with this PHE, it's the same trend,
+[SPEAKER_00]: but it's translated lower on the graph.
+[SPEAKER_00]: And what we're seeing here is that we're
+not completely able, like this method
+[SPEAKER_00]: isn't completely able to sample all the
+haplotypes, the diversity haplotypes,
+[SPEAKER_00]: either due to deleterious alleles or other
+population dependent parameters,
+[SPEAKER_00]: we might not be sampling all the available
+haplotypes.
+[SPEAKER_01]: Or just to interrupt you a second,
+if somebody's got a baby, can you please?
+[SPEAKER_00]: It's my baby, that's the problem.
+[SPEAKER_01]: Oh, sorry.
+[SPEAKER_00]: No, I try to apologize.
+[SPEAKER_01]: That just makes it adorable, carry on.
+[SPEAKER_00]: So we've shown, okay, but it does do
+really well at the low coverages compared
+[SPEAKER_00]: to beagle, but how well is good enough?
+[SPEAKER_00]: So just try to validate this with some
+genomic prediction.
+[SPEAKER_00]: How does imputation accuracy translate to
+genomic prediction?
+[SPEAKER_00]: So I've just used a subset of clones from
+this HapMap, did some cross validations
+[SPEAKER_00]: with fresh root yield.
+[SPEAKER_00]: And I found that it follows pretty much
+the same trend as the imputation accuracy
+[SPEAKER_00]: as the genomic prediction accuracy.
+[SPEAKER_00]: And that, yeah, the highest coverage
+beagle is gonna do better because it can
+[SPEAKER_00]: kind of leverage the information that the
+PhD can't.
+[SPEAKER_00]: But these are upwards of near,
+if the beagle 5X is the top amount of
+[SPEAKER_00]: genomic prediction accuracy we can get,
+just with 0.5X coverage, the PhD can get
+[SPEAKER_00]: near that.
+[SPEAKER_00]: And so kind of this brings us to the
+question is, if it can do pretty well,
+[SPEAKER_00]: it does effective at low coverage,
+how can we sample more haplotypes?
+[SPEAKER_00]: Because that seems to be just the last
+piece to make this an effective tool in a
+[SPEAKER_00]: heterozygous crop like cassava.
+[SPEAKER_00]: So here, I'm just gonna show some
+preliminary data I've got from using
+[SPEAKER_00]: Longree technology, Oxford Nanopore
+technology, or Minion sequencing.
+[SPEAKER_00]: So here I've got six clones that have
+Oxford Nanopore data.
+[SPEAKER_00]: I take those clones or their WGS data and
+use Longree to phase their data.
+[SPEAKER_00]: And I've made a PhD database just with
+those six lines.
+[SPEAKER_00]: And then I'm gonna compare it to the PhD I
+just showed, which is made from the whole
+[SPEAKER_00]: HapMap2.
+[SPEAKER_00]: So here's what it looks like.
+[SPEAKER_00]: And it is lower, but it includes data from
+far fewer taxa.
+[SPEAKER_00]: And so I wasn't able to get this huge bump
+in accuracy.
+[SPEAKER_00]: I didn't show this, but even by combining
+them, I don't get that bump in accuracy
+[SPEAKER_00]: that I'd like.
+[SPEAKER_00]: But this does show a lot of potential for
+maybe if you had a breeding population,
+[SPEAKER_00]: if you sequenced the parents with some
+long reads and short reads together and
+[SPEAKER_00]: get the phased haplotypes, then you could
+use those to effectively impute in the
+[SPEAKER_00]: offspring.
+[SPEAKER_00]: So just last, I'm gonna summarize.
+[SPEAKER_00]: My point is the cassava phg can leverage
+IBD haplotypes to get good imputation
+[SPEAKER_00]: accuracy.
+[SPEAKER_00]: That is applicable for general prediction.
+[SPEAKER_00]: Simulation experiments help us validate
+and improve our methodology.
+[SPEAKER_00]: It shows its real potential if we have
+correctly phased haplotypes.
+[SPEAKER_00]: And lastly, there is some potential to use
+these Longree technologies as they get
+[SPEAKER_00]: cheaper and more available to kind of
+solve the phasing problem.
+[SPEAKER_00]: And last, I'll just wanna acknowledge
+everyone that's helped me, both my
+[SPEAKER_00]: mentors, Kelly and Ed, and all of the lab
+members that have helped me.
+[SPEAKER_00]: And especially a big shout out for Peter
+Bradbury, whose programming work is mostly
+[SPEAKER_00]: support.
+[SPEAKER_00]: A lot of the results I have is due to a
+lot of the work he's done.
+[SPEAKER_00]: And I will take any questions.
+[SPEAKER_00]: Thank you.
+[SPEAKER_04]: Thank you for your talk, Evan.
+[SPEAKER_04]: So yeah, you can either write the
+questions in the chat or you can also
+[SPEAKER_04]: raise your hand if you would like to.
+[SPEAKER_04]: Evan, I think you need to show us the
+baby.
+[SPEAKER_04]: If we wanna start with Liz, do you want to
+unmute yourself and ask your question?
+[SPEAKER_04]: Hi, Evan.
+[SPEAKER_03]: Can you hear me okay?
+[SPEAKER_00]: Yes.
+[SPEAKER_00]: Sorry, Liz.
+[SPEAKER_00]: I just didn't see you.
+[SPEAKER_03]: Yeah, this is Liz.
+[SPEAKER_03]: So I was interested in those last results
+on the long range sequencing while you did
+[SPEAKER_03]: not get better resolution and better
+accuracy.
+[SPEAKER_03]: Is that because the method itself is
+inherently error prone?
+[SPEAKER_00]: So it's like I said, it's still some
+preliminary data.
+[SPEAKER_00]: I think what it shows is that we're able
+to phase some haplotypes.
+[SPEAKER_00]: Which with short reads, I've tried phasing
+with other methods and it doesn't help,
+[SPEAKER_00]: you know, trying to giving phased
+haplotypes, incorporating phased
+[SPEAKER_00]: haplotypes doesn't help.
+[SPEAKER_00]: But with the long reads, it looks like
+we're getting accurate haplotypes.
+[SPEAKER_00]: And I think it's probably just the
+limitation of only being able to have
+[SPEAKER_00]: those few, only six clones having that
+data would probably be the limitation.
+[SPEAKER_00]: And why it wouldn't improve the,
+I still need to look into it more.
+[SPEAKER_00]: Cause I've tried combining both the IBD
+haplotypes and those phased haplotypes.
+[SPEAKER_00]: And it hasn't really improved better than
+my big IBD database.
+[SPEAKER_03]: Yeah, haplotype imputation, they can get
+chimeric forms of sequencing for the long
+[SPEAKER_03]: range sequencing methods.
+[SPEAKER_03]: So I wondered whether you were seeing some
+of that.
+[SPEAKER_00]: Yeah, I have looked at Chimera,
+you know, like creating kind of these
+[SPEAKER_00]: false haplotypes before.
+[SPEAKER_00]: And that may be part of it.
+[SPEAKER_00]: It may be just that we're not,
+it's not like all the haplotypes that I'm
+[SPEAKER_00]: getting with the long read phasing may be
+already captured by all the IBD
+[SPEAKER_00]: haplotypes.
+Right.
+[SPEAKER_00]: That could be one thing.
+[SPEAKER_00]: But that is, you know, that's kind of my
+running hypothesis right now.
+[SPEAKER_00]: It would, I mean, I don't have the data
+for it really, but it would be interesting
+[SPEAKER_00]: if I had, once again, if I had offspring,
+I tried looking, there's not really
+[SPEAKER_00]: pedigree.
+[SPEAKER_00]: But there's not at least whole genome
+sequence on the pedigree data I have.
+[SPEAKER_00]: You know, if I could look at the direct
+offspring of those six clones.
+[SPEAKER_03]: Okay.
+[SPEAKER_03]: Thanks.
+[SPEAKER_04]: Very nice.
+[SPEAKER_04]: Thank you, Evan.
+[SPEAKER_04]: There was another raised hand by Jean-Luc.
+[SPEAKER_04]: I don't know.
+[SPEAKER_04]: He took his hand back.
+[SPEAKER_04]: I don't know.
+[SPEAKER_02]: I lowered it, but sure.
+[SPEAKER_02]: Evan, so the simulation, what data did you
+actually give the people?
+[SPEAKER_02]: Did you give it to the PHD and
+constructing it?
+[SPEAKER_02]: Did you give it the fully phased data on
+the 20 parents?
+[SPEAKER_02]: Yeah.
+[SPEAKER_00]: So I phased 20 parents just using Beagle
+and HapCut.
+[SPEAKER_00]: And I just gave the PHD and explain,
+or cause that's what I used to simulate
+[SPEAKER_00]: the offspring.
+[SPEAKER_00]: And so I gave that to the PHD as well.
+[SPEAKER_00]: I mean, those are not by no means true.
+[SPEAKER_00]: I just accepted that as truth.
+[SPEAKER_02]: Right, right, right.
+[SPEAKER_02]: I get it.
+Yeah.
+[SPEAKER_02]: Okay.
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: Does that answer your question?
+[SPEAKER_02]: It does.
+[SPEAKER_02]: I guess.
+[SPEAKER_02]: Yeah, that makes sense.
+[SPEAKER_02]: Thanks.
+[SPEAKER_00]: And they're all IIT lines.
+[SPEAKER_00]: So at least they're all somewhat related
+anyways.
+[SPEAKER_02]: You know, we never really got a good view
+of the baby because people were talking
+[SPEAKER_02]: and then Zoom puts them on the screen,
+or at least I didn't.
+[SPEAKER_01]: There were some backlighting issues.
+[SPEAKER_00]: Thank you so much.
+[SPEAKER_04]: Oh, wonderful job.
+[SPEAKER_04]: Very cute.
+[SPEAKER_04]: There's one more question from Shetai in
+the chat.
+[SPEAKER_04]: She asks which method among the two you
+would recommend for either IRL or diverse
+[SPEAKER_04]: populations?
+[SPEAKER_00]: I think if I had the ability to get long
+reads, I would, especially if you had like
+[SPEAKER_00]: a finite number of parents, you knew.
+[SPEAKER_00]: Okay.
+[SPEAKER_00]: If you had something, like you said,
+if we did something in maize, you know,
+[SPEAKER_00]: if you had something like the name,
+if you get long read to those parents and
+[SPEAKER_00]: then you'll have those.
+[SPEAKER_00]: Okay.
+[SPEAKER_00]: Well, I better cut off, but thank you.
+[SPEAKER_00]: And thank you for the questions.
+[SPEAKER_04]: Thanks for your talk, Evan.
+[SPEAKER_04]: Yeah.
+[SPEAKER_04]: George will introduce the third and last
+speaker for today.
+[SPEAKER_00]: This has been a production of Cornell
+University on the web at Cornell.edu.
+[SPEAKER_00]: Thank you.
+[SPEAKER_00]: Thank you.
+Thank you.

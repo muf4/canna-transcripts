@@ -1,0 +1,720 @@
+[SPEAKER_00]: This is a production of Cornell
+University.
+[SPEAKER_03]: My name is Philip Lanza.
+[SPEAKER_03]: I work with Louis.
+[SPEAKER_03]: My presentation is called Harvesting
+Insights with Agronomic Contextualization.
+[SPEAKER_03]: I'd like to thank ChatGPT for coming up
+with a clever title for me again.
+[SPEAKER_03]: So my presentation is going to be in this
+format.
+[SPEAKER_03]: I'm going to talk about why I'm doing what
+I'm doing, then go over my objectives
+[SPEAKER_03]: briefly, and then take a few questions at
+the end if we have time.
+[SPEAKER_03]: So as we know, we have a sustainability
+problem with large-scale agriculture.
+[SPEAKER_03]: We need to continue to increase output to
+feed the world.
+[SPEAKER_03]: But they're starting to have more and more
+bad effects from over-fertilization,
+[SPEAKER_03]: pesticide usage, pollution from machinery,
+fossil fuel usage, all of that.
+[SPEAKER_03]: So it's a challenging problem.
+[SPEAKER_03]: Thankfully, a lot of people are studying
+this.
+[SPEAKER_03]: We're working on improving things and
+maintaining sustainable intensification so
+[SPEAKER_03]: we don't have ecological and environmental
+disaster.
+[SPEAKER_03]: The thing that's kind of a barrier is it's
+often difficult to get farmers to adopt
+[SPEAKER_03]: practices.
+[SPEAKER_03]: So it's challenging because there's a lot
+of complexity in these systems.
+[SPEAKER_03]: And if something goes out to a farmer and
+it doesn't work, then it kind of erodes
+[SPEAKER_03]: trust between researchers and farmers.
+[SPEAKER_03]: And they'll be less likely to adopt
+things.
+[SPEAKER_03]: So it's important, as researchers,
+that whatever we do, like the bucket says,
+[SPEAKER_03]: we do it right.
+[SPEAKER_03]: So one way to address this is doing
+on-farm experimentation.
+[SPEAKER_03]: This is doing experiments on farms.
+[SPEAKER_03]: We answer questions in production
+environments.
+[SPEAKER_03]: Two main types are scientist-led,
+which make things kind of like this,
+[SPEAKER_03]: where it's complete randomized block
+design or strip trials.
+[SPEAKER_03]: Researchers design these.
+[SPEAKER_03]: So they're replicated usually.
+[SPEAKER_03]: They'll evaluate the dependent variables.
+[SPEAKER_03]: Given whatever, this looks like a nitrogen
+trial.
+[SPEAKER_03]: Usually they're smaller scale because the
+complexity of the design doesn't allow
+[SPEAKER_03]: them to be done by a farmer.
+[SPEAKER_03]: No fields look like this in actual
+production.
+[SPEAKER_03]: The good thing is they produce clean data.
+[SPEAKER_03]: It's easier to evaluate.
+[SPEAKER_03]: And we can really determine, say,
+causality and things from this.
+[SPEAKER_03]: The bad thing is they're really done in
+production conditions.
+[SPEAKER_03]: So it limits their ability to be
+implemented in work examples.
+[SPEAKER_03]: Another type is farmer-led, where farmers
+routinely do experiments on their fields,
+[SPEAKER_03]: whether doing a variety trial or different
+nitrogen rates, different application
+[SPEAKER_03]: timings.
+[SPEAKER_03]: These are the things that we've been
+working with, where we don't impose any
+[SPEAKER_03]: experimental design.
+[SPEAKER_03]: The farmers do what they do natively.
+[SPEAKER_03]: Now, the challenge with this, if you look
+at the top one, this farmer did the
+[SPEAKER_03]: control around the border of their field,
+which, if you know agrotomy, is not a
+[SPEAKER_03]: standard condition.
+[SPEAKER_03]: So basically, it wasn't an effective
+control.
+[SPEAKER_03]: But other ones do more sophisticated
+designs, like this one at the bottom,
+[SPEAKER_03]: where they did paired strip trials with a
+control between.
+[SPEAKER_03]: And they really accounted for their data
+well.
+[SPEAKER_03]: So the challenge with this is often they
+aren't replicated.
+[SPEAKER_03]: A farmer might do it on one, maybe two
+fields.
+[SPEAKER_03]: So you have maybe a strip to evaluate.
+[SPEAKER_03]: Other things are there are a lot of
+confounding factors we have to account
+[SPEAKER_03]: for.
+[SPEAKER_03]: Good and bad is that they're large scale.
+[SPEAKER_03]: They cover the whole field.
+[SPEAKER_03]: But that's a lot of data to work with,
+a lot of complexity to work with.
+[SPEAKER_03]: And they're often subject to incomplete or
+inconsistent data.
+[SPEAKER_03]: A lot of farmers, they record their
+management data in a notebook.
+[SPEAKER_03]: So there's no easy way to get that if they
+even record it.
+[SPEAKER_03]: Sometimes yield monitors break,
+so we don't get yield for the year,
+[SPEAKER_03]: spatially.
+[SPEAKER_03]: The really good thing is they're done in
+real world production conditions.
+[SPEAKER_03]: These are things that the farmers are
+interested in less.
+[SPEAKER_03]: They're more likely to learn, they're more
+likely to adopt these practices.
+[SPEAKER_03]: And the findings, the strong point of this
+is they're immediately applicable because
+[SPEAKER_03]: they're done on the farmer's field.
+[SPEAKER_03]: So the conditions are the conditions.
+[SPEAKER_03]: So anything you find will probably work
+and be applicable.
+[SPEAKER_03]: Now one way to address this, as Louis
+said, is we're trying to apply
+[SPEAKER_03]: observational research methods to
+agronomic systems.
+[SPEAKER_03]: These are commonly done in medicine,
+social sciences, and are good for studying
+[SPEAKER_03]: complexity, also where you can't
+necessarily impose a treatment.
+[SPEAKER_03]: You can't infect someone with COVID and
+say, oh, what happens?
+[SPEAKER_03]: You have to use existing data and see what
+you can gather from it.
+[SPEAKER_03]: So data mining, data-driven methods work
+really well.
+[SPEAKER_03]: I like doing data-driven methods.
+[SPEAKER_03]: I don't like doing regular statistics,
+so great for me.
+[SPEAKER_03]: And they require context, which are
+objective data to capture and characterize
+[SPEAKER_03]: what's going on.
+[SPEAKER_03]: So for purposes of agronomic observational
+research in my projects, I define this as
+[SPEAKER_03]: the biophysical and environmental
+covariates present in the experimental
+[SPEAKER_03]: area.
+[SPEAKER_03]: So like soil properties, weather,
+terrain, weather, all these good things.
+[SPEAKER_03]: One challenge though is how do we collect
+these data at the scale necessary to do
+[SPEAKER_03]: large experiments and really leverage all
+the on-farm experimentation going on?
+[SPEAKER_03]: One way is to go out in the field and pull
+samples.
+[SPEAKER_03]: We do this.
+[SPEAKER_03]: It provides really good data.
+[SPEAKER_03]: Here we are taking soil samples and
+microbiological samples for a biological
+[SPEAKER_03]: nitrogen product.
+[SPEAKER_03]: The challenge with this is it's a lot of
+labor.
+[SPEAKER_03]: You can't send 100 people out into a field
+to pull these.
+[SPEAKER_03]: You have to pay to process them.
+[SPEAKER_03]: So that limits the scale.
+[SPEAKER_03]: And then fields are really big.
+[SPEAKER_03]: This one's over a kilometer.
+[SPEAKER_03]: So to pull enough samples at a density
+sufficient to fully characterize it,
+[SPEAKER_03]: it isn't really feasible.
+[SPEAKER_03]: Thankfully, there are other sources of
+context data that are online.
+[SPEAKER_03]: You know, weather data, precision
+agricultural sensor data like yield maps,
+[SPEAKER_03]: as applied maps, all these things we can
+use, environmental data like from
+[SPEAKER_03]: different weather data products,
+biophysical data like soil properties,
+[SPEAKER_03]: terrain data.
+[SPEAKER_03]: And this is easier to use, but the
+challenge is it's still very
+[SPEAKER_03]: labor-intensive because they're in
+different sources, different formats.
+[SPEAKER_03]: It's hard to kind of integrate them and
+get these raw data to produce knowledge,
+[SPEAKER_03]: things that we can act upon.
+[SPEAKER_03]: So it also limits its feasibility for a
+large-scale application, which is better
+[SPEAKER_03]: than going and pulling 100,000 samples,
+but still not awesome.
+[SPEAKER_03]: So we get to my dissertation, which is
+developing novel tools, supporting
+[SPEAKER_03]: research in agronomic systems with a focus
+on integrating biophysical and
+[SPEAKER_03]: environmental contextualization data in
+on-farm research.
+[SPEAKER_03]: That's a lot to say, but basically I want
+to make it easy for people to use this
+[SPEAKER_03]: context data to apply observational
+research techniques so that way we can
+[SPEAKER_03]: quickly come up with some solutions to the
+challenges that we're facing and,
+[SPEAKER_03]: you know, sustainably produce food to feed
+the world without destroying the
+[SPEAKER_03]: environment and the ecology.
+[SPEAKER_03]: So here are my objectives.
+[SPEAKER_03]: The first is to develop a tool I call
+GeoDART to facilitate retrieval of this
+[SPEAKER_03]: contextualization data.
+[SPEAKER_03]: The second is to develop a system using
+these data to identify areas of anomalous
+[SPEAKER_03]: crop response within fields.
+[SPEAKER_03]: And then lastly, demonstrate using output
+from the STAD system that these techniques
+[SPEAKER_03]: work, you know, and kind of do a proof of
+concept saying we can do this,
+[SPEAKER_03]: we can go forward with this and apply it
+to other types of experimentation.
+[SPEAKER_03]: I'm going to talk about my first objective
+now.
+[SPEAKER_03]: It is developing the geospatial data
+retrieval tool I call GeoDART.
+[SPEAKER_03]: It facilitates retrieving
+contextualization data.
+[SPEAKER_03]: So, you know, one challenge a lot of
+people can do scripting to get things,
+[SPEAKER_03]: but it ends up, you know, in a lot of
+different places.
+[SPEAKER_03]: People need to learn to program to kind of
+do this.
+[SPEAKER_03]: It's often challenging and then you have
+to go find the script to get this and
+[SPEAKER_03]: things like that.
+[SPEAKER_03]: So I wanted to make a centralized way to
+do this and also allow people who can't
+[SPEAKER_03]: code to do this.
+[SPEAKER_03]: So I designed a website.
+[SPEAKER_03]: It's the web-based user interface that's
+pretty easy to use.
+[SPEAKER_03]: That then hits a Python backend to
+retrieve the data, do geospatial
+[SPEAKER_03]: processing, things like that.
+[SPEAKER_03]: Quickly, you know, the data products I'm
+pulling now are all from Google Earth
+[SPEAKER_03]: Engine, which is like a huge repository of
+all kinds of spatial data sets.
+[SPEAKER_03]: I'm pulling things that are relevant to
+agronomic systems, such as weather via
+[SPEAKER_03]: grid met, which is a daily four kilometer
+resolution data set.
+[SPEAKER_03]: Polaris soil properties.
+[SPEAKER_03]: After I did this, I found out there's some
+limitations with it.
+[SPEAKER_03]: So I'm planning to switch to the Solis
+soil data set, which is supposed to be a
+[SPEAKER_03]: good bit better.
+[SPEAKER_03]: I'm pulling hourly weather.
+[SPEAKER_03]: From RTMA, if you need really fine
+temporal resolution.
+[SPEAKER_03]: U.S.
+[SPEAKER_03]: Drought Monitor, which is two kilometer
+spatial drought intensity severity data
+[SPEAKER_03]: set.
+[SPEAKER_03]: Optical remote sensing from Sentinel-2.
+[SPEAKER_03]: And we can calculate things like
+vegetation indices to characterize crop
+[SPEAKER_03]: response and other things.
+[SPEAKER_03]: And then elevation data, such as like,
+you know, slope elevation aspect.
+[SPEAKER_03]: I'm going to calculate things like terrain
+ruggedness index.
+[SPEAKER_03]: And all this is from the USGS's 3D
+elevation program.
+[SPEAKER_03]: One meter is a lot better.
+[SPEAKER_03]: Better for infield usage, but there are
+some strips where it's missing.
+[SPEAKER_03]: 10 meter covers the whole country.
+[SPEAKER_03]: So where one meter is not available,
+I'm using 10 meter.
+[SPEAKER_03]: And here's a quick overview of the user
+interface for the website.
+[SPEAKER_03]: This is what people will be interacting
+with.
+[SPEAKER_03]: I wanted to make it really easy to use.
+[SPEAKER_03]: The website also supports user profiles.
+[SPEAKER_03]: So you have to authenticate.
+[SPEAKER_03]: You can granularly say you can access
+this, but not this.
+[SPEAKER_03]: You can assign users to roles,
+say like, you know, internal lab versus
+[SPEAKER_03]: once I make this public, say like farmers
+so we can control what people access to
+[SPEAKER_03]: and deliver relevant information while
+protecting data privacy.
+[SPEAKER_03]: So once someone's logged in, you pick what
+product you want.
+[SPEAKER_03]: You can pick active only.
+[SPEAKER_03]: So when I implement the functionality for
+Solus, I'm going to disable Polaris,
+[SPEAKER_03]: but if somebody wants that, they can
+uncheck that box and get Polaris.
+[SPEAKER_03]: You pick what bands you want from the
+data.
+[SPEAKER_03]: It all comes in as a multi-band roster.
+[SPEAKER_03]: So you say, OK, I want precipitation,
+whatever, whatever.
+[SPEAKER_03]: And here's a completed form.
+[SPEAKER_03]: You can add things like file prefixes to
+help organize your data when it comes in.
+[SPEAKER_03]: Also, I'm storing metadata about this in a
+database.
+[SPEAKER_03]: So you can put form name, field name,
+project name.
+[SPEAKER_03]: And then depending on what product you
+pick, you enter relevant search criteria,
+[SPEAKER_03]: such as a start date, end date.
+[SPEAKER_03]: You can paste in your area of interest,
+like a field boundary.
+[SPEAKER_03]: You can also upload a file, like a shape
+file, geopackage, GeoJSON, lots of other
+[SPEAKER_03]: formats.
+[SPEAKER_03]: And then the system will extract that for
+you.
+[SPEAKER_03]: Then you click Submit Download Request.
+[SPEAKER_03]: What that does is hits the Python back
+end, which initiates the data transfer and
+[SPEAKER_03]: collection from Google Earth Engine.
+[SPEAKER_03]: If you want to clip it to the area of
+interest, it will do that.
+[SPEAKER_03]: Basic geospatial processing, you can
+generate vegetation indices.
+[SPEAKER_03]: So that way, if you want NDVI,
+you can pull that.
+[SPEAKER_03]: And this is the overview of the system.
+[SPEAKER_03]: I could talk a lot more about this,
+but I have 24 or 25 minutes.
+[SPEAKER_03]: How I'm going to evaluate this is
+basically if it works as designed,
+[SPEAKER_03]: or all the requested data products
+retrieved for the correct ranges,
+[SPEAKER_03]: areas, or the metadata stored correctly.
+[SPEAKER_03]: Is it download like sent?
+[SPEAKER_03]: One thing I forgot to say is right now,
+if you're in our lab, we're going to store
+[SPEAKER_03]: the data and index in the database.
+[SPEAKER_03]: So we can do spatial searches,
+metadata searches to retrieve it.
+[SPEAKER_03]: If you're an external user, you're going
+to get a link to download the data,
+[SPEAKER_03]: and it'll stay there for 48 hours,
+after which it's deleted to conserve
+[SPEAKER_03]: resources.
+[SPEAKER_03]: But I want to make sure that works.
+[SPEAKER_03]: And we've used this in a 23-field year
+experiment to pull the data.
+[SPEAKER_03]: Everything works.
+[SPEAKER_03]: Since then, I've added a couple of
+additional features I need to go through
+[SPEAKER_03]: and test.
+[SPEAKER_03]: But the plan is to run everything again
+for like 20 fields for a growing season,
+[SPEAKER_03]: check everything, make sure it works.
+[SPEAKER_03]: If that's good, this objective is good.
+[SPEAKER_03]: Next objective is to develop a spatial
+temporal anomaly detection system I call
+[SPEAKER_03]: STADS, and that's to detect areas of
+anomalous crop response at subfield
+[SPEAKER_03]: scales.
+[SPEAKER_03]: And why this is important is because if
+you're designing an experiment or
+[SPEAKER_03]: interpreting results and say you have a
+strip where it's like a really anomalously
+[SPEAKER_03]: bad area and you aren't aware of that,
+it can like skew your results.
+[SPEAKER_03]: So very briefly, how this system works in
+detecting the anomalies is I have a group
+[SPEAKER_03]: of field boundaries that some crop
+scouting firms were kind enough to
+[SPEAKER_03]: provide.
+[SPEAKER_03]: We filter using the USDA cropland data
+layer to find right now corn fields.
+[SPEAKER_03]: If I can't get enough data for the
+scouting to evaluate this, I'm going to
+[SPEAKER_03]: expand to like soybean and wheat maybe.
+[SPEAKER_03]: And then from there, we have the grain
+fields.
+[SPEAKER_03]: I'm clustering based upon soil,
+weather, and terrain characteristics.
+[SPEAKER_03]: So, you know, I want to compare anomalies
+from things that are roughly similar to
+[SPEAKER_03]: where, you know, it's accurate.
+[SPEAKER_03]: From there, I'm generating a trend surface
+using a combination of random forests,
+[SPEAKER_03]: and then I do regression treatment on the
+residuals to improve the accuracy of the
+[SPEAKER_03]: trend surface for NDVI.
+[SPEAKER_03]: And how I'm doing that, I'm pulling each
+one of these, pointing like you can see,
+[SPEAKER_03]: one of all of these data products at,
+you know, a 30 meter grid point by point
+[SPEAKER_03]: by point.
+[SPEAKER_03]: Right now, I'm doing 100 meter,
+but I'm going to reduce it to increase
+[SPEAKER_03]: spatial resolution.
+[SPEAKER_03]: And making a trend surface from there,
+where then it, you know, predicts what it
+[SPEAKER_03]: should be given ABCD, you know.
+[SPEAKER_03]: And then from there, I'm checking the
+actual NDVI and calculating a residual.
+[SPEAKER_03]: So any residuals that are beyond a certain
+threshold, right now I'm using 1.5
+[SPEAKER_03]: standard deviations, plus or minus,
+will be identified as anomalous,
+[SPEAKER_03]: you know.
+[SPEAKER_03]: And if it's below what it should be,
+that's negative deviance.
+[SPEAKER_03]: If it's above, it's positive deviance.
+[SPEAKER_03]: You know, things I need to figure out or
+like evaluate other trend surface
+[SPEAKER_03]: production methods, so I'm going to do
+like a generalized additive model with
+[SPEAKER_03]: regression tree again.
+[SPEAKER_03]: And I may do, it's called BART,
+it's Bayesian Additive Regression Trees,
+[SPEAKER_03]: which is kind of like a random forest that
+includes like confidence intervals,
+[SPEAKER_03]: which would produce kind of more like
+certainty.
+[SPEAKER_03]: So I need to evaluate that, figure out
+what makes the most accurate trend
+[SPEAKER_03]: surfaces, and then play with the threshold
+to fine tune the system to identify things
+[SPEAKER_03]: better.
+[SPEAKER_03]: So that's how that works.
+[SPEAKER_03]: Here's some example.
+[SPEAKER_03]: Output of the prototype I have now.
+[SPEAKER_03]: Red areas were identified as being
+anomalously low NDVI versus what the
+[SPEAKER_03]: prediction surface said.
+[SPEAKER_03]: This is at 30 meter spatial resolution.
+[SPEAKER_03]: You can kind of see the square size.
+[SPEAKER_03]: And this is a good balance between
+computational efficiency and allowing the
+[SPEAKER_03]: farmers to manage it effectively.
+[SPEAKER_03]: So these two in green were kind of good.
+[SPEAKER_03]: They're within the field.
+[SPEAKER_03]: You know, they'll be something we would
+scout and evaluate.
+[SPEAKER_03]: But I need to find two in the system
+because things like this, you know,
+[SPEAKER_03]: the building is going to have anomalously
+low crop response because it's a building.
+[SPEAKER_03]: So I need to be able to detect these
+objects in fields and say this isn't a
+[SPEAKER_03]: crop, you know, exclude this.
+[SPEAKER_03]: And another thing which is going to be
+easier to fix is this strip here.
+[SPEAKER_03]: I think it's due to mixed pixel effect
+because the border of the field always
+[SPEAKER_03]: isn't exactly aligned with the field
+boundary.
+[SPEAKER_03]: So we're getting some kind of mixed effect
+from the headland in the field,
+[SPEAKER_03]: which is then negatively skewing that
+down.
+[SPEAKER_03]: So what I'm going to do for this is just
+buffer in by like 30 meters to make sure
+[SPEAKER_03]: that all of the pixels we evaluate are
+like pure pixels for the field.
+[SPEAKER_03]: And then the temporal aspect of this
+system is for every overpass where we can
+[SPEAKER_03]: get NDVI, I'm going to do the same process
+and then uniquely identify each anomaly.
+[SPEAKER_03]: So based upon whether it's new,
+stable, growing, shrinking, by looking at
+[SPEAKER_03]: the area, things like ratio of perimeter
+to area, we can tell if the shape's
+[SPEAKER_03]: changing.
+[SPEAKER_03]: That'll give us insights as to the cause,
+you know.
+[SPEAKER_03]: And this isn't causality where we can say
+this is definitively the cause,
+[SPEAKER_03]: but based upon agronomic knowledge,
+we can kind of say, well, if this anomaly
+[SPEAKER_03]: is persistent, it's probably something
+that's persistent, like a soil property
+[SPEAKER_03]: or, you know, just a block of concrete in
+the field that we can't detect from remote
+[SPEAKER_03]: sensing.
+[SPEAKER_03]: Whereas if it's small and starts to grow,
+it's probably something like a pest or a
+[SPEAKER_03]: disease.
+[SPEAKER_03]: Or if it's transient, you know,
+when it's dry and then it rains and it
+[SPEAKER_03]: goes away, it's probably like the soil
+moisture capacity is reduced there for
+[SPEAKER_03]: some reason.
+[SPEAKER_03]: So using this, I think we can then target
+more like focused research and scouting to
+[SPEAKER_03]: really determine causality.
+[SPEAKER_03]: But in the short term, we can say,
+OK, well, this is an anomalous area.
+[SPEAKER_03]: We're not going to put our trial right
+here.
+[SPEAKER_03]: Or like we can account for some
+uncertainty in our result interpretation
+[SPEAKER_03]: because this included an anomalous area.
+[SPEAKER_03]: So how am I going to evaluate this?
+[SPEAKER_03]: This summer, partnering with some crop
+scouting firms right now, Western New York
+[SPEAKER_03]: Crop Management Associates, maybe a couple
+others.
+[SPEAKER_03]: The plan is to have them go scout 100
+areas identified as being anomalous and
+[SPEAKER_03]: just look and see, you know, like look at
+the plants, see if they're like really
+[SPEAKER_03]: worse or better, and then look for things
+like pest disease, weed pressure,
+[SPEAKER_03]: lodging, nutrient status, soil moisture,
+notable weeds.
+[SPEAKER_03]: Now, soil moisture, you know, when they go
+through the field, they go kind of
+[SPEAKER_03]: quickly.
+[SPEAKER_03]: So it'll be like, is it standing water?
+[SPEAKER_03]: Is it muddy?
+[SPEAKER_03]: Is it very dry?
+[SPEAKER_03]: Is it, you know, anything really visible?
+[SPEAKER_03]: We're not pulling like a probe or
+anything.
+[SPEAKER_03]: And then just do like, you know,
+paired sampling 10 meters in the anomaly,
+[SPEAKER_03]: 10 meters outside of the anomaly.
+[SPEAKER_03]: So we can kind of compare and see,
+well, you know, the field should be more
+[SPEAKER_03]: or less the same in this small area.
+[SPEAKER_03]: We can see if this is like an actual
+anomaly or just an artifact of the system.
+[SPEAKER_03]: And if, you know, I think if I get over
+like 70%, I'll say this was successful.
+[SPEAKER_03]: The system was able to detect things.
+[SPEAKER_03]: And I think as I go through and fine tune
+it, detection and resolution will kind of
+[SPEAKER_03]: increase.
+[SPEAKER_03]: So the last objective is to demonstrate
+that, you know, using these observational
+[SPEAKER_03]: techniques aided by the tools I've
+developed can improve kind of result
+[SPEAKER_03]: interpretation by doing a comparative
+analysis of correlation between soil
+[SPEAKER_03]: health and yield, which is a commonly
+accepted thing.
+[SPEAKER_03]: We know this is true.
+[SPEAKER_03]: Harold and Joseph were kind enough to let
+me use their awesome production
+[SPEAKER_03]: environment soil health data, which they
+go and pull and get like a lot of soil
+[SPEAKER_03]: properties and come up with a soil health
+score.
+[SPEAKER_03]: We're going to get the yield data from
+cooperator farmers and agronomic firms.
+[SPEAKER_03]: Right now, we have an overlap of about 161
+fields where they have data and we have
+[SPEAKER_03]: the boundaries.
+[SPEAKER_03]: I'm hoping to increase that a bit.
+[SPEAKER_03]: But even if we get like half, I think
+that'll be a good representative sample to
+[SPEAKER_03]: show the utility of this.
+[SPEAKER_03]: And then it's kind of a simple analysis,
+but there aren't as many confounding
+[SPEAKER_03]: factors.
+[SPEAKER_03]: So we can show really like using this
+context to increase strength of result
+[SPEAKER_03]: interpretation, account for some
+uncertainty.
+[SPEAKER_03]: And I'm going to do this with her without
+anomalies.
+[SPEAKER_03]: The experimental design, I'm going to
+segment all of the fields into four
+[SPEAKER_03]: groups.
+[SPEAKER_03]: One will be all the fields with and
+without anomalies.
+[SPEAKER_03]: So just like raw data like we would do
+without any context.
+[SPEAKER_03]: Next will be the ones where the status
+system didn't identify any anomalous
+[SPEAKER_03]: areas.
+[SPEAKER_03]: Then fields with lower percentage of
+anomalous areas and larger.
+[SPEAKER_03]: How I'm going to determine this is
+[SPEAKER_03]: I'm going to do a grid search and just
+evaluate what percentage of anomalous area
+[SPEAKER_03]: has strongest correlation.
+[SPEAKER_03]: This provides kind of a more granular
+evaluation than doing something like
+[SPEAKER_03]: quantiles where I don't know how much area
+is going to be anomalous.
+[SPEAKER_03]: You know, I don't know how that's going to
+fall.
+[SPEAKER_03]: So this, I think, lets me get a better
+idea of what I should use and then
+[SPEAKER_03]: evaluate the correlation strength as
+calculated by Pearson's R between the soil
+[SPEAKER_03]: health score and the yield per acre.
+[SPEAKER_03]: And my thoughts, and this will be
+hopefully it works out, that fields with
+[SPEAKER_03]: no anomalies will have a stronger
+correlation versus those with smaller
+[SPEAKER_03]: versus larger.
+[SPEAKER_03]: And then the ones all fields should fall
+somewhere in there.
+[SPEAKER_03]: So my evaluation is like, OK, if the
+fields with no anomalies have a strong
+[SPEAKER_03]: correlation, then we're accounting for
+this.
+[SPEAKER_03]: It's strengthening result interpretation.
+[SPEAKER_03]: And we're good.
+[SPEAKER_03]: And also, I want to demonstrate that we
+can do this at scale.
+[SPEAKER_03]: And people can use this to do other
+things.
+[SPEAKER_03]: Such as variety trials.
+[SPEAKER_03]: You can use this context to do that.
+[SPEAKER_03]: You can plan scouting operations.
+[SPEAKER_03]: You can do lots of other good things.
+[SPEAKER_03]: Anything that's spatial, I think,
+can benefit from this technology.
+[SPEAKER_03]: So in closing, I forgot to reset the
+timer.
+[SPEAKER_03]: I don't know how much time I have left.
+[SPEAKER_03]: But I'd like to thank everyone here for
+coming to watch me on the wrong day and a
+[SPEAKER_03]: different time, especially Louis and my
+committee.
+[SPEAKER_03]: David, Diana for helping me really
+strengthen my scientific knowledge.
+[SPEAKER_03]: My family for moving across the country
+with me so I could do this.
+[SPEAKER_03]: Everyone in Farmers Data Lab.
+[SPEAKER_03]: Alex, Katie, Amkar.
+[SPEAKER_03]: It's been awesome working with all of you.
+[SPEAKER_03]: Everybody in Dan's lab for giving me baked
+goods and smiles and encouraging me.
+[SPEAKER_03]: And then Western New York Crop Manager
+Associates, especially Avery DeGarler for
+[SPEAKER_03]: working with me to get data and give me
+feedback on my products.
+[SPEAKER_03]: New York Soil Health Lab.
+[SPEAKER_03]: Harold, Joseph, Sita for funding.
+[SPEAKER_03]: Some work.
+[SPEAKER_03]: People in computer science for helping me
+figure some stuff out.
+[SPEAKER_03]: Everybody on 10th floor.
+[SPEAKER_03]: Bradfield from bringing light to
+Bradfield.
+[SPEAKER_03]: And all of you for coming to watch me.
+[SPEAKER_03]: So thanks.
+[SPEAKER_03]: And I don't know how much time I have
+left.
+[SPEAKER_03]: But I'll take a few questions now.
+[SPEAKER_02]: Do we have some time?
+[SPEAKER_02]: A couple of minutes by question.
+[SPEAKER_02]: Phil?
+[SPEAKER_02]: Yeah.
+[SPEAKER_02]: What do you think you're missing in the
+data stack that you're developing?
+[SPEAKER_02]: What are the limits of the data products
+that you have?
+[SPEAKER_02]: And what do you wish you had?
+[SPEAKER_02]: I wish I had more consistent management
+data.
+[SPEAKER_03]: That's hugely important.
+[SPEAKER_03]: We're working on another way to collect
+that.
+[SPEAKER_03]: Kind of like a web form.
+[SPEAKER_03]: But that's, I'd say, hugely impactful on
+what happens.
+[SPEAKER_03]: Also, variety and things like that.
+[SPEAKER_02]: Got an idea for you.
+[SPEAKER_01]: Great talk.
+[SPEAKER_01]: I was wondering with the GeoDART,
+as you're developing this, for use by
+[SPEAKER_01]: these farmers, what is your process for
+making sure that what you're developing
+[SPEAKER_01]: will be useful for them?
+[SPEAKER_01]: How are you engaging them in dialogue
+about the product that you're developing?
+[SPEAKER_03]: Sure, sure.
+[SPEAKER_03]: Right now, it's tailored for researchers.
+[SPEAKER_03]: Future work.
+[SPEAKER_03]: What I want to do is put an analytics
+engine on top of it so they can say,
+[SPEAKER_03]: OK, I want to get crop response.
+[SPEAKER_03]: Driving development for researchers.
+[SPEAKER_03]: I'm a researcher.
+[SPEAKER_03]: I know it works.
+[SPEAKER_03]: We've talked to people in the lab.
+[SPEAKER_03]: And try to make it easy for us.
+[SPEAKER_03]: But also, over the past couple of years,
+we've gone out and interviewed farmers
+[SPEAKER_03]: about what sort of products they use.
+[SPEAKER_03]: How do they get their data?
+[SPEAKER_03]: What would ease their pain points?
+[SPEAKER_03]: So in-person communication.
+[SPEAKER_03]: I think maybe a more formalized study of
+use case analysis might be useful.
+[SPEAKER_03]: Certainly, if I want to commercialize it.
+[SPEAKER_03]: But right now, at least to get started,
+I want to make it for researchers so we
+[SPEAKER_03]: can use this easier.
+[SPEAKER_03]: Great.
+[SPEAKER_02]: Thanks, our speaker.
+[SPEAKER_03]: Thanks.
+[SPEAKER_00]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_00]: Thank you.
+[SPEAKER_00]: Thank you.
+Thank you.

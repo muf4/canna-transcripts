@@ -1,0 +1,128 @@
+1
+00:00:00,450 --> 00:00:04,890
+Hello, my name is Schuyler Smith, and I do technical sales support here at Apogee Instruments.
+
+2
+00:00:04,889 --> 00:00:10,878
+And today we’re going to talk about how to connect the SP-214-SS pyranometer to the SMA cluster controller,
+
+3
+00:00:10,945 --> 00:00:15,192
+a very popular controller among commercial solar applications.
+
+4
+00:00:15,192 --> 00:00:20,463
+The SP-214-SS is our 4 to 20 mA pyranometer output.
+
+5
+00:00:20,463 --> 00:00:26,896
+And so, the first thing to note in this video, is that for serial numbers 9898 or higher—
+
+6
+00:00:26,896 --> 00:00:31,303
+and you can determine that by looking at the white label next to your pyranometer.
+
+7
+00:00:31,303 --> 00:00:40,337
+If your sensor looks like this, where it has the old tailboard like this, and its serial number is below 9898,
+
+8
+00:00:40,337 --> 00:00:46,280
+that is on a different video and you can find that on our website www.apogeeinstruments.com.
+
+9
+00:00:47,023 --> 00:00:57,674
+So the first thing to note when you’re getting ready to wire up the sensor is the distance from your power supply right here to your X8 terminals over here.
+
+10
+00:00:57,673 --> 00:01:05,938
+And so if, in our case, we needed to take off some additional of the shield here of the outer jacket.
+
+11
+00:01:05,938 --> 00:01:11,938
+And so we went ahead and took off about 8 more inches because it comes with 8 inches already.
+
+12
+00:01:11,938 --> 00:01:19,715
+So once we did that, then we went ahead and wired up our red and our black, right here, to our screw-in terminals.
+
+13
+00:01:19,715 --> 00:01:22,573
+Red into positive. Black into negative.
+
+14
+00:01:22,572 --> 00:01:26,921
+Then the next thing we did is we had to take a jumper wire,
+
+15
+00:01:26,921 --> 00:01:35,424
+and we went from the negative of the power supply over here to A3 on the X8 terminal.
+
+16
+00:01:35,929 --> 00:01:42,200
+And then we take our white signal output and we run that into the A2 terminal.
+
+17
+00:01:42,200 --> 00:01:45,900
+And then we took a shield and run that into A4.
+
+18
+00:01:45,900 --> 00:01:47,765
+And that’s how you wire it up!
+
+19
+00:01:47,765 --> 00:01:58,647
+To check and verify that that’s wired up correctly, you can push down on the controller until you see analog current input.
+
+20
+00:01:58,647 --> 00:02:06,318
+In our example, you can see it says 4.01 mA, which with our studio lights is what we would expect in here.
+
+21
+00:02:06,393 --> 00:02:12,979
+Then if we push down two more times, we see that it says Insolation at 1 W per m².
+
+22
+00:02:12,979 --> 00:02:17,635
+So the last thing you need to do is you do need to set up that Insolation curve.
+
+23
+00:02:17,635 --> 00:02:22,300
+And you do that through the user interface where you connect this to your computer.
+
+24
+00:02:22,300 --> 00:02:27,548
+And once you’re in that user interface, then you go to the Meteorology section,
+
+25
+00:02:27,549 --> 00:02:32,165
+and then you click on environmental, and then you click on irradiance sensor.
+
+26
+00:02:32,165 --> 00:02:37,012
+And you change the range to be from 0 to 2000 W per m².
+
+27
+00:02:37,013 --> 00:02:43,049
+And then again it’s a 4 to 20 mA sensor and so you change that there as well.
+
+28
+00:02:43,049 --> 00:02:48,540
+That concludes how to wire up the SP-214 to the SMA cluster controller.
+
+29
+00:02:48,540 --> 00:02:56,252
+Be sure to watch our other video on the PV-100, which explains how to connect the ambient air temperature sensor,
+
+30
+00:02:56,252 --> 00:03:00,913
+as well as the back of panel temperature sensor, to the SMA cluster controller.
+
+31
+00:03:00,913 --> 00:03:02,358
+Thanks for watching!
+
+32
+00:03:02,359 --> 00:03:02,859
+[ ♪ Outro music ♪ ]
+

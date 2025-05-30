@@ -1,0 +1,524 @@
+[SPEAKER_00]: Hello everyone, thank you very much.
+[SPEAKER_00]: So, making CBD a drug.
+[SPEAKER_00]: That's what I was going to talk about in
+2020 and I'm really sorry to do the bait
+[SPEAKER_00]: and switch on you.
+[SPEAKER_00]: We were really looking forward to do that
+project but a few things came up and this
+[SPEAKER_00]: is what we're going to be talking about
+today.
+[SPEAKER_00]: So, yeah, 2022.
+[SPEAKER_00]: Thank goodness.
+[SPEAKER_00]: So, first about who we are.
+[SPEAKER_00]: We're Delic Labs.
+[SPEAKER_00]: We're a contract research organisation.
+[SPEAKER_00]: We prize collaboration with everyone we
+can.
+[SPEAKER_00]: We want to try and bring as much of the
+scientific method as possible to counter
+[SPEAKER_00]: this.
+[SPEAKER_00]: We want to try and make information more
+widely available.
+[SPEAKER_00]: We do a lot of collaboration with the
+University of British Columbia.
+[SPEAKER_00]: We're actually based on campus-ish.
+[SPEAKER_00]: So, we've got access to a lot of
+instrumentation that a regular lab just
+[SPEAKER_00]: simply cannot afford through our industry
+collaborations.
+[SPEAKER_00]: But we also like to do a lot of
+collaborations with other people in the
+[SPEAKER_00]: cannabis space.
+[SPEAKER_00]: Monica and Linda are two examples of that.
+[SPEAKER_00]: So, our research topics are chemistry.
+[SPEAKER_00]: We're a bunch of chemistry nerds who
+that's what makes us happy.
+[SPEAKER_00]: That's what we do.
+[SPEAKER_00]: I'm the comp guy.
+[SPEAKER_00]: My background is computational medicinal
+chemistry.
+[SPEAKER_00]: So, drug design and molecular modelling.
+[SPEAKER_00]: And I'm sort of on board as data and that
+side of things.
+[SPEAKER_00]: The rest of them are very interested in
+organic synthetic chemistry, analytical
+[SPEAKER_00]: chemistry and those sorts of things.
+[SPEAKER_00]: What we work on is anything that is a
+biomolecule and is regulated.
+[SPEAKER_00]: That's what gets us off.
+[SPEAKER_00]: So, we're lucky enough in Canada that we
+have what's called a Section 4554.
+[SPEAKER_00]: Oh, God, my dyslexia is kicking in.
+[SPEAKER_00]: I think it's Section 54, which is an
+exemption to do psychedelic research.
+[SPEAKER_00]: So, we can work with a whole range of
+interesting biomolecules.
+[SPEAKER_00]: We're doing some DMT stuff, some
+psilocybin.
+[SPEAKER_00]: Some psilocin and those sorts of things.
+[SPEAKER_00]: But today I'm going to talk about a client
+project we did.
+[SPEAKER_00]: Our client, unfortunately I can't talk as
+much about this as I would like to.
+[SPEAKER_00]: I can say our client was a multinational.
+[SPEAKER_00]: We were trying to develop an enhanced CBD
+vape.
+[SPEAKER_00]: And what they engaged us to do was a
+virtual ligand screening.
+[SPEAKER_00]: So, we're screening potential molecules in
+computer simulations to try and reduce
+[SPEAKER_00]: their in vitro and their in vivo load.
+[SPEAKER_00]: So, again, I really wish I could talk more
+about this, but I really can't.
+[SPEAKER_00]: All I can say is that we were looking for
+terpenes that are expressed in cannabis
+[SPEAKER_00]: and we're looking for agonism at the
+Gaboray receptor.
+[SPEAKER_00]: And we're looking for the CNS GABA.
+[SPEAKER_00]: So, the medics can probably have a little
+bit of a guess what we might be trying to
+[SPEAKER_00]: do there.
+[SPEAKER_00]: So, first I want to talk about virtual
+screening.
+[SPEAKER_00]: So, this is the process that you would go
+through to determine how you're going to
+[SPEAKER_00]: do your virtual screens.
+[SPEAKER_00]: So, the first question is what do you know
+about the protein of interest?
+[SPEAKER_00]: Do you have any structural information?
+[SPEAKER_00]: Do you just have a sequence?
+[SPEAKER_00]: In our case, we actually had some protein
+structural information.
+[SPEAKER_00]: There are crystal structures of the GABA
+receptor.
+[SPEAKER_00]: So, that means we can go along and do some
+docking, which is just in silico placing
+[SPEAKER_00]: ligands on the protein and seeing where
+they interact.
+[SPEAKER_00]: And then from there, that may even answer
+some of your questions.
+[SPEAKER_00]: And there are other routes you can go
+after that, which I'll take you through as
+[SPEAKER_00]: we go.
+[SPEAKER_00]: So, what was the plan?
+[SPEAKER_00]: Well, the first step was to have a look at
+the existing crystal structures.
+[SPEAKER_00]: See where the current molecules were
+interacting.
+[SPEAKER_00]: Seeing how we could see if we can find out
+how a terpene might bind in those same
+[SPEAKER_00]: pockets.
+[SPEAKER_00]: Compare any of the ligands and to those
+native crystal structures.
+[SPEAKER_00]: And then let's just see if we can jam some
+ligands in there and see if they're happy.
+[SPEAKER_00]: Oh, I should point out, ligands in this
+case really just means small molecules.
+[SPEAKER_00]: It's a throwback to inorganic chemistry
+where you're chelating to a metal.
+[SPEAKER_00]: The inorganic chemists hate us molecular
+modelers using this, but at least we don't
+[SPEAKER_00]: call them ligands.
+[SPEAKER_00]: So, a little bit about GABA, the receptor,
+the ion channel.
+[SPEAKER_00]: The endogenous ligand is GABA aminobutyric
+acid.
+[SPEAKER_00]: It's a really common neuro-signaler.
+[SPEAKER_00]: It's found throughout the body.
+[SPEAKER_00]: There are multiple subtypes.
+[SPEAKER_00]: Each comprised, each of the subunits have
+different types.
+[SPEAKER_00]: And then the subtypes are comprised of
+different versions.
+[SPEAKER_00]: I'll give you a little idea.
+[SPEAKER_00]: It's quite a complex protein structure.
+[SPEAKER_00]: So, there are these five protein subunits
+that all come together to make a
+[SPEAKER_00]: transmembrane pore.
+[SPEAKER_00]: It's an ion channel.
+[SPEAKER_00]: So, what it does is it depolarizes
+synapses, which is an inhibitory
+[SPEAKER_00]: mechanism.
+[SPEAKER_00]: It calms you down a little bit.
+[SPEAKER_00]: The important thing is this picture down
+the bottom.
+[SPEAKER_00]: What you see here is that there are two
+GABA sites and there is another one there
+[SPEAKER_00]: that is labeled the benzodiazepine site.
+[SPEAKER_00]: So, that was the site that we were
+targeting.
+[SPEAKER_00]: That's where we wanted to interact.
+[SPEAKER_00]: And it's been shown that it sort of acts
+as an allosteric modulator.
+[SPEAKER_00]: So, it doesn't make the channel turn on by
+stimulating that site at all, but it does
+[SPEAKER_00]: potentiate GABA's effect on that receptor.
+[SPEAKER_00]: And the other thing to note is that all of
+these sites are at the interface of the
+[SPEAKER_00]: two proteins.
+[SPEAKER_00]: So, you really need to be studying the
+complex as a whole.
+[SPEAKER_00]: You can't just look at one of the
+subunits.
+[SPEAKER_00]: Right.
+[SPEAKER_00]: So, now we went on and did some literature
+research before I jumped into the project.
+[SPEAKER_00]: And what we found is that there is limited
+evidence of terpenes interacting with GABA
+[SPEAKER_00]: and having an agonist effect, which is
+pretty cool.
+[SPEAKER_00]: So, there's some good news at the
+beginning.
+[SPEAKER_00]: And there's a whole lot of pharmaceuticals
+that are well known to interact with GABA.
+[SPEAKER_00]: So, great.
+[SPEAKER_00]: Awesome.
+[SPEAKER_00]: There's some crystal structures out there.
+[SPEAKER_00]: What I found very quickly is that the
+quality of those crystal structures varies
+[SPEAKER_00]: hugely.
+[SPEAKER_00]: Because GABA is such a complicated protein
+and it's membrane bound, the only way you
+[SPEAKER_00]: can really get it to crystallize well is
+by using some pretty unrepresentative
+[SPEAKER_00]: physiological conditions.
+[SPEAKER_00]: You end up throwing a lot of detergent in
+there to get it to actually crystallize.
+[SPEAKER_00]: And what that means is that the
+conformations get distorted.
+[SPEAKER_00]: And you end up with a structure that's not
+particularly representative.
+[SPEAKER_00]: Classically, it's down in the
+transmembrane domain that they actually
+[SPEAKER_00]: collapse on the core.
+[SPEAKER_00]: And you get some rotations and some
+twists.
+[SPEAKER_00]: That turned out to be a little bit of a
+problem.
+[SPEAKER_00]: I'll get to that later.
+[SPEAKER_00]: But the gist is that it's thought that CBD
+does activate GABA.
+[SPEAKER_00]: And we were interested in looking at CBD
+at GABA as well.
+[SPEAKER_00]: But it's thought that GABA doesn't
+actually, sorry, CBD doesn't actually bind
+[SPEAKER_00]: at the benzodiazepine site.
+[SPEAKER_00]: It binds down in the transmembrane domain
+on a cleft on those proteins down there.
+[SPEAKER_00]: And since that area is heavily distressed,
+distorted in the crystal structures,
+[SPEAKER_00]: it makes it much harder to model.
+[SPEAKER_00]: So up here, we're looking at the
+benzodiazepine site here.
+[SPEAKER_00]: So we've got the two different crystal
+structures here.
+[SPEAKER_00]: We have 6-HUO and 6-DT5, I believe.
+[SPEAKER_00]: In green, you can see the 6-D6-5
+structure.
+[SPEAKER_00]: And where I've got that red arrow,
+I'm showing that the two structures are
+[SPEAKER_00]: quite distorted in comparison.
+[SPEAKER_00]: The white ribbon basically means it's
+forming a beta sheet.
+[SPEAKER_00]: That's the sort of structure you'd be
+expecting.
+[SPEAKER_00]: The green wiggly lines represent loop
+structures, which are normal in a protein.
+[SPEAKER_00]: You do expect to see loops.
+[SPEAKER_00]: You just don't expect to see them there.
+[SPEAKER_00]: So what that's showing is that in the
+process of crystallizing, that structure
+[SPEAKER_00]: has been distorted.
+[SPEAKER_00]: Right, so on to the in vitro data.
+[SPEAKER_00]: So like I said, people use
+benzodiazepines.
+[SPEAKER_00]: They know they work.
+[SPEAKER_00]: That's awesome, great.
+[SPEAKER_00]: Woo, yay.
+[SPEAKER_00]: However, most of those were developed a
+long, long, long time ago.
+[SPEAKER_00]: And what they did is they just stuck them
+in humans until they saw it working.
+[SPEAKER_00]: And they went, great, it's the dose.
+[SPEAKER_00]: There's not easy to find out how strongly
+a compound binds to GABA alone.
+[SPEAKER_00]: You can't really just isolate GABA,
+stick a molecule, on it, find out what
+[SPEAKER_00]: concentration it is actually binding at.
+[SPEAKER_00]: Most of these assays are done through
+patch clamps, which is where you express
+[SPEAKER_00]: the receptor.
+[SPEAKER_00]: And I believe it's a frog ovary.
+[SPEAKER_00]: And then you run a voltage across it.
+[SPEAKER_00]: And then you're looking for the calcium
+transmission.
+[SPEAKER_00]: So what you're actually doing is a
+functional assay.
+[SPEAKER_00]: You're not really doing a binding assay.
+[SPEAKER_00]: You're not really seeing.
+[SPEAKER_00]: Because you can't do a classic washout
+assay here.
+[SPEAKER_00]: So I tried the literature.
+[SPEAKER_00]: And I found a whole range of different
+values.
+[SPEAKER_00]: I didn't find any binding data at all.
+[SPEAKER_00]: I found some IC50 data, which was
+confusing, because it's not inhibitory.
+[SPEAKER_00]: So I don't know why it was labeled IC50.
+[SPEAKER_00]: I found some EC50, which is what I was
+expecting.
+[SPEAKER_00]: However, the numbers I'm showing here are
+averages.
+[SPEAKER_00]: And they differed by orders of magnitude.
+[SPEAKER_00]: So that was a problem.
+[SPEAKER_00]: But we're brave.
+[SPEAKER_00]: We're going to push on anyway.
+[SPEAKER_00]: Because they're paying us.
+[SPEAKER_00]: So we're going to do it.
+[SPEAKER_00]: So I thought, right, well, the first thing
+to do is we know linalool works.
+[SPEAKER_00]: So let's dock linalool.
+[SPEAKER_00]: And sure enough, that's actually the GABA
+site.
+[SPEAKER_00]: And linalool, in green, lies beautifully
+on top of GABA.
+[SPEAKER_00]: It just sits there.
+[SPEAKER_00]: And it's like, great, OK.
+[SPEAKER_00]: So it binds to GABA.
+[SPEAKER_00]: And then it bound to the benzodiazepine
+site.
+[SPEAKER_00]: And it bound to about 15 different sites.
+[SPEAKER_00]: So it's like, oh, docking, right?
+[SPEAKER_00]: So I can stick.
+[SPEAKER_00]: I can select anywhere on the protein.
+[SPEAKER_00]: And I can dock linalool to it.
+[SPEAKER_00]: And it's like, oh, dear.
+[SPEAKER_00]: So this isn't going to be selective.
+[SPEAKER_00]: So how do we actually indicate what's
+working and what's not?
+[SPEAKER_00]: So we thought, right, what we really need
+is some binding energy calculations.
+[SPEAKER_00]: So this is a way of calculating how
+strongly it's docking to a particular
+[SPEAKER_00]: spot.
+[SPEAKER_00]: Like, does it actually want to be there?
+[SPEAKER_00]: And the basic gist is that there is a
+state function between freely floating
+[SPEAKER_00]: ligands and the protein.
+[SPEAKER_00]: And then they go through a transition
+state.
+[SPEAKER_00]: And then they collapse down into their
+bound conformations.
+[SPEAKER_00]: They both adapt their conformations a
+little bit.
+[SPEAKER_00]: Their lower energies change.
+[SPEAKER_00]: And if you have a favorable binding,
+you'll have a total drop in energy.
+[SPEAKER_00]: So this is molecular mechanics and
+generalized born surface area
+[SPEAKER_00]: approximation.
+[SPEAKER_00]: That's not particularly important.
+[SPEAKER_00]: All I'm here is to say is that there is a
+way of calculating this.
+[SPEAKER_00]: You can do it with a computational
+simulation.
+[SPEAKER_00]: It does neglect entropy, which is an
+important part of that equation I showed
+[SPEAKER_00]: you earlier.
+[SPEAKER_00]: The justification is that usually use a
+co-generic set of ligands.
+[SPEAKER_00]: So a whole lot of ligands that look like
+each other.
+[SPEAKER_00]: They've just got small variations in
+functional groups.
+[SPEAKER_00]: And you can assume that they all have
+similar functions.
+[SPEAKER_00]: They all have similar entropies.
+[SPEAKER_00]: So you can cancel that term out across a
+series.
+[SPEAKER_00]: I was testing a broad range of terpenes,
+which are not co-generic.
+[SPEAKER_00]: So that assumption was a little
+questionable.
+[SPEAKER_00]: So we did the work anyway, because you've
+got to see how it's working.
+[SPEAKER_00]: And these are just the control compounds.
+[SPEAKER_00]: So these are just the pharmaceutical
+compounds that we have some estimates of
+[SPEAKER_00]: their binding energy predictions.
+[SPEAKER_00]: And what you can see in the molecular
+dynamics is I actually have a negative
+[SPEAKER_00]: trend.
+[SPEAKER_00]: So I have negative correlation to the
+binding energies, which is not a great
+[SPEAKER_00]: sign.
+[SPEAKER_00]: The docking energies are so varied that
+while I do have a positive correlation,
+[SPEAKER_00]: it's not great.
+[SPEAKER_00]: In fact, if you look at the R values,
+they're basically random.
+[SPEAKER_00]: So that's not much use.
+[SPEAKER_00]: Right.
+[SPEAKER_00]: What's next?
+[SPEAKER_00]: I can still remember my chemistry lecturer
+explaining this one to me.
+[SPEAKER_00]: And yeah, all of those assumptions were
+just garbage.
+[SPEAKER_00]: So we needed to find a new way of tackling
+this problem.
+[SPEAKER_00]: Docking scores.
+[SPEAKER_00]: Docking scores are used to weight the
+confirmations that the molecules are
+[SPEAKER_00]: adapting and see which ones are favored.
+[SPEAKER_00]: It's a really good way of showing what the
+most probable confirmation is if you know
+[SPEAKER_00]: the binding site.
+[SPEAKER_00]: But they're not very good for comparing
+between molecules.
+[SPEAKER_00]: Usually they're additive.
+[SPEAKER_00]: So if a molecule has more atoms,
+it will get a higher score.
+[SPEAKER_00]: But there are ways you can game that
+system.
+[SPEAKER_00]: Ensemble docking is one of those ways.
+[SPEAKER_00]: And that's where I think it's the next
+slide.
+[SPEAKER_00]: OK, it's the next slide.
+[SPEAKER_00]: But the general gist is that you dock to a
+whole lot of different protein
+[SPEAKER_00]: confirmations.
+[SPEAKER_00]: You dock to the same site.
+[SPEAKER_00]: And what you're looking for is how does
+the binding score change as you change the
+[SPEAKER_00]: protein confirmation?
+[SPEAKER_00]: What you'd really be hoping for is that a
+ligand has the ability to adopt different
+[SPEAKER_00]: confirmations to adapt to the change in
+the binding site.
+[SPEAKER_00]: So one of the problems that we always have
+is we get presented with these beautiful
+[SPEAKER_00]: crystal structures, which is this lovely
+static model.
+[SPEAKER_00]: But the reality is they're under Brownian
+motion.
+[SPEAKER_00]: They're all vibrating.
+[SPEAKER_00]: They're all moving a little bit.
+[SPEAKER_00]: So that confirmation is adapting.
+[SPEAKER_00]: So if you have a molecule that is
+incredibly rigid, then it needs to have a
+[SPEAKER_00]: massive energy bonus to really stabilize
+that confirmation.
+[SPEAKER_00]: There are times when maybe you want
+actually a flexible ligand so it can adapt
+[SPEAKER_00]: to a whole range of protein confirmations.
+[SPEAKER_00]: But what you're really looking for there
+is that you get a nice constant score so
+[SPEAKER_00]: that even though the ligand is changing
+confirmation, that the docking score
+[SPEAKER_00]: stays.
+[SPEAKER_00]: It's consistent.
+[SPEAKER_00]: You don't want to see a wide range in
+docking scores for different protein
+[SPEAKER_00]: confirmations.
+[SPEAKER_00]: So here are three example protein
+confirmations.
+[SPEAKER_00]: So these are taken from a molecular
+dynamic simulation, which is where you're
+[SPEAKER_00]: allowing Newtonian forces to act on the
+protein.
+[SPEAKER_00]: And it's vibrating away.
+[SPEAKER_00]: You raise it to a normal temperature.
+[SPEAKER_00]: You give it natural motion.
+[SPEAKER_00]: And what you do is you take a series of
+snapshots through that trajectory.
+[SPEAKER_00]: And you get different protein
+confirmations.
+[SPEAKER_00]: Then you dock back into them.
+[SPEAKER_00]: So what I've highlighted here is three
+areas where that protein, which is close
+[SPEAKER_00]: to the ligand, the ligand is in the
+thicker sticks.
+[SPEAKER_00]: And what you're seeing there is the amino
+acid residues in the finer sticks.
+[SPEAKER_00]: In green, you have the cartoon
+representation, which is sort of the
+[SPEAKER_00]: secondary structure of the protein.
+[SPEAKER_00]: And what I'm highlighting here is the
+changes that we are seeing in that
+[SPEAKER_00]: secondary structure, which is derived from
+the changes in the confirmation of those
+[SPEAKER_00]: residues and how that has changed through
+those snapshots.
+[SPEAKER_00]: So what I ended up using was 10 snapshots
+from different simulations, which were the
+[SPEAKER_00]: lowest binding energy of the ligand in
+that simulation.
+[SPEAKER_00]: And I used it for all of the
+pharmaceutical compounds, all of the
+[SPEAKER_00]: benzodiazepine simulations that I'd run.
+[SPEAKER_00]: So I ended up docking into 40 different
+protein confirmations, which I'm going to
+[SPEAKER_00]: show you here.
+[SPEAKER_00]: So what we managed to do was from a panel
+of 200-odd terpenes that are known to be
+[SPEAKER_00]: expressed in cannabis and found in
+cannabis, we found some compounds that
+[SPEAKER_00]: were better in silico than linalool.
+[SPEAKER_00]: This project is still undergoing work.
+[SPEAKER_00]: By our partner, they have completed the in
+vitro testing.
+[SPEAKER_00]: And I believe the in vivo testing was
+scheduled to start at the end of last
+[SPEAKER_00]: year.
+[SPEAKER_00]: So it is quite possible that this product
+will be on the market soon with,
+[SPEAKER_00]: unfortunately, again, I can't say which
+terpenes.
+[SPEAKER_00]: I'm very sorry about that.
+[SPEAKER_00]: I'd like to thank the team.
+[SPEAKER_00]: This is our founders and the rest of the
+team who helped throughout the rest of
+[SPEAKER_00]: this project.
+[SPEAKER_00]: I'd like to thank you all very much for
+your attention.
+[SPEAKER_00]: And have a great day.
+[SPEAKER_00]: Any questions?
+[SPEAKER_00]: To Gabba, to where?
+[SPEAKER_00]: Oh, it's going to be in a vape.
+[SPEAKER_00]: So it's going to be inhalation.
+[SPEAKER_00]: So it'll go straight into the bloodstream.
+[SPEAKER_00]: I have no concerns about the
+bioavailability of them.
+[SPEAKER_00]: I don't think any of them are going to be
+drugs of their own right.
+[SPEAKER_00]: I don't think they're that potent.
+[SPEAKER_00]: I don't think we're looking at
+benzodiazepine replacements, for instance.
+[SPEAKER_00]: But I do think there is some value in
+giving Gabba a little bit of a nudge while
+[SPEAKER_00]: you're also delivering CBD.
+[SPEAKER_00]: I think that happens naturally with some
+of the other terpenes that are naturally
+[SPEAKER_00]: expressed.
+[SPEAKER_00]: But what I would say is that some of those
+terpenes identified in the 35 are very,
+[SPEAKER_00]: very minor terpenes in cannabis.
+[SPEAKER_00]: And what I expect is that there will be an
+artificially high level of these terpenes
+[SPEAKER_00]: delivered in this CBD product.
+[SPEAKER_00]: So we're enhancing what you could call,
+I suppose, the entourage effect.
+[SPEAKER_00]: I'm not a huge fan of that.
+[SPEAKER_00]: I don't think you need to put the 800,
+900 compounds found in cannabis all into
+[SPEAKER_00]: one particular formulation.
+[SPEAKER_00]: But I think there are definitely minor
+components that you could amp up the
+[SPEAKER_00]: concentration of and make a really
+wonderful product from.
+[SPEAKER_00]: Thank you.
+[SPEAKER_00]: Thank you.
+[SPEAKER_00]: Thank you.
+[SPEAKER_00]: Thank you.
+Thank you.
+Thank you.

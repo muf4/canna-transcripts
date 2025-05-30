@@ -1,0 +1,1848 @@
+1
+00:00:00,000 --> 00:00:04,320
+this is a production of cornell
+
+2
+00:00:01,760 --> 00:00:04,320
+university
+
+3
+00:00:07,359 --> 00:00:11,679
+um thanks everyone thanks for the
+
+4
+00:00:09,439 --> 00:00:12,239
+introduction uh just to know i am part
+
+5
+00:00:11,679 --> 00:00:15,599
+of the
+
+6
+00:00:12,240 --> 00:00:18,560
+buckler and robin's labs uh co-mentored
+
+7
+00:00:15,599 --> 00:00:20,560
+um so yeah today i'm going to talk about
+
+8
+00:00:18,559 --> 00:00:22,719
+a cassava practical haplotype graph
+
+9
+00:00:20,559 --> 00:00:23,839
+for efficient amputation and hepatitis
+
+10
+00:00:22,719 --> 00:00:27,278
+crop
+
+11
+00:00:23,839 --> 00:00:28,719
+all right okay sorry um so first i want
+
+12
+00:00:27,278 --> 00:00:29,439
+to talk about andrew's kind of what is a
+
+13
+00:00:28,719 --> 00:00:33,200
+practical
+
+14
+00:00:29,439 --> 00:00:34,960
+type graph uh it's a tool for amputation
+
+15
+00:00:33,200 --> 00:00:37,520
+to help capture genomic variants across
+
+16
+00:00:34,960 --> 00:00:40,399
+the genome with minimal sequence input
+
+17
+00:00:37,520 --> 00:00:41,600
+so that's kind of the purpose of it and
+
+18
+00:00:40,399 --> 00:00:43,200
+why would we impute
+
+19
+00:00:41,600 --> 00:00:45,600
+uh there's a lot of different reasons to
+
+20
+00:00:43,200 --> 00:00:46,239
+but some of the main ones in breeding we
+
+21
+00:00:45,600 --> 00:00:48,079
+think about
+
+22
+00:00:46,238 --> 00:00:50,878
+are kind of allowing data from different
+
+23
+00:00:48,079 --> 00:00:52,799
+genotypic sources to be used together
+
+24
+00:00:50,878 --> 00:00:54,079
+and also to kind of capture more whole
+
+25
+00:00:52,799 --> 00:00:56,839
+genome variants for
+
+26
+00:00:54,079 --> 00:00:58,719
+maybe leverage other additional uh
+
+27
+00:00:56,840 --> 00:01:01,600
+annotations
+
+28
+00:00:58,719 --> 00:01:03,920
+um so just a basic kind of layout of
+
+29
+00:01:01,600 --> 00:01:05,198
+what making a phd looks like
+
+30
+00:01:03,920 --> 00:01:08,159
+basically take some whole genome
+
+31
+00:01:05,198 --> 00:01:10,640
+sequence um sometimes in
+
+32
+00:01:08,159 --> 00:01:12,719
+assemblies extract haplotypes and
+
+33
+00:01:10,640 --> 00:01:14,719
+populate a database
+
+34
+00:01:12,719 --> 00:01:16,560
+then we take to kind of test it we take
+
+35
+00:01:14,719 --> 00:01:17,920
+some low coverage genotyping
+
+36
+00:01:16,560 --> 00:01:20,159
+pass it through the alignment of the
+
+37
+00:01:17,920 --> 00:01:24,640
+database and get out
+
+38
+00:01:20,159 --> 00:01:24,640
+basically all the haplotypes
+
+39
+00:01:25,118 --> 00:01:30,319
+so how does it work um
+
+40
+00:01:28,560 --> 00:01:32,478
+well first we break up the genome into
+
+41
+00:01:30,319 --> 00:01:33,839
+these haplotype ranges we call reference
+
+42
+00:01:32,478 --> 00:01:35,519
+ranges
+
+43
+00:01:33,840 --> 00:01:38,079
+uh we then populate the database with
+
+44
+00:01:35,519 --> 00:01:39,359
+haplotypes from some parental germplasm
+
+45
+00:01:38,078 --> 00:01:42,719
+or
+
+46
+00:01:39,359 --> 00:01:43,920
+diversity panel um and then we make a
+
+47
+00:01:42,719 --> 00:01:45,280
+trellis graph this
+
+48
+00:01:43,920 --> 00:01:47,840
+is a graph structure that kind of
+
+49
+00:01:45,280 --> 00:01:51,439
+captures the relationship between
+
+50
+00:01:47,840 --> 00:01:54,799
+adjacent haplotypes and um
+
+51
+00:01:51,438 --> 00:01:57,438
+now we have this because genome um
+
+52
+00:01:54,799 --> 00:01:59,040
+we can take maybe an un genotype taxa
+
+53
+00:01:57,438 --> 00:02:01,758
+get some reads for it
+
+54
+00:01:59,040 --> 00:02:02,399
+align it to the band genome what this is
+
+55
+00:02:01,759 --> 00:02:04,239
+gonna
+
+56
+00:02:02,399 --> 00:02:05,519
+then we're gonna use a hidden markov
+
+57
+00:02:04,239 --> 00:02:07,839
+model
+
+58
+00:02:05,519 --> 00:02:08,719
+to find the most likely path through the
+
+59
+00:02:07,840 --> 00:02:11,039
+database
+
+60
+00:02:08,719 --> 00:02:13,598
+which then gives us our haplotype for
+
+61
+00:02:11,038 --> 00:02:16,000
+that new tax cell
+
+62
+00:02:13,598 --> 00:02:17,439
+uh but it's not just that simple because
+
+63
+00:02:16,000 --> 00:02:18,400
+working in a heterozygous crop like
+
+64
+00:02:17,439 --> 00:02:19,919
+cassava
+
+65
+00:02:18,400 --> 00:02:22,400
+you have to model two copies of the
+
+66
+00:02:19,919 --> 00:02:24,719
+genome so instead we you know we line
+
+67
+00:02:22,400 --> 00:02:26,400
+the reeds but they hit multiple places
+
+68
+00:02:24,719 --> 00:02:28,719
+and we then get the two most likely
+
+69
+00:02:26,400 --> 00:02:31,280
+paths uh representing the two copies of
+
+70
+00:02:28,719 --> 00:02:31,280
+the genome
+
+71
+00:02:31,439 --> 00:02:34,959
+so first i just want to introduce kind
+
+72
+00:02:32,800 --> 00:02:37,360
+of what this looks like in simulation
+
+73
+00:02:34,959 --> 00:02:38,800
+simulations can help us kind of test our
+
+74
+00:02:37,360 --> 00:02:40,480
+methodology
+
+75
+00:02:38,800 --> 00:02:42,160
+look see what things look like under
+
+76
+00:02:40,479 --> 00:02:44,479
+ideal conditions
+
+77
+00:02:42,159 --> 00:02:45,840
+um and so the simulation i'm going to
+
+78
+00:02:44,479 --> 00:02:48,878
+show here basically take
+
+79
+00:02:45,840 --> 00:02:50,239
+20 parents these are cassava real self
+
+80
+00:02:48,878 --> 00:02:51,759
+self-clones
+
+81
+00:02:50,239 --> 00:02:54,239
+simulate five generations of random
+
+82
+00:02:51,759 --> 00:02:57,519
+mating and then i my test amputation in
+
+83
+00:02:54,239 --> 00:02:58,480
+100 offspring and so just a test
+
+84
+00:02:57,519 --> 00:02:59,920
+invitation
+
+85
+00:02:58,479 --> 00:03:02,318
+would sample the offspring at low
+
+86
+00:02:59,919 --> 00:03:02,318
+coverage
+
+87
+00:03:02,639 --> 00:03:05,759
+use the phd to impute the missing
+
+88
+00:03:04,239 --> 00:03:07,280
+genotypes
+
+89
+00:03:05,759 --> 00:03:08,560
+determine accuracy by comparing it to
+
+90
+00:03:07,280 --> 00:03:09,598
+the true which we know because the
+
+91
+00:03:08,560 --> 00:03:11,920
+simulation
+
+92
+00:03:09,598 --> 00:03:13,759
+and then compare also uh how it does
+
+93
+00:03:11,919 --> 00:03:15,119
+with invitation to beagle which is very
+
+94
+00:03:13,759 --> 00:03:18,719
+common imputation
+
+95
+00:03:15,120 --> 00:03:20,800
+uh software that people use um
+
+96
+00:03:18,719 --> 00:03:22,400
+so this is what it looks like at least
+
+97
+00:03:20,800 --> 00:03:25,120
+for the simulation
+
+98
+00:03:22,400 --> 00:03:27,439
+we see the ph g in red i can't see my
+
+99
+00:03:25,120 --> 00:03:30,959
+mouse but um
+
+100
+00:03:27,439 --> 00:03:33,598
+you know the ph g in red outperforms
+
+101
+00:03:30,959 --> 00:03:35,920
+beagle in the simulated scenario across
+
+102
+00:03:33,598 --> 00:03:37,119
+many the x-axis is depth of coverage for
+
+103
+00:03:35,919 --> 00:03:40,399
+sequencing
+
+104
+00:03:37,120 --> 00:03:41,599
+so um but so and this this big gap
+
+105
+00:03:40,400 --> 00:03:42,719
+between them especially the lower
+
+106
+00:03:41,598 --> 00:03:44,719
+coverages
+
+107
+00:03:42,719 --> 00:03:46,639
+that's really due to the fact that the
+
+108
+00:03:44,719 --> 00:03:48,719
+beagle can't really distinguish between
+
+109
+00:03:46,639 --> 00:03:51,759
+heterozygous and homozygous calls
+
+110
+00:03:48,719 --> 00:03:53,120
+with that little of data so just because
+
+111
+00:03:51,759 --> 00:03:54,479
+if you see something once you don't know
+
+112
+00:03:53,120 --> 00:03:56,480
+if that's homozygous
+
+113
+00:03:54,479 --> 00:03:59,039
+maybe it's uh maybe you're not capturing
+
+114
+00:03:56,479 --> 00:04:02,158
+the second allele
+
+115
+00:03:59,039 --> 00:04:02,560
+um so now i've shown this really should
+
+116
+00:04:02,158 --> 00:04:05,679
+work
+
+117
+00:04:02,560 --> 00:04:07,120
+it does work in simulation um
+
+118
+00:04:05,680 --> 00:04:09,120
+even with two copies of the genome being
+
+119
+00:04:07,120 --> 00:04:11,200
+modeled um
+
+120
+00:04:09,120 --> 00:04:13,039
+the question is where do we get the
+
+121
+00:04:11,199 --> 00:04:15,598
+haplotypes for
+
+122
+00:04:13,039 --> 00:04:16,319
+for real data um because it's not quite
+
+123
+00:04:15,598 --> 00:04:18,399
+as simple as
+
+124
+00:04:16,319 --> 00:04:20,000
+as it may look so what i'm going to
+
+125
+00:04:18,399 --> 00:04:21,279
+showing you some of the data i'm using
+
+126
+00:04:20,000 --> 00:04:23,439
+from the hapmap 2
+
+127
+00:04:21,279 --> 00:04:24,879
+population created or kind of
+
+128
+00:04:23,439 --> 00:04:28,000
+consolidated a few years ago
+
+129
+00:04:24,879 --> 00:04:30,879
+by remo and the and the bucker lab
+
+130
+00:04:28,000 --> 00:04:32,319
+it's got 241 clones mainly from some
+
+131
+00:04:30,879 --> 00:04:34,800
+cultivated varieties but
+
+132
+00:04:32,319 --> 00:04:36,159
+our columns but also for there's some
+
+133
+00:04:34,800 --> 00:04:39,199
+wild uh
+
+134
+00:04:36,160 --> 00:04:41,439
+lines in there as well so how do we find
+
+135
+00:04:39,199 --> 00:04:42,400
+haplotypes well one of the problem
+
+136
+00:04:41,439 --> 00:04:45,360
+challenges i'm going to
+
+137
+00:04:42,399 --> 00:04:46,959
+talk about is getting phased haplotypes
+
+138
+00:04:45,360 --> 00:04:49,040
+is not as easy as it sounds
+
+139
+00:04:46,959 --> 00:04:50,879
+from whole genome sequence uh just
+
+140
+00:04:49,040 --> 00:04:52,639
+imagine these three sites
+
+141
+00:04:50,879 --> 00:04:53,918
+uh two of which are segregating we've
+
+142
+00:04:52,639 --> 00:04:56,160
+got heterozygous at
+
+143
+00:04:53,918 --> 00:04:58,159
+sites one and three oh so you're like
+
+144
+00:04:56,160 --> 00:05:00,960
+okay we've got the genotype
+
+145
+00:04:58,160 --> 00:05:01,600
+but that is not a haplotype um we don't
+
+146
+00:05:00,959 --> 00:05:03,279
+know
+
+147
+00:05:01,600 --> 00:05:06,160
+if the genome looks like this with two
+
+148
+00:05:03,279 --> 00:05:09,279
+haplotypes acg and cct
+
+149
+00:05:06,160 --> 00:05:11,919
+or act and ccg
+
+150
+00:05:09,279 --> 00:05:14,000
+and so even with two snips or two
+
+151
+00:05:11,918 --> 00:05:17,198
+celerying sites this can be harder to
+
+152
+00:05:14,000 --> 00:05:20,000
+to distinguish and in reality it's much
+
+153
+00:05:17,199 --> 00:05:20,560
+bigger for more possibilities than just
+
+154
+00:05:20,000 --> 00:05:23,519
+these two
+
+155
+00:05:20,560 --> 00:05:25,199
+you know with more stamps so how can we
+
+156
+00:05:23,519 --> 00:05:27,918
+resolve the true phase
+
+157
+00:05:25,199 --> 00:05:28,478
+uh what we can do and what we show here
+
+158
+00:05:27,918 --> 00:05:31,198
+is
+
+159
+00:05:28,478 --> 00:05:33,519
+we sample enough of these clones so we
+
+160
+00:05:31,199 --> 00:05:35,520
+can find clones that are homozygous
+
+161
+00:05:33,519 --> 00:05:37,038
+at these at this region for these
+
+162
+00:05:35,519 --> 00:05:39,519
+different haplotypes and we can see
+
+163
+00:05:37,038 --> 00:05:41,519
+oh here maybe the true phase is actually
+
+164
+00:05:39,519 --> 00:05:44,478
+acg and cct
+
+165
+00:05:41,519 --> 00:05:46,000
+and so looking for these ibd or identity
+
+166
+00:05:44,478 --> 00:05:49,038
+by descent regions
+
+167
+00:05:46,000 --> 00:05:50,639
+uh we can get the true phase of these
+
+168
+00:05:49,038 --> 00:05:53,199
+haplotypes
+
+169
+00:05:50,639 --> 00:05:54,960
+and so that's how we created the i've
+
+170
+00:05:53,199 --> 00:05:56,160
+created this cassava database so this
+
+171
+00:05:54,959 --> 00:05:57,758
+phe
+
+172
+00:05:56,160 --> 00:05:59,680
+is by sampling the ibd regions of the
+
+173
+00:05:57,759 --> 00:06:01,038
+genome and and using those runs of
+
+174
+00:05:59,680 --> 00:06:02,800
+homozygosity
+
+175
+00:06:01,038 --> 00:06:04,079
+that were most likely generated through
+
+176
+00:06:02,800 --> 00:06:08,240
+you know breeding
+
+177
+00:06:04,079 --> 00:06:09,680
+or selection and we then also capture if
+
+178
+00:06:08,240 --> 00:06:10,319
+there are runs of homosexual
+
+179
+00:06:09,680 --> 00:06:13,759
+relationships
+
+180
+00:06:10,319 --> 00:06:16,639
+between adjacent haplotypes
+
+181
+00:06:13,759 --> 00:06:18,319
+um and not only that but one of the
+
+182
+00:06:16,639 --> 00:06:20,240
+things we have to address is that this
+
+183
+00:06:18,319 --> 00:06:21,919
+method is going to kind of create a
+
+184
+00:06:20,240 --> 00:06:23,759
+sparse database because
+
+185
+00:06:21,918 --> 00:06:25,439
+not every haplotype is being sampled in
+
+186
+00:06:23,759 --> 00:06:27,439
+every tax set
+
+187
+00:06:25,439 --> 00:06:29,600
+and so here this is the same picture i
+
+188
+00:06:27,439 --> 00:06:30,959
+showed before with some missing habitats
+
+189
+00:06:29,600 --> 00:06:33,280
+one of the things we've done to kind of
+
+190
+00:06:30,959 --> 00:06:35,038
+make this viable
+
+191
+00:06:33,279 --> 00:06:36,799
+is by taking the reeds from these
+
+192
+00:06:35,038 --> 00:06:39,599
+haplotypes we've sampled
+
+193
+00:06:36,800 --> 00:06:41,439
+we actually realign them to the graph
+
+194
+00:06:39,600 --> 00:06:44,080
+and find the most likely paths
+
+195
+00:06:41,439 --> 00:06:45,279
+and and fill in those gaps with most
+
+196
+00:06:44,079 --> 00:06:47,680
+likely haplotypes from the
+
+197
+00:06:45,279 --> 00:06:49,359
+types of samples with this realigning of
+
+198
+00:06:47,680 --> 00:06:50,959
+the whole genome sequence data does is
+
+199
+00:06:49,360 --> 00:06:52,639
+it fills in the gaps
+
+200
+00:06:50,959 --> 00:06:54,079
+to kind of fill up the graph to improve
+
+201
+00:06:52,639 --> 00:06:56,478
+the transitions and the
+
+202
+00:06:54,079 --> 00:06:59,598
+the model as a whole but doesn't add any
+
+203
+00:06:56,478 --> 00:07:02,879
+new information or new haplotypes
+
+204
+00:06:59,598 --> 00:07:07,120
+and so now i'll just show uh we
+
+205
+00:07:02,879 --> 00:07:09,519
+run an imputation from this uh
+
+206
+00:07:07,120 --> 00:07:10,959
+phg and same kind of thing with the
+
+207
+00:07:09,519 --> 00:07:13,918
+other tests but i held out
+
+208
+00:07:10,959 --> 00:07:15,680
+a test set that were not sampled sampled
+
+209
+00:07:13,918 --> 00:07:19,038
+their reads to a low coverage
+
+210
+00:07:15,680 --> 00:07:22,160
+and impute the missing sites and so here
+
+211
+00:07:19,038 --> 00:07:22,879
+the results from that and um you'll see
+
+212
+00:07:22,160 --> 00:07:25,439
+it it's
+
+213
+00:07:22,879 --> 00:07:27,038
+it's not the beagles follows the same
+
+214
+00:07:25,439 --> 00:07:29,839
+relationship as it did in simulation but
+
+215
+00:07:27,038 --> 00:07:32,560
+with this phd
+
+216
+00:07:29,839 --> 00:07:34,478
+it's the same trend but it's translated
+
+217
+00:07:32,560 --> 00:07:37,280
+lower on the graph and what
+
+218
+00:07:34,478 --> 00:07:39,279
+uh we're seeing here is that uh we're
+
+219
+00:07:37,279 --> 00:07:41,519
+not completely able by
+
+220
+00:07:39,279 --> 00:07:43,439
+this method isn't completely able to
+
+221
+00:07:41,519 --> 00:07:46,799
+sample all the haplotypes
+
+222
+00:07:43,439 --> 00:07:50,000
+the diversity happen types either due to
+
+223
+00:07:46,800 --> 00:07:53,038
+deleterious um alleles
+
+224
+00:07:50,000 --> 00:07:54,560
+or other population dependent
+
+225
+00:07:53,038 --> 00:07:58,959
+parameters you know we might not be
+
+226
+00:07:54,560 --> 00:08:01,199
+exampling all the available haplotypes
+
+227
+00:07:58,959 --> 00:08:02,959
+um just to interrupt you a second but if
+
+228
+00:08:01,199 --> 00:08:06,160
+somebody's got a baby can you please
+
+229
+00:08:02,959 --> 00:08:09,279
+that's my baby that's okay oh sorry
+
+230
+00:08:06,160 --> 00:08:10,960
+no i'm that's i try to apologize but um
+
+231
+00:08:09,279 --> 00:08:13,359
+that just makes it adorable carry on
+
+232
+00:08:10,959 --> 00:08:16,959
+okay
+
+233
+00:08:13,360 --> 00:08:18,879
+um so we've shown okay
+
+234
+00:08:16,959 --> 00:08:21,279
+but it does do really well with the low
+
+235
+00:08:18,879 --> 00:08:24,000
+coverages uh compared to beagle
+
+236
+00:08:21,279 --> 00:08:25,918
+but how well is good enough so just try
+
+237
+00:08:24,000 --> 00:08:26,800
+to validate this with some genomic
+
+238
+00:08:25,918 --> 00:08:28,560
+prediction
+
+239
+00:08:26,800 --> 00:08:30,400
+how does this imputation accuracy
+
+240
+00:08:28,560 --> 00:08:32,958
+translate to genomic prediction
+
+241
+00:08:30,399 --> 00:08:33,519
+so i've just used a subset of clones
+
+242
+00:08:32,958 --> 00:08:36,158
+from this
+
+243
+00:08:33,519 --> 00:08:38,080
+hat map did some cross validations with
+
+244
+00:08:36,158 --> 00:08:40,559
+fresh root yield
+
+245
+00:08:38,080 --> 00:08:42,158
+and i found that it follows pretty much
+
+246
+00:08:40,559 --> 00:08:43,199
+the same trend as the amputation
+
+247
+00:08:42,158 --> 00:08:45,919
+accuracy
+
+248
+00:08:43,200 --> 00:08:47,519
+as the genomic prediction accuracy um
+
+249
+00:08:45,919 --> 00:08:49,439
+and that it yeah the highest coverage
+
+250
+00:08:47,519 --> 00:08:51,839
+beagle is going to do better
+
+251
+00:08:49,440 --> 00:08:52,800
+because it it can kind of leverage the
+
+252
+00:08:51,839 --> 00:08:56,880
+information that
+
+253
+00:08:52,799 --> 00:08:59,679
+the phd can't um
+
+254
+00:08:56,879 --> 00:09:00,399
+but it is we are you know these are
+
+255
+00:08:59,679 --> 00:09:03,519
+upwards of
+
+256
+00:09:00,399 --> 00:09:06,159
+you know near if
+
+257
+00:09:03,519 --> 00:09:07,839
+if the beagle 5x is the top amount of
+
+258
+00:09:06,159 --> 00:09:08,639
+genomic prediction accuracy we can get
+
+259
+00:09:07,839 --> 00:09:12,160
+just with
+
+260
+00:09:08,639 --> 00:09:13,278
+0.5 x coverage uh the phd can get near
+
+261
+00:09:12,159 --> 00:09:17,199
+that i would say you know
+
+262
+00:09:13,278 --> 00:09:18,480
+um and so kind of this brings us the
+
+263
+00:09:17,200 --> 00:09:20,399
+question is
+
+264
+00:09:18,480 --> 00:09:22,000
+if it can do pretty well it you know it
+
+265
+00:09:20,399 --> 00:09:23,440
+does affect it at low coverage
+
+266
+00:09:22,000 --> 00:09:24,879
+how can we sample more haplotypes
+
+267
+00:09:23,440 --> 00:09:25,519
+because that seems to be just the last
+
+268
+00:09:24,879 --> 00:09:27,919
+piece
+
+269
+00:09:25,519 --> 00:09:30,320
+um to make this an effective tool in a
+
+270
+00:09:27,919 --> 00:09:34,479
+heterozygous crop like cassava
+
+271
+00:09:30,320 --> 00:09:36,720
+so here i'm just going to show um some
+
+272
+00:09:34,480 --> 00:09:38,480
+preliminary data i've got from using
+
+273
+00:09:36,720 --> 00:09:39,440
+long read technology oxford nanopore
+
+274
+00:09:38,480 --> 00:09:43,120
+technology
+
+275
+00:09:39,440 --> 00:09:46,240
+or minion sequencing so here
+
+276
+00:09:43,120 --> 00:09:48,879
+i've got six clones um
+
+277
+00:09:46,240 --> 00:09:49,759
+uh that have oxford nanopore data i take
+
+278
+00:09:48,879 --> 00:09:53,278
+those clones
+
+279
+00:09:49,759 --> 00:09:54,559
+their wgs data and use um long reads to
+
+280
+00:09:53,278 --> 00:09:56,399
+phase their data
+
+281
+00:09:54,559 --> 00:09:58,479
+and i make it i've made a phd database
+
+282
+00:09:56,399 --> 00:10:01,120
+just with those six lines
+
+283
+00:09:58,480 --> 00:10:02,720
+uh and then i'm gonna compare it to the
+
+284
+00:10:01,120 --> 00:10:05,919
+phd i just showed which
+
+285
+00:10:02,720 --> 00:10:08,959
+is made from the whole hat map too
+
+286
+00:10:05,919 --> 00:10:12,159
+um so here's what it looks like and
+
+287
+00:10:08,958 --> 00:10:13,679
+it is lower but it includes data from
+
+288
+00:10:12,159 --> 00:10:16,399
+far fewer taxa
+
+289
+00:10:13,679 --> 00:10:18,000
+and so uh i wasn't able to get this huge
+
+290
+00:10:16,399 --> 00:10:19,600
+bump in accuracy even i didn't show this
+
+291
+00:10:18,000 --> 00:10:21,200
+but even by combining them i don't get
+
+292
+00:10:19,600 --> 00:10:24,320
+that bump in accuracy
+
+293
+00:10:21,200 --> 00:10:25,759
+that i'd like but um this does show a
+
+294
+00:10:24,320 --> 00:10:29,040
+lot of potential for
+
+295
+00:10:25,759 --> 00:10:31,360
+maybe if you had a breeding population
+
+296
+00:10:29,039 --> 00:10:33,360
+if you sequence the parents with
+
+297
+00:10:31,360 --> 00:10:35,519
+um some long reads and short reads
+
+298
+00:10:33,360 --> 00:10:37,039
+together and get the face table types
+
+299
+00:10:35,519 --> 00:10:40,320
+then you can use those
+
+300
+00:10:37,039 --> 00:10:41,519
+to effectively uh impute in the
+
+301
+00:10:40,320 --> 00:10:45,360
+offspring or the
+
+302
+00:10:41,519 --> 00:10:47,120
+in yes so just last i want to summarize
+
+303
+00:10:45,360 --> 00:10:48,720
+my points is the cassava phd can
+
+304
+00:10:47,120 --> 00:10:50,959
+leverage ibd haplotypes to get
+
+305
+00:10:48,720 --> 00:10:54,320
+good imputation accuracy that is
+
+306
+00:10:50,958 --> 00:10:55,838
+applicable for general prediction
+
+307
+00:10:54,320 --> 00:10:57,760
+simulation experiments help us validate
+
+308
+00:10:55,839 --> 00:10:59,680
+and improve our methodology
+
+309
+00:10:57,759 --> 00:11:01,838
+it shows its real potential if we have
+
+310
+00:10:59,679 --> 00:11:04,000
+correctly faced apple types
+
+311
+00:11:01,839 --> 00:11:05,360
+and lastly um you know there is some
+
+312
+00:11:04,000 --> 00:11:06,240
+potential to use these long-range
+
+313
+00:11:05,360 --> 00:11:09,039
+technologies
+
+314
+00:11:06,240 --> 00:11:10,399
+as they get cheaper and more available
+
+315
+00:11:09,039 --> 00:11:14,399
+to kind of solve the
+
+316
+00:11:10,399 --> 00:11:15,600
+phasing problem and last i'll just uh
+
+317
+00:11:14,399 --> 00:11:17,919
+want to acknowledge everyone that's
+
+318
+00:11:15,600 --> 00:11:20,800
+helped me both uh my mentors kelly and
+
+319
+00:11:17,919 --> 00:11:21,360
+ed and all the the lab members that have
+
+320
+00:11:20,799 --> 00:11:23,599
+helped me
+
+321
+00:11:21,360 --> 00:11:25,120
+uh and especially a big shout out for
+
+322
+00:11:23,600 --> 00:11:28,000
+peter bradberry
+
+323
+00:11:25,120 --> 00:11:29,600
+whose uh programming work is you know
+
+324
+00:11:28,000 --> 00:11:31,120
+mostly support a lot of the results i
+
+325
+00:11:29,600 --> 00:11:31,519
+have is due to a lot of the work he's
+
+326
+00:11:31,120 --> 00:11:35,839
+done
+
+327
+00:11:31,519 --> 00:11:38,639
+and i will take any questions thank you
+
+328
+00:11:35,839 --> 00:11:39,760
+thank you for your talk evan um so yeah
+
+329
+00:11:38,639 --> 00:11:42,399
+you can either write
+
+330
+00:11:39,759 --> 00:11:44,399
+the questions in the chat or you can
+
+331
+00:11:42,399 --> 00:11:46,559
+also raise your hand if you would like
+
+332
+00:11:44,399 --> 00:11:46,559
+to
+
+333
+00:11:47,679 --> 00:11:51,439
+evan i think you need to show us the
+
+334
+00:11:49,120 --> 00:11:51,440
+baby
+
+335
+00:11:53,519 --> 00:12:00,889
+you said she was
+
+336
+00:11:57,250 --> 00:12:00,889
+[Laughter]
+
+337
+00:12:01,669 --> 00:12:04,719
+[Music]
+
+338
+00:12:06,240 --> 00:12:10,959
+um if we want to start with liz
+
+339
+00:12:09,278 --> 00:12:12,559
+do you want to unmute yourself and ask
+
+340
+00:12:10,958 --> 00:12:15,119
+your question
+
+341
+00:12:12,559 --> 00:12:15,119
+hi evan
+
+342
+00:12:15,679 --> 00:12:18,958
+can you hear me okay yes sorry liz i
+
+343
+00:12:18,240 --> 00:12:22,000
+just uh
+
+344
+00:12:18,958 --> 00:12:23,759
+didn't see you yeah this is liz so i was
+
+345
+00:12:22,000 --> 00:12:26,078
+interested in those last results on the
+
+346
+00:12:23,759 --> 00:12:26,480
+long-range sequencing why you did not
+
+347
+00:12:26,078 --> 00:12:29,039
+get
+
+348
+00:12:26,480 --> 00:12:30,800
+better resolution and better accuracy is
+
+349
+00:12:29,039 --> 00:12:32,639
+that because the method itself is
+
+350
+00:12:30,799 --> 00:12:35,838
+inherently
+
+351
+00:12:32,639 --> 00:12:37,039
+error-prone um so it's like i said still
+
+352
+00:12:35,839 --> 00:12:40,240
+some preliminary data
+
+353
+00:12:37,039 --> 00:12:41,919
+i think um
+
+354
+00:12:40,240 --> 00:12:43,759
+so i think what it shows is that we're
+
+355
+00:12:41,919 --> 00:12:44,399
+able to phase some haplotypes correctly
+
+356
+00:12:43,759 --> 00:12:46,639
+which
+
+357
+00:12:44,399 --> 00:12:48,639
+with short reads i've tried phasing with
+
+358
+00:12:46,639 --> 00:12:50,560
+other methods and it doesn't help
+
+359
+00:12:48,639 --> 00:12:51,680
+you know trying to giving face apple
+
+360
+00:12:50,559 --> 00:12:53,359
+types to
+
+361
+00:12:51,679 --> 00:12:54,799
+uh incorporating face appetite doesn't
+
+362
+00:12:53,360 --> 00:12:55,839
+help but with the long reads it
+
+363
+00:12:54,799 --> 00:12:58,319
+it looks like we're getting accurate
+
+364
+00:12:55,839 --> 00:12:59,440
+haplotypes um
+
+365
+00:12:58,320 --> 00:13:01,600
+and i think it's probably just a
+
+366
+00:12:59,440 --> 00:13:02,000
+limitation of only being able to have
+
+367
+00:13:01,600 --> 00:13:05,600
+those
+
+368
+00:13:02,000 --> 00:13:09,039
+few only six clones having that data
+
+369
+00:13:05,600 --> 00:13:11,600
+would probably be the limitation i'd um
+
+370
+00:13:09,039 --> 00:13:13,120
+and why it wouldn't improve the i i
+
+371
+00:13:11,600 --> 00:13:16,079
+still need to look into it more
+
+372
+00:13:13,120 --> 00:13:18,078
+um because i've tried combining both the
+
+373
+00:13:16,078 --> 00:13:19,838
+ibd haplotypes and those
+
+374
+00:13:18,078 --> 00:13:21,359
+phase apple types and it hasn't really
+
+375
+00:13:19,839 --> 00:13:25,120
+improved better than
+
+376
+00:13:21,360 --> 00:13:27,919
+my big ibd database um
+
+377
+00:13:25,120 --> 00:13:29,039
+yeah that haplotype imputation can they
+
+378
+00:13:27,919 --> 00:13:31,199
+can get chimeric
+
+379
+00:13:29,039 --> 00:13:32,719
+forms of sequencing for the long range
+
+380
+00:13:31,200 --> 00:13:34,320
+sequencing method so i wondered whether
+
+381
+00:13:32,720 --> 00:13:37,920
+you were seeing some of that
+
+382
+00:13:34,320 --> 00:13:39,760
+yeah um i have looked at chimera
+
+383
+00:13:37,919 --> 00:13:41,838
+you know like creating kind of these
+
+384
+00:13:39,759 --> 00:13:45,198
+false haplotypes before
+
+385
+00:13:41,839 --> 00:13:47,040
+and um that may be part of it or maybe
+
+386
+00:13:45,198 --> 00:13:49,198
+just that we're not it's not
+
+387
+00:13:47,039 --> 00:13:50,159
+like all the haplotypes that i'm getting
+
+388
+00:13:49,198 --> 00:13:52,319
+with the
+
+389
+00:13:50,159 --> 00:13:53,759
+with the long read phasing may be
+
+390
+00:13:52,320 --> 00:13:56,240
+already captured by all the
+
+391
+00:13:53,759 --> 00:13:57,120
+ibd apple types right that could be one
+
+392
+00:13:56,240 --> 00:14:00,799
+thing
+
+393
+00:13:57,120 --> 00:14:02,000
+um but that is you know that's kind of
+
+394
+00:14:00,799 --> 00:14:04,559
+my running hypothesis right
+
+395
+00:14:02,000 --> 00:14:05,919
+now it would i mean i don't have the
+
+396
+00:14:04,559 --> 00:14:07,039
+data for it really but it would be
+
+397
+00:14:05,919 --> 00:14:09,198
+interesting if i had
+
+398
+00:14:07,039 --> 00:14:10,799
+once again if i had offspring i've tried
+
+399
+00:14:09,198 --> 00:14:12,639
+looking there's not really pedigr
+
+400
+00:14:10,799 --> 00:14:16,559
+there's not at least whole genome
+
+401
+00:14:12,639 --> 00:14:17,919
+sequence on the pedigree data i have um
+
+402
+00:14:16,559 --> 00:14:21,919
+you know if i could look at the direct
+
+403
+00:14:17,919 --> 00:14:26,159
+offspring of those uh six clones
+
+404
+00:14:21,919 --> 00:14:28,719
+thanks very nice thank you evan
+
+405
+00:14:26,159 --> 00:14:29,439
+there was another raised hand by
+
+406
+00:14:28,720 --> 00:14:31,680
+jean-luc
+
+407
+00:14:29,440 --> 00:14:33,199
+i don't know um he took his hand back i
+
+408
+00:14:31,679 --> 00:14:33,599
+don't know what he's done i i loaded it
+
+409
+00:14:33,198 --> 00:14:36,719
+but
+
+410
+00:14:33,600 --> 00:14:39,360
+i'm sure um evan so the uh
+
+411
+00:14:36,720 --> 00:14:41,759
+the simulation what what data did you
+
+412
+00:14:39,360 --> 00:14:42,800
+actually give the phd in constructing it
+
+413
+00:14:41,759 --> 00:14:46,240
+did you give it
+
+414
+00:14:42,799 --> 00:14:49,599
+the fully phased data on the 20 parents
+
+415
+00:14:46,240 --> 00:14:52,000
+yeah so i phased 20 parents just using
+
+416
+00:14:49,600 --> 00:14:53,519
+beagle and hap cut and i just gave the
+
+417
+00:14:52,000 --> 00:14:54,879
+phd and explained or
+
+418
+00:14:53,519 --> 00:14:57,039
+because that's what i used to simulate
+
+419
+00:14:54,879 --> 00:14:58,320
+the offspring and so i gave that to the
+
+420
+00:14:57,039 --> 00:15:01,439
+phd as well
+
+421
+00:14:58,320 --> 00:15:02,320
+i mean those are no by no means true i
+
+422
+00:15:01,440 --> 00:15:03,920
+just accept sure
+
+423
+00:15:02,320 --> 00:15:06,000
+it's true right right right i get it
+
+424
+00:15:03,919 --> 00:15:09,360
+yeah okay so um
+
+425
+00:15:06,000 --> 00:15:11,919
+yeah does that answer your question
+
+426
+00:15:09,360 --> 00:15:12,720
+it does i i guess uh yeah that makes
+
+427
+00:15:11,919 --> 00:15:15,198
+sense thanks
+
+428
+00:15:12,720 --> 00:15:15,839
+and they're all iita lines so at least
+
+429
+00:15:15,198 --> 00:15:19,198
+they're all
+
+430
+00:15:15,839 --> 00:15:19,199
+somewhat related anyways
+
+431
+00:15:23,278 --> 00:15:26,559
+you know we never really got a good view
+
+432
+00:15:24,879 --> 00:15:28,480
+of the baby because
+
+433
+00:15:26,559 --> 00:15:32,078
+people were talking and then zoom puts
+
+434
+00:15:28,480 --> 00:15:40,639
+them on the screen or at least i didn't
+
+435
+00:15:32,078 --> 00:15:44,078
+there were some backlighting issues
+
+436
+00:15:40,639 --> 00:15:46,799
+thank you so much oh wonderful
+
+437
+00:15:44,078 --> 00:15:48,078
+very cute um there's one more question
+
+438
+00:15:46,799 --> 00:15:51,838
+from shitai
+
+439
+00:15:48,078 --> 00:15:53,838
+in the chat she asks which method
+
+440
+00:15:51,839 --> 00:15:55,120
+among the two you would recommend for
+
+441
+00:15:53,839 --> 00:15:58,320
+either irl
+
+442
+00:15:55,120 --> 00:16:01,839
+or diverse populations um
+
+443
+00:15:58,320 --> 00:16:02,399
+i think if i had the ability to get long
+
+444
+00:16:01,839 --> 00:16:05,680
+reads
+
+445
+00:16:02,399 --> 00:16:07,870
+i would especially if you had
+
+446
+00:16:05,679 --> 00:16:09,919
+like a finite number of parents you knew
+
+447
+00:16:07,870 --> 00:16:11,839
+[Music]
+
+448
+00:16:09,919 --> 00:16:13,198
+okay uh if you had something like you
+
+449
+00:16:11,839 --> 00:16:14,880
+said if we said something
+
+450
+00:16:13,198 --> 00:16:16,479
+in maize you know if you had something
+
+451
+00:16:14,879 --> 00:16:17,919
+like the name
+
+452
+00:16:16,480 --> 00:16:19,920
+if you get long readings of those
+
+453
+00:16:17,919 --> 00:16:23,759
+parents and then look have those
+
+454
+00:16:19,919 --> 00:16:26,000
+faith effects okay well
+
+455
+00:16:23,759 --> 00:16:27,919
+i better cut off but thank you and thank
+
+456
+00:16:26,000 --> 00:16:31,278
+you for the questions
+
+457
+00:16:27,919 --> 00:16:33,120
+thanks for your talk evan um yeah george
+
+458
+00:16:31,278 --> 00:16:37,838
+will introduce the third and last
+
+459
+00:16:33,120 --> 00:16:37,839
+speaker for today
+
+460
+00:16:38,958 --> 00:16:42,399
+this has been a production of cornell
+
+461
+00:16:41,278 --> 00:16:48,958
+university
+
+462
+00:16:42,399 --> 00:16:48,958
+on the web at cornell.edu
+

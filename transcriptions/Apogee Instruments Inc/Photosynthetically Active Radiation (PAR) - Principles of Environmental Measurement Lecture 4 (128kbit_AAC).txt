@@ -1,0 +1,933 @@
+[SPEAKER_01]: I'm going to talk about quantum sensors,
+or sometimes we call them PAR sensors,
+[SPEAKER_01]: photosynthetically active radiation
+sensors.
+[SPEAKER_01]: They look the same, but instead of being
+designed to measure all of the short wave
+[SPEAKER_01]: wavelengths from the sun or an electric
+light, they only measure the
+[SPEAKER_01]: photosynthetically active wavelengths.
+[SPEAKER_01]: That's typically defined as 400 to 700
+nanometers.
+[SPEAKER_01]: The same wavelengths that the human eye
+sees are the same wavelengths that drive
+[SPEAKER_01]: photosynthesis in plants.
+[SPEAKER_01]: So it's an often used measurement in plant
+research because it tells us how much
+[SPEAKER_01]: radiation is available or how many photons
+are available to make photosynthesis
+[SPEAKER_01]: happen.
+[SPEAKER_01]: And there is multiple radiation sources
+available used to grow plants.
+[SPEAKER_01]: I'm showing some here.
+[SPEAKER_01]: Sun, lots of different electric lights.
+[SPEAKER_01]: Nowadays, LEDs, light emitting diodes,
+are becoming more and more common.
+[SPEAKER_01]: So this is actually a photograph taken
+from Bruce's lab at Utah State University.
+[SPEAKER_01]: And they've got all these little growth
+chambers, each one with a different
+[SPEAKER_01]: colored LED or a different combination of
+colored LEDs in them to see what kind of
+[SPEAKER_01]: effects different color treatments have on
+plant growth and plant morphology.
+[SPEAKER_01]: I keep pressing the wrong button.
+[SPEAKER_01]: So LEDs are becoming more and more common
+all the time, especially in research
+[SPEAKER_01]: applications.
+[SPEAKER_01]: LEDs are often narrow band, meaning they
+only output a narrow range of wavelengths,
+[SPEAKER_01]: whereas radiation sources like the sun or
+some of these electric lights are
+[SPEAKER_01]: broadband.
+[SPEAKER_01]: They output a lot of radiation across the
+photosynthetically active range.
+[SPEAKER_01]: But the main point that I want to make
+here is that accurate photosynthetically
+[SPEAKER_01]: active radiation or PAR measurements are
+required for a host of applications,
+[SPEAKER_01]: especially if we're interested in
+photosynthesis.
+[SPEAKER_01]: So before we start talking about the
+sensors, here's just a few definitions.
+[SPEAKER_01]: You probably have heard these terms before
+and seen them defined, but it always helps
+[SPEAKER_01]: to review a little bit.
+[SPEAKER_01]: I already mentioned that
+photosynthetically active radiation is the
+[SPEAKER_01]: radiation that drives photosynthesis.
+[SPEAKER_01]: Photon flux density is just the number of
+photons that flow through a unit area per
+[SPEAKER_01]: unit time.
+[SPEAKER_01]: And we're just counting photons,
+basically.
+[SPEAKER_01]: And so we either count the micromoles of
+photons per meter squared per second.
+[SPEAKER_01]: That's an instantaneous unit that we use.
+[SPEAKER_01]: Or we count the moles of photons per meter
+squared per day on a daily time scale.
+[SPEAKER_01]: So that's how we characterize the flux of
+photons.
+[SPEAKER_01]: The photosynthetic photon flux density,
+PPFD, is just the photon flux density
+[SPEAKER_01]: integrated over our photosynthetically
+active range, so 400 to 700 nanometer
+[SPEAKER_01]: wavelength range.
+[SPEAKER_01]: And so when we have a quantum sensor or a
+PAR sensor, one of these guys,
+[SPEAKER_01]: this is the number that it's measuring
+right here.
+[SPEAKER_01]: And they put out this unit, so it measures
+the micromoles of photons per meter
+[SPEAKER_01]: squared per second.
+[SPEAKER_01]: So basically the incident photons on the
+detector.
+[SPEAKER_01]: And then when we integrate that number
+over a whole day, we get the moles of
+[SPEAKER_01]: photons per meter squared per day.
+[SPEAKER_01]: The yield photon flux density is kind of
+like the photosynthetic photon flux
+[SPEAKER_01]: density.
+[SPEAKER_01]: But instead of just integrating over the
+400 to 700 nanometer range to get yield
+[SPEAKER_01]: photon flux, we actually weight the photon
+flux by the plant response to photons.
+[SPEAKER_01]: And then we sum it up.
+[SPEAKER_01]: And this one will become a lot more clear
+on my next slide, because I will show you
+[SPEAKER_01]: a graph that illustrates the difference
+between this one and this one.
+[SPEAKER_01]: And so a quantum sensor is this thing.
+[SPEAKER_01]: It's just the instrument that we use to
+measure PPFD.
+[SPEAKER_01]: And the reason that we often call them
+quantum sensors is because one photon is a
+[SPEAKER_01]: single quantum of radiation.
+[SPEAKER_01]: But quantum sensor can be kind of a
+confusing term, I think.
+[SPEAKER_01]: Nowadays you often hear them called PAR
+sensors, because they are measuring
+[SPEAKER_01]: photosynthetically active radiation.
+[SPEAKER_01]: PAR sensor and quantum sensor mean the
+exact same thing.
+[SPEAKER_01]: So here's the graph that I mentioned when
+I was describing the difference between
+[SPEAKER_01]: photosynthetic photon flux and yield
+photon.
+[SPEAKER_01]: So wavelength on the x-axis and then just
+relative quantum yield, or the response to
+[SPEAKER_01]: photons on the y-axis.
+[SPEAKER_01]: And so the green line is actually measured
+data from a number of different places.
+[SPEAKER_01]: I listed some of the publications here.
+[SPEAKER_01]: So Keith McCree at Texas A&M University
+was the first to do this back in the early
+[SPEAKER_01]: 70s.
+[SPEAKER_01]: And then others followed up.
+[SPEAKER_01]: And found similar data.
+[SPEAKER_01]: But what he did is he took a leaf and he
+measured the photosynthetic response,
+[SPEAKER_01]: or basically how much carbon did that leaf
+uptake at each wavelength of light.
+[SPEAKER_01]: And he used a light with specific filters
+over the top of it to give him really
+[SPEAKER_01]: narrow wavelength ranges.
+[SPEAKER_01]: And he just measured the carbon uptake of
+single leaves as a function of wavelength.
+[SPEAKER_01]: And he found that the photosynthetic
+response actually looked like the green
+[SPEAKER_01]: line.
+[SPEAKER_01]: So the plant leaves respond a little bit
+more to blue radiation than they do green
+[SPEAKER_01]: radiation.
+[SPEAKER_01]: And they're most sensitive or most
+responsive to the red radiation.
+[SPEAKER_01]: But the data that McCree and others
+measured for single leaves, we have to
+[SPEAKER_01]: remember that it was in the laboratory.
+[SPEAKER_01]: It was plants grown under controlled
+conditions, in many cases.
+[SPEAKER_01]: I think they also measured field plants.
+[SPEAKER_01]: It was a low light environment.
+[SPEAKER_01]: And again, it was single leaves.
+[SPEAKER_01]: So a more useful and universal definition
+of photosynthetically active radiation is
+[SPEAKER_01]: rather than trying to weight measurements
+of PAR by this green line, we just assume
+[SPEAKER_01]: that all the photons between 400 and 700
+nanometers are equally efficient at making
+[SPEAKER_01]: photosynthesis happen in plant leaves.
+[SPEAKER_01]: And so the universally accepted definition
+of PAR is what we call this defined plant
+[SPEAKER_01]: photosynthetic response, where we just
+give equal weight to all the photons
+[SPEAKER_01]: within the 400 to 700 range.
+[SPEAKER_01]: And we don't give any weight to photons
+outside the 400 to 700 nanometer range.
+[SPEAKER_01]: And we use that as our definition of
+photosynthetically active radiation.
+[SPEAKER_01]: And so PAR sensors, these kind of devices,
+should have a spectral response or a
+[SPEAKER_01]: sensitivity that matches this black line
+as close as they can.
+[SPEAKER_01]: And so there are really a couple of
+options for measuring PAR.
+[SPEAKER_01]: One is to use a quantum sensor like this.
+[SPEAKER_01]: And it's a broadband device, meaning it
+gives you a single signal, one number.
+[SPEAKER_01]: An analog device means it would output
+voltage that represents the sum of all of
+[SPEAKER_01]: the radiation that's incident on this
+detector.
+[SPEAKER_01]: And again, it should be the sum of all of
+the radiation between 400 and 700
+[SPEAKER_01]: nanometers.
+[SPEAKER_01]: And so that number, that voltage that it
+outputs, is weighted by the spectral
+[SPEAKER_01]: sensitivity of the sensor itself.
+[SPEAKER_01]: So you have a filter.
+[SPEAKER_01]: And the purpose of the filter in front of
+the photon detector is to try to give us
+[SPEAKER_01]: the best match that we can to 400 to 700
+nanometers.
+[SPEAKER_01]: And then we have a single detector that
+gives us an output that should be
+[SPEAKER_01]: proportional to PAR.
+[SPEAKER_01]: And so the spectral response of the sensor
+is dependent on the transmission of the
+[SPEAKER_01]: filter and the sensitivity of the
+underlying detector.
+[SPEAKER_01]: Alternatively, rather than using a quantum
+sensor for PAR measurement, we could use a
+[SPEAKER_01]: spectroradiometer.
+[SPEAKER_01]: These are hyperspector.
+[SPEAKER_01]: They're spectral devices, meaning we're
+getting signals at multiple wavelengths.
+[SPEAKER_01]: So you actually can get spectroradiometers
+that give you a measurement at every
+[SPEAKER_01]: single nanometer within the 400 to 700
+nanometer range.
+[SPEAKER_01]: That would be quite fine resolution.
+[SPEAKER_01]: Oftentimes they give you a measurement at
+every five nanometers, for example.
+[SPEAKER_01]: But the point is you're actually getting a
+measurement at multiple positions across
+[SPEAKER_01]: the wavelength range of interest.
+[SPEAKER_01]: And so a quantum sensor only gives you
+PAR.
+[SPEAKER_01]: A spectroradiometer gives you both PAR and
+the spectrum.
+[SPEAKER_01]: So not only do you get photosynthetically
+active radiation, but you get the shape of
+[SPEAKER_01]: the spectrum.
+[SPEAKER_01]: And in some applications that might be
+useful.
+[SPEAKER_01]: And so here the detector array determines
+the spectral response.
+[SPEAKER_01]: A spectroradiometer is a, in practice,
+it's a relative relatively simple device.
+[SPEAKER_01]: You have a prism or maybe a diffraction
+grating where the light enters the unit.
+[SPEAKER_01]: And that prism or diffraction grating is
+actually separating the light into the
+[SPEAKER_01]: individual wavelengths.
+[SPEAKER_01]: And then somewhere behind that prism,
+you have a whole array of detectors that
+[SPEAKER_01]: measures the intensity of the individual
+wavelengths.
+[SPEAKER_01]: So you get multiple signals.
+[SPEAKER_01]: So it looks like a relatively simple
+device on paper, but in practice they can
+[SPEAKER_01]: be quite complicated.
+[SPEAKER_01]: And so the only thing that really
+determines the spectral response or the
+[SPEAKER_01]: sensitivity of a spectroradiometer is how
+well is it calibrated.
+[SPEAKER_01]: If we can accurately calibrate each of the
+wavelengths, then we have an accurate
+[SPEAKER_01]: quantum sensor independent of the light
+source that we're trying to measure.
+[SPEAKER_01]: And so there's lots of different options
+for quantum sensors.
+[SPEAKER_01]: Here I'm showing you some of the more
+common commercially available quantum
+[SPEAKER_01]: sensors.
+[SPEAKER_01]: And how well their spectral sensitivity or
+their response to photons matches our
+[SPEAKER_01]: definition of photosynthetic radiation.
+[SPEAKER_01]: So the black line is what we're trying to
+match, because that's our definition of
+[SPEAKER_01]: the photosynthetic photons.
+[SPEAKER_01]: And then the colored lines, the blue and
+red lines, are the actual sensitivities of
+[SPEAKER_01]: the different, some of the different
+sensors that are available on the market.
+[SPEAKER_01]: So Kippen-Zonen has a sensor.
+[SPEAKER_01]: Sky Instruments has a sensor.
+[SPEAKER_01]: LiCOR has a couple.
+[SPEAKER_01]: The model LI190R has now been replaced by
+a newer model from, excuse me,
+[SPEAKER_01]: the LI190 has now been replaced by a newer
+model from LiCOR called the LI190R.
+[SPEAKER_01]: At Apogee we build a couple different
+models.
+[SPEAKER_01]: The SQ110 is the one that we've sold for
+years and it's still available.
+[SPEAKER_01]: And the SQ500 is a new model that is a
+better match to the photosynthetic photon
+[SPEAKER_01]: flux weighting factors.
+[SPEAKER_01]: So having this information, we can
+actually now make estimates of what kind
+[SPEAKER_01]: of errors we can expect when we use these
+sensors for different light sources.
+[SPEAKER_01]: Meaning, Bruce talked a little bit about
+how the solar spectrum can change for
+[SPEAKER_01]: clear versus cloudy conditions.
+[SPEAKER_01]: So if we calibrate these sensors in clear
+conditions, for example, and we know that
+[SPEAKER_01]: none of them have a perfect match to our
+definition of photosynthesis, we can
+[SPEAKER_01]: expect some errors when we try to use them
+in cloudy conditions.
+[SPEAKER_01]: Or, for example, if they were calibrated
+in the laboratory under an electric light,
+[SPEAKER_01]: what happens when we try to use them for
+measurements under a different electric
+[SPEAKER_01]: light?
+[SPEAKER_01]: Or what happens when we take them out of
+the laboratory and try to use them for
+[SPEAKER_01]: measurements in sunlight?
+[SPEAKER_01]: All we have to know, we need three pieces
+of information basically to estimate
+[SPEAKER_01]: spectral errors.
+[SPEAKER_01]: And that is, we need to know the spectral
+response of the sensor.
+[SPEAKER_01]: We have that information here.
+[SPEAKER_01]: We need to know the spectral output of the
+radiation source that was used to
+[SPEAKER_01]: calibrate the sensor.
+[SPEAKER_01]: And then we need to know the spectral
+output of the radiation source that we're
+[SPEAKER_01]: trying to measure.
+[SPEAKER_01]: So to better illustrate that, let's just
+take an example.
+[SPEAKER_01]: So you can see here's the spectral
+response of the Apogee model SQ110.
+[SPEAKER_01]: This is the traditional Apogee quantum
+sensor that's been available for several
+[SPEAKER_01]: years.
+[SPEAKER_01]: And you can see that it's not a great
+match to our definition of photosynthetic
+[SPEAKER_01]: radiation.
+[SPEAKER_01]: That we measure some of the UV.
+[SPEAKER_01]: It's not as sensitive to the blue as it
+needs to be.
+[SPEAKER_01]: And it misses some of this red radiation
+out here when we get close to 700.
+[SPEAKER_01]: So this mismatch between the actual sensor
+response to photons and our definition of
+[SPEAKER_01]: photosynthetic radiation is going to cause
+spectral errors.
+[SPEAKER_01]: And kind of an extreme example,
+let's say we were measuring an LED that
+[SPEAKER_01]: was a blue and red mix where the red peak
+was like 660 or 670 nanometers.
+[SPEAKER_01]: You can see there's a lot of output from
+this LED that's beyond the sensitivity
+[SPEAKER_01]: range of the sensor.
+[SPEAKER_01]: That means the sensor's not going to count
+those photons because it's not sensitive
+[SPEAKER_01]: to them and it will cause spectral error.
+[SPEAKER_01]: So there's an equation we can use to
+actually calculate spectral errors.
+[SPEAKER_01]: And as I mentioned previously,
+the only bits of information that we need,
+[SPEAKER_01]: this S is the spectral sensitivity of the
+sensor.
+[SPEAKER_01]: In this example, it would be the blue
+line.
+[SPEAKER_01]: The I calibration is the spectral output.
+[SPEAKER_01]: Of the light source we use to calibrate
+the sensor.
+[SPEAKER_01]: It could be the sun.
+[SPEAKER_01]: It could be an electric light.
+[SPEAKER_01]: And then this I measurement is the
+spectral output of the lamp that we're
+[SPEAKER_01]: trying to measure.
+[SPEAKER_01]: It might be this LED for example.
+[SPEAKER_01]: So what I'm about to show you is error
+calculations using this equation for all
+[SPEAKER_01]: six of these quantum sensors that I have
+spectral information for right here.
+[SPEAKER_01]: And there you go.
+[SPEAKER_01]: And so the table shows data where we use
+sunlight on a clear day as the calibration
+[SPEAKER_01]: source.
+[SPEAKER_01]: And so all of them have zero error under
+sunlight.
+[SPEAKER_01]: And you can see what kind of errors they
+have for a whole bunch of other light
+[SPEAKER_01]: sources.
+[SPEAKER_01]: So we've got sun spectrum on a cloudy day,
+a sun spectrum that's reflected from a
+[SPEAKER_01]: grass canopy.
+[SPEAKER_01]: So you can actually, in addition to
+measuring incoming radiation, some
+[SPEAKER_01]: applications you might want to invert the
+quantum sensor like this and measure
+[SPEAKER_01]: reflected radiation from the plant canopy.
+[SPEAKER_01]: If you have a measurement of incoming
+radiation and a measurement of reflected
+[SPEAKER_01]: radiation, it tells you how much of the
+photosynthetic radiation is being absorbed
+[SPEAKER_01]: by the plants at the surface.
+[SPEAKER_01]: And so Bruce just mentioned in the
+previous talk that if this were a silicon
+[SPEAKER_01]: cell pyranometer, you can't invert it like
+that and make measurements of the surface
+[SPEAKER_01]: because there's large spectral errors that
+are associated with doing that.
+[SPEAKER_01]: And he showed a table of some of those
+errors.
+[SPEAKER_01]: Using a quantum sensor, however,
+one of these PAR sensors that's designed
+[SPEAKER_01]: to measure photosynthetic radiation
+instead of solar radiation, you can take
+[SPEAKER_01]: it and invert it like this.
+[SPEAKER_01]: And these numbers here reflected from
+glass gives you an idea of what kind of
+[SPEAKER_01]: error you can expect when you invert a
+quantum sensor.
+[SPEAKER_01]: So oftentimes, and I'm going to talk about
+this particular application in a little
+[SPEAKER_01]: bit more detail in a minute, we want to
+put quantum sensors underneath plant
+[SPEAKER_01]: canopies and measure how much of the
+photosynthetic radiation is transmitted
+[SPEAKER_01]: through the plant canopy.
+[SPEAKER_01]: So here's the kind of errors you can
+expect if you measure underneath plant
+[SPEAKER_01]: canopies.
+[SPEAKER_01]: This is data for a wheat canopy.
+[SPEAKER_01]: I think I failed to mention that all of
+the numbers that you see here are
+[SPEAKER_01]: percentages, not actual radiation units,
+so not micromoles per meter squared per
+[SPEAKER_01]: second, but percentages.
+[SPEAKER_01]: Now we have a whole list of electric
+lights that people might use in a
+[SPEAKER_01]: greenhouse or a growth chamber
+environment.
+[SPEAKER_01]: So a couple things that you can see by
+looking at the data in this table is that
+[SPEAKER_01]: all of them work quite well for most of
+the radiation sources on there,
+[SPEAKER_01]: except for the Apogee model SQ110.
+[SPEAKER_01]: Some of these LEDs, you can see the errors
+get pretty large.
+[SPEAKER_01]: That's because of the data I showed you on
+the previous table.
+[SPEAKER_01]: It doesn't have an excellent match to the
+definition of photosynthetic radiation.
+[SPEAKER_01]: So you want to be careful using quantum
+sensors for certain radiation sources.
+[SPEAKER_01]: You want to make sure that they are going
+to capture the photons that you're trying
+[SPEAKER_01]: to capture.
+[SPEAKER_01]: You'll notice of the other sensors,
+some of the worst errors also tend to be
+[SPEAKER_01]: LEDs.
+[SPEAKER_01]: So here's a 3.8 and 3.6%.
+[SPEAKER_01]: That's an LED.
+[SPEAKER_01]: A 3% over there that's an LED.
+[SPEAKER_01]: LEDs are tricky to measure, so for those
+of you that are working in greenhouses and
+[SPEAKER_01]: measuring LEDs, sometimes the best option
+for that might be a spectroradiometer.
+[SPEAKER_01]: As I mentioned when I was talking about
+the differences between quantum sensors
+[SPEAKER_01]: and spectroradiometers, if you're
+spectroradiometer is calibrated accurately
+[SPEAKER_01]: because it's measuring all the wavelengths
+individually, then spectral error doesn't
+[SPEAKER_01]: exist.
+[SPEAKER_01]: We don't have to worry about spectral
+error with a spectroradiometer.
+[SPEAKER_01]: The main difference, so you might be
+asking, well, if this is the case,
+[SPEAKER_01]: why would I ever use a quantum sensor to
+measure PAR?
+[SPEAKER_01]: Wouldn't I just use a spectroradiometer
+every time?
+[SPEAKER_01]: The difference is the price tag.
+[SPEAKER_01]: Quantum sensors tend to be in the low
+hundreds to maybe the mid hundreds.
+[SPEAKER_01]: In terms of cost, spectroradiometers tend
+to be an order of magnitude higher.
+[SPEAKER_01]: They're in the thousands, the low
+thousands to maybe even the mid to higher
+[SPEAKER_01]: thousands.
+[SPEAKER_01]: So that's the real difference.
+[SPEAKER_01]: Quantum sensors are often the measurement
+of choice because they give you accuracy
+[SPEAKER_01]: that's good enough for the application,
+and they're much lower cost.
+[SPEAKER_01]: OK, so this is just a brief comparison of
+everything we've covered up to this point.
+[SPEAKER_01]: Quantum sensors are subject to spectral
+error.
+[SPEAKER_01]: Spectroradiometers are not if they're
+calibrated accurately.
+[SPEAKER_01]: Quantum sensors give you a broadband
+measurement, meaning one number or one
+[SPEAKER_01]: signal that's proportional to PAR.
+[SPEAKER_01]: So you can only get PAR from a quantum
+sensor.
+[SPEAKER_01]: A spectroradiometer, not only do you get
+PAR, you get the spectrum if the spectrum
+[SPEAKER_01]: is required.
+[SPEAKER_01]: And then I just talked about the
+differences in price.
+[SPEAKER_01]: So a couple more review points.
+[SPEAKER_01]: There's lots of commercial quantum sensors
+available, and I showed at least six of
+[SPEAKER_01]: them, and they're spectral errors.
+[SPEAKER_01]: And many of them have minimal errors,
+less than 5% when measuring lots of
+[SPEAKER_01]: different light sources.
+[SPEAKER_01]: And then remember, PAR is almost
+universally reported as photosynthetic
+[SPEAKER_01]: photon flux density in units of
+micromolecule.
+[SPEAKER_01]: So you can convert that to micromoles per
+meter squared per second, but it can be
+[SPEAKER_01]: converted to other units if the spectrum
+is known.
+[SPEAKER_01]: So the reason that I put this point up
+here is often we get people that contact
+[SPEAKER_01]: us that they need measurements in units of
+watts per meter squared or even units of
+[SPEAKER_01]: lumens per meter squared lux on occasion.
+[SPEAKER_01]: These units aren't often used in
+environmental applications and plant
+[SPEAKER_01]: science, but on occasion they are.
+[SPEAKER_01]: And so you can convert PPFD measurements
+from a quantum sensor to other units if
+[SPEAKER_01]: you know the spectrum.
+[SPEAKER_01]: It's possible to do that.
+[SPEAKER_01]: Bruce showed a table like this for apogee
+pyranometers.
+[SPEAKER_01]: Here's similar information for apogee
+quantum sensors, just some specifications
+[SPEAKER_01]: to give you an idea of the performance.
+[SPEAKER_01]: So the directional response or the cosine
+response for a quantum sensor is very,
+[SPEAKER_01]: very similar to the cosine response.
+[SPEAKER_01]: For a pyranometer, the temperature
+response is also similar.
+[SPEAKER_01]: The stability is a little bit better for
+the quantum sensors that we tested,
+[SPEAKER_01]: and the calibration uncertainty is listed
+there.
+[SPEAKER_01]: Let's skip over that summary slide just
+because we've pretty much discussed
+[SPEAKER_01]: everything already.
+[SPEAKER_01]: So I mentioned I wanted to talk about a
+specific application of intercepted
+[SPEAKER_01]: radiation.
+[SPEAKER_01]: I want to show you something really quick
+before we go through the slides.
+[SPEAKER_01]: I thought it was interesting.
+[SPEAKER_01]: This is a little brochure from Western
+Sydney University that I picked up
+[SPEAKER_01]: yesterday here in the Hawkesbury
+Institute.
+[SPEAKER_01]: And there's a part, I'll blow it up on the
+document camera so you can see it.
+[SPEAKER_01]: Here we go.
+[SPEAKER_01]: There it is.
+[SPEAKER_01]: So this is actually a picture and a short
+caption from the brochure that I found
+[SPEAKER_01]: here at the institute yesterday.
+[SPEAKER_01]: And it says, this photosynthetically
+active radiation sensor measures light
+[SPEAKER_01]: intensity below the canopy.
+[SPEAKER_01]: These are combined with sensors above the
+canopy to estimate how much shading is
+[SPEAKER_01]: occurring, which correlates to the amount
+of leaf area.
+[SPEAKER_01]: So one application of these PAR
+measurements is above canopy and below
+[SPEAKER_01]: canopy measurements to try to estimate how
+much radiation is being absorbed by the
+[SPEAKER_01]: plant canopy and how much is being
+transmitted to the soil surface.
+[SPEAKER_01]: And from that information, not only does
+it tell us how much of the photosynthetic
+[SPEAKER_01]: radiation are the plants absorbing,
+but it also tells us something about the
+[SPEAKER_01]: leaf area in between the sensor that's
+above the canopy and the sensor that's
+[SPEAKER_01]: below the canopy.
+[SPEAKER_01]: And so this application is actually taking
+place right here at this institute.
+[SPEAKER_01]: And I'll talk a little bit about it for
+just a second.
+[SPEAKER_01]: Now let's switch back over to the slides.
+[SPEAKER_01]: And so I actually have a picture here of
+what's called, hang on, it always does a
+[SPEAKER_01]: little hiccup before it comes back.
+[SPEAKER_01]: I have a picture of what's called a line
+quantum sensor.
+[SPEAKER_01]: And making a measurement of the radiation
+underneath a corn canopy.
+[SPEAKER_01]: So here I'm showing a crop canopy,
+but you could do this for a pasture or an
+[SPEAKER_01]: orchard or a forest, whatever you were
+interested in.
+[SPEAKER_01]: And so a line quantum sensor is just like
+this quantum sensor, except for there are
+[SPEAKER_01]: multiple sensors along the line.
+[SPEAKER_01]: This specific one has 10 sensors.
+[SPEAKER_01]: So each one of these circles that you see
+here is a sensor.
+[SPEAKER_01]: And those 10 sensors are spread along a
+bar that's approximately 70 centimeters
+[SPEAKER_01]: long.
+[SPEAKER_01]: So the reason that you want multiple
+sensors when you make under canopy
+[SPEAKER_01]: measurements is that the, and you can see
+it in this picture, the light environment
+[SPEAKER_01]: underneath a plant canopy is not uniform.
+[SPEAKER_01]: So you can see these two sensors up here
+are in a light fleck where they're
+[SPEAKER_01]: actually getting a lot of sunlight.
+[SPEAKER_01]: All the rest of the sensors are in the
+shade.
+[SPEAKER_01]: And so when you make measurements of
+radiation underneath the canopy with the
+[SPEAKER_01]: line quantum sensor, remember that the
+radiation is often non-uniform.
+[SPEAKER_01]: It works really well to measure with the
+line quantum sensor because then you get
+[SPEAKER_01]: an average along the length of the line.
+[SPEAKER_01]: And radiation under the canopy should be
+measured in multiple locations because
+[SPEAKER_01]: it's non-uniform.
+[SPEAKER_01]: So it often works best to make a
+measurement in one location, move it,
+[SPEAKER_01]: make a measurement in another location,
+move it, make a measurement in another
+[SPEAKER_01]: location, and average the numbers.
+[SPEAKER_01]: That way you get a pretty representative
+idea of what the mean radiation
+[SPEAKER_01]: environment is like underneath the plant
+canopy and also how variable it is.
+[SPEAKER_01]: So just to give you an idea, the equations
+are pretty simple.
+[SPEAKER_01]: For the intercepted radiation,
+you just measure the photosynthetic
+[SPEAKER_01]: radiation above the canopy and below the
+canopy.
+[SPEAKER_01]: The transmittance is the below canopy
+measurement divided by the above canopy
+[SPEAKER_01]: measurement.
+[SPEAKER_01]: And then the fraction intercepted is one
+minus the transmittance.
+[SPEAKER_01]: And so you have to have a quantum sensor
+above the plants.
+[SPEAKER_01]: And then a line quantum sensor below the
+plants.
+[SPEAKER_01]: Pretty straightforward.
+[SPEAKER_01]: And then you just plug the numbers in to
+get intercepted radiation, transmittance,
+[SPEAKER_01]: and the fraction of intercepted radiation.
+[SPEAKER_01]: And so for a relatively sparse canopy like
+this one here, the leaf area index might
+[SPEAKER_01]: be roughly one meter squared of leaf area
+per meter squared of ground area.
+[SPEAKER_01]: In the middle of the day on a sunny day,
+the transmittance would be about 50%,
+[SPEAKER_01]: where roughly half of the sunlight that
+you're measuring above the canopy would
+[SPEAKER_01]: actually get transmitted below the canopy.
+[SPEAKER_01]: If we were to move to something like this,
+where we have a much higher leaf area
+[SPEAKER_01]: index, say something on the order of five
+meter squared per meter squared,
+[SPEAKER_01]: in the middle of the day on a sunny day,
+the transmittance would be about an order
+[SPEAKER_01]: of magnitude lower, closer to 5% of the
+radiation above the canopy.
+[SPEAKER_01]: It's going to get transmitted to the soil
+below the canopy.
+[SPEAKER_01]: And so once we have this information,
+once we have the transmittance,
+[SPEAKER_01]: we can actually get some sense of the leaf
+area index, if that's what we're
+[SPEAKER_01]: interested in.
+[SPEAKER_01]: And so this shows you four different plots
+of transmittance as a function of leaf
+[SPEAKER_01]: area index.
+[SPEAKER_01]: And this would be for a solar zenith angle
+of 20 degrees.
+[SPEAKER_01]: 20 degrees on a relatively clear day.
+[SPEAKER_01]: The reason that we have four different
+lines and they're spaced like that is not
+[SPEAKER_01]: only does the leaf area influence the
+transmittance, but the orientation of the
+[SPEAKER_01]: leaves can also have a big impact on the
+transmittance.
+[SPEAKER_01]: And so the green line would represent a
+canopy where most of the leaves are
+[SPEAKER_01]: positioned horizontally, whereas the red
+line would represent a canopy where most
+[SPEAKER_01]: of the leaves are positioned vertically.
+[SPEAKER_01]: Turns out that most plant canopies,
+I'm not as familiar with forests,
+[SPEAKER_01]: but crops tend to be somewhere near these
+two black lines where you have a fairly
+[SPEAKER_01]: even distribution of both horizontal and
+vertical leaves.
+[SPEAKER_01]: And so there's what the data look like now
+at a solar zenith angle of 60 degrees.
+[SPEAKER_01]: I'll toggle back once just so you can see.
+[SPEAKER_01]: It also shows you that not only does leaf
+area and the position or the orientation
+[SPEAKER_01]: of the leaves have a big influence on
+transmittance, but so does the position of
+[SPEAKER_01]: the Sun.
+[SPEAKER_01]: And so if we know something about the leaf
+angle distribution, or if we can make
+[SPEAKER_01]: measurements when all of the lines are
+converged or close to one another,
+[SPEAKER_01]: we can get a good idea of the leaf area
+index of our canopy of interest.
+[SPEAKER_01]: And so I've actually been working on a
+research project in an alfalfa canopy over
+[SPEAKER_01]: the summer, and we wanted to get some idea
+of the leaf area index as a function of
+[SPEAKER_01]: the height of the plant canopy.
+[SPEAKER_01]: And so we made a couple measurements in
+the recent past at different heights.
+[SPEAKER_01]: One was here when the alfalfa was 70
+centimeters tall, we got a transmission of
+[SPEAKER_01]: about 20 percent.
+[SPEAKER_01]: That would correspond to a leaf area of
+about 1.7 to 1.8 meters squared per meter
+[SPEAKER_01]: squared.
+[SPEAKER_01]: Then we made measurements later in the
+growing season when the alfalfa was much
+[SPEAKER_01]: taller.
+[SPEAKER_01]: It was about 64 centimeters tall and we
+got a transmittance that was an order of
+[SPEAKER_01]: magnitude lower.
+[SPEAKER_01]: That would correspond to a leaf area of
+about 4.7 or 4.8 meters squared per meter
+[SPEAKER_01]: squared.
+[SPEAKER_01]: It turns out that these estimates of leaf
+area, 1.8 for a 17 centimeter alfalfa and
+[SPEAKER_01]: 4.7 for 64 centimeter alfalfa,
+are very close to actual values.
+[SPEAKER_01]: If we were to sample the leaves,
+destructively sample the leaves and
+[SPEAKER_01]: measure the leaf area, we would get very
+similar numbers.
+[SPEAKER_01]: And so you can, if you're careful with the
+measurements, use transmittance data from
+[SPEAKER_01]: quantum sensors measuring above and below
+the canopy to get some idea of leaf area
+[SPEAKER_01]: and canopy architecture.
+[SPEAKER_01]: So real quick, I mentioned reflected
+radiation a minute ago, so I won't spend
+[SPEAKER_01]: too much time on this slide.
+[SPEAKER_01]: But you can also measure reflected
+radiation using quantum sensors where you
+[SPEAKER_01]: orient one up and one down.
+[SPEAKER_01]: And then the one measuring the
+reflectance, if you take the ratio of
+[SPEAKER_01]: those two numbers, you get the
+reflectance.
+[SPEAKER_01]: One minus that number gives you the amount
+of, or the fraction of the photosynthetic
+[SPEAKER_01]: radiation that was absorbed by the plant
+canopy.
+[SPEAKER_01]: It gives you an idea of how much radiation
+is being absorbed by the plant canopy and
+[SPEAKER_01]: used for photosynthesis.
+[SPEAKER_01]: And so just a couple points here,
+the sensor should be level for both the
+[SPEAKER_01]: upward and downward measurements.
+[SPEAKER_01]: The downward, the upward measurement,
+it's obvious why that one has to be level.
+[SPEAKER_01]: Bruce talked about this in his
+presentation.
+[SPEAKER_01]: If it's tilted a little bit one way or the
+other, you can actually get pretty
+[SPEAKER_01]: significant errors on a sunny day.
+[SPEAKER_01]: If you're tilted a little bit towards the
+sun, it's actually going to read quite a
+[SPEAKER_01]: bit higher than it should if it was level.
+[SPEAKER_01]: And if it happens to be not level and
+tilted a little bit away from the sun,
+[SPEAKER_01]: you'll get a measurement that's a lot
+lower than it should be.
+[SPEAKER_01]: The reason it's important to make sure the
+downward one is close to level as well is
+[SPEAKER_01]: so that in a place like Logan,
+Utah, where Bruce and I come from,
+[SPEAKER_01]: it wouldn't matter that much because the
+entire valley where we live is surrounded
+[SPEAKER_01]: by tall mountains.
+[SPEAKER_01]: But in places where it's flat,
+when the sun first comes up over the
+[SPEAKER_01]: horizon, you want to make sure that the
+direct sunlight doesn't hit the diffuser.
+[SPEAKER_01]: And if it's tilted a little bit one way or
+the other, in the early morning or late
+[SPEAKER_01]: evening hours, you might actually get some
+direct sunlight hitting the sensor that's
+[SPEAKER_01]: not reflected from the surface.
+[SPEAKER_01]: So you just want to be careful that you
+level both sensors.
+[SPEAKER_01]: I believe that's all I had for the quantum
+sensors.
+[SPEAKER_01]: Any questions about photosynthetically
+active radiation?
+[SPEAKER_01]: Measurements above canopy or below canopy?
+[SPEAKER_00]: We were using reflective mulch to reflect
+light back up into the bottom tree,
+[SPEAKER_00]: but the ground is quite slow.
+[SPEAKER_00]: Should the downward one be at right angles
+to the ground, or should we measure it?
+[SPEAKER_01]: I think that really depends on you and
+what you want to quantify for your
+[SPEAKER_01]: application.
+[SPEAKER_01]: And I think, in my opinion, and I'm not a
+tree expert, you would want to know
+[SPEAKER_01]: probably still a horizontal measurement
+because the bottom of the tree canopy is
+[SPEAKER_01]: roughly parallel to the ground,
+correct?
+[SPEAKER_01]: Oh, right angle, okay.
+[SPEAKER_01]: There you go.
+[SPEAKER_01]: I think that it depends on which
+orientation you're interested in
+[SPEAKER_01]: quantifying the radiation.
+[SPEAKER_01]: I don't know that there's a right or wrong
+answer to that question.
+[SPEAKER_01]: You could do either.
+[SPEAKER_01]: Any others?
+[SPEAKER_01]: Yeah, Bruce.
+[SPEAKER_00]: I mentioned that people have long
+predicted photosynthetic radiation from
+[SPEAKER_00]: shortwave.
+[SPEAKER_00]: If you measure one and you can predict the
+other.
+[SPEAKER_00]: Mark and I just wrote a book chapter for
+American Society of Agronomy on shortwave
+[SPEAKER_00]: radiation photosynthetic.
+[SPEAKER_00]: And that chapter talks about the
+challenges of predicting one from the
+[SPEAKER_00]: other.
+[SPEAKER_00]: It's in more detail than we've been
+through here, but that's a forthcoming
+[SPEAKER_00]: chapter about ratios of radiation.
+[SPEAKER_01]: This is actually a really good point that,
+you know, historically weather stations
+[SPEAKER_01]: have never had quantum sensors on them.
+[SPEAKER_01]: Quantum sensors have really only been in
+existence since I guess the early 1970s,
+[SPEAKER_01]: but they've only really been in widespread
+use for maybe the past few years.
+[SPEAKER_01]: And so it's not common that you would find
+a weather station that has a pyranometer
+[SPEAKER_01]: on it to give you solar radiation and the
+quantum sensor on it to give you
+[SPEAKER_01]: photosynthetically active radiation.
+[SPEAKER_01]: But there could be, you know, applications
+where you need to take weather stations,
+[SPEAKER_01]: weather data from a weather station.
+[SPEAKER_01]: And one of the pieces of information that
+you need is the photosynthetically active
+[SPEAKER_01]: radiation.
+[SPEAKER_01]: And so Bruce is correct.
+[SPEAKER_01]: You can actually estimate
+photosynthetically active radiation from
+[SPEAKER_01]: pyranometer measurements of solar
+radiation.
+[SPEAKER_01]: If you're interested in doing that,
+again grab my card and send me an email.
+[SPEAKER_01]: I can provide you with some information.
+[SPEAKER_01]: The model that allows you to calculate
+photosynthetic photon flux from solar
+[SPEAKER_01]: radiation measurements is pretty simple,
+but there's some coefficients in there
+[SPEAKER_01]: that can introduce some error.
+[SPEAKER_01]: And the coefficients are also dependent on
+the sky conditions.
+[SPEAKER_01]: So if you're interested in that or want
+more detail, I'll gladly talk to you or
+[SPEAKER_01]: just see me afterwards or grab my card.
+[SPEAKER_01]: Any other comments or questions?
+[SPEAKER_01]: I have a couple, just a couple slides that
+I'll mention UV briefly.
+[SPEAKER_01]: I can do those now.
+[SPEAKER_01]: I think lunch was supposed to be 1230,
+so we're about right on schedule.
+[SPEAKER_01]: I'll just chat about UV real quick.
+[SPEAKER_01]: I don't have a lot to say.
+[SPEAKER_01]: Oh, I actually failed to mention one
+point.
+[SPEAKER_01]: Sorry about that.
+[SPEAKER_01]: So if you're anxiously awaiting to get to
+UV, we'll get there in one second.
+[SPEAKER_01]: I forgot this last point on my slide.
+[SPEAKER_01]: So you can actually measure reflected
+radiation using a single sensor if you
+[SPEAKER_01]: want to.
+[SPEAKER_01]: What I said before is you would have one
+mounted like this that's level,
+[SPEAKER_01]: and then a second one mounted like this
+that was level.
+[SPEAKER_01]: That's how you would do it if you wanted
+to continuously measure it over the course
+[SPEAKER_01]: of a growing season.
+[SPEAKER_01]: But if you want to do this
+instantaneously, you can actually take
+[SPEAKER_01]: your sensor and measure it in this
+position and then flip it upside down and
+[SPEAKER_01]: measure it in this position.
+[SPEAKER_01]: Just be careful when you do that that
+during the time interval that it's here to
+[SPEAKER_01]: here that the radiation doesn't change.
+[SPEAKER_01]: Otherwise you'll get an incorrect number
+because the incoming number changed.
+[SPEAKER_01]: So on a clear sunny day, no problem.
+[SPEAKER_01]: Measure here, flip it over and level it,
+and measure here.
+[SPEAKER_01]: But on a day when it's intermittently
+cloudy, you have to be really careful
+[SPEAKER_01]: doing something like that.
+[SPEAKER_01]: I probably wouldn't recommend it because
+the clouds can actually change the
+[SPEAKER_01]: incoming radiation very quickly.
+[SPEAKER_01]: You can put a sensor, and maybe we can
+even do this at lunch if you're interested
+[SPEAKER_01]: because I think it kind of is
+intermittently cloudy to day.
+[SPEAKER_01]: We can go plug this USB sensor into a
+computer and you can watch how dynamic the
+[SPEAKER_01]: radiation is on a cloudy day.
+[SPEAKER_01]: It changes rapidly and sometimes by large
+amounts.
+[SPEAKER_01]: So if it's cloudy, especially
+intermittently cloudy, you don't want to
+[SPEAKER_01]: measure here and then flip it over and
+measure here.
+[SPEAKER_01]: You want to be confident the background or
+the incoming radiation stays the same if
+[SPEAKER_01]: you're using the same sensor and then
+invert it because the measurements are
+[SPEAKER_01]: separated by time.
+Music.

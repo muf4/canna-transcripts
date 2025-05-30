@@ -1,0 +1,1445 @@
+[SPEAKER_05]: This is a production of Cornell
+University.
+[SPEAKER_07]: So it is my pleasure to introduce Hannah
+Zonneville, who is a second year PhD
+[SPEAKER_07]: student here in Soil and Crop Sciences.
+[SPEAKER_07]: Hannah got her bachelor's degree from the
+University of Michigan, where she worked
+[SPEAKER_07]: on topics including moose herbivory in
+northern forests.
+[SPEAKER_07]: Hannah then went on to live and work in
+Chicago for two years, where she worked
+[SPEAKER_07]: for an environmental education nonprofit,
+and also was a community science fellow
+[SPEAKER_07]: with the American Geophysical Union.
+[SPEAKER_07]: Here in SIPPS, Hannah has served as the
+Graduate Student Council Chair,
+[SPEAKER_07]: the Soil and Crop Sciences Graduate
+Student Assembly Vice President,
+[SPEAKER_07]: and as a representative on the SIPPS TDI
+Council.
+[SPEAKER_07]: She also regularly leads outreach
+activities and finds ways to create broad
+[SPEAKER_07]: and inclusive science-focused communities.
+[SPEAKER_07]: Today Hannah will be telling us about her
+dissertation research, which is supported
+[SPEAKER_07]: by an NSF Graduate Student Fellowship.
+[SPEAKER_07]: Please join me in welcoming Hannah.
+[SPEAKER_08]: Thanks for that kind introduction,
+Dan.
+[SPEAKER_08]: And hello, everyone.
+[SPEAKER_08]: If I haven't met you yet, my name is
+Hannah, and I am a PhD student with Dan.
+[SPEAKER_08]: And today I'm super excited to share with
+you all the work that I've been doing
+[SPEAKER_08]: since coming to Cornell, which is
+leveraging remote sensing to quantify
+[SPEAKER_08]: pollen production across space and time
+for Juniper's ashy eye.
+[SPEAKER_08]: Before I jump into the nitty gritty of my
+project, I wanted to first give you a
+[SPEAKER_08]: little bit of background about me.
+[SPEAKER_08]: As Dan mentioned, I hail from the great
+state of Michigan, where I attended the
+[SPEAKER_08]: University of Michigan and fell in love
+with plant ecology through a series of
+[SPEAKER_08]: undergraduate experiences there.
+[SPEAKER_08]: After graduating, I wanted to do some more
+community-focused work, and so I did an
+[SPEAKER_08]: AmeriCorps service here in Chicago with an
+environmental education nonprofit that
+[SPEAKER_08]: partners with Chicago public schools to
+bring a comprehensive, free-of-charge,
+[SPEAKER_08]: outdoor STEM education to students from
+low-income households.
+[SPEAKER_08]: And it was during this experience that I
+saw firsthand how the systemic racism in
+[SPEAKER_08]: the US leads to really awful inequities in
+terms of educational opportunities,
+[SPEAKER_08]: access to nature, and ultimately public
+health outcomes.
+[SPEAKER_08]: And so when I was thinking about returning
+to graduate school, I wanted to find a way
+[SPEAKER_08]: to unite these two passions and ultimately
+do work that could help alleviate some of
+[SPEAKER_08]: the public health burdens that I was
+witnessing.
+[SPEAKER_08]: And that is what brought me to the CATS
+lab here at Cornell.
+[SPEAKER_08]: And we focus on plant-related public
+health problems, and the one that I focus
+[SPEAKER_08]: on specifically is that of airborne
+pollen.
+[SPEAKER_08]: So who among us has pollen allergies?
+[SPEAKER_08]: Raise your hand.
+[SPEAKER_08]: Oh, yeah.
+[SPEAKER_08]: OK.
+[SPEAKER_08]: Well, don't worry.
+[SPEAKER_08]: Misery loves company, and you are not
+alone.
+[SPEAKER_08]: It is actually estimated that over 80
+million people in the United States have
+[SPEAKER_08]: seasonal allergies.
+[SPEAKER_08]: And the worst that most of you will suffer
+are a runny nose, maybe trouble sleeping
+[SPEAKER_08]: for a few weeks out of the year.
+[SPEAKER_08]: But for people with chronic respiratory
+issues, these asthma allergies and
+[SPEAKER_08]: subsequent pollen exposures can be
+dangerous and result in emergency
+[SPEAKER_08]: department visits due to asthma
+exacerbation.
+[SPEAKER_08]: And we also know that asthma is not
+equally distributed across the United
+[SPEAKER_08]: States.
+[SPEAKER_08]: There's plenty of research that shows that
+asthma is in a higher concentrations
+[SPEAKER_08]: within communities that are lower income.
+[SPEAKER_08]: And so I have additional bad news,
+and that is that pollen exposure is
+[SPEAKER_08]: increasing with climate change.
+[SPEAKER_08]: We're seeing that the increased
+temperatures are leading to a longer
+[SPEAKER_08]: growing season.
+[SPEAKER_08]: What you're seeing here is the consecutive
+days above freezing, which is a really bad
+thing.
+[SPEAKER_08]: It's also the case that the climate change
+allows plants to start releasing pollen
+[SPEAKER_08]: earlier in the year and then continue
+later into the year.
+[SPEAKER_08]: It's also resulting in range expansion for
+different allergenic species.
+[SPEAKER_08]: This is something we're seeing in common
+ragweed in Europe.
+[SPEAKER_08]: And a recent meta analysis done in the
+CATS lab showed that plants are able to
+[SPEAKER_08]: allocate more carbon to reproductive
+structures under increased carbon
+[SPEAKER_08]: conditions.
+[SPEAKER_08]: And so there's a variety of mechanisms
+that climate change is increasing pollen
+[SPEAKER_08]: exposure and therefore possibly impacting
+downstream public health effects.
+[SPEAKER_08]: Lucky for us, as with most things,
+science has the potential to offer a
+[SPEAKER_08]: solution.
+[SPEAKER_08]: And this solution can look like better
+airborne pollen forecast.
+[SPEAKER_08]: Airborne pollen forecast can help people
+know when they might be exposed to pollen
+[SPEAKER_08]: such that they can take their allergy
+medications with enough time prior to
+[SPEAKER_08]: exposure so that it reaches its full
+efficacy by time that they are exposed to
+[SPEAKER_08]: pollen.
+[SPEAKER_08]: It can also let people know when to turn
+on their air filters or help them avoid
+[SPEAKER_08]: pollen hot spots.
+[SPEAKER_08]: However, current predictions of airborne
+pollen are insufficient to help people
+[SPEAKER_08]: avoid this exposure.
+[SPEAKER_08]: What you're seeing here is some work done
+by Dan that shows the predicted airborne
+[SPEAKER_08]: pollen concentration from commercial
+forecasters compared to the empirically
+[SPEAKER_08]: measured pollen concentration from pollen
+monitoring stations.
+[SPEAKER_08]: And so pollen.com is doing all right,
+but the rest of them leave a little bit of
+[SPEAKER_08]: room for improvement.
+[SPEAKER_08]: And if you are associated with any of
+these companies, I'm not smack talking,
+[SPEAKER_08]: I'm just inviting you to fund me.
+[SPEAKER_08]: So with that, you might be asking,
+well, why is it that current airborne
+[SPEAKER_08]: pollen is modeled so poorly?
+[SPEAKER_08]: And one of the key reasons for this is
+because we just don't really know how much
+[SPEAKER_08]: pollen is being produced across space and
+time.
+[SPEAKER_08]: The current method for measuring airborne
+pollen is through a sparsely populated
+[SPEAKER_08]: network of airborne pollen monitoring
+stations.
+[SPEAKER_08]: There are only about 50 in the contiguous
+US.
+[SPEAKER_08]: And so it does a really bad job of
+capturing the spatiotemporal variation in
+[SPEAKER_08]: pollen production.
+[SPEAKER_08]: And it is really difficult to calculate
+the amount of pollen being produced based
+[SPEAKER_08]: on ecology of plants because it's super
+hard to study how plant reproduction
+[SPEAKER_08]: varies over large spatial extents.
+[SPEAKER_08]: As you can see, the historical way of
+doing this is manual measurements that
+[SPEAKER_08]: take a very long time and actually can
+limit studies that involve counting these
+[SPEAKER_08]: reproductive structures on plants to
+sample sizes of only 10 to hundreds of
+[SPEAKER_08]: individuals.
+[SPEAKER_08]: And further, it only covers a small
+portion of the tree and a small portion of
+[SPEAKER_08]: the range of these plants.
+[SPEAKER_08]: Lucky for us, we live in the time of
+remote sensing, which is an amazing tool
+[SPEAKER_08]: in our toolbox that we can use to study
+ecological processes across the entire
+[SPEAKER_08]: ecosystem.
+[SPEAKER_08]: And there's been plenty of literature in
+the past couple of years that uses aerial
+[SPEAKER_08]: images to track the timing of plant
+reproduction.
+[SPEAKER_08]: And so it has been positive that we could
+perhaps use aerial images such as with
+[SPEAKER_08]: drones or with satellite images to
+quantify the number of reproductive
+[SPEAKER_08]: structures on plants such that we could
+calculate pollen production that we could
+[SPEAKER_08]: use to inform these better airborne pollen
+models.
+[SPEAKER_08]: So as you can probably guess, my research
+focuses on one central theme, which is
+[SPEAKER_08]: building better airborne pollen models.
+[SPEAKER_08]: I have just proved to you all that this
+could definitely help public health
+[SPEAKER_08]: outcomes and improve the way that people
+interact with plants.
+[SPEAKER_08]: But in order to do this, we need to have a
+better understanding of pollen production
+[SPEAKER_08]: across space and time.
+[SPEAKER_08]: And to help do this, I have designed three
+chapters to pursue here at Cornell.
+[SPEAKER_08]: The first one is to actually measure the
+amount of pollen production over space and
+[SPEAKER_08]: time using remote sensing.
+[SPEAKER_08]: The next is to build off of the data
+collected in chapter one to then start to
+[SPEAKER_08]: disentangle the abiotic drivers of plant
+reproduction.
+[SPEAKER_08]: This is possible because the chapter one
+data set will let us quantify the number
+[SPEAKER_08]: of reproductive structures on plants that
+we can pair with gridded environmental
+[SPEAKER_08]: data and start to model what might be the
+dominant drivers of plant reproduction.
+[SPEAKER_08]: And in my third chapter, I hope to take a
+ecological forecasting approach and
+[SPEAKER_08]: actually try to predict how climate change
+might affect future pollen production of
+[SPEAKER_08]: these plants.
+[SPEAKER_08]: This is a similar approach that has been
+done in phenology but has not yet been
+[SPEAKER_08]: done for pollen production.
+[SPEAKER_08]: I'm going to spend most of my time today
+talking about chapter one, since that is
+[SPEAKER_08]: what I have worked the most on so far.
+[SPEAKER_08]: But I will also give you a little teaser
+into chapter two towards the end.
+[SPEAKER_08]: With that, let's get into it.
+[SPEAKER_08]: So I'd now like to introduce you to my
+study species, the beautiful ash juniper
+[SPEAKER_08]: or Juniperus ashii.
+[SPEAKER_08]: Juniperus ashii is an evergreen dioecious
+plant that is the dominant tree species
+[SPEAKER_08]: along in central Texas where it thrives on
+the calcareous soil of the Edwards
+[SPEAKER_08]: Plateau.
+[SPEAKER_08]: And it is known by locals as an infamous
+producer of pollen that causes something
+[SPEAKER_08]: known as cedar fever.
+[SPEAKER_08]: And cedar fever is an awful affliction
+that results in severe runny noses,
+[SPEAKER_08]: achy joints, trouble sleeping.
+[SPEAKER_08]: And it can actually even cause some people
+to run a fever.
+[SPEAKER_08]: And the culprit of cedar fever is the
+super abundant number of reproductive
+[SPEAKER_08]: structures on these plants, which are
+pollen cones.
+[SPEAKER_08]: Male individuals can actually contain up
+to 1.3 million pollen cones on a single
+[SPEAKER_08]: tree.
+[SPEAKER_08]: And each of these cones can have almost
+half a million grains of pollen.
+[SPEAKER_08]: And so this pollen is so abundant and so
+allergenic that past work in the system
+[SPEAKER_08]: has revealed that it can contribute up to
+18% of asthma-related emergency department
+[SPEAKER_08]: visits during peak pollen season.
+[SPEAKER_08]: So yeah, you can see the pollen coming off
+of these trees in waves.
+[SPEAKER_08]: And it is, from personal experience,
+very unpleasant.
+[SPEAKER_08]: So the thing that makes ash juniper a
+horrible neighbor to all of the Texans
+[SPEAKER_08]: actually makes sense.
+[SPEAKER_08]: It makes it a wonderful study species for
+me because the pollen cones have very
+[SPEAKER_08]: distinct visual properties.
+[SPEAKER_08]: As you can probably tell, this individual,
+which is a male with pollen cones,
+[SPEAKER_08]: looks quite different from this
+individual, which is a female,
+[SPEAKER_08]: having no pollen cones.
+[SPEAKER_08]: So let's take a little bit of a closer
+look at these cones.
+[SPEAKER_08]: They have this kind of beautiful orange
+color that makes them stand out against
+[SPEAKER_08]: the green foliage that you can see here.
+[SPEAKER_08]: And so it is this aspect of the ash
+juniper that makes it observable from
+[SPEAKER_08]: aerial imagery.
+[SPEAKER_08]: In this case, I have been trying to derive
+methods that use aerial images from drones
+[SPEAKER_08]: as well as manual methods to quantify the
+number of cones on these trees using their
+[SPEAKER_08]: spectral properties.
+[SPEAKER_08]: And I'd now like to show you a little bit
+more about what those methods look like.
+[SPEAKER_08]: So to test my methodology, I have
+established 14 study sites across the
+[SPEAKER_08]: range of the ash juniper trees in central
+Texas.
+[SPEAKER_08]: You can see that the study sites cover a
+range of environmental conditions,
+[SPEAKER_08]: including temperature, precipitation,
+and what is displayed here is soil
+[SPEAKER_08]: moisture data from SMAP.
+[SPEAKER_08]: And at each site, I choose between five to
+10 focal trees on which I take a
+[SPEAKER_08]: comprehensive suite of measurements.
+[SPEAKER_08]: And I take additional phenology
+measurements from surrounding trees to try
+[SPEAKER_08]: to understand how the timing of
+reproduction varies among these trees and
+[SPEAKER_08]: how that might impact the spectral reading
+from the images.
+[SPEAKER_08]: I have done this for two field seasons
+now, which I go to Texas in January.
+[SPEAKER_08]: So it's a nice little escape from Ithaca
+winter.
+[SPEAKER_08]: But unfortunately, that seems to last
+until mid-April anyway.
+[SPEAKER_08]: So I was also very lucky this past field
+season to be joined by a wonderful UT
+[SPEAKER_08]: grad, Dr. Annalisa Shields Estrada,
+who was not only a really hard worker,
+[SPEAKER_08]: but an absolute joy to be around.
+[SPEAKER_08]: So I'm really grateful for her help on
+this project.
+[SPEAKER_08]: And so to show you a little bit more about
+the methods in practice, I first select my
+[SPEAKER_08]: focal trees at each study site and take a
+couple of manual measurements.
+[SPEAKER_08]: This year, this included the diameter at
+breast height and the height.
+[SPEAKER_08]: I then put a quadrat with a known area on
+a branch of the tree so that it's facing
+[SPEAKER_08]: upward and visible by the drone.
+[SPEAKER_08]: And after I fly the drone, I harvest all
+of the foliage that falls within that
+[SPEAKER_08]: known area of the quadrat.
+[SPEAKER_08]: Then I use a super sophisticated method
+for homogenizing it, where I run it
+[SPEAKER_08]: through a mulcher.
+[SPEAKER_08]: And that enables me to have a
+representative sample where I can
+[SPEAKER_08]: subsample the foliage 10 times,
+take its weight, and count.
+[SPEAKER_08]: And this will give me the number of cones
+per grams of foliage that I can then
+[SPEAKER_08]: multiply to the number of cones per grams
+of foliage for the entire tree by using
+[SPEAKER_08]: alimetric equations based on diameter at
+breast height and height to give me the
+[SPEAKER_08]: total gram of foliage for the tree.
+[SPEAKER_08]: And so these are all my manual methods,
+but we're not done yet because we now get
+[SPEAKER_08]: to do some fun remote sensing things.
+[SPEAKER_08]: So from the drone images, I find the
+quadrats, crop that down so that it only
+[SPEAKER_08]: contains pixel values that fall within
+that known area.
+[SPEAKER_08]: I then extract all of the pixel values
+from that image and correlate these pixel
+[SPEAKER_08]: values, their red, green, and blue values,
+to the known quantity of cones that I just
+[SPEAKER_08]: estimated using my manual methods.
+[SPEAKER_08]: This results in an index that can be used
+to predict the number of cones per grams
+[SPEAKER_08]: based solely on the red, green,
+and blue values.
+[SPEAKER_08]: So having this index allows us to extend
+our measurements of these reproductive
+[SPEAKER_08]: structures beyond just the focal trees.
+[SPEAKER_08]: And I'd now like to show you the index.
+[SPEAKER_08]: So this is what I am provisionally calling
+the orange-ness index.
+[SPEAKER_08]: If you have any other recommendations,
+let me know.
+[SPEAKER_08]: But it is a combination of the red and
+green values, red minus green over red
+[SPEAKER_08]: plus green.
+[SPEAKER_08]: And as you can see here on the y-axis,
+we have cone density.
+[SPEAKER_08]: And so this is the manually estimated
+cones that I used with my subsampling.
+[SPEAKER_08]: And higher cone density results in a
+higher index value because there are more
+[SPEAKER_08]: cones in the picture, more red values,
+more positive value.
+[SPEAKER_08]: Compared to this quadra over here that has
+very few cones and a very low cone
+[SPEAKER_08]: density, has a lot more green values
+associated and therefore returns a lower
+[SPEAKER_08]: index value.
+[SPEAKER_08]: So awesome.
+[SPEAKER_08]: We have our index.
+[SPEAKER_08]: What does it look like when you actually
+apply it to images?
+[SPEAKER_08]: What you're seeing here is a quadrat
+picture that I have processed to only
+[SPEAKER_08]: retain the pixel values that are either
+foliage or cone.
+[SPEAKER_08]: I use a random forest pixel classifier.
+[SPEAKER_08]: You can see the results down here,
+but it performs very well.
+[SPEAKER_08]: And so when you apply the index to this,
+you can see that the positive values do
+[SPEAKER_08]: indeed match up with where the cones are.
+[SPEAKER_08]: For visualization purposes, I just created
+a binary.
+[SPEAKER_08]: So the positive values associated with
+cones are orange.
+[SPEAKER_08]: And the green values associated with a
+foliage are negative and green.
+[SPEAKER_08]: And so yeah, you can see that it works
+pretty well and does a good job of picking
+[SPEAKER_08]: up the distinct properties of these cones.
+[SPEAKER_08]: But remember that the overall goal is to
+use this index to count cones from trees
+[SPEAKER_08]: that we don't actually have the manual
+measurements on.
+[SPEAKER_08]: So let's try to do that.
+[SPEAKER_08]: Here you are seeing a subset of an
+orthomosaic image from the drone,
+[SPEAKER_08]: which is basically just a stitched
+together landscape level picture that I
+[SPEAKER_08]: put together all of the pictures from a
+drone at a study site.
+[SPEAKER_08]: And you can see the varying densities of
+cones on these trees.
+[SPEAKER_08]: So there's some with a lot higher density
+compared to some here with lower density.
+[SPEAKER_08]: And what I've done is manually segmented
+these tree tops so that we can only retain
+[SPEAKER_08]: pixel values that fall within the canopy.
+[SPEAKER_08]: And once again, I can extract the pixel
+values here and run it through the pixel
+[SPEAKER_08]: classifier.
+[SPEAKER_08]: Apply the index.
+[SPEAKER_08]: And here we are.
+[SPEAKER_08]: So again, the lower values are associated
+with more foliage and the higher values
+[SPEAKER_08]: are associated with a higher cone density.
+[SPEAKER_08]: From here, we have all of the ingredients
+that we need to actually go ahead and
+[SPEAKER_08]: quantify the number of reproductive
+structures and therefore the pollen
+[SPEAKER_08]: production of these trees.
+[SPEAKER_08]: Because we can, again, calculate the total
+grams of foliage for these trees using
+[SPEAKER_08]: alimetric equations where the grams of
+foliage is a function of the diameter at
+[SPEAKER_08]: best height and height.
+[SPEAKER_08]: And then we can take the average pixel
+value or the average index value from
+[SPEAKER_08]: these trees, multiply it by the grams of
+foliage from the alimetric equations.
+[SPEAKER_08]: And this can give us the number of cones
+per tree.
+[SPEAKER_08]: Using this, we can calculate the pollen
+produced.
+[SPEAKER_08]: And this can all go back into creating
+better airborne pollen forecasts based on
+[SPEAKER_08]: a more comprehensive measure of the amount
+of pollen being produced.
+[SPEAKER_08]: So well, I am definitely very excited
+about these methods and my work so far.
+[SPEAKER_08]: There's plenty of limitations and it's not
+perfect.
+[SPEAKER_08]: Some limitations that have been difficult
+to work through are that the trees have a
+[SPEAKER_08]: kind of a wide variety of coloring in
+their foliage.
+[SPEAKER_08]: So as you can see here, this is a tree
+that has a lot more yellow foliage rather
+[SPEAKER_08]: than green.
+[SPEAKER_08]: And so it's returning a really high index
+value despite there not being very many
+[SPEAKER_08]: cones.
+[SPEAKER_08]: Further, the index is sensitive to
+lighting conditions.
+[SPEAKER_08]: So when we have pictures that are either
+very overexposed or very shadowy,
+[SPEAKER_08]: the index is not able to do a very good
+job of calculating the number or
+[SPEAKER_08]: predicting the number of cones based just
+on the spectral properties.
+[SPEAKER_08]: Additionally, it has been difficult to
+calibrate the index using coarser
+[SPEAKER_08]: resolution images from the drone.
+[SPEAKER_08]: And so I'm still working out.
+[SPEAKER_08]: Some kinks there.
+[SPEAKER_08]: But when I'm thinking about next steps,
+there's a lot that I am looking forward to
+[SPEAKER_08]: working on.
+[SPEAKER_08]: So first, I plan to create alimetric
+equations that are specifically using
+[SPEAKER_08]: remote sensing variables.
+[SPEAKER_08]: This is what these trees look like.
+[SPEAKER_08]: So it is really not that fun to take the
+diameter at breast height of these trees
+[SPEAKER_08]: and also probably not that useful because
+it is not a variable that's observable
+[SPEAKER_08]: from aerial images.
+[SPEAKER_08]: So I plan to use LIDAR in the coming field
+season to create better alimetric
+[SPEAKER_08]: equations that rely on variables such as
+height and canopy diameter instead of
+[SPEAKER_08]: diameter at breast height.
+[SPEAKER_08]: And that will save me a lot of time and a
+lot of being stabbed in the eye.
+[SPEAKER_08]: So I'm looking forward to that.
+[SPEAKER_08]: And next, these trees, as I think with all
+other trees, are 3D objects.
+[SPEAKER_08]: So they contain a lot of information on
+the sides of the trees that are missed
+[SPEAKER_08]: from aerial images.
+[SPEAKER_08]: So to account for the number of cones that
+are hidden from aerial images,
+[SPEAKER_08]: I've taken some orbital flights around my
+focal trees.
+[SPEAKER_08]: And I plan to create a conversion factor
+for the number of cones that are missed
+[SPEAKER_08]: when just looking at the trees from the
+top down.
+[SPEAKER_08]: Next, and this is kind of like my big push
+right now, is to figure out ways to adjust
+[SPEAKER_08]: for different lighting conditions again,
+you're seeing here a quadrat picture that
+[SPEAKER_08]: is just in a lot of shadows.
+[SPEAKER_08]: And the index doesn't really know what's
+going on with the number of cones that it
+[SPEAKER_08]: is seeing here.
+[SPEAKER_08]: So if you have any kind of workflow that
+you've used in your research, I'd be very
+[SPEAKER_08]: happy to hear about it.
+[SPEAKER_08]: And hopefully, I can find a workaround for
+this.
+[SPEAKER_08]: And lastly, one next step that is feeling
+especially exciting to me is scaling up to
+[SPEAKER_08]: satellite images using the index to be
+able to measure cone production and pollen
+[SPEAKER_08]: production across much larger spatial and
+temporal extents.
+[SPEAKER_08]: And this would allow us to get a more
+comprehensive data set across central
+[SPEAKER_08]: Texas at the regional level rather than
+just being limited to the study sites that
+[SPEAKER_08]: I'm able to visit.
+[SPEAKER_08]: So I want to now bring us back to where we
+started.
+[SPEAKER_08]: So I've shown you so far how we can better
+measure pollen production across large
+[SPEAKER_08]: spatial and temporal extents.
+[SPEAKER_08]: And so now that we can measure it,
+how can we use this information and pair
+[SPEAKER_08]: it with existing environmental data to
+start to understand what the abiotic
+[SPEAKER_08]: drivers of reproduction might be that
+drive variation in reproduction across
+[SPEAKER_08]: space and time?
+[SPEAKER_08]: So this is very new data that is more of a
+proof of concept than anything.
+[SPEAKER_08]: But what you're seeing here is the mean
+index value from my sites compared with
+[SPEAKER_08]: the mean soil moisture data from SMAP.
+[SPEAKER_08]: And it is this kind of workflow that I
+hope to use in my second chapter to
+[SPEAKER_08]: compare the reproductive output with
+gridded environmental data sets.
+[SPEAKER_08]: Obviously, reproduction is an incredibly
+complex process that will require much
+[SPEAKER_08]: more sophisticated statistical tools such
+as hierarchical modeling to start to
+[SPEAKER_08]: uncover what is driving the variability
+and reproduction in these trees.
+[SPEAKER_08]: But yeah, I'm excited to explore this in
+my coming years at Cornell.
+[SPEAKER_08]: So key takeaways.
+[SPEAKER_08]: If you remember nothing else from this
+presentation, my name is Hannah.
+[SPEAKER_08]: And also, I have just shown you that we
+can measure pollen production over these
+[SPEAKER_08]: large spatial extents using aerial images,
+which will allow us to create better
+[SPEAKER_08]: airborne pollen forecasts.
+[SPEAKER_08]: That is part of my chapter one.
+[SPEAKER_08]: And then we can also use the data set
+collected here to start to explore the
+[SPEAKER_08]: abiotic drivers of the variability and
+reproduction for these trees.
+[SPEAKER_08]: And this will be part of my chapter two.
+[SPEAKER_08]: And you will just have to stay tuned for
+chapter three.
+[SPEAKER_08]: With that, I'd like to thank everyone who
+made this work possible.
+[SPEAKER_08]: Everything we're doing is in the presence
+of others.
+[SPEAKER_08]: And I'm so grateful for everyone.
+[SPEAKER_08]: Not only the people listed on this slide,
+but just to be in community with you all
+[SPEAKER_08]: has been a real joy at Cornell.
+[SPEAKER_08]: So thank you.
+[SPEAKER_08]: And I'll take questions now or later.
+OK.
+[SPEAKER_02]: I'm just curious, how did you arrive at
+your sort of orange-ness conducts?
+[SPEAKER_02]: Did you try other sort of indices?
+Oh, yeah.
+[SPEAKER_08]: Great question.
+[SPEAKER_08]: Yeah.
+[SPEAKER_08]: I tried a lot of indices, actually.
+[SPEAKER_08]: There was a lot of looking through the
+literature and seeing what other people
+[SPEAKER_08]: have used.
+[SPEAKER_08]: And we arrived at the orange-ness index
+just kind of by way of it being what seems
+[SPEAKER_08]: the most feasible.
+[SPEAKER_08]: Because the cones are so orange,
+we thought that maybe because there would
+[SPEAKER_08]: be more red values associated with those
+cones compared to the green values,
+[SPEAKER_08]: that would be the best combination of
+bands to actually pick up on those
+[SPEAKER_08]: differences.
+[SPEAKER_08]: But yeah, definitely still could possibly
+change.
+[SPEAKER_08]: But that's what's worked the best so far.
+[SPEAKER_00]: I was wondering, is there hope to maybe
+the answer will come when you have more
+[SPEAKER_00]: information on chapter two.
+[SPEAKER_00]: But is there hope to kind of do a survey
+one year and then run with that
+[SPEAKER_00]: information for several years?
+[SPEAKER_00]: Or do you think that it's going to be
+something that has to be done?
+[SPEAKER_08]: That's a good question.
+[SPEAKER_08]: So like, how often?
+[SPEAKER_08]: How often for data collection?
+[SPEAKER_08]: I plan to do three years.
+[SPEAKER_08]: But the idea is that if we could scale up
+to satellite images, this would enable me
+[SPEAKER_08]: to not actually go down and collect the
+data but have a longer time series both
+[SPEAKER_08]: back into before I started at Cornell and
+then when I don't have to go down anymore
+[SPEAKER_08]: and kind of using that information as
+well.
+[SPEAKER_08]: But yeah.
+[SPEAKER_08]: Awesome.
+[SPEAKER_08]: OK.
+[SPEAKER_08]: Thank you all so much.
+[SPEAKER_07]: So thanks again, Hannah, for a wonderful
+talk.
+[SPEAKER_07]: And I'd like to introduce Dr. Dave Miller
+next.
+[SPEAKER_07]: Dave is a postdoc working with me here on
+soil and crop sciences.
+[SPEAKER_07]: And he did his undergrad at Boston
+University.
+[SPEAKER_07]: And then he got a master's and PhD from UC
+Santa Barbara.
+[SPEAKER_07]: He then went on to do a postdoc at UC
+Berkeley.
+[SPEAKER_07]: And some of the topics of the work for his
+dissertation and for his first postdoc
+[SPEAKER_07]: were about trees and cities and using
+remote sensing to understand the effects
+[SPEAKER_07]: of drought on them.
+[SPEAKER_07]: His work from these was published in
+journals, including Nature Communications
+[SPEAKER_07]: and Remote Sensing of Environment.
+[SPEAKER_07]: And we've been very fortunate to lure Dave
+away from sunny California.
+[SPEAKER_07]: And he has been instrumental in this
+transdisciplinary collaboration,
+[SPEAKER_07]: the Cool Trees team, which is working to
+understand how we can use trees to keep
+[SPEAKER_07]: cities cool during heat waves and
+ultimately reduce heat related morbidity.
+[SPEAKER_07]: And we've been very fortunate to have Dave
+here and to benefit from his expertise in
+[SPEAKER_07]: remote sensing and in making beautiful
+maps.
+[SPEAKER_07]: So please join me in welcoming Dave.
+[SPEAKER_01]: Thank you, Dan, for that kind
+introduction.
+[SPEAKER_01]: And welcome, everyone, to our second of
+two talks today.
+[SPEAKER_01]: It's a tough act to follow.
+[SPEAKER_01]: I'll do my best.
+[SPEAKER_01]: So today I'm going to be talking a lot
+about New York City and classifying urban
+[SPEAKER_01]: tree species using a lot of high
+resolution satellite time series for heat
+[SPEAKER_01]: related public health impacts.
+[SPEAKER_01]: A lot of our co-authors here are at
+Cornell in civil engineering and also at
+[SPEAKER_01]: Weill Cornell in New York.
+[SPEAKER_01]: And we'll kind of get into it.
+[SPEAKER_01]: Tree species vary in cooling capacity.
+[SPEAKER_01]: But how can we use this to actually reduce
+heat?
+[SPEAKER_01]: Anyone who's walked under different types
+of trees in your neighborhood,
+[SPEAKER_01]: a big maple tree is going to provide a lot
+more shade, a lot more cooling than
+[SPEAKER_01]: perhaps a smaller cherry tree would.
+[SPEAKER_01]: And so tree species actually cool
+differently in the environment.
+[SPEAKER_01]: But these differences aren't really
+included in models for heat and human
+[SPEAKER_01]: exposure health related.
+[SPEAKER_01]: So shading, for example, tree size,
+of course, and leaf area.
+[SPEAKER_01]: So how many leaves do you have on this
+particular tree?
+[SPEAKER_01]: As well as evaporative cooling.
+[SPEAKER_01]: So this has to do with transpiration
+rates.
+[SPEAKER_01]: How much water can these trees actually
+pump into the air to cool things down over
+[SPEAKER_01]: time?
+[SPEAKER_01]: Smodal density, things like that.
+[SPEAKER_01]: So there's differences across species.
+[SPEAKER_01]: But these aren't really included in tree
+selection decisions.
+[SPEAKER_01]: The most you'll probably get from these
+sort of things is how big is this tree
+[SPEAKER_01]: going to get?
+[SPEAKER_01]: Is it going to get in the way of power
+lines or something like that?
+[SPEAKER_01]: And also, is this tree actually going to
+survive in this location?
+[SPEAKER_01]: But in terms of a lot of these species
+level differences, we don't really have
+[SPEAKER_01]: that information.
+[SPEAKER_01]: And we don't really have good information
+about what trees are where in the city of
+[SPEAKER_01]: New York.
+[SPEAKER_01]: We have some information, quite a bit.
+[SPEAKER_01]: But we don't have information about where
+they all are, which is really needed to
+[SPEAKER_01]: reduce heat and health impacts more
+precisely.
+[SPEAKER_01]: So maps of tree taxa are really needed to
+reduce heat more precisely in cities.
+[SPEAKER_01]: And because of this, we can actually
+estimate cooling at a scale that's more
+[SPEAKER_01]: relevant to urban residents.
+[SPEAKER_01]: If you're thinking about a large
+neighborhood area, a lot of this health
+[SPEAKER_01]: analysis is done at census blocks or
+census block groups.
+[SPEAKER_01]: It may be shady and cool in one part of
+the neighborhood, but not the other part
+[SPEAKER_01]: of the neighborhood.
+[SPEAKER_01]: And that's an issue.
+[SPEAKER_01]: Because if you're walking down the street
+in your particular part of town,
+[SPEAKER_01]: if you don't have many trees in your
+street, what does it matter that that park
+[SPEAKER_01]: has tons of trees just down the road?
+[SPEAKER_01]: And so there are many methods from remote
+sensing to do tree identification.
+[SPEAKER_01]: But getting down to genus and species
+level stuff is just pretty hard in
+[SPEAKER_01]: general.
+[SPEAKER_01]: The big issue is that mid-summer,
+you may have experienced this yourself.
+[SPEAKER_01]: Green trees kind of all look the same,
+especially from multispectral images like
+[SPEAKER_01]: a lot of the satellite data we actually
+use.
+[SPEAKER_01]: But at certain times of year, trees can
+look very different.
+[SPEAKER_01]: So I'd like to show you one of the few
+windows in Bradfield Hall.
+[SPEAKER_01]: This is looking north.
+[SPEAKER_01]: Dan took a bunch of these pictures.
+[SPEAKER_01]: And what you can see here is that these
+are a few different times of year.
+[SPEAKER_01]: So summer on the top left, these all look
+pretty green.
+[SPEAKER_01]: But spring, early fall, late fall,
+they look kind of different.
+[SPEAKER_01]: So if you're looking at this particular
+tree, over here, well, it's turning
+[SPEAKER_01]: yellow, while other trees are senescing a
+little bit.
+[SPEAKER_01]: But this one over here, it's not quite the
+same color as the other one.
+[SPEAKER_01]: So perhaps they're different species.
+[SPEAKER_01]: Maybe we can lean on this type of
+information to get at different types of
+[SPEAKER_01]: seasonality.
+[SPEAKER_01]: So can we use deciduous phenology to
+classify trees?
+[SPEAKER_01]: And by phenology, I mean the seasonal
+timing of different events in nature.
+[SPEAKER_01]: So in the case of deciduous trees,
+when do they put out leaves?
+[SPEAKER_01]: When do they lose leaves?
+[SPEAKER_01]: How does this timing differ year to year
+in between species?
+[SPEAKER_01]: So urban trees have been classified for
+multiple seasonal images recently.
+[SPEAKER_01]: So you take a big stack of satellite data.
+[SPEAKER_01]: You throw that all into a big classifier.
+[SPEAKER_01]: You can do pretty well with that.
+[SPEAKER_01]: But what there haven't been before is that
+classifications based on the time series
+[SPEAKER_01]: that actually derives the phenological
+dates.
+[SPEAKER_01]: So what is a precise date you could give
+to a model to say, oh, what is the leaf
+[SPEAKER_01]: out in the start of spring?
+[SPEAKER_01]: So what we can do is we're aiming to
+identify taxonomic differences at fine
+[SPEAKER_01]: timing.
+[SPEAKER_01]: And we can do that with time scales,
+which all sounds well and good.
+[SPEAKER_01]: But actually, getting the data to do this
+is not the most straightforward thing in
+[SPEAKER_01]: the world.
+[SPEAKER_01]: So there are some data requirements to
+this.
+[SPEAKER_01]: One of the big trade-offs a lot of the
+time with satellite imagery is different
+[SPEAKER_01]: types of resolutions.
+[SPEAKER_01]: Usually, you can get pretty good temporal
+resolution, so lots of observations.
+[SPEAKER_01]: But the pixels have to be pretty big.
+[SPEAKER_01]: But if you're dealing with something that
+you want to get lots of precise
+[SPEAKER_01]: measurements, you need high spatial
+resolution as well.
+[SPEAKER_01]: So fortunately, Planet is a commercial
+satellite company.
+[SPEAKER_01]: And they have a constellation of
+satellites called PlanetScope that both
+[SPEAKER_01]: has high spatial, roughly three meters,
+and high temporal resolution imagery.
+[SPEAKER_01]: So you can get observations almost every
+single day.
+[SPEAKER_01]: And the way they get around this is by
+launching hundreds of these small sats
+[SPEAKER_01]: that take observations pretty often.
+[SPEAKER_01]: So we can do that and lean on that to look
+at individual trees and their seasonal
+[SPEAKER_01]: timing.
+[SPEAKER_01]: But we also need good labeled training
+data to actually predict on.
+[SPEAKER_01]: You can't do a classification without
+having some good training data.
+[SPEAKER_01]: And thankfully, the city of New York has
+tree STEM and ID database from a street
+[SPEAKER_01]: tree database where people literally went
+out and hugged a million trees in New York
+[SPEAKER_01]: City and labeled them with different genus
+levels, cultivar, quality status of the
+[SPEAKER_01]: canopy, which is awesome.
+[SPEAKER_01]: But that's still less than 20% of the
+total number of trees in New York.
+[SPEAKER_01]: So there's still a lot of places that need
+to be filled in.
+[SPEAKER_01]: And also, you need a good tree crown
+polygon data set, because you actually
+[SPEAKER_01]: need an object that you're putting a label
+on.
+[SPEAKER_01]: Otherwise, you're just doing pixels,
+and it could be pretty noisy.
+[SPEAKER_01]: So thankfully, there's already been
+classification of tree crown polygons from
+[SPEAKER_01]: city-wide LIDAR flights.
+[SPEAKER_01]: We tried to make polygons ourselves from
+LIDAR.
+[SPEAKER_01]: It's pretty challenging.
+[SPEAKER_01]: And so we're thankful that this data set
+already exists.
+[SPEAKER_01]: So the research goals from this,
+examining the differences, the first step
+[SPEAKER_01]: in this, and examining the differences in
+urban tree phenology by TAXA in New York
+[SPEAKER_01]: City.
+[SPEAKER_01]: And so the main research questions for
+this is, how can satellite-based phenology
+[SPEAKER_01]: be used to actually separate urban
+deciduous tree TAXA in New York City?
+[SPEAKER_01]: One of the key things to keep in mind,
+and why we're getting away with this
+[SPEAKER_01]: technique in a place like New York,
+is that it's mostly deciduous trees,
+[SPEAKER_01]: like over 90%.
+[SPEAKER_01]: If you were doing this in a place with a
+lot more evergreen trees, like,
+[SPEAKER_01]: let's say, Seattle or Miami, you'd have a
+lot harder time doing this.
+[SPEAKER_01]: And this may not be the best technique for
+you.
+[SPEAKER_01]: Some other questions, temporal.
+[SPEAKER_01]: So what is the year to year variability of
+spring leaf out, in terms of the start of
+[SPEAKER_01]: season, among different trees?
+[SPEAKER_01]: Some types of trees.
+[SPEAKER_01]: And also spatial.
+[SPEAKER_01]: So how does spring leaf out very spatially
+across the city?
+[SPEAKER_01]: Maybe you're a tree in Manhattan.
+[SPEAKER_01]: You're a real go-getter.
+[SPEAKER_01]: You leaf out early.
+[SPEAKER_01]: Trees in Brooklyn, maybe not.
+[SPEAKER_01]: I don't know.
+[SPEAKER_01]: So we'll have to just take a look at it.
+[SPEAKER_01]: We're also going to look at the end of
+season, but it's going to be a lot more
+[SPEAKER_01]: challenging.
+[SPEAKER_01]: So here's an example of tree data in
+Flatbush, Brooklyn.
+[SPEAKER_01]: This is a little bit south of Prospect
+Park.
+[SPEAKER_01]: What's cool about this neighborhood is
+that you have a lot of single-family homes
+[SPEAKER_01]: with trees, individually, across this sort
+of central neighborhood, but larger
+[SPEAKER_01]: apartment blocks over on the side.
+[SPEAKER_01]: So big differences in the amount of tree
+cover you have.
+[SPEAKER_01]: Each one of these colored points is a
+street tree that Parks and Rec Department
+[SPEAKER_01]: actually labeled.
+[SPEAKER_01]: And so different colors by different tree
+species.
+[SPEAKER_01]: So there's a lot of these points,
+which is awesome, but there's still a lot
+[SPEAKER_01]: of places that are missing.
+[SPEAKER_01]: So this is what this tree polygon data set
+looks like on top of that.
+[SPEAKER_01]: And this is from the Nature Conservancy
+and the University of Vermont Spatial
+[SPEAKER_01]: Analysis Lab.
+[SPEAKER_01]: So this data set is really cool.
+[SPEAKER_01]: Because we can actually put labels to all
+these trees for the places that are
+[SPEAKER_01]: missing.
+[SPEAKER_01]: So how do we actually get there?
+[SPEAKER_01]: We have this map of tree stems from the
+New York City Parks and Rec.
+[SPEAKER_01]: And what we want is a final map of all the
+trees labeled in New York City,
+[SPEAKER_01]: right?
+[SPEAKER_01]: No big deal.
+[SPEAKER_01]: It's fine.
+[SPEAKER_01]: How do we actually get there?
+[SPEAKER_01]: We use this PlanetScope satellite time
+series, LIDAR TreeCom polygons and
+[SPEAKER_01]: structure, and also air temperature data
+to look at what time of year should trees
+[SPEAKER_01]: leaf out based on accumulated?
+[SPEAKER_01]: How warm is this different place in the
+city?
+[SPEAKER_01]: So for each tree crown polygon,
+extract this time series of reflectance
+[SPEAKER_01]: from PlanetScope reflectance time series,
+clean this up, extract key phenology data,
+[SPEAKER_01]: and then also LIDAR structural variables.
+[SPEAKER_01]: So how tall is the tree?
+[SPEAKER_01]: How big is the crown?
+[SPEAKER_01]: How dense is the canopy?
+[SPEAKER_01]: And air temperature related data.
+[SPEAKER_01]: And so we have this suite of different
+information all for this individual tree.
+[SPEAKER_01]: So we can use the labels of tree stems
+from the New York City Parks and Rec as
+[SPEAKER_01]: our reference training.
+[SPEAKER_01]: And validation data sets.
+[SPEAKER_01]: So this is the trees we know what they are
+and where they are.
+[SPEAKER_01]: And we can use that and develop a
+classifier.
+[SPEAKER_01]: Yes, I'm using random forest to classify
+trees.
+[SPEAKER_01]: And apply that classifier to all the
+unknown tree polygons across New York.
+[SPEAKER_01]: And ta-da, we have New York City.
+[SPEAKER_01]: All completed for a final map of trees in
+New York.
+[SPEAKER_01]: But I'm going to talk mostly about this
+part up here in terms of actually how we
+[SPEAKER_01]: get the phenology information out of this.
+[SPEAKER_01]: So here's from the National Agricultural
+Imagery Program, NAEP.
+[SPEAKER_01]: If you've looked at any agricultural data,
+you may be familiar with it.
+[SPEAKER_01]: They do it in New York City as well.
+[SPEAKER_01]: So this is a true color air photo from
+summer 2019, which is great.
+[SPEAKER_01]: But they only do this every couple of
+years and right in the middle of summer.
+[SPEAKER_01]: So you can't get much seasonality out of
+this.
+[SPEAKER_01]: So this is PlanetScope, which is slightly
+coarser resolution, but much more
+[SPEAKER_01]: observations.
+[SPEAKER_01]: I'm showing it in the false color
+composite near infrared red green with
+[SPEAKER_01]: near infrared on the red display.
+[SPEAKER_01]: So plants reflect way more light in the
+near infrared.
+[SPEAKER_01]: And so anything that you see on this map
+is bright red.
+[SPEAKER_01]: That's normally green plants that you
+would see with your naked eye.
+[SPEAKER_01]: So here's phenology time series of a
+particular oak tree, a very charismatic
+[SPEAKER_01]: one that's well-behaved in the South
+Bronx.
+[SPEAKER_01]: So that's what it is in the NAEP imagery
+on the top left from the street.
+[SPEAKER_01]: And so this particular tree, I'm showing
+the PlanetScope imagery down here.
+[SPEAKER_01]: And this is a time series of NDVI through
+time.
+[SPEAKER_01]: And you can see as it gets bright red in
+the spring, that's when it's greening up.
+[SPEAKER_01]: And so this is what we're tracking for
+every single one of these tree crowned
+[SPEAKER_01]: polygons across New York.
+[SPEAKER_01]: And the actual value we're tracking is the
+NDVI, which is a very common satellite
+[SPEAKER_01]: remote sensing index where you're
+comparing the near infrared to the red.
+[SPEAKER_01]: As this number gets higher, the plants are
+greener.
+[SPEAKER_01]: And we can track this year over year.
+[SPEAKER_01]: So for example, for all the trees that we
+know, what they're labeled, this is for
+[SPEAKER_01]: all the maples in New York City for 2018
+from PlanetScope.
+[SPEAKER_01]: So this, you can see a lot of these are
+toward the first week of May, roughly.
+[SPEAKER_01]: But you can do this year over year.
+[SPEAKER_01]: And so you have approximate timing of
+leaf-out variability across every single
+[SPEAKER_01]: year that we have available.
+[SPEAKER_01]: You'll notice there's some year-to-year
+variability.
+[SPEAKER_01]: For example, 2019 and 2022 tend to be a
+little bit later.
+[SPEAKER_01]: But what we can see is that when we can
+separate this out further, you can get
+[SPEAKER_01]: down to species level as well.
+[SPEAKER_01]: So for example, silver maple in the middle
+here tends to be a little bit later than
+[SPEAKER_01]: red maple or Norway maple.
+[SPEAKER_01]: So there are some different species level
+differences we can get at as well.
+[SPEAKER_01]: So we can do this for other genera.
+[SPEAKER_01]: So for example, here is platanus.
+[SPEAKER_01]: So they're plane trees or sycamores.
+[SPEAKER_01]: One thing you'll notice about this one is,
+A, it tends to be a lot later than the
+[SPEAKER_01]: maples, which is reassuring because they
+probably should be.
+[SPEAKER_01]: But also this year, 2019, is super duper
+late.
+[SPEAKER_01]: So we're looking at late May for this
+tree, which is suspiciously late in some
+[SPEAKER_01]: ways.
+[SPEAKER_01]: So how do we actually translate phenology
+into a classification?
+[SPEAKER_01]: One thing to keep in mind is that this is
+one particular year in 2019 and this is
+[SPEAKER_01]: just separated by a different genera.
+[SPEAKER_01]: And this is different months in the
+spring, box plots showing the distribution
+[SPEAKER_01]: of timing for the trees that we know.
+[SPEAKER_01]: So for example, based on this,
+we could do a pretty good job separating
+[SPEAKER_01]: Glittitsia, the honey locust, from Acer or
+maples.
+[SPEAKER_01]: But getting back to platanus, it's way,
+way later than everything else.
+[SPEAKER_01]: So for example, we should be able to
+readily separate this genus based on its
+[SPEAKER_01]: consistent late spring leaf out in 2019.
+[SPEAKER_01]: What we think is going on is that there is
+an anthropomorphic fracnose fungus causing
+[SPEAKER_01]: delayed spring leaf out.
+[SPEAKER_01]: This is a fungus that causes the plants to
+attempt to leaf out in the spring.
+[SPEAKER_01]: Then it looks like they have frost damage
+or leaf wilt.
+[SPEAKER_01]: And the leaves kind of shrivel up and
+don't look that happy.
+[SPEAKER_01]: Trees look bare until much later in the
+growing season.
+[SPEAKER_01]: Then they get their act together by the
+end of May and summer goes on.
+[SPEAKER_01]: But what we can do is that for an example
+test case on a classification,
+[SPEAKER_01]: we can lean on this and a few other
+structural variables from the lidar and do
+[SPEAKER_01]: a prototype classification for the bronx.
+[SPEAKER_01]: For platanus versus other genera,
+just a split.
+[SPEAKER_01]: And so we get like a 93% overall accuracy
+in this.
+[SPEAKER_01]: The big points that you see on here are
+the actual labeled street tree stems.
+[SPEAKER_01]: And so everything else, we label it as
+either platanus or something else.
+[SPEAKER_01]: And so the blue, you can see a lot of
+platanus are labeled around buildings
+[SPEAKER_01]: where we don't have the street tree
+labels.
+[SPEAKER_01]: So we're painting everything in that we
+need new labels for.
+[SPEAKER_01]: And we can do this in a lot of bigger
+neighborhoods.
+[SPEAKER_01]: So for example, this is a relatively large
+apartment blocks.
+[SPEAKER_01]: And you can see that a lot of the trees
+that weren't included in that street tree
+[SPEAKER_01]: database, we can actually provide labels
+for based on this.
+[SPEAKER_01]: So we can do an initial test case on this.
+[SPEAKER_01]: But what about spatial variation in
+phenology?
+[SPEAKER_01]: So we need some more information based on
+temperature as well.
+[SPEAKER_01]: So this is a temperature data set that
+takes coarser resolution data.
+[SPEAKER_01]: Downscales it based on different
+structural parameters on the surface,
+[SPEAKER_01]: like green vegetation, impervious surface,
+things like that.
+[SPEAKER_01]: We didn't make this product, but what's
+really cool about it is that it's really
+[SPEAKER_01]: high spatial resolution.
+[SPEAKER_01]: So we can get pretty good information on
+what is the temperature accumulation for
+[SPEAKER_01]: different trees.
+[SPEAKER_01]: So what's important about that is that if
+you have different amount of temperatures
+[SPEAKER_01]: in different locations in the city,
+you would expect, oh, if I'm in this
+[SPEAKER_01]: location and it's this warm, well,
+what will my leaf out timing be for this
+[SPEAKER_01]: genus versus this genus?
+[SPEAKER_01]: If we have information about, okay,
+it leafed out here and it's this warm,
+[SPEAKER_01]: well, we have much more better information
+about which is which.
+[SPEAKER_01]: So for two different genera, we might see
+different response patterns in air
+[SPEAKER_01]: temperature.
+[SPEAKER_01]: And this is where we're kind of going next
+steps for this.
+[SPEAKER_01]: Another thing that I've been dealing with
+the last week or so is looking at a
+[SPEAKER_01]: webcam.
+[SPEAKER_01]: This is what's called a phenocam,
+so a phenology camera.
+[SPEAKER_01]: This is at the top of CUNY in northern
+Manhattan.
+[SPEAKER_01]: And this is just staring at this park all
+the time, so this is St. Nicholas Park.
+[SPEAKER_01]: Here it is in, this is beginning of April
+2022.
+[SPEAKER_01]: What they look at is like they take a
+polygon like this and then work through it
+[SPEAKER_01]: through time.
+[SPEAKER_01]: You can see the trees green up.
+[SPEAKER_01]: And so just back of the envelope,
+comparing this sort of polygon shape that
+[SPEAKER_01]: they have versus the trees in this
+polygon, 2022 were roughly the same time,
+[SPEAKER_01]: May 3rd, April 29th, which isn't too bad.
+[SPEAKER_01]: 2023, we're a couple weeks off,
+but in digging into the data, there may be
+[SPEAKER_01]: some issues with the phenocam and there
+may be some issues with the plant scope
+[SPEAKER_01]: imagery, so take that one with a grain of
+salt for now.
+[SPEAKER_01]: But what I'm working on now is examining
+individual trees, so taking little boxes
+[SPEAKER_01]: of trees and tracking those through time
+individually.
+[SPEAKER_01]: So just some implications for this.
+[SPEAKER_01]: Phenology shows promise as a way of
+identifying urban tree taxa.
+[SPEAKER_01]: So we have this platinus classification as
+a proof of concept.
+[SPEAKER_01]: And there's separability that currently
+exists for other genera, but we're going
+[SPEAKER_01]: to build on this and include temperature,
+phenology, relationships, and lots of
+[SPEAKER_01]: other things in order to do a better
+classification.
+[SPEAKER_01]: And so the goal will be, well,
+we're not going to get every single
+[SPEAKER_01]: species across the entire city.
+[SPEAKER_01]: There's just too many of them,
+but we can get a lot of the most populous
+[SPEAKER_01]: species.
+[SPEAKER_01]: We won't get populous.
+[SPEAKER_01]: That's not in here, but we'll get a lot of
+other things.
+[SPEAKER_01]: So methods have potential to be scaled
+spatially and temporally.
+[SPEAKER_01]: So we could do this across multiple years
+if we needed to.
+[SPEAKER_01]: And the eventual goal will be to create a
+scalable pipeline that can be applied to
+[SPEAKER_01]: other cities.
+[SPEAKER_01]: So if you live in Cleveland or Chicago or
+I don't know, Ithaca, if you had the data,
+[SPEAKER_01]: we could do something like this,
+which would be pretty cool.
+[SPEAKER_01]: You'll notice I didn't talk about health
+at all for the last, I don't know,
+[SPEAKER_01]: 16 minutes.
+[SPEAKER_01]: So what's the big picture for this?
+[SPEAKER_01]: We're going to link tree identity to
+public health decisions.
+[SPEAKER_01]: And so my corner, Dan's corner of the
+project, is in this tree taxa
+[SPEAKER_01]: classification, mapping trees in New York
+using the remote sensing and the
+[SPEAKER_01]: phenology.
+[SPEAKER_01]: But what we're actually planning to do is
+hand off this information to colleagues in
+[SPEAKER_01]: civil engineering and Professor Chi Li's
+group to do genus level classification.
+[SPEAKER_01]: Take that genus level classification and
+turn it into an urban heat model.
+[SPEAKER_01]: So they have a model that can run at
+pretty high spatial resolution,
+[SPEAKER_01]: roughly 100 meters or however much they
+want to define it, and include that
+[SPEAKER_01]: information on tree structure and cooling
+to be able to have better information on
+[SPEAKER_01]: what is the condition in different areas
+and different neighborhoods at a scale
+[SPEAKER_01]: that's relevant to people.
+[SPEAKER_01]: So when we have that sort of temperature
+and heat information, that can be used
+[SPEAKER_01]: related to epidemiology and social
+justice.
+[SPEAKER_01]: So assessing marginal effects of species
+on like emergency department visits,
+[SPEAKER_01]: like if you have certain amount of certain
+types of trees in a neighborhood,
+[SPEAKER_01]: comparing those neighborhoods,
+how many department visits do you have
+[SPEAKER_01]: during heat waves or other times of year,
+and also those different types of health
+[SPEAKER_01]: effects of these trees into urban green
+decisions and public health decisions.
+[SPEAKER_01]: So that includes colleagues at Weill
+Cornell, including Arnav Ghosh and Wenna
+[SPEAKER_01]: Shi, colleagues in natural resources,
+and also in other parts around New England
+[SPEAKER_01]: as well.
+[SPEAKER_01]: And so additional acknowledgments,
+colleagues at the Nature Conservancy and
+[SPEAKER_01]: the Natural Areas Conservancy,
+two separate organizations with similar
+[SPEAKER_01]: sounding names, and some other information
+from colleagues at American University and
+[SPEAKER_01]: CUC Santa Barbara to help with the plan
+and scope data.
+[SPEAKER_01]: So I'm going to leave this up for the end,
+and feel free to ask any questions,
+[SPEAKER_01]: and thanks for your time.
+[SPEAKER_03]: Well, many cities are considering what's
+going to happen with climate change and
+[SPEAKER_03]: how that's going to have to change the
+kinds of trees they plant in a given
+[SPEAKER_03]: location.
+[SPEAKER_03]: Are you contemplating those issues in your
+work?
+[SPEAKER_01]: Yeah.
+[SPEAKER_01]: So the question is about, with climate
+change, is that information in terms of
+[SPEAKER_01]: what the tree species palette should be
+included in our work and how we're looking
+[SPEAKER_01]: at that.
+[SPEAKER_01]: We're not addressing that specifically,
+but that is definitely a question longer
+[SPEAKER_01]: term.
+[SPEAKER_01]: And it could be something where you look
+at different parts of the city and say,
+[SPEAKER_01]: oh, this part of the city is warmer.
+[SPEAKER_01]: You could use the survivability in this
+part of the city to compare and project in
+[SPEAKER_01]: other parts.
+[SPEAKER_01]: There's stuff being done in terms of
+moving different genotypes and planting
+[SPEAKER_01]: those that are from further south.
+[SPEAKER_01]: So we're not dealing with that end
+specifically, but that's definitely a
+[SPEAKER_01]: consideration for sure.
+[SPEAKER_00]: I really like the animation, the time
+series animation with the DVI going up and
+[SPEAKER_00]: down.
+[SPEAKER_00]: I was expecting that thing to kind of
+plateau and stay kind of high,
+[SPEAKER_00]: fairly level, but it peaks and then starts
+going down.
+[SPEAKER_00]: Is this typical of all trees doing this?
+[SPEAKER_00]: Or is this something that could be used
+for maybe differentiating trees?
+[SPEAKER_01]: Yeah.
+[SPEAKER_01]: So that's pretty typical for trees.
+[SPEAKER_01]: It peaks and then it's... Yeah.
+[SPEAKER_01]: And you get a peak around June-ish and
+then it slowly kind of declines through
+[SPEAKER_01]: the summer.
+[SPEAKER_01]: It's still a dense canopy through the
+summer.
+[SPEAKER_01]: It's just not as bright, vibrant as you
+would have first thing in the growing
+[SPEAKER_01]: season.
+[SPEAKER_01]: So yeah, that plateau isn't necessarily
+totally flat.
+Yeah.
+[SPEAKER_00]: Really cool.
+[SPEAKER_01]: Yeah.
+[SPEAKER_05]: That was great.
+[SPEAKER_05]: Thank you.
+[SPEAKER_05]: So nice to hear more about what you've
+been working on.
+[SPEAKER_05]: Kind of related to this last question,
+I'm curious if there are other land
+[SPEAKER_05]: surface phenology metrics besides just
+start of season and end of season that
+[SPEAKER_05]: kind of describe that curve in more
+detail.
+[SPEAKER_05]: And have you guys looked at how some of
+those other metrics might vary across the
+[SPEAKER_05]: species in terms of helping to parse those
+out?
+[SPEAKER_01]: So the question is about other land
+surface phenology metrics besides just
+[SPEAKER_01]: start of season and end of season.
+[SPEAKER_01]: We've looked into it, but we haven't
+actually gotten too far with that yet.
+[SPEAKER_01]: So there's other stuff we can fit in that
+curve besides what I'm showing at start of
+[SPEAKER_01]: season and end of season.
+[SPEAKER_01]: It's just like the 50% point on these S
+shape, like these sigmoid curves.
+[SPEAKER_01]: But you can do different times a year.
+[SPEAKER_01]: And a lot of these other phenology models
+will do stuff where they have like,
+[SPEAKER_01]: here's the max, here's this mid slope
+decline, lots of other things like that.
+[SPEAKER_01]: I think for now, we're just going to stick
+with these and then build out from it.
+[SPEAKER_01]: One thing we actually want to try to do is
+actually lean on the color component of it
+[SPEAKER_01]: more and see if we can pick out
+individuals that have really distinct
+[SPEAKER_01]: color situations, different parts of the
+year, for example, like ginkgo trees,
+[SPEAKER_01]: like that ginkgo tree out there turned
+like this electric yellow in the fall.
+[SPEAKER_01]: And if we can capture that, that would be
+really helpful.
+[SPEAKER_01]: So yeah, I want to think about that more
+for sure.
+[SPEAKER_06]: Does your system allow you to capture like
+invasive trees?
+[SPEAKER_06]: I mean, I'm thinking New York City,
+Tree of Heaven, Bradford Pears,
+[SPEAKER_06]: which a lot of folks certainly wouldn't
+want to see, or at least an increasing
+[SPEAKER_06]: number.
+[SPEAKER_06]: So I'm just wondering, have you come
+across that as being an issue?
+[SPEAKER_01]: Yeah, I mean, so the question is about,
+can we capture invasive trees?
+[SPEAKER_01]: And the answer is, if they're in the data
+set already and there's enough of them,
+[SPEAKER_01]: we can probably label them.
+[SPEAKER_01]: We don't have 100% like what the
+classification level is going to be.
+[SPEAKER_01]: But Tree of Heaven, Ilanthus, there's
+enough of them that we should be able to
+[SPEAKER_01]: get those.
+[SPEAKER_01]: But if they don't currently exist,
+so there's very few, they won't show up in
+[SPEAKER_01]: the classifier.
+[SPEAKER_01]: Yeah, unfortunately.
+[SPEAKER_04]: Nice talk, Dave.
+[SPEAKER_04]: I have a question, coming back to your
+very original motivation, like the
+[SPEAKER_04]: cooling, different cooling factor from
+different species.
+[SPEAKER_04]: I was wondering how your classifier map
+can be combined with ET, like Yun is
+[SPEAKER_04]: doing, to optimize like spatial
+distribution of different tree species to
+[SPEAKER_04]: basically, to best mitigate the heat in
+the tree.
+[SPEAKER_04]: Thanks.
+[SPEAKER_01]: Yeah, so the first question is about
+looking at different species types and
+[SPEAKER_01]: evapotranspiration and how their cooling
+will be included in the map.
+[SPEAKER_01]: We're talking about that, and we're not
+100% sure how that's going to slot in
+[SPEAKER_01]: exactly.
+[SPEAKER_01]: The first factor is leaf area index,
+of course, which is just the amount of
+[SPEAKER_01]: leaves you have over the surface.
+[SPEAKER_01]: But what we would like to do is look at
+like the TRY database and look at
+[SPEAKER_01]: different species cooling capacities and
+be able to work with Professor Lee to
+[SPEAKER_01]: include what we can in the model.
+[SPEAKER_01]: So that's still a work in progress.
+[SPEAKER_01]: The second question is about air quality
+measurements.
+[SPEAKER_01]: And I know Dan's very interested in air
+quality.
+[SPEAKER_01]: So yeah, we've been talking about some of
+the stuff related to pollen, but other
+[SPEAKER_01]: things related to like VOCs.
+[SPEAKER_01]: We'll talk about that more, because
+there's a lot of cool implications that
+[SPEAKER_01]: can come out of classification once we
+have it.
+Thanks.
+All right.
+[SPEAKER_04]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_04]: Thank you.
+[SPEAKER_04]: Thank you.
+Thank you.

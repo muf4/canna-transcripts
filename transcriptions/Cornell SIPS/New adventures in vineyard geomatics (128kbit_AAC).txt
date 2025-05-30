@@ -1,0 +1,1203 @@
+[SPEAKER_02]: This is a production of Cornell
+University.
+[SPEAKER_02]: Good.
+[SPEAKER_01]: Before getting into the actual seminar,
+I'd like to acknowledge some of my former
+[SPEAKER_01]: graduate students and colleagues.
+[SPEAKER_01]: Ralph Brown from University of Guelph that
+did a lot of the work on remote sensing in
+[SPEAKER_01]: these projects.
+[SPEAKER_01]: And then Javad Hakimi, Mary Jasinski,
+Matthew Marciniak.
+[SPEAKER_01]: David Letterhoff, Jim Wilworth were all
+graduate students that worked on a lot of
+[SPEAKER_01]: these projects.
+[SPEAKER_01]: And so I want to acknowledge their hard
+work.
+[SPEAKER_01]: I thought I'd start off with a little bit
+of a just a funny slide just to show you
+[SPEAKER_01]: what my office sort of looked like almost
+30 years ago in Summerland after I left
+[SPEAKER_01]: Cornell.
+[SPEAKER_01]: And the point I wanted to make about this
+was you don't see a computer there.
+[SPEAKER_01]: In fact, you don't see anything electronic
+really.
+[SPEAKER_01]: These offices that we were sitting in 30
+years ago were not a whole lot different
+[SPEAKER_01]: from an office that you would have sat in
+in the 1920s really.
+[SPEAKER_01]: You know, lots of paper, a dial phone,
+no voicemail, no email, no computers.
+[SPEAKER_01]: And you can imagine just how far we have
+come in the research field in terms of our
+[SPEAKER_01]: reliance on electronics over the last 30
+years.
+[SPEAKER_01]: And you know, if you look at my office
+now, I haven't quite got the whole idea of
+[SPEAKER_01]: the paperless society, obviously.
+[SPEAKER_01]: But the main thing is this.
+[SPEAKER_01]: And we all have computers.
+[SPEAKER_01]: We all have voicemail.
+[SPEAKER_01]: We all have cell phones very often that
+take pictures.
+[SPEAKER_01]: So there's been a tremendous reliance on
+computers, computers that help us write,
+[SPEAKER_01]: computers that help us communicate,
+help us analyze data, and a number of
+[SPEAKER_01]: other things.
+[SPEAKER_01]: And so without electronics, it would be a
+very, very different world.
+[SPEAKER_01]: And electronics has helped us in
+horticulture as well.
+[SPEAKER_01]: And electronics has helped us in terms of
+mapping and getting into a whole new
+[SPEAKER_01]: scheme of things that I refer to as
+geomatics, use of GPS, use of GIS,
+[SPEAKER_01]: and vineyard mapping and horticultural
+mapping.
+[SPEAKER_01]: It doesn't have to be vineyards.
+[SPEAKER_01]: It can be orchards.
+[SPEAKER_01]: It could be agronomic crops and a whole
+bunch of other things.
+[SPEAKER_01]: So what I'd like to talk a little bit
+about today is use of GPS for purposes of
+[SPEAKER_01]: site and vine location, data acquisition,
+and how we acquire data, whether it be
+[SPEAKER_01]: from vehicles like planes or drones or
+tethered balloons.
+[SPEAKER_01]: And we've tried it all.
+[SPEAKER_01]: Or from the ground.
+[SPEAKER_01]: And there's lots of ways of doing that.
+[SPEAKER_01]: Spectral meters.
+[SPEAKER_01]: There's something called green seeker
+where you can take lateral views of the
+[SPEAKER_01]: canopy and collect spectral reflectance
+data from that.
+[SPEAKER_01]: So there's all kinds of tools out there
+that we can use.
+[SPEAKER_01]: And then there's, of course, the whole
+data analysis and display.
+[SPEAKER_01]: What do we do with all this data?
+[SPEAKER_01]: And that's where GIS comes in.
+[SPEAKER_01]: And ARC is the main GIS program that is
+used throughout the world now.
+[SPEAKER_01]: When I first started with this in the mid
+to late 90s, there was a program called
+[SPEAKER_01]: MapInfo and Vertical Mapper.
+[SPEAKER_01]: And so I'm still most familiar with that.
+[SPEAKER_01]: So I'm going to have to learn ARC one of
+these days, probably before Mary Szczynski
+[SPEAKER_01]: leaves, because she's the one that's going
+to have to teach me.
+[SPEAKER_01]: And then after this, of course,
+it's all about data interpretation.
+[SPEAKER_01]: Once you've got a map, that's very nice.
+[SPEAKER_01]: But how do all the different maps
+integrate with each other?
+[SPEAKER_01]: How can one variable relate to another?
+[SPEAKER_01]: In terms of spatial variability and things
+of that nature.
+[SPEAKER_01]: And so that's when we start getting into
+precision viticulture and making use of
+[SPEAKER_01]: this to apply different treatments to
+different parts of individual blocks and
+[SPEAKER_01]: getting into things like micro terroirs.
+[SPEAKER_01]: So what about just basic site location or
+basic vine location?
+[SPEAKER_01]: This is where we use GPS in order to
+delineate blooms.
+[SPEAKER_01]: We're going to use GPS to map blocks and
+to geolocate individual vines that we're
+[SPEAKER_01]: going to use for mapping.
+[SPEAKER_01]: And if you go back 15 years, there was not
+a lot of people that had even heard of
+[SPEAKER_01]: GPS.
+[SPEAKER_01]: But GPS had been used for a few years in
+agronomic crops.
+[SPEAKER_01]: And it was being used for the sake of
+precision agriculture, in soybeans,
+[SPEAKER_01]: in wheat, in corn, potatoes, and things of
+that nature.
+[SPEAKER_01]: But it really had not been applied to
+horticultural crops at that point.
+[SPEAKER_01]: This is what we can do.
+[SPEAKER_01]: This is a vineyard block.
+[SPEAKER_01]: This is about a 10 acre Riesling block.
+[SPEAKER_01]: And those different numbers on there are
+elevations.
+[SPEAKER_01]: And what it's showing you pretty well is
+just some high and low elevations.
+[SPEAKER_01]: I take it this is a, yeah, there we are.
+[SPEAKER_01]: So these kind of red and orange areas are
+the highest elevation zones in the block.
+[SPEAKER_01]: And then we've got this kind of a little
+bit of a trough in here.
+[SPEAKER_01]: And then it goes down into a low elevation
+zone here.
+[SPEAKER_01]: And these are all the individual vines
+that we took data from.
+[SPEAKER_01]: And we collected a whole layer cake of
+maps from this particular block.
+[SPEAKER_01]: On yield, and vine size, and bricks,
+and titratable acidity, and a whole bunch
+[SPEAKER_01]: of other things.
+[SPEAKER_01]: And then we can see all the different
+relationships between all these different
+[SPEAKER_01]: variables spatially.
+[SPEAKER_01]: And see what variables happen to correlate
+with other variables.
+[SPEAKER_01]: A lot of these data can be collected not
+just from the ground, but from the air.
+[SPEAKER_01]: And when I was doing some work with Dr.
+Brown from University of Guelph,
+[SPEAKER_01]: we were using a small plane such as this
+with a large camera inside.
+[SPEAKER_01]: And we took multi-spectral photographs
+from the air from this.
+[SPEAKER_01]: But there's lots of other things that you
+can use.
+[SPEAKER_01]: And there are now different kinds of
+drones and unmanned objects out there that
+[SPEAKER_01]: you can use and attach small cameras to
+these.
+[SPEAKER_01]: And they can collect data for you.
+[SPEAKER_01]: They're not cheap, but there are some
+companies out there that are now making
+[SPEAKER_01]: use of these drones and unmanned objects.
+[SPEAKER_01]: And then you can collect things from the
+ground.
+[SPEAKER_01]: This is in Champaign, a place called Plume
+Cook.
+[SPEAKER_01]: And this little tractor here has got a
+green seeker mounted to it.
+[SPEAKER_01]: And a multi-spectral camera.
+[SPEAKER_01]: And they take it through the vineyards and
+create these different maps eventually
+[SPEAKER_01]: from all the data that they collect.
+[SPEAKER_01]: And what you're seeing in the background
+here are a whole bunch of different maps
+[SPEAKER_01]: that they've created on spectral
+reflectance of the leaves, and potential
+[SPEAKER_01]: anthocyanins in the fruit, and a number of
+other things.
+[SPEAKER_01]: And this is just a close-up.
+[SPEAKER_01]: This is the green seeker that's measuring
+spectral reflectance.
+[SPEAKER_01]: And here we have a multi-spectral camera.
+[SPEAKER_01]: You can see all the different lenses in
+there.
+[SPEAKER_01]: And that's mounted.
+[SPEAKER_01]: And then they take a whole series of
+lateral images throughout the vineyard.
+[SPEAKER_01]: And the same thing can happen if you want
+to in orchards and things like that.
+[SPEAKER_01]: It might be difficult in traditional apple
+orchards.
+[SPEAKER_01]: But I would say in something like a super
+spindle or some of the more modern trellis
+[SPEAKER_01]: orchards, it would work very, very well.
+[SPEAKER_01]: The type of data that you collect isn't
+just spectral reflectance.
+[SPEAKER_01]: You can collect everything.
+[SPEAKER_01]: And take all of these data and relate it
+to some of the spectral data that you're
+[SPEAKER_01]: collecting.
+[SPEAKER_01]: So it could be things like vine water
+status and soil water status.
+[SPEAKER_01]: And we've done a lot of work like that.
+[SPEAKER_01]: Of course, yield, basic fruit composition,
+some specialized fruit composition such as
+[SPEAKER_01]: terpenes and things like riesling or
+anthocyanins and phenolics and things of
+[SPEAKER_01]: that nature that you could collect for red
+wine varieties.
+[SPEAKER_01]: And then there's the whole series of soil
+and vine composition parameters you might
+[SPEAKER_01]: want to collect.
+[SPEAKER_01]: Whether it's soil texture, soil
+composition, petiole composition,
+[SPEAKER_01]: and so on and so forth.
+[SPEAKER_01]: So you can see that you could create this
+multi-layered set of maps to see where
+[SPEAKER_01]: you're getting different relationships
+between all these different variables.
+[SPEAKER_01]: And then you need to manipulate this data
+somehow.
+[SPEAKER_01]: So once you've got all this data,
+using things like leaf water potential and
+[SPEAKER_01]: vine size, and soil texture as basically
+treatments and zones within these
+[SPEAKER_01]: different vineyard blocks.
+[SPEAKER_01]: And then you can look at these different
+categories and see how they might impact
+[SPEAKER_01]: wine composition and wine quality.
+[SPEAKER_01]: And we've done a lot of that over the
+years.
+[SPEAKER_01]: And then of course looking at correlations
+between the variables and spatial
+[SPEAKER_01]: correlations.
+[SPEAKER_01]: And then the important thing is temporal
+stability.
+[SPEAKER_01]: Are these different zones going to be
+stable over time, year after year after
+[SPEAKER_01]: year?
+[SPEAKER_01]: Are they going to bounce around?
+[SPEAKER_01]: And it's very important, especially if
+you're going to be trying to use some sort
+[SPEAKER_01]: of precision agriculture, that you have
+temporally stable zones year after year.
+[SPEAKER_01]: So these, for instance, are one way of
+displaying the data.
+[SPEAKER_01]: These are some maps that were created from
+Green Seeker at Plum Hook Vineyard in
+[SPEAKER_01]: Champagne.
+[SPEAKER_01]: I was over there in June.
+[SPEAKER_01]: And so there's a whole bunch of different
+things.
+[SPEAKER_01]: This one is nitrogen status here.
+[SPEAKER_01]: Unfortunately, I haven't got my glasses
+on.
+[SPEAKER_01]: But you can probably read some of these
+yourself, particularly if you understand
+[SPEAKER_01]: French.
+[SPEAKER_01]: But in some cases, there's things like
+anthocyanins and a number of other things
+[SPEAKER_01]: that they can use.
+[SPEAKER_01]: And look at some of the different zones,
+high nitrogen zones here, lower nitrogen
+[SPEAKER_01]: zones in this area.
+[SPEAKER_01]: And then you can take precision
+viticulture.
+[SPEAKER_01]: And you can try to smooth things out and
+get rid of some of that instability and
+[SPEAKER_01]: some of that variability that you're
+finding in those different blocks.
+[SPEAKER_01]: With remote sensing, generally what we
+were doing was taking aerial flyovers to
+[SPEAKER_01]: collect multispectral data.
+[SPEAKER_01]: And then we would take also some
+multispectral data from the ground in
+[SPEAKER_01]: order to not just compare, but also to
+verify the data that we were collecting
+[SPEAKER_01]: from the air.
+[SPEAKER_01]: And then we would need to manipulate this
+data.
+[SPEAKER_01]: As you can imagine, there's a lot of data
+to collect, and so we need to use some
+[SPEAKER_01]: specialized software in order to take
+those pixels and turn those pixels into
+[SPEAKER_01]: maps.
+[SPEAKER_01]: And very often, if you happen to have
+canopy as well as ground cover,
+[SPEAKER_01]: you need to get rid of all those pixels
+that are ground cover so that you just
+[SPEAKER_01]: have the canopy data to manipulate and
+map.
+[SPEAKER_01]: Otherwise, you're essentially going to
+have green data all the way across.
+[SPEAKER_01]: It works very well in Australia,
+where it's all tilled in between the rows,
+[SPEAKER_01]: and the only green you have is going to be
+the grapevine canopies.
+[SPEAKER_01]: But in New York State and Ontario and
+other parts of especially eastern North
+[SPEAKER_01]: America, you've got that ground cover crop
+that you have to deal with.
+[SPEAKER_01]: And this is an example from one of my
+former graduate students.
+[SPEAKER_01]: He's got some different blocks here that
+he was trying to extract what we call NDVI
+[SPEAKER_01]: data, which is Normalized Difference
+Vegetation Index.
+[SPEAKER_01]: It's based on spectral reflectance in the
+green range and in the near-infrared
+[SPEAKER_01]: range.
+[SPEAKER_01]: And so he acquired these different images
+and then got rid of the cover crop pixels
+[SPEAKER_01]: like this, and then from there created
+this actual NDVI map.
+[SPEAKER_01]: And you can see that it's fairly
+homogeneous throughout, but there's some
+[SPEAKER_01]: zones here of higher NDVI and a small area
+here where there's lower NDVI.
+[SPEAKER_01]: And why do you use this NDVI?
+[SPEAKER_01]: Well, because it can relate very closely
+to things that we're interested in and we
+[SPEAKER_01]: feel are important.
+[SPEAKER_01]: These are some data from Andrew Lamb et
+al.
+[SPEAKER_01]: from Australia, and you're seeing some
+relationships here between, well,
+[SPEAKER_01]: inverse relationships between NDVI and
+things like phenolics, anthocyanins,
+[SPEAKER_01]: color, and things of that nature.
+[SPEAKER_01]: So generally these low NDVI areas are
+typically related to lower vigor,
+[SPEAKER_01]: lower yield, and so consequently higher
+color.
+[SPEAKER_01]: And higher phenolics.
+[SPEAKER_01]: All right, move on, talk a little bit
+about data interpretation and precision
+[SPEAKER_01]: viticulture.
+[SPEAKER_01]: So precision viticulture, basically how
+has it been used thus far?
+[SPEAKER_01]: It hasn't been something that's been
+popular, and a lot of that is that it
+[SPEAKER_01]: takes time.
+[SPEAKER_01]: And you usually need to have a person that
+is dedicated to collecting these data and
+[SPEAKER_01]: interpreting these data for you.
+[SPEAKER_01]: It's not something that as a grower,
+it's something you're gonna be able to do
+[SPEAKER_01]: in your spare time.
+[SPEAKER_01]: I know my ex-student, David Letterhoff,
+was hired specifically by a winemaker in
+[SPEAKER_01]: British Columbia, and that's what he does.
+[SPEAKER_01]: He does only precision viticulture and
+only data collection and interpretation.
+[SPEAKER_01]: So it's going to involve GPS in order to
+delineate the shapes of blocks,
+[SPEAKER_01]: to geolocate vines, and things like that.
+[SPEAKER_01]: And then of course you're gonna need to
+have GIS software in order to manage these
+[SPEAKER_01]: data, create the maps, and help you look
+at interrelationships between all these
+[SPEAKER_01]: different variables that you're mapping.
+[SPEAKER_01]: With agronomic crops, GPS monitors have
+been installed on things like combines,
+[SPEAKER_01]: other harvesting equipment so that you can
+very precisely map yield and then go in
+[SPEAKER_01]: thereafter the following year and try to
+smooth out some of those low-yielding
+[SPEAKER_01]: areas by adding a little bit more
+fertilizer, et cetera, to some of those
+[SPEAKER_01]: low-yielding areas, a little bit less
+fertilizer to some of those
+[SPEAKER_01]: higher-yielding areas.
+[SPEAKER_01]: And so you can get some very precise,
+very location-specific yield maps that
+[SPEAKER_01]: will help you do that.
+[SPEAKER_01]: And it might not just simply be fertilizer
+rates.
+[SPEAKER_01]: It might be things like inoculum rates.
+[SPEAKER_01]: In the case of soybeans, it could be
+seeding rates, lime application,
+[SPEAKER_01]: and so on and so forth.
+[SPEAKER_01]: And I'll have to say, that's what I
+thought I was gonna do when I first
+[SPEAKER_01]: started to get interested in this and
+started to get familiar with GPS and
+[SPEAKER_01]: things like that.
+[SPEAKER_01]: But I realized that in viticulture,
+it's not going to be about trying to
+[SPEAKER_01]: smooth out the bumps in the road and to
+try to get the low areas up to higher
+[SPEAKER_01]: areas and the higher areas down to lower
+ones.
+[SPEAKER_01]: But as much as it is just mapping a
+particular vineyard block and then maybe
+[SPEAKER_01]: creating micro-terroir-based wines and
+embracing that kind of variability that we
+[SPEAKER_01]: happen to have in a large vineyard block,
+there's nothing wrong with that.
+[SPEAKER_01]: So in viticulture, we're taking these
+data, we're creating these maps and seeing
+[SPEAKER_01]: what we get and then seeing if we might be
+able to make use of this data and create
+[SPEAKER_01]: other vineyard-specific wines that might
+actually be block-specific wines.
+[SPEAKER_01]: So a lot of that's going to be primarily
+for economic gain.
+[SPEAKER_01]: Another look at some maps from an
+Australian vineyard.
+[SPEAKER_01]: This is from some of Rob Bramley's work,
+who's been doing quite a bit of work with
+[SPEAKER_01]: precision viticulture over the years.
+[SPEAKER_01]: This first one on the right, or on the
+left-hand side rather, from the Margaret
+[SPEAKER_01]: River, showing Cabernet Sauvignon block
+and you can see some low-yielding areas
+[SPEAKER_01]: here, some higher-yielding areas in here,
+and what they did was they separated this
+[SPEAKER_01]: fruit in accordance to yield and then
+produced different wines from the
+[SPEAKER_01]: different yielding areas and produced very
+different wines.
+[SPEAKER_01]: So this might have been something that
+would go into, say, a $35 or $40 bottle of
+[SPEAKER_01]: wine and some of this stuff may have gone
+into Yellowtail or something like that.
+[SPEAKER_01]: And so they've been able to produce these
+different wines and we're trying to do the
+[SPEAKER_01]: same in Niagara.
+[SPEAKER_01]: Here's an example of how they were able to
+use GPS to see how their pest control
+[SPEAKER_01]: practices have been working and see how
+effective they are.
+[SPEAKER_01]: And so these are botrytis severity maps.
+[SPEAKER_01]: You can see some areas where it's very
+severe over in this area and some areas
+[SPEAKER_01]: where it's not quite as severe over here.
+[SPEAKER_01]: So obviously they're going to need to
+maybe bump up their spray program in some
+[SPEAKER_01]: parts of this particular block.
+[SPEAKER_01]: So on sites to be planted, how can you use
+this stuff?
+[SPEAKER_01]: Well, basically you've got a bare canvas.
+[SPEAKER_01]: So you want to take lots of soil samples,
+obviously.
+[SPEAKER_01]: You can very precisely map that land in
+terms of things like soil texture and
+[SPEAKER_01]: mineral composition and slope and a number
+of other variables such as that.
+[SPEAKER_01]: And if you're seeing a lot of variability,
+you might say, well, I think I might want
+[SPEAKER_01]: to plant this end of the vineyard with a
+different root stock.
+[SPEAKER_01]: Maybe I want to plant this end of the
+vineyard with something like SO4 because
+[SPEAKER_01]: it's a heavy clay.
+[SPEAKER_01]: I need something that's going to bust
+through that clay.
+[SPEAKER_01]: At this end of the soil I've got sand.
+[SPEAKER_01]: I think maybe I'll use something like 3309
+or riparia gloire or something like that.
+[SPEAKER_01]: And you can use this information to make
+choices in terms of not just root stock
+[SPEAKER_01]: but also planting density, possibly even
+trellis system.
+[SPEAKER_01]: If you're expecting one end of the
+vineyard to be a lot more vigorous,
+[SPEAKER_01]: you might want to use Scott Henry at that
+end of the vineyard.
+[SPEAKER_01]: And you might want to use just a standard
+VSP at the other end.
+[SPEAKER_01]: So there's a lot of things and a lot of
+different decisions that you can make once
+[SPEAKER_01]: you have this information and once it's
+mapped.
+[SPEAKER_01]: Here's an example.
+[SPEAKER_01]: This is a vineyard called Chateau des
+Charmes in St. David's near
+[SPEAKER_01]: Niagara-on-the-Lake.
+[SPEAKER_01]: These are two side-by-side Chardonnay
+blocks.
+[SPEAKER_01]: One, as you can see, is very high in sand.
+[SPEAKER_01]: We've got about 72 to 82% sand in here.
+[SPEAKER_01]: And then over here it's mostly clay.
+[SPEAKER_01]: They planted it all the same.
+[SPEAKER_01]: They probably could have planted this at a
+different planting density and given the
+[SPEAKER_01]: vines a little more room and planted these
+a little bit tighter.
+[SPEAKER_01]: So there were things that could have been
+done had they had this information right
+[SPEAKER_01]: from the get-go.
+[SPEAKER_01]: On established soil sites, there are a lot
+of things you can do as well.
+[SPEAKER_01]: Things can be precisely mapped,
+of course, and you can still get all of
+[SPEAKER_01]: that soil data, but you can get a lot of
+other things.
+[SPEAKER_01]: You can delineate management zones.
+[SPEAKER_01]: Once you know what the yield is,
+what the vine size is, and things like
+[SPEAKER_01]: that, you might be able to implement some
+variable rate technology as a result.
+[SPEAKER_01]: But the other thing is that if you have
+some very clear differences in one part of
+[SPEAKER_01]: a block versus another, you can create two
+different products.
+[SPEAKER_01]: And those two different products could,
+as I say, be used for economic gain.
+[SPEAKER_01]: You could produce a very, very high-end
+wine versus something that's more like a
+[SPEAKER_01]: $15 bottle of wine.
+[SPEAKER_01]: Here's an example.
+[SPEAKER_01]: This is where we were mapping flavor
+compounds in Riesling.
+[SPEAKER_01]: And this is at Cave Spring Vineyards.
+[SPEAKER_01]: And these orange zones here, orange and
+yellow zones, happen to be the areas where
+[SPEAKER_01]: we were getting the highest terpene values
+in the Riesling.
+[SPEAKER_01]: And there did seem to be some temporal
+consistency depending on year.
+[SPEAKER_01]: Once we got into 2007 here, there happened
+to be a little bit larger area with very
+[SPEAKER_01]: high terpenes because it happened to be a
+dry season.
+[SPEAKER_01]: Berries were smaller, a little more
+concentrated, and so the high-flavor zone
+[SPEAKER_01]: actually increased in size.
+[SPEAKER_01]: But generally, we're seeing the same kind
+of temporal consistency.
+[SPEAKER_01]: So had this company had this information,
+they might have wanted to go in and try to
+[SPEAKER_01]: pick one zone like this here or here and
+create a couple of different products as a
+[SPEAKER_01]: consequence.
+[SPEAKER_01]: Why isn't it being used?
+[SPEAKER_01]: Well, like most things in horticulture,
+it's money.
+[SPEAKER_01]: And it does take time to collect all these
+data.
+[SPEAKER_01]: And variable rate technology, of course,
+isn't cheap.
+[SPEAKER_01]: We've had a couple of growers that have
+tried to implement some variable rate
+[SPEAKER_01]: technology with yield monitors on their
+harvesters and things like that.
+[SPEAKER_01]: And they've given it up mainly because of
+cost.
+[SPEAKER_01]: However, we could still collect the data
+and possibly create different products as
+[SPEAKER_01]: a result of that.
+[SPEAKER_01]: The other thing is the whole temporal
+stability issue.
+[SPEAKER_01]: Here's an example of why it sometimes
+doesn't work.
+[SPEAKER_01]: My colleague Joan Davenport in Washington
+State did some work with the yield monitor
+[SPEAKER_01]: in Concord Vineyard.
+[SPEAKER_01]: And so it's four different years where
+they've got a yield monitor mounted on a
+[SPEAKER_01]: mechanical harvester.
+[SPEAKER_01]: And these kind of red and yellow zones in
+this block represent the highest yielding
+[SPEAKER_01]: areas within that block.
+[SPEAKER_01]: And then we get to the following year.
+[SPEAKER_01]: And suddenly, the yield has dropped
+considerably.
+[SPEAKER_01]: And the pattern of the yield is completely
+different.
+[SPEAKER_01]: And then we go to the following year.
+[SPEAKER_01]: And it's different once again and
+different in 2000.
+[SPEAKER_01]: So we don't have that temporal stability.
+[SPEAKER_01]: And without that, we can't really
+implement any kind of variable rate
+[SPEAKER_01]: technology.
+[SPEAKER_01]: It doesn't always happen this way,
+but very often it does.
+[SPEAKER_01]: And this is one case where it does.
+[SPEAKER_01]: This is a block in Niagara-on-the-Lake
+near where I live.
+[SPEAKER_01]: And these yellow and orange zones happen
+to be the highest yielding zone.
+[SPEAKER_01]: So over a five-year period, for the most
+part, we were getting high yielding zones
+[SPEAKER_01]: in this upper part of the block and lower
+yielding zones down here.
+[SPEAKER_01]: And it's going to bounce around a little
+bit depending on what kind of a year it
+[SPEAKER_01]: is, precipitation patterns, things of that
+nature.
+[SPEAKER_01]: And you can also get spatial stability or
+temporal stability in things like bricks
+[SPEAKER_01]: and other things.
+[SPEAKER_01]: This is another vineyard.
+[SPEAKER_01]: And these yellow and orange zones happen
+to be the highest bricks zones as well.
+[SPEAKER_01]: And they seem to be relatively temporally
+stable.
+[SPEAKER_01]: A little bit larger area here in 2002
+because it happened to be a hot,
+[SPEAKER_01]: dry summer.
+[SPEAKER_01]: So it expanded a little bit smaller here.
+[SPEAKER_01]: But generally, you're getting that
+temporal stability.
+[SPEAKER_00]: Yeah, the scales are different.
+[SPEAKER_01]: That's right.
+[SPEAKER_01]: That's a good question.
+[SPEAKER_01]: What we did was for all of the data,
+we just asked the mapping program to give
+[SPEAKER_01]: us six different individual denominations.
+[SPEAKER_01]: And so there was going to be some
+difference.
+[SPEAKER_01]: So there are higher bricks here,
+for instance, versus a year such as 2001.
+[SPEAKER_01]: So there are some differences there.
+[SPEAKER_01]: OK.
+[SPEAKER_01]: I'll move on and talk a little bit about
+geomatics on a regional basis before I
+[SPEAKER_01]: move on and talk about micro terroirs and
+things like that.
+[SPEAKER_01]: This is something you might recognize.
+[SPEAKER_01]: This is Seneca Lake.
+[SPEAKER_01]: And this is some data from Bob Seam.
+[SPEAKER_01]: So I acknowledge Bob Seam.
+[SPEAKER_01]: What he's got here is based on a whole
+bunch of weather stations along Seneca
+[SPEAKER_01]: Lake.
+[SPEAKER_01]: And this is the Christmas Massacre of
+1980.
+[SPEAKER_01]: So all of these pink zones here on the
+west side of Seneca Lake represent cold
+[SPEAKER_01]: areas just before and during the Christmas
+Massacre.
+[SPEAKER_01]: And then after that, that cold air moved
+across Seneca Lake because Seneca Lake,
+[SPEAKER_01]: of course, doesn't freeze.
+[SPEAKER_01]: It picked up some warm air crossing that
+lake.
+[SPEAKER_01]: And then this blue area here is some
+slightly warmed air that we see on this
+[SPEAKER_01]: side of Seneca Lake.
+[SPEAKER_01]: But then once that air moved on and got
+further away from the lake, it picked up
+[SPEAKER_01]: more cold air from the lake.
+[SPEAKER_01]: As a result of continentality.
+[SPEAKER_01]: And you see you got cold air over here.
+[SPEAKER_01]: So it just shows the effect of Seneca Lake
+on a regional basis, even in 1980,
+[SPEAKER_01]: where we had temperatures close to minus
+30.
+[SPEAKER_01]: And there's I think that was Fahrenheit,
+wasn't it?
+[SPEAKER_01]: It was cold.
+[SPEAKER_01]: I remember it being very cold.
+[SPEAKER_01]: And this is something that you can do,
+of course.
+[SPEAKER_01]: And this is just growing degree days in
+the Napa Valley.
+[SPEAKER_01]: And some of Paul Skinner's work.
+[SPEAKER_01]: You can see slightly lower growing degree
+days down here because of the influence of
+[SPEAKER_01]: San Francisco Bay.
+[SPEAKER_01]: And then as you get further up Napa
+Valley, you're getting into some higher
+[SPEAKER_01]: growing degree days.
+[SPEAKER_01]: And then drops a little bit once you get
+up around Calistoga because you're higher
+[SPEAKER_01]: elevation and so on and so forth.
+[SPEAKER_01]: So that's another way you can make use of
+multiple weather stations.
+[SPEAKER_01]: And you can map growing degree days and
+things like that.
+[SPEAKER_01]: What I like to spend most of the rest of
+this talk on is geomatics site and mapping
+[SPEAKER_01]: things like yield and vine size and water
+status.
+[SPEAKER_01]: Here's an example of a micro terroir.
+[SPEAKER_01]: This is Desole in Switzerland.
+[SPEAKER_01]: And this is next to Lausanne in Western
+Switzerland.
+[SPEAKER_01]: And all of these different vineyards up
+and down this hillside here, it's all
+[SPEAKER_01]: chassela.
+[SPEAKER_01]: The age of the vines is relatively
+similar.
+[SPEAKER_01]: But because of elevation and a number of
+other things, these are all different
+[SPEAKER_01]: terroirs.
+[SPEAKER_01]: And they actually make different wines
+depending on where along this hillside
+[SPEAKER_01]: you're picking those chassela.
+[SPEAKER_01]: And they are distinctly different.
+[SPEAKER_01]: And you go into some of the wineries there
+where you can taste some of these
+[SPEAKER_01]: different wines.
+[SPEAKER_01]: It's quite incredible.
+[SPEAKER_01]: It's a real educational experience.
+[SPEAKER_01]: So this is the kind of thing what we
+wanted to look at.
+[SPEAKER_01]: And this is going back to the same
+Riesling Vineyard that I showed you near
+[SPEAKER_01]: the beginning.
+[SPEAKER_01]: This is the St. Urban Vineyard.
+[SPEAKER_01]: And what we're seeing here are differences
+in vine size.
+[SPEAKER_01]: A high vine size zone here, a low vine
+size zone in this area.
+[SPEAKER_01]: And in many cases, these vine size or
+vigor zones can be related to things like
+[SPEAKER_01]: yield, bricks, flavor, and a number of
+other things.
+[SPEAKER_01]: Here's our French Chateau des Charmes.
+[SPEAKER_01]: These are different yield zones.
+[SPEAKER_01]: And those are those two Chardonnay blocks
+side by side.
+[SPEAKER_01]: A low yielding zone here.
+[SPEAKER_01]: In that sandy block.
+[SPEAKER_01]: And a high yielding zone next door to it
+in that heavy clay block.
+[SPEAKER_01]: And then this jumped back and forth
+unfortunately over the period of the four
+[SPEAKER_01]: years we were collecting data.
+[SPEAKER_01]: And then the other thing is collecting
+flavor data and mapping flavor.
+[SPEAKER_01]: And wouldn't that be great if you could
+map flavor and create different wines
+[SPEAKER_01]: because you know the potential flavor from
+the different zones in that particular
+[SPEAKER_01]: block.
+[SPEAKER_01]: So high flavor zone here.
+[SPEAKER_01]: And a relatively lower flavor zone over on
+this side.
+[SPEAKER_01]: This is a way that it has been used
+commercially.
+[SPEAKER_01]: And this is some data from Mark Greenspan
+when he was working for Gallo back about
+[SPEAKER_01]: ten years ago where he went in and used a
+number of different things.
+[SPEAKER_01]: Leaf water potential.
+[SPEAKER_01]: Vine size.
+[SPEAKER_01]: NDVI data.
+[SPEAKER_01]: And combined all of these and created some
+maps from this hillside Zinfandel
+[SPEAKER_01]: Vineyard.
+[SPEAKER_01]: And created a low vigor zone and a high
+vigor zone.
+[SPEAKER_01]: And so this low vigor zone went into their
+$35 Sonoma Reserve.
+[SPEAKER_01]: And their high vigor zone that probably
+went into either Rose or Bay.
+[SPEAKER_01]: Barefoot or something like that.
+[SPEAKER_01]: So different products from the same block
+based on information.
+[SPEAKER_01]: And just knowing what you have there.
+[SPEAKER_01]: And the more data you can collect the more
+money you can make basically from a given
+[SPEAKER_01]: vineyard block.
+[SPEAKER_01]: I spent a moment just going back to how I
+got into this in the first place.
+[SPEAKER_01]: When I was working in B.C.
+[SPEAKER_01]: in the early 90's working with a geologist
+and did some zoning work.
+[SPEAKER_01]: But this was before GPS so we were just
+using a transit and trying to do
+[SPEAKER_01]: everything using just old fashioned
+elevations and leaf layer numbers and
+[SPEAKER_01]: bricks and T.A.
+[SPEAKER_01]: and P.H.
+[SPEAKER_01]: and used Kreeging and mapped all these
+different variables.
+[SPEAKER_01]: And tried to create some different zones
+from a small vineyard.
+[SPEAKER_01]: And then in the later 90's we had an 85
+acre vineyard.
+[SPEAKER_01]: Multi variety vineyard on the hillside.
+[SPEAKER_01]: And used GPS and GIS to map a whole bunch
+of different variables.
+[SPEAKER_01]: So this is one example of some of the work
+we did pre GPS.
+[SPEAKER_01]: We had about 200 different vines that we
+took samples from in this vigorous
+[SPEAKER_01]: Gewurztraminer vineyard next to Skaha Lake
+in Penticton B.C.
+[SPEAKER_01]: You can see the vigor there.
+[SPEAKER_01]: And what we were trying to do is look at
+different brick zones.
+[SPEAKER_01]: And then once we had those bricks data try
+to create some different management zones
+[SPEAKER_01]: based on these bricks data.
+[SPEAKER_01]: And that was all as I say pre GPS days.
+[SPEAKER_01]: And then with the stuff at Paradise
+Vineyard we actually did have some
+[SPEAKER_01]: geomatic tools.
+[SPEAKER_01]: You can get an idea of this is Lake
+Okanagan here.
+[SPEAKER_01]: So it was a steep hillside vineyard with a
+lot of different ravines and things like
+[SPEAKER_01]: that all through there.
+[SPEAKER_01]: So we had some major variability
+throughout this vineyard in terms of not
+[SPEAKER_01]: just elevation but things like vine size
+and yield and bricks and TA and PH and all
+[SPEAKER_01]: the different soil and petiole variables
+as well.
+[SPEAKER_01]: Alright move on I'll talk a little bit
+about geomatics of water status which was
+[SPEAKER_01]: some work that was done starting in 2005.
+[SPEAKER_01]: Some work by Jim Wilworth that's now our
+extension viticulturist 2005 to 2011.
+[SPEAKER_01]: And Javad Hakimi who worked at the same
+time but on Cabernet Franc.
+[SPEAKER_01]: What we did was we chose 10 different
+sites throughout the Niagara Peninsula.
+[SPEAKER_01]: There's Lake Ontario here.
+[SPEAKER_01]: Each of these sites represented a specific
+subappalachian.
+[SPEAKER_01]: So we had 10 different subappalachians
+throughout there and tried to pick out
+[SPEAKER_01]: representative vineyards in each of those
+different subappalachians for both
+[SPEAKER_01]: Riesling and Cabernet Franc.
+[SPEAKER_01]: And ran this project over a three year
+period.
+[SPEAKER_01]: Mapped things such as leaf water potential
+and soil moisture and went in there on a
+[SPEAKER_01]: biweekly basis to collect these data.
+[SPEAKER_01]: And then in the fall collect data on
+things such as clusters per vine and yield
+[SPEAKER_01]: and standard berry compost.
+[SPEAKER_01]: And in Riesling we were collecting
+terpenes for the berries and for the
+[SPEAKER_01]: Cabernet Franc phenolics, anthocyanins and
+color and things of that nature.
+[SPEAKER_01]: And this gives you some idea, I'll walk
+you through one site for Riesling to just
+[SPEAKER_01]: give you some idea of what we were
+finding.
+[SPEAKER_01]: And this is the Myers Vineyard on the
+lake.
+[SPEAKER_01]: Here we have leaf water potential so the
+one thing to point out we've got low leaf
+[SPEAKER_01]: water potential here so this was the
+southern end of the vineyard and it was
+[SPEAKER_01]: somewhat under water stress each year and
+then higher leaf water potential in the
+[SPEAKER_01]: northern end of the vineyard.
+[SPEAKER_01]: Nice temporal stability.
+[SPEAKER_01]: We were glad to see this.
+[SPEAKER_01]: You'll notice that the numbers are a
+little bit different.
+[SPEAKER_01]: 2007 we were getting numbers in the minus
+12 to almost minus 13 range.
+[SPEAKER_01]: It was a dry year and they were not quite
+as low in 2005 and 2006.
+[SPEAKER_01]: Now we start to see how these relate to
+other things that are important.
+[SPEAKER_01]: First of all up here where we had the
+higher leaf water potential we've also got
+[SPEAKER_01]: higher soil moisture and we've also got
+higher vine size.
+[SPEAKER_01]: So more vigor here, higher soil moisture,
+higher leaf water potential.
+[SPEAKER_01]: So already some nice relationships.
+[SPEAKER_01]: As we move on here's our leaf water
+potential again.
+[SPEAKER_01]: So high leaf water potential low and up
+here we're getting higher berry weights,
+[SPEAKER_01]: lower berry weights down here and down
+here where we're getting the lower berry
+[SPEAKER_01]: weights we're also getting higher Bricks
+values.
+[SPEAKER_01]: Now this is where it gets I think quite
+compelling.
+[SPEAKER_01]: This is a different site because it
+happens to show the relationships a little
+[SPEAKER_01]: bit better and these are leaf water
+potentials here 05 to 07 and these are the
+[SPEAKER_01]: lower leaf water potential zones here that
+are for the most part temporally stable
+[SPEAKER_01]: and you can see the potentially volatile
+terpenes that line up very nicely with
+[SPEAKER_01]: these lower leaf water potentials.
+[SPEAKER_01]: So this guy Paul Boss, this Chateau des
+Charmes has in fact created some different
+[SPEAKER_01]: wine products from this particular block
+based on these data.
+[SPEAKER_01]: So he's quite excited and quite happy with
+these data.
+[SPEAKER_01]: So when we look at some of the wine and
+look at sensory over on this side this is
+[SPEAKER_01]: PLS analysis, partially squares analysis
+we see what's related.
+[SPEAKER_01]: Things like water potential, soil
+moisture, sand content, berry weight,
+[SPEAKER_01]: vine size.
+[SPEAKER_01]: Basically that was 75% of the data set and
+that's basically the basis for terroir
+[SPEAKER_01]: right there and we're getting very
+different wines that are associated with
+[SPEAKER_01]: the high soil moisture, high water
+potential.
+[SPEAKER_01]: So things high in citrus and mineral but
+also vegetal and things like that.
+[SPEAKER_01]: Over on this side a little bit more peach,
+apple, baking spice and things of that
+[SPEAKER_01]: nature.
+[SPEAKER_01]: So we're getting very different wines
+depending on whether we've got high or low
+[SPEAKER_01]: soil moisture.
+[SPEAKER_01]: So that to me has got a lot to do with
+what terroir is all about.
+[SPEAKER_01]: The other thing is we were able to look at
+this on a regional basis as well because
+[SPEAKER_01]: we had all those different subappalations.
+[SPEAKER_01]: We look at some of these different zones.
+[SPEAKER_01]: Here's some Lakeshore vineyards right here
+that were associated with mineral,
+[SPEAKER_01]: citrus, vegetal and things like that.
+[SPEAKER_01]: And some of the other areas, some of the
+bench areas over here that were associated
+[SPEAKER_01]: more with baking spice and tropical fruit
+and things of that nature.
+[SPEAKER_01]: So there did seem to be some truth to
+these subappalations.
+[SPEAKER_01]: I don't think there's 10 of them but
+there's probably at least three anyway.
+[SPEAKER_01]: All right, a few comments about Cabernet
+Franc.
+[SPEAKER_01]: Essentially the same project.
+[SPEAKER_01]: You can see some of the relationships
+here.
+[SPEAKER_01]: Things like percent clay and perhaps not
+any surprise to you.
+[SPEAKER_01]: It's got a nice relationship to things
+like calcium and potassium and things like
+[SPEAKER_01]: base saturation and soil pH.
+[SPEAKER_01]: So there are a lot of spatial
+relationships here.
+[SPEAKER_01]: For the most part, temporal stability.
+[SPEAKER_01]: This is soil moisture and you can see
+especially in 06 and 07 those soil
+[SPEAKER_01]: moisture zones were almost mirror images
+of each other.
+[SPEAKER_01]: Not so much 2005.
+[SPEAKER_01]: I'm not sure why that is.
+[SPEAKER_01]: I'll walk you through Shadow de Charme.
+[SPEAKER_01]: These are low water status zones here in
+the upper part of this block in the north.
+[SPEAKER_01]: And as you look at some of the other
+variables you can see that things such as
+[SPEAKER_01]: for instance leaf water potential is
+related to lower berry weights,
+[SPEAKER_01]: higher bricks, higher anthocyanins,
+higher phenols.
+[SPEAKER_01]: And things of that nature.
+[SPEAKER_01]: So once you know some of this information
+you can have a pretty good idea of what
+[SPEAKER_01]: you might get in terms of some variables
+that really mean something to you.
+[SPEAKER_01]: And PLS once again.
+[SPEAKER_01]: We got high water status over here.
+[SPEAKER_01]: Low water status over here associated with
+color and red fruit and phenols and things
+[SPEAKER_01]: like that.
+[SPEAKER_01]: High water status associated with in
+particular bitterness in green fruit and
+[SPEAKER_01]: things of that nature.
+[SPEAKER_01]: And once again we did some regional
+assessment here and we look at these
+[SPEAKER_01]: particular blocks.
+[SPEAKER_01]: These four are all waterfront properties.
+[SPEAKER_01]: So they're all associated with either Lake
+Ontario or the Niagara River.
+[SPEAKER_01]: So cooler sites and these are all
+associated with things like green and bell
+[SPEAKER_01]: pepper.
+[SPEAKER_01]: So most definitely some relationship
+between location and wine sensory.
+[SPEAKER_01]: So we did feel that we were able to verify
+some of these subappalations.
+[SPEAKER_01]: So in terms of these Cabernet and Riesling
+studies we felt that there were some clear
+[SPEAKER_01]: relationships between things like soil and
+vine water status as well as things such
+[SPEAKER_01]: as free and bound terpenes in Riesling and
+some of the phenolic analytes in Cabernet
+[SPEAKER_01]: Franc.
+[SPEAKER_01]: And I think that's really the one major
+take home message.
+[SPEAKER_01]: And I think the other one is that there
+was nice temporal stability from year to
+[SPEAKER_01]: year with a lot of these relationships.
+[SPEAKER_01]: So if you can get in there and you can get
+some data you can have something that
+[SPEAKER_01]: probably is going to repeat itself year
+after year.
+[SPEAKER_01]: So I'm going to probably take a couple
+more minutes if I may and then I think I
+[SPEAKER_01]: can finish off.
+[SPEAKER_01]: I just wanted to make a couple of mentions
+of some of this remote sensing work that
+[SPEAKER_01]: we did using Riesling and Pinot Noir.
+[SPEAKER_01]: So similar projects looking at soil
+moisture, leaf water potential,
+[SPEAKER_01]: but we had the added set of data and that
+we were doing a whole lot of flyovers and
+[SPEAKER_01]: collecting some spectro-reflectance data
+as a result of the flyovers.
+[SPEAKER_01]: And this is one place, this was the 30
+bench vineyards.
+[SPEAKER_01]: Consisted of a whole series of these sub
+blocks that we were able to delineate.
+[SPEAKER_01]: This was a 25 acre Riesling block.
+[SPEAKER_01]: We collected about 520 vines, or collected
+down to about a million data from 520
+[SPEAKER_01]: vines.
+[SPEAKER_01]: So a lot of work.
+[SPEAKER_01]: And collected things like soil moisture
+every year and leaf water potential and so
+[SPEAKER_01]: on and so forth.
+[SPEAKER_01]: So we were getting some nice temporal
+stability, at least three out of four
+[SPEAKER_01]: years for soil moisture.
+[SPEAKER_01]: 2009 never stopped raining and so we
+didn't see that nice temporal stability
+[SPEAKER_01]: when we got to 2009.
+[SPEAKER_01]: And the same goes for leaf water
+potential.
+[SPEAKER_01]: We're seeing the low leaf water potential
+here in that triangle zone.
+[SPEAKER_01]: And 2009, not so much.
+[SPEAKER_01]: All right, I think I better finish this
+up.
+[SPEAKER_01]: And so what I'd like to do is I'm just
+gonna skip ahead to the end because we've
+[SPEAKER_01]: got some work that's ongoing where we're
+looking at the terroir winter hardiness.
+[SPEAKER_01]: And that's Mary Jasinski's project.
+[SPEAKER_01]: So I'm just gonna skip ahead about three
+or four slides to that.
+[SPEAKER_01]: And then I can take some questions.
+[SPEAKER_01]: Okay, so with this what we're doing is
+we're essentially mapping winter
+[SPEAKER_01]: hardiness.
+[SPEAKER_01]: And looking at LT50 values, lethal
+temperature 50 values.
+[SPEAKER_01]: And seeing how they might relate to things
+like soil moisture and leaf water
+[SPEAKER_01]: potential.
+[SPEAKER_01]: The hypothesis being is that we would find
+lower LT50 values in zones of vineyards
+[SPEAKER_01]: that had somewhat lower soil moisture
+during the growing season and lower leaf
+[SPEAKER_01]: water potential.
+[SPEAKER_01]: So maybe touching on almost water stress.
+[SPEAKER_01]: And yes indeed, we were finding in a lot
+of these vineyards that there was a
+[SPEAKER_01]: relationship between soil moisture,
+leaf water potential, and LT50 in a great
+[SPEAKER_01]: many of these vineyards.
+[SPEAKER_01]: Oh, that's a good question.
+[SPEAKER_01]: And it's gonna differ from vineyard to
+vineyard.
+[SPEAKER_01]: Roughly minus 19 to minus 26 or
+thereabouts.
+[SPEAKER_01]: C, yeah, C.
+[SPEAKER_01]: And here's another example.
+[SPEAKER_01]: We can see this low yielding area is also
+associated with low LT50 values.
+[SPEAKER_01]: And so we're finding that not just that
+but also associated with higher
+[SPEAKER_01]: anthocyanins and higher phenolics.
+[SPEAKER_01]: So there's also the quality benefit that
+comes along with this.
+[SPEAKER_01]: Okay, and we're finding that there's a
+temporal effect as well.
+[SPEAKER_01]: And we're finding that a zone of low LT50
+expands as you move into winter and as
+[SPEAKER_01]: those vines acclimate a little bit more.
+[SPEAKER_01]: And then it will shrink again if you're
+starting to look at LT50 values in late
+[SPEAKER_01]: February or early March.
+[SPEAKER_01]: So you're seeing that deacclamation effect
+and you're seeing a change in the size of
+[SPEAKER_01]: these LT50 patterns.
+[SPEAKER_01]: Okay, I think I can skip over that one and
+just kind of go over to conclusions.
+[SPEAKER_01]: So I would say that geomatics has allowed
+us to conclude that this terroir effect is
+[SPEAKER_01]: associated with things such as soil and
+vine water status and to some extent also
+[SPEAKER_01]: yield and possibly vine size.
+[SPEAKER_01]: And I think those things probably account
+for a large percentage of the terroir
+[SPEAKER_01]: effect.
+[SPEAKER_01]: These technologies have also allowed us to
+verify and validate subappalations within
+[SPEAKER_01]: the Niagara region.
+[SPEAKER_01]: And I think that coupled with remote
+sensing, we might be able to help growers
+[SPEAKER_01]: delineate and define some subblocks that
+they might be able to use for economic
+[SPEAKER_01]: gain.
+[SPEAKER_01]: I'm hoping that this work will also allow
+us over a period of years to be able to
+[SPEAKER_01]: show growers high and low risk winter
+injury areas within their vineyard blocks.
+[SPEAKER_01]: That might mean that they can cluster thin
+portions of vineyard blocks in order to
+[SPEAKER_01]: enhance winter hardiness, for instance.
+[SPEAKER_01]: I think the last thing to mention in that
+is that any vineyard variable can be
+[SPEAKER_01]: mapped.
+[SPEAKER_01]: And any vineyard variable can be looked at
+in terms of its spatial variability and in
+[SPEAKER_01]: terms of its spatial correlation with
+other variables.
+[SPEAKER_01]: So whether it's a whole bunch of soil
+variables and things like that,
+[SPEAKER_01]: you can relate those with things that are
+going to mean money for you.
+[SPEAKER_01]: Yield, fruit composition and things of
+that nature.
+[SPEAKER_01]: So I think with that I better stop.
+[SPEAKER_01]: I've gone over a few minutes and so I'd
+like to save some time for questions.
+[SPEAKER_01]: Thank you.
+[SPEAKER_01]: I don't know if I've worked in a vineyard
+where I would see a $5 section,
+[SPEAKER_01]: maybe a $15 section and most definitely
+there's some areas or zones within those
+[SPEAKER_01]: vineyards where they would probably be
+able to create a $35 or $40.
+[SPEAKER_01]: But yeah, I agree with you.
+[SPEAKER_01]: I think that some effort would have to be
+made to bring up the potential value of
+[SPEAKER_01]: that low value zone before I'd start
+thinking about selling that vineyard.
+[SPEAKER_01]: That $40 bottle.
+[SPEAKER_01]: Okay.
+[SPEAKER_01]: Good question.
+[SPEAKER_01]: With the destructive sampling,
+we were usually looking at a rate of 75 to
+[SPEAKER_01]: 100 vines to the hectare.
+[SPEAKER_01]: And generally in a grid, try to look at it
+something like an 8 by 8 meter grid or
+[SPEAKER_01]: something of that nature.
+[SPEAKER_01]: It's a big area.
+[SPEAKER_01]: Yeah.
+[SPEAKER_01]: That one block we had 25 acres and we had
+about 500 vines that we took from that 25
+[SPEAKER_01]: acres.
+[SPEAKER_01]: So yeah, I think you're always trying to
+create that balance between well,
+[SPEAKER_01]: how much have I got time to do and how
+detailed can I get and make sure that I've
+[SPEAKER_01]: got something that I have full confidence
+in.
+[SPEAKER_01]: And so yeah, we figured around 75 to 100
+per hectare or in some cases more.
+[SPEAKER_01]: All of our yield maps, that was all from
+hand harvested.
+[SPEAKER_00]: Oh, I thought you said you had a machine.
+[SPEAKER_01]: That was Joe Davenport's data from
+Washington where she had the machine.
+[SPEAKER_01]: So that would have been continuous.
+[SPEAKER_01]: That's a good question.
+[SPEAKER_01]: And that's certainly what Bramley and some
+of those guys have been trying to do in
+[SPEAKER_01]: Australia is to do some of these flyovers
+or use green seeker in order to get NDVI
+[SPEAKER_01]: maps and associate those with either yield
+or vine size or both.
+[SPEAKER_01]: And they have been fairly successful in
+doing that.
+[SPEAKER_01]: And I skipped over a few of those slides,
+but we were quite successful.
+[SPEAKER_01]: Actually in seeing some nice relationships
+between NDVI and yield and vine size.
+[SPEAKER_01]: And yeah, so I think that's possible.
+[SPEAKER_01]: There also seemed to be some nice
+relationships between NDVI and things like
+[SPEAKER_01]: leaf water potential and bricks and color
+and things like that.
+[SPEAKER_01]: The data that I've seen from our lab and
+others seem to indicate that there is a
+[SPEAKER_01]: nice correlation there.
+[SPEAKER_01]: So yeah, if you can get a green seeker or
+something like that, I think you're all
+[SPEAKER_01]: set.
+OK.
+[SPEAKER_01]: Thank you.
+[SPEAKER_02]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_02]: Thank you.
+[SPEAKER_02]: Thank you.
+Thank you.

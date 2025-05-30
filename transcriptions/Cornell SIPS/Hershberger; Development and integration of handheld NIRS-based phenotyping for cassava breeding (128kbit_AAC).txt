@@ -1,0 +1,317 @@
+[SPEAKER_03]: This is a production of Cornell
+University.
+[SPEAKER_03]: So today I'm going to be talking about a
+project that I've been working on for
+[SPEAKER_03]: about the past year and a half.
+[SPEAKER_03]: I'm just in the middle of it still,
+so don't have any end conclusions,
+[SPEAKER_03]: but I hope you enjoy listening to my
+progress.
+[SPEAKER_03]: So first I'll start off by talking about
+the project that I'm working under.
+[SPEAKER_03]: So the FinoApps project is a group of
+computer programmers and plant scientists
+[SPEAKER_03]: who are working together directly with
+breeders to develop apps, smartphone apps,
+[SPEAKER_03]: for the phenotyping of plants.
+[SPEAKER_03]: These apps will then be deployed through
+breeder networks, especially in developing
+[SPEAKER_03]: countries.
+[SPEAKER_03]: And one of the crops that the FinoApps
+project is especially interested in is
+[SPEAKER_03]: cassava.
+[SPEAKER_03]: So we talk a lot about cassava in this
+department, but I thought I'd go over it
+[SPEAKER_03]: again.
+[SPEAKER_03]: Cassava is both an industrial and a food
+crop, and it's a staple for over 800
+[SPEAKER_03]: million people, especially in the tropics.
+[SPEAKER_03]: Primary breeding targets of cassava are
+pest and disease resistance, yield and
+[SPEAKER_03]: field performance, and dry matter content.
+[SPEAKER_03]: Today I'm going to be focusing mostly on
+dry matter content.
+[SPEAKER_03]: So cassava root dry matter content is the
+proportion or the percent of the root that
+[SPEAKER_03]: is not water.
+[SPEAKER_03]: So after the water leaves the root,
+it's the percent that's left.
+[SPEAKER_03]: So it's typically around 20 to 45 percent,
+and up to 90 percent of that can be
+[SPEAKER_03]: starch.
+[SPEAKER_03]: It directly affects the dry yield of the
+cassava roots and also the food quality or
+[SPEAKER_03]: the mouth feel, which then affects the
+consumer acceptance and the variety
+[SPEAKER_03]: adoption rate of cassava.
+[SPEAKER_03]: And in talking to breeders, I found over
+and over that this trait is notoriously
+[SPEAKER_03]: difficult, time-consuming, laborious to
+measure.
+[SPEAKER_03]: The two methods that are typically used
+are specific gravity and the oven method.
+[SPEAKER_03]: The specific gravity method here on the
+left involves weighing the roots in air
+[SPEAKER_03]: and in water, and then plugging those
+values into an equation to get the dry
+[SPEAKER_03]: matter content.
+[SPEAKER_03]: The oven method requires transport from
+the field to a laboratory setting where
+[SPEAKER_03]: the samples are dried in an oven after
+shredding, and this requires consistent
+[SPEAKER_03]: electricity, which might not always be
+present in a given location.
+[SPEAKER_03]: And so because of the challenges,
+the time put in and the labor put in,
+[SPEAKER_03]: different breeding programs have been
+looking at a new technique to phenotype
+[SPEAKER_03]: dry matter content a little quicker.
+[SPEAKER_03]: And so this is near-infrared spectroscopy,
+or NIRS.
+[SPEAKER_03]: So it's been shown to be highly predictive
+of dry matter in cassava roots,
+[SPEAKER_03]: and because of this, it's being routinely
+used at SEAT in Columbia for the
+[SPEAKER_03]: phenotyping of dry matter content in
+cassava.
+[SPEAKER_03]: But the validated spectrometers that have
+been looked at so far are prohibitively
+[SPEAKER_03]: expensive for most small breeding programs
+to afford.
+[SPEAKER_03]: So because of this, we're looking into the
+use of a portable handheld spectrometer
+[SPEAKER_03]: called the SIO, which at $300 is a 150 to
+200 times price reduction from the 50,000
+[SPEAKER_03]: plus that these other spectrometers cost.
+[SPEAKER_03]: So it does measure a restricted amount of
+wavelengths.
+[SPEAKER_03]: In the near-infrared spectrum,
+area of the electromagnetic spectrum.
+[SPEAKER_03]: But as I'll talk about, we've found this
+to also be highly predictive of dry matter
+[SPEAKER_03]: content.
+[SPEAKER_03]: And then the spectrometer connects with
+Bluetooth to a smartphone app that can
+[SPEAKER_03]: then be used by readers and technicians in
+the field to collect data.
+[SPEAKER_03]: So now I'm gonna take a little step back
+and talk about what near-infrared
+[SPEAKER_03]: spectroscopy is.
+[SPEAKER_03]: So this is a method that allows for a
+quick and non-destructive analysis.
+[SPEAKER_03]: It's been used in lots of different
+fields, including you can tell medications
+[SPEAKER_03]: apart, like counterfeit or
+non-counterfeit.
+[SPEAKER_03]: And then in agriculture specifically,
+it's been used for cultivar identification
+[SPEAKER_03]: for measuring bricks and other traits.
+[SPEAKER_03]: And what it is is the spectrometer
+measures the reflectance of light in the
+[SPEAKER_03]: near-infrared region of the
+electromagnetic spectrum, which goes from
+[SPEAKER_03]: about 700 to 2,500 nanometers.
+[SPEAKER_03]: And the reflectance in this region
+represents a complex signal from the
+[SPEAKER_03]: physical and chemical properties of
+whatever is being scanned.
+[SPEAKER_03]: So because the signal is complex,
+it requires multivariate statistical
+[SPEAKER_03]: techniques to be able to decipher what's
+going on.
+[SPEAKER_03]: And then it also requires the development
+of calibration models for use in each and
+[SPEAKER_03]: every application.
+[SPEAKER_03]: So this cultivar identification in beans
+will require different model from
+[SPEAKER_03]: measuring bricks and apples.
+[SPEAKER_03]: And so in my case, this looks like three
+main steps.
+[SPEAKER_03]: First, the calibration data is collected,
+and then that data is fed as training data
+[SPEAKER_03]: into a prediction model development
+pipeline.
+[SPEAKER_03]: And once those models are developed,
+they can be used for routine analysis in
+[SPEAKER_03]: breeding programs.
+[SPEAKER_03]: So this requires protocol optimization to
+decide what different steps need to be put
+[SPEAKER_03]: into the data collection protocol and also
+into the model development pipeline.
+[SPEAKER_03]: And then once the models are developed,
+they will also require consistent updating
+[SPEAKER_03]: as the phenotype change, as environments
+change.
+[SPEAKER_03]: So I'm going to zoom in and talk about my
+work in steps one, two, and the protocol
+[SPEAKER_03]: optimization.
+[SPEAKER_03]: So I have two different breeding programs
+that I'm working with, IATA in Nigeria and
+[SPEAKER_03]: MACRI in Uganda.
+[SPEAKER_03]: Each with two different years of data.
+[SPEAKER_03]: So far, I just have this first year
+collected.
+[SPEAKER_03]: My analyses for the rest of the
+presentation will focus on these trials in
+[SPEAKER_03]: Nigeria, which include 129 genotypes total
+with two reps each.
+[SPEAKER_03]: These data were collected with six roots
+per plot.
+[SPEAKER_03]: The roots were sliced in half crossways
+and then scanned cross sectionally.
+[SPEAKER_03]: These are more slices than were actually
+taken.
+[SPEAKER_03]: It was just cut in half.
+[SPEAKER_03]: But scan like this.
+[SPEAKER_03]: And then those same roots were put in
+through the standard operating protocol
+[SPEAKER_03]: for the oven method to determine dry
+matter content.
+[SPEAKER_03]: And this was done for each individual
+root.
+[SPEAKER_03]: So for each root, I have a pairing of
+scans and a dry matter content value from
+[SPEAKER_03]: the oven method.
+[SPEAKER_03]: These were then fed into pre-processing
+techniques and then into my model
+[SPEAKER_03]: development pipeline, which consisted of
+50 iterations.
+[SPEAKER_03]: Of random split of 70% training and 30%
+validation to get a better idea of what
+[SPEAKER_03]: different training sets will, what the
+effect of different training sets will
+[SPEAKER_03]: have on the predictability of the models.
+[SPEAKER_03]: And so then I looked specifically at the
+different pre-processing techniques and
+[SPEAKER_03]: their effect on the models themselves.
+[SPEAKER_03]: So I looked at 12 different techniques
+including scattered correction and
+[SPEAKER_03]: derivatives.
+[SPEAKER_03]: And compared them with the raw data
+values.
+[SPEAKER_03]: And so this graph shows from left to right
+on the X axis, different pre-processing
+[SPEAKER_03]: techniques with raw data on the far left.
+[SPEAKER_03]: The top is predictability of the model
+with R squared prediction.
+[SPEAKER_03]: And the bottom is root mean squared error
+of prediction.
+[SPEAKER_03]: And as you can see, there's no
+statistically significant difference
+[SPEAKER_03]: between the different pre-processing
+methods and the raw data itself.
+[SPEAKER_03]: So I will use this to inform you on my
+model development pipeline moving forward,
+[SPEAKER_03]: but I'll keep checking it with different
+data sets as the data itself might require
+[SPEAKER_03]: different pre-processing methods.
+[SPEAKER_03]: So one other thing that I looked at in the
+protocol optimization is the number of
+[SPEAKER_03]: roots that I included for plot.
+[SPEAKER_03]: So if you remember, I had the dry matter
+content for each individual root and I
+[SPEAKER_03]: used that in this analysis.
+[SPEAKER_03]: So from left to right, we have one through
+six roots per root.
+[SPEAKER_03]: And then this is the R squared prediction
+again and the root mean squared error of
+[SPEAKER_03]: prediction.
+[SPEAKER_03]: And there are clear advantages to adding
+more roots, but there seem to be
+[SPEAKER_03]: diminishing returns after about three
+roots per plot.
+[SPEAKER_03]: And then this again will be used to inform
+the future calibration data collection and
+[SPEAKER_03]: the SOPs that we develop for breeding
+programs to use in their routine
+[SPEAKER_03]: phenotyping of dry matter content.
+[SPEAKER_03]: And so with this, our final goal is that
+routine use of this method in breeding
+[SPEAKER_03]: programs, but to get there, we have
+additional protocol optimization that I'd
+[SPEAKER_03]: like to perform and then the additional
+data from the other breeding program in
+[SPEAKER_03]: Uganda as well as from 2019.
+[SPEAKER_03]: And then I'd like to evaluate prediction
+models across environments and breeding
+[SPEAKER_03]: programs.
+[SPEAKER_03]: And then finally integrate this data type
+and the models that I create into Cassava
+[SPEAKER_03]: base so that breeders can access them
+directly and use them in their breeding
+[SPEAKER_03]: programs.
+[SPEAKER_03]: With that, I'd like to thank my lab and my
+great collaborators from the NextGen
+[SPEAKER_03]: Cassava project, the pheno apps team and
+my committee.
+[SPEAKER_02]: Are there any questions for Jenna?
+[SPEAKER_01]: Jenna, how repeatable are these?
+[SPEAKER_01]: Did you try measuring the same roots two
+or three or four times?
+[SPEAKER_03]: So I scanned each root six times and so
+far have been averaging the scans across a
+[SPEAKER_03]: root, but I do want to look at the number
+of scans per sample to see if that's
+[SPEAKER_03]: affecting the results that I'm getting.
+[SPEAKER_03]: So looking at one scan per root and
+comparing it with another scan for the
+[SPEAKER_03]: root or averaging two or three to see how
+many we should be adding in our protocol.
+[SPEAKER_03]: So it's not something I've looked at yet,
+but I do plan to.
+[SPEAKER_03]: Yes, Rebecca.
+[SPEAKER_04]: You just mentioned six scans per root,
+but when you were showing the slices,
+[SPEAKER_04]: you said you were really just doing one
+slice per root.
+[SPEAKER_04]: Can you just comment on how the size of
+the root and where exactly you scan it in
+[SPEAKER_04]: terms of the diameter versus the
+longitudinal position?
+[SPEAKER_04]: How do those things influence dry matter
+and scan?
+[SPEAKER_03]: So the question is whether or where
+exactly on the root the scans are taking
+[SPEAKER_03]: place and how that affects the results
+that I'm getting.
+[SPEAKER_03]: So we're taking the root and cutting it in
+half crossways in the middle and then
+[SPEAKER_03]: taking three scans on each half,
+both on the cut surface.
+[SPEAKER_03]: So we have not so far looked at different
+regions of the roots, so we do know that
+[SPEAKER_03]: dry matter can vary from the proximal to
+distal end of the root, and that is
+[SPEAKER_03]: something else that we want to look at.
+[SPEAKER_03]: So we do have a collaborator at EMBRAFA in
+Brazil who's looking at this right now,
+[SPEAKER_03]: and I've been talking to him about getting
+that data and looking at it, but so far
+[SPEAKER_03]: the roots have all been the same age,
+roughly the same size, and so that also is
+[SPEAKER_03]: not something I've looked at yet.
+[SPEAKER_00]: What is the relationship between dry
+matter and consumer acceptance?
+[SPEAKER_03]: So all that I know about that is
+secondhand from breeders and from people
+[SPEAKER_03]: who eat cassava, a few of them,
+but they all say that the higher dry
+[SPEAKER_03]: matter is better, it just feels better in
+your mouth, it cooks better.
+[SPEAKER_03]: And so I think that consumers can tell
+whether a root is high or low dry matter
+[SPEAKER_03]: when they're eating it, and then it might
+mean that they don't buy cassava from that
+[SPEAKER_03]: person who sold the low dry matter cassava
+to them or something like that,
+[SPEAKER_03]: but I haven't done any direct consumer
+studies or anything like that.
+[SPEAKER_02]: Any other questions?
+[SPEAKER_02]: All right, let's give Jenna another round
+of applause.
+[SPEAKER_03]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_03]: Thank you.
+Thank you.
+Thank you.
+Thank you.

@@ -1,0 +1,233 @@
+[SPEAKER_01]: So Amos, in your talk, there was a point
+where you started to introduce pricing as
+[SPEAKER_01]: a new component to this data set.
+[SPEAKER_01]: What are the prospective outlooks for data
+in that space?
+[SPEAKER_00]: You're a chemist.
+[SPEAKER_00]: Have you done anything with financial time
+series regressions?
+[SPEAKER_00]: I have not.
+[SPEAKER_00]: So financial time series regression,
+in a basic linear regression, we say that
+[SPEAKER_00]: a conditioned variable is, you know,
+the dependent variable is conditioned on
+[SPEAKER_00]: the independent variable, and there's some
+usually linear coefficient.
+[SPEAKER_00]: If you think about how that would work
+with a financial time series, what you'd
+[SPEAKER_00]: be saying is that the price is equal to
+some coefficient times time.
+[SPEAKER_00]: That means the price would be a straight
+line going some way up, hopefully,
+[SPEAKER_00]: maybe down, who knows.
+[SPEAKER_00]: That's obviously not how prices work in
+the real world.
+[SPEAKER_00]: A slightly more complex model is called an
+autoregressive model, where what we say is
+[SPEAKER_00]: that the price at time t is conditioned on
+the price at times t minus 1 times some
+[SPEAKER_00]: coefficient plus some random distribution.
+[SPEAKER_01]: So it's linear over short time frames?
+[SPEAKER_00]: Well, what we'd say is that it's a random
+walk.
+[SPEAKER_00]: Where the randomness is in, is in the
+movement from yesterday's price.
+[SPEAKER_01]: So this would be more in line with like a
+Monte Carlo type simulation?
+[SPEAKER_00]: We're not there yet.
+[SPEAKER_00]: We're only at AR1.
+[SPEAKER_00]: We're not close to where we're going.
+[SPEAKER_00]: So at AR1, we say that the randomness is
+in the price movement from one day to the
+[SPEAKER_00]: next, and we say that those price
+movements are drawn from a common shared
+[SPEAKER_00]: distribution.
+[SPEAKER_00]: But that's not really how pricing works
+either, because as we saw in the financial
+[SPEAKER_00]: crisis, volatility is not constant over
+time.
+[SPEAKER_00]: We have periods of high volatility,
+and we have periods of low volatility.
+[SPEAKER_00]: And so we can move from an AR model to
+what we call an ARCH model, which is an
+[SPEAKER_00]: autoregressive conditional
+heteroskedasticity model, where we say
+[SPEAKER_00]: that the price movement at time x,
+that the sigma at time t, or rather,
+[SPEAKER_00]: let's go away from x, let's stick with
+time t, that the sigma at time t is
+[SPEAKER_00]: conditioned on sigma at time t minus 1.
+[SPEAKER_00]: And we can even become more sophisticated
+than that, and we can go to a generalized
+[SPEAKER_00]: autoregressive conditional
+heteroskedasticity model, where we say
+[SPEAKER_00]: that volatility is seasonal, volatility is
+periodically conditioned, and so forth.
+[SPEAKER_00]: That only gives us, though, a single
+price.
+[SPEAKER_00]: It gives us a good estimate of what
+volatility is going to be in the price
+[SPEAKER_00]: risk for the near term, but only for a
+single price point.
+[SPEAKER_00]: But we can take our GARCH model,
+and we can lay it out in a multivariate
+[SPEAKER_00]: normal model.
+[SPEAKER_00]: And if we lay out our GARCH in a
+multivariate normal, it becomes a model
+[SPEAKER_00]: called a C-cubed GARCH, where sigma at
+each point is related to the sigma and the
+[SPEAKER_00]: price movements of the other prices in our
+model.
+[SPEAKER_01]: So the sigma now is dynamic.
+[SPEAKER_00]: Well, our sigma, instead of being in a
+single price model, whether it's AR or
+[SPEAKER_00]: GARCH, sigma is one number.
+[SPEAKER_00]: It's a scalar.
+[SPEAKER_01]: Do you go on to regress those,
+then?
+[SPEAKER_00]: Well, in a multivariate model,
+though, sigma is a symmetric positive
+[SPEAKER_00]: definite matrix, because it has to relate
+the covariance of every price to every
+[SPEAKER_00]: other price.
+[SPEAKER_00]: And that's the concept that I was trying
+to introduce in short form today,
+[SPEAKER_00]: which is that in CONNECT, we have
+positions in CONNECT that are related to
+[SPEAKER_00]: each other according to the economic
+substitutability of two different strains.
+[SPEAKER_00]: How close or distant two strains are from
+each other is how good they are as
+[SPEAKER_00]: substitutes.
+[SPEAKER_00]: If you think about that, and if you think
+about how that should relate to a pricing
+[SPEAKER_00]: model, their substitutability is inversely
+proportional or should be inversely
+[SPEAKER_00]: proportional to the covariance of the
+price shocks, which means that our CONNECT
+[SPEAKER_00]: distances have a natural relationship to
+the sigma matrix in that C-cubed GARCH
+[SPEAKER_00]: model.
+[SPEAKER_00]: And it becomes possible at that point,
+if you tried to figure out the price,
+[SPEAKER_00]: this is what I was alluding to today,
+if you try and figure out the price of a
+[SPEAKER_00]: strain tomorrow, when that strain hasn't
+traded in five months, because there are
+[SPEAKER_00]: thousands of strains and they don't trade
+that often, if you tried to figure out the
+[SPEAKER_00]: price of that strain tomorrow when it
+hasn't traded in five months and do that
+[SPEAKER_00]: directly, you would have a very rough
+time.
+[SPEAKER_00]: You're not going to be able to do that.
+[SPEAKER_00]: On the other hand, if you have a
+covariance matrix and you have intervening
+[SPEAKER_00]: prices in that intervening five months for
+other prices in that covariance matrix,
+[SPEAKER_00]: then you can have a pretty well-grounded
+estimate of what the new price will be for
+[SPEAKER_00]: this strain that hasn't traded recently.
+[SPEAKER_00]: These are wholesale prices.
+[SPEAKER_00]: I don't worry about the retail level.
+[SPEAKER_00]: We're a company that operates at the
+wholesale level.
+[SPEAKER_00]: What this lets us do is to predict not an
+individual, this is your likely price
+[SPEAKER_00]: tomorrow, it lets us predict a pretty
+narrow range of probabilistic prices for
+[SPEAKER_00]: not today, but for a week from today,
+two weeks from today, a month from today,
+[SPEAKER_00]: and that lets us help people to figure out
+what price they can expect to obtain and
+[SPEAKER_00]: help people price their product on the
+market.
+[SPEAKER_01]: Right, so you're talking about enabling
+what's now a commodity and now giving
+[SPEAKER_01]: futures to that commodity.
+[SPEAKER_00]: You're a very insightful person,
+Vaughn.
+[SPEAKER_00]: Is that the direction you're heading?
+[SPEAKER_00]: That's exactly the direction we're
+heading, is to figure out to be able to
+[SPEAKER_00]: accurately estimate not just the price,
+but what's the price risk over the next
+[SPEAKER_00]: month, two months, six months,
+how much volatility is there in the
+[SPEAKER_00]: market, how much volatility is going to be
+associated with the price of this strain,
+[SPEAKER_00]: and so forth.
+[SPEAKER_00]: That's how other commodities are priced,
+and we would like to be able to start
+[SPEAKER_00]: doing that as cannabis moves into an
+ordinary commodity, that is to say a
+[SPEAKER_00]: commodity that's readily available,
+that's efficiently priced, where buyers
+[SPEAKER_00]: can get a reliable stream of commerce.
+[SPEAKER_00]: That's the kind of risk assessment that
+you need to be able to do.
+[SPEAKER_01]: Interesting.
+[SPEAKER_01]: Could you, as a chemist, could you take a
+similar model and apply it to state
+[SPEAKER_01]: statements about the potency of cannabis?
+[SPEAKER_01]: Is cannabis becoming more potent over time
+or less potent, or is it stagnating out?
+[SPEAKER_01]: Could you apply it to questions like,
+are we seeing more what are they referred
+[SPEAKER_01]: to as indicas versus sativas, more uppers
+or downers?
+[SPEAKER_01]: Could we get a sense of what's out on the
+market?
+[SPEAKER_00]: Indicas and sativas are chemically
+indistinguishable.
+[SPEAKER_00]: We see no significant differentiation
+between indicas and sativas.
+[SPEAKER_00]: But what's uplifting and what's down?
+[SPEAKER_00]: There's a little bit of a tendency for
+sativas to have more tepidoline,
+[SPEAKER_00]: but that's it.
+[SPEAKER_00]: I don't know that there are uppers and
+downers distinctions that I can find
+[SPEAKER_00]: chemically.
+[SPEAKER_00]: Is the amount of THC growing?
+[SPEAKER_00]: Yes.
+[SPEAKER_00]: If you're selling cannabis as flour,
+there are people who walk into the
+[SPEAKER_00]: dispensary, and what they're going to pick
+is, what has the most THC in it?
+[SPEAKER_00]: Give me the stuff that's the strongest.
+[SPEAKER_00]: Give me the most THC by THC dollar.
+[SPEAKER_00]: Producers are marketing to that.
+[SPEAKER_00]: I have to tell you, I think from the
+consumer's perspective, I think they're
+[SPEAKER_00]: making a terrible mistake.
+[SPEAKER_00]: If you have cannabis that has more than
+20%, 25% THC in it, there's a limit to how
+[SPEAKER_00]: high you can get.
+[SPEAKER_00]: There's certainly a limit to how high you
+want to get.
+[SPEAKER_00]: Most people, myself included, but really
+anybody that we've talked to, whenever
+[SPEAKER_00]: we've done research into this,
+people are much happier with a cannabis
+[SPEAKER_00]: that's 10% THC and 10% CBD than they are
+with a cannabis that's 35% THC.
+[SPEAKER_00]: You're going to get frankly too high,
+but nevertheless, that's what producers
+[SPEAKER_00]: are moving towards.
+[SPEAKER_00]: The other place where producers are moving
+towards very high THC amounts is in
+[SPEAKER_00]: production for extraction.
+[SPEAKER_00]: There's certainly demand for very high
+THC, very high cannabinoid content for
+[SPEAKER_00]: sale to extractors.
+[SPEAKER_00]: Consumers would probably be happier if
+they focused less on getting as much THC
+[SPEAKER_00]: as they can and more on getting a balance
+of other psychoactive chemicals in their
+[SPEAKER_00]: cannabis.
+[SPEAKER_01]: Thank you, Amos.
+[SPEAKER_01]: Thank you very much.
+[SPEAKER_01]: Get it?
+[SPEAKER_01]: Yeah.
+Thank you.

@@ -1,0 +1,965 @@
+[SPEAKER_00]: I'm going to talk about surface
+temperature measurements using infrared
+[SPEAKER_00]: radiometers.
+[SPEAKER_00]: If you have any questions while I'm
+talking feel free to raise your hand and
+[SPEAKER_00]: ask and I'll do my best to address it.
+[SPEAKER_00]: I have lots of slides unlike Bruce so
+we're going to shift technologies just a
+[SPEAKER_00]: little bit.
+[SPEAKER_00]: Surface temperature can be a very
+important variable in lots of
+[SPEAKER_00]: environmental applications.
+[SPEAKER_00]: I'm going to talk about it more in
+relation to plants today but bear in mind
+[SPEAKER_00]: that you can use infrared technology to
+measure soil surface temperatures,
+[SPEAKER_00]: snow surface temperatures, roadways if
+you're interested in road conditions for
+[SPEAKER_00]: example.
+[SPEAKER_00]: The three key components to an infrared
+radiometer are listed here.
+[SPEAKER_00]: You have to have a radiation detector,
+you have to have an internal temperature
+[SPEAKER_00]: sensor, and then you have to have a
+housing to contain the two and be rugged
+[SPEAKER_00]: so that it's stable in changing
+environmental conditions.
+[SPEAKER_00]: The basic operation is as follows.
+[SPEAKER_00]: We all know from physics that all objects
+that have a temperature above absolute
+[SPEAKER_00]: zero emit infrared radiation.
+[SPEAKER_00]: Whatever you point the sensor at is going
+to be emitting infrared radiation towards
+[SPEAKER_00]: the sensor.
+[SPEAKER_00]: In this case it's a plant canopy and the
+sensor itself has the temperature above
+[SPEAKER_00]: absolute zero so it's also going to be
+emitting radiation back out so to speak.
+[SPEAKER_00]: The signal that's actually measured by the
+radiation detector inside the radiometer
+[SPEAKER_00]: is proportional on this difference between
+the absorbed radiation that's coming from
+[SPEAKER_00]: the surface that you're pointing it at and
+the emitted radiation from the detector
+[SPEAKER_00]: itself.
+[SPEAKER_00]: Those signals can be quite small.
+[SPEAKER_00]: An example of a common infrared radiometer
+output 60 microvolts that's 0.06
+[SPEAKER_00]: millivolts per degree C difference between
+the target that you're looking at and the
+[SPEAKER_00]: temperature of the sensor itself.
+[SPEAKER_00]: What this means is if you're making an
+analog measurement of this, you're
+[SPEAKER_00]: measuring the voltage directly,
+you need a high resolution voltmeter in
+[SPEAKER_00]: order to measure that small signal and to
+get an accurate number.
+[SPEAKER_00]: I've listed here about one microvolt is
+required.
+[SPEAKER_00]: You have to have a high-end data logger or
+voltmeter to do this.
+[SPEAKER_00]: When the absorbed radiation, the amount of
+radiation coming in is less than the
+[SPEAKER_00]: amount of radiation going out,
+then the radiation balance at the detector
+[SPEAKER_00]: itself is negative and you'll get a
+negative voltage.
+[SPEAKER_00]: The opposite is true when you have more
+radiation coming in than what's going out.
+[SPEAKER_00]: The radiation balance at the detector is
+positive and you'll get a positive voltage
+[SPEAKER_00]: rather than a negative voltage.
+[SPEAKER_00]: In addition to needing a voltmeter that
+can measure small signals in the microvolt
+[SPEAKER_00]: range, you also need one that can measure
+polarity both positive and negative
+[SPEAKER_00]: voltages.
+[SPEAKER_00]: I mentioned a minute ago that we all
+remember from physics, radiation and
+[SPEAKER_00]: temperature are closely linked.
+[SPEAKER_00]: All objects with a temperature above
+absolute zero emit radiation.
+[SPEAKER_00]: The actual equation that quantifies the
+relationship between the two is called the
+[SPEAKER_00]: Stefan-Boltzmann equation, where the
+energy emitted by an object in this case
+[SPEAKER_00]: it's a plant canopy, is equal to a
+constant, that's the sigma, times the
+[SPEAKER_00]: fourth power of the absolute temperature.
+[SPEAKER_00]: If we're able to measure the radiation
+being emitted or the energy being emitted
+[SPEAKER_00]: by an object, then we can calculate the
+temperature.
+[SPEAKER_00]: That's the basic premise for how these
+infrared sensors work.
+[SPEAKER_00]: Another important component of infrared
+sensors that I didn't actually list on the
+[SPEAKER_00]: previous slide is the filter that goes in
+front of the radiation detector.
+[SPEAKER_00]: Radiation detectors tend to be black
+bodies, meaning they're good absorbers of
+[SPEAKER_00]: all the wavelengths of radiation that are
+incident on them.
+[SPEAKER_00]: Remember, we only want to measure the
+wavelengths that are related to the
+[SPEAKER_00]: temperature of the surface.
+[SPEAKER_00]: In order to build a radiometer that
+measures what we're interested in,
+[SPEAKER_00]: we have to put a filter in front of it to
+give us just the wave lengths of radiation
+[SPEAKER_00]: that we're interested in.
+[SPEAKER_00]: A radiation detector should include a
+filter that blocks all of the long wave
+[SPEAKER_00]: radiation that's outside of what we call
+the atmospheric window.
+[SPEAKER_00]: The atmospheric window is the wavelengths
+between 8 and 14 micron.
+[SPEAKER_00]: I have a graph here that shows wavelength
+on the x-axis from 5 to 20 micron and then
+[SPEAKER_00]: transmittance of the atmosphere on the
+y-axis.
+[SPEAKER_00]: The reason we choose 8 to 14 micron is
+that's the wavelength range that's called
+[SPEAKER_00]: the atmospheric window.
+[SPEAKER_00]: It's essentially the wavelengths where the
+atmosphere is transparent to long wave
+[SPEAKER_00]: radiation.
+[SPEAKER_00]: Meaning, if you point a sensor with a
+filter that has an 8 to 14 micron window
+[SPEAKER_00]: on it, that radiation is going to come
+through the atmosphere rather than be
+[SPEAKER_00]: absorbed by the molecule.
+[SPEAKER_00]: Water vapor and CO2 in the atmosphere.
+[SPEAKER_00]: It's just the wavelengths where the sensor
+sees through the atmosphere, so to speak.
+[SPEAKER_00]: Below 8 micron, there's lots of absorption
+by water vapor molecules.
+[SPEAKER_00]: Above 14 micron, there's lots of
+absorption by carbon dioxide molecules.
+[SPEAKER_00]: We want to try to measure the surface
+ratio of radiation and not the atmospheric
+[SPEAKER_00]: radiation.
+[SPEAKER_00]: Therefore, we need a filter that matches
+the atmospheric window.
+[SPEAKER_00]: Just to give you an idea of calibration,
+I got a couple quick pictures right here.
+[SPEAKER_00]: This shows the calibration system that we
+use at Apogee Instruments to calibrate
+[SPEAKER_00]: infrared radiometers.
+[SPEAKER_00]: There's lots of these things commercially
+available and we're going to let you play
+[SPEAKER_00]: around with some of these handheld devices
+later.
+[SPEAKER_00]: You can get models like this really
+cheaply at the hardware store.
+[SPEAKER_00]: You point them at the surface that you
+want, you pull the trigger and it gives
+[SPEAKER_00]: you a temperature.
+[SPEAKER_00]: I just measured the temperature of the
+floor as 71 Fahrenheit, or if we convert
+[SPEAKER_00]: it to Celsius, about 22 Celsius.
+[SPEAKER_00]: These are fine, especially for
+demonstration purposes or just spot checks
+[SPEAKER_00]: where high accuracy isn't required.
+[SPEAKER_00]: The main difference between something like
+this that you can buy at the hardware
+[SPEAKER_00]: store for a few dollars and something like
+this that we manufacture at Apogee
+[SPEAKER_00]: Instruments is really the calibration.
+[SPEAKER_00]: Something like this, the accuracy is
+probably 1 to 2 Celsius.
+[SPEAKER_00]: Here I'm just showing the sensors.
+[SPEAKER_00]: The uncertainty of the calibration is
+about 0.2 Celsius.
+[SPEAKER_00]: There's an order of magnitude difference
+between the accuracy of something like
+[SPEAKER_00]: this and a research grade instrument.
+[SPEAKER_00]: What you're looking at here is actually a
+two component system and it's kind of hard
+[SPEAKER_00]: to see it, but in the next slide I think
+it will become clear.
+[SPEAKER_00]: There's this cap piece that sits on top of
+a large piece of aluminum.
+[SPEAKER_00]: The piece of aluminum has a big hole in it
+shaped like a cone and that's painted flat
+[SPEAKER_00]: black.
+[SPEAKER_00]: We use that as the black body radiation
+source that we can fine tune the
+[SPEAKER_00]: temperatures and get specific values of
+temperature independent of the sensor
+[SPEAKER_00]: temperatures themselves.
+[SPEAKER_00]: This cap piece is another block of
+aluminum that has a bunch of holes in it
+[SPEAKER_00]: that you can slide the sensors into and
+then independently control their
+[SPEAKER_00]: temperature.
+[SPEAKER_00]: What you have is a target or the black
+body cone and a cap that fit together,
+[SPEAKER_00]: but we can independently control the
+temperatures of the two and set this
+[SPEAKER_00]: temperature at one value and the sensors
+at a different value and derive a whole
+[SPEAKER_00]: set of data that allows us to get sensor
+specific calibration coefficients for all
+[SPEAKER_00]: the radiometers.
+[SPEAKER_00]: We can fine tune it to 0.2 C uncertainty.
+[SPEAKER_00]: Just to give you an idea, there's the
+actual calibration device with the cap
+[SPEAKER_00]: piece pulled off of it so you can see that
+it's a black body.
+[SPEAKER_00]: I have another one, a small one that we'll
+use for a really brief demonstration
+[SPEAKER_00]: later.
+[SPEAKER_00]: This is called a Leslie Cube or if you
+look it up on the internet sometimes it's
+[SPEAKER_00]: called Professor Leslie's Cube.
+[SPEAKER_00]: I don't know who Professor Leslie is but
+I'd like to meet him someday because it's
+[SPEAKER_00]: a really simple and powerful device that
+we'll use in a few minutes to illustrate
+[SPEAKER_00]: the concept of emissivity.
+[SPEAKER_00]: Essentially what you're looking at here
+and what you're looking at here are
+[SPEAKER_00]: similar devices that you can use to
+calculate and calibrate the instruments.
+[SPEAKER_00]: Once you have a functional sensor that's
+calibrated and you take it to the field to
+[SPEAKER_00]: make measurements, it's not just a simple
+matter of putting the sensor out there and
+[SPEAKER_00]: recording the temperature that it gives
+you and accepting that as the true value
+[SPEAKER_00]: of surface temperature.
+[SPEAKER_00]: We actually have to correct for emissivity
+effects.
+[SPEAKER_00]: Emissivity is just a fraction of black
+body emittance.
+[SPEAKER_00]: Something like this black body cone here,
+the black body cone that I showed you on
+[SPEAKER_00]: the previous slide, they have very high
+emissivities, well over 0.99, meaning
+[SPEAKER_00]: they're almost black bodies.
+[SPEAKER_00]: A black body is a perfect emitter,
+meaning it emits all of the theoretically
+[SPEAKER_00]: possible radiation for its temperature.
+[SPEAKER_00]: Something that has an emissivity less than
+one is often called a gray body and
+[SPEAKER_00]: basically it's not a perfect emitter.
+[SPEAKER_00]: Meaning it emits some fraction of
+radiation less than it otherwise would if
+[SPEAKER_00]: it were a black body.
+[SPEAKER_00]: Emissivity is how we quantify the fraction
+of black body emittance.
+[SPEAKER_00]: If you have a surface with an emissivity
+of one, for example, the only radiation
+[SPEAKER_00]: coming from the surface that arrives at
+the sensor is radiation that was emitted
+[SPEAKER_00]: by the surface.
+[SPEAKER_00]: But if you have a surface that's not a
+black body, so the emissivity is less than
+[SPEAKER_00]: one, here we'll say 0.98, which is a
+pretty good estimate of emissivity for a
+[SPEAKER_00]: plant canopy.
+[SPEAKER_00]: That means most of the radiation incident
+on the detector is coming from the surface
+[SPEAKER_00]: of interest, but there's actually a small
+fraction of radiation coming from the
+[SPEAKER_00]: background and if it's outside the
+background is the sky.
+[SPEAKER_00]: There'll be a small fraction of radiation
+incident at the surface that's coming from
+[SPEAKER_00]: the sky.
+[SPEAKER_00]: The reason why is that the long wave
+reflection at the surface is one minus the
+[SPEAKER_00]: emissivity.
+[SPEAKER_00]: So if our emissivity is 0.98, that means
+our reflection of long wave is 0.02.
+[SPEAKER_00]: Essentially you have 98% of your radiation
+is coming from the plants which we're
+[SPEAKER_00]: trying to measure and 2% is coming from
+the background or the sky because it's
+[SPEAKER_00]: being reflected off of the plant surface
+towards the radiometer.
+[SPEAKER_00]: You might ask yourself, why is that a big
+deal?
+[SPEAKER_00]: Well the plant temperature and sky
+temperature might not be the same number.
+[SPEAKER_00]: If they are the same number, if they're
+close to the same number, it doesn't
+[SPEAKER_00]: matter if you're reflecting a small
+fraction of the sky radiation towards the
+[SPEAKER_00]: sensor, it's similar to the plant canopy
+temperature.
+[SPEAKER_00]: But if the sky temperature is
+significantly different, it can lead to
+[SPEAKER_00]: errors.
+[SPEAKER_00]: So we can correct for this effect with a
+relatively simple equation and the
+[SPEAKER_00]: equations listed up here, I won't go
+through the derivation, but the
+[SPEAKER_00]: information that you need to go into the
+equation to correct for emissivity are the
+[SPEAKER_00]: actual measured temperature itself which
+we get from the sensor, but then you need
+[SPEAKER_00]: some measurement or estimate of the
+background temperature and then a
+[SPEAKER_00]: measurement or estimate of the surface
+emissivity.
+[SPEAKER_00]: You can see once we have those numbers,
+they go in the equation here and give us
+[SPEAKER_00]: an estimate of the true surface
+temperature.
+[SPEAKER_00]: So just by way of example, on a clear day,
+the background temperature, and again if
+[SPEAKER_00]: we're outdoors this is the sky,
+can be really cold in the 8 to 14
+[SPEAKER_00]: wavelength range that the temperature
+sensor is measuring.
+[SPEAKER_00]: So we might measure a surface temperature
+of a plant canopy of 25 Celsius.
+[SPEAKER_00]: A clear day, the sky temperature is
+negative 40 Celsius.
+[SPEAKER_00]: If our plant canopy emissivity is 0.98,
+our actual surface temperature is at about
+[SPEAKER_00]: a degree higher, close to 26 Celsius than
+the measured temperature.
+[SPEAKER_00]: So emissivity can have a big impact on
+temperature measurements and it's
+[SPEAKER_00]: important that we account for it if our
+application requires accuracy better than
+[SPEAKER_00]: a degree Celsius or so.
+[SPEAKER_00]: Just to give you another example,
+on a cloudy day, we'll assume again a
+[SPEAKER_00]: measured temperature of 25 Celsius,
+but on a cloudy day the sky temperature
+[SPEAKER_00]: isn't nearly as cold as it is on a clear
+day.
+[SPEAKER_00]: 15 Celsius is a much better estimate of
+background temperature on a cloudy day.
+[SPEAKER_00]: Again assuming a plant canopy temperature
+of 0.98, now the surface temperature,
+[SPEAKER_00]: the true surface temperature, is only
+about 0.2 Celsius above what our sensor
+[SPEAKER_00]: gave us.
+[SPEAKER_00]: So the emissivity effect will vary with
+the sky conditions.
+[SPEAKER_00]: Clear, sky is cold, cloudy, the sky is
+warm, and when we get a break we'll
+[SPEAKER_00]: actually walk outside with some of these
+low-cost handheld infrared sensors and you
+[SPEAKER_00]: can point them up and measure the
+temperature of the sky and measure the
+[SPEAKER_00]: temperature of the surface and get a feel
+for how big the differences are.
+[SPEAKER_00]: Alright, so this table just shows a
+handful of emissivity values for
+[SPEAKER_00]: environmental surfaces and some man-made
+surfaces, concrete and polished aluminum.
+[SPEAKER_00]: So fortunately most of the surfaces that
+we're interested in measuring,
+[SPEAKER_00]: things like plant leaves and plant
+canopies, soil, water, they're close to
+[SPEAKER_00]: black bodies.
+[SPEAKER_00]: Not quite because none of them have an
+emissivity of one.
+[SPEAKER_00]: Deep plant canopies that have a lot of
+leaves can be really close to black
+[SPEAKER_00]: bodies, 0.99 in some cases.
+[SPEAKER_00]: So the emissivity effect tends to be small
+in environmental applications,
+[SPEAKER_00]: but again it can be quite important,
+especially if we have clear sky
+[SPEAKER_00]: conditions.
+[SPEAKER_00]: So this just gives you an idea of
+background temperature.
+[SPEAKER_00]: Clear sky will be very cold, overcast sky
+will be near air temperature, and this is
+[SPEAKER_00]: a simple equation that we derived in
+Logan, Utah that you can use to estimate
+[SPEAKER_00]: the background temperature or the sky
+temperature in the 8 to 14 micron range.
+[SPEAKER_00]: So you take the air temperature and you
+add 50 times the fraction of clouds and
+[SPEAKER_00]: then subtract 60.
+[SPEAKER_00]: So the fraction of clouds is basically
+what percentage of the hemisphere of sky
+[SPEAKER_00]: is cloud cover and what percentage is
+clear.
+[SPEAKER_00]: Alright, so let's take a quick break.
+[SPEAKER_00]: I'm about maybe halfway through and we
+have a break for tea time in just a few
+[SPEAKER_00]: minutes.
+[SPEAKER_00]: So I'm going to ask if James would go fill
+our little Leslie cube full of hot water
+[SPEAKER_00]: and just show you the emissivity effect in
+real time.
+[SPEAKER_00]: Just put it in right there, fill it all
+the way.
+[SPEAKER_00]: So all we're going to do is I have a
+couple infrared sensors here and when we
+[SPEAKER_00]: take a break you're welcome to play around
+with these.
+[SPEAKER_00]: So it's really simple, power button and
+then you point it at what you want to
+[SPEAKER_00]: measure and it outputs the temperature on
+the screen in Celsius.
+[SPEAKER_00]: So for example if I pointed at the ceiling
+and we get around 22 Celsius, I pointed at
+[SPEAKER_00]: the floor, we get about the same number
+and that makes sense.
+[SPEAKER_00]: The room here is essentially the same
+temperature and so the surfaces in the
+[SPEAKER_00]: room should be about the same temperature.
+[SPEAKER_00]: So all we're going to do is measure the
+black body surface of the Leslie cube and
+[SPEAKER_00]: then the side of the Leslie cube.
+[SPEAKER_00]: So take a look at these numbers for a
+second and I can tell you the side of the
+[SPEAKER_00]: Leslie cube, it's polished stainless
+steel.
+[SPEAKER_00]: So polished aluminum has an emissivity of
+around 0.03 to 0.05.
+[SPEAKER_00]: Polished stainless steel will be something
+similar.
+[SPEAKER_00]: I don't know the exact number but it will
+be something similar.
+[SPEAKER_00]: Now what we're going to do is fill the the
+Leslie cube full of hot water.
+[SPEAKER_00]: We know that the black body cone of the
+Leslie cube is close to a black body so
+[SPEAKER_00]: its emissivity is very near one.
+[SPEAKER_00]: Any ideas what the temperature of the
+black body cone will be versus the
+[SPEAKER_00]: stainless steel side of the Leslie cube if
+we measure it with one of these sensors?
+[SPEAKER_00]: So let's just assume the water temperature
+will be 50 or 60 Celsius.
+[SPEAKER_00]: So what should the black body cone surface
+temperature be?
+[SPEAKER_00]: What's that?
+[SPEAKER_00]: Yeah, it should be close to the true
+temperature because it's a black body
+[SPEAKER_00]: meaning it's emitting the maximum amount
+of radiation it should emit for that
+[SPEAKER_00]: temperature.
+[SPEAKER_00]: So what about if we pointed at the side of
+the the Leslie cube and measure the
+[SPEAKER_00]: polished aluminum surface, what should the
+temperature be?
+[SPEAKER_00]: What's that?
+[SPEAKER_00]: Yeah, why 22?
+[SPEAKER_00]: We should see a temperature that's pretty
+close to the room temperature because
+[SPEAKER_00]: remember one minus the emissivity is the
+long-wave reflectivity and so let's just
+[SPEAKER_00]: assume that the emissivity of this flat
+side is 0.05.
+[SPEAKER_00]: That means 95% of the radiation that we're
+measuring should be reflected from the
+[SPEAKER_00]: room.
+[SPEAKER_00]: So we should see something that's maybe
+about 22 Celsius because the ceiling and
+[SPEAKER_00]: the floor were about 22 when we measured
+them.
+[SPEAKER_00]: So I'll turn it on and I don't know how
+well you can see the screen.
+[SPEAKER_00]: I'll yell out the numbers for those of you
+that can't see the screen.
+[SPEAKER_00]: If we pointed at the the black body
+surface and the unit actually does some
+[SPEAKER_00]: averaging and so it's up to temperature
+now.
+[SPEAKER_00]: It looks like it's about 38.6 Celsius.
+[SPEAKER_00]: Now if I pointed at the panel on the side
+we're getting about 26 Celsius.
+[SPEAKER_00]: So not quite as cold as the 22 that I
+measured on the floor and that might be
+[SPEAKER_00]: because the emissivity is actually a
+little bit higher.
+[SPEAKER_00]: Maybe the emissivity is like 0.1 or 0.2.
+[SPEAKER_00]: So what we're actually doing is getting an
+average temperature somewhere between the
+[SPEAKER_00]: true temperature and the room temperature
+because the emissivity is somewhere
+[SPEAKER_00]: between 0 and 1 and I don't know exactly
+what it is.
+[SPEAKER_00]: This is an excellent question because
+you're actually jumping ahead in my
+[SPEAKER_00]: slides.
+[SPEAKER_00]: The next thing I'm going to talk about in
+my slideshow is the field of view and so
+[SPEAKER_00]: what happens is if we put it right up next
+to the the black body we should measure
+[SPEAKER_00]: something around 38 and again we are about
+38.6 Celsius.
+[SPEAKER_00]: If I slowly start to move it away in the
+front row what's happening?
+[SPEAKER_00]: It's getting colder and colder so now
+we're about probably 12 centimeters maybe
+[SPEAKER_00]: 14 centimeters away and we're reading 30
+instead of 38.
+[SPEAKER_00]: So what's happening is we're moving it
+further and further from the the black
+[SPEAKER_00]: body.
+[SPEAKER_00]: We're seeing more and more within the
+footprint that this thing measures and so
+[SPEAKER_00]: now we're starting to move it away and
+we're seeing the the sides where it's
+[SPEAKER_00]: polished aluminum in addition to the the
+black body and that's determined by the
+[SPEAKER_00]: the field of view of the sensor.
+[SPEAKER_00]: I might actually be able to do another
+demonstration.
+[SPEAKER_00]: Let me see if I have a light in my bag.
+[SPEAKER_01]: Mark, let me make a comment while you're
+getting set up for that.
+[SPEAKER_03]: Okay.
+[SPEAKER_01]: If you look on the internet for
+manufacturers of infrared radiometers you
+[SPEAKER_01]: will see some manufacturers that sell an
+instrument with a dial on the back that is
+[SPEAKER_01]: allegedly correct for emissivity and they
+say this is a terrific feature our
+[SPEAKER_01]: instruments more accurate because we dial
+in emissivity.
+[SPEAKER_01]: What they do is take the reading and
+multiply by the emissivity.
+[SPEAKER_00]: Actually they divide by the emissivity.
+[SPEAKER_01]: Or divide.
+[SPEAKER_01]: Right.
+[SPEAKER_01]: But it often makes the measurement worse
+instead of better because they're not
+[SPEAKER_01]: included including the reflected radiation
+that Mark's talking about.
+[SPEAKER_01]: So boy does that confuse a lot of people.
+[SPEAKER_01]: They act like it's just a simple dial you
+can just correct for this and it drives
+[SPEAKER_01]: people that know what they're doing crazy
+because it confuses the issue.
+[SPEAKER_01]: You can't just take a dial and correct for
+emissivity.
+[SPEAKER_00]: Good point Bruce.
+[SPEAKER_00]: So if you have infrared radiometers that
+have a dial on them that allow you to tune
+[SPEAKER_00]: it to the emissivity of the surface I
+would strongly recommend that you set that
+[SPEAKER_00]: dial to one so that it doesn't make that
+correction.
+[SPEAKER_00]: Actually it will make the correction.
+[SPEAKER_00]: It'll take the measurement and it'll
+divide it by one so you get the actual
+[SPEAKER_00]: measurement and then use the equation that
+I gave you on the previous slide to make
+[SPEAKER_00]: the emissivity correction the right way.
+[SPEAKER_00]: All right, so if there's no more questions
+about emissivity.
+[SPEAKER_00]: Yeah, go ahead.
+[SPEAKER_02]: Sorry, we've got real problems with
+emissivity down in Antarctica because our
+[SPEAKER_02]: moss temperature is in the full Sun and it
+can get up to 20 degrees Celsius and the
+[SPEAKER_02]: air temperature is obviously much colder
+than that and so if we use infrared
+[SPEAKER_02]: sensors down there we're finding a low
+degree of emissivity of accuracy and also
+[SPEAKER_02]: the mosses the emissivity can change
+according to their wet, dry, underwater,
+[SPEAKER_02]: frozen, whatever.
+[SPEAKER_02]: Is there any quick solution for correcting
+for emissivity if the emissivity is
+[SPEAKER_02]: changing over time?
+[SPEAKER_00]: I think the answer to that is you have to
+actually characterize the emissivity.
+[SPEAKER_00]: You need to know what it is within
+whatever degrees of uncertainty you're
+[SPEAKER_00]: comfortable with in order to use the
+equation.
+[SPEAKER_00]: So there are ways to measure the
+emissivity and if you want I can give you
+[SPEAKER_00]: some direction regards to papers in the
+literature that will describe how to
+[SPEAKER_00]: measure emissivity.
+[SPEAKER_00]: But yeah, in order to use the equation to
+correct for emissivity you have to have a
+[SPEAKER_00]: pretty good handle on it.
+[SPEAKER_00]: You need to know what it is.
+[SPEAKER_01]: You can get close by looking it up because
+you look at water 0.96 to 0.98 Biological
+[SPEAKER_01]: surfaces are full of water and so they're
+always in 0.96 to 0.98.
+[SPEAKER_01]: Like our skin is a high emissivity because
+it's hydrated, it's full of water.
+[SPEAKER_01]: Now sometimes it matters if it's 0.96 or
+it's 0.98 but biological surfaces that are
+[SPEAKER_01]: full of water are always a high emissivity
+but still you can have significant errors
+[SPEAKER_01]: if they don't do anything about it.
+[SPEAKER_02]: I think it's because the moss temperature
+is so different from the air temperature
+[SPEAKER_02]: even a slight difference in emissivity can
+drastically alter your measurements.
+[SPEAKER_00]: There's no doubt.
+[SPEAKER_00]: My examples only showed I had an example
+for a clear sky and a cloudy sky but I
+[SPEAKER_00]: could have just easily had an example for
+clear sky with an emissivity of 0.98 and
+[SPEAKER_00]: clear sky with an emissivity of 0.95 and
+we could look at the error there.
+[SPEAKER_00]: There will be an error as a function of
+emissivity and so if you don't know the
+[SPEAKER_00]: exact emissivity you either have to live
+with that uncertainty or you have to
+[SPEAKER_00]: measure the emissivity so you know what it
+is.
+[SPEAKER_00]: Any other questions?
+[SPEAKER_00]: Let's talk about field of view for a
+second.
+[SPEAKER_00]: The actual area or the footprint that's
+being measured by the radiometer will
+[SPEAKER_00]: depend on three things.
+[SPEAKER_00]: One of them is the field of view of the
+radiometer.
+[SPEAKER_00]: One of them is the mounting height or the
+distance of the radiometer from the
+[SPEAKER_00]: surface that you're trying to measure and
+the other one is the angle of the
+[SPEAKER_00]: radiometer whether it's looking straight
+down or at an angle.
+[SPEAKER_00]: The field of view of the radiometer is
+defined as the angle or the half angle of
+[SPEAKER_00]: the cone apex where the cone base is the
+area surface being measured and the apex
+[SPEAKER_00]: is right here.
+[SPEAKER_00]: Just to illustrate this particular model
+has a half angle field of view of 22
+[SPEAKER_00]: degrees or a full angle field of view of
+44 degrees.
+[SPEAKER_00]: The best way that I like to think of field
+of view and the best way that I like to
+[SPEAKER_00]: illustrate it is with a flashlight and
+this is not necessarily a flashlight it's
+[SPEAKER_00]: just a pen with an LED on the end but I
+think I can make it work for demonstration
+[SPEAKER_00]: purposes.
+[SPEAKER_00]: We're all familiar if we go into a dark
+room and we hold the flashlight close to
+[SPEAKER_00]: the wall and perpendicular to the wall we
+get a small circle where it's pretty high
+[SPEAKER_00]: intensity light right and then if we start
+moving the flashlight away from the wall
+[SPEAKER_00]: the circle gets bigger spreads out.
+[SPEAKER_00]: If we hold the pen or the flashlight next
+to the wall and then we start to angle it
+[SPEAKER_00]: so it's no longer perpendicular to the
+wall the footprint or the spot on the wall
+[SPEAKER_00]: it now spreads out into an ellipse rather
+than a circle.
+[SPEAKER_00]: The field of view of a radiometer is
+analogous to the the spot or the light dot
+[SPEAKER_00]: that a flashlight makes on a wall.
+[SPEAKER_00]: If your radiometer is perpendicular to the
+surface that you're trying to measure it's
+[SPEAKER_00]: going to have a footprint of a circle.
+[SPEAKER_00]: If you're pretty close to the surface
+you're trying to measure that's footprint
+[SPEAKER_00]: is going to be small.
+[SPEAKER_00]: If you move the radiometer further from
+the surface the footprint gets bigger and
+[SPEAKER_00]: bigger meaning you're averaging more and
+more of the ground area into the
+[SPEAKER_00]: temperature measurement just like when we
+moved the flashlight away from the wall
+[SPEAKER_00]: not only did the circle get bigger but it
+got less and less intense.
+[SPEAKER_00]: If your radiometer is perpendicular to the
+surface you see a circle as soon as you
+[SPEAKER_00]: start to angle it the footprint spreads
+out into an ellipse.
+[SPEAKER_00]: Here are the different field of view
+options of infrared sensors that Apogee
+[SPEAKER_00]: builds and other companies that make
+infrared radiometers are likely to have
+[SPEAKER_00]: different fields of view.
+[SPEAKER_00]: There's three of them that have a circular
+field of view just different angles that
+[SPEAKER_00]: make the footprint either a little bit
+smaller or a little bit larger and then
+[SPEAKER_00]: this one has a horizontal field of view
+this one's actually designed to look at
+[SPEAKER_00]: row crops.
+[SPEAKER_00]: The field of view is wide in this
+dimension but narrow in this dimension.
+[SPEAKER_00]: If you orient it horizontally like this
+with row crops looking that are running
+[SPEAKER_00]: this way then you can try to minimize the
+soil that is in the field of view and
+[SPEAKER_00]: maximize the plant area that's in the
+field of view using a horizontal field of
+[SPEAKER_00]: view.
+[SPEAKER_00]: What often comes up is that's all well and
+good I understand that putting it close to
+[SPEAKER_00]: the surface gives me a small footprint and
+moving it away from the surface gives me a
+[SPEAKER_00]: big footprint but how do I actually attach
+numbers to the footprint.
+[SPEAKER_00]: There's a tool that you can find on the
+Apogee Instruments webpage that allows you
+[SPEAKER_00]: to calculate in dimensions of meters
+squared how much land area am I going to
+[SPEAKER_00]: see if I have a sensor with this field of
+view for example this height above the
+[SPEAKER_00]: surface for example and this angle from
+perpendicular.
+[SPEAKER_00]: You have to know three numbers in order to
+to get a footprint calculation you have to
+[SPEAKER_00]: know the the field of view of the
+radiometer the height above the surface
+[SPEAKER_00]: that you've mounted your radiometer and
+then the angle of the radiometer from
+[SPEAKER_00]: perpendicular.
+[SPEAKER_00]: Once you input those three numbers into
+the calculator it will spit out meter
+[SPEAKER_00]: squared of ground area that you're going
+to actually measure on the ground.
+[SPEAKER_00]: Another question that comes up often in
+relation to field of view is what do I do
+[SPEAKER_00]: in this situation where I have partial
+canopy cover maybe it is row crops or
+[SPEAKER_00]: maybe it's a forest where the trees are
+are fairly sparse and you're trying to
+[SPEAKER_00]: measure the plant canopy temperature but
+you have all of this soil that you see in
+[SPEAKER_00]: the background.
+[SPEAKER_00]: So a couple techniques and I won't spend
+too much time on these one way that you
+[SPEAKER_00]: can deal with this is angle the radiometer
+to try to maximize the canopy within the
+[SPEAKER_00]: field of view and so you can see if it's
+looking straight down you're going to see
+[SPEAKER_00]: something like you know half of the area
+within the footprint is soil and the other
+[SPEAKER_00]: half is plants but now if you angle it
+most of what you see is in the in the area
+[SPEAKER_00]: is plants you might still have a little
+sliver of soil here that you see but by
+[SPEAKER_00]: angling it you can try to get more plant
+area and less soil area in the footprint.
+[SPEAKER_00]: So another way that you can deal with this
+is you can measure or estimate the soil
+[SPEAKER_00]: temperature and then approximate the the
+fractions of canopy and fraction of soil
+[SPEAKER_00]: that are within the field of view and you
+can use a simple equation to try to
+[SPEAKER_00]: estimate the canopy temperature if you
+know roughly what the fraction of canopy
+[SPEAKER_00]: is and the fraction of soil is and the
+soil temperature.
+[SPEAKER_00]: So the inputs you need here are this is
+the actual measured surface temperature
+[SPEAKER_00]: from the sensor.
+[SPEAKER_00]: This would be a measurement or estimate of
+the soil temperature.
+[SPEAKER_00]: This one is the fraction of canopy in the
+field of view and one minus that number is
+[SPEAKER_00]: the fraction of soil within the field of
+view.
+[SPEAKER_00]: So if you have reasonable estimates of
+soil temperature and then the fraction of
+[SPEAKER_00]: field of view that's occupied by canopy
+and soil you can try to estimate canopy
+[SPEAKER_00]: temperature from the data and eliminate
+the soil temperature if canopy temperature
+[SPEAKER_00]: is the number that you're looking for.
+[SPEAKER_00]: I have a few more slides that deal with an
+application of infrared measurements of
+[SPEAKER_00]: surface temperature or we can take time
+for tea.
+[SPEAKER_00]: You want to see the application?
+[SPEAKER_00]: It won't take too much time.
+[SPEAKER_00]: Okay, I'll try to be brief.
+[SPEAKER_00]: So just a real quick summary of infrared
+thermometry or infrared radiometry.
+[SPEAKER_00]: Small signals require a high resolution
+voltmeter.
+[SPEAKER_00]: That's if you have an analog sensor.
+[SPEAKER_00]: Nowadays a lot of sensors have analog to
+digital converters on board the sensor and
+[SPEAKER_00]: then they output digital signals like
+SDI-12 or Modbus and so if you want to
+[SPEAKER_00]: make surface temperature measurements,
+but you don't have a way to measure these
+[SPEAKER_00]: small voltages that doesn't mean you can't
+make the measurement.
+[SPEAKER_00]: It just means you need to buy a version
+that outputs a digital signal like Modbus
+[SPEAKER_00]: or SDI-12.
+[SPEAKER_00]: Emissivity correction is required.
+[SPEAKER_00]: We spent quite a bit of time on that one
+and remember the radiometer averages
+[SPEAKER_00]: everything within the field of view.
+[SPEAKER_00]: So if you have things within the field of
+view that you don't want to see,
+[SPEAKER_00]: you either have to reposition the sensor
+to eliminate them from the field of view
+[SPEAKER_00]: or if it's the case of plant canopies and
+soil there's ways you can try to estimate
+[SPEAKER_00]: one temperature if you know the other.
+[SPEAKER_00]: To move on to the application really
+quick.
+[SPEAKER_00]: In the past we've often made still model
+conductance measurements with these little
+[SPEAKER_00]: handheld devices or sometimes they're not
+little.
+[SPEAKER_00]: This is a full photosynthesis system from
+Lycorp.
+[SPEAKER_00]: Some of you may be familiar with this.
+[SPEAKER_00]: This is a porometer from Dekagon.
+[SPEAKER_00]: They allow you to clamp on to leaves and
+measure still model conductance and these
+[SPEAKER_00]: are great instruments but all you get is
+the still model conductance of a single
+[SPEAKER_00]: leaf that you clamped on and you also
+require as a person to be in the field
+[SPEAKER_00]: with the instrument to make the
+measurement.
+[SPEAKER_00]: So a few years ago myself and Bruce and
+one of our colleagues set out to use
+[SPEAKER_00]: infrared radiometers to try to measure
+plant canopy still model conductance
+[SPEAKER_00]: automatically.
+[SPEAKER_00]: Basically using weather data and with the
+addition of an infrared measurement of the
+[SPEAKER_00]: canopy temperature to estimate still model
+conductance.
+[SPEAKER_00]: So I won't spend too much time here but
+you're looking at a picture of the surface
+[SPEAKER_00]: energy balance.
+[SPEAKER_00]: So the equation over here are all the
+equations necessary to describe the
+[SPEAKER_00]: surface energy balance and the number that
+we're interested in here is the plant
+[SPEAKER_00]: canopy still model conductance.
+[SPEAKER_00]: So without going into detail we can
+rearrange all of the equations that are
+[SPEAKER_00]: shown here for the surface and we can
+solve for this number.
+[SPEAKER_00]: Everything is described in the paper on
+this slide and if you're interested in the
+[SPEAKER_00]: paper I can easily send you a PDF of it.
+[SPEAKER_00]: But when we do that it gives us an
+equation that calculates plant canopy
+[SPEAKER_00]: still model conductance if we have these
+measurements or estimates.
+[SPEAKER_00]: So we have to have the canopy temperature,
+air temperature, humidity, radiation,
+[SPEAKER_00]: wind speed and then some information about
+the height of the plants and the leaf area
+[SPEAKER_00]: index.
+[SPEAKER_00]: So in the previous slide I was showing a
+picture of one of our weather stations and
+[SPEAKER_00]: so here's where we're getting all of our
+weather data and then all of these things
+[SPEAKER_00]: that you see here are the infrared
+radiometers and these ones are looking at
+[SPEAKER_00]: a corn canopy.
+[SPEAKER_00]: This was in Nebraska I believe.
+[SPEAKER_00]: So I'll just show you some data where we
+actually calculated still model
+[SPEAKER_00]: conductance from the measurements that we
+made.
+[SPEAKER_00]: So what you're looking at here is canopy
+still model conductance on the y-axis and
+[SPEAKER_00]: then x-axis says day of year.
+[SPEAKER_00]: So this is day of year 195 through day of
+year 206.
+[SPEAKER_00]: Those would be roughly mid-july or right
+in the middle of the summer in the
+[SPEAKER_00]: northern hemisphere.
+[SPEAKER_00]: So there's two lines on this still model
+conductance graph here, a green line and a
+[SPEAKER_00]: black line.
+[SPEAKER_00]: The green line is actually a model
+calculation of canopy still model
+[SPEAKER_00]: conductance and we're calling it potential
+conductance and so what it is is an
+[SPEAKER_00]: estimate of what we expect the canopy
+still model conductance to be if the
+[SPEAKER_00]: plants are well watered and not stressed
+and then the black line is our actual
+[SPEAKER_00]: data, the canopy still model conductance
+that we calculated from our weather
+[SPEAKER_00]: measurements and our measurement of the
+canopy temperature from the infrared
+[SPEAKER_00]: sensor and you can see these couple days
+here the black line matches the green line
+[SPEAKER_00]: pretty well indicating the plants are well
+watered because the calculated values of
+[SPEAKER_00]: still model conductance are matching the
+modeled values and again the modeled
+[SPEAKER_00]: values give us what we expect the
+theoretical value to be for well watered
+[SPEAKER_00]: conditions and then you can see for a few
+days in a row the black line is well below
+[SPEAKER_00]: the green line meaning the actual values
+are well under the potential values
+[SPEAKER_00]: indicating the plants are water stressed.
+[SPEAKER_00]: Then over here it jumps back up again and
+we have two or three days where the actual
+[SPEAKER_00]: matches the potential pretty well before
+it starts to go down.
+[SPEAKER_00]: You can see the same thing in this graph
+here.
+[SPEAKER_00]: This is just the ratio of the two so you
+take the black line divided by the green
+[SPEAKER_00]: line.
+[SPEAKER_00]: If we're near one it means the two match,
+if we're below one it means the black line
+[SPEAKER_00]: is lower than the green line.
+[SPEAKER_00]: So any ideas what happened right here
+where it jumps up?
+[SPEAKER_00]: Well you can see it declines there,
+mother nature irrigated.
+[SPEAKER_00]: We got almost an inch of rainfall.
+[SPEAKER_00]: The cornfield that I showed was naturally
+irrigated and when the rain fell it bumped
+[SPEAKER_00]: back up like we would expect it to do.
+[SPEAKER_00]: So this is just one application that you
+could potentially pursue with infrared
+[SPEAKER_00]: measurements.
+[SPEAKER_00]: They can give you information about plant
+canopy water status and plant response to
+[SPEAKER_00]: their environment.
+[SPEAKER_00]: Here we're looking at still model
+response.
+[SPEAKER_00]: One more graph this just shows a plot of
+the potential value so a reference value
+[SPEAKER_00]: on this axis and then the actual value our
+calculated value on this axis.
+[SPEAKER_00]: This is from the exact same experiment in
+Nebraska in the United States and it was
+[SPEAKER_00]: corn.
+[SPEAKER_00]: All we're doing here is plotting the two
+for the days immediately after rainfall
+[SPEAKER_00]: when we expect that our actual value
+should match our modeled value and indeed
+[SPEAKER_00]: that's what we get.
+[SPEAKER_00]: As long as the plants are well watered the
+two numbers match so it indicates that our
+[SPEAKER_00]: method of getting actual is working pretty
+well.
+[SPEAKER_00]: The outliers are possibly when the canopy
+was wet.
+[SPEAKER_00]: You'll get data that don't necessarily
+match the model if the leaf surfaces are
+[SPEAKER_00]: wet.
+[SPEAKER_00]: That's all I have for still model
+conductance for the application.
+[SPEAKER_00]: Are there any questions about any of the
+IR measurement details that we covered?
+[SPEAKER_00]: Any questions about this specific
+application?
+[SPEAKER_00]: Thank you.
+[SPEAKER_00]: Thank you.
+Thank you.
+Thank you.
+you

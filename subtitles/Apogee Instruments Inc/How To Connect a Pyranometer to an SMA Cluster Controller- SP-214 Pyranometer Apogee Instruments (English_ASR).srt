@@ -1,0 +1,312 @@
+1
+00:00:01,040 --> 00:00:05,609
+hi my name is Skyler Smith I work with
+
+2
+00:00:03,959 --> 00:00:07,410
+the integrator and technical support
+
+3
+00:00:05,609 --> 00:00:09,960
+team here at Apogee instruments and
+
+4
+00:00:07,410 --> 00:00:14,339
+we're here to talk about connecting our
+
+5
+00:00:09,960 --> 00:00:16,740
+SP 214 pyrometer to the SMA cluster
+
+6
+00:00:14,339 --> 00:00:20,219
+controller very popular controller for
+
+7
+00:00:16,739 --> 00:00:23,250
+use in commercial solar applications the
+
+8
+00:00:20,219 --> 00:00:25,649
+SP 214 is an irradiance sensor in order
+
+9
+00:00:23,250 --> 00:00:29,099
+to see the watts per meter squared
+
+10
+00:00:25,649 --> 00:00:32,850
+available from the Sun so the first
+
+11
+00:00:29,099 --> 00:00:36,238
+thing to note is the SP 214 comes like
+
+12
+00:00:32,850 --> 00:00:39,590
+this with a four inch pigtail to connect
+
+13
+00:00:36,238 --> 00:00:43,199
+to so the sensor does need to be powered
+
+14
+00:00:39,590 --> 00:00:45,120
+24 volts power supply so you need to
+
+15
+00:00:43,200 --> 00:00:47,190
+know where your power supply is and then
+
+16
+00:00:45,119 --> 00:00:49,308
+how far away that is from your x8
+
+17
+00:00:47,189 --> 00:00:52,019
+terminal on the cluster controller
+
+18
+00:00:49,308 --> 00:00:55,649
+depending upon the distance you may need
+
+19
+00:00:52,020 --> 00:00:57,329
+to split the jacket like so and we have
+
+20
+00:00:55,649 --> 00:01:00,390
+the red and black over here that will
+
+21
+00:00:57,329 --> 00:01:03,359
+power the sensor and the green and white
+
+22
+00:01:00,390 --> 00:01:06,569
+which are the sensor output that will
+
+23
+00:01:03,359 --> 00:01:08,400
+connect into the controller so we'll go
+
+24
+00:01:06,569 --> 00:01:10,618
+ahead and right here in our example
+
+25
+00:01:08,400 --> 00:01:14,700
+we'll connect the red into the positive
+
+26
+00:01:10,618 --> 00:01:18,478
+on the power supply so we just slide
+
+27
+00:01:14,700 --> 00:01:21,329
+that down in there and this is just a
+
+28
+00:01:18,478 --> 00:01:25,759
+regular screw on terminal so we will
+
+29
+00:01:21,329 --> 00:01:25,759
+slide it in and tighten that down
+
+30
+00:01:27,260 --> 00:01:33,650
+and then the black will go in the
+
+31
+00:01:30,409 --> 00:01:43,129
+negative and same thing we will just
+
+32
+00:01:33,650 --> 00:01:46,180
+tighten the him there okay and then over
+
+33
+00:01:43,129 --> 00:01:50,869
+here on the controller itself we are on
+
+34
+00:01:46,180 --> 00:01:53,090
+x8 and the top row is a two so we're
+
+35
+00:01:50,870 --> 00:01:56,990
+going to go in a two for the white
+
+36
+00:01:53,090 --> 00:01:59,150
+connector a three for the green
+
+37
+00:01:56,989 --> 00:02:01,819
+conductor and these are just pushing
+
+38
+00:01:59,150 --> 00:02:09,740
+terminals so they just push in and then
+
+39
+00:02:01,819 --> 00:02:12,799
+our shield we will go into a four okay
+
+40
+00:02:09,740 --> 00:02:16,060
+so that's how you wire up the sensor
+
+41
+00:02:12,800 --> 00:02:18,590
+itself the next step is to change the
+
+42
+00:02:16,060 --> 00:02:20,960
+insulation curve and you do that through
+
+43
+00:02:18,590 --> 00:02:23,270
+the user interface for the SMA cluster
+
+44
+00:02:20,960 --> 00:02:25,030
+controller and so once you have that
+
+45
+00:02:23,270 --> 00:02:29,409
+interface pulled up on your computer
+
+46
+00:02:25,030 --> 00:02:32,810
+navigate to meteorology and then go to
+
+47
+00:02:29,409 --> 00:02:36,129
+environmental and then it go to a
+
+48
+00:02:32,810 --> 00:02:38,840
+radiant sensor and then go to
+
+49
+00:02:36,129 --> 00:02:40,969
+characteristic curve and when you're
+
+50
+00:02:38,840 --> 00:02:43,129
+there you just need to change it to zero
+
+51
+00:02:40,969 --> 00:02:45,289
+to twelve hundred and fifty watts per
+
+52
+00:02:43,129 --> 00:02:49,699
+meter square and as a reminder this is a
+
+53
+00:02:45,289 --> 00:02:52,429
+4 to 20 mili-amp sensor the other way
+
+54
+00:02:49,699 --> 00:02:55,519
+that you can look at this is on the
+
+55
+00:02:52,430 --> 00:02:58,790
+controller itself if you scroll down a
+
+56
+00:02:55,520 --> 00:03:01,850
+number of times then you get two analog
+
+57
+00:02:58,789 --> 00:03:04,699
+inputs analog current input number one
+
+58
+00:03:01,849 --> 00:03:06,919
+on the top there is showing us what the
+
+59
+00:03:04,699 --> 00:03:08,659
+data is reading from the center and in
+
+60
+00:03:06,919 --> 00:03:11,030
+our example here it's reading four point
+
+61
+00:03:08,659 --> 00:03:14,060
+zero 1 million which is correct for our
+
+62
+00:03:11,030 --> 00:03:16,400
+studio there is very little light and if
+
+63
+00:03:14,060 --> 00:03:18,770
+we hit down two more times we can see
+
+64
+00:03:16,400 --> 00:03:20,360
+the insulation converting that to 1
+
+65
+00:03:18,770 --> 00:03:21,409
+watts per meter squared it should be
+
+66
+00:03:20,360 --> 00:03:23,540
+correct
+
+67
+00:03:21,409 --> 00:03:27,189
+for normal applications you'll probably
+
+68
+00:03:23,539 --> 00:03:29,090
+be reading between 7 to 11 milliamps
+
+69
+00:03:27,189 --> 00:03:30,039
+depending on your time of day and
+
+70
+00:03:29,090 --> 00:03:33,800
+location
+
+71
+00:03:30,039 --> 00:03:36,669
+that concludes our SP 214 parinama tur
+
+72
+00:03:33,800 --> 00:03:39,079
+connecting to the SMA cluster controller
+
+73
+00:03:36,669 --> 00:03:41,059
+be sure to watch our other segment on
+
+74
+00:03:39,079 --> 00:03:43,670
+connecting our TS 100
+
+75
+00:03:41,060 --> 00:03:45,890
+aspirated radiation shield to the
+
+76
+00:03:43,669 --> 00:03:48,679
+cluster controller to get very accurate
+
+77
+00:03:45,889 --> 00:03:50,829
+ambient air temperature readings thank
+
+78
+00:03:48,680 --> 00:03:50,830
+you
+

@@ -1,0 +1,5100 @@
+1
+00:00:00,000 --> 00:00:03,638
+this is a production of Cornell
+
+2
+00:00:01,709 --> 00:00:05,500
+University
+
+3
+00:00:03,638 --> 00:00:07,628
+well thank you especially to jean-luc
+
+4
+00:00:05,500 --> 00:00:10,000
+for inviting me here it's a pleasure to
+
+5
+00:00:07,628 --> 00:00:13,839
+see all the exciting work that you're
+
+6
+00:00:10,000 --> 00:00:16,509
+doing so this is a again work that I did
+
+7
+00:00:13,839 --> 00:00:18,969
+during my postdoc with Ben McCloskey
+
+8
+00:00:16,509 --> 00:00:22,240
+some of you may or may not know him he
+
+9
+00:00:18,969 --> 00:00:25,049
+was in nature sorts of genetics and like
+
+10
+00:00:22,239 --> 00:00:27,489
+me he's an operations research person so
+
+11
+00:00:25,050 --> 00:00:30,789
+essentially an applied mathematician at
+
+12
+00:00:27,489 --> 00:00:32,920
+some level he was a deterministic
+
+13
+00:00:30,789 --> 00:00:35,829
+optimizer graduated I believe out of
+
+14
+00:00:32,920 --> 00:00:37,900
+rice and a postdoc at Columbia before he
+
+15
+00:00:35,829 --> 00:00:40,268
+was hired and to help with the
+
+16
+00:00:37,899 --> 00:00:42,719
+optimization routines inside major
+
+17
+00:00:40,268 --> 00:00:46,030
+source genetics and so we actually
+
+18
+00:00:42,719 --> 00:00:47,920
+interestingly met at a conference the
+
+19
+00:00:46,030 --> 00:00:50,289
+big conference for our area is called
+
+20
+00:00:47,920 --> 00:00:53,079
+informs the Institute for operations
+
+21
+00:00:50,289 --> 00:00:54,759
+research and management science and we
+
+22
+00:00:53,079 --> 00:00:56,618
+started talking and he had plant
+
+23
+00:00:54,759 --> 00:00:58,118
+problems that were relevant to the kind
+
+24
+00:00:56,618 --> 00:01:00,009
+of solution techniques that I was
+
+25
+00:00:58,118 --> 00:01:02,259
+working on and then we discovered we're
+
+26
+00:01:00,009 --> 00:01:06,670
+both in Cornell so we might as well
+
+27
+00:01:02,259 --> 00:01:08,620
+collaborate and so we did so this talk
+
+28
+00:01:06,670 --> 00:01:10,150
+is a little bit difficult to give this
+
+29
+00:01:08,620 --> 00:01:12,460
+is only the second time that I've given
+
+30
+00:01:10,150 --> 00:01:15,520
+it to people who know more about plants
+
+31
+00:01:12,459 --> 00:01:18,250
+than about operations research so it is
+
+32
+00:01:15,519 --> 00:01:19,989
+a little mathy in places because I'm
+
+33
+00:01:18,250 --> 00:01:22,569
+used to giving this to an Operations
+
+34
+00:01:19,989 --> 00:01:25,149
+research audience but I would rather you
+
+35
+00:01:22,569 --> 00:01:27,639
+ask questions and interrupt me and I'll
+
+36
+00:01:25,150 --> 00:01:32,140
+skip some slides if you get totally lost
+
+37
+00:01:27,640 --> 00:01:34,569
+there's a chalkboard here so I want you
+
+38
+00:01:32,140 --> 00:01:37,180
+to take away something from the talk
+
+39
+00:01:34,569 --> 00:01:40,059
+rather than hear myself talk if you get
+
+40
+00:01:37,180 --> 00:01:42,250
+too lost so I'd rather this be informal
+
+41
+00:01:40,060 --> 00:01:43,420
+this is quite formal room but it's not
+
+42
+00:01:42,250 --> 00:01:47,049
+too different than the one I teach
+
+43
+00:01:43,420 --> 00:01:48,700
+probability in so raise your hand I'll
+
+44
+00:01:47,049 --> 00:01:50,829
+try to repeat the question I think we
+
+45
+00:01:48,700 --> 00:01:52,810
+might have some people online and we
+
+46
+00:01:50,829 --> 00:01:55,719
+have a chalkboard so we can go at
+
+47
+00:01:52,810 --> 00:01:59,950
+whatever pace is comfortable for you
+
+48
+00:01:55,719 --> 00:02:03,129
+so I have prepared two tutorials one is
+
+49
+00:01:59,950 --> 00:02:05,409
+aimed at plant breeding people to say
+
+50
+00:02:03,129 --> 00:02:08,348
+what is simulation optimization in the
+
+51
+00:02:05,409 --> 00:02:10,689
+first place so that's the first little
+
+52
+00:02:08,348 --> 00:02:13,149
+bit of the talk the second tutorial is a
+
+53
+00:02:10,689 --> 00:02:13,639
+tutorial on some mathematics that you
+
+54
+00:02:13,150 --> 00:02:16,069
+may
+
+55
+00:02:13,639 --> 00:02:18,409
+unfamiliar that I give to everyone
+
+56
+00:02:16,068 --> 00:02:20,119
+including operations research people and
+
+57
+00:02:18,409 --> 00:02:21,620
+then we'll get into the plant reading
+
+58
+00:02:20,120 --> 00:02:24,050
+part so we'll kind of have two little
+
+59
+00:02:21,620 --> 00:02:25,370
+presses and then we'll go back into the
+
+60
+00:02:24,050 --> 00:02:31,730
+main problem that we're going to talk
+
+61
+00:02:25,370 --> 00:02:34,189
+about okay so for now I'm going to
+
+62
+00:02:31,729 --> 00:02:37,009
+assume that you have heard at some level
+
+63
+00:02:34,189 --> 00:02:40,579
+of optimization and so what do we mean
+
+64
+00:02:37,009 --> 00:02:42,560
+by optimization this is a farm
+
+65
+00:02:40,580 --> 00:02:43,670
+management example at the plant breeding
+
+66
+00:02:42,560 --> 00:02:45,739
+conference
+
+67
+00:02:43,669 --> 00:02:47,419
+Bilby this went before me and this was
+
+68
+00:02:45,739 --> 00:02:50,780
+his example and I stole it because it
+
+69
+00:02:47,419 --> 00:02:53,539
+was amazing so he's not here to explain
+
+70
+00:02:50,780 --> 00:02:55,550
+it to you but essentially you want to
+
+71
+00:02:53,539 --> 00:02:57,199
+maximize profit and you have some
+
+72
+00:02:55,550 --> 00:03:01,160
+decisions that you can make on your farm
+
+73
+00:02:57,199 --> 00:03:03,949
+right so you can decide how many acres
+
+74
+00:03:01,159 --> 00:03:07,250
+of wheat corn and beans I'm gonna have
+
+75
+00:03:03,949 --> 00:03:10,009
+to use this for a pointer so in this
+
+76
+00:03:07,250 --> 00:03:12,590
+notation the X is the decision vector so
+
+77
+00:03:10,009 --> 00:03:15,009
+the X's are things you can decide so how
+
+78
+00:03:12,590 --> 00:03:19,189
+much wheat corn and beans you can plant
+
+79
+00:03:15,009 --> 00:03:21,229
+how much you sell what price you how
+
+80
+00:03:19,189 --> 00:03:23,780
+many beans you sell at a lower price and
+
+81
+00:03:21,229 --> 00:03:26,328
+how much you purchase and so on and then
+
+82
+00:03:23,780 --> 00:03:30,019
+you can formulate this we have a linear
+
+83
+00:03:26,329 --> 00:03:31,969
+objective so the profit function is just
+
+84
+00:03:30,019 --> 00:03:34,129
+a linear combination of the decisions
+
+85
+00:03:31,969 --> 00:03:36,049
+that you make and you have some
+
+86
+00:03:34,129 --> 00:03:37,549
+constraints so for example the
+
+87
+00:03:36,049 --> 00:03:39,829
+constraints might be that you can't
+
+88
+00:03:37,549 --> 00:03:41,870
+plant more wheat corn and beans then you
+
+89
+00:03:39,829 --> 00:03:45,200
+have acres if you only have 500 acres
+
+90
+00:03:41,870 --> 00:03:48,709
+then that's all you can so this is a
+
+91
+00:03:45,199 --> 00:03:50,869
+classic farm management type problem in
+
+92
+00:03:48,709 --> 00:03:52,430
+fact many linear optimization methods
+
+93
+00:03:50,870 --> 00:03:53,750
+were developed to solve these kinds of
+
+94
+00:03:52,430 --> 00:03:57,019
+problems and they're very old
+
+95
+00:03:53,750 --> 00:03:59,479
+and so they're easy to solve we can
+
+96
+00:03:57,019 --> 00:04:03,469
+solve them they're deterministic so to
+
+97
+00:03:59,479 --> 00:04:06,048
+speak so the profit model is linear we
+
+98
+00:04:03,469 --> 00:04:08,599
+have no uncertainty whatsoever and this
+
+99
+00:04:06,049 --> 00:04:10,849
+may be a good model for your farm it may
+
+100
+00:04:08,599 --> 00:04:12,650
+be that you've been making decisions
+
+101
+00:04:10,849 --> 00:04:17,139
+with this model and everything is going
+
+102
+00:04:12,650 --> 00:04:19,788
+great and so this model is of sufficient
+
+103
+00:04:17,139 --> 00:04:22,848
+granularity for your choices you don't
+
+104
+00:04:19,788 --> 00:04:25,189
+need anything else but it may be that
+
+105
+00:04:22,848 --> 00:04:26,849
+this model is failing you for some
+
+106
+00:04:25,189 --> 00:04:29,310
+reason and
+
+107
+00:04:26,850 --> 00:04:32,910
+maybe what your plant is not what you
+
+108
+00:04:29,310 --> 00:04:34,800
+yield in the end maybe the price that
+
+109
+00:04:32,910 --> 00:04:38,340
+you thought you could get is fluctuating
+
+110
+00:04:34,800 --> 00:04:40,439
+a lot in a random way and so this model
+
+111
+00:04:38,339 --> 00:04:42,599
+may not work anymore you may need to
+
+112
+00:04:40,439 --> 00:04:45,569
+incorporate a different model with
+
+113
+00:04:42,600 --> 00:04:48,629
+randomness and so you can formulate
+
+114
+00:04:45,569 --> 00:04:51,149
+profit right now my profit will become
+
+115
+00:04:48,629 --> 00:04:53,730
+random it's a random function of these
+
+116
+00:04:51,149 --> 00:04:55,769
+things that I don't know I don't know my
+
+117
+00:04:53,730 --> 00:04:58,160
+yield but it's gonna be I don't know
+
+118
+00:04:55,769 --> 00:05:00,839
+what my prices are going to be and so
+
+119
+00:04:58,160 --> 00:05:03,660
+the only thing I can do is try to
+
+120
+00:05:00,839 --> 00:05:06,060
+maximize my expected profit so that
+
+121
+00:05:03,660 --> 00:05:08,430
+means that in any one year I don't know
+
+122
+00:05:06,060 --> 00:05:11,519
+how I'm gonna do but I want to do well
+
+123
+00:05:08,430 --> 00:05:13,740
+on average across many years right so I
+
+124
+00:05:11,519 --> 00:05:16,439
+have to deal with this uncertainty in
+
+125
+00:05:13,740 --> 00:05:18,810
+the yield and price and I formulate a
+
+126
+00:05:16,439 --> 00:05:22,170
+profit function it's still a function of
+
+127
+00:05:18,810 --> 00:05:24,899
+all my decision variables and the random
+
+128
+00:05:22,170 --> 00:05:28,400
+yield and the random price now and I
+
+129
+00:05:24,899 --> 00:05:30,929
+want to maximize the expected profit
+
+130
+00:05:28,399 --> 00:05:33,779
+okay so now I've turned what was a
+
+131
+00:05:30,930 --> 00:05:37,500
+linear model into something that is
+
+132
+00:05:33,779 --> 00:05:40,229
+stochastic at some level so the ultimate
+
+133
+00:05:37,500 --> 00:05:42,509
+goal is to maximize this expected profit
+
+134
+00:05:40,230 --> 00:05:49,200
+and I still have my constraints on my
+
+135
+00:05:42,509 --> 00:05:51,569
+decision variables sometimes that profit
+
+136
+00:05:49,199 --> 00:05:54,479
+function gets so complicated that we
+
+137
+00:05:51,569 --> 00:05:55,790
+don't have any closed form for it so you
+
+138
+00:05:54,480 --> 00:05:59,610
+can have stochastic optimization
+
+139
+00:05:55,790 --> 00:06:01,890
+problems before it this could still be a
+
+140
+00:05:59,610 --> 00:06:04,110
+linear function and I have random
+
+141
+00:06:01,889 --> 00:06:07,529
+variables in that linear function that's
+
+142
+00:06:04,110 --> 00:06:10,379
+possible but sometimes maybe you have a
+
+143
+00:06:07,529 --> 00:06:12,299
+really complicated climate model that's
+
+144
+00:06:10,379 --> 00:06:15,329
+going to tell you your yield and maybe
+
+145
+00:06:12,300 --> 00:06:17,759
+you have really complicated market model
+
+146
+00:06:15,329 --> 00:06:20,550
+from some finance people that's going to
+
+147
+00:06:17,759 --> 00:06:22,529
+tell you about your prices and so now
+
+148
+00:06:20,550 --> 00:06:25,050
+this thing gets extremely complicated
+
+149
+00:06:22,529 --> 00:06:26,939
+it's maybe a high-fidelity model it
+
+150
+00:06:25,050 --> 00:06:28,860
+takes a long time to run it and so you
+
+151
+00:06:26,939 --> 00:06:31,500
+embed the whole function inside a
+
+152
+00:06:28,860 --> 00:06:34,410
+computer and so you have essentially a
+
+153
+00:06:31,500 --> 00:06:36,480
+Monte Carlo simulation where you decide
+
+154
+00:06:34,410 --> 00:06:39,200
+some decision variables those are your
+
+155
+00:06:36,480 --> 00:06:42,020
+X's you decide what they are
+
+156
+00:06:39,199 --> 00:06:45,259
+you query the simulation model and you
+
+157
+00:06:42,019 --> 00:06:48,019
+say okay if I decide these decision
+
+158
+00:06:45,259 --> 00:06:50,750
+variables to be at these values what
+
+159
+00:06:48,019 --> 00:06:53,599
+will my price be or what will my profit
+
+160
+00:06:50,750 --> 00:06:55,189
+be in the first year do it again same
+
+161
+00:06:53,600 --> 00:06:57,920
+decision variables what will my profit
+
+162
+00:06:55,189 --> 00:07:00,920
+be in the second year same thing again
+
+163
+00:06:57,920 --> 00:07:02,720
+third year so on and then you're trying
+
+164
+00:07:00,920 --> 00:07:05,330
+to construct an estimator right
+
+165
+00:07:02,720 --> 00:07:07,790
+construct an estimator of your expected
+
+166
+00:07:05,329 --> 00:07:10,759
+profit as a function of this uncertainty
+
+167
+00:07:07,790 --> 00:07:12,710
+where all of your function is
+
+168
+00:07:10,759 --> 00:07:15,189
+essentially living inside of a black box
+
+169
+00:07:12,709 --> 00:07:18,879
+and you can only observe it with noise
+
+170
+00:07:15,189 --> 00:07:23,120
+so it's it's corrupted by noise so to
+
+171
+00:07:18,879 --> 00:07:25,339
+speak and have collapsed the constraints
+
+172
+00:07:23,120 --> 00:07:27,350
+that we had into this notation X there
+
+173
+00:07:25,339 --> 00:07:29,060
+are still some constraints we know them
+
+174
+00:07:27,350 --> 00:07:33,110
+but our notation is just going to
+
+175
+00:07:29,060 --> 00:07:35,329
+collapse them for simplicity so this is
+
+176
+00:07:33,110 --> 00:07:39,259
+called a simulation optimization problem
+
+177
+00:07:35,329 --> 00:07:40,399
+I have a simulator that has the function
+
+178
+00:07:39,259 --> 00:07:43,279
+embedded inside of it
+
+179
+00:07:40,399 --> 00:07:46,189
+I can query it at any decision vector
+
+180
+00:07:43,279 --> 00:07:48,199
+value right so I I determine how much
+
+181
+00:07:46,189 --> 00:07:51,079
+wheat corn and beans I want to plant and
+
+182
+00:07:48,199 --> 00:07:54,529
+then I query it and then I change that
+
+183
+00:07:51,079 --> 00:07:56,479
+and then I query it again but I want to
+
+184
+00:07:54,529 --> 00:07:58,339
+actually optimize this function right I
+
+185
+00:07:56,480 --> 00:08:01,480
+want to find the decision variables that
+
+186
+00:07:58,339 --> 00:08:04,729
+allow me to do well on average and so
+
+187
+00:08:01,480 --> 00:08:07,009
+simulation optimization is optimizing a
+
+188
+00:08:04,730 --> 00:08:07,900
+nonlinear function not necessarily
+
+189
+00:08:07,009 --> 00:08:12,199
+linear anymore
+
+190
+00:08:07,899 --> 00:08:13,549
+it's complicated with uncertainty it's
+
+191
+00:08:12,199 --> 00:08:17,509
+living inside of a Monte Carlo
+
+192
+00:08:13,550 --> 00:08:19,520
+simulation so I develop general
+
+193
+00:08:17,509 --> 00:08:22,099
+algorithms to solve these kinds of
+
+194
+00:08:19,519 --> 00:08:24,829
+problems for different kinds of decision
+
+195
+00:08:22,100 --> 00:08:28,550
+variables your decision variables might
+
+196
+00:08:24,829 --> 00:08:30,800
+be these happen to be integers right so
+
+197
+00:08:28,550 --> 00:08:33,500
+if if you are going oh sorry Akers I
+
+198
+00:08:30,800 --> 00:08:35,060
+missed a KERS so if there are a KERS
+
+199
+00:08:33,500 --> 00:08:37,668
+this will be a continuous decision
+
+200
+00:08:35,059 --> 00:08:39,709
+variable potentially or maybe discrete
+
+201
+00:08:37,668 --> 00:08:42,460
+depending on how you choose the model it
+
+202
+00:08:39,710 --> 00:08:46,759
+you can plant 500 acres you can plant
+
+203
+00:08:42,460 --> 00:08:48,590
+550 acres and so on you can divide it up
+
+204
+00:08:46,759 --> 00:08:51,159
+however you want between wheat corn and
+
+205
+00:08:48,590 --> 00:08:53,470
+beans so if
+
+206
+00:08:51,159 --> 00:08:56,169
+I'm sitting at a decision a particular
+
+207
+00:08:53,470 --> 00:08:58,269
+decision point right how do I know which
+
+208
+00:08:56,169 --> 00:09:00,939
+direction to move to get to one that
+
+209
+00:08:58,269 --> 00:09:04,990
+might be optimal and optimal in what
+
+210
+00:09:00,940 --> 00:09:06,970
+sense optimal in expectation which is
+
+211
+00:09:04,990 --> 00:09:12,850
+all I can tend to do when I have such
+
+212
+00:09:06,970 --> 00:09:14,649
+randomness okay so I develop general
+
+213
+00:09:12,850 --> 00:09:20,259
+algorithms for these kinds of problems
+
+214
+00:09:14,649 --> 00:09:22,539
+and it has had major impact so these
+
+215
+00:09:20,259 --> 00:09:25,028
+algorithms have been used by a group at
+
+216
+00:09:22,539 --> 00:09:27,969
+Virginia Tech that solved a vaccine
+
+217
+00:09:25,028 --> 00:09:30,370
+allocation to control an epidemic in all
+
+218
+00:09:27,970 --> 00:09:32,980
+of Seattle where they modelled at the
+
+219
+00:09:30,370 --> 00:09:36,068
+person level so they had a network of
+
+220
+00:09:32,980 --> 00:09:38,019
+people and they said I have some
+
+221
+00:09:36,068 --> 00:09:41,250
+elephant some vaccines but I can't
+
+222
+00:09:38,019 --> 00:09:44,230
+vaccinate everyone but I have a model of
+
+223
+00:09:41,250 --> 00:09:47,230
+every person in Seattle who should i
+
+224
+00:09:44,230 --> 00:09:51,220
+vaccinate to make sure that my expected
+
+225
+00:09:47,230 --> 00:09:53,680
+deaths from the epidemic will be lowest
+
+226
+00:09:51,220 --> 00:09:56,949
+as I can get them over the time horizon
+
+227
+00:09:53,679 --> 00:09:59,379
+and so this is a huge problem and we've
+
+228
+00:09:56,948 --> 00:10:02,438
+been able to solve it or the people in
+
+229
+00:09:59,379 --> 00:10:03,850
+Virginia Tech have for this kind of with
+
+230
+00:10:02,438 --> 00:10:08,438
+these kinds of algorithms that we can
+
+231
+00:10:03,850 --> 00:10:10,870
+develop another application is brain
+
+232
+00:10:08,438 --> 00:10:13,568
+computer interfaces so you have some
+
+233
+00:10:10,870 --> 00:10:16,179
+person who is connected through their
+
+234
+00:10:13,568 --> 00:10:22,269
+brain to a prosthetic arm or some other
+
+235
+00:10:16,179 --> 00:10:24,129
+prosthetic robot type limb and they will
+
+236
+00:10:22,269 --> 00:10:26,620
+think about how they want to move the
+
+237
+00:10:24,129 --> 00:10:28,509
+arm and you have to take the brain waves
+
+238
+00:10:26,620 --> 00:10:30,879
+from the electrodes and then figure out
+
+239
+00:10:28,509 --> 00:10:32,860
+how they want to move the arm just by
+
+240
+00:10:30,879 --> 00:10:36,850
+reading the brain waves and so there's
+
+241
+00:10:32,860 --> 00:10:38,829
+been success in doing this as well a lot
+
+242
+00:10:36,850 --> 00:10:40,600
+of other areas emergency services
+
+243
+00:10:38,828 --> 00:10:42,609
+financial modeling and portfolio
+
+244
+00:10:40,600 --> 00:10:45,610
+optimization manufacturing and supply
+
+245
+00:10:42,610 --> 00:10:47,740
+chain transportation have all seen major
+
+246
+00:10:45,610 --> 00:10:50,680
+impact from simulation optimization and
+
+247
+00:10:47,740 --> 00:10:54,430
+hopefully also planned breeding as we
+
+248
+00:10:50,679 --> 00:10:56,078
+learn to incorporate these techniques so
+
+249
+00:10:54,429 --> 00:10:58,239
+simulation optimization is a powerful
+
+250
+00:10:56,078 --> 00:11:00,458
+tool and I like to think of it as
+
+251
+00:10:58,240 --> 00:11:03,049
+sitting at the interface of three areas
+
+252
+00:11:00,458 --> 00:11:06,379
+so optimization is
+
+253
+00:11:03,049 --> 00:11:08,389
+traditionally deterministic you add in a
+
+254
+00:11:06,379 --> 00:11:09,980
+statistical component and also computer
+
+255
+00:11:08,389 --> 00:11:12,769
+science and you have simulation
+
+256
+00:11:09,980 --> 00:11:15,050
+optimization which is abbreviated esos
+
+257
+00:11:12,769 --> 00:11:17,600
+sitting right here in the middle so we
+
+258
+00:11:15,049 --> 00:11:21,919
+pull on ideas from all these disciplines
+
+259
+00:11:17,600 --> 00:11:24,290
+and sit in the interface and as you may
+
+260
+00:11:21,919 --> 00:11:26,778
+expect these problems solving them is
+
+261
+00:11:24,289 --> 00:11:30,439
+difficult right we have uncertainty we
+
+262
+00:11:26,778 --> 00:11:32,870
+may may or may not have gradients we may
+
+263
+00:11:30,440 --> 00:11:35,480
+not know in which direction to move so
+
+264
+00:11:32,870 --> 00:11:37,940
+we have to deal with sampling efficiency
+
+265
+00:11:35,480 --> 00:11:41,409
+and proper control of stochastic error
+
+266
+00:11:37,940 --> 00:11:44,959
+are the key aspects of these algorithms
+
+267
+00:11:41,409 --> 00:11:47,088
+we have been working in this area the
+
+268
+00:11:44,958 --> 00:11:50,419
+work has been developed for about over
+
+269
+00:11:47,089 --> 00:11:52,339
+30 years and single objective simulation
+
+270
+00:11:50,419 --> 00:11:54,379
+optimization problems are beginning to
+
+271
+00:11:52,339 --> 00:11:57,350
+have mature algorithms developed for
+
+272
+00:11:54,379 --> 00:11:59,689
+them multi objective simulation
+
+273
+00:11:57,350 --> 00:12:01,659
+optimization so for example if you have
+
+274
+00:11:59,690 --> 00:12:04,850
+two objectives and you want to identify
+
+275
+00:12:01,659 --> 00:12:07,490
+everything that is Pareto optimal this
+
+276
+00:12:04,850 --> 00:12:10,159
+is just getting started and so we'll
+
+277
+00:12:07,490 --> 00:12:12,860
+talk some I actually started working in
+
+278
+00:12:10,159 --> 00:12:14,809
+that area because of the work that we'll
+
+279
+00:12:12,860 --> 00:12:17,240
+talk about today with Ben McCluskey it
+
+280
+00:12:14,809 --> 00:12:20,028
+turned out that the problem that we had
+
+281
+00:12:17,240 --> 00:12:27,500
+was by objective and so we had to create
+
+282
+00:12:20,028 --> 00:12:31,009
+new methods to solve that problem ok so
+
+283
+00:12:27,500 --> 00:12:32,480
+now we're in math tutorial land so now
+
+284
+00:12:31,009 --> 00:12:34,909
+is a good time for questions about
+
+285
+00:12:32,480 --> 00:12:37,329
+simulation optimization what is it what
+
+286
+00:12:34,909 --> 00:12:37,328
+do we do
+
+287
+00:12:40,899 --> 00:12:46,159
+ok nothing yet quite clearly excellent
+
+288
+00:12:44,120 --> 00:12:49,278
+all right so now we'll get a little
+
+289
+00:12:46,159 --> 00:12:51,969
+muddier so this is a brief primer in
+
+290
+00:12:49,278 --> 00:12:56,169
+what's called large deviations theory
+
+291
+00:12:51,970 --> 00:12:58,430
+and I've written here if you get lost
+
+292
+00:12:56,169 --> 00:13:01,278
+we'll go through it but if you get lost
+
+293
+00:12:58,429 --> 00:13:03,439
+the key point is an unlikely event
+
+294
+00:13:01,278 --> 00:13:05,659
+occurs and the most likely of all the
+
+295
+00:13:03,440 --> 00:13:08,630
+unlikely ways so we're going to be
+
+296
+00:13:05,659 --> 00:13:12,740
+analyzing events that are unlikely and
+
+297
+00:13:08,629 --> 00:13:14,629
+we want to think about how they might
+
+298
+00:13:12,740 --> 00:13:16,549
+happen well the most likely way is how
+
+299
+00:13:14,629 --> 00:13:16,909
+they're going to happen at some level so
+
+300
+00:13:16,549 --> 00:13:20,929
+that'll
+
+301
+00:13:16,909 --> 00:13:22,899
+the Northstar when we get there but you
+
+302
+00:13:20,929 --> 00:13:24,949
+deal with things like ordinary
+
+303
+00:13:22,899 --> 00:13:26,750
+deviations all the time that's the
+
+304
+00:13:24,950 --> 00:13:28,910
+central limit theorem right so the
+
+305
+00:13:26,750 --> 00:13:33,129
+central limit theorem says if I'm
+
+306
+00:13:28,909 --> 00:13:36,019
+estimating a mean then my standard error
+
+307
+00:13:33,129 --> 00:13:39,200
+essentially is going down as order 1
+
+308
+00:13:36,019 --> 00:13:41,689
+over square root n right and I will
+
+309
+00:13:39,200 --> 00:13:43,850
+converge if I scale my x-bar correctly
+
+310
+00:13:41,690 --> 00:13:46,970
+and I have some assumption satisfied
+
+311
+00:13:43,850 --> 00:13:49,610
+I'll converge to a normal zero it turns
+
+312
+00:13:46,970 --> 00:13:51,850
+out that large deviations is another
+
+313
+00:13:49,610 --> 00:13:54,200
+regime where we're worried about
+
+314
+00:13:51,850 --> 00:13:56,360
+deviations that are larger than you
+
+315
+00:13:54,200 --> 00:13:59,150
+would typically worry about in a central
+
+316
+00:13:56,360 --> 00:14:02,029
+limit regime and so ideal
+
+317
+00:13:59,149 --> 00:14:04,189
+many times in asymptotics but as you
+
+318
+00:14:02,029 --> 00:14:05,779
+know by the central limit theorem even
+
+319
+00:14:04,190 --> 00:14:08,750
+though it's an asymptotic result it can
+
+320
+00:14:05,779 --> 00:14:11,089
+be extremely useful it can limits can
+
+321
+00:14:08,750 --> 00:14:12,620
+kick in quickly you can get a lot of
+
+322
+00:14:11,090 --> 00:14:16,100
+guiding principles by doing an
+
+323
+00:14:12,620 --> 00:14:19,100
+asymptotic analysis so what is large
+
+324
+00:14:16,100 --> 00:14:20,300
+deviations we know that if we have
+
+325
+00:14:19,100 --> 00:14:23,330
+independent and identically distributed
+
+326
+00:14:20,299 --> 00:14:24,979
+random variables x1 up to xn finite
+
+327
+00:14:23,330 --> 00:14:29,509
+variance and you construct the sample
+
+328
+00:14:24,980 --> 00:14:31,789
+mean in the usual way we know about the
+
+329
+00:14:29,509 --> 00:14:34,610
+strong law of large numbers that die
+
+330
+00:14:31,789 --> 00:14:40,549
+value is converging with probability 1/2
+
+331
+00:14:34,610 --> 00:14:42,860
+the true mean you all right so let's
+
+332
+00:14:40,549 --> 00:14:47,240
+graph this what's going on I have a
+
+333
+00:14:42,860 --> 00:14:48,980
+value mu and now in large deviations
+
+334
+00:14:47,240 --> 00:14:52,580
+theory I'm going to be concerned about
+
+335
+00:14:48,980 --> 00:14:56,210
+the probability that I observe a sample
+
+336
+00:14:52,580 --> 00:14:56,720
+mean much bigger than some value that I
+
+337
+00:14:56,210 --> 00:15:01,340
+care about
+
+338
+00:14:56,720 --> 00:15:03,980
+eh right so if I take some sample in one
+
+339
+00:15:01,340 --> 00:15:07,460
+and I plot the probability density
+
+340
+00:15:03,980 --> 00:15:09,680
+function of the sample mean x-bar for
+
+341
+00:15:07,460 --> 00:15:10,310
+this sample size in one it might look
+
+342
+00:15:09,679 --> 00:15:13,339
+like this
+
+343
+00:15:10,309 --> 00:15:15,259
+and if I want the probability that my
+
+344
+00:15:13,340 --> 00:15:16,519
+sample mean is bigger than a well I'm
+
+345
+00:15:15,259 --> 00:15:22,879
+just gonna integrate under the curve
+
+346
+00:15:16,519 --> 00:15:25,460
+it's this ok so if I take a sample in 1
+
+347
+00:15:22,879 --> 00:15:29,779
+the probability that X bar is bigger
+
+348
+00:15:25,460 --> 00:15:30,740
+than a is blue now let's increase the
+
+349
+00:15:29,779 --> 00:15:33,350
+sample
+
+350
+00:15:30,740 --> 00:15:35,509
+if I increase the sample and I have an
+
+351
+00:15:33,350 --> 00:15:37,279
+in - that's bigger than n1 then my
+
+352
+00:15:35,509 --> 00:15:38,539
+density function gets a little Center
+
+353
+00:15:37,279 --> 00:15:42,259
+remember strong law of large numbers
+
+354
+00:15:38,539 --> 00:15:45,519
+it's converging to a point mass at MU so
+
+355
+00:15:42,259 --> 00:15:48,939
+I have a little bit less area here and
+
+356
+00:15:45,519 --> 00:15:52,669
+if I increase it further it shrinks more
+
+357
+00:15:48,940 --> 00:15:54,080
+so large deviations theory that we're
+
+358
+00:15:52,669 --> 00:15:58,299
+going to be talking about it's saying at
+
+359
+00:15:54,080 --> 00:16:01,190
+what rate does this area go to zero
+
+360
+00:15:58,299 --> 00:16:03,409
+because in the limit my x-bar is
+
+361
+00:16:01,190 --> 00:16:05,750
+converging so the probability that I
+
+362
+00:16:03,409 --> 00:16:07,669
+observe a large deviation event that my
+
+363
+00:16:05,750 --> 00:16:10,009
+x-bar comes all the way up here and it's
+
+364
+00:16:07,669 --> 00:16:13,039
+estimated as bigger than a is going to
+
+365
+00:16:10,009 --> 00:16:16,059
+zero and we want to know at what rate is
+
+366
+00:16:13,039 --> 00:16:21,860
+it going to 0 as my n tends to infinity
+
+367
+00:16:16,059 --> 00:16:24,529
+so this picture is helpful as long as I
+
+368
+00:16:21,860 --> 00:16:26,590
+have a light tailed distribution right
+
+369
+00:16:24,529 --> 00:16:31,429
+so my moment generating function is
+
+370
+00:16:26,590 --> 00:16:34,490
+finite then I have ignored this for a
+
+371
+00:16:31,429 --> 00:16:36,819
+moment just look at the bottom we're
+
+372
+00:16:34,490 --> 00:16:39,649
+saying the probability that my x-bar is
+
+373
+00:16:36,820 --> 00:16:41,150
+in some interval a to infinity so I got
+
+374
+00:16:39,649 --> 00:16:43,699
+that large deviation event and I observe
+
+375
+00:16:41,149 --> 00:16:47,360
+my x bar way out there it's
+
+376
+00:16:43,700 --> 00:16:49,520
+approximately e to the negative n which
+
+377
+00:16:47,360 --> 00:16:54,620
+is my sample size times the rate
+
+378
+00:16:49,519 --> 00:16:58,009
+function evaluated at a so I can move my
+
+379
+00:16:54,620 --> 00:17:00,740
+a around right so my a could have been
+
+380
+00:16:58,009 --> 00:17:04,099
+anywhere in here let me go back to this
+
+381
+00:17:00,740 --> 00:17:06,579
+picture if I move my a over here or move
+
+382
+00:17:04,099 --> 00:17:08,899
+it up here the rate is going to change
+
+383
+00:17:06,579 --> 00:17:10,338
+right because that tail probability is
+
+384
+00:17:08,900 --> 00:17:12,890
+falling differentially depending on
+
+385
+00:17:10,338 --> 00:17:14,919
+where my a is so I can plot the rate
+
+386
+00:17:12,890 --> 00:17:18,670
+function for all different values of it
+
+387
+00:17:14,920 --> 00:17:20,990
+and we'll do that on the next slide but
+
+388
+00:17:18,670 --> 00:17:22,880
+essentially this is saying right so the
+
+389
+00:17:20,990 --> 00:17:26,838
+infimum this is called the rate function
+
+390
+00:17:22,880 --> 00:17:28,970
+i of x over x and a in anytime you see a
+
+391
+00:17:26,838 --> 00:17:33,349
+theme I'm just thinking minimum it's the
+
+392
+00:17:28,970 --> 00:17:34,549
+smallest value is I have a so now we'll
+
+393
+00:17:33,349 --> 00:17:35,839
+come back up here we're going to see
+
+394
+00:17:34,549 --> 00:17:37,879
+things that look like this negative
+
+395
+00:17:35,839 --> 00:17:41,449
+limit n goes to infinity 1 over n log
+
+396
+00:17:37,880 --> 00:17:44,270
+probability X bar in a to infinity do
+
+397
+00:17:41,450 --> 00:17:47,930
+the math in your head take the log
+
+398
+00:17:44,269 --> 00:17:49,700
+/ in moving negative / get a limit and
+
+399
+00:17:47,930 --> 00:17:51,950
+you get the eye of a out the
+
+400
+00:17:49,700 --> 00:17:54,830
+other side so that's all that is we're
+
+401
+00:17:51,950 --> 00:17:57,410
+saying under some conditions the rate of
+
+402
+00:17:54,829 --> 00:18:01,819
+decay is exponential and we're going to
+
+403
+00:17:57,410 --> 00:18:04,870
+be talking about optimizing this term as
+
+404
+00:18:01,819 --> 00:18:08,539
+a function of the sample size in
+
+405
+00:18:04,869 --> 00:18:11,719
+hopefully this will get clearer when we
+
+406
+00:18:08,539 --> 00:18:13,579
+do an example so it turns out rate
+
+407
+00:18:11,720 --> 00:18:18,549
+functions are non-negative and convex
+
+408
+00:18:13,579 --> 00:18:20,990
+convexity is good we like convex and
+
+409
+00:18:18,549 --> 00:18:26,180
+they bottom out at zero at the mean
+
+410
+00:18:20,990 --> 00:18:29,089
+right so X bar will always be either
+
+411
+00:18:26,180 --> 00:18:31,940
+side of zero of the mean right so the
+
+412
+00:18:29,089 --> 00:18:34,970
+rate there is zero but it goes up on
+
+413
+00:18:31,940 --> 00:18:37,070
+either side for normal so imagine the
+
+414
+00:18:34,970 --> 00:18:40,160
+normal probability density function you
+
+415
+00:18:37,069 --> 00:18:42,829
+have that e to the negative 1/2 X minus
+
+416
+00:18:40,160 --> 00:18:45,650
+mu over Sigma squared that's what's
+
+417
+00:18:42,829 --> 00:18:49,519
+coming down here as your rate function
+
+418
+00:18:45,650 --> 00:18:53,300
+for a normal random variable so what's
+
+419
+00:18:49,519 --> 00:18:55,160
+going on here remember our compass is
+
+420
+00:18:53,299 --> 00:18:57,009
+going to be the unlikely event occurs in
+
+421
+00:18:55,160 --> 00:19:00,500
+the most likely of all the unlikely ways
+
+422
+00:18:57,009 --> 00:19:03,289
+so my X bar I'm worried about it being
+
+423
+00:19:00,500 --> 00:19:06,410
+bigger than 8 but my X bar can be
+
+424
+00:19:03,289 --> 00:19:09,769
+anywhere it could be at 3 or it could be
+
+425
+00:19:06,410 --> 00:19:13,090
+at 4 it could be at 200 but what's the
+
+426
+00:19:09,769 --> 00:19:16,549
+most likely event X bar is Right today
+
+427
+00:19:13,089 --> 00:19:18,769
+right so the most likely way that I'm
+
+428
+00:19:16,549 --> 00:19:21,740
+going to see an X bar bigger than any is
+
+429
+00:19:18,769 --> 00:19:29,539
+to observe X bar at all the rest of them
+
+430
+00:19:21,740 --> 00:19:44,960
+are way way less likely I think that's
+
+431
+00:19:29,539 --> 00:19:46,159
+enough to be dangerous yeah so it'll
+
+432
+00:19:44,960 --> 00:19:47,990
+make your rate function a different
+
+433
+00:19:46,160 --> 00:19:49,910
+shape this is a particularly nice
+
+434
+00:19:47,990 --> 00:19:52,480
+quadratic rate function for normals it's
+
+435
+00:19:49,910 --> 00:19:54,230
+symmetric but if you think of other
+
+436
+00:19:52,480 --> 00:19:56,329
+distributions you may have a rate
+
+437
+00:19:54,230 --> 00:19:57,500
+function that that comes down and then
+
+438
+00:19:56,329 --> 00:20:00,199
+goes way up
+
+439
+00:19:57,500 --> 00:20:02,690
+or has a different shape or asymmetry it
+
+440
+00:20:00,200 --> 00:20:06,110
+will still be convex so having that
+
+441
+00:20:02,690 --> 00:20:09,320
+shape it'll still always have the bottom
+
+442
+00:20:06,109 --> 00:20:13,909
+the minimum occurring at Nemean with a
+
+443
+00:20:09,319 --> 00:20:20,269
+value 0 so if the rate function form
+
+444
+00:20:13,910 --> 00:20:22,910
+depends on the distribution okay so now
+
+445
+00:20:20,269 --> 00:20:25,819
+you are you all know about large
+
+446
+00:20:22,910 --> 00:20:29,390
+deviations unlikely event occurs in the
+
+447
+00:20:25,819 --> 00:20:30,950
+most likely of all the unlikely ways so
+
+448
+00:20:29,390 --> 00:20:33,350
+why do we care about this
+
+449
+00:20:30,950 --> 00:20:35,779
+why would we be interested in large
+
+450
+00:20:33,349 --> 00:20:38,569
+deviation events in a context where
+
+451
+00:20:35,779 --> 00:20:40,639
+we're estimating things so let's suppose
+
+452
+00:20:38,569 --> 00:20:42,230
+that we want to pick the parent pair
+
+453
+00:20:40,640 --> 00:20:45,440
+that produces progeny with the largest
+
+454
+00:20:42,230 --> 00:20:48,230
+expected biomass you may have some
+
+455
+00:20:45,440 --> 00:20:49,820
+problem like this and we can use Monte
+
+456
+00:20:48,230 --> 00:20:51,500
+Carlo simulation to simulate the
+
+457
+00:20:49,819 --> 00:20:55,609
+breeding and growth of progeny from
+
+458
+00:20:51,500 --> 00:20:57,440
+several parent pairs and we sample an
+
+459
+00:20:55,609 --> 00:21:01,039
+equals ten progeny from each of the
+
+460
+00:20:57,440 --> 00:21:03,410
+three parent pairs and we get box plots
+
+461
+00:21:01,039 --> 00:21:05,629
+that look like this so remember we're
+
+462
+00:21:03,410 --> 00:21:09,019
+maximizing so these two are better one
+
+463
+00:21:05,630 --> 00:21:11,660
+and two are better than three and so now
+
+464
+00:21:09,019 --> 00:21:14,329
+if I suppose that one is truly the best
+
+465
+00:21:11,660 --> 00:21:16,850
+so it actually has the highest mean I
+
+466
+00:21:14,329 --> 00:21:19,669
+don't know it yet we're interested in
+
+467
+00:21:16,849 --> 00:21:23,449
+the rate of decay of probabilities such
+
+468
+00:21:19,670 --> 00:21:25,759
+as X bar two and minus X bar one is in 0
+
+469
+00:21:23,450 --> 00:21:29,029
+to infinity what does that mean that
+
+470
+00:21:25,759 --> 00:21:31,700
+would mean that my X bar - even though
+
+471
+00:21:29,029 --> 00:21:36,519
+it is not the best is estimated as
+
+472
+00:21:31,700 --> 00:21:38,630
+better than the best one so this is I
+
+473
+00:21:36,519 --> 00:21:41,660
+accidentally picked the wrong parent
+
+474
+00:21:38,630 --> 00:21:43,760
+pair as being the best one and I can
+
+475
+00:21:41,660 --> 00:21:47,180
+control this the rate of decay of this
+
+476
+00:21:43,759 --> 00:21:49,039
+probability so one thing that's very
+
+477
+00:21:47,180 --> 00:21:51,019
+interesting that comes out of a
+
+478
+00:21:49,039 --> 00:21:55,220
+literature called ranking at selection
+
+479
+00:21:51,019 --> 00:21:58,369
+is that ordering is exponentially fast
+
+480
+00:21:55,220 --> 00:22:01,339
+whereas estimation is slower estimation
+
+481
+00:21:58,369 --> 00:22:03,169
+I can estimate the true mean of this
+
+482
+00:22:01,339 --> 00:22:05,569
+parent pair of the progeny they're
+
+483
+00:22:03,170 --> 00:22:07,759
+producing as order 1 over square root
+
+484
+00:22:05,569 --> 00:22:10,529
+that's my standard error Sigma over
+
+485
+00:22:07,759 --> 00:22:12,960
+square root in and it's it's falling
+
+486
+00:22:10,529 --> 00:22:16,289
+much slower than being able to tell
+
+487
+00:22:12,960 --> 00:22:18,720
+which of one or two is better which are
+
+488
+00:22:16,289 --> 00:22:22,440
+of one or two is better is happening at
+
+489
+00:22:18,720 --> 00:22:24,240
+an exponential rate so you can order
+
+490
+00:22:22,440 --> 00:22:26,539
+them faster than you can estimate them
+
+491
+00:22:24,240 --> 00:22:28,920
+when you're doing simulation like this
+
+492
+00:22:26,539 --> 00:22:32,220
+so the tail probability were interested
+
+493
+00:22:28,920 --> 00:22:33,900
+in is for example X bar 2 minus X bar 1
+
+494
+00:22:32,220 --> 00:22:36,829
+is in 0 to infinity which looks like
+
+495
+00:22:33,900 --> 00:22:40,200
+what we saw before and notice that a
+
+496
+00:22:36,829 --> 00:22:43,949
+very tip will expand the notation later
+
+497
+00:22:40,200 --> 00:22:47,430
+but X bar - I may have different amount
+
+498
+00:22:43,950 --> 00:22:49,529
+of samples that I spend on parent car
+
+499
+00:22:47,430 --> 00:22:52,560
+wine versus parent part - in terms of
+
+500
+00:22:49,529 --> 00:22:56,819
+how I breed them right I might breed 10
+
+501
+00:22:52,559 --> 00:22:57,929
+from this one and 30 from this one right
+
+502
+00:22:56,819 --> 00:23:01,230
+I can do that
+
+503
+00:22:57,930 --> 00:23:03,000
+that affects the rate of decay right so
+
+504
+00:23:01,230 --> 00:23:08,130
+when we come back and we see this in
+
+505
+00:23:03,000 --> 00:23:11,759
+alpha right here in the exponent this is
+
+506
+00:23:08,130 --> 00:23:15,480
+going to be in scaled by the proportion
+
+507
+00:23:11,759 --> 00:23:17,099
+of sample I give to that parent pair and
+
+508
+00:23:15,480 --> 00:23:21,380
+it's going to become a decision variable
+
+509
+00:23:17,099 --> 00:23:24,509
+for us how much sample should I give
+
+510
+00:23:21,380 --> 00:23:27,570
+across these parent pairs so that I can
+
+511
+00:23:24,509 --> 00:23:34,680
+make their ordering happen as fast as
+
+512
+00:23:27,569 --> 00:23:36,329
+possible ok so even though this is we've
+
+513
+00:23:34,680 --> 00:23:38,670
+gone the route of math this is fairly
+
+514
+00:23:36,329 --> 00:23:41,429
+intuitive right if you got this plot and
+
+515
+00:23:38,670 --> 00:23:43,500
+you have current car one car to impact
+
+516
+00:23:41,430 --> 00:23:45,750
+or your parent / 3 is pretty bad and you
+
+517
+00:23:43,500 --> 00:23:48,599
+know it I'm gonna give you 30 more
+
+518
+00:23:45,750 --> 00:23:52,819
+samples you're probably not gonna give
+
+519
+00:23:48,599 --> 00:23:55,649
+10 10 10 right parent / 3 is already bad
+
+520
+00:23:52,819 --> 00:23:57,179
+we draw their differentially sample to
+
+521
+00:23:55,650 --> 00:24:01,470
+figure out who's better between one and
+
+522
+00:23:57,180 --> 00:24:04,950
+you we've just put some math on that
+
+523
+00:24:01,470 --> 00:24:08,069
+concept it's all we've done that allows
+
+524
+00:24:04,950 --> 00:24:09,779
+us to analyze it and rigorously say what
+
+525
+00:24:08,069 --> 00:24:12,629
+is the differential sampling scheme that
+
+526
+00:24:09,779 --> 00:24:17,279
+we want to use so that is where we're
+
+527
+00:24:12,630 --> 00:24:20,000
+going we'll head back into plant land
+
+528
+00:24:17,279 --> 00:24:20,000
+for a little while
+
+529
+00:24:20,789 --> 00:24:26,369
+more comfortable so suppose a farmer
+
+530
+00:24:23,940 --> 00:24:29,460
+wants to grow one extreme individual
+
+531
+00:24:26,369 --> 00:24:33,209
+this is the problem that Ben had he
+
+532
+00:24:29,460 --> 00:24:35,759
+wanted to figure out given a population
+
+533
+00:24:33,210 --> 00:24:38,220
+of reading parent pairs for example we
+
+534
+00:24:35,759 --> 00:24:41,460
+we buried the genetic effects just for
+
+535
+00:24:38,220 --> 00:24:44,400
+simplicity we considered pairs as units
+
+536
+00:24:41,460 --> 00:24:45,930
+on their own we have a single growing
+
+537
+00:24:44,400 --> 00:24:47,970
+season and then the question is how many
+
+538
+00:24:45,930 --> 00:24:51,630
+progeny should be planted from each
+
+539
+00:24:47,970 --> 00:24:55,200
+parent pair so that we maximize the
+
+540
+00:24:51,630 --> 00:24:57,390
+expected maximum biomass we observe in
+
+541
+00:24:55,200 --> 00:25:01,830
+the field so we're going after that one
+
+542
+00:24:57,390 --> 00:25:04,170
+biggest tallest largest plant and idea
+
+543
+00:25:01,829 --> 00:25:11,819
+then would be to propagate that into
+
+544
+00:25:04,170 --> 00:25:15,180
+future generations so again we'll borrow
+
+545
+00:25:11,819 --> 00:25:18,299
+math so we're given some breeding budget
+
+546
+00:25:15,180 --> 00:25:22,769
+B and we want to maximize the expected
+
+547
+00:25:18,299 --> 00:25:25,049
+maximum over all of the parent pairs and
+
+548
+00:25:22,769 --> 00:25:29,009
+all of the children we breed from each
+
+549
+00:25:25,049 --> 00:25:31,829
+parent pair of this random variable
+
+550
+00:25:29,009 --> 00:25:34,529
+which is my yield so each child from
+
+551
+00:25:31,829 --> 00:25:36,269
+each parent pair function of whether
+
+552
+00:25:34,529 --> 00:25:39,779
+function of whatever happens in the
+
+553
+00:25:36,269 --> 00:25:41,609
+field we observe this yield and so we
+
+554
+00:25:39,779 --> 00:25:44,700
+want to maximize the expected maximum we
+
+555
+00:25:41,609 --> 00:25:48,209
+see subject to that we can only breathe
+
+556
+00:25:44,700 --> 00:25:49,950
+so much in total which is B and we can
+
+557
+00:25:48,210 --> 00:25:53,039
+choose how much we breed from each
+
+558
+00:25:49,950 --> 00:25:54,960
+parent pair as we go along so a total of
+
+559
+00:25:53,039 --> 00:25:59,099
+X I children will be bred from the eigth
+
+560
+00:25:54,960 --> 00:26:00,900
+parent pair Y IJ of C is the observed
+
+561
+00:25:59,099 --> 00:26:03,779
+trait of the JS child from the parent
+
+562
+00:26:00,900 --> 00:26:06,120
+pair and the uncertainty could be due to
+
+563
+00:26:03,779 --> 00:26:08,480
+anything you have in your model so
+
+564
+00:26:06,119 --> 00:26:14,219
+genetics soil conditions the weather
+
+565
+00:26:08,480 --> 00:26:16,500
+whatever each planting plan is assessed
+
+566
+00:26:14,220 --> 00:26:18,420
+through Monte Carlo simulation and the
+
+567
+00:26:16,500 --> 00:26:20,970
+granularity of the simulation that we
+
+568
+00:26:18,420 --> 00:26:24,330
+used is that you essentially take a
+
+569
+00:26:20,970 --> 00:26:26,519
+parent pair simulate it out pops of the
+
+570
+00:26:24,329 --> 00:26:28,980
+child and so you get one observation
+
+571
+00:26:26,519 --> 00:26:31,349
+from the progeny trait distribution of
+
+572
+00:26:28,980 --> 00:26:34,309
+the parent pair so that's the unit at
+
+573
+00:26:31,349 --> 00:26:34,309
+which we are simulating
+
+574
+00:26:35,240 --> 00:26:41,069
+so this problem evaluating the objective
+
+575
+00:26:39,329 --> 00:26:43,109
+function with high precision may be
+
+576
+00:26:41,069 --> 00:26:45,898
+expensive because what do I have to do
+
+577
+00:26:43,109 --> 00:26:47,668
+let's suppose that I choose to breed
+
+578
+00:26:45,898 --> 00:26:50,069
+equally from all the parent pairs that I
+
+579
+00:26:47,669 --> 00:26:52,919
+have and that satisfies my budget
+
+580
+00:26:50,069 --> 00:26:55,048
+constraint well that's one potential
+
+581
+00:26:52,919 --> 00:27:00,179
+solution so I put that in my computer
+
+582
+00:26:55,048 --> 00:27:03,000
+and I say ok now tell me what is the
+
+583
+00:27:00,179 --> 00:27:05,850
+maximum of the first replication so I
+
+584
+00:27:03,000 --> 00:27:08,130
+did one trial and I got a maximum yield
+
+585
+00:27:05,849 --> 00:27:09,898
+okay now I have to do that again and
+
+586
+00:27:08,130 --> 00:27:11,520
+then I have to do that again
+
+587
+00:27:09,898 --> 00:27:13,739
+and then I have to do that again just to
+
+588
+00:27:11,519 --> 00:27:16,589
+get an estimator of this objective
+
+589
+00:27:13,740 --> 00:27:19,349
+function at that particular greeting
+
+590
+00:27:16,589 --> 00:27:20,788
+scheme and then maybe that didn't do as
+
+591
+00:27:19,349 --> 00:27:22,889
+well as I wanted now I have to play with
+
+592
+00:27:20,788 --> 00:27:25,169
+it these are my decision variables the
+
+593
+00:27:22,890 --> 00:27:27,990
+X's are what I can decide because I have
+
+594
+00:27:25,169 --> 00:27:30,028
+to change it so our our whole problem
+
+595
+00:27:27,990 --> 00:27:32,399
+was how do we make this tractable how do
+
+596
+00:27:30,028 --> 00:27:38,519
+we actually solve this on a computer in
+
+597
+00:27:32,398 --> 00:27:40,379
+a way that is manageable feasible set
+
+598
+00:27:38,519 --> 00:27:46,319
+may be large you can do a lot of
+
+599
+00:27:40,380 --> 00:27:48,090
+different things so Ben was telling me
+
+600
+00:27:46,319 --> 00:27:50,548
+that a lot of his colleagues kept saying
+
+601
+00:27:48,089 --> 00:27:53,189
+well you're gonna allocate everything to
+
+602
+00:27:50,548 --> 00:27:55,589
+the one best parent pair that'll be one
+
+603
+00:27:53,190 --> 00:27:57,808
+best and you're gonna give the entire
+
+604
+00:27:55,589 --> 00:28:00,240
+breeding budget to that one and it turns
+
+605
+00:27:57,808 --> 00:28:02,730
+out that this is the correct answer but
+
+606
+00:28:00,240 --> 00:28:04,649
+only if your trait is Bernoulli so the
+
+607
+00:28:02,730 --> 00:28:07,140
+trait is there or not there so something
+
+608
+00:28:04,648 --> 00:28:10,648
+like disease resistance you're resistant
+
+609
+00:28:07,140 --> 00:28:13,230
+or you're not and so you will have your
+
+610
+00:28:10,648 --> 00:28:14,639
+Y IJ will be Bernoulli P Bernoulli is
+
+611
+00:28:13,230 --> 00:28:16,769
+like coin tossing there's some
+
+612
+00:28:14,640 --> 00:28:19,559
+probability of success each time you
+
+613
+00:28:16,769 --> 00:28:21,298
+toss the coin and so if each parent pair
+
+614
+00:28:19,558 --> 00:28:23,759
+is producing children that are Bernoulli
+
+615
+00:28:21,298 --> 00:28:26,908
+with some value P that depends on the
+
+616
+00:28:23,759 --> 00:28:30,569
+parent pair then we can prove that the
+
+617
+00:28:26,909 --> 00:28:32,039
+solution is to identify the parent pair
+
+618
+00:28:30,569 --> 00:28:34,700
+with the highest probability of
+
+619
+00:28:32,038 --> 00:28:38,129
+producing that resistant offspring and
+
+620
+00:28:34,700 --> 00:28:40,080
+then give everything to them so this
+
+621
+00:28:38,130 --> 00:28:42,450
+devolves into what's called a ranking
+
+622
+00:28:40,079 --> 00:28:45,028
+and selection problem because you don't
+
+623
+00:28:42,450 --> 00:28:47,610
+know this probability for each parent
+
+624
+00:28:45,028 --> 00:28:48,509
+pair you'll use Monte Carlo simulation
+
+625
+00:28:47,609 --> 00:28:51,538
+to try to figure it
+
+626
+00:28:48,509 --> 00:28:55,288
+out and we're trying to assign
+
+627
+00:28:51,538 --> 00:28:56,608
+everything to that so if you're
+
+628
+00:28:55,288 --> 00:28:59,429
+interested in this problem we do have
+
+629
+00:28:56,608 --> 00:29:01,888
+methods for that in terms of the
+
+630
+00:28:59,429 --> 00:29:03,298
+operations research audience we decided
+
+631
+00:29:01,888 --> 00:29:05,578
+to go with a slightly more complicated
+
+632
+00:29:03,298 --> 00:29:08,098
+model he was worried about traits that
+
+633
+00:29:05,578 --> 00:29:10,948
+are normally distributed and it turns
+
+634
+00:29:08,098 --> 00:29:13,468
+out that for normally distributed traits
+
+635
+00:29:10,949 --> 00:29:19,409
+you will not necessarily give everything
+
+636
+00:29:13,469 --> 00:29:21,778
+to one so let's take an example remember
+
+637
+00:29:19,409 --> 00:29:23,909
+the Y IJ of C are the traits of the
+
+638
+00:29:21,778 --> 00:29:25,739
+individual children they're iid normal
+
+639
+00:29:23,909 --> 00:29:27,929
+with mean that depends on the parent
+
+640
+00:29:25,739 --> 00:29:31,019
+pair and variants it depends on the
+
+641
+00:29:27,929 --> 00:29:35,629
+parent pair so if we have parent pair
+
+642
+00:29:31,019 --> 00:29:39,028
+with normal mu 1 0 Sigma 1 is 50
+
+643
+00:29:35,628 --> 00:29:41,788
+compared to is mu 2 is 50 Sigma 2 is
+
+644
+00:29:39,028 --> 00:29:46,199
+0.01 right so I have one sort of fat
+
+645
+00:29:41,788 --> 00:29:47,878
+distribution that is wide high variance
+
+646
+00:29:46,199 --> 00:29:50,489
+but low mean and then I have another
+
+647
+00:29:47,878 --> 00:29:53,428
+distribution that is high mean but low
+
+648
+00:29:50,489 --> 00:29:54,929
+variance it turns out that I am going to
+
+649
+00:29:53,429 --> 00:29:58,919
+split the allocation across these
+
+650
+00:29:54,929 --> 00:30:02,219
+parents so if I give everything to the
+
+651
+00:29:58,919 --> 00:30:05,669
+low mean distribution here then it turns
+
+652
+00:30:02,219 --> 00:30:08,639
+out that my expected max is 42 something
+
+653
+00:30:05,669 --> 00:30:10,769
+like that estimated expected maximum we
+
+654
+00:30:08,638 --> 00:30:13,439
+have small standard errors we had to
+
+655
+00:30:10,769 --> 00:30:15,899
+simulate this these results if we give
+
+656
+00:30:13,440 --> 00:30:19,798
+everything to the second one then I'm
+
+657
+00:30:15,898 --> 00:30:43,258
+going to hit that high mean but I'll
+
+658
+00:30:19,798 --> 00:30:46,558
+have it'll be very near to 250 good
+
+659
+00:30:43,259 --> 00:30:49,679
+question so we found we don't actually
+
+660
+00:30:46,558 --> 00:30:51,719
+have numerix on this in particular but
+
+661
+00:30:49,679 --> 00:30:54,059
+we found that it's somewhat dependent on
+
+662
+00:30:51,719 --> 00:30:55,349
+the breeding budget so this was
+
+663
+00:30:54,058 --> 00:30:56,278
+constructed specifically as a
+
+664
+00:30:55,348 --> 00:30:59,908
+counterexample
+
+665
+00:30:56,278 --> 00:31:02,359
+so that Ben could say not for normal and
+
+666
+00:30:59,909 --> 00:31:04,190
+say we have to do something else
+
+667
+00:31:02,359 --> 00:31:07,699
+so it depends on what the breeding
+
+668
+00:31:04,190 --> 00:31:09,799
+budget B is it turns out that if you let
+
+669
+00:31:07,700 --> 00:31:11,720
+your breeding budget get very large you
+
+670
+00:31:09,799 --> 00:31:17,059
+are going to give all to the high
+
+671
+00:31:11,720 --> 00:31:19,610
+variance parent pair why is that so if
+
+672
+00:31:17,059 --> 00:31:21,589
+we look at the split allocation that
+
+673
+00:31:19,609 --> 00:31:24,019
+happens to be optimal we're going to
+
+674
+00:31:21,589 --> 00:31:26,480
+give one to the high mean low very
+
+675
+00:31:24,019 --> 00:31:29,869
+inexperienced there why because we want
+
+676
+00:31:26,480 --> 00:31:31,490
+to secure the high mean we can give one
+
+677
+00:31:29,869 --> 00:31:33,819
+and get a high mean with pretty good
+
+678
+00:31:31,490 --> 00:31:36,589
+certainty so we want to give one there
+
+679
+00:31:33,819 --> 00:31:38,529
+the other two we're going to go for
+
+680
+00:31:36,589 --> 00:31:40,909
+broke on the high variance parent pair
+
+681
+00:31:38,529 --> 00:31:43,099
+because the high variance parent pair
+
+682
+00:31:40,910 --> 00:31:46,190
+has the potential to produce with higher
+
+683
+00:31:43,099 --> 00:31:48,230
+probability parents out here or children
+
+684
+00:31:46,190 --> 00:31:51,559
+out here in the tail so I'm going to
+
+685
+00:31:48,230 --> 00:31:53,690
+give one to secure the high mean on the
+
+686
+00:31:51,559 --> 00:31:56,679
+you two and then I'm gonna give
+
+687
+00:31:53,690 --> 00:31:59,539
+everybody else trying to get that
+
+688
+00:31:56,680 --> 00:32:01,610
+extremum in the tail and it turns out as
+
+689
+00:31:59,539 --> 00:32:04,789
+your breeding budget gets really big you
+
+690
+00:32:01,609 --> 00:32:06,500
+will give everybody to the high variance
+
+691
+00:32:04,789 --> 00:32:09,740
+parent pair because you're going for
+
+692
+00:32:06,500 --> 00:32:12,740
+that tail always it doesn't benefit you
+
+693
+00:32:09,740 --> 00:32:16,400
+to give a lot to the lower mean one or
+
+694
+00:32:12,740 --> 00:32:18,680
+lower standard deviation one so in terms
+
+695
+00:32:16,400 --> 00:32:20,780
+of how does it actually work out I can't
+
+696
+00:32:18,680 --> 00:32:25,090
+I'm not entirely sure but I can tell you
+
+697
+00:32:20,779 --> 00:32:25,089
+asymptotically where I don't know yeah
+
+698
+00:32:26,289 --> 00:32:31,940
+often with the data that we had giving
+
+699
+00:32:29,750 --> 00:32:57,079
+all to one was an optimal strategy but
+
+700
+00:32:31,940 --> 00:33:01,610
+it wasn't always so we are taking
+
+701
+00:32:57,079 --> 00:33:04,759
+parents separately as a pair right so it
+
+702
+00:33:01,609 --> 00:33:06,979
+would be this pair produces children
+
+703
+00:33:04,759 --> 00:33:10,579
+with this distribution and this pair
+
+704
+00:33:06,980 --> 00:33:31,429
+produces children with this distribution
+
+705
+00:33:10,579 --> 00:33:32,990
+oh I see what you're taking so I think
+
+706
+00:33:31,429 --> 00:33:35,809
+you're talking about how did I get these
+
+707
+00:33:32,990 --> 00:34:06,980
+parent pairs in the first place is that
+
+708
+00:33:35,808 --> 00:34:23,210
+right your because one of the highest to
+
+709
+00:34:06,980 --> 00:34:27,199
+get back pair so if you have the ability
+
+710
+00:34:23,210 --> 00:34:29,358
+to control how variable this is and you
+
+711
+00:34:27,199 --> 00:34:32,329
+have an infinite breeding budget yeah
+
+712
+00:34:29,358 --> 00:34:34,369
+you will you will try to maximize this
+
+713
+00:34:32,329 --> 00:34:36,829
+variance and then allocate everything to
+
+714
+00:34:34,369 --> 00:34:42,769
+it yeah no that could be a very large
+
+715
+00:34:36,829 --> 00:34:44,598
+breeding budget okay yeah okay so
+
+716
+00:34:42,769 --> 00:34:46,668
+hopefully I think I've convinced you
+
+717
+00:34:44,599 --> 00:34:49,280
+that the alter one strategy is is not
+
+718
+00:34:46,668 --> 00:35:07,400
+always optimal at least in the normal
+
+719
+00:34:49,280 --> 00:35:09,890
+trade case in term yes if you could
+
+720
+00:35:07,400 --> 00:35:11,990
+change these parent pairs and inch this
+
+721
+00:35:09,889 --> 00:35:14,420
+one further you'll probably be
+
+722
+00:35:11,989 --> 00:35:17,029
+allocating something to it because it's
+
+723
+00:35:14,420 --> 00:35:20,829
+all of a sudden it's producing your best
+
+724
+00:35:17,030 --> 00:35:20,830
+even though it's lower variance
+
+725
+00:35:22,710 --> 00:35:35,199
+for yes as opposed to multiple traits we
+
+726
+00:35:29,530 --> 00:36:35,320
+have yeah just one trait that was one
+
+727
+00:35:35,199 --> 00:36:39,219
+extension right so we're we're going to
+
+728
+00:36:35,320 --> 00:36:40,870
+avoid or attempt to avoid simulating at
+
+729
+00:36:39,219 --> 00:37:01,829
+least that equal allocation the entire
+
+730
+00:36:40,869 --> 00:37:04,509
+population to marry related that
+
+731
+00:37:01,829 --> 00:37:11,019
+conditions you can anything I'm going to
+
+732
+00:37:04,510 --> 00:37:12,760
+go yes so this would be putting some
+
+733
+00:37:11,019 --> 00:37:22,360
+kind of neighborhood structure on the
+
+734
+00:37:12,760 --> 00:37:23,770
+feasible space so this we do not have a
+
+735
+00:37:22,360 --> 00:37:25,030
+neighborhood structure we assume we
+
+736
+00:37:23,769 --> 00:37:27,969
+don't have one that would be an
+
+737
+00:37:25,030 --> 00:37:30,460
+extension that may help so we took a
+
+738
+00:37:27,969 --> 00:37:33,069
+different route of assuming that the
+
+739
+00:37:30,460 --> 00:37:34,750
+parent pairs are not ordered and they
+
+740
+00:37:33,070 --> 00:37:39,580
+don't have neighbors
+
+741
+00:37:34,750 --> 00:37:52,059
+which may be an oversimplification but
+
+742
+00:37:39,579 --> 00:37:55,000
+good point yes yes where you could
+
+743
+00:37:52,059 --> 00:37:57,699
+sample at one and then say well I know
+
+744
+00:37:55,000 --> 00:37:59,349
+that the people or the plants near me
+
+745
+00:37:57,699 --> 00:38:09,699
+are going to be similar in certain
+
+746
+00:37:59,349 --> 00:38:12,369
+respects okay so this is this is a tough
+
+747
+00:38:09,699 --> 00:38:15,149
+problem to solve so we started thinking
+
+748
+00:38:12,369 --> 00:38:18,190
+about how do we how do we simplify it
+
+749
+00:38:15,150 --> 00:38:21,340
+how do we get something that is more
+
+750
+00:38:18,190 --> 00:38:23,309
+tractable so it turns out that as you
+
+751
+00:38:21,340 --> 00:38:26,740
+may have guessed from the previous slide
+
+752
+00:38:23,309 --> 00:38:29,380
+if a parent pair has a mean and variance
+
+753
+00:38:26,739 --> 00:38:31,149
+that is dominated by some other parent
+
+754
+00:38:29,380 --> 00:38:33,610
+pairs mean and variance you will never
+
+755
+00:38:31,150 --> 00:38:35,289
+simulate or you will never get any of
+
+756
+00:38:33,610 --> 00:38:36,370
+the breeding budget you may have to
+
+757
+00:38:35,289 --> 00:38:38,650
+simulate to figure out what the meaning
+
+758
+00:38:36,369 --> 00:38:40,929
+variants are but you will not allocate
+
+759
+00:38:38,650 --> 00:38:43,750
+anything to it because it's neither
+
+760
+00:38:40,929 --> 00:38:46,269
+producing that extreme individual nor
+
+761
+00:38:43,750 --> 00:38:49,389
+going for the variance so efficient
+
+762
+00:38:46,269 --> 00:38:51,159
+parent pairs are non dominated in terms
+
+763
+00:38:49,389 --> 00:38:53,349
+of their mean and their variance and
+
+764
+00:38:51,159 --> 00:38:56,559
+only parent pairs on the Pareto front
+
+765
+00:38:53,349 --> 00:38:58,539
+will receive a planting budget nonzero
+
+766
+00:38:56,559 --> 00:39:01,960
+in the original breeding problem that we
+
+767
+00:38:58,539 --> 00:39:04,659
+talked about so the goal then is to
+
+768
+00:39:01,960 --> 00:39:07,360
+somehow identify those on the Pareto
+
+769
+00:39:04,659 --> 00:39:10,869
+front so this is just an example data
+
+770
+00:39:07,360 --> 00:39:13,059
+set that then had were created where the
+
+771
+00:39:10,869 --> 00:39:15,969
+Pareto parent pairs are sitting right
+
+772
+00:39:13,059 --> 00:39:18,039
+here they're represented by circles so
+
+773
+00:39:15,969 --> 00:39:21,369
+how do we identify this one two three
+
+774
+00:39:18,039 --> 00:39:26,199
+four five parent pairs that have the
+
+775
+00:39:21,369 --> 00:39:28,599
+best mean and variance values and you
+
+776
+00:39:26,199 --> 00:39:30,939
+may then wonder well wouldn't it just be
+
+777
+00:39:28,599 --> 00:39:33,519
+the corner points wouldn't these ones
+
+778
+00:39:30,940 --> 00:39:35,800
+the extrema be the only wants to get
+
+779
+00:39:33,519 --> 00:39:37,750
+allocation and again I set my computer
+
+780
+00:39:35,800 --> 00:39:38,260
+running and I have a counter example for
+
+781
+00:39:37,750 --> 00:39:42,369
+that too
+
+782
+00:39:38,260 --> 00:39:43,810
+so prove our counter example is is the
+
+783
+00:39:42,369 --> 00:39:46,569
+way to go and we have a counter example
+
+784
+00:39:43,809 --> 00:39:48,710
+so you may allocate something for
+
+785
+00:39:46,570 --> 00:39:50,690
+example to this one
+
+786
+00:39:48,710 --> 00:39:53,059
+and so you'd like to identify the entire
+
+787
+00:39:50,690 --> 00:39:57,289
+Pareto front so what does that give us
+
+788
+00:39:53,059 --> 00:39:59,570
+it gives us a reduced set to consider so
+
+789
+00:39:57,289 --> 00:40:03,070
+when I'm trying to solve that original
+
+790
+00:39:59,570 --> 00:40:06,440
+problem I don't need to allocate across
+
+791
+00:40:03,070 --> 00:40:08,780
+20,000 parent pairs anymore I only need
+
+792
+00:40:06,440 --> 00:40:12,289
+to consider allocating across something
+
+793
+00:40:08,780 --> 00:40:14,780
+less than or equal to about 25 pairs so
+
+794
+00:40:12,289 --> 00:40:17,239
+this is reducing the dimensionality of
+
+795
+00:40:14,780 --> 00:40:19,849
+the problem dramatically if you can
+
+796
+00:40:17,239 --> 00:40:24,159
+identify those pareto parent pairs that
+
+797
+00:40:19,849 --> 00:40:24,160
+are dominated in terms of their meanings
+
+798
+00:40:24,369 --> 00:40:30,260
+so we proposed a two-step solution to
+
+799
+00:40:27,710 --> 00:40:32,300
+solve the mating design problem so in as
+
+800
+00:40:30,260 --> 00:40:35,480
+a total simulation budget that you can
+
+801
+00:40:32,300 --> 00:40:38,210
+use we're gonna choose enlarge and use a
+
+802
+00:40:35,480 --> 00:40:40,099
+simulation to obtain estimators for each
+
+803
+00:40:38,210 --> 00:40:42,769
+parent pair and we're going to construct
+
+804
+00:40:40,099 --> 00:40:44,570
+an estimated Pareto set so we'll call
+
+805
+00:40:42,769 --> 00:40:47,989
+that P hat that's a function of my
+
+806
+00:40:44,570 --> 00:40:49,940
+simulation budget and then we're gonna
+
+807
+00:40:47,989 --> 00:40:52,699
+solve an estimated version of the
+
+808
+00:40:49,940 --> 00:40:57,050
+breeding problem it's we're calling it
+
+809
+00:40:52,699 --> 00:40:59,449
+problem a hat sub P hat of in this is
+
+810
+00:40:57,050 --> 00:41:02,089
+just a grief formulated the expected
+
+811
+00:40:59,449 --> 00:41:03,858
+maximum using the fact that we have
+
+812
+00:41:02,088 --> 00:41:05,420
+normal distributions so if you don't
+
+813
+00:41:03,858 --> 00:41:08,269
+recognize this don't worry it's just a
+
+814
+00:41:05,420 --> 00:41:10,639
+parametric form but I don't know the
+
+815
+00:41:08,269 --> 00:41:12,469
+mean and the variance in here for each
+
+816
+00:41:10,639 --> 00:41:14,989
+parent car so I'm estimating it so I'm
+
+817
+00:41:12,469 --> 00:41:16,909
+just using plug in estimators for all
+
+818
+00:41:14,989 --> 00:41:19,129
+the values that I don't know and I'm
+
+819
+00:41:16,909 --> 00:41:21,920
+evaluating it only over our estimated
+
+820
+00:41:19,130 --> 00:41:25,130
+creatives so we're going to predetermine
+
+821
+00:41:21,920 --> 00:41:28,099
+the the estimated mean and variance
+
+822
+00:41:25,130 --> 00:41:29,900
+values in my simulator and get the
+
+823
+00:41:28,099 --> 00:41:33,320
+estimated proto set and then solve this
+
+824
+00:41:29,900 --> 00:41:36,530
+problem only on that set and it turns
+
+825
+00:41:33,320 --> 00:41:39,380
+out that if I let my sample size in my
+
+826
+00:41:36,530 --> 00:41:42,019
+simulation go to infinity then I will
+
+827
+00:41:39,380 --> 00:41:44,720
+get the true optimal breeding budget
+
+828
+00:41:42,019 --> 00:41:46,730
+allocation plan out of this problem so
+
+829
+00:41:44,719 --> 00:41:49,848
+the key is going to be simulating enough
+
+830
+00:41:46,730 --> 00:41:52,750
+that we can get these Pareto parent
+
+831
+00:41:49,849 --> 00:41:52,750
+pairs efficiently
+
+832
+00:41:54,619 --> 00:41:58,969
+so the nice thing about this we could
+
+833
+00:41:57,170 --> 00:42:00,469
+have done other techniques we could have
+
+834
+00:41:58,969 --> 00:42:03,559
+done something for an integer ordered
+
+835
+00:42:00,469 --> 00:42:05,539
+space but the nice thing about this was
+
+836
+00:42:03,559 --> 00:42:08,450
+that if the breeding budget changes we
+
+837
+00:42:05,539 --> 00:42:10,849
+don't need to re simulate so after we
+
+838
+00:42:08,449 --> 00:42:12,858
+run the simulation studies you can
+
+839
+00:42:10,849 --> 00:42:15,469
+change this B to be anything you want
+
+840
+00:42:12,858 --> 00:42:18,259
+and it does not affect what happens to
+
+841
+00:42:15,469 --> 00:42:19,849
+my estimated mean and variance values so
+
+842
+00:42:18,259 --> 00:42:22,099
+that's nice because if you're still
+
+843
+00:42:19,849 --> 00:42:24,559
+unsure how many resources you have you
+
+844
+00:42:22,099 --> 00:42:28,338
+can do the simulation in advance and not
+
+845
+00:42:24,559 --> 00:42:30,829
+have to redo it over and over again the
+
+846
+00:42:28,338 --> 00:42:32,960
+other one that was a benefit Ben
+
+847
+00:42:30,829 --> 00:42:36,019
+mentioned that the breeders were not
+
+848
+00:42:32,960 --> 00:42:38,150
+amenable to just implementing whatever
+
+849
+00:42:36,018 --> 00:42:41,778
+one solution pops out of the simulator
+
+850
+00:42:38,150 --> 00:42:44,809
+you need more than one they'd like to
+
+851
+00:42:41,778 --> 00:42:47,478
+see entire the entire Pareto front for
+
+852
+00:42:44,809 --> 00:42:49,640
+them would be nice to see what are the
+
+853
+00:42:47,478 --> 00:42:51,379
+good contenders and then allow them to
+
+854
+00:42:49,639 --> 00:42:54,348
+incorporate other knowledge they have
+
+855
+00:42:51,380 --> 00:42:56,630
+that may not be in the model so you can
+
+856
+00:42:54,349 --> 00:42:58,910
+present to them the entire Pareto front
+
+857
+00:42:56,630 --> 00:43:05,150
+that you've identified and then let them
+
+858
+00:42:58,909 --> 00:43:07,159
+select from among those so reducing the
+
+859
+00:43:05,150 --> 00:43:09,650
+set of parent pairs only do the Pareto
+
+860
+00:43:07,159 --> 00:43:12,469
+front reduces the complexity we have
+
+861
+00:43:09,650 --> 00:43:16,249
+this master planting allocation problem
+
+862
+00:43:12,469 --> 00:43:18,289
+this problem a hat sub P hat and then
+
+863
+00:43:16,248 --> 00:43:21,259
+created a specialized branch and bound
+
+864
+00:43:18,289 --> 00:43:23,569
+algorithm just for solving this after
+
+865
+00:43:21,259 --> 00:43:26,088
+we've observed the estimated mean and
+
+866
+00:43:23,568 --> 00:43:27,768
+variance values out of the simulator so
+
+867
+00:43:26,088 --> 00:43:30,518
+you'll simulate and then solve this
+
+868
+00:43:27,768 --> 00:43:33,318
+problem but now we have a sub problem
+
+869
+00:43:30,518 --> 00:43:35,899
+which is how do we find the set of
+
+870
+00:43:33,318 --> 00:43:38,929
+estimated Fredo parent pairs efficiently
+
+871
+00:43:35,900 --> 00:43:42,108
+and then there's a simulation sub sub
+
+872
+00:43:38,929 --> 00:43:44,748
+problem which is how do we allocate a
+
+873
+00:43:42,108 --> 00:43:47,778
+simulation budget in to find the
+
+874
+00:43:44,748 --> 00:43:49,518
+estimated pareto set P hat I change the
+
+875
+00:43:47,778 --> 00:43:52,909
+notation here it's no longer a function
+
+876
+00:43:49,518 --> 00:43:55,008
+of n this is called multi objective
+
+877
+00:43:52,909 --> 00:43:56,659
+ranking and selection and this is sort
+
+878
+00:43:55,009 --> 00:43:58,998
+of how I got my start in working in this
+
+879
+00:43:56,659 --> 00:44:01,429
+area because all of a sudden we need to
+
+880
+00:43:58,998 --> 00:44:05,298
+identify parent pairs that are on a
+
+881
+00:44:01,429 --> 00:44:06,529
+Pareto front and so this question is the
+
+882
+00:44:05,298 --> 00:44:10,759
+one where
+
+883
+00:44:06,530 --> 00:44:12,620
+the simulation optimization you know and
+
+884
+00:44:10,760 --> 00:44:15,440
+we get excited when we see problems like
+
+885
+00:44:12,619 --> 00:44:17,480
+this so how can I create my simulation
+
+886
+00:44:15,440 --> 00:44:18,289
+budget allocated to the parent pairs in
+
+887
+00:44:17,480 --> 00:44:22,099
+an efficient way
+
+888
+00:44:18,289 --> 00:44:25,159
+and remember this is ordering right I
+
+889
+00:44:22,099 --> 00:44:27,860
+want to get the order right so if I have
+
+890
+00:44:25,159 --> 00:44:31,009
+a procedure to estimate the pareto set
+
+891
+00:44:27,860 --> 00:44:34,370
+and is my total simulation budget and
+
+892
+00:44:31,010 --> 00:44:36,830
+I'm gonna let in alpha I be the
+
+893
+00:44:34,369 --> 00:44:38,719
+proportion so alpha is the proportion of
+
+894
+00:44:36,829 --> 00:44:41,150
+the total simulation budget that I give
+
+895
+00:44:38,719 --> 00:44:43,730
+to the ice parent pair for estimating
+
+896
+00:44:41,150 --> 00:44:45,440
+their mean and variance values and at
+
+897
+00:44:43,730 --> 00:44:48,559
+the end of simulating I'm gonna return
+
+898
+00:44:45,440 --> 00:44:51,409
+the estimated greater set right so now
+
+899
+00:44:48,559 --> 00:44:54,110
+how can this go wrong well it can go
+
+900
+00:44:51,409 --> 00:44:56,089
+wrong if one of my parent pairs that's
+
+901
+00:44:54,110 --> 00:44:59,000
+actually on the Pareto front it's miss
+
+902
+00:44:56,090 --> 00:45:00,470
+estimated as not being there that's an
+
+903
+00:44:59,000 --> 00:45:03,530
+ordering issue just like we talked about
+
+904
+00:45:00,469 --> 00:45:05,089
+in the tutorial or if one of the parent
+
+905
+00:45:03,530 --> 00:45:08,810
+pairs that is not in the Pareto front
+
+906
+00:45:05,090 --> 00:45:11,570
+jumps in again an ordering issue and so
+
+907
+00:45:08,809 --> 00:45:14,119
+I want to find a simulation budget
+
+908
+00:45:11,570 --> 00:45:16,370
+allocation that maximizes the rate of
+
+909
+00:45:14,119 --> 00:45:20,210
+decay of the probability that a parent
+
+910
+00:45:16,369 --> 00:45:23,089
+pair is misclassified this is a large
+
+911
+00:45:20,210 --> 00:45:26,059
+deviation of inch that a parent pair is
+
+912
+00:45:23,090 --> 00:45:27,740
+misclassified and the unlikely event
+
+913
+00:45:26,059 --> 00:45:30,769
+occurs and the most likely of all the
+
+914
+00:45:27,739 --> 00:45:33,049
+unlikely ways so in order to figure out
+
+915
+00:45:30,769 --> 00:45:36,230
+what this simulation budget allocation
+
+916
+00:45:33,050 --> 00:45:39,560
+should be we analyze how likely all
+
+917
+00:45:36,230 --> 00:45:43,809
+these events are so that's where we're
+
+918
+00:45:39,559 --> 00:45:47,059
+headed very briefly and it gets a little
+
+919
+00:45:43,809 --> 00:45:49,070
+nappy but I think you can follow so
+
+920
+00:45:47,059 --> 00:45:52,070
+equal allocation is what they were doing
+
+921
+00:45:49,070 --> 00:45:54,410
+it's expensive it's time and money
+
+922
+00:45:52,070 --> 00:45:56,900
+Ben was running his experiments on
+
+923
+00:45:54,409 --> 00:45:58,609
+Amazon and so you have to pay for those
+
+924
+00:45:56,900 --> 00:46:02,000
+servers and if you're just going to
+
+925
+00:45:58,610 --> 00:46:04,400
+brute force equal allocation it can take
+
+926
+00:46:02,000 --> 00:46:07,670
+a while so can we do something that is a
+
+927
+00:46:04,400 --> 00:46:09,650
+little smarter so now we are living in
+
+928
+00:46:07,670 --> 00:46:12,769
+the sub sub problem of allocating the
+
+929
+00:46:09,650 --> 00:46:16,760
+simulation budget to get those Pareto
+
+930
+00:46:12,769 --> 00:46:19,369
+Perry pairs so some
+
+931
+00:46:16,760 --> 00:46:22,250
+notation and alpha I is the proportion
+
+932
+00:46:19,369 --> 00:46:25,099
+of sample allocated to parent part I we
+
+933
+00:46:22,250 --> 00:46:27,500
+have the estimator of the mean and the
+
+934
+00:46:25,099 --> 00:46:30,139
+estimator of the variance we're going to
+
+935
+00:46:27,500 --> 00:46:32,329
+assume normality so now we have the
+
+936
+00:46:30,139 --> 00:46:36,500
+estimator of the variances chi squared
+
+937
+00:46:32,329 --> 00:46:38,299
+so in a lot of the work that exists on
+
+938
+00:46:36,500 --> 00:46:40,909
+these types of problems
+
+939
+00:46:38,300 --> 00:46:43,550
+everything is assumed to be normal so we
+
+940
+00:46:40,909 --> 00:46:45,529
+needed special methods that will allow
+
+941
+00:46:43,550 --> 00:46:48,289
+us to use chi square random variables
+
+942
+00:46:45,530 --> 00:46:51,560
+and account for that in our techniques
+
+943
+00:46:48,289 --> 00:46:54,500
+and large deviations is particularly
+
+944
+00:46:51,559 --> 00:46:58,400
+suited to doing so how do we analyze
+
+945
+00:46:54,500 --> 00:47:00,139
+these events so we're going to analyze
+
+946
+00:46:58,400 --> 00:47:01,849
+it pretending we know everything and
+
+947
+00:47:00,139 --> 00:47:03,799
+then later we're going to plug in just
+
+948
+00:47:01,849 --> 00:47:05,420
+like we did when we didn't know what to
+
+949
+00:47:03,800 --> 00:47:07,370
+do in the master breeding problem we
+
+950
+00:47:05,420 --> 00:47:09,079
+just plugged in a new hat in place of MU
+
+951
+00:47:07,369 --> 00:47:10,579
+we're going to do the same thing here
+
+952
+00:47:09,079 --> 00:47:12,289
+we're going to analyze it pretending we
+
+953
+00:47:10,579 --> 00:47:14,119
+know everything and then we're going to
+
+954
+00:47:12,289 --> 00:47:17,960
+plug in to figure out how to allocate
+
+955
+00:47:14,119 --> 00:47:20,299
+our simulation budget so again how does
+
+956
+00:47:17,960 --> 00:47:22,550
+a miss classification event happen I can
+
+957
+00:47:20,300 --> 00:47:26,420
+exclude somebody by accident or I can
+
+958
+00:47:22,550 --> 00:47:27,860
+exclude somebody by accident the
+
+959
+00:47:26,420 --> 00:47:29,389
+unlikely event occurs and the most
+
+960
+00:47:27,860 --> 00:47:30,769
+likely of all the unlikely ways so I
+
+961
+00:47:29,389 --> 00:47:35,809
+have to figure out which one is a higher
+
+962
+00:47:30,769 --> 00:47:37,579
+probability of it so in a large
+
+963
+00:47:35,809 --> 00:47:39,289
+deviations framework we're concerned
+
+964
+00:47:37,579 --> 00:47:42,440
+with the tail probabilities of these
+
+965
+00:47:39,289 --> 00:47:45,949
+random variables that my Y hats change
+
+966
+00:47:42,440 --> 00:47:48,320
+places on the mean objective or that my
+
+967
+00:47:45,949 --> 00:47:54,409
+Sigma hats change places on the variance
+
+968
+00:47:48,320 --> 00:47:57,140
+objective and I'll go a little fast so
+
+969
+00:47:54,409 --> 00:48:00,349
+it's the minimum of these two rates is
+
+970
+00:47:57,139 --> 00:48:04,309
+the one we care about we have to analyze
+
+971
+00:48:00,349 --> 00:48:08,900
+them separately and it's going to come
+
+972
+00:48:04,309 --> 00:48:11,480
+down to a pairwise rate so it'll be for
+
+973
+00:48:08,900 --> 00:48:13,910
+exclusion it's the minimum of the
+
+974
+00:48:11,480 --> 00:48:18,070
+pairwise rate that one paredo excludes
+
+975
+00:48:13,909 --> 00:48:22,129
+another I'm going too deeply about each
+
+976
+00:48:18,070 --> 00:48:23,840
+mathematical expression MC I turned out
+
+977
+00:48:22,130 --> 00:48:26,840
+to the the MIS classification by
+
+978
+00:48:23,840 --> 00:48:29,059
+inclusion we had an issue analyzing this
+
+979
+00:48:26,840 --> 00:48:30,410
+because of dependence so we had to
+
+980
+00:48:29,059 --> 00:48:33,139
+reformulate it and do some
+
+981
+00:48:30,409 --> 00:48:35,899
+more math we came up with these things
+
+982
+00:48:33,139 --> 00:48:38,029
+called phantom Pareto parent pairs where
+
+983
+00:48:35,900 --> 00:48:40,789
+we can write an exclusion inclusion of
+
+984
+00:48:38,030 --> 00:48:46,548
+it like an exclusion event and analyze
+
+985
+00:48:40,789 --> 00:48:49,309
+it the same way math math math here's
+
+986
+00:48:46,548 --> 00:48:51,349
+the rate okay so the unlikely event is
+
+987
+00:48:49,309 --> 00:48:54,920
+happening in the most likely of all the
+
+988
+00:48:51,349 --> 00:48:57,349
+unlikely ways this is MC e this is MC I
+
+989
+00:48:54,920 --> 00:48:59,750
+miss classification by inclusion and
+
+990
+00:48:57,349 --> 00:49:02,720
+miss classification by exclusion and so
+
+991
+00:48:59,750 --> 00:49:05,539
+I'm going to look at every pair and I'm
+
+992
+00:49:02,719 --> 00:49:10,639
+gonna say which one is the most likely
+
+993
+00:49:05,539 --> 00:49:12,260
+one to exclude or include and between
+
+994
+00:49:10,639 --> 00:49:16,639
+every pair that is going to determine
+
+995
+00:49:12,260 --> 00:49:19,460
+the entire rate of decay now remember
+
+996
+00:49:16,639 --> 00:49:21,769
+decision variables in this our elephants
+
+997
+00:49:19,460 --> 00:49:23,750
+I can decide what proportion I give to
+
+998
+00:49:21,769 --> 00:49:27,369
+each pair of pair so those are my
+
+999
+00:49:23,750 --> 00:49:31,369
+decision variables so I want to maximize
+
+1000
+00:49:27,369 --> 00:49:33,260
+this rate of decay subject to my authors
+
+1001
+00:49:31,369 --> 00:49:36,858
+have to sum to one I can only get 100%
+
+1002
+00:49:33,260 --> 00:49:38,778
+of sample in total and this is a concave
+
+1003
+00:49:36,858 --> 00:49:41,920
+maximization problem in alpha which we
+
+1004
+00:49:38,778 --> 00:49:46,818
+like which means we can solve it easier
+
+1005
+00:49:41,920 --> 00:49:49,670
+so what if I solve this then it turns
+
+1006
+00:49:46,818 --> 00:49:53,838
+out I have some constraints we use a
+
+1007
+00:49:49,670 --> 00:49:56,358
+solver what's going to happen I have a
+
+1008
+00:49:53,838 --> 00:49:58,699
+hundred parent pairs here an optimal
+
+1009
+00:49:56,358 --> 00:50:00,828
+simulation budget is calculated as a
+
+1010
+00:49:58,699 --> 00:50:02,480
+solution to this problem where my
+
+1011
+00:50:00,829 --> 00:50:04,730
+decision variables are alpha the
+
+1012
+00:50:02,480 --> 00:50:09,949
+proportion to allocate to each parent
+
+1013
+00:50:04,730 --> 00:50:12,230
+hair in my simulation experiments so if
+
+1014
+00:50:09,949 --> 00:50:14,298
+I do this and I make the size of the
+
+1015
+00:50:12,230 --> 00:50:16,309
+circle proportional to the amount of
+
+1016
+00:50:14,298 --> 00:50:18,349
+allocation that each parent parent gets
+
+1017
+00:50:16,309 --> 00:50:22,010
+we're going to shift it toward the
+
+1018
+00:50:18,349 --> 00:50:24,470
+Pareto front so before I was doing equal
+
+1019
+00:50:22,010 --> 00:50:28,430
+allocation so this guy gets as much
+
+1020
+00:50:24,469 --> 00:50:32,088
+sample as this guy no that's not smart
+
+1021
+00:50:28,429 --> 00:50:35,298
+instead who's going to potentially be
+
+1022
+00:50:32,088 --> 00:50:37,730
+misclassified well these guys are the
+
+1023
+00:50:35,298 --> 00:50:39,230
+ones I care about being misclassified so
+
+1024
+00:50:37,730 --> 00:50:41,599
+anybody that's really close to the
+
+1025
+00:50:39,230 --> 00:50:43,699
+Pareto front needs to get more because I
+
+1026
+00:50:41,599 --> 00:50:44,470
+have to decide are they in or are they
+
+1027
+00:50:43,699 --> 00:50:48,500
+out
+
+1028
+00:50:44,469 --> 00:50:51,079
+relative to their whoever's nearby this
+
+1029
+00:50:48,500 --> 00:50:54,590
+guy is bad and I know it so I don't need
+
+1030
+00:50:51,079 --> 00:50:56,900
+to sample very much so essentially what
+
+1031
+00:50:54,590 --> 00:50:59,539
+I'm doing is I have all these pairwise
+
+1032
+00:50:56,900 --> 00:51:01,010
+rates of decay of these probabilities in
+
+1033
+00:50:59,539 --> 00:51:03,739
+this classification that can happen and
+
+1034
+00:51:01,010 --> 00:51:05,930
+the Alpha is going to equate the rates
+
+1035
+00:51:03,739 --> 00:51:09,289
+the optimal alpha will make sure they go
+
+1036
+00:51:05,929 --> 00:51:13,669
+down all at the same rate will give me
+
+1037
+00:51:09,289 --> 00:51:17,960
+an allocation that looks like this and
+
+1038
+00:51:13,670 --> 00:51:22,659
+so a few more examples of shifting the
+
+1039
+00:51:17,960 --> 00:51:25,730
+sample up toward the Pareto front so
+
+1040
+00:51:22,659 --> 00:51:27,440
+again we don't know Mew and Sigma right
+
+1041
+00:51:25,730 --> 00:51:28,820
+and we need them inside the rate
+
+1042
+00:51:27,440 --> 00:51:31,250
+function it turns out that the rate
+
+1043
+00:51:28,820 --> 00:51:33,019
+function knowing that is equivalent to
+
+1044
+00:51:31,250 --> 00:51:35,449
+knowing the entire distribution the mean
+
+1045
+00:51:33,019 --> 00:51:38,059
+the variance everything so if we don't
+
+1046
+00:51:35,449 --> 00:51:40,189
+know that what will we do well to
+
+1047
+00:51:38,059 --> 00:51:42,380
+implement this we'll take some initial
+
+1048
+00:51:40,190 --> 00:51:44,090
+amount from everyone the reason we have
+
+1049
+00:51:42,380 --> 00:51:45,530
+to do that is because we don't have the
+
+1050
+00:51:44,090 --> 00:51:47,120
+neighborhood structure we have not
+
+1051
+00:51:45,530 --> 00:51:51,670
+assumed that so we have to get some
+
+1052
+00:51:47,119 --> 00:51:54,259
+estimator of how everyone is doing then
+
+1053
+00:51:51,670 --> 00:51:56,450
+we update the sample means and sample
+
+1054
+00:51:54,260 --> 00:51:59,180
+variances we update the estimated pareto
+
+1055
+00:51:56,449 --> 00:52:01,129
+set and we solve an estimated version of
+
+1056
+00:51:59,179 --> 00:52:03,309
+the optimal allocation problem to get
+
+1057
+00:52:01,130 --> 00:52:06,800
+that simulation allocation for each
+
+1058
+00:52:03,309 --> 00:52:08,750
+parent pair we use that as a sampling
+
+1059
+00:52:06,800 --> 00:52:11,840
+distribution from which we take the next
+
+1060
+00:52:08,750 --> 00:52:13,760
+delta progeny and we keep doing this so
+
+1061
+00:52:11,840 --> 00:52:20,210
+we keep updating our optimal allocation
+
+1062
+00:52:13,760 --> 00:52:22,040
+as we go this way so for this allocation
+
+1063
+00:52:20,210 --> 00:52:23,599
+it turns out that we do better than our
+
+1064
+00:52:22,039 --> 00:52:26,090
+competitors there's only one competitor
+
+1065
+00:52:23,599 --> 00:52:26,929
+in this area it assumes all normal
+
+1066
+00:52:26,090 --> 00:52:28,940
+distributions
+
+1067
+00:52:26,929 --> 00:52:30,230
+I think the just the difference that we
+
+1068
+00:52:28,940 --> 00:52:31,610
+have from our competitors that we're
+
+1069
+00:52:30,230 --> 00:52:34,130
+actually able to deal with the
+
+1070
+00:52:31,610 --> 00:52:35,870
+chi-squared directly we didn't go into
+
+1071
+00:52:34,130 --> 00:52:37,760
+detail on what's different about that
+
+1072
+00:52:35,869 --> 00:52:40,549
+but the rate function was different and
+
+1073
+00:52:37,760 --> 00:52:44,750
+it turns out that it allows us to do a
+
+1074
+00:52:40,550 --> 00:52:47,000
+little better and so we have some miss
+
+1075
+00:52:44,750 --> 00:52:48,920
+classification probabilities that as my
+
+1076
+00:52:47,000 --> 00:52:51,920
+simulation budget is going to infinity
+
+1077
+00:52:48,920 --> 00:52:54,740
+our our allocation is doing much better
+
+1078
+00:52:51,920 --> 00:52:56,269
+at controlling misclassifications it so
+
+1079
+00:52:54,739 --> 00:52:58,098
+imagine that you just give equal
+
+1080
+00:52:56,269 --> 00:53:00,829
+allocation instead of
+
+1081
+00:52:58,099 --> 00:53:03,048
+doing something intelligent well your
+
+1082
+00:53:00,829 --> 00:53:05,809
+miss classification after a simulation
+
+1083
+00:53:03,048 --> 00:53:07,909
+budget of 10,000 is going to be all the
+
+1084
+00:53:05,809 --> 00:53:10,660
+way up here around two and a half
+
+1085
+00:53:07,909 --> 00:53:14,058
+percent of your systems misclassified
+
+1086
+00:53:10,659 --> 00:53:16,368
+but for the same simulation budget you
+
+1087
+00:53:14,059 --> 00:53:21,048
+could have a rate of miss classification
+
+1088
+00:53:16,369 --> 00:53:23,539
+around 1% so you can actually do much
+
+1089
+00:53:21,048 --> 00:53:28,369
+better by pulling down these
+
+1090
+00:53:23,539 --> 00:53:32,509
+probabilities okay and so this slide is
+
+1091
+00:53:28,369 --> 00:53:35,150
+for the Ori people who don't know how
+
+1092
+00:53:32,509 --> 00:53:36,739
+plant breeding works so this is
+
+1093
+00:53:35,150 --> 00:53:39,680
+essentially saying what will you do in
+
+1094
+00:53:36,739 --> 00:53:41,599
+your life you want to breed the largest
+
+1095
+00:53:39,679 --> 00:53:43,669
+plant you'll consult with a company like
+
+1096
+00:53:41,599 --> 00:53:48,109
+Nature sorts genetics you'll build a
+
+1097
+00:53:43,670 --> 00:53:50,389
+simulation model you'll allocate and
+
+1098
+00:53:48,108 --> 00:53:51,889
+intelligently at the end of the
+
+1099
+00:53:50,389 --> 00:53:53,719
+algorithm you'll estimate the pareto
+
+1100
+00:53:51,889 --> 00:53:56,179
+scent they'll estimate the mean and
+
+1101
+00:53:53,719 --> 00:53:58,818
+variance values you'll decide your
+
+1102
+00:53:56,179 --> 00:54:00,368
+budget you can solve the integer program
+
+1103
+00:53:58,818 --> 00:54:03,429
+for the master breeding problem off
+
+1104
+00:54:00,369 --> 00:54:05,450
+offline with regards to the simulation
+
+1105
+00:54:03,429 --> 00:54:08,239
+because you've already done all of your
+
+1106
+00:54:05,449 --> 00:54:10,909
+simulating in advance and then you
+
+1107
+00:54:08,239 --> 00:54:13,759
+adjust and you breed in real life and
+
+1108
+00:54:10,909 --> 00:54:19,548
+then you breathe the largest king grass
+
+1109
+00:54:13,759 --> 00:54:21,528
+plant I have some one more slide with
+
+1110
+00:54:19,548 --> 00:54:22,608
+questions you can ask me questions but
+
+1111
+00:54:21,528 --> 00:54:25,608
+these are the questions that I have for
+
+1112
+00:54:22,608 --> 00:54:27,650
+you they're sort of turn the question
+
+1113
+00:54:25,608 --> 00:54:31,248
+section on its head before we have to
+
+1114
+00:54:27,650 --> 00:54:33,019
+leave so the questions I had relate to
+
+1115
+00:54:31,248 --> 00:54:35,808
+what kind of simulation models do you
+
+1116
+00:54:33,018 --> 00:54:38,659
+have and what do you use
+
+1117
+00:54:35,809 --> 00:54:40,940
+so there are plant level models like
+
+1118
+00:54:38,659 --> 00:54:42,858
+this but there are also potentially
+
+1119
+00:54:40,940 --> 00:54:46,369
+system-wide models climate that
+
+1120
+00:54:42,858 --> 00:54:50,630
+incorporate climate these models can be
+
+1121
+00:54:46,369 --> 00:54:52,759
+any level of abstraction so you may have
+
+1122
+00:54:50,630 --> 00:54:54,858
+things other than individual plant level
+
+1123
+00:54:52,759 --> 00:54:58,309
+simulations you can also think of
+
+1124
+00:54:54,858 --> 00:55:01,190
+simulators in general so a big data set
+
+1125
+00:54:58,309 --> 00:55:03,528
+can be a simulator so if you can't load
+
+1126
+00:55:01,190 --> 00:55:05,599
+the entire data set in your memory well
+
+1127
+00:55:03,528 --> 00:55:08,059
+when you're trying to estimate some
+
+1128
+00:55:05,599 --> 00:55:09,630
+parameters it turns out that we have
+
+1129
+00:55:08,059 --> 00:55:11,460
+adaptive
+
+1130
+00:55:09,630 --> 00:55:15,030
+adopted stochastic gradient descent
+
+1131
+00:55:11,460 --> 00:55:17,369
+methods now that will allow you to load
+
+1132
+00:55:15,030 --> 00:55:20,040
+only a part of the data set to determine
+
+1133
+00:55:17,369 --> 00:55:22,589
+if the current value of your parameters
+
+1134
+00:55:20,039 --> 00:55:24,989
+is good or bad or get a derivative and
+
+1135
+00:55:22,590 --> 00:55:29,430
+move to another point without having to
+
+1136
+00:55:24,989 --> 00:55:31,799
+load the entire data set so simulation
+
+1137
+00:55:29,429 --> 00:55:35,069
+Oracle it can be interpreted more
+
+1138
+00:55:31,800 --> 00:55:36,510
+broadly than than a black box so to
+
+1139
+00:55:35,070 --> 00:55:38,250
+speak
+
+1140
+00:55:36,510 --> 00:55:39,420
+what are your decision variables what
+
+1141
+00:55:38,250 --> 00:55:41,670
+values can they take is there a
+
+1142
+00:55:39,420 --> 00:55:44,400
+neighborhood structure what are the
+
+1143
+00:55:41,670 --> 00:55:47,760
+objective functions how long can you
+
+1144
+00:55:44,400 --> 00:55:49,889
+take to make a decision many times in my
+
+1145
+00:55:47,760 --> 00:55:53,340
+field we worry if it takes the algorithm
+
+1146
+00:55:49,889 --> 00:55:55,679
+longer than a minute to run so if you
+
+1147
+00:55:53,340 --> 00:55:59,490
+have 30 days this is incredible right we
+
+1148
+00:55:55,679 --> 00:56:01,500
+can really do something but I it's my
+
+1149
+00:55:59,489 --> 00:56:04,199
+sense that you'll run it for 30 days but
+
+1150
+00:56:01,500 --> 00:56:06,750
+it better be right you don't want to run
+
+1151
+00:56:04,199 --> 00:56:08,789
+it for 30 days and it's still wrong and
+
+1152
+00:56:06,750 --> 00:56:10,320
+what kind of computing resources will
+
+1153
+00:56:08,789 --> 00:56:12,710
+the user have access to will they be
+
+1154
+00:56:10,320 --> 00:56:15,690
+running on a laptop on a supercomputer
+
+1155
+00:56:12,710 --> 00:56:17,159
+things like that so as I've talked to
+
+1156
+00:56:15,690 --> 00:56:20,159
+people I've gotten some sense of the
+
+1157
+00:56:17,159 --> 00:56:24,569
+answers to these questions but these are
+
+1158
+00:56:20,159 --> 00:56:25,920
+these are the big ones and we have maybe
+
+1159
+00:56:24,570 --> 00:56:28,010
+a little bit of time for questions for
+
+1160
+00:56:25,920 --> 00:56:28,010
+me
+
+1161
+00:56:29,139 --> 00:56:35,940
+[Applause]
+
+1162
+00:56:39,679 --> 00:57:16,279
+to invest it for you or so we're
+
+1163
+00:56:53,159 --> 00:57:20,909
+maximizing both yeah yeah oh yeah these
+
+1164
+00:57:16,280 --> 00:57:23,060
+okay so the idea I'm not trying to
+
+1165
+00:57:20,909 --> 00:57:27,210
+extend your question but the idea is
+
+1166
+00:57:23,059 --> 00:57:29,000
+it's it's harder to tell who's on the
+
+1167
+00:57:27,210 --> 00:57:33,420
+Pareto front when you're close to it
+
+1168
+00:57:29,000 --> 00:57:37,559
+right if I'm over here it's pretty easy
+
+1169
+00:57:33,420 --> 00:57:40,579
+to tell that I'm bad so I want to
+
+1170
+00:57:37,559 --> 00:57:56,820
+allocate more of my simulation budget in
+
+1171
+00:57:40,579 --> 00:58:00,269
+the area where it might be good exactly
+
+1172
+00:57:56,820 --> 00:58:01,980
+so if you have two current pairs that
+
+1173
+00:58:00,269 --> 00:58:03,869
+are producing children with means and
+
+1174
+00:58:01,980 --> 00:58:06,179
+variances that are right very close to
+
+1175
+00:58:03,869 --> 00:58:08,309
+each other and you really want to get
+
+1176
+00:58:06,179 --> 00:58:10,079
+the best one you're going to have to
+
+1177
+00:58:08,309 --> 00:58:13,920
+spend a lot of sample to figure out
+
+1178
+00:58:10,079 --> 00:58:26,000
+which one is the best one as opposed to
+
+1179
+00:58:13,920 --> 00:58:26,000
+ones that are already exactly
+
+1180
+00:58:35,159 --> 00:58:38,480
+[Music]
+
+1181
+00:58:40,710 --> 00:58:43,800
+[Music]
+
+1182
+00:58:53,619 --> 00:58:56,670
+[Music]
+
+1183
+00:59:14,170 --> 00:59:20,090
+[Music]
+
+1184
+00:59:26,869 --> 00:59:35,250
+so that I think the concise answer is no
+
+1185
+00:59:32,119 --> 00:59:38,369
+but I I view that as sort of a human in
+
+1186
+00:59:35,250 --> 00:59:40,710
+the loop where you would have some
+
+1187
+00:59:38,369 --> 00:59:44,099
+knowledge that somebody corrupted this
+
+1188
+00:59:40,710 --> 00:59:47,130
+data and now I have to fix it everything
+
+1189
+00:59:44,099 --> 00:59:49,588
+that I've done so far assumes that the
+
+1190
+00:59:47,130 --> 00:59:53,690
+model is correct the data was collected
+
+1191
+00:59:49,588 --> 00:59:56,489
+correctly it's hard for an algorithm I
+
+1192
+00:59:53,690 --> 00:59:57,510
+think because what's really going on
+
+1193
+00:59:56,489 --> 00:59:59,729
+here
+
+1194
+00:59:57,510 --> 01:00:00,960
+this is coming out of the simulator so
+
+1195
+00:59:59,730 --> 01:00:02,940
+you would have already collected your
+
+1196
+01:00:00,960 --> 01:00:05,250
+data and you would have already
+
+1197
+01:00:02,940 --> 01:00:08,099
+hopefully cleaned it and built and as
+
+1198
+01:00:05,250 --> 01:00:10,380
+correct simulator as you could get and
+
+1199
+01:00:08,099 --> 01:00:13,289
+so we're assuming that what's coming out
+
+1200
+01:00:10,380 --> 01:00:14,670
+of the simulator is at some level if we
+
+1201
+01:00:13,289 --> 01:00:19,559
+keep sampling forever will converge to
+
+1202
+01:00:14,670 --> 01:00:50,099
+the trees so even though that may not be
+
+1203
+01:00:19,559 --> 01:00:51,690
+accurate there is so it's only just now
+
+1204
+01:00:50,099 --> 01:00:54,900
+being developed in the multi objective
+
+1205
+01:00:51,690 --> 01:00:57,840
+context in the single objective context
+
+1206
+01:00:54,900 --> 01:00:59,670
+for this same problem if we just had one
+
+1207
+01:00:57,840 --> 01:01:03,210
+there's something called an indifferent
+
+1208
+01:00:59,670 --> 01:01:05,250
+zone and the indifferent zone is backing
+
+1209
+01:01:03,210 --> 01:01:07,470
+up from the best by a certain amount and
+
+1210
+01:01:05,250 --> 01:01:12,090
+saying if these two systems are within
+
+1211
+01:01:07,469 --> 01:01:14,669
+or ferret pairs are within Delta I don't
+
+1212
+01:01:12,090 --> 01:01:17,550
+care don't worry about detecting that
+
+1213
+01:01:14,670 --> 01:01:19,860
+difference so there is some work in the
+
+1214
+01:01:17,550 --> 01:01:22,769
+multi objective context it's a little
+
+1215
+01:01:19,860 --> 01:01:24,630
+more complicated to specify when you're
+
+1216
+01:01:22,769 --> 01:01:26,670
+in potentially high dimensions what that
+
+1217
+01:01:24,630 --> 01:01:29,340
+Delta would be here you could imagine it
+
+1218
+01:01:26,670 --> 01:01:31,559
+might be a box there is some work on how
+
+1219
+01:01:29,340 --> 01:01:33,030
+to allocate so that you don't spend all
+
+1220
+01:01:31,559 --> 01:01:35,099
+your budget trying to decide between
+
+1221
+01:01:33,030 --> 01:01:40,440
+these two guys yeah so that is
+
+1222
+01:01:35,099 --> 01:01:42,269
+definitely an issue but the key word
+
+1223
+01:01:40,440 --> 01:01:43,590
+there is in different zone if you walk
+
+1224
+01:01:42,269 --> 01:01:45,150
+around in my community and you talk
+
+1225
+01:01:43,590 --> 01:01:57,960
+about in different zone everybody will
+
+1226
+01:01:45,150 --> 01:02:00,510
+know what you're talking about so these
+
+1227
+01:01:57,960 --> 01:02:02,010
+are different problems because I may not
+
+1228
+01:02:00,510 --> 01:02:05,160
+know how many are in the indifference
+
+1229
+01:02:02,010 --> 01:02:07,320
+zone right so if I if I'm maximizing and
+
+1230
+01:02:05,159 --> 01:02:10,019
+I backup from the maximum there could be
+
+1231
+01:02:07,320 --> 01:02:15,080
+a hundred in there verse is saying I
+
+1232
+01:02:10,019 --> 01:02:17,969
+want the top M designs is what we call
+
+1233
+01:02:15,079 --> 01:02:19,799
+ya and there is in one objective there's
+
+1234
+01:02:17,969 --> 01:02:22,799
+also a lot of literature on getting the
+
+1235
+01:02:19,800 --> 01:02:26,940
+top we call it top-down in multi
+
+1236
+01:02:22,800 --> 01:02:55,320
+objective it's brand new so we don't
+
+1237
+01:02:26,940 --> 01:02:58,409
+have those methods we could do that that
+
+1238
+01:02:55,320 --> 01:03:01,230
+is one way to go I think one of the
+
+1239
+01:02:58,409 --> 01:03:03,750
+reasons then did not favor that so the
+
+1240
+01:03:01,230 --> 01:03:08,960
+question is we have this optimization
+
+1241
+01:03:03,750 --> 01:03:11,239
+problem this one
+
+1242
+01:03:08,960 --> 01:03:14,000
+not just sample to solve this directly
+
+1243
+01:03:11,239 --> 01:03:16,969
+and we could the thing that will come
+
+1244
+01:03:14,000 --> 01:03:20,179
+out of this if you do that is you will
+
+1245
+01:03:16,969 --> 01:03:22,519
+get the optimal breeding budget and not
+
+1246
+01:03:20,179 --> 01:03:23,929
+really any other information you'll get
+
+1247
+01:03:22,519 --> 01:03:26,269
+the optimal breeding budget you'll get
+
+1248
+01:03:23,929 --> 01:03:29,210
+the value an estimator for the value of
+
+1249
+01:03:26,269 --> 01:03:31,849
+the objective function as well but in
+
+1250
+01:03:29,210 --> 01:03:33,769
+terms of getting a subset of parent
+
+1251
+01:03:31,849 --> 01:03:36,200
+parents that might be competitive you
+
+1252
+01:03:33,769 --> 01:03:38,269
+won't get that you won't get estimators
+
+1253
+01:03:36,199 --> 01:03:40,608
+for the mean and variance values of
+
+1254
+01:03:38,269 --> 01:03:42,739
+those parent pairs and if someone
+
+1255
+01:03:40,608 --> 01:03:47,019
+changes the breeding budget you'll have
+
+1256
+01:03:42,739 --> 01:03:49,459
+to redo all the simulation so you and
+
+1257
+01:03:47,019 --> 01:03:52,489
+because I enjoy integer ordered problems
+
+1258
+01:03:49,460 --> 01:03:55,760
+this would be fun but I think in terms
+
+1259
+01:03:52,489 --> 01:03:57,500
+of the specific context that Ben was
+
+1260
+01:03:55,760 --> 01:04:02,380
+looking at doing it this way turned out
+
+1261
+01:03:57,500 --> 01:04:02,380
+to work better yeah but good question
+
+1262
+01:04:13,449 --> 01:04:22,819
+oh I think I see so we actually can
+
+1263
+01:04:20,239 --> 01:04:25,069
+prove that if we estimate this set
+
+1264
+01:04:22,820 --> 01:04:26,720
+correctly that none of the breeding
+
+1265
+01:04:25,070 --> 01:04:31,070
+budget will go to anybody that is
+
+1266
+01:04:26,719 --> 01:04:33,108
+outside the pareto set yeah so that was
+
+1267
+01:04:31,070 --> 01:04:40,640
+a condition of reducing the feasible set
+
+1268
+01:04:33,108 --> 01:04:42,679
+to this this value yeah but again you so
+
+1269
+01:04:40,639 --> 01:04:44,799
+this all assumes your model is correct
+
+1270
+01:04:42,679 --> 01:04:47,179
+and that is doing what you want it to do
+
+1271
+01:04:44,800 --> 01:04:50,440
+because whatever's in this Pareto said
+
+1272
+01:04:47,179 --> 01:04:50,440
+is going to depend on your model
+
+1273
+01:05:00,260 --> 01:05:07,130
+[Applause]
+
+1274
+01:05:04,088 --> 01:05:12,909
+this has been a production of Cornell
+
+1275
+01:05:07,130 --> 01:05:12,910
+University on the web at Cornell edu
+

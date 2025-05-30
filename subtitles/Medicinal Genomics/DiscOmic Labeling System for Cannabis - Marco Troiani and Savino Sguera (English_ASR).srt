@@ -1,0 +1,2080 @@
+1
+00:00:05,240 --> 00:00:10,320
+all right hello hello everyone welcome
+
+2
+00:00:08,429 --> 00:00:12,179
+so just a quick warning this was
+
+3
+00:00:10,320 --> 00:00:13,440
+originally tend to be a little longer so
+
+4
+00:00:12,179 --> 00:00:14,160
+we had to cut it down our strategies
+
+5
+00:00:13,439 --> 00:00:16,108
+we're going to move through it very
+
+6
+00:00:14,160 --> 00:00:17,640
+quickly and any parts we skipped over
+
+7
+00:00:16,109 --> 00:00:18,060
+too quickly please ask us questions at
+
+8
+00:00:17,640 --> 00:00:20,490
+the end
+
+9
+00:00:18,059 --> 00:00:22,259
+god-willing all right so let's start
+
+10
+00:00:20,489 --> 00:00:24,059
+this is me this is what I've been up to
+
+11
+00:00:22,260 --> 00:00:26,070
+this is my partner Savino here this is
+
+12
+00:00:24,059 --> 00:00:27,750
+what he's been up to and this is the
+
+13
+00:00:26,070 --> 00:00:30,570
+main idea we're gonna go over there are
+
+14
+00:00:27,750 --> 00:00:32,640
+958 unique flower samples of cannabis
+
+15
+00:00:30,570 --> 00:00:35,189
+that we analyzed 420 terpenes with
+
+16
+00:00:32,640 --> 00:00:37,409
+chemical analysis GCMs the main idea is
+
+17
+00:00:35,189 --> 00:00:39,238
+we took these 20 variables times about a
+
+18
+00:00:37,409 --> 00:00:40,949
+thousand strains use computer-assisted
+
+19
+00:00:39,238 --> 00:00:44,339
+algorithms to reduce it down to six
+
+20
+00:00:40,950 --> 00:00:45,960
+variables from there we use those six
+
+21
+00:00:44,340 --> 00:00:47,579
+variables for two things one we mapped
+
+22
+00:00:45,960 --> 00:00:49,079
+it to possible enzyme pathways that
+
+23
+00:00:47,579 --> 00:00:51,600
+explain the theory of biosynthesis of
+
+24
+00:00:49,079 --> 00:00:53,160
+terpenes and cannabis 2 we use them to
+
+25
+00:00:51,600 --> 00:00:54,649
+create the discounted labeling system of
+
+26
+00:00:53,159 --> 00:00:57,299
+which this presentation is named after
+
+27
+00:00:54,649 --> 00:01:00,030
+and additionally hope for the future is
+
+28
+00:00:57,299 --> 00:01:01,198
+that this reduced six variable group
+
+29
+00:01:00,030 --> 00:01:02,879
+that can describe the terpene profile
+
+30
+00:01:01,198 --> 00:01:04,558
+can assist medical doctors in
+
+31
+00:01:02,878 --> 00:01:06,718
+recommending or maybe even one day
+
+32
+00:01:04,558 --> 00:01:08,819
+prescribing cannabis strains to patients
+
+33
+00:01:06,718 --> 00:01:10,318
+based on their disorder so why are we
+
+34
+00:01:08,819 --> 00:01:12,719
+focusing on terpenes just a real quick
+
+35
+00:01:10,319 --> 00:01:14,159
+overview we've got some data up on the
+
+36
+00:01:12,718 --> 00:01:16,108
+on the wall here and this is cannabinoid
+
+37
+00:01:14,159 --> 00:01:17,700
+profile so each little box or the four
+
+38
+00:01:16,108 --> 00:01:19,318
+box is a different strain and you see
+
+39
+00:01:17,700 --> 00:01:22,020
+replicate analysis from different cuts
+
+40
+00:01:19,319 --> 00:01:23,009
+of that strain CBD shows up in blue
+
+41
+00:01:22,019 --> 00:01:25,348
+other than that all you're really gonna
+
+42
+00:01:23,009 --> 00:01:27,509
+see is THC green we look at the next
+
+43
+00:01:25,349 --> 00:01:29,009
+four we see pink that's CBG the
+
+44
+00:01:27,509 --> 00:01:30,328
+precursor that blood was plucked early
+
+45
+00:01:29,009 --> 00:01:33,239
+but otherwise same story we're just
+
+46
+00:01:30,328 --> 00:01:34,708
+seeing THC last three same thing THC
+
+47
+00:01:33,239 --> 00:01:36,478
+when we look at the global average in
+
+48
+00:01:34,709 --> 00:01:38,459
+our 958 sample dataset
+
+49
+00:01:36,478 --> 00:01:40,078
+18 percent THC but even though some
+
+50
+00:01:38,459 --> 00:01:43,200
+strains are like half CBD the average
+
+51
+00:01:40,078 --> 00:01:45,328
+comes to less than one percent so let's
+
+52
+00:01:43,200 --> 00:01:47,159
+focus on terpenes instead we see instead
+
+53
+00:01:45,328 --> 00:01:48,238
+with terpenes huge diversity not only do
+
+54
+00:01:47,159 --> 00:01:49,409
+the strains agree with each other
+
+55
+00:01:48,239 --> 00:01:51,060
+meaning when you test the same string
+
+56
+00:01:49,409 --> 00:01:52,499
+twice you get the same probe or a very
+
+57
+00:01:51,060 --> 00:01:54,329
+similar profile
+
+58
+00:01:52,498 --> 00:01:55,379
+you also see diversity from one
+
+59
+00:01:54,328 --> 00:01:56,848
+straining to another it's very hard to
+
+60
+00:01:55,379 --> 00:01:58,429
+confuse these profiles with each other
+
+61
+00:01:56,849 --> 00:02:00,779
+you can see the replica tests show
+
+62
+00:01:58,429 --> 00:02:02,308
+distinct replicate profiles this one up
+
+63
+00:02:00,778 --> 00:02:03,539
+here juicyfruitz a great example of how
+
+64
+00:02:02,308 --> 00:02:05,658
+when you test the same strain you're
+
+65
+00:02:03,539 --> 00:02:08,280
+gonna get very similar profile ratios
+
+66
+00:02:05,659 --> 00:02:09,719
+honestly this goes on forever and also
+
+67
+00:02:08,280 --> 00:02:11,759
+what this opens the door for is
+
+68
+00:02:09,719 --> 00:02:12,930
+fingerprinting terpene profiles are
+
+69
+00:02:11,759 --> 00:02:14,908
+really unique between strains there's a
+
+70
+00:02:12,930 --> 00:02:16,079
+lot of strain fraud in dispensaries Blue
+
+71
+00:02:14,908 --> 00:02:16,799
+Dreams selling great I'll grow whatever
+
+72
+00:02:16,079 --> 00:02:17,939
+I have and
+
+73
+00:02:16,800 --> 00:02:20,040
+call it blue dream and how's the
+
+74
+00:02:17,939 --> 00:02:21,689
+budtender gonna know with a terpene
+
+75
+00:02:20,039 --> 00:02:23,370
+based system you can see a match and
+
+76
+00:02:21,689 --> 00:02:24,870
+based on actual chemical science and say
+
+77
+00:02:23,370 --> 00:02:27,750
+this was actually you know the same
+
+78
+00:02:24,870 --> 00:02:29,640
+string so the methodologies got three
+
+79
+00:02:27,750 --> 00:02:30,900
+phases phase one is chemistry chemical
+
+80
+00:02:29,639 --> 00:02:33,089
+analysis how do we know what terpenes
+
+81
+00:02:30,900 --> 00:02:35,400
+are in what phase two is computer
+
+82
+00:02:33,090 --> 00:02:36,930
+assisted algorithms and data analytics
+
+83
+00:02:35,400 --> 00:02:39,569
+and phase three is putting it all
+
+84
+00:02:36,930 --> 00:02:42,750
+together making the enzyme pathways work
+
+85
+00:02:39,569 --> 00:02:44,009
+so phase one our stage 1 of methodology
+
+86
+00:02:42,750 --> 00:02:45,240
+is just chemical analysis so for those
+
+87
+00:02:44,009 --> 00:02:47,909
+of you familiar with chemical analysis
+
+88
+00:02:45,240 --> 00:02:50,520
+it's a chromatography GCMs headspace
+
+89
+00:02:47,909 --> 00:02:51,840
+sampler so it's a gas phase sampler and
+
+90
+00:02:50,520 --> 00:02:53,340
+we're just basically evaporating the
+
+91
+00:02:51,840 --> 00:02:54,930
+terpenes off the cannabis sample and
+
+92
+00:02:53,340 --> 00:02:56,969
+separating them and quantifying them
+
+93
+00:02:54,930 --> 00:02:58,920
+with the mass spec we had to really
+
+94
+00:02:56,969 --> 00:03:01,109
+reduce the data because there's a lot of
+
+95
+00:02:58,919 --> 00:03:02,219
+not so defensible data out there in the
+
+96
+00:03:01,110 --> 00:03:03,570
+cannabis market and that would have
+
+97
+00:03:02,219 --> 00:03:05,069
+thrown off our phase 2 or
+
+98
+00:03:03,569 --> 00:03:07,289
+computer-assisted algorithms so we had
+
+99
+00:03:05,069 --> 00:03:09,840
+to really limit it to just a couple labs
+
+100
+00:03:07,289 --> 00:03:11,519
+that we had to audit very closely total
+
+101
+00:03:09,840 --> 00:03:12,629
+data set was 958 at the bottom of the
+
+102
+00:03:11,520 --> 00:03:13,950
+screen here if you're familiar with
+
+103
+00:03:12,629 --> 00:03:16,229
+terpenes and cannabis i'm sure you're
+
+104
+00:03:13,949 --> 00:03:18,599
+familiar with all of these 20 at the
+
+105
+00:03:16,229 --> 00:03:20,699
+bottom and so a little bit about our
+
+106
+00:03:18,599 --> 00:03:24,569
+methodology here we have four techniques
+
+107
+00:03:20,699 --> 00:03:26,969
+LC u VL CMS LC liquid and GC liquid
+
+108
+00:03:24,569 --> 00:03:28,560
+injection and GC headspace they all have
+
+109
+00:03:26,969 --> 00:03:29,969
+advantages and disadvantages we chose
+
+110
+00:03:28,560 --> 00:03:31,979
+the one all the way at the end the GC
+
+111
+00:03:29,969 --> 00:03:33,539
+headspace main reasons being it's a very
+
+112
+00:03:31,979 --> 00:03:36,929
+clean loading with low interference you
+
+113
+00:03:33,539 --> 00:03:37,859
+get good accurate data GC a mass liquid
+
+114
+00:03:36,930 --> 00:03:39,750
+injection which I know some other
+
+115
+00:03:37,860 --> 00:03:41,459
+researchers are very fond of has some
+
+116
+00:03:39,750 --> 00:03:43,199
+maintenance and I only breakdown issues
+
+117
+00:03:41,459 --> 00:03:45,659
+but otherwise it's very comparable the
+
+118
+00:03:43,199 --> 00:03:46,979
+LC I would honestly stay away from and
+
+119
+00:03:45,659 --> 00:03:48,030
+this is what a chromatogram looks like
+
+120
+00:03:46,979 --> 00:03:49,769
+for those of you familiar with chemical
+
+121
+00:03:48,030 --> 00:03:51,509
+analysis we can see the numbers here 1
+
+122
+00:03:49,770 --> 00:03:53,189
+through 36 are the different turbines
+
+123
+00:03:51,509 --> 00:03:55,709
+that were isolated from a cannabis
+
+124
+00:03:53,189 --> 00:03:58,859
+sample and I'll pass it to my partner
+
+125
+00:03:55,709 --> 00:04:00,719
+for stage 2 so there's been an
+
+126
+00:03:58,860 --> 00:04:02,489
+exponential increase in the the amount
+
+127
+00:04:00,719 --> 00:04:04,169
+of data associated with cannabis
+
+128
+00:04:02,489 --> 00:04:06,509
+chemical profiles and genetic profiles
+
+129
+00:04:04,169 --> 00:04:07,889
+and as such a lot of traditional as
+
+130
+00:04:06,509 --> 00:04:09,689
+we've seen today a lot of traditional
+
+131
+00:04:07,889 --> 00:04:12,179
+chemometric and metabolomic methods have
+
+132
+00:04:09,689 --> 00:04:15,030
+been applied including PC Ald a linear
+
+133
+00:04:12,180 --> 00:04:16,650
+regression and these are great and what
+
+134
+00:04:15,030 --> 00:04:18,779
+we want to do is take these and put them
+
+135
+00:04:16,649 --> 00:04:20,310
+into a form that could be better
+
+136
+00:04:18,779 --> 00:04:22,458
+understood and absorbed by the general
+
+137
+00:04:20,310 --> 00:04:22,459
+public
+
+138
+00:04:26,740 --> 00:04:31,150
+so some previous studies have found that
+
+139
+00:04:28,620 --> 00:04:33,340
+strain named there's no significant
+
+140
+00:04:31,149 --> 00:04:34,839
+terpene profile clustering around stream
+
+141
+00:04:33,339 --> 00:04:37,388
+name so strain aim is not a very good
+
+142
+00:04:34,839 --> 00:04:41,709
+predictor of what the final terpene
+
+143
+00:04:37,389 --> 00:04:44,439
+profile is going to be and as well last
+
+144
+00:04:41,709 --> 00:04:46,120
+year we found that the strains can be
+
+145
+00:04:44,439 --> 00:04:48,370
+subdivided into overlapping groups as
+
+146
+00:04:46,120 --> 00:04:50,680
+we've also seen here based on dominant
+
+147
+00:04:48,370 --> 00:04:52,060
+terpenes but we what we wanted to do is
+
+148
+00:04:50,680 --> 00:04:53,709
+instead of basing it on the dominant
+
+149
+00:04:52,060 --> 00:04:55,418
+terpene we base it on the ratio of some
+
+150
+00:04:53,709 --> 00:04:58,089
+of the dots several dominant terpenes to
+
+151
+00:04:55,418 --> 00:04:59,589
+each other so we started with
+
+152
+00:04:58,089 --> 00:05:00,939
+self-organizing maps which used
+
+153
+00:04:59,589 --> 00:05:03,039
+basically a bunch of iterations of
+
+154
+00:05:00,939 --> 00:05:04,509
+principal component analysis to group
+
+155
+00:05:03,040 --> 00:05:07,479
+the samples into a higher dimensional
+
+156
+00:05:04,509 --> 00:05:09,219
+space use this to see which ones are
+
+157
+00:05:07,478 --> 00:05:11,109
+appear to be related to each other and
+
+158
+00:05:09,220 --> 00:05:14,280
+test it out with some k-means clustering
+
+159
+00:05:11,110 --> 00:05:16,780
+use that to translate into our label and
+
+160
+00:05:14,279 --> 00:05:17,949
+just give you a quick overview this is a
+
+161
+00:05:16,779 --> 00:05:21,009
+self-organizing map
+
+162
+00:05:17,949 --> 00:05:22,449
+red indicates high concentration that
+
+163
+00:05:21,009 --> 00:05:24,759
+light whitish blue indicates low
+
+164
+00:05:22,449 --> 00:05:26,800
+concentration as you could see CBD a
+
+165
+00:05:24,759 --> 00:05:28,930
+high CBD a strains and high THC a
+
+166
+00:05:26,800 --> 00:05:30,160
+strains are on opposite sides because
+
+167
+00:05:28,930 --> 00:05:31,240
+they occur differently in different
+
+168
+00:05:30,160 --> 00:05:33,070
+places in the data there they're
+
+169
+00:05:31,240 --> 00:05:34,389
+organized by their chemical profile and
+
+170
+00:05:33,069 --> 00:05:35,918
+the profiles are in separate places
+
+171
+00:05:34,389 --> 00:05:38,228
+there's a little bit of crossover in the
+
+172
+00:05:35,918 --> 00:05:39,459
+middle but for the most part they exist
+
+173
+00:05:38,228 --> 00:05:43,629
+on different sides there are different
+
+174
+00:05:39,459 --> 00:05:45,399
+genes that code for each one alright and
+
+175
+00:05:43,629 --> 00:05:47,079
+so now we're on to the third stage of
+
+176
+00:05:45,399 --> 00:05:48,489
+the methodology once we have the
+
+177
+00:05:47,079 --> 00:05:50,228
+chemical data once we play with it with
+
+178
+00:05:48,490 --> 00:05:52,470
+let the computers play with it we got to
+
+179
+00:05:50,228 --> 00:05:54,788
+map this together and explain how these
+
+180
+00:05:52,470 --> 00:05:56,380
+terpenes are being made by enzyme so
+
+181
+00:05:54,788 --> 00:05:59,288
+step one is we needed peer review
+
+182
+00:05:56,379 --> 00:06:00,939
+literature on enzymes terpene synthases
+
+183
+00:05:59,288 --> 00:06:02,469
+in higher plants just to get us in the
+
+184
+00:06:00,939 --> 00:06:03,939
+ballpark and so this is just a
+
+185
+00:06:02,470 --> 00:06:05,740
+screenshot from a database we've built
+
+186
+00:06:03,939 --> 00:06:07,360
+as you can see there's there's these
+
+187
+00:06:05,740 --> 00:06:08,829
+columns in the middle you know output 1
+
+188
+00:06:07,360 --> 00:06:10,030
+output 2 some of them just make one
+
+189
+00:06:08,829 --> 00:06:11,889
+turkey and some of them make a family
+
+190
+00:06:10,029 --> 00:06:13,478
+some of them may come in fixed ratios
+
+191
+00:06:11,889 --> 00:06:15,879
+some don't so that's part of the
+
+192
+00:06:13,478 --> 00:06:19,719
+complexity of mapping this out all right
+
+193
+00:06:15,879 --> 00:06:21,610
+and so the idea is to filter through all
+
+194
+00:06:19,720 --> 00:06:22,570
+of those entries and match them to the
+
+195
+00:06:21,610 --> 00:06:23,889
+data that we're getting from the
+
+196
+00:06:22,569 --> 00:06:25,089
+computer assisted algorithms and
+
+197
+00:06:23,889 --> 00:06:27,550
+generate a map that would look something
+
+198
+00:06:25,089 --> 00:06:29,469
+like this but this is a more
+
+199
+00:06:27,550 --> 00:06:30,728
+hypothetical but a more defensible map
+
+200
+00:06:29,470 --> 00:06:33,550
+think we can link directly back to the
+
+201
+00:06:30,728 --> 00:06:34,899
+data so now that we've overview the
+
+202
+00:06:33,550 --> 00:06:37,329
+methodology let's actually go through
+
+203
+00:06:34,899 --> 00:06:38,649
+the data stage one was chemical analysis
+
+204
+00:06:37,329 --> 00:06:40,389
+so we have 900
+
+205
+00:06:38,649 --> 00:06:43,599
+to eat samples times 20 terpenes which
+
+206
+00:06:40,389 --> 00:06:44,680
+is you know 20,000 data points we
+
+207
+00:06:43,600 --> 00:06:46,570
+started with a standard approach
+
+208
+00:06:44,680 --> 00:06:48,280
+statistics right we do average or
+
+209
+00:06:46,569 --> 00:06:50,110
+standard deviations global Maxima and
+
+210
+00:06:48,279 --> 00:06:51,219
+see what it looks like we did get eleven
+
+211
+00:06:50,110 --> 00:06:52,750
+terpenes that are at significantly
+
+212
+00:06:51,220 --> 00:06:54,580
+higher levels than the others and I
+
+213
+00:06:52,750 --> 00:06:57,220
+listed them here at the bottom but it's
+
+214
+00:06:54,579 --> 00:06:59,019
+more fun to look the blue is the mean
+
+215
+00:06:57,220 --> 00:07:01,449
+blue plus red is mean plus standard
+
+216
+00:06:59,019 --> 00:07:02,978
+deviation blue plus red plus yellow we
+
+217
+00:07:01,449 --> 00:07:04,629
+threw the global maximum on top of that
+
+218
+00:07:02,978 --> 00:07:05,829
+and so when you tally them up you can
+
+219
+00:07:04,629 --> 00:07:07,029
+see that statistically there's 11
+
+220
+00:07:05,829 --> 00:07:09,579
+players that are going to kind of tower
+
+221
+00:07:07,029 --> 00:07:10,689
+over the others in these profiles so you
+
+222
+00:07:09,579 --> 00:07:12,519
+think okay we got our eleven that we're
+
+223
+00:07:10,689 --> 00:07:14,259
+gonna look at there's some issues with
+
+224
+00:07:12,519 --> 00:07:16,198
+that focusing on high concentration
+
+225
+00:07:14,259 --> 00:07:19,478
+turbans is a problematic approach
+
+226
+00:07:16,199 --> 00:07:20,860
+terpenes are not known to have a same
+
+227
+00:07:19,478 --> 00:07:22,719
+medical effect on the human body just
+
+228
+00:07:20,860 --> 00:07:24,280
+because of the milligram of linalool
+
+229
+00:07:22,720 --> 00:07:25,690
+does something doesn't mean that the
+
+230
+00:07:24,279 --> 00:07:27,099
+active dose for another terpene couldn't
+
+231
+00:07:25,689 --> 00:07:29,019
+be much higher or much lower so looking
+
+232
+00:07:27,100 --> 00:07:30,189
+at the absolute concentration doesn't
+
+233
+00:07:29,019 --> 00:07:32,439
+really give us a good idea of why things
+
+234
+00:07:30,189 --> 00:07:33,848
+are medically efficacious additionally
+
+235
+00:07:32,439 --> 00:07:35,228
+there's a lot of been a lot of reports
+
+236
+00:07:33,848 --> 00:07:36,969
+that terpenes have very complex
+
+237
+00:07:35,228 --> 00:07:38,740
+metabolic pathways and very complex
+
+238
+00:07:36,970 --> 00:07:40,900
+medical effects on the body and that
+
+239
+00:07:38,740 --> 00:07:42,519
+small concentrations of other terpenes
+
+240
+00:07:40,899 --> 00:07:44,138
+can affect the way our bodies processing
+
+241
+00:07:42,519 --> 00:07:45,728
+the higher concentration turbulence what
+
+242
+00:07:44,139 --> 00:07:47,949
+some people call the entourage effect or
+
+243
+00:07:45,728 --> 00:07:49,598
+synergistic effects this means we need a
+
+244
+00:07:47,949 --> 00:07:51,430
+analysis me to go past a dist achill
+
+245
+00:07:49,598 --> 00:07:52,990
+analysis and do something a little
+
+246
+00:07:51,430 --> 00:07:55,689
+fancier so we can look at the complexity
+
+247
+00:07:52,990 --> 00:07:58,960
+of this 20 variable data set that's
+
+248
+00:07:55,689 --> 00:08:02,019
+where you come in alright so we turn to
+
+249
+00:07:58,959 --> 00:08:03,819
+the self-organizing maps here we see the
+
+250
+00:08:02,019 --> 00:08:05,228
+results of the terpenes running the
+
+251
+00:08:03,819 --> 00:08:08,050
+self-organizing maps as you could see
+
+252
+00:08:05,228 --> 00:08:10,360
+the alpha pining beta pining occur most
+
+253
+00:08:08,050 --> 00:08:12,819
+often together as well carry off lean
+
+254
+00:08:10,360 --> 00:08:14,919
+whom you lean and neural light all as
+
+255
+00:08:12,819 --> 00:08:16,329
+and over here we see limonene alone a
+
+256
+00:08:14,918 --> 00:08:18,370
+Lawal occurring in a very tight
+
+257
+00:08:16,329 --> 00:08:19,779
+correlation together and the terpenes
+
+258
+00:08:18,370 --> 00:08:22,649
+occurring together and as you can see
+
+259
+00:08:19,779 --> 00:08:25,448
+they don't occur in the same space
+
+260
+00:08:22,649 --> 00:08:26,709
+Mersin a nossa mean were occurred in
+
+261
+00:08:25,449 --> 00:08:28,360
+different spaces but there is some
+
+262
+00:08:26,709 --> 00:08:28,750
+overlap and we'll go over that in a
+
+263
+00:08:28,360 --> 00:08:31,150
+moment
+
+264
+00:08:28,750 --> 00:08:36,190
+and this is just a normalized data
+
+265
+00:08:31,149 --> 00:08:37,708
+plotted plane and all we see is the sum
+
+266
+00:08:36,190 --> 00:08:42,669
+of the points seem to cluster around
+
+267
+00:08:37,708 --> 00:08:44,829
+axes and here we've run it into k-means
+
+268
+00:08:42,668 --> 00:08:47,289
+clustering and as you could see this is
+
+269
+00:08:44,830 --> 00:08:49,990
+the limonene linalool group versus the
+
+270
+00:08:47,289 --> 00:08:51,879
+terpenes group and there's three major
+
+271
+00:08:49,990 --> 00:08:52,289
+clusters that separate very nicely and
+
+272
+00:08:51,879 --> 00:08:55,169
+this into
+
+273
+00:08:52,289 --> 00:08:56,429
+it's three different genetic variants
+
+274
+00:08:55,169 --> 00:08:59,789
+that are producing different relative
+
+275
+00:08:56,429 --> 00:09:01,289
+amounts of these terpenes and again we
+
+276
+00:08:59,789 --> 00:09:05,458
+see this when comparing the paintings to
+
+277
+00:09:01,289 --> 00:09:07,169
+the terpenes here we have the merci and
+
+278
+00:09:05,458 --> 00:09:09,000
+AH sameen so there's a group that
+
+279
+00:09:07,169 --> 00:09:11,629
+produces merci alone is the group that
+
+280
+00:09:09,000 --> 00:09:14,909
+produces Mersin and AH sameen together
+
+281
+00:09:11,629 --> 00:09:17,370
+and here the sesqui terpenes carry off
+
+282
+00:09:14,909 --> 00:09:18,990
+than human occur in a very tight
+
+283
+00:09:17,370 --> 00:09:23,940
+correlation with about a 1 to 3 ratio
+
+284
+00:09:18,990 --> 00:09:26,370
+the others not so much in order for this
+
+285
+00:09:23,940 --> 00:09:27,959
+to work the the there have to be valid
+
+286
+00:09:26,370 --> 00:09:30,360
+methods the methods have to match very
+
+287
+00:09:27,958 --> 00:09:31,919
+tightly there at the proficiency rounds
+
+288
+00:09:30,360 --> 00:09:33,810
+and make sure that all the data can be
+
+289
+00:09:31,919 --> 00:09:36,299
+aggregated and also we want a diverse
+
+290
+00:09:33,809 --> 00:09:38,099
+data set genetic geographically as well
+
+291
+00:09:36,299 --> 00:09:41,909
+as environmental growing conditions all
+
+292
+00:09:38,100 --> 00:09:43,709
+that stuff alright so now that we've
+
+293
+00:09:41,909 --> 00:09:45,659
+looked at the patterns we saw from the
+
+294
+00:09:43,708 --> 00:09:47,278
+computer assisted algorithm analysis
+
+295
+00:09:45,659 --> 00:09:48,600
+let's look at how we can map to how
+
+296
+00:09:47,278 --> 00:09:51,419
+would you make sense of this so just a
+
+297
+00:09:48,600 --> 00:09:52,860
+quick review you know when you have a
+
+298
+00:09:51,419 --> 00:09:54,208
+theory where there's two compounds
+
+299
+00:09:52,860 --> 00:09:55,769
+coming from one enzyme with one
+
+300
+00:09:54,208 --> 00:09:57,539
+precursor we expect to see positive
+
+301
+00:09:55,769 --> 00:09:59,250
+correlation right as that precursor one
+
+302
+00:09:57,539 --> 00:10:00,750
+at the top as that concentration
+
+303
+00:09:59,250 --> 00:10:01,919
+increases the concentration of the two
+
+304
+00:10:00,750 --> 00:10:03,299
+compounds at the bottoms can increased
+
+305
+00:10:01,919 --> 00:10:06,568
+in a fixed ratio so we see positive
+
+306
+00:10:03,299 --> 00:10:08,009
+correlation when we see two compounds
+
+307
+00:10:06,568 --> 00:10:11,028
+that have a common precursor would have
+
+308
+00:10:08,009 --> 00:10:13,708
+two enzymes we will see a competitive a
+
+309
+00:10:11,028 --> 00:10:15,740
+situation where their sum is relatively
+
+310
+00:10:13,708 --> 00:10:17,759
+constant as the amount of the precursors
+
+311
+00:10:15,740 --> 00:10:18,720
+competed by the two substrates we see a
+
+312
+00:10:17,759 --> 00:10:21,088
+negative correlation and the
+
+313
+00:10:18,720 --> 00:10:23,190
+concentration of those two compounds so
+
+314
+00:10:21,089 --> 00:10:25,980
+using these principles we looked at
+
+315
+00:10:23,190 --> 00:10:27,810
+Koto's 1987 paper to kind of create a
+
+316
+00:10:25,980 --> 00:10:29,730
+landscape if you will how do other
+
+317
+00:10:27,809 --> 00:10:31,409
+plants that are more well study than
+
+318
+00:10:29,730 --> 00:10:33,839
+what we're looking at cannabis make
+
+319
+00:10:31,409 --> 00:10:36,719
+their terpenes and try to map out a
+
+320
+00:10:33,839 --> 00:10:38,579
+cannabis map from the materials in the
+
+321
+00:10:36,720 --> 00:10:39,959
+croteau paper and we got something that
+
+322
+00:10:38,578 --> 00:10:41,638
+looked like this now you can see the
+
+323
+00:10:39,958 --> 00:10:43,559
+colors don't seem to correlate in these
+
+324
+00:10:41,639 --> 00:10:45,778
+competitive groups like they should have
+
+325
+00:10:43,559 --> 00:10:47,278
+a moment to go and so this is you know
+
+326
+00:10:45,778 --> 00:10:49,948
+the genetic variation from one plant to
+
+327
+00:10:47,278 --> 00:10:51,958
+the next causing some difficulty so if
+
+328
+00:10:49,948 --> 00:10:54,000
+we zero in on the different axes that my
+
+329
+00:10:51,958 --> 00:10:55,318
+partner was talking about before before
+
+330
+00:10:54,000 --> 00:10:57,360
+he was talking about ostomy merci merci
+
+331
+00:10:55,318 --> 00:10:59,159
+and can appear alone awesome in Kent
+
+332
+00:10:57,360 --> 00:11:00,449
+there's two real groups one with both
+
+333
+00:10:59,159 --> 00:11:02,879
+and one with only one the best way to
+
+334
+00:11:00,448 --> 00:11:04,620
+explain this is two enzymes one the
+
+335
+00:11:02,879 --> 00:11:05,710
+produces just machine and one that
+
+336
+00:11:04,620 --> 00:11:08,379
+produces merci
+
+337
+00:11:05,710 --> 00:11:10,509
+in a fixed ratio assuming that they are
+
+338
+00:11:08,379 --> 00:11:13,299
+of the same gene and they are shuffled
+
+339
+00:11:10,509 --> 00:11:14,830
+alleles we're gonna see you know almost
+
+340
+00:11:13,299 --> 00:11:16,359
+I guess and heterozygous plants of
+
+341
+00:11:14,830 --> 00:11:17,740
+different combinations of this giving us
+
+342
+00:11:16,360 --> 00:11:20,649
+three ratios which is what we saw
+
+343
+00:11:17,740 --> 00:11:22,269
+nursing only one ratio of Mercy NOS mean
+
+344
+00:11:20,649 --> 00:11:26,079
+which was lighter and then a heavier
+
+345
+00:11:22,269 --> 00:11:26,679
+hasta mean favoring ratio look at the
+
+346
+00:11:26,080 --> 00:11:27,850
+next one
+
+347
+00:11:26,679 --> 00:11:29,279
+fortunately they get much more
+
+348
+00:11:27,850 --> 00:11:32,950
+complicated than that when you look at
+
+349
+00:11:29,279 --> 00:11:34,569
+terpene families so the Terpening family
+
+350
+00:11:32,950 --> 00:11:36,550
+had four we looked at three terpenes
+
+351
+00:11:34,570 --> 00:11:39,010
+Alpha Delta and gamma and then we looked
+
+352
+00:11:36,549 --> 00:11:41,259
+at caring and they seemed to have the
+
+353
+00:11:39,009 --> 00:11:42,819
+common precursor that moves their
+
+354
+00:11:41,259 --> 00:11:45,129
+concentration together which here we
+
+355
+00:11:42,820 --> 00:11:47,470
+labeled as - but we're hypothesizing to
+
+356
+00:11:45,129 --> 00:11:50,350
+be a trip in your pyrophosphate or some
+
+357
+00:11:47,470 --> 00:11:53,080
+sort of trip in eel cation on the other
+
+358
+00:11:50,350 --> 00:11:54,340
+side from the common precursor we see
+
+359
+00:11:53,080 --> 00:11:56,320
+that an enzyme moves it the other way
+
+360
+00:11:54,340 --> 00:11:57,399
+towards precursor 3 which we're
+
+361
+00:11:56,320 --> 00:11:59,379
+hypothesizing is Lynn Allen
+
+362
+00:11:57,399 --> 00:12:00,970
+pyrophosphate because it's known to be a
+
+363
+00:11:59,379 --> 00:12:02,590
+precursor to both limonene linalool
+
+364
+00:12:00,970 --> 00:12:05,680
+which co-occur in our data set very
+
+365
+00:12:02,590 --> 00:12:07,450
+tightly and again using literature and
+
+366
+00:12:05,679 --> 00:12:08,949
+other higher plants other than cannabis
+
+367
+00:12:07,450 --> 00:12:10,240
+we're hypothesizing that the common
+
+368
+00:12:08,950 --> 00:12:13,390
+precursor they're competing over is
+
+369
+00:12:10,240 --> 00:12:15,220
+geraniol pyrophosphate now as for the
+
+370
+00:12:13,389 --> 00:12:16,720
+last group orange versus green it's more
+
+371
+00:12:15,220 --> 00:12:18,820
+difficult because the PI names don't
+
+372
+00:12:16,720 --> 00:12:21,399
+show a very clear correlation with any
+
+373
+00:12:18,820 --> 00:12:22,570
+other group we at first thought this was
+
+374
+00:12:21,399 --> 00:12:24,519
+anomalous but when we started looking
+
+375
+00:12:22,570 --> 00:12:27,190
+through that literature database we saw
+
+376
+00:12:24,519 --> 00:12:29,319
+that pi mean is synthesized a very large
+
+377
+00:12:27,190 --> 00:12:31,390
+number of ways there's countless number
+
+378
+00:12:29,320 --> 00:12:32,590
+of ways to get to that product and in
+
+379
+00:12:31,389 --> 00:12:34,179
+other plants there's a great diversity
+
+380
+00:12:32,590 --> 00:12:35,710
+of those enzymes that can get you to
+
+381
+00:12:34,179 --> 00:12:37,779
+that same product so it's not easy to
+
+382
+00:12:35,710 --> 00:12:39,040
+draw these linear correlations like we
+
+383
+00:12:37,779 --> 00:12:41,169
+were doing earlier with a positive or
+
+384
+00:12:39,039 --> 00:12:43,779
+negative correlation conversely on the
+
+385
+00:12:41,169 --> 00:12:45,309
+orange side we see enzyme for creating
+
+386
+00:12:43,779 --> 00:12:47,860
+carry off lean and humulin which we
+
+387
+00:12:45,309 --> 00:12:50,109
+hypothesize uses the precursor farnesyl
+
+388
+00:12:47,860 --> 00:12:51,669
+pyrophosphate and we think this agrees
+
+389
+00:12:50,110 --> 00:12:53,050
+with our datasets showing a positive
+
+390
+00:12:51,669 --> 00:12:54,699
+correlation in a fixed three-to-one
+
+391
+00:12:53,049 --> 00:12:59,049
+ratio between carry off lean and human
+
+392
+00:12:54,700 --> 00:13:00,640
+across the dataset so all this comes to
+
+393
+00:12:59,049 --> 00:13:02,649
+the labeling system our goal was to
+
+394
+00:13:00,639 --> 00:13:05,049
+create a label that would be simple and
+
+395
+00:13:02,649 --> 00:13:06,579
+intuitive for the average consumer it
+
+396
+00:13:05,049 --> 00:13:08,259
+would provide a standard approach to
+
+397
+00:13:06,580 --> 00:13:09,310
+product categorization in selection it
+
+398
+00:13:08,259 --> 00:13:11,889
+would take something that has been
+
+399
+00:13:09,309 --> 00:13:14,319
+qualitative the choosing of strains
+
+400
+00:13:11,889 --> 00:13:15,970
+usually by smell and taste and turn it
+
+401
+00:13:14,320 --> 00:13:17,860
+into something more quantitative and non
+
+402
+00:13:15,970 --> 00:13:19,450
+subjective like we would see with a
+
+403
+00:13:17,860 --> 00:13:20,889
+nutrition label over the chemical
+
+404
+00:13:19,450 --> 00:13:24,210
+hazard labels something easy to
+
+405
+00:13:20,889 --> 00:13:26,740
+recognize but also quantitatively based
+
+406
+00:13:24,210 --> 00:13:29,080
+so here's the label and here's sort of
+
+407
+00:13:26,740 --> 00:13:30,399
+how it's set up so we have the thickness
+
+408
+00:13:29,080 --> 00:13:32,200
+of each radius in a ring that
+
+409
+00:13:30,399 --> 00:13:34,899
+corresponds to the normalized
+
+410
+00:13:32,200 --> 00:13:37,120
+concentration of that subgroup the
+
+411
+00:13:34,899 --> 00:13:40,720
+groups that we talked about before which
+
+412
+00:13:37,120 --> 00:13:42,580
+are splayed out here and so the the
+
+413
+00:13:40,720 --> 00:13:44,019
+rings can be either solid or split
+
+414
+00:13:42,580 --> 00:13:46,750
+depending on which of the clusters it
+
+415
+00:13:44,019 --> 00:13:48,370
+falls into and if they are split then
+
+416
+00:13:46,750 --> 00:13:49,659
+the ratio of each color corresponds the
+
+417
+00:13:48,370 --> 00:13:51,730
+ratio of those two groups with each
+
+418
+00:13:49,659 --> 00:13:53,409
+other and what does this translate into
+
+419
+00:13:51,730 --> 00:13:55,750
+so when we run the actual numbers
+
+420
+00:13:53,409 --> 00:13:58,329
+through this system what we get are
+
+421
+00:13:55,750 --> 00:14:00,730
+these color-coded labels that are very
+
+422
+00:13:58,330 --> 00:14:02,470
+indicative of the terpene profile and as
+
+423
+00:14:00,730 --> 00:14:04,420
+you could see you can match strains
+
+424
+00:14:02,470 --> 00:14:07,750
+using this but you could see the gorilla
+
+425
+00:14:04,419 --> 00:14:09,639
+glue has almost identical labels whereas
+
+426
+00:14:07,750 --> 00:14:11,320
+the Casey Jones and cherry diesel are
+
+427
+00:14:09,639 --> 00:14:13,870
+very very close to each other they are
+
+428
+00:14:11,320 --> 00:14:15,879
+very similar and and if one were to were
+
+429
+00:14:13,870 --> 00:14:17,679
+to run out of Casey Jones and want
+
+430
+00:14:15,879 --> 00:14:18,850
+another strain that was very similar and
+
+431
+00:14:17,679 --> 00:14:23,729
+well they could go for that cherry
+
+432
+00:14:18,850 --> 00:14:26,730
+diesel and these are sort of the major
+
+433
+00:14:23,730 --> 00:14:29,220
+27 major groups since each each of the
+
+434
+00:14:26,730 --> 00:14:32,920
+concentric rings has three possible
+
+435
+00:14:29,220 --> 00:14:35,259
+formats so here are the 27 possible and
+
+436
+00:14:32,919 --> 00:14:37,539
+then here are a histogram of how many
+
+437
+00:14:35,259 --> 00:14:38,710
+samples in our database were in each of
+
+438
+00:14:37,539 --> 00:14:40,809
+the groups and as you could see there
+
+439
+00:14:38,710 --> 00:14:42,400
+are some groups that where most of the
+
+440
+00:14:40,809 --> 00:14:45,099
+data falls and there's there's some that
+
+441
+00:14:42,399 --> 00:14:48,309
+weren't represented at all and this
+
+442
+00:14:45,100 --> 00:14:50,680
+could mean either these are areas where
+
+443
+00:14:48,309 --> 00:14:51,789
+breeding needs to happen or areas where
+
+444
+00:14:50,679 --> 00:14:57,159
+it's impossible because of the
+
+445
+00:14:51,789 --> 00:14:58,959
+underlying genetics so that concludes
+
+446
+00:14:57,159 --> 00:15:00,309
+what's actually been done let's talk
+
+447
+00:14:58,960 --> 00:15:03,220
+about where we want this to go three
+
+448
+00:15:00,309 --> 00:15:05,019
+minutes we have a on the left here you
+
+449
+00:15:03,220 --> 00:15:06,070
+see the 958 that's the database we've
+
+450
+00:15:05,019 --> 00:15:07,840
+been talking about this whole time on
+
+451
+00:15:06,070 --> 00:15:09,910
+the right is a small medical paper
+
+452
+00:15:07,840 --> 00:15:11,440
+database of stuff not behind a paywall
+
+453
+00:15:09,909 --> 00:15:14,500
+that studies either a cannabinoid or a
+
+454
+00:15:11,440 --> 00:15:17,110
+terpene and its effect or efficacy on a
+
+455
+00:15:14,500 --> 00:15:18,970
+known human disorder and the idea is
+
+456
+00:15:17,110 --> 00:15:21,190
+with this labeling system we're hoping
+
+457
+00:15:18,970 --> 00:15:22,660
+to facilitate doctor recommendations and
+
+458
+00:15:21,190 --> 00:15:24,100
+possibly prescriptions of specific
+
+459
+00:15:22,659 --> 00:15:26,110
+cannabis strains with specific chemical
+
+460
+00:15:24,100 --> 00:15:28,120
+content to specific disorders of course
+
+461
+00:15:26,110 --> 00:15:30,240
+that's the hardest part out of all this
+
+462
+00:15:28,120 --> 00:15:32,529
+is not the chemistry but the medicine so
+
+463
+00:15:30,240 --> 00:15:33,470
+this is just a screenshot of what this
+
+464
+00:15:32,529 --> 00:15:34,610
+database looks like
+
+465
+00:15:33,470 --> 00:15:36,680
+we only have about five hundred papers
+
+466
+00:15:34,610 --> 00:15:38,450
+in there again they can't be behind
+
+467
+00:15:36,679 --> 00:15:40,519
+paywalls and they study cannabis so you
+
+468
+00:15:38,450 --> 00:15:42,140
+know Slim Pickens but you know we see on
+
+469
+00:15:40,519 --> 00:15:43,519
+the Left all the publication data and on
+
+470
+00:15:42,139 --> 00:15:45,679
+the right you see those green checkmarks
+
+471
+00:15:43,519 --> 00:15:47,360
+they're tracking chemical compounds on
+
+472
+00:15:45,679 --> 00:15:50,329
+the far right you're seeing cannabinoids
+
+473
+00:15:47,360 --> 00:15:51,740
+THC CBD all that stuff in the middle we
+
+474
+00:15:50,330 --> 00:15:52,910
+see which disorders being looked at and
+
+475
+00:15:51,740 --> 00:15:54,860
+on further to the left we're looking at
+
+476
+00:15:52,909 --> 00:15:56,059
+what terpenes this the study might have
+
+477
+00:15:54,860 --> 00:15:58,430
+looked at now a lot of these studies
+
+478
+00:15:56,059 --> 00:16:00,439
+didn't look at cannabis because you know
+
+479
+00:15:58,429 --> 00:16:02,000
+the history is is not easy to do
+
+480
+00:16:00,440 --> 00:16:03,950
+clinical trials on cannabis so a lot of
+
+481
+00:16:02,000 --> 00:16:05,090
+this is essential oils a lot of this is
+
+482
+00:16:03,950 --> 00:16:08,540
+other compounds that contain these
+
+483
+00:16:05,090 --> 00:16:11,750
+terpenes and so when we output these
+
+484
+00:16:08,539 --> 00:16:13,429
+5:01 we get a very slim slim pickings
+
+485
+00:16:11,750 --> 00:16:15,710
+output chart but the idea here is that
+
+486
+00:16:13,429 --> 00:16:17,209
+you see the terpenes in the first column
+
+487
+00:16:15,710 --> 00:16:18,879
+and then the disorders across the top
+
+488
+00:16:17,210 --> 00:16:20,900
+the number represents the number of
+
+489
+00:16:18,879 --> 00:16:22,970
+peer-reviewed papers from our database
+
+490
+00:16:20,899 --> 00:16:25,069
+that indicate a positive effect for that
+
+491
+00:16:22,970 --> 00:16:26,240
+compound on that disorder and so right
+
+492
+00:16:25,070 --> 00:16:27,320
+now we're in the double digits we're
+
+493
+00:16:26,240 --> 00:16:28,820
+nowhere we need to go up orders of
+
+494
+00:16:27,320 --> 00:16:30,980
+magnitude before this becomes an actual
+
+495
+00:16:28,820 --> 00:16:33,590
+usable resource or could even possibly
+
+496
+00:16:30,980 --> 00:16:35,690
+be one but the idea is to connect it to
+
+497
+00:16:33,590 --> 00:16:37,879
+the dis comic system to make better
+
+498
+00:16:35,690 --> 00:16:39,650
+recommendations and so this is another
+
+499
+00:16:37,879 --> 00:16:42,259
+form of output where we basically listed
+
+500
+00:16:39,649 --> 00:16:43,459
+each peer-reviewed paper in a list going
+
+501
+00:16:42,259 --> 00:16:45,259
+down the left and right and then to the
+
+502
+00:16:43,460 --> 00:16:47,389
+right we have columns basically
+
+503
+00:16:45,259 --> 00:16:48,769
+populated when a terpene is one of the
+
+504
+00:16:47,389 --> 00:16:50,269
+compounds of interest studied and then
+
+505
+00:16:48,769 --> 00:16:52,309
+we eliminated the cannabinoids for this
+
+506
+00:16:50,269 --> 00:16:54,139
+purpose and then we also programmed it
+
+507
+00:16:52,309 --> 00:16:56,509
+to be color coded to the dominant
+
+508
+00:16:54,139 --> 00:16:58,340
+terpene group from our label system so a
+
+509
+00:16:56,509 --> 00:17:00,439
+resource like this with many thousands
+
+510
+00:16:58,340 --> 00:17:02,570
+or hundreds of thousands of papers maybe
+
+511
+00:17:00,440 --> 00:17:04,519
+would be a much better resource for
+
+512
+00:17:02,570 --> 00:17:06,199
+medical doctors to look qualitatively at
+
+513
+00:17:04,519 --> 00:17:07,699
+what's actually in the strain and how
+
+514
+00:17:06,199 --> 00:17:09,110
+that is statistically been proven to be
+
+515
+00:17:07,699 --> 00:17:12,650
+effective against a variety of disorders
+
+516
+00:17:09,109 --> 00:17:14,899
+in in humans one minute and that pretty
+
+517
+00:17:12,650 --> 00:17:16,490
+much sums up now special thanks to DB
+
+518
+00:17:14,900 --> 00:17:20,240
+labs and MCR labs and I'll leave
+
+519
+00:17:16,490 --> 00:17:22,689
+therapeutics round of applause thank you
+
+520
+00:17:20,240 --> 00:17:22,689
+very much
+

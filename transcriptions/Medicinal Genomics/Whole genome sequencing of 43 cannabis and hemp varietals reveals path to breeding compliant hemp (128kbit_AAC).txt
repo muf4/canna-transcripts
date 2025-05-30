@@ -1,0 +1,2151 @@
+[SPEAKER_00]: Okay.
+[SPEAKER_00]: This is a re-recording of an Emerald
+Conference 2020 presentation I gave at an
+[SPEAKER_00]: Agilent seminar.
+[SPEAKER_00]: So this is a topic that's going to cover a
+broad array of information regarding the
+[SPEAKER_00]: cannabis genome.
+[SPEAKER_00]: So there is some work here related to a
+pre-print that we just published.
+[SPEAKER_00]: We're going to go over some of that.
+[SPEAKER_00]: There's also some work here that's not in
+the pre-print that describes how to
+[SPEAKER_00]: potentially breed for particular hemp
+genetics.
+[SPEAKER_00]: Okay.
+[SPEAKER_00]: So right now there are some USDA regs out
+there and they're pretty challenging to
+[SPEAKER_00]: address right now because they're very
+strict in terms of levels of THC.
+[SPEAKER_00]: And we're finding that THC and THCA can be
+leaking from a lot of other cannabinoid
+[SPEAKER_00]: synthase genes and we're going to try and
+address how to track those genetically and
+[SPEAKER_00]: what implications that has for pathogen
+response because eliminating some of these
+[SPEAKER_00]: genes means you eliminate some neighboring
+genes which happen to be pathogen response
+[SPEAKER_00]: genes in some of the cannabinoids.
+[SPEAKER_00]: We're going to touch on that.
+[SPEAKER_00]: But to give you some backstory here,
+this actually was a project that started a
+[SPEAKER_00]: long time ago, a couple of years ago,
+June 2018 actually.
+[SPEAKER_00]: We started this with a grant that we
+received for cryptocurrency.
+[SPEAKER_00]: It actually was snowballed by a foundation
+medicine sequencing report from my father.
+[SPEAKER_00]: And I explained some of this at a PACBio
+seminar at PAG back in January.
+[SPEAKER_00]: When we're going through a bioinformatics
+seminar there, there's probably a
+[SPEAKER_00]: recording of that floating around as well.
+[SPEAKER_00]: But we had a sense of urgency to this
+because this foundation medicine report
+[SPEAKER_00]: was actually a mutation of a tumor from my
+father.
+[SPEAKER_00]: It was a prostate cancer that they
+biopsied.
+[SPEAKER_00]: They sequenced the biopsy and found that
+he had a BRAF K601E variant.
+[SPEAKER_00]: That's an amino acid position in the BRAF
+gene.
+[SPEAKER_00]: And when you have that type of mutation,
+they recommend AKT inhibitors.
+[SPEAKER_00]: There weren't any AKT inhibitors that
+foundation medicine was confident with.
+[SPEAKER_00]: Of course, we Googled AKT inhibitors and
+cannabinoids and up comes all types of
+[SPEAKER_00]: hits on how cannabinoids are potent AKT
+inhibitors.
+[SPEAKER_00]: And our father was interested in using
+those anyway due to the fact that they
+[SPEAKER_00]: were addressing the nausea and the bone
+pain that nothing else seemed to touch.
+[SPEAKER_00]: So we had a sense of urgency on this
+project.
+[SPEAKER_00]: And that urgency was underscored in the
+manner in which we funded this.
+[SPEAKER_00]: This is one reason why we truncate that
+this long title into a Speedweed as being
+[SPEAKER_00]: an abbreviated version of all of this
+scientific mumbo jumbo that we have here
+[SPEAKER_00]: in the title.
+[SPEAKER_00]: But knowing we couldn't jump to NIH to get
+funding this quickly, we turned to a
+[SPEAKER_00]: cryptocurrency known as Dash.
+[SPEAKER_00]: Dash is a fork of Bitcoin, technically a
+fork of Litecoin, which forked up with
+[SPEAKER_00]: Bitcoin.
+[SPEAKER_00]: But nevertheless, its code base is very
+similar.
+[SPEAKER_00]: The only thing they changed is they
+decided to create a treasury so that as
+[SPEAKER_00]: the cryptocurrency grew and they issued
+more of these coins, to the miners,
+[SPEAKER_00]: they could reserve some of those coins
+into a treasury that people could vote on
+[SPEAKER_00]: as to how to distribute those coins.
+[SPEAKER_00]: Now, who votes?
+[SPEAKER_00]: Well, there's another set of masternode
+owners in the network that if you hold a
+[SPEAKER_00]: thousand of these Dash as a proof of stake
+of your ownership in the network,
+[SPEAKER_00]: you get a dividend of, I shouldn't say
+dividend, you get the ability to vote on
+[SPEAKER_00]: these actual, how you use this treasury.
+[SPEAKER_00]: So the masternodes are responsible for
+helping distribute some of the coins and
+[SPEAKER_00]: making sure that the InstaSend works and
+they have to keep up a node that's fully
+[SPEAKER_00]: functional and fast, that can relay
+messages or transactions very quickly.
+[SPEAKER_00]: So the masternode owners get some of the
+rewards, the block rewards, the miners get
+[SPEAKER_00]: some of the block rewards, and then
+there's a treasury.
+[SPEAKER_00]: And only the masternode owners can vote in
+the treasury.
+[SPEAKER_00]: They have to have at least a thousand Dash
+piece.
+[SPEAKER_00]: Anyway, long, complicated story.
+[SPEAKER_00]: This cryptocurrency is interested in
+solving banking problems in various
+[SPEAKER_00]: jurisdictions in the world.
+[SPEAKER_00]: And one of the markets they're interested
+in is cannabis.
+[SPEAKER_00]: And they figured having a really good
+cannabis reference is going to help with
+[SPEAKER_00]: seed to sale tracking and it's going to
+help with building a good blockchain for
+[SPEAKER_00]: that industry.
+[SPEAKER_00]: So they funded this.
+[SPEAKER_00]: The crazy thing about getting crypto
+funded by Dash is that every month your
+[SPEAKER_00]: funding can disappear.
+[SPEAKER_00]: So we were granted a five month grant.
+[SPEAKER_00]: It was probably roughly in the 70 or
+$80,000 range, but the currency is so
+[SPEAKER_00]: volatile, it probably ended up being about
+a third of that by the time the project
+[SPEAKER_00]: was over.
+[SPEAKER_00]: We actually were funding the time period
+where the cryptocurrencies were going down
+[SPEAKER_00]: quite a bit.
+[SPEAKER_00]: So every single month we had to refactor
+our plan as to how we're going to sequence
+[SPEAKER_00]: this thing, because the currency would
+change on us.
+[SPEAKER_00]: And there's one month we nearly got voted
+off.
+[SPEAKER_00]: So it does change the pace of science.
+[SPEAKER_00]: And you can see some of the stuff that's
+been posted on the page.
+[SPEAKER_00]: There's a cryptocurrency funded genomics
+page in the Institute of Genomics that
+[SPEAKER_00]: will walk you through how this project
+progressed.
+[SPEAKER_00]: And every single experiment has been
+logged and every single negative
+[SPEAKER_00]: experiment is up there as well.
+[SPEAKER_00]: So all your embarrassments are gone.
+[SPEAKER_00]: Okay, so how do you get this published in
+five months?
+[SPEAKER_00]: Well, it's really hard to.
+[SPEAKER_00]: So what we did is we put it up on a
+preprint server and then invited people on
+[SPEAKER_00]: the internet to review it.
+[SPEAKER_00]: We put out a bounty, a $500 bounty for
+three reviewers to be selected based on
+[SPEAKER_00]: their credentials.
+[SPEAKER_00]: We put their credentials online so
+everyone can see that they're not our
+[SPEAKER_00]: friends.
+[SPEAKER_00]: And $500 upon completion if they completed
+the review in seven days.
+[SPEAKER_00]: All of them completed the review in seven
+days.
+[SPEAKER_00]: So this is a really fast way to get a
+review done.
+[SPEAKER_00]: Some people call it bribing.
+[SPEAKER_00]: We don't think so.
+[SPEAKER_00]: We think there should actually be a price
+signal in peer review so that a market can
+[SPEAKER_00]: develop and that really good reviewers
+will get paid more than bad reviewers and
+[SPEAKER_00]: that it would become almost an industry or
+market for some people.
+[SPEAKER_00]: So stipends like this actually give people
+priority to work on these things.
+[SPEAKER_00]: And one of the reasons peer review is
+broken is that no one has a priority to do
+[SPEAKER_00]: it well or to necessarily do it quickly.
+[SPEAKER_00]: It's all done on charity right now.
+[SPEAKER_00]: So this is a way to cut out some of the
+journals and just do preprints and
+[SPEAKER_00]: bounties.
+[SPEAKER_00]: But nevertheless, it's controversial and
+we weren't going to end there.
+[SPEAKER_00]: We just couldn't get this thing through a
+normal peer review process, let alone get
+[SPEAKER_00]: the genome sequence in a five month time
+frame.
+[SPEAKER_00]: So we opted to do this approach and we
+have since followed up with the more
+[SPEAKER_00]: traditional approach where we're taking
+that data.
+[SPEAKER_00]: And of course, 42 more genomes and putting
+it through bio archive and in the
+[SPEAKER_00]: traditional peer review process.
+[SPEAKER_00]: So, OK, there's a lot more data in this.
+[SPEAKER_00]: And this is the data that we're going to
+go over in this presentation.
+[SPEAKER_00]: This actually represents an entire trio
+that we sequence.
+[SPEAKER_00]: A trio is a sibling, a set of parents and
+their offspring.
+[SPEAKER_00]: OK, so mother, father, offspring.
+[SPEAKER_00]: In this case, the mother and the father
+happen to be brothers.
+[SPEAKER_00]: So it's an inbred trio and the offspring
+is happens to be a male.
+[SPEAKER_00]: And it's ends up being I think that
+offspring in this case is type three male.
+[SPEAKER_00]: So with that, we've got five tissues of
+ISO seek also done on the Jamaican line
+[SPEAKER_00]: mother.
+[SPEAKER_00]: OK, the strain that we're sequencing here,
+the cultivar, however you want to call it,
+[SPEAKER_00]: is a Jamaican line.
+[SPEAKER_00]: The tissues that we're sequencing with ISO
+seek.
+[SPEAKER_00]: This is important to sequence RNA in order
+for you to annotate the genome.
+[SPEAKER_00]: You want to sequence the RNA from multiple
+tissues.
+[SPEAKER_00]: OK, now we chose to take approach using
+single molecule sequencing to read that
+[SPEAKER_00]: RNA because single molecule sequencing
+reads the entire RNA piece in one go.
+[SPEAKER_00]: You're not trying to assemble the answer
+of the transcript with a bunch of short
+[SPEAKER_00]: reads.
+[SPEAKER_00]: You just get one long read that goes
+across the entire RNA.
+[SPEAKER_00]: In fact, the reads are so long now they
+lap the RNA multiple times.
+[SPEAKER_00]: They turn these RNA molecules in the
+circles and the sequencer reads it like a
+[SPEAKER_00]: gerbil on a wheel over and over again
+until it gets it right.
+[SPEAKER_00]: So the best annotations in the world are
+done with ISO seek right now.
+[SPEAKER_00]: All right, that's the method of choice to
+annotate a plant genome.
+[SPEAKER_00]: So we did it across five tissues.
+[SPEAKER_00]: We did four tissues with a methyl seek
+program or protocol known as EM seek from
+[SPEAKER_00]: New England.
+[SPEAKER_00]: We then did 40 whole genome shotgun
+libraries on Illumina.
+[SPEAKER_00]: These ones were barely amplified.
+[SPEAKER_00]: The reason we took very exquisite care to
+keep low numbers of amplification cycles
+[SPEAKER_00]: in these libraries is because we want to
+look at copy number variation.
+[SPEAKER_00]: If you start PCR-ing your libraries before
+sequencing, you lose resolution and copy
+[SPEAKER_00]: number analysis.
+[SPEAKER_00]: We didn't want to do that.
+[SPEAKER_00]: So all of these libraries have UMI's on
+them, which are the indices, almost like a
+[SPEAKER_00]: DNA barcode that's put on so that you can
+do molecule counting and detect PCR
+[SPEAKER_00]: amplification bias.
+[SPEAKER_00]: You can also remove it.
+[SPEAKER_00]: But you'll see in the paper, we didn't
+actually even need to use the UMI's.
+[SPEAKER_00]: Just by using three cycles of PCR,
+there's very, very uniform coverage across
+[SPEAKER_00]: the genome.
+[SPEAKER_00]: We know that because we compare the
+coverage of this Illumina method to what
+[SPEAKER_00]: we have from PacBio, which has almost no
+coverage bias.
+[SPEAKER_00]: We have done some phased genomics work and
+some O&T.
+[SPEAKER_00]: We're not going to touch on much of that
+in this presentation.
+[SPEAKER_00]: We'll save that for a later one.
+[SPEAKER_00]: That's a more complicated topic.
+[SPEAKER_00]: All in all, this represents about four
+terabases of sequences in NCBI.
+[SPEAKER_00]: It's 40 times larger than any other
+cannabis submission that we can find.
+[SPEAKER_00]: I'm certain that landmark number is going
+to change in time, as I've seen a lot of
+[SPEAKER_00]: data getting queued up to go into NCBI.
+[SPEAKER_00]: But nevertheless, it's a very large change
+in the landscape of cannabis sequence
+[SPEAKER_00]: information that's now public.
+[SPEAKER_00]: This is now public in the Koji genome
+browser.
+[SPEAKER_00]: It's also public in NCBI.
+[SPEAKER_00]: You can read this paper here at Bio
+Archive.
+[SPEAKER_00]: This is what we're going to be touching
+on.
+[SPEAKER_00]: A little bit about terminology.
+[SPEAKER_00]: When you're sequencing genomes,
+there's a couple of techniques that you
+[SPEAKER_00]: can use, but there's three in general that
+you've probably heard the most about.
+[SPEAKER_00]: You've probably heard about Illumina,
+often abbreviated as ILMN.
+[SPEAKER_00]: It's for nanopore.
+[SPEAKER_00]: There's a couple of flavors of PacBio.
+[SPEAKER_00]: There's PacBio continuous long read,
+which is running them all as long as you
+[SPEAKER_00]: can, not lapping it at all, and you have a
+much higher error rate that way.
+[SPEAKER_00]: Then there's PacBio CCS, which is a
+circular consensus sequencing.
+[SPEAKER_00]: That's the gerbil wheel.
+[SPEAKER_00]: That's when you run it over and over,
+getting it really high accuracy.
+[SPEAKER_00]: Only recently could they do this on 20 kb
+molecules.
+[SPEAKER_00]: We're going to touch on some of that most
+recent data toward the end of this.
+[SPEAKER_00]: That's what's known as HiFi sequencing.
+[SPEAKER_00]: The graph here on the left is just
+demonstrating which techniques give you
+[SPEAKER_00]: the most accurate genomes.
+[SPEAKER_00]: That's PB, CCS.
+[SPEAKER_00]: Hands down, this is the gold standard.
+[SPEAKER_00]: Nothing touches it.
+[SPEAKER_00]: There's exciting work coming out of Oxford
+Anapor and Illumina, but they don't have
+[SPEAKER_00]: the accuracy yet, and so they can be a bit
+challenging for assembling plant genomes.
+[SPEAKER_00]: They can help scaffold, though.
+[SPEAKER_00]: They may play a role in scaffolding some
+of the contigs together.
+[SPEAKER_00]: We're going to touch on a few of those
+things going forward.
+[SPEAKER_00]: Here, the methylation maps and the
+messenger RNA maps were done for these
+[SPEAKER_00]: five tissues.
+[SPEAKER_00]: The roots didn't seem to want to cooperate
+with us for the methylation map,
+[SPEAKER_00]: but we did manage to get some RNA out of
+the roots for sequencing.
+[SPEAKER_00]: A couple of interesting stories.
+[SPEAKER_00]: Here's the adestin gene that you can see
+across multiple different tissues having
+[SPEAKER_00]: different methylation patterns.
+[SPEAKER_00]: This makes sense because the adestin gene
+gets turned on when you make seeds.
+[SPEAKER_00]: This is the protein that makes hemp seeds
+sound nutritious.
+[SPEAKER_00]: This is the protein we need to understand
+if we want to feed the world.
+[SPEAKER_00]: This is a really important gene,
+cannabis, that you barely heard spoken
+[SPEAKER_00]: about.
+[SPEAKER_00]: You can see we have RNA transcript
+differences over here that are
+[SPEAKER_00]: tissue-specific, and we also have
+different methylation patterns.
+[SPEAKER_00]: Why do we care?
+[SPEAKER_00]: Well, methylation is a sign that genes are
+getting turned off.
+[SPEAKER_00]: When things are hypermethylated,
+when they're red, hyper meaning having
+[SPEAKER_00]: lots of methylation patterns, it silences
+transcription, and you don't get RNA out
+[SPEAKER_00]: of it.
+[SPEAKER_00]: When things are unmethylated, it begins to
+turn on transcription, and you end up
+[SPEAKER_00]: getting RNA off of it.
+[SPEAKER_00]: Methylation is involved in turning genes
+on and off.
+[SPEAKER_00]: It's always good to see correlations
+between the methylation patterns and the
+[SPEAKER_00]: promoters of genes and the RNA
+transcription that's coming off of it.
+[SPEAKER_00]: A bit about RNA.
+[SPEAKER_00]: We take these molecules of RNA and we
+clone them into a circle, or we put what
+[SPEAKER_00]: are known as smart bells on them,
+which makes the double-stranded DNA,
+[SPEAKER_00]: and then you put smart bells or DNA loops
+in the end of it.
+[SPEAKER_00]: When the polymerase latches on with the
+primer, it starts lapping this molecule,
+[SPEAKER_00]: peeling it apart, and running around and
+around in the circle.
+[SPEAKER_00]: This is known as circular consensus
+sequencing.
+[SPEAKER_00]: The RNA molecules are getting 50 to 100
+laps now.
+[SPEAKER_00]: This is one of the sequencers that had
+remarkable read lengths.
+[SPEAKER_00]: As a result, we could lap these things so
+many times that we're getting Q30,
+[SPEAKER_00]: Q40 DNA.
+[SPEAKER_00]: It means DNA sequence that has 1 in 1,000,
+1 in 10,000 error rate.
+[SPEAKER_00]: Here's the size of the RNA that we got out
+of tissues.
+[SPEAKER_00]: Then you can see the number of genes that
+were discovered in the process.
+[SPEAKER_00]: We call these high-quality isoforms.
+[SPEAKER_00]: Any given gene can actually make multiple
+isoforms because genes have introns and
+[SPEAKER_00]: nectrons, and those can get shuffled in
+various ways when it makes an RNA.
+[SPEAKER_00]: The RNA can choose to read every single
+exon of the gene, and then afterwards,
+[SPEAKER_00]: it may get spliced by the cell where it
+rips a couple exons out or skips a couple
+[SPEAKER_00]: exons and shuffles them around.
+[SPEAKER_00]: But that all happens in splicing the RNA.
+[SPEAKER_00]: When you start reading RNA molecules,
+you see all of the isoforms from a given
+[SPEAKER_00]: gene.
+[SPEAKER_00]: On average, there's probably about three
+isoforms per gene.
+[SPEAKER_00]: This is just demonstrating that if you
+look at this curve, here, based on the
+[SPEAKER_00]: number of isoforms, the number of reads,
+as we sequence more reads, we begin to
+[SPEAKER_00]: saturate the isoform discovery.
+[SPEAKER_00]: But you will notice that this is not yet
+saturated from any tissues.
+[SPEAKER_00]: So I would expect if we double down on
+sequencing here or sequence some more
+[SPEAKER_00]: tissues, we'll discover more genes than
+what we're going to describe here.
+[SPEAKER_00]: But this is one of the first surveys.
+[SPEAKER_00]: So the female genomes had over 27,000
+genes.
+[SPEAKER_00]: The exome's larger than human.
+[SPEAKER_00]: That's up at almost 44 megabase exome.
+[SPEAKER_00]: The exome includes UTRs, which are
+basically untranslated regions.
+[SPEAKER_00]: These are regions that include the
+promoter and can include some
+[SPEAKER_00]: determinators on the genes.
+[SPEAKER_00]: And then all the exons that actually code
+for stuff from the first methionine to the
+[SPEAKER_00]: last start and stop codon are known as
+CDS.
+[SPEAKER_00]: Those are coding sequences.
+[SPEAKER_00]: So the exome includes the UTRs.
+[SPEAKER_00]: And the coding sequence only includes the
+internal exons.
+[SPEAKER_00]: Now, this stuff is scattered or
+defragmented all over the cannabis genome,
+[SPEAKER_00]: if you will.
+[SPEAKER_00]: Across 121 megabases.
+[SPEAKER_00]: So very large introns, as well.
+[SPEAKER_00]: The genes are easily disrupted with
+structural variation.
+[SPEAKER_00]: Keith Allen published some work,
+encouraged people to look at this.
+[SPEAKER_00]: This is looking at a bunch of the terpene
+synthase genes in Jamaican lion.
+[SPEAKER_00]: And you can see the different families
+that are out there.
+[SPEAKER_00]: The family A, B, and C terpene synthase
+genes.
+[SPEAKER_00]: And the fact that they seem to have long
+introns in all of the family genes.
+[SPEAKER_00]: There isn't one particular gene family
+that has longer introns in the other.
+[SPEAKER_00]: And he's correlated this with some of the
+chemical data that they're seeing at Steep
+[SPEAKER_00]: Hill.
+[SPEAKER_00]: OK.
+[SPEAKER_00]: Now, the male is very interesting because
+the male is bigger.
+[SPEAKER_00]: The male has another 100 megabase.
+[SPEAKER_00]: It's an entirely new chromosome,
+the Y chromosome, that the females do not
+[SPEAKER_00]: have.
+[SPEAKER_00]: And as a result of this, we're seeing
+about 4,444 male-specific genes.
+[SPEAKER_00]: That brings the male gene model in this
+plan up to 32,000 genes.
+[SPEAKER_00]: And about 80 megabases of this is
+Y-specific.
+[SPEAKER_00]: And about 30 megabases is what's known as
+pseudoautosomal Y.
+[SPEAKER_00]: The pseudoautosomal region of Y still
+crosses over with the X.
+[SPEAKER_00]: So the genes that are on the Y that can
+still cross over with the X are important.
+[SPEAKER_00]: Because those are traits, male-based
+traits, that can make their way into the X
+[SPEAKER_00]: chromosome.
+[SPEAKER_00]: All right.
+[SPEAKER_00]: Now, the Y-specific sequence, the genes on
+that section, well, it's unlikely you're
+[SPEAKER_00]: going to find it breeding into your
+population unless you're keeping males
+[SPEAKER_00]: around.
+[SPEAKER_00]: All right.
+[SPEAKER_00]: Now, how do you assess whether these
+genomes are done?
+[SPEAKER_00]: Well, the best peer review is actually
+other people utilizing this data in
+[SPEAKER_00]: publications.
+[SPEAKER_00]: And you saw that with Keith's work.
+[SPEAKER_00]: And there's another paper here from the
+Oarsburn Laboratory that actually ran mass
+[SPEAKER_00]: spec, not on Jamaican Lion, even though
+this image up here makes you think they
+[SPEAKER_00]: ran on Jamaican Lion.
+[SPEAKER_00]: What they did is they got MS spectra of
+peptides off of the plants that they
+[SPEAKER_00]: worked on.
+[SPEAKER_00]: And then they mapped those peptide
+sequences to the Jamaican Lion reference.
+[SPEAKER_00]: And they're finding Jamaican Lion to have
+the most complete reference.
+[SPEAKER_00]: We know that from just looking at the
+assembly statistics.
+[SPEAKER_00]: We're going to go over that in a little
+bit as to what assembly statistics do you
+[SPEAKER_00]: look at in order to evaluate the
+completeness of genome.
+[SPEAKER_00]: But the other thing you can do is you can
+do an intersection, which is what we're
+[SPEAKER_00]: showing down here in this Venn diagram,
+which is that 98.8% of the mass spec data
+[SPEAKER_00]: we find corresponding homes for those in
+this DNA sequence information in the
+[SPEAKER_00]: Jamaican Lion genome.
+[SPEAKER_00]: Now, they discovered 12,000 peptides.
+[SPEAKER_00]: This is probably the first time they did
+it.
+[SPEAKER_00]: And I wouldn't be surprised if that number
+rises in time as they dial up the
+[SPEAKER_00]: sensitivity of the instrument or survey
+different tissues.
+[SPEAKER_00]: So they're only seeing about 40% of the
+peptides that we see throughout the entire
+[SPEAKER_00]: genome.
+[SPEAKER_00]: But that's actually pretty good.
+[SPEAKER_00]: When you think about how many genes are
+actually expressed in any given tissue,
+[SPEAKER_00]: it's rarely more than that.
+[SPEAKER_00]: So they're probably capturing every gene
+that's present in the tissues they
+[SPEAKER_00]: surveyed.
+[SPEAKER_00]: And if they survey more tissues,
+their number will probably soon match what
+[SPEAKER_00]: we see complete in the Jamaican Lion
+genome.
+[SPEAKER_00]: Mass spec data brings other information.
+[SPEAKER_00]: It brings the constellation signals that
+we don't have in the RNA data.
+[SPEAKER_00]: So it's an important tool to complement
+the data that we've got.
+[SPEAKER_00]: That being said, the RNA data is probably
+more sensitive.
+[SPEAKER_00]: We can get single molecules of RNA
+sequence very readily.
+[SPEAKER_00]: And I'm not as familiar with the
+sensitivities in the mass spec.
+[SPEAKER_00]: But I imagine it'd be challenging to get
+down to single molecule levels with the
+[SPEAKER_00]: complexity of the entire proteome.
+[SPEAKER_00]: But maybe that's possible.
+[SPEAKER_00]: So how do we start decorating these
+chromosomes?
+[SPEAKER_00]: We don't really have chromosomes right
+now.
+[SPEAKER_00]: We have an assembly that has contigs,
+which are just basically long contiguous
+[SPEAKER_00]: stretches of sequence.
+[SPEAKER_00]: And of course, those contigs are usually
+going to break when you hit the
+[SPEAKER_00]: centromeres of the genome and the
+telomeres, because those are the ends of
+[SPEAKER_00]: the chromosomes in the middle.
+[SPEAKER_00]: Sometimes, if you're really good at this,
+you can get through the centromeres.
+[SPEAKER_00]: They're just now getting through the
+centromeres on the human genome after,
+[SPEAKER_00]: I don't know, 10, how many years is that?
+[SPEAKER_00]: Now 20 years in trying to finish it.
+[SPEAKER_00]: So only recently have there been tools to
+do tip to tip or telomere to telomere
+[SPEAKER_00]: assemblies.
+[SPEAKER_00]: And we're starting to do that with
+Jamaican Lion.
+[SPEAKER_00]: So decorating the male, let's figure out
+what the Y is.
+[SPEAKER_00]: What you do is you take the male flower
+RNA, those isosec reads, you map them to
+[SPEAKER_00]: the female reference.
+[SPEAKER_00]: And then the reads that don't stick to
+that reference, you map back to the male.
+[SPEAKER_00]: That decorates the regions of the male
+genome that are unique to the male and
+[SPEAKER_00]: have no home in the female.
+[SPEAKER_00]: This is probably the part of the Y
+chromosome you might be seeing down here,
+[SPEAKER_00]: which doesn't cross over with X anymore.
+[SPEAKER_00]: This region up here, the top part of it,
+the smaller part is believed to still
+[SPEAKER_00]: cross over with X.
+[SPEAKER_00]: This one, if we want to decorate it,
+this is what we do.
+[SPEAKER_00]: And this gives us the information that is
+down here.
+[SPEAKER_00]: And when we do this, we find regions of
+DNA that amount to about the size of a
+[SPEAKER_00]: chromosome, 65 contigs, and one of the
+largest contigs in the genome.
+[SPEAKER_00]: There's about 427 Busco genes in here,
+which is interesting.
+[SPEAKER_00]: So Busco is a tool that we use to measure
+the completeness of genomes.
+[SPEAKER_00]: There's just over 2,000 genes in the Busco
+data set that they believe should exist in
+[SPEAKER_00]: all plants.
+[SPEAKER_00]: And you want to find over 90% of those.
+[SPEAKER_00]: In fact, Jamaica Lion is finding around
+97% of those genes are in the Jamaica Lion
+[SPEAKER_00]: reference.
+[SPEAKER_00]: And that gives you a sense as to how
+complete the genome is.
+[SPEAKER_00]: But some of those are on the Y,
+which is kind of interesting.
+[SPEAKER_00]: Unclear whether they're duplicates or not.
+[SPEAKER_00]: They might have counterparts on other
+parts of the genome, but that's something
+[SPEAKER_00]: to know.
+[SPEAKER_00]: Now, the other thing to take note of is
+this process isn't perfect.
+[SPEAKER_00]: There could be structural variants that
+are novel in the male genome that aren't
+[SPEAKER_00]: male specific.
+[SPEAKER_00]: They're just not in the female,
+but they're on one of the autosomes.
+[SPEAKER_00]: And we're touching a few of those.
+[SPEAKER_00]: And those would make it through this
+process.
+[SPEAKER_00]: So this is a combination of both what is
+male specifically expressed and also any
+[SPEAKER_00]: novel structural variations, particularly
+inserts, that could be in the male genome
+[SPEAKER_00]: that would make its way through this that
+aren't in the female.
+[SPEAKER_00]: And we have a way to solve that.
+[SPEAKER_00]: The way to solve that is with a whole lot
+of whole genome shotgun sequencing,
+[SPEAKER_00]: which we'll touch on in a bit.
+[SPEAKER_00]: OK, so let's back up and talk about how
+you build reference to great genomes.
+[SPEAKER_00]: Well, the best tools today are using
+Pacific Biosciences tools.
+[SPEAKER_00]: There's also some Oxford Nanopore material
+working out there.
+[SPEAKER_00]: We're not fond of it at the moment because
+of its aerate.
+[SPEAKER_00]: And the cannabis genome being so
+repetitive makes it really expensive and
+[SPEAKER_00]: challenging to assemble genomes with its
+aerate.
+[SPEAKER_00]: There are attempts to try and polish that
+aerate with aluminum We have found that to
+[SPEAKER_00]: be somewhat faulty just due to the fact
+that you really can't error correct ONT
+[SPEAKER_00]: data in regions that aren't mappable with
+aluminum.
+[SPEAKER_00]: You get too many reads that pile up in
+that region and you don't really know
+[SPEAKER_00]: where they came from.
+[SPEAKER_00]: And so your error correction is really a
+mirage.
+[SPEAKER_00]: So we stick with the highest quality long
+reads we can get.
+[SPEAKER_00]: And that's with PacBio.
+[SPEAKER_00]: So here's the dash funded female genome.
+[SPEAKER_00]: This was then crossed with the male.
+[SPEAKER_00]: This offspring was actually selected.
+[SPEAKER_00]: I'm sorry, it was a female.
+[SPEAKER_00]: This offspring was selected because it was
+a runt.
+[SPEAKER_00]: We were interested in genes or deletions
+that might impact yield.
+[SPEAKER_00]: And so we selected one of the offspring
+that looked like it was having trouble
+[SPEAKER_00]: growing and turned out to be a real
+stubborn runt with hyperbranching and
+[SPEAKER_00]: whatnot.
+[SPEAKER_00]: OK, so we did we did tons of sequencing.
+[SPEAKER_00]: For those who don't know, this is like
+200x coverage of one of these genomes.
+[SPEAKER_00]: This is 150x coverage of these genomes,
+right?
+[SPEAKER_00]: We absolutely hammered these things with
+more sequence coverage than you would ever
+[SPEAKER_00]: need for a couple of reasons.
+[SPEAKER_00]: One, we didn't really know how big the
+genome was going to be.
+[SPEAKER_00]: Most other genome projects today were
+still below the one megabase and 50
+[SPEAKER_00]: number, which meant they were broken and
+not quite mature.
+[SPEAKER_00]: Most of the DNA assembling people out
+there in the world want to see one
+[SPEAKER_00]: megabase or greater in 50s to call it in
+the megabase club.
+[SPEAKER_00]: And we're pushing up to three and beyond.
+[SPEAKER_00]: You'll see some later data pushing up to
+five and eight.
+[SPEAKER_00]: Now, this is really the most important
+metric is how long these contigs are,
+[SPEAKER_00]: how deep they've been covered,
+and with what accuracy you have in the raw
+[SPEAKER_00]: data, because this is the information
+you're going to look for single nucleotide
+[SPEAKER_00]: changes in that are going to make an
+impact on protein function and make an
+[SPEAKER_00]: impact on evolution.
+[SPEAKER_00]: We measure almost all of the selective
+pressure by looking at these these changes
+[SPEAKER_00]: in SNPs, and you want those to be
+extraordinarily accurate.
+[SPEAKER_00]: And the longer this gets and the better
+these busco scores get, that's a sign that
+[SPEAKER_00]: you're coming to completion on the genome
+and that you're doing it with with the
+[SPEAKER_00]: largest number of most contiguous genome
+that you can put together.
+[SPEAKER_00]: Now, there are some other genomes out
+there.
+[SPEAKER_00]: That have 750 KB and 50, and they've tried
+to glue some of those contigs in order and
+[SPEAKER_00]: orient them into a scaffold by using some
+linkage information and breeding.
+[SPEAKER_00]: And that's an interesting approach.
+[SPEAKER_00]: The only challenge is the linkage
+information that people are are utilizing
+[SPEAKER_00]: is coming from the Illumina sequencer,
+which has really short reads and the reads
+[SPEAKER_00]: don't always map very effectively.
+[SPEAKER_00]: And so there is some confusion over what
+the chromosome names are right now in
+[SPEAKER_00]: NCBI.
+[SPEAKER_00]: And we're hoping we'll be able to address
+that with some of the data we have here.
+[SPEAKER_00]: OK, so in addition to doing that trio with
+PacBio, we then busted out an Illumina
+[SPEAKER_00]: sequencer and sequenced another 40
+genomes.
+[SPEAKER_00]: And in that 40 genomes was the rest of the
+family.
+[SPEAKER_00]: OK, so one of these, JL number five,
+which turned out to be the runt of all
+[SPEAKER_00]: these was sequenced with PacBio.
+[SPEAKER_00]: The rest of these, well, it was and also
+got resequenced with Illumina.
+[SPEAKER_00]: Now, what you're looking at here,
+we've described in our Canapedia tutorial.
+[SPEAKER_00]: This is the sequence coverage over certain
+genes.
+[SPEAKER_00]: In the genome, type two plants have
+coverage across all of them.
+[SPEAKER_00]: Type three only have coverage over CBD
+synthase.
+[SPEAKER_00]: We don't have any type ones in here.
+[SPEAKER_00]: We have mostly type twos and type threes.
+[SPEAKER_00]: OK, type ones would have only coverage
+over THC synthase.
+[SPEAKER_00]: All right, we also did an outcross.
+[SPEAKER_00]: So we've got some sequencing information
+on not just sequencing across between an
+[SPEAKER_00]: inbred pair, but we also outbred it to
+blueberry cheesecake.
+[SPEAKER_00]: And we have some of the offspring of those
+as well.
+[SPEAKER_00]: So an interesting entry.
+[SPEAKER_00]: OK, so now if you look at the 40 genomes
+we sequenced and you take those Illumina
+[SPEAKER_00]: reads and you map them against the
+maternal reference here, you can see the
+[SPEAKER_00]: number of SNPs that we're seeing compared
+to the Jamaican lion reference.
+[SPEAKER_00]: So we're getting you can see the number of
+SNPs up here is in the 12 to 14000 range.
+[SPEAKER_00]: This axis of the insertions and deletions,
+they're highly concordant with the actual
+[SPEAKER_00]: single nucleotide changes.
+[SPEAKER_00]: And you'll notice all these type ones are
+about 10, 12, maybe 16 million steps
+[SPEAKER_00]: apart.
+[SPEAKER_00]: But when you get into the Jamaican lion
+family, it tends to dip.
+[SPEAKER_00]: And that's because these are all closely
+related.
+[SPEAKER_00]: So, of course, they have more similar
+genomes to their parents than they do to
+[SPEAKER_00]: anything else.
+[SPEAKER_00]: And so these map out of really,
+really producing very few SNPs.
+[SPEAKER_00]: All in all, we ended up with about 58
+million variants in here.
+[SPEAKER_00]: These are all mapped with Dragon and
+Parabrix, two different tools for doing
+[SPEAKER_00]: hardware acceleration for sequencing
+mapping.
+[SPEAKER_00]: And we kept these all down below five
+cycle of PCR with, as we mentioned before.
+[SPEAKER_00]: So when you have those PCR cycles done at
+a really low number of cycles,
+[SPEAKER_00]: you can count on the coverage information
+in the sequencing to give you patterns of
+[SPEAKER_00]: deletions and insertions, what we call
+copy number variations or CNVs.
+[SPEAKER_00]: And what you're looking at here is a
+collection of all the cannabinoid synthase
+[SPEAKER_00]: genes.
+[SPEAKER_00]: I'm not going to say all, but the ones
+that we've curated to believe matter.
+[SPEAKER_00]: And of course, these are all the ones we
+found in the reference, the Jamaican lion
+[SPEAKER_00]: reference.
+[SPEAKER_00]: OK, if you do another reference like CBDRX
+or Purple Kush, they might have other
+[SPEAKER_00]: cannabinoid synthase genes we don't have.
+[SPEAKER_00]: Right.
+[SPEAKER_00]: I mean, just take a look at this map.
+[SPEAKER_00]: You'd be a fool not to think that because
+even looking at this through the lens of
+[SPEAKER_00]: Jamaican lion, all these blue areas are
+lines, cannabis varietals that have
+[SPEAKER_00]: deletions in certain core genes that are
+certain cannabinoid synthase genes.
+[SPEAKER_00]: Well, this blue space you see is just
+gone.
+[SPEAKER_00]: Cannabinoid synthase genes that aren't in
+those genomes.
+[SPEAKER_00]: The red ones have two copies.
+[SPEAKER_00]: And the purple stuff are haploid there.
+[SPEAKER_00]: They have like a single copy.
+[SPEAKER_00]: OK, so their mother genome might have the
+deletion there, but their father genome
+[SPEAKER_00]: has it.
+[SPEAKER_00]: So you can see there's a tremendous amount
+of copy number change here over these
+[SPEAKER_00]: genes.
+[SPEAKER_00]: And so we'd be a little bit naive to think
+that if we surveyed other cannabis
+[SPEAKER_00]: genomes, that there might not be a longer
+set of these genes that the Jamaican lion
+[SPEAKER_00]: genome is actually missing a few that we
+don't know about.
+[SPEAKER_00]: Right.
+[SPEAKER_00]: This is the reason why we believe it's
+important to do a pan genome, because when
+[SPEAKER_00]: you view all these genomes through a
+single lens of Jamaican lion, you're only
+[SPEAKER_00]: going to see all the genes that are in
+Jamaican lion in the other genomes.
+[SPEAKER_00]: But you're not going to see the gene
+content that is novel to the other genomes
+[SPEAKER_00]: that Jamaican lion doesn't have.
+[SPEAKER_00]: OK.
+[SPEAKER_00]: And that's a very big number is what we're
+anticipating.
+[SPEAKER_00]: And we'll show you that in a slide or two
+forward when we look at structural
+[SPEAKER_00]: variations, which are a similar form of
+variation.
+[SPEAKER_00]: OK.
+[SPEAKER_00]: On the right hand side are 82 different
+genes involved in pathogen response.
+[SPEAKER_00]: These are chitinases.
+[SPEAKER_00]: Thalmatin-like proteins or TLPs,
+you hear us call them for short.
+[SPEAKER_00]: And then MLO, which is a mildew low low
+low side that's been tracked down in hops.
+[SPEAKER_00]: Why did we pick these?
+[SPEAKER_00]: Well, these are just genes in the
+literature that we families of genes and
+[SPEAKER_00]: literature that we know have been tied to
+powdery mildew resistance in hops.
+[SPEAKER_00]: And we did have some powdery mildew
+resistance information from a couple of
+[SPEAKER_00]: the growers.
+[SPEAKER_00]: The green lines down here are powdery
+mildew resistant and the pink ones aren't.
+[SPEAKER_00]: And of course, what do you see as in the
+heat map like this?
+[SPEAKER_00]: You get a little bit of a correlation that
+all the samples over here seem to have a
+[SPEAKER_00]: pattern that's different than the ones
+over here.
+[SPEAKER_00]: And maybe that is what is driving powdery
+mildew resistance in these.
+[SPEAKER_00]: So it's a whim.
+[SPEAKER_00]: It could be that all of these samples are
+Jamaican lion.
+[SPEAKER_00]: Not all of them, but a lot of them are.
+[SPEAKER_00]: And that they just happen to have a shared
+ancestry.
+[SPEAKER_00]: And that this pattern of different TLPs
+and MLOs is just an artifact of their
+[SPEAKER_00]: ancestry and has nothing to do with it.
+[SPEAKER_00]: It has nothing to do with resistance.
+[SPEAKER_00]: Well, what was really interesting to us is
+that a few of these samples that proven to
+[SPEAKER_00]: be extraordinarily powdery mildew
+resistant and aren't related to Jamaican
+[SPEAKER_00]: lion have a copy number amplification on
+some chitinases.
+[SPEAKER_00]: And likewise, there is a palmitene like
+protein that has been amplified in these
+[SPEAKER_00]: as well.
+[SPEAKER_00]: And I can't see this very clearly here,
+but we'll show you which one that is going
+[SPEAKER_00]: forward.
+[SPEAKER_00]: But we took a couple of these genes that
+were amplified and seem to have the most
+[SPEAKER_00]: extreme copy number changes and cloned
+them.
+[SPEAKER_00]: And the way you do this is you run a PCA
+analysis.
+[SPEAKER_00]: I don't have the PCA in here, but if you
+run a PCA analysis on this, the genes that
+[SPEAKER_00]: stick out as having the most signature in
+the PCA analysis are what we chose to
+[SPEAKER_00]: clone and to express.
+[SPEAKER_00]: Now, you also want to look upstream,
+right?
+[SPEAKER_00]: So the cannabinoid precursor genes are
+probably playing a role in the magnitude
+[SPEAKER_00]: of cannabinoids.
+[SPEAKER_00]: They're not going to dictate whether you
+make CHCVD or THC, but that might dictate
+[SPEAKER_00]: how much you make.
+[SPEAKER_00]: And there have been previous copy number
+amplifications that have been described by
+[SPEAKER_00]: John Page on AA1.
+[SPEAKER_00]: And we might have some of that here in
+this if I read this correctly.
+[SPEAKER_00]: And there's a couple other ones that have
+deletions.
+[SPEAKER_00]: So we're keeping an eye on some of the
+precursors that may be involved in
+[SPEAKER_00]: modulating the amount of cannabinoids.
+[SPEAKER_00]: And the other thing we're looking at are
+the trichome birefringement genes,
+[SPEAKER_00]: which may be playing a role in trichome
+development shape or size.
+[SPEAKER_00]: But we don't know.
+[SPEAKER_00]: We're just kind of looking for a lot of
+consistency in here in this part.
+[SPEAKER_00]: But then you get down here and some of
+these genes look like they might be
+[SPEAKER_00]: differentially modulated or have different
+copy number and may be playing a role in
+[SPEAKER_00]: trichomes.
+[SPEAKER_00]: So there's just a really rich set of
+information here.
+[SPEAKER_00]: And by no means have we thoroughly mined
+this data set.
+[SPEAKER_00]: We put it public because we think having
+millions of lives look at this is going to
+[SPEAKER_00]: be more productive than having it rust
+between our own servers.
+[SPEAKER_00]: So that being said, we did comb through
+the RNA.
+[SPEAKER_00]: We put in some DNA data to try and hunt
+down which of these genes should be
+[SPEAKER_00]: cloned.
+[SPEAKER_00]: I mentioned before we did a PCA analysis.
+[SPEAKER_00]: That populated a couple candidates.
+[SPEAKER_00]: After we had those candidate genes,
+we asked the same question as well.
+[SPEAKER_00]: Are those same candidate genes that the
+PCA pulled out from a copy number
+[SPEAKER_00]: standpoint in the genome?
+[SPEAKER_00]: Do they also have a lot of RNA being
+expressed?
+[SPEAKER_00]: So these are the cannabinoid synthase
+genes.
+[SPEAKER_00]: These are the different tissues.
+[SPEAKER_00]: And you can see that we do have some
+expression, but it is pretty much zero
+data.
+[SPEAKER_00]: We put in on having expression that is
+tissue specific for only a couple of the
+[SPEAKER_00]: genes.
+[SPEAKER_00]: In fact, the cannabichromine genes seem to
+only be expressed at least in this
+[SPEAKER_00]: Jamaican lion plant and in the males.
+[SPEAKER_00]: That may not be true in other plants.
+[SPEAKER_00]: I've heard of cannabichromine getting
+expressed in female flowers, but it's just
+[SPEAKER_00]: not the case with Jamaican lion.
+[SPEAKER_00]: At least at the time point we harvested
+this RNA.
+[SPEAKER_00]: You look down here at the actual
+chitinases, the TLOs or the TLPs and the
+[SPEAKER_00]: MLOs, and you see much different picture.
+[SPEAKER_00]: A handful of genes here that just don't
+care.
+[SPEAKER_00]: They're not on at all.
+[SPEAKER_00]: But you get down here and there are some
+heavily expressed genes.
+[SPEAKER_00]: In fact, the most heavily differentially
+expressed gene in the genome are the
+[SPEAKER_00]: chitinases.
+[SPEAKER_00]: That was a red flag to us.
+[SPEAKER_00]: In fact, they're not expressed in the
+roots at all.
+[SPEAKER_00]: And we think that's because the roots want
+to communicate with the mycorrhizal and
+[SPEAKER_00]: the fungi environment underneath the soil.
+[SPEAKER_00]: It doesn't want to use chitinases that
+destroy microbes that could be doing
+[SPEAKER_00]: nitrogen fixation for it.
+[SPEAKER_00]: However, everywhere else on the plant,
+it's expressing chitinases galore.
+[SPEAKER_00]: And we just confirmed some of this RNA
+sequencing information with some of the
+[SPEAKER_00]: methylation information to zero in on
+which one of these chitinases we're going
+[SPEAKER_00]: to clone.
+[SPEAKER_00]: And this is the one that got cloned and is
+sitting on plates with usarium as we
+[SPEAKER_00]: speak.
+[SPEAKER_00]: There's some methylation patterns in here
+that we were combing over.
+[SPEAKER_00]: This is what they look like actually when
+you bring them up in an IGV read viewer or
+[SPEAKER_00]: genome browser.
+[SPEAKER_00]: As you see all of these blue regions and
+these red regions that are being silenced.
+[SPEAKER_00]: OK, so now that we have these enzymes,
+these targets, the genome, what do you do?
+[SPEAKER_00]: You take that gene, you clone it into a
+coli, and you express it.
+[SPEAKER_00]: And you get the coli to make lots of this
+protein.
+[SPEAKER_00]: And then if you're smart about this,
+you put a little histag on the end of the
+[SPEAKER_00]: protein.
+[SPEAKER_00]: This is for histidines, which happens to
+bind to nickel very readily.
+[SPEAKER_00]: So when you're done making this protein,
+you can bind it to a nickel column,
+[SPEAKER_00]: rinse it off, and hopefully still have
+active peptide.
+[SPEAKER_00]: And you come off this process.
+[SPEAKER_00]: Doesn't always work perfectly because the
+tags sometimes alter the protein.
+[SPEAKER_00]: Sometimes the coli glycosylates the
+protein differently than you'd expect in
+[SPEAKER_00]: the plant.
+[SPEAKER_00]: Sometimes it doesn't fold correctly in the
+plant.
+[SPEAKER_00]: So it's a bit of a gamble.
+[SPEAKER_00]: And we got quite lucky on this gamble.
+[SPEAKER_00]: After we got this cloned and expressed,
+we took the protein and started putting it
+[SPEAKER_00]: through beta-gluconase assays.
+[SPEAKER_00]: These are assays that have a fluorescently
+labeled insoluble beta-glucon molecule
+[SPEAKER_00]: that after it's digested, it's soluble.
+[SPEAKER_00]: So you can monitor the digestion capacity
+of a thometin-like protein by putting it
+[SPEAKER_00]: through this assay for a set period of
+time.
+[SPEAKER_00]: You put a little bit of enzyme in there,
+and if it's good at doing its job,
+[SPEAKER_00]: it will chew up that insoluble glucon
+that's fluorescently labeled.
+[SPEAKER_00]: And the fluorescent molecules that come
+off that digestion process are now smaller
+[SPEAKER_00]: sugar units, and now they're soluble.
+[SPEAKER_00]: So you can then spin down the insoluble
+fraction and then measure the absorption
+[SPEAKER_00]: that's in the supernatant, and you get a
+measurement as to how active your enzyme
+[SPEAKER_00]: is.
+[SPEAKER_00]: Well, we have some activity from the
+enzyme that came out of beta-glucon.
+[SPEAKER_00]: That's very exciting.
+[SPEAKER_00]: And we've been comparing this TLP enzyme
+to some other chitinases and, I'm sorry,
+[SPEAKER_00]: chitinases and some other enzymes from a
+snail, actually.
+[SPEAKER_00]: The snail one is quite active.
+[SPEAKER_00]: You can see some of that repeated over
+here.
+[SPEAKER_00]: We're playing around with TLP that came
+out of the inclusion bodies of E.
+[SPEAKER_00]: coli versus ones that are cytoplasmic
+versus a couple of the other blanks.
+[SPEAKER_00]: And what we want to see is that there is a
+high signal here.
+[SPEAKER_00]: This is the positive control, is what
+happens if it's perfect, and you want the
+[SPEAKER_00]: signal to almost reach the positive
+control.
+[SPEAKER_00]: All right, so we're getting the most
+expression from TLP here, and from here,
+[SPEAKER_00]: this one went through dialysis to change
+the buffer.
+[SPEAKER_00]: But when you apply these to plants,
+what you want to look for are,
+[SPEAKER_00]: now here are the Jamaican lion plants that
+have the enzymes natally expressed,
+[SPEAKER_00]: and they're not getting powdery mildew
+despite having been placed in a tent
+[SPEAKER_00]: surrounded by this guy who has it all over
+him.
+[SPEAKER_00]: And it doesn't seem to transfer.
+[SPEAKER_00]: Even if you take them and put the leaves
+side by side, we don't get a transfer.
+[SPEAKER_00]: There are transfer protocols described by
+Dr. Punja.
+[SPEAKER_00]: He has some protocols with certain amount
+of humidity.
+[SPEAKER_00]: You put these and you should get transfer
+from one to the other.
+[SPEAKER_00]: Now, the other thing we do outside of
+these assays is we grow some of the
+[SPEAKER_00]: endophytes from the plant on actual petri
+dishes.
+[SPEAKER_00]: Now, we couldn't do that with powdery
+mildew over here because powdery mildew is
+[SPEAKER_00]: an obligate biotrope.
+[SPEAKER_00]: There's no way to culture it other than on
+a leaf.
+[SPEAKER_00]: So we are working on foliar sprays,
+and we do have some photographs of
+[SPEAKER_00]: applying this to the plant.
+[SPEAKER_00]: And there does seem to be some decay of
+the powdery mildew when you put enzyme on
+[SPEAKER_00]: these.
+[SPEAKER_00]: I don't have those photographs in this
+presentation, but they'll be posted.
+[SPEAKER_00]: They've been posted online before.
+[SPEAKER_00]: But what you're looking for is you take
+this technique where you put these tabs of
+[SPEAKER_00]: Watman paper.
+[SPEAKER_00]: You have to sterilize them, of course,
+right next to the colony as it grows out.
+[SPEAKER_00]: And right as the colony begins to touch
+those tabs, you start adding in the amount
+[SPEAKER_00]: of enzyme to see if the enzyme retards any
+growth.
+[SPEAKER_00]: And here's the blank, which is the vehicle
+control that this enzyme is in.
+[SPEAKER_00]: And it seems to not do much.
+[SPEAKER_00]: 20 microliters of TLP didn't seem to do
+much on its own.
+[SPEAKER_00]: You add in a little bit of two different
+flavors of this enzyme and you start to
+[SPEAKER_00]: see it turn blue.
+[SPEAKER_00]: And you put in a chitinase and a TLP here,
+and you can really see an impact here.
+[SPEAKER_00]: This line of blue and the cheese.
+[SPEAKER_00]: This is a type of penicillium that you
+find in blue cheese.
+[SPEAKER_00]: And you can see it starts to give you that
+cheese-like look where the blue is
+[SPEAKER_00]: starting to change color.
+[SPEAKER_00]: And there's an indentation on this growth
+in advance.
+[SPEAKER_00]: Well, we did the same thing with fusarium
+and aspergillus.
+[SPEAKER_00]: And the aspergillus didn't seem to make a
+big dent, but we only did it with the TLP.
+[SPEAKER_00]: We're trying to get more chitinase,
+so we do it with both.
+[SPEAKER_00]: And we'll see if the cannabis chitinase
+actually fights it back a little bit
+[SPEAKER_00]: better.
+[SPEAKER_00]: But with fusarium, what you can see here
+is that in the high and the medium side of
+[SPEAKER_00]: this experiment, we're getting all types
+of disruption of growth.
+[SPEAKER_00]: In fact, the pigment is changing.
+[SPEAKER_00]: This discoloration in pigment has been
+published before.
+[SPEAKER_00]: When you add any type of mytoside on here
+or mycoside that might actually kill
+[SPEAKER_00]: fungi, the autofusarium expression turns
+off.
+[SPEAKER_00]: And so you lose the pink pigment as you're
+starting to kill it.
+[SPEAKER_00]: So that's a great assay to show you that
+the enzymes actually have some
+[SPEAKER_00]: functionality.
+[SPEAKER_00]: So we think we've got a good model for
+powdery mildew resistance in Jamaican
+[SPEAKER_00]: lion.
+[SPEAKER_00]: We don't believe that we've nailed powdery
+mildew resistance for all cultivars,
+[SPEAKER_00]: because when you see this many genes
+involved in pathogen response,
+[SPEAKER_00]: there's probably a dozen different ways to
+skin the cat.
+[SPEAKER_00]: And there's probably convergent evolution,
+where we see other plants have copy number
+[SPEAKER_00]: amplifications of other proteins that
+we're not paying attention to or that just
+[SPEAKER_00]: aren't necessarily amplified in Jamaican
+lion.
+[SPEAKER_00]: And those may in fact be another source of
+powdery mildew resistance in other plants.
+[SPEAKER_00]: So we can't claim that this is the powdery
+mildew resistance gene for all of
+[SPEAKER_00]: cannabis.
+[SPEAKER_00]: I don't think that will be the case.
+[SPEAKER_00]: I think we're going to find multiple
+different modes of resistance as we go
+[SPEAKER_00]: forward.
+[SPEAKER_00]: Nevertheless, we do have tools that can
+help monitor this while you're breeding to
+[SPEAKER_00]: know whether your relative number of genes
+is going up or down in the process of
+[SPEAKER_00]: breeding.
+[SPEAKER_00]: You certainly don't want to breed yourself
+into a corner.
+[SPEAKER_00]: Where you're missing some of these genes.
+[SPEAKER_00]: Now, I do want to go back to tell you why
+that's important.
+[SPEAKER_00]: This area here in the cannabinoid synthase
+map here, where you see full blown
+[SPEAKER_00]: deletions for a very large section of the
+genome.
+[SPEAKER_00]: This is actually the cannabichromine
+cluster.
+[SPEAKER_00]: There are eight cannabichromine genes in
+here.
+[SPEAKER_00]: It's labeled as inactive THC synthase in
+NCBI.
+[SPEAKER_00]: And that's because when they first
+discovered this, they noticed it didn't
+[SPEAKER_00]: make a whole lot of THC.
+[SPEAKER_00]: But it's believed that it could leak some.
+[SPEAKER_00]: If you take these genes, CBD, THC,
+and CBC, and you clone them into yeast and
+[SPEAKER_00]: feed them precursor under different
+conditions, they will promiscuously make
+[SPEAKER_00]: multiple cannabinoids.
+[SPEAKER_00]: Each enzyme itself is not a pure chemical
+reaction.
+[SPEAKER_00]: It has off-target effects.
+[SPEAKER_00]: THC synthase can make little CBD synthase.
+[SPEAKER_00]: CBD synthase can make little THC synthase.
+[SPEAKER_00]: And CDC is believed to be able to make
+both the others as well, although it's
+[SPEAKER_00]: less documented.
+[SPEAKER_00]: So what else is carried along in this
+deletion?
+[SPEAKER_00]: Well, this deletion also carries on.
+[SPEAKER_00]: It's CONTAKT 756 down here.
+[SPEAKER_00]: And you can see anything labeled with
+CONTAKT 756.
+[SPEAKER_00]: The blue is in that deletion.
+[SPEAKER_00]: And these genes happen to be NIP1,
+TPS1, PIP1, NPF1, RMT.
+[SPEAKER_00]: In fact, these genes are all involved in
+pathogen response.
+[SPEAKER_00]: One of them is an aquaporin receptor.
+[SPEAKER_00]: The other one is like a gibbrillin
+receptor.
+[SPEAKER_00]: This is stuff we can't talk about.
+[SPEAKER_00]: These are important genes that are really
+close to the cannabinoid, the
+[SPEAKER_00]: cannabichromine cluster.
+[SPEAKER_00]: And you can see the deletion has a
+variable stop point for each one of these
+[SPEAKER_00]: cultivars.
+[SPEAKER_00]: Not all of them have the deletion stopping
+at the same point.
+[SPEAKER_00]: So there's some heterogeneity in the 3'
+end of this deletion that you might want
+[SPEAKER_00]: to track because it's very easy for you to
+breed for a cannabichromine-deleted plant
+[SPEAKER_00]: if you want to lower some THC levels in
+maybe your type 3 plants.
+[SPEAKER_00]: You just search for one that doesn't have
+this and cross it.
+[SPEAKER_00]: And if it's a type 3 plant and you crossed
+across, you'll be OK.
+[SPEAKER_00]: You'll notice a lot of type 3 plants in
+here actually have the CBC.
+[SPEAKER_00]: So a really easy thing to do is maybe
+cross it with some type 2s that don't and
+[SPEAKER_00]: see if you can lower your THC levels.
+[SPEAKER_00]: Notice a lot of type 1s have it as well.
+[SPEAKER_00]: Not all of them, but some of them have at
+least half.
+[SPEAKER_00]: But these guys have two copies of
+cannabichromine synthase or kind of
+[SPEAKER_00]: trainwreck.
+[SPEAKER_00]: And I think the other one is Citrix or
+Black 84.
+[SPEAKER_00]: So we see them more in the hemp lines than
+in necessarily the THC lines.
+[SPEAKER_00]: But these full-blown homozygous deletions
+are really a sight to see.
+[SPEAKER_00]: This is another reason why naming the
+actual chromosomes is going to get delayed
+[SPEAKER_00]: because a 2-megabase deletion of this size
+would confuse you as to whether you were
+[SPEAKER_00]: chromosome 5 or chromosome 6.
+[SPEAKER_00]: The chromosomes are usually numbered by
+size.
+[SPEAKER_00]: If one of your chromosomes happens to have
+a 2-megabase deletion, well, it's going to
+[SPEAKER_00]: confuse you as to whether it's your
+chromosome of similar size.
+[SPEAKER_00]: So pathogen response and cannabinoids,
+these are important gene copy number
+[SPEAKER_00]: events to monitor in your plants.
+[SPEAKER_00]: I'd recommend you sequence your parent
+lines so you know what you have.
+[SPEAKER_00]: And then you can probably aluminum
+sequence and even maybe do panel
+[SPEAKER_00]: sequencing or snip chips on the offspring
+to lower costs.
+[SPEAKER_00]: But you probably want your parents done
+whole genome scale so you know what you're
+[SPEAKER_00]: dealing with and you know what cards
+you've been dealt.
+[SPEAKER_00]: Now let's get on to the real hairy part of
+the presentation.
+[SPEAKER_00]: So one thing you can do with these very
+long reads is you can begin to ask between
+[SPEAKER_00]: the trio, how many structural variations
+do I have?
+[SPEAKER_00]: How many times do I have a long read from
+the sibling or from the offspring that
+[SPEAKER_00]: looks like it's got a large deletion or
+large insertion in it?
+[SPEAKER_00]: These are called structural variants.
+[SPEAKER_00]: Now structural variants sometimes can also
+be a little bit different than a copy
+[SPEAKER_00]: number variant, although a copy number
+variant is a subclass of a structural
+[SPEAKER_00]: variation.
+[SPEAKER_00]: Copy number events tend to increase or
+decrease the copy number of the DNA.
+[SPEAKER_00]: There are such things as balanced
+translocations and inversions in the
+[SPEAKER_00]: genome where two chromosome tips swap.
+[SPEAKER_00]: Copy hasn't changed, but their structure
+has.
+[SPEAKER_00]: Same thing is true with a balanced
+deletion or an inversion where something
+[SPEAKER_00]: just flips on you.
+[SPEAKER_00]: Copy number hasn't changed, but its order
+and orientation in the genome has.
+[SPEAKER_00]: Those tend to, structural variants are a
+larger class where C and Vs are just a
+[SPEAKER_00]: subset of them.
+[SPEAKER_00]: So when we do this, we see 17,000
+heterozygous deletions and 9,000
+[SPEAKER_00]: homozygous deletions in the male flower
+and the offspring has even more.
+[SPEAKER_00]: So this is actually a tremendous amount of
+variation that we're seeing.
+[SPEAKER_00]: In fact, it looks to be like it's over an
+eighth of the genome and includes some
+[SPEAKER_00]: busco genes.
+[SPEAKER_00]: So if there is this much structural
+variation going on in an inbred trio.
+[SPEAKER_00]: Now granted, I think this might be an
+extreme case, even though it's an inbred
+[SPEAKER_00]: trio.
+[SPEAKER_00]: I think the selection of the runt has
+caused some of this, that this thing was
+[SPEAKER_00]: probably an unstable genome.
+[SPEAKER_00]: And so we have a really high structural
+variation map right now, but it's quite
+[SPEAKER_00]: surprising that it can happen in just a
+matter of 12 Cs.
+[SPEAKER_00]: One of them is a runt and we have all the
+structural variation.
+[SPEAKER_00]: That's quite remarkable.
+[SPEAKER_00]: Likewise, all of the Illumina data on the
+other 40 genomes supports lots of copy
+[SPEAKER_00]: number variation.
+[SPEAKER_00]: So it kind of implies this isn't really
+unique to our situation here, that there
+[SPEAKER_00]: is in fact a lot of genome plasticity in
+cannabis.
+[SPEAKER_00]: To give you some perspective, the human
+genomes have like seven events per
+[SPEAKER_00]: megabase in SV and they have maybe a
+similar number of events, but they tend to
+[SPEAKER_00]: be much smaller and only one percent of
+the genome.
+[SPEAKER_00]: All right, we're we're upwards to 12
+percent of the genome.
+[SPEAKER_00]: So this is a much harder problem in
+cannabis than human.
+[SPEAKER_00]: Now, so that makes you think, how can you
+pick a single reference?
+[SPEAKER_00]: Well, you really can't.
+[SPEAKER_00]: But if you're forced to pick a single
+reference, there are some criteria that
+[SPEAKER_00]: you should think about in picking them.
+[SPEAKER_00]: At the moment, if you go to NCBI,
+it will probably graduate anyone who's
+[SPEAKER_00]: dared to call chromosomes and cannabis.
+[SPEAKER_00]: And a couple of people have tried.
+[SPEAKER_00]: And as a result, the three genomes that
+are in there and none of them agree on the
+[SPEAKER_00]: chromosome nomenclature.
+[SPEAKER_00]: All right.
+[SPEAKER_00]: And I'm not surprised.
+[SPEAKER_00]: That's because I think there's still some
+chromosome misassemblies that are going
+[SPEAKER_00]: on.
+[SPEAKER_00]: But there's also probably lots of
+structural variation between the
+[SPEAKER_00]: biological samples that make these things
+very difficult to discern one chromosome
+[SPEAKER_00]: from the other.
+[SPEAKER_00]: So eventually we'll be getting the
+nomenclature right in these based on what
+[SPEAKER_00]: genes or what tend to be in which
+chromosomes and probably not stick,
+[SPEAKER_00]: get so hung up on the size.
+[SPEAKER_00]: But at the moment, we've got a bit of a
+chromosome mess going on in there.
+[SPEAKER_00]: Now, in light of that, the chromosome
+scaffolding information doesn't really
+[SPEAKER_00]: hold a lot of quality information.
+[SPEAKER_00]: When you take contigs and you link them
+together with linkage maps, you don't have
+[SPEAKER_00]: a real quality score on what is that
+scaffold made of.
+[SPEAKER_00]: It's just an association that we think
+this contig is next to this one.
+[SPEAKER_00]: But you can't put a probability on it.
+[SPEAKER_00]: Right.
+[SPEAKER_00]: Whereas the sequencing information itself,
+you have quality scores at every single
+[SPEAKER_00]: base that you can put a probability of
+correctness on.
+[SPEAKER_00]: So that's the underlying data that's most
+important.
+[SPEAKER_00]: And you want to make sure that that data
+is the most contiguous as possible.
+[SPEAKER_00]: You can easily play some shell games and
+sequencing where you report really large
+[SPEAKER_00]: scaffolding and fifties, but they're based
+on chromosome or on contigs that are
+[SPEAKER_00]: externally small.
+[SPEAKER_00]: And those tend to be very poor,
+poorly constructed genomes.
+[SPEAKER_00]: OK.
+[SPEAKER_00]: The other thing you want to look at are
+the Bosco scores.
+[SPEAKER_00]: You want to make sure those are as high as
+possible.
+[SPEAKER_00]: You also want to look at how much depth of
+coverage the genomes has.
+[SPEAKER_00]: And as we've shown you, we tend to have
+much higher coverage than anyone who's
+[SPEAKER_00]: ever made a stab at this before.
+[SPEAKER_00]: One hundred to two hundred X coverage is
+not traditionally getting done.
+[SPEAKER_00]: So there is there's far more raw sequence
+data on on Jamaican line than there is on
+[SPEAKER_00]: anything else that's in there.
+[SPEAKER_00]: OK.
+[SPEAKER_00]: We also have some some high C data that we
+can use to call chromosomes.
+[SPEAKER_00]: However, when we've done that,
+we've just realized that our chromosomes
+[SPEAKER_00]: disagree with theirs as well.
+[SPEAKER_00]: And so we've got the problem of the fourth
+watchman where we're not adding any more.
+[SPEAKER_00]: We're not adding any more contiguity
+necessary to the equation.
+[SPEAKER_00]: We're just adding more confusion.
+[SPEAKER_00]: So we've opted not to put that data public
+until we get it done on a couple of
+[SPEAKER_00]: different technologies so that we can
+really confidently call what the
+[SPEAKER_00]: chromosomes are in Jamaican line.
+[SPEAKER_00]: And they still might be different than
+what we find in the other lines just due
+[SPEAKER_00]: to biological diversity.
+[SPEAKER_00]: But nevertheless, we don't want to add to
+the chromosome confusion at the moment.
+[SPEAKER_00]: So, OK, what are the other things that are
+key to making a gold standard reference?
+[SPEAKER_00]: Well, you want to get both a male and a
+female genome sequenced because we just
+[SPEAKER_00]: showed you the male, the white
+chromosomes, large chromosomes.
+[SPEAKER_00]: You've got to have a line in your
+reference.
+[SPEAKER_00]: All right.
+[SPEAKER_00]: The other thing you want to do is get a
+trio because you need to train your
+[SPEAKER_00]: genotypers right now.
+[SPEAKER_00]: The genotyping software out there has all
+been written for human, which is expecting
+[SPEAKER_00]: a variant every thousand bases.
+[SPEAKER_00]: And we happen to have a variance every 50
+bases in cannabis.
+[SPEAKER_00]: And those genotyping tools all need to be
+retrained in the way that you retrain
+[SPEAKER_00]: them.
+[SPEAKER_00]: Is to sequence a mother, father and an
+offspring, what's known as a trio,
+[SPEAKER_00]: so that you can segregate sequencing
+errors and confirm whether or not they
+[SPEAKER_00]: exist in the parents.
+[SPEAKER_00]: If a sequencing error is found in one line
+and doesn't exist in the parents,
+[SPEAKER_00]: it doesn't pass a Mendel check.
+[SPEAKER_00]: That makes no biological sense.
+[SPEAKER_00]: You flag it as an error.
+[SPEAKER_00]: And now you can count your errors versus
+all the genotypes that you have that have
+[SPEAKER_00]: Mendelian concordance between the parents.
+[SPEAKER_00]: This Mendel check thing is very important
+for gauging genotyping accuracy.
+[SPEAKER_00]: And it's only been done to date on
+Jamaican line.
+[SPEAKER_00]: OK.
+[SPEAKER_00]: The other thing you want is a type two
+plant, something that's both THC and CBD
+[SPEAKER_00]: genes in this.
+[SPEAKER_00]: You do not want a type three plant as a
+reference, because if you sequence a
+[SPEAKER_00]: genome for a client and you map it to a
+reference that doesn't have THC synthase
+[SPEAKER_00]: and you fail to detect that their plant
+could potentially make THC synthase,
+[SPEAKER_00]: then the criminal negligence charges that
+the USDA might throw up the grower are
+[SPEAKER_00]: going to roll uphill to you.
+[SPEAKER_00]: So no sequence provider.
+[SPEAKER_00]: A chip manufacturer or tool provider in
+the space wants to touch a reference that
+[SPEAKER_00]: doesn't have THC synthase in it,
+because they have to be able to detect
+[SPEAKER_00]: whether the reference has that.
+[SPEAKER_00]: That's probably the number one thing in
+cannabis you've got to detect,
+[SPEAKER_00]: given there's criminal negligence for 0.5%
+THC or higher.
+[SPEAKER_00]: You've got to have THC.
+[SPEAKER_00]: As I mentioned before, you want the
+longest reads, the most recent chemistry,
+[SPEAKER_00]: the deepest coverage.
+[SPEAKER_00]: We've got that with SQL2 and with HiFi
+data.
+[SPEAKER_00]: We're the only one who's done a cannabis
+genome on HiFi data.
+[SPEAKER_00]: The data is already public for users.
+[SPEAKER_00]: You also want to get your RNA annotation
+from the same genome that you assembled.
+[SPEAKER_00]: Many of the other genomes out there are
+taking RNA sequencing from other plants
+[SPEAKER_00]: and applying it to theirs to call the
+genes.
+[SPEAKER_00]: That's noisier.
+[SPEAKER_00]: You get different SNPs involved.
+[SPEAKER_00]: You get different structural variations
+involved, and it's harder to do gene
+[SPEAKER_00]: annotation with different plants' RNA.
+[SPEAKER_00]: It's really much better to get it from the
+plant that you sequence the genome from,
+[SPEAKER_00]: and we have that with Jamaican lion.
+[SPEAKER_00]: We've got methylation information,
+and on top of that, more cannabis data is
+[SPEAKER_00]: mapped to Jamaican lion than any other
+cultivar.
+[SPEAKER_00]: There are 47 whole-genome shotguns now in
+the Koji genome browser with BAM files.
+[SPEAKER_00]: That's after mapping, so you don't have to
+remap the data.
+[SPEAKER_00]: We've also loaded over 50 strain-seqs in
+there, and there's another 300 on their
+[SPEAKER_00]: way.
+[SPEAKER_00]: This has two genomes that are certified in
+Koji, the mother and the father,
+[SPEAKER_00]: and the offspring's up there as well.
+[SPEAKER_00]: There's a trio up there in Koji.
+[SPEAKER_00]: Okay, now let's go beyond this.
+[SPEAKER_00]: Let's actually take this to doing better
+assemblies.
+[SPEAKER_00]: Since we put all this data out,
+this is stepping into stuff that we
+[SPEAKER_00]: haven't completely published yet.
+[SPEAKER_00]: Although the data is public for you to
+use, it's not been put into a paper yet.
+[SPEAKER_00]: This is what's known as a can
+assemble-a-thon.
+[SPEAKER_00]: Something happened this year that was a
+bit of a paradigm shift in DNA sequencing.
+[SPEAKER_00]: PacBio finally got the read lengths out to
+180 kb, which meant that they could lap at
+20 kb.
+[SPEAKER_00]: 20 kb molecule nine times, and in doing
+so, they can get Q30 data on 20 kb
+[SPEAKER_00]: molecules.
+[SPEAKER_00]: No one's ever had that before,
+and that completely changes the way that
+[SPEAKER_00]: you write DNA assemblers.
+[SPEAKER_00]: All the leading DNA assembly people in the
+world realized this and immediately
+[SPEAKER_00]: rewrote their assemblers.
+[SPEAKER_00]: Three new assemblers came out this year.
+[SPEAKER_00]: We have something called HiASM from Hang
+Lee at the Broad.
+[SPEAKER_00]: He's one of the more prominent software
+authors for a lot of the stuff in the
+[SPEAKER_00]: field.
+[SPEAKER_00]: He wrote BWA and a variety of great tools.
+[SPEAKER_00]: Sergey Korin wrote Canoe, which is one of
+the more popular DNA assemblers out there.
+[SPEAKER_00]: He rewrote that specifically to handle
+PacBio's new data form because he was so
+[SPEAKER_00]: excited about it.
+[SPEAKER_00]: Great conception at PacBio has also
+re-rigged the Falcon assembler to better
+[SPEAKER_00]: handle this data.
+[SPEAKER_00]: Jason Chen, who was a former author of the
+Falcon assembler, rewrote an algorithm
+[SPEAKER_00]: altogether called the Paragram assembler
+that takes a completely different assembly
+[SPEAKER_00]: approach, knowing it has accurate data.
+[SPEAKER_00]: When you're going to see some of that,
+it's quite remarkable.
+[SPEAKER_00]: What you're seeing here is just different
+stringencies applied in the assembly to
+[SPEAKER_00]: try to phase the genome.
+[SPEAKER_00]: You can start to peel the mother.
+[SPEAKER_00]: When you do an assembly like this,
+all of the reads from your genome get
+[SPEAKER_00]: assembled, and your mother and father
+reads, sometimes for the same chromosome,
+[SPEAKER_00]: get stuck together.
+[SPEAKER_00]: They get collapsed.
+[SPEAKER_00]: The job at the end of assembly is to phase
+those or split them apart into mother and
+[SPEAKER_00]: father lines.
+[SPEAKER_00]: That can be challenging if the mother and
+the father genome are so similar that
+[SPEAKER_00]: there's no differences upon which to split
+them.
+[SPEAKER_00]: Or if they're hyperpolymorphic,
+they easily separate into two unique
+[SPEAKER_00]: pieces of sequence.
+[SPEAKER_00]: In order to do this, you set different
+stringencies.
+[SPEAKER_00]: This is called the minimum percent
+identity to actually purge and split these
+[SPEAKER_00]: haplotakes.
+[SPEAKER_00]: This is just Greg doing eight different,
+or what was it?
+[SPEAKER_00]: One, two, three, four, five, six,
+seven, eight, nine, nine different
+[SPEAKER_00]: assemblies on Falcon.
+[SPEAKER_00]: There's a ton of compute power put into
+this slide to give us different types of
+[SPEAKER_00]: assemblies.
+[SPEAKER_00]: You can see some of the ones like the
+99.9% purged are giving us six Megan 50s.
+[SPEAKER_00]: You can measure the amount of duplicated
+genes that you see in the Busco score to
+[SPEAKER_00]: get a sense of how well you're purging a
+lot of these genes and how well you're
+[SPEAKER_00]: splitting the assembly.
+[SPEAKER_00]: Anyway, this was all done on what is known
+as HiFi.
+[SPEAKER_00]: This is the latest chemistry from PacBio.
+[SPEAKER_00]: We got early access to it.
+[SPEAKER_00]: They did a single flow cell.
+[SPEAKER_00]: We got 400 giga sequence out of a single
+flow cell, 180 kb and 50 reads,
+[SPEAKER_00]: and we gave it 20 kb molecules,
+so we got 30 gig of CCS data.
+[SPEAKER_00]: This is about 30x coverage across the
+genome.
+[SPEAKER_00]: Now, what's different about this,
+now that you have really accurate reads,
+[SPEAKER_00]: you can play some games.
+[SPEAKER_00]: You don't have to do an N squared assembly
+where you map every single read against
+[SPEAKER_00]: every other read.
+[SPEAKER_00]: You can do something that's known as a
+paired shimmering approach, which I'll
+[SPEAKER_00]: leave you to go to Jason Chin's work on
+the paragon assemblers to how this thing
+[SPEAKER_00]: works.
+[SPEAKER_00]: But because this algorithm scales not N
+squared, but N times the coverage squared,
+[SPEAKER_00]: you can actually pull this off in a home
+computer.
+[SPEAKER_00]: So I was able to assemble this genome on
+my home computer in seven hours.
+[SPEAKER_00]: I've never been able to assemble a
+cannabis genome on a home computer.
+[SPEAKER_00]: He pulled it off in much less time.
+[SPEAKER_00]: He's got a better computer than I do.
+[SPEAKER_00]: Here's an example, 30 gig going in.
+[SPEAKER_00]: This is HiFi data again.
+[SPEAKER_00]: This is the most recent PacBio data off of
+their SQL2.
+[SPEAKER_00]: He assembles this in 71 minutes,
+ends up with a record-breaking
+[SPEAKER_00]: four-megabase N50.
+[SPEAKER_00]: It's the best one we've ever seen to date.
+[SPEAKER_00]: He tunes it a little bit further and
+pushes it out to eight megabase with
+[SPEAKER_00]: buscode scores over 97 percent,
+71-minute assembly.
+[SPEAKER_00]: This is a remarkable time to assemble.
+[SPEAKER_00]: Normally, these things take a week or two
+on a 500 CPU cluster with a terabase of
+[SPEAKER_00]: RAM.
+[SPEAKER_00]: This is 100 to 1,000 fold faster.
+[SPEAKER_00]: What we're doing right now from a CPU
+standpoint, I think it's actually 1,000
+[SPEAKER_00]: times faster from a CPU standpoint because
+the high-canvas assemblies took 4,000 CPU
+[SPEAKER_00]: hours.
+[SPEAKER_00]: I'm sorry, it's 100 fold.
+[SPEAKER_00]: It's 100 fold faster.
+[SPEAKER_00]: But it being 100 fold faster means we can
+actually de novo assemble these genomes
+[SPEAKER_00]: faster than we can map 200 million reads
+to them.
+[SPEAKER_00]: So this changes the way you think about
+genomics.
+[SPEAKER_00]: If the assembly of a cannabis genome is
+now computationally more effective with
+[SPEAKER_00]: PacBio than mapping 200 million short
+reads to the genome, you start to switch
+[SPEAKER_00]: plans.
+[SPEAKER_00]: You basically do de novo assembly in your
+parents so you don't have to worry about
+[SPEAKER_00]: structural variance.
+[SPEAKER_00]: You can get all those nailed and then you
+can aluminum map to your references.
+[SPEAKER_00]: You make your own personal references for
+your parents.
+[SPEAKER_00]: We can help you do that.
+[SPEAKER_00]: That way, you're not playing a guessing
+game with what genes are there and what
+[SPEAKER_00]: genes aren't there.
+[SPEAKER_00]: The other thing that popped out of this
+was the CBD and THC in one contact.
+[SPEAKER_00]: That's never happened before.
+[SPEAKER_00]: That's cool.
+[SPEAKER_00]: You can see them scattered.
+[SPEAKER_00]: This is the dot plot.
+[SPEAKER_00]: This is the repeat pattern that's around
+these genes and it's absolutely
+[SPEAKER_00]: remarkable.
+[SPEAKER_00]: It's like this crazy fractal that you see.
+[SPEAKER_00]: In fact, here's another view of it.
+[SPEAKER_00]: Oh, here's another view of it.
+[SPEAKER_00]: You've got all of this different
+repetitive material right as you come
+[SPEAKER_00]: through this region.
+[SPEAKER_00]: There's five copies in one contig and four
+in the other.
+[SPEAKER_00]: Totally phased across many, many
+megabases.
+[SPEAKER_00]: We've got them both together now.
+[SPEAKER_00]: We know their distance.
+[SPEAKER_00]: That's pretty cool.
+[SPEAKER_00]: That's never happened before.
+[SPEAKER_00]: Now, that being said, like I mentioned
+before, you probably don't know who these
+[SPEAKER_00]: artists are if you're not of a certain
+age, but this here is Milli Vanilli,
+[SPEAKER_00]: who are busted for lip syncing.
+[SPEAKER_00]: That's what read mapping is and we've
+tolerated it in genomics because it was so
+[SPEAKER_00]: affordable and cheap.
+[SPEAKER_00]: Now that the price of long reads are
+coming down and you can get large reads,
+[SPEAKER_00]: you really should just move on and do de
+novo.
+[SPEAKER_00]: When you can, at least on your parents.
+[SPEAKER_00]: We're going to be like this guy who,
+from the looks of his eyes, is probably
+[SPEAKER_00]: into cannabis.
+[SPEAKER_00]: This is the math here on the assembly
+time.
+[SPEAKER_00]: Since you have 20 KB reads, you only need
+1.5 million of them.
+[SPEAKER_00]: Since you have more accurate data,
+you really only need 15x coverage,
+[SPEAKER_00]: but we did 30.
+[SPEAKER_00]: This ends up being a much smaller number
+than taking 200 million reads.
+[SPEAKER_00]: Having to deal with 60x coverage,
+you need more coverage for the shorter
+[SPEAKER_00]: reads, you end up having to deal with a
+lot more computation this way.
+[SPEAKER_00]: Fewer reads to map and the fact that we're
+not doing an n squared algorithm here.
+[SPEAKER_00]: If this were n squared, it'd be 200
+million times 200 million.
+[SPEAKER_00]: That's a lot of computation or 1.5 million
+times 1.5 million.
+[SPEAKER_00]: Still a lot of computation.
+[SPEAKER_00]: It's really only the square of the
+coverage that we're dealing with,
+[SPEAKER_00]: which is a much, much smaller number when
+you use this paragon approach.
+[SPEAKER_00]: It's still early with Paragon and we're
+testing it out.
+[SPEAKER_00]: The other thing, one of the other
+assemblers that Sergey Korin updated was
+[SPEAKER_00]: called High Canoe.
+[SPEAKER_00]: High Canoe is one of the more popular
+assemblers now.
+[SPEAKER_00]: The remarkable thing about High Canoe is
+it pumped out a 5.2 megabase assembly in
+[SPEAKER_00]: this assemblethon, and a 97.4% busco
+score, which is remarkable.
+[SPEAKER_00]: The thing that gives us the most faith
+that this is probably the best genome ever
+[SPEAKER_00]: assembled for cannabis is that the
+telomeres are perfectly resolved.
+[SPEAKER_00]: Telomeres are the end of chromosomes that
+have the same sequence for very long
+[SPEAKER_00]: stretches.
+[SPEAKER_00]: In fact, you can see this repeating
+pattern down here.
+[SPEAKER_00]: It goes on for 1.5 kb here, 3 kb,
+4 kb, 5 kb, 7 kb, and it doesn't end.
+[SPEAKER_00]: It ramps all the way out to 26 kb,
+43 kb.
+[SPEAKER_00]: I've never seen a 43 kb repeat before in
+my life because sequencers just couldn't
+[SPEAKER_00]: read them.
+[SPEAKER_00]: It's really remarkable.
+[SPEAKER_00]: The fact that we have 17 of these now
+means that in the first attempt the genome
+[SPEAKER_00]: sent out, we should have gotten about 20
+chromosome telomeres.
+[SPEAKER_00]: The fact that three of them are collapsed
+is going to be probably pretty easy for us
+[SPEAKER_00]: to resolve.
+[SPEAKER_00]: What you'll see is there are subtle
+differences in these telomeres,
+[SPEAKER_00]: and what they link to is different.
+[SPEAKER_00]: You can get a 20 kb read coming in here
+that bridges out here and has one or two
+[SPEAKER_00]: snips in the telomere, and you can link
+another high quality read to it and extend
+[SPEAKER_00]: it.
+[SPEAKER_00]: This is how we're getting out to some of
+these 43 kb telomeres.
+[SPEAKER_00]: Now, why am I so excited about telomeres?
+[SPEAKER_00]: There's not a lot of biological
+information in there.
+[SPEAKER_00]: The molecular clock is probably in there.
+[SPEAKER_00]: Your clones are probably getting shorter
+and shorter telomeres as you age.
+[SPEAKER_00]: The reason why we're so excited about
+seeing telomeres is that when you get
+[SPEAKER_00]: perfect telomere assemblies, it's usually
+a sign that the repeats internal to your
+[SPEAKER_00]: genome are all resolved perfectly as well
+because they're more divergent than
+[SPEAKER_00]: telomeres.
+[SPEAKER_00]: Telomeres are a simple sequence repeat
+that goes on for a long period of time.
+[SPEAKER_00]: They're very difficult to search.
+[SPEAKER_00]: They usually are assembly knots.
+[SPEAKER_00]: In fact, when we look at a lot of the
+genomes in NCBI right now, they don't have
+[SPEAKER_00]: telomeres.
+[SPEAKER_00]: You do see some internal telomeric
+sequences, which makes you think some of
+[SPEAKER_00]: the telomeres and some of the chromosomes
+might actually be inappropriately fused
+[SPEAKER_00]: together.
+[SPEAKER_00]: You get a telomere sequence in the middle.
+[SPEAKER_00]: You can find that.
+[SPEAKER_00]: That's also naturally found in plants,
+so you don't really know what to do with
+[SPEAKER_00]: that information.
+[SPEAKER_00]: When you have assemblies that pop out
+beautiful telomeres like this,
+[SPEAKER_00]: you have much more confidence that the
+rest of the genome has its repeats in
+[SPEAKER_00]: order as well.
+[SPEAKER_00]: All right.
+[SPEAKER_00]: Now, what do you do with all this
+information?
+[SPEAKER_00]: Well, what we've been doing with this
+information is designing really good QPCR
+[SPEAKER_00]: assays to pick up yeast and mold.
+[SPEAKER_00]: Many people skip this step.
+[SPEAKER_00]: They don't bother sequencing the host
+genome, and this is the pain they have.
+[SPEAKER_00]: Here's a group that made a microarray
+system where they put all these primers in
+[SPEAKER_00]: the microarray and everything in yellow
+hits cannabis.
+[SPEAKER_00]: They didn't bother to scan cannabis
+references as to whether or not the
+[SPEAKER_00]: primers were going to hybridize to it.
+[SPEAKER_00]: Imager calibration.
+[SPEAKER_00]: Negative control hits it.
+[SPEAKER_00]: All right.
+[SPEAKER_00]: Aspergillus flavus, niger, these things
+have some homology.
+[SPEAKER_00]: Now, it's not the whole probe,
+but it's long enough of a sequence of the
+[SPEAKER_00]: probe to probably interfere a little bit.
+[SPEAKER_00]: Some other PCR primers that amplify the
+material have these problems too.
+[SPEAKER_00]: They filed six patents in 2018 on this.
+[SPEAKER_00]: They since told us that they no longer use
+these primers.
+[SPEAKER_00]: They spent more money on attorneys making
+bogus patents than they could have spent
+[SPEAKER_00]: on sequencing the genome.
+[SPEAKER_00]: Likewise, you can look at another set of
+primers that came out of a group in
+[SPEAKER_00]: Europe.
+[SPEAKER_00]: This group is pivoting also into the space
+in the food industry where they've never
+[SPEAKER_00]: had to worry about a cannabis background
+and are just arrogantly plowing in
+[SPEAKER_00]: assuming they don't have problems.
+[SPEAKER_00]: Lo and behold, you sequence some of the
+amplicons that come off of their total
+[SPEAKER_00]: yeast and mold primers.
+[SPEAKER_00]: What do you hit?
+[SPEAKER_00]: You hit cannabis 28S ribosomal DNA.
+[SPEAKER_00]: Well, that's not going to work.
+[SPEAKER_00]: That means there are cannabis plants out
+there that your primers amplify and you're
+[SPEAKER_00]: always going to be failing someone for
+some level of yeast and mold.
+[SPEAKER_00]: These are also polymorphic.
+[SPEAKER_00]: They may get amplification on some
+cannabis and not other strains.
+[SPEAKER_00]: You might get some strains that just look
+like it works on and you always get mold
+[SPEAKER_00]: on and other ones you don't and you blame
+it on the plant as always.
+[SPEAKER_00]: You're always having mold and really you
+just have some snips in your 28S and 26S
+[SPEAKER_00]: ribosomal regions and it appears as if the
+plant always has mold when it doesn't.
+[SPEAKER_00]: The other thing you shouldn't hit with
+yeast and mold primers are insects.
+[SPEAKER_00]: This insect in particular is a spider
+mite.
+[SPEAKER_00]: If your primers hit spider mites,
+you're going to fail a lot of stuff that
+[SPEAKER_00]: doesn't have mold that you think has mold
+because it's hitting spider mites.
+[SPEAKER_00]: Spider mites are gross.
+[SPEAKER_00]: I don't want them on the canvas either,
+but your test should be accurate.
+[SPEAKER_00]: It shouldn't hit stuff.
+[SPEAKER_00]: If it hits insects, God knows what else it
+hits.
+[SPEAKER_00]: It's going to fail for a lot of the
+material that's not on the fail list.
+[SPEAKER_00]: Now with this, we can also go through
+Canapedia.
+[SPEAKER_00]: I already have some videos on Canapedia,
+so I'm going to plow through this because
+[SPEAKER_00]: you can review some of the Canapedia
+information in that Canapedia tutorial.
+[SPEAKER_00]: But I do want to point out this
+promiscuous DNA or THC synthase thing
+[SPEAKER_00]: that's going on here.
+[SPEAKER_00]: Here's a type 4 plant.
+[SPEAKER_00]: THC CBD knockout, still has THC,
+still has THCA, still has cannabichromine.
+[SPEAKER_00]: We don't have the sequence of this plant,
+but I wouldn't be surprised if this has a
+[SPEAKER_00]: cannabichromine cluster and might be
+leaking.
+[SPEAKER_00]: It doesn't have a CBD gene, so this THC is
+not coming from CBD synthase.
+[SPEAKER_00]: None detected.
+[SPEAKER_00]: That's why you want to be paying attention
+to what types of genes you have in your
+[SPEAKER_00]: genome.
+[SPEAKER_00]: Also, read this paper.
+[SPEAKER_00]: Zirbel's a great paper where they clone
+these genes, and they demonstrate they can
+[SPEAKER_00]: make different cannabinoids under
+different conditions.
+[SPEAKER_00]: They actually chart out all the different
+point mutations in the gene that start to
+[SPEAKER_00]: change these ratios.
+[SPEAKER_00]: We track those types of variants in
+Canapedia.
+[SPEAKER_00]: This is what you want to look for.
+[SPEAKER_00]: This is a variation map across THC
+synthase, and here's one across CBD
+[SPEAKER_00]: synthase.
+[SPEAKER_00]: Never mind this.
+[SPEAKER_00]: This is an error that the thing burped up
+in annotation.
+[SPEAKER_00]: It doesn't actually have introns in CBD
+synthase.
+[SPEAKER_00]: Nevertheless, these are all the different
+SNPs that we found, and those SNPs you
+[SPEAKER_00]: want to do is correlate them with the ones
+that they found as causing a decrease in
+[SPEAKER_00]: function, and that may help your reading
+program.
+[SPEAKER_00]: Now, our current strain seek panel does,
+in fact, hit CBD synthase.
+[SPEAKER_00]: I'm sorry, CBC synthase.
+[SPEAKER_00]: It also hits CBD and THC synthase.
+[SPEAKER_00]: This is 323 different strain seek samples.
+[SPEAKER_00]: This is the sequencing coverage across
+them.
+[SPEAKER_00]: You can see craters down here on the
+samples that are cannabichromine negative,
+[SPEAKER_00]: and if you pull some of these out of
+Canapedia, you'll see they don't make any
+[SPEAKER_00]: cannabichromine down here.
+[SPEAKER_00]: They're cannabichromine negative plants.
+[SPEAKER_00]: That's a good sign.
+[SPEAKER_00]: That means that CBD synthase, which it is
+making, isn't making off target
+[SPEAKER_00]: cannabichromine.
+[SPEAKER_00]: Not that it would matter, but it's just
+nice to know that there's some specificity
+[SPEAKER_00]: there in one direction.
+[SPEAKER_00]: Anyway, we use this to track people so you
+don't have to sequence an entire genome to
+[SPEAKER_00]: get to this answer.
+[SPEAKER_00]: We can help you breed the cannabinoids
+with just a panel.
+[SPEAKER_00]: It's a little bit cheaper that way,
+but contact us if you're interested in
+[SPEAKER_00]: there.
+[SPEAKER_00]: If you do get your data sequenced with us,
+there's a wealth of data you can compare
+[SPEAKER_00]: it to.
+[SPEAKER_00]: We have four terabases of sequence in a
+public genome browser that you can load
+[SPEAKER_00]: your data in and view it and annotate it
+privately.
+[SPEAKER_00]: Again, it's the backdrop of all that
+public data.
+[SPEAKER_00]: It's great information like this in here.
+[SPEAKER_00]: This is actually what you're looking at
+are the different exons that you're seeing
+[SPEAKER_00]: there in pink with the lines connecting
+them.
+[SPEAKER_00]: You can actually look at alternative
+splice signals that you have.
+[SPEAKER_00]: They're not really any present here,
+maybe that one.
+[SPEAKER_00]: You can see the different RNA that's
+getting expressed in different regions of
+[SPEAKER_00]: the genome, and it gives you information
+on how much you actually have per tissue,
+[SPEAKER_00]: which is informative.
+[SPEAKER_00]: You can make other tools.
+[SPEAKER_00]: We do have a 16-SNP panel that you can use
+to do seed-to-cell tracking with.
+[SPEAKER_00]: It gives you enough information that you
+can pin down a strain in a gross ballpark.
+[SPEAKER_00]: This actually feeds right into Canapedia
+because we have 6,500 SNPs in there across
+[SPEAKER_00]: all the strains that we aggressively
+monitor, and these 16 key into that so
+[SPEAKER_00]: that we can plug into Canapedia from here.
+[SPEAKER_00]: We can also read the BTBD allele and the
+XY marker off that assay.
+[SPEAKER_00]: We're building virus assays.
+[SPEAKER_00]: We're playing around with some other
+expression assays as well, but all of this
+[SPEAKER_00]: is predicated on having a really good
+reference.
+[SPEAKER_00]: On top of that off, we do have five color
+aspergillus assays now.
+[SPEAKER_00]: So, niger, terryus, flavus, and fumigallus
+are all done in different wavelengths in
+[SPEAKER_00]: one single tube with a fifth color for the
+cannabis control.
+[SPEAKER_00]: There's more enzyme.
+[SPEAKER_00]: The kits are more sensitive than before,
+and we have them working out.
+[SPEAKER_00]: Some of these can work out with a
+live-dead assay.
+[SPEAKER_00]: You just have to be careful what channel
+you put the control for the live-dead
+assay.
+[SPEAKER_00]: But anyway, this is a new kit that's out
+that greatly simplifies aspergillus
+[SPEAKER_00]: testing in the field, and we know our
+primers don't hit all these other
+[SPEAKER_00]: extraneous places in the genome because
+we've got more genome sequence than
+[SPEAKER_00]: anybody else.
+[SPEAKER_00]: We know how to make primers as a result of
+that, and that means you can make primers
+[SPEAKER_00]: that do this.
+[SPEAKER_00]: This is a beautiful sight to see.
+[SPEAKER_00]: You take your primers, apply them against
+all these different organisms,
+[SPEAKER_00]: and demonstrate that they do not hit off
+target.
+[SPEAKER_00]: That is really key.
+[SPEAKER_00]: All four of our assays have been screened
+against all of these organisms.
+[SPEAKER_00]: This is part of an AOAC.
+[SPEAKER_00]: This is part of an AOAC inclusion and
+exclusion criteria, and we're in an AOAC
+[SPEAKER_00]: process of validating this now.
+[SPEAKER_00]: All these people helped pull this off.
+[SPEAKER_00]: It takes a village.
+[SPEAKER_00]: It is really an honor to work with a lot
+of them.
+[SPEAKER_00]: They've been just tremendous aids.
+[SPEAKER_00]: It's just diversity in terms of the
+expertise you have here.
+[SPEAKER_00]: Experts in GPUs with people who know about
+methylation enzymes and synchromolecule
+[SPEAKER_00]: sequencing and even some blockchains.
+[SPEAKER_00]: It really leads to kind of a fun day at
+work every day.
+[SPEAKER_00]: These people directly have been
+contributing to various aspects of the
+[SPEAKER_00]: project.
+[SPEAKER_00]: A lot of folks here at medicinal genomics
+have put in long hours making all this
+[SPEAKER_00]: stuff work with that crazy grant structure
+we had.
+[SPEAKER_00]: Dash has been a great partner in funding
+all this, and then all these folks as well
+[SPEAKER_00]: who have chipped in over the years.
+[SPEAKER_00]: Thank you, and hopefully that is within
+time.
+[SPEAKER_00]: Thank you.

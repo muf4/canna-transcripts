@@ -1,0 +1,384 @@
+1
+00:00:00,110 --> 00:00:00,610
+Hello!
+
+2
+00:00:00,610 --> 00:00:04,320
+I'm John Huber, applications engineer with Apogee Instruments,
+
+3
+00:00:04,320 --> 00:00:08,960
+and in this video we will be going over some of the more frequently asked questions regarding
+
+4
+00:00:08,960 --> 00:00:16,920
+the operation and calibration of our SO-100 and SO-200 series oxygen sensors.
+
+5
+00:00:16,980 --> 00:00:23,260
+Now these sensors are unique among Apogee Instruments product line in that they are user calibrated.
+
+6
+00:00:23,260 --> 00:00:26,860
+And so one of the more frequently asked questions we get are:
+
+7
+00:00:26,859 --> 00:00:32,759
+What are the best practices for calibrating and applying the readings from these sensors?
+
+8
+00:00:32,759 --> 00:00:38,659
+So to calibrate it, you'll first want to set it up in an open-air environment with a similar
+
+9
+00:00:38,659 --> 00:00:45,579
+temperature, pressure, and humidity level as the sampling environment that you will
+
+10
+00:00:45,579 --> 00:00:48,079
+be operating the sensor in.
+
+11
+00:00:48,079 --> 00:00:54,140
+Once you've got it set up in this environment, you will want to let the sensor's millivolt
+
+12
+00:00:54,140 --> 00:01:00,000
+readings stabilize, and then once they have, you will want to write down or record this
+
+13
+00:01:00,000 --> 00:01:03,659
+millivolt reading as your calibration millivolt reading.
+
+14
+00:01:03,670 --> 00:01:11,060
+Once you have this calibration millivolt reading, you will want to use it in the formulas listed
+
+15
+00:01:11,060 --> 00:01:18,900
+in the SO-100 and SO-200 manuals in order to obtain your calibration multiplier and calibration offset.
+
+16
+00:01:18,900 --> 00:01:23,460
+Once you have this calibration multiplier and offset, you can use it to convert the
+
+17
+00:01:23,480 --> 00:01:29,978
+sensor's millivolt signal into a measure of relative oxygen concentration.
+
+18
+00:01:29,978 --> 00:01:39,129
+Now, the manual can be found on our website by going to the homepage, scrolling down,
+
+19
+00:01:39,129 --> 00:01:48,659
+to the "Support" heading, clicking "Technical Support," then selecting the "Oxygen Sensors,"
+
+20
+00:01:48,659 --> 00:01:53,200
+and clicking the link "Product Manuals" found below.
+
+21
+00:01:53,200 --> 00:01:58,850
+In addition to the product manual, we have developed a calculator spreadsheet that will
+
+22
+00:01:58,849 --> 00:02:04,699
+be posted under the "Helpful Articles and Links" section that will walk you through
+
+23
+00:02:04,700 --> 00:02:08,830
+and run these calculations for you.
+
+24
+00:02:08,830 --> 00:02:12,719
+So to use this spreadsheet, you'll want to follow these steps.
+
+25
+00:02:12,719 --> 00:02:14,949
+First, enter your sensor model.
+
+26
+00:02:14,949 --> 00:02:20,679
+In this case, we'll pick the SO-110.
+
+27
+00:02:20,680 --> 00:02:25,450
+Next, you want to enter your calibration millivolt reading that you recorded.
+
+28
+00:02:25,449 --> 00:02:29,429
+In this case, we'll pick 45.
+
+29
+00:02:29,430 --> 00:02:34,670
+And you can see, once I enter my calibration millivolt reading, the spreadsheet now gives
+
+30
+00:02:34,669 --> 00:02:41,729
+me my calibration multiplier and calibration offset that I can use to convert my sensor's
+
+31
+00:02:41,729 --> 00:02:48,519
+millivolt readings into a measure of relative oxygen concentration.
+
+32
+00:02:48,520 --> 00:02:54,150
+An additional thing that this spreadsheet does is it allows you to correct for changes
+
+33
+00:02:54,150 --> 00:02:56,300
+in environmental conditions.
+
+34
+00:02:56,300 --> 00:03:04,610
+Now this is important because the oxygen sensor measures, or outputs, an millivolt signal
+
+35
+00:03:04,610 --> 00:03:12,280
+based on absolute oxygen concentrations, which we convert into relative oxygen concentrations.
+
+36
+00:03:12,280 --> 00:03:19,580
+The reason we don't just use absolute concentrations is because many environmental factors affect them.
+
+37
+00:03:19,580 --> 00:03:27,020
+For example, if you're at sea level, the relative oxygen concentration in open air is going
+
+38
+00:03:27,020 --> 00:03:36,840
+to be roughly 20.95 %. On top of Mount Everest, it's also going to be 20.95 % but,
+
+39
+00:03:36,840 --> 00:03:42,439
+the absolute concentration of oxygen between these two environments will be very different.
+
+40
+00:03:42,449 --> 00:03:47,899
+So, keeping that in mind, when you're using an oxygen sensor that's been calibrated in
+
+41
+00:03:47,900 --> 00:03:53,000
+one environment, and you take it to a very different environment, you will need to make
+
+42
+00:03:53,000 --> 00:03:59,080
+sure to correct it's readings for changes in temperature, pressure, and humidity.
+
+43
+00:03:59,080 --> 00:04:04,219
+And if you would like more information on why this happens and how these corrections
+
+44
+00:04:04,219 --> 00:04:09,599
+are applied and how we came by these equations to apply these corrections,
+
+45
+00:04:09,599 --> 00:04:15,658
+that information can be found in the SO-100 and SO-200 product manual.
+
+46
+00:04:15,658 --> 00:04:20,808
+But in this case, let's go ahead and show you how to enter your information into this
+
+47
+00:04:20,809 --> 00:04:24,420
+spreadsheet and apply the corrections.
+
+48
+00:04:24,420 --> 00:04:29,360
+First you're going to want to enter the environmental conditions for your calibration environment
+
+49
+00:04:29,360 --> 00:04:31,310
+starting with temperature.
+
+50
+00:04:31,310 --> 00:04:41,060
+So let's select our units for temperature as Celsius (C) and then let's enter a value of 25 degrees.
+
+51
+00:04:41,060 --> 00:04:49,699
+Now let's say the humidity linear calibration environment was 10 %, so we'll go ahead and punch that in.
+
+52
+00:04:49,699 --> 00:04:57,959
+Next, you'll want to enter either the elevation of your calibration environment in order to
+
+53
+00:04:57,959 --> 00:05:03,139
+estimate the barometric pressure of that environment, or enter barometric pressure directly.
+
+54
+00:05:03,139 --> 00:05:10,459
+We'll enter the barometric pressure value by clicking the button on the left here saying "Use Calibration Pressure."
+
+55
+00:05:10,459 --> 00:05:21,899
+and we'll enter the barometric pressure in kPa of the calibration environment as, let's say, 89.5.
+
+56
+00:05:21,899 --> 00:05:25,659
+Now that we have our calibration environment conditions entered,
+
+57
+00:05:25,660 --> 00:05:28,520
+we can move on to our sample information.
+
+58
+00:05:28,519 --> 00:05:32,699
+First, we'll want to start by entering the sample millivolt value,
+
+59
+00:05:32,699 --> 00:05:39,818
+and let's go ahead and make up a value of 44 for this example.
+
+60
+00:05:39,819 --> 00:05:46,839
+Now you can see, the spreadsheet has already produced an uncorrected oxygen reading based
+
+61
+00:05:46,839 --> 00:05:55,060
+on the information we gave it for the calibration readings and the sample millivolt reading that we just entered.
+
+62
+00:05:55,060 --> 00:05:59,980
+Since that millivolt reading for the sample is a little bit lower, the oxygen reading
+
+63
+00:05:59,980 --> 00:06:05,120
+reported by this spreadsheet is also lower at 20.4 %.
+
+64
+00:06:05,120 --> 00:06:09,019
+But it's important to remember this has not been corrected.
+
+65
+00:06:09,028 --> 00:06:14,278
+So, if your environment that you're sampling in is different from your calibration environment,
+
+66
+00:06:14,278 --> 00:06:19,009
+the actual relative oxygen concentration will be different.
+
+67
+00:06:19,009 --> 00:06:22,480
+So, let's go ahead and apply those corrections.
+
+68
+00:06:22,480 --> 00:06:28,900
+First, we'll need to enter our sample environment conditions starting with temperature once again.
+
+69
+00:06:28,899 --> 00:06:32,659
+Let's go ahead and enter it in Farenheit (F) this time.
+
+70
+00:06:32,660 --> 00:06:38,300
+And let's say our sample environment was 75 degrees.
+
+71
+00:06:38,300 --> 00:06:47,520
+Next, let's enter our humidity for our sample environment, and let's say that's about 50 %.
+
+72
+00:06:47,519 --> 00:06:53,838
+Next, we want to enter either the elevation or barometric pressure once again.
+
+73
+00:06:53,838 --> 00:06:58,199
+This time we'll use elevation to estimate barometric pressure.
+
+74
+00:06:58,199 --> 00:07:09,839
+So we'll select our units as meters, and then let's say it was an elevation of 1,500 meters.
+
+75
+00:07:09,839 --> 00:07:15,119
+And now to apply corrections based on the information we have entered into this sheet,
+
+76
+00:07:15,120 --> 00:07:18,060
+simply click the check boxes.
+
+77
+00:07:18,060 --> 00:07:20,600
+So let's correct for humidity.
+
+78
+00:07:20,600 --> 00:07:22,540
+Let's correct for pressure.
+
+79
+00:07:22,540 --> 00:07:27,560
+And let's correct for temperature.
+
+80
+00:07:27,560 --> 00:07:34,360
+So now, you can see, based on the difference in environmental conditions between the calibration
+
+81
+00:07:34,360 --> 00:07:44,800
+environment and the sample environment, the oxygen reading for our sample environment is 21.9 %.
+
+82
+00:07:44,800 --> 00:07:49,160
+Now once again this is because the temperature, pressure, and humidity have
+
+83
+00:07:49,160 --> 00:07:53,760
+changed between the calibration environment and the sample environment.
+
+84
+00:07:53,759 --> 00:08:01,039
+Once again that's why it's so important to calibrate your oxygen sensor in an environment similar
+
+85
+00:08:01,040 --> 00:08:05,199
+to it's sampling environment to minimize the need for these corrections.
+
+86
+00:08:07,339 --> 00:08:13,019
+However, if that's not an option, you can use these corrections to correct your oxygen sensor's readings.
+
+87
+00:08:13,019 --> 00:08:20,759
+And once again, both the oxygen sensor manual and this spreadsheet can be found
+
+88
+00:08:20,759 --> 00:08:25,959
+in our "Support" page for the "Oxygen Sensor"
+
+89
+00:08:25,959 --> 00:08:35,600
+and also cover the subjects that are covered in this video in very great detail.
+
+90
+00:08:35,600 --> 00:08:43,899
+That being said, if you have any questions, or if you have any issues that you would like
+
+91
+00:08:43,899 --> 00:08:47,299
+to discuss with us or bring to our attention,
+
+92
+00:08:47,299 --> 00:08:53,539
+you can reach us at our email address at techsupport@apogeeinstruments.com,
+
+93
+00:08:53,539 --> 00:09:03,339
+or you can give us a call at +1 (435) 245-8012. You can also leave a comment below,
+
+94
+00:09:03,340 --> 00:09:07,480
+and if you would like to see more content from Apogee Instruments
+
+95
+00:09:07,480 --> 00:09:09,620
+feel free to click that subscribe button.
+
+96
+00:09:09,620 --> 00:09:10,720
+Thank you for watching!
+

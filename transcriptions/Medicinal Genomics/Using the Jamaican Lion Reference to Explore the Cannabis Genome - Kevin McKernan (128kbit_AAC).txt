@@ -1,0 +1,1022 @@
+[SPEAKER_00]: We're going to jump into a different topic
+here.
+[SPEAKER_00]: We're going to change gears a little bit
+and dive into genomics here.
+[SPEAKER_00]: So, for those who weren't here last year,
+last year we had the great joy of
+[SPEAKER_00]: presenting really one of the most complete
+cannabis references completed to date.
+[SPEAKER_00]: Now, there have been a lot of cannabis
+references generated over the years,
+[SPEAKER_00]: and we've generated some and many in this
+audience have as well, and they've been
+[SPEAKER_00]: very difficult to read, mainly because of
+the complexity of the genome and it's very
+[SPEAKER_00]: polymorphic and it's very AT rich.
+[SPEAKER_00]: So, when we finally got an assembly put
+together with Pacific Biosciences,
+[SPEAKER_00]: it was really a day of joy because we had
+not really seen what all of these
+[SPEAKER_00]: cannabinoid genes look like in
+relationship to one another.
+[SPEAKER_00]: So, today we're going to shift gears a
+little bit and not talk about just that
+[SPEAKER_00]: one reference genome that we built,
+but we're going to talk about 42 more of
+[SPEAKER_00]: them that we've since done, since we
+started on this last year.
+[SPEAKER_00]: So, this was funded by a cryptocurrency.
+[SPEAKER_00]: There's a talk that we did last year
+describing how this was done.
+[SPEAKER_00]: It was a five-month grant that was voted
+on by over 4,700 individuals around the
+[SPEAKER_00]: world to contribute some cryptocurrency to
+this project to actually sequence a
+[SPEAKER_00]: cannabis genome, and this required about
+five months of effort, and in 60 days from
+[SPEAKER_00]: being funded, we put the first assembly
+from Pacific Biosciences up on the web.
+[SPEAKER_00]: I think it was a 660 kb and 50.
+[SPEAKER_00]: Now, you're going to hear a couple terms
+throughout this talk about how you monitor
+[SPEAKER_00]: and assess the quality of cannabis
+genomes.
+[SPEAKER_00]: N50 is a measurement of the average length
+of the contig sizes, and you want these
+[SPEAKER_00]: things to get to be about the size of
+chromosomes, ideally.
+[SPEAKER_00]: That is rarely ever the case.
+[SPEAKER_00]: In fact, the first chromosome assembly for
+the human genome just occurred last month
+[SPEAKER_00]: on, I don't know, one of the smaller
+chromosomes, and it's taken us like 19
+[SPEAKER_00]: years to figure that out because the
+sequencing technologies really just can't
+[SPEAKER_00]: handle some parts of genomes.
+[SPEAKER_00]: So, after we put this public, we quickly
+put up a pre-print to get the data public
+[SPEAKER_00]: for everybody else after the August
+release, and I think this one had an even
+[SPEAKER_00]: more contiguous assembly, and that N50
+number was out to past three megabases.
+[SPEAKER_00]: Now, the other term you're going to hear
+us talk about in terms of monitoring these
+[SPEAKER_00]: genomes is a Busco score, which is an
+evaluation of how many genes you should
+[SPEAKER_00]: have in the genome that are seen in all
+other plants, and if you're missing some
+[SPEAKER_00]: of those, you probably have some
+completeness issues.
+[SPEAKER_00]: Okay, so we were seeing these genomes run
+up to a 97% Busco score, which is a great
+[SPEAKER_00]: silica way to tell you that your genome is
+getting close to being done, but really
+[SPEAKER_00]: the nail in the coffin is when other
+people pick up the data and measure it
+[SPEAKER_00]: with different techniques and come back
+with very similar numbers, and so I think
+[SPEAKER_00]: there's some probably members in the
+audience that were involved in this
+[SPEAKER_00]: wonderful work on the proteome where they
+took cannabis proteomes or measured them
+[SPEAKER_00]: via mass spec by doing a metabolite
+profile, and from there they were able to
+[SPEAKER_00]: get peptide signatures they could map to
+the Jamaican lion reference, and they were
+[SPEAKER_00]: lo and behold finding that the Jamaican
+lion reference produced the most number of
+[SPEAKER_00]: peptides that matched their proteome data.
+[SPEAKER_00]: And then Reggie and his team with Keith
+Allen at Steep Hill also grabbed the
+[SPEAKER_00]: Jamaican lion reference and then annotated
+all of the terpene synthase genes and
+[SPEAKER_00]: recently published this paper in PLOS
+about some unique features of the terpene
+[SPEAKER_00]: genes that we now know about.
+[SPEAKER_00]: So what's novel in the cannabis genome is
+that many of the terpene synthase genes
+[SPEAKER_00]: have very long introns.
+[SPEAKER_00]: This can be a problem if your assemblies
+are somewhat fragmented because you won't
+[SPEAKER_00]: be able to piece these genes together in
+the correct order or orientation.
+[SPEAKER_00]: These are 55 of the terpene synthase genes
+that they studied.
+[SPEAKER_00]: These cover the monoterpenes, the
+sesquiterpenes, and I believe even some of
+[SPEAKER_00]: the diterpenes.
+[SPEAKER_00]: We're still digging into the triterpenes,
+which we're going to touch on a little bit
+[SPEAKER_00]: later in this presentation, but there's
+great work here demonstrating that there
+[SPEAKER_00]: is co-occurrence or co-expression of
+certain terpenes like humulene and
+[SPEAKER_00]: beta-carotene, and they're probably coming
+from the same genes.
+[SPEAKER_00]: Okay, so with that said, if you want to
+study the terpene synthase genes,
+[SPEAKER_00]: you really have to look at the
+chloroplasts.
+[SPEAKER_00]: Because half of the pathway is inside the
+plastid genome.
+[SPEAKER_00]: And to do that with specific biosciences
+sequencing, you really need very high
+[SPEAKER_00]: coverage and long reads to do this.
+[SPEAKER_00]: This is a depiction here of what looks
+like 10 different chloroplasts that are in
+[SPEAKER_00]: the plant.
+[SPEAKER_00]: Now, we are expecting to find one.
+[SPEAKER_00]: Now, two of these, I think we can rule out
+that they're actually nuclear genomes.
+[SPEAKER_00]: Sorry, right there.
+[SPEAKER_00]: These are what are known as NUPs.
+[SPEAKER_00]: There's a lot of transfer of DNA from
+chloroplasts to the autosomes,
+[SPEAKER_00]: and as a result, you have to itemize which
+ones are actually in the autosomes and
+[SPEAKER_00]: which ones are actually in the organelles
+because the ones in the autosomes are
+[SPEAKER_00]: usually silenced with methylation.
+[SPEAKER_00]: So we do a quick scan on these to look at
+the depth of coverage we have across those
+[SPEAKER_00]: contigs and then how much methylation is
+actually present on those contigs so that
+[SPEAKER_00]: we can decide whether these are organelle
+or silenced autosomal copies of them.
+[SPEAKER_00]: But this does bring us back to some
+questions about the nature of chloroplast
+[SPEAKER_00]: genomes.
+[SPEAKER_00]: We're always taught in biology class that
+these things are circular.
+[SPEAKER_00]: But the reality is when you have
+sequencing capacity of this power,
+[SPEAKER_00]: you capture these organelles in the
+process of DNA replication live.
+[SPEAKER_00]: And so what you end up finding is not just
+a perfect circular genome but a bit of a
+[SPEAKER_00]: hydra where when these things are
+replicating, there are all of these
+[SPEAKER_00]: photocompetent branches coming off the
+circle that have certain polymorphisms in
+[SPEAKER_00]: them that we need to keep track of.
+[SPEAKER_00]: The reason we're paying close attention to
+chloroplast genetics here is that if you
+[SPEAKER_00]: look through a lot of the genome
+engineering that's going on in plants,
+[SPEAKER_00]: the vast majority of the yield
+improvements are coming out of modified
+[SPEAKER_00]: the photosynthesis pathways.
+[SPEAKER_00]: Moving things from C3 to C4 photosynthesis
+or modifying parts of this genome,
+[SPEAKER_00]: those are seeing 50 percent, 40 percent
+yield increases in a variety of different
+[SPEAKER_00]: organisms.
+[SPEAKER_00]: And so we really have to understand the
+chloroplast genome to get yield right and
+[SPEAKER_00]: to get the terpene synthases done
+correctly as well.
+[SPEAKER_00]: And this gentleman, Arnold Bendage,
+had put out some wonderful papers showing
+[SPEAKER_00]: that genomes really aren't circular when
+you put them under a microscope.
+[SPEAKER_00]: And we're seeing the same thing with the
+single molecule sequencing.
+[SPEAKER_00]: So how do we do the methylation Well,
+this was done with New England Biolabs.
+[SPEAKER_00]: Now, the thing about cannabis is it's very
+hard to study its methylation patterns
+[SPEAKER_00]: because a lot of the single molecule
+sequencers out there aren't trained to
+[SPEAKER_00]: look for these methylation patterns.
+[SPEAKER_00]: They're much more complex than human
+methylones.
+[SPEAKER_00]: And so we're still resorting to an older
+technique known as bisulfite sequencing,
+[SPEAKER_00]: which converts the genome.
+[SPEAKER_00]: Anything that has a non-methylated
+cytosine gets converted to a thymine.
+[SPEAKER_00]: So your genome then gets peeled into two
+different genomes and it goes from 66
+[SPEAKER_00]: percent AT into 83 percent AT.
+[SPEAKER_00]: This makes it really complicated.
+[SPEAKER_00]: It's a read with short reads.
+[SPEAKER_00]: I think only about 50 percent of the
+genome is mappable once you do this.
+[SPEAKER_00]: But nevertheless, you can still study some
+of the genes and understand what's going
+[SPEAKER_00]: on with methylation.
+[SPEAKER_00]: So New England Biolabs developed this
+methylation kit that has less bias in the
+[SPEAKER_00]: process of doing this assessment.
+[SPEAKER_00]: And we deployed it on five different
+tissues from the plant, on female flowers,
+[SPEAKER_00]: female seeded flowers, male flowers,
+leaves, and roots, so that we can get an
+[SPEAKER_00]: understanding of what's going on
+throughout this process.
+[SPEAKER_00]: And the most interesting thing that pops
+out at you when you look at differential
+[SPEAKER_00]: methylation throughout the genome is
+methylation in the adestin gene.
+[SPEAKER_00]: So the adestin gene is what makes the hemp
+seed so nutritious.
+[SPEAKER_00]: All right.
+[SPEAKER_00]: This is the globular protein that gets
+made in the hemp seed.
+[SPEAKER_00]: And if we want to feed the world,
+we need to understand how to hyper express
+[SPEAKER_00]: this protein.
+[SPEAKER_00]: Well, what's interesting about the
+expression of this protein is you can see
+[SPEAKER_00]: that it is differentially methylated in
+seeded flowers versus female flowers.
+[SPEAKER_00]: And that makes sense.
+[SPEAKER_00]: Once the female flowers get seeded,
+they start making seeds.
+[SPEAKER_00]: So they turn the adestin gene into high
+gear.
+[SPEAKER_00]: They hypomethylate it, take the
+methylation signals off, and let gene
+[SPEAKER_00]: expression occur.
+[SPEAKER_00]: When they want to shut it down,
+they methylate it.
+[SPEAKER_00]: And this silence is transcription.
+[SPEAKER_00]: So we can see these methylation patterns
+in the beginning to correlate with the
+[SPEAKER_00]: messenger RNA sequencing.
+[SPEAKER_00]: The other gene you need to know about if
+you want to feed the world is the THC
+[SPEAKER_00]: gene.
+[SPEAKER_00]: All right.
+[SPEAKER_00]: This is one that stimulates people to eat,
+particularly in cancerous scenarios.
+[SPEAKER_00]: And we can see similar methylation
+patterns there, where the male flowers
+[SPEAKER_00]: have these little red bars here.
+[SPEAKER_00]: And those things are effectively
+methylated.
+[SPEAKER_00]: And shut down.
+[SPEAKER_00]: And the blue bars up here are signifying
+bases in the genome that are
+[SPEAKER_00]: undermethylated or unmethylated.
+[SPEAKER_00]: And so transcription is turned on.
+[SPEAKER_00]: So we can look at just the methylation
+signals on the DNA to understand what
+[SPEAKER_00]: genes might be active and which ones are
+inactive.
+[SPEAKER_00]: Plants have different methylation than
+humans.
+[SPEAKER_00]: As I mentioned before, there's CPG
+methylation.
+[SPEAKER_00]: There's CHG methylation.
+[SPEAKER_00]: And there's CHH methylation.
+[SPEAKER_00]: And this means the pattern's a little bit
+more complex to read than what we'd see in
+[SPEAKER_00]: human genomes.
+[SPEAKER_00]: And so what you end up seeing if you look
+at just flowers, like male flowers versus
+[SPEAKER_00]: female flowers, you see a vast array of
+differential methylation signals between
+[SPEAKER_00]: the genomes.
+[SPEAKER_00]: Now, if you move over to female flowers
+and female seeded flowers, this picture
+[SPEAKER_00]: becomes a little softer, because there's
+less differences between the genes between
+[SPEAKER_00]: those different biological events.
+[SPEAKER_00]: And if you actually categorize them for
+ones that are statistically significant,
+[SPEAKER_00]: the genes that pop out are things like
+adestin and some of the cannabinoid
+[SPEAKER_00]: synthase genes, like THC.
+[SPEAKER_00]: So the methylation patterns are giving us
+some picture of which genes are on and
+[SPEAKER_00]: off.
+[SPEAKER_00]: And it's a very simple survey that helps
+complement anything you do with RNA.
+[SPEAKER_00]: Now, that does bring us to the RNA side of
+things.
+[SPEAKER_00]: Before I jump on there, there's 500 to 700
+different sites that are hyper or
+[SPEAKER_00]: hypermethylated with very strong p values
+that we're paying close attention to and
+[SPEAKER_00]: combing through.
+[SPEAKER_00]: But you really want sequencing information
+of the RNA to understand what's going on
+[SPEAKER_00]: here.
+[SPEAKER_00]: And so there are these great new tools
+from Pacific Biosciences that allow you to
+[SPEAKER_00]: sequence an entire RNA molecule 50 to 100
+times over as a single molecule to get
+[SPEAKER_00]: better than Sanger data to annotate
+genomes like this.
+[SPEAKER_00]: This is something known as ISO-seq.
+[SPEAKER_00]: And when we do this, what you're seeing
+here is the number of laps that we're
+[SPEAKER_00]: getting around the molecule.
+[SPEAKER_00]: We turn these molecules into circles,
+and they run like a gerbil on a wheel with
+[SPEAKER_00]: a polymerase measuring incorporation.
+[SPEAKER_00]: And you can read this molecule over and
+over and over again with these sequencers
+[SPEAKER_00]: to get very high accuracy.
+[SPEAKER_00]: And what you're seeing down below is the
+average transcript length that's in the
+[SPEAKER_00]: genome.
+[SPEAKER_00]: So some of them are getting out to be 5 kb
+genes, which is quite long.
+[SPEAKER_00]: And you can see the average in there is
+around 1 to 2,000 bases long.
+[SPEAKER_00]: What this does, it gives us a picture of
+all the different isoforms that are in the
+[SPEAKER_00]: genome.
+[SPEAKER_00]: So an isoform is a version of a gene.
+[SPEAKER_00]: Any given gene can have multiple exons.
+[SPEAKER_00]: And those exons can be differentially
+spliced.
+[SPEAKER_00]: And when they're differentially spliced,
+they create a different RNA molecule.
+[SPEAKER_00]: So each gene can have two or three
+different RNA molecules coming off of it.
+[SPEAKER_00]: That's what we call an isoform.
+[SPEAKER_00]: And interestingly enough, the male flowers
+have more isoforms than the female
+[SPEAKER_00]: flowers.
+[SPEAKER_00]: And we're in a habit of getting rid of
+these things as fast as we can find them.
+[SPEAKER_00]: But we might find some very interesting
+biology in there that give us some pause
+[SPEAKER_00]: on that genocide.
+[SPEAKER_00]: So what else we can find from this is we
+can take these RNA molecules, we can then
+[SPEAKER_00]: map them to the reference genome,
+and then identify where all the genes are
+[SPEAKER_00]: in the genome.
+[SPEAKER_00]: And so we can annotate the genome.
+[SPEAKER_00]: And what we're seeing is around 27,000
+genes that are female gene models.
+[SPEAKER_00]: And this gives us an estimation of the
+exome size inside cannabis as well.
+[SPEAKER_00]: It's about 44 megabases of exome.
+[SPEAKER_00]: There's 35 megabases of this that are
+coding, because parts of exomes can be
+[SPEAKER_00]: UTRs.
+[SPEAKER_00]: And there's 121 megabases if you include
+the introns.
+[SPEAKER_00]: So this is bigger than the human exome,
+yet the genome is about a third of the
+[SPEAKER_00]: size of the human genome.
+[SPEAKER_00]: So it's kind of an interesting adaptation
+that we're seeing in cannabis.
+[SPEAKER_00]: And of course, if you're going to do this
+in females, you have to do it in males.
+[SPEAKER_00]: We just saw that males have more isoforms.
+[SPEAKER_00]: And so what we've done is taken all of the
+RNA that we've done from those five
+[SPEAKER_00]: tissues and mapped them against a male
+assembly that we now have.
+[SPEAKER_00]: And we can identify that there's even more
+genes that are active in the male genome.
+[SPEAKER_00]: There's 32,000 of those genes and about
+4,000 of them that are differentially
+[SPEAKER_00]: expressed in the male.
+[SPEAKER_00]: This also helps us decorate the Y
+chromosome.
+[SPEAKER_00]: We can see parts of the Y chromosome now
+that are about 80 megabases that do not
+[SPEAKER_00]: recombine with the X chromosome and about
+30 megabases that is still recombining
+[SPEAKER_00]: with the X chromosome.
+[SPEAKER_00]: So if you're going to build any sex test,
+you want to put it in the region of the Y
+[SPEAKER_00]: that does not recombine, otherwise you'll
+run into some trouble.
+[SPEAKER_00]: Likewise, another great paper came out
+from the Wordsburn Laboratory doing more
+[SPEAKER_00]: mass spec on cannabis genomes.
+[SPEAKER_00]: And we soaked up those FASTA files and
+compared them to the more recent
+[SPEAKER_00]: references we have.
+[SPEAKER_00]: And 98.8% of the mass spec data is
+detected inside the genome.
+[SPEAKER_00]: Now, we have the advantage of being able
+to amplify RNA so we can pick up more
+[SPEAKER_00]: really low incident events.
+[SPEAKER_00]: It's very hard to amplify proteins.
+[SPEAKER_00]: And so it's not surprising that the
+protein systems are not finding all of the
+[SPEAKER_00]: peptides.
+[SPEAKER_00]: They're finding about 40% of what we see
+in the genome.
+[SPEAKER_00]: But there's a very high overlap with what
+they do find as being real.
+[SPEAKER_00]: And so these can be very complementary
+tools because you can pick up like
+[SPEAKER_00]: oscillation and other signals with the
+mass spec data.
+[SPEAKER_00]: OK, so let's look at a couple of examples.
+[SPEAKER_00]: Here's a gene that has been studied
+heavily by Jonathan Page called the
+[SPEAKER_00]: penyltransferase gene.
+[SPEAKER_00]: It's involved in taking alivatolic acid
+and converting it into cannabigeric acid.
+[SPEAKER_00]: But it can do it in two different ways.
+[SPEAKER_00]: And the plant predominantly is making this
+form, CBGA.
+[SPEAKER_00]: But what we're seeing in the genome is
+that there are several cases of
+[SPEAKER_00]: tissue-specific expression of alternative
+isoforms, where we see two exons skipped
+[SPEAKER_00]: in the female flowers and three exons
+skipped in the male flowers.
+[SPEAKER_00]: We don't know what that means.
+[SPEAKER_00]: It may play some role in giving us some
+alternative synthesized cannabinoids.
+[SPEAKER_00]: That's something yet to be resolved.
+[SPEAKER_00]: Now, there's some other things people
+always ask us.
+[SPEAKER_00]: What other genes are being co-inherited
+with the cannabinoids?
+[SPEAKER_00]: These cannabinoid synthase gene clusters
+have been shown to have very low
+[SPEAKER_00]: recombination between them.
+[SPEAKER_00]: So it makes you question what's in linkage
+to squalibrium with them.
+[SPEAKER_00]: What other genes are coming along for the
+ride on those haplotigs?
+[SPEAKER_00]: Well, this is the cannabichromine synthase
+gene cluster.
+[SPEAKER_00]: There's eight copies of the gene,
+all directionally oriented in one
+[SPEAKER_00]: direction.
+[SPEAKER_00]: And on the boundaries of this gene,
+we see melectin expression.
+[SPEAKER_00]: And we see ankyrin expression.
+[SPEAKER_00]: These are genes that are known to be
+involved in pathogen defense that seem to
+[SPEAKER_00]: be going along for the ride with
+cannabichromine.
+[SPEAKER_00]: So that's kind of an interesting little
+story.
+[SPEAKER_00]: The THC synthase story is even more
+interesting.
+[SPEAKER_00]: And that way, you see flanking THCS in the
+genome are transposases.
+[SPEAKER_00]: These are enzymes that copy chunks of DNA.
+[SPEAKER_00]: And shuttle them all over the genome.
+[SPEAKER_00]: And it's probably the reason why we have a
+cannabinoid gene expansion inside of
+[SPEAKER_00]: cannabis.
+[SPEAKER_00]: These transposons are probably cutting it
+and pasting it everywhere they can.
+[SPEAKER_00]: But also, within this same cluster,
+are differentially expressed cannabinoid
+[SPEAKER_00]: synthase genes that we don't know what
+they do.
+[SPEAKER_00]: These are getting differentially expressed
+in different tissues.
+[SPEAKER_00]: And this particular one shocked us because
+it actually has an intron in it.
+[SPEAKER_00]: Most cannabinoid synthase genes are
+believed to be one exon.
+[SPEAKER_00]: Very easy to study.
+[SPEAKER_00]: When they start having introns,
+then they can alternately splice.
+[SPEAKER_00]: And give you more combinatorics on
+isoforms.
+[SPEAKER_00]: And so that's the first time we've seen an
+intron inside of a functional cannabinoid
+[SPEAKER_00]: synthase gene, at least one that's getting
+expressed in frame.
+[SPEAKER_00]: What we see genome-wide is about 90 of
+these different genes that have PFAM
+[SPEAKER_00]: designation as a cannabinoid synthase
+gene.
+[SPEAKER_00]: So there's a lot of genes to comb through
+here.
+[SPEAKER_00]: This is one that stood out on the CBDS
+contig.
+[SPEAKER_00]: This is what's known as a
+self-incompatibility protein that's used
+[SPEAKER_00]: to prevent plants from self-pollinating.
+[SPEAKER_00]: So if you have an obligate out-crosser,
+you're going to probably want this gene so
+[SPEAKER_00]: you can't self yourself.
+[SPEAKER_00]: Now this is probably a historical remnant
+of the hemp lines, which were known to be
+[SPEAKER_00]: monaceous.
+[SPEAKER_00]: But once we move to diaceous plants,
+those things become obligate out-crossers.
+[SPEAKER_00]: And we don't know what the function of
+this is, but it's only expressed in male
+[SPEAKER_00]: flowers.
+[SPEAKER_00]: It may be very helpful to understand if we
+want to understand hermaphroditism,
+[SPEAKER_00]: because hermaphroditism is probably linked
+into the split.
+[SPEAKER_00]: Now what you can see here is that this
+cell self-incompatibility gene is
+[SPEAKER_00]: tissue-specifically expressed only in male
+flowers and happens to be right next door
+[SPEAKER_00]: to CBDAS, including a bunch of other novel
+synthase genes that are differentially
+[SPEAKER_00]: expressed as well in a very
+tissue-specific manner.
+[SPEAKER_00]: So we have a lot to do to understand the
+complexity of cannabinoid synthase genes,
+[SPEAKER_00]: and we can't just be looking in female
+flowers to find it.
+[SPEAKER_00]: We're going to have to be looking at
+multiple tissues to understand this.
+[SPEAKER_00]: So speaking of that, we have to also look
+at the male genomes.
+[SPEAKER_00]: The male X and Y chromosomes are the
+largest chromosomes in cannabis,
+[SPEAKER_00]: and the Y is actually larger than the X.
+[SPEAKER_00]: So what's on the Y chromosome?
+[SPEAKER_00]: Well, what we did is we took the RNA off
+of the male flowers, mapped it to the
+[SPEAKER_00]: female reference genome we have,
+and the reads that didn't map to the
+[SPEAKER_00]: female, we would then map back to the male
+genome to tell us which ones were
+[SPEAKER_00]: male-specifically expressed.
+[SPEAKER_00]: That gives you a hint as to what parts of
+the genome are, in fact, the Y chromosome,
+[SPEAKER_00]: because none of this stuff matches to the
+female genome.
+[SPEAKER_00]: However, female genomes can also have a
+lot of structural variation in there.
+[SPEAKER_00]: So this doesn't necessarily tell us that
+this is all Y.
+[SPEAKER_00]: It tells us it's either Y or it's in a
+structural variant in the female genome,
+[SPEAKER_00]: and we're going to touch on structural
+variants in just a minute.
+[SPEAKER_00]: But this does give us a list of over 118
+megabases of target genome that is
+[SPEAKER_00]: differentially expressed or only expressed
+in the males compared to the females,
+[SPEAKER_00]: and there's a lot of gene content in there
+as well to pay attention to.
+[SPEAKER_00]: Now, if you really want to resolve the Y
+perfectly, the right thing to do is to
+[SPEAKER_00]: sequence three genomes, what's known as a
+trio.
+[SPEAKER_00]: A brother, a sister, and their offspring
+is what we chose to sequence here,
+[SPEAKER_00]: so it's a bit of an inbred cross.
+[SPEAKER_00]: And when you do this, you end up with
+fairly routine N50s over a megabase.
+[SPEAKER_00]: In all cases, we did not do any
+optimization here.
+[SPEAKER_00]: We basically just purified high molecular
+weight DNA, put it through the SQL2
+[SPEAKER_00]: platform, and out popped 1.6 megabase
+N50s.
+[SPEAKER_00]: As a comparison of reference point,
+the Human Genome Project went down to the
+[SPEAKER_00]: White House to celebrate 500 kb N50s back
+in 2000, and we're still waiting for
+[SPEAKER_00]: Donald's invite to celebrate this one.
+[SPEAKER_00]: But I'm suspect it's coming anytime soon.
+[SPEAKER_00]: But all of the busco scores are easily
+above 97% just using a single method,
+[SPEAKER_00]: so this is actually really reassuring
+because in the past, to tackle genomes
+[SPEAKER_00]: like this, you'd have to deploy five or
+six different methods to really kill it,
+[SPEAKER_00]: and that's, I think, coming to a close
+soon.
+[SPEAKER_00]: So this is the actual family of other
+Jamaican lions that we've sequenced.
+[SPEAKER_00]: The rest of these we hit with a short read
+platform known as Illumina, and what
+[SPEAKER_00]: you're seeing above each one of these
+genome pictures here is a coverage map
+[SPEAKER_00]: across the BTBD allele.
+[SPEAKER_00]: The genes that we just went over that are
+coding for the cannabinoid synthase genes,
+[SPEAKER_00]: if you look at the coverage map across
+those, you can predict what cannabinoids
+[SPEAKER_00]: the plant's going to make, and that can be
+seen in this little diagram here.
+[SPEAKER_00]: We can detect with this tool that's on
+Canapedia whether it's going to be a type
+[SPEAKER_00]: 1, type 2, type 3, or type 4 plant just
+from the Illumina sequence coverage
+[SPEAKER_00]: profiles alone.
+[SPEAKER_00]: If they have an active THC allele,
+we know that it's going to make some THC.
+[SPEAKER_00]: If that's in combination with a CBD gene
+that's not even in the genome,
+[SPEAKER_00]: we know it's a type 1 plant.
+[SPEAKER_00]: When all three of these contigs are
+present, we know it's a type 2 plant.
+[SPEAKER_00]: When only the active CBD contig's present
+and there is no THC contig or a CBDS
+[SPEAKER_00]: inactive, we know it's going to be a type
+3 plant, and when none of them are
+[SPEAKER_00]: present, it tends to be a CBG plant.
+[SPEAKER_00]: So just looking at the coverage maps
+alone, we can sort out its chemical
+[SPEAKER_00]: expression, at least on those three
+cannabinoids.
+[SPEAKER_00]: The other thing that you want to do is
+compare this to other type 3 plants.
+[SPEAKER_00]: So Chris Grasa is here.
+[SPEAKER_00]: And presenting later, I think today or
+tomorrow, on a genome that's a type 3
+[SPEAKER_00]: plant, a hemp line known as CBDRx.
+[SPEAKER_00]: And so what we like to do is always align
+the reference genomes that we have at
+[SPEAKER_00]: Jamaica Lions, what other people have
+found in other states and other
+[SPEAKER_00]: jurisdictions, to see that we come to some
+level of consensus on this.
+[SPEAKER_00]: And we're beginning to see that with both
+the male and female genomes.
+[SPEAKER_00]: What you're seeing here is a contiguous
+alignment of our genome to theirs,
+[SPEAKER_00]: and you see these diagonal lines.
+[SPEAKER_00]: Those all represent the chromosomes,
+the 10 chromosomes that you see in
+[SPEAKER_00]: cannabis.
+[SPEAKER_00]: And so we're beginning to get genomes that
+now share a lot of content.
+[SPEAKER_00]: Now, the next thing that we did is we took
+40 genomes and sequenced them with
+[SPEAKER_00]: Illumina.
+[SPEAKER_00]: Now, these are shorter read systems that
+can't get you to the whole genome,
+[SPEAKER_00]: and they can't get you all the structural
+variants, but they can get you to all the
+[SPEAKER_00]: SNPs and the small insertions and
+deletions in the genome.
+[SPEAKER_00]: So this here is a histogram of the number
+of variants that we see between the lines.
+[SPEAKER_00]: The Jamaican lion genomes are here,
+and there are usually 2 to 3 million
+[SPEAKER_00]: variants between those siblings.
+[SPEAKER_00]: But when you get up into comparing those
+to hemp lines, it jumps up to about 12
+[SPEAKER_00]: million variants.
+[SPEAKER_00]: As a perspective here, the human genome is
+going to have about a tenth of the number
+[SPEAKER_00]: of variants that we're seeing here per
+cannabis line.
+[SPEAKER_00]: There's about a variant every 1,000 bases
+in human.
+[SPEAKER_00]: There's one every 90 bases here in
+cannabis.
+[SPEAKER_00]: So there's a tremendous amount of
+diversity here that we have to comb
+[SPEAKER_00]: through.
+[SPEAKER_00]: We also have some sense of the insertions
+and deletions from this data set as well.
+[SPEAKER_00]: But what you can do when you have the RNA
+data layered on top of the genome is you
+[SPEAKER_00]: know where all the genes are.
+[SPEAKER_00]: So now you can take the variant
+information and ask, well, how many of
+[SPEAKER_00]: those genes are broken by those variants?
+[SPEAKER_00]: Do we have any frame shift mutations?
+[SPEAKER_00]: Do we have any stop codons that are
+disappearing?
+[SPEAKER_00]: Do we have any start codons that are
+changing?
+[SPEAKER_00]: And you do this with a program known as
+SNP EFF.
+[SPEAKER_00]: It looks at the impact of the variants.
+[SPEAKER_00]: So we just went through and asked,
+how many high impact variants do we have
+[SPEAKER_00]: per cultivar?
+[SPEAKER_00]: Because in humans, those numbers are
+really low.
+[SPEAKER_00]: In plants, like cannabis, there's over
+2,200 high impact variants per cultivar.
+[SPEAKER_00]: So we've got a lot to understand about
+what this type of diversity actually
+[SPEAKER_00]: means.
+[SPEAKER_00]: You can also take all of the sequencing
+data from the Illumina platform,
+[SPEAKER_00]: map all 40 of the genomes to the male
+reference.
+[SPEAKER_00]: And what you see here are 40 genomes lined
+up top to bottom here.
+[SPEAKER_00]: These top ones are male genomes.
+[SPEAKER_00]: And we're looking at the density of
+coverage across all of the contigs in the
+[SPEAKER_00]: genome.
+[SPEAKER_00]: And what's interesting is the females have
+none here.
+[SPEAKER_00]: The red means there's no coverage or at
+least twofold less coverage than average.
+[SPEAKER_00]: And the yellow is twofold or greater,
+more coverage than average.
+[SPEAKER_00]: And so instantly from a picture like this,
+you can identify all the contigs that are
+[SPEAKER_00]: present in the males, absent in the
+females, present at half the coverage in
+[SPEAKER_00]: the males, and double the coverage in the
+females.
+[SPEAKER_00]: That tells you x and y.
+[SPEAKER_00]: So now we've got a list of all the genetic
+content and the genes that are on x and y.
+[SPEAKER_00]: So we can begin to understand what things
+are really related to hermaphroditism.
+[SPEAKER_00]: A couple of interesting genes that pop out
+on the y.
+[SPEAKER_00]: We have some flowering loci we want to pay
+attention to.
+[SPEAKER_00]: There's a calcone synthase in there.
+[SPEAKER_00]: There's a tricone gene involved.
+[SPEAKER_00]: There's a Downy mildew resistance gene
+that's involved in there.
+[SPEAKER_00]: So a lot of activity in the y.
+[SPEAKER_00]: We don't want to ignore that.
+[SPEAKER_00]: But the other thing that popped out of
+this data completely accidentally was with
+[SPEAKER_00]: three of the genomes that are in there
+from Colorado seeds.
+[SPEAKER_00]: This is an interesting cross they've done
+that has some interesting properties,
+[SPEAKER_00]: I'll say.
+[SPEAKER_00]: But what was interesting about this is
+there are these three hotspots that this
+[SPEAKER_00]: to us is a copy number variant.
+[SPEAKER_00]: When you see something really bright
+yellow on this map, it tells you it's been
+[SPEAKER_00]: replicated.
+[SPEAKER_00]: And without knowing that this plant was
+powdery mildew resistance, we called them
+[SPEAKER_00]: up saying, hey, we have regions of your
+genome that are amplified.
+[SPEAKER_00]: And they happened to map to a gene that is
+powdery mildew resistant in hops.
+[SPEAKER_00]: What do you know about this plant?
+[SPEAKER_00]: And they said, well, that's interesting.
+[SPEAKER_00]: This thing never gets powdery mildew.
+[SPEAKER_00]: It's surrounded by it all the time.
+[SPEAKER_00]: And we want to know more about that.
+[SPEAKER_00]: We weren't even looking for this.
+[SPEAKER_00]: And it just jumped out by looking at these
+coverage maps.
+[SPEAKER_00]: So that might be an interesting marker
+that we want to track as we breed it into
+[SPEAKER_00]: other plants.
+[SPEAKER_00]: OK, so let's touch on structural variants.
+[SPEAKER_00]: I still have some time on structural
+variants.
+[SPEAKER_00]: So many of you may be familiar with snip
+chips.
+[SPEAKER_00]: Snip chips are great for looking at single
+base pair variants, maybe some of the
+[SPEAKER_00]: small indels.
+[SPEAKER_00]: But when you want to look at things that
+are up to 50 base pair insertions and
+[SPEAKER_00]: deletions, you usually migrate to
+something like an aluminum sequencer.
+[SPEAKER_00]: Those are great at getting some of the
+indels up to about that size.
+[SPEAKER_00]: Once you start getting larger than that,
+it's very difficult to ascertain them with
+[SPEAKER_00]: short reads.
+[SPEAKER_00]: You need long reads to do this.
+[SPEAKER_00]: And the important thing about doing this
+with long reads is that the vast majority
+[SPEAKER_00]: of the variant information in the genome
+is usually the structural variants.
+[SPEAKER_00]: They're not very frequent in terms of
+their incident rate, but they happen to
+[SPEAKER_00]: contain large chunks of DNA in almost
+entire genes.
+[SPEAKER_00]: So you really need to pay attention to the
+structural variants and get on board with
+[SPEAKER_00]: some of these long read sequencers.
+[SPEAKER_00]: What you're seeing here is a graph of the
+variant size and the cumulative percentage
+[SPEAKER_00]: of them that they make up in a genome.
+[SPEAKER_00]: And so you can see that there are a
+tremendous amount of variants that are
+[SPEAKER_00]: large, like 10 kB in size.
+[SPEAKER_00]: And encompass a tremendous amount of
+either regulatory elements or genes.
+[SPEAKER_00]: In humans, what you see is around seven of
+these per megabase.
+[SPEAKER_00]: And this jumps order of magnitude when you
+get in the maze.
+[SPEAKER_00]: There's about 70 of these per megabase.
+[SPEAKER_00]: And you can see that the short read
+systems have very low sensitivity for
+[SPEAKER_00]: picking these things up.
+[SPEAKER_00]: And so we're blind to these if we're only
+using the aluminum sequencers.
+[SPEAKER_00]: When you put in 20x coverage with these
+long reads, you see them all.
+[SPEAKER_00]: And it becomes a really interesting story
+that is represented here.
+[SPEAKER_00]: Here we can see over 17,000 heterozygous
+and almost 10,000 homozygous deletions in
+[SPEAKER_00]: the male flower, almost an equal number of
+those of insertions.
+[SPEAKER_00]: Likewise, the offspring there has a
+similar number of deletions and
+[SPEAKER_00]: insertions.
+[SPEAKER_00]: And the histogram of the size of these
+things is down here below.
+[SPEAKER_00]: So there's clearly some kind of repeat
+element in the genome that's jumping up
+[SPEAKER_00]: and around 10 kB as being inserted and
+deleted inside the genome.
+[SPEAKER_00]: This makes you question what the heck is
+in this stuff.
+[SPEAKER_00]: If this is just one inbred cross in a trio
+and there's this much stuff jumping
+[SPEAKER_00]: around, this is like an eighth of the
+genome in structural variation.
+[SPEAKER_00]: This is extraordinarily plastic when it
+comes to a genome.
+[SPEAKER_00]: And it's not necessarily containing boring
+things.
+[SPEAKER_00]: We're seeing terpene synthase genes that
+are in these structural variants in the
+[SPEAKER_00]: genome.
+[SPEAKER_00]: So TPS17 is a beta-mercine gene.
+[SPEAKER_00]: We also have other TPS10 and TPS30-like or
+perhaps making alpha-pinene and
+[SPEAKER_00]: delimitene.
+[SPEAKER_00]: In the terpene landscape, a single gene
+does not make a single terpene.
+[SPEAKER_00]: One gene can make multiple terpenes and
+there can be multiple copies of that gene
+[SPEAKER_00]: contributing the same terpene.
+[SPEAKER_00]: So just by this beta-mercine being dropped
+out, doesn't mean it doesn't make any
+[SPEAKER_00]: mercine.
+[SPEAKER_00]: There's other genes that will probably
+haplocompensate for that.
+[SPEAKER_00]: But we also see this in the triterpenes.
+[SPEAKER_00]: Nobody is measuring for triterpenes right
+now in the labs.
+[SPEAKER_00]: We need to be looking at these things
+because the flavonols are in there and
+[SPEAKER_00]: people are publishing on how the
+can-flavin genes are in fact having an
+[SPEAKER_00]: impact in pancreatic cancer and in pain.
+[SPEAKER_00]: Yet it's a molecule that the plant makes
+that we don't track.
+[SPEAKER_00]: Likewise, these other triterpenes seem to
+have some interesting characteristics as
+[SPEAKER_00]: well.
+[SPEAKER_00]: And we think we'd love to see those
+getting into the analytical chemistry
+[SPEAKER_00]: labs.
+[SPEAKER_00]: Now we're tracking all of this stuff in a
+website known as Canapedia.
+[SPEAKER_00]: And what this system enables is for people
+to sequence partial genomes or complete
+[SPEAKER_00]: genomes and put the data public or hold it
+private depending on their need.
+[SPEAKER_00]: But it allows you to compare that genome
+to everything else we have in the
+[SPEAKER_00]: database.
+[SPEAKER_00]: So you can get a phylogenetic tree of what
+it's related to and what it's most distant
+[SPEAKER_00]: to and how heterozygous it is and how
+back-crossed it is.
+[SPEAKER_00]: And we can also scan for the BTBD allele
+to know what type of plant it is and
+[SPEAKER_00]: whether that's going to step on any
+intellectual property that's out there.
+[SPEAKER_00]: But all of this is linked into a
+blockchain system so that the time stamps
+[SPEAKER_00]: and the notarizations are uneditable by
+us.
+[SPEAKER_00]: If we disappear, your data still has links
+into a blockchain that is distributed
+[SPEAKER_00]: around the world and your time stamps
+cannot be changed by anyone at our
+[SPEAKER_00]: company.
+[SPEAKER_00]: Now we're starting to integrate some
+genome browsers into this as well so
+[SPEAKER_00]: people can kind of peruse their genome
+next to this is down below.
+[SPEAKER_00]: This is what the 40 genomes SNP variant
+file looks like.
+[SPEAKER_00]: It looks like there's almost a SNP at
+every single location throughout the
+[SPEAKER_00]: genome when you put this many genomes in
+there.
+[SPEAKER_00]: But if you zoom in, it's not that sparse.
+[SPEAKER_00]: But nevertheless, it can be a very helpful
+tool for analyzing your genome.
+[SPEAKER_00]: And now, since the data up there is
+public, there's been over seven
+[SPEAKER_00]: publications that have just scraped data
+off of that site and published their own
+[SPEAKER_00]: analysis of it.
+[SPEAKER_00]: So it's been thoroughly vetted.
+[SPEAKER_00]: And it's growing every day.
+[SPEAKER_00]: So with a few minutes left, I'm just going
+to touch on what you can do.
+[SPEAKER_00]: What applications can you do with genome
+structures like this and sequences like
+this?
+[SPEAKER_00]: Well, the first thing we started to do was
+to build a fingerprinting tool that only
+[SPEAKER_00]: needed 16 SNPs to identify cannabis
+strain.
+[SPEAKER_00]: And we want it to be 16 SNPs so we can do
+it on a quantitative PCR instrument in an
+[SPEAKER_00]: hour.
+[SPEAKER_00]: We don't have to necessarily send it out
+to a sequencing lab.
+[SPEAKER_00]: We can basically get parentage information
+from 16 wells in a 96-well plate.
+[SPEAKER_00]: Inside that system that we built,
+we also have that CBD and THC allele.
+[SPEAKER_00]: So we can measure the BTBD allele on a
+plant with a genotype in a PCR well now,
+[SPEAKER_00]: which is quite nice.
+[SPEAKER_00]: And it also makes you want to think about
+doing RNA PCR.
+[SPEAKER_00]: Can you do QPCR and RNA of the terpenes or
+the cannabinoid genes to understand at
+[SPEAKER_00]: what stage of development are you getting
+hyper or hypo expression of those genes?
+[SPEAKER_00]: And then we're beginning to work on
+viruses as well.
+[SPEAKER_00]: There's some great work that was published
+by Dark Heart Nurseries recently on the
+[SPEAKER_00]: hops latent virus.
+[SPEAKER_00]: So we've made an assay out of what they
+discovered.
+[SPEAKER_00]: And we also did a assay out of lettuce
+chlorosis virus that was published in
+[SPEAKER_00]: Israel recently and threw in a third one
+known as CCV1 so we can start to track the
+[SPEAKER_00]: actual virus.
+[SPEAKER_00]: That might be spreading through the
+population.
+[SPEAKER_00]: And then two other things that we're
+playing around with is some work with
+[SPEAKER_00]: Arbor where we're making different panels
+that can capture 1,000 genes or 50 genes
+[SPEAKER_00]: at a time and sequence those so that
+people can take more bite-sized pieces out
+[SPEAKER_00]: of the genome and analyze them.
+[SPEAKER_00]: This current one has the synthase genes
+and the adestin genes.
+[SPEAKER_00]: I think they have a booth here describing
+this panel that they've built.
+[SPEAKER_00]: And a lot of that was built off the
+Jamaican Lion references.
+[SPEAKER_00]: And we're also making multiplex tools to
+measure the microbes that are in the
+[SPEAKER_00]: plant.
+[SPEAKER_00]: And down below there is just a five-color
+aspergillus assay for tracking things in
+[SPEAKER_00]: California.
+[SPEAKER_00]: And then the final thing we're just toying
+around with this really early is pollen
+[SPEAKER_00]: traps.
+[SPEAKER_00]: There's all this problems with pollen
+floating onto open field cannabis farms
+[SPEAKER_00]: right now.
+[SPEAKER_00]: And so we are trying to do here is
+quantitate the amount of male pollen
+[SPEAKER_00]: that's in the air and the amount of
+THC-laden pollen that's in the air with
+[SPEAKER_00]: these $50 pollen traps that you can throw
+in the corners of your property and see if
+[SPEAKER_00]: there are a lot of pollen that's blowing
+in that might be destroying your grow in
+[SPEAKER_00]: the next couple years.
+[SPEAKER_00]: So a lot can be done with genetics.
+[SPEAKER_00]: And I want to thank all these people that
+helped us do it.
+[SPEAKER_00]: Dash really kicked off the snowballing of
+this.
+[SPEAKER_00]: And then PacBio was pivotal in providing
+the technology that could sequence these
+[SPEAKER_00]: genomes.
+[SPEAKER_00]: New England Biolabs did a lot of the
+methylation work and some of the
+[SPEAKER_00]: sequencing work on the NovaSeq.
+[SPEAKER_00]: And we've done some work with phase
+genomics and the other parties here to
+[SPEAKER_00]: actually piece the genome in some more
+contiguous shape.
+[SPEAKER_00]: And then all of these people were required
+to make this happen.
+[SPEAKER_00]: It really does take a village and a
+tremendous amount of collaboration,
+[SPEAKER_00]: as Dr. Machulam was saying.
+[SPEAKER_00]: So with that, I want to leave a few
+seconds here for questions.
+[SPEAKER_00]: If possible, and if not, we will roll over
+to the next section, which I think is a
+[SPEAKER_00]: panel.
+[SPEAKER_00]: Thank you for your time.
+[SPEAKER_00]: Thank you.
+Thank you.

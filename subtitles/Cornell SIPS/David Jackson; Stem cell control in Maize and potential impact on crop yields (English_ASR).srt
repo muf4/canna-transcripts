@@ -1,0 +1,5264 @@
+1
+00:00:03,138 --> 00:00:08,689
+it's it's great to be back a corn Li
+
+2
+00:00:06,589 --> 00:00:11,059
+every time I come here which is not as
+
+3
+00:00:08,689 --> 00:00:12,529
+often as I'd like I always wish I came
+
+4
+00:00:11,058 --> 00:00:14,868
+more often because there's so many great
+
+5
+00:00:12,529 --> 00:00:16,730
+people here and so many friends I will
+
+6
+00:00:14,868 --> 00:00:18,170
+try and come more often but I think it's
+
+7
+00:00:16,730 --> 00:00:20,469
+been about 10 years since I was last
+
+8
+00:00:18,170 --> 00:00:22,760
+here yeah so I'm going to talk about
+
+9
+00:00:20,469 --> 00:00:24,859
+development which is what we study very
+
+10
+00:00:22,760 --> 00:00:27,200
+similar to the work you know from from
+
+11
+00:00:24,859 --> 00:00:28,879
+Mike's lab and you know I'm really
+
+12
+00:00:27,199 --> 00:00:30,800
+fascinated by this idea that genes
+
+13
+00:00:28,879 --> 00:00:32,869
+control development it's a very simple
+
+14
+00:00:30,800 --> 00:00:34,730
+idea but you know development is
+
+15
+00:00:32,869 --> 00:00:38,119
+obviously very complex the generation of
+
+16
+00:00:34,729 --> 00:00:40,039
+form of three-dimensional structures but
+
+17
+00:00:38,119 --> 00:00:42,709
+the idea that we can tease is afar by
+
+18
+00:00:40,039 --> 00:00:44,299
+finding individual genes that controlled
+
+19
+00:00:42,710 --> 00:00:45,590
+specific aspects of development is
+
+20
+00:00:44,299 --> 00:00:47,179
+something that that I find very
+
+21
+00:00:45,590 --> 00:00:49,520
+attractive because I want to know how
+
+22
+00:00:47,179 --> 00:00:52,070
+things work ever since I was a kid I
+
+23
+00:00:49,520 --> 00:00:53,420
+would be taking toys apart and breaking
+
+24
+00:00:52,070 --> 00:00:55,520
+them you know and finding out how do you
+
+25
+00:00:53,420 --> 00:00:57,200
+know how machines work so I want to know
+
+26
+00:00:55,520 --> 00:01:00,290
+how plants work and specifically how the
+
+27
+00:00:57,200 --> 00:01:02,480
+how the morphology is generated and you
+
+28
+00:01:00,289 --> 00:01:04,578
+know potentially we could use that to
+
+29
+00:01:02,479 --> 00:01:07,519
+improve crops I don't know maybe I'm
+
+30
+00:01:04,578 --> 00:01:09,019
+very naive but you know I think you know
+
+31
+00:01:07,519 --> 00:01:10,939
+we we should always think about a
+
+32
+00:01:09,019 --> 00:01:14,869
+potential applications for work
+
+33
+00:01:10,939 --> 00:01:16,579
+so what very much like Mike's lab we
+
+34
+00:01:14,870 --> 00:01:19,990
+study the meristems the shrewdest
+
+35
+00:01:16,579 --> 00:01:21,920
+meristems and I always I always sort of
+
+36
+00:01:19,989 --> 00:01:23,420
+assumed that everybody knows what a
+
+37
+00:01:21,920 --> 00:01:25,879
+meristem is that I know most people
+
+38
+00:01:23,420 --> 00:01:28,340
+don't but anyway the meristem in maize
+
+39
+00:01:25,879 --> 00:01:30,289
+which is when I'll talk about today is
+
+40
+00:01:28,340 --> 00:01:31,969
+found right at the base of the seedling
+
+41
+00:01:30,290 --> 00:01:33,470
+not up here which is where most people
+
+42
+00:01:31,969 --> 00:01:35,150
+guess it will be also people think it's
+
+43
+00:01:33,469 --> 00:01:37,819
+here but it's actually right at the base
+
+44
+00:01:35,150 --> 00:01:40,030
+but if you're very patient and dissect
+
+45
+00:01:37,819 --> 00:01:42,919
+away all the leaf primordia down here
+
+46
+00:01:40,030 --> 00:01:44,960
+then you're rewarded by this amazing
+
+47
+00:01:42,920 --> 00:01:47,240
+structure that the shoot meristem which
+
+48
+00:01:44,959 --> 00:01:50,509
+I I think is beautiful and it's this
+
+49
+00:01:47,239 --> 00:01:52,280
+dome of cells themselves that throughout
+
+50
+00:01:50,509 --> 00:01:54,590
+the life of the plant generate all the
+
+51
+00:01:52,280 --> 00:01:56,570
+organs that are required for it fruit
+
+52
+00:01:54,590 --> 00:01:58,189
+for growth and development so that's a
+
+53
+00:01:56,569 --> 00:02:00,469
+scanning eeehm because the meristem is
+
+54
+00:01:58,188 --> 00:02:02,839
+pretty tiny spider a tenth of a
+
+55
+00:02:00,469 --> 00:02:04,969
+millimeter in diameter but this
+
+56
+00:02:02,840 --> 00:02:06,439
+structure obviously is critical for fun
+
+57
+00:02:04,969 --> 00:02:08,628
+development because it makes all the
+
+58
+00:02:06,438 --> 00:02:11,150
+structures of the shoot including the
+
+59
+00:02:08,628 --> 00:02:15,379
+leaves the axillary meristems which make
+
+60
+00:02:11,150 --> 00:02:16,810
+the inflorescences the ears and also the
+
+61
+00:02:15,379 --> 00:02:18,459
+tassel so
+
+62
+00:02:16,810 --> 00:02:21,789
+critical structure and it's something we
+
+63
+00:02:18,459 --> 00:02:25,509
+can analyze and understand using
+
+64
+00:02:21,789 --> 00:02:27,789
+genetics actually 25 years ago when Mike
+
+65
+00:02:25,509 --> 00:02:29,439
+and I are in Berkeley I remember Ian's
+
+66
+00:02:27,789 --> 00:02:32,139
+Sussex told me that the meristem was a
+
+67
+00:02:29,439 --> 00:02:34,359
+black box it was a killer project but a
+
+68
+00:02:32,139 --> 00:02:36,039
+postdoc on that because you couldn't you
+
+69
+00:02:34,360 --> 00:02:38,170
+couldn't understand it it was so it's so
+
+70
+00:02:36,039 --> 00:02:40,959
+mysterious but you know he didn't
+
+71
+00:02:38,169 --> 00:02:43,809
+although he wrote the book on meristem
+
+72
+00:02:40,959 --> 00:02:45,759
+Steve's on Sussex he didn't use a lot of
+
+73
+00:02:43,810 --> 00:02:48,009
+genetics in his lab I think he came
+
+74
+00:02:45,759 --> 00:02:50,189
+before the era of genetics so genetics
+
+75
+00:02:48,009 --> 00:02:54,669
+is the key really to understanding this
+
+76
+00:02:50,189 --> 00:02:56,139
+ok so what you should also realize is
+
+77
+00:02:54,669 --> 00:02:57,699
+the meristem does not also make leaves
+
+78
+00:02:56,139 --> 00:02:59,859
+but it of course after transition to
+
+79
+00:02:57,699 --> 00:03:01,780
+flowering it produces the reproductive
+
+80
+00:02:59,860 --> 00:03:04,330
+organs reproductive structures and so
+
+81
+00:03:01,780 --> 00:03:07,030
+these are also shooting meristems and so
+
+82
+00:03:04,330 --> 00:03:09,099
+you have the axillary shoot marathons
+
+83
+00:03:07,030 --> 00:03:13,030
+makes the ear primordia to make the ears
+
+84
+00:03:09,098 --> 00:03:16,000
+and the apical shoot meristem produces
+
+85
+00:03:13,030 --> 00:03:17,500
+the terminal tassel that is similar it's
+
+86
+00:03:16,000 --> 00:03:19,239
+similar in structure to the ears except
+
+87
+00:03:17,500 --> 00:03:21,609
+it has branches of course the tassel is
+
+88
+00:03:19,239 --> 00:03:23,409
+branched in maize but these are all Mary
+
+89
+00:03:21,609 --> 00:03:26,980
+senses are all meristem structures and
+
+90
+00:03:23,409 --> 00:03:28,150
+we can study genes that affect you know
+
+91
+00:03:26,979 --> 00:03:30,429
+all of these different stages of
+
+92
+00:03:28,150 --> 00:03:32,349
+development but we tend to focus on the
+
+93
+00:03:30,430 --> 00:03:34,180
+ear just because that's where the
+
+94
+00:03:32,349 --> 00:03:36,579
+phenotypes that we work on them or
+
+95
+00:03:34,180 --> 00:03:38,950
+dramatic so we look a lot of ear
+
+96
+00:03:36,579 --> 00:03:42,099
+primordia and these things that we
+
+97
+00:03:38,949 --> 00:03:44,229
+affectionately call baby ears right so
+
+98
+00:03:42,099 --> 00:03:46,329
+that as sometimes guess is in trouble
+
+99
+00:03:44,229 --> 00:03:49,629
+with FedEx when we shoot packages
+
+100
+00:03:46,329 --> 00:03:53,260
+labeled baby ears strange reactions but
+
+101
+00:03:49,629 --> 00:03:56,109
+anyway yeah yeah so you're all familiar
+
+102
+00:03:53,259 --> 00:03:58,629
+with the ear of corn of course you've
+
+103
+00:03:56,109 --> 00:04:00,370
+eaten this and everybody loves it I hope
+
+104
+00:03:58,629 --> 00:04:02,439
+but we look at the ears when they're
+
+105
+00:04:00,370 --> 00:04:05,109
+about this stage this is 2 millimeters
+
+106
+00:04:02,439 --> 00:04:06,789
+by the thickness of a quarter and at
+
+107
+00:04:05,109 --> 00:04:09,549
+this stage already
+
+108
+00:04:06,789 --> 00:04:11,828
+most of the morphogenesis the initiation
+
+109
+00:04:09,549 --> 00:04:15,069
+of all the structures has occurred and
+
+110
+00:04:11,829 --> 00:04:16,780
+on the flanks of the apical meristem you
+
+111
+00:04:15,068 --> 00:04:18,939
+have all these primordia forming these
+
+112
+00:04:16,779 --> 00:04:20,619
+are called spikelet pairs and they form
+
+113
+00:04:18,939 --> 00:04:23,168
+spikelets and then florets and this is
+
+114
+00:04:20,620 --> 00:04:25,389
+what produces the seeds so the meristem
+
+115
+00:04:23,168 --> 00:04:27,339
+at this very early stage is already
+
+116
+00:04:25,389 --> 00:04:29,539
+making this very regular rows of
+
+117
+00:04:27,339 --> 00:04:33,689
+primordia that will make the rig
+
+118
+00:04:29,540 --> 00:04:36,450
+the morphology is set up very early so
+
+119
+00:04:33,689 --> 00:04:38,730
+there it is again and these are all
+
+120
+00:04:36,449 --> 00:04:40,199
+scanning Ian's by the way and they look
+
+121
+00:04:38,730 --> 00:04:43,230
+impressive but these are really easy to
+
+122
+00:04:40,199 --> 00:04:45,389
+take so there's this just live tissue we
+
+123
+00:04:43,230 --> 00:04:47,430
+put it in this SEM and two minutes later
+
+124
+00:04:45,389 --> 00:04:49,909
+we have anything which like this you
+
+125
+00:04:47,430 --> 00:04:51,930
+should play around with that so we've
+
+126
+00:04:49,910 --> 00:04:54,210
+characterized a lot of the genes that
+
+127
+00:04:51,930 --> 00:04:56,340
+are involved in your development and
+
+128
+00:04:54,209 --> 00:04:57,449
+I'll just give you an outline as some of
+
+129
+00:04:56,339 --> 00:04:59,939
+them I mean there are a lot of different
+
+130
+00:04:57,449 --> 00:05:00,750
+things going on here so they'd be in the
+
+131
+00:04:59,939 --> 00:05:03,120
+inflorescence
+
+132
+00:05:00,750 --> 00:05:04,500
+there are leaves that are produced but
+
+133
+00:05:03,120 --> 00:05:06,810
+they're actually suppressed their growth
+
+134
+00:05:04,500 --> 00:05:09,089
+is suppressed to promote growth of the
+
+135
+00:05:06,810 --> 00:05:11,519
+meristems and that's a class of genes
+
+136
+00:05:09,089 --> 00:05:13,019
+called tassel sheath which when Whipple
+
+137
+00:05:11,519 --> 00:05:14,759
+is now focusing on he's calling the
+
+138
+00:05:13,019 --> 00:05:16,919
+first one of those in my lab but yet has
+
+139
+00:05:14,759 --> 00:05:19,259
+his own group now working those the
+
+140
+00:05:16,920 --> 00:05:21,330
+axillary meristems are initiated and
+
+141
+00:05:19,259 --> 00:05:23,939
+that's a lot of the genes involved in
+
+142
+00:05:21,329 --> 00:05:26,370
+that process of Austin sequence as we
+
+143
+00:05:23,939 --> 00:05:28,500
+know also from Arabidopsis and work from
+
+144
+00:05:26,370 --> 00:05:30,300
+Impala Max Dean and Andrea gala body has
+
+145
+00:05:28,500 --> 00:05:32,699
+weight one on these genes
+
+146
+00:05:30,300 --> 00:05:36,030
+we've worked we work and continue to
+
+147
+00:05:32,699 --> 00:05:38,729
+work on genes that impose determinacy so
+
+148
+00:05:36,029 --> 00:05:40,469
+this is really a branching series of
+
+149
+00:05:38,730 --> 00:05:42,060
+branching events actually three rounds
+
+150
+00:05:40,470 --> 00:05:44,730
+of branching producer florets
+
+151
+00:05:42,060 --> 00:05:47,550
+but then that indeterminacy has to be
+
+152
+00:05:44,730 --> 00:05:51,020
+turned off so determinacy has to be fair
+
+153
+00:05:47,550 --> 00:05:53,009
+it has to be imposed and that is
+
+154
+00:05:51,019 --> 00:05:55,289
+characterized by a class of genes called
+
+155
+00:05:53,009 --> 00:05:57,870
+the remote genes and we're working those
+
+156
+00:05:55,290 --> 00:05:58,590
+two but for today's seminar because I
+
+157
+00:05:57,870 --> 00:06:00,810
+know it's lunchtime
+
+158
+00:05:58,589 --> 00:06:02,759
+everybody's gonna get hungry I'm gonna
+
+159
+00:06:00,810 --> 00:06:04,889
+focus just on one group of genes and
+
+160
+00:06:02,759 --> 00:06:06,750
+those are the one that's involved in
+
+161
+00:06:04,889 --> 00:06:09,329
+maintaining the stem cells right at the
+
+162
+00:06:06,750 --> 00:06:11,639
+tip and these are the very famous genes
+
+163
+00:06:09,329 --> 00:06:13,050
+known from our our daughters from the
+
+164
+00:06:11,639 --> 00:06:15,509
+work of Elliot Meyerowitz many other
+
+165
+00:06:13,050 --> 00:06:17,310
+groups the Callado genes and the whistle
+
+166
+00:06:15,509 --> 00:06:20,699
+genes so that's what I will focus on
+
+167
+00:06:17,310 --> 00:06:24,629
+today now we've known for a really long
+
+168
+00:06:20,699 --> 00:06:26,729
+time actually since 1920s and before
+
+169
+00:06:24,629 --> 00:06:29,370
+that the meristem has some kind of
+
+170
+00:06:26,730 --> 00:06:30,810
+program for controlling its size so this
+
+171
+00:06:29,370 --> 00:06:33,120
+is you know the meristem is a structure
+
+172
+00:06:30,810 --> 00:06:34,860
+of proliferating cells but the cells are
+
+173
+00:06:33,120 --> 00:06:36,990
+not proliferating out of control of
+
+174
+00:06:34,860 --> 00:06:41,310
+course it's very carefully controlled
+
+175
+00:06:36,990 --> 00:06:43,090
+and Mary Pilkington did these very nice
+
+176
+00:06:41,310 --> 00:06:47,168
+experiments in in the
+
+177
+00:06:43,089 --> 00:06:49,060
+1920s where she would remove over leaf
+
+178
+00:06:47,168 --> 00:06:52,389
+primordia from meristems I think this is
+
+179
+00:06:49,060 --> 00:06:54,550
+in in B and then bisect the meristem
+
+180
+00:06:52,389 --> 00:06:57,370
+with a razor blade and then each half
+
+181
+00:06:54,550 --> 00:06:59,199
+will regrow regenerate and produce new
+
+182
+00:06:57,370 --> 00:07:01,090
+meristems that are the same size as the
+
+183
+00:06:59,199 --> 00:07:02,350
+original meristem also so that the
+
+184
+00:07:01,089 --> 00:07:05,829
+meristem has some kind of internal
+
+185
+00:07:02,350 --> 00:07:07,900
+program to control its size and we know
+
+186
+00:07:05,829 --> 00:07:10,029
+now from a lot of work mostly in
+
+187
+00:07:07,899 --> 00:07:13,089
+Arabidopsis actually almost exclusive in
+
+188
+00:07:10,029 --> 00:07:15,219
+Arabidopsis that this this mechanism for
+
+189
+00:07:13,089 --> 00:07:17,589
+controlling size is through this
+
+190
+00:07:15,220 --> 00:07:21,040
+classical cavada willed feedback pathway
+
+191
+00:07:17,589 --> 00:07:23,109
+and work on that has told us that there
+
+192
+00:07:21,040 --> 00:07:25,840
+are two really important groups of stem
+
+193
+00:07:23,110 --> 00:07:28,150
+cells in the meristem right at the tip
+
+194
+00:07:25,839 --> 00:07:31,269
+you have the true initials the stem
+
+195
+00:07:28,149 --> 00:07:32,978
+cells that we know from clonal analysis
+
+196
+00:07:31,269 --> 00:07:35,319
+these these are the true progenitor
+
+197
+00:07:32,978 --> 00:07:37,538
+cells of the shoot and then below that
+
+198
+00:07:35,319 --> 00:07:39,728
+there's a group of cells in purple here
+
+199
+00:07:37,538 --> 00:07:41,949
+which is called the organizing center
+
+200
+00:07:39,728 --> 00:07:43,659
+and basically to understand how the
+
+201
+00:07:41,949 --> 00:07:45,939
+meristem is is maintained you have to
+
+202
+00:07:43,660 --> 00:07:47,530
+understand that there's a a crosstalk or
+
+203
+00:07:45,939 --> 00:07:51,519
+a feedback between these two groups of
+
+204
+00:07:47,529 --> 00:07:53,978
+cells so the the the organizing Center
+
+205
+00:07:51,519 --> 00:07:56,769
+sends a positive signal to the stem
+
+206
+00:07:53,978 --> 00:07:58,149
+cells to tell it to divide okay so that
+
+207
+00:07:56,769 --> 00:08:00,459
+you need to promote stem cell
+
+208
+00:07:58,149 --> 00:08:02,620
+differentiation let's maintain the shoot
+
+209
+00:08:00,459 --> 00:08:04,168
+but to maintain this as an ordered
+
+210
+00:08:02,620 --> 00:08:06,728
+structure this has to be kept in balance
+
+211
+00:08:04,168 --> 00:08:09,459
+and it's kept in balance by a negative
+
+212
+00:08:06,728 --> 00:08:11,439
+signal central as themselves back to the
+
+213
+00:08:09,459 --> 00:08:13,870
+organizing Center okay so so
+
+214
+00:08:11,439 --> 00:08:14,379
+mechanistically that's how it how it
+
+215
+00:08:13,870 --> 00:08:16,389
+works
+
+216
+00:08:14,379 --> 00:08:19,029
+and what are the genes involved well in
+
+217
+00:08:16,389 --> 00:08:22,509
+the stem cells you have the Claddagh
+
+218
+00:08:19,029 --> 00:08:23,829
+genes as I mentioned and up to now most
+
+219
+00:08:22,509 --> 00:08:26,889
+of the work has been done by a couple of
+
+220
+00:08:23,829 --> 00:08:30,699
+news feed receptors called clavata one
+
+221
+00:08:26,889 --> 00:08:34,240
+and Claddagh two and their ligand which
+
+222
+00:08:30,699 --> 00:08:36,580
+is a small secreted peptide encoded by a
+
+223
+00:08:34,240 --> 00:08:39,099
+gene called cavada 3 so this this gene
+
+224
+00:08:36,580 --> 00:08:42,190
+makes a pre peptide of about 100 amino
+
+225
+00:08:39,099 --> 00:08:44,620
+acids there's cleaved in 12 amino acids
+
+226
+00:08:42,190 --> 00:08:47,470
+signal is secreted and it binds to
+
+227
+00:08:44,620 --> 00:08:51,039
+cavada 1 and activate signaling from
+
+228
+00:08:47,470 --> 00:08:53,649
+this kinase and then that organizing
+
+229
+00:08:51,039 --> 00:08:55,480
+Center is characterized by this famous
+
+230
+00:08:53,649 --> 00:08:56,860
+homie domain transcription factor were
+
+231
+00:08:55,480 --> 00:08:59,080
+show which is expressed
+
+232
+00:08:56,860 --> 00:09:02,409
+down here in those cells so we shall
+
+233
+00:08:59,080 --> 00:09:06,759
+promote stem cell fade clavata genes
+
+234
+00:09:02,409 --> 00:09:08,980
+repress stem cell fate okay and we know
+
+235
+00:09:06,759 --> 00:09:12,700
+this is important because in nature in
+
+236
+00:09:08,980 --> 00:09:15,250
+in the in the wild and in our Gardens we
+
+237
+00:09:12,700 --> 00:09:17,590
+see plants where we've lost this
+
+238
+00:09:15,250 --> 00:09:20,230
+negative feedback and I call this stem
+
+239
+00:09:17,590 --> 00:09:22,690
+cells under control the botanical term
+
+240
+00:09:20,230 --> 00:09:25,180
+for that is face iation and in that case
+
+241
+00:09:22,690 --> 00:09:27,910
+the stem cells over proliferate and you
+
+242
+00:09:25,179 --> 00:09:30,849
+get these amazing convoluted shoots or
+
+243
+00:09:27,909 --> 00:09:34,179
+inflorescences or or flowers or fruits
+
+244
+00:09:30,850 --> 00:09:35,860
+okay so tomato for example work from
+
+245
+00:09:34,179 --> 00:09:37,929
+this equipment and a nest abundant
+
+246
+00:09:35,860 --> 00:09:41,889
+efficient at a closeout of you is what
+
+247
+00:09:37,929 --> 00:09:46,329
+gives rise to this beefsteak tomato okay
+
+248
+00:09:41,889 --> 00:09:48,730
+so had to show this being a cornell but
+
+249
+00:09:46,330 --> 00:09:51,940
+also this is a very famous picture from
+
+250
+00:09:48,730 --> 00:09:53,320
+Ithaca 1929 actually I just realized it
+
+251
+00:09:51,940 --> 00:09:55,510
+this is the same year that I've nursed
+
+252
+00:09:53,320 --> 00:09:58,390
+him by section experiment was done so
+
+253
+00:09:55,509 --> 00:09:59,980
+1929 was it a good year for for plant
+
+254
+00:09:58,389 --> 00:10:01,629
+biology but anyway this is Barbara
+
+255
+00:09:59,980 --> 00:10:03,850
+McClintock who discovered transposons
+
+256
+00:10:01,629 --> 00:10:06,730
+and later of course went to Cold Spring
+
+257
+00:10:03,850 --> 00:10:08,950
+Harbor what why do we study this in
+
+258
+00:10:06,730 --> 00:10:10,420
+maize because as I said most of the
+
+259
+00:10:08,950 --> 00:10:13,030
+foundational work has been done in
+
+260
+00:10:10,419 --> 00:10:15,759
+Arabidopsis or a blob this is a fast
+
+261
+00:10:13,029 --> 00:10:18,009
+cycling planet this small genome maze is
+
+262
+00:10:15,759 --> 00:10:20,559
+a slow cyclic plant with a huge genome
+
+263
+00:10:18,009 --> 00:10:22,899
+but still I think we can find new things
+
+264
+00:10:20,559 --> 00:10:24,369
+in maize and one of the one of the great
+
+265
+00:10:22,899 --> 00:10:27,009
+things about maize is we have a huge
+
+266
+00:10:24,370 --> 00:10:29,649
+mutant collection right that is
+
+267
+00:10:27,009 --> 00:10:32,289
+generated in part by the scientists who
+
+268
+00:10:29,649 --> 00:10:34,539
+developed these transposon lines and so
+
+269
+00:10:32,289 --> 00:10:36,819
+in maize we have a lot of Levada type
+
+270
+00:10:34,539 --> 00:10:38,019
+mutants which is the foundation of the
+
+271
+00:10:36,820 --> 00:10:40,270
+word for that I'm going to tell you
+
+272
+00:10:38,019 --> 00:10:42,730
+about so we call we don't leave we don't
+
+273
+00:10:40,269 --> 00:10:45,850
+call these cavada we call them face dat
+
+274
+00:10:42,730 --> 00:10:47,529
+ear so face hated again is the botanical
+
+275
+00:10:45,850 --> 00:10:50,860
+term for these massively expanded
+
+276
+00:10:47,529 --> 00:10:53,439
+stemless and these mutants and this is
+
+277
+00:10:50,860 --> 00:10:55,389
+just five I'm showing we have another 20
+
+278
+00:10:53,440 --> 00:10:58,570
+that we haven't characterized yet but I
+
+279
+00:10:55,389 --> 00:11:00,189
+thought I would keep it focused some of
+
+280
+00:10:58,570 --> 00:11:02,500
+these mutants is you would expect we
+
+281
+00:11:00,190 --> 00:11:04,090
+clone them and they're awful lots of the
+
+282
+00:11:02,500 --> 00:11:08,049
+Clamato genes right this is not
+
+283
+00:11:04,090 --> 00:11:10,620
+surprising so td1 is cavada one is lr
+
+284
+00:11:08,049 --> 00:11:12,659
+receptor PHA two is cavada two
+
+285
+00:11:10,620 --> 00:11:14,310
+and then others that we've cloned have
+
+286
+00:11:12,659 --> 00:11:16,769
+been different so we have found new
+
+287
+00:11:14,309 --> 00:11:19,739
+things in maize that were not discovered
+
+288
+00:11:16,769 --> 00:11:23,460
+in Arabidopsis so they three is a new
+
+289
+00:11:19,740 --> 00:11:25,169
+type of lrl receptor that is functions
+
+290
+00:11:23,460 --> 00:11:27,030
+in some how in the Claddagh feedback but
+
+291
+00:11:25,169 --> 00:11:28,500
+was not characterized in a rubber topsis
+
+292
+00:11:27,029 --> 00:11:31,049
+but it does function in Arabidopsis
+
+293
+00:11:28,500 --> 00:11:33,269
+faith four is a transcription factor and
+
+294
+00:11:31,049 --> 00:11:35,699
+I'll talk a little bit about ct2 that's
+
+295
+00:11:33,269 --> 00:11:37,610
+a G protein that we think is involved in
+
+296
+00:11:35,700 --> 00:11:39,480
+signaling downstream of these receptors
+
+297
+00:11:37,610 --> 00:11:42,629
+okay so we have a large collection
+
+298
+00:11:39,480 --> 00:11:44,399
+mutants and it's really really great
+
+299
+00:11:42,629 --> 00:11:46,950
+material to work with to discover the
+
+300
+00:11:44,399 --> 00:11:49,799
+genes to control this meristem feedback
+
+301
+00:11:46,950 --> 00:11:52,050
+now another thing I'll talk about today
+
+302
+00:11:49,799 --> 00:11:55,049
+and this is more recent work is the idea
+
+303
+00:11:52,049 --> 00:11:57,509
+that we these genes may be useful for
+
+304
+00:11:55,049 --> 00:11:59,879
+controlling yield rates so in maize
+
+305
+00:11:57,509 --> 00:12:03,179
+there's some you know breeders measure
+
+306
+00:11:59,879 --> 00:12:06,480
+yield traits such as you know obviously
+
+307
+00:12:03,179 --> 00:12:08,189
+total massive corn that's harvested but
+
+308
+00:12:06,480 --> 00:12:10,649
+they also use more quantitative traits
+
+309
+00:12:08,190 --> 00:12:12,990
+such as this one kernel row number which
+
+310
+00:12:10,649 --> 00:12:14,879
+is a number of kernel rows around the
+
+311
+00:12:12,990 --> 00:12:16,649
+circumference of the ear so if you break
+
+312
+00:12:14,879 --> 00:12:18,899
+the ear in half you you can just
+
+313
+00:12:16,649 --> 00:12:21,350
+currently so this one has 12 rows it's
+
+314
+00:12:18,899 --> 00:12:24,840
+wrong if you count quickly it has 22 and
+
+315
+00:12:21,350 --> 00:12:27,930
+we have this idea that by controlling
+
+316
+00:12:24,840 --> 00:12:30,810
+size of the meristem you could control
+
+317
+00:12:27,929 --> 00:12:33,750
+the number of of rows because you see
+
+318
+00:12:30,809 --> 00:12:36,000
+this is this is now looking down from
+
+319
+00:12:33,750 --> 00:12:38,309
+the top of the ear ear primordium and
+
+320
+00:12:36,000 --> 00:12:40,529
+this is the mat the apical meristem and
+
+321
+00:12:38,309 --> 00:12:42,929
+then all these primordia are the ones
+
+322
+00:12:40,529 --> 00:12:45,569
+that are making the rows of seeds so you
+
+323
+00:12:42,929 --> 00:12:48,149
+know naively you could save well if we
+
+324
+00:12:45,570 --> 00:12:49,860
+can make this meristem bigger then we
+
+325
+00:12:48,149 --> 00:12:53,490
+could make more rows of seeds right so
+
+326
+00:12:49,860 --> 00:12:54,360
+that's what we want to do so the other
+
+327
+00:12:53,490 --> 00:12:56,129
+thing that's really interesting about
+
+328
+00:12:54,360 --> 00:13:00,029
+kernel row number of course is that
+
+329
+00:12:56,129 --> 00:13:02,700
+maize itself is a manmade crop it's
+
+330
+00:13:00,029 --> 00:13:05,579
+genetically modified by humans over the
+
+331
+00:13:02,700 --> 00:13:08,129
+past 10,000 years and it's derived as
+
+332
+00:13:05,580 --> 00:13:10,350
+you know work from john doe billion at
+
+333
+00:13:08,129 --> 00:13:13,169
+Butler and others has shown that maize
+
+334
+00:13:10,350 --> 00:13:15,629
+is derived from teosinte which had only
+
+335
+00:13:13,169 --> 00:13:17,309
+a single row of seeds and human
+
+336
+00:13:15,629 --> 00:13:20,039
+selection over the course of thousands
+
+337
+00:13:17,309 --> 00:13:22,529
+of years gave rise to the amazing ear of
+
+338
+00:13:20,039 --> 00:13:24,089
+corn that we have today we know this is
+
+339
+00:13:22,529 --> 00:13:27,059
+genetic right so
+
+340
+00:13:24,090 --> 00:13:29,190
+number is acute acts as a cutie else
+
+341
+00:13:27,059 --> 00:13:31,529
+it's heritable and you can map loose
+
+342
+00:13:29,190 --> 00:13:35,010
+either control it and we also know this
+
+343
+00:13:31,529 --> 00:13:37,799
+was a gradual process so primitive carbs
+
+344
+00:13:35,009 --> 00:13:40,080
+of maize found in high altitude caves in
+
+345
+00:13:37,799 --> 00:13:42,629
+Mexico you know look like this or this
+
+346
+00:13:40,080 --> 00:13:44,550
+they may have a dros or twelve rows and
+
+347
+00:13:42,629 --> 00:13:48,750
+of course more modern varieties that we
+
+348
+00:13:44,549 --> 00:13:50,639
+eat or cows eat have 1820 alright so it
+
+349
+00:13:48,750 --> 00:13:53,070
+said it was a trade that was gradually
+
+350
+00:13:50,639 --> 00:13:58,889
+selected over the course of the last ten
+
+351
+00:13:53,070 --> 00:14:00,420
+thousand years okay so our mutants may
+
+352
+00:13:58,889 --> 00:14:03,269
+have something to do with this that's
+
+353
+00:14:00,419 --> 00:14:06,449
+what we want to find out but you know
+
+354
+00:14:03,269 --> 00:14:09,329
+our face Yeti mutants have a lot more
+
+355
+00:14:06,450 --> 00:14:12,270
+rows but you see the rows are really
+
+356
+00:14:09,330 --> 00:14:14,370
+disorganized and the yield of these
+
+357
+00:14:12,269 --> 00:14:16,710
+mutants is very low like a farmer would
+
+358
+00:14:14,370 --> 00:14:18,210
+never want to grow this but you know
+
+359
+00:14:16,710 --> 00:14:20,670
+they're basically they make too many
+
+360
+00:14:18,210 --> 00:14:21,750
+primordia so it's almost like a cancer
+
+361
+00:14:20,669 --> 00:14:25,500
+the meristems are proliferating
+
+362
+00:14:21,750 --> 00:14:27,240
+proliferating and in the end it's making
+
+363
+00:14:25,500 --> 00:14:29,309
+hundreds of primordial here but none of
+
+364
+00:14:27,240 --> 00:14:30,570
+them are productive they just abort
+
+365
+00:14:29,309 --> 00:14:33,239
+because there's too many of them
+
+366
+00:14:30,570 --> 00:14:35,610
+and they're fighting for resources right
+
+367
+00:14:33,240 --> 00:14:37,620
+so we want to try and control that so
+
+368
+00:14:35,610 --> 00:14:40,080
+the model are sort of thinking is like
+
+369
+00:14:37,620 --> 00:14:43,110
+this so if we if we knock out one of
+
+370
+00:14:40,080 --> 00:14:45,389
+these faced headed genes completely so
+
+371
+00:14:43,110 --> 00:14:48,629
+zero activity we have a massive of
+
+372
+00:14:45,389 --> 00:14:51,360
+obliteration hi Colonel rose but very
+
+373
+00:14:48,629 --> 00:14:53,009
+low yield but if we could make an allele
+
+374
+00:14:51,360 --> 00:14:55,320
+of a gene like this that had reduce
+
+375
+00:14:53,009 --> 00:14:57,419
+activity like a hyper morphic allele
+
+376
+00:14:55,320 --> 00:14:58,560
+maybe we could make the meristem a
+
+377
+00:14:57,419 --> 00:15:01,620
+little bit bigger but it's still
+
+378
+00:14:58,559 --> 00:15:03,929
+organized and make more rows of seeds
+
+379
+00:15:01,620 --> 00:15:07,259
+around this bigger meristem and somehow
+
+380
+00:15:03,929 --> 00:15:09,779
+optimize yield at least Colonel row
+
+381
+00:15:07,259 --> 00:15:12,090
+number so that's what we'll get to it
+
+382
+00:15:09,779 --> 00:15:14,939
+towards the end okay so we call this
+
+383
+00:15:12,090 --> 00:15:17,550
+like the Goldilocks principle or the
+
+384
+00:15:14,940 --> 00:15:19,350
+sweet spot right - too hard or too cold
+
+385
+00:15:17,549 --> 00:15:21,149
+is not good that you want to be right in
+
+386
+00:15:19,350 --> 00:15:23,070
+the middle and at the right right
+
+387
+00:15:21,149 --> 00:15:26,519
+temperature or right level of gene
+
+388
+00:15:23,070 --> 00:15:28,650
+expression okay so I want to go through
+
+389
+00:15:26,519 --> 00:15:33,929
+one example of a mutant we've cloned
+
+390
+00:15:28,649 --> 00:15:38,179
+just to give it yeah just give you an
+
+391
+00:15:33,929 --> 00:15:40,289
+dear that the process we go through in
+
+392
+00:15:38,179 --> 00:15:42,000
+finding the genes and characterizing
+
+393
+00:15:40,289 --> 00:15:45,120
+these mutations so this is one in the
+
+394
+00:15:42,000 --> 00:15:47,610
+one mutant and this this mutant is
+
+395
+00:15:45,120 --> 00:15:50,278
+called compact one two so this gets
+
+396
+00:15:47,610 --> 00:15:52,620
+confusing it this should be called fated
+
+397
+00:15:50,278 --> 00:15:54,958
+ear or something but this mutant was
+
+398
+00:15:52,620 --> 00:15:58,610
+discovered in 1960s before I was born so
+
+399
+00:15:54,958 --> 00:16:01,949
+I didn't get to name this and I'm I
+
+400
+00:15:58,610 --> 00:16:03,450
+respect old matron ethicists so I don't
+
+401
+00:16:01,950 --> 00:16:05,700
+want to change the name so I keep this
+
+402
+00:16:03,450 --> 00:16:08,220
+name Kampf I plan to and as its name
+
+403
+00:16:05,700 --> 00:16:11,580
+suggests the mutants are very compact
+
+404
+00:16:08,220 --> 00:16:13,379
+they're dwarfs but I don't care about
+
+405
+00:16:11,580 --> 00:16:16,620
+that so much what I care about is they
+
+406
+00:16:13,379 --> 00:16:20,278
+have faded years this is I'm really
+
+407
+00:16:16,620 --> 00:16:22,799
+interested in okay so we cloned this
+
+408
+00:16:20,278 --> 00:16:24,509
+gene and it was probably three years of
+
+409
+00:16:22,799 --> 00:16:27,599
+work but like most people I just show it
+
+410
+00:16:24,509 --> 00:16:31,169
+in a single slide and we found that
+
+411
+00:16:27,600 --> 00:16:33,000
+encodes a protein called G alpha or it
+
+412
+00:16:31,169 --> 00:16:36,870
+which is the alpha subunit of a trimeric
+
+413
+00:16:33,000 --> 00:16:40,500
+g protein so these these jeans are super
+
+414
+00:16:36,870 --> 00:16:43,440
+famous in mammalian systems because
+
+415
+00:16:40,500 --> 00:16:46,528
+they're that they G alpha is a signaling
+
+416
+00:16:43,440 --> 00:16:49,080
+protein as gtp a's that interacts with a
+
+417
+00:16:46,528 --> 00:16:51,208
+class of receptors that are called not
+
+418
+00:16:49,080 --> 00:16:54,959
+surprisingly GPCRs results with
+
+419
+00:16:51,208 --> 00:16:59,539
+g-protein coupled receptors and GPCRs in
+
+420
+00:16:54,958 --> 00:17:02,429
+yeast and in humans are these seven pass
+
+421
+00:16:59,539 --> 00:17:04,369
+transmembrane proteins and these are
+
+422
+00:17:02,429 --> 00:17:07,049
+targets for about a half of all
+
+423
+00:17:04,369 --> 00:17:09,419
+pharmaceutical drugs that have developed
+
+424
+00:17:07,049 --> 00:17:11,759
+first for humans so so that's you know
+
+425
+00:17:09,420 --> 00:17:14,970
+very very important pharmaceutical
+
+426
+00:17:11,759 --> 00:17:17,308
+industry so so G alpha is the signaling
+
+427
+00:17:14,970 --> 00:17:20,400
+protein that when these receptors are
+
+428
+00:17:17,308 --> 00:17:24,240
+activated this protein is a gtp a is it
+
+429
+00:17:20,400 --> 00:17:27,329
+will be activated by transferring gdp to
+
+430
+00:17:24,240 --> 00:17:30,240
+GTP becomes activated dissociates from
+
+431
+00:17:27,328 --> 00:17:32,970
+its subunits later in gamma and those
+
+432
+00:17:30,240 --> 00:17:37,920
+dissociated subunits go away and start
+
+433
+00:17:32,970 --> 00:17:40,558
+signaling cascades so because these
+
+434
+00:17:37,920 --> 00:17:43,440
+proteins were so famous in mammalian
+
+435
+00:17:40,558 --> 00:17:46,220
+systems people started working on them
+
+436
+00:17:43,440 --> 00:17:48,380
+in Arabidopsis and made mutants in them
+
+437
+00:17:46,220 --> 00:17:49,759
+and found that they did all sorts of
+
+438
+00:17:48,380 --> 00:17:52,130
+different things so basically anybody
+
+439
+00:17:49,759 --> 00:17:54,079
+who screen them for phenotype would find
+
+440
+00:17:52,130 --> 00:17:56,150
+their favorite phenotypes of if you were
+
+441
+00:17:54,079 --> 00:17:58,099
+looking on cell proliferation on home
+
+442
+00:17:56,150 --> 00:18:01,100
+different hormones or sugar signaling or
+
+443
+00:17:58,099 --> 00:18:02,558
+defense responses people found a lot of
+
+444
+00:18:01,099 --> 00:18:04,699
+phenotypes but there was nothing
+
+445
+00:18:02,558 --> 00:18:07,158
+specifically up to now to do with
+
+446
+00:18:04,700 --> 00:18:08,750
+meristems or development so we thought
+
+447
+00:18:07,159 --> 00:18:11,720
+we had a unique angle here because we'd
+
+448
+00:18:08,750 --> 00:18:16,669
+shown that this mutant in G alpha had a
+
+449
+00:18:11,720 --> 00:18:19,279
+very clear meristem size phenotype okay
+
+450
+00:18:16,669 --> 00:18:20,840
+so then what we do or what we do all
+
+451
+00:18:19,279 --> 00:18:23,418
+along with these mutants is we try to
+
+452
+00:18:20,839 --> 00:18:26,058
+put the genes into pathways and we do
+
+453
+00:18:23,419 --> 00:18:28,280
+that by epistasis analysis and so we
+
+454
+00:18:26,058 --> 00:18:30,980
+make double mutants and here we made it
+
+455
+00:18:28,279 --> 00:18:33,889
+a double mutant between CT to us through
+
+456
+00:18:30,980 --> 00:18:35,089
+our G alpha mutant and Fae to which if
+
+457
+00:18:33,890 --> 00:18:37,730
+you remember is one of the Clamato
+
+458
+00:18:35,089 --> 00:18:40,129
+receptors one of these feedback stem
+
+459
+00:18:37,730 --> 00:18:42,140
+cell receptors and we found that the
+
+460
+00:18:40,130 --> 00:18:44,630
+double mutants and here we're measuring
+
+461
+00:18:42,140 --> 00:18:46,460
+we did this by measuring meristem size
+
+462
+00:18:44,630 --> 00:18:48,860
+but we can also do it in a more easy way
+
+463
+00:18:46,460 --> 00:18:51,319
+by Counting spinal density in the
+
+464
+00:18:48,859 --> 00:18:53,178
+tassels we found that double mutants
+
+465
+00:18:51,319 --> 00:18:55,490
+look like the single mutants in terms of
+
+466
+00:18:53,179 --> 00:18:57,830
+cycle density and so this is what we
+
+467
+00:18:55,490 --> 00:19:00,339
+would call egg stasis and suggest
+
+468
+00:18:57,829 --> 00:19:02,509
+they're in a pathway now we did a
+
+469
+00:19:00,339 --> 00:19:04,548
+something that serves as a control
+
+470
+00:19:02,509 --> 00:19:06,980
+experiment a double mutant with TD 1
+
+471
+00:19:04,548 --> 00:19:10,220
+which is amazed the different maze about
+
+472
+00:19:06,980 --> 00:19:12,620
+a receptor maze cavada one here we see
+
+473
+00:19:10,220 --> 00:19:14,750
+an additive phenotype and this suggests
+
+474
+00:19:12,619 --> 00:19:20,599
+that seats two and td1 are in different
+
+475
+00:19:14,750 --> 00:19:24,400
+pathways and in parallel okay
+
+476
+00:19:20,599 --> 00:19:27,379
+so we had epistasis with Fay two
+
+477
+00:19:24,400 --> 00:19:30,110
+suggesting these proteins may be acting
+
+478
+00:19:27,380 --> 00:19:33,740
+together so we wanted to look further at
+
+479
+00:19:30,109 --> 00:19:37,579
+that and so we made a GFP or yfp fusion
+
+480
+00:19:33,740 --> 00:19:40,788
+of CT 2 and infused it in frame with the
+
+481
+00:19:37,579 --> 00:19:43,579
+native promoter with the CT 2 coding
+
+482
+00:19:40,788 --> 00:19:45,379
+region we could image it and it's on the
+
+483
+00:19:43,579 --> 00:19:48,668
+membrane which is what is predicted from
+
+484
+00:19:45,380 --> 00:19:51,409
+all the work in in in mammals and
+
+485
+00:19:48,669 --> 00:19:54,020
+fortunately as we hoped and expected we
+
+486
+00:19:51,409 --> 00:19:56,659
+saw high expression in meristem so it is
+
+487
+00:19:54,019 --> 00:19:57,950
+expressed in the meristem and has some
+
+488
+00:19:56,659 --> 00:19:59,900
+interesting patterns I don't really have
+
+489
+00:19:57,950 --> 00:20:02,630
+time to go through that
+
+490
+00:19:59,900 --> 00:20:05,000
+but you know so these you know reporters
+
+491
+00:20:02,630 --> 00:20:06,200
+as Mike said can be very useful for just
+
+492
+00:20:05,000 --> 00:20:07,730
+looking at where things are expressed
+
+493
+00:20:06,200 --> 00:20:10,130
+but they're also really useful for more
+
+494
+00:20:07,730 --> 00:20:13,490
+functional assays and so we had a
+
+495
+00:20:10,130 --> 00:20:16,280
+hypothesis that CT 2 might interact with
+
+496
+00:20:13,490 --> 00:20:18,019
+this Clamato receptor and using the GFP
+
+497
+00:20:16,279 --> 00:20:20,539
+is a tag we could use that for IP
+
+498
+00:20:18,019 --> 00:20:25,250
+experiments you know precipitation and
+
+499
+00:20:20,539 --> 00:20:27,440
+so we pull down CT 2 with with a GFP
+
+500
+00:20:25,250 --> 00:20:29,359
+antibody in an immuno precipitation
+
+501
+00:20:27,440 --> 00:20:31,190
+experiment and we actually had a we
+
+502
+00:20:29,359 --> 00:20:33,589
+already had an antibody to detect fate
+
+503
+00:20:31,190 --> 00:20:35,570
+to that shown here the specific antibody
+
+504
+00:20:33,589 --> 00:20:38,299
+that detects his fatal receptor in the
+
+505
+00:20:35,569 --> 00:20:43,309
+membrane fraction and we showed that if
+
+506
+00:20:38,299 --> 00:20:46,039
+we IP CT 2 we pull down PHA to receptor
+
+507
+00:20:43,309 --> 00:20:48,230
+so pulling down the g-protein also pulls
+
+508
+00:20:46,039 --> 00:20:50,299
+down the receptor and we did controls
+
+509
+00:20:48,230 --> 00:20:52,759
+within a different membrane protein
+
+510
+00:20:50,299 --> 00:20:54,619
+because these membrane IPs are actually
+
+511
+00:20:52,759 --> 00:20:56,150
+very tricky and you can get a lot of
+
+512
+00:20:54,619 --> 00:20:59,659
+background but we did a different memory
+
+513
+00:20:56,150 --> 00:21:01,190
+protein pin one when we agreed that one
+
+514
+00:20:59,660 --> 00:21:03,190
+we don't pull down the receptor so we
+
+515
+00:21:01,190 --> 00:21:06,799
+think it's specific
+
+516
+00:21:03,190 --> 00:21:10,309
+so our model now is that this g-protein
+
+517
+00:21:06,799 --> 00:21:13,970
+is signaling from the Claddagh receptor
+
+518
+00:21:10,309 --> 00:21:15,649
+from play to right so if that's true we
+
+519
+00:21:13,970 --> 00:21:17,960
+should be able to see some other kind of
+
+520
+00:21:15,650 --> 00:21:19,880
+Clamato phenotypes you know a mutant
+
+521
+00:21:17,960 --> 00:21:21,829
+well we saw it has big meristems but you
+
+522
+00:21:19,880 --> 00:21:22,520
+can get big meristems for a lot of
+
+523
+00:21:21,829 --> 00:21:24,079
+different reasons
+
+524
+00:21:22,519 --> 00:21:27,200
+so to see if it's really in the club on
+
+525
+00:21:24,079 --> 00:21:29,659
+a pathway does it really need si again
+
+526
+00:21:27,200 --> 00:21:32,240
+first developed in Arabidopsis where you
+
+527
+00:21:29,660 --> 00:21:32,960
+can actually synthesize about a three
+
+528
+00:21:32,240 --> 00:21:35,450
+head type
+
+529
+00:21:32,960 --> 00:21:37,610
+so remember Claddagh 3 is the ligand for
+
+530
+00:21:35,450 --> 00:21:40,580
+these receptors it's a 12 we know as a
+
+531
+00:21:37,609 --> 00:21:42,619
+peptide so you can just you know ask gen
+
+532
+00:21:40,579 --> 00:21:44,960
+script to make it and a week later you
+
+533
+00:21:42,619 --> 00:21:48,319
+have the peptide if you add that to
+
+534
+00:21:44,960 --> 00:21:50,539
+plans it will inhibit meristem
+
+535
+00:21:48,319 --> 00:21:53,869
+operations right so mutants in these
+
+536
+00:21:50,539 --> 00:21:56,710
+genes the meristem is over cliff rate if
+
+537
+00:21:53,869 --> 00:21:59,089
+you are add back the peptide in excess
+
+538
+00:21:56,710 --> 00:22:00,710
+you get the negative phenotype which is
+
+539
+00:21:59,089 --> 00:22:04,309
+the opposite phenotype which is you
+
+540
+00:22:00,710 --> 00:22:07,039
+suppress meristem growth so basically we
+
+541
+00:22:04,309 --> 00:22:09,589
+do this experiments with embryos because
+
+542
+00:22:07,039 --> 00:22:11,690
+in maize embryos they're big enough that
+
+543
+00:22:09,589 --> 00:22:13,669
+we can detect dissect them and culture
+
+544
+00:22:11,690 --> 00:22:16,160
+them and the meristem is expo
+
+545
+00:22:13,670 --> 00:22:16,850
+so we can easily access them with a
+
+546
+00:22:16,160 --> 00:22:19,070
+peptide
+
+547
+00:22:16,849 --> 00:22:23,569
+so we culture the member after embryos
+
+548
+00:22:19,069 --> 00:22:25,189
+on media with colada 3 or a control with
+
+549
+00:22:23,569 --> 00:22:27,109
+a scrambled peptide so it's the same
+
+550
+00:22:25,190 --> 00:22:29,480
+sequence but just that the order of the
+
+551
+00:22:27,109 --> 00:22:32,000
+amino acids is scrambled so it shouldn't
+
+552
+00:22:29,480 --> 00:22:34,970
+have any effect and when we do that we
+
+553
+00:22:32,000 --> 00:22:36,200
+find that with a scramble of peptide we
+
+554
+00:22:34,970 --> 00:22:38,329
+don't see any difference between the
+
+555
+00:22:36,200 --> 00:22:41,539
+mutant and the wild-type but when we
+
+556
+00:22:38,329 --> 00:22:43,970
+treat these with cavada 3 the wild-type
+
+557
+00:22:41,539 --> 00:22:48,259
+meristems their growth is inhibited as
+
+558
+00:22:43,970 --> 00:22:50,558
+we predicted the G alpha mutants CT 2
+
+559
+00:22:48,259 --> 00:22:52,849
+they're also inhibited but much less
+
+560
+00:22:50,558 --> 00:22:55,460
+than the wild-type so we say they're
+
+561
+00:22:52,849 --> 00:22:59,240
+partially insensitive to to this peptide
+
+562
+00:22:55,460 --> 00:23:01,240
+and to us this says that CT 2 is somehow
+
+563
+00:22:59,240 --> 00:23:04,849
+involved in transmitting this signal
+
+564
+00:23:01,240 --> 00:23:09,798
+from the peptide to the meristem
+
+565
+00:23:04,849 --> 00:23:14,119
+proliferation pathway ok so to summarize
+
+566
+00:23:09,798 --> 00:23:17,119
+this part what we think is happening now
+
+567
+00:23:14,119 --> 00:23:20,269
+is that you know in in animals and in
+
+568
+00:23:17,119 --> 00:23:23,329
+yeast this hedge trimeric g protein
+
+569
+00:23:20,269 --> 00:23:26,569
+complex interacts with these 7 pass
+
+570
+00:23:23,329 --> 00:23:29,089
+receptors is GPCRs but implanted seems
+
+571
+00:23:26,569 --> 00:23:31,609
+to be very different as there are GPCRs
+
+572
+00:23:29,089 --> 00:23:33,639
+implants or at least proteins predicted
+
+573
+00:23:31,609 --> 00:23:35,869
+to be GPCRs but they haven't been
+
+574
+00:23:33,640 --> 00:23:37,730
+convinced link shown to interact with G
+
+575
+00:23:35,869 --> 00:23:40,250
+alpha but we found that G alpha
+
+576
+00:23:37,730 --> 00:23:43,069
+interacts with a Clamato receptor they -
+
+577
+00:23:40,250 --> 00:23:45,619
+and so we published that a few years ago
+
+578
+00:23:43,069 --> 00:23:46,909
+and I I was kind of nervous about
+
+579
+00:23:45,619 --> 00:23:48,619
+publishing something that's so
+
+580
+00:23:46,910 --> 00:23:50,330
+dramatically different between animals
+
+581
+00:23:48,619 --> 00:23:52,939
+and plants but since then they've been
+
+582
+00:23:50,329 --> 00:23:55,730
+several other papers showing that indeed
+
+583
+00:23:52,940 --> 00:23:58,279
+G proteins do interact with lrr
+
+584
+00:23:55,730 --> 00:24:02,169
+receptors in plants so this is both in
+
+585
+00:23:58,279 --> 00:24:02,168
+development and also in defense signal
+
+586
+00:24:02,200 --> 00:24:09,830
+so now we wanted to look at you know is
+
+587
+00:24:07,130 --> 00:24:11,600
+this just an effect of G alpha or is
+
+588
+00:24:09,829 --> 00:24:14,509
+this whole heterotrimeric complex
+
+589
+00:24:11,599 --> 00:24:17,689
+involved so as I said it's a three
+
+590
+00:24:14,509 --> 00:24:20,419
+protein complexes G alpha G beta and G
+
+591
+00:24:17,690 --> 00:24:22,640
+gamma and we actually went after G G
+
+592
+00:24:20,419 --> 00:24:24,919
+beta next for the obvious example a
+
+593
+00:24:22,640 --> 00:24:27,009
+reason that it's a single copy gene so
+
+594
+00:24:24,919 --> 00:24:30,580
+mutants should have a phenotype
+
+595
+00:24:27,009 --> 00:24:33,308
+so and the other reason was that work in
+
+596
+00:24:30,579 --> 00:24:35,500
+Arabidopsis published very soon after
+
+597
+00:24:33,308 --> 00:24:38,918
+our work in mais actually showed that in
+
+598
+00:24:35,500 --> 00:24:42,099
+Arabidopsis G beta controls meristem
+
+599
+00:24:38,919 --> 00:24:44,440
+size so we had G alpha controlling
+
+600
+00:24:42,099 --> 00:24:47,289
+meristem size in our mutants in an
+
+601
+00:24:44,440 --> 00:24:49,450
+Arabidopsis is G beta right so it's a G
+
+602
+00:24:47,289 --> 00:24:52,960
+beta mutants in Arabidopsis have big
+
+603
+00:24:49,450 --> 00:24:55,870
+meristems and this group in Japan found
+
+604
+00:24:52,960 --> 00:24:58,808
+that G beta interacts with our PK 2
+
+605
+00:24:55,869 --> 00:25:00,459
+which is not not a classic Levada
+
+606
+00:24:58,808 --> 00:25:02,619
+receptor but is a Colorado related
+
+607
+00:25:00,460 --> 00:25:05,440
+receptor that also functions in the
+
+608
+00:25:02,619 --> 00:25:07,689
+meristem so it seems this precedent that
+
+609
+00:25:05,440 --> 00:25:09,429
+these G proteins probably the whole
+
+610
+00:25:07,690 --> 00:25:12,700
+complex is functioning in meristem ik
+
+611
+00:25:09,429 --> 00:25:15,280
+controls ok so this was our first CRISPR
+
+612
+00:25:12,700 --> 00:25:17,230
+experiment we did this with Nene at Iowa
+
+613
+00:25:15,279 --> 00:25:18,910
+State and we were super excited this
+
+614
+00:25:17,230 --> 00:25:20,019
+about three years ago we thought we
+
+615
+00:25:18,910 --> 00:25:22,058
+going to get these plants back and
+
+616
+00:25:20,019 --> 00:25:24,460
+they'll have big meristems and we got
+
+617
+00:25:22,058 --> 00:25:27,789
+them and we were very disappointed that
+
+618
+00:25:24,460 --> 00:25:29,169
+they were dead right so this for
+
+619
+00:25:27,789 --> 00:25:32,548
+development biologists this is not a
+
+620
+00:25:29,169 --> 00:25:34,929
+very satisfying in type so basically
+
+621
+00:25:32,548 --> 00:25:36,910
+well we could recover these because we
+
+622
+00:25:34,929 --> 00:25:38,980
+got events like they were heterozygous
+
+623
+00:25:36,910 --> 00:25:41,259
+but when we solved them the home ago
+
+624
+00:25:38,980 --> 00:25:43,058
+homozygous G beta mutants they
+
+625
+00:25:41,259 --> 00:25:45,910
+germinated and then within three days
+
+626
+00:25:43,058 --> 00:25:47,589
+they just dead right this is in stark
+
+627
+00:25:45,910 --> 00:25:49,630
+contrast to Herbert OPS's remember I
+
+628
+00:25:47,589 --> 00:25:52,209
+told you you're obnoxious mutants have
+
+629
+00:25:49,630 --> 00:25:54,640
+big marathons but you know the plants
+
+630
+00:25:52,210 --> 00:25:57,400
+themselves look pretty normal so we were
+
+631
+00:25:54,640 --> 00:25:58,750
+really surprised so we looked a little
+
+632
+00:25:57,400 --> 00:26:00,960
+bit more closely at this and what we
+
+633
+00:25:58,750 --> 00:26:04,569
+realized is that the plants were not
+
+634
+00:26:00,960 --> 00:26:06,779
+dying we're not just arresting but they
+
+635
+00:26:04,569 --> 00:26:09,700
+were actually becoming very necrotic and
+
+636
+00:26:06,779 --> 00:26:12,519
+we saw that cells were dying the tissue
+
+637
+00:26:09,700 --> 00:26:15,250
+was turning brown very quickly and so we
+
+638
+00:26:12,519 --> 00:26:18,700
+stayed we did some assays for hydrogen
+
+639
+00:26:15,250 --> 00:26:21,400
+peroxide and for elite cell viability
+
+640
+00:26:18,700 --> 00:26:23,470
+and we quickly realize that yeah these
+
+641
+00:26:21,400 --> 00:26:25,120
+mutants were actually undergoing some
+
+642
+00:26:23,470 --> 00:26:27,220
+kind of autoimmune response by they're
+
+643
+00:26:25,119 --> 00:26:28,899
+actually killing themselves we also had
+
+644
+00:26:27,220 --> 00:26:31,990
+looked at pathogenesis related gene
+
+645
+00:26:28,900 --> 00:26:35,019
+expression so we think this is some kind
+
+646
+00:26:31,990 --> 00:26:36,880
+of autoimmune response and it kind of
+
+647
+00:26:35,019 --> 00:26:40,819
+well it makes sense based on what else
+
+648
+00:26:36,880 --> 00:26:45,000
+I'll tell you next but yeah with some
+
+649
+00:26:40,819 --> 00:26:47,220
+we also grew we grew their ceilings or
+
+650
+00:26:45,000 --> 00:26:49,200
+seeds under sterile conditions and they
+
+651
+00:26:47,220 --> 00:26:50,940
+still die so it's not a pathogen thing
+
+652
+00:26:49,200 --> 00:26:53,730
+it's there they're just killing
+
+653
+00:26:50,940 --> 00:26:55,919
+themselves okay so this sort of makes
+
+654
+00:26:53,730 --> 00:26:58,259
+sense based on worth in Arabidopsis
+
+655
+00:26:55,919 --> 00:27:00,900
+groups have looked at the g-protein
+
+656
+00:26:58,259 --> 00:27:03,329
+mutants in a red abscess and G beta
+
+657
+00:27:00,900 --> 00:27:06,288
+mutants actually are more susceptible to
+
+658
+00:27:03,329 --> 00:27:09,389
+various pathogens so this is a mock
+
+659
+00:27:06,288 --> 00:27:12,390
+inoculation of wild-type Columbia and
+
+660
+00:27:09,390 --> 00:27:14,460
+then the AG b1 the arrival of Co beta
+
+661
+00:27:12,390 --> 00:27:17,788
+mutants are much more susceptible to
+
+662
+00:27:14,460 --> 00:27:20,880
+arrange different diseases so it seems
+
+663
+00:27:17,788 --> 00:27:22,169
+that as I alluded to earlier these G
+
+664
+00:27:20,880 --> 00:27:24,659
+proteins are probably involved in
+
+665
+00:27:22,169 --> 00:27:26,549
+signaling from defense receptors as well
+
+666
+00:27:24,659 --> 00:27:28,740
+as from the Claddagh development
+
+667
+00:27:26,548 --> 00:27:31,740
+receptors and in fact a really nice
+
+668
+00:27:28,740 --> 00:27:34,759
+story came out last year from jamming
+
+669
+00:27:31,740 --> 00:27:38,099
+Joe's group actually showed that G beta
+
+670
+00:27:34,759 --> 00:27:41,129
+interacts with FL s 2 so FL s 2 is an
+
+671
+00:27:38,099 --> 00:27:43,349
+immune receptor in Rabbid Oxus that's
+
+672
+00:27:41,130 --> 00:27:48,299
+involved in the innate immune signaling
+
+673
+00:27:43,349 --> 00:27:50,250
+and G beta interacts with F s 2 and that
+
+674
+00:27:48,298 --> 00:27:52,168
+explains the phenotypes and it actually
+
+675
+00:27:50,250 --> 00:27:54,359
+seems to function as a positive
+
+676
+00:27:52,169 --> 00:27:55,470
+regulator of immunity but through its
+
+677
+00:27:54,359 --> 00:27:58,379
+interaction with life flies through but
+
+678
+00:27:55,470 --> 00:28:00,839
+also by stabilizing a dime string kinase
+
+679
+00:27:58,380 --> 00:28:03,870
+of F flies to called big one so G beta
+
+680
+00:28:00,839 --> 00:28:06,168
+functions in immunity in Arabidopsis and
+
+681
+00:28:03,869 --> 00:28:09,449
+the mutants are more susceptible to
+
+682
+00:28:06,169 --> 00:28:12,419
+diseases but this really doesn't still
+
+683
+00:28:09,450 --> 00:28:15,140
+doesn't understand explain why our maze
+
+684
+00:28:12,419 --> 00:28:17,159
+mutants are much more severe right
+
+685
+00:28:15,140 --> 00:28:20,940
+amazements are not more susceptible
+
+686
+00:28:17,159 --> 00:28:24,179
+they're just dead even in the object so
+
+687
+00:28:20,940 --> 00:28:27,058
+we we figure this out by thinking about
+
+688
+00:28:24,179 --> 00:28:28,919
+how you know how again how immunity
+
+689
+00:28:27,058 --> 00:28:30,928
+signaling works in plants so you
+
+690
+00:28:28,919 --> 00:28:34,020
+probably or much more familiar with this
+
+691
+00:28:30,929 --> 00:28:36,570
+than I am but as you know plants are
+
+692
+00:28:34,019 --> 00:28:40,349
+constantly bombarded by pathogens and
+
+693
+00:28:36,569 --> 00:28:42,898
+pathogens secrete effectors into the
+
+694
+00:28:40,349 --> 00:28:44,969
+plant cell that tried to suppress that
+
+695
+00:28:42,898 --> 00:28:45,898
+the cellular immune signaling pathways
+
+696
+00:28:44,970 --> 00:28:50,000
+or
+
+697
+00:28:45,898 --> 00:28:52,229
+defense pathways and in the case of a
+
+698
+00:28:50,000 --> 00:28:53,920
+viable infection where there's no
+
+699
+00:28:52,230 --> 00:28:57,480
+resistance then
+
+700
+00:28:53,920 --> 00:29:01,210
+the plant is susceptible and will be
+
+701
+00:28:57,480 --> 00:29:03,579
+affected by the pathogen now plants have
+
+702
+00:29:01,210 --> 00:29:06,640
+evolved these are proteins resistance
+
+703
+00:29:03,579 --> 00:29:08,769
+proteins that can either interact
+
+704
+00:29:06,640 --> 00:29:11,380
+directly with the with the bacterial
+
+705
+00:29:08,769 --> 00:29:13,990
+effectors a pathogen factor but more
+
+706
+00:29:11,380 --> 00:29:16,480
+frequently is thought that these are
+
+707
+00:29:13,990 --> 00:29:18,910
+proteins interact with another host
+
+708
+00:29:16,480 --> 00:29:20,920
+protein another con protein that is
+
+709
+00:29:18,910 --> 00:29:23,830
+targeted by the effector and they're
+
+710
+00:29:20,920 --> 00:29:26,350
+actually guarding on surveying that host
+
+711
+00:29:23,829 --> 00:29:27,519
+protein to see if it's under attack by a
+
+712
+00:29:26,349 --> 00:29:28,959
+pathogen effector
+
+713
+00:29:27,519 --> 00:29:31,480
+right so this is called the god
+
+714
+00:29:28,960 --> 00:29:33,880
+hypothesis and these cellular these
+
+715
+00:29:31,480 --> 00:29:35,890
+plant proteins that are by the are
+
+716
+00:29:33,880 --> 00:29:38,200
+proteins are called guardians they're
+
+717
+00:29:35,890 --> 00:29:39,009
+being guarded so that when the plant is
+
+718
+00:29:38,200 --> 00:29:40,750
+under attack
+
+719
+00:29:39,009 --> 00:29:43,390
+I have been an effector it it knows it
+
+720
+00:29:40,750 --> 00:29:46,509
+right and it's known that if you if you
+
+721
+00:29:43,390 --> 00:29:48,759
+mutate these guard ease then the plant
+
+722
+00:29:46,509 --> 00:29:50,650
+again thinks is being attacked and you
+
+723
+00:29:48,759 --> 00:29:52,690
+get an autoimmune phenotype so that's
+
+724
+00:29:50,650 --> 00:29:55,150
+what we think is happening with G beta
+
+725
+00:29:52,690 --> 00:29:57,789
+that we think G beta is guarded by an
+
+726
+00:29:55,150 --> 00:30:00,100
+our protein or an R gene and when we
+
+727
+00:29:57,789 --> 00:30:02,680
+mutated the punt think it's is being
+
+728
+00:30:00,099 --> 00:30:06,250
+attacked by pathogens and it kills eggs
+
+729
+00:30:02,680 --> 00:30:08,620
+every cell now we can test that one way
+
+730
+00:30:06,250 --> 00:30:10,720
+accessor is that our genes are very
+
+731
+00:30:08,619 --> 00:30:14,919
+polymorphic between different eco types
+
+732
+00:30:10,720 --> 00:30:16,480
+and so we took our G beta mutant as a as
+
+733
+00:30:14,920 --> 00:30:18,789
+a head obviously we can't cross the
+
+734
+00:30:16,480 --> 00:30:21,700
+homozygotes but we cross the head to all
+
+735
+00:30:18,789 --> 00:30:24,490
+of the NAM maize diversity lines and
+
+736
+00:30:21,700 --> 00:30:25,660
+made f2s and we found that for most of
+
+737
+00:30:24,490 --> 00:30:27,970
+them we still got the same phenotype
+
+738
+00:30:25,660 --> 00:30:30,490
+that the mutants were lethal but we have
+
+739
+00:30:27,970 --> 00:30:32,890
+a few lines where now the phenotype is
+
+740
+00:30:30,490 --> 00:30:35,799
+suppressed and we get plants back
+
+741
+00:30:32,890 --> 00:30:38,290
+they're not completely wild-type but
+
+742
+00:30:35,799 --> 00:30:39,909
+they're not dead obviously they grow
+
+743
+00:30:38,289 --> 00:30:43,509
+they're making fluorescence is so we
+
+744
+00:30:39,910 --> 00:30:46,509
+think these suppressors are lines
+
+745
+00:30:43,509 --> 00:30:48,940
+types that no longer contain the our
+
+746
+00:30:46,509 --> 00:30:50,379
+gene and in fact we've we've mapped one
+
+747
+00:30:48,940 --> 00:30:52,480
+of these and it Maps in a region we
+
+748
+00:30:50,380 --> 00:30:53,800
+don't know the exact geniu but it maps
+
+749
+00:30:52,480 --> 00:30:56,680
+in the region where there is a predicted
+
+750
+00:30:53,799 --> 00:30:58,599
+RG so this was a bit of an aside for us
+
+751
+00:30:56,680 --> 00:31:00,070
+but it could actually get us through a
+
+752
+00:30:58,599 --> 00:31:01,869
+new arginine maize which will be cool
+
+753
+00:31:00,069 --> 00:31:05,589
+actually very few our genes have been
+
+754
+00:31:01,869 --> 00:31:07,419
+cloned in maize up to now okay but
+
+755
+00:31:05,589 --> 00:31:10,079
+anyway we were excited to have these
+
+756
+00:31:07,420 --> 00:31:12,940
+and because now we say this is now the
+
+757
+00:31:10,079 --> 00:31:14,470
+developmental phenotype of Chi beta and
+
+758
+00:31:12,940 --> 00:31:16,509
+it actually looks very similar to G
+
+759
+00:31:14,470 --> 00:31:18,400
+alpha that CT 2 phenotype
+
+760
+00:31:16,509 --> 00:31:21,789
+now we've suppressed the defense
+
+761
+00:31:18,400 --> 00:31:24,100
+responses and they have so we call these
+
+762
+00:31:21,789 --> 00:31:27,940
+G beta suppressed they have big
+
+763
+00:31:24,099 --> 00:31:29,919
+meristems and we think this is
+
+764
+00:31:27,940 --> 00:31:32,860
+significant and actually coming back to
+
+765
+00:31:29,920 --> 00:31:35,279
+the concept I I brought up earlier G
+
+766
+00:31:32,859 --> 00:31:37,539
+beta in maize in G wasps analysis
+
+767
+00:31:35,279 --> 00:31:39,519
+associates with Colonel Rohl number the
+
+768
+00:31:37,539 --> 00:31:41,680
+trade that I I mentioned that we think
+
+769
+00:31:39,519 --> 00:31:43,809
+is associative marathon site so so we're
+
+770
+00:31:41,680 --> 00:31:45,700
+still working on this but we think at
+
+771
+00:31:43,809 --> 00:31:50,019
+least up to now we've think that G beta
+
+772
+00:31:45,700 --> 00:31:53,710
+is also functioning in them in meristem
+
+773
+00:31:50,019 --> 00:31:55,809
+signaling okay so now we have a
+
+774
+00:31:53,710 --> 00:31:58,390
+situation where Fei to this club our doe
+
+775
+00:31:55,809 --> 00:32:01,269
+receptor is probably signaling through G
+
+776
+00:31:58,390 --> 00:32:03,300
+alpha and G beta this probably G gamma
+
+777
+00:32:01,269 --> 00:32:07,839
+also but we haven't done that yet
+
+778
+00:32:03,299 --> 00:32:11,369
+now there's work in Arabidopsis that the
+
+779
+00:32:07,839 --> 00:32:14,709
+awful log of FEI to which is cavada two
+
+780
+00:32:11,369 --> 00:32:16,989
+signals through a different protein and
+
+781
+00:32:14,710 --> 00:32:19,809
+that protein is called korean a korean a
+
+782
+00:32:16,990 --> 00:32:22,269
+is a kind well it was when it was first
+
+783
+00:32:19,809 --> 00:32:24,129
+clone it was published to be a kinase
+
+784
+00:32:22,269 --> 00:32:25,930
+that it's actually a pseudo pilot's so
+
+785
+00:32:24,130 --> 00:32:28,260
+it's a protein that has homology to
+
+786
+00:32:25,930 --> 00:32:30,720
+Karnazes but has no kinase activity
+
+787
+00:32:28,259 --> 00:32:33,549
+probably acting as some kind of scaffold
+
+788
+00:32:30,720 --> 00:32:35,950
+so you know i'm always interested in
+
+789
+00:32:33,549 --> 00:32:37,869
+this question about how meristem has
+
+790
+00:32:35,950 --> 00:32:40,390
+evolved and whether the same pathways at
+
+791
+00:32:37,869 --> 00:32:44,859
+present in maize or I say monocots and
+
+792
+00:32:40,390 --> 00:32:47,080
+dicots or whether they evolve or evolve
+
+793
+00:32:44,859 --> 00:32:48,879
+separately or evolve to be different
+
+794
+00:32:47,079 --> 00:32:51,339
+right so we have here we have one
+
+795
+00:32:48,880 --> 00:32:53,230
+receptor Fei to and it's all gonna
+
+796
+00:32:51,339 --> 00:32:54,369
+Robert offices right so presumably doing
+
+797
+00:32:53,230 --> 00:32:56,650
+the same thing they have the same
+
+798
+00:32:54,369 --> 00:32:58,239
+phenotype but that up to now the
+
+799
+00:32:56,650 --> 00:33:00,580
+genetics suggests that this one goes
+
+800
+00:32:58,240 --> 00:33:02,349
+through G proteins and this one goes
+
+801
+00:33:00,579 --> 00:33:05,169
+through Carinae so we really wanted to
+
+802
+00:33:02,349 --> 00:33:09,969
+know is this a trans pcs difference or
+
+803
+00:33:05,170 --> 00:33:13,360
+is our both systems operating in both
+
+804
+00:33:09,970 --> 00:33:16,150
+monocots and dicots right so we were
+
+805
+00:33:13,359 --> 00:33:18,549
+fortunate to get a mutant of coronae in
+
+806
+00:33:16,150 --> 00:33:20,630
+maize we got this from bob Miglia
+
+807
+00:33:18,549 --> 00:33:22,579
+pioneer from their transposon
+
+808
+00:33:20,630 --> 00:33:25,270
+collection and we also got another
+
+809
+00:33:22,579 --> 00:33:27,319
+allele from the amazing populations
+
+810
+00:33:25,269 --> 00:33:29,950
+developed by Jerry new for the EMS
+
+811
+00:33:27,319 --> 00:33:33,319
+populations and we found that coronae
+
+812
+00:33:29,950 --> 00:33:35,900
+indeed also is face eiated so big
+
+813
+00:33:33,319 --> 00:33:38,779
+meristems and their face iation in the
+
+814
+00:33:35,900 --> 00:33:41,480
+ear so seems that both korean a and g
+
+815
+00:33:38,779 --> 00:33:46,789
+are functioning maize in in meristem
+
+816
+00:33:41,480 --> 00:33:50,360
+signal now again we use double mutants
+
+817
+00:33:46,789 --> 00:33:51,950
+and so we have I should have had a
+
+818
+00:33:50,359 --> 00:33:54,379
+summary here but we have Fae to the
+
+819
+00:33:51,950 --> 00:33:57,049
+receptor and then two possible
+
+820
+00:33:54,380 --> 00:34:00,950
+downstream signaling components G alpha
+
+821
+00:33:57,049 --> 00:34:03,980
+and Corrine a if we make double mutants
+
+822
+00:34:00,950 --> 00:34:06,049
+between G alpha and Corrine a third
+
+823
+00:34:03,980 --> 00:34:08,119
+they're additive or synergistic so we
+
+824
+00:34:06,049 --> 00:34:10,668
+get these crazy face iation it's much
+
+825
+00:34:08,119 --> 00:34:12,109
+more severe than the single mutants so
+
+826
+00:34:10,668 --> 00:34:22,480
+this suggests their different pathways
+
+827
+00:34:12,110 --> 00:34:27,500
+okay now however what's a bit of a lag
+
+828
+00:34:22,480 --> 00:34:30,110
+yeah when we make double mutants between
+
+829
+00:34:27,500 --> 00:34:33,559
+the receptor and coronae so between FA 2
+
+830
+00:34:30,110 --> 00:34:35,149
+and current a here we see epistasis so
+
+831
+00:34:33,559 --> 00:34:37,460
+the double mutants look like the single
+
+832
+00:34:35,148 --> 00:34:39,799
+mutants rights that's in Maitreya
+
+833
+00:34:37,460 --> 00:34:43,128
+meristems or just looking at them they
+
+834
+00:34:39,800 --> 00:34:46,070
+kind of look not that much different so
+
+835
+00:34:43,128 --> 00:34:49,279
+so PHA - and Karina are in the same
+
+836
+00:34:46,070 --> 00:34:51,679
+pathway renee and CT tour and different
+
+837
+00:34:49,280 --> 00:34:53,179
+pathways and our earlier published work
+
+838
+00:34:51,679 --> 00:34:55,220
+has shown that fate U and C teetering
+
+839
+00:34:53,179 --> 00:34:56,510
+different pathways so this is gonna be
+
+840
+00:34:55,219 --> 00:34:58,819
+on the test I know it's getting very
+
+841
+00:34:56,510 --> 00:35:01,010
+complicated but I'll have a summary ok
+
+842
+00:34:58,820 --> 00:35:05,960
+so what we think is the receptor has two
+
+843
+00:35:01,010 --> 00:35:07,880
+different outputs Karen a and G alpha it
+
+844
+00:35:05,960 --> 00:35:10,130
+turns out and this is from some early
+
+845
+00:35:07,880 --> 00:35:12,559
+work that we publish that I'm not going
+
+846
+00:35:10,130 --> 00:35:14,059
+to talk much about that there are two
+
+847
+00:35:12,559 --> 00:35:16,279
+different Claddagh three related
+
+848
+00:35:14,059 --> 00:35:19,279
+proteins in maze that affect meristems
+
+849
+00:35:16,280 --> 00:35:21,860
+one of them is called CLE 7 which we
+
+850
+00:35:19,280 --> 00:35:25,040
+think is the carotid 3 over log the
+
+851
+00:35:21,860 --> 00:35:27,829
+other one is called FC P 1 and we Chris
+
+852
+00:35:25,039 --> 00:35:29,369
+perd both of these to get phenotypes and
+
+853
+00:35:27,829 --> 00:35:32,429
+we have
+
+854
+00:35:29,369 --> 00:35:34,730
+vacation in both cases but what we find
+
+855
+00:35:32,429 --> 00:35:37,588
+and this is the important result is that
+
+856
+00:35:34,730 --> 00:35:40,469
+again we do these peptide sensitivity
+
+857
+00:35:37,588 --> 00:35:43,349
+assays where if a gene is involved in
+
+858
+00:35:40,469 --> 00:35:47,548
+possession of a peptide the mutant
+
+859
+00:35:43,349 --> 00:35:52,200
+should be insensitive right and we found
+
+860
+00:35:47,548 --> 00:35:53,699
+that G alpha or CT 2 is sensitive to one
+
+861
+00:35:52,199 --> 00:35:58,259
+of the two peptides but not the other
+
+862
+00:35:53,699 --> 00:36:00,929
+and Carinae is sensitive to the other
+
+863
+00:35:58,259 --> 00:36:03,449
+peptide and not the first one so yeah so
+
+864
+00:36:00,929 --> 00:36:05,098
+basically this is our model I know it's
+
+865
+00:36:03,449 --> 00:36:07,288
+a lot of data and it's even I get
+
+866
+00:36:05,099 --> 00:36:09,240
+confused by this but our model is that
+
+867
+00:36:07,289 --> 00:36:11,940
+we have two different signals going
+
+868
+00:36:09,239 --> 00:36:14,429
+through the same receptor different
+
+869
+00:36:11,940 --> 00:36:18,389
+peptides one is Cle 7 which is the maze
+
+870
+00:36:14,429 --> 00:36:20,159
+version of Callado 3 and one is FC p1
+
+871
+00:36:18,389 --> 00:36:23,009
+which is different about a three related
+
+872
+00:36:20,159 --> 00:36:25,048
+peptide two different signals go through
+
+873
+00:36:23,009 --> 00:36:28,469
+the same receptor and they come out of
+
+874
+00:36:25,048 --> 00:36:31,318
+different outputs now you can ask me
+
+875
+00:36:28,469 --> 00:36:34,078
+later how this works and it's it's not
+
+876
+00:36:31,318 --> 00:36:35,639
+that confusing because we think that
+
+877
+00:36:34,079 --> 00:36:37,380
+these receptors do not work by
+
+878
+00:36:35,639 --> 00:36:39,929
+themselves when they work in complexes
+
+879
+00:36:37,380 --> 00:36:43,048
+so we think that they - probably is a
+
+880
+00:36:39,929 --> 00:36:45,868
+scaffold for other receptors which give
+
+881
+00:36:43,048 --> 00:36:48,929
+the specificity so maybe one receptor
+
+882
+00:36:45,869 --> 00:36:51,838
+complex binds Claddagh 3 and another
+
+883
+00:36:48,929 --> 00:36:53,038
+receptor complex I am sexy p1 and we'd
+
+884
+00:36:51,838 --> 00:36:55,400
+really like to know what those are but
+
+885
+00:36:53,039 --> 00:36:56,880
+we're not there yet but at least
+
+886
+00:36:55,400 --> 00:36:58,139
+phenomenologically I think this is
+
+887
+00:36:56,880 --> 00:37:00,690
+interesting because it shows how you can
+
+888
+00:36:58,139 --> 00:37:02,969
+get different signal inputs and outputs
+
+889
+00:37:00,690 --> 00:37:10,710
+going through its common receptor so I
+
+890
+00:37:02,969 --> 00:37:17,598
+think it's quite interesting I'm
+
+891
+00:37:10,710 --> 00:37:20,190
+actually going to skip that anyway ok so
+
+892
+00:37:17,599 --> 00:37:21,778
+there's another area we are very
+
+893
+00:37:20,190 --> 00:37:24,179
+interested in which is looking at
+
+894
+00:37:21,778 --> 00:37:26,429
+natural variation and some of this is
+
+895
+00:37:24,179 --> 00:37:28,230
+actually what inspired by work from Ed
+
+896
+00:37:26,429 --> 00:37:31,469
+buckler and Mike Lee and others where
+
+897
+00:37:28,230 --> 00:37:33,210
+they've shown that we can map qtls for a
+
+898
+00:37:31,469 --> 00:37:34,578
+kernel row number which is the trait we
+
+899
+00:37:33,210 --> 00:37:37,548
+eventually want to get to so there is
+
+900
+00:37:34,579 --> 00:37:40,140
+natural genetic variation in maize for
+
+901
+00:37:37,548 --> 00:37:42,989
+we think for meristem size certainly
+
+902
+00:37:40,139 --> 00:37:46,109
+fir'd for seed seed number and the
+
+903
+00:37:42,989 --> 00:37:48,359
+is me in our summer field last year this
+
+904
+00:37:46,110 --> 00:37:50,610
+is actually a real calm plant I didn't
+
+905
+00:37:48,360 --> 00:37:53,730
+glue these together not I'm the scale by
+
+906
+00:37:50,610 --> 00:37:56,280
+answer it's huge this is a land Mexican
+
+907
+00:37:53,730 --> 00:38:01,079
+land race from simit that the maize and
+
+908
+00:37:56,280 --> 00:38:03,450
+wheat Research Centre in Mexico and I
+
+909
+00:38:01,079 --> 00:38:06,420
+ordered these seeds or seeds of this
+
+910
+00:38:03,449 --> 00:38:09,449
+line because they're annotated as being
+
+911
+00:38:06,420 --> 00:38:11,820
+faced here I see I did and they are and
+
+912
+00:38:09,449 --> 00:38:13,710
+this is really amazing this is a land
+
+913
+00:38:11,820 --> 00:38:16,530
+race that people grow and eat in Mexico
+
+914
+00:38:13,710 --> 00:38:18,269
+and it's it's amazing and I had my I
+
+915
+00:38:16,530 --> 00:38:21,090
+asked my undergrads to shoot back these
+
+916
+00:38:18,269 --> 00:38:22,440
+plants and they were like Jaime on the
+
+917
+00:38:21,090 --> 00:38:24,510
+inch of their shoulders and bringing
+
+918
+00:38:22,440 --> 00:38:26,579
+ladders and then I told me you can just
+
+919
+00:38:24,510 --> 00:38:29,220
+bend them over because they have dogs
+
+920
+00:38:26,579 --> 00:38:32,579
+like about six inches thick so they're
+
+921
+00:38:29,219 --> 00:38:36,659
+really strong but it was fun okay
+
+922
+00:38:32,579 --> 00:38:39,029
+so we are trying to map this but we're
+
+923
+00:38:36,659 --> 00:38:40,769
+not there yet we're close but another
+
+924
+00:38:39,030 --> 00:38:42,510
+approach we've taken is to use the noun
+
+925
+00:38:40,769 --> 00:38:45,809
+population which is this amazing
+
+926
+00:38:42,510 --> 00:38:47,700
+resource in maize natural variation
+
+927
+00:38:45,809 --> 00:38:50,070
+resource generated by a major Goodman
+
+928
+00:38:47,699 --> 00:38:52,769
+and made famous by adviser and many
+
+929
+00:38:50,070 --> 00:38:55,320
+other people here so this is a diversity
+
+930
+00:38:52,769 --> 00:38:57,929
+population with diverse 25 diverse
+
+931
+00:38:55,320 --> 00:39:00,150
+founder lines so we want to find natural
+
+932
+00:38:57,929 --> 00:39:02,730
+variation in our trade of interest which
+
+933
+00:39:00,150 --> 00:39:06,150
+is faced iation so we take one of our
+
+934
+00:39:02,730 --> 00:39:08,099
+mutants like Faye - and we cross it -
+
+935
+00:39:06,150 --> 00:39:10,920
+all of the diversity parents and then
+
+936
+00:39:08,099 --> 00:39:12,690
+make F twos and score the phenotypes so
+
+937
+00:39:10,920 --> 00:39:15,269
+we're looking for modified as genetic
+
+938
+00:39:12,690 --> 00:39:16,619
+modifiers and it's a lot of work but
+
+939
+00:39:15,269 --> 00:39:19,108
+it's kind of fun to just walk through
+
+940
+00:39:16,619 --> 00:39:20,519
+the field and get up and in ten thousand
+
+941
+00:39:19,108 --> 00:39:22,799
+years it's one of my favourite
+
+942
+00:39:20,519 --> 00:39:24,780
+activities but not for everybody but
+
+943
+00:39:22,800 --> 00:39:31,400
+anyway when we did this we found that
+
+944
+00:39:24,780 --> 00:39:34,380
+one of these lines which is NC 350
+
+945
+00:39:31,400 --> 00:39:38,039
+strongly enhanced the Fae - phenotype
+
+946
+00:39:34,380 --> 00:39:40,740
+right so NC 350 by itself is not face
+
+947
+00:39:38,039 --> 00:39:45,179
+eiated right these are just natural for
+
+948
+00:39:40,739 --> 00:39:48,389
+i inbred varieties but when we cross NC
+
+949
+00:39:45,179 --> 00:39:49,858
+350 with say - and make an F - we go
+
+950
+00:39:48,389 --> 00:39:51,690
+from a pretty strong face iation
+
+951
+00:39:49,858 --> 00:39:53,940
+phenotype looks like this so that
+
+952
+00:39:51,690 --> 00:39:56,400
+meristem is really flattened and that
+
+953
+00:39:53,940 --> 00:39:56,940
+ear is flattened and then we get
+
+954
+00:39:56,400 --> 00:39:59,608
+something like
+
+955
+00:39:56,940 --> 00:40:01,650
+this which is just completely crazy just
+
+956
+00:39:59,608 --> 00:40:04,920
+really faced it kind of looks like a
+
+957
+00:40:01,650 --> 00:40:06,329
+brain and I get my neuro your biologist
+
+958
+00:40:04,920 --> 00:40:09,630
+colleagues interested in this till I
+
+959
+00:40:06,329 --> 00:40:11,250
+realized yeah so it's so it's really
+
+960
+00:40:09,630 --> 00:40:15,180
+strongly an end so we want to know you
+
+961
+00:40:11,250 --> 00:40:18,449
+know there's some locus in NC 350 that's
+
+962
+00:40:15,179 --> 00:40:20,159
+doing this it's in in wild-type NC 350
+
+963
+00:40:18,449 --> 00:40:22,679
+it's not doing anything to the meristem
+
+964
+00:40:20,159 --> 00:40:24,779
+but when we put it in an immutable on
+
+965
+00:40:22,679 --> 00:40:26,399
+which we think sensitize is that the
+
+966
+00:40:24,780 --> 00:40:28,470
+plan then we see this really strong
+
+967
+00:40:26,400 --> 00:40:32,130
+enhancement
+
+968
+00:40:28,469 --> 00:40:33,419
+so we mapped this in actually this was
+
+969
+00:40:32,130 --> 00:40:35,099
+originally really difficult to map
+
+970
+00:40:33,420 --> 00:40:36,690
+because there's a lot of things
+
+971
+00:40:35,099 --> 00:40:38,640
+segregating here and it's probably not
+
+972
+00:40:36,690 --> 00:40:41,880
+just one major locus but we'd so we do
+
+973
+00:40:38,639 --> 00:40:43,500
+several back crosses and make an f2 and
+
+974
+00:40:41,880 --> 00:40:47,010
+we found a major locus on chromosome
+
+975
+00:40:43,500 --> 00:40:50,309
+five that the maps to this trait and we
+
+976
+00:40:47,010 --> 00:40:52,859
+map this and right in the middle is one
+
+977
+00:40:50,309 --> 00:40:55,289
+of our favorite genes they have a really
+
+978
+00:40:52,858 --> 00:40:58,380
+talked about you at TD 1 which is amazed
+
+979
+00:40:55,289 --> 00:41:00,358
+cavada one about a one receptor if FA 2
+
+980
+00:40:58,380 --> 00:41:02,550
+is clever tattoo and TD one is Claddagh
+
+981
+00:41:00,358 --> 00:41:04,259
+one so it makes perfect sense a little
+
+982
+00:41:02,550 --> 00:41:06,420
+bit disappointing is nothing new but I
+
+983
+00:41:04,260 --> 00:41:08,089
+think it's interesting that within this
+
+984
+00:41:06,420 --> 00:41:10,889
+line we found in this natural variation
+
+985
+00:41:08,088 --> 00:41:13,650
+in T V 1 which can enhance this trade
+
+986
+00:41:10,889 --> 00:41:16,170
+and we've shown we've confirmed this by
+
+987
+00:41:13,650 --> 00:41:17,789
+mutants and also I said I don't have it
+
+988
+00:41:16,170 --> 00:41:21,269
+here in the slide but there is a
+
+989
+00:41:17,789 --> 00:41:24,300
+difference in expression in TD 1 in NC
+
+990
+00:41:21,269 --> 00:41:26,818
+350 compared to be 73 which was our
+
+991
+00:41:24,300 --> 00:41:29,039
+starting line so it's it's interesting
+
+992
+00:41:26,818 --> 00:41:31,400
+and I think this is a an extra resource
+
+993
+00:41:29,039 --> 00:41:34,500
+we can hopefully use to uncover new
+
+994
+00:41:31,400 --> 00:41:37,309
+alpha in the future new loci also that
+
+995
+00:41:34,500 --> 00:41:37,309
+control these traits
+
+996
+00:41:40,730 --> 00:41:46,219
+okay so last part of the talk I want to
+
+997
+00:41:43,530 --> 00:41:49,019
+just come back to this idea again about
+
+998
+00:41:46,219 --> 00:41:53,098
+increasing yield or at least increasing
+
+999
+00:41:49,019 --> 00:41:55,619
+kernel number so again the idea is these
+
+1000
+00:41:53,099 --> 00:41:58,800
+mutants make massive disorganized
+
+1001
+00:41:55,619 --> 00:42:02,250
+meristems the yield is very low but if
+
+1002
+00:41:58,800 --> 00:42:04,440
+we can control this gene I a weak allele
+
+1003
+00:42:02,250 --> 00:42:07,289
+we could make a little bit bigger sense
+
+1004
+00:42:04,440 --> 00:42:10,500
+and more rows ok so originally we did
+
+1005
+00:42:07,289 --> 00:42:10,869
+this together with a tilling facility in
+
+1006
+00:42:10,500 --> 00:42:14,369
+May
+
+1007
+00:42:10,869 --> 00:42:17,289
+set up by cliff while Purdue and
+
+1008
+00:42:14,369 --> 00:42:20,230
+whee-hee-hee screen for us in EMS
+
+1009
+00:42:17,289 --> 00:42:22,750
+populations for alleles of Fae - that
+
+1010
+00:42:20,230 --> 00:42:25,210
+had on mute ations generated by EMS just
+
+1011
+00:42:22,750 --> 00:42:28,539
+by by sequencing we had four of these
+
+1012
+00:42:25,210 --> 00:42:30,789
+and they're predicted to give single
+
+1013
+00:42:28,539 --> 00:42:34,119
+amino acid changes presumably weak
+
+1014
+00:42:30,789 --> 00:42:35,920
+alleles and for one of these at least
+
+1015
+00:42:34,119 --> 00:42:38,529
+two two of them but one was more
+
+1016
+00:42:35,920 --> 00:42:42,130
+dramatic we actually found that indeed
+
+1017
+00:42:38,530 --> 00:42:45,070
+in these mutants these weak alleles of
+
+1018
+00:42:42,130 --> 00:42:47,710
+Fae - we do get an increase in Colonel
+
+1019
+00:42:45,070 --> 00:42:49,240
+rose from an average of about 16 to
+
+1020
+00:42:47,710 --> 00:42:52,570
+Navarrete about 20 which is quite
+
+1021
+00:42:49,239 --> 00:42:54,069
+dramatic a lot more kernels per ear and
+
+1022
+00:42:52,570 --> 00:42:55,330
+everybody was excited about this I
+
+1023
+00:42:54,070 --> 00:42:57,580
+wasn't really excited about this I was
+
+1024
+00:42:55,329 --> 00:42:58,809
+really excited about this which is when
+
+1025
+00:42:57,579 --> 00:43:01,690
+we look at these in the scanning
+
+1026
+00:42:58,809 --> 00:43:04,329
+eeehm we see that indeed these weak
+
+1027
+00:43:01,690 --> 00:43:05,769
+alleles if they to the meristems do
+
+1028
+00:43:04,329 --> 00:43:09,309
+indeed get a bit bigger but they're
+
+1029
+00:43:05,769 --> 00:43:11,679
+still organized still this nice dome
+
+1030
+00:43:09,309 --> 00:43:14,259
+shape they're not satiated splittings
+
+1031
+00:43:11,679 --> 00:43:16,480
+right so I was really happy about this
+
+1032
+00:43:14,260 --> 00:43:19,780
+okay so we're making more kernels do we
+
+1033
+00:43:16,480 --> 00:43:22,990
+make more yield well the answer is no
+
+1034
+00:43:19,780 --> 00:43:24,880
+right so as I was discussing we Bob this
+
+1035
+00:43:22,989 --> 00:43:26,079
+morning you know plants are pretty smart
+
+1036
+00:43:24,880 --> 00:43:27,849
+you know you try and trick it into
+
+1037
+00:43:26,079 --> 00:43:30,309
+making more rows of seats and they say
+
+1038
+00:43:27,849 --> 00:43:32,139
+well you know I'm just gonna make the
+
+1039
+00:43:30,309 --> 00:43:34,299
+seeds smaller so that that's what the
+
+1040
+00:43:32,139 --> 00:43:36,849
+plant did so there was no increase in
+
+1041
+00:43:34,300 --> 00:43:39,370
+yield in this background which is not
+
+1042
+00:43:36,849 --> 00:43:42,130
+you know what farmers grow this is w22
+
+1043
+00:43:39,369 --> 00:43:44,230
+so it's not even in a hybrid which is
+
+1044
+00:43:42,130 --> 00:43:47,019
+what we normally grow but you know we've
+
+1045
+00:43:44,230 --> 00:43:49,059
+been giving these lines out Greta's here
+
+1046
+00:43:47,019 --> 00:43:51,190
+and there and actually a former postdoc
+
+1047
+00:43:49,059 --> 00:43:53,590
+in my lab is now a maize breeder in
+
+1048
+00:43:51,190 --> 00:43:55,750
+vietnam and he put this into one it into
+
+1049
+00:43:53,590 --> 00:43:59,440
+their breeding lines that they actually
+
+1050
+00:43:55,750 --> 00:44:01,960
+grow the farmers grow and they again saw
+
+1051
+00:43:59,440 --> 00:44:03,970
+an increase in kernel row number and in
+
+1052
+00:44:01,960 --> 00:44:06,010
+their yield trials is his real breeders
+
+1053
+00:44:03,969 --> 00:44:08,409
+yield trials this is not our crappy
+
+1054
+00:44:06,010 --> 00:44:10,660
+field in in Long Island they saw up to a
+
+1055
+00:44:08,409 --> 00:44:12,909
+20% increase in yield so that's pretty
+
+1056
+00:44:10,659 --> 00:44:16,000
+encouraging it needs to be reproduced
+
+1057
+00:44:12,909 --> 00:44:20,679
+but I think in some backgrounds this may
+
+1058
+00:44:16,000 --> 00:44:22,360
+really have an effect we did this with
+
+1059
+00:44:20,679 --> 00:44:24,129
+another gene that we were done called
+
+1060
+00:44:22,360 --> 00:44:24,660
+Fay 3 I haven't really talked about this
+
+1061
+00:44:24,130 --> 00:44:30,059
+today
+
+1062
+00:44:24,659 --> 00:44:32,759
+in this example we had weak alleles see
+
+1063
+00:44:30,059 --> 00:44:34,559
+they're still mildly face eiated but not
+
+1064
+00:44:32,760 --> 00:44:38,760
+nothing like the null mutant again
+
+1065
+00:44:34,559 --> 00:44:42,809
+there's a EMS weak alleles in this case
+
+1066
+00:44:38,760 --> 00:44:43,410
+even in our you know old inbreds and
+
+1067
+00:44:42,809 --> 00:44:45,809
+hybrids
+
+1068
+00:44:43,409 --> 00:44:48,420
+it's just b7 3w 22 we see a pretty
+
+1069
+00:44:45,809 --> 00:44:50,219
+significant increase in yield again this
+
+1070
+00:44:48,420 --> 00:44:53,970
+is not elite varieties of course but
+
+1071
+00:44:50,219 --> 00:44:56,669
+encouraging that we may do this so maybe
+
+1072
+00:44:53,969 --> 00:44:59,819
+these marathon pathways are interacting
+
+1073
+00:44:56,670 --> 00:45:01,769
+somehow in pathways a controlled sync
+
+1074
+00:44:59,820 --> 00:45:03,990
+strength right so the plant only has a
+
+1075
+00:45:01,769 --> 00:45:06,179
+limited amount of resources but what it
+
+1076
+00:45:03,989 --> 00:45:08,669
+does without resources I think is a
+
+1077
+00:45:06,179 --> 00:45:11,129
+mystery how that's did how that's
+
+1078
+00:45:08,670 --> 00:45:14,099
+decided so there may be some interaction
+
+1079
+00:45:11,130 --> 00:45:16,860
+okay so we want to do this large-scale
+
+1080
+00:45:14,099 --> 00:45:19,110
+and I think with the EMS alleles we were
+
+1081
+00:45:16,860 --> 00:45:21,329
+really lucky to get alleles that had the
+
+1082
+00:45:19,110 --> 00:45:24,120
+desired effect so we want to make a more
+
+1083
+00:45:21,329 --> 00:45:27,000
+generalizable approach to make weak
+
+1084
+00:45:24,119 --> 00:45:28,859
+alleles in plants right and targeting
+
+1085
+00:45:27,000 --> 00:45:31,199
+the protein sequence is a little risky
+
+1086
+00:45:28,860 --> 00:45:32,789
+because you might you know you could not
+
+1087
+00:45:31,199 --> 00:45:34,259
+have the whole protein you don't really
+
+1088
+00:45:32,789 --> 00:45:36,690
+know what you're gonna get and EMS is
+
+1089
+00:45:34,260 --> 00:45:37,980
+kind of messy and slow and so now of
+
+1090
+00:45:36,690 --> 00:45:40,530
+course we have CRISPR which is just
+
+1091
+00:45:37,980 --> 00:45:42,300
+amazing new tool so to make weak alleles
+
+1092
+00:45:40,530 --> 00:45:44,519
+we don't want to tug in the coding
+
+1093
+00:45:42,300 --> 00:45:46,860
+sequence but maybe we thought maybe we
+
+1094
+00:45:44,519 --> 00:45:48,840
+can target the promoters so again this
+
+1095
+00:45:46,860 --> 00:45:52,590
+is with our with our clean mutants in
+
+1096
+00:45:48,840 --> 00:45:55,710
+maze what we do is we take the predicted
+
+1097
+00:45:52,590 --> 00:45:57,630
+promoter region and we don't care about
+
+1098
+00:45:55,710 --> 00:45:59,460
+promoter elements everybody asks like
+
+1099
+00:45:57,630 --> 00:46:01,110
+how did you predict which promoter
+
+1100
+00:45:59,460 --> 00:46:02,820
+element is important blah blah blah I
+
+1101
+00:46:01,110 --> 00:46:05,160
+don't care I just want to get a
+
+1102
+00:46:02,820 --> 00:46:08,460
+phenotype right so we just we take the
+
+1103
+00:46:05,159 --> 00:46:11,879
+upstream once 2 KB of promoter and just
+
+1104
+00:46:08,460 --> 00:46:14,250
+tile it with 8 or 9 guide RNAs then we
+
+1105
+00:46:11,880 --> 00:46:17,700
+transform this into maze and what we get
+
+1106
+00:46:14,250 --> 00:46:20,130
+out is plants that have all sorts of
+
+1107
+00:46:17,699 --> 00:46:22,529
+different phenotype genotype so so
+
+1108
+00:46:20,130 --> 00:46:24,599
+basically we have small in Dells which
+
+1109
+00:46:22,530 --> 00:46:26,310
+is very common with CRISPR but if you do
+
+1110
+00:46:24,599 --> 00:46:28,170
+CRISPR with multiple guide RNAs you also
+
+1111
+00:46:26,309 --> 00:46:30,690
+often get large deletions so we get
+
+1112
+00:46:28,170 --> 00:46:32,460
+different promoted deletions so this is
+
+1113
+00:46:30,690 --> 00:46:34,409
+like in vivo promoter botchey I mean
+
+1114
+00:46:32,460 --> 00:46:35,490
+when I was a graduate student everybody
+
+1115
+00:46:34,409 --> 00:46:37,349
+was doing promoter botchey
+
+1116
+00:46:35,489 --> 00:46:38,189
+it was I thought it was really boring
+
+1117
+00:46:37,349 --> 00:46:39,538
+but
+
+1118
+00:46:38,190 --> 00:46:43,108
+quite excited about this because it's in
+
+1119
+00:46:39,539 --> 00:46:45,599
+vivo in the native genomic context and I
+
+1120
+00:46:43,108 --> 00:46:48,000
+wish I had a lot of results from this
+
+1121
+00:46:45,599 --> 00:46:49,559
+you may have seen a paper published a
+
+1122
+00:46:48,000 --> 00:46:51,179
+few months ago from Zack Lippmann so
+
+1123
+00:46:49,559 --> 00:46:52,859
+we're doing this together with Lippmann
+
+1124
+00:46:51,179 --> 00:46:55,190
+laughs using a tomato and tomato as much
+
+1125
+00:46:52,858 --> 00:47:01,230
+faster than maize and they already have
+
+1126
+00:46:55,190 --> 00:47:02,789
+amazing allelic variation in tomato the
+
+1127
+00:47:01,230 --> 00:47:05,338
+only thing I can show in maize which is
+
+1128
+00:47:02,789 --> 00:47:07,380
+not very satisfying is that we do have
+
+1129
+00:47:05,338 --> 00:47:07,769
+some weak phenotypes and weak face
+
+1130
+00:47:07,380 --> 00:47:10,200
+iation
+
+1131
+00:47:07,769 --> 00:47:13,259
+but no no yield idea but that's coming
+
+1132
+00:47:10,199 --> 00:47:15,358
+next so I think it can work there's no
+
+1133
+00:47:13,260 --> 00:47:21,299
+reason it shouldn't work I think it's
+
+1134
+00:47:15,358 --> 00:47:24,420
+pretty exciting so where are we so I
+
+1135
+00:47:21,298 --> 00:47:26,909
+think I've hopefully convinced you or
+
+1136
+00:47:24,420 --> 00:47:30,510
+confused you that the Claddagh Network
+
+1137
+00:47:26,909 --> 00:47:32,670
+is very confusing and complex you know
+
+1138
+00:47:30,510 --> 00:47:35,819
+and CRISPR is just beginning so it's
+
+1139
+00:47:32,670 --> 00:47:38,338
+gonna get a lot worse you know we used
+
+1140
+00:47:35,818 --> 00:47:40,318
+to be in this great situation where we
+
+1141
+00:47:38,338 --> 00:47:42,269
+had okhla vada three binds cavada one
+
+1142
+00:47:40,318 --> 00:47:44,849
+that regulates which one is feedback but
+
+1143
+00:47:42,269 --> 00:47:47,130
+we now know that there are many more
+
+1144
+00:47:44,849 --> 00:47:49,170
+receptors the function in meristem
+
+1145
+00:47:47,130 --> 00:47:51,660
+control and then always downstream
+
+1146
+00:47:49,170 --> 00:47:54,389
+signaling components and there are a lot
+
+1147
+00:47:51,659 --> 00:47:55,889
+more that paper I just reviewed has four
+
+1148
+00:47:54,389 --> 00:47:57,719
+more over here that will be coming out
+
+1149
+00:47:55,889 --> 00:48:00,690
+soon so yeah there's a lot more stuff
+
+1150
+00:47:57,719 --> 00:48:03,179
+coming so it is very confusing but in a
+
+1151
+00:48:00,690 --> 00:48:04,289
+way that's biology and it's satisfying I
+
+1152
+00:48:03,179 --> 00:48:05,219
+mean it's interesting to think about why
+
+1153
+00:48:04,289 --> 00:48:08,339
+it's so complicated
+
+1154
+00:48:05,219 --> 00:48:11,750
+we could discuss that later but yeah it
+
+1155
+00:48:08,338 --> 00:48:16,440
+is complicated but we're making headway
+
+1156
+00:48:11,750 --> 00:48:18,630
+and then there's the please so clavata
+
+1157
+00:48:16,440 --> 00:48:21,510
+three is this as I said is is Cle it's a
+
+1158
+00:48:18,630 --> 00:48:24,500
+peptide it's a member of a big gene
+
+1159
+00:48:21,510 --> 00:48:28,859
+family they're actually 49 in maize and
+
+1160
+00:48:24,500 --> 00:48:30,568
+I didn't dare ask my postdoc to knock
+
+1161
+00:48:28,858 --> 00:48:32,519
+out all of them but he's actually done
+
+1162
+00:48:30,568 --> 00:48:35,219
+about 20 of them already so this is a
+
+1163
+00:48:32,519 --> 00:48:37,139
+amazing not all in the same plant right
+
+1164
+00:48:35,219 --> 00:48:39,449
+so they ought because together but the
+
+1165
+00:48:37,139 --> 00:48:41,038
+amazing power of CRISPR you know we we
+
+1166
+00:48:39,449 --> 00:48:43,108
+now gently knocking out four genes at
+
+1167
+00:48:41,039 --> 00:48:45,510
+once and we could go tomorrow I'm sure
+
+1168
+00:48:43,108 --> 00:48:47,009
+so it's really things are going to
+
+1169
+00:48:45,510 --> 00:48:50,250
+change very quickly so it so we're
+
+1170
+00:48:47,010 --> 00:48:51,278
+focusing on only about 30 so I decided
+
+1171
+00:48:50,250 --> 00:48:53,498
+to be more modest in
+
+1172
+00:48:51,278 --> 00:48:55,150
+my expectations but the ones are the
+
+1173
+00:48:53,498 --> 00:48:56,889
+most highly expressing inflorescence
+
+1174
+00:48:55,150 --> 00:48:58,539
+ofcourse and I'm sure there'll be lots
+
+1175
+00:48:56,889 --> 00:49:00,009
+of interesting phenotypes coming out of
+
+1176
+00:48:58,539 --> 00:49:02,319
+this probably more than we can ever ever
+
+1177
+00:49:00,009 --> 00:49:04,329
+study but but I think it's it's very
+
+1178
+00:49:02,318 --> 00:49:06,759
+powerful now to think about you know
+
+1179
+00:49:04,329 --> 00:49:08,289
+know looking at single genes because we
+
+1180
+00:49:06,759 --> 00:49:10,630
+know that redundancy is very prevalent
+
+1181
+00:49:08,289 --> 00:49:12,789
+in plants and so we need to think about
+
+1182
+00:49:10,630 --> 00:49:17,409
+knocking out whole gene families to find
+
+1183
+00:49:12,789 --> 00:49:20,829
+the phenotypes okay and then so how
+
+1184
+00:49:17,409 --> 00:49:23,469
+complicated is it very and then
+
+1185
+00:49:20,829 --> 00:49:25,689
+something I think about a lot also is to
+
+1186
+00:49:23,469 --> 00:49:27,729
+what extent is yield to crop yields
+
+1187
+00:49:25,688 --> 00:49:30,788
+limits by sync and when I talk about
+
+1188
+00:49:27,728 --> 00:49:33,129
+this a lot of people say well yield is
+
+1189
+00:49:30,789 --> 00:49:35,549
+sauce limited right the plant only makes
+
+1190
+00:49:33,130 --> 00:49:38,499
+a certain amount of force in fade and
+
+1191
+00:49:35,548 --> 00:49:40,329
+all that goes to the ear and then you
+
+1192
+00:49:38,498 --> 00:49:42,068
+can't make more by making the ear bigger
+
+1193
+00:49:40,329 --> 00:49:45,278
+because you only have a certain amount
+
+1194
+00:49:42,068 --> 00:49:47,438
+of resources but I don't know if that's
+
+1195
+00:49:45,278 --> 00:49:49,599
+true and in some of our works yes it may
+
+1196
+00:49:47,438 --> 00:49:51,699
+not be true right I mean the resources
+
+1197
+00:49:49,599 --> 00:49:53,949
+may be some of the resources are kept in
+
+1198
+00:49:51,699 --> 00:49:55,989
+the roots or or you know kept in the
+
+1199
+00:49:53,949 --> 00:49:57,938
+leaves and weird funneling more of that
+
+1200
+00:49:55,989 --> 00:49:59,380
+into the ear and whether that's good
+
+1201
+00:49:57,938 --> 00:50:01,088
+enough for sustainability I don't know
+
+1202
+00:49:59,380 --> 00:50:02,979
+but it's interesting to think about
+
+1203
+00:50:01,088 --> 00:50:06,099
+whether this can be used to enhance
+
+1204
+00:50:02,978 --> 00:50:08,948
+yield maybe this has already been
+
+1205
+00:50:06,099 --> 00:50:10,869
+optimized in Kahn belt maze because
+
+1206
+00:50:08,949 --> 00:50:13,358
+freed has been breeding maize for you
+
+1207
+00:50:10,869 --> 00:50:14,949
+know almost 100 years but probably not
+
+1208
+00:50:13,358 --> 00:50:17,498
+in all environments as I showed you with
+
+1209
+00:50:14,949 --> 00:50:18,608
+the lines from Vietnam and certainly
+
+1210
+00:50:17,498 --> 00:50:21,399
+there's a lot of interest now in
+
+1211
+00:50:18,608 --> 00:50:23,558
+developing new crops right often often
+
+1212
+00:50:21,400 --> 00:50:25,778
+crops improving them and they think
+
+1213
+00:50:23,559 --> 00:50:29,469
+these pathways could be very useful in
+
+1214
+00:50:25,778 --> 00:50:35,679
+improving yield in in crops that are not
+
+1215
+00:50:29,469 --> 00:50:37,208
+commonly row crops now okay so yeah I
+
+1216
+00:50:35,679 --> 00:50:39,519
+just want to acknowledge people who did
+
+1217
+00:50:37,208 --> 00:50:41,678
+this these are in greener that people
+
+1218
+00:50:39,518 --> 00:50:43,778
+involve in cavada related projects the
+
+1219
+00:50:41,679 --> 00:50:45,278
+other people doing different things a
+
+1220
+00:50:43,778 --> 00:50:48,608
+lot of the work Justin by a very
+
+1221
+00:50:45,278 --> 00:50:51,159
+talented postdoc young Lu just got a job
+
+1222
+00:50:48,608 --> 00:50:52,869
+back in Korea and also Peter bomb it is
+
+1223
+00:50:51,159 --> 00:50:54,429
+back in Germany and then we have a great
+
+1224
+00:50:52,869 --> 00:50:58,689
+group of collaborators and funding
+
+1225
+00:50:54,429 --> 00:50:59,990
+agencies and etc okay and thanks very
+
+1226
+00:50:58,688 --> 00:51:06,170
+much
+
+1227
+00:50:59,989 --> 00:51:06,169
+[Applause]
+
+1228
+00:51:15,309 --> 00:51:24,679
+yeah the translate well that depends on
+
+1229
+00:51:23,539 --> 00:51:27,230
+how these things do at high density
+
+1230
+00:51:24,679 --> 00:51:31,659
+which we have not measured yet so that's
+
+1231
+00:51:27,230 --> 00:51:31,659
+but they with its it's ongoing but yeah
+
+1232
+00:51:32,829 --> 00:51:41,960
+signatures of selection yeah I mean they
+
+1233
+00:51:39,650 --> 00:51:44,300
+yeah I didn't go into this but a lot of
+
+1234
+00:51:41,960 --> 00:51:47,869
+these genes come up in QTL scans or in G
+
+1235
+00:51:44,300 --> 00:51:50,060
+wasps studies so yeah so there is um
+
+1236
+00:51:47,869 --> 00:51:52,780
+there's variation that's associated with
+
+1237
+00:51:50,059 --> 00:51:57,199
+yield traits all-weather selected yeah
+
+1238
+00:51:52,780 --> 00:51:58,910
+yeah yeah yeah yeah so yeah it's an
+
+1239
+00:51:57,199 --> 00:52:01,039
+interesting question so these genes did
+
+1240
+00:51:58,909 --> 00:52:03,679
+not come out in the doble screen right
+
+1241
+00:52:01,039 --> 00:52:06,108
+so doubly crossed ancient maize and
+
+1242
+00:52:03,679 --> 00:52:08,569
+teosinte and found major cutie ELLs five
+
+1243
+00:52:06,108 --> 00:52:11,088
+major QTL so these genes are not in
+
+1244
+00:52:08,570 --> 00:52:13,700
+those there is one interesting gene in
+
+1245
+00:52:11,088 --> 00:52:16,130
+there actually fee the maize leafy
+
+1246
+00:52:13,699 --> 00:52:18,259
+homologue which he showed may be also
+
+1247
+00:52:16,130 --> 00:52:20,869
+involved in controlling row numbers yeah
+
+1248
+00:52:18,260 --> 00:52:22,760
+so I think of these genes is not in the
+
+1249
+00:52:20,869 --> 00:52:24,710
+image original domestication events the
+
+1250
+00:52:22,760 --> 00:52:30,320
+more in improvement events the more
+
+1251
+00:52:24,710 --> 00:52:33,019
+recent so they they well they do not
+
+1252
+00:52:30,320 --> 00:52:36,890
+come up in the early data said they td1
+
+1253
+00:52:33,019 --> 00:52:38,269
+actually came out of work the paper
+
+1254
+00:52:36,889 --> 00:52:40,250
+published last year I think in Current
+
+1255
+00:52:38,269 --> 00:52:43,460
+Biology that Jeff Ross Navarro is on
+
+1256
+00:52:40,250 --> 00:52:45,108
+where they sequence ancient leis from
+
+1257
+00:52:43,460 --> 00:52:46,730
+these five thousand year old cobs and
+
+1258
+00:52:45,108 --> 00:52:49,429
+they found that td1 was already in the
+
+1259
+00:52:46,730 --> 00:52:50,869
+selection notes yeah I think it's that
+
+1260
+00:52:49,429 --> 00:53:04,029
+but we haven't looked to deeply
+
+1261
+00:52:50,869 --> 00:53:08,059
+understand proxy for meristem size any
+
+1262
+00:53:04,030 --> 00:53:12,760
+examples where you see essentially more
+
+1263
+00:53:08,059 --> 00:53:16,358
+colonel ropes but the meristem looks
+
+1264
+00:53:12,760 --> 00:53:18,970
+yeah I dad yeah so we actually it
+
+1265
+00:53:16,358 --> 00:53:20,710
+happens and of see Colonel size can vary
+
+1266
+00:53:18,969 --> 00:53:23,379
+so you can get more rows by having
+
+1267
+00:53:20,710 --> 00:53:25,809
+smaller criminals we originally we
+
+1268
+00:53:23,380 --> 00:53:27,550
+looked at all the num founder lines and
+
+1269
+00:53:25,809 --> 00:53:30,130
+tried to correlate Colonel row number
+
+1270
+00:53:27,550 --> 00:53:32,500
+with wearisome size and I think meristem
+
+1271
+00:53:30,130 --> 00:53:34,150
+size variation explained about sixty
+
+1272
+00:53:32,500 --> 00:53:37,019
+percent of the difference in final run
+
+1273
+00:53:34,150 --> 00:53:56,608
+of it so it's not it's not all of it
+
+1274
+00:53:37,019 --> 00:53:56,608
+essential part of it so the Association
+
+1275
+00:53:57,059 --> 00:54:09,549
+it's not you're right right yeah yeah
+
+1276
+00:54:06,909 --> 00:54:11,889
+yeah yeah so the question is about this
+
+1277
+00:54:09,550 --> 00:54:14,589
+sort of branching receptor pathway and
+
+1278
+00:54:11,889 --> 00:54:17,828
+whether the receptor interacts directly
+
+1279
+00:54:14,588 --> 00:54:21,578
+with G officer so we published that
+
+1280
+00:54:17,829 --> 00:54:25,170
+paper in 2013 that you know the receptor
+
+1281
+00:54:21,579 --> 00:54:28,150
+interacts with G alpha and then you know
+
+1282
+00:54:25,170 --> 00:54:29,769
+he went off and got his job and you know
+
+1283
+00:54:28,150 --> 00:54:32,108
+he left a lab and then another post I
+
+1284
+00:54:29,769 --> 00:54:33,250
+joined and could not repeat it cuz I was
+
+1285
+00:54:32,108 --> 00:54:35,529
+really would never throw a while but
+
+1286
+00:54:33,250 --> 00:54:38,500
+eventually come the conditions right in
+
+1287
+00:54:35,530 --> 00:54:41,710
+it he repeated it so it is true but we
+
+1288
+00:54:38,500 --> 00:54:45,309
+detect the interaction by colloid P but
+
+1289
+00:54:41,710 --> 00:54:47,740
+not by fret or B or C so we think
+
+1290
+00:54:45,309 --> 00:54:49,299
+there's a another protein that breaches
+
+1291
+00:54:47,739 --> 00:54:51,848
+that interaction and we think that is a
+
+1292
+00:54:49,300 --> 00:54:53,380
+receptor that we haven't yeah we haven't
+
+1293
+00:54:51,849 --> 00:55:10,869
+been able to purify it yet we have a
+
+1294
+00:54:53,380 --> 00:55:13,660
+kind of database um so I think maze is
+
+1295
+00:55:10,869 --> 00:55:16,480
+somehow more sensitized so I think we
+
+1296
+00:55:13,659 --> 00:55:18,578
+find well so we found a lot of things in
+
+1297
+00:55:16,480 --> 00:55:20,588
+a rabid OPS's that's right a maze that
+
+1298
+00:55:18,579 --> 00:55:24,440
+have not been found in robots it's like
+
+1299
+00:55:20,588 --> 00:55:27,920
+faithful G alpha
+
+1300
+00:55:24,440 --> 00:55:29,630
+they three then when we've gone back and
+
+1301
+00:55:27,920 --> 00:55:31,579
+looked more carefully in Arabidopsis we
+
+1302
+00:55:29,630 --> 00:55:34,550
+found the phenotypes either by making
+
+1303
+00:55:31,579 --> 00:55:36,679
+double mutant or yes I we haven't seen
+
+1304
+00:55:34,550 --> 00:55:38,090
+anything that's really obvious and I'm
+
+1305
+00:55:36,679 --> 00:55:40,549
+kind of happy about this you know I I
+
+1306
+00:55:38,090 --> 00:55:42,559
+have this sort of friendly back and
+
+1307
+00:55:40,550 --> 00:55:47,930
+forth with Elliot Meyerowitz that cos
+
+1308
+00:55:42,559 --> 00:55:50,809
+you know he he's a bit he's not he has a
+
+1309
+00:55:47,929 --> 00:55:53,059
+bit of an ego I'd say so so I he'll just
+
+1310
+00:55:50,809 --> 00:55:55,579
+if we find something in maze that hasn't
+
+1311
+00:55:53,059 --> 00:55:57,199
+been found in Arabidopsis he'll just say
+
+1312
+00:55:55,579 --> 00:55:59,539
+oh well you just show that things are
+
+1313
+00:55:57,199 --> 00:56:09,349
+weird inmates but but I don't think it
+
+1314
+00:55:59,539 --> 00:56:11,119
+is I think they're the same this has
+
+1315
+00:56:09,349 --> 00:56:16,869
+been a production of Cornell University
+
+1316
+00:56:11,119 --> 00:56:16,869
+on the web at Cornell edu
+

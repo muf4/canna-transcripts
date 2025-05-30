@@ -1,0 +1,3316 @@
+1
+00:00:00,610 --> 00:00:04,620
+this is a production of Cornell
+
+2
+00:00:02,589 --> 00:00:04,619
+University
+
+3
+00:00:07,290 --> 00:00:15,179
+and thank you again for coming so today
+
+4
+00:00:12,240 --> 00:00:19,199
+I'll be presenting about applications of
+
+5
+00:00:15,179 --> 00:00:23,820
+multi freight and multi canal models for
+
+6
+00:00:19,199 --> 00:00:25,528
+genomic selection in cassava and I'm
+
+7
+00:00:23,820 --> 00:00:30,169
+really grateful to a lot of people who
+
+8
+00:00:25,528 --> 00:00:30,169
+have like helped me to reach this stage
+
+9
+00:00:35,659 --> 00:00:42,539
+okay well I'll skip the outline and tell
+
+10
+00:00:40,350 --> 00:00:46,289
+you a little bit about cassava which is
+
+11
+00:00:42,539 --> 00:00:51,149
+kind of very exciting to me cassava is
+
+12
+00:00:46,289 --> 00:00:53,539
+no longer an orphan crop about 263
+
+13
+00:00:51,149 --> 00:00:58,350
+million metric tons we are produced in
+
+14
+00:00:53,539 --> 00:01:01,890
+2012 cassava is a starch mission
+
+15
+00:00:58,350 --> 00:01:05,820
+so we have about 90 percent of drivers
+
+16
+00:01:01,890 --> 00:01:09,329
+Kappa hydrates and then some tracy's all
+
+17
+00:01:05,819 --> 00:01:14,639
+that stuff cassava is an out crosser
+
+18
+00:01:09,328 --> 00:01:16,679
+producing male and female flower and the
+
+19
+00:01:14,640 --> 00:01:20,129
+interesting thing is even with low
+
+20
+00:01:16,680 --> 00:01:23,190
+imputes and marginal and still giving
+
+21
+00:01:20,129 --> 00:01:25,978
+some tangible productivity so it's very
+
+22
+00:01:23,189 --> 00:01:30,989
+interesting this is the most interesting
+
+23
+00:01:25,978 --> 00:01:34,349
+to me it's 2016
+
+24
+00:01:30,989 --> 00:01:36,509
+I guess who were in China and we
+
+25
+00:01:34,349 --> 00:01:38,819
+collected this information that China
+
+26
+00:01:36,510 --> 00:01:41,400
+has bought about a billion US dollars
+
+27
+00:01:38,819 --> 00:01:44,849
+worth of cassava chips and that's very
+
+28
+00:01:41,400 --> 00:01:48,000
+interesting it's gonna drive market and
+
+29
+00:01:44,849 --> 00:01:51,359
+I think again the reason is that cassava
+
+30
+00:01:48,000 --> 00:01:56,010
+starch is very very very appealing to
+
+31
+00:01:51,359 --> 00:02:01,789
+the food industry so with that I make a
+
+32
+00:01:56,010 --> 00:02:06,359
+jump now to my introduction mixed models
+
+33
+00:02:01,790 --> 00:02:08,429
+so I was introduced to nice models by
+
+34
+00:02:06,359 --> 00:02:13,110
+working with Danny said at dinner he
+
+35
+00:02:08,429 --> 00:02:16,229
+just walked in and I lent la jolla from
+
+36
+00:02:13,110 --> 00:02:21,760
+beneath to index so II remember ml has
+
+37
+00:02:16,229 --> 00:02:25,009
+three servers if s so Verizon very
+
+38
+00:02:21,759 --> 00:02:28,429
+single candles over by canal we need one
+
+39
+00:02:25,009 --> 00:02:33,049
+random effect and and it's based on the
+
+40
+00:02:28,430 --> 00:02:37,219
+EMA gordium the the the second service
+
+41
+00:02:33,050 --> 00:02:40,459
+is the motor canals over which is in
+
+42
+00:02:37,219 --> 00:02:43,219
+fact heir apparent DS is based on canal
+
+43
+00:02:40,459 --> 00:02:47,360
+averaging and then another interesting
+
+44
+00:02:43,219 --> 00:02:50,180
+solver we have is this mod Street solver
+
+45
+00:02:47,360 --> 00:02:52,480
+which is based on Lee Seon agar idiom
+
+46
+00:02:50,180 --> 00:02:56,540
+there was developed by Zhu and Matthews
+
+47
+00:02:52,479 --> 00:02:59,780
+think 2014 so the interesting thing
+
+48
+00:02:56,539 --> 00:03:03,099
+about Elam Rama is that it is very
+
+49
+00:02:59,780 --> 00:03:07,699
+flexible and you can adapt it to various
+
+50
+00:03:03,099 --> 00:03:11,419
+things and we have actually adapted this
+
+51
+00:03:07,699 --> 00:03:15,829
+multi traits over to different kind of
+
+52
+00:03:11,419 --> 00:03:17,809
+models which I will show today and EMM
+
+53
+00:03:15,830 --> 00:03:23,510
+Renault has in fact been successful in
+
+54
+00:03:17,810 --> 00:03:26,989
+converting literature so the talk is
+
+55
+00:03:23,509 --> 00:03:30,879
+structured as chapters in my thesis and
+
+56
+00:03:26,989 --> 00:03:33,799
+the first chapter we looked at
+
+57
+00:03:30,879 --> 00:03:36,229
+accuracies of very little motivated
+
+58
+00:03:33,799 --> 00:03:39,439
+anomic prediction models in african
+
+59
+00:03:36,229 --> 00:03:43,219
+cassava so our motivation for these was
+
+60
+00:03:39,439 --> 00:03:46,189
+to understand which models are we to use
+
+61
+00:03:43,219 --> 00:03:48,469
+for gsm cassava and then the next thing
+
+62
+00:03:46,189 --> 00:03:52,699
+is to evaluate the breeding values from
+
+63
+00:03:48,469 --> 00:03:55,159
+these models and see what's going on and
+
+64
+00:03:52,699 --> 00:03:59,179
+so for these we had data set an
+
+65
+00:03:55,159 --> 00:04:03,039
+interesting historic data set it was a
+
+66
+00:03:59,180 --> 00:04:05,239
+multi a multi environment trial data
+
+67
+00:04:03,039 --> 00:04:11,019
+he was collected from the so-called
+
+68
+00:04:05,239 --> 00:04:15,019
+genetic game at IIT a button Nigeria and
+
+69
+00:04:11,019 --> 00:04:18,139
+over a span of about 16 years from 2000
+
+70
+00:04:15,019 --> 00:04:21,829
+to 2015 we chose these three locations
+
+71
+00:04:18,139 --> 00:04:24,139
+would be a Johnny button and in fact
+
+72
+00:04:21,829 --> 00:04:27,740
+these locations are very divergent these
+
+73
+00:04:24,139 --> 00:04:31,069
+these this is in the rain forest region
+
+74
+00:04:27,740 --> 00:04:33,889
+this is closer to these and this is like
+
+75
+00:04:31,069 --> 00:04:34,819
+a semi-arid location so they are very
+
+76
+00:04:33,889 --> 00:04:37,069
+divergent and
+
+77
+00:04:34,819 --> 00:04:41,779
+represents areas of cassava production
+
+78
+00:04:37,069 --> 00:04:45,490
+in the area so we used what we call
+
+79
+00:04:41,779 --> 00:04:48,619
+clonal evolution trials data only and
+
+80
+00:04:45,490 --> 00:04:56,300
+cassava breeding clonal evolution trials
+
+81
+00:04:48,620 --> 00:05:00,800
+where we impose heavy selection on plasm
+
+82
+00:04:56,300 --> 00:05:03,259
+so cities mostly augmented design with
+
+83
+00:05:00,800 --> 00:05:07,400
+checks and there are no replications and
+
+84
+00:05:03,259 --> 00:05:09,680
+this is because of cassava biology we
+
+85
+00:05:07,399 --> 00:05:15,639
+plant in stakes so you can't get enough
+
+86
+00:05:09,680 --> 00:05:18,800
+text application so we fit we fit
+
+87
+00:05:15,639 --> 00:05:21,709
+different sets of models in the first
+
+88
+00:05:18,800 --> 00:05:24,139
+scenario we fit models using data from a
+
+89
+00:05:21,709 --> 00:05:27,379
+single environment but multiple year
+
+90
+00:05:24,139 --> 00:05:30,319
+data and the second we fit multi
+
+91
+00:05:27,379 --> 00:05:38,089
+environment trials to capture G by E and
+
+92
+00:05:30,319 --> 00:05:41,120
+we use GBS matrix data to be totally the
+
+93
+00:05:38,089 --> 00:05:42,649
+genomic relationship matrix from about
+
+94
+00:05:41,120 --> 00:05:49,939
+one hundred and seventy three thousand
+
+95
+00:05:42,649 --> 00:05:53,689
+markers so this is a little data on the
+
+96
+00:05:49,939 --> 00:05:57,500
+trades we're dealing with and some
+
+97
+00:05:53,689 --> 00:06:00,350
+matrix so this is number of records of
+
+98
+00:05:57,500 --> 00:06:02,569
+the data we have at different locations
+
+99
+00:06:00,350 --> 00:06:05,060
+and these are the number of individuals
+
+100
+00:06:02,569 --> 00:06:07,430
+and we had about three hundred and
+
+101
+00:06:05,060 --> 00:06:11,149
+twenty four individuals across across
+
+102
+00:06:07,430 --> 00:06:14,840
+this location so we our target these
+
+103
+00:06:11,149 --> 00:06:17,089
+trade six trades Sydney we go number of
+
+104
+00:06:14,839 --> 00:06:20,179
+routes Hector
+
+105
+00:06:17,089 --> 00:06:24,319
+fresh yield per hectare drama of course
+
+106
+00:06:20,180 --> 00:06:27,470
+and then lean CNB this is a very
+
+107
+00:06:24,319 --> 00:06:34,839
+critical trade for cassava and then main
+
+108
+00:06:27,470 --> 00:06:39,370
+CGM which is a best best CJ pasture that
+
+109
+00:06:34,839 --> 00:06:39,369
+it's of this take cassava
+
+110
+00:06:42,430 --> 00:06:51,910
+so in Scenario 1 we fix two interesting
+
+111
+00:06:49,180 --> 00:06:56,650
+models the first model is the basic G
+
+112
+00:06:51,910 --> 00:07:00,340
+block model we call UT and this is a
+
+113
+00:06:56,649 --> 00:07:03,939
+single trade model and then the the the
+
+114
+00:07:00,339 --> 00:07:06,909
+genomica fed are coming from this
+
+115
+00:07:03,939 --> 00:07:10,269
+distribution given the genomic
+
+116
+00:07:06,910 --> 00:07:13,030
+relationship matrix in the same vein we
+
+117
+00:07:10,269 --> 00:07:17,139
+fit the multi-thread model which is like
+
+118
+00:07:13,029 --> 00:07:21,099
+this and in this case we have a matrix
+
+119
+00:07:17,139 --> 00:07:23,800
+of tricks but then the distribution is
+
+120
+00:07:21,100 --> 00:07:28,060
+different and this is a matrix normal
+
+121
+00:07:23,800 --> 00:07:30,340
+distribution the matrix normal has a row
+
+122
+00:07:28,060 --> 00:07:32,769
+covariance and a column covariance and
+
+123
+00:07:30,339 --> 00:07:36,638
+this is the covariance the capture of
+
+124
+00:07:32,769 --> 00:07:40,089
+streets by trade genetic variances and
+
+125
+00:07:36,639 --> 00:07:42,069
+correlations and this this is in fact
+
+126
+00:07:40,089 --> 00:07:45,909
+the eigen decomposition of this matrix
+
+127
+00:07:42,069 --> 00:07:48,430
+the genomic referential matrix and it's
+
+128
+00:07:45,910 --> 00:07:50,500
+a simplification of the algorithm so to
+
+129
+00:07:48,430 --> 00:07:52,990
+simplify the garden sir
+
+130
+00:07:50,500 --> 00:07:55,629
+further we use the chronica product and
+
+131
+00:07:52,990 --> 00:07:58,900
+then transform these to the multivariate
+
+132
+00:07:55,629 --> 00:08:02,079
+normal distribution and the chronica
+
+133
+00:07:58,899 --> 00:08:04,870
+helps to get this working but in this
+
+134
+00:08:02,079 --> 00:08:09,159
+case the Y becomes a long vector of
+
+135
+00:08:04,870 --> 00:08:12,009
+stock and effects together okay so a
+
+136
+00:08:09,160 --> 00:08:15,370
+couple of things here is that Y is a
+
+137
+00:08:12,009 --> 00:08:19,050
+stack of many traits and the X which is
+
+138
+00:08:15,370 --> 00:08:23,470
+fixed effects comment we use location
+
+139
+00:08:19,050 --> 00:08:26,348
+trials trials nested within a nested
+
+140
+00:08:23,470 --> 00:08:29,080
+within locations as fixed and in fact
+
+141
+00:08:26,348 --> 00:08:33,759
+this the algorithm we use can allow you
+
+142
+00:08:29,079 --> 00:08:37,120
+to fix different trade different effects
+
+143
+00:08:33,759 --> 00:08:37,918
+sorry in this experience and this is how
+
+144
+00:08:37,120 --> 00:08:41,979
+it works
+
+145
+00:08:37,918 --> 00:08:45,399
+so we fit this model with the air and
+
+146
+00:08:41,979 --> 00:08:47,980
+f90 package which is the member of the
+
+147
+00:08:45,399 --> 00:08:53,769
+family of the Lopez 90 program developed
+
+148
+00:08:47,980 --> 00:08:56,930
+by let's meet mr. Alan Koh and we go
+
+149
+00:08:53,769 --> 00:09:01,460
+forward again in the next scene
+
+150
+00:08:56,929 --> 00:09:04,159
+to capture G by E in this data and we we
+
+151
+00:09:01,460 --> 00:09:06,440
+fit again two models one is univariate
+
+152
+00:09:04,159 --> 00:09:09,019
+and another is a motivate in this
+
+153
+00:09:06,440 --> 00:09:11,930
+universe is an interesting model which
+
+154
+00:09:09,019 --> 00:09:15,139
+is a multicolor model the first color
+
+155
+00:09:11,929 --> 00:09:17,689
+captures the genomic effect and the
+
+156
+00:09:15,139 --> 00:09:20,629
+second color captures the clone
+
+157
+00:09:17,690 --> 00:09:22,580
+bilocation effect and in fact what we do
+
+158
+00:09:20,629 --> 00:09:25,309
+here is that we use the genomic
+
+159
+00:09:22,580 --> 00:09:28,278
+relationship matrix for each location
+
+160
+00:09:25,309 --> 00:09:31,419
+each individual in each location to
+
+161
+00:09:28,278 --> 00:09:33,588
+capture the genomic part of the
+
+162
+00:09:31,419 --> 00:09:37,399
+interaction the clone by location
+
+163
+00:09:33,589 --> 00:09:41,660
+interaction in the multi environment
+
+164
+00:09:37,399 --> 00:09:43,700
+model we use the same traits in
+
+165
+00:09:41,659 --> 00:09:47,000
+different locations it's just like the
+
+166
+00:09:43,700 --> 00:09:49,640
+multi trade model but there are some
+
+167
+00:09:47,000 --> 00:09:52,129
+subtle differences that one of the
+
+168
+00:09:49,639 --> 00:09:56,149
+differences is coming from this PG
+
+169
+00:09:52,129 --> 00:09:58,789
+matrix in this matrix now we capture the
+
+170
+00:09:56,149 --> 00:10:01,070
+genetic variance of same trait at
+
+171
+00:09:58,789 --> 00:10:03,319
+different locations in the diagonals and
+
+172
+00:10:01,070 --> 00:10:07,660
+in the off diagonals we capture
+
+173
+00:10:03,320 --> 00:10:10,790
+estimates of G by a as the covariances
+
+174
+00:10:07,659 --> 00:10:14,990
+so the G Vivi's from this ami model
+
+175
+00:10:10,789 --> 00:10:20,449
+contains both genomic and G by E parts
+
+176
+00:10:14,990 --> 00:10:24,409
+and ve ve is diagonal by diagonal means
+
+177
+00:10:20,450 --> 00:10:26,240
+we just allow for variances variants of
+
+178
+00:10:24,409 --> 00:10:28,819
+the traits error variance of the trade
+
+179
+00:10:26,240 --> 00:10:31,009
+at different locations and we don't want
+
+180
+00:10:28,820 --> 00:10:33,770
+correlation between these because there
+
+181
+00:10:31,009 --> 00:10:36,759
+is no no mechanism degeneres correlation
+
+182
+00:10:33,769 --> 00:10:40,578
+between a trait at different locations
+
+183
+00:10:36,759 --> 00:10:44,600
+so to match this to compare this um
+
+184
+00:10:40,578 --> 00:10:47,120
+model with a me we we join these two
+
+185
+00:10:44,600 --> 00:10:53,200
+together the genomic part and the and
+
+186
+00:10:47,120 --> 00:10:53,200
+the interaction part as as DVDs
+
+187
+00:10:54,870 --> 00:11:03,570
+so to compute the accuracy we fit a
+
+188
+00:10:58,019 --> 00:11:05,730
+simple model that we call that we call
+
+189
+00:11:03,570 --> 00:11:09,390
+performance genetic performance model
+
+190
+00:11:05,730 --> 00:11:12,240
+and this model just is like the the
+
+191
+00:11:09,389 --> 00:11:15,000
+first beauty model but in in this case
+
+192
+00:11:12,240 --> 00:11:17,820
+the difference is that it assumes an
+
+193
+00:11:15,000 --> 00:11:19,529
+identity which means that there is no
+
+194
+00:11:17,820 --> 00:11:21,780
+relationship between the individuals
+
+195
+00:11:19,529 --> 00:11:25,199
+concerned and we fit this in different
+
+196
+00:11:21,779 --> 00:11:28,470
+locations and we think that this
+
+197
+00:11:25,200 --> 00:11:35,009
+captures T the estimated total genetic
+
+198
+00:11:28,470 --> 00:11:39,540
+value of the individual so here I show
+
+199
+00:11:35,009 --> 00:11:43,769
+results and in each block is a different
+
+200
+00:11:39,539 --> 00:11:47,009
+trait so here is we go AMD is route
+
+201
+00:11:43,769 --> 00:11:50,639
+number fresh food in each column is a
+
+202
+00:11:47,009 --> 00:11:53,220
+different location and the first
+
+203
+00:11:50,639 --> 00:11:56,610
+location is a bad on the next is mocha
+
+204
+00:11:53,220 --> 00:12:00,090
+and the other one is papaya excuse me
+
+205
+00:11:56,610 --> 00:12:03,930
+so in red is the prediction accuracy for
+
+206
+00:12:00,090 --> 00:12:07,620
+the UT model and in green is the
+
+207
+00:12:03,929 --> 00:12:12,109
+prediction accuracy for the MT model so
+
+208
+00:12:07,620 --> 00:12:14,940
+we see that in most trails actually that
+
+209
+00:12:12,110 --> 00:12:20,159
+the accuracies of the empty model at
+
+210
+00:12:14,940 --> 00:12:24,540
+higher and and in fact we see this in
+
+211
+00:12:20,159 --> 00:12:29,189
+almost all the traits and what we make
+
+212
+00:12:24,539 --> 00:12:32,939
+up these I show you a table of one
+
+213
+00:12:29,190 --> 00:12:38,130
+location and this location is a button
+
+214
+00:12:32,940 --> 00:12:41,160
+showing the heritability Xin diagonal of
+
+215
+00:12:38,129 --> 00:12:43,460
+these traits and in the off-diagonal are
+
+216
+00:12:41,159 --> 00:12:46,949
+the genetic correlations for this trait
+
+217
+00:12:43,460 --> 00:12:50,190
+so why do we see these accuracies there
+
+218
+00:12:46,950 --> 00:12:53,340
+we see here that these traits low
+
+219
+00:12:50,190 --> 00:12:55,770
+heritability traits we have a bunch of
+
+220
+00:12:53,340 --> 00:12:57,600
+slow heritability traits and then we
+
+221
+00:12:55,769 --> 00:13:00,569
+have this high heritability and maybe
+
+222
+00:12:57,600 --> 00:13:03,810
+this medium ones and in fact when you
+
+223
+00:13:00,570 --> 00:13:06,780
+gently analyze trace of low heritability
+
+224
+00:13:03,809 --> 00:13:08,599
+with high health abilities and you have
+
+225
+00:13:06,779 --> 00:13:11,240
+a substantial
+
+226
+00:13:08,600 --> 00:13:12,920
+correlation going on here we expect that
+
+227
+00:13:11,240 --> 00:13:21,169
+the multi-thread accuracies will be
+
+228
+00:13:12,919 --> 00:13:25,939
+better okay so we ship gets to the
+
+229
+00:13:21,169 --> 00:13:30,049
+second scenario which is the UD and AME
+
+230
+00:13:25,940 --> 00:13:32,899
+models and just like before we have we
+
+231
+00:13:30,049 --> 00:13:36,828
+have blocks straights and then columns
+
+232
+00:13:32,899 --> 00:13:40,730
+and in red is the UE and in green again
+
+233
+00:13:36,828 --> 00:13:44,179
+is the MA model but in this case we see
+
+234
+00:13:40,730 --> 00:13:47,360
+that most of them are neck to neck in
+
+235
+00:13:44,179 --> 00:13:54,939
+fact and just in slides places you have
+
+236
+00:13:47,360 --> 00:13:54,940
+the AME a little ahead of it higher so
+
+237
+00:13:56,289 --> 00:14:05,198
+we get some interesting thing in the
+
+238
+00:14:00,159 --> 00:14:08,889
+genomic matrix of in the G matrix of the
+
+239
+00:14:05,198 --> 00:14:12,620
+accorded VD here of the ami model and
+
+240
+00:14:08,889 --> 00:14:15,528
+this is somewhat kind of a description
+
+241
+00:14:12,620 --> 00:14:20,240
+of what this is and if you think about
+
+242
+00:14:15,528 --> 00:14:23,149
+for example we go here here in via
+
+243
+00:14:20,240 --> 00:14:28,000
+jmopod this means that if we select some
+
+244
+00:14:23,149 --> 00:14:32,419
+lines here in Gubicza we expect about
+
+245
+00:14:28,000 --> 00:14:35,929
+39% correlated response to selection in
+
+246
+00:14:32,419 --> 00:14:39,349
+the next environment and and we see this
+
+247
+00:14:35,929 --> 00:14:42,919
+in all the all the trades and in fact
+
+248
+00:14:39,350 --> 00:14:46,159
+this gives information on a few of how
+
+249
+00:14:42,919 --> 00:14:48,318
+to see G by E and then something
+
+250
+00:14:46,159 --> 00:14:50,360
+interesting again is that you can if you
+
+251
+00:14:48,318 --> 00:14:57,799
+have several environments you can begin
+
+252
+00:14:50,360 --> 00:15:01,579
+to cross studies into TPS okay and this
+
+253
+00:14:57,799 --> 00:15:05,838
+is a table that shows various trends
+
+254
+00:15:01,578 --> 00:15:09,859
+explained by by by the UE model this is
+
+255
+00:15:05,839 --> 00:15:12,920
+the clone by location variance is
+
+256
+00:15:09,860 --> 00:15:15,438
+explained and this is for clone and I
+
+257
+00:15:12,919 --> 00:15:20,629
+just wanted to point out here that these
+
+258
+00:15:15,438 --> 00:15:22,159
+new traits have so much G by E variance
+
+259
+00:15:20,629 --> 00:15:25,278
+is here compared to order
+
+260
+00:15:22,159 --> 00:15:28,189
+and we know that these traits are so
+
+261
+00:15:25,278 --> 00:15:32,778
+much affected by the environment and the
+
+262
+00:15:28,190 --> 00:15:35,779
+same thing goes for these we see here we
+
+263
+00:15:32,778 --> 00:15:43,429
+have lower correlated response to
+
+264
+00:15:35,778 --> 00:15:45,889
+selections so in summary what did we get
+
+265
+00:15:43,429 --> 00:15:48,528
+from these we get that the empty model
+
+266
+00:15:45,889 --> 00:15:52,940
+of us more accurate reading values for a
+
+267
+00:15:48,528 --> 00:15:55,759
+single location data and we we see that
+
+268
+00:15:52,940 --> 00:15:58,069
+this comes from significant significant
+
+269
+00:15:55,759 --> 00:16:01,459
+correlations and joint analysis with
+
+270
+00:15:58,068 --> 00:16:03,229
+flow and high heritability traits and we
+
+271
+00:16:01,458 --> 00:16:07,489
+know that this low rate ability traits
+
+272
+00:16:03,230 --> 00:16:10,339
+benefit more from this analysis and then
+
+273
+00:16:07,490 --> 00:16:13,509
+we also see that the MD model and the ue
+
+274
+00:16:10,339 --> 00:16:16,519
+are not significantly different actually
+
+275
+00:16:13,509 --> 00:16:20,180
+but we recommend the multivariate
+
+276
+00:16:16,519 --> 00:16:22,310
+environment for this because we see we
+
+277
+00:16:20,179 --> 00:16:25,388
+get a lot of information from from
+
+278
+00:16:22,309 --> 00:16:28,000
+betrayal of both models sorry so
+
+279
+00:16:25,389 --> 00:16:31,818
+something interesting again coming from
+
+280
+00:16:28,000 --> 00:16:34,429
+the genetic correlations that I showed
+
+281
+00:16:31,818 --> 00:16:37,039
+you is that there is good prospect for
+
+282
+00:16:34,429 --> 00:16:39,409
+concurrent improvement of these traits
+
+283
+00:16:37,039 --> 00:16:42,860
+in cassava and in fact these are the
+
+284
+00:16:39,409 --> 00:16:45,139
+most well I would say these are
+
+285
+00:16:42,860 --> 00:16:48,438
+production traits and kisara religion
+
+286
+00:16:45,139 --> 00:16:51,438
+important traits we also see something
+
+287
+00:16:48,438 --> 00:16:53,629
+interesting is that CMD is negatively
+
+288
+00:16:51,438 --> 00:16:59,870
+correlated with other traits which is
+
+289
+00:16:53,629 --> 00:17:01,250
+the direction we want them to to be so
+
+290
+00:16:59,870 --> 00:17:05,808
+in the next chapter I'll move to
+
+291
+00:17:01,250 --> 00:17:08,179
+comparing selection gains from from
+
+292
+00:17:05,808 --> 00:17:11,869
+multi trait indices from these models
+
+293
+00:17:08,179 --> 00:17:14,390
+and it's an it's kind of an effort to
+
+294
+00:17:11,869 --> 00:17:18,349
+evaluate more the breeding values that
+
+295
+00:17:14,390 --> 00:17:20,270
+we got from these models so in
+
+296
+00:17:18,349 --> 00:17:23,538
+literature we see that a lot of models
+
+297
+00:17:20,269 --> 00:17:27,038
+are usually evaluated by prediction
+
+298
+00:17:23,538 --> 00:17:31,190
+accuracies there's a few places where
+
+299
+00:17:27,038 --> 00:17:32,960
+the evaluation is selection gains but in
+
+300
+00:17:31,190 --> 00:17:34,820
+fact this is because it's not an easy
+
+301
+00:17:32,960 --> 00:17:36,049
+thing to actually do that they are
+
+302
+00:17:34,819 --> 00:17:39,019
+predicted
+
+303
+00:17:36,049 --> 00:17:41,539
+so we actually want to know how these
+
+304
+00:17:39,019 --> 00:17:46,099
+models perform based on predicted games
+
+305
+00:17:41,539 --> 00:17:49,309
+and one of the problems is having to
+
+306
+00:17:46,099 --> 00:17:52,069
+make these models comparable it's not an
+
+307
+00:17:49,309 --> 00:17:54,409
+easy thing to make even if you have
+
+308
+00:17:52,069 --> 00:17:56,899
+independent data you should have a
+
+309
+00:17:54,410 --> 00:17:59,900
+comparable reference framework and you
+
+310
+00:17:56,900 --> 00:18:01,730
+think about which model do I use to make
+
+311
+00:17:59,900 --> 00:18:06,140
+the framework is it a multi trato a
+
+312
+00:18:01,730 --> 00:18:08,569
+single trait anyway we use multi trade
+
+313
+00:18:06,140 --> 00:18:11,210
+selection indices in this case to
+
+314
+00:18:08,569 --> 00:18:16,369
+achieve this goal and we compared also
+
+315
+00:18:11,210 --> 00:18:19,340
+like before the UTM 3ue and emmy models
+
+316
+00:18:16,369 --> 00:18:22,219
+but we added two other models to these
+
+317
+00:18:19,339 --> 00:18:27,139
+which explained in the next slide and
+
+318
+00:18:22,220 --> 00:18:32,089
+these models if you recall the the Yui
+
+319
+00:18:27,140 --> 00:18:35,570
+model with two canals we we have the
+
+320
+00:18:32,089 --> 00:18:37,970
+genomic part and the GT part so the UTA
+
+321
+00:18:35,569 --> 00:18:41,480
+is just capturing the genomic parts and
+
+322
+00:18:37,970 --> 00:18:46,100
+living out to you if the G pad and this
+
+323
+00:18:41,480 --> 00:18:49,160
+is just an average of the entire bar and
+
+324
+00:18:46,099 --> 00:18:53,449
+then we fit another model which is m TM
+
+325
+00:18:49,160 --> 00:18:57,680
+he which is like a mansion but m e and
+
+326
+00:18:53,450 --> 00:19:00,110
+entity models this this we think is an
+
+327
+00:18:57,680 --> 00:19:02,529
+interesting model the two reviewers
+
+328
+00:19:00,109 --> 00:19:06,049
+pointed out there why don't you do this
+
+329
+00:19:02,529 --> 00:19:08,420
+it wasn't an easy things to do it wasn't
+
+330
+00:19:06,049 --> 00:19:10,759
+an easy thing to do though but but but
+
+331
+00:19:08,420 --> 00:19:13,580
+we fit it's just like the multi-thread
+
+332
+00:19:10,759 --> 00:19:16,039
+model but in this case we have 18 traits
+
+333
+00:19:13,579 --> 00:19:18,409
+we organized this trait as straight one
+
+334
+00:19:16,039 --> 00:19:21,700
+in environment one trait to in
+
+335
+00:19:18,410 --> 00:19:26,360
+environment one and in that direction so
+
+336
+00:19:21,700 --> 00:19:31,130
+we had altogether 6 by 3 which is 18 but
+
+337
+00:19:26,359 --> 00:19:35,419
+then in the arrow arrow part we just use
+
+338
+00:19:31,130 --> 00:19:38,060
+kind of the the ve de from from the ami
+
+339
+00:19:35,420 --> 00:19:40,789
+model which is from the sorry from the
+
+340
+00:19:38,059 --> 00:19:43,250
+empty model which allows traits to be
+
+341
+00:19:40,789 --> 00:19:46,269
+only correlated in the specific
+
+342
+00:19:43,250 --> 00:19:46,269
+environment where there
+
+343
+00:19:47,200 --> 00:19:51,880
+and this model is complex to feed it was
+
+344
+00:19:49,778 --> 00:19:55,079
+fitting in the Gibbs sampling algorithm
+
+345
+00:19:51,880 --> 00:19:55,080
+oh definitely
+
+346
+00:19:55,169 --> 00:20:01,389
+so how did we estimate gains so first of
+
+347
+00:19:59,380 --> 00:20:04,929
+all we standardized or the trade so that
+
+348
+00:20:01,388 --> 00:20:07,119
+everybody has the same stat and we used
+
+349
+00:20:04,929 --> 00:20:09,460
+the same economic weights
+
+350
+00:20:07,119 --> 00:20:13,298
+these are the weights and these weights
+
+351
+00:20:09,460 --> 00:20:16,450
+represent 20% increase in vigo that 5%
+
+352
+00:20:13,298 --> 00:20:19,148
+increase in good number for 5% in Brian
+
+353
+00:20:16,450 --> 00:20:22,419
+mother that five percent decrease in CMD
+
+354
+00:20:19,148 --> 00:20:25,629
+min CMD what five percent increase in
+
+355
+00:20:22,419 --> 00:20:30,100
+yield fresh food and 10 percent decrease
+
+356
+00:20:25,630 --> 00:20:33,309
+in MC Jia so the index was calculated as
+
+357
+00:20:30,099 --> 00:20:35,829
+as these so mattress multiplication of
+
+358
+00:20:33,308 --> 00:20:38,619
+the of the economic weights with the GB
+
+359
+00:20:35,829 --> 00:20:43,720
+with from each model we selected the top
+
+360
+00:20:38,619 --> 00:20:47,018
+65 clones from each Motty trait index we
+
+361
+00:20:43,720 --> 00:20:50,200
+estimated gang as the mean of the index
+
+362
+00:20:47,019 --> 00:20:53,019
+values of this selected and the trait
+
+363
+00:20:50,200 --> 00:21:00,278
+games we estimated as the mean of the
+
+364
+00:20:53,019 --> 00:21:06,370
+Gee Bee Gees of selected individuals so
+
+365
+00:21:00,278 --> 00:21:11,919
+here we have a plot this is Ruby Agha
+
+366
+00:21:06,369 --> 00:21:14,798
+this is Mohan this is a button and we
+
+367
+00:21:11,919 --> 00:21:18,250
+have this box plot I want you to notice
+
+368
+00:21:14,798 --> 00:21:20,859
+something that in in and all the
+
+369
+00:21:18,250 --> 00:21:23,798
+locations even here we will have
+
+370
+00:21:20,859 --> 00:21:28,119
+something like a tie the empty model is
+
+371
+00:21:23,798 --> 00:21:31,179
+to in better than the UT model but we
+
+372
+00:21:28,119 --> 00:21:35,699
+see here that the UE model is is doing
+
+373
+00:21:31,179 --> 00:21:39,700
+much better in in OB aaja and then also
+
+374
+00:21:35,700 --> 00:21:44,259
+slightly better here on average in in
+
+375
+00:21:39,700 --> 00:21:47,100
+mocha and slightly better again on
+
+376
+00:21:44,259 --> 00:21:52,720
+average in at Abaddonn
+
+377
+00:21:47,099 --> 00:21:57,459
+well let's jump into the trades and see
+
+378
+00:21:52,720 --> 00:22:01,240
+what was going on so here is Ruby Agha
+
+379
+00:21:57,460 --> 00:22:04,210
+and each block is a trade
+
+380
+00:22:01,240 --> 00:22:04,620
+this is Vigo this is route number is dry
+
+381
+00:22:04,210 --> 00:22:09,819
+matter
+
+382
+00:22:04,619 --> 00:22:13,689
+this is CND this is fresh yield and this
+
+383
+00:22:09,819 --> 00:22:18,819
+is a CGM and again they are colored as
+
+384
+00:22:13,690 --> 00:22:21,700
+the same this is you TM t ue a ue m e
+
+385
+00:22:18,819 --> 00:22:26,470
+and emptier me I would want to point out
+
+386
+00:22:21,700 --> 00:22:29,259
+that this U is no is more like what we
+
+387
+00:22:26,470 --> 00:22:32,319
+do in the next gen is the selection in
+
+388
+00:22:29,259 --> 00:22:37,569
+this we use in the next-gen program so
+
+389
+00:22:32,319 --> 00:22:41,950
+we see here in abuja that the UE model
+
+390
+00:22:37,569 --> 00:22:45,369
+was doing well here and you come to
+
+391
+00:22:41,950 --> 00:22:46,720
+route number which is a trade today that
+
+392
+00:22:45,369 --> 00:22:47,529
+has so much influenced by the
+
+393
+00:22:46,720 --> 00:22:52,089
+environment
+
+394
+00:22:47,529 --> 00:22:56,529
+eme was from him better and in diameter
+
+395
+00:22:52,089 --> 00:23:03,099
+DME was on average slightly adamian UE
+
+396
+00:22:56,529 --> 00:23:06,910
+word UE a word in well so we point out
+
+397
+00:23:03,099 --> 00:23:09,909
+here in CMD whether you eat UE model was
+
+398
+00:23:06,910 --> 00:23:12,460
+really dominating others we want this to
+
+399
+00:23:09,910 --> 00:23:15,640
+go down so this going down is a good
+
+400
+00:23:12,460 --> 00:23:19,720
+thing for us so this this is the place
+
+401
+00:23:15,640 --> 00:23:23,440
+that the this model is dominating all
+
+402
+00:23:19,720 --> 00:23:28,360
+these indices and then for fresh here
+
+403
+00:23:23,440 --> 00:23:33,850
+it's doing pretty well and and I think
+
+404
+00:23:28,359 --> 00:23:39,250
+this models rank almost same so we move
+
+405
+00:23:33,849 --> 00:23:43,379
+to Magua semi-arid region and we see the
+
+406
+00:23:39,250 --> 00:23:46,779
+mt emei is to a much better here in in
+
+407
+00:23:43,380 --> 00:23:49,450
+which with we go route number DNT a
+
+408
+00:23:46,779 --> 00:23:54,009
+misty doing better it does very bad job
+
+409
+00:23:49,450 --> 00:23:57,100
+here for dry mara again the you the UE
+
+410
+00:23:54,009 --> 00:24:01,680
+and the UE a dominating for CMD here and
+
+411
+00:23:57,099 --> 00:24:08,789
+in yield again this empty ami model is
+
+412
+00:24:01,680 --> 00:24:12,970
+dominating so we move again - ibadan and
+
+413
+00:24:08,789 --> 00:24:14,299
+again we see the nga me sorry the ami
+
+414
+00:24:12,970 --> 00:24:17,799
+model is
+
+415
+00:24:14,299 --> 00:24:23,839
+kind of dominating here on average and
+
+416
+00:24:17,799 --> 00:24:27,919
+the in roots number is the MTA me here I
+
+417
+00:24:23,839 --> 00:24:32,599
+can rank these models want to us almost
+
+418
+00:24:27,920 --> 00:24:36,140
+same and then in again in CMD the youíve
+
+419
+00:24:32,599 --> 00:24:40,819
+model is dominating in all occasions
+
+420
+00:24:36,140 --> 00:24:44,300
+so in year three MTA me again and LC GM
+
+421
+00:24:40,819 --> 00:24:50,509
+bu is doing very bad here actually this
+
+422
+00:24:44,299 --> 00:24:55,700
+should be going down okay so what do we
+
+423
+00:24:50,509 --> 00:25:00,740
+see from here we see that some models
+
+424
+00:24:55,700 --> 00:25:02,779
+have hired DVD stand orders and we kind
+
+425
+00:25:00,740 --> 00:25:05,870
+of ask a question since we are using
+
+426
+00:25:02,779 --> 00:25:08,509
+breeding values can we combine reading
+
+427
+00:25:05,869 --> 00:25:12,589
+values from different models together
+
+428
+00:25:08,509 --> 00:25:16,519
+well why not if we interested in making
+
+429
+00:25:12,589 --> 00:25:20,269
+games so we try these we replace the the
+
+430
+00:25:16,519 --> 00:25:24,019
+breeding value for C MD from MD with
+
+431
+00:25:20,269 --> 00:25:27,109
+that from Yui and for dry matter and CMD
+
+432
+00:25:24,019 --> 00:25:31,940
+at n TM e in mobile we replace with Yui
+
+433
+00:25:27,109 --> 00:25:35,750
+and ue8 and the same here for n TM e we
+
+434
+00:25:31,940 --> 00:25:38,630
+replace with this and this and then we
+
+435
+00:25:35,750 --> 00:25:42,349
+move on to see what happened in red is
+
+436
+00:25:38,630 --> 00:25:45,710
+this composite index I call it and you
+
+437
+00:25:42,349 --> 00:25:54,199
+see it becomes superior to order or the
+
+438
+00:25:45,710 --> 00:25:56,450
+ones so I know that there can be a lot
+
+439
+00:25:54,200 --> 00:25:58,640
+of arguments on why this is not a good
+
+440
+00:25:56,450 --> 00:26:00,610
+system to evaluate these models there
+
+441
+00:25:58,640 --> 00:26:05,350
+should be a separate independent
+
+442
+00:26:00,609 --> 00:26:08,299
+reference to do this but this is just
+
+443
+00:26:05,349 --> 00:26:10,939
+kind of showing a clue of what is going
+
+444
+00:26:08,299 --> 00:26:13,490
+on in in this and I think an ideal case
+
+445
+00:26:10,940 --> 00:26:16,610
+would be to have independent reference
+
+446
+00:26:13,490 --> 00:26:19,599
+data to to be able to evaluate these
+
+447
+00:26:16,609 --> 00:26:23,179
+models or jb's
+
+448
+00:26:19,599 --> 00:26:25,490
+so from what we learn we see that in
+
+449
+00:26:23,180 --> 00:26:28,460
+accounting for G by E is very important
+
+450
+00:26:25,490 --> 00:26:32,670
+for making games in
+
+451
+00:26:28,460 --> 00:26:35,340
+because of G by E we probably need to
+
+452
+00:26:32,670 --> 00:26:38,820
+use several models we we don't know
+
+453
+00:26:35,339 --> 00:26:40,949
+which can be good and we also in this
+
+454
+00:26:38,819 --> 00:26:42,569
+case recommend multi trait models
+
+455
+00:26:40,950 --> 00:26:45,330
+because they had a lot of information
+
+456
+00:26:42,569 --> 00:26:48,599
+month variate model sorry they have a
+
+457
+00:26:45,329 --> 00:26:50,549
+lot of information and this shows good
+
+458
+00:26:48,599 --> 00:26:53,759
+prospects actually for Kesava
+
+459
+00:26:50,549 --> 00:26:57,990
+improvement the composite index males
+
+460
+00:26:53,759 --> 00:27:03,750
+also be beneficial okay so now I make a
+
+461
+00:26:57,990 --> 00:27:07,109
+jump to something else us type like type
+
+462
+00:27:03,750 --> 00:27:11,519
+analysis which is mapping traits so we
+
+463
+00:27:07,109 --> 00:27:13,199
+have an issue in in cassava breeding we
+
+464
+00:27:11,519 --> 00:27:16,349
+are trying to move towards this
+
+465
+00:27:13,200 --> 00:27:19,529
+beta-carotene cassava which is sponsored
+
+466
+00:27:16,349 --> 00:27:23,189
+by harvest clause and so on and we saw
+
+467
+00:27:19,529 --> 00:27:24,899
+we call it so code yellow cassava but we
+
+468
+00:27:23,190 --> 00:27:27,509
+have a challenge in yellow cassava the
+
+469
+00:27:24,900 --> 00:27:30,150
+challenge is that most of most of the
+
+470
+00:27:27,509 --> 00:27:35,460
+yellow cassava have lower levels of
+
+471
+00:27:30,150 --> 00:27:38,340
+trimmer actually and and and we need to
+
+472
+00:27:35,460 --> 00:27:40,230
+understand what is going on in this but
+
+473
+00:27:38,339 --> 00:27:42,839
+we know already that there is a negative
+
+474
+00:27:40,230 --> 00:27:45,839
+correlation between ramada and two by
+
+475
+00:27:42,839 --> 00:27:48,740
+yellowness in cassava so we set out to
+
+476
+00:27:45,839 --> 00:27:54,019
+understand the genetic basis of these
+
+477
+00:27:48,740 --> 00:27:57,660
+and here I show a plot this is the white
+
+478
+00:27:54,019 --> 00:28:00,660
+white cassava path this is the yellow
+
+479
+00:27:57,660 --> 00:28:04,529
+path and this plot a bullet I brought
+
+480
+00:28:00,660 --> 00:28:09,450
+from is my Robi which was just plot in
+
+481
+00:28:04,529 --> 00:28:10,829
+dry matter against yellow coloration so
+
+482
+00:28:09,450 --> 00:28:19,500
+here you can see clearly that these
+
+483
+00:28:10,829 --> 00:28:21,960
+populations split so we developed the so
+
+484
+00:28:19,500 --> 00:28:26,009
+called regional heritability mapping
+
+485
+00:28:21,960 --> 00:28:27,900
+procedure for cassava and this procedure
+
+486
+00:28:26,009 --> 00:28:30,690
+is a very interesting application of
+
+487
+00:28:27,900 --> 00:28:34,880
+linear mixed models so what we do we
+
+488
+00:28:30,690 --> 00:28:39,390
+divide chromosomes in cassava 18 of them
+
+489
+00:28:34,880 --> 00:28:40,330
+into windows sliding windows and these
+
+490
+00:28:39,390 --> 00:28:42,940
+windows are
+
+491
+00:28:40,329 --> 00:28:46,538
+hundreds nip each week all these
+
+492
+00:28:42,940 --> 00:28:48,308
+segments so we have this window slide
+
+493
+00:28:46,538 --> 00:28:53,408
+and true and there is an overlap between
+
+494
+00:28:48,308 --> 00:28:56,470
+them this overlap is fifty snips I just
+
+495
+00:28:53,409 --> 00:28:59,440
+sent to 50 snip overlapping with others
+
+496
+00:28:56,470 --> 00:29:01,450
+and windows so we make a genomic
+
+497
+00:28:59,440 --> 00:29:03,940
+relationship matrix from these segments
+
+498
+00:29:01,450 --> 00:29:06,490
+we make another genomic relationship
+
+499
+00:29:03,940 --> 00:29:08,230
+matrix from the whole genome snips and
+
+500
+00:29:06,490 --> 00:29:11,288
+this is the correct for background
+
+501
+00:29:08,230 --> 00:29:13,839
+effect on population structure we fit
+
+502
+00:29:11,288 --> 00:29:17,919
+two models one no an alternative model
+
+503
+00:29:13,839 --> 00:29:23,648
+so here the normal model is just like
+
+504
+00:29:17,919 --> 00:29:27,519
+the G block model using one canal using
+
+505
+00:29:23,648 --> 00:29:30,219
+all the sleeves but we have but in the
+
+506
+00:29:27,519 --> 00:29:33,700
+alternative model we fit two canals one
+
+507
+00:29:30,220 --> 00:29:35,769
+canal for the genomic segment we want to
+
+508
+00:29:33,700 --> 00:29:38,830
+capture and the second kind of
+
+509
+00:29:35,769 --> 00:29:41,259
+correcting for background effect so we
+
+510
+00:29:38,829 --> 00:29:45,038
+use likelihood ratio test to test for
+
+511
+00:29:41,259 --> 00:29:52,658
+significance of this canal and we plot
+
+512
+00:29:45,038 --> 00:29:56,200
+these reproduce as Manhattan plots so
+
+513
+00:29:52,659 --> 00:29:58,240
+what data do we use we use the so-called
+
+514
+00:29:56,200 --> 00:30:02,250
+genetic data again genetic game data
+
+515
+00:29:58,240 --> 00:30:08,769
+again but this time only measured from
+
+516
+00:30:02,250 --> 00:30:11,980
+2013 to 2015 we use a bivariate trait
+
+517
+00:30:08,769 --> 00:30:14,528
+called pop color which just is sorry a
+
+518
+00:30:11,980 --> 00:30:17,909
+binary trait we just measures whether
+
+519
+00:30:14,528 --> 00:30:21,159
+you a yellow or white or maybe off-white
+
+520
+00:30:17,909 --> 00:30:23,730
+that's the case maybe so we use this to
+
+521
+00:30:21,159 --> 00:30:28,360
+separate the population into two parts
+
+522
+00:30:23,730 --> 00:30:31,778
+we use GPS names numbering about 177
+
+523
+00:30:28,359 --> 00:30:36,908
+thousand and the number of the whites
+
+524
+00:30:31,778 --> 00:30:39,190
+were 451 and for yellow we're 262 so
+
+525
+00:30:36,909 --> 00:30:40,450
+phenotypes of course we are from three
+
+526
+00:30:39,190 --> 00:30:44,880
+locations again
+
+527
+00:30:40,450 --> 00:30:44,880
+or we corrected these as fixed effects
+
+528
+00:30:45,480 --> 00:30:51,788
+so
+
+529
+00:30:46,720 --> 00:30:54,519
+we show the LD between segments its
+
+530
+00:30:51,788 --> 00:30:57,519
+segments in a chromosome and each color
+
+531
+00:30:54,519 --> 00:31:01,690
+change is a different chromosome so here
+
+532
+00:30:57,519 --> 00:31:05,019
+we see see the kind of LD we get we have
+
+533
+00:31:01,690 --> 00:31:06,610
+this low LD giving us confidence then
+
+534
+00:31:05,019 --> 00:31:11,740
+when we get associations these
+
+535
+00:31:06,609 --> 00:31:16,240
+associations be real okay here we see
+
+536
+00:31:11,740 --> 00:31:19,058
+the me the the this land or spar lengths
+
+537
+00:31:16,240 --> 00:31:20,710
+of genomic segments in base pairs and we
+
+538
+00:31:19,058 --> 00:31:27,119
+see that a lot of segments are between
+
+539
+00:31:20,710 --> 00:31:27,120
+300 plus Cape 200 plus thousand KD yeah
+
+540
+00:31:28,679 --> 00:31:36,370
+okay so when we plot the results here we
+
+541
+00:31:32,769 --> 00:31:39,429
+see we see in the first plot is the
+
+542
+00:31:36,369 --> 00:31:42,969
+white cassava and in the second is the
+
+543
+00:31:39,429 --> 00:31:46,330
+yellow cassava so we see here we pick up
+
+544
+00:31:42,970 --> 00:31:54,788
+signals in chromosome one if you go from
+
+545
+00:31:46,329 --> 00:31:59,199
+four from far from five from 10 from 17
+
+546
+00:31:54,788 --> 00:32:04,599
+and from 18 and then in in yellow we
+
+547
+00:31:59,200 --> 00:32:07,029
+pick up only for chromosome 1 and so
+
+548
+00:32:04,599 --> 00:32:13,509
+bear in mind here also that we have like
+
+549
+00:32:07,029 --> 00:32:17,079
+very little sample size so what next we
+
+550
+00:32:13,509 --> 00:32:18,940
+do we try to see whether we can extract
+
+551
+00:32:17,079 --> 00:32:22,269
+some information from the genome by
+
+552
+00:32:18,940 --> 00:32:26,890
+doing candidate gene analysis and we
+
+553
+00:32:22,269 --> 00:32:31,658
+extracted information on 500 KB flanking
+
+554
+00:32:26,890 --> 00:32:35,080
+each side of the heat we had will show
+
+555
+00:32:31,659 --> 00:32:39,610
+later the choice of this is 500 KB and
+
+556
+00:32:35,079 --> 00:32:43,418
+based on literature review we were
+
+557
+00:32:39,609 --> 00:32:46,079
+seeing two families coming up all the
+
+558
+00:32:43,419 --> 00:32:49,299
+time and this this is
+
+559
+00:32:46,079 --> 00:32:52,808
+glycosyltransferase ease and beginning
+
+560
+00:32:49,298 --> 00:32:55,690
+deeper into these is like carbohydrate
+
+561
+00:32:52,808 --> 00:32:57,490
+enzymes of which starts in DC sucrose
+
+562
+00:32:55,690 --> 00:32:58,419
+synthesis and so on and so forth in
+
+563
+00:32:57,490 --> 00:33:02,019
+there
+
+564
+00:32:58,419 --> 00:33:04,809
+and we see another family of serine
+
+565
+00:33:02,019 --> 00:33:09,940
+threonine kinases and and these these
+
+566
+00:33:04,808 --> 00:33:12,398
+family regulatory protein kinases we
+
+567
+00:33:09,940 --> 00:33:15,850
+also see in vertices but neutral and
+
+568
+00:33:12,398 --> 00:33:21,398
+acid and some other plants literally
+
+569
+00:33:15,849 --> 00:33:23,439
+regions so we also looked on literature
+
+570
+00:33:21,398 --> 00:33:25,388
+and we saw that this air entraining
+
+571
+00:33:23,440 --> 00:33:29,308
+kindnesses already have transgenic
+
+572
+00:33:25,388 --> 00:33:32,019
+studies which i am getting in starch so
+
+573
+00:33:29,308 --> 00:33:37,928
+before I go on I want to point out that
+
+574
+00:33:32,019 --> 00:33:41,319
+that our goal was not really to say that
+
+575
+00:33:37,929 --> 00:33:43,690
+this gene is what is causing this but we
+
+576
+00:33:41,319 --> 00:33:46,028
+kind of think that these genes may be
+
+577
+00:33:43,690 --> 00:33:51,700
+tagging regions which are very
+
+578
+00:33:46,028 --> 00:33:54,989
+interesting for try memory in cassava ok
+
+579
+00:33:51,700 --> 00:33:59,919
+so how did how do we validate these then
+
+580
+00:33:54,989 --> 00:34:03,038
+we performed a validation we performed a
+
+581
+00:33:59,919 --> 00:34:05,649
+validation for these are in training
+
+582
+00:34:03,038 --> 00:34:07,720
+kindnesses we went to the genome and we
+
+583
+00:34:05,648 --> 00:34:12,190
+grabbed everything called serine 20
+
+584
+00:34:07,720 --> 00:34:16,510
+kinase or look like it and we extracted
+
+585
+00:34:12,190 --> 00:34:20,409
+about twelve twelve hundred genes we
+
+586
+00:34:16,510 --> 00:34:24,040
+encode it to about 7,000 slips and we
+
+587
+00:34:20,409 --> 00:34:26,679
+used an independent population which was
+
+588
+00:34:24,039 --> 00:34:29,199
+the progeny of the genetic game hundred
+
+589
+00:34:26,679 --> 00:34:34,690
+genetic and parents to validate these
+
+590
+00:34:29,199 --> 00:34:38,259
+change excuse me we also took randomly
+
+591
+00:34:34,690 --> 00:34:43,898
+genes from from from the genome about 7
+
+592
+00:34:38,260 --> 00:34:48,899
+7 2004 about 7,000 snip as control for
+
+593
+00:34:43,898 --> 00:34:52,838
+this now for these for this we we fix
+
+594
+00:34:48,898 --> 00:34:55,690
+this to canal model again in the fest
+
+595
+00:34:52,838 --> 00:34:58,088
+canal is this target which is disorient
+
+596
+00:34:55,690 --> 00:35:00,519
+run in kinases and in the second is
+
+597
+00:34:58,088 --> 00:35:03,670
+every retain every resonate in the
+
+598
+00:35:00,519 --> 00:35:06,659
+genome not ticks and we get prediction
+
+599
+00:35:03,670 --> 00:35:06,659
+equations for this
+
+600
+00:35:09,420 --> 00:35:18,039
+okay so we do this as well for all that
+
+601
+00:35:12,760 --> 00:35:20,440
+other we have we had this this site on
+
+602
+00:35:18,039 --> 00:35:23,409
+paper which reported cassava genes
+
+603
+00:35:20,440 --> 00:35:27,670
+involved in stock biosynthesis so we
+
+604
+00:35:23,409 --> 00:35:30,359
+took those genes excuse me an uncaught
+
+605
+00:35:27,670 --> 00:35:34,059
+them to snips record em cassava stagings
+
+606
+00:35:30,360 --> 00:35:37,210
+we also extracted all things called
+
+607
+00:35:34,059 --> 00:35:41,409
+genes in the rh in the significance
+
+608
+00:35:37,210 --> 00:35:44,699
+regions we had and this gave rise to
+
+609
+00:35:41,409 --> 00:35:48,219
+about 2300 snips record in region genes
+
+610
+00:35:44,699 --> 00:35:51,369
+now based on literature we had these 53
+
+611
+00:35:48,219 --> 00:35:57,369
+lists of genes that we saw that we could
+
+612
+00:35:51,369 --> 00:35:59,920
+be implicated in starch and we also got
+
+613
+00:35:57,369 --> 00:36:02,170
+these and anchored them to sleeps about
+
+614
+00:35:59,920 --> 00:36:05,349
+400 snips
+
+615
+00:36:02,170 --> 00:36:07,900
+we got another 53 randomly just a
+
+616
+00:36:05,349 --> 00:36:11,170
+control for these and then we went into
+
+617
+00:36:07,900 --> 00:36:13,690
+this region and said oh well let's get
+
+618
+00:36:11,170 --> 00:36:16,300
+those those genes that I in this region
+
+619
+00:36:13,690 --> 00:36:18,670
+that are not reported in literature just
+
+620
+00:36:16,300 --> 00:36:21,190
+to check what is going on and we also
+
+621
+00:36:18,670 --> 00:36:25,450
+anchored them to about 300 something
+
+622
+00:36:21,190 --> 00:36:28,750
+plus tips so we used these as well in
+
+623
+00:36:25,449 --> 00:36:34,059
+the same methodology we use for the SNR
+
+624
+00:36:28,750 --> 00:36:40,809
+case so here we show the prediction
+
+625
+00:36:34,059 --> 00:36:45,009
+accuracies for the snacks for 7,000 plus
+
+626
+00:36:40,809 --> 00:36:47,199
+genes it was up about 50% of the
+
+627
+00:36:45,010 --> 00:36:50,620
+prediction accuracy we get from the
+
+628
+00:36:47,199 --> 00:36:53,730
+entire snips in the genome so orders
+
+629
+00:36:50,619 --> 00:36:57,639
+were about 20 something plus percent and
+
+630
+00:36:53,730 --> 00:37:01,869
+and the random part for for the snacks
+
+631
+00:36:57,639 --> 00:37:06,639
+was about half of what the snacks heart
+
+632
+00:37:01,869 --> 00:37:08,920
+so interestingly here when when when I
+
+633
+00:37:06,639 --> 00:37:11,679
+do the anchoring of these names I find
+
+634
+00:37:08,920 --> 00:37:14,409
+out that all the time the same names
+
+635
+00:37:11,679 --> 00:37:16,049
+come up again and again which means that
+
+636
+00:37:14,409 --> 00:37:19,049
+we are really talking something
+
+637
+00:37:16,050 --> 00:37:19,050
+individuals
+
+638
+00:37:19,860 --> 00:37:26,620
+another thing we did is that we we kind
+
+639
+00:37:22,869 --> 00:37:29,170
+of since this insight on has already
+
+640
+00:37:26,619 --> 00:37:31,989
+published this James we wanted to see
+
+641
+00:37:29,170 --> 00:37:34,900
+which is to with which in our region
+
+642
+00:37:31,989 --> 00:37:39,909
+that intersecting with these ones that's
+
+643
+00:37:34,900 --> 00:37:42,190
+I don't pick up and we so for genes two
+
+644
+00:37:39,909 --> 00:37:44,879
+of them one is an acid in vertex when
+
+645
+00:37:42,190 --> 00:37:48,119
+it's a neutral invitation think so and
+
+646
+00:37:44,880 --> 00:37:50,980
+there's this forceful glucose isomerase
+
+647
+00:37:48,119 --> 00:37:52,750
+and an interesting one the fructose
+
+648
+00:37:50,980 --> 00:37:56,710
+bisphosphate
+
+649
+00:37:52,750 --> 00:37:59,679
+aldolase so a quick search on these
+
+650
+00:37:56,710 --> 00:38:04,840
+shows that Monsanto has a patent pending
+
+651
+00:37:59,679 --> 00:38:07,449
+on this so again want to point out that
+
+652
+00:38:04,840 --> 00:38:09,730
+we are not we are not searching for
+
+653
+00:38:07,449 --> 00:38:12,219
+functionality of these genes but we are
+
+654
+00:38:09,730 --> 00:38:16,630
+tagging regions in the genome that may
+
+655
+00:38:12,219 --> 00:38:19,750
+be implicated in Andromeda so this is
+
+656
+00:38:16,630 --> 00:38:23,619
+just a plot showing all these genes we
+
+657
+00:38:19,750 --> 00:38:27,909
+had and the regions where we kind of saw
+
+658
+00:38:23,619 --> 00:38:32,460
+what was going on so I I don't see very
+
+659
+00:38:27,909 --> 00:38:37,119
+much okay and this is in chromosome one
+
+660
+00:38:32,460 --> 00:38:41,619
+where we had top hits and the proximity
+
+661
+00:38:37,119 --> 00:38:47,799
+of different genes that we saw in we
+
+662
+00:38:41,619 --> 00:38:51,159
+selected as candidates so how do we
+
+663
+00:38:47,800 --> 00:38:52,900
+validate the the rhm procedure itself we
+
+664
+00:38:51,159 --> 00:38:57,069
+use the so called had a causal snip
+
+665
+00:38:52,900 --> 00:38:59,950
+methodology so we move into the genome
+
+666
+00:38:57,070 --> 00:39:04,390
+we select five adjacent segments by
+
+667
+00:38:59,949 --> 00:39:07,089
+random and on the third segment we
+
+668
+00:39:04,389 --> 00:39:09,179
+choose a snip by random and inflate the
+
+669
+00:39:07,090 --> 00:39:13,360
+variants of the trade fall to about 10%
+
+670
+00:39:09,179 --> 00:39:16,539
+by adding effect and we make G matrices
+
+671
+00:39:13,360 --> 00:39:18,340
+for each each of the segments but when
+
+672
+00:39:16,539 --> 00:39:20,559
+we come to the third segment we remove
+
+673
+00:39:18,340 --> 00:39:24,180
+that sleep that we used for inflating
+
+674
+00:39:20,559 --> 00:39:27,610
+the the variants phenotypic variants
+
+675
+00:39:24,179 --> 00:39:30,059
+with only several times to see what was
+
+676
+00:39:27,610 --> 00:39:30,059
+going on
+
+677
+00:39:30,179 --> 00:39:38,608
+so this gave a clue on the span of our
+
+678
+00:39:36,059 --> 00:39:41,190
+candidate gene analysis because we could
+
+679
+00:39:38,608 --> 00:39:43,318
+pick up genes about two segments we
+
+680
+00:39:41,190 --> 00:39:47,159
+could pick up effects about two segments
+
+681
+00:39:43,318 --> 00:39:51,058
+away from from the from the place where
+
+682
+00:39:47,159 --> 00:39:53,879
+we added this effect so we saw that the
+
+683
+00:39:51,059 --> 00:39:56,819
+the HM was a good procedure for
+
+684
+00:39:53,880 --> 00:40:01,470
+polygenic traits and in this analysis we
+
+685
+00:39:56,818 --> 00:40:03,630
+picked out that 102 times out of two two
+
+686
+00:40:01,469 --> 00:40:08,548
+and six we pick the effect that we added
+
+687
+00:40:03,630 --> 00:40:12,059
+and this was about 47% power of
+
+688
+00:40:08,548 --> 00:40:13,949
+dictation from Association and and we
+
+689
+00:40:12,059 --> 00:40:19,970
+think that would increase sample size
+
+690
+00:40:13,949 --> 00:40:22,379
+will probably benefit more so in summary
+
+691
+00:40:19,969 --> 00:40:26,669
+the other term is informative for
+
+692
+00:40:22,380 --> 00:40:29,880
+mapping complex traits genomic segments
+
+693
+00:40:26,670 --> 00:40:33,210
+may be employed in breeding there needs
+
+694
+00:40:29,880 --> 00:40:35,099
+to be some research to do this and we we
+
+695
+00:40:33,210 --> 00:40:36,838
+see that there is good prospect for
+
+696
+00:40:35,099 --> 00:40:40,528
+improvement of crime and I especially
+
+697
+00:40:36,838 --> 00:40:44,849
+quite casaba and then gerrymander as
+
+698
+00:40:40,528 --> 00:40:46,349
+well is a polygenic traits okay so in
+
+699
+00:40:44,849 --> 00:40:48,750
+case you have nothing yellow cassava
+
+700
+00:40:46,349 --> 00:40:53,579
+this is how it looks and this is white
+
+701
+00:40:48,750 --> 00:40:57,900
+cassava okay so I move on to the to the
+
+702
+00:40:53,579 --> 00:40:59,430
+next chapter which is moving away moving
+
+703
+00:40:57,900 --> 00:41:03,088
+on from the region of heritability
+
+704
+00:40:59,429 --> 00:41:05,788
+mapping so one trait I'm trying to map
+
+705
+00:41:03,088 --> 00:41:08,099
+two traits at a time and in this case we
+
+706
+00:41:05,789 --> 00:41:12,028
+want to see how to trace our co
+
+707
+00:41:08,099 --> 00:41:16,260
+inherited together and yeah we use dry
+
+708
+00:41:12,028 --> 00:41:18,989
+matter again the yellowness which is
+
+709
+00:41:16,260 --> 00:41:22,559
+wood color and then we also use fresh
+
+710
+00:41:18,989 --> 00:41:26,969
+food in some trials that they call high
+
+711
+00:41:22,559 --> 00:41:30,359
+stockpiles so our motivation is to see
+
+712
+00:41:26,969 --> 00:41:33,838
+how dry matter and this yellowness are
+
+713
+00:41:30,358 --> 00:41:35,940
+inherited together and again to see
+
+714
+00:41:33,838 --> 00:41:39,889
+whether we have like prospects of
+
+715
+00:41:35,940 --> 00:41:39,889
+developing yellow cassava
+
+716
+00:41:40,150 --> 00:41:48,590
+so how does this go the other CHM
+
+717
+00:41:44,780 --> 00:41:51,910
+procedure starts by so by fitting I
+
+718
+00:41:48,590 --> 00:41:55,010
+would point out here that the ideal
+
+719
+00:41:51,909 --> 00:41:57,379
+procedure should have been exactly what
+
+720
+00:41:55,010 --> 00:42:00,530
+we did for the regenerate ability but in
+
+721
+00:41:57,380 --> 00:42:04,010
+my various model but we tried to do that
+
+722
+00:42:00,530 --> 00:42:06,920
+without success because I cream probably
+
+723
+00:42:04,010 --> 00:42:08,810
+we have less so much less today we could
+
+724
+00:42:06,920 --> 00:42:12,200
+not estimate it so big models were not
+
+725
+00:42:08,809 --> 00:42:14,000
+converging so what we did was to look
+
+726
+00:42:12,199 --> 00:42:17,210
+for another procedure to do this and
+
+727
+00:42:14,000 --> 00:42:21,530
+this is the procedure so we fitted by a
+
+728
+00:42:17,210 --> 00:42:25,280
+very developed model where we use the
+
+729
+00:42:21,530 --> 00:42:28,190
+empty model as we showed before we use
+
+730
+00:42:25,280 --> 00:42:31,100
+them principal components in in the
+
+731
+00:42:28,190 --> 00:42:33,679
+fixed effect part and before we did this
+
+732
+00:42:31,099 --> 00:42:39,199
+actually we brought out these 10 pieces
+
+733
+00:42:33,679 --> 00:42:42,879
+and we regress them to to dry Mara for a
+
+734
+00:42:39,199 --> 00:42:46,669
+start and for white we didn't see much
+
+735
+00:42:42,880 --> 00:42:49,550
+value for for the pieces they were not
+
+736
+00:42:46,670 --> 00:42:51,289
+significant but for yellow we saw that
+
+737
+00:42:49,550 --> 00:42:56,090
+these 10 pieces were explaining about
+
+738
+00:42:51,289 --> 00:43:00,858
+23% of variation going on so was it was
+
+739
+00:42:56,090 --> 00:43:03,980
+essential to toward that so
+
+740
+00:43:00,858 --> 00:43:07,309
+after fitting this bivariate model we
+
+741
+00:43:03,980 --> 00:43:09,559
+move forward immediately to calculate
+
+742
+00:43:07,309 --> 00:43:12,230
+slip effects from the model and and this
+
+743
+00:43:09,559 --> 00:43:16,460
+this is done by very much by animal
+
+744
+00:43:12,230 --> 00:43:19,250
+breeders so-called slip lock and just
+
+745
+00:43:16,460 --> 00:43:22,070
+back solve using the estimates that we
+
+746
+00:43:19,250 --> 00:43:26,119
+got for the billion values the genomic
+
+747
+00:43:22,070 --> 00:43:30,490
+relationship matrix inverse the Mikami
+
+748
+00:43:26,119 --> 00:43:32,660
+trees and this mattress may be used to
+
+749
+00:43:30,489 --> 00:43:35,500
+probably with snips if you are
+
+750
+00:43:32,659 --> 00:43:35,500
+interested in that
+
+751
+00:43:38,159 --> 00:43:45,268
+so after solving for sleepy felts we
+
+752
+00:43:42,389 --> 00:43:48,679
+divided the genome into on each
+
+753
+00:43:45,268 --> 00:43:53,129
+chromosome into three fairly poor parts
+
+754
+00:43:48,679 --> 00:43:56,818
+the mean of each segment was about it in
+
+755
+00:43:53,130 --> 00:43:59,548
+megabase approximately so what we did
+
+756
+00:43:56,818 --> 00:44:04,308
+was we collected so-called genomic
+
+757
+00:43:59,548 --> 00:44:07,798
+segments values from these excuse me and
+
+758
+00:44:04,309 --> 00:44:12,089
+genomic segments values where where the
+
+759
+00:44:07,798 --> 00:44:16,679
+Mikami trees for this segment were in x
+
+760
+00:44:12,088 --> 00:44:18,210
+the snip effects in this segment way so
+
+761
+00:44:16,679 --> 00:44:21,179
+this genomic segment values were
+
+762
+00:44:18,210 --> 00:44:25,579
+calculated for both traits and and then
+
+763
+00:44:21,179 --> 00:44:28,440
+to find to find to get a correlation for
+
+764
+00:44:25,579 --> 00:44:30,630
+genomic segments correlation we just
+
+765
+00:44:28,440 --> 00:44:33,690
+correlated this genomic segment for the
+
+766
+00:44:30,630 --> 00:44:36,028
+two traits were interested in so in fact
+
+767
+00:44:33,690 --> 00:44:38,009
+this is this is a genetic correlation
+
+768
+00:44:36,028 --> 00:44:40,528
+because we are correlating sort of this
+
+769
+00:44:38,009 --> 00:44:44,519
+is the proxy looks like looks like a
+
+770
+00:44:40,528 --> 00:44:47,159
+billion value okay so we did this for
+
+771
+00:44:44,518 --> 00:44:49,348
+two traits we're interested in joining
+
+772
+00:44:47,159 --> 00:44:54,088
+Manta and B durometer and fresh fuel and
+
+773
+00:44:49,349 --> 00:44:56,579
+so on so what later did we use we use
+
+774
+00:44:54,088 --> 00:44:58,528
+the same data we were using for we used
+
+775
+00:44:56,579 --> 00:45:01,859
+for the air hm
+
+776
+00:44:58,528 --> 00:45:05,429
+we applied these to the same populations
+
+777
+00:45:01,858 --> 00:45:07,798
+again white yellow and in this case we
+
+778
+00:45:05,429 --> 00:45:13,469
+also joined them together we call yellow
+
+779
+00:45:07,798 --> 00:45:16,108
+plus y okay so we applied also for dry
+
+780
+00:45:13,469 --> 00:45:19,078
+matter and unfresh huge in so-called
+
+781
+00:45:16,108 --> 00:45:21,690
+high starched white trials and these are
+
+782
+00:45:19,079 --> 00:45:25,769
+trials that had high levels of dry
+
+783
+00:45:21,690 --> 00:45:28,490
+matter and and and good yield and they
+
+784
+00:45:25,768 --> 00:45:33,479
+were they were planted sort of to
+
+785
+00:45:28,489 --> 00:45:35,669
+understand when best to harvest and one
+
+786
+00:45:33,480 --> 00:45:38,309
+one set of harvests was done twelve
+
+787
+00:45:35,670 --> 00:45:40,798
+months after planting and the second set
+
+788
+00:45:38,309 --> 00:45:44,359
+of harvests was done 14 months after
+
+789
+00:45:40,798 --> 00:45:46,920
+planting so we plot this segment
+
+790
+00:45:44,358 --> 00:45:50,670
+correlations genome-wide to see what's
+
+791
+00:45:46,920 --> 00:45:55,110
+going on and excuse me
+
+792
+00:45:50,670 --> 00:45:57,360
+then we also tried to say that when
+
+793
+00:45:55,110 --> 00:45:59,730
+these segment correlations are going in
+
+794
+00:45:57,360 --> 00:46:02,730
+in the direction that the breeder wants
+
+795
+00:45:59,730 --> 00:46:05,039
+then they are favorable for for what you
+
+796
+00:46:02,730 --> 00:46:07,320
+are looking for we use so-called
+
+797
+00:46:05,039 --> 00:46:14,159
+residuary sampling for significance
+
+798
+00:46:07,320 --> 00:46:18,090
+testing okay I show here plots each bar
+
+799
+00:46:14,159 --> 00:46:21,929
+represents a segment change of color
+
+800
+00:46:18,090 --> 00:46:27,390
+represents another chromosome and this
+
+801
+00:46:21,929 --> 00:46:30,509
+is for white and we see that most of the
+
+802
+00:46:27,389 --> 00:46:39,779
+segments are in the in the positive
+
+803
+00:46:30,510 --> 00:46:43,590
+direction and in yellow in yellow we see
+
+804
+00:46:39,780 --> 00:46:49,830
+that most of these segments are going
+
+805
+00:46:43,590 --> 00:46:52,890
+towards the negative direction this is
+
+806
+00:46:49,829 --> 00:47:00,029
+for white mixed with yellow or we see a
+
+807
+00:46:52,889 --> 00:47:01,920
+mixture of what is going on okay so we
+
+808
+00:47:00,030 --> 00:47:05,519
+see seventy percent of the segments and
+
+809
+00:47:01,920 --> 00:47:09,769
+white were favorable and in fact from
+
+810
+00:47:05,519 --> 00:47:14,929
+the bivariate model we saw that genomic
+
+811
+00:47:09,769 --> 00:47:17,730
+the trait rates correlation was 0.14
+
+812
+00:47:14,929 --> 00:47:21,989
+which indicates progress can be made
+
+813
+00:47:17,730 --> 00:47:24,150
+using a multi trait index so we move
+
+814
+00:47:21,989 --> 00:47:29,069
+over to yellow which is more interesting
+
+815
+00:47:24,150 --> 00:47:33,360
+and we see that each 1% of the segment's
+
+816
+00:47:29,070 --> 00:47:36,600
+were unfavorable and the whole genome
+
+817
+00:47:33,360 --> 00:47:39,329
+genomic relations where negative zero
+
+818
+00:47:36,599 --> 00:47:42,860
+point three indicating that develop in
+
+819
+00:47:39,329 --> 00:47:45,869
+yellow cassava could be challenging so
+
+820
+00:47:42,860 --> 00:47:49,860
+interestingly this doesn't happen in the
+
+821
+00:47:45,869 --> 00:47:52,769
+South American gem plasm so sabalos has
+
+822
+00:47:49,860 --> 00:47:56,220
+has this publication and has been saying
+
+823
+00:47:52,769 --> 00:47:59,639
+that just a recurrent selection was
+
+824
+00:47:56,219 --> 00:48:01,048
+doing very well for both in South
+
+825
+00:47:59,639 --> 00:48:05,989
+America
+
+826
+00:48:01,048 --> 00:48:05,989
+okay so we argue here
+
+827
+00:48:11,409 --> 00:48:13,469
+you
+
+828
+00:50:11,949 --> 00:50:20,460
+this has been a production of Cornell
+
+829
+00:50:14,679 --> 00:50:20,460
+University on the web at Cornell edu
+

@@ -1,0 +1,1704 @@
+1
+00:00:22,100 --> 00:00:27,650
+I'm going to talk about quantum sensors or sometimes we call them PAR sensors,
+
+2
+00:00:27,649 --> 00:00:32,729
+photosynthetically active radiation sensors. They look the same as pyranometres, but instead
+
+3
+00:00:32,729 --> 00:00:38,909
+of being designed to measure all of the shortwave wavelengths from the Sun or an
+
+4
+00:00:38,909 --> 00:00:43,619
+electric light they only measure the photosynthetically active wavelengths
+
+5
+00:00:43,619 --> 00:00:50,070
+that is typically defined as 400 to 700 nanometers. The same wavelengths that the
+
+6
+00:00:50,070 --> 00:00:55,770
+human eye sees are the same wavelengths that drive photosynthesis in plants.
+
+7
+00:00:55,770 --> 00:01:00,809
+It's an often-used measurement in plant research because it tells us how much
+
+8
+00:01:00,808 --> 00:01:05,128
+radiation is available or how many photons are available to make
+
+9
+00:01:05,129 --> 00:01:10,650
+photosynthesis happen. There is multiple radiation sources available
+
+10
+00:01:10,650 --> 00:01:16,228
+used to grow plants. I'm showing some here sun, lots of different electric
+
+11
+00:01:16,228 --> 00:01:25,769
+lights. Nowadays LEDs (light emitting diodes) are becoming more and
+
+12
+00:01:25,769 --> 00:01:29,969
+more common. This is actually a photograph taken from Bruce's lab at
+
+13
+00:01:29,969 --> 00:01:34,078
+Utah State University and they've got all these little growth chambers each
+
+14
+00:01:34,078 --> 00:01:39,389
+one with a different colored LED or a different combination of colored LEDs in
+
+15
+00:01:39,390 --> 00:01:44,430
+them to see what kind of effects different color treatments have on plant
+
+16
+00:01:44,430 --> 00:01:52,020
+growth and plant morphology. We keep pressing the wrong button. LEDs
+
+17
+00:01:52,019 --> 00:01:55,500
+are becoming more and more common all the time especially in research
+
+18
+00:01:55,500 --> 00:02:02,459
+applications. LEDs are often narrowband meaning they only output a narrow range
+
+19
+00:02:02,459 --> 00:02:06,629
+of wavelengths, whereas, radiation sources like the Sun or some of these electric
+
+20
+00:02:06,629 --> 00:02:10,719
+lights are broadband; they output a lot of radiation across the
+
+21
+00:02:10,719 --> 00:02:14,590
+photosynthetically active range. The main point that I want to make here
+
+22
+00:02:14,590 --> 00:02:20,740
+is that accurate photosynthetically active radiation or PAR
+
+23
+00:02:20,740 --> 00:02:25,540
+measurements are required for a host of applications especially if we're
+
+24
+00:02:25,539 --> 00:02:32,109
+interested in photosynthesis. Before we start talking about the sensors
+
+25
+00:02:32,110 --> 00:02:37,000
+here's just a few definitions you probably have heard these terms before
+
+26
+00:02:37,000 --> 00:02:42,039
+and seen them to find but it always helps to review a little bit. I
+
+27
+00:02:42,039 --> 00:02:45,129
+already mentioned that photosynthetically active radiation is
+
+28
+00:02:45,129 --> 00:02:52,090
+the radiation that drives photosynthesis. Photon flux density is just a number of
+
+29
+00:02:52,090 --> 00:02:58,150
+photons that flow through a unit area per unit time. We're just counting
+
+30
+00:02:58,150 --> 00:03:03,849
+photons basically, and so either count the micro moles of photons per meter
+
+31
+00:03:03,849 --> 00:03:08,859
+squared per second, that's an instantaneous unit that we use, or we
+
+32
+00:03:08,860 --> 00:03:14,500
+count the moles of photons per meter squared per day on a daily
+
+33
+00:03:14,500 --> 00:03:20,560
+timescale. That's how we characterize the flux of photons. The photosynthetic
+
+34
+00:03:20,560 --> 00:03:27,219
+photon flux density (PPFD) is just the photon flux density integrated over our
+
+35
+00:03:27,219 --> 00:03:32,680
+photosynthetically active range, 400 to 700 nanometer wavelength range.
+
+36
+00:03:32,680 --> 00:03:38,650
+When we have a quantum sensor or a PAR sensor, one of these guys, this is the
+
+37
+00:03:38,650 --> 00:03:44,409
+number that it's measuring right here. They put out this unit so it
+
+38
+00:03:44,409 --> 00:03:49,780
+measures the micro moles of photons per meter squared per second. Basically
+
+39
+00:03:49,780 --> 00:03:55,000
+the incident photons on the detector, and then when we integrate that number over
+
+40
+00:03:55,000 --> 00:04:02,019
+a whole day we get the moles of photons per meter squared per day. Yield
+
+41
+00:04:02,019 --> 00:04:08,890
+photon flux density is kind of like the photosynthetic photon flux density but
+
+42
+00:04:08,889 --> 00:04:13,899
+instead of just integrating over the 400 to 700 nanometer range, to get yield
+
+43
+00:04:13,900 --> 00:04:22,120
+photon flux we actually weight the photon flux by the plant response to photons and
+
+44
+00:04:22,120 --> 00:04:26,769
+then we sum it up. This one will become a lot more clear on my next slide
+
+45
+00:04:26,769 --> 00:04:29,918
+because will show you a graph that illustrates the difference between this
+
+46
+00:04:29,918 --> 00:04:36,279
+one and this one. A quantum sensor is this thing; it's just the instrument
+
+47
+00:04:36,279 --> 00:04:42,069
+that we use to measure PPFD. The reason that we often call them quantum
+
+48
+00:04:42,069 --> 00:04:49,240
+sensors is because one photon is a single quantum of radiation, but quantum
+
+49
+00:04:49,240 --> 00:04:54,280
+sensor can be kind of a confusing term I think. Nowadays you often hear them
+
+50
+00:04:54,279 --> 00:04:58,209
+called PAR sensors because they are measuring photosynthetically active
+
+51
+00:04:58,209 --> 00:05:05,079
+radiation. PAR sensor and quantum sensor mean the exact same thing.
+
+52
+00:05:05,079 --> 00:05:11,948
+Here's the the graph that I mentioned when I was describing the difference
+
+53
+00:05:11,949 --> 00:05:19,560
+between photosynthetic photon flux and yield photon flux. Wavelength on the
+
+54
+00:05:19,560 --> 00:05:26,589
+x-axis and then just relative quantum yield or the response to photons on the
+
+55
+00:05:26,589 --> 00:05:33,579
+y-axis . The green line is actually measured data from a number of different
+
+56
+00:05:33,579 --> 00:05:39,819
+places, I listed some of the publications here. Keith McCree at Texas A&amp;M
+
+57
+00:05:39,819 --> 00:05:44,769
+University was the first to do this back in the early 70's and then others
+
+58
+00:05:44,769 --> 00:05:51,990
+followed up and found similar similar data. What he did is he took a leaf and
+
+59
+00:05:51,990 --> 00:05:57,819
+he measured the the photosynthetic response or basically how much carbon
+
+60
+00:05:57,819 --> 00:06:04,269
+did that leaf uptake at each wavelength of light. He used a light with
+
+61
+00:06:04,269 --> 00:06:08,889
+specific filters over the top of it to give him really narrow wavelength ranges
+
+62
+00:06:08,889 --> 00:06:13,060
+and he just measured the carbon uptake of single leaves as a function of
+
+63
+00:06:13,060 --> 00:06:16,720
+wavelength. He found that the photosynthetic response actually looked
+
+64
+00:06:16,720 --> 00:06:22,660
+like the green line. The plant leaves respond a little bit more to blue
+
+65
+00:06:22,660 --> 00:06:27,070
+radiations than they do green radiation and they're most sensitive or most
+
+66
+00:06:27,069 --> 00:06:33,019
+responses to the red radiation. The data that McCree and others
+
+67
+00:06:33,019 --> 00:06:36,799
+measured for single leaves we have to remember that it was it was in the
+
+68
+00:06:36,800 --> 00:06:42,199
+laboratory, it was plants grown under controlled conditions in many cases I
+
+69
+00:06:42,199 --> 00:06:47,150
+think they also measured field plants, it was a low light environment, and again it
+
+70
+00:06:47,149 --> 00:06:55,089
+was single leaves.A more useful and universal definition of
+
+71
+00:06:55,089 --> 00:07:00,500
+photosynthetically active radiation is rather than trying to weight measurements
+
+72
+00:07:00,500 --> 00:07:06,740
+of PAR by this green line we just assume that all the photons between 400 and 700
+
+73
+00:07:06,740 --> 00:07:12,889
+nanometers are equally efficient at making photosynthesis happen in plant
+
+74
+00:07:12,889 --> 00:07:20,930
+leaves. The universally accepted definition of PAR is what we call this
+
+75
+00:07:20,930 --> 00:07:25,038
+defined plant photosynthetic response, where we just get equal weight to all
+
+76
+00:07:25,038 --> 00:07:31,310
+the photons within the 400 to 700 range and we don't give any weight to photons
+
+77
+00:07:31,310 --> 00:07:37,098
+outside the 400 to 700 nanometer range. We use that as our definition of
+
+78
+00:07:37,098 --> 00:07:43,750
+photosynthetically active radiation. PAR sensors, these kind of devices,
+
+79
+00:07:43,750 --> 00:07:50,060
+should have a spectral response or a sensitivity but matches this black line
+
+80
+00:07:50,060 --> 00:07:55,689
+as close as they can.
+
+81
+00:07:57,470 --> 00:08:04,159
+There are really a couple of options for for measuring PAR. One is to use a
+
+82
+00:08:04,158 --> 00:08:10,019
+quantum sensor like this and it's a broadband device meaning it gives you a
+
+83
+00:08:10,019 --> 00:08:16,228
+single signal, one number. An analog device means it would output voltage
+
+84
+00:08:16,228 --> 00:08:23,310
+that represents the sum of all of the radiation that's incident on this
+
+85
+00:08:23,310 --> 00:08:28,860
+detector and again it should be the sum of all of the radiation between 400 and
+
+86
+00:08:28,860 --> 00:08:35,700
+700 nanometers. That number (that voltage) that it outputs is weighted by the
+
+87
+00:08:35,700 --> 00:08:41,610
+spectral sensitivity of the sensor itself. You have a filter and
+
+88
+00:08:41,610 --> 00:08:46,528
+the purpose of the filter in front of the photon detector is to try to give us
+
+89
+00:08:46,528 --> 00:08:52,049
+the best match that we can to 400 to 700 nanometers and then we have a single
+
+90
+00:08:52,049 --> 00:08:57,208
+detector that gives us an output that should be proportional to PAR. The
+
+91
+00:08:57,208 --> 00:09:02,009
+spectral response of the sensor is dependent on the transmission of the
+
+92
+00:09:02,009 --> 00:09:08,669
+filter and the sensitivity of the underlying detector. Alternatively rather
+
+93
+00:09:08,669 --> 00:09:12,719
+than using a quantum sensor for PAR measurement, we could use a spectroradiometer.
+
+94
+00:09:12,720 --> 00:09:17,310
+These are hyper spectraldevices, meaning we're getting signals at
+
+95
+00:09:17,309 --> 00:09:22,919
+multiple wavelengths. You can actually  get spectroradiometers that give you a
+
+96
+00:09:22,919 --> 00:09:29,219
+measurement at every single nanometer within the 400 to 700 nanometer range
+
+97
+00:09:29,220 --> 00:09:34,528
+that would be quite fine resolution. Oftentimes, they give you a
+
+98
+00:09:34,528 --> 00:09:38,879
+measurement at every 5 nanometers for example. The point is you're actually
+
+99
+00:09:38,879 --> 00:09:43,500
+getting a measurement at multiple positions across the wavelength range of
+
+100
+00:09:43,500 --> 00:09:49,799
+interest. A quantum sensor only gives you PAR. A spectroradiometer gives
+
+101
+00:09:49,799 --> 00:09:55,469
+you both PAR and the spectrum. Not only do you get photosynthetically
+
+102
+00:09:55,470 --> 00:09:59,370
+active radiation but you get the shape of the spectrum. In some applications,
+
+103
+00:09:59,370 --> 00:10:02,089
+that might be useful.
+
+104
+00:10:03,019 --> 00:10:10,438
+Here the detector array determines the spectral response.
+
+105
+00:10:10,438 --> 00:10:16,618
+A spectroradiometer is in practice it's a relatively simple device. You have a
+
+106
+00:10:16,619 --> 00:10:21,059
+prism or maybe a diffraction grattng, where the light enters the unit and that
+
+107
+00:10:21,058 --> 00:10:25,438
+prism or diffraction grating is actually separating the light into the individual
+
+108
+00:10:25,438 --> 00:10:29,998
+wavelengths. Then somewhere behind that that prism you have a whole array
+
+109
+00:10:29,999 --> 00:10:34,439
+of detectors that measures the intensity of the individual wavelengths, so we get
+
+110
+00:10:34,438 --> 00:10:40,708
+multiple signals. It looks like a relatively simple device on paper but in
+
+111
+00:10:40,708 --> 00:10:45,988
+practice they can be quite complicated. The only thing that really
+
+112
+00:10:45,989 --> 00:10:50,149
+determines the spectral response or the sensitivity of a spectroradiometer is
+
+113
+00:10:50,149 --> 00:10:56,458
+how well is it calibrated. If we can accurately calibrate each of the
+
+114
+00:10:56,458 --> 00:11:00,568
+wavelengths, then we have an accurate quantum sensor independent of the light
+
+115
+00:11:00,568 --> 00:11:03,948
+source that we're trying to measure.
+
+116
+00:11:06,299 --> 00:11:12,209
+There's lots of different options for for quantum sensors. Here I'm showing you
+
+117
+00:11:12,210 --> 00:11:16,710
+some of the more common commercially available quantum sensors, and how well
+
+118
+00:11:16,710 --> 00:11:22,110
+their spectral sensitivity or their response to photons matches our
+
+119
+00:11:22,110 --> 00:11:27,480
+definition of photosynthetic radiation. The black line is what we're trying
+
+120
+00:11:27,480 --> 00:11:32,220
+to match because that's our definition of the photosynthetic photons. Then
+
+121
+00:11:32,220 --> 00:11:39,000
+the colored lines, the blue and red lines, are the actual sensitivities of
+
+122
+00:11:39,000 --> 00:11:42,899
+some of the different sensors that are available on the market.
+
+123
+00:11:42,899 --> 00:11:48,120
+Kipp and Zonen has a sensor, Sky Instruments has a sensor, Licor has a
+
+124
+00:11:48,120 --> 00:12:01,230
+couple the model LI-190 has now been replaced by a newer model from Licor called the LI-190R.
+
+125
+00:12:01,230 --> 00:12:08,700
+At Apogee we build a couple different models the SQ-110 is the one
+
+126
+00:12:08,700 --> 00:12:14,480
+that we've sold for years and it's still available, and the SQ-500 is a new model
+
+127
+00:12:14,480 --> 00:12:23,039
+that is a better match to the photosynthetic photon flux weighting
+
+128
+00:12:23,039 --> 00:12:30,360
+factors. Having this information, we can actually now make estimates of what
+
+129
+00:12:30,360 --> 00:12:35,250
+kind of errors we can expect when we use these sensors for different light
+
+130
+00:12:35,250 --> 00:12:40,019
+sources, meaning Bruce talked a little bit about how the solar spectrum can
+
+131
+00:12:40,019 --> 00:12:44,850
+change for clear versus cloudy conditions so if we calibrate these
+
+132
+00:12:44,850 --> 00:12:49,409
+sensors in clear conditions for example and we know that none of
+
+133
+00:12:49,409 --> 00:12:54,629
+them have a perfect match to our definition of photosynthesis we can
+
+134
+00:12:54,629 --> 00:13:00,629
+expect some some errors when we try to use them in cloudy conditions. For
+
+135
+00:13:00,629 --> 00:13:04,799
+example, if they were calibrated in the laboratory under an electric light what
+
+136
+00:13:04,799 --> 00:13:08,399
+happens when we try to use them for measurements under a different electric
+
+137
+00:13:08,399 --> 00:13:11,730
+light or what happens when we take them out of the laboratory and try to use
+
+138
+00:13:11,730 --> 00:13:17,039
+them for measurements in sunlight. All we have to know, we need three pieces of
+
+139
+00:13:17,039 --> 00:13:21,469
+information basically to estimate spectral errors. That is we
+
+140
+00:13:21,470 --> 00:13:25,399
+need to know the spectral response of the sensor we have that information here,
+
+141
+00:13:25,399 --> 00:13:30,379
+we need to know the spectral output of the radiation source that was used to
+
+142
+00:13:30,379 --> 00:13:34,700
+calibrate the sensor, and then we need to know the spectral output of the
+
+143
+00:13:34,700 --> 00:13:39,520
+radiation source that we're trying to measure. To better illustrate that,
+
+144
+00:13:39,519 --> 00:13:45,289
+let's just take an example. You can see here's the spectral response of the
+
+145
+00:13:45,289 --> 00:13:50,419
+Apogee model SQ-110. This is the traditional Apogee quantum sensor that's
+
+146
+00:13:50,419 --> 00:13:54,829
+been available for for several years. You can see that it's not a great match
+
+147
+00:13:54,830 --> 00:14:01,600
+to our our definition of photosynthetic radiation that we measure some of the UV,
+
+148
+00:14:01,600 --> 00:14:07,670
+it's not as sensitive to the blue as it needs to be, and it misses some of this
+
+149
+00:14:07,669 --> 00:14:12,740
+red radiation out here when we get close to 700. This mismatch between the
+
+150
+00:14:12,740 --> 00:14:18,980
+actual sensor response to photons and our definition of photosynthetic radiation
+
+151
+00:14:18,980 --> 00:14:24,529
+is going to cause spectral errors. Kind of an extreme example: let's say we
+
+152
+00:14:24,529 --> 00:14:32,299
+are measuring an LED that was a blue and red mix where the red peak was like 660
+
+153
+00:14:32,299 --> 00:14:38,359
+or 670 nanometers you can see there's a lot of output from this led that's
+
+154
+00:14:38,360 --> 00:14:44,120
+beyond the sensitivity range of the sensor that means the sensor is not
+
+155
+00:14:44,120 --> 00:14:47,419
+going to count those photons because it's not sensitive to them and it will
+
+156
+00:14:47,419 --> 00:14:53,179
+cause spectral error. There's a equation we can use to actually
+
+157
+00:14:53,179 --> 00:14:56,959
+calculate spectral errors and as I mentioned previously the only bits of
+
+158
+00:14:56,960 --> 00:15:02,269
+information that we need this s is the spectral sensitivity of the sensor in
+
+159
+00:15:02,269 --> 00:15:10,309
+this example would be the blue line, the I calibration is the spectral output of
+
+160
+00:15:10,309 --> 00:15:15,649
+the light source we use to calibrate the sensor it could be the Sun it could be
+
+161
+00:15:15,649 --> 00:15:19,909
+an electric light, and then this I measurement is the spectral output of
+
+162
+00:15:19,909 --> 00:15:24,909
+the lamp that we're trying to measure it might be this led for example.
+
+163
+00:15:24,909 --> 00:15:33,309
+What I'm about to show you is error calculations using this equation for all
+
+164
+00:15:33,309 --> 00:15:42,009
+six of these quantum sensors that I have spectral information for right here.
+
+165
+00:15:42,009 --> 00:15:50,830
+The table shows data where we use sunlight on a clear day as
+
+166
+00:15:50,830 --> 00:15:56,320
+the calibration source and so all of them have zero error under sunlight and
+
+167
+00:15:56,320 --> 00:16:00,370
+you can see what kind of errors they have for a whole bunch of other light
+
+168
+00:16:00,370 --> 00:16:06,700
+sources. We've got sun spectrum on a cloudy day, a Sun spectrum that's
+
+169
+00:16:06,700 --> 00:16:11,700
+reflected from a grass canopy. You can actually in addition to measuring
+
+170
+00:16:11,700 --> 00:16:15,820
+incoming radiation you know some applications you might want to invert
+
+171
+00:16:15,820 --> 00:16:19,930
+the quantum sensor like this and measure reflected radiation from the plant
+
+172
+00:16:19,929 --> 00:16:24,099
+canopy. If you have a measurement of incoming radiation and a measurement of
+
+173
+00:16:24,100 --> 00:16:28,690
+reflected radiation, it tells you how much of the photosynthetic radiation is
+
+174
+00:16:28,690 --> 00:16:33,550
+being absorbed by the plants at the surface. Bruce just mentioned in
+
+175
+00:16:33,549 --> 00:16:39,789
+the previous talk that if this were a silicon-cell pyrometer you can't invert
+
+176
+00:16:39,789 --> 00:16:44,379
+it like that and make measurements of the surface because there's large
+
+177
+00:16:44,379 --> 00:16:48,519
+spectral errors that are associated with doing that and he showed a table of some
+
+178
+00:16:48,519 --> 00:16:52,870
+of those errors. Using a quantum sensor, however, one of these PAR sensors that's
+
+179
+00:16:52,870 --> 00:16:56,139
+designed to measure photosynthetic radiation instead of the solar radiation
+
+180
+00:16:56,139 --> 00:17:02,439
+you can take it and invert it like this and these numbers here reflected from
+
+181
+00:17:02,440 --> 00:17:08,170
+glass gives you an idea of what kind of error you can expect when you invert a
+
+182
+00:17:08,170 --> 00:17:12,789
+quantum sensor. Oftentimes, I'm going to talk about this particular
+
+183
+00:17:12,789 --> 00:17:16,990
+application in a little bit more detail in a minute, we want to put quantum
+
+184
+00:17:16,990 --> 00:17:20,769
+sensors underneath plant canopies and measure how much of the photosynthetic
+
+185
+00:17:20,769 --> 00:17:24,879
+radiation is transmitted through the plant canopy. Here's the kind of
+
+186
+00:17:24,880 --> 00:17:31,870
+errors you can expect if you measure underneath plant canopies. This is data
+
+187
+00:17:31,869 --> 00:17:37,418
+for a wheat canopy. I think I failed to mention that all of
+
+188
+00:17:37,419 --> 00:17:45,429
+the numbers that you see here are percentages so not actual radiation units,
+
+189
+00:17:45,429 --> 00:17:49,870
+so not micro moles per meter squared per second but percentages. Then we have a
+
+190
+00:17:49,869 --> 00:17:56,109
+whole list of of electric lights that people might use in a greenhouse or a
+
+191
+00:17:56,109 --> 00:18:02,589
+growth chamber environment. A couple things that you can see by
+
+192
+00:18:02,589 --> 00:18:08,859
+looking at the data in this table is that all of them work quite well for
+
+193
+00:18:08,859 --> 00:18:17,069
+most of the radiation sources on there except for the Apogee model SQ-110.
+
+194
+00:18:17,069 --> 00:18:25,659
+Some of these LEDs you can see the errors get pretty large that's because
+
+195
+00:18:25,660 --> 00:18:29,769
+of the data I showed you on the previous table it doesn't have an excellent match
+
+196
+00:18:29,769 --> 00:18:35,099
+to the photosynthetic definition or the definition of photosynthetic radiation.
+
+197
+00:18:35,099 --> 00:18:40,599
+You want to be careful using quantum sensors for certain radiation
+
+198
+00:18:40,599 --> 00:18:44,649
+sources. You want to make sure that they are going to capture the photons that
+
+199
+00:18:44,650 --> 00:18:53,230
+you're trying to capture. You'll notice of the other sensors some of
+
+200
+00:18:53,230 --> 00:18:59,910
+the worst errors also tend to be LEDs. Here's a 3.8 % and
+
+201
+00:18:59,910 --> 00:19:05,820
+3.6 % that's an LED. A 3.0 % over there that's an LED.
+
+202
+00:19:05,819 --> 00:19:10,178
+LEDs are tricky to measure so for those of you that are working in greenhouses
+
+203
+00:19:10,179 --> 00:19:17,679
+and measuring LEDs sometimes the best option for that might be a spectroradiiometer.
+
+204
+00:19:17,679 --> 00:19:22,419
+As I mentioned when I was talking about the differences
+
+205
+00:19:22,419 --> 00:19:25,780
+between quantum sensors and spectroradiometers if you're
+
+206
+00:19:25,779 --> 00:19:30,039
+spectroradiometer is calibrated accurately because it's measuring all
+
+207
+00:19:30,039 --> 00:19:35,769
+the wavelengths individually then spectral error doesn't exist. We don't
+
+208
+00:19:35,769 --> 00:19:38,658
+have to worry about spectral error with the spectroradiometer.
+
+209
+00:19:38,659 --> 00:19:43,940
+The main difference, so you might be asking well if this is the case why
+
+210
+00:19:43,940 --> 00:19:47,210
+would I ever use a quantum sensor to measure PAR wouldn't I just use a
+
+211
+00:19:47,210 --> 00:19:52,399
+spectroradiometer every time? The difference is the price tag. Quantum
+
+212
+00:19:52,398 --> 00:19:57,488
+sensors tend to be in the low hundreds to maybe the mid hundreds in terms of cost.
+
+213
+00:19:57,489 --> 00:20:01,909
+Spectroradiometers tend to be an order of magnitude higher. They're in the
+
+214
+00:20:01,909 --> 00:20:07,159
+thousands, the low thousands to maybe even the mid to higher thousands.
+
+215
+00:20:07,159 --> 00:20:12,229
+That is the real difference. Quantum sensors are often the measurement of choice because
+
+216
+00:20:12,229 --> 00:20:19,249
+they give you accuracy that's good enough for the application, and they're
+
+217
+00:20:19,249 --> 00:20:27,019
+much lower cost. This is just a brief comparison of everything we've
+
+218
+00:20:27,019 --> 00:20:32,239
+covered up to this point quantum sensors are subject to spectral error, spectroradiometers
+
+219
+00:20:32,239 --> 00:20:36,379
+are not if they're calibrated accurately. Quantum sensors
+
+220
+00:20:36,378 --> 00:20:40,819
+give you a broadband measurement meaning one number or one signal that's
+
+221
+00:20:40,819 --> 00:20:46,009
+proportional to PAR so you can only get PAR from a quantum sensor. A spectroradiometer
+
+222
+00:20:46,009 --> 00:20:49,759
+not only do you get PAR, you get the spectrum if the spectrum is
+
+223
+00:20:49,759 --> 00:20:58,069
+required. Then I just talked about the differences in price. A couple
+
+224
+00:20:58,069 --> 00:21:01,788
+more review points there's lots of commercial quantum sensors available and
+
+225
+00:21:01,788 --> 00:21:07,929
+I showed a least six of them and their spectral errors and many of them have
+
+226
+00:21:07,929 --> 00:21:11,809
+minimal errors less than 5 % when measuring lots of different light
+
+227
+00:21:11,808 --> 00:21:21,440
+sources. Then remember PAR is almost universally reported as photosynthetic
+
+228
+00:21:21,440 --> 00:21:25,820
+photon flux density and units of micro moles per meter squared per second, but
+
+229
+00:21:25,819 --> 00:21:29,778
+it can be converted to other units if the spectrum is known.
+
+230
+00:21:29,778 --> 00:21:34,548
+The reason that I put this point up here is often we get people that contact
+
+231
+00:21:34,548 --> 00:21:40,398
+us that they need measurements in units of watts per meter squared or even units
+
+232
+00:21:40,398 --> 00:21:44,778
+of lumens per meter squared (lux) on occasion. These units aren't often
+
+233
+00:21:44,778 --> 00:21:48,798
+used in environmental applications and plant science but on occasion that they
+
+234
+00:21:48,798 --> 00:21:54,648
+are you can convert PPFD measurements from a quantum sensor to
+
+235
+00:21:54,648 --> 00:22:03,558
+other units if you know the spectrum. It's possible to do that. Bruce showed a
+
+236
+00:22:03,558 --> 00:22:09,108
+table like this for Apogee pyranometers here's similar information for Apogee
+
+237
+00:22:09,108 --> 00:22:12,539
+quantum sensors just some specifications to give you an idea of the performance.
+
+238
+00:22:12,539 --> 00:22:19,489
+The directional response or the cosine response for a quantum sensor is
+
+239
+00:22:19,489 --> 00:22:25,358
+very, very similar to the cosine response from pyranometer. The temperature response
+
+240
+00:22:25,358 --> 00:22:32,449
+is also similar. The stability is a little bit better for the quantum
+
+241
+00:22:32,450 --> 00:22:38,319
+sensors that we tested and the calibration uncertainty is listed there.
+
+242
+00:22:40,950 --> 00:22:44,580
+Let's skip over that summary slide just because we've pretty much discussed
+
+243
+00:22:44,579 --> 00:22:47,849
+everything already. I mentioned i wanted to talk about a specific
+
+244
+00:22:47,849 --> 00:22:52,199
+application, intercepted radiation. I want to show you something really quick
+
+245
+00:22:52,200 --> 00:22:56,990
+before we go through the slides I thought it was interesting. This is a
+
+246
+00:22:56,990 --> 00:23:03,059
+little brochure from Western Sydney University that I picked up yesterday
+
+247
+00:23:03,059 --> 00:23:09,980
+here in the Hawkesbury Institute. There's a part I'll blow it up on the
+
+248
+00:23:09,980 --> 00:23:14,329
+document camera so you can see it.
+
+249
+00:23:28,720 --> 00:23:31,558
+Here we go.
+
+250
+00:23:34,169 --> 00:23:42,028
+This is actually a picture and a short caption from the brochure
+
+251
+00:23:42,028 --> 00:23:46,278
+that I found here at the institute yesterday. It says this
+
+252
+00:23:46,278 --> 00:23:50,788
+photosynthetically active radiation sensor measures light intensity below
+
+253
+00:23:50,788 --> 00:23:55,769
+the canopy. These are combined with sensors above the canopy to estimate how
+
+254
+00:23:55,769 --> 00:24:01,769
+much shading is occurring, which correlates to the amount of leaf area.
+
+255
+00:24:01,769 --> 00:24:09,989
+One application of these power measurements is above canopy and below
+
+256
+00:24:09,989 --> 00:24:15,808
+canopy measurements to try to estimate how much radiation is being absorbed by
+
+257
+00:24:15,808 --> 00:24:21,028
+the plant canopy, and how much is being transmitted to the soil surface. From
+
+258
+00:24:21,028 --> 00:24:25,288
+that information, not only does it tell us how much of the photosynthetic
+
+259
+00:24:25,288 --> 00:24:29,489
+radiation are the plants absorbing but it also tells us something about the
+
+260
+00:24:29,489 --> 00:24:34,858
+leaf area, in between the sensor that is above the canopy and the sensor
+
+261
+00:24:34,858 --> 00:24:39,239
+that's below the canopy. This application is actually taking place
+
+262
+00:24:39,239 --> 00:24:43,590
+right here at this Institute. I'll talk a little bit about it for just a
+
+263
+00:24:43,589 --> 00:24:48,349
+second. Let's switch back over
+
+264
+00:24:49,319 --> 00:24:55,368
+to the slides. I actually have a picture here of
+
+265
+00:24:55,368 --> 00:25:01,558
+what's called
+
+266
+00:25:01,558 --> 00:25:06,868
+a line quantum sensor and making a measurement
+
+267
+00:25:06,868 --> 00:25:12,329
+of the radiation underneath the corn canopy. Here I'm showing a crop canopy
+
+268
+00:25:12,329 --> 00:25:17,308
+but you could do this for you a pasture or an orchard or a forest,
+
+269
+00:25:17,308 --> 00:25:24,388
+whatever, you are interested in. A line quantum sensor is just like this
+
+270
+00:25:24,388 --> 00:25:29,308
+quantum sensor except for there are multiple sensors along the line. This
+
+271
+00:25:29,308 --> 00:25:33,749
+specific one has ten sensors. Each one of these circles that you see here is a
+
+272
+00:25:33,749 --> 00:25:39,749
+sensor. Those ten sensors are spread along a bar that's approximately 70
+
+273
+00:25:39,749 --> 00:25:43,950
+centimeters long. The reason that you want multiple sensors when you make
+
+274
+00:25:43,950 --> 00:25:49,769
+under canopy measurements is that, the and you can see it in this picture, the
+
+275
+00:25:49,769 --> 00:25:55,798
+light environment underneath the plant canopy is not uniform. You can see
+
+276
+00:25:55,798 --> 00:25:59,308
+these two sensors up here are in a light Fleck where they're actually getting a
+
+277
+00:25:59,308 --> 00:26:04,259
+lot of sunlight all the rest of the sensors are in the shade. When you
+
+278
+00:26:04,259 --> 00:26:08,249
+make measurements of radiation underneath the canopy with the line
+
+279
+00:26:08,249 --> 00:26:16,319
+quantum sensor, remember that the radiation is often non-uniform. It works
+
+280
+00:26:16,319 --> 00:26:19,589
+really well to measure with the line quantum sensor because then you get an
+
+281
+00:26:19,589 --> 00:26:26,668
+average along the length of the line and radiation under the
+
+282
+00:26:26,669 --> 00:26:30,570
+canopy should be measured in multiple locations because it's
+
+283
+00:26:30,569 --> 00:26:36,269
+no-uniform. It often works best to make a measurement in one location, move it and
+
+284
+00:26:36,269 --> 00:26:39,599
+make a measurement in another location, move it make a measurement in another
+
+285
+00:26:39,599 --> 00:26:45,028
+location, and average the numbers that way you get a pretty representative idea
+
+286
+00:26:45,028 --> 00:26:50,759
+of what the mean radiation environment is like underneath the
+
+287
+00:26:50,759 --> 00:26:56,028
+canopy and also how variable it is.
+
+288
+00:26:57,930 --> 00:27:03,340
+Just to give you an idea the equations are pretty simple where the
+
+289
+00:27:03,339 --> 00:27:08,949
+intercepted radiation, you just measure the photosynthetic radiation above the
+
+290
+00:27:08,950 --> 00:27:17,440
+canopy and below the canopy. The transmittance is the below canopy
+
+291
+00:27:17,440 --> 00:27:22,600
+measurement divided by the above canopy measurement, and then the fraction
+
+292
+00:27:22,599 --> 00:27:30,369
+intercepted is 1 minus the transmittance. You have to have a quantum sensor
+
+293
+00:27:30,369 --> 00:27:36,849
+above the plant and then a line quantum sensor below the plant. Pretty
+
+294
+00:27:36,849 --> 00:27:39,939
+straightforward and then you just plug the numbers in to get intercepted
+
+295
+00:27:39,940 --> 00:27:48,640
+radiation, transmittance, and the fraction of intercepted radiation. For a
+
+296
+00:27:48,640 --> 00:27:54,070
+relatively sparse canopy like this one here, you know the leaf area index might
+
+297
+00:27:54,069 --> 00:27:58,779
+be roughly one meter squared of leaf area per meter squared of ground
+
+298
+00:27:58,779 --> 00:28:03,970
+area. In the middle of the day, on a sunny day, the transmittance would be about
+
+299
+00:28:03,970 --> 00:28:08,470
+50 % where roughly half of the sunlight that you're measuring above the
+
+300
+00:28:08,470 --> 00:28:13,360
+canopy would actually get transmitted below the canopy. If we were to move to
+
+301
+00:28:13,359 --> 00:28:17,589
+something like this, where we have a much higher leaf area index a something on
+
+302
+00:28:17,589 --> 00:28:22,119
+the order of 5 meters squared per meter squared in the middle of the day on a
+
+303
+00:28:22,119 --> 00:28:27,369
+sunny day the transmittance would be about an order of magnitude lower, closer
+
+304
+00:28:27,369 --> 00:28:31,359
+to 5 % of the radiation above the canopy is going to get transmitted
+
+305
+00:28:31,359 --> 00:28:39,250
+to the soil below the canopy. Once we have this information, once we have
+
+306
+00:28:39,250 --> 00:28:45,190
+the transmittance we can actually get some sense of the leaf area index if
+
+307
+00:28:45,190 --> 00:28:51,150
+that's what we're interested in. This shows you a four different plost of
+
+308
+00:28:51,150 --> 00:28:58,240
+transmittance as a function of leaf area index and this would be for a solar
+
+309
+00:28:58,240 --> 00:29:01,859
+zenith angle of 20 degrees on a relatively clear day.
+
+310
+00:29:01,859 --> 00:29:07,269
+The reason that we have four different lines and they are spaced like that is not
+
+311
+00:29:07,269 --> 00:29:16,210
+only does the leaf area influence the transmittance but the orientation of
+
+312
+00:29:16,210 --> 00:29:20,710
+the leaves can also have a big impact on the transmittance. The green line
+
+313
+00:29:20,710 --> 00:29:25,710
+would represent a canopy where most of the leaves are positioned horizontally,
+
+314
+00:29:25,710 --> 00:29:32,288
+where as the red line would represent a canopy where most of the leaves are positioned vertically.
+
+315
+00:29:32,288 --> 00:29:37,869
+Turns out the most plant canopies, I'm not as familiar with forests, but crops tend to
+
+316
+00:29:37,869 --> 00:29:43,329
+be somewhere near these two black lines where you have a fairly even
+
+317
+00:29:43,329 --> 00:29:53,379
+distribution of both horizontal and vertical leave. There's what the data
+
+318
+00:29:53,380 --> 00:30:00,990
+looks like now at a solar zenith angle of 60 degrees. I will toggle back once just so you can see.
+
+319
+00:30:00,990 --> 00:30:08,649
+It also shows use that not only does leaf area in the position or the orientation
+
+320
+00:30:08,648 --> 00:30:13,569
+of the leaves have a big influence on transmittance but so does the position
+
+321
+00:30:13,569 --> 00:30:21,939
+of the Sun. If we know something about the the leaf angle distribution or
+
+322
+00:30:21,940 --> 00:30:28,690
+if we can make measurements when all of the lines are you know converged or
+
+323
+00:30:28,690 --> 00:30:33,519
+close to one another, we can get a good idea of the the leaf area index of our
+
+324
+00:30:33,519 --> 00:30:38,710
+canopy of interest. I've actually been working on a research project in an
+
+325
+00:30:38,710 --> 00:30:45,819
+alfalfa canopy over the summer and we wanted to to get some idea of the leaf
+
+326
+00:30:45,819 --> 00:30:50,889
+area index as a function of the height of the the plant canopy, and so we made a
+
+327
+00:30:50,890 --> 00:30:57,940
+couple measurements in the recent past at different heights. One was here when
+
+328
+00:30:57,940 --> 00:31:04,509
+the alfalfa was 17 centimeters tall. We got a transmission of about
+
+329
+00:31:04,509 --> 00:31:11,230
+20 % that would correspond to a leaf area of about 1.7 to 1.8 meters
+
+330
+00:31:11,230 --> 00:31:15,160
+squared per meter squared. Then we made measurements later in the growing
+
+331
+00:31:15,160 --> 00:31:22,180
+when the alfalfa was much taller. It was about 64 centimeters tall and we got a
+
+332
+00:31:22,180 --> 00:31:26,860
+transmittance that was an order of magnitude lower that would correspond to
+
+333
+00:31:26,859 --> 00:31:32,889
+a leaf area of about 4.7 or 4.8 meters square meter squared. It turns out that
+
+334
+00:31:32,890 --> 00:31:42,820
+these estimates of leaf area 1.8 for a 17 centimeter alfalfa and 4.7 for 64
+
+335
+00:31:42,819 --> 00:31:50,799
+centimeter alfalfa are very close to actual values if we were to sample the
+
+336
+00:31:50,799 --> 00:31:55,359
+leaves, destructively sample the leaves and measure the leaf area we would get
+
+337
+00:31:55,359 --> 00:32:01,529
+very similar numbers. You can if you're careful with the measurements use
+
+338
+00:32:01,529 --> 00:32:05,500
+transmittance data from from quantum sensors measuring above and below the
+
+339
+00:32:05,500 --> 00:32:13,480
+canopy to get some idea of leaf area and canopy architectures. Real quick, I
+
+340
+00:32:13,480 --> 00:32:18,099
+mentioned reflected radiation minute ago so it won't spend too much time on this
+
+341
+00:32:18,099 --> 00:32:25,149
+slide. You can also measure reflected radiation using quantum sensors where
+
+342
+00:32:25,150 --> 00:32:37,150
+you orient one up and one down and then the the one measuring the reflectance if
+
+343
+00:32:37,150 --> 00:32:42,640
+you take the ratio of those two numbers you get the reflectance and one minus
+
+344
+00:32:42,640 --> 00:32:46,720
+that number gives you the amount of or the fraction of the photosynthetic
+
+345
+00:32:46,720 --> 00:32:52,779
+radiation that was absorbed by the plant canopy. It gives you an idea of how
+
+346
+00:32:52,779 --> 00:33:00,269
+much radiation is being absorbed by the plant canopy and used for photosynthesis.
+
+347
+00:33:00,269 --> 00:33:05,319
+Just a couple points here. The sensor should be level for both the upward and
+
+348
+00:33:05,319 --> 00:33:10,990
+downward measurements. The upward measurement it's obvious why that
+
+349
+00:33:10,990 --> 00:33:15,759
+one has to be level Bruce talked about this in his presentation. If it's tilted
+
+350
+00:33:15,759 --> 00:33:20,019
+a little bit one way or the other, you can actually get pretty significant
+
+351
+00:33:20,019 --> 00:33:24,129
+errors on a sunny day. If you're tilted a little bit towards the Sun it's actually
+
+352
+00:33:24,130 --> 00:33:28,930
+going to read quite a bit higher than it should if it was level.
+
+353
+00:33:28,930 --> 00:33:33,100
+If it happens to be not level and tilted a little bit away from the Sun, you'll
+
+354
+00:33:33,099 --> 00:33:36,699
+get a measurement that's a lot lower than it should be. The reason it's
+
+355
+00:33:36,700 --> 00:33:43,630
+important to make sure the downward one is close to level as well so that in a
+
+356
+00:33:43,630 --> 00:33:46,930
+place like Logan Utah where Bruce and I come from it wouldn't matter that much
+
+357
+00:33:46,930 --> 00:33:51,880
+because the entire valley where we live is surrounded by tall mountain, but in
+
+358
+00:33:51,880 --> 00:33:56,050
+places where it's flat when the Sun first comes up over the horizon you want
+
+359
+00:33:56,049 --> 00:34:00,279
+to make sure thatthe direct sunlight doesn't hit the diffuser and if
+
+360
+00:34:00,279 --> 00:34:04,389
+it's tilted a little bit one way or the other in the in the early morning or
+
+361
+00:34:04,390 --> 00:34:08,320
+late evening hours you might actually get some direct sunlight hitting the
+
+362
+00:34:08,320 --> 00:34:11,950
+sensor that's not reflected from the surface&gt; You just want to be careful that
+
+363
+00:34:11,949 --> 00:34:16,319
+you that you level both sensors.
+
+364
+00:34:16,619 --> 00:34:20,819
+I believe that's all I had for the quantum sensors, any questions about
+
+365
+00:34:20,820 --> 00:34:25,900
+photosynthetically active radiation, measurements above canopy or below
+
+366
+00:34:25,900 --> 00:34:30,429
+canopy?
+
+367
+00:34:32,619 --> 00:34:41,358
+
+
+368
+00:34:41,358 --> 00:34:46,369
+I think that depends on I think that really depends on you and what you want to quantify for
+
+369
+00:34:46,369 --> 00:34:52,010
+application but and I think in my opinion that, and I'm not a tree expert you
+
+370
+00:34:52,010 --> 00:34:57,319
+would want to know probably still a horizontal measurement because you know
+
+371
+00:34:57,318 --> 00:35:04,099
+the bottom of the the tree canopy is roughly pair parallel to the ground
+
+372
+00:35:04,099 --> 00:35:13,130
+correct? A right angle, okay there you go but I think that you know it depends on
+
+373
+00:35:13,130 --> 00:35:16,818
+which orientation you're interested in quantifying the radiation. I don't know
+
+374
+00:35:16,818 --> 00:35:24,949
+that there's a right or wrong answer to that question. You could do either. Any
+
+375
+00:35:24,949 --> 00:35:27,949
+others? Yeah, Bruce.
+
+376
+00:35:27,949 --> 00:35:33,799
+Bruce: Let me mention this people have long predicted
+
+377
+00:35:33,800 --> 00:35:41,730
+photosynthetic radiation from shortwave if you measure one you can precict the other. Mark and Ijust wrote a
+
+378
+00:35:41,730 --> 00:35:48,929
+book chapter for American Society of Agronomy on shortwave radiation, photosynthetic, and UV.
+
+379
+00:35:48,929 --> 00:35:55,889
+The chapter talks about the challenges of predicting one from
+
+380
+00:35:55,889 --> 00:36:02,000
+the other. It is in more detail than it is here, but that's a forthcoming book
+
+381
+00:36:02,000 --> 00:36:05,219
+chapter about ratios of radiation.
+
+382
+00:36:05,219 --> 00:36:09,480
+Mark: This is actually a really good point.
+
+383
+00:36:09,480 --> 00:36:14,059
+Historically weather stations have never had quantum sensors on them.
+
+384
+00:36:14,059 --> 00:36:18,929
+Quantum sensors have really been only been in existence since I guess the
+
+385
+00:36:18,929 --> 00:36:24,929
+early 1970's but they've only really been in widespread use for maybe the past few
+
+386
+00:36:24,929 --> 00:36:29,779
+years. It's not common that you would find a weather station that has a
+
+387
+00:36:29,780 --> 00:36:35,370
+pyrometer on it to give you solar radiation and the quantum sensor on give
+
+388
+00:36:35,369 --> 00:36:40,829
+you photosynthetically active radiation, but there could be you know applications
+
+389
+00:36:40,829 --> 00:36:46,199
+where you need to takeweather data from a weather station and
+
+390
+00:36:46,199 --> 00:36:50,639
+one of the pieces of information that you need is the photosynthetically
+
+391
+00:36:50,639 --> 00:36:55,500
+active radiation. Bruce is correct you can actually
+
+392
+00:36:55,500 --> 00:37:01,050
+estimate photosynthetically active radiation from pyranometer
+
+393
+00:37:01,050 --> 00:37:06,450
+measurements of solar radiation. If you're interested in doing that, again
+
+394
+00:37:06,449 --> 00:37:10,889
+grab my card and send me an email. I can provide you with some information. The
+
+395
+00:37:10,889 --> 00:37:16,170
+model that allows you to calculate photosynthetic photon flux from solar
+
+396
+00:37:16,170 --> 00:37:20,369
+radiation measurements is pretty simple but there are some coefficients in there
+
+397
+00:37:20,369 --> 00:37:24,599
+that can introduce some error and the coefficients are also dependent on the
+
+398
+00:37:24,599 --> 00:37:28,559
+sky conditions. If you're interested in that or want more detail, I would
+
+399
+00:37:28,559 --> 00:37:33,639
+gladly talk to you, just see me afterwards or grab my card.
+
+400
+00:37:33,639 --> 00:37:42,278
+Any other comments or questions? Cool just a couple of slides on UV that I can metntion
+
+401
+00:37:42,278 --> 00:37:47,500
+briefly. I can do those now I think lunch was supposed to be 12:30 so we are right on schedule.
+
+402
+00:37:47,500 --> 00:37:52,869
+I'll just chat about UV real quick. I don't
+
+403
+00:37:52,869 --> 00:38:02,278
+have a lot to say. I actually failed to mention one point, sorry about that.
+
+404
+00:38:02,278 --> 00:38:08,230
+If you're anxiously awaiting to get to UV wait we'll get there in one
+
+405
+00:38:08,230 --> 00:38:12,969
+second I forgot this last point on my slide. You can actually
+
+406
+00:38:12,969 --> 00:38:18,730
+measure reflected radiation using a single sensor if you want to. What I
+
+407
+00:38:18,730 --> 00:38:22,869
+said before is you have one mounted like this that is level and then a second one
+
+408
+00:38:22,869 --> 00:38:26,380
+mounted like this that was level. That's how you would do it if you wanted to
+
+409
+00:38:26,380 --> 00:38:30,519
+like continuously measure it over the course of a growing season. If you
+
+410
+00:38:30,518 --> 00:38:34,719
+want to do this instantaneously, you can actually take your sensor and measure it
+
+411
+00:38:34,719 --> 00:38:39,250
+in this position and then flip it upside down and measure it in this position.
+
+412
+00:38:39,250 --> 00:38:46,768
+Just be careful when you do that that during the time interval that it's here
+
+413
+00:38:46,768 --> 00:38:52,328
+to here that the radiation doesn't change, otherwise you'll get an incorrect
+
+414
+00:38:52,329 --> 00:38:57,490
+number because the incoming number changed. So on a clear sunny day, no
+
+415
+00:38:57,489 --> 00:39:02,979
+problem. Measure here, flip it over and level it and measure here but on a day
+
+416
+00:39:02,980 --> 00:39:06,490
+when it's intermittently cloudy you have to be really careful doing something
+
+417
+00:39:06,489 --> 00:39:12,008
+like that. I probably wouldn't recommend it because the clouds can actually
+
+418
+00:39:12,009 --> 00:39:19,119
+change the incoming radiation very quickly. You can put a sensor and maybe
+
+419
+00:39:19,119 --> 00:39:22,500
+we can even do this at lunch if you're interested because I think it kind of is
+
+420
+00:39:22,500 --> 00:39:27,039
+intermittently cloudy today we can go plug this USB sensor into a computer and
+
+421
+00:39:27,039 --> 00:39:32,799
+you can watch how dynamic the radiation is on a cloudy day. It changes rapidly
+
+422
+00:39:32,798 --> 00:39:38,889
+and sometimes by a large amounts. If  it's cloudy, especially intermittently
+
+423
+00:39:38,889 --> 00:39:41,710
+cloudy you don't want to measure here and then flip it over and measure here.
+
+424
+00:39:41,710 --> 00:39:45,250
+You want to be confident the radiation, the background or the incoming radiation
+
+425
+00:39:45,250 --> 00:39:48,889
+stays the same if you're going using the same sensor and then invert it
+
+426
+00:39:48,889 --> 00:39:55,949
+because the measurements are separated by time.
+

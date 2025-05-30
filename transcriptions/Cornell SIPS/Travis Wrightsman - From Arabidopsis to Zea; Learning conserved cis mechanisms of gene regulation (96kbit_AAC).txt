@@ -1,0 +1,1675 @@
+[SPEAKER_00]: This is a production of Cornell
+University.
+[SPEAKER_02]: And so, yeah, it is a real pleasure to
+introduce Travis Reitzman for his defense.
+[SPEAKER_02]: He was born and raised in LA, and so he
+and my wife have always connected over
+[SPEAKER_02]: being Southern Californians and things
+like that.
+[SPEAKER_02]: But he did his bachelor's at UC Riverside
+in biochemistry, got started in
+[SPEAKER_02]: understanding, in his world of
+understanding bioinformatics and genomics,
+[SPEAKER_02]: working with Sue Wessler, who was an
+incredibly important figure in everybody
+[SPEAKER_02]: in mace genetics today.
+[SPEAKER_02]: But he worked with her to start really
+annotating transposable elements in the
+[SPEAKER_02]: citrus genome.
+[SPEAKER_02]: And I think really started forming his
+ideas on how bioinformatics should be
+[SPEAKER_02]: done, how it should be shared with the
+community and everything.
+[SPEAKER_02]: He then applied to Cornell, got in here.
+[SPEAKER_02]: We were excited to have him.
+[SPEAKER_02]: But he also got a Fulbright also.
+[SPEAKER_02]: And so he said, Ed, I don't want to start
+here.
+[SPEAKER_02]: I'm going to go to Germany.
+[SPEAKER_02]: So he went to Germany for a year and
+worked with Detlef Eigel's group.
+[SPEAKER_02]: And there he helped develop a pipeline of
+automated assembly and annotation of
+[SPEAKER_02]: Arabidopsis genome.
+[SPEAKER_02]: So it was really important for
+understanding the strengths and weaknesses
+[SPEAKER_02]: of grafts at the time.
+[SPEAKER_02]: He then joined us in 2018.
+[SPEAKER_02]: And he's going to be telling you about his
+research there.
+[SPEAKER_02]: But as part of that, he also took some
+time off to work with Google X.
+[SPEAKER_02]: And he's wearing his Google X t-shirt
+today.
+[SPEAKER_02]: But I think you'll see that there's a very
+strong streak in Travis of both public
+[SPEAKER_02]: sector commitment, but also wanting to
+understand how industry has worked in
+[SPEAKER_02]: putting those two together.
+[SPEAKER_02]: He's going to go back to Germany to do a
+postdoc in bioinformatics.
+[SPEAKER_02]: And I'm sure he'll do great things.
+[SPEAKER_02]: But every graduate student brings their
+strengths and weaknesses to graduate
+[SPEAKER_02]: school.
+[SPEAKER_02]: But what I really want to highlight about
+Travis is this perspective he has on
+[SPEAKER_02]: science.
+[SPEAKER_02]: And he's one of the graduate students,
+I would argue, that has thought more
+[SPEAKER_02]: deeply about how science and technology
+should be developed.
+[SPEAKER_02]: And he really was asking fundamental
+questions about, what does it mean to
+[SPEAKER_02]: conduct an experiment?
+[SPEAKER_02]: How should experiments be repeated?
+[SPEAKER_02]: How does one share and repeat these
+experimental findings?
+[SPEAKER_02]: And then what are really the strengths and
+weaknesses of public sector versus private
+[SPEAKER_02]: sector science?
+[SPEAKER_02]: And Travis was thinking about it last
+night.
+[SPEAKER_02]: You're kind of like a science philosopher,
+OK, who thinks about some of these things
+[SPEAKER_02]: about, how do we do science and make it
+repeatable?
+[SPEAKER_02]: But he also has that blue collar
+perspective of getting things done like
+[SPEAKER_02]: plant breeders need to get things done.
+[SPEAKER_02]: And it's that combination of things that's
+been really wonderful.
+[SPEAKER_02]: And so he's really been a leader of not
+only in our lab, but across the community
+[SPEAKER_02]: in establishing rigorous methods for
+designing and setting up scientific
+[SPEAKER_02]: computational pipelines so that our
+science can be repeatable.
+[SPEAKER_02]: And he's combined that with knowledge of
+really the front of machine learning,
+[SPEAKER_02]: whether here or working with Google X.
+[SPEAKER_02]: And although we tease Travis about his
+smartphone, which he has an American-made
+[SPEAKER_02]: open source smartphone, which probably
+took him about six months to make it so he
+[SPEAKER_02]: could take a picture or something like
+that.
+[SPEAKER_02]: I mean, it took a year before he could get
+the thing to take a picture, OK?
+[SPEAKER_02]: But it really emphasizes the way he
+tackles problems.
+[SPEAKER_02]: He wants to understand how things work and
+work on systems that other people can
+[SPEAKER_02]: participate in.
+[SPEAKER_02]: And I think as machine learning and AI
+become really even more distant and
+[SPEAKER_02]: unrelatable to people, I think Travis is
+really there trying to make sure that
+[SPEAKER_02]: we're doing science and employing these
+incredible powerful tools in a way that's
+[SPEAKER_02]: democratizing and really available to us.
+[SPEAKER_02]: So Travis, take it away and tell us all
+about how genes work and what we can do
+[SPEAKER_02]: with that knowledge.
+[SPEAKER_02]: All right.
+[SPEAKER_01]: Well, thank you very much, Ed.
+[SPEAKER_01]: And for the record, if I allowed my phone
+to install Zoom, I would definitely be
+[SPEAKER_01]: presenting from it today.
+[SPEAKER_01]: But regardless, that's not what you're
+here to listen to me talk about,
+[SPEAKER_01]: but rather the culmination of my PhD work
+that I've titled From Arabidopsis to Zia,
+[SPEAKER_01]: Learning Conserved, Sys Mechanisms of Gene
+Regulation.
+[SPEAKER_01]: Classic.
+[SPEAKER_01]: So my PhD has been broadly focused on
+these two research questions.
+[SPEAKER_01]: The first is, where are the causal loci in
+cis regulatory regions?
+[SPEAKER_01]: And second, how do we transfer knowledge
+across species?
+[SPEAKER_01]: And I'm talking to a breeding audience.
+[SPEAKER_01]: You might be wondering why I'm mentioning
+causal loci.
+[SPEAKER_01]: And the reality is that if you want to do
+efficient genome editing, you need to know
+[SPEAKER_01]: where the causal loci are to edit them.
+[SPEAKER_01]: And genome editing is just the latest
+methodology in the massive toolbox that
+[SPEAKER_01]: plant breeders have to make genetic gain.
+[SPEAKER_01]: So to borrow Ed's software analogy,
+we can see that breeding methodologies
+[SPEAKER_01]: have gone through sort of four major
+software revisions.
+[SPEAKER_01]: Version one, unconscious and mass
+selection, moving to version two,
+[SPEAKER_01]: where we get an idea of inheritance,
+control genetics, to version three with
+[SPEAKER_01]: marker-based methods and later on genomic
+selection.
+[SPEAKER_01]: And now today being in version four with
+tools such as genetic transformation and
+[SPEAKER_01]: genome editing.
+[SPEAKER_01]: And I want to emphasize here that all of
+these add on to each other.
+[SPEAKER_01]: Genome editing is certainly useful for
+classes of traits and problems,
+[SPEAKER_01]: but it doesn't replace other methods
+everywhere.
+[SPEAKER_01]: But marker-based methods are known to be
+poorly suited for actually finding these
+[SPEAKER_01]: causal loci and for a number of different
+reasons.
+[SPEAKER_01]: One, there's an ascertainment bias in the
+marker sets that are typically used to fit
+[SPEAKER_01]: these models.
+[SPEAKER_01]: They're a subset of the total pool of
+genomic variation that exists in
+[SPEAKER_01]: populations.
+[SPEAKER_01]: And further, you're only sampling the
+natural variation.
+[SPEAKER_01]: And if your trait requires some novel
+non-natural variation, then that's not an
+[SPEAKER_01]: option or doesn't exist in these marker
+sets.
+[SPEAKER_01]: And second, even if you were to sample all
+of the variation within a population,
+[SPEAKER_01]: you still quickly run into this NP problem
+where you have a lot more variance to
+[SPEAKER_01]: estimate effects for than you have
+observations in your breeding program.
+[SPEAKER_01]: So the question becomes, what's the right
+causal locus funnel?
+[SPEAKER_01]: How do we go from, for example,
+on the order of 83 million SNPs in elite
+[SPEAKER_01]: maize germplasm down to an order of about
+10,000 SNPs?
+[SPEAKER_01]: So we can start to either edit.
+[SPEAKER_01]: My second question going back is,
+how do we transfer knowledge across
+[SPEAKER_01]: species?
+[SPEAKER_01]: And so why might we want to do this?
+[SPEAKER_01]: Well, in the future, we're going to
+potentially need to breed thousands of
+[SPEAKER_01]: species.
+[SPEAKER_01]: Historically, breeding has focused their
+efforts on the food yield traits in about
+[SPEAKER_01]: 10 or so species.
+[SPEAKER_01]: But with increasing mean average
+temperatures, some species up to thousands
+[SPEAKER_01]: might need help being migrated to cooler
+climates.
+[SPEAKER_01]: And we're going to need to scale efforts
+in those without investing the same amount
+[SPEAKER_01]: that we have in these food yield crops.
+[SPEAKER_01]: And so I'd like to know, how can we take
+all the effort and data sets that we've
+[SPEAKER_01]: created in model plant species and
+transfer that knowledge into specialty and
+[SPEAKER_01]: orphan crops?
+[SPEAKER_01]: But it's known that these marker-based
+methods struggle to predict across distant
+[SPEAKER_01]: populations.
+[SPEAKER_01]: So we need new methods in order to
+actually do this transfer of knowledge
+[SPEAKER_01]: across species.
+[SPEAKER_01]: And so how do we do that?
+[SPEAKER_01]: We can do that by looking at conserved
+mechanisms and using those to transfer
+[SPEAKER_01]: knowledge.
+[SPEAKER_01]: So the central dogma obeyed by all across
+the tree of life, things like chromatin
+[SPEAKER_01]: that all eukaryotic genomes organize
+themselves into.
+[SPEAKER_01]: And why should we use other species to
+train models?
+[SPEAKER_01]: So first, more species is simply more
+training data.
+[SPEAKER_01]: And the deep learning models that I'm
+going to present to you guys today require
+[SPEAKER_01]: relatively large training data sets.
+[SPEAKER_01]: And this starts to alleviate the n less
+than p problem.
+[SPEAKER_01]: And if you can build models that can
+predict in held out species, this is a
+[SPEAKER_01]: pretty strong validation that your model's
+learning some biology.
+[SPEAKER_01]: Because we know that functional sequences
+are shared across long evolutionary
+[SPEAKER_01]: distances.
+[SPEAKER_01]: And it also helps you detect when you're
+overfitting when you're in poor NP
+[SPEAKER_01]: regimes.
+[SPEAKER_01]: And finally, it helps prevent the
+memorization of retrotransposons.
+[SPEAKER_01]: And because they evolve faster than their
+host gene, they're less likely to be
+[SPEAKER_01]: shared across evolutionary distances.
+[SPEAKER_01]: And this helps prevent the common problem
+with machine learning methods that sort of
+[SPEAKER_01]: memorize that retro elements are common in
+regulatory regions and don't learn the
+[SPEAKER_01]: real biology about those regulatory
+regions and just become transposons on
+[SPEAKER_01]: finders.
+[SPEAKER_01]: All right, so just a quick overview of
+what I'm going to talk to you guys about
+[SPEAKER_01]: today or my PhD in a slide.
+[SPEAKER_01]: So we're going to start with a DNA to
+chromatin model, move into an expression
+[SPEAKER_01]: based model that takes in the promoter and
+UTR sequence.
+[SPEAKER_01]: Go into some bioinformatics work I've been
+doing to find the functional transcription
+[SPEAKER_01]: factor binding sites from DNA,
+multiple sequence alignments, and finish
+[SPEAKER_01]: off with a really wonderful collaboration
+with the folks at University of Washington
+[SPEAKER_01]: where we built a core promoter to
+expression model.
+[SPEAKER_01]: All right, so DNA to chromatin.
+[SPEAKER_01]: So I'm going to go through what chromatin
+is and how we commonly measure it.
+[SPEAKER_01]: Why is it relevant for breeding?
+[SPEAKER_01]: Why do I think that we can even predict
+chromatin state from DNA?
+[SPEAKER_01]: And as a hint, we need both a concerned
+vocabulary and grammar, which I'll get
+[SPEAKER_01]: into.
+[SPEAKER_01]: Why are CNNs, the model I'm using here,
+well-suited for this?
+[SPEAKER_01]: How did I train them?
+[SPEAKER_01]: And how well do they work?
+[SPEAKER_01]: So we know that eukaryotic DNA is
+organized into chromatin.
+[SPEAKER_01]: And so we can see here some cartoon
+representations of histone proteins that
+[SPEAKER_01]: DNA wraps itself around.
+[SPEAKER_01]: And when they're particularly compact,
+even though these DNA sequences have
+[SPEAKER_01]: transcription factor binding sites,
+they can't be bound by transcription
+[SPEAKER_01]: factors unless they're more accessible and
+they can't then therefore regulate gene
+[SPEAKER_01]: expression.
+[SPEAKER_01]: So we measure chromatin accessibility many
+different ways, one of which is ATAC-seq.
+[SPEAKER_01]: And basically, ATAC-seq measures where a
+massive transposase comes in and can cut.
+[SPEAKER_01]: And it cuts preferentially in accessible
+regions.
+[SPEAKER_01]: These cut sites are put on the ends of
+reeds.
+[SPEAKER_01]: And you can align them to the genome and
+call peaks from them.
+[SPEAKER_01]: So these blue squares, for example,
+are binarized.
+[SPEAKER_01]: One or zero accessible or nonaccessible.
+[SPEAKER_01]: Another interesting result recently seen
+in the grasses is that many of these
+[SPEAKER_01]: accessible regions across tissues,
+almost all of them across tissues,
+[SPEAKER_01]: are also DNA unmethylated.
+[SPEAKER_01]: And this is really interesting because
+accessible chromatin is highly dynamic
+[SPEAKER_01]: over developmental time.
+[SPEAKER_01]: And so a lot of the peaks aren't shared
+across tissues.
+[SPEAKER_01]: And if we want to build models of them,
+they have to be tissue-somewhat specific.
+[SPEAKER_01]: But if we can build a single model of DNA
+methylation, then we can take it in one
+[SPEAKER_01]: tissue because DNA methylation is
+relatively stable over developmental time
+[SPEAKER_01]: and only use one model to predict these
+regions.
+[SPEAKER_01]: And I'm going to be referring to these
+peaks of lack of DNA methylation as UMRs.
+[SPEAKER_01]: And they're peaks where there is a lack of
+DNA methylation in all three contexts.
+[SPEAKER_01]: And just as a sort of example,
+you can see how consistent they are in
+[SPEAKER_01]: this region across leaf and roots.
+[SPEAKER_01]: So why should breeders care about
+accessible chromatin?
+[SPEAKER_01]: Well, we know that they actually contain
+functional variants.
+[SPEAKER_01]: So some prior work in the lab looked at
+the heritability proportion assignable to
+[SPEAKER_01]: SNPs in coding regions versus accessible
+chromatin regions across about 40 or so
+[SPEAKER_01]: agronomic traits.
+[SPEAKER_01]: And what they saw is that SNPs within
+coding regions explain almost as much
+[SPEAKER_01]: heritability as SNPs within coding
+regions, which we already know are
+[SPEAKER_01]: important.
+[SPEAKER_01]: So this has relevance.
+[SPEAKER_01]: So can we predict chromatin state directly
+from DNA sequence?
+[SPEAKER_01]: And why might we want to?
+[SPEAKER_01]: Well, only about 5% of the maize genome is
+unmethylated.
+[SPEAKER_01]: And so this would result in about a 20x
+reduction in the target space that we can
+[SPEAKER_01]: mutate within or should mutate within.
+[SPEAKER_01]: And quickly, why DNA-based models
+specifically?
+[SPEAKER_01]: So first, they are alignment-free.
+[SPEAKER_01]: And this is a common roadblock when you're
+doing cross-species analyses.
+[SPEAKER_01]: How do you get good cross-species
+alignments?
+[SPEAKER_01]: It can be very tricky.
+[SPEAKER_01]: Second, some samples we can only assay
+with DNA sequence.
+[SPEAKER_01]: For example, if you're collecting from an
+herbarium or other dead tissue samples,
+[SPEAKER_01]: it's really impossible to do something
+like chromatin assaying on those.
+[SPEAKER_01]: And nowadays, DNA sequencing is relatively
+cheap compared to things like ATAC-seq or
+[SPEAKER_01]: ChIP-seq.
+[SPEAKER_01]: Also, we have a pretty good idea on how
+DNA behaves over generations.
+[SPEAKER_01]: So we can model reconstructed ancestors or
+predicted plant breeding program progeny
+[SPEAKER_01]: and use those models to predict functional
+aspects of those non-existent organisms.
+[SPEAKER_01]: And so it's really this grammar between
+the transcription factor binding sites
+[SPEAKER_01]: that should be a strong regulatory signal
+from the genomic background.
+[SPEAKER_01]: And it could be helpful to think of these
+regulatory sequences as DNA in general as
+[SPEAKER_01]: sort of a sentence.
+[SPEAKER_01]: So the vocabulary are these transcription
+factor binding sites, so these colored
+[SPEAKER_01]: rectangles I'm showing here.
+[SPEAKER_01]: And the grammar is the spatial
+relationship or the co-binding between
+[SPEAKER_01]: these motifs.
+[SPEAKER_01]: And because the vocab is kind of short and
+very short, they're very degenerate.
+[SPEAKER_01]: They occur randomly by chance throughout
+the genome.
+[SPEAKER_01]: And just one TFBS is not really enough to
+say that that's regulatory.
+[SPEAKER_01]: But if you suddenly see a lot of them
+together in a certain orientation,
+[SPEAKER_01]: that's a better signal.
+[SPEAKER_01]: But are these things conserved across
+species?
+[SPEAKER_01]: We want to build across species models.
+[SPEAKER_01]: We need to leverage that.
+[SPEAKER_01]: So there's a reason to think from theory
+that these vocabularies conserved at least
+[SPEAKER_01]: across plants, because we know that the
+origin of a lot of these transcription
+[SPEAKER_01]: factor binding domains predate the plant
+expansion.
+[SPEAKER_01]: And so therefore, the motifs they bind to
+should be highly conserved and common in
+[SPEAKER_01]: plant genomes.
+[SPEAKER_01]: And as a more concrete example,
+more recent work out of the lab trained
+[SPEAKER_01]: Kamer binding models for about 100 or so
+maze transcription factors.
+[SPEAKER_01]: And so they related whether or not a Kamer
+was more present in a region bound by a
+[SPEAKER_01]: certain TF.
+[SPEAKER_01]: And if you take all of those TFs and you
+build a tree based on the relationship
+[SPEAKER_01]: between those Kamer weights, you can get
+this sort of tree that was built in maze.
+[SPEAKER_01]: And what's exciting to see is if you start
+to color those tips by the orthologous
+[SPEAKER_01]: transcription factor in Arabidopsis,
+the colors also group by the tree,
+[SPEAKER_01]: suggesting that there is some conservation
+of that binding vocabulary across at least
+[SPEAKER_01]: the angiosperms.
+[SPEAKER_01]: So going back, we know that the vocab is
+likely to be conserved, or at least
+[SPEAKER_01]: there's some evidence.
+[SPEAKER_01]: But we really don't know if the grammar is
+highly conserved.
+[SPEAKER_01]: And so that's my main hypothesis going
+into this work, is that the grammar is
+[SPEAKER_01]: conserved.
+[SPEAKER_01]: And we can use that to predict chromatin
+state from sequence.
+[SPEAKER_01]: So just an overview of the sort of
+classifier we're going to build here.
+[SPEAKER_01]: Going from a window of DNA sequence,
+can we put it into a model and get some
+[SPEAKER_01]: zero to one prediction of whether it's
+inaccessible, accessible?
+[SPEAKER_01]: Methylated or unmethylated?
+[SPEAKER_01]: We already know that CNNs, the model I'm
+using here, are pretty well suited for
+[SPEAKER_01]: this kind of task.
+[SPEAKER_01]: What I'm showing here is results from
+2015, one of the first CNNs, Deep-C,
+[SPEAKER_01]: to be applied to this in humans.
+[SPEAKER_01]: And so we know that this is a good
+classifier because all of these black
+[SPEAKER_01]: lines, which represent accessibility in
+different tissues, are far away from this
+[SPEAKER_01]: diagonal, which would be what the random
+classifier would be at.
+[SPEAKER_01]: And a year later, this other model,
+DanQ, showed that it can do slightly
+[SPEAKER_01]: better across all chromatin tasks that I
+just showed previously.
+[SPEAKER_01]: So these CNN models seem to be working.
+[SPEAKER_01]: And also much more recent work in plants
+in 2021 showed that they also do work well
+[SPEAKER_01]: with high area under the curves close to
+one.
+[SPEAKER_01]: So just a brief overview of what CNNs are
+and how they work.
+[SPEAKER_01]: So you can one-hot encode DNA as a matrix.
+[SPEAKER_01]: And the convolution layer in these CNNs,
+one of the first layers, is going to scan
+[SPEAKER_01]: over in Windows.
+[SPEAKER_01]: And it's going to match these
+convolutional kernels to each window.
+[SPEAKER_01]: And over time, it's going to learn what
+motifs are important to predict whatever
+[SPEAKER_01]: your target is.
+[SPEAKER_01]: And those, when it finds a match,
+is going to result in a high value that
+[SPEAKER_01]: goes into later layers.
+[SPEAKER_01]: And so this is well suited for this sort
+of detection of motifs problem.
+[SPEAKER_01]: And I use the DanQ model here specifically
+that I mentioned just previously because
+[SPEAKER_01]: it also has this LSTM layer, which is a
+recurrent layer that allows you to learn
+[SPEAKER_01]: not just whether a motif is present in a
+sequence, but also the co-presence of
+[SPEAKER_01]: motifs and what their spatial
+relationships are.
+[SPEAKER_01]: And this is exactly what I think should be
+a strong discriminator from genomic
+[SPEAKER_01]: background to regulatory regions.
+[SPEAKER_01]: But like I said earlier, these models are
+pretty large.
+[SPEAKER_01]: And DanQ has about 1.6 million parameters.
+[SPEAKER_01]: And it's a fairly small model for these
+days.
+[SPEAKER_01]: So the data that I'm going to use to train
+it is chromatin data across the
+[SPEAKER_01]: angiosperms from both monocots and dicots,
+so things like grape, common bean,
+[SPEAKER_01]: soybean, and then your grasses like rice
+maize and sorghum.
+[SPEAKER_01]: And I have ATAC-Seq in about 10 or 12 of
+those species and methylation data in
+[SPEAKER_01]: about 10 of them.
+[SPEAKER_01]: In total, that results in about 312,000
+ATAC-Seq peaks across these species and
+[SPEAKER_01]: about 360,000 UMRs.
+[SPEAKER_01]: So not quite above P yet, but in a much
+better space than if we were to just train
+[SPEAKER_01]: in one of these species.
+[SPEAKER_01]: So how are we going to do this?
+[SPEAKER_01]: I'm going to train the model in two
+different ways, one within species to
+[SPEAKER_01]: compare to previous literature and in
+another across species.
+[SPEAKER_01]: So first, for within species, we'll take
+the peaks under one chromosome and assign
+[SPEAKER_01]: them to our test set.
+[SPEAKER_01]: We'll assign the rest to our training set.
+[SPEAKER_01]: We're going to down sample so that there's
+a balance between our black and blue or
+[SPEAKER_01]: accessible and inaccessible regions.
+[SPEAKER_01]: And just so you can see now three to one
+to one to one.
+[SPEAKER_01]: And then we can get some performance
+metric for that model within the species
+[SPEAKER_01]: on the test set.
+[SPEAKER_01]: And we can do that for both accessibility
+and methylation.
+[SPEAKER_01]: For the across species model, we'll assign
+the same peaks to the test set so that we
+[SPEAKER_01]: can have an even comparison between the
+two.
+[SPEAKER_01]: And then we'll assign training peaks in
+the other species, down sample again to
+[SPEAKER_01]: balance.
+[SPEAKER_01]: And now we have two bars that we can
+compare on the same Arabidopsis peaks for
+[SPEAKER_01]: both accessibility and methylation.
+[SPEAKER_01]: And so long story short, it turns out,
+yes, we can build models that predict
+[SPEAKER_01]: chromatin state across angiosperms.
+[SPEAKER_01]: So for example, I'm showing the
+methylation first.
+[SPEAKER_01]: We can see that generally the orange and
+the blue bars are pretty close to each
+[SPEAKER_01]: other, sometimes reversed.
+[SPEAKER_01]: But the across species models seem to be
+very competitive to models trained solely
+[SPEAKER_01]: within species, even though they have to
+go across a longer evolutionary distance.
+[SPEAKER_01]: And the same case is true for the
+accessibility, if not more so.
+[SPEAKER_01]: What's interesting is if we have heavy
+sampling within specific clades,
+[SPEAKER_01]: they seem to do a lot better than the
+across species models, suggesting if we
+[SPEAKER_01]: can fill out the tree a little bit more,
+we can do even better with across species
+[SPEAKER_01]: models across the angiosperms.
+[SPEAKER_01]: And I also just want to highlight,
+we don't expect these cis-based models to
+[SPEAKER_01]: be perfect for predicting chromatin state.
+[SPEAKER_01]: We know that there are trans effects that
+come in from other areas of the genome
+[SPEAKER_01]: that can silence these regions even
+without any change in the sequence
+[SPEAKER_01]: underlying them.
+[SPEAKER_01]: And I'll talk about those in a second.
+[SPEAKER_01]: So what I asked next was what region does
+the model do best or worst in?
+[SPEAKER_01]: So I divided the genome up into either
+genic regions that overlap gene
+[SPEAKER_01]: annotations, proximal regions that are
+within 2 kb of either the transcription
+[SPEAKER_01]: start site or the termination site,
+and everything else is distal.
+[SPEAKER_01]: And what I saw is that generally the model
+does best on accessibility in these
+[SPEAKER_01]: proximal regions and worst on these distal
+regions.
+[SPEAKER_01]: And it's a very simple model.
+[SPEAKER_01]: It's a very similar case for the
+methylation models.
+[SPEAKER_01]: So diving a little bit deeper,
+I noticed that a lot of the accessibility
+[SPEAKER_01]: errors the model's making are false
+positives.
+[SPEAKER_01]: So I'm summing to 100% within each of
+these columns.
+[SPEAKER_01]: And you'll notice that, excuse me,
+about 70% of the predictions of the model
+[SPEAKER_01]: that are open are actually labeled as
+closed in the data.
+[SPEAKER_01]: So there's a high false positive rate.
+[SPEAKER_01]: But I do want to emphasize here that this
+is not necessarily wrong, because the
+[SPEAKER_01]: ATAC-seq peaks that I'm using were called
+with relatively conservative thresholds.
+[SPEAKER_01]: And so if you have some certain peaks that
+are open in maybe half of the cell types
+[SPEAKER_01]: or less in this data set, those might not
+have met the strength needed to be called
+[SPEAKER_01]: in this data set.
+[SPEAKER_01]: And they might be open, but the model
+doesn't know that.
+[SPEAKER_01]: Or it suspects that, but it's labeled as
+closed and true.
+[SPEAKER_01]: So some of the trans effects I alluded to
+earlier, one example of those would be,
+[SPEAKER_01]: let's say you have a cis-regulatory model
+module sitting in a transposon,
+[SPEAKER_01]: which is not an uncommon occurrence.
+[SPEAKER_01]: And it looks like it should be a
+regulatory module by the sequence.
+[SPEAKER_01]: But in reality, some host-directed,
+maybe RNA-directed DNA methylation might
+[SPEAKER_01]: silence that transposon because of its
+context.
+[SPEAKER_01]: And our cis-based model might not
+necessarily pick up on that.
+[SPEAKER_01]: So how do we help it out?
+[SPEAKER_01]: What if we started masking transposons?
+[SPEAKER_01]: So we take in, in this case, let's say 600
+base pairs of sequence, feed it into our
+[SPEAKER_01]: model, and then it will make a prediction.
+[SPEAKER_01]: And then if it's in a transposon,
+we'll set that prediction to zero.
+[SPEAKER_01]: And if it's not, we'll keep the original
+one and see how we do.
+[SPEAKER_01]: And if we do mask transposons,
+we get significant improvements in both
+[SPEAKER_01]: accessibility and methylation,
+suggesting once we start incorporating
+[SPEAKER_01]: those trans effects into our cis-based
+models, we can actually get to more
+[SPEAKER_01]: towards perfection.
+[SPEAKER_01]: Next, I wanted to look at how well these
+models do across a number of different
+[SPEAKER_01]: cell types.
+[SPEAKER_01]: So I didn't mention previously,
+but this is leaf accessibility data.
+[SPEAKER_01]: So the model has only been trained in one
+tissue type across species.
+[SPEAKER_01]: And so I'll have one prediction for each
+of these peaks.
+[SPEAKER_01]: And I wanted to see how well it does
+across a single cell taxic that has
+[SPEAKER_01]: multiple cell types in it.
+[SPEAKER_01]: So going from left to right on the x-axis
+here, we're moving from tissue-specific
+[SPEAKER_01]: peaks to more generally accessible peaks.
+[SPEAKER_01]: And we can see model performance follows
+basically how tissue-specific you are
+[SPEAKER_01]: inversely.
+[SPEAKER_01]: And I want to point out here that SCA-TAC
+is known to be relatively noisy.
+[SPEAKER_01]: And so sometimes when you don't have many
+observations of a peak in, or you only
+[SPEAKER_01]: have it in very few nuclei, it's hard to
+tell whether that peak is noise or a truly
+[SPEAKER_01]: cell type-specific peak.
+[SPEAKER_01]: So this might actually not be predictable
+for the model.
+[SPEAKER_01]: I also looked at genome-wide, how does
+performance differ across cell types.
+[SPEAKER_01]: And it doesn't differ that much
+promisingly the best performing tissue is
+[SPEAKER_01]: the guard cell, which is a leaf cell type.
+[SPEAKER_01]: That's great.
+[SPEAKER_01]: And one of the worst performing is
+tricoblast or root hair precursor.
+[SPEAKER_01]: So promising, but there's still not much
+of a difference.
+[SPEAKER_01]: And the reason for this is either many
+peaks are open in very many tissues or
+[SPEAKER_01]: very few tissues.
+[SPEAKER_01]: And we know the model does really poorly
+on distal regions, which tend to be more
+[SPEAKER_01]: cell type-specific peaks.
+[SPEAKER_01]: So across tissues, we're not going to do
+very well in those regions anyways.
+[SPEAKER_01]: But it does very well in regions that are
+open in many tissues, and that doesn't
+[SPEAKER_01]: change across tissues a lot.
+[SPEAKER_01]: So that kind of explains why the model is
+sort of consistent across tissues.
+[SPEAKER_01]: One of the common criticisms of deep
+learning models is understanding just what
+[SPEAKER_01]: they're learning.
+[SPEAKER_01]: They can make good predictions,
+but what biology are they learning,
+[SPEAKER_01]: if any, to make those predictions?
+[SPEAKER_01]: So how do we open up the black box,
+so to speak?
+[SPEAKER_01]: One of the ways I did this was using a
+method from Peter Crew's group called
+[SPEAKER_01]: global importance analysis.
+[SPEAKER_01]: And it's sister method positional global
+importance analysis.
+[SPEAKER_01]: So the way that works is we're going to
+sample some background sequences just to
+[SPEAKER_01]: control for potential co-binding motifs
+across the background.
+[SPEAKER_01]: And we're going to embed some motif that
+we're interested in.
+[SPEAKER_01]: So we can start testing specific motif
+hypotheses.
+[SPEAKER_01]: And in my case, I took a database of known
+transcription factor binding motifs and
+[SPEAKER_01]: just started embedding them in these
+random regions.
+[SPEAKER_01]: And then you measure the difference
+between those set of embedded regions and
+[SPEAKER_01]: the random background and just see how
+your model predictions differ.
+[SPEAKER_01]: And it's the average difference between
+these that is known as the global
+[SPEAKER_01]: importance.
+[SPEAKER_01]: So how important is that motif being in
+the sequence to your model for making its
+[SPEAKER_01]: prediction?
+[SPEAKER_01]: You can embed this motif not just in the
+middle but in any position and get a very
+[SPEAKER_01]: position-specific effect of the global
+importance for embedding that motif.
+[SPEAKER_01]: And so then you can start to rank these
+motifs by their effect size to the model.
+[SPEAKER_01]: So in this case, I'm ranking them by their
+maximum positional global importance.
+[SPEAKER_01]: So what motifs, no matter where you put
+them in the sequence are very important
+[SPEAKER_01]: for changing the model's prediction.
+[SPEAKER_01]: And we can see that for the accessibility
+model which had Arabidopsis held out
+[SPEAKER_01]: predicting into Arabidopsis sequence,
+it's paying a lot of attention to TCP
+[SPEAKER_01]: family motifs.
+[SPEAKER_01]: And this is cool because we know that some
+TCPs can be chromatin remodelers.
+[SPEAKER_01]: So that's promising.
+[SPEAKER_01]: For maze, there are some TCPs but we also
+see these DoF type family transcription
+[SPEAKER_01]: factor motifs ranked high.
+[SPEAKER_01]: We know that they're involved in seed and
+seedling development, no chromatin
+[SPEAKER_01]: remodeling evidence that I'm aware of but
+perhaps part of development is chromatin
+[SPEAKER_01]: remodeling in this case.
+[SPEAKER_01]: And across both Arabidopsis and maze held
+out methylation models, it's a much more
+[SPEAKER_01]: consistent being these BBRBPC motifs or
+AP2ERF.
+[SPEAKER_01]: We know there is some evidence for BBRBPC
+to do chromatin remodeling, cool.
+[SPEAKER_01]: And there is evidence that AP2ERF or
+they're known to be involved in
+[SPEAKER_01]: development but the case is less clear.
+[SPEAKER_01]: So in summary, I've shown that these
+recurrent convolutional neural networks
+[SPEAKER_01]: can seem to model chromatin accessibility
+and DNA methylation directly from sequence
+[SPEAKER_01]: and across plant species and that these
+across species models are competitive with
+[SPEAKER_01]: within species models.
+[SPEAKER_01]: The accessibility A to Z models seem to
+perform best on gene proximal and commonly
+[SPEAKER_01]: accessible regions.
+[SPEAKER_01]: And incorporating trans effects starts to
+reduce our SysBase models false positive
+[SPEAKER_01]: rates.
+[SPEAKER_01]: And finally, these TCP family motifs seem
+to rank highly in global importance to the
+[SPEAKER_01]: across species accessibility models.
+[SPEAKER_01]: And it's a much more consistent case being
+AP2ERF or BBRBPC for methylation.
+[SPEAKER_01]: All right, so moving right along to our
+expression model or my expression model,
+[SPEAKER_01]: I guess.
+[SPEAKER_01]: So one of the motivations for making this
+model was to try to move towards some more
+[SPEAKER_01]: efficient promoter bashing.
+[SPEAKER_01]: And so promoter bashing is where you'll
+take random guide targets upstream of the
+[SPEAKER_01]: gene and just start trying to make mutants
+until you see the effect that you want.
+[SPEAKER_01]: And they're untargeted, but what if we can
+build a promoter model that can instead
+[SPEAKER_01]: reduce the space that we would need to
+randomly bash from on the order of 2,000
+[SPEAKER_01]: base pairs to more like 100 or so.
+[SPEAKER_01]: So plenty of human expression models
+already exist in the literature and I'm
+[SPEAKER_01]: going to test four of them here.
+[SPEAKER_01]: The first is FNet compression,
+which is a relatively tiny model at 60,000
+[SPEAKER_01]: parameters.
+[SPEAKER_01]: Hyena DNA, a more recent one at 450,000.
+[SPEAKER_01]: Dan Q we're familiar with at 1.6 million.
+[SPEAKER_01]: And Informer is currently state of the art
+at about 250 million parameters.
+[SPEAKER_01]: I couldn't quite get Informer to run on
+the hardware I had available, so I down
+[SPEAKER_01]: sampled it to about 50 million and called
+it MiniFormer.
+[SPEAKER_01]: So previous work in the lab also showed if
+you have coding sequence going into your
+[SPEAKER_01]: model, then there's a potential for that
+model to start to memorize gene family.
+[SPEAKER_01]: And so in this case, if you have things
+that are looking like transcription
+[SPEAKER_01]: factors, for example, in their coding
+regions, then the model will just tend to
+[SPEAKER_01]: think that, oh, if you're a transcription
+factor, you tend to be lowly expressed
+[SPEAKER_01]: versus something that is more highly
+expressed and not learn anything about the
+[SPEAKER_01]: cis regulation differences between the two
+that actually explain expression.
+[SPEAKER_01]: So there's a couple of different ways to
+improve existing expression models.
+[SPEAKER_01]: The first, as I mentioned previously,
+within species models have limited
+[SPEAKER_01]: independent training observations.
+[SPEAKER_01]: Second, if you don't mask your coding
+regions, then that can enable overfitting
+[SPEAKER_01]: on gene family.
+[SPEAKER_01]: It's also been seen that there's a poor
+recall of these models on rare EQTL
+[SPEAKER_01]: wheels.
+[SPEAKER_01]: For example, a lot of these expression
+models just fail to detect even high
+[SPEAKER_01]: effect EQTL if they're not present at high
+frequency.
+[SPEAKER_01]: And as of today, well, before this work,
+there was no level comparison between all
+[SPEAKER_01]: of these architectures.
+[SPEAKER_01]: So it's hard to tell whether this model is
+better because it had a different data set
+[SPEAKER_01]: or the problem was easier.
+[SPEAKER_01]: And so I wanted to make sure that we can
+test everything on a level playing field.
+[SPEAKER_01]: And so the data I'm using to train these
+models are 32 new long-read genomes and
+[SPEAKER_01]: RNA-seq data from wild relatives of maize.
+[SPEAKER_01]: And these genomes are really the result of
+collaborative effort between Arun Seetham
+[SPEAKER_01]: and Michelle Stitzer, along with
+collaborators at the Danforth Center,
+[SPEAKER_01]: Taylor and Toby, who actually did the
+sampling of these species.
+[SPEAKER_01]: And it spans the Andropogone tribe of
+which maize and sorghum are a part of.
+[SPEAKER_01]: And so the schema for this model is I'm
+going to train on the relatives of maize
+[SPEAKER_01]: and try to predict in maize.
+[SPEAKER_01]: So very similar to the last model.
+[SPEAKER_01]: But also following the advice from the
+previous lab work, I'm also going to do
+[SPEAKER_01]: the ortho group guided splitting.
+[SPEAKER_01]: So in this case, I'm going to have a
+holdout set of genes that are in different
+[SPEAKER_01]: ortho groups for my training set and also
+in different species.
+[SPEAKER_01]: So this is a very difficult problem.
+[SPEAKER_01]: In total, I have about a million training
+observations for these expression models.
+[SPEAKER_01]: So in my model, I'm going to start at the
+translation start site and go one kilobase
+[SPEAKER_01]: pair upstream of the translation start
+site and try to predict the expression
+[SPEAKER_01]: levels either in specific tissues,
+like leaf stem or flower, or the maximum
+[SPEAKER_01]: expression across tissues, or the
+binarized form of that on-off expression
+[SPEAKER_01]: in any tissue.
+[SPEAKER_01]: And I want to highlight that within-gene
+performance is not necessarily equal to
+[SPEAKER_01]: across-gene performance.
+[SPEAKER_01]: And across-gene is typically what's been
+shown in the literature.
+[SPEAKER_01]: Excuse me.
+[SPEAKER_01]: What I mean by across-gene is if you take
+a look across all the genes in the genome
+[SPEAKER_01]: and all the species that you have in your
+training or test set, if you can correctly
+[SPEAKER_01]: separate the highly expressed genes from
+the lowly expressed genes, it doesn't mean
+[SPEAKER_01]: that you have the ability to distinguish
+between, for example, closely related
+[SPEAKER_01]: orthologs.
+[SPEAKER_01]: So classic Simpson's paradox situation
+where it looks good between groups,
+[SPEAKER_01]: but then you start to go within groups and
+your correlation levels drop.
+[SPEAKER_01]: So first, just to compare to existing
+literature, the across-gene regression
+[SPEAKER_01]: results are about equal to a within-human
+benchmark.
+[SPEAKER_01]: What's cool to see is one of my
+best-performing models on one of the
+[SPEAKER_01]: best-performing tasks, maximum expression,
+is about 0.52, and it's Dan Q.
+[SPEAKER_01]: And the within-human data in former gets
+to about 0.57.
+[SPEAKER_01]: So we're almost there, not quite,
+but these models are predicting across
+[SPEAKER_01]: species in this case.
+[SPEAKER_01]: I also compared it to the previous work
+from the lab that did this within maze.
+[SPEAKER_01]: So for the on-off expression model,
+one of the best models is FNet compression
+[SPEAKER_01]: at an AU rock of 0.77, and this is exactly
+equal to the model that was trained within
+[SPEAKER_01]: maze that took in only promoter regions.
+[SPEAKER_01]: And I want you to notice there's also a
+slightly better model that took in both
+[SPEAKER_01]: promoter and terminator, and we'll get
+into that in a second.
+[SPEAKER_01]: But first, the within-gene performance
+dramatically drops once you start looking
+[SPEAKER_01]: across orthologs within maze.
+[SPEAKER_01]: So I was showing across-gene correlations
+on the order of 0.5 and 0.6, but within
+[SPEAKER_01]: genes across different orthologs,
+the average correlation drops to about
+[SPEAKER_01]: 0.1.
+[SPEAKER_01]: And there's not really much difference
+between even models of several orders of
+[SPEAKER_01]: magnitude parameter difference,
+and it's only slightly better on average
+[SPEAKER_01]: on the maximum expression task.
+[SPEAKER_01]: And this agrees with the same benchmark
+that looked at this in human on informer,
+[SPEAKER_01]: the current state of the art in pattern.
+[SPEAKER_01]: So looking at one of my best models,
+Dan Q, again, just sort of emphasize that
+[SPEAKER_01]: how poorly it ranks these orthologs by
+abundance, I'm looking on the x-axis here,
+[SPEAKER_01]: the predicted expression change by the
+model between any pair of orthologs on the
+[SPEAKER_01]: log 10 scale, and then we're looking at
+the observed expression change.
+[SPEAKER_01]: And generally, it's just not doing well
+for anything except things that are more
+[SPEAKER_01]: towards the tails.
+[SPEAKER_01]: So until you get to about 100 or 1,000
+times expression increase, it's not able
+[SPEAKER_01]: to differentiate.
+[SPEAKER_01]: Perhaps the model's overfitting quickly on
+these huge expression differences and
+[SPEAKER_01]: never really gets a chance to finally
+distinguish expression.
+[SPEAKER_01]: Another thing that might be going on is
+the previous work in the group show that
+[SPEAKER_01]: really it's the three prime ETR and the
+terminator that was needed to distinguish
+[SPEAKER_01]: between at least maze orthologs.
+[SPEAKER_01]: And so potentially what the model needs is
+to also include that sequence.
+[SPEAKER_01]: But I also want to emphasize again that if
+we do this, future work really needs to
+[SPEAKER_01]: make sure to mask those coding regions so
+it doesn't memorize gene family.
+[SPEAKER_01]: I also looked at where the Dan Q model was
+paying attention for predicting expression
+[SPEAKER_01]: levels in the max expression task.
+[SPEAKER_01]: And what's cool to see is it actually
+highlights the core promoter.
+[SPEAKER_01]: So note, I didn't give the model to the
+transcription start site.
+[SPEAKER_01]: I started at the translation start site,
+and I've sort of manually aligned these
+[SPEAKER_01]: important scores for you to the
+transcription start site.
+[SPEAKER_01]: And it highlights across all the maze
+genes the core promoter, which is
+[SPEAKER_01]: important for expression.
+[SPEAKER_01]: Yeah.
+[SPEAKER_01]: OK, the other thing I looked at is it's a
+common refrain in deep learning that we
+[SPEAKER_01]: need more training data, more data,
+better models.
+[SPEAKER_01]: And I wanted to know if that was actually
+the case because that data doesn't come
+[SPEAKER_01]: for free.
+[SPEAKER_01]: So I took various subsets of my training
+data starting at very small fractions of
+[SPEAKER_01]: it and gradually increasing it to the 1
+million number of observations.
+[SPEAKER_01]: And I do see the performance between the
+500 and a million is still increasing,
+[SPEAKER_01]: suggesting there is a need for more
+training data, depending on the price
+[SPEAKER_01]: point at which it costs to acquire it.
+[SPEAKER_01]: So in summary, it seems the current
+genomic deep learning architectures
+[SPEAKER_01]: perform well across distantly related
+species.
+[SPEAKER_01]: And this agrees within human benchmarks in
+both pattern and magnitude.
+[SPEAKER_01]: And it has nearly the same performance as
+maze models without seeing any maze
+[SPEAKER_01]: sequence.
+[SPEAKER_01]: They don't seem to be sensitive enough yet
+to rank closely related sequence,
+[SPEAKER_01]: which agrees with the human benchmark as
+well.
+[SPEAKER_01]: Perhaps we need 3 prime UTR.
+[SPEAKER_01]: But I also think it's interesting to think
+about if the 3 prime UTR is a region that
+[SPEAKER_01]: evolution has happened to favor to fine
+tune expression or if it is actually
+[SPEAKER_01]: needed to fine tune expression.
+[SPEAKER_01]: So the third point is that the models do
+seem to recognize the core promoter as
+[SPEAKER_01]: important across all genes.
+[SPEAKER_01]: That's a good validation.
+[SPEAKER_01]: And it seems we could use some more
+training data to saturate the performance
+[SPEAKER_01]: of these models.
+[SPEAKER_01]: All right.
+[SPEAKER_01]: So moving on to a more bioinformatics
+focused approach, looking at multiple
+[SPEAKER_01]: sequence alignments to predict functional
+transcription factor binding sites.
+[SPEAKER_01]: So why functional transcription factor
+binding sites?
+[SPEAKER_01]: Well, compared to an accessible chromatin
+model, if we can actually find the real
+[SPEAKER_01]: binding sites, that would be even a more
+efficient editing target.
+[SPEAKER_01]: Because not every base pair in an
+accessible region is necessarily a binding
+[SPEAKER_01]: site.
+[SPEAKER_01]: And I kind of alluded to this before.
+[SPEAKER_01]: But motif scanning, if you just take known
+motifs and scan them across the genome,
+[SPEAKER_01]: there's a high false positive rate.
+[SPEAKER_01]: So if you look at any random promoter
+upstream, you're just going to see a lot
+[SPEAKER_01]: of hits.
+[SPEAKER_01]: And they overlap.
+[SPEAKER_01]: And there's a lot of them.
+[SPEAKER_01]: But how many of them are actually
+functional?
+[SPEAKER_01]: Which ones are functional?
+[SPEAKER_01]: And this is so bad that these authors kind
+of exasperatedly conjectured in 2004 that
+[SPEAKER_01]: this futility theorem means that about
+100% of your predicted binding sites are
+[SPEAKER_01]: non-functional.
+[SPEAKER_01]: Three orders of magnitude difference.
+[SPEAKER_01]: But we can use other information to filter
+down these methods, such as evolutionary
+[SPEAKER_01]: conservation.
+[SPEAKER_01]: So if you do your motif scanning,
+as usual, and you detect a region of the
+[SPEAKER_01]: genome that's more conserved over time,
+it's more evidence that these are actually
+[SPEAKER_01]: doing something.
+[SPEAKER_01]: And this has been known for a while as
+phylogenetic footprinting.
+[SPEAKER_01]: But why use phylogenetic footprinting now?
+[SPEAKER_01]: What's changed?
+[SPEAKER_01]: So first, there's new aligners on the
+scene, like AnchorWave, that can handle
+[SPEAKER_01]: these plant-inergenic regions much better
+than previously.
+[SPEAKER_01]: And this is important where in these
+non-coding regions, there's a lot of
+[SPEAKER_01]: regulatory regions that we want to study
+their conservation.
+[SPEAKER_01]: Also, I mentioned we have 32 new
+high-quality long-read anthropogonia
+[SPEAKER_01]: assemblies.
+[SPEAKER_01]: And we also have 400 new short-read
+anthropogonia assemblies to even increase
+[SPEAKER_01]: the depth of these MSAs further.
+[SPEAKER_01]: And so all of these assemblies came from
+the NSF Pan-An grant, which collected
+[SPEAKER_01]: about 800 anthropogonia samples worldwide.
+[SPEAKER_01]: As I mentioned previously, colleagues at
+the Danforth Center, Taylor Abashan Elder
+[SPEAKER_01]: and Toby Kellogg, ran around the world and
+collected anthropogonia from fresh tissue
+[SPEAKER_01]: samples or either went into herbariums and
+silica collections to get these samples.
+[SPEAKER_01]: And so if you build a tree out of all
+these samples and you sum along all of the
+[SPEAKER_01]: branches in that tree, they sample
+approximately on the order of about a
+[SPEAKER_01]: billion years of evolution, which comes
+out to about 30 to 50 mutations per base
+[SPEAKER_01]: pair.
+[SPEAKER_01]: So a very powerful data set to measure
+constraint.
+[SPEAKER_01]: And so if you look at these short-read
+assemblies, which are thanks to the
+[SPEAKER_01]: efforts of Tweed, and Cinta for the
+sequencing, and Amy and Charlie for the
+[SPEAKER_01]: assembly, if we look at the BUSCO
+completeness of these assemblies,
+[SPEAKER_01]: generally they seem to be fairly complete.
+[SPEAKER_01]: And if the genes aren't complete,
+they're at least present in a majority
+[SPEAKER_01]: fragment.
+[SPEAKER_01]: So fairly contiguous.
+[SPEAKER_01]: And so as part of the long-read assembly
+work, a collaborator, Armin Schieven,
+[SPEAKER_01]: took the long-read assemblies and used the
+Cactus genome aligner to build a multiple
+[SPEAKER_01]: sequence alignment between them across all
+32.
+[SPEAKER_01]: And then he used FastCons to do that
+phylogenetic footprinting I talked about
+[SPEAKER_01]: earlier and find the conserved non-coding
+sequences or CNS.
+[SPEAKER_01]: And in Mays, there's about 95,000 of them
+that he detected.
+[SPEAKER_01]: So now my work comes into adding in those
+short-read assemblies to see if we can get
+[SPEAKER_01]: further depth in these alignments.
+[SPEAKER_01]: So starting with a species tree that
+contains the non-REF, which I'm referring
+[SPEAKER_01]: to the short-read assemblies as,
+and the REF, the long-read, we can align
+[SPEAKER_01]: the non-reference contigs to the nearest
+reference assemblies so we can avoid some
+[SPEAKER_01]: of the reference bias, and then use that
+Cactus alignment to lift over all of these
+[SPEAKER_01]: alignments into the same MSA space and get
+MSAs of these conserved non-coding regions
+[SPEAKER_01]: that have hundreds of angiobrotonia
+assemblies in them.
+[SPEAKER_01]: What I noticed looking at some of these
+CNS regions is that only about 60,000 of
+[SPEAKER_01]: those are widely covered across the
+angiobrotonia.
+[SPEAKER_01]: There are a subset of them that are only
+present across a number of the long-read
+[SPEAKER_01]: assemblies.
+[SPEAKER_01]: And we sampled heavily in the zeoclave for
+the long-read assemblies.
+[SPEAKER_01]: And I wanted to focus this analysis on
+things that were present across
+[SPEAKER_01]: everything.
+[SPEAKER_01]: So I decided to filter out to this upper
+right quadrant here.
+[SPEAKER_01]: So that brings me down to about 60,000.
+[SPEAKER_01]: The next thing I did was use the Jasper
+transcription factor database to scan for
+[SPEAKER_01]: those motifs with the FIMO tool.
+[SPEAKER_01]: And so looking at a real example of an
+alignment within one of these CNS regions,
+[SPEAKER_01]: we can imagine that there are some motif
+hits within it right here.
+[SPEAKER_01]: And I'm going to use FAST, the same set
+that contains FAST cons, to test whether
+[SPEAKER_01]: these motifs as a region are more
+constrained than the bases around them.
+[SPEAKER_01]: And I'm going to do some very simple
+filtering to get rid of these very gappy
+[SPEAKER_01]: columns.
+[SPEAKER_01]: And so when I do that and run the test,
+I get about 56,000 transcription factor
+[SPEAKER_01]: binding sites and maize that are
+constrained to the Bonferroni corrected
+[SPEAKER_01]: p-value across Pan-And.
+[SPEAKER_01]: OK.
+[SPEAKER_01]: So the next thing I wanted to do was look
+for binding preferences across these
+[SPEAKER_01]: motifs.
+[SPEAKER_01]: And so to do that, I did an all-by-all
+alignment of the constrained motifs that I
+[SPEAKER_01]: detected, also along with all the Jasper
+motifs from the database.
+[SPEAKER_01]: And so since some of these motifs are
+shorter or longer than others,
+[SPEAKER_01]: I took the longest motif and I slid the
+shorter one across in all possible
+[SPEAKER_01]: positions and took the minimum of the
+Euclidean distance between the two and
+[SPEAKER_01]: used that as the alignment score.
+[SPEAKER_01]: And it has to be a common motif comparison
+metric.
+[SPEAKER_01]: But also remember, these motifs are
+actually matrices, and they represent
+[SPEAKER_01]: frequencies of bases at each position and
+not a single base.
+[SPEAKER_01]: So at the end of this, I have about 58,000
+by 58,000 distance matrix with all the
+[SPEAKER_01]: constrained motifs.
+[SPEAKER_01]: And Jasper, and that can be a little hard
+to visualize.
+[SPEAKER_01]: So I used UMAP to reduce the
+dimensionality and was actually very
+[SPEAKER_01]: pleased to see that they cluster by class
+and family according to the Jasper labels.
+[SPEAKER_01]: So that's a good validation that the
+alignments actually worked and are doing
+[SPEAKER_01]: something.
+[SPEAKER_01]: And so let's see if they have some
+specific binding preferences within them.
+[SPEAKER_01]: So I looked in one class and family,
+in this case, the BZip group Bs.
+[SPEAKER_01]: And I clustered them according to their
+motifs.
+[SPEAKER_01]: And I see that there is this big cluster
+here that has a Jasper motif within it.
+[SPEAKER_01]: But there's also two clusters down here,
+the pink and the red, that don't have any
+[SPEAKER_01]: annotated Jasper motif, which is cool,
+suggests some novel binding pattern that
+[SPEAKER_01]: we haven't seen.
+[SPEAKER_01]: And when we look at the motif preferences
+in each of these clusters, there are
+[SPEAKER_01]: actual differences.
+[SPEAKER_01]: For example, between the pink and the red,
+there's a strong CA preference versus a
+[SPEAKER_01]: strong CG preference or a strong G
+preference in the red versus a very weak T
+[SPEAKER_01]: or A preference up here.
+[SPEAKER_01]: So certainly interesting to see,
+but I'd like to get more validation.
+[SPEAKER_01]: So I looked at how the subcluster presence
+or absence correlates to expression or
+[SPEAKER_01]: explains expression variation.
+[SPEAKER_01]: So I'm doing a very simple linear model
+for this expression testing.
+[SPEAKER_01]: So the Y values are going to be TPM or
+transcripts per million, a measure of RNA
+[SPEAKER_01]: expression, log 10 transformed.
+[SPEAKER_01]: And the X matrix is either the presence or
+absence of a motif from that subcluster.
+[SPEAKER_01]: And is it within 100 KB upstream of a
+given gene, which is well within what we
+[SPEAKER_01]: know cis-regulatory regions are capable of
+interacting with the core promoter.
+[SPEAKER_01]: And so I have about 5,000 genes that have
+any one of these motifs upstream.
+[SPEAKER_01]: And there's about 1,600 motif subclusters.
+[SPEAKER_01]: And what I'm going to do is for each of
+these columns, for each subcluster column,
+[SPEAKER_01]: I'm going to randomly permute and measure
+the change in R squared of that model.
+[SPEAKER_01]: And I'm going to do a couple of replicates
+of permutation and measure the average
+[SPEAKER_01]: change in the models R squared by
+permuting that column.
+[SPEAKER_01]: And so focusing on the right side here,
+every row is a replicate RNA-seq
+[SPEAKER_01]: experiment.
+[SPEAKER_01]: And we have multiple replicates per
+tissue.
+[SPEAKER_01]: And generally, the R squared values don't
+differ very much, ranging from 0.2 to 0.3.
+[SPEAKER_01]: And along the x-axis here, we have those
+different 1,600 motif subclusters.
+[SPEAKER_01]: And I've normalized by the R squared of
+each model, the delta, so that we can
+[SPEAKER_01]: compare across rows.
+[SPEAKER_01]: Now, this can be kind of hard to
+visualize.
+[SPEAKER_01]: So let's zoom in just a little bit to,
+again, the BZIP factors and the C2H2 Zinc
+[SPEAKER_01]: finger factors.
+[SPEAKER_01]: And we can see some cool initial patterns.
+[SPEAKER_01]: So for example, we have this subcluster
+that seems to explain a lot of the
+[SPEAKER_01]: variation in endosperm tissue expression.
+[SPEAKER_01]: And it shows up across both tissue
+replicates.
+[SPEAKER_01]: So that's a good sign.
+[SPEAKER_01]: We have some subclusters that seem to show
+up in anther tissue as well.
+[SPEAKER_01]: And then some subclusters that don't seem
+to be specific to any tissue in
+[SPEAKER_01]: particular.
+[SPEAKER_01]: So for this section, to summarize,
+I've seen or identified these
+[SPEAKER_01]: constrained-maze transcription factor
+binding sites.
+[SPEAKER_01]: And they seem to cluster into subfamilies
+that have very specific binding
+[SPEAKER_01]: preferences.
+[SPEAKER_01]: Some of them are not annotated in known TF
+databases, so novel motifs.
+[SPEAKER_01]: And the upstream presence or absence of
+these constrained subfamilies seems to be
+[SPEAKER_01]: important to tissue-specific expression
+patterns.
+[SPEAKER_01]: So to close us off, I'm going to talk
+about just a wonderful collaboration with
+[SPEAKER_01]: some fine folks at the University of
+Washington, where we built a core promoter
+[SPEAKER_01]: to expression model.
+[SPEAKER_01]: I've talked a big game about these models,
+saying that we could use them for genome
+[SPEAKER_01]: editing, but let's prove if they can
+actually work or not.
+[SPEAKER_01]: So what Toby and Jackson did in Christine
+Quist's group is a star-seq assay.
+[SPEAKER_01]: And glazing over a lot of the molecular
+biology, just know that you can synthesize
+[SPEAKER_01]: any 170 base pairs you want, put it
+upstream of a reporter gene, put it into
+[SPEAKER_01]: either tobacco-leaf or maze protoplast,
+and measure the relative expression to
+[SPEAKER_01]: some baseline.
+[SPEAKER_01]: And what we did in this work was take 170
+base pairs upstream of the transcription
+[SPEAKER_01]: start site in Arabidopsis, maze,
+and sorghum.
+[SPEAKER_01]: And I'm calling that the core promoter.
+[SPEAKER_01]: The good news is star-seq is replicable
+within the expression system.
+[SPEAKER_01]: So looking across replicates one and two
+in tobacco-leaf, the same promoter agrees
+[SPEAKER_01]: with an R-squared of about 0.91.
+[SPEAKER_01]: When we look in the maze protoplast,
+it's a little bit less at R-squared of
+[SPEAKER_01]: 0.79, but still pretty agreeable across
+replicates.
+[SPEAKER_01]: And what I want to emphasize here is if we
+start to compare the same 170 base pair
+[SPEAKER_01]: promoter across maze and tobacco systems,
+they only agree with an R-squared of 0.31,
+[SPEAKER_01]: really emphasizing how much of the
+variation expression depends on the
+[SPEAKER_01]: transcellular environment versus the cis
+promoter sequence.
+[SPEAKER_01]: So my contribution to this work was
+building this bi-directional CNN model to
+[SPEAKER_01]: predict core promoter strength.
+[SPEAKER_01]: So what's bi-directional about it is
+typically these convolutional neural
+[SPEAKER_01]: networks scan along your input sequence
+only in one direction.
+[SPEAKER_01]: They don't understand DNA strandedness.
+[SPEAKER_01]: So a modification I made was to have the
+model automatically flip the motif into
+[SPEAKER_01]: its reverse complement and scan it along
+the other strand all at once so they can
+[SPEAKER_01]: use the same kernel to learn both the
+forward and the reverse strand instead of
+[SPEAKER_01]: wasting two.
+[SPEAKER_01]: And that's great because it results in a
+more efficient use of parameters,
+[SPEAKER_01]: which is important if we're limited in
+data quantity.
+[SPEAKER_01]: And in one of the most exciting moments,
+of my PhD, we found that these models
+[SPEAKER_01]: actually worked.
+[SPEAKER_01]: So we took both three SNPs suggested by
+the model or 10 SNPs suggested by the
+[SPEAKER_01]: model and actually put them into tobacco
+or maze and show that they increased
+[SPEAKER_01]: expression levels significantly.
+[SPEAKER_01]: And this doesn't matter whether you're in
+tobacco or maze or if you have a 35S
+[SPEAKER_01]: enhancer upstream or not.
+[SPEAKER_01]: It increases expression in all cases.
+[SPEAKER_01]: And not only that, the model is able to
+predict the degree at which expression
+[SPEAKER_01]: increased.
+[SPEAKER_01]: So they do seem to have the ability if you
+can control the trans environment to
+[SPEAKER_01]: predict across different alleles,
+very closely related alleles.
+[SPEAKER_01]: So in summary, the CNN models seem to be
+highly effective learners of CIS promoter
+[SPEAKER_01]: variation if you can control that trans
+environment.
+[SPEAKER_01]: And the suggested edits from these models
+actually work in PLANTA.
+[SPEAKER_01]: And it seems that these could be the way
+towards more efficient promoter bashing.
+[SPEAKER_01]: So bring us all together again.
+[SPEAKER_01]: The DNA to chromatin model we saw does
+work across species and also is comparable
+[SPEAKER_01]: to within species trained models.
+[SPEAKER_01]: So great.
+[SPEAKER_01]: For the promoter and UTR expression model,
+it does work well across species,
+[SPEAKER_01]: but it still struggles to predict across
+different orthologs.
+[SPEAKER_01]: So I'll give it a yes and a no sort of
+success there.
+[SPEAKER_01]: There's still some more work to be done to
+validate these sub-clusters in the
+[SPEAKER_01]: transcription factor binding site work,
+but it's showing some interesting patterns
+[SPEAKER_01]: between sub-cluster presence absence and
+expression.
+[SPEAKER_01]: And finally, the core promoter expression
+model not only seemed to learn the
+[SPEAKER_01]: relationship, but also then predict edits
+that could make changes and actually those
+[SPEAKER_01]: changes reflect what the model predicted.
+[SPEAKER_01]: So I'll give that two checks for super
+success.
+[SPEAKER_01]: And with that, I would just like to
+acknowledge my funding.
+[SPEAKER_01]: So from the NSF and the GRFP specifically
+for my first three years of graduate
+[SPEAKER_01]: school and USDA ARS for the rest,
+I've, as you can imagine, had to leverage
+[SPEAKER_01]: a lot of different compute across the
+years from EXCEED and the TAC cluster to
+[SPEAKER_01]: the FRONTERA system.
+[SPEAKER_01]: And more recently on the USDA CINEC
+cluster and BioHBC.
+[SPEAKER_01]: Thank you very much.
+[SPEAKER_01]: Of course, my committee, Ed, Amy and Eric
+for your advice and Cornell for having me.
+[SPEAKER_01]: I'd also like to thank EXCEED for just not
+only making my internship very valuable
+[SPEAKER_01]: experience, but just plain fun.
+[SPEAKER_01]: My co-authors, which out whom,
+of course, I could have just not done this
+[SPEAKER_01]: work.
+[SPEAKER_01]: The Buckler Lab and Synapsis for both the
+support and all the good times over the
+[SPEAKER_01]: years.
+[SPEAKER_01]: And finally, thank you to all the open
+source software developers and packagers
+[SPEAKER_01]: who have probably spent countless hours
+making the tools that we rely on and also
+[SPEAKER_01]: the packages.
+[SPEAKER_01]: We're making them just easily installable
+for us.
+[SPEAKER_01]: So with that, I'm happy to take your
+questions.
+[SPEAKER_04]: You can go back to your pieces on a slide
+there.
+[SPEAKER_04]: Yeah.
+[SPEAKER_04]: So the upper right hand corner,
+I guess, when you're trying to predict
+[SPEAKER_04]: within ortholog, you can predict the
+amount of expression across orthologs
+[SPEAKER_04]: pretty well, but not between genes within
+orthologs, right?
+[SPEAKER_01]: Yeah.
+[SPEAKER_01]: So I'll be a little bit more precise with
+my terminology there.
+[SPEAKER_01]: Sorry.
+[SPEAKER_01]: So when I say ortholog in this case,
+what I mean is across one gene in maze
+[SPEAKER_01]: across different wheels in the NAMM
+population.
+[SPEAKER_01]: So not necessarily two paralogs within the
+maze genome.
+[SPEAKER_01]: So sorry if I wasn't clear about that.
+[SPEAKER_04]: And the training that you have is the
+total expression of that gene across many
+[SPEAKER_04]: orthologs, right?
+[SPEAKER_01]: It is either the max expression of that
+ortholog across all tissues that I have
+[SPEAKER_01]: data for, or just one single tissue
+expression value.
+[SPEAKER_04]: Could you try to train on deviation within
+an allele?
+[SPEAKER_04]: So for an allele, it's deviation from the
+mean for that gene.
+[SPEAKER_04]: Does that make sense?
+[SPEAKER_01]: Yeah.
+[SPEAKER_01]: You could absolutely do that.
+[SPEAKER_01]: And the previous work, I didn't highlight
+what they did there, but they did exactly
+[SPEAKER_01]: that.
+[SPEAKER_01]: They put both ortholog sequences in the
+model and tried to predict the expression,
+[SPEAKER_01]: and it does really like the expression
+change, and it does well.
+[SPEAKER_01]: But it doesn't, for example, take a
+difference in DNA sequence.
+[SPEAKER_01]: It takes both in the input.
+Yeah.
+[SPEAKER_02]: I do know roughly how differentiated those
+two orthologs are from one another.
+[SPEAKER_02]: Yeah, why the Washburn approach is easier
+to list.
+[SPEAKER_01]: No, I don't know a sequence.
+[SPEAKER_01]: The sequence number off the top of my
+head.
+[SPEAKER_02]: So they're about 80 million years
+diverged.
+[SPEAKER_01]: Oh, I see.
+[SPEAKER_02]: OK, so that's an easier problem than this
+differentiating one SNP causes an
+[SPEAKER_02]: expression difference.
+[SPEAKER_01]: So in their case, orthologs were across
+maze and sorghum.
+[SPEAKER_01]: In my case, they're across B73 and MO17.
+[SPEAKER_01]: Are there any questions online?
+[SPEAKER_01]: I can't really see the chat.
+[SPEAKER_01]: No?
+[SPEAKER_01]: Cool.
+[SPEAKER_01]: Yeah.
+[SPEAKER_03]: Did you ever look at transferability
+across tissues for the DNA acrobatin model
+[SPEAKER_03]: and UMR model?
+[SPEAKER_01]: Transferability across tissue.
+[SPEAKER_01]: So I did show the performance across
+different tissues, like the single cell
+[SPEAKER_01]: work.
+[SPEAKER_00]: Well, if you trained in leaf, how well
+does it do in root?
+[SPEAKER_01]: Yeah, and if I had the data set to do
+that, I would have.
+[SPEAKER_01]: But at the time I did the model,
+I only had the leaf accessibility across
+[SPEAKER_01]: that vast number of species.
+[SPEAKER_01]: So no, I think it's an interesting
+question, but I didn't have the data at
+[SPEAKER_01]: the time to test that.
+Yeah.
+[SPEAKER_01]: Call it.
+[SPEAKER_01]: She come to my defense now.
+[SPEAKER_01]: So, yeah, I've just been sort of roughly
+saying core promoter like anywhere from 50
+[SPEAKER_01]: base pairs to 150 base pairs upstream
+promoter is such a wide number.
+[SPEAKER_01]: I've seen up to 2000 base pairs from a
+gene be called the promoter.
+[SPEAKER_01]: So, yeah, it's a very loose term and I'm
+abusing it.
+Sorry.
+[SPEAKER_01]: Sarah, I think.
+[SPEAKER_06]: Yeah.
+[SPEAKER_06]: Yeah.
+[SPEAKER_01]: Yeah.
+[SPEAKER_01]: I mean, it highly varies based on really
+genome size.
+[SPEAKER_01]: So like in a rapid ops, things on average
+are going to be a lot closer together than
+[SPEAKER_01]: in bigger genomes like maze, where things
+are pushed out by a lot of this transposon
+[SPEAKER_01]: activity over time.
+[SPEAKER_01]: And so within the grasses that can tend to
+have larger genomes, that range can get up
+[SPEAKER_01]: to 100, 250 KB on average.
+[SPEAKER_01]: So it really seems to depend on genome
+size.
+Yeah.
+[SPEAKER_04]: You train these models on data and
+sometimes it's accessible or not,
+[SPEAKER_04]: methylated or not, conserved or not.
+[SPEAKER_04]: But you had a comment at one point where
+it seemed like accessible or not,
+[SPEAKER_04]: it's actually not binary in biology,
+right?
+[SPEAKER_04]: There's some continuous nature of
+accessibility.
+[SPEAKER_04]: So it's a general question about
+statistics maybe of like, what do you gain
+[SPEAKER_04]: and what do you lose when you convert
+something that's in some ways continuous
+[SPEAKER_04]: to something that's binary or portraying a
+statistical model?
+[SPEAKER_01]: Yeah.
+[SPEAKER_01]: I mean, that's a great question.
+[SPEAKER_01]: And part of what you gain is a high false
+positive rate.
+[SPEAKER_01]: But I mean, it's something that we...
+That's a loss, right?
+[SPEAKER_04]: Do you like my phrasing?
+[SPEAKER_04]: Yeah.
+[SPEAKER_01]: And yeah.
+[SPEAKER_01]: So there's more, as we get more and more
+single cell data, we can ask that
+[SPEAKER_01]: question, like train a model on the
+proportion of a given cell type that's
+[SPEAKER_01]: actually, this peak is accessible.
+[SPEAKER_01]: And we had the data we had at the time.
+[SPEAKER_01]: And I think nowadays we can certainly make
+a more quantitative model for
+[SPEAKER_01]: accessibility.
+Yeah.
+[SPEAKER_01]: Because I totally agree.
+[SPEAKER_01]: Biology is not.
+[SPEAKER_04]: In this case... Your answer suggests that
+usually if you convert to binary,
+[SPEAKER_04]: you lose something.
+[SPEAKER_04]: But you had a scatter plot where I think
+it was also within the promoter's
+[SPEAKER_04]: expression where you said, maybe it's
+overfitting on these things that are
+[SPEAKER_04]: massively expressed, that have massive
+fold changes.
+[SPEAKER_04]: And that made me think, oh, well,
+why don't you just make that one binary?
+[SPEAKER_04]: And then it won't know which ones have
+massive fold changes, which that might be
+[SPEAKER_04]: a case where you gain something,
+but maybe I'm wrong.
+[SPEAKER_04]: I mean, comments?
+[SPEAKER_01]: No, I think that's interesting.
+[SPEAKER_01]: And some potential ways to think about
+that is first training a model on
+[SPEAKER_01]: pseudogene or not.
+[SPEAKER_01]: When I say pseudogene, things that are
+expressed are not expressed in any tissue,
+[SPEAKER_01]: and then have a model that fine-tunes on
+sort of expression level.
+[SPEAKER_01]: So you don't have to learn both,
+any expression at all at the same time as
+[SPEAKER_01]: you're trying to learn expression
+fine-tune.
+[SPEAKER_01]: And I think another problem, why I
+emphasize the tails as sort of overfitting
+[SPEAKER_01]: is because I use the mean squared error as
+my loss function.
+[SPEAKER_01]: Maybe that's weighted much higher in my
+model and just learns that.
+[SPEAKER_01]: Thank you.
+[SPEAKER_01]: Yeah, sure.
+[SPEAKER_01]: I think it's a lack of not only data,
+but sort of well-replicated and controlled
+[SPEAKER_01]: data sets.
+[SPEAKER_01]: I mean, I tested model architectures that
+had vastly different orders of magnitude
+[SPEAKER_01]: differences, and they just really didn't
+show much performance differences.
+[SPEAKER_01]: So yeah, from what the evidence I've seen
+I think we just need better data,
+[SPEAKER_01]: more controlled data sets.
+[SPEAKER_01]: And if someone has a really cool
+architecture, they propose the best and
+[SPEAKER_01]: test against that data set.
+[SPEAKER_01]: Just like we have these CASP competitions
+for protein folding, and that's how we
+[SPEAKER_01]: knew AlphaFold was one of the best
+performers, because it didn't see any of
+[SPEAKER_01]: the data beforehand.
+[SPEAKER_01]: So I think having these sort of holdout,
+well-curated data sets is really essential
+[SPEAKER_01]: moving forward.
+[SPEAKER_02]: So Travis, I was wondering when you were
+fitting your transcription factor by
+[SPEAKER_02]: insight models, you're only using at the
+end 5,000 genes.
+[SPEAKER_02]: Why is that rather than like the 20,000 or
+25,000 genes?
+[SPEAKER_01]: Yeah, so good question.
+[SPEAKER_01]: In this case, I only chose genes that had
+at least one motif of the subclusters that
+[SPEAKER_01]: I identified upstream.
+[SPEAKER_01]: I could certainly add in the other 20,000
+that don't have any, but there would be a
+[SPEAKER_01]: lot of zeros.
+[SPEAKER_02]: So that means it's changed without a
+motif?
+[SPEAKER_01]: Without a constrained motif that I could
+detect with my MSAs,
+yeah.
+[SPEAKER_05]: Any last questions?
+[SPEAKER_05]: Okay, thank you, Travis.
+[SPEAKER_05]: We can ask you more questions.
+[SPEAKER_05]: Perfect.
+[SPEAKER_05]: Well, thank you very much.
+[SPEAKER_05]: Thank you.
+[SPEAKER_00]: This has been a production of Cornell
+University on the web at Cornell.edu.
+[SPEAKER_00]: Thank you.
+Thank you.
+Thank you.

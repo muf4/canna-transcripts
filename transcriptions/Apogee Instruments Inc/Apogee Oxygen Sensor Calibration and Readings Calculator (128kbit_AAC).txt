@@ -1,0 +1,206 @@
+[SPEAKER_00]: Hello, I'm John Huber, Applications
+Engineer with Apogee Instruments,
+[SPEAKER_00]: and in this video we will be going over
+some of the more frequently asked
+[SPEAKER_00]: questions regarding the operation and
+calibration of our SO100 and 200 series
+[SPEAKER_00]: oxygen sensors.
+[SPEAKER_00]: Now these sensors are unique among Apogee
+Instruments' product line in that they are
+[SPEAKER_00]: user calibrated.
+[SPEAKER_00]: And so one of the more frequently asked
+questions we get are, what are the best
+[SPEAKER_00]: practices for calibrating and applying the
+readings from these sensors?
+[SPEAKER_00]: So to calibrate it, you'll first want to
+set it up in an open air environment with
+[SPEAKER_00]: a similar temperature, pressure,
+and humidity level as the sampling
+[SPEAKER_00]: environment that you will be operating the
+sensor in.
+[SPEAKER_00]: Once you've got it set up in this
+environment, you will want to let the
+[SPEAKER_00]: sensor's millivolt readings stabilize,
+and then once they have, you will want to
+[SPEAKER_00]: write down or record this millivolt
+reading as your calibration millivolt
+[SPEAKER_00]: reading.
+[SPEAKER_00]: Once you have this calibration millivolt
+reading, you will want to use it in the
+[SPEAKER_00]: formulas listed in the SO100 and 200
+manuals in order to obtain your
+[SPEAKER_00]: calibration multiplier and calibration
+offset.
+[SPEAKER_00]: Once you have this calibration multiplier
+and offset, you can use it to convert the
+[SPEAKER_00]: sensor's millivolt signal into a measure
+of relative oxygen concentration.
+[SPEAKER_00]: Now the manual can be found on our website
+by going to the home page, scrolling down
+[SPEAKER_00]: to the support heading, clicking technical
+support, then selecting the oxygen
+[SPEAKER_00]: sensors, and clicking the link product
+manuals found below.
+[SPEAKER_00]: In addition to the product manual,
+we have developed a calculator spreadsheet
+[SPEAKER_00]: that will be posted under the helpful
+articles and links section that will walk
+[SPEAKER_00]: you through and run these calculations for
+you.
+[SPEAKER_00]: So to use this spreadsheet, you'll want to
+follow these steps.
+[SPEAKER_00]: First, enter your sensor model.
+[SPEAKER_00]: In this case, we'll pick the SO110.
+[SPEAKER_00]: Next, you want to enter your calibration
+millivolt reading that you recorded.
+[SPEAKER_00]: In this case, we'll pick 45.
+[SPEAKER_00]: And you can see once I enter my
+calibration millivolt reading,
+[SPEAKER_00]: the spreadsheet now gives me my
+calibration multiplier and calibration
+[SPEAKER_00]: offset that I can use to convert my
+sensor's millivolt readings into a measure
+[SPEAKER_00]: of relative oxygen concentration.
+[SPEAKER_00]: An additional thing that this spreadsheet
+does is it allows you to correct for
+[SPEAKER_00]: changes in environmental conditions.
+[SPEAKER_00]: Now this is important because the oxygen
+sensor measures or outputs a millivolt
+[SPEAKER_00]: signal based on absolute oxygen
+concentrations which we convert into
+[SPEAKER_00]: relative oxygen concentrations.
+[SPEAKER_00]: The reason we don't just use absolute
+concentrations is because many
+[SPEAKER_00]: environmental factors affect them.
+[SPEAKER_00]: For example, if you're at sea level,
+the relative oxygen concentration in open
+[SPEAKER_00]: air is going to be roughly 20.95%.
+[SPEAKER_00]: On top of Mount Everest, it's also going
+to be 20.95%, but the absolute
+[SPEAKER_00]: concentration of oxygen between these two
+environments will be very different.
+[SPEAKER_00]: So, keeping that in mind, when you're
+using an oxygen sensor that's been
+[SPEAKER_00]: calibrated in one environment and you take
+it to a very different environment,
+[SPEAKER_00]: you will need to make sure to correct its
+readings for changes in temperature,
+[SPEAKER_00]: pressure, and humidity.
+[SPEAKER_00]: And if you would like more information on
+why this happens and how these corrections
+[SPEAKER_00]: are applied and how we came by these
+equations to apply these corrections,
+[SPEAKER_00]: that information can be found in the ESSO
+100 and 200 product manual.
+[SPEAKER_00]: But in this case, let's go ahead and show
+you how to enter your information into
+[SPEAKER_00]: this spreadsheet and apply the
+corrections.
+[SPEAKER_00]: So first, you're going to want to enter
+the environmental conditions for your
+[SPEAKER_00]: calibration environment starting with
+temperature.
+[SPEAKER_00]: So let's select our units for temperature
+as Celsius and then let's enter a value of
+[SPEAKER_00]: 25 degrees.
+[SPEAKER_00]: Now let's say the humidity level in your
+calibration environment was 10%,
+[SPEAKER_00]: so we'll go ahead and punch that in.
+[SPEAKER_00]: Next, you'll want to enter either the
+elevation of your calibration environment
+[SPEAKER_00]: in order to estimate the barometric
+pressure of that environment or enter
+[SPEAKER_00]: barometric pressure directly.
+[SPEAKER_00]: We'll enter the barometric pressure value
+by clicking the button on the left here
+[SPEAKER_00]: saying use calibration pressure and we
+will enter the barometric pressure in kPa
+[SPEAKER_00]: of the calibration environment as let's
+say 89.5.
+[SPEAKER_00]: Now that we have our calibration
+environment conditions entered,
+[SPEAKER_00]: we can move on to our sample information.
+[SPEAKER_00]: First, we'll want to start by entering the
+sample millivolt value and let's go ahead
+[SPEAKER_00]: and make up a value of 44 for this
+example.
+[SPEAKER_00]: Now you can see the spreadsheet has
+already produced an uncorrected oxygen
+[SPEAKER_00]: reading based on the information we gave
+it for the calibration readings and the
+[SPEAKER_00]: sample millivolt reading that we just
+entered.
+[SPEAKER_00]: Since that millivolt reading for the
+sample is a little bit lower, the oxygen
+[SPEAKER_00]: reading reported by this spreadsheet is
+also lower at 20.4%.
+[SPEAKER_00]: But it's important to remember this has
+not been corrected.
+[SPEAKER_00]: So if your environment that you're
+sampling in is different from your
+[SPEAKER_00]: calibration environment, the actual
+relative oxygen concentration will be
+[SPEAKER_00]: different.
+[SPEAKER_00]: So let's go ahead and apply those
+corrections.
+[SPEAKER_00]: First, we'll need to enter our sample
+environment conditions starting with
+[SPEAKER_00]: temperature once again.
+[SPEAKER_00]: Let's go ahead and enter it in Fahrenheit
+this time.
+[SPEAKER_00]: And let's say that our sample environment
+was 75 degrees.
+[SPEAKER_00]: Next, let's enter our humidity for our
+sample environment.
+[SPEAKER_00]: Let's say that's about 50%.
+[SPEAKER_00]: Next, we want to enter either the
+elevation or barometric pressure once
+[SPEAKER_00]: again.
+[SPEAKER_00]: This time we'll use elevation to estimate
+barometric pressure.
+[SPEAKER_00]: So we'll select our units as meters.
+[SPEAKER_00]: And then let's say it was an elevation of
+1,500 meters.
+[SPEAKER_00]: And now to apply corrections based on the
+information we have entered into this
+[SPEAKER_00]: sheet, simply click the check boxes.
+[SPEAKER_00]: So let's correct for humidity.
+[SPEAKER_00]: Let's correct for pressure.
+[SPEAKER_00]: And let's correct for temperature.
+[SPEAKER_00]: So now you can see based on the difference
+in environment conditions between the
+[SPEAKER_00]: calibration environment and the sample
+environment, the oxygen reading for our
+[SPEAKER_00]: sample environment is 21.9%.
+[SPEAKER_00]: Now once again, this is because the
+temperature, pressure, and humidity have
+[SPEAKER_00]: changed between the calibration
+environment and the sample environment.
+[SPEAKER_00]: Once again, that's why it's so important
+to calibrate your oxygen sensor in an
+[SPEAKER_00]: environment similar to its sampling
+environment.
+[SPEAKER_00]: To minimize the need for these
+corrections.
+[SPEAKER_00]: However, if that's not an option,
+you can use these corrections to correct
+[SPEAKER_00]: your oxygen sensors readings.
+[SPEAKER_00]: And once again, both the oxygen sensor
+manual and this spreadsheet can be found
+[SPEAKER_00]: in our support page for the oxygen sensor.
+[SPEAKER_00]: And also cover the subjects that are
+covered in this video in very great
+detail.
+[SPEAKER_00]: That being said, if you have any questions
+or if you have any issues that you would
+[SPEAKER_00]: like to discuss with us or bring to our
+attention, you can reach us at our email
+[SPEAKER_00]: address at techsupport at
+apogeeinstruments.com.
+[SPEAKER_00]: Or you can give us a call at 435-245-8012.
+[SPEAKER_00]: Or you can also leave a comment below.
+[SPEAKER_00]: And if you would like to see more content
+from Apogee Instruments, feel free to
+[SPEAKER_00]: click that subscribe button.
+[SPEAKER_00]: Thank you for watching.
+And we'll see you next time.

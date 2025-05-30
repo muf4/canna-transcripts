@@ -1,0 +1,243 @@
+[SPEAKER_00]: This is a production of Cornell
+University.
+[SPEAKER_00]: So I'm going to be presenting today trying
+to understand the co-inheritance of two
+[SPEAKER_00]: traits that are very important for a
+breeding program.
+[SPEAKER_00]: We're using a method called regional
+co-heritability mapping.
+[SPEAKER_00]: Now I'll go into that.
+[SPEAKER_00]: So I have a picture about what
+conventional cassava looks like.
+[SPEAKER_00]: It's mainly white to cream.
+[SPEAKER_00]: And then this is what we call the yellow
+cassava, which is an effort by Harvest
+[SPEAKER_00]: Plus to bio-fortify cassava with
+provitamin A.
+[SPEAKER_00]: And so Harvest Plus, it's a program with
+the CG systems and with cassava,
+[SPEAKER_00]: the main target is provitamin A.
+[SPEAKER_00]: And in fact, beta-carotene is the
+provitamin A that is targeted.
+[SPEAKER_00]: But total carotenoids, which shows itself
+as yellow coloration of the flesh,
+[SPEAKER_00]: it's a good proxy for measuring
+beta-carotene because the process of
+[SPEAKER_00]: measuring beta-carotene is HPLC and it's
+kind of tedious.
+[SPEAKER_00]: So we have a prevalent problem.
+[SPEAKER_00]: Right now, with the yellow cassava,
+the yellow cassava has drastically low dry
+[SPEAKER_00]: matter content.
+[SPEAKER_00]: And this is a problem because,
+in fact, the value of cassava is the dry
+[SPEAKER_00]: matter content and the yield that we get
+per hectare.
+[SPEAKER_00]: So there has been reports, mainly in most
+African breeding programs, of negative
+[SPEAKER_00]: correlation between this dry matter and
+this yellow coloration of the tubers.
+[SPEAKER_00]: And there have been counter-reports in
+South America, in Sierra or Columbia.
+[SPEAKER_00]: They don't see this negative correlation.
+[SPEAKER_00]: So we think it's majorly in the African
+gemplasm.
+[SPEAKER_00]: So the motivation is to understand the
+genetic basis of this negative
+[SPEAKER_00]: correlation.
+[SPEAKER_00]: And to do this, we employ a method within
+the regional co-heritability mapping and
+[SPEAKER_00]: now walk through the procedure.
+[SPEAKER_00]: So the procedure starts by fitting a
+bivariate G blob model.
+[SPEAKER_00]: And the traits are dry matter and B.
+[SPEAKER_00]: B is a value from chromameter.
+[SPEAKER_00]: I think that's what it's called.
+[SPEAKER_00]: And it just measures the color.
+[SPEAKER_00]: So we take the B and the dry matter trait.
+[SPEAKER_00]: We fit a bivariate G blob.
+[SPEAKER_00]: Using this model.
+[SPEAKER_00]: And in fact, the way the model is fitted
+is that we have a stack of the two traits.
+[SPEAKER_00]: And we fit the X matrix in our model is
+just for the location effects.
+[SPEAKER_00]: Because the data was collected from
+multiple locations.
+[SPEAKER_00]: And then we show the genomic effect in
+you.
+[SPEAKER_00]: And here we show that these effects has
+covariance from two covariances.
+[SPEAKER_00]: One from DK, which is a decomposition of
+the genomic relationship matrix that comes
+[SPEAKER_00]: from markers.
+[SPEAKER_00]: And VG, which is the trait by trait
+covariance matrix that we are estimating.
+[SPEAKER_00]: And the same goes for error.
+[SPEAKER_00]: And for error is simplified because we
+have an identity matrix showing no
+[SPEAKER_00]: correlation between data points.
+[SPEAKER_00]: And we fit this model.
+[SPEAKER_00]: And then the next thing we back solve to
+get SNP effects from these values,
+[SPEAKER_00]: from the genomic values.
+[SPEAKER_00]: And SNP effects are estimated by
+multiplying the transpose of the marker
+[SPEAKER_00]: matrix.
+[SPEAKER_00]: This marker matrix is centered,
+multiplied by the inverse of the genomic
+[SPEAKER_00]: relationship matrix.
+[SPEAKER_00]: And the estimated genomic effect from each
+trait.
+[SPEAKER_00]: So after you back solve, we try to
+standardize again using just like how we
+[SPEAKER_00]: make a G matrix using the denominator from
+Van Raden et al.
+[SPEAKER_00]: 2008.
+[SPEAKER_00]: And then the next thing is that we've been
+SNP effects.
+[SPEAKER_00]: We've been chromosomes into segments.
+[SPEAKER_00]: And these segments are unique 3,000 SNPs.
+[SPEAKER_00]: And they are actually unique.
+[SPEAKER_00]: There is no overlap.
+[SPEAKER_00]: So we divide the chromosome into different
+segments.
+[SPEAKER_00]: We term these genomic segments.
+[SPEAKER_00]: And when we have been them, of course,
+they are at the tail end of the
+[SPEAKER_00]: chromosome.
+[SPEAKER_00]: Some of them are less than 3,000.
+[SPEAKER_00]: So after being them, we solve for clonal
+genomic segment values.
+[SPEAKER_00]: And we estimate for this by multiplying
+the marker matrix again with the SNP
+[SPEAKER_00]: effect that was calculated prior.
+[SPEAKER_00]: And then we correlate this clonal genomic
+segment values for dry matter and clonal
+[SPEAKER_00]: genomic segment values for the B trait.
+[SPEAKER_00]: And this is how we get the correlation for
+each segment.
+[SPEAKER_00]: So these were modeled using BlobF90
+programs.
+[SPEAKER_00]: And other matrix computations were done in
+R.
+[SPEAKER_00]: So the data for the analysis was majorly
+genetic gain population.
+[SPEAKER_00]: Genetic gain is a breeding population from
+the ITA.
+[SPEAKER_00]: And it has been bred since the 70s.
+[SPEAKER_00]: So we used only data collected in two
+years.
+[SPEAKER_00]: So we used the dry matter and the B trait.
+[SPEAKER_00]: As I said previously, but we have a third
+trait we call pulp color.
+[SPEAKER_00]: And this is a binary trait that actually
+measures the color of the root,
+[SPEAKER_00]: which is one for white and then two for
+deep cream to yellow.
+[SPEAKER_00]: We use about this number of GBS SNPs,
+451 clones for white, 200 clones for
+white.
+[SPEAKER_00]: 162 clones for yellow.
+[SPEAKER_00]: Data was from three locations.
+[SPEAKER_00]: And we do this analysis in all the
+populations, white, yellow, and white plus
+[SPEAKER_00]: yellow.
+[SPEAKER_00]: Excuse me.
+[SPEAKER_00]: So this is the result from white plus
+yellow.
+[SPEAKER_00]: So each bar is 3,000 SNP segment.
+[SPEAKER_00]: Each color, so as you go from black to red
+to black to red, so each color difference
+[SPEAKER_00]: is a new chromosome.
+[SPEAKER_00]: And what we see from this analysis is if
+you look at the scales, here in Y is the
+[SPEAKER_00]: estimated genetic correlation.
+[SPEAKER_00]: And in X, of course, is the chromosomes.
+[SPEAKER_00]: We see an overwhelmingly negative
+correlation at chromosome 1.
+[SPEAKER_00]: And then it seems that other chromosomes
+are a bit slight or neutral.
+[SPEAKER_00]: This is for both white and yellow
+populations.
+[SPEAKER_00]: And we move to the white.
+[SPEAKER_00]: We see a different result if you look at
+the scales of the genetic correlation.
+[SPEAKER_00]: In white, we observe a strong correlation
+here.
+[SPEAKER_00]: Not strong in terms of the value,
+but this segment shows very strong
+[SPEAKER_00]: correlation.
+[SPEAKER_00]: And then we also see something here that
+most of the segments in white are
+[SPEAKER_00]: positive.
+[SPEAKER_00]: We observe positive correlations.
+[SPEAKER_00]: So if we move to yellow, we see something
+that we saw in the previous one with white
+[SPEAKER_00]: and yellow.
+[SPEAKER_00]: But a different thing now occurs is that
+we see that almost, if at all,
+[SPEAKER_00]: apart from the neutral ones,
+overwhelmingly negatively correlated for
+[SPEAKER_00]: the yellow.
+[SPEAKER_00]: So what does this show?
+[SPEAKER_00]: Before we go to discussion, I want to show
+this genetic correlation from the
+[SPEAKER_00]: bivariate model itself, not the mapping.
+[SPEAKER_00]: And in white, we observe a positive
+correlation.
+[SPEAKER_00]: In yellow, we observe a strong negative
+correlation.
+[SPEAKER_00]: And when you have both, we have a weak
+negative correlation.
+[SPEAKER_00]: So the correlations tend to be consistent
+between these and the maps.
+[SPEAKER_00]: And we observe a very strong negative
+correlation for the yellow.
+[SPEAKER_00]: So what does this mean for the program?
+[SPEAKER_00]: It means that this favorable development
+of high dry matter white varieties and,
+[SPEAKER_00]: in fact, this product is already in high
+demand in Africa, both for the food and
+[SPEAKER_00]: starch industries.
+[SPEAKER_00]: And we will recommend a separate breeding
+program for this.
+[SPEAKER_00]: And then if you move to yellow,
+we observe overwhelmingly that it doesn't
+[SPEAKER_00]: favor yellow variety development.
+[SPEAKER_00]: And this is indeed discouraging because of
+the high hopes we have for high harvest
+[SPEAKER_00]: plus.
+[SPEAKER_00]: But there has been a lot of effort already
+towards this.
+[SPEAKER_00]: And in fact, a lot of clones are brought
+in from SEAT and used in the breeding
+[SPEAKER_00]: program for this.
+[SPEAKER_00]: And it's ongoing now.
+[SPEAKER_00]: We'll see the result.
+[SPEAKER_00]: And it's also a good target for CRISPR if
+we find what is going on completely.
+[SPEAKER_00]: And in fact, there is also a chance that
+there can be a recombinant who knows when
+[SPEAKER_00]: this happens.
+[SPEAKER_00]: And in conclusion, I want to highlight
+what is going on in chromosome 1.
+[SPEAKER_00]: Chromosome 1 is one that we know already
+that there is an introgression that
+[SPEAKER_00]: happened in the 30s or after that as well
+in most cultivated cassava in Africa.
+[SPEAKER_00]: And chromosome 1 seems to be the culprit
+in this case.
+[SPEAKER_00]: But chromosome 1 is also good for dry
+matter.
+[SPEAKER_00]: So it's a very difficult case.
+[SPEAKER_00]: And we're actually showing the methodology
+because it shows a very good way to see
+[SPEAKER_00]: what is going on between these two traits.
+[SPEAKER_00]: And in the end, we think there will be
+some progress from the results.
+[SPEAKER_00]: Thank you very much.
+[SPEAKER_00]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_00]: Thank you.
+[SPEAKER_00]: Thank you.
+Thank you.

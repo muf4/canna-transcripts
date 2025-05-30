@@ -1,0 +1,1271 @@
+[SPEAKER_01]: This is a production of Cornell
+University.
+[SPEAKER_02]: Okay, so it's a great pleasure today to
+introduce Rossozzani.
+[SPEAKER_02]: Ros did her graduate work in Italy and
+then was a postdoc with Philip Benfi and
+[SPEAKER_02]: that's when I met her.
+[SPEAKER_02]: And she did this absolutely beautiful work
+looking at how developmental regulation
+[SPEAKER_02]: interacts with a cell cycle, looking at
+the downstream gene network of short root
+[SPEAKER_02]: and scarecrow in the cortex endodermal
+initial division and found cyclin D6-1 is
+[SPEAKER_02]: downstream of that.
+[SPEAKER_02]: So it was absolutely beautiful and I have
+been very interested in how cell cycle
+[SPEAKER_02]: interacts with cell identity and so I
+loved her work when I saw that and we've
+[SPEAKER_02]: been friends ever since.
+[SPEAKER_02]: We met at several conferences and Ros is
+one of these people who's always doing
+[SPEAKER_02]: something innovative.
+[SPEAKER_02]: So I always love hearing what her latest
+thing is.
+[SPEAKER_02]: She's got a beautiful publication in eLife
+with a new microscopy method to look at
+[SPEAKER_02]: protein movement.
+[SPEAKER_02]: She was telling me last night about a
+contraption she and a collaborator were
+[SPEAKER_02]: building to image multiple roots
+simultaneously.
+[SPEAKER_02]: With live imaging and she does beautiful
+gene regulatory network and now
+[SPEAKER_02]: computational analysis.
+[SPEAKER_02]: She's also teaching a joint class with an
+engineer on computational biology at North
+[SPEAKER_02]: Carolina State University.
+[SPEAKER_02]: So welcome Ros and I'm looking forward to
+your talk.
+[SPEAKER_00]: Thank you Adrian for having me here.
+[SPEAKER_00]: It's true our friendship goes back when we
+were both interviewing for job at the same
+[SPEAKER_00]: time and I always cheer for her to get the
+best offer because she's an outstanding
+[SPEAKER_00]: scientist, an amazing person.
+[SPEAKER_00]: So you're so lucky to have her here that
+I'm trying to get her to come to the
+[SPEAKER_00]: triangle area.
+[SPEAKER_00]: But so today what I really like to do is
+to just spend a couple of minutes and to
+[SPEAKER_00]: set up why I'm working with plant in a
+broader aspect and then I'm going to tell
+[SPEAKER_00]: you three different stories.
+[SPEAKER_00]: Tendency I try to always tell unpublished
+story but things don't develop that fast.
+[SPEAKER_00]: So I'll spend most of the time talking
+about unpublished story and the other two
+[SPEAKER_00]: they were just recently published in eLife
+and developmental biology.
+[SPEAKER_00]: So they will be short and I apologize that
+they're already published but maybe you
+[SPEAKER_00]: haven't yet seen them.
+[SPEAKER_00]: And I would say just let's keep this talk
+very informal.
+[SPEAKER_00]: So just ask me any question that you want
+during the talk and now towards the end.
+[SPEAKER_00]: I'm happy to change the speed of my talk
+and need so that everybody is on board.
+[SPEAKER_00]: And again it will be about three stories.
+[SPEAKER_00]: So stay awake for the story you're most
+interested in.
+[SPEAKER_00]: And I have an outline telling you when you
+can go to sleep and when you can wake up
+[SPEAKER_00]: or etc.
+[SPEAKER_00]: And with that I'll take on take again
+Adrian to having me here.
+[SPEAKER_00]: And so my interesting is really to
+identify other people need identifying for
+[SPEAKER_00]: me but pursuing some of the grand
+challenges of our century.
+[SPEAKER_00]: And so what are these grand challenges
+growing our economy.
+[SPEAKER_00]: Everybody wants our economy to get better
+improving our health of course protecting
+[SPEAKER_00]: our environment and enriching our youth.
+[SPEAKER_00]: We are at the university so we are all
+agree with these four great challenges.
+[SPEAKER_00]: And so when I am here why plant biology.
+[SPEAKER_00]: Well there is a fifth and I would say very
+important aspect that is feeding our
+[SPEAKER_00]: world.
+[SPEAKER_00]: And for the graduate student in here at
+the talk they is extremely important how
+[SPEAKER_00]: you really position yourself in this group
+of amazing scientists and trying to
+[SPEAKER_00]: communicate to your parents the public
+what is the need why we need more food.
+[SPEAKER_00]: Well we are a very growing population.
+[SPEAKER_00]: By 2050 we're going to grow up to nine
+billion people.
+[SPEAKER_00]: The Food and Agricultural Organization
+tell us that we need to increase food
+[SPEAKER_00]: production by 70 percent if we want to
+feed the world population.
+[SPEAKER_00]: And so the very first things that one
+would say is well just plant more crops.
+[SPEAKER_00]: But the problem is that another let's say
+statistical scariness is that the arable
+[SPEAKER_00]: land is declining.
+[SPEAKER_00]: And I always joke that I work on
+Arabidopsis.
+[SPEAKER_00]: It is a model plant.
+[SPEAKER_00]: By 2050 we'll only see on the sidewalk
+Arabidopsis plant and there will be not
+[SPEAKER_00]: much arable land.
+[SPEAKER_00]: And so still when I'm talking to my mother
+I say well we need to provide more food.
+[SPEAKER_00]: The arable land is decreasing.
+[SPEAKER_00]: She would say well when I was a kid let's
+say when I was a teenager she would say we
+[SPEAKER_00]: will put a lot of fertilizer so that even
+if you have a smaller land you have a lot
+[SPEAKER_00]: of crop.
+[SPEAKER_00]: And so we all know from the first green
+revolution that that was great.
+[SPEAKER_00]: But we know that now fertilizer are
+starting to harm the environment.
+[SPEAKER_00]: So now we remain with these great green
+challenge that we need more food.
+[SPEAKER_00]: We have less land and we want to provide
+enough food without harming the
+[SPEAKER_00]: environment.
+[SPEAKER_00]: So how are we going to do that?
+[SPEAKER_00]: And so I like this date and I just told my
+head of the department that I probably
+[SPEAKER_00]: retire 2050 when I say well I did anything
+I could up to that point to at least feed
+[SPEAKER_00]: a little bit more people.
+[SPEAKER_00]: But as a beginning what you're going to
+see from me is all research done on a
+[SPEAKER_00]: model system hoping that all the research
+and efforts we're putting in our model
+[SPEAKER_00]: system will actually be then eventually
+translated.
+[SPEAKER_00]: And you don't need this.
+[SPEAKER_00]: It was not meant to be there but that's
+okay.
+[SPEAKER_00]: And so focus on the need feed more people.
+[SPEAKER_00]: Basic approach is we are trying to
+re-engineer stem cell regulation.
+[SPEAKER_00]: Our basic idea very grounded to the floor.
+[SPEAKER_00]: I always joke they say I'm very short so
+I'm very close to the ground.
+[SPEAKER_00]: So my idea is very grounded base.
+[SPEAKER_00]: If stem cell give rise to all the tissue
+and organ of a plant what if we learn more
+[SPEAKER_00]: about stem cell regulation?
+[SPEAKER_00]: Can we actually modify the architecture of
+a plant from the ground?
+[SPEAKER_00]: So the idea here is to use everything that
+we can gain from these model plants.
+[SPEAKER_00]: Arabidopsis and then eventually translate
+that to the non-Arabidopsis plant and even
+[SPEAKER_00]: to our to ourself as exemplified by the
+Vitruvian men.
+[SPEAKER_00]: So here is the talk for which you can stay
+awake or you can fall asleep.
+[SPEAKER_00]: This is all unpublished data where I'm
+going to show you how we're going to we
+[SPEAKER_00]: obtain stem cell type transcriptional
+profile of genes and then we kind of like
+[SPEAKER_00]: had to gain more information about this.
+[SPEAKER_00]: We started to generate a gene regulatory
+network of the stem cell.
+[SPEAKER_00]: So we'll be a little bit on the
+computational side and then if you're
+[SPEAKER_00]: interested then in new in vivo imaging
+where you can obtain information about
+[SPEAKER_00]: movement of protein or for example in vivo
+protein-protein interaction where you can
+[SPEAKER_00]: get down to the stoichiometry of protein
+interaction then I'll wake you up and tell
+[SPEAKER_00]: you about this story and then the third
+one will be to let's say make the life of
+[SPEAKER_00]: graduate student and postdoc better.
+[SPEAKER_00]: So where we are trying to develop imaging
+technique or at least the imaging device
+[SPEAKER_00]: that will increase the eye throughput and
+so I had the just wonderful talk with
+[SPEAKER_00]: Miguel saying how eye throughput is
+actually very important even if you need
+[SPEAKER_00]: to sacrifice on something else.
+[SPEAKER_00]: So for the whole three section of the talk
+the main role is going to be played by not
+[SPEAKER_00]: only Arabidopsis but the root of
+Arabidopsis.
+[SPEAKER_00]: It mainly is why were we using Arabidopsis
+root is an extremely tractable system.
+[SPEAKER_00]: It allows you to do a lot of cool things.
+[SPEAKER_00]: The toolbox in terms of molecular biology
+they are fantastic for all our colleagues
+[SPEAKER_00]: and friends that have worked towards that
+but especially for this talk I would like
+[SPEAKER_00]: you to remember two or just one aspect.
+[SPEAKER_00]: The stem cell that we are going to talk
+today are found at the tip of the root and
+[SPEAKER_00]: all the cells derive from division,
+asymmetric cell division of the stem cell
+[SPEAKER_00]: and so when a daughter cells is derived
+and then another cell is divided then the
+[SPEAKER_00]: cells are pushed upwards such way that you
+can follow time along the longitudinal
+[SPEAKER_00]: axis so we have a developmental time along
+the root and then what we have is that the
+[SPEAKER_00]: root is speaking with you as a concentric
+cylinder and so you can reduce a 3D space
+[SPEAKER_00]: into a 2D space because all these cells
+are radially symmetric with the exception
+[SPEAKER_00]: of the vasculature but we're not going to
+go into detail.
+[SPEAKER_00]: So we can follow time and space and so
+when you can deal with spatial temporal
+[SPEAKER_00]: information the best tool you could use
+for me at least was to use the root.
+[SPEAKER_00]: So going into right away the talk so we
+were fortunate enough that we were able to
+[SPEAKER_00]: collect all the different stem cell marker
+of the root.
+[SPEAKER_00]: Some we developed, some were from talking
+with colleagues and say oh we are trying
+[SPEAKER_00]: to get all the stem cell marker and these
+phenomenal colleagues are just sharing all
+[SPEAKER_00]: their marker even before publication for a
+great collaboration so we have all these
+[SPEAKER_00]: different fluorescent marker of the
+difference themselves.
+[SPEAKER_00]: What we can do, what we can obtain stem
+cell specific transcriptomic profile by
+[SPEAKER_00]: and so that we can identify stem cell
+genes.
+[SPEAKER_00]: How we do that, I'm not going to go too
+much into the details but we use
+[SPEAKER_00]: fluorescent activity cell sorting so we
+can obtain, we can protoplast this plant,
+[SPEAKER_00]: we obtain two population of cells,
+non-fluorescent protein and fluorescent
+[SPEAKER_00]: protein so that we have an enriched
+population of the different stem cell and
+[SPEAKER_00]: then we can do RNAseq data.
+[SPEAKER_00]: Everybody so far following?
+[SPEAKER_00]: Great.
+[SPEAKER_00]: So with these data what we did,
+well the first point I had to sit down and
+[SPEAKER_00]: say well as cool as it that we want to
+work on stem cell we never really show and
+[SPEAKER_00]: there were no data whatsoever that the
+stem cell were actually transcriptionally
+[SPEAKER_00]: different from non-stem cell.
+[SPEAKER_00]: So we had to do that at first,
+we had to look at our stem cell and then
+[SPEAKER_00]: we said well are those different stem cell
+transcriptionally set apart from non-stem
+[SPEAKER_00]: cell and so we had data transcriptomic
+data from let's say stage one that
+[SPEAKER_00]: contains all the stem cell and
+transamplifying zone where cells divide
+[SPEAKER_00]: very often and then we have a stage two
+that contain elongating cells and stage
+[SPEAKER_00]: three that will contain differentiated
+cell.
+[SPEAKER_00]: And so from these principle component
+analysis so very first point that I want
+[SPEAKER_00]: to make here is a joke.
+[SPEAKER_00]: The very first time I saw this PCA,
+this is the work of my postdoc,
+[SPEAKER_00]: Angel's, she's an allergic and computer
+engineer, she never worked with biologists
+[SPEAKER_00]: before and when I saw that I said wait a
+second, we're working on our paradoxes not
+[SPEAKER_00]: on Drosophila embryo, what is going on
+here?
+[SPEAKER_00]: And she said no no no everything is on the
+right track, what you're seeing here is
+[SPEAKER_00]: genes and how they are different from
+themselves.
+[SPEAKER_00]: So if you, I always take the second and
+actually ask a graduate student if he sees
+[SPEAKER_00]: what is the difference.
+[SPEAKER_00]: Do we have a volunteer here?
+[SPEAKER_00]: Well graduate students are gonna have
+lunch with me right?
+[SPEAKER_00]: So they're gonna have a free lunch,
+let's make it less of a free, who is the
+[SPEAKER_00]: graduate student that wants to take the
+lead and see if you see beside the
+[SPEAKER_00]: Drosophila embryo if you see any
+difference if you see that the stem cell
+[SPEAKER_00]: have a different transcriptional profile
+than the non-stem cell.
+[SPEAKER_00]: Where are the graduate students?
+[SPEAKER_00]: Raise your hand.
+[SPEAKER_00]: Then now I need to pick you.
+[SPEAKER_00]: Only two?
+[SPEAKER_00]: They're hiding, wait a second,
+you're gonna have lunch with me so I'm
+[SPEAKER_00]: gonna see you in 30 minutes.
+[SPEAKER_00]: Okay you kept your hand enough that it
+seems, go ahead.
+[SPEAKER_05]: It seems like the more mature cells are
+farther along the right side of the first
+[SPEAKER_05]: principal component largely.
+[SPEAKER_05]: Exactly.
+[SPEAKER_00]: Right so big point you're having a extra
+slice of pizza if there's pizza for lunch
+[SPEAKER_00]: because you deserved it.
+[SPEAKER_00]: So that was actually very nice because we
+saw that yes stem cell were
+[SPEAKER_00]: transcriptionally different than non-stem
+cell what we realize is that stage one
+[SPEAKER_00]: that contains some of the stem cell
+couldn't use for any farther analysis
+[SPEAKER_00]: because we have that stage one is as we
+expected close to the stem cell and the
+[SPEAKER_00]: non-stem cell.
+[SPEAKER_00]: So that was a very first positive result
+that when you're starting your lab and
+[SPEAKER_00]: you're saying well am I going the right
+direction I said it seems so yes if we are
+[SPEAKER_00]: just looking at the stem cell type
+specific expression we're going the right
+[SPEAKER_00]: direction because indeed they are
+different from non-stem cell and so with
+[SPEAKER_00]: that in mind we identify that are specific
+for the stem cell only 1,600 genes of
+[SPEAKER_00]: which 200 were transcription factors and
+so we know exactly where all these
+[SPEAKER_00]: different genes are expressing which stem
+cell and etc.
+[SPEAKER_00]: And so with that in mind then you could do
+1,600 genes or 200 transcription factor
+[SPEAKER_00]: you say 200 we can do reverse engineer we
+can order 200 knockout line and good luck
+[SPEAKER_00]: to the graduate student and postdoc
+working with all these mutants right or we
+[SPEAKER_00]: could strategize differently and then we
+sat down with my postdoc and say well
+[SPEAKER_00]: given a lot of information that I'm going
+to give you in a second can we actually
+[SPEAKER_00]: find the way that we rank what of these
+1,600 gene or these 200 transcription
+[SPEAKER_00]: factor will most likely have a major role
+in stem cell function and so we sat down
+[SPEAKER_00]: and we developed a computational pipeline
+and I'm going to go into the details in a
+[SPEAKER_00]: second but I wanted to tell you that is a
+joke that I'm going to steal from somebody
+[SPEAKER_00]: else I just heard when you have a
+computational pipeline you really want to
+[SPEAKER_00]: show every single needy greedy details
+it's like when you have picture of your
+[SPEAKER_00]: child and you want to show all the picture
+of your child to your friends they don't
+[SPEAKER_00]: care much so I'm going to give you just a
+brief overview of this computational
+[SPEAKER_00]: pipeline but I'm happy to give you any
+extra details that you need so the
+[SPEAKER_00]: computational pipeline is based on two
+major aspects so is taking advantage of
+[SPEAKER_00]: spatial temporal data and so what are
+these spatial temporal data?
+[SPEAKER_00]: Spatial is all the different stem cell
+marker transcriptomic profile so cell type
+[SPEAKER_00]: specific transcriptomic profile and
+temporal data as I was telling you the
+[SPEAKER_00]: root has embedded in the longitudinal axis
+time so the temporal data is all the gene
+[SPEAKER_00]: expression at every single developmental
+time of the root so we had a beautiful
+[SPEAKER_00]: data set already available from Siobhan
+Brady showing dividing up the root in 12
+[SPEAKER_00]: section that so we consider that a 12 time
+point data set and so the computational
+[SPEAKER_00]: pipeline has a very first clustering step
+that is a normal clustering step that
+[SPEAKER_00]: everybody may want to use and mainly is
+based on gene co-expression the main
+[SPEAKER_00]: assumption of it is that if a gene is
+expressed in one specific stem cell then
+[SPEAKER_00]: that gene should function in that stem
+cell so they're practically dividing up
+[SPEAKER_00]: the gene if their expression is specific
+to one stem cell or two two three stem
+[SPEAKER_00]: cell and etc and then the novel aspect of
+these computational pipeline is a dynamic
+[SPEAKER_00]: vision network inference and is a very
+simple concept the idea here is that if
+[SPEAKER_00]: you find if you have a regulator you
+expect that these regulator is controlling
+[SPEAKER_00]: a gene either in the time point or the
+same time point or one time point after
+[SPEAKER_00]: and so is based on a first assumption of
+Markov where we saying well given the
+[SPEAKER_00]: expression and time lapse zero and time
+lapse one what is the probability that
+[SPEAKER_00]: these gene is regulating these allergy and
+so you do these inference throughout the
+[SPEAKER_00]: 12 data point and then the other aspect
+that you can have is that you can see if
+[SPEAKER_00]: there is a directionality of regulation so
+if he's up regulating one gene at the time
+[SPEAKER_00]: lapse one or if he's down regulating okay
+oh and those are steps of the network is
+[SPEAKER_00]: the idea here was to look at intra cluster
+connection so first of all considering
+[SPEAKER_00]: just network that are for a specific stem
+cell so that you will look at the network
+[SPEAKER_00]: of genes that function just for that stem
+cell and also inter cluster so that they
+[SPEAKER_00]: function in one stem cell but they also
+have a connection with another cell
+[SPEAKER_00]: because all of these are multi cell
+organism and we know this there is cell to
+[SPEAKER_00]: cell communication and then you're gonna
+see in a little bit the resulting network
+[SPEAKER_00]: but before showing you the resulting
+network you say oh this is all look good
+[SPEAKER_00]: but how can you actually prove that this
+is solid and reliable and etc so
+[SPEAKER_00]: computationally we need to do a couple of
+step before we can say we are confident
+[SPEAKER_00]: about our infer network because it's still
+based on probability right and so the next
+[SPEAKER_00]: two step are how we validated in silly go
+practically our new algorithm so our new
+[SPEAKER_00]: algorithm is the name is genies and you
+can have a better name we still have the
+[SPEAKER_00]: chance to change it I really don't like it
+but genie stands for gene expression
+[SPEAKER_00]: network inference from spatial temporal
+data horrible name but there's no way that
+[SPEAKER_00]: we can find a better acronym but what we
+were extremely pleased is when you have a
+[SPEAKER_00]: new algorithm generally you challenge your
+algorithm through a dream for now there is
+[SPEAKER_00]: a dream five competition where you have
+other existing algorithm existing data
+[SPEAKER_00]: sets that they are challenged one against
+each other and then you can choose
+[SPEAKER_00]: specific matrix for example precision area
+under the rock and then practically these
+[SPEAKER_00]: are indirect measurement of the ratio of
+true positive and false positive and
+[SPEAKER_00]: genies always perform best and especially
+the important aspect here is if you have a
+[SPEAKER_00]: node of 100 node or a little bit that 100
+node they tell us that we will have very
+[SPEAKER_00]: low false positive so that our graduate
+student and postdoc will be happy to go
+[SPEAKER_00]: after genes because they're not gonna
+quote unquote waste their time and the
+[SPEAKER_00]: other aspect though that is currently a
+limitation and we are working on it it
+[SPEAKER_00]: gives us confidence if we model 100 200
+gene network so I told you that we had a
+[SPEAKER_00]: thousand six hundred genes that were
+specific for the stem cell and then is not
+[SPEAKER_00]: by chance but I put that there are 200
+transcription factors so from now on what
+[SPEAKER_00]: you're gonna see is the transcription
+factor network of the stem cell because we
+[SPEAKER_00]: were highly confident for just modeling
+these 200 genes and we couldn't really
+[SPEAKER_00]: model the a thousand six hundred genes but
+we're working on developing different
+[SPEAKER_00]: steps so that we can deal with many more
+genes another way that you can know an
+[SPEAKER_00]: additional way that you should validate
+new algorithm is with using in vivo data
+[SPEAKER_00]: so for example here is an example for
+example is an example of a known network
+[SPEAKER_00]: in a cell type in the root where we have
+these master regulator downstream genes
+[SPEAKER_00]: and etc and so we compare our new
+algorithm with existing algorithm mainly
+[SPEAKER_00]: the one that is often uses arachne and
+what you can see here well it performs
+[SPEAKER_00]: very well it finds four true positive one
+false negative mainly because there is a
+[SPEAKER_00]: regulation back of this transcription
+factor but what I would like you to see
+[SPEAKER_00]: here is the difference between two pan
+these two panels that our new algorithm
+[SPEAKER_00]: what it can do it can find the
+directionality as I was telling you so
+[SPEAKER_00]: these arrow will actually tell you who is
+regulating whom and the sign of the
+[SPEAKER_00]: regulation if he's an activator or
+oppression and the other thing that you
+[SPEAKER_00]: can clearly see is the different size of
+these nodes so we use a matrix that tells
+[SPEAKER_00]: you the importance of the different
+transcription factor based on some aspect
+[SPEAKER_00]: in this aspect could be outgoing edges so
+outgoing regulation it could be on in how
+[SPEAKER_00]: many people were loop these gene is
+involved how many feedback loop how many
+[SPEAKER_00]: by fan loop so you look at the network
+topology and based on the network topology
+[SPEAKER_00]: you can infer a ranking and so you can
+infer a size of the node so that if you
+[SPEAKER_00]: were a graduate student you will not put
+that much effort seem to see too but you
+[SPEAKER_00]: will put much effort seem to these APL
+gene that indeed we know is a master
+[SPEAKER_00]: regulator of flowing development so the
+next thing you're gonna see yeah go ahead
+[SPEAKER_00]: you want an extra pizza slice I got it
+[SPEAKER_00]: excellent point the edges are also
+different sizes because we have actually
+[SPEAKER_00]: weight associated with each so the point
+here when we cluster we do came in
+[SPEAKER_00]: clusters and we run it for 10,000 times
+and so based on the came in some of the
+[SPEAKER_00]: gene will go in one cell in one cluster
+some of them will go in another cluster
+[SPEAKER_00]: and so sometimes the edges don't exist so
+what we do what we set a threshold it's a
+[SPEAKER_00]: 0.6 and then we drop all the edges that
+are less important so that we don't have
+[SPEAKER_00]: that many interaction yes so is based on
+the weight and the number of how many
+[SPEAKER_00]: times these happens throughout the
+inference algorithm yep very good point
+[SPEAKER_00]: extras which lab which lab are you in okay
+so what you have here is the resulting
+[SPEAKER_00]: network and is as I'm proud of my daughter
+I'm proud of these network because he's
+[SPEAKER_00]: the real vapors feature of all these
+transcription factor for which there were
+[SPEAKER_00]: 20 years of work and what we can see is
+that from these middle part of the network
+[SPEAKER_00]: we do really recover all and with the
+dollar sign is the happy myself we all
+[SPEAKER_00]: recover genes for which in literature
+there are data confirming their role in
+[SPEAKER_00]: stem cell specification in stem cell
+maintenance root development so what these
+[SPEAKER_00]: network is showing just to make it brief
+in the middle is showing all the stem cell
+[SPEAKER_00]: that are in all the stem cell genes that
+are important for the maintenance and then
+[SPEAKER_00]: on the side at the beginning I was calling
+these the spaghetti meatball disaster but
+[SPEAKER_00]: then here's an Italian and I can I guess
+but then biologically it makes a lot of
+[SPEAKER_00]: sense all of these large notes are
+important for the maintenance
+[SPEAKER_00]: specification of the stem cell and all of
+these sub clusters then we look into them
+[SPEAKER_00]: and we identify genes that have an
+importance is for example specific stem
+[SPEAKER_00]: cell type function so what I'm going to
+tell you next is that well we took to stem
+[SPEAKER_00]: cell identity network and valley dated
+them in two different ways so the very
+[SPEAKER_00]: first way was to look at chromatin
+immunoprecipitation so protein DNA
+[SPEAKER_00]: interaction of these specific silent stem
+cell so chromatin immunoprecipitation
+[SPEAKER_00]: using these known transcription factor
+that is actually the transcription factor
+[SPEAKER_00]: was working while I was a postdoc and then
+we also look at my home that's fine my own
+[SPEAKER_00]: gene expression data while I was a postdoc
+of the induction of these gene and so what
+[SPEAKER_00]: we could find in these network that one
+two three four five six five out of the
+[SPEAKER_00]: six downstream gene were confirmed by
+chromatin immunoprecipitation and by gene
+[SPEAKER_00]: expression profile we still have one that
+is not confirmed but we're working on
+[SPEAKER_00]: using you molecular technique to see if
+this is a real target or is a false
+[SPEAKER_00]: positive the other that I would like to
+spend and these panel was supposed to come
+[SPEAKER_00]: up later but that's okay is the quiescent
+center network so we were fortunately
+[SPEAKER_00]: enough that just recently Martin Yipnowski
+have shown an important role of these gene
+[SPEAKER_00]: transcription factor entity in the
+quiescent center we had great work done on
+[SPEAKER_00]: Bravo showing function of these gene in
+the quiescent center but then we all and
+[SPEAKER_00]: then we have known plethora one,
+plethora two, plethora six that we all
+[SPEAKER_00]: know that are important for QC function
+and then we focus our attention on these
+[SPEAKER_00]: gene periodontia and what we identify is
+that you can believe me but I have another
+[SPEAKER_00]: picture with the marketing side where we
+see QC phenotype so the QC is this little
+[SPEAKER_00]: hand part this smiley part of the root
+this is a little bit crooked it will need
+[SPEAKER_00]: some braces in terms of smiles it has some
+crooked quiescent center and what we know
+[SPEAKER_00]: from many years of work is that if you
+don't have a functional quiescent center
+[SPEAKER_00]: the distal stem cells that are the
+collumal stem cells they depreciate and so
+[SPEAKER_00]: what we obtained with a collaborator a
+fantastic collaborator from Spain the
+[SPEAKER_00]: inducible line of these gene periodontia
+what you have is that you have extra
+[SPEAKER_00]: collumal stem cell and the reason while
+I'm saying that this is a PSPI staining
+[SPEAKER_00]: where in red you can see the starch
+granule so you have that in a mutant the
+[SPEAKER_00]: starch granule are really close to the
+quiescent center suggesting that there's
+[SPEAKER_00]: no collumal stem cell and here you see
+extra layer of collumal stem cell and so
+[SPEAKER_00]: we did and I'm going to not show you in
+the details we did a mathematical model to
+[SPEAKER_00]: predict the function of pen but as
+biologists and that is the reason why the
+[SPEAKER_00]: paper is not yet out is under revision
+because the reviewer thank you to the
+[SPEAKER_00]: reviewer they asked for more biological
+data what we did and that is the same
+[SPEAKER_00]: mutant but this time with the quiescent
+center marker so you can see that it has
+[SPEAKER_00]: crooked quiescent center we did RNAseq so
+we look at the gene expression profile of
+[SPEAKER_00]: these of the gene in this mutant compared
+to wild type and that day I think I was
+[SPEAKER_00]: close to cry so happy I was because if I
+take a second and I go back to all of
+[SPEAKER_00]: these stem cell niche network what we find
+is that 70% of all the stem cell niche and
+[SPEAKER_00]: the one in the quiescent center they're
+all downregulated in these pen mutants so
+[SPEAKER_00]: we have our shore root gene is
+downregulated all the plethora gene are
+[SPEAKER_00]: downregulated all the other stem cell
+genes are all downregulated suggesting
+[SPEAKER_00]: that our network identify a master
+regulator for quiescent center function
+[SPEAKER_00]: and stem cell maintenance extremely happy
+so that was the very first part of the
+[SPEAKER_00]: talk perfect because the rest of the talk
+will be just telling you and pointing you
+[SPEAKER_00]: to these paper because unfortunately don't
+have enough data to make another story so
+[SPEAKER_00]: these very first part is that we develop a
+gene regulatory network inference that
+[SPEAKER_00]: takes advantage of any kind of spatial
+temporal data so for example we have used
+[SPEAKER_00]: nowadays in collaboration with then cheat
+would and use to make a leaf development
+[SPEAKER_00]: to infer network involving leaf thickness
+we use it for strawberry development from
+[SPEAKER_00]: the green strawberry to the red strawberry
+so anytime you have a time course and cell
+[SPEAKER_00]: type or tissue type or integration line
+data set you can combine these two data
+[SPEAKER_00]: set and get useful information so now
+these are going to be just ten minutes
+[SPEAKER_00]: long and then I'll be happy to have many
+more question just going back to the
+[SPEAKER_00]: initial image that they show you the root
+is a concentric cylinder what I told you
+[SPEAKER_00]: at the beginning is that all the different
+stem cells give rise to all the different
+[SPEAKER_00]: tissue through asymmetric cell division
+and work done while I was a postdoc in
+[SPEAKER_00]: philip benphi's lab and that I started
+while I was in philip so is a great
+[SPEAKER_00]: collaboration we had was to study key
+aspect regarding these two important
+[SPEAKER_00]: transcription factor they regulate the
+asymmetric cell division of one kind of
+[SPEAKER_00]: cell type that is the cortex endodermis
+initial so in a short mutant you don't
+[SPEAKER_00]: have to remember the name but they will
+come up very often sure would just
+[SPEAKER_00]: remember that these mutant was identified
+had a very short short short route and
+[SPEAKER_00]: then scarecrow was identified because he
+also let these asymmetric cell division
+[SPEAKER_00]: and he only had one ground tissue and so
+it was named after the wizard of us they
+[SPEAKER_00]: were two other mutant teeny man and lion
+they also were missing some other cell
+[SPEAKER_00]: type and these was I think call scarecrow
+because at that time it was considered
+[SPEAKER_00]: that the ground issue was the brain of the
+route perhaps I was not there so I don't
+[SPEAKER_00]: put my hand on fire but remember a shorter
+teeny tiny route and scarecrow the one
+[SPEAKER_00]: without the brain but what we know that is
+not just specific to these transcription
+[SPEAKER_00]: factor we have now plethora of data
+showing that about 20 30 percent of
+[SPEAKER_00]: transcription factor actually moving
+transcription factor so they move from
+[SPEAKER_00]: where they are produced to adjacent cell
+layer so these transcription factor is
+[SPEAKER_00]: producing the vasculature of the route and
+it moves to the adjacent cell layer where
+[SPEAKER_00]: it activate the downstream target
+scarecrow and then we know that short and
+[SPEAKER_00]: scarecrow interact together to regulate
+these asymmetric cell division of the
+[SPEAKER_00]: ground tissue and so we had a mathematical
+model and we really never asked the
+[SPEAKER_00]: question is the quantification of this
+movement important if we want to have a
+[SPEAKER_00]: more quantitative model and is the
+stoichiometry of the protein complex
+[SPEAKER_00]: important you don't know until you test
+that right and so we started to
+[SPEAKER_00]: collaborate with the scientists physicists
+that you see your vine that he started
+[SPEAKER_00]: just back then to use fluorescent
+correlations spectroscopy scanning
+[SPEAKER_00]: fluorescent correlations spectroscopy to
+obtain information about movement of
+[SPEAKER_00]: protein and protein-protein interaction so
+I don't want to go too much into the
+[SPEAKER_00]: physics details but it's practically when
+you have your sample and you're looking
+[SPEAKER_00]: under for example a laser scanning
+microscope a confocal I know you tend to
+[SPEAKER_00]: just have the most beautiful picture right
+but the background things that is going on
+[SPEAKER_00]: is that every time you have fluorescent
+protein and it goes in and out your
+[SPEAKER_00]: observation volume that is your confocal
+objective and when it goes in and out your
+[SPEAKER_00]: observation volume what it does it emits
+intensity fluctuation and if you follow
+[SPEAKER_00]: the intensity fluctuation over time and
+over space and then you feed using an
+[SPEAKER_00]: autocorrelation function you can do indeed
+obtain information about the movement the
+[SPEAKER_00]: concentration and if you do dual
+fluorescent cross correlation and you have
+[SPEAKER_00]: two fluorescent protein one that gives an
+intensive fluctuation in for example the
+[SPEAKER_00]: GFP channel and one that gives you
+intensive fluctuation in the red channel
+[SPEAKER_00]: you can cross correlate and fit to this
+cross correlation function and get
+[SPEAKER_00]: information about the stoichiometry of the
+protein complex so that for example you
+[SPEAKER_00]: don't care much if these protein are close
+to each other so if you will need to do
+[SPEAKER_00]: protein-protein interaction using FRET but
+they can just be in the same protein
+[SPEAKER_00]: complex even if they are far apart they
+will still cross correlate and it will
+[SPEAKER_00]: still give you information about the
+protein-protein interaction so the
+[SPEAKER_00]: scanning region very good question it
+depends so it depends on let's see if I
+[SPEAKER_00]: have an image here no okay the scanning
+region could go through two or three cells
+[SPEAKER_00]: so is
+[SPEAKER_00]: few microns I'm trying to remember top of
+my head just few microns because the cells
+[SPEAKER_00]: in the root are very small but you can
+have as long as you want with no problem
+[SPEAKER_00]: let me walk you through a little bit and
+see if I can get from you another question
+[SPEAKER_00]: because so the point here is that with
+raster image correlations for microscopy
+[SPEAKER_00]: is that you do a scanning of a 2d frame
+and so it could be as big as you want the
+[SPEAKER_00]: important is that for example that the
+pixel size is smaller than your point
+[SPEAKER_00]: spread function so that is more
+informative than you can image whatever
+[SPEAKER_00]: you want you will just have longer
+scanning but the important is that so your
+[SPEAKER_00]: point spread function that is the
+observation volume of your objective is
+[SPEAKER_00]: tendency around 300 nanometer and you need
+to have at least five to six pixels in
+[SPEAKER_00]: each point spread function to have enough
+correlation hope that that answer your
+[SPEAKER_00]: question and so what I'm going to present
+you and that we use these imaging
+[SPEAKER_00]: technique in the plan for the first time
+is raster image correlations spectroscopy
+[SPEAKER_00]: and I'm going to go into details in a
+second that you can really calculate
+[SPEAKER_00]: movement and so what I want to take here
+is a second and tell you that we have to
+[SPEAKER_00]: use diffusion coefficient as a term but
+that doesn't mean that your protein are
+[SPEAKER_00]: diffusing they can be actively transported
+it's just that the physics terms is
+[SPEAKER_00]: diffusion coefficient but they can be
+really actively transported as in this
+[SPEAKER_00]: case and then what I'm going to show you
+is a line scan where we can tell really
+[SPEAKER_00]: the intra and intercellular movement of a
+protein and the number and brightness so
+[SPEAKER_00]: these are the three techniques that I'm
+going to spend next five minutes to it
+[SPEAKER_00]: where we can see the oligomeric state of a
+protein at the cellular level so the
+[SPEAKER_00]: raster scan is really a raster of your 2d
+image so you you trace you send your laser
+[SPEAKER_00]: along the line and then along the frame so
+that you can image the cell type of
+[SPEAKER_00]: interest or the two different cell type of
+interest in this case it will be cells
+[SPEAKER_00]: that contain the vasculature where we know
+the protein is produced and then cells
+[SPEAKER_00]: where the protein moves to and so without
+going too much into the details what we
+[SPEAKER_00]: could already see is that there is a
+differential movement of this
+[SPEAKER_00]: transcription factor in this cell type
+versus these other cell type where it
+[SPEAKER_00]: moves and so we knew from previous
+molecular data that this could be because
+[SPEAKER_00]: in these endodermal cell is where short
+route interacts with scarecrow and so we
+[SPEAKER_00]: wonder whether the slow movement of short
+route was because of scarecrow and so in
+[SPEAKER_00]: this case we really can quantify this
+movement and is significant and we know
+[SPEAKER_00]: that it caused an asymmetric cell division
+we can see that in absence of scarecrow or
+[SPEAKER_00]: in a scarecrow RNAi line now in the
+endodermis what we have is that short
+[SPEAKER_00]: route now moves like it will move in the
+vasculature suggesting that yes indeed
+[SPEAKER_00]: scarecrow is important for the movement of
+short route the other thing that we look
+[SPEAKER_00]: is well what is the movement and how
+scarecrow restrict short movement and so
+[SPEAKER_00]: they are PCF data where PCF is practically
+correlating all the intensity fluctuation
+[SPEAKER_00]: along a line that spans different cells so
+that you can ask a question does this
+[SPEAKER_00]: protein move from the cell type to the
+cell type to the cell type and vice versa
+[SPEAKER_00]: and if there is a differential movement
+where these differential movement is
+[SPEAKER_00]: coming from and so in order for you to
+actually read through the heat map that
+[SPEAKER_00]: I'm going to show you in a second I'm
+going to just show you an exemplify
+[SPEAKER_00]: version so the heat map or carpet that we
+obtain are going to be looking like that
+[SPEAKER_00]: so in the x direction is space in the y
+direction is time if a protein is moving
+[SPEAKER_00]: cell to cell to cell to cell in a
+diffusive route in this way without any
+[SPEAKER_00]: active movement what you're going to see
+in blue is the representation of the
+[SPEAKER_00]: movement between cells with diffusion if
+you instead don't see diffusion so if you
+[SPEAKER_00]: only see blue means correlation so
+movement black means no movement if you
+[SPEAKER_00]: see that you only see movement here but
+not here then this will be your exemplify
+[SPEAKER_00]: heat map if you instead see a delay in the
+movement so you will see a arch formation
+[SPEAKER_00]: that tells you that is taking some time
+for this protein to move from cell to cell
+[SPEAKER_00]: but eventually will move and so we ask the
+question well what is the movement of
+[SPEAKER_00]: short route from where it's produced to
+where it ends up and so what we can see is
+[SPEAKER_00]: that it moves we know that short route
+moves through plasmodesmata the
+[SPEAKER_00]: cytoplasmatic connection it moves through
+one cell and another through a delay
+[SPEAKER_00]: movement but then when we look at the
+direction like the directionality of the
+[SPEAKER_00]: movement so going back to the vasculature
+that kind of would correspond to the fact
+[SPEAKER_00]: that at that point short is moving slower
+than in the vasculature we can clearly see
+[SPEAKER_00]: that short route does not move back into
+the vasculature and so I've shown you
+[SPEAKER_00]: before that if we take away scarecrow he
+moves faster now short route and so we
+[SPEAKER_00]: look at the intra and intercellular
+movement of short route in a scarecrow
+[SPEAKER_00]: mutant background and fear enough what we
+find is that in a scarecrow RNAi line we
+[SPEAKER_00]: can track that short route is going back
+to the vasculature so these were to show
+[SPEAKER_00]: you that indeed we can quantify the
+movement and really give a route of the
+[SPEAKER_00]: movement of this transcription factor and
+then we can also look in how they interact
+[SPEAKER_00]: so this is the background you just need to
+leave me here we need to calibrate every
+[SPEAKER_00]: time with the control line that is a
+monomeric form where for example monomeric
+[SPEAKER_00]: form are exemplified by these blue pixels
+when we look at short route oligomeric
+[SPEAKER_00]: state what we are seeing if you imagine
+here is a route this is the vasculature
+[SPEAKER_00]: where it's produced and this is the nuclei
+of the endodermis where it's moving what
+[SPEAKER_00]: we see is that if there is a percentage of
+monomeric form of short route just in the
+[SPEAKER_00]: vasculature while there is a higher
+oligomeric state in terms of dimers and
+[SPEAKER_00]: tetramyl in the endodermis where interacts
+with scarecrow so again we ask the
+[SPEAKER_00]: question if he interacts with scarecrow is
+the oligomeric state of short route
+[SPEAKER_00]: affected by the absence of scarecrow and
+so what we are looking here is more or
+[SPEAKER_00]: less the same orientation you can clearly
+see that in the nuclei of the endodermis
+[SPEAKER_00]: where now scarecrow is no longer there
+short is just as a monomer and so that
+[SPEAKER_00]: tell us that scarecrow is practically a
+bridge bringing together two short route
+[SPEAKER_00]: protein and so what we did we took an
+additional step and look at the cross
+[SPEAKER_00]: correlation so we label short route with
+the GFP we label scarecrow with the
+[SPEAKER_00]: m-cherry you can clearly see where they
+are expressed short route scarecrow
+[SPEAKER_00]: usually you will just look at the
+localization and say fair enough but what
+[SPEAKER_00]: we actually went is where they interact
+how they interact so this is the
+[SPEAKER_00]: correlation map where you can
+qualitatively see with the blue dots where
+[SPEAKER_00]: they are interacting in a stoichiometry of
+one to one and the green dots where they
+[SPEAKER_00]: are interacting a stoichiometry of two to
+one and here is the stoichiometric
+[SPEAKER_00]: histogram where we can see that there are
+mostly one short and worse scarecrow with
+[SPEAKER_00]: red exemplifying the highest probability
+to find this transcription factor in a
+[SPEAKER_00]: stoichiometry of one to one but also that
+you have a high probability to find two
+[SPEAKER_00]: short route with one scarecrow and here is
+the quantification so everything that I
+[SPEAKER_00]: show you qualitatively we can also obtain
+the quantification so 80% of these is of
+[SPEAKER_00]: the protein-protein interaction is one to
+one and two to one is limited to 15% so
+[SPEAKER_00]: what I'm telling you all this story well
+I'm telling you all this story because
+[SPEAKER_00]: it's extremely cool to be and go into
+details of identifying the movement and
+[SPEAKER_00]: quantify the movement and the
+stoichiometry but the idea we had was to
+[SPEAKER_00]: obtain these information and develop a
+mathematical model that will give us
+[SPEAKER_00]: information about the dynamics of these
+two transcription factors so this is the
+[SPEAKER_00]: mathematical model that we use is a series
+of ordinary differential equation where we
+[SPEAKER_00]: are modeling for example short route in
+the vasculature short route in the
+[SPEAKER_00]: endodermis and then from our data we know
+that there are dimers of short route in
+[SPEAKER_00]: the endodermis so that is the equation for
+that aspect and then we have the model
+[SPEAKER_00]: scarecrow and this is a yield term because
+we know the short route regulates
+[SPEAKER_00]: scarecrow and then we have the complex one
+to one of short route scarecrow and the
+[SPEAKER_00]: complex of two to one short route
+scarecrow so all the information that I
+[SPEAKER_00]: told you we practically retranslate in a
+mathematical model it's like you will
+[SPEAKER_00]: translate from the English to the Italian
+all of these is what I just told you from
+[SPEAKER_00]: the biology into the mathematical model we
+ran up sensitivity analysis and find out
+[SPEAKER_00]: that diffusion coefficient were extremely
+important but let me tell you what the
+[SPEAKER_00]: model tell us and how we validate it so
+what these first outcome simulation of the
+[SPEAKER_00]: model tells you is that we don't know
+anything about short so short is produced
+[SPEAKER_00]: and it stays constant we can do much about
+that until we identify upstream regulator
+[SPEAKER_00]: of short in the red line is the expression
+of scarecrow over time and what you can
+[SPEAKER_00]: see is that about two point five three
+hour is when you reach the highest
+[SPEAKER_00]: expression of scarecrow and what you can
+learn here is that as soon as scarecrow is
+[SPEAKER_00]: produced is sequestered by short route and
+you have the formation of a short route
+[SPEAKER_00]: scarecrow one to one protein complex only
+with time taking place at about nine hour
+[SPEAKER_00]: we start to see that the two to one
+scarecrow short route complex takes place
+[SPEAKER_00]: and so what we did we practically
+validated these mathematical models by
+[SPEAKER_00]: using a short route inducible system where
+we put a scarecrow transcription line and
+[SPEAKER_00]: what we can see is that after we use short
+route so like we'll do the mathematical
+[SPEAKER_00]: model the simulation here as soon as we
+use short route at about three hour we
+[SPEAKER_00]: start to see scarecrow expression and that
+will feed that very well the other things
+[SPEAKER_00]: that we are now working on is that you can
+see that at all the solution reaches a
+[SPEAKER_00]: steady state so they reach a plateau what
+that means well we know that about 16 to
+[SPEAKER_00]: 18 to 24 hours when the stem cells start
+to divide but we really didn't have any
+[SPEAKER_00]: way to track and follow stem cell division
+over time so these still remain the part
+[SPEAKER_00]: that we're working on and understand the
+second outcome of the model and so the
+[SPEAKER_00]: second part of the talk and the next one
+I'll just glance through is okay is really
+[SPEAKER_00]: that scanning fluorescence correlation
+spectroscopy allow you to quantify
+[SPEAKER_00]: parameter that were not that easy to
+quantify before and then all of these
+[SPEAKER_00]: quantitative measurements they can really
+be put into a mathematical model that is
+[SPEAKER_00]: able to tell you what are the dynamic of
+your system and so these that in this talk
+[SPEAKER_00]: I'm telling you it was a natural
+progression what we started to use these
+[SPEAKER_00]: before we got these data is to develop new
+technology to do long time course and so
+[SPEAKER_00]: the long time course that I'm talking
+about is to using a live sheet microscopy
+[SPEAKER_00]: where I'm going to just tell you not the
+advantages but the limitation that we had
+[SPEAKER_00]: to overcome so with this system you can
+grow one sample at a time and as I was
+[SPEAKER_00]: telling you you need to get high
+throughput to get your graduate student
+[SPEAKER_00]: and postdoc happy so we wanted to if you
+want to do a five days time course then
+[SPEAKER_00]: you have and you want 12 biological
+replicas your graduate student is working
+[SPEAKER_00]: for a week for the next 12 weeks on a
+single project then you know how it goes
+[SPEAKER_00]: most of the time experiment fails so it's
+going to take six months so then you get
+[SPEAKER_00]: one real good data set so what we did we
+collaborated with an engineer in the
+[SPEAKER_00]: department of industrial and system
+engineer and with team horn and we develop
+[SPEAKER_00]: a system that use the same exact aspect
+and spec of the live sheet microscope that
+[SPEAKER_00]: we're using but at this time now with 3d
+printed an imaging chamber that we call
+[SPEAKER_00]: magic it was really magic multi-sample
+Arabidopsis growth and imaging chamber
+[SPEAKER_00]: where we could image at least four sample
+at the time rather than one so rather than
+[SPEAKER_00]: wait 12 weeks now you get that you image
+one plant you rotate these revolving
+[SPEAKER_00]: chamber you image the second plan you
+rotate so you have four biological
+[SPEAKER_00]: replicates right there so you reduce a lot
+the time and the cost these things cost a
+[SPEAKER_00]: lot and so currently we have a prototype
+that holds more than four because we want
+[SPEAKER_00]: to run just a couple of biological
+replicates and have enough statistics so
+[SPEAKER_00]: we tried out the system using a marker for
+cell division and currently we use an
+[SPEAKER_00]: existing pipeline in PG but we are working
+with the latex and computer engineer
+[SPEAKER_00]: Cranos Williams amazing collaborator in
+the field to develop our own automatic
+[SPEAKER_00]: image pipeline to calculate cell division
+overcoming over time especially for the
+[SPEAKER_00]: stem cell we validated this is the
+existing pipeline we're happy to share is
+[SPEAKER_00]: practically coming up from Fiji so
+extremely useful what we could be able to
+[SPEAKER_00]: measure was all the different new cell
+division using our system and using the
+[SPEAKER_00]: existing system from Zeiss and that you
+can see that along the time our system
+[SPEAKER_00]: plants are very happy and they keep on
+dividing you on that and so we image more
+[SPEAKER_00]: plants for more than 48 hour and the nice
+part is that now we can do a lot of
+[SPEAKER_00]: experiment where we change the design of
+these chamber where we can do drug
+[SPEAKER_00]: treatment temperature treatment because we
+have a temperature sensor and so on so
+[SPEAKER_00]: forth so the end of the talk is kind of
+like the take-home message different talk
+[SPEAKER_00]: but all together our umbrella question is
+how can we really understand stem cell
+[SPEAKER_00]: regulation so that we can manipulate stem
+cell regulation and so is really the
+[SPEAKER_00]: triangulation and work of biology
+computational biology and develop a new
+[SPEAKER_00]: technique and so that was exemplified by
+modeling cell type specific expression and
+[SPEAKER_00]: the idea here again my good friend the
+Vitruvian man is eventually so there are
+[SPEAKER_00]: known animal stem cell network player can
+we actually obtain the end full plant stem
+[SPEAKER_00]: cell genes in the rabidopsis and so this
+is an old picture but a couple of more
+[SPEAKER_00]: people were added to the group but this is
+the core group we started with work today
+[SPEAKER_00]: that I shown you was from the postdoc
+angels the Luis Balaguer analytic and
+[SPEAKER_00]: computer engineer PhD my PhD student Adam
+and Natalie and then great collaborator
+[SPEAKER_00]: from NC State the engineer Timothy Horn
+and Kranos Williams and great collaborator
+[SPEAKER_00]: throughout and funding from NSF a career
+grant and a bilateral grant with the UK
+[SPEAKER_00]: and NSF BBCRC grant and with that I take
+any question I'm so sorry that I ran at
+[SPEAKER_00]: the clock but I'll take any question I
+[SPEAKER_06]: know it was a lot I hope use left a little
+bit your gene expression studies the first
+[SPEAKER_06]: thing you do is take your roots for the
+RNA-seq and you digest the cells away sit
+there and they get isolated to protoplasts
+right so you've lost the sympathy
+[SPEAKER_06]: continuity and presumably these cells are
+enormously stressed so do you have an idea
+[SPEAKER_06]: of what that does to the overall topology
+of your gene network?
+[SPEAKER_00]: is a concern that we all keep in our back
+mind to do the protoplasting what I can
+[SPEAKER_00]: tell you is that all the different line
+are treated the same way so if there are
+[SPEAKER_00]: gene that are differentially regulated by
+the actual protoplasting system they will
+[SPEAKER_00]: be discarded because they will have the
+same change in expression over samples the
+[SPEAKER_00]: other aspect is that we need to get cell
+type specific expression and that is so
+[SPEAKER_00]: far what we can do best but yeah you're
+right we is hour and a half protocol for
+[SPEAKER_00]: which yes a lot of gene will change their
+expression profile because of the stress
+[SPEAKER_00]: but you should normalize and lose this
+gene and so probably we will lose some
+[SPEAKER_00]: genes but the point here is at least the
+gene that you're going to go after like
+[SPEAKER_00]: for example the Peryanthia gene clearly
+show that has a role in the stem cell
+[SPEAKER_00]: function so we are doing laser capture but
+for example we are doing laser capture
+[SPEAKER_00]: where we cannot do so we have a project
+with popular trees where we can clearly
+[SPEAKER_00]: show and follow the morphology of the stem
+cell for secondary growth and we do laser
+[SPEAKER_00]: capture but for example for these those
+are very teeny tiny roots and so it's not
+[SPEAKER_00]: that easy is it's not that easy yeah but
+good point one could think to do intact or
+[SPEAKER_00]: so on but so far we're happy what we get
+but is always you need to keep that in
+[SPEAKER_04]: your back yeah yeah you you are totally on
+point you want to come in my lab and work
+[SPEAKER_00]: in my lab please do because I'm always
+telling my graduate student can we in any
+[SPEAKER_00]: way from the gene regulatory network infer
+which are the genes that are actually
+[SPEAKER_00]: moving or etc we will not be able to until
+we also have protein information but there
+[SPEAKER_00]: is a key point these gene move around and
+so we should get to the point where we
+[SPEAKER_00]: develop computational model that predicts
+which transcription factor moving but I
+[SPEAKER_00]: think we need to get to the protein level
+and add overlay the transcriptomic and the
+[SPEAKER_00]: proteomics so far the limitation is that
+with transcriptomic RNA and DNA you
+[SPEAKER_00]: amplify you can start with very little
+material with proteomics we are not yet
+[SPEAKER_07]: there to get cell type specific proteomic
+profile yeah so when you do that principal
+[SPEAKER_07]: component analysis one of the questions
+people always show principal component
+[SPEAKER_07]: analysis but never tell us what the
+components what were the basis the
+[SPEAKER_07]: components that you're doing that and it
+gets back to Josh's question because are
+[SPEAKER_07]: there components of that gene expression
+that you could more easily explain
+[SPEAKER_00]: associated with making protoplasts than
+anything else true so we are in the doing
+[SPEAKER_00]: what you're telling for the project with
+hookah and Terry long on ion deficient
+[SPEAKER_00]: condition in flowing development we are
+indeed looking more into the specific of
+[SPEAKER_00]: the different PCA component for these it
+was just a simple let's say way out to say
+[SPEAKER_00]: well am I crazy or not that the stem cell
+are different than non stem cell because
+[SPEAKER_00]: that is actually the ground truth if they
+would not have been different why to do
+[SPEAKER_00]: the work that I'm doing so yeah but he's a
+good point I just I just actually sat in
+[SPEAKER_00]: the top that explaining exactly what
+you're saying and I went to my postdoc and
+[SPEAKER_00]: I say you need to look into these because
+we need to really show for these other
+[SPEAKER_00]: project yeah you're completely right
+[SPEAKER_00]: yeah no it's beautiful question Elena so
+they said parties that I really wanted to
+[SPEAKER_00]: show the new set of data but they were
+just too preliminary so well my graduate
+[SPEAKER_00]: students and that goes back to your
+question well my graduate student saw is
+[SPEAKER_00]: that in another cells where they are both
+expressed the quiescent center the
+[SPEAKER_00]: stoichiometry is actually flipped around
+and what we're seeing so we see that we
+[SPEAKER_00]: have two scarecrow and one short and what
+we are seeing is that you have a two short
+[SPEAKER_00]: one scarecrow right starting when the cell
+will be close to division so the stem cell
+[SPEAKER_00]: the cei the stem cell divides about 18 to
+24 hour it divided symmetrically while the
+[SPEAKER_00]: quiescent center is a less my topically
+dividing cells but eventually divide the
+[SPEAKER_00]: 72 hour or what I would like to see is for
+example does this stoichiometry changes in
+[SPEAKER_00]: the quiescent center if we if we treat
+with brassinosteroid the quiescent center
+[SPEAKER_00]: divides faster so what we're trying to do
+is to see if the stoichiometry changes if
+[SPEAKER_00]: there is a change in the cell division so
+that we can link that and start to see a
+[SPEAKER_00]: correlation and then go after the
+causation if it's really the stoichiometry
+[SPEAKER_00]: underlined the timing of division or what
+yeah we don't know we so that is why I
+[SPEAKER_00]: like I hope I could show these data yes
+please oh go ahead I'm not a serious
+[SPEAKER_00]: yeah I'm yeah is is a good point is so the
+point there is rather than convince my mom
+[SPEAKER_00]: that the world would be better fat is
+message that I would like to send saying
+[SPEAKER_00]: is always important to take five minutes
+and see why we're doing what we're doing
+[SPEAKER_00]: because it's very basic what I'm doing is
+basic biology and so if I were to tell my
+[SPEAKER_00]: mom what I'm doing she will be shoot shoot
+I don't get it but if I'm telling the big
+[SPEAKER_00]: picture then she says oh I'm so proud of
+you and so they hope is that we'll be able
+[SPEAKER_00]: to but so this mainly for graduate student
+and postdoc always try to feature your
+[SPEAKER_00]: research in a broad context so that your
+parents are proud and they give you
+[SPEAKER_02]: present this has been a production of
+Cornell University on the web at Cornell
+[SPEAKER_02]: edu you you you you you

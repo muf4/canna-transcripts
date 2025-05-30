@@ -1,0 +1,1156 @@
+1
+00:00:00,030 --> 00:00:04,339
+this is a production of Cornell
+
+2
+00:00:01,709 --> 00:00:04,339
+University
+
+3
+00:00:07,360 --> 00:00:13,039
+so I'm going to start out and remind you
+
+4
+00:00:11,089 --> 00:00:16,039
+about what I talked about last year
+
+5
+00:00:13,038 --> 00:00:19,009
+which was also the practical haplotype
+
+6
+00:00:16,039 --> 00:00:21,259
+graph and so last year I talked a lot
+
+7
+00:00:19,009 --> 00:00:24,140
+about building the practical haplotype
+
+8
+00:00:21,259 --> 00:00:27,079
+graph in sorghum and how we were trying
+
+9
+00:00:24,140 --> 00:00:29,689
+to use it in a breeding program which is
+
+10
+00:00:27,079 --> 00:00:31,939
+run by guile press WA and based in
+
+11
+00:00:29,689 --> 00:00:34,039
+port-au-prince Haiti okay
+
+12
+00:00:31,939 --> 00:00:36,649
+and so we've used the practical
+
+13
+00:00:34,039 --> 00:00:38,500
+haplotype graph in that program for
+
+14
+00:00:36,649 --> 00:00:41,329
+genomic selection a couple times now and
+
+15
+00:00:38,500 --> 00:00:43,158
+in the last year really one of the
+
+16
+00:00:41,329 --> 00:00:45,378
+things that we've done is we've tested
+
+17
+00:00:43,158 --> 00:00:48,018
+the practical haplotype graph with
+
+18
+00:00:45,378 --> 00:00:49,670
+different genotyping methods and so
+
+19
+00:00:48,018 --> 00:00:53,088
+today actually what I wanted to talk to
+
+20
+00:00:49,670 --> 00:00:55,010
+talk about is how we've tested the pH G
+
+21
+00:00:53,088 --> 00:00:56,899
+and share some of those genotyping
+
+22
+00:00:55,009 --> 00:01:02,719
+methods and the results with and without
+
+23
+00:00:56,899 --> 00:01:04,459
+the practical haplotype graph ok so to
+
+24
+00:01:02,719 --> 00:01:06,170
+start out we have our nice genomic
+
+25
+00:01:04,459 --> 00:01:09,349
+selection scheme on the right here and
+
+26
+00:01:06,170 --> 00:01:11,118
+in any GS scheme we have this point
+
+27
+00:01:09,349 --> 00:01:14,419
+where we need to genotype the progeny
+
+28
+00:01:11,118 --> 00:01:16,938
+population and we have a lot of options
+
+29
+00:01:14,420 --> 00:01:19,670
+for genotyping and so this list on the
+
+30
+00:01:16,938 --> 00:01:22,158
+less left is absolutely not an
+
+31
+00:01:19,670 --> 00:01:25,099
+exhaustive list but it does list some of
+
+32
+00:01:22,159 --> 00:01:28,310
+the possibilities that we have but
+
+33
+00:01:25,099 --> 00:01:30,530
+really what we want is a technology
+
+34
+00:01:28,310 --> 00:01:32,868
+that's going to be cheap it's going to
+
+35
+00:01:30,530 --> 00:01:34,939
+be fast and we also really want a
+
+36
+00:01:32,868 --> 00:01:37,968
+technology that's fairly easy to use
+
+37
+00:01:34,938 --> 00:01:40,669
+both across breeding programs and also
+
+38
+00:01:37,968 --> 00:01:43,459
+across species and so when we start to
+
+39
+00:01:40,670 --> 00:01:46,819
+subset down this list based on those
+
+40
+00:01:43,459 --> 00:01:48,048
+criteria we can actually cross out a lot
+
+41
+00:01:46,819 --> 00:01:50,030
+of the things that are on this list to
+
+42
+00:01:48,049 --> 00:01:52,999
+begin with but two of the ones that are
+
+43
+00:01:50,030 --> 00:01:56,239
+left are are a champ seek or ramp seek
+
+44
+00:01:52,998 --> 00:01:58,818
+and skim sequencing and so these are two
+
+45
+00:01:56,239 --> 00:02:00,589
+genotyping methods that I have used with
+
+46
+00:01:58,819 --> 00:02:02,269
+the practical haplotype graph and so
+
+47
+00:02:00,590 --> 00:02:04,149
+that's what I'm gonna be presenting for
+
+48
+00:02:02,269 --> 00:02:08,060
+you guys today
+
+49
+00:02:04,149 --> 00:02:09,919
+now last year I put up a slide and I
+
+50
+00:02:08,060 --> 00:02:11,990
+said okay the practical haplotype graph
+
+51
+00:02:09,919 --> 00:02:14,719
+is really designed to be an imputation
+
+52
+00:02:11,990 --> 00:02:16,129
+tool and so it's been designed to work
+
+53
+00:02:14,719 --> 00:02:18,590
+with a lot of different types of
+
+54
+00:02:16,129 --> 00:02:19,939
+sequence data and I use GBS as an
+
+55
+00:02:18,590 --> 00:02:22,460
+example of that
+
+56
+00:02:19,939 --> 00:02:24,949
+I put up GPS data and I showed okay we
+
+57
+00:02:22,460 --> 00:02:27,590
+can use GPS for genomic selection in
+
+58
+00:02:24,949 --> 00:02:29,989
+guiles breeding program and we can also
+
+59
+00:02:27,590 --> 00:02:32,569
+use that same sequence deep data with
+
+60
+00:02:29,990 --> 00:02:34,909
+the practical haplotype graph in Geils
+
+61
+00:02:32,569 --> 00:02:37,159
+breeding program so this year I'm not
+
+62
+00:02:34,909 --> 00:02:39,620
+going to show you GPS data with the
+
+63
+00:02:37,159 --> 00:02:42,259
+practical haplotype graph but I am going
+
+64
+00:02:39,620 --> 00:02:43,990
+to use that GPS data as our baseline we
+
+65
+00:02:42,259 --> 00:02:46,579
+know that gb/s is a really an effective
+
+66
+00:02:43,990 --> 00:02:48,140
+technology and so we're always trying to
+
+67
+00:02:46,580 --> 00:02:49,580
+get prediction accuracies with new
+
+68
+00:02:48,139 --> 00:02:53,089
+technologies that are at least
+
+69
+00:02:49,580 --> 00:02:55,150
+equivalent to that okay so I'll start
+
+70
+00:02:53,090 --> 00:02:58,310
+actually by talking about skin sequence
+
+71
+00:02:55,150 --> 00:03:00,319
+and when I talk about skin sequence what
+
+72
+00:02:58,310 --> 00:03:02,300
+I'm really talking about is a protocol
+
+73
+00:03:00,319 --> 00:03:05,060
+that was designed by NextEra and
+
+74
+00:03:02,300 --> 00:03:07,370
+essentially they take a TN v transpose
+
+75
+00:03:05,060 --> 00:03:09,650
+ace that jumps into the genome at
+
+76
+00:03:07,370 --> 00:03:12,379
+different positions randomly across the
+
+77
+00:03:09,650 --> 00:03:14,960
+entire genome and then we sequence out
+
+78
+00:03:12,379 --> 00:03:18,139
+from those positions and so that gives
+
+79
+00:03:14,960 --> 00:03:20,360
+us a very sparse initial data set and
+
+80
+00:03:18,139 --> 00:03:24,169
+it's also completely random so we're not
+
+81
+00:03:20,360 --> 00:03:27,830
+capturing one specific or consistent
+
+82
+00:03:24,169 --> 00:03:29,750
+marker set with this technology but it
+
+83
+00:03:27,830 --> 00:03:32,030
+is really cheap it cost less than $10
+
+84
+00:03:29,750 --> 00:03:33,530
+per sample and so it is a viable option
+
+85
+00:03:32,030 --> 00:03:37,250
+or something that we'd like to be able
+
+86
+00:03:33,530 --> 00:03:38,930
+to use with with a breeding program and
+
+87
+00:03:37,250 --> 00:03:41,539
+so the question at the bottom then
+
+88
+00:03:38,930 --> 00:03:43,340
+becomes does imputation with the
+
+89
+00:03:41,539 --> 00:03:47,539
+practical haplotype graph make it
+
+90
+00:03:43,340 --> 00:03:49,310
+possible to use this technology so I'm
+
+91
+00:03:47,539 --> 00:03:51,049
+gonna put up this slide first this is a
+
+92
+00:03:49,310 --> 00:03:54,019
+plot very similar to one I showed you
+
+93
+00:03:51,050 --> 00:03:56,390
+last year and both in this plot and in
+
+94
+00:03:54,019 --> 00:03:58,849
+plots for the rest of my talk if the if
+
+95
+00:03:56,389 --> 00:04:01,609
+the box is blue its GBS data so that's
+
+96
+00:03:58,849 --> 00:04:03,799
+just the baseline okay GBS works well
+
+97
+00:04:01,610 --> 00:04:08,540
+for prediction accuracy in Gaia's
+
+98
+00:04:03,800 --> 00:04:10,550
+program now if I add in boxes for that
+
+99
+00:04:08,539 --> 00:04:13,159
+next Arace skim sequence data that's
+
+100
+00:04:10,550 --> 00:04:15,530
+those green boxes on the bottom and you
+
+101
+00:04:13,159 --> 00:04:17,899
+can see that yes this technology is less
+
+102
+00:04:15,530 --> 00:04:19,668
+than $10 per sample but it's not giving
+
+103
+00:04:17,899 --> 00:04:22,310
+us anything it's completely useless for
+
+104
+00:04:19,668 --> 00:04:24,409
+prediction okay and that really comes
+
+105
+00:04:22,310 --> 00:04:26,600
+down to the fact that because this is
+
+106
+00:04:24,410 --> 00:04:28,160
+based on random sequencing there's no
+
+107
+00:04:26,600 --> 00:04:29,870
+consistency there's no overlap in
+
+108
+00:04:28,160 --> 00:04:32,300
+positions that were we're actually
+
+109
+00:04:29,870 --> 00:04:33,840
+sequencing and so this is where the
+
+110
+00:04:32,300 --> 00:04:36,780
+practical haplotype graph can come
+
+111
+00:04:33,839 --> 00:04:38,399
+if we take that sequence data and we run
+
+112
+00:04:36,779 --> 00:04:41,069
+it through the phg to impute missing
+
+113
+00:04:38,399 --> 00:04:43,199
+information we actually get these dark
+
+114
+00:04:41,069 --> 00:04:44,699
+green boxes here and so you can see that
+
+115
+00:04:43,199 --> 00:04:46,709
+the practical haplotype graph is
+
+116
+00:04:44,699 --> 00:04:48,990
+actually helping us to restore that
+
+117
+00:04:46,709 --> 00:04:50,779
+prediction accuracy and we can get an
+
+118
+00:04:48,990 --> 00:04:52,918
+equivalent prediction accuracy
+
+119
+00:04:50,779 --> 00:04:55,259
+approximately the same number of markers
+
+120
+00:04:52,918 --> 00:04:58,168
+as we would have with GPS and we can do
+
+121
+00:04:55,259 --> 00:05:00,089
+it at half the cost and so the answer to
+
+122
+00:04:58,168 --> 00:05:01,769
+the question then is yes with skim
+
+123
+00:05:00,089 --> 00:05:03,929
+sequencing we can use the practical
+
+124
+00:05:01,769 --> 00:05:07,019
+haplotype graph for effective genomic
+
+125
+00:05:03,930 --> 00:05:09,750
+selection so the second technology is
+
+126
+00:05:07,019 --> 00:05:11,909
+ramp seek or are a champ seek this is an
+
+127
+00:05:09,750 --> 00:05:13,829
+amplicon based sequencing method and it
+
+128
+00:05:11,910 --> 00:05:16,080
+targets specific regions so it does give
+
+129
+00:05:13,829 --> 00:05:17,399
+you fewer markers but it's offered as a
+
+130
+00:05:16,079 --> 00:05:19,740
+service by a couple different companies
+
+131
+00:05:17,399 --> 00:05:21,359
+and that means it's very little work for
+
+132
+00:05:19,740 --> 00:05:21,900
+breeders to use and so we like it for
+
+133
+00:05:21,360 --> 00:05:25,710
+that reason
+
+134
+00:05:21,899 --> 00:05:27,810
+and so ramp seek when we put up a plot
+
+135
+00:05:25,709 --> 00:05:30,209
+like this you see that using ramp Sikma
+
+136
+00:05:27,810 --> 00:05:32,040
+positions or amplicons on their own
+
+137
+00:05:30,209 --> 00:05:33,810
+actually works really well
+
+138
+00:05:32,040 --> 00:05:36,930
+we're already about the same level as
+
+139
+00:05:33,810 --> 00:05:39,240
+GPS with this light purple those light
+
+140
+00:05:36,930 --> 00:05:41,788
+purple boxes and I do want to point out
+
+141
+00:05:39,240 --> 00:05:44,009
+that this is targeting about 2000 Llosa
+
+142
+00:05:41,788 --> 00:05:46,139
+across the genome and they've been
+
+143
+00:05:44,009 --> 00:05:48,889
+designed specifically for sorghum but
+
+144
+00:05:46,139 --> 00:05:51,629
+not specifically for guiles program okay
+
+145
+00:05:48,889 --> 00:05:52,949
+now when we take that sequence data and
+
+146
+00:05:51,629 --> 00:05:55,500
+we run it through the practical
+
+147
+00:05:52,949 --> 00:05:57,149
+haplotype graph we get these dark purple
+
+148
+00:05:55,500 --> 00:05:59,220
+boxes and that doesn't look so good
+
+149
+00:05:57,149 --> 00:06:00,509
+because you can see we're not improving
+
+150
+00:05:59,220 --> 00:06:03,630
+our prediction accuracy we're actually
+
+151
+00:06:00,509 --> 00:06:05,879
+really decreasing them and so that tells
+
+152
+00:06:03,629 --> 00:06:08,159
+us two things the first is that in Geils
+
+153
+00:06:05,879 --> 00:06:09,899
+program the 2,000 markers that we're
+
+154
+00:06:08,160 --> 00:06:11,870
+capturing with our a champ seek is
+
+155
+00:06:09,899 --> 00:06:14,370
+enough to do effective genomic selection
+
+156
+00:06:11,870 --> 00:06:16,829
+and the second thing is it's telling us
+
+157
+00:06:14,370 --> 00:06:20,939
+that with this technology right now the
+
+158
+00:06:16,829 --> 00:06:23,279
+practical applicable Andamanese and so
+
+159
+00:06:20,939 --> 00:06:25,649
+this is something that actually the
+
+160
+00:06:23,279 --> 00:06:27,719
+programmers have been have changed
+
+161
+00:06:25,649 --> 00:06:29,219
+actually how we're imputing these
+
+162
+00:06:27,720 --> 00:06:31,260
+genotypes and so in the next couple
+
+163
+00:06:29,220 --> 00:06:33,570
+months I'll be looking at if those
+
+164
+00:06:31,259 --> 00:06:36,750
+changes have actually improved this kind
+
+165
+00:06:33,569 --> 00:06:38,339
+of plot but the answer right now is that
+
+166
+00:06:36,750 --> 00:06:39,839
+no with ramp seek the practical
+
+167
+00:06:38,339 --> 00:06:43,589
+haplotype graph doesn't really help us
+
+168
+00:06:39,839 --> 00:06:46,228
+and isn't really necessary at all so
+
+169
+00:06:43,589 --> 00:06:47,439
+that brings us to this nice point where
+
+170
+00:06:46,228 --> 00:06:48,849
+we have
+
+171
+00:06:47,439 --> 00:06:51,850
+a couple different options for
+
+172
+00:06:48,850 --> 00:06:53,710
+genotyping and the option that a breeder
+
+173
+00:06:51,850 --> 00:06:55,870
+chooses really should be designed or
+
+174
+00:06:53,709 --> 00:06:58,000
+should be chosen based on both their
+
+175
+00:06:55,870 --> 00:07:00,399
+breeding goals and the budget that
+
+176
+00:06:58,000 --> 00:07:01,870
+they're willing to spend so I'm going to
+
+177
+00:07:00,399 --> 00:07:04,299
+build this plot a little bit up on the
+
+178
+00:07:01,870 --> 00:07:06,670
+right here on the x-axis we have the
+
+179
+00:07:04,300 --> 00:07:08,050
+number of snips it only goes to 3,000
+
+180
+00:07:06,670 --> 00:07:10,509
+but you can imagine we could extend that
+
+181
+00:07:08,050 --> 00:07:13,660
+fairly significantly and then on the
+
+182
+00:07:10,509 --> 00:07:15,610
+y-axis we have costs per sample okay so
+
+183
+00:07:13,660 --> 00:07:17,439
+I'll be plotting data that comes from a
+
+184
+00:07:15,610 --> 00:07:19,270
+group Lex genomics that's one of the
+
+185
+00:07:17,439 --> 00:07:22,930
+companies that produces this are a champ
+
+186
+00:07:19,269 --> 00:07:25,389
+seek amplicon based sequencing and as I
+
+187
+00:07:22,930 --> 00:07:27,759
+plot those I've also colored hopefully
+
+188
+00:07:25,389 --> 00:07:30,279
+you can see it okay the background of
+
+189
+00:07:27,759 --> 00:07:33,339
+this plot to show you at that location
+
+190
+00:07:30,279 --> 00:07:36,489
+in the graph what is our best sequencing
+
+191
+00:07:33,339 --> 00:07:38,769
+option cost wise okay and so just as an
+
+192
+00:07:36,490 --> 00:07:41,439
+example if we had a point where this X
+
+193
+00:07:38,769 --> 00:07:43,629
+is on the screen that means we want more
+
+194
+00:07:41,439 --> 00:07:47,019
+than 2,000 markers and we're willing to
+
+195
+00:07:43,629 --> 00:07:48,819
+pay more than $15 per sample and so GBS
+
+196
+00:07:47,019 --> 00:07:51,599
+is a good genotyping strategy in that
+
+197
+00:07:48,819 --> 00:07:55,659
+particular case does that make sense
+
+198
+00:07:51,600 --> 00:07:57,910
+great so let's add some data if we start
+
+199
+00:07:55,660 --> 00:07:59,500
+adding data we can see that if we're
+
+200
+00:07:57,910 --> 00:08:01,600
+working in a species that has a lot of
+
+201
+00:07:59,500 --> 00:08:03,910
+breeding efforts going on maybe we
+
+202
+00:08:01,600 --> 00:08:05,650
+expect that across all breeding programs
+
+203
+00:08:03,910 --> 00:08:07,660
+there could be 80,000 or even a hundred
+
+204
+00:08:05,649 --> 00:08:10,329
+thousand individuals that are being
+
+205
+00:08:07,660 --> 00:08:12,160
+genotyped then we're following the blue
+
+206
+00:08:10,329 --> 00:08:14,769
+and purple lines on this plot and
+
+207
+00:08:12,160 --> 00:08:17,650
+actually are a champ seek is going to be
+
+208
+00:08:14,769 --> 00:08:19,449
+our best bet we can get about 2,000
+
+209
+00:08:17,649 --> 00:08:22,449
+markers from our a champ seek and we're
+
+210
+00:08:19,449 --> 00:08:25,149
+still under that $10 per sample goal
+
+211
+00:08:22,449 --> 00:08:27,009
+that we'd like to be hitting if we're
+
+212
+00:08:25,149 --> 00:08:29,259
+working in a species that has more
+
+213
+00:08:27,009 --> 00:08:32,379
+moderate breeding efforts maybe we have
+
+214
+00:08:29,259 --> 00:08:34,418
+10,000 or 25,000 samples that we expect
+
+215
+00:08:32,379 --> 00:08:36,809
+to be genotyped then we're following the
+
+216
+00:08:34,418 --> 00:08:39,728
+orange and green lines on this plot and
+
+217
+00:08:36,809 --> 00:08:41,859
+we can really decide between ramp seek
+
+218
+00:08:39,729 --> 00:08:44,590
+and skim sequencing with the practical
+
+219
+00:08:41,860 --> 00:08:46,990
+haplotype graph both will give us a cost
+
+220
+00:08:44,590 --> 00:08:48,580
+effective option for genotyping and we
+
+221
+00:08:46,990 --> 00:08:50,440
+really want to be paying attention then
+
+222
+00:08:48,580 --> 00:08:52,060
+to how many markers we need because the
+
+223
+00:08:50,440 --> 00:08:55,510
+cost for a thousand markers is fairly
+
+224
+00:08:52,059 --> 00:08:57,189
+equivalent and then last if we're
+
+225
+00:08:55,509 --> 00:08:59,200
+working in a small breeding program
+
+226
+00:08:57,190 --> 00:09:01,190
+we're following the red line here and
+
+227
+00:08:59,200 --> 00:09:03,560
+skim sequence with the practical
+
+228
+00:09:01,190 --> 00:09:06,530
+photograph is really going to be the
+
+229
+00:09:03,559 --> 00:09:10,339
+most effective option for us in this
+
+230
+00:09:06,529 --> 00:09:13,069
+case I also want to point out that the
+
+231
+00:09:10,340 --> 00:09:14,870
+data from all right from Agri Plex only
+
+232
+00:09:13,070 --> 00:09:16,730
+goes up to two thousand markers but I
+
+233
+00:09:14,870 --> 00:09:18,710
+sort of tried to extrapolate out from
+
+234
+00:09:16,730 --> 00:09:21,710
+that and that's what the dotted lines on
+
+235
+00:09:18,710 --> 00:09:23,720
+this plot are and so if you extrapolate
+
+236
+00:09:21,710 --> 00:09:26,030
+out if you need more than two thousand
+
+237
+00:09:23,720 --> 00:09:27,620
+markers either for your breeding program
+
+238
+00:09:26,029 --> 00:09:30,860
+or because you want to be doing other
+
+239
+00:09:27,620 --> 00:09:33,230
+genomic analyses then something like GBS
+
+240
+00:09:30,860 --> 00:09:35,210
+or skim sequencing with the practical
+
+241
+00:09:33,230 --> 00:09:39,680
+haplotype graph is going to be a really
+
+242
+00:09:35,210 --> 00:09:42,139
+good option for you so that gets us back
+
+243
+00:09:39,679 --> 00:09:44,239
+to our original question when is the
+
+244
+00:09:42,139 --> 00:09:47,689
+practical haplotype graph most useful
+
+245
+00:09:44,240 --> 00:09:49,460
+and the answer is one if we're working
+
+246
+00:09:47,690 --> 00:09:51,890
+in a species that has fairly small
+
+247
+00:09:49,460 --> 00:09:55,190
+breeding efforts the pH G can help get
+
+248
+00:09:51,889 --> 00:09:56,990
+us cost-effective genotyping another is
+
+249
+00:09:55,190 --> 00:09:59,120
+that if we're working in medium or large
+
+250
+00:09:56,990 --> 00:10:01,039
+breeding programs but we want more than
+
+251
+00:09:59,120 --> 00:10:03,139
+a thousand or two thousand markers the
+
+252
+00:10:01,039 --> 00:10:04,549
+pH G can also help fill in some of that
+
+253
+00:10:03,139 --> 00:10:07,370
+marker information that we might want
+
+254
+00:10:04,549 --> 00:10:10,159
+and then the third is if we're working
+
+255
+00:10:07,370 --> 00:10:12,080
+in a breeding program or set of programs
+
+256
+00:10:10,159 --> 00:10:14,209
+and we want to have a consistent set of
+
+257
+00:10:12,080 --> 00:10:16,070
+snips the practical haplotype graph can
+
+258
+00:10:14,210 --> 00:10:17,750
+actually output a consistent snip set
+
+259
+00:10:16,070 --> 00:10:21,350
+and so that can help with that kind of
+
+260
+00:10:17,750 --> 00:10:22,909
+consistency as well if we need it so I
+
+261
+00:10:21,350 --> 00:10:25,040
+am about out of time hopefully I've
+
+262
+00:10:22,909 --> 00:10:26,629
+convinced you that the pH G does have
+
+263
+00:10:25,039 --> 00:10:28,699
+you its uses and we have used it
+
+264
+00:10:26,629 --> 00:10:30,139
+effectively in Geils breeding program
+
+265
+00:10:28,700 --> 00:10:32,509
+although I don't have time to talk about
+
+266
+00:10:30,139 --> 00:10:34,220
+that here there's a lot of people that
+
+267
+00:10:32,509 --> 00:10:35,809
+have worked on this and so I do want to
+
+268
+00:10:34,220 --> 00:10:38,330
+acknowledge everybody in the buckler lab
+
+269
+00:10:35,809 --> 00:10:40,939
+everybody in Geils program at Sheba's
+
+270
+00:10:38,330 --> 00:10:43,160
+and then Jeff Morris and kabedon Melita
+
+271
+00:10:40,940 --> 00:10:45,500
+at the Morris lab who have also put a
+
+272
+00:10:43,159 --> 00:10:46,969
+lot of time into this project but I'm
+
+273
+00:10:45,500 --> 00:10:48,799
+gonna wrap up so if you guys have
+
+274
+00:10:46,970 --> 00:10:50,810
+questions I'd be happy to try and
+
+275
+00:10:48,799 --> 00:10:52,319
+answers those now or we can talk
+
+276
+00:10:50,809 --> 00:10:52,899
+afterward as well thanks
+
+277
+00:10:52,320 --> 00:10:58,460
+[Music]
+
+278
+00:10:52,899 --> 00:10:58,459
+[Applause]
+
+279
+00:11:08,860 --> 00:11:14,028
+good question so the question was all of
+
+280
+00:11:11,958 --> 00:11:16,278
+the box plots I showed what are the taxa
+
+281
+00:11:14,028 --> 00:11:18,078
+being shown here the same the answer is
+
+282
+00:11:16,278 --> 00:11:20,208
+yes this is actually all data from the
+
+283
+00:11:18,078 --> 00:11:22,578
+training population that gaël made and
+
+284
+00:11:20,208 --> 00:11:24,258
+so there's about 250 taxa in that data
+
+285
+00:11:22,578 --> 00:11:28,309
+set and it's consistent across all of
+
+286
+00:11:24,259 --> 00:11:34,550
+the marker technologies great thanks
+
+287
+00:11:28,309 --> 00:11:38,149
+guys this has been a production of
+
+288
+00:11:34,549 --> 00:11:41,078
+Cornell University on the web at Cornell
+
+289
+00:11:38,149 --> 00:11:41,078
+edu
+

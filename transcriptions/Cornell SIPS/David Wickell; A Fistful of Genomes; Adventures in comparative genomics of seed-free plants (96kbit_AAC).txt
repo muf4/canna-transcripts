@@ -1,0 +1,1434 @@
+[SPEAKER_06]: This is a production of Cornell
+University.
+[SPEAKER_01]: Okay, wow.
+[SPEAKER_01]: There's a lot of people.
+[SPEAKER_01]: In case you came to the wrong room,
+I'm David Wickle.
+[SPEAKER_01]: This is my exit seminar and today I'm
+going to talk to you about some of the
+[SPEAKER_01]: comparative genomics that I've done in
+seed-free plants over the last few years.
+[SPEAKER_01]: So first, why study seed-free plants?
+[SPEAKER_01]: Despite the fact that they're sometimes
+easily overlooked in the shadow of
+[SPEAKER_01]: angiosperm-dominated flora, seed-free
+plants, especially ferns and lycophytes,
+[SPEAKER_01]: are really cool.
+[SPEAKER_01]: They're incredibly diverse in form.
+[SPEAKER_01]: They inhabit a diverse array of habitats
+and serve as important members of the
+[SPEAKER_01]: ecosystems where they're found.
+[SPEAKER_01]: As their name implies, they don't use
+seeds.
+[SPEAKER_01]: Instead, they reproduce via spores,
+which can create these independent haploid
+[SPEAKER_01]: gametophytes that then go on to release
+sperm that fertilizes them.
+[SPEAKER_01]: These eggs producing sporophytes starting
+the whole cycle over again.
+[SPEAKER_01]: They're also evolutionarily important.
+[SPEAKER_01]: So ferns are the sister lineage to all
+seed plants and lycophytes are sister to
+[SPEAKER_01]: all other vascular plants.
+[SPEAKER_01]: They've retained lots of important
+ancestral traits, things like vasculature
+[SPEAKER_01]: and sporophyte branching, and have also
+independently evolved key features like
+[SPEAKER_01]: roots and leaves.
+[SPEAKER_01]: And this is really important, right?
+[SPEAKER_01]: We're making comparisons that can help
+give us an idea about the hidden processes
+[SPEAKER_01]: that guide evolution.
+[SPEAKER_01]: So I've talked about why seed-free plants,
+but why genomics?
+[SPEAKER_01]: The last 10 years have been a real
+renaissance for genomic research.
+[SPEAKER_01]: There's been a surge in the number of
+assemblies published, as you can see over
+[SPEAKER_01]: the years on this y-axis, and also in the
+quality of those assemblies, or sorry,
+[SPEAKER_01]: x-axis, as shown on the y-axis here.
+[SPEAKER_01]: Despite this surge in genome assemblies,
+there are a lot of orders that are still
+[SPEAKER_01]: poorly represented, and that's because
+genomics tends to focus on species that
+[SPEAKER_01]: are economically important or that have
+small genomes.
+[SPEAKER_01]: And unfortunately, those kinds of plants
+are in the minority among ferns and
+[SPEAKER_01]: lycophytes.
+[SPEAKER_01]: So there are lots of orders of ferns for
+which there are no genome assemblies.
+[SPEAKER_01]: And as of when I started this PhD,
+a couple of orders of lycophytes that also
+[SPEAKER_01]: did not have any genomes.
+[SPEAKER_01]: So today I'm going to talk to you about my
+research in comparative genomics.
+[SPEAKER_01]: I'm going to start off by talking a little
+bit about whole-genome duplication using a
+[SPEAKER_01]: couple of our genome assemblies as case
+studies.
+[SPEAKER_01]: Then I'm going to talk to you about
+Isoides tywinensis and change gears a
+[SPEAKER_01]: little bit to talk about CAM
+photosynthesis and the convergent
+[SPEAKER_01]: evolution of CAM in this aquatic lineage.
+[SPEAKER_01]: And then I'm going to finish up talking
+about my latest research looking into the
+[SPEAKER_01]: recurrent formation of allopolyploids in
+the Isoides apalachiana complex.
+[SPEAKER_01]: So let's get started with whole-genome
+duplication.
+[SPEAKER_01]: I'm going to talk just a little bit more
+about genomics of seed-free plants.
+[SPEAKER_01]: And specifically, I want to talk about the
+difference between heterosperous lineages
+[SPEAKER_01]: versus homosperous lineages.
+[SPEAKER_01]: So briefly, heterosperous lineages,
+which include all seed plants,
+[SPEAKER_01]: all flowering plants, produce two
+different types of spores that then go on
+[SPEAKER_01]: to produce two different types of
+gametophytes, one of which produces sperm
+[SPEAKER_01]: and one of which produces an egg.
+[SPEAKER_01]: Homosperous lineages, on the other hand,
+produce a single hermaphroditic
+[SPEAKER_01]: gametophyte capable of producing both
+sperm and egg.
+[SPEAKER_01]: And this distinction is important for
+genomics primarily because homosperous
+[SPEAKER_01]: lineages tend to have much larger genomes
+characterized by much more numerous
+[SPEAKER_01]: chromosomes.
+[SPEAKER_01]: So in the ferns, the vast majority of
+lineages are homosperous, the one
+[SPEAKER_01]: exception being the order salviniales,
+the water ferns, which are heterosperous.
+[SPEAKER_01]: Within lycophytes, the majority of species
+are heterosperous, but the earliest
+[SPEAKER_01]: diverging lineage, lycopodiales,
+is entirely homosperous.
+[SPEAKER_01]: So like I was talking about earlier,
+homosperous plants tend to have much
+[SPEAKER_01]: larger genomes, much more chromosomes.
+[SPEAKER_01]: An extreme example is shown over here in
+Ophioglossum reticulatum, which has a
+[SPEAKER_01]: chromosome count of over 1,200
+chromosomes.
+[SPEAKER_01]: If we compare this to a heterosperous
+angiosperm, the grass Panicum virginiatum,
+[SPEAKER_01]: which I believe is actually a tetraploid,
+it only has 36 chromosomes.
+[SPEAKER_01]: This is an extreme example, but it's a
+pattern that's borne out across all
+[SPEAKER_01]: vasculotes.
+[SPEAKER_01]: We see that homosperous lineages,
+on average, have three to four times the
+[SPEAKER_01]: number of chromosomes as their related
+heterosperous lineages.
+[SPEAKER_01]: So I'm going to explain whole genome
+duplication briefly.
+[SPEAKER_01]: That's what this section is about.
+[SPEAKER_01]: Whole genome duplication is very common
+among all vascular plants, particularly
+[SPEAKER_01]: ferns and lycophytes.
+[SPEAKER_01]: Essentially, it consists of just the
+duplication of all the chromosomes inside
+[SPEAKER_01]: of a plant.
+[SPEAKER_01]: This is fascinating to me because I feel
+like I was taught that evolution was a
+[SPEAKER_01]: sort of gradual process where one mutation
+builds on another over enormous periods of
+[SPEAKER_01]: time.
+[SPEAKER_01]: But whole genome duplication suddenly and
+rapidly changes the entire genome of a
+[SPEAKER_01]: plant, resulting in usually immediate
+genetic isolation from its parental
+[SPEAKER_01]: lineages and also in drastic changes to
+its phenotype while providing the raw
+[SPEAKER_01]: material for evolution in the form of more
+genes, more chromosomal material.
+[SPEAKER_01]: But if this were the end of the story,
+we would expect to see plant lineages,
+[SPEAKER_01]: heterosperous and homosperous,
+characterized by large numbers of
+[SPEAKER_01]: chromosomes, by multisomic inheritance,
+by polyploid expression of genes,
+[SPEAKER_01]: and we don't see that.
+[SPEAKER_01]: Instead, even in lineages like,
+say, Arabidopsis, with a known history of
+[SPEAKER_01]: whole genome duplication, we see
+relatively small genomes with diploid
+[SPEAKER_01]: expression and disomic inheritance,
+and that's because of this process of
+[SPEAKER_01]: diploidization.
+[SPEAKER_01]: So diploidization is the process by which
+we go from this state, right, through the
+[SPEAKER_01]: polyploid state and back to something
+resembling a diploid.
+[SPEAKER_01]: And this happens through chromosomal
+rearrangements that restore pairing of
+[SPEAKER_01]: chromosomes at meiosis, and also through
+large-scale loss of genes and chromosomal
+[SPEAKER_01]: material, typically through illegitimate
+recombination that can lead to a variety
+[SPEAKER_01]: of outcomes, right, that further serves to
+isolate these lineages from one another,
+[SPEAKER_01]: as well as the ones that gave rise to
+them.
+[SPEAKER_01]: So because of this process of
+diploidization, it can be difficult to
+[SPEAKER_01]: detect whole genome duplications that
+happened far back in time, in evolutionary
+[SPEAKER_01]: time.
+[SPEAKER_01]: So we do that by a few different methods.
+[SPEAKER_01]: The first one is KS, and KS functions on
+the principle that when a gene is
+[SPEAKER_01]: duplicated, the two duplicates are
+identical.
+[SPEAKER_01]: As they diverge, we can plot that
+divergence along the x-axis.
+[SPEAKER_01]: So if we compare many genes, right,
+within a gene, a whole genome,
+[SPEAKER_01]: what we expect to see, if there's no
+history of whole genome duplication,
+[SPEAKER_01]: is what we see down here in the bottom
+corner in Selaginella, a sort of
+[SPEAKER_01]: exponential decrease in the number of
+genes that have higher KS values,
+[SPEAKER_01]: right?
+[SPEAKER_01]: And this is a result of fractionation,
+genes being lost over time as they diverge
+[SPEAKER_01]: in sequence.
+[SPEAKER_01]: But in the case of a whole genome
+duplication, we expect to see these peaks,
+[SPEAKER_01]: and those peaks represent a cohort of
+genes that were all duplicated at the same
+[SPEAKER_01]: time, and then are diverging at relatively
+the same rate.
+[SPEAKER_01]: So this is the first evidence that we can
+use to identify whole genome duplications.
+[SPEAKER_01]: The second is phylogenetic reconciliation.
+[SPEAKER_01]: In phylogenetic reconciliation,
+we take many gene trees from many species,
+[SPEAKER_01]: and then we compare them to a known
+species tree.
+[SPEAKER_01]: And what we look for in those gene trees
+are branches or clades that are duplicated
+[SPEAKER_01]: over and over and over again in multiple
+gene trees, represented by this line here,
+[SPEAKER_01]: right?
+[SPEAKER_01]: The percentage of times we see these nodes
+duplicated.
+[SPEAKER_01]: And if we see nodes that are duplicated
+far more than others, we can infer that
+[SPEAKER_01]: maybe a duplication happened there.
+[SPEAKER_01]: And the important thing about phylogenetic
+reconciliation is it doesn't simply tell
+[SPEAKER_01]: us if duplications occurred.
+[SPEAKER_01]: It can tell us when they occurred and
+place them into this evolutionary context.
+[SPEAKER_01]: The final way that we identify ancient
+whole genome duplications, and arguably
+[SPEAKER_01]: sort of the gold standard, is Syntony.
+[SPEAKER_01]: So with Syntony, this operates on the
+concept that when a chromosome is
+[SPEAKER_01]: duplicated, an entire chromosome,
+all the genes along that chromosome start
+[SPEAKER_01]: out in the same order.
+[SPEAKER_01]: Over time, through diploidization,
+those genes can be shuffled around.
+[SPEAKER_01]: Those genes can be lost.
+[SPEAKER_01]: But still, for millions or tens of
+millions of years, blocks of genes that
+[SPEAKER_01]: are collinear or Syntonic exist,
+and we can detect those.
+[SPEAKER_01]: And those are evidence that at some point
+in the past, there was a large-scale
+[SPEAKER_01]: duplication, right, of entire chromosomes.
+[SPEAKER_01]: So these plots here actually show Syntony
+between two different species.
+[SPEAKER_01]: So you can do Syntony either within a
+species, right, and if you see Syntonic
+[SPEAKER_01]: blocks, you expect that there was a
+duplication, or you can compare them
+[SPEAKER_01]: between species.
+[SPEAKER_01]: And for instance, if you see a duplication
+in species A, but not in species B,
+[SPEAKER_01]: you would expect each block in species B,
+here represented by dots, or here
+[SPEAKER_01]: represented by lines, to be represented
+twice in species A.
+[SPEAKER_01]: So Syntony, similar to phylogenetic
+reconciliation, can give us an idea of
+[SPEAKER_01]: which duplications are shared between
+different lineages.
+[SPEAKER_01]: All right, now that we're all experts in
+detecting whole genome duplication,
+[SPEAKER_01]: I'm gonna talk about the first genome
+today, and that's that of Alsopolis
+[SPEAKER_01]: spinulosa.
+[SPEAKER_01]: This assembly was produced in
+collaboration with researchers at the
+[SPEAKER_01]: Chinese Academy of Forestry.
+[SPEAKER_01]: And I have some assembly stats up there,
+but that's not what I'm gonna talk about
+[SPEAKER_01]: today.
+[SPEAKER_01]: Instead, we're gonna stick to WGD.
+[SPEAKER_01]: Even in the best of scenarios,
+when you have all of the possible evidence
+[SPEAKER_01]: available to you, detecting whole genome
+duplications can be relatively
+[SPEAKER_01]: straightforward.
+[SPEAKER_01]: But figuring out how many happened and
+when they occurred is often not.
+[SPEAKER_01]: And that's demonstrated by this phylogeny
+here, where I've plotted the result of
+[SPEAKER_01]: four different studies over the last four
+years that looked at whole genome
+[SPEAKER_01]: duplication in the sciatica alias,
+or the tree ferns, right, the group to
+[SPEAKER_01]: which this fern belongs.
+[SPEAKER_01]: Every single one found different
+conclusions represented by these circles
+[SPEAKER_01]: on the phylogenics.
+[SPEAKER_01]: So each of these is a whole genome
+duplication, right, inferred by a
+[SPEAKER_01]: different study.
+[SPEAKER_01]: I want to draw your attention briefly to
+these with the asterisk.
+[SPEAKER_01]: Different studies use different species in
+their sampling.
+[SPEAKER_01]: And in these two cases, they only included
+a single species from the sciatica alias.
+[SPEAKER_01]: So it's possible, had they had better
+sampling and included more species from
+[SPEAKER_01]: that group, that they would have inferred
+a duplication of the same place that we
+[SPEAKER_01]: did.
+[SPEAKER_01]: By the way, ours are on here in yellow,
+but you'll see them again later.
+[SPEAKER_01]: So we did the usual battery of tests,
+right, that I just talked about.
+[SPEAKER_01]: Phylogenetic reconciliation identified two
+duplications, one before the divergence of
+[SPEAKER_01]: sciatica alias, another before the
+divergence of the sciatica alias.
+[SPEAKER_01]: This was largely recapitulated by KS.
+[SPEAKER_01]: Within the sciatica alias, we can see two
+peaks represented here in blue and orange.
+[SPEAKER_01]: In the sciatica alias, a little harder to
+see because it's a very old duplication,
+[SPEAKER_01]: but we can see a single peak more diffuse
+further out from the y-axis.
+[SPEAKER_01]: But what was really exciting about this
+particular analysis was the sentinel.
+[SPEAKER_01]: So as I said earlier, right, sentinel is
+lost as species diploidized.
+[SPEAKER_01]: And becomes less and less informative.
+[SPEAKER_01]: So generally over scales of millions or
+tens of millions of years, it becomes
+[SPEAKER_01]: harder and harder to detect.
+[SPEAKER_01]: Our most recent whole genome duplication
+that we identified in this group happened
+[SPEAKER_01]: over a hundred million years ago.
+[SPEAKER_01]: And yet, despite that, we see this
+incredible amount of sentinel with each
+[SPEAKER_01]: one of these lines representing a sentinel
+gene pair.
+[SPEAKER_01]: And more than that, this one's not
+organized particularly well to show that,
+[SPEAKER_01]: but we see an almost one-to-one
+relationship between the various
+[SPEAKER_01]: chromosomes here, showing that there's
+been very little chromosomal rearrangement
+[SPEAKER_01]: since this whole genome duplication a
+hundred million years ago.
+[SPEAKER_01]: This is unheard of in vascular plants.
+[SPEAKER_01]: There are some cases in mosses and also in
+fish where intergenomic sentinel,
+[SPEAKER_01]: that is between two genomes, has been
+preserved for a hundred million years or
+[SPEAKER_01]: 150 million years.
+[SPEAKER_01]: This is the only case I know of in
+vascular plants and the only case I know
+[SPEAKER_01]: of where this intra genomic sentinel
+following a whole genome duplication is so
+[SPEAKER_01]: well preserved.
+[SPEAKER_01]: That being said, our homosperous fern
+genome assembly was not the only one that
+[SPEAKER_01]: year.
+[SPEAKER_01]: And so while I would like, right,
+to extrapolate my results to all
+[SPEAKER_01]: homosperous plants, or at least all
+homosperous ferns, there are two problems
+[SPEAKER_01]: with that.
+[SPEAKER_01]: And they're seratopterus richardii and
+adiantum capillus venaris.
+[SPEAKER_01]: Both of these ferns have experienced whole
+genome duplications more recently than
+[SPEAKER_01]: alzophilus spinulosa.
+[SPEAKER_01]: And yet, when we look at the sentinel
+within their genomes, we don't see the
+[SPEAKER_01]: same thing at all.
+[SPEAKER_01]: There are relatively few gene pairs
+preserved.
+[SPEAKER_01]: These ferns just came out, these
+assemblies.
+[SPEAKER_01]: So I don't have a great explanation for
+this yet, but suffice to say that the
+[SPEAKER_01]: things that are regulating the number of
+chromosomes, right, that are driving up
+[SPEAKER_01]: the number of chromosomes in these
+homosperous ferns are not as simple as
+[SPEAKER_01]: reduced recombination or less
+rearrangement during diploidization.
+[SPEAKER_01]: So like I said earlier, there are not just
+homosperous ferns, there are also
+[SPEAKER_01]: homosperous lycophytes.
+[SPEAKER_01]: And we had the opportunity to collaborate
+with researchers at JGI and also the
+[SPEAKER_01]: Chinese Academy of Agricultural Science to
+do not one, but two genome assemblies in
+[SPEAKER_01]: this group of lycopodiaceae.
+[SPEAKER_01]: You might notice, I said two genome
+assemblies, but since we're all experts at
+[SPEAKER_01]: WGED now, you recognize these asentony
+plots, and I have three.
+[SPEAKER_01]: And that's because, compared to the
+Asiatica is a recent allopolypoid,
+[SPEAKER_01]: allotetrapoid.
+[SPEAKER_01]: And our collaborators at the Chinese
+Academy of Agricultural Science were able
+[SPEAKER_01]: to separate those two subgenomes so that
+we could perform analyses on them
+[SPEAKER_01]: separately, which was very interesting for
+our whole genome duplication analysis,
+[SPEAKER_01]: but also much more computationally
+efficient.
+[SPEAKER_01]: Hupertsia Asiatica has over 100
+chromosomes.
+[SPEAKER_01]: So again, usual battery of tests,
+right?
+[SPEAKER_01]: Here are our KS plots.
+[SPEAKER_01]: We see single peaks in both of them.
+[SPEAKER_01]: And then these vertical lines that weren't
+in the other ones just represent the
+[SPEAKER_01]: divergence either between Hupertsia
+Asiatica and Diphasiastrum complinatum,
+[SPEAKER_01]: our two species here, shown in green,
+or each of them and their closest
+[SPEAKER_01]: heterosperous relative in isoides.
+[SPEAKER_01]: The problem with KS in this group is that
+substitution rates are very slow.
+[SPEAKER_01]: As a result, if you have multiple whole
+genome duplications, these KS peaks can
+[SPEAKER_01]: tend to stack up on one another,
+making it very difficult to discern
+[SPEAKER_01]: whether this peak represents one or
+multiple duplications.
+[SPEAKER_01]: So to get more insight, right,
+we turned to our phylogenetic
+[SPEAKER_01]: reconciliation.
+[SPEAKER_01]: And what we find in Diphasiastrum is,
+in fact, a single duplication.
+[SPEAKER_01]: But in Hupertsia Asiatica, we find two.
+[SPEAKER_01]: One prior to the divergence of the two
+subgenomes, and another prior to the
+[SPEAKER_01]: divergence of the entire genus of
+Hupertsia.
+[SPEAKER_01]: But again, what was exciting here was not
+that we identified whole genome
+[SPEAKER_01]: duplications.
+[SPEAKER_01]: Leica podiaceae is rife with whole genome
+duplication, yet another thing that made
+[SPEAKER_01]: placing them using KS particularly
+frustrating.
+[SPEAKER_01]: What was exciting was the synteny.
+[SPEAKER_01]: So we have our phylogeny here,
+right, with whole genome duplications
+[SPEAKER_01]: marked on it.
+[SPEAKER_01]: And here we have intergenomic synteny
+plots.
+[SPEAKER_01]: So these are not within a single genome,
+they're between two.
+[SPEAKER_01]: The first one shows synteny between the
+two subgenomes of Hupertsia Asiatica.
+[SPEAKER_01]: These species emerged 33 million years
+ago, which is certainly not too long for
+[SPEAKER_01]: synteny to be preserved.
+[SPEAKER_01]: But if you look at the representation of
+synteny between these two, so each of
+[SPEAKER_01]: these black dots is not just a gene pair,
+that's a block of collinear genes.
+[SPEAKER_01]: You see that it's almost perfectly
+preserved across both of these genomes.
+[SPEAKER_01]: They're almost identical in gene order,
+which is incredible after 33 million
+[SPEAKER_01]: years.
+[SPEAKER_01]: But what's really incredible is when we
+compare these two species.
+[SPEAKER_01]: So Hupertsia Asiatica and Diphasiastrum
+complinatum are as divergent as two Leica
+[SPEAKER_01]: podiaceae species can be, with our best
+guess putting them at about 400 million
+[SPEAKER_01]: years diverged.
+[SPEAKER_01]: They've both experienced independent whole
+genome duplications in that time.
+[SPEAKER_01]: And despite that, we see large proportions
+of the genome represented in our synteny
+[SPEAKER_01]: plot.
+[SPEAKER_01]: And not only that, we can also identify a
+two to four relationship between the
+[SPEAKER_01]: chromosomes that recapitulates our finding
+from the phylogenetic analysis that we
+[SPEAKER_01]: have one duplication in Diphasiastrum for
+two in Hupertsia Asiatica.
+[SPEAKER_01]: So if our findings in Alsophila were
+impressive, this is mind blown.
+[SPEAKER_01]: I mean, forget about moss, forget about
+fish.
+[SPEAKER_01]: There are no other examples of synteny
+being preserved over these kind of time
+[SPEAKER_01]: periods.
+[SPEAKER_01]: So again, it points to this fact that at
+least in some homosporous lineages,
+[SPEAKER_01]: the rearrangement of chromosomes following
+duplication or even following speciation
+[SPEAKER_01]: is occurring at a very slow rate.
+[SPEAKER_01]: Speaking of rates, before I move on,
+I briefly want to talk about substitution
+[SPEAKER_01]: rates in these two groups because it's
+another thing that unites them.
+[SPEAKER_01]: So sciatiales have previously been shown
+to have low substitution rates using
+[SPEAKER_01]: chloroplast data compared to other firms.
+[SPEAKER_01]: And our study used nuclear data for both
+of these genomic data and found that they
+[SPEAKER_01]: had lower substitution rates in Leica
+podiaceae relative to all of our
+[SPEAKER_01]: heterosporous Leica fights.
+[SPEAKER_01]: And in sciatiales relative to all other
+ferns, homosporous and heterosporous.
+[SPEAKER_01]: Now, while I don't think that this is
+directly linked, that is to say causative,
+[SPEAKER_01]: right, with our reduced rates of
+rearrangement, it's another interesting
+[SPEAKER_01]: correlation that we have between these two
+groups compared to other heterosporous
+[SPEAKER_01]: lineages and even other homosporous
+lineages of ferns.
+[SPEAKER_01]: All right.
+[SPEAKER_01]: On to my favorite plants.
+[SPEAKER_01]: We're going to talk about isomedes for a
+little while and we're going to shift
+[SPEAKER_01]: gears, not talk about whole genome
+duplication and talk a little bit about
+[SPEAKER_01]: ham photosynthesis instead.
+[SPEAKER_01]: Isomedes are just an incredible group of
+plants.
+[SPEAKER_01]: They're very diminutive, right,
+easy to overlook, but they're thought to
+[SPEAKER_01]: be the closest living relatives of these
+giant tree-like plants that used to
+[SPEAKER_01]: dominate the carboniferous flora and,
+in fact, make up the majority of the coal
+[SPEAKER_01]: that we burn today.
+[SPEAKER_01]: Despite being, again, much smaller than
+their relatives, they have a worldwide
+[SPEAKER_01]: distribution.
+[SPEAKER_01]: They're very diverse.
+[SPEAKER_01]: They occupy a wide range of both aquatic
+and terrestrial habitats.
+[SPEAKER_01]: And they're part of a long unbranching
+lineage, right, that diverged from all
+[SPEAKER_01]: other vascular plants over 350 million
+years ago.
+[SPEAKER_01]: So we sequenced the isomedes tywinensis
+genome.
+[SPEAKER_01]: This was actually the first genomic
+analysis I did when I got to Cornell,
+[SPEAKER_01]: but I'm really not going to spend any time
+talking about it.
+[SPEAKER_01]: This will come up again later.
+[SPEAKER_01]: We did do our whole genome duplication
+analysis.
+[SPEAKER_01]: And while symphony was not particularly
+informative in this group, we did find
+[SPEAKER_01]: evidence for one duplication in its
+history from a combination of KS and
+[SPEAKER_01]: phylogenetic reconciliation.
+[SPEAKER_01]: But what's really neat about isomedes is
+that it does ham photosynthesis.
+[SPEAKER_01]: And if you've heard about ham before,
+it has almost certainly been in the
+[SPEAKER_01]: context of dry adapted plants like this
+cactus or this agave that do it to
+[SPEAKER_01]: conserve water, right?
+[SPEAKER_01]: So essentially, in dry adapted plants,
+ham allows them to close their stomata
+[SPEAKER_01]: during the hottest part of the day to
+reduce transpiration of the environment.
+[SPEAKER_01]: They then open their stomata at night,
+take up carbon dioxide, fix that carbon
+[SPEAKER_01]: dioxide and store it as malate.
+[SPEAKER_01]: And then it's released during the day to
+conduct photosynthesis while the stomata
+[SPEAKER_01]: are closed.
+[SPEAKER_01]: Isomedes does ham photosynthesis when it's
+completely submerged.
+[SPEAKER_01]: So it's clearly not doing this to conserve
+water.
+[SPEAKER_01]: Why is it doing ham?
+[SPEAKER_01]: We got some interesting information on
+this from my colleague, Jacob Suiza,
+[SPEAKER_01]: who published a paper where they did CO2
+starvation experiments that show that
+[SPEAKER_01]: isomedes is doing ham most likely because
+of the limited availability of CO2 in the
+[SPEAKER_01]: water.
+[SPEAKER_01]: Carbon dioxide diffuses through water very
+poorly.
+[SPEAKER_01]: And during the day, it's used up very
+quickly by algae and other aquatic plants
+[SPEAKER_01]: in the water column.
+[SPEAKER_01]: So as an adaptation to this, isomedes
+absorbs as much CO2 as it can at night
+[SPEAKER_01]: through its roots, in fact.
+[SPEAKER_01]: And then during the day, right,
+it releases the main malate from the
+[SPEAKER_01]: vacuole.
+[SPEAKER_01]: It liberates the CO2 and fixes that carbon
+into sugar.
+[SPEAKER_01]: And one of the first things we found when
+we compared gene expression in isomedes to
+[SPEAKER_01]: these terrestrial plants, not these
+terrestrial plants, but pineapple,
+[SPEAKER_01]: kalanchoe and sedum, is that gene
+expression, both the genes that are
+[SPEAKER_01]: differentially expressed and the manner in
+which they're expressed, is very similar,
+[SPEAKER_01]: almost identical in many cases.
+[SPEAKER_01]: And this was interesting, if for no other
+reason, because there's actually been some
+[SPEAKER_01]: pushback in calling this CAM, right?
+[SPEAKER_01]: CAM is an adaptation to dry environments.
+[SPEAKER_01]: And so this really shows that at least
+from a genetic perspective, there's really
+[SPEAKER_01]: no difference between what these plants
+are doing and what these plants are doing.
+[SPEAKER_01]: There were some differences between
+aquatic plants and terrestrial plants.
+[SPEAKER_01]: Again, for the sake of time, I'm really
+just going to focus on the one that I
+[SPEAKER_01]: think is the coolest.
+[SPEAKER_01]: So this is Pepsi.
+[SPEAKER_01]: Well, this is Pepsi, too.
+[SPEAKER_01]: But Pepsi is the enzyme that carboxyl that
+does the first carboxylation reaction in
+[SPEAKER_01]: the CAM pathway.
+[SPEAKER_01]: Pepsi is a pretty diverse gene family.
+[SPEAKER_01]: It can be broadly divided into two groups.
+[SPEAKER_01]: There's plant-type Pepsi.
+[SPEAKER_01]: And this is the one that most people talk
+about in reference to CAM.
+[SPEAKER_01]: It's the one that's generally been
+co-opted for that first carboxylation
+[SPEAKER_01]: step.
+[SPEAKER_01]: And then there's bacterial-type Pepsi,
+which is a little bit more obscure,
+[SPEAKER_01]: often lowly expressed, if at all,
+in photosynthetic tissues.
+[SPEAKER_01]: So imagine my surprise when I looked at
+which copy was expressed in isoletes and,
+[SPEAKER_01]: first of all, found not one, but two
+copies that were highly expressed,
+[SPEAKER_01]: and then found that the most highly
+expressed was actually this bacterial-type
+[SPEAKER_01]: Pepsi.
+[SPEAKER_01]: So there is one place where bacterial-type
+Pepsi is known to be highly expressed,
+[SPEAKER_01]: and that's in the developing seeds of the
+castor oil plant.
+[SPEAKER_01]: And there, it's found to form a
+heterooctamer with plant-type Pepsi and is
+[SPEAKER_01]: found to be much less sensitive to
+inhibition by malate, which accumulates in
+[SPEAKER_01]: large quantities in these castor oil seeds
+as they're developing.
+[SPEAKER_01]: There's another place we know of where
+malate accumulates in large quantities,
+[SPEAKER_01]: and that's in the leaves of these CAM
+plants.
+[SPEAKER_01]: So while I have no evidence to support
+this, I think it's a really exciting story
+[SPEAKER_01]: and something that certainly merits
+following up on that it's very possible
+[SPEAKER_01]: that isoletes that expresses both of these
+copies of Pepsi with relatively similar
+[SPEAKER_01]: expression patterns in the leaves might
+also do this as an additive adaptation to
+[SPEAKER_01]: the increased amount of malate in the
+leaves, allowing them to fix a little bit
+[SPEAKER_01]: more CO2 at night and be inhibited a
+little less.
+[SPEAKER_01]: All right, on to my last chapter.
+[SPEAKER_01]: Still isoletes, but we're going to talk a
+little bit about the recurrent formation
+[SPEAKER_01]: of allopolyploid lineages in isoletes
+apalachiana.
+[SPEAKER_01]: So while CAM is really cool, it is not
+actually the first thing that attracted me
+[SPEAKER_01]: to isoletes.
+[SPEAKER_01]: Isoletes is known for its really high
+propensity to form hybrids and also
+[SPEAKER_01]: polyploid.
+[SPEAKER_01]: In fact, researchers have found if you put
+basically any two diploid species of
+[SPEAKER_01]: isoletes together, they will form hybrids.
+[SPEAKER_01]: The problem is those diploid hybrids are
+sterile, basically across the board.
+[SPEAKER_01]: That being said, they can duplicate their
+entire genome, right, whole genome
+[SPEAKER_01]: duplication, which restores fertility,
+allowing them to form these really
+[SPEAKER_01]: prolific populations like these two of
+isoletes apalachiana polyploid that we're
+[SPEAKER_01]: going to get to know in just a minute.
+[SPEAKER_01]: So this depicts the reticulate
+relationships between isoletes
+[SPEAKER_01]: inglumaniae, there's the hybrid
+relationships, one species, one North
+[SPEAKER_01]: American species, and a few other species
+in North America.
+[SPEAKER_01]: And as you can see, it's wild.
+[SPEAKER_01]: All of these species in green are various
+hybrids, and the polyploid hybrids are
+[SPEAKER_01]: represented by shapes with different
+numbers of sides, right?
+[SPEAKER_01]: Six sides is hexaploid, three sides is
+triploid, et cetera.
+[SPEAKER_01]: And this proclivity, right, for
+hybridization and polyploidization makes
+[SPEAKER_01]: this a great system to study the recurrent
+formation of polyploids.
+[SPEAKER_01]: One last thing before I talk about
+isoletes apalachiana is throughout the
+[SPEAKER_01]: study of polyploids, throughout the
+history of the study of polyploids,
+[SPEAKER_01]: various people have referred to them as
+dead ends.
+[SPEAKER_01]: Most recently, in 2011 and 2012,
+a series of papers came out that
+[SPEAKER_01]: identified lower diversification rates and
+higher rates of extinction in polyploids.
+[SPEAKER_01]: And this also sort of makes sense based on
+what we see in isoletes, right?
+[SPEAKER_01]: I said that this would come back later.
+[SPEAKER_01]: We find evidence for one whole genome
+duplication in this whole history of
+[SPEAKER_01]: isoletes.
+[SPEAKER_01]: And mind you, we could have more sampling,
+right?
+[SPEAKER_01]: If we had more species, we might find more
+along other branches.
+[SPEAKER_01]: But this doesn't really work, right,
+with what we know about the fact that,
+[SPEAKER_01]: in fact, more than half or around half of
+the species in isoletes are polyploid.
+[SPEAKER_01]: So why are there so many polyploids now,
+but so few, relatively few in the
+[SPEAKER_01]: evolutionary record?
+[SPEAKER_01]: And it comes back to this idea that
+perhaps polyploids form all the time,
+[SPEAKER_01]: right, but don't actually live that long.
+[SPEAKER_01]: And if that's the case, it has important
+implications, not just for evolution,
+[SPEAKER_01]: but also for conservation.
+[SPEAKER_01]: Many polyploids are rare.
+[SPEAKER_01]: In fact, a lot of them are even federally
+listed species, right?
+[SPEAKER_01]: But if they don't live that long,
+if they don't, say, you know, add mix with
+[SPEAKER_01]: other populations, if they're relatively
+isolated and short-lived, maybe that
+[SPEAKER_01]: effort would be better spent on the
+diploid species.
+[SPEAKER_01]: So to answer this and some other basic
+questions sort of about polyploid
+[SPEAKER_01]: speciation in isoletes, I turned to this
+group, isoletes apalachiana.
+[SPEAKER_01]: I picked it for a couple of reasons.
+[SPEAKER_01]: It has a very large distribution.
+[SPEAKER_01]: Its parentage is already known.
+[SPEAKER_01]: I've gotten a lot of mileage out of this
+poster that Peter made, like, I don't know
+[SPEAKER_01]: how many years ago.
+[SPEAKER_01]: But postdoc in our lab, Peter,
+previously found that it's the product of
+[SPEAKER_01]: at least two separate hybridization events
+between isoletes, Engelmannii,
+[SPEAKER_01]: and isoletes ballidae.
+[SPEAKER_01]: This was done, though, with low-copy
+nuclear genes.
+[SPEAKER_01]: I wanted to leverage RadSeq, next-gen
+sequencing, whole-genome skimming,
+[SPEAKER_01]: to take a more in-depth look using more
+populations at how frequently these
+[SPEAKER_01]: lineages form, whether or not lineages can
+form with either diploid parent as the
+[SPEAKER_01]: maternal parent, and whether or not we see
+any evidence of gene flow within these
+[SPEAKER_01]: species.
+[SPEAKER_01]: So I once again got to do a lot of field
+work.
+[SPEAKER_01]: I conduct field work all the way from
+upstate New York down to northern Georgia.
+[SPEAKER_01]: On this map, tetraploids I collected are
+represented by green squares.
+[SPEAKER_01]: Engelmannii is represented by blue
+circles, and isoletes ballidae is
+[SPEAKER_01]: represented by yellow circles.
+[SPEAKER_01]: Those are colors I'll try to stick to for
+the next few slides, though I think
+[SPEAKER_01]: there's at least one exception.
+[SPEAKER_01]: And finding isoletes in the field is sort
+of like playing Where's Waldo?
+[SPEAKER_01]: in a sea of walders.
+[SPEAKER_01]: So there are, like, five or six different
+plant species in this little clump in this
+[SPEAKER_01]: lake.
+[SPEAKER_01]: One of them is isoletes.
+[SPEAKER_01]: Feel free to tell me which one.
+[SPEAKER_01]: So I collected lots of plants.
+[SPEAKER_01]: I sent them off for DD RadSeq,
+which basically consisted of me just
+[SPEAKER_01]: weighing plant material into a plastic
+tube.
+[SPEAKER_01]: But I also did genome skimming,
+for which I got a little bit of wet lab,
+[SPEAKER_01]: some DNA extraction and library prep,
+for which I was awarded a graduate
+[SPEAKER_01]: fellowship at the Smithsonian.
+[SPEAKER_01]: I worked with Liz Zimmer and did all of
+this wet lab under the expert guidance of
+[SPEAKER_01]: her tech, gave John Johnson, and it was a
+wonderful and enjoyable experience.
+[SPEAKER_01]: Great to finally do some wet lab.
+[SPEAKER_01]: But before I could do anything with that
+data, I had some work to do.
+[SPEAKER_01]: Working with allopolyploids is difficult,
+because essentially, you're looking at a
+[SPEAKER_01]: genome that contains two divergent genomes
+of different evolutionary histories,
+[SPEAKER_01]: which makes things like phylogenetic and
+population genetic analysis difficult.
+[SPEAKER_01]: So I used a somewhat unorthodox approach
+that I adapted from a Bomberli et al paper
+[SPEAKER_01]: on soy bean, creating a pseudo-reference
+using my diploid RadSeq data.
+[SPEAKER_01]: I did that by mapping it first to a
+reference assembly from Isoides
+[SPEAKER_01]: inglomanii.
+[SPEAKER_01]: I pulled out regions where both diploid
+parents mapped, and then I took those
+[SPEAKER_01]: mapped reads and created my
+pseudo-reference assembly.
+[SPEAKER_01]: Then I took that pseudo-reference assembly
+and mapped my polyploid reads to it.
+[SPEAKER_01]: And reads that map differentially to one
+parent or the other were then retained for
+[SPEAKER_01]: downstream analysis and treated basically
+as separate diploid populations.
+[SPEAKER_01]: The first analysis I did was a principal
+components analysis, and this was
+[SPEAKER_01]: basically just to make sure that my
+phasing approach sort of worked.
+[SPEAKER_01]: And it appears to have.
+[SPEAKER_01]: So we see that the Appalachian loci in
+green and yellow tend to cluster with
+[SPEAKER_01]: their diploid parent like I would expect
+them to.
+[SPEAKER_01]: So following this, I also constructed a
+phylogeny to look for evidence of
+[SPEAKER_01]: recurrent formation of these lineages.
+[SPEAKER_01]: And basically, I'm just doing this by
+counting monophyletic claves of Isoides
+[SPEAKER_01]: Appalachiana that are separated from their
+diploid relatives.
+[SPEAKER_01]: And looking at this tree, we can easily
+infer four different formation events that
+[SPEAKER_01]: led to the current distribution of Isoides
+Appalachiana.
+[SPEAKER_01]: Sorry, I meant to mark these with
+asterisks or something.
+[SPEAKER_01]: It's a little hard to look at,
+I acknowledge.
+[SPEAKER_01]: Surprisingly, despite this recurrent
+formation of Isoides Appalachiana in every
+[SPEAKER_01]: single case from our chloroplast tree,
+we see that Isoides Inglomanii is the
+[SPEAKER_01]: maternal parent.
+[SPEAKER_01]: And I say this is surprising because there
+is evidence that at least between species
+[SPEAKER_01]: of equal ploidy, that either parent is
+equally likely to be the maternal versus
+[SPEAKER_01]: paternal parent.
+[SPEAKER_01]: That being said, in species of differing
+ploidy, differences in sizes of the sperm
+[SPEAKER_01]: means that polyploid sperm cannot fit
+through the archegonial neck cells of the
+[SPEAKER_01]: diploid.
+[SPEAKER_01]: So in crosses between polyploid and
+diploid, we basically always see that the
+[SPEAKER_01]: polyploid is the maternal parent.
+[SPEAKER_01]: While these are both diploid, it's
+possible that there are differences in the
+[SPEAKER_01]: anatomy of these archegonial neck cells or
+in the size of their sperm.
+[SPEAKER_01]: Similarly, another study found that the
+formation of these archegonia can vary
+[SPEAKER_01]: widely between species.
+[SPEAKER_01]: Unfortunately, the study did not include
+Isoides Valida, but it did find that
+[SPEAKER_01]: Isoides Inglomanii is particularly
+prolific and good at forming these
+[SPEAKER_01]: archegonia.
+[SPEAKER_01]: So it's possible that Isoides Inglomanii
+just forms a lot more archegonia than
+[SPEAKER_01]: Isoides Valida.
+[SPEAKER_01]: So I'm less likely to sample polyploids
+that were formed in the opposite
+[SPEAKER_01]: direction.
+[SPEAKER_01]: Another sort of surprising result is that
+we found no evidence for isolation by
+[SPEAKER_01]: distance.
+[SPEAKER_01]: And what I mean by this is that as
+populations get more geographically
+[SPEAKER_01]: distant, they do not tend to also get more
+genetically distant.
+[SPEAKER_01]: And this is counterintuitive at first
+because we expect Isoides to be very
+[SPEAKER_01]: dispersal limited, right?
+[SPEAKER_01]: It can only disperse passively through the
+water or occasionally maybe conduct long
+[SPEAKER_01]: distance dispersal on migrating waterfowl.
+[SPEAKER_01]: But I honestly expected there to be quite
+a bit of structure here.
+[SPEAKER_01]: I have an explanation for this,
+though, and I think it's a relatively
+[SPEAKER_01]: simple one.
+[SPEAKER_01]: I think that for something like Isoides
+that is so dispersal limited, one mile is
+[SPEAKER_01]: basically as good as 100.
+[SPEAKER_01]: It's as likely to disperse to that pond
+one county over as it is to ride on a
+[SPEAKER_01]: goose two states over.
+[SPEAKER_01]: And as a result, we see this pretty flat
+distribution where we have very distant
+[SPEAKER_01]: populations that are relatively similar,
+but also populations that are very close
+[SPEAKER_01]: together that are very distant.
+[SPEAKER_01]: All right.
+[SPEAKER_01]: The last analysis I'm going to talk about
+today is my admixture analysis.
+[SPEAKER_01]: And this is to look for evidence of gene
+flow within these species of Isoides,
+[SPEAKER_01]: either within the diploids, within the
+polyploids, or possibly between them.
+[SPEAKER_01]: So this first plot is called an admixture
+plot, and without going into too much
+[SPEAKER_01]: detail because I think, oh, not that low
+on time, without going into too much
+[SPEAKER_01]: detail, essentially, you assign it a fixed
+number of populations, in this case,
+[SPEAKER_01]: nine.
+[SPEAKER_01]: In this case, you arrive at that number
+using something called a cross entropy
+[SPEAKER_01]: plot.
+[SPEAKER_01]: But you can also use biologically
+informative numbers if you sampled from 20
+[SPEAKER_01]: populations, say.
+[SPEAKER_01]: You could try to assign these to 20
+ancestral populations.
+[SPEAKER_01]: In this case, we went with the one that
+was identified by cross entropy,
+[SPEAKER_01]: which was nine.
+[SPEAKER_01]: And what it does is it tries to assign
+each of these individuals to an ancestral
+[SPEAKER_01]: population, but can also assign a single
+individual to multiple ancestral
+[SPEAKER_01]: populations, which we might infer as
+evidence of admixture, either in the past
+[SPEAKER_01]: or ongoing.
+[SPEAKER_01]: We can see that in Isoides and Glomanii,
+almost all of these blocks are a solid
+[SPEAKER_01]: color.
+[SPEAKER_01]: There are kind of these multicolored tails
+at the bottoms of them, but those are
+[SPEAKER_01]: mostly associated with missing data.
+[SPEAKER_01]: As missing data increases, those little
+rainbow tails on the ends of them get
+[SPEAKER_01]: longer.
+[SPEAKER_01]: We do see at least one instance from
+admixture plots that appears to show gene
+[SPEAKER_01]: flow between these individuals in DW86 and
+111 and these polyploid individuals at the
+[SPEAKER_01]: end.
+[SPEAKER_01]: The issue with this is that these are
+diploids and these are polyploids.
+[SPEAKER_01]: So I don't expect this to be evidence of
+ongoing gene flow.
+[SPEAKER_01]: Instead, what I interpret this as is
+historic gene flow between the diploid
+[SPEAKER_01]: progenitors of those polyploids and
+perhaps the diploid ancestors of these
+[SPEAKER_01]: diploids.
+[SPEAKER_01]: The other analysis that we used,
+one of the other analyses that we used,
+[SPEAKER_01]: again, I'm not talking about it all today,
+are these reticulate phylogenies made in a
+[SPEAKER_01]: program called SplittsTree.
+[SPEAKER_01]: And we make these because while all the
+trees I've shown you today have been these
+[SPEAKER_01]: sort of branching, bifurcating trees,
+that's not really how evolution works,
+[SPEAKER_01]: right?
+[SPEAKER_01]: Particularly within species, we expect
+there to be lots of gene flow between
+[SPEAKER_01]: different populations.
+[SPEAKER_01]: We expect these things to be able to
+reproduce with one another.
+[SPEAKER_01]: And as a result, those branches on that
+neatly bifurcating tree would have lines
+[SPEAKER_01]: drawn between them, right, showing
+evidence of that gene flow.
+[SPEAKER_01]: And that's all this is.
+[SPEAKER_01]: So here we do see these diploid
+individuals kind of come out on a branch
+[SPEAKER_01]: and might show some reticulation with
+those polyploids.
+[SPEAKER_01]: But another thing that we see is these,
+despite not showing any evidence of
+[SPEAKER_01]: admixture in our bar plot, these
+individuals here, which are all polyploids
+[SPEAKER_01]: from central Pennsylvania and northern
+Maryland, show a high degree of admixture.
+[SPEAKER_01]: And I'm pointing that out because it's
+also something that we're going to see on
+[SPEAKER_01]: future plots.
+[SPEAKER_01]: One last thing I want to mention before I
+move on are these large blocks of color we
+[SPEAKER_01]: see.
+[SPEAKER_01]: So these large blocks of color actually
+comprise multiple sites that I sampled,
+[SPEAKER_01]: some of which span multiple watersheds.
+[SPEAKER_01]: So while, once again, this could be
+evidence of ongoing admixture between
+[SPEAKER_01]: these populations, the distances are large
+enough that I would also argue this could
+[SPEAKER_01]: just be example of recent dispersal of a
+single ancestral population, right?
+[SPEAKER_01]: So this could just represent multiple
+dispersal events of a single population as
+[SPEAKER_01]: opposed to ongoing gene flow.
+[SPEAKER_01]: So this is the same analysis shown for
+Isoides valida.
+[SPEAKER_01]: It has even more taxa, so even harder to
+read.
+[SPEAKER_01]: But if you just look at the colors,
+we see a lot more evidence of admixture.
+[SPEAKER_01]: It's still very limited, right?
+[SPEAKER_01]: For the most part, this is still a plot
+dominated by large single blocks of color.
+[SPEAKER_01]: And each of these blocks typically
+represents a single site or a single
+[SPEAKER_01]: watershed.
+[SPEAKER_01]: But we have a few exceptions.
+[SPEAKER_01]: First of all, we still see these polyploid
+accessions from central Pennsylvania and
+[SPEAKER_01]: northern Maryland clustering together.
+[SPEAKER_01]: Again, I can't say definitively whether or
+not there is admixture going on just from
+[SPEAKER_01]: this data, but it seems like the most
+likely example of gene flow between
+[SPEAKER_01]: polyploid populations.
+[SPEAKER_01]: But we do see one really excellent example
+of gene flow between two diploid
+[SPEAKER_01]: populations.
+[SPEAKER_01]: So this involves these samples,
+DW90.
+[SPEAKER_01]: These are from the Cheat River in West
+Virginia.
+[SPEAKER_01]: And I sampled six individuals from this
+population.
+[SPEAKER_01]: Two of them come out in this large group
+that, again, does span multiple
+[SPEAKER_01]: watersheds.
+[SPEAKER_01]: Two of them come out in this very small
+group with another site from a creek
+[SPEAKER_01]: located nearby.
+[SPEAKER_01]: And then two of them show a mixed ancestry
+between the two, almost perfectly mixed
+[SPEAKER_01]: 50-50.
+[SPEAKER_01]: So I would argue that this is really good
+evidence of one instance where we see
+[SPEAKER_01]: active admixture and gene flow going on
+between two different populations in the
+[SPEAKER_01]: Cheat River.
+[SPEAKER_01]: All right.
+[SPEAKER_01]: This is my only big long text slide in
+here.
+[SPEAKER_01]: In conclusion, we see that polyploid form
+very frequently in this group.
+[SPEAKER_01]: Despite that, we don't see any evidence of
+reciprocal formation.
+[SPEAKER_01]: Isoides appears to be severely limited by
+dispersal.
+[SPEAKER_01]: But just based on those admixture plots,
+we see that there is evidence of some kind
+[SPEAKER_01]: of long-range dispersal, at least
+infrequently.
+[SPEAKER_01]: Despite that capacity for long-range
+dispersal, admixture seems rare.
+[SPEAKER_01]: We don't have any really concrete cases
+where we can absolutely say that this is
+[SPEAKER_01]: an example of ongoing admixture between
+these populations, except for that one
+[SPEAKER_01]: example from Isoides Valida.
+[SPEAKER_01]: So what does this all mean?
+[SPEAKER_01]: Going back to what I said earlier about
+conservation, it seems to support this
+[SPEAKER_01]: idea that despite polyploids forming very
+frequently, we see them being successful
+[SPEAKER_01]: pretty rarely.
+[SPEAKER_01]: And if that's true, I think that this,
+the fact that they form frequently,
+[SPEAKER_01]: that these polyploids are important
+members of the ecosystems where they're
+[SPEAKER_01]: found, suggests a diploid-first approach,
+by which I don't mean we should forget
+[SPEAKER_01]: about the polyploid.
+[SPEAKER_01]: I mean that preserving the processes that
+recurrently generate the polyploid is more
+[SPEAKER_01]: important than preserving one population
+or another per se.
+[SPEAKER_01]: And by conserving those processes,
+we increase the chance that some polyploid
+[SPEAKER_01]: lineages might eventually be successful.
+[SPEAKER_01]: That if those polyploid lineages serve an
+important role in their community,
+[SPEAKER_01]: that they'll continue to exist without
+perhaps wasting resources focusing on
+[SPEAKER_01]: small or narrowly distributed polyploid.
+[SPEAKER_01]: With that, I have a lot of people to
+acknowledge.
+[SPEAKER_01]: First of all, my collaborators,
+both at the Chinese Academy of
+[SPEAKER_01]: Agricultural Science, at the Chinese
+Academy of Forestry, at JGI and the Salk
+[SPEAKER_01]: Institute for all of their help assembling
+these genomes and with downstream analyses
+[SPEAKER_01]: we did.
+[SPEAKER_01]: Everybody at BTI and the Lee Lab,
+who's helped out a lot.
+[SPEAKER_01]: The people at the Smithsonian for teaching
+me how to do wet lab.
+[SPEAKER_01]: Jacob for letting me just talk about
+biomechanics, drop into his office
+[SPEAKER_01]: basically any time and ask him ridiculous
+questions about bioinformatics.
+[SPEAKER_01]: The other Jacob for letting me ask him
+ridiculous questions about Isoides,
+[SPEAKER_01]: Peter too.
+[SPEAKER_01]: And there are a lot of other people I need
+to thank.
+[SPEAKER_01]: Acknowledgements isn't even a strong
+enough word, so I made another slide.
+[SPEAKER_01]: I cannot thank Leila enough.
+[SPEAKER_01]: She's put up with so much.
+[SPEAKER_01]: She's listened to us ramble about plant
+evolution nonstop.
+[SPEAKER_01]: She's put up with me being stressed and
+late nights and early mornings.
+[SPEAKER_01]: And I'm so grateful and couldn't have done
+any of this without her.
+[SPEAKER_01]: My family, I literally would not be here
+without them.
+[SPEAKER_01]: They came all the way here from Kansas to
+see me give this presentation.
+[SPEAKER_01]: Also Leila's family, who came all the way
+from Penzaken despite probably
+[SPEAKER_01]: understanding very little of this.
+[SPEAKER_01]: Very kind of you.
+[SPEAKER_01]: And all the lovely people that I've met
+since coming to Ithaca.
+[SPEAKER_01]: You supported me through a pandemic.
+[SPEAKER_01]: You got me through a dissertation.
+[SPEAKER_01]: I couldn't be more grateful.
+[SPEAKER_01]: Thank you so much and I'm happy to take
+any questions.
+[SPEAKER_03]: I had a quick question at the end on
+conservation.
+[SPEAKER_03]: When it comes to plants like just doubling
+their genomes, can you tell from the
+[SPEAKER_03]: outside very easily in terms of like if
+you took a behaviorist approach in terms
+[SPEAKER_03]: of them fitting into this larger
+ecological niche, do the diploid just do
+[SPEAKER_03]: the same stuff?
+[SPEAKER_01]: That's a great question and one that I
+actually had intended to address more
+[SPEAKER_01]: directly with this this project kind of
+got pushed off and off and off because of
+[SPEAKER_01]: the pandemic.
+[SPEAKER_01]: But absolutely.
+[SPEAKER_01]: I think an important component of this
+analysis that I didn't do is looking at
+[SPEAKER_01]: the niches that the polyploids occupy
+versus the diploids.
+[SPEAKER_01]: In other species, right, there's evidence
+that diploids really are just filling in
+[SPEAKER_01]: space left behind.
+[SPEAKER_01]: Sorry, polyploids are just filling in
+space left behind by the diploids.
+[SPEAKER_01]: But there are also other studies that show
+that polyploids are capable of kind of
+[SPEAKER_01]: inhabiting these new environments.
+[SPEAKER_01]: Right.
+[SPEAKER_01]: Spreading to higher elevations or higher
+latitudes, in which case they would be
+[SPEAKER_01]: important.
+[SPEAKER_01]: As far as if you can just, you know,
+tell them apart generally.
+[SPEAKER_01]: In isoides, not really.
+[SPEAKER_01]: In other plants, to varying degrees.
+[SPEAKER_01]: Right.
+[SPEAKER_01]: So most of what I'm talking about here is
+allopolyploidy, which also involves
+[SPEAKER_01]: hybridization.
+[SPEAKER_01]: And those hybrids can be easier to
+determine from their polyploid relatives
+[SPEAKER_01]: than the other case, which is just
+duplication of a single gene.
+[SPEAKER_01]: But yeah, I think that's an important part
+of this project that I would like to do
+[SPEAKER_01]: eventually.
+[SPEAKER_01]: And I think would give us a lot more
+insight into the conservation implications
+[SPEAKER_01]: of preserving one or the other.
+[SPEAKER_07]: Go ahead.
+[SPEAKER_03]: When so many humans like try some of these
+diseases, most of the time, plants,
+[SPEAKER_03]: apparently, they double their genome.
+[SPEAKER_03]: Don't care.
+[SPEAKER_01]: I mean, as to the difference in animals,
+I'm not sure how well I can comment.
+[SPEAKER_01]: But in plants, I mean, there are a lot of
+immediate consequences of polyploidy in a
+[SPEAKER_01]: lot of cases.
+[SPEAKER_01]: So some of the things that I mentioned,
+right, like a multisomic inheritance,
+[SPEAKER_01]: bad pairing of chromosomes at meiosis can,
+in fact, have deleterious effects on some
+[SPEAKER_01]: of these polyploid lineages.
+[SPEAKER_01]: Gene silencing is a big part of it.
+[SPEAKER_01]: Again, allopolyploids tend to be more
+successful.
+[SPEAKER_01]: So I think that that plant's ability to be
+so promiscuous and produce so many hybrids
+[SPEAKER_01]: is also helpful because those
+allopolyploids have less problems with
+[SPEAKER_01]: chromosome pairing at meiosis.
+[SPEAKER_01]: And yeah, I think in ferns, certainly,
+it's been shown that sort of the immediate
+[SPEAKER_01]: silencing of a lot of genes is very
+important to polyploids immediately
+[SPEAKER_01]: following that whole genome duplication.
+[SPEAKER_01]: Great.
+Thank you.
+[SPEAKER_07]: Yes.
+[SPEAKER_02]: Fantastic talk.
+[SPEAKER_02]: Really interesting multidisciplinary
+approach.
+[SPEAKER_02]: So in the tree ferns, in the allosophila,
+you found high synteny, but low synteny in
+[SPEAKER_02]: two other homosperous ferns.
+[SPEAKER_02]: Yes.
+[SPEAKER_02]: Do you think one explanation could be the
+life history, the fact that these are
+[SPEAKER_02]: long-lived?
+[SPEAKER_01]: Definitely.
+[SPEAKER_01]: I mean, and that is something that we
+suggest in the paper.
+[SPEAKER_01]: So the original study that used
+chloroplast data and found those reduced
+[SPEAKER_01]: substitution rates in sciatiales suggested
+that it was linked not only to generation
+[SPEAKER_01]: time, but to arborescence per se.
+[SPEAKER_01]: And there have been other studies in
+angiosperms that find that substitution
+[SPEAKER_01]: rate is correlated to things like plant
+height.
+[SPEAKER_01]: I mean, not just to the generation time of
+these plants.
+[SPEAKER_01]: So I definitely think that life history is
+at play, certainly in the substitution
+[SPEAKER_01]: rates.
+[SPEAKER_01]: And again, while I don't think there's
+necessarily a direct link between them,
+[SPEAKER_01]: also possibly in the synteny being
+preserved over time.
+[SPEAKER_04]: Yeah.
+[SPEAKER_04]: Related to that question, it got me
+thinking about the same thing,
+[SPEAKER_04]: the old-fashioned idea of adaptive gene
+complexes.
+[SPEAKER_04]: Why are these genes hanging together
+versus not?
+[SPEAKER_04]: Because in a lot of cases, hybridization,
+for example, breaks apart adaptive
+[SPEAKER_04]: complexes.
+[SPEAKER_04]: So I'm wondering, in these arborescent
+ferns, what's different about being sort
+[SPEAKER_04]: of, quote, woody, being like a tree?
+[SPEAKER_04]: Versus being a more herbaceous type fern?
+[SPEAKER_01]: Yeah.
+[SPEAKER_01]: I mean, and it's possible it has something
+to do with it.
+[SPEAKER_01]: I don't know enough about the difference
+in gene expression between, say,
+[SPEAKER_01]: the woody ferns versus the more herbaceous
+ones.
+[SPEAKER_01]: That being said, we did analyze gene
+expression in Alsopolis spinulosa.
+[SPEAKER_01]: And one of the things that was interesting
+is we didn't necessarily, when we saw
+[SPEAKER_01]: genes that were located on two different
+chromosomes, we didn't necessarily see any
+[SPEAKER_01]: kind of bias, which I think is unusual in
+polyploids.
+[SPEAKER_01]: I think typically in polyploids,
+both ancient and recent, you do see a bias
+[SPEAKER_01]: very early on that then sort of persists
+between genes that are either along the
+[SPEAKER_01]: same chromosome or originate from the same
+genome.
+[SPEAKER_01]: And we don't see that in Alsopolo,
+which is unusual.
+Yeah.
+[SPEAKER_00]: It's also a question, of course.
+[SPEAKER_07]: We'll see.
+[SPEAKER_00]: How did you calibrate your trees to get
+400 million years, 200 million years?
+[SPEAKER_01]: So those calibrations actually are
+secondary calibrations that we took from a
+[SPEAKER_01]: paper by Wes Testo et al.
+[SPEAKER_01]: And to be fair, most of their calibrations
+were much deeper in the tree.
+[SPEAKER_01]: They had very few calibrations that were
+actually in the Lycopodiaceae.
+[SPEAKER_01]: But it's by far the most fossil
+calibrations that have been used in a
+[SPEAKER_01]: lycophyte tree.
+[SPEAKER_01]: And they were able to calibrate the crown
+age of lycophytes and also, I think,
+[SPEAKER_01]: the crown age of Lycopodiaceae,
+just not within that group very much.
+[SPEAKER_01]: It's definitely debatable.
+[SPEAKER_01]: Other papers have gotten much younger
+estimates for that, but most of them had
+[SPEAKER_01]: much lower sampling of lycophytes.
+[SPEAKER_01]: And weren't really focused on lycophyte
+diversification per se.
+[SPEAKER_01]: The nice thing about the Testo paper is it
+has really good species sampling.
+[SPEAKER_01]: And they tried a lot of different clock
+approaches using a variety of different
+[SPEAKER_01]: phylogenetic methods to kind of try to
+settle on that date.
+[SPEAKER_01]: But I agree it's controversial that
+they're quite that old.
+[SPEAKER_06]: I think I guess that's right.
+[SPEAKER_06]: So for the Lycopodiaceae, you have very,
+very low rates of chromosome rearrangement
+[SPEAKER_06]: compared to genomes.
+[SPEAKER_06]: And then you touched on substitution
+rates, but I didn't quite pick up on that.
+[SPEAKER_06]: Is that also low, or is it kind of
+comparable to, like, oligonella
+[SPEAKER_06]: comparative genomics?
+[SPEAKER_01]: No, so it's low compared.
+[SPEAKER_01]: So we did it compared to all of the
+heterosporous lycophytes together.
+[SPEAKER_01]: We compared substitution rates.
+[SPEAKER_01]: And compared to all of them together,
+it's much lower.
+[SPEAKER_01]: And then even when we compare
+independently to either selaginella or to
+[SPEAKER_01]: isoides, the Lycopodiaceae have
+considerably lower substitution rates.
+[SPEAKER_01]: Though, the same paper by Testo et al.
+[SPEAKER_01]: looked at substitution rates.
+[SPEAKER_01]: And it does vary a fair amount within the
+Lycopodiaceae.
+[SPEAKER_01]: You might have noticed that in that tree,
+there were a couple branches that were a
+[SPEAKER_01]: lot longer than the others in the
+Lycopodiaceae.
+[SPEAKER_01]: And I think that's evidence of the fact
+that there are a couple of groups within
+[SPEAKER_01]: Lycopodiaceae that do seem to have
+accelerated rates of substitution relative
+[SPEAKER_01]: to the others.
+[SPEAKER_01]: But as a whole, they seem much lower.
+[SPEAKER_01]: And it would be really interesting to look
+at the genomes in those plates.
+[SPEAKER_01]: Yeah.
+[SPEAKER_05]: Forgive me if it was, like, said and I
+missed it.
+[SPEAKER_05]: Thank you also for what a wonderful
+thought.
+[SPEAKER_05]: And congratulations.
+Thanks.
+[SPEAKER_05]: My question, I'm sorry, it's so basic.
+[SPEAKER_05]: But I don't understand the basis for the
+hypothesis that a homosperous fern would
+[SPEAKER_05]: be expected to have a larger, yeah,
+would be expected to have a larger genome
+[SPEAKER_05]: than a heterosperous.
+[SPEAKER_05]: I just don't understand.
+[SPEAKER_01]: So I mean, as to why they would be
+expected to, there are a few different
+[SPEAKER_01]: theories that have to do with things like
+intergovernetophytic selfing, right?
+[SPEAKER_01]: That maybe they're keeping a lot more
+chromosomes around, a lot more chromosomal
+[SPEAKER_01]: material around.
+[SPEAKER_01]: Because intergovernetophytic selfing is
+going to render a lot of sites homozygous,
+[SPEAKER_01]: you're going to end up with more sort of
+recessive lethal problems.
+[SPEAKER_01]: And maybe just by keeping more chromosomes
+around, right, they're staving that off.
+[SPEAKER_01]: But I think that this is sort of something
+that's been revisited a few times as to
+[SPEAKER_01]: why exactly they'll be doing it.
+[SPEAKER_01]: But the fact of the matter is they just
+have really large chromosomes.
+[SPEAKER_01]: I mean, everywhere you look across
+homosperous plants, again, their genomes
+[SPEAKER_01]: are three to four times the size of
+heterosperous.
+[SPEAKER_01]: I think the why is a little more
+complicated, and I don't have a great
+[SPEAKER_01]: answer for it.
+[SPEAKER_05]: All right.
+[SPEAKER_05]: That's thanks.
+[SPEAKER_05]: Almost done, too.
+[SPEAKER_05]: We go.
+[SPEAKER_06]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_06]: Thank you.
+[SPEAKER_06]: Thank you.
+Thank you.

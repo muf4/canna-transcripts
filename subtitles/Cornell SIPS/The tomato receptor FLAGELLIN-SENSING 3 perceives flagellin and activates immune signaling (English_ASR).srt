@@ -1,0 +1,2796 @@
+1
+00:00:00,799 --> 00:00:04,399
+this is a production of Cornell
+
+2
+00:00:06,240 --> 00:00:10,879
+University for filling break because I
+
+3
+00:00:08,599 --> 00:00:13,400
+know he's un sabatical now so it's nice
+
+4
+00:00:10,880 --> 00:00:15,200
+to have a wonderful inection and thank
+
+5
+00:00:13,400 --> 00:00:16,679
+you for having me here today talk to you
+
+6
+00:00:15,199 --> 00:00:18,358
+about my work where I'm going to
+
+7
+00:00:16,679 --> 00:00:20,480
+describe to you how we identified a
+
+8
+00:00:18,359 --> 00:00:23,880
+tomato receptor that we call felin
+
+9
+00:00:20,480 --> 00:00:26,039
+sensitive 3 Sensi 3 and it perceives the
+
+10
+00:00:23,879 --> 00:00:27,640
+pepti like 228 and activates immune
+
+11
+00:00:26,039 --> 00:00:30,679
+signaling and
+
+12
+00:00:27,640 --> 00:00:32,679
+tomato and so I just want to huge glad
+
+13
+00:00:30,678 --> 00:00:34,878
+with project and I want to especially
+
+14
+00:00:32,679 --> 00:00:37,759
+emphasize there were two post talks in
+
+15
+00:00:34,878 --> 00:00:40,079
+Greg's lab U Pat Bo and julan B who are
+
+16
+00:00:37,759 --> 00:00:41,159
+really helpful for this project uh we
+
+17
+00:00:40,079 --> 00:00:43,000
+couldn't have done any of the work
+
+18
+00:00:41,159 --> 00:00:45,078
+without CES strickler who's here today
+
+19
+00:00:43,000 --> 00:00:48,039
+thank you um who was a vir informaticist
+
+20
+00:00:45,079 --> 00:00:50,640
+who did a lot of uh data mining for us
+
+21
+00:00:48,039 --> 00:00:54,120
+and also we have two chemistry students
+
+22
+00:00:50,640 --> 00:00:56,719
+uh Josh pil and inish adori who were
+
+23
+00:00:54,119 --> 00:00:58,159
+really instrumental in some of our um
+
+24
+00:00:56,719 --> 00:01:00,800
+development of chemical PRS that I'll
+
+25
+00:00:58,159 --> 00:01:03,000
+talk to you about um so without that
+
+26
+00:01:00,799 --> 00:01:05,840
+I'll start by reminding you of the
+
+27
+00:01:03,000 --> 00:01:08,040
+overview of plant immunity and so we
+
+28
+00:01:05,840 --> 00:01:09,759
+have on the surface of a plant cell
+
+29
+00:01:08,040 --> 00:01:12,840
+these pattern recognition receptors or
+
+30
+00:01:09,759 --> 00:01:15,079
+PRS that are responsible for
+
+31
+00:01:12,840 --> 00:01:17,359
+perceiving pathogens and I'm going to
+
+32
+00:01:15,079 --> 00:01:20,280
+use the example of camonis which is a
+
+33
+00:01:17,359 --> 00:01:21,840
+bacterial pathogen and it has a felin
+
+34
+00:01:20,280 --> 00:01:24,079
+and a part of that felin is this
+
+35
+00:01:21,840 --> 00:01:26,520
+conserved region called micro Associated
+
+36
+00:01:24,078 --> 00:01:28,319
+molecular patterns or Ms that are
+
+37
+00:01:26,519 --> 00:01:30,239
+perceived by these cell surface
+
+38
+00:01:28,319 --> 00:01:33,478
+receptors and initiate inter cellular
+
+39
+00:01:30,239 --> 00:01:36,679
+signaling that include mise Cascades and
+
+40
+00:01:33,478 --> 00:01:38,438
+that lead to translational reprogramming
+
+41
+00:01:36,680 --> 00:01:39,840
+that leads to pattern triggered immunity
+
+42
+00:01:38,438 --> 00:01:42,519
+and this pattern triggered immunity is
+
+43
+00:01:39,840 --> 00:01:44,880
+important for inhibiting the growth of
+
+44
+00:01:42,519 --> 00:01:48,280
+pathogen of course pathogens have been
+
+45
+00:01:44,879 --> 00:01:50,478
+able to usurp the system through the use
+
+46
+00:01:48,280 --> 00:01:52,399
+of effectors specifically type three
+
+47
+00:01:50,478 --> 00:01:54,840
+effectors that are injected into the
+
+48
+00:01:52,399 --> 00:01:56,879
+plant cell by the type two secretion
+
+49
+00:01:54,840 --> 00:01:59,280
+system and these affectors once they're
+
+50
+00:01:56,879 --> 00:02:01,879
+inside the South can then interfere with
+
+51
+00:01:59,280 --> 00:02:05,280
+this pattern trigger immunity and in the
+
+52
+00:02:01,879 --> 00:02:07,718
+case of AVP and AV PTO two effectors in
+
+53
+00:02:05,280 --> 00:02:10,239
+ponus that we study in tomato these
+
+54
+00:02:07,718 --> 00:02:12,400
+specifically inhibit this pattern
+
+55
+00:02:10,239 --> 00:02:14,039
+recognition receptor complex activity
+
+56
+00:02:12,400 --> 00:02:16,360
+and so thereby it inhibits pattern
+
+57
+00:02:14,039 --> 00:02:19,239
+triggered immunity and now of course the
+
+58
+00:02:16,360 --> 00:02:20,840
+plan has to fight back and so in tomato
+
+59
+00:02:19,239 --> 00:02:24,519
+these two effectors are recognized by
+
+60
+00:02:20,840 --> 00:02:25,920
+the resistance protein complex PTO P
+
+61
+00:02:24,519 --> 00:02:28,959
+that then leads to affector triggered
+
+62
+00:02:25,919 --> 00:02:31,518
+immunity and um program cell death that
+
+63
+00:02:28,959 --> 00:02:33,598
+then stops the spread of
+
+64
+00:02:31,519 --> 00:02:35,400
+pathogen so today I'm going to
+
+65
+00:02:33,598 --> 00:02:37,359
+specifically focus on this very initial
+
+66
+00:02:35,400 --> 00:02:39,239
+events of recognition that's happening
+
+67
+00:02:37,360 --> 00:02:41,840
+on the plant cell
+
+68
+00:02:39,239 --> 00:02:44,400
+surface so in pattern trigger immunity
+
+69
+00:02:41,840 --> 00:02:47,158
+we have these cell surface receptors and
+
+70
+00:02:44,400 --> 00:02:48,439
+these are transmembrane receptors and
+
+71
+00:02:47,158 --> 00:02:50,280
+the majority of them these the ones I'm
+
+72
+00:02:48,439 --> 00:02:53,719
+showing today all have intercellular
+
+73
+00:02:50,280 --> 00:02:56,840
+protein Kinesis and these extracellular
+
+74
+00:02:53,719 --> 00:02:59,039
+domains so before in the last slide I
+
+75
+00:02:56,840 --> 00:03:02,319
+had FS2 which is probably the best
+
+76
+00:02:59,039 --> 00:03:05,519
+characterized ctor in plants for
+
+77
+00:03:02,318 --> 00:03:07,798
+immunity and so FS2 works with the
+
+78
+00:03:05,519 --> 00:03:10,599
+co-receptor back one and recognizes flag
+
+79
+00:03:07,799 --> 00:03:14,239
+22 which is a region of
+
+80
+00:03:10,598 --> 00:03:16,639
+FL now this is a fairly well conserved
+
+81
+00:03:14,239 --> 00:03:18,640
+uh receptor throughout plants but there
+
+82
+00:03:16,639 --> 00:03:20,518
+are several examples of receptors that
+
+83
+00:03:18,639 --> 00:03:23,119
+are found in very specific plant groups
+
+84
+00:03:20,519 --> 00:03:25,680
+or families so in the case of the efr
+
+85
+00:03:23,120 --> 00:03:31,000
+receptor that recognizes L 18 which is
+
+86
+00:03:25,680 --> 00:03:35,360
+from the elongation Factor Tu of MiG
+
+87
+00:03:31,000 --> 00:03:35,360
+this is only found in bre casate so
+
+88
+00:03:35,639 --> 00:03:40,639
+parabox another example of so these are
+
+89
+00:03:38,239 --> 00:03:42,560
+all examples of these locing rich pees
+
+90
+00:03:40,639 --> 00:03:45,839
+after light pesis which are indicated in
+
+91
+00:03:42,560 --> 00:03:48,400
+these little green uh domains we also
+
+92
+00:03:45,840 --> 00:03:50,200
+have other ones including the um lysm
+
+93
+00:03:48,400 --> 00:03:53,360
+domain containing proteins such as the
+
+94
+00:03:50,199 --> 00:03:55,238
+Cs which recognize kiten and I'll bring
+
+95
+00:03:53,360 --> 00:03:58,239
+up that this was a new receptor that was
+
+96
+00:03:55,239 --> 00:04:00,680
+just published yesterday um in plant
+
+97
+00:03:58,239 --> 00:04:03,360
+Immunology so this actually recognizes
+
+98
+00:04:00,680 --> 00:04:06,680
+LPS Li polysaccharides and it's receptor
+
+99
+00:04:03,360 --> 00:04:08,840
+is called Lore and it's a lectin estain
+
+100
+00:04:06,680 --> 00:04:11,640
+FR
+
+101
+00:04:08,840 --> 00:04:13,000
+receptes and so what's key and what's
+
+102
+00:04:11,639 --> 00:04:15,199
+sort of concerned in all of these is
+
+103
+00:04:13,000 --> 00:04:17,918
+that Downstream since these are all
+
+104
+00:04:15,199 --> 00:04:20,759
+protein chases they activate mes
+
+105
+00:04:17,918 --> 00:04:23,120
+Cascades they um include transcriptional
+
+106
+00:04:20,759 --> 00:04:24,639
+reprogramming and this all leads to your
+
+107
+00:04:23,120 --> 00:04:26,759
+basal
+
+108
+00:04:24,639 --> 00:04:30,079
+defense and so I want to talk a little
+
+109
+00:04:26,759 --> 00:04:32,000
+bit more about these two uh pepti is
+
+110
+00:04:30,079 --> 00:04:34,519
+called FL 22 that I already mentioned
+
+111
+00:04:32,000 --> 00:04:37,000
+and this other new peptide that was only
+
+112
+00:04:34,519 --> 00:04:40,000
+identified about a year and a half ago
+
+113
+00:04:37,000 --> 00:04:41,399
+from uh tomato cly 228 and this is also
+
+114
+00:04:40,000 --> 00:04:44,079
+from
+
+115
+00:04:41,399 --> 00:04:45,679
+felin and so for I'm step back for a
+
+116
+00:04:44,079 --> 00:04:47,399
+second and talk a little bit about
+
+117
+00:04:45,680 --> 00:04:49,000
+humanin receptors so it's been known
+
+118
+00:04:47,399 --> 00:04:51,959
+that there's actually two felin
+
+119
+00:04:49,000 --> 00:04:54,240
+receptors in Maman systems you have an
+
+120
+00:04:51,959 --> 00:04:56,599
+extracellular receptor called tlr5 that
+
+121
+00:04:54,240 --> 00:04:58,720
+recognizes one portion of felin and you
+
+122
+00:04:56,600 --> 00:05:01,360
+have an intercellular protein complex
+
+123
+00:04:58,720 --> 00:05:03,639
+that recognizes second portion of
+
+124
+00:05:01,360 --> 00:05:05,639
+theel what's kind of cool is actually if
+
+125
+00:05:03,639 --> 00:05:07,639
+you look at the structure and what the
+
+126
+00:05:05,639 --> 00:05:09,079
+Tomato receptors seem to recognize we
+
+127
+00:05:07,639 --> 00:05:12,199
+actually again have two portions the
+
+128
+00:05:09,079 --> 00:05:14,560
+flag 22 region that's recognized by LS 2
+
+129
+00:05:12,199 --> 00:05:16,600
+and we have a second region flag 228
+
+130
+00:05:14,560 --> 00:05:19,280
+that's recognized by a previously
+
+131
+00:05:16,600 --> 00:05:22,919
+unknown receptor
+
+132
+00:05:19,279 --> 00:05:25,918
+fs3 and so one early hypothesis when we
+
+133
+00:05:22,918 --> 00:05:27,279
+first identified this new man was well
+
+134
+00:05:25,918 --> 00:05:29,318
+this could actually both of these
+
+135
+00:05:27,279 --> 00:05:32,198
+peptides could be recognized by the same
+
+136
+00:05:29,319 --> 00:05:34,560
+protein so in other words the Tomato FS
+
+137
+00:05:32,199 --> 00:05:37,038
+to could just be modified in such a way
+
+138
+00:05:34,560 --> 00:05:39,800
+as to recognize both so we tested the
+
+139
+00:05:37,038 --> 00:05:42,159
+hypothesis pretty early on and what we
+
+140
+00:05:39,800 --> 00:05:45,478
+could find was in fact when you silence
+
+141
+00:05:42,160 --> 00:05:47,479
+Eis 2 and tomato and you treat with 522
+
+142
+00:05:45,478 --> 00:05:49,199
+you see a reduced response to this
+
+143
+00:05:47,478 --> 00:05:51,800
+peptide but there's no difference when
+
+144
+00:05:49,199 --> 00:05:53,680
+you treat with the flag 228 peptide so
+
+145
+00:05:51,800 --> 00:05:55,759
+this seemed to provide evidence that in
+
+146
+00:05:53,680 --> 00:05:57,959
+fact we have two different receptors in
+
+147
+00:05:55,759 --> 00:06:01,639
+tomato that are recognizing the same
+
+148
+00:05:57,959 --> 00:06:01,638
+protein but just different portions of
+
+149
+00:06:02,759 --> 00:06:07,120
+so just to give you some evidence that
+
+150
+00:06:04,279 --> 00:06:08,799
+flag 228 actually is functioning as a m
+
+151
+00:06:07,120 --> 00:06:12,240
+so that it's actually inducing a
+
+152
+00:06:08,800 --> 00:06:15,038
+transcriptional change in the plants so
+
+153
+00:06:12,240 --> 00:06:17,160
+um Anan rosley in our lab who actually
+
+154
+00:06:15,038 --> 00:06:19,639
+gave a talk I think back in the fall he
+
+155
+00:06:17,160 --> 00:06:22,680
+was uh did a lot of experiments working
+
+156
+00:06:19,639 --> 00:06:23,519
+with uh man juers tomato and looking at
+
+157
+00:06:22,680 --> 00:06:25,439
+the
+
+158
+00:06:23,519 --> 00:06:27,079
+transcript and so I just want to
+
+159
+00:06:25,439 --> 00:06:28,680
+acknowledge J Worley actually did a
+
+160
+00:06:27,079 --> 00:06:30,279
+reanalysis of some of this data and
+
+161
+00:06:28,680 --> 00:06:32,360
+that's what I'm showing you today
+
+162
+00:06:30,279 --> 00:06:33,839
+what he did is that what we see is that
+
+163
+00:06:32,360 --> 00:06:36,680
+looking at the number of genes induced
+
+164
+00:06:33,839 --> 00:06:38,198
+in tomato upon treatment with flag 228
+
+165
+00:06:36,680 --> 00:06:41,079
+we have more than
+
+166
+00:06:38,199 --> 00:06:42,840
+2200 but if we look and divide further
+
+167
+00:06:41,079 --> 00:06:45,240
+treatments such as when we treat with
+
+168
+00:06:42,839 --> 00:06:48,439
+sudam monus florescence which is a PTI
+
+169
+00:06:45,240 --> 00:06:50,519
+inducer 86 of the% of the genes that are
+
+170
+00:06:48,439 --> 00:06:51,839
+transcriptionally upregulated are
+
+171
+00:06:50,519 --> 00:06:53,359
+overlapping with the genes that are
+
+172
+00:06:51,839 --> 00:06:55,799
+upregulated with flag
+
+173
+00:06:53,360 --> 00:06:58,439
+228 so this sort of suggests that one of
+
+174
+00:06:55,800 --> 00:07:01,598
+the major pants in Flores is probably
+
+175
+00:06:58,439 --> 00:07:03,680
+felin again flag 228 treatment is giving
+
+176
+00:07:01,598 --> 00:07:06,839
+us that same
+
+177
+00:07:03,680 --> 00:07:10,478
+response when we treat with a a disarm
+
+178
+00:07:06,839 --> 00:07:12,918
+strain of Cy path ofart tomato DC 3000
+
+179
+00:07:10,478 --> 00:07:15,360
+we see that 90% of the genes that are
+
+180
+00:07:12,918 --> 00:07:19,159
+upregulated are overlapping again with
+
+181
+00:07:15,360 --> 00:07:22,759
+the like in je and this percentage goes
+
+182
+00:07:19,160 --> 00:07:24,439
+down in the fully bual 3000 because that
+
+183
+00:07:22,759 --> 00:07:26,319
+as I showed you previously is sort of
+
+184
+00:07:24,439 --> 00:07:28,439
+suppressing the PTI
+
+185
+00:07:26,319 --> 00:07:30,199
+induction and then if we don't if we
+
+186
+00:07:28,439 --> 00:07:32,478
+have a strain that doesn't deliver
+
+187
+00:07:30,199 --> 00:07:33,800
+affectors and doesn't have a fuelin it's
+
+188
+00:07:32,478 --> 00:07:36,359
+pretty much escaping recognition we're
+
+189
+00:07:33,800 --> 00:07:39,120
+not really getting an induction of PTI
+
+190
+00:07:36,360 --> 00:07:42,879
+in gen so when we looked at this
+
+191
+00:07:39,120 --> 00:07:46,439
+evidence this gave us um some confidence
+
+192
+00:07:42,879 --> 00:07:49,000
+that 228 treatment was inducing uh a
+
+193
+00:07:46,439 --> 00:07:49,000
+response in
+
+194
+00:07:49,839 --> 00:07:55,158
+tomato and so we were interested in
+
+195
+00:07:52,639 --> 00:07:57,079
+maybe figuring out what was going on and
+
+196
+00:07:55,158 --> 00:07:59,560
+I happened to be involved in a project
+
+197
+00:07:57,079 --> 00:08:01,800
+where we were screening um tomato
+
+198
+00:07:59,560 --> 00:08:03,639
+heirloom cultivars to see if they had
+
+199
+00:08:01,800 --> 00:08:06,280
+variation in their response to different
+
+200
+00:08:03,639 --> 00:08:08,918
+Ms so we had included flag 22 and
+
+201
+00:08:06,279 --> 00:08:11,359
+another peptide cs22 but I'm showing you
+
+202
+00:08:08,918 --> 00:08:13,439
+here the data for flag 228 treatment and
+
+203
+00:08:11,360 --> 00:08:16,080
+what I want to emphasize here is we saw
+
+204
+00:08:13,439 --> 00:08:18,079
+that there was one line yellow pair that
+
+205
+00:08:16,079 --> 00:08:20,959
+was tested that seemed to have really
+
+206
+00:08:18,079 --> 00:08:23,918
+really reduced responses to fight
+
+207
+00:08:20,959 --> 00:08:26,000
+228 and so I wondered was this an
+
+208
+00:08:23,918 --> 00:08:28,478
+anomaly what was going on and could we
+
+209
+00:08:26,000 --> 00:08:30,759
+actually find other cultivars that were
+
+210
+00:08:28,478 --> 00:08:32,598
+in fact having a IAL
+
+211
+00:08:30,759 --> 00:08:35,158
+response and so I went through and
+
+212
+00:08:32,599 --> 00:08:37,399
+screened about 200 different tomato
+
+213
+00:08:35,158 --> 00:08:39,958
+cultivars and also wild species of
+
+214
+00:08:37,399 --> 00:08:42,719
+tomato and what I could find was
+
+215
+00:08:39,958 --> 00:08:45,919
+actually several uh cultivars and a few
+
+216
+00:08:42,719 --> 00:08:47,920
+wild species EXs that had this reduced
+
+217
+00:08:45,919 --> 00:08:50,039
+response to flag 228
+
+218
+00:08:47,919 --> 00:08:53,120
+treatment and so again we have this
+
+219
+00:08:50,039 --> 00:08:55,278
+yellow pair tomato we have two pimpell
+
+220
+00:08:53,120 --> 00:08:57,159
+folium accession so this is the one of
+
+221
+00:08:55,278 --> 00:08:59,720
+the closest relatives to Tomato but it's
+
+222
+00:08:57,159 --> 00:09:01,838
+a wild species and then we had all of
+
+223
+00:08:59,720 --> 00:09:04,160
+these different tomato cultur bars that
+
+224
+00:09:01,839 --> 00:09:06,160
+all showed this extremely reduced
+
+225
+00:09:04,159 --> 00:09:07,600
+response and in fact when you look at
+
+226
+00:09:06,159 --> 00:09:09,519
+the response it really isn't anything
+
+227
+00:09:07,600 --> 00:09:12,159
+there that's just background and so we
+
+228
+00:09:09,519 --> 00:09:13,720
+were very excited and decided this
+
+229
+00:09:12,159 --> 00:09:14,838
+really set us up for a really nice
+
+230
+00:09:13,720 --> 00:09:17,920
+genetics
+
+231
+00:09:14,839 --> 00:09:19,800
+approach where I used uh yellow pair
+
+232
+00:09:17,919 --> 00:09:23,919
+fvar the non-responder as one of my
+
+233
+00:09:19,799 --> 00:09:25,240
+parents and the sanum Pilla fum La 1589
+
+234
+00:09:23,919 --> 00:09:27,319
+as my other
+
+235
+00:09:25,240 --> 00:09:29,480
+parent what was really nice is we
+
+236
+00:09:27,320 --> 00:09:31,278
+actually have genomes of both parents so
+
+237
+00:09:29,480 --> 00:09:34,360
+actually made the genetics really really
+
+238
+00:09:31,278 --> 00:09:37,919
+nice later on um so we have is we
+
+239
+00:09:34,360 --> 00:09:39,399
+actually did a a cross and looked at the
+
+240
+00:09:37,919 --> 00:09:42,599
+phenotype of the
+
+241
+00:09:39,399 --> 00:09:45,799
+f1s and so what we see if we treat the
+
+242
+00:09:42,600 --> 00:09:49,639
+flag 22 for either yellow pair the other
+
+243
+00:09:45,799 --> 00:09:53,359
+parent La 1589 or the F1 hybrid they all
+
+244
+00:09:49,639 --> 00:09:54,879
+respond equally well to FL 22 but now
+
+245
+00:09:53,360 --> 00:09:58,039
+when we treat the flight
+
+246
+00:09:54,879 --> 00:09:59,958
+228 yellow peir is completely
+
+247
+00:09:58,039 --> 00:10:03,278
+insensitive to the
+
+248
+00:09:59,958 --> 00:10:07,159
+but the LA 1589 and the F1
+
+249
+00:10:03,278 --> 00:10:08,439
+respond so now this set us up to do a
+
+250
+00:10:07,159 --> 00:10:10,799
+bul segregate
+
+251
+00:10:08,440 --> 00:10:13,120
+analysis so I showed you the phenotype
+
+252
+00:10:10,799 --> 00:10:15,479
+of the F1 when we went to the F2 we had
+
+253
+00:10:13,120 --> 00:10:17,120
+a nice segregation of the phenotype
+
+254
+00:10:15,480 --> 00:10:20,159
+where we had responsive plants and
+
+255
+00:10:17,120 --> 00:10:22,759
+non-responsive plants and so we pulled
+
+256
+00:10:20,159 --> 00:10:25,159
+the DNA from the responsive plants and
+
+257
+00:10:22,759 --> 00:10:28,039
+the idea was is that if we could go and
+
+258
+00:10:25,159 --> 00:10:29,958
+sequence the genomes we wanted to look
+
+259
+00:10:28,039 --> 00:10:32,360
+specifically for regions of the genomes
+
+260
+00:10:29,958 --> 00:10:35,559
+where we had Snips that corresponded to
+
+261
+00:10:32,360 --> 00:10:38,200
+only the yellow pair parent but not to
+
+262
+00:10:35,559 --> 00:10:39,879
+the other La 1589 parent and again
+
+263
+00:10:38,200 --> 00:10:41,680
+because we had the genome sequences for
+
+264
+00:10:39,879 --> 00:10:43,439
+both of these this actually ended up
+
+265
+00:10:41,679 --> 00:10:45,278
+being fairly
+
+266
+00:10:43,440 --> 00:10:48,000
+straightforward and so this is where
+
+267
+00:10:45,278 --> 00:10:49,600
+Susie comes in so we developed this uh
+
+268
+00:10:48,000 --> 00:10:51,639
+analysis pipeline I just want to walk
+
+269
+00:10:49,600 --> 00:10:53,839
+you through it so we again grouped the
+
+270
+00:10:51,639 --> 00:10:57,360
+susceptible plants and then we sent the
+
+271
+00:10:53,839 --> 00:10:59,959
+DNA off for um Next Generation aluminous
+
+272
+00:10:57,360 --> 00:11:01,600
+sequencing and then did sequence
+
+273
+00:10:59,958 --> 00:11:03,838
+processing of that data where she
+
+274
+00:11:01,600 --> 00:11:05,680
+trimmed the reads and filtered and then
+
+275
+00:11:03,839 --> 00:11:08,760
+she mapped those reads onto her yellow
+
+276
+00:11:05,679 --> 00:11:11,159
+pareno so that she could call those
+
+277
+00:11:08,759 --> 00:11:14,000
+Snips and then what she ended up doing
+
+278
+00:11:11,159 --> 00:11:16,919
+is looking for Regions where the senum
+
+279
+00:11:14,000 --> 00:11:19,078
+from Pell volum specific Snips were
+
+280
+00:11:16,919 --> 00:11:20,479
+located and then that allowed us find
+
+281
+00:11:19,078 --> 00:11:23,599
+some candidates so I'm going to show you
+
+282
+00:11:20,480 --> 00:11:26,320
+an example of what this output data
+
+283
+00:11:23,600 --> 00:11:27,800
+looks like and so for 11 of the 12
+
+284
+00:11:26,320 --> 00:11:30,160
+chromosomes this is generally what the
+
+285
+00:11:27,799 --> 00:11:33,919
+data look like we're looking at the
+
+286
+00:11:30,159 --> 00:11:36,039
+percentage of La 1589 nips and so if we
+
+287
+00:11:33,919 --> 00:11:37,039
+see no linkage to our trade of Interest
+
+288
+00:11:36,039 --> 00:11:39,319
+we should see
+
+289
+00:11:37,039 --> 00:11:40,879
+50% and that's generally what you see
+
+290
+00:11:39,320 --> 00:11:43,200
+obviously you have a little bit of
+
+291
+00:11:40,879 --> 00:11:45,679
+wiggling in the data but what we see is
+
+292
+00:11:43,200 --> 00:11:50,600
+generally a 50%
+
+293
+00:11:45,679 --> 00:11:52,838
+um snip ratio and so again about 11 of
+
+294
+00:11:50,600 --> 00:11:55,399
+the 12 chromosomes look like this one
+
+295
+00:11:52,839 --> 00:11:58,200
+chromosome instead had a suppressed
+
+296
+00:11:55,399 --> 00:12:01,958
+region where we had very very few La
+
+297
+00:11:58,200 --> 00:12:04,519
+1589 SS it's right in here and this uh
+
+298
+00:12:01,958 --> 00:12:07,759
+corresponded to about a 2.5 megabase
+
+299
+00:12:04,519 --> 00:12:09,919
+region and when we looked at the genes
+
+300
+00:12:07,759 --> 00:12:12,000
+there we actually found nine receptor
+
+301
+00:12:09,919 --> 00:12:14,039
+like kyes genes which was a our sort of
+
+302
+00:12:12,000 --> 00:12:16,720
+candidate protein that we were
+
+303
+00:12:14,039 --> 00:12:20,159
+expecting and so looking at these nine
+
+304
+00:12:16,720 --> 00:12:21,800
+genes I then designed primers looking um
+
+305
+00:12:20,159 --> 00:12:24,000
+at these different portions of the
+
+306
+00:12:21,799 --> 00:12:25,919
+genome and did a little bit of fine
+
+307
+00:12:24,000 --> 00:12:27,639
+mapping and when we looked at the re
+
+308
+00:12:25,919 --> 00:12:29,319
+combination we saw a suppressed re
+
+309
+00:12:27,639 --> 00:12:32,079
+combination around the region of this
+
+310
+00:12:29,320 --> 00:12:34,760
+one gene but not around these other
+
+311
+00:12:32,078 --> 00:12:38,039
+genes and so we very tentatively called
+
+312
+00:12:34,759 --> 00:12:40,399
+this one reate chise gene are putative
+
+313
+00:12:38,039 --> 00:12:43,919
+fs3
+
+314
+00:12:40,399 --> 00:12:45,278
+Gene um so tomato has been really nice
+
+315
+00:12:43,919 --> 00:12:46,958
+in the last few years in that we have a
+
+316
+00:12:45,278 --> 00:12:49,078
+lot of genetic resources that have been
+
+317
+00:12:46,958 --> 00:12:50,719
+developed so one of those resources
+
+318
+00:12:49,078 --> 00:12:54,958
+that's been developed out of Michigan
+
+319
+00:12:50,720 --> 00:12:56,360
+state is soul cap um Soul cap sequencing
+
+320
+00:12:54,958 --> 00:12:58,518
+and they took a whole bunch of different
+
+321
+00:12:56,360 --> 00:13:00,919
+tomato cultivars and ponella folium
+
+322
+00:12:58,519 --> 00:13:02,519
+accessions and they did uh snip calling
+
+323
+00:13:00,919 --> 00:13:04,479
+throughout the genomes and so we could
+
+324
+00:13:02,519 --> 00:13:06,560
+actually mine this data and what we
+
+325
+00:13:04,480 --> 00:13:09,278
+looked for was
+
+326
+00:13:06,559 --> 00:13:11,119
+um Susie first did a whole genome
+
+327
+00:13:09,278 --> 00:13:13,600
+analysis so she took all the Snips from
+
+328
+00:13:11,120 --> 00:13:15,879
+the whole genome and developed this tree
+
+329
+00:13:13,600 --> 00:13:18,199
+and what we could do is we had three
+
+330
+00:13:15,879 --> 00:13:20,559
+cultivars in that list that were
+
+331
+00:13:18,198 --> 00:13:22,479
+non-responsive so those three cultivars
+
+332
+00:13:20,559 --> 00:13:24,518
+are not related if you look at the
+
+333
+00:13:22,480 --> 00:13:27,560
+entire genome so again these are three
+
+334
+00:13:24,519 --> 00:13:29,720
+cultivars that don't respond if we just
+
+335
+00:13:27,559 --> 00:13:32,518
+take that region of Interest 10 meab
+
+336
+00:13:29,720 --> 00:13:35,000
+bases around that region we now see that
+
+337
+00:13:32,519 --> 00:13:37,240
+all of these uh cultivars now cluster
+
+338
+00:13:35,000 --> 00:13:39,159
+together so this again gave us some you
+
+339
+00:13:37,240 --> 00:13:40,600
+know potential evidence that perhaps
+
+340
+00:13:39,159 --> 00:13:42,559
+this region of the genome was of
+
+341
+00:13:40,600 --> 00:13:46,680
+interest for us and it could have like a
+
+342
+00:13:42,559 --> 00:13:49,799
+common um breeding history or a common
+
+343
+00:13:46,679 --> 00:13:52,599
+lineage we next then went to uh
+
+344
+00:13:49,799 --> 00:13:55,078
+different Salan of species so I pointed
+
+345
+00:13:52,600 --> 00:13:57,519
+out tomato of course responds to fly 228
+
+346
+00:13:55,078 --> 00:14:01,399
+treatment we also know potato and pepper
+
+347
+00:13:57,519 --> 00:14:03,799
+also respond but Funia do not and so now
+
+348
+00:14:01,399 --> 00:14:05,399
+we have genome sequences of all of these
+
+349
+00:14:03,799 --> 00:14:07,639
+so we can actually go into the genomes
+
+350
+00:14:05,399 --> 00:14:10,480
+and ask well do they have this one
+
+351
+00:14:07,639 --> 00:14:13,039
+candidate LS3 Gene and really
+
+352
+00:14:10,480 --> 00:14:15,240
+interestingly we have the Tomato fs3
+
+353
+00:14:13,039 --> 00:14:17,919
+candidate we have pepper and we have
+
+354
+00:14:15,240 --> 00:14:20,799
+potato but if you look petunia and
+
+355
+00:14:17,919 --> 00:14:23,159
+actually bamana do not have a clear
+
+356
+00:14:20,799 --> 00:14:24,758
+orthol for this Gene so this again was
+
+357
+00:14:23,159 --> 00:14:26,240
+some evidence suggesting that maybe that
+
+358
+00:14:24,759 --> 00:14:29,519
+this was the Gene and it was a newly
+
+359
+00:14:26,240 --> 00:14:31,839
+Arisen Gene that was not present in it
+
+360
+00:14:29,519 --> 00:14:35,198
+came about after um the Divergence of
+
+361
+00:14:31,839 --> 00:14:38,160
+petunia and Nana from the the
+
+362
+00:14:35,198 --> 00:14:39,719
+salanos okay so this is a whole lot of
+
+363
+00:14:38,159 --> 00:14:42,120
+evidence let's get back to the gene what
+
+364
+00:14:39,720 --> 00:14:44,560
+it is so it has two
+
+365
+00:14:42,120 --> 00:14:48,039
+exons and what we did is we sequenced
+
+366
+00:14:44,559 --> 00:14:50,078
+all of those uh um different cultiv bars
+
+367
+00:14:48,039 --> 00:14:52,599
+to see what was going on in this Gene
+
+368
+00:14:50,078 --> 00:14:55,239
+and what we found is that in yellow pair
+
+369
+00:14:52,600 --> 00:14:57,800
+the six other tomato cultivars and in
+
+370
+00:14:55,240 --> 00:15:00,879
+one of the pimpel folium ex sessions we
+
+371
+00:14:57,799 --> 00:15:02,519
+have four B PA deletion in the Gene and
+
+372
+00:15:00,879 --> 00:15:04,159
+so actually the one base pair deletion
+
+373
+00:15:02,519 --> 00:15:05,240
+is sufficient because that causes an
+
+374
+00:15:04,159 --> 00:15:07,799
+aberin
+
+375
+00:15:05,240 --> 00:15:10,240
+stopon and so we would predict actually
+
+376
+00:15:07,799 --> 00:15:12,399
+that in all of these cultivars and
+
+377
+00:15:10,240 --> 00:15:14,919
+obessions this is actually a
+
+378
+00:15:12,399 --> 00:15:17,399
+null and then we had one other that was
+
+379
+00:15:14,919 --> 00:15:21,078
+very interesting so in the pimpell
+
+380
+00:15:17,399 --> 00:15:22,839
+folium LA 373 we actually had what
+
+381
+00:15:21,078 --> 00:15:25,719
+appeared to be a full length encoding
+
+382
+00:15:22,839 --> 00:15:28,040
+Gene but there were four non synonymous
+
+383
+00:15:25,720 --> 00:15:29,639
+Snips and so you can actually see if you
+
+384
+00:15:28,039 --> 00:15:32,679
+go back to the
+
+385
+00:15:29,639 --> 00:15:34,799
+we see that this La 373 wasn't really a
+
+386
+00:15:32,679 --> 00:15:37,120
+null it seemed to have some response but
+
+387
+00:15:34,799 --> 00:15:38,758
+it was greatly reduced so this was kind
+
+388
+00:15:37,120 --> 00:15:41,399
+of another really interesting Al for us
+
+389
+00:15:38,759 --> 00:15:42,919
+to study but first before all of this we
+
+390
+00:15:41,399 --> 00:15:45,278
+have to actually show what is the what
+
+391
+00:15:42,919 --> 00:15:48,360
+is the gene doing what is it encoding
+
+392
+00:15:45,278 --> 00:15:51,759
+not surprisingly it's a lucing RIT Pete
+
+393
+00:15:48,360 --> 00:15:54,399
+receptiv so it has 27 extracellular
+
+394
+00:15:51,759 --> 00:15:57,519
+Lucen ritual PS a transmembrane domain
+
+395
+00:15:54,399 --> 00:16:00,600
+and a kind domain and now when we go and
+
+396
+00:15:57,519 --> 00:16:04,720
+actually look at what looks like on the
+
+397
+00:16:00,600 --> 00:16:07,639
+Ecto domain uh if you take the FS2 back
+
+398
+00:16:04,720 --> 00:16:09,639
+one flly 22 Co crystal structure and you
+
+399
+00:16:07,639 --> 00:16:11,919
+put the fs3 gene on it and thread it it
+
+400
+00:16:09,639 --> 00:16:15,198
+looks very similar but if you look at
+
+401
+00:16:11,919 --> 00:16:17,479
+the actual amino acid um um identity
+
+402
+00:16:15,198 --> 00:16:19,599
+it's only about 35% so while
+
+403
+00:16:17,480 --> 00:16:21,680
+structurally it looks similar because
+
+404
+00:16:19,600 --> 00:16:23,480
+again the Lucen Rich repeat domains are
+
+405
+00:16:21,679 --> 00:16:26,120
+pretty conserved as far as their
+
+406
+00:16:23,480 --> 00:16:30,440
+structure the actual amino acid
+
+407
+00:16:26,120 --> 00:16:30,440
+conservation is fairly low
+
+408
+00:16:30,839 --> 00:16:35,880
+and now finally putting it into planta
+
+409
+00:16:33,480 --> 00:16:37,759
+so what's nice is I can use those uh
+
+410
+00:16:35,879 --> 00:16:40,159
+yellow pear tomatoes to do some work in
+
+411
+00:16:37,759 --> 00:16:43,278
+tomato and what I first did was
+
+412
+00:16:40,159 --> 00:16:45,240
+expressed this fs3 gene into yellow peir
+
+413
+00:16:43,278 --> 00:16:49,559
+protoplasts to see if they're able to
+
+414
+00:16:45,240 --> 00:16:52,480
+now signal and so if I just Express fs3
+
+415
+00:16:49,559 --> 00:16:54,439
+we don't get any activation of M PES but
+
+416
+00:16:52,480 --> 00:16:57,319
+if we treat with flly 22 as our control
+
+417
+00:16:54,440 --> 00:16:59,680
+we do get activation um if we just treat
+
+418
+00:16:57,318 --> 00:17:02,879
+with the peptide we don't get activ
+
+419
+00:16:59,679 --> 00:17:05,438
+either it's only when we have the fls 3
+
+420
+00:17:02,879 --> 00:17:08,838
+plus the flag 228 that we actually now
+
+421
+00:17:05,439 --> 00:17:12,279
+get activation of M sign and just as a
+
+422
+00:17:08,838 --> 00:17:13,918
+control if you remember this efr and l18
+
+423
+00:17:12,279 --> 00:17:16,240
+pair that we can put this in tomato and
+
+424
+00:17:13,919 --> 00:17:18,199
+we also get signaling so this was
+
+425
+00:17:16,240 --> 00:17:20,640
+suggesting to us that the gene that we
+
+426
+00:17:18,199 --> 00:17:23,480
+had was probably the right Gene but we
+
+427
+00:17:20,640 --> 00:17:26,640
+wanted to do some further testing so now
+
+428
+00:17:23,480 --> 00:17:28,078
+we expressed LS3 in the Ciana benana
+
+429
+00:17:26,640 --> 00:17:30,640
+which you remember from the tree I just
+
+430
+00:17:28,078 --> 00:17:33,839
+show did not have a clear fls 3
+
+431
+00:17:30,640 --> 00:17:36,759
+orthologue and so if we put in fls 3 in
+
+432
+00:17:33,839 --> 00:17:38,959
+the flag 228 we get a nice response and
+
+433
+00:17:36,759 --> 00:17:41,960
+if we put in the efr and it's cognet
+
+434
+00:17:38,960 --> 00:17:44,440
+Lian L 18 we also get a response but if
+
+435
+00:17:41,960 --> 00:17:46,600
+you have the wrong receptor Lan pairs we
+
+436
+00:17:44,440 --> 00:17:50,400
+don't see any response so it's not that
+
+437
+00:17:46,599 --> 00:17:50,399
+just expression of fs3 causes
+
+438
+00:17:51,359 --> 00:17:56,439
+ad so we had some nice data that was
+
+439
+00:17:54,119 --> 00:17:57,959
+suggesting that um fsy could be the
+
+440
+00:17:56,440 --> 00:18:00,759
+receptor but we wanted to do some
+
+441
+00:17:57,960 --> 00:18:03,558
+further studies so going back to this
+
+442
+00:18:00,759 --> 00:18:06,038
+model what we had is um as I mentioned
+
+443
+00:18:03,558 --> 00:18:07,918
+we had this abert stop Cod on in in one
+
+444
+00:18:06,038 --> 00:18:08,798
+of our Le that really didn't do us very
+
+445
+00:18:07,919 --> 00:18:11,720
+much
+
+446
+00:18:08,798 --> 00:18:14,839
+good but we had this other nice o that
+
+447
+00:18:11,720 --> 00:18:17,159
+had four amino acid changes three in
+
+448
+00:18:14,839 --> 00:18:19,839
+Lucen R repe domains and when we looked
+
+449
+00:18:17,159 --> 00:18:21,640
+at that they weren't really um conserved
+
+450
+00:18:19,839 --> 00:18:23,558
+residues it didn't seem to be really big
+
+451
+00:18:21,640 --> 00:18:25,320
+changes but when we looked at this
+
+452
+00:18:23,558 --> 00:18:27,240
+fourth one that's actually in the highly
+
+453
+00:18:25,319 --> 00:18:30,119
+conserved p+ oneop we're doing a three
+
+454
+00:18:27,240 --> 00:18:32,038
+need to pring change and so I
+
+455
+00:18:30,119 --> 00:18:33,639
+hypothesize it was probably this amino
+
+456
+00:18:32,038 --> 00:18:35,720
+acid change that was causing this
+
+457
+00:18:33,640 --> 00:18:37,240
+reduction in response phenotype that we
+
+458
+00:18:35,720 --> 00:18:39,279
+were
+
+459
+00:18:37,240 --> 00:18:41,640
+observing um and then one other one I
+
+460
+00:18:39,279 --> 00:18:43,599
+want to mention is that um in kineses
+
+461
+00:18:41,640 --> 00:18:45,360
+they have a highly conserved ATP binding
+
+462
+00:18:43,599 --> 00:18:48,119
+site that's important for the actual
+
+463
+00:18:45,359 --> 00:18:50,879
+catalytic activity of the kise and so in
+
+464
+00:18:48,119 --> 00:18:53,759
+this case it said this Lys 877 so we
+
+465
+00:18:50,880 --> 00:18:55,960
+also use this amino acid to probe uh the
+
+466
+00:18:53,759 --> 00:18:58,200
+function of
+
+467
+00:18:55,960 --> 00:18:59,400
+fs3 and so now we started making
+
+468
+00:18:58,200 --> 00:19:01,240
+mutations
+
+469
+00:18:59,400 --> 00:19:04,880
+so we're looking here at total Ross
+
+470
+00:19:01,240 --> 00:19:08,038
+production if I put in fs3 into benana
+
+471
+00:19:04,880 --> 00:19:10,520
+and treat fly 228 we get response if I
+
+472
+00:19:08,038 --> 00:19:13,919
+make this ATP binding site mutant we
+
+473
+00:19:10,519 --> 00:19:15,960
+lose the response and also if I make the
+
+474
+00:19:13,919 --> 00:19:18,159
+three to Proline substitution that I
+
+475
+00:19:15,960 --> 00:19:20,279
+mentioned again we have a A reduced
+
+476
+00:19:18,159 --> 00:19:22,600
+response um that's sort of similar to
+
+477
+00:19:20,279 --> 00:19:24,480
+what we were seeing in the plant and
+
+478
+00:19:22,599 --> 00:19:28,279
+just to confirm that what I actually did
+
+479
+00:19:24,480 --> 00:19:31,880
+was um cloned out the other Al from the
+
+480
+00:19:28,279 --> 00:19:33,678
+LA 373 which we call fless 3-2 and
+
+481
+00:19:31,880 --> 00:19:36,280
+similar to what we were seeing from the
+
+482
+00:19:33,679 --> 00:19:38,679
+actual plant the the pimpel folium we
+
+483
+00:19:36,279 --> 00:19:41,440
+see a reduction in response but it's not
+
+484
+00:19:38,679 --> 00:19:43,280
+no response and in fact if we take that
+
+485
+00:19:41,440 --> 00:19:46,240
+alil and we mutate the proline back to
+
+486
+00:19:43,279 --> 00:19:48,678
+three we can restore wild type function
+
+487
+00:19:46,240 --> 00:19:50,558
+so this told us a couple of things but
+
+488
+00:19:48,679 --> 00:19:53,000
+it also really implied that the Kines
+
+489
+00:19:50,558 --> 00:19:56,839
+domain or kinese activity is probably
+
+490
+00:19:53,000 --> 00:19:56,839
+important for the function of F3
+
+491
+00:19:57,319 --> 00:20:02,678
+sign so so uh next we wanted to actually
+
+492
+00:20:00,919 --> 00:20:04,480
+show that we're getting an induction of
+
+493
+00:20:02,679 --> 00:20:07,159
+PTI and so what we did for these
+
+494
+00:20:04,480 --> 00:20:10,279
+experiments was we took benthamiana
+
+495
+00:20:07,159 --> 00:20:13,120
+plants we infiltrated the leaves with
+
+496
+00:20:10,279 --> 00:20:14,759
+agrobacterium that expresses F L3 and
+
+497
+00:20:13,119 --> 00:20:17,678
+then came back later and treated with
+
+498
+00:20:14,759 --> 00:20:19,240
+our peptide so this should induce uh our
+
+499
+00:20:17,679 --> 00:20:21,440
+immune
+
+500
+00:20:19,240 --> 00:20:22,839
+response we then came in eight hours
+
+501
+00:20:21,440 --> 00:20:26,120
+later and we
+
+502
+00:20:22,839 --> 00:20:28,319
+challenged uh the plant with our dc3000
+
+503
+00:20:26,119 --> 00:20:31,639
+in an overlapping Circle and what this
+
+504
+00:20:28,319 --> 00:20:34,119
+allows to do is that we look for whether
+
+505
+00:20:31,640 --> 00:20:35,840
+we have cell death in the overlap region
+
+506
+00:20:34,119 --> 00:20:37,519
+if we don't it means that we didn't
+
+507
+00:20:35,839 --> 00:20:42,158
+induce an immune response and so the
+
+508
+00:20:37,519 --> 00:20:44,079
+bacteria won if we were able to induce
+
+509
+00:20:42,159 --> 00:20:45,240
+immunity then we don't see cell death in
+
+510
+00:20:44,079 --> 00:20:47,439
+that spot and that means sort of a
+
+511
+00:20:45,240 --> 00:20:49,400
+plantform so this allows us to really
+
+512
+00:20:47,440 --> 00:20:52,759
+Pro whether we are getting an immune
+
+513
+00:20:49,400 --> 00:20:54,640
+response from this receptor and um
+
+514
+00:20:52,759 --> 00:20:57,879
+treatment or
+
+515
+00:20:54,640 --> 00:20:59,919
+not and so that's a horrible picture I
+
+516
+00:20:57,880 --> 00:21:02,720
+apologize what you can sort of see here
+
+517
+00:20:59,919 --> 00:21:04,679
+is that if we infiltrate with only yfp
+
+518
+00:21:02,720 --> 00:21:05,960
+and do the treatment you see that we
+
+519
+00:21:04,679 --> 00:21:07,960
+actually have the cell death in the
+
+520
+00:21:05,960 --> 00:21:09,440
+overlapping area the majority of the
+
+521
+00:21:07,960 --> 00:21:12,038
+time and this suggests again that we're
+
+522
+00:21:09,440 --> 00:21:13,240
+not inducing a clear immune response in
+
+523
+00:21:12,038 --> 00:21:16,440
+that
+
+524
+00:21:13,240 --> 00:21:18,558
+region if we take the inactive fs3 the
+
+525
+00:21:16,440 --> 00:21:20,440
+one that has ATP binding s mutation we
+
+526
+00:21:18,558 --> 00:21:24,158
+again also see that we have cell death
+
+527
+00:21:20,440 --> 00:21:26,600
+in that overlapping area thank you but
+
+528
+00:21:24,159 --> 00:21:29,600
+when we have the wild type fls 3 we
+
+529
+00:21:26,599 --> 00:21:31,599
+don't see that we have cell de occurring
+
+530
+00:21:29,599 --> 00:21:32,959
+in that region so that was suggesting
+
+531
+00:21:31,599 --> 00:21:34,959
+again that we were getting an immune
+
+532
+00:21:32,960 --> 00:21:38,640
+response that was being initiated when
+
+533
+00:21:34,960 --> 00:21:40,919
+we had LS3 plus the
+
+534
+00:21:38,640 --> 00:21:43,200
+cogn these experiments were done with by
+
+535
+00:21:40,919 --> 00:21:45,960
+Diane d in our
+
+536
+00:21:43,200 --> 00:21:47,919
+lab okay and last part of course is the
+
+537
+00:21:45,960 --> 00:21:50,240
+affector story because that's really
+
+538
+00:21:47,919 --> 00:21:53,400
+what our lab focuses on and so it's been
+
+539
+00:21:50,240 --> 00:21:56,319
+known that the affectors AVP and2
+
+540
+00:21:53,400 --> 00:21:59,200
+suppress fls2 mediated signaling and not
+
+541
+00:21:56,319 --> 00:22:03,519
+too surprisingly they also Suess fls 3
+
+542
+00:21:59,200 --> 00:22:05,558
+mediated expl um for both abp2 and for
+
+543
+00:22:03,519 --> 00:22:07,759
+avp2 and so this is something of course
+
+544
+00:22:05,558 --> 00:22:10,200
+we're really interested in exploring in
+
+545
+00:22:07,759 --> 00:22:13,200
+Greg's lab whether this is going to be
+
+546
+00:22:10,200 --> 00:22:14,440
+um the same as what occurs for fls2 or
+
+547
+00:22:13,200 --> 00:22:15,840
+if it's actually different and this is
+
+548
+00:22:14,440 --> 00:22:18,640
+something I think tiny and Simon are
+
+549
+00:22:15,839 --> 00:22:21,599
+going to be working on
+
+550
+00:22:18,640 --> 00:22:24,759
+shortly um and then we wanted to ask is
+
+551
+00:22:21,599 --> 00:22:27,278
+it iss3 signaling dependent on back one
+
+552
+00:22:24,759 --> 00:22:28,960
+and again fls2 signaling is so we would
+
+553
+00:22:27,278 --> 00:22:31,440
+expect that it would be but we needed to
+
+554
+00:22:28,960 --> 00:22:33,558
+do the experiments anyway so if we use
+
+555
+00:22:31,440 --> 00:22:36,038
+Bena and we either have a control
+
+556
+00:22:33,558 --> 00:22:37,879
+silencing or a back one silencing in
+
+557
+00:22:36,038 --> 00:22:40,240
+plants that are silenced for back one
+
+558
+00:22:37,880 --> 00:22:42,400
+and express fs3 we have a reduced
+
+559
+00:22:40,240 --> 00:22:45,079
+signaling and it's comparable to what we
+
+560
+00:22:42,400 --> 00:22:47,960
+see for efr so this was some preliminary
+
+561
+00:22:45,079 --> 00:22:51,199
+evidence back one was involved um but I
+
+562
+00:22:47,960 --> 00:22:53,640
+was able to recently do uh invivo
+
+563
+00:22:51,200 --> 00:22:56,640
+studies looking at um the existence of
+
+564
+00:22:53,640 --> 00:22:59,880
+fs3 back one in a complex using Co
+
+565
+00:22:56,640 --> 00:23:02,440
+precipitation and so if I have fs3 and
+
+566
+00:22:59,880 --> 00:23:04,960
+back one expressed in the same leak if I
+
+567
+00:23:02,440 --> 00:23:07,720
+immuno uh precipitate pulling on the
+
+568
+00:23:04,960 --> 00:23:10,519
+back one I'm able to detect
+
+569
+00:23:07,720 --> 00:23:13,798
+fs3 but if I have yfp instead and pull
+
+570
+00:23:10,519 --> 00:23:16,519
+on yfp I don't pull down the fs3 and so
+
+571
+00:23:13,798 --> 00:23:19,639
+this was again suggesting that we were
+
+572
+00:23:16,519 --> 00:23:21,839
+getting um fering back one to exist in a
+
+573
+00:23:19,640 --> 00:23:23,240
+complex together and I will say this is
+
+574
+00:23:21,839 --> 00:23:27,278
+actually after treatment with the
+
+575
+00:23:23,240 --> 00:23:28,720
+peptide and so again this is more um
+
+576
+00:23:27,278 --> 00:23:32,960
+something else we very interest in
+
+577
+00:23:28,720 --> 00:23:35,360
+studying as well but uh needs more work
+
+578
+00:23:32,960 --> 00:23:37,079
+and so last thing that we needed to do
+
+579
+00:23:35,359 --> 00:23:39,240
+in order to actually show that this is
+
+580
+00:23:37,079 --> 00:23:41,960
+in fact the receptor we had to
+
+581
+00:23:39,240 --> 00:23:44,919
+demonstrate specific binding between the
+
+582
+00:23:41,960 --> 00:23:47,038
+Lian and the receptor and so we did this
+
+583
+00:23:44,919 --> 00:23:49,320
+using some chemistry probes that were
+
+584
+00:23:47,038 --> 00:23:51,798
+developed through uh collaboration with
+
+585
+00:23:49,319 --> 00:23:53,879
+Frank schroers lab and specifically a
+
+586
+00:23:51,798 --> 00:23:56,879
+current post talk Jos belli and a former
+
+587
+00:23:53,880 --> 00:24:00,799
+postu in odor and they came up with
+
+588
+00:23:56,880 --> 00:24:03,320
+these very uh clever systems to put on
+
+589
+00:24:00,798 --> 00:24:05,798
+two important chemical moities the first
+
+590
+00:24:03,319 --> 00:24:07,319
+one is this diazine photocross Linker
+
+591
+00:24:05,798 --> 00:24:09,918
+and the second one is this alkine
+
+592
+00:24:07,319 --> 00:24:13,158
+chemistry gr and so we made two probes
+
+593
+00:24:09,919 --> 00:24:15,600
+our flag 228 and our flag 22 that had
+
+594
+00:24:13,159 --> 00:24:17,480
+what we call this our handle and what
+
+595
+00:24:15,599 --> 00:24:20,439
+this allows us to do is that with a
+
+596
+00:24:17,480 --> 00:24:23,400
+photo diering cross Linker we can use UV
+
+597
+00:24:20,440 --> 00:24:26,798
+light and this will coal attack and bond
+
+598
+00:24:23,400 --> 00:24:28,679
+to whatever's close by the alkine handle
+
+599
+00:24:26,798 --> 00:24:30,480
+allows us to do clip chemistry and what
+
+600
+00:24:28,679 --> 00:24:33,278
+this allows us to do is specifically put
+
+601
+00:24:30,480 --> 00:24:35,038
+on a tag but it lets us put on a tag
+
+602
+00:24:33,278 --> 00:24:37,038
+after we've done the experiment so that
+
+603
+00:24:35,038 --> 00:24:39,919
+the tag doesn't interfere with The
+
+604
+00:24:37,038 --> 00:24:43,200
+Binding of the probe to it of the LI to
+
+605
+00:24:39,919 --> 00:24:45,399
+its receptor and so we could show that
+
+606
+00:24:43,200 --> 00:24:47,038
+putting on this little uh chemical Group
+
+607
+00:24:45,398 --> 00:24:48,798
+which is actually about the one and a
+
+608
+00:24:47,038 --> 00:24:52,119
+half amino acids in size it's not very
+
+609
+00:24:48,798 --> 00:24:55,200
+big it didn't affect the activity of the
+
+610
+00:24:52,119 --> 00:24:56,798
+probes and so now we wanted to show the
+
+611
+00:24:55,200 --> 00:24:57,880
+bining so I'll walk you through these
+
+612
+00:24:56,798 --> 00:24:58,918
+experiments because they're a little
+
+613
+00:24:57,880 --> 00:25:02,080
+tricky
+
+614
+00:24:58,919 --> 00:25:05,919
+uh we first Express fs3 gfp in our
+
+615
+00:25:02,079 --> 00:25:08,240
+benthamiana leaves we then Harvest uh
+
+616
+00:25:05,919 --> 00:25:09,919
+microsomes and plasma membranes to have
+
+617
+00:25:08,240 --> 00:25:12,159
+an enrichment of our protein and to get
+
+618
+00:25:09,919 --> 00:25:15,919
+rid of a lot of the contaminating
+
+619
+00:25:12,159 --> 00:25:18,000
+cytosolic proteins as well as our um
+
+620
+00:25:15,919 --> 00:25:20,840
+chlorophyll because that would soak up
+
+621
+00:25:18,000 --> 00:25:23,519
+the UV radiation and prevent the
+
+622
+00:25:20,839 --> 00:25:26,599
+downstream analysis so we have our
+
+623
+00:25:23,519 --> 00:25:30,278
+microsomes that have our fs3
+
+624
+00:25:26,599 --> 00:25:32,839
+gfp we add our probe and any competitors
+
+625
+00:25:30,278 --> 00:25:34,839
+and so if our peptide binds to the
+
+626
+00:25:32,839 --> 00:25:37,480
+receptor again this photocross Linker is
+
+627
+00:25:34,839 --> 00:25:39,480
+now in close proximity so that we can
+
+628
+00:25:37,480 --> 00:25:41,880
+hit it with UV radiation and it now
+
+629
+00:25:39,480 --> 00:25:44,679
+photocross links so we now have a coent
+
+630
+00:25:41,880 --> 00:25:47,399
+linkage between our receptor and our
+
+631
+00:25:44,679 --> 00:25:49,360
+Legend since we have a gfp tag we can do
+
+632
+00:25:47,398 --> 00:25:52,158
+amuno precipitation to pull down this
+
+633
+00:25:49,359 --> 00:25:54,000
+complex between the receptor's leg ends
+
+634
+00:25:52,159 --> 00:25:55,880
+and now with this click chemistry handle
+
+635
+00:25:54,000 --> 00:25:58,759
+we can add on any tag we want but we
+
+636
+00:25:55,880 --> 00:26:00,720
+instead we're adding on biotin so we can
+
+637
+00:25:58,759 --> 00:26:02,319
+use a click chemistry reaction to add on
+
+638
+00:26:00,720 --> 00:26:04,960
+biotin
+
+639
+00:26:02,319 --> 00:26:07,000
+aide and then allows us to do
+
+640
+00:26:04,960 --> 00:26:10,480
+immunoblotting looking for either the
+
+641
+00:26:07,000 --> 00:26:10,480
+gfp or for the
+
+642
+00:26:11,398 --> 00:26:17,038
+bio so we first could show that the prob
+
+643
+00:26:14,558 --> 00:26:19,119
+chemistry was working so when we treat
+
+644
+00:26:17,038 --> 00:26:22,798
+uh with flag 228 in the presence of
+
+645
+00:26:19,119 --> 00:26:25,759
+eilis 3 we get a biotin label as you can
+
+646
+00:26:22,798 --> 00:26:29,000
+see through the stav and HP signal and
+
+647
+00:26:25,759 --> 00:26:31,278
+we have protein in both so the FL 22 is
+
+648
+00:26:29,000 --> 00:26:33,240
+not just aberly binding so it shows that
+
+649
+00:26:31,278 --> 00:26:35,839
+our Pro chemistry is specific and it's
+
+650
+00:26:33,240 --> 00:26:38,079
+not just cross linking
+
+651
+00:26:35,839 --> 00:26:40,918
+everything and we could also compete off
+
+652
+00:26:38,079 --> 00:26:43,319
+the signal so when we have uh our Pro
+
+653
+00:26:40,919 --> 00:26:45,960
+flag 228 in the presence of excess
+
+654
+00:26:43,319 --> 00:26:48,319
+unlabeled flag 228 we lose our signal
+
+655
+00:26:45,960 --> 00:26:50,798
+and we don't with the flag 22 so that
+
+656
+00:26:48,319 --> 00:26:52,918
+would suggest again that we had a very
+
+657
+00:26:50,798 --> 00:26:56,599
+specific receptor Lian interaction
+
+658
+00:26:52,919 --> 00:26:59,600
+between our flag 228 and our fs3 and
+
+659
+00:26:56,599 --> 00:27:01,918
+that we couldn't uh get rid of this B by
+
+660
+00:26:59,599 --> 00:27:03,398
+just adding any old peptide to the to
+
+661
+00:27:01,919 --> 00:27:05,440
+the
+
+662
+00:27:03,398 --> 00:27:07,599
+experiment and so just sort of in
+
+663
+00:27:05,440 --> 00:27:10,278
+summary what we have now is we have
+
+664
+00:27:07,599 --> 00:27:12,158
+identified LS3 which is the receptor for
+
+665
+00:27:10,278 --> 00:27:15,278
+flag
+
+666
+00:27:12,159 --> 00:27:18,320
+228 we've shown that it um the signaling
+
+667
+00:27:15,278 --> 00:27:20,519
+involves back one a co- receptor and
+
+668
+00:27:18,319 --> 00:27:23,398
+that activation of the signaling pathway
+
+669
+00:27:20,519 --> 00:27:25,240
+leads to the activation of mise Cades as
+
+670
+00:27:23,398 --> 00:27:26,918
+well as transcriptional reprogramming of
+
+671
+00:27:25,240 --> 00:27:30,200
+the
+
+672
+00:27:26,919 --> 00:27:31,720
+plant we showed that uh the signaling
+
+673
+00:27:30,200 --> 00:27:34,200
+involves the Ros
+
+674
+00:27:31,720 --> 00:27:37,278
+production and that the pseudomonas
+
+675
+00:27:34,200 --> 00:27:39,159
+affectors AVP and avp2 B can come in and
+
+676
+00:27:37,278 --> 00:27:41,720
+actually suppress the
+
+677
+00:27:39,159 --> 00:27:42,960
+signal and with that which was very fast
+
+678
+00:27:41,720 --> 00:27:45,558
+I'm going to go ahead and just again
+
+679
+00:27:42,960 --> 00:27:47,840
+acknowledge everyone in the group so um
+
+680
+00:27:45,558 --> 00:27:50,079
+again Pat did a lot of the Cross linking
+
+681
+00:27:47,839 --> 00:27:51,759
+experiments uh xong was really
+
+682
+00:27:50,079 --> 00:27:53,079
+instrumental in some of the genetics and
+
+683
+00:27:51,759 --> 00:27:55,720
+also the cloning of
+
+684
+00:27:53,079 --> 00:27:58,000
+theal Susie did all the bioinformatics
+
+685
+00:27:55,720 --> 00:28:00,200
+work which was totally essential for
+
+686
+00:27:58,000 --> 00:28:02,200
+this project as you saw uh Josh and
+
+687
+00:28:00,200 --> 00:28:04,200
+inish did the chemistry um we also
+
+688
+00:28:02,200 --> 00:28:06,278
+worked with Joyce and one of her TCH
+
+689
+00:28:04,200 --> 00:28:09,000
+Kate with um working with some cell
+
+690
+00:28:06,278 --> 00:28:11,720
+cultures and we also collaborated with
+
+691
+00:28:09,000 --> 00:28:13,558
+uh Boris benzer and his student Chris
+
+692
+00:28:11,720 --> 00:28:15,278
+Clark who were the ones who originally
+
+693
+00:28:13,558 --> 00:28:17,678
+were finding the flag
+
+694
+00:28:15,278 --> 00:28:19,069
+228 and with that I'd be very glad to
+
+695
+00:28:17,679 --> 00:28:22,220
+take your
+
+696
+00:28:19,069 --> 00:28:22,220
+[Applause]
+
+697
+00:28:23,079 --> 00:28:28,599
+questions this has been a production of
+
+698
+00:28:25,720 --> 00:28:31,600
+Cornell University on the web at
+
+699
+00:28:28,599 --> 00:28:31,599
+cornell.edu
+

@@ -1,0 +1,370 @@
+[SPEAKER_00]: This is a production of Cornell
+University.
+[SPEAKER_01]: And so I'm really interested in how we can
+aid breeding efforts across a wide range
+[SPEAKER_01]: of crop species in order to combat
+malnutrition and really aid the ability to
+[SPEAKER_01]: get a wider variety of food sources in our
+diets.
+[SPEAKER_01]: And so one way that we can think of how to
+aid these breeding efforts is by
+[SPEAKER_01]: transferring knowledge.
+[SPEAKER_01]: And so the question is, how can we
+transfer lessons learned from well-studied
+[SPEAKER_01]: species like maize and Arabidopsis and
+apply that knowledge to a wide number of
+[SPEAKER_01]: crops and orphan crops?
+[SPEAKER_01]: And so one of the mechanisms that we can
+use to facilitate this transfer of
+[SPEAKER_01]: knowledge is by thinking of mechanisms
+that are conserved across long
+[SPEAKER_01]: evolutionary time scales.
+[SPEAKER_01]: And so one of the mechanisms that's
+conserved across long evolutionary time
+[SPEAKER_01]: scales is transcription factor binding.
+[SPEAKER_01]: And what I'm showing here is a very
+simplistic tree.
+[SPEAKER_01]: But what I want you to take away from it
+is in the red is what I'm showing the
+[SPEAKER_01]: emergence of new transcription factor
+families.
+[SPEAKER_01]: And so there are a number of transcription
+factor families that predate the origin of
+[SPEAKER_01]: plants.
+[SPEAKER_01]: And also there are a number of plant
+specific transcription factor families
+[SPEAKER_01]: that predate angiosperms.
+[SPEAKER_01]: And so we expect a lot of their binding
+motifs to be conserved in many of these
+[SPEAKER_01]: plant species.
+[SPEAKER_01]: And so this is the problem that a former
+member of the lab, Catherine Mejiaquera,
+[SPEAKER_01]: explicitly tried to look at.
+[SPEAKER_01]: And so what she did was she trained some
+sequence models on to predict whether a TF
+[SPEAKER_01]: is bound to a specific DNA sequence.
+[SPEAKER_01]: And when she looks at the motifs that are
+learned by these models and clusters them,
+[SPEAKER_01]: they follow the expected phylogeny of the
+transcription factor families that she
+[SPEAKER_01]: sampled.
+[SPEAKER_01]: So this suggests that the models are
+really learning the biologically relevant
+[SPEAKER_01]: motifs.
+[SPEAKER_01]: And so what she did then was compare the
+learned motifs against the orthologs in
+[SPEAKER_01]: Arabidopsis and saw that about 60% of
+these binding motifs are conserved between
+[SPEAKER_01]: the two species.
+[SPEAKER_01]: And so what I wanted to do to follow up on
+this was take Catherine's model
+[SPEAKER_01]: architecture and train them in Arabidopsis
+specific TF.
+[SPEAKER_01]: And so I used, I predicted in Arabidopsis.
+[SPEAKER_01]: And so what I want you to focus on here is
+the area, the relative area under these
+[SPEAKER_01]: curves here.
+[SPEAKER_01]: And so the black line shows the within
+species model performance.
+[SPEAKER_01]: Then when I take that same model and
+attempt to predict an orthologous TF and
+[SPEAKER_01]: maze, I get a reduction in performance,
+but still above the baseline random
+[SPEAKER_01]: classifier shown in the gray dash line.
+[SPEAKER_01]: The next, when I take Arabidopsis and maze
+sequence and attempt to predict TF binding
+[SPEAKER_01]: in Arabidopsis or maze, I see that this
+across species model does almost as well
+[SPEAKER_01]: as the within species model, despite very
+different genomic context between these
+[SPEAKER_01]: two species.
+[SPEAKER_01]: Now, unfortunately, transcription factor
+binding, especially ChIP-seq is expensive
+[SPEAKER_01]: and complicated to assay.
+[SPEAKER_01]: And so I was wondering if there was an
+alternative way that we can really get at
+[SPEAKER_01]: this transcription factor binding motif
+question in a more easily accessible
+[SPEAKER_01]: manner.
+[SPEAKER_01]: And so we know that open chromatin regions
+in the genome are really where these
+[SPEAKER_01]: functional transcription factor binding
+motifs are concentrated.
+[SPEAKER_01]: And so here I'm just showing a very simple
+schematic of an open chromatin region
+[SPEAKER_01]: flanked by the closed chromatin wrapped
+around the histones and various
+[SPEAKER_01]: transcription factors bound in different
+orientations in the sequence.
+[SPEAKER_01]: And so the question becomes, can we
+transfer these open chromatin sequences
+[SPEAKER_01]: across angiosperms, but also are they even
+relevant for breeding purposes?
+[SPEAKER_01]: And that's one of the questions that this
+2016 study in maze attempted to address.
+[SPEAKER_01]: And so what they found is that open
+chromatin regions explain about 40% of the
+[SPEAKER_01]: phenotypic variants in a number of traits
+in two maze populations, suggesting that
+[SPEAKER_01]: really these open chromatin regions do
+help capture some of the non-genic
+[SPEAKER_01]: functional space.
+[SPEAKER_01]: And so the next question becomes,
+can we, well, so I've shown that maze and
+[SPEAKER_01]: Arabidopsis, you can transfer
+transcription factor binding between the
+[SPEAKER_01]: two.
+[SPEAKER_01]: Then can we also transfer chromatin
+accessibility?
+[SPEAKER_01]: And then the next question becomes,
+what kind of model would be used to do
+[SPEAKER_01]: that?
+[SPEAKER_01]: And so one of the models that I've already
+introduced in a previous seminar is
+[SPEAKER_01]: convolutional neural networks.
+[SPEAKER_01]: And so CNNs are really well suited for
+this kind of open chromatin prediction
+[SPEAKER_01]: because they're designed to learn the
+spatial dependencies and relationships
+[SPEAKER_01]: between motifs or patterns in a sequence.
+[SPEAKER_01]: And this is exactly like we expect the
+transcription factor binding motifs to be
+[SPEAKER_01]: arranged in the open chromatin like I
+showed in the left.
+[SPEAKER_01]: And so another important point here is
+that not only do these CNNs learn the
+[SPEAKER_01]: presence and absence relationship between
+TFs and chromatin accessibility,
+[SPEAKER_01]: but more importantly, the co-presence and
+the co-presence of maybe larger TF
+[SPEAKER_01]: modules.
+[SPEAKER_01]: Because since TF binding sites are so
+short and degenerate, they tend to occur
+[SPEAKER_01]: just by chance throughout the genome.
+[SPEAKER_01]: And it's really critical that we can
+precisely identify these open chromatin
+[SPEAKER_01]: regions by their context and not just
+single motifs.
+[SPEAKER_01]: And so how I trained this convolutional
+neural network was using an excellent LEAF
+[SPEAKER_01]: ATAC-seq data set from 13 angiosperms
+species that was published last year by
+[SPEAKER_01]: Bob Schmidt's group over at the University
+of Georgia.
+[SPEAKER_01]: And so what I did was I trained this CNN
+in 26 different configurations,
+[SPEAKER_01]: 13 of which were within species model,
+where I took one species, split the
+[SPEAKER_01]: genomic regions into training and test
+sets, and then evaluated the model in the
+[SPEAKER_01]: test set.
+[SPEAKER_01]: And then I also trained 13 across species
+models where I took one test species of
+[SPEAKER_01]: the angiosperms, trained in the genomic
+regions of the other 12, and tried to
+[SPEAKER_01]: predict chromatin accessibility in the
+13th species.
+[SPEAKER_01]: So just a very quick overview of how the
+data looks.
+[SPEAKER_01]: The ATAC-seq causes basically a read
+pileup in these open chromatin regions.
+[SPEAKER_01]: And you can run an algorithm that's known
+as a peak caller to binarize that output
+[SPEAKER_01]: and denoise the open chromatin.
+[SPEAKER_01]: region predictions.
+[SPEAKER_01]: And then what you can do is then randomly
+sample a group of closed chromatin regions
+[SPEAKER_01]: from the genome.
+[SPEAKER_01]: So very quickly, an example for a specific
+sequence or specific species, let's say a
+[SPEAKER_01]: rabidopsis, the within species model,
+very straightforward.
+[SPEAKER_01]: You just split the genomic regions and
+train in the training set and then test in
+[SPEAKER_01]: your test set.
+[SPEAKER_01]: And then the across species model,
+let's say we're testing in a rabidopsis,
+[SPEAKER_01]: we would then train in the other 12
+species and attempt to predict in a
+[SPEAKER_01]: rabidopsis like this.
+[SPEAKER_01]: And so here is what the example
+performance would look like for the
+[SPEAKER_01]: rabidopsis within species and across
+species model.
+[SPEAKER_01]: We see the performances on the x-axis from
+0 to 1.
+[SPEAKER_01]: And so when I do the results across all
+the angiosperm species I've sampled,
+[SPEAKER_01]: we see that despite there being a
+variability in performance across the
+[SPEAKER_01]: species, they're all doing much,
+much better than a random baseline
+[SPEAKER_01]: classifier shown in the gray dash or the
+black dash line.
+[SPEAKER_01]: And then when we show the across species
+model performance, pretty much in every
+[SPEAKER_01]: species, we see that the across species
+model performance is very equivalent to
+[SPEAKER_01]: the within species model performance.
+[SPEAKER_01]: And what this suggests is that without
+seeing any open chromatin data from a
+[SPEAKER_01]: given species, we're still able to utilize
+angiosperm open chromatin data to
+[SPEAKER_01]: accurately and precisely predict the open
+chromatin in that unobserved species.
+[SPEAKER_01]: And so to dive a little deeper into these
+results, I want to show you two precision
+[SPEAKER_01]: recall plots from my across species
+models.
+[SPEAKER_01]: So on the left, we see a rabidopsis dolly
+on as the test set.
+[SPEAKER_01]: And what I want you to take away from this
+is that essentially about 55% of my open
+[SPEAKER_01]: chromatin regions in a rabidopsis,
+the model is able to precisely predict
+[SPEAKER_01]: them before it starts to begin making
+mistakes.
+[SPEAKER_01]: And so also in asparagus, which the model
+does relatively worse on, we're still able
+[SPEAKER_01]: to predict about 20% of the open chromatin
+regions as open precisely before we start
+[SPEAKER_01]: to make mistakes.
+[SPEAKER_01]: And so what this suggests is that there
+seems to be a subset of open chromatin
+[SPEAKER_01]: regions that we're really precisely able
+to identify.
+[SPEAKER_01]: And these might be a good starting point
+while we're still trying to figure out how
+[SPEAKER_01]: to predict the other percentages.
+[SPEAKER_01]: And one other interesting phenomenon that
+we see in asparagus and a few other
+[SPEAKER_01]: species is this rapid drop-off in
+precision.
+[SPEAKER_01]: So essentially, what this says is there is
+a subset of closed chromatin regions in
+[SPEAKER_01]: the ATAC-seq that the model is highly
+confidently predicting as open,
+[SPEAKER_01]: which suggests to me there may be some
+maybe due to lower coverage in the
+[SPEAKER_01]: ATAC-seq some truly open regions that were
+marked as closed.
+[SPEAKER_01]: And so this really gets at the whole idea
+that your model can only be evaluated as
+[SPEAKER_01]: good as your test set is.
+[SPEAKER_01]: And so in summary, shown a bit that
+transcription factor binding can be
+[SPEAKER_01]: predicted across angiosperms, but is
+unfortunately expensive and complicated to
+[SPEAKER_01]: assay.
+[SPEAKER_01]: And so the open chromatin also contains
+transcription factor binding sites,
+[SPEAKER_01]: and therefore overlap our non-genic
+functional sites.
+[SPEAKER_01]: And so therefore, CNNs can predict,
+I show that CNNs can predict chromatin
+[SPEAKER_01]: accessibility across long evolutionary
+distances with high accuracy.
+[SPEAKER_01]: And a couple more things I want to follow
+up on is how well do these leaf-train
+[SPEAKER_01]: models do in other tissues, as well as are
+these predicted regions enriched in GWAS
+[SPEAKER_01]: hits and other signals of rigidity?
+[SPEAKER_01]: And so I'd like to finally acknowledge my
+committee, Ed Buckler, Amy Wheeler,
+[SPEAKER_01]: and Eric Richards for their guidance.
+[SPEAKER_01]: Catherine Mejia-Guera, who has been an
+unofficial fourth committee member and has
+[SPEAKER_01]: really been who I'm basing a lot of this
+work on off of, as well as the Buckler Lab
+[SPEAKER_01]: for their excellent discussions on this
+project, and of course, my funding
+[SPEAKER_01]: sources.
+[SPEAKER_01]: And I'd be happy to take any questions.
+[SPEAKER_01]: Thank you.
+[SPEAKER_00]: Thank you so much for that talk,
+Travis.
+[SPEAKER_00]: Lots of clap emojis.
+[SPEAKER_00]: If anybody has any questions, they can
+either add them.
+[SPEAKER_00]: Oh, I think Mike Gore has some questions,
+if you can see them in the chat.
+[SPEAKER_01]: Sure.
+[SPEAKER_01]: Let me see.
+[SPEAKER_01]: Is there a need to control for
+evolutionary relatedness when predicting
+[SPEAKER_01]: across species, or is that what is
+leveraged?
+[SPEAKER_01]: Yeah, that's a great question,
+Mike.
+[SPEAKER_01]: And we talked about this in the lab a bit.
+[SPEAKER_01]: And I'm really leaning towards the second
+part of that question.
+[SPEAKER_01]: There is evolutionary relationship between
+these open chromatin regions.
+[SPEAKER_01]: And it's really a tough call, because
+that's exactly what we're trying to expect
+[SPEAKER_01]: to leverage.
+[SPEAKER_01]: So the question becomes, how can we make
+sure these models are learning,
+[SPEAKER_01]: for example, transcription factor binding
+rather than non-informative but
+[SPEAKER_01]: evolutionary related sequence?
+[SPEAKER_01]: And then two, are the shared open
+chromatin regions overlapping with
+[SPEAKER_01]: conserved non-coding regions?
+[SPEAKER_01]: I haven't looked at this yet, but that's a
+question I definitely want to follow up
+[SPEAKER_01]: on.
+[SPEAKER_02]: Travis, just to follow on what Mike was
+asking, have you tried schemes where if
+[SPEAKER_02]: you're predicting a monocot, you just use
+the monocots, you don't bother with the
+[SPEAKER_02]: dicots?
+[SPEAKER_02]: Yeah.
+[SPEAKER_02]: And how does that impact performance?
+[SPEAKER_01]: Yeah, so that's an interesting question,
+because I did do that initially.
+[SPEAKER_01]: I haven't shown the results here.
+[SPEAKER_01]: And it does show essentially what you
+expect in that for most of the species,
+[SPEAKER_01]: performance decreases a bit slightly when
+you go from a monocot-based model to an
+[SPEAKER_01]: angiosperm-based model.
+[SPEAKER_01]: There's some very strange signal for some
+species.
+[SPEAKER_01]: Like we saw Poplar was very good with the
+dicot model.
+[SPEAKER_01]: But when you bring it out to the
+angiosperms, it does poorly.
+[SPEAKER_01]: So I'd say generally, performance lowers a
+little bit, but not very much.
+[SPEAKER_01]: We have another question.
+[SPEAKER_01]: How to explain the lower performance in
+maize compared to rice?
+[SPEAKER_01]: Yeah, I think I'll answer that question by
+just sort of explaining why I think
+[SPEAKER_01]: there's some variability between species.
+[SPEAKER_01]: And Ed sort of gets at that point a bit in
+that there is an uneven depth of data
+[SPEAKER_01]: between these species.
+[SPEAKER_01]: And so not only is the data quality a bit
+variable between species, and we can see
+[SPEAKER_01]: that by looking at the within species
+models are also performing poorly.
+[SPEAKER_01]: So a combination of uneven data quality
+across the species, maybe some assembly
+[SPEAKER_01]: issues, some possible tissue mismatching.
+[SPEAKER_01]: So there are a number of things that could
+go into that.
+[SPEAKER_00]: I think that wraps up our time.
+[SPEAKER_00]: But we can give a final round of applause
+to all of our speakers today.
+[SPEAKER_00]: Thank you all for attending.
+[SPEAKER_00]: Make sure to fill out that feedback form.
+[SPEAKER_00]: And tune back in Friday at 2 30 for four
+more great talks.
+[SPEAKER_00]: Thanks.
+[SPEAKER_00]: This has been a production of Cornell
+University on the web at Cornell.edu.
+[SPEAKER_00]: Thank you.
+Thank you.

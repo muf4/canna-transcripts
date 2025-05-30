@@ -1,0 +1,1315 @@
+[SPEAKER_00]: This is a production of Cornell
+University.
+[SPEAKER_00]: Good afternoon, everyone.
+[SPEAKER_00]: Thank you so much, Katie, for the
+introduction.
+[SPEAKER_00]: And I would like to thank the chairs for
+the invitation.
+[SPEAKER_00]: Unfortunately, I couldn't do the seminar
+in person, but I'm excited to be sharing
+[SPEAKER_00]: with you today our ongoing research on the
+secure ecosystem engineering and design to
+[SPEAKER_00]: mitigate the impacts of non-native fungal
+pathogens on managed ecosystems.
+[SPEAKER_00]: So as Katie already presented,
+I'm an early-career staff scientist at Oak
+[SPEAKER_00]: Ridge National Lab.
+[SPEAKER_00]: For those of you who don't know,
+I put the map.
+[SPEAKER_00]: The lab is located in East Tennessee,
+and I put as reference Atlanta,
+[SPEAKER_00]: which is two and a half hours drive from
+Oak Ridge.
+[SPEAKER_00]: And here's a picture of our CNI campus
+where cutting-edge research meets natural
+[SPEAKER_00]: beauty.
+[SPEAKER_00]: I want to just give two fun facts about
+ORNL.
+[SPEAKER_00]: So the lab has played an important role in
+the discovery of Tennessean, adding a
+[SPEAKER_00]: unique element to the periodic table.
+[SPEAKER_00]: Also, it's the proud home of Frontier,
+which is the world's fast supercomputer.
+[SPEAKER_00]: So at ORNL, we focus on delivering
+scientific discoveries to ensure the
+[SPEAKER_00]: United States' security and prosperity by
+addressing different challenges ranging
+[SPEAKER_00]: from energy, environmental, and security
+challenges.
+[SPEAKER_00]: Another fun fact, many are surprised to
+learn that at ORNL, we actually conduct
+[SPEAKER_00]: fungal research because when they think of
+national labs, ORNL, or other national
+[SPEAKER_00]: labs, they think they just do nuclear
+science, nuclear engineering, or material
+[SPEAKER_00]: science.
+[SPEAKER_00]: But the fact that we actually have a
+bioscience division is surprising for a
+[SPEAKER_00]: lot of people.
+[SPEAKER_00]: Actually, my colleague, Dr. Tom Osteros,
+who I actually met at UWA, William
+[SPEAKER_00]: Madison, he was also in the plant
+pathology department with Katie,
+[SPEAKER_00]: and I, we both co-run the fungal lab and
+the fungal program at ORNL.
+[SPEAKER_00]: Tom Osteros' research mainly focusing on
+fungal interactions and biotechnology,
+[SPEAKER_00]: whereas my research as a fungal geneticist
+and biologist focused on developing
+[SPEAKER_00]: advanced genetic engineering tools to
+unlock the potential of fungi for
+[SPEAKER_00]: sustainable applications.
+[SPEAKER_00]: And here are pictures from our busy lab
+this past summer.
+[SPEAKER_00]: The research I will be discussing in my
+seminar today is part of the Secure
+[SPEAKER_00]: Ecosystem Engineering and Design,
+short for SEED, science-focused area.
+[SPEAKER_00]: So in this SFA, we drive innovative
+science and technology to be able to
+[SPEAKER_00]: understand and manipulate how
+microorganisms, can either be bacteria or
+[SPEAKER_00]: fungi, which is our focus, are able to
+establish a spread and how they are
+[SPEAKER_00]: impacting ecosystems that are critical or
+of high importance for the U.S.
+[SPEAKER_00]: Department of Energy.
+[SPEAKER_00]: So here's the outline of my talk today.
+[SPEAKER_00]: So first, I will start by giving a brief
+overview about the pathos system that we
+[SPEAKER_00]: focus on within our SEED SFA, trying to
+further understand it.
+[SPEAKER_00]: I will highlight the critical knowledge of
+gaps, mainly when it comes to
+[SPEAKER_00]: understanding the molecular mechanisms
+responsible for the pathogenicity of our
+[SPEAKER_00]: pathogen and how we are, in my second
+part, I will talk about how we are driving
+[SPEAKER_00]: innovative genetic research to be able to
+elucidate the mechanisms driving the
+[SPEAKER_00]: virulence, but as well as developing
+genetic strategies to better control the
+[SPEAKER_00]: spread of fungal pathogens.
+[SPEAKER_00]: So first, why popular?
+[SPEAKER_00]: So poplars are vital crocs for the
+Department of Energy.
+[SPEAKER_00]: And because first they are like fasted
+growing tree species, but also because
+[SPEAKER_00]: they serve as a foundational feedstock for
+producing biofuel, bioenergy and other
+[SPEAKER_00]: bio-based chemicals.
+[SPEAKER_00]: At ORNL, we focus primarily at poplar,
+just because it has a fully sequenced
+[SPEAKER_00]: genome.
+[SPEAKER_00]: Actually, it was one of the first three
+genomes to be published and it was,
+[SPEAKER_00]: this work has been done by a scientist at
+ORNL and it made it to the cover of
+[SPEAKER_00]: Science on September 15, 2006.
+[SPEAKER_00]: But we also valued working with poplar due
+to its genetic tractability, so it has a
+[SPEAKER_00]: transformation system and strong
+hybridization potential, which made it a
+[SPEAKER_00]: prime model to be able to advance research
+efforts.
+[SPEAKER_00]: However, this crop is limited to be used
+in industrial application, mainly due to
+[SPEAKER_00]: the fungal diseases that are caused
+primarily by the pathogen spherulina
+[SPEAKER_00]: missiva, or known for the longest time as
+septoria missiva, which is an ascomycid
+[SPEAKER_00]: fungal pathogen.
+[SPEAKER_00]: So this pathogen was first described in
+1884 on poplars deltoides in New York
+[SPEAKER_00]: states, but it has later been spread
+unintentionally by human activities as it
+[SPEAKER_00]: will, and it was recently introduced and
+established into the Pacific Northwest of
+[SPEAKER_00]: North America, and now it's everywhere.
+[SPEAKER_00]: So in this figure on the right show,
+I showed the propagation of this pathogen
+[SPEAKER_00]: that spread across North America,
+and we saw that there was like distinct
+[SPEAKER_00]: population.
+[SPEAKER_00]: So we have the Southeastern U.S.
+[SPEAKER_00]: population, we have the U.S.-Canadian
+subpopulation, and we also have a
+[SPEAKER_00]: genetically distinct British Columbia
+population.
+[SPEAKER_00]: So I'm bringing this population right now
+because they will come up later in my
+[SPEAKER_00]: talk, which we're going to talk about them
+more in depth.
+[SPEAKER_00]: But just note that we actually have 122
+isolates of each of these population that
+[SPEAKER_00]: were collected, and we have the genome
+sequence for them, and that has really
+[SPEAKER_00]: been very helpful to advance our research
+efforts.
+[SPEAKER_00]: So this pathogen is responsible for the
+septoria leaf spots and stem canker
+[SPEAKER_00]: diseases on susceptible poplice genotypes.
+[SPEAKER_00]: So while the leaf spots are mainly just
+reducing the static values of poplar,
+[SPEAKER_00]: the cankers are the ones that have the
+greatest industrial impacts due to the
+[SPEAKER_00]: fact that a single infection can kill a
+whole tree and snap it in half,
+[SPEAKER_00]: and that would reduce the yields and the
+use of poplar for industrial applications.
+[SPEAKER_00]: Here I'm actually also showing additional
+pictures that were taken by Tomas in our
+[SPEAKER_00]: local Blount County poplice field where
+most of our field experiments take place.
+[SPEAKER_00]: So on the left, I'm showing how a diseased
+poplar look like, and healthy,
+[SPEAKER_00]: so I put it in quotes, healthy,
+because although it's a resistant
+[SPEAKER_00]: genotype, it can still be infected by
+spherulina, and we've seen that several
+[SPEAKER_00]: times where the pathogen is actually
+endophytically living inside the plant,
+[SPEAKER_00]: but it does not cause diseases because the
+genotype is actually resistant to the
+[SPEAKER_00]: symptoms and the disease development.
+[SPEAKER_00]: Here's also other pictures showing canker
+disease propagation, and how the cankers
+[SPEAKER_00]: look like when it's a late stage canker.
+[SPEAKER_00]: Just want to note that those cankers,
+although we were able to isolate
+[SPEAKER_00]: spherulina from it, we cannot necessarily
+say that they're adjusted due to
+[SPEAKER_00]: spherulina because we were able to isolate
+other pathogens that cause cankers as
+[SPEAKER_00]: well.
+[SPEAKER_00]: But just wanted to show you how a canker
+disease propagation look like.
+[SPEAKER_00]: I believe a lot of you are already
+familiar with fungal pathogen
+[SPEAKER_00]: classification.
+[SPEAKER_00]: So as we know, their pathogenicity have a
+spectrum ranging from biotrophy to
+[SPEAKER_00]: necrotrophy.
+[SPEAKER_00]: So biotrophs are closely associated with
+living host cells.
+[SPEAKER_00]: They extract the nutrients and grow and
+reproduce without killing the host.
+[SPEAKER_00]: But that doesn't mean that they are not
+able to cause damage, which the great
+[SPEAKER_00]: example is rust fungi that cause
+significant damage on crops.
+[SPEAKER_00]: We have also the necrotroph that would
+rely on that host tissue to extract
+[SPEAKER_00]: nutrients, and they release enzymes and
+toxins that will actually break down the
+[SPEAKER_00]: cell wall and would kill the host cells.
+[SPEAKER_00]: The greatest example is betritis.
+[SPEAKER_00]: We also have a third class, which is where
+our spherulina pathogen falls in,
+[SPEAKER_00]: which is the hemibiotroph pathogens,
+where they begin their life cycle as
+[SPEAKER_00]: biotroph.
+[SPEAKER_00]: But then later they would transition into
+a necrotrophic phase where they will
+[SPEAKER_00]: actually kill the tissue and extract
+nutrients and reproduce.
+[SPEAKER_00]: So here's a brief overview about the life
+cycle of spherulina misceva.
+[SPEAKER_00]: So the infections actually starts in
+spring, where the pathogen release
+[SPEAKER_00]: ascospores, where they will enter the
+popular leaves through the stomata,
+[SPEAKER_00]: and they will develop lesions three to
+four weeks after bud burst.
+[SPEAKER_00]: Then during summer, there will be
+secondary infections where the spores will
+[SPEAKER_00]: spread to other parts of the plants.
+[SPEAKER_00]: They will enter the stems, the branches,
+and other leaves, and creating secondary
+[SPEAKER_00]: infections.
+[SPEAKER_00]: Then during fall, the leaves that are
+infected with the pathogen will fall off
+[SPEAKER_00]: the ground, and then the sexual stage will
+begin with the formation of the sexual
+[SPEAKER_00]: fruiting bodies, pseudotica, and then the
+cycle will start all over again in spring.
+[SPEAKER_00]: In terms of disease management,
+to mitigate spherulina misceva's
+[SPEAKER_00]: infection, there has been use of
+phagesides, but just as a preventive
+[SPEAKER_00]: approach, because once the pathogens
+actually established, there was no
+[SPEAKER_00]: chemical treatments that were shown to be
+effective.
+[SPEAKER_00]: But as I mentioned earlier in my
+presentation, poplar has actually a strong
+[SPEAKER_00]: hybridization potential, which actually
+made a substantial amount of research
+[SPEAKER_00]: focused on the host site, either by
+identifying and planting resistant
+[SPEAKER_00]: genotype, or through breeding program
+efforts aimed at developing new genotype
+[SPEAKER_00]: that can be resistant to the pathogen.
+[SPEAKER_00]: Other management approaches aimed at
+preventing the spread of this pathogen has
+[SPEAKER_00]: focused on biological control.
+[SPEAKER_00]: So as I'm showing here in this first study
+in 2003, they were able to show that when
+[SPEAKER_00]: they spray streptomyces strains in the
+field, they were able to suppress leaf
+[SPEAKER_00]: spot diseases.
+[SPEAKER_00]: A more recent study in 2021, researchers
+were able to identify other Bacillus
+[SPEAKER_00]: villicensis strains that were also shown
+to have antagonistic activity against
+[SPEAKER_00]: spherulina.
+[SPEAKER_00]: But the problem of those biocontrol
+strategies is the limited longevity of the
+[SPEAKER_00]: bacterial strains when they're used in
+plantation.
+[SPEAKER_00]: The pathogen in this pathosystem has been
+overlooked for the longest time in terms
+[SPEAKER_00]: of disease management.
+[SPEAKER_00]: And this is mainly due to the insufficient
+understanding of the molecular mechanisms
+[SPEAKER_00]: that drive SMC bus pathogenicity.
+[SPEAKER_00]: But also this intertwines with the absence
+of genetic manipulation tools.
+[SPEAKER_00]: Where there's a lot of genetic tools,
+as I mentioned on poplar, for the longest
+[SPEAKER_00]: time, we did not have any genetic tools to
+be able to manipulate this pathogen.
+[SPEAKER_00]: So that made it like our primarily
+objective within the CSFA is to develop a
+[SPEAKER_00]: CRISPR genetic tools for this pathogen
+that aims not only at advancing the basic
+[SPEAKER_00]: research, elucidating gene functions
+implicated in pathogenicity, but also at
+[SPEAKER_00]: advancing applied research towards the
+development of CRISPR enabled technology
+[SPEAKER_00]: to be able to control the disease and
+ensure sustainable population management.
+[SPEAKER_00]: So for the second part of my talk,
+I will discuss the progress that we've
+[SPEAKER_00]: made so far into developing synthetic
+biology and genetic strategies for
+[SPEAKER_00]: combating SMC by and mitigate its impact
+on poplar's plantations.
+[SPEAKER_00]: And I will divide this part into three
+subparts.
+[SPEAKER_00]: So first I will talk about how we were
+able to develop CRISPR-Cas tool to
+[SPEAKER_00]: genetically manipulate this pathogen.
+[SPEAKER_00]: And then later how we leverage these tools
+to uncover genetic determinants of
+[SPEAKER_00]: pathogenicity and other genes that has
+ecological functions.
+[SPEAKER_00]: And how we are taking this another step
+further to develop CRISPR-enabled gene
+[SPEAKER_00]: drives for population control.
+[SPEAKER_00]: But first, for those of you who are not
+familiar with CRISPR, CRISPR stands for
+[SPEAKER_00]: Clustered Regulatory Interspaced Short
+Palindromic Repeats.
+[SPEAKER_00]: It's a natural defense mechanism that was
+found in bacteria and that helped them in
+[SPEAKER_00]: protect against viruses.
+[SPEAKER_00]: But later this natural occurring mechanism
+has been adapted for synthetic genome
+[SPEAKER_00]: editing in a groundbreaking way and in a
+lot of organisms.
+[SPEAKER_00]: So CRISPR is often referred to as the gene
+scissor.
+[SPEAKER_00]: Why?
+[SPEAKER_00]: Because it caused a double strand DNA
+break in a specific sequence in the
+[SPEAKER_00]: genome.
+[SPEAKER_00]: So this tool actually is composed of the
+Cas9 protein, which will unwind and cleave
+[SPEAKER_00]: the DNA double strand break.
+[SPEAKER_00]: And the second component of the CRISPR is
+the guide RNA.
+[SPEAKER_00]: So it's the RNA component.
+[SPEAKER_00]: That is composed of the tracer RNA and the
+CRISPR RNA.
+[SPEAKER_00]: So the tracer RNA, it will bind to the
+Cas9 protein, whereas the CRISPR RNA will
+[SPEAKER_00]: hybridize to a specific region in the DNA.
+[SPEAKER_00]: So to any gene of interest that we want to
+knock it out or delete it.
+[SPEAKER_00]: So the CRISPR RNA is the part that we
+actually designed based on our gene of
+[SPEAKER_00]: interest.
+[SPEAKER_00]: So the tracer RNA and the CRISPR RNA will
+fuse together to form what we call the
+[SPEAKER_00]: guide RNA.
+[SPEAKER_00]: And the guide RNA will form a complex with
+the Cas9.
+[SPEAKER_00]: Then this guide RNA and Cas9 complex will
+go and will search for the sequence of
+[SPEAKER_00]: interest that we want to knock out.
+[SPEAKER_00]: And the nuclease domains of the Cas9 would
+be activated after the guide RNA
+[SPEAKER_00]: hybridized to the specific region.
+[SPEAKER_00]: And it will generate a DNA cut or a DNA
+double strand break.
+[SPEAKER_00]: Then this double strand break that was
+created by the guide RNA Cas9 complex will
+[SPEAKER_00]: be repaired in an error-prone way,
+generating multiple mutations or what we
+[SPEAKER_00]: call indels, referring to insertions or
+deletions, because they are randomly
+[SPEAKER_00]: repaired.
+[SPEAKER_00]: And most likely, those mutations will
+result in the gene being knocked out
+[SPEAKER_00]: because its open reading frame has been
+cut in the middle and repaired in an
+[SPEAKER_00]: error-prone way, containing a lot of
+mutations.
+[SPEAKER_00]: So just to give you a brief overview about
+the advance, sorry, the advancement of
+[SPEAKER_00]: CRISPR-Cas systems in fungal research.
+[SPEAKER_00]: So this tool has revolutionized actually
+fungal genetic engineering in both yeast
+[SPEAKER_00]: and filamentous species, enabling precise
+and efficient genetic modifications.
+[SPEAKER_00]: And it has been used for various
+applications that range from genome
+[SPEAKER_00]: engineering primarily in yeast species to
+create yeast libraries or to construct
+[SPEAKER_00]: synthetic yeast chromosomes, as well as
+for metabolic engineering, transcriptional
+[SPEAKER_00]: regulation.
+[SPEAKER_00]: And we also recently saw that CRISPR has
+opened up new avenues for actually
+[SPEAKER_00]: detecting and controlling fungal
+infections.
+[SPEAKER_00]: In plant pathology specifically,
+the applications of CRISPR-Cas tools are
+[SPEAKER_00]: also rapidly expanding.
+[SPEAKER_00]: So these tools have helped improving plant
+disease resistance by targeting both the
+[SPEAKER_00]: crops and the fungal pathogens,
+have helped deepening our understanding of
+[SPEAKER_00]: plant-pathogen interactions, and has also
+enabled the development of innovative
+[SPEAKER_00]: diagnostic tools for early pathogen
+detections.
+[SPEAKER_00]: So as a first step in our efforts,
+I worked on developing a CRISPR-Cas9
+[SPEAKER_00]: transformation system in our non-modal
+fungal pathogen, Asmiseva.
+[SPEAKER_00]: So here I'm showing how the Asmiseva
+spores look like, and then how after
+[SPEAKER_00]: digesting them with a mix of different
+digestion enzymes, how we are able to
+[SPEAKER_00]: generate those bubble-looking structures
+that are called protoplasts.
+[SPEAKER_00]: So those are cells without the cell wall.
+[SPEAKER_00]: And then we use those protoplasts for the
+delivery of the Cas9 guide RNA complex to
+[SPEAKER_00]: be able to generate the double-strand DNA
+break that I already talked about it.
+[SPEAKER_00]: So as a proof of principle for the success
+of this tool in Asmiseva, I targeted an
+[SPEAKER_00]: oxytrophic gene called PRG, because it
+allowed an easy screening on FOA plates
+[SPEAKER_00]: when this gene is actually knocked out.
+[SPEAKER_00]: And then randomly, I selected the 20
+transformants from this transformation.
+[SPEAKER_00]: And I did a sequencing of the region where
+the guide RNA is supposed to cut.
+[SPEAKER_00]: And I aligned those sequences from the
+different transformants to the wild type,
+[SPEAKER_00]: and I was able to see multiple insertions
+and deletions that actually resulted in
+[SPEAKER_00]: the mutation of this gene, validating the
+success of this transformation and the
+[SPEAKER_00]: success of this tool in Asmiseva.
+[SPEAKER_00]: So now that we have developed the
+CRISPR-Cas9 tool in Asmiseva, I wanted to
+[SPEAKER_00]: leverage it to identify genetic
+determinants of pathogenicity.
+[SPEAKER_00]: And in fungal plant pathogens,
+pathogenicity determinants can be either
+[SPEAKER_00]: carbohydrate-active enzymes that are
+involved in the degradation of plant cell
+[SPEAKER_00]: wall, which are a key part of the
+pathogenicity of many fungal pathogens.
+[SPEAKER_00]: We also have effector genes, which are
+secreted molecules that directly
+[SPEAKER_00]: manipulate the host cell function and
+allowing the fungus to successfully infect
+[SPEAKER_00]: the host and suppressing its immune
+responses.
+[SPEAKER_00]: And lastly, we have secondary metabolites
+that are specialized molecules.
+[SPEAKER_00]: So secondary metabolites unlike primary
+metabolites that are not essential for the
+[SPEAKER_00]: growth and development, that they provide
+advantage for survival for the pathogen,
+[SPEAKER_00]: and they can act as virulence factors.
+[SPEAKER_00]: And the production of those metabolites
+are usually regulated, as shown on the
+[SPEAKER_00]: bottom right, by a cluster of genes.
+[SPEAKER_00]: So these genes are clustered together and
+they have different function.
+[SPEAKER_00]: Some of them can encode for accessory
+enzymes and coordinate the synthesis and
+[SPEAKER_00]: modification.
+[SPEAKER_00]: Others encodes for transporters that are
+responsible for the transport and the
+[SPEAKER_00]: actual secretion of those metabolites.
+[SPEAKER_00]: And we have also transcription factors
+that regulate the expression of those gene
+[SPEAKER_00]: in the cluster.
+[SPEAKER_00]: In our study, we focus on those two
+classes, identifying effectors and
+[SPEAKER_00]: secondary metabolites that can be
+regulating the pathogenicity of spherulina
+[SPEAKER_00]: missiva.
+[SPEAKER_00]: So to identify effector genes,
+we collaborated with Dr. Jared Leboldis at
+[SPEAKER_00]: Oregon State University to conduct a
+transcriptomic analysis on S.
+[SPEAKER_00]: missiva during stem canker formation.
+[SPEAKER_00]: So we collected RNA at two and three weeks
+post inoculations with the pathogen.
+[SPEAKER_00]: And this analysis have enabled us to
+reveal 70 genes that were differentially
+[SPEAKER_00]: expressed at two weeks and 110 genes that
+were differentially expressed at three
+[SPEAKER_00]: weeks between the stem cankers,
+like the RNA extracted from stem cankers,
+[SPEAKER_00]: and the control, which is fungus growing
+on a media.
+[SPEAKER_00]: And among those genes that were
+differentially expressed, the gene that
+[SPEAKER_00]: had the highest expression at two weeks
+and the second highest at three weeks
+[SPEAKER_00]: encode for extracellular protein to or
+short for ECP2, which is predicted to be
+[SPEAKER_00]: an effector protein.
+[SPEAKER_00]: It was characterized in other fungal
+pathogens and shown to be responsible for
+[SPEAKER_00]: pathogenicity.
+[SPEAKER_00]: It was found, as I mentioned, to be highly
+expressed during infection.
+[SPEAKER_00]: And when we did an infiltration of this
+protein on poplar leaves, we showed that
+[SPEAKER_00]: it invokes hypersensitive response in some
+of the susceptible genotypes.
+[SPEAKER_00]: So using our CRISPR tool that we were able
+to develop, but this time, instead of
+[SPEAKER_00]: having a random repair, we inserted,
+along with the CRISPR Cas9 complex,
+[SPEAKER_00]: a donor DNA that has a 1KB homology arm
+that correspond to the cut site of the
+[SPEAKER_00]: guide RNA in the ECP2 sequence and contain
+a selectable marker, HPH, that encodes for
+[SPEAKER_00]: hygromycin, which will allow us later on
+to select those mutants on hygromycin
+[SPEAKER_00]: enriched media.
+[SPEAKER_00]: So this is the structure of the guide RNA
+that was designed to cut in the ECP2
+[SPEAKER_00]: sequence.
+[SPEAKER_00]: And after doing the transformation,
+we collected randomly 20 mutants.
+[SPEAKER_00]: We did the PCR confirmation.
+[SPEAKER_00]: And we selected, of those positive PCR
+mutants, three independent mutants that we
+[SPEAKER_00]: performed whole genome sequencing to make
+sure that we don't have any Cas9 off
+[SPEAKER_00]: targets, which is something that could
+happen where the Cas9 would generate cuts
+[SPEAKER_00]: in other parts of the genome and would
+also have mutations not only necessarily
+[SPEAKER_00]: at the targeted loci, but also in other
+parts of the genome.
+[SPEAKER_00]: So we confirmed that in the three mutants
+that are independently selected,
+[SPEAKER_00]: we did not have any Cas9 off targets,
+and we have a cut in the ECP2 sequence and
+[SPEAKER_00]: a repair integrating the hygromycin
+selectable marker in those mutants.
+[SPEAKER_00]: Later, we used those mutants and we
+performed pathogenicity experiments by
+[SPEAKER_00]: spraying the different popular genotypes
+that represent a broad spectrum of
+[SPEAKER_00]: susceptibility.
+[SPEAKER_00]: So some of them are known to be
+susceptible to SMCVA where others were
+[SPEAKER_00]: resistant.
+[SPEAKER_00]: And as we can see here, by looking at the
+cankerous developments per centimeters,
+[SPEAKER_00]: we were able to see that the knockout of
+ECP2 resulted in a significant decrease of
+[SPEAKER_00]: cankers per centimeters in certain
+genotypes.
+[SPEAKER_00]: But interestingly, those genotypes were
+the same in genotypes that when we did
+[SPEAKER_00]: infiltrations, were also showing hyper
+response.
+[SPEAKER_00]: So also when we looked at the leaf disease
+severity, we were able to see a
+[SPEAKER_00]: significant reduction of leaf disease
+severity when the plants were inoculated
+[SPEAKER_00]: with the Delta ECP2 compared to the wild
+bock strains.
+[SPEAKER_00]: So using this CRISPR Cas9 tool,
+we were able to validate the function of
+[SPEAKER_00]: the necrotrophic effector ECP2 that is
+involved in necrotic cankerous formation
+[SPEAKER_00]: on popular systems.
+[SPEAKER_00]: And this effector can actually serve as
+our first target for the development of
+[SPEAKER_00]: the gene drive.
+[SPEAKER_00]: But besides the factors, secondary
+metabolites were also our gene targets of
+[SPEAKER_00]: interest and they also play a key roles in
+pathogenicity.
+[SPEAKER_00]: So to be able to identify secondary
+metabolites that are potentially involved
+[SPEAKER_00]: in SMCVA pathogenicity, we used
+anti-SMATCH, which is an online tool that
+[SPEAKER_00]: is able to predict biosynthetic gene
+clusters in fungi.
+[SPEAKER_00]: So when we wrapped this tool on the
+genomes of all 122 isolates of SMCVA that
+[SPEAKER_00]: we have from our collection, we were able
+to identify, and that I'm highlighting in
+[SPEAKER_00]: red here, a few biosynthetic gene clusters
+that were either truncated or absent in
+[SPEAKER_00]: the British Columbia subpopulation that I
+talked about earlier that is genetically
+[SPEAKER_00]: different than the others population.
+[SPEAKER_00]: And interestingly, when those clusters,
+clan 3030 and clan 3571, were absent in
+[SPEAKER_00]: the subpopulation of British Columbia,
+we also saw that these subpopulation have
+[SPEAKER_00]: also a reduction of cankerous formation,
+which made us think that those clusters
+[SPEAKER_00]: might be the good targets and might be
+implicated in pathogenicity.
+[SPEAKER_00]: So I had two of my graduate students,
+Joshua Sparks and Cole Sawyer,
+[SPEAKER_00]: who actually graduated last week,
+working on characterizing those two
+[SPEAKER_00]: clusters and doing the knockouts of their
+background genes to validate their
+[SPEAKER_00]: implications and pathogenicity.
+[SPEAKER_00]: So the work on the clan 3571 is still in
+its earlier stages, and it's known to
+[SPEAKER_00]: encode for an unknown metabolite.
+[SPEAKER_00]: So it's a little bit more challenging than
+the work on clan 3030, which I'm going to
+[SPEAKER_00]: be focusing on today, because this clan is
+predicted to encode for a metabolite that
+[SPEAKER_00]: is known and identified in other fungi,
+but not in SMCVA.
+[SPEAKER_00]: So Cole has worked on characterizing this
+cluster that is predicted to be formed
+[SPEAKER_00]: with 11 putative biosynthetic genes.
+[SPEAKER_00]: And of those genes, as I talked earlier,
+there's a specific transcription factor,
+[SPEAKER_00]: which is a gene highlighted in pink APNH.
+[SPEAKER_00]: So what is the role of this specific
+transcription factor?
+[SPEAKER_00]: When a cluster of genes contain a specific
+transcription factor, it works as a
+[SPEAKER_00]: switch.
+[SPEAKER_00]: So when this gene is expressed,
+the rest of the genes would be expressed.
+[SPEAKER_00]: And when it's knocked out or not
+expressed, the rest of the genes would be
+[SPEAKER_00]: turned off, and therefore we won't have a
+production of this metabolite.
+[SPEAKER_00]: So using the CRISPR tool, Cole was able,
+and this is the guide RNA sequence that he
+[SPEAKER_00]: designed, he was able to knock out this
+specific transcription factor.
+[SPEAKER_00]: And later he conducted a transcriptomic
+analysis to confirm that the rest of the
+[SPEAKER_00]: genes are also turned off.
+[SPEAKER_00]: When this specific transcription factor is
+deleted.
+[SPEAKER_00]: And yes, we actually confirmed that all
+the genes in the cluster were
+[SPEAKER_00]: significantly downregulated in those
+mutants.
+[SPEAKER_00]: We also conducted metabolomic analysis to
+confirm that this cluster actually
+[SPEAKER_00]: belonged and encodes for apenine by
+running it through a standard that is the
+[SPEAKER_00]: apenine commercialized standard.
+[SPEAKER_00]: And as we can see here, the wild type is
+able to produce apenine, whereas the three
+[SPEAKER_00]: independent mutants that Cole has selected
+did not produce apenine on both tested
+[SPEAKER_00]: media, PDA and GMM.
+[SPEAKER_00]: Confirming that this cluster is encoding
+for apenine and all the genes are
+[SPEAKER_00]: downregulated when the specific
+transcription factors is knocked out.
+[SPEAKER_00]: We also later conducted pathogenicity
+experiments.
+[SPEAKER_00]: So similar to what we've done in the ECP2
+mutants, we conducted those pathogenicity
+[SPEAKER_00]: experiments by spraying different popular
+genotypes with this pore collected from
+[SPEAKER_00]: the wild type and the mutants.
+[SPEAKER_00]: And to our surprise, we were expected to
+see a significant downregulation of the
+[SPEAKER_00]: disease severity as well as the cankers
+per centimeters.
+[SPEAKER_00]: But to our surprise, we did not see any
+differences between the wild type and the
+[SPEAKER_00]: mutants inoculated plants, which actually
+kind of contradict our original hypothesis
+[SPEAKER_00]: that this compound could be implicated in
+pathogenicity.
+[SPEAKER_00]: But since apenine is already characterized
+as an antifungal compound, we wanted to
+[SPEAKER_00]: look at, since this metabolite is not
+implicated in pathogenicity, what is
+[SPEAKER_00]: actually the ecological function of this
+compound?
+[SPEAKER_00]: Is it really regulating the microbiome?
+[SPEAKER_00]: So to test this hypothesis, Cole has
+selected different fungi that are
+[SPEAKER_00]: associated with Poplar.
+[SPEAKER_00]: Here I'm showing just results from two
+fungi that were selected and were isolated
+[SPEAKER_00]: from Poplar.
+[SPEAKER_00]: We have lecaria bicolor and trichoderma
+gamci, which are beneficial fungi.
+[SPEAKER_00]: And as we can see, when the fungus is
+growing alone, we were able to measure the
+[SPEAKER_00]: growth.
+[SPEAKER_00]: And we also did pairwise interactions or
+co-cultures where Cole grew his mutants
+[SPEAKER_00]: and his wild type, along with the wild
+type of trichoderma gamci and lecaria
+[SPEAKER_00]: bicolor.
+[SPEAKER_00]: And as we can see, when the apenine is not
+produced by the mutants, we did not see
+[SPEAKER_00]: any reduction of the growth.
+[SPEAKER_00]: Whereas when we grow it with the wild type
+and apenine is actually produced,
+[SPEAKER_00]: we saw a significant reduction of the
+growth of both fungi.
+[SPEAKER_00]: In trichoderma and lecaria bicolor,
+we saw a significant decrease of the
+[SPEAKER_00]: growth.
+[SPEAKER_00]: And then here after that, we confirmed
+that apenine is not a valence factor.
+[SPEAKER_00]: We were able to use this CRISPR tool and
+characterize an ancient biosynthetic gene
+[SPEAKER_00]: cluster that was found to be providing a
+competitive ecological advantage to our
+[SPEAKER_00]: pathogen over other Poplar-associated
+fungi.
+[SPEAKER_00]: So we also, besides looking at anti-smash,
+predicting what is absent, what is
+[SPEAKER_00]: present, and some of those 122 isolates of
+asmasiva, we used also another approach to
+[SPEAKER_00]: identify secondary metabolite that might
+be implicated in pathogenicity.
+[SPEAKER_00]: And this approach rely on modulating the
+expression of global regulators.
+[SPEAKER_00]: So as we have specific transcription
+factors, we also have global regulators or
+[SPEAKER_00]: global transcription factors.
+[SPEAKER_00]: And they are commonly found in all fungi.
+[SPEAKER_00]: And they regulate the production of
+secondary metabolite by regulating the
+[SPEAKER_00]: expression of specific biosynthetic gene
+clusters.
+[SPEAKER_00]: And a lot of those metabolites were found
+to be implicated in pathogenicity or in
+[SPEAKER_00]: the interaction with neighboring microbes.
+[SPEAKER_00]: And in the past, when I used this approach
+in my PhD, and in my postdoc, I was able
+[SPEAKER_00]: to identify different metabolites that
+were able to either playing a role in
+[SPEAKER_00]: regulating microbiomes or in
+pathogenicity.
+[SPEAKER_00]: So in this first study, when I did a
+knockout of LeA, which is a global
+[SPEAKER_00]: regulator, I was able to identify serotin,
+which is a compound that I was able to
+[SPEAKER_00]: find that is playing a crucial role in
+regulating the cheeserine microbiome.
+[SPEAKER_00]: And a different study when I did it on a
+penicillium exspansum, which is a
+[SPEAKER_00]: post-harvest plant pathogen, and I did a
+knockout of another global regulator,
+[SPEAKER_00]: CreA, I was able, as we can see on this
+apple, the mutants were nearly avirulent.
+[SPEAKER_00]: And when we did metabolomics and
+transcriptomic, I was able to identify two
+[SPEAKER_00]: biosynthetic gene clusters, one that is
+encoding for patalin and the other one for
+[SPEAKER_00]: citrinine that were essential for
+pathogenicity.
+[SPEAKER_00]: So we decided, since this approach has
+been proven to be very effective in other
+[SPEAKER_00]: pathosystems, to use this approach on
+spherulina misceva popular pathosystem to
+[SPEAKER_00]: see if that would help us pinpointing to
+certain metabolites that can be implicated
+[SPEAKER_00]: in pathogenicity.
+[SPEAKER_00]: So we did a knockout of LeA and S misceva.
+[SPEAKER_00]: And when we conducted pathogenicity
+experiment, we showed, as we can see here,
+[SPEAKER_00]: a significant reduction of leaf disease
+severity across all the genotypes tested,
+[SPEAKER_00]: except for one.
+[SPEAKER_00]: And we also saw a reduction of cankers per
+centimeters in certain genotypes,
+[SPEAKER_00]: but not in the others, which indicate that
+that could be an actually very effective
+[SPEAKER_00]: strategies to looking at or identifying or
+characterizing biosynthetic gene clusters
+[SPEAKER_00]: implicated in pathogenicity.
+[SPEAKER_00]: And we're taking this to doing
+metabolomics and transcriptomic analysis
+[SPEAKER_00]: that would help us seeing what are the
+clusters that are down regulator in our
+[SPEAKER_00]: LeA mutants and what are the metabolites
+that are not produced.
+[SPEAKER_00]: Which could be like good targets for
+pathogenicity.
+[SPEAKER_00]: And of course, later we have to do a lot
+of other validations like I did in my
+[SPEAKER_00]: previous studies.
+[SPEAKER_00]: So while we are continuously working on
+identifying genetic determinants of
+[SPEAKER_00]: pathogenicity that could serve as targets
+for the development of the gene drive,
+[SPEAKER_00]: we actually decided to start working on
+advancing this research and actually
+[SPEAKER_00]: started developing the gene drive on,
+I'm going to talk about it later on the
+[SPEAKER_00]: PKS gene of the melanin pathway.
+[SPEAKER_00]: But first, what is a gene drive?
+[SPEAKER_00]: So when we have an irregular Mendelian
+inheritance and we have an altered gene,
+[SPEAKER_00]: this gene would only have a 50% chance to
+be passed to the progeny.
+[SPEAKER_00]: And therefore, after many populations and
+multiple progenies, this gene would
+[SPEAKER_00]: actually be diluted and not present
+anymore.
+[SPEAKER_00]: Whereas when we have this altered gene,
+combined to the Cas9 and the guide RNA,
+[SPEAKER_00]: which what we call a drive strain,
+during the mating, the Cas9 would be able
+[SPEAKER_00]: to generate a cut because the guide RNA
+will guide the Cas9 to the specific region
+[SPEAKER_00]: on the wild type chromosome.
+[SPEAKER_00]: And then this cut would be repaired by
+homology directed repair, transferring
+[SPEAKER_00]: this drive machinery to the wild type
+chromosome.
+[SPEAKER_00]: And therefore, the wild type strain would
+also becoming a drive strain.
+[SPEAKER_00]: And that gene would have a near 100%
+chance of transferring to the progeny.
+[SPEAKER_00]: So that's how a CRISPR Cas9 gene drive
+function.
+[SPEAKER_00]: This tool has been widely used in disease
+vectors to eradicate diseases like malaria
+[SPEAKER_00]: and Zika.
+[SPEAKER_00]: So it has been developed on mosquitoes and
+other disease vectors, but it has never
+[SPEAKER_00]: been done before on a filamentous fungal
+pathogen.
+[SPEAKER_00]: But to be able to develop a gene drive,
+the organism of interest has to be having
+[SPEAKER_00]: a sexual reproduction or ability to mate.
+[SPEAKER_00]: And as I mentioned already in the
+spirulina life cycle, if you remember,
+[SPEAKER_00]: it has actually part of its life cycle
+when it's on the leaves, it has a sexual
+[SPEAKER_00]: reproduction stage.
+[SPEAKER_00]: Therefore, this approach can seem
+particularly promising for effective
+[SPEAKER_00]: population control in this organism.
+[SPEAKER_00]: So as a proof of principle of the gene
+drive applicability, before we actually go
+[SPEAKER_00]: right away and test it on genetic
+determinants of pathogenicity,
+[SPEAKER_00]: which is our overarching goal,
+we decided to start working on a gene that
+[SPEAKER_00]: would allow us to see an easy phenotyping.
+[SPEAKER_00]: Therefore, we decided to target the
+melanin pathway because when the PKS gene
+[SPEAKER_00]: or the backbone gene of the melanin
+pathway is knocked out, the fungus would
+[SPEAKER_00]: have an albino phenotype.
+[SPEAKER_00]: So instead of looking a dark green or
+black, it would have a white phenotype.
+[SPEAKER_00]: And that would be easy for us to screen
+the progenies coming from this mating.
+[SPEAKER_00]: So we decided to target this gene.
+[SPEAKER_00]: And there's something I did not mention
+earlier.
+[SPEAKER_00]: When we have an active gene drive,
+when the Cas9, the ELTER gene and the
+[SPEAKER_00]: guide RNA are localized next to each other
+on the same locus, we have what we call an
+[SPEAKER_00]: active gene drive.
+[SPEAKER_00]: So even if it's generating traits that are
+unwanted, it will be so active and it will
+[SPEAKER_00]: spread over multiple generations.
+[SPEAKER_00]: So in this case, since it's a proof of
+principle, we didn't want to design an
+[SPEAKER_00]: active gene drive.
+[SPEAKER_00]: So we decided to design what was called a
+safeguarding gene drive.
+[SPEAKER_00]: So we decided to insert the guide RNA at
+one locus, which would be our PKS gene to
+[SPEAKER_00]: interrupt its expression.
+[SPEAKER_00]: And we decided to insert our Cas9 at a
+different locus.
+[SPEAKER_00]: And that way, the gene drive won't be
+active enough and it will be kind of like
+[SPEAKER_00]: safeguarded and contained.
+[SPEAKER_00]: So this is how our design for the gene
+drive are.
+[SPEAKER_00]: So first, we're going to do a
+transformation to insert the guide RNA at
+[SPEAKER_00]: the PKS locus.
+[SPEAKER_00]: And we have another transformation on this
+train to insert the Cas9 at the pure G
+[SPEAKER_00]: locus because it would allow an easy
+screening on FOA plates.
+[SPEAKER_00]: But a crucial problem for synthetic gene
+drive is the evolution of natural
+[SPEAKER_00]: resistance against them.
+[SPEAKER_00]: So if we have a mutation in the wild type
+strain at the guide RNA site, the guide
+[SPEAKER_00]: RNA won't be able to hybridize and
+therefore the Cas9 won't be able to cut.
+[SPEAKER_00]: So as a first step forward towards the
+establishment of this gene drive,
+[SPEAKER_00]: we decided to look, since we have 122
+isolates at our sequence, we decided to
+[SPEAKER_00]: leverage from that and we did an alignment
+of the PKS gene and we were able to design
+[SPEAKER_00]: three guide RNA that are on conserved
+regions, which can help us predict what's
+[SPEAKER_00]: going to happen in nature, making sure
+that those guide RNA are not in regions
+[SPEAKER_00]: that have natural mutations.
+[SPEAKER_00]: And we later tested those three guide RNA
+on a substitute of this population because
+[SPEAKER_00]: it's a lot of work to test it on all 122
+isolates.
+[SPEAKER_00]: So we selected based on this tree,
+a subset of this population.
+[SPEAKER_00]: So we tested them on a 29 isolates
+selected across North America.
+[SPEAKER_00]: And when we tested those guide RNA,
+so how does the test work?
+[SPEAKER_00]: We actually sequence a region where the
+guide RNAs would be able to cut.
+[SPEAKER_00]: And then we hybridize the guide RNA and
+the Cas9 to form a complex and we use them
+[SPEAKER_00]: kind of like a restriction enzyme to see
+if they will cut in the sequence or not.
+[SPEAKER_00]: So it's kind of like an in vitro test for
+the ability of the guide RNA to test,
+[SPEAKER_00]: to cut.
+[SPEAKER_00]: And as we can see on this table,
+guide RNA1 was able to cut in all the
+[SPEAKER_00]: tested strains, whereas guide RNA2,
+although it's designed in a similar way,
+[SPEAKER_00]: considering efficiency, specificity,
+and other criteria that are essential for
+[SPEAKER_00]: guide RNA design, it did not cut in any of
+the strains.
+[SPEAKER_00]: Guide RNA3 was able to cut in almost all
+of them, but not in all of them.
+[SPEAKER_00]: So from this quick screening, we were able
+to see that guide RNA1 is the actual best
+[SPEAKER_00]: candidate to go further with our gene
+drive design.
+[SPEAKER_00]: So Josh was able to take this guide RNA1
+confirmed sequence.
+[SPEAKER_00]: Oops, sorry.
+[SPEAKER_00]: Sorry for that.
+[SPEAKER_00]: Okay.
+[SPEAKER_00]: So after confirming that the guide RNA1
+was our best candidate, Josh took this
+[SPEAKER_00]: guide RNA sequence and he designed a
+construct that will cut in the PKS and he
+[SPEAKER_00]: performed the first transformation.
+[SPEAKER_00]: And here I'm showing some of the plates.
+[SPEAKER_00]: He's actually still screening them by PCR
+and whole genome sequencing, but just
+[SPEAKER_00]: wanted to show how the phenotype of the
+wild type looked like.
+[SPEAKER_00]: So it's like sometimes it's even darker
+green than that.
+[SPEAKER_00]: That's how the wild type looked like,
+and that's how the PKS phenotype looked
+[SPEAKER_00]: like.
+[SPEAKER_00]: And as you can see, they have a weird
+phenotype, which we're really excited
+[SPEAKER_00]: about because that would help us later on
+in the screening of the progeny once we do
+[SPEAKER_00]: the mating experiments.
+[SPEAKER_00]: So those strains after Josh is going to
+confirm them that they are correct.
+[SPEAKER_00]: They have no cast line-off targets and
+anything like that.
+[SPEAKER_00]: He would use them to introduce the second
+components of the gene drive and the
+[SPEAKER_00]: strain would be ready to be tested in our
+mating assay that we're actually working
+[SPEAKER_00]: on developing.
+[SPEAKER_00]: So just to give you a brief background on
+how we come up with this mating assay,
+[SPEAKER_00]: we were first able to see if we were able
+to mate the SMSiva strains in vitro,
+[SPEAKER_00]: but we were not successful.
+[SPEAKER_00]: We tested the mating on detached leaves,
+but also that was really challenging
+[SPEAKER_00]: because the leaves would dry out and the
+mating was unsuccessful.
+[SPEAKER_00]: Until we came across this bio-archive
+manuscript in Zymoceptoria species,
+[SPEAKER_00]: which is a closely related species to
+SMSiva.
+[SPEAKER_00]: And if you remember in the life cycle
+where we showed that the sexual
+[SPEAKER_00]: reproduction actually occur on fallen
+leaves on the ground, where the sexual
+[SPEAKER_00]: fruiting bodies will develop.
+[SPEAKER_00]: So this assay actually we're trying to
+mimic the natural conditions for mating.
+[SPEAKER_00]: So we will use plants, we will spray them
+with two opposite mating types and we will
+[SPEAKER_00]: let the plants go through their natural
+senescence.
+[SPEAKER_00]: Then we will collect those leaves and we
+will put them under sterile conditions.
+[SPEAKER_00]: We'll use like Velcro to have a plates
+upside down, plates that have the
+[SPEAKER_00]: selection for our genetic events.
+[SPEAKER_00]: And then those sexual spores will be able
+to shoot and the colonies will be forming
+[SPEAKER_00]: on those open plates.
+[SPEAKER_00]: And then later we will be able to look for
+the ASCA spore derived colonies under the
+[SPEAKER_00]: microscope and we will perform whole
+genome sequencing to confirm the mating
+[SPEAKER_00]: and the success of the drive.
+[SPEAKER_00]: So this mating assay is actually ongoing
+right now.
+[SPEAKER_00]: We don't have results from that yet,
+but just wanted to show you the approach
+[SPEAKER_00]: that we're following where we are actually
+really mimicking the natural conditions
+[SPEAKER_00]: for sexual reproduction in this pathogen.
+[SPEAKER_00]: And with that, I would like to conclude.
+[SPEAKER_00]: Hopefully I was able to show you how we
+were able to advance the development of
+[SPEAKER_00]: CRISPR-Cas9 genetic tool in this non-model
+organism.
+[SPEAKER_00]: How we used this CRISPR tools and how we
+are still leveraging this tool to pinpoint
+[SPEAKER_00]: the crucial genetic factors influencing
+disease severities, including effector
+[SPEAKER_00]: genes and secondary metabolites.
+[SPEAKER_00]: How we are taking that a step forward
+towards the development of the first
+[SPEAKER_00]: CRISPR-enabled gene drive aimed at
+eradicating Esmiceva to protect and
+[SPEAKER_00]: sustain poplar plantations.
+[SPEAKER_00]: And although this approach offer insight
+mainly on the Esmiceva poplars
+[SPEAKER_00]: pathosystem, but it has the potential to
+be applied to other pathosystem either in
+[SPEAKER_00]: forest ecosystem as well as in
+agricultural settings.
+[SPEAKER_00]: And with that, I would like to thank the
+CSFA for funding this research.
+[SPEAKER_00]: I would like to thank our collaborators at
+Oregon State University.
+[SPEAKER_00]: I would like to thank my collaborators at
+ORNL and my research group.
+[SPEAKER_00]: And I would like to thank you all for your
+attending the seminar and I would take any
+[SPEAKER_00]: questions you might have.
+[SPEAKER_01]: Thank you so much, Dr. Tanis.
+[SPEAKER_01]: That was wonderful.
+[SPEAKER_01]: Sure.
+[SPEAKER_01]: Yeah.
+[SPEAKER_01]: We're going to open it up to questions
+now.
+[SPEAKER_01]: So please feel free to either raise your
+hand, directly unmute, raise your hand or
+[SPEAKER_01]: type in the chat and I will read.
+[SPEAKER_01]: Go for it, Galeon.
+[SPEAKER_02]: Thank you very much.
+[SPEAKER_02]: Can you compare CRISPR-driven homologous
+recombination with non-CRISPR approaches
+[SPEAKER_02]: to homologous recombination?
+[SPEAKER_00]: You mean when we use a CRISPR for
+homologous recombination where we don't
+[SPEAKER_00]: use CRISPR and we use like a standard
+transformation?
+[SPEAKER_00]: Sorry.
+[SPEAKER_00]: Is that the question?
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: So in the past, actually before joining
+ORNL, I was always using a standard
+[SPEAKER_00]: transformation where we design our
+construct that have homology arms of 1 kb
+[SPEAKER_00]: to the region that we want to transform.
+[SPEAKER_00]: But after using CRISPR, I really see a
+great improvements in the specificity
+[SPEAKER_00]: because before when I was using without
+the CRISPR to generate the cut,
+[SPEAKER_00]: our construct, although designed to be
+specifically going to the specific region,
+[SPEAKER_00]: we saw that it was inserted in other
+multiple places in the gene genome.
+[SPEAKER_00]: So when we perform either whole genome
+sequencing or southern blot, we saw that
+[SPEAKER_00]: our construct is like being inserted in
+different other places.
+[SPEAKER_00]: CRISPR has really improved the specificity
+because it actually generates a cut and
+[SPEAKER_00]: most of those donor DNA that we're
+inserting in our transformation would go
+[SPEAKER_00]: towards this cut to repair the DNA double
+strand break.
+[SPEAKER_00]: So, yeah, we saw a great improvement in
+specificity.
+[SPEAKER_00]: And after we do a whole genome sequencing,
+we rarely find insertion on other loci.
+[SPEAKER_00]: Thanks.
+[SPEAKER_02]: Second question, regarding mating,
+have you tried mating both partners on
+[SPEAKER_02]: senescent poplar?
+[SPEAKER_00]: So take senescent leaves.
+[SPEAKER_00]: And try it on.
+[SPEAKER_00]: Yeah, no, we did not try that because,
+yeah, that's a good question.
+[SPEAKER_00]: But there's another thing that we tried
+and I did not mention here.
+[SPEAKER_00]: We actually think that there is something
+coming from the leaves, either an exudate
+[SPEAKER_00]: or something that is probably secreted
+during senescence that could be driving
+[SPEAKER_00]: the mating.
+[SPEAKER_00]: So it was actually Thomas's idea.
+[SPEAKER_00]: He took senescent leaves and he did a
+metabolite extraction by using organic
+[SPEAKER_00]: solvent.
+[SPEAKER_00]: And he was able later on to lyophilize
+this crude extract from senescent leaves
+[SPEAKER_00]: to see if there was any metabolites that
+could be secreted and be essential.
+[SPEAKER_00]: And he used it in an in vitro setting.
+[SPEAKER_00]: So he used those crude extracts coming
+from senescent leaves into a media and try
+[SPEAKER_00]: to do a mating.
+[SPEAKER_00]: But we're still not successful.
+[SPEAKER_00]: So I don't know if it's actually really
+the plant material that is essential,
+[SPEAKER_00]: not the just metabolite that could be on
+those senescent leaves.
+[SPEAKER_00]: But yeah, we did not try it on senescent
+leaves.
+[SPEAKER_00]: We decided to go with the actual natural
+senescence going on rather than take
+[SPEAKER_00]: senescent leaves and spray them.
+[SPEAKER_00]: But that can also be an approach to take.
+[SPEAKER_00]: Thank you.
+[SPEAKER_01]: I have one.
+[SPEAKER_01]: So it's not directly related to your
+extraordinary scientific content.
+[SPEAKER_01]: But one of the things I was wondering if
+you might reflect on for the sake of our
+[SPEAKER_01]: graduate students in the audience,
+what your experience is working at a
+[SPEAKER_01]: national lab environment.
+[SPEAKER_01]: You've had diverse experience at different
+types of universities.
+[SPEAKER_01]: And I was just wondering maybe to their
+perspective, they're exploring different
+[SPEAKER_01]: career options.
+[SPEAKER_01]: What's it like to work at a national lab?
+[SPEAKER_01]: And how might they best prepare themselves
+for that career option if they're
+[SPEAKER_01]: interested in pursuing it?
+[SPEAKER_00]: Sure.
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: I was actually so interested in academic
+positions before joining ORNL.
+[SPEAKER_00]: I did a postdoc at UW, which was an
+academic postdoc.
+[SPEAKER_00]: So after working at ORNL, I really liked
+the environment and the dynamic.
+[SPEAKER_00]: The nice thing I really liked about ORNL,
+and I believe a lot of national labs are
+[SPEAKER_00]: the same, is that we have, so under the
+same umbrella, of ORNL, we have different
+[SPEAKER_00]: expertise.
+[SPEAKER_00]: So within the bioscience, for example,
+we have the computational science.
+[SPEAKER_00]: We have the analytical group.
+[SPEAKER_00]: So they do all our LCMS.
+[SPEAKER_00]: We have the genetic group.
+[SPEAKER_00]: So that really helped, instead of going
+and seeking for external collaborators,
+[SPEAKER_00]: to be able to do everything under the same
+umbrella and same institution.
+[SPEAKER_00]: And we find that it saved us a lot of time
+and a lot of efforts.
+[SPEAKER_00]: And it's kind of like each one would focus
+on its expertise.
+[SPEAKER_00]: So you don't have to be doing everything.
+[SPEAKER_00]: Sometimes, for certain people,
+it's good.
+[SPEAKER_00]: For certain people, they like to be doing
+everything from A to Z.
+[SPEAKER_00]: So in academia, for example, I was the
+person doing the genetic, the analytical,
+[SPEAKER_00]: the pathogenicity experiments,
+and sometimes the bioinformatics and
+[SPEAKER_00]: computational.
+[SPEAKER_00]: I feel like at ORNL specifically,
+we have this inter-teams collaborations
+[SPEAKER_00]: where everyone works towards the same
+goal.
+[SPEAKER_00]: So within the CSFA, for example,
+there's the teams of bacterial
+[SPEAKER_00]: geneticists, fungal geneticists,
+fungal biologists, computational science,
+[SPEAKER_00]: analytical.
+[SPEAKER_00]: And that's within one science-focused
+area.
+[SPEAKER_00]: And a lot of other projects are the same
+way.
+[SPEAKER_00]: And we find that that's really advanced
+the science in a speedy way.
+[SPEAKER_00]: I don't know if that answered the
+question.
+[SPEAKER_01]: Oh, it totally does.
+[SPEAKER_01]: Awesome.
+[SPEAKER_01]: Is there anything that you might recommend
+for a graduate student, perhaps,
+[SPEAKER_01]: or a postdoc that might be interested in
+pursuing a career at a national lab like
+[SPEAKER_01]: Oak Ridge?
+[SPEAKER_01]: Is there anything in particular you'd
+recommend they do or reach out resources?
+[SPEAKER_00]: So for a graduate student, they would have
+to be associated.
+[SPEAKER_00]: So we're all associated with the
+University of Tennessee, Knoxville,
+[SPEAKER_00]: to be able to take a graduate student.
+[SPEAKER_00]: So they will take their classes at UTK,
+but they do the research at ORNL.
+[SPEAKER_01]: For graduate students, I think- I meant if
+they wanted to be in a position like yours
+[SPEAKER_01]: one day, like what they might do here.
+[SPEAKER_01]: Oh, OK.
+[SPEAKER_00]: As a postdoc, for example.
+[SPEAKER_00]: So we always have postdoc positions open.
+[SPEAKER_00]: Sometimes when we go to conferences and we
+have a position that is open, we'll try to
+[SPEAKER_00]: talk about it and what are the expertise.
+[SPEAKER_00]: Then you would apply to every open
+position.
+[SPEAKER_00]: There's a lot of positions that come out
+every week, not necessarily in our
+[SPEAKER_00]: division, but there's several directorates
+at ORNL and each one would have open
+[SPEAKER_00]: positions.
+[SPEAKER_00]: And as a postdoc, usually it's for two
+years up to a renewal for a third year.
+[SPEAKER_00]: In terms of transitioning from postdoc to
+staff scientist, it's not always like it
+[SPEAKER_00]: happened because at ORNL, they usually
+don't hire people that do the same thing.
+[SPEAKER_00]: So for example, for me and Tomas,
+we both are fungal people.
+[SPEAKER_00]: But each one of us actually does different
+things.
+[SPEAKER_00]: So to be able to be hired as a staff
+scientist, you really have to distinguish
+[SPEAKER_00]: yourself from other existing scientists or
+staff scientists.
+[SPEAKER_00]: So where Tomas, for example, he does not
+do genetics at all.
+[SPEAKER_00]: I'm the only fungal geneticist at ORNL.
+[SPEAKER_00]: I don't know if that answered the
+question.
+[SPEAKER_01]: No, I certainly think so.
+[SPEAKER_01]: Thank you.
+[SPEAKER_01]: And I think we have time for one more
+question from the chat.
+[SPEAKER_01]: We have Isabelle Jacquemont Parks asks,
+she says, hi, amazing talk.
+[SPEAKER_01]: I agree.
+[SPEAKER_01]: I really appreciate your insight.
+[SPEAKER_01]: You mentioned there are some resistant
+poplar genotypes.
+[SPEAKER_01]: Do you know if CRISPR is being used for
+the poplar genome to address pathogens
+[SPEAKER_01]: rather than the fungus?
+[SPEAKER_00]: Yeah, actually, the research on the plant
+is way more advanced compared to fungi.
+[SPEAKER_00]: And that's what I mentioned earlier.
+[SPEAKER_00]: We have a scientist at ORNL that does a
+lot of CRISPR work.
+[SPEAKER_00]: They're actually developing biosensors
+right now.
+[SPEAKER_00]: To be able to detect the pathogens at
+early stages.
+[SPEAKER_00]: So yeah, the research on the CRISPR on the
+plant part is way more advanced.
+[SPEAKER_00]: Whereas when I joined as a postdoc,
+we did not have any genetic tool to even
+[SPEAKER_00]: manipulate.
+[SPEAKER_00]: The fungus was like really a non-modal
+organisms.
+[SPEAKER_00]: Even if you look in terms of publications,
+there was barely like three publications
+[SPEAKER_00]: on the pathogen.
+[SPEAKER_00]: So it was really challenging at the
+beginning to start like from scratch.
+[SPEAKER_00]: Whereas for poplar, the research is on
+another high level.
+[SPEAKER_01]: Wonderful.
+[SPEAKER_01]: Thank you so much for joining us.
+[SPEAKER_01]: Thank you.
+[SPEAKER_01]: It was a wonderful presentation.
+[SPEAKER_01]: Thank you so much.
+[SPEAKER_01]: Round of applause or just kudos.
+[SPEAKER_00]: If anyone have questions or something that
+maybe I did not touch on during my
+[SPEAKER_00]: presentation for the limitation of the
+time, please feel free to email me and I
+[SPEAKER_00]: would be happy to answer any questions you
+might have.
+[SPEAKER_00]: Wonderful.
+[SPEAKER_00]: Thank you again.
+[SPEAKER_00]: Thank you so much, Katie and Galian and
+Laurie.
+[SPEAKER_00]: And thank you for everyone for attending.
+[SPEAKER_00]: Thank you.
+[SPEAKER_00]: Thank you.
+[SPEAKER_00]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_00]: Thank you.
+Thank you.
+Thank you.

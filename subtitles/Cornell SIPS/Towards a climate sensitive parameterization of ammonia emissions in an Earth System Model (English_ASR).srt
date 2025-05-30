@@ -1,0 +1,4120 @@
+1
+00:00:01,120 --> 00:00:05,439
+this is a production of cornell
+
+2
+00:00:02,879 --> 00:00:05,439
+university
+
+3
+00:00:07,599 --> 00:00:12,558
+thank you for inviting me and as you can
+
+4
+00:00:09,839 --> 00:00:14,240
+see from my background i'm not a soil
+
+5
+00:00:12,558 --> 00:00:16,079
+scientist
+
+6
+00:00:14,240 --> 00:00:17,278
+i study atmospheric chemistry and
+
+7
+00:00:16,079 --> 00:00:19,358
+climate
+
+8
+00:00:17,278 --> 00:00:22,320
+but for better worse sometimes one has
+
+9
+00:00:19,359 --> 00:00:24,480
+to cross disciplinary boundaries
+
+10
+00:00:22,320 --> 00:00:27,198
+and to see the problem solved in other
+
+11
+00:00:24,480 --> 00:00:30,000
+words to look at ammonia emissions on a
+
+12
+00:00:27,199 --> 00:00:33,039
+global scale and a comprehensive earth
+
+13
+00:00:30,000 --> 00:00:35,600
+system model there was no soil scientist
+
+14
+00:00:33,039 --> 00:00:38,320
+or biogeochemist or anyone that really
+
+15
+00:00:35,600 --> 00:00:39,760
+wanted to address this problem on global
+
+16
+00:00:38,320 --> 00:00:40,878
+scales and
+
+17
+00:00:39,759 --> 00:00:42,238
+so um
+
+18
+00:00:40,878 --> 00:00:45,199
+here i am
+
+19
+00:00:42,238 --> 00:00:47,439
+um before i begin i should acknowledge
+
+20
+00:00:45,200 --> 00:00:49,520
+stuart riddick so stuart was a postdoc
+
+21
+00:00:47,439 --> 00:00:52,000
+here he later left for university of
+
+22
+00:00:49,520 --> 00:00:53,680
+cambridge so he initially formulated
+
+23
+00:00:52,000 --> 00:00:54,479
+much of this model
+
+24
+00:00:53,679 --> 00:00:55,280
+and
+
+25
+00:00:54,479 --> 00:00:58,479
+um
+
+26
+00:00:55,280 --> 00:01:00,879
+and he formulated its structure
+
+27
+00:00:58,479 --> 00:01:03,358
+and also dan ward who's sitting in the
+
+28
+00:01:00,878 --> 00:01:05,359
+audience today he's done a lot of work
+
+29
+00:01:03,359 --> 00:01:06,159
+since stuart left getting the model in
+
+30
+00:01:05,359 --> 00:01:09,200
+shape
+
+31
+00:01:06,159 --> 00:01:11,359
+and um understanding how it behaves okay
+
+32
+00:01:09,200 --> 00:01:13,280
+so both both stuart and dan
+
+33
+00:01:11,359 --> 00:01:16,560
+did a lot of the actual work on the on
+
+34
+00:01:13,280 --> 00:01:16,560
+this on this project
+
+35
+00:01:17,680 --> 00:01:22,799
+so before i begin i thought i should
+
+36
+00:01:21,040 --> 00:01:24,479
+um
+
+37
+00:01:22,799 --> 00:01:26,320
+let's hear my questions that i'm going
+
+38
+00:01:24,478 --> 00:01:28,560
+to address in this research so they're
+
+39
+00:01:26,319 --> 00:01:30,399
+probably different than
+
+40
+00:01:28,560 --> 00:01:33,118
+many of the talks you've heard in this
+
+41
+00:01:30,400 --> 00:01:35,759
+um in the seminar series and i work on
+
+42
+00:01:33,118 --> 00:01:38,400
+the global scale
+
+43
+00:01:35,759 --> 00:01:41,280
+and i'm interested in climate
+
+44
+00:01:38,400 --> 00:01:43,439
+so the large scale questions is how do
+
+45
+00:01:41,280 --> 00:01:45,599
+fertilizer manure ammonia missions
+
+46
+00:01:43,438 --> 00:01:48,398
+change the climate and how will climate
+
+47
+00:01:45,599 --> 00:01:50,078
+impact these emissions
+
+48
+00:01:48,399 --> 00:01:52,239
+how do these emissions modify the
+
+49
+00:01:50,078 --> 00:01:54,478
+nitrogen cascade and how do the
+
+50
+00:01:52,239 --> 00:01:56,078
+emissions change global pollution in
+
+51
+00:01:54,478 --> 00:01:58,560
+health so again i'm interested in the
+
+52
+00:01:56,078 --> 00:02:01,599
+global scale and most of the work i do
+
+53
+00:01:58,560 --> 00:02:02,960
+is in model simulations it's not it's
+
+54
+00:02:01,599 --> 00:02:07,000
+not in the laboratory it's not
+
+55
+00:02:02,959 --> 00:02:07,000
+experimental in that sense
+
+56
+00:02:10,479 --> 00:02:16,080
+so this is a
+
+57
+00:02:12,719 --> 00:02:17,759
+way it's a picture of paris march 14
+
+58
+00:02:16,080 --> 00:02:19,920
+2014
+
+59
+00:02:17,759 --> 00:02:22,719
+and this pollution event was attributed
+
+60
+00:02:19,919 --> 00:02:25,199
+to springtime fertilization it was very
+
+61
+00:02:22,719 --> 00:02:27,520
+hot at that time in paris it's about the
+
+62
+00:02:25,199 --> 00:02:29,039
+springtime when people applied their
+
+63
+00:02:27,520 --> 00:02:30,879
+fertilizer
+
+64
+00:02:29,039 --> 00:02:34,239
+and it pretty much shut down the city
+
+65
+00:02:30,878 --> 00:02:36,560
+for a week they cars could only drive on
+
+66
+00:02:34,239 --> 00:02:38,400
+on even or odd days public
+
+67
+00:02:36,560 --> 00:02:40,560
+transportation was free they decreased
+
+68
+00:02:38,400 --> 00:02:42,959
+the driving speed limit
+
+69
+00:02:40,560 --> 00:02:45,120
+trucks were routed around the city so a
+
+70
+00:02:42,959 --> 00:02:48,719
+lot of this was um has been blamed on
+
+71
+00:02:45,120 --> 00:02:50,800
+fertilization and ammonia emissions
+
+72
+00:02:48,719 --> 00:02:52,239
+okay so after introduction i'm going to
+
+73
+00:02:50,800 --> 00:02:54,640
+talk about the model i'm going to talk
+
+74
+00:02:52,239 --> 00:02:59,200
+about some of the nitty-gritty
+
+75
+00:02:54,639 --> 00:02:59,199
+get the results and and then conclusions
+
+76
+00:03:02,080 --> 00:03:07,200
+so for the background as
+
+77
+00:03:04,719 --> 00:03:08,158
+i'm sure many of you are
+
+78
+00:03:07,199 --> 00:03:11,039
+aware
+
+79
+00:03:08,158 --> 00:03:14,079
+that the um
+
+80
+00:03:11,039 --> 00:03:17,439
+nitrogen input into the
+
+81
+00:03:14,080 --> 00:03:20,159
+earth system has increased dramatically
+
+82
+00:03:17,439 --> 00:03:21,199
+in the um 20th century and it's
+
+83
+00:03:20,158 --> 00:03:24,479
+increased
+
+84
+00:03:21,199 --> 00:03:27,039
+really since um haber in bosch
+
+85
+00:03:24,479 --> 00:03:30,639
+um invented the process for
+
+86
+00:03:27,039 --> 00:03:34,239
+making ammonia fertilizer out of out of
+
+87
+00:03:30,639 --> 00:03:36,158
+out of atmospheric nitrogen
+
+88
+00:03:34,239 --> 00:03:37,840
+okay and so one can see this increase
+
+89
+00:03:36,158 --> 00:03:40,158
+especially here
+
+90
+00:03:37,840 --> 00:03:42,000
+after about 1940
+
+91
+00:03:40,158 --> 00:03:44,158
+and this increase has been thought to
+
+92
+00:03:42,000 --> 00:03:46,639
+contribute to the large population
+
+93
+00:03:44,158 --> 00:03:49,679
+increase over the 20th century
+
+94
+00:03:46,639 --> 00:03:51,839
+and incidentally as i i read a little
+
+95
+00:03:49,680 --> 00:03:54,000
+bit about haber haber was also not only
+
+96
+00:03:51,840 --> 00:03:56,878
+invented nitrogen
+
+97
+00:03:54,000 --> 00:03:59,519
+this process the but he also is known as
+
+98
+00:03:56,878 --> 00:04:02,079
+the um father of chemical warfare invent
+
+99
+00:03:59,519 --> 00:04:05,200
+a lot of chemical weapons so he he has
+
+100
+00:04:02,080 --> 00:04:07,360
+he's an interesting character with um
+
+101
+00:04:05,199 --> 00:04:10,560
+pluses for humanity and
+
+102
+00:04:07,360 --> 00:04:10,560
+definitely some minuses
+
+103
+00:04:11,120 --> 00:04:15,840
+okay so what's going to happen in the in
+
+104
+00:04:13,519 --> 00:04:15,840
+the future
+
+105
+00:04:16,160 --> 00:04:19,519
+and in the future as a population
+
+106
+00:04:18,560 --> 00:04:21,839
+increase
+
+107
+00:04:19,519 --> 00:04:22,959
+the feeling is that
+
+108
+00:04:21,839 --> 00:04:25,439
+um
+
+109
+00:04:22,959 --> 00:04:27,519
+the demand for nitrogen is also going to
+
+110
+00:04:25,439 --> 00:04:30,079
+increase and so this shows a number of
+
+111
+00:04:27,519 --> 00:04:33,839
+scenarios for nitrogen fertilizer
+
+112
+00:04:30,079 --> 00:04:36,000
+consumption so this is nsaid 2100
+
+113
+00:04:33,839 --> 00:04:40,879
+and these scenarios are driven by
+
+114
+00:04:36,000 --> 00:04:43,279
+population growth shown here in red
+
+115
+00:04:40,879 --> 00:04:44,639
+biofuels shown in green
+
+116
+00:04:43,279 --> 00:04:46,959
+um
+
+117
+00:04:44,639 --> 00:04:50,560
+and then what decreasing the emissions
+
+118
+00:04:46,959 --> 00:04:52,319
+is um efficiency and agriculture
+
+119
+00:04:50,560 --> 00:04:53,600
+food equity is increasing so we don't
+
+120
+00:04:52,319 --> 00:04:55,439
+quite know what's going to happen in the
+
+121
+00:04:53,600 --> 00:04:57,199
+future but
+
+122
+00:04:55,439 --> 00:04:58,879
+um
+
+123
+00:04:57,199 --> 00:05:00,478
+and this is so these are the type of
+
+124
+00:04:58,879 --> 00:05:03,040
+scenarios that are used in climate
+
+125
+00:05:00,478 --> 00:05:05,279
+models this is how the um how the
+
+126
+00:05:03,040 --> 00:05:06,319
+climate models work to predict the
+
+127
+00:05:05,279 --> 00:05:07,839
+future
+
+128
+00:05:06,319 --> 00:05:09,279
+is there's likely going to be an
+
+129
+00:05:07,839 --> 00:05:12,159
+increase in
+
+130
+00:05:09,279 --> 00:05:13,599
+nitrogen fertilizer consumption
+
+131
+00:05:12,160 --> 00:05:17,520
+and if you look
+
+132
+00:05:13,600 --> 00:05:18,240
+in what's input into most climate models
+
+133
+00:05:17,519 --> 00:05:20,319
+the
+
+134
+00:05:18,240 --> 00:05:22,079
+ammonia emissions are like this
+
+135
+00:05:20,319 --> 00:05:25,279
+reflecting this increase
+
+136
+00:05:22,079 --> 00:05:27,839
+in in in nitrogen but this neglects the
+
+137
+00:05:25,279 --> 00:05:29,758
+impact of climate on the emissions so
+
+138
+00:05:27,839 --> 00:05:31,839
+ammonia emissions are very sensitive to
+
+139
+00:05:29,759 --> 00:05:34,879
+climate if you
+
+140
+00:05:31,839 --> 00:05:37,198
+add the impact of climate
+
+141
+00:05:34,879 --> 00:05:40,478
+then my guess that the ammonia emissions
+
+142
+00:05:37,199 --> 00:05:42,639
+increase by almost a factor of two
+
+143
+00:05:40,478 --> 00:05:45,038
+so this impact of agriculture and the
+
+144
+00:05:42,639 --> 00:05:47,038
+increase of nitrogen emissions
+
+145
+00:05:45,038 --> 00:05:49,199
+is quite a bit different than what one
+
+146
+00:05:47,038 --> 00:05:52,719
+expects from
+
+147
+00:05:49,199 --> 00:05:55,280
+industry and cars and here
+
+148
+00:05:52,720 --> 00:05:57,680
+almost all the scenarios expect the
+
+149
+00:05:55,279 --> 00:06:00,399
+other component are the main component
+
+150
+00:05:57,680 --> 00:06:01,840
+of nitrogen input into the system to
+
+151
+00:06:00,399 --> 00:06:04,159
+decrease
+
+152
+00:06:01,839 --> 00:06:06,079
+and this is because already industrial
+
+153
+00:06:04,160 --> 00:06:08,720
+countries have decreased the amount of
+
+154
+00:06:06,079 --> 00:06:10,800
+nox emitted into the air
+
+155
+00:06:08,720 --> 00:06:13,280
+for air pollution regions and it's
+
+156
+00:06:10,800 --> 00:06:14,639
+expected that other countries too for
+
+157
+00:06:13,279 --> 00:06:17,918
+example china
+
+158
+00:06:14,639 --> 00:06:19,759
+will also follow along suit and decrease
+
+159
+00:06:17,918 --> 00:06:22,079
+their emissions of knocks into the
+
+160
+00:06:19,759 --> 00:06:24,960
+atmosphere so in the future
+
+161
+00:06:22,079 --> 00:06:27,279
+fertilizer is likely to increase ammonia
+
+162
+00:06:24,959 --> 00:06:28,399
+emissions due to fertilizer like likely
+
+163
+00:06:27,279 --> 00:06:32,399
+to increase
+
+164
+00:06:28,399 --> 00:06:36,478
+and nox emissions are likely to decrease
+
+165
+00:06:32,399 --> 00:06:36,478
+ice acid current current thinking
+
+166
+00:06:38,000 --> 00:06:41,038
+so this is a
+
+167
+00:06:39,759 --> 00:06:43,439
+figure of the
+
+168
+00:06:41,038 --> 00:06:45,759
+nitrogen cascade
+
+169
+00:06:43,439 --> 00:06:47,038
+and nitrogen is essentially put into the
+
+170
+00:06:45,759 --> 00:06:49,520
+system
+
+171
+00:06:47,038 --> 00:06:53,038
+largely into the farms in terms of
+
+172
+00:06:49,519 --> 00:06:55,839
+fertilizer it's also manure here
+
+173
+00:06:53,038 --> 00:06:58,318
+and in terms of combustion and this is
+
+174
+00:06:55,839 --> 00:07:00,159
+mostly in terms of nox
+
+175
+00:06:58,319 --> 00:07:02,479
+okay so the nitrogen so the ammonia
+
+176
+00:07:00,160 --> 00:07:05,680
+emissions from the farms are estimated
+
+177
+00:07:02,478 --> 00:07:08,159
+to be about 40 teragrams per year
+
+178
+00:07:05,680 --> 00:07:10,560
+the nitrogen ammonia is evaporated off
+
+179
+00:07:08,160 --> 00:07:13,039
+from the farms and then it's cascaded
+
+180
+00:07:10,560 --> 00:07:16,879
+down in the nitrogen cascade and it
+
+181
+00:07:13,038 --> 00:07:19,120
+lands on forests natural ecosystems etc
+
+182
+00:07:16,879 --> 00:07:21,279
+as you go down so to understand the
+
+183
+00:07:19,120 --> 00:07:23,038
+nitrogen cascade to be able to simulate
+
+184
+00:07:21,279 --> 00:07:25,038
+it you have to get these nitrogen
+
+185
+00:07:23,038 --> 00:07:27,038
+ammonia emissions correct
+
+186
+00:07:25,038 --> 00:07:29,519
+from the farm and one can see that there
+
+187
+00:07:27,038 --> 00:07:31,680
+are of greater importance than the
+
+188
+00:07:29,519 --> 00:07:33,120
+combustion emissions
+
+189
+00:07:31,680 --> 00:07:34,800
+and they're meant to increase in the
+
+190
+00:07:33,120 --> 00:07:36,639
+future whereas these are meant to
+
+191
+00:07:34,800 --> 00:07:38,639
+decrease so getting these
+
+192
+00:07:36,639 --> 00:07:40,560
+getting pneumonia emissions correct it's
+
+193
+00:07:38,639 --> 00:07:45,079
+important part of being able to simulate
+
+194
+00:07:40,560 --> 00:07:45,079
+the future nitrogen cascade
+
+195
+00:07:45,759 --> 00:07:50,560
+what does nitrogen do to climate
+
+196
+00:07:49,759 --> 00:07:53,199
+so
+
+197
+00:07:50,560 --> 00:07:54,959
+in this figure here i show the radiative
+
+198
+00:07:53,199 --> 00:07:57,360
+forcing of various species on the
+
+199
+00:07:54,959 --> 00:07:59,439
+climate so this is essentially you put
+
+200
+00:07:57,360 --> 00:08:01,680
+these species into the atmosphere and
+
+201
+00:07:59,439 --> 00:08:03,038
+you look at the change in energy balance
+
+202
+00:08:01,680 --> 00:08:05,439
+at the earth's
+
+203
+00:08:03,038 --> 00:08:07,598
+surface due to these species
+
+204
+00:08:05,439 --> 00:08:10,079
+and one can see that the
+
+205
+00:08:07,598 --> 00:08:13,439
+change in energy balance from
+
+206
+00:08:10,079 --> 00:08:16,478
+pre-industrial to 2011 it's estimated to
+
+207
+00:08:13,439 --> 00:08:18,560
+be about 2.3 watts per meter squared on
+
+208
+00:08:16,478 --> 00:08:19,918
+the earth's surface according to this
+
+209
+00:08:18,560 --> 00:08:22,319
+diagram
+
+210
+00:08:19,918 --> 00:08:25,519
+now this is known as a radiator forcing
+
+211
+00:08:22,319 --> 00:08:28,639
+where does nitrogen come into this
+
+212
+00:08:25,519 --> 00:08:30,000
+nitrogen is a form of fertilizer
+
+213
+00:08:28,639 --> 00:08:32,959
+and
+
+214
+00:08:30,000 --> 00:08:34,879
+it's estimated that because the emission
+
+215
+00:08:32,958 --> 00:08:37,119
+nitrogen emissions have increased that
+
+216
+00:08:34,879 --> 00:08:39,439
+more co2 has been uptaken by the
+
+217
+00:08:37,120 --> 00:08:42,240
+atmosphere and so this has changed a
+
+218
+00:08:39,440 --> 00:08:44,080
+radiative forcing by between five and
+
+219
+00:08:42,240 --> 00:08:46,480
+ten percent
+
+220
+00:08:44,080 --> 00:08:48,720
+and to all emissions associated with
+
+221
+00:08:46,480 --> 00:08:51,839
+fertilizer use exchange to radiate
+
+222
+00:08:48,720 --> 00:08:53,360
+forcing by about 0.17
+
+223
+00:08:51,839 --> 00:08:55,200
+nox emissions
+
+224
+00:08:53,360 --> 00:08:58,080
+through his atmospheric chemistry
+
+225
+00:08:55,200 --> 00:09:00,879
+decreases methane and increases ozone
+
+226
+00:08:58,080 --> 00:09:02,720
+associate changes in atmospheric forcing
+
+227
+00:09:00,879 --> 00:09:04,958
+and then pneumonia emissions itself
+
+228
+00:09:02,720 --> 00:09:07,040
+ammonia readily forms an aerosol in the
+
+229
+00:09:04,958 --> 00:09:09,679
+atmosphere aerosols tend to be
+
+230
+00:09:07,039 --> 00:09:11,278
+reflective and this is active to cool
+
+231
+00:09:09,679 --> 00:09:13,199
+the earth's surface
+
+232
+00:09:11,278 --> 00:09:15,679
+so the nitrogen emissions have a lot of
+
+233
+00:09:13,200 --> 00:09:18,720
+climate effects from warming
+
+234
+00:09:15,679 --> 00:09:18,719
+to cooling
+
+235
+00:09:21,200 --> 00:09:25,120
+and probably one of the most important
+
+236
+00:09:22,958 --> 00:09:27,838
+impacts
+
+237
+00:09:25,120 --> 00:09:30,240
+is in the aerosols aerosols are
+
+238
+00:09:27,839 --> 00:09:31,680
+particulates in the air
+
+239
+00:09:30,240 --> 00:09:34,320
+that um
+
+240
+00:09:31,679 --> 00:09:37,838
+that essentially cool the earth
+
+241
+00:09:34,320 --> 00:09:40,640
+and if you look at various various years
+
+242
+00:09:37,839 --> 00:09:41,680
+so this goes from 2000 to 2100 this is
+
+243
+00:09:40,639 --> 00:09:44,240
+from
+
+244
+00:09:41,679 --> 00:09:45,120
+simulation
+
+245
+00:09:44,240 --> 00:09:48,240
+and
+
+246
+00:09:45,120 --> 00:09:50,240
+it's projected that by 2100 this yellow
+
+247
+00:09:48,240 --> 00:09:51,759
+yellow line here which is ammonia
+
+248
+00:09:50,240 --> 00:09:54,320
+nitrate emissions
+
+249
+00:09:51,759 --> 00:09:57,278
+ammonium nitrate aerosols will be
+
+250
+00:09:54,320 --> 00:10:00,560
+the dominant aerosol species so right
+
+251
+00:09:57,278 --> 00:10:03,039
+now the dominant species is sulfur
+
+252
+00:10:00,559 --> 00:10:06,399
+it's projected that sulfur will decrease
+
+253
+00:10:03,039 --> 00:10:08,719
+as the air is cleaned up over
+
+254
+00:10:06,399 --> 00:10:11,360
+china and other regions
+
+255
+00:10:08,720 --> 00:10:13,920
+and that ammonia nitrates will become
+
+256
+00:10:11,360 --> 00:10:18,600
+the dominant aerosol type which acts to
+
+257
+00:10:13,919 --> 00:10:18,599
+cool which acts to cool the earth
+
+258
+00:10:28,559 --> 00:10:32,359
+with nitric acid
+
+259
+00:10:34,559 --> 00:10:38,879
+okay so
+
+260
+00:10:35,679 --> 00:10:40,639
+in the beginning at the top was input of
+
+261
+00:10:38,879 --> 00:10:42,159
+of ammonium emissions into an earth
+
+262
+00:10:40,639 --> 00:10:45,278
+system model
+
+263
+00:10:42,159 --> 00:10:47,439
+and it could be that some of you um
+
+264
+00:10:45,278 --> 00:10:49,360
+um are not really familiar with what we
+
+265
+00:10:47,440 --> 00:10:52,240
+mean by nurse system model so here's
+
+266
+00:10:49,360 --> 00:10:53,440
+kind of a timeline of how they're
+
+267
+00:10:52,240 --> 00:10:56,399
+developed
+
+268
+00:10:53,440 --> 00:10:59,279
+so in um 1896
+
+269
+00:10:56,399 --> 00:11:02,320
+1900 using hand calculations arrhenius
+
+270
+00:10:59,278 --> 00:11:05,278
+predicted five to six degree warming for
+
+271
+00:11:02,320 --> 00:11:05,278
+double co2
+
+272
+00:11:05,440 --> 00:11:09,680
+and then it waited almost a century
+
+273
+00:11:07,360 --> 00:11:12,320
+until general circulation models were
+
+274
+00:11:09,679 --> 00:11:14,559
+able to include double co2
+
+275
+00:11:12,320 --> 00:11:16,160
+and the difference between a hand
+
+276
+00:11:14,559 --> 00:11:18,159
+calculation in the
+
+277
+00:11:16,159 --> 00:11:20,319
+general circulation model large amount
+
+278
+00:11:18,159 --> 00:11:22,639
+of the of the earth and
+
+279
+00:11:20,320 --> 00:11:25,760
+an ocean was they allowed feedback due
+
+280
+00:11:22,639 --> 00:11:27,519
+to water vapor and clouds although
+
+281
+00:11:25,759 --> 00:11:32,240
+generally these models got about the
+
+282
+00:11:27,519 --> 00:11:34,320
+same result as arenas got by by hand
+
+283
+00:11:32,240 --> 00:11:36,799
+and then later on
+
+284
+00:11:34,320 --> 00:11:39,278
+okay you can predict the climate of the
+
+285
+00:11:36,799 --> 00:11:41,439
+um 20th century until you allow for the
+
+286
+00:11:39,278 --> 00:11:43,679
+cooling due to aerosol scattering these
+
+287
+00:11:41,440 --> 00:11:45,360
+were included in the late 1990s into
+
+288
+00:11:43,679 --> 00:11:47,759
+these models
+
+289
+00:11:45,360 --> 00:11:49,680
+and then around the early 2000s the
+
+290
+00:11:47,759 --> 00:11:52,319
+carbon cycle was incorporated because if
+
+291
+00:11:49,679 --> 00:11:54,239
+you add co2 to the atmosphere
+
+292
+00:11:52,320 --> 00:11:56,720
+it's taken up about half of it's taken
+
+293
+00:11:54,240 --> 00:11:59,360
+up by the ocean and the land
+
+294
+00:11:56,720 --> 00:12:01,440
+and so this allows if you want to
+
+295
+00:11:59,360 --> 00:12:03,839
+include a transient response if you want
+
+296
+00:12:01,440 --> 00:12:05,680
+to simulate the climate from the from
+
+297
+00:12:03,839 --> 00:12:08,320
+now into um
+
+298
+00:12:05,679 --> 00:12:09,278
+2100 you need to incorporate carbon
+
+299
+00:12:08,320 --> 00:12:11,040
+cycle
+
+300
+00:12:09,278 --> 00:12:12,958
+and if you incorporate a carbon cycle
+
+301
+00:12:11,039 --> 00:12:14,639
+you need nitrogen
+
+302
+00:12:12,958 --> 00:12:16,879
+and but nitrogen emissions were
+
+303
+00:12:14,639 --> 00:12:18,799
+generally not simulated and ammonia
+
+304
+00:12:16,879 --> 00:12:20,879
+missions were generally not simulated in
+
+305
+00:12:18,799 --> 00:12:23,278
+these models which is where this study
+
+306
+00:12:20,879 --> 00:12:23,278
+comes in
+
+307
+00:12:23,519 --> 00:12:26,639
+okay
+
+308
+00:12:24,639 --> 00:12:29,200
+so now i'm going to start talking about
+
+309
+00:12:26,639 --> 00:12:32,079
+the ammonia emission model in the middle
+
+310
+00:12:29,200 --> 00:12:35,040
+of um in the middle of a
+
+311
+00:12:32,078 --> 00:12:37,039
+earth system model their system model is
+
+312
+00:12:35,039 --> 00:12:39,919
+essentially
+
+313
+00:12:37,039 --> 00:12:42,799
+it's a numerical model it's formulated
+
+314
+00:12:39,919 --> 00:12:44,639
+as a number of grid squares
+
+315
+00:12:42,799 --> 00:12:48,078
+like here so they range in the
+
+316
+00:12:44,639 --> 00:12:49,919
+horizontal and in the vertical
+
+317
+00:12:48,078 --> 00:12:52,000
+and each square here each of these
+
+318
+00:12:49,919 --> 00:12:54,639
+square squares we have a model a
+
+319
+00:12:52,000 --> 00:12:57,120
+parameterization that simulates ammonia
+
+320
+00:12:54,639 --> 00:12:59,200
+emissions okay
+
+321
+00:12:57,120 --> 00:13:03,959
+so that's where so this is how it fits
+
+322
+00:12:59,200 --> 00:13:03,959
+in into this large scale model
+
+323
+00:13:06,958 --> 00:13:11,199
+and these are the questions
+
+324
+00:13:09,200 --> 00:13:12,879
+i remind you of the questions i want to
+
+325
+00:13:11,200 --> 00:13:14,800
+address from the beginning and these are
+
+326
+00:13:12,879 --> 00:13:18,320
+global questions how does ammonia
+
+327
+00:13:14,799 --> 00:13:20,799
+missions influence climate
+
+328
+00:13:18,320 --> 00:13:23,600
+so the idea is to take a essential
+
+329
+00:13:20,799 --> 00:13:25,599
+process level model by extend it to
+
+330
+00:13:23,600 --> 00:13:27,680
+global scales
+
+331
+00:13:25,600 --> 00:13:29,839
+and to do this we have to
+
+332
+00:13:27,679 --> 00:13:31,759
+simplify local details to a notable
+
+333
+00:13:29,839 --> 00:13:34,480
+global simulation so we can put all the
+
+334
+00:13:31,759 --> 00:13:36,319
+details in this kind of model many of
+
+335
+00:13:34,480 --> 00:13:39,120
+the details are not available globally
+
+336
+00:13:36,320 --> 00:13:42,240
+it's very hard to get details of
+
+337
+00:13:39,120 --> 00:13:45,278
+crop type soil type etc
+
+338
+00:13:42,240 --> 00:13:47,360
+fertilizer day etc globally
+
+339
+00:13:45,278 --> 00:13:48,799
+and the highly complex regional models
+
+340
+00:13:47,360 --> 00:13:50,720
+are not are pro
+
+341
+00:13:48,799 --> 00:13:52,159
+appropriate for global simulations
+
+342
+00:13:50,720 --> 00:13:53,920
+because the global simulations we're
+
+343
+00:13:52,159 --> 00:13:56,159
+simulating many things for simulating
+
+344
+00:13:53,919 --> 00:13:58,799
+the ocean the atmosphere
+
+345
+00:13:56,159 --> 00:14:01,120
+aerosols etc so we have to
+
+346
+00:13:58,799 --> 00:14:02,719
+simplify the model
+
+347
+00:14:01,120 --> 00:14:04,959
+we want to base this type of model in
+
+348
+00:14:02,720 --> 00:14:06,800
+physics and chemistry to the extent
+
+349
+00:14:04,958 --> 00:14:09,919
+possible
+
+350
+00:14:06,799 --> 00:14:11,519
+um because things are based on imperial
+
+351
+00:14:09,919 --> 00:14:14,078
+parameterizations
+
+352
+00:14:11,519 --> 00:14:16,560
+and won't be sensitive to
+
+353
+00:14:14,078 --> 00:14:18,399
+changes in temperatures changes in
+
+354
+00:14:16,559 --> 00:14:19,919
+precipitation
+
+355
+00:14:18,399 --> 00:14:21,679
+so so
+
+356
+00:14:19,919 --> 00:14:23,759
+if we base on basic physics and
+
+357
+00:14:21,679 --> 00:14:25,519
+chemistry then we think we can
+
+358
+00:14:23,759 --> 00:14:30,078
+incorporate the changes due to
+
+359
+00:14:25,519 --> 00:14:32,000
+precipitation and changes in temperature
+
+360
+00:14:30,078 --> 00:14:33,759
+modeling is an iterative procedure i
+
+361
+00:14:32,000 --> 00:14:35,360
+think it's important to remember that
+
+362
+00:14:33,759 --> 00:14:37,439
+i've talked about modeling here at
+
+363
+00:14:35,360 --> 00:14:39,039
+cornell and many times people so it's
+
+364
+00:14:37,440 --> 00:14:41,040
+too complicated how can you simulate
+
+365
+00:14:39,039 --> 00:14:42,240
+that forget it
+
+366
+00:14:41,039 --> 00:14:44,480
+and and
+
+367
+00:14:42,240 --> 00:14:46,079
+the thing to recognize is that
+
+368
+00:14:44,480 --> 00:14:48,079
+okay if you don't simulate it it's not
+
+369
+00:14:46,078 --> 00:14:48,799
+going to be in there so you can simulate
+
+370
+00:14:48,078 --> 00:14:50,799
+it
+
+371
+00:14:48,799 --> 00:14:54,159
+to zeroth order and you have some idea
+
+372
+00:14:50,799 --> 00:14:56,799
+of how it's going and you can improve it
+
+373
+00:14:54,159 --> 00:14:58,958
+so it's good to start somewhere
+
+374
+00:14:56,799 --> 00:15:00,879
+and so i'm interested in is examining
+
+375
+00:14:58,958 --> 00:15:02,319
+the response of the emissions to forcing
+
+376
+00:15:00,879 --> 00:15:05,360
+changes in climate temperature
+
+377
+00:15:02,320 --> 00:15:07,920
+precipitation eventually changes in
+
+378
+00:15:05,360 --> 00:15:07,919
+management
+
+379
+00:15:10,839 --> 00:15:17,839
+processes okay incidentally if anyone
+
+380
+00:15:13,039 --> 00:15:17,838
+has any questions ask me um as they go
+
+381
+00:15:19,039 --> 00:15:23,679
+i'd just like to contrast the model i'm
+
+382
+00:15:21,039 --> 00:15:26,480
+going to present with a standard model
+
+383
+00:15:23,679 --> 00:15:29,679
+so to most ammonia emissions in global
+
+384
+00:15:26,480 --> 00:15:32,800
+models are based on emission factors
+
+385
+00:15:29,679 --> 00:15:35,278
+so for example you take the
+
+386
+00:15:32,799 --> 00:15:37,519
+dairy cattle you take the kilogram
+
+387
+00:15:35,278 --> 00:15:40,078
+nitrogen per head per year
+
+388
+00:15:37,519 --> 00:15:41,198
+you multiply it by the
+
+389
+00:15:40,078 --> 00:15:43,278
+ammonia
+
+390
+00:15:41,198 --> 00:15:45,519
+loss and you get a number and that's why
+
+391
+00:15:43,278 --> 00:15:47,759
+you stick as your emissions in the model
+
+392
+00:15:45,519 --> 00:15:49,919
+and traditionally these have been split
+
+393
+00:15:47,759 --> 00:15:52,078
+into one region and two into two
+
+394
+00:15:49,919 --> 00:15:54,879
+different regions depending on whether
+
+395
+00:15:52,078 --> 00:15:57,359
+the agricultural practices were relevant
+
+396
+00:15:54,879 --> 00:15:59,360
+for developed countries or developing
+
+397
+00:15:57,360 --> 00:16:01,600
+countries so the standard type of models
+
+398
+00:15:59,360 --> 00:16:04,079
+people have used to predict global
+
+399
+00:16:01,600 --> 00:16:06,240
+nitrogen global ammonia emissions have
+
+400
+00:16:04,078 --> 00:16:07,278
+not included any temperature
+
+401
+00:16:06,240 --> 00:16:11,600
+or
+
+402
+00:16:07,278 --> 00:16:11,600
+dependence on temperature or rainfall
+
+403
+00:16:11,679 --> 00:16:15,519
+so what we do
+
+404
+00:16:13,278 --> 00:16:17,679
+is we take a fertilizer amount or manure
+
+405
+00:16:15,519 --> 00:16:19,278
+amount and we know this fairly well
+
+406
+00:16:17,679 --> 00:16:21,198
+there have been some studies that
+
+407
+00:16:19,278 --> 00:16:24,799
+published in nitrogen and fertilizer
+
+408
+00:16:21,198 --> 00:16:27,919
+nitrogen and manure globally
+
+409
+00:16:24,799 --> 00:16:30,159
+and we take this amount
+
+410
+00:16:27,919 --> 00:16:32,639
+and we feed it in
+
+411
+00:16:30,159 --> 00:16:36,360
+into a model for
+
+412
+00:16:32,639 --> 00:16:36,360
+fertilizer manure
+
+413
+00:16:36,639 --> 00:16:40,320
+and then this and then it can go
+
+414
+00:16:38,879 --> 00:16:42,639
+three ways
+
+415
+00:16:40,320 --> 00:16:44,399
+the nitrogen in there can go to wash off
+
+416
+00:16:42,639 --> 00:16:46,079
+if it rains
+
+417
+00:16:44,399 --> 00:16:48,320
+it can go into emissions and the
+
+418
+00:16:46,078 --> 00:16:50,159
+emissions depend on the meteorology they
+
+419
+00:16:48,320 --> 00:16:52,720
+depend on the wind speed and the
+
+420
+00:16:50,159 --> 00:16:54,078
+temperature and the um surface roughness
+
+421
+00:16:52,720 --> 00:16:55,278
+so they depend on the boundary
+
+422
+00:16:54,078 --> 00:16:56,159
+turbulence
+
+423
+00:16:55,278 --> 00:16:58,320
+and
+
+424
+00:16:56,159 --> 00:17:00,319
+temperature
+
+425
+00:16:58,320 --> 00:17:02,639
+or
+
+426
+00:17:00,320 --> 00:17:05,439
+the emission or the nitrogen
+
+427
+00:17:02,639 --> 00:17:07,038
+incorporated into fertilizer manure can
+
+428
+00:17:05,439 --> 00:17:10,160
+go into
+
+429
+00:17:07,038 --> 00:17:13,038
+the land model which is another part of
+
+430
+00:17:10,160 --> 00:17:15,759
+this larger system model and within the
+
+431
+00:17:13,038 --> 00:17:17,279
+land model the nitrogen is apportioned
+
+432
+00:17:15,759 --> 00:17:19,359
+to vegetation
+
+433
+00:17:17,279 --> 00:17:22,720
+to soil organic matter
+
+434
+00:17:19,359 --> 00:17:25,198
+it goes up and it denitrifies
+
+435
+00:17:22,720 --> 00:17:28,240
+it can go into leaching runoff
+
+436
+00:17:25,199 --> 00:17:29,519
+it can go into fires etc okay so this is
+
+437
+00:17:28,240 --> 00:17:31,279
+a base model
+
+438
+00:17:29,519 --> 00:17:33,599
+that's already incorporated and we're
+
+439
+00:17:31,279 --> 00:17:35,759
+adding this parameterization on top of
+
+440
+00:17:33,599 --> 00:17:35,759
+it
+
+441
+00:17:37,200 --> 00:17:42,000
+then we need another important thing in
+
+442
+00:17:39,519 --> 00:17:44,319
+these large scale models is to conserve
+
+443
+00:17:42,000 --> 00:17:47,038
+carbon and nitrogen so when you add
+
+444
+00:17:44,319 --> 00:17:48,159
+fertilizer this is new nitrogen created
+
+445
+00:17:47,038 --> 00:17:50,000
+so
+
+446
+00:17:48,160 --> 00:17:52,080
+you don't have to worry about that but
+
+447
+00:17:50,000 --> 00:17:55,119
+from in the work manure comes from
+
+448
+00:17:52,079 --> 00:17:57,759
+nitrogen that's eaten from the plants
+
+449
+00:17:55,119 --> 00:17:58,719
+so you have cows eat plants
+
+450
+00:17:57,759 --> 00:18:00,720
+they
+
+451
+00:17:58,720 --> 00:18:02,400
+excrete manure
+
+452
+00:18:00,720 --> 00:18:05,279
+and then you have to have then you have
+
+453
+00:18:02,400 --> 00:18:07,440
+to um take the um carbon and nitrogen
+
+454
+00:18:05,279 --> 00:18:09,200
+out of the plants
+
+455
+00:18:07,440 --> 00:18:11,200
+to make them ignore so these type of
+
+456
+00:18:09,200 --> 00:18:13,360
+models is very important to conserve
+
+457
+00:18:11,200 --> 00:18:15,200
+carbon and nitrogen because you want to
+
+458
+00:18:13,359 --> 00:18:18,240
+look at how these
+
+459
+00:18:15,200 --> 00:18:18,240
+how the budgets change
+
+460
+00:18:21,839 --> 00:18:25,678
+okay this is um
+
+461
+00:18:23,440 --> 00:18:29,840
+this is a cow for stuart stewart
+
+462
+00:18:25,679 --> 00:18:29,840
+scottish so i think is a scottish cow
+
+463
+00:18:30,240 --> 00:18:32,400
+so
+
+464
+00:18:32,480 --> 00:18:36,160
+what we've done if we have a
+
+465
+00:18:34,720 --> 00:18:38,400
+pool
+
+466
+00:18:36,160 --> 00:18:38,400
+of
+
+467
+00:18:38,720 --> 00:18:43,038
+ammonic nitrogen here
+
+468
+00:18:40,960 --> 00:18:43,919
+as i said this can wash off it can go to
+
+469
+00:18:43,038 --> 00:18:45,839
+gas
+
+470
+00:18:43,919 --> 00:18:49,038
+or it can go into the land model to the
+
+471
+00:18:45,839 --> 00:18:49,038
+nitrogen pools here
+
+472
+00:18:49,359 --> 00:18:53,038
+fertilizer goes into this pool
+
+473
+00:18:53,279 --> 00:18:57,678
+as does
+
+474
+00:18:54,960 --> 00:18:59,919
+um manure
+
+475
+00:18:57,679 --> 00:19:02,320
+and manure is divided into three
+
+476
+00:18:59,919 --> 00:19:03,759
+separate pools depending on how fast
+
+477
+00:19:02,319 --> 00:19:05,038
+it's broken down
+
+478
+00:19:03,759 --> 00:19:06,558
+by
+
+479
+00:19:05,038 --> 00:19:08,879
+bacteria
+
+480
+00:19:06,558 --> 00:19:11,200
+okay and then again there's a cycle from
+
+481
+00:19:08,880 --> 00:19:13,840
+the land model back to the plants to
+
+482
+00:19:11,200 --> 00:19:16,640
+conserve the carbon and nitrogen from
+
+483
+00:19:13,839 --> 00:19:16,639
+from the manure
+
+484
+00:19:17,839 --> 00:19:21,759
+tan
+
+485
+00:19:18,960 --> 00:19:24,759
+total and molnenko nitrogen
+
+486
+00:19:21,759 --> 00:19:24,759
+okay
+
+487
+00:19:30,720 --> 00:19:36,240
+so for fertilizer it goes into a pool
+
+488
+00:19:34,319 --> 00:19:38,240
+so you add the fertilizer to this pool
+
+489
+00:19:36,240 --> 00:19:41,279
+this quickly decays it depends on the
+
+490
+00:19:38,240 --> 00:19:43,440
+temperature how fast it decays
+
+491
+00:19:41,279 --> 00:19:45,200
+and it goes into tan pool for simplicity
+
+492
+00:19:43,440 --> 00:19:47,759
+we only apply the fertilizer towards the
+
+493
+00:19:45,200 --> 00:19:49,519
+beginning of the growing season
+
+494
+00:19:47,759 --> 00:19:50,720
+when planting conditions for corn are
+
+495
+00:19:49,519 --> 00:19:52,879
+met
+
+496
+00:19:50,720 --> 00:19:55,440
+and this is determined from meteorology
+
+497
+00:19:52,880 --> 00:19:56,960
+so if the growing so if it gets warmer
+
+498
+00:19:55,440 --> 00:19:59,440
+in the spring
+
+499
+00:19:56,960 --> 00:20:01,679
+this this fertilization application will
+
+500
+00:19:59,440 --> 00:20:03,759
+occur warmer or warm years you'll hear a
+
+501
+00:20:01,679 --> 00:20:05,200
+different time than cold years
+
+502
+00:20:03,759 --> 00:20:07,359
+and throughout we don't consider
+
+503
+00:20:05,200 --> 00:20:09,360
+agricultural practices in the models so
+
+504
+00:20:07,359 --> 00:20:13,199
+agriculture management is going to have
+
+505
+00:20:09,359 --> 00:20:13,199
+to be added on at a later stage
+
+506
+00:20:18,400 --> 00:20:20,880
+okay
+
+507
+00:20:19,200 --> 00:20:22,480
+manure
+
+508
+00:20:20,880 --> 00:20:24,160
+as i said it goes into three different
+
+509
+00:20:22,480 --> 00:20:27,279
+pools
+
+510
+00:20:24,160 --> 00:20:30,080
+this is a tan pool here these pools
+
+511
+00:20:27,279 --> 00:20:33,038
+these available resistant unavailable
+
+512
+00:20:30,079 --> 00:20:34,399
+decay at different at different rates
+
+513
+00:20:33,038 --> 00:20:36,879
+they break down at different weight
+
+514
+00:20:34,400 --> 00:20:39,280
+rates depending on temperature so one
+
+515
+00:20:36,880 --> 00:20:41,280
+day for this available pool
+
+516
+00:20:39,279 --> 00:20:43,200
+much longer for this resistant pool and
+
+517
+00:20:41,279 --> 00:20:47,720
+this unavailable pole essentially gets
+
+518
+00:20:43,200 --> 00:20:47,720
+incorporated into the soils
+
+519
+00:20:49,200 --> 00:20:52,960
+we assume the manure is spread on the
+
+520
+00:20:50,880 --> 00:20:54,799
+fields continually
+
+521
+00:20:52,960 --> 00:20:57,600
+throughout the year and again this is a
+
+522
+00:20:54,798 --> 00:21:00,639
+place where we decided not to consider
+
+523
+00:20:57,599 --> 00:21:02,558
+agricultural practices
+
+524
+00:21:00,640 --> 00:21:04,720
+by putting on the fields a few times or
+
+525
+00:21:02,558 --> 00:21:06,798
+keeping the cattle in stockyards etc we
+
+526
+00:21:04,720 --> 00:21:09,600
+just assumed it was spread continually
+
+527
+00:21:06,798 --> 00:21:09,599
+onto the fields
+
+528
+00:21:11,200 --> 00:21:15,600
+okay and then the tan pool what goes on
+
+529
+00:21:13,279 --> 00:21:18,639
+in here
+
+530
+00:21:15,599 --> 00:21:20,158
+we essentially have an equation for the
+
+531
+00:21:18,640 --> 00:21:22,240
+ammonia gas
+
+532
+00:21:20,159 --> 00:21:23,600
+that's an equilibrium within a water
+
+533
+00:21:22,240 --> 00:21:26,480
+solution
+
+534
+00:21:23,599 --> 00:21:26,480
+within this pool
+
+535
+00:21:26,640 --> 00:21:30,960
+so the gas depends on the amount of n in
+
+536
+00:21:28,960 --> 00:21:32,720
+this pool
+
+537
+00:21:30,960 --> 00:21:34,319
+and then there's some rate constants
+
+538
+00:21:32,720 --> 00:21:37,120
+below it depends on
+
+539
+00:21:34,319 --> 00:21:39,678
+on the ph and some henry's law rate
+
+540
+00:21:37,119 --> 00:21:42,000
+constants as given here
+
+541
+00:21:39,679 --> 00:21:43,679
+and it depends on the amount of water in
+
+542
+00:21:42,000 --> 00:21:47,919
+the pool so we have to predict the
+
+543
+00:21:43,679 --> 00:21:47,919
+amount of water also in the scan pool
+
+544
+00:21:49,119 --> 00:21:53,839
+and the rate equations are such that the
+
+545
+00:21:51,839 --> 00:21:55,839
+gas
+
+546
+00:21:53,839 --> 00:21:58,079
+the amount of gas emitted
+
+547
+00:21:55,839 --> 00:22:00,319
+increases exponentially with temperature
+
+548
+00:21:58,079 --> 00:22:03,119
+so there's an exponential temperature
+
+549
+00:22:00,319 --> 00:22:05,839
+increase here as uh as this as this
+
+550
+00:22:03,119 --> 00:22:08,239
+warms it becomes less soluble to ammonia
+
+551
+00:22:05,839 --> 00:22:12,359
+and there's more ammonia gas sitting
+
+552
+00:22:08,240 --> 00:22:12,359
+right on the boundary of the pool
+
+553
+00:22:13,599 --> 00:22:17,678
+okay
+
+554
+00:22:15,599 --> 00:22:20,959
+oops
+
+555
+00:22:17,679 --> 00:22:22,880
+let's do this emissions
+
+556
+00:22:20,960 --> 00:22:24,640
+our century proportional
+
+557
+00:22:22,880 --> 00:22:26,559
+to the amount of gas sitting on the
+
+558
+00:22:24,640 --> 00:22:28,320
+boundary of the tan pool minus the
+
+559
+00:22:26,558 --> 00:22:31,038
+amount in the atmosphere divided by some
+
+560
+00:22:28,319 --> 00:22:31,038
+resistances
+
+561
+00:22:32,798 --> 00:22:39,119
+okay and then this we take the wash off
+
+562
+00:22:36,240 --> 00:22:42,000
+from the global news model
+
+563
+00:22:39,119 --> 00:22:44,639
+run off from the tan pool
+
+564
+00:22:42,000 --> 00:22:46,960
+okay and then there's um
+
+565
+00:22:44,640 --> 00:22:50,559
+conversion from the tan pool to the soil
+
+566
+00:22:46,960 --> 00:22:52,558
+pool which we simply
+
+567
+00:22:50,558 --> 00:22:55,599
+account for as diffusion either of
+
+568
+00:22:52,558 --> 00:22:58,399
+ammonium or nitrate and it has different
+
+569
+00:22:55,599 --> 00:22:58,399
+diffusion rates
+
+570
+00:23:00,480 --> 00:23:03,759
+okay so i think i talked about these
+
+571
+00:23:02,319 --> 00:23:06,158
+assumptions
+
+572
+00:23:03,759 --> 00:23:08,240
+let's go on to the
+
+573
+00:23:06,159 --> 00:23:10,799
+results
+
+574
+00:23:08,240 --> 00:23:13,440
+so this is a distribution from potter
+
+575
+00:23:10,798 --> 00:23:15,038
+head off 2010
+
+576
+00:23:13,440 --> 00:23:18,480
+of nitrogen
+
+577
+00:23:15,038 --> 00:23:20,720
+from manure and nitrogen from
+
+578
+00:23:18,480 --> 00:23:21,759
+fertilizer
+
+579
+00:23:20,720 --> 00:23:24,319
+and
+
+580
+00:23:21,759 --> 00:23:25,839
+one can see for both menu and fertilizer
+
+581
+00:23:24,319 --> 00:23:26,879
+they are um
+
+582
+00:23:25,839 --> 00:23:29,119
+europe
+
+583
+00:23:26,880 --> 00:23:31,120
+india china
+
+584
+00:23:29,119 --> 00:23:32,719
+midwest here are
+
+585
+00:23:31,119 --> 00:23:34,839
+our
+
+586
+00:23:32,720 --> 00:23:36,960
+areas of heavy
+
+587
+00:23:34,839 --> 00:23:39,599
+application and then from manure it
+
+588
+00:23:36,960 --> 00:23:40,960
+brings in a number of other areas brazil
+
+589
+00:23:39,599 --> 00:23:43,119
+here
+
+590
+00:23:40,960 --> 00:23:46,000
+sub-saharan africa
+
+591
+00:23:43,119 --> 00:23:47,918
+across this region here
+
+592
+00:23:46,000 --> 00:23:49,599
+okay so this is used as input to the
+
+593
+00:23:47,919 --> 00:23:51,600
+model
+
+594
+00:23:49,599 --> 00:23:54,000
+and then we see what then we see what
+
+595
+00:23:51,599 --> 00:23:54,000
+happens
+
+596
+00:23:55,440 --> 00:24:01,519
+and so we predict nitrogen emissions
+
+597
+00:23:59,440 --> 00:24:02,798
+um this is the 10-year average in the
+
+598
+00:24:01,519 --> 00:24:05,279
+model
+
+599
+00:24:02,798 --> 00:24:08,000
+this is from manure this is from
+
+600
+00:24:05,279 --> 00:24:08,000
+fertilizer
+
+601
+00:24:08,640 --> 00:24:13,840
+and again for the nitrogen emissions you
+
+602
+00:24:10,720 --> 00:24:15,839
+can see these hot spots over india
+
+603
+00:24:13,839 --> 00:24:18,558
+and china
+
+604
+00:24:15,839 --> 00:24:21,759
+you can see hot spots here over
+
+605
+00:24:18,558 --> 00:24:21,759
+on this part of africa
+
+606
+00:24:21,919 --> 00:24:26,559
+india etc and this is because
+
+607
+00:24:24,720 --> 00:24:30,000
+the emissions increase exponentially
+
+608
+00:24:26,558 --> 00:24:32,399
+with temperature so you warm temperature
+
+609
+00:24:30,000 --> 00:24:34,558
+you get more fraction of the amount of
+
+610
+00:24:32,400 --> 00:24:36,000
+the tan pool that evaporates as
+
+611
+00:24:34,558 --> 00:24:38,399
+emissions
+
+612
+00:24:36,000 --> 00:24:40,798
+yeah are these emissions from the
+
+613
+00:24:38,400 --> 00:24:40,798
+surface
+
+614
+00:24:43,200 --> 00:24:48,640
+these are from the
+
+615
+00:24:44,839 --> 00:24:50,399
+surface but the units are kilograms per
+
+616
+00:24:48,640 --> 00:24:51,679
+year per hectare
+
+617
+00:24:50,400 --> 00:24:56,679
+right so they're
+
+618
+00:24:51,679 --> 00:24:56,679
+surface emissions per unit area per year
+
+619
+00:25:04,079 --> 00:25:08,480
+okay so
+
+620
+00:25:05,440 --> 00:25:10,798
+um yeah so what we do is we account for
+
+621
+00:25:08,480 --> 00:25:14,000
+a canopy capture of the emissions so
+
+622
+00:25:10,798 --> 00:25:15,918
+once we once we put the once we so this
+
+623
+00:25:14,000 --> 00:25:18,159
+is we're looking at the emissions from
+
+624
+00:25:15,919 --> 00:25:19,840
+the land model once we connect it to the
+
+625
+00:25:18,159 --> 00:25:21,760
+atmosphere then we'll be able to
+
+626
+00:25:19,839 --> 00:25:23,918
+simulate how much goes up and how much
+
+627
+00:25:21,759 --> 00:25:26,640
+goes down so you so you're right there's
+
+628
+00:25:23,919 --> 00:25:29,200
+a bi-directional flux of ammonia that's
+
+629
+00:25:26,640 --> 00:25:32,159
+very hard to simulate so here we assume
+
+630
+00:25:29,200 --> 00:25:33,919
+some canopy capture from some
+
+631
+00:25:32,159 --> 00:25:35,440
+numbers in the literature but that is
+
+632
+00:25:33,919 --> 00:25:37,759
+one of the assumptions that will be
+
+633
+00:25:35,440 --> 00:25:37,759
+changed
+
+634
+00:25:40,159 --> 00:25:43,200
+so here
+
+635
+00:25:41,440 --> 00:25:44,400
+again you can see in these
+
+636
+00:25:43,200 --> 00:25:46,720
+over india
+
+637
+00:25:44,400 --> 00:25:49,120
+sub-saharan africa where it's warm a
+
+638
+00:25:46,720 --> 00:25:51,440
+large percentage of the
+
+639
+00:25:49,119 --> 00:25:54,479
+emit a large percentage of the ammonia
+
+640
+00:25:51,440 --> 00:25:56,960
+and the emissions are released
+
+641
+00:25:54,480 --> 00:26:00,360
+as ammonia gas into the
+
+642
+00:25:56,960 --> 00:26:00,360
+into the atmosphere
+
+643
+00:26:08,798 --> 00:26:11,798
+okay
+
+644
+00:26:28,240 --> 00:26:31,240
+okay
+
+645
+00:26:48,200 --> 00:26:53,038
+the u.s to be much higher in
+
+646
+00:27:00,720 --> 00:27:08,079
+okay well i mean there are two things in
+
+647
+00:27:02,798 --> 00:27:09,679
+your question one is um the database
+
+648
+00:27:08,079 --> 00:27:12,158
+i mean maybe
+
+649
+00:27:09,679 --> 00:27:15,120
+i mean this is one of the best databases
+
+650
+00:27:12,159 --> 00:27:16,799
+available and what they did is they to
+
+651
+00:27:15,119 --> 00:27:18,479
+combine this they took
+
+652
+00:27:16,798 --> 00:27:20,639
+um
+
+653
+00:27:18,480 --> 00:27:23,440
+they counted animals in each country and
+
+654
+00:27:20,640 --> 00:27:24,799
+they took information from fao
+
+655
+00:27:23,440 --> 00:27:28,480
+etc
+
+656
+00:27:24,798 --> 00:27:30,000
+and so this is the best as far as i know
+
+657
+00:27:28,480 --> 00:27:32,558
+um
+
+658
+00:27:30,000 --> 00:27:35,200
+database for fertilizer and animals now
+
+659
+00:27:32,558 --> 00:27:36,960
+maybe it might not be correct i i i
+
+660
+00:27:35,200 --> 00:27:38,720
+don't know but this is i mean this is
+
+661
+00:27:36,960 --> 00:27:41,440
+exactly one of the problems in trying to
+
+662
+00:27:38,720 --> 00:27:43,440
+apply these things globally is that we
+
+663
+00:27:41,440 --> 00:27:46,440
+just don't have that good data
+
+664
+00:27:43,440 --> 00:27:46,440
+okay
+
+665
+00:27:49,200 --> 00:27:55,440
+okay so evaluation
+
+666
+00:27:52,000 --> 00:27:58,159
+how do we how do we do i want to um
+
+667
+00:27:55,440 --> 00:27:59,840
+go over this pretty quickly
+
+668
+00:27:58,159 --> 00:28:02,080
+um because here i'm showing some
+
+669
+00:27:59,839 --> 00:28:04,639
+evaluations from previous versions of
+
+670
+00:28:02,079 --> 00:28:06,879
+the model though i expect it will be
+
+671
+00:28:04,640 --> 00:28:07,919
+similar in these in this in this current
+
+672
+00:28:06,880 --> 00:28:10,000
+version
+
+673
+00:28:07,919 --> 00:28:13,919
+and this shows
+
+674
+00:28:10,000 --> 00:28:13,919
+manure emissions versus
+
+675
+00:28:14,798 --> 00:28:19,519
+model versus measurement
+
+676
+00:28:17,119 --> 00:28:21,599
+r square is .84
+
+677
+00:28:19,519 --> 00:28:24,639
+annual the average amount percent
+
+678
+00:28:21,599 --> 00:28:27,278
+evaporation changes from five to ninety
+
+679
+00:28:24,640 --> 00:28:28,720
+ninety percent and one can tell this
+
+680
+00:28:27,278 --> 00:28:31,278
+correlation between the model and
+
+681
+00:28:28,720 --> 00:28:33,200
+measurements is largely driven by this
+
+682
+00:28:31,278 --> 00:28:34,398
+change in temperature when temperatures
+
+683
+00:28:33,200 --> 00:28:36,399
+high you get
+
+684
+00:28:34,398 --> 00:28:38,479
+large emissions of ammonia might be
+
+685
+00:28:36,398 --> 00:28:40,959
+expected
+
+686
+00:28:38,480 --> 00:28:43,679
+correlation with um
+
+687
+00:28:40,960 --> 00:28:44,960
+fertilizer is not as good but still
+
+688
+00:28:43,679 --> 00:28:47,519
+significant
+
+689
+00:28:44,960 --> 00:28:49,679
+and here again it's probably driven by
+
+690
+00:28:47,519 --> 00:28:51,918
+temperature we've looked at different
+
+691
+00:28:49,679 --> 00:28:54,559
+um emissions some fertilizer different
+
+692
+00:28:51,919 --> 00:28:54,559
+latitudes
+
+693
+00:28:54,880 --> 00:28:59,278
+okay i should say um
+
+694
+00:28:56,960 --> 00:29:01,440
+as this has already been brought up
+
+695
+00:28:59,278 --> 00:29:03,278
+valuing on the emissions are
+
+696
+00:29:01,440 --> 00:29:05,120
+very difficult
+
+697
+00:29:03,278 --> 00:29:06,640
+the concentrations are not well
+
+698
+00:29:05,119 --> 00:29:08,479
+characterized
+
+699
+00:29:06,640 --> 00:29:11,038
+missions are bi-directional they can be
+
+700
+00:29:08,480 --> 00:29:12,960
+up and down depending on the
+
+701
+00:29:11,038 --> 00:29:14,158
+time of day
+
+702
+00:29:12,960 --> 00:29:15,679
+ground-based measurements are
+
+703
+00:29:14,159 --> 00:29:17,039
+challenging they're highly dependent on
+
+704
+00:29:15,679 --> 00:29:18,798
+meteorology
+
+705
+00:29:17,038 --> 00:29:20,558
+and the emissions are captured by the
+
+706
+00:29:18,798 --> 00:29:23,918
+canopy and describe a rather complex
+
+707
+00:29:20,558 --> 00:29:25,038
+resistance model so it's a is is
+
+708
+00:29:23,919 --> 00:29:28,640
+when you make a model you have to
+
+709
+00:29:25,038 --> 00:29:31,038
+evaluate it but evaluation here is um is
+
+710
+00:29:28,640 --> 00:29:33,200
+is challenging
+
+711
+00:29:31,038 --> 00:29:34,798
+so another way to evaluate a model is to
+
+712
+00:29:33,200 --> 00:29:37,519
+compare it against
+
+713
+00:29:34,798 --> 00:29:40,879
+other emission inventories
+
+714
+00:29:37,519 --> 00:29:43,119
+so in each of these diagrams is the is
+
+715
+00:29:40,880 --> 00:29:44,960
+our emission inventory
+
+716
+00:29:43,119 --> 00:29:47,759
+this is the most recent one which has
+
+717
+00:29:44,960 --> 00:29:49,679
+come from a data inversion
+
+718
+00:29:47,759 --> 00:29:51,839
+it's another one which is
+
+719
+00:29:49,679 --> 00:29:54,559
+has developed within the last four years
+
+720
+00:29:51,839 --> 00:29:58,000
+and this is a standard one used by
+
+721
+00:29:54,558 --> 00:30:00,720
+global atmospheric fathers
+
+722
+00:29:58,000 --> 00:30:03,759
+these are split between manure
+
+723
+00:30:00,720 --> 00:30:06,000
+and fertilization emissions
+
+724
+00:30:03,759 --> 00:30:08,798
+we can see that we our emission
+
+725
+00:30:06,000 --> 00:30:10,798
+inventory is about all of them in fact
+
+726
+00:30:08,798 --> 00:30:13,599
+are about the same
+
+727
+00:30:10,798 --> 00:30:16,079
+about the same amount of nitrogen
+
+728
+00:30:13,599 --> 00:30:18,158
+are split between
+
+729
+00:30:16,079 --> 00:30:20,319
+fur emissions ammonia emissions from
+
+730
+00:30:18,159 --> 00:30:22,320
+fertilizer and manure
+
+731
+00:30:20,319 --> 00:30:23,119
+is a little bit different than these two
+
+732
+00:30:22,319 --> 00:30:25,759
+we
+
+733
+00:30:23,119 --> 00:30:28,158
+show more fertilizer less manure
+
+734
+00:30:25,759 --> 00:30:32,480
+so it's between this one and this one by
+
+735
+00:30:28,159 --> 00:30:34,799
+edgar so we write like right between
+
+736
+00:30:32,480 --> 00:30:37,599
+i should say that all these inventories
+
+737
+00:30:34,798 --> 00:30:41,278
+here it's a great deal of uncertainty on
+
+738
+00:30:37,599 --> 00:30:45,038
+these on these global numbers
+
+739
+00:30:41,278 --> 00:30:45,038
+if we can look at different regions
+
+740
+00:30:46,798 --> 00:30:51,679
+our u.s emissions so this is
+
+741
+00:30:49,519 --> 00:30:54,319
+us us and us
+
+742
+00:30:51,679 --> 00:30:55,600
+china notice that the scale is one as
+
+743
+00:30:54,319 --> 00:30:57,519
+212.
+
+744
+00:30:55,599 --> 00:31:00,558
+u.s and europe is
+
+745
+00:30:57,519 --> 00:31:00,558
+to 4.5
+
+746
+00:31:02,240 --> 00:31:05,679
+so all of the all the emission
+
+747
+00:31:03,839 --> 00:31:08,319
+inventories predict higher emissions in
+
+748
+00:31:05,679 --> 00:31:09,200
+china that even though then over the u.s
+
+749
+00:31:08,319 --> 00:31:11,678
+and
+
+750
+00:31:09,200 --> 00:31:13,840
+and europe
+
+751
+00:31:11,679 --> 00:31:16,080
+our emissions over the u.s are higher
+
+752
+00:31:13,839 --> 00:31:17,599
+than these other inventories largely
+
+753
+00:31:16,079 --> 00:31:19,839
+because we have larger fertilizer
+
+754
+00:31:17,599 --> 00:31:22,000
+emissions
+
+755
+00:31:19,839 --> 00:31:23,278
+same with um in over europe
+
+756
+00:31:22,000 --> 00:31:24,319
+where
+
+757
+00:31:23,278 --> 00:31:26,079
+where our
+
+758
+00:31:24,319 --> 00:31:27,839
+manure emissions are a little bit lower
+
+759
+00:31:26,079 --> 00:31:30,240
+than some of these obvious
+
+760
+00:31:27,839 --> 00:31:32,000
+but generally considering
+
+761
+00:31:30,240 --> 00:31:32,880
+the um what we're trying to do in this
+
+762
+00:31:32,000 --> 00:31:34,159
+model
+
+763
+00:31:32,880 --> 00:31:36,159
+um
+
+764
+00:31:34,159 --> 00:31:38,720
+we're pretty pleased with with with
+
+765
+00:31:36,159 --> 00:31:41,278
+these results we're capturing the um
+
+766
+00:31:38,720 --> 00:31:43,679
+emissions
+
+767
+00:31:41,278 --> 00:31:45,440
+within the range of the other emission
+
+768
+00:31:43,679 --> 00:31:48,000
+inventories where there's a great deal
+
+769
+00:31:45,440 --> 00:31:48,000
+fair also
+
+770
+00:31:56,000 --> 00:32:01,480
+yes we do
+
+771
+00:31:58,480 --> 00:32:01,480
+yeah
+
+772
+00:32:03,839 --> 00:32:06,959
+yes
+
+773
+00:32:04,720 --> 00:32:08,798
+yeah so we assume fifty percent of the
+
+774
+00:32:06,960 --> 00:32:10,798
+nitrogen is from year and fifty percent
+
+775
+00:32:08,798 --> 00:32:14,918
+from in newark and then the manure piles
+
+776
+00:32:10,798 --> 00:32:14,918
+have different rates of breakdown
+
+777
+00:32:17,440 --> 00:32:21,440
+okay so um oops
+
+778
+00:32:23,119 --> 00:32:27,839
+okay so once the manure is in this tan
+
+779
+00:32:25,839 --> 00:32:30,000
+pool then there are different ways it
+
+780
+00:32:27,839 --> 00:32:32,319
+can go it can volatilize to the
+
+781
+00:32:30,000 --> 00:32:34,558
+atmosphere has competed so
+
+782
+00:32:32,319 --> 00:32:36,720
+if it's washed out a lot it won't fall
+
+783
+00:32:34,558 --> 00:32:40,158
+to lies as much
+
+784
+00:32:36,720 --> 00:32:44,240
+and so this shows the runoff from manure
+
+785
+00:32:40,159 --> 00:32:46,640
+and runoff from fertilizer
+
+786
+00:32:44,240 --> 00:32:48,640
+one can see the runoff in these models
+
+787
+00:32:46,640 --> 00:32:50,000
+again as concentrated as one might
+
+788
+00:32:48,640 --> 00:32:52,159
+expect in
+
+789
+00:32:50,000 --> 00:32:53,679
+regions of high application and in moist
+
+790
+00:32:52,159 --> 00:32:57,360
+regions
+
+791
+00:32:53,679 --> 00:32:58,798
+eastern u.s europe china and india shown
+
+792
+00:32:57,359 --> 00:33:00,558
+here
+
+793
+00:32:58,798 --> 00:33:04,319
+fertilizer manure and that's this
+
+794
+00:33:00,558 --> 00:33:05,200
+percent runoff so again as these regions
+
+795
+00:33:04,319 --> 00:33:06,319
+um
+
+796
+00:33:05,200 --> 00:33:08,080
+china
+
+797
+00:33:06,319 --> 00:33:08,960
+europe has quite a high percent eastern
+
+798
+00:33:08,079 --> 00:33:10,960
+us
+
+799
+00:33:08,960 --> 00:33:12,880
+in this region and over
+
+800
+00:33:10,960 --> 00:33:14,960
+brazil in both
+
+801
+00:33:12,880 --> 00:33:17,440
+fertilizer and and
+
+802
+00:33:14,960 --> 00:33:18,399
+manure so this is one of the things
+
+803
+00:33:17,440 --> 00:33:20,960
+that
+
+804
+00:33:18,398 --> 00:33:23,359
+we can use this model to do is that in
+
+805
+00:33:20,960 --> 00:33:26,558
+the future as precipitation changes
+
+806
+00:33:23,359 --> 00:33:29,278
+presumably these patterns of manure loss
+
+807
+00:33:26,558 --> 00:33:31,359
+due to runoff will also also change in
+
+808
+00:33:29,278 --> 00:33:31,359
+the
+
+809
+00:33:36,839 --> 00:33:42,398
+future yeah so this is surface runoff
+
+810
+00:33:39,759 --> 00:33:44,079
+there will be additional runoff
+
+811
+00:33:42,398 --> 00:33:45,839
+from leaching once it gets once the
+
+812
+00:33:44,079 --> 00:33:48,000
+nitrogen from there goes into soil so it
+
+813
+00:33:45,839 --> 00:33:49,678
+can be run off first but this is this is
+
+814
+00:33:48,000 --> 00:33:53,359
+surf deep
+
+815
+00:33:49,679 --> 00:33:53,360
+no no it's not yeah
+
+816
+00:33:56,880 --> 00:34:02,720
+so in a um in another work again this is
+
+817
+00:33:59,919 --> 00:34:04,960
+preliminary results it's uh from cindy
+
+818
+00:34:02,720 --> 00:34:08,079
+nevison and all and what she's doing
+
+819
+00:34:04,960 --> 00:34:10,000
+it's looking at observed river export of
+
+820
+00:34:08,079 --> 00:34:12,639
+nitrogen
+
+821
+00:34:10,000 --> 00:34:15,358
+from rivers around the world
+
+822
+00:34:12,639 --> 00:34:18,079
+and we can also calculate this quantity
+
+823
+00:34:15,358 --> 00:34:20,078
+in in the model i mean the calculation
+
+824
+00:34:18,079 --> 00:34:22,560
+is indirect we need to know how the
+
+825
+00:34:20,079 --> 00:34:25,200
+rivers run how much of the nitrogen in
+
+826
+00:34:22,559 --> 00:34:26,320
+the rivers is denitrified but one can
+
+827
+00:34:25,199 --> 00:34:28,319
+see
+
+828
+00:34:26,320 --> 00:34:30,320
+it's a way of bounding
+
+829
+00:34:28,320 --> 00:34:31,919
+is another way of constraining these
+
+830
+00:34:30,320 --> 00:34:35,200
+type of parameterizations in earth
+
+831
+00:34:31,918 --> 00:34:36,559
+system models by looking at the runoff
+
+832
+00:34:35,199 --> 00:34:40,480
+in
+
+833
+00:34:36,559 --> 00:34:40,480
+in rivers which sure is pretty good data
+
+834
+00:34:44,079 --> 00:34:49,440
+global fate of applied nitrogen
+
+835
+00:34:48,079 --> 00:34:51,200
+fertilizer
+
+836
+00:34:49,440 --> 00:34:53,440
+the emissions are
+
+837
+00:34:51,199 --> 00:34:54,799
+globally just under
+
+838
+00:34:53,440 --> 00:34:55,679
+25
+
+839
+00:34:54,800 --> 00:34:58,000
+the
+
+840
+00:34:55,679 --> 00:35:00,480
+runoff is a little bit higher
+
+841
+00:34:58,000 --> 00:35:02,800
+and most of it goes into the
+
+842
+00:35:00,480 --> 00:35:04,719
+soil
+
+843
+00:35:02,800 --> 00:35:06,640
+for the manure because the manure is
+
+844
+00:35:04,719 --> 00:35:08,879
+applied slowly throughout the years not
+
+845
+00:35:06,639 --> 00:35:11,759
+applied as quickly
+
+846
+00:35:08,880 --> 00:35:14,640
+you see there's less ammonia emissions
+
+847
+00:35:11,760 --> 00:35:17,839
+less runoff and more gets into the more
+
+848
+00:35:14,639 --> 00:35:17,838
+it gets into the soil
+
+849
+00:35:19,679 --> 00:35:22,879
+okay one looks at developing countries
+
+850
+00:35:21,838 --> 00:35:25,519
+or
+
+851
+00:35:22,880 --> 00:35:27,760
+developed countries
+
+852
+00:35:25,519 --> 00:35:29,119
+developing countries tend to occur where
+
+853
+00:35:27,760 --> 00:35:31,839
+it's
+
+854
+00:35:29,119 --> 00:35:31,838
+warmer
+
+855
+00:35:32,400 --> 00:35:36,320
+and
+
+856
+00:35:34,159 --> 00:35:40,159
+and you can see that in
+
+857
+00:35:36,320 --> 00:35:42,559
+developing developing countries that the
+
+858
+00:35:40,159 --> 00:35:45,598
+emissions ammonia emissions
+
+859
+00:35:42,559 --> 00:35:48,559
+generally are higher than in these
+
+860
+00:35:45,599 --> 00:35:49,760
+developed countries this is global
+
+861
+00:35:48,559 --> 00:35:50,719
+us
+
+862
+00:35:49,760 --> 00:35:53,359
+europe
+
+863
+00:35:50,719 --> 00:35:55,759
+india china
+
+864
+00:35:53,358 --> 00:35:57,519
+so you can see europe there's quite a in
+
+865
+00:35:55,760 --> 00:36:00,160
+these calculations there's quite a bit
+
+866
+00:35:57,519 --> 00:36:02,639
+high ammonia emission so this this may
+
+867
+00:36:00,159 --> 00:36:05,279
+have to do partly with when we apply the
+
+868
+00:36:02,639 --> 00:36:05,279
+fertilizer
+
+869
+00:36:08,719 --> 00:36:13,000
+yeah this is largely temperature
+
+870
+00:36:17,920 --> 00:36:22,400
+so we assume the so it does have a
+
+871
+00:36:20,880 --> 00:36:23,440
+significance
+
+872
+00:36:22,400 --> 00:36:27,039
+but
+
+873
+00:36:23,440 --> 00:36:28,159
+we assume so far it's seven okay because
+
+874
+00:36:27,039 --> 00:36:31,119
+um
+
+875
+00:36:28,159 --> 00:36:33,199
+stewart's assured me that the ph of
+
+876
+00:36:31,119 --> 00:36:35,119
+manure is about seven
+
+877
+00:36:33,199 --> 00:36:37,279
+and a lot of soils are buffered to be
+
+878
+00:36:35,119 --> 00:36:39,680
+about ph of seven but that is a i mean
+
+879
+00:36:37,280 --> 00:36:41,280
+it is definitely affected by soil ph
+
+880
+00:36:39,679 --> 00:36:43,838
+that we haven't incorporated that that's
+
+881
+00:36:41,280 --> 00:36:43,839
+a good question
+
+882
+00:36:53,119 --> 00:36:58,400
+well the losses implies
+
+883
+00:36:55,519 --> 00:36:59,838
+most of the nitrogen put up that implies
+
+884
+00:36:58,400 --> 00:37:02,079
+that's where the end phase of the
+
+885
+00:36:59,838 --> 00:37:05,119
+nitrogen from manure fertilizers the
+
+886
+00:37:02,079 --> 00:37:06,800
+soil organic matter okay but it doesn't
+
+887
+00:37:05,119 --> 00:37:08,240
+mean it's increasing because so it can
+
+888
+00:37:06,800 --> 00:37:11,200
+be lost from the soils either by
+
+889
+00:37:08,239 --> 00:37:14,879
+leaching by denitrification
+
+890
+00:37:11,199 --> 00:37:16,559
+by forest fires by other beans okay
+
+891
+00:37:14,880 --> 00:37:18,800
+so it's not and then it's not a yearly
+
+892
+00:37:16,559 --> 00:37:22,920
+increase it just it's just where is it
+
+893
+00:37:18,800 --> 00:37:22,920
+going once it's in the manure
+
+894
+00:37:25,199 --> 00:37:28,879
+that's right yes
+
+895
+00:37:26,880 --> 00:37:31,200
+yeah this green here is essentially
+
+896
+00:37:28,880 --> 00:37:33,599
+leaving our model and then it can go
+
+897
+00:37:31,199 --> 00:37:34,838
+into plants it can be leached out a
+
+898
+00:37:33,599 --> 00:37:38,240
+number of other
+
+899
+00:37:34,838 --> 00:37:38,239
+fates okay
+
+900
+00:37:42,639 --> 00:37:47,358
+okay and then one advantage of models is
+
+901
+00:37:45,199 --> 00:37:48,838
+you can see what's happened
+
+902
+00:37:47,358 --> 00:37:52,480
+over the last
+
+903
+00:37:48,838 --> 00:37:54,559
+um 150 years
+
+904
+00:37:52,480 --> 00:37:57,920
+and this is the case for
+
+905
+00:37:54,559 --> 00:38:00,639
+global manure this amount applied
+
+906
+00:37:57,920 --> 00:38:01,760
+this is the amount going into soils
+
+907
+00:38:00,639 --> 00:38:04,400
+runoff
+
+908
+00:38:01,760 --> 00:38:07,040
+and into emissions
+
+909
+00:38:04,400 --> 00:38:09,920
+and so you can see over over time that
+
+910
+00:38:07,039 --> 00:38:11,838
+the amount going into soil has decreased
+
+911
+00:38:09,920 --> 00:38:14,079
+as the amount going into emissions and
+
+912
+00:38:11,838 --> 00:38:19,400
+runoff has increased over the last
+
+913
+00:38:14,079 --> 00:38:19,400
+percentage-wise over 150 years
+
+914
+00:38:20,239 --> 00:38:24,799
+for fertilizer we get quite a bit
+
+915
+00:38:22,320 --> 00:38:27,280
+different picture fertilizers added all
+
+916
+00:38:24,800 --> 00:38:27,280
+at once
+
+917
+00:38:27,440 --> 00:38:31,519
+and in the beginning when very low
+
+918
+00:38:29,358 --> 00:38:34,559
+amounts of fertilizer added
+
+919
+00:38:31,519 --> 00:38:35,838
+these calculations suggest that only a
+
+920
+00:38:34,559 --> 00:38:38,639
+little bit
+
+921
+00:38:35,838 --> 00:38:40,159
+most of it was incorporated into the
+
+922
+00:38:38,639 --> 00:38:42,799
+into the soils
+
+923
+00:38:40,159 --> 00:38:44,960
+but as much larger quantities were added
+
+924
+00:38:42,800 --> 00:38:46,880
+very quickly
+
+925
+00:38:44,960 --> 00:38:50,159
+that less could be incorporated into
+
+926
+00:38:46,880 --> 00:38:52,640
+soils and larger percentages were going
+
+927
+00:38:50,159 --> 00:38:57,960
+into the air as ammonium
+
+928
+00:38:52,639 --> 00:38:57,960
+as ammonia or into runoff
+
+929
+00:39:05,440 --> 00:39:09,200
+um
+
+930
+00:39:06,639 --> 00:39:11,358
+sensitivities we've looked at
+
+931
+00:39:09,199 --> 00:39:12,719
+at some of them i think in the interest
+
+932
+00:39:11,358 --> 00:39:15,838
+of time
+
+933
+00:39:12,719 --> 00:39:15,838
+i won't go over these
+
+934
+00:39:16,000 --> 00:39:20,079
+i want to briefly review future work
+
+935
+00:39:18,559 --> 00:39:22,960
+obviously
+
+936
+00:39:20,079 --> 00:39:26,240
+agriculture management practices are
+
+937
+00:39:22,960 --> 00:39:29,039
+important and can impact the emissions
+
+938
+00:39:26,239 --> 00:39:30,319
+fertilization dates spreading practices
+
+939
+00:39:29,039 --> 00:39:31,838
+feed yards
+
+940
+00:39:30,320 --> 00:39:33,039
+and this is a
+
+941
+00:39:31,838 --> 00:39:35,519
+view of
+
+942
+00:39:33,039 --> 00:39:37,920
+saturn at all how one should do climate
+
+943
+00:39:35,519 --> 00:39:40,960
+dependent ammonia missions
+
+944
+00:39:37,920 --> 00:39:42,639
+some of them should be on to the fields
+
+945
+00:39:40,960 --> 00:39:45,199
+as we did some of it should be applied
+
+946
+00:39:42,639 --> 00:39:47,679
+as manure where you might use a
+
+947
+00:39:45,199 --> 00:39:50,719
+parametrization like ours
+
+948
+00:39:47,679 --> 00:39:53,199
+some of the um some of it goes into
+
+949
+00:39:50,719 --> 00:39:54,078
+unidirectional emissions due to feedlots
+
+950
+00:39:53,199 --> 00:39:55,679
+and these should probably be
+
+951
+00:39:54,079 --> 00:39:57,760
+parameterized differently because this
+
+952
+00:39:55,679 --> 00:40:00,000
+isn't a controlled environment they're
+
+953
+00:39:57,760 --> 00:40:01,280
+not they're not immediately sensitive to
+
+954
+00:40:00,000 --> 00:40:02,000
+rainfall
+
+955
+00:40:01,280 --> 00:40:03,920
+or
+
+956
+00:40:02,000 --> 00:40:05,760
+the temperature outside and these can be
+
+957
+00:40:03,920 --> 00:40:07,838
+computed using
+
+958
+00:40:05,760 --> 00:40:09,599
+emission factors okay so there could be
+
+959
+00:40:07,838 --> 00:40:11,679
+quite a bit of work
+
+960
+00:40:09,599 --> 00:40:13,519
+adding this to
+
+961
+00:40:11,679 --> 00:40:15,838
+adding more management practices and
+
+962
+00:40:13,519 --> 00:40:18,159
+even future management practices into
+
+963
+00:40:15,838 --> 00:40:22,639
+such a model to see how emissions might
+
+964
+00:40:18,159 --> 00:40:22,639
+change as a function of of climate
+
+965
+00:40:23,119 --> 00:40:27,838
+obviously once we get the um
+
+966
+00:40:26,239 --> 00:40:29,519
+once we get the emissions into the
+
+967
+00:40:27,838 --> 00:40:31,838
+atmosphere then we can see what the
+
+968
+00:40:29,519 --> 00:40:34,880
+atmosphere does and in the atmosphere
+
+969
+00:40:31,838 --> 00:40:37,759
+once we do that there are a lot
+
+970
+00:40:34,880 --> 00:40:40,079
+many many ways to um
+
+971
+00:40:37,760 --> 00:40:42,000
+the model many more ways to evaluate it
+
+972
+00:40:40,079 --> 00:40:43,280
+can evaluate against atmospheric
+
+973
+00:40:42,000 --> 00:40:46,159
+measurements
+
+974
+00:40:43,280 --> 00:40:49,680
+against satellite data against
+
+975
+00:40:46,159 --> 00:40:52,319
+wet deposition against aerosol data etc
+
+976
+00:40:49,679 --> 00:40:54,719
+and we're eager to look at how emissions
+
+977
+00:40:52,320 --> 00:40:57,039
+will change in the changing world as the
+
+978
+00:40:54,719 --> 00:40:59,439
+amount of manure and fertilizer probably
+
+979
+00:40:57,039 --> 00:41:01,838
+increases as as
+
+980
+00:40:59,440 --> 00:41:03,519
+management practices change
+
+981
+00:41:01,838 --> 00:41:06,519
+and as the climate as the climate
+
+982
+00:41:03,519 --> 00:41:06,519
+changes
+
+983
+00:41:08,480 --> 00:41:12,960
+okay so the
+
+984
+00:41:10,719 --> 00:41:14,719
+conclusion um
+
+985
+00:41:12,960 --> 00:41:16,960
+ammonia is poorly modeled in earth
+
+986
+00:41:14,719 --> 00:41:17,759
+system models and i hope i made the case
+
+987
+00:41:16,960 --> 00:41:19,119
+that
+
+988
+00:41:17,760 --> 00:41:21,119
+there is a
+
+989
+00:41:19,119 --> 00:41:24,000
+importance in being able to incorporate
+
+990
+00:41:21,119 --> 00:41:27,039
+it into in these models to look at the
+
+991
+00:41:24,000 --> 00:41:28,960
+impact of ammonia and climate but also
+
+992
+00:41:27,039 --> 00:41:30,400
+important as there's an importance of
+
+993
+00:41:28,960 --> 00:41:32,880
+looking at the impact of climate and
+
+994
+00:41:30,400 --> 00:41:34,800
+ammonia emissions
+
+995
+00:41:32,880 --> 00:41:36,720
+missions are expected to increase as the
+
+996
+00:41:34,800 --> 00:41:39,760
+population grows
+
+997
+00:41:36,719 --> 00:41:41,598
+implications for nitrogen cascade for
+
+998
+00:41:39,760 --> 00:41:43,760
+formation of aerosols and there's
+
+999
+00:41:41,599 --> 00:41:46,960
+implications which i didn't talk about
+
+1000
+00:41:43,760 --> 00:41:49,440
+for global pollution and health
+
+1001
+00:41:46,960 --> 00:41:51,440
+talked about global dependent
+
+1002
+00:41:49,440 --> 00:41:53,039
+climate-dependent global parametrization
+
+1003
+00:41:51,440 --> 00:41:56,000
+of the emissions
+
+1004
+00:41:53,039 --> 00:41:58,239
+responsive to temperature precipitation
+
+1005
+00:41:56,000 --> 00:41:59,440
+it has the ability to conserve nitrogen
+
+1006
+00:41:58,239 --> 00:42:00,479
+carbon
+
+1007
+00:41:59,440 --> 00:42:02,639
+and
+
+1008
+00:42:00,480 --> 00:42:04,480
+suggest strong geographical and diurnal
+
+1009
+00:42:02,639 --> 00:42:06,480
+temperature dependence
+
+1010
+00:42:04,480 --> 00:42:07,920
+um so these i talked about for these are
+
+1011
+00:42:06,480 --> 00:42:09,838
+first steps
+
+1012
+00:42:07,920 --> 00:42:12,800
+um and you can obviously there many
+
+1013
+00:42:09,838 --> 00:42:14,799
+improvements possible
+
+1014
+00:42:12,800 --> 00:42:16,880
+and then there are numerous applications
+
+1015
+00:42:14,800 --> 00:42:18,960
+they're understanding role of nitrogen
+
+1016
+00:42:16,880 --> 00:42:22,318
+as climate changes
+
+1017
+00:42:18,960 --> 00:42:24,800
+so i um thank you for your attention
+
+1018
+00:42:22,318 --> 00:42:26,800
+i would um if any of you have feedback i
+
+1019
+00:42:24,800 --> 00:42:29,280
+would very much appreciate it as i said
+
+1020
+00:42:26,800 --> 00:42:31,599
+i'm not so a scientist but i would very
+
+1021
+00:42:29,280 --> 00:42:34,720
+much appreciate any feedback from people
+
+1022
+00:42:31,599 --> 00:42:36,960
+who are in the field or know
+
+1023
+00:42:34,719 --> 00:42:39,279
+how this type of parametrization could
+
+1024
+00:42:36,960 --> 00:42:40,318
+be improved
+
+1025
+00:42:39,280 --> 00:42:42,480
+and
+
+1026
+00:42:40,318 --> 00:42:44,159
+i'm going to have to run off to class in
+
+1027
+00:42:42,480 --> 00:42:46,639
+just a few minutes but thanks for your
+
+1028
+00:42:44,159 --> 00:42:46,639
+attention
+
+1029
+00:42:48,960 --> 00:42:56,599
+this has been a production of cornell
+
+1030
+00:42:51,280 --> 00:42:56,599
+university on the web at cornell.edu
+

@@ -1,0 +1,1584 @@
+[SPEAKER_03]: This is a production of Cornell
+University.
+[SPEAKER_00]: Actually, one of the things I did in this
+presentation was try to remove most of the
+[SPEAKER_00]: math.
+[SPEAKER_00]: When I gave this practice art about a week
+ago, there was a lot of math in there.
+[SPEAKER_00]: So I've reduced a lot of that and
+hopefully made it digestible.
+[SPEAKER_00]: Okay, so yeah, as John Luke introduced,
+I did my master's at New Mexico State
+[SPEAKER_00]: University.
+[SPEAKER_00]: I was working on auto tetraploid alfalfa
+there.
+[SPEAKER_00]: And particularly in transpirational
+efficiency, these are leaf peels,
+[SPEAKER_00]: just for fun.
+[SPEAKER_00]: You can see the little still model there.
+[SPEAKER_00]: And why I got, when I came to Cornell,
+I got interested in G by E because I had
+[SPEAKER_00]: seen it, right?
+[SPEAKER_00]: So this thing is a little exciting when I
+get in there.
+[SPEAKER_00]: So you can see here, this was a study I
+had during my master's.
+[SPEAKER_00]: It's under really heavy drought
+conditions.
+[SPEAKER_00]: And you'll notice the alfalfa that's going
+right in front of it is much healthier.
+[SPEAKER_00]: So there are differential responses to
+environments.
+[SPEAKER_00]: And so I'm gonna briefly talk about a
+little bit of the work I've done with
+[SPEAKER_00]: genotype by environment interaction,
+mostly just as a plug for a R package I
+[SPEAKER_00]: wrote.
+[SPEAKER_00]: And then I'm gonna move on to the part of
+my PhD that I'm most excited about.
+[SPEAKER_00]: Okay, so typically we think of genotype by
+or typically we think of a phenotype as
+[SPEAKER_00]: some function of the genetics and the
+environment in which those plants are in.
+[SPEAKER_00]: However, different genotypes respond
+differently to different environments.
+[SPEAKER_00]: And so there's really an interaction term
+here, this GE, right?
+[SPEAKER_00]: So there's some population mean mu,
+some genetic effects, some environmental
+[SPEAKER_00]: effect, and then some deviation from that
+effect, from that additive model.
+[SPEAKER_00]: Okay, and so I was interested in utilizing
+what's called an additive main effects
+[SPEAKER_00]: multiplicative interaction, popularized by
+Hugh Gauss himself, who's sitting in the
+[SPEAKER_00]: audience.
+[SPEAKER_00]: This is great to have him here so he can
+point me out on all the things I've done
+[SPEAKER_00]: wrong.
+[SPEAKER_00]: So anyway, the idea is that you can think
+of this problem as a matrix, right?
+[SPEAKER_00]: You have a table of genotypes in some
+environments, right?
+[SPEAKER_00]: So here I've got a table of genotypes
+where they're the same across all
+[SPEAKER_00]: environments and a table of environment
+effects where they're the same across all
+[SPEAKER_00]: genotypes.
+[SPEAKER_00]: And then I have some deviation from that,
+okay?
+[SPEAKER_00]: So the problem with this G by E term is
+what we'd like to do, we typically wanna
+[SPEAKER_00]: separate out the largest sources of
+variability as the quote unquote true G by
+[SPEAKER_00]: E and pull out the smaller sources.
+[SPEAKER_00]: This is error.
+[SPEAKER_00]: And this is particularly useful when you
+have unreplicated field trials,
+[SPEAKER_00]: okay?
+[SPEAKER_00]: So this is done through, right?
+[SPEAKER_00]: So this is a matrix, right?
+[SPEAKER_00]: And what we can do is use singular value
+decomposition to find linear combinations
+[SPEAKER_00]: of that G by E matrix that are the most
+associated with that G by E effect,
+[SPEAKER_00]: okay?
+[SPEAKER_00]: Or explain the bulk of the variant.
+[SPEAKER_00]: Now estimating how many of these we should
+pull out, right?
+[SPEAKER_00]: So we're trying to find K of them is
+another problem, especially for
+[SPEAKER_00]: unreplicated data because the G by E
+effect and the error completely
+[SPEAKER_00]: profoundly, okay?
+[SPEAKER_00]: So I developed an R package called
+bilinear that fits AMI models.
+[SPEAKER_00]: It also fits other bilinear models such as
+the GGE and the GREG.
+[SPEAKER_00]: I don't know, some of you may be familiar
+with these.
+[SPEAKER_00]: I'm not gonna talk about them in great
+detail.
+[SPEAKER_00]: There's quite a bit of literature on this.
+[SPEAKER_00]: My preferred method is the AMI because I
+think it's the most parsimonious.
+[SPEAKER_00]: And so this package that I wrote fits
+various models and produces plots and
+[SPEAKER_00]: tests, but more importantly, has a couple
+of tests for how many of these dimensions
+[SPEAKER_00]: we should pull out of the G by E term.
+[SPEAKER_00]: In particular, we have an FR test that was
+developed by PFOE in 95.
+[SPEAKER_00]: And this is great for replicated data or
+at least data where you have a known
+[SPEAKER_00]: within trial variant.
+[SPEAKER_00]: But when we don't have replicated data,
+we can use a parametric bootstrap method
+[SPEAKER_00]: that was developed by Forkman and PFOE.
+[SPEAKER_00]: So I've implemented these in this R
+package because at the time, there were no
+[SPEAKER_00]: R packages that would fit these.
+[SPEAKER_00]: And I think that now there's a GGE GUI or
+something like that.
+[SPEAKER_00]: It's a graphic user interface.
+[SPEAKER_00]: But it is in R.
+[SPEAKER_00]: But this fits both types of models and it
+tests.
+[SPEAKER_00]: And what's really important is that this
+can handle unreplicated data.
+[SPEAKER_00]: Now, the test tends to be more
+conservative than the FR test is,
+[SPEAKER_00]: but it's really useful, especially for our
+trials where we don't necessarily have
+[SPEAKER_00]: replication within environment.
+[SPEAKER_00]: Because there's been this big shift to
+moving toward putting much more lines in a
+[SPEAKER_00]: trial as opposed to replicating those
+lines many, many times within a trial.
+[SPEAKER_00]: So this is available on GitHub.
+[SPEAKER_00]: I'm still uncertain.
+[SPEAKER_00]: It probably needs a little bit more
+polishing before it will ever go on to
+[SPEAKER_00]: CRM.
+[SPEAKER_00]: But right now, from GitHub, you can
+install this directly in R using the
+[SPEAKER_00]: DevTools package.
+[SPEAKER_00]: So that's kind of fun.
+[SPEAKER_00]: So these are just some examples.
+[SPEAKER_00]: For those of you not familiar with a
+biplot, essentially what you're doing is
+[SPEAKER_00]: you've decomposed this thing and you're
+looking at there's a gene type dimension
+[SPEAKER_00]: and an environment dimension.
+[SPEAKER_00]: So we have the first two principal
+components of the genotype and the first
+[SPEAKER_00]: two principal components related to the
+environment.
+[SPEAKER_00]: And so I'm not going to go into the
+details of how to interpret these models
+[SPEAKER_00]: in particular.
+[SPEAKER_00]: But basically, these biplots are useful
+because relationships between environments
+[SPEAKER_00]: or genotypes and genotypes and
+environments are related by their angles,
+[SPEAKER_00]: where acute angles are associated with
+positive relationships.
+[SPEAKER_00]: And right angles are associated with
+independence.
+[SPEAKER_00]: And obtuse angles are negative
+relationships.
+[SPEAKER_00]: So Helfer here, Helfer 2014 here,
+is a very different environment from,
+[SPEAKER_00]: say, Ketola 16, but apparently has a very
+independent G by E response.
+[SPEAKER_00]: Whereas these sets of environments are all
+relatively similar to each other in the G
+[SPEAKER_00]: by E response.
+[SPEAKER_00]: And then we can do things like we can make
+these winter plots that are also out of
+[SPEAKER_00]: Gaussian Sobel 97, I believe.
+[SPEAKER_00]: And what we do here is we have the main
+effect of the genotype.
+[SPEAKER_00]: And then the slope is the AME1 fit that
+says how they respond to a changing
+[SPEAKER_00]: environment.
+[SPEAKER_00]: So down here, we've ranked the
+environments and indicated them with these
+[SPEAKER_00]: little black triangles.
+[SPEAKER_00]: And then you can see that there are
+individuals that do particularly good in
+[SPEAKER_00]: poor environments.
+[SPEAKER_00]: And then their response goes down.
+[SPEAKER_00]: As the environment decreases.
+[SPEAKER_00]: Whereas there are individuals that do
+particularly well in good environments,
+[SPEAKER_00]: but not particularly bad environments.
+OK.
+[SPEAKER_00]: So this was just to kind of introduce this
+package.
+[SPEAKER_00]: I've worked together with Lisa
+Kissing-Kusek, a colleague of mine in Mark
+[SPEAKER_00]: Hiller's lab.
+[SPEAKER_00]: She was looking at organic wheat yield
+trials that were replicated from Vermont
+[SPEAKER_00]: to North Dakota.
+[SPEAKER_00]: Looking at the response of organic grains
+to different growing environments.
+[SPEAKER_00]: And she found that there was significant
+location or genotype by location effects
+[SPEAKER_00]: such that it made sense to have these
+decentralized programs in these different
+[SPEAKER_00]: regions.
+[SPEAKER_00]: Now this study was nice because it was
+replicated.
+[SPEAKER_00]: But we ended up using the parametric
+bootstrap regardless because they tended
+[SPEAKER_00]: to give more biological relevant numbers
+of interactions.
+[SPEAKER_00]: So typically fewer.
+[SPEAKER_00]: Dementia.
+[SPEAKER_00]: So K was low, like one or two.
+[SPEAKER_00]: That's in contrast to another paper I
+worked on with another student from Mark's
+[SPEAKER_00]: lab, Lynn Veenstra.
+[SPEAKER_00]: Both of these students have graduated.
+[SPEAKER_00]: This one hasn't quite been submitted yet,
+but it's very close.
+[SPEAKER_00]: And we worked on G by E.
+[SPEAKER_00]: And we were able to show that there were
+significant G by E effects.
+[SPEAKER_00]: But in general, the genetic correlation
+across the environments she evaluated in
+[SPEAKER_00]: New York were very similar, or was
+relatively high.
+[SPEAKER_00]: So then we were able to recommend that
+breeding for fructan content could be done
+[SPEAKER_00]: with relatively few environments,
+if only a single environment, as well as
+[SPEAKER_01]: under a genomic structure.
+[SPEAKER_00]: Now this one, we did not have replicated
+individuals.
+[SPEAKER_00]: So in this case, the parametric bootstrap
+was really convenient to have.
+[SPEAKER_00]: OK, now I'm going to move on to
+allopolyploid, really what I want to talk
+[SPEAKER_00]: about.
+[SPEAKER_00]: So in my second year of grad school,
+I was taking a course with Mark Soros that
+[SPEAKER_00]: I think many of you have taken.
+[SPEAKER_00]: It's basically a paper review class.
+[SPEAKER_00]: And in that class, we read this paper by
+James McKee that was published in the
+[SPEAKER_00]: 1970s, almost 50 years ago.
+[SPEAKER_00]: And he talks about how their, OK,
+so he notes that whole genome duplication
+[SPEAKER_00]: events are just pervasive in the plant.
+[SPEAKER_00]: They're everywhere, especially in
+angiosperms, where even if there are these
+[SPEAKER_00]: paleopolyploid events that happened a long
+time ago, and then there's a bunch that
+[SPEAKER_00]: have happened relatively recently,
+too.
+[SPEAKER_00]: And he talks about how there's this
+balance in creating new genetic variation,
+[SPEAKER_00]: but then preserving particularly good sets
+of allele.
+[SPEAKER_00]: And so one thing he notes is that
+allopolyploids have this ability to
+[SPEAKER_00]: establish homozygosphety so that they can
+keep good sets of alleles, but they end up
+[SPEAKER_00]: being heterozygous across the subgenomes.
+[SPEAKER_00]: Now that might sound a little confusing,
+and I'm going to clarify in a second.
+[SPEAKER_00]: And that essentially, this idea of
+allopolyploidy bringing relatively closely
+[SPEAKER_00]: related species together into the same
+organism allow for a multitude of gene
+[SPEAKER_00]: functions that should allow for broader
+adaptation, or adaptation in a much
+[SPEAKER_00]: broader landscape, because you have these
+different combinations of alleles to draw
+[SPEAKER_00]: from for different genetic pathways.
+[SPEAKER_00]: OK, so a little on bread wheat.
+[SPEAKER_00]: So there was the A genome ancestor and B
+genome ancestor.
+[SPEAKER_00]: The A genome ancestor you may know today
+as einkorn.
+[SPEAKER_00]: It's not quite the same species.
+[SPEAKER_00]: It's very closely related.
+[SPEAKER_00]: And the B genome species is thought to be
+extinct, which is unfortunate.
+[SPEAKER_00]: I hope that one day we find it.
+[SPEAKER_00]: And roughly half a million years ago,
+there was a spontaneous cross between
+[SPEAKER_00]: these two closely related species,
+and they produced a tetraploid that had
+[SPEAKER_00]: both an A and a B genome.
+[SPEAKER_00]: So all of a sudden, you took a complete
+set of genes from one species and a
+[SPEAKER_00]: complete set from another, and you brought
+them into the same organism.
+[SPEAKER_00]: And then this happened again roughly
+10,000 years ago, and maybe only once,
+[SPEAKER_00]: with a related species called
+Agiloxotaucii, which contributed the D
+[SPEAKER_00]: genome to common wheat.
+[SPEAKER_00]: OK, so now what we know of as common
+wheat, which is bread wheat, primarily
+[SPEAKER_00]: bread wheat, but of course also wheat for
+cake flour, and so on and so forth,
+[SPEAKER_00]: has three separate genomes, i.e.
+[SPEAKER_00]: three sets, complete sets of genes.
+[SPEAKER_00]: And I've just been fascinated.
+[SPEAKER_00]: What is the driving mechanism for
+duplicating an entire genome?
+[SPEAKER_00]: So a single gene, we imagine, may get
+duplicated, and then you can maintain
+[SPEAKER_00]: function with one copy and allow the other
+one to diverge.
+[SPEAKER_00]: But what is the advantage of having
+complete whole sets of genes?
+[SPEAKER_00]: So here's kind of the lay of this out.
+[SPEAKER_00]: We have three genomes in aloe hexaploid
+wheat.
+[SPEAKER_00]: It undergoes disomic inheritance,
+which means there's no crossing over
+[SPEAKER_00]: between homeologous chromosomes.
+[SPEAKER_00]: So more or less, the three sets maintain
+themselves within the nucleus.
+[SPEAKER_00]: They don't switch pieces.
+[SPEAKER_00]: It's self-pollinated, so it can fix
+itself.
+[SPEAKER_00]: So it becomes completely inbred,
+and individuals will self-pollinate and
+[SPEAKER_00]: produce seed that is genetically identical
+to the parent.
+[SPEAKER_00]: So this is the self-preserving part.
+[SPEAKER_00]: But they maintain this allelic diversity
+across the three genomes.
+[SPEAKER_00]: So this is the new generating part.
+[SPEAKER_00]: So you grab a whole set of genes from one
+species and one from the other species,
+[SPEAKER_00]: and then you got two sets of tools.
+[SPEAKER_00]: And so I'm wondering, can we think of
+wheat as an immortalized hybrid?
+[SPEAKER_00]: So you brought two, and so here's my
+justification for this.
+[SPEAKER_00]: OK, so in typical hybrid generation,
+you have some sets of alleles,
+[SPEAKER_00]: X, Y, and Z, that are in an
+open-pollinated population.
+[SPEAKER_00]: They get separated from one another,
+either intentionally or unintentionally,
+[SPEAKER_00]: into two heterotic groups, group A and
+group B.
+[SPEAKER_00]: And then when you bring these back
+together to form the hybrid, you've
+[SPEAKER_00]: essentially established heterozygosity at
+all loci.
+[SPEAKER_00]: And you have these allelic interactions,
+which we believe may be important for what
+[SPEAKER_00]: we observe as hybrid genomes.
+[SPEAKER_00]: They may be bigger, which is essentially
+the tendency for offspring to be better
+[SPEAKER_00]: than their parents.
+[SPEAKER_00]: So now think about the allopolyploid.
+[SPEAKER_00]: We have some set of alleles in the common
+ancestor.
+[SPEAKER_00]: And then these may diverge in the
+descendant species, species A and B.
+[SPEAKER_00]: And then you bring them back together.
+[SPEAKER_00]: But again, so this thing becomes inbred.
+[SPEAKER_00]: And what you've done is essentially
+established heterozygosity at all loci.
+[SPEAKER_00]: But now you've fixed this heterozygosity
+through cell fate and this disomic
+[SPEAKER_00]: inheritance.
+[SPEAKER_00]: So what I'm curious about is, can we see
+evidence of homeoallelic interactions that
+[SPEAKER_00]: are analogous to allelic interactions that
+we see in traditional diploid hybrids?
+[SPEAKER_00]: OK, so to investigate this, I wanted to
+know how this played out on agronomic
+[SPEAKER_00]: traits.
+[SPEAKER_00]: Now, we have a winter wheat breeding
+population here at Cornell.
+[SPEAKER_00]: And so I kind of curated this data set.
+[SPEAKER_00]: It's roughly 9,000 phenotypic records,
+1,500 lines, crossed about 10 years,
+[SPEAKER_00]: two to three environments per year.
+[SPEAKER_00]: And we have evaluated them for four traits
+essentially in every year.
+[SPEAKER_00]: Now, this is a lot of work.
+[SPEAKER_00]: It's funny how this amount of man hours
+can be distilled down into 9,000 lines on
+[SPEAKER_00]: a computer file somewhere.
+[SPEAKER_00]: And I will definitely recognize people who
+have helped put this together.
+[SPEAKER_00]: OK, so this is the data I'm going to be
+working with to describe this
+[SPEAKER_00]: investigation to you.
+[SPEAKER_00]: So first thing I was interested in is
+subgenome additive and interaction
+[SPEAKER_00]: effects.
+[SPEAKER_00]: We typically think, OK, so coming back to
+this idea, we typically think of the
+[SPEAKER_00]: phenotype as summation of all the genetic
+effects.
+[SPEAKER_00]: OK, on average.
+[SPEAKER_00]: But there's no reason why we can't split
+these into their individual subgenome
+[SPEAKER_00]: effects.
+[SPEAKER_00]: And we can estimate these using a very
+standard genomic prediction model.
+[SPEAKER_00]: And ignore the math.
+[SPEAKER_00]: Math is not particularly important.
+[SPEAKER_00]: It's just to say that here we're getting a
+single estimate for the value of every
+[SPEAKER_00]: individual based on its entire genome.
+[SPEAKER_00]: Whereas in this model, we get a different
+estimate for each individual.
+[SPEAKER_00]: So you get three estimates, right?
+[SPEAKER_00]: One for A, one for B, one for D.
+[SPEAKER_00]: And this is very simple to do.
+[SPEAKER_00]: We estimate the covariance between
+individuals using molecular markers.
+[SPEAKER_00]: And so we can subset those markers based
+on their native genome.
+[SPEAKER_00]: And then we can calculate the covariance
+between individuals based on each separate
+[SPEAKER_00]: gene for all three.
+[SPEAKER_00]: And here's a motivating example to think
+of why we might be interested.
+[SPEAKER_00]: I'm interested in this.
+[SPEAKER_00]: Imagine we have this little toy population
+of three individuals.
+[SPEAKER_00]: And we want to pick two to mate.
+[SPEAKER_00]: The obvious choice might be individuals
+one and two, which have the highest two
+[SPEAKER_00]: values.
+[SPEAKER_00]: But then if we could see for their whole
+genome, but if we could see their
+[SPEAKER_00]: individual effects for their subgenomes,
+we'll note that while they both have very
+[SPEAKER_00]: good A and B genomes, they don't tend to
+have a very good D genome.
+[SPEAKER_00]: So when we mate these guys, the best value
+we could possibly obtain is 20.
+[SPEAKER_00]: Whereas, contradictory, if you included
+the third individual with the lowest
+[SPEAKER_00]: breeding value, you have this potential to
+bring in, while it doesn't do very good on
+[SPEAKER_00]: A and B, it does have a very good B
+genome.
+[SPEAKER_00]: And you increase the maximum value from
+that cross.
+[SPEAKER_00]: And similarly, this is true for both of
+the two crosses.
+[SPEAKER_00]: And more importantly, potentially,
+we can look at individuals that have the
+[SPEAKER_00]: exact same breeding value and find ones
+that might have particularly good
+[SPEAKER_00]: subgenomes that we want to incorporate for
+specific crosses.
+[SPEAKER_00]: And so what I've done here is I've plotted
+the breeding values or the value that we
+[SPEAKER_00]: assign to the individual based on its
+whole genome or the subgenome effect,
+[SPEAKER_00]: A, B, and D.
+[SPEAKER_00]: And then I've highlighted the best 5% of
+the individuals here.
+[SPEAKER_00]: And I just want to point out briefly,
+the individual that has the best A genome
+[SPEAKER_00]: here is not the individual with the best
+whole genome, nor does it have a
+[SPEAKER_00]: particularly good B genome.
+[SPEAKER_00]: It's very moderate.
+[SPEAKER_00]: And similarly, the best B genome
+individual has a moderate A.
+[SPEAKER_00]: So these are these blue squares.
+[SPEAKER_00]: And the best individual for the D genome,
+again, has a relatively moderate value.
+[SPEAKER_00]: So you might say, OK, well, let's take the
+individual's best for A and made it to the
+[SPEAKER_00]: one that's the best for B.
+[SPEAKER_00]: So in this case, for grain yield,
+maybe most of these individuals will at
+[SPEAKER_00]: least be in your pool of individuals you
+might select to do this, even if you
+[SPEAKER_00]: wouldn't necessarily make these three
+crosses.
+[SPEAKER_00]: But you can see for test weight,
+for example, the best D individual,
+[SPEAKER_00]: it doesn't have a particularly good whole
+genome effect.
+[SPEAKER_00]: So it might be thrown out altogether and
+never considered for population
+[SPEAKER_00]: improvement.
+[SPEAKER_00]: So what this allows us to do is it allows
+us to select on complementary subgenomes
+[SPEAKER_00]: for crossing.
+[SPEAKER_00]: We can bring ones that have different good
+effects together.
+[SPEAKER_00]: Now, you could do this with any set of
+chromatin.
+[SPEAKER_00]: You could estimate a breeding value for
+every chromosome if you want.
+[SPEAKER_00]: But this gets more complicated the more of
+these you have.
+[SPEAKER_00]: Interestingly, the other thing we could do
+is select on subgenomes specific like.
+[SPEAKER_00]: So one of the problems is you'll notice
+the D genome has significantly less
+[SPEAKER_00]: variance than the A and B, which means
+that when you make selections based on
+[SPEAKER_00]: phenotypes, you are making selections on
+the largest sources of variance that are
+[SPEAKER_00]: coming from the A and B genome.
+[SPEAKER_00]: So a lot of the variation in the D genome
+is going to get fixed just through drift.
+[SPEAKER_00]: And so you could select based just on the
+D genome, for example, for several rounds
+[SPEAKER_00]: after, say, intergressing from a wild
+species.
+[SPEAKER_00]: But those were just individual subgenome
+effects.
+[SPEAKER_00]: What I really care about is how are these
+things interacting with one another.
+[SPEAKER_00]: And we do this through using Hadamard
+products of these co-variants.
+[SPEAKER_00]: The math isn't really important.
+[SPEAKER_00]: It's just that we can now get a value for
+every individual based on its interaction
+[SPEAKER_00]: between the A and B genome, B and D,
+and the A and B.
+[SPEAKER_00]: And then we can estimate these variance
+components.
+[SPEAKER_00]: And here what I've shown is the different
+terms A, B, D, A by B, A by D for a couple
+[SPEAKER_00]: of traits.
+[SPEAKER_00]: The estimates are in red with their
+standard deviations.
+[SPEAKER_00]: And then the violin plots are
+distributions from sampling that data.
+[SPEAKER_00]: So we subset the data.
+[SPEAKER_00]: We estimate those variance components.
+[SPEAKER_00]: This is actually doing cross-validation.
+[SPEAKER_00]: But what we can do is just see how stable
+is that variance estimate.
+[SPEAKER_00]: We'll notice that for the most part,
+they align very well with their estimates.
+[SPEAKER_00]: Interestingly, you'll notice there's very
+different genetic architecture between
+[SPEAKER_00]: these two traits, while the B genome
+explains most of the variance in both of
+[SPEAKER_00]: them.
+[SPEAKER_00]: You'll notice that here the D genome
+explains a lot more for plant height than
+[SPEAKER_00]: it does for granule.
+[SPEAKER_00]: And the A by D and B by D interaction
+effects are much larger than they are in
+[SPEAKER_00]: granule, where they're actually very
+small.
+[SPEAKER_00]: So granule doesn't have a whole lot going
+on for subgenome interactions.
+[SPEAKER_00]: But we do see it for plant height.
+[SPEAKER_00]: And then we can show that these things sum
+to the same variance as the whole genetic
+[SPEAKER_00]: effect, as well as their interaction.
+[SPEAKER_00]: We can incorporate these interactions into
+a genomic prediction model.
+[SPEAKER_00]: And we can see that when we model just the
+additive effects of the whole genome
+[SPEAKER_00]: versus the three individuals and then sum
+them, you'll see that we get essentially
+[SPEAKER_00]: the exact same prediction accuracy for all
+traits.
+[SPEAKER_00]: And then if we incorporate episodic
+interactions, one of the things we can do
+[SPEAKER_00]: is incorporate all interactions.
+[SPEAKER_00]: Or we can just incorporate the
+interactions across the subgenomes.
+[SPEAKER_00]: And we'll notice that, again, you see what
+we see increases in prediction accuracy
+[SPEAKER_00]: for all the traits, except for arguably
+granule here.
+[SPEAKER_00]: And that those increases are the same,
+regardless of whether or not we're
+[SPEAKER_00]: modeling all pairwise or just the pairwise
+across subgenomes.
+[SPEAKER_00]: However, the problem is that these things
+are not independent.
+[SPEAKER_00]: So in a population under pure
+Hardy-Weinberg, these variance components
+[SPEAKER_00]: should be independent of each other.
+[SPEAKER_00]: But we do have population structure.
+[SPEAKER_00]: It's not like we see in something like
+rice, for example.
+[SPEAKER_00]: But this is just a PC plot of the genetic
+covariance.
+[SPEAKER_00]: And we're explaining maybe 18% or so.
+[SPEAKER_00]: Of the variance, which is the first two
+principal components.
+[SPEAKER_00]: So there is some population structure in
+here.
+[SPEAKER_00]: And it's probably mostly due to the fact
+that we have many small families.
+[SPEAKER_00]: So wheat is done with pedigree selection.
+[SPEAKER_00]: So this is not some big random mating
+population of cattle.
+[SPEAKER_00]: There are very specific crosses.
+[SPEAKER_00]: There are few individuals from each cross
+that go into an advanced trial.
+[SPEAKER_00]: So there could be confounding of estimates
+here.
+[SPEAKER_00]: And so I had an attempt to try to remove
+the largest sources of variation from the
+[SPEAKER_00]: marker matrix before we actually calculate
+how related individuals are.
+[SPEAKER_00]: So basically, under Hardy-Weinberg,
+these variances should be independent.
+[SPEAKER_00]: But typically, in a breeding program,
+they will not be.
+[SPEAKER_00]: So we can take the marker matrix and
+decompose it using singular variances.
+[SPEAKER_00]: And we can do that using the value
+decomposition, which is obviously my
+[SPEAKER_00]: favorite tool, because that's what we use
+for the AMI model.
+[SPEAKER_00]: And we can pull out the first few
+principal components as population
+[SPEAKER_00]: structure.
+[SPEAKER_00]: I'm calling that Q.
+[SPEAKER_00]: We can reform the marker matrix after
+we've pulled that population structure out
+[SPEAKER_00]: of all of the markers at the same time.
+[SPEAKER_00]: And we reform this by setting the first k
+singular values of b to 0 and multiplying.
+[SPEAKER_00]: So we make this d tilde, multiply.
+[SPEAKER_00]: Math isn't important again.
+[SPEAKER_00]: But then we just incorporate our
+population structure as a fixed effect.
+[SPEAKER_00]: And then we have the sum of our different
+subgenomes.
+[SPEAKER_00]: So now I can pull out this m and make a
+covariance from that, so on and so forth,
+[SPEAKER_00]: while having removed population structure
+from all three of them at the same time.
+[SPEAKER_00]: When we do that, what I've done here is
+I've plotted in the black lines here
+[SPEAKER_00]: showing the correlation of genetic
+relationships estimated based on the A
+[SPEAKER_00]: genome and the D genome, or the A genome
+and the B genome, or the B genome and the
+[SPEAKER_00]: B genome.
+[SPEAKER_00]: And you'll notice that they tend to have a
+high correlation.
+[SPEAKER_00]: And that's because individuals that are
+closely related are going to be closely
+[SPEAKER_00]: related to each other, no matter which
+pieces of DNA you choose to calculate that
+[SPEAKER_00]: relationship, but also because of
+population structure.
+[SPEAKER_00]: And it looks like we have this nice shelf
+here, right?
+[SPEAKER_00]: So roughly around a k of maybe four or
+five, it looks like we kind of hit this
+[SPEAKER_00]: asymptotic relationship, where the more
+principal components we pull out of that
+[SPEAKER_00]: marker matrix, we don't get much reduction
+in the correlation of the relationships
+[SPEAKER_00]: across the subgenomes.
+[SPEAKER_00]: We also take a hit in the amount of
+variance in the entire matrix.
+[SPEAKER_00]: So what I've done is OK.
+[SPEAKER_00]: So we know that k appears to be removing,
+right?
+[SPEAKER_00]: So pulling out this population structure
+appears to be removing these variance
+[SPEAKER_00]: components.
+[SPEAKER_00]: But as I increase k, do I see big changes?
+[SPEAKER_00]: And you'll notice for the A, B,
+and the D genomes, no matter what the size
+[SPEAKER_00]: of k for these four traits, the additive
+values don't differ very much.
+[SPEAKER_00]: But their interaction components do have
+rank changes, especially for these
+[SPEAKER_00]: different, for traits that are not
+granular.
+[SPEAKER_00]: So it's really unclear whether or not
+we're pulling population structure out or
+[SPEAKER_00]: also genetic signal, right?
+[SPEAKER_00]: Because they're related to each other.
+[SPEAKER_00]: What I did was I used the variance of the
+variance estimates to decide whether or
+[SPEAKER_00]: not we should be doing this.
+[SPEAKER_00]: And in general, there is not much change
+in this covariance.
+[SPEAKER_00]: OK.
+[SPEAKER_00]: So the variance components related to the
+interactions can have a high correlation,
+[SPEAKER_00]: regardless of how much population
+structure you pull out of this thing.
+[SPEAKER_00]: So in general, this was probably not,
+there probably isn't a whole lot of
+[SPEAKER_00]: benefit to this.
+[SPEAKER_00]: Or if there is, it's really unclear,
+at least in this population.
+[SPEAKER_00]: Maybe very important for certain
+populations that have very strict sets of
+[SPEAKER_00]: population structure, like in reds,
+for example.
+[SPEAKER_00]: But of course, that's a difference.
+[SPEAKER_00]: OK.
+[SPEAKER_00]: So we estimate the additive effects
+relatively well.
+[SPEAKER_00]: It's not certain if we get good
+interactions.
+[SPEAKER_00]: We don't lose prediction accuracy.
+[SPEAKER_00]: So there's no reason not to do this from a
+predictive perspective.
+[SPEAKER_00]: But it's unclear how you would then make
+selections on each individual one,
+[SPEAKER_00]: right?
+[SPEAKER_00]: We can do a complementary subgenome
+selection.
+[SPEAKER_00]: We select individuals that have
+particularly good A's versus individuals
+[SPEAKER_00]: that have particularly good B's.
+[SPEAKER_00]: We can select certain subgenomes.
+[SPEAKER_00]: And what's great about this method is we
+don't need to know much about where the
+[SPEAKER_00]: marker lives, only what genome it came
+from, which is important in crops like
+[SPEAKER_00]: wheat, where for a long time, we knew
+where markers belonged from a perspective
+[SPEAKER_00]: of what chromosome they were on,
+but had no idea what their relative
+[SPEAKER_00]: position next to one another was,
+because each of the chromosome arms was
+[SPEAKER_00]: assembled independently.
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: And this is true for a lot of polyploids.
+[SPEAKER_00]: Sequence assembly is very difficult.
+[SPEAKER_00]: Because it's replicated, it's like you're
+trying to sequence three different things
+[SPEAKER_00]: at the same time.
+[SPEAKER_00]: So it's hard to assign who goes where.
+OK.
+[SPEAKER_00]: So this paper is in preparation.
+[SPEAKER_00]: It's really close.
+[SPEAKER_00]: I'm hoping we're going to get this one out
+soon.
+[SPEAKER_00]: But I want to talk about explicitly
+modeling homeologous relationships.
+[SPEAKER_00]: We can consider a two-locus model,
+right, where we have a locus B,
+[SPEAKER_00]: say, on one genome, and a locus C on
+another genome with additive effects alpha
+[SPEAKER_00]: B, alpha C.
+[SPEAKER_00]: And their interaction.
+OK.
+[SPEAKER_00]: And so there's different ways to think
+about how epistasis works.
+[SPEAKER_00]: There's a classic additive by additive.
+[SPEAKER_00]: I'm not going to go into this too much.
+[SPEAKER_00]: This is what you get from multiplying
+marker scores.
+[SPEAKER_00]: And anyone who's done this has probably
+seen this relationship.
+[SPEAKER_00]: You're contrasting the two homozygotes.
+[SPEAKER_00]: It's kind of a weird thing to say,
+because remember, they're all homozygotes
+[SPEAKER_00]: from the heterozygotes across the genomes,
+right?
+[SPEAKER_00]: You can look at the duplicate factor
+model, where essentially having AB or AC
+[SPEAKER_00]: gives you the effect.
+[SPEAKER_00]: And having both of them does not give you
+any further effect, right?
+[SPEAKER_00]: So if this coefficient was two,
+it would be completely additive.
+[SPEAKER_00]: But it's the same as having one or the
+other.
+[SPEAKER_00]: And I'm going to introduce this idea of
+sub-functionalization epistasis.
+[SPEAKER_00]: And this model is flexible.
+[SPEAKER_00]: It allows both everything from a duplicate
+factor all the way to an additive and then
+[SPEAKER_00]: beyond.
+[SPEAKER_00]: And so I'm going to give you an example of
+this.
+[SPEAKER_00]: So you have some ancestor allele A.
+[SPEAKER_00]: And it is allowed to change into the two
+descendant species.
+[SPEAKER_00]: And when that's brought back together in
+the allopolyploid, you essentially get the
+[SPEAKER_00]: sum of those two effects times some
+divergence coefficient, right?
+[SPEAKER_00]: Where you can see that if D equals 1,
+this is completely additive.
+[SPEAKER_00]: If D equals half, it's completely
+additive.
+[SPEAKER_00]: It's completely redundant.
+[SPEAKER_00]: And if it's somewhere in between a half
+and one, there is some partial redundancy,
+[SPEAKER_00]: OK?
+[SPEAKER_00]: And when I say partial redundancy,
+I mean these genes still, to some extent,
+[SPEAKER_00]: perform similar functions, such as having
+one or the other doesn't result in a total
+[SPEAKER_00]: loss of function.
+[SPEAKER_00]: But you need both of them to have complete
+functionality in the organism.
+[SPEAKER_00]: OK, so this is your classic epistasis
+plot.
+[SPEAKER_00]: Where you have a change from little c to
+big C, change from little b to big B.
+[SPEAKER_00]: I'm going to explain this using an
+example.
+[SPEAKER_00]: So we had a biparental population where
+the two parents each had a single dwarfing
+[SPEAKER_00]: gene, the dwarfing genes that were very
+famous from the Green Revolution.
+[SPEAKER_00]: Essentially, if you have one of these
+dwarfing genes, you are what's called a
+[SPEAKER_00]: semi-dwarf.
+[SPEAKER_00]: That brings the height of the plant down.
+[SPEAKER_00]: Such that when you put a bunch of
+fertilizer on it, it doesn't fall over,
+[SPEAKER_00]: which is called lodging.
+[SPEAKER_00]: And when obviously the plants fall over
+and they lodge, total grain loss.
+[SPEAKER_00]: So making these guys short is good,
+but you don't want to make them too short,
+[SPEAKER_00]: OK?
+[SPEAKER_00]: So what's interesting is this population
+had one parent had a dwarfing gene on the
+[SPEAKER_00]: B genome.
+[SPEAKER_00]: The other one had a dwarfing gene on the D
+genome, this RHT1.
+[SPEAKER_00]: OK, now because we made this cross,
+there are double dwarfs in this
+[SPEAKER_00]: population.
+[SPEAKER_00]: So they have two mutant genes that are
+completely gibberic acid-insensitive,
+[SPEAKER_00]: and they are tiny.
+[SPEAKER_00]: They're super short.
+[SPEAKER_00]: And here we've tagged them with markers
+that were relatively close.
+[SPEAKER_00]: You notice it's not perfect.
+[SPEAKER_00]: But when we look at the mean of the
+population of the double dwarf,
+[SPEAKER_00]: and then we can look at the effect of
+adding a wild type B allele, there's a
+[SPEAKER_00]: linear response.
+[SPEAKER_00]: Similarly, there's a linear response when
+we add a wild type B allele to the double
+[SPEAKER_00]: dwarf.
+[SPEAKER_00]: And now based on additivity, you would
+expect the mean of the double wild type to
+[SPEAKER_00]: be roughly here.
+[SPEAKER_00]: But when we observe this, it is
+significantly lower than you might expect,
+[SPEAKER_00]: OK?
+[SPEAKER_00]: So there's this deviation from the
+additive model, right?
+[SPEAKER_00]: Classic epistasis, change the slope.
+[SPEAKER_00]: OK, and so this value delta is how we can
+estimate this directly, and we can
+[SPEAKER_00]: calculate this divergence coefficient B,
+OK?
+[SPEAKER_00]: And then essentially, this is this great
+example of 1 plus 1 does not equal 2.
+[SPEAKER_00]: There is some functional redundancy
+between these two genes.
+[SPEAKER_00]: Now, this is different from there being
+pure redundancy, in which case you would
+[SPEAKER_00]: see this, where this delta is exactly
+where this slope is now flat.
+[SPEAKER_00]: So one or the other gives you the
+phenotype, the wild type.
+[SPEAKER_00]: And this is obviously different from
+seeing an increase in response.
+[SPEAKER_00]: OK, so that's one gene.
+[SPEAKER_00]: But I wanted to know, do I see this
+pattern across the genome, OK?
+[SPEAKER_00]: And so using the International Wheat
+Genome Sequencing Consortium, WebSeq1,
+[SPEAKER_00]: with roughly 1,100 coding sequences,
+I was able to basically establish
+[SPEAKER_00]: homeoallelic gene sets, roughly 18,000
+triplicates, 5,000 doubles.
+[SPEAKER_00]: So triplicates means one on A,
+one on B, one on D, in the expected
+[SPEAKER_00]: places.
+[SPEAKER_00]: And then the duplicates is one on A and
+one on B, but you're missing one on,
+[SPEAKER_00]: say, D, right?
+[SPEAKER_00]: So we end up with about 23,000 homeologous
+sets.
+[SPEAKER_00]: And then I tag those sets with GBS
+markers, so now I can track them,
+[SPEAKER_00]: OK?
+[SPEAKER_00]: And I ended up with a total of about
+10,000 marker sets.
+[SPEAKER_00]: Now, when we look at, so what can we do?
+[SPEAKER_00]: We can take these molecular markers,
+and we can do GWAS, right, which is our
+[SPEAKER_00]: favorite thing to do here.
+[SPEAKER_00]: And what I've done is I've plotted the 21
+chromosomes of wheat around the circle.
+[SPEAKER_00]: And then I've indicated these are like
+Manhattan plots here, so these are the
+[SPEAKER_00]: negative log 10 of the p values.
+[SPEAKER_00]: And you'll see we don't have a bunch of
+huge hits.
+[SPEAKER_00]: There's a couple.
+[SPEAKER_00]: Plant height, we have the dwarfing gene on
+4D.
+[SPEAKER_00]: Heading date, we have PPD1 on 2D,
+for example.
+[SPEAKER_00]: But there's not a whole lot of
+large-effect TTL.
+[SPEAKER_00]: However, you noticed from earlier,
+we had a high prediction accuracy with
+[SPEAKER_00]: these scenes.
+[SPEAKER_00]: So there is genetic signal in that.
+[SPEAKER_00]: It's just going to be, that just indicates
+that there's many genes that are looking
+[SPEAKER_00]: at that are involved in this.
+[SPEAKER_00]: Similarly, we don't find a whole lot of,
+quote unquote, significant homeologous
+[SPEAKER_00]: episodic interactions.
+[SPEAKER_00]: And these are indicated by these hoops
+here.
+[SPEAKER_00]: So a couple on three, a couple on four,
+a couple on five, a couple on seven.
+[SPEAKER_00]: Relatively few.
+[SPEAKER_00]: However, we can look at the global trend
+of these individuals, or of these loci,
+[SPEAKER_00]: OK?
+[SPEAKER_00]: And then we can see, do they increase
+prediction accuracy?
+[SPEAKER_00]: I'm going to get to that in a couple of
+slides.
+[SPEAKER_00]: What I've done here is I've plotted,
+oh my gosh, I'm running low on time.
+[SPEAKER_00]: So what I've done is I've plotted one
+homeolog, say the A genome homeolog
+[SPEAKER_00]: effect, against the other homeolog,
+which is, say, the B genome homeolog
+[SPEAKER_00]: effect.
+[SPEAKER_00]: And then in color, I've indicated the
+direction of the interaction, of their
+[SPEAKER_00]: pairwise interactions.
+[SPEAKER_00]: And their magnitude is shown with the size
+of the point here.
+[SPEAKER_00]: And you'll notice that we see this drastic
+negative trend between the additive
+[SPEAKER_00]: effects and their interaction,
+right?
+[SPEAKER_00]: So if you have a positive, if both of your
+alleles are positive, your interaction
+[SPEAKER_00]: tends to be negative, and vice versa.
+[SPEAKER_00]: And so I was like, yay, this is totally
+showing me exactly what I thought.
+[SPEAKER_00]: This is sub-functionalization,
+right?
+[SPEAKER_00]: But this has to do with how we coded this.
+[SPEAKER_00]: So what we were doing is we were
+contrasting genotypes.
+[SPEAKER_00]: We were trying to assign who has,
+what is the functional copy?
+[SPEAKER_00]: And this is using 01 marker coding.
+[SPEAKER_00]: And what happens is, so to check to make
+sure I'm not crazy, I simulated a data set
+[SPEAKER_00]: using the exact same parameters from the
+original, or data sets, using the exact
+[SPEAKER_00]: same parameters from the original
+population, only here, I intentionally did
+[SPEAKER_00]: not allow them to have interactions,
+OK?
+[SPEAKER_00]: But I didn't touch the LD in the
+population.
+[SPEAKER_00]: And you can see we still observe this
+trend.
+[SPEAKER_00]: And so I was like, oh, man, bummer.
+[SPEAKER_00]: And the problem is this is a
+multicollinearity problem, right?
+[SPEAKER_00]: So the predictors are correlated to each
+other.
+[SPEAKER_00]: But we can ask, are they greater than
+expected by chance?
+[SPEAKER_00]: And so what I did was I plotted those
+epistatic, or interaction effects from the
+[SPEAKER_00]: true data and the additive-only simulated
+data.
+[SPEAKER_00]: And if there's no effect, we should not
+see any deviation from this diagonal line.
+[SPEAKER_00]: And I multiplied them by their additive
+effect sign so that if they have a
+[SPEAKER_00]: negative relationship, they should have a
+low tail here.
+[SPEAKER_00]: And if they have a positive relationship,
+they should have a tail here.
+[SPEAKER_00]: And you'll notice for a heading date,
+we see this push down that's indicating
+[SPEAKER_00]: that these are far more negative than
+expected by chance.
+[SPEAKER_00]: We also see some for plant height down
+here.
+[SPEAKER_00]: But we see it reflected, not a lot for
+grain yield.
+[SPEAKER_00]: And it's unclear for test weight.
+[SPEAKER_00]: It doesn't look like a whole lot of
+signal.
+[SPEAKER_00]: Interestingly, if I remove the LD pattern
+in the population, then I see this effect
+[SPEAKER_00]: is, to some extent, emphasized.
+[SPEAKER_00]: And I'll come back to that in a minute.
+[SPEAKER_00]: I'm going to skip over this.
+[SPEAKER_00]: OK, so not a lot of large effect
+interactions.
+[SPEAKER_00]: But do they increase prediction and
+accuracy?
+[SPEAKER_00]: We see that modeling all pairwise gives us
+this bump from the additive model,
+[SPEAKER_00]: all pairwise interactions.
+[SPEAKER_00]: And the homeologous epistatic interactions
+explain between 60% to 75%.
+[SPEAKER_00]: Now, this is a very small increase.
+[SPEAKER_00]: For sanity's sake, we also sampled random
+pairs within and across the genome of
+[SPEAKER_00]: markers.
+[SPEAKER_00]: And then we looked at their prediction
+accuracy.
+[SPEAKER_00]: And you'll see that we actually got higher
+prediction accuracy with these random
+[SPEAKER_00]: pairs within and across, which might be
+like, oh, man, did we miss something?
+[SPEAKER_00]: Why would we expect random pairs within a
+genome or across the genome?
+[SPEAKER_00]: Why would we expect the subgenomes to have
+higher prediction accuracies than the
+[SPEAKER_00]: homeologous loci?
+[SPEAKER_00]: If anything, I would expect them to be
+about the same.
+[SPEAKER_00]: And the reason, I think, is we see a much
+higher rate of linkage disequilibrium.
+[SPEAKER_00]: So here I'm plotting the leakage
+disequilibrium parameter d prime.
+[SPEAKER_00]: So it's been standardized.
+[SPEAKER_00]: And so the solid line here is the
+homeologous set.
+[SPEAKER_00]: And then the dotted lines are two random
+sets.
+[SPEAKER_00]: And you notice that there's an enrichment
+for fixation at homeoallelic sites.
+[SPEAKER_00]: So certain pairs of homeoalleles are being
+fixed.
+[SPEAKER_00]: So an example of this would be the
+dwarfing gene, just to bring it back.
+[SPEAKER_00]: Most modern wheat varieties have a single
+dwarfing gene because they get the reduced
+[SPEAKER_00]: stature that helps them resist lodging.
+[SPEAKER_00]: But if you have both dwarfing genes,
+you're too short.
+[SPEAKER_00]: And you're not agronomically harvestable.
+[SPEAKER_00]: So what we've done is we fixed pairs.
+[SPEAKER_00]: We fixed pairs where you have a wild type
+and a mutant and a mutant and a wild type.
+[SPEAKER_00]: And you never have a double mutant.
+[SPEAKER_00]: And it's rare to have double wild type.
+[SPEAKER_00]: So this may explain why we're seeing lower
+prediction accuracy.
+[SPEAKER_00]: Additionally, physical position is not
+necessarily a good indicator of LD.
+[SPEAKER_00]: It's both position and the time of those
+mutations that indicate LD.
+[SPEAKER_00]: And I'm not going to go into this in too
+much detail.
+[SPEAKER_00]: But there's also some difficulty in
+picking specific sets of markers to call
+[SPEAKER_00]: homeologous, given that we're just using
+physical position to assign these,
+[SPEAKER_00]: as opposed to, say, linkage to single
+equilibrium.
+[SPEAKER_00]: Now, that would be really difficult to do
+because it's not just LD between the
+[SPEAKER_00]: marker and the functional polymorphism,
+but also LD between the marker and the
+[SPEAKER_00]: functional polymorphism on the other arm
+and their interaction.
+[SPEAKER_00]: So it's not a problem for simple GWAS
+tagging these.
+[SPEAKER_00]: And it's not a problem for all pairwise
+interactions, because you test everything.
+[SPEAKER_00]: But here, we're only testing a very small
+subset of that.
+[SPEAKER_00]: So we do see these interactions tend to be
+less than additive for some traits that
+[SPEAKER_00]: appears pretty clear.
+[SPEAKER_00]: Homeolylic pairs explain some of this
+increase in genetic predictability.
+[SPEAKER_00]: But not more so than random pairs.
+[SPEAKER_00]: And this may be due to LD or low pairing.
+[SPEAKER_00]: So we need a better way to pair markers.
+[SPEAKER_00]: And in my last five minutes, OK,
+and so this paper is essentially written.
+[SPEAKER_00]: It needs to be tightened up a little bit.
+[SPEAKER_00]: And we're waiting for Wheat Genome
+Consortium to publish their paper so that
+[SPEAKER_00]: we can publish ours.
+[SPEAKER_00]: They've had the genome available for quite
+some time now.
+[SPEAKER_00]: And they won't let anyone publish on it
+until they publish.
+[SPEAKER_00]: So anyway, we're waiting for that.
+[SPEAKER_00]: And in the last few minutes, I'm going to
+go into a strategy I use.
+[SPEAKER_00]: So I had a problem tag.
+[SPEAKER_00]: So there's this question of, am I having a
+hard time tagging specific homeoalleles
+[SPEAKER_00]: with specific markers?
+[SPEAKER_00]: They may not be in high LD.
+[SPEAKER_00]: Well, what if we use more than one pair?
+[SPEAKER_00]: So I talked about the pairwise epistasis.
+[SPEAKER_00]: The problem with this is a multiple test
+problem.
+[SPEAKER_00]: You have 11,000 markers or so.
+[SPEAKER_00]: You end up with 67 million tests in the
+Bonferroni correction.
+[SPEAKER_00]: It's really hard to see, especially for
+interactions which tend to only have
+[SPEAKER_00]: maximized variability at allele
+frequencies of 0.5, right?
+[SPEAKER_00]: So as those allele frequencies go to 0,
+you reduce the effect of the ability to
+[SPEAKER_00]: see the interaction.
+[SPEAKER_00]: And that variance gets partitioned to
+additive variance.
+[SPEAKER_00]: But what if we just looked at chromosome
+arms?
+[SPEAKER_00]: What if we took individual chromosome arms
+and looked at contrast to see if those
+[SPEAKER_00]: arms were interacting with one another?
+[SPEAKER_00]: This would drastically reduce the,
+now I'm only looking at 42 different
+[SPEAKER_00]: chromosome arms.
+[SPEAKER_00]: 861 total tests.
+[SPEAKER_00]: So the Bonferroni correction is way less.
+[SPEAKER_00]: So again, essentially what I did was I
+took our model and I pulled out a couple
+[SPEAKER_00]: of chromosome arms and modeled their
+interaction.
+[SPEAKER_00]: And then we do a series of likelihood
+ratio tests to determine if the additive
+[SPEAKER_00]: facts for the interaction are and the
+interaction is significant.
+[SPEAKER_00]: And then essentially we can plot the
+p-values.
+[SPEAKER_00]: And here in light gray is the additive
+p-value.
+[SPEAKER_00]: So is the additive effect significant?
+[SPEAKER_00]: And in dark gray is the interaction effect
+significant?
+[SPEAKER_00]: You'll notice that essentially,
+so these would be considered significant
+[SPEAKER_00]: over here.
+[SPEAKER_00]: These are not.
+[SPEAKER_00]: These are essentially p-value of 1.
+[SPEAKER_00]: And so you'll notice for these four
+traits, most of the chromosome arms have
+[SPEAKER_00]: an additive effect, a significant additive
+effect, which makes sense.
+[SPEAKER_00]: That's what we expect.
+[SPEAKER_00]: We expect large pieces of chromatin to
+have effects on a phenotype.
+[SPEAKER_00]: But you'll notice most of the interactions
+are not, which is good, because we don't
+[SPEAKER_00]: expect all of these things to be
+interacting with each other necessarily.
+[SPEAKER_00]: And then of course, when these variance
+parameters are estimated on boundary,
+[SPEAKER_00]: you have a problem with essentially,
+they end up being 0.
+[SPEAKER_00]: So that's where you get this big lump of
+p-values around 1 instead of the expected
+[SPEAKER_00]: uniform distribution.
+[SPEAKER_00]: OK.
+[SPEAKER_00]: And then I just want to show, so these are
+the results from a Bonferroni correction.
+[SPEAKER_00]: What's interesting is we see some sites
+where it looks like we have a 4D,
+[SPEAKER_00]: 6A, 7D big regulator, or a site that
+appears to be interacting with many loci,
+[SPEAKER_00]: which is maybe suggestive of some kind of
+D regulator.
+[SPEAKER_00]: If we relax this cut off a little bit and
+just look at interactions that were
+[SPEAKER_00]: significant at, say, 0.001, just to look
+at a pattern.
+[SPEAKER_00]: I'm not saying that these are causing.
+[SPEAKER_00]: I'm just curious.
+[SPEAKER_00]: We see that this appears, we see these
+sites where just a bunch of interactions
+[SPEAKER_00]: with a single locus or a single
+chromosome.
+[SPEAKER_00]: Here's another one for heading date.
+[SPEAKER_00]: It looks like it's affecting a bunch of
+different things.
+[SPEAKER_00]: And so we see some of these hotspots on
+7D, 7B here, and 4B.
+[SPEAKER_00]: Or excuse me, 4D.
+[SPEAKER_00]: Recently, there was a paper by Jiang that
+came out last year.
+[SPEAKER_00]: And they also saw this enrichment at 7B
+and 7D.
+[SPEAKER_00]: So this is essentially the same plot.
+[SPEAKER_00]: Theirs is rotated.
+[SPEAKER_00]: But they saw that these two chromosomes
+appeared to be influencing a lot of
+[SPEAKER_00]: regions.
+[SPEAKER_00]: They also saw an area on 4A, which we
+didn't see.
+[SPEAKER_00]: But we saw that 4D seemed to be important.
+[SPEAKER_00]: Just looking at the homeologous chromosome
+arms, we don't see a whole lot of evidence
+[SPEAKER_00]: for this.
+[SPEAKER_00]: This is a Bonferroni correction.
+[SPEAKER_00]: We only were to consider all of the ones
+that are significant at, say, 0.05 for
+[SPEAKER_00]: their interactions.
+[SPEAKER_00]: We see this.
+[SPEAKER_00]: Now, you're probably wondering what the
+colors are.
+[SPEAKER_00]: The colors are basically colored the
+relationship between the additive and the
+[SPEAKER_00]: epistatic effect.
+[SPEAKER_00]: So if they're blue, there's a positive
+relationship between the additive and the
+[SPEAKER_00]: epistatic effect.
+[SPEAKER_00]: And if they're red, there's a negative
+relationship.
+[SPEAKER_00]: And if they're black or gray, there's no
+relationship.
+[SPEAKER_00]: Based on just a correlation coefficient.
+[SPEAKER_00]: And one of the things I'd like to point
+out from last minute is that the 4BL and
+[SPEAKER_00]: 4DL here had a really strong negative
+relationship.
+[SPEAKER_00]: And when we plotted this, you can see
+there's this drastic negative relationship
+[SPEAKER_00]: between the additive effects and the
+interaction.
+[SPEAKER_00]: So this might be another indicator of some
+culturalization.
+[SPEAKER_00]: However, when we looked at this for a
+different trait, so this was for plant
+[SPEAKER_00]: height.
+[SPEAKER_00]: This is for test weight.
+[SPEAKER_00]: We did not see the same pattern.
+[SPEAKER_00]: And when we looked at our spot where we
+assumed we might see the interaction of
+[SPEAKER_00]: the two dworkin genes, we don't have a
+whole lot of them from the B genome in our
+[SPEAKER_00]: population.
+[SPEAKER_00]: But we don't really see much of a pattern
+here, although there is a significant
+[SPEAKER_00]: positive correlation.
+[SPEAKER_00]: OK, so we see a lot of these interactions.
+[SPEAKER_00]: Granule has a few, potentially.
+[SPEAKER_00]: It looks like we see some regions that
+have large regulatory regions,
+[SPEAKER_00]: seem to be interacting with many different
+loci.
+[SPEAKER_00]: And we see strong relationships between
+some of these homeologous arm pairs,
+[SPEAKER_00]: indicating that we may have some of these
+homeoalleles, that there may be
+[SPEAKER_00]: relationships between these homeoalleles.
+[SPEAKER_00]: Additionally, I think that a lot of this
+stuff probably is really suggestive and
+[SPEAKER_00]: probably needs a lot more fine tuning.
+[SPEAKER_00]: I think a lot more research can be done.
+[SPEAKER_00]: I imagine that there are some other
+populations that you could look at this
+[SPEAKER_00]: in.
+[SPEAKER_00]: As opposed to a breeding population,
+where you fix a lot of these interactions,
+[SPEAKER_00]: you could look at a synthetic wheat
+population, which would maximize these
+[SPEAKER_00]: interactions.
+[SPEAKER_00]: And so I think that there is much more
+research needed into how these three
+[SPEAKER_00]: genomes are talking to each other to
+produce a phenotype.
+[SPEAKER_00]: And so my PAG talk was in translational
+genomics.
+[SPEAKER_00]: And I gave some of this information.
+[SPEAKER_00]: And I had to figure out what the
+translation was.
+[SPEAKER_00]: So my translation is allopolyploids are
+not diploids.
+[SPEAKER_00]: For the last 100 years, we have been
+treating allopolyploid crops as diploids
+[SPEAKER_00]: because they undergo disomic inheritance.
+[SPEAKER_00]: So you can treat them as diploids because
+the chromosomes pair up and segregate.
+[SPEAKER_00]: You know, in a behaved manner.
+[SPEAKER_00]: But we now have the molecular tools to
+start to look at these things as the
+[SPEAKER_00]: immortal hybrids that they are.
+[SPEAKER_00]: And with that, I'd like to acknowledge my
+committee members, Mark Sorrell,
+[SPEAKER_00]: John Luke.
+[SPEAKER_00]: Yannick is here.
+[SPEAKER_00]: Mark couldn't be here today.
+[SPEAKER_00]: He is at CIMIT.
+[SPEAKER_00]: And Jason Meese.
+[SPEAKER_00]: Some great folks in the Yannick Sorrell's
+lab.
+[SPEAKER_00]: I worked closely with Lisa Kissinkusek and
+Lynn Binstra on some of the GBI stuff.
+[SPEAKER_00]: I've also gotten some really good input
+from Tarju and Uche and Marnin and
+[SPEAKER_00]: Roberto.
+[SPEAKER_00]: Roberto, I will point out, was the first
+person that said, hey, you know,
+[SPEAKER_00]: you could go in and, like, look at those
+coding sequences and then see if you could
+[SPEAKER_00]: find pairs.
+[SPEAKER_02]: And I was like, oh, yeah, good idea.
+[SPEAKER_00]: And then, of course, without the help of
+the folks at the Small Grains,
+[SPEAKER_00]: David Venture, Amy Fox, and Justin Chavez,
+and James Sanaka, who are all here,
+[SPEAKER_00]: I couldn't have had this data to ask these
+questions with.
+[SPEAKER_00]: And so I very much appreciate their work
+into this, as well as the relationships
+[SPEAKER_00]: we've developed over time.
+[SPEAKER_00]: And thank you guys very much.
+[SPEAKER_00]: Oh, one last one.
+[SPEAKER_00]: I'm keeping you guys late.
+[SPEAKER_00]: I'd really like to thank my family.
+[SPEAKER_00]: They've given me a lot of support.
+[SPEAKER_00]: And I couldn't have finished this without
+them.
+[SPEAKER_00]: And I would like to thank, particularly,
+my father, who is here today, and my
+[SPEAKER_00]: girlfriend, Amy, who also joined us today.
+[SPEAKER_00]: And thank you all.
+[SPEAKER_00]: I ran a little over there.
+[SPEAKER_01]: So if there's a couple of questions,
+I'm sorry to keep you guys a little bit
+[SPEAKER_01]: longer.
+[SPEAKER_01]: Yeah.
+[SPEAKER_03]: You had one slide where the x-axis was a
+scalarization of the environment.
+[SPEAKER_03]: It ranges from minus 1 to plus 2.
+[SPEAKER_03]: And it says presented.
+[SPEAKER_03]: Do you think of that as an asymmetry in
+that measure?
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: That's a good question.
+[SPEAKER_00]: So I centered all of this data.
+[SPEAKER_00]: So theoretically, but what I did was I,
+no, no, no, I can explain this.
+[SPEAKER_00]: So what I didn't want to do was center the
+data.
+[SPEAKER_00]: So this is all standardized data,
+right?
+[SPEAKER_00]: You subtract the mean and divide by the
+standard deviation.
+[SPEAKER_00]: Now, I could have centered within each
+environment.
+[SPEAKER_00]: But I didn't want to do that because then
+you are assuming that every environment
+[SPEAKER_00]: has the same variance, both error and
+genetic variance.
+[SPEAKER_00]: So what I did instead was I centered on
+everything at the same time.
+[SPEAKER_00]: And so then if the environment sizes,
+for example, I don't remember which
+[SPEAKER_00]: direction it was in.
+[SPEAKER_00]: Was it heavier on the negative side or
+heavier on the positive side?
+[SPEAKER_03]: Well, I see you remember it was heavier on
+the positive side.
+[SPEAKER_03]: Yeah.
+[SPEAKER_00]: So that could be from if there were larger
+trials that tended to be better trials,
+[SPEAKER_00]: those ones would push that whole thing,
+right?
+[SPEAKER_00]: Because you're taking a meat.
+[SPEAKER_00]: So as you summarize that thing,
+you're taking a single point for something
+[SPEAKER_00]: that had maybe 400 genotypes in it that
+was a particularly good environment and
+[SPEAKER_00]: then another single point that maybe only
+had 200 genotypes that was particularly
+[SPEAKER_00]: bad, right?
+[SPEAKER_00]: So that's going to shift that mean point
+of the environmental I mean roughly they
+[SPEAKER_00]: should be close to centered around zero,
+but they weren't because I think because I
+[SPEAKER_00]: centered the data as a whole as opposed to
+within the environment.
+[SPEAKER_00]: Had I done it within environment,
+they should have all been smacked out at
+[SPEAKER_00]: zero.
+[SPEAKER_00]: Any other questions?
+[SPEAKER_04]: So I'm sort of sitting here mulling over
+the question about neopunctualization
+[SPEAKER_04]: within a very simple diploid because
+that's one of my favorite genome in my
+[SPEAKER_04]: mind.
+[SPEAKER_04]: And I think we have neopunctualization
+within duplicated genes in every even
+[SPEAKER_04]: simple diploid, but we don't tend to think
+about the opportunity cost because
+[SPEAKER_04]: duplication is a much more conservative
+process than full genome polyploidization.
+[SPEAKER_04]: And yet, if the hypothesis is true,
+which is that basically every angiosperm
+[SPEAKER_04]: has undergone at least one round,
+maybe two or three, of whole genome
+[SPEAKER_04]: duplication and then subsequently gain and
+loss.
+[SPEAKER_04]: My question is, do you see the kind of
+preferential loss of loci in these more,
+[SPEAKER_04]: you know, in these replete polyploids that
+we see in the long term perspective on all
+[SPEAKER_04]: of our ancient polyploid, which is that
+they actually get rid of more than half
+[SPEAKER_04]: the genes that they don't want to bother
+to maintain either because if you're,
+[SPEAKER_04]: you know, if you chomp, they are
+functionally done.
+[SPEAKER_04]: Or maybe there's a cost to the
+neopunctualization.
+[SPEAKER_04]: Just asking that question.
+[SPEAKER_04]: Is this a continuum?
+[SPEAKER_04]: And do you expect to see simply the loss
+and how much loss do you see in the 3G?
+[SPEAKER_00]: Right.
+[SPEAKER_00]: Okay.
+[SPEAKER_00]: So to repeat the question, essentially the
+idea is in diploid species, you have genes
+[SPEAKER_00]: that get duplicated.
+[SPEAKER_00]: And then, and then those are oftentimes
+subsequently lost because they're
+[SPEAKER_00]: unnecessary.
+[SPEAKER_04]: Right.
+[SPEAKER_00]: Right.
+[SPEAKER_00]: And so during a whole genome duplication,
+yeah, and that happens.
+[SPEAKER_00]: And then do we see that same thing happen
+in all the polyploid?
+[SPEAKER_00]: The answer is yes.
+[SPEAKER_00]: In fact, it happens really drastically,
+especially very shortly after the
+[SPEAKER_00]: hybridization event.
+[SPEAKER_00]: They usually go through this, this weird
+genome shock moment where they're like,
+[SPEAKER_00]: oh my God, well, how am I going to deal
+with all of this?
+[SPEAKER_00]: Right.
+[SPEAKER_00]: And so oftentimes big, big chunks break
+because you're going to have a lot of
+[SPEAKER_00]: negative epistasis too.
+[SPEAKER_00]: So there's this other thing that happens.
+[SPEAKER_00]: This happens where you can think of a gene
+from this species and a gene from that
+[SPEAKER_00]: species, while they work completely fine
+within their own species, you bring them
+[SPEAKER_00]: together and all of a sudden like,
+think of like a homeodimer, for example.
+[SPEAKER_00]: I think this is a good example.
+[SPEAKER_00]: The homeodimer is formed from the protein
+products within the two species are
+[SPEAKER_00]: functional, but you might have a thing
+where they can still bind together and
+[SPEAKER_00]: form a heterodimer across these two really
+closely related genes that may disrupt
+[SPEAKER_00]: their function.
+[SPEAKER_00]: So I think that when that kind of thing
+happens, there is a push to get,
+[SPEAKER_00]: well, I don't know about a push,
+but there is a selective advantage to drop
+[SPEAKER_00]: a lot of these really important,
+and we do see that.
+[SPEAKER_00]: In fact, so of the 110,000 or so genes in
+the genome, I was only able to get
+[SPEAKER_00]: triplicate for like, so 110,000 genome,
+you divide that by three, you're roughly
+[SPEAKER_00]: looking at a haploid number of 33,000
+genes.
+[SPEAKER_00]: I was only able to get 18 of them that had
+at least three copies, or no, was it at
+[SPEAKER_00]: least two copies?
+[SPEAKER_00]: Yeah, at least two copies, no.
+[SPEAKER_00]: I have to go look at it.
+[SPEAKER_00]: Yeah, so a third of the genome has been
+lost, and there was a bunch of singletons.
+[SPEAKER_00]: The other thing that happens is you get a
+lot of tandem duplication.
+[SPEAKER_00]: Tandem duplications are super interesting
+because they have a tendency to be
+[SPEAKER_00]: co-inherited, whereas duplications across
+chromosomes, there's no linkage that holds
+[SPEAKER_00]: them together, right?
+[SPEAKER_00]: They can be lost very easily.
+[SPEAKER_00]: Yeah, did I answer your question,
+I think?
+[SPEAKER_04]: What I think is part of this picture that
+you're painting is that there may be
+[SPEAKER_04]: immortal hybrids in the sense of these,
+but there's immortal hybrids in everything
+[SPEAKER_04]: and just from, but the ones that have
+evolved longest have gotten rid of most
+[SPEAKER_04]: of, they retain these duplications that
+seem to have an advantage, and they get
+[SPEAKER_04]: rid of things that don't.
+[SPEAKER_00]: And they diverge too, right?
+[SPEAKER_00]: So there's this thought that essentially
+all neofunctionalization goes to a process
+[SPEAKER_00]: of subfunctionalization, where at first
+they start off with the exact same
+[SPEAKER_00]: function, and then you have small
+mutations that change them a little bit,
+[SPEAKER_00]: and then eventually they develop such
+different pieces, and I think that this is
+[SPEAKER_00]: really evident.
+[SPEAKER_00]: When you look at genes, genes have these
+domains, right?
+[SPEAKER_00]: And it's interesting that you can stick
+these domains together and have this thing
+[SPEAKER_00]: be functional here, and that thing be,
+you know, so you can like, it's almost
+[SPEAKER_00]: like mix and match.
+[SPEAKER_00]: You know, what are they, what are those
+toys?
+[SPEAKER_01]: Legos.
+[SPEAKER_00]: Yeah, they're like legos, yeah.
+[SPEAKER_00]: Yeah, and so, yeah, I think it's really
+important, and that I would be super
+[SPEAKER_00]: curious to try this in a species that is
+kind of in between that whole genome
+[SPEAKER_00]: duplication event and being already
+becoming a diploid, and seeing if we could
+[SPEAKER_00]: find evidence of this happening,
+you know, across non-homologous sites.
+[SPEAKER_00]: That would be really fascinating,
+yeah.
+[SPEAKER_04]: Are they lost more, let's say,
+do you see more loss in the DGNL,
+[SPEAKER_04]: which is the new interloper, into your...
+Right.
+[SPEAKER_04]: I'm just thinking about this for a very
+long time.
+[SPEAKER_00]: I think that when you bring, I think that
+also, when you bring a thing in,
+[SPEAKER_00]: there's probably a lot of stuff that's
+good, but most of it, it actually has a
+[SPEAKER_00]: negative effect.
+[SPEAKER_00]: So there is some question like that,
+right?
+[SPEAKER_00]: So I would assume that most, I should
+tabulate that.
+[SPEAKER_00]: I should see how many of the ones I saw,
+you know, where the third copy that I
+[SPEAKER_00]: didn't have was from the DGNL.
+[SPEAKER_00]: I wouldn't be surprised if it was full.
+[SPEAKER_00]: Yep.
+[SPEAKER_01]: I'm gonna cut you off.
+Okay.
+[SPEAKER_03]: So... This has been a production of
+Cornell University on the web at cornell
+[SPEAKER_03]: .edu.
+[SPEAKER_03]: Thank you.
+[SPEAKER_03]: Thank you.
+Thank you.

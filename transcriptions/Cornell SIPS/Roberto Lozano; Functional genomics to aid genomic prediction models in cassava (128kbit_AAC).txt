@@ -1,0 +1,811 @@
+[SPEAKER_01]: This is a production of Cornell
+University.
+[SPEAKER_00]: So yeah I'm gonna I'm really excited to
+talk to you about a lot of the research
+[SPEAKER_00]: that I've been doing the last four years
+and a half here and everything will go
+[SPEAKER_00]: around this idea of of using functional
+genomics to help genomic prediction and
+[SPEAKER_00]: genomic selection models in Casaba.
+[SPEAKER_00]: Okay and back in 2013 I was about to get
+interviewed by Jean-Luc through Skype and
+[SPEAKER_00]: I had no idea what genomic selection was
+so I started looking at the literature and
+[SPEAKER_00]: what I'm pretty sure happened with most of
+you trying to approach the genomic
+[SPEAKER_00]: selection were haunted by this scheme that
+I don't even need to explain.
+[SPEAKER_00]: This however at the time didn't help me to
+understand how these models were working
+[SPEAKER_00]: so I came with a scheme out of my own.
+[SPEAKER_00]: Briefly you have phenotypes and phenotypes
+of a training population and combining
+[SPEAKER_00]: these two elements you will build a
+prediction model that here I'm depicting
+[SPEAKER_00]: it as a wormhole because I didn't have any
+idea what was happening here.
+[SPEAKER_00]: So what I did know was that the DNA of an
+unphenotype Casaba was traveling through
+[SPEAKER_00]: space and time to give us genomic expected
+breeding values.
+[SPEAKER_00]: That is basically your expectation or your
+prediction on how that unphenotype Casaba
+[SPEAKER_00]: is gonna perform in the future.
+[SPEAKER_00]: Okay so what I did understand at the
+moment was that my mission within the
+[SPEAKER_00]: project was to use functional genomics as
+a proxy to understand the biology behind
+[SPEAKER_00]: the phenotypes that we're trying to
+predict and see where and you know try to
+[SPEAKER_00]: test whether the inclusion of this extra
+element in the prediction model will be a
+[SPEAKER_00]: positive one.
+[SPEAKER_00]: Okay so today I have three topics for you.
+[SPEAKER_00]: We'll go through all of them but just an
+important thing is that all of them will
+[SPEAKER_00]: go around this idea of using biology and
+genomic prediction models.
+[SPEAKER_00]: So again but back on 2013 I you know I was
+new on Casaba and I went to the data base
+[SPEAKER_00]: trying to find genomic information and
+Casaba was a really orphan crop.
+[SPEAKER_00]: There weren't a lot of genomic resources
+or genomic research at the time.
+[SPEAKER_00]: I was really interested in working with
+biotic stresses so I went to the database
+[SPEAKER_00]: checking for resistant genes in Casaba and
+I couldn't find it.
+[SPEAKER_00]: So with Martha at the time we saw it as an
+opportunity to both get this data mine and
+[SPEAKER_00]: contribute a little bit to the growing
+genomics.
+[SPEAKER_00]: Genomic libraries of Casaba.
+[SPEAKER_00]: So we identified this family of gene the
+NBSLR family that is known to be the
+[SPEAKER_00]: biggest resistant gene family in plants.
+[SPEAKER_00]: We did some phylogenetics and most
+importantly we mapped them into their
+[SPEAKER_00]: position of the 18 chromosomes of Casaba
+and this data later helped other
+[SPEAKER_00]: scientists to make sense out of their GWAS
+results.
+[SPEAKER_00]: For example this is a publication by
+Ismael Cayondo a collaborator in Uganda.
+[SPEAKER_00]: He found a couple of QTLs for Casaba brown
+streak disease.
+[SPEAKER_00]: One of them being in chromosome 11 and you
+will have to believe me here but if you
+[SPEAKER_00]: zoom in here on the on the peak it
+collocates nicely with a small cluster of
+[SPEAKER_00]: NBSLR genes and some collaborators from
+Kenya now are evaluating using knockouts
+[SPEAKER_00]: with CRISPR and complementation assays to
+you know validate these candidate genes as
+[SPEAKER_00]: the resistance.
+[SPEAKER_00]: So yeah that's pretty nice and again that
+was published in 2015 but in the years
+[SPEAKER_00]: past and Casaba stopped being an orphaned
+crop.
+[SPEAKER_00]: Suddenly in the span of two or three years
+there were lots of research going on.
+[SPEAKER_00]: We have a nice haplotype mine thanks to
+Ramu and the Butler lab.
+[SPEAKER_00]: Plenty of transcriptomics studies.
+[SPEAKER_00]: A better genome with a really nice RNAC
+guided annotation.
+[SPEAKER_00]: We have even methylation data and a
+plethora of food.
+[SPEAKER_00]: So from now on we switch a little bit from
+doing the genomic resources generator to
+[SPEAKER_00]: be more like data scavengers and try to
+use all these to put them in the genomic
+[SPEAKER_00]: prediction framework.
+[SPEAKER_00]: Okay let's make a stop here and I'm going
+to talk a little bit about which models
+[SPEAKER_00]: we'll be using in the rest of my talk.
+[SPEAKER_00]: Spoiler alert we won't be using any fancy
+Bayesian or machine learning algorithms.
+[SPEAKER_00]: What we will be using is just different
+modifications of the good old DBLAB model.
+[SPEAKER_00]: Okay for those that don't know what DBLAB
+model is it's basically a mixed model feed
+[SPEAKER_00]: on the basis of individuals rather than
+markers but using a covariance matrix that
+[SPEAKER_00]: is calculated as the genomic relationship.
+[SPEAKER_00]: Okay and this incorporates these genetic
+random effects where you basically
+[SPEAKER_00]: calculate the ERM using all the markers
+available.
+[SPEAKER_00]: In 2014 however this group from Albus
+Price and Gusev and company were
+[SPEAKER_00]: interested in studying how splitting or
+partitioning the genomic regions into
+[SPEAKER_00]: functional elements let's say coding
+regions, UTR regions, promoter regions
+[SPEAKER_00]: would influence this model.
+[SPEAKER_00]: And as you know DBLAB models and any model
+that will, well most of the models that
+[SPEAKER_00]: will work with with engineering
+predictions where we have lots of
+[SPEAKER_00]: predictors and a few individuals have to
+find a way how to deal with collinearity
+[SPEAKER_00]: and overfeeding.
+[SPEAKER_00]: So DBLAB used shrinkage where all most of
+the SNP effects were random and are shrunk
+[SPEAKER_00]: towards zero.
+[SPEAKER_00]: And this shrinkage severity will be a
+function of the numbers of SNPs in the
+[SPEAKER_00]: model.
+[SPEAKER_00]: The idea of these guys was what if we
+partition the genome in different random
+[SPEAKER_00]: effects genetic random effects and I from
+now on I'm just gonna call these guys as
+[SPEAKER_00]: kernels.
+[SPEAKER_00]: And if one of these kernels is enriched
+for causal variance due to biological
+[SPEAKER_00]: priors I have this might result in an
+increase in prediction accuracy.
+[SPEAKER_00]: Why?
+[SPEAKER_00]: Because if you are relaxing the shrinkage
+severity you are allowing more markers
+[SPEAKER_00]: into that partition having a bigger.
+[SPEAKER_00]: So this is basically the rationale that
+I'm gonna use on the models that I
+[SPEAKER_00]: explained throughout my presentation.
+[SPEAKER_00]: The second nice thing well useful thing
+about this research was that a Gusev and
+[SPEAKER_00]: collaborators determined that we need to
+have level sequence imputation when you
+[SPEAKER_00]: are using genomic partitioning
+methodologies.
+[SPEAKER_00]: Basically the estimation of a percentage
+of any heritabilities will be really bad
+[SPEAKER_00]: if you just use genotype SNP for example
+GBS.
+[SPEAKER_00]: In comparison when you use genotype full
+genome imputation mark.
+[SPEAKER_00]: Okay so yeah this is a little of the
+background that will be going on.
+[SPEAKER_00]: So just keep this in mind.
+[SPEAKER_00]: Now the second topic that I want to tell
+you about is the actually a case study.
+[SPEAKER_00]: How my first approach to use biology to
+improve genomic prediction.
+[SPEAKER_00]: As I told you I was really interested in
+working with biotic diseases, biotic
+[SPEAKER_00]: stresses.
+[SPEAKER_00]: So Cassava Brown streak disease was really
+attractive to me.
+[SPEAKER_00]: So in this study I tried to use whole
+genome imputation and a transcriptomic
+[SPEAKER_00]: study that I will later show you to
+increase the performance of this model.
+[SPEAKER_00]: Just briefly Cassava Brown streak disease
+caused by Cassava Brown streak virus.
+[SPEAKER_00]: It's a really awful disease.
+[SPEAKER_00]: Symptoms in leaf you have chlorosis around
+the secondary veins but the most important
+[SPEAKER_00]: thing is that you have root rot on the
+cassava tubers that make them inedible
+[SPEAKER_00]: even for animal feed and they are
+transmitted by white flies in a
+[SPEAKER_00]: semi-persistent way.
+[SPEAKER_00]: Okay so that's our model.
+[SPEAKER_00]: So let's go back to my previous scheme and
+I'll show you how I'm going to incorporate
+[SPEAKER_00]: the different elements into this case.
+[SPEAKER_00]: So for example the phenotypes evaluated
+now will be CBSD related traits,
+[SPEAKER_00]: measure of leaves and roots, three months,
+six months, and one year after planting.
+[SPEAKER_00]: The genotypes will be GBS markers that
+will be imputed to whole genome sequence.
+[SPEAKER_00]: The wormhole or prediction model will be a
+multi-kernel g-block.
+[SPEAKER_00]: And the genomics data will be
+transcriptomic studies, QTL information,
+[SPEAKER_00]: and immunity related traits.
+[SPEAKER_00]: Okay so now let's explain a little bit of
+each of these components in this study.
+[SPEAKER_00]: The phenotypes we use were basically on
+leaves and roots a categorical scale that
+[SPEAKER_00]: goes from one to five.
+[SPEAKER_00]: Our high throughput phenotyping scheme.
+[SPEAKER_00]: Alfred is here.
+[SPEAKER_00]: That are all the phenotypes okay.
+[SPEAKER_00]: The genotypes we recognize with this Gusev
+paper the necessity of going from 40,000
+[SPEAKER_00]: markers that we were obtaining with GBS to
+millions of markers through whole genome
+[SPEAKER_00]: imputation.
+[SPEAKER_00]: And how was this possible?
+[SPEAKER_00]: It's not that we are inventing markers
+that weren't type.
+[SPEAKER_00]: We use this scheme of whole genome
+imputation that uses the have map that was
+[SPEAKER_00]: produced by the Buckler lab.
+[SPEAKER_00]: 241 individuals including cultivated
+cassava, wild hybrids, and wild cassava
+[SPEAKER_00]: relatives.
+[SPEAKER_00]: And those were deep sequence to 30x.
+[SPEAKER_00]: So we have a nice haplotype maps of those
+240 individuals.
+[SPEAKER_00]: And what we are performing here is that
+when we have GBS we have a bunch of
+[SPEAKER_00]: markers.
+[SPEAKER_00]: But we also have a lot of interrogation.
+[SPEAKER_00]: Those of size that we are missing.
+[SPEAKER_00]: And what the whole genome imputation
+algorithm does is try to infer which of
+[SPEAKER_00]: these regions belongs to which of these
+haplotypes.
+[SPEAKER_00]: And get most importantly the boundaries.
+[SPEAKER_00]: Once it has the most probable haplotype of
+each region it will just impute the
+[SPEAKER_00]: missing genotypes with the ones present in
+the haplotype.
+[SPEAKER_00]: And that's how you go from GBS 42,000
+markers to millions of markers using this
+[SPEAKER_00]: have map information.
+[SPEAKER_00]: And now you will tell me yeah Roberto you
+don't need millions of markers to perform
+[SPEAKER_00]: genomic selection.
+[SPEAKER_00]: We all know that.
+[SPEAKER_00]: The problem was that in my approach I was
+interested in tagging different regions in
+[SPEAKER_00]: the genome that might be important.
+[SPEAKER_00]: And then if I use only the 42k markers
+from GBS I could only tag around 30% of
+[SPEAKER_00]: the genome.
+[SPEAKER_00]: Then if I did Bigel imputation,
+Bigel is just an algorithm of whole genome
+[SPEAKER_00]: imputation, I get to 70%.
+[SPEAKER_00]: And finally I stop with impute two,
+that is for me at least a better whole
+[SPEAKER_00]: genome imputator.
+[SPEAKER_00]: And I could get markers that will be
+tagging close to 92%.
+[SPEAKER_00]: So that's the only reason why I keep this
+methodology together with those
+[SPEAKER_00]: information from the Luceff paper.
+[SPEAKER_00]: So yeah now we have phenotypes,
+we have genotypes, we need a population.
+[SPEAKER_00]: This is our population.
+[SPEAKER_00]: This is a graph of the 18 chromosomes and
+I'm plotting the LDS score, the mean LDS
+[SPEAKER_00]: score.
+[SPEAKER_00]: You don't know what the mean LDS score is
+just you graph each marker and then
+[SPEAKER_00]: calculate the R square of that marker with
+all the markers in a bin of one megabase.
+[SPEAKER_00]: And then you divide that by the number of
+markers in that bin.
+[SPEAKER_00]: And you plot all of them.
+[SPEAKER_00]: And it gives you a sense of local LD
+patterns.
+[SPEAKER_00]: You can see here the Casaba has like a
+funky pattern of high LD close to the
+[SPEAKER_00]: telomeres.
+[SPEAKER_00]: Well there is that.
+[SPEAKER_00]: Second here I'm plotting, this is a
+classical LD decay plot.
+[SPEAKER_00]: The only thing that I'm doing differently
+here is that I'm coloring chromosome one
+[SPEAKER_00]: and chromosome four in a yellow and red
+respectively because they have a recent
+[SPEAKER_00]: introgression that doesn't have a lot of
+recombination.
+[SPEAKER_00]: So that's what is dragging these files.
+[SPEAKER_00]: Funky LD pattern.
+[SPEAKER_00]: High R squares even when the markers are
+positioned really far away in the
+[SPEAKER_00]: chromosome.
+[SPEAKER_00]: Okay so we have markers, we have
+phenotypes, we have a population and this
+[SPEAKER_00]: is our biological data.
+[SPEAKER_00]: Okay this transcriptomics study was
+performed by Teddy and Muge and published
+[SPEAKER_00]: in 2017.
+[SPEAKER_00]: And she basically grabbed two contrasting
+genotypes.
+[SPEAKER_00]: Namikonga resistance to CBSD and Albert's
+really susceptible.
+[SPEAKER_00]: And she grafted these varieties with
+infected scions and non-infected scions
+[SPEAKER_00]: and evaluated differentially gene
+expressed across seven different time
+points.
+[SPEAKER_00]: Six hours after grafting, 24 hours after
+grafting, 48 hours and so on until 54 days
+[SPEAKER_00]: after grafting.
+[SPEAKER_00]: And what we observe here is that the
+resistant plant in yellow has a lot of
+[SPEAKER_00]: differential expressions.
+[SPEAKER_00]: It's really aware that it's being
+infected.
+[SPEAKER_00]: While the Albert's plant is susceptible
+has like a really mild response at six
+[SPEAKER_00]: hours and then nothing.
+[SPEAKER_00]: None different between the transcriptional
+pattern between the control and the
+[SPEAKER_00]: infected ones in all these time points.
+[SPEAKER_00]: It just start reacting when it's basically
+too late.
+[SPEAKER_00]: So then we start thinking how can we use
+this transcriptomic data to weigh the
+[SPEAKER_00]: genomic prediction models.
+[SPEAKER_00]: And we had several hypotheses.
+[SPEAKER_00]: The first hypothesis was just brute force.
+[SPEAKER_00]: So yeah let's just use all the
+differentially expressed genes and compare
+[SPEAKER_00]: the accuracy that we have to the whole
+genome imputation.
+[SPEAKER_00]: This is the full model.
+[SPEAKER_00]: I will always be comparing the accuracies
+with the full model at the last column.
+[SPEAKER_00]: This is CBSD measure on leaves six months
+after planting and this is measuring
+[SPEAKER_00]: roots.
+[SPEAKER_00]: And the model that we are running here is
+a two kernel model.
+[SPEAKER_00]: One of the kernel will harbor all the SNPs
+that are tagging differential express
+[SPEAKER_00]: genes and the other kernel will have the
+rest of the genome.
+[SPEAKER_00]: So as any brute force approach usually
+happens it didn't have a good result.
+[SPEAKER_00]: The prediction accuracies were basically
+similar as the ones when we just used the
+[SPEAKER_00]: whole genome imputation full data set.
+[SPEAKER_00]: Then with YANLU we tried to be a little
+bit smarter about it and we had this idea
+[SPEAKER_00]: that maybe those genes that have a
+positive interaction between genotype and
+[SPEAKER_00]: inoculation status.
+[SPEAKER_00]: Inoculation status being if the plant was
+controlled or inoculated could have a
+[SPEAKER_00]: better effect, a major effect on the
+resistant phenomena.
+[SPEAKER_00]: So we fit this model where expression,
+the gene expression of each genes,
+[SPEAKER_00]: will be explained by reps plus the
+three-way interaction of genotype
+[SPEAKER_00]: inoculation status and time.
+[SPEAKER_00]: And we extracted those genes right here
+that had a significant interaction between
+[SPEAKER_00]: G by I.
+[SPEAKER_00]: Okay and similar to the last picture we
+calculated genomic accuracy, the
+[SPEAKER_00]: prediction accuracies for this model.
+[SPEAKER_00]: In red we have the three kernel model that
+was fit with these G by I genes
+[SPEAKER_00]: partitioned into chromosome 11,
+chromosome 4, and the rest of the genome.
+[SPEAKER_00]: Here we also incorporated the fact that we
+know that in chromosome 11 and 4 there
+[SPEAKER_00]: were big big details.
+[SPEAKER_00]: Okay and we also fit a model with random
+genes in the same proportion.
+[SPEAKER_00]: And what we saw is that our model is doing
+better than random for severity in leaves
+[SPEAKER_00]: and roots, but we are still not doing
+better than when just using the basic G
+[SPEAKER_00]: lab model.
+[SPEAKER_00]: So yeah that was the second hypothesis.
+[SPEAKER_00]: It didn't quite well work yet.
+[SPEAKER_00]: So then we have a third hypothesis.
+[SPEAKER_00]: What if instead of using the
+differentially expressed genes we just use
+[SPEAKER_00]: a clustering method called weighted gene
+co-expression network analysis to try to
+[SPEAKER_00]: mine important genes.
+[SPEAKER_00]: And let's focus in this part of the slide.
+[SPEAKER_00]: The colors are a little off but it's fine.
+[SPEAKER_00]: To have a better idea of what weighted
+gene co-expression network analysis is
+[SPEAKER_00]: doing is just clustering genes that have a
+similar expression pattern.
+[SPEAKER_00]: And if you go to the black module here,
+and you'll have to believe me because the
+[SPEAKER_00]: colors are off, this black module has
+genes that are expressed only in the
+[SPEAKER_00]: Namikonga genotype.
+[SPEAKER_00]: And then we have another cyan module that
+are mostly expressed in Albert.
+[SPEAKER_00]: This should be way redder.
+[SPEAKER_00]: More red.
+[SPEAKER_00]: The colors are a little off.
+[SPEAKER_00]: But anyway, we get a bunch of modules with
+this technique.
+[SPEAKER_00]: And again we try our technique of two
+terms.
+[SPEAKER_00]: Let's get the genes that are within our
+module and everything else in the genome
+[SPEAKER_00]: and compare them with the last column that
+will be the whole genome imputation.
+[SPEAKER_00]: Not very good results.
+[SPEAKER_00]: The only one that was doing better than
+the whole model was this module reds and
+[SPEAKER_00]: only for three months.
+[SPEAKER_00]: So no really good results at the time.
+[SPEAKER_00]: So we come up with a fourth hypothesis
+that was basically desperation.
+[SPEAKER_00]: And we mix different sources of
+information trying to beat the performance
+[SPEAKER_00]: of the whole genome imputation.
+[SPEAKER_00]: And we did it.
+[SPEAKER_00]: But with, you know, ranging from 1.7 to
+2.5 percent overall prediction accuracy.
+[SPEAKER_00]: So it wasn't a big game but it was a
+little game.
+[SPEAKER_00]: And we have several options why this
+approach didn't work as we were expecting.
+[SPEAKER_00]: There is the thing of the trait genetic
+architecture.
+[SPEAKER_00]: These CBSD resistant in these populations
+have big QTLs.
+[SPEAKER_00]: And maybe trying to mine information out
+of the RNA-seq data is not really viable
+[SPEAKER_00]: because of those two big QTLs.
+[SPEAKER_00]: Our imputation accuracy was performed on a
+HapMap that only had 240 individuals.
+[SPEAKER_00]: There is issues with the phenotyping
+platform.
+[SPEAKER_00]: The transcriptomic experiment was only
+performed on two varieties that might not
+[SPEAKER_00]: be representative of the population that
+we are working in.
+[SPEAKER_00]: And finally the transcriptomic experiment
+was infected using only one strain of the
+[SPEAKER_00]: virus, not with the two.
+[SPEAKER_00]: And what usually happens in fielding
+reality is that there is a co-infection of
+[SPEAKER_00]: Ugandan cassava brown streak virus and
+cassava brown streak virus.
+[SPEAKER_00]: Okay?
+[SPEAKER_00]: Okay.
+[SPEAKER_00]: Water, sorry.
+[SPEAKER_00]: Yeah, one of the things that was also
+disturbing me until that point was that we
+[SPEAKER_00]: were only looking for important genes or
+important regions within the genes.
+[SPEAKER_00]: And the genetic region is only a tiny part
+of the whole genome, of the whole cassava
+[SPEAKER_00]: genome.
+[SPEAKER_00]: There are functional elements happening
+outside of the genes.
+[SPEAKER_00]: And yeah, the motivation for doing this
+third part of my thesis work was this
+[SPEAKER_00]: article that I read on 2014 by Manoles
+Kelly from the ENCODE project.
+[SPEAKER_00]: And there was a lot of troubles because
+the guys from the ENCODE said that 80% of
+[SPEAKER_00]: the human genome is transcribed,
+so 80% of the human genome is functional.
+[SPEAKER_00]: And then there were lots of the
+evolutionary values saying, you cannot say
+[SPEAKER_00]: that because you are not under the light
+of evolution.
+[SPEAKER_00]: That can be true.
+[SPEAKER_00]: I mean, the guys from ENCODE found
+evidence for 80% of the human genome that
+[SPEAKER_00]: was transcribed, but we also have to
+consider other evidence.
+[SPEAKER_00]: We have genetic evidence that is basically
+that that generates phenotype and will be
+[SPEAKER_00]: what you find when you run a GWAS.
+[SPEAKER_00]: And you have also evolutionary evidence,
+meaning that regions in the genome that
+[SPEAKER_00]: are constrained by evolution are more
+probable functional.
+[SPEAKER_00]: So yeah, in the light side of this,
+I was also interested in trying to find
+[SPEAKER_00]: functional elements outside of the cassava
+genome.
+[SPEAKER_00]: So that brings up to this, expanding the
+cassava functional genome using PROSIC.
+[SPEAKER_00]: And back in 2015, John Lees from Cornell
+Biotech published this article that kind
+[SPEAKER_00]: of excited me a little bit.
+[SPEAKER_00]: She was doing this nascent RNA sequencing.
+[SPEAKER_00]: And the important thing you need to know
+about these nascent techniques is that
+[SPEAKER_00]: allows you to sequence the RNAs that are
+inside the nucleus.
+[SPEAKER_00]: So you can sequence the same RNAs before
+being spliced, but you can also sequence
+[SPEAKER_00]: all those unstable RNAs that are later
+degraded in the cytoplasm.
+[SPEAKER_00]: And by doing that, John and collaborators
+found that in promoters, for example,
+[SPEAKER_00]: imagine that this is your promoter,
+your gene is in this part.
+[SPEAKER_00]: Of course, you will have a transcript
+going on the side of the gene.
+[SPEAKER_00]: But what he found was that there was an
+unstable RNA also being transcribed on the
+[SPEAKER_00]: opposite direction.
+[SPEAKER_00]: More importantly, he discovered that in
+enhancer regions outside of the genes,
+[SPEAKER_00]: there was a similar pattern.
+[SPEAKER_00]: Surrounding the enhancer will be
+transcription of small RNAs in both
+[SPEAKER_00]: directions.
+[SPEAKER_00]: And those RNAs were called enhancer RNA.
+[SPEAKER_00]: The next year, Charles Danko, in
+collaboration also with Adam Siepel and
+[SPEAKER_00]: John Lees, published this DREC method.
+[SPEAKER_00]: It was a machine learning, a support
+vector regression machine that will allow
+[SPEAKER_00]: you to, based on that nascent RNA
+sequencing, identify transcription
+[SPEAKER_00]: regulatory elements, including promoters
+and enhancers.
+[SPEAKER_00]: And that's what I believe, hey,
+maybe we can apply this idea to Casaba and
+[SPEAKER_00]: identify enhancers that might be important
+to explain phenotypes outside of the
+[SPEAKER_00]: genes.
+[SPEAKER_00]: So I was super excited.
+[SPEAKER_00]: We talked with John.
+[SPEAKER_00]: We were starting to do the planning and
+everything.
+[SPEAKER_00]: And in 2016, they published this article
+using nascent RNA in Arabidopsis.
+[SPEAKER_00]: And it was the first study that was
+performed on plants.
+[SPEAKER_00]: And it was really disappointed at the time
+because they say, in plants, there is lack
+[SPEAKER_00]: of enhancer RNAs, lack of bi-directional
+transcription, lack of promoter proximal
+[SPEAKER_00]: paucine.
+[SPEAKER_00]: Plants are completely different than
+mammals and other metazoans.
+[SPEAKER_00]: So I was really sad because we were in the
+middle of an experiment trying to identify
+[SPEAKER_00]: these enhancers using the enhancer RNAs
+that, according to these people,
+[SPEAKER_00]: were completely absent in plants.
+[SPEAKER_00]: But we were in the middle of the
+experiment, so we just kept going.
+[SPEAKER_00]: So I'll explain a little bit of these
+metagen plots.
+[SPEAKER_00]: So this is what will happen in the human
+around the transcription star site.
+[SPEAKER_00]: So this is where the polymerase first
+attaches and then starts transcribing in
+[SPEAKER_00]: this direction.
+[SPEAKER_00]: So you will have the transcription of the
+RNA.
+[SPEAKER_00]: And this peak at the beginning is called
+the paucine phenomenon.
+[SPEAKER_00]: So where basically the polymerases are
+attached to the beginning of the gene,
+[SPEAKER_00]: and they are just waiting for an
+additional stimuli to start transcription.
+[SPEAKER_00]: And also, there is this bi-directional
+transcription on the stable RNA in the
+[SPEAKER_00]: opposite direction.
+[SPEAKER_00]: In Arabidopsis, however, they observed two
+things.
+[SPEAKER_00]: There is no paucine.
+[SPEAKER_00]: There is just transcription.
+[SPEAKER_00]: And there is no bi-directional
+transcription.
+[SPEAKER_00]: So we were in the middle of the
+experiment.
+[SPEAKER_00]: And I feel that sometimes when you try to
+understand a new molecular technique,
+[SPEAKER_00]: the better thing to understand it is go
+through the protocol.
+[SPEAKER_00]: So I will just walk you guys through the
+protocol a little bit.
+[SPEAKER_00]: So GROSSEQ or PROSSEQ are a goal for
+global or precision random sequencing.
+[SPEAKER_00]: And what this method does is it will
+sequence RNA that are attached to the
+[SPEAKER_00]: polymerase inside the nucleus.
+[SPEAKER_00]: So you start with a plant cell here.
+[SPEAKER_00]: Then you have to extract the nuclei.
+[SPEAKER_00]: So you will only have the nucleus.
+[SPEAKER_00]: And you go up here.
+[SPEAKER_00]: Once you have the nucleus, you disrupt the
+nuclear membrane, remove the nucleotides,
+[SPEAKER_00]: the original nucleotides, and put lots of
+biotinylated entities into the solution,
+[SPEAKER_00]: and then let the conditions of the cell
+culture so that the polymerase will be
+[SPEAKER_00]: able to incorporate these nucleotides at
+least to position.
+[SPEAKER_00]: Then since those NTPs are biotinylated,
+you will just use streptavidin to extract
+[SPEAKER_00]: those.
+[SPEAKER_00]: And then you just follow the steps to
+create a regular NGS library.
+[SPEAKER_00]: You will end up with a strand-specific
+nascent RNA.
+[SPEAKER_00]: So first result we wanted to check was
+that if the things observed in Arabidopsis
+[SPEAKER_00]: were the same as we were observing in
+Casaba.
+[SPEAKER_00]: And the first thing that we observed is
+that the Casaba nascent RNA profile around
+[SPEAKER_00]: the transcription star site is a hybrid
+between Arabidopsis and tumor.
+[SPEAKER_00]: You see, there is paucine, evidence by
+this peak.
+[SPEAKER_00]: But there is lack of bidirectional
+transcription.
+[SPEAKER_00]: If we go to the termination site,
+or sorry, the polyadenylation site at the
+[SPEAKER_00]: end of the gene, then we see that the
+Casaba profile looks quite similar to the
+[SPEAKER_00]: Arabidopsis profile.
+[SPEAKER_00]: And well, the humans don't have this peak
+at the end of the genes.
+[SPEAKER_00]: So if you see the start of the gene looks
+like this.
+[SPEAKER_00]: If you look for the end of the gene,
+it looks like this.
+[SPEAKER_00]: One of the things that the Arabidopsis
+people say that was that there are no
+[SPEAKER_00]: paucine implants.
+[SPEAKER_00]: And then in Casaba, we found paucine
+implants.
+[SPEAKER_00]: Then they say there is no bidirectional
+transcription.
+[SPEAKER_00]: And I kind of saw this little bump here
+and say, OK, let's try to find some genes
+[SPEAKER_00]: that might have this bidirectional
+transcription.
+[SPEAKER_00]: And of course, I found some examples that
+have it.
+[SPEAKER_00]: This is an IgB image.
+[SPEAKER_00]: Of the nascent RNAseq reads.
+[SPEAKER_00]: The gene is going in that direction.
+[SPEAKER_00]: You have the paucine peak and the
+transcription.
+[SPEAKER_00]: But you also have this bidirectional
+transcription in the opposite direction.
+[SPEAKER_00]: So there was bidirectional transcription,
+at least in Casaba, in a way less amount
+[SPEAKER_00]: that was observed in humans.
+[SPEAKER_00]: But there was some.
+[SPEAKER_00]: So I asked myself, what if Casaba can have
+bidirectional transcription, at least in
+[SPEAKER_00]: some genes?
+[SPEAKER_00]: Maybe they still have enhanced RNA.
+[SPEAKER_00]: So I annotate peaks in intergenic regions
+first using chromatin immunoprecipitation
+[SPEAKER_00]: peak color in Homer.
+[SPEAKER_00]: And I found this pattern of bidirectional
+transcription across these elements that
+[SPEAKER_00]: were outside genes.
+[SPEAKER_00]: So I say, OK, maybe if I found those
+elements, I can still run the support
+[SPEAKER_00]: vector regression.
+[SPEAKER_00]: The regression model that was training
+mammals to identify transcription
+[SPEAKER_00]: regulatory elements outside the genes.
+[SPEAKER_00]: I ran it.
+[SPEAKER_00]: I found the same pattern.
+[SPEAKER_00]: And now I found 9,665 elements that were
+transcribed outside the gene having these
+[SPEAKER_00]: specific patterns.
+[SPEAKER_00]: So they kind of look like enhancers at the
+moment.
+[SPEAKER_00]: So I tried to further characterize them.
+[SPEAKER_00]: And we had some methylation that are
+available.
+[SPEAKER_00]: So I wanted to plot the methylation in the
+3D model.
+[SPEAKER_00]: This is a random set of regions across the
+genome.
+[SPEAKER_00]: So this is how methylation looks in Casaba
+in the CHH context, in the CpG context,
+[SPEAKER_00]: and in the CHG context.
+[SPEAKER_00]: This is the pattern that you observe
+across genes.
+[SPEAKER_00]: Really low methylation in the promoter and
+in the termination and CpG methylation.
+[SPEAKER_00]: And interestingly, the elements that we
+found outside genes had this methylation
+[SPEAKER_00]: pattern.
+[SPEAKER_00]: Similar to what is observed in genes,
+but a little inflated for methylation.
+[SPEAKER_00]: Then I was interested also in checking how
+conserved these elements were.
+[SPEAKER_00]: In my mind, enhancer had to be conserved.
+[SPEAKER_00]: And I was kind of wrong.
+[SPEAKER_00]: So in yellow, you see these are GERB
+scores.
+[SPEAKER_00]: So basically, the higher the GERB score,
+the more conserved those regions are
+[SPEAKER_00]: across closely related species,
+including Jatropha, Flux, and more.
+[SPEAKER_00]: So basically, again, from 0% to 100% of
+the features we're analyzing, yellow is
+[SPEAKER_00]: genes, super conserved.
+[SPEAKER_00]: Blue is random sequences.
+[SPEAKER_00]: And in orange, it was our enhancer
+candidate genes.
+[SPEAKER_00]: And we observe here that they are actually
+non-conserved.
+[SPEAKER_00]: So I was a little worried.
+[SPEAKER_00]: Then I read this research that was done
+2016, I believe, where they studied
+[SPEAKER_00]: enhancer evolution across 20 mammalian
+species and then found that mammalian
+[SPEAKER_00]: enhancers are rapidly evolving sequences.
+[SPEAKER_00]: Quoting them, enhancers are rarely
+conserved across these mammals.
+[SPEAKER_00]: Unbiased mapping leaks candidate enhancers
+with lineage-specific positive selection.
+[SPEAKER_00]: There's a little bit of evidence on top of
+evidence that this thing that we found
+[SPEAKER_00]: might actually be enhancers.
+[SPEAKER_00]: And the last test that we want to try is,
+OK, if the enhancers might be important to
+[SPEAKER_00]: explain a phenotype, they should be
+explaining more phenotypic variants in
+[SPEAKER_00]: populations for, for example, yield
+components.
+[SPEAKER_00]: So we made a test.
+[SPEAKER_00]: We have a portion of my genome.
+[SPEAKER_00]: Imagine that the whole circle is the
+Casaba genome.
+[SPEAKER_00]: We have a small portion, 1%, of the genome
+is represented by these enhancer candidate
+[SPEAKER_00]: genes.
+[SPEAKER_00]: And what I did is select all the markers
+inside here.
+[SPEAKER_00]: I LD protected them.
+[SPEAKER_00]: So any marker that would have an R squared
+higher than 0.9 in a 150k region across
+[SPEAKER_00]: them, I would just close them out.
+[SPEAKER_00]: And then I will build another kernel with
+the rest of the genome.
+[SPEAKER_00]: And I will compare what I have here with
+my null hypothesis of a random set of
+[SPEAKER_00]: markers that have the same distribution of
+the enhancer that I found, also protected
+[SPEAKER_00]: by a 4LD and the second kernel.
+[SPEAKER_00]: And when we found, when we run the genomic
+partitioning and the percentage of
+[SPEAKER_00]: phenotypic variants, that is explained for
+several traits on the enhancer regions on
+[SPEAKER_00]: blue to random regions in orange,
+it is for most of the traits, dry matter
+[SPEAKER_00]: content, fresh yield, root number,
+root weight, and shoot weight,
+[SPEAKER_00]: they are explaining way more phenotypic
+variants than the random set.
+[SPEAKER_00]: The only trait that this is not working is
+for CMD.
+[SPEAKER_00]: And it kind of makes sense.
+[SPEAKER_00]: The blue dot is hidden.
+[SPEAKER_00]: But it makes sense because CMD is
+regulated by most probably a single locus
+[SPEAKER_00]: with a massive QTL chromosome.
+[SPEAKER_00]: So yeah, we've made a case where we found
+these elements outside genes that are
+[SPEAKER_00]: trans scribe are not evolutionary
+conserved, have a specific methylation
+[SPEAKER_00]: pattern, and explain more phenotypic
+variants than its random counterparts.
+[SPEAKER_00]: So we kind of think that these might be
+enhancers, and this will be a really nice
+[SPEAKER_00]: method to identify them in plants.
+[SPEAKER_00]: And I think that's it.
+[SPEAKER_00]: Thank you very much.
+[SPEAKER_00]: It was really a big, big, big,
+big team effort.
+[SPEAKER_00]: When I went to Uganda, actually,
+I really understood the effort that is put
+[SPEAKER_00]: into getting one of your data cells.
+[SPEAKER_00]: So yeah, thank you.
+[SPEAKER_01]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_01]: Thank you.
+Thank you.
+Thank you.

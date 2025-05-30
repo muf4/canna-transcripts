@@ -1,0 +1,1492 @@
+[SPEAKER_02]: This is a production of Cornell
+University.
+[SPEAKER_01]: I'd like to introduce Jose Vargas.
+[SPEAKER_01]: He comes to us from Costa Rica,
+where he studied at the University of
+[SPEAKER_01]: Costa Rica.
+[SPEAKER_01]: He contacted me about six years ago,
+and after a number of communications,
+[SPEAKER_01]: he was admitted, and here he is.
+[SPEAKER_01]: I asked Jose to work on a number of virus
+projects.
+[SPEAKER_01]: I should preface that by saying he wanted
+to come here to pursue interests in
+[SPEAKER_01]: virology and biology.
+[SPEAKER_01]: He worked on a number of virus systems.
+[SPEAKER_01]: I asked him to set up a system to allow us
+to use large-scale sequencing technologies
+[SPEAKER_01]: for diagnostics.
+[SPEAKER_01]: He has done that over the last few years.
+[SPEAKER_01]: Additionally, he's making use of the same
+technologies to address some questions
+[SPEAKER_01]: regarding the host response, the small RNA
+response, to a virus infection.
+[SPEAKER_01]: Today, he'll be talking about the
+bioinformatics efforts he's made to
+[SPEAKER_01]: analyze networks of small RNAs.
+[SPEAKER_01]: In the interest of time, he will not be
+discussing much about the virology,
+[SPEAKER_01]: per se, but the best is still to come.
+[SPEAKER_01]: So with that as an introduction,
+Jose.
+[SPEAKER_01]: Thank you, Keith.
+[SPEAKER_00]: Can anyone hear me OK?
+[SPEAKER_00]: OK.
+[SPEAKER_00]: Thank you all for coming.
+[SPEAKER_00]: I'm very happy to have the opportunity to
+tell you about what I've been doing.
+[SPEAKER_00]: For the last five years or so.
+[SPEAKER_00]: So as Keith mentioned, I've sort of been
+involved in two different lines of
+[SPEAKER_00]: research.
+[SPEAKER_00]: On the one hand, we've been conducting
+projects that involve virus and viral
+[SPEAKER_00]: detection and characterization.
+[SPEAKER_00]: And this involves all the published work
+so far.
+[SPEAKER_00]: And even though it's taking some time,
+I only have one slide to show for today,
+[SPEAKER_00]: which is a summary of what we publish.
+[SPEAKER_00]: You can see here we've been working on
+spinach-latent virus of tomato.
+[SPEAKER_00]: We've also worked on two grapevine virus,
+grapevine virus E and grapevine-asteroid
+[SPEAKER_00]: mosaic-associated virus, and also one
+viroid in grapevine.
+[SPEAKER_00]: And that's it for biology.
+[SPEAKER_00]: Now I'm going to move to my main thesis
+project.
+[SPEAKER_00]: I'm sorry about that.
+[SPEAKER_00]: Where we are focusing on a question.
+[SPEAKER_00]: This is a question we're focusing on.
+[SPEAKER_00]: What is the role of small RNA-mediated
+regulatory networks in host-virus
+[SPEAKER_00]: interactions?
+[SPEAKER_00]: So just to get it out there, I'm going to
+show you my objectives.
+[SPEAKER_00]: They may not make full sense right now,
+but hopefully through the interaction they
+[SPEAKER_00]: will.
+[SPEAKER_00]: I just want you to know where I'm going.
+[SPEAKER_00]: So I have two objectives.
+[SPEAKER_00]: What I want to do is to identify and
+describe biologically relevant small
+[SPEAKER_00]: RNA-mediated regulatory networks,
+once I have them, to determine the
+[SPEAKER_00]: regulatory contribution of the resulting
+networks.
+[SPEAKER_00]: Now, going back to my main questions,
+there are three teams here that I'd like
+[SPEAKER_00]: to address.
+[SPEAKER_00]: Small RNAs, networks, and host-virus
+interactions.
+[SPEAKER_00]: And I'll start with the interactions.
+[SPEAKER_00]: So when you think about a virus,
+some may think about this.
+[SPEAKER_00]: But this is actually a virion.
+[SPEAKER_00]: A virion is an infectious particle.
+[SPEAKER_00]: A virus is better thought of as an
+infected cell, where you have a whole
+[SPEAKER_00]: complement of proteins that are not
+present in the virion, but are required to
+[SPEAKER_00]: complete the virus replication cycle.
+[SPEAKER_00]: So the viruses, as you know, they hijack
+the cell metabolism.
+[SPEAKER_00]: Therefore, they interact at many levels
+with their host.
+[SPEAKER_00]: Today, I'm going to be focusing in a
+series of interactions involved in immune
+[SPEAKER_00]: responses.
+[SPEAKER_00]: So in this diagram here, I'm showing the
+virus replication cycle from virus entry,
+[SPEAKER_00]: genome decapitation, viral replication,
+and synthesis of viral proteins.
+[SPEAKER_00]: And on the left, I'm showing a diagram
+that is familiar to most people here,
+[SPEAKER_00]: where viral products can be recognized by
+pattern recognition receptors.
+[SPEAKER_00]: In the case of plant viruses, they will be
+intracellular.
+[SPEAKER_00]: And they can trigger a PTI-based response.
+[SPEAKER_00]: As expected, virus encoded effectors that
+can block the PTI response.
+[SPEAKER_00]: And consequently, the host has evolved
+resistance genes that can recognize these
+[SPEAKER_00]: viral proteins and trigger an PTI
+response.
+[SPEAKER_00]: This is quite common in pathology.
+[SPEAKER_00]: Now, in viruses, there's also something we
+think of as adaptive immunity,
+[SPEAKER_00]: where viral products can be recognized by
+host protein to launch an adaptive immune
+[SPEAKER_00]: response that is affected by RNAi or RNA
+interference.
+[SPEAKER_00]: So the main takeaway here is that RNA
+interference is involved in antiviral
+[SPEAKER_00]: defense.
+[SPEAKER_00]: And just as a reminder, RNA interference,
+RNAi, or RNA silencing refers to multiple
+[SPEAKER_00]: biogenesis pathways that are shown here in
+boxes that lead to the production of small
+[SPEAKER_00]: RNAs, which are molecules of 21 to 24
+nucleotides long that are involved in
+[SPEAKER_00]: transcriptional, translational,
+or post-transcriptional regulation.
+[SPEAKER_00]: And they're quite important.
+[SPEAKER_00]: People like to call them master
+regulators.
+[SPEAKER_00]: And their activity has been described in
+multiple cellular systems and in multiple
+[SPEAKER_00]: cellular processes in various systems.
+[SPEAKER_00]: Here, I'm showing examples where microRNAs
+are referred to as master regulators in
+[SPEAKER_00]: humans, plants, and drosophila,
+so white flies.
+[SPEAKER_00]: And in these systems, they've been related
+to regulation in cancer development.
+[SPEAKER_00]: For our cases, plant defense response is
+quite important and also genome stability.
+[SPEAKER_00]: Now, small RNAs have also been discovered
+in plants to act through regulatory
+[SPEAKER_00]: networks.
+[SPEAKER_00]: Again, I'm showing here several examples
+that show small RNA networks involved in
+[SPEAKER_00]: development, trait dominance, and overall
+gene expression.
+[SPEAKER_00]: So hopefully, at this point, I've
+convinced you that these small RNAs are
+[SPEAKER_00]: quite important regulators and that they
+collectively form regulatory networks
+[SPEAKER_00]: involved in multiple processes,
+like defense, development, stress.
+[SPEAKER_00]: Now, if we go back to this plot,
+I would like to point this set of proteins
+[SPEAKER_00]: here that are known as viral silencing
+suppressors.
+[SPEAKER_00]: So these are proteins encoded in the virus
+that are able to block RNAi or RNA
+[SPEAKER_00]: interference.
+[SPEAKER_00]: So when you think, when you remember,
+I just sort of went through the relevance
+[SPEAKER_00]: of RNA interference for regular cell
+metabolism.
+[SPEAKER_00]: And viruses' interference could have a
+great effect.
+[SPEAKER_00]: And in fact, I don't have the time today
+to tell you mechanistically how this
+[SPEAKER_00]: occurred.
+[SPEAKER_00]: But the silencing suppressors can act by
+interfering with the small RNA biogenesis.
+[SPEAKER_00]: They can also sequester these molecules,
+making them unavailable for their action.
+[SPEAKER_00]: And they can also interfere with the
+proteins involved in the pathways.
+[SPEAKER_00]: Now, do remember that the pathways
+involved in antiviral defense and regular
+[SPEAKER_00]: cell metabolisms have a lot of common
+factors.
+[SPEAKER_00]: So this viral interference could have a
+great effect on the plant.
+[SPEAKER_00]: And I'm going to show one example here
+where I'm showing Arabidopsis plants
+[SPEAKER_00]: expressing, well, transgenically
+expressing different viral silencing
+[SPEAKER_00]: suppressors from different viruses.
+[SPEAKER_00]: So on the left, this is how a healthy
+plant would look.
+[SPEAKER_00]: And these are not virus-infected plants.
+[SPEAKER_00]: They're only expressing these viral
+suppressor proteins.
+[SPEAKER_00]: And you can see that the effect is quite
+dramatic.
+[SPEAKER_00]: So something that could be of interest is
+that silencing suppressors are not
+[SPEAKER_00]: exclusive to viruses.
+[SPEAKER_00]: There are also known examples in bacterial
+pathogens.
+[SPEAKER_00]: So the Monoceringa is a well-studied
+model.
+[SPEAKER_00]: Whereas some of the proteins have been
+described or involved in a silencing
+[SPEAKER_00]: suppressor.
+[SPEAKER_00]: Also, there's an onomycid pathogen by Dr.
+Asoje that encodes what appears to be
+[SPEAKER_00]: multiple silencing suppressors.
+[SPEAKER_00]: So this convergence appears to indicate
+that the small RNA silencing could play a
+[SPEAKER_00]: very relevant role in plant defense.
+[SPEAKER_00]: Now, with this in mind, and thinking that
+small RNAs are massively regulators of
+[SPEAKER_00]: defense and that they've worked through
+regulatory networks, we developed these
+[SPEAKER_00]: main research questions.
+[SPEAKER_00]: Number one, what is the role of small
+RNA-mediated networks in immunity?
+[SPEAKER_00]: For our purposes, viral infection.
+[SPEAKER_00]: And given the existence of these common
+factors between small RNA biogenesis and
+[SPEAKER_00]: defense, we also have the next question,
+which is, what is the effect of viral
+[SPEAKER_00]: silencing suppressors in host small
+RNA-mediated regulatory networks?
+[SPEAKER_00]: Now, to study this, our model is Cocumbra
+mosaic virus, or CMV.
+[SPEAKER_00]: Here, I'm showing a diagram of its genome.
+[SPEAKER_00]: There's three RNAs.
+[SPEAKER_00]: And over here, this ORF2B corresponds to
+the protein that has silencing suppressor
+[SPEAKER_00]: activity.
+[SPEAKER_00]: So we've developed a couple of mutants for
+this protein.
+[SPEAKER_00]: And we infected our ovidopsis thaliana
+plants.
+[SPEAKER_00]: So here, I'm showing the phenotypes.
+[SPEAKER_00]: After three weeks, well, three weeks
+post-inoculation, on the top, we have the
+[SPEAKER_00]: mock plants.
+[SPEAKER_00]: So they should be uninfected.
+[SPEAKER_00]: Second name corresponds to plants infected
+with a wild-type version of CMV.
+[SPEAKER_00]: And then the two lower panels corresponds
+to plants infected with a mutated version
+[SPEAKER_00]: of this virus.
+[SPEAKER_00]: And you can see they're pretty much
+asymptomatic.
+[SPEAKER_00]: Now, in case you were wondering,
+we do know that the virus is replicated
+[SPEAKER_00]: because we can detect the code protein.
+[SPEAKER_00]: In all plants.
+[SPEAKER_00]: And just as a control, we do not detect
+the silencing suppressor protein in our
+[SPEAKER_00]: mutants, as expected.
+[SPEAKER_00]: Now, this is our experimental system.
+[SPEAKER_00]: Now, I'm going to go back and review what
+we know about small RNA regulatory
+[SPEAKER_00]: networks in a bit more detail.
+[SPEAKER_00]: And just to get our terms right,
+a network is a set of nodes connected by a
+[SPEAKER_00]: set of edges.
+[SPEAKER_00]: In here, I'm showing the nodes in blue,
+which, for my presentation, corresponds to
+[SPEAKER_00]: RNAs.
+[SPEAKER_00]: It can be small RNAs or transcripts.
+[SPEAKER_00]: And the green corresponds to the edges.
+[SPEAKER_00]: That, in my case, corresponds to the
+interaction between the nodes.
+[SPEAKER_00]: I've already shown that they're involved
+in multiple processes.
+[SPEAKER_00]: And now, most of these networks are
+composed by pairs of microRNA-in-phase
+[SPEAKER_00]: small RNA-interfering RNAs.
+[SPEAKER_00]: Now, what do I mean by that?
+[SPEAKER_00]: Here, I'm showing the biogenesis pathway
+for microRNAs.
+[SPEAKER_00]: So they are expressed from a gene.
+[SPEAKER_00]: The transcript is processed by dicer-like
+proteins into small RNAs that are then
+[SPEAKER_00]: sorted and loaded into agocontaining
+complexes.
+[SPEAKER_00]: And these complexes are the effector
+molecules that will lead to mRNA
+[SPEAKER_00]: degradation or translation or repression.
+[SPEAKER_00]: Now, in some cases, there's a different
+outcome.
+[SPEAKER_00]: The microRNA will target a transcript.
+[SPEAKER_00]: And instead of leading to cleavage,
+it leads to the production of
+[SPEAKER_00]: double-stranded RNA that is then cleaved
+by dicer-like proteins to produce phase
+[SPEAKER_00]: small RNAs.
+[SPEAKER_00]: Now, it's not really evident in the
+diagram here.
+[SPEAKER_00]: But the name phase small RNAs refers to
+the fact that these double-stranded RNAs
+[SPEAKER_00]: are cleaved sequentially by these dicer
+proteins to produce small RNAs in tandem
+[SPEAKER_00]: that are 21 nucleotides long.
+[SPEAKER_00]: Now, these small RNAs are also loaded into
+agocontaining complexes.
+[SPEAKER_00]: That can then have a regulatory effect on
+their targets.
+[SPEAKER_00]: Now, I'm going to translate this diagram
+into a network view.
+[SPEAKER_00]: And again, here, we have the microRNAs.
+[SPEAKER_00]: They can target transcripts, lead to
+degradation.
+[SPEAKER_00]: Sometimes, they will lead to the
+production of phase small RNAs or phase
+[SPEAKER_00]: RNAs.
+[SPEAKER_00]: And this, some have no activity.
+[SPEAKER_00]: Some can target other.
+[SPEAKER_00]: Transcripts, some can even target its own
+transcript or lead to secondary production
+[SPEAKER_00]: of small RNAs.
+[SPEAKER_00]: So this creates a cascade effect where the
+amount of information carried for the
+[SPEAKER_00]: initial molecule grows very quickly.
+[SPEAKER_00]: Now, again, to go back to the terms,
+in this case, my molecules here correspond
+[SPEAKER_00]: to the nodes.
+[SPEAKER_00]: And the edges are the interactions between
+these molecules.
+[SPEAKER_00]: Now, back to the review.
+[SPEAKER_00]: We have a very well-studied example in a
+cascade that initiates with microRNA 173
+[SPEAKER_00]: and small RNAs that derive from it,
+which I'm going to go through in some
+[SPEAKER_00]: detail because I'm going to use it as an
+example and control later on.
+[SPEAKER_00]: So if you have heard of it or if you know
+it, MIR 173 was described about 10 years
+[SPEAKER_00]: ago.
+[SPEAKER_00]: And it leads to this cascade of TASI RNAs.
+[SPEAKER_00]: TASI RNAs refers to transacting small
+interfering RNAs, which was just a first
+[SPEAKER_00]: class of phase small interfering RNAs.
+[SPEAKER_00]: So TASI is a subset of FASI RNAs,
+just in case.
+[SPEAKER_00]: It can be confusing.
+[SPEAKER_00]: Now, in this diagram, what I'm showing,
+it's transcripts in blue ovals and small
+[SPEAKER_00]: RNAs in orange rectangles.
+[SPEAKER_00]: So there's an initial transcript that
+gives rise to a mature microRNA,
+[SPEAKER_00]: targets that has two transcripts to
+produce.
+[SPEAKER_00]: In this case, there are actually several
+small RNAs.
+[SPEAKER_00]: I'm just showing one that is of particular
+interest because it targets another gene,
+[SPEAKER_00]: but it also leads to the production of
+secondary RNAs that can then go on and
+[SPEAKER_00]: target others' transcripts.
+[SPEAKER_00]: This is an example of how this cascade
+effect would work.
+[SPEAKER_00]: Now, over the years, this cascade has been
+growing.
+[SPEAKER_00]: And this could represent one of the more
+recent views of how this may work.
+[SPEAKER_00]: Now, I'm showing a similar structure.
+[SPEAKER_00]: So we have a microRNA here in the middle
+that targets, in this case, four loci,
+[SPEAKER_00]: which are in the middle of these clusters
+that produce FASI RNAs, which are the
+[SPEAKER_00]: little balls around each cluster.
+[SPEAKER_00]: Now, this was a very nice study because
+they were able to link this regulatory
+[SPEAKER_00]: cascade to metabolic stress, which provide
+functionality for it.
+[SPEAKER_00]: Now, I must say that their analysis is
+restricted to a known class of microRNAs
+[SPEAKER_00]: and classes.
+[SPEAKER_00]: So we knew about these interactions.
+[SPEAKER_00]: They just expanded on them.
+[SPEAKER_00]: And then they performed bioinformatic
+target prediction for all these small RNAs
+[SPEAKER_00]: and performed target modulation on a few
+selected targets of interest.
+[SPEAKER_00]: So they're not doing a whole genome-wide
+study.
+[SPEAKER_00]: They're just looking at a particular
+cascade of interest.
+[SPEAKER_00]: Now, there is one precedent of a
+genome-wide view of regulatory networks by
+[SPEAKER_00]: small RNAs, which was performed by David
+Balkum's group around 2010, where they are
+[SPEAKER_00]: looking from a genome-wide perspective.
+[SPEAKER_00]: And they provided the initial description
+of small RNA-mediated networks.
+[SPEAKER_00]: They did some structure analysis.
+[SPEAKER_00]: They were thinking about it from a
+network's point of view.
+[SPEAKER_00]: And it's a really nice paper, which
+reflects the overall potential of these
+[SPEAKER_00]: regulatory networks.
+[SPEAKER_00]: But we can't really assess the biological
+significance of it because they did not
+[SPEAKER_00]: account for different types of small RNAs.
+[SPEAKER_00]: And the fact that most of them that you
+find in the library are not active.
+[SPEAKER_00]: And they did not do any validation for
+their edges.
+[SPEAKER_00]: It's all bioinformatic or encyclical
+prediction.
+[SPEAKER_00]: So with this in mind and going back to my
+main question of what is the role of small
+[SPEAKER_00]: RNA-mediated networks in immunity,
+when thinking about how to conduct this
+[SPEAKER_00]: project and what we need, I came up with a
+set of requirements for the networks that
+[SPEAKER_00]: we would use or a reference frame to study
+that should be biologically relevant.
+[SPEAKER_00]: It should be experimental support for it.
+[SPEAKER_00]: It should be reproducible.
+[SPEAKER_00]: And when going down the list and thinking
+about what's known so far, we realized we
+[SPEAKER_00]: don't have an appropriate framework for
+these comparisons.
+[SPEAKER_00]: So unfortunately, we don't have enough
+information to address this question.
+[SPEAKER_00]: And at this point, we decided,
+well, we could try something else.
+[SPEAKER_00]: Or we can do it ourselves.
+[SPEAKER_00]: So coming up with this reference frame to
+study small RNA regulation became a main
+[SPEAKER_00]: thesis project.
+[SPEAKER_00]: Which was to produce a model network of
+small RNA interactions.
+[SPEAKER_00]: Now, admittedly, I did not have a
+background in programming or computational
+[SPEAKER_00]: biology at the time.
+[SPEAKER_00]: But it was a pretty smooth process.
+[SPEAKER_00]: I don't know why people complain a lot.
+[SPEAKER_00]: It was mostly inconsequential.
+[SPEAKER_00]: It seemed to just go right.
+[SPEAKER_00]: There was no problem to it.
+[SPEAKER_00]: So I'll go back to my objectives.
+[SPEAKER_00]: As Keith mentioned, my objectives would
+reflect the fact that the part with
+[SPEAKER_00]: biology, it's over at this point of the
+presentation.
+[SPEAKER_00]: If you were hoping to hear more about
+viruses, please wait until the next time.
+[SPEAKER_00]: Because by now, I'm going to focus on the
+networks.
+[SPEAKER_00]: And mostly, I'm going to focus on
+identifying and describing biologically
+[SPEAKER_00]: relevant small RNA mediated networks and
+determining their regulatory contribution.
+[SPEAKER_00]: Then again, this is to provide a reference
+frame so that we can go back to study the
+[SPEAKER_00]: effect of virus in these systems.
+[SPEAKER_00]: Now, I'm going to first describe the
+approach I took to identify the small RNA
+[SPEAKER_00]: mediated networks.
+[SPEAKER_00]: So step one is to produce a model network
+for Arabidopsis taliana.
+[SPEAKER_00]: The model network would involve
+identifying all nodes and all edges.
+[SPEAKER_00]: Once we have this, basically have a map of
+all possible interactions using this
+[SPEAKER_00]: reference frame.
+[SPEAKER_00]: We can then input expression data to
+produce sample or treatment-specific
+[SPEAKER_00]: networks.
+[SPEAKER_00]: So that's the plan.
+[SPEAKER_00]: Now, to do this, if I go back to my
+diagram of components, because we're
+[SPEAKER_00]: working in Arabidopsis taliana,
+we know a lot.
+[SPEAKER_00]: Or there's a lot of background
+information.
+[SPEAKER_00]: So the latest annotation of our
+Arabidopsis genome is named Arabport 11.
+[SPEAKER_00]: And it was produced in 2016, last year.
+[SPEAKER_00]: And from here, we can get all known
+microRNAs and target transcripts.
+[SPEAKER_00]: It's a pretty full annotation.
+[SPEAKER_00]: And for the rest of the molecules,
+I had to come up with a bioinformatics
+[SPEAKER_00]: tool and a few data sets to get all this
+information.
+[SPEAKER_00]: I'll get into the details of the data sets
+in a minute.
+[SPEAKER_00]: Now, studies for phase one.
+[SPEAKER_00]: For phase two, then we need, which phase
+two is the quantification part.
+[SPEAKER_00]: We will use small RNA-seq and RNA-seq to
+count or provide a quantum.
+[SPEAKER_00]: A quantitative side to it.
+[SPEAKER_00]: Now, for data acquisition, if you
+remember, I need three types of data.
+[SPEAKER_00]: I'm trying to get small RNAs, which are
+produced by small RNA-seq, RNA-seq to get
+[SPEAKER_00]: all the transcripts information.
+[SPEAKER_00]: I'll describe them on data sets in a
+minute.
+[SPEAKER_00]: Now, to obtain all these molecules or
+these data sets, as I mentioned before,
+[SPEAKER_00]: we have an experiment with Arabidopsis
+taliana, from which we get total RNA.
+[SPEAKER_00]: And from that total RNA sample,
+we produce these three data sets.
+[SPEAKER_00]: Now, hopefully, the first two are
+familiar.
+[SPEAKER_00]: I'll take a minute to describe Degram
+Library, because it's actually quite
+[SPEAKER_00]: important for the purposes of this
+presentation.
+[SPEAKER_00]: So Degram Library or Degram data is what
+we use to validate our edges, which are
+[SPEAKER_00]: the interactions between small RNAs and
+transcripts.
+[SPEAKER_00]: And it's a two-step process.
+[SPEAKER_00]: We first do a prediction of all the
+cleavage sites.
+[SPEAKER_00]: Now, here I'm illustrating a mess of your
+RNA.
+[SPEAKER_00]: We find regions where small RNAs can
+target and use.
+[SPEAKER_00]: Because we know how they act, we can
+predict how a cleavage transcript would
+[SPEAKER_00]: look.
+[SPEAKER_00]: Then we move on to experimental
+validation, where using molecular methods,
+[SPEAKER_00]: we clone and sequence all degraded RNAs.
+[SPEAKER_00]: And then we look for accumulation of five
+prime terminal attacks of these sequences
+[SPEAKER_00]: at the predicted cleavage site,
+which basically means we look at our
+[SPEAKER_00]: sequencing data and determine if we can
+find molecules that would fit our
+[SPEAKER_00]: prediction.
+[SPEAKER_00]: Now, the validation process or how we
+examine this result is a, I don't really
+[SPEAKER_00]: have time to describe it in full,
+but it's a process, it's a quantitative
+[SPEAKER_00]: assessment that involves a statistical
+model.
+[SPEAKER_00]: So the take-home message is that we have
+experimental validation for all of the
+[SPEAKER_00]: edges and interactions in the networks
+that I'm going to present.
+[SPEAKER_00]: And also, we do this so that a network has
+that we can do biologically relevant
+[SPEAKER_00]: inferences from our networks.
+[SPEAKER_00]: Now, just to remind you, because this is
+going to be important, and I'm going to go
+[SPEAKER_00]: back and forth between these terms,
+when I talk about degraded data,
+[SPEAKER_00]: I'm talking about experimental validation
+of small RNA cleavage of a transcript,
+[SPEAKER_00]: which in our networks corresponds to the
+edges.
+[SPEAKER_00]: Now, just a quick comment about the data
+acquisition.
+[SPEAKER_00]: We make our own libraries in the lab in
+case someone is interested in this.
+[SPEAKER_00]: For RNA-seq, it's the only one where we
+use a kit, but we still make them in the
+[SPEAKER_00]: lab.
+[SPEAKER_00]: And the other two data sets are produced
+by somehow hybrid methodologies from Gene
+[SPEAKER_00]: Gevannoni's lab and our publications that
+we've adapted to our own lab.
+[SPEAKER_00]: Now, for the bioinformatics tool.
+[SPEAKER_00]: When I was thinking about how to present
+this, I was reminded about this Italian
+[SPEAKER_00]: researcher that gave a seminar in the
+Italian biology seminar series a couple of
+[SPEAKER_00]: weeks ago.
+[SPEAKER_00]: And she had a great comment, and I quote.
+[SPEAKER_00]: She said that when describing your
+bioinformatic pipelines to your
+[SPEAKER_00]: colleagues, it's like showing pictures of
+your kids to your friends.
+[SPEAKER_00]: No one cares.
+[SPEAKER_00]: Even though you want to show them every
+detail, and you think you're writing a
+[SPEAKER_00]: symphony, it's just, I don't know.
+[SPEAKER_00]: I think someone may care.
+[SPEAKER_00]: And if you do, I'm happy to tell you about
+it.
+[SPEAKER_00]: But I'm just going to summarize my tool in
+one slide.
+[SPEAKER_00]: I made this bioinformatic pipeline or tool
+that has several modules that are made to
+[SPEAKER_00]: find all the nodes in my networks.
+[SPEAKER_00]: And I'm making use of existing tools.
+[SPEAKER_00]: I've also modified some of them,
+and I created my own.
+[SPEAKER_00]: And the same strategy for the edges.
+[SPEAKER_00]: So then my tool brings all the nodes and
+edges together to produce my small RNA
+[SPEAKER_00]: regulatory networks.
+[SPEAKER_00]: But that wasn't too painful, I hope.
+[SPEAKER_00]: Now, another reminder.
+[SPEAKER_00]: When looking for analyzing my data and
+trying to identify all the components in
+[SPEAKER_00]: my networks, remember I'm trying to
+produce a model network which involves all
+[SPEAKER_00]: nodes, all small RNAs, and transcripts in
+all edges.
+[SPEAKER_00]: In this process, I realized that the
+identification is data intensive.
+[SPEAKER_00]: And most importantly, the identification
+depends on expression.
+[SPEAKER_00]: And the expression of these small RNAs
+could depend on developmental stages,
+[SPEAKER_00]: the tissue type you use to make your
+collection, or environmental cues,
+[SPEAKER_00]: such as stress.
+[SPEAKER_00]: So to account for this, I produced my own
+data sets, and also went back to
+[SPEAKER_00]: databases.
+[SPEAKER_00]: So this is a summary of the data I used.
+[SPEAKER_00]: For small RNA libraries, I made 14 small
+RNA libraries from Arabidopsis plants that
+[SPEAKER_00]: were infected or not with CMV.
+[SPEAKER_00]: And also, I got 38 data sets available at
+the NCVI database that corresponds to
+[SPEAKER_00]: wild-type Arabidopsis plants.
+[SPEAKER_00]: And this was very useful, because in
+Arabidopsis, there's a lot of background
+[SPEAKER_00]: information.
+[SPEAKER_00]: And I was able to find data sets
+corresponding to just wild-type healthy
+[SPEAKER_00]: plants, also hormone-treated plants.
+[SPEAKER_00]: I've shown an example of metabolic stress.
+[SPEAKER_00]: I've also have libraries from different
+tissue sources and also plants that have
+[SPEAKER_00]: been challenged by pathogens, including
+viruses and nematodes.
+[SPEAKER_00]: Now, for the Deggertum libraries,
+I had the same strategy.
+[SPEAKER_00]: I produced 16 data sets, but there are
+only five available at NCVI.
+[SPEAKER_00]: And they correspond to inflorescence and
+seedling tissues.
+[SPEAKER_00]: So that is the setup.
+[SPEAKER_00]: Let's take a look at the results.
+[SPEAKER_00]: Just to remind you, I'm trying to identify
+these networks, or small RNA regulatory
+[SPEAKER_00]: networks.
+[SPEAKER_00]: And from my diagram, the missing
+components are the phacy loci that
+[SPEAKER_00]: corresponds to the transcripts that
+produce phacy RNAs, which are the other
+[SPEAKER_00]: missing part.
+[SPEAKER_00]: So the identification of these components
+is performed using a small RNA
+[SPEAKER_00]: information.
+[SPEAKER_00]: And this is a summary of all the libraries
+that I use.
+[SPEAKER_00]: So in the x-axis is the name of the
+library, the identifier for the library.
+[SPEAKER_00]: The set on the left corresponds to this
+study, or the ones I produced.
+[SPEAKER_00]: Oh, and the y-axis corresponds to millions
+of reads.
+[SPEAKER_00]: Then in black, I'm showing the total yield
+of the sequencing project when available.
+[SPEAKER_00]: In blue, I'm showing the amount of all the
+reads that are actually usable or
+[SPEAKER_00]: pass-filtered.
+[SPEAKER_00]: And what I'm trying to communicate here is
+that the libraries are varied.
+[SPEAKER_00]: Some are really good.
+[SPEAKER_00]: Some are not.
+[SPEAKER_00]: They're hard to evaluate.
+[SPEAKER_00]: So we take that into account in our
+analysis.
+[SPEAKER_00]: Now, to find those phacy loci,
+which is the first step, I took each
+[SPEAKER_00]: library and tried to identify these
+regions using an existing tool called
+[SPEAKER_00]: FaceTank.
+[SPEAKER_00]: And the idea is that I identified all the
+regions in all my libraries.
+[SPEAKER_00]: And then I summarized the results to
+produce a consensus of phacy locus.
+[SPEAKER_00]: And these are the results again.
+[SPEAKER_00]: So here what I'm showing is phacy loci
+detection, so regions that produce phase
+[SPEAKER_00]: small RNAs.
+[SPEAKER_00]: Libraries are on the x-axis.
+[SPEAKER_00]: And on the y-axis is the number of
+detection events, so how many phacy loci I
+[SPEAKER_00]: detect per library.
+[SPEAKER_00]: And you can see, again, the results are
+varied.
+[SPEAKER_00]: And actually, our libraries were pretty
+good for detecting phacy loci.
+[SPEAKER_00]: You can see some just provided no results
+at all.
+[SPEAKER_00]: Now, the next step is to produce a
+consensus loci.
+[SPEAKER_00]: So here is a summary, which basically
+represents repeatability, how many times a
+[SPEAKER_00]: region is found to be a producer of phacy
+RNAs across libraries.
+[SPEAKER_00]: I found 92 regions represented here on the
+x-axis.
+[SPEAKER_00]: In the y-axis is the number of times that
+region is recognized across libraries.
+[SPEAKER_00]: And you can see that most of them,
+or a good amount of them, are found
+[SPEAKER_00]: multiple times.
+[SPEAKER_00]: But some are found in a very few
+occasions, even just one time in a single
+[SPEAKER_00]: library.
+[SPEAKER_00]: And this could represent false positives,
+or they could also just represent regions
+[SPEAKER_00]: that are expressed only under a particular
+circumstance.
+[SPEAKER_00]: Now, if you remember in my diagram,
+phacy loci are the regions that produce
+[SPEAKER_00]: phase small RNAs.
+[SPEAKER_00]: And we can test the activity of the small
+RNAs using degram data.
+[SPEAKER_00]: So I use this to validate this previous
+set of results by asking the question,
+[SPEAKER_00]: do the small RNAs that derive from this
+loci have biological activity assessed by
+[SPEAKER_00]: degram data?
+[SPEAKER_00]: And now I have this reduced subset of 50
+regions from which small RNAs derive from
+them.
+[SPEAKER_00]: Degrams actually have validated targets.
+[SPEAKER_00]: And if you're wondering, where are they or
+what they are, most of them corresponds to
+[SPEAKER_00]: annotated regions in the genome that
+correspond to coding genes.
+[SPEAKER_00]: And for our purposes, they're of great
+interest, because a lot of defense-related
+[SPEAKER_00]: genes are known to produce small RNAs.
+[SPEAKER_00]: So the most evident example is NB-LLR
+proteins that we know their transcripts.
+[SPEAKER_00]: They can produce phase small interfering
+RNAs.
+[SPEAKER_00]: And actually, this is why I was mentioning
+before that they're known as massive
+[SPEAKER_00]: regulators of plant defense.
+[SPEAKER_00]: Now, going back to our diagram.
+[SPEAKER_00]: So we have the consensus locus.
+[SPEAKER_00]: We map the small RNAs.
+[SPEAKER_00]: And now we need to find the triggers.
+[SPEAKER_00]: And just a quick reminder about what a
+trigger is.
+[SPEAKER_00]: A trigger will represent a small RNA that
+starts this process of double-stranded RNA
+[SPEAKER_00]: production and subsequent cleavage.
+[SPEAKER_00]: Now, in this diagram, I must say,
+this is not entirely accurate.
+[SPEAKER_00]: And very quickly, I will show you a few
+interesting features about small RNA or
+[SPEAKER_00]: FASCy RNA biogenesis that I usually not
+accounted for.
+[SPEAKER_00]: So going back to my MIR173 example,
+we know it targets the task 1 transcript.
+[SPEAKER_00]: It's the production of small RNAs.
+[SPEAKER_00]: And this would be the expected result.
+[SPEAKER_00]: The microRNA sets the register for the
+cleavage, the sequential cleavage.
+[SPEAKER_00]: Now, most models are based on 21
+nucleotide long phase small interfering
+[SPEAKER_00]: RNAs.
+[SPEAKER_00]: I don't have time to show you the
+evidence, but we know there are actually
+[SPEAKER_00]: also 22 nucleotide long small RNAs.
+[SPEAKER_00]: And if you think about it, this is
+relevant.
+[SPEAKER_00]: Because if you change the size for one of
+these molecules, then everything gets
+[SPEAKER_00]: shifted over.
+[SPEAKER_00]: And another important feature is that per
+transcript, there could be multiple
+[SPEAKER_00]: triggers, as I'm showing here.
+[SPEAKER_00]: And those triggers can actually set up
+different registers from which new small
+[SPEAKER_00]: RNAs can arise.
+[SPEAKER_00]: And these small RNAs can have possible new
+targets and therefore new activities.
+[SPEAKER_00]: And it overall represents an unexplored
+expanded regulatory capacity for each of
+[SPEAKER_00]: these locus.
+[SPEAKER_00]: So then going back to my process,
+I'm trying to find the triggers that set
+[SPEAKER_00]: up the production of phase small
+interfering RNAs.
+[SPEAKER_00]: And this is a summary.
+[SPEAKER_00]: For 74% of all my transcripts,
+I was able to find a trigger.
+[SPEAKER_00]: There's 36% for which I couldn't identify
+any.
+[SPEAKER_00]: And you can see here, in some cases,
+I was able to find out down to three
+[SPEAKER_00]: triggers per transcript.
+[SPEAKER_00]: Now, having this trigger information,
+and just to remind you the relevance of
+[SPEAKER_00]: the triggers is that they can set up
+different registers from which new RNAs
+[SPEAKER_00]: can arise, we can now collect all the
+small RNAs that derive from the different
+[SPEAKER_00]: register and different sizes that I
+mentioned, make a big pool, including
+[SPEAKER_00]: microRNAs, and use our Degrelam data to
+confirm them.
+[SPEAKER_00]: So here, I'm showing a brief summary of
+the Degrelam data.
+[SPEAKER_00]: In red, this is what exists in the DNA.
+[SPEAKER_00]: This is the NCBI database.
+[SPEAKER_00]: In black, I'm showing our contribution.
+[SPEAKER_00]: So we made 16 extra libraries,
+which can be summarized here, where for
+[SPEAKER_00]: this analysis, 89% of all the information
+or all the Degrelam data used corresponds
+[SPEAKER_00]: to our libraries.
+[SPEAKER_00]: And if you remember, this is what we use
+to validate the interactions between small
+[SPEAKER_00]: RNAs and transcripts.
+[SPEAKER_00]: So when we do that for our big pool of
+small RNAs, we get these results.
+[SPEAKER_00]: We know we have two classes of small RNAs,
+microRNAs, which I'm using a known set,
+[SPEAKER_00]: as was described in the latest annotation
+of Arabidopsis.
+[SPEAKER_00]: We know there's 427 microRNAs reported.
+[SPEAKER_00]: I was able to find activity or confirm
+activity for 223, which corresponds to the
+[SPEAKER_00]: most comprehensive analysis of small RNA
+or microRNA activity in Arabidopsis using
+[SPEAKER_00]: Degrelam data.
+[SPEAKER_00]: Now, this is where my main contribution or
+the main contribution of my tool is in
+[SPEAKER_00]: finding all these FASC RNAs, and in
+particularly, the ones that are active,
+[SPEAKER_00]: which I'm showing here in red.
+[SPEAKER_00]: Now, I'm going to focus on this active set
+of FASC RNAs and break them down into four
+[SPEAKER_00]: groups.
+[SPEAKER_00]: The first group corresponds to 21 phase
+small RNAs, which kind of correspond to
+[SPEAKER_00]: this blue set here.
+[SPEAKER_00]: And this corresponds to the small RNAs
+that most available tools would find,
+[SPEAKER_00]: which are about 350.
+[SPEAKER_00]: But then there's about 250 of these active
+small RNAs that are in a different
+[SPEAKER_00]: register than my tool is able to pick up.
+[SPEAKER_00]: Additionally, there's also about 150,
+which are 22 nucleotides long,
+[SPEAKER_00]: that most tools will not pick up unless
+you do a combined search.
+[SPEAKER_00]: And there's a subset where they're both 22
+and in a different register.
+[SPEAKER_00]: Now, again, to summarize this,
+what I'm saying is that using this
+[SPEAKER_00]: approach, we were able to double the
+number of small RNAs of known activity.
+[SPEAKER_00]: Therefore, we expanded on the regulatory
+capacity we can recover.
+[SPEAKER_00]: Now, we've gone through pretty much all
+the motions.
+[SPEAKER_00]: All we have to do now is remove all
+non-active small RNAs and attach it all
+[SPEAKER_00]: together to produce a model network.
+[SPEAKER_00]: And four years later, this is my small RNA
+regulatory network.
+[SPEAKER_00]: This is what I was working for.
+[SPEAKER_00]: Now, a quick reminder.
+[SPEAKER_00]: I am using Degralom data for this.
+[SPEAKER_00]: I know I keep saying it.
+[SPEAKER_00]: So the interactions, all the edges have
+experimental support.
+[SPEAKER_00]: But even so, I think at least whenever I'm
+confronted to something like this,
+[SPEAKER_00]: a few questions arise.
+[SPEAKER_00]: Is it real?
+[SPEAKER_00]: Hopefully, I convince you that it is.
+[SPEAKER_00]: Because I'm using experimental,
+or each interaction is experimentally
+[SPEAKER_00]: validated.
+[SPEAKER_00]: Does it reflect biology?
+[SPEAKER_00]: I'll try to evaluate that.
+[SPEAKER_00]: And most importantly, you may have noticed
+I don't have sufficient jokes for the
+[SPEAKER_00]: length of this seminar.
+[SPEAKER_00]: So if you have any suggestion and you're
+getting bored by now, I really would need,
+[SPEAKER_00]: I don't know any network jokes.
+[SPEAKER_00]: But now, no.
+[SPEAKER_00]: Stay there.
+[SPEAKER_00]: We think about it so far.
+[SPEAKER_00]: What I've been showing is all the steps
+that lead to the production of the
+[SPEAKER_00]: networks.
+[SPEAKER_00]: So we're just building to this moment.
+[SPEAKER_00]: And now, I get the fun part.
+[SPEAKER_00]: And I only have a few more things to say.
+[SPEAKER_00]: Now, just a quick reminder.
+[SPEAKER_00]: The objectives were to describe and
+identify and describe biologically
+[SPEAKER_00]: relevant small RNA mediated networks.
+[SPEAKER_00]: Now, to show that they are actually valid,
+I'm going to sort of go into that network
+[SPEAKER_00]: to our old friend, Mir 173, which I've
+said before, we know a lot about it.
+[SPEAKER_00]: And if my network construction is correct,
+I should be able to reconstruct what we
+[SPEAKER_00]: know about Mir 173.
+[SPEAKER_00]: So I'm going to use this cascade for
+evaluation.
+[SPEAKER_00]: Quick reminder.
+[SPEAKER_00]: I'm also using this because it's a tricky
+one.
+[SPEAKER_00]: There's a lot of nuances.
+[SPEAKER_00]: We know it targets the task transcripts.
+[SPEAKER_00]: For this transcript in a specific,
+there's three triggers.
+[SPEAKER_00]: We know there's phase changes.
+[SPEAKER_00]: So there's a lot of things going on.
+[SPEAKER_00]: And this would be the most challenging
+example.
+[SPEAKER_00]: And just to guide you, we have a microRNA.
+[SPEAKER_00]: We have four facile loci in the middle of
+these clusters.
+[SPEAKER_00]: The balls around it corresponds to sets of
+small RNAs that derive from it.
+[SPEAKER_00]: We know they're predicted to target PPR
+proteins, which are proteins involved in
+[SPEAKER_00]: defense.
+[SPEAKER_00]: And there's also a function for this,
+which has been shown to be involved in
+[SPEAKER_00]: metabolic stress.
+[SPEAKER_00]: So I'll try to recreate that.
+[SPEAKER_00]: So I go to my network.
+[SPEAKER_00]: I try to get the Mir 173 subnetwork.
+[SPEAKER_00]: The subnetwork represented here are
+highlighted in red.
+[SPEAKER_00]: And I'll change the view to something more
+simple.
+[SPEAKER_00]: So just to reconstruct it, we have one
+microRNA.
+[SPEAKER_00]: We have four transcripts and a set of
+loci.
+[SPEAKER_00]: So far, so good.
+[SPEAKER_00]: Now I'm going to show.
+[SPEAKER_00]: Oh, so here they did bioinformatic
+predictions of targets.
+[SPEAKER_00]: I've been saying how I do experimental
+validation of targets.
+[SPEAKER_00]: So now I'm going to change the view and
+show you the results for this with my
+[SPEAKER_00]: tool.
+[SPEAKER_00]: And there's a couple of things to mention
+here.
+[SPEAKER_00]: The change of colors, the blue ones,
+the new ones, are all these small RNAs
+[SPEAKER_00]: that are different sizes or in a different
+register.
+[SPEAKER_00]: So they're here to illustrate the
+contribution of including all these
+[SPEAKER_00]: different nuances into an analysis tool.
+[SPEAKER_00]: And on the bottom, I'm showing all the RNA
+transcript targets.
+[SPEAKER_00]: And here, hopefully you can see it,
+I'm showing the PPR proteins that they
+[SPEAKER_00]: predicted and validated to be targets.
+[SPEAKER_00]: So we can reconstruct the network with the
+right topology.
+[SPEAKER_00]: We have the right molecules.
+[SPEAKER_00]: Now they have a function.
+[SPEAKER_00]: They know it is involved in metabolic
+stress.
+[SPEAKER_00]: So I took all the genes that are targeted
+by this cascade and did a functional
+[SPEAKER_00]: enrichment analysis using Go terms.
+[SPEAKER_00]: So I'm going to use several of these
+plots.
+[SPEAKER_00]: So let me walk you through it.
+[SPEAKER_00]: In this case, the size of the circle
+corresponds to the breast of the category.
+[SPEAKER_00]: So for example, biological process is a
+molecule much bigger category than
+[SPEAKER_00]: transport.
+[SPEAKER_00]: Then white is nonsignificant enrichment.
+[SPEAKER_00]: Everything in color refers to
+significantly enriched categories.
+[SPEAKER_00]: And the darker, the more significant the
+results.
+[SPEAKER_00]: Now before you go through it, I'm just
+going to direct you to this side over
+[SPEAKER_00]: here, which corresponds to categories
+involved in defense response, and more
+[SPEAKER_00]: importantly, to abiotic stress stimulus.
+[SPEAKER_00]: So what I'm showing here is that using my
+approach and functional enrichment,
+[SPEAKER_00]: we could make functionally valid
+inferences from our network.
+[SPEAKER_00]: I was able to reconstruct or validate my
+network because we have the right
+[SPEAKER_00]: topology, we have the right molecules,
+and we could even predict the right
+[SPEAKER_00]: functions using this approach.
+[SPEAKER_00]: Summarize here.
+[SPEAKER_00]: So again, we have accurate identification
+of the components.
+[SPEAKER_00]: We have accurate reconstruction of the
+network topology.
+[SPEAKER_00]: We can make functional inferences that are
+consistent with experimental results.
+[SPEAKER_00]: I've shown how we can expand on the
+regulatory capacity.
+[SPEAKER_00]: And just to remind you, we use an unbiased
+genome-wide approach.
+[SPEAKER_00]: We're not focusing on a particular set.
+[SPEAKER_00]: So we can do that type of analysis across
+the genome.
+[SPEAKER_00]: Now I'm going to move very quickly to a
+description of the network.
+[SPEAKER_00]: And I'm going to change the view.
+[SPEAKER_00]: We know it has this type of structure that
+I think is easier to read.
+[SPEAKER_00]: So I'm going to change the view to this.
+[SPEAKER_00]: And let me walk you through this
+rearrangement of the network.
+[SPEAKER_00]: We can start here.
+[SPEAKER_00]: These are the pre-microRNAs.
+[SPEAKER_00]: These are transcripts that get processed
+to produce microRNAs.
+[SPEAKER_00]: So here, I'm showing a set of microRNAs
+that do not induce FASI RNA production.
+[SPEAKER_00]: To the right, I'm showing the microRNAs
+that do trigger FASI RNA production from
+[SPEAKER_00]: this FASI loci.
+[SPEAKER_00]: I said that the produced FASI loci can in
+turn trigger secondary production of small
+[SPEAKER_00]: RNAs from other transcripts shown here and
+the resulting FASI RNAs.
+[SPEAKER_00]: And also, if you remember, I said I had a
+set for which I have no trigger.
+[SPEAKER_00]: So this corresponds to all the
+FASI-producing regions for which I have no
+[SPEAKER_00]: target.
+[SPEAKER_00]: And at the bottom are all the target
+transcripts.
+[SPEAKER_00]: Or each set.
+[SPEAKER_00]: Now, if you were wondering what kind of
+genes are involved in this network,
+[SPEAKER_00]: again, I did a functional enrichment
+analysis.
+[SPEAKER_00]: And also, before we go through all the
+categories, I can summarize this in a
+[SPEAKER_00]: simple statement.
+[SPEAKER_00]: Most categories are represented in this
+network.
+[SPEAKER_00]: And actually, this result triggered
+another question that I think is pretty
+[SPEAKER_00]: interesting, which instead of looking for
+categories that are enriched, because
+[SPEAKER_00]: everything is there, one can think of what
+is not there.
+[SPEAKER_00]: So we did an analysis for functional
+under-representation.
+[SPEAKER_00]: And there's only one category that is
+under-represented in my network that
+[SPEAKER_00]: corresponds to genes involved in
+translational regulation.
+[SPEAKER_00]: And actually, I don't have a hypothesis
+for this.
+[SPEAKER_00]: I think it's very interesting,
+but I have no way to explain it at the
+[SPEAKER_00]: moment.
+[SPEAKER_00]: If anyone has any idea, I'll be happy to
+hear your thoughts.
+[SPEAKER_00]: So we have performed other structural
+analysis on the networks that I don't have
+[SPEAKER_00]: the time to discuss today, but if you're
+interested, I'm happy to tell you about
+[SPEAKER_00]: it.
+[SPEAKER_00]: Now we're just going to move on to the
+second objective, which involves
+[SPEAKER_00]: determining the regulatory contribution of
+the network.
+[SPEAKER_00]: So this is a summary of the network
+components.
+[SPEAKER_00]: I've gone through most of them before.
+[SPEAKER_00]: I just want to stress the fact that my
+network includes about 20% of all known
+[SPEAKER_00]: Arabidopsis genes, which should be
+indicative of the overall potential.
+[SPEAKER_00]: But when you think about it, the
+regulatory potential of this network does
+[SPEAKER_00]: not only involve the genes that are there,
+but also their activities.
+[SPEAKER_00]: An example would be if my networks involve
+regulation of a transcription factor,
+[SPEAKER_00]: the transcription factor activity would
+play into this.
+[SPEAKER_00]: So that's the first thing we did.
+[SPEAKER_00]: We started asking what kind of genes are
+here.
+[SPEAKER_00]: And we first looked for transcription
+factors.
+[SPEAKER_00]: And here I'm highlighting in red all the
+transcription factors found in our
+[SPEAKER_00]: networks.
+[SPEAKER_00]: The summary is that there's 26% of all
+transcription factors are under small RNA
+[SPEAKER_00]: regulation, according to our model.
+[SPEAKER_00]: We can broaden this search by just trying
+to search all genes involved in
+[SPEAKER_00]: regulation.
+[SPEAKER_00]: And this is our result.
+[SPEAKER_00]: About 30% of all genes that have been
+involved or have been shown to be involved
+[SPEAKER_00]: in transcription regulation are under
+small RNA control.
+[SPEAKER_00]: So in summary, when it comes to the
+contribution or the regulatory
+[SPEAKER_00]: contribution of my network, there's 25% of
+all described genes.
+[SPEAKER_00]: Most functional categories are
+represented.
+[SPEAKER_00]: And about 30% of all genes involved in
+transcription or regulation appear to be
+[SPEAKER_00]: under small RNA control.
+[SPEAKER_00]: Now, you might be wondering, how can we
+use this regulatory meta network?
+[SPEAKER_00]: If you remember, I used a composite data
+set to produce this.
+[SPEAKER_00]: And one example that may refer to plant
+pathology is you can ask the same question
+[SPEAKER_00]: I was doing before, but for defense
+response genes.
+[SPEAKER_00]: So again, if we look for all the genes
+that have function related to defense,
+[SPEAKER_00]: 30% are under small RNA regulation.
+[SPEAKER_00]: So an example here could be if you have
+your system where your pathogen is
+[SPEAKER_00]: disrupting the regulation or the
+regulation of your favorite host gene,
+[SPEAKER_00]: either up-regulated or down-regulated,
+and you want to understand the mechanism
+[SPEAKER_00]: by which this is happening, you can use
+this model to ask, first, is your gene
+[SPEAKER_00]: under small RNA regulation?
+[SPEAKER_00]: And if it is, where in the network is it?
+[SPEAKER_00]: How many small RNAs are targeting it?
+[SPEAKER_00]: So there's some useful information you can
+get from it.
+[SPEAKER_00]: But there's also, I want to show very
+quickly, and this is the last part of my
+[SPEAKER_00]: talk, I want to show how I want to do it.
+[SPEAKER_00]: So back to my plan, first was to produce a
+model network, which I've done.
+[SPEAKER_00]: Then step two involves having expression
+data to produce now sample specific
+[SPEAKER_00]: networks.
+[SPEAKER_00]: So moving from a meta network to something
+that corresponds to a plant or a sample or
+[SPEAKER_00]: a treatment.
+[SPEAKER_00]: So I'm going to show this is based on
+preliminary data.
+[SPEAKER_00]: And I'm going to use an example using an
+unaffected plant.
+[SPEAKER_00]: So if you remember, I have RNAs and a
+small RNA data set from all my samples.
+[SPEAKER_00]: Here is a summary of an RNA-seq experiment
+where on the x-axis, I have all the
+[SPEAKER_00]: expressed genes.
+[SPEAKER_00]: There are about 17,000 in my libraries.
+[SPEAKER_00]: And on the y-axis, I'm showing the
+expressions, the expression level as the
+[SPEAKER_00]: log of the normalized count.
+[SPEAKER_00]: So there's just a lot of libraries,
+but each one of these corresponds to a
+[SPEAKER_00]: specific gene.
+[SPEAKER_00]: This would be the section of
+low-expression genes.
+[SPEAKER_00]: This would correspond to high-expressed
+genes.
+[SPEAKER_00]: Now from a network, we know which ones are
+under small RNA control, which I'm going
+[SPEAKER_00]: to highlight here in red.
+[SPEAKER_00]: So about 35% of all the genes have the
+potential to be regulated by small RNAs.
+[SPEAKER_00]: Now if you remember, these interactions
+make sense if both molecules are
+[SPEAKER_00]: expressed.
+[SPEAKER_00]: You need the small RNA and the transcript
+for regulation to occur.
+[SPEAKER_00]: So I'm not going to show it, but I did the
+same analysis for small RNAs.
+[SPEAKER_00]: And then I can take all the data and input
+it into my model network.
+[SPEAKER_00]: So here I'm highlighting in red all the
+nodes that show expression in an
+[SPEAKER_00]: unaffected sample.
+[SPEAKER_00]: You can't really see the black dots
+because the network is so dense.
+[SPEAKER_00]: But those will correspond to the
+non-expressed genes.
+[SPEAKER_00]: And now I'm going to take away everything
+that is not expressed in this particular
+[SPEAKER_00]: sample.
+[SPEAKER_00]: And this is what you're left with.
+[SPEAKER_00]: So you're going to notice here there's a
+bunch of free nodes.
+[SPEAKER_00]: This corresponds to transcripts for which
+the small RNA is not present, or vice
+[SPEAKER_00]: versa.
+[SPEAKER_00]: So there will be no regulatory
+contribution here.
+[SPEAKER_00]: But if you look, there's still some edges.
+[SPEAKER_00]: So all the edges that still exist in this
+network corresponds to instances in which
+[SPEAKER_00]: the small RNA and the transcripts are
+detected as expressed in an unaffected
+[SPEAKER_00]: sample.
+[SPEAKER_00]: So again, I'm going to change the view for
+something more friendly.
+[SPEAKER_00]: Here is the method network.
+[SPEAKER_00]: Here is the network corresponding to my
+unaffected sample.
+[SPEAKER_00]: So as expected, it corresponds to a much
+smaller subset of all the nodes and
+[SPEAKER_00]: interactions.
+[SPEAKER_00]: But this one would be the ones that are
+relevant.
+[SPEAKER_00]: So with this example, I hope that you can
+imagine how we can use this to evaluate
+[SPEAKER_00]: virus effect on regulation.
+[SPEAKER_00]: So our plan is to produce these type of
+sample-specific networks and then start
+[SPEAKER_00]: asking, what are the changes?
+[SPEAKER_00]: Are there structural changes?
+[SPEAKER_00]: And also, I'm showing this as an on and
+off state.
+[SPEAKER_00]: But also, there's a quantitative side to
+this.
+[SPEAKER_00]: So you can also query or ask what kind of
+genes are undergoing expression
+[SPEAKER_00]: differences, or differential gene
+expression.
+[SPEAKER_00]: And where do they fit in these networks?
+[SPEAKER_00]: And how viruses can affect this small RNA
+regulatory contribution.
+[SPEAKER_00]: So my conclusions.
+[SPEAKER_00]: So you can take a breath now.
+[SPEAKER_00]: I think I'll finish with this.
+[SPEAKER_00]: I just want to say that for my thesis
+project and this project, what I did was
+[SPEAKER_00]: to construct the model network of a small
+RNA regulatory global regulation.
+[SPEAKER_00]: I confirmed the accuracy of my approach.
+[SPEAKER_00]: And illustrated how it expands in previous
+reports.
+[SPEAKER_00]: I validated the regulatory potential of
+small RNA-mediated networks.
+[SPEAKER_00]: This is basically going back to those big
+claims about small RNA being master
+[SPEAKER_00]: regulators of gene expression.
+[SPEAKER_00]: Now we have data to support that claim.
+[SPEAKER_00]: And I think it's true.
+[SPEAKER_00]: I developed a bifurcimax tool that can be
+used for other species, given some
+[SPEAKER_00]: requirements.
+[SPEAKER_00]: The tool can be thought of as a hungry
+tool.
+[SPEAKER_00]: This means that the more data becomes
+available, we can add that data and update
+[SPEAKER_00]: our model to get better resolution.
+[SPEAKER_00]: The tool is not publicly available yet.
+[SPEAKER_00]: And we're not sure whether we're going to
+pursue a publication for it.
+[SPEAKER_00]: But if you're interested, we can apply it
+to other systems.
+[SPEAKER_00]: And most importantly, we finally developed
+a model system that can be used to study
+[SPEAKER_00]: the role of small RNAs in viral
+pathogenesis.
+[SPEAKER_00]: Or your favorite topic, actually.
+[SPEAKER_00]: So for future directions, I think it
+should be clear that what we want to do is
+[SPEAKER_00]: use this resulting model to determine the
+role of small RNA-mediated networks in
+[SPEAKER_00]: viral pathogenesis.
+[SPEAKER_00]: And also, what is the effect of viral
+silencing suppressors in host small
+[SPEAKER_00]: RNA-mediated networks?
+[SPEAKER_00]: Which will be involved asking,
+what is the role of small RNAs in this
+[SPEAKER_00]: phenotype development?
+[SPEAKER_00]: And I would just like to finish with
+acknowledgments.
+[SPEAKER_00]: I especially want to thank Keith for
+sticking up with me for five years.
+[SPEAKER_00]: It's been a great time.
+[SPEAKER_00]: I really enjoyed the lab.
+[SPEAKER_00]: I particularly enjoyed the opportunity of
+pursuing a project of my design and
+[SPEAKER_00]: interest.
+[SPEAKER_00]: This seemed far-fetched at the beginning,
+but it was a great experience.
+[SPEAKER_00]: I'd also like to thank all my committee
+members for their advice and support.
+[SPEAKER_00]: Mark Fuchs, Dr. Fay, and Chris Myers.
+[SPEAKER_00]: I especially want to thank my lab members.
+[SPEAKER_00]: So Jeremy is not here today, but he's been
+a great person to have in the lab.
+[SPEAKER_00]: He knows a lot of it.
+[SPEAKER_00]: He knows a lot, and he's very useful.
+[SPEAKER_00]: Heather, our lab technician, also,
+thank you for the support and for keeping
+[SPEAKER_00]: us honest in the lab.
+[SPEAKER_00]: There's been a set of series of undergrads
+that have helped in different projects.
+[SPEAKER_00]: I'd also like to thank Andrew Grimson and
+Stephanie Watson, a grad student in Andrew
+[SPEAKER_00]: Grimson's lab.
+[SPEAKER_00]: That helped us during the development of
+small RNA libraries.
+[SPEAKER_00]: And also Julia Brevetov and June Rue and
+Gene Giovannoni's lab that assisted us in
+[SPEAKER_00]: developing or establishing the
+library-making technologies.
+[SPEAKER_00]: And finally, there's also funding sources
+for this work.
+[SPEAKER_00]: Most of this were involved in the set of
+virus-related projects that I described at
+[SPEAKER_00]: the beginning.
+[SPEAKER_00]: And my network's project has been partly
+funded by CAPS.
+[SPEAKER_00]: So with that, I'd like to thank you for
+your attention and take your questions.
+[SPEAKER_01]: Questions?
+[SPEAKER_04]: I'm wondering how you take all of these
+different data sets and put them all
+[SPEAKER_04]: together in a network in a way that,
+to me, it would seem like to be completely
+[SPEAKER_04]: sure that you have the pathway correct.
+[SPEAKER_04]: I think when you put it in your network,
+you have to see all of those parts in the
+same sample.
+[SPEAKER_04]: So like, for one sample, for one tissue
+sample, you would have an sRNA library,
+[SPEAKER_04]: an RNA-6 library, and then your own
+library, and make sure that you see all of
+[SPEAKER_04]: the parts that you need to see.
+[SPEAKER_04]: When you use this larger set of libraries,
+how does that, are you taking that into
+[SPEAKER_04]: account?
+[SPEAKER_04]: Or how are you dealing with that to make
+sure that all of the parts are in the
+[SPEAKER_04]: right place at the right time?
+[SPEAKER_00]: Let me see if I understand.
+[SPEAKER_00]: Just to recapitulate, the question is,
+how do I know that my method network is
+[SPEAKER_00]: representative of a network that would
+occur in a single sample?
+[SPEAKER_04]: Yeah, because what I'm thinking is,
+if you have a degram sample from
+[SPEAKER_04]: Arabidopsis roots, and you find the
+cleavage, but your microRNA and the small
+[SPEAKER_04]: RNAs are in shoots, it's not really
+relevant.
+[SPEAKER_00]: Right.
+[SPEAKER_00]: I'll go back to this figure here.
+[SPEAKER_00]: Or actually, maybe this one here.
+[SPEAKER_00]: For the regulatory effect to occur,
+you need the small RNA and the transcript
+[SPEAKER_00]: to be present at the same time.
+[SPEAKER_00]: And here, all the free nodes.
+[SPEAKER_00]: So this is a network for an uninfected
+sample.
+[SPEAKER_00]: So it represents one treatment.
+[SPEAKER_00]: And it actually represents tissue.
+[SPEAKER_00]: So we're dealing with tissue averages.
+[SPEAKER_00]: All the free nodes in this network
+corresponds to instances in which one of
+[SPEAKER_00]: the two in the pair is not present.
+[SPEAKER_00]: So if we don't see expression,
+we don't make a connection when we
+[SPEAKER_00]: evaluate it in a single library.
+[SPEAKER_00]: Right?
+[SPEAKER_00]: Now, another thing you can consider is,
+they also have to be present in the same
+[SPEAKER_00]: cell or something like that.
+[SPEAKER_00]: Well, actually, that's not entirely true.
+[SPEAKER_00]: They're not cell autonomous, so they can
+move around.
+[SPEAKER_00]: I think that using the approach of tissue
+averages is OK.
+[SPEAKER_00]: Now, even if we have both nodes expressed
+in the same tissue library, we don't know.
+[SPEAKER_00]: Well, actually, I'm not trying to evaluate
+cleavage per library.
+[SPEAKER_00]: I'm evaluating expression.
+[SPEAKER_00]: And the way we're going to use this is in
+a comparative form.
+[SPEAKER_00]: So if I produce this type of network in an
+uninfected and an infected sample,
+[SPEAKER_00]: I can see how the dynamics change.
+[SPEAKER_00]: So I would be able to see if a microRNA
+expression goes up and its target
+[SPEAKER_00]: correspondingly goes down, that would
+correspond to meaningful interactions.
+[SPEAKER_00]: So most of the downstream analysis would
+be based on that, on looking at the
+[SPEAKER_00]: dynamics of each pair upon different
+treatments.
+[SPEAKER_04]: Yeah, I understand that.
+[SPEAKER_00]: I'm just thinking about where you build
+the reference network.
+[SPEAKER_00]: Oh, right.
+[SPEAKER_00]: So the reference network is just a map of
+interactions.
+[SPEAKER_00]: And they don't necessarily exist in any
+given plant.
+[SPEAKER_00]: And sometimes, they may never be present.
+[SPEAKER_00]: So one could think that some of these
+nodes never occur.
+[SPEAKER_00]: But this is showing the overall regulatory
+potential.
+[SPEAKER_00]: When we look at expression, then we see
+which ones are active and which ones are
+[SPEAKER_00]: not.
+[SPEAKER_00]: The issue is that when we started,
+we were planning to do a network per
+[SPEAKER_00]: treatment.
+[SPEAKER_00]: And we realized that the results are not
+comparable.
+[SPEAKER_00]: We need a model network.
+[SPEAKER_00]: Because if you have a fascinosa that has
+very, very low expression, you may not
+[SPEAKER_00]: detect it at all.
+[SPEAKER_00]: So our aim was to get all the map,
+all the interactions map, and then input
+[SPEAKER_00]: expression data to do it.
+[SPEAKER_03]: Good job.
+[SPEAKER_03]: So I'm just wondering whether there is any
+difference of the face transactive mine
+production or the capture between the
+virus infected or not infected.
+[SPEAKER_03]: I mean that whether the virus can be
+infected can cause some difference between
+[SPEAKER_03]: the face transactive mine production or
+the transmission.
+[SPEAKER_03]: Could it show the face lose eye like that?
+[SPEAKER_00]: Yeah, so this is a great question.
+[SPEAKER_00]: And this is actually what we plan to do
+now.
+[SPEAKER_00]: Because if you think about a virus acting,
+so I mentioned that viruses encode
+[SPEAKER_00]: silencing suppressors.
+[SPEAKER_00]: And silencing suppressors will affect the
+production of small RNAs.
+[SPEAKER_00]: So in a virus setting, you may be
+preventing the production of these
+[SPEAKER_00]: microRNAs over here.
+[SPEAKER_00]: If you block the production of microRNAs
+over here, you may lose all the downstream
+[SPEAKER_00]: regulation.
+[SPEAKER_00]: And there's a lot of potential genes
+involved in this.
+[SPEAKER_00]: So that's where we're heading.
+[SPEAKER_00]: We don't have the data yet.
+[SPEAKER_00]: We're working on that.
+[SPEAKER_00]: But we really want to know how viruses
+will change this structure.
+[SPEAKER_00]: And we know they can target each step.
+[SPEAKER_01]: In the interest of time, I think I will
+ask you to thank Jose and anyone who's
+[SPEAKER_01]: interested in discussing it further.
+[SPEAKER_01]: Please come up.
+[SPEAKER_01]: Thank you.
+[SPEAKER_00]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_00]: Thank you.
+[SPEAKER_00]: Thank you.
+Thank you.

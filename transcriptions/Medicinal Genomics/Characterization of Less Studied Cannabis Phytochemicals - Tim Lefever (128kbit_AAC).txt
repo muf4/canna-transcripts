@@ -1,0 +1,745 @@
+[SPEAKER_00]: Hey, everyone.
+[SPEAKER_00]: I'm Tim O'Fever.
+[SPEAKER_00]: I'm director of discovery at Nalu Bio.
+[SPEAKER_00]: Thanks to CanMed for inviting me to give a
+talk about some of the investigative
+[SPEAKER_00]: research we're conducting on minor rare
+cannabinoids in pursuit of both
+[SPEAKER_00]: nutraceutical or therapeutic development.
+[SPEAKER_00]: So I think it's obviously a very exciting
+time in the cannabinoid space.
+[SPEAKER_00]: Well, certainly there's been no shortage
+of research.
+[SPEAKER_00]: And interest in developing
+cannabinoid-based health products or
+[SPEAKER_00]: therapeutics.
+[SPEAKER_00]: There's also a lot we just don't know yet.
+[SPEAKER_00]: And so we've got this surge of interest in
+cannabinoids.
+[SPEAKER_00]: Regulations are continuing to evolve.
+[SPEAKER_00]: And research is advancing and coming out
+more and more and more.
+[SPEAKER_00]: But there's still a lot for us to do.
+[SPEAKER_00]: And so we believe that the synthetic
+pathway offers us an opportunity.
+[SPEAKER_00]: So we can synthetically derive
+cannabinoids that currently cannot really
+[SPEAKER_00]: be extracted from any existing plant
+genetics.
+[SPEAKER_00]: And so what we propose is developing these
+synthetic pathways, investigating them,
+[SPEAKER_00]: putting them out on the marketplace,
+and kind of establishing the pathway for
+[SPEAKER_00]: botanical development down the road.
+[SPEAKER_00]: So we're not saying this is a separate
+pathway to botanical development or that
+[SPEAKER_00]: it's better in some way.
+[SPEAKER_00]: It's just sort of paving the way to
+justify the genetics on the plant-touching
+[SPEAKER_00]: side of the business.
+[SPEAKER_00]: Eventually towards botanical preparations
+that may have better effects, the
+[SPEAKER_00]: entourage effect more.
+[SPEAKER_00]: The sum is greater than any of the
+individual cannabinoids.
+[SPEAKER_00]: Sorry, I'm just changing the notes on me
+here.
+[SPEAKER_00]: And so while we're characterizing these
+phytocannabinoids for potential
+[SPEAKER_00]: nutraceutical applications, we can also
+leverage the learnings from that data set
+[SPEAKER_00]: into the identification of potential
+cannabinoids.
+[SPEAKER_00]: So at a high level, we tend to think of
+the cannabinoids as a nature-made
+[SPEAKER_00]: pharmaceutical pipeline that has a solid
+promise but needs a little bit of
+[SPEAKER_00]: refinement through medicinal chemistry to
+generate a hit.
+[SPEAKER_00]: So obviously as we work on this approach,
+we might find a phytocannabinoid that
+[SPEAKER_00]: stands up on its own as well.
+[SPEAKER_00]: So we've built a computer-aided drug
+design platform that's been trained with
+[SPEAKER_00]: critical existing information,
+and we refine it every time we collect
+data.
+[SPEAKER_00]: And we recycle that information back in.
+[SPEAKER_00]: So it's constantly getting better and
+evolving.
+[SPEAKER_00]: And so with each cycle, it improves in the
+designs it spits out, given the parameters
+[SPEAKER_00]: that we set, hopefully generate promising
+NCEs that we can follow up on.
+[SPEAKER_00]: So again, this is just a high-level
+outline of how this commercial and
+[SPEAKER_00]: therapeutic endeavors are connected.
+[SPEAKER_00]: So we start again with the cannabinoids on
+the left.
+[SPEAKER_00]: We screen them computationally and then
+follow up physically.
+[SPEAKER_00]: And then for those that have limited data,
+we'll undertake talks and efficacy studies
+[SPEAKER_00]: while optimizing our synthetic approach to
+making them and protecting any IP that
+[SPEAKER_00]: comes out of any of that work.
+[SPEAKER_00]: And if a phytocannabinoid looks good
+through that entire process, we'll pursue
+[SPEAKER_00]: commercialization.
+[SPEAKER_00]: And you can see, now moving to the right,
+how the information gathered on the
+[SPEAKER_00]: phytocannabinoids can inform our
+therapeutic program.
+[SPEAKER_00]: So you see that the early drug discovery
+cycle is very similar to the
+[SPEAKER_00]: phytocannabinoid cycle.
+[SPEAKER_00]: Again, this is intentional.
+[SPEAKER_00]: We're trying to drive efficiency and
+synergy across our platform.
+[SPEAKER_00]: But you can see that as we go farther into
+the drug development pathway, the assays
+[SPEAKER_00]: start to deviate to be a little bit more
+traditional of a drug discovery program.
+[SPEAKER_00]: And again, if we get lucky and we identify
+a potential hit, we move towards pre-IND
+[SPEAKER_00]: enabling work.
+[SPEAKER_00]: Otherwise, we continue to revise and
+refine our NCEs.
+[SPEAKER_00]: And again, I just wanted to provide this
+context of our program at NALU before we
+[SPEAKER_00]: jump into the work that we did for this
+talk.
+[SPEAKER_00]: So you kind of have an idea and the
+rationale for why we did what we did.
+[SPEAKER_00]: So for this first run through of this
+approach, we screened a number of
+[SPEAKER_00]: phytochemicals.
+[SPEAKER_00]: Some obviously have been more studied than
+others to get a sense of how this process
+[SPEAKER_00]: might work, tweaks we may need to make in
+this approach going forward, the
+[SPEAKER_00]: predictive validity of some of our models,
+and then just the overall value.
+[SPEAKER_00]: And so given the massive amount of data
+that we've collected and some of which
+[SPEAKER_00]: I'll show today, I'm just going to try to
+focus on CBC, CBGV, CBDV, and Delta
+[SPEAKER_00]: 8-THCV.
+[SPEAKER_00]: I'll present the data from the other
+phytochemical models, and we'll touch on
+[SPEAKER_00]: some interesting findings here and there,
+but we'll focus on those four.
+[SPEAKER_00]: So again, as you saw in the approach
+above, what we're doing is fairly robust.
+[SPEAKER_00]: We're focused on modeling and
+high-throughput screening initially to
+[SPEAKER_00]: triage early and cheaply, kind of a staple
+of a drug discovery approach.
+[SPEAKER_00]: So we evaluated these cannabinoids across
+a range of assays and experiments,
+[SPEAKER_00]: starting by validating docking models at
+several orthosteric and allosteric sites.
+[SPEAKER_00]: And for today, we'll touch on CB1,
+MU, and GPR119.
+[SPEAKER_00]: We then screened all of these
+phytochemicals in ADME and physicochemical
+[SPEAKER_00]: assays and some additional models.
+[SPEAKER_00]: We looked at microsomal stability in
+human, rat, and mouse cells, MDCK,
+[SPEAKER_00]: MDR1 permeability, kinetic and
+thermodynamic solubility, finally,
+[SPEAKER_00]: log P and log D.
+[SPEAKER_00]: And then we examined the activity of the
+cannabinoids across several targets in
+[SPEAKER_00]: radio ligand binding assays and functional
+assays.
+[SPEAKER_00]: And again, this overlapped with some of
+our docking targets where we wanted to
+[SPEAKER_00]: compare the validity of our docking model
+as well as get a sense of in vitro
+[SPEAKER_00]: activity at some of the other targets we
+have not yet modeled.
+[SPEAKER_00]: And last but not least, we then conducted
+a in vivo C.
+[SPEAKER_00]: elegans study with NEMO life to explore
+potential acute and sub-chronic toxicity,
+[SPEAKER_00]: as well as impact on neuroactive function,
+which can be used as an indicator of
+[SPEAKER_00]: neurodegeneration or neuroprotection.
+[SPEAKER_00]: So first up, for the ADME results,
+the MDCK, MDR1 permeability assay.
+[SPEAKER_00]: I'm not gonna go into the weeds of a lot
+of how these assays work or their methods.
+[SPEAKER_00]: There's just so much data.
+[SPEAKER_00]: Feel free to find me afterwards and we can
+get into the nitty gritty.
+[SPEAKER_00]: But basically, understanding intestinal
+absorption is key for oral products.
+[SPEAKER_00]: And there's many different ways to
+investigate this.
+[SPEAKER_00]: This is just the assay we chose for this
+first run.
+[SPEAKER_00]: And it simulates drug entering the
+bloodstream from the intestine by forming
+[SPEAKER_00]: a monolayer and examining the permeation
+efficiency from apical to basolateral and
+[SPEAKER_00]: vice versa.
+[SPEAKER_00]: So this model can also be used to
+effectively predict the potential for a
+[SPEAKER_00]: compound to cross the blood-brain barrier.
+[SPEAKER_00]: So on the left table with the green
+highlighted bars, you can see both isomers
+[SPEAKER_00]: of THCV, Delta VIII and Delta IX THCV,
+as well as CBDV, were shown to have the
+[SPEAKER_00]: most favorable directional permeability,
+or the transporter efflux.
+[SPEAKER_00]: And so by extension, these are most likely
+to cross the blood-brain barrier.
+[SPEAKER_00]: However, I should mention that some of
+these compounds weren't very easy to work
+[SPEAKER_00]: with in this model.
+[SPEAKER_00]: So we went back and forth with the CRO and
+some of these were going to rerun.
+[SPEAKER_00]: As you can see, there's some NAs,
+there's some blanks.
+[SPEAKER_00]: So it's not perfect and we need to keep
+working on some of these.
+[SPEAKER_00]: We also screened these phytochemicals
+through an open web source modeling
+[SPEAKER_00]: program called Admet Lab 3.0, which is a
+great resource.
+[SPEAKER_00]: But we wanted to see how our physical data
+aligned with what was predicted.
+[SPEAKER_00]: And you can see there are definitely some
+discrepancies.
+[SPEAKER_00]: So for example, again, CBGV seemed to
+score very well in the model, but not in
+[SPEAKER_00]: the in vitro assay.
+[SPEAKER_00]: So the model may be able to kind of get
+around some of the method development work
+[SPEAKER_00]: or the chemical complexities of
+cannabinoids in some of these physical
+[SPEAKER_00]: assays to get to potentially a more
+realistic prediction or score more
+[SPEAKER_00]: quickly.
+[SPEAKER_00]: Obviously, we're going to continue to
+refine both our in vitro and in silico
+[SPEAKER_00]: models to eventually get to the point
+where we're confident enough in our
+[SPEAKER_00]: predictive validity that we can skip the
+physical assays for the most part.
+[SPEAKER_00]: So here, this is human microsomal
+stability data.
+[SPEAKER_00]: Again, the liver represents the majority
+of the P450 metabolism.
+[SPEAKER_00]: And so understanding microsomal stability
+is crucial for understanding the basics of
+[SPEAKER_00]: metabolism by measuring clearance and in
+some cases, identifying the metabolism
+[SPEAKER_00]: lights formed.
+[SPEAKER_00]: This assay is available across a number of
+different species, which allows for
+[SPEAKER_00]: comparison, as well as metabolism profiles
+to be noted when developing early PK
+[SPEAKER_00]: studies for drug discovery work.
+[SPEAKER_00]: In general, most of the cannabinoids are
+metabolized pretty quickly, indicating
+[SPEAKER_00]: rapid clearance or conversion.
+[SPEAKER_00]: And they have a relatively short half
+life, which typically is not a favorable
+[SPEAKER_00]: attribute of therapeutics.
+[SPEAKER_00]: However, Canflavin A and CBCV both had
+better profiles in the human liver
+[SPEAKER_00]: microsomes than the other cannabinoids,
+potentially indicating better stability
+[SPEAKER_00]: and longer half life.
+[SPEAKER_00]: You can see again the difference between
+CBC and CBCV here, where the only
+[SPEAKER_00]: difference in their structure is just a
+carbon.
+[SPEAKER_00]: That's the only difference.
+[SPEAKER_00]: So besides this work, we're also pursuing
+structural activity relationships of a
+[SPEAKER_00]: number of phytocannabinoids and hope that
+we might find some similar predictive
+[SPEAKER_00]: abilities.
+[SPEAKER_00]: So between the changes in alkyl tail
+length and the impact of binding in GPCRs,
+[SPEAKER_00]: does that also ring true for, say,
+microsomal stability or permeability?
+[SPEAKER_00]: So we're trying to put this whole story
+together and hopefully build up a very
+[SPEAKER_00]: big, a very robust predictive platform
+where we can screen even more and more
+[SPEAKER_00]: phytocannabinoids as well as NCEs we
+develop.
+[SPEAKER_00]: One more thing that we're trying to do,
+this data just came in, so I wasn't able
+[SPEAKER_00]: to add it.
+[SPEAKER_00]: We were able to identify some of the
+metabolites of some of these
+[SPEAKER_00]: phytocannabinoids and phytochemicals.
+[SPEAKER_00]: And we're working on adding those into
+this modeling as well, which is very
+[SPEAKER_00]: helpful for a lot of these because they
+haven't been reduced to practice yet.
+[SPEAKER_00]: In other words, they're not available for
+purchase to screen in a physical assay.
+[SPEAKER_00]: So again, if you have a high predictive
+validity in your model, that's a very nice
+[SPEAKER_00]: way to get at some of that data quickly
+instead of waiting to synthesize material
+[SPEAKER_00]: and then put it into an assay.
+[SPEAKER_00]: This is not going to surprise anybody in
+this room, but cannabinoids are not very
+[SPEAKER_00]: soluble for the most part.
+[SPEAKER_00]: And so they can be a challenge to
+formulate with.
+[SPEAKER_00]: And so to that end, we wanted to establish
+basics both around solubility for
+[SPEAKER_00]: formulation effort, product formats,
+as well as how these phytocannabinoids
+[SPEAKER_00]: perform under physiological conditions.
+[SPEAKER_00]: So in general, CBGV and CBDV were the most
+soluble, both in the kinetic and
+[SPEAKER_00]: thermodynamic solubility assays and had
+the best log P scores, which for
+[SPEAKER_00]: lipophilic molecules, as many cannabinoids
+are, is a good measure of aqueous
+[SPEAKER_00]: solubility and membrane permeability.
+[SPEAKER_00]: So if you recall, CBDV showed decent
+permeability and CBGV was predicted to
+[SPEAKER_00]: have good permeability but didn't follow
+up in the physical assay.
+[SPEAKER_00]: Again, all of this work with the ADME and
+the PCAM is to say that many of these
+[SPEAKER_00]: assays are intricately linked.
+[SPEAKER_00]: So if you improve one quality,
+you see improvement in another.
+[SPEAKER_00]: If you see deleterious effects in one,
+you might see deleterious effects in
+[SPEAKER_00]: another.
+[SPEAKER_00]: You can also see once again, though,
+that there's a lot of potential to improve
+[SPEAKER_00]: these molecules towards a more drug-like
+molecule or a therapeutic that we can use
+[SPEAKER_00]: in our pipeline.
+[SPEAKER_00]: So on to the docking models, and again,
+this is a whole talk in and of itself,
+[SPEAKER_00]: and this is the work of my colleague Mehdi
+Hagdus.
+[SPEAKER_00]: It is not my work, so I'm gonna try my
+best to represent it well, but basically
+[SPEAKER_00]: he validated these docking models using
+cryo-EM of the proteins that were
+[SPEAKER_00]: available, and then he trained the models
+using as many compounds as available,
+[SPEAKER_00]: and then screening false positives to try
+to get an understanding of the predictive
+[SPEAKER_00]: validity of these.
+[SPEAKER_00]: His goal is 70% predictive accuracy,
+where we're moving towards 80% as our
+[SPEAKER_00]: standard.
+[SPEAKER_00]: It takes him about a month to validate
+each target at each site, and the
+[SPEAKER_00]: availability of certain cryo-EM or crystal
+structures or existing data on ligands
+[SPEAKER_00]: really kind of dictates which targets,
+which sites we can go after in a
+[SPEAKER_00]: meaningful way towards having a predictive
+model.
+[SPEAKER_00]: So for example, allosteric binding sites,
+ion channels, the availability of data on
+[SPEAKER_00]: CB2 agonists kind of limit the ability of
+some of those models to be more predictive
+[SPEAKER_00]: than others.
+[SPEAKER_00]: But again, they're all rapidly improving.
+[SPEAKER_00]: Data's increasing every day, so we're very
+confident that over the next few years,
+[SPEAKER_00]: modeling the activity of phytocannabinoids
+and chemicals in general is just going to
+[SPEAKER_00]: keep improving and improving.
+[SPEAKER_00]: And again, so this is just kind of an
+outline of how we did this for GPR119.
+[SPEAKER_00]: So he trained up the model on about 1,800
+compounds with known activity.
+[SPEAKER_00]: We were able to achieve about 74%
+predictive accuracy when he re-ran the
+[SPEAKER_00]: known GPR119 agonist MBX2982.
+[SPEAKER_00]: And again, we used a very similar approach
+for the other targets and sites.
+[SPEAKER_00]: With the CB1 model being the most robust
+in our hands, he's been working on that
+[SPEAKER_00]: model for about four years.
+[SPEAKER_00]: So that one's up to about 84% predictive
+accuracy, where we just started adding in
+[SPEAKER_00]: the mu orthosteric and allosteric sites,
+and so their predictive validity is much
+[SPEAKER_00]: lower.
+[SPEAKER_00]: But again, every time we collect data and
+put it back in, the models improve.
+[SPEAKER_00]: And so here you can see the predictive
+activity at these different sites and
+[SPEAKER_00]: targets based on MEDE's models at each
+one.
+[SPEAKER_00]: And so on the top half of this table,
+you can see the scores for the
+[SPEAKER_00]: phytochemicals.
+[SPEAKER_00]: Again, a lower score indicates predictive,
+better activity.
+[SPEAKER_00]: And on the bottom half of the graph,
+you can see in those highlighted colors
+[SPEAKER_00]: that correspond with the target and the
+site at the top, kind of controls if you
+[SPEAKER_00]: want to think of them that way,
+or ligands that we know that have a very
+[SPEAKER_00]: specific activity.
+[SPEAKER_00]: Typically very strong activity at that
+given site or target.
+[SPEAKER_00]: So you can get a reference point of where
+the phytochemicals fall in line next to
+[SPEAKER_00]: some of those very strong ligands that we
+also modeled.
+[SPEAKER_00]: So to help verify these models,
+then what we did is we went out and we
+[SPEAKER_00]: conducted some in vitro bioassays.
+[SPEAKER_00]: So we pursued a number of different radio
+ligand binding and functional assays.
+[SPEAKER_00]: So we tested percentages and sent
+inhibition for radio ligand binding assays
+[SPEAKER_00]: at CB1 and CB2 against CP55940,
+at MU against DAMGO, and at 5HT1A against
+[SPEAKER_00]: 8-hydroxy-DPAT.
+[SPEAKER_00]: We also then completed dose effect curves
+for those four targets in cyclic AMP
+[SPEAKER_00]: functional assays to derive IC50s for
+agonist and antagonist activity.
+[SPEAKER_00]: For TRIP-V1, TRIP-MA, and TRIP-A1,
+we used functional calcium flux assays.
+[SPEAKER_00]: PPAR-GAMMA, we used a luciferase
+functional assay.
+[SPEAKER_00]: And again, across 10 concentrations.
+[SPEAKER_00]: But along with the 5HT1A functional data
+and radio ligand binding, we didn't see
+[SPEAKER_00]: much meaningful activity in any of those.
+[SPEAKER_00]: So I won't touch on those anymore for the
+rest of the talk.
+[SPEAKER_00]: But again, I think for a few of the TRIP
+subfamilies, we need to go back and look
+[SPEAKER_00]: at those individually.
+[SPEAKER_00]: Because some of these phytos, we are
+pretty confident they have some TRIP
+[SPEAKER_00]: activity.
+[SPEAKER_00]: We may just have not chosen the right
+family and the right subfamily for these
+[SPEAKER_00]: assays.
+[SPEAKER_00]: Again, here's the in vitro data we got
+back.
+[SPEAKER_00]: So on the left, you'll see the radio
+ligand binding and the percent inhibition
+[SPEAKER_00]: for CB1 and CB2.
+[SPEAKER_00]: In the orange and green, the solid bars
+are at the 1 micromolar.
+[SPEAKER_00]: The checkered bars are for the 10.
+[SPEAKER_00]: And then you see mu in the purple.
+[SPEAKER_00]: And the graph on the right is the
+functional cyclic AMP data for those same
+[SPEAKER_00]: targets.
+[SPEAKER_00]: And so for the most part, our results
+match what's been previously demonstrated.
+[SPEAKER_00]: The binding effects were all concentration
+dependent.
+[SPEAKER_00]: Which is good.
+[SPEAKER_00]: There are a few things we would want to
+point out and we want to follow up on.
+[SPEAKER_00]: So for example, again, the difference
+between the Delta VIII and Delta IX THCV
+[SPEAKER_00]: isomers is something we're continuing to
+investigate and pursue.
+[SPEAKER_00]: And it may help to explain some of these
+differences that we're going to see in the
+[SPEAKER_00]: in vivo data in a few slides.
+[SPEAKER_00]: So we're very interested in continuing to
+figure out what the differences between
+[SPEAKER_00]: those two isomers may be.
+[SPEAKER_00]: We also plan to explore CBGV a little bit
+further as the antagonist activity at CB1
+[SPEAKER_00]: is intriguing compared, again,
+to the in vivo data that we're about to
+[SPEAKER_00]: touch on.
+[SPEAKER_00]: So if we go back and we apply that in
+vitro data that we just collected onto
+[SPEAKER_00]: what Mehdi's docking model predicted,
+you can see that for CB1 on the left,
+[SPEAKER_00]: where, as I mentioned, he's been working
+on that model for many years, the
+[SPEAKER_00]: predictive validity is very high and the
+physical data is almost right on top of
+[SPEAKER_00]: the predicted data.
+[SPEAKER_00]: But what you can see on the right,
+as I mentioned, is the very new MU docking
+[SPEAKER_00]: scores that we just added into our
+platform.
+[SPEAKER_00]: And you can see the predictive validity
+there is much, much lower.
+[SPEAKER_00]: But again, every time we screen,
+we add in, it will get better and better
+[SPEAKER_00]: and better.
+[SPEAKER_00]: So onto the in vivo data.
+[SPEAKER_00]: So we partnered with NEMA Life to look at
+acute and sub-chronic toxicity as well as
+[SPEAKER_00]: neuroactivity in C.
+[SPEAKER_00]: elegans.
+[SPEAKER_00]: And this model has become increasingly
+popular as a method for high throughput in
+[SPEAKER_00]: vivo screening as an alternative to
+initial work using rodents.
+[SPEAKER_00]: C.
+[SPEAKER_00]: elegans, they're a very basic organism,
+but they share critical properties or
+[SPEAKER_00]: conserved biology that allow for
+translational interpretation into mammals.
+[SPEAKER_00]: So again, we were most interested in just
+understanding the basic toxicity as well
+[SPEAKER_00]: as the neuronal activity effects of these
+phytocannabinoids of interest.
+[SPEAKER_00]: So the neuroactivity data can be used as
+an indicator of potential neuroprotective
+[SPEAKER_00]: properties of a test substance.
+[SPEAKER_00]: So in general, speed and movement of the
+C.
+[SPEAKER_00]: elegans or the worms decline as the
+organism ages.
+[SPEAKER_00]: However, the addition of some compounds
+will result in maintenance of this
+[SPEAKER_00]: mobility or speed.
+[SPEAKER_00]: As they age, or in the case of some test
+substances, will actually increase
+[SPEAKER_00]: mobility.
+[SPEAKER_00]: Conversely, decreases in movement may
+indicate neurodegeneration or toxicity.
+[SPEAKER_00]: So briefly, worms are loaded into this
+microfluidic chip, which is the blue
+[SPEAKER_00]: little device there.
+[SPEAKER_00]: They live in there in a growth medium that
+is mixed with the test substance.
+[SPEAKER_00]: So they're constantly living in that.
+[SPEAKER_00]: And then each day, the fluid is flushed.
+[SPEAKER_00]: And when it's flushed, it stimulates all
+of the worms.
+[SPEAKER_00]: There's cameras over each of the chips.
+[SPEAKER_00]: It records their activity.
+[SPEAKER_00]: And then that activity is scored using an
+AI system.
+[SPEAKER_00]: So some of the results over the course of
+the nine-day dosing regimen, really no
+[SPEAKER_00]: toxicity was observed for any of the
+cannabinoids.
+[SPEAKER_00]: So what you can see in this graph is the
+percent lethality on the y-axis and then
+[SPEAKER_00]: up all of the doses and all of the
+phytocannabinoids along the x.
+[SPEAKER_00]: And just the percent lethality is cut off
+at 8%.
+[SPEAKER_00]: So there's nothing really significant
+about any of this.
+[SPEAKER_00]: Yes, you can see some trends, but they're
+very, very, very minor effects,
+[SPEAKER_00]: which was very good news for us.
+[SPEAKER_00]: It was interesting to note, however,
+that you'll see that CBC the limited
+[SPEAKER_00]: toxicity that we see is actually going up
+as the dose decreases.
+[SPEAKER_00]: Again, not significant, but something we
+wanna pay attention to.
+[SPEAKER_00]: Are you able to press play on the video?
+[SPEAKER_00]: All right, so this is what the videos look
+like and what the AI software scores.
+[SPEAKER_00]: So this is for the control worms.
+[SPEAKER_00]: They're not treated with any compound.
+[SPEAKER_00]: So you can see baseline movement,
+and then you'll see this flash of white
+[SPEAKER_00]: light.
+[SPEAKER_00]: And that's when the liquid is being
+flushed.
+[SPEAKER_00]: There it goes.
+[SPEAKER_00]: And so the AI then analyzes the activity
+of the worms post-flush.
+[SPEAKER_00]: And this allows for a very easy visual
+comparison across the doses and the
+[SPEAKER_00]: compounds.
+[SPEAKER_00]: So we're continuing to mine this massive
+data set further to look at speed and
+[SPEAKER_00]: distance, change from baseline,
+recovery post-stimulus, et cetera.
+[SPEAKER_00]: And we're also discussing looking at the
+actual individual movements of each of the
+[SPEAKER_00]: worms themselves that have been correlated
+in the past to mammalian behaviors.
+[SPEAKER_00]: For example, if they're curving in a very
+specific way or looping, those can
+[SPEAKER_00]: indicate things like stereotopy.
+[SPEAKER_00]: Can you skip to the next slide?
+[SPEAKER_00]: There you go.
+[SPEAKER_00]: And then activate this video for me.
+[SPEAKER_00]: Thank you.
+[SPEAKER_00]: So this, again, is the same thing we just
+saw with the control data, except this is
+[SPEAKER_00]: worms that were treated with
+100-micromolar Delta-8-THCV, which was one
+[SPEAKER_00]: of the most stimulating doses and
+phytochemicals we tested.
+[SPEAKER_00]: So I know it's hard.
+[SPEAKER_00]: They're not side by side.
+[SPEAKER_00]: We'll look at some more data.
+[SPEAKER_00]: But trust me that these guys are moving a
+lot faster.
+[SPEAKER_00]: And if you look towards the bottom left
+going up towards the right, there's one
+[SPEAKER_00]: worm that just screams across the entire
+frame very, very quickly.
+[SPEAKER_00]: And there were some other worms that also
+exhibited that behavior, which we want to
+[SPEAKER_00]: drill down into, that seemed to be linked
+to Delta-8-THCV more so than any of the
+[SPEAKER_00]: other compounds we tested.
+[SPEAKER_00]: All right.
+[SPEAKER_00]: So this is a little bit easier to see.
+[SPEAKER_00]: These are still images of the paths of all
+the worms in red that you can see at the
+[SPEAKER_00]: very end of the observation window
+post-stimulus.
+[SPEAKER_00]: So you can clearly see that the control
+and the CBC data are somewhat similar in
+[SPEAKER_00]: their overall activity compared to the
+increased activity or the density of the
+[SPEAKER_00]: red lines that you see with Delta-8-THCV
+and caffeine, which is the positive
+[SPEAKER_00]: control.
+[SPEAKER_00]: And again, the doses here for CBC and
+Delta-8-THCV are 100-micromolar and the
+[SPEAKER_00]: caffeine is 5-micromolar.
+[SPEAKER_00]: There we go.
+[SPEAKER_00]: So this is, I just talked briefly about a
+couple of the individual
+[SPEAKER_00]: phytocannabinoids.
+[SPEAKER_00]: So CBC was pretty interesting in this
+model.
+[SPEAKER_00]: The effects weren't dose-dependent or
+consistent.
+[SPEAKER_00]: So it could be that we were off on the
+dose range.
+[SPEAKER_00]: We may need to go back and look at it
+again.
+[SPEAKER_00]: It is interesting to note, though,
+that CBC was the only phytocannabinoid
+[SPEAKER_00]: that had increasing toxicity as doses went
+down, not up, as I mentioned earlier.
+[SPEAKER_00]: And again, not significant, but certainly
+worth following up as CBC does have some
+[SPEAKER_00]: published data indicating that it has some
+neuroprotective effects.
+[SPEAKER_00]: So I think potentially for CBC we may have
+just been too low and we were at a
+[SPEAKER_00]: threshold dose.
+[SPEAKER_00]: The increase in activity we observed with
+CBDV, on the other hand, is unsurprising
+[SPEAKER_00]: given the nature of previous research with
+CBDV and neuroprotection, which may
+[SPEAKER_00]: indicate that by increasing the
+bioavailability and subsequently
+[SPEAKER_00]: permeability of CBDV, relatively low doses
+could be advantageous across a variety of
+[SPEAKER_00]: neurodegenerative disease states or by
+using Med-Chem to modify CBDV to be more
+[SPEAKER_00]: soluble and stable while retaining the
+activity that we're looking for.
+[SPEAKER_00]: CBGV, again, very interesting.
+[SPEAKER_00]: It significantly increased activity at
+both 100 and 350 micromolar, though they
+[SPEAKER_00]: were fairly equal potent, and then there
+was no effect at 40 micromolar.
+[SPEAKER_00]: So the data points trend towards a
+potential dose effect, but again,
+[SPEAKER_00]: may need to go back at another dose to
+round out the curve.
+[SPEAKER_00]: And again, CBGV, as we noted earlier,
+does have that small trend in the toxicity
+[SPEAKER_00]: data, but not significant.
+[SPEAKER_00]: It's just fairly interesting that one of
+the most stimulating cannabinoids also
+[SPEAKER_00]: exhibited some of the toxicity we saw.
+[SPEAKER_00]: And CBGV, we think it might confer some
+neuroprotection through its activity at
+[SPEAKER_00]: the trip channels.
+[SPEAKER_00]: Though we need to explore this a little
+bit further, as I mentioned, we didn't see
+[SPEAKER_00]: any meaningful activity of CBGV at trip
+A1, trip V1, or trip M8.
+[SPEAKER_00]: But again, I think we need to go back and
+look at a few more of the subfamilies of
+[SPEAKER_00]: those ion channels.
+[SPEAKER_00]: Delta-8-THCV had a dose response
+relationship.
+[SPEAKER_00]: It was stronger than any of the other
+cannabinoids, and on several days even
+[SPEAKER_00]: outperformed the positive control
+caffeine.
+[SPEAKER_00]: So interestingly, only the 350 micromolar
+dose of the Delta-9-THCV isomer
+[SPEAKER_00]: significantly increased activity.
+[SPEAKER_00]: So we saw a pretty big difference between
+Delta-8 and Delta-9 in this assay.
+[SPEAKER_00]: So again, we want to continue to explore
+the difference between these isomers and
+[SPEAKER_00]: hope to better understand what's driving
+certain effects over the other.
+[SPEAKER_00]: So to sum up the in vivo data,
+again, none of the cannabinoids produced
+[SPEAKER_00]: any significant signs of toxicity that
+we're concerned about.
+[SPEAKER_00]: Most seem to show increases in
+neuroactivity, which may be linked to
+[SPEAKER_00]: neuroprotective effects.
+[SPEAKER_00]: While CBC and Canflavin A had some
+inhibitory effects, they weren't dose
+[SPEAKER_00]: dependent and likely just require some
+basic follow-up on the doses we selected.
+[SPEAKER_00]: So to bring this full circle, so in order
+to ensure this approach for our overall
+[SPEAKER_00]: program works, we used our in-house CAD
+system to generate design based on CBC and
+[SPEAKER_00]: CBN towards our validated targets and
+indications.
+[SPEAKER_00]: So far, we've designed over 300.
+[SPEAKER_00]: We've reduced 32 to practice.
+[SPEAKER_00]: And of those 32, they have predicted
+potential both in docking scores as well
+[SPEAKER_00]: as in ADME and P-Chem properties.
+[SPEAKER_00]: And so what we're hoping to do is scale
+some of these up, put them into in vivo
+[SPEAKER_00]: assays later this year, and then continue
+to refine and build our MedChem library.
+[SPEAKER_00]: While also building up more
+phytocannabinoids in our initial screening
+[SPEAKER_00]: process.
+[SPEAKER_00]: Overall summary, the modeled activity was
+fairly predictive.
+[SPEAKER_00]: The ADME and the P-Chem is in line with
+previously published data for the most
+[SPEAKER_00]: part.
+[SPEAKER_00]: Leaves lots of room for improvement
+towards more drug-like molecules for a
+[SPEAKER_00]: therapeutic endpoint.
+[SPEAKER_00]: And the in vivo work, coupled with the in
+vitro activity data, shows several leads
+[SPEAKER_00]: for us to follow up on and interesting
+efficacy studies to follow.
+[SPEAKER_00]: And finally, using our model, we were able
+to design CBC and CBN-based scaffolds that
+[SPEAKER_00]: are already showing improvements over
+those phytocannabinoids.
+[SPEAKER_00]: Thanks.
+[SPEAKER_00]: Sorry I went over.
+[SPEAKER_00]: Thank you.
+Thank you.

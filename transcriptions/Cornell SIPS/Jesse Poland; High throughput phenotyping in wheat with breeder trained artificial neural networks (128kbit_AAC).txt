@@ -1,0 +1,1531 @@
+[SPEAKER_07]: This is a production of Cornell
+University.
+[SPEAKER_08]: So thank you.
+[SPEAKER_08]: It's a really nice honor to be back here,
+especially a nice honor to be invited by
+[SPEAKER_08]: the graduate students.
+[SPEAKER_08]: That's a great honor.
+[SPEAKER_08]: So it was almost just shy of eight years
+ago.
+[SPEAKER_08]: I had my defense right in this room.
+[SPEAKER_08]: So for all your grad students,
+just a few years from now, you could have
+[SPEAKER_08]: a bunch of children running around the
+home and a bunch of grad students running
+[SPEAKER_08]: around the lab.
+[SPEAKER_08]: And you could be back here.
+[SPEAKER_08]: And so also, I need to dedicate this to
+Rebecca and Ed for the inspiration to work
+[SPEAKER_08]: on high throughput phenotyping.
+[SPEAKER_08]: We had this great idea to work on the Maze
+NAM populations for disease resistance.
+[SPEAKER_08]: So I literally calculated it up.
+[SPEAKER_08]: I literally spent like one and a half
+months of my life looking at Maze lesions
+[SPEAKER_08]: and recording the percentage disease leaf
+area for thousands of plots over and over
+[SPEAKER_08]: and over again.
+[SPEAKER_08]: So it gives you a lot of inspiration to do
+something more efficiently than walking
+[SPEAKER_08]: around the field.
+[SPEAKER_08]: So thanks.
+[SPEAKER_08]: OK.
+[SPEAKER_08]: So I always put everything in the context
+of where we need to be in the next couple
+[SPEAKER_08]: of decades.
+[SPEAKER_08]: So we projected 60% increase in demand for
+wheat.
+[SPEAKER_08]: If we leave everything with climate
+change, hotter climates, you'll push that
+[SPEAKER_08]: down 20%.
+[SPEAKER_08]: So we need about a 2% gain per year.
+[SPEAKER_08]: And currently, wheat is at most major
+crops at about a 1% gain per year.
+[SPEAKER_08]: So in the context of the breeding cycle,
+is there any way to make the little thing
+[SPEAKER_08]: go?
+[SPEAKER_08]: Who knows?
+[SPEAKER_08]: This thing is stuck at the top?
+[SPEAKER_08]: OK, whatever.
+[SPEAKER_08]: So in the context of the breeding cycle,
+we're trying to make this cycle go faster
+[SPEAKER_08]: and more efficient.
+[SPEAKER_08]: So we're making crosses.
+[SPEAKER_08]: Early stages, you're evaluating for
+diseases.
+[SPEAKER_08]: Later stages, you evaluate for yield.
+[SPEAKER_08]: And then really late on, you look at
+quality.
+[SPEAKER_08]: You pick the best performing stuff.
+[SPEAKER_08]: And then you advance to the next cycle.
+[SPEAKER_08]: So we really work in this mindset,
+this mantra of, if we can make the
+[SPEAKER_08]: breeding cycle go bigger and faster,
+then we can lead to more rapid improved
+[SPEAKER_08]: varieties.
+[SPEAKER_08]: So that's why we work a lot on genomic
+selection.
+[SPEAKER_08]: We work a lot on high throughput
+phenotyping.
+[SPEAKER_08]: And so in this context, the genetic gain
+over time is a function of the selection
+[SPEAKER_08]: intensity so that we need bigger
+populations.
+[SPEAKER_08]: It's a diminishing returns, but that's a
+lot of focus on the high throughput
+[SPEAKER_08]: phenotyping.
+[SPEAKER_08]: And the genomic selection can help with
+bigger populations.
+[SPEAKER_08]: The selection accuracy, this is some high
+throughput phenotyping.
+[SPEAKER_08]: We can make more accurate measurements
+than you can do by hand.
+[SPEAKER_08]: The genetic variance, we work a lot on
+genetic diversity.
+[SPEAKER_08]: We won't really touch on that.
+[SPEAKER_08]: And then the years per cycle, that's also
+one of the components of working on
+[SPEAKER_08]: genomics.
+[SPEAKER_08]: So this is kind of like putting all the
+things together.
+[SPEAKER_08]: I'm just going to really focus on some of
+the things, the fun new things that we've
+[SPEAKER_08]: been doing with genomic selection
+recently.
+[SPEAKER_08]: And so we really have to define what is
+high throughput phenotyping.
+[SPEAKER_08]: So here's how we define high throughput.
+[SPEAKER_08]: It's got to be mostly or fully automated
+data collection.
+[SPEAKER_08]: So currently, we're almost there.
+[SPEAKER_08]: You spend like 15 minutes collecting data,
+and then like 15 months analyzing it.
+[SPEAKER_08]: So it's not really high throughput yet in
+that sense, but we're almost there.
+[SPEAKER_08]: We really define it as we have to be able
+to do tens of thousands of plots.
+[SPEAKER_08]: So we look at the actual breeding
+programs.
+[SPEAKER_08]: They're operating in the thousands and
+tens of thousands.
+[SPEAKER_08]: So if it's not scalable to that,
+then it's not really scalable.
+[SPEAKER_08]: We've got to do this in the field.
+[SPEAKER_08]: Like I said, we've got to have automated
+data processing and data collection.
+[SPEAKER_08]: And then I always note that high
+resolution isn't really high throughput.
+[SPEAKER_08]: So if there's one thing I learned at
+Cornell, it's like the power of big
+[SPEAKER_08]: populations.
+[SPEAKER_08]: So you don't have to measure things real
+accurately.
+[SPEAKER_08]: You just got to measure them on a huge
+population.
+[SPEAKER_08]: So really, how do we define what is HTP,
+it says up there.
+[SPEAKER_08]: So one thing is the breeders, the
+benchmark.
+[SPEAKER_08]: So this is Dr. Ravi Singh.
+[SPEAKER_08]: He runs the CIMIC wheat program.
+[SPEAKER_08]: He can go through, in an afternoon,
+4,000 small plots, make really accurate
+[SPEAKER_08]: selections for height, for disease,
+for maturity.
+[SPEAKER_08]: And so that's your benchmark right there.
+[SPEAKER_08]: So this is, he says, HTP is high
+throughput painting.
+[SPEAKER_08]: So you go through and paint the ones that
+are good, and that's what gets selected.
+[SPEAKER_08]: So that's your benchmark right there.
+[SPEAKER_08]: The other one is that breeders are
+notoriously good.
+[SPEAKER_08]: So that's the combination here at
+phenotyping, meaning just like Ravi does,
+[SPEAKER_08]: he makes really nice, accurate selections
+for height, but nobody records the data.
+[SPEAKER_08]: So the point is that if we're going to
+build prediction models, you actually have
+[SPEAKER_08]: to have data numbers to go into the
+models.
+[SPEAKER_08]: And not just breeders selecting it was
+kept or not.
+[SPEAKER_08]: And then the last one is, like I said,
+the power of big populations.
+[SPEAKER_08]: So we need to be able to apply these
+systems on populations that are literally
+[SPEAKER_08]: in the tens of thousands.
+[SPEAKER_08]: So in the CIMIC program, for example,
+there's 50,000 new inbred lines generated
+[SPEAKER_08]: every year that go into a field plot of
+some sort.
+[SPEAKER_08]: So in connecting the genotype to the
+phenotype, we do a lot of this.
+[SPEAKER_08]: We observe a phenotype.
+[SPEAKER_08]: Quantitative genetics, we try and find
+some correlation.
+[SPEAKER_08]: Back to the genotype.
+[SPEAKER_08]: And then we try and work out the biology
+of how those genes actually turn into the
+[SPEAKER_08]: phenotype we observe.
+[SPEAKER_08]: And then in breeding, what we really want
+to do is use the genotype to predict the
+[SPEAKER_08]: phenotypes into the next cycle of
+selection.
+[SPEAKER_08]: So in the scope of high throughput
+phenotyping, what we're really talking
+[SPEAKER_08]: about is some phenotype that predicts some
+other phenotype that's more difficult to
+[SPEAKER_08]: measure.
+[SPEAKER_08]: So one example that I'd like to show is
+that canopy temperature is real easy to
+[SPEAKER_08]: measure under heat or drought stress
+conditions.
+[SPEAKER_08]: That has a really strong negative
+correlation with the yield.
+[SPEAKER_08]: So this is just one example of what we're
+thinking about in the high throughput
+[SPEAKER_08]: phenotyping.
+[SPEAKER_08]: So a lot of what we do in the high
+throughput phenotyping is direct sensor
+[SPEAKER_08]: measurements of something like a
+vegetation index.
+[SPEAKER_08]: And so what you have here is looking at
+the ratio of the green to red to
+[SPEAKER_08]: near-infrared reflectance from that leaf
+gives you a really nice assessment of the
+[SPEAKER_08]: overall health status of that plant,
+nitrogen status any disease type of
+[SPEAKER_08]: problems.
+[SPEAKER_08]: And so we've been working on this for
+several years.
+[SPEAKER_08]: This is becoming really routine,
+especially with the UAVs to measure.
+[SPEAKER_08]: Literally like this last year,
+we were able to cover the 50,000 unique
+[SPEAKER_08]: individual plots at multiple time points
+on the breeding program.
+[SPEAKER_08]: So this is becoming really routine.
+[SPEAKER_08]: We've done this with the ground vehicles.
+[SPEAKER_08]: So I'll just highlight this here.
+[SPEAKER_08]: We started out with this ground vehicle.
+[SPEAKER_08]: It's got precision GPS on each side here,
+a number of sensors.
+[SPEAKER_08]: We've been working on these type of
+platforms for several years.
+[SPEAKER_08]: You can drive through the field like this.
+[SPEAKER_08]: Those sensors are continually collecting
+data.
+[SPEAKER_08]: We can use the GPS to assign those back to
+individual plots.
+[SPEAKER_08]: And so what that looks like then is you
+can traverse back and forth in the field,
+[SPEAKER_08]: each one of those being a single data
+point.
+[SPEAKER_08]: You can take those data points.
+[SPEAKER_08]: We have different ways to survey out the
+plot coordinate boundaries.
+[SPEAKER_08]: And then based on that, the intersection
+of the plots and the data points,
+[SPEAKER_08]: you can assign those to individual plots
+in the field.
+[SPEAKER_08]: So this has become over the last couple of
+years, like sort of routine.
+[SPEAKER_08]: It's becoming very routine.
+[SPEAKER_08]: We're also doing it with the UAVs.
+[SPEAKER_08]: And so here's an example flying some of
+these in India.
+[SPEAKER_08]: And the nice thing about the UAVs is we've
+been able to deploy them all over the
+[SPEAKER_08]: world so we can pack them up in a
+suitcase.
+[SPEAKER_08]: We put these on the field trials in Mexico
+and India all across.
+[SPEAKER_08]: We can haul them all across Kansas.
+[SPEAKER_08]: And so here's a false color image of what
+that looks like with the near infrared
+[SPEAKER_08]: band.
+[SPEAKER_08]: And so from this, you can very easily crop
+out individual plots, get an assessment of
+[SPEAKER_08]: NDVI.
+[SPEAKER_08]: And then what we've been doing is
+incorporating those into prediction
+[SPEAKER_08]: models.
+[SPEAKER_08]: And so here's just an example.
+[SPEAKER_08]: The grad students, you can get these
+papers and then go read them.
+[SPEAKER_08]: And then there'll be a quiz after the
+class.
+[SPEAKER_08]: And so with that, we can take these,
+we can incorporate them into combined
+[SPEAKER_08]: models that have genomic selection
+combined with the high throughput
+[SPEAKER_08]: phenotyping data as two levels of
+information onto those small yield plots
+[SPEAKER_08]: and then predicting yield as if it was a
+replicated field trial.
+[SPEAKER_08]: And so that's really the scope of where
+we're using these as secondary correlated
+[SPEAKER_08]: traits to yield.
+[SPEAKER_08]: We're becoming very high throughput and
+efficient in measuring them across huge
+[SPEAKER_08]: numbers.
+[SPEAKER_08]: And so now it's just a matter of
+optimizing the prediction models.
+[SPEAKER_08]: So that's really where we're at.
+[SPEAKER_08]: Real brief overview of where we're at with
+high throughput phenotyping for simple
+[SPEAKER_08]: things like vegetation index.
+[SPEAKER_08]: And so I didn't want to just highlight
+that and use that kind of as the
+[SPEAKER_08]: background context of where we're at for
+that.
+[SPEAKER_08]: So that's the example.
+[SPEAKER_08]: This is the real sample of directly
+measuring something like plant greenness
+[SPEAKER_08]: and then using that to improve.
+[SPEAKER_08]: And we can drastically improve the
+prediction models with that level of
+[SPEAKER_08]: information.
+[SPEAKER_08]: This is an idea of phenotyping from
+images, just phenotyping flower color.
+[SPEAKER_08]: So that's basically what we've been doing.
+[SPEAKER_08]: So this is just really simple here.
+[SPEAKER_08]: If you take this picture and you apply a
+red filter, you can see that there's a lot
+[SPEAKER_08]: of red pixels here and no red pixels here.
+[SPEAKER_08]: So we can very easily directly quantify
+from the sensor measurements, directly
+[SPEAKER_08]: from the sensor measurements, we can
+quantify what's the redness of that
+[SPEAKER_08]: flower.
+[SPEAKER_08]: So that gets us to traits like how green
+is the plant.
+[SPEAKER_08]: But we really want to get to more complex
+traits, not in genetic architecture,
+[SPEAKER_08]: but just in the actual physical
+architecture of those traits.
+[SPEAKER_08]: So if you wanted to phenotype actually for
+flower type, what this would look like is
+[SPEAKER_08]: you actually have some really complicated
+function on here that you can look at this
+[SPEAKER_08]: and say, this is a lily, this is a
+petunia.
+[SPEAKER_08]: But with that, you're taking a lot of
+background knowledge of what the shape of
+[SPEAKER_08]: the flower looks like, what different
+colors those flowers come in.
+[SPEAKER_08]: The one time your significant other gave
+you some flowers and they were petunias or
+[SPEAKER_08]: lilies or your favorite whatever.
+[SPEAKER_08]: It's just some really complicated function
+to say what type of flower this is.
+[SPEAKER_08]: It takes into account the shape and
+everything.
+[SPEAKER_08]: So this is where we get into this deep
+learning of wanting to be able to apply
+[SPEAKER_08]: this directly on images to score complex
+traits and heat.
+[SPEAKER_08]: So this is the real simple background.
+[SPEAKER_08]: And here again, we've got fabulous
+computer science collaborators.
+[SPEAKER_08]: So I'll give you my cursory overview.
+[SPEAKER_08]: And I'm not really sure anybody really
+understands how these work.
+[SPEAKER_08]: Anyway, so we'll just tell you what we
+know about.
+[SPEAKER_08]: So these are convolutional neural
+networks.
+[SPEAKER_08]: You start with some two-dimensional
+representation.
+[SPEAKER_08]: So this has to be like an image that
+actually has some spatial representation
+[SPEAKER_08]: of something.
+[SPEAKER_08]: And then they're put through these
+convolutions until you actually get linear
+[SPEAKER_08]: mapping of the pixels into some function.
+[SPEAKER_08]: So if the relationship we want is
+sufficiently complicated, meaning it's
+[SPEAKER_08]: like some plant morphology, there's not
+really a linear function that maps the
+[SPEAKER_08]: input data.
+[SPEAKER_08]: This image into an output data that we
+want to put them in two classes.
+[SPEAKER_08]: So we can use these deep learning.
+[SPEAKER_08]: It goes through these complicated
+functions, simpler functions that the
+[SPEAKER_08]: network learns all at once.
+[SPEAKER_08]: These are the convolutional layers.
+[SPEAKER_08]: It takes a 2b convolutions over the map of
+input values.
+[SPEAKER_08]: But the important part is it has some
+spatial structure.
+[SPEAKER_08]: So just like we look at if the image has
+some spatial structure.
+[SPEAKER_08]: So what do we need?
+[SPEAKER_08]: So the real catch for doing any of these
+deep learning projects is you have to have
+[SPEAKER_08]: this huge data set before you can even
+start.
+[SPEAKER_08]: So this is like the catch-22.
+[SPEAKER_08]: You don't know if it's going to work until
+after you've done the entire experiment.
+[SPEAKER_08]: So we've got data sets now that are
+actually hundreds of thousands of images.
+[SPEAKER_08]: I'll show in this next slide or coming up
+on that same phenotype where we actually
+[SPEAKER_08]: mounted multiple cameras.
+[SPEAKER_08]: And you can drive through the field and
+take images of the field.
+[SPEAKER_08]: So we did this over two years,
+2016, 2017.
+[SPEAKER_08]: We have the same GPS.
+[SPEAKER_08]: So we can assign those images to
+individual field plots.
+[SPEAKER_08]: So we know every field plot that each
+image was taken from.
+[SPEAKER_08]: And then we can go out and score for
+traits of interest and then assign those
+[SPEAKER_08]: scores to the images that were taken on
+that day from that plot.
+[SPEAKER_08]: So this is why we call them
+breeder-trained data sets.
+[SPEAKER_08]: And then we can use some weighted
+classification.
+[SPEAKER_08]: We can classify them as percentages or we
+can classify the images into some
+[SPEAKER_08]: category.
+[SPEAKER_07]: So this is how these scores work.
+[SPEAKER_08]: And then we penalize them by how far away
+the labels are, like the labels that we
+[SPEAKER_08]: gave them, that the network gave them to
+the ground truth, meaning the labels that
+[SPEAKER_08]: we visually scored the field plots.
+[SPEAKER_08]: So that's the idea.
+[SPEAKER_08]: So if you didn't catch that, the real
+catch here is that before you know if this
+[SPEAKER_08]: experiment's going to work, you've
+actually invested multiple years of
+[SPEAKER_08]: graduate students and postdocs.
+[SPEAKER_08]: And just to get the data set, to see if
+you can train these neural networks.
+[SPEAKER_08]: So here's some of our field trials that
+we've been doing this.
+[SPEAKER_08]: These are just one of our research farms
+close to Kansas State.
+[SPEAKER_08]: We did this in two years.
+[SPEAKER_08]: Most of our imaging, these are winter
+weeds.
+[SPEAKER_08]: So we plant them in October.
+[SPEAKER_08]: We harvest them in June.
+[SPEAKER_08]: We image them through heading development
+and through grain filling.
+[SPEAKER_08]: So that's in April and May.
+[SPEAKER_08]: We have about two months there where we do
+phenotyping.
+[SPEAKER_08]: And then the germ plasm, we did this on.
+[SPEAKER_08]: We had an association panel.
+[SPEAKER_08]: This is 300-some lines.
+[SPEAKER_08]: This is just winter wheat varieties.
+[SPEAKER_08]: These are well adapted.
+[SPEAKER_08]: These are all elite type materials.
+[SPEAKER_08]: We don't have any wild-looking material in
+any of these things.
+[SPEAKER_08]: And so these are winter wheat varieties.
+[SPEAKER_08]: Important to note, about 5% of these were
+onless types.
+[SPEAKER_08]: If you're not familiar with wheat
+morphology, you can have on, which are the
+[SPEAKER_08]: little spikes that come out of the wheat.
+[SPEAKER_08]: Or you can have onless, which is like a
+naked, type wheat head.
+[SPEAKER_08]: And then we had a recombinant in-red line
+population, Lincoln bipolar.
+[SPEAKER_08]: These are two varieties.
+[SPEAKER_08]: So this is a pretty elite, well-adapted
+set of germ plasm.
+[SPEAKER_08]: So here's what our phenotyper looks like
+from an aerial picture.
+[SPEAKER_08]: We've got like a little canopy over there
+to make a little bit of shading.
+[SPEAKER_08]: It makes the imaging a little more
+uniform.
+[SPEAKER_08]: Same thing.
+[SPEAKER_08]: You can see the GPS units on top of that
+thing.
+[SPEAKER_08]: So each image has a geoposition within a
+plot.
+[SPEAKER_08]: And then we have some camera setup where
+we have different cameras just passing
+[SPEAKER_08]: about less than half a meter over the
+field plot and then taking a really
+[SPEAKER_08]: proximal image of those field plots.
+[SPEAKER_08]: And so this is kind of what that data
+collection looks like.
+[SPEAKER_08]: And not to underestimate the amount of
+time and complexity that went into just
+[SPEAKER_08]: getting the data sets.
+[SPEAKER_08]: So here's the first complex trait in
+wheat.
+[SPEAKER_08]: It's not actually complex because it's
+like a single gene-controlled trait.
+[SPEAKER_08]: But it's complex in the sense of the
+morphology.
+[SPEAKER_08]: So here's a picture of some onless types.
+[SPEAKER_08]: You see that there's no beards on here.
+[SPEAKER_08]: And you see these long beards coming out
+of the wheat head here.
+[SPEAKER_08]: So we have a few thousand pictures that
+are onless and a few thousand more that
+[SPEAKER_08]: are on here.
+[SPEAKER_08]: And so this is what the training data set
+looks like.
+[SPEAKER_08]: We have thousands and thousands of
+pictures that look like these two sets.
+[SPEAKER_08]: So we make this thing.
+[SPEAKER_08]: We call it WheatNet, I guess, now.
+[SPEAKER_08]: So this is for scoring on.
+[SPEAKER_08]: So we started out with this as a really
+simple trait in the sense of it's just got
+[SPEAKER_08]: two classes.
+[SPEAKER_08]: And we can say yes or no.
+[SPEAKER_08]: It's on or onless.
+[SPEAKER_08]: So we have about 700 plots.
+[SPEAKER_08]: This was two replications of those 300
+entries.
+[SPEAKER_08]: 29 of those are onless.
+[SPEAKER_08]: So we must have had one plot die out.
+[SPEAKER_08]: It should have been 30.
+[SPEAKER_08]: So then we separate these into a training
+data set.
+[SPEAKER_08]: A training and a validation and a testing
+set.
+[SPEAKER_08]: And remember, we did this across two
+years.
+[SPEAKER_08]: So we trained it on one year.
+[SPEAKER_08]: And then we validated it on a totally
+separate field experiment from the other
+[SPEAKER_08]: year.
+[SPEAKER_08]: So we trained it.
+[SPEAKER_08]: So what we do is we pick out several
+thousand images that are on, several
+[SPEAKER_08]: thousand equal number of images that are
+onless.
+[SPEAKER_08]: And then you train these accordingly.
+[SPEAKER_08]: So then you validate them.
+[SPEAKER_08]: So the important part is you train it.
+[SPEAKER_08]: You tune the model to optimize on the
+validation set.
+[SPEAKER_08]: And then to be fair, you have to do the
+testing on a totally independent data set
+[SPEAKER_08]: that didn't go into any way into your
+model building.
+[SPEAKER_08]: So this is what these guys, our computer
+science guys, call these a confusion
+[SPEAKER_08]: matrix.
+[SPEAKER_08]: I don't really know why.
+[SPEAKER_08]: But anyway, this is basically the
+proportion.
+[SPEAKER_08]: It's like a heat map.
+[SPEAKER_08]: Here in the white is one to one.
+[SPEAKER_08]: So here's the observed.
+[SPEAKER_08]: And here's the predicted.
+[SPEAKER_08]: So we hit extremely high accuracy.
+[SPEAKER_08]: 99 plus percent accuracy on the training
+set, the validation set, and the testing
+[SPEAKER_08]: set.
+[SPEAKER_08]: So what that looked like then in the image
+numbers then is because these images can
+[SPEAKER_08]: only be fed into the network in small 250
+by 250 sized images, you can't take like
+[SPEAKER_08]: an 18 megapixel image just
+computationally.
+[SPEAKER_08]: So it's 250 by 250.
+[SPEAKER_08]: So we actually have 10 image crops.
+[SPEAKER_08]: That come out of each image.
+[SPEAKER_08]: And so that's the accuracy on those image,
+like the cropped out images.
+[SPEAKER_08]: And then when we take a consensus from all
+of the crops that come up from a single
+[SPEAKER_08]: image, then we actually hit up to 100%
+accuracy.
+[SPEAKER_08]: And then remember also that we have
+multiple images from each plot.
+[SPEAKER_08]: And so on a plot level basis, we can hit
+100% accuracy for scoring on versus
+[SPEAKER_08]: onless.
+[SPEAKER_08]: So that's pretty awesome.
+[SPEAKER_08]: But you could walk through the field in 30
+minutes.
+[SPEAKER_08]: And score this also.
+[SPEAKER_08]: So we spent three years building a
+phenotyper, and a full time postdoc,
+[SPEAKER_08]: and a computer graduate student,
+and several million CPU hours.
+[SPEAKER_08]: But we can score on versus onless.
+[SPEAKER_08]: So now let's go to something a little more
+interesting, a little more complex.
+[SPEAKER_08]: This is growth stages in wheat.
+[SPEAKER_08]: You have to trust me.
+[SPEAKER_08]: That's what it says up there.
+[SPEAKER_08]: And so if you look at wheat development
+here, you go through these stages where
+[SPEAKER_08]: we're in a tillering stage here.
+[SPEAKER_08]: Then you're in stem elongation here.
+[SPEAKER_08]: The nodes are coming out here.
+[SPEAKER_08]: And then this is the important stage right
+here, where the head is coming out of the
+[SPEAKER_08]: boot.
+[SPEAKER_08]: So in a wheat grass, the head emerges out
+of the boot in that flag leaf.
+[SPEAKER_08]: And this is a real critical stage,
+obviously.
+[SPEAKER_08]: That's when flowering is happening.
+[SPEAKER_08]: That determines the overall morphology,
+the timing of that flowering.
+[SPEAKER_08]: And then this is the critical grain
+filling period.
+[SPEAKER_08]: So these are traditionally scored as when
+50% of the tillers have headed out of the
+[SPEAKER_08]: boot.
+[SPEAKER_08]: So visually, this is really easy to score.
+[SPEAKER_08]: You just look at the plot.
+[SPEAKER_08]: You take a mental assessment of how many
+tillers are out there.
+[SPEAKER_08]: And then you take a mental assessment of
+how many of those are 50% out.
+[SPEAKER_08]: But actually, when you think about what
+actually just happened in a split second
+[SPEAKER_08]: in your own neural network, that's
+actually extremely complicated.
+[SPEAKER_08]: Because you had to take some visual
+assessment, not just of how many are out,
+[SPEAKER_08]: but of the total density.
+[SPEAKER_08]: So you have to take a mental assessment of
+those also.
+[SPEAKER_08]: So obviously, this is a really important
+physiological trait.
+[SPEAKER_08]: So for example, in Kansas, you can't be
+too early, or you'll get winter kill.
+[SPEAKER_08]: And you don't want to be too late,
+because then you'll be into the heat
+[SPEAKER_08]: stress of the hot summers.
+[SPEAKER_08]: So this is really critical breeder
+selection.
+[SPEAKER_08]: And so why was this something we want to
+go after for HTTP?
+[SPEAKER_08]: One is like a time series measurement.
+[SPEAKER_08]: So it's recorded as a date.
+[SPEAKER_08]: So you actually have to go out multiple
+time points during the season to
+[SPEAKER_08]: accurately measure this.
+[SPEAKER_08]: So it requires going through all the plots
+each day, or at least every other day,
+[SPEAKER_07]: something like that.
+[SPEAKER_08]: So here's what some of our image sets look
+like.
+[SPEAKER_08]: So we actually do this now in time series.
+[SPEAKER_08]: So if you take a plot early on,
+it'll be all leafy like this.
+[SPEAKER_08]: You don't see any heads out.
+[SPEAKER_08]: You see one here just starting to come out
+of the boot.
+[SPEAKER_08]: So this might be somewhere between 1% to
+5% headed.
+[SPEAKER_08]: And here's another one that's almost
+completely headed out.
+[SPEAKER_08]: Sorry, it's a little dark to see.
+[SPEAKER_08]: Maybe from the back.
+[SPEAKER_08]: But you can see that all the heads are out
+here now.
+[SPEAKER_08]: You might have one or two real late ones.
+[SPEAKER_08]: And this is about 90% headed out here.
+[SPEAKER_08]: So what we do now is we go through the
+field each day.
+[SPEAKER_08]: We take a visual score.
+[SPEAKER_08]: We run the phenotype at the same time.
+[SPEAKER_08]: And then we can take 10,000 images in a
+day.
+[SPEAKER_08]: And by going through the field once,
+we can assign a value to every one of
+[SPEAKER_08]: those 10,000 images.
+[SPEAKER_07]: And then we do that at multiple time
+points through the season.
+[SPEAKER_08]: So then you get an iPhotos library that
+looks something like this.
+[SPEAKER_08]: It's where you filled up your library with
+100,000 pictures.
+[SPEAKER_08]: And every one of them is like 10% headed
+or 90% headed or 60%, something like this.
+[SPEAKER_08]: And so we have a huge training data set
+now where you have all of these images.
+[SPEAKER_08]: And they're tagged with a greeter trained
+type of score.
+[SPEAKER_08]: So this is training WheatNet for heading
+here.
+[SPEAKER_08]: So our training sets.
+[SPEAKER_08]: So here's where we go back.
+[SPEAKER_08]: And we have two different populations.
+[SPEAKER_08]: So we have one population.
+[SPEAKER_08]: This is a diversity panel.
+[SPEAKER_08]: It's got a much bigger morphology.
+[SPEAKER_08]: And then we apply this to the bi-parental
+population.
+[SPEAKER_08]: It's much more narrow in its morphology.
+[SPEAKER_08]: So the training set here, we had this Lake
+and Fuller bi-parental population in 2016.
+[SPEAKER_08]: We had two years of the association panel.
+[SPEAKER_08]: And then we balanced this out with about
+2,000 images per maturity level.
+[SPEAKER_08]: So in 10% increments from 0 to 100.
+[SPEAKER_08]: And so that was a total of around 20,000
+training images and 200,000 patches from
+[SPEAKER_08]: those images.
+[SPEAKER_08]: So each one of those patches actually
+counts as like an individual training data
+[SPEAKER_08]: point.
+[SPEAKER_08]: And the validation set was the same thing,
+100 plots from this diversity panel.
+[SPEAKER_08]: And this is the part that I don't really
+know.
+[SPEAKER_08]: But if you're deep into neural networks,
+then here's all the gory details on this.
+[SPEAKER_08]: So because of memory limitations,
+you have to feed these in in small
+[SPEAKER_08]: batches.
+[SPEAKER_08]: So you can't actually put like 200,000
+images.
+[SPEAKER_08]: And at the same time, and then we have to
+tune the parameters for how fast is the
+[SPEAKER_08]: learning rate and then how many effects
+it's trained and then the total number of
+[SPEAKER_08]: training there.
+[SPEAKER_08]: So this was all optimized.
+[SPEAKER_08]: And it turns out interesting that the
+really crazy part to me is that these
+[SPEAKER_08]: networks are pre-trained on like just
+random images from the internet.
+[SPEAKER_08]: And then we just train the last few layers
+on the wheat data.
+[SPEAKER_08]: And then interestingly, like these
+networks that we train for like the on
+[SPEAKER_08]: versus on this versus the percentage
+heading, it was like only like the last
+[SPEAKER_08]: one or two layers that were trained
+differently.
+[SPEAKER_08]: So what this looked like then in the field
+is that if we go out over time series,
+[SPEAKER_08]: so say right here we have plot number one,
+plot number two, down to plot number n.
+[SPEAKER_08]: If we go through the field and we image
+those day by day, and we also take a
+[SPEAKER_08]: visual score, then we have a time series
+imaging where we can assign an image value
+[SPEAKER_08]: and a percentage scoring to that.
+[SPEAKER_08]: So we can train the neural network on
+these.
+[SPEAKER_08]: And then to do this in high throughput,
+we can just go measure new plots and just
+[SPEAKER_08]: have the images.
+[SPEAKER_08]: And then using the neural network,
+we can actually assign the percentages to
+[SPEAKER_08]: each day.
+[SPEAKER_08]: And then we just need to find the
+intersection of when it goes above 50%.
+[SPEAKER_08]: And that would be the classical measure.
+[SPEAKER_08]: So this is what it looks like then.
+[SPEAKER_08]: So we do time series imaging.
+[SPEAKER_08]: And then we fit this percent heading model
+here where we fit a logistic regression
+[SPEAKER_08]: onto those time series measurements.
+[SPEAKER_08]: And so this is what some real data looks
+like.
+[SPEAKER_08]: These are actually visual scores.
+[SPEAKER_08]: And then I'll show you the neural network
+scores in a minute here.
+[SPEAKER_08]: So this would be a field plot.
+[SPEAKER_08]: This is our plot identifier, plot number
+20014, where it was scored on day 110 as
+[SPEAKER_08]: zero.
+[SPEAKER_08]: The next time point it would have been
+scored at 20, 40, 50, 80, and then the
+[SPEAKER_08]: rest of the time points were scored at
+100.
+[SPEAKER_08]: So we fit this logistic regression on
+here.
+[SPEAKER_08]: This is just a classical logistic
+regression equation.
+[SPEAKER_08]: We fix phi 1 here at 100% so that all the
+wheat plots have to end up at 100% headed
+[SPEAKER_08]: out.
+[SPEAKER_08]: We actually put some dummy variables at 0
+and 100 with the past our measurement days
+[SPEAKER_08]: just to help fit the regression.
+[SPEAKER_08]: And then phi 2 and phi 3 here are actually
+the slope and then the intercept way down
+[SPEAKER_08]: here, the slope of that curve here.
+[SPEAKER_08]: So we fix phi 1 at 100.
+[SPEAKER_08]: Then we just simply find the date at which
+that logistic regression intersects the
+[SPEAKER_08]: 50% point.
+[SPEAKER_08]: So we find 50% here.
+[SPEAKER_08]: We find that date.
+[SPEAKER_08]: And then this one is around day 118.
+[SPEAKER_08]: We assign that as the heading date.
+[SPEAKER_08]: The cool thing here that I'll come back to
+is that because we have the slope of how
+[SPEAKER_08]: quickly it goes from 0 to 100,
+we can actually measure the rate of
+[SPEAKER_08]: heading date.
+[SPEAKER_08]: And so this would be a really interesting
+trait that you might think about.
+[SPEAKER_08]: In some cases, you want really rapid
+heading so that everything uniformly heads
+[SPEAKER_08]: at the same time.
+[SPEAKER_08]: If you're in a risky environment where you
+might get late freeze or early stress,
+[SPEAKER_08]: you might want to stretch out a heading
+date.
+[SPEAKER_08]: So this is a cool new breeding target that
+we've been thinking about now that you can
+[SPEAKER_08]: actually measure and then presumably breed
+for the rate of heading.
+[SPEAKER_08]: And so what we do then is we do that exact
+same thing with the neural network.
+[SPEAKER_08]: And so remember now, the visual scores are
+we go out here and we take visual
+[SPEAKER_08]: measurements.
+[SPEAKER_08]: The neural network here is we actually
+image the plots.
+[SPEAKER_08]: We train the neural network.
+[SPEAKER_08]: And we assign a value for the image on
+each one of those days.
+[SPEAKER_08]: So the purple dots here are scores.
+[SPEAKER_08]: They're scores from the neural network
+based on imaging.
+[SPEAKER_08]: And then we fit that same logistic
+regression.
+[SPEAKER_08]: We find from the neural network scores
+based on that logistic regression the
+[SPEAKER_08]: heading date.
+[SPEAKER_08]: And then we can basically fully automated
+measure the progression of heading and
+[SPEAKER_08]: then find the date in which it hits that
+classical measure of 50% heading.
+[SPEAKER_08]: So this is overall how we do it.
+[SPEAKER_08]: This is the example of that same plot.
+[SPEAKER_08]: Of course, I show you the best example
+where they match up perfectly.
+[SPEAKER_08]: So yeah, some of them are really good.
+[SPEAKER_08]: Here's another great example where we
+basically hit it right on the same day.
+[SPEAKER_08]: Some of them are not so good.
+[SPEAKER_08]: You have some overestimation in the neural
+network here from what the visual scores
+[SPEAKER_08]: were at.
+[SPEAKER_08]: And so that slope kind of gets panned out.
+[SPEAKER_08]: And then you miss it by about a day.
+[SPEAKER_08]: So basically now what we've done is we've
+high throughput measured through all of
+[SPEAKER_08]: those plots.
+[SPEAKER_08]: We have a time series measurement about 10
+or 11 time points where we've imaged
+[SPEAKER_08]: dozens of images for each plot.
+[SPEAKER_08]: And then we just apply individually this
+regression across all of those plots.
+[SPEAKER_08]: So that's what this looks like thing here.
+[SPEAKER_08]: So on this axis here is all of the time
+points that we took visual measurements.
+[SPEAKER_08]: You can see that those are nicely spaced
+out on Monday, Wednesday, and Friday
+[SPEAKER_08]: across the growing season.
+[SPEAKER_08]: And so here's where we took visual
+measurements.
+[SPEAKER_08]: And then this would be that 50% estimate
+from the visual measurement.
+[SPEAKER_08]: On this axis here is that for each
+individual plot, we fit that logistic
+[SPEAKER_08]: regression based on the neural network
+scores and then intersected that and got
+[SPEAKER_08]: the same heading date for that.
+[SPEAKER_08]: And you can see here, these are the time
+points.
+[SPEAKER_08]: We tried to do this every other day.
+[SPEAKER_08]: So this big gap here is like one of the
+caveats of when it starts raining in the
+[SPEAKER_08]: field, you can't drive.
+[SPEAKER_08]: You can't drive your tractor through it
+anymore.
+[SPEAKER_08]: So we had a pretty big gap in here where
+we weren't able to image the field.
+[SPEAKER_08]: And so overall, though, man, we had a big
+range in heading in this particular
+[SPEAKER_08]: population.
+[SPEAKER_08]: But we had a really strong correlation.
+[SPEAKER_08]: You can see that here.
+[SPEAKER_08]: There's a nice one-to-one trend.
+[SPEAKER_08]: The red line is the fit.
+[SPEAKER_08]: And then the black line is the one-to-one
+line on there.
+[SPEAKER_08]: And so we had a really strong correlation,
+a mean absolute error of less than one day
+[SPEAKER_08]: and a root mean square error of just a day
+and a quarter.
+[SPEAKER_08]: So overall, I think we're hitting within
+the tolerance of what you can actually
+[SPEAKER_08]: visually score also.
+[SPEAKER_08]: You can see kind of here, we have a little
+bias right in this region.
+[SPEAKER_08]: I think, I'm not real sure, but my working
+hypothesis is that that's because we had
+[SPEAKER_08]: good imaging here and then we had this
+kind of gap in our imaging time points.
+[SPEAKER_08]: And so I think those curves got pushed up
+a little high.
+[SPEAKER_08]: And so we estimated the heading dates in
+this range.
+[SPEAKER_08]: A little earlier than they should have
+been.
+[SPEAKER_08]: But overall, compared to the visual
+measurements with the neural network,
+[SPEAKER_08]: we can get 57% of the plots within one day
+of the visual estimate.
+[SPEAKER_08]: And we can get 88% of those within two
+days of what they were visually scored.
+[SPEAKER_08]: So here's the distribution of the overall
+heading dates.
+[SPEAKER_08]: This is the day of the year where we
+estimated the heading date, and this is
+[SPEAKER_08]: the frequency.
+[SPEAKER_08]: For that population, here's the Lincoln
+and Fuller, the parents of that
+[SPEAKER_08]: bi-parental population, and the difference
+between the visual and the neural network.
+[SPEAKER_08]: The visual here is in the dark,
+and then the field background here.
+[SPEAKER_08]: And so you can see for the parents,
+we were really accurate on those.
+[SPEAKER_08]: You can see that little shift in the
+distribution here between where we were in
+[SPEAKER_08]: this 115-day range.
+[SPEAKER_08]: We were about a day or two early on those.
+[SPEAKER_08]: But overall, we can match the
+distribution.
+[SPEAKER_08]: We can get a really accurate assessment.
+[SPEAKER_08]: So if you're an astute graduate student,
+though, you're saying, oh, there's
+[SPEAKER_08]: something really funky with this
+distribution, that that doesn't look like
+[SPEAKER_08]: a normal distribution.
+[SPEAKER_08]: OK, we'll come back to that.
+[SPEAKER_08]: So the other thing you can't see up here,
+but this says phi 3 up there.
+[SPEAKER_08]: And so this is actually the slope of those
+curves on there.
+[SPEAKER_08]: And so here's where I think we had a
+little bit of bias with the neural network
+[SPEAKER_08]: and the imaging set, is where in this
+distribution, here, we're measuring the
+[SPEAKER_08]: slope of heading, the rate of heading
+using the neural network, versus the rate
+[SPEAKER_08]: of heading for the visual scores.
+[SPEAKER_08]: And overall, the slope of the curve
+estimated for the neural networks were
+[SPEAKER_08]: steeper than for the visual scores.
+[SPEAKER_08]: And in my mind, I think this is due to
+just getting uniform timing of the imaging
+[SPEAKER_08]: data sets.
+[SPEAKER_08]: OK, overall, I should say, though,
+too, the heritability on the actual
+[SPEAKER_08]: measurement of the heading day of
+Brodson's heritability was around 0.92 for
+[SPEAKER_08]: the actual heading date.
+[SPEAKER_08]: And then surprisingly, we had good
+heritability for both the visual and the
+[SPEAKER_08]: neural network slope around 0.5,
+0.45.
+[SPEAKER_08]: So I was surprised that we actually had
+heritable measures of the rate of heading
+[SPEAKER_08]: based on this approach.
+[SPEAKER_08]: So overall, now, we can start to look at
+this in depth.
+[SPEAKER_08]: So here's just an example.
+[SPEAKER_08]: This is comparing the phi 3.
+[SPEAKER_08]: So remember, this is the slope.
+[SPEAKER_08]: This is the rate of heading compared to
+the heading date.
+[SPEAKER_08]: So you might say, oh, you know,
+the rate of heading is just determined by
+[SPEAKER_08]: when you're actually heading.
+[SPEAKER_08]: But what we can see here is that there's a
+slight negative correlation, but it's
+[SPEAKER_08]: actually really weak.
+[SPEAKER_08]: So interestingly, you can pick stuff here
+that's got a really rapid heading versus a
+[SPEAKER_08]: really slow heading, but they actually end
+up heading at the 50% point.
+[SPEAKER_08]: They end up heading on that.
+[SPEAKER_08]: They end up heading on the same day.
+[SPEAKER_08]: So this might be a really interesting
+objective if you ever wanted to pick
+[SPEAKER_08]: something that's early, but it actually
+has a long duration of heading.
+[SPEAKER_08]: So we did just some simple genetic
+mapping.
+[SPEAKER_08]: We have GBS on this population,
+about 14,000 markers.
+[SPEAKER_08]: So we tested this for days to heading and
+for that slope.
+[SPEAKER_08]: We just spent a simple linear regression
+here where we're estimating the effect of
+[SPEAKER_08]: each one of those markers.
+[SPEAKER_08]: So here's a classic Manhattan plot.
+[SPEAKER_08]: This is for, it says up here, days to
+heading.
+[SPEAKER_08]: So this is the association testing for
+days to heading.
+[SPEAKER_08]: Here, we got two really strong
+associations.
+[SPEAKER_08]: These are actually for known
+photoperiod-sensitive alleles that are
+[SPEAKER_08]: segregating in the breeding material,
+so PPD V1 and D1.
+[SPEAKER_08]: So those are real nice associations here.
+[SPEAKER_08]: There's another association strong that
+found on 1B.
+[SPEAKER_08]: We haven't quite figured out what that is,
+and then maybe another one here on 3B,
+[SPEAKER_08]: and then a few on the unanchored markers,
+but these are actually, turns out that
+[SPEAKER_08]: they're actually should be anchored on 2B.
+[SPEAKER_08]: So overall, you can't really see it
+because they line directly up on top of
+[SPEAKER_08]: each other, but we did this for the visual
+assessments and the neural network,
+[SPEAKER_08]: and you can see a square right here and a
+circle right here.
+[SPEAKER_08]: So it's cool.
+[SPEAKER_08]: We can actually now map, genetically map,
+a trait that was fully scored using the
+[SPEAKER_08]: automated imaging and the neural network.
+[SPEAKER_08]: So that's the Manhattan plot.
+[SPEAKER_08]: This is more of a Manhattan-Kansas plot
+because it's a little flatter.
+[SPEAKER_08]: This is for 5.3, and so same thing.
+[SPEAKER_08]: So even though we had a nice heritability
+trait, .4, we didn't find much for any
+[SPEAKER_08]: genetic association on those ones.
+[SPEAKER_08]: We maybe have something here on 2B,
+but we have to use genomic prediction
+[SPEAKER_08]: models because apparently there's not any
+major control.
+[SPEAKER_08]: Even though it's heritable, it doesn't
+look like there's any major genetic
+[SPEAKER_08]: control of the rate of heading.
+[SPEAKER_08]: So this goes back to the question all
+those graduate students were wondering
+[SPEAKER_08]: about.
+[SPEAKER_08]: You get a distribution like this,
+you've got to say, oh, there's some
+[SPEAKER_08]: epistasis or something going on.
+[SPEAKER_08]: If you can't explain it, it's epistasis.
+[SPEAKER_08]: So we took this.
+[SPEAKER_08]: We just fit a two-way interaction model
+for all the significant markers.
+[SPEAKER_08]: So it's marker one by marker two and then
+the interaction of those two markers.
+[SPEAKER_08]: Cool, though, if you take this
+distribution and you chop it off right
+[SPEAKER_08]: here at the inflection point, you run a
+chi-square of a three to one on that guy,
+[SPEAKER_08]: and it fits really nicely with a three to
+one ratio, which would be like a two-gene
+[SPEAKER_08]: dominance type.
+[SPEAKER_07]: That's a static model.
+[SPEAKER_08]: And so this was a nice working hypothesis.
+[SPEAKER_08]: We said, oh, yeah, I bet there's some nice
+epistatic interactions between those two.
+[SPEAKER_08]: And so that's what I'm showing here.
+[SPEAKER_08]: This is just our first attempt to
+visualize this.
+[SPEAKER_08]: I'm not real sure.
+[SPEAKER_08]: But here's that same association plot.
+[SPEAKER_08]: We have that strong peak on 2B and 2D for
+the two PPD-1 alleles.
+[SPEAKER_08]: Interestingly, here's the allele effect.
+[SPEAKER_08]: So one of them was coming from parent one.
+[SPEAKER_08]: Lincoln and the other one was coming from
+parent two.
+[SPEAKER_08]: So individually, as varieties,
+they hit the right maturity.
+[SPEAKER_08]: But their progeny get thrown all over the
+place.
+[SPEAKER_08]: And I talked with Alan.
+[SPEAKER_08]: He said, yeah, for sure.
+[SPEAKER_08]: We can only have one of these in the 3D
+material.
+[SPEAKER_08]: If you put them both, they're too early.
+[SPEAKER_08]: You have neither one, then they're way too
+late.
+[SPEAKER_08]: And sure enough, these are just the size
+of these circles or the significance of
+[SPEAKER_08]: interaction.
+[SPEAKER_08]: So there's some interaction here with this
+one allele.
+[SPEAKER_08]: But then there's really strong interaction
+between the 2B and the 2D allele there.
+[SPEAKER_08]: So we have some classic kind of epistatic
+interactions.
+[SPEAKER_08]: This is just the significance testing of
+all those pairwise combinations across the
+[SPEAKER_08]: genome.
+[SPEAKER_08]: So here's the classic interaction plot.
+[SPEAKER_08]: This is my favorite plot, directly out of
+Falconer.
+[SPEAKER_08]: So here we got the PPD-1 allele and the
+PPD-B1 allele.
+[SPEAKER_08]: And then depending on which allele state
+you have for each one of these,
+[SPEAKER_08]: if you have both of the non-sensitive
+alleles, you're really early, around 115,
+[SPEAKER_08]: 116 days.
+[SPEAKER_08]: If you add one of them, you add about two
+days.
+[SPEAKER_08]: If you add the other one, you add about
+four days.
+[SPEAKER_08]: And then if you stack them both up,
+you add in like 14 days of the heading.
+[SPEAKER_08]: So just beautiful classic example of these
+two alleles interacting.
+[SPEAKER_08]: And just like I said again, this is like
+our optimal maturity range.
+[SPEAKER_08]: This is day of the year, sorry.
+[SPEAKER_08]: But this is the optimal range for wheat in
+Kansas.
+[SPEAKER_08]: This is pretty early.
+[SPEAKER_08]: You're risking a lot of cold damage and
+frost damage.
+[SPEAKER_08]: And then this is just way too late.
+[SPEAKER_08]: You're going to have a lot of heat stress
+in that range.
+[SPEAKER_08]: So the optimal varieties are picking one
+or other of those alleles, even though
+[SPEAKER_08]: they're both floating around the breeding
+program.
+[SPEAKER_08]: So the final thing then is just to say,
+we drove this with our tractor.
+[SPEAKER_08]: To give you an honest assessment of it,
+it takes about, so we were running through
+[SPEAKER_08]: both populations, which was around like
+1,200, 1,300 field plots.
+[SPEAKER_08]: And that would take like a good four to
+five hours.
+[SPEAKER_08]: So is it high throughput?
+[SPEAKER_08]: Not really.
+[SPEAKER_08]: You can go through visually about the same
+amount of time.
+[SPEAKER_08]: But doing this with a UAV is really
+scalable, actually.
+[SPEAKER_08]: And so here, we don't have any good
+results from this.
+[SPEAKER_08]: But this is just to pretend like we can do
+it.
+[SPEAKER_08]: So this is like using a really high
+resolution camera from a UAV and actually
+[SPEAKER_08]: flying over these plots using video.
+[SPEAKER_08]: So you're actually taking really high
+frame rate.
+[SPEAKER_08]: And we can cover those plots at two plots
+per second.
+[SPEAKER_08]: We can actually cover those same 1,000
+plots in about a 24 to 25 minute flight.
+[SPEAKER_08]: So now we've actually gone high
+throughput.
+[SPEAKER_08]: And here, just to say that it's doable,
+or theoretically, right here again,
+[SPEAKER_08]: we don't know if it's doable until we
+actually do the experiment for two years
+[SPEAKER_08]: and get the big data set and stuff.
+[SPEAKER_08]: But here's an example of images from
+there.
+[SPEAKER_08]: If you zoom in on that middle of that plot
+right here, you can see these are headed
+[SPEAKER_08]: out.
+[SPEAKER_08]: And these are still leaking before they're
+headed out.
+[SPEAKER_08]: So we can actually get some millimeter
+pixel resolution of these same plots using
+[SPEAKER_08]: a UAV.
+[SPEAKER_08]: And actually covering them at 1,000 plots
+in 20 minutes.
+[SPEAKER_08]: So this is where we're really focused on
+now, taking the same approach using the
+[SPEAKER_08]: UAV extracted data to see if we can do
+this in a truly high throughput type of
+[SPEAKER_07]: approach.
+[SPEAKER_08]: So then the real question I'm sure you've
+all been wondering now is, do we still
+[SPEAKER_08]: need breeders?
+[SPEAKER_08]: OK, so now we've got genomic selection
+models that can predict which ones are the
+[SPEAKER_08]: best.
+[SPEAKER_08]: We've got neural networks that can
+actually do the phenotyping to get the
+[SPEAKER_08]: data that goes in to the model.
+[SPEAKER_08]: So once the breeders have trained all the
+neural networks, what do we do here now?
+[SPEAKER_08]: So we tested the same thing on a real
+neural network.
+[SPEAKER_08]: OK, this network was two years and 11
+months old at the time of testing.
+[SPEAKER_08]: We had one training epoch, which was about
+two minutes.
+[SPEAKER_08]: That's all the attention span we had.
+[SPEAKER_08]: And then we had a sample size of 16
+spikes.
+[SPEAKER_08]: Eight of them were on and eight were
+on-less.
+[SPEAKER_08]: And then for this project, we coded them
+as spiky and not spiky, meaning like they
+[SPEAKER_08]: were on or on-less.
+[SPEAKER_08]: This was to simplify.
+[SPEAKER_08]: For the neural network, we coded them as 0
+and 1, on and on-less.
+[SPEAKER_08]: So here we coded them as spiky and not
+spiky.
+[SPEAKER_08]: So here's my daughter, Talia Marie.
+[SPEAKER_08]: And let's see if she can demonstrate this
+neural network.
+[SPEAKER_08]: That's it.
+[SPEAKER_08]: So the neural network.
+[SPEAKER_08]: So in about two minutes, you can train a
+real neural network to do what took us
+[SPEAKER_08]: several years and 100,000 images to do.
+[SPEAKER_08]: So there's our conclusion.
+[SPEAKER_08]: So the high throughput phenotyping were
+really getting into production mode,
+[SPEAKER_08]: I think, over this last year or two years.
+[SPEAKER_08]: And then we're integrating that into the
+model.
+[SPEAKER_08]: We're integrating that into the prediction
+modeling, where we're building models that
+[SPEAKER_08]: have a vegetation index assessment along
+with the genomic data.
+[SPEAKER_08]: And those are actually giving a drastic
+input.
+[SPEAKER_08]: I just briefly touched on that in the
+beginning.
+[SPEAKER_08]: The exciting part is we can measure some
+complex traits using deep learning.
+[SPEAKER_08]: And so in my mind, this is really
+exciting, New Frontiers, because
+[SPEAKER_08]: theoretically, we can extend that model
+training for any trait that we score.
+[SPEAKER_08]: All that goes into it is a whole bunch of
+pictures, images that we collected high
+[SPEAKER_08]: throughput in the field.
+[SPEAKER_08]: And then whatever the breeder,
+whatever you go out and visually score,
+[SPEAKER_08]: theoretically, we can build a neural
+network to score that same trait.
+[SPEAKER_08]: So then it opens up limitless
+opportunities.
+[SPEAKER_08]: So we know the breeders are still
+relevant, Mark, at least for now.
+[SPEAKER_06]: Thank you.
+[SPEAKER_08]: Because somebody's got to assimilate all
+this information and then figure out what
+[SPEAKER_08]: to do with it, or at least to ask some
+graduate students to do something with it.
+[SPEAKER_08]: And then remember, everything you need to
+know, you learned at Cornell while you
+[SPEAKER_08]: were here.
+[SPEAKER_08]: So thanks.
+[SPEAKER_08]: Huge thanks to everybody in my group.
+[SPEAKER_08]: Byron Evers is our main technician that
+manages all the field trials.
+[SPEAKER_08]: Mark Lucas, I've mentioned this a few
+times, a graduate student.
+[SPEAKER_08]: Mark's really critical in our group.
+[SPEAKER_08]: He's a data scientist, basically.
+[SPEAKER_08]: Spends all of his time moving big data
+around.
+[SPEAKER_08]: Daljit's one of the graduate students.
+[SPEAKER_08]: And then Kevin Yu Wang is a postdoc who is
+really instrumental on building the actual
+[SPEAKER_08]: phenotyper.
+[SPEAKER_08]: It took us several years to collect these
+data sets.
+[SPEAKER_08]: And then Rich Brown is our new UAV pilot.
+[SPEAKER_08]: And Atina is another postdoc on the group.
+[SPEAKER_08]: Who's really helped us work through the
+high throughput phenotyping data.
+[SPEAKER_08]: Our computer science collaborators,
+which obviously did a substantial work on
+[SPEAKER_08]: this project, is Robert Pless' group at
+George Washington.
+[SPEAKER_08]: And then Hong Wang is a graduate student
+on the project.
+[SPEAKER_08]: And this was primarily supported through
+National Science Foundation Plant Genome
+[SPEAKER_08]: Research Program.
+[SPEAKER_07]: So that's all I've got.
+[SPEAKER_07]: I'd be glad to take any questions.
+[SPEAKER_05]: Mark?
+[SPEAKER_00]: I'm greatly relieved that readers are
+still relevant.
+[SPEAKER_00]: But how small of a plot can you image?
+[SPEAKER_00]: Can you do a single one meter row?
+[SPEAKER_08]: We haven't tried single rows, right?
+[SPEAKER_08]: So the next frontier.
+[SPEAKER_08]: So these are full size plots.
+[SPEAKER_08]: And the trick is, especially with the UAV,
+the trick is, because we're working on
+[SPEAKER_08]: this now, the trick is we crop out the
+outside.
+[SPEAKER_08]: So we don't want confounding effects of
+the neighboring plot.
+[SPEAKER_08]: And so to go down to single rows,
+or even better, single plants,
+[SPEAKER_08]: where you have confounding effects of
+stuff that's definitely wrong,
+[SPEAKER_08]: something else overlapping, we haven't
+even tried to touch that yet.
+[SPEAKER_08]: So that's the real frontier.
+[SPEAKER_08]: But yeah, so we need to do it on head
+rows.
+[SPEAKER_08]: And then we'd really be high throughput.
+[SPEAKER_01]: What's your next trick?
+[SPEAKER_08]: Oh, yeah, good question.
+[SPEAKER_08]: So we've actually, on the same data set,
+we've got barley yellow dwarf scores,
+[SPEAKER_08]: which is sort of a combination of
+yellowing plus some anthocyanin purpling.
+[SPEAKER_08]: So we're going to try that.
+[SPEAKER_08]: Really, my next trait is to do this exact
+same thing, just using the UAV data.
+[SPEAKER_08]: But the trouble is, there's a huge amount
+of pre-processing, and just to get to the
+[SPEAKER_08]: point where we have images that can go
+into the neural network.
+[SPEAKER_01]: And also, this is single color.
+[SPEAKER_01]: Did you play around with different filters
+on the?
+[SPEAKER_08]: Yeah, so all of our imaging has just been
+with off-the-shelf RGB cameras.
+[SPEAKER_08]: I didn't mention, but the UAV for the
+vegetation index, we fly multi-spectral
+[SPEAKER_08]: cameras.
+[SPEAKER_08]: The trouble is, the resolution on those
+cameras is much, much lower.
+[SPEAKER_08]: So there's really a balance between,
+I think what goes into the neural
+[SPEAKER_08]: networks, the RGB images work really good.
+[SPEAKER_08]: And more importantly, they're much higher
+resolution than what we get from
+[SPEAKER_07]: multi-spectral cameras.
+[SPEAKER_08]: Yeah, just give it a date, and then give
+it the images and tell you.
+[SPEAKER_08]: Yeah, so we're just like, that's kind of
+like, here again, I don't really
+[SPEAKER_08]: understand it.
+[SPEAKER_08]: But that's kind of like the frontier of
+deep learning, as far as what these guys
+[SPEAKER_08]: tell me.
+[SPEAKER_08]: Because there, you're actually putting two
+levels of predictors in.
+[SPEAKER_08]: So you have a structured data set where
+it's images, but you have to tell the
+[SPEAKER_08]: network what order and what time the
+images are from, and then give it a
+[SPEAKER_08]: classifier.
+[SPEAKER_08]: So the only thing that's going into this
+training set is a bunch of images and a
+[SPEAKER_08]: bunch of classifications.
+[SPEAKER_08]: It can't even think on a next higher
+level.
+[SPEAKER_08]: But I agree that with these data sets,
+you can conceptualize much smarter ways
+[SPEAKER_08]: to, or much more informed ways to train
+them that take into account the spatial
+[SPEAKER_08]: and the temporal relationship.
+[SPEAKER_07]: Sure.
+[SPEAKER_03]: So the point we do better than the human
+annotation, obviously a lot of trade that
+humans won't measure it so well.
+Yeah.
+And theoretically, your loss function is
+how close it is to humans.
+[SPEAKER_03]: But if humans aren't perfect, are there
+ways to decide just having five people
+[SPEAKER_03]: score the same thing?
+[SPEAKER_03]: Are there ways to get around that?
+[SPEAKER_08]: No, and I mean, Mike can attest to this,
+too, I think, right?
+[SPEAKER_08]: That our upper limit is however good you
+score the trade.
+[SPEAKER_08]: And so usually, I didn't mention it here,
+but we can build digital elevation models
+[SPEAKER_08]: to measure plant height across the whole
+breeding nurseries.
+[SPEAKER_08]: And then we benchmark that against how you
+go out with a ruler and measure them.
+[SPEAKER_08]: You're like, oh, there's got to be minimal
+bias in that.
+[SPEAKER_08]: But we can actually hit heritabilities and
+accuracies that are better than human
+[SPEAKER_08]: measurements.
+[SPEAKER_08]: And then we try and benchmark them against
+the human measurements.
+[SPEAKER_08]: And so it's like a catch-22, right?
+[SPEAKER_08]: To say, well, our ground truth is not
+accurate, but we're trying to get more
+[SPEAKER_08]: accurate than our ground truth.
+[SPEAKER_08]: But I think, though, if we can scale this
+out, to many, many, many breeding
+[SPEAKER_08]: programs, and then like multiple scores,
+I think then you kind of have the logic of
+[SPEAKER_08]: the masses kind of thing, where it should
+even out over a big enough data set,
+[SPEAKER_08]: theoretically.
+[SPEAKER_04]: Yeah, just coming from a practical point
+of view.
+[SPEAKER_04]: You make a very good demonstration goal to
+use this training population.
+[SPEAKER_04]: What about you change the environment?
+[SPEAKER_04]: So you have hard winter and change the
+population.
+[SPEAKER_08]: Yeah, that's a good question.
+[SPEAKER_08]: So I think there's two answers to that.
+[SPEAKER_08]: One, I think if we do it across enough
+years and enough different breeders and
+[SPEAKER_08]: programs, then you kind of see all of the
+variants that are morphological variants
+[SPEAKER_08]: that are out there.
+[SPEAKER_08]: The other one is, though, that there's
+opportunities to actually train this in
+[SPEAKER_08]: season.
+[SPEAKER_08]: So you could actually take data visually
+on a small number of plots, and then in
+[SPEAKER_08]: season train these type of things onto
+50,000 plots that you don't have the
+[SPEAKER_08]: physical capacity to score.
+[SPEAKER_08]: And that's especially the way we're
+thinking about it for just the vegetation
+[SPEAKER_08]: index.
+[SPEAKER_08]: We'll build the model.
+[SPEAKER_08]: We'll actually measure yield on like 1,000
+plots, and then use that information to
+[SPEAKER_08]: predict yield in the same environment to
+like 50,000.
+[SPEAKER_04]: Yeah,
+[SPEAKER_08]: so this scoring was all done by Byron.
+[SPEAKER_08]: So we just had one score.
+[SPEAKER_08]: So this is benchmarked.
+[SPEAKER_08]: So we don't really have the confounding
+effects of multiple people being biased.
+[SPEAKER_04]: Oh, yeah, yeah.
+[SPEAKER_08]: So the same person, there's really minimal
+internal bias.
+[SPEAKER_08]: I mean, we had very few time points where
+it was like you go out one day,
+[SPEAKER_08]: and then you go out the next day,
+and you actually score it lower than you
+[SPEAKER_08]: did the time before.
+[SPEAKER_08]: So we're really not.
+[SPEAKER_08]: Yeah, within one person, it's pretty
+minimal.
+[SPEAKER_03]: Can I follow up on Tia's question?
+[SPEAKER_04]: When you showed the curves, when you
+showed the curves of heading days
+[SPEAKER_04]: comparing the visual score to the CNN
+score, and there was discrepancy in the
+[SPEAKER_04]: second one you showed, how confident are
+you that it's the CNN that's wrong or the
+[SPEAKER_04]: person that's wrong?
+[SPEAKER_08]: Yeah, same thing again.
+[SPEAKER_08]: I don't know.
+[SPEAKER_08]: Yeah, I don't know which one's wrong.
+[SPEAKER_08]: I need to go back and probably run those
+models again and see which one has a
+[SPEAKER_08]: better fit, a smaller error on fitting
+those, maybe.
+[SPEAKER_08]: But yeah, here again, how do you know
+what's right?
+[SPEAKER_04]: Oh,
+[SPEAKER_08]: man, that's too much work.
+[SPEAKER_08]: Well, they had the same error.
+[SPEAKER_08]: I agree with that.
+[SPEAKER_08]: That's a much easier way to just see which
+has higher herability.
+[SPEAKER_08]: They were the same.
+[SPEAKER_04]: Did you try to correlate the visual scores
+with the whole spectral area data to see
+[SPEAKER_04]: if the model could get anything out?
+[SPEAKER_08]: You mean for that heading date?
+[SPEAKER_04]: Before and beyond.
+[SPEAKER_08]: No, we haven't looked at that yet.
+[SPEAKER_08]: That's a good one.
+[SPEAKER_04]: Is each color resolution different?
+[SPEAKER_08]: Yeah, there should be some spec.
+[SPEAKER_08]: Well, we know for sure that there's a
+spectral difference between before they're
+[SPEAKER_08]: headed and after they're headed.
+[SPEAKER_08]: Whether you can actually get some
+percentage that would be accurate enough
+[SPEAKER_08]: to score a date during that progression,
+we don't know.
+[SPEAKER_08]: The other trouble is we don't fly the
+hyperspectral like once a week.
+[SPEAKER_08]: But that's a good idea.
+[SPEAKER_07]: We should try it.
+[SPEAKER_05]: So in figuring out the heritability,
+there's an error from scoring and there's
+[SPEAKER_05]: an error from some plots head out earlier
+because they're a little drier and some
+[SPEAKER_05]: head out later.
+[SPEAKER_05]: So could you feed the deviation of the
+actual heading from the expected for the
+[SPEAKER_05]: genotype into a CNN so that it would try
+to predict whether, OK, it's heading on
+[SPEAKER_05]: this date, but I think it's probably early
+relative to what the genotype would
+[SPEAKER_07]: normally do.
+[SPEAKER_07]: Yeah, put some genetic information into
+that.
+[SPEAKER_05]: Or ultimately, get it to try to predict
+that other component of error.
+[SPEAKER_08]: Yeah, that would be a little bias.
+[SPEAKER_08]: Within the breeding program, though,
+you don't really have those major effects
+[SPEAKER_08]: still segregating.
+[SPEAKER_08]: But if I'm understanding your question
+right, that's along the lines of what
+[SPEAKER_08]: we're thinking on.
+[SPEAKER_08]: So here's our sci-fi idea.
+[SPEAKER_05]: It's to actually predict some
+microenvironmental effects, not genetic.
+[SPEAKER_08]: Yeah, yeah, yeah.
+[SPEAKER_08]: So maybe we actually got some fun new
+spatial models that actually are like
+[SPEAKER_08]: autoregressive models, except because we
+map these things in physical coordinates,
+[SPEAKER_08]: we apply an actual physical correction.
+[SPEAKER_08]: Those actually perform really well.
+[SPEAKER_08]: So I would say maybe that's an easier way
+than doing it through the neural net.
+[SPEAKER_08]: But yeah, I know what you're saying.
+[SPEAKER_08]: Somehow feed into the neural network that
+these two plots are next to each other
+[SPEAKER_08]: versus these two are clear across the
+field.
+[SPEAKER_04]: OK, I have time for one more question.
+[SPEAKER_04]: Are there any questions from Jennifer?
+All right.
+[SPEAKER_06]: Well, that was thanks, Justin.
+[SPEAKER_06]: Thank you.
+[SPEAKER_07]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_07]: Thank you.
+[SPEAKER_07]: Thank you.
+Thank you.

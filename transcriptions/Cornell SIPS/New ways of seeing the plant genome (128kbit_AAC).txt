@@ -1,0 +1,1057 @@
+[SPEAKER_01]: This is a production of Cornell
+University.
+[SPEAKER_02]: Let's talk about genomes.
+[SPEAKER_02]: So Frannie said, when I met her just a
+little while ago, she said she likes to
+[SPEAKER_02]: work with things she can see.
+[SPEAKER_02]: And so who wants to work with DNA,
+which you can't see?
+[SPEAKER_02]: So the problem of seeing the DNA is really
+important for understanding how the genome
+[SPEAKER_02]: works.
+[SPEAKER_02]: And so we're going to talk about data
+visualization.
+[SPEAKER_02]: So before I start, I'd like to just,
+some of you may have missed it,
+[SPEAKER_02]: but in the beginning of September,
+there was a major scientific advance.
+[SPEAKER_02]: 30 publications were published
+simultaneously in Science, Nature,
+[SPEAKER_02]: and other journals, which is the fruit
+coming out of the ENCODE project and the
+[SPEAKER_02]: latest phase of the ENCODE project.
+[SPEAKER_02]: And so this was a paradigm shifting
+outcome.
+[SPEAKER_02]: And it says something about the genome,
+which I'd really like to communicate to
+[SPEAKER_02]: you.
+[SPEAKER_02]: The leader of this vast consortium of
+scientists, something like several,
+[SPEAKER_02]: I think over 100 scientists who are part
+of the consortium, over $100 million spent
+[SPEAKER_02]: on this, it's basically phase three of the
+genome project.
+[SPEAKER_02]: And once you have a genome, you have to
+figure out what it's doing.
+[SPEAKER_02]: And so they've been trying to understand
+what the genome does.
+[SPEAKER_02]: This is what the leader of the program
+said.
+[SPEAKER_02]: He said, the genome is a jungle of
+information.
+[SPEAKER_02]: It is multilayered and multidimensional.
+[SPEAKER_02]: And the entire genomes are mostly
+functional.
+[SPEAKER_02]: A major, major paradigm shift in terms of
+understanding of the genome.
+[SPEAKER_02]: And so the bottom line is that not only
+does it, we usually think of the genetic
+[SPEAKER_02]: code, you know, the code that goes from
+DNA to RNA to protein.
+[SPEAKER_02]: Well, that only accounts for one to 2% of
+the genome.
+[SPEAKER_02]: There are many other codes, many,
+many codes in the genome, many languages,
+[SPEAKER_02]: and they overlap.
+[SPEAKER_02]: And if you ask a computer scientist if
+they could write overlapping code,
+[SPEAKER_02]: they would just you know, their eyes would
+go crossed.
+[SPEAKER_02]: So this is, this is an amazing reality.
+[SPEAKER_02]: But it suggests that understanding the
+genome will be the challenge for the
+[SPEAKER_02]: people who raised their hand who were born
+before 1980.
+[SPEAKER_02]: This is that generation's challenge to
+figure out what in the world is going on
+[SPEAKER_02]: inside the genome.
+[SPEAKER_02]: And what they've discovered so far,
+most people acknowledge is just the tip of
+[SPEAKER_02]: the iceberg.
+[SPEAKER_02]: So how do you try to even approach all
+this new data?
+[SPEAKER_02]: I just like to tell you about what data
+visualization is.
+[SPEAKER_02]: It's an area of science.
+[SPEAKER_02]: It's, here's the bottom line.
+[SPEAKER_02]: The best pattern recognition software in
+the universe is our brain.
+[SPEAKER_02]: And so you can program a computer to look
+for a pattern, but it'll only look for the
+[SPEAKER_02]: pattern you asked it to look for.
+[SPEAKER_02]: Whereas our brain, everything we look,
+our brain automatically recognizes
+[SPEAKER_02]: patterns.
+[SPEAKER_02]: And so that's, that's something that is
+unique to the human brain.
+[SPEAKER_02]: They still haven't developed a computer
+that can recognize a face, for example.
+[SPEAKER_02]: So data visualization is the involves the
+process of making data visual.
+[SPEAKER_02]: And when it's visual, then our brain can
+take over and easily recognize patterns.
+[SPEAKER_02]: And that's the origin of this program
+called Skittle.
+[SPEAKER_02]: And so if you look, some of you have seen
+genomic data, and it's just endless A's,
+[SPEAKER_02]: T's, C's and G's, and you will find that
+your brain can't really you know,
+[SPEAKER_02]: when you look at a few million of those,
+your brain doesn't see any pattern.
+[SPEAKER_02]: If you do something as simple as adding
+color to the scheme, you can start to see
+[SPEAKER_02]: patterns.
+[SPEAKER_02]: And so Skittle, the first, first dimension
+of Skittle is simple colorization of
+[SPEAKER_02]: nucleotides.
+[SPEAKER_02]: And so I've suggested, now for the people
+in Geneva, I'm just gonna take a minute
+[SPEAKER_02]: and show them some live running of the
+program.
+[SPEAKER_02]: And I'd be happy to share it with you when
+I'm back up in Geneva, maybe next week.
+[SPEAKER_02]: But bear with me just for a moment.
+[SPEAKER_02]: And I'm gonna escape this and close this.
+[SPEAKER_02]: And I'm going to pull up Skittle program.
+[SPEAKER_02]: Whoops, that's not the one I wanted.
+[SPEAKER_02]: There it is.
+[SPEAKER_02]: Okay, so this is, and maybe the people in
+Geneva can see this.
+[SPEAKER_02]: But this is a display of approximately
+40,000 pixels.
+[SPEAKER_02]: And each pixel represents a nucleotide.
+[SPEAKER_02]: So this is chromosome 10 of corn,
+and the first pixel is green, meaning it's
+[SPEAKER_02]: a guanine.
+[SPEAKER_02]: So you're looking at 40,000 letters,
+but because it's colorized, you can start
+[SPEAKER_02]: to see patterns.
+[SPEAKER_02]: And so over here, the way Skittle works is
+there's basic settings at the top.
+[SPEAKER_02]: You can determine the width of this.
+[SPEAKER_02]: You can determine the zoom in and zoom
+out.
+[SPEAKER_02]: You can do, determine, go zoom to any
+starting point you want.
+[SPEAKER_02]: There's ways of bringing in new data,
+like from a genome browser.
+[SPEAKER_02]: And there are basic functions that can be
+tied to your mouth.
+[SPEAKER_02]: And then over here, there are different
+displays.
+[SPEAKER_02]: So right now we're looking at a simple
+nucleotide display.
+[SPEAKER_02]: So this is raw data.
+[SPEAKER_02]: This is the data.
+[SPEAKER_02]: It's just the data as a genome,
+as a fast file colorized.
+[SPEAKER_02]: So the, let me just show you.
+[SPEAKER_02]: The gray are unsequenced gaps.
+[SPEAKER_02]: So let's just see what we can do here.
+[SPEAKER_02]: One of the things we can do is we can
+change the diameter.
+[SPEAKER_02]: You can perhaps see that I'm making it
+narrower.
+[SPEAKER_02]: And if I close this, if I change it
+enough, you see a new pattern.
+[SPEAKER_02]: So basically these are tandem repeats.
+[SPEAKER_02]: And if I said, I love you, I love you,
+I love you, I love you, that's a tandem
+[SPEAKER_02]: repeat.
+[SPEAKER_02]: And if you have a line break after the U
+every time, all the letters of I love you,
+[SPEAKER_02]: I love you will line up and you'll get
+these columns, straight up and down
+[SPEAKER_02]: columns, right?
+[SPEAKER_02]: So that's what you're seeing here is a
+tandem repeat.
+[SPEAKER_02]: And this is a large tandem repeat.
+[SPEAKER_02]: And it's throughout the, the corn genome.
+[SPEAKER_02]: It's especially abundant in the Central
+American region.
+[SPEAKER_02]: And it's, but it's throughout the genome.
+[SPEAKER_02]: It may represent five or 10% of the
+genome.
+[SPEAKER_02]: So it's a major element.
+[SPEAKER_02]: And if I told you, we talked about tandem
+repeats without a visualization,
+[SPEAKER_02]: you wouldn't immediately get it.
+[SPEAKER_02]: But when you see a picture of it,
+it's really obvious, isn't it?
+[SPEAKER_02]: Okay.
+[SPEAKER_02]: So that just, I'm going to jump back to
+the PowerPoint for the sake of the people.
+[SPEAKER_02]: People at Geneva, but, but perhaps that is
+helpful to you.
+Okay.
+[SPEAKER_02]: So people at Geneva, I'd be happy to just
+ask me and I'll show you how the skill
+[SPEAKER_02]: works later.
+[SPEAKER_02]: Okay.
+[SPEAKER_02]: This is a picture of the corn genome.
+[SPEAKER_02]: And I like it because it shows a couple of
+things that are very significant.
+[SPEAKER_02]: One is it shows the, the very different
+nucleotide percentages.
+[SPEAKER_02]: There are areas that are GC rich and there
+are areas that are AT rich.
+[SPEAKER_02]: And sometimes you have areas that are
+cytosine rich, they're mostly red.
+[SPEAKER_02]: And so, and so you have it's not,
+you might picture it as a uniform blend,
+[SPEAKER_02]: but actually there's these huge
+variations.
+[SPEAKER_02]: This, these areas that are GC rich are
+where the genes are.
+[SPEAKER_02]: So these are genic regions.
+[SPEAKER_02]: And if you look really carefully,
+you'll see a tandem repeat here and a
+[SPEAKER_02]: tandem repeat at the beginning of the end
+of the genome.
+[SPEAKER_02]: Of this gene.
+[SPEAKER_02]: So let's just look at that a little more
+carefully.
+[SPEAKER_02]: This is a similar tandem.
+[SPEAKER_02]: This is a similar genic region.
+[SPEAKER_02]: And you can see there's a couple of
+things.
+[SPEAKER_02]: One, one is it's GC rich.
+[SPEAKER_02]: Another thing is that if you look really
+carefully in here, you'll see a texture,
+[SPEAKER_02]: which is called a, which, which we call
+the three mer pattern, but that reflects
+[SPEAKER_02]: codon preference.
+[SPEAKER_02]: In other words, you can recognize protein
+coding regions okay.
+[SPEAKER_02]: I'm sorry.
+[SPEAKER_02]: I haven't explained what this new display
+is.
+[SPEAKER_02]: This is the repeat map.
+[SPEAKER_02]: So if you have a light colored pixel here,
+that means that a string this long has
+[SPEAKER_02]: repeated once.
+[SPEAKER_02]: If you have a series of pixels here,
+that means you can see it correlates with
+[SPEAKER_02]: this repeat here where these are lining
+up.
+[SPEAKER_02]: So this is a very, very sensitive map of
+repeating units within the genome.
+[SPEAKER_02]: And it's, it's much more sensitive than
+any other genome tool for detecting
+[SPEAKER_02]: repetition within the genome.
+[SPEAKER_02]: And what you see here very carefully,
+if you look really carefully, is there's a
+[SPEAKER_02]: pattern of dark, dark light, dark,
+dark light.
+[SPEAKER_02]: And that pattern is throughout the genome
+of all organisms.
+[SPEAKER_02]: And it represents the nature of the
+protein coding the codon preferences.
+[SPEAKER_02]: And what's significant here is that
+there's a tandem repeat at the beginning
+[SPEAKER_02]: and the end of the genic region.
+[SPEAKER_02]: And so that means that those tandem
+repeats, this is something you find
+[SPEAKER_02]: throughout the corn genome.
+[SPEAKER_02]: It is in thousands and thousands of places
+in the corn genome.
+[SPEAKER_02]: It means normally people have always
+thought that tandem repeats are junk DNA.
+[SPEAKER_02]: They're just mistakes that happen during
+DNA replication.
+[SPEAKER_02]: But what we find is that these are
+strategically at the beginning and the end
+[SPEAKER_02]: of these genic regions.
+[SPEAKER_02]: So they're not junk.
+[SPEAKER_02]: They're, they're precisely where they're
+supposed to be.
+[SPEAKER_02]: And they always match.
+[SPEAKER_02]: They come in pairs.
+[SPEAKER_02]: They kind of represent the beginning and
+the end of the exon, the protein coding
+[SPEAKER_02]: region.
+[SPEAKER_02]: The other interesting thing is,
+it's a little bit off scale here,
+[SPEAKER_02]: but we can look at where the annotated
+exons, recognized exons are.
+[SPEAKER_02]: And most of the things we see with Skittle
+have never been described before.
+[SPEAKER_02]: In other words, they've been invisible to
+the normal gene searches.
+[SPEAKER_02]: And so we're seeing functional units
+within the genome that weren't visible
+[SPEAKER_02]: using other technologies for analyzing
+genomes.
+[SPEAKER_02]: So this is an example of a similar,
+similar genic region.
+[SPEAKER_02]: It's very AT rich.
+[SPEAKER_02]: You recognize it right away, right?
+[SPEAKER_02]: It's very distinct.
+[SPEAKER_02]: Here you can see the, the texture that I
+spoke of.
+[SPEAKER_02]: Can you see that texture in the back?
+[SPEAKER_02]: That's, that's very distinctive of protein
+coding regions.
+[SPEAKER_02]: And then you can see here, this is called
+an exon tract.
+[SPEAKER_02]: This is, these lines are just marking
+where there's a protein coding exon.
+[SPEAKER_02]: And what you see is in this case,
+this exon has been identified by previous
+[SPEAKER_02]: researchers as a, a functional gene,
+genic unit.
+[SPEAKER_02]: But 99% of these structures that we see
+have not been identified previously as
+[SPEAKER_02]: exons.
+[SPEAKER_02]: So we have a new way of, of identifying
+exons in any genome, which is very
+[SPEAKER_02]: sensitive and very exciting.
+[SPEAKER_02]: Just more of the same, you can see a genic
+region that's what I call bracketed by
+[SPEAKER_02]: tandem repeats.
+[SPEAKER_02]: And the tandem repeats again, are these,
+are these repeating units.
+[SPEAKER_02]: So that's, that's really exciting.
+[SPEAKER_02]: Here's a closer look at the, this texture.
+[SPEAKER_02]: And you can actually see that the,
+the, the greenish yellow, the guanines are
+[SPEAKER_02]: lining up because this is a very
+non-random.
+[SPEAKER_02]: This is the exon.
+[SPEAKER_02]: Okay.
+[SPEAKER_02]: We know this is the exon.
+[SPEAKER_02]: We can see that it has the exonic
+signature and we can actually see the,
+[SPEAKER_02]: in the raw data, we can actually see that
+the third nucleotide tends to always be a
+[SPEAKER_02]: G.
+[SPEAKER_05]: Yes.
+[SPEAKER_02]: Yeah, I'm sorry.
+[SPEAKER_02]: I should have expressed that.
+[SPEAKER_02]: It's like a book.
+[SPEAKER_02]: So you go to the end of the line and go
+back to the beginning.
+[SPEAKER_02]: So it's rastered.
+So.
+[SPEAKER_02]: Yes.
+[SPEAKER_02]: Okay.
+[SPEAKER_02]: So this display link, this 88% thousand
+nucleotides are present in this picture
+[SPEAKER_02]: right here out of 3 billion.
+[SPEAKER_02]: So, so you'd have thousands and thousands
+and thousands and thousands of pages like
+[SPEAKER_02]: this.
+[SPEAKER_02]: So you can, I've spent just looking at one
+chromosome, you can spend hours and just
+[SPEAKER_02]: get a few highlights of that chromosome.
+[SPEAKER_02]: So there's a huge amount of data.
+[SPEAKER_02]: This is again, what we, one of the things
+we can do is we can, if we see a tandem
+[SPEAKER_02]: repeat here, we know there's a tandem
+repeat here because here's the repeat map.
+[SPEAKER_02]: So now we have a new display.
+[SPEAKER_02]: If we click on the first nucleotide of
+that line, what happens is it will take
+[SPEAKER_02]: that line and search the whole genome for
+that sequence and color wherever you find
+[SPEAKER_02]: it.
+[SPEAKER_02]: So this is basically just showing that
+yes, this genic region is flanked by
+[SPEAKER_02]: tandem repeats at both sides.
+[SPEAKER_02]: And the fact that it's the same color
+means it's the same sequence.
+[SPEAKER_02]: So you can search, this is a similar one,
+a different flanking sequence.
+[SPEAKER_02]: And now we're going to jump to grape.
+[SPEAKER_02]: So that's just the reason I used corn to
+begin with, is that's the only plant
+[SPEAKER_02]: genome I know of where I have the exon
+tract data, where people have actually
+[SPEAKER_02]: figured out where the protein coding
+regions are.
+[SPEAKER_02]: But let's just consider another
+horticulturally important crop and that is
+[SPEAKER_02]: the grape genome.
+[SPEAKER_02]: And here again, you can see very distinct
+tandem repeat.
+[SPEAKER_02]: Now you see there are variations within
+the tandem repeat.
+[SPEAKER_02]: And the question that could be asked is
+that noise?
+[SPEAKER_02]: Like mutations, or is that actually
+information?
+[SPEAKER_02]: These patterns often remind me of,
+again, ancient history when we had punch
+[SPEAKER_02]: cards for computer analysis.
+[SPEAKER_02]: And you can see how the repeat map very
+easily detects this and also how the
+[SPEAKER_02]: repeat map is telling us that right here
+there is an exon.
+[SPEAKER_02]: So data visualization is a powerful tool
+when you're exploring the unknown.
+[SPEAKER_02]: This is just more tandem repeats.
+[SPEAKER_02]: Some of them are very conserved.
+[SPEAKER_02]: Some of them are broken up.
+[SPEAKER_02]: Is that by design or by mutation?
+[SPEAKER_02]: I don't know.
+[SPEAKER_02]: Good point.
+[SPEAKER_02]: So the repeat map finds these repeats
+instantly and regardless of your frame
+[SPEAKER_02]: width, you have to find, you have to bring
+this red line in.
+[SPEAKER_02]: You see the red line might have been here.
+[SPEAKER_02]: I brought it over to the, over the white,
+first white line.
+[SPEAKER_02]: And that tells me, number one,
+it tells me that this is a 66 base pair
+[SPEAKER_02]: repeat.
+[SPEAKER_02]: It's 66 base pairs from here to here.
+[SPEAKER_02]: And then I can set the width and then
+everything lines up and I can see what's
+[SPEAKER_02]: going on.
+[SPEAKER_02]: So we do have a function which I didn't,
+while we were live, I didn't hit the
+[SPEAKER_02]: alignment cylinder display, but basically
+it takes the tandem repeat and turns it
+[SPEAKER_02]: into a coil and then adjusts the coil
+width to all the tandem repeats are
+[SPEAKER_02]: visible.
+[SPEAKER_02]: We actually believe that tandem repeats
+coil in the nucleus.
+[SPEAKER_02]: And so they form like solenoid-like
+structures and that that's what these
+[SPEAKER_02]: repeats are all about.
+[SPEAKER_02]: So this is just a striking component of,
+if you zoom out, so you're looking at a
+[SPEAKER_02]: whole great chromosome, what you see is
+this 66 base pair repeat is massively
+[SPEAKER_02]: throughout the center of this chromosome,
+like just millions of nucleotides are just
+[SPEAKER_02]: coding for this repeat.
+[SPEAKER_02]: So, okay, this is the same repeat actually
+showing the solenoid display.
+[SPEAKER_02]: And so you can see, we believe that this
+is not, in nature, it can't raster.
+[SPEAKER_02]: That rastering, you know, this is a nice
+2D display, but this is meant to be a 3D
+[SPEAKER_02]: display.
+[SPEAKER_02]: We can make that spin and we can,
+we believe this is the actual structure in
+[SPEAKER_02]: biology.
+[SPEAKER_02]: It just keeps coiling because DNA,
+it turns out, wants to align with its own
+[SPEAKER_02]: similar sequence.
+[SPEAKER_02]: And so the logical thing for a repeat is
+to form a coil.
+[SPEAKER_02]: So this is again, in grapes showing,
+we don't have it, there's no published
+[SPEAKER_02]: exons to my knowledge for grape,
+but we would predict there's an exon here,
+[SPEAKER_02]: almost certainly an exon here and possibly
+exons here.
+[SPEAKER_02]: The blue line is a strength indicator and
+when it goes to purple, that means bingo,
+[SPEAKER_02]: you've definitely got an exon.
+[SPEAKER_02]: So just more evidence of exons,
+a little more of the same.
+[SPEAKER_02]: So I'm just gonna keep moving because,
+you know, I could show you zillions of
+[SPEAKER_02]: pictures.
+[SPEAKER_02]: I'd mentioned that there are thousands and
+thousands, these are just a few snapshots
+[SPEAKER_02]: of the genome.
+[SPEAKER_02]: But the tomato genome is another
+horticulturally important crop where
+[SPEAKER_02]: they've completed the genome and assembled
+it.
+[SPEAKER_02]: And what you see here again is there's
+some strange repeats here, which are
+[SPEAKER_02]: fuzzy, they're ill-defined.
+[SPEAKER_02]: We have the threemer pattern, which is a
+very strong indication that there's
+[SPEAKER_02]: protein coding here.
+[SPEAKER_02]: And then these other ones are possible
+exons.
+[SPEAKER_02]: Since exons only represent one to 2% of
+the genome, it's critical to be able to
+[SPEAKER_02]: identify where they are.
+[SPEAKER_02]: More potential exons.
+[SPEAKER_02]: And showing some of the larger tandem
+repeats that would be, you know,
+[SPEAKER_02]: these really big wavy repeats that I show
+you, there's a name for that.
+[SPEAKER_02]: It's called alpha satellite DNA.
+[SPEAKER_02]: And so all plants and animals,
+when you see the wavy pattern,
+[SPEAKER_02]: you know you're looking at alpha satellite
+DNA.
+[SPEAKER_02]: All hair organisms show this wavy pattern.
+[SPEAKER_02]: And oh, I know, I wanna go back for a
+second.
+[SPEAKER_02]: You see that there's a region here that's
+got more red and green versus the other
+[SPEAKER_02]: bluer areas.
+[SPEAKER_02]: So this is a GC-rich region, so it's
+potentially a gene.
+[SPEAKER_02]: And again, you'll see it's bracketed by a
+tandem repeat.
+[SPEAKER_02]: So the same pattern we saw in corn is
+showing up in tomato.
+[SPEAKER_02]: And to my knowledge, this pattern has
+never been seen before until I've seen it
+[SPEAKER_02]: in the last few months, as I've been
+looking at plant genomes more.
+[SPEAKER_02]: So this is the idea of data visualization,
+is it will show you patterns that a
+[SPEAKER_02]: computer wouldn't have spotted.
+[SPEAKER_02]: What we see is these things come in pairs
+and they tend to bracket protein coding
+[SPEAKER_02]: regions.
+[SPEAKER_02]: What are they doing?
+[SPEAKER_02]: We don't know, but it gives us reason to
+wanna do research on that.
+[SPEAKER_02]: A lot of things are actually repeated.
+[SPEAKER_02]: So there's a lot of repetition in the
+genome.
+[SPEAKER_02]: So that's more of these bracketed areas,
+you see.
+[SPEAKER_02]: This is an important, clue as to what's
+going on in the genome.
+[SPEAKER_02]: And none of these have been annotated.
+[SPEAKER_02]: So it's really showing us things about the
+genome we wouldn't have known without it.
+[SPEAKER_02]: Then the rice genome, this is really a
+pretty picture.
+[SPEAKER_02]: It's a picture of the centromeric alpha
+DNA of rice.
+[SPEAKER_02]: And I'll just show it quickly because rice
+like corn, the monocots have really
+[SPEAKER_02]: different genomes.
+[SPEAKER_02]: You just notice the color is different.
+[SPEAKER_02]: There's much more red and greenish yellow
+and much less blue.
+[SPEAKER_02]: So when you're in the dicots, everything's
+bluish and everything's orangish when you
+[SPEAKER_02]: go here.
+[SPEAKER_02]: We've zoomed in so you can see a little
+more specifically the patterns that are
+[SPEAKER_02]: occurring within the deviations within the
+tandem repeat.
+[SPEAKER_02]: And there's some interesting things that
+are going on here that would be worthy of
+[SPEAKER_02]: exploration.
+[SPEAKER_02]: And you can see here in greater detail,
+it goes a dark column, a dark column,
+[SPEAKER_02]: a light column, a dark column,
+a dark column, a light column.
+[SPEAKER_02]: So you can see more clearly what that
+threemer display is, what it's telling us.
+[SPEAKER_02]: It's telling us every third nucleotide is
+similar to the one that was three
+[SPEAKER_02]: nucleotides before it.
+[SPEAKER_02]: And so basically, the lighter the pixel,
+the more the similarity averaged over the
+[SPEAKER_02]: whole string.
+[SPEAKER_02]: So another thing that is a major feature
+of genomes that we're seeing is the every
+[SPEAKER_02]: other pattern.
+[SPEAKER_02]: And this is basically black and blue
+alternating sprinkled with greens and
+[SPEAKER_02]: reds.
+[SPEAKER_02]: And so we have no idea what that is,
+but it's throughout plant and animal
+[SPEAKER_02]: genomes.
+[SPEAKER_02]: So I don't doubt for a minute that it's
+doing something.
+[SPEAKER_02]: This is just more, evidence of exons.
+[SPEAKER_02]: In rice, this pattern is very strong and
+you can also see the GC rich and you can
+[SPEAKER_02]: even see the alignment.
+[SPEAKER_02]: Things are lining up here partially
+because of this pattern is very,
+[SPEAKER_02]: very strong.
+[SPEAKER_02]: It means it constrains most of the
+nucleotides in the genome.
+[SPEAKER_02]: A lot of us, we've been taught that most
+nucleotides are just drifting and they
+[SPEAKER_02]: don't matter.
+[SPEAKER_02]: Most nucleotides in genome have a function
+and therefore need an explanation.
+[SPEAKER_02]: More exons, just really, rice is really,
+really strong signal.
+[SPEAKER_02]: Okay, so that's kind of a quick overview
+of what plant genomes look like when
+[SPEAKER_02]: they're visualized with Skittle.
+[SPEAKER_02]: Skittle is a program that's in
+development.
+[SPEAKER_02]: In fact, some of these features,
+the feature that measures where the exons
+[SPEAKER_02]: are, the strength of that signal is just
+two days old.
+[SPEAKER_02]: So Josiah emailed me the latest revision.
+[SPEAKER_02]: So it's all still being improved.
+[SPEAKER_02]: But what we believe we have here is a
+universal genome browser.
+[SPEAKER_02]: Now, some of you know what a genome
+browser is, but basically if you're
+[SPEAKER_02]: looking at, let's say 3 billion letters
+and you're trying to figure out what it
+[SPEAKER_02]: all codes for, you can't just look at the
+letters.
+[SPEAKER_02]: And so they've made genome browsers that
+help you spot where the genes are,
+[SPEAKER_02]: help you analyze where the junk or the
+repeat is.
+[SPEAKER_02]: And other types of understanding of how
+the genome is operating.
+[SPEAKER_02]: We feel that Skittle is the foundation for
+developing, all those browsers are one
+[SPEAKER_02]: dimensional, they're strings.
+[SPEAKER_02]: And so this is a two dimensional display,
+two dimensional analysis.
+[SPEAKER_02]: And it lets us, we believe it's the next
+generation of genome browser.
+[SPEAKER_02]: And that when we get Skittle fully
+developed, we can annotate and recognize
+[SPEAKER_02]: everything.
+[SPEAKER_02]: Every feature within the genome in a way
+that's fundamentally better than genome
+[SPEAKER_02]: browsers today.
+[SPEAKER_02]: So we're excited about that.
+[SPEAKER_02]: And it's already I think bearing fruit in
+terms of giving us new insight into plant
+[SPEAKER_02]: genomes and other genomes.
+[SPEAKER_02]: But I wanted to add just briefly some work
+that my colleague Josiah Seaman did on his
+[SPEAKER_02]: own.
+[SPEAKER_02]: So Josiah Seaman is a computer scientist.
+[SPEAKER_02]: I have to digress for a second.
+[SPEAKER_02]: So I was never interested in computer
+science, not even a little bit.
+[SPEAKER_02]: And so I looked at it as a necessary evil.
+[SPEAKER_02]: I mentioned that I was the last one in our
+department to switch from the typewriter
+[SPEAKER_02]: to a computer for word processing.
+[SPEAKER_02]: And then when email came along,
+I absolutely did not wanna be bothered by
+[SPEAKER_02]: email.
+[SPEAKER_02]: I was absolutely the last person in our
+department to finally connect to the
+[SPEAKER_02]: email.
+[SPEAKER_02]: So it's really funny to me that in the
+last 10 years, I've played a role in
+[SPEAKER_02]: developing what I think are the two most
+exciting bioinformatics programs
+[SPEAKER_02]: available.
+[SPEAKER_02]: And of course, the reason is I had the
+good sense to partner up with some really
+[SPEAKER_02]: brilliant computer scientists,
+because I'm still practically computer
+[SPEAKER_02]: illiterate.
+[SPEAKER_02]: But Josiah is one of those people and he
+developed all the programming that went
+[SPEAKER_02]: into this.
+[SPEAKER_02]: And it turns out that you can look at any
+patterns with Skittle.
+[SPEAKER_02]: Like you can open up any text file.
+[SPEAKER_02]: You can open up Moby Dick and see what the
+pattern is.
+[SPEAKER_02]: You can also open up computer code.
+[SPEAKER_02]: So the way he found out he could open up
+computer code was when you start Skittle,
+[SPEAKER_02]: it asks you what file you wanna open.
+[SPEAKER_02]: And he forgot that he had already opened
+Skittle, so he used Skittle to open the
+[SPEAKER_02]: Skittle executable code.
+[SPEAKER_02]: Does that make sense?
+[SPEAKER_02]: And he immediately saw some really
+surprising patterns.
+[SPEAKER_02]: So it turns out that Skittle can be used
+for analyzing executable code.
+[SPEAKER_02]: And that's machine language.
+[SPEAKER_02]: That's something no computer scientist,
+almost no computer scientist can read
+[SPEAKER_02]: machine language.
+[SPEAKER_02]: So this is the first time we actually skip
+to look at computer code.
+[SPEAKER_02]: I don't have the, that would make a really
+interesting talk, but I just wanna give
+[SPEAKER_02]: you some highlights from what he saw.
+[SPEAKER_02]: This is Moby Dick.
+[SPEAKER_02]: So there's no pattern, no nucleotide bias.
+[SPEAKER_02]: This is the repeat map.
+[SPEAKER_02]: There's no significant amount of repeats.
+[SPEAKER_02]: That'd be pretty boring, wouldn't it?
+[SPEAKER_02]: To have the same chapter twice in a row.
+[SPEAKER_02]: So the genome for decades has been called
+the book of life.
+[SPEAKER_02]: But we assert strongly that the actual
+genome has no physical similarity to a
+[SPEAKER_02]: book.
+[SPEAKER_02]: And a book is passive, but a computer
+program is active and running.
+[SPEAKER_02]: It's alive.
+[SPEAKER_02]: So here's what we, this is a zoomed out
+version of a, one of these is executable
+[SPEAKER_02]: code, zoomed out.
+[SPEAKER_02]: So you look at the whole code,
+maybe 60,000 bytes of code.
+[SPEAKER_02]: And the other one is a zoomed out so you
+can see most of the chromosome.
+[SPEAKER_02]: Which one is code and which one is,
+which one is genome?
+[SPEAKER_02]: They both have these, these major shifts
+in color change.
+[SPEAKER_02]: So in DNA, we would call the, in
+chromosomes, we'd say these are isochors,
+[SPEAKER_02]: where you have a change in the use of,
+where the use of the nucleotides changes
+[SPEAKER_02]: in a fundamental way.
+[SPEAKER_02]: Well, it turns out that computer code does
+the same thing, but we actually know what
+[SPEAKER_02]: causes these shifts in color.
+[SPEAKER_02]: See, we know how computer code works,
+but we don't know how genomes work.
+[SPEAKER_02]: And the fact that we're seeing
+similarities means we could use one to
+[SPEAKER_02]: understand the other.
+[SPEAKER_02]: When you have a change here, they're going
+like from Perl to Fortran.
+[SPEAKER_02]: It's computer, it's, when you change
+languages, you change your letter use
+[SPEAKER_02]: profile, right?
+[SPEAKER_02]: These, these are clearly language changes.
+[SPEAKER_02]: And these are in gene, the genome are most
+likely changes to one of the many,
+[SPEAKER_02]: you know, there are many languages in DNA.
+[SPEAKER_02]: Yes, sir.
+[SPEAKER_02]: The computer code is zero, zero is A,
+zero, one.
+[SPEAKER_02]: We need two bits to get the four color
+scheme.
+[SPEAKER_02]: The book was, I think actually we had 26
+colors.
+Yeah.
+[SPEAKER_02]: But they were our shades that your eye
+couldn't distinguish.
+[SPEAKER_02]: So, so in terms of these changes in letter
+use, computer code and, and he looked at
+[SPEAKER_02]: other executable code, other than his own
+program, we welcomed up lots of,
+[SPEAKER_02]: and it's pretty universal pattern.
+[SPEAKER_02]: Then he looked at, again, we're zooming
+out so we're looking at a whole
+[SPEAKER_02]: chromosome.
+[SPEAKER_02]: This is what's called the repeat map,
+but on a higher scale.
+[SPEAKER_02]: So here we have, for example, a long
+stretch of red, which means that a short
+[SPEAKER_02]: repeat less than 20 base pairs long is
+repeating.
+[SPEAKER_02]: And it's repeating for thousands and maybe
+tens of thousands of letters here.
+[SPEAKER_02]: Just this huge repeat.
+[SPEAKER_02]: And so you can map where all these repeats
+are in a chromosome.
+[SPEAKER_02]: And you see they tend to be all near the
+beginning.
+[SPEAKER_02]: Well, it turns out that the computer code
+is also filled with repeats.
+[SPEAKER_02]: And for example, here would be another
+stretch of red.
+[SPEAKER_02]: That also is a 10 to 20 character repeat.
+[SPEAKER_02]: And you'll see that which, which one is,
+if I asked you, if I hadn't already given
+[SPEAKER_02]: it away, you wouldn't know which one was a
+computer code and which one was the
+[SPEAKER_02]: genome, would you?
+[SPEAKER_02]: And so if we look closer at these repeats,
+which of these repeats is plant repeat and
+[SPEAKER_02]: which one is from computer code?
+[SPEAKER_02]: This is plant.
+[SPEAKER_02]: This is a computer.
+[SPEAKER_02]: So the tandem repeats in computer code are
+incredibly similar to what we see in
+[SPEAKER_02]: plants.
+[SPEAKER_02]: Amazingly similar.
+[SPEAKER_02]: So here's the interesting thing is for
+decades, people have seen, we have known
+[SPEAKER_02]: that there are these tandem repeats.
+[SPEAKER_02]: And they said, obviously, repeats are
+junk.
+[SPEAKER_02]: Well, are the repeats in computer code
+junk?
+[SPEAKER_02]: Are there, is there a single bit in a
+computer code that's not functional?
+[SPEAKER_02]: So it strongly suggests these tandem
+repeats aren't here.
+[SPEAKER_02]: This isn't a coincidence.
+[SPEAKER_02]: It reflects functionality.
+[SPEAKER_02]: And we actually know what these repeats
+are for.
+[SPEAKER_02]: These are data files.
+[SPEAKER_02]: Like a phone directory would be a data
+file.
+[SPEAKER_02]: The first, this would be like some
+universal thing like telephone number and
+[SPEAKER_02]: then people have different numbers.
+[SPEAKER_02]: So data files in computer code give you
+this.
+[SPEAKER_02]: Perhaps these are data files.
+[SPEAKER_02]: So these, another element of plant genome
+is that they're called what are dispersed
+[SPEAKER_02]: repeats.
+[SPEAKER_02]: You know, you can have repeats where
+they're head to toe, or you can have the
+[SPEAKER_02]: same repeating element all throughout the
+genome.
+[SPEAKER_02]: And so these, these would be called,
+these would be plant, this would be like a
+[SPEAKER_02]: transposable element.
+[SPEAKER_02]: And these would be words that are common
+within the computer language.
+[SPEAKER_02]: So you can actually, you know,
+write in any sequence you want and it'll
+[SPEAKER_02]: look through, through the script and find
+wherever it occurs.
+[SPEAKER_02]: So you can find out how abundant certain
+words are.
+[SPEAKER_02]: So word structure use or transposable
+elements are very similar within code and
+[SPEAKER_02]: within genomes.
+[SPEAKER_02]: So the bottom line is what he's seen is
+that genomes and executable code have
+[SPEAKER_02]: amazing similarities.
+[SPEAKER_02]: They both use linear strings of code.
+[SPEAKER_02]: They both use multiple languages.
+[SPEAKER_02]: They both use parallel processing,
+which means, you know, you can have lots
+[SPEAKER_02]: of genes reading at the same time,
+like lots of processors in your computer.
+[SPEAKER_02]: They both have a strong character bias
+where the total color shift occurs.
+[SPEAKER_02]: They both use extensive use of recurrent
+tandem repeats.
+[SPEAKER_02]: They both use commonly dispersed repeats
+or words.
+[SPEAKER_02]: They both use large scale localization of
+the repeats near the ends of the program.
+[SPEAKER_02]: And they both have passive and active
+information.
+[SPEAKER_02]: A book just sits there.
+[SPEAKER_02]: You can read it or not.
+[SPEAKER_02]: A program runs and it's self-changing,
+self-modifying.
+[SPEAKER_02]: So all of this is consistent with a trend
+within genetics.
+[SPEAKER_02]: More and more, genomicists are saying the
+genome is executable code.
+[SPEAKER_02]: And that's really a better understanding
+than the idea that it's an instruction
+[SPEAKER_02]: manual.
+[SPEAKER_02]: And so it's just really exciting to see
+that Skittle strongly supports that.
+[SPEAKER_02]: And it goes from a simile or an analogy to
+actually something we can measure,
+[SPEAKER_02]: where we can actually measure the features
+that are in common.
+[SPEAKER_02]: So I'd just like to conclude.
+[SPEAKER_02]: I believe there are deep hidden,
+there's deep hidden beauty in the genome.
+[SPEAKER_02]: And so I've gazed at these colorful
+pictures for hundreds of hours.
+[SPEAKER_02]: And it's really cool.
+[SPEAKER_02]: The genome has many levels of structure.
+[SPEAKER_02]: We've only detected a small fraction of
+it.
+[SPEAKER_02]: The nucleotide bias is very strong,
+which is interesting because blue-black
+[SPEAKER_02]: areas want to mutate to red-green.
+[SPEAKER_02]: And red-green areas want to mutate to
+blue-black.
+[SPEAKER_02]: So it's very hard to imagine how to create
+or sustain those biases.
+[SPEAKER_02]: Tandem repeats, it's clear because they
+bracket the genes, can carry information.
+[SPEAKER_02]: They are not necessarily junk.
+[SPEAKER_02]: Tandem repeats would logically form into
+large coils, which might have function.
+[SPEAKER_02]: We see ubiquitous tumor and threemur
+patterns, which the threemur seems to
+[SPEAKER_02]: reflect codon bias, protein coding bias.
+[SPEAKER_02]: And then there are many levels of order
+still waiting to be found.
+[SPEAKER_02]: And higher genomes are most like computer
+code.
+[SPEAKER_02]: That's the bottom line of what we've been
+learning the last few years using Skittle.
+[SPEAKER_02]: That's a good place to stop.
+[SPEAKER_02]: Well, the one connection I would suggest
+is that there's communication at every
+[SPEAKER_02]: level, from the molecules to the cells to
+the tissues to communication between
+[SPEAKER_02]: organisms.
+[SPEAKER_02]: And then of course, there's the brain
+function, which is all kinds of levels of
+[SPEAKER_02]: communication there.
+[SPEAKER_02]: So information is at the heart of 21st
+century biology.
+[SPEAKER_02]: It's all really about information science.
+[SPEAKER_02]: And everything is integrated at a level
+that blows our mind.
+[SPEAKER_02]: And so it's very hard to conceive of how
+that integration could have ever arisen.
+[SPEAKER_02]: And so it's just a really interesting
+question that I think more and more people
+[SPEAKER_02]: are gonna be asking us.
+[SPEAKER_02]: Biology is much more fantastic than we
+ever imagined.
+[SPEAKER_02]: And so it's just a real, it makes it
+exciting to be a biologist in the 21st
+[SPEAKER_02]: century, right?
+[SPEAKER_02]: So basically for data visualization,
+you have to be creative in presenting the
+[SPEAKER_02]: data in new ways to the human brain.
+[SPEAKER_02]: The human brain works by methods we have
+no idea.
+[SPEAKER_02]: But when we do see a pattern, like I'm
+seeing this pattern where I have what
+[SPEAKER_02]: looks like a large coding region that has
+not previously been identified as a exon.
+[SPEAKER_02]: And I see it's bracketed by tandem
+repeats.
+[SPEAKER_02]: And I realize that's a highly ordered
+structure.
+[SPEAKER_02]: And what Josiah points out is he says,
+Skittle is for discovering the pattern,
+[SPEAKER_02]: but then you have to write special
+computer code to analyze the pattern.
+[SPEAKER_02]: So now we can go back and ask the computer
+to find every instance on that chromosome
+[SPEAKER_02]: where that pattern happens.
+[SPEAKER_02]: And that's the next step for that
+research.
+[SPEAKER_02]: It's available, free of charge.
+[SPEAKER_02]: You can download it anytime.
+[SPEAKER_02]: It's really easy to understand how to use
+it, but it will continue.
+[SPEAKER_02]: It's being updated almost weekly.
+[SPEAKER_02]: And actually Josiah's just introduced a
+feature.
+[SPEAKER_02]: So if you're online and you're using
+Skittle and he updates it, there a little
+[SPEAKER_02]: thing will come up on Skittle that says
+update now and you'll get the latest
+[SPEAKER_02]: version.
+[SPEAKER_02]: So he realizes that it's gonna be under
+wraps.
+[SPEAKER_02]: It's a rapid and continuous improvement.
+[SPEAKER_02]: So they don't have, there's nothing like
+Skittle.
+[SPEAKER_02]: No one has a program like Skittle.
+[SPEAKER_02]: I wish they would take notice of Skittle,
+but they haven't.
+[SPEAKER_02]: I think as we, actually this corn pattern
+that I described, when we show that we use
+[SPEAKER_02]: Skittle to discover that, which is I think
+a major feature of the corn genome,
+[SPEAKER_02]: then people will say, oh, I guess maybe I
+should look into this Skittle business.
+[SPEAKER_02]: Because it is a powerful tool to just see
+what's going on.
+[SPEAKER_02]: And also for teaching.
+[SPEAKER_02]: If you were teaching genome to students
+and you just show them A's, T's,
+[SPEAKER_02]: C's, and G's, it doesn't sink in.
+[SPEAKER_02]: But with Skittle, actually, you can start
+to see, oh, I see what's going on here.
+[SPEAKER_02]: I start to see the different types of
+organization within the genome.
+[SPEAKER_02]: So I think it's both a research tool and a
+great teaching tool.
+[SPEAKER_02]: Yes, we basically upload any FASTA file
+and it basically, the first thing it does
+[SPEAKER_02]: is just colorize the letters.
+[SPEAKER_02]: That's really simple.
+[SPEAKER_02]: But as soon as that happens, you start to
+see patterns.
+[SPEAKER_02]: Then it allows us to change the width or
+zoom in and out.
+[SPEAKER_02]: And it allows us to put up the repeat map
+or the cylinder display or several other
+[SPEAKER_02]: display options.
+[SPEAKER_02]: But the raw data is that colorful screen.
+[SPEAKER_02]: And you're actually looking at the genome
+when you look at that, just like you are
+[SPEAKER_02]: looking at a FASTA file.
+[SPEAKER_02]: But it's a lot more interesting than a
+FASTA file.
+[SPEAKER_02]: So the repeat map takes the first line,
+whatever the width is, it reads the first
+[SPEAKER_02]: line and then compares that to the one
+nucleotide over the line that represents
+[SPEAKER_02]: the next nucleotide over.
+[SPEAKER_02]: And then it compares that first line with
+every other possible alignment in the
+[SPEAKER_02]: view.
+[SPEAKER_02]: And then for every alignment, it gives a
+score for the similarity.
+[SPEAKER_02]: And decides how bright the pixel should be
+for that spot.
+[SPEAKER_02]: So it forms a massive calculation each
+time you move the screen to recognize all
+[SPEAKER_02]: the possible similarities between the
+first string and all the other parts of
+[SPEAKER_02]: that display.
+[SPEAKER_02]: So the display pattern, the repeat map,
+which is the black and the gray scale,
+[SPEAKER_02]: that actually doesn't change as you change
+width.
+[SPEAKER_02]: It is just measuring the repeats.
+[SPEAKER_02]: So you'll see those repeats regardless of
+the display.
+[SPEAKER_02]: And then the cylinder display finds the
+best alignment.
+[SPEAKER_02]: But the regular display, you have to
+manually adjust the width to get those
+[SPEAKER_02]: nice visual patterns of the tandem
+repeats.
+[SPEAKER_04]: So there's possibly a pattern in width.
+[SPEAKER_02]: So the 66 mer that I found in tomato was
+also in corn.
+[SPEAKER_02]: And when you find a repeat, you'll find
+that it's a family of repeats throughout
+[SPEAKER_02]: that chromosome and all the chromosomes of
+that species.
+[SPEAKER_02]: Very few repeats are novel.
+[SPEAKER_02]: They're like words.
+[SPEAKER_02]: They're doing something.
+[SPEAKER_02]: And they're found in many different places
+in the genome.
+[SPEAKER_02]: So basically, as we discover these new
+layers of information, we would like to
+[SPEAKER_02]: have it like, you know how old fashioned
+overhead transparencies?
+[SPEAKER_02]: You could put several on top and you could
+see how they all line up.
+[SPEAKER_02]: We'd like to have Skittle have transparent
+pages.
+[SPEAKER_02]: You could adjust the transparency.
+[SPEAKER_02]: So we can see where the exons are.
+[SPEAKER_02]: We can see where the transcriptional
+factor binding sites are.
+[SPEAKER_02]: We can see where the histone binding sites
+are.
+[SPEAKER_02]: We can see where the folding motifs are.
+[SPEAKER_02]: Because there's layer upon layer of
+information.
+[SPEAKER_02]: And the only way is to have a layered
+display.
+[SPEAKER_02]: So that's the next.
+[SPEAKER_02]: That's in the works.
+[SPEAKER_01]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_01]: Thank you.
+[SPEAKER_01]: Thank you.
+Thank you.
+Thank you.

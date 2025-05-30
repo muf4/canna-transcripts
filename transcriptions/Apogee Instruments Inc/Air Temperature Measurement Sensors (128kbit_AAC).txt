@@ -1,0 +1,524 @@
+[SPEAKER_00]: Good morning, I'm Bruce Bugbee and today
+we're going to talk about air temperature
+[SPEAKER_00]: sensors.
+[SPEAKER_00]: This is really part one in a series of
+environmental measurement seminars that
+[SPEAKER_00]: we've designed to educate people on the
+key principles.
+[SPEAKER_00]: I am joined in this effort by my colleague
+Mark Blonquist who is the chief scientist
+[SPEAKER_00]: for Apogee instruments.
+[SPEAKER_00]: He isn't going to be doing the talking but
+he and I have worked together to analyze a
+[SPEAKER_00]: wide range of sensors for environmental
+measurement.
+[SPEAKER_00]: So we're going to start with perhaps the
+most fundamental measurement of all,
+[SPEAKER_00]: which is air temperature.
+[SPEAKER_00]: If you would ask me when I was an
+undergraduate, do you know how to measure
+[SPEAKER_00]: air temperature?
+[SPEAKER_00]: I would say, oh yes, of course I know all
+about it.
+[SPEAKER_00]: If you would ask me as a master's student,
+do I know how to measure air temperature?
+[SPEAKER_00]: And I would say, yes, kind of,
+but there's challenges.
+[SPEAKER_00]: And if you ask me as an experienced
+scientist, do I know how to measure air
+[SPEAKER_00]: temperature?
+[SPEAKER_00]: And I would probably say something like,
+that is a really challenging measurement.
+[SPEAKER_00]: So we're going to help bring you up to the
+cutting edge of just the sensors today to
+[SPEAKER_00]: do this.
+[SPEAKER_00]: In a separate talk we'll talk about
+shields.
+[SPEAKER_00]: So this is the simplest thing.
+[SPEAKER_00]: What kind of electronic sensors would you
+use for air temperature measurement?
+[SPEAKER_00]: And historically we've used alcohol
+thermometers and mercury and glass
+[SPEAKER_00]: thermometers, but those are not electronic
+output.
+[SPEAKER_00]: You can't record those.
+[SPEAKER_00]: You've got to have a sensor that makes an
+electric output so we can do continuous
+[SPEAKER_00]: recording of it.
+[SPEAKER_00]: So this is all about sensors that have
+electronic output.
+[SPEAKER_00]: Now let's jump to a picture that we've
+made that shows sizes and types of
+[SPEAKER_00]: sensors.
+[SPEAKER_00]: Here's a wide range of sizes and in a
+minute I'll tell you why size is so
+[SPEAKER_00]: critical.
+[SPEAKER_00]: But let's just run over the sizes all the
+way from a human hair and look at the size
+[SPEAKER_00]: of this.
+[SPEAKER_00]: 0.002 inches, 0.06 millimeters.
+[SPEAKER_00]: This is tiny, just barely above that we
+can get fine wire thermistors that are
+[SPEAKER_00]: just barely thicker than a human hair.
+[SPEAKER_00]: Now these are used in a syringe to inject
+into an animal to measure internal
+[SPEAKER_00]: temperature of an animal, but boy they
+stay very close to air temperature because
+[SPEAKER_00]: they are so tiny.
+[SPEAKER_00]: So this would be a nice sensor,
+but this sensor in our long-term studies
+[SPEAKER_00]: drifts.
+[SPEAKER_00]: It's not a stable sensor and that's a
+critical feature of these sensors.
+[SPEAKER_00]: They have to be rock solid year after year
+after year so we're not using this fine
+[SPEAKER_00]: wire sensor even though it's wonderfully
+tiny because it's not solid in long-term
+[SPEAKER_00]: studies.
+[SPEAKER_00]: Going up the scale, thermocouples are a
+classic electronic way of measurement.
+[SPEAKER_00]: They're widely used, they're inexpensive.
+[SPEAKER_00]: Just take a strip of wire, twist it like
+this, you've got a temperature sensor,
+[SPEAKER_00]: but they are not the most accurate
+reference standard and for long runs of
+[SPEAKER_00]: wire they get expensive.
+[SPEAKER_00]: The cost of thermocouple wire is about 10
+times the cost of regular wire.
+[SPEAKER_00]: So we mostly use these when we need to do
+lots of measurements in a small distance,
+[SPEAKER_00]: a small distance from the data logger even
+though they can be small.
+[SPEAKER_00]: So then going down the list we get into
+the category of thermistors.
+[SPEAKER_00]: So let's put a line under thermocouples,
+we'll call that number one.
+[SPEAKER_00]: Thermistors are number two and
+technologies, these have a big signal
+[SPEAKER_00]: size, they're easy to measure.
+[SPEAKER_00]: For years these were considered not a
+reference standard because they drifted in
+[SPEAKER_00]: the long term.
+[SPEAKER_00]: So to avoid this problem with drift,
+for years we've gone to platinum
+[SPEAKER_00]: resistance thermometers.
+[SPEAKER_00]: Now lots of people know these by the
+acronym, PRT, Platinum Resistance
+[SPEAKER_00]: Thermometer.
+[SPEAKER_00]: Sometimes people say PRTD and that's just
+a temperature detector.
+[SPEAKER_00]: Those are the same things, PRT and PRTD.
+[SPEAKER_00]: This one, like the typical PRTs,
+is enclosed in a stainless steel sheath.
+[SPEAKER_00]: It makes this extremely rugged but it's a
+bigger size than this thermistor,
+[SPEAKER_00]: slightly bigger.
+[SPEAKER_00]: And a lot more expensive.
+[SPEAKER_00]: So finally, to get this even more rugged,
+Apogee sells a ceramic sheath thermistor,
+[SPEAKER_00]: which is this enclosed in a big housing.
+[SPEAKER_00]: You could drive over this with a truck.
+[SPEAKER_00]: So for rugged places and direct burial and
+soils, this ceramic sheath thermistor is a
+[SPEAKER_00]: good choice.
+[SPEAKER_00]: But what we're down to is thermistors,
+particularly thermistors that are epoxy
+[SPEAKER_00]: coated, to nearly eliminate water
+infiltration into the sensor.
+[SPEAKER_00]: That's what kills sensors is when water
+gets into them.
+[SPEAKER_00]: And the only two things that water doesn't
+get through are metal and glass.
+[SPEAKER_00]: Epoxy though is close.
+[SPEAKER_00]: The right kinds of epoxy are almost as
+impermeable as glass.
+[SPEAKER_00]: So this one has got a special epoxy
+coating to make it water impermeable and
+[SPEAKER_00]: as a result of that, potentially very
+stable.
+[SPEAKER_00]: So we've got thermocouples, thermistors,
+and PRTs as the categories.
+[SPEAKER_00]: PRTs have long been considered the gold
+standard, but they have a couple
+[SPEAKER_00]: disadvantages.
+[SPEAKER_00]: They're big, they're expensive,
+and they take up a lot of data logger
+[SPEAKER_00]: channels.
+[SPEAKER_00]: Let's take a look at the effective size in
+this.
+[SPEAKER_00]: Small is better, but boy, these are still
+pretty small as far as temperature sensors
+[SPEAKER_00]: go.
+[SPEAKER_00]: So this next slide shows us the effective
+size on temperature rise.
+[SPEAKER_00]: So we've got, these are all thermocouples
+now, so we take the same measurement
+[SPEAKER_00]: technology and make it in different sizes.
+[SPEAKER_00]: Now look at the wire diameter.
+[SPEAKER_00]: These are down here thinner than a human
+hair in this part of the graph.
+[SPEAKER_00]: These are all tenths of a millimeter,
+small and very small.
+[SPEAKER_00]: We put these in a controlled environment
+with typical radiation loads on them and
+[SPEAKER_00]: look at the increase in temperature.
+[SPEAKER_00]: This is the difference between the true
+air temperature and what the sensor gave
+[SPEAKER_00]: us.
+[SPEAKER_00]: Look at this.
+[SPEAKER_00]: 8 degrees C errors with big sensors in low
+wind speeds.
+[SPEAKER_00]: This number over here, U, is wind speed,
+right there.
+[SPEAKER_00]: So these are all fairly low wind speeds,
+but they occur on calm days.
+[SPEAKER_00]: So this is high radiation coming into it.
+[SPEAKER_00]: This is intermediate radiation.
+[SPEAKER_00]: The point of this whole slide is these
+errors are gargantuan.
+[SPEAKER_00]: If you're trying to get within a few
+tenths of a degree of the correct air
+[SPEAKER_00]: temperature, you need to have a very small
+sensor or make sure that sensor doesn't
+[SPEAKER_00]: see the sunlight directly.
+[SPEAKER_00]: These were with no shielding, and we'll
+talk about that in another seminar,
+[SPEAKER_00]: the value and the importance of correct
+shielding.
+[SPEAKER_00]: But for now, small is better.
+[SPEAKER_00]: The errors can be enormous.
+[SPEAKER_00]: So let's take a look at PRTs.
+[SPEAKER_00]: All PRTs are not created equal.
+[SPEAKER_00]: People say, oh, I've got a PRT.
+[SPEAKER_00]: What kind of a PRT?
+[SPEAKER_00]: Here's the five classes of PRTs and their
+accuracy specifications.
+[SPEAKER_00]: Plus or minus 1.2 degrees C, that is not a
+very accurate sensor, but we can go all
+[SPEAKER_00]: the way up to one tenth DIN, which is an
+extremely accurate PRT.
+[SPEAKER_00]: So you can see these vary a lot in
+accuracy.
+[SPEAKER_00]: Look at how much they vary in cost.
+[SPEAKER_00]: 1x to 15x.
+[SPEAKER_00]: These are great, but they're very
+expensive, and we'll compare these to
+[SPEAKER_00]: thermistors in our next slide.
+[SPEAKER_00]: We have done tests on these compared to
+this epoxy coated thermistor that Apogee
+[SPEAKER_00]: uses to measure air temperature.
+[SPEAKER_00]: To see how good that is.
+[SPEAKER_00]: So right here, we're going to do this
+comparison of thermistors to this yellow
+[SPEAKER_00]: bead PRT.
+[SPEAKER_00]: And what we're going to compare in the
+next few slides is class A thermistors.
+[SPEAKER_00]: So intermediate accuracy, similar
+advertised accuracy, plus or minus 0.1,
+[SPEAKER_00]: plus or minus 0.15, 0.01.
+[SPEAKER_00]: This is still more accurate.
+[SPEAKER_00]: More expensive, but the specified accuracy
+is similar.
+[SPEAKER_00]: So what we did in this test is took
+replicate class A PRTs and compared them
+[SPEAKER_00]: to replicate thermistors, and then we
+cycled them up and down and up and down,
+[SPEAKER_00]: trying to make them fail if something's
+going to go wrong.
+[SPEAKER_00]: They've got to take this accelerated aging
+test.
+[SPEAKER_00]: It was with high humidity.
+[SPEAKER_00]: It was the worst possible scenarios.
+[SPEAKER_00]: So really, we can get 10 or 15 years of
+aging in just three or four months by
+[SPEAKER_00]: doing this, but we want to know these are
+going to be stable for the long term.
+[SPEAKER_00]: So how did this test come out?
+[SPEAKER_00]: Well first, PRT accuracies.
+[SPEAKER_00]: They're not equally accurate over the
+whole range.
+[SPEAKER_00]: Here's 0C, right at freezing, which is our
+peak accuracy, and as we deviate from
+[SPEAKER_00]: that, these accuracies get greater.
+[SPEAKER_00]: And again, here's the types of thermistors
+and their accuracy.
+[SPEAKER_00]: Here's a picture of the PRT that Apogee
+sells, and we've got one right here.
+[SPEAKER_00]: You can do the size comparisons.
+[SPEAKER_00]: Apogee uses a shielded twisted pair cable.
+[SPEAKER_00]: This is also a four wire ohm thermistor,
+which we'll talk about in a minute,
+[SPEAKER_00]: but there for scale.
+[SPEAKER_00]: There it is, not on the screen,
+right in my hand.
+[SPEAKER_00]: By the way, so here's the yellow bead
+thermistor.
+[SPEAKER_00]: Tiny yellow bead.
+[SPEAKER_00]: Look at the difference in size.
+[SPEAKER_00]: Pretty close, but the yellow bead is
+smaller.
+[SPEAKER_00]: So if it's smaller, it stays closer to the
+air temperature.
+[SPEAKER_00]: So how did this test come out?
+[SPEAKER_00]: After beating these things up bad,
+giving them 15 years, one other key point
+[SPEAKER_00]: before I show you the test results.
+[SPEAKER_00]: A thermistor, because it has a big signal,
+can be measured with one single-ended
+[SPEAKER_00]: channel.
+[SPEAKER_00]: One, I'm going to put SE on here,
+single-ended channel.
+[SPEAKER_00]: That's an inexpensive data logger channel,
+and we can do that because it has a big
+[SPEAKER_00]: signal.
+[SPEAKER_00]: PRTs have such a tiny signal, at the
+minimum we need to take two channels here
+[SPEAKER_00]: on the data logger, but for the best
+accuracy, we need to have two differential
+[SPEAKER_00]: channels, a four wire system to get the
+best accuracy.
+[SPEAKER_00]: Not only is the sensor more expensive,
+but all those channels on the data logger
+[SPEAKER_00]: add cost to the system.
+[SPEAKER_00]: Each channel on a data logger can be
+several hundred dollars, and this takes
+[SPEAKER_00]: four of them compared to one up here.
+[SPEAKER_00]: That's an overlooked cost in this thing,
+is the cost of these channels.
+[SPEAKER_00]: All right, now what do these do?
+[SPEAKER_00]: Here is 96 cycles.
+[SPEAKER_00]: We went from minus 20 to plus 60 C,
+96 times up and down.
+[SPEAKER_00]: The thermistors are shown here in blue,
+the yellow beads.
+[SPEAKER_00]: The PRTs are shown here in red.
+[SPEAKER_00]: See if we can get rid of that.
+[SPEAKER_00]: There we go.
+[SPEAKER_00]: These are shown here in red.
+[SPEAKER_00]: Here's the data.
+[SPEAKER_00]: The thermistors had a slightly bigger
+error in the beginning, and you can see
+[SPEAKER_00]: over the course of the test, the number of
+cycles, they drifted more.
+[SPEAKER_00]: These are offset errors right here,
+so we can take those out and say,
+[SPEAKER_00]: okay, if they all read perfectly,
+what would this graph look like?
+[SPEAKER_00]: So we normalize this, and the thermistors
+are rock solid.
+[SPEAKER_00]: They're better than the class A PRTs.
+[SPEAKER_00]: So for less money, you can get greater
+accuracy with this yellow bead thermistor.
+[SPEAKER_00]: It doesn't mean all thermistors are
+better, just this one that has the epoxy
+[SPEAKER_00]: coating on it, which is the one that
+Apogee has selected to sell.
+[SPEAKER_00]: Now let's take a look.
+[SPEAKER_00]: Remember I said there was better PRTs?
+[SPEAKER_00]: Now let's take a look at some one-tenth
+din PRTs.
+[SPEAKER_00]: How did they do?
+[SPEAKER_00]: These are higher quality, even more
+cycles.
+[SPEAKER_00]: Ten months, 584 cycles, up and down,
+up and down.
+[SPEAKER_00]: The class, the one-tenth din PRTs were
+much better.
+[SPEAKER_00]: This is rock solid.
+[SPEAKER_00]: These are the two replicates right here.
+[SPEAKER_00]: Those were rock solid in this test,
+so it's possible to get good PRTs.
+[SPEAKER_00]: You just have to pay more for them.
+[SPEAKER_00]: So how did these compare to the
+thermistors?
+[SPEAKER_00]: Here's 12 replica thermistors against
+those, 584 cycles, and then we keep going.
+[SPEAKER_00]: We normalize them to zero here because
+there's some offset, and the errors are
+[SPEAKER_00]: less than five one-hundredths of a degree
+C in drift of these sensors over time.
+[SPEAKER_00]: So this is a more comprehensive test to
+help convince us that these yellow bead
+[SPEAKER_00]: thermistors were just rock solid.
+[SPEAKER_00]: So let's look at an application.
+[SPEAKER_00]: How good do you need air temperature,
+and how would these perform in a system in
+[SPEAKER_00]: a severe climate?
+[SPEAKER_00]: It turns out, we're in Logan, Utah,
+so we can look out the window at mountains
+[SPEAKER_00]: that are ten thousand feet, we're five,
+a little under five thousand feet in our
+[SPEAKER_00]: valley.
+[SPEAKER_00]: Some of those mountain climates have very
+severe weather, and one of the most famous
+[SPEAKER_00]: for severe weather is a place called Peter
+Sinks.
+[SPEAKER_00]: It's in a little bowl high up in the
+mountains.
+[SPEAKER_00]: Cold air collects in this sink.
+[SPEAKER_00]: It gets extremely cold, and it's hot in
+the summer, cold in the winter.
+[SPEAKER_00]: How cold does it get?
+[SPEAKER_00]: Look at this.
+[SPEAKER_00]: 1985, we recorded minus 69.3 Fahrenheit up
+there, minus 56.3 C.
+[SPEAKER_00]: This record was the lowest temperature for
+Utah, the record all-time low,
+[SPEAKER_00]: and it was the second coldest temperature
+ever recorded in the continental United
+[SPEAKER_00]: States.
+[SPEAKER_00]: Oh great, second.
+[SPEAKER_00]: What was the coldest?
+[SPEAKER_00]: Rogers Pass in Montana, 69.7 Fahrenheit.
+[SPEAKER_00]: This is 1954, so these are long-term
+records.
+[SPEAKER_00]: Look at the difference.
+[SPEAKER_00]: Here's our second place, minus 69.3.
+[SPEAKER_00]: There's the all-time record, 69.7.
+[SPEAKER_00]: You tell me how much accuracy of sensors
+matters, and in extreme cases,
+[SPEAKER_00]: we got second place by four-tenths of a
+degree Fahrenheit.
+[SPEAKER_00]: That's two-tenths of a degree Celsius.
+[SPEAKER_00]: Measurements matter when you're going for
+an all-time record.
+[SPEAKER_00]: At this site, we have set up a weather
+station that continuously records
+[SPEAKER_00]: temperatures, and we've done test runs
+with the Apogee sensors up here to see how
+[SPEAKER_00]: they do.
+[SPEAKER_00]: Let's take a look at that site.
+[SPEAKER_00]: Here's the site.
+[SPEAKER_00]: This is practically summer up there.
+[SPEAKER_00]: The snow really does melt off in the
+summer, but it's a remote austere site.
+[SPEAKER_00]: Right here is a multi-plate shield that
+are commonly used on these, and then here
+[SPEAKER_00]: is the Apogee aspirated shield.
+[SPEAKER_00]: What we're going to look at is just the
+shield now, and we're going to take a look
+[SPEAKER_00]: right up the bottom of this, like we're
+laying on the snow looking at the bottom.
+[SPEAKER_00]: This is what the bottom looks like,
+and this is the sensors inside of here.
+[SPEAKER_00]: Two yellow beads and two PRTs,
+both in the same shield, so we can do a
+[SPEAKER_00]: rigorous replicate comparison of accuracy
+and stability over a long term in this.
+[SPEAKER_00]: Because they're both fan aspirated,
+they should both be accurate.
+[SPEAKER_00]: How'd they do?
+[SPEAKER_00]: Well, first of all, how severe was the
+weather?
+[SPEAKER_00]: This is a year, almost a year of weather,
+up and down, day and night, day and night.
+[SPEAKER_00]: This has huge swings, hot in the day,
+cold at night.
+[SPEAKER_00]: Here's last winter.
+[SPEAKER_00]: This is two winters ago.
+[SPEAKER_00]: We didn't get the all-time record right.
+[SPEAKER_00]: We got to almost to minus 40 degrees C.
+[SPEAKER_00]: Remember the all-time record is minus 56,
+but it still got cold, and up and down
+[SPEAKER_00]: then finally summer came, and not many
+nights it doesn't freeze up there.
+[SPEAKER_00]: It's a cold place, but these swings are
+enormous, so it's sensors get a beating up
+[SPEAKER_00]: there.
+[SPEAKER_00]: What's the data look like?
+[SPEAKER_00]: Here's that same graph with cycling.
+[SPEAKER_00]: Temperature difference between the two
+replicate thermistors.
+[SPEAKER_00]: Look at the scale on this.
+[SPEAKER_00]: Plus or minus 1C, right on top of each
+other.
+[SPEAKER_00]: Here's the PRTs.
+[SPEAKER_00]: They're also very good.
+[SPEAKER_00]: Plus or minus 0.
+[SPEAKER_00]: Now, focus in on this right here.
+[SPEAKER_00]: This little spike has happened in the
+spring.
+[SPEAKER_00]: This is classic when it happens when a
+speck of moisture gets in there.
+[SPEAKER_00]: Could have been even an insect,
+and it got on one of the sensors and
+[SPEAKER_00]: cooled it off.
+[SPEAKER_00]: This is the average of the two.
+[SPEAKER_00]: It's less than 1 degree C, but this is not
+measurement error.
+[SPEAKER_00]: This is just something momentarily getting
+in the shield and cooling off the sensor.
+[SPEAKER_00]: You can imagine if you put an ice cube on
+a sensor for a fraction of a second,
+[SPEAKER_00]: you'd easily get that.
+[SPEAKER_00]: Even a wet sponge, you'd easily get that
+right to zero.
+[SPEAKER_00]: We're not worried about that.
+[SPEAKER_00]: What we're worried about is this
+stability.
+[SPEAKER_00]: Let's zoom in on this just a bit now.
+[SPEAKER_00]: Just those two graphs, big, even a
+narrower scale.
+[SPEAKER_00]: Plus or minus 0.4 degrees C.
+[SPEAKER_00]: The replicate thermistors are very close
+to each other.
+[SPEAKER_00]: The replicate PRTs are close to each
+other.
+[SPEAKER_00]: These are differences from the mean of all
+four sensors.
+[SPEAKER_00]: Nobody was off by more than about 0.1,
+and they were rock solid over this year
+[SPEAKER_00]: period of this test.
+[SPEAKER_00]: The thermistors were every bit as good as
+the PRTs for stability, but there's one
+[SPEAKER_00]: other concern.
+[SPEAKER_00]: Remember we talked about small is better,
+and the smaller the sensor, the closer it
+[SPEAKER_00]: stays to air temperature.
+[SPEAKER_00]: These are smaller than these.
+[SPEAKER_00]: It's a round end.
+[SPEAKER_00]: Remember in our show and tell here,
+that's not much difference in size,
+[SPEAKER_00]: but if the sun is shining on these,
+this big stainless steel one is going to
+[SPEAKER_00]: heat up more than that tiny little V.
+[SPEAKER_00]: But these are also inside of aspirated
+shields, so the sun shouldn't matter.
+[SPEAKER_00]: But what happened?
+[SPEAKER_00]: Some reflected light bounced off the snow
+and heated these up inside the screen.
+[SPEAKER_00]: Here's what happened.
+[SPEAKER_00]: Compared to the mean of the thermistors,
+the PRTs heated up from solar radiation.
+[SPEAKER_00]: It wasn't big, it was 0.1 degrees C,
+but because they were bigger, they were
+[SPEAKER_00]: less accurate.
+[SPEAKER_00]: This is two examples of the same thing,
+the two replicate PRTs, both of them
+[SPEAKER_00]: heated up.
+[SPEAKER_00]: This is why we really recommend using this
+Apogee yellow bead thermistor in these
+[SPEAKER_00]: applications, even inside of an aspirated
+shield where they're protected.
+[SPEAKER_00]: It saves a lot of money.
+[SPEAKER_00]: If you really need good accuracy,
+put in two replicates.
+[SPEAKER_00]: Two replicate yellow beads, and if they
+don't read the same, you need to go out
+[SPEAKER_00]: and check the site.
+[SPEAKER_00]: You've got a problem.
+[SPEAKER_00]: Two replicate yellow beads is far less
+expensive than one more expensive PRT.
+[SPEAKER_00]: Here's the setup right here.
+[SPEAKER_00]: With that, we're going to conclude this
+session on temperature sensors.
+[SPEAKER_00]: We'll follow up on temperature shields in
+another talk.
+[SPEAKER_00]: Thanks for listening.
+[SPEAKER_00]: We'll see you again soon.
+[SPEAKER_00]: Bye.
+Bye.
+Bye.
+Thank you.
+Thank you.
+Thank you.

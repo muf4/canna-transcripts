@@ -1,0 +1,976 @@
+1
+00:00:00,659 --> 00:00:04,838
+Hello, my name is Schuyler Smith, and I do technical sales and support here at Apogee
+
+2
+00:00:04,839 --> 00:00:05,839
+instruments.
+
+3
+00:00:05,839 --> 00:00:12,550
+And today we're going to talk about the Quickstart guide for the AT-100 µCache with our IRR
+
+4
+00:00:12,550 --> 00:00:17,689
+sensors — our infrared radiometers — that are good for measuring surface temperatures.
+
+5
+00:00:17,689 --> 00:00:23,820
+So in this video, we're going to cover where to download the app from, how to connect the
+
+6
+00:00:23,820 --> 00:00:30,689
+unit, configuring your sensor, and then how to set up logging, and then how to get those
+
+7
+00:00:30,689 --> 00:00:35,140
+logged values off of your sensor.
+
+8
+00:00:35,140 --> 00:00:38,490
+So first off, this is where you will find the app.
+
+9
+00:00:38,490 --> 00:00:42,379
+It's available in the Google Play Store and then the iOS App Store.
+
+10
+00:00:42,378 --> 00:00:47,149
+You'll just type in Apogee Connect, and that is the icon you're looking for.
+
+11
+00:00:47,149 --> 00:00:53,239
+And there's some screenshots that we're going to be going through later on the demonstration.
+
+12
+00:00:53,238 --> 00:00:59,669
+This here is the Quickstart Guide on how to connect it to it and how to add it.
+
+13
+00:00:59,670 --> 00:01:02,429
+We're going to go through each one of these steps individually.
+
+14
+00:01:02,429 --> 00:01:03,659
+This is here for a reference.
+
+15
+00:01:03,659 --> 00:01:06,079
+You can pause the video as needed.
+
+16
+00:01:06,079 --> 00:01:11,840
+This next one is the Quickstart Guide to begin logging — how to set up the logging intervals.
+
+17
+00:01:11,840 --> 00:01:14,329
+And again you can pause here.
+
+18
+00:01:14,329 --> 00:01:16,689
+And then this is the Quickstart Guide to collecting the logs.
+
+19
+00:01:16,689 --> 00:01:20,120
+So after you've set it up for logging and then you go back to it, how do you get those
+
+20
+00:01:20,120 --> 00:01:22,450
+logs off so you can view them on your phone?
+
+21
+00:01:22,450 --> 00:01:23,969
+And so those are the steps there.
+
+22
+00:01:23,969 --> 00:01:36,640
+And we're going to go through each one of these.
+
+23
+00:01:36,640 --> 00:01:40,939
+Okay so this is an iOS version of it, and this is what it's going to look like when
+
+24
+00:01:40,939 --> 00:01:41,939
+you first come in.
+
+25
+00:01:41,939 --> 00:01:44,170
+It’s blank, okay.
+
+26
+00:01:44,170 --> 00:01:47,200
+And that has add device right there.
+
+27
+00:01:47,200 --> 00:01:49,350
+We have our unit µCache here.
+
+28
+00:01:49,349 --> 00:01:50,519
+We have our IR sensor.
+
+29
+00:01:50,519 --> 00:01:53,719
+Now, I actually already have one added on.
+
+30
+00:01:53,719 --> 00:01:57,109
+So that's what it’d look like if you had one added and it’s not connected.
+
+31
+00:01:57,109 --> 00:02:00,140
+But if you don’t have one at all, then this is what it’s going to look like where it's
+
+32
+00:02:00,140 --> 00:02:01,140
+blank.
+
+33
+00:02:01,140 --> 00:02:04,159
+So we are going to go ahead and add it.
+
+34
+00:02:04,159 --> 00:02:09,199
+And the way we do this is we're going to push the green button here until it blinks blue.
+
+35
+00:02:09,199 --> 00:02:10,500
+So now it's blinking blue.
+
+36
+00:02:10,500 --> 00:02:14,490
+Now the app is not looking for it yet, so we have to hit the “+” button.
+
+37
+00:02:14,490 --> 00:02:16,310
+So we hit the “+” button right there.
+
+38
+00:02:16,310 --> 00:02:22,300
+Okay and it comes up and it says “uc1074” and we can look back here and see that is
+
+39
+00:02:22,300 --> 00:02:25,080
+the correct serial number.
+
+40
+00:02:25,080 --> 00:02:31,140
+So just for convenience I'm going to add this quick platform there.
+
+41
+00:02:31,139 --> 00:02:36,219
+And now we'll go ahead and add it.
+
+42
+00:02:36,219 --> 00:02:40,359
+Alright and we see it comes up as an SP-110, which is incorrect.
+
+43
+00:02:40,360 --> 00:02:46,190
+We know this is a SI-121, and we can look at our cal sheet that came with the unit to
+
+44
+00:02:46,189 --> 00:02:49,639
+know which model we're connecting, which one we had bought.
+
+45
+00:02:49,639 --> 00:02:59,059
+So we choose model, but actually it just is any — whether it's an SI-111, 121, 131,
+
+46
+00:02:59,060 --> 00:03:00,650
+or 1H1.
+
+47
+00:03:00,650 --> 00:03:03,390
+We just do the SI-1XX.
+
+48
+00:03:03,389 --> 00:03:04,979
+So we click there.
+
+49
+00:03:04,979 --> 00:03:11,199
+And now it's asking us for the M coefficients and the B coefficient, which we can see over
+
+50
+00:03:11,199 --> 00:03:16,189
+here on our sheet this top row and this bottom row.
+
+51
+00:03:16,189 --> 00:03:18,490
+And it really... as you can see these are the same.
+
+52
+00:03:18,490 --> 00:03:22,860
+They're just written in different multiples of each other.
+
+53
+00:03:22,860 --> 00:03:25,160
+So we'll go ahead and just do this.
+
+54
+00:03:25,159 --> 00:03:26,599
+CRBasic model.
+
+55
+00:03:26,599 --> 00:03:34,539
+So for the C2 it says we need... so we'll hit clear... and then we'll do 2-0-1-0-1-5.
+
+56
+00:03:34,539 --> 00:03:54,099
+C1 we hit clear 1-9-3-2-4-7-0-0.
+
+57
+00:03:54,099 --> 00:03:55,370
+Next one C0.
+
+58
+00:03:55,370 --> 00:04:06,240
+Clear that out, and this is 3-1-2-5-1-6-0-0-0-0.
+
+59
+00:04:06,240 --> 00:04:07,730
+Come down here to C2.
+
+60
+00:04:07,729 --> 00:04:08,969
+Clear that out.
+
+61
+00:04:08,969 --> 00:04:11,460
+Actually the B coefficients of C2.
+
+62
+00:04:11,460 --> 00:04:14,790
+So we have 1-6-8-9-.7.
+
+63
+00:04:14,789 --> 00:04:25,259
+C1, clear that out, 1-6-2-9-0-6.
+
+64
+00:04:25,259 --> 00:04:27,529
+And then right here we'll hit clear.
+
+65
+00:04:27,529 --> 00:04:28,829
+Now we need a negative.
+
+66
+00:04:28,829 --> 00:04:38,560
+So on iOS I just hit the negative button right there and then 1-8-6-8-3-7-0.
+
+67
+00:04:38,560 --> 00:04:39,959
+Then I hit done.
+
+68
+00:04:39,959 --> 00:04:46,489
+Now if I want to give it a name as well, and we can just name it right now, let's just
+
+69
+00:04:46,490 --> 00:04:49,360
+name it, you know, “desk.”
+
+70
+00:04:49,360 --> 00:04:53,160
+Okay just so we know which one we're talking about.
+
+71
+00:04:53,160 --> 00:04:55,630
+And then we can add it.
+
+72
+00:04:55,629 --> 00:04:59,779
+Okay so we see that it's at a desk, and we see that it's giving us some values right
+
+73
+00:04:59,779 --> 00:05:03,839
+here.
+
+74
+00:05:03,839 --> 00:05:09,779
+So let's go into it... and there we go.
+
+75
+00:05:09,779 --> 00:05:16,339
+So now before when it said 24.1 that means I had not loaded the calibration coefficients,
+
+76
+00:05:16,339 --> 00:05:17,339
+but now it has.
+
+77
+00:05:17,339 --> 00:05:23,019
+And if we went back out to that screen, now it's finally updated saying okay we're calculating
+
+78
+00:05:23,019 --> 00:05:26,099
+those values based off what you input.
+
+79
+00:05:26,100 --> 00:05:28,400
+So let's go into it.
+
+80
+00:05:28,399 --> 00:05:30,918
+So this is our home screen okay.
+
+81
+00:05:30,918 --> 00:05:34,948
+It says logs available for collection 2300.
+
+82
+00:05:34,949 --> 00:05:38,420
+Now in our case we don't believe that.
+
+83
+00:05:38,420 --> 00:05:41,629
+That must've been previous, so we'll clear that out.
+
+84
+00:05:41,629 --> 00:05:43,939
+That's fine.
+
+85
+00:05:43,939 --> 00:05:46,219
+Clear that to zero.
+
+86
+00:05:46,220 --> 00:05:52,389
+Now down here these values will not update until we get logged data in here.
+
+87
+00:05:52,389 --> 00:05:58,960
+So you can tell that we don't have any logged data saved to the app to look at, so that
+
+88
+00:05:58,959 --> 00:06:02,728
+is why it says January 1, 1970.
+
+89
+00:06:02,728 --> 00:06:05,279
+Let's go to live meter mode first.
+
+90
+00:06:05,279 --> 00:06:06,849
+So we go to live meter mode.
+
+91
+00:06:06,850 --> 00:06:10,970
+Now we can get our dynamic graph here that is changing okay.
+
+92
+00:06:10,970 --> 00:06:19,000
+And based on this, again we're just in here in our studio, and we can see that our temperature
+
+93
+00:06:19,000 --> 00:06:21,569
+and our surface temperature are about the same.
+
+94
+00:06:21,569 --> 00:06:27,459
+Now if I put my hand in front of the unit here, so now we're measuring my outside temperature
+
+95
+00:06:27,459 --> 00:06:33,899
+of my hand, we can see that it's somewhere around 27 to 28 degrees Celsius.
+
+96
+00:06:33,899 --> 00:06:36,479
+And we can change that.
+
+97
+00:06:36,480 --> 00:06:39,379
+And the graph is going to change accordingly.
+
+98
+00:06:39,379 --> 00:06:42,341
+And you can see the sensor body is nearly identical.
+
+99
+00:06:42,341 --> 00:06:44,550
+I mean that's very small changes.
+
+100
+00:06:44,550 --> 00:06:49,579
+But obviously just being closer to that did increase that sensor body temperature a little
+
+101
+00:06:49,579 --> 00:06:51,609
+bit as well.
+
+102
+00:06:51,610 --> 00:06:56,199
+Now the important thing about these graphs are it is not logging.
+
+103
+00:06:56,199 --> 00:07:01,240
+This is just live data right now since we came in and pushed live.
+
+104
+00:07:01,240 --> 00:07:06,509
+If I go out of this and I go back here and then I go back to live meter it has reset
+
+105
+00:07:06,509 --> 00:07:12,009
+okay, and so now it is logging again just giving us our spot measurements at our current
+
+106
+00:07:12,009 --> 00:07:13,169
+location.
+
+107
+00:07:13,168 --> 00:07:19,839
+And again it will just dynamically change with that, and we can see those graphs.
+
+108
+00:07:19,839 --> 00:07:25,129
+Now if we want to record individual points, this comes down here, and we just hit record
+
+109
+00:07:25,129 --> 00:07:26,290
+current value.
+
+110
+00:07:26,290 --> 00:07:31,590
+Okay so I did a time date and then it gave us our surface temperature and then it gives
+
+111
+00:07:31,589 --> 00:07:33,459
+us our sensor body temperature.
+
+112
+00:07:33,459 --> 00:07:37,709
+And then if we want to record value here, we can see that surface temperature sensor
+
+113
+00:07:37,709 --> 00:07:41,099
+body temperature, and we just hit record in values.
+
+114
+00:07:41,100 --> 00:07:43,570
+Now if we want to export data we hit export.
+
+115
+00:07:43,569 --> 00:07:46,459
+It comes up with the line item of each one.
+
+116
+00:07:46,459 --> 00:07:49,750
+And then we just hit that familiar button up there, which is the share button, which
+
+117
+00:07:49,750 --> 00:07:54,060
+will allow us to just attach that straight to an email and email that to ourselves.
+
+118
+00:07:54,060 --> 00:07:58,360
+So this is live meter mode.
+
+119
+00:07:58,360 --> 00:08:03,639
+Perfect to verify that our coefficients are in and perfect to see spot measurements.
+
+120
+00:08:03,639 --> 00:08:11,709
+Okay so now currently it is updating that average — averaging every second.
+
+121
+00:08:11,709 --> 00:08:14,069
+Let's say we wanted to go 5 seconds.
+
+122
+00:08:14,069 --> 00:08:19,829
+So if we go back to home here, and then we click on settings.
+
+123
+00:08:19,829 --> 00:08:21,779
+And then we're gonna go through each one of these settings.
+
+124
+00:08:21,779 --> 00:08:26,159
+But first let's look at live data averaging, which is about the third one down here on
+
+125
+00:08:26,160 --> 00:08:28,139
+settings as we scroll down.
+
+126
+00:08:28,139 --> 00:08:30,610
+And this is averaging samples over one second.
+
+127
+00:08:30,610 --> 00:08:35,009
+So if we move this over to 5, and it can go as high as 30 seconds.
+
+128
+00:08:35,009 --> 00:08:42,209
+Okay so we go to 5 okay, and then we come back here to live meter.
+
+129
+00:08:42,208 --> 00:08:50,399
+So now it's doing 5-second averaging to get all the way up there to that 28.
+
+130
+00:08:50,399 --> 00:08:57,149
+So it was increasing because it was still doing, still takes the 5 seconds averaging
+
+131
+00:08:57,149 --> 00:08:58,889
+before it got up there to the 28.
+
+132
+00:08:58,889 --> 00:09:08,089
+And we'll see that slowly fall off as well just based on the 5-second averaging.
+
+133
+00:09:08,089 --> 00:09:12,300
+All right so that is live meter mode, and again it's giving us those same values that
+
+134
+00:09:12,299 --> 00:09:15,789
+we'd see in live meter right up here under current reading.
+
+135
+00:09:15,789 --> 00:09:19,088
+So let's go through settings now.
+
+136
+00:09:19,089 --> 00:09:23,110
+Now just in case you wonder if you entered your coefficients wrong because that was a
+
+137
+00:09:23,110 --> 00:09:27,220
+lot of numbers, they are always available right here under settings.
+
+138
+00:09:27,220 --> 00:09:32,370
+So you can pull up your sheet and double-check yourself anytime.
+
+139
+00:09:32,370 --> 00:09:39,139
+Now if for any reason you lose your cal sheet, just email us at techsupport@apogeeinstruments.com
+
+140
+00:09:39,139 --> 00:09:45,139
+and we can email this information over to you and you can re-enter it into your µCache.
+
+141
+00:09:45,139 --> 00:09:47,730
+So everything looks good there.
+
+142
+00:09:47,730 --> 00:09:50,480
+Logging enabled is turned off currently.
+
+143
+00:09:50,480 --> 00:09:54,220
+We'll come back to that and turn that on and set that up in a little while.
+
+144
+00:09:54,220 --> 00:09:56,860
+We talked about live data averaging.
+
+145
+00:09:56,860 --> 00:09:59,289
+Here's some points here.
+
+146
+00:09:59,289 --> 00:10:02,688
+The battery level says 100%.
+
+147
+00:10:02,688 --> 00:10:07,318
+This is not very accurate, so do not trust that level.
+
+148
+00:10:07,318 --> 00:10:12,629
+You can email us at tech support if you have any questions about your battery levels.
+
+149
+00:10:12,629 --> 00:10:16,259
+Okay hardware and firmware version okay.
+
+150
+00:10:16,259 --> 00:10:18,019
+And then match current time.
+
+151
+00:10:18,019 --> 00:10:24,278
+So what you want is you want the time on your phone to match the time on your logger, and
+
+152
+00:10:24,278 --> 00:10:28,058
+so you just hit match current time and then it goes through and it just makes sure that
+
+153
+00:10:28,058 --> 00:10:31,139
+those two sync up together.
+
+154
+00:10:31,139 --> 00:10:33,789
+Now down here is update sensor firmware.
+
+155
+00:10:33,789 --> 00:10:36,578
+Always a good idea when it's new to go ahead and click this.
+
+156
+00:10:36,578 --> 00:10:39,758
+Even if you have the latest it's not going to hurt anything.
+
+157
+00:10:39,759 --> 00:10:44,259
+So right now it says version on device is 5 — can update to version 5.
+
+158
+00:10:44,259 --> 00:10:47,550
+I know you can't see that because it's very light on that screen.
+
+159
+00:10:47,549 --> 00:10:49,289
+But you'll see that on your own.
+
+160
+00:10:49,289 --> 00:10:54,480
+So if I hit start, then down here you can see that it's going through some things.
+
+161
+00:10:54,480 --> 00:10:56,289
+It's gone red here.
+
+162
+00:10:56,289 --> 00:10:58,379
+So it's going through the bootloader.
+
+163
+00:10:58,379 --> 00:11:02,209
+It's uploading the current version of firmware here.
+
+164
+00:11:02,208 --> 00:11:06,539
+Okay and then it's going to come down here… and completed.
+
+165
+00:11:06,539 --> 00:11:10,379
+Now you'll notice it's not complete until the start button goes green because that means
+
+166
+00:11:10,379 --> 00:11:13,360
+it reconnected to it again after it reset itself.
+
+167
+00:11:13,360 --> 00:11:18,568
+So we are all set on the firmware.
+
+168
+00:11:18,568 --> 00:11:20,198
+So that's your basic rundown on settings.
+
+169
+00:11:20,198 --> 00:11:24,039
+Dark threshold — that doesn't affect IR readings.
+
+170
+00:11:24,039 --> 00:11:29,299
+And then notify when full — you can click on that so that once those 400,000 data points
+
+171
+00:11:29,299 --> 00:11:33,219
+have been filled and you login and connect to it, it will give you that notice.
+
+172
+00:11:33,220 --> 00:11:36,778
+So you can turn that on as you as you want.
+
+173
+00:11:36,778 --> 00:11:38,588
+Now logging enabled.
+
+174
+00:11:38,589 --> 00:11:43,569
+So we want to set this up so that it can log.
+
+175
+00:11:43,568 --> 00:11:48,299
+Now on the QuickStart instructions as we said we recommend 15 minute log times so you can
+
+176
+00:11:48,299 --> 00:11:52,109
+get your 6-9 month battery life out of the µCache.
+
+177
+00:11:52,110 --> 00:11:54,899
+If you do less than that then it's going to shorten it.
+
+178
+00:11:54,899 --> 00:11:59,839
+If you go as short as minutes, then you will reduce the life down to weeks.
+
+179
+00:11:59,839 --> 00:12:04,999
+If you go to 1 second, it may be 1 week long is all the battery will last on this.
+
+180
+00:12:04,999 --> 00:12:11,459
+So make sure as you're setting up your logging interval and your sampling intervals that
+
+181
+00:12:11,458 --> 00:12:12,539
+you're aware of that.
+
+182
+00:12:12,539 --> 00:12:15,259
+So again we just have this one set up.
+
+183
+00:12:15,259 --> 00:12:24,079
+I'm going to go out to to 1 minute and I'm going to go logging interval 15 minutes...
+
+184
+00:12:24,078 --> 00:12:31,099
+so get this on 1 minute get this down to 15 minutes.
+
+185
+00:12:31,100 --> 00:12:37,699
+All right so it's gonna average twelve samples to average and then it's going to log that
+
+186
+00:12:37,698 --> 00:12:39,409
+average every 15 minutes.
+
+187
+00:12:39,409 --> 00:12:42,240
+Okay now until I hit save it is not enabled.
+
+188
+00:12:42,240 --> 00:12:47,579
+And then once I hit save, it has now saved it and it is now logging internally in here.
+
+189
+00:12:47,578 --> 00:12:50,789
+Okay so our logging is all set up.
+
+190
+00:12:50,789 --> 00:12:56,349
+So if we come back here, it says zero for collection because it is waiting to do that
+
+191
+00:12:56,350 --> 00:12:58,680
+every minute.
+
+192
+00:12:58,679 --> 00:13:03,979
+Okay so then we deploy it, set it up wherever we want, and then let's come back in an hour
+
+193
+00:13:03,980 --> 00:13:08,259
+or two hours — whatever our plan is — and we want to collect the logs.
+
+194
+00:13:08,259 --> 00:13:12,298
+So we go right here to collect logs.
+
+195
+00:13:12,298 --> 00:13:16,480
+And we want to be on create new because this is the first time we're getting our logs.
+
+196
+00:13:16,480 --> 00:13:22,720
+Okay and we can set the date... okay… so we can set it.
+
+197
+00:13:22,720 --> 00:13:25,239
+So let's do June 2020.
+
+198
+00:13:25,239 --> 00:13:27,649
+Or you can set to the date.
+
+199
+00:13:27,649 --> 00:13:29,688
+Whatever you want.
+
+200
+00:13:29,688 --> 00:13:43,149
+Start time, okay, so if we set the start time to… okay... set time to the beginning.
+
+201
+00:13:43,149 --> 00:13:46,028
+And then if we collect logs up to today it will say
+
+202
+00:13:46,028 --> 00:13:52,850
+logs remaining 65,000 because from since this sensor’s been used there are 65,000 logs
+
+203
+00:13:52,850 --> 00:13:53,850
+on it okay.
+
+204
+00:13:53,850 --> 00:13:56,670
+So it's going to go through and download each one of those.
+
+205
+00:13:56,669 --> 00:13:58,778
+Now that's going to take quite a while.
+
+206
+00:13:58,778 --> 00:14:02,338
+And then it will graph it down here below... and then it will graph it down here below,
+
+207
+00:14:02,339 --> 00:14:04,339
+and you'll be able to see that.
+
+208
+00:14:04,339 --> 00:14:12,170
+Alright so we'll go ahead and we're going to set that one aside, and then we're going
+
+209
+00:14:12,169 --> 00:14:20,248
+to look at this one on how to append logs and what logged data would actually look like.
+
+210
+00:14:20,249 --> 00:14:27,709
+So right here we have it here in front of us, and we can see it's a road temp in the
+
+211
+00:14:27,708 --> 00:14:28,958
+front.
+
+212
+00:14:28,958 --> 00:14:31,599
+So what we want to do is we want to connect to it.
+
+213
+00:14:31,600 --> 00:14:35,470
+So we're going to push the button down until it blinks blue.
+
+214
+00:14:35,470 --> 00:14:36,790
+Wait for it.
+
+215
+00:14:36,789 --> 00:14:38,278
+And it said connected right up.
+
+216
+00:14:38,278 --> 00:14:43,129
+So we see right here, we have our two data points here, our target temperature, and our
+
+217
+00:14:43,129 --> 00:14:44,859
+sensor body temperature.
+
+218
+00:14:44,859 --> 00:14:46,679
+we go into it okay.
+
+219
+00:14:46,678 --> 00:14:52,480
+And it says logs available for collection is one.
+
+220
+00:14:52,480 --> 00:14:58,909
+But we actually... so if we go to collect logs... now I know that there is actually
+
+221
+00:14:58,909 --> 00:15:04,358
+a week's worth of data on this where we were measuring the temperature of just our walkway
+
+222
+00:15:04,359 --> 00:15:06,579
+out front here in the summertime.
+
+223
+00:15:06,578 --> 00:15:09,088
+So if I go start date.
+
+224
+00:15:09,089 --> 00:15:11,720
+And I go to create new.
+
+225
+00:15:11,720 --> 00:15:14,850
+And I can dataset 5.
+
+226
+00:15:14,850 --> 00:15:20,369
+So let's just say “studio demo” just to name it something.
+
+227
+00:15:20,369 --> 00:15:28,989
+Okay and then for the start time let's go back a week to Thursday, and then end time
+
+228
+00:15:28,989 --> 00:15:29,989
+today.
+
+229
+00:15:29,989 --> 00:15:33,600
+Okay and then I hit collect logs.
+
+230
+00:15:33,600 --> 00:15:52,168
+Okay I can see that the collect logs... clicked start time... create new… go back a week...
+
+231
+00:15:52,168 --> 00:16:11,798
+Thursday... let's do midnight...  to today... collect logs…
+
+232
+00:16:11,798 --> 00:16:24,250
+Okay so it is saying that the only data it has is 3 days.
+
+233
+00:16:24,250 --> 00:16:30,028
+So the data that I was looking for is no longer... was erased off before the presentation.
+
+234
+00:16:30,028 --> 00:16:34,980
+But, nevertheless, we have our data points from the last three days as well as the data
+
+235
+00:16:34,980 --> 00:16:37,778
+point that it had logged in here.
+
+236
+00:16:37,778 --> 00:16:41,859
+So anytime we want to get new data points, we just hit collect logs, make sure it's on
+
+237
+00:16:41,859 --> 00:16:45,139
+append to existing, and then we will collect logs.
+
+238
+00:16:45,139 --> 00:16:48,850
+It says there are currently zero available to log.
+
+239
+00:16:48,850 --> 00:16:51,949
+And then down here we can see our sensor body temperature.
+
+240
+00:16:51,948 --> 00:16:59,088
+And then if we want to export that data, we go to view data, we click here, and then we
+
+241
+00:16:59,089 --> 00:17:03,069
+can go ahead and get those data points.
+
+242
+00:17:03,068 --> 00:17:11,079
+Alright, well that concludes our Quickstart Guide for the IR sensor with the µCache.
+
+243
+00:17:11,079 --> 00:17:14,079
+If you have any questions just email us at techsupport@apogeeinstruments.com.
+
+244
+00:17:14,079 --> 00:17:16,099
+Thank you.
+

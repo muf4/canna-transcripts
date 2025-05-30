@@ -1,0 +1,1648 @@
+1
+00:00:20,719 --> 00:00:26,399
+I'm going to talk about net radiation specifically the four components and
+
+2
+00:00:26,399 --> 00:00:32,869
+then selection among sensors. Bruce will talk a bit about radiation frost and
+
+3
+00:00:32,869 --> 00:00:36,329
+non-destructive measurements of leaf chlorophyll, and then I'll talk about
+
+4
+00:00:36,329 --> 00:00:42,660
+hyper spectral reflectance. If we get that far and if people are interested, we
+
+5
+00:00:42,659 --> 00:00:47,968
+can speak a bit about soil oxygen and barometric pressure. We'll just see
+
+6
+00:00:47,969 --> 00:00:55,500
+where we're at after we get to the end of the reflectance stuff. As
+
+7
+00:00:55,500 --> 00:01:03,628
+long as interest is still there, people's eyes are open at that point. Alright so
+
+8
+00:01:03,628 --> 00:01:09,599
+as before if you have any questions please feel free to ask, I don't have
+
+9
+00:01:09,599 --> 00:01:16,228
+that many slides this time I might make use of the of the board. A lot of
+
+10
+00:01:16,228 --> 00:01:21,829
+what we've covered already when we talked about pyrometers and infrared
+
+11
+00:01:21,829 --> 00:01:28,560
+radiometers relates directly to net radiometers, the instruments that we use
+
+12
+00:01:28,560 --> 00:01:33,868
+to measure net radiation. We won't talk maybe as much about principles of
+
+13
+00:01:33,868 --> 00:01:43,069
+sensors in the in the net radiation section.
+
+14
+00:01:43,769 --> 00:01:49,840
+Net radiation is just the difference between incoming radiation at the
+
+15
+00:01:49,840 --> 00:01:55,329
+surface and outgoing radiation at the surface. There are both short wave
+
+16
+00:01:55,329 --> 00:02:02,950
+and long ways components that we have to consider. I passed out a magnet if you
+
+17
+00:02:02,950 --> 00:02:06,400
+don't have one there's more down here and you're free to take one. It has the
+
+18
+00:02:06,400 --> 00:02:11,920
+exact same picture that you that you see right here. These are typical values of
+
+19
+00:02:11,919 --> 00:02:16,979
+the four different components that make up net radiation this would be
+
+20
+00:02:16,979 --> 00:02:25,060
+representative of a clear summer day over vegetation near solar noon so when
+
+21
+00:02:25,060 --> 00:02:30,340
+the Sun is in the middle of the sky.  The largest component of net radiation
+
+22
+00:02:30,340 --> 00:02:37,349
+is the incoming shortwave component, 1000 watts per meter squared is a reasonable
+
+23
+00:02:37,349 --> 00:02:45,879
+value for midday in the summertime. Then the vegetation or soil whatever is at
+
+24
+00:02:45,879 --> 00:02:50,650
+the surface in the summertime usually its vegetation, is a good absorber of
+
+25
+00:02:50,650 --> 00:02:57,310
+shortwave radiation so a much smaller amount is being reflected about 200
+
+26
+00:02:57,310 --> 00:03:03,789
+watts per meter squared is a good estimate for vegetation. The
+
+27
+00:03:03,789 --> 00:03:08,069
+difference between these two the incoming shortwave minus the outgoing
+
+28
+00:03:08,069 --> 00:03:15,099
+shortwave is net shortwave so we have a positive value of 800 watts per meter
+
+29
+00:03:15,099 --> 00:03:21,310
+squared, net shortwave at the surface. A term that you're probably all familiar
+
+30
+00:03:21,310 --> 00:03:28,509
+with is albedo. That's the the broadband shortwave reflectivity.
+
+31
+00:03:28,509 --> 00:03:33,669
+Essentially it's just the ratio of these two numbers in our example would be 200
+
+32
+00:03:33,669 --> 00:03:40,839
+divided by 1000. It's the reflected shortwave divided by the incoming shortwave that would be
+
+33
+00:03:40,840 --> 00:03:45,909
+0.2 or 20 %. That's a really reasonable value for for green
+
+34
+00:03:45,909 --> 00:03:50,930
+vegetation when the Sun is in the middle of the sky.
+
+35
+00:03:50,930 --> 00:03:55,680
+Now we switch over to the long-wave slide. We also have an incoming longwave
+
+36
+00:03:55,680 --> 00:04:01,799
+component and an emitted longwave component. If the sky is cloud free,
+
+37
+00:04:01,799 --> 00:04:07,260
+and a lot of you are just outside with me pointing infrared sensors up and
+
+38
+00:04:07,259 --> 00:04:12,328
+measuring the sky was quite cold, but we found that the clouds were a bit warmer
+
+39
+00:04:12,329 --> 00:04:22,259
+than the blue sky. The sky is emitting longwave radiation towards the
+
+40
+00:04:22,259 --> 00:04:27,538
+surface and the surface is emitting longwave radiation back towards the sky.
+
+41
+00:04:27,538 --> 00:04:32,610
+The reason the incoming radiation from the sky is lower than the emitted
+
+42
+00:04:32,610 --> 00:04:39,060
+radiation from the surface is the sky is colder than the ground surface. At least it
+
+43
+00:04:39,060 --> 00:04:42,810
+typically always is in them in the summertime especially if the sky is
+
+44
+00:04:42,810 --> 00:04:47,970
+clear. If it's cloudy, they can be pretty close and these numbers can be a lot
+
+45
+00:04:47,970 --> 00:04:57,419
+closer. If we were to actually take the measurements that we are making
+
+46
+00:04:57,418 --> 00:05:02,759
+outside, I think a lot of us were seeing like -20 or -30 Celsius for
+
+47
+00:05:02,759 --> 00:05:06,329
+the sky temperature that we were measuring with those infrared sensors,
+
+48
+00:05:06,329 --> 00:05:11,370
+and we put that temperature in the Stefan Boltzmann equation, let me just
+
+49
+00:05:11,370 --> 00:05:15,899
+write that over here on the board it was in an earlier slide but just to remind
+
+50
+00:05:15,899 --> 00:05:18,288
+everyone.
+
+51
+00:05:29,680 --> 00:05:39,550
+Energy is equal to a constant that we use is sigma multiplied by the absolute temperature
+
+52
+00:05:39,550 --> 00:05:45,410
+raised to the fourth power. If we were to take one of our measurements outside,
+
+53
+00:05:45,410 --> 00:05:50,480
+we'll just say the blue sky was negative 30 Celsius and we were to plug it into this
+
+54
+00:05:50,480 --> 00:05:56,660
+equation we would get a number that's a lot lower than 300 watts per meter
+
+55
+00:05:56,660 --> 00:06:02,540
+squared. The reason why is those infrared radiometers we were using outside
+
+56
+00:06:02,540 --> 00:06:09,050
+they're only measuring the wavelengths between 8 and 14 micron. You remember
+
+57
+00:06:09,050 --> 00:06:13,910
+from the infrared presentation that I gave this morning when we're trying to
+
+58
+00:06:13,910 --> 00:06:19,970
+measure temperature we have to have sensors to have a filter over them that
+
+59
+00:06:19,970 --> 00:06:25,010
+only gives us 8 to 14 micron because that's the atmospheric window where the
+
+60
+00:06:25,009 --> 00:06:29,029
+sensor can effectively see through the atmosphere to the surface that we're
+
+61
+00:06:29,029 --> 00:06:33,409
+trying to measure the temperature of. When we're trying to measure net
+
+62
+00:06:33,410 --> 00:06:40,490
+radiation we don't want the 8 to 14 micron filter on our longwave
+
+63
+00:06:40,490 --> 00:06:46,090
+radiation sensors because we're trying to measure all of the radiation
+
+64
+00:06:46,089 --> 00:06:50,689
+coming from either the atmosphere or the land surface. We're not that interested
+
+65
+00:06:50,689 --> 00:06:55,550
+in the temperature in other words and we  we don't want to see
+
+66
+00:06:55,550 --> 00:06:58,850
+through the atmosphere and measure the cold temperature we want to actually
+
+67
+00:06:58,850 --> 00:07:03,020
+capture the radiation coming from the air molecules and the clouds and
+
+68
+00:07:03,019 --> 00:07:09,919
+everything in in the air. Longwave sensors don't have an 8 to 14
+
+69
+00:07:09,920 --> 00:07:16,040
+micron sensor on them like the infrared temperature sensor does. That's why
+
+70
+00:07:16,040 --> 00:07:22,040
+if we were to plug in - 30 Celsius here we wouldn't get 300 watts
+
+71
+00:07:22,040 --> 00:07:25,819
+per meter squared. I can't remember what -30 Celsius is when we plug into
+
+72
+00:07:25,819 --> 00:07:31,009
+the Stefan Boltzmann equation, but it's a lot closer to like 150 or 200 watts per
+
+73
+00:07:31,009 --> 00:07:36,569
+meter squared. With that being said, the sky we're
+
+74
+00:07:36,569 --> 00:07:41,969
+talking about all of the long-wave wavelengths, the sky is still colder than
+
+75
+00:07:41,970 --> 00:07:47,040
+the ground surface and so there's less longwave coming in from the sky
+
+76
+00:07:47,040 --> 00:07:51,240
+than what's being emitted from the surface. In this example, the net longwave
+
+77
+00:07:51,240 --> 00:07:57,180
+radiation is - 150 watts per meter squared. Net radiation then
+
+78
+00:07:57,180 --> 00:08:02,939
+is just the sum of these two numbers net shortwave plus net longwave gives
+
+79
+00:08:02,939 --> 00:08:12,269
+us net radiation that's 650 watts per meter squared. Essentially that's
+
+80
+00:08:12,269 --> 00:08:19,889
+what our equation here says. The symbol we use for shortwave is shortwave (SW)
+
+81
+00:08:19,889 --> 00:08:26,490
+and then subscript "I" for incoming subscript "O" for outgoing. The symbol for longwave
+
+82
+00:08:26,490 --> 00:08:35,820
+is LW same subscript. Any ideas of what these values will look like for
+
+83
+00:08:35,820 --> 00:08:50,210
+the winter over snow? Everybody has the magnet but don't cheat.
+
+84
+00:08:50,210 --> 00:08:54,480
+Exactly right so you're going to get a lot greater reflectance here because
+
+85
+00:08:54,480 --> 00:08:59,580
+it's snow on the surface instead of vegetation. The albedo of snow is often
+
+86
+00:08:59,580 --> 00:09:05,310
+around 0.7 or 0.8 if the snow is kind of old and dirty or like
+
+87
+00:09:05,309 --> 00:09:09,539
+0.8 to even 0.9 if the snow is fresh, it's really
+
+88
+00:09:09,539 --> 00:09:14,129
+reflective. How does this one change? We know there's going to be greater
+
+89
+00:09:14,129 --> 00:09:20,278
+reflected radiation but how does this one change in the winter?
+
+90
+00:09:20,278 --> 00:09:27,720
+Yeah but you're cheating you've got the magnet. No I'm kidding. It's okay.
+
+91
+00:09:27,720 --> 00:09:31,259
+We all know that the seasons change right and the reason the seasons change
+
+92
+00:09:31,259 --> 00:09:36,089
+is because the sun angles get much lower in the winter versus summer.  This
+
+93
+00:09:36,089 --> 00:09:40,199
+number gets a lot lower just because the Sun is at a much lower angle, it's winter.
+
+94
+00:09:40,198 --> 00:09:48,870
+If this guy is lower, we have less overall shortwave coming in, but we have
+
+95
+00:09:48,870 --> 00:09:52,339
+a much larger reflected component because they have snow on the surface.
+
+96
+00:09:52,339 --> 00:10:01,499
+What about these two how does a change in wintertime? Remember these ones are
+
+97
+00:10:01,499 --> 00:10:08,610
+dependent on temperatures. Exactly it's colder in the winter than it is in
+
+98
+00:10:08,610 --> 00:10:13,289
+the summer. The sky gets a little bit colder and this number gets smaller
+
+99
+00:10:13,289 --> 00:10:19,019
+but not a lot. The surface actually gets a lot colder so this number gets quite a
+
+100
+00:10:19,019 --> 00:10:26,669
+bit smaller. Now if we look at, and everybody has has the magnet, reasonable
+
+101
+00:10:26,669 --> 00:10:32,849
+values for the middle of the winter in the middle of the day over a
+
+102
+00:10:32,850 --> 00:10:37,920
+snow-covered surface incoming shortwave is only about 40 % of what it
+
+103
+00:10:37,919 --> 00:10:42,958
+is in the summer, 400 watts per meter squared. The reflected component is a lot
+
+104
+00:10:42,958 --> 00:10:50,818
+bigger because the the snow has a high albedo. Somebody that can do math in
+
+105
+00:10:50,818 --> 00:10:59,000
+their head what's 350 divided by 400. That's about 0.85 roughly, I think. Yeah,
+
+106
+00:10:59,000 --> 00:11:06,058
+0.875 is right. The albedo in this example is almost ninety percent that's
+
+107
+00:11:06,058 --> 00:11:13,139
+a high reflectivity then you can see the incoming longwave from the sky does go
+
+108
+00:11:13,139 --> 00:11:18,058
+down a little bit but not as much as the outgoing longwave from the surface.
+
+109
+00:11:18,058 --> 00:11:20,969
+Essentially in the wintertime the sky temperature and the surface temperature
+
+110
+00:11:20,970 --> 00:11:25,949
+are closer to the same value and they're both cold. Our net shortwave here is
+
+111
+00:11:25,948 --> 00:11:32,159
+positive 50 our net longwave there is negative 50 and so the net radiation is
+
+112
+00:11:32,159 --> 00:11:38,069
+actually 0 in this example. This is
+
+113
+00:11:38,070 --> 00:11:48,240
+true of the middle of the winter. What about at night, what happens?
+
+114
+00:11:48,240 --> 00:11:54,389
+Essentially the yellow arrows and the yellow numbers go away and we only have
+
+115
+00:11:54,389 --> 00:11:59,909
+longwave at night. If we only have longwave at night, that means net
+
+116
+00:11:59,909 --> 00:12:06,689
+radiation is a negative number at night, and that's why it cools off a lot at
+
+117
+00:12:06,690 --> 00:12:13,620
+night. The surface is now losing energy to the atmosphere rather than gaining
+
+118
+00:12:13,620 --> 00:12:20,839
+energy as in the day.
+
+119
+00:12:21,879 --> 00:12:28,549
+The reason that we are interested in measuring net radiation is it's a
+
+120
+00:12:28,549 --> 00:12:34,338
+major driver of surface processes. I kind of have just explained one heating and
+
+121
+00:12:34,339 --> 00:12:40,070
+cooling but another one is evapotranspiration. In many cases net
+
+122
+00:12:40,070 --> 00:12:44,360
+radiation is the biggest driver or the biggest contributor to
+
+123
+00:12:44,360 --> 00:12:48,649
+evapotranspiration. Vapor pressure deficit, which Bruce talked about a lot
+
+124
+00:12:48,649 --> 00:12:53,059
+this morning is another one of the major drivers of evapotranspiration.
+
+125
+00:12:53,059 --> 00:12:57,679
+There's lots of reasons that net radiation could be applicable especially
+
+126
+00:12:57,679 --> 00:13:04,519
+in environmental and ecological studies Here's a slide showing the
+
+127
+00:13:04,519 --> 00:13:09,679
+surface energy balance and here's a simple surface energy balance equation.
+
+128
+00:13:09,679 --> 00:13:16,609
+Net radiation is a major component. We won't consider the radiation terms in
+
+129
+00:13:16,610 --> 00:13:20,209
+too much detail; they were on the previous slide. You've got incoming
+
+130
+00:13:20,208 --> 00:13:26,389
+shortwave streams and then outgoing, the reflected shortwave stream, and longwave
+
+131
+00:13:26,389 --> 00:13:30,649
+radiation coming from clouds and sky whatever is in the sky that has a
+
+132
+00:13:30,649 --> 00:13:33,698
+temperature is going to be admitting long wave radiation towards the surface
+
+133
+00:13:33,698 --> 00:13:38,539
+and then plants and soil whatever's at the surface is going to be emitting
+
+134
+00:13:38,539 --> 00:13:45,679
+radiation back towards the sky. The G term is the soil heat flux; the
+
+135
+00:13:45,679 --> 00:13:52,578
+flux of energy into the ground. The H term is the sensible heat flux; the heat
+
+136
+00:13:52,578 --> 00:13:58,729
+gain or loss due to conduction convection. It usually is heat loss
+
+137
+00:13:58,730 --> 00:14:03,860
+during the day because often the surface is warmer than the air but not always
+
+138
+00:14:03,860 --> 00:14:07,669
+the surface can be colder than the air so there can be a sensible heat flux
+
+139
+00:14:07,669 --> 00:14:13,219
+towards the surface. Then the LE term is the latent heat loss, which is the
+
+140
+00:14:13,220 --> 00:14:19,550
+combination of evaporation and transpiration. There are other terms
+
+141
+00:14:19,549 --> 00:14:23,750
+like photosynthesis would be a small contributor and there can be heat
+
+142
+00:14:23,750 --> 00:14:29,659
+storage in the plants themselves typically heat storage doesn't happen in
+
+143
+00:14:29,659 --> 00:14:35,639
+crops but can in forests. We just defined those.
+
+144
+00:14:35,639 --> 00:14:40,590
+Here's the real point the available energy and we call the difference
+
+145
+00:14:40,590 --> 00:14:45,720
+between net radiation and soil heat flux as available energy because that's
+
+146
+00:14:45,720 --> 00:14:52,110
+everything that's available to do things like evaporate water or heat the surface
+
+147
+00:14:52,110 --> 00:14:57,810
+for example. We often find when we make measurements of all of these terms like
+
+148
+00:14:57,809 --> 00:15:03,089
+at eddy covariance sites for example when we can measure sensible heat flux
+
+149
+00:15:03,090 --> 00:15:09,420
+and latent heat flux with gas analyzers and sonic anemometers we often find that
+
+150
+00:15:09,419 --> 00:15:15,179
+the available energy is not balanced by the heat fluxes, at many measurements
+
+151
+00:15:15,179 --> 00:15:22,500
+sites.  It should be the energy coming in should equal the energy going
+
+152
+00:15:22,500 --> 00:15:29,669
+out. The the real point is net radiation measurements have to be
+
+153
+00:15:29,669 --> 00:15:35,849
+accurate for surface energy balance studies. O'll talk a
+
+154
+00:15:35,850 --> 00:15:41,220
+bit about net radiometers and I'll also talk a little bit about net radiation
+
+155
+00:15:41,220 --> 00:15:48,600
+modeling. Earlier we were talking about how many routine weather stations that we
+
+156
+00:15:48,600 --> 00:15:53,820
+have like weather networks. They're going to have a pyrometer on there to measure
+
+157
+00:15:53,820 --> 00:15:59,310
+the incoming shortwave radiation, but a lot of times they don't have any other
+
+158
+00:15:59,309 --> 00:16:03,419
+radiometers. When we are talking about photosynthetic radiation earlier
+
+159
+00:16:03,419 --> 00:16:07,799
+weather stations typically don't have PAR sensors on them
+
+160
+00:16:07,799 --> 00:16:13,319
+to measure the photosynthetically active radiation. They often don't have a
+
+161
+00:16:13,320 --> 00:16:19,320
+net radiometer on there to measure net radiation. You can model net
+
+162
+00:16:19,320 --> 00:16:24,930
+radiation from incoming shortwave radiation and I'll talk about that in
+
+163
+00:16:24,929 --> 00:16:31,278
+addition to measurements of net radiation with net radiometers.
+
+164
+00:16:31,278 --> 00:16:37,159
+There are four kinds of net radiometers and I'll start with the most
+
+165
+00:16:37,159 --> 00:16:43,999
+complex and then I'll move to the simplest. Most of the time you don't
+
+166
+00:16:43,999 --> 00:16:48,980
+see too many of the intermediate types of net radiometers. Usually there's four
+
+167
+00:16:48,980 --> 00:16:52,699
+component instruments, which are the most complex and they're quite common, or
+
+168
+00:16:52,698 --> 00:16:57,498
+there's single component instruments which are the simplest and they're quite
+
+169
+00:16:57,499 --> 00:17:05,209
+common. A four-component net radiometer has an individual sensor for measuring
+
+170
+00:17:05,209 --> 00:17:09,318
+the four components that we just described. You've got an upward
+
+171
+00:17:09,318 --> 00:17:14,838
+looking pyranometer that measures the incoming shortwave. You've got a downward
+
+172
+00:17:14,838 --> 00:17:20,480
+looking pyranometer that measures the reflected shortwave. You've got an upward
+
+173
+00:17:20,480 --> 00:17:26,110
+looking pyrgeometer that measures the incoming longwave. You've got a
+
+174
+00:17:26,109 --> 00:17:31,219
+downwards looking pyrgeometer that measures that emitted longwave.
+
+175
+00:17:31,220 --> 00:17:37,901
+Pyranometer is the name of the sensor for shortwave radiation measurements; pyrgeometer,
+
+176
+00:17:37,901 --> 00:17:42,759
+kind of a funny word, is the name of the sensor for measuring the
+
+177
+00:17:42,759 --> 00:17:51,230
+longwave radiation. They're very similar instruments. Both of them consist
+
+178
+00:17:51,230 --> 00:17:56,720
+of a thermopile detector. Bruce talked about thermopile pyranometers
+
+179
+00:17:56,720 --> 00:18:03,640
+earlier today, essentially it's a device that measures the heat difference
+
+180
+00:18:03,640 --> 00:18:09,860
+across the top surface and the bottom
+
+181
+00:18:09,859 --> 00:18:16,459
+surface of the plate. Then over top of the thermopile
+
+182
+00:18:16,460 --> 00:18:24,048
+there's a blackbody absorber. The blackbody is just used to absorb all of
+
+183
+00:18:24,048 --> 00:18:31,609
+the incident radiation on it. Then pyranometers have a glass dome over top of
+
+184
+00:18:31,609 --> 00:18:37,879
+the thermopile and blackbody detector. The reason for the glass dome is two-fold:
+
+185
+00:18:37,880 --> 00:18:44,030
+one is to give it accurate cosine or angular response, and the other is to
+
+186
+00:18:44,029 --> 00:18:49,789
+block all of the longwave radiation. For a pyranometer, we're only interested in
+
+187
+00:18:49,789 --> 00:18:55,909
+the shortwave wavelengths. The glass is only transmissive to shortwave radiation
+
+188
+00:18:55,910 --> 00:19:01,759
+so we have to put a glass dome over top of the blackbody so that it blocks the
+
+189
+00:19:01,759 --> 00:19:06,259
+longwave, lets the shortwave through; therefore, the blackbody will only
+
+190
+00:19:06,259 --> 00:19:09,759
+absorb the short wave and the thermopile will only measure the
+
+191
+00:19:09,759 --> 00:19:15,019
+shortwave radiation. The downward looking pyrometer is the same thing it's
+
+192
+00:19:15,019 --> 00:19:21,710
+just inverted. It is one of them that's mounted upside down. The pyrgeometer is very similar
+
+193
+00:19:21,710 --> 00:19:26,809
+the only difference is instead of having a glass dome it has a silicon dome over
+
+194
+00:19:26,809 --> 00:19:32,419
+top of the blackbody. I know what I've drawn here doesn't look like a dome
+
+195
+00:19:32,420 --> 00:19:36,140
+shape, sometimes the pyrgeometers will have a small dome shape other times
+
+196
+00:19:36,140 --> 00:19:40,970
+it'll just be a flat surface so it's actually a silicon window rather than a
+
+197
+00:19:40,970 --> 00:19:47,480
+dome. The reason that we use a silicon dome is because it blocks the shortwave
+
+198
+00:19:47,480 --> 00:19:52,730
+radiation and transmits the longwave radiation. A pyrgeometer is
+
+199
+00:19:52,730 --> 00:19:56,120
+designed to measure  longwave. We have to block the shortwave and allow only
+
+200
+00:19:56,119 --> 00:20:00,529
+the longwave through so that the blackbody absorber can absorb it and the
+
+201
+00:20:00,529 --> 00:20:05,480
+thermopile can measure it. Here again you've got one up, one down to
+
+202
+00:20:05,480 --> 00:20:11,480
+measure the short and longwave. Examples of this type of net radiometer
+
+203
+00:20:11,480 --> 00:20:16,789
+are the Hukseflux that's a Dutch company and Kipp and Zonen, also a
+
+204
+00:20:16,789 --> 00:20:21,289
+Dutch company. They both build four component instruments that work very
+
+205
+00:20:21,289 --> 00:20:26,389
+well. I'll show you some pictures in a minute. Apogee Instruments also builds
+
+206
+00:20:26,390 --> 00:20:31,700
+one. I don't really have a good demo to show you but I will pass this around so
+
+207
+00:20:31,700 --> 00:20:37,240
+you can see what an instrument actually looks like. This sensor here with the
+
+208
+00:20:37,240 --> 00:20:44,180
+the white diffuser on the top is the upward looking pyranometer. I know I just
+
+209
+00:20:44,180 --> 00:20:48,480
+said they typically have glass domes, this one doesn't have a glass dome it
+
+210
+00:20:48,480 --> 00:20:53,299
+has an acrylic diffuser, which is also transmissive to the shortwave wavelengths.
+
+211
+00:20:53,299 --> 00:21:01,200
+The bottom pyranometer is a glass window that's this one. Then the two pyrgeometers
+
+212
+00:21:01,200 --> 00:21:10,470
+have black, flat black, windows that are made of silicon. They look the same up
+
+213
+00:21:10,470 --> 00:21:15,079
+and down. You're welcome to have a look.
+
+214
+00:21:17,200 --> 00:21:20,282
+Question: What is the price of these?
+
+215
+00:21:20,281 --> 00:21:26,528
+Mark: The Hukseflux
+
+216
+00:21:26,528 --> 00:21:34,210
+is probably, these numbers are going to be in US dollars I don't
+
+217
+00:21:34,210 --> 00:21:40,690
+know what they would be an Australian dollars.
+
+218
+00:22:21,470 --> 00:22:25,308
+I  gues Ican say the price. Peter is the one who sells it in Australia but the US list
+
+219
+00:22:25,308 --> 00:22:36,740
+price is about $2,500, but you will also have to
+
+220
+00:22:36,740 --> 00:22:43,190
+pay for importation and stuff like that. This Kipp and Zonen us is about
+
+221
+00:22:43,190 --> 00:22:48,169
+$6000 I think, maybe a little higher because it comes with a
+
+222
+00:22:48,169 --> 00:22:53,900
+heater and ventilator on it.  The Hukselfux  unit is closer to $5000. I think
+
+223
+00:22:53,900 --> 00:22:57,470
+it's between 4500 and 5000 US dollars that gives you an
+
+224
+00:22:57,470 --> 00:23:04,190
+idea of the price tag of these sensors. In a minute I will compare in a
+
+225
+00:23:04,190 --> 00:23:08,240
+relative sense, I'll compare the price of all of the above because we're going to
+
+226
+00:23:08,240 --> 00:23:15,019
+put four more or three more pictures like this one on the slide here.
+
+227
+00:23:15,019 --> 00:23:24,230
+The next type is a net all wave radiometer and this one is the simplest version. You
+
+228
+00:23:24,230 --> 00:23:32,120
+basically have one thermopile and it's sandwiched between two blackbody
+
+229
+00:23:32,119 --> 00:23:39,109
+absorbers, one on top and one on bottom, and there's two polyethylene domes over
+
+230
+00:23:39,109 --> 00:23:47,449
+top of the absorbers. What you have is a thermo-pile that's just outputting
+
+231
+00:23:47,450 --> 00:23:51,440
+a signal that's proportional to the temperature difference between the top
+
+232
+00:23:51,440 --> 00:23:55,759
+surface and the bottom surface. That temperature difference between the top
+
+233
+00:23:55,759 --> 00:24:00,230
+surface and the bottom surface is dependent on the radiation incident on
+
+234
+00:24:00,230 --> 00:24:05,720
+the top and the radiation incident on the bottom. The reason this is called a
+
+235
+00:24:05,720 --> 00:24:11,240
+net all wave radiometer is that it's measuring each surface, the upward
+
+236
+00:24:11,240 --> 00:24:15,019
+looking surface and the downward looking surface, are measuring all of the
+
+237
+00:24:15,019 --> 00:24:19,940
+wavelengths at the same time. It is sensitive to shortwave and longwave
+
+238
+00:24:19,940 --> 00:24:24,809
+together. Polyethylene actually transmits shortwave
+
+239
+00:24:24,809 --> 00:24:30,359
+and longwave. The reason for the polyethylene domes is just to
+
+240
+00:24:30,359 --> 00:24:36,629
+basically be a weather barrier and keep rain and moisture and dust and dirt off
+
+241
+00:24:36,630 --> 00:24:42,960
+of the blackbody surface. Not all of them have, not all of these net all wave
+
+242
+00:24:42,960 --> 00:24:51,500
+radiometers, have polyethylene domes. Probably the most common one at
+
+243
+00:24:51,500 --> 00:24:57,509
+least historically is this Rebs. Rebs stands for radiation and energy balance
+
+244
+00:24:57,509 --> 00:25:05,129
+system model Q*7.1. That's an american-made instrument from the state
+
+245
+00:25:05,130 --> 00:25:12,240
+of Washington. They were used a lot especially in past decades. Now it seems
+
+246
+00:25:12,240 --> 00:25:18,450
+like the Kipp and Zonen NR Lite 2 is the most common type of these net all
+
+247
+00:25:18,450 --> 00:25:24,509
+wave radiometers. The Rebs has the polyethylene domes the Kipp and Zonen
+
+248
+00:25:24,509 --> 00:25:32,879
+NR Lite 2 does not. The real challenge of polyethylene domes
+
+249
+00:25:32,880 --> 00:25:41,280
+is they are flimsy and you have to keep them pressurized often in order for
+
+250
+00:25:41,279 --> 00:25:50,519
+them to not collapse. At the same time polyethylene is better at transmitting
+
+251
+00:25:50,519 --> 00:25:56,369
+shortwave than it is at transmitting longwave and so when you get different
+
+252
+00:25:56,369 --> 00:26:02,129
+proportions of longwave and shortwave say clear sky versus cloudy sky for
+
+253
+00:26:02,130 --> 00:26:08,400
+example or over vegetation versus over snow it can really influence the
+
+254
+00:26:08,400 --> 00:26:14,640
+accuracy. The polyethylene domes all they can keep it clean and free of water
+
+255
+00:26:14,640 --> 00:26:19,530
+they also have their challenges. They have to be replaced quite often
+
+256
+00:26:19,529 --> 00:26:26,730
+because their flimsy, birds like to peck holes in them. The Kipp and Zonen
+
+257
+00:26:26,730 --> 00:26:30,390
+NR Lite in doing away with the polyethylene domes they get around at
+
+258
+00:26:30,390 --> 00:26:35,899
+least part of the problem of the domes but at the same time
+
+259
+00:26:35,898 --> 00:26:43,099
+when the surfaces get wet the radiation balance goes way out of whack and they
+
+260
+00:26:43,099 --> 00:26:48,379
+don't yield accurate measurements until they're dry. These ones while they're
+
+261
+00:26:48,380 --> 00:26:56,960
+the simplest and the cheapest also are the most prone to errors. We just talked
+
+262
+00:26:56,960 --> 00:27:06,130
+about prices for all of these. These guys are probably 1500 to 2000 dollars US,
+
+263
+00:27:06,130 --> 00:27:14,299
+somewhere in that range. I won't spend nearly as much time on these two
+
+264
+00:27:14,298 --> 00:27:23,000
+intermediate types just because this is the only example of this type of
+
+265
+00:27:23,000 --> 00:27:28,490
+two component instrument that I'm aware of and it's no longer available.
+
+266
+00:27:28,490 --> 00:27:34,579
+Essentially it worked a lot like this one where you have a single
+
+267
+00:27:34,579 --> 00:27:39,138
+thermopile that is measuring the net difference between what's coming in and
+
+268
+00:27:39,138 --> 00:27:44,418
+what's coming out. It's just that we separate shortwave and longwave.  We
+
+269
+00:27:44,419 --> 00:27:50,330
+actually have two components one of them is measuring net shortwave the other
+
+270
+00:27:50,329 --> 00:27:55,369
+ones measuring net longwave. This was a nice instrument when it was available
+
+271
+00:27:55,369 --> 00:28:05,089
+but it didn't last very long on the market. The other type is also kind of
+
+272
+00:28:05,089 --> 00:28:10,038
+like that one but rather than being a net device that only gives you one
+
+273
+00:28:10,038 --> 00:28:15,138
+signal that's proportional to the difference between all of the incoming
+
+274
+00:28:15,138 --> 00:28:21,558
+radiation and all of the outgoing radiation is that they separate the
+
+275
+00:28:21,558 --> 00:28:26,569
+pirradiometer so you've got two of them. You've got an upward looking one that's
+
+276
+00:28:26,569 --> 00:28:30,859
+sensitive to both the incoming shortwave and the incoming longwave, and then
+
+277
+00:28:30,859 --> 00:28:36,229
+a downward looking one that's sensitive to both the outgoing shortwave and the
+
+278
+00:28:36,230 --> 00:28:41,880
+outgoing longwave. So a good example of this one
+
+279
+00:28:41,880 --> 00:28:50,340
+is the Phillip Shane model 8111 it is a European instrument I believe it comes from
+
+280
+00:28:50,339 --> 00:28:57,359
+Germany maybe Switzerland, I can't remember for sure. This one is
+
+281
+00:28:57,359 --> 00:29:03,359
+not a very widely used instrument predominantly you'll see this or that
+
+282
+00:29:03,359 --> 00:29:13,199
+one. I said I had some pictures here's what they all look like the Hukseflux and
+
+283
+00:29:13,200 --> 00:29:17,330
+the Kipp and Zonen and the Apogee that I passed around the room is in the middle.
+
+284
+00:29:17,329 --> 00:29:24,269
+The major advantages of a four-component net radiometer is that
+
+285
+00:29:24,269 --> 00:29:30,000
+you get an individual measurement of each one of the four components.
+
+286
+00:29:30,000 --> 00:29:34,259
+That's a major advantage because typically that gives you higher accuracy.
+
+287
+00:29:34,259 --> 00:29:41,700
+I say potentially here because four individual sensors also means you've got
+
+288
+00:29:41,700 --> 00:29:46,890
+four components that might cause problems, like if one of them isn't
+
+289
+00:29:46,890 --> 00:29:51,450
+calibrated correctly that can be a problem or you've got four of them that
+
+290
+00:29:51,450 --> 00:29:56,250
+might get dirty for example. Then we already talked about price, these tend to
+
+291
+00:29:56,250 --> 00:30:01,200
+be higher cost. Just one design feature that I will mention with regards
+
+292
+00:30:01,200 --> 00:30:09,809
+to the Apogee is that it has an SDI-12 output. We get around this need
+
+293
+00:30:09,809 --> 00:30:16,200
+for all of those datalogger channels. What this means is in the center
+
+294
+00:30:16,200 --> 00:30:22,289
+box here on the Apogee unit, there's a circuit board in there; all the outputs
+
+295
+00:30:22,289 --> 00:30:27,329
+from the individual radiometers are being measured by the analog to digital
+
+296
+00:30:27,329 --> 00:30:32,699
+converter on that internal circuit board and then we're just digitizing those
+
+297
+00:30:32,700 --> 00:30:38,910
+signals and outputting an SDI-12 measurements. You can plug it
+
+298
+00:30:38,910 --> 00:30:43,110
+into a digital, one single digital channel, on your dataloggerr and not
+
+299
+00:30:43,109 --> 00:30:46,879
+have to tie up all of the analog channels to get a measurement.
+
+300
+00:30:49,900 --> 00:30:55,210
+If we look at the net all wave radiometers here's the two examples that
+
+301
+00:30:55,210 --> 00:31:02,559
+I listed in the previous slide, there's the polyethylene domes and that one is the
+
+302
+00:31:02,559 --> 00:31:09,819
+domeless model. Again these domes, they're better transmitting shortwave
+
+303
+00:31:09,819 --> 00:31:14,019
+than they are a longwave, which can lead to errors. They don't always stay
+
+304
+00:31:14,019 --> 00:31:19,349
+inflated. If they get a hole in them, they will get water condensing on the inside causes problems.
+
+305
+00:31:19,349 --> 00:31:24,519
+The domes need to be replaced periodically. This one because they're domeless
+
+306
+00:31:24,519 --> 00:31:29,250
+they're exposed to the environment to get wet and dirty.
+
+307
+00:31:31,230 --> 00:31:36,750
+The main advantages here are it only requires one datalogger channel to make
+
+308
+00:31:36,750 --> 00:31:42,720
+a measurment. Remember it is a single detector where the signal it is outputting is
+
+309
+00:31:42,720 --> 00:31:46,798
+proportional to the differences of everything thing that is comming in and everything that is
+
+310
+00:31:46,798 --> 00:31:52,379
+going out so it requires one analog measurement. These do tend to be smaller and
+
+311
+00:31:52,380 --> 00:31:58,260
+lighter weight so they can be easier to mount level. Again we already
+
+312
+00:31:58,259 --> 00:32:04,490
+talked about price; they tend to be lower cost. The major disadvantages
+
+313
+00:32:04,490 --> 00:32:09,750
+they have fragile domes and they're domeless. This domeless guy requires a
+
+314
+00:32:09,750 --> 00:32:12,960
+wind speed correction because if the winds blowing over top of it it can
+
+315
+00:32:12,960 --> 00:32:18,840
+change the energy balance. If you have mismatched detectors that can be a big
+
+316
+00:32:18,839 --> 00:32:24,899
+problem, essentially what that means is you only have a single sensor and you've
+
+317
+00:32:24,900 --> 00:32:30,860
+got one detector surface on the top side of that sensor or thermopile and one
+
+318
+00:32:30,859 --> 00:32:35,849
+detector surface on the bottom side of that thermopile. They have to have the
+
+319
+00:32:35,849 --> 00:32:40,558
+same sensitivity to shortwave and longwave, and they have to have the same
+
+320
+00:32:40,558 --> 00:32:46,710
+sensitivity to each other. Otherwise they're only accurate for the conditions
+
+321
+00:32:46,710 --> 00:32:51,360
+that they're calibrated to, if the conditions are changing like they do in
+
+322
+00:32:51,359 --> 00:32:59,219
+a dynamic environment then the mismatch detectors so the upward sensitivity
+
+323
+00:32:59,220 --> 00:33:03,808
+doesn't match the downward sensitivity can lead to errors. They tend to be
+
+324
+00:33:03,808 --> 00:33:07,139
+higher maintenance for example you have to replace the domes and all of the
+
+325
+00:33:07,140 --> 00:33:13,770
+above combined lead to lower accuracy. This was just a summary slide and I'll
+
+326
+00:33:13,769 --> 00:33:20,150
+mention that a few years ago before Apogee started building net radiometers
+
+327
+00:33:20,150 --> 00:33:25,290
+we were interested in potentially selling net radiometers from other
+
+328
+00:33:25,289 --> 00:33:32,759
+companies and we did a extensive field study where we compared several
+
+329
+00:33:32,759 --> 00:33:39,750
+different models of net radiometers for part of the growing season over a
+
+330
+00:33:39,750 --> 00:33:46,798
+uniform turf grass field in Logan Utah. The citation to our work is here if
+
+331
+00:33:46,798 --> 00:33:50,579
+you're interested in getting the paper again shoot me an email and I will send
+
+332
+00:33:50,579 --> 00:33:56,819
+you a PDF. The major findings were that the four component net radiometers
+
+333
+00:33:56,819 --> 00:34:02,548
+did indeed provide the most accurate measurements but I put an if in here you
+
+334
+00:34:02,548 --> 00:34:06,509
+have to make sure that the radiometer is level and you want to make sure that the
+
+335
+00:34:06,509 --> 00:34:13,108
+individual sensors are clean. The net all wave radiometers were the simplest but
+
+336
+00:34:13,108 --> 00:34:17,849
+they did have lower accuracy and it was due to lower sensitivity to longwave
+
+337
+00:34:17,849 --> 00:34:25,829
+radiation. The last line I think is important; we found that net radiometers
+
+338
+00:34:25,829 --> 00:34:31,049
+were capable of measuring radiation with better accuracy than what is often reported
+
+339
+00:34:31,050 --> 00:34:34,889
+in the literature. There's quite a few studies out there like energy balance
+
+340
+00:34:34,889 --> 00:34:39,840
+studies especially at flux tower sites that indicate net radiation uncertainty is
+
+341
+00:34:39,840 --> 00:34:43,619
+like 10 or 20 %. I think if you're measuring it with a
+
+342
+00:34:43,619 --> 00:34:49,159
+four-component net radiometer that's well leveled and clean then the
+
+343
+00:34:49,159 --> 00:34:53,429
+uncertainty is probably lower than what's usually reported in the
+
+344
+00:34:53,429 --> 00:34:59,579
+literature for net radiation measurements. Any questions about measuring net
+
+345
+00:34:59,579 --> 00:35:05,190
+radiation? I'll just take a minute I don't have any slides for this but I
+
+346
+00:35:05,190 --> 00:35:11,280
+think I can make use of the board. I might not even need to make use of the
+
+347
+00:35:11,280 --> 00:35:15,359
+board. I think I can just explain it. Tor those of you that are interested in
+
+348
+00:35:15,358 --> 00:35:19,650
+modeling net radiation, again we can talk afterwards or you can send me a
+
+349
+00:35:19,650 --> 00:35:21,260
+follow-up email and I can give you more detail but for those cases when you
+
+350
+00:35:21,260 --> 00:35:28,619
+have weather data and you need net radiation but the weather data did
+
+351
+00:35:28,619 --> 00:35:36,059
+not include a net radiometer to measure the net radiation you can model it. The
+
+352
+00:35:36,059 --> 00:35:40,559
+most important component that you need is a measurement of the incoming
+
+353
+00:35:40,559 --> 00:35:45,389
+shortwave radiation from a pyranometer. If you're looking at your fridge magnet or
+
+354
+00:35:45,389 --> 00:35:50,019
+if you remember my first slide, usually the largest
+
+355
+00:35:50,019 --> 00:35:54,550
+component of net radiation is the incoming shortwave component from the
+
+356
+00:35:54,550 --> 00:36:01,660
+Sun so if you have that measurement you have at least a reasonable idea of net
+
+357
+00:36:01,659 --> 00:36:06,670
+radiation and you can model the other components. Typically how it's done is
+
+358
+00:36:06,670 --> 00:36:14,980
+then to take a published value of albedo for the surface that you're measuring.
+
+359
+00:36:14,980 --> 00:36:19,210
+If it's vegetation it's going to be pretty low around 0.2 to 0.25,
+
+360
+00:36:19,210 --> 00:36:26,740
+if it's snow it's going to be quite a bit higher. Published values of
+
+361
+00:36:26,739 --> 00:36:34,209
+albedo are fairly accurate if the surface conditions don't change
+
+362
+00:36:34,210 --> 00:36:38,159
+dramatically. If you're trying to do this when the vegetation is always green,
+
+363
+00:36:38,159 --> 00:36:43,829
+just estimating or taking a published value of the albedo and calculating the
+
+364
+00:36:43,829 --> 00:36:49,809
+reflected shortwave component that way works pretty well. The challenge is if
+
+365
+00:36:49,809 --> 00:36:53,579
+you're trying to do this over the course of say a whole year when you might have
+
+366
+00:36:53,579 --> 00:37:01,269
+you know snow or bare soil in the  winter time and then the crops start to
+
+367
+00:37:01,269 --> 00:37:07,179
+come up and you have green vegetation and soil mixture and then the crops fill
+
+368
+00:37:07,179 --> 00:37:11,589
+in and you only have green vegetation for most of the growing season and
+
+369
+00:37:11,590 --> 00:37:18,160
+then the crops nest and they turn yellow and then you harvest them. I mean
+
+370
+00:37:18,159 --> 00:37:23,139
+the surface can be quite dynamic over the course of a whole year. You can
+
+371
+00:37:23,139 --> 00:37:27,460
+only use values of albedo if you know what it is for the surface or have a
+
+372
+00:37:27,460 --> 00:37:31,599
+good estimate of it and if it's not changing significantly. If the
+
+373
+00:37:31,599 --> 00:37:37,360
+surface is changing a lot then you have to change the albedo in your model.
+
+374
+00:37:37,360 --> 00:37:43,690
+Tthe way that longwave is often estimated is from measurements of air
+
+375
+00:37:43,690 --> 00:37:51,970
+temperature and relative humidity and then we we can predict longwave pretty
+
+376
+00:37:51,969 --> 00:37:58,629
+well from equations like this. This is the Stefan Boltzmann equation and emitted
+
+377
+00:37:58,630 --> 00:38:03,340
+energy is proportional to a constant times the fourth power of
+
+378
+00:38:03,340 --> 00:38:10,059
+temperature. If we know reasonably well what the the fourth
+
+379
+00:38:10,059 --> 00:38:17,110
+power of temperature is for the surface, then we can estimate a longwave
+
+380
+00:38:17,110 --> 00:38:21,910
+relatively well, the components being emitted because we know that most
+
+381
+00:38:21,909 --> 00:38:28,029
+surfaces are blackbodies, most land surfaces are blackbodies. If we are working
+
+382
+00:38:28,030 --> 00:38:38,769
+with plant canopies or soil or snow, the emissivity right there in the equation
+
+383
+00:38:38,769 --> 00:38:43,570
+this number is going to be close to one. If we have a reasonable estimate of
+
+384
+00:38:43,570 --> 00:38:48,160
+the surface temperature, we can estimate the emitted longwave components so the
+
+385
+00:38:48,159 --> 00:38:53,049
+part that's going from the ground to the atmosphere from this equation. To
+
+386
+00:38:53,050 --> 00:38:58,090
+estimate the incoming longwave component we use the exact same equation
+
+387
+00:38:58,090 --> 00:39:03,460
+and oftentimes we use the air temperature as a proxy for
+
+388
+00:39:03,460 --> 00:39:08,460
+the sky temperature. The challenge with doing incoming longwave radiation
+
+389
+00:39:08,460 --> 00:39:13,780
+estimates is this number is the hard one and you were asking about that earlier.
+
+390
+00:39:13,780 --> 00:39:19,870
+There are ways to estimate the emissivity for the atmosphere and that's
+
+391
+00:39:19,869 --> 00:39:26,199
+where the humidity measurement comes in. It's usually empirical equations that
+
+392
+00:39:26,199 --> 00:39:30,939
+estimate atmospheric emissivity based on sometimes  theare temperature but
+
+393
+00:39:30,940 --> 00:39:37,720
+typically the vapor pressure of the atmosphere. The error can be
+
+394
+00:39:37,719 --> 00:39:43,599
+kind of high because atmospheric emissivity is not always that dependent
+
+395
+00:39:43,599 --> 00:39:48,940
+on the vapor pressure near the surface. The vapor pressure that we
+
+396
+00:39:48,940 --> 00:39:52,450
+measure at the surface typically comes from a relative humidity probe that
+
+397
+00:39:52,449 --> 00:39:58,239
+might be two meters off the ground but the longwave radiation coming from the
+
+398
+00:39:58,239 --> 00:40:03,369
+sky is coming from the whole depth of atmosphere from two meters above the
+
+399
+00:40:03,369 --> 00:40:09,279
+ground till way up in the atmosphere. If the near-surface vapor pressure is a
+
+400
+00:40:09,280 --> 00:40:14,869
+reasonable tstament of the whole column of water in the atmosphere, then
+
+401
+00:40:14,869 --> 00:40:18,740
+empirically estimating atmospheric emissivity from near surface vapor
+
+402
+00:40:18,739 --> 00:40:24,078
+pressure works okay. If the near-surface vapor pressure is not a good estimator
+
+403
+00:40:24,079 --> 00:40:29,480
+of the whole column of water in the atmosphere, then the empirical equations
+
+404
+00:40:29,480 --> 00:40:36,170
+don't work that well. There are ways to model net radiation if it's not
+
+405
+00:40:36,170 --> 00:40:41,240
+available, but I would recommend measuring it if you have the equipment
+
+406
+00:40:41,239 --> 00:40:48,618
+to do so. Iif you're interested in learning more about how to model
+
+407
+00:40:48,619 --> 00:40:52,430
+net radiation please send me an email I can help with that. There's quite a bit
+
+408
+00:40:52,429 --> 00:40:56,779
+of information in the literature that's been published. There's a really good
+
+409
+00:40:56,780 --> 00:41:07,819
+study from about 2007 I think, maybe 2009, where some folks at USDA in the United
+
+410
+00:41:07,818 --> 00:41:13,449
+States compared a whole bunch of different incoming longwave radiation
+
+411
+00:41:13,449 --> 00:41:23,389
+models and assessed the accuracy relative to measurements. Any questions? I believe
+
+412
+00:41:23,389 --> 00:41:28,710
+that's all I have for net radiation.
+

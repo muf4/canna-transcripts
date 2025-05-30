@@ -1,0 +1,370 @@
+[SPEAKER_01]: This is a production of Cornell
+University.
+[SPEAKER_00]: Okay, so today I just want to talk to you
+guys a little bit about my work on trying
+[SPEAKER_00]: to model a couple of different chromatin
+states across species directly from DNA
+[SPEAKER_00]: sequence.
+[SPEAKER_00]: I'm using a flavor of deep learning model
+known as the correct convolutional neural
+[SPEAKER_00]: network.
+[SPEAKER_00]: But before I get too deeply into that,
+I want to contextualize why we might want
+[SPEAKER_00]: to pick chromatin state in the first
+place.
+[SPEAKER_00]: So we know that accessible chromatin
+regulates gene expression and most of the
+[SPEAKER_00]: gene expression most of the time in vivo
+is tightly wrapped around histones and
+[SPEAKER_00]: heterochromatin.
+[SPEAKER_00]: But transcription factors bind to this
+accessible chromatin, this open chromatin,
+[SPEAKER_00]: and go on to regulate gene expression.
+[SPEAKER_00]: We also know that not all these regulatory
+regions are close to the genes that
+[SPEAKER_00]: they're targeting.
+[SPEAKER_00]: They can be up to, for example,
+a maze up to 100 kilobases away.
+[SPEAKER_00]: So it's important not just to localize to
+accessible regions close to genes,
+[SPEAKER_00]: but also figure out where they are in
+crystal forces of genome.
+[SPEAKER_00]: And so to put this all together,
+we can then hypothesize that variation
+[SPEAKER_00]: within these accessible regions will lead
+to variation in transcription factor
+[SPEAKER_00]: binding, which will lead to variation in
+gene expression and then go on to
+[SPEAKER_00]: influence all the phenotypes that we care
+about.
+[SPEAKER_00]: So as a more concrete example of this,
+there was a study in May across 40
+[SPEAKER_00]: different traits in two populations.
+[SPEAKER_00]: What they did was they took the partition
+of the phenotypic variants that's where
+[SPEAKER_00]: genetics and they partitioned that further
+down to SNPs that were associated in
+[SPEAKER_00]: different annotation classes.
+[SPEAKER_00]: What we can see here is across both
+populations about half of the variation is
+[SPEAKER_00]: attributable to SNPs and encoding regions.
+[SPEAKER_00]: We expect this, and no protein sequence is
+important.
+[SPEAKER_00]: But what's also striking is that variation
+within accessible regions is almost as
+[SPEAKER_00]: important as variation in encoding.
+[SPEAKER_00]: So this suggests to me that it's also very
+important to identify where these
+[SPEAKER_00]: accessible regions are if you want to
+improve them and improve prediction
+[SPEAKER_00]: models.
+[SPEAKER_00]: Another important proven state is DNA
+methylation.
+[SPEAKER_00]: And so a recent paper in Grasses showed
+that if you look at the chromatin state
+[SPEAKER_00]: across different tissues, you can see that
+they're all unmethylated, the accessible
+[SPEAKER_00]: regions.
+[SPEAKER_00]: And so what we also know about DNA
+methylation state across developmental
+[SPEAKER_00]: time is it's very stable.
+[SPEAKER_00]: And so the suggestion is that if we can
+predict DNA methylation in a specific
+[SPEAKER_00]: tissue, then that could potentially
+capture the global potentially accessible
+[SPEAKER_00]: space across all tissues.
+[SPEAKER_00]: So predicting chromatin accessibility and
+DNA methylation directly from sequence can
+[SPEAKER_00]: have a number of different benefits.
+[SPEAKER_00]: The first one is a sequence-based model
+quickly queried to highlight functional
+[SPEAKER_00]: sites and rank of yields.
+[SPEAKER_00]: It could be similar to a verb score and
+really serve to narrow down to those top X
+[SPEAKER_00]: variants based on effect size.
+[SPEAKER_00]: The second important point is that if we
+get good cross-species models,
+[SPEAKER_00]: then we'd be able to predict regulatory
+regions in species that we haven't done
+[SPEAKER_00]: these assays in and we only have genome
+assemblies.
+[SPEAKER_00]: And this could save time and money by
+avoiding these relatively expensive
+[SPEAKER_00]: chromatin assays.
+[SPEAKER_00]: And so we know that these accessible
+regions are expected to be enriched in
+[SPEAKER_00]: transcription factor binding sites.
+[SPEAKER_00]: And so we might use that as a signal to
+separate accessible from inaccessible.
+[SPEAKER_00]: But unfortunately, it's a very noisy
+signal because we observed that there's a
+[SPEAKER_00]: lot of spurious matches to transcription
+factor binding sites in inaccessible
+[SPEAKER_00]: regions that aren't functional.
+[SPEAKER_00]: And so my hypothesis was that maybe it's
+really the border relative orientation of
+[SPEAKER_00]: these motifs that it serves as a stronger
+signal to help different state accessible
+[SPEAKER_00]: from inaccessible.
+[SPEAKER_00]: And what we also know is that these
+transcription factor binding domains have
+[SPEAKER_00]: been served across long evolutionary time
+periods.
+[SPEAKER_00]: And so if we find one piece in one
+species, we expect them to be observable
+[SPEAKER_00]: also in other species as well for
+transcription factor binding.
+[SPEAKER_00]: And so provisional neural networks have
+already been shown to be able to predict
+[SPEAKER_00]: chromatin state from sequence within
+species, at least in humans.
+[SPEAKER_00]: So we see at the bottom is BHC,
+which is a pre-standard provisional neural
+[SPEAKER_00]: network, which is one of the first applied
+to try and predict this problem.
+[SPEAKER_00]: I think it's a range of about 80 yards.
+[SPEAKER_00]: You can just think of it as a metric for
+classification performance, from zero to
+[SPEAKER_00]: 0.8.
+[SPEAKER_00]: And then a year after that, DanQ was
+released, which is a recurrent provisional
+[SPEAKER_00]: neural network, which shows improvement
+across almost all of the test bases,
+[SPEAKER_00]: the chromatin states and the tissues that
+they've tested.
+[SPEAKER_00]: And so my question was, can we then use
+DanQ to predict chromatin accessibility
+[SPEAKER_00]: across species?
+[SPEAKER_00]: So the data that I used to train the model
+with ATAC-C data, which basically causes
+[SPEAKER_00]: repiles underneath accessible regions of
+the genome.
+[SPEAKER_00]: And then you can take what's known as a
+peak color to then binarize this output
+[SPEAKER_00]: and get binary accessible sequence and
+accessible sequence regions.
+[SPEAKER_00]: And then I take what's known as UMRs,
+which you do methylation sequencing on the
+[SPEAKER_00]: genome and you get methylation state for
+all three contexts of DNA methylation.
+[SPEAKER_00]: You say, if it's absent in all three
+contexts, that's unethylated.
+[SPEAKER_01]: And so then again, I have binary
+unethylated and methylated region.
+[SPEAKER_01]: So in total, I have trained data from
+about 12 different species for ATAC-C,
+[SPEAKER_00]: spread nice and evenly across the
+angiosperms.
+[SPEAKER_00]: For the UMR, I know about 10 species,
+five of which are from the original
+[SPEAKER_00]: GRASSES paper and five of which were newly
+called for this work in the DIPOC.
+[SPEAKER_00]: So just a quick overview.
+[SPEAKER_00]: of how I'm going to model this.
+[SPEAKER_00]: I'm taking in 600 base pairs of sequence
+and I'm centering it on the UMR or the
+[SPEAKER_00]: ATAC-C peak.
+[SPEAKER_00]: And if it's shorter than that,
+I'll extend symmetrically from the
+[SPEAKER_00]: midpoint.
+[SPEAKER_00]: I'll feed it into DanQ, which is that
+recurrent convolution neural network.
+[SPEAKER_00]: And I'll attempt to predict zero or one,
+inaccessible or accessible, methylated or
+[SPEAKER_00]: unethylated.
+[SPEAKER_00]: I'm interested in comparing, can this
+model, we know it works within species in
+[SPEAKER_00]: humans, but can it do as well across
+species?
+[SPEAKER_00]: Within species it hasn't observed.
+[SPEAKER_00]: And for now, I'm going to shorthand call
+this model A to Z for rabidopsis.
+[SPEAKER_00]: So how does training A to Z look like for
+a within species model?
+[SPEAKER_00]: So let's say you want to do it within a
+rabidopsis that way on.
+[SPEAKER_00]: So we're going to take a holdout
+chromosome as a test set.
+[SPEAKER_00]: And we're going to assign these open and
+closed unethylated methylated bins on that
+[SPEAKER_00]: chromosome for that test set.
+[SPEAKER_00]: We'll assign the rest of the training set.
+[SPEAKER_00]: Then I'm going to down-sample my training
+set to make sure they're equal across open
+[SPEAKER_00]: and closed, because this is known to
+improve classification.
+[SPEAKER_00]: After that down-sampling is done,
+my training set looks like this in terms
+[SPEAKER_00]: of magnitude.
+[SPEAKER_00]: 26,000 observations per species with
+accessibility and about 36,000 for
+[SPEAKER_00]: methylation.
+[SPEAKER_00]: Then we're going to evaluate the model on
+the test set with something like this.
+[SPEAKER_01]: For accessibility, we get an A to Z of
+about 0.6 in rabidopsis.
+[SPEAKER_00]: And for methylation, a little bit slightly
+better at 0.65.
+[SPEAKER_00]: So for across species, we're going to
+choose a test species as our test set.
+[SPEAKER_00]: And we're going to take all of those
+within the test species as our test set.
+[SPEAKER_00]: And then assign the rest of the species
+into the training set.
+[SPEAKER_00]: We're going to down-sample our training
+set.
+[SPEAKER_00]: And we're going to train the model and
+evaluate it.
+[SPEAKER_00]: And now we get a comparison.
+[SPEAKER_00]: How well does my within species rabidopsis
+model do to the across species model that
+[SPEAKER_00]: hasn't seen rabidopsis sequence at all?
+[SPEAKER_00]: And so when we look across both of these
+features, you see within accessibility,
+[SPEAKER_00]: it's quite competitive.
+[SPEAKER_00]: It does almost equally as well within
+species as the across species.
+[SPEAKER_00]: Less so in case for methylation,
+but still very close.
+[SPEAKER_00]: All right.
+[SPEAKER_00]: So here are the results across both
+features and all my species in my data
+[SPEAKER_00]: set.
+[SPEAKER_00]: So what's very encouraging is that,
+at least in accessibility, we see a very
+[SPEAKER_00]: competitive comparison between the across
+species and the within species models.
+[SPEAKER_00]: It's either equal to or greater than the
+ability of the within species model,
+[SPEAKER_00]: particularly in the grasses.
+[SPEAKER_00]: Within methylation, this is not as strong,
+but it's still there across all the
+[SPEAKER_01]: species that I've sent before.
+[SPEAKER_00]: Another thing I want to look at is whether
+or not or how large the effect size is of
+[SPEAKER_00]: a certain transcription factor.
+[SPEAKER_00]: And so the way I can do this is by using a
+method called global importance analysis.
+[SPEAKER_00]: The way that works is I'll sample a bunch
+of random background sequences.
+[SPEAKER_00]: In my case, I did 1,000.
+[SPEAKER_00]: And I used the base care frequency and
+accessible readings across to sample
+[SPEAKER_00]: these.
+[SPEAKER_00]: And then what I do is I embed a Jasper
+motif.
+[SPEAKER_00]: The database is about 530 plant TFs.
+[SPEAKER_00]: And I just ask the question, what's the
+difference in prediction?
+[SPEAKER_00]: I do this for all 1,000.
+[SPEAKER_00]: And I take a pairwise differences and I
+average that.
+[SPEAKER_00]: And then I embed the motif at all possible
+positions.
+[SPEAKER_00]: And I take the maximum of that.
+[SPEAKER_00]: And that's my maximum global importance
+score for a given TF, any given species,
+[SPEAKER_00]: any given chromatin state accessibility
+method.
+[SPEAKER_00]: And I can rank these TFs by that value.
+[SPEAKER_00]: I need a table that looks something like
+on the right.
+[SPEAKER_00]: So the first thing to notice is that on
+accessibility between Arabidopsis and
+[SPEAKER_00]: Maze, we don't see a similar pattern.
+[SPEAKER_00]: So we do see the TCP motifs in Arabidopsis
+are highly ranked for accessibility.
+[SPEAKER_00]: We see in Maze that it's also TCP is
+highly ranked in the top 10.
+[SPEAKER_00]: But it also means dot type motifs.
+[SPEAKER_00]: For the methylation side of things,
+it's more consistent.
+[SPEAKER_00]: We see basically the EP2-ERF motifs are
+highly ranked consistently between both
+[SPEAKER_00]: species, as well as these BDR-BBQ family
+motifs.
+[SPEAKER_00]: So in conclusion, I've shown that these
+recurrent neural maps can model chromatin
+[SPEAKER_00]: accessibility and DNA methylation from
+sequence and across species.
+[SPEAKER_00]: These across species models are
+competitive to models trained only within
+[SPEAKER_00]: species, or basically in the NDS firms.
+[SPEAKER_00]: And the TCP family motifs we saw rank
+highly in global importance to the across
+[SPEAKER_00]: species accessibility models.
+[SPEAKER_00]: But for the methylation models,
+it was EP2-ERF.
+[SPEAKER_00]: And I'm also happy to report that there is
+a preprint available that shows what I've
+[SPEAKER_00]: discussed here and also more on BioRFET.
+[SPEAKER_00]: I've uploaded the data of the model to
+Zanetta, which are linked to the preprint.
+[SPEAKER_00]: And there's code on GitHub, which includes
+instructions for making your own
+[SPEAKER_00]: predictions in your favorite species,
+if you'd like.
+[SPEAKER_00]: And finally, I'd like to acknowledge,
+like me, Eddie and Eric for their guidance
+[SPEAKER_00]: on the co-authors for all the work they
+helped in making this paper happen,
+[SPEAKER_00]: particularly Pete.
+[SPEAKER_00]: He called those extra die-cot,
+unlike with the regions forming.
+[SPEAKER_00]: And there's a lot of talk about all their
+feedback.
+[SPEAKER_00]: And the funding sources are
+high-performance computing problems.
+[SPEAKER_00]: And with that, I'd be happy to take any
+questions.
+[SPEAKER_00]: So that way, I ask, do you have better ADP
+on our endopsis and rice compared to maize
+[SPEAKER_00]: and the species?
+[SPEAKER_00]: Does this mean that genome complexity is
+playing a role?
+[SPEAKER_00]: Yeah, that's a great question.
+[SPEAKER_00]: I didn't show it here.
+[SPEAKER_00]: But I do notice a trend.
+[SPEAKER_00]: So as genome size increases, my
+performance increases.
+[SPEAKER_00]: And what this boils down to is that the
+model, I often show that it makes more
+[SPEAKER_00]: false positive mistakes than it does.
+[SPEAKER_00]: So what I mean by false positive is the
+model calls it open, but the data is
+[SPEAKER_00]: labeled as closed.
+[SPEAKER_00]: And so in these larger genomes,
+that effect is a lot more pronounced.
+[SPEAKER_00]: And so I get less of an active genome
+species.
+[SPEAKER_00]: There's a number of reasons why I think
+this is the case.
+[SPEAKER_00]: First, the Atax C in the angiosperms was
+called very conservatively.
+[SPEAKER_00]: So there's a potential that the models
+calling things are actually open in vivo,
+[SPEAKER_00]: but just weren't able to be captured in
+the conserved P calling for the
+[SPEAKER_00]: constraints.
+[SPEAKER_01]: And there's also a number of other
+reasons.
+[SPEAKER_01]: But I hope that answered your question.
+[SPEAKER_00]: Do you have a sense of how additive these
+motif effects tend to be?
+[SPEAKER_00]: They should be fairly additive.
+[SPEAKER_00]: Basically, it's been shown.
+[SPEAKER_00]: So what's more important, though,
+actually, is that these have been shown to
+[SPEAKER_00]: be additive to an extent that they can
+interact with each other at the regulatory
+[SPEAKER_00]: site.
+[SPEAKER_00]: But what's more important is that they're
+shown to be redundant.
+[SPEAKER_00]: So if you start deleting these motifs,
+it doesn't necessarily mean that
+[SPEAKER_00]: expression would be infected.
+[SPEAKER_01]: That's also important.
+[SPEAKER_01]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_01]: Thank you.
+Thank you.

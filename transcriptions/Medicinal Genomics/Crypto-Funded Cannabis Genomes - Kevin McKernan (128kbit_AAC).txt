@@ -1,0 +1,635 @@
+[SPEAKER_00]: Okay, so I'm paranoid of the voice of God,
+so I'm going to be dashing through this
+[SPEAKER_00]: presentation.
+[SPEAKER_00]: So this is, if you haven't quite captured
+the power of cryptocurrency, hopefully
+[SPEAKER_00]: this project will sum it up.
+[SPEAKER_00]: A lot of people think it's used for
+nefarious uses, but actually they're now
+[SPEAKER_00]: funding scientific purposes, scientific
+projects, they're funding charities all
+[SPEAKER_00]: over the world, and Dash decided back in
+the springtime to fund this project.
+[SPEAKER_00]: And what is this project about?
+[SPEAKER_00]: Well, John gave a great description of
+what you can do with the current genomes.
+[SPEAKER_00]: You can do a lot.
+[SPEAKER_00]: However, if you look around other plant
+genomes that have much smaller economic
+[SPEAKER_00]: impact than cannabis, their genomes are in
+much better shape than ours.
+[SPEAKER_00]: The cannabis genome right now is in
+horrible shape compared to these things.
+[SPEAKER_00]: And it does create some artifacts.
+[SPEAKER_00]: Philippe showed some artifacts where you
+try and replicate markers and the primers
+[SPEAKER_00]: fall on snips and it doesn't reproduce.
+[SPEAKER_00]: And we've seen this with a lot of the
+vendors supplying sequencing services as
+[SPEAKER_00]: well, that the things just don't fully
+reproduce lab to lab.
+[SPEAKER_00]: We've got to change that.
+[SPEAKER_00]: And the best way to change that is to
+actually sequence the genome to a quality
+[SPEAKER_00]: of at least what the Human Genome Project
+had back in 2001.
+[SPEAKER_00]: And the metric back then was to get to
+about 500 kb and 50.
+[SPEAKER_00]: What that means is the average length of
+the sequence contig in the assembly was
+[SPEAKER_00]: about 500,000 letters.
+[SPEAKER_00]: This is not perfect.
+[SPEAKER_00]: We want chromosomes that are hundreds of
+millions of bases long that are completely
+[SPEAKER_00]: contiguous and completely phased,
+but this is the best we could do back
+[SPEAKER_00]: then.
+[SPEAKER_00]: Nowadays, I think you'll find the hurdle
+rate for a good genome, people will say,
+[SPEAKER_00]: is if you're in the megabase club,
+they want this N50 number to be north of a
+[SPEAKER_00]: million bases.
+[SPEAKER_00]: And I'm going to show you how we pulled
+this off on the cannabis genome.
+[SPEAKER_00]: So there are several reasons to do this
+that John touched on.
+[SPEAKER_00]: I won't go very long.
+[SPEAKER_00]: We want marker-assisted selection.
+[SPEAKER_00]: We want accelerated breeding.
+[SPEAKER_00]: We want reliable snip chips, which I don't
+think you can get off the existing
+[SPEAKER_00]: references.
+[SPEAKER_00]: And we want to do this on as many genomes
+as possible, not just any one sort of
+[SPEAKER_00]: victory genome.
+[SPEAKER_00]: We want a hand genome.
+[SPEAKER_00]: We want type 1 genomes, type 2 genomes,
+type 3 genomes, type 4, type 5,
+[SPEAKER_00]: you name it, hemplines.
+[SPEAKER_00]: We really want 12 really powerfully done
+genomes to make sense of what's going on.
+[SPEAKER_00]: Now, some terminology here.
+[SPEAKER_00]: You're probably used to hearing about
+contigs.
+[SPEAKER_00]: This is what a normal assembly turns into,
+a couple hundred thousand of these.
+[SPEAKER_00]: And we really want to get into chromosomes
+like this.
+[SPEAKER_00]: And there's technologies from phased
+genomics and packed bio that help do this,
+[SPEAKER_00]: that we'll touch on.
+[SPEAKER_00]: But this is really important for you to
+understand where those chromosomes came
+[SPEAKER_00]: from, like if they're in certain
+organelles or if they're in certain
+[SPEAKER_00]: microbes that often contaminate genome
+assemblies.
+[SPEAKER_00]: So we started off sequencing a Jamaican
+lion strain.
+[SPEAKER_00]: And this was a strain that I selected
+mainly because it had some impact on my
+[SPEAKER_00]: father.
+[SPEAKER_00]: He was using type 2 strains.
+[SPEAKER_00]: But there was also some controversy over
+IP.
+[SPEAKER_00]: And we figured, let's see if we can shed
+some light on that.
+[SPEAKER_00]: And I also like teasing Mark Lewis once in
+a while and trolling him a little bit.
+[SPEAKER_00]: So I decided, hey, let's sequence
+something that he may have bred.
+[SPEAKER_00]: I think this actually dates back to 2007.
+[SPEAKER_00]: And there's some awards that we won,
+and it is a type 2 plant.
+[SPEAKER_00]: And it looks as if it is beta caroethylene
+dominant, a little bit immersing in there
+[SPEAKER_00]: as well.
+[SPEAKER_00]: These might vary based on conditions.
+[SPEAKER_00]: This is all grown in a hydro to get rid of
+microbes, or at least to limit the
+[SPEAKER_00]: microbes.
+[SPEAKER_00]: But you can see the reports down here in
+terms of the, it's about a 2 to 1 CBD to
+[SPEAKER_00]: THC line.
+[SPEAKER_00]: So how do we do this?
+[SPEAKER_00]: Well, DASH, as Chuck just described,
+consists of these masternode owners that
+[SPEAKER_00]: are all over the world that vote on how to
+spend their treasury.
+[SPEAKER_00]: And you submit them proposals,
+and they decide, will this help us improve
+[SPEAKER_00]: our network?
+[SPEAKER_00]: And they're interested in solving the
+banking problem in the cannabis industry.
+[SPEAKER_00]: And they saw this conference, and they saw
+this genome, and said, let's do it.
+[SPEAKER_00]: Let's build the best reference in the
+world.
+[SPEAKER_00]: And then we can maybe even build a seed to
+sale tracking system that is forensic in
+[SPEAKER_00]: quality.
+[SPEAKER_00]: So they voted on this in June 3.
+[SPEAKER_00]: And this is what's crazy about the process
+is you submit the grant application.
+[SPEAKER_00]: We probably submitted it a week before the
+deadline.
+[SPEAKER_00]: And by a week later, we had DASH in our
+bank ready to spend, and we were able to
+[SPEAKER_00]: kick the project off.
+[SPEAKER_00]: So this is the summertime.
+[SPEAKER_00]: June 3, we started UPCR screening for type
+2 plants.
+[SPEAKER_00]: This is a little color metric assay we
+have that can tell you whether it's type
+[SPEAKER_00]: 1, 2, or 3.
+[SPEAKER_00]: We then went into Illumina sequencing to
+screen for heterozygosity to pick a plant
+[SPEAKER_00]: that had the less of that, because that
+would be better to sequence as a first
+[SPEAKER_00]: genome.
+[SPEAKER_00]: And then we got to go back to these old
+school tools of actually doing pulse field
+[SPEAKER_00]: gel electrophoresis to get high molecular
+weight DNA.
+[SPEAKER_00]: This is really critical.
+[SPEAKER_00]: To get DNA as long as possible,
+because the read lengths we have now in
+[SPEAKER_00]: these single molecule sequencers can
+actually get out to 50 to 100,000 bases.
+[SPEAKER_00]: And so we chose to do this on the Pacific
+Biosciences platform, because it had the
+[SPEAKER_00]: highest accuracy.
+[SPEAKER_00]: There are some other nanopores out there
+that have longer reads, but the accuracy
+[SPEAKER_00]: right now, when we played around with that
+last year at CAMiD, we couldn't get those
+[SPEAKER_00]: assemblies to gel.
+[SPEAKER_00]: So we turned back to PacBio and looked for
+higher accuracy reads and fed it DNA that
+[SPEAKER_00]: could actually get us these 32,000 base
+pair reads.
+[SPEAKER_00]: And we assembled this by August 3 and put
+it public at about a 600 and 50 KB and 50.
+[SPEAKER_00]: So we beat the Human Genome Project draft,
+I should say, in a matter of a couple
+[SPEAKER_00]: months, 60 days, from getting funded to
+putting it public.
+[SPEAKER_00]: And this isn't the end of the story.
+[SPEAKER_00]: We then decided to team up with Phase
+Genomics to turn this thing into a
+[SPEAKER_00]: perfection genome.
+[SPEAKER_00]: And what these folks do is they use
+something called chromatin capture,
+[SPEAKER_00]: which basically cross-links the proteins
+that are attached to the DNA.
+[SPEAKER_00]: And it tends to mostly do that to
+interchromosomalase.
+[SPEAKER_00]: So you don't get chromosome-to-chromosome
+cross-links as much as you get neighboring
+[SPEAKER_00]: DNA cross-links.
+[SPEAKER_00]: And so what you can get from this
+technology are pieces of DNA sequence that
+[SPEAKER_00]: are millions of bases apart, but are on
+the same chromosome, and then you can
+[SPEAKER_00]: order up all your chromosomes into pretty
+pictures.
+[SPEAKER_00]: So we did 600 million high C reads like
+this on Illumina to get the high C data
+[SPEAKER_00]: together, threw it into an assembly,
+and we ended up with a 5.4 megabase N50
+[SPEAKER_00]: genome.
+[SPEAKER_00]: Still not perfect, but, you know,
+we're up above the megabase club.
+[SPEAKER_00]: But we realized, you know what,
+we really want to get this into,
+[SPEAKER_00]: like, a 50 megabase range so that we have
+full chromosomes that are touching and we
+[SPEAKER_00]: can phase the genome.
+[SPEAKER_00]: So we went back and did more pack
+biosequencing on their latest chemistry.
+[SPEAKER_00]: It's a version 6 chemistry that does
+42,000 base pair reads.
+[SPEAKER_00]: And I think it can do longer.
+[SPEAKER_00]: This is probably limited in the type and
+the quality of DNA we gave them and gave
+[SPEAKER_00]: the laboratory that was doing this.
+[SPEAKER_00]: You really need to get that DNA as long as
+you can so that you can maximize the
+[SPEAKER_00]: throughput on these systems.
+[SPEAKER_00]: So this went into another assembly,
+a Falcon assembly, and this raw assembly
+[SPEAKER_00]: unscaffolded without any of the high C
+data trying to glue the contigs together
+[SPEAKER_00]: came out at three times this one megabase
+club, right?
+[SPEAKER_00]: We're at 3.7 megabases of just the pack
+biodata alone, and that is fantastic to
+[SPEAKER_00]: give you some perspective on where that is
+in a slider to a she where all the
+[SPEAKER_00]: historical assemblies were.
+[SPEAKER_00]: And then, of course, we quickly uploaded
+this into a preprint server because our
+[SPEAKER_00]: funding cycle was ending by the end of
+October, and we really wanted to have the
+[SPEAKER_00]: chapter closed on starting a funding to
+end a funding.
+[SPEAKER_00]: We're going to have a preprint out that
+represents all this data.
+[SPEAKER_00]: So what are these platforms?
+[SPEAKER_00]: Sarah gave a great talk in the other
+hallway on what Pacific Biosciences is.
+[SPEAKER_00]: These are single molecule sequencers.
+[SPEAKER_00]: So that trace you see up there is actually
+a single molecule going through a zero
+[SPEAKER_00]: mode waveguide with a polymerase that's
+putting in fluorescently labeled
+[SPEAKER_00]: nucleotides, and you are watching a movie
+of a polymerase replicating DNA at a
+[SPEAKER_00]: single molecule level.
+[SPEAKER_00]: It's absolutely mind-blowing Star Trek
+stuff.
+[SPEAKER_00]: And they can do millions of these wells at
+a time, which is fascinating.
+[SPEAKER_00]: And then the other one is this Hi-C
+approach that phase genomics was doing.
+[SPEAKER_00]: And what this does is it really gives you
+three-dimensional structures of the
+[SPEAKER_00]: genome, because their genome is not these
+perfect, beautiful linear chromosomes.
+[SPEAKER_00]: It's actually a big Gordian knot.
+[SPEAKER_00]: And when you cross-link that, you end up
+cross-linking certain DNA into certain
+[SPEAKER_00]: compartments of cells, like the
+mitochondrial DNA ends up in one place and
+[SPEAKER_00]: the chloroplast ends up in another.
+[SPEAKER_00]: And then all of the microbial
+contaminations end up cross-linked in
+[SPEAKER_00]: their own buckets because they have
+nucleuses and other cell walls that are
+[SPEAKER_00]: kind of constraining them.
+[SPEAKER_00]: So this helps partition cells into the
+buckets that the DNA actually exists in
+[SPEAKER_00]: inside the cell, so you can do much more
+complete and thorough assembly.
+[SPEAKER_00]: So this is one of the first ones that we
+did.
+[SPEAKER_00]: And I think the most remarkable thing
+about this technique is that you don't
+[SPEAKER_00]: need high molecular weight DNA to do this.
+[SPEAKER_00]: You take the tissue, and you just
+cross-link it with formaldehyde.
+[SPEAKER_00]: And then you chop the DNA up.
+[SPEAKER_00]: Once it's cross-linked, these huge loops
+of megabases apart get cut, and you ligate
+[SPEAKER_00]: them, and you're effectively reading the
+ends of these large loops of DNA.
+[SPEAKER_00]: And you end up building these maps.
+[SPEAKER_00]: And so the map that you have here is a
+contact map.
+[SPEAKER_00]: It's one of the earliest ones that we
+have.
+[SPEAKER_00]: So typically, you want to see a really
+bright line in the middle.
+[SPEAKER_00]: And we're not completely getting that yet
+with cannabis because of the repeat
+[SPEAKER_00]: content in it.
+[SPEAKER_00]: But it is bucketing now into 10 nice
+chromosomes, which is what we want to see.
+[SPEAKER_00]: We want to see chromosome one through
+chromosome all the way through the X and Y
+[SPEAKER_00]: chromosomes as well.
+[SPEAKER_00]: And we want to see two of them because the
+cannabis is diploid most of the time.
+[SPEAKER_00]: And that's the next phase that we have to
+do, no pun intended, is we have to then
+[SPEAKER_00]: take this diploid genome and split it into
+the two maternal and paternal chromosomes
+[SPEAKER_00]: for every one of them and then organize
+them.
+[SPEAKER_00]: So just put the brakes on here and look at
+what types of assemblies we traditionally
+[SPEAKER_00]: have.
+[SPEAKER_00]: So back in 2001, John's group and our
+group played around with assembling some
+[SPEAKER_00]: of these genomes with Illumina data.
+[SPEAKER_00]: And they ended up in hundreds of thousands
+of pieces.
+[SPEAKER_00]: And the average contig size was around
+3,000 bases.
+[SPEAKER_00]: That's very small contig size when you
+consider the human genome declared victory
+[SPEAKER_00]: on a draft at 500,000 bases.
+[SPEAKER_00]: And then many other people started
+shipping in.
+[SPEAKER_00]: Steve Hill put out a really nice assembly
+that then bumped this number up.
+[SPEAKER_00]: Likewise, Phylos put one in there.
+[SPEAKER_00]: And I think the N50 number got up to 159
+kb.
+[SPEAKER_00]: That was the longest, most contiguous
+assembly.
+[SPEAKER_00]: And it was on Kanatonic, which was a type
+3 strain.
+[SPEAKER_00]: So we weren't getting much information out
+of the THC genetics from that strain.
+[SPEAKER_00]: But it was still giving us great insight
+into maybe the CBD genetics.
+[SPEAKER_00]: So then we jumped on to Jamaican Lion and
+started pumping these numbers up into the
+[SPEAKER_00]: 600 and 48 region and the 665 region with
+just the packed bio assembly alone.
+[SPEAKER_00]: And then when we topped this off with
+version 6 chemistry, these numbers all
+[SPEAKER_00]: jumped to 3.7 megabase N50 results.
+[SPEAKER_00]: So we're really talking about thousands of
+fold improvement over contiguity from
+[SPEAKER_00]: where we started in 2011 to what we have
+today.
+[SPEAKER_00]: So very fast response working with
+cryptocurrency folks.
+[SPEAKER_00]: They move very quickly, and it really
+helps to get the data out there publicly.
+[SPEAKER_00]: We did play around with trying to figure
+out some aspects of this genome with the
+[SPEAKER_00]: existing assemblies we had.
+[SPEAKER_00]: We published a pre-print that we never
+really converted into a paper because it
+[SPEAKER_00]: just opened up this onion of confusion
+once we did this.
+[SPEAKER_00]: We did PCR amplification of THC synthase
+with two different primer sets.
+[SPEAKER_00]: And some primer sets that were described
+in the literature from a group from the
+[SPEAKER_00]: Anofre paper were sitting right inside the
+gene.
+[SPEAKER_00]: So when they amplified this, the primers
+were sitting on the start and stop code.
+[SPEAKER_00]: And they're a little bit blind to the
+variation in the start and the stop
+[SPEAKER_00]: codons.
+[SPEAKER_00]: And that's going to mean something in a
+minute.
+[SPEAKER_00]: But you'll see when we amplify with those
+Anofre primers, we amplify a lot of
+[SPEAKER_00]: copies.
+[SPEAKER_00]: And we don't know where they are in the
+genome.
+[SPEAKER_00]: We just amplify them and sequence them.
+[SPEAKER_00]: And we know that they're unique copies
+because they have high confidence
+[SPEAKER_00]: polymorphisms between them.
+[SPEAKER_00]: But we don't know the order of them in the
+genome.
+[SPEAKER_00]: They don't know where they go in the
+genome.
+[SPEAKER_00]: And we don't necessarily know if they're
+fully active in the genome.
+[SPEAKER_00]: We just saw there's a lot of those copies.
+[SPEAKER_00]: We then backed those primers out to
+amplify with more unique regions of the
+[SPEAKER_00]: genome, and we started getting much fewer
+genes that were coming through.
+[SPEAKER_00]: And the ones that were coming through
+seemed to all be full length.
+[SPEAKER_00]: There weren't any stop codons in them.
+[SPEAKER_00]: And they looked as if they were really
+good THC synthase contigs.
+[SPEAKER_00]: Now, when you get a good genome reference,
+this is what happens is they all show up
+[SPEAKER_00]: in a tandem array.
+[SPEAKER_00]: So interestingly enough, THC synthase has
+replicated itself almost like it's kind of
+[SPEAKER_00]: skidded across the genome.
+[SPEAKER_00]: And so here's one region and one contig
+that has five different copies of THC
+[SPEAKER_00]: synthase, but they're all mutated
+substantially.
+[SPEAKER_00]: In fact, I don't even know if we want to
+call some of these THC synthase because
+[SPEAKER_00]: they're probably only 85% identity.
+[SPEAKER_00]: And then likewise, you can look at another
+contig that is the one that contains
+[SPEAKER_00]: kinabacromine synthase.
+[SPEAKER_00]: Now we know that this thing actually is
+four tandem copies, about 30 or 40 kb
+[SPEAKER_00]: apart.
+[SPEAKER_00]: And you probably can't see this,
+but there are some mutations in the three
+[SPEAKER_00]: prime end and the five prime end that
+change the amino acid structure such that
+[SPEAKER_00]: primers probably missed this in the past
+because they would have been placed on
+[SPEAKER_00]: those sequences.
+[SPEAKER_00]: There happens to be two more copies of
+this in another contig in the genome
+[SPEAKER_00]: that's now been leaked.
+[SPEAKER_00]: So there's actually six copies of this
+thing, and they're all slightly diverged.
+[SPEAKER_00]: And we don't know if they fold at the same
+rate or if they maybe fold some of the
+[SPEAKER_00]: other rare cannabinoids.
+[SPEAKER_00]: These need to be cloned and expressed,
+and a lot of the work that John's done on
+[SPEAKER_00]: this gene needs to be repeated with maybe
+some of these variants.
+[SPEAKER_00]: This is how many we're finding that have
+at least 80% identity.
+[SPEAKER_00]: There's 30 different DNA sequences,
+and this is a cladogram of them and the
+[SPEAKER_00]: scaffolds that they're sitting on in the
+genome.
+[SPEAKER_00]: So we can see there's a lot of cannabinoid
+diversity, cannabinoid synthase diversity.
+[SPEAKER_00]: And then if you kind of whittle those down
+and say, well, which ones are really full
+[SPEAKER_00]: length and possibly functional?
+[SPEAKER_00]: Because some of these are so mutated,
+maybe they're just pseudogenes.
+[SPEAKER_00]: And we get down to about 18 of these
+different THC synthase genes that look
+[SPEAKER_00]: like they possibly could actually encode
+for something that's full length.
+[SPEAKER_00]: Don't know what they do.
+[SPEAKER_00]: We need to be teaming up with people that
+can probably clone these, express them,
+[SPEAKER_00]: and get more information on their
+functionality.
+[SPEAKER_00]: Now, in terms of assay development,
+as Philippe was touching on, this is what
+[SPEAKER_00]: we were dealing with before, is that this
+is a mapping to the references that were
+[SPEAKER_00]: made back in 2011.
+[SPEAKER_00]: And if you're not careful when you map to
+these genomes, these blue reads are paired
+[SPEAKER_00]: reads.
+[SPEAKER_00]: That means they're Illumina reads.
+[SPEAKER_00]: We have a forward and reverse read,
+and they both map to the genome.
+[SPEAKER_00]: The thing highlights it blue.
+[SPEAKER_00]: Red and green are ones where we can only
+map one of the reads to the genome and not
+[SPEAKER_00]: the other.
+[SPEAKER_00]: And so something's wrong.
+[SPEAKER_00]: And those ones you should always kind of
+discount as to whether or not you should
+[SPEAKER_00]: trust them.
+[SPEAKER_00]: But even with these blue ones,
+you can see paired reads, there are four
+[SPEAKER_00]: SNPs in here that probably don't really
+exist.
+[SPEAKER_00]: And what this is, when you map these same
+reads to Jamaican lion, you see that those
+[SPEAKER_00]: reads then map to those other genes that
+we just found that are tandem.
+[SPEAKER_00]: And so it cleans up a lot of your mapping.
+[SPEAKER_00]: It cleans up a lot of your polymorphism
+discovery.
+[SPEAKER_00]: And now we have a reference where we can
+actually maybe go ahead and make a SNP
+[SPEAKER_00]: chip out of this and not be confusing all
+of the signals that we might get out of
+[SPEAKER_00]: the chip.
+[SPEAKER_00]: So phased genomics then stepped into this
+to try and phase the genome, which is
+[SPEAKER_00]: using this Hi-C stuff to peel apart the
+maternal and paternal haplotype so that we
+[SPEAKER_00]: can have a perfectly phased genome.
+[SPEAKER_00]: And when they run this through a busco
+analysis, it looks at how many pieces of
+[SPEAKER_00]: the genome you have.
+[SPEAKER_00]: It's up in the 800 range there.
+[SPEAKER_00]: And you can see the N50 numbers are
+getting closer to 5.4 megabases.
+[SPEAKER_00]: The more complete genome is a little bit
+more AT-rich.
+[SPEAKER_00]: I don't have time to go into this.
+[SPEAKER_00]: We are publishing this on Dash.
+[SPEAKER_00]: And what that means is we're using an
+incentivized review system to speed it up.
+[SPEAKER_00]: We select three reviewers.
+[SPEAKER_00]: We end up putting out a cryptocurrency
+bounty for doing the review.
+[SPEAKER_00]: And every communication they do ends up
+getting hashed onto the blockchain.
+[SPEAKER_00]: So it's completely censorship resistant
+and transparent.
+[SPEAKER_00]: So the phasing stuff is tough,
+right?
+[SPEAKER_00]: This is what a typical genome should look
+like is it should have two different
+[SPEAKER_00]: copies of this genome.
+[SPEAKER_00]: And then what typically happens is genomes
+get collapsed.
+[SPEAKER_00]: If they're really homozygous, like humans,
+they get collapsed into one copy.
+[SPEAKER_00]: They can't discern the maternal from the
+paternal because there's only a SNP every
+[SPEAKER_00]: 100 bases or every 1,000 bases.
+[SPEAKER_00]: We want to tease those apart.
+[SPEAKER_00]: And you do this with a program called
+purge haplotigs, which looks for coverage
+[SPEAKER_00]: differences among the contigs,
+rips the ones that are high out of the
+[SPEAKER_00]: picture.
+[SPEAKER_00]: And then you can begin to zip these things
+into even better maps than we have here.
+[SPEAKER_00]: And if you add in bigger data from PacBio,
+these things turn into this mess.
+[SPEAKER_00]: Now, this is actually not a mess.
+[SPEAKER_00]: It looks like a mess to you.
+[SPEAKER_00]: But what actually we're seeing here is the
+numbers that popped out of this were 75
+[SPEAKER_00]: megabase N50 contigs.
+[SPEAKER_00]: This means we have perfect coverage.
+[SPEAKER_00]: We're seeing a lot of chromosomes that are
+all sorted.
+[SPEAKER_00]: Now, there might be a couple of gaps in
+between the scaffolding from high sea,
+[SPEAKER_00]: which we can fill with a couple other
+programs that they're recommending,
+[SPEAKER_00]: like PolarStar and another tool that helps
+to connect those.
+[SPEAKER_00]: I think it's called PB Jelly.
+[SPEAKER_00]: And we're in that process right now to
+just now polish these things and fill the
+[SPEAKER_00]: gaps.
+[SPEAKER_00]: But I think it's safe to say that we now
+have a genome that is better than most of
+[SPEAKER_00]: the other agricultural crops out there.
+[SPEAKER_00]: And this is just more statistics I won't
+bore you with.
+[SPEAKER_00]: But what the future is going to hold is we
+have a cross of this going on so we can
+[SPEAKER_00]: get a trio.
+[SPEAKER_00]: It's with its brother.
+[SPEAKER_00]: And what we're going to do in the future
+is a lot more methylation sequence,
+[SPEAKER_00]: a lot more RNA sequencing.
+[SPEAKER_00]: And we're going to do some more trio work
+and maybe build some really powerful SNP
+[SPEAKER_00]: chips.
+[SPEAKER_00]: So I want to thank all these people
+involved.
+[SPEAKER_00]: There's a lot of volunteers that jumped
+into this project and made this work.
+[SPEAKER_00]: And I should leave some time for a
+question or two.
+[SPEAKER_00]: Thanks.
+[SPEAKER_00]: Please come up to the mics and ask any
+questions.
+[SPEAKER_02]: Hey, Kevin.
+[SPEAKER_02]: Thanks a lot for the talk.
+[SPEAKER_02]: I do have a question.
+[SPEAKER_02]: You mentioned the repeats on the THC and
+the cannabinoid synthase.
+[SPEAKER_02]: And I think you probably saw a lot on
+terpene synthesis.
+[SPEAKER_02]: Can you comment a little bit on the
+organization?
+[SPEAKER_00]: Oh, thank you for bringing that up.
+[SPEAKER_00]: So we've done a little bit of looking into
+the terpene synthase genes as well.
+[SPEAKER_00]: To be honest, Luca and Keith Allen at
+Steep Hill have been digging into that a
+[SPEAKER_00]: little bit more.
+[SPEAKER_00]: We've got kind of a little community here
+that I know that you're involved with that
+[SPEAKER_00]: they're staring out.
+[SPEAKER_00]: That they're remapping all of John's RNA
+sequencing data onto the new assemblies.
+[SPEAKER_00]: And the terpene synthase cluster is even
+bigger.
+[SPEAKER_00]: There's many more of those to work
+through.
+[SPEAKER_02]: Fantastic.
+Thanks.
+[SPEAKER_01]: I'm kind of new to this.
+[SPEAKER_01]: Does this mean anything of value can be
+sold or distributed to anybody or
+[SPEAKER_01]: everybody?
+[SPEAKER_00]: Are you referring to the blockchain side
+of this or the cannabis sequencing side of
+[SPEAKER_00]: this?
+[SPEAKER_01]: If I have a photograph of Jimi Hendrix,
+does that mean it can be somehow
+[SPEAKER_01]: quantified into some massive distribution?
+[SPEAKER_00]: So there are things going on on the
+Ethereum network where people will get art
+[SPEAKER_00]: and hash it onto Ethereum.
+[SPEAKER_00]: And you can get certain number of digital
+copies that are verifiable so that that
+[SPEAKER_00]: art is effectively scarce digitally,
+if you will.
+[SPEAKER_00]: And there's some unique attributes to the
+music industry that that plays a role in.
+[SPEAKER_00]: But I think I'm getting the god light
+coming up on me over here.
+[SPEAKER_00]: So I think with this, we're going to turn
+this over into more Q&A with the panel to
+[SPEAKER_00]: talk about medicinal cannabis.
+[SPEAKER_00]: And I would like to invite all of our
+panelists up for this event.
+[SPEAKER_00]: Thank you.
+[SPEAKER_00]: Thank you.
+[SPEAKER_00]: Thank you.
+Thank you.

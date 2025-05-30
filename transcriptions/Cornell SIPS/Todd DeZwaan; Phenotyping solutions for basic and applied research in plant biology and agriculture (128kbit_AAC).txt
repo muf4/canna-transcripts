@@ -1,0 +1,730 @@
+[SPEAKER_03]: This is a production of Cornell
+University.
+[SPEAKER_00]: So one of the great things about high
+throughput plant phenotyping is,
+[SPEAKER_00]: from the plant breeding side is,
+we've been thinking about high throughput
+[SPEAKER_00]: phenotyping for quite a few years.
+[SPEAKER_00]: But plant breeders themselves have been
+doing phenotyping for the past 10,000
+[SPEAKER_00]: years.
+[SPEAKER_00]: They've tried to get plants to feed and
+clothe the world and provide food,
+[SPEAKER_00]: fuel and feed.
+[SPEAKER_00]: Thankfully, not all plant breeders evolve
+at such a slow pace.
+[SPEAKER_00]: And we quickly have realized that there is
+a lot of tremendous technologies that can
+[SPEAKER_00]: be applied to our field of plant breeding.
+[SPEAKER_00]: And it's, in a sense, forcing us to think
+more broadly into computer science,
+[SPEAKER_00]: engineering, robotics and artificial
+intelligence.
+[SPEAKER_00]: So this symposium, I feel, isn't just for
+plant sciences themselves, but it really
+[SPEAKER_00]: is also an opportunity for us to reach out
+to other departments on campus.
+[SPEAKER_00]: And for them to see the value of our work
+and how they can fit into that plan.
+[SPEAKER_00]: So our first talk today is going to be by
+Todd Zewon.
+[SPEAKER_00]: He is from one of the best phenotyping
+companies in the world.
+[SPEAKER_00]: And the title of his presentation is
+Phenotyping Solutions for Basic and
+[SPEAKER_00]: Applied Research in Plant Biology and
+Agriculture.
+[SPEAKER_00]: All right, Tom.
+[SPEAKER_01]: Great.
+[SPEAKER_01]: All right.
+[SPEAKER_01]: Well, thank you very much.
+[SPEAKER_01]: And thank you, Alina, for the invitation.
+[SPEAKER_01]: I think we started this conversation a
+couple of months ago or six weeks or so
+[SPEAKER_01]: ago.
+[SPEAKER_01]: And it's really nice to be able to follow
+it up so quickly.
+[SPEAKER_01]: I really appreciate that speed.
+[SPEAKER_01]: Speed is so important in this area of
+endeavor.
+[SPEAKER_01]: So I'm going to be talking to you about
+phenotyping solutions for plant biology
+[SPEAKER_01]: and how you can apply them to agricultural
+research applications.
+[SPEAKER_01]: I'm coming at this from the perspective of
+today being the business development lead
+[SPEAKER_01]: for a technology company that's developing
+solutions in this space.
+[SPEAKER_01]: But my background is, prior to that,
+I spent 11 years working with Monsanto and
+[SPEAKER_01]: specifically my last role with Monsanto
+before I left the company.
+[SPEAKER_01]: And September was a strategy lead for a
+precision phenotyping system that they had
+[SPEAKER_01]: developed, that they constructed in
+Research Triangle Park.
+[SPEAKER_01]: And prior to that, I was working with
+Paradigm Genetics.
+[SPEAKER_01]: And we were working on what we called the
+Gene Function Factory in Arabidopsis
+[SPEAKER_01]: between 2000 and 2005, where we were doing
+a lot of high-throughput phenotyping in
+[SPEAKER_01]: Arabidopsis.
+[SPEAKER_01]: So while I'm pitching a product,
+if that's the right thing to say today,
+[SPEAKER_01]: while I'm here representing Lemna Tech,
+I also have a pretty extensive background
+[SPEAKER_01]: in the application side of things.
+[SPEAKER_01]: So I'll start out a little bit just
+echoing what Mike said about the history
+[SPEAKER_01]: and talk a little bit about the challenges
+coming primarily from the genomic side of
+[SPEAKER_01]: things.
+[SPEAKER_01]: I won't talk too much about the
+environment, but, of course, G by E is
+[SPEAKER_01]: crucial to anything that you do in the
+phenotyping space.
+[SPEAKER_01]: And then I'll shift from there and talk a
+little bit about technologies that we're
+[SPEAKER_01]: developing at Lemna Tech and how they
+address some of the solutions to those
+[SPEAKER_01]: challenges that we're facing as
+researchers.
+[SPEAKER_01]: So just to echo what Mike said,
+we have been phenotyping for 10,000 years.
+[SPEAKER_01]: Actually, phenotyping was one of the key
+things that came out of the Neolithic
+[SPEAKER_01]: Revolution as we domesticated species.
+[SPEAKER_01]: So as a dog lover and as a connoisseur and
+occasional home brewer of beer,
+[SPEAKER_01]: fermentation and domestication of animals
+also came out of the Neolithic Revolution.
+[SPEAKER_01]: So I feel like dog lovers, beer brewing,
+and phenotyping should all coincide as an
+[SPEAKER_01]: appreciation for what Neolithic man gave
+us today.
+[SPEAKER_01]: But it's really impressive when we look at
+the history of phenotyping over the last
+[SPEAKER_01]: 9,000 years when you consider what
+teosinte is and what it has become with
+[SPEAKER_01]: field corn today.
+[SPEAKER_01]: But what's even more impressive is that
+idea of speed and how that has accelerated
+[SPEAKER_01]: in the last 50 to 75 years.
+[SPEAKER_01]: So if you look at breeding gains in corn
+for 10,000 years, for example,
+[SPEAKER_01]: if you look at where we were back around
+1920 before the advent of hybridization in
+[SPEAKER_01]: corn, it took a land area about the
+equivalent of a half-court of a basketball
+[SPEAKER_01]: court to produce one bushel of corn.
+[SPEAKER_01]: Through hybridization and impressive gains
+in yield through breeding and then with
+[SPEAKER_01]: the advent of biotechnology in the late
+90s, which really has done a lot to
+[SPEAKER_01]: protect those breeding gains on corn
+acreage, today we are at about a land area
+[SPEAKER_01]: equivalent for a bushel of corn that is
+equivalent to the space within the free
+[SPEAKER_01]: throw lane.
+[SPEAKER_01]: So between the free throw line and the out
+of bounds, that's about how much land area
+[SPEAKER_01]: it takes to produce a bushel of corn
+today.
+[SPEAKER_01]: So think about that reduction in space and
+what that's the positive impact that
+[SPEAKER_01]: that's really had on productivity and
+ability to use land as we feed a growing
+[SPEAKER_01]: population.
+[SPEAKER_01]: And we're projected to produce an
+equivalent bushel on even less acreage as
+[SPEAKER_01]: we move forward.
+[SPEAKER_01]: So Mendel is considered the father of
+genetics.
+[SPEAKER_01]: I think he's also foundational in
+phenotyping.
+[SPEAKER_01]: And we can really trace our ideas of
+phenotyping and features that we're
+[SPEAKER_01]: characterizing in plant growth and
+development back to those observational
+[SPEAKER_01]: studies that Mendel had with peas.
+[SPEAKER_01]: And everything that he was looking at
+genetically, he was describing as a
+[SPEAKER_01]: phenotype.
+[SPEAKER_01]: So phenotype is really critical for
+explaining genetic outcomes.
+[SPEAKER_01]: And no matter how we modify the genome,
+the desired outcome always occurs at the
+[SPEAKER_01]: level of the phenome.
+[SPEAKER_01]: So whether you're looking at traditional
+breeding outcomes like Mendel was doing or
+[SPEAKER_01]: whether you're looking at non-Mendelian
+inheritance through epigenetics or other
+[SPEAKER_01]: types of modification through protoplast
+fusion or mutagenesis, transgenesis,
+[SPEAKER_01]: polyploidy, and just recently there have
+been a number of products that have been
+[SPEAKER_01]: released on the market that are the first
+generation products of gene editing.
+[SPEAKER_01]: So the Browning resistant mushrooms is one
+example of that.
+[SPEAKER_01]: So no matter how we modify the genome,
+we always want to see what's happening at
+[SPEAKER_01]: the level of the phenome.
+[SPEAKER_01]: And the ability to modify the genome,
+the precision with which we can modify the
+[SPEAKER_01]: phenome, the cost of modifying the genome
+with the genome, these are all becoming
+[SPEAKER_01]: more and more, these are all making genome
+modification more and more accessible to
+[SPEAKER_01]: not only industry, but also plant biology
+researchers.
+[SPEAKER_01]: And so the scale of genome modification is
+increasing.
+[SPEAKER_01]: So this is just reflecting some graphs
+that I'm sure all of you have seen,
+[SPEAKER_01]: that all of you have seen over the recent
+decade.
+[SPEAKER_01]: But the cost of sequencing actually is
+moving faster than the decreasing cost of
+[SPEAKER_01]: computational power by Moore's law.
+[SPEAKER_01]: So where $3 billion was spent to sequence
+the human genome in the late 90s,
+[SPEAKER_01]: you can now do it for about 1,000,
+which is pretty incredible.
+[SPEAKER_01]: And as genome sequencing costs go down,
+of course, the amount of sequencing data
+[SPEAKER_01]: that we accumulate increases.
+[SPEAKER_01]: So we're up to the hundreds of trillions
+of base pairs in GenBank today.
+[SPEAKER_01]: And similarly, as the cost of sequencing
+goes down, adjacent technologies like gene
+[SPEAKER_01]: synthesis are also coming down.
+[SPEAKER_01]: So all of this is pointing to our ability
+to accelerate genome modification and the
+[SPEAKER_01]: real demand to meet that acceleration in
+genome modification with corresponding
+[SPEAKER_01]: increase and advancements in phenomics
+technology.
+[SPEAKER_01]: So I want to talk a little bit about that.
+[SPEAKER_01]: And I put this slide together sort of to
+editorialize some ideas that I've been
+[SPEAKER_01]: thinking about over the past six months
+since I've been with Lemnetech and I've
+[SPEAKER_01]: been talking to customers and I've been
+talking to people in the U.S.
+[SPEAKER_01]: and Western Europe about sort of the state
+of work where academia and industry are
+[SPEAKER_01]: with phenotyping.
+[SPEAKER_01]: And I tried to do sort of a manual spot
+fiery type view of my thinking on this.
+[SPEAKER_01]: But I want to first talk about the size of
+these bubbles that I'm showing on this
+[SPEAKER_01]: slide.
+[SPEAKER_01]: And the size is, what I've done is really
+kind of taken size to represent utility.
+[SPEAKER_01]: And one of the things that I hear a lot
+when I talk to people about phenotyping is
+[SPEAKER_01]: a lot of interest that, you know,
+almost one of the first things that come
+[SPEAKER_01]: up are interest areas in these smaller
+bubbles, the NIR, infrared, chlorophyll
+[SPEAKER_01]: fluorescence, fluorescence in general as a
+phenotyping technology.
+[SPEAKER_01]: But what I will say is in my experience
+and what real world needs really is,
+[SPEAKER_01]: about 80 to 85 percent of the questions
+that you ask will rely on high resolution,
+[SPEAKER_01]: reliable, repeatable, visible light
+imaging.
+[SPEAKER_01]: That's always going to be the cornerstone
+of your phenotyping inquiry.
+[SPEAKER_01]: There have been some really impressive
+advances in technology and capabilities in
+[SPEAKER_01]: the last decade.
+[SPEAKER_01]: Or two, 3D laser scanning is another
+really useful tool for phenotyping.
+[SPEAKER_01]: It uses a laser based approach to give you
+a very detailed three dimensional
+[SPEAKER_01]: reconstruction of the plants that you're
+using.
+[SPEAKER_01]: And I'll talk about this now.
+[SPEAKER_01]: I may repeat it again later.
+[SPEAKER_01]: But one of the really powerful things that
+3D laser scanning brings to phenotyping is
+[SPEAKER_01]: its ability to
+[SPEAKER_01]: bring information forward from some of
+these other systems.
+[SPEAKER_01]: So at Lemnetech we use a data analytical
+approach called sensor fusion where we
+[SPEAKER_01]: take the 3D image of a 3D laser scan and
+overlay it on the 2D images that are
+[SPEAKER_01]: produced through, for example,
+a chlorophyll fluorescence system or an
+[SPEAKER_01]: NIR system.
+[SPEAKER_01]: And what that does is it corrects for many
+of the angle effects and confusion,
+[SPEAKER_01]: frankly, in the data that you get from a
+strictly 2D image alone from some of these
+[SPEAKER_01]: other modalities.
+[SPEAKER_01]: So 3D laser scanning has very high
+utility.
+[SPEAKER_01]: And then finally hyperspectral is just,
+there's a lot of really exciting things
+[SPEAKER_01]: happening with hyperspectral imaging.
+[SPEAKER_01]: So from field scanning using hyperspectral
+to do scouting early detection of disease
+[SPEAKER_01]: as well as taking it into the laboratory
+context.
+[SPEAKER_01]: So there's a group out of the University
+of Bond who's using hyperspectral imaging
+[SPEAKER_01]: to study metabolic and other chemical
+compositional changes in plants.
+[SPEAKER_01]: So there's a lot of real discovery phase
+things that are happening with
+[SPEAKER_01]: hyperspectral imaging these days.
+[SPEAKER_01]: So that's the size of the bubble.
+[SPEAKER_01]: And then as you're thinking about cost,
+and this is all very subjective,
+[SPEAKER_01]: so working in tens of thousands,
+working in orders of magnitude,
+[SPEAKER_01]: not specific numbers here.
+[SPEAKER_01]: But in terms of cost, visible light
+phenotyping is by far going to be sort of
+[SPEAKER_01]: your entry level solution for coming in in
+the five to $20,000 range for very nice
+[SPEAKER_01]: instrumentation.
+[SPEAKER_01]: Then laser scanning, you start getting up
+into the $10,000 to $70,000 range.
+[SPEAKER_01]: And it's very easy to spend over $100,000
+on hyperspectral, on high-end
+[SPEAKER_01]: hyperspectral cameras.
+[SPEAKER_01]: So just some things to keep in mind as
+you're thinking about developing
+[SPEAKER_01]: phenotyping solutions.
+[SPEAKER_01]: I think more than anything, think about
+the kinds of questions that you're asking
+[SPEAKER_01]: now and think about the growth potential
+of the system.
+[SPEAKER_01]: So how you can build on it as your needs
+change going forward.
+[SPEAKER_01]: So I'm going to take this and take some of
+these ideas and talk about, I think,
+[SPEAKER_01]: just given the time, I'll probably talk a
+little bit about visible light imaging,
+[SPEAKER_01]: how we're using it, and some of the tools
+we've developed at LemonTech, show you how
+[SPEAKER_01]: we're using laser scanning, and then talk
+about a new instrument that we've
+[SPEAKER_01]: developed for hyperspectral imaging.
+[SPEAKER_01]: And then we'll see where we are and jump
+to the end.
+[SPEAKER_01]: So as I said, visible light imaging is
+really the cornerstone of any phenotyping
+[SPEAKER_01]: system that you put in place.
+[SPEAKER_01]: Visible light imaging is going to deliver
+the information that you need for plant
+[SPEAKER_01]: size, plant architecture, color.
+[SPEAKER_01]: And if it's a very high-quality system,
+you can get a very high degree of temporal
+[SPEAKER_01]: resolution.
+[SPEAKER_01]: So you can start looking at change over
+time.
+[SPEAKER_01]: And then you can use analytical solutions
+that I think Chris will talk to you more
+[SPEAKER_01]: about to do things like looking at
+skeletonization to define leaf number,
+[SPEAKER_01]: leaf length, angles, stem length,
+elongation rates, change over time.
+[SPEAKER_01]: You can use color to quantify very
+specific features.
+[SPEAKER_01]: So you can get an early view of damage
+either due to herbicide or disease or
+injury.
+[SPEAKER_01]: Or abiotic stress, whatever your question
+is, using color.
+[SPEAKER_01]: And you can correlate some of those color
+changes with specific responses.
+[SPEAKER_01]: So for example, you get a very different
+color response in Arabidopsis under
+[SPEAKER_01]: nitrogen stress than you do drought
+stress.
+[SPEAKER_01]: You can extend it further beyond plants to
+insect feeding assays.
+[SPEAKER_01]: So this is something that a number of our
+industrial partners use our systems for.
+[SPEAKER_01]: They use it for insect feeding assays on
+dietary plates or even leaf discs.
+[SPEAKER_01]: And then finally, you can use visible
+light imaging to get a lot of information
+[SPEAKER_01]: around post-harvest questions.
+[SPEAKER_01]: So looking at things like ear metrics,
+tip void, doing an estimate of total
+[SPEAKER_01]: kernel count, individual seed metrics.
+[SPEAKER_01]: You can get information about color and
+some compositional features based on how
+[SPEAKER_01]: color changes over the dimensions of the
+seed.
+[SPEAKER_01]: So essentially all of our systems,
+whether it's a laboratory field or a
+[SPEAKER_01]: greenhouse system, are all going to have
+visible light imaging as the foundation of
+[SPEAKER_01]: the instrumentation.
+[SPEAKER_01]: I'm just showing three examples of some of
+our instruments here.
+[SPEAKER_01]: So on the left here, this is a manual
+individual plant phenotyping system.
+[SPEAKER_01]: Actually, you can also do flats in the top
+down version of this instrument.
+[SPEAKER_01]: So you can do multiple plants.
+[SPEAKER_01]: But it's essentially used, it's an entry
+level system that's used for low
+[SPEAKER_01]: throughput phenotyping of individual flats
+or plants.
+[SPEAKER_01]: It's a standalone system with touch screen
+control that also allows you to do on the
+[SPEAKER_01]: fly data vision.
+[SPEAKER_01]: And it's available, as I'm showing here,
+for top down view.
+[SPEAKER_01]: But we also have a short wide one that you
+can use for side view.
+[SPEAKER_01]: So if you're looking at taller plants,
+and especially for monocots, often you
+[SPEAKER_01]: want to have that side view imaging.
+[SPEAKER_01]: Up here at the top is a new system that
+we're developing this year.
+[SPEAKER_01]: It's really kind of, I think of it as sort
+of a, as an entry level automated
+[SPEAKER_01]: phenotyping solution.
+[SPEAKER_01]: So you can buy the base unit that you see
+here with only visible light imaging.
+[SPEAKER_01]: And you can start immediately doing high
+throughput phenotyping of flats of plants
+[SPEAKER_01]: or microtiter plates or whatever your
+research area calls for.
+[SPEAKER_01]: And you can then, it's modular in that in
+the sense that you can start adding on a
+[SPEAKER_01]: tray feeder if your throughput increases.
+[SPEAKER_01]: You can also add on other imaging units if
+your imaging demands increase.
+[SPEAKER_01]: So that you can start expanding beyond
+visible light into things like chlorophyll
+[SPEAKER_01]: fluorescence or hyperspectral.
+[SPEAKER_01]: And then finally down here is just a
+picture of a conveyor system.
+[SPEAKER_01]: Again, visible light is part of all of
+those systems.
+[SPEAKER_01]: And these systems are larger greenhouse
+installations that have fully integrated
+[SPEAKER_01]: growth and plant growth and maintenance
+and watering and so forth in them.
+[SPEAKER_01]: 3D laser scanning, the way this works is
+you use a laser to generate a point cloud.
+[SPEAKER_01]: And so those point clouds identify very
+specific features.
+[SPEAKER_01]: And you can do this at a high degree of
+resolution and use machine learning type
+[SPEAKER_01]: approaches to take those features that
+you're extracting via the point clouds and
+[SPEAKER_01]: start using machine learning to identify
+specific organ level features,
+[SPEAKER_01]: panicles, leaves, things like that on the
+plants.
+[SPEAKER_01]: We have, so I just want to give you an
+example of how we're using 3D laser
+[SPEAKER_01]: scanning in our field scan analyzer
+system.
+[SPEAKER_01]: So this is a system that is at the
+University of Arizona Maricopa field site.
+[SPEAKER_01]: And this is part of the Terra reference
+project and a major focus of this project
+[SPEAKER_01]: is accelerating breeding in bioenergy
+sorghum to produce bioenergy sorghum as a
+[SPEAKER_01]: commodity crop for the southeastern region
+of the United States.
+[SPEAKER_01]: And we have many sensors within the sensor
+box that we use at the Maricopa site.
+[SPEAKER_01]: Laser scanners are an important part of
+this.
+[SPEAKER_01]: And as I said before, what the laser
+scanners allow us to do is that sensor
+[SPEAKER_01]: fusion approach by coupling the 3D view
+that we generate from laser scanning with
+[SPEAKER_01]: the 2D views of infrared, PS2,
+and hyperspect.
+[SPEAKER_01]: So what I just want to show here is a view
+of what that looks like.
+[SPEAKER_01]: So this is data that was actually captured
+over time from the Maricopa field site.
+[SPEAKER_01]: And there's a couple of things that I want
+to point out with this.
+[SPEAKER_01]: First of all, we're getting to the point
+with laser scanning.
+[SPEAKER_01]: And 3D imaging with laser scanning that
+from a gantry system, we can singulate
+[SPEAKER_01]: plants.
+[SPEAKER_01]: So this was over time.
+[SPEAKER_01]: And we were able to monitor the growth of
+these sets of plants individually over
+[SPEAKER_01]: time.
+[SPEAKER_01]: Now, the other thing that you can see is
+the 3D images give you a very,
+[SPEAKER_01]: that you can start seeing very distinct
+architectural differences between these
+[SPEAKER_01]: two plots.
+[SPEAKER_01]: So let's just focus on an easy one.
+[SPEAKER_01]: You can see that there's very different
+panicle density between the one on the
+[SPEAKER_01]: left and the one on the right so that you
+can start identifying very specific
+[SPEAKER_01]: features.
+[SPEAKER_01]: One of the things that we're working on is
+to try to get laser scanning below,
+[SPEAKER_01]: trying to get further down into the
+canopy.
+[SPEAKER_01]: So while those are two of the strengths,
+one of the drawbacks is with 3D laser
+[SPEAKER_01]: scanning from a gantry, you really get
+only the top half to third of the plant in
+[SPEAKER_01]: that 3D view.
+[SPEAKER_01]: So I won't spend too much time talking
+about specific indices with hyperspectral
+[SPEAKER_01]: imaging, except to say that there are a
+wide variety of indices that are being
+[SPEAKER_01]: developed using hyperspectral imaging,
+everything from NDVI for remote imaging of
+[SPEAKER_01]: fields and forests to specific indices
+that measure things like water,
+[SPEAKER_01]: chlorophyll, and stress pigment
+composition.
+[SPEAKER_01]: So there's a lot of discovery potential
+with hyperspect, and I think that there's
+[SPEAKER_01]: a lot, there's going to be a lot more,
+a lot more knowledge to be gained using
+[SPEAKER_01]: hyperspect in the years ahead.
+[SPEAKER_01]: We've recently developed a robotic unit
+that will allow us to use hyperspectral
+[SPEAKER_01]: combined with the 3D laser to get,
+to translate very complex plant structural
+[SPEAKER_01]: level information into a very high
+resolution 3D model.
+[SPEAKER_01]: And so this is a robot, it's got an
+articulating arm that's got hyperspectral,
+[SPEAKER_01]: 3D laser scanner, and then two lights that
+focus into a line, and you're basically
+[SPEAKER_01]: doing all of your imaging in a line across
+the plant.
+[SPEAKER_01]: So if the microphone here is the plant,
+you can very easily scan up with the robot
+[SPEAKER_01]: and then the articulating arm comes down
+and it generates a very high resolution in
+[SPEAKER_01]: three dimensions that way.
+[SPEAKER_01]: I think that I'm going to jump through
+these next couple of slides, because there
+[SPEAKER_01]: was one point that I thought was worth
+talking about with this audience,
+[SPEAKER_01]: and I'm coming up on time here.
+[SPEAKER_01]: So Lemnetech produces, when we're looking
+at greenhouse, when we're looking at
+[SPEAKER_01]: greenhouse level solutions for
+phenotyping, Lemnetech really delivers
+[SPEAKER_01]: greenhouse phenotyping solutions based on,
+that are tailored to a research
+[SPEAKER_01]: institution's demands.
+[SPEAKER_01]: And so at the Nebraska Innovation Campus,
+we have a conveyor-based greenhouse
+[SPEAKER_01]: system, and we recently completed at the
+Cranfield Agricultural Engineering
+[SPEAKER_01]: Precision Innovation Center, a
+gantry-based system.
+[SPEAKER_01]: And there are a number of pros and cons to
+either of these systems that I think are
+[SPEAKER_01]: worth evaluating as you're thinking about
+building out infrastructure in this way.
+[SPEAKER_01]: So conveyor-based systems have been around
+for quite a number of years, and in many
+[SPEAKER_01]: respects, they're a very tried and true
+way of doing high-throughput phenotyping.
+[SPEAKER_01]: But some of the drawbacks of a conveyor
+system are that you have lower size and
+[SPEAKER_01]: weight limits because of the intrinsic
+limits of the conveyor, and also the
+[SPEAKER_01]: intrinsic limits of the cabinets that
+you're bringing the plants through.
+[SPEAKER_01]: In contrast, a gantry system, because the
+plants don't have to move, you're bringing
+[SPEAKER_01]: the sensor to the plants.
+[SPEAKER_01]: In a gantry system, you can basically
+phenotype large plants all the way out to
+[SPEAKER_01]: maturity.
+[SPEAKER_01]: So if you're asking questions of corn out
+to V7, then maybe a conveyor, then maybe a
+[SPEAKER_01]: conveyor system is what you want.
+[SPEAKER_01]: But if you really want to start asking
+reproductive stage questions around corn
+[SPEAKER_01]: in a controlled environment, a gantry
+system is probably the solution that
+[SPEAKER_01]: you're looking for.
+[SPEAKER_01]: Conveyor systems, as I said when we were
+talking about 3D imaging with the gantry,
+[SPEAKER_01]: conveyor systems will give you
+high-resolution whole plant imaging.
+[SPEAKER_01]: The gantry system will be relying on 3D
+imaging and 3D reconstructions,
+[SPEAKER_01]: and so you're getting down to about
+halfway down the plant, but you won't be
+[SPEAKER_01]: able to get all the way down to the pot.
+[SPEAKER_01]: Now there are some solutions that you
+could consider with sort of imaging within
+[SPEAKER_01]: the rows of a gantry system to supplement
+your gantry, but from the gantry itself,
+[SPEAKER_01]: you're not going to be able to get the
+entire plant.
+[SPEAKER_01]: However, with a conveyor system,
+while you're doing plant-level tracking
+[SPEAKER_01]: and analysis, which can be very important,
+for basic research, the gantry system will
+[SPEAKER_01]: allow you to do canopy-level analysis.
+[SPEAKER_01]: So if you're asking for how things
+translate more into a field context,
+[SPEAKER_01]: the gantry system may be the way to go.
+[SPEAKER_01]: The conveyor system, as I'm trying to
+communicate down here with this graph,
+[SPEAKER_01]: is a fixed configuration.
+[SPEAKER_01]: So there is some variation in how you can
+populate the greenhouse with a conveyor
+[SPEAKER_01]: system, but in general, your pots are
+always going to be this far apart.
+[SPEAKER_01]: So you could populate it with every other
+pot, or you can change your pot so that
+[SPEAKER_01]: there's multiple plants within a carrier,
+but they're always going to be in this
+[SPEAKER_01]: configuration that's defined by the
+conveyor.
+[SPEAKER_01]: A gantry system, it's wide open,
+so you can configure the floor of the
+[SPEAKER_01]: greenhouse however you want with a gantry.
+[SPEAKER_01]: So there's a lot of opportunity there.
+[SPEAKER_01]: However, with the conveyor system,
+the movement really mitigates any
+[SPEAKER_01]: environmental variation that will occur in
+any greenhouse.
+[SPEAKER_01]: So no matter how good your greenhouse is,
+there's always going to be environmental
+[SPEAKER_01]: variation, and you'll need to take that
+into consideration with your experimental
+[SPEAKER_01]: design with a gantry system.
+[SPEAKER_01]: Yeah, one real quick point.
+[SPEAKER_01]: In cases where moving your plant can
+influence the outcome of the phenotype,
+[SPEAKER_01]: obviously a gantry system is going to be a
+better choice.
+[SPEAKER_01]: So a real clear example of that is thermal
+imaging.
+[SPEAKER_01]: If you want to do anything with thermal
+imaging, as soon as you move the plant on
+[SPEAKER_01]: a conveyor, you immediately disrupt your
+ability to do that in a biologically
+[SPEAKER_01]: relevant way.
+[SPEAKER_01]: You'll get data, but whether it's
+interpretable or meaningful.
+[SPEAKER_01]: So we provide all of the software for all
+of the instrumentation that I just
+[SPEAKER_01]: described, and I also want to give a shout
+out here to the PlantCV software,
+[SPEAKER_01]: which really it's an open source software
+solution that overlaps a lot with some of
+[SPEAKER_01]: the things that we do with LemnaGrid,
+and there's a lot of really exciting
+[SPEAKER_01]: things happening with PlantCV these days
+in the plant community.
+[SPEAKER_01]: I think I'll jump to the end here and just
+open it up to some final questions.
+[SPEAKER_01]: So just to summarize, phenotyping really
+follows on genotyping.
+[SPEAKER_01]: It's crucial that we develop tools to
+address this challenge as we become more
+[SPEAKER_01]: capable in our ability to genotype and
+make genome modifications, and LemnaTech
+[SPEAKER_01]: delivers solutions at a variety of scales,
+laboratory, greenhouse, and fields to do
+[SPEAKER_01]: just that.
+[SPEAKER_01]: So with that, I'll finish up.
+[SPEAKER_02]: Yeah,
+[SPEAKER_01]: the robot moves around the plant.
+[SPEAKER_01]: So there's not a need for the plant to
+rotate.
+[SPEAKER_01]: Now in the cabinets that I showed on the
+conveyor system, actually if you looked at
+[SPEAKER_01]: that particular image, as the plant moves
+into those cabinets, it moves onto a stage
+[SPEAKER_01]: that lifts it, and that rotates.
+[SPEAKER_01]: So then from fixed cameras, you can get a
+variety of different angles.
+[SPEAKER_01]: So on the robot, there will be,
+this is the plant, this is the robot.
+[SPEAKER_01]: On the robot, there will be one camera
+that moves around like that.
+[SPEAKER_01]: In the cabinets, there's two cameras,
+maybe three, but the plant moves in the
+[SPEAKER_01]: cabinet configuration.
+[SPEAKER_01]: I mean, that's a higher throughput,
+so that kind of solution in the cabinet
+[SPEAKER_01]: where you have, that's a higher
+throughput, lower resolution solution to
+[SPEAKER_01]: the problem.
+[SPEAKER_01]: The robot is specifically a solution we're
+developing.
+[SPEAKER_01]: It's lower throughput, but higher
+resolution.
+[SPEAKER_00]: What's the time per plant?
+[SPEAKER_01]: On the robot.
+[SPEAKER_01]: Well, it'll depend on the question you're
+asking, but you can easily test a
+[SPEAKER_01]: greenhouse if you take a conveyor
+greenhouse, you can easily test a
+[SPEAKER_01]: greenhouse of 500 or even 1,000 or 2,000
+plants in a day through visible light
+[SPEAKER_01]: imaging.
+[SPEAKER_01]: With the robotic unit, that's gonna be
+like five to 10, that can be up,
+[SPEAKER_01]: hyperspect slows everything down.
+[SPEAKER_01]: No matter whether it's on a robot or it's
+fixed mounted, hyperspect slows everything
+[SPEAKER_01]: down, because you're looking at multiple
+wave, you're capturing multiple
+[SPEAKER_01]: wavelengths.
+[SPEAKER_01]: That will be, that is probably gonna be
+five to 10 minutes per plant, depending on
+[SPEAKER_01]: the type of scan that you do.
+[SPEAKER_01]: So, but you can do, you can get high
+throughput, you can test an entire
+[SPEAKER_01]: greenhouse.
+[SPEAKER_01]: Great question, that's a really great
+question.
+[SPEAKER_01]: So the data analytics, the data analytics
+piece, developing the computational tools
+[SPEAKER_01]: for handling the massive amounts of
+information that we're generating.
+[SPEAKER_01]: So that gantry system, Chris might
+actually be able to answer better,
+[SPEAKER_01]: it's generating terabytes of data per day.
+[SPEAKER_01]: I mean, it's just an enormous,
+so the data analytics, the data analytics
+[SPEAKER_01]: piece, there's really important to be able
+to take the biological know-how and bridge
+[SPEAKER_01]: it with the instrumentation.
+[SPEAKER_01]: That's a really crucial piece.
+[SPEAKER_01]: So understanding what the strengths,
+weaknesses, limits are of the sensor
+[SPEAKER_01]: instrumentation that's out there is really
+crucial.
+[SPEAKER_01]: And I'll think about that some more,
+and be ready to talk to grad students at
+[SPEAKER_01]: the break.
+[SPEAKER_01]: That's a great question.
+[SPEAKER_03]: This has been a production of Cornell
+University, on the web at cornell.edu.
+[SPEAKER_03]: Thank you.
+Thank you.
+Thank you.

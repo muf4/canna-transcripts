@@ -1,0 +1,917 @@
+[SPEAKER_00]: This is a production of Cornell
+University.
+[SPEAKER_00]: Thanks.
+[SPEAKER_00]: Yeah, so I'm with Breeding Insight.
+[SPEAKER_00]: We're under biotech.
+[SPEAKER_00]: We're just up Tower Road next to the Boyce
+Thompson Institute in a small building
+[SPEAKER_00]: that you probably haven't noticed before.
+[SPEAKER_00]: But we're on campus if you're looking for
+us.
+[SPEAKER_00]: So yeah, super excited to share the work
+that the team does at Breeding Insight.
+[SPEAKER_00]: Borrowed a lot of slides from people,
+and we'll get to talk through these
+[SPEAKER_00]: activities.
+[SPEAKER_00]: So overview, definitely spend a little bit
+of time explaining what Breeding Insight
+[SPEAKER_00]: is, why we were founded, what we're
+working on.
+[SPEAKER_00]: Go into some specific examples of genomics
+projects and how we're assisting breeders.
+[SPEAKER_00]: Talk about some bioinformatics results.
+[SPEAKER_00]: Talk a little bit about some of the image
+analysis projects that we've worked on
+[SPEAKER_00]: with breeders.
+[SPEAKER_00]: Talk a little bit about DeltaBread,
+which is our database management platform.
+[SPEAKER_00]: And then I've got a couple miscellaneous
+topics.
+[SPEAKER_00]: At the end.
+[SPEAKER_00]: So Breeding Insight, the mission that we
+were given was to help transform breeding
+[SPEAKER_00]: by enabling the implementation of genomic
+insight and selection as part of routine
+[SPEAKER_00]: specialty crop and livestock breeding
+across all of USDA ARS.
+[SPEAKER_00]: So I think what people at USDA ARS were
+seeing and what we've discovered working
+[SPEAKER_00]: with a lot of specialty species is that a
+lot of the challenges in corn and soybean,
+[SPEAKER_00]: a lot of the tools and items that have
+been deployed aren't readily transferable
+[SPEAKER_00]: to specialty species in a one-to-one
+capacity.
+[SPEAKER_00]: And I think this list kind of shows that
+with corn and soybean, you've got very
+[SPEAKER_00]: clear, full mechanization.
+[SPEAKER_00]: We're looking just at two annual species.
+[SPEAKER_00]: We've got functional diploids.
+[SPEAKER_00]: We just have to deal with seed components,
+seed planting.
+[SPEAKER_00]: A lot of commercial breeders are in this
+space, primarily focused on high yields,
+[SPEAKER_00]: and you get to have dry harvest.
+[SPEAKER_00]: If you try to transfer that list over to
+Blueberry and lettuce, it falls apart
+[SPEAKER_00]: pretty quick.
+[SPEAKER_00]: But again, how do we create tools?
+[SPEAKER_00]: How do we adapt these tools and service
+breeders when this is not the conventional
+[SPEAKER_00]: list of things that have been made for
+corn and soybean?
+[SPEAKER_00]: So the breeders that we work with,
+breeders are tasked and asked to do a
+[SPEAKER_00]: whole lot of things.
+[SPEAKER_00]: So to have a successful program to make
+good progress, you've got to have good
+[SPEAKER_00]: breeding program management, a lot of good
+field data collection tools, store your
+[SPEAKER_00]: traits properly, manage all your samples,
+whether that's DNA samples, tissue
+[SPEAKER_00]: samples, seed samples.
+[SPEAKER_00]: Again, can you work within the USDA
+germplasm banks to bring in new and novel
+[SPEAKER_00]: genetic diversity, identify new traits
+that are plaguing your growers,
+[SPEAKER_00]: storing your genetic data, perform genetic
+analyses, and then make all those
+[SPEAKER_00]: decisions and report out.
+[SPEAKER_00]: So breeding's not a sole enterprise.
+[SPEAKER_00]: I don't think any single person can do all
+of this.
+[SPEAKER_00]: So what we're really looking at doing is
+how can you create a good team?
+[SPEAKER_00]: So I think any breeder today would say,
+I would love to have a great
+[SPEAKER_00]: bioinformaticist.
+[SPEAKER_00]: I'd love to have somebody who's
+knowledgeable of genomics.
+[SPEAKER_00]: I'd love to have a good statistician.
+[SPEAKER_00]: And maybe I'd like to have a software
+developer to help connect and build new
+[SPEAKER_00]: tools to serve my program.
+[SPEAKER_00]: So to provide this for every species,
+for every breeder across USDA ARS would be
+[SPEAKER_00]: extremely challenging and extremely cost
+prohibitive.
+[SPEAKER_00]: So where breeding insight kind of fits
+within this scheme, again, there's a lot
+[SPEAKER_00]: of basic research that comes out,
+super new techniques, new research coming
+[SPEAKER_00]: out all the time.
+[SPEAKER_00]: Plant and animal breeders, as I just
+showed on the list before, they're tasked
+[SPEAKER_00]: with a whole bunch of other things.
+[SPEAKER_00]: They don't always have time to go figure
+out the newest software, figure out the
+[SPEAKER_00]: newest genomic thing.
+[SPEAKER_00]: Is it going to disrupt their current
+workflow?
+[SPEAKER_00]: So that's where we kind of fit in.
+[SPEAKER_00]: Is kind of looking over at the basic
+research, hearing directly from plant and
+[SPEAKER_00]: animal breeders what are their needs,
+what are their challenges, and help ease
+[SPEAKER_00]: that technology adoption into their
+program.
+[SPEAKER_00]: So if they say, I want to start using
+genetic markers in my program,
+[SPEAKER_00]: that's great.
+[SPEAKER_00]: Let's talk about what you want to use them
+for.
+[SPEAKER_00]: How many do you want to deploy?
+[SPEAKER_00]: How are you going to use it?
+[SPEAKER_00]: All right, now let's show you a suite of
+genomic tools that might be a good fit for
+[SPEAKER_00]: you.
+[SPEAKER_00]: Let's talk price.
+[SPEAKER_00]: Let's just kind of narrow down the search
+space for you.
+[SPEAKER_00]: So you're not wasting your time chasing a
+bunch of different things that disrupt
+[SPEAKER_00]: your current workflow.
+[SPEAKER_00]: Let's give you a really high probability
+of success for what you want.
+[SPEAKER_00]: All right, so a little bit more about who
+we are.
+[SPEAKER_00]: So again, we are a USDA ARIS funded
+initiative.
+[SPEAKER_00]: We're located at Cornell University.
+[SPEAKER_00]: We are Cornell employees.
+[SPEAKER_00]: So that's really nice at the moment.
+[SPEAKER_00]: We connect and build resources for
+specialty crop and livestock breeders.
+[SPEAKER_00]: So we'll talk examples for both.
+[SPEAKER_00]: And as I just mentioned, we really picture
+ourselves as a service and technology
+[SPEAKER_00]: transfer model.
+[SPEAKER_00]: Again, just helping provide additional
+support to USDA specialty breeding
+[SPEAKER_00]: programs.
+[SPEAKER_00]: And I know I'll focus a lot on science
+team developments, but want to highlight
+[SPEAKER_00]: that we're a team made up of scientists as
+well as software developers.
+[SPEAKER_00]: All right, so a little bit about what our
+growth has been like since 2018.
+[SPEAKER_00]: So the idea of starting Breeding Insight
+and the inception came in 2018.
+[SPEAKER_00]: We got our first group of species in 2019.
+[SPEAKER_00]: So there's the six species, trout,
+salmon, alfalfa grape, blueberry,
+[SPEAKER_00]: and sweet potato that represented about 15
+breeding programs across the USDA ARS.
+[SPEAKER_00]: In 2022, we got 10 new species pictured
+down at the bottom and also the formation
+[SPEAKER_00]: of Breeding Insight.
+[SPEAKER_00]: So this is a group doing similar work to
+what we're doing, but they're primarily
+[SPEAKER_00]: focused down in the Southeast.
+[SPEAKER_00]: And they have a slightly different
+research model than we do.
+[SPEAKER_00]: In 2024, we got 11 new species pictured on
+the right.
+[SPEAKER_00]: And that brings us up to supporting around
+51 breeders and breeding programs across
+[SPEAKER_00]: the US.
+[SPEAKER_00]: So here's kind of what it looks like where
+all those breeding programs are located.
+[SPEAKER_00]: So you can see we've got some high
+capacity over in the Pacific Northwest in
+[SPEAKER_00]: Corvallis, Oregon, as well as Prosser,
+Washington.
+[SPEAKER_00]: Also quite a bit of capacity in Madison,
+Wisconsin, a number of species there,
+[SPEAKER_00]: and then a decent number in Belt,
+Asheville, Maryland.
+[SPEAKER_00]: So really the idea is build some capacity
+at Cornell University.
+[SPEAKER_00]: And then we can serve as kind of surge
+support for bioinformatics, genomics,
+[SPEAKER_00]: phenotyping, software development to these
+breeding programs across the US.
+[SPEAKER_00]: One of the things that's really fun with
+working with all these different species
+[SPEAKER_00]: is we'll hear of a solution or a challenge
+in something like trout.
+[SPEAKER_00]: And then we'll hear a similar thing in
+cranberry and take a tool from trout and
+[SPEAKER_00]: be able to apply it in cranberry.
+[SPEAKER_00]: Those two groups would never meet at a
+typical conference or discuss these ideas.
+[SPEAKER_00]: So we sit at kind of an interesting spot,
+hearing a lot of just breeding technology
+[SPEAKER_00]: that's coming through.
+[SPEAKER_00]: And we help funnel and distribute that
+information out to other groups.
+[SPEAKER_00]: All right, so that was a little bit about
+breeding insight.
+[SPEAKER_00]: Let's talk about some of the other things
+that we're working on.
+[SPEAKER_00]: So one of the big challenges that we were
+set out to do with looking at our species
+[SPEAKER_00]: portfolio is we can't constantly be
+building one-off solutions for every
+[SPEAKER_00]: species or every program that we work
+with.
+[SPEAKER_00]: So talking with breeders, working with
+breeders, a lot of the challenges are the
+[SPEAKER_00]: same.
+[SPEAKER_00]: But trying to figure out what is a common
+solution that's going to work across all
+[SPEAKER_00]: those species is a challenge.
+[SPEAKER_00]: But that's what we're working on.
+[SPEAKER_00]: And I think we're making good progress
+identifying a number of tools and services
+[SPEAKER_00]: that work in that capacity.
+[SPEAKER_00]: So again, what we refer to this as kind of
+creating species agnostic tools.
+[SPEAKER_00]: Can we identify something that can help
+breeders perform their own bioinformatics
+[SPEAKER_00]: regardless of the ploidy level of the
+species, regardless of the marker platform
+[SPEAKER_00]: that they're using?
+[SPEAKER_00]: If a species says they want to use
+genotyping, can we find one good
+[SPEAKER_00]: genotyping provider that can fit the needs
+for all the species that we're working
+[SPEAKER_00]: with?
+[SPEAKER_00]: Same with phenotyping.
+[SPEAKER_00]: Can we find something that works on
+berries and also works on leaves and also
+[SPEAKER_00]: works on roots?
+[SPEAKER_00]: Kind of simpler solutions.
+[SPEAKER_00]: And then the database management,
+that's the same component.
+[SPEAKER_00]: Can we find a way for breeders to store
+data for annuals as well as perennials for
+[SPEAKER_00]: things that are at the plot level,
+things are at the plant level?
+[SPEAKER_00]: So just really try to create species
+agnostic tools across all of these
+[SPEAKER_00]: species.
+[SPEAKER_00]: We'll go into some specific genotyping
+services, tools, and projects.
+[SPEAKER_00]: So here's what I talked about,
+the challenges with genetics, looking at
+[SPEAKER_00]: all the species that we work with.
+[SPEAKER_00]: So we're going all the way from a haploid
+diploid system in honeybee through a lot
+[SPEAKER_00]: of diploids with some of them having sex
+chromosomes.
+[SPEAKER_00]: And then we've also got some in fish
+breeding, they will change the sexes of
+[SPEAKER_00]: the fish periodically.
+[SPEAKER_00]: So that's a fun challenge.
+[SPEAKER_00]: And then if you can look across our
+polyploid species, we've got tetraploids
+[SPEAKER_00]: all the way up to 12X species and not
+always 12X, sometimes other things.
+[SPEAKER_00]: So I think as we keep looking at this
+stuff, it keeps getting more complex.
+[SPEAKER_00]: It gets more complicated, and some people
+say more fun.
+[SPEAKER_00]: So some additional challenges with
+polyploids is that you usually don't have
+[SPEAKER_00]: a high quality reference genome due to the
+complexity of the genome.
+[SPEAKER_00]: It's hard to get accurate dosage calling,
+and it's hard to face the markers,
+[SPEAKER_00]: especially for polyploid species.
+[SPEAKER_00]: So those are some of the challenges that
+we're facing.
+[SPEAKER_00]: So kind of that species agnostic tool that
+I talked about.
+[SPEAKER_00]: We've identified DART, Diversity Array
+Technology, as a company in Australia
+[SPEAKER_00]: that's working really well to fit a lot of
+the needs and requests that we have.
+[SPEAKER_00]: So this is our current model.
+[SPEAKER_00]: I'll talk about the marker technology from
+them on the next slide.
+[SPEAKER_00]: But breeders that come to us and say they
+want to do genotyping will work with them
+[SPEAKER_00]: to create a species-specific marker panel.
+[SPEAKER_00]: And then the breeders in this equation are
+there doing the tissue collection on site.
+[SPEAKER_00]: So we work with them to provide best
+practices.
+[SPEAKER_00]: What's the plastic where they need to do?
+[SPEAKER_00]: How do they ship it?
+[SPEAKER_00]: How much to collect?
+[SPEAKER_00]: What are they working with?
+[SPEAKER_00]: We help them with the shipping to
+Australia, which, again, they've got
+[SPEAKER_00]: strict borders for bringing in outside
+material.
+[SPEAKER_00]: The DNA extraction is also done at DART.
+[SPEAKER_00]: So that's about $2 a sample, which is
+great.
+[SPEAKER_00]: And the actual genotyping, depending on
+the species, $9 to $11.
+[SPEAKER_00]: So pretty low cost, pretty high
+throughput.
+[SPEAKER_00]: DART's been great to work with,
+and that genotyping data can come directly
+[SPEAKER_00]: to us.
+[SPEAKER_00]: So we can help the breeders QC the data
+and perform any early bioinformatics
+[SPEAKER_00]: analysis that they need.
+[SPEAKER_00]: And then we can push that back to them,
+and then they can make direct breeding
+[SPEAKER_00]: decisions with the data.
+[SPEAKER_00]: So just a little bit about the DART tag is
+the technology that we're using.
+[SPEAKER_00]: So it's a targeted genotyping by
+sequencing platform based on this padlock
+[SPEAKER_00]: technology featured on the right.
+[SPEAKER_00]: So we can target any SNP or small indel
+into the DART tag panel.
+[SPEAKER_00]: Typically, we're making the marker panels
+to target 3,000 loci.
+[SPEAKER_00]: That's within a single primer pool.
+[SPEAKER_00]: And what's nice about this technology is
+that we're allowed to force in any major
+[SPEAKER_00]: QTL or markers used in marker-assisted
+selection that the breeders are already
+[SPEAKER_00]: incorporated into their breeding program.
+[SPEAKER_00]: So we can force those in, and then we try
+to round out the rest of the panel with
+[SPEAKER_00]: genome-wide distribution of the markers.
+[SPEAKER_00]: So we're hitting the same 3,000 loci every
+time.
+[SPEAKER_00]: So we get relatively low missing data.
+[SPEAKER_00]: And we found that this works plenty well
+for any genetic maps that we want to
+[SPEAKER_00]: create, any QTL analysis, any GWAS.
+[SPEAKER_00]: And we're getting good genomic prediction
+accuracies for most of our species,
+[SPEAKER_00]: for most traits.
+[SPEAKER_00]: So yeah, we've been busy making a lot of
+marker panels.
+[SPEAKER_00]: So here's the list of species that we
+currently have.
+[SPEAKER_00]: So we work with DART to make these marker
+panels open source and publicly available.
+[SPEAKER_00]: So if you're an alfalfa breeder,
+you can contact DART and use the same
+[SPEAKER_00]: alfalfa marker panel, whether you're an
+industry or whether you're USDA ARS.
+[SPEAKER_00]: So that data has a one-to-one comparison.
+[SPEAKER_00]: Yeah, so here's a number of species that
+we've worked with.
+[SPEAKER_00]: Here's the ones that are currently in
+development.
+[SPEAKER_00]: So yeah, we'll have a new hop marker panel
+coming out, watermelon, red clover,
+[SPEAKER_00]: hemp's being worked on with the group up
+in Geneva.
+[SPEAKER_00]: And we've got blackberry being worked on
+on the position.
+[SPEAKER_00]: And then we've got the Pacific Northwest.
+[SPEAKER_00]: So again, just to reiterate, what we've
+seen with the DART tag marker technology
+[SPEAKER_00]: is that we found it to be readily
+accessible.
+[SPEAKER_00]: We get good communication with DART.
+[SPEAKER_00]: The breeders are also able to easily send
+their samples.
+[SPEAKER_00]: The data coming back is highly reliable.
+[SPEAKER_00]: We're getting fast turnaround time.
+[SPEAKER_00]: The price point's quite affordable,
+high repeatability among the calls that
+[SPEAKER_00]: are being made.
+[SPEAKER_00]: And we like that it's a targeted marker
+platform, that you're hitting the same
+[SPEAKER_00]: 3,000 loci.
+[SPEAKER_00]: So a little bit about the data that you
+get when it comes back.
+[SPEAKER_00]: So I mentioned that you get targeted
+sequencing.
+[SPEAKER_00]: So we're targeting a SNP of interest.
+[SPEAKER_00]: So here we're looking at this G to A.
+[SPEAKER_00]: But because it's targeted sequencing,
+right now at 81 base pairs, we'll also
+[SPEAKER_00]: pick up these off-target SNPs.
+[SPEAKER_00]: That's what we're calling them.
+[SPEAKER_00]: So for any loci, we're getting additional
+what we're calling microhaplotypes.
+[SPEAKER_00]: So instead of just bioallelic SNP calls at
+the locus, we're getting much more
+[SPEAKER_00]: information.
+[SPEAKER_00]: So more similar to SSR markers.
+[SPEAKER_00]: So some additional information on why we
+like DART tag for genotyping for the
+[SPEAKER_00]: species that we work with.
+[SPEAKER_00]: Again, same set of loci across all
+projects and samples.
+[SPEAKER_00]: So it just makes sharing information,
+particularly when there's multiple
+[SPEAKER_00]: breeding programs for a species.
+[SPEAKER_00]: It works really well on low-quality DNA.
+[SPEAKER_00]: We get low-missing data.
+[SPEAKER_00]: We get pretty good read depth at around 50
+reads per locus per sample.
+[SPEAKER_00]: So this really helps with multi-state
+dosage calling, especially for
+[SPEAKER_00]: autopolyploid species.
+[SPEAKER_00]: We like the multi-allelic reads,
+what we call microhaplotypes, across the
+[SPEAKER_00]: target loci.
+[SPEAKER_00]: And then, yeah, linkage maps constructed
+using DART SNPs can identify some genome
+[SPEAKER_00]: assembly mistakes.
+[SPEAKER_00]: So we've seen this in cranberry and
+lettuce.
+[SPEAKER_00]: So getting multiple microhaplotypes per
+locus means we've got a whole lot of loci
+[SPEAKER_00]: and a whole lot of genetic data that we
+need to keep track of.
+[SPEAKER_00]: So here's some examples in alfalfa on the
+upper left.
+[SPEAKER_00]: So again, if we were just looking at
+bioallelic SNPs at 3,000 loci,
+[SPEAKER_00]: we would expect to see 6,000 alleles.
+[SPEAKER_00]: We're identifying 32,000 unique
+microhaplotypes.
+[SPEAKER_00]: So coming at around 10 microhaplotypes per
+locus.
+[SPEAKER_00]: There's just a lot of additional
+information at those loci that we're
+[SPEAKER_00]: targeting.
+[SPEAKER_00]: So we want to keep track of that.
+[SPEAKER_00]: We want to work with our breeders,
+keep genotyping a number of samples,
+[SPEAKER_00]: see if we can get kind of, where do these
+stop?
+[SPEAKER_00]: How much can we capture enough diversity
+with a single marker panel that these kind
+[SPEAKER_00]: of asymptote?
+[SPEAKER_00]: And we can say, yeah, we feel like we've
+identified 95% of the genetic diversity
+[SPEAKER_00]: for the loci that we're looking at.
+[SPEAKER_00]: So across the seven species that we've
+currently got marker panels out for,
+[SPEAKER_00]: we've got 156,000 microhaplotypes.
+[SPEAKER_00]: So we'll talk next about setting up
+databases to keep track of this
+[SPEAKER_00]: information.
+[SPEAKER_00]: So again, so here's the target SNPs,
+the off-target SNPs.
+[SPEAKER_00]: So again, we're working to establish the
+best workflows for filtering and
+[SPEAKER_00]: processing this genotype data as it comes
+in.
+[SPEAKER_00]: We want to create file formats that work
+with other applications for downstream
+[SPEAKER_00]: analysis.
+[SPEAKER_00]: So we want breeders to have flexibility if
+they want to use tools that we're not
+[SPEAKER_00]: developing in-house.
+[SPEAKER_00]: Can we get them the data file formats that
+they can go run their regular analysis
+[SPEAKER_00]: that they've already set up?
+[SPEAKER_00]: Yeah, and then we're trying to create and
+test internal apps for user-friendly
+[SPEAKER_00]: pipelines.
+[SPEAKER_00]: So we're working on something called
+haplotype DB.
+[SPEAKER_00]: So here's a picture of a component of that
+haplotype DB.
+[SPEAKER_00]: So this is called haplosearch.
+[SPEAKER_00]: So this allows you to query those
+microhaplotypes.
+[SPEAKER_00]: So if you want to look at a particular
+locus to see how many microhaplotypes you
+[SPEAKER_00]: have, or if you've identified a
+microhaplotype associated with a major
+[SPEAKER_00]: QTL, you can go in, look further into that
+allele, a microhaplotype, and look at
+[SPEAKER_00]: other germplasm that might have that same
+allele or QTL.
+[SPEAKER_00]: Or you can also look across projects and
+say, I'm only seeing a little bit of
+[SPEAKER_00]: diversity at this one loci that I have.
+[SPEAKER_00]: I'm seeing a lot of other projects have a
+whole lot of diversity.
+[SPEAKER_00]: Maybe I should reach out to my
+collaborator and ask for some germplasms
+[SPEAKER_00]: that I can increase.
+[SPEAKER_00]: There's a lot of diversity in this
+targeted region.
+[SPEAKER_00]: OK, we'll shift to bioinformatics.
+[SPEAKER_00]: So this was a fun one.
+[SPEAKER_00]: Alfalfa creeping rootedness QTL.
+[SPEAKER_00]: So the breeder that we were working with
+had identified this as kind of classic
+[SPEAKER_00]: alfalfa, kind of staying within its
+planted row very nicely.
+[SPEAKER_00]: He was very interested in what's going on
+with this spreading alfalfa that he had
+[SPEAKER_00]: identified, thinking that maybe this would
+lead to increased tolerance for biotic or
+[SPEAKER_00]: abiotic stresses, or maybe there could be
+a niche market for growers who want to
+[SPEAKER_00]: plant this and just let the alfalfa spread
+in the field.
+[SPEAKER_00]: So we genotyped an alfalfa population,
+segregating for the trait using the 3K
+[SPEAKER_00]: DARTAG marker panel for alfalfa,
+performed GWAS poly within this big app.
+[SPEAKER_00]: And I've got a slide.
+[SPEAKER_00]: I'll talk a little bit more about that.
+[SPEAKER_00]: But yeah, we identified a major QTL on
+chromosome 6, explaining this trait.
+[SPEAKER_00]: So we can share that back to the breeder
+and see what he wants to do with it.
+[SPEAKER_00]: All right, next project, genomic
+prediction.
+[SPEAKER_00]: We're going to stick with alfalfa here for
+another minute.
+[SPEAKER_00]: So alfalfa, when we started working with
+them a few years ago, they really weren't
+[SPEAKER_00]: using a lot of genetic tools in their
+analyses or in their breeding programs.
+[SPEAKER_00]: And now that they have a marker panel,
+they're very excited.
+[SPEAKER_00]: And they're talking about moving into
+genomic selection.
+[SPEAKER_00]: So they're really interested.
+[SPEAKER_00]: They're kind of in the testing phase right
+now, like what accuracies are we getting
+[SPEAKER_00]: for our traits?
+[SPEAKER_00]: How do we create a training panel to do
+this?
+[SPEAKER_00]: And so we're working with them to show
+what's the diversity with what they're
+[SPEAKER_00]: starting with with their training group?
+[SPEAKER_00]: What percentages do you need from all
+these different subgroups to get the best
+[SPEAKER_00]: predictions that you have?
+[SPEAKER_00]: So I think, again, a lot of other species,
+plenty of literature on this.
+[SPEAKER_00]: Alfalfa is just coming to the table now,
+trying to assist them with this.
+[SPEAKER_00]: And we can see that we're getting pretty
+good prediction accuracies for things like
+[SPEAKER_00]: height in their program.
+[SPEAKER_00]: All right, the next one.
+[SPEAKER_00]: So talked a lot about microhaplotypes,
+having these multiple information per
+[SPEAKER_00]: loci.
+[SPEAKER_00]: So thinking about, can we squeeze more
+information using that data than just
+[SPEAKER_00]: biallelic SNPs?
+[SPEAKER_00]: So what kind of genomic prediction
+accuracies can we get if we actually use
+[SPEAKER_00]: the microhaplotypes for pedigree
+relatedness?
+[SPEAKER_00]: Versus just the biallelic target SNPs.
+[SPEAKER_00]: So we're seeing slight increases in there,
+and we're really interested in exploring
+[SPEAKER_00]: that more.
+[SPEAKER_00]: All right, so I just alluded to this big
+app.
+[SPEAKER_00]: So that stands for the Breeding Insight
+Genomics app.
+[SPEAKER_00]: So this is a collaboration with the
+genomics and bioinformatics team,
+[SPEAKER_00]: as well as other key people.
+[SPEAKER_00]: So trying to make it our shiny app,
+just to make a web-based application to
+[SPEAKER_00]: perform genomics and bioinformatics
+analysis.
+[SPEAKER_00]: That's easily accessible.
+[SPEAKER_00]: Somebody can use it with no coding
+experience.
+[SPEAKER_00]: It's got really good integrated help.
+[SPEAKER_00]: We're working on putting out tutorials.
+[SPEAKER_00]: There's help pages online.
+[SPEAKER_00]: There's also clickable information within
+the app to find more information.
+[SPEAKER_00]: And hopefully, you can feel confident
+running your own analyses.
+[SPEAKER_00]: And then also, if you use the tool,
+you've got the citations for what tools
+[SPEAKER_00]: and additional applications were
+incorporated.
+[SPEAKER_00]: And again, broad support.
+[SPEAKER_00]: We've got the ability to pick what ploidy
+your species is within the app.
+[SPEAKER_00]: So diploids, polyploids, should be able to
+use the tool without any issues.
+[SPEAKER_00]: OK.
+[SPEAKER_00]: Yeah, so the basic analyses in there are,
+again, we can do dosage calling from the
+[SPEAKER_00]: files coming from DART.
+[SPEAKER_00]: You can look at your data using PCAs,
+do some basic genetic diversity analyses.
+[SPEAKER_00]: You can perform GWAS, and you can do
+genomic prediction.
+[SPEAKER_00]: All right, let's talk image phenotyping
+tools that we've had.
+[SPEAKER_00]: So this was a Sweet Potato NEMA toad
+project.
+[SPEAKER_00]: So this one was with the Sweet Potato
+group down in Charleston, South Carolina.
+[SPEAKER_00]: So they were doing root washes of potatoes
+to look for which ones are most resistant
+[SPEAKER_00]: or most susceptible to nematodes.
+[SPEAKER_00]: The classic model was to dilute these root
+washes, sit at the microscope for three
+[SPEAKER_00]: plus weeks, hand counting the nematodes on
+the screen.
+[SPEAKER_00]: That seemed fairly inefficient.
+[SPEAKER_00]: They reached out to us, could we come up
+with a better solution?
+[SPEAKER_00]: And so tears in the audience.
+[SPEAKER_00]: And this was our first application of
+doing machine learning for image analysis.
+[SPEAKER_00]: So it worked really well.
+[SPEAKER_00]: So you can see on this slide, there's
+still a lot of plant debris, but it's
+[SPEAKER_00]: picking up the nematode eggs very clearly
+from that plant debris in the background.
+[SPEAKER_00]: And looking down here at the F1 scores,
+so the models agree more with humans per
+[SPEAKER_00]: counts than one human to another human.
+[SPEAKER_00]: So pretty nice.
+[SPEAKER_00]: The scalability of this, again,
+going from single slides to now you can
+[SPEAKER_00]: pipette 96 samples into a plate and then
+run it through the machine and get your
+[SPEAKER_00]: images really quickly.
+[SPEAKER_00]: All right, the next one, this was the
+trout image one.
+[SPEAKER_00]: I'm sure we've got Edwin online.
+[SPEAKER_00]: We've also got AJ in the audience.
+[SPEAKER_00]: So this came from the trout breeder in
+Hagerman, Idaho.
+[SPEAKER_00]: So he was really interested in taking
+images of the trout eggs following
+[SPEAKER_00]: fertilization to identify which ones had
+successful fertilization versus which ones
+[SPEAKER_00]: were blank or aborted.
+[SPEAKER_00]: You can see the differences with your eye.
+[SPEAKER_00]: The initial challenge was that the eggs
+are quite glossy and shiny.
+[SPEAKER_00]: So we had to come up with an imaging
+system to reduce that glare on those to
+[SPEAKER_00]: get clear images so we could actually
+categorize them.
+[SPEAKER_00]: So the efficiency is that these trays with
+the eggs sometimes have up to 7,000 eggs
+[SPEAKER_00]: on them.
+[SPEAKER_00]: And this machine learning model will
+analyze it within seconds with minimal
+[SPEAKER_00]: handling.
+[SPEAKER_00]: Recording over 95% accuracy on dead versus
+viable.
+[SPEAKER_00]: And the scalability is that they worked
+very nicely to create this very simple
+[SPEAKER_00]: light box and deploy that in a system that
+needs to stay dry, can't have a lot of
+[SPEAKER_00]: handling, and just needs to be readily
+deployed on site.
+[SPEAKER_00]: I think this is the final one for image
+projects.
+[SPEAKER_00]: This was potato growth defects with boja.
+[SPEAKER_00]: So this came out of the Max Feldman's
+potato breeding group in Prosser,
+[SPEAKER_00]: Washington.
+[SPEAKER_00]: So he asked, can we segment and measure
+negative growth traits on potato tubers?
+[SPEAKER_00]: So his system is that he can harvest them,
+wash them, put them on a conveyor belt,
+[SPEAKER_00]: and then they get automatically imaged.
+[SPEAKER_00]: And then the potatoes are cropped out.
+[SPEAKER_00]: So he wanted to identify some negative
+growth traits, like this growth crack on
+[SPEAKER_00]: the tuber, and then also these sprouts
+that are on the tuber.
+[SPEAKER_00]: So again, the efficiency is hundreds to
+thousands of tubers can be individually
+[SPEAKER_00]: evaluated in an automated run.
+[SPEAKER_00]: And we're getting 90% to 94% accuracy,
+where this is now replacing the classic 1
+[SPEAKER_00]: to 5 rating for negative growth defects.
+[SPEAKER_00]: Talk a little bit about the data
+management software called Delta Breed.
+[SPEAKER_00]: So here's our logo.
+[SPEAKER_00]: Here's the name.
+[SPEAKER_00]: So we're definitely trying to abide by
+fair data practices, so make the data
+[SPEAKER_00]: easily findable, accessible,
+interoperable, and reusable.
+[SPEAKER_00]: So we try to adhere to the community
+standards set by BRAPPI.
+[SPEAKER_00]: So that's the breeding application
+programming interface.
+[SPEAKER_00]: We talk extensively with Pete Selby on
+that type of work and try to stay up to
+[SPEAKER_00]: date and help provide information back to
+the community when we can.
+[SPEAKER_00]: Again, the big challenge is creating
+things that are general but also can be
+[SPEAKER_00]: specific to breeding programs at the same
+time, as we're trying to manage a lot of
+[SPEAKER_00]: different species.
+[SPEAKER_00]: So we've recently released the Delta Breed
+version 1.0.
+[SPEAKER_00]: We're considering this our MVP,
+or minimal viable product.
+[SPEAKER_00]: So with that, we know that we're working
+with pretty basic features, kind of data
+[SPEAKER_00]: in, data out.
+[SPEAKER_00]: There's known limitations.
+[SPEAKER_00]: And at the moment, we're trying to have a
+controlled rollout to our breeders.
+[SPEAKER_00]: So we're really just trying to support the
+USDA ARS breeders that are most engaged
+[SPEAKER_00]: with us and have the most immediate need
+for data management support.
+[SPEAKER_00]: Along with that, again, just try to really
+help get documentation and training
+[SPEAKER_00]: resources in place so that they can do
+additional learning and know best
+[SPEAKER_00]: practices.
+[SPEAKER_00]: So with that, some things that the system
+can do at the moment is we can set privacy
+[SPEAKER_00]: and administration levels for each user
+within the breeding program.
+[SPEAKER_00]: You can upload germplasm.
+[SPEAKER_00]: You can upload ontology.
+[SPEAKER_00]: So that's the traits that you're going to
+phenotype with.
+[SPEAKER_00]: You can upload experiments and observation
+data.
+[SPEAKER_00]: And then we've got the BRAPI connection to
+push data to field book.
+[SPEAKER_00]: So yeah, users sign in using their ORC ID
+so that your user permission level is
+[SPEAKER_00]: associated with that information.
+[SPEAKER_00]: So here's an example of germplasm records.
+[SPEAKER_00]: So everything that comes in gets a unique
+GID, the name of the germplasm.
+[SPEAKER_00]: And then you can track the pedigree
+information.
+[SPEAKER_00]: And you can always open and expand to see
+more details on that individual.
+[SPEAKER_00]: Pedigree viewer.
+[SPEAKER_00]: So this was a BRAPI coming out of the
+breed base group.
+[SPEAKER_00]: So this was an example of Zuni.
+[SPEAKER_00]: So this was a pecan release down here.
+[SPEAKER_00]: And they wanted to track back and see what
+were the parents and how did they get to
+[SPEAKER_00]: it.
+[SPEAKER_00]: So ontology.
+[SPEAKER_00]: This is, again, phenotypes, ontology.
+[SPEAKER_00]: What's the set vocabulary?
+[SPEAKER_00]: What's the vocabulary that you're using to
+go and collect phenotypes out in the field
+[SPEAKER_00]: or in the lab?
+[SPEAKER_00]: So again, a shortened name here.
+[SPEAKER_00]: You can include the full name.
+[SPEAKER_00]: What's the trait that you're measuring?
+[SPEAKER_00]: What's the scale class?
+[SPEAKER_00]: What's the units that you're working with?
+[SPEAKER_00]: If you click Show More Details,
+you get a little bit more information for
+[SPEAKER_00]: what are each of the values that you've
+set, one to five.
+[SPEAKER_00]: So again, the idea is that you're
+providing enough information that if I
+[SPEAKER_00]: gave this to somebody to go out to the
+field to score, that you would feel
+[SPEAKER_00]: confident that they could go score
+correctly.
+[SPEAKER_00]: They're not going to invert the scales or
+invent something new.
+[SPEAKER_00]: So again, something as simple as plant
+height is, well, am I measuring it in the
+[SPEAKER_00]: middle of the season?
+[SPEAKER_00]: Am I measuring it in the end of the
+season?
+[SPEAKER_00]: Am I measuring it at the top of the
+flower, to the flag leaf?
+[SPEAKER_00]: So just being very clear on what's the
+defined vocabulary.
+[SPEAKER_00]: And that's where we come in with the trait
+method and scale.
+[SPEAKER_00]: Experiments and observations.
+[SPEAKER_00]: I think pretty classic.
+[SPEAKER_00]: Your germplasm name.
+[SPEAKER_00]: There's the GID.
+[SPEAKER_00]: That's associated with that one.
+[SPEAKER_00]: Is this a test plot or a check plot?
+[SPEAKER_00]: What environment are you working in?
+[SPEAKER_00]: What are your row and column positions for
+that?
+[SPEAKER_00]: You can set lat and long if you're using a
+GPS to track where those are in the field.
+[SPEAKER_00]: A unique observation unit ID.
+[SPEAKER_00]: This is system-wide for that data row.
+[SPEAKER_00]: And then fill in and upload your phenotype
+data for the experiment.
+[SPEAKER_00]: And then downloading data.
+[SPEAKER_00]: Again, you can decide, am I calling all
+environments associated with that
+[SPEAKER_00]: experiment?
+[SPEAKER_00]: And what's the file format that I would
+like my data to come out in?
+[SPEAKER_00]: So the connection to Fieldbook via BRAPi.
+[SPEAKER_00]: This has worked nicely.
+[SPEAKER_00]: We've got a QR code on the screen for your
+breeding program, which will push the data
+[SPEAKER_00]: into Fieldbook so that you can indicate
+which field you want to go collect data
+[SPEAKER_00]: for and upload your phenotype traits as
+well and select those.
+[SPEAKER_00]: And then you can go out in the field and
+digitally collect your phenotype data.
+[SPEAKER_00]: So hopefully minimal downloading of files
+and re-uploading the files.
+[SPEAKER_00]: You can just scan the QR code and push
+that using BRAPi.
+[SPEAKER_00]: So an important component not to be missed
+in creating all of these tools is also the
+[SPEAKER_00]: training that needs to go into it.
+[SPEAKER_00]: So we have a learning hub online so that
+people can go and find this information.
+[SPEAKER_00]: We can create links, provide SOPs,
+plenty of Zoom instructions, plenty of
+[SPEAKER_00]: meetings with breeders to hear what are
+the challenges.
+[SPEAKER_00]: How can we better help?
+[SPEAKER_00]: And when we can, we love to go out and
+have in-person site visits with our
+[SPEAKER_00]: breeders to really hear firsthand what are
+they faced with and establish a good
+[SPEAKER_00]: connection with our collaborators.
+[SPEAKER_00]: Additional software demo applications.
+[SPEAKER_00]: So we've got YouTube videos coming in
+pretty consistently now to help talk about
+[SPEAKER_00]: the DeltaBread software, the big app,
+and other tools that we're developing.
+[SPEAKER_00]: OK, I think we've made it almost to the
+end.
+[SPEAKER_00]: Just a couple fun, miscellaneous things to
+finish up.
+[SPEAKER_00]: So we have a long list of species that we
+work with at Breeding Insight,
+[SPEAKER_00]: but also just taking a look at what CALS
+already works with and Agritech up in
+[SPEAKER_00]: Geneva.
+[SPEAKER_00]: There's about 50% overlap between these
+groups and the species that we support.
+[SPEAKER_00]: But we also have our own set of species
+that aren't common between the two.
+[SPEAKER_00]: So again, I think we hope that there's
+tools and services at Breeding Insight and
+[SPEAKER_00]: that these can be transferred over time.
+[SPEAKER_00]: So thank you very much for your time,
+and I look forward to the Cornell
+[SPEAKER_00]: community.
+[SPEAKER_00]: I just also want to take a moment to
+highlight that Breeding Insight and BI
+[SPEAKER_00]: OnRamp received the 2024 USDA Secretary
+Honor Award.
+[SPEAKER_00]: So this was, I think, category four for
+providing all-American safe and nutritious
+[SPEAKER_00]: food.
+[SPEAKER_00]: So this was on January 10.
+[SPEAKER_00]: So Dong Yan got to go down.
+[SPEAKER_00]: Tim Reinhart is our PI representing the
+Office of National Programs at the USDA.
+[SPEAKER_00]: And Keo is with BI OnRamp, so they got to
+go down and enjoy the celebration with Tim
+[SPEAKER_00]: as he won this award.
+[SPEAKER_00]: All right.
+[SPEAKER_00]: Final slide.
+[SPEAKER_00]: Just want to highlight a number of
+Cornell-trained individuals on our team
+[SPEAKER_00]: who were trained at Cornell.
+[SPEAKER_00]: So thank you to the people who helped
+train these great people.
+[SPEAKER_00]: Glad to have them back in the Cornell
+community, providing more tools and
+[SPEAKER_00]: services and sticking their whole careers
+with plant breeding and genetics or
+[SPEAKER_00]: physiology.
+[SPEAKER_00]: So thank you so much.
+[SPEAKER_00]: But I think that's a pretty good number.
+[SPEAKER_00]: All right.
+[SPEAKER_00]: And definitely a lot of people to thank.
+[SPEAKER_00]: We have a ton of support at the BI OnRamp
+staff, the O&P, a lot of people on the
+[SPEAKER_00]: Breeding Insight team at the moment.
+[SPEAKER_00]: And thanks to our advisory board for
+helping answer questions when we have
+[SPEAKER_00]: them.
+[SPEAKER_00]: Thank you.
+[SPEAKER_00]: This has been a production of Cornell
+University on the web at Cornell.edu.
+[SPEAKER_00]: Thank you.
+Thank you.

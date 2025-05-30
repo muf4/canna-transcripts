@@ -1,0 +1,814 @@
+[SPEAKER_00]: Thank you.
+[SPEAKER_00]: Appreciate it.
+Thanks.
+[SPEAKER_00]: Morning, everybody.
+[SPEAKER_00]: How many people went to the party last
+night and still are making it here this
+[SPEAKER_00]: morning?
+[SPEAKER_00]: Okay, that's pretty impressive.
+[SPEAKER_00]: I didn't.
+[SPEAKER_00]: But it's good to be here.
+[SPEAKER_00]: Thank you so much for coming.
+[SPEAKER_00]: So today's presentation is intended to
+talk a little bit about data, and not just
+[SPEAKER_00]: data for sake of talking about data,
+but data that we actually know exists.
+[SPEAKER_00]: But before we get started, I really want
+to thank all the organizers from ICBC.
+[SPEAKER_00]: This has been a really great conference.
+[SPEAKER_00]: This is actually our third year here.
+[SPEAKER_00]: I also want to thank the team that's
+working with me and Metric for getting us
+[SPEAKER_00]: prepared for this.
+[SPEAKER_00]: And then I also want to thank all of you
+again, too, for all the great panel
+[SPEAKER_00]: discussions and experiences that have been
+shared yesterday.
+[SPEAKER_00]: And I'm sure there's going to be more
+today.
+[SPEAKER_00]: In fact, as we've been listening to
+everybody talk this last couple of days,
+[SPEAKER_00]: it's really started to solidify some of
+the thinking that we have around what the
+[SPEAKER_00]: potential is here in Europe for a larger
+scale commercial market that includes more
+[SPEAKER_00]: medical sales and also at some point adult
+use sales.
+[SPEAKER_00]: So this is the agenda.
+[SPEAKER_00]: We're going to first of all just talk a
+little bit about my background and some of
+[SPEAKER_00]: the work that we've done creating
+centralized supply chain data.
+[SPEAKER_00]: And then we're going to talk a little bit
+more about how that data actually gets
+[SPEAKER_00]: transitioned into actionable insights.
+[SPEAKER_00]: We'll actually share a little bit of
+information from inside the system that we
+[SPEAKER_00]: utilize and then transition some of that
+into some thinking about how that might
+[SPEAKER_00]: actually look here in Germany and then
+start to maybe prognosticate a little bit
+[SPEAKER_00]: on what a market here might look like in
+Germany.
+[SPEAKER_00]: So I know, and we've heard it quite a few
+times this week, that there's I think a
+[SPEAKER_00]: sense of disappointment and skepticism
+around the path that Germany has charted
+[SPEAKER_00]: for itself, especially since April of this
+year when we all were kind of thinking
+[SPEAKER_00]: this time last year when I was presenting
+at the same conference that there was this
+[SPEAKER_00]: potential for a very large German market
+that would then also start to encourage
+[SPEAKER_00]: other member states within the EU to take
+up more canvas policy.
+[SPEAKER_00]: But after April, I think everyone and like
+we took a hard look at it too,
+[SPEAKER_00]: saw this big market potential which we
+knew was going to be challenging really
+[SPEAKER_00]: shrink and almost get kicked down the road
+a little ways where we're really starting
+[SPEAKER_00]: to get concerned about how soon this was
+going to happen.
+[SPEAKER_00]: And so my background, so you know,
+is both in government service but also in
+[SPEAKER_00]: the private sector.
+[SPEAKER_00]: And in government service, I was the
+director of the Colorado Marijuana
+[SPEAKER_00]: Enforcement Division in 2013 going into
+2014 when we first started adult use
+[SPEAKER_00]: legalized sales there in the country.
+[SPEAKER_00]: And at the time, we had really three goals
+that were preoccupying our thinking.
+[SPEAKER_00]: The first one was to do everything we
+could to disrupt the illicit market and
+[SPEAKER_00]: then supplant that illicit market with a
+viable commercial market that could
+[SPEAKER_00]: produce a much safer product at scale to
+consumers.
+[SPEAKER_00]: And then the third one, which was not
+unimportant, but we wanted to limit the
+[SPEAKER_00]: amount of exposure that children had to
+cannabis products, whether they were
+[SPEAKER_00]: illicit products or commercialized
+products.
+[SPEAKER_00]: And so that was back in 2013 going into
+2014.
+[SPEAKER_00]: Those are the exact same goals that we
+keep repeated by countries that are
+[SPEAKER_00]: contemplating more permissive canvas
+policy.
+[SPEAKER_00]: And so now since that time, we've been
+part of and I've been part of close to two
+[SPEAKER_00]: dozen different implementations of
+cannabis policy.
+[SPEAKER_00]: And as we've seen it played out,
+we've seen a lot of different approaches
+[SPEAKER_00]: to that cannabis policy.
+[SPEAKER_00]: And we have seen a lot of successes and a
+lot of failures.
+[SPEAKER_00]: But when we lay over all that experience
+over the pathway that Germany has stated,
+[SPEAKER_00]: we still see a viable path forward for a
+commercial market at scale that can be
+[SPEAKER_00]: done within the confines of a scientific
+framework that would help not only address
+[SPEAKER_00]: some of the concerns and the goals that
+government has for legalization,
+[SPEAKER_00]: but to actually build sustainable,
+investable marketplace for cannabis in
+[SPEAKER_00]: here, which is great news, I think for
+everybody in the room who's really focused
+[SPEAKER_00]: on kind of the business side of this.
+[SPEAKER_00]: So what I'm going to do today is I'm going
+to use supply chain data to kind of
+[SPEAKER_00]: illustrate and substantiate some of the
+things that we think could be outlined as
+[SPEAKER_00]: success factors for countries in Europe to
+follow based on kind of what we know from
+[SPEAKER_00]: other marketplaces.
+[SPEAKER_00]: So sticking with the nostalgic look back
+on my experiences in government,
+[SPEAKER_00]: when we first started regulating cannabis
+in 2013 and 2014 for adult use in
+[SPEAKER_00]: Colorado, we were aware of the fact that
+there was a dearth of data that was
+[SPEAKER_00]: available.
+[SPEAKER_00]: In fact, one of the first things we
+started to realize is that there were
+[SPEAKER_00]: massive gaps in data where people assumed
+there would be data.
+[SPEAKER_00]: So for example, we assumed that there was
+data that existed already on youth
+[SPEAKER_00]: consumption rates or driving under the
+influence of cannabis or testing data,
+[SPEAKER_00]: et cetera.
+[SPEAKER_00]: What we learned is that that data hadn't
+been collected at all prior to adult use
+[SPEAKER_00]: legalization.
+[SPEAKER_00]: And so as a state and as a government,
+we became hyper focused on trying to
+[SPEAKER_00]: collect the right data to be able to
+inform the market.
+[SPEAKER_00]: And we realized at that time that we were
+going to have to recreate the data
+[SPEAKER_00]: structures to collect the data and start
+all over with brand new baseline data,
+[SPEAKER_00]: which is probably to some extent true in a
+lot of the countries here in Europe.
+[SPEAKER_00]: We were also cognizantly aware of the fact
+that the industry was brand new.
+[SPEAKER_00]: It didn't have the same appearance that it
+does in a lot of ways today.
+[SPEAKER_00]: It wasn't uncommon at all for us to see
+handwritten labels on products that were
+[SPEAKER_00]: being sold at retail.
+[SPEAKER_00]: It wasn't uncommon.
+[SPEAKER_00]: We actually saw concentrate production
+done in slow cookers, we call them crock
+[SPEAKER_00]: pots in the US, or washing machines.
+[SPEAKER_00]: We saw cold water extraction of cannabis
+concentrates in older washing machines.
+[SPEAKER_00]: And then we also saw packaging that was
+probably more similar to what you would
+[SPEAKER_00]: see at a high school bake sale than an
+actual retail marketplace.
+[SPEAKER_00]: And so there was a lot of business
+aptitudes that just didn't exist at the
+[SPEAKER_00]: time.
+[SPEAKER_00]: And so we knew that this would be
+challenging for this new marketplace and
+[SPEAKER_00]: the actors within the marketplace to
+actually be able to comply with a
+[SPEAKER_00]: comprehensive set of regulations.
+[SPEAKER_00]: So we needed a tool.
+[SPEAKER_00]: We needed a tool to have some visibility
+into the supply chain.
+[SPEAKER_00]: And we needed a tool to help start
+collecting data so that we could describe
+[SPEAKER_00]: what was happening in the marketplace to
+the population at large, to demonstrate
+[SPEAKER_00]: that there was some credit bill,
+and then also be able to compare and
+[SPEAKER_00]: contrast some of that data to showcase
+what was happening in the industry.
+[SPEAKER_00]: We also were really cognizant of the fact
+that government success in this area of
+[SPEAKER_00]: public policy is indelibly tied to the
+business success.
+[SPEAKER_00]: And so we wanted to make sure that the
+tools were available for small,
+[SPEAKER_00]: medium-sized businesses to be able to
+comply.
+[SPEAKER_00]: And what we landed on was supply chain
+tracking.
+[SPEAKER_00]: And just a quick little overview of how
+that worked.
+[SPEAKER_00]: It works in almost every supply chain
+tracking system.
+[SPEAKER_00]: There's a physical tag that goes on every
+plant that follows that plant all the way
+[SPEAKER_00]: through its life cycle, all the way up
+until the point where it gets harvested.
+[SPEAKER_00]: And then as the plant material is packaged
+into other things like trim to go to a
+[SPEAKER_00]: manufacturer for concentrate productions,
+or testing batches going to testing
+[SPEAKER_00]: facilities, or buds going to storefronts,
+all those products get packaged and they
+[SPEAKER_00]: get transported to various other licensed
+premises.
+[SPEAKER_00]: And it's tracked all the way through the
+supply chain and all of those data events
+[SPEAKER_00]: are collected from the time it's a little
+baby plant all the way to the time it's
+[SPEAKER_00]: sold at the point of sale.
+[SPEAKER_00]: So every movement from one room to the
+next, the date of the harvest,
+[SPEAKER_00]: how much the yields were, the results of
+the tests, how much it sold for at
+[SPEAKER_00]: wholesale, how long it took to transport
+it to a facility, and then how much it
+[SPEAKER_00]: sold for at the point of sale.
+[SPEAKER_00]: Those things and everything else is
+collected along the entire supply chain.
+[SPEAKER_00]: So government has transparency into what
+the licensed community or the regulated
+[SPEAKER_00]: community is reporting in.
+[SPEAKER_00]: And businesses then, if the government
+chooses to, can see a lot of the
+[SPEAKER_00]: aggregated data from the supply chain to
+help make strong business decisions going
+[SPEAKER_00]: forward.
+[SPEAKER_00]: So to illustrate this a little bit
+further, we're going to talk a little bit
+[SPEAKER_00]: more about some of the actionable data
+that comes from having a center
+[SPEAKER_00]: centralized platform where many of the
+stakeholders within the cannabis industry
+[SPEAKER_00]: co-create value with one another.
+[SPEAKER_00]: And so what we've done is we've created
+what we would call like a sample
+[SPEAKER_00]: jurisdiction or a fictional jurisdiction
+to demonstrate some of what you can see in
+[SPEAKER_00]: our system.
+[SPEAKER_00]: And I'm going to start with two slides
+that are going to be the bookends of the
+[SPEAKER_00]: supply chain.
+[SPEAKER_00]: One is like how much cannabis is output by
+a particular market followed by what does
+[SPEAKER_00]: that equate to in sales.
+[SPEAKER_00]: And so think of this as a, if you're
+trying to like frame the size of the
+[SPEAKER_00]: sample market that we've created for you,
+think of it as a state that's somewhere
+[SPEAKER_00]: between 10 to 12 million people in
+population that has a longstanding medical
+[SPEAKER_00]: program and an adult use program that's
+been ramping up since around 2019 for the
+[SPEAKER_00]: first full year.
+[SPEAKER_00]: And what you can see here, kind of looking
+a couple years after this market's really
+[SPEAKER_00]: been up and running, that the commercial
+market takes time to be able to supply all
+[SPEAKER_00]: of the inputs into the product categories.
+[SPEAKER_00]: So in 2020, we are at 181 metric tons in
+our sample market.
+[SPEAKER_00]: By the time we got to 2022, we were closer
+to 925 metric tons.
+[SPEAKER_00]: So if you put that into perspective,
+you know, the Howe Cup study that was done
+[SPEAKER_00]: here in Germany, where they estimated it
+at 400 metric tons, this is a market of
+[SPEAKER_00]: like 10 to 12 million, and we're seeing
+something closer to 920 metric tons of
+[SPEAKER_00]: cannabis produced.
+[SPEAKER_00]: And there's a lot of reasons why that
+might be.
+[SPEAKER_00]: It might be that edible products or
+concentrates take up a big part of the
+[SPEAKER_00]: marketplace, which also takes up more
+plant material and many other different
+[SPEAKER_00]: things.
+[SPEAKER_00]: But I think the most important thing to
+understand is that even if, and this kind
+[SPEAKER_00]: of gets to my unapologetic optimism around
+what could happen here in Germany,
+[SPEAKER_00]: is even if Germany were to legalize today
+and intend on having their initial sales
+[SPEAKER_00]: start January 1st of 2024, there is no way
+that even the full-scale legalization
+[SPEAKER_00]: model would be able to accommodate the
+demand for cannabis here in Germany on day
+[SPEAKER_00]: one.
+[SPEAKER_00]: It's going to take a matter of years for
+that to be able to ramp up.
+[SPEAKER_00]: And so when we think about that in the
+context of social clubs and model
+[SPEAKER_00]: projects, they could potentially produce
+if done well and at scale in a sizeable
+[SPEAKER_00]: enough market of somewhere around 5 to 10,
+12 million people of the German market,
+[SPEAKER_00]: they could actually potentially produce a
+fair amount of the product for the entire
+[SPEAKER_00]: demand in Germany.
+[SPEAKER_00]: So to kind of put this in perspective,
+I think a lot of times, and again,
+[SPEAKER_00]: I know this is a little self-serving
+because I have such close ties to the
+[SPEAKER_00]: Colorado model, but it's considered to be
+one of the more mature marketplaces in the
+[SPEAKER_00]: world for cannabis.
+[SPEAKER_00]: And even though it's been fully legalized
+for a number of years now, since 2014 when
+[SPEAKER_00]: the first sales began, less than half of
+the local jurisdictions in the state of
+[SPEAKER_00]: Colorado allow for cannabis commercialized
+operations within the state.
+[SPEAKER_00]: And if you look at a state like
+California, which is massive, which is
+[SPEAKER_00]: starting to get close to like half the
+size of Germany in terms of population,
+[SPEAKER_00]: it also has a local approval requirement
+in its law, and less than half of those
+[SPEAKER_00]: local jurisdictions have allowed for
+cannabis commercialized activities in
+[SPEAKER_00]: their jurisdictions.
+[SPEAKER_00]: So that means that supply in those states
+that goes to people who live in cities or
+[SPEAKER_00]: counties that do not allow for
+commercialized cannabis, they're still
+[SPEAKER_00]: able to supply the cannabis that people
+are going to consume.
+[SPEAKER_00]: So this was one end of the bookend,
+the inputs into the system.
+[SPEAKER_00]: This is the other end, this is the sales.
+[SPEAKER_00]: So if you look at our sample market,
+we see that buying patterns are also a
+[SPEAKER_00]: little slower to shift.
+[SPEAKER_00]: So overnight, consumers are not going to
+trust that the commercial market and all
+[SPEAKER_00]: the products that are produced in that
+market are fit for their needs,
+[SPEAKER_00]: and there just might be supply shortages
+that prevent that from happening.
+[SPEAKER_00]: But we see that buying patterns also kind
+of follow a similar trajectory where the
+[SPEAKER_00]: consumers are purchasing more and more
+over time, and then businesses are ramping
+[SPEAKER_00]: up or scaling their operations to be able
+to meet that.
+[SPEAKER_00]: But again, it doesn't happen overnight.
+[SPEAKER_00]: It takes a little bit of time for this to
+happen.
+[SPEAKER_00]: So this is a bit of an eye chart,
+so I'm going to take a little bit of time
+[SPEAKER_00]: to explain it.
+[SPEAKER_00]: So we've looked at both all the inputs to
+the supply chain, and we've looked at what
+[SPEAKER_00]: the total sales.
+[SPEAKER_00]: So now we can start taking a look at the
+breakdown of sales, or what the breakdown
+[SPEAKER_00]: sales look by product category.
+[SPEAKER_00]: So for you all in the upper left-hand
+corner of the screen is the market share
+[SPEAKER_00]: per product category.
+[SPEAKER_00]: So we have seven categories that we've
+listed here for our sample marketplace.
+[SPEAKER_00]: And what we did here is we took the sales
+that we had from the previous slide,
+[SPEAKER_00]: and we broke it down within the
+categories.
+[SPEAKER_00]: So you can start to get a little better
+understanding of how much of the various
+[SPEAKER_00]: product categories are purchased and
+consumed.
+[SPEAKER_00]: So in our slide here, roughly 45% to 50%
+of the market has consistently been with
+[SPEAKER_00]: smokeable bud that goes directly to the
+store from cultivations, followed by
+[SPEAKER_00]: concentrates.
+[SPEAKER_00]: And think of concentrates as essentially
+like vaping products and other types of
+[SPEAKER_00]: concentrates, along with infused edibles
+that are a bit of a distant third in
+[SPEAKER_00]: comparison to those two categories of buds
+in concentrate.
+[SPEAKER_00]: And then on the right-hand side,
+because this is a very important issue,
+[SPEAKER_00]: is you're able to actually track what
+happens to pricing of products over time.
+[SPEAKER_00]: So in a saturated market where we think
+that there's overproduction of cannabis,
+[SPEAKER_00]: oftentimes we see prices really starting
+to decline rather than the scenario that
+[SPEAKER_00]: we have here, where cannabis bud is
+actually kind of like continuing to climb
+[SPEAKER_00]: throughout the first five years of
+legalization.
+[SPEAKER_00]: And we also start to see concentrate
+productions start to decline in this
+[SPEAKER_00]: particular scenario.
+[SPEAKER_00]: Now, don't know exactly why that is,
+but this is giving us some information to
+[SPEAKER_00]: kind of like indicate that there's a
+change or a shift in the marketplace.
+[SPEAKER_00]: I'm just going to go back here to this
+slide real quick.
+[SPEAKER_00]: Speaking of the product categories,
+the graph at the bottom is just kind of
+[SPEAKER_00]: charting out how sales in each one of
+those product categories has changed from
+[SPEAKER_00]: the early inception of legalization all
+the way to 2023.
+[SPEAKER_00]: Here, we just kind of take a closer look
+at the buds and concentrates and what's
+[SPEAKER_00]: happened with those over time.
+[SPEAKER_00]: Because they seem to be kind of like
+competing with one another for market
+[SPEAKER_00]: space in this particular sample market
+that we created for you here.
+[SPEAKER_00]: And it also might be on the concentrate
+side that those have become much more
+[SPEAKER_00]: popular products, and so they're producing
+more and more of those.
+[SPEAKER_00]: And as more of them are available in the
+supply chain, then the prices are
+[SPEAKER_00]: decreasing, too.
+[SPEAKER_00]: The bottom line, though, is that we can
+always look, again, kind of going back to
+[SPEAKER_00]: this slide, we can always kind of look at
+these things to get a closer look at and
+[SPEAKER_00]: more detail.
+[SPEAKER_00]: So while I'm showing you the aggregate
+kind of bigger picture data, we can drill
+[SPEAKER_00]: down all the way into, or government can
+drill down all the way into the different
+[SPEAKER_00]: categories of products to get more
+insights.
+[SPEAKER_00]: Which also is kind of like, kind of gets
+us to this next slide.
+[SPEAKER_00]: Though, as I mentioned earlier,
+part of the reason we want to have a kind
+[SPEAKER_00]: of centralized collection point for data
+is so that we can inform and evolve the
+[SPEAKER_00]: policy as we see changes in the
+marketplace that might be negatively
+[SPEAKER_00]: impacting businesses within that regulated
+community.
+[SPEAKER_00]: And one of the more common things that we
+hear when concerning ourselves about
+[SPEAKER_00]: market segments is, what is the impact
+going to be when adult use is implemented
+[SPEAKER_00]: on medical programs that already existed
+beforehand?
+[SPEAKER_00]: And what we see here is kind of like a
+common pattern that we've seen in a lot of
+[SPEAKER_00]: different states where the adult use
+legalization, as it's ramping up,
+[SPEAKER_00]: we actually see increases in patient
+counts and medical sales as the regulated
+[SPEAKER_00]: adult use market is really kind of
+starting to take hold.
+[SPEAKER_00]: And then as the adult use sales surpass
+the medical sales, then we start to see
+[SPEAKER_00]: those decline back to what they were prior
+to legalization.
+[SPEAKER_00]: And there could be a lot of reasons for
+that.
+[SPEAKER_00]: It could have to do with pricing and adult
+use and medical being in parity with one
+[SPEAKER_00]: another.
+[SPEAKER_00]: And so patients migrate back towards the
+adult use market.
+[SPEAKER_00]: Or like in some of our states,
+we actually see where the medical sales
+[SPEAKER_00]: are staying somewhat steady.
+[SPEAKER_00]: And that might be because the products
+that are offered to patients are
+[SPEAKER_00]: altogether different than the products
+that are offered in the adult use market.
+[SPEAKER_00]: So there are markets still in the US where
+the medical products are more focused on
+[SPEAKER_00]: high potency, low calories versus lower
+potency products that are offered in the
+[SPEAKER_00]: market.
+[SPEAKER_00]: At any rate, if you look at the data
+that's down towards the bottom of the
+[SPEAKER_00]: slide, it's a lot of data, but it's still
+looking at how, not only are we looking at
+[SPEAKER_00]: the different segments in gross sales,
+but we're also looking at how those
+[SPEAKER_00]: different customers and their buying
+patterns are shifting over time.
+[SPEAKER_00]: So we can tell if patient purchases are
+shifting away from smokable cannabis to
+[SPEAKER_00]: concentrates or edibles or vice versa.
+[SPEAKER_00]: And then we can take a much closer look at
+what's happening in the marketplace to
+[SPEAKER_00]: make informed decisions about that,
+both as a business but also as government
+[SPEAKER_00]: actors too.
+[SPEAKER_00]: Here's a closer look at the cultivation.
+[SPEAKER_00]: So going back to cultivation.
+[SPEAKER_00]: One thing that I think is really important
+to mention here is, or just like to kind
+[SPEAKER_00]: of point out to you, is the number 226.
+[SPEAKER_00]: So when we put our data together,
+we ended up with actually a fairly high
+[SPEAKER_00]: number.
+[SPEAKER_00]: Any cultivators here in the audience?
+[SPEAKER_00]: All right, so you know that's a pretty
+high number, what you'd probably celebrate
+[SPEAKER_00]: if you had 226 that you packaged out of
+every plant.
+[SPEAKER_00]: So that's a pretty sizable number.
+[SPEAKER_00]: But again, this is like intended to be
+directional and give us an insight into
+[SPEAKER_00]: what the marketplace looks like.
+[SPEAKER_00]: So this is along the Y axis.
+[SPEAKER_00]: This is 2018 to 2023.
+[SPEAKER_00]: And across the X axis is January to March.
+[SPEAKER_00]: And this is a heat map.
+[SPEAKER_00]: So the lighter the color, the less the
+yields were on average during that month.
+[SPEAKER_00]: The darker the color, the higher the
+yields were.
+[SPEAKER_00]: And if you look at this from a different
+perspective, you'll see that almost every
+[SPEAKER_00]: September and October, there's this
+massive spike in the number or the amount
+[SPEAKER_00]: of yield per plant.
+[SPEAKER_00]: And that almost always has to do with that
+being the time of year where outdoor
+[SPEAKER_00]: cultivations, which are included in our
+sample jurisdiction, are harvested and
+[SPEAKER_00]: they tend to have a little bit higher
+numbers.
+[SPEAKER_00]: So the takeaway from this though is,
+and what's really interesting and happy to
+[SPEAKER_00]: talk more detail with anybody in the room
+about this is later, is we did an analysis
+[SPEAKER_00]: on what this might mean for social clubs.
+[SPEAKER_00]: So if a social club, just say it was like
+200 grams was the gold standard per plant
+[SPEAKER_00]: you harvested, if you were only able to do
+that like 65 percent of that your first
+[SPEAKER_00]: year in production, and you had 500
+customers as part of, or 500 members as
+[SPEAKER_00]: part of your social clubs, and assuming
+that those three plants that you're
+[SPEAKER_00]: allowed to home grow can be delegated to
+the social club, a social club,
+[SPEAKER_00]: a good grower would be able to harvest
+those three plants four times a year.
+[SPEAKER_00]: And if they were able to do that,
+and assuming that the numbers that we're
+[SPEAKER_00]: using to kind of inform the analysis out
+of our system, they'd actually be as big
+[SPEAKER_00]: or bigger than 50 percent of the regulated
+cultivations that exist in the U.S.
+[SPEAKER_00]: Those are rough directional numbers,
+but social clubs could potentially be
+[SPEAKER_00]: significantly sized, and so that kind of
+gets us thinking about like the different
+[SPEAKER_00]: schools of thought on how social clubs
+should be structured going forward.
+[SPEAKER_00]: One is that if they can be sizable,
+that there probably should be some form of
+[SPEAKER_00]: sensible kind of like small scale
+regulation and transparency of that
+[SPEAKER_00]: marketplace, and then the other side of it
+that we think about a lot is the reality
+[SPEAKER_00]: that those social clubs are probably going
+to at some point want to transition into
+[SPEAKER_00]: the fully regulated for-profit model.
+[SPEAKER_00]: So thinking strategically now,
+like how do we start to collect data on
+[SPEAKER_00]: those so that we can better understand how
+they're impacted over time when the market
+[SPEAKER_00]: continues to grow with regional model
+projects, etc.
+[SPEAKER_00]: So now I want to kind of transition a
+little bit out of that, but before I do,
+[SPEAKER_00]: what I want to just like really drive home
+on all the data that we just looked at in
+[SPEAKER_00]: the previous half a dozen or so slides is
+that that data that we've collected has
+[SPEAKER_00]: been proven in every state that we
+operate, and we operate in 23 different
+[SPEAKER_00]: states, plus there's other companies that
+do similar work to us.
+[SPEAKER_00]: So almost every state in the U.S.
+[SPEAKER_00]: and Canada, they do some form of track and
+trace data and that data has been proven
+[SPEAKER_00]: to be evidentiary in value.
+[SPEAKER_00]: And if it's evidentiary in value in a
+judicial system, it can also certainly be
+[SPEAKER_00]: used as evidence to support science.
+[SPEAKER_00]: And I think we've heard a couple of times
+today that it's very important,
+[SPEAKER_00]: whatever framework gets adopted in the U
+under current circumstances for regional
+[SPEAKER_00]: model projects has to fit into a
+scientific framework.
+[SPEAKER_00]: And we think that the data that exists
+right now for describing what happens in
+[SPEAKER_00]: the markets and then being able to compare
+and contrast between the various regional
+[SPEAKER_00]: model projects is a viable path forward
+for creating regional model projects that
+[SPEAKER_00]: can be done at scale so that the market
+supports business models like all of yours
+[SPEAKER_00]: and it also supports investment into those
+business models, something that makes it
+[SPEAKER_00]: sustainable going forward.
+[SPEAKER_00]: So getting into the thought experiment on
+Germany, and to kind of elaborate a little
+[SPEAKER_00]: bit more on what I just shared,
+we took some sample data from our system
+[SPEAKER_00]: and we randomly plugged it into Germany,
+kind of like pretending that Germany's
+[SPEAKER_00]: been legalized or we've been tracking
+cannabis data for the last five years.
+[SPEAKER_00]: And again, I mentioned that it's really
+important from a scientific standpoint for
+[SPEAKER_00]: government officials to be able to
+describe and compare and contrast.
+[SPEAKER_00]: We've randomly assigned data from
+different areas within the U.S.
+[SPEAKER_00]: market into states to kind of just
+demonstrate for you, please don't put a
+[SPEAKER_00]: lot of stock on these numbers.
+[SPEAKER_00]: It's like we really think that there's
+going to be a billion dollars in sales.
+[SPEAKER_00]: In Bavaria, I think we know Bavaria is
+probably one of the states that may be
+[SPEAKER_00]: slower to take up regional projects,
+but the idea is that you're able to use
+[SPEAKER_00]: the data that's collected within a shared
+system where everyone's co-creating value
+[SPEAKER_00]: and be able to compare and contrast what's
+happening in those regions.
+[SPEAKER_00]: And then you can even take a little bit
+deeper dive into those various regions and
+[SPEAKER_00]: get a better understanding of what might
+be happening with those, like for example,
+[SPEAKER_00]: with product category sales.
+[SPEAKER_00]: This is just one example and we could look
+at test results, we could look at
+[SPEAKER_00]: transports, we could look at plant yields,
+we could look at almost anything that's in
+[SPEAKER_00]: the system and we can start to be able to
+compare and contrast what's happening
+[SPEAKER_00]: within those regions.
+[SPEAKER_00]: And we think this is a very important
+aspect of creating a scientific framework
+[SPEAKER_00]: and we also think it kind of fits into
+that definition, although it's a little
+[SPEAKER_00]: bit different way of thinking than I think
+we've seen in other attempts at adult use
+[SPEAKER_00]: legalization outside of the U.S.
+[SPEAKER_00]: So with that, I want to kind of like close
+with a couple of thoughts that we've had
+[SPEAKER_00]: as we are watching closely what's
+happening here in Europe.
+[SPEAKER_00]: One is we're actually really excited about
+what the potential is here.
+[SPEAKER_00]: And one of the reasons why we're so
+excited is we've seen this replicated time
+[SPEAKER_00]: and time again where government
+collaborates with the industry and other
+[SPEAKER_00]: stakeholders that exist within the
+ecosystem to support an industry's effort
+[SPEAKER_00]: to supplant the illicit market and replace
+it with safer products.
+[SPEAKER_00]: And we've been able to see government
+balance the regulatory requirements,
+[SPEAKER_00]: not always, but in some cases be able to
+balance those regulatory requirements with
+[SPEAKER_00]: the business needs.
+[SPEAKER_00]: Some of the businesses have been
+successful and while we recognize,
+[SPEAKER_00]: and we're not tone deaf to the reality
+that the market in the U.S.
+[SPEAKER_00]: and North America in general is definitely
+experiencing some hardships along with
+[SPEAKER_00]: some of the other economic downturn that
+exists, but we do know that if you have
+[SPEAKER_00]: the right data structures in place,
+they can help to inform that policy when
+[SPEAKER_00]: things are a little bit tougher and able
+to right size the regulation over time.
+[SPEAKER_00]: No matter what happens, you're not going
+to get the regulations and the laws
+[SPEAKER_00]: correct the first time, so you have to
+have the right data there to be able to
+[SPEAKER_00]: inform how different actors within the
+market are being impacted.
+[SPEAKER_00]: And you can do that at the same time
+collaborating and partnering on what's
+[SPEAKER_00]: important to protect youth and public
+health within the market.
+[SPEAKER_00]: And so we've seen traceability platforms
+work successfully in a lot of different
+[SPEAKER_00]: markets.
+[SPEAKER_00]: And I put that into perspective of what's
+happening here in Europe and in particular
+[SPEAKER_00]: today, it's focusing a little bit more on
+Germany, is that research is going to be
+[SPEAKER_00]: key for regional model projects.
+[SPEAKER_00]: And we think that the research can be
+structured in such a way as well as where
+[SPEAKER_00]: you can have a scalable regional model
+marketplace that's investable and
+[SPEAKER_00]: sustainable.
+[SPEAKER_00]: And we think that while that's happening
+that this could also be done alongside of
+[SPEAKER_00]: what is already a viable medical market
+here in Germany that can coexist alongside
+[SPEAKER_00]: of the adult use market, but to ensure
+that that's more likely to happen,
+[SPEAKER_00]: we think that it's important for the data
+to be collected so that you can actually
+[SPEAKER_00]: kind of showcase and be able to
+demonstrate what different decisions on
+[SPEAKER_00]: the regulatory front kind of impact that
+they're having on various segments of the
+[SPEAKER_00]: market, including the medical market.
+[SPEAKER_00]: And then the last one, just recognizing
+the fact that every time, every time with
+[SPEAKER_00]: almost without exception where there's
+been a small allowance or a modest
+[SPEAKER_00]: allowance for like an unregulated
+non-profit framework for providing
+[SPEAKER_00]: cannabis, whether it's in medical or
+whether it's in adult use, it always,
+[SPEAKER_00]: always takes on the form of a commercial
+market at some point.
+[SPEAKER_00]: Maybe not right out of the chute,
+but a couple of years down the road or so
+[SPEAKER_00]: it almost always takes on the appearance
+of a commercial framework.
+[SPEAKER_00]: So since we know that to be the case,
+and we know that social clubs has the
+[SPEAKER_00]: potential to be one of the key policy
+levers that Germany wants to pull here,
+[SPEAKER_00]: then knowing that those are eventually
+going to be taking on a commercial
+[SPEAKER_00]: appearance, then now's a really good time
+to start thinking strategically about how
+[SPEAKER_00]: social clubs can scale and grow to meet
+some of the demand out of the chute,
+[SPEAKER_00]: but also have a viable option at some
+point in the future to be able to
+[SPEAKER_00]: transition into what we also think is
+likely to happen, which is a more full
+[SPEAKER_00]: scale adult use marketplace.
+[SPEAKER_00]: And I'll close right where I started,
+which is our experience tells us that
+[SPEAKER_00]: government's successful implementation of
+cannabis policy is tied very closely to
+[SPEAKER_00]: business success.
+[SPEAKER_00]: If businesses are not successful in a
+regulated framework, the perception is,
+[SPEAKER_00]: because it's grounded in reality,
+is that the government wasn't successful.
+[SPEAKER_00]: And so we have to have both of those
+entities among another, like another
+[SPEAKER_00]: couple of different sets of stakeholders
+that exist within the ecosystem around
+[SPEAKER_00]: cannabis regulation to be able to work
+together and collaborate for the common
+[SPEAKER_00]: good, the public health and safety
+concerns, but also the important aspects
+[SPEAKER_00]: of creating a sustainable market where
+businesses can thrive over the long haul.
+[SPEAKER_00]: So I want to thank you again for your time
+today.
+[SPEAKER_00]: I think I'm really close to being right on
+time for where we were.
+[SPEAKER_00]: And I want to thank you again for all
+being here this morning and waking up
+[SPEAKER_00]: early.
+[SPEAKER_00]: I really appreciate you.
+[SPEAKER_00]: And to the extent that we can elaborate on
+any of the data that I showed today,
+[SPEAKER_00]: I'm happy to meet with people one-on-one
+and share some of our dashboards and some
+[SPEAKER_00]: of our data and expand on some of our
+thoughts.
+[SPEAKER_00]: We're also happy to hear pushback and
+different opinions on how we think this
+[SPEAKER_00]: might go.
+[SPEAKER_00]: Again, I'm the unapologetic optimist in
+the room when it comes to what we think is
+[SPEAKER_00]: possible, but it's grounded in a lot of
+the experiences that we've seen watching
+[SPEAKER_00]: cannabis regulation unfold in a couple
+dozen different jurisdictions.
+[SPEAKER_00]: So thanks again for the time.
+[SPEAKER_00]: Louis Koski.
+[SPEAKER_00]: Thank you.
+Thank you.
+Thank you.

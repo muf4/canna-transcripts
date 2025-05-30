@@ -1,0 +1,844 @@
+1
+00:00:00,460 --> 00:00:11,350
+[Music]
+
+2
+00:00:12,439 --> 00:00:18,809
+today my senior talk there was a point
+
+3
+00:00:16,890 --> 00:00:22,350
+where you started to introduce pricing
+
+4
+00:00:18,809 --> 00:00:24,659
+as a new component to this data set what
+
+5
+00:00:22,350 --> 00:00:27,510
+what are the prospects of outlooks for
+
+6
+00:00:24,660 --> 00:00:29,759
+data in that space you're a chemist
+
+7
+00:00:27,510 --> 00:00:31,560
+you're back have you done anything with
+
+8
+00:00:29,760 --> 00:00:34,200
+financial time series regressions I have
+
+9
+00:00:31,559 --> 00:00:38,039
+not so financial time series regression
+
+10
+00:00:34,200 --> 00:00:42,000
+in a basic linear regression we say that
+
+11
+00:00:38,039 --> 00:00:43,589
+a conditioned variable is you know the
+
+12
+00:00:42,000 --> 00:00:45,359
+dependent variable is conditioned on the
+
+13
+00:00:43,590 --> 00:00:48,030
+independent variable and there's some
+
+14
+00:00:45,359 --> 00:00:48,750
+usually linear coefficient if you think
+
+15
+00:00:48,030 --> 00:00:50,070
+about how they would work with a
+
+16
+00:00:48,750 --> 00:00:52,259
+financial time series what you'd be
+
+17
+00:00:50,070 --> 00:00:54,840
+saying is that the price is equal to
+
+18
+00:00:52,259 --> 00:00:56,939
+some coefficient times time that means
+
+19
+00:00:54,840 --> 00:00:59,699
+the price would be a straight line going
+
+20
+00:00:56,939 --> 00:01:02,250
+some way up hopefully maybe down who
+
+21
+00:00:59,698 --> 00:01:04,709
+knows that's obviously not our prices
+
+22
+00:01:02,250 --> 00:01:06,599
+work in the real world a slightly more
+
+23
+00:01:04,709 --> 00:01:09,149
+complex model is called an auto
+
+24
+00:01:06,599 --> 00:01:12,359
+regressive model where what we say is
+
+25
+00:01:09,150 --> 00:01:15,000
+that the price at time T is conditioned
+
+26
+00:01:12,359 --> 00:01:17,969
+on the price at times t minus 1 times
+
+27
+00:01:15,000 --> 00:01:20,640
+some coefficient plus some random
+
+28
+00:01:17,969 --> 00:01:23,429
+distribution so it's linear over a short
+
+29
+00:01:20,640 --> 00:01:27,509
+time frames well what we'd say is that
+
+30
+00:01:23,430 --> 00:01:31,590
+it's a random walk that what's that
+
+31
+00:01:27,509 --> 00:01:35,759
+what's where the randomness is in the
+
+32
+00:01:31,590 --> 00:01:41,430
+rand is in the movement from yesterday's
+
+33
+00:01:35,759 --> 00:01:43,709
+price we're not there yet
+
+34
+00:01:41,430 --> 00:01:45,960
+we're only at a r1 we're not we're not
+
+35
+00:01:43,709 --> 00:01:48,478
+close to where we're going so at a r1
+
+36
+00:01:45,959 --> 00:01:50,069
+we say that the randomness is in the
+
+37
+00:01:48,478 --> 00:01:52,950
+price movement from one day to the next
+
+38
+00:01:50,069 --> 00:01:54,508
+and we say that those price movements
+
+39
+00:01:52,950 --> 00:01:57,960
+are drawn from a common shared
+
+40
+00:01:54,509 --> 00:02:00,149
+distribution but that's not really how
+
+41
+00:01:57,959 --> 00:02:03,798
+pricing works either because as we saw
+
+42
+00:02:00,149 --> 00:02:07,409
+in the financial crisis volatility is
+
+43
+00:02:03,799 --> 00:02:10,349
+not constant over time we have perience
+
+44
+00:02:07,409 --> 00:02:12,659
+periods of high volatility and we have
+
+45
+00:02:10,348 --> 00:02:13,349
+periods of low volatility and so we can
+
+46
+00:02:12,659 --> 00:02:15,449
+move from an
+
+47
+00:02:13,349 --> 00:02:17,549
+our model to what we call an arch model
+
+48
+00:02:15,449 --> 00:02:19,889
+which is an order aggressive conditional
+
+49
+00:02:17,550 --> 00:02:24,270
+heteroskedasticity model where we say
+
+50
+00:02:19,889 --> 00:02:27,869
+that the price movement at time X that
+
+51
+00:02:24,270 --> 00:02:30,659
+the Sigma at time at T rather let's go
+
+52
+00:02:27,870 --> 00:02:33,300
+away from access stick with time T that
+
+53
+00:02:30,659 --> 00:02:36,359
+the Sigma at time T is conditioned on
+
+54
+00:02:33,300 --> 00:02:38,160
+Sigma at time T minus 1 and we can even
+
+55
+00:02:36,360 --> 00:02:39,180
+become more sophisticated than that and
+
+56
+00:02:38,159 --> 00:02:40,439
+we can go to a generalized
+
+57
+00:02:39,180 --> 00:02:43,740
+autoregressive conditional
+
+58
+00:02:40,439 --> 00:02:47,370
+heteroscedasticity model where we say
+
+59
+00:02:43,740 --> 00:02:49,080
+that volatility is seasonal volatilities
+
+60
+00:02:47,370 --> 00:02:52,110
+periodically conditioned and so forth
+
+61
+00:02:49,080 --> 00:02:55,070
+that only gives us though a single price
+
+62
+00:02:52,110 --> 00:02:57,300
+it gives us a good male good estimate of
+
+63
+00:02:55,069 --> 00:02:59,219
+what a volatility is going to be in the
+
+64
+00:02:57,300 --> 00:03:03,540
+price risk for the near term but only
+
+65
+00:02:59,219 --> 00:03:06,060
+for a single price point but we can take
+
+66
+00:03:03,539 --> 00:03:08,280
+our GARCH model and we can lay it out in
+
+67
+00:03:06,060 --> 00:03:09,569
+a multivariate normal model and if we
+
+68
+00:03:08,280 --> 00:03:11,280
+lay out our guards from the multivariate
+
+69
+00:03:09,569 --> 00:03:15,349
+normal it becomes a model called a C
+
+70
+00:03:11,280 --> 00:03:18,360
+cubed GARCH where Sigma at each point is
+
+71
+00:03:15,349 --> 00:03:21,750
+related to the Sigma and the price
+
+72
+00:03:18,360 --> 00:03:26,610
+movements of the other prices in our
+
+73
+00:03:21,750 --> 00:03:29,250
+model well our Sigma instead of being a
+
+74
+00:03:26,610 --> 00:03:32,690
+single you know you know in a single
+
+75
+00:03:29,250 --> 00:03:36,689
+price model whether it's a R or GARCH
+
+76
+00:03:32,689 --> 00:03:39,120
+Sigma is a is one number it's a scalar
+
+77
+00:03:36,689 --> 00:03:41,280
+you go on to regress those then but
+
+78
+00:03:39,120 --> 00:03:43,770
+either in a multivariate model though
+
+79
+00:03:41,280 --> 00:03:47,490
+Sigma is a symmetric positive-definite
+
+80
+00:03:43,770 --> 00:03:49,140
+matrix because it has to relate the
+
+81
+00:03:47,490 --> 00:03:51,990
+covariance of every price to every other
+
+82
+00:03:49,139 --> 00:03:53,669
+price and that's the concept that I was
+
+83
+00:03:51,990 --> 00:03:55,879
+trying to introduce in short form today
+
+84
+00:03:53,669 --> 00:03:58,049
+which is that in connect we have
+
+85
+00:03:55,879 --> 00:04:00,889
+positions in connect that are related to
+
+86
+00:03:58,050 --> 00:04:03,030
+each other according to the economic
+
+87
+00:04:00,889 --> 00:04:05,609
+substitutability of two different
+
+88
+00:04:03,030 --> 00:04:07,830
+strains how close or distant two strains
+
+89
+00:04:05,610 --> 00:04:10,950
+are from each other is how good they are
+
+90
+00:04:07,830 --> 00:04:12,000
+as substitutes if you think about that
+
+91
+00:04:10,949 --> 00:04:16,769
+and if you think about how that should
+
+92
+00:04:12,000 --> 00:04:19,139
+relate to a pricing model there
+
+93
+00:04:16,769 --> 00:04:20,849
+substitutability is inversely
+
+94
+00:04:19,139 --> 00:04:22,918
+proportional or should be inversely
+
+95
+00:04:20,850 --> 00:04:24,840
+proportional to the covariance of the
+
+96
+00:04:22,918 --> 00:04:26,639
+price shocks which means that our
+
+97
+00:04:24,839 --> 00:04:29,369
+connect distances
+
+98
+00:04:26,639 --> 00:04:33,990
+natural relationship to the Sigma matrix
+
+99
+00:04:29,370 --> 00:04:36,360
+in that C cubed arch model and it
+
+100
+00:04:33,990 --> 00:04:38,009
+becomes possible at that point if you
+
+101
+00:04:36,360 --> 00:04:39,538
+tried to figure out the price is what I
+
+102
+00:04:38,009 --> 00:04:41,598
+was alluding to today if you try and
+
+103
+00:04:39,538 --> 00:04:44,128
+figure out the price of a strain
+
+104
+00:04:41,598 --> 00:04:45,509
+tomorrow when that strain hasn't traded
+
+105
+00:04:44,129 --> 00:04:46,889
+in five months because there are
+
+106
+00:04:45,509 --> 00:04:48,509
+thousands of strains they don't trade
+
+107
+00:04:46,889 --> 00:04:50,908
+that often if you tried to figure out
+
+108
+00:04:48,509 --> 00:04:52,169
+that price of that strain tomorrow when
+
+109
+00:04:50,908 --> 00:04:53,879
+it hasn't traded in five months and do
+
+110
+00:04:52,168 --> 00:04:55,019
+that directly you would have a very
+
+111
+00:04:53,879 --> 00:04:57,990
+rough time you're not gonna be able to
+
+112
+00:04:55,019 --> 00:05:00,269
+do that on the other hand if you have a
+
+113
+00:04:57,990 --> 00:05:02,400
+covariance matrix and you have
+
+114
+00:05:00,269 --> 00:05:04,500
+intervening prices in that intervening
+
+115
+00:05:02,399 --> 00:05:06,899
+five months for other prices and that
+
+116
+00:05:04,500 --> 00:05:10,139
+covariance matrix then you can have a
+
+117
+00:05:06,899 --> 00:05:11,579
+pretty well grounded estimate of what
+
+118
+00:05:10,139 --> 00:05:13,259
+the new price will be for this strain
+
+119
+00:05:11,579 --> 00:05:15,418
+that hasn't traded before or that hasn't
+
+120
+00:05:13,259 --> 00:05:17,158
+traded recently then these are wholesale
+
+121
+00:05:15,418 --> 00:05:19,528
+prices I don't worry about the retail
+
+122
+00:05:17,158 --> 00:05:22,199
+level we are a a company that operates
+
+123
+00:05:19,528 --> 00:05:25,288
+at the wholesale level right yeah and
+
+124
+00:05:22,199 --> 00:05:27,210
+what this lets us do is to predict not
+
+125
+00:05:25,288 --> 00:05:27,899
+an individual this is your likely price
+
+126
+00:05:27,209 --> 00:05:30,448
+tomorrow
+
+127
+00:05:27,899 --> 00:05:33,870
+it lets us predict a pretty narrow range
+
+128
+00:05:30,449 --> 00:05:35,759
+of probabilistic prices for not today
+
+129
+00:05:33,870 --> 00:05:37,829
+but for a week from today two weeks for
+
+130
+00:05:35,759 --> 00:05:39,750
+today a month from today and that lets
+
+131
+00:05:37,829 --> 00:05:41,430
+us help people to figure out what price
+
+132
+00:05:39,750 --> 00:05:42,598
+they can expect to obtain and help
+
+133
+00:05:41,430 --> 00:05:45,800
+people price their product on the market
+
+134
+00:05:42,598 --> 00:05:48,688
+right so you're talking about enabling
+
+135
+00:05:45,800 --> 00:05:52,050
+what's now a commodity and now giving
+
+136
+00:05:48,689 --> 00:05:55,319
+futures to that come on
+
+137
+00:05:52,050 --> 00:05:57,389
+you're a very insightful person born in
+
+138
+00:05:55,319 --> 00:05:59,160
+fact that that's exactly the direction
+
+139
+00:05:57,389 --> 00:06:02,280
+we're heading is to figure out to be
+
+140
+00:05:59,160 --> 00:06:05,280
+able to accurately estimate not just the
+
+141
+00:06:02,279 --> 00:06:07,589
+price but what's the price risk over the
+
+142
+00:06:05,279 --> 00:06:09,209
+next month two months six months how
+
+143
+00:06:07,589 --> 00:06:10,619
+much volatility is there in the market
+
+144
+00:06:09,209 --> 00:06:11,758
+and what's relativity is going to be
+
+145
+00:06:10,620 --> 00:06:13,560
+associated with the strain with the
+
+146
+00:06:11,759 --> 00:06:14,879
+price of this strain and so forth
+
+147
+00:06:13,560 --> 00:06:16,408
+that's how other commodities are priced
+
+148
+00:06:14,879 --> 00:06:19,530
+and we would like to be able to start
+
+149
+00:06:16,408 --> 00:06:21,300
+doing that as cannabis moves into an
+
+150
+00:06:19,529 --> 00:06:22,408
+ordinary commodity that is to say a
+
+151
+00:06:21,300 --> 00:06:26,370
+commodity that's readily available
+
+152
+00:06:22,408 --> 00:06:28,490
+that's efficiently priced where buyers
+
+153
+00:06:26,370 --> 00:06:30,990
+can get a reliable stream of Commerce
+
+154
+00:06:28,490 --> 00:06:32,728
+that's the kind of risk assessment that
+
+155
+00:06:30,990 --> 00:06:35,759
+you need to be able to do interesting
+
+156
+00:06:32,728 --> 00:06:38,939
+could you as a chemist could you take a
+
+157
+00:06:35,759 --> 00:06:40,500
+similar model and apply it to statements
+
+158
+00:06:38,939 --> 00:06:42,120
+about the potency of cannabis is
+
+159
+00:06:40,500 --> 00:06:44,189
+cannabis becoming more potent over time
+
+160
+00:06:42,120 --> 00:06:47,610
+or less potent or is it stagnating out
+
+161
+00:06:44,189 --> 00:06:50,968
+could you apply it to questions like are
+
+162
+00:06:47,610 --> 00:06:53,610
+we seeing more what we refer to as
+
+163
+00:06:50,968 --> 00:06:55,529
+indicas versus sativas more uppers or
+
+164
+00:06:53,610 --> 00:06:57,870
+downers could we get a sense of well
+
+165
+00:06:55,529 --> 00:07:00,149
+indicas and sativas indicas and sativas
+
+166
+00:06:57,870 --> 00:07:01,530
+are chemically indistinguishable we see
+
+167
+00:07:00,149 --> 00:07:03,779
+no significant differentiation between
+
+168
+00:07:01,529 --> 00:07:06,299
+indicas and sativas there's a little bit
+
+169
+00:07:03,779 --> 00:07:08,429
+of attendances what's down there's a
+
+170
+00:07:06,300 --> 00:07:10,788
+little bit of a tendency for sativas to
+
+171
+00:07:08,430 --> 00:07:13,590
+have more to pennilyn but that's it I
+
+172
+00:07:10,788 --> 00:07:15,658
+don't know that there are uppers and
+
+173
+00:07:13,589 --> 00:07:20,429
+downers distinctions that I can define
+
+174
+00:07:15,658 --> 00:07:23,579
+chemically is the amount of THC growing
+
+175
+00:07:20,430 --> 00:07:27,778
+yes there is if you're selling cannabis
+
+176
+00:07:23,579 --> 00:07:29,370
+as flour there are people who walk into
+
+177
+00:07:27,778 --> 00:07:32,129
+the dispensary and what they're going to
+
+178
+00:07:29,370 --> 00:07:33,840
+pick is what has the most THC in it give
+
+179
+00:07:32,129 --> 00:07:37,319
+me the stuff that's the strongest give
+
+180
+00:07:33,839 --> 00:07:40,109
+me the most THC for my THC dollar and so
+
+181
+00:07:37,319 --> 00:07:41,639
+producers are marketing to that and I
+
+182
+00:07:40,110 --> 00:07:43,468
+have to tell you I think from the
+
+183
+00:07:41,639 --> 00:07:44,699
+consumers perspective I think they're
+
+184
+00:07:43,468 --> 00:07:47,550
+making a terrible mistake
+
+185
+00:07:44,699 --> 00:07:51,930
+if you have cannabis that has more than
+
+186
+00:07:47,550 --> 00:07:53,430
+you know 20% 25% THC in it there's a
+
+187
+00:07:51,930 --> 00:07:55,139
+limit to how high you can get and
+
+188
+00:07:53,430 --> 00:07:58,400
+there's certainly a limit to how high
+
+189
+00:07:55,139 --> 00:07:58,400
+you want to get and
+
+190
+00:07:58,550 --> 00:08:04,579
+it's hard for most people myself
+
+191
+00:08:01,970 --> 00:08:06,050
+included but really anybody that we've
+
+192
+00:08:04,579 --> 00:08:08,269
+talked to any whenever we've done
+
+193
+00:08:06,050 --> 00:08:11,300
+research into this people are much
+
+194
+00:08:08,269 --> 00:08:14,000
+happier with a cannabis that's 10% THC
+
+195
+00:08:11,300 --> 00:08:16,879
+and 10% CBD than they are with a
+
+196
+00:08:14,000 --> 00:08:19,189
+cannabis that's 35% th say you're going
+
+197
+00:08:16,879 --> 00:08:20,960
+to get frankly too high but nevertheless
+
+198
+00:08:19,189 --> 00:08:23,120
+that's what producers are moving towards
+
+199
+00:08:20,959 --> 00:08:24,769
+and the other place where producers are
+
+200
+00:08:23,120 --> 00:08:26,389
+moving towards very high THC amounts is
+
+201
+00:08:24,769 --> 00:08:28,008
+in production for extraction
+
+202
+00:08:26,389 --> 00:08:30,050
+there's certainly demand for very high
+
+203
+00:08:28,009 --> 00:08:31,848
+THC very high CBD in a very high
+
+204
+00:08:30,050 --> 00:08:34,879
+cannabinoid content for sale to
+
+205
+00:08:31,848 --> 00:08:36,979
+extractors consumers would probably be
+
+206
+00:08:34,879 --> 00:08:39,078
+happier if they focus less on getting as
+
+207
+00:08:36,979 --> 00:08:41,810
+much THC as they can and more on getting
+
+208
+00:08:39,078 --> 00:08:43,250
+a balance of other psychoactive
+
+209
+00:08:41,809 --> 00:08:47,619
+chemicals and they're in their cannabis
+
+210
+00:08:43,250 --> 00:08:47,620
+well thank you Amos thank you very much
+
+211
+00:08:52,019 --> 00:08:57,569
+[Music]
+

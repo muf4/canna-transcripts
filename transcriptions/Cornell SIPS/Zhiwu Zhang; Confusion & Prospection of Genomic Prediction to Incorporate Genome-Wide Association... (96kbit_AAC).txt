@@ -1,0 +1,780 @@
+[SPEAKER_00]: This is a production of Cornell
+University.
+[SPEAKER_02]: Thank you very much for that introduction.
+[SPEAKER_04]: It cannot go further beyond that level.
+[SPEAKER_04]: Thank you so much.
+[SPEAKER_04]: And also thank you for inviting me here,
+especially as a Canadian, I come back
+[SPEAKER_04]: about ten years after that.
+[SPEAKER_04]: It was a really nice meeting.
+[SPEAKER_04]: Last night I even walked through some of
+the buildings, like Biotek, Merck,
+[SPEAKER_02]: and Paul.
+[SPEAKER_04]: So this talk I put on my lab server.
+[SPEAKER_04]: So this slide on that server is called
+zzlab.net slash share.
+[SPEAKER_04]: So then you will find the slide there.
+[SPEAKER_04]: So you don't need to take a picture.
+[SPEAKER_04]: So you will get a high quality slide from
+there.
+[SPEAKER_04]: Great.
+[SPEAKER_04]: Cornell ranks the number one in plant
+breeding education research.
+[SPEAKER_04]: So then what do we do in this genomic
+area?
+[SPEAKER_04]: Essentially, we try to answer two
+complementary questions.
+[SPEAKER_04]: One is explanation.
+[SPEAKER_04]: Another one is the prediction.
+[SPEAKER_04]: For explanation, we try to find the genes
+that we have been cloning all day.
+[SPEAKER_04]: Maybe still now, we have a kind of gene
+when we try to verify it, cloning it,
+[SPEAKER_04]: that's kind of a backward.
+[SPEAKER_04]: Or we do not have knowledge on those
+genes, then we try to find them,
+[SPEAKER_04]: phishing them using linkage analysis or
+GWAS, then we try to clone them again.
+[SPEAKER_04]: For the prediction, we maybe initially
+start with the macrosystem selection,
+[SPEAKER_04]: then try to do genome-wide, then maybe
+GWAS plus genome selection, and then maybe
+[SPEAKER_04]: in the future there will be the artificial
+intelligence.
+[SPEAKER_04]: So that means that backward and forward
+approach, they can go back each other.
+[SPEAKER_04]: So then these GWAS also help genomic
+prediction.
+[SPEAKER_04]: So then prediction also can be used at one
+semester to try to validate the GWAS
+[SPEAKER_04]: readout.
+[SPEAKER_04]: So then today I'm going to talk about most
+of this stuff, except the validation of
+[SPEAKER_04]: the red color.
+[SPEAKER_04]: Major focus will be on the prediction.
+[SPEAKER_04]: So then we will divide the talk into the
+following sections.
+[SPEAKER_04]: First, we go through the process from
+macrosystem selection to genome selection.
+[SPEAKER_04]: Then we talk about the problem with this
+prediction business.
+[SPEAKER_04]: Then we talk about the problem in the
+literature, there's muddy water,
+[SPEAKER_04]: how we can help everyone.
+[SPEAKER_04]: We see that clearly.
+[SPEAKER_04]: Then we try to figure out what's the
+reason on the hidden overfeeding problem.
+[SPEAKER_04]: Finally, yeah, maybe before artificial
+intelligence even take everything,
+[SPEAKER_04]: we try to do our best to improve our
+accuracy.
+[SPEAKER_04]: First, let's talk about macrosystem
+selection.
+[SPEAKER_04]: Everything starts from this DNA.
+[SPEAKER_04]: Then from the DNA, we can measure it with
+different genotype.
+[SPEAKER_04]: Then we call them 012.
+[SPEAKER_04]: Then we can try to do the regression.
+[SPEAKER_04]: Okay, so then for this regression,
+we can have a two approach.
+[SPEAKER_04]: One is this sort of top-down drop.
+[SPEAKER_04]: So that means, for example, at Bucketer's
+lab, we have used this marker to try to
+[SPEAKER_04]: develop the key shape.
+[SPEAKER_04]: Then with this key shape, we can make a
+direct prediction on those individuals,
+[SPEAKER_04]: those breeding values.
+[SPEAKER_04]: So then this key shape, we can change it.
+[SPEAKER_04]: We can use some selected marker or
+compress into groups.
+[SPEAKER_04]: Then we can develop a series of floppable.
+[SPEAKER_04]: Or another way is the bottom up.
+[SPEAKER_04]: So that means we start from the value of
+the marker, then sum them up, then try to
+[SPEAKER_04]: get the leading value.
+[SPEAKER_04]: Then those distribution, we need to have a
+sort of assumption.
+[SPEAKER_04]: Then different assumption, create a
+different basing approach.
+[SPEAKER_04]: So then we can think about this business,
+see how this river start from.
+[SPEAKER_04]: Like I said, everything start from the
+down way east.
+[SPEAKER_04]: That's from Mosin Hall.
+[SPEAKER_04]: Charles Henderson get his first job as
+assistant professor at Cornell.
+[SPEAKER_04]: But he's the original start from Iowa
+State.
+[SPEAKER_04]: But he developed that one.
+[SPEAKER_04]: All the way, I think the most publication
+coming from 1970, during that period.
+[SPEAKER_04]: So that's the blop.
+[SPEAKER_04]: So then the next one tried to use the
+marker, that one go back to Iowa.
+[SPEAKER_04]: So Rohan Fernando get this marker into
+this breeding value.
+[SPEAKER_04]: Integrate with the blop.
+[SPEAKER_04]: So then the next one, 1994.
+[SPEAKER_04]: That's Brown Breeder, Rex Fernando.
+[SPEAKER_04]: I think everybody know him.
+[SPEAKER_04]: But unfortunately, at that time,
+did not get a lot of attention from our
+[SPEAKER_04]: community until, okay, 2001.
+[SPEAKER_04]: Okay, Mewilson, Binhays and Goddard,
+they published this genetics paper.
+[SPEAKER_04]: Basically, they show how to use the entire
+marker compared to the marker system,
+[SPEAKER_04]: how that is more useful.
+[SPEAKER_04]: Okay, that one get this community realize
+the denomination.
+[SPEAKER_04]: That's really big contribution.
+[SPEAKER_04]: But still not get used.
+[SPEAKER_04]: Then in 2007, Dale Wimellek, he's the
+corresponding author.
+[SPEAKER_04]: I'm the first author.
+[SPEAKER_04]: Ed and Rory Tata-Hunter from West School
+joined as the co-author.
+[SPEAKER_04]: We actually, we reinvented that deep blop
+method.
+[SPEAKER_04]: Okay.
+[SPEAKER_04]: The good thing is that paper published in
+animal science.
+[SPEAKER_04]: An animal to be read or read it.
+[SPEAKER_04]: So Paul when writing, then next year
+applied to the USDA, the theory science,
+[SPEAKER_04]: theory evaluation.
+[SPEAKER_04]: Then denomination, boom.
+[SPEAKER_04]: The reason is that regression,
+this basic approach, is the computing
+[SPEAKER_04]: difficult and does not match the
+existences.
+[SPEAKER_04]: So then for this deep blop, we just
+replace the pedigree relationship with the
+[SPEAKER_04]: marker relationship.
+[SPEAKER_04]: So the coding is very easy.
+[SPEAKER_04]: Then that program get used immediately.
+[SPEAKER_04]: Then the next contribution is from Ignacio
+Nistal and try to use existing pedigree
+[SPEAKER_04]: combined with the marker-based pedigree
+until now.
+[SPEAKER_04]: That's dominant the animal breed.
+Okay.
+[SPEAKER_04]: Then later on I did some improvement on
+the kinship.
+[SPEAKER_04]: Use either compressed with a group or use
+a more meaningful kinship and try to do
+[SPEAKER_04]: the super blop.
+[SPEAKER_04]: Unlike GWAS method.
+[SPEAKER_04]: So GWAS, if your method A is better than
+B, no matter which solution, that's true.
+[SPEAKER_04]: But for the genomic selection,
+that's different.
+[SPEAKER_04]: And the order can be reversed by different
+trait, even different population.
+Okay.
+[SPEAKER_04]: So then we figure out the two factors
+affect this, which one is the best method.
+[SPEAKER_04]: Okay.
+[SPEAKER_04]: For example, these two factor,
+including the heritability and the
+[SPEAKER_04]: complexity of the trait.
+[SPEAKER_04]: If the trait is the polygene, basically
+that's deep blop, works robust.
+[SPEAKER_04]: But if you have a less gene, then other
+method works much better.
+[SPEAKER_04]: And if the trait is lower heritability,
+then the compress, you make a group,
+[SPEAKER_04]: then you have a better prediction.
+[SPEAKER_04]: And if the trait has a higher
+heritability, then the basic approach
+[SPEAKER_04]: works better.
+[SPEAKER_04]: So really depends on the situation.
+[SPEAKER_04]: So that makes it harder for breeder to use
+it.
+[SPEAKER_04]: So then we build this system, basically
+it's a machine learning.
+[SPEAKER_04]: So then the machine will look at the data,
+try to figure out which one is the best
+[SPEAKER_04]: for that particular thing.
+[SPEAKER_04]: Okay.
+[SPEAKER_04]: Then for that evaluation, actually we have
+a problem.
+[SPEAKER_04]: And the problem can be viewed from this
+table.
+[SPEAKER_04]: So this is a paper from this founding
+father, Rex Bernardo's paper.
+[SPEAKER_04]: And if you look at this prediction
+accuracy, minus 30, minus 40.
+[SPEAKER_04]: So then interpretation can be a problem.
+[SPEAKER_04]: Some people interpret it, okay,
+if I reverse the direction, it will still
+[SPEAKER_04]: work as good as, for example, 40%.
+[SPEAKER_04]: But the problem, that may be not true.
+[SPEAKER_04]: And I can show why that happened.
+[SPEAKER_04]: For example, yeah, we do the cross
+validation.
+[SPEAKER_04]: For example, here is the five.
+[SPEAKER_04]: You can select the four group,
+try to create another group.
+[SPEAKER_04]: After this, you will get a prediction for
+every group.
+[SPEAKER_04]: Extreme situation is the new one out.
+[SPEAKER_04]: You try to predict that individual,
+use the rest.
+[SPEAKER_04]: Then you just loop.
+[SPEAKER_04]: The problem is actually we have a two way,
+try to calculate this Pearson correlation.
+[SPEAKER_04]: For example, on the left side,
+I have that solid, that is the group we
+[SPEAKER_04]: try to make a predict.
+[SPEAKER_04]: So we hide the phenotype, use the rest to
+make a prediction.
+[SPEAKER_04]: So after we get the prediction that right,
+so for each group, we can calculate the
+[SPEAKER_04]: Pearson correlation immediately.
+[SPEAKER_04]: So that means we get instant accuracy.
+[SPEAKER_04]: So then we get the five, we take average
+as the final.
+[SPEAKER_04]: But again, we can also use a different
+way.
+[SPEAKER_04]: For each board, after we get a prediction
+when we hold, we don't calculate until we
+[SPEAKER_04]: get all the five groups predicted.
+[SPEAKER_04]: Then we make one calculation at the very
+last.
+[SPEAKER_04]: So that means, yeah, we have that hold
+out.
+[SPEAKER_04]: So there is two ways to calculate this
+prediction.
+[SPEAKER_04]: One is instant for each fold.
+[SPEAKER_04]: Or hold, that means after you get for
+every fold, then you make one calculation.
+[SPEAKER_04]: So in the literature, you can see the
+variation between these two.
+[SPEAKER_04]: And some they don't tell you exactly what
+happens.
+[SPEAKER_04]: Then the problem is these two are
+different.
+[SPEAKER_04]: For example, I use that 281 that the
+flooring time means as a path,
+[SPEAKER_04]: I just shuffling that the phenotype,
+break the connection between phenotype and
+[SPEAKER_04]: genotype and see what's happening.
+[SPEAKER_04]: So expectation should be zero.
+[SPEAKER_04]: You should not have accuracy because it's
+already broken.
+[SPEAKER_04]: Then we try to see whether these two
+approach, they get a zero.
+[SPEAKER_04]: That expectation.
+[SPEAKER_04]: So I divide them into five groups.
+[SPEAKER_04]: Then for each group, if you look at the
+correlation for each group and the rest
+[SPEAKER_04]: that reference, so then you will see they
+are just on the opposite side of the
+[SPEAKER_04]: publishing mean.
+[SPEAKER_04]: So that means if you look somewhere here,
+solid standard testing, then the open is
+[SPEAKER_04]: for the reference.
+[SPEAKER_04]: So they're just on the opposite side of
+the publishing mean.
+[SPEAKER_04]: So then that means they are 100%
+negatively correlated to each other.
+[SPEAKER_04]: Then the problem is the training
+population, if you have a higher
+[SPEAKER_04]: phenotype, then you tend to have a higher
+prediction.
+[SPEAKER_04]: So then it's completely reversed to the
+breeding value.
+[SPEAKER_04]: So that means you're supposed to get a
+zero expectation, but they end up for this
+[SPEAKER_04]: simulation, you get a negative 5%.
+[SPEAKER_04]: So that means downward bias.
+[SPEAKER_04]: The problem gets even worse with number of
+the foams.
+[SPEAKER_04]: You can see so here expectation should be
+zero, but the number of foams increase,
+[SPEAKER_04]: then that bias increase for that red color
+that hold that.
+[SPEAKER_04]: So the more foams, the more bias.
+[SPEAKER_04]: If you have a J&F, like leave one out,
+that's the worst one.
+[SPEAKER_04]: So actually J&F should not be used.
+[SPEAKER_04]: And so you can see, can easily like reach
+like a 15% negative for the whole
+[SPEAKER_04]: accuracy.
+[SPEAKER_04]: Then you see all the blue one pretty good,
+that's instant.
+[SPEAKER_04]: That means you get a fold, calculate
+immediately then average, then no problem
+[SPEAKER_04]: here.
+[SPEAKER_04]: But it also has another problem.
+[SPEAKER_04]: So you're intuitive, you have more
+training data, then you have a better
+[SPEAKER_04]: accuracy, right?
+[SPEAKER_04]: So that means if you do the experiment,
+you have a more fold, then your training
+[SPEAKER_04]: data is larger, then you're supposed to
+get a higher accuracy.
+[SPEAKER_04]: So then you will see that instant that the
+blue one start to having problem.
+[SPEAKER_04]: So it started with increase with number of
+fold, but at certain point, well,
+[SPEAKER_04]: very quick.
+[SPEAKER_04]: Why?
+[SPEAKER_04]: That's related to the size of the testing
+population.
+[SPEAKER_04]: The size is small, it's got bias.
+[SPEAKER_04]: Usually it may be after 30, it's sort of
+okay.
+[SPEAKER_04]: But if you have less, especially when you
+do like a small testing size, then that's
+[SPEAKER_04]: really got a big problem.
+[SPEAKER_04]: The good thing is for instant accuracy,
+we have a way to try to correct it.
+[SPEAKER_04]: So actually Fisher already did this for
+us.
+[SPEAKER_04]: Yeah, long, long time ago.
+[SPEAKER_04]: So then we start to use this Fisher
+correction.
+[SPEAKER_04]: So then you see that a black line.
+[SPEAKER_04]: So then start to have another like the
+blue one.
+[SPEAKER_04]: So they quickly drop.
+[SPEAKER_04]: So then that black line that corrected
+instant accuracy, then they start to make
+[SPEAKER_04]: sense.
+[SPEAKER_04]: That means more training data,
+then you have a more accuracy.
+[SPEAKER_04]: The take-home message, there are two ways
+to try to calculate this, the different
+[SPEAKER_04]: accuracy, Pearson correlation.
+[SPEAKER_04]: Both are downward bias.
+[SPEAKER_04]: Then instant accuracy is correctable.
+[SPEAKER_04]: So then you can use that Fisher
+correction, correct that instant method.
+[SPEAKER_04]: But for that whole accuracy, so far I have
+not found a method to correct yet.
+[SPEAKER_04]: But the problem is in literature,
+people still using that whole accuracy,
+[SPEAKER_04]: even the new one off a lot, try to
+evaluate the accuracy.
+[SPEAKER_04]: So then the true accuracy might be done
+under estimated, especially using the
+[SPEAKER_04]: whole accuracy on the new one off that
+strategy.
+[SPEAKER_04]: So when the true accuracy is low,
+negative that the Pearson correlation
+[SPEAKER_04]: could appear with unprecedented frequency
+and magnitude.
+[SPEAKER_04]: That's kind of explain why Rex Bernardo's
+net result can have like a 40% negative
+[SPEAKER_04]: correlation.
+[SPEAKER_04]: So then we see more problem.
+[SPEAKER_04]: See this module.
+[SPEAKER_04]: Yeah, because Rex Bernardo is the founding
+father in this area, I'm trying to start
+[SPEAKER_04]: with him.
+[SPEAKER_04]: He has a paper, 2014, just at the time I
+left Cornell, proposed a very meaningful
+[SPEAKER_04]: direction for the genomic selection.
+[SPEAKER_04]: So that means the genome selection,
+if you have an existing non-gene,
+[SPEAKER_04]: you shouldn't incorporate that into your
+prediction model.
+[SPEAKER_04]: That makes sense.
+[SPEAKER_04]: Yeah, that helps.
+[SPEAKER_04]: And later on, there are a lot of research
+follow this direction, breeding program,
+[SPEAKER_04]: try to implement this, try to improve
+accuracy.
+[SPEAKER_04]: But the problem, when the literature start
+to accumulate, people are doing a lot of
+[SPEAKER_04]: different things.
+[SPEAKER_04]: Then we start to see rare stuff.
+[SPEAKER_04]: For example, one paper solving,
+if you incorporate the GWAS result into
+[SPEAKER_04]: genome selection, you can easily get a
+two-fold increase on accuracy.
+[SPEAKER_04]: For example, originally it was 40%,
+now you get 80%.
+[SPEAKER_04]: Let me see this.
+[SPEAKER_04]: Yeah, you see that one, five times
+increase.
+[SPEAKER_04]: Yeah, then we think about that's true or
+not.
+[SPEAKER_04]: So then we try to see if you figure out if
+any other potential problem may be
+[SPEAKER_04]: confounded, this phenomena.
+[SPEAKER_04]: So then let's see how people to do this.
+[SPEAKER_04]: So then this one I labeled as a valid
+product.
+[SPEAKER_04]: So that means you go through this process
+and you should be fine.
+[SPEAKER_04]: The result should be available.
+[SPEAKER_04]: So when you get data, you divide them into
+training and testing first.
+[SPEAKER_04]: Then for the training, you start to
+conduct GWAS.
+[SPEAKER_04]: Then figure out which one is sorted with
+the tree.
+[SPEAKER_04]: And with those one, you calculate the
+breeding value of the testing population.
+[SPEAKER_04]: Then try to correlate it with the
+phenotype.
+[SPEAKER_04]: Then you get accuracy.
+[SPEAKER_04]: So this is valid.
+[SPEAKER_04]: So this accuracy whole, but the problem
+people doing the different.
+[SPEAKER_04]: They get the data, the entire population,
+and then immediately they doing the GWAS.
+[SPEAKER_04]: Then they know which one are sorted with
+the tree.
+[SPEAKER_04]: So then we say whether this GWAS result
+work or not, prediction accuracy is good
+[SPEAKER_04]: or bad.
+[SPEAKER_04]: So then they start to do the validation.
+[SPEAKER_04]: So they divide the population into
+training and testing.
+[SPEAKER_04]: So then try to see those are sorted
+result, what's the effect?
+[SPEAKER_04]: Then they do the prediction.
+[SPEAKER_04]: Then they do the correlation.
+[SPEAKER_04]: The problem is that the testing
+population, that the phenotype is already
+[SPEAKER_04]: being used in this diagram.
+[SPEAKER_04]: So then that cause hidden overfeeding.
+[SPEAKER_04]: Then they do this again and again,
+but this is potentially can increase your
+[SPEAKER_04]: accuracy two times, five times,
+or I just easily reach 100%.
+[SPEAKER_04]: So then we did like a test.
+[SPEAKER_04]: So like we did before, we randomly shuffle
+the phenotype, break the connection
+[SPEAKER_04]: between phenotype and the genotype.
+[SPEAKER_04]: You suppose to get accuracy of zero.
+[SPEAKER_04]: So then we try to look at the accuracy of
+the training.
+[SPEAKER_04]: Of course, if you look at the data
+already, then you do the prediction.
+[SPEAKER_04]: On the training, you get accuracy 40% or
+above.
+[SPEAKER_04]: That's make sense.
+[SPEAKER_04]: Then because nobody try to look at the
+training population.
+[SPEAKER_04]: Then we need to look at the testing
+population.
+[SPEAKER_04]: Then for the testing population here,
+you see the green color and the red color,
+[SPEAKER_04]: they are on the expectation zero.
+[SPEAKER_04]: That approach is read regression.
+[SPEAKER_04]: They don't have a problem.
+[SPEAKER_04]: They don't do the GWAS.
+[SPEAKER_04]: Look at the data first.
+[SPEAKER_04]: And also doing the GWAS first,
+then incorporate into the prediction.
+[SPEAKER_04]: But there is a way the valid method.
+[SPEAKER_04]: So that means you divide the population
+into training and testing first.
+[SPEAKER_04]: And they don't have a problem.
+[SPEAKER_04]: They get the expectation of zero.
+[SPEAKER_04]: But the other one can easily get like a
+10% increase, even should be zero.
+[SPEAKER_04]: And that's the GWAS first with the invalid
+method.
+[SPEAKER_04]: Then incorporate into mid-version.
+[SPEAKER_04]: So that means the literature, there are a
+lot of things tell you this really good,
+[SPEAKER_04]: it works.
+[SPEAKER_04]: Actually, maybe not.
+[SPEAKER_04]: And also from Addy Buckley's group,
+Alice Lipner, a really nice study.
+[SPEAKER_04]: And he know the science how should be
+performed.
+[SPEAKER_04]: He uses the valid approach and try to
+verify about 200 traits simulated to see
+[SPEAKER_04]: whether incorporated GWAS result can
+improve prediction accuracy.
+[SPEAKER_04]: It's end up with about like a one third.
+[SPEAKER_04]: Yeah, those incorporation do increase
+accuracy.
+[SPEAKER_04]: But for the majority, still don't.
+[SPEAKER_04]: So then the question for us is how we can
+improve this procedure or improve the GWAS
+[SPEAKER_04]: result, try to incorporate into genome
+selection to improve.
+[SPEAKER_04]: So then we need to look this GWAS business
+first.
+[SPEAKER_04]: So GWAS start from humans.
+[SPEAKER_04]: Eric Lander, he's the number one.
+[SPEAKER_04]: More publication than Darwin.
+[SPEAKER_04]: So then in his publication, he used like a
+structure, the human population.
+[SPEAKER_04]: So then you can look within family,
+try to look at those associations.
+[SPEAKER_04]: So then that remove the structure.
+[SPEAKER_04]: So that works.
+[SPEAKER_04]: But that data is limited.
+[SPEAKER_04]: Especially animal and plant, we don't have
+that structure.
+[SPEAKER_04]: So then Richard, he's also connected.
+[SPEAKER_04]: At Stanford, you meant this Q method,
+then quickly drop that false positive
+[SPEAKER_04]: down, but not completely.
+[SPEAKER_04]: And that approach is a slow and pressing,
+however, using principle component tries
+[SPEAKER_04]: to speed up.
+[SPEAKER_04]: But this is still have, for the strong
+population, is a bigger problem.
+[SPEAKER_04]: Now until at this group, Jianming Yu,
+he has written, visited Morrison Hall and
+[SPEAKER_04]: we meet together, we talk about these
+things, help him quickly publish the next
+[SPEAKER_04]: paper.
+[SPEAKER_04]: Okay, so then Jianming's approach is for
+the gene, GWAS community, now everybody,
+[SPEAKER_04]: you have a standard, you have a null
+distribution.
+[SPEAKER_04]: It's not something inflated.
+[SPEAKER_04]: Then you can, Bofroni doesn't matter.
+[SPEAKER_04]: Yeah, every marker, I have probably 10 to
+the minus 20.
+[SPEAKER_04]: Then how you divide by million Bofroni
+tests will work, no.
+[SPEAKER_04]: Then Jianming's contribution is get the
+whole community under control.
+[SPEAKER_04]: Okay, so then of course, that makes the
+model process, the big problem is the
+[SPEAKER_04]: computing.
+[SPEAKER_04]: Then the good things, community can help.
+[SPEAKER_04]: You see on the left side, they all focus
+on solving Jianming's problem,
+[SPEAKER_04]: computing speed.
+[SPEAKER_04]: And they are publishing very good profile
+journal, like Plus Genetics or Nitrogen
+[SPEAKER_04]: and whatever.
+[SPEAKER_04]: Then the question, okay, how we can make a
+further improvement on Jianming's cube
+[SPEAKER_04]: plastic model.
+[SPEAKER_04]: So that means we are not only control
+false positive, but also we want to
+[SPEAKER_04]: control false negative.
+[SPEAKER_04]: So then we see paper continue to come up
+with a different strategy, including three
+[SPEAKER_04]: methods that's very different from red.
+[SPEAKER_04]: One is called MLMM, multiple loss and
+mixed model.
+[SPEAKER_04]: And the last two, farm speed and bidding.
+[SPEAKER_04]: So they use multiple lockers.
+[SPEAKER_04]: So they have a dramatic and different
+power than the rest.
+[SPEAKER_04]: So far, we tested bidding, still ranked
+the number one.
+[SPEAKER_04]: You can test that very easily.
+[SPEAKER_04]: You go to my website, you click on
+research, then you will find the GWAS,
+[SPEAKER_04]: there is R code, they are just less than
+10.
+[SPEAKER_04]: You copy paste it, then about like a few
+minutes, then on your working directory,
+[SPEAKER_04]: you will have this graph.
+[SPEAKER_04]: So this graph simulated like a 20 genes.
+[SPEAKER_04]: Then try to see with a different model.
+[SPEAKER_04]: For example, you can tell those model
+easily, just tell which one to use.
+[SPEAKER_04]: Then it generates graph.
+[SPEAKER_04]: For example, you start from like a simple
+model, like a general linear model,
+[SPEAKER_04]: or miss the linear model, like cube
+plastic.
+[SPEAKER_04]: So they can find about five or six.
+[SPEAKER_04]: But when you move to the bottom,
+when the farm speed or bidding,
+[SPEAKER_04]: you can easily get that one double.
+[SPEAKER_04]: You can find 12, like those non-gene.
+[SPEAKER_04]: So then these different methods.
+[SPEAKER_04]: And for a particular user, for example,
+you work on biology, you do not read a lot
+[SPEAKER_04]: of these methods, comparisons,
+confusing.
+[SPEAKER_04]: Then you can always do it by yourself.
+[SPEAKER_04]: You have data.
+[SPEAKER_04]: Then you just do not use that to fix it,
+just run again and again.
+[SPEAKER_04]: So then you will see which model find more
+genes in your data.
+[SPEAKER_04]: And you can also change your model,
+for example, change different number of
+[SPEAKER_04]: principal components.
+[SPEAKER_04]: You can also see which one fit to the
+database.
+[SPEAKER_04]: So then we see different methodology.
+[SPEAKER_04]: Then we see different package,
+for example, including the parcel from
+[SPEAKER_04]: Addis group.
+[SPEAKER_04]: Then Gabby also initiated from Addis
+group.
+[SPEAKER_04]: So now I take care of that one.
+[SPEAKER_04]: So then everything, this is the model we
+implement into the Gabby.
+[SPEAKER_04]: So it just tell model equals whatever.
+[SPEAKER_04]: Okay, a bunch of them.
+[SPEAKER_04]: Then we also have this app head,
+not app head.
+[SPEAKER_04]: Okay, but they have the same philosophy.
+[SPEAKER_04]: Try to make it easier.
+[SPEAKER_04]: This one have a graphic user interface.
+[SPEAKER_04]: In term of how we can incorporate this
+GWAS result into prediction.
+[SPEAKER_04]: So then we try to see what about we
+improve the method, whether we can improve
+[SPEAKER_04]: that one.
+[SPEAKER_04]: So then we can see on the left side,
+that's the G block without incorporation
+[SPEAKER_04]: GWAS result.
+[SPEAKER_04]: But when we incorporate the GLM mixed
+learning model, we see the accuracy
+[SPEAKER_04]: increase.
+[SPEAKER_04]: And even with a further increase on the
+very right, you use the bidding,
+[SPEAKER_04]: you find more true genes, then you have a
+much better accuracy.
+[SPEAKER_04]: Of course, when I sometimes I say,
+I actually means I refer to myself and
+[SPEAKER_04]: also my collaborators and especially the
+people of the real hero, they did the
+[SPEAKER_04]: work.
+[SPEAKER_04]: That's the same graph when I practice my
+job interview for this position with
+[SPEAKER_04]: Addis.
+[SPEAKER_04]: I show this graph to Addis.
+[SPEAKER_04]: That's how it looks in Pullman.
+[SPEAKER_04]: So that's the landscape we have.
+[SPEAKER_04]: Maybe one village in New York,
+they have more trees than the whole area
+[SPEAKER_04]: we have.
+[SPEAKER_04]: Okay, very sunny.
+[SPEAKER_04]: You can see easily the landscape.
+[SPEAKER_04]: With that, I will try to answer some
+questions you have.
+[SPEAKER_03]: What do you think the opportunities,
+we're kind of coming from the bottom up,
+[SPEAKER_03]: that identify all the variants?
+[SPEAKER_03]: How do you think that starts fitting into
+these types of models?
+[SPEAKER_03]: We don't know what the variants do,
+we just think they're causal.
+[SPEAKER_03]: So how do you think these models can work
+with causal variants in this
+[SPEAKER_03]: directionality?
+[SPEAKER_04]: One simple, for example, you're amazed
+with that 5,000 land races from Mexico,
+[SPEAKER_04]: then you show there is a thousand genes
+control flowering time.
+[SPEAKER_04]: If you do flowering time prediction,
+compared to use the whole genome SMP,
+[SPEAKER_04]: with them equally build a kinship between
+the traditional G block if you gave a
+[SPEAKER_04]: different weight for those thousand genes,
+then you will definitely get better.
+[SPEAKER_04]: By the way, thank you very much for that
+project.
+[SPEAKER_04]: So that saved me a publication for the
+Beading.
+[SPEAKER_04]: When I try to publish the Beading paper,
+it's reviewed by Nature Genetics.
+[SPEAKER_04]: But when they see the real samples on
+those 3,000 lines, they find 45,
+[SPEAKER_04]: the association compared with the previous
+method, like a pharmacy view, that's only
+[SPEAKER_04]: 15, three times increase, then they get
+scared, they don't publish that one.
+[SPEAKER_04]: So then the paper was rejected everywhere
+I can submit.
+[SPEAKER_04]: So until you publish that paper,
+you show there is thousand gene control
+[SPEAKER_04]: means flowering time, then I say,
+oh, my chance.
+[SPEAKER_04]: So I just use yours, I divide the whole
+genome into those gene area and non-gene
+[SPEAKER_04]: area.
+[SPEAKER_04]: I want to see my 45 gene, whether I have a
+more chance landed on your gene area,
+[SPEAKER_04]: actually is getting dramatically enriched.
+[SPEAKER_04]: Finally, I published that paper with that
+enrichment.
+[SPEAKER_03]: Yeah,
+[SPEAKER_04]: without you, then nobody can use Beading.
+[SPEAKER_01]: You presented some results, at least as I
+understand it, where you kind of take GWAS
+[SPEAKER_01]: and then you use GWAS to, I guess,
+in one side, you treat those part of the
+[SPEAKER_01]: genome creation.
+[SPEAKER_01]: I mean, how does that compare to some of
+the Bayesian methodologies where you
+[SPEAKER_01]: assume mixtures, you let the model itself
+kind of sort it out, potentially even use
+[SPEAKER_01]: GWAS as a prior review?
+[SPEAKER_01]: Have you done those kind of comparison?
+[SPEAKER_04]: Yeah, the question is the incorporation I
+show here is different GWAS method with
+[SPEAKER_04]: the G block.
+[SPEAKER_04]: And those GWAS result was incorporated as
+the covariate in that model.
+[SPEAKER_04]: And my guess is if you do the same thing
+for the Bayesian model, you treat all the
+[SPEAKER_04]: markers as a random effect, but you add
+some fixed effect, just as the way we did
+[SPEAKER_04]: in the G model.
+[SPEAKER_04]: And that should increase the accuracy of
+the Bayesian approach, whatever the
+[SPEAKER_04]: Bayesian it is.
+[SPEAKER_01]: But even beyond just having the fixed
+effects, right?
+[SPEAKER_01]: So let's take Bayes R, for example,
+where we have mixtures of normal.
+[SPEAKER_01]: I mean, have you thought about looking at
+GWAS hits and having that influence prior
+[SPEAKER_01]: probability of which normal distribution
+markers might sort out?
+[SPEAKER_04]: So I think you are looking for a different
+way of incorporation.
+[SPEAKER_04]: So my way is trying to incorporate simply
+as the covariate with the fixed effect.
+[SPEAKER_04]: And of course, you can incorporate a
+different way.
+[SPEAKER_04]: You can also treat them as different
+weight or different distribution as they
+[SPEAKER_04]: are the random effect.
+[SPEAKER_04]: That's still possible.
+[SPEAKER_04]: Okay, yeah.
+[SPEAKER_02]: Okay,
+[SPEAKER_04]: so the question is, when we do the cross
+validation for that dividing the entire
+[SPEAKER_04]: population into different fold,
+is that randomly whether you have other
+[SPEAKER_04]: way to do the dividing?
+[SPEAKER_04]: Yes, of course.
+[SPEAKER_04]: There are a lot of ways.
+[SPEAKER_04]: Chronically, for example, you can buy
+different, for example, like an animal,
+[SPEAKER_04]: they have a different family.
+[SPEAKER_04]: Then for the breeding material,
+you can come from like a different
+[SPEAKER_04]: breeding material.
+[SPEAKER_04]: You can based on some existing knowledge.
+[SPEAKER_04]: So then you talk about another way is
+based on the phenotype.
+[SPEAKER_04]: Yeah, this one, I don't have a very clear
+answer.
+[SPEAKER_04]: Because this one you touch your phenotype
+at the very beginning.
+[SPEAKER_04]: So then that maybe has a problem.
+[SPEAKER_04]: I need to think about whether one I can
+divide based on the fold, then have the
+[SPEAKER_04]: different category.
+[SPEAKER_02]: Thank you again.
+[SPEAKER_00]: This has been a production of Cornell
+University on the web at Cornell.edu.
+[SPEAKER_00]: Thank you.
+[SPEAKER_00]: Thank you.
+Thank you.

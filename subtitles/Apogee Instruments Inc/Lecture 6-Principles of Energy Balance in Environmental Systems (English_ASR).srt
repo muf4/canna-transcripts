@@ -1,0 +1,4708 @@
+1
+00:00:01,439 --> 00:00:09,679
+So welcome to lecture six in this
+
+2
+00:00:05,080 --> 00:00:12,480
+series. Now we are up to conduction and
+
+3
+00:00:09,679 --> 00:00:17,640
+convection the the final component of
+
+4
+00:00:12,480 --> 00:00:21,719
+this energy balance analysis. And
+
+5
+00:00:17,640 --> 00:00:23,320
+because this follows the same principles
+
+6
+00:00:21,719 --> 00:00:25,839
+as
+
+7
+00:00:23,320 --> 00:00:28,160
+transpiration, there's a lot of things
+
+8
+00:00:25,839 --> 00:00:31,359
+that we it it takes less time to explain
+
+9
+00:00:28,160 --> 00:00:33,520
+this principles because it's also flux
+
+10
+00:00:31,359 --> 00:00:36,320
+is a driving gradient divided by the
+
+11
+00:00:33,520 --> 00:00:40,840
+resistance that ratio.
+
+12
+00:00:36,320 --> 00:00:43,359
+Remember in the case of the psychometric
+
+13
+00:00:40,840 --> 00:00:45,040
+chart we spent a lot of time talking
+
+14
+00:00:43,359 --> 00:00:49,159
+about how to calculate the driving
+
+15
+00:00:45,039 --> 00:00:53,238
+gradient the leaf to air vapor pressure
+
+16
+00:00:49,159 --> 00:00:55,679
+difference. That's requires some
+
+17
+00:00:53,238 --> 00:00:58,640
+calculations in the case of conduction
+
+18
+00:00:55,679 --> 00:01:02,000
+and convection. However, this is real
+
+19
+00:00:58,640 --> 00:01:04,558
+simple because the numerator is just the
+
+20
+00:01:02,000 --> 00:01:08,640
+delta T, the delta temperature between
+
+21
+00:01:04,558 --> 00:01:10,239
+the object and the air. So, it's uh if
+
+22
+00:01:08,640 --> 00:01:12,719
+you know air temperature and you know
+
+23
+00:01:10,239 --> 00:01:17,199
+the surface temperature, both of which
+
+24
+00:01:12,719 --> 00:01:20,118
+we measure, we we know the numerator for
+
+25
+00:01:17,200 --> 00:01:23,600
+sensible heat. So, in a
+
+26
+00:01:20,118 --> 00:01:26,000
+minute I'm going to talk about how we
+
+27
+00:01:23,599 --> 00:01:30,239
+calculate the resistance. Now this is
+
+28
+00:01:26,000 --> 00:01:32,640
+much more complex in uh um conduction
+
+29
+00:01:30,239 --> 00:01:34,879
+and convection. It's complex in
+
+30
+00:01:32,640 --> 00:01:38,239
+transpiration too because this is to
+
+31
+00:01:34,879 --> 00:01:41,118
+model opening a biological phenomena.
+
+32
+00:01:38,239 --> 00:01:43,759
+But here it's it's physical phenomena
+
+33
+00:01:41,118 --> 00:01:46,920
+that determine that. So let me take a
+
+34
+00:01:43,759 --> 00:01:49,759
+tiny sidebar before I talk about that.
+
+35
+00:01:46,920 --> 00:01:52,399
+Um, we've pulled up here the
+
+36
+00:01:49,759 --> 00:01:54,719
+Environmental Observatory on the Utah
+
+37
+00:01:52,399 --> 00:01:58,159
+State University campus. And here is a
+
+38
+00:01:54,719 --> 00:01:59,759
+live camera showing it. Um, and if we
+
+39
+00:01:58,159 --> 00:02:01,840
+watch this long enough, some student
+
+40
+00:01:59,759 --> 00:02:06,640
+will walk through the picture right
+
+41
+00:02:01,840 --> 00:02:09,200
+here. Um, this has a whole series of
+
+42
+00:02:06,640 --> 00:02:11,520
+graphs that demonstrate all of these
+
+43
+00:02:09,199 --> 00:02:13,199
+principles. It's got net radiometers,
+
+44
+00:02:11,520 --> 00:02:16,719
+long wave. We talked about this in a
+
+45
+00:02:13,199 --> 00:02:19,000
+previous lecture. Uh, but here's the
+
+46
+00:02:16,719 --> 00:02:21,039
+current past two days of
+
+47
+00:02:19,000 --> 00:02:21,959
+temperature. Yeah, there's some people
+
+48
+00:02:21,039 --> 00:02:25,199
+coming
+
+49
+00:02:21,959 --> 00:02:27,959
+by. And what's fascinating around here
+
+50
+00:02:25,199 --> 00:02:31,598
+is this blue line is
+
+51
+00:02:27,959 --> 00:02:34,120
+campus. The red line is where we're at
+
+52
+00:02:31,598 --> 00:02:39,679
+right now, which is the middle of the
+
+53
+00:02:34,120 --> 00:02:42,000
+valley. And the red line is Airport CSI.
+
+54
+00:02:39,680 --> 00:02:43,920
+And if we tell people Campbell
+
+55
+00:02:42,000 --> 00:02:46,318
+Scientific, not everyone in the valley
+
+56
+00:02:43,919 --> 00:02:47,799
+knows where Campbell Scientific is. So
+
+57
+00:02:46,318 --> 00:02:50,639
+we put
+
+58
+00:02:47,800 --> 00:02:53,120
+airport/CFSI, but the data from CSI is
+
+59
+00:02:50,639 --> 00:02:55,199
+far superior to the airport data. So we
+
+60
+00:02:53,120 --> 00:02:57,759
+don't actually use the airport data. We
+
+61
+00:02:55,199 --> 00:02:59,919
+use the CSI data, but we tell them it's
+
+62
+00:02:57,759 --> 00:03:01,679
+the airport. That's why it says airport
+
+63
+00:02:59,919 --> 00:03:04,559
+CSI.
+
+64
+00:03:01,680 --> 00:03:06,400
+But this night, like so many other
+
+65
+00:03:04,560 --> 00:03:08,479
+nights around here, is just everything
+
+66
+00:03:06,400 --> 00:03:10,400
+the our weather because of our changes
+
+67
+00:03:08,479 --> 00:03:12,318
+in elevation in our valley are just
+
+68
+00:03:10,400 --> 00:03:14,480
+fascinating. Here's the green line,
+
+69
+00:03:12,318 --> 00:03:17,119
+which is the top of Logan Peak. And
+
+70
+00:03:14,479 --> 00:03:20,000
+anyone can walk outside and see this
+
+71
+00:03:17,120 --> 00:03:22,840
+weather station up there. We're in July.
+
+72
+00:03:20,000 --> 00:03:25,759
+It's finally getting warmer on Logan
+
+73
+00:03:22,840 --> 00:03:28,719
+Peak. But look at the difference between
+
+74
+00:03:25,759 --> 00:03:32,959
+Campus and Campbell Scientific. And
+
+75
+00:03:28,719 --> 00:03:35,680
+we're at maybe 4° C colder in the middle
+
+76
+00:03:32,959 --> 00:03:40,799
+of the valley last night. And look at
+
+77
+00:03:35,680 --> 00:03:44,239
+this night. Last night we got to 9° C
+
+78
+00:03:40,799 --> 00:03:48,120
+here at Apogee and Campbell Scientific.
+
+79
+00:03:44,239 --> 00:03:52,759
+Right, which are right together. Oops.
+
+80
+00:03:48,120 --> 00:03:55,519
+And campus only got to 16. There was a
+
+81
+00:03:52,759 --> 00:03:58,959
+9° Celsius difference in temperature
+
+82
+00:03:55,519 --> 00:04:02,560
+last night, which is an inversion. And
+
+83
+00:03:58,959 --> 00:04:05,120
+it was colder here. An inversion would
+
+84
+00:04:02,560 --> 00:04:07,920
+trap the air and potentially we'd have
+
+85
+00:04:05,120 --> 00:04:09,680
+polluted air. But the sun came up and it
+
+86
+00:04:07,919 --> 00:04:12,958
+warmed it right up. And a few hours
+
+87
+00:04:09,680 --> 00:04:16,079
+later, the inversion went away. And this
+
+88
+00:04:12,959 --> 00:04:18,238
+is the summer. In the winter, these red
+
+89
+00:04:16,079 --> 00:04:20,959
+and blue lines get below the green line
+
+90
+00:04:18,238 --> 00:04:23,519
+and stay there for days at a time. But
+
+91
+00:04:20,959 --> 00:04:25,519
+this is a fascinating difference. And
+
+92
+00:04:23,519 --> 00:04:28,159
+what happens up in the top of Mount
+
+93
+00:04:25,519 --> 00:04:30,000
+Logan is it just never warms up. Here we
+
+94
+00:04:28,160 --> 00:04:33,199
+warm up to 30 in the day and there
+
+95
+00:04:30,000 --> 00:04:35,160
+they're barely warming up to 16 or 18 in
+
+96
+00:04:33,199 --> 00:04:39,120
+the day. That's just the
+
+97
+00:04:35,160 --> 00:04:41,840
+temperature. Um this shows wind speed,
+
+98
+00:04:39,120 --> 00:04:44,319
+barometric pressure, and then solar
+
+99
+00:04:41,839 --> 00:04:46,000
+radiation. These are nice clear days.
+
+100
+00:04:44,319 --> 00:04:48,399
+You can see this is getting to a
+
+101
+00:04:46,000 --> 00:04:50,079
+th00and. It looks like we looked out the
+
+102
+00:04:48,399 --> 00:04:52,719
+window. I guess there ought to be a few
+
+103
+00:04:50,079 --> 00:04:54,000
+clouds. And there's a few clouds. If you
+
+104
+00:04:52,720 --> 00:04:55,520
+have this, you actually don't have to
+
+105
+00:04:54,000 --> 00:04:57,279
+look out the window. You can just see
+
+106
+00:04:55,519 --> 00:05:01,399
+what's going on outside by looking at
+
+107
+00:04:57,279 --> 00:05:03,679
+the graph. Um, here clouds. Now we're at
+
+108
+00:05:01,399 --> 00:05:06,719
+1,116. There's some reflection off the
+
+109
+00:05:03,680 --> 00:05:08,800
+clouds. We're going above our thousand
+
+110
+00:05:06,720 --> 00:05:12,520
+watts per meter squared. This is where
+
+111
+00:05:08,800 --> 00:05:14,879
+it's located on the campus.
+
+112
+00:05:12,519 --> 00:05:16,399
+Um, let's let's look at a few of these
+
+113
+00:05:14,879 --> 00:05:19,000
+because they demonstrate some of these
+
+114
+00:05:16,399 --> 00:05:21,758
+principles so well.
+
+115
+00:05:19,000 --> 00:05:24,319
+Dupoint and humidity. There's the air
+
+116
+00:05:21,759 --> 00:05:27,120
+temperature and the dupoint temperature.
+
+117
+00:05:24,319 --> 00:05:29,759
+We have dry air. So the dupoint actually
+
+118
+00:05:27,120 --> 00:05:32,840
+is below zero some of the time. Look at
+
+119
+00:05:29,759 --> 00:05:35,680
+this. Absolute humidity, relative
+
+120
+00:05:32,839 --> 00:05:37,918
+humidity. Absolute humidity has a few
+
+121
+00:05:35,680 --> 00:05:40,800
+fluctuations, but day and night it's
+
+122
+00:05:37,918 --> 00:05:43,680
+generally a flat line at about five or
+
+123
+00:05:40,800 --> 00:05:46,720
+six grams per cubic meter. relative
+
+124
+00:05:43,680 --> 00:05:49,400
+humidity down in the day, up at night,
+
+125
+00:05:46,720 --> 00:05:52,479
+down cycles because of air
+
+126
+00:05:49,399 --> 00:05:54,638
+temperature. Uh after you get these
+
+127
+00:05:52,478 --> 00:05:56,959
+principles, you just love seeing how
+
+128
+00:05:54,639 --> 00:06:00,879
+they work and interpreting the data on
+
+129
+00:05:56,959 --> 00:06:03,198
+this thing. All of these graphs have one
+
+130
+00:06:00,879 --> 00:06:05,839
+day and then you can call up the past
+
+131
+00:06:03,199 --> 00:06:08,800
+seven days. We're working on a new
+
+132
+00:06:05,839 --> 00:06:10,560
+revision of this that's a lot more
+
+133
+00:06:08,800 --> 00:06:14,639
+sophisticated. that that the whole
+
+134
+00:06:10,560 --> 00:06:17,439
+campus is going to a better internet um
+
+135
+00:06:14,639 --> 00:06:19,439
+uh display that will oh this will
+
+136
+00:06:17,439 --> 00:06:23,759
+automatically scale to fill people's
+
+137
+00:06:19,439 --> 00:06:26,160
+screens um much nicer um we talked about
+
+138
+00:06:23,759 --> 00:06:28,439
+barometric pressure how much that varies
+
+139
+00:06:26,160 --> 00:06:32,000
+let's call that
+
+140
+00:06:28,439 --> 00:06:34,800
+up this is one day this is adjusted to
+
+141
+00:06:32,000 --> 00:06:37,360
+sea level everybody adjusts to sea level
+
+142
+00:06:34,800 --> 00:06:40,160
+so we can make maps of the pressures
+
+143
+00:06:37,360 --> 00:06:42,080
+highs and lows Even though this is here,
+
+144
+00:06:40,160 --> 00:06:44,160
+it's corrected to sea level. So the
+
+145
+00:06:42,079 --> 00:06:47,359
+barometric pressure is going down. This
+
+146
+00:06:44,160 --> 00:06:49,840
+is more interesting in 7 days. These are
+
+147
+00:06:47,360 --> 00:06:51,600
+electronic barometers. So it goes up. We
+
+148
+00:06:49,839 --> 00:06:54,638
+were at a real high pressure. Now we're
+
+149
+00:06:51,600 --> 00:06:56,720
+going down over the past seven days as
+
+150
+00:06:54,639 --> 00:06:58,598
+those fronts come through. One of the
+
+151
+00:06:56,720 --> 00:07:03,319
+most interesting things about this
+
+152
+00:06:58,598 --> 00:07:05,319
+station is carbon dioxide
+
+153
+00:07:03,319 --> 00:07:08,520
+concentration. That's
+
+154
+00:07:05,319 --> 00:07:11,319
+wind. There we go.
+
+155
+00:07:08,519 --> 00:07:15,038
+Here's CO2 on
+
+156
+00:07:11,319 --> 00:07:19,439
+campus. So, we're coming along here, low
+
+157
+00:07:15,038 --> 00:07:21,839
+400 ppm, and a big spike here. And
+
+158
+00:07:19,439 --> 00:07:24,000
+another big spike here. Is that people
+
+159
+00:07:21,839 --> 00:07:26,598
+breathing on this sensor? People driving
+
+160
+00:07:24,000 --> 00:07:30,959
+their cars by the sensor?
+
+161
+00:07:26,598 --> 00:07:33,519
+No. This is canyon winds.
+
+162
+00:07:30,959 --> 00:07:35,598
+The canyon winds come out of the canyon
+
+163
+00:07:33,519 --> 00:07:38,079
+and they have clean air out of right out
+
+164
+00:07:35,598 --> 00:07:40,560
+of the cash national forest. The all
+
+165
+00:07:38,079 --> 00:07:44,680
+that photosynthesis cleans the air. And
+
+166
+00:07:40,560 --> 00:07:47,240
+look what happened here. 900 p.m. The
+
+167
+00:07:44,680 --> 00:07:50,319
+wind this is this is
+
+168
+00:07:47,240 --> 00:07:52,560
+uh the wind shifted. Right here is
+
+169
+00:07:50,319 --> 00:07:56,960
+canyon wind. 90° is coming out of the
+
+170
+00:07:52,560 --> 00:07:59,439
+canyon. That canyon wind died about 7:30
+
+171
+00:07:56,959 --> 00:08:03,680
+this morning and it shifted and we got a
+
+172
+00:07:59,439 --> 00:08:07,038
+puff of wind from downtown Logan and it
+
+173
+00:08:03,680 --> 00:08:09,759
+spiked the CO2 and we got another spike
+
+174
+00:08:07,038 --> 00:08:12,079
+here and now finally it's all the
+
+175
+00:08:09,759 --> 00:08:15,598
+valleys clearing out. We see this every
+
+176
+00:08:12,079 --> 00:08:18,159
+day. The canyon wind is low CO2 because
+
+177
+00:08:15,598 --> 00:08:21,038
+of photosynthesis in the summer and then
+
+178
+00:08:18,160 --> 00:08:24,360
+the canyon wind dies and the valley air
+
+179
+00:08:21,038 --> 00:08:27,199
+shifts up and we get a spike in
+
+180
+00:08:24,360 --> 00:08:28,800
+CO2 and partly that's governed by
+
+181
+00:08:27,199 --> 00:08:31,360
+photosynthesis. So here's the
+
+182
+00:08:28,800 --> 00:08:35,120
+photosynthetic photon flux that drives
+
+183
+00:08:31,360 --> 00:08:35,120
+that and then wind
+
+184
+00:08:35,479 --> 00:08:43,278
+speed surface temperature.
+
+185
+00:08:38,719 --> 00:08:43,278
+We talk about calculating surface
+
+186
+00:08:43,720 --> 00:08:47,839
+temperature. Most people don't realize
+
+187
+00:08:46,080 --> 00:08:49,759
+how different surface temperatures can
+
+188
+00:08:47,839 --> 00:08:53,279
+be than air temperatures. We're talking
+
+189
+00:08:49,759 --> 00:08:56,720
+about delta T right here for uh driving
+
+190
+00:08:53,278 --> 00:08:59,919
+conduction and convection. This is two
+
+191
+00:08:56,720 --> 00:09:02,600
+replicate apogee infrared sensors and
+
+192
+00:08:59,919 --> 00:09:06,799
+the red and green line pointing east and
+
+193
+00:09:02,600 --> 00:09:09,278
+west. Um what?
+
+194
+00:09:06,799 --> 00:09:12,000
+Pointing at what? Uh the ground surface
+
+195
+00:09:09,278 --> 00:09:15,200
+grass. Grass. Yes. This is irrigated
+
+196
+00:09:12,000 --> 00:09:17,679
+turf. Yep. So, let's jump back and we'll
+
+197
+00:09:15,200 --> 00:09:17,680
+come back to
+
+198
+00:09:18,120 --> 00:09:22,799
+this. If it should call up here in a
+
+199
+00:09:20,879 --> 00:09:25,360
+second and I can show you exactly what
+
+200
+00:09:22,799 --> 00:09:25,359
+they're pointing
+
+201
+00:09:26,200 --> 00:09:32,200
+at. Not coming up, but they're they're
+
+202
+00:09:28,879 --> 00:09:36,080
+pointing at the irrigated
+
+203
+00:09:32,200 --> 00:09:38,320
+turf surface temperature.
+
+204
+00:09:36,080 --> 00:09:40,879
+So last night, and we're going to talk
+
+205
+00:09:38,320 --> 00:09:43,839
+about this in a minute, way below air
+
+206
+00:09:40,879 --> 00:09:46,080
+temperature, several degrees C, below
+
+207
+00:09:43,839 --> 00:09:48,080
+air temperature. It was a clear night.
+
+208
+00:09:46,080 --> 00:09:50,160
+They're radiating to outer space, so
+
+209
+00:09:48,080 --> 00:09:52,639
+they get cold. The sun comes up and
+
+210
+00:09:50,159 --> 00:09:57,879
+suddenly they're warmer. And today,
+
+211
+00:09:52,639 --> 00:10:01,039
+we're only getting 4° C above air
+
+212
+00:09:57,879 --> 00:10:04,159
+temperature, but I have seen this go as
+
+213
+00:10:01,039 --> 00:10:07,199
+high as 10 degrees C above air
+
+214
+00:10:04,159 --> 00:10:09,838
+temperature. the turf grass surface
+
+215
+00:10:07,200 --> 00:10:13,040
+compared to the air temperature. So, it
+
+216
+00:10:09,839 --> 00:10:15,279
+tells you how big these surface
+
+217
+00:10:13,039 --> 00:10:18,039
+temperature fluxes can be. And this is
+
+218
+00:10:15,278 --> 00:10:21,600
+irrigated, too. It's it's
+
+219
+00:10:18,039 --> 00:10:21,599
+uh lush and
+
+220
+00:10:23,320 --> 00:10:27,640
+irrigated. One of the comparisons that
+
+221
+00:10:26,240 --> 00:10:31,200
+we do up there
+
+222
+00:10:27,639 --> 00:10:33,319
+is between shields.
+
+223
+00:10:31,200 --> 00:10:35,720
+This is a graph
+
+224
+00:10:33,320 --> 00:10:38,480
+of replicate
+
+225
+00:10:35,720 --> 00:10:40,560
+matching tiny yellow bead thermisters.
+
+226
+00:10:38,480 --> 00:10:44,000
+One of them is in a traditional gill
+
+227
+00:10:40,559 --> 00:10:46,679
+shield and one of them is in an apogee
+
+228
+00:10:44,000 --> 00:10:50,799
+aspirated shield. So this is the last 24
+
+229
+00:10:46,679 --> 00:10:53,759
+hours. And you can see at night they're
+
+230
+00:10:50,799 --> 00:10:56,719
+virtually identical and there's no flux.
+
+231
+00:10:53,759 --> 00:10:59,039
+And here's the temperature differences
+
+232
+00:10:56,720 --> 00:11:01,759
+in the day. And yesterday for a little
+
+233
+00:10:59,039 --> 00:11:03,439
+bit we had 3° C difference but most of
+
+234
+00:11:01,759 --> 00:11:06,000
+the time it was down around to one
+
+235
+00:11:03,440 --> 00:11:08,920
+degree C difference. And this is a small
+
+236
+00:11:06,000 --> 00:11:13,759
+sensor inside that
+
+237
+00:11:08,919 --> 00:11:13,759
+shield. So we can track that. See the
+
+238
+00:11:13,799 --> 00:11:19,039
+differences. Net radiation. We already
+
+239
+00:11:16,480 --> 00:11:21,120
+talked about this. Um this is all the
+
+240
+00:11:19,039 --> 00:11:23,599
+principles and all the calculations.
+
+241
+00:11:21,120 --> 00:11:27,278
+This is intermittent clouds going on
+
+242
+00:11:23,600 --> 00:11:30,240
+right here. Here's albido of that grass
+
+243
+00:11:27,278 --> 00:11:33,600
+up there through the day. And what did
+
+244
+00:11:30,240 --> 00:11:36,399
+we say? 23 about for albidos. You know,
+
+245
+00:11:33,600 --> 00:11:38,159
+this is just a hair above two. It's
+
+246
+00:11:36,399 --> 00:11:40,159
+slightly higher in the morning and it
+
+247
+00:11:38,159 --> 00:11:41,719
+goes down slightly in the afternoon.
+
+248
+00:11:40,159 --> 00:11:45,919
+Right now it's
+
+249
+00:11:41,720 --> 00:11:45,920
+21 albido of that turf
+
+250
+00:11:45,958 --> 00:11:50,000
+grass. What else do you want to look at?
+
+251
+00:11:48,078 --> 00:11:51,838
+One of the unique features of this is a
+
+252
+00:11:50,000 --> 00:11:54,480
+atmospheric visibility. This is a
+
+253
+00:11:51,839 --> 00:11:57,040
+Campbell scientific sensor. Um, most of
+
+254
+00:11:54,480 --> 00:11:59,839
+the time it's very clear something a
+
+255
+00:11:57,039 --> 00:12:02,240
+fleck of something got in there to for
+
+256
+00:11:59,839 --> 00:12:05,440
+these downward spikes. 32 kilometers is
+
+257
+00:12:02,240 --> 00:12:07,120
+the max. That's real clean air. This is
+
+258
+00:12:05,440 --> 00:12:10,000
+something that we watch a lot in the
+
+259
+00:12:07,120 --> 00:12:11,839
+winter when we have inversions. How how
+
+260
+00:12:10,000 --> 00:12:13,839
+low does the visibility go? And this
+
+261
+00:12:11,839 --> 00:12:18,160
+I've seen this in the worst days of
+
+262
+00:12:13,839 --> 00:12:19,760
+winter to go down here to five and 10
+
+263
+00:12:18,159 --> 00:12:21,439
+and then the inversion blows out and
+
+264
+00:12:19,759 --> 00:12:23,639
+it's clear again. It's interesting
+
+265
+00:12:21,440 --> 00:12:26,000
+because those lasers are tuned to
+
+266
+00:12:23,639 --> 00:12:28,799
+water. So, we've always been curious to
+
+267
+00:12:26,000 --> 00:12:31,200
+know what you end up with. Yeah. Not
+
+268
+00:12:28,799 --> 00:12:34,078
+supposed to detect a small.
+
+269
+00:12:31,200 --> 00:12:36,000
+Well, this one is the reflection of
+
+270
+00:12:34,078 --> 00:12:38,719
+light. This the question is these are
+
+271
+00:12:36,000 --> 00:12:40,958
+tuned for water and would they affect
+
+272
+00:12:38,720 --> 00:12:43,600
+other things? This one's the reflection
+
+273
+00:12:40,958 --> 00:12:46,879
+of light off of particles which is
+
+274
+00:12:43,600 --> 00:12:49,278
+highly correlated with human vision.
+
+275
+00:12:46,879 --> 00:12:52,519
+So the Campbell Scientific England
+
+276
+00:12:49,278 --> 00:12:55,838
+people are expected to pick
+
+277
+00:12:52,519 --> 00:12:58,278
+up particles in the air, not just water
+
+278
+00:12:55,839 --> 00:13:00,399
+vapor. It's any kind of
+
+279
+00:12:58,278 --> 00:13:02,480
+particles. It's not too interesting
+
+280
+00:13:00,399 --> 00:13:04,720
+because it's summer. Here's seven days.
+
+281
+00:13:02,480 --> 00:13:06,680
+There's a few spikes. It's summer, but
+
+282
+00:13:04,720 --> 00:13:09,320
+it's pretty
+
+283
+00:13:06,679 --> 00:13:13,078
+constant.
+
+284
+00:13:09,320 --> 00:13:15,519
+Um temperature, thermister shield, solar
+
+285
+00:13:13,078 --> 00:13:17,039
+radiation. That's just the shortwave
+
+286
+00:13:15,519 --> 00:13:19,519
+radiation. I think we looked at that.
+
+287
+00:13:17,039 --> 00:13:22,078
+This is multiple replicate sensors on
+
+288
+00:13:19,519 --> 00:13:26,200
+here and they're all reading very close
+
+289
+00:13:22,078 --> 00:13:28,599
+to the same thing. It's comparison of
+
+290
+00:13:26,200 --> 00:13:31,440
+technologies. This also
+
+291
+00:13:28,600 --> 00:13:34,639
+shows power budget. I won't go through
+
+292
+00:13:31,440 --> 00:13:36,880
+this thing, but for people understanding
+
+293
+00:13:34,639 --> 00:13:39,120
+solar powered stations that take a lot
+
+294
+00:13:36,879 --> 00:13:40,639
+of power, it shows the energy going into
+
+295
+00:13:39,120 --> 00:13:43,360
+the battery and coming out of the
+
+296
+00:13:40,639 --> 00:13:45,278
+battery, the battery flux night and day.
+
+297
+00:13:43,360 --> 00:13:47,360
+This station has a lot of sensors that
+
+298
+00:13:45,278 --> 00:13:49,360
+take a lot of power. So, power
+
+299
+00:13:47,360 --> 00:13:51,440
+management's a big deal and it's full of
+
+300
+00:13:49,360 --> 00:13:54,120
+algorithms to turn stuff on and off
+
+301
+00:13:51,440 --> 00:13:56,560
+depending on power
+
+302
+00:13:54,120 --> 00:13:59,320
+availability. And this is made possible
+
+303
+00:13:56,559 --> 00:14:02,479
+by the Campbell Scientific
+
+304
+00:13:59,320 --> 00:14:04,320
+CH200 U power management system that
+
+305
+00:14:02,480 --> 00:14:05,320
+gives us a lot more data than we ever
+
+306
+00:14:04,320 --> 00:14:09,120
+used to
+
+307
+00:14:05,320 --> 00:14:12,639
+have. ET and VPD, which is what we're
+
+308
+00:14:09,120 --> 00:14:14,278
+talking about. Here's calculated. Here's
+
+309
+00:14:12,639 --> 00:14:18,240
+the vapor pressure
+
+310
+00:14:14,278 --> 00:14:20,838
+deficit between just the air and then
+
+311
+00:14:18,240 --> 00:14:23,360
+between the surface and the air the turf
+
+312
+00:14:20,839 --> 00:14:26,240
+surface. So we get down to less than one
+
+313
+00:14:23,360 --> 00:14:29,278
+at night and get up to four in the day
+
+314
+00:14:26,240 --> 00:14:32,000
+and then we run the penman mont equation
+
+315
+00:14:29,278 --> 00:14:35,120
+and here's evapor transpiration
+
+316
+00:14:32,000 --> 00:14:37,360
+calculated through the day um yesterday
+
+317
+00:14:35,120 --> 00:14:41,679
+and today and then a then a long
+
+318
+00:14:37,360 --> 00:14:44,240
+discussion about ET right there. Uh,
+
+319
+00:14:41,679 --> 00:14:47,120
+this shows historical data. There's
+
+320
+00:14:44,240 --> 00:14:50,320
+there's a lot of graphs on here. Here's
+
+321
+00:14:47,120 --> 00:14:51,078
+air temp oops air temperatures the last
+
+322
+00:14:50,320 --> 00:14:53,760
+two
+
+323
+00:14:51,078 --> 00:14:59,359
+years, summer, winter, summer, winter,
+
+324
+00:14:53,759 --> 00:15:02,039
+the min and max for each day. Uh so lots
+
+325
+00:14:59,360 --> 00:15:05,879
+of data and
+
+326
+00:15:02,039 --> 00:15:09,360
+and combine climate data and and
+
+327
+00:15:05,879 --> 00:15:13,278
+uh data that the goal is to help educate
+
+328
+00:15:09,360 --> 00:15:15,199
+the campus community for weather data.
+
+329
+00:15:13,278 --> 00:15:17,799
+And so people get interested in this.
+
+330
+00:15:15,198 --> 00:15:20,359
+And because this
+
+331
+00:15:17,799 --> 00:15:23,039
+has a
+
+332
+00:15:20,360 --> 00:15:25,600
+camera, you can see when somebody stands
+
+333
+00:15:23,039 --> 00:15:27,519
+there. This is a touchscreen kiosk. Now
+
+334
+00:15:25,600 --> 00:15:31,120
+in front of this which has its own set
+
+335
+00:15:27,519 --> 00:15:33,278
+of graphs and it's particularly edifying
+
+336
+00:15:31,120 --> 00:15:36,399
+to see students come and look at that
+
+337
+00:15:33,278 --> 00:15:38,480
+and study the graphs and look at the
+
+338
+00:15:36,399 --> 00:15:40,799
+sensors and it's a it's a great
+
+339
+00:15:38,480 --> 00:15:43,159
+educational opportunity to teach people
+
+340
+00:15:40,799 --> 00:15:47,519
+about
+
+341
+00:15:43,159 --> 00:15:50,559
+weather. All right, back to uh from that
+
+342
+00:15:47,519 --> 00:15:54,278
+sidebar back to sensible heat.
+
+343
+00:15:50,559 --> 00:15:57,078
+So the numerator is delta
+
+344
+00:15:54,278 --> 00:16:01,078
+t. The
+
+345
+00:15:57,078 --> 00:16:06,359
+resistance is just is determined
+
+346
+00:16:01,078 --> 00:16:10,078
+by the thickness of a tiny layer of dead
+
+347
+00:16:06,360 --> 00:16:13,680
+air right next to all surfaces. And
+
+348
+00:16:10,078 --> 00:16:17,120
+everything has that. The this this board
+
+349
+00:16:13,679 --> 00:16:19,039
+has that. Our skin has that. And that
+
+350
+00:16:17,120 --> 00:16:23,039
+dead air is just like a thermal pane
+
+351
+00:16:19,039 --> 00:16:27,759
+window. a tiny layer that resists the
+
+352
+00:16:23,039 --> 00:16:29,000
+movement of heat. And if that layer was
+
+353
+00:16:27,759 --> 00:16:31,399
+gone
+
+354
+00:16:29,000 --> 00:16:34,639
+completely and the
+
+355
+00:16:31,399 --> 00:16:37,440
+resistance approached zero, things would
+
+356
+00:16:34,639 --> 00:16:38,959
+immediately equilibrate with the air.
+
+357
+00:16:37,440 --> 00:16:41,360
+But they never do immediately
+
+358
+00:16:38,958 --> 00:16:45,078
+equilibrate because of this little
+
+359
+00:16:41,360 --> 00:16:48,120
+resistance layer. So if we
+
+360
+00:16:45,078 --> 00:16:51,479
+take just the
+
+361
+00:16:48,120 --> 00:16:53,000
+resistance now this is called
+
+362
+00:16:51,480 --> 00:16:56,240
+resistance
+
+363
+00:16:53,000 --> 00:16:57,600
+BL boundary layer because it's a
+
+364
+00:16:56,240 --> 00:17:02,399
+thickness and what we're going to
+
+365
+00:16:57,600 --> 00:17:04,880
+calculate is how thick this airspace is.
+
+366
+00:17:02,399 --> 00:17:08,240
+It's on the order of millimeters. It's
+
+367
+00:17:04,880 --> 00:17:11,679
+not a thermal pane window might be 1 to
+
+368
+00:17:08,240 --> 00:17:15,078
+2 cm to to trap dead air. This is more
+
+369
+00:17:11,679 --> 00:17:17,480
+like 1 mil less than a
+
+370
+00:17:15,078 --> 00:17:20,119
+millimeter. So not
+
+371
+00:17:17,480 --> 00:17:22,919
+surprisingly this is
+
+372
+00:17:20,119 --> 00:17:26,479
+inversely proportional to
+
+373
+00:17:22,919 --> 00:17:28,799
+wind. That's wind speed. So there's the
+
+374
+00:17:26,480 --> 00:17:33,200
+fundamental concept. It's it's
+
+375
+00:17:28,798 --> 00:17:35,839
+proportional to wind. But like lots of
+
+376
+00:17:33,200 --> 00:17:39,038
+heat but heat transfer and a lot of
+
+377
+00:17:35,839 --> 00:17:41,359
+principles of wind. It's not directly
+
+378
+00:17:39,038 --> 00:17:43,839
+proportional. It's proportional to the
+
+379
+00:17:41,359 --> 00:17:46,240
+square root of wind. So if the wind
+
+380
+00:17:43,839 --> 00:17:49,000
+doubles, heat transfer doesn't double.
+
+381
+00:17:46,240 --> 00:17:51,240
+It goes up by the square root. So it's a
+
+382
+00:17:49,000 --> 00:17:54,160
+nonlinear function of
+
+383
+00:17:51,240 --> 00:17:56,558
+wind. But there's one other parameter
+
+384
+00:17:54,160 --> 00:18:00,200
+along with wind that's equally important
+
+385
+00:17:56,558 --> 00:18:04,079
+in here and that's in the
+
+386
+00:18:00,200 --> 00:18:10,279
+numerator. So if I put proportional
+
+387
+00:18:04,079 --> 00:18:10,279
+inversely proportional to wind, this is
+
+388
+00:18:13,558 --> 00:18:19,279
+width, the width of the object that the
+
+389
+00:18:16,640 --> 00:18:22,000
+wind is blowing over. And now in this
+
+390
+00:18:19,279 --> 00:18:24,079
+analysis, it's a flat object. We can do
+
+391
+00:18:22,000 --> 00:18:26,720
+this for cylinders and ovals and
+
+392
+00:18:24,079 --> 00:18:28,599
+different shapes. But for a flat object,
+
+393
+00:18:26,720 --> 00:18:32,558
+it's proportional to the
+
+394
+00:18:28,599 --> 00:18:35,719
+width. So as the width gets bigger, the
+
+395
+00:18:32,558 --> 00:18:39,359
+heat transfer gets less. And you can
+
+396
+00:18:35,720 --> 00:18:41,839
+imagine a pine needle would have very
+
+397
+00:18:39,359 --> 00:18:44,959
+efficient heat transfer because it's
+
+398
+00:18:41,839 --> 00:18:48,240
+thin and little and a banana leaf that's
+
+399
+00:18:44,960 --> 00:18:52,400
+a meter wide would have very bad very
+
+400
+00:18:48,240 --> 00:18:55,000
+poor heat transfer because of width. Now
+
+401
+00:18:52,400 --> 00:18:57,679
+same thing as
+
+402
+00:18:55,000 --> 00:19:01,599
+wind it's also proportional to the
+
+403
+00:18:57,679 --> 00:19:05,038
+square root of width. says these are the
+
+404
+00:19:01,599 --> 00:19:07,199
+two variables in this that determine the
+
+405
+00:19:05,038 --> 00:19:09,000
+heat transfer. They're both square roots
+
+406
+00:19:07,200 --> 00:19:14,279
+width and
+
+407
+00:19:09,000 --> 00:19:17,279
+wind because it's proportional to
+
+408
+00:19:14,279 --> 00:19:19,918
+width. Now, we look at shapes of leaves
+
+409
+00:19:17,279 --> 00:19:22,879
+and and the textbook has some examples
+
+410
+00:19:19,919 --> 00:19:26,280
+of shapes of leaves, but imagine I'm
+
+411
+00:19:22,880 --> 00:19:31,039
+going to put this up here.
+
+412
+00:19:26,279 --> 00:19:34,440
+some giant banana leaf which would have
+
+413
+00:19:31,038 --> 00:19:37,240
+poor heat transfer characteristics
+
+414
+00:19:34,440 --> 00:19:41,038
+versus some
+
+415
+00:19:37,240 --> 00:19:43,079
+leaf that might look like that. This has
+
+416
+00:19:41,038 --> 00:19:45,038
+much better heat transfer
+
+417
+00:19:43,079 --> 00:19:47,279
+characteristics. And in fact, how about
+
+418
+00:19:45,038 --> 00:19:52,640
+a grass leaf? I guess grass will do
+
+419
+00:19:47,279 --> 00:19:54,960
+grasses vertically. Grasses are thin and
+
+420
+00:19:52,640 --> 00:19:59,400
+thin grass leaves have better heat
+
+421
+00:19:54,960 --> 00:20:03,519
+transfer characteristics than wide dicot
+
+422
+00:19:59,400 --> 00:20:06,160
+leaves. And grasses grow more commonly
+
+423
+00:20:03,519 --> 00:20:10,319
+in aid places. You don't see big
+
+424
+00:20:06,160 --> 00:20:13,038
+tropical leaves like this in in deserts.
+
+425
+00:20:10,319 --> 00:20:15,599
+You see very thin leaves because they're
+
+426
+00:20:13,038 --> 00:20:17,038
+out of water and they they they don't
+
+427
+00:20:15,599 --> 00:20:18,639
+want to heat up. They want to be able to
+
+428
+00:20:17,038 --> 00:20:22,640
+blow the heat away.
+
+429
+00:20:18,640 --> 00:20:26,080
+So this becomes a really fascinating to
+
+430
+00:20:22,640 --> 00:20:29,280
+to think about the shapes of leaves and
+
+431
+00:20:26,079 --> 00:20:31,439
+how well they avoid getting hot. Um and
+
+432
+00:20:29,279 --> 00:20:34,798
+if they can avoid getting hot, they can
+
+433
+00:20:31,440 --> 00:20:36,120
+avoid using water too if they can uh
+
+434
+00:20:34,798 --> 00:20:42,200
+blow heat
+
+435
+00:20:36,119 --> 00:20:47,439
+away. So we have width and wind in this.
+
+436
+00:20:42,200 --> 00:20:51,120
+Uh the rest of this is coefficients to
+
+437
+00:20:47,440 --> 00:20:53,240
+put units on these. After we get the the
+
+438
+00:20:51,119 --> 00:20:57,199
+concepts, then you look up these
+
+439
+00:20:53,240 --> 00:20:58,919
+coefficients in a book. But to do this
+
+440
+00:20:57,200 --> 00:21:04,000
+to be
+
+441
+00:20:58,919 --> 00:21:04,000
+equal, now we have a coefficient right
+
+442
+00:21:04,200 --> 00:21:12,038
+here. Make sure I got following
+
+443
+00:21:07,159 --> 00:21:14,120
+my notes. I am
+
+444
+00:21:12,038 --> 00:21:17,200
+0.04
+
+445
+00:21:14,119 --> 00:21:19,319
+times and because of the rules of
+
+446
+00:21:17,200 --> 00:21:24,400
+algebra we can do
+
+447
+00:21:19,319 --> 00:21:26,200
+width and wind right here. So there's
+
+448
+00:21:24,400 --> 00:21:30,640
+boundary layer
+
+449
+00:21:26,200 --> 00:21:30,640
+thickness and this in these
+
+450
+00:21:30,679 --> 00:21:35,519
+units. This is boundary layers
+
+451
+00:21:37,720 --> 00:21:44,679
+thickness in meters. So it's going to be
+
+452
+00:21:42,400 --> 00:21:48,720
+a small number, a real fraction of a
+
+453
+00:21:44,679 --> 00:21:53,759
+meter. Width has to have units of meters
+
+454
+00:21:48,720 --> 00:21:55,679
+and wind is meters per second.
+
+455
+00:21:53,759 --> 00:21:56,759
+which are the standard units you put
+
+456
+00:21:55,679 --> 00:21:59,600
+those
+
+457
+00:21:56,759 --> 00:22:04,000
+in. And this has units to make this all
+
+458
+00:21:59,599 --> 00:22:05,678
+cancel to to uh get to meters here. So
+
+459
+00:22:04,000 --> 00:22:07,159
+what's this number right here? Why is
+
+460
+00:22:05,679 --> 00:22:11,840
+that
+
+461
+00:22:07,159 --> 00:22:15,039
+0.004? This is a coefficient that a
+
+462
+00:22:11,839 --> 00:22:19,119
+variable coefficient depending on
+
+463
+00:22:15,038 --> 00:22:22,960
+surface roughness of the object. If it's
+
+464
+00:22:19,119 --> 00:22:25,639
+some polished metal, it's it's a
+
+465
+00:22:22,960 --> 00:22:30,360
+different coefficient. This can
+
+466
+00:22:25,640 --> 00:22:34,240
+vary from over a factor of two 0.002 to
+
+467
+00:22:30,359 --> 00:22:37,359
+0.008 even depending on how how rough
+
+468
+00:22:34,240 --> 00:22:40,159
+the surface is. You can imagine if a
+
+469
+00:22:37,359 --> 00:22:42,639
+leaf is hairy, we call that pubescent.
+
+470
+00:22:40,159 --> 00:22:44,960
+And some leaves are really pubescent.
+
+471
+00:22:42,640 --> 00:22:48,000
+They look like they have fur on them. In
+
+472
+00:22:44,960 --> 00:22:50,480
+those leaves, this might be 0.008. 08
+
+473
+00:22:48,000 --> 00:22:53,599
+because of trapping air. Some furry
+
+474
+00:22:50,480 --> 00:22:55,759
+animal this might be 0.00 I don't know
+
+475
+00:22:53,599 --> 00:22:58,558
+how high a furry animal can get but dang
+
+476
+00:22:55,759 --> 00:23:02,720
+high I'm sure versus a real smooth
+
+477
+00:22:58,558 --> 00:23:04,879
+surface where it might be lower. So the
+
+478
+00:23:02,720 --> 00:23:07,600
+textbook uses this number and it's a
+
+479
+00:23:04,880 --> 00:23:10,400
+general number for typical leaves. It's
+
+480
+00:23:07,599 --> 00:23:13,359
+it's higher in hairy leaves and it's a
+
+481
+00:23:10,400 --> 00:23:16,679
+little lower in uh real smooth glossy
+
+482
+00:23:13,359 --> 00:23:20,839
+leaves, but for these purposes we use
+
+483
+00:23:16,679 --> 00:23:24,960
+0.004. Now we get a thickness of the
+
+484
+00:23:20,839 --> 00:23:24,959
+leaf in
+
+485
+00:23:25,640 --> 00:23:30,880
+meters. Let me keep going and I'll come
+
+486
+00:23:28,000 --> 00:23:33,839
+back to some filledin examples of this.
+
+487
+00:23:30,880 --> 00:23:36,720
+But we still don't have we still haven't
+
+488
+00:23:33,839 --> 00:23:40,720
+solved this whole thing because what we
+
+489
+00:23:36,720 --> 00:23:42,600
+want to know up here I'm going to erase
+
+490
+00:23:40,720 --> 00:23:45,038
+now let's leave light
+
+491
+00:23:42,599 --> 00:23:47,000
+insensible what we want to get to up
+
+492
+00:23:45,038 --> 00:23:50,640
+here is
+
+493
+00:23:47,000 --> 00:23:53,519
+watts per meter squared and so far all
+
+494
+00:23:50,640 --> 00:23:56,880
+we know is a thickness of the boundary
+
+495
+00:23:53,519 --> 00:23:59,038
+layer. So to put this whole thing in
+
+496
+00:23:56,880 --> 00:24:01,679
+perspective,
+
+497
+00:23:59,038 --> 00:24:01,679
+erase these
+
+498
+00:24:04,279 --> 00:24:13,278
+leaves, we
+
+499
+00:24:07,000 --> 00:24:13,278
+get c^2 could write this anywhere.
+
+500
+00:24:14,359 --> 00:24:20,558
+Um delta
+
+501
+00:24:16,759 --> 00:24:22,079
+t over boundary layer thickness in
+
+502
+00:24:20,558 --> 00:24:25,119
+meters.
+
+503
+00:24:22,079 --> 00:24:27,158
+delta t and degrees Kelvin or degrees C,
+
+504
+00:24:25,119 --> 00:24:32,000
+it doesn't matter. It's the same
+
+505
+00:24:27,159 --> 00:24:32,000
+number. Now we have
+
+506
+00:24:33,960 --> 00:24:39,519
+0.026 in
+
+507
+00:24:36,119 --> 00:24:40,918
+here. This is the thermal conductivity
+
+508
+00:24:39,519 --> 00:24:45,200
+of
+
+509
+00:24:40,919 --> 00:24:48,720
+air. How what's the resistance to heat
+
+510
+00:24:45,200 --> 00:24:50,558
+flow for air? So, and this has units to
+
+511
+00:24:48,720 --> 00:24:52,440
+make all the rest of this cancel. And
+
+512
+00:24:50,558 --> 00:24:54,918
+I'll give you a handout with worked out
+
+513
+00:24:52,440 --> 00:24:59,278
+units.
+
+514
+00:24:54,919 --> 00:25:02,000
+But if the air density was really low,
+
+515
+00:24:59,278 --> 00:25:04,240
+almost a vacuum, this number would get
+
+516
+00:25:02,000 --> 00:25:06,400
+bigger. And if it was more dense, it
+
+517
+00:25:04,240 --> 00:25:09,359
+would get higher. This this number
+
+518
+00:25:06,400 --> 00:25:12,400
+varies slightly with humidity of the air
+
+519
+00:25:09,359 --> 00:25:16,879
+and temperature, but not very much. It's
+
+520
+00:25:12,400 --> 00:25:20,000
+it's close to this number.
+
+521
+00:25:16,880 --> 00:25:24,520
+So now we can put numbers and solve
+
+522
+00:25:20,000 --> 00:25:27,919
+this. But there's one final coefficient.
+
+523
+00:25:24,519 --> 00:25:30,480
+Remember for net radiation, we had two
+
+524
+00:25:27,919 --> 00:25:32,559
+sides of the leaf that that long wave
+
+525
+00:25:30,480 --> 00:25:34,679
+can go up and it go down. And that's a
+
+526
+00:25:32,558 --> 00:25:37,759
+good thing because it helps leaves cool
+
+527
+00:25:34,679 --> 00:25:41,120
+off. If we brand these numbers for the
+
+528
+00:25:37,759 --> 00:25:43,119
+parking lot outside, now we don't get to
+
+529
+00:25:41,119 --> 00:25:45,678
+have two sides of a leaf because the
+
+530
+00:25:43,119 --> 00:25:47,678
+parking lot can only go up. parking lot
+
+531
+00:25:45,679 --> 00:25:49,200
+would have a big storage component
+
+532
+00:25:47,679 --> 00:25:51,200
+below. But in the case of a leaf,
+
+533
+00:25:49,200 --> 00:25:54,240
+there's two sides. Guess what? For
+
+534
+00:25:51,200 --> 00:25:57,240
+conduction and convection, two sides of
+
+535
+00:25:54,240 --> 00:26:01,880
+the leaf. So right
+
+536
+00:25:57,240 --> 00:26:06,400
+here, I'm I'm running out of room.
+
+537
+00:26:01,880 --> 00:26:08,320
+Two times thermal conductivity of air
+
+538
+00:26:06,400 --> 00:26:10,880
+time the delta t times the boundary
+
+539
+00:26:08,319 --> 00:26:15,079
+layer. And now we get watts per meter
+
+540
+00:26:10,880 --> 00:26:18,320
+squared of heat transfer from that
+
+541
+00:26:15,079 --> 00:26:19,839
+leaf. And the beauty of this is now we
+
+542
+00:26:18,319 --> 00:26:22,319
+have everything in watts per meter
+
+543
+00:26:19,839 --> 00:26:24,038
+squared. Watts per meter squared. Watts
+
+544
+00:26:22,319 --> 00:26:26,319
+per meter squared. Watts per meter
+
+545
+00:26:24,038 --> 00:26:28,640
+squared. And now we can look at
+
+546
+00:26:26,319 --> 00:26:33,038
+balancing the energy what the what the
+
+547
+00:26:28,640 --> 00:26:33,038
+leaf is doing. So I
+
+548
+00:26:33,798 --> 00:26:39,278
+have a
+
+549
+00:26:36,359 --> 00:26:43,119
+handout of this. It's It's adapted from
+
+550
+00:26:39,278 --> 00:26:47,038
+the book. And oh wow, we got the This is
+
+551
+00:26:43,119 --> 00:26:47,038
+up here. We're We're all
+
+552
+00:26:48,278 --> 00:26:55,440
+set. This the same thing I wrote on the
+
+553
+00:26:50,880 --> 00:26:59,120
+board. So So uh my goal is to show it
+
+554
+00:26:55,440 --> 00:27:02,360
+and then follow up with with the the
+
+555
+00:26:59,119 --> 00:27:06,639
+written difference for this.
+
+556
+00:27:02,359 --> 00:27:08,599
+Um, so this is the equation and on the
+
+557
+00:27:06,640 --> 00:27:12,120
+bottom of
+
+558
+00:27:08,599 --> 00:27:16,839
+this actually not the bottom it's a page
+
+559
+00:27:12,119 --> 00:27:18,519
+two this is a
+
+560
+00:27:16,839 --> 00:27:21,240
+few
+
+561
+00:27:18,519 --> 00:27:24,798
+examples I've written on
+
+562
+00:27:21,240 --> 00:27:26,640
+here just a worked out table leaf width
+
+563
+00:27:24,798 --> 00:27:28,960
+or length. Now what this really is is
+
+564
+00:27:26,640 --> 00:27:31,440
+the shortest dimension. People talk
+
+565
+00:27:28,960 --> 00:27:32,720
+about length, but a grass leaf, it's the
+
+566
+00:27:31,440 --> 00:27:34,679
+shortest dimension because it's
+
+567
+00:27:32,720 --> 00:27:38,798
+generally blown
+
+568
+00:27:34,679 --> 00:27:41,880
+sideways. So, here's a banana leaf 0.5
+
+569
+00:27:38,798 --> 00:27:44,558
+m, right? So, that's a big
+
+570
+00:27:41,880 --> 00:27:47,640
+leaf. The boundary, this table is
+
+571
+00:27:44,558 --> 00:27:50,480
+boundary layer thickness in
+
+572
+00:27:47,640 --> 00:27:55,520
+millimeters. A banana leaf with really
+
+573
+00:27:50,480 --> 00:27:57,360
+low wind. Wow. Almost a centimeter. I
+
+574
+00:27:55,519 --> 00:27:59,519
+mean a banana leaf is this is almost
+
+575
+00:27:57,359 --> 00:28:03,759
+like having a thermal pane window around
+
+576
+00:27:59,519 --> 00:28:07,759
+the banana leaf. A centimeter of 8.9 mm
+
+577
+00:28:03,759 --> 00:28:10,798
+is is pretty thick. So that that would
+
+578
+00:28:07,759 --> 00:28:13,440
+not stay in equilibrium with the air
+
+579
+00:28:10,798 --> 00:28:16,158
+very well at all. It it would heat up
+
+580
+00:28:13,440 --> 00:28:18,399
+and it would have to evaporate water to
+
+581
+00:28:16,159 --> 00:28:23,120
+balance the energy because it's so well
+
+582
+00:28:18,398 --> 00:28:27,199
+insulated. Now we go up this way and a
+
+583
+00:28:23,119 --> 00:28:29,759
+real thin leaf 0.002. This is meters. So
+
+584
+00:28:27,200 --> 00:28:31,759
+now this is like a pine needle up here.
+
+585
+00:28:29,759 --> 00:28:36,000
+And now that boundary leader is real
+
+586
+00:28:31,759 --> 00:28:38,599
+tiny. And we go this way and these are
+
+587
+00:28:36,000 --> 00:28:41,960
+very still air. This is meters per
+
+588
+00:28:38,599 --> 00:28:44,678
+second. 1 m/s
+
+589
+00:28:41,960 --> 00:28:48,240
+is down in here. Smoke would rise
+
+590
+00:28:44,679 --> 00:28:52,000
+vertically. And 1 meter per second is
+
+591
+00:28:48,240 --> 00:28:56,159
+well cup animometers as as you all know
+
+592
+00:28:52,000 --> 00:28:58,159
+it takes somewhere around 0.4 m/s to
+
+593
+00:28:56,159 --> 00:29:00,960
+start turning the cups on a cup an
+
+594
+00:28:58,159 --> 00:29:04,000
+animometer depends on the instrument but
+
+595
+00:29:00,960 --> 00:29:06,000
+that's this. So this is very still air.
+
+596
+00:29:04,000 --> 00:29:08,079
+Now we get up to 10 and it's really
+
+597
+00:29:06,000 --> 00:29:11,038
+breezy and all these all these numbers
+
+598
+00:29:08,079 --> 00:29:12,720
+are small. So leaves are going to always
+
+599
+00:29:11,038 --> 00:29:14,879
+be very close to the air temperature
+
+600
+00:29:12,720 --> 00:29:19,839
+when the wind is blowing because of this
+
+601
+00:29:14,880 --> 00:29:19,840
+gets tiny. So now let's look at this
+
+602
+00:29:20,200 --> 00:29:26,919
+example. Um it's just one where I've put
+
+603
+00:29:24,240 --> 00:29:29,519
+in the numbers and
+
+604
+00:29:26,919 --> 00:29:32,480
+uh and worked this out. I assumed a
+
+605
+00:29:29,519 --> 00:29:36,960
+delta t of two at pretty typical in the
+
+606
+00:29:32,480 --> 00:29:38,880
+middle of the day. A 5 cm width. So how
+
+607
+00:29:36,960 --> 00:29:42,000
+long is that? Three fingers. It's just
+
+608
+00:29:38,880 --> 00:29:44,240
+some average dieot leaf. Somewhat still
+
+609
+00:29:42,000 --> 00:29:47,759
+air. The wind is blowing but not very
+
+610
+00:29:44,240 --> 00:29:50,319
+fast. So now we plug in the numbers. And
+
+611
+00:29:47,759 --> 00:29:53,879
+there's the boundary layer thickness.
+
+612
+00:29:50,319 --> 00:29:57,918
+And here's the rest of it. We get
+
+613
+00:29:53,880 --> 00:30:00,880
+116 watts per meter squared transferred
+
+614
+00:29:57,919 --> 00:30:03,038
+by conduction and convection in this
+
+615
+00:30:00,880 --> 00:30:07,000
+example.
+
+616
+00:30:03,038 --> 00:30:11,000
+So just to take put this in perspective
+
+617
+00:30:07,000 --> 00:30:14,359
+now we we got this. I'm going to erase
+
+618
+00:30:11,000 --> 00:30:17,359
+this. I'm going to erase
+
+619
+00:30:14,359 --> 00:30:17,359
+this
+
+620
+00:30:20,679 --> 00:30:27,679
+this. Let's try red. Remember from a few
+
+621
+00:30:25,119 --> 00:30:28,918
+lectures ago, we put some typical
+
+622
+00:30:27,679 --> 00:30:33,038
+numbers in
+
+623
+00:30:28,919 --> 00:30:34,520
+here and this was from the handout. This
+
+624
+00:30:33,038 --> 00:30:38,480
+is
+
+625
+00:30:34,519 --> 00:30:38,480
+375 watts per meter
+
+626
+00:30:38,919 --> 00:30:44,120
+squared. We don't know this. We're we're
+
+627
+00:30:41,278 --> 00:30:46,679
+we're trying to solve for
+
+628
+00:30:44,119 --> 00:30:49,639
+this
+
+629
+00:30:46,679 --> 00:30:55,600
+116. So, it's pretty easy arithmetic.
+
+630
+00:30:49,640 --> 00:30:55,600
+Now, 275 265. What would this be?
+
+631
+00:30:55,880 --> 00:31:03,200
+259. I think that that um balances the
+
+632
+00:31:00,798 --> 00:31:06,319
+equation. So this would have to open its
+
+633
+00:31:03,200 --> 00:31:08,840
+stomates and evaporate 259 watts per
+
+634
+00:31:06,319 --> 00:31:11,599
+meter squared to balance
+
+635
+00:31:08,839 --> 00:31:15,519
+this. Assuming there's not storage and
+
+636
+00:31:11,599 --> 00:31:17,678
+all the other stuff. So example of
+
+637
+00:31:15,519 --> 00:31:21,200
+balancing this after we've put the
+
+638
+00:31:17,679 --> 00:31:24,000
+numbers in for uh conduction and
+
+639
+00:31:21,200 --> 00:31:24,000
+convection.
+
+640
+00:31:27,640 --> 00:31:35,520
+Now I want to show
+
+641
+00:31:31,679 --> 00:31:40,159
+259 is what you do backwards to get the
+
+642
+00:31:35,519 --> 00:31:42,359
+resistance and yes you now that we've
+
+643
+00:31:40,159 --> 00:31:47,039
+solved this and we know this has to be
+
+644
+00:31:42,359 --> 00:31:49,678
+this and so let me repeat the question
+
+645
+00:31:47,038 --> 00:31:52,558
+could you then use this to calculate
+
+646
+00:31:49,679 --> 00:31:54,880
+stomodel resistance or model conductance
+
+647
+00:31:52,558 --> 00:31:57,678
+and the answer is absolutely and that's
+
+648
+00:31:54,880 --> 00:32:00,240
+how we do it. We cuz we get the driving
+
+649
+00:31:57,679 --> 00:32:03,360
+gradient for this and the only variable
+
+650
+00:32:00,240 --> 00:32:07,399
+left in this whole thing is stomates and
+
+651
+00:32:03,359 --> 00:32:11,319
+then we the stomates had to
+
+652
+00:32:07,398 --> 00:32:13,678
+be this open to be able to balance the
+
+653
+00:32:11,319 --> 00:32:15,839
+energy. And then once we do that of
+
+654
+00:32:13,679 --> 00:32:17,600
+course then we make models and say in
+
+655
+00:32:15,839 --> 00:32:21,439
+this condition the stomates were like
+
+656
+00:32:17,599 --> 00:32:22,959
+this and then we try to take our models
+
+657
+00:32:21,440 --> 00:32:25,200
+and put them in and see if the whole
+
+658
+00:32:22,960 --> 00:32:27,159
+thing balances and but that's the beauty
+
+659
+00:32:25,200 --> 00:32:30,159
+of energy balance is we
+
+660
+00:32:27,159 --> 00:32:31,799
+calculate these three numbers and and
+
+661
+00:32:30,159 --> 00:32:34,799
+balance the
+
+662
+00:32:31,798 --> 00:32:34,798
+energy.
+
+663
+00:32:35,480 --> 00:32:38,480
+I
+
+664
+00:32:39,319 --> 00:32:44,759
+have a another handout. This is a
+
+665
+00:32:43,278 --> 00:32:47,759
+two-sided
+
+666
+00:32:44,759 --> 00:32:47,759
+handout.
+
+667
+00:32:47,798 --> 00:32:51,278
+Um, this is
+
+668
+00:32:51,480 --> 00:32:56,960
+entitled a six-step
+
+669
+00:32:54,278 --> 00:33:00,480
+procedure to determine energy balance
+
+670
+00:32:56,960 --> 00:33:03,720
+components in a leaf. So, it's just it's
+
+671
+00:33:00,480 --> 00:33:07,360
+all in one page. Just do this this this
+
+672
+00:33:03,720 --> 00:33:10,079
+condensed incident is dependent on
+
+673
+00:33:07,359 --> 00:33:13,359
+shortwave. By the way, we often use the
+
+674
+00:33:10,079 --> 00:33:15,278
+Greek letter fee to mean radiation. I
+
+675
+00:33:13,359 --> 00:33:18,079
+always use a capital R, but it's the
+
+676
+00:33:15,278 --> 00:33:21,200
+same thing. Fe is radiation. That's
+
+677
+00:33:18,079 --> 00:33:23,839
+shortwave in plus shortwave reflected
+
+678
+00:33:21,200 --> 00:33:26,240
+plus longwave from the sky plus longwave
+
+679
+00:33:23,839 --> 00:33:28,839
+ground. Those are the four components.
+
+680
+00:33:26,240 --> 00:33:32,480
+And the sky component we measure
+
+681
+00:33:28,839 --> 00:33:36,000
+directly. The reflected we calculate
+
+682
+00:33:32,480 --> 00:33:40,159
+times the this is one minus the albido
+
+683
+00:33:36,000 --> 00:33:42,880
+of the ground. The sky I had see how
+
+684
+00:33:40,159 --> 00:33:44,120
+I've crossed this out. Well, we used to
+
+685
+00:33:42,880 --> 00:33:47,360
+calculate the
+
+686
+00:33:44,119 --> 00:33:49,518
+sky but now it's becoming way more
+
+687
+00:33:47,359 --> 00:33:52,079
+common to use an instrument and just
+
+688
+00:33:49,519 --> 00:33:55,159
+measure it directly because we don't
+
+689
+00:33:52,079 --> 00:33:58,839
+have to try and model the sky. And here
+
+690
+00:33:55,159 --> 00:34:02,399
+is an example
+
+691
+00:33:58,839 --> 00:34:04,240
+of a new model instrument to do this.
+
+692
+00:34:02,398 --> 00:34:08,239
+There's several companies that build
+
+693
+00:34:04,240 --> 00:34:10,639
+these. This is one more compact one. So
+
+694
+00:34:08,239 --> 00:34:14,319
+you can see this has four sensors. Two
+
+695
+00:34:10,639 --> 00:34:17,280
+on the top, two in the bottom. This does
+
+696
+00:34:14,320 --> 00:34:20,240
+all of these components of net
+
+697
+00:34:17,280 --> 00:34:24,240
+radiation. This sensor outputs this
+
+698
+00:34:20,239 --> 00:34:26,799
+number. So all in one you you get this
+
+699
+00:34:24,239 --> 00:34:29,519
+number from a single sensor. Short wave
+
+700
+00:34:26,800 --> 00:34:32,280
+in, short wave out, long wave in, long
+
+701
+00:34:29,519 --> 00:34:33,960
+wave out. This one's called a four-way
+
+702
+00:34:32,280 --> 00:34:36,800
+radiometer.
+
+703
+00:34:33,960 --> 00:34:39,918
+Um, so if these instruments are
+
+704
+00:34:36,800 --> 00:34:43,399
+accurate, wow, we've skipped a lot of
+
+705
+00:34:39,918 --> 00:34:46,559
+modeling to uh do
+
+706
+00:34:43,398 --> 00:34:48,398
+this. See how even here I have calculate
+
+707
+00:34:46,559 --> 00:34:50,078
+the ground based on ground temperature.
+
+708
+00:34:48,398 --> 00:34:52,559
+Well, now we could cross that out and we
+
+709
+00:34:50,079 --> 00:34:54,240
+could put measure. So, if you have an
+
+710
+00:34:52,559 --> 00:34:56,719
+instrument to measure it, great. If you
+
+711
+00:34:54,239 --> 00:34:58,959
+don't, you have to calculate it. So, we
+
+712
+00:34:56,719 --> 00:35:01,959
+keep going down on this. Step two. Now,
+
+713
+00:34:58,960 --> 00:35:05,079
+we do absorbed
+
+714
+00:35:01,960 --> 00:35:08,480
+radiation. And then we
+
+715
+00:35:05,079 --> 00:35:12,000
+do emitted longwave. Again, following
+
+716
+00:35:08,480 --> 00:35:14,320
+the same boom, step four, determine net
+
+717
+00:35:12,000 --> 00:35:17,000
+radiation. So on the first page we got
+
+718
+00:35:14,320 --> 00:35:19,599
+to to uh
+
+719
+00:35:17,000 --> 00:35:21,679
+375. It and this doesn't have any
+
+720
+00:35:19,599 --> 00:35:24,838
+example numbers. It's just a summary.
+
+721
+00:35:21,679 --> 00:35:29,440
+Now flip it over. Step
+
+722
+00:35:24,838 --> 00:35:31,880
+five is what we did previous lecture.
+
+723
+00:35:29,440 --> 00:35:34,480
+Energy transfer from
+
+724
+00:35:31,880 --> 00:35:37,400
+transpiration. Here's the equation. It's
+
+725
+00:35:34,480 --> 00:35:42,880
+either divided by resistance or times
+
+726
+00:35:37,400 --> 00:35:44,960
+conductance. Now I did an example here.
+
+727
+00:35:42,880 --> 00:35:48,079
+No, I didn't do an example. I just put
+
+728
+00:35:44,960 --> 00:35:51,599
+the equation. This I put I had to cross
+
+729
+00:35:48,079 --> 00:35:53,760
+these out because this is the latent
+
+730
+00:35:51,599 --> 00:35:57,680
+heat of evaporation
+
+731
+00:35:53,760 --> 00:36:00,079
+um right at air temperature. This is
+
+732
+00:35:57,679 --> 00:36:02,960
+this is not incorrect. It's just a more
+
+733
+00:36:00,079 --> 00:36:05,440
+detailed equation. And let me see if
+
+734
+00:36:02,960 --> 00:36:05,440
+I've got
+
+735
+00:36:05,719 --> 00:36:12,559
+my my uh example of that.
+
+736
+00:36:10,159 --> 00:36:15,440
+I don't I'm not sure I can find that
+
+737
+00:36:12,559 --> 00:36:17,599
+quickly. It's just a chart. Uh let me
+
+738
+00:36:15,440 --> 00:36:19,039
+let me show you what this chart looks
+
+739
+00:36:17,599 --> 00:36:22,039
+like. It's the latent heat of
+
+740
+00:36:19,039 --> 00:36:22,039
+evaporation.
+
+741
+00:36:40,358 --> 00:36:46,598
+So this is
+
+742
+00:36:44,519 --> 00:36:50,920
+uh two
+
+743
+00:36:46,599 --> 00:36:53,720
+I'm I'm running out of room. 2.45
+
+744
+00:36:50,920 --> 00:36:58,480
+45 um
+
+745
+00:36:53,719 --> 00:36:58,480
+megajoules per liter latent heat of
+
+746
+00:36:59,400 --> 00:37:06,960
+evaporation. What does this line look
+
+747
+00:37:01,679 --> 00:37:09,719
+like as water heats up between zero and
+
+748
+00:37:06,960 --> 00:37:13,159
+100° C? At
+
+749
+00:37:09,719 --> 00:37:16,879
+zero, this is
+
+750
+00:37:13,159 --> 00:37:20,559
+2.25 degrees all the way from freezing.
+
+751
+00:37:16,880 --> 00:37:24,160
+And at 100° C, oop, sorry, goes the
+
+752
+00:37:20,559 --> 00:37:24,159
+other way.
+
+753
+00:37:24,440 --> 00:37:33,400
+2.25. at 100° C and at 0°
+
+754
+00:37:30,760 --> 00:37:37,040
+C it's
+
+755
+00:37:33,400 --> 00:37:39,889
+I I don't have the exact number on here
+
+756
+00:37:37,039 --> 00:37:41,000
+but it's about 2
+
+757
+00:37:39,889 --> 00:37:43,159
+[Music]
+
+758
+00:37:41,000 --> 00:37:48,079
+uh
+
+759
+00:37:43,159 --> 00:37:50,239
+five something like 2 2.55 maybe the
+
+760
+00:37:48,079 --> 00:37:52,880
+point is latent heat of evaporation
+
+761
+00:37:50,239 --> 00:37:56,078
+varies very little with the initial
+
+762
+00:37:52,880 --> 00:37:59,760
+temperature of the water it varies a lot
+
+763
+00:37:56,079 --> 00:38:02,880
+with the change of state of water. So if
+
+764
+00:37:59,760 --> 00:38:08,000
+we connected our dots, this would be our
+
+765
+00:38:02,880 --> 00:38:08,000
+graph of the effect of water
+
+766
+00:38:09,159 --> 00:38:12,159
+temperature
+
+767
+00:38:12,760 --> 00:38:18,160
+temp on this coefficient latent heat.
+
+768
+00:38:16,400 --> 00:38:20,358
+And because our measurements are all
+
+769
+00:38:18,159 --> 00:38:24,239
+right in here
+
+770
+00:38:20,358 --> 00:38:27,078
+somewhere to to for sure they're all 2.4
+
+771
+00:38:24,239 --> 00:38:31,799
+4 something 2.46
+
+772
+00:38:27,079 --> 00:38:34,160
+2.43. So I simplified this to
+
+773
+00:38:31,800 --> 00:38:37,800
+2.45. I'm going to come back to this now
+
+774
+00:38:34,159 --> 00:38:40,598
+in just a minute with uh application at
+
+775
+00:38:37,800 --> 00:38:44,240
+night. Now we do conduction and
+
+776
+00:38:40,599 --> 00:38:47,119
+convection. And here's the rest of the
+
+777
+00:38:44,239 --> 00:38:50,159
+the the uh this it's just a one-page
+
+778
+00:38:47,119 --> 00:38:50,870
+summary of this whole thing with uh
+
+779
+00:38:50,159 --> 00:38:54,039
+delta
+
+780
+00:38:50,869 --> 00:38:54,039
+[Applause]
+
+781
+00:38:57,079 --> 00:39:04,960
+t. Let's take these principles
+
+782
+00:39:00,838 --> 00:39:08,480
+now and let me show a couple more things
+
+783
+00:39:04,960 --> 00:39:10,119
+on this before I do this. These are just
+
+784
+00:39:08,480 --> 00:39:13,679
+examples out of the
+
+785
+00:39:10,119 --> 00:39:13,680
+textbook that are
+
+786
+00:39:14,119 --> 00:39:20,720
+uh useful
+
+787
+00:39:16,440 --> 00:39:22,800
+examples. Here is length or diameter of
+
+788
+00:39:20,719 --> 00:39:24,319
+an object and boundary layer thickness.
+
+789
+00:39:22,800 --> 00:39:26,079
+And in millimeters, you know, I always
+
+790
+00:39:24,320 --> 00:39:28,160
+think I'm a ruler and looking at the
+
+791
+00:39:26,079 --> 00:39:30,800
+ticks on a ruler. I can I can
+
+792
+00:39:28,159 --> 00:39:32,960
+conceptualize a millimeter. Don't ask me
+
+793
+00:39:30,800 --> 00:39:36,480
+to conceptualize a micrometer. Those are
+
+794
+00:39:32,960 --> 00:39:38,079
+too small to see. But 1 to 3
+
+795
+00:39:36,480 --> 00:39:40,719
+millimeters. Now look at how this curve
+
+796
+00:39:38,079 --> 00:39:42,720
+changes with shape. A flat leaf is
+
+797
+00:39:40,719 --> 00:39:44,959
+different than a sphere and that's
+
+798
+00:39:42,719 --> 00:39:48,159
+different than a cylinder. So we can use
+
+799
+00:39:44,960 --> 00:39:50,400
+the same equations to model all kinds of
+
+800
+00:39:48,159 --> 00:39:52,799
+things. Cylinders and different shapes,
+
+801
+00:39:50,400 --> 00:39:55,119
+different roughnesses, but this is how
+
+802
+00:39:52,800 --> 00:39:59,039
+those shapes affect it. And then here's
+
+803
+00:39:55,119 --> 00:40:03,480
+just wind speed examples for um tables
+
+804
+00:39:59,039 --> 00:40:03,480
+of of examples of that.
+
+805
+00:40:04,039 --> 00:40:09,838
+Here's a good
+
+806
+00:40:06,519 --> 00:40:09,838
+example of
+
+807
+00:40:12,838 --> 00:40:18,960
+why width matters. Here's the wind. We
+
+808
+00:40:16,719 --> 00:40:22,480
+have laminer flow in the beginning. It
+
+809
+00:40:18,960 --> 00:40:25,440
+goes turbulent at the end. And the heat
+
+810
+00:40:22,480 --> 00:40:28,079
+transfer is better in this first section
+
+811
+00:40:25,440 --> 00:40:31,280
+than it is down here at the end. That's
+
+812
+00:40:28,079 --> 00:40:34,640
+just a illustration of that. And I'm
+
+813
+00:40:31,280 --> 00:40:36,400
+sure in a class in a heat transfer
+
+814
+00:40:34,639 --> 00:40:38,879
+class, you go over all this stuff in
+
+815
+00:40:36,400 --> 00:40:41,599
+great detail and and the all this stuff
+
+816
+00:40:38,880 --> 00:40:45,000
+is done in wind tunnels to calculate the
+
+817
+00:40:41,599 --> 00:40:47,680
+heat transfer characteristics of
+
+818
+00:40:45,000 --> 00:40:51,079
+things. So we put leaves in wind tunnels
+
+819
+00:40:47,679 --> 00:40:51,078
+to do that.
+
+820
+00:40:56,400 --> 00:41:01,519
+Now,
+
+821
+00:40:58,119 --> 00:41:01,519
+I want to
+
+822
+00:41:02,199 --> 00:41:07,879
+go to this little diagram here. I'm
+
+823
+00:41:05,039 --> 00:41:11,279
+going to blow this up big. It's a simple
+
+824
+00:41:07,880 --> 00:41:13,000
+diagram. Um, I got to have white
+
+825
+00:41:11,280 --> 00:41:16,440
+underneath
+
+826
+00:41:13,000 --> 00:41:19,920
+it. Make it big. I'm pretty convinced
+
+827
+00:41:16,440 --> 00:41:21,760
+that if you make everything big, it gets
+
+828
+00:41:19,920 --> 00:41:24,960
+easier to understand. And and I think
+
+829
+00:41:21,760 --> 00:41:26,800
+that's why that guy McCully he writes
+
+830
+00:41:24,960 --> 00:41:28,800
+those books and he takes how does this
+
+831
+00:41:26,800 --> 00:41:31,680
+work and he makes it big and then you
+
+832
+00:41:28,800 --> 00:41:33,680
+can understand it and I'm pretty sure if
+
+833
+00:41:31,679 --> 00:41:35,279
+you just can make the diagram big enough
+
+834
+00:41:33,679 --> 00:41:37,679
+it's like a kids book and you can
+
+835
+00:41:35,280 --> 00:41:40,040
+understand comp complex things just by
+
+836
+00:41:37,679 --> 00:41:45,239
+making them bigger. So here's
+
+837
+00:41:40,039 --> 00:41:47,838
+big here's an example out of the book
+
+838
+00:41:45,239 --> 00:41:49,679
+daytime net radiation and here's the
+
+839
+00:41:47,838 --> 00:41:50,759
+conditions here that we've measured with
+
+840
+00:41:49,679 --> 00:41:53,679
+our
+
+841
+00:41:50,760 --> 00:41:56,880
+instruments 370 and well coincidentally
+
+842
+00:41:53,679 --> 00:41:58,480
+we got 375 but they're they're similar
+
+843
+00:41:56,880 --> 00:42:00,119
+numbers in the day. By the way this
+
+844
+00:41:58,480 --> 00:42:03,559
+number in the
+
+845
+00:42:00,119 --> 00:42:07,358
+day probably goes from
+
+846
+00:42:03,559 --> 00:42:10,318
+300 to 500. depends on the conditions,
+
+847
+00:42:07,358 --> 00:42:12,880
+but but it it's in that general
+
+848
+00:42:10,318 --> 00:42:17,759
+ballpark. Obviously, if it's cloudy,
+
+849
+00:42:12,880 --> 00:42:21,039
+it's a lot lower. Um, and it it uh
+
+850
+00:42:17,760 --> 00:42:23,359
+depends on the surface it's over. Um,
+
+851
+00:42:21,039 --> 00:42:26,358
+but it's in the neighborhood of 300.
+
+852
+00:42:23,358 --> 00:42:29,759
+Okay, it has to balance. So, in this
+
+853
+00:42:26,358 --> 00:42:35,199
+example, the leaf here is 5° above the
+
+854
+00:42:29,760 --> 00:42:38,079
+air. So this is 180 and we did 116 cuz
+
+855
+00:42:35,199 --> 00:42:42,439
+the wind wasn't blowing very much. So
+
+856
+00:42:38,079 --> 00:42:45,400
+190 for uh transpiration for the
+
+857
+00:42:42,440 --> 00:42:49,880
+leaf. we can put
+
+858
+00:42:45,400 --> 00:42:53,440
+in water flux density four
+
+859
+00:42:49,880 --> 00:42:56,039
+millles and and it I don't know if I
+
+860
+00:42:53,440 --> 00:43:01,440
+want to take the time to work that out
+
+861
+00:42:56,039 --> 00:43:03,599
+but four mill moles of water this is a
+
+862
+00:43:01,440 --> 00:43:05,519
+transpiration rate measured of the leaf
+
+863
+00:43:03,599 --> 00:43:09,800
+now that's that would have to be
+
+864
+00:43:05,519 --> 00:43:15,559
+measured to get this
+
+865
+00:43:09,800 --> 00:43:21,560
+times 18 water is 18 gram per
+
+866
+00:43:15,559 --> 00:43:23,799
+mole 18 g. So 40
+
+867
+00:43:21,559 --> 00:43:29,159
+64
+
+868
+00:43:23,800 --> 00:43:32,920
+mg of water. 40 It's more than that.
+
+869
+00:43:29,159 --> 00:43:35,519
+72 40 + 32 72
+
+870
+00:43:32,920 --> 00:43:39,800
+mg per meter. Everything's per meter
+
+871
+00:43:35,519 --> 00:43:43,400
+squared per second of water. Now
+
+872
+00:43:39,800 --> 00:43:46,880
+times 2.45
+
+873
+00:43:43,400 --> 00:43:49,160
+45. And this is
+
+874
+00:43:46,880 --> 00:43:51,200
+um a
+
+875
+00:43:49,159 --> 00:43:55,559
+milligram. We're going to have to scale
+
+876
+00:43:51,199 --> 00:43:58,439
+this way down. Is a
+
+877
+00:43:55,559 --> 00:44:01,559
+um let's see, a
+
+878
+00:43:58,440 --> 00:44:04,679
+milliliter, literous
+
+879
+00:44:01,559 --> 00:44:08,000
+thousands. It's not a mill. It's a
+
+880
+00:44:04,679 --> 00:44:08,000
+microl of
+
+881
+00:44:08,599 --> 00:44:14,359
+water. So now we have 2.4 45 and I'm
+
+882
+00:44:12,559 --> 00:44:17,679
+going to do
+
+883
+00:44:14,358 --> 00:44:17,679
+KJ per
+
+884
+00:44:19,079 --> 00:44:26,960
+milliliter or to to get the
+
+885
+00:44:23,000 --> 00:44:29,559
+microL let's get rid of the kila and and
+
+886
+00:44:26,960 --> 00:44:31,920
+let's this is going to become
+
+887
+00:44:29,559 --> 00:44:35,318
+microL. So the latent heat of
+
+888
+00:44:31,920 --> 00:44:38,880
+evaporation conversion of units 2.45 45
+
+889
+00:44:35,318 --> 00:44:41,759
+jewels per microL of water. This is that
+
+890
+00:44:38,880 --> 00:44:43,240
+measured transpiration rate. Now what do
+
+891
+00:44:41,760 --> 00:44:46,760
+we get here for
+
+892
+00:44:43,239 --> 00:44:49,919
+jewels? Um
+
+893
+00:44:46,760 --> 00:44:51,960
+140. Anybody want to do the math? It's
+
+894
+00:44:49,920 --> 00:44:53,720
+going to be
+
+895
+00:44:51,960 --> 00:45:00,519
+about
+
+896
+00:44:53,719 --> 00:45:00,519
+190 jewels per meter squared per second.
+
+897
+00:45:01,800 --> 00:45:08,079
+probably may be exactly 190. So we just
+
+898
+00:45:05,760 --> 00:45:11,200
+did an example of taking a transpiration
+
+899
+00:45:08,079 --> 00:45:14,720
+rate in moles of water converting it to
+
+900
+00:45:11,199 --> 00:45:18,000
+weight of water multiplying by latent
+
+901
+00:45:14,719 --> 00:45:19,598
+heat of evaporation to get this number.
+
+902
+00:45:18,000 --> 00:45:22,599
+I haven't it's good thing that worked
+
+903
+00:45:19,599 --> 00:45:26,480
+out. I thought of doing that right now.
+
+904
+00:45:22,599 --> 00:45:30,880
+Okay, this is typical if the plant is
+
+905
+00:45:26,480 --> 00:45:34,039
+well watered. This can get to 370 and
+
+906
+00:45:30,880 --> 00:45:37,280
+this one can go to zero. And when that
+
+907
+00:45:34,039 --> 00:45:40,079
+happens, the leaf is at the exact same
+
+908
+00:45:37,280 --> 00:45:42,400
+temperature as the air. As the plant
+
+909
+00:45:40,079 --> 00:45:45,200
+runs out of water, this has to get
+
+910
+00:45:42,400 --> 00:45:48,079
+bigger until if the transpiration went
+
+911
+00:45:45,199 --> 00:45:51,598
+to zero, this would have to roughly
+
+912
+00:45:48,079 --> 00:45:55,359
+double and the leaf temperature might be
+
+913
+00:45:51,599 --> 00:45:57,920
+10° C, the leaf to air delta T, to make
+
+914
+00:45:55,358 --> 00:46:00,159
+the energy balance.
+
+915
+00:45:57,920 --> 00:46:02,240
+A little bit more radiation is lost if
+
+916
+00:46:00,159 --> 00:46:04,799
+the leaf gets hot, but not much. So, you
+
+917
+00:46:02,239 --> 00:46:07,519
+can see how these numbers go back and
+
+918
+00:46:04,800 --> 00:46:09,359
+forth constantly with depending on how
+
+919
+00:46:07,519 --> 00:46:11,920
+watered the well watered the plant is.
+
+920
+00:46:09,358 --> 00:46:14,559
+And this is why if we put infrared
+
+921
+00:46:11,920 --> 00:46:16,400
+sensors on this to get leaf temperature,
+
+922
+00:46:14,559 --> 00:46:19,119
+we can tell the water status of the
+
+923
+00:46:16,400 --> 00:46:22,920
+plant. We can tell how how out of water
+
+924
+00:46:19,119 --> 00:46:25,920
+the plant is. Now, here's the next big
+
+925
+00:46:22,920 --> 00:46:28,599
+thing. Radiation frost. taking these
+
+926
+00:46:25,920 --> 00:46:32,079
+things at
+
+927
+00:46:28,599 --> 00:46:34,640
+night. Here's the moon. He didn't he
+
+928
+00:46:32,079 --> 00:46:36,160
+didn't get the sun anatomically correct,
+
+929
+00:46:34,639 --> 00:46:39,358
+but
+
+930
+00:46:36,159 --> 00:46:42,358
+um we could fix that. And right here, I
+
+931
+00:46:39,358 --> 00:46:45,318
+don't really want to draw on the board,
+
+932
+00:46:42,358 --> 00:46:47,920
+but there.
+
+933
+00:46:45,318 --> 00:46:51,279
+Now, you got to be happy when the sun's
+
+934
+00:46:47,920 --> 00:46:53,760
+out. So, here's the moon at night. Well,
+
+935
+00:46:51,280 --> 00:46:55,040
+guess what? This net radiation goes to
+
+936
+00:46:53,760 --> 00:46:58,640
+zero.
+
+937
+00:46:55,039 --> 00:47:01,599
+and the sky is cold. So on a clear
+
+938
+00:46:58,639 --> 00:47:05,920
+night, net radiation is always a
+
+939
+00:47:01,599 --> 00:47:09,200
+negative number. It assuming the ground
+
+940
+00:47:05,920 --> 00:47:12,000
+is colder than the very cold sky. It's
+
+941
+00:47:09,199 --> 00:47:13,719
+always a negative number. Energy still
+
+942
+00:47:12,000 --> 00:47:17,280
+has to
+
+943
+00:47:13,719 --> 00:47:19,358
+balance. So now these numbers that were
+
+944
+00:47:17,280 --> 00:47:23,680
+going out of the leaf in the day are
+
+945
+00:47:19,358 --> 00:47:26,440
+coming in to make the energy balance.
+
+946
+00:47:23,679 --> 00:47:29,759
+This one's easy. It cools off below air
+
+947
+00:47:26,440 --> 00:47:32,800
+temperature, so it's gaining some heat.
+
+948
+00:47:29,760 --> 00:47:35,160
+Everything reverses itself at night.
+
+949
+00:47:32,800 --> 00:47:39,480
+What's going on here? A negative
+
+950
+00:47:35,159 --> 00:47:41,519
+number. In this case, C is
+
+951
+00:47:39,480 --> 00:47:43,400
+transpiration. I'm not sure why I use
+
+952
+00:47:41,519 --> 00:47:46,480
+the symbol C, but this is
+
+953
+00:47:43,400 --> 00:47:48,559
+transpiration. It's a negative number. L
+
+954
+00:47:46,480 --> 00:47:53,440
+is transpiration. Oh, thank you. Thank
+
+955
+00:47:48,559 --> 00:47:56,000
+you, Mark. Yep. So L is latent heat and
+
+956
+00:47:53,440 --> 00:47:57,800
+C is conduction and convection. So
+
+957
+00:47:56,000 --> 00:48:00,400
+here's a negative
+
+958
+00:47:57,800 --> 00:48:03,400
+number. What's going on here? It's
+
+959
+00:48:00,400 --> 00:48:06,240
+evaporating water. It's
+
+960
+00:48:03,400 --> 00:48:10,800
+cooling. It could go to zero if the
+
+961
+00:48:06,239 --> 00:48:10,799
+stomates are shut. How'd this go
+
+962
+00:48:11,480 --> 00:48:16,318
+negative?
+
+963
+00:48:13,960 --> 00:48:19,280
+Condensation frost. This was a cold
+
+964
+00:48:16,318 --> 00:48:22,759
+night. it it the air temperature was +
+
+965
+00:48:19,280 --> 00:48:26,480
+one the leaf cooled to
+
+966
+00:48:22,760 --> 00:48:29,359
+minus1 and the it water condensed on it
+
+967
+00:48:26,480 --> 00:48:32,119
+and it was below zero so it became frost
+
+968
+00:48:29,358 --> 00:48:35,078
+and this is exactly what makes frost
+
+969
+00:48:32,119 --> 00:48:40,440
+form. So what happens here
+
+970
+00:48:35,079 --> 00:48:44,640
+is the leaf gains heat
+
+971
+00:48:40,440 --> 00:48:46,519
+by change of state in water. And I have
+
+972
+00:48:44,639 --> 00:48:49,078
+a
+
+973
+00:48:46,519 --> 00:48:52,480
+handout right
+
+974
+00:48:49,079 --> 00:48:54,440
+here. This is such a this is a whole
+
+975
+00:48:52,480 --> 00:48:56,838
+page
+
+976
+00:48:54,440 --> 00:48:59,920
+handout. But
+
+977
+00:48:56,838 --> 00:49:02,838
+again to make it big or to make it easy,
+
+978
+00:48:59,920 --> 00:49:05,559
+it's big.
+
+979
+00:49:02,838 --> 00:49:08,960
+So here we
+
+980
+00:49:05,559 --> 00:49:10,640
+go. Change of state of water. Once you
+
+981
+00:49:08,960 --> 00:49:12,800
+get this, you have it forever. But it's
+
+982
+00:49:10,639 --> 00:49:14,838
+it's it's counterintuitive to people
+
+983
+00:49:12,800 --> 00:49:17,599
+when you first think about
+
+984
+00:49:14,838 --> 00:49:20,318
+it. Heating up water really doesn't take
+
+985
+00:49:17,599 --> 00:49:23,480
+all that much energy. It's the energy is
+
+986
+00:49:20,318 --> 00:49:28,159
+in change of state of the water.
+
+987
+00:49:23,480 --> 00:49:30,760
+So the energy required mega per kilogram
+
+988
+00:49:28,159 --> 00:49:35,358
+to heat water from 0 to
+
+989
+00:49:30,760 --> 00:49:37,040
+100 is 042. No change of state or
+
+990
+00:49:35,358 --> 00:49:39,159
+there's a big change of temperature but
+
+991
+00:49:37,039 --> 00:49:41,400
+no change of
+
+992
+00:49:39,159 --> 00:49:44,078
+state to
+
+993
+00:49:41,400 --> 00:49:47,559
+evaporate to here let's do the liquid to
+
+994
+00:49:44,079 --> 00:49:50,119
+gas to evaporate it here after it's at
+
+995
+00:49:47,559 --> 00:49:54,079
+100° 2.25
+
+996
+00:49:50,119 --> 00:49:56,800
+25 mega per kilogram to evaporate it. So
+
+997
+00:49:54,079 --> 00:49:59,039
+it takes more energy to evaporate the
+
+998
+00:49:56,800 --> 00:50:01,519
+water than it did to heat it from 0 to
+
+999
+00:49:59,039 --> 00:50:04,960
+100. A lot more. What's that? Five times
+
+1000
+00:50:01,519 --> 00:50:08,199
+as much to to evaporate the water. So
+
+1001
+00:50:04,960 --> 00:50:10,039
+the big cooling is when the water
+
+1002
+00:50:08,199 --> 00:50:16,199
+evaporates.
+
+1003
+00:50:10,039 --> 00:50:19,679
+Um here now I can fix my graph at
+
+1004
+00:50:16,199 --> 00:50:22,919
+zero. No, this is 100. Nope, I got it
+
+1005
+00:50:19,679 --> 00:50:27,000
+right. At 100°, it's
+
+1006
+00:50:22,920 --> 00:50:29,760
+2.25 to evaporate the
+
+1007
+00:50:27,000 --> 00:50:32,639
+water. So now we go the other way. Same
+
+1008
+00:50:29,760 --> 00:50:34,640
+thing happens with ice. Now it's going
+
+1009
+00:50:32,639 --> 00:50:38,318
+change a state from a solid to a liquid
+
+1010
+00:50:34,639 --> 00:50:41,039
+back and forth. Ice, it also takes more
+
+1011
+00:50:38,318 --> 00:50:43,599
+energy to freeze the water than it
+
+1012
+00:50:41,039 --> 00:50:47,039
+almost as much to freeze it as it did to
+
+1013
+00:50:43,599 --> 00:50:49,280
+cool it from 100 to zero. So every time
+
+1014
+00:50:47,039 --> 00:50:50,800
+I do when I saw this many years ago and
+
+1015
+00:50:49,280 --> 00:50:53,200
+I'm thinking about it and I think about
+
+1016
+00:50:50,800 --> 00:50:55,519
+every time now I have a fridge
+
+1017
+00:50:53,199 --> 00:50:57,279
+automatically makes ice but you build
+
+1018
+00:50:55,519 --> 00:50:59,039
+you put ice in your ice cubes and you
+
+1019
+00:50:57,280 --> 00:51:01,920
+put them in the fridge and you're
+
+1020
+00:50:59,039 --> 00:51:03,599
+waiting and waiting and they're cold but
+
+1021
+00:51:01,920 --> 00:51:05,358
+they're not freezing and then and then
+
+1022
+00:51:03,599 --> 00:51:07,838
+you wait and you wait and bam they all
+
+1023
+00:51:05,358 --> 00:51:10,558
+freeze at once and that's because this
+
+1024
+00:51:07,838 --> 00:51:14,318
+this went fast and that final thing took
+
+1025
+00:51:10,559 --> 00:51:16,400
+forever to change the state of the ice
+
+1026
+00:51:14,318 --> 00:51:18,039
+cubes. In fact, speaking of that,
+
+1027
+00:51:16,400 --> 00:51:20,400
+there's a famous
+
+1028
+00:51:18,039 --> 00:51:22,239
+question. I've never actually done this
+
+1029
+00:51:20,400 --> 00:51:24,960
+experiment. And if you make ice cubes
+
+1030
+00:51:22,239 --> 00:51:27,838
+out of hot water and cold water and put
+
+1031
+00:51:24,960 --> 00:51:30,720
+them in your fridge, which one freezes
+
+1032
+00:51:27,838 --> 00:51:32,799
+first?
+
+1033
+00:51:30,719 --> 00:51:36,799
+That's what you would expect. I've done
+
+1034
+00:51:32,800 --> 00:51:39,839
+this test myself. And and what which one
+
+1035
+00:51:36,800 --> 00:51:41,839
+freezes first? Cold.
+
+1036
+00:51:39,838 --> 00:51:43,799
+There's a continent of energy to pull
+
+1037
+00:51:41,838 --> 00:51:46,400
+water. That's right.
+
+1038
+00:51:43,800 --> 00:51:49,440
+Intuitively, the cold water is a lot
+
+1039
+00:51:46,400 --> 00:51:51,039
+closer to starting. But what can happen?
+
+1040
+00:51:49,440 --> 00:51:53,639
+This is the little trick in this
+
+1041
+00:51:51,039 --> 00:51:57,199
+question. You put that hot water in
+
+1042
+00:51:53,639 --> 00:51:59,920
+there and it can evaporate like crazy.
+
+1043
+00:51:57,199 --> 00:52:01,919
+You put a inch or a couple centimeters
+
+1044
+00:51:59,920 --> 00:52:04,559
+thick ice cube and the hot water in the
+
+1045
+00:52:01,920 --> 00:52:06,880
+process of cooling loses energy like
+
+1046
+00:52:04,559 --> 00:52:08,720
+crazy. So now your ice cube is only a/4
+
+1047
+00:52:06,880 --> 00:52:11,280
+of an inch thick and you only have to
+
+1048
+00:52:08,719 --> 00:52:13,279
+freeze a quarter of an inch. So
+
+1049
+00:52:11,280 --> 00:52:15,519
+supposedly you can make ice with hot
+
+1050
+00:52:13,280 --> 00:52:16,880
+water and it'll freeze faster, but you
+
+1051
+00:52:15,519 --> 00:52:19,599
+won't get much of an ice cube because
+
+1052
+00:52:16,880 --> 00:52:22,960
+all the water evaporated. It was all all
+
+1053
+00:52:19,599 --> 00:52:25,119
+the energy is going here. Um, but the
+
+1054
+00:52:22,960 --> 00:52:27,519
+goal is to have a big ice cube. So you
+
+1055
+00:52:25,119 --> 00:52:29,519
+always start with cold water, but
+
+1056
+00:52:27,519 --> 00:52:33,079
+there's the there's the principles back
+
+1057
+00:52:29,519 --> 00:52:38,639
+and forth. And the bottom of this has
+
+1058
+00:52:33,079 --> 00:52:41,039
+the the uh this by the way this when it
+
+1059
+00:52:38,639 --> 00:52:43,759
+goes this way this is called the latent
+
+1060
+00:52:41,039 --> 00:52:46,558
+heat of condensation and this is latent
+
+1061
+00:52:43,760 --> 00:52:48,559
+heat of evaporation. So we get deon
+
+1062
+00:52:46,559 --> 00:52:51,400
+leaves heats them up that goes back and
+
+1063
+00:52:48,559 --> 00:52:53,960
+forth.
+
+1064
+00:52:51,400 --> 00:52:58,119
+Now we can go
+
+1065
+00:52:53,960 --> 00:53:00,039
+from this
+
+1066
+00:52:58,119 --> 00:53:03,640
+to one
+
+1067
+00:53:00,039 --> 00:53:07,880
+table in the book that
+
+1068
+00:53:03,639 --> 00:53:07,879
+I'll go over
+
+1069
+00:53:10,039 --> 00:53:14,639
+um just a bit quickly here, but it's
+
+1070
+00:53:12,800 --> 00:53:18,640
+this is the same diagram that I just
+
+1071
+00:53:14,639 --> 00:53:22,318
+showed you big. Um this is page 332
+
+1072
+00:53:18,639 --> 00:53:25,440
+figure 710. It's he Nobel works out four
+
+1073
+00:53:22,318 --> 00:53:27,960
+examples with inputs and outputs from
+
+1074
+00:53:25,440 --> 00:53:31,039
+leaves. Here's his assumptions down
+
+1075
+00:53:27,960 --> 00:53:34,800
+here. It's his first one sea level
+
+1076
+00:53:31,039 --> 00:53:37,119
+cloudless day 840 coming in. So this
+
+1077
+00:53:34,800 --> 00:53:39,920
+isn't quite a thousand. It's not quite
+
+1078
+00:53:37,119 --> 00:53:43,358
+full sunlight but he ends up with net
+
+1079
+00:53:39,920 --> 00:53:45,838
+radiation of 370 which he uses up here.
+
+1080
+00:53:43,358 --> 00:53:48,880
+and he's got the components of all the
+
+1081
+00:53:45,838 --> 00:53:50,599
+things in and out on here. Then he goes
+
+1082
+00:53:48,880 --> 00:53:55,920
+to 2,000
+
+1083
+00:53:50,599 --> 00:53:59,079
+m. So now the incoming radiation is a
+
+1084
+00:53:55,920 --> 00:54:02,079
+bit more. The sky is slightly
+
+1085
+00:53:59,079 --> 00:54:04,519
+colder. The end up net radiation's the
+
+1086
+00:54:02,079 --> 00:54:07,920
+same. Here's the key leaf
+
+1087
+00:54:04,519 --> 00:54:10,079
+temperature. This is plus five, but at
+
+1088
+00:54:07,920 --> 00:54:12,159
+2,000 mters, the leaf temperature is a
+
+1089
+00:54:10,079 --> 00:54:13,960
+little bit colder. the sky is a little
+
+1090
+00:54:12,159 --> 00:54:17,838
+bit colder and the leaf is a little bit
+
+1091
+00:54:13,960 --> 00:54:19,599
+colder. Then he does and you can these
+
+1092
+00:54:17,838 --> 00:54:22,358
+will lead to thousands of interesting
+
+1093
+00:54:19,599 --> 00:54:25,318
+test questions. Then he does a silvery
+
+1094
+00:54:22,358 --> 00:54:28,639
+leaf where the
+
+1095
+00:54:25,318 --> 00:54:32,000
+emissivity and absorptivity emissivity
+
+1096
+00:54:28,639 --> 00:54:35,159
+changes and the albido changes because
+
+1097
+00:54:32,000 --> 00:54:39,519
+of a silvery leaf. And all of a
+
+1098
+00:54:35,159 --> 00:54:42,399
+sudden, this is on a 2,000 meters
+
+1099
+00:54:39,519 --> 00:54:44,639
+um 10 degrees and the leaf still heats
+
+1100
+00:54:42,400 --> 00:54:46,800
+up three above the air temperature, but
+
+1101
+00:54:44,639 --> 00:54:49,000
+the heating is less because the leaf is
+
+1102
+00:54:46,800 --> 00:54:51,519
+a different color, different more
+
+1103
+00:54:49,000 --> 00:54:54,559
+silvery. And then the last two are
+
+1104
+00:54:51,519 --> 00:54:56,800
+really interesting. Sea level, cloudy
+
+1105
+00:54:54,559 --> 00:54:59,200
+night. So now it's all zeros here
+
+1106
+00:54:56,800 --> 00:55:01,359
+because it's night. Temperature here is
+
+1107
+00:54:59,199 --> 00:55:02,919
+one. This is example you worked out up
+
+1108
+00:55:01,358 --> 00:55:06,519
+here.
+
+1109
+00:55:02,920 --> 00:55:10,960
+Um, when there is
+
+1110
+00:55:06,519 --> 00:55:14,000
+wind, the leaf still fro a light wind,
+
+1111
+00:55:10,960 --> 00:55:15,920
+the leaf still froze minus one. But then
+
+1112
+00:55:14,000 --> 00:55:19,358
+he works out an example right under it
+
+1113
+00:55:15,920 --> 00:55:21,240
+with no wind or minimal wind and the
+
+1114
+00:55:19,358 --> 00:55:24,199
+leaf went to
+
+1115
+00:55:21,239 --> 00:55:27,279
+minus9 below the air
+
+1116
+00:55:24,199 --> 00:55:31,558
+temperature. And that is the definition
+
+1117
+00:55:27,280 --> 00:55:35,680
+of a radiation frost which I put right
+
+1118
+00:55:31,559 --> 00:55:39,400
+here. When a surface goes below the air
+
+1119
+00:55:35,679 --> 00:55:43,039
+temperature and below
+
+1120
+00:55:39,400 --> 00:55:45,119
+freezing it that's it frost forms on it
+
+1121
+00:55:43,039 --> 00:55:47,039
+and it happens all the time on clear
+
+1122
+00:55:45,119 --> 00:55:49,760
+nights because they get below the air
+
+1123
+00:55:47,039 --> 00:55:51,838
+temperature there's condensation and the
+
+1124
+00:55:49,760 --> 00:55:53,520
+condensation freezes and that's what
+
+1125
+00:55:51,838 --> 00:55:56,880
+frost is. And if it happens all night
+
+1126
+00:55:53,519 --> 00:56:00,079
+long, the frost can get enormously long.
+
+1127
+00:55:56,880 --> 00:56:01,880
+Um, but it's all because of this radiant
+
+1128
+00:56:00,079 --> 00:56:05,400
+cooling at
+
+1129
+00:56:01,880 --> 00:56:09,400
+night. This is so
+
+1130
+00:56:05,400 --> 00:56:09,400
+profound that
+
+1131
+00:56:22,318 --> 00:56:26,318
+This is I'm going to pick this up in the
+
+1132
+00:56:24,960 --> 00:56:29,079
+second half of this, but I'm going to
+
+1133
+00:56:26,318 --> 00:56:32,960
+introduce it here. This is so profound
+
+1134
+00:56:29,079 --> 00:56:36,200
+that fruit growers in the spring have to
+
+1135
+00:56:32,960 --> 00:56:38,639
+be continuously worried about radiation
+
+1136
+00:56:36,199 --> 00:56:41,598
+frost. In the past, they've just looked
+
+1137
+00:56:38,639 --> 00:56:43,199
+at air temperature and in one night they
+
+1138
+00:56:41,599 --> 00:56:45,280
+can lose a million dollars worth of
+
+1139
+00:56:43,199 --> 00:56:47,759
+fruit because their young flowers get
+
+1140
+00:56:45,280 --> 00:56:50,480
+cold and they freeze and they they're
+
+1141
+00:56:47,760 --> 00:56:53,640
+done. their yield is done for the year.
+
+1142
+00:56:50,480 --> 00:56:56,639
+They cannot afford to
+
+1143
+00:56:53,639 --> 00:56:59,759
+just do frost protection based on air
+
+1144
+00:56:56,639 --> 00:57:02,719
+temperature. They have to do it based on
+
+1145
+00:56:59,760 --> 00:57:05,440
+surface temperature of the uh and
+
+1146
+00:57:02,719 --> 00:57:07,759
+particular in their case of the flower
+
+1147
+00:57:05,440 --> 00:57:10,159
+buds.
+
+1148
+00:57:07,760 --> 00:57:13,520
+So you can buy an instrument that's a
+
+1149
+00:57:10,159 --> 00:57:17,039
+black flat plate that simulates a leaf
+
+1150
+00:57:13,519 --> 00:57:19,440
+at night and put it out and that flat
+
+1151
+00:57:17,039 --> 00:57:22,798
+plate gets colder than the air and
+
+1152
+00:57:19,440 --> 00:57:26,318
+attach a sensor to it. Um and that and
+
+1153
+00:57:22,798 --> 00:57:29,679
+then also a single black sensor that in
+
+1154
+00:57:26,318 --> 00:57:31,279
+a sensor give a grower a sense of the
+
+1155
+00:57:29,679 --> 00:57:33,679
+radiation frost from a direct
+
+1156
+00:57:31,280 --> 00:57:35,680
+measurement as opposed to calculating it
+
+1157
+00:57:33,679 --> 00:57:38,639
+with all the other parameters of a
+
+1158
+00:57:35,679 --> 00:57:40,279
+weather station. Fruit crops in Utah are
+
+1159
+00:57:38,639 --> 00:57:42,960
+a much
+
+1160
+00:57:40,280 --> 00:57:45,359
+bigger agricultural sector than most
+
+1161
+00:57:42,960 --> 00:57:47,679
+people realize. We're Michigan and Utah
+
+1162
+00:57:45,358 --> 00:57:50,558
+are the two top producers in the nation
+
+1163
+00:57:47,679 --> 00:57:53,358
+for tart cherries. Um, it's a
+
+1164
+00:57:50,559 --> 00:57:55,200
+multi-million dollar industry and it's
+
+1165
+00:57:53,358 --> 00:57:58,480
+all concentrated here in the northern
+
+1166
+00:57:55,199 --> 00:58:00,639
+part of Utah. So, in recent years, we've
+
+1167
+00:57:58,480 --> 00:58:05,119
+done a lot to help fruit growers tell
+
+1168
+00:58:00,639 --> 00:58:07,759
+when to protect against radiation frost.
+
+1169
+00:58:05,119 --> 00:58:09,838
+So, I'm going to stop here with this
+
+1170
+00:58:07,760 --> 00:58:14,559
+section, especially since I made it to
+
+1171
+00:58:09,838 --> 00:58:16,838
+my end of my list, and we'll after
+
+1172
+00:58:14,559 --> 00:58:19,480
+break, we'll pick this up
+
+1173
+00:58:16,838 --> 00:58:23,358
+and talk about
+
+1174
+00:58:19,480 --> 00:58:27,039
+the applications of radiation frost and
+
+1175
+00:58:23,358 --> 00:58:31,039
+uh summarize all of the lectures with
+
+1176
+00:58:27,039 --> 00:58:33,920
+examples of this. So, and I and I think
+
+1177
+00:58:31,039 --> 00:58:33,920
+we have some sandwiches.
+

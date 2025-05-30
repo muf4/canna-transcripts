@@ -1,0 +1,965 @@
+[SPEAKER_02]: This is a production of Cornell
+University.
+[SPEAKER_02]: Thank you, Vipin.
+[SPEAKER_02]: Thank you, everyone, for joining me today
+to discuss my research.
+[SPEAKER_02]: And well, I tried to make it a little bit
+different with the previous talk about I
+[SPEAKER_02]: recently gave at Cornell.
+[SPEAKER_02]: So today we'll focus a little bit more on
+applications.
+[SPEAKER_02]: So as you can tell from the titles,
+Monitoring Pant Stress, Through Water Use
+[SPEAKER_02]: Perspective, Using Remote Sensing,
+and Cloud Computing.
+[SPEAKER_02]: And I think this is a really nice day to
+give a seminar talk.
+[SPEAKER_02]: It's Halloween and also a special Indian
+festival day.
+[SPEAKER_02]: And for Halloween, we have a trick or
+treat.
+[SPEAKER_02]: It's the same for our environment.
+[SPEAKER_02]: Do you treat it well?
+[SPEAKER_02]: Otherwise, it can get spooky.
+[SPEAKER_02]: Right.
+[SPEAKER_02]: So as we all know that the projected
+population in 2050 will be a large amount
+[SPEAKER_02]: of population.
+[SPEAKER_02]: So we also need to increase our food
+production to feed this increased
+[SPEAKER_02]: population.
+[SPEAKER_02]: And when we do that, we really need to
+assess how the current agriculture model
+[SPEAKER_02]: works to help us achieve both the food
+security and also the environment.
+[SPEAKER_02]: So studies indicated as the first figure
+here that with the current agriculture
+[SPEAKER_02]: model, we could somehow get less for the
+food security goal.
+[SPEAKER_02]: But our impact on the environment could be
+large.
+[SPEAKER_02]: And this is not what we want to see.
+[SPEAKER_02]: So to transition this from the top
+scenario to the second scenario,
+[SPEAKER_02]: we value that we achieve the goal for both
+food security and also environmental goal.
+[SPEAKER_02]: I think we really need to have innovation
+in agriculture management to help us.
+[SPEAKER_02]: As you can also tell, that water is a
+large component from the agriculture
+[SPEAKER_02]: impact.
+[SPEAKER_02]: And this impact could be further
+compounded by the drought.
+[SPEAKER_02]: And with the drought events is getting so
+hard to predict and also the drought to
+[SPEAKER_02]: start to show up in areas that
+historically don't experience drought.
+[SPEAKER_02]: So this is the U.S.
+[SPEAKER_02]: drought monitor on the top for the conus.
+[SPEAKER_02]: And on the second panel here is for the
+New York state.
+[SPEAKER_02]: As we can tell, although New York state,
+we don't really have those very severe
+[SPEAKER_02]: drought, which is the dark red color.
+[SPEAKER_02]: We do have drought and the drought tends
+to happen more frequent.
+[SPEAKER_02]: And if you zoom into a certain time period
+and look at when the drought happens for
+[SPEAKER_02]: each of the year, you can tell that the
+lines in this figure here, they are July
+[SPEAKER_02]: for each year.
+[SPEAKER_02]: So this shows that drought tends to happen
+during the growing season when the crop,
+[SPEAKER_02]: the plants, needs the water to grow.
+[SPEAKER_02]: So for not just agriculture, for natural
+resource, for natural environment,
+[SPEAKER_02]: water is so critical because too much
+water, too less water, both extreme can be
+[SPEAKER_02]: harmful for agriculture and for our
+natural environment.
+[SPEAKER_02]: So especially when we have drought,
+the plant doesn't have enough access to
+[SPEAKER_02]: the water, they start to be showing the
+stress signal.
+[SPEAKER_02]: And this stress could make a lot of other
+effect to develop other than just a
+[SPEAKER_02]: drought.
+[SPEAKER_02]: There will be a disease, the pest,
+and also this eventually will impact the
+[SPEAKER_02]: yield.
+[SPEAKER_02]: And also for natural forest, it will
+impact the forest ecosystem serving
+[SPEAKER_02]: functions.
+[SPEAKER_02]: So for now, people like with remote
+sensing, we can start to monitoring
+[SPEAKER_02]: general trends and with this, this is a
+USDA forest service model that they use
+[SPEAKER_02]: NDVI to try to find the stress signals.
+[SPEAKER_02]: Because if you find the stress signal,
+then you can start to think about how you
+[SPEAKER_02]: want to treat the stresses.
+[SPEAKER_02]: But one question here is NDVI is showing
+like basically how green your land surface
+[SPEAKER_02]: is.
+[SPEAKER_02]: But when the plant is under stress,
+it doesn't necessary to change color or to
+[SPEAKER_02]: shut their leaves as the first response to
+the stress.
+[SPEAKER_02]: So here we are really eager to look for an
+earlier signal that can tell us the stress
+[SPEAKER_02]: before the leaf turns to yellow or before
+the leaf start to drop.
+[SPEAKER_02]: So evapotranspiration.
+[SPEAKER_02]: This is a process that the water goes
+through the plant and return back to the
+[SPEAKER_02]: atmosphere and it uses the same path as
+the stomata.
+[SPEAKER_02]: It's a similar path as the carbon
+assimilation.
+[SPEAKER_02]: So what we think before the leaf change
+color, we will see a signal of water use
+[SPEAKER_02]: change and which could be an earlier
+signal for stress.
+[SPEAKER_02]: So talk a little bit more about
+evapotranspiration.
+[SPEAKER_02]: It's actually two terms together.
+[SPEAKER_02]: One is evaporation.
+[SPEAKER_02]: Another one is the transpiration.
+[SPEAKER_02]: So for evaporation, as you can tell,
+is the water returns back to the
+[SPEAKER_02]: atmosphere from different surfaces.
+[SPEAKER_02]: While the transpiration is the more
+biological part of the water use,
+[SPEAKER_02]: which is go through, which is the amount
+of water that the plant extract from the
+[SPEAKER_02]: soil, then return that back to the
+atmosphere.
+[SPEAKER_02]: So combining these two, we call these
+processes together as evapotranspiration.
+[SPEAKER_02]: And this is the second largest component
+in the hydrological cycle.
+[SPEAKER_02]: Of course, the first one is the
+precipitation.
+[SPEAKER_02]: And when we talk about evapotranspiration,
+actually, historically, this is a
+[SPEAKER_02]: parameter is hard to measure.
+[SPEAKER_02]: And it's hard to model, especially if you
+consider the difference between potential
+[SPEAKER_02]: ET and actual ET.
+[SPEAKER_02]: So a lot of previous studies, we use
+potential ET.
+[SPEAKER_02]: We use the rate per pressure deficit.
+[SPEAKER_02]: That's because it was just easier to
+calculate it from the meteorological
+[SPEAKER_02]: parameters.
+[SPEAKER_02]: However, there is key difference between
+this two terminology.
+[SPEAKER_02]: So the potential ET is the ideal condition
+and how much water can be returned back to
+[SPEAKER_02]: the atmosphere.
+[SPEAKER_02]: So as you can tell, if it's sunny,
+if it's windy, and if it's dry,
+[SPEAKER_02]: you would expect a higher potential ET
+because the atmosphere just needs a lot of
+[SPEAKER_02]: water.
+[SPEAKER_02]: So this is the demand, which is mostly for
+the potential ET part.
+[SPEAKER_02]: But whether we can provide that much water
+to return back to atmosphere, so that's
+[SPEAKER_02]: the limitation.
+[SPEAKER_02]: Combining both the demand and the
+limitation together is the actual
+[SPEAKER_02]: evapotranspiration.
+[SPEAKER_02]: So for the limitation part, we need to
+consider whether we have enough water in
+[SPEAKER_02]: the soil to support this and whether the
+vegetation is health and the stomata is
+[SPEAKER_02]: all open and ready to do the
+transpiration.
+[SPEAKER_02]: And also how rough the surface is.
+[SPEAKER_02]: The soil surface and also the canopy
+surface.
+[SPEAKER_02]: All these can impact actual
+evapotranspiration, which is the AET.
+[SPEAKER_02]: So today I will talk about the AET and I
+will go through the methods that we
+[SPEAKER_02]: improved, developed, improved,
+and also the product that we developed and
+[SPEAKER_02]: also applications.
+[SPEAKER_02]: So first we'll talk about the algorithm
+for the actual evapotranspiration.
+[SPEAKER_02]: Of course, there are, you know,
+now with machine learning, there are a lot
+[SPEAKER_02]: of methods.
+[SPEAKER_02]: There are this process-based model and it
+can be also machine learning data-driven
+[SPEAKER_02]: model.
+[SPEAKER_02]: And here what I'm going to talk about is
+energy balance model.
+[SPEAKER_02]: So why is energy balance?
+[SPEAKER_02]: Think about, you know, like in physics,
+there are actually a lot of assumptions is
+[SPEAKER_02]: the balance, a mass conservation,
+you know, energy conservation.
+[SPEAKER_02]: So the energy balance method is we assume
+the natural radiation we get, like the
+[SPEAKER_02]: energy we get on the earth's surface,
+it will be partitioned into three energy
+[SPEAKER_02]: components.
+[SPEAKER_02]: One is how much energy is stored in the
+soil.
+[SPEAKER_02]: And another part is how much energy is
+used to change the air temperature.
+[SPEAKER_02]: Like when you feel it's hot outside or
+it's cold outside, that's the sensible
+[SPEAKER_02]: heat.
+[SPEAKER_02]: And then the rest of that is the latent
+heat, which is the energy used to transfer
+[SPEAKER_02]: the water from the soil or water surface
+back to a vapor condition.
+[SPEAKER_02]: So which is the part of the energy that is
+used for evapotranspiration.
+[SPEAKER_02]: So in a lot of this energy balance models,
+we actually calculate this latent heat,
+[SPEAKER_02]: which is the OE term there, as a residual
+of the system, because it's just so hard
+[SPEAKER_02]: to directly estimate it.
+[SPEAKER_02]: So here I'm showing you one of these
+energy balance model, which is called
+[SPEAKER_02]: Alexey Disselexe model.
+[SPEAKER_02]: And this is the model that I have been
+work on since my post-op.
+[SPEAKER_02]: And it was developed by my post-op
+advisor.
+[SPEAKER_02]: And for this model, it actually has two
+components.
+[SPEAKER_02]: One component is on the coarse resolution,
+which is Alexey model.
+[SPEAKER_02]: The reason we have this is because to have
+this energy closure, we need to have a
+[SPEAKER_02]: system that you can consider the closure.
+[SPEAKER_02]: So to consider this system, we need the
+atmospheric boundary layer condition.
+[SPEAKER_02]: So that's the hard part to get,
+so that we rely on the geostationary data,
+[SPEAKER_02]: which is the weather forecast satellite in
+the space, because it's coarse resolution,
+[SPEAKER_02]: but it's very frequent.
+[SPEAKER_02]: So from that, we can grab the information
+of the atmospheric boundary layer
+[SPEAKER_02]: development information.
+[SPEAKER_02]: Then we can have a closed system to
+consider the energy balance.
+[SPEAKER_02]: So for the coarse resolution part,
+one key input is the land surface
+[SPEAKER_02]: temperature.
+[SPEAKER_02]: So this goes to the cooling effect of
+evapotranspiration.
+[SPEAKER_02]: I always like to use this example in the
+hot summer days.
+[SPEAKER_02]: When you sweat, actually your skin is
+cooler.
+[SPEAKER_02]: And this is the same for vegetation
+evapotranspiration.
+[SPEAKER_02]: If you have water transferred back to
+atmosphere, it uses the energy.
+[SPEAKER_02]: So it has the cooling effect.
+[SPEAKER_02]: Your leaf surface will be cooler.
+[SPEAKER_02]: So that's why land surface temperature is
+a very important parameter that we use in
+[SPEAKER_02]: the model.
+[SPEAKER_02]: Other than that, we also need to know the
+conditions of land surface, which we use
+[SPEAKER_02]: vegetation index.
+[SPEAKER_02]: So we know where the vegetation is and
+where we know that their soil is,
+[SPEAKER_02]: so that we can estimate E and T,
+because E is from different surfaces and T
+[SPEAKER_02]: is from the plants.
+[SPEAKER_02]: So that's the coarse resolution.
+[SPEAKER_02]: And for the finer spatial resolution,
+we call it desegregation of Alexi,
+[SPEAKER_02]: which is dysalexy.
+[SPEAKER_02]: So for dysalexy, we borrow this air,
+T air estimation for the boundary
+[SPEAKER_02]: condition that we estimated from Alexi and
+use that in the dysalexy, but change the
+[SPEAKER_02]: land surface temperature and vegetation
+indexing input to a finer spatial
+[SPEAKER_02]: resolution satellite data, which now we
+use land fat, equal stress, and weirs.
+[SPEAKER_02]: So these are different satellites in the
+space.
+[SPEAKER_02]: So now you can see this is really a
+hierarchical structure that involves the
+[SPEAKER_02]: satellite data from different spatial
+resolution.
+[SPEAKER_02]: And for satellite data, normally if it's
+different spatial resolution, it's
+[SPEAKER_02]: different in temporal resolution.
+[SPEAKER_02]: The temporal resolution meaning is how
+often it comes back to the same place.
+[SPEAKER_02]: We also call this as revisiting time.
+[SPEAKER_02]: So combining all these different
+satellites together, we can estimate
+[SPEAKER_02]: evapotranspiration at different spatial
+and temporal resolution.
+[SPEAKER_02]: Normally, closer spatial resolution has
+more frequent revisiting, and the finer
+[SPEAKER_02]: spatial resolution has a longer revisiting
+time.
+[SPEAKER_02]: So as you can tell, that for a lot of
+agriculture applications, what we need is
+[SPEAKER_02]: high in both, in both spatial resolution
+and in both in temporal resolution.
+[SPEAKER_02]: So that's why we came up with a data
+fusion method.
+[SPEAKER_02]: Then we can combine the advantages of high
+frequency from course resolution data and
+[SPEAKER_02]: the high spatial resolution observations
+from those satellites that they don't have
+[SPEAKER_02]: a very frequent revisiting time.
+[SPEAKER_02]: So combining all this, we want to get a
+daily field scale evapotranspiration
+[SPEAKER_02]: estimation.
+[SPEAKER_02]: So I will give a little bit more about
+this data fusion, like multi-source data
+[SPEAKER_02]: system, because I want to guess a little
+bit new things in my slides that I didn't
+[SPEAKER_02]: talk about.
+[SPEAKER_02]: In my interview talk and also another
+talks.
+[SPEAKER_02]: So this is different sources of land
+surface temperature.
+[SPEAKER_02]: As we identified that land surface
+temperature is really important to input
+[SPEAKER_02]: for our energy balance model.
+[SPEAKER_02]: So these are the satellites that we are
+currently using, which the first is
+[SPEAKER_02]: geostationary one is the GOES data,
+the weather satellite for the United
+[SPEAKER_02]: States, MODIS and WEIRS is polar orbit.
+[SPEAKER_02]: Polar orbit means they go through the
+polar part.
+[SPEAKER_02]: So that's the MODIS and WEIRS.
+[SPEAKER_02]: The spatial resolution is 500 meter,
+but is daily revisiting.
+[SPEAKER_02]: And Landsat has been a really golden
+observations for us working on field of
+[SPEAKER_02]: scale because it provides 30 meter spatial
+resolution but the revisiting time is
+[SPEAKER_02]: relatively longer because it's 16 days.
+[SPEAKER_02]: But now we have two Landsat in the space,
+Landsat 8 and Landsat 9.
+[SPEAKER_02]: So combining these two together,
+we can get the revisiting time to eight
+[SPEAKER_02]: days.
+[SPEAKER_02]: And then the ISS orbit is the EcoStress
+sensor.
+[SPEAKER_02]: EcoStress is a thermal only sensor.
+[SPEAKER_02]: So it only measures the land surface
+temperature.
+[SPEAKER_02]: It's on the International Space Station.
+[SPEAKER_02]: Because it's on the International Space
+Station, so it goes to a very different
+[SPEAKER_02]: orbit.
+[SPEAKER_02]: So revisiting time is about four days.
+[SPEAKER_02]: And also considering that in the future,
+we also have multiple sensors that is
+[SPEAKER_02]: planned in the future.
+[SPEAKER_02]: For example, the Trishnak from European
+and Landsat NEXT, which will be launched
+[SPEAKER_02]: in 2030, which will be launched by NASA
+and hosted by USGS.
+[SPEAKER_02]: So why we need all these data together,
+this is a simple identification of these
+[SPEAKER_02]: different data, their frequency.
+[SPEAKER_02]: And this area actually is for California.
+[SPEAKER_02]: California is already clear during green
+season.
+[SPEAKER_02]: And you see a more added value actually
+for a cloudy area.
+[SPEAKER_02]: So for the first one, Landsat 8 and 9,
+which is the key input currently for a lot
+[SPEAKER_02]: of operational product of ET.
+[SPEAKER_02]: Then Sentinel-2 is the European satellite,
+which doesn't have thermal observation.
+[SPEAKER_02]: So it doesn't measure land surface
+temperature, but we can get vegetation
+[SPEAKER_02]: index from Sentinel.
+[SPEAKER_02]: And EcoStress is thermal only.
+[SPEAKER_02]: It just measures land surface temperature.
+[SPEAKER_02]: So combine these all together,
+we can see a lot more samples that we can
+[SPEAKER_02]: get over a green season.
+[SPEAKER_02]: Which can help us to better estimate
+evapotranspiration.
+[SPEAKER_02]: Because if you don't have satellite
+observations, you can only do is
+[SPEAKER_02]: interpolate between the two days that you
+have observation, which is not ideal.
+[SPEAKER_02]: The ideal condition is we can get
+observation for each day, but there will
+[SPEAKER_02]: be a long way to go.
+[SPEAKER_02]: And also comparing with the Landsat and
+EcoStress, this is how many clear images
+[SPEAKER_02]: that we can use for a year.
+[SPEAKER_02]: This is in 2022.
+[SPEAKER_02]: With darker color, it's more images over
+that area.
+[SPEAKER_02]: So you can see Landsat really have limited
+images.
+[SPEAKER_02]: And combining with EcoStress, there are a
+lot more.
+[SPEAKER_02]: So the difference is we use the number of
+EcoStress minus the number of Landsat.
+[SPEAKER_02]: So we can get the number of how many more
+images we can get.
+[SPEAKER_02]: So the question is, okay, so we have all
+these satellite observations, and there
+[SPEAKER_02]: will be more in the future.
+[SPEAKER_02]: Whether you can directly use them
+together?
+[SPEAKER_02]: Actually not.
+[SPEAKER_02]: Because they are so different.
+[SPEAKER_02]: The key difference is the spatial
+resolution is different.
+[SPEAKER_02]: So as you can tell that Landsat 8,
+EcoStress and WEIRS, this is the relative
+[SPEAKER_02]: the image from the sensor, and they get
+coarse and coarse.
+[SPEAKER_02]: So what we want is field scale.
+[SPEAKER_02]: And if you look at the WEIRS data,
+you don't really tell the field anymore.
+[SPEAKER_02]: So what we need to do is we need to first
+unify the land surface temperature from
+[SPEAKER_02]: different sensors.
+[SPEAKER_02]: And here we use the data mining sharpener,
+which is a machine learning based method.
+[SPEAKER_02]: For the land surface temperature,
+which we can sharpen the coarse resolution
+[SPEAKER_02]: of land surface temperature to a field
+scale.
+[SPEAKER_02]: Then we can put this as input into our
+model to estimate field scale
+[SPEAKER_02]: evapotranspiration.
+[SPEAKER_02]: Okay, so now with all these, you know,
+satellite method, energy balance,
+[SPEAKER_02]: what we actually want to get is a 30 meter
+data.
+[SPEAKER_02]: Evapotranspiration estimation so that we
+can use it for different applications.
+[SPEAKER_02]: So now we are going to start with some
+applications because this talk will focus
+[SPEAKER_02]: on the plant stress detect.
+[SPEAKER_02]: I will use our backyard work at California
+as an example to demonstrate how we detect
+[SPEAKER_02]: plant stress using evapotranspiration
+data.
+[SPEAKER_02]: So this is a Green Pax project,
+which is a collaboration between NASA E&G
+[SPEAKER_02]: Gallo and USDA.
+[SPEAKER_02]: So the project lead is Bill Kostas and
+also Marsha Anderson was my coastal
+[SPEAKER_02]: advisor.
+[SPEAKER_02]: So this is a project that we have been
+working on for many years actually.
+[SPEAKER_02]: And these are the sites that we selected.
+[SPEAKER_02]: They are E&G Gallo vineyard.
+[SPEAKER_02]: And for each of the sites, we have
+observation capabilities, the instrument.
+[SPEAKER_02]: The flux tower, phenocamp, all these
+observations built in these sites.
+[SPEAKER_02]: And we evaluate our model to
+evapotranspiration for each of the sites
+[SPEAKER_02]: by comparing with the flux tower
+observations.
+[SPEAKER_02]: So here it can give us confidence how we
+can further use the model of the
+[SPEAKER_02]: evapotranspiration.
+[SPEAKER_02]: So you can tell that the dots here are
+observations and the red line is our
+[SPEAKER_02]: simulated data.
+[SPEAKER_02]: This is a 30 meter field scale ET,
+which performs very well.
+[SPEAKER_02]: And other than just look at how it works
+for these flux tower, we can also look at
+[SPEAKER_02]: the spatial pattern.
+[SPEAKER_02]: So this is the cumulative ET for this
+vineyard area and start from the start of
+[SPEAKER_02]: the green season and all the way to the
+peak of the green season.
+[SPEAKER_02]: So you can tell how these different fields
+they start to use a different amount of
+[SPEAKER_02]: irrigation over the year.
+[SPEAKER_02]: And also these are the vineyard and there
+are also natural trees over there.
+[SPEAKER_02]: So it's very useful for the growers that
+they can look at this spatial map to
+[SPEAKER_02]: understand how the different water is
+used.
+[SPEAKER_02]: Then how this water use can be transferred
+to a stress signal.
+[SPEAKER_02]: So we actually using a very simple anomaly
+method.
+[SPEAKER_02]: So the anomaly normally compares with a
+baseline, right?
+[SPEAKER_02]: So if you have a long-term observation,
+you know the baseline.
+[SPEAKER_02]: And for each of the data comes,
+you can compare that ET value with the
+[SPEAKER_02]: baseline and that can give you a signal of
+stress.
+[SPEAKER_02]: But here we are not actually directly
+comparing the ET value because ET changes
+[SPEAKER_02]: a lot.
+[SPEAKER_02]: It's not just impacted by the plant
+itself.
+[SPEAKER_02]: A lot of actually is impacted by the
+weather, right?
+[SPEAKER_02]: Today and tomorrow the plant won't change
+much, but you probably see the ET change a
+[SPEAKER_02]: lot if today is sunny and tomorrow is
+cloudy.
+[SPEAKER_02]: So we normalized the evapotranspiration
+use the reference ET to remove this day by
+[SPEAKER_02]: day difference of the weather condition.
+[SPEAKER_02]: Then we use this ratio to calculate the
+FRET anomaly.
+[SPEAKER_02]: So this is the index that we use to
+capture the stress.
+[SPEAKER_02]: So this is one example of one of the
+vineyard.
+[SPEAKER_02]: So on the top is this FRET value.
+[SPEAKER_02]: The red lines are our model to the black
+dots are the observations.
+[SPEAKER_02]: We can use these data to look at these
+abnormal values.
+[SPEAKER_02]: And when you compare this abnormal values
+with the vineyard management, you will see
+[SPEAKER_02]: all these differences comparing with
+normal condition.
+[SPEAKER_02]: Sometimes it's due to the drought.
+[SPEAKER_02]: As you can tell the California drought,
+sometimes it's due to the management.
+[SPEAKER_02]: For example, this is a time period that
+the graft and the trimmed.
+[SPEAKER_02]: So we use this anomaly index to help us
+identify what's different comparing with
+[SPEAKER_02]: the baseline.
+[SPEAKER_02]: So with this, we can look at the spatial
+pattern of water used for different years
+[SPEAKER_02]: among different monsters.
+[SPEAKER_02]: And then when we use this value to minus
+the baseline, we can clearly tell which
+[SPEAKER_02]: part is not performing as supposed to be.
+[SPEAKER_02]: So this is different as of what baseline
+tell you that the red color means it's
+[SPEAKER_02]: lower than the baseline, which gave you a
+signal of either the plant needs water
+[SPEAKER_02]: because they are using less amount of
+water or there is also a signal that there
+[SPEAKER_02]: might be some kind of disease or pests for
+those fields that impacted the plant water
+[SPEAKER_02]: use.
+[SPEAKER_02]: Then growers can use this map to look at
+to the field to look at the field for
+[SPEAKER_02]: further management.
+[SPEAKER_02]: So GripHex is a large project.
+[SPEAKER_02]: I'm a part of it.
+[SPEAKER_02]: And what is very exciting is actually just
+this Tuesday and Wednesday, a few leaders
+[SPEAKER_02]: of the GripHex project visited us.
+[SPEAKER_02]: And Katie Gold from the Horticulture and
+me, we together hosted them at Geneva
+[SPEAKER_02]: campus.
+[SPEAKER_02]: So as you can tell, Bill Kustas,
+Martha Anderson, Joe Alferi are here to
+[SPEAKER_02]: visit our Geneva vineyard site.
+[SPEAKER_02]: And this is also part of my new research
+that I want to bring the GripHex
+[SPEAKER_02]: experience to our New York vineyard
+growers and to see under different climate
+[SPEAKER_02]: conditions with different varieties of
+grapes, how much we learned from GripHex
+[SPEAKER_02]: can help the growers in New York.
+[SPEAKER_02]: So stay tuned.
+[SPEAKER_02]: Hopefully next time I will have some
+results for this.
+[SPEAKER_02]: And we are planning a flux tower over one
+of Katie's field site.
+[SPEAKER_02]: So she has the disease measurement and I
+will have the water and carbon flux
+[SPEAKER_02]: measurement.
+[SPEAKER_02]: Collectively, I think we will have a lot
+of interesting findings.
+[SPEAKER_02]: Okay, so other than the crops,
+actually, I also did a lot of work for
+[SPEAKER_02]: natural forest.
+[SPEAKER_02]: But because of time, I'm not going to talk
+about this in detail.
+[SPEAKER_02]: But we did use this water use information
+to help us to understand plantation
+[SPEAKER_02]: management, the thinning, harvest.
+[SPEAKER_02]: These are all the signals that you can
+find from water use.
+[SPEAKER_02]: And these are all published papers.
+[SPEAKER_02]: If you're interested, you can look at
+them.
+[SPEAKER_02]: And we'll look at Missouri forest draw to
+impact and also how the forest
+[SPEAKER_02]: compositions and management impact
+different water use.
+[SPEAKER_02]: And also the restoration of different
+kinds in the southeast area, which is a
+[SPEAKER_02]: large conservation effort in southeast
+now.
+[SPEAKER_02]: And also wildfire impact over the west of
+US.
+[SPEAKER_02]: So these are the works that we have
+published.
+[SPEAKER_02]: So now you can tell that we spend a lot of
+time to explore how we can use this data.
+[SPEAKER_02]: And when people start to adapt to this
+method, there's new issue is how we can
+[SPEAKER_02]: provide people the data.
+[SPEAKER_02]: Because this is very commercial resource
+intensive.
+[SPEAKER_02]: So for a local server, we cannot estimate
+a large area.
+[SPEAKER_02]: So that's why a few earlier studies,
+you can tell they are just limited with
+[SPEAKER_02]: small area, because just we cannot run it
+for a large area.
+[SPEAKER_02]: So how we can provide this regional data
+to people who are interested.
+[SPEAKER_02]: So this is another key project that I also
+have been working on for multiple years.
+[SPEAKER_02]: And I'm super excited to see how this
+project turned to.
+[SPEAKER_02]: So this is the opening key project.
+[SPEAKER_02]: It started with a lot of collaboration
+efforts from different government agencies
+[SPEAKER_02]: and universities.
+[SPEAKER_02]: And actually at that time, we started to
+think how we can provide this data to the
+[SPEAKER_02]: end users, not just in the scientific
+community.
+[SPEAKER_02]: So what we did is we brought our model
+into the cloud, which is the Google Earth
+[SPEAKER_02]: Engine.
+[SPEAKER_02]: So we integrated six different ET models
+into Google Earth Engine.
+[SPEAKER_02]: Then we can directly do all the
+estimations in the cloud.
+[SPEAKER_02]: Nothing need to be done locally.
+[SPEAKER_02]: Everything is in the cloud.
+[SPEAKER_02]: And the results are safe.
+[SPEAKER_02]: And to make the accessible of the data,
+we also developed a reference,
+[SPEAKER_02]: which is opendata.org.
+[SPEAKER_02]: And you can look at the water use from
+different fields.
+[SPEAKER_02]: And we also developed the API that people
+can directly download images and time
+[SPEAKER_02]: series, do a little bit more advanced data
+extraction.
+[SPEAKER_02]: So the six models that we have is these
+well-established six models.
+[SPEAKER_02]: And Alexi Dislexi was one of them.
+[SPEAKER_02]: And we also have another ensemble value,
+because a lot of times users, they don't
+[SPEAKER_02]: need six values, especially when these six
+values are all different.
+[SPEAKER_02]: So they want one value, which is ensemble.
+[SPEAKER_02]: So we also studied a lot how to get to
+this ensemble.
+[SPEAKER_02]: And we went through careful evaluation.
+[SPEAKER_02]: And the evaluation results turned out that
+the ensemble actually performs the best,
+[SPEAKER_02]: which is also what we want to see.
+[SPEAKER_02]: And we also have published another
+evaluation paper that was published
+[SPEAKER_02]: earlier this year on nature water,
+which is also the cover page.
+[SPEAKER_02]: And from this study, we evaluated our open
+ET product comparing with the different
+[SPEAKER_02]: flux towers all across the conus.
+[SPEAKER_02]: So that paper have very detailed
+information about the performance of
+[SPEAKER_02]: different models and the performance of
+models at different locations.
+[SPEAKER_02]: So now we have the ET data.
+[SPEAKER_02]: We are still like work very hard to expand
+this to the east.
+[SPEAKER_02]: So now I think we have a little bit more
+but didn't get to the New York state yet.
+[SPEAKER_02]: And this is where the multi-source data
+could be very helpful for the next stage,
+[SPEAKER_02]: because we all know the eastern US is
+cloudier than the western US.
+[SPEAKER_02]: And we'll need more satellites to work on
+this.
+[SPEAKER_02]: And this is if you get to the open ET
+website, you can zoom into the website.
+[SPEAKER_02]: We already have filled boundary there,
+you can look out to the water use for each
+[SPEAKER_02]: of the field.
+[SPEAKER_02]: And currently we have data from 2016 to
+present, I think.
+[SPEAKER_02]: And also we have this API there.
+[SPEAKER_02]: You can use it to download data if you're
+interested to explore in a certain area.
+[SPEAKER_02]: We are also building this Farms tool.
+[SPEAKER_02]: To use this Farms tool, farmers can bring
+their own boundary shape file into the
+[SPEAKER_02]: platform so that they can get routinely
+report of their field's water use.
+[SPEAKER_02]: So I do see there's limited of time.
+[SPEAKER_02]: But I also want to show you that with the
+open ET, we are not limited to small
+[SPEAKER_02]: areas.
+[SPEAKER_02]: We can do regional studies but still keep
+this fine spatial resolution.
+[SPEAKER_02]: This is a study that my PhD student,
+she's currently working on, look at lower
+[SPEAKER_02]: Mississippi alluvial plant agriculture
+activities and how these activities impact
+[SPEAKER_02]: the water use.
+[SPEAKER_02]: So this is the study area.
+[SPEAKER_02]: And along the Mississippi River,
+you can see the highly cultivated area.
+[SPEAKER_02]: And we use the open ET data to analyze for
+these different crop types.
+[SPEAKER_02]: Soybean is a green color, corn,
+cotton, and rice.
+[SPEAKER_02]: How these different crops use different
+amount of water.
+[SPEAKER_02]: And here we can get a very typical plant
+water use curve.
+[SPEAKER_02]: So this is the average for multiple years,
+which means that a lot of weeds,
+[SPEAKER_02]: what we observed in the field,
+that the yellow line corn, it shows a
+[SPEAKER_02]: higher water use during the first stage of
+the green stage.
+[SPEAKER_02]: And the cotton doesn't need that much
+water.
+[SPEAKER_02]: So this is what we got statistically from
+the open ET data.
+[SPEAKER_02]: And we can also look at the water
+accounting for this region.
+[SPEAKER_02]: The same as you understand your bank
+account, we also want to understand the
+[SPEAKER_02]: water account.
+[SPEAKER_02]: How much water we used at different
+locations and how much water is used
+[SPEAKER_02]: extracted from groundwater.
+[SPEAKER_02]: The groundwater information is this blue
+bar that shows all negative value.
+[SPEAKER_02]: The negative value is always withdrawn.
+[SPEAKER_02]: So that also explains why this area we see
+a consistent groundwater depletion.
+[SPEAKER_02]: And for these drought years, we do see a
+higher groundwater withdrawal to maintain
+[SPEAKER_02]: the agriculture activity over this area.
+[SPEAKER_02]: And again, we can also look at the spatial
+pattern for a different area that tends to
+[SPEAKER_02]: use different amount of water over a green
+season.
+[SPEAKER_02]: So this is the same area, starts from May
+all the way to August.
+[SPEAKER_02]: On the top is leaf area index.
+[SPEAKER_02]: And the second panel is the
+evapotranspiration, which is the water
+[SPEAKER_02]: use.
+[SPEAKER_02]: So I will try to go quick because this
+will be something I will further work on.
+[SPEAKER_02]: The third panel is very high resolution
+ET.
+[SPEAKER_02]: Because 30 meters sometimes can be limited
+for specialty crops.
+[SPEAKER_02]: This is a vineyard from Katie's field that
+we do need finer spatial resolution
+[SPEAKER_02]: details.
+[SPEAKER_02]: And part of my group's work is using UAV
+data.
+[SPEAKER_02]: So we fly drones to collect images.
+[SPEAKER_02]: Then we can really get very detailed
+information on the ground.
+[SPEAKER_02]: This is a two-site fully irrigated and
+deficit site.
+[SPEAKER_02]: And you can see how these are input to be
+different.
+[SPEAKER_02]: And this is our evapotranspiration
+estimation, the first one.
+[SPEAKER_02]: You can also tell how different the
+evapotranspiration use for the fully
+[SPEAKER_02]: irrigated deficit.
+[SPEAKER_02]: They are next to each other, but they are
+very different.
+[SPEAKER_02]: So this is a three-meter
+evapotranspiration data.
+[SPEAKER_02]: And this is a 30-meter.
+[SPEAKER_02]: So now you can tell why we want to go a
+little bit further.
+[SPEAKER_02]: This should be fine for farm belt field
+crops, but for a lot of the specialty
+[SPEAKER_02]: crops, we do need a finer spatial
+resolution.
+[SPEAKER_02]: My group is also working on a deep
+learning method to help us directly
+[SPEAKER_02]: sharpen the open ET 30-meter data using
+planet observations to get a three-meter
+[SPEAKER_02]: ET.
+[SPEAKER_02]: For the specialty crop management.
+[SPEAKER_02]: And with now a lot of interest from
+different fields that they want to look
+[SPEAKER_02]: at, either the water use or plant response
+or water accounting, you can see there are
+[SPEAKER_02]: new ET data every day.
+[SPEAKER_02]: You can see new publications every day
+using ET or try to produce ET.
+[SPEAKER_02]: So with a lot of these new effort,
+how we can have a standard to evaluate
+[SPEAKER_02]: these new data.
+[SPEAKER_02]: If I just change a model applied to an
+area, can I claim it as a new model or
+[SPEAKER_02]: whether my evaluation method is a standard
+method?
+[SPEAKER_02]: There is no standard now.
+[SPEAKER_02]: So what I'm currently doing is I'm leading
+a group of scientists internationally from
+[SPEAKER_02]: different countries, Australia,
+China, Europe, that we are trying to
+[SPEAKER_02]: understand what's the current status of
+the satellite-based evapotranspiration
+[SPEAKER_02]: product.
+[SPEAKER_02]: And through this AGU talk, we will further
+establish a working group that will work
+[SPEAKER_02]: together to get a protocol to help the
+entire remote sensing community to get a
+[SPEAKER_02]: standard for the ET data evaluation.
+[SPEAKER_02]: So with this, I'm going to conclude my
+talk.
+[SPEAKER_02]: So it's basically the take-home messages.
+[SPEAKER_02]: We spend a lot of effort to make this as a
+product open to the public, especially
+[SPEAKER_02]: open to the users.
+[SPEAKER_02]: And then this data can be used for a lot
+of applications, water accounting,
+[SPEAKER_02]: plant stress detection, on-farm
+management.
+[SPEAKER_02]: And we are still working on a lot more of
+this exciting applications.
+[SPEAKER_02]: And I also want to thank my funding
+agencies for all this work.
+[SPEAKER_02]: Thank you so much.
+[SPEAKER_02]: Do we have time for... Yeah, Johannes,
+we do have time for questions.
+[SPEAKER_01]: Thank you so much.
+[SPEAKER_01]: That's very impressive.
+[SPEAKER_01]: I'm really excited about this.
+[SPEAKER_01]: That question about data ownership,
+you mentioned the aspirationist and
+[SPEAKER_01]: evidence for it, that it's open,
+accessible, but who owns the data?
+[SPEAKER_01]: You're working with Google Earth.
+[SPEAKER_01]: Google probably uses the data for all
+kinds of things and maybe claims some
+[SPEAKER_01]: ownership.
+[SPEAKER_01]: So what are the conversations about that?
+[SPEAKER_01]: Not that I trust actually governments any
+better, especially when the past is
+[SPEAKER_01]: potentially coming upon us next week,
+but who can be trusted with these very
+[SPEAKER_01]: important public goods?
+[SPEAKER_01]: And how do you and your colleagues are
+talking about ownership of these data for
+[SPEAKER_01]: the future?
+[SPEAKER_02]: Oh, thank you so much for this important
+question.
+[SPEAKER_02]: The question is about ownership of the
+OpenET data.
+[SPEAKER_02]: So we do have a lot of discussions.
+[SPEAKER_02]: And what we actually have now is we are
+trying to define a better intelligence
+[SPEAKER_02]: property certificate for this data.
+[SPEAKER_02]: So there is like a more computer science
+field.
+[SPEAKER_02]: There are a bunch of these IP certificates
+we can use.
+[SPEAKER_02]: And later we choose one of them.
+[SPEAKER_02]: There's a number, I cannot recall it.
+[SPEAKER_02]: So we choose one of that.
+[SPEAKER_02]: So that data is open and people can grab
+it to modify it, which I don't know
+[SPEAKER_02]: whether we want to see that.
+[SPEAKER_02]: But further actually, the OpenET group,
+we formed a non-profit organization,
+[SPEAKER_02]: I think, two years ago.
+[SPEAKER_02]: So we are having a non-profit organization
+that we have board member.
+[SPEAKER_02]: We have the capability to raise funds to
+allocate the funding between different
+[SPEAKER_02]: science teams.
+[SPEAKER_02]: And how the Google Earth engine is
+involved, I don't think they really claim
+[SPEAKER_02]: the ownership.
+[SPEAKER_02]: But I do see the tricky part.
+[SPEAKER_02]: Because among our in-group discussion,
+we discussed a lot about when Google Earth
+[SPEAKER_02]: engine is going to start to charge us and
+how much it will charge us.
+[SPEAKER_01]: And this is the... Yeah.
+[SPEAKER_01]: And all the discussion about OpenAI is
+very similar.
+[SPEAKER_01]: Yes.
+Yeah.
+[SPEAKER_02]: Well, so far Google Earth engine has been
+supportive, but we had some discussions
+[SPEAKER_02]: about that.
+Yeah.
+[SPEAKER_02]: Thank you.
+[SPEAKER_02]: Other questions?
+[SPEAKER_00]: So it seems like most of the applications
+have been focused on sort of water stress
+[SPEAKER_00]: in the crops.
+Yeah.
+[SPEAKER_00]: And in upstate New York, we often might
+have the other problem where we have too
+[SPEAKER_00]: much water.
+Yes.
+[SPEAKER_00]: And I'm thinking about soil and nitrous
+oxide loss.
+[SPEAKER_00]: And I wonder if this tool could be useful
+for making field level predictions as to
+[SPEAKER_00]: sort of timing of fertilizer application
+or spatial distribution of fertilizer to
+[SPEAKER_00]: try to minimize them to grow.
+[SPEAKER_00]: To find wet spots and then avoid those wet
+spots or wet ponds.
+[SPEAKER_02]: Yes, for sure.
+[SPEAKER_02]: I think this will be a very interesting
+application.
+[SPEAKER_02]: And actually, like through the last two
+days workshop with the Green Pax team,
+[SPEAKER_02]: we were thinking about because for the
+vineyard here, not just like field crops,
+[SPEAKER_02]: vineyard, apple orchard, they all have
+this more water issue.
+[SPEAKER_02]: So we were thinking about to explore the
+data to see whether the higher ET could be
+[SPEAKER_02]: related to some of these, like what you
+talked about, the on-farm management and
+[SPEAKER_02]: could be linked with the pests and
+disease.
+[SPEAKER_02]: Yep.
+[SPEAKER_02]: This will be, I think, something new to
+the ET community to explore.
+[SPEAKER_02]: Thank you.
+[SPEAKER_02]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_02]: Thank you.
+[SPEAKER_02]: Thank you.
+Thank you.

@@ -1,0 +1,1374 @@
+[SPEAKER_02]: This is a production of Cornell
+University.
+[SPEAKER_00]: So as Adrian has mentioned, my original
+interest and motivation was in the
+[SPEAKER_00]: modeling of plants for, sorry,
+can we have this spotlight out?
+[SPEAKER_00]: Yeah, thank you.
+[SPEAKER_00]: If the point was to model plants for
+visual purposes, so let's say to create
+[SPEAKER_00]: scenes such as this one.
+[SPEAKER_00]: No, have it down.
+[SPEAKER_00]: Yeah, because there's lots of images which
+are quite dark.
+[SPEAKER_00]: Thank you.
+[SPEAKER_00]: And the question was, well, how to
+generate this kind of scenery easily?
+[SPEAKER_00]: So it turned out that the best way is to
+actually try to simulate the actual
+[SPEAKER_00]: processes of plant development.
+[SPEAKER_00]: And this is how I cross from computer
+graphics to developmental biology.
+[SPEAKER_00]: And the big question is, how patterns and
+forms emerge in the process of
+[SPEAKER_00]: development?
+[SPEAKER_00]: So this is actually pretty much a
+fundamental question of developmental
+[SPEAKER_00]: biology.
+[SPEAKER_00]: And today, I would like to focus on a
+problem which we were trying to address
+[SPEAKER_00]: most recently.
+[SPEAKER_00]: And this is how do forms of leaves emerge?
+[SPEAKER_00]: And this is a problem which is
+particularly interesting because of the
+[SPEAKER_00]: huge diversity of leaf forms in nature.
+[SPEAKER_00]: Moreover, even though for us, the
+difference between compound and simply
+[SPEAKER_00]: leaves is such a fundamental one,
+it plays, for example, a huge role in the
+[SPEAKER_00]: classification of leaves.
+[SPEAKER_00]: To begin with, the question is,
+is it simple?
+[SPEAKER_00]: Is it compound?
+[SPEAKER_00]: It turns out that it is also a very labile
+feature of leaf form.
+[SPEAKER_00]: And you can see that, well, often,
+even within a single plant, we may observe
+[SPEAKER_00]: leaves of very different forms,
+such as in this case in the flame tree.
+[SPEAKER_00]: So those are leaves which are picked from
+the same tree and kind of seem to be
+[SPEAKER_00]: located there without any rhyme or reason.
+[SPEAKER_00]: Some are multi-lobed.
+[SPEAKER_00]: Some are simple.
+[SPEAKER_00]: And in this case, there is no gradient to
+them.
+[SPEAKER_00]: Here is another example in the silver
+ragwort.
+[SPEAKER_00]: And over there, well, some early leaves
+tend to be simple.
+[SPEAKER_00]: And the later ones are, well, very,
+very dissected.
+[SPEAKER_00]: So clearly, a plant can produce this
+diversity quite easily.
+[SPEAKER_00]: And the question is, well, can we
+comprehend where the diversity comes from?
+[SPEAKER_00]: So although this would be a much more kind
+of nicer plant to work with if you want to
+[SPEAKER_00]: understand with the progression from
+simple to compound leaves, but well,
+[SPEAKER_00]: I don't think that anything is known about
+genetics of silver ragwort.
+[SPEAKER_00]: So we started from a plant about which
+something is known, namely Arabidopsis.
+[SPEAKER_00]: And well, so Arabidopsis is not at all the
+best plant for this because the leaves are
+[SPEAKER_00]: simple, but they have some serrations.
+[SPEAKER_00]: So the question is, well, can we
+understand where these serrations come
+[SPEAKER_00]: from?
+[SPEAKER_00]: So if, well, I put it up with Miltos
+Ciantis, then that's for now at Max Plant
+[SPEAKER_00]: Institute in Cologne, in trying to figure
+out what is the mechanism of patterning of
+[SPEAKER_00]: the serrations.
+[SPEAKER_00]: And several things came to picture.
+[SPEAKER_00]: Probably the most important is that the
+serrations correspond with the convergence
+[SPEAKER_00]: points of pin polarity.
+[SPEAKER_00]: So you can see here margin of the leaf and
+pin proteins, which are pumping oxen,
+[SPEAKER_00]: are polarized in such a way that they
+converge in the place, which coincides
+[SPEAKER_00]: with the location of a convergence point.
+[SPEAKER_00]: And by the way, you are going to see on
+other slides or many slides either letter
+[SPEAKER_00]: O or P. O is observation, and P is what we
+postulate on the basis of observations as
+[SPEAKER_00]: the basis of model construction,
+which is supposed to elucidate what's
+[SPEAKER_00]: going on.
+[SPEAKER_00]: So this is one observation.
+[SPEAKER_00]: Serrations are coinciding with this
+convergence point.
+[SPEAKER_00]: And the transport of oxen is very
+important because if it is impaired by
+[SPEAKER_00]: NPA, we have this kind of leaf margin
+without serrations.
+[SPEAKER_00]: And then also we lose this formation.
+[SPEAKER_00]: Formation of convergence points.
+[SPEAKER_00]: So it appeared that the key to the
+understanding of a serration formation is
+[SPEAKER_00]: the understanding of the action of oxen
+and how oxen-driven patterning happens.
+[SPEAKER_00]: So this is the question.
+[SPEAKER_00]: How and where do the convergence points
+emerge?
+[SPEAKER_00]: So we created a model in which I am going
+to show you.
+[SPEAKER_00]: And in this model, a cell is represented
+as a square.
+[SPEAKER_00]: Oxen concentration is a green square
+inside.
+[SPEAKER_00]: Fluxes of oxen are represented as white
+lines or arrows to show direction.
+[SPEAKER_00]: The wider the line, the bigger the flux.
+[SPEAKER_00]: And pin concentrations are shown as bars
+shown in red.
+[SPEAKER_00]: The wider the bar, the higher the
+concentration.
+[SPEAKER_00]: So in 2006, my student, Albert Smith,
+and also Henning Jonsson, who was then a
+[SPEAKER_00]: postdoc working at the University of
+California Irvine in collaboration with
+[SPEAKER_00]: Caltech, came up with the same idea of
+polarization, which is pins which are
+[SPEAKER_00]: transporters of oxen are, well,
+as observed, localized in a polar way to
+[SPEAKER_00]: some membranes.
+[SPEAKER_00]: So this kind of part of interaction
+between oxen and pins was basically by
+[SPEAKER_00]: then quite well documented.
+[SPEAKER_00]: But they postulated that pins are
+orienting themselves towards neighboring
+[SPEAKER_00]: cell with the highest concentration of
+oxen.
+[SPEAKER_00]: So the more oxen we have, the more pins
+are we going to have here.
+[SPEAKER_00]: So the question is, first, can this kind
+of fusion feedback create a pattern?
+[SPEAKER_00]: So here is a simulation which is
+illustrating this process.
+[SPEAKER_00]: We have a chain of cells.
+[SPEAKER_00]: And you can see this interaction in,
+well, this feedback in action.
+[SPEAKER_00]: And it results in the formation of
+convergence point and, well, oxen maximum.
+[SPEAKER_00]: And if this happens on a longer distance,
+then we obtain a pattern of approximately
+[SPEAKER_00]: equally spaced convergence points.
+[SPEAKER_00]: So this provides a mechanism for creating
+a number of convergence points in the
+[SPEAKER_00]: margin of the leaf.
+[SPEAKER_00]: But before I proceed there, I wanted to
+dwell a little bit on this model of
+[SPEAKER_00]: polarization.
+[SPEAKER_00]: So the model of polarization which was
+proposed by Smith and Johnson was,
+[SPEAKER_00]: in a sense, non-physical.
+[SPEAKER_00]: It was because it was assuming that a cell
+knows what is the concentration of oxen in
+[SPEAKER_00]: neighboring cells.
+[SPEAKER_00]: And, well, this violates the principle of
+locality.
+[SPEAKER_00]: It was kind of like, well, guessing what
+if another cell has insight without
+[SPEAKER_00]: providing a mechanism how it can be done.
+[SPEAKER_00]: So this was an open question, how actually
+it may happen.
+[SPEAKER_00]: And, well, recently, my post-doc Mik
+Cieslak and another PhD student,
+[SPEAKER_00]: Adam Ranion, came up with the idea,
+which is illustrated here.
+[SPEAKER_00]: So this is actually not invalidating this
+mechanism of polarizing towards the cell
+[SPEAKER_00]: with highest oxygen concentration,
+but it provides a possible mechanical
+[SPEAKER_00]: explanation.
+[SPEAKER_00]: So the idea is to separate efflux and
+influx.
+[SPEAKER_00]: And they are already separated because
+they are separate efflux carriers and
+[SPEAKER_00]: influx carriers in the cell.
+[SPEAKER_00]: So moving one more step, we assume that
+the cell can measure efflux and influx
+[SPEAKER_00]: separately.
+[SPEAKER_00]: And it is actually possible to come up
+with, well, actually too many plausible
+[SPEAKER_00]: biochemical mechanisms for measuring
+unidirectional fluxes.
+[SPEAKER_00]: So now it turns out that if you assume
+that, well, on one hand, you assume that
+[SPEAKER_00]: there is this presence of oxen efflux
+promoting pins.
+[SPEAKER_00]: This is part of all theories of oxygen
+polarization going back to Sachs'
+[SPEAKER_00]: canalization theory.
+[SPEAKER_00]: If you assume that the influx has opposite
+effect, then you have pure canalization in
+[SPEAKER_00]: the style of Sachs, which results in
+coordinated polarization of all pins in
+[SPEAKER_00]: one way.
+[SPEAKER_00]: So this is good for creating long
+coordinated files of cells like in the
+[SPEAKER_00]: case of Venetian.
+[SPEAKER_00]: If, however, we change the sign,
+and influx also polarizes pins here,
+[SPEAKER_00]: so whether oxygen flows this way or
+whether it flows that way, it both has the
+[SPEAKER_00]: same effect of promoting polarization of
+oxygen here.
+[SPEAKER_00]: Then we are getting convergence points.
+[SPEAKER_00]: So this provides a plausible mechanism in
+which a cell does not have to look into
+[SPEAKER_00]: what happens in a different cell.
+[SPEAKER_00]: It just checks what are unidirectional
+fluxes out and in and makes the serum out
+[SPEAKER_00]: of this.
+[SPEAKER_00]: Moreover, well, it can be shown that this
+change of sign here can be accomplished in
+[SPEAKER_00]: a quite simple biochemical network by
+changing the rate of a single reaction,
+[SPEAKER_00]: which would explain why so often we see
+changes of polarization from one to
+[SPEAKER_00]: another type.
+[SPEAKER_00]: OK, so one way or another, we have a
+mechanism for forming convergence points.
+[SPEAKER_00]: Another question is how these convergence
+points are emerging in the growing margin
+[SPEAKER_00]: of the leaf.
+[SPEAKER_00]: And here, well, the postulate goes
+actually to 19th century, when Hofmeister
+[SPEAKER_00]: proposed, well, looking mainly at
+philotaxis, but this is more general
+[SPEAKER_00]: principle, at patterning processes and
+formulated what is known as the first
+[SPEAKER_00]: available space theory, according to which
+new organs are created wherever is enough
+[SPEAKER_00]: space for them.
+[SPEAKER_00]: So if we apply this to margin,
+we have the following situation.
+[SPEAKER_00]: We have a leaf, small one, kind of leaf
+primordium, in which we have a convergence
+[SPEAKER_00]: point.
+[SPEAKER_00]: This convergence point actually is the one
+which patterned the position of this leaf
+[SPEAKER_00]: at the first place as a part of
+philotaxis.
+[SPEAKER_00]: Now this leaf grows, and then it grows,
+the margin expands, creating space for new
+[SPEAKER_00]: convergence points.
+[SPEAKER_00]: And this process continues.
+[SPEAKER_00]: So as the margin goes, more and more
+convergence points are formed.
+[SPEAKER_00]: And if you assume, according to the
+observation, that convergence points
+[SPEAKER_00]: correspond to the places where the leaf
+grows faster outwards, then we have,
+[SPEAKER_00]: well, a plausible mechanism of formation
+of serrations.
+[SPEAKER_00]: Now the question is, would this work if we
+put all these components into the model?
+[SPEAKER_00]: So we created the model, which is shown
+here.
+[SPEAKER_00]: So this is kind of like in the case of
+Arabidopsis leaf, more or less.
+[SPEAKER_00]: So again, the basic idea is that we have a
+patterning process going on on the margin.
+[SPEAKER_00]: And each time where convergence point is
+formed, growth outwards is accelerated,
+[SPEAKER_00]: and is more accelerated when convergence
+is higher, less when it is lower.
+[SPEAKER_00]: And pattern is supposed to emerge.
+[SPEAKER_00]: So will the shape of a leaf emerge from
+this?
+[SPEAKER_00]: So here is this process, kind of with
+parameters, more or less taken at random.
+[SPEAKER_00]: You can see that patterning takes place,
+and so does growth.
+[SPEAKER_00]: You have something like, well,
+let's call it a generic lobed leaf.
+[SPEAKER_00]: Let's change parameters a little bit.
+[SPEAKER_00]: We are getting a different pattern.
+[SPEAKER_00]: Now does it correspond to a real leaf or
+not?
+[SPEAKER_00]: Well, it actually happens to correspond
+quite closely to ivy leaf.
+[SPEAKER_00]: And it is amazing, although, again,
+we don't have molecular-level data about
+[SPEAKER_00]: this, how close this correspondence is,
+kind of lobe to lobe.
+[SPEAKER_00]: This one here, this one there,
+this one here, here.
+[SPEAKER_00]: Here, here, here, there.
+[SPEAKER_00]: So given that we don't have this detailed
+data of ivy, well, can we make an
+[SPEAKER_00]: Arabidopsis leaf?
+[SPEAKER_00]: So here I will show you this animation,
+which at first may look like, well,
+[SPEAKER_00]: we succeeded.
+[SPEAKER_00]: But I would like you to pay attention to a
+phenomenon which actually is drawback of
+[SPEAKER_00]: the model which I'm discussing just now.
+[SPEAKER_00]: Maybe you are going to see that some
+convergence points are shifting.
+[SPEAKER_00]: As the leaf grows, they jump from one
+position to another.
+[SPEAKER_00]: So let's see it.
+[SPEAKER_00]: OK, so let's look, let's say, at this area
+here.
+[SPEAKER_00]: Oh, it disappeared.
+[SPEAKER_00]: And here is the similar situation.
+[SPEAKER_00]: So convergence points are formed,
+but they are not stable, as the thing is
+[SPEAKER_00]: growing.
+[SPEAKER_00]: Now, this kind of jumping of convergence
+points have not really been observed in
+[SPEAKER_00]: Arabidopsis.
+[SPEAKER_00]: And the question is, so what is the
+mechanism which stabilizes things there?
+[SPEAKER_00]: Sorry.
+[SPEAKER_00]: Here we go.
+[SPEAKER_00]: So in order to see what is the source of
+the jumping, we should examine the first
+[SPEAKER_00]: available space theory again.
+[SPEAKER_00]: Because there is an element there which is
+actually sort of imprecise.
+[SPEAKER_00]: So here what it goes.
+[SPEAKER_00]: Suppose that you have two existing organs,
+and growth takes place, creating more
+[SPEAKER_00]: space.
+[SPEAKER_00]: Well, final space is sufficient to
+introduce another organ.
+[SPEAKER_00]: And one would say, and we can iterate this
+process forever.
+[SPEAKER_00]: So again, space grows, and we iterate it.
+[SPEAKER_00]: The point is that it's not the only
+possibility.
+[SPEAKER_00]: This is another possibility, that an
+existing kind of prototype of the organ is
+[SPEAKER_00]: going to be shifted, creating space for
+another one.
+[SPEAKER_00]: So here, although neither on the left nor
+on the right side, we have enough space.
+[SPEAKER_00]: But if we can reorganize things,
+we create enough space.
+[SPEAKER_00]: So this kind of possibility exists,
+but apparently is prevented in
+[SPEAKER_00]: Arabidopsis.
+[SPEAKER_00]: And the question is how?
+[SPEAKER_00]: So here, molecular data come into play
+again.
+[SPEAKER_00]: And it turns out that convergence point is
+flanked by areas in which another protein,
+[SPEAKER_00]: capsules, cotyledons, or CAC, is being
+expressed.
+[SPEAKER_00]: And on one hand, it is present.
+[SPEAKER_00]: On another hand, if it is absent,
+so in a mutant, entire paternic process is
+[SPEAKER_00]: destroyed.
+[SPEAKER_00]: So based on this, we amended the model
+which I showed you, this up-to-gradient
+[SPEAKER_00]: model, with two assumptions regarding CAC.
+[SPEAKER_00]: One is that CAC is absent in convergence
+points.
+[SPEAKER_00]: And we implemented this by assuming that
+high concentration of oxygen suppresses
+[SPEAKER_00]: CAC.
+[SPEAKER_00]: And the second thing is that CAC is needed
+for pin orientation to occur.
+[SPEAKER_00]: So then our simulation becomes like this.
+[SPEAKER_00]: We start in a situation where CAC is
+present everywhere.
+[SPEAKER_00]: So CAC is represented as this.
+[SPEAKER_00]: Yellow circles.
+[SPEAKER_00]: And then at the locations where
+convergence points appear, oxygen
+[SPEAKER_00]: concentration increases.
+[SPEAKER_00]: But this increase of concentration of
+oxygen eliminates CAC from there.
+[SPEAKER_00]: And if you assume that presence of CAC is
+needed for a repolarization to occur,
+[SPEAKER_00]: this convergence point now is fixed
+because there is no CAC there.
+[SPEAKER_00]: So repolarization cannot occur anymore.
+[SPEAKER_00]: So we have a pattern which looks,
+at first sight, similar.
+[SPEAKER_00]: But CAC is present where oxygen is absent.
+[SPEAKER_00]: And CAC is absent where oxygen is present
+at high concentration.
+[SPEAKER_00]: And this absence of CAC here fixes a
+location of primordial.
+[SPEAKER_00]: There is one more element to the story,
+namely that it is known that CAC over
+[SPEAKER_00]: expression makes indentation deeper.
+[SPEAKER_00]: So we assumed that CAC has additional
+effect of suppressing growth.
+[SPEAKER_00]: So it's a simple situation where the
+presence of oxygen maxima promotes growth.
+[SPEAKER_00]: We have also the other side of the story
+that presence of CAC is creating
+[SPEAKER_00]: indentations.
+[SPEAKER_00]: And if you put this into the model,
+[SPEAKER_00]: now we have a situation.
+[SPEAKER_00]: Here CAC is shown as pink dots because
+yellow doesn't look well enough on such a
+[SPEAKER_00]: size thing.
+[SPEAKER_00]: You can see that pattern occurs of
+indentations and serrations.
+[SPEAKER_00]: But now there is no jumping of convergence
+points.
+[SPEAKER_00]: So OK, so the ability of reproducing white
+type was part of the story.
+[SPEAKER_00]: But if there are also other elements of
+validation of the model, so well,
+[SPEAKER_00]: if you create pin mutant, well,
+it doesn't have serrations because
+[SPEAKER_00]: convergence points cannot be formed.
+[SPEAKER_00]: If we flood the model with oxygen,
+we have the same situation as in reality
+[SPEAKER_00]: that is that, again, there are no
+serrations formed because flooding of leaf
+[SPEAKER_00]: with oxygen suppresses CAC, and
+consequently, pins cannot reorganize.
+[SPEAKER_00]: If we have CAC, well, the same story.
+[SPEAKER_00]: In the absence of CAC, pins cannot
+reorganize.
+[SPEAKER_00]: If we over express, then you have deeper
+serrations.
+[SPEAKER_00]: So this is kind of first step in the
+modeling of leaf shape.
+[SPEAKER_00]: Well, we had grand plan at the beginning
+from simple leafs to compound.
+[SPEAKER_00]: Well, so far, we have tiny step in the
+direction.
+[SPEAKER_00]: We have serrations.
+[SPEAKER_00]: So can we understand, well, situation
+where some lobes or compoundingness
+[SPEAKER_00]: occurs?
+[SPEAKER_00]: And for this, again, working with Mitos
+Tiantis and with my student, Adam Ranions,
+[SPEAKER_00]: if we turned our attention relative to
+Arabidopsis, which is Calamine Hirsuta.
+[SPEAKER_00]: So even though it is a close relative,
+it has very different leaves.
+[SPEAKER_00]: So this is Arabidopsis.
+[SPEAKER_00]: This is Calamine Hirsuta.
+[SPEAKER_00]: And the question is, well, where the
+difference, which to our eye is a marked
+[SPEAKER_00]: difference between these leaves,
+comes from?
+[SPEAKER_00]: And well, one element of the puzzle is
+that it is related to the group of genes
+[SPEAKER_00]: in Knox family, of which BP, which I don't
+dare to pronounce because it has long
+[SPEAKER_00]: name, is representative.
+[SPEAKER_00]: So we see that in Arabidopsis,
+in which Knox genes are not expressed in
+[SPEAKER_00]: the leaves, well, we have this kind of
+shape.
+[SPEAKER_00]: If we ectopically express BP, then we are
+getting almost a compound leaf.
+[SPEAKER_00]: And then in Calamine Hirsuta, where BP is
+present, where Knox genes are present,
+[SPEAKER_00]: in the leaves, we are getting,
+well, perfectly compound leaf.
+[SPEAKER_00]: Here is kind of molecular side of the
+story.
+[SPEAKER_00]: Or first macroscopic.
+[SPEAKER_00]: So in Calamine, new leaflets are formed in
+the basal part of the leaf.
+[SPEAKER_00]: So in Arabidopsis, there's no outgrowth,
+and here there is outgrowth.
+[SPEAKER_00]: And if we show where another Knox gene,
+STM, is expressed in Calamine,
+[SPEAKER_00]: we can clearly see that it is present in
+this basal part of the leaf.
+[SPEAKER_00]: So this is one part of the story regarding
+difference between Calamine and
+[SPEAKER_00]: Arabidopsis leaves.
+[SPEAKER_00]: Another element which is important is to
+look at veins.
+[SPEAKER_00]: So if we look into Calamine leaf,
+we can clearly see that leaflets are
+[SPEAKER_00]: growing in the directions of veins.
+[SPEAKER_00]: So this is something which was absent in
+the model of Arabidopsis.
+[SPEAKER_00]: We just assumed, well, there's some growth
+of serrations.
+[SPEAKER_00]: There's accelerated growth.
+[SPEAKER_00]: But because the serrations are small,
+in which direction they grow was not an
+[SPEAKER_00]: issue.
+[SPEAKER_00]: But if you have an entire lobe or entire
+leaflet, then in which direction it grows
+[SPEAKER_00]: becomes an issue.
+[SPEAKER_00]: So taking these two facts together,
+we created the following kind of
+[SPEAKER_00]: hypothesis.
+[SPEAKER_00]: First, the veins present here.
+[SPEAKER_00]: It's visible here.
+[SPEAKER_00]: Veins define growth axis.
+[SPEAKER_00]: So we just postulate, because what we can
+observe is only that growth axis are
+[SPEAKER_00]: correlated with veins.
+[SPEAKER_00]: Here, we assume that the mechanism which
+patterns veins is defining directions of
+[SPEAKER_00]: growth.
+[SPEAKER_00]: And the second thing is that Knox
+potentiates CAC.
+[SPEAKER_00]: So basically, what Knox is doing is,
+well, first, it amplifies the action of
+[SPEAKER_00]: CAC.
+[SPEAKER_00]: In particular, it amplifies this
+suppression of growth.
+[SPEAKER_00]: So the reason why these leaves occur would
+be due to the fact that, well,
+[SPEAKER_00]: normal leaf maybe would look like this.
+[SPEAKER_00]: But CAC is expressed, potentiated by Knox,
+makes this big indentation.
+[SPEAKER_00]: And also, Knox is needed for the formation
+of new organs to take place.
+[SPEAKER_00]: So based on this, we created a model which
+works as follows.
+[SPEAKER_00]: So here's a leaf primordium.
+[SPEAKER_00]: Near the base, we have expression of Knox,
+shown in yellow, and CAC.
+[SPEAKER_00]: And the tip, convergence point,
+is marked by the convergence point of pin
+[SPEAKER_00]: and presence of oxygen.
+[SPEAKER_00]: CAC, Knox.
+[SPEAKER_00]: Oxygen promotes leaflet growth,
+so it becomes bigger.
+[SPEAKER_00]: CAC constrains growth.
+[SPEAKER_00]: And also, when working together with Knox,
+they create this narrow form at the base.
+[SPEAKER_00]: However, at some point, new convergence
+point emerges.
+[SPEAKER_00]: And then, growth starts there.
+[SPEAKER_00]: Here, further growth, further formation of
+lateral leaflets cannot happen,
+[SPEAKER_00]: because we don't have here Knox or CAC.
+[SPEAKER_00]: Here, this dominance of Knox and CAC has
+been broken.
+[SPEAKER_00]: So growth occurs.
+[SPEAKER_00]: And this growth is going to be in the
+direction of veins which we assume are
+[SPEAKER_00]: perpendicular to the original direction.
+[SPEAKER_00]: So let's see how it works in an animation
+or simulation.
+[SPEAKER_00]: So main growth direction is established by
+this axis.
+[SPEAKER_00]: And here, at some point, new convergence
+points occurred.
+[SPEAKER_00]: And they grow in perpendicular direction.
+[SPEAKER_00]: And this process iterates.
+[SPEAKER_00]: So we are going to see subsequent leaflets
+being formed in the basepetal progression.
+[SPEAKER_00]: OK, so this is comparison with,
+well, a young leaf of cardamom.
+[SPEAKER_00]: And we can see that, well, this
+progression of leaflets near the base was
+[SPEAKER_00]: more or less captured by the model.
+[SPEAKER_00]: However, the shape of the terminal leaf
+was not really captured.
+[SPEAKER_00]: And the reason for this is that,
+when modeling the terminal leaf,
+[SPEAKER_00]: we did not really incorporate vasculature
+there.
+[SPEAKER_00]: So now the question is, well, can we
+increase the very similar to the very
+[SPEAKER_00]: similitude of leafs by looking at veins
+more closely?
+[SPEAKER_00]: And in order to do this, we developed a
+model which actually operates at a
+[SPEAKER_00]: slightly higher level of abstraction.
+[SPEAKER_00]: So we no longer model explicitly
+interaction of oxygen with pins.
+[SPEAKER_00]: We are just using the fact that,
+as a result of this interaction,
+[SPEAKER_00]: new convergence points can be formed at
+some distance.
+[SPEAKER_00]: So in a sense, interaction between pin and
+oxygen is a way of measuring distances
+[SPEAKER_00]: along the margin.
+[SPEAKER_00]: And this process is modulated by the
+presence or absence of substances such as
+[SPEAKER_00]: cac and nox, which can say that,
+well, even though the distances are
+[SPEAKER_00]: relatively large, but because of,
+say, absence of cac or nox, a new
+[SPEAKER_00]: convergence point cannot be formed.
+[SPEAKER_00]: It cannot appear there.
+[SPEAKER_00]: So if you look at things from this
+perspective, we have the following basic
+[SPEAKER_00]: model.
+[SPEAKER_00]: So things are happening on the margin and
+within the lamina.
+[SPEAKER_00]: So growth centers are formed by this
+distant measuring process at the margin.
+[SPEAKER_00]: Between growth centers, so between,
+let's say, here and there, growth
+[SPEAKER_00]: suppression can occur.
+[SPEAKER_00]: Which is a region where, at some distance
+from convergence points, where cac is
+[SPEAKER_00]: expressed.
+[SPEAKER_00]: Creation of a convergence point is
+associated with the formation of vein.
+[SPEAKER_00]: The first mid-vein goes to the base.
+[SPEAKER_00]: Subsequent veins connect to the previously
+formed vein.
+[SPEAKER_00]: And veins define growth direction.
+[SPEAKER_00]: So for example, here, growth is going to
+be upwards.
+[SPEAKER_00]: But here is going to be, well,
+combination of this upwards coming from
+[SPEAKER_00]: this vein and lateral coming from that.
+[SPEAKER_00]: And there is nox, which is kind of
+amplifying the action of cacs and can be
+[SPEAKER_00]: expressed, let's say, in a slightly
+different region.
+[SPEAKER_00]: So within this model, the key element of
+growth suppression is the substance red
+[SPEAKER_00]: corresponding to cac.
+[SPEAKER_00]: So that as the leaf margin expands,
+this cac region is broken.
+[SPEAKER_00]: And here, a new convergence point is
+formed.
+[SPEAKER_00]: So if we create this kind of model and put
+these elements together, just the element
+[SPEAKER_00]: which I described, convergence point on
+the margin, veins connecting convergence
+[SPEAKER_00]: points to inter-network, and it's defining
+the direction of growth.
+[SPEAKER_00]: And growth rates and possibility of
+creating convergence points modulated by
+[SPEAKER_00]: cac and nox, we can get, for example,
+this kind of growth progression.
+[SPEAKER_00]: So here is a sample simulation.
+[SPEAKER_00]: So now I have kept the leaf of a constant
+size on the screen.
+[SPEAKER_00]: So it's going to change states,
+because if I made the leaf grow,
+[SPEAKER_00]: the first stages would be very small.
+[SPEAKER_00]: So things can be scaled.
+[SPEAKER_00]: So the leaf, as it grows, is always scaled
+to the same size on the screen.
+[SPEAKER_00]: And you are getting quite a plausible leaf
+of which we just found, a simple leaf,
+[SPEAKER_00]: which we could try to say whether it is
+leaf of a cherry or something like this,
+[SPEAKER_00]: but reasonable generic leaf.
+[SPEAKER_00]: By changing parameters of the model,
+we can easily change the form of this
+[SPEAKER_00]: leaf.
+[SPEAKER_00]: So just by changing one thing,
+which is branching angle, we can make it
+[SPEAKER_00]: looking like a ginkgo leaf.
+[SPEAKER_00]: And here is, well, maybe more interesting
+fact, that if we increase the,
+[SPEAKER_00]: let's say, strength or impact of cac,
+so that it creates deeper indentations,
+[SPEAKER_00]: then we have progression from a simple to
+a, well, dissected form, or kind of
+[SPEAKER_00]: high-lobed.
+[SPEAKER_00]: And moreover, you can see that there is a
+difference in the underlying architecture.
+[SPEAKER_00]: So what we have here, for example,
+is there are no, here the lateral veins to
+[SPEAKER_00]: the left, but not to the right.
+[SPEAKER_00]: But here it appears to the right,
+and here we have to the right as well.
+[SPEAKER_00]: And it is so because as this indentation
+was created, it was absent here.
+[SPEAKER_00]: Additional space has been created between
+convergence points as measured along the
+[SPEAKER_00]: margin.
+[SPEAKER_00]: And this provided room for additional
+convergence points and additional veins
+[SPEAKER_00]: which support the system.
+[SPEAKER_00]: Here are some examples.
+[SPEAKER_00]: In which we have interaction between cac,
+shown in red, and nox, shown in blue,
+[SPEAKER_00]: which creates deeper veins.
+[SPEAKER_00]: And I have an example which I would like
+to manipulate, but I need different
+[SPEAKER_00]: glasses for this, so sorry.
+[SPEAKER_00]: Okay, so what I would like to show you now
+is that by changing some quite intuitive
+[SPEAKER_00]: parameters, we can obtain large variation
+of shapes.
+[SPEAKER_00]: So this is basic simulation.
+[SPEAKER_00]: This kind of highly-lobed leaf,
+[SPEAKER_00]: as shown in here.
+[SPEAKER_00]: Now let us suppose that the cac,
+that the impact of cac on indentation is
+[SPEAKER_00]: decreased.
+[SPEAKER_00]: So we are getting a leaf which has simply
+still this basic form of having three
+[SPEAKER_00]: lobes.
+[SPEAKER_00]: But it is much more smooth because,
+well, red color is not creating such a
+[SPEAKER_00]: deep indentation.
+[SPEAKER_00]: Now let's assume that the impact of blue
+morphogen, so nox, is decreased as well.
+[SPEAKER_00]: Okay, and lobes maintain competence of
+creating new veins.
+[SPEAKER_00]: So now we are just getting a simple leaf.
+[SPEAKER_00]: And now let's suppose that the growth
+rates associated with the veins are
+[SPEAKER_00]: changed.
+[SPEAKER_00]: So now we are getting heart-shaped leaf.
+[SPEAKER_00]: Let's see one more example.
+[SPEAKER_00]: So coming from Canada, I had to model
+maple leaf.
+[SPEAKER_00]: So here it comes.
+[SPEAKER_00]: So you can see that there are smaller kind
+of indentations which are due to the
+[SPEAKER_00]: presence of cac, and deeper ones which are
+due to the presence of nox, which is kind
+[SPEAKER_00]: of more sparsely located at cac.
+[SPEAKER_00]: So if you further analyze the interplay
+between cac and nox, we can create this
+[SPEAKER_00]: kind of morpho space, which, okay,
+so here it is kind of like a basic form.
+[SPEAKER_00]: If we increase repression of growth by
+cac, we are getting, well, kind of a form
+[SPEAKER_00]: which simply has deeper lobes.
+[SPEAKER_00]: If we increase it by nox, we can get to
+the point where you have actual progress
+[SPEAKER_00]: to a leaf which is compound, which has
+three different leaflets.
+[SPEAKER_00]: Okay, so I could pretty much move to
+conclusions here, but well, if you
+[SPEAKER_00]: wouldn't mind, I would like to spend five
+minutes talking about something which may
+[SPEAKER_00]: appear completely different, and I hope
+you will be surprised that actually it is
+[SPEAKER_00]: not so completely different, and it is
+inflorescences.
+[SPEAKER_00]: So this is a field of, well, common
+yarrow, and this is, well, kind of a
+[SPEAKER_00]: picture of yarrow from the top and also
+diagrammatic construction from which
+[SPEAKER_00]: representation, from which one can see
+that actually one feature of this
+[SPEAKER_00]: inflorescence and many other
+inflorescences together known as corrimps
+[SPEAKER_00]: is that they form a very flat surface,
+and this is related to the fact that they
+[SPEAKER_00]: are pollinated, well, mainly by flies
+which actually are walking on the
+[SPEAKER_00]: inflorescence and pollinating one flower
+after another.
+[SPEAKER_00]: So from evolutionary perspective,
+it makes sense for this to be flat,
+[SPEAKER_00]: but how this flatness can happen in
+nature?
+[SPEAKER_00]: So here is kind of, well, more traditional
+point of view which looks at
+[SPEAKER_00]: inflorescences as branching structures,
+decorated with flowers.
+[SPEAKER_00]: So we have some branching structure which
+is looking like this, and if we follow
+[SPEAKER_00]: this idea, then the branching structure
+would have to grow according to quite
+[SPEAKER_00]: complex trigonometric rules.
+[SPEAKER_00]: Like, for example, in order to bring this
+flower to the same height as this one,
+[SPEAKER_00]: well, this S2 would have to be S1 cosine
+alpha, and in order to bring this flower
+[SPEAKER_00]: to the same level, well, even in two
+dimensions, the trigonometry becomes more
+[SPEAKER_00]: complex, and if we imagine, if we realize
+that it is two-dimensional structure,
+[SPEAKER_00]: well, synchronization of this growth rate
+to bring everything to the same level
+[SPEAKER_00]: would be, well, quite a difficult
+trigonometric problem on which many people
+[SPEAKER_00]: would have, well, hard time, well,
+not making mistakes.
+[SPEAKER_00]: So it does not look very likely that plant
+is doing this trigonometry to find out,
+[SPEAKER_00]: to bring all flowers to the same level.
+[SPEAKER_00]: So this brings us to an alternative idea
+in which, if it is not so, that
+[SPEAKER_00]: inflorescence is a branching structure
+decorated with flowers, but flowers are
+[SPEAKER_00]: being created at the same level,
+and then branching structure is just
+[SPEAKER_00]: scaffolding with created, well,
+to support these flowers.
+[SPEAKER_00]: And this is the idea which is very similar
+to the idea of development of leaves.
+[SPEAKER_00]: So in this case, in the inflorescent
+meristem in this case, we have creation of
+[SPEAKER_00]: a number of convergence points.
+[SPEAKER_00]: Well, here I drew this in two dimensions,
+but I will show this in three dimensions
+[SPEAKER_00]: as well.
+[SPEAKER_00]: And then as the structure grows,
+vascular connections are created in the
+[SPEAKER_00]: same way, but in three dimensions.
+[SPEAKER_00]: As veins in a leaf.
+[SPEAKER_00]: And then in the same way in which
+indentations in leaf are formed,
+[SPEAKER_00]: well, we have these gaps in between,
+and eventually wind up with a branching
+[SPEAKER_00]: structure supporting all flowers at
+approximately the same level.
+[SPEAKER_00]: And the only thing which we have to assume
+here is that the growth is roughly uniform
+[SPEAKER_00]: throughout the structure.
+[SPEAKER_00]: So let's see whether it works.
+[SPEAKER_00]: So first, we have to create, well,
+not a pattern of equidistant convergence
+[SPEAKER_00]: points along the leaf margin, but on the
+surface of the meristem.
+[SPEAKER_00]: So here it is using the first available
+space algorithm.
+[SPEAKER_00]: We have pattern of, let's say,
+new convergence points.
+[SPEAKER_00]: But the inflorescence of yarrow is
+compound.
+[SPEAKER_00]: So we need to go a little bit further.
+[SPEAKER_00]: And assume that the primordia,
+which are big enough, can create higher
+[SPEAKER_00]: order primordia.
+[SPEAKER_00]: So this is the layout of individual
+flowers.
+[SPEAKER_00]: Actually, flower heads, because now these
+flower heads are connected into a
+[SPEAKER_00]: branching structure.
+[SPEAKER_00]: So this is how it goes.
+[SPEAKER_00]: Each time when a primordium appears,
+it is connected into branching structure.
+[SPEAKER_00]: This is a three-dimensional thing.
+[SPEAKER_00]: You can look at this from underneath.
+[SPEAKER_00]: And you can see how the branching
+structure is formed as a scaffolding
+[SPEAKER_00]: supporting the flowers.
+[SPEAKER_00]: So proper arrangement of flowers comes
+first.
+[SPEAKER_00]: Scaffolding comes next.
+[SPEAKER_00]: So we have this kind of layout.
+[SPEAKER_00]: And if we now place flowers where they
+should be, we are getting this kind of
+[SPEAKER_00]: model, which is shown on the right.
+[SPEAKER_00]: You can compare it to the model on the
+left.
+[SPEAKER_00]: So this is totally different ball game.
+[SPEAKER_00]: We no longer have leaves.
+[SPEAKER_00]: We have inflorescences.
+[SPEAKER_00]: But this is the same common denominator.
+[SPEAKER_00]: Formation of pattern of convergence points
+on the margin of the structure with a
+[SPEAKER_00]: margin of the leaf or surface of the South
+African meristem, connection into
+[SPEAKER_00]: basculature, and its further growth.
+[SPEAKER_00]: Yes, one second.
+[SPEAKER_00]: I have to go back.
+Sorry.
+[SPEAKER_00]: All these things which I removed from the
+presentation.
+[SPEAKER_00]: So I was here.
+[SPEAKER_00]: So this looks like the same model.
+[SPEAKER_00]: But actually, this is not a picture.
+[SPEAKER_00]: This is actual 3D model.
+[SPEAKER_00]: And you can see how this branching
+structure and layout of flowers looks
+[SPEAKER_00]: like.
+[SPEAKER_00]: But you can also see here another thing if
+you zoom in.
+[SPEAKER_00]: So for example, you can see this here or
+there.
+[SPEAKER_00]: What you can see is that the pattern
+petals are intersecting each other.
+[SPEAKER_00]: And this is something which, using
+computer models, is quite difficult to
+[SPEAKER_00]: avoid.
+[SPEAKER_00]: But nature clearly doesn't have problems
+with this because as already Aristotle
+[SPEAKER_00]: observed, in the place where something is,
+something else cannot be.
+[SPEAKER_00]: So we spent actually a substantial amount
+of time trying to address this in computer
+[SPEAKER_00]: models as well.
+[SPEAKER_00]: And this is kind of like the current stage
+of this work.
+[SPEAKER_00]: So in this case, we have employed
+relatively sophisticated algorithms for
+[SPEAKER_00]: handling biomechanically surfaces which
+collide with each other.
+[SPEAKER_00]: And you can see that in some cases,
+for example, in this petal, it is kind of
+[SPEAKER_00]: deflected because there was another one
+underneath which was pushing it.
+[SPEAKER_00]: The same situation is here.
+[SPEAKER_00]: So we are coming closer and closer to
+having a real arrow through the modeling.
+[SPEAKER_00]: It is amazing that actually we're so much
+energy goes is how to compute these
+[SPEAKER_00]: intersections.
+[SPEAKER_00]: So concluding synthesis.
+[SPEAKER_00]: Growth of leaves, but not only of leaves,
+actually of many structures proceed as
+[SPEAKER_00]: follows.
+[SPEAKER_00]: We have interplay between growth and form.
+[SPEAKER_00]: So form is a result of growth.
+[SPEAKER_00]: Growth of leaves in fluorescences is
+driven by pattern of convergence.
+[SPEAKER_00]: There is this point on the boundary,
+which specifies where to grow,
+[SPEAKER_00]: and vasculature, which specifies in which
+direction to grow.
+[SPEAKER_00]: There is an interplay between a pattern on
+the boundary and vasculature.
+[SPEAKER_00]: Namely, pattern of the boundary specifies
+where the veins start.
+[SPEAKER_00]: And then where the veins end is determined
+by either the base of the structure or
+[SPEAKER_00]: presence of previous veins, which explains
+this feedback loop.
+[SPEAKER_00]: Existing veins help determine where new
+veins are going to be.
+[SPEAKER_00]: And then there is this loop, which is due
+to Hofmeister, that as things are becoming
+[SPEAKER_00]: bigger, they create room for new elements
+on the boundary, new convergence points,
+[SPEAKER_00]: which are placed between existing ones.
+[SPEAKER_00]: And finally, as the things grow,
+they can modify vasculature.
+[SPEAKER_00]: And vasculature may have also an impact on
+where convergence points are appearing.
+[SPEAKER_00]: So this leads to something like,
+well, conclusion, which to me actually is
+[SPEAKER_00]: almost obvious, except that sometimes when
+I state it, well, I have vicious
+[SPEAKER_00]: opposition to the idea.
+[SPEAKER_00]: And this is that mechanistic understanding
+of plant form from molecular level
+[SPEAKER_00]: patterning to microscopic form appears to
+be within the reach.
+[SPEAKER_00]: We are finding more and more details.
+[SPEAKER_00]: And, well, it may be so that some theories
+which we have already will have to be
+[SPEAKER_00]: replaced by others or refined,
+like in the case of this Abzugradian
+[SPEAKER_00]: patterning of oxygen, which is now being
+refined to, well, a more plausible
+[SPEAKER_00]: hypothesis.
+[SPEAKER_00]: But out of this, a picture emerges,
+which can actually mean that biology may
+[SPEAKER_00]: be moving more and more in the direction
+of physics, where we have some underlying
+[SPEAKER_00]: principles.
+[SPEAKER_00]: And then lots of things emerge from this.
+[SPEAKER_00]: So Ernest Rutherford famously said that,
+well, all science is either physics or
+[SPEAKER_00]: stump collection.
+[SPEAKER_00]: And it seems that, well, the development
+of biology is moving closer and closer to
+[SPEAKER_00]: this, well, physical understanding of the
+world, where we have a relatively small
+[SPEAKER_00]: number of general principles.
+[SPEAKER_00]: And a lot of things can be deduced from
+this.
+[SPEAKER_00]: And genetic mechanisms are setting up the
+playground for these processes.
+[SPEAKER_00]: But many of them have self-organizing
+character, as shown here.
+[SPEAKER_00]: So I would like to acknowledge Adam
+Ranions and Andrew Owens.
+[SPEAKER_00]: So Adam Ranions was the primary person
+behind the leaves.
+[SPEAKER_00]: Andrew Owens is working on inforestensis.
+[SPEAKER_00]: And we are collaborating with Mitos
+Tiantis on leaves.
+[SPEAKER_00]: And Regine Kassenbockhoff from Johannes
+Gutenberg University in Mainz on
+[SPEAKER_00]: inforestensis.
+[SPEAKER_00]: Thank you very much.
+[SPEAKER_01]: Yes, please.
+[SPEAKER_05]: You want to ask this question based on the
+fact that you had a mechanism where the
+[SPEAKER_05]: cells were sensing efflux and influx,
+that there was some asymmetry there.
+[SPEAKER_05]: So based on that, I wonder if your model
+was second order with respect to space and
+[SPEAKER_05]: time, or first order with respect to space
+and time.
+[SPEAKER_05]: And why did you choose it?
+[SPEAKER_00]: OK, what do you mean by first order with
+respect of space and time and second
+[SPEAKER_00]: order?
+[SPEAKER_05]: So for example, Maxwell's equations,
+which would model your version points,
+[SPEAKER_05]: is second order.
+[SPEAKER_05]: And the solutions are first order.
+[SPEAKER_05]: But if you put your controls to different
+cuts in knocks, and had them affect the
+[SPEAKER_05]: second order, you'll get an asymmetry
+that's different than if you put it in the
+[SPEAKER_05]: first order.
+[SPEAKER_00]: So to begin with, in the model in which we
+have this polarization by unidirectional
+[SPEAKER_00]: fluxes, it is described by the set of
+first order equations.
+[SPEAKER_00]: So we don't, in particular, observe second
+order phenomena, which would be kind of
+[SPEAKER_00]: like waves propagating, which is related
+to, well, oscillations of this type don't
+[SPEAKER_00]: occur.
+[SPEAKER_00]: Which doesn't mean that they cannot.
+[SPEAKER_00]: Second thing is that this result is quite
+new.
+[SPEAKER_00]: We didn't connect it with a cut and
+knocks.
+[SPEAKER_00]: We have only oxygen pin.
+[SPEAKER_00]: Well, we have oxygen pin.
+[SPEAKER_00]: And some network, which is detecting,
+measuring out flux and influx.
+[SPEAKER_00]: So mathematical analysis of this entire
+model is still to happen.
+[SPEAKER_00]: But we have done quite an extensive set of
+simulations showing that we have,
+[SPEAKER_00]: well, this convergence point formation in
+one case.
+[SPEAKER_00]: The polarization, well, kind of long
+distance polarization consistent with
+[SPEAKER_00]: canalization, so coordinated one in the
+other case.
+[SPEAKER_00]: That the switch from one to another mode,
+well, that actually the impact of influx
+[SPEAKER_00]: can be very small.
+[SPEAKER_00]: So if you look into the feedback loop,
+which is driving, well, the polarization
+[SPEAKER_00]: of pins, and compare the strengths of
+influence of out flux to influx,
+[SPEAKER_00]: forming a linear form.
+[SPEAKER_00]: So that, let's say, over all polarization
+is, well, out flux plus alpha influx.
+[SPEAKER_00]: Then if alpha changes the sign,
+we have a change of situation from one to
+[SPEAKER_00]: another type of polarization.
+[SPEAKER_00]: But alpha can be very small.
+[SPEAKER_00]: Kind of like, let's say, 1,000th of the
+impact of out flux.
+[SPEAKER_00]: So it seems that influx is this kind of,
+well, controlling thing.
+[SPEAKER_00]: So I may have not answered your question
+well directly.
+[SPEAKER_00]: But I told you what we know.
+[SPEAKER_00]: The results which we have now are
+basically simulation results.
+[SPEAKER_00]: And we qualitatively understand why the
+sign of influence of influx causes this
+[SPEAKER_00]: qualitative change in behavior.
+[SPEAKER_00]: But unlike previous models of oxygen,
+which have been mathematically analyzed
+[SPEAKER_00]: quite extensively, this one we have not
+analyzed yet.
+[SPEAKER_00]: We have a paper which has been accepted.
+[SPEAKER_00]: And the main attention of reviewers was
+actually not on the mathematical analysis,
+[SPEAKER_00]: but was on what kind of potential
+mechanism at the molecular level could be
+[SPEAKER_00]: involved.
+[SPEAKER_00]: And we hypothesized about this.
+[SPEAKER_00]: I could entertain more discussion about
+this than about actual mathematical
+[SPEAKER_00]: properties of the model.
+[SPEAKER_00]: OK?
+[SPEAKER_00]: Yes?
+[SPEAKER_01]: So what I find really interesting in your
+models is that you're using relatively few
+[SPEAKER_01]: variables.
+[SPEAKER_01]: I mean, there's an interplay of less than
+a handful of genes that would contribute
+[SPEAKER_01]: to this pattern.
+[SPEAKER_01]: And I wonder if using your model if you
+can look like, I don't know if it's
+[SPEAKER_01]: possible, go outside of the leaf that you
+looked at and try to predict it.
+[SPEAKER_01]: Basically, how close within reach are you
+predicting what we see in nature?
+[SPEAKER_01]: Like, can you tell if you're missing a
+character?
+[SPEAKER_01]: Let's say it would be a group of species
+that has another gene that is in the same
+[SPEAKER_01]: pathway.
+[SPEAKER_01]: Can you figure that out?
+[SPEAKER_00]: So here it is more of a hypothetical type
+of question.
+[SPEAKER_00]: Because, well, not so much is known about
+what happens, let's say, regarding
+[SPEAKER_00]: different species of plants.
+[SPEAKER_00]: What is actually known is primaderm node
+for Arbidopsis cardaminae and tomato.
+[SPEAKER_00]: But the models are operating in such a way
+that they're assuming that there are genes
+[SPEAKER_00]: which are coding something.
+[SPEAKER_00]: So we are abstracting, rather than
+thinking directly in terms of genes,
+[SPEAKER_00]: we are thinking about in terms of
+geometry.
+[SPEAKER_00]: Geometric properties, geometric patterning
+properties, which are dependent on the
+[SPEAKER_00]: genes, and then how the geometric
+patterning processes result in actual
+[SPEAKER_00]: patterns.
+[SPEAKER_00]: So a kind of primary role in these models
+is allocated to the way distances are
+[SPEAKER_00]: measured, how the measurement of the
+distances can be modified by substances
+[SPEAKER_00]: which are expressed on the margin,
+and a little bit combinatorics,
+[SPEAKER_00]: sort of, in the sense of ABC model of
+flower development, combinatorics of these
+[SPEAKER_00]: morphogenes on the margin.
+[SPEAKER_00]: So it is very possible that there are many
+genes which are involved, because many
+[SPEAKER_00]: genes may have effect of increasing
+distances, decreasing distances.
+[SPEAKER_00]: So the fact that we can represent these
+things in terms of a small number of
+[SPEAKER_00]: variables doesn't mean that a small number
+of genes is involved.
+[SPEAKER_00]: Because, well, as I said, there can be
+many genes acting in the same or similar
+[SPEAKER_00]: manner.
+[SPEAKER_00]: But at the same time, the fact that such a
+small number of parameters are involved,
+[SPEAKER_00]: I think it is correlated with the fact,
+which was my opening statement,
+[SPEAKER_00]: that in nature, this change of form is
+very easily achievable, especially the
+[SPEAKER_00]: change of form between simple and
+compound, in spite of the fact that to our
+[SPEAKER_00]: eye, there is a huge difference in these
+forms.
+[SPEAKER_00]: But to a plant, this is not a big deal.
+[SPEAKER_00]: So I think that this is actually a sort of
+guiding information that if it is easy to
+[SPEAKER_00]: do in nature, it should be also easy to do
+well in the model.
+[SPEAKER_00]: And in this sense, the fact that there is
+a small number of parameters is,
+[SPEAKER_00]: to me, kind of like, well, indirect,
+well, not confirmation, but signs that we
+[SPEAKER_00]: are probably maybe on the right path.
+[SPEAKER_00]: And actually, it is very satisfying that
+it can be so.
+[SPEAKER_00]: Now, if you look, everything depends on
+the level of detail.
+[SPEAKER_00]: For example, if you look into text on
+anatomy of leaves, or also the detailed
+[SPEAKER_00]: description of shape, for example,
+there is entire classification regarding,
+[SPEAKER_00]: well, what is exactly the shape of the
+tip?
+[SPEAKER_00]: Are they like this?
+[SPEAKER_00]: Are they like this?
+[SPEAKER_00]: Are they like this?
+[SPEAKER_00]: Or like that?
+[SPEAKER_00]: And so we didn't look into this in full
+detail, but our gut feeling is that those
+[SPEAKER_00]: might be very much, well, again,
+not controlled directly by genes,
+[SPEAKER_00]: but mechanical properties of the margin
+and blade are controlled, resulting in the
+[SPEAKER_00]: different shapes.
+[SPEAKER_00]: So this is kind of definitely not the end
+of the story.
+[SPEAKER_00]: We would like also to create more
+comprehensive morphospaces, because we
+[SPEAKER_00]: created a few of them.
+[SPEAKER_00]: I showed just one.
+[SPEAKER_00]: But I wouldn't say that I feel that we
+have covered the entire morphospaces of
+[SPEAKER_00]: our leaves.
+[SPEAKER_00]: But I think that it is within reach.
+[SPEAKER_00]: Yes?
+[SPEAKER_03]: So in your early models, where you're just
+looking at the effect of oxen and not
+[SPEAKER_03]: including noxin, you can pretty well
+reproduce the shape of a rabbit octopus.
+[SPEAKER_03]: I'm curious about the relationship between
+the concentration of oxen at the margins
+[SPEAKER_03]: and the rate of leaf expansion.
+[SPEAKER_03]: Which presumably also went into your later
+models as well.
+[SPEAKER_03]: Because if you look at the early leaf,
+oxen concentration seems to be relatively
+[SPEAKER_03]: uniform around the periphery.
+[SPEAKER_03]: But as the leaf expands, it gets more
+localized, right?
+[SPEAKER_03]: But one of the things that didn't seem
+quite right was you saw very large
+[SPEAKER_03]: gradients of oxen concentration along the
+margins of the leaves.
+[SPEAKER_03]: But it didn't appear that there were large
+gradients in the rates of elongation or
+[SPEAKER_03]: expansion.
+[SPEAKER_03]: So you had high concentrations of oxen in
+the convergence points, low in the valleys
+[SPEAKER_03]: there.
+[SPEAKER_03]: But the rates of leaf expansion between
+those didn't seem to vary much.
+[SPEAKER_00]: Yes.
+[SPEAKER_00]: So the example of this leaf is perfect
+example in this category.
+[SPEAKER_00]: So what I described is a part of the story
+which was focused on the action of the
+[SPEAKER_00]: formation of serrations.
+[SPEAKER_00]: But actually, this process is superimposed
+on the assumption that there is an overall
+[SPEAKER_00]: gradient of leaf expansion.
+[SPEAKER_00]: And then in the paper where we describe
+this, this model is described in painful
+[SPEAKER_00]: detail.
+[SPEAKER_00]: But this is the basic part of the story.
+[SPEAKER_00]: That it was focusing on the formation of
+additional features.
+[SPEAKER_03]: Right, so you're looking at the additional
+expansion that's caused by the high oxen
+[SPEAKER_03]: concentration.
+[SPEAKER_00]: In the case of Arabidopsis.
+[SPEAKER_00]: And the reason for this, why it may be so
+precisely, that is that, well,
+[SPEAKER_00]: if there is no NOx there, so there is not
+much potentiation.
+[SPEAKER_00]: Once we put a NOx there, we have bigger
+effect.
+[SPEAKER_00]: And that is what happens.
+[SPEAKER_00]: Yes, please.
+[SPEAKER_04]: Forgive me if I missed this.
+[SPEAKER_04]: You might have mentioned this.
+[SPEAKER_04]: But have you successfully mapped the
+vascular architecture onto the leaves?
+[SPEAKER_04]: So in other words, if the model has
+looking traditional validation,
+[SPEAKER_04]: then there's got to be, or at least there
+should be a reasonable one-to-one mapping
+[SPEAKER_04]: between the primary vasculature and the
+actual outline of the leaf itself.
+[SPEAKER_00]: Yes.
+[SPEAKER_00]: So in some cases, like for example,
+in the case of maple here, it is not so
+[SPEAKER_00]: far away.
+[SPEAKER_00]: In other cases, we are very far because
+actually we are assuming here that,
+[SPEAKER_00]: well, from what I described, it is kind of
+evident that we are limited to
+[SPEAKER_00]: non-reticulate vascular systems.
+[SPEAKER_00]: So open vascular systems, we don't have
+loops.
+[SPEAKER_00]: But loops are a very prominent feature of
+many, many leaves.
+[SPEAKER_00]: And so we don't have it.
+[SPEAKER_00]: There is some rationale for this.
+[SPEAKER_00]: According to Scarpella's model of venation
+formation, even in the case of when we
+[SPEAKER_00]: have loops in the leaf, veins start in the
+way we just described.
+[SPEAKER_00]: But a little bit later on, this connection
+between convergence points and actual
+[SPEAKER_00]: veins disappears.
+[SPEAKER_00]: And a vein is being formed.
+[SPEAKER_00]: So even in the case of leaves which have
+loops, initial process is such as I
+[SPEAKER_00]: described, or it seems to be.
+[SPEAKER_00]: And nobody knows how actually,
+well, looped venation systems are created.
+[SPEAKER_00]: So we spent considerable amount of time.
+[SPEAKER_00]: And well, I have another talk about,
+well, venation patterns specifically.
+[SPEAKER_00]: And we can create some kind of loops.
+[SPEAKER_00]: And it was already part of the first model
+of Michison's that he had some kind of
+[SPEAKER_00]: loops produced in his model of vascular
+pattern formation.
+[SPEAKER_00]: But none of these models actually is very
+robust or looks very much like a real
+[SPEAKER_00]: thing.
+[SPEAKER_00]: So I would say that, well, if we have the
+situation that vasculature, if we just
+[SPEAKER_00]: form initially, persists to later forms
+rather than creating a close, reorganizing
+[SPEAKER_00]: itself into closed loops, then if we can
+see reasonably the correspondence between
+[SPEAKER_00]: our vascular systems and reality.
+[SPEAKER_00]: But when loops are formed, then we don't.
+[SPEAKER_00]: And I would like to, at some moment,
+to have this moment of illumination and
+[SPEAKER_00]: finding out, oh, so this is how loops are
+formed.
+[SPEAKER_00]: But it didn't happen yet.
+OK.
+[SPEAKER_00]: One more question.
+[SPEAKER_00]: There's a lot of questions.
+[SPEAKER_00]: OK.
+[SPEAKER_02]: So how, it seems like you can match the
+final form of the model to the loop quite
+[SPEAKER_02]: well.
+[SPEAKER_02]: But how closely does it match the
+developmental series?
+[SPEAKER_02]: Like, halfway through the simulation,
+if you stop it, does it look like the loop
+[SPEAKER_02]: halfway through the five-second
+development?
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: So if, in the case of Arabidopsis,
+it looks actually OK.
+[SPEAKER_00]: As I mentioned, basically, we are just
+assuming that there is some pattern of
+[SPEAKER_00]: growth.
+[SPEAKER_00]: But there is actually a sequence of
+emergence of serrations.
+[SPEAKER_00]: And our model reproduces this sequence
+correctly.
+[SPEAKER_00]: And so it is the case, well, in the case
+of Kardamine.
+[SPEAKER_00]: However, in the case of Kardamine,
+our model is actually describing correctly
+[SPEAKER_00]: the early phases and not the later ones.
+[SPEAKER_00]: And the reason for this is that,
+actually, in the case of Kardamine,
+[SPEAKER_00]: you can see these long, thin segments of
+rachis and petiolules.
+[SPEAKER_00]: And actually, it is not clear,
+at all, what factor creates this kind of
+[SPEAKER_00]: linear organs.
+[SPEAKER_00]: So this is a good question.
+[SPEAKER_00]: And people are looking for what gene it
+can be.
+[SPEAKER_00]: And one day, there is some candidate.
+[SPEAKER_00]: Another day, it is improved.
+[SPEAKER_00]: So we assume that there is something
+there.
+[SPEAKER_00]: But it has to do with NOx.
+[SPEAKER_00]: But NOx, by itself, is not sufficient.
+[SPEAKER_00]: So this is an example where we can
+actually simulate development of younger
+[SPEAKER_00]: forms.
+[SPEAKER_00]: But we cannot go farther away.
+[SPEAKER_00]: And then, actually, there is a lot of
+things which are related to the fact that,
+[SPEAKER_00]: in many leaves, especially in trees,
+leaves are developing initially in a form
+[SPEAKER_00]: which is folded.
+[SPEAKER_00]: So the question is, to what extent the
+fact that it is folded, and within a bud,
+[SPEAKER_00]: which provides constraints, may provide
+important developmental cues.
+[SPEAKER_00]: So this is a factor to which, to some
+extent, we have been looking at.
+[SPEAKER_00]: And some other people have been looking at
+as well.
+[SPEAKER_00]: But if it's a model which I have shown it
+here, this has not been integrated.
+[SPEAKER_00]: So I would say that, in some cases,
+we can capture this.
+[SPEAKER_02]: This has been a production of Cornell
+University on the web at cornell.edu.

@@ -1,0 +1,1308 @@
+[SPEAKER_01]: This is a production of Cornell
+University.
+[SPEAKER_03]: It's a real honor to be here at Cornell.
+[SPEAKER_03]: When I was a graduate student,
+I was very much aware of the group led by
+[SPEAKER_03]: Ed Lemon here, Bob Musgrave, doing
+photosynthesis research, sort of moving
+[SPEAKER_03]: from the laboratory reductionist approach
+to photosynthesis out into the field.
+[SPEAKER_03]: And there's this iconic paper,
+Sun's Work, and it's a cornfield that was
+[SPEAKER_02]: maybe 1965, something like that,
+science.
+[SPEAKER_03]: I've always been interested in Cornell.
+[SPEAKER_03]: I've never visited here before,
+so it's good to be here.
+[SPEAKER_03]: And it's good to experience the legendary
+winter in Cornell.
+[SPEAKER_03]: I was very lucky to get here.
+[SPEAKER_03]: But with Yang's help, we made it and made
+this work.
+[SPEAKER_03]: So I'm interested, as Yang says,
+in photosynthesis.
+[SPEAKER_03]: And what I'm trying to do is to patch
+together ways to model and measure
+[SPEAKER_03]: photosynthesis at large scales while not
+forgetting the mechanisms that underlie
+[SPEAKER_03]: it.
+[SPEAKER_03]: So trying to make the connections,
+the long-term goal is really to come up
+[SPEAKER_03]: with a way of monitoring photosynthesis to
+understand what controls it, and
+[SPEAKER_03]: particularly to see whether things like
+climate change are changing it,
+[SPEAKER_03]: land use change, how are we doing in
+agriculture, and things like this.
+[SPEAKER_03]: Photosynthesis is really the primary
+driver of all these productivity
+[SPEAKER_03]: processes, and then, of course,
+is linked, as Yang mentioned, to
+[SPEAKER_03]: transpiration and to the hydrologic cycle
+and actually to weather.
+[SPEAKER_03]: So it's been a lot of fun keeping
+photosynthesis, trying to keep
+[SPEAKER_03]: photosynthesis in the middle of all this
+stuff, and working with things like Earth
+[SPEAKER_03]: system models.
+[SPEAKER_03]: So I'll talk mostly today about
+chlorophyll fluorescence, which Yang is
+[SPEAKER_03]: really the expert on, and a little bit
+about ways that we're trying to build on
+[SPEAKER_03]: what we learned from chlorophyll
+fluorescence to understand the standard
+[SPEAKER_03]: multispectral approaches that have been
+used by the satellites that have been
+[SPEAKER_03]: around since the 1980s to see if we can
+improve the way that they do
+[SPEAKER_03]: photosynthesis.
+[SPEAKER_03]: Start by, so that I don't forget,
+these are the folks in the lab who are
+[SPEAKER_03]: doing most of the work, and this is
+Grayson Badgley, who's done recently work
+[SPEAKER_03]: on reflectance, linking reflectance
+measurements to the solar-induced
+[SPEAKER_03]: fluorescence.
+[SPEAKER_03]: Yalu is a modeler, radiation transport
+modeler.
+[SPEAKER_03]: Ari is doing the doing measurements,
+sort of lab measurements, working out the
+[SPEAKER_03]: techniques for measuring fluorescence from
+fields.
+[SPEAKER_03]: Jen is a modeler, working with me on
+extending the models that we've made of
+[SPEAKER_03]: photosynthesis.
+[SPEAKER_03]: Lee is doing work on, he's a great
+statistician, and he's working with us on
+[SPEAKER_03]: putting this together to try and do global
+simulations Yoichi is doing geostatistics,
+[SPEAKER_03]: trying to show how solar-induced
+fluorescence works as a variable driving
+[SPEAKER_03]: or correlating with gross primary
+productivity, trying to approach it from
+[SPEAKER_03]: the data as opposed to the modeling
+approach, and this is Young-Ril Ryu,
+[SPEAKER_03]: who is a sabbatic visitor from Seoul,
+Korea.
+[SPEAKER_03]: They do most of the work, so I want to
+make sure they have credit.
+[SPEAKER_03]: To start out with, I thought I'd talk a
+little bit about photosynthesis and the
+[SPEAKER_03]: way I look at it.
+[SPEAKER_03]: It's driven by the sun, of course,
+but I think it's useful to think about,
+[SPEAKER_03]: really, how's it linked up?
+[SPEAKER_03]: If you think of it, the radiations coming
+from the sun really comes from the
+[SPEAKER_03]: collision of mostly hydrogen atoms.
+[SPEAKER_03]: It's in the solar atmosphere, right at the
+top, and when two molecules or two atoms
+[SPEAKER_03]: like this collide, there's a really rapid
+change in velocity.
+[SPEAKER_03]: When that happens, electrons jump around,
+and a good deal of most of the energy of
+[SPEAKER_03]: that collision gets transferred into the
+emission of electromagnetic radiation.
+[SPEAKER_03]: The average energy of those is coupled to
+the temperature of the sun, which is about
+[SPEAKER_03]: 6,000 K.
+[SPEAKER_03]: That's the mechanism that the energy
+produced by the thermonuclear reactions
+[SPEAKER_03]: down in the center get released at the
+surface.
+[SPEAKER_03]: It's just black-body radiation.
+[SPEAKER_03]: Every photon that comes out is really
+related to the collision of atoms on the
+[SPEAKER_03]: sun.
+[SPEAKER_03]: Some of those photons get to Earth,
+and some fairly large fraction of them
+[SPEAKER_03]: actually wind up getting absorbed by
+chlorophyll, if they're in the right
+[SPEAKER_03]: wavelengths.
+[SPEAKER_03]: It's eight minutes from the sun to the
+chlorophyll.
+[SPEAKER_03]: The electron is promoted to a higher
+energy orbital in the chlorophyll
+[SPEAKER_03]: molecule, and basically, it has the energy
+of this collision that happened just
+[SPEAKER_03]: shortly ago, and in relative listing
+terms, simultaneously on the sun.
+[SPEAKER_03]: In a way, a part of that molecule is at
+6,000 K.
+[SPEAKER_03]: Quite hot.
+[SPEAKER_03]: Could do a lot.
+[SPEAKER_03]: Of course, it is unstable, in this
+configuration, but it has trapped,
+[SPEAKER_03]: at least momentarily, the energy of an
+event that occurred on the sun.
+[SPEAKER_03]: What it's done is essentially promoted
+that electron on chlorophyll molecule to a
+[SPEAKER_03]: higher state.
+[SPEAKER_03]: As you know, the blue absorption of
+chlorophyll degrades to the red first
+[SPEAKER_03]: excited state.
+[SPEAKER_03]: It can decay or move to other energy,
+decay by fluorescence or photochemistry or
+[SPEAKER_03]: other pathways.
+[SPEAKER_03]: Basically, what I'm going to use phi for
+is a fluorescence or a yield, and the
+[SPEAKER_03]: yield of all the processes that can be
+involved in the de-excitation of that
+[SPEAKER_03]: absorption.
+[SPEAKER_03]: Packet of energy adds up to one.
+[SPEAKER_03]: In terms of structural biology,
+this is a symbolic diagram of a
+[SPEAKER_03]: photosystem two reaction center and henna
+complex, where the two reaction centers
+[SPEAKER_03]: here in the center, and these are light
+harvesting chlorophyll proteins.
+[SPEAKER_03]: Which are the ones that are most likely to
+capture that energy.
+[SPEAKER_03]: The energy is captured and moves from
+chlorophyll molecule to chlorophyll
+[SPEAKER_03]: molecule, and ultimately comes to the
+reaction center, or something else happens
+[SPEAKER_03]: to it, but it comes to the reaction
+center.
+[SPEAKER_03]: There's a charge separation that occurs,
+and the energy is captured in electronic
+[SPEAKER_03]: state as opposed to electromagnetic state.
+[SPEAKER_03]: Just diagrammatically, it looks like this.
+[SPEAKER_03]: The energy comes in, and the real
+transformative element in this is two
+[SPEAKER_03]: chlorophyll molecules that are really
+oppressed close to one another.
+[SPEAKER_03]: When they're farther apart, they can
+transfer energy as electromagnetic energy
+[SPEAKER_03]: from one to another, but when they're
+really close together, they can interact
+[SPEAKER_03]: in a way that where an electron moves from
+one excited chlorophyll to one chlorophyll
+[SPEAKER_03]: to the other, so it's a charge separation.
+[SPEAKER_03]: When that charge separation occurs,
+an electron can be provided for water to
+[SPEAKER_03]: quench the one that's become positive,
+and the one that has the electron on it
+[SPEAKER_03]: can move that electron over to a quinone,
+and ultimately to a mobile electron
+[SPEAKER_03]: transport carrier, which diffuses away.
+[SPEAKER_03]: The essence of this is that what started
+out as an electromagnetic excitation winds
+[SPEAKER_03]: up causing an electronic charge
+separation, which is kind of a redox
+[SPEAKER_03]: reaction, and the energy of that is
+essentially stored in the product here,
+[SPEAKER_03]: a reduced diffusable chemical entity.
+[SPEAKER_03]: What started in the sun with a collision
+winds up out here in eight minutes and
+[SPEAKER_03]: maybe a few hundred picoseconds as a
+stable chemical entity, which has enough
+[SPEAKER_03]: energy associated with it to fix carbon
+dioxide and power the biosphere.
+[SPEAKER_03]: It's not really fundamentally different
+than what we do with a silicon photocell.
+[SPEAKER_03]: With a photocell, the photoelectric effect
+in silicon causes charge separations,
+[SPEAKER_03]: and these migrate to electrodes and
+current flows, which we can sort of kind
+[SPEAKER_03]: of store that in a battery, and we can
+drive around on it.
+[SPEAKER_03]: I tend to look at what's happening with
+photosynthesis very much in the same way
+[SPEAKER_03]: that we're using solar energy to generate
+or charge a chemical battery.
+[SPEAKER_03]: We can then use what's in that battery,
+which is in the form of reduced carbon
+[SPEAKER_03]: compounds and oxygen, metabolically to go
+for a run, or industrially to burn fossil
+[SPEAKER_03]: fuels to generate electricity or power
+cars or whatever.
+[SPEAKER_03]: So all of that really goes back to
+charging this large battery, which is the
+[SPEAKER_03]: biosphere.
+[SPEAKER_03]: Probably one of the best indicators of
+this is the oxygen in the atmosphere.
+[SPEAKER_03]: It takes about 1,500 years for half of the
+oxygen to be processed by redox reactions
+[SPEAKER_03]: that are associated with this battery
+turning over.
+[SPEAKER_03]: So you can see it's pretty active.
+[SPEAKER_03]: We kind of tend to think of oxygen as
+being stable and always there,
+[SPEAKER_03]: but in timeframes of, say, between the
+last ice age and now, the atmosphere is
+[SPEAKER_03]: probably all new oxygen.
+[SPEAKER_03]: That's kind of why I'm fascinated with
+photosynthesis.
+[SPEAKER_03]: Ying mentioned the stuff that we did a
+long time ago in 1980.
+[SPEAKER_03]: or so on photosynthesis modeling.
+[SPEAKER_03]: This is a picture that I just was at a
+symposium with.
+[SPEAKER_03]: This is Graham Farquhar, Susanna van
+Kammerer, and me.
+[SPEAKER_03]: We did a paper that Graham actually got
+the Kyoto Prize in part for.
+[SPEAKER_03]: So I thought I'd just throw that out
+because we were all in our 30s or 20s at
+[SPEAKER_03]: the time that was done.
+[SPEAKER_03]: And it's kind of funny to think that stuff
+you're doing as a postdoc, actually,
+[SPEAKER_03]: something sticks and something happens as
+a result of it.
+[SPEAKER_03]: We had no idea that this was going to be
+important.
+[SPEAKER_03]: In fact, we had entirely different goals
+for doing the work.
+[SPEAKER_03]: And it was rejected three times,
+but it's turned out to be reasonable.
+[SPEAKER_03]: I think it was published in Planet.
+[SPEAKER_03]: It's the most cited paper.
+[SPEAKER_03]: The plan is published, but it took us,
+I think, three years to get it accepted.
+[SPEAKER_03]: Just an aside, the whole idea of it is to
+deal with this problem that photochemistry
+[SPEAKER_03]: is coming in at whatever rate the light
+comes in.
+[SPEAKER_03]: So the potential for photochemistry is
+entirely dependent on clouds and solar
+[SPEAKER_03]: angle and things like that.
+[SPEAKER_03]: And leaves in between your particular
+chloroplast and the sun.
+[SPEAKER_03]: And the energy is going to be stored
+ultimately in dark reactions, which result
+[SPEAKER_03]: in CO2 fixation and synthesis of sugars,
+which is dependent upon the availability
+[SPEAKER_03]: of CO2 linked to the availability of
+water, temperature, and the amount of
+[SPEAKER_03]: nutrients that the plant has to make
+enzymes with.
+[SPEAKER_03]: So this has an entirely different drummer
+than this, but there's no place to put
+[SPEAKER_03]: excess photochemical products.
+[SPEAKER_03]: So you've got to have a way to make this
+system stay balanced so that the rate at
+[SPEAKER_03]: which this occurs and this occurs are
+balanced because there's very little
+[SPEAKER_03]: capacity for storage in between the two.
+[SPEAKER_03]: And that was the very simple idea that led
+to this paper, that the rate of
+[SPEAKER_03]: photosynthesis is the minimum of the
+capacity of either one of these reactions.
+[SPEAKER_03]: And a lot of the work we're doing right
+now really focuses back to, well,
+[SPEAKER_03]: how does this actually fit together?
+[SPEAKER_03]: What is the mechanism that allows this one
+to go at its maximum capacity until it
+[SPEAKER_03]: reaches this one, and then this one to go
+at its capacity while this one feeds it
+[SPEAKER_03]: without large losses between the two?
+[SPEAKER_03]: And sorry for the scribbly slide here,
+but the idea we're working on right now
+[SPEAKER_03]: with Jen Johnson is that the real
+regulation of this is a cytochrome complex
+[SPEAKER_03]: that sits between photosystem I and
+photosystem II.
+[SPEAKER_03]: Photosystem II is the one that generates
+oxygen, produces an electron, which moves
+[SPEAKER_03]: to the cytochrome and then moves on to
+photosystem I, which lifts it up to the
+[SPEAKER_03]: level where it can react in carbon
+fixation.
+[SPEAKER_03]: The interesting thing is that when this
+system becomes light saturated,
+[SPEAKER_03]: this reaction center becomes more reduced
+and this reaction center becomes more
+[SPEAKER_03]: oxidized.
+[SPEAKER_03]: You'd think that both of them would become
+more reduced.
+[SPEAKER_03]: And the reason that it doesn't work that
+way is that this is kind of a ratchet or a
+[SPEAKER_03]: regulator that occurs right in between and
+that there is very strong regulation at
+[SPEAKER_03]: this point, which prevents if,
+for example, you apply a too bright a
+[SPEAKER_03]: light for photosynthesis, it prevents this
+one from becoming too reduced and
+[SPEAKER_03]: producing really strong reactive reduced
+substrates.
+[SPEAKER_03]: So it just kind of keeps the voltage
+across this whole system more or less
+[SPEAKER_03]: constant while still allowing things to
+work.
+[SPEAKER_03]: So it's kind of a conductor in this.
+[SPEAKER_03]: And so I guess I tell you this because we
+keep working on things like this while
+[SPEAKER_03]: we're working on large scale
+photosynthesis studies because they keep
+[SPEAKER_03]: exposing things that we didn't understand
+about the photosynthetic mechanism.
+[SPEAKER_03]: It's kind of fun to go back and play with
+them.
+[SPEAKER_03]: One of the reasons that we got very
+interested in photosynthesis was related
+[SPEAKER_03]: to this yield here or fluorescence,
+excuse me.
+[SPEAKER_03]: This is the yield of fluorescence.
+[SPEAKER_03]: So fractional yield of fluorescence.
+[SPEAKER_03]: It's a fairly small component,
+but it's maybe 1% to 5% of all the photons
+[SPEAKER_03]: that come in are re-emitted as
+fluorescence.
+[SPEAKER_03]: The interesting thing is that that's a
+function of the molecule itself before it
+[SPEAKER_03]: builds.
+[SPEAKER_03]: It's like when it's excited, it has half
+time or a half life, just like a
+[SPEAKER_03]: radioactive half life.
+[SPEAKER_03]: It's going to decay just as a function of
+the time that the excited state exists.
+[SPEAKER_03]: So it tells you something about all the
+rest of these things that are going on or
+[SPEAKER_03]: at least the sum of them.
+[SPEAKER_03]: If these didn't exist, then the lifetime
+of fluorescence would be very long and you
+[SPEAKER_03]: would approach a yield of one.
+[SPEAKER_03]: So it gives you kind of an internal clock
+to understand how photosynthesis is
+[SPEAKER_03]: processing the photons.
+[SPEAKER_03]: Makes sense?
+[SPEAKER_03]: Feel free to interrupt, please.
+[SPEAKER_03]: So fluorescence is also something that we
+can measure outside of the chloroplast.
+[SPEAKER_03]: So we can then see what's going on in a
+leaf by just looking at the fluorescence
+[SPEAKER_03]: that's coming out of it.
+[SPEAKER_03]: And it's been used for 50 years or more to
+look at photosynthesis.
+[SPEAKER_03]: It's one of the really nice things,
+nice approaches for looking at
+[SPEAKER_03]: photosynthesis, particularly in laboratory
+situations.
+[SPEAKER_03]: The other thing that I wanted to point out
+here is that some of these are passive.
+[SPEAKER_03]: That is, there's kind of a wastage term
+and fluorescence, which have to do simply
+[SPEAKER_03]: with a lifetime.
+[SPEAKER_03]: And then some of them are dynamic that are
+essentially physiologically controlled and
+[SPEAKER_03]: vary with the system.
+[SPEAKER_03]: So we can see how these dynamic components
+are behaving by following fluorescence.
+[SPEAKER_03]: And those dynamic components are
+photochemistry itself and are regulated
+[SPEAKER_03]: step or regulated competing reaction we
+call non-photochemical quenching,
+[SPEAKER_03]: which is actually kind of like stonemates
+for light.
+[SPEAKER_03]: It regulates the amount of light that
+comes through from the pigment system to
+[SPEAKER_03]: the reaction centers.
+[SPEAKER_03]: So in essence, that problem of how the
+light reactions are down-regulated starts
+[SPEAKER_03]: before the photons even get to the
+reaction center.
+[SPEAKER_03]: They're quenched by this non-photochemical
+quenching mechanism.
+[SPEAKER_03]: How much to go into this?
+[SPEAKER_03]: We can measure fluorescence and we can
+measure photosynthesis.
+[SPEAKER_03]: This is a gas exchange cuvette or system
+which can measure the CO2 and water vapor
+[SPEAKER_03]: exchange of a plant.
+[SPEAKER_03]: And it also has the capability of
+measuring fluorescence changes in response
+[SPEAKER_03]: to changing the light environment.
+[SPEAKER_03]: And we can calculate the yield of
+photochemistry in this system by saying
+[SPEAKER_03]: that, well, there's four electrons
+required for every CO2 that's,
+[SPEAKER_03]: or four photons required for every CO2
+that's fixed.
+[SPEAKER_03]: And there is a, we can measure the CO2
+exchange, add to it the dark respiration
+[SPEAKER_03]: that's going on, correct for the
+photorespiratory effect and divide by the
+[SPEAKER_03]: total number of quanta.
+[SPEAKER_03]: And that gets you the, this is the number
+of electrons that are transported to
+[SPEAKER_03]: account for the photosynthetic rate that's
+measured.
+[SPEAKER_03]: And this is the number of photons that are
+absorbed by that system.
+[SPEAKER_03]: So that gives you the apparent quantum
+yield or photochemical yield of that
+[SPEAKER_03]: system.
+[SPEAKER_03]: With the fluorescence, by looking at the
+change in fluorescence you get by applying
+[SPEAKER_03]: an intense light, you can get an estimate
+directly of the photochemistry.
+[SPEAKER_03]: It comes about by making the assumption
+that when you apply an intense light,
+[SPEAKER_03]: you essentially reduce all the reaction
+centers so that there are no
+[SPEAKER_03]: photochemistry stops.
+[SPEAKER_03]: And fluorescence is going to increase
+because photochemistry is stopped.
+[SPEAKER_03]: These measurements are actually
+measurements of the yield, not the actual
+[SPEAKER_03]: amount of fluorescence.
+[SPEAKER_03]: The actual amount of fluorescence goes way
+up when you hit it with a bright light.
+[SPEAKER_03]: But if you use a special technique,
+which uses a modulated fluorescent light,
+[SPEAKER_03]: a modulated light to site fluorescence,
+and then you look at only the modulated
+[SPEAKER_03]: component of fluorescence, you see that
+yield effect.
+[SPEAKER_03]: And here the ratio, the amount of
+fluorescence increase, that is this
+[SPEAKER_03]: variable fluorescence that occurs relative
+to the total modulation, the total
+[SPEAKER_03]: fluorescence that occurs.
+[SPEAKER_03]: This is the dark, this is the fluorescence
+that occurs in a steady state.
+[SPEAKER_03]: This is what you get in a bright light.
+[SPEAKER_03]: That ratio is actually the photochemistry,
+the efficiency of photochemistry.
+[SPEAKER_03]: And there are ways you can go through and
+prove that.
+[SPEAKER_03]: The interesting thing is that if you turn
+the light on, allow the system to
+[SPEAKER_03]: equilibrate, and then redo this bright
+light, you don't get near as much
+[SPEAKER_03]: fluorescence out.
+[SPEAKER_03]: And this ratio is much lower.
+[SPEAKER_03]: And that's because the photochemical yield
+has decreased because the system is
+[SPEAKER_03]: responding to the increased light that you
+applied to the system.
+[SPEAKER_03]: It's downregulated.
+[SPEAKER_03]: The other interesting thing about that is
+if you look at it from fluorescence or
+[SPEAKER_03]: from CO2 exchange, and you just take a
+bunch of points and calculate the yield of
+[SPEAKER_03]: photochemistry from the two approaches,
+they agree pretty well.
+[SPEAKER_03]: So it gives you a pretty strong indication
+that, hey, you can measure photosynthesis
+[SPEAKER_03]: either by looking at the way the photons
+are processed, or by looking at the end
+[SPEAKER_03]: result of that processing CO2.
+[SPEAKER_03]: I think I'll just skip over this.
+[SPEAKER_03]: The main point of this is that there's,
+photosynthesis has a whole series of
+[SPEAKER_03]: regulatory processes that drive it.
+[SPEAKER_03]: Some of them are very quick, some of them
+take long periods of time, and it's kind
+[SPEAKER_03]: of very much like a current regulating IC,
+responding to things that are happening
+[SPEAKER_03]: downstream.
+[SPEAKER_03]: As I mentioned, there's this light,
+stomata for light, that is
+[SPEAKER_03]: non-photochemical quenching, and this
+would be the rate constant for that
+[SPEAKER_03]: non-photochemical process, and this the
+rate constant for the photochemical
+[SPEAKER_03]: process.
+[SPEAKER_03]: And these data on this side are derived
+from this experiment.
+[SPEAKER_03]: Here, this normal graph here.
+[SPEAKER_03]: So this is the rate of CO2 uptake,
+and this is the concentration of CO2.
+[SPEAKER_03]: And of course, as you increase the CO2,
+it goes up and up to a fairly high rate,
+[SPEAKER_03]: and then it saturates at CO2 saturation.
+[SPEAKER_03]: Here, you can actually improve this rate
+by giving it more light.
+[SPEAKER_03]: Here, you can't.
+[SPEAKER_03]: It's limited by the capacity of the
+CO2-fixing enzyme, which is CO2 dependent.
+[SPEAKER_03]: So out here at a high rate, this is the
+rate of photosynthesis.
+[SPEAKER_03]: So this point and this point, this here
+and this here, correspond to one another.
+[SPEAKER_03]: The rate constant for photochemistry is
+really high.
+[SPEAKER_03]: The rate constant for non-photochemical
+quenching is really low.
+[SPEAKER_03]: And as this begins to go down in
+photosynthetic rate, this
+[SPEAKER_03]: non-photochemical quenching turns on,
+and it corresponds to fairly stable region
+[SPEAKER_03]: where the photochemical rate constant
+stays the same or about the same.
+[SPEAKER_03]: So the system is responding in such a way
+that the light coming in or the photons
+[SPEAKER_03]: getting into the reaction centers,
+they're being reduced.
+[SPEAKER_03]: And the rate constant for the chemistry is
+staying about the same.
+[SPEAKER_03]: And then that system saturates ultimately,
+and the rate constant for the chemistry
+[SPEAKER_03]: also drops as the reaction centers close.
+[SPEAKER_03]: So just to give you an idea how that
+teeter totter kind of thing that I
+[SPEAKER_03]: illustrated to begin with works.
+[SPEAKER_03]: And there's a lot of power in you doing
+fluorescence.
+[SPEAKER_03]: But I guess the main thing that I point
+out here is that this PAM fluorometry,
+[SPEAKER_03]: the approach that we're using to make all
+these inferences about the way photons
+[SPEAKER_03]: process requires that we manipulate the
+light.
+[SPEAKER_03]: And that's not on if we're looking at the
+planet or even a field.
+[SPEAKER_03]: As we get out into the field, that's just
+not possible.
+[SPEAKER_03]: So we had this great method, but we were
+very frustrated with the idea that,
+[SPEAKER_03]: hey, we're never going to really apply
+this in the field.
+[SPEAKER_03]: We did some things like put together laser
+excitation systems to try and pull this
+[SPEAKER_03]: out.
+[SPEAKER_03]: But you actually can't make a laser that
+is in the visible range that's any
+[SPEAKER_03]: brighter than a pointer.
+[SPEAKER_03]: And in fact, if you actually went back and
+tried to license with the laser licensing
+[SPEAKER_03]: regulations one of these pointers,
+you probably have to reduce most of their
+[SPEAKER_03]: outputs considerably.
+[SPEAKER_03]: These are kind of grandfathered in.
+[SPEAKER_03]: So there's not much we can do to go out in
+the field and provide bright light to
+[SPEAKER_03]: manipulate.
+[SPEAKER_03]: So we'd more or less given up that it
+couldn't be used for regional or global
+[SPEAKER_03]: scales, even though it's such a powerful
+technique to look at photosynthesis with.
+[SPEAKER_03]: And that all changed in about 2010 for me.
+[SPEAKER_03]: I was walking around a meeting,
+the poster session of a meeting kind of at
+[SPEAKER_03]: the close of the meeting, looking at
+posters that had nothing to do with me.
+[SPEAKER_03]: And I stumbled on this poster that said,
+hey, we can measure fluorescence for
+[SPEAKER_03]: space.
+[SPEAKER_03]: And I wrote down the name and got on the
+phone the next day.
+[SPEAKER_03]: It turned out that it wasn't actually such
+a new deal.
+[SPEAKER_03]: It had been measured before.
+[SPEAKER_03]: The technique was originally worked out in
+the 70s using very narrow filters to look
+[SPEAKER_03]: at the light that comes off of vegetated
+surfaces.
+[SPEAKER_03]: It had actually been measured with a
+reflectance satellite.
+[SPEAKER_03]: One of the things that's kind of
+interesting about this comparison here,
+[SPEAKER_03]: these are crop circles, irrigated patches
+in the desert.
+[SPEAKER_03]: And you can see these are in RGB color,
+and these are in fluorescence.
+[SPEAKER_03]: And this is really dark.
+[SPEAKER_03]: There's no light coming off the soil.
+[SPEAKER_03]: The light that's coming here is the light
+that's coming from chlorophyll
+[SPEAKER_03]: fluorescing.
+[SPEAKER_03]: And one of the things that bedevils remote
+sensing in general by reflectance is that
+[SPEAKER_03]: there's not a lot of light reflected by
+the uninteresting part of the land
+[SPEAKER_03]: surface.
+[SPEAKER_03]: And it really messes things up.
+[SPEAKER_03]: And here you can see that, forget it,
+you don't see it at all.
+[SPEAKER_03]: If you could just look at that,
+you'd see the plants much more
+[SPEAKER_03]: specifically.
+[SPEAKER_03]: And that was the punchline from these two
+papers that simultaneously figured out how
+[SPEAKER_03]: to acquire the fluorescence from
+satellites that were originally designed
+[SPEAKER_03]: to measure the concentration of gas in the
+atmosphere.
+[SPEAKER_03]: And this is a year's fluorescence
+measurements showing that areas like the
+[SPEAKER_03]: Amazon and Indonesia and tropical Africa
+have the highest rates of fluorescence.
+[SPEAKER_03]: And things more or less follow the
+patterns that we expect for
+[SPEAKER_03]: photosynthesis.
+[SPEAKER_03]: So even though we couldn't measure,
+do any experiments on manipulating the
+[SPEAKER_03]: light, it looked like this is coming out
+that's looking kind of like we hoped
+[SPEAKER_03]: fluorescence would look anyway.
+[SPEAKER_03]: And this is a graph from a recent paper
+that Ying is the senior author on,
+[SPEAKER_03]: looking at fluorescence from a satellite
+that was originally put in orbit to
+[SPEAKER_03]: measure carbon dioxide concentration.
+[SPEAKER_03]: And flux measured at CO2 flux towers
+simultaneously with the fluorescence
+[SPEAKER_03]: measurements.
+[SPEAKER_03]: They agree pretty well.
+[SPEAKER_03]: So this is pulling it down to a smaller
+scale.
+[SPEAKER_03]: The other was really based on what we
+expected for photosynthesis.
+[SPEAKER_03]: This is really based on observations of
+photosynthesis.
+[SPEAKER_03]: So it's getting close to home.
+[SPEAKER_03]: And if I can make this run here.
+[SPEAKER_03]: This is kind of fun.
+[SPEAKER_03]: This is a yearly fluorescence changes in
+fluorescence.
+[SPEAKER_03]: And if you look at it, I can make this
+repeat.
+[SPEAKER_03]: Call your attention to the corn belt here.
+[SPEAKER_03]: You can see that that's really bright.
+[SPEAKER_03]: It really comes up.
+[SPEAKER_03]: It's actually the brightest spot on the
+planet.
+[SPEAKER_03]: Brightest large spot on the planet.
+[SPEAKER_03]: There's other areas that look almost as
+bright, the Ganges Delta area.
+[SPEAKER_03]: Some parts of Europe.
+[SPEAKER_03]: What that's saying is that photosynthesis
+in the corn belt probably during the time
+[SPEAKER_03]: of peak crop production is the highest of
+any place on earth in at least a large
+[SPEAKER_03]: patch.
+[SPEAKER_03]: One of the things that we try to do is to
+measure this also from field instruments.
+[SPEAKER_03]: This is a fluorescence equivalent of a
+satellite sitting above a soybean field
+[SPEAKER_03]: that we're working on this year.
+[SPEAKER_03]: What we're trying to do is to,
+this is the absorption spectrum of
+[SPEAKER_03]: chlorophyll, the green and the red is the
+emission spectrum of chlorophyll
+[SPEAKER_03]: fluorescence.
+[SPEAKER_03]: So light that's absorbed here comes back.
+[SPEAKER_03]: Some of it comes back out in these bands.
+[SPEAKER_03]: If we were doing this in a laboratory,
+we just put in a filter so that we only
+[SPEAKER_03]: light the plant would see light that was
+in this range and then it'd be dark in
+[SPEAKER_03]: this range and we could see the
+fluorescence from that.
+[SPEAKER_03]: Very simple.
+[SPEAKER_03]: That's kind of hard to do again in the
+field because filtering the sunlight
+[SPEAKER_03]: doesn't work very well.
+[SPEAKER_03]: So it would require a pretty large filter
+to filter the earth's input radiation so
+[SPEAKER_03]: we could walk at fluorescence.
+[SPEAKER_03]: But the way that they figured out how to
+do this was to look at the spectral
+[SPEAKER_03]: composition of the light that's coming
+down.
+[SPEAKER_03]: That of course affects the spectral
+composition of the light that's going up.
+[SPEAKER_03]: What's shown here is a lot of what looks
+like noise, but it isn't noise.
+[SPEAKER_03]: It's changes in the composition or the
+intensity of the light as a function of
+[SPEAKER_03]: wavelength which occurs because of things
+like iron and magnesium and elements like
+[SPEAKER_03]: that in the solar atmosphere that absorb
+light and they cause these little divots.
+[SPEAKER_03]: You see them again in the upwelling light
+because it's essentially sunlight.
+[SPEAKER_03]: It's reflecting.
+[SPEAKER_03]: It doesn't change its spectral
+composition, but fluorescence is new
+[SPEAKER_03]: light.
+[SPEAKER_03]: There's no impact of the fact,
+there's no impact of these spectral
+[SPEAKER_03]: features of the sunlight on the spectrum
+of the fluorescence.
+[SPEAKER_03]: So if you think of it, the light that you
+get back out is a function of the
+[SPEAKER_03]: fluorescence coming out that doesn't have
+any of these divots in it and the light
+[SPEAKER_03]: that's coming from the Sun which does.
+[SPEAKER_03]: And if you use a statistical tool,
+it's kind of like end member unmixing,
+[SPEAKER_03]: you can separate those two.
+[SPEAKER_03]: You can determine what fraction of the
+total near infrared light that's coming
+[SPEAKER_03]: back at you has come from fluorescence and
+what is just scattered light.
+[SPEAKER_03]: And that is made possible by having
+satellites that have the spectral
+[SPEAKER_03]: resolution to resolve these lines.
+[SPEAKER_03]: We focus mostly on these lines which are
+due to Fraunhofer absorptions in the solar
+[SPEAKER_03]: atmosphere.
+[SPEAKER_03]: This big feature is due to oxygen in the
+Earth's atmosphere and a lot of people
+[SPEAKER_03]: work with this.
+[SPEAKER_03]: It's a much bigger signal.
+[SPEAKER_03]: It's much easier to separate fluorescence
+from scattered light using this.
+[SPEAKER_03]: But unfortunately, it's also due to the
+oxygen in the atmosphere.
+[SPEAKER_03]: So what you see depends upon how much of
+the atmosphere is between you and your
+[SPEAKER_03]: measurement.
+[SPEAKER_03]: And what's happened to the light has come
+through the atmosphere before you actually
+[SPEAKER_03]: do your measurement.
+[SPEAKER_03]: So it's a more complicated thing,
+but it's possible and this is the way that
+[SPEAKER_03]: we make this determination of how much
+fluorescence there is.
+[SPEAKER_03]: This is always a bit of a problematic
+area.
+[SPEAKER_03]: So if you've got any questions about this,
+feel free to interrupt and ask.
+[SPEAKER_03]: Does that make sense?
+[SPEAKER_03]: Okay.
+[SPEAKER_03]: This is just, if we look at fluorescence
+coming off, this is from an Amazon canopy
+[SPEAKER_03]: and all of this is due to clouds.
+[SPEAKER_03]: But if we look at the fluorescence that's
+coming out, it's fairly well behaved and
+[SPEAKER_03]: it behaves pretty well if we look at there
+are ways that we can sort of normalize
+[SPEAKER_03]: this either to the incoming light
+intensity or to the amount of light that's
+[SPEAKER_03]: reflected.
+[SPEAKER_03]: So it's kind of well behaved.
+[SPEAKER_03]: The measurement is difficult if we're
+looking at these very small spectral
+[SPEAKER_03]: features, but if we're really careful the
+way we do spectroscopy, control
+[SPEAKER_03]: temperatures, do a lot of signal averaging
+and things like that, we get pretty good
+[SPEAKER_03]: data.
+[SPEAKER_03]: So yeah, we got this method based on
+resolving these fine spectral details that
+[SPEAKER_03]: gives us the light emitted by chlorophyll.
+[SPEAKER_03]: It's a pretty powerful proxy for
+photosynthesis.
+[SPEAKER_03]: And I guess the initial thought that we
+had was that this would all be due to
+[SPEAKER_03]: changes in fluorescence yield that could
+tell us about the physiology of the plants
+[SPEAKER_03]: and that would tell us all about
+photosynthesis.
+[SPEAKER_03]: As we've gotten more and more involved in
+this, it's become clear that the structure
+[SPEAKER_03]: of the canopy that's doing photosynthesis
+has an awful lot to do with how much
+[SPEAKER_03]: fluorescence gets out, maybe even more
+than the yield.
+[SPEAKER_03]: And that has the really key component here
+is what we call the escape probability,
+[SPEAKER_03]: which is the probability that emitted
+fluorescent photosynthesis a photon that's
+[SPEAKER_03]: emitted in the canopy actually makes it
+out so that we could measure it.
+[SPEAKER_03]: And that's very dependent upon both the
+observational geometry.
+[SPEAKER_03]: So it changes as say a satellite looks at
+the surface from different directions or
+[SPEAKER_03]: if you're looking at the same piece of
+canopy and the sun were to go through the
+[SPEAKER_03]: daily course, you'd also see that this
+emission parameter would change.
+[SPEAKER_03]: So it's a directional property of the
+canopy itself.
+[SPEAKER_03]: Just to sort of go back to that diagram,
+what's happening here is that a photon is
+[SPEAKER_03]: absorbed and some of it gets to the
+reaction center.
+[SPEAKER_03]: Some of it, since this takes a finite
+period of time, chlorophyll fluorescence
+[SPEAKER_03]: comes out while it's in transit.
+[SPEAKER_03]: And it tells you essentially something
+about the lifetime that the photons or the
+[SPEAKER_03]: excited state has in this pigment bed.
+[SPEAKER_03]: Longer the lifetime, the more fluorescence
+is gonna come out relative to other
+[SPEAKER_03]: things.
+[SPEAKER_03]: I think I probably skipped all this.
+[SPEAKER_03]: And just to say that we have been working
+to, of course, one thing to do is to put
+[SPEAKER_03]: this into a model of photosynthesis and
+see if we can figure out well,
+[SPEAKER_03]: how's physiology control this.
+[SPEAKER_03]: And this is a series of simulations where
+we're looking at photosynthetic rate as a
+[SPEAKER_03]: function of light.
+[SPEAKER_03]: If we change the amount of the CO2 fixing
+enzyme, ribisco.
+[SPEAKER_03]: So here's very low levels and very high
+levels.
+[SPEAKER_03]: This has an effect on the yield of
+photochemistry.
+[SPEAKER_03]: We've got more capacity, the yield of
+photochemistry can be higher.
+[SPEAKER_03]: And you get some fairly complicated
+patterns of the fluorescence yield as a
+[SPEAKER_03]: function of decreasing the V max.
+[SPEAKER_03]: And this here is the simulated
+solar-reduced fluorescence.
+[SPEAKER_03]: You can see that there are some
+differences as high photosynthetic
+[SPEAKER_03]: capacity, you tend to get more
+solar-reduced fluorescence.
+[SPEAKER_03]: Then at low photosynthetic capacity,
+but it's nowhere near the linear zero
+[SPEAKER_03]: intercept relationship, which we see in
+Yang's data, for example.
+[SPEAKER_03]: And if we do simulations with a model that
+incorporates radiation transport,
+[SPEAKER_03]: photosynthesis and fluorescent yield,
+and we vary things which vary the near
+[SPEAKER_03]: infrared reflectance of the canopy by
+changing leaf angle distribution,
+[SPEAKER_03]: leaf area index, fractional vegetation
+cover, soil color and things like that,
+[SPEAKER_03]: we change the amount of solar-reduced
+fluorescence.
+[SPEAKER_03]: And if we change, go through that same
+matrix of things and change the
+[SPEAKER_03]: fluorescence yield, you get a different
+slope.
+[SPEAKER_03]: So it looks like what we see is something
+that we see two effects.
+[SPEAKER_03]: One is related to essentially the
+structure of the canopy, and the other is
+[SPEAKER_03]: related to the fluorescence.
+[SPEAKER_03]: And we have the two things simultaneously
+affecting what we see from looking space.
+[SPEAKER_03]: This is just to show you something about
+what we expect from the fluorescence
+[SPEAKER_03]: itself.
+[SPEAKER_03]: Based on those models, we're looking for
+the satellite at the same time of day.
+[SPEAKER_03]: Most of the satellites we're using have
+polar orbits, and they come over at the
+[SPEAKER_03]: same solar time for each space.
+[SPEAKER_03]: So we're always looking at the same
+illumination.
+[SPEAKER_03]: This is, say, illuminated with full sun
+and lots of photosynthetic capacity.
+[SPEAKER_03]: This is the photochemistry.
+[SPEAKER_03]: This is the non-photochemical quenching.
+[SPEAKER_03]: This is the sort of wasting image term,
+and this is what's lost by fluorescence.
+[SPEAKER_03]: As you go to lower capacity, the
+photochemistry goes down, the
+[SPEAKER_03]: non-photochemical quenching goes up,
+really goes up when you have stress.
+[SPEAKER_03]: But this is the fluorescence, and this is
+that fluorescence expanded 10 times.
+[SPEAKER_03]: So this just shows that there's some
+sensitivity to the environment,
+[SPEAKER_03]: but that sensitivity is not the whole
+story, at least.
+[SPEAKER_03]: We have wanted to do this to couple with
+these kinds of measurements.
+[SPEAKER_03]: You can measure the gas exchange of a
+system we're doing for time.
+[SPEAKER_03]: You can measure the CO2 exchange and
+essentially reconstruct what the gross
+[SPEAKER_03]: primary productivity is, but these are
+areas at about a kilometer at most in
+[SPEAKER_03]: size.
+[SPEAKER_03]: And the solar-reduced fluorescence
+measurements that we're trying to make are
+[SPEAKER_03]: normally in the range of, well,
+the most frequent one, the one they use
+[SPEAKER_03]: the most, has a footprint of 40 kilometers
+on the side.
+[SPEAKER_03]: So they're too big to actually match with
+these sites.
+[SPEAKER_03]: But if we could match with these sites,
+we have maybe 100 of these around the
+[SPEAKER_03]: world, maybe a kilometer squared each.
+[SPEAKER_03]: That's at least a sampling of one part per
+million of a biosphere, and that would be
+[SPEAKER_03]: useful in putting together some
+information about how the whole biosphere
+[SPEAKER_03]: works.
+[SPEAKER_03]: I think you understand the limitations of
+that as well.
+[SPEAKER_03]: But probably the best approach that's been
+made so far to do this is to use machine
+[SPEAKER_03]: learning to analyze these.
+[SPEAKER_03]: What a student in our group, UH,
+has been doing is to look at gas exchange
+[SPEAKER_03]: in fairly large scales, air moving across
+the continent, and try and use models and
+[SPEAKER_03]: data to predict or to explain the
+variation in the CO2 concentration.
+[SPEAKER_03]: If you know what the CO2 is at start and
+you know it at the end, you should be able
+[SPEAKER_03]: to say something about what CO2 change has
+occurred over the path across the
+[SPEAKER_03]: continent.
+[SPEAKER_03]: The interesting thing from this is just
+that the models that we have that are sort
+[SPEAKER_03]: of the state-of-the-art or system models
+get anywhere the best one does pointing at
+[SPEAKER_03]: 0.6 or 0.4 of the variance, and most of
+them are down here in fairly low part of
+[SPEAKER_03]: the variance.
+[SPEAKER_03]: Solar induced fluorescence by itself is a
+single variable.
+[SPEAKER_03]: Without putting in the meteorology and a
+bunch of other stuff, which are in these
+[SPEAKER_03]: models, explains more.
+[SPEAKER_03]: You can explain more of it by putting in a
+couple of other variables.
+[SPEAKER_03]: But it's cool that this is something that
+seems to capture a lot of the variance
+[SPEAKER_03]: that occurs.
+[SPEAKER_03]: And what you want to do when you're making
+a model is put in the data that's most has
+[SPEAKER_03]: the largest leverage and ignore the data
+that doesn't have any leverage.
+[SPEAKER_03]: And models principally, we don't do that
+when we make models.
+[SPEAKER_03]: We put in everything including the kitchen
+sink.
+[SPEAKER_03]: So this is kind of a refreshing way of
+looking at it.
+[SPEAKER_03]: So I think we'll skip over that quickly
+and go on.
+[SPEAKER_03]: The idea that we worked on was the
+observation that the light that was coming
+[SPEAKER_03]: from reflected by the canopy in the near
+infrared seemed to correlate quite well
+[SPEAKER_03]: with that.
+[SPEAKER_03]: It was coming off fluorescence.
+[SPEAKER_03]: If we were looking at full canopies,
+and this is sorting out pixels by their
+[SPEAKER_03]: normalized difference vegetation index.
+[SPEAKER_03]: So when that vegetation index is high,
+you get a really high correlation with the
+[SPEAKER_03]: near infrared reflectance.
+[SPEAKER_03]: And as it goes down to less vegetated
+pixels, of course, that correlation goes
+[SPEAKER_03]: away.
+[SPEAKER_03]: So we thought, well, let's just multiply
+the total near infrared reflectance times
+[SPEAKER_03]: the NDVI and see what happens.
+[SPEAKER_03]: And this is SIF and that product.
+[SPEAKER_03]: They fall in line really nicely.
+[SPEAKER_03]: And the thing that's really nice about
+this, even though it's kind of a derived
+[SPEAKER_03]: product, we've got that at 300 meters
+ground resolution.
+[SPEAKER_03]: And we have it from 1980 to present.
+[SPEAKER_03]: So we can now look at flux sites with
+something that looks a little bit like
+[SPEAKER_03]: solar induced fluorescence.
+[SPEAKER_03]: It isn't exactly the same, but it has some
+of the same properties.
+[SPEAKER_03]: This is just looking at that correlated
+with some global models.
+[SPEAKER_03]: Again, just the annual NIRV sum and the
+GPP modeled.
+[SPEAKER_03]: So it captures a lot of the variability in
+the biosphere all by itself.
+[SPEAKER_03]: What we're looking at is essentially
+[SPEAKER_03]: the normalized difference vegetation index
+is this reflectance here.
+[SPEAKER_03]: This green is the reflectance of a leaf.
+[SPEAKER_03]: And it looks at the ratio of this band two
+and band four, the difference between
+[SPEAKER_03]: those two over the sum of those.
+[SPEAKER_03]: And this is a spectrum of soil.
+[SPEAKER_03]: You can see that there's some soil slope
+there, but not nearly as much.
+[SPEAKER_03]: So that vegetation index for the soil,
+if you were looking at the soil,
+[SPEAKER_03]: would be very low.
+[SPEAKER_03]: The vegetation index, if you're looking at
+a vegetated area, would be very high.
+[SPEAKER_03]: And if you kind of think of it,
+the light that's coming off of,
+[SPEAKER_03]: say, a mixed pixel like this, you have a
+very low NDVI of the light that's coming
+[SPEAKER_03]: up from the soil.
+[SPEAKER_03]: But if that's coming off from a leaf,
+it has a very high vegetation index.
+[SPEAKER_03]: If you multiply the total times this
+ratio, this index, the NDVI, you
+[SPEAKER_03]: essentially get something.
+[SPEAKER_03]: If it's all coming from the leaf,
+it's going to be high.
+[SPEAKER_03]: And your NIRV red that's coming off of the
+canopy is going to be all plant.
+[SPEAKER_03]: And it's going to vary pretty much by what
+the fraction of light that's coming out of
+[SPEAKER_03]: the system is that's coming from the leaf.
+[SPEAKER_03]: This is actually analogous to the way that
+we're measuring fluorescence.
+[SPEAKER_03]: We're just determining how much of the
+NIRV red light is coming off leaves and
+[SPEAKER_03]: multiplying that times the total.
+[SPEAKER_03]: And that gives us an index that's kind of
+like the fluorescence.
+[SPEAKER_03]: And this is what you see if we just take
+the total NIRV and compare it.
+[SPEAKER_03]: This is for pixels.
+[SPEAKER_03]: This is actually for all the land surface.
+[SPEAKER_03]: So this is just the total near infrared
+coming out.
+[SPEAKER_03]: And you can see it's scattered.
+[SPEAKER_03]: There's some indication that there's
+something there.
+[SPEAKER_03]: But if you just multiply it by the NDVI,
+you get this nice correlation because it
+[SPEAKER_03]: throws away all these pixels that are
+influenced by clouds or soil or other
+[SPEAKER_03]: things that interfere And these are flux
+sites now.
+[SPEAKER_03]: If you take the, say, 100 or so flux sites
+and look at the annual GPP sum and the sum
+[SPEAKER_03]: of this NIRV, some other things that we
+can analyze, it's actually quite an
+[SPEAKER_03]: improvement over other approaches that
+have been used in the past.
+[SPEAKER_03]: And one of the things that really we found
+very interesting of this is that if we
+[SPEAKER_03]: took this NIRV, you would think that if
+you took that and multiplied it by the
+[SPEAKER_03]: lights, it'd improve things.
+[SPEAKER_03]: But it actually makes it worse.
+[SPEAKER_03]: And we think that what's going on,
+what we're finding, is that there isn't,
+[SPEAKER_03]: the NIRV has most of the environmental
+correlates that have normally thought to
+[SPEAKER_03]: drive photosynthesis already kind of work
+into it.
+[SPEAKER_03]: And when you add another one or add one
+that's already in it, you just add the
+[SPEAKER_03]: noise.
+[SPEAKER_03]: So we're very interested in it from that
+point of view because that means we have a
+[SPEAKER_03]: system is growing a canopy, which has
+some, I think we'll just skip over these,
+[SPEAKER_03]: except to show you that canopies are very
+diverse.
+[SPEAKER_03]: Plants grow those canopies under genetic
+and environmental control.
+[SPEAKER_03]: They have very different properties in the
+way they transport radiation.
+[SPEAKER_03]: But the way that they reflect near
+infrared radiation seems to have a lot of
+[SPEAKER_03]: information about how they actually are
+functioning.
+[SPEAKER_03]: And we're really interested in it from the
+point of view of understanding the biology
+[SPEAKER_03]: of this control.
+[SPEAKER_03]: So first, before stopping, just mentioned
+that there are a couple of other things
+[SPEAKER_03]: that are really interesting in this.
+[SPEAKER_03]: If this is an area where we're looking at
+an area in the Amazon, with two different
+[SPEAKER_03]: remote sensing products, one's better
+cloud filtered than the other,
+[SPEAKER_03]: the better remote sensing product that has
+a tighter correlation.
+[SPEAKER_03]: So we can improve this by getting better
+remote sensing.
+[SPEAKER_03]: This is a C3 soybean crop.
+[SPEAKER_03]: This is a corn crop.
+[SPEAKER_03]: You can see that there's a big difference
+as you'd expect because of C4
+[SPEAKER_03]: photosynthesis, things like that that can
+also be put in to improve this system.
+[SPEAKER_03]: It works well monthly and does as well as
+the best models all by itself,
+[SPEAKER_03]: and does a pretty good job of simulating
+global photosynthesis and something up
+[SPEAKER_03]: there.
+[SPEAKER_03]: So thank you very much.
+[SPEAKER_01]: So what about the oceans?
+[SPEAKER_01]: Can you see the oceans?
+[SPEAKER_03]: Yeah, actually the oceans are easier
+because there's no substantial reflectance
+[SPEAKER_03]: in the near infrared.
+[SPEAKER_03]: So they've been using it for some time to
+do fluorescence.
+[SPEAKER_03]: Most of the work has been done looking at
+things like nutrient limitation.
+[SPEAKER_03]: There's a new satellite that has just come
+online called Tricomu that allows you to
+[SPEAKER_03]: do red fluorescence.
+[SPEAKER_03]: Red light gets out of the ocean.
+[SPEAKER_03]: The near infrared light that we're working
+with, the ocean is black in that range.
+[SPEAKER_03]: So you can see coastal blooms and things
+like that.
+[SPEAKER_03]: We haven't worked very much with that at
+this point, but I think it's going to be
+[SPEAKER_03]: useful.
+[SPEAKER_00]: I'm curious if there's any effect of the
+polarization of skylight that changes
+[SPEAKER_00]: during the day on your fluorescence.
+[SPEAKER_03]: Yeah, well certainly the reflectance
+remote sensing, there have been satellites
+[SPEAKER_03]: put up to look at polarization of the
+light.
+[SPEAKER_03]: There's also an effect.
+[SPEAKER_03]: The specular reflectance off of the leaves
+is polarized.
+[SPEAKER_03]: So if light strikes the epidermis and then
+it's reflected back like a mirror,
+[SPEAKER_03]: that's for reflectance a real problem
+because it doesn't carry the signal of the
+[SPEAKER_03]: vegetation.
+[SPEAKER_03]: And they've been able to eliminate that by
+looking at the polarization.
+[SPEAKER_03]: There is also the satellite that measures
+the OCO2 satellite.
+[SPEAKER_03]: It changes its orientation as it goes
+through the, from north to south,
+[SPEAKER_03]: from pole to pole.
+[SPEAKER_03]: Because of polarization, and I don't
+understand the spectroscopy of that.
+[SPEAKER_03]: Maybe you do.
+[SPEAKER_03]: They do that.
+[SPEAKER_03]: They rotate the position of the slit
+because of the polarization effect.
+[SPEAKER_03]: So it is important, but I don't
+understand.
+Yeah.
+[SPEAKER_02]: If you're dealing with a region that has a
+water limitation throughout or semi-arid,
+[SPEAKER_02]: and snowmades close, CO2 entry into the
+leaf is limiting photosynthesis.
+[SPEAKER_02]: How does your system operate when you deal
+with that?
+[SPEAKER_03]: Well, if the, we don't have an awful lot
+of measurements where we have regulated
+[SPEAKER_03]: control of water availability at this
+point.
+[SPEAKER_03]: We have drought episodes.
+[SPEAKER_03]: What we see is that droughts almost
+invariably result in lower fluorescence.
+[SPEAKER_03]: It could be, we see that droughted leaves
+have less fluorescence, but not a huge
+[SPEAKER_03]: effect.
+[SPEAKER_03]: It could be that there is an additional
+effect due to leaf dropping, leaf curling,
+[SPEAKER_03]: leaf abscission, and things like that that
+happen consistent or simultaneously with
+[SPEAKER_03]: the drought, which, interestingly,
+also has to do with just shedding light,
+[SPEAKER_03]: just as the non-photochemical quenching
+does.
+[SPEAKER_03]: The plants are responding to a drought by
+absorbing less light and letting less of
+[SPEAKER_03]: that light get to the reaction centers.
+[SPEAKER_03]: Because it's then, because of the
+limitation of water, become less able to
+[SPEAKER_03]: use that light for chemistry.
+Yeah.
+[SPEAKER_01]: So I'm struck by the intensity in the
+Cornbell movie you showed, and what I'm
+[SPEAKER_01]: wondering is, is that because of the
+agriculture that's there, or is it because
+[SPEAKER_01]: of the location?
+[SPEAKER_01]: So if we didn't have crops there,
+would it be just as intense?
+[SPEAKER_03]: It's a really good question.
+[SPEAKER_03]: What you tend to see, and we'd have to
+look for small areas that are,
+[SPEAKER_03]: I think there are some sites that are in
+the Corn Belt, but in forests,
+[SPEAKER_03]: for example, that we could look at and
+figure that out.
+[SPEAKER_03]: My expectation is that the whole thing is
+pretty much limited by the season and the
+[SPEAKER_03]: environment, but that for crops,
+the productivity is squished into a very
+[SPEAKER_03]: narrow window, and for forests,
+it kind of gets spread out, and I wouldn't
+[SPEAKER_03]: be surprised if they tend to be more the
+same if you add it all up over the year,
+[SPEAKER_02]: but I don't have a good answer for that at
+this point.
+[SPEAKER_02]: Yeah.
+[SPEAKER_02]: Would you use this technique to look the
+chlorophyll on other planets?
+[SPEAKER_03]: Yeah.
+[SPEAKER_03]: You see a very substantial change in the
+reflectance of the planet in these visible
+[SPEAKER_03]: wavelengths, visible and near-infrared
+wavelengths.
+[SPEAKER_03]: It's been suggested as a way of looking
+for photosynthetic pigments on other
+[SPEAKER_03]: planets.
+[SPEAKER_03]: I think the more likely way that we'll get
+to that in the near future is looking at
+[SPEAKER_03]: the light that gets through the atmosphere
+as the planet transients across the star,
+[SPEAKER_03]: but yeah, I think it's worth a shot.
+[SPEAKER_03]: Certainly worth thinking about.
+[SPEAKER_01]: Any other questions?
+[SPEAKER_02]: Yes.
+[SPEAKER_03]: That's a good point.
+[SPEAKER_03]: What we do in almost all of our models of
+plants of radiation transport,
+[SPEAKER_03]: for example, reverse system models,
+is we have all kinds of very elaborate
+[SPEAKER_03]: descriptions of the water relations and
+the physiology of the plants.
+[SPEAKER_03]: Then we put in an arbitrary function for
+the way that light is absorbed by the
+[SPEAKER_03]: leaves.
+[SPEAKER_03]: That can be spherical or rectophile,
+but people have avoided dealing with the
+[SPEAKER_03]: explicit radiative transport of the
+canopies.
+[SPEAKER_03]: Our work is saying that that is really
+important, and we aren't going to get
+[SPEAKER_03]: photosynthesis right, until we do that and
+understand how that relates to how
+[SPEAKER_03]: enzymatic capacity is also distributed
+among those leaves.
+[SPEAKER_03]: The other thing that's really interesting
+about this is that the work suggests that
+[SPEAKER_03]: photosynthesis isn't that strongly limited
+by physiology.
+[SPEAKER_03]: It's more limited by the amount of canopy
+and the structure of the canopy that's
+[SPEAKER_03]: made, and we're not dealing with that at
+all in modeling the Earth system.
+[SPEAKER_03]: That's what I mean by it's wrong.
+[SPEAKER_03]: It's wrong.
+[SPEAKER_01]: Any other questions?
+[SPEAKER_00]: Have you made any tacit assumptions about
+the nature of the photon itself or the
+[SPEAKER_00]: nature of light itself in coming up with
+your models?
+[SPEAKER_03]: Well, probably we have.
+[SPEAKER_03]: This whole thing about the thing on the
+Sun and the linking to the chlorophyll and
+[SPEAKER_03]: that sort of thing is something I made up
+just recently.
+[SPEAKER_03]: I've cornered a couple of physicists to
+ask them, is this really off the wall or
+[SPEAKER_03]: is this about the way to explain it?
+[SPEAKER_03]: They said, yeah, I don't like the
+vocabulary we're using, but it seems about
+[SPEAKER_03]: right.
+[SPEAKER_03]: I would like to give you one.
+[SPEAKER_03]: Okay.
+Good.
+[SPEAKER_01]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_01]: Thank you.
+[SPEAKER_01]: Thank you.
+Thank you.

@@ -1,0 +1,989 @@
+[SPEAKER_03]: This is a production of Cornell
+University.
+So
+[SPEAKER_01]: thank you, Gillian, first for the
+invitation and Joss and Lou for organizing
+[SPEAKER_01]: these across all the sections.
+[SPEAKER_01]: So my name is Gaurav Moghe.
+[SPEAKER_01]: I grew up in Mumbai, India and did my
+bachelor's in microbiology, my master's in
+[SPEAKER_01]: biochemistry.
+[SPEAKER_01]: Then I came here in 2007 at Michigan State
+where I did my postdoc, PhD and postdoc
+[SPEAKER_01]: and joined Cornell in 2012.
+[SPEAKER_01]: 2017.
+[SPEAKER_01]: So my lab here is working on various
+aspects of plant biochemistry.
+[SPEAKER_01]: I'm going to talk about two projects.
+[SPEAKER_01]: One is a more computational project on
+predicting enzyme function.
+[SPEAKER_01]: And the second is more wet lab aspects of
+things where we are looking at the
+[SPEAKER_01]: mechanisms behind stress response,
+mainly in sweet potato.
+[SPEAKER_01]: So the main motivation for many of the
+projects in the lab is that there is a
+[SPEAKER_01]: huge diversity of plant metabolites.
+[SPEAKER_01]: And that is because of the complexity of
+the underlying metabolic pathways.
+[SPEAKER_01]: And many of these are not completely
+characterized or the regulation is poorly
+[SPEAKER_01]: understood.
+[SPEAKER_01]: Now what are some of the challenges for
+this pathway discovery?
+[SPEAKER_01]: One is that now we can sequence any
+genome.
+[SPEAKER_01]: Does this work?
+[SPEAKER_01]: Yep.
+[SPEAKER_01]: We can sequence any genome.
+[SPEAKER_01]: Even polyploid genomes, it's easier to
+sequence than before.
+[SPEAKER_01]: But gene functions in most of these
+genomes are very poorly defined.
+[SPEAKER_01]: If you do an RNA-Seq or a QPL analysis in
+each QPL or RNA-Seq data, you see hundreds
+[SPEAKER_01]: of genes, dozens of genes.
+[SPEAKER_01]: But which of those genes are really
+important for a given function?
+[SPEAKER_01]: That's not clearly understood because you
+don't know the functions very well,
+[SPEAKER_01]: especially in nonmodal organisms where
+there aren't a lot of genetic resources
+[SPEAKER_01]: available.
+[SPEAKER_01]: One of the type of genes that are affected
+by these are enzyme families.
+[SPEAKER_01]: Because metabolic enzymes, because they're
+part of large enzyme families.
+[SPEAKER_01]: The function inference is difficult here
+because across large evolutionary
+[SPEAKER_01]: distances, the sequences change and
+evolve.
+[SPEAKER_01]: So you can't take something from
+arabidopsis and try and predict the
+[SPEAKER_01]: function in some other species.
+[SPEAKER_01]: So this is an illustration of that.
+[SPEAKER_01]: If you have a large family in which only
+two genes are characterized, arabidopsis
+[SPEAKER_01]: and rice, you want to predict the function
+of a tomato ortholog.
+[SPEAKER_01]: You can't predict that because a lot of
+duplicates and speciations have occurred
+[SPEAKER_01]: along the way.
+[SPEAKER_01]: There's also allelic diversions and
+promiscuity that's present in enzyme
+[SPEAKER_01]: families.
+[SPEAKER_01]: And that leads to missing annotations,
+incomplete annotations, or wrong
+[SPEAKER_01]: annotations.
+[SPEAKER_01]: This is a very prevalent problem in all
+sequence genomes, even in arabidopsis.
+[SPEAKER_01]: That's what we are trying to address.
+[SPEAKER_01]: Our model family is this family called the
+BHDSL transferase family, which does a
+[SPEAKER_01]: simple reaction.
+[SPEAKER_01]: I won't go into all the biochemical
+details, but this family has expanded
+[SPEAKER_01]: quite a bit in plants.
+[SPEAKER_01]: So in algal species, you see just one to
+three copies.
+[SPEAKER_01]: But in dicots, monocots, you see dozens to
+hundreds of copies in each genome.
+[SPEAKER_01]: But these are poorly annotated.
+[SPEAKER_01]: In tomato, these are some of the genes,
+some of the BHDS.
+[SPEAKER_01]: And only 12 out of these BHDS are
+substrate-class annotations.
+[SPEAKER_01]: The rest are just characterized as
+HXS-D-type acertransferases.
+[SPEAKER_01]: These are doing something.
+[SPEAKER_01]: They are not just acertransferases.
+[SPEAKER_01]: What are they exactly doing?
+[SPEAKER_01]: What substrate do they use?
+[SPEAKER_01]: That's unknown.
+[SPEAKER_01]: So what we reasoned is that if we increase
+the density of annotated functions across
+[SPEAKER_01]: the tree, then we can probably predict the
+tomato ortholog better.
+[SPEAKER_01]: And it's not that only arabidopsis and
+rice have been characterized.
+[SPEAKER_01]: A lot of them have been characterized,
+but they are in papers.
+[SPEAKER_01]: They are not in databases.
+[SPEAKER_01]: And so we can't really find them.
+[SPEAKER_01]: Over the last few years, we have several
+publications on this particular fact.
+[SPEAKER_01]: One of them is called FungFetch,
+or the workflow.
+[SPEAKER_01]: In this tool, essentially, our workflow,
+what we did was we used ChatGPT,
+[SPEAKER_01]: or GPT, the brains behind ChatGPT,
+to read papers instead of doing it
+[SPEAKER_01]: ourselves.
+[SPEAKER_01]: And it's a whole workflow where we
+screened 27,000 abstracts from PubMed,
+[SPEAKER_01]: read thousands of papers, and extracted a
+bunch of activities.
+[SPEAKER_01]: From there, we removed hallucinations and
+did all fun stuff, which took several
+[SPEAKER_01]: months.
+[SPEAKER_01]: What that resulted in is an increase in
+the density of the enzyme functions.
+[SPEAKER_01]: And I won't go into all the details.
+[SPEAKER_01]: But if you look at the existing annotation
+in tomato, there are only 12 BHDs out of
+[SPEAKER_01]: 100, which have their functions
+characterized.
+[SPEAKER_01]: In our previous paper, in 2022,
+we did manual curation of these BHDs.
+[SPEAKER_01]: And from papers on that, based on the
+similarity, after increasing the density,
+[SPEAKER_01]: we can increase the number to 42.
+[SPEAKER_01]: That's a huge jump.
+[SPEAKER_01]: But after compiling database using
+FungFetch, we can increase that number to
+[SPEAKER_01]: 58 out of 100.
+[SPEAKER_01]: So just by taking what has already been
+done over the last three decades,
+[SPEAKER_01]: we can increase the functions by quite a
+bit.
+[SPEAKER_01]: And this is just an example of BHDs.
+[SPEAKER_01]: We can do this for phenotypes.
+[SPEAKER_01]: We can do this for other sets of genes,
+et cetera, too, as long as we can put it
+[SPEAKER_01]: in orthologous groups and then analyze it
+in this way.
+[SPEAKER_01]: So right now, we are exploring the other
+applications of this tool.
+[SPEAKER_01]: We're also sharing this data with global
+databases.
+[SPEAKER_01]: We're collaborating with Uniprot,
+Plant Metabolic Network, et cetera.
+[SPEAKER_01]: So people all over the world will be able
+to use these highly curated data sets once
+[SPEAKER_01]: they have their set of candidates.
+[SPEAKER_01]: So in the second project, we are working a
+lot on sweet potatoes.
+[SPEAKER_01]: I won't go into reasons why we are working
+on sweet potatoes, but we started seeing
+[SPEAKER_01]: very interesting phenotypes, and we
+started growing them in the field.
+[SPEAKER_01]: So these are two different varieties that
+are started at two.
+[SPEAKER_01]: One we grew in Albany, near Albany,
+and one in Geneva.
+[SPEAKER_01]: Started at the same time from the same
+stock.
+[SPEAKER_01]: And you can see the huge difference in the
+root size.
+[SPEAKER_01]: And surprisingly, the second year,
+the order was switched between the two
+[SPEAKER_01]: locations.
+[SPEAKER_01]: So all the sizes were switched,
+and we really don't know what exactly
+[SPEAKER_01]: caused this.
+[SPEAKER_01]: And that led to a whole set of experiments
+that we are trying to still figure out
+[SPEAKER_01]: what is causing this difference.
+[SPEAKER_01]: One of the reasons why sweet potatoes are
+attractive in New York state is because in
+[SPEAKER_01]: the South where they're grown,
+there are a lot of diseases and pest
+[SPEAKER_01]: problems.
+[SPEAKER_01]: But in New York, most of the cultivation
+is organic, and there's a market for diet.
+[SPEAKER_01]: There's a lot of varieties and food
+colors, health foods, which can be tapped
+[SPEAKER_01]: into if we can grow sweet potatoes under
+organic cultivation in New York state.
+[SPEAKER_01]: So we have done this experiment where we
+grew sweet potatoes under different
+[SPEAKER_01]: stresses.
+[SPEAKER_01]: We also supplemented them with arbuscular
+microlip fungi.
+[SPEAKER_01]: And it looks like it had an effect in
+managing the drought responses.
+[SPEAKER_01]: Not so much in regular water and high
+water, but we see improvements in leaf
+[SPEAKER_01]: quality, as well as root length based on
+if we inoculate them with AMFs.
+[SPEAKER_01]: This is a result from just today morning,
+11 o'clock, where Terepara grad student in
+[SPEAKER_01]: the lab is looking at, again, root growth
+under water stress.
+[SPEAKER_01]: And under low water, we can see increased
+tuberization of the roots and increased
+[SPEAKER_01]: root length, which is expected.
+[SPEAKER_01]: But increased tuberization is a bit
+surprising, which indicates that the
+[SPEAKER_01]: drought response and the tuberization
+pathways are overlapping.
+[SPEAKER_01]: And we would want to figure out what's
+happening exactly to make the sweet potato
+[SPEAKER_01]: cultivation more resilient to water
+stress.
+[SPEAKER_01]: Another aspect we are looking into is
+these class of compounds called resin
+[SPEAKER_01]: glycosides, which provide defense against
+nematodes, fungi in sweet potato roots,
+[SPEAKER_01]: and many other convalescent species.
+[SPEAKER_01]: They are important for medicinal
+properties, too.
+[SPEAKER_01]: We're trying to figure out their
+biosynthetic pathways and the diversity in
+[SPEAKER_01]: different sweet potato cultivars so we can
+breed for more resilient, pathogen
+[SPEAKER_01]: resistant, and nematode resilient sweet
+potatoes.
+[SPEAKER_01]: That's it.
+[SPEAKER_01]: A lot of people have contributed to our
+research and can take any questions.
+[SPEAKER_01]: Yep.
+[SPEAKER_05]: What is a metabolite?
+[SPEAKER_01]: What is a metabolite?
+[SPEAKER_01]: When we say metabolite, it is basically
+something that's a small molecule that
+[SPEAKER_01]: we're talking about.
+[SPEAKER_01]: So proteins, we don't consider them as
+metabolites.
+[SPEAKER_01]: Proteins are not detected easily using the
+type of LC-MS that we use.
+[SPEAKER_01]: And so they are basically ignored from our
+analysis.
+[SPEAKER_01]: So most of our scans are less than 2,000
+Daltons.
+[SPEAKER_04]: Not secondary metabolites.
+[SPEAKER_01]: So secondary, primary, both.
+[SPEAKER_01]: All kinds of metabolites.
+[SPEAKER_01]: But as long as they're smaller than 2,000
+Daltons is what we estimate.
+[SPEAKER_01]: Yep.
+[SPEAKER_03]: Your bioinformatics pipeline, is it plant
+specific?
+[SPEAKER_03]: What's the extent of that?
+[SPEAKER_01]: Yeah, it is plant specific right now.
+[SPEAKER_01]: And it's easy.
+[SPEAKER_01]: Yeah, we do use taxonomy as a filter for
+removing.
+[SPEAKER_01]: The hallucinations that we see,
+in fact, we can see the paper is from a
+[SPEAKER_01]: plant.
+[SPEAKER_01]: The plant is like barley or oat.
+[SPEAKER_01]: But the GPT algorithm is pulling out human
+enzymes or rat enzymes.
+[SPEAKER_01]: And the compounds associated with
+testosterone, which are obviously not
+[SPEAKER_01]: present in barley.
+[SPEAKER_01]: So there is hallucinations that it's
+getting from its training data at drug
+[SPEAKER_01]: bank and other sources.
+[SPEAKER_01]: Yep, you can.
+[SPEAKER_02]: It depends on the water stress.
+[SPEAKER_01]: Yes.
+[SPEAKER_02]: What are the other abiotic stresses?
+[SPEAKER_01]: So the question is, we are looking at
+water stress.
+[SPEAKER_01]: What are the abiotic stresses?
+[SPEAKER_01]: We're looking to right now only water.
+[SPEAKER_01]: Actually, cold stress is one for sweet
+potato.
+[SPEAKER_01]: Because what we want to do with AMFs is
+see if we can increase the sweet potato
+[SPEAKER_01]: when they're transplanted into the soils.
+[SPEAKER_01]: They're transplanted in June.
+[SPEAKER_01]: And the growth period is still early
+October.
+[SPEAKER_01]: While in the south, it goes from end of
+April to October.
+[SPEAKER_01]: So if we can increase it by 15,
+20 days even and make the potatoes more
+[SPEAKER_01]: resilient, to late frost, then we could
+increase the cultivation time.
+[SPEAKER_01]: So cold stress is one of them.
+[SPEAKER_05]: So you didn't tell us what you do for fun
+when you're not doing research.
+[SPEAKER_01]: I watch a lot of TV.
+[SPEAKER_01]: And I like to travel.
+[SPEAKER_01]: So next week, I'm going to Grand Canyon
+and Sedona and doing some fun things.
+[SPEAKER_05]: Nice.
+[SPEAKER_05]: OK, go ahead.
+[SPEAKER_05]: Thank you.
+[SPEAKER_00]: Thank you.
+[SPEAKER_00]: And thanks for having me here today.
+[SPEAKER_00]: So to the prompt, I'm Kelly Robbins.
+[SPEAKER_00]: I was born and raised in Knoxville,
+Tennessee.
+[SPEAKER_00]: After I got my PhD, I went into industry
+for eight years.
+[SPEAKER_00]: And then I came here to Cornell in 2015 as
+a senior research associate and then
+[SPEAKER_00]: switched over to tenure track position in
+2017.
+[SPEAKER_00]: Before I had kids, I enjoyed playing
+hockey and golf.
+[SPEAKER_00]: Now that I have kids, my pastimes are
+primarily gymnastics, ballet, playing with
+[SPEAKER_00]: dolls, and watching cartoons.
+[SPEAKER_00]: All right, so the Robbins lab,
+so just at a high level, so we apply
+[SPEAKER_00]: quantitative genetics, genomics,
+and computational science with this
+[SPEAKER_00]: primary focus on improving the efficiency
+of crop breeding programs and increasing
+[SPEAKER_00]: our understanding of complex traits.
+[SPEAKER_00]: And I'll talk about the work we do at a
+bit of a high level in this presentation.
+[SPEAKER_00]: So my training is primarily in statistics
+and mathematics and modeling.
+[SPEAKER_00]: And I do love doing the modeling.
+[SPEAKER_00]: But what I really enjoy, and the reason
+why I kind of identify as a plant breeder,
+[SPEAKER_00]: even though I don't really spend much time
+in a field or with plants for that matter,
+[SPEAKER_00]: is because I really enjoy working with
+breeding programs to figure out how we can
+[SPEAKER_00]: actually implement advanced modeling
+techniques and new technologies to improve
+[SPEAKER_00]: the efficiency of breeding programs.
+[SPEAKER_00]: And so these are collaborations where
+generally I'm working with breeding
+[SPEAKER_00]: programs.
+[SPEAKER_00]: And they always start with these
+discussions.
+[SPEAKER_00]: And there's two really kind of key
+components that go into this.
+[SPEAKER_00]: One is what I call the breeding strategy,
+which is what is it we're predicting?
+[SPEAKER_00]: And how do we use those predictions within
+the context of genetic proven program?
+[SPEAKER_00]: And then the prediction strategy,
+which is more on the modeling side,
+[SPEAKER_00]: which is what data, what technologies,
+and what mathematical, statistical,
+[SPEAKER_00]: machine learning methodologies we're
+actually going to use to make predictions.
+[SPEAKER_00]: And these two things kind of feed off each
+other.
+[SPEAKER_00]: So you have to really have a good sense of
+both of them to understand.
+[SPEAKER_00]: So this is just kind of from a
+perspectives article we published,
+[SPEAKER_00]: I guess it was a while ago now,
+where based off of both my experience in
+[SPEAKER_00]: industry working with these really large
+breeding programs in a multinational,
+[SPEAKER_00]: and then the sort of contrasting
+experience that we had had working with
+[SPEAKER_00]: public sector breeding programs,
+which tend to be a little bit smaller,
+[SPEAKER_00]: working with a lot more diverse crops,
+is kind of looking at how do we take what
+[SPEAKER_00]: I might call a traditional breeding
+program and move it into much more of a
+[SPEAKER_00]: data-driven highly optimized and efficient
+breeding process to implement genetic
+[SPEAKER_00]: gain.
+[SPEAKER_00]: And so we had sort of broken it up into
+these phases.
+[SPEAKER_00]: And we really work across all of these
+phases.
+[SPEAKER_00]: So we do a lot of work on the informatics
+side, which is when you're working with
+[SPEAKER_00]: the breeding program, just giving them a
+model that's really accurate isn't going
+[SPEAKER_00]: to do anything.
+[SPEAKER_00]: It has to be put into operation.
+[SPEAKER_00]: Breeding programs have lots of
+constraints.
+[SPEAKER_00]: In terms of time, in terms of the
+expertise they may have available within
+[SPEAKER_00]: the program.
+[SPEAKER_00]: So we do a lot of work on partnering with
+breeding programs to say, OK, what do we
+[SPEAKER_00]: need to provide you in terms of
+computational resources, in terms of
+[SPEAKER_00]: software, to be able to actually implement
+the stuff that we're doing?
+[SPEAKER_00]: We work with them to look at what their
+actual breeding pipeline looks like as it
+[SPEAKER_00]: is and how we might have to change or
+re-optimize that pipeline to take the best
+[SPEAKER_00]: advantage of new technologies.
+[SPEAKER_00]: And then for really advanced breeding
+programs, this idea of being able to,
+[SPEAKER_00]: so response to selection is going to be a
+function of the genetic architecture of
+[SPEAKER_00]: the trait, obviously, but also how quickly
+you can make decisions and how accurately
+[SPEAKER_00]: you can make decisions.
+[SPEAKER_00]: And so we do a lot of work on given what
+we can do, how can we make decisions as
+[SPEAKER_00]: accurately and as rapidly as possible
+within a breeding program?
+[SPEAKER_00]: And one of the grand challenges that we
+have right now and why it's a good time to
+[SPEAKER_00]: be a quantitative geneticist is that a
+traditional breeding program operates
+[SPEAKER_00]: under this paradigm where you generate new
+lines.
+[SPEAKER_00]: You test them across a sampling of the
+environments that you expect to see.
+[SPEAKER_00]: You make decisions based off of
+performance.
+[SPEAKER_00]: You get from that sampling of
+environments.
+[SPEAKER_00]: And then based off that, you make
+decisions on what crosses you're going to
+[SPEAKER_00]: make, which lines you're actually going to
+release.
+[SPEAKER_00]: And so there is this concept of what we
+might call overall yield, but also this
+[SPEAKER_00]: idea of yield stability, which is an
+environment's not a fixed thing.
+[SPEAKER_00]: It's a random sampling from year to year.
+[SPEAKER_00]: You're going to get something a little bit
+different.
+[SPEAKER_00]: And so breeders would call them racehorse
+versus workhorse varieties.
+[SPEAKER_00]: So a workhorse variety would be
+represented by those blue dots.
+[SPEAKER_00]: That would be a line that isn't great,
+but it seems to have fairly consistent
+[SPEAKER_00]: performance across a range of
+environments.
+[SPEAKER_00]: What they might call a racehorse hybrid
+would be, or a variety would be one that
+[SPEAKER_00]: when you put it in really good conditions,
+man, it does great.
+[SPEAKER_00]: But as soon as it starts getting stressed,
+it falls apart.
+[SPEAKER_00]: And depending on what the target
+environmental regions are, maybe the
+[SPEAKER_00]: racehorse is what you want, or maybe the
+workhorse is what you want.
+[SPEAKER_00]: Ideally, what you'd want is a line that
+just yields across the board.
+[SPEAKER_00]: I'm not sure that that's really possible
+if you really think about how G by E
+[SPEAKER_00]: works.
+[SPEAKER_00]: And so it's something that's always been
+important, but it's starting to become
+[SPEAKER_00]: even more important.
+[SPEAKER_00]: And I work with a lot of breeding
+programs.
+[SPEAKER_00]: And when you talk with them, it's not
+necessarily the fact that we expect to see
+[SPEAKER_00]: mean shifts in environments that concern
+breeders.
+[SPEAKER_00]: They're actually quite, just using the
+methods they use, they're quite capable of
+[SPEAKER_00]: dealing with that.
+[SPEAKER_00]: But it's the fact that as environments are
+going to change in the future,
+[SPEAKER_00]: we're going to start to see higher
+frequencies of the more extreme
+[SPEAKER_00]: environments.
+[SPEAKER_00]: And so this idea of finding lines that
+perform well in the most common
+[SPEAKER_00]: environments even if they're not so great
+in the very rare extreme environments is
+[SPEAKER_00]: no longer going to be the paradigm we work
+in.
+[SPEAKER_00]: We need to have varieties that are capable
+of maintaining good yield under I don't
+[SPEAKER_00]: know what a normal environment is these
+days in a lot of places.
+[SPEAKER_00]: But also, it's not going to fall apart as
+you hit some of these extremes.
+[SPEAKER_00]: And so that's just kind of set up at a
+high level sort of how we operate.
+[SPEAKER_00]: So we can kind of think about,
+what I would call, prediction scenarios.
+[SPEAKER_00]: So that's what I do.
+[SPEAKER_00]: I take data and I kind of predict what's,
+or I make inference about what's going to
+[SPEAKER_00]: happen in the future.
+[SPEAKER_00]: So a traditional breeding program
+typically operates in this, oh wait,
+[SPEAKER_00]: this is extended desktop, typically
+operates in this known by known.
+[SPEAKER_00]: So in a traditional breeding program,
+you generate a lot of new lines.
+[SPEAKER_00]: You put them out into what we call
+multi-environmental trials.
+[SPEAKER_00]: You see how they perform.
+[SPEAKER_00]: It's quite effective as long as you have a
+big enough program and you can sample
+[SPEAKER_00]: enough environments to be a representative
+sample.
+[SPEAKER_00]: It's quite powerful from a modeling
+standpoint.
+[SPEAKER_00]: It's a little bit boring because it's
+relatively straightforward modeling.
+[SPEAKER_00]: Just using simple linear models works for
+that.
+[SPEAKER_00]: There's another scenario which is the
+scenario that is what we would probably
+[SPEAKER_00]: call genomic selection.
+[SPEAKER_00]: And genomic selection with this idea of
+trying to make decisions faster to get
+[SPEAKER_00]: better gain.
+[SPEAKER_00]: This is where you have some known set of
+target environments that are characterized
+[SPEAKER_00]: and you're trying to predict these
+performance in these unknown sets of
+[SPEAKER_00]: environments.
+[SPEAKER_00]: I do a lot of work in international ag.
+[SPEAKER_00]: And so a common scenario you have is that
+ecoregions, cultural preferences,
+[SPEAKER_00]: consumer preferences don't tend to fit
+nicely within national, state,
+[SPEAKER_00]: regional borders.
+[SPEAKER_00]: And so oftentimes we'll have a region
+where there's multiple national breeding
+[SPEAKER_00]: programs that have some overlapping
+objectives.
+[SPEAKER_00]: And the question is, even though they have
+a mandate to only work within their
+[SPEAKER_00]: borders, sometimes it's more efficient to
+be able to exchange germplasm across those
+[SPEAKER_00]: programs.
+[SPEAKER_00]: And so we work with these programs to
+understand what their germplasm pools are,
+[SPEAKER_00]: understand how much G by E there is,
+and work with them to design optimal
+[SPEAKER_00]: breeding strategies that allow them to
+very strategically share germplasm between
+[SPEAKER_00]: programs to maximize genetic gain.
+[SPEAKER_00]: And then, of course, there's the holy
+grail, I guess, of quantitative genetics.
+[SPEAKER_00]: And that's really getting at some of these
+climate challenges, which is it takes 10
+[SPEAKER_00]: to 20 years to release a variety.
+[SPEAKER_00]: If we want to be breeding for varieties
+that are going to be doing really well 10
+[SPEAKER_00]: to 20 years from now, we have to start
+being able to predict how new germplasm
+[SPEAKER_00]: that we're making that maybe we haven't
+even seen in the field is going to perform
+[SPEAKER_00]: across a range of environments that we
+might forecast to be in the future.
+[SPEAKER_00]: And that gets into sort of predicting
+unknown germplasm in unknown environments.
+[SPEAKER_00]: And so I had some results here,
+kind of out of context.
+[SPEAKER_00]: You just take my word for it.
+[SPEAKER_00]: We've been reasonably successful in doing
+some of these things, right?
+[SPEAKER_00]: And with that, I think I'm about out of
+time.
+[SPEAKER_00]: So I'll just say one last thing.
+[SPEAKER_00]: We do do a lot of work on developing these
+types of computational tools to get
+[SPEAKER_00]: adoption of what we do.
+[SPEAKER_00]: All right, thanks.
+[SPEAKER_05]: So I have a question.
+[SPEAKER_05]: So you're in the business of predicting
+the future, right?
+[SPEAKER_05]: So if you look at the trajectories of the
+public sector and private sector breeding
+[SPEAKER_05]: programs, how do you think it's going to
+play out going forward?
+[SPEAKER_05]: Do you think it's going to be increased
+interaction?
+[SPEAKER_05]: Will there always be distinct space?
+[SPEAKER_05]: What does the future hold for us?
+[SPEAKER_00]: I think there's always going to be a
+distinct space, right?
+[SPEAKER_00]: Because on the commercial side,
+right, at the end of the day, you have to
+[SPEAKER_00]: be profitable, all right?
+[SPEAKER_00]: And there are certain crops in certain
+markets where you can be very profitable,
+[SPEAKER_00]: right?
+[SPEAKER_00]: I mean, even within a company,
+right?
+[SPEAKER_00]: When I worked for a company, worked across
+a lot of crops, right?
+[SPEAKER_00]: I think 80% of everything went to maize,
+right?
+[SPEAKER_00]: And then soybean, canola kind of got the
+next tier leftovers.
+[SPEAKER_00]: And then there was some cotton out there
+somewhere that I never even worked with,
+[SPEAKER_00]: right?
+[SPEAKER_00]: But when you talk about staple food,
+food crops, and you talk about crops,
+[SPEAKER_00]: like so rice and wheat, for example,
+right, where there's not necessarily these
+[SPEAKER_00]: great value capture mechanisms,
+right?
+[SPEAKER_00]: I think those are going to continue for
+the foreseeable future to be dominated by
+[SPEAKER_00]: the public sector.
+[SPEAKER_01]: Yeah.
+[SPEAKER_01]: So this is another question about breeding
+for a Zinian trait.
+[SPEAKER_01]: So when you have the QP and GBAS,
+they tend to find these high effect size
+[SPEAKER_01]: loci, which cause a big change in the
+phenotype.
+[SPEAKER_01]: But the phenotype itself is affected by a
+lot of small size loci.
+[SPEAKER_01]: And I'm wondering how relevant are these
+small effect size loci in breeding,
+[SPEAKER_01]: first of all?
+[SPEAKER_01]: And second, do you think they might have
+an application in adapting to the extremes
+[SPEAKER_00]: of the GBAS horizon?
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: So the question is this idea of small
+effect loci, versus large effect loci,
+[SPEAKER_00]: how important are the small effect loci?
+[SPEAKER_00]: For many traits, it's all small effect
+loci, right?
+[SPEAKER_00]: So a lot of quantitative genetics is built
+off of what we call the infinitesimal
+[SPEAKER_00]: model, right, which is this assumption
+that there is an infinitely large number
+[SPEAKER_00]: of genes with infinitely small effects.
+[SPEAKER_00]: And it's really just the sum total of all
+those things, right?
+[SPEAKER_00]: So even if you have a large effect QTL
+with a lot of smaller effects,
+[SPEAKER_00]: right, the sum total of all those smaller
+effects can still be quite big,
+[SPEAKER_00]: even if the end individual effects are
+not, right?
+[SPEAKER_00]: And so in a case where we might have some
+moderate to large effects and a lot of
+[SPEAKER_00]: small effects, essentially what you do is
+you would apply marker assisted selection
+[SPEAKER_00]: to try and fix the large effects.
+[SPEAKER_00]: And then you would use these more
+quantitative measurements to then push the
+[SPEAKER_00]: more quantitative traits.
+[SPEAKER_00]: But when you start to get into a lot of
+the more complex traits, large to moderate
+[SPEAKER_00]: effects, they can be very context
+specific.
+[SPEAKER_00]: They can be background specific.
+[SPEAKER_00]: Right?
+[SPEAKER_00]: And so you do end up focusing a lot of
+work on the smaller effects.
+[SPEAKER_00]: And that's, as a quantitative geneticist,
+that's primarily where I work,
+[SPEAKER_00]: actually.
+[SPEAKER_02]: Thank you, Josh.
+[SPEAKER_02]: And good afternoon, everyone.
+[SPEAKER_02]: As far as my introduction, my name is
+Vipin Kumar.
+[SPEAKER_02]: I'm a faculty member with Soil and Crop
+Sciences.
+[SPEAKER_02]: I've been here for two years with Cornell.
+[SPEAKER_02]: I actually finished two years this week.
+[SPEAKER_02]: Before Cornell, I was at Kansas State
+University as a faculty member.
+[SPEAKER_02]: And my appointment is a research and
+extensions, split up in half.
+[SPEAKER_02]: So I work a lot of work with producers on
+daily basis.
+[SPEAKER_02]: My program, I'm just gonna, just a
+disclaimer, I don't have a lot of data,
+[SPEAKER_02]: but just gonna give you an overview of the
+things we are doing in my program,
+[SPEAKER_02]: as well as the education we are doing with
+the stakeholders.
+[SPEAKER_02]: As I said, it's a weed science program.
+[SPEAKER_02]: So we are working with the weeds on
+wondered plants.
+[SPEAKER_02]: We are working on new weed species that
+has arrived in the New York State.
+[SPEAKER_02]: And two I have listed here, Palmerum
+wrenth and waterhemp.
+[SPEAKER_02]: Those are two big weeds.
+[SPEAKER_02]: The first two picture you see,
+the Palmerum wrenth.
+[SPEAKER_02]: These were pictures taken last year.
+[SPEAKER_02]: New arrival, new reports from Yates and
+Ontario.
+[SPEAKER_02]: The person you see is Mike Stanyard.
+[SPEAKER_02]: He's our extension leader from Wharton,
+New York, who basically identified those
+[SPEAKER_02]: fields and helped us to collect some of
+these Palmerum wrenth.
+[SPEAKER_02]: Palmerum wrenth and waterhemp,
+those are two most troublesome weeds
+[SPEAKER_02]: across the country.
+[SPEAKER_02]: And they are new to us.
+[SPEAKER_02]: So we are trying to criticize and
+educating our stakeholders what those are,
+[SPEAKER_02]: how they look like, and what we can do to
+manage those.
+[SPEAKER_02]: These are two big weeds.
+[SPEAKER_02]: Very, very far spreading in the state.
+[SPEAKER_02]: We have almost 21 different counties where
+waterhemp has been reported in the state.
+[SPEAKER_02]: And we have six different counties where
+Palmerum wrenth has been reported from New
+[SPEAKER_02]: York State.
+[SPEAKER_02]: So it's a problem.
+[SPEAKER_02]: As I said, we are collecting these
+population.
+[SPEAKER_02]: And part of my program is looking at the
+herbicide resistance in these different
+[SPEAKER_02]: weeds species.
+[SPEAKER_02]: This is a statewide survey being sponsored
+by New York corn and soybean growers,
+[SPEAKER_02]: as well as the Cornell Cooperative Ag
+Experiment Station Hatch dollars
+[SPEAKER_02]: supporting this work.
+[SPEAKER_02]: The idea behind the screening work is to
+look for the distributions and the
+[SPEAKER_02]: frequency of resistance population across
+the state and kind of come up with the map
+[SPEAKER_02]: for the state and educate our producers
+where these resistant populations are.
+[SPEAKER_02]: And what we can do to manage.
+[SPEAKER_02]: The pictures I have put there,
+these are dose response studies we have
+[SPEAKER_02]: done on waterhemp as well as on annual
+ryegrass.
+[SPEAKER_02]: Some of you probably know annual ryegrass
+is grown for cover crops.
+[SPEAKER_02]: So we have some annual ryegrass showing
+resistance to glyphosate.
+[SPEAKER_02]: These are new reports in the state.
+[SPEAKER_02]: Similarly for waterhemp, we have eight to
+12-fold resistance recently found in our
+[SPEAKER_02]: New York population.
+[SPEAKER_02]: The picture you see here on my side is my
+graduate student holding a
+[SPEAKER_02]: glyphosate-resistant waterhemp in a grower
+field in Seneca County.
+[SPEAKER_02]: And you can see the growth in seed
+production it's going to have.
+[SPEAKER_02]: And this grower has been facing the
+challenge of this species over the last
+[SPEAKER_02]: five, six years.
+[SPEAKER_02]: Brian, you have worked on this.
+[SPEAKER_02]: It's still a lot of seed bank in these
+fields with the grower field.
+[SPEAKER_02]: Other species of interest, as I said,
+Palmer waterhemp, we are also testing
+[SPEAKER_02]: horseweeds, common ragweed, velvet leaf,
+some grasses like foxtails.
+[SPEAKER_02]: So this is kind of long-term project we
+have initiated and hoping to get some
+[SPEAKER_02]: better look across the state over the next
+five, six years.
+[SPEAKER_02]: Just some pictures showing some annual
+ryegrass.
+[SPEAKER_02]: These are growers' field where we got
+these pictures.
+[SPEAKER_02]: They were trying to terminate these annual
+ryegrass with ronda, with glyphosate,
+[SPEAKER_02]: and were not successful.
+[SPEAKER_02]: So we are testing these and we have found
+pretty high-level resistance in these
+[SPEAKER_02]: annual ryegrass.
+[SPEAKER_02]: So trying to educate them if they're
+growing these cover crops, how to handle,
+[SPEAKER_02]: how to manage, and how to terminate,
+and how to get proactive to tackle these
+[SPEAKER_02]: plants.
+[SPEAKER_02]: Just I said, we are not just identifying
+problems for producer, but also developing
+[SPEAKER_02]: solutions.
+[SPEAKER_02]: Part of my program is looking at
+alternative herbicide programs,
+[SPEAKER_02]: what they can use, especially conventional
+growers.
+[SPEAKER_02]: We are testing and doing a lot of on-farm
+trials with the producers, looking for
+[SPEAKER_02]: different pre- and post-applied
+herbicides.
+[SPEAKER_02]: Different pre-mixes, different tech mixes
+they can use to control these
+[SPEAKER_02]: glyphosate-resistant weed populations.
+[SPEAKER_02]: Just some pictures.
+[SPEAKER_02]: I'm not showing a lot of data here,
+but this is a PhD student who is involved
+[SPEAKER_02]: in these work.
+[SPEAKER_02]: Chemical-based weed control is common,
+and that's what I just showed,
+[SPEAKER_02]: but how about integrator weed management?
+[SPEAKER_02]: We are looking some innovative tools,
+how we can integrate in our field crop or
+[SPEAKER_02]: field cropping systems in the state,
+and we are testing some of the new tools
+[SPEAKER_02]: like harvest weed seed control,
+the picture you see here, the combine,
+[SPEAKER_02]: having a ready crop seed impact mill on
+the back of the combine, which is
+[SPEAKER_02]: basically destroy the weed seeds when you
+use it at the time of a crop harvest.
+[SPEAKER_02]: This is a novel concept, been adopted in
+Western Australia in wheat production
+[SPEAKER_02]: system, but not much data in the US.
+[SPEAKER_02]: So the unit we have, and we are trying to
+test here in the New York.
+[SPEAKER_02]: Other tools we are looking at,
+interrow mowing.
+[SPEAKER_02]: Most common tool or favorite tool for
+organic producers, but we are also looking
+[SPEAKER_02]: for conventional producer if they can use
+these tools, such as interrow mowing and
+[SPEAKER_02]: suppress or control some of those weed
+populations.
+[SPEAKER_02]: Similarly, electrical weeding.
+[SPEAKER_02]: We have been doing this work in
+collaboration with Dr. Matt Ryan,
+[SPEAKER_02]: group with Soil and Crop Sciences,
+looking at the electrocutions,
+[SPEAKER_02]: shocking these weeds.
+[SPEAKER_02]: How much weed suppression we can get with
+electric weeder.
+[SPEAKER_02]: So these tools we are checking side by
+side in comparison to our herbicide,
+[SPEAKER_02]: effective herbicide options like Liberty
+and ListOne.
+[SPEAKER_02]: In this study we are comparing these side
+by side comparisons as well as like
+[SPEAKER_02]: multi-tactic layers, having those tools
+together throughout the season,
+[SPEAKER_02]: and what kind of impact we see on the seed
+bank over the years.
+[SPEAKER_02]: Other aspects we are looking in my program
+is integrating other tools, as I said,
+[SPEAKER_02]: cover crops and precision ag tools.
+[SPEAKER_02]: We are trying to develop digital
+technologies and tools that can be used
+[SPEAKER_02]: for site specific or target weed control.
+[SPEAKER_02]: We have been partnering with USDA ARS from
+Maryland looking at developing the weed
+[SPEAKER_02]: image database as well as phenotyping for
+the cover crops.
+[SPEAKER_02]: Using 2Ds and 3Ds cameras.
+[SPEAKER_02]: So the whole idea behind this project is
+to come up with some decision support
+[SPEAKER_02]: tools for the scouting purpose.
+[SPEAKER_02]: So we are developing these technologies in
+collaboration with USDA ARS folks.
+[SPEAKER_02]: Josh, stand already.
+[SPEAKER_02]: So my last slide is just the overall
+vision.
+[SPEAKER_02]: As I mentioned, we are working on identify
+identifying resistance, but we are also
+[SPEAKER_02]: developing integrated weed management
+tools.
+[SPEAKER_02]: So the whole vision of the program is to
+integrate these tactics, not just relying
+[SPEAKER_02]: on chemicals, but looking at other
+non-chemical tools, novel tools like
+[SPEAKER_02]: mechanical tools as well as precision ag
+tools to come together or bring together
+[SPEAKER_02]: as an integrated approach.
+[SPEAKER_02]: Because we have knowledge about those
+different tactics standalone, but how
+[SPEAKER_02]: about all together what kind of
+information we can extract that can be
+[SPEAKER_02]: used to develop some decision support
+tools to help producers to make those
+[SPEAKER_02]: decisions for weed control.
+[SPEAKER_02]: And that's all I have.
+[SPEAKER_02]: A lot of folks to acknowledge here,
+funding agencies as well as collaborators
+[SPEAKER_02]: and colleagues from Cornell as well as
+other institutes.
+[SPEAKER_02]: Thank you.
+[SPEAKER_04]: Brian?
+[SPEAKER_04]: Yeah, so Palmer Amarant is still,
+there is only a handful of farms in New
+[SPEAKER_04]: York.
+[SPEAKER_04]: Do you think we still have a chance to
+maybe keep it out of New York,
+[SPEAKER_04]: keep it in the United States with scouting
+and maybe with collaboration with the
+[SPEAKER_04]: state, state governments or 20
+governments?
+[SPEAKER_02]: Yeah, as I said, these are new species.
+[SPEAKER_02]: Palmer is arrived like first report was
+2019 and now we have six different
+[SPEAKER_02]: counties and these are just handful of
+fields.
+[SPEAKER_02]: I think there are chance and as per my
+knowledge, like other states, we are in
+[SPEAKER_02]: the same boat, like North Dakota is doing
+that.
+[SPEAKER_02]: They are putting Palmer Amarant is a
+noxious species and the state has come
+[SPEAKER_02]: together as a community approach to
+eradicate it.
+[SPEAKER_02]: We can do it, but how serious we are.
+[SPEAKER_02]: We are still trying to educate producers
+that how serious this problem is.
+[SPEAKER_02]: Palmer Amarant is one of the worst weed
+species.
+[SPEAKER_02]: If you don't know Palmer Amarant,
+you don't know weed science, basically.
+[SPEAKER_02]: Two third of the literature in weed
+science is on Palmer Amarant, basically.
+[SPEAKER_02]: So that tells the seriousness.
+[SPEAKER_02]: But to your question, I think there are
+chances and it needs a community approach.
+[SPEAKER_02]: Not only from agencies and institutes,
+but also from the stakeholders.
+[SPEAKER_02]: How they come together and that's what we
+are doing over the winters, educating them
+[SPEAKER_02]: what it looks like, where we see this
+because most of these producers I
+[SPEAKER_02]: interact, they don't know what is this.
+[SPEAKER_02]: That's the basic knowledge gap there.
+[SPEAKER_02]: But it's possible, but we have to be
+proactive, actually more reactive now than
+[SPEAKER_02]: proactive.
+[SPEAKER_02]: Anything else?
+[SPEAKER_05]: So for this audience, do you ever see
+pathogens of Palmer Amarant?
+[SPEAKER_02]: Pathogens, you mean biological control?
+[SPEAKER_05]: No, do you ever see in the fields seeds
+facing the weeds?
+[SPEAKER_05]: That acts as a problem for them
+propagating to crops?
+[SPEAKER_02]: Well, I don't know on the Palmer,
+but yeah, diseases are there.
+[SPEAKER_02]: We've been doing these extension meetings
+with our pathologist, retired pathologist,
+[SPEAKER_02]: Gary.
+[SPEAKER_02]: There are new things coming, showing
+across the state.
+[SPEAKER_02]: And it's not only weeds or diseases.
+[SPEAKER_02]: I would say this is in general for the
+pest.
+[SPEAKER_02]: These are emerging challenges for our
+stakeholders.
+[SPEAKER_02]: And why it's happening, a lot of things
+are happening.
+[SPEAKER_02]: Climate is changing.
+[SPEAKER_02]: The winters, this winter is pretty cold,
+but overall last few years, the winter was
+[SPEAKER_02]: warmer.
+[SPEAKER_02]: Things are moving, a lot of movement from
+across the state, from state to state.
+[SPEAKER_02]: And they are also bringing some of these
+issues.
+[SPEAKER_02]: So I would say there are a lot of emerging
+issues, emerging pest issues that needs to
+[SPEAKER_02]: be taken care of not from the state
+standpoint, but from regional standpoint,
+[SPEAKER_02]: like Northeast states.
+[SPEAKER_02]: Thank you.
+[SPEAKER_02]: And I love playing cricket, just so you
+know.
+[SPEAKER_04]: Thank you.
+[SPEAKER_03]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_03]: Thank you.
+[SPEAKER_03]: Thank you.
+Thank you.

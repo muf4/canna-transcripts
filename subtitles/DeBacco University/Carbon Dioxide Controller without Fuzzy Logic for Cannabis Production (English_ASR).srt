@@ -1,0 +1,516 @@
+1
+00:00:00,399 --> 00:00:03,600
+here on this debaco university video i'm
+
+2
+00:00:02,879 --> 00:00:05,839
+going to look at
+
+3
+00:00:03,600 --> 00:00:07,359
+a carbon dioxide controller that does
+
+4
+00:00:05,839 --> 00:00:09,519
+not have fuzzy logic
+
+5
+00:00:07,359 --> 00:00:11,039
+and provide you with some details about
+
+6
+00:00:09,519 --> 00:00:17,280
+this style of
+
+7
+00:00:11,039 --> 00:00:20,399
+co2 controller
+
+8
+00:00:17,280 --> 00:00:22,000
+[Music]
+
+9
+00:00:20,399 --> 00:00:24,000
+all right let's look at a carbon dioxide
+
+10
+00:00:22,000 --> 00:00:25,920
+controller without fuzzy logic for
+
+11
+00:00:24,000 --> 00:00:27,759
+cannabis production
+
+12
+00:00:25,920 --> 00:00:28,960
+so first off what would these be used
+
+13
+00:00:27,760 --> 00:00:30,080
+for and while they can be used with
+
+14
+00:00:28,960 --> 00:00:31,760
+bottle systems
+
+15
+00:00:30,079 --> 00:00:33,759
+they're probably best utilized for
+
+16
+00:00:31,760 --> 00:00:35,440
+carbon dioxide generators
+
+17
+00:00:33,759 --> 00:00:37,280
+because even if your controller does
+
+18
+00:00:35,439 --> 00:00:38,079
+have fuzzy logic which i'll mention here
+
+19
+00:00:37,280 --> 00:00:39,840
+at the end
+
+20
+00:00:38,079 --> 00:00:41,119
+it needs to be turned off if you're
+
+21
+00:00:39,840 --> 00:00:43,840
+using a generator
+
+22
+00:00:41,119 --> 00:00:45,439
+as this will not work with this type of
+
+23
+00:00:43,840 --> 00:00:46,960
+co2 generation
+
+24
+00:00:45,439 --> 00:00:48,558
+only bottle based systems should be
+
+25
+00:00:46,960 --> 00:00:51,120
+utilizing fuzzy logic
+
+26
+00:00:48,558 --> 00:00:51,839
+so here we can see the generator is an
+
+27
+00:00:51,119 --> 00:00:54,320
+on off
+
+28
+00:00:51,840 --> 00:00:56,320
+system bottle systems allow for pulse
+
+29
+00:00:54,320 --> 00:00:57,520
+dosing which you cannot use with a
+
+30
+00:00:56,320 --> 00:00:58,960
+generator system
+
+31
+00:00:57,520 --> 00:01:00,399
+there's different forms of generator
+
+32
+00:00:58,960 --> 00:01:01,679
+systems you can see here we have
+
+33
+00:01:00,399 --> 00:01:03,600
+invented here here
+
+34
+00:01:01,679 --> 00:01:04,799
+and here we have one in a greenhouse
+
+35
+00:01:03,600 --> 00:01:07,040
+setting
+
+36
+00:01:04,799 --> 00:01:08,000
+so when we're looking at these
+
+37
+00:01:07,040 --> 00:01:09,600
+controllers
+
+38
+00:01:08,000 --> 00:01:11,280
+they are set up much in the way that
+
+39
+00:01:09,599 --> 00:01:13,519
+ones would be with fuzzy logic in the
+
+40
+00:01:11,280 --> 00:01:15,840
+sense that you would set a deadband
+
+41
+00:01:13,519 --> 00:01:17,679
+and what's a deadband well this setting
+
+42
+00:01:15,840 --> 00:01:19,600
+decides how tight you want the control
+
+43
+00:01:17,680 --> 00:01:20,960
+to keep the carbon dioxide levels to the
+
+44
+00:01:19,599 --> 00:01:22,399
+target setpoint
+
+45
+00:01:20,959 --> 00:01:24,879
+essentially how far the controller will
+
+46
+00:01:22,400 --> 00:01:26,400
+allow carbon dioxide levels to deviate
+
+47
+00:01:24,879 --> 00:01:28,478
+from your chosen setting before
+
+48
+00:01:26,400 --> 00:01:31,520
+targeting your carbon dioxide source
+
+49
+00:01:28,478 --> 00:01:33,679
+to switch on or off most
+
+50
+00:01:31,519 --> 00:01:35,200
+controllers default around 50 parts per
+
+51
+00:01:33,680 --> 00:01:36,799
+million but you may want to increase
+
+52
+00:01:35,200 --> 00:01:38,000
+this to 100 parts per million for a
+
+53
+00:01:36,799 --> 00:01:39,680
+generator system
+
+54
+00:01:38,000 --> 00:01:41,759
+as it will naturally fluctuate the
+
+55
+00:01:39,680 --> 00:01:44,079
+levels more than a bottle-based
+
+56
+00:01:41,759 --> 00:01:45,439
+system selecting 100 parts per million
+
+57
+00:01:44,078 --> 00:01:47,199
+as your deadband setting
+
+58
+00:01:45,438 --> 00:01:48,719
+will allow the growth space levels to be
+
+59
+00:01:47,200 --> 00:01:50,880
+essentially over or
+
+60
+00:01:48,719 --> 00:01:52,879
+under by 100 parts per million before
+
+61
+00:01:50,879 --> 00:01:53,759
+the controller turn on or off the
+
+62
+00:01:52,879 --> 00:01:55,839
+generator
+
+63
+00:01:53,759 --> 00:01:56,959
+now we'll notice the one the controller
+
+64
+00:01:55,840 --> 00:02:00,079
+over here next to me
+
+65
+00:01:56,959 --> 00:02:01,679
+has a deadband setting set to 25. this
+
+66
+00:02:00,078 --> 00:02:02,798
+would be a little tight to run for a
+
+67
+00:02:01,680 --> 00:02:04,000
+generator because it's going to have a
+
+68
+00:02:02,799 --> 00:02:06,719
+lot more ons and off
+
+69
+00:02:04,000 --> 00:02:08,479
+cycles which could add unnecessary wear
+
+70
+00:02:06,718 --> 00:02:10,239
+and tear to your generator
+
+71
+00:02:08,479 --> 00:02:11,840
+when in doubt start with 50 and you can
+
+72
+00:02:10,239 --> 00:02:14,400
+regulate from there
+
+73
+00:02:11,840 --> 00:02:16,479
+going as low as 25 is possible but it
+
+74
+00:02:14,400 --> 00:02:20,239
+might see your generator running
+
+75
+00:02:16,479 --> 00:02:22,799
+on and off with greater frequency so
+
+76
+00:02:20,239 --> 00:02:23,759
+make sure on the sensors of your
+
+77
+00:02:22,800 --> 00:02:26,640
+controller
+
+78
+00:02:23,759 --> 00:02:27,759
+that there is a presence of a photocell
+
+79
+00:02:26,639 --> 00:02:29,199
+we see that here
+
+80
+00:02:27,759 --> 00:02:31,679
+see that labeled right here we see that
+
+81
+00:02:29,199 --> 00:02:33,598
+here as well this will help ensure that
+
+82
+00:02:31,680 --> 00:02:35,360
+co2 is only added during the light
+
+83
+00:02:33,598 --> 00:02:36,878
+period which is only when the plant can
+
+84
+00:02:35,360 --> 00:02:39,200
+actually utilize it
+
+85
+00:02:36,878 --> 00:02:39,919
+a time a timer could be used if you have
+
+86
+00:02:39,199 --> 00:02:41,759
+a regimen
+
+87
+00:02:39,919 --> 00:02:43,839
+light schedule but the photocell is a
+
+88
+00:02:41,759 --> 00:02:45,840
+great fail-safe option to ensure carbon
+
+89
+00:02:43,840 --> 00:02:48,800
+dioxide is only added
+
+90
+00:02:45,840 --> 00:02:50,640
+when the plants can actually use it a
+
+91
+00:02:48,800 --> 00:02:52,319
+lot of growers some are some controllers
+
+92
+00:02:50,639 --> 00:02:54,159
+had growers trying to dial in the time
+
+93
+00:02:52,318 --> 00:02:57,280
+so it flights on lights off period
+
+94
+00:02:54,159 --> 00:02:59,359
+but the photocell is great uh for
+
+95
+00:02:57,280 --> 00:03:01,120
+kind of forgetting about the exact timer
+
+96
+00:02:59,360 --> 00:03:02,560
+setting in case timers were a little off
+
+97
+00:03:01,120 --> 00:03:04,878
+also if you're growing in a high tunnel
+
+98
+00:03:02,560 --> 00:03:06,400
+or greenhouse environment this can also
+
+99
+00:03:04,878 --> 00:03:08,639
+allow the control to automatically
+
+100
+00:03:06,400 --> 00:03:11,360
+adjust to seasonal changes in duration
+
+101
+00:03:08,639 --> 00:03:12,878
+of sunlight or photo period now what is
+
+102
+00:03:11,360 --> 00:03:13,599
+this fuzzy logic that you'd be missing
+
+103
+00:03:12,878 --> 00:03:15,840
+out on
+
+104
+00:03:13,598 --> 00:03:16,719
+well keep in mind that fuzzy logic can
+
+105
+00:03:15,840 --> 00:03:18,400
+maximize
+
+106
+00:03:16,719 --> 00:03:20,158
+a growing cycle with bottle based
+
+107
+00:03:18,400 --> 00:03:22,560
+systems and what it simply does is it
+
+108
+00:03:20,158 --> 00:03:25,039
+allows for continuous adjustment
+
+109
+00:03:22,560 --> 00:03:26,080
+and to automatically ensure efficiency
+
+110
+00:03:25,039 --> 00:03:27,280
+the reason why this can be used with
+
+111
+00:03:26,080 --> 00:03:28,959
+bottle based systems
+
+112
+00:03:27,280 --> 00:03:31,519
+is the controller will automatically
+
+113
+00:03:28,959 --> 00:03:34,239
+adjust the frequency and duration
+
+114
+00:03:31,519 --> 00:03:35,360
+of its pulse dosing this is not possible
+
+115
+00:03:34,239 --> 00:03:36,080
+with generators because it needs to be
+
+116
+00:03:35,360 --> 00:03:38,319
+on
+
+117
+00:03:36,080 --> 00:03:39,840
+or off so just keep that in mind that if
+
+118
+00:03:38,318 --> 00:03:40,878
+you are looking at potentially going
+
+119
+00:03:39,840 --> 00:03:42,878
+into
+
+120
+00:03:40,878 --> 00:03:44,399
+using a generator for now but looking at
+
+121
+00:03:42,878 --> 00:03:45,840
+a bottle system down the road
+
+122
+00:03:44,400 --> 00:03:47,760
+make sure you get one of the fuzzy logic
+
+123
+00:03:45,840 --> 00:03:49,200
+so the fuzzy logic can be utilized when
+
+124
+00:03:47,759 --> 00:03:51,359
+using the bottle based system
+
+125
+00:03:49,199 --> 00:03:53,679
+but make sure that physiologic is off or
+
+126
+00:03:51,360 --> 00:03:55,360
+you get a controller that does not have
+
+127
+00:03:53,680 --> 00:03:57,599
+fuzzy logic if you're only going to be
+
+128
+00:03:55,360 --> 00:04:00,319
+using a generated source of carbon
+
+129
+00:03:57,598 --> 00:04:00,318
+dioxide
+

@@ -1,0 +1,1241 @@
+[SPEAKER_00]: This is a production of Cornell
+University.
+[SPEAKER_00]: So starting with a little background,
+NUA is a crowdsourced network.
+[SPEAKER_00]: The weather station owners share the
+weather data through the network and
+[SPEAKER_00]: provide to us feedback and guidance on
+what we should or should not be doing,
+[SPEAKER_00]: what we could do better.
+[SPEAKER_00]: Weather data is collected every 15 minutes
+and tabulated in hourly and daily
+[SPEAKER_00]: summaries.
+[SPEAKER_00]: We're collecting precipitation,
+temperature, relative humidity,
+[SPEAKER_00]: leaf wetness, solar radiation,
+wind speed, wind direction.
+[SPEAKER_00]: And growers that purchase these weather
+instruments now have the option of getting
+[SPEAKER_00]: soil moisture and soil temperature
+sensors, but we still haven't put into
+[SPEAKER_00]: place the API that will actually pull that
+data in.
+[SPEAKER_00]: We need to go to one minute data,
+and we're going to be doing that this
+[SPEAKER_00]: fall.
+[SPEAKER_00]: Sister stations in the network are
+designated for missing data to fill gaps
+[SPEAKER_00]: so that we don't have bizarre accumulated
+degree days and things like that.
+[SPEAKER_00]: With a lot of missing data.
+[SPEAKER_00]: Or we'll extrapolate one hour gaps in our
+data.
+[SPEAKER_00]: The decision support tools are primarily
+for IPM, but we also have some for crop
+[SPEAKER_00]: production, which is why I'm here today to
+share those with you.
+[SPEAKER_00]: And they are built, obviously,
+from that weather data.
+[SPEAKER_00]: So a little bit more about NUA's history.
+[SPEAKER_00]: It was created in 1996 by Kurt Petzold.
+[SPEAKER_00]: At that time, he was the vegetable IPM
+coordinator in the New York State IPM
+[SPEAKER_00]: program.
+[SPEAKER_00]: Originally, it was an association they
+charged membership fees.
+[SPEAKER_00]: And today, it's open access with land
+grant university partners and grower
+[SPEAKER_00]: association partners.
+[SPEAKER_00]: Initially, we started out with sensor and
+Campbell instruments.
+[SPEAKER_00]: Sensor was bought by Sensotronics.
+[SPEAKER_00]: Those instruments went obsolete.
+[SPEAKER_00]: Today, we're partnering with Rainwise
+Incorporated for all of our weather
+[SPEAKER_00]: instrumentation for the most part.
+[SPEAKER_00]: Although we do have a number of on-set
+instruments in the network, some of you
+[SPEAKER_00]: may be using the name brand HOPE.
+[SPEAKER_00]: HOPE is the company that manufactures
+those.
+[SPEAKER_00]: We also pull in National Weather Service
+airport data.
+[SPEAKER_00]: And we partner with State Climatology
+Mesonets.
+[SPEAKER_00]: Currently, right now, our one and only
+partner is the New Jersey State
+[SPEAKER_00]: Climatology Office.
+[SPEAKER_00]: But we're working on some other Mesonet
+partners.
+[SPEAKER_00]: Initially, we were going out with our
+laptops and manually downloading these
+[SPEAKER_00]: data, bringing them back.
+[SPEAKER_00]: Creating messages, putting those messages
+on a system called Codaphone.
+[SPEAKER_00]: And growers could dial into those and get
+that message du jour about what was going
+[SPEAKER_00]: on, what the IPM program thought that
+people should be paying attention to.
+[SPEAKER_00]: We switched to modems.
+[SPEAKER_00]: I'm glad to say we've saved about $8,000
+in operating costs by eliminating our
+[SPEAKER_00]: modems and phone lines.
+[SPEAKER_00]: So that was a big savings, which was
+important when NUA was zero funded.
+[SPEAKER_00]: Oh, and I say NUA.
+[SPEAKER_00]: Don said Neewa.
+[SPEAKER_00]: And it's like potato potato.
+[SPEAKER_00]: It's fine.
+[SPEAKER_00]: Everything's good.
+[SPEAKER_00]: So if you hear me say NUA, just know that
+I am talking about the same thing.
+[SPEAKER_00]: So today, we have a few stations that are
+still using file transfer protocol.
+[SPEAKER_00]: But most are using internet protocol to
+send the data directly to a website at
+[SPEAKER_00]: Rainwise.
+[SPEAKER_00]: We scrape that data off their web into our
+database.
+[SPEAKER_00]: And Rainwise has developed a cellular data
+modem system.
+[SPEAKER_00]: So for growers who have a desire to have a
+weather instrument, but it's a very remote
+[SPEAKER_00]: location, they don't have broadband,
+they can use the cellular data option.
+[SPEAKER_00]: We're now up to 432 weather stations.
+[SPEAKER_00]: Last time I gave this talk a month ago in
+plant pathology, we had 428.
+[SPEAKER_00]: So we're growing all the time,
+just all the time growing.
+[SPEAKER_00]: So that's pretty exciting.
+[SPEAKER_00]: We have weather stations we're pulling
+data in in 23 states.
+[SPEAKER_00]: We have 10 member states and then grower
+members in additional five other states.
+[SPEAKER_00]: It gets swelled up when we have airports
+in states that are neighboring a
+[SPEAKER_00]: grower-owned weather instrument because we
+need that sister data.
+[SPEAKER_00]: We need complementary data so that we know
+that we're not going to have outages.
+[SPEAKER_00]: So open access, real time, query-based,
+decision support with built-in biofix and
+[SPEAKER_00]: an interactive user interface.
+[SPEAKER_00]: This is our current website, built in
+2009.
+[SPEAKER_00]: I know for the millennials in the
+audience, you're going to be groaning.
+[SPEAKER_00]: Oh my gosh, that's so old.
+[SPEAKER_00]: I know, it's pretty much geriatric now.
+[SPEAKER_00]: And we're trying to get money to rebuild
+our website.
+[SPEAKER_00]: So far, two grants later, no bites.
+[SPEAKER_00]: But we'll still continue trying.
+[SPEAKER_00]: The blue menu at the top for the audience
+in Geneva, I'll try to use the current
+[SPEAKER_00]: cursor as a pointer.
+[SPEAKER_00]: So this blue menu follows you throughout
+the website and gives you access to all of
+[SPEAKER_00]: the tools and products on NUA.
+[SPEAKER_00]: And up here, there's kind of a neat little
+utility that I like.
+[SPEAKER_00]: It's find the National Weather Service
+weather forecast for your location.
+[SPEAKER_00]: You just enter your city, state,
+zip code and hit go and it'll get you to
+[SPEAKER_00]: that National Weather Service page with
+forecast data, et cetera.
+[SPEAKER_00]: This map, which starts out here,
+it will save your location.
+[SPEAKER_00]: You know how it is now.
+[SPEAKER_00]: If you don't disable location services on
+your phone, your phone always knows where
+[SPEAKER_00]: you are.
+[SPEAKER_00]: And so does NUA.
+[SPEAKER_00]: It knows where you are.
+[SPEAKER_00]: So the next time you go in, if you're in
+North Carolina, that map's going to center
+[SPEAKER_00]: on North Carolina instead of New York
+State.
+[SPEAKER_00]: So we try to do little things as we can to
+make the NDU user experience more fun and
+[SPEAKER_00]: exciting.
+[SPEAKER_00]: Every weather station has a station page.
+[SPEAKER_00]: And on the station pages, basically,
+the key is that there are these quick
+[SPEAKER_00]: links to the Pest Forecasts that'll give
+you the result for that Pest Forecast or
+[SPEAKER_00]: that tool right there for today's date.
+[SPEAKER_00]: It defaults to the current date.
+[SPEAKER_00]: And then here, there are some quick links
+to weather products, degree days,
+[SPEAKER_00]: hourly data, et cetera.
+[SPEAKER_00]: So here's NUA's map.
+[SPEAKER_00]: The green icons on there are the NUA
+weather stations that are owned primarily
+[SPEAKER_00]: by growers, but some are owned by the
+land-grant institution.
+[SPEAKER_00]: For instance, Connecticut's land-grant,
+Yukon.
+[SPEAKER_00]: They manage all of their weather stations.
+[SPEAKER_00]: They have about 40 in their network,
+one in every county, and then some
+[SPEAKER_00]: additional ones on grower farms.
+[SPEAKER_00]: And primarily, their focus is the turf and
+landscape industry with those county-based
+[SPEAKER_00]: instruments.
+[SPEAKER_00]: Then if you can see, there are the little
+airplane icons.
+[SPEAKER_00]: Those are the airport locations.
+[SPEAKER_00]: And then this map here shows you the
+member states that are in purple.
+[SPEAKER_00]: And then in orange are those states where
+there are one or two, maybe three
+[SPEAKER_00]: individual growers that have purchased a
+weather station and are subscribing into
+[SPEAKER_00]: the NUA system.
+[SPEAKER_00]: It's about $290 a year for an individual
+subscriber.
+[SPEAKER_00]: And if you're a statewide member,
+an unlimited number of weather stations
+[SPEAKER_00]: can connect to NUA for a fee of $1,750 per
+year.
+[SPEAKER_00]: So that's essentially our revenue stream.
+[SPEAKER_00]: You can do the math, and you can see that
+we operate on something less than $20,000
+[SPEAKER_00]: a year.
+[SPEAKER_00]: It's a fairly limited revenue stream.
+[SPEAKER_00]: But it's growing.
+[SPEAKER_00]: We've got over 430 stations now,
+so it's pretty exciting.
+[SPEAKER_00]: I haven't shown this slide in my previous
+seminars, but I thought, OK, I'll show
+[SPEAKER_00]: this to you guys.
+[SPEAKER_00]: So this is where the data is going,
+how it moves around.
+[SPEAKER_00]: So we start with the weather station.
+[SPEAKER_00]: The data goes to Rainwise Net.
+[SPEAKER_00]: We scrape it off.
+[SPEAKER_00]: I'm following the black arrows.
+[SPEAKER_00]: It goes into our NUA database,
+which is at the Northeast Regional Climate
+[SPEAKER_00]: Center, and then pushes that data to the
+NUA server, where it goes through a number
+[SPEAKER_00]: of tools and algorithms, et cetera.
+[SPEAKER_00]: And then the end user will access that on
+nua.cornell.edu.
+[SPEAKER_00]: We also have some metadata for quality
+control, and that informs the NUA server
+[SPEAKER_00]: location of the station page, for
+instance.
+[SPEAKER_00]: So that just gives you, in a nutshell,
+what we're doing with cloud computing and
+[SPEAKER_00]: where we're moving all of these data.
+[SPEAKER_00]: So how does NUA, or NUA, benefit the
+programs of the horticulture section?
+[SPEAKER_00]: So obviously, plant development and mental
+models.
+[SPEAKER_00]: Plant phenology models can be developed
+into tools to inform management decisions.
+[SPEAKER_00]: And I'll show you a couple of these during
+today's seminar.
+[SPEAKER_00]: Weather data can be used to validate and
+implement horticulture models.
+[SPEAKER_00]: And obviously, the data and models that
+are in NUA can be used for research,
+[SPEAKER_00]: teaching, and extension.
+[SPEAKER_00]: So for instance, Greg, I'm not going to,
+no pressure here.
+[SPEAKER_00]: Ian Merwin used to use some of the NUA
+Apple models for his teaching.
+[SPEAKER_00]: So I didn't mean that to be, in any way,
+a plug or, you know.
+[SPEAKER_00]: Right.
+[SPEAKER_00]: OK.
+[SPEAKER_00]: There you go.
+[SPEAKER_00]: So the idea was, hey, Julie, you really
+should tell people about NUA.
+[SPEAKER_00]: You should get the word out.
+[SPEAKER_00]: That is what my group of state
+coordinators has been telling me.
+[SPEAKER_00]: So these seminars, I'm trying to tell the
+Cornell community about NUA so that you're
+[SPEAKER_00]: aware of this.
+[SPEAKER_00]: Some of these data could enrich your own
+research programs and teaching programs.
+[SPEAKER_00]: And I want to definitely stimulate
+thinking about developing and utilizing
+[SPEAKER_00]: NUA to benefit our agricultural and
+horticultural commodities.
+[SPEAKER_00]: So I'm going to now talk about what the
+predictive tools are that are in NUA.
+[SPEAKER_00]: Increasingly, I grew up, and they were
+called models, disease forecast models,
+[SPEAKER_00]: insect phenology models.
+[SPEAKER_00]: Increasingly now, they're called tools.
+[SPEAKER_00]: And for those of you who work kind of in
+this arena, it's not even precision
+[SPEAKER_00]: agriculture anymore.
+[SPEAKER_00]: It's being called digital agriculture.
+[SPEAKER_00]: So increasingly, growers are utilizing
+this type of technology in their crop
+[SPEAKER_00]: production practices.
+[SPEAKER_00]: So I'm going to spend a little bit of time
+on pest forecast tools, like nothing more
+[SPEAKER_00]: than this one slide, just to give you a
+flavor.
+[SPEAKER_00]: This is the drop down menu.
+[SPEAKER_00]: From the NUA website of what we currently
+have available, this menu has shrunk
+[SPEAKER_00]: because we've started combining into one
+page.
+[SPEAKER_00]: Onion models, for instance, the disease
+models are all in one page.
+[SPEAKER_00]: The grape models are all in one page.
+[SPEAKER_00]: It just makes it a little bit easier for
+the end user.
+[SPEAKER_00]: But we have 16 plant disease tools,
+11 insect phenology tools.
+[SPEAKER_00]: We're now providing five day forecasts and
+details on past and current conditions in
+[SPEAKER_00]: most of our tools.
+[SPEAKER_00]: So the grower can look forward five days
+and know they have to plan to do some sort
+[SPEAKER_00]: of intervention on the farm.
+[SPEAKER_00]: And what we want growers to be able to do
+is to assess risk, learn about IPM,
+[SPEAKER_00]: and get decision support through NUA.
+[SPEAKER_00]: The weather products, I'm going to spend a
+little more time on because I think
+[SPEAKER_00]: they're more relevant to the horticulture
+arena, where we're looking at plant
+[SPEAKER_00]: development.
+[SPEAKER_00]: We might be wanting to know more about
+just growing degree days and the
+[SPEAKER_00]: tabulation of degree days.
+[SPEAKER_00]: So we're currently tabulating degree days
+for 12 base temperatures.
+[SPEAKER_00]: We accumulate that value starting January
+1, March 1, April 1, and May 1,
+[SPEAKER_00]: primarily informed by the commodities that
+we're working with.
+[SPEAKER_00]: So for instance in apples, which I know
+probably more about than any of the other
+[SPEAKER_00]: crops that are that have tools on NUA.
+[SPEAKER_00]: In apples, basically the common tenet is
+that there's no growth before March 1st.
+[SPEAKER_00]: And we don't even bother looking at
+accumulation of degree days before March
+[SPEAKER_00]: 1st.
+[SPEAKER_00]: Well, guess what?
+[SPEAKER_00]: Climate change is changing that.
+[SPEAKER_00]: And indeed we are getting weird things
+going on before March 1st now.
+[SPEAKER_00]: So the exciting thing is the degree day
+calculator.
+[SPEAKER_00]: We had created a degree day calculator in
+PHP on our ancient website before the one
+[SPEAKER_00]: I'm showing you today.
+[SPEAKER_00]: And because the programming language
+wasn't compatible with the new system,
+[SPEAKER_00]: we didn't get this degree day calculator
+resurrected until this year.
+[SPEAKER_00]: So it's really exciting to be able to use
+the degree day calculator once again.
+[SPEAKER_00]: So a little bit about all of these various
+degree days that are in NUA.
+[SPEAKER_00]: So you might say, well, why do you have
+just 12 base temperatures?
+[SPEAKER_00]: The reason is that we're already using
+these base temperatures shown in this
+[SPEAKER_00]: table for a number of different tools in
+NUA.
+[SPEAKER_00]: And so we use that as our drop down
+selection because the algorithms are
+[SPEAKER_00]: already built.
+[SPEAKER_00]: They're already there.
+[SPEAKER_00]: A couple of these I want to bring to your
+attention.
+[SPEAKER_00]: The seed corn mag at 39 degrees Fahrenheit
+one and the 14.3 degrees Fahrenheit one.
+[SPEAKER_00]: The 14.3 degrees centigrade one for brown
+marmorated stink bug have no tools
+[SPEAKER_00]: associated with them at all.
+[SPEAKER_00]: There is no brown marmorated stink bug
+developmental model right now available.
+[SPEAKER_00]: But research has shown that its base
+temperature for development is 14.3
+[SPEAKER_00]: centigrade.
+[SPEAKER_00]: And so I said, OK, well, let's just put
+that in NUA.
+[SPEAKER_00]: People can then query that or look at the
+tables for degree days knowing that and
+[SPEAKER_00]: basically make some intuitive inferences
+or deductions from the data as it's being
+[SPEAKER_00]: calculated.
+[SPEAKER_00]: The seed corn mag at one was developed
+because my colleague Ken Wise,
+[SPEAKER_00]: who works with field crops, has a
+newsletter.
+[SPEAKER_00]: And he said, Julie, you know, I'd love to
+be able to calculate base degree days for
+[SPEAKER_00]: base 39 Fahrenheit so that I can put the
+information in my newsletter because I
+[SPEAKER_00]: know when it gets to a certain point,
+seed corn mag is at this stage.
+[SPEAKER_00]: And then I alert the growers through my
+newsletter.
+[SPEAKER_00]: And so he can look at that for all the
+different locations across New York,
+[SPEAKER_00]: put that in his newsletter now.
+[SPEAKER_00]: So that's kind of maybe how things get
+started.
+[SPEAKER_00]: They get rolling along just because you
+know that there's a base developmental
+[SPEAKER_00]: temperature or there's a model out there
+and somebody wants a piece of it.
+[SPEAKER_00]: For all the rest of these, there is an
+actual tool in NUA for them.
+[SPEAKER_00]: And obviously, for growing degree days,
+GDD, that's just, again, also just the
+[SPEAKER_00]: degree day tables.
+[SPEAKER_00]: It's not going to say, expect lilac to be
+at this phenological stage with this
+[SPEAKER_00]: accumulation of GDD.
+[SPEAKER_00]: So that's where I rely on the faculty
+across Cornell and across the reach of NUA
+[SPEAKER_00]: to say, I'd love to have a model that did
+this.
+[SPEAKER_00]: Let's develop it.
+[SPEAKER_00]: This is the degree day calculation.
+[SPEAKER_00]: And this shows you essentially how all of
+the tools on NUA are built.
+[SPEAKER_00]: Most of them.
+[SPEAKER_00]: Some of them are slightly different.
+[SPEAKER_00]: But they all will have a little query on
+the left-hand side where you select the
+[SPEAKER_00]: state, weather station, the type of degree
+day.
+[SPEAKER_00]: In this case, I chose base 50.
+[SPEAKER_00]: The accumulation start date, I allowed
+this to default to January 1.
+[SPEAKER_00]: And the end date.
+[SPEAKER_00]: And then you hit Get Report.
+[SPEAKER_00]: The model starts out with a map.
+[SPEAKER_00]: So it starts out with a map.
+[SPEAKER_00]: That way, you don't have to know the
+station name.
+[SPEAKER_00]: You can actually look at the map and say,
+OK, geographically, this one's going to be
+[SPEAKER_00]: closest.
+[SPEAKER_00]: But from an altitude perspective,
+I think I'm going to select this other one
+[SPEAKER_00]: because the topography might be better
+with better match at that other weather
+[SPEAKER_00]: station location.
+[SPEAKER_00]: So the map gives a little more flexibility
+than just knowing the name of the weather
+[SPEAKER_00]: station location.
+[SPEAKER_00]: As soon as you hit Get Report,
+the wheel starts to move.
+[SPEAKER_00]: It starts turning.
+[SPEAKER_00]: That query is sent to the server.
+[SPEAKER_00]: And the results page pops back up.
+[SPEAKER_00]: So this chart builds.
+[SPEAKER_00]: And wherever you scroll your mouse over
+the chart, this pop-up box will pop up and
+[SPEAKER_00]: give you the actual data for that
+particular point.
+[SPEAKER_00]: The chart above, again, gives the past,
+the current, and the five-day forecast
+[SPEAKER_00]: out.
+[SPEAKER_00]: The daily degree days, base 50.
+[SPEAKER_00]: And the seasonal accumulation starting as
+my query requested from January 1.
+[SPEAKER_00]: And you can see we started to get colder
+in mid-September.
+[SPEAKER_00]: And yeah, it's kind of chilly now.
+[SPEAKER_00]: I had frost at my house last night.
+[SPEAKER_00]: Here's another way that you can use
+weather data.
+[SPEAKER_00]: In hindsight, gee, I think it got really
+cold on February 14 this past winter.
+[SPEAKER_00]: And it was really mild for a long time.
+[SPEAKER_00]: And indeed, this cold snap, a number of
+people are attributing to one of the big
+[SPEAKER_00]: reasons why we didn't have a lot of stone
+fruit this year in New York.
+[SPEAKER_00]: So apricots, peaches, nectarines,
+sweet cherries, the flower buds could have
+[SPEAKER_00]: been significantly damaged by this
+temperature event.
+[SPEAKER_00]: So if you're looking at the daily summary
+table circled here, you can see how mild
+[SPEAKER_00]: these temperatures were.
+[SPEAKER_00]: Leading up to this, the max temperature
+and the min temperature.
+[SPEAKER_00]: And then we got down to minus 10 degrees
+Fahrenheit, which is pretty significant.
+[SPEAKER_00]: And then if you wanted to look at this
+from an hourly standpoint, you could query
+[SPEAKER_00]: the hourly data.
+[SPEAKER_00]: And you can see each hour how cold it was
+and for how long the cold event lasted.
+[SPEAKER_00]: Because sometimes that also weighs in on
+the level of damage that you'll get on
+[SPEAKER_00]: flower buds.
+[SPEAKER_00]: And vegetative buds in woody plants.
+[SPEAKER_00]: Another way that you can use the data in
+NOAA is to look at rainfall data.
+[SPEAKER_00]: So I was giving a talk in North Carolina
+to the Apple Growers Association.
+[SPEAKER_00]: And I said to Gene Klimstra, who had set
+up a weather instrument the year before,
+[SPEAKER_00]: I said, hey, Gene, is there something that
+happened so I could go into the data,
+[SPEAKER_00]: pull that out, and share with the
+audience.
+[SPEAKER_00]: And we can talk about the use of rainfall
+data.
+[SPEAKER_00]: And he said, oh, yeah.
+[SPEAKER_00]: We got eight inches of rain in October
+when we were trying to harvest our apples.
+[SPEAKER_00]: Forget it.
+[SPEAKER_00]: We couldn't get in there in a timely way
+to harvest our apples.
+[SPEAKER_00]: We had to wait and wait it out.
+[SPEAKER_00]: So I went into these are in monthly.
+[SPEAKER_00]: And that's another thing that I want to
+point out with this slide is the data is
+[SPEAKER_00]: in monthly tables.
+[SPEAKER_00]: So in order to get data that spans like
+the end of September into the early
+[SPEAKER_00]: October, you have to go through the data.
+[SPEAKER_00]: You have to go to the month of September
+and the month of October, obviously.
+[SPEAKER_00]: So this just shows the month of October.
+[SPEAKER_00]: And you can see here the daily data.
+[SPEAKER_00]: Three inches of rain on one day,
+an inch each of the previous two days.
+[SPEAKER_00]: And then if you look down the hourly data,
+you'll see that at some points,
+[SPEAKER_00]: we were getting a half an inch of rain,
+a third of an inch of rain, a quarter of
+[SPEAKER_00]: an inch of rain per hour was falling.
+[SPEAKER_00]: And that is kind of what the projection is
+that we're going to be needing to expect
+[SPEAKER_00]: and to plan for given climate change.
+[SPEAKER_00]: We're going to have these intense rainfall
+events and these bizarre temperature
+[SPEAKER_00]: events that may impact our crops.
+[SPEAKER_00]: And this type of data gives the grower the
+ability to document that something really
+[SPEAKER_00]: bad happened.
+[SPEAKER_00]: And if they have crop insurance,
+then they can document that this
+[SPEAKER_00]: significant event happened and damaged
+their crop.
+[SPEAKER_00]: So now I'm going to go over the crop
+management tools that are in NUA.
+[SPEAKER_00]: There are three that are really NUA-based.
+[SPEAKER_00]: I'll cover those towards the end of this
+segment.
+[SPEAKER_00]: Again, we're assessing risk.
+[SPEAKER_00]: We're getting decision support.
+[SPEAKER_00]: And the primary ones we have in NUA that
+are currently programmed in as tools are
+[SPEAKER_00]: crop load management tool for apple and an
+irrigation tool for apple.
+[SPEAKER_00]: And obviously, growing degree days.
+[SPEAKER_00]: This is a tool that was created by Frank
+Rossi and Art Degatano with the Northeast
+[SPEAKER_00]: Regional Climate Center.
+[SPEAKER_00]: So this is their forecast suite of tools.
+[SPEAKER_00]: And what I do then is I link to these
+within NUA.
+[SPEAKER_00]: These are not using NUA data.
+[SPEAKER_00]: They're using the Cooperative Weather
+Observer Program data.
+[SPEAKER_00]: These are human beings that are still
+observing data.
+[SPEAKER_00]: They're using weather for the National
+Weather Service and have been doing that
+[SPEAKER_00]: since, I believe, the 1800s, some sites.
+[SPEAKER_00]: So these data are then used to drive a
+suite of disease risk models, turf and
+[SPEAKER_00]: weed development, irrigation information,
+and heat stress and frost.
+[SPEAKER_00]: Some of these tools have been built for
+apple frost risk.
+[SPEAKER_00]: Art Degatano built these.
+[SPEAKER_00]: And these, again, these maps, if you click
+on these maps, they'll blow up.
+[SPEAKER_00]: But you can't, at this point, zoom right
+in.
+[SPEAKER_00]: So the resolution of these maps is not
+high resolution.
+[SPEAKER_00]: You can't zoom right in on these
+locations.
+[SPEAKER_00]: And you can select either Red Delicious,
+Empire, or McIntosh with this tool.
+[SPEAKER_00]: There is a grape bud hardiness tool that's
+experimental that Art Degatano built.
+[SPEAKER_00]: And it is based on research out of
+Washington State.
+[SPEAKER_00]: And the three varieties that are available
+here are Concord, Cab Franc, and Riesling.
+[SPEAKER_00]: And again, there are these maps that show
+the modified hardiness temperature here,
+[SPEAKER_00]: bud injury potential.
+[SPEAKER_00]: Obviously, there's none right now.
+[SPEAKER_00]: I accessed this very recently.
+[SPEAKER_00]: And then this is a chart showing the max
+min.
+[SPEAKER_00]: And this is the hardiness line for
+Concord.
+[SPEAKER_00]: And this is the lowest temperature since
+July 1 map.
+[SPEAKER_00]: This is about as big as these maps get.
+[SPEAKER_00]: So this is about the highest res that
+you'll get of this map on the web right
+[SPEAKER_00]: now.
+[SPEAKER_00]: But Art Degatano with Earth and
+Atmospheric Sciences, he's also the
+[SPEAKER_00]: director of the Northeast Regional Climate
+Center, built this soil temperature
+[SPEAKER_00]: algorithm for us to estimate this.
+[SPEAKER_00]: We are planning, hopefully, to use these
+data in a weed development model.
+[SPEAKER_00]: That Tony DiTomasso, Abby Seaman,
+and oh, I'm having a senior moment.
+[SPEAKER_00]: Is it Mike Ryan or Mark Ryan?
+[SPEAKER_00]: Matt.
+[SPEAKER_00]: Thank you.
+[SPEAKER_00]: Thank you.
+[SPEAKER_00]: Are potentially going to be developing.
+[SPEAKER_00]: And if you think about it, soil
+temperature and knowing soil temperature
+[SPEAKER_00]: could potentially be used for planting
+date estimation for certain crops.
+[SPEAKER_00]: This soil temperature map is available
+right now.
+[SPEAKER_00]: So this is available.
+[SPEAKER_00]: If you go to nua.cornell.edu and go to
+crop management, it should be in that
+[SPEAKER_00]: list.
+[SPEAKER_00]: If it's not, tell Betsy or Greg,
+who are in front of you, they know how to
+[SPEAKER_00]: get a hold of me.
+[SPEAKER_00]: So anyway.
+[SPEAKER_00]: All right.
+[SPEAKER_00]: Moving along.
+[SPEAKER_00]: So now I'll show you a couple of tools
+that are actually programmed in NUA for
+[SPEAKER_00]: Apple.
+[SPEAKER_00]: This is the Apple evapotranspiration
+model.
+[SPEAKER_00]: So it's modeling the use of soil water by
+the orchard.
+[SPEAKER_00]: So essentially, you would select the
+weather station.
+[SPEAKER_00]: This screen capture was done last year
+before we had the state selection in this
+[SPEAKER_00]: utility.
+[SPEAKER_00]: You'd select the date.
+[SPEAKER_00]: Usually, it defaults to the current date.
+[SPEAKER_00]: Hit continue.
+[SPEAKER_00]: And then you're going to put the green tip
+date.
+[SPEAKER_00]: We'll estimate that for you.
+[SPEAKER_00]: But if you know that for your orchard
+block, you would get better results,
+[SPEAKER_00]: more accurate results, obviously,
+if you enter that.
+[SPEAKER_00]: And then you put your row spacing between
+row spacing and the trees per acre.
+[SPEAKER_00]: You can do either or.
+[SPEAKER_00]: Obviously, if you know your trees per
+acre, you don't really have to do the row
+[SPEAKER_00]: spacing and between row spacing.
+[SPEAKER_00]: And then this is a selection for the age
+of the orchard.
+[SPEAKER_00]: I think it goes 0, 1, 2, 3 years and then
+mature.
+[SPEAKER_00]: And you'll hit calculate.
+[SPEAKER_00]: I think the calculate button is usually
+here under this water balance.
+[SPEAKER_00]: And the table will build.
+[SPEAKER_00]: The green row here is the green tip date.
+[SPEAKER_00]: No, it's the current date.
+[SPEAKER_00]: I'm sorry.
+[SPEAKER_00]: Wrong model.
+[SPEAKER_00]: The green row here is the current date.
+[SPEAKER_00]: In blue are the past dates.
+[SPEAKER_00]: And in brown are the forecast days pushed
+out.
+[SPEAKER_00]: In this case, I think they go six to seven
+days into the future.
+[SPEAKER_00]: Rainfall right now, we can't really get.
+[SPEAKER_00]: If you've ever looked at a forecast,
+it's usually what are the chances of rain,
+[SPEAKER_00]: the percent prediction.
+[SPEAKER_00]: It doesn't tell you how much is going to
+fall.
+[SPEAKER_00]: So this rainfall will inform how many
+gallons per acre have fallen on the
+[SPEAKER_00]: orchard, how much irrigation you've
+applied can be entered here if you have
+[SPEAKER_00]: your irrigation record, and then the daily
+water balance in gallons per acre and the
+[SPEAKER_00]: cumulative water balance.
+[SPEAKER_00]: So the perspective is this final number is
+the number that you need to be concerned
+[SPEAKER_00]: about.
+[SPEAKER_00]: If the tree has drawn out 10,526 gallons
+per acre, what you need to do then is to
+[SPEAKER_00]: look at the water holding capacity of your
+soil, obviously.
+[SPEAKER_00]: And what they recommend is to start
+irrigation if you're at, if the tree has
+[SPEAKER_00]: drawn off 10% of that water holding
+capacity.
+[SPEAKER_00]: That's their earmark benchmark target.
+[SPEAKER_00]: So what you would need to do if you've got
+an irrigated orchard, you figure out how
+[SPEAKER_00]: much water you're putting out on your
+acres.
+[SPEAKER_00]: So the flow rate of the emitters and the
+number of emitters per acre.
+[SPEAKER_00]: And you can figure out how much water you
+can put on per acre.
+[SPEAKER_00]: And then you use this calculation to do
+that so that what these guys are going to
+[SPEAKER_00]: do.
+[SPEAKER_00]: So this model has been built by Alan
+Lacso's research on apple physiology,
+[SPEAKER_00]: Terence Robinson's work with Extension.
+[SPEAKER_00]: And Terence has a postdoc, Jaumi Lordan.
+[SPEAKER_00]: And this is actually Jaumi's slide.
+[SPEAKER_00]: So Jaumi is now working on this.
+[SPEAKER_00]: And they hope to develop an actual app
+with this where you can put in emitters
+[SPEAKER_00]: and soil type, et cetera, and will improve
+this model on NUA accordingly.
+[SPEAKER_00]: The other model that I wanted to walk
+through or tool that I wanted to walk
+[SPEAKER_00]: through with you today is the apple
+carbohydrate thinning model.
+[SPEAKER_00]: This model is perhaps the biggest reason,
+I think, why the network has grown so
+[SPEAKER_00]: significantly over the past few years.
+[SPEAKER_00]: This model has revolutionized thinning in
+orchards.
+[SPEAKER_00]: It's no longer, okay, I'm gonna put this
+much growth regulator out.
+[SPEAKER_00]: And so there's an ounce of that.
+[SPEAKER_00]: I'm gonna put that in the tank.
+[SPEAKER_00]: And then the grower pours himself or
+herself an ounce of vodka.
+[SPEAKER_00]: They chuck that down and they get on their
+sprayer and they go out and they spray.
+[SPEAKER_00]: That's not my joke.
+[SPEAKER_00]: I borrowed that from Dan Donahue who works
+in the Hudson Valley.
+[SPEAKER_00]: But it is, I mean, it just gives you an
+idea.
+[SPEAKER_00]: It's almost like voodoo.
+[SPEAKER_00]: Thinning was like, okay, has it been
+cloudy?
+[SPEAKER_00]: Is it gonna be hot?
+[SPEAKER_00]: What's happening?
+[SPEAKER_00]: What are the trees like?
+[SPEAKER_00]: Which variety, et cetera?
+[SPEAKER_00]: This model has been phenomenal.
+[SPEAKER_00]: And again, it's built on research by Alan
+Lacso in tree fruit physiology and work by
+[SPEAKER_00]: a number of horticulturalists in the
+Northeast that have tested this over the
+[SPEAKER_00]: years.
+[SPEAKER_00]: So what you would do, you'd first access
+the model.
+[SPEAKER_00]: And this is just a screenshot showing you
+how the map is first that shows up.
+[SPEAKER_00]: You'd select the state.
+[SPEAKER_00]: The weather station, the date,
+and hit continue.
+[SPEAKER_00]: Then the results tab will start to form.
+[SPEAKER_00]: And here they're gonna ask you to put in
+your green tip date.
+[SPEAKER_00]: Again, we can estimate that for you,
+but it's always better if you have your
+[SPEAKER_00]: biological data in hand.
+[SPEAKER_00]: The bloom date.
+[SPEAKER_00]: And then you hit calculate.
+[SPEAKER_00]: And the apple carbohydrate results
+tabulate and build.
+[SPEAKER_00]: So the thinning table builds from,
+let me go back, from the green tip date
+[SPEAKER_00]: here down.
+[SPEAKER_00]: Very similar to the irrigation table.
+[SPEAKER_00]: This green row, this is the current date
+that you just selected.
+[SPEAKER_00]: The rows in blue above are the past
+history.
+[SPEAKER_00]: And the rows in brown below are what's
+forecast into the future.
+[SPEAKER_00]: And then the thinning recommendation is in
+this column.
+[SPEAKER_00]: So you're either gonna increase the
+thinner rate by a certain amount,
+[SPEAKER_00]: decrease the thinner rate by a certain
+amount, or apply a standard rate.
+[SPEAKER_00]: And below this, the apple carbohydrate
+balance charts and builds.
+[SPEAKER_00]: So what I usually tell audiences is if you
+think about it from the standpoint of
+[SPEAKER_00]: being female and having to carry a baby to
+term, which is very near and dear to my
+[SPEAKER_00]: heart because I had twins, you have to eat
+well.
+[SPEAKER_00]: You have to have a good carbohydrate
+balance.
+[SPEAKER_00]: So if the tree is starving and you put a
+thinner on, it's probably gonna shed a lot
+[SPEAKER_00]: of that fruit, right?
+[SPEAKER_00]: Because it doesn't, it probably wants to
+drop some of that load anyway.
+[SPEAKER_00]: But it's never as simple as that,
+as you know, because they're plants and
+[SPEAKER_00]: they're so much more complex than us
+humans could ever think of being.
+[SPEAKER_00]: So if the carbohydrate balance is in
+surplus, the opposite you would think
+[SPEAKER_00]: would hold true, right?
+[SPEAKER_00]: It's gonna take more thinner to thin them
+off.
+[SPEAKER_00]: But the problem is there's a lag.
+[SPEAKER_00]: There's a lag in the memory of the tree
+and a lag in all of these processes within
+[SPEAKER_00]: the tree.
+[SPEAKER_00]: So in any case, it's made thinning a lot
+less of a, I gotta have that shot of vodka
+[SPEAKER_00]: before I can get on the tractor and put
+that growth regulator out on my orchard.
+[SPEAKER_00]: So some of the considerations that we tell
+people going forward is we have to have
+[SPEAKER_00]: good solar radiation data from the weather
+station.
+[SPEAKER_00]: If it's out of range, we will silence the
+station because we don't want the garbage
+[SPEAKER_00]: in, garbage out thing.
+[SPEAKER_00]: We don't want people to be accessing a
+model when the data going into it is bad
+[SPEAKER_00]: or could give them erroneous results.
+[SPEAKER_00]: Hard to thin varieties are still gonna be
+hard to thin.
+[SPEAKER_00]: And obviously, people need to use it
+within the context of the thinning
+[SPEAKER_00]: guidelines in the area or region state
+that they're in.
+[SPEAKER_00]: So the next section of my talk,
+I'm just gonna talk about how have we
+[SPEAKER_00]: built the capacity of NUA.
+[SPEAKER_00]: So clearly, the biggest part in that or
+the piece of that was partnering with the
+[SPEAKER_00]: Northeast Regional Climate Center.
+[SPEAKER_00]: They house our database.
+[SPEAKER_00]: They help us with model programming into
+the PI design tools that people are
+[SPEAKER_00]: creating.
+[SPEAKER_00]: They help us with some data quality
+control.
+[SPEAKER_00]: They provide meteorological expertise and
+guidance, which we, living in the
+[SPEAKER_00]: biological side of things, we really don't
+have a lot of.
+[SPEAKER_00]: And the nice thing too is that they're
+interested in agricultural applications of
+[SPEAKER_00]: climate data.
+[SPEAKER_00]: You know, if they weren't interested in
+that, it would be a harder sell.
+[SPEAKER_00]: They have also helped us with automated
+reports that we wanted to generate to send
+[SPEAKER_00]: to people when we know that their weather
+station is down.
+[SPEAKER_00]: And initially, when we implemented this,
+I thought, oh my gosh, everybody's gonna
+[SPEAKER_00]: be so mad because we're, you know,
+hassling them with these emails,
+[SPEAKER_00]: telling them their station is down.
+[SPEAKER_00]: But the reality has been I have gotten
+more compliments on that than I've gotten
+[SPEAKER_00]: anybody saying, forget it.
+[SPEAKER_00]: Can you stop bugging me with this?
+[SPEAKER_00]: It's just really been a win-win situation.
+[SPEAKER_00]: These are the Rainwise Incorporated
+Weather Stations.
+[SPEAKER_00]: And this is the About Weather Stations
+menu.
+[SPEAKER_00]: There's more to this menu now because
+we've put together more links for the
+[SPEAKER_00]: troubleshooting guidelines on how to
+replace a battery, things like that.
+[SPEAKER_00]: These are solar powered.
+[SPEAKER_00]: This is the solar panel that powers the
+instrument.
+[SPEAKER_00]: This is a leaf wetness sensor.
+[SPEAKER_00]: Now they're mounted on the north side over
+here under the tipping bucket.
+[SPEAKER_00]: This is the radio antenna.
+[SPEAKER_00]: The data is radio signal transmitted to a
+computer or a box inside the house or
+[SPEAKER_00]: barn.
+[SPEAKER_00]: And we either use the internet protocol,
+the file transfer protocol.
+[SPEAKER_00]: We're gonna be working on that API that I
+mentioned earlier for one minute data.
+[SPEAKER_00]: And then Rainwise also has a few products
+in their premium system.
+[SPEAKER_00]: I think they have a frost alarm.
+[SPEAKER_00]: They've developed things like that.
+[SPEAKER_00]: You can also send your data to Weather
+Underground and other weather service
+[SPEAKER_00]: providers.
+[SPEAKER_00]: So weather stations.
+[SPEAKER_00]: This is both really exciting for me and
+almost overwhelming.
+[SPEAKER_00]: This chart's only through, I believe,
+July of 2015.
+[SPEAKER_00]: I haven't had a chance to upgrade this or
+update this to include 2016 and the end of
+[SPEAKER_00]: 2015.
+[SPEAKER_00]: But in the last seven years, we've seen
+significant growth in the number of
+[SPEAKER_00]: weather stations connected to NOAA because
+of partnering with all these other states
+[SPEAKER_00]: here.
+[SPEAKER_00]: This green is when the New Jersey State
+Climatology Mesonet joined up with us.
+[SPEAKER_00]: The gray is University of Massachusetts,
+which I must say, we were zero funded in
+[SPEAKER_00]: 2010.
+[SPEAKER_00]: And I think a big part of still being here
+and being relevant is because at that
+[SPEAKER_00]: time, Vermont and Massachusetts wanted to
+join forces with us.
+[SPEAKER_00]: And they really helped us immensely in
+terms of our funding base and keeping us
+[SPEAKER_00]: rolling and going.
+[SPEAKER_00]: So for the airports, for those of you who
+are familiar with weather data enough to
+[SPEAKER_00]: know that the microclimate around that
+weather station can have a significant
+[SPEAKER_00]: impact on the weather data, we do have a
+relative humidity correction factor for
+[SPEAKER_00]: our airport data.
+[SPEAKER_00]: And we also have a leaf wetness estimate
+for those locations because typically,
+[SPEAKER_00]: meteorologists are not collecting that
+type of data.
+[SPEAKER_00]: They don't have those types of sensors.
+[SPEAKER_00]: So this is our list of partners.
+[SPEAKER_00]: It's exciting that this slide is getting
+more and more full all the time.
+[SPEAKER_00]: And I think probably the most exciting
+thing for me is that the Minnesota Apple
+[SPEAKER_00]: Growers and the North Carolina Apple
+Growers Associations are paying for
+[SPEAKER_00]: statewide membership for all of Minnesota
+and all of North Carolina.
+[SPEAKER_00]: And I've asked them repeatedly,
+are you OK with that?
+[SPEAKER_00]: What if a vegetable grower, Steve,
+put up a weather station?
+[SPEAKER_00]: Are you going to be like, what?
+[SPEAKER_00]: And they said, no, we're fine.
+[SPEAKER_00]: We're fine with that.
+[SPEAKER_00]: That's what we want because we want this
+network in our state.
+[SPEAKER_00]: So it's pretty exciting dealing with apple
+growers that, for the most part,
+[SPEAKER_00]: have shown a great deal of altruism
+through NOAA.
+[SPEAKER_00]: It's been really quite rewarding.
+[SPEAKER_00]: The new partners that we're currently
+grooming, so to speak, EnviroWeather,
+[SPEAKER_00]: which is a similar system to NOAA that's
+based out of Michigan State University,
+[SPEAKER_00]: we are now currently receiving their data
+and looking at it to make sure it's going
+[SPEAKER_00]: to be compatible with our NOAA database
+and how that collaboration is going to
+[SPEAKER_00]: look going forward.
+[SPEAKER_00]: We're not sure because, again,
+they have their own EnviroWeather and we
+[SPEAKER_00]: have NOAA.
+[SPEAKER_00]: And how are we going to share our tools
+and whatnot?
+[SPEAKER_00]: So it's going to be an exciting year
+looking to build that.
+[SPEAKER_00]: There are two state climatology mesonets.
+[SPEAKER_00]: One is in North Carolina and one is in
+Delaware that I've been in communication
+[SPEAKER_00]: with trying to enrich our network with
+their data.
+[SPEAKER_00]: New York State Mesonet has put up,
+I believe, 125 or 150 state-of-the-art
+[SPEAKER_00]: weather instruments all across New York.
+[SPEAKER_00]: And these were in response to Lee and
+Sandy that devastated the coast and up
+[SPEAKER_00]: into the Hudson Valley.
+[SPEAKER_00]: So these are FEMA dollars that are paying
+for this network to go into New York.
+[SPEAKER_00]: So we're working with them to see about
+getting that data set into NOAA.
+[SPEAKER_00]: We are partnering with Climate Smart
+Farming and seeing where, you know,
+[SPEAKER_00]: how can we collaborate with them.
+[SPEAKER_00]: And we've just embarked on a prototype or
+a, what is that, you know, a beta test of
+[SPEAKER_00]: getting data to the University of Maine so
+that they can run some of our data through
+[SPEAKER_00]: their ag radar models.
+[SPEAKER_00]: So that should be exciting.
+[SPEAKER_00]: What are our stakeholder priorities?
+[SPEAKER_00]: So top priority, sustainable funding.
+[SPEAKER_00]: Yes, sustainable funding.
+[SPEAKER_00]: I know many of you know how important that
+is.
+[SPEAKER_00]: We'd like to have a responsive web design
+so that if you're on a smartphone,
+[SPEAKER_00]: NOAA is going to behave a little easier.
+[SPEAKER_00]: You won't be pinching and pulling.
+[SPEAKER_00]: We'd love to have more stations.
+[SPEAKER_00]: We have looked into using the National
+Digital Forecast Database of gridded data.
+[SPEAKER_00]: There are some issues with that,
+most notably leaf wetness for all the
+[SPEAKER_00]: plant pathology models.
+[SPEAKER_00]: Looking at developing apps.
+[SPEAKER_00]: Alerts.
+[SPEAKER_00]: The growers would very much like for us to
+remember their planting dates and their
+[SPEAKER_00]: green tip dates and their bloom dates so
+they don't have to have a little cheat
+[SPEAKER_00]: sheet and enter it every time that they
+use the model.
+[SPEAKER_00]: More models, more tools.
+[SPEAKER_00]: Station maintenance and troubleshooting.
+[SPEAKER_00]: We've done quite a bit of that on that the
+past two years.
+[SPEAKER_00]: And promoting awareness, which is why I'm
+here.
+[SPEAKER_00]: We held a planning meeting so there's a
+state coordinator for every state that's
+[SPEAKER_00]: part of NOAA.
+[SPEAKER_00]: And at the time we had our planning
+meeting, there were six state members of
+[SPEAKER_00]: NOAA.
+[SPEAKER_00]: And again, they wanted responsive.
+[SPEAKER_00]: Our objectives after our meeting,
+we came away with responsive web design,
+[SPEAKER_00]: a set of premium products to build some
+sustainable funding.
+[SPEAKER_00]: Virtual stations, that's using that
+digital database.
+[SPEAKER_00]: And wouldn't it be nice to have a
+developer sandbox?
+[SPEAKER_00]: So Greg, you could go in there.
+[SPEAKER_00]: Apple pollen tube growth model,
+here we go.
+[SPEAKER_00]: Let's test it out.
+[SPEAKER_00]: And so a developer could go in,
+set up some parameters, put in some
+[SPEAKER_00]: language, hit go, and the tool would be
+created on the fly and then you'd have
+[SPEAKER_00]: this tool that you could validate and
+change and implement.
+[SPEAKER_00]: Blue sky thinking, I know, I know.
+[SPEAKER_00]: The people who know me are all like,
+Julie, really?
+[SPEAKER_00]: Okay, all right, so coming down to earth.
+[SPEAKER_00]: So having gotten older and just having
+gotten a smartphone, which I used to hide
+[SPEAKER_00]: my flip phone when I was out talking to
+growers because they knew I was doing NOAA
+[SPEAKER_00]: and I've been doing a lot of other digital
+computer stuff.
+[SPEAKER_00]: And so I did, I got a smartphone and Steve
+Valentino, who was working for me,
+[SPEAKER_00]: he's just gone on to grad school in
+molecular biotechnology stuff,
+[SPEAKER_00]: medicine.
+[SPEAKER_00]: That's a very compelling area.
+[SPEAKER_00]: But when he was working for me,
+he was doing all the troubleshooting,
+[SPEAKER_00]: weather station maintenance stuff.
+[SPEAKER_00]: And he said, well, Julie, I don't even
+worry about if it opens into another tab.
+[SPEAKER_00]: I just keep all the, on my browser,
+on my phone, I keep all these things up.
+[SPEAKER_00]: It's open.
+[SPEAKER_00]: And so then I have all these tiles and I
+can just go up, down, through.
+[SPEAKER_00]: And I went, oh.
+[SPEAKER_00]: So what I did was I did that.
+[SPEAKER_00]: And I took a picture of my phone.
+[SPEAKER_00]: And so here you, this is a picture of my
+phone.
+[SPEAKER_00]: And so I've got the, you are NOAA is a
+blog that we set up because I was told,
+[SPEAKER_00]: Julie, you've got to set up a blog.
+[SPEAKER_00]: You've got to get a Twitter account.
+[SPEAKER_00]: You've got to do all this Facebook.
+[SPEAKER_00]: Okay.
+[SPEAKER_00]: And so I've got the degree day calculator,
+the Apple disease models, and the NOAA
+[SPEAKER_00]: homepage on my browser all the time.
+[SPEAKER_00]: And you just hit reload.
+[SPEAKER_00]: And now reload.
+[SPEAKER_00]: So anyway, I mean, for some of you,
+it's like, yeah, duh, I knew that.
+[SPEAKER_00]: Right.
+[SPEAKER_00]: So what have we been doing in terms of
+just weather data research?
+[SPEAKER_00]: So I mentioned about the soil temperature
+estimates.
+[SPEAKER_00]: Those this year, I believe they put out
+actual sensors in specific soils they
+[SPEAKER_00]: wanted to use to validate that estimate.
+[SPEAKER_00]: So that's ongoing.
+[SPEAKER_00]: There's some precipitation, solar
+radiation, temperature, and humidity data
+[SPEAKER_00]: quality control research that's ongoing.
+[SPEAKER_00]: We've been trying to get funding to get
+the gridded data developed.
+[SPEAKER_00]: And there's another grant that's going to
+go in that I'm part of.
+[SPEAKER_00]: So hopefully NOAA would benefit from that.
+[SPEAKER_00]: And then we did some work on leaf wetness
+estimation and found that an hour with
+[SPEAKER_00]: relative humidity above 90% would be a
+good enough estimate.
+[SPEAKER_00]: So that's kind of just a little ballpark
+of what we're using right now and some of
+[SPEAKER_00]: the research that we've done.
+[SPEAKER_00]: So in terms of model development,
+there's the Apple pollen tube growth
+[SPEAKER_00]: model.
+[SPEAKER_00]: This is another thinning model,
+essentially.
+[SPEAKER_00]: But it's a value to organic producers who
+would be applying lime sulfur.
+[SPEAKER_00]: Greg, correct me if I'm wrong.
+[SPEAKER_00]: OK, so they'd be applying lime sulfur to
+thin off blossoms.
+[SPEAKER_00]: So they're trying to kill the blossom.
+[SPEAKER_00]: But you don't want to kill the blossom
+unless the fruit has set or it's at a
+[SPEAKER_00]: vulnerable stage to be killed.
+[SPEAKER_00]: So that's where I rely on people like
+Keith Yoder at Virginia Tech and Greg Peck
+[SPEAKER_00]: to inform this.
+[SPEAKER_00]: So we're excited about this.
+[SPEAKER_00]: And we're hoping we might be able to get
+some funding to develop this model here.
+[SPEAKER_00]: In the near term, Tony DiTomasso in Soil
+and Crop Science, as I mentioned,
+[SPEAKER_00]: is looking at a weed management model.
+[SPEAKER_00]: Betsy Lamb, who's in this room,
+got a grant from the New York Farm
+[SPEAKER_00]: Viability Institute to develop woody
+ornamental insect degree day tools.
+[SPEAKER_00]: And the New York Berry Growers Association
+funded us to develop some berry insect and
+[SPEAKER_00]: disease models.
+[SPEAKER_00]: And essentially, we've got a wish list of
+over 40 models.
+[SPEAKER_00]: Maybe it's only 38 now.
+[SPEAKER_00]: Maybe we did two of these this past year.
+[SPEAKER_00]: So just quickly, some impacts and
+outcomes.
+[SPEAKER_00]: So NUA is transforming this weather data
+into knowledge.
+[SPEAKER_00]: It's helping the grower.
+[SPEAKER_00]: Farmers can share all this weather data
+through the cloud.
+[SPEAKER_00]: And we now have forecasts that are pushing
+things out five days, making it an actual
+[SPEAKER_00]: forecast.
+[SPEAKER_00]: So some of the things growers are saying,
+I use the NUA site almost every day early
+[SPEAKER_00]: in the season.
+[SPEAKER_00]: The orchard was largely scab free.
+[SPEAKER_00]: So apple scab is a disease.
+[SPEAKER_00]: For the first time in several years,
+the manager relied heavily on NUA.
+[SPEAKER_00]: And two New Jersey apple growers reported
+the best thinning results ever in 2015
+[SPEAKER_00]: using the apple carbohydrate thinning
+model.
+[SPEAKER_00]: So better IPM, reduced pesticide use.
+[SPEAKER_00]: And yes, people, growth regulators are
+pesticides.
+[SPEAKER_00]: Reduced pesticide use, improved
+environmental protection, better crop
+[SPEAKER_00]: management, improved crop quality,
+improved yield, enhanced decision support.
+[SPEAKER_00]: So the chart, nah, you guys aren't really
+that concerned.
+[SPEAKER_00]: You guys aren't concerned about this
+chart.
+[SPEAKER_00]: This just says, yeah, growers agree or
+strongly agree that NUA helps IPM,
+[SPEAKER_00]: reduce sprays, improve spray timing,
+alert pest risk, and enhance IPM.
+[SPEAKER_00]: This was before we launched our new
+website.
+[SPEAKER_00]: So this was even when we were on the
+clunky old website.
+[SPEAKER_00]: Today, we're experiencing over two million
+page views per year.
+[SPEAKER_00]: Now a page view is when the end user is
+spending 30 minutes or more on a page.
+[SPEAKER_00]: Back in 2007, growers reported they could
+save on average.
+[SPEAKER_00]: And these are primarily apple and grape
+growers.
+[SPEAKER_00]: On average, 19,500 per year costs and
+prevent about a quarter of a million per
+[SPEAKER_00]: year in crop loss.
+[SPEAKER_00]: So again, high value horticultural crops.
+[SPEAKER_00]: And when we asked, would you recommend NUA
+to farmers, 99% said yes, they would.
+[SPEAKER_00]: So NUA, access to IPM decision support,
+and IPM is all about sustainable
+[SPEAKER_00]: management of pests using methods that
+minimize environmental health and economic
+[SPEAKER_00]: risks.
+[SPEAKER_00]: So we're taking plant disease epidemiology
+research, insect phenology research,
+[SPEAKER_00]: plant phenology research, and crop
+management research.
+[SPEAKER_00]: And we're creating phenology models and
+forecasts that benefit the end user.
+[SPEAKER_00]: They're benefiting the grower.
+[SPEAKER_00]: I think we're doing a pretty good job in
+fruit and vegetables.
+[SPEAKER_00]: We could do better in ornamentals.
+[SPEAKER_00]: Betsy's lining the yellow brick road on
+that one.
+[SPEAKER_00]: And we'll see where the future is in terms
+of field crops and livestock.
+[SPEAKER_00]: So I think with that, I will say thank you
+for your attention.
+[SPEAKER_00]: And I'll take any questions you might
+have.
+[SPEAKER_00]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_00]: Thank you.
+[SPEAKER_00]: Thank you.
+Thank you.

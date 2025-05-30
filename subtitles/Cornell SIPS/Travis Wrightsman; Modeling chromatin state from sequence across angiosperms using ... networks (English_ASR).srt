@@ -1,0 +1,1548 @@
+1
+00:00:01,520 --> 00:00:05,839
+this is a production of cornell
+
+2
+00:00:03,198 --> 00:00:05,839
+university
+
+3
+00:00:08,800 --> 00:00:12,240
+okay so today i just want to talk to you
+
+4
+00:00:10,880 --> 00:00:14,320
+guys a little bit about
+
+5
+00:00:12,240 --> 00:00:16,000
+my work on trying to model
+
+6
+00:00:14,320 --> 00:00:18,640
+a couple of different chromatin states
+
+7
+00:00:16,000 --> 00:00:21,118
+across species directly from dna
+
+8
+00:00:18,640 --> 00:00:22,560
+sequence and i'm using a flavor of deep
+
+9
+00:00:21,118 --> 00:00:24,320
+learning model known as a recurrent
+
+10
+00:00:22,559 --> 00:00:26,000
+convolutional neural network
+
+11
+00:00:24,320 --> 00:00:28,160
+uh but before i get too deeply into that
+
+12
+00:00:26,000 --> 00:00:29,920
+i want to contextualize why we might
+
+13
+00:00:28,160 --> 00:00:32,159
+want to predict within state in the
+
+14
+00:00:29,920 --> 00:00:34,480
+first place
+
+15
+00:00:32,159 --> 00:00:37,039
+so we know that accessible chromatin
+
+16
+00:00:34,479 --> 00:00:39,519
+regulates gene expression and most of
+
+17
+00:00:37,039 --> 00:00:40,878
+the genome most of the time in vivo is
+
+18
+00:00:39,520 --> 00:00:42,960
+tightly wrapped around histones and
+
+19
+00:00:40,878 --> 00:00:45,359
+heterochromatin but transcription
+
+20
+00:00:42,960 --> 00:00:47,039
+factors bind to this uh accessible
+
+21
+00:00:45,359 --> 00:00:49,920
+chromatin this open from it's gone to
+
+22
+00:00:47,039 --> 00:00:51,359
+regular gene expression
+
+23
+00:00:49,920 --> 00:00:53,280
+we also know that not all these
+
+24
+00:00:51,359 --> 00:00:54,960
+regulator regions are close to the genes
+
+25
+00:00:53,280 --> 00:00:56,879
+that they're targeting they can be up to
+
+26
+00:00:54,960 --> 00:00:59,280
+for example in mains up to 200 kilobases
+
+27
+00:00:56,878 --> 00:01:01,198
+away so it's important not just to
+
+28
+00:00:59,280 --> 00:01:02,640
+localize to accessible regions close to
+
+29
+00:01:01,198 --> 00:01:06,000
+genes but also figure out where they are
+
+30
+00:01:02,640 --> 00:01:06,000
+in the proportions of genome
+
+31
+00:01:06,478 --> 00:01:10,879
+and so to put this all together we then
+
+32
+00:01:08,319 --> 00:01:12,239
+hypothesize that variation within these
+
+33
+00:01:10,879 --> 00:01:13,759
+accessible regions will lead the
+
+34
+00:01:12,239 --> 00:01:15,599
+variation of transcription factor
+
+35
+00:01:13,760 --> 00:01:16,880
+binding which will lead to variation in
+
+36
+00:01:15,599 --> 00:01:18,319
+gene expression and then go on to
+
+37
+00:01:16,879 --> 00:01:20,719
+influence all the phenotypes that we
+
+38
+00:01:18,319 --> 00:01:20,719
+care about
+
+39
+00:01:21,519 --> 00:01:25,519
+so as a more concrete example of this
+
+40
+00:01:23,519 --> 00:01:27,759
+there was a study in man across about 40
+
+41
+00:01:25,519 --> 00:01:29,920
+different traits and two populations
+
+42
+00:01:27,759 --> 00:01:31,599
+what they did was they took the
+
+43
+00:01:29,920 --> 00:01:33,200
+partition of the phenotypic variants
+
+44
+00:01:31,599 --> 00:01:35,359
+that's related to genetics and they
+
+45
+00:01:33,200 --> 00:01:36,640
+partitioned that further down to
+
+46
+00:01:35,359 --> 00:01:38,640
+snips that were associated with
+
+47
+00:01:36,640 --> 00:01:40,239
+different annotation classes
+
+48
+00:01:38,640 --> 00:01:42,000
+what we can see here is across both
+
+49
+00:01:40,239 --> 00:01:43,599
+populations about half of the variation
+
+50
+00:01:42,000 --> 00:01:45,438
+is attributable to sensitive encoding
+
+51
+00:01:43,599 --> 00:01:47,039
+regions and we expect this more protein
+
+52
+00:01:45,438 --> 00:01:48,798
+sequence is important
+
+53
+00:01:47,040 --> 00:01:50,399
+but what's also striking is that uh
+
+54
+00:01:48,799 --> 00:01:52,159
+variation within accessible regions is
+
+55
+00:01:50,399 --> 00:01:54,159
+almost as important as variation in
+
+56
+00:01:52,159 --> 00:01:56,159
+coding so this suggests to me that it's
+
+57
+00:01:54,159 --> 00:01:57,759
+also very important to
+
+58
+00:01:56,159 --> 00:01:59,600
+identify where these accessible regions
+
+59
+00:01:57,759 --> 00:02:02,319
+are if you want to include them improve
+
+60
+00:01:59,599 --> 00:02:02,319
+prediction models
+
+61
+00:02:02,560 --> 00:02:06,640
+another important probe in state is dna
+
+62
+00:02:04,478 --> 00:02:08,878
+methylation and so a recent paper in
+
+63
+00:02:06,640 --> 00:02:10,239
+grasses showed that if you look at the
+
+64
+00:02:08,878 --> 00:02:12,479
+chromatin state
+
+65
+00:02:10,239 --> 00:02:13,439
+across different tissues
+
+66
+00:02:12,479 --> 00:02:16,639
+you can see that they're all
+
+67
+00:02:13,439 --> 00:02:18,079
+unmethylated um the accessible regions
+
+68
+00:02:16,639 --> 00:02:19,519
+and so
+
+69
+00:02:18,080 --> 00:02:21,280
+what we also know about
+
+70
+00:02:19,520 --> 00:02:23,040
+dna methylation stayed across
+
+71
+00:02:21,280 --> 00:02:25,439
+developmental times and it's very stable
+
+72
+00:02:23,039 --> 00:02:27,359
+and so the suggestion is that if we can
+
+73
+00:02:25,439 --> 00:02:28,800
+create dna methylation in a specific
+
+74
+00:02:27,360 --> 00:02:31,120
+tissue then that could potentially
+
+75
+00:02:28,800 --> 00:02:34,640
+capture the global potentially excessive
+
+76
+00:02:31,120 --> 00:02:34,640
+space across all tissues
+
+77
+00:02:35,680 --> 00:02:38,560
+so
+
+78
+00:02:36,479 --> 00:02:40,399
+predicting chromatin accessibility and
+
+79
+00:02:38,560 --> 00:02:42,479
+dna manipulation directly from sequence
+
+80
+00:02:40,400 --> 00:02:44,480
+we have a number of different benefits
+
+81
+00:02:42,479 --> 00:02:46,159
+the first one is a sequence based model
+
+82
+00:02:44,479 --> 00:02:48,399
+could be queried to highlight functional
+
+83
+00:02:46,159 --> 00:02:50,959
+sites and ranking yields it could be
+
+84
+00:02:48,400 --> 00:02:53,039
+similar to a verb score and really just
+
+85
+00:02:50,959 --> 00:02:56,239
+serve to narrow down to this top x
+
+86
+00:02:53,039 --> 00:02:57,840
+variance based on effect size
+
+87
+00:02:56,239 --> 00:02:59,920
+the second important point is if we get
+
+88
+00:02:57,840 --> 00:03:01,360
+good cross species models then we'd be
+
+89
+00:02:59,919 --> 00:03:02,639
+able to predict regulatory regions and
+
+90
+00:03:01,360 --> 00:03:03,840
+species that we haven't done these
+
+91
+00:03:02,639 --> 00:03:05,598
+assays and we only have genome
+
+92
+00:03:03,840 --> 00:03:07,120
+assemblies
+
+93
+00:03:05,598 --> 00:03:09,039
+this could save time and money by
+
+94
+00:03:07,120 --> 00:03:11,680
+avoiding is relatively expensive from
+
+95
+00:03:09,039 --> 00:03:11,679
+its masses
+
+96
+00:03:12,719 --> 00:03:16,158
+so we know that these accessible regions
+
+97
+00:03:14,959 --> 00:03:18,080
+are expected to be enriched in
+
+98
+00:03:16,158 --> 00:03:19,598
+transcription factor binding sites and
+
+99
+00:03:18,080 --> 00:03:21,440
+so we might use that as a signal to
+
+100
+00:03:19,598 --> 00:03:22,719
+separately accessible for inaccessible
+
+101
+00:03:21,439 --> 00:03:24,479
+but unfortunately it's a very noisy
+
+102
+00:03:22,719 --> 00:03:26,318
+signal because we observe that there's a
+
+103
+00:03:24,479 --> 00:03:28,079
+lot of spurious matches to transcription
+
+104
+00:03:26,318 --> 00:03:30,318
+fiber binding sites and inaccessible
+
+105
+00:03:28,080 --> 00:03:31,120
+regions that aren't functional
+
+106
+00:03:30,318 --> 00:03:33,199
+so
+
+107
+00:03:31,120 --> 00:03:35,039
+my hypothesis was that maybe it's really
+
+108
+00:03:33,199 --> 00:03:36,958
+the order
+
+109
+00:03:35,039 --> 00:03:38,719
+relative orientation of these motifs
+
+110
+00:03:36,959 --> 00:03:40,640
+that serve as a stronger signal to help
+
+111
+00:03:38,719 --> 00:03:42,239
+differentiate accessible from
+
+112
+00:03:40,639 --> 00:03:45,119
+inaccessible
+
+113
+00:03:42,239 --> 00:03:46,799
+and what we also know is that these
+
+114
+00:03:45,120 --> 00:03:48,799
+transcription factor binding domains are
+
+115
+00:03:46,799 --> 00:03:51,120
+conserved across long evolutionary time
+
+116
+00:03:48,799 --> 00:03:53,200
+periods and so if we find location one
+
+117
+00:03:51,120 --> 00:03:54,719
+species we expect them to be observable
+
+118
+00:03:53,199 --> 00:03:57,598
+also in other species as well for
+
+119
+00:03:54,719 --> 00:03:57,598
+transcription factor
+
+120
+00:03:58,560 --> 00:04:02,239
+and so uh convolutional neural networks
+
+121
+00:04:00,878 --> 00:04:04,959
+have already been shown to be able to
+
+122
+00:04:02,239 --> 00:04:07,438
+predict chromatin state uh from sequence
+
+123
+00:04:04,959 --> 00:04:09,519
+within species at least in humans
+
+124
+00:04:07,438 --> 00:04:10,959
+so we see at the bottom of dc which is a
+
+125
+00:04:09,519 --> 00:04:12,480
+pretty standard convolutional neural
+
+126
+00:04:10,959 --> 00:04:14,719
+network which is one of the first
+
+127
+00:04:12,479 --> 00:04:16,238
+applied to try and predict this problem
+
+128
+00:04:14,719 --> 00:04:18,238
+and it gets a range of word known as
+
+129
+00:04:16,238 --> 00:04:20,719
+aprs you can just think of as a metric
+
+130
+00:04:18,238 --> 00:04:22,239
+for classification performance from zero
+
+131
+00:04:20,720 --> 00:04:23,120
+to point eight
+
+132
+00:04:22,240 --> 00:04:25,040
+and then
+
+133
+00:04:23,120 --> 00:04:26,399
+the year after that dnq was released
+
+134
+00:04:25,040 --> 00:04:27,919
+which is a recurrent convolutional
+
+135
+00:04:26,399 --> 00:04:30,159
+neural network which shows improvement
+
+136
+00:04:27,918 --> 00:04:31,120
+across almost all the test cases
+
+137
+00:04:30,160 --> 00:04:32,639
+um
+
+138
+00:04:31,120 --> 00:04:34,319
+the chromatin states and the tissues
+
+139
+00:04:32,639 --> 00:04:36,400
+that they've tested
+
+140
+00:04:34,319 --> 00:04:37,199
+um and so my question was can we then
+
+141
+00:04:36,399 --> 00:04:38,799
+use
+
+142
+00:04:37,199 --> 00:04:40,879
+dnq to
+
+143
+00:04:38,800 --> 00:04:43,600
+prevent chromatin accessibility across
+
+144
+00:04:40,879 --> 00:04:44,319
+species
+
+145
+00:04:43,600 --> 00:04:45,840
+so
+
+146
+00:04:44,319 --> 00:04:48,240
+the data they used to train the model
+
+147
+00:04:45,839 --> 00:04:49,918
+was ataxia data which basically causes
+
+148
+00:04:48,240 --> 00:04:51,759
+re-pilots underneath the accessible
+
+149
+00:04:49,918 --> 00:04:53,120
+regions of the genome
+
+150
+00:04:51,759 --> 00:04:55,040
+then you can take what's known as a peak
+
+151
+00:04:53,120 --> 00:04:56,399
+color to then binarize this output and
+
+152
+00:04:55,040 --> 00:04:57,919
+get binary
+
+153
+00:04:56,399 --> 00:05:00,319
+accessible sequence and accessible
+
+154
+00:04:57,918 --> 00:05:02,159
+sequence regions
+
+155
+00:05:00,319 --> 00:05:02,879
+and then i take what's known as umrs
+
+156
+00:05:02,160 --> 00:05:04,400
+which
+
+157
+00:05:02,879 --> 00:05:06,399
+you do methylation sequencing on the
+
+158
+00:05:04,399 --> 00:05:07,918
+genome and you get a methylation state
+
+159
+00:05:06,399 --> 00:05:10,000
+for all three contexts of dna
+
+160
+00:05:07,918 --> 00:05:12,000
+methylation you say if it's absent in
+
+161
+00:05:10,000 --> 00:05:13,680
+all three contexts
+
+162
+00:05:12,000 --> 00:05:15,680
+and so then again i have
+
+163
+00:05:13,680 --> 00:05:18,478
+binary on methylated and
+
+164
+00:05:15,680 --> 00:05:18,478
+methylated freedom
+
+165
+00:05:20,079 --> 00:05:24,719
+so in total i have training data from
+
+166
+00:05:21,759 --> 00:05:26,240
+about 12 different species for ataxi
+
+167
+00:05:24,720 --> 00:05:27,600
+spread nice and evenly across the
+
+168
+00:05:26,240 --> 00:05:29,439
+angiosperms
+
+169
+00:05:27,600 --> 00:05:30,720
+for the umr we have about 10 species
+
+170
+00:05:29,439 --> 00:05:32,319
+five of which are from the original
+
+171
+00:05:30,720 --> 00:05:34,400
+grasses paper and the five of which are
+
+172
+00:05:32,319 --> 00:05:36,959
+newly called for this word in the
+
+173
+00:05:34,399 --> 00:05:36,959
+bodybox
+
+174
+00:05:37,600 --> 00:05:41,120
+so just a quick overview of how i'm
+
+175
+00:05:39,120 --> 00:05:43,120
+going to model this i'm taking in 600
+
+176
+00:05:41,120 --> 00:05:44,319
+base pairs of sequence and i'm centering
+
+177
+00:05:43,120 --> 00:05:46,560
+it on the
+
+178
+00:05:44,319 --> 00:05:48,879
+umr the attack cpp and if it's shorter
+
+179
+00:05:46,560 --> 00:05:50,399
+than that i'll extend symmetrically from
+
+180
+00:05:48,879 --> 00:05:51,839
+the midpoint
+
+181
+00:05:50,399 --> 00:05:53,519
+i'll take it the name q which is that
+
+182
+00:05:51,839 --> 00:05:55,839
+recurrent uh convolutional neural
+
+183
+00:05:53,519 --> 00:05:58,719
+network an attempt to predict zero or
+
+184
+00:05:55,839 --> 00:06:02,399
+one inaccessible or accessible
+
+185
+00:05:58,720 --> 00:06:02,400
+methylated or unoperated
+
+186
+00:06:02,959 --> 00:06:06,799
+i'm interested in comparing
+
+187
+00:06:05,120 --> 00:06:09,038
+canvas model we know it works within
+
+188
+00:06:06,800 --> 00:06:10,800
+species in humans but can it do as well
+
+189
+00:06:09,038 --> 00:06:11,839
+across species in species it hasn't
+
+190
+00:06:10,800 --> 00:06:13,199
+observed
+
+191
+00:06:11,839 --> 00:06:15,279
+and for now i'm going to shorthand and
+
+192
+00:06:13,199 --> 00:06:17,520
+call this model a to z for arabidopsis
+
+193
+00:06:15,279 --> 00:06:19,119
+to see
+
+194
+00:06:17,519 --> 00:06:21,439
+so how does training aesi look like or
+
+195
+00:06:19,120 --> 00:06:23,439
+within species small so let's say you
+
+196
+00:06:21,439 --> 00:06:24,560
+want to do it with an arabidopsis scalia
+
+197
+00:06:23,439 --> 00:06:26,560
+so we're going to take a holdout
+
+198
+00:06:24,560 --> 00:06:28,319
+chromosome as a test set we're going to
+
+199
+00:06:26,560 --> 00:06:30,560
+assign these open and closed unlikely
+
+200
+00:06:28,319 --> 00:06:32,080
+method bins on that chromosome to that
+
+201
+00:06:30,560 --> 00:06:33,360
+test set
+
+202
+00:06:32,079 --> 00:06:35,279
+we'll assign the rest of the training
+
+203
+00:06:33,360 --> 00:06:36,560
+set then i'm going to bounce down from
+
+204
+00:06:35,279 --> 00:06:38,000
+my training set to make sure they're
+
+205
+00:06:36,560 --> 00:06:40,000
+equal across open and closed because
+
+206
+00:06:38,000 --> 00:06:42,319
+this is known to improve classification
+
+207
+00:06:40,000 --> 00:06:43,918
+training
+
+208
+00:06:42,319 --> 00:06:45,840
+after that down sampling is done my
+
+209
+00:06:43,918 --> 00:06:48,719
+training set looks like this in terms of
+
+210
+00:06:45,839 --> 00:06:50,799
+magnitude 26 000 observations for
+
+211
+00:06:48,720 --> 00:06:53,840
+species with accessibility and about 36
+
+212
+00:06:50,800 --> 00:06:53,840
+000 for methylation
+
+213
+00:06:54,319 --> 00:06:56,879
+then when you evaluate the model in the
+
+214
+00:06:55,680 --> 00:06:58,879
+test set it looks something like this
+
+215
+00:06:56,879 --> 00:07:00,000
+for accessibility we get an abr about
+
+216
+00:06:58,879 --> 00:07:02,719
+0.6
+
+217
+00:07:00,000 --> 00:07:06,720
+in rapid office transfer methylation a
+
+218
+00:07:02,720 --> 00:07:06,720
+little bit slightly better at 0.65
+
+219
+00:07:07,519 --> 00:07:11,198
+so for cross species we're going to
+
+220
+00:07:08,959 --> 00:07:12,638
+choose a test species of our test set
+
+221
+00:07:11,199 --> 00:07:13,439
+and we're going to take all of those
+
+222
+00:07:12,639 --> 00:07:16,800
+within
+
+223
+00:07:13,439 --> 00:07:18,800
+the test species as our test set
+
+224
+00:07:16,800 --> 00:07:20,560
+and then assign the rest of the species
+
+225
+00:07:18,800 --> 00:07:21,919
+into the training set
+
+226
+00:07:20,560 --> 00:07:23,199
+we're going to dom sample our training
+
+227
+00:07:21,918 --> 00:07:24,318
+set
+
+228
+00:07:23,199 --> 00:07:26,000
+then we're going to train the model and
+
+229
+00:07:24,319 --> 00:07:27,598
+evaluate it and now we get a comparison
+
+230
+00:07:26,000 --> 00:07:30,319
+how well does within species of
+
+231
+00:07:27,598 --> 00:07:31,680
+rhodopsidal do to the across species
+
+232
+00:07:30,319 --> 00:07:34,319
+model that hasn't seen rabidox's
+
+233
+00:07:31,680 --> 00:07:34,319
+sequence at all
+
+234
+00:07:34,959 --> 00:07:38,638
+and so when we look across both of these
+
+235
+00:07:37,120 --> 00:07:40,560
+features you see within its next
+
+236
+00:07:38,639 --> 00:07:42,319
+accessibility it's quite competitive it
+
+237
+00:07:40,560 --> 00:07:44,319
+does almost equally as well within
+
+238
+00:07:42,319 --> 00:07:45,840
+species as it of cross species
+
+239
+00:07:44,319 --> 00:07:49,120
+less than the case for methylation but
+
+240
+00:07:45,839 --> 00:07:49,119
+still very close
+
+241
+00:07:50,000 --> 00:07:54,800
+all right so here are the results across
+
+242
+00:07:52,399 --> 00:07:57,038
+both features and all my species in my
+
+243
+00:07:54,800 --> 00:07:59,199
+uh data set so
+
+244
+00:07:57,038 --> 00:08:01,038
+what's very encouraging is that at least
+
+245
+00:07:59,199 --> 00:08:03,840
+in accessibility we see a very
+
+246
+00:08:01,038 --> 00:08:05,918
+competitive uh comparison between the
+
+247
+00:08:03,839 --> 00:08:08,478
+crossfaces and within species models
+
+248
+00:08:05,918 --> 00:08:10,000
+it's either equal to or greater than the
+
+249
+00:08:08,478 --> 00:08:12,959
+ability of the within species model
+
+250
+00:08:10,000 --> 00:08:14,079
+particularly in grasses with ventilation
+
+251
+00:08:12,959 --> 00:08:16,878
+the case is
+
+252
+00:08:14,079 --> 00:08:18,478
+not as strong but it's still there
+
+253
+00:08:16,879 --> 00:08:20,800
+across all the species that i've seen
+
+254
+00:08:18,478 --> 00:08:20,800
+before
+
+255
+00:08:22,399 --> 00:08:27,839
+another thing i want to look at is
+
+256
+00:08:25,038 --> 00:08:30,079
+whether or not or how large the effect
+
+257
+00:08:27,839 --> 00:08:31,038
+size is but of a certain transcription
+
+258
+00:08:30,079 --> 00:08:32,639
+factor
+
+259
+00:08:31,038 --> 00:08:34,319
+and so the way i can do this is by using
+
+260
+00:08:32,639 --> 00:08:35,519
+a method called global importance
+
+261
+00:08:34,320 --> 00:08:37,200
+analysis
+
+262
+00:08:35,519 --> 00:08:39,278
+the way that works is i'll sample a
+
+263
+00:08:37,200 --> 00:08:41,519
+bunch of random background sequences in
+
+264
+00:08:39,278 --> 00:08:43,200
+my case i did a thousand and i used the
+
+265
+00:08:41,519 --> 00:08:44,799
+base pair frequencies in accessible
+
+266
+00:08:43,200 --> 00:08:46,000
+regions across the genome to sample
+
+267
+00:08:44,799 --> 00:08:48,559
+these
+
+268
+00:08:46,000 --> 00:08:50,958
+and then what i do is i embed a jasper
+
+269
+00:08:48,559 --> 00:08:52,319
+motif which is a database of about 530
+
+270
+00:08:50,958 --> 00:08:53,599
+plant tfs
+
+271
+00:08:52,320 --> 00:08:55,120
+and i just asked the question what's the
+
+272
+00:08:53,600 --> 00:08:57,600
+difference in prediction
+
+273
+00:08:55,120 --> 00:08:59,278
+i do this for all a thousand and i take
+
+274
+00:08:57,600 --> 00:09:00,240
+the pairwise differences and i average
+
+275
+00:08:59,278 --> 00:09:02,240
+that
+
+276
+00:09:00,240 --> 00:09:04,000
+and then i embed the motif at all
+
+277
+00:09:02,240 --> 00:09:06,159
+possible positions then i take the
+
+278
+00:09:04,000 --> 00:09:08,559
+maximum of that and that's my maximum
+
+279
+00:09:06,159 --> 00:09:11,439
+global importance score for a given tf
+
+280
+00:09:08,559 --> 00:09:13,439
+any given species in a given chromatin
+
+281
+00:09:11,440 --> 00:09:15,920
+state accessibility regulation
+
+282
+00:09:13,440 --> 00:09:17,440
+then i can rank these tfs by that value
+
+283
+00:09:15,919 --> 00:09:19,759
+and then a table looks something like on
+
+284
+00:09:17,440 --> 00:09:20,800
+the right so the first thing to notice
+
+285
+00:09:19,759 --> 00:09:22,720
+is that
+
+286
+00:09:20,799 --> 00:09:25,439
+our accessibility between reminiscence
+
+287
+00:09:22,720 --> 00:09:27,759
+and maze we don't see um
+
+288
+00:09:25,440 --> 00:09:29,600
+similar patterns so we do see the tcp
+
+289
+00:09:27,759 --> 00:09:31,278
+location rhetoxis are highly ranked for
+
+290
+00:09:29,600 --> 00:09:34,800
+accessibility
+
+291
+00:09:31,278 --> 00:09:36,240
+we see uh in veins that it's also tcp is
+
+292
+00:09:34,799 --> 00:09:38,479
+highly ranked in the top 10 but it's
+
+293
+00:09:36,240 --> 00:09:39,519
+also means dot type let's use
+
+294
+00:09:38,480 --> 00:09:41,440
+um
+
+295
+00:09:39,519 --> 00:09:43,519
+for the methylation side of things it's
+
+296
+00:09:41,440 --> 00:09:45,760
+it's more consistent you see basically
+
+297
+00:09:43,519 --> 00:09:47,519
+the et2 erf
+
+298
+00:09:45,759 --> 00:09:49,039
+matisse are highly ranked consistently
+
+299
+00:09:47,519 --> 00:09:51,360
+between both species
+
+300
+00:09:49,039 --> 00:09:54,159
+as well as these bvr and bbc
+
+301
+00:09:51,360 --> 00:09:54,159
+family one twos
+
+302
+00:09:54,879 --> 00:09:58,399
+so in conclusion i've shown that these
+
+303
+00:09:56,799 --> 00:09:59,838
+recurrent neural nets can model
+
+304
+00:09:58,399 --> 00:10:01,919
+chromatin accessibility and dna
+
+305
+00:09:59,839 --> 00:10:02,959
+methylation from sequence and across
+
+306
+00:10:01,919 --> 00:10:04,399
+species
+
+307
+00:10:02,958 --> 00:10:06,000
+these across species models are
+
+308
+00:10:04,399 --> 00:10:07,839
+competitive to models trained only
+
+309
+00:10:06,000 --> 00:10:09,600
+within species at least within the mds
+
+310
+00:10:07,839 --> 00:10:11,839
+firms
+
+311
+00:10:09,600 --> 00:10:13,519
+and the tcp family mates we saw are
+
+312
+00:10:11,839 --> 00:10:15,680
+entirely global importance to the across
+
+313
+00:10:13,519 --> 00:10:17,679
+species of accessibility walls
+
+314
+00:10:15,679 --> 00:10:20,239
+but for the methylation models it is ap2
+
+315
+00:10:17,679 --> 00:10:20,239
+and erf
+
+316
+00:10:20,320 --> 00:10:23,680
+and i'm also happy to report that there
+
+317
+00:10:21,759 --> 00:10:25,519
+is a preprint available that shows what
+
+318
+00:10:23,679 --> 00:10:27,120
+i've discussed here and also more on
+
+319
+00:10:25,519 --> 00:10:28,799
+bioarchive
+
+320
+00:10:27,120 --> 00:10:29,919
+um i've uploaded the data in the models
+
+321
+00:10:28,799 --> 00:10:30,958
+to xeno which are linked to the
+
+322
+00:10:29,919 --> 00:10:32,879
+pre-print
+
+323
+00:10:30,958 --> 00:10:34,319
+and there's code on github which
+
+324
+00:10:32,879 --> 00:10:35,519
+includes instructions for making your
+
+325
+00:10:34,320 --> 00:10:38,320
+own progressions in your favorite
+
+326
+00:10:35,519 --> 00:10:40,159
+species if you'd like
+
+327
+00:10:38,320 --> 00:10:42,640
+and finally i'd like to acknowledge uh
+
+328
+00:10:40,159 --> 00:10:44,719
+my community and eric for their guidance
+
+329
+00:10:42,639 --> 00:10:46,720
+on my co-authors for all the workfields
+
+330
+00:10:44,720 --> 00:10:48,560
+in making this paper happen
+
+331
+00:10:46,720 --> 00:10:51,600
+particularly pete he called those extra
+
+332
+00:10:48,559 --> 00:10:52,799
+dipot uh unlimited reasons for him and
+
+333
+00:10:51,600 --> 00:10:54,959
+as well as the with that for all
+
+334
+00:10:52,799 --> 00:10:55,759
+their feedback and the funding sources
+
+335
+00:10:54,958 --> 00:10:58,078
+and
+
+336
+00:10:55,759 --> 00:11:00,958
+high performance computing departments
+
+337
+00:10:58,078 --> 00:11:00,958
+and without it behind
+
+338
+00:11:13,519 --> 00:11:17,759
+so i asked do you have better hp on
+
+339
+00:11:15,839 --> 00:11:19,200
+rhodopsis and rice compared with maize
+
+340
+00:11:17,759 --> 00:11:20,720
+and other species
+
+341
+00:11:19,200 --> 00:11:21,920
+does this mean the genome complexity of
+
+342
+00:11:20,720 --> 00:11:23,759
+playing a role yeah that's a great
+
+343
+00:11:21,919 --> 00:11:25,120
+question i didn't show it here
+
+344
+00:11:23,759 --> 00:11:27,919
+but i do notice
+
+345
+00:11:25,120 --> 00:11:29,519
+um a trend so as genome size increases
+
+346
+00:11:27,919 --> 00:11:31,759
+my performance
+
+347
+00:11:29,519 --> 00:11:34,000
+increases and what this boils down to is
+
+348
+00:11:31,759 --> 00:11:36,480
+that the model um i also show this it
+
+349
+00:11:34,000 --> 00:11:37,759
+makes more false positive mistakes than
+
+350
+00:11:36,480 --> 00:11:38,639
+it does
+
+351
+00:11:37,759 --> 00:11:40,799
+so
+
+352
+00:11:38,639 --> 00:11:43,039
+what i mean by false positive is
+
+353
+00:11:40,799 --> 00:11:44,639
+the model calls it open but the data is
+
+354
+00:11:43,039 --> 00:11:46,639
+labeled as closed
+
+355
+00:11:44,639 --> 00:11:48,639
+and so in these larger genomes that
+
+356
+00:11:46,639 --> 00:11:49,679
+effect is a lot more pronounced and so i
+
+357
+00:11:48,639 --> 00:11:52,799
+get
+
+358
+00:11:49,679 --> 00:11:54,078
+less of an accuracy in those species um
+
+359
+00:11:52,799 --> 00:11:56,879
+there's a number of reasons why i think
+
+360
+00:11:54,078 --> 00:12:00,239
+this is the case uh first
+
+361
+00:11:56,879 --> 00:12:02,000
+the ataxi in the angiosperms was called
+
+362
+00:12:00,240 --> 00:12:03,360
+very conservatively
+
+363
+00:12:02,000 --> 00:12:04,958
+but there's a potential that the model
+
+364
+00:12:03,360 --> 00:12:07,120
+is calling things that are actually open
+
+365
+00:12:04,958 --> 00:12:08,638
+in vivo but just weren't able to be
+
+366
+00:12:07,120 --> 00:12:10,399
+captured in the
+
+367
+00:12:08,639 --> 00:12:12,399
+concerned certainly calling sort of
+
+368
+00:12:10,399 --> 00:12:14,000
+constraints um
+
+369
+00:12:12,399 --> 00:12:15,919
+yeah there's also a number of other
+
+370
+00:12:14,000 --> 00:12:18,240
+reasons but i hope that answers your
+
+371
+00:12:15,919 --> 00:12:18,240
+question
+
+372
+00:12:19,600 --> 00:12:24,639
+um do you have a sense of how additive
+
+373
+00:12:21,759 --> 00:12:28,159
+these motif effects tend to be they
+
+374
+00:12:24,639 --> 00:12:30,159
+should be fairly active um basically
+
+375
+00:12:28,159 --> 00:12:31,759
+it's been shown so what's more important
+
+376
+00:12:30,159 --> 00:12:33,679
+though actually is the businesses
+
+377
+00:12:31,759 --> 00:12:34,958
+haven't shown the additive to an extent
+
+378
+00:12:33,679 --> 00:12:36,479
+that they can
+
+379
+00:12:34,958 --> 00:12:38,879
+sort of interact with each other at the
+
+380
+00:12:36,480 --> 00:12:39,920
+regulatory site but what's more
+
+381
+00:12:38,879 --> 00:12:41,600
+important is that they're trying to be
+
+382
+00:12:39,919 --> 00:12:44,399
+redundant so if you start deleting these
+
+383
+00:12:41,600 --> 00:12:46,480
+motifs it doesn't necessarily mean that
+
+384
+00:12:44,399 --> 00:12:50,278
+expression will be impacted and so
+
+385
+00:12:46,480 --> 00:12:50,278
+that's also a few points
+
+386
+00:12:55,679 --> 00:13:03,319
+this has been a production of cornell
+
+387
+00:12:58,078 --> 00:13:03,319
+university on the web at cornell.edu
+

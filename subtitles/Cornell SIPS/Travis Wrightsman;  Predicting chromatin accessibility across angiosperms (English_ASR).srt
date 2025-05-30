@@ -1,0 +1,1636 @@
+1
+00:00:00,000 --> 00:00:04,399
+this is a production of cornell
+
+2
+00:00:01,760 --> 00:00:04,399
+university
+
+3
+00:00:07,679 --> 00:00:10,879
+and so i'm really interested in how we
+
+4
+00:00:10,080 --> 00:00:13,599
+can aid
+
+5
+00:00:10,880 --> 00:00:14,639
+breeding efforts across a wide range of
+
+6
+00:00:13,599 --> 00:00:17,679
+crop species
+
+7
+00:00:14,638 --> 00:00:20,160
+in order to combat malnutrition
+
+8
+00:00:17,679 --> 00:00:21,839
+and really aid the ability to get a
+
+9
+00:00:20,160 --> 00:00:22,800
+wider variety of food sources in our
+
+10
+00:00:21,839 --> 00:00:24,879
+diets
+
+11
+00:00:22,800 --> 00:00:27,199
+and so one way that we can think of how
+
+12
+00:00:24,879 --> 00:00:29,118
+to aid these breeding efforts is by
+
+13
+00:00:27,199 --> 00:00:30,880
+transferring knowledge and so the
+
+14
+00:00:29,118 --> 00:00:32,719
+question is how can we
+
+15
+00:00:30,879 --> 00:00:34,719
+transfer lessons learned from
+
+16
+00:00:32,719 --> 00:00:37,200
+well-studied species like maize
+
+17
+00:00:34,719 --> 00:00:39,039
+and arabidopsis and apply that knowledge
+
+18
+00:00:37,200 --> 00:00:40,239
+to a wide number of crops and orphan
+
+19
+00:00:39,039 --> 00:00:42,878
+crops
+
+20
+00:00:40,238 --> 00:00:44,558
+and so one of the mechanisms that we can
+
+21
+00:00:42,878 --> 00:00:46,718
+use to facilitate this net
+
+22
+00:00:44,558 --> 00:00:48,399
+uh transfer of knowledge is by thinking
+
+23
+00:00:46,719 --> 00:00:52,399
+of mechanisms that are conserved
+
+24
+00:00:48,399 --> 00:00:53,920
+across long evolutionary time scales
+
+25
+00:00:52,399 --> 00:00:55,840
+and so one of the mechanisms that's
+
+26
+00:00:53,920 --> 00:00:58,320
+conserved across long evolutionary time
+
+27
+00:00:55,840 --> 00:00:59,520
+scales is transcription factor binding
+
+28
+00:00:58,320 --> 00:01:01,520
+and what i'm showing here is a very
+
+29
+00:00:59,520 --> 00:01:02,640
+simplistic tree but what i want you to
+
+30
+00:01:01,520 --> 00:01:04,879
+take away from it is
+
+31
+00:01:02,640 --> 00:01:05,840
+in red is what i'm showing the emergence
+
+32
+00:01:04,879 --> 00:01:08,478
+of
+
+33
+00:01:05,840 --> 00:01:10,000
+new transcription factor families and so
+
+34
+00:01:08,478 --> 00:01:11,599
+there are a number of transcription
+
+35
+00:01:10,000 --> 00:01:14,799
+factor families that predate
+
+36
+00:01:11,599 --> 00:01:15,839
+the origin of plants and also
+
+37
+00:01:14,799 --> 00:01:17,840
+there are a number of plant
+
+38
+00:01:15,840 --> 00:01:19,520
+transcription plant-specific
+
+39
+00:01:17,840 --> 00:01:21,040
+transcription factor families that
+
+40
+00:01:19,519 --> 00:01:23,359
+predate angiosperms
+
+41
+00:01:21,040 --> 00:01:24,960
+and so we expect a lot of their binding
+
+42
+00:01:23,359 --> 00:01:28,640
+motifs to be conserved
+
+43
+00:01:24,959 --> 00:01:28,640
+in many of these plant species
+
+44
+00:01:28,799 --> 00:01:32,560
+and so this is the problem that a former
+
+45
+00:01:30,400 --> 00:01:35,118
+member of the lab catherine mejiaguera
+
+46
+00:01:32,560 --> 00:01:36,960
+explicitly tried to look at and so what
+
+47
+00:01:35,118 --> 00:01:39,599
+she did was she trained
+
+48
+00:01:36,959 --> 00:01:42,000
+some sequence models on to predict
+
+49
+00:01:39,599 --> 00:01:43,118
+whether a tf is bound to a specific dna
+
+50
+00:01:42,000 --> 00:01:45,040
+sequence
+
+51
+00:01:43,118 --> 00:01:46,560
+and when she looks at the motifs that
+
+52
+00:01:45,040 --> 00:01:48,399
+are learned by these models
+
+53
+00:01:46,560 --> 00:01:50,399
+and clusters them they follow the
+
+54
+00:01:48,399 --> 00:01:52,239
+expected phylogeny of the transcription
+
+55
+00:01:50,399 --> 00:01:53,680
+factor families that she sampled
+
+56
+00:01:52,239 --> 00:01:55,438
+so this suggests that the models are
+
+57
+00:01:53,680 --> 00:01:57,280
+really learning uh the biologically
+
+58
+00:01:55,438 --> 00:01:59,599
+relevant motifs
+
+59
+00:01:57,280 --> 00:02:00,320
+and so what she did then was compared
+
+60
+00:01:59,599 --> 00:02:02,798
+the
+
+61
+00:02:00,319 --> 00:02:05,758
+learned motifs against the orthologs in
+
+62
+00:02:02,799 --> 00:02:08,000
+arabidopsis and saw that about 60
+
+63
+00:02:05,759 --> 00:02:11,199
+of these binding motifs are conserved
+
+64
+00:02:08,000 --> 00:02:11,199
+between the two species
+
+65
+00:02:11,919 --> 00:02:15,919
+and so what i wanted to do to follow up
+
+66
+00:02:13,520 --> 00:02:17,640
+on this was take catherine's model
+
+67
+00:02:15,919 --> 00:02:19,598
+architecture and train them in
+
+68
+00:02:17,639 --> 00:02:23,199
+arabidopsis-specific tf
+
+69
+00:02:19,598 --> 00:02:24,560
+and so i used i predicted in arabidopsis
+
+70
+00:02:23,199 --> 00:02:25,359
+and so what i want you to focus on here
+
+71
+00:02:24,560 --> 00:02:27,120
+is the area
+
+72
+00:02:25,360 --> 00:02:28,720
+the relative area under these curves
+
+73
+00:02:27,120 --> 00:02:31,759
+here and so the black line shows the
+
+74
+00:02:28,719 --> 00:02:33,280
+within species model performance
+
+75
+00:02:31,759 --> 00:02:35,518
+then when i take that same model and
+
+76
+00:02:33,280 --> 00:02:36,000
+attempt to predict an orthologous tf and
+
+77
+00:02:35,519 --> 00:02:38,000
+maize
+
+78
+00:02:36,000 --> 00:02:39,598
+i get a reduction in performance but
+
+79
+00:02:38,000 --> 00:02:40,800
+still above the baseline random
+
+80
+00:02:39,598 --> 00:02:44,238
+classifier shown in
+
+81
+00:02:40,800 --> 00:02:44,719
+the gray dashed line the next when i
+
+82
+00:02:44,239 --> 00:02:47,039
+take
+
+83
+00:02:44,719 --> 00:02:48,000
+uh arabidopsis and maize sequence and
+
+84
+00:02:47,039 --> 00:02:50,959
+attempt to predict
+
+85
+00:02:48,000 --> 00:02:52,639
+tf binding in arabidopsis or maze i see
+
+86
+00:02:50,959 --> 00:02:54,479
+that this across species model does
+
+87
+00:02:52,639 --> 00:02:55,119
+almost as well as the within species
+
+88
+00:02:54,479 --> 00:02:56,878
+model
+
+89
+00:02:55,120 --> 00:02:58,959
+despite very different genomic contexts
+
+90
+00:02:56,878 --> 00:03:01,518
+between these two species
+
+91
+00:02:58,959 --> 00:03:03,598
+now unfortunately transcription factor
+
+92
+00:03:01,519 --> 00:03:06,400
+binding especially chip
+
+93
+00:03:03,598 --> 00:03:07,679
+expensive and complicated to assay and
+
+94
+00:03:06,400 --> 00:03:09,360
+so i was wondering if there was an
+
+95
+00:03:07,680 --> 00:03:11,280
+alternative way that we can really get
+
+96
+00:03:09,360 --> 00:03:12,800
+at this transcription factor binding
+
+97
+00:03:11,280 --> 00:03:17,360
+motif question
+
+98
+00:03:12,800 --> 00:03:19,280
+uh in a more easily accessible manner
+
+99
+00:03:17,360 --> 00:03:20,879
+and so we know that open chromatin
+
+100
+00:03:19,280 --> 00:03:21,840
+regions in the genome are really where
+
+101
+00:03:20,878 --> 00:03:24,079
+these functional
+
+102
+00:03:21,840 --> 00:03:25,360
+uh transcription factor binding motifs
+
+103
+00:03:24,080 --> 00:03:26,560
+are concentrated
+
+104
+00:03:25,360 --> 00:03:28,159
+and so here i'm just showing a very
+
+105
+00:03:26,560 --> 00:03:29,920
+simple schematic of an open chromatin
+
+106
+00:03:28,158 --> 00:03:31,359
+region flanked by the closed chromatin
+
+107
+00:03:29,919 --> 00:03:34,079
+wrapped around the histones and
+
+108
+00:03:31,360 --> 00:03:35,440
+various transcription factors bound in
+
+109
+00:03:34,080 --> 00:03:38,480
+different orientations
+
+110
+00:03:35,439 --> 00:03:38,479
+uh in the sequence
+
+111
+00:03:38,560 --> 00:03:42,400
+and so the question becomes can we
+
+112
+00:03:41,519 --> 00:03:44,480
+transfer
+
+113
+00:03:42,400 --> 00:03:46,640
+these open chromatin sequences across
+
+114
+00:03:44,479 --> 00:03:48,560
+angiosperms but also are they
+
+115
+00:03:46,639 --> 00:03:50,639
+even relevant for breeding purposes and
+
+116
+00:03:48,560 --> 00:03:52,719
+that's one of the questions that this
+
+117
+00:03:50,639 --> 00:03:53,679
+2016 study in may is attempted to
+
+118
+00:03:52,719 --> 00:03:55,359
+address
+
+119
+00:03:53,680 --> 00:03:56,799
+and so what they found is that open
+
+120
+00:03:55,360 --> 00:03:58,879
+chromatin regions
+
+121
+00:03:56,799 --> 00:04:00,640
+explain about 40 percent of the
+
+122
+00:03:58,878 --> 00:04:01,598
+phenotypic variants in a number of
+
+123
+00:04:00,639 --> 00:04:04,798
+traits
+
+124
+00:04:01,598 --> 00:04:06,639
+in two maize populations suggesting that
+
+125
+00:04:04,799 --> 00:04:08,239
+really these open chromatin regions do
+
+126
+00:04:06,639 --> 00:04:10,958
+help capture some of the non-genetic
+
+127
+00:04:08,239 --> 00:04:10,959
+functional space
+
+128
+00:04:11,039 --> 00:04:15,199
+and so the next question becomes can we
+
+129
+00:04:13,598 --> 00:04:17,039
+well so i've shown that maize
+
+130
+00:04:15,199 --> 00:04:18,879
+and arabidopsis you can transfer
+
+131
+00:04:17,040 --> 00:04:19,680
+transcription factor binding between the
+
+132
+00:04:18,879 --> 00:04:22,159
+two
+
+133
+00:04:19,680 --> 00:04:23,600
+then can we also transfer chromatin
+
+134
+00:04:22,160 --> 00:04:25,680
+accessibility
+
+135
+00:04:23,600 --> 00:04:29,600
+and then the next question becomes what
+
+136
+00:04:25,680 --> 00:04:30,800
+kind of models would be used to do that
+
+137
+00:04:29,600 --> 00:04:33,120
+and so one of the models that i've
+
+138
+00:04:30,800 --> 00:04:35,439
+already introduced in a previous seminar
+
+139
+00:04:33,120 --> 00:04:37,918
+is convolutional neural networks and so
+
+140
+00:04:35,439 --> 00:04:40,639
+cnns are really well suited for this
+
+141
+00:04:37,918 --> 00:04:40,639
+kind of
+
+142
+00:04:41,040 --> 00:04:44,080
+open chromatin prediction because
+
+143
+00:04:42,800 --> 00:04:47,199
+they're designed to
+
+144
+00:04:44,079 --> 00:04:49,758
+learn the spatial dependencies and
+
+145
+00:04:47,199 --> 00:04:52,000
+relationships between motifs or patterns
+
+146
+00:04:49,759 --> 00:04:53,759
+in a sequence and this is exactly like
+
+147
+00:04:52,000 --> 00:04:55,839
+we'd expect the transcription factor
+
+148
+00:04:53,759 --> 00:04:58,160
+binding motifs to be arranged in the
+
+149
+00:04:55,839 --> 00:05:00,319
+open chromatin like i showed in the left
+
+150
+00:04:58,160 --> 00:05:02,320
+and so another important point here is
+
+151
+00:05:00,319 --> 00:05:05,439
+that not only do these
+
+152
+00:05:02,319 --> 00:05:07,439
+cnns learn the presence and absence
+
+153
+00:05:05,439 --> 00:05:08,478
+relationship between tfs and chromatin
+
+154
+00:05:07,439 --> 00:05:10,719
+accessibility
+
+155
+00:05:08,478 --> 00:05:12,240
+but more importantly the co-presence and
+
+156
+00:05:10,720 --> 00:05:15,039
+the co-presence of maybe
+
+157
+00:05:12,240 --> 00:05:16,319
+larger tf modules because since tf
+
+158
+00:05:15,038 --> 00:05:18,159
+binding sites are so short and
+
+159
+00:05:16,319 --> 00:05:19,599
+degenerate they tend to occur just by
+
+160
+00:05:18,160 --> 00:05:20,880
+chance throughout the genome and it's
+
+161
+00:05:19,600 --> 00:05:22,639
+really critical that
+
+162
+00:05:20,879 --> 00:05:24,800
+we can precisely identify these open
+
+163
+00:05:22,639 --> 00:05:28,319
+chromatin regions by their context
+
+164
+00:05:24,800 --> 00:05:28,319
+and not just single motifs
+
+165
+00:05:29,279 --> 00:05:32,478
+and so how i train this convolutional
+
+166
+00:05:30,879 --> 00:05:35,519
+neural network was using an excellent
+
+167
+00:05:32,478 --> 00:05:36,478
+leaf ataxia data set from 13 angiosperm
+
+168
+00:05:35,519 --> 00:05:38,319
+species
+
+169
+00:05:36,478 --> 00:05:39,599
+that was published last year by bob
+
+170
+00:05:38,319 --> 00:05:40,800
+schmidt's group over at the university
+
+171
+00:05:39,600 --> 00:05:43,120
+of georgia
+
+172
+00:05:40,800 --> 00:05:45,280
+and so what i did was i trained this cnn
+
+173
+00:05:43,120 --> 00:05:48,160
+in 26 different configurations
+
+174
+00:05:45,279 --> 00:05:49,918
+13 of which were within species model
+
+175
+00:05:48,160 --> 00:05:53,039
+where i took one species
+
+176
+00:05:49,918 --> 00:05:56,719
+split the genomic regions into
+
+177
+00:05:53,038 --> 00:05:59,120
+training and test sets and then
+
+178
+00:05:56,720 --> 00:06:01,280
+evaluated the model in the test set and
+
+179
+00:05:59,120 --> 00:06:01,918
+then i also trained 13 across species
+
+180
+00:06:01,279 --> 00:06:03,758
+models
+
+181
+00:06:01,918 --> 00:06:05,038
+where i took one test species of the
+
+182
+00:06:03,759 --> 00:06:06,720
+angiosperms
+
+183
+00:06:05,038 --> 00:06:08,240
+trained in the genomic regions of the
+
+184
+00:06:06,720 --> 00:06:09,520
+other 12
+
+185
+00:06:08,240 --> 00:06:12,079
+and tried to predict chromatin
+
+186
+00:06:09,519 --> 00:06:13,758
+accessibility in the 13th species
+
+187
+00:06:12,079 --> 00:06:16,159
+so just a very quick overview of how the
+
+188
+00:06:13,759 --> 00:06:18,080
+data looks the atex c
+
+189
+00:06:16,160 --> 00:06:19,520
+causes basically a reed pile up in these
+
+190
+00:06:18,079 --> 00:06:20,879
+open chromatin regions
+
+191
+00:06:19,519 --> 00:06:23,038
+and you can run an algorithm that's
+
+192
+00:06:20,879 --> 00:06:23,759
+known as a peak collar to binarize that
+
+193
+00:06:23,038 --> 00:06:26,800
+output
+
+194
+00:06:23,759 --> 00:06:27,680
+and denoise the open chromatin region
+
+195
+00:06:26,800 --> 00:06:28,960
+predictions
+
+196
+00:06:27,680 --> 00:06:30,800
+and then what you can do is then
+
+197
+00:06:28,959 --> 00:06:32,318
+randomly sample a group of closed
+
+198
+00:06:30,800 --> 00:06:36,000
+chromatin regions from
+
+199
+00:06:32,319 --> 00:06:37,600
+the genome so very quickly an example
+
+200
+00:06:36,000 --> 00:06:40,000
+for a specific sequence or
+
+201
+00:06:37,600 --> 00:06:41,439
+specific species let's say arabidopsis
+
+202
+00:06:40,000 --> 00:06:42,879
+the within species model very
+
+203
+00:06:41,439 --> 00:06:44,240
+straightforward you just split the
+
+204
+00:06:42,879 --> 00:06:45,759
+genomic regions and
+
+205
+00:06:44,240 --> 00:06:48,079
+train in the training set and then test
+
+206
+00:06:45,759 --> 00:06:49,598
+in your test set
+
+207
+00:06:48,079 --> 00:06:51,359
+and then the cross species model is
+
+208
+00:06:49,598 --> 00:06:52,399
+let's say we're testing an arabidopsis
+
+209
+00:06:51,360 --> 00:06:54,560
+we would then train
+
+210
+00:06:52,399 --> 00:06:58,159
+in the other 12 species and attempt to
+
+211
+00:06:54,560 --> 00:06:59,918
+predict in arabidopsis like this
+
+212
+00:06:58,160 --> 00:07:01,360
+and so here is what the example
+
+213
+00:06:59,918 --> 00:07:03,038
+performance would look like for the
+
+214
+00:07:01,360 --> 00:07:04,400
+arabidopsis within species in a
+
+215
+00:07:03,038 --> 00:07:06,478
+cross-species model
+
+216
+00:07:04,399 --> 00:07:09,198
+we see the performances on the x-axis
+
+217
+00:07:06,478 --> 00:07:09,199
+from zero to one
+
+218
+00:07:09,360 --> 00:07:15,199
+and so when i do the results across all
+
+219
+00:07:11,759 --> 00:07:16,879
+the angiosperm species i've sampled
+
+220
+00:07:15,199 --> 00:07:18,720
+we see that despite there being a
+
+221
+00:07:16,879 --> 00:07:20,079
+variability in performance across the
+
+222
+00:07:18,720 --> 00:07:23,199
+species they're all doing
+
+223
+00:07:20,079 --> 00:07:25,198
+much much better than a random baseline
+
+224
+00:07:23,199 --> 00:07:27,360
+classifier shown in the gray dash or the
+
+225
+00:07:25,199 --> 00:07:30,080
+black dash line
+
+226
+00:07:27,360 --> 00:07:31,360
+and then when we show the cross species
+
+227
+00:07:30,079 --> 00:07:33,279
+model performance
+
+228
+00:07:31,360 --> 00:07:36,000
+pretty much in every species we see that
+
+229
+00:07:33,279 --> 00:07:38,000
+the cross species model performance
+
+230
+00:07:36,000 --> 00:07:39,120
+is very equivalent to the within species
+
+231
+00:07:38,000 --> 00:07:41,680
+model performance
+
+232
+00:07:39,120 --> 00:07:43,918
+and what this suggests is that without
+
+233
+00:07:41,680 --> 00:07:45,519
+seeing any open chromatin data from a
+
+234
+00:07:43,918 --> 00:07:46,159
+given species we are still able to
+
+235
+00:07:45,519 --> 00:07:48,719
+utilize
+
+236
+00:07:46,160 --> 00:07:50,639
+angiosperm open chromatin data to
+
+237
+00:07:48,720 --> 00:07:52,240
+accurately and precisely predict
+
+238
+00:07:50,639 --> 00:07:54,800
+the open chromatin in that unobserved
+
+239
+00:07:52,240 --> 00:07:54,800
+species
+
+240
+00:07:55,439 --> 00:07:58,478
+and so to dive a little deeper into
+
+241
+00:07:56,800 --> 00:08:00,560
+these results i want to show you two
+
+242
+00:07:58,478 --> 00:08:01,839
+precision recall plots from my cross
+
+243
+00:08:00,560 --> 00:08:03,360
+species models
+
+244
+00:08:01,839 --> 00:08:04,878
+so on the left we see arabidopsis
+
+245
+00:08:03,360 --> 00:08:06,080
+daliana as the test set and what i want
+
+246
+00:08:04,879 --> 00:08:09,680
+you to take away from this
+
+247
+00:08:06,079 --> 00:08:11,038
+is that essentially about 55 of my open
+
+248
+00:08:09,680 --> 00:08:13,038
+chromatin regions
+
+249
+00:08:11,038 --> 00:08:15,199
+in arabidopsis the model is able to
+
+250
+00:08:13,038 --> 00:08:17,120
+precisely predict them before it starts
+
+251
+00:08:15,199 --> 00:08:19,439
+to begin making mistakes
+
+252
+00:08:17,120 --> 00:08:21,439
+and so also in asparagus which the model
+
+253
+00:08:19,439 --> 00:08:23,918
+does relatively
+
+254
+00:08:21,439 --> 00:08:25,918
+worse on we're still able to predict
+
+255
+00:08:23,918 --> 00:08:27,038
+about 20 percent of the open chromatin
+
+256
+00:08:25,918 --> 00:08:28,799
+regions as open
+
+257
+00:08:27,038 --> 00:08:31,120
+precisely before we start to make
+
+258
+00:08:28,800 --> 00:08:32,080
+mistakes and so what this suggests is
+
+259
+00:08:31,120 --> 00:08:34,320
+that there's a
+
+260
+00:08:32,080 --> 00:08:35,200
+seems to be a subset of open chromatin
+
+261
+00:08:34,320 --> 00:08:37,039
+regions
+
+262
+00:08:35,200 --> 00:08:38,560
+that we're really precisely able to
+
+263
+00:08:37,038 --> 00:08:39,519
+identify and these might be a good
+
+264
+00:08:38,559 --> 00:08:40,639
+starting point
+
+265
+00:08:39,519 --> 00:08:45,039
+while we're still trying to figure out
+
+266
+00:08:40,639 --> 00:08:46,799
+how to predict the the other percentages
+
+267
+00:08:45,039 --> 00:08:48,559
+and one other interesting phenomenon
+
+268
+00:08:46,799 --> 00:08:49,439
+that we see in asparagus and a few other
+
+269
+00:08:48,559 --> 00:08:52,079
+species
+
+270
+00:08:49,440 --> 00:08:53,760
+is this rapid drop-off in precision so
+
+271
+00:08:52,080 --> 00:08:54,959
+essentially what this says is there is a
+
+272
+00:08:53,759 --> 00:08:56,639
+subset of open
+
+273
+00:08:54,958 --> 00:08:59,039
+uh closed chromatin regions in the
+
+274
+00:08:56,639 --> 00:08:59,759
+a-taxi that the model is highly
+
+275
+00:08:59,039 --> 00:09:02,319
+confidently
+
+276
+00:08:59,759 --> 00:09:03,039
+predicting as open which suggests to me
+
+277
+00:09:02,320 --> 00:09:05,839
+there may be
+
+278
+00:09:03,039 --> 00:09:06,480
+some uh maybe due to lower coverage and
+
+279
+00:09:05,839 --> 00:09:09,120
+the a-tac
+
+280
+00:09:06,480 --> 00:09:10,399
+seeks some truly open regions that were
+
+281
+00:09:09,120 --> 00:09:11,519
+marked as closed
+
+282
+00:09:10,399 --> 00:09:14,000
+and so this really gets at the whole
+
+283
+00:09:11,519 --> 00:09:17,839
+idea that your model can only be
+
+284
+00:09:14,000 --> 00:09:20,080
+evaluated as good as your test set is
+
+285
+00:09:17,839 --> 00:09:21,760
+and so in summary um shown a bit that
+
+286
+00:09:20,080 --> 00:09:23,600
+transcription factor binding can be
+
+287
+00:09:21,759 --> 00:09:25,120
+predicted across angiosperms
+
+288
+00:09:23,600 --> 00:09:26,720
+but is unfortunately expensive and
+
+289
+00:09:25,120 --> 00:09:28,879
+complicated the assay
+
+290
+00:09:26,720 --> 00:09:30,399
+and so the open chromatin also contains
+
+291
+00:09:28,879 --> 00:09:30,958
+transcription factor binding sites and
+
+292
+00:09:30,399 --> 00:09:34,080
+therefore
+
+293
+00:09:30,958 --> 00:09:37,039
+overlap our non-genetic functional sites
+
+294
+00:09:34,080 --> 00:09:38,560
+and so therefore cnns can predict uh i
+
+295
+00:09:37,039 --> 00:09:40,319
+show that cnns can predict chromatin
+
+296
+00:09:38,559 --> 00:09:42,239
+accessibility across long evolutionary
+
+297
+00:09:40,320 --> 00:09:43,440
+distances with high accuracy
+
+298
+00:09:42,240 --> 00:09:45,839
+and a couple more things i want to
+
+299
+00:09:43,440 --> 00:09:46,959
+follow up on is how well do these leaf
+
+300
+00:09:45,839 --> 00:09:49,120
+train models do
+
+301
+00:09:46,958 --> 00:09:51,039
+in other tissues as well as are these
+
+302
+00:09:49,120 --> 00:09:52,799
+predicted regions enriched in geowas
+
+303
+00:09:51,039 --> 00:09:54,879
+hits and other signals of regulatory
+
+304
+00:09:52,799 --> 00:09:56,719
+regions
+
+305
+00:09:54,879 --> 00:09:58,958
+and so i'd like to finally acknowledge
+
+306
+00:09:56,720 --> 00:10:00,720
+my committee at buckler amy williams and
+
+307
+00:09:58,958 --> 00:10:02,319
+eric richards for their guidance
+
+308
+00:10:00,720 --> 00:10:04,000
+catherine mejiaguera who has been like
+
+309
+00:10:02,320 --> 00:10:05,920
+an unofficial fourth committee member
+
+310
+00:10:04,000 --> 00:10:07,839
+and has really been who i'm basing a lot
+
+311
+00:10:05,919 --> 00:10:09,278
+of this work on them off of
+
+312
+00:10:07,839 --> 00:10:10,959
+as well as the buckler lab for their
+
+313
+00:10:09,278 --> 00:10:13,200
+excellent discussions on this project
+
+314
+00:10:10,958 --> 00:10:16,838
+and of course my funding sources
+
+315
+00:10:13,200 --> 00:10:19,839
+i'd be happy to take any questions thank
+
+316
+00:10:16,839 --> 00:10:19,839
+you
+
+317
+00:10:20,399 --> 00:10:24,639
+thank you so much for that talk travis
+
+318
+00:10:22,559 --> 00:10:27,679
+uh lots of clap em emojis
+
+319
+00:10:24,639 --> 00:10:30,480
+um if anybody has any questions they can
+
+320
+00:10:27,679 --> 00:10:31,919
+either add them oh i think mike gore has
+
+321
+00:10:30,480 --> 00:10:33,680
+some questions if you can see them in
+
+322
+00:10:31,919 --> 00:10:37,039
+the chat
+
+323
+00:10:33,679 --> 00:10:38,879
+sure let me see is there a need to
+
+324
+00:10:37,039 --> 00:10:40,639
+control for evolutionary relatedness
+
+325
+00:10:38,879 --> 00:10:41,759
+from protecting across species or is
+
+326
+00:10:40,639 --> 00:10:43,679
+that what is leveraged
+
+327
+00:10:41,759 --> 00:10:45,278
+yeah that's a great question mike and uh
+
+328
+00:10:43,679 --> 00:10:46,078
+we talked about this in the lab a bit
+
+329
+00:10:45,278 --> 00:10:47,679
+and
+
+330
+00:10:46,078 --> 00:10:49,359
+i'm really leaning towards the second
+
+331
+00:10:47,679 --> 00:10:51,278
+part of that question
+
+332
+00:10:49,360 --> 00:10:52,639
+there is revolutionary relationship
+
+333
+00:10:51,278 --> 00:10:55,200
+between uh these
+
+334
+00:10:52,639 --> 00:10:56,559
+open chromatin regions um and it's
+
+335
+00:10:55,200 --> 00:10:58,000
+really a tough call because that's
+
+336
+00:10:56,559 --> 00:10:58,879
+exactly what we're trying to expect to
+
+337
+00:10:58,000 --> 00:11:01,120
+leverage
+
+338
+00:10:58,879 --> 00:11:03,838
+so the question becomes how can we make
+
+339
+00:11:01,120 --> 00:11:06,000
+sure these models are learning
+
+340
+00:11:03,839 --> 00:11:06,959
+for example transcription factor binding
+
+341
+00:11:06,000 --> 00:11:09,919
+rather than
+
+342
+00:11:06,958 --> 00:11:11,599
+a non-informative but evolutionary
+
+343
+00:11:09,919 --> 00:11:13,919
+related sequence
+
+344
+00:11:11,600 --> 00:11:15,680
+and then two are the shared open
+
+345
+00:11:13,919 --> 00:11:17,278
+chromatin regions overlapping with
+
+346
+00:11:15,679 --> 00:11:18,799
+conserved non-coding regions
+
+347
+00:11:17,278 --> 00:11:20,559
+i haven't looked at this yet but that's
+
+348
+00:11:18,799 --> 00:11:22,879
+a question i definitely want to follow
+
+349
+00:11:20,559 --> 00:11:22,879
+up on
+
+350
+00:11:25,440 --> 00:11:30,079
+um travis just to follow on what what
+
+351
+00:11:28,639 --> 00:11:31,838
+mike was asking
+
+352
+00:11:30,078 --> 00:11:34,159
+have you have you tried schemes like
+
+353
+00:11:31,839 --> 00:11:35,839
+where you if you're predicting a monocot
+
+354
+00:11:34,159 --> 00:11:36,799
+you just use the monocots you don't
+
+355
+00:11:35,839 --> 00:11:41,040
+bother with the
+
+356
+00:11:36,799 --> 00:11:43,039
+dicots yeah and and how does that impact
+
+357
+00:11:41,039 --> 00:11:44,719
+performance yeah so that's an
+
+358
+00:11:43,039 --> 00:11:46,000
+interesting question because i did do
+
+359
+00:11:44,720 --> 00:11:49,360
+that initially i haven't
+
+360
+00:11:46,000 --> 00:11:51,519
+i haven't shown the results here and
+
+361
+00:11:49,360 --> 00:11:52,879
+it does show essentially what you expect
+
+362
+00:11:51,519 --> 00:11:55,039
+in that
+
+363
+00:11:52,879 --> 00:11:57,200
+for most of the species performance
+
+364
+00:11:55,039 --> 00:11:59,519
+decreases a bit
+
+365
+00:11:57,200 --> 00:12:00,480
+slightly when you go from a monocot
+
+366
+00:11:59,519 --> 00:12:03,440
+based model
+
+367
+00:12:00,480 --> 00:12:04,399
+to an angiosperm based model there's
+
+368
+00:12:03,440 --> 00:12:06,880
+some very
+
+369
+00:12:04,399 --> 00:12:08,879
+strange signal for some species like we
+
+370
+00:12:06,879 --> 00:12:10,879
+saw poplar got very
+
+371
+00:12:08,879 --> 00:12:12,399
+was very good with a die-cut model but
+
+372
+00:12:10,879 --> 00:12:14,240
+when you bring it out to the angiosperms
+
+373
+00:12:12,399 --> 00:12:17,440
+it does poorly so
+
+374
+00:12:14,240 --> 00:12:18,959
+i'd say generally performance lowers a
+
+375
+00:12:17,440 --> 00:12:24,480
+little bit but not
+
+376
+00:12:18,958 --> 00:12:26,559
+significantly or not very much
+
+377
+00:12:24,480 --> 00:12:28,639
+we have another question how to explain
+
+378
+00:12:26,559 --> 00:12:29,679
+the lower performance in maize compared
+
+379
+00:12:28,639 --> 00:12:31,440
+to rice
+
+380
+00:12:29,679 --> 00:12:32,799
+yeah i think i'll answer that question
+
+381
+00:12:31,440 --> 00:12:34,800
+by just sort of explaining
+
+382
+00:12:32,799 --> 00:12:36,078
+why i think there's some variability
+
+383
+00:12:34,799 --> 00:12:38,879
+between species and
+
+384
+00:12:36,078 --> 00:12:41,120
+ed sort of gets at that point a bit in
+
+385
+00:12:38,879 --> 00:12:43,919
+that there is an uneven
+
+386
+00:12:41,120 --> 00:12:44,959
+uh depth of data between these species
+
+387
+00:12:43,919 --> 00:12:46,399
+and so
+
+388
+00:12:44,958 --> 00:12:48,638
+not only is the data quality a bit
+
+389
+00:12:46,399 --> 00:12:50,159
+variable between species and we can
+
+390
+00:12:48,639 --> 00:12:52,000
+see that by looking at the within
+
+391
+00:12:50,159 --> 00:12:55,360
+species models are also performing
+
+392
+00:12:52,000 --> 00:12:57,759
+poorly so a combination of uneven
+
+393
+00:12:55,360 --> 00:12:58,959
+data quality across the species maybe
+
+394
+00:12:57,759 --> 00:13:02,319
+some assembly
+
+395
+00:12:58,958 --> 00:13:03,439
+issues some possible tissue mismatching
+
+396
+00:13:02,320 --> 00:13:06,879
+so there are a number of things that
+
+397
+00:13:03,440 --> 00:13:10,000
+could go into that
+
+398
+00:13:06,879 --> 00:13:11,519
+i think that wraps up our time but we
+
+399
+00:13:10,000 --> 00:13:13,600
+can give a final
+
+400
+00:13:11,519 --> 00:13:14,879
+round of applause to all of our speakers
+
+401
+00:13:13,600 --> 00:13:17,040
+today uh
+
+402
+00:13:14,879 --> 00:13:18,720
+thank you all for attending make sure to
+
+403
+00:13:17,039 --> 00:13:22,240
+fill out that
+
+404
+00:13:18,720 --> 00:13:26,480
+feedback form and tune back in
+
+405
+00:13:22,240 --> 00:13:28,720
+friday at 2 30 for four more great talks
+
+406
+00:13:26,480 --> 00:13:28,720
+thanks
+
+407
+00:13:31,919 --> 00:13:35,360
+this has been a production of cornell
+
+408
+00:13:34,240 --> 00:13:41,919
+university
+
+409
+00:13:35,360 --> 00:13:41,919
+on the web at cornell.edu
+

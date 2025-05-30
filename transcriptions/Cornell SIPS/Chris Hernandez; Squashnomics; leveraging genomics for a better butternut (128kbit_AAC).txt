@@ -1,0 +1,378 @@
+[SPEAKER_00]: This is a production of Cornell
+University.
+[SPEAKER_00]: All right.
+[SPEAKER_00]: So like Sarah said, my name is Chris
+Hernandez, fourth year student with
+[SPEAKER_00]: Michael Mazurek.
+[SPEAKER_00]: And if you can't tell from the title,
+I'm going to talk with you today about how
+[SPEAKER_00]: we're trying to leverage genomics in our
+squash breeding program.
+[SPEAKER_00]: I could have also easily called it gained
+from three cycles of genomic selection in
+[SPEAKER_00]: squash, but that seemed less exciting.
+[SPEAKER_00]: So I find that most people aren't super
+well-appointed in squash.
+[SPEAKER_00]: So I figured I'd include some fun facts in
+the front here.
+[SPEAKER_00]: So squash, when we talk about squash,
+we're usually talking about three
+[SPEAKER_00]: cultivated species and then three species
+that we eat and that we work with.
+[SPEAKER_00]: And those are cucurita pepo, which is your
+acorn, delicata, pumpkin, jack-o'-lantern
+[SPEAKER_00]: type of squash, cucurita moshata,
+which is like your butternut.
+[SPEAKER_00]: And we have the Hubbard group and others
+in Maxima.
+[SPEAKER_00]: And so these are the three main squash
+that we work with.
+[SPEAKER_00]: These are examples of winter squash.
+[SPEAKER_00]: So there are two kinds of squash,
+winter squash and summer squash.
+[SPEAKER_00]: Winter squash, you eat mature.
+[SPEAKER_00]: Summer squash, you eat immature like
+zucchini.
+[SPEAKER_00]: And so I'm mostly going to be talking or
+exclusively going to be talking about
+[SPEAKER_00]: winter squash.
+[SPEAKER_00]: And so yeah, squash has recently been
+sequenced, all three genomes.
+[SPEAKER_00]: It's got like a super small Arabidopsis
+size genome, but like 20 pairs of
+[SPEAKER_00]: chromosomes, which is kind of cool.
+[SPEAKER_00]: Other fact that I want to point out is
+squash is already like overflowing with
+[SPEAKER_00]: nutrition.
+[SPEAKER_00]: If you eat a half cup of squash,
+you get 110% of what you need.
+[SPEAKER_00]: Or a vitamin A that you need for the day.
+[SPEAKER_00]: So when we talk about breeding,
+like improving squash fruit quality,
+[SPEAKER_00]: we're mostly talking about making it more
+appealing to consumers so that they'll eat
+[SPEAKER_00]: something that is nutritious for them.
+[SPEAKER_00]: So I just said squash fruit quality.
+[SPEAKER_00]: When I talk about fruit quality in squash,
+I'm talking about color, sugar,
+[SPEAKER_00]: and starch.
+[SPEAKER_00]: So color is mostly dictated by carotenoid
+content in squash fruit, which you can
+[SPEAKER_00]: measure with HPLC or with colorimeter.
+[SPEAKER_00]: Sugar affects sweetness of the squash
+fruit.
+[SPEAKER_00]: We use a refractometer to measure that.
+[SPEAKER_00]: And then starch affects texture.
+[SPEAKER_00]: And we measure that with dry matter,
+which is a highly correlated trait for
+[SPEAKER_00]: that.
+[SPEAKER_00]: And so our main project goals,
+as I mentioned, are to use genomics and
+[SPEAKER_00]: integrate that into our breeding program.
+[SPEAKER_00]: So today I'm mostly going to be focusing
+on how we use genomic recurrent selection
+[SPEAKER_00]: in our program.
+[SPEAKER_00]: I'm also doing work.
+[SPEAKER_00]: It's more aimed at understanding squash
+fruit quality, whether it's components,
+[SPEAKER_00]: how are they inherited.
+[SPEAKER_00]: I probably won't have time to get to that
+today.
+[SPEAKER_00]: So mostly about genomic selection stuff.
+[SPEAKER_00]: So like I said, we're talking about how
+we've implemented genomic selection in our
+[SPEAKER_00]: program.
+[SPEAKER_00]: So before I get into genomic selection,
+I want to talk briefly about what the
+[SPEAKER_00]: phenotypic selection cycle looks like.
+[SPEAKER_00]: So it's a year-long cycle.
+[SPEAKER_00]: We have one cycle of selection that
+happens after we phenotype.
+[SPEAKER_00]: So we have to grow the squash in the
+field.
+[SPEAKER_00]: We get the fruit.
+[SPEAKER_00]: We bring those fruit inside.
+[SPEAKER_00]: These are like 50-pound bags of squash
+that we hand carry, load into the truck,
+[SPEAKER_00]: and bring inside.
+[SPEAKER_00]: So I like to say that squash breeding is a
+full-body workout.
+[SPEAKER_00]: So we phenotype it.
+[SPEAKER_00]: At the fruit stage, it means that we only
+select on the female parent.
+[SPEAKER_00]: And you only have one cycle of selection.
+[SPEAKER_00]: It's very labor-intensive.
+[SPEAKER_00]: But the main problem with squash is that
+it's the hummer of the plant world.
+[SPEAKER_00]: So squash consumes tons of resources and
+takes up tons of space.
+[SPEAKER_00]: So the squash field here might look like
+it has a lot of plants, but that's only
+[SPEAKER_00]: 200 plants.
+[SPEAKER_00]: So we can't have super-huge populations.
+[SPEAKER_00]: Also, in the greenhouse, same problem.
+[SPEAKER_00]: This is like 20 plants here, maybe.
+[SPEAKER_00]: And then in storage, this is one
+experiment that we need to process before
+[SPEAKER_00]: it rots.
+[SPEAKER_00]: So space and time constraints are all
+issues that we really have to try to deal
+[SPEAKER_00]: with in squash breeding, more so,
+I think, than a lot of other crops.
+[SPEAKER_00]: So we're trying to implement genomic
+selection to try to get around some of
+[SPEAKER_00]: these problems.
+[SPEAKER_00]: So we're using genomic selection to
+genotyping at this stage before we plant.
+[SPEAKER_00]: And then we can get the data back and make
+selections before flowering.
+[SPEAKER_00]: So we're controlling both parents.
+[SPEAKER_00]: And then also, we're doing another cycle
+of selection in the greenhouse.
+[SPEAKER_00]: So we can get two cycles of selection per
+year and control both parents.
+[SPEAKER_00]: And so that's how.
+[SPEAKER_00]: And also, at some point, we update the
+model because we get phenotypes as we're
+[SPEAKER_00]: going.
+[SPEAKER_00]: So this is how we're trying to use genomic
+selection.
+[SPEAKER_00]: Overview, we're doing it.
+[SPEAKER_00]: We did it in a bi-parental because it's
+the easiest population to do it in.
+[SPEAKER_00]: And it's already enough of a challenge for
+us to try to integrate this.
+[SPEAKER_00]: We're doing a squash program, so we
+figured we'd just keep it simple.
+[SPEAKER_00]: We're doing recurrent selection scheme
+with 200 plants.
+[SPEAKER_00]: We're selecting the top 10% for bricks,
+dry matter, and color values.
+[SPEAKER_00]: And once again, keep it simple,
+keep it G-blup, doing multiple traits.
+[SPEAKER_00]: So we use the multiple trait model where
+we're basically selecting on one value at
+[SPEAKER_00]: the end, which is just equal weighting of
+all three of these fruit quality trait
+[SPEAKER_00]: values that we get from the model.
+[SPEAKER_00]: So that's how we're doing selection.
+[SPEAKER_00]: So F2 between honey nut and bugle.
+[SPEAKER_00]: We chose those because we've used them in
+our program a lot, and we've derived some
+[SPEAKER_00]: very nice F6 lines from them.
+[SPEAKER_00]: So we know there's potential.
+[SPEAKER_00]: So that's why it's a perfect test for our
+genomic selection pilot study.
+[SPEAKER_00]: Phenotypic data.
+[SPEAKER_00]: The main takeaway here is that all of our
+traits are normally distributed,
+[SPEAKER_00]: quantitative traits.
+[SPEAKER_00]: They're correlated in a variable
+direction.
+[SPEAKER_00]: So we should be able to get high bricks,
+high dry matter, and then high color
+[SPEAKER_00]: value, which is what we want.
+[SPEAKER_00]: So this is sort of what we're looking for.
+[SPEAKER_00]: We're looking for here some very elegant
+genetic parameter figures for you.
+[SPEAKER_00]: Bricks, dry matter, have similar
+moderately kind of low heritabilities.
+[SPEAKER_00]: Color value has slightly higher
+heritability.
+[SPEAKER_00]: And all the traits, as we would expect,
+are genetically correlated.
+[SPEAKER_00]: They're also genetically correlated.
+[SPEAKER_00]: This is just from the multi-trait model.
+[SPEAKER_00]: You can get that.
+[SPEAKER_00]: This wonderful GWAS slide here is supposed
+to show you that all these traits don't
+[SPEAKER_00]: really have any major effect, low size.
+[SPEAKER_00]: So it makes sense to use genomic selection
+in this situation.
+[SPEAKER_00]: So then I have some cross-validation
+results.
+[SPEAKER_00]: So we have the base population,
+and then another population that we used
+[SPEAKER_00]: to retrain the models.
+[SPEAKER_00]: You can see we have moderately strong
+cross-validation values.
+[SPEAKER_00]: So we can't do super well.
+[SPEAKER_00]: We can do OK, especially when we retrain
+the model.
+[SPEAKER_00]: We had some better data.
+[SPEAKER_00]: I think we were able to do a better job.
+[SPEAKER_00]: So we actually did selection, too.
+[SPEAKER_00]: So we have cross-validation accuracies,
+and we set up this scheme.
+[SPEAKER_00]: So I did one round of petrivic selection
+followed by three rounds of genomic
+[SPEAKER_00]: selection.
+[SPEAKER_00]: And then this year, I grew out from
+remnant seed populations at three field
+[SPEAKER_00]: sites, randomized complete block design,
+look at gain from selection.
+[SPEAKER_00]: So these are the results.
+[SPEAKER_00]: So here we have three.
+[SPEAKER_00]: So we have three populations, block two,
+three locations, sorry, block two,
+[SPEAKER_00]: escythica, and organic.
+[SPEAKER_00]: And we have base population up through the
+final selected population.
+[SPEAKER_00]: So space population after petrivic
+selection, after an intermediate genomic
+[SPEAKER_00]: selection round, and then the final round
+of selection.
+[SPEAKER_00]: And so you can see in most of the
+locations, it looks like we enriched for
+[SPEAKER_00]: individuals with higher index values.
+[SPEAKER_00]: So we don't have this population in this
+environment.
+[SPEAKER_00]: But for the most part, it looks like
+genomic selection worked for us.
+[SPEAKER_00]: We were able to improve and enrich for
+higher index value individuals.
+[SPEAKER_00]: I don't have a picture of it, and I don't
+think in the slides.
+[SPEAKER_00]: But also, if you look at each of the
+traits of BRICS, trimatter, and A value,
+[SPEAKER_00]: you also see that each of the traits also
+increased.
+[SPEAKER_00]: So we increased total index, but also we
+increased all the traits slightly.
+[SPEAKER_00]: So we wanted to see there.
+[SPEAKER_00]: So further work.
+[SPEAKER_00]: I mean, obviously, there's a lot we can
+still do with this data set.
+[SPEAKER_00]: So we're looking at correlated gain from
+selection of other traits.
+[SPEAKER_00]: So we measured length, width, weight,
+yield traits.
+[SPEAKER_00]: And so we can look at what happened to
+these traits as we selected for fruit poly
+[SPEAKER_00]: traits.
+[SPEAKER_00]: Looking at realized heritability,
+gain per cycle.
+[SPEAKER_00]: You can already kind of see that.
+[SPEAKER_00]: So yeah, we're going to be doing all that
+stuff, looking at and reading that sort of
+[SPEAKER_00]: thing.
+[SPEAKER_00]: Also, I saved pedigrees from this stuff.
+[SPEAKER_00]: So we can look at how well using just
+pedigree information we've done for us,
+[SPEAKER_00]: and use that to compare with genomic
+selection.
+[SPEAKER_00]: And then squash reading 3.0, which I say
+is bigger and dirtier.
+[SPEAKER_00]: So bigger, I mean larger population size
+and dirtier, just cheaper, lower quality
+[SPEAKER_00]: DNA extractions, doing more plants.
+[SPEAKER_00]: So I think we're kind of looking,
+because we have sort of lower prediction
+[SPEAKER_00]: accuracies, doing more of a genomic
+enrichment situation, where we're
+[SPEAKER_00]: screening a couple hundred plants as
+squash seedlings, throwing out like the
+[SPEAKER_00]: bottom 50% and proceeding from there.
+[SPEAKER_00]: And then also looking at some of these
+post storage quality traits that we have
+[SPEAKER_00]: in squash.
+[SPEAKER_00]: So this is an example of hollow neck,
+which is not desirable.
+[SPEAKER_00]: And obviously, the phenotype just gets
+squashed for months in special storage
+[SPEAKER_00]: conditions.
+[SPEAKER_00]: So we could develop prediction models for
+this trait.
+[SPEAKER_00]: That would be super cool.
+[SPEAKER_00]: So this is sort of where we're looking to
+go.
+[SPEAKER_00]: I guess I have a little extra time.
+[SPEAKER_00]: Sorry.
+[SPEAKER_00]: I have a minute.
+[SPEAKER_00]: All right.
+[SPEAKER_00]: So really quickly, just so you know,
+we're also interested in understanding
+[SPEAKER_00]: fruit quality in Q.
+[SPEAKER_00]: curvita.
+[SPEAKER_00]: And we're interested in understanding how
+this varies within species and between
+[SPEAKER_00]: species.
+[SPEAKER_00]: Also, just look at how we can potentially
+bring together different species to get
+[SPEAKER_00]: what we want in squash quality.
+[SPEAKER_00]: And so the experiment, I'll just tell you
+really quick, is we have data from
+[SPEAKER_00]: different time points in squash
+development, at different cultivars.
+[SPEAKER_00]: We did a bunch of quality trait
+measurements, look at profiles.
+[SPEAKER_00]: And we're combining that with gene
+expression profiles to try to understand
+[SPEAKER_00]: better what's driving squash food quality.
+[SPEAKER_00]: Within species and between species.
+[SPEAKER_00]: So that, I'd like to acknowledge my
+advisor, Michael Mazurek, my committee
+[SPEAKER_00]: member, Lee Lee, who's here right now.
+[SPEAKER_00]: Jessica Rakowski, who's in the
+Philippines.
+[SPEAKER_00]: Also the core Mazurek lab, our wonderful
+lab tech, field tech, and the rest of the
+[SPEAKER_00]: Mazurek lab group.
+[SPEAKER_00]: And also various other individuals who've
+helped me along the way.
+[SPEAKER_00]: And our funding source for this grant from
+the USDA NIFA grant.
+[SPEAKER_00]: And I guess with that, I'll take any
+questions that you have.
+[SPEAKER_00]: So the question is, how often do we
+retrain the model?
+[SPEAKER_00]: And one individual used to do that.
+[SPEAKER_00]: So I had asterisks in here somewhere,
+but they disappeared.
+[SPEAKER_00]: But here, we train the model initially.
+[SPEAKER_00]: And then this is a greenhouse generation.
+[SPEAKER_00]: And then this is a field generation.
+[SPEAKER_00]: So we retrained at this point.
+[SPEAKER_00]: And then did these two, this last cycle
+using the retrained model.
+[SPEAKER_00]: So this is, we retrained at this point
+here.
+[SPEAKER_00]: And actually, I ended up just using the C2
+population as a nutrient population.
+[SPEAKER_00]: I didn't try to combine the two
+populations, because there was some,
+[SPEAKER_00]: the data quality was just a lot higher in
+this population.
+[SPEAKER_00]: Specifically, the GBS libraries were a lot
+better.
+[SPEAKER_00]: We got higher quality genotypes.
+[SPEAKER_00]: So I just decided to go with that.
+[SPEAKER_00]: So that's what we ended up using.
+[SPEAKER_00]: Mark.
+[SPEAKER_00]: I haven't looked at that yet.
+[SPEAKER_00]: So I mean, look at the raw data.
+[SPEAKER_00]: But there's some outliers and stuff in
+there.
+[SPEAKER_00]: So it's kind of hard to tell whether we've
+reduced variance.
+[SPEAKER_00]: And I'm sure there's probably been some in
+green, though.
+[SPEAKER_00]: That also might be part of the reason,
+in addition to higher quality,
+[SPEAKER_00]: why we have maybe slightly better
+prediction accuracies.
+[SPEAKER_00]: We still have variation, but where they're
+more related.
+[SPEAKER_00]: So that could be a reason that I have
+higher accuracies here.
+[SPEAKER_00]: But yeah, I haven't looked at that yet.
+[SPEAKER_00]: But we definitely will look at that.
+[SPEAKER_00]: All right.
+[SPEAKER_00]: Thanks.
+[SPEAKER_00]: All right.
+[SPEAKER_00]: Let's thank Chris one more time.
+[SPEAKER_00]: This has been a production of Cornell
+University on the web at Cornell.edu.
+[SPEAKER_00]: Thank you.
+Thank you.
+Thank you.

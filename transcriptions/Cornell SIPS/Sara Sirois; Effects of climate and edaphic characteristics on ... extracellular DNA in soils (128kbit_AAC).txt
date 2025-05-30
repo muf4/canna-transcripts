@@ -1,0 +1,659 @@
+[SPEAKER_01]: This is a production of Cornell
+University.
+Wonderful.
+[SPEAKER_00]: All right.
+[SPEAKER_00]: So I would like to thank you all for being
+here today.
+[SPEAKER_00]: I'm going to tell you a little bit about
+the research I've been doing looking at
+[SPEAKER_00]: the stabilization and degradation dynamics
+of extracellular DNA in soils and
+[SPEAKER_00]: specifically how those dynamics are
+impacted by agricultural management and
+[SPEAKER_00]: habitat type.
+[SPEAKER_00]: So the first question you might have is
+what is extracellular DNA?
+[SPEAKER_00]: So extracellular or eDNA is any DNA strand
+that's not contained within a cell.
+[SPEAKER_00]: And in soils, as in other natural
+environments, eDNA arises when the DNA
+[SPEAKER_00]: inside of a living cell is either actively
+secreted or, more commonly, a cell will
+[SPEAKER_00]: die, it will lyse, and its cellular
+contents will spill out into the
+[SPEAKER_00]: environment.
+[SPEAKER_00]: And in soils, eDNA is important for a
+variety of reasons.
+[SPEAKER_00]: Namely, it's an important source of
+nitrogen and phosphorus, so it's important
+[SPEAKER_00]: for nutrient cycling, it's an important
+structural and functional component of
+[SPEAKER_00]: bacterial biofilms, and it's a key player
+in horizontal gene transfer.
+[SPEAKER_00]: But for the purposes of this talk,
+we're really concerned about the potential
+[SPEAKER_00]: that eDNA presents to introduce bias to
+our estimates of microbial community
+[SPEAKER_00]: structure.
+[SPEAKER_00]: So this question has really risen to the
+forefront in recent years due to the
+[SPEAKER_00]: increasing accessibility of high
+throughput sequencing.
+[SPEAKER_00]: And for those of you who aren't familiar
+with this method, the basic workflow is
+[SPEAKER_00]: that you take a sample, you can extract
+the total DNA from that sample,
+[SPEAKER_00]: which will include both intracellular and
+extracellular DNA.
+[SPEAKER_00]: You can amplify a gene of interest and
+then directly sequence those amplicots.
+[SPEAKER_00]: And under the sequencing conditions that
+we use in the Buckley lab, we expect
+[SPEAKER_00]: between tens and hundreds of thousands of
+sequences per sample.
+[SPEAKER_00]: So that's a lot of information,
+right?
+[SPEAKER_00]: And as we analyze that information,
+one of the key assumptions that we're
+[SPEAKER_00]: making is that every DNA sequence that we
+see derives directly from a living cell.
+[SPEAKER_00]: So the idea is the cell is present in the
+soil, it's alive and well, you kill it
+[SPEAKER_00]: when you extract its DNA, and then you can
+draw direct comparisons between your
+[SPEAKER_00]: sequences and the living cells in the
+soil.
+[SPEAKER_00]: But eDNA violates that key assumption,
+namely because the cell from which eDNA
+[SPEAKER_00]: came might have been dead for a long time,
+but that eDNA remains stable and
+[SPEAKER_00]: sequenceable in the soil.
+[SPEAKER_00]: And you can't tell those apart,
+right?
+[SPEAKER_00]: So the areas of eDNA research where
+there's general consensus is that eDNA can
+[SPEAKER_00]: be stabilized on soil minerals,
+specifically clays and to some extent,
+[SPEAKER_00]: sands, and also on soil organic matter,
+that eDNA can persist over long periods of
+[SPEAKER_00]: time, and that it can make up a really
+large portion of the soil DNA pool,
+[SPEAKER_00]: generally on the order of like 20% to 80%.
+[SPEAKER_00]: So it's not insubstantial.
+[SPEAKER_00]: Where we lack consensus, however,
+is when we start to ask questions about
+[SPEAKER_00]: the extent to which eDNA is introducing
+bias to our estimates of microbial
+[SPEAKER_00]: community.
+[SPEAKER_00]: So there was a paper that came out last
+year where they took a reagent that
+[SPEAKER_00]: targets specifically extracellular DNA,
+they treated soils with that reagent to
+[SPEAKER_00]: remove eDNA, and then compared the
+sequences from the treated soils to the
+[SPEAKER_00]: untreated soils.
+[SPEAKER_00]: And what they found is that there was a
+significant eDNA-driven bias in terms of
+[SPEAKER_00]: bacterial richness, diversity,
+and community structure.
+[SPEAKER_00]: So for microbial ecologists, this is big
+news, and it's bad news.
+[SPEAKER_00]: Because if that's always true,
+it means that the work that we've been
+[SPEAKER_00]: doing for years has this unaccounted for
+source of bias.
+[SPEAKER_00]: Bad.
+[SPEAKER_00]: But there was another paper that came out
+last year also where they used a similar
+[SPEAKER_00]: technique, but a different reagent,
+so comparing treated and untreated soils,
+[SPEAKER_00]: and they found that regardless of the
+size, of the eDNA pool, so even when it
+[SPEAKER_00]: was like 80%, there was still no
+significant eDNA-driven bias.
+[SPEAKER_00]: So what's a researcher to think,
+right?
+[SPEAKER_00]: We have these two really well-respected
+labs telling us completely contradictory
+[SPEAKER_00]: information.
+[SPEAKER_00]: And so as a way to wade into this
+conversation, I wanted to test the
+[SPEAKER_00]: hypothesis that the degradation dynamics
+of eDNA, which will influence eDNA-driven
+[SPEAKER_00]: bias, vary across gradients of both
+agricultural management and also habitat
+[SPEAKER_00]: type.
+[SPEAKER_00]: And so to start with, I needed soils from
+a management gradient.
+[SPEAKER_00]: And so I chose to use samples from a
+long-term corn trial that's been running
+[SPEAKER_00]: in cheesy New York, which is way up in the
+North Country.
+[SPEAKER_00]: And this is a multi-decade study where
+they've been applying factorial
+[SPEAKER_00]: combinations of intensive tillage,
+no-till, corn biomass removal,
+[SPEAKER_00]: and corn biomass return.
+[SPEAKER_00]: So this has resulted in a really clear
+management gradient that's accompanied by
+[SPEAKER_00]: a really clear soil or grain matter
+gradient.
+[SPEAKER_00]: And then for my habitat gradient,
+I chose to sample more locally.
+[SPEAKER_00]: This is Monkey Run right here in Ithaca,
+New York.
+[SPEAKER_00]: And I collected samples from agriculture,
+meadow, and forest soils at that site.
+[SPEAKER_00]: And so as I was testing this hypothesis,
+I was also bearing in mind two sort of
+[SPEAKER_00]: follow-up questions.
+[SPEAKER_00]: The first of those is, what is controlling
+the degradation and stabilization dynamics
+[SPEAKER_00]: of eDNA in soils?
+[SPEAKER_00]: And the second of those was, over what
+time scale do we expect any eDNA-driven
+[SPEAKER_00]: bias to be apparent?
+[SPEAKER_00]: So to try and answer these questions,
+I performed a series of laboratory
+[SPEAKER_00]: microcosm experiments where I put some
+soil into a microcosm, and then I added a
+[SPEAKER_00]: synthetic eDNA marker.
+[SPEAKER_00]: So this is real DNA made of nucleotides,
+but it was synthesized in a way that I
+[SPEAKER_00]: designed.
+[SPEAKER_00]: So this marker contains two different sets
+of primer sites that allow me to do two
+[SPEAKER_00]: different types of analysis.
+[SPEAKER_00]: So the first of those, shown here in
+green, here and here, well, white at
+[SPEAKER_00]: least, is a high-throughput sequencing
+appropriate primer site.
+[SPEAKER_00]: So it will be targeted by universal
+bacterial sequencing primers.
+[SPEAKER_00]: The other primer site that I built into
+this synthetic eDNA were primer sites that
+[SPEAKER_00]: are specific only to this gene.
+[SPEAKER_00]: These are primers that we don't expect to
+amplify anything else in our soils.
+[SPEAKER_00]: So I add my soil in my eDNA.
+[SPEAKER_00]: I allow my microcosms to incubate,
+and I periodically collect subsamples of
+[SPEAKER_00]: those.
+[SPEAKER_00]: And then from each of those subsamples,
+I collect total DNA, or extract total DNA.
+[SPEAKER_00]: And again, this total DNA will contain
+both any DNA that was natively present in
+[SPEAKER_00]: the soil, but it will also contain however
+much of my synthetic eDNA gene is still
+[SPEAKER_00]: present.
+[SPEAKER_00]: So I have my total DNA, and then taking
+advantage of those two different primer
+[SPEAKER_00]: sites, I use two different types of
+analysis on the same DNA.
+[SPEAKER_00]: The first of those was an eDNA
+marker-specific quantitative PCR.
+[SPEAKER_00]: So this is a technique that will measure
+only the synthetic eDNA gene.
+[SPEAKER_00]: It's not telling me anything about the
+rest of the community.
+[SPEAKER_00]: The second technique that I use is
+high-throughput sequencing, the technique
+[SPEAKER_00]: I was describing earlier.
+[SPEAKER_00]: And this technique is going to tell me not
+only about how much of the synthetic eDNA
+[SPEAKER_00]: is present, but also about what that looks
+like in the context of the larger
+[SPEAKER_00]: bacterial community from the soils.
+[SPEAKER_00]: Let me show you some results.
+[SPEAKER_00]: So starting off with, these are the qPCR
+data from the management gradient.
+[SPEAKER_00]: And we have here on the y-axis the amount
+of eDNA that remains in the sample.
+[SPEAKER_00]: And then as we move across the x-axis,
+we're moving through time.
+[SPEAKER_00]: The first thing we note is that between
+time 0 and day 7, so that's a one-week
+[SPEAKER_00]: interval.
+[SPEAKER_00]: And I want to point out that this is a log
+scale on the y-axis.
+[SPEAKER_00]: So what we're seeing in that first week is
+a two to three order of magnitude decline
+[SPEAKER_00]: in the amount of eDNA marker that's still
+present, followed by relative stability
+[SPEAKER_00]: across the rest of the experiment.
+[SPEAKER_00]: So to better understand these data,
+I fit them using a nonlinear least squares
+[SPEAKER_00]: modeling approach with a Weibel type
+mortality curve.
+[SPEAKER_00]: So this type of curve has three
+parameters.
+[SPEAKER_00]: It has a starting value parameter,
+so that's sort of up here.
+[SPEAKER_00]: It has a decay rate parameter,
+which is sort of going to be in here,
+[SPEAKER_00]: and then an asymptote parameter.
+[SPEAKER_00]: And the nature of the model allows us to
+compare those parameters between
+[SPEAKER_00]: treatments.
+[SPEAKER_00]: And I want to stop here and say that the
+starting quantity parameter is the same
+[SPEAKER_00]: across all of our data and all of our data
+sets, which is by design.
+[SPEAKER_00]: So we feel good that that was the result
+we got, right?
+[SPEAKER_00]: We wanted to start with the same amount.
+[SPEAKER_00]: So where we're really looking for
+differences is in the decay rate term and
+[SPEAKER_00]: in the asymptote, or the stabilization
+term.
+[SPEAKER_00]: And what we see for our management data is
+that, first off, we were not able to
+[SPEAKER_00]: detect any differences in the decay rate
+terms between treatments.
+[SPEAKER_00]: And I want to sort of drive home at this
+point that that two to three order of
+[SPEAKER_00]: magnitude decline in eDNA in the first
+week means that there was a lot of
+[SPEAKER_00]: degradation that was happening that we
+didn't capture sufficiently.
+[SPEAKER_00]: So it's really coarse resolution.
+[SPEAKER_00]: And what that means is that there might be
+differences in decay rate that we just
+[SPEAKER_00]: aren't able to see because of the courses
+of our time.
+[SPEAKER_00]: But what we are able to see is a
+difference in stabilization between
+[SPEAKER_00]: treatments.
+[SPEAKER_00]: So we found that stabilization was
+significantly different and greater under
+[SPEAKER_00]: no-till management than it was in our
+tilled samples.
+[SPEAKER_00]: So no-till management is resulting in
+greater eDNA stabilization.
+[SPEAKER_00]: So the next bit of data I want to show you
+is the high-throughput sequencing data
+[SPEAKER_00]: from the same management gradient,
+right?
+[SPEAKER_00]: So these are the same tubes of DNA
+analyzed in a different way.
+[SPEAKER_00]: And you probably noticed that this looks a
+little bit different.
+[SPEAKER_00]: We're still looking at the amount of eDNA
+that's present on the y-axis.
+[SPEAKER_00]: And we're moving through time on the
+x-axis.
+[SPEAKER_00]: We're still seeing a two to three order of
+magnitude decline in that first seven
+[SPEAKER_00]: days.
+[SPEAKER_00]: So that's all consistent.
+[SPEAKER_00]: But what's really different about the
+sequencing data versus the qPCR data is
+[SPEAKER_00]: that with the qPCR, we were able to detect
+the eDNA marker in every sample at every
+[SPEAKER_00]: time.
+[SPEAKER_00]: Whereas with the high-throughput
+sequencing, at time, well, seven days
+[SPEAKER_00]: here, we start to lose the ability to see
+that eDNA in some of our samples.
+[SPEAKER_00]: So all these samples that are sitting
+right down here on the x-axis,
+[SPEAKER_00]: those are samples where we were not able
+to detect eDNA.
+[SPEAKER_00]: And the samples where we were able to
+detect the eDNA up here are inching really
+[SPEAKER_00]: close to this horizontal line,
+which represents our estimated limit of
+[SPEAKER_00]: detection for high-throughput sequencing.
+[SPEAKER_00]: So essentially, high-throughput sequencing
+is a less sensitive method.
+[SPEAKER_00]: And so even early on, we start to lose the
+ability to detect that eDNA.
+[SPEAKER_00]: And as a result of this lack of
+sensitivity, we weren't able to detect any
+[SPEAKER_00]: differences between treatments at any
+time, which is in sharp contrast to the
+[SPEAKER_00]: qPCR data where we were able to detect
+differences between the tilled and the
+[SPEAKER_00]: no-till soils.
+[SPEAKER_00]: So I want to sort of pause and really
+drive home that point about differences in
+[SPEAKER_00]: sensitivity, namely that qPCR is a much
+more sensitive method of detection than
+[SPEAKER_00]: high-throughput sequencing.
+[SPEAKER_00]: And that difference in sensitivity is
+going to impact our ability to see
+[SPEAKER_00]: eDNA-driven bias.
+[SPEAKER_00]: So method sensitivity is going to matter.
+[SPEAKER_00]: So I'm going to bring us back into the
+data now.
+[SPEAKER_00]: I'm going to show you the habitat gradient
+data plotted and modeled in the same way
+[SPEAKER_00]: as the management data.
+[SPEAKER_00]: So again, we're seeing a two to three
+order of magnitude decline in the first
+[SPEAKER_00]: week, followed by relative stability.
+[SPEAKER_00]: We're still using that same modeling.
+[SPEAKER_00]: We're looking for differences.
+[SPEAKER_00]: In this case, we were able to detect a
+difference between decay rates,
+[SPEAKER_00]: namely in that the decay rate of the
+forest soils was significantly different
+[SPEAKER_00]: from and slower than the decay rate of the
+meadow soils.
+[SPEAKER_00]: So forest has slower degradation than
+meadow soils initially.
+[SPEAKER_00]: But by the end of the experiment,
+it's the meadow soil that has
+[SPEAKER_00]: significantly more or significantly
+different and more stabilization than
+[SPEAKER_00]: either the agriculture or the forest soil.
+[SPEAKER_00]: So there's this decoupling between initial
+degradation and stabilization and
+[SPEAKER_00]: long-term degradation and stabilization.
+[SPEAKER_00]: And then when we look at the sequencing
+data for those same tubes, we're seeing
+[SPEAKER_00]: very similar things to what we saw with
+the management data.
+[SPEAKER_00]: We're still able to detect the eDNA
+standard at time zero in all of our
+[SPEAKER_00]: samples.
+[SPEAKER_00]: We're still seeing a two to three order of
+magnitude decline in that first week.
+[SPEAKER_00]: And we're starting to lose the ability to
+detect the eDNA in those samples with our
+[SPEAKER_00]: sequencing method.
+[SPEAKER_00]: And again, we couldn't detect any
+differences between treatments with our
+[SPEAKER_00]: sequencing data.
+[SPEAKER_00]: So pause there.
+[SPEAKER_00]: Bring it back to this hypothesis that I
+was testing.
+[SPEAKER_00]: I was testing whether or not eDNA
+degradation dynamics would vary across
+[SPEAKER_00]: gradients of habitat and management.
+[SPEAKER_00]: So I demonstrated that those do both
+impact eDNA degradation dynamics.
+[SPEAKER_00]: So both tillage being part of management
+and habitat influence stabilization in the
+[SPEAKER_00]: long-term.
+[SPEAKER_00]: So the follow-up question that I was
+asking was what's controlling eDNA
+[SPEAKER_00]: degradation and stabilization dynamics?
+[SPEAKER_00]: And so to try and get at this question,
+because remember, in the management
+[SPEAKER_00]: gradient, I saw there was a really strong
+soil organic matter gradient that went
+[SPEAKER_00]: along with that management gradient.
+[SPEAKER_00]: And so soil organic matter seems like a
+really good place to start when looking
+[SPEAKER_00]: for the underlying controls.
+[SPEAKER_00]: So I looked for a correlation between soil
+organic matter that I'm using percent
+[SPEAKER_00]: carbon as a proxy for with the amount of
+eDNA that was still present at one week.
+[SPEAKER_00]: So this is after that initial precipitous
+decline.
+[SPEAKER_00]: And what we see is that there is a strong
+positive correlation between soil carbon
+[SPEAKER_00]: and initial eDNA stabilization.
+[SPEAKER_00]: And that this correlation is strongly
+significant.
+[SPEAKER_00]: So that's cool, right?
+[SPEAKER_00]: That tells us that soil organic matter is
+playing a role here.
+[SPEAKER_00]: But interestingly, when we look not at
+initial stabilization, but rather at
+[SPEAKER_00]: longer-term stabilization, so by the end
+of the experiment, that correlation
+[SPEAKER_00]: completely disappears.
+[SPEAKER_00]: So this, again, drives home that point
+that there is a decoupling between initial
+[SPEAKER_00]: degradation and stabilization and
+long-term degradation and stabilization.
+[SPEAKER_00]: So the second follow-up question that I
+was asking was over what?
+[SPEAKER_00]: Oh, I'm sorry.
+[SPEAKER_00]: The first question was what's controlling
+those degradation dynamics?
+[SPEAKER_00]: And what that decoupling is telling us is
+that we're pretty agreed that DNA is
+[SPEAKER_00]: entering the soil as eDNA.
+[SPEAKER_00]: Something happens, and then some portion
+of that eDNA that enters the soil might
+[SPEAKER_00]: ultimately be stabilized.
+[SPEAKER_00]: But we have a lot of questions about how
+much of the eDNA gets stabilized,
+[SPEAKER_00]: over what time scales, by what methods.
+[SPEAKER_00]: And so our results suggest that when eDNA
+enters the soil, one of the controls
+[SPEAKER_00]: between entrance and stabilization is soil
+carbon, right?
+[SPEAKER_00]: So it's having an impact on what kind of
+proceeds on this pathway towards
+[SPEAKER_00]: stabilization.
+[SPEAKER_00]: But our results also tell us that soil
+carbon isn't the only thing controlling
+[SPEAKER_00]: this, right?
+[SPEAKER_00]: There are some other processes or set of
+processes that are controlling whether or
+[SPEAKER_00]: not the eDNA that enters the system is
+ultimately stabilized.
+[SPEAKER_00]: So now, that second question I was asking
+is over what time scales do we expect
+[SPEAKER_00]: eDNA-driven bias to be apparent?
+[SPEAKER_00]: So this figure is for illustrative
+purposes only.
+[SPEAKER_00]: But what we're showing is that if we take
+the QPCR data, where we were able to
+[SPEAKER_00]: detect the eDNA in all samples at all
+times, and we overlay that sensitive
+[SPEAKER_00]: method data with the limit of detection of
+our less sensitive high-throughput
+[SPEAKER_00]: sequencing, which is a more common
+technique and in many ways more
+[SPEAKER_00]: informative, what we're looking for is the
+time that it takes after eDNA addition for
+[SPEAKER_00]: the amount of eDNA to drop below that
+high-throughput sequencing limit of
+[SPEAKER_00]: detection, which you can sort of think of
+as a veil line, right?
+[SPEAKER_00]: The DNA might still be present,
+but once it's below that limit of
+[SPEAKER_00]: detection, you can't see it anymore.
+[SPEAKER_00]: So it's not impacting your results.
+[SPEAKER_00]: And this figure shows us that with a
+treatment that has really slow
+[SPEAKER_00]: degradation, the time that it takes
+between when the eDNA enters the system
+[SPEAKER_00]: and when it drops below that veil is going
+to be longer than in a really fast
+[SPEAKER_00]: degradation treatment, where that time
+will be shorter.
+[SPEAKER_00]: And this is going to have practical
+implications for sampling, right?
+[SPEAKER_00]: If you are doing time core sampling and
+you are concerned about will my results be
+[SPEAKER_00]: biased by eDNA, these are going to be
+important numbers for you to think about.
+[SPEAKER_00]: So let me show you the numbers that I got.
+[SPEAKER_00]: And I want to point out at this point that
+I did this sort of analysis for the
+[SPEAKER_00]: habitat data as well as for the management
+data down here, but that I also looked at
+[SPEAKER_00]: the impact of moisture and temperature
+which were not data that I presented
+[SPEAKER_00]: today.
+[SPEAKER_00]: But across all of these different
+treatments, we're seeing a pretty wide
+[SPEAKER_00]: range of, you can think of it as sort of a
+delay between when the eDNA is added and
+[SPEAKER_00]: when it disappears.
+[SPEAKER_00]: The shortest time that we saw was a day
+and a half, and that was in a very high
+[SPEAKER_00]: moisture soil.
+[SPEAKER_00]: So that DNA was pretty much gone
+immediately.
+[SPEAKER_00]: As compared to a really low temperature
+treatment, four degrees, where we're
+[SPEAKER_00]: seeing that that eDNA sticks around above
+the limit of detection for nearly two
+[SPEAKER_00]: weeks, right?
+[SPEAKER_00]: So that's a big difference.
+[SPEAKER_00]: This is telling us that differential eDNA
+degradation has an impact on how much bias
+[SPEAKER_00]: we're seeing in our results.
+[SPEAKER_00]: So the directions that I think this
+project should take in the future are
+[SPEAKER_00]: first off to really explore that
+relationship between short and long term
+[SPEAKER_00]: eDNA degradation, right?
+[SPEAKER_00]: We saw this decoupling between initial and
+long term.
+[SPEAKER_00]: And as part of that, it's going to be
+important for us to understand why we
+[SPEAKER_00]: could see that tillage and habitat
+impacted long term stabilization,
+[SPEAKER_00]: but that soil organic carbon, which seemed
+like a really likely culprit, wasn't
+[SPEAKER_00]: really driving that all the way through
+the end.
+[SPEAKER_00]: So what other processes are involved here,
+right?
+[SPEAKER_00]: Is it aggregation?
+[SPEAKER_00]: Is it urology?
+[SPEAKER_00]: Is it some other process or set of
+processes?
+[SPEAKER_00]: And then in addition to answering those
+questions, it's going to be important for
+[SPEAKER_00]: us to gain better resolution in that first
+week after eDNA addition.
+[SPEAKER_00]: So turns out that sampling after one week
+is a little too coarse, right?
+[SPEAKER_00]: We missed a lot of information.
+[SPEAKER_00]: So we want to address that, right?
+[SPEAKER_00]: Go back and look at what that data tells
+us.
+[SPEAKER_00]: And then finally, the experiments that I
+did are useful, right?
+[SPEAKER_00]: We learned from them.
+[SPEAKER_00]: We feel good about that.
+[SPEAKER_00]: But it's also really important to note
+that they have their limitations.
+[SPEAKER_00]: And one of the main limitations of this
+type of experiment is that I'm adding a
+[SPEAKER_00]: whole bunch of eDNA at once, and then I'm
+watching that same eDNA marker degrade,
+[SPEAKER_00]: right, and go away.
+[SPEAKER_00]: But in natural systems, we see constant
+turnover of DNA, of microbial biomass.
+[SPEAKER_00]: And so that one time addition isn't really
+representative of what's happening in
+[SPEAKER_00]: reality.
+[SPEAKER_00]: So how do repeated eDNA additions,
+which are more representative of what
+[SPEAKER_00]: happens in reality, how do they impact
+degradation and stabilization of eDNA?
+[SPEAKER_00]: All right.
+[SPEAKER_00]: So to tie this all together, right,
+we had this controversy.
+[SPEAKER_00]: How did we add to that?
+[SPEAKER_00]: And so the things that I can say,
+you know, we might not be able to say
+[SPEAKER_00]: whether or not we have, like, maybe all is
+lost, maybe all isn't lost.
+[SPEAKER_00]: But what we can say conclusively is that
+it's highly likely that gradients of
+[SPEAKER_00]: management and habitat and moisture and
+temperature will result in differential
+[SPEAKER_00]: eDNA-driven bias in our results,
+right?
+[SPEAKER_00]: So these gradients matter.
+[SPEAKER_00]: Additionally, we're going to need to use
+caution when we sample with really fine
+[SPEAKER_00]: time point resolution because of that sort
+of delay.
+[SPEAKER_00]: And so I'd like to end by acknowledging my
+committee, Dan and Joe, who have both been
+[SPEAKER_00]: instrumental in helping me organize and
+execute these experiments.
+[SPEAKER_00]: I'd like to thank the whole Buckley lab
+for your humor and your patience.
+[SPEAKER_00]: And a specific shout out to Rolly and Sam
+for their help with sequence analysis.
+[SPEAKER_00]: I'd like to thank Dennis at the
+Statistical Consulting Unit, and I'd like
+[SPEAKER_00]: to thank my monitors.
+[SPEAKER_00]: And if anyone has any questions,
+I will gladly take those.
+[SPEAKER_02]: What's the steady state concentration of
+DNA in the soil?
+[SPEAKER_02]: Or the eDNA?
+[SPEAKER_00]: My eDNA addition?
+[SPEAKER_02]: No, what you would find in nature in
+various places of ballpark food.
+[SPEAKER_00]: So it's going to depend on the soil
+specifically, but generally we see between
+[SPEAKER_00]: 20% and 80% of the total DNA will be DNA.
+[SPEAKER_02]: How about in picograms or hemograms?
+[SPEAKER_00]: Two micrograms per gram is sort of a
+maximum.
+[SPEAKER_01]: I had a question about the sample
+preparation.
+[SPEAKER_01]: Can you get rid of eDNA by just using
+different preparation?
+[SPEAKER_01]: Can you sort of subtract the cells from
+eDNA?
+[SPEAKER_00]: Yes.
+[SPEAKER_00]: There are a few different methods that
+people try to use to remove eDNA or sort
+[SPEAKER_00]: of segregate eDNA from intracellular DNA.
+[SPEAKER_00]: The two studies that I talked about
+earlier, the first one used a DNA
+[SPEAKER_00]: intercalating dye called TMA that didn't
+remove the eDNA from the system.
+[SPEAKER_00]: And then the second study that I discussed
+just used a DNA that got the extracellular
+[SPEAKER_00]: DNA.
+[SPEAKER_00]: But yes, some people will do cell
+separation.
+[SPEAKER_01]: I'm just curious about the controversy
+between these two papers.
+[SPEAKER_01]: It's quite a dramatic difference,
+right?
+[SPEAKER_01]: So did you look into the methods?
+[SPEAKER_01]: Did anything sort of distract you?
+[SPEAKER_01]: What would be different between these two
+methods?
+[SPEAKER_01]: It's just the method itself, it's an
+extraction, it's how they sample,
+[SPEAKER_01]: where they sample.
+[SPEAKER_00]: Yes, so tact is not my strong suit,
+so I'm going to try and be really
+[SPEAKER_00]: diplomatic right now, which is to say that
+my immediate reaction when I read both of
+[SPEAKER_00]: those papers was to start pointing out
+flaws in their methods.
+[SPEAKER_00]: And I could do that, but it seemed more
+productive to rather than try and like
+[SPEAKER_00]: tear down what people had done to try and
+sort of add to the conversation.
+[SPEAKER_00]: But some of the methods that they use,
+specifically the DNA intercalating dye
+[SPEAKER_00]: could be really powerful, but there's also
+you're sort of like many, many steps away
+[SPEAKER_00]: from nature at that point.
+[SPEAKER_00]: So there are always flaws in the methods.
+[SPEAKER_00]: And I think that as research into this
+eDNA-driven bias increases, like the more
+[SPEAKER_00]: people who read these papers will be like,
+oh crap, we're totally, everything's
+[SPEAKER_00]: messed up.
+[SPEAKER_00]: I think people are going to really nail
+down the best way to address eDNA.
+Thank you very much.
+Thank you.
+[SPEAKER_00]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_00]: Thank you.
+Thank you.
+Thank you.

@@ -1,0 +1,1765 @@
+[SPEAKER_00]: This is a production of Cornell
+University.
+[SPEAKER_00]: So today, I'm going to focus on one
+particular problem that we're working on
+[SPEAKER_00]: that has nothing to do with seaweeds.
+[SPEAKER_00]: It's plants, which is useful, I think,
+for this audience.
+[SPEAKER_00]: And it's talking about anisotropic growth.
+[SPEAKER_00]: And what you'll see in particular is that
+we're focusing on the hypocotyl as a
+[SPEAKER_00]: system to study this.
+[SPEAKER_00]: But obviously, there's lots of places
+within a plant where anisotropy will
+[SPEAKER_00]: occur.
+[SPEAKER_00]: So extending these principles beyond that
+will be something that we're interested in
+[SPEAKER_00]: doing next.
+[SPEAKER_00]: So let's see if I can figure out how to
+use the pointer in this.
+[SPEAKER_00]: I'm just going to use this.
+[SPEAKER_00]: OK.
+[SPEAKER_00]: So our general question in the lab is
+trying to ask how shapes get grown in
+[SPEAKER_00]: walled organisms.
+[SPEAKER_00]: And I say plants and algae because I don't
+really look at yeast or bacteria.
+[SPEAKER_00]: So I'm looking at multicellular walled
+organisms.
+[SPEAKER_00]: And it presents a really interesting
+physical challenge.
+[SPEAKER_00]: So you have a wall that's surrounding each
+cell.
+[SPEAKER_00]: But also, for the most part, connecting
+cells to each other and connecting tissues
+[SPEAKER_00]: to each other.
+[SPEAKER_00]: And so physically speaking, when you want
+to have coordinated growth that gives you
+[SPEAKER_00]: a shape or a pattern, you need to have
+coordination of that physical process of
+[SPEAKER_00]: growth.
+[SPEAKER_00]: And in general, as you'll see,
+I consider that as something that's really
+[SPEAKER_00]: mediated by the cell wall.
+[SPEAKER_00]: So here's an example of some of the
+systems that we look at and some of the
+[SPEAKER_00]: organisms we'll use.
+[SPEAKER_00]: But as I mentioned, we're really going to
+focus on maybe just doesn't have a
+[SPEAKER_00]: battery.
+[SPEAKER_00]: It's OK.
+[SPEAKER_00]: I can dance around.
+[SPEAKER_00]: We're going to focus on the hypocotyl
+today.
+[SPEAKER_00]: So when you want to understand how shapes
+are grown, oh, thank you.
+[SPEAKER_00]: Whether you're talking about a cell shape
+or the shape of a tissue or a whole organ,
+[SPEAKER_00]: you need to do different things.
+[SPEAKER_00]: So first of all, you need to be able to
+quantify shapes.
+[SPEAKER_00]: So we do quite a bit of differential
+geometry to look at how shapes change in
+[SPEAKER_00]: time and how you can quantitatively
+describe them.
+[SPEAKER_00]: You're going to talk about how you
+actually think that change in shape comes
+[SPEAKER_00]: about.
+[SPEAKER_00]: And to do that, we look at some physical
+principles and also some material science.
+[SPEAKER_00]: So the cell wall is material.
+[SPEAKER_00]: And then we're going to look at how the
+cell wall biochemistry relates to those
+[SPEAKER_00]: material changes and how the cell biology
+underlies that change in the material.
+[SPEAKER_00]: And finally, of course, I'm a
+developmental biologist at heart.
+[SPEAKER_00]: So I'm really interested in how the
+signals from the genetic program get
+[SPEAKER_00]: translated into this physical change in
+shape.
+[SPEAKER_00]: So today, what I'm going to focus on when
+I start learning how to use the computer
+[SPEAKER_00]: is mostly these two here.
+[SPEAKER_00]: So what kind of cell wall changes are
+happening during anisotropic growth and
+[SPEAKER_00]: what we think maybe some of the regulatory
+mechanisms for that might be.
+[SPEAKER_00]: But there'll be a little bit of material
+science at the end.
+[SPEAKER_00]: So this is my diagram of the cell wall.
+[SPEAKER_00]: Joss, don't freak out.
+[SPEAKER_00]: So it's an incredibly stylized,
+really simplified description of what we
+[SPEAKER_00]: think a cell wall looks like.
+[SPEAKER_00]: And pointing out that, of course,
+as some people in the audience will know,
+[SPEAKER_00]: we don't really know what the cell wall
+looks like.
+[SPEAKER_00]: So we know there are cellulose fibers in
+there.
+[SPEAKER_00]: We know that that's embedded somehow
+within a pectinaceous matrix.
+[SPEAKER_00]: And pectin is the chemical I'm going to
+talk most about.
+[SPEAKER_00]: But there's also the cross-links
+hemicelluloses that can happen in between
+[SPEAKER_00]: fibers.
+[SPEAKER_00]: And we're starting to learn a little bit
+more about the architecture of the wall.
+[SPEAKER_00]: But it's an incredibly difficult
+structural thing to work with.
+[SPEAKER_00]: And so a lot of the things that I'm going
+to say about the mechanics of the cell
+[SPEAKER_00]: wall, we're taking a lot of assumptions
+into the structure as well.
+[SPEAKER_00]: But hopefully, we'll learn more about the
+structure and link that to the mechanics
+[SPEAKER_00]: over time.
+[SPEAKER_00]: But with a big grain of salt, we think
+that the cell wall has these strong,
+[SPEAKER_00]: rigid fibers whose orientation can affect
+the material properties.
+[SPEAKER_00]: But you also have the matrix within which
+they're embedded, which is what I'll focus
+[SPEAKER_00]: on today.
+[SPEAKER_00]: So our questions about the mechanical
+structure of the chemical cell wall is,
+[SPEAKER_00]: how does the wall change during growth and
+shape formation?
+[SPEAKER_00]: What component of the wall or components
+might be important for cell growth or
+[SPEAKER_00]: shape growth, and how they actually
+mediate that?
+[SPEAKER_00]: And actually also how we can test the
+properties of the wall in vivo.
+[SPEAKER_00]: And so as Adrienne mentioned, I've been
+involved a lot in using atomic force
+[SPEAKER_00]: microscopy as a way to test the material
+properties of the cell wall.
+[SPEAKER_00]: And I'll go into that a little bit for
+you.
+[SPEAKER_00]: So today, what I'm going to do is focus on
+the hypocotyl.
+[SPEAKER_00]: We're going to look at a role for pectin
+methylation in hypocotyl anisotropy.
+[SPEAKER_00]: Then we're going to look at how maybe
+modulating anisotropy could have some
+[SPEAKER_00]: interesting functional consequences for a
+plant.
+[SPEAKER_00]: So instead of just saying, oh,
+that's a cool microscopy picture,
+[SPEAKER_00]: why it might actually be useful to change
+your anisotropy.
+[SPEAKER_00]: And then at the very end, if we have time,
+I'll do a little bit of what we're looking
+[SPEAKER_00]: at to actually link the biochemistry of
+pectin to the material properties of gels
+[SPEAKER_00]: and how we can translate that back into a
+plant.
+[SPEAKER_00]: So it's probably a little bit supluferous
+for this audience, but the hypocotyl is an
+[SPEAKER_00]: important organ.
+[SPEAKER_00]: It's located between the root meristem and
+the shoot meristem in a lot of
+[SPEAKER_00]: dicotyledonous plants.
+[SPEAKER_00]: And what's going to happen is you need
+this extreme anisotropic elongation of
+[SPEAKER_00]: this organ to get the apex out of the soil
+so you can start getting photosynthetic
+[SPEAKER_00]: capacity happening in producing leaves.
+[SPEAKER_00]: And so this happens from the point of
+germination.
+[SPEAKER_00]: You start getting this massive anisotropic
+elongation of this organ.
+[SPEAKER_00]: And so that's the study system we're going
+to work with today.
+[SPEAKER_00]: And obviously, it's important for the
+early success of plants as crops.
+[SPEAKER_00]: The first thing that happens in their life
+is germination, but after that,
+[SPEAKER_00]: you've got to get out of the soil.
+[SPEAKER_00]: So one of the ways that we watch this
+happening is by simulating a continuous
+[SPEAKER_00]: reach for the surface.
+[SPEAKER_00]: So we grow seedlings in the dark.
+[SPEAKER_00]: These are Arabidopsis hypocotyls growing
+in the dark and visualized using infrared
+[SPEAKER_00]: light.
+[SPEAKER_00]: And so what we can do is essentially make
+it so they never think they get out,
+[SPEAKER_00]: and they're just going to continue this
+elongation until they run out of
+[SPEAKER_00]: resources.
+[SPEAKER_00]: And so what we can do from that is we can
+monitor length over time in really precise
+[SPEAKER_00]: ways so we can get quantitative
+descriptions of this elongation as it
+[SPEAKER_00]: happens.
+[SPEAKER_00]: So they start doing some fun things at the
+end, which I'm not going to talk about,
+[SPEAKER_00]: but I like these wiggles as well.
+[SPEAKER_00]: They start dancing.
+[SPEAKER_00]: So as far as anisotropic growth goes,
+that elongation more in one direction than
+[SPEAKER_00]: another, we have both a direction for
+anisotropy but also a magnitude.
+[SPEAKER_00]: So in this case, it's pretty easy.
+[SPEAKER_00]: The direction of the hypocotyl is pretty
+much always up.
+[SPEAKER_00]: So it's not that it goes up and then it
+starts getting fatter.
+[SPEAKER_00]: It's a continual direction for the
+anisotropy.
+[SPEAKER_00]: But the magnitude actually changes in
+time.
+[SPEAKER_00]: So what I'm going to show you in the next
+slide is that you start off relatively
+[SPEAKER_00]: slow, but then it gets faster.
+[SPEAKER_00]: And that magnitude has to do with
+differential regulation of the elongation
+[SPEAKER_00]: growth and the width growth of cells,
+which I'll also show you some data for.
+[SPEAKER_00]: So if we take our movies and we quantify
+the length of the hypocotyl over time,
+[SPEAKER_00]: and you've probably seen this before,
+because this is a well-known phenomenon,
+[SPEAKER_00]: you end up with what some people call a
+sigmoidal growth curve.
+[SPEAKER_00]: So it's sort of slow increase in length at
+the beginning.
+[SPEAKER_00]: And then you get a transition around 24
+hours after germination to this more rapid
+[SPEAKER_00]: elongation.
+[SPEAKER_00]: And so that's what we're sort of tunneling
+down into.
+[SPEAKER_00]: One of the things is what's controlling
+this transition to the rapid elongation,
+[SPEAKER_00]: but also underlying that is what's making
+sure that most of the growth is going into
+[SPEAKER_00]: length and not length.
+[SPEAKER_00]: And so that's what we're trying to do
+here.
+[SPEAKER_00]: So what we did is we looked at the
+cellular level as well.
+[SPEAKER_00]: So we wanted to know what cells were doing
+at this point.
+[SPEAKER_00]: So this has been done once before.
+[SPEAKER_00]: And it was with scanning electron
+microscopy.
+[SPEAKER_00]: And they really just looked at cell length
+over time.
+[SPEAKER_00]: But if you think about it, cell length and
+width, that ratio is what's important.
+[SPEAKER_00]: And also for anisotropy.
+[SPEAKER_00]: And if you only ever measure length,
+you may be losing some information by not
+[SPEAKER_00]: looking at width.
+[SPEAKER_00]: So what's happening in this colorful slide
+is mostly the elongation of the hypocotyl
+[SPEAKER_00]: happens by cell elongation.
+[SPEAKER_00]: There's not a lot of division,
+at least in the epidermis.
+[SPEAKER_00]: And so that allows us to track or
+pseudo-track cells by position.
+[SPEAKER_00]: So you have one to 17 cells per file.
+[SPEAKER_00]: And because these are growing in the dark,
+as soon as you take them out to image
+[SPEAKER_00]: them, they stop growing.
+[SPEAKER_00]: So we're pseudo time series by sampling at
+each time.
+[SPEAKER_00]: And so then what we can do is we can say,
+well, this is cell one, two, three,
+[SPEAKER_00]: four.
+[SPEAKER_00]: And we can calculate individual growth
+curves and individual growth rates by
+[SPEAKER_00]: position along that file.
+[SPEAKER_00]: Does that make sense?
+[SPEAKER_00]: So the first thing that you'll see is,
+if you just look at the top of this,
+[SPEAKER_00]: there's that transition to fast
+elongation.
+[SPEAKER_00]: And what you may know already,
+which is known in the literature,
+[SPEAKER_00]: is that all the cells don't start
+elongating at the same time.
+[SPEAKER_00]: Instead, you get this what we call an
+acropedal wave of elongation.
+[SPEAKER_00]: So the cells at the base start elongating
+before the cells up near the top.
+[SPEAKER_00]: And that happens in a wave.
+[SPEAKER_00]: You can see it really nicely here.
+[SPEAKER_00]: These are still small cells in length
+here, whereas these are elongating.
+[SPEAKER_00]: And that wave of elongation actually
+travels up the length of the hypocotyl.
+[SPEAKER_00]: So you have what looks like a pretty
+simple behavior, slow growth, fast growth
+[SPEAKER_00]: for the whole organ, but it's underlaid by
+this interesting wave of elongation that
+[SPEAKER_00]: moves from the base.
+[SPEAKER_00]: And that allows us to look at elongating
+and non-elongating cells or fast and slow
+[SPEAKER_00]: elongating cells at the same time.
+[SPEAKER_00]: So what's over here is the first real
+measurements of width that are happening
+[SPEAKER_00]: at the same time.
+[SPEAKER_00]: And what you can see is that the change in
+width doesn't show that acropedal wave.
+[SPEAKER_00]: And the cells are expanding in width very
+slowly.
+[SPEAKER_00]: So this is a full order of magnitude
+different scale.
+[SPEAKER_00]: So you're expanding in width really
+slowly.
+[SPEAKER_00]: Compared to length.
+[SPEAKER_00]: And you're not having that position
+dependent control of where that growth in
+[SPEAKER_00]: width is happening.
+[SPEAKER_00]: So you don't get that sharp transition to
+a fast growth either.
+[SPEAKER_00]: So this really is indicating that the
+growth in width and the growth in length
+[SPEAKER_00]: are somehow being independently regulated.
+[SPEAKER_00]: That's what we might say.
+[SPEAKER_00]: OK, this is the cellular level mechanism
+by which that organ level behavior is
+[SPEAKER_00]: coming up.
+[SPEAKER_00]: But what we wanted to ask was how that
+transition to rapid growth was achieved.
+[SPEAKER_00]: And what that really means is what's
+happening at the base where those cells
+[SPEAKER_00]: are elongated versus the top where they
+haven't started quickly elongating yet.
+[SPEAKER_00]: And then also how that direction going
+more up than in width is actually
+[SPEAKER_00]: happening.
+[SPEAKER_00]: And so there's obvious roles here for
+cellulose orientation, which everyone will
+[SPEAKER_00]: know about.
+[SPEAKER_00]: And I'm going to hope to add to that a
+little bit today with a pectin story.
+[SPEAKER_00]: So let's start with this.
+[SPEAKER_00]: How do you get that transition in rapid
+growth?
+[SPEAKER_00]: So if we go back to this data,
+we're really interested in that sharp
+[SPEAKER_00]: transition where things start getting
+really fast.
+[SPEAKER_00]: And it's because the cells at the base are
+starting to elongate much more quickly.
+[SPEAKER_00]: And that allows us to ask this question
+about the cell wall chemistry between the
+[SPEAKER_00]: fast and slowly elongating cells at one
+point in time.
+[SPEAKER_00]: And so because of some work that we've
+done previously in philataxis looking at
+[SPEAKER_00]: pectin chemistry, we knew that there was
+some link between pectin and where you're
+[SPEAKER_00]: going to see that transition.
+[SPEAKER_00]: And so we wanted to ask whether or not we
+could see similar changes in pectin
+[SPEAKER_00]: chemistry here along the hypocotyl due to
+that expansion gradient.
+[SPEAKER_00]: So I'm going to introduce
+homogallacteronam to you.
+[SPEAKER_00]: This will be the most biochemical the
+slide gets.
+[SPEAKER_00]: So there are people in this room whose
+biochemistry is better than mine.
+[SPEAKER_00]: So I apologize.
+[SPEAKER_00]: But basically, in arabidopsis,
+the major cell wall pectin is
+[SPEAKER_00]: homogallacteronam.
+[SPEAKER_00]: So it's a really simple chain of
+galacturonic acid.
+[SPEAKER_00]: And when it comes out into the cell wall,
+it's esterified.
+[SPEAKER_00]: So these little orange balls are meant to
+be those methyl ester groups.
+[SPEAKER_00]: And what will happen once you're sort of
+in the cell wall is that you can be
+[SPEAKER_00]: selectively deesterified by Pac-Man or
+pectin methylesterase.
+[SPEAKER_00]: This then takes off some of these methyl
+groups.
+[SPEAKER_00]: And then what can happen there is that you
+can then cross-link with calcium.
+[SPEAKER_00]: So this is this really canonical calcium
+gelation that will happen in pectin gels.
+[SPEAKER_00]: It's analogous to what happens in
+alginate, although the chemistry is
+[SPEAKER_00]: different.
+[SPEAKER_00]: But you get this calcium cross-linking.
+[SPEAKER_00]: You get rigidification of a gel.
+[SPEAKER_00]: So what I've got in this table is sort of
+what we predict the mechanical character
+[SPEAKER_00]: of gels made of these different types of
+pectin should be.
+[SPEAKER_00]: So when you can't calcium cross-link,
+you should be generally more soft as a
+[SPEAKER_00]: material.
+[SPEAKER_00]: As soon as you can calcium cross-link,
+you should be more rigid.
+[SPEAKER_00]: That makes sense.
+[SPEAKER_00]: It's like making jam.
+[SPEAKER_00]: You're setting the jam.
+[SPEAKER_00]: And we have some antibodies that actually
+let us look at the presence of these
+[SPEAKER_00]: different epitopes within the cell wall,
+which is what we're going to look at next.
+[SPEAKER_00]: But we can make some hypotheses about what
+we think might be happening with respect
+[SPEAKER_00]: to growth.
+[SPEAKER_00]: So when the pectin is more methylated,
+it should be more soft, maybe even more
+[SPEAKER_00]: fluid.
+[SPEAKER_00]: Growth should be easier in that case.
+[SPEAKER_00]: The cell wall material should deform more.
+[SPEAKER_00]: Versus when you have calcium
+cross-linking, things are a little bit
+[SPEAKER_00]: tougher, and it might be harder for the
+cell wall to actually extend.
+[SPEAKER_00]: Now, the reason that this one in the
+center says it's possibly rigid is because
+[SPEAKER_00]: there are more complicated dynamics that
+can happen.
+[SPEAKER_00]: You can have demethylated pectin degraded
+by polygalacteronase.
+[SPEAKER_00]: And so if you're chopping your pectin up,
+that's definitely going to be a softer gel
+[SPEAKER_00]: than if it's just sitting there without
+calcium cross-linking, because you're
+[SPEAKER_00]: actually chopping up the pectin.
+[SPEAKER_00]: So just because you have PME activity
+doesn't mean you're always going to be
+[SPEAKER_00]: more rigid.
+[SPEAKER_00]: It depends on presence of
+polygalacteronases and also presence of
+[SPEAKER_00]: calcium ions.
+[SPEAKER_00]: OK, let's take a look at what these
+antibodies look like in that elongating
+[SPEAKER_00]: hypocotyl.
+[SPEAKER_00]: I have to mention that we also have some
+proteins that we can use called
+[SPEAKER_00]: pectomethylesterase inhibitors that
+basically stop this enzyme from
+[SPEAKER_00]: deesterifying the pectin.
+[SPEAKER_00]: So we predict that they should keep the
+pectin in a more fluid state.
+[SPEAKER_00]: Whereas if you overexpressed PMEs,
+you might end up with pectin in a more
+[SPEAKER_00]: rigid state.
+[SPEAKER_00]: And then we'll come back to that in a
+minute.
+[SPEAKER_00]: OK, so these are transverse sections of
+hypocotyls at 24 hours post germination
+[SPEAKER_00]: when we know the basal cells are actively
+quickly elongating and these top cells are
+[SPEAKER_00]: slowly elongating.
+[SPEAKER_00]: And so LM20, this is the methylated
+pectin.
+[SPEAKER_00]: Hopefully what you can see here is that
+there's more signal down at the base than
+[SPEAKER_00]: there is at the top, although the
+quantifications with these things can be
+[SPEAKER_00]: very different.
+[SPEAKER_00]: So I caution you.
+[SPEAKER_00]: But up in the slow growing cells,
+we definitely have more labeling with the
+[SPEAKER_00]: two rigid or possibly rigid antibodies for
+HG.
+[SPEAKER_00]: So what that means, if you look down at
+the base, is that you should have more of
+[SPEAKER_00]: the fluid pectin.
+[SPEAKER_00]: And up at the top, you should have more of
+the rigid pectin.
+[SPEAKER_00]: And so the idea is that the cells at the
+base are able to elongate.
+[SPEAKER_00]: Or part of the reason they're able to
+elongate is because you're keeping that
+[SPEAKER_00]: pectin in a more fluid state.
+[SPEAKER_00]: So it's getting delivered and it's not
+getting converted into the more rigid able
+[SPEAKER_00]: pectin.
+[SPEAKER_00]: OK, so if that's true, can we actually
+test that?
+[SPEAKER_00]: And this is where the atomic force
+microscopy comes in.
+[SPEAKER_00]: So hopefully I'll start this movie while I
+talk.
+[SPEAKER_00]: So this is an image of an AFM experiment
+going on.
+[SPEAKER_00]: And what you have is a very small tip
+here, which is actually going to do tiny
+[SPEAKER_00]: indentations along the surface of the
+hypocotyl.
+[SPEAKER_00]: So we're limited to looking at the
+epidermis right now.
+[SPEAKER_00]: But we can poke.
+[SPEAKER_00]: And essentially what you're doing is
+asking, if I apply a force, for example,
+[SPEAKER_00]: to the surface of this table, if I apply
+the same force to the table, how much does
+[SPEAKER_00]: it indent the table versus how much that
+force would indent my arm?
+[SPEAKER_00]: And so by looking at the force and
+deformation that you get at different
+[SPEAKER_00]: areas along the hypocotyl or between two
+different materials like me and the table,
+[SPEAKER_00]: you can learn something about their
+material properties.
+[SPEAKER_00]: And if you do this quickly, you're going
+to be looking at the elasticity of the
+[SPEAKER_00]: cell wall.
+[SPEAKER_00]: So if we do that at the base of the
+hypocotyl at four hours, so when
+[SPEAKER_00]: everybody's going really slowly,
+this is the transition to rapid growth at
+[SPEAKER_00]: the base.
+[SPEAKER_00]: And this is when things are really kicking
+it.
+[SPEAKER_00]: What we can see is that this number we get
+called the indentation modulus is going
+[SPEAKER_00]: down in time.
+[SPEAKER_00]: And so an indentation modulus just relates
+the force to the deformation that you get.
+[SPEAKER_00]: And so the higher it is, the more force
+you need to apply to get the same
+[SPEAKER_00]: deformation.
+[SPEAKER_00]: And the lower it is, the more force you
+need to apply to get the same deformation.
+[SPEAKER_00]: And the lower it is, the less force.
+[SPEAKER_00]: So it implies that the material is getting
+more elastic over time, which correlates
+[SPEAKER_00]: really well with this increasing growth.
+[SPEAKER_00]: OK, that makes sense.
+[SPEAKER_00]: This is nice and consistent.
+[SPEAKER_00]: Well, what happens if we alter pectin
+chemistry?
+[SPEAKER_00]: So based on our predictions of what's soft
+and what's allowing growth to happen,
+[SPEAKER_00]: if we mess with the homogallacteronan
+structure, we mess with its mechanics,
+[SPEAKER_00]: maybe we'll also change growth.
+[SPEAKER_00]: And so we're going to go back to those two
+enzymes, the PME and the PMEI,
+[SPEAKER_00]: the inhibitor, to try and change the kind
+of pectin that's in the cell wall and see
+[SPEAKER_00]: what happens to growth.
+[SPEAKER_00]: So as a little reminder for you,
+so PME is catalyzing the removal of methyl
+[SPEAKER_00]: groups.
+[SPEAKER_00]: So this should allow pectin, if there's
+not a lot of polygalacteronase present,
+[SPEAKER_00]: to calcium cross-link and become more
+rigid.
+[SPEAKER_00]: But if you have inducible PMEI,
+that should block PME's activity and leave
+[SPEAKER_00]: you more in this fluid state.
+[SPEAKER_00]: And so we've done this with
+alcohol-inducible PME and PMEI lines,
+[SPEAKER_00]: but there are only one PME and one PMEI,
+and there's about 60 to 70 of each family
+[SPEAKER_00]: in Arabidopsis.
+[SPEAKER_00]: So there are a lot of these genes out
+there.
+[SPEAKER_00]: But in this particular case, we're just
+taking one PME and one PMEI and asking
+[SPEAKER_00]: what happens if we inducibly overexpress
+them to the growth of the hypocotyl.
+[SPEAKER_00]: So luckily, I don't know.
+[SPEAKER_00]: This is just what happened.
+[SPEAKER_00]: So what you can see here in gray is that
+normal non-transgenic but treated with the
+[SPEAKER_00]: inducer, which in this case is ethanol,
+we get the slow growth and then the
+[SPEAKER_00]: transition to rapid growth.
+[SPEAKER_00]: And what happens when you overexpress the
+PME is that you kind of just always have
+[SPEAKER_00]: slow growth and you never get that rapid
+transition, probably.
+[SPEAKER_00]: And we've done the biochemistry to look at
+this, because you're only having
+[SPEAKER_00]: conversion of all the pectin into that
+calcium cross-linked form, or pretty much
+[SPEAKER_00]: all of it.
+[SPEAKER_00]: So everything's really rigid.
+[SPEAKER_00]: Everything is slowing down.
+[SPEAKER_00]: And the opposite is true when you have the
+PMEI, which keeps all the pectin that
+[SPEAKER_00]: comes out in that fluid state.
+[SPEAKER_00]: And you're growing much more quickly
+earlier.
+[SPEAKER_00]: You sort of have a more flat, fast growth
+throughout the growth of the hypocotyl.
+[SPEAKER_00]: So it has the predicted changes we would
+expect on an organ level, but also a cell
+[SPEAKER_00]: level.
+[SPEAKER_00]: So because of the way the induction works,
+we don't see the phenotype right away.
+[SPEAKER_00]: You see it sort of at 48 hours.
+[SPEAKER_00]: We can see a little bit better.
+[SPEAKER_00]: So this is cell length.
+[SPEAKER_00]: They look the same at the time of
+induction.
+[SPEAKER_00]: But 24 hours later, you can see that the
+wave of elongation is happening.
+[SPEAKER_00]: So this is the cell index from the base to
+the top.
+[SPEAKER_00]: The PMEI cells are a lot longer at the
+base versus the PME cells, which are
+[SPEAKER_00]: pretty short all the way along.
+[SPEAKER_00]: So we're having that change in the organ
+and the change in the cells predictive
+[SPEAKER_00]: based on the chemistry.
+[SPEAKER_00]: So that's pretty nice.
+[SPEAKER_00]: I will note that we still don't know why
+changing pectin elasticity actually has
+[SPEAKER_00]: that effect on growth.
+[SPEAKER_00]: So that's something we're working on.
+[SPEAKER_00]: What is the actual physical thing that's
+happening in the cell wall that says,
+[SPEAKER_00]: because your gel is rigid, you can grow?
+[SPEAKER_00]: So maybe next time.
+[SPEAKER_00]: Essentially, what happens is that PME
+blocks this rapid growth phase,
+[SPEAKER_00]: and PMEI is promoting it.
+[SPEAKER_00]: So what we would want to see is that we
+can see the change in mechanics that we
+[SPEAKER_00]: also expect to happen.
+[SPEAKER_00]: And so luckily, that also works out with
+the AFM.
+[SPEAKER_00]: So now I'm showing you the AFM data in a
+map, first of all.
+[SPEAKER_00]: So each point along this is a single
+indentation experiment.
+[SPEAKER_00]: So you can get some spatial information as
+well.
+[SPEAKER_00]: So when you have PME expression,
+things are generally more rigid.
+[SPEAKER_00]: This is that indentation modulus.
+[SPEAKER_00]: So the higher this is, the more rigid the
+cell walls are.
+[SPEAKER_00]: And here we have PMEI, and things are a
+lot softer, more elastic.
+[SPEAKER_00]: I'll note that these experiments are done
+in plasmalitic conditions because the cell
+[SPEAKER_00]: wall is quite thin compared to the turgor
+pressure inside.
+[SPEAKER_00]: When you're doing these indentation
+experiments, depending on how you do them,
+[SPEAKER_00]: oftentimes you need to reduce the turgor
+pressure so you're not just measuring
+[SPEAKER_00]: pressure when you're poking on a cell.
+[SPEAKER_00]: And so I'll show you a graph now.
+[SPEAKER_00]: It's a little bit more quantitative,
+but you can see that the indentation
+[SPEAKER_00]: modulus of the non-transgenic is almost
+halfway between when you induce PME and
+[SPEAKER_00]: when you induce PMEI.
+[SPEAKER_00]: So they're having that mechanical effect
+and the effect on growth we'd expect.
+[SPEAKER_00]: OK, this all sounds pretty good.
+[SPEAKER_00]: But now I want to ask this question about
+how the direction in anisotropy is
+[SPEAKER_00]: achieved.
+[SPEAKER_00]: And what you might have noticed if I go
+back one is one of the things you get is
+[SPEAKER_00]: some spatial information.
+[SPEAKER_00]: And you might notice that these transverse
+walls appear to be more rigid in the
+[SPEAKER_00]: non-transgenic than these elongating
+walls.
+[SPEAKER_00]: And a really easy way to explain that is
+because these walls are just thinner.
+[SPEAKER_00]: So if you push on something that's
+thinner, it will feel softer, regardless
+[SPEAKER_00]: of if the material is different.
+[SPEAKER_00]: But we know we've actually done some
+measurements on cell wall thickness here.
+[SPEAKER_00]: And we know that the walls are maintaining
+the same type of thickness.
+[SPEAKER_00]: So we think it's a bit more rigid.
+[SPEAKER_00]: It's actually due to this chemical
+difference in the pectin.
+[SPEAKER_00]: So those walls appear to be more rigid.
+[SPEAKER_00]: The slow walls that might control width
+expansion are more rigid than the
+[SPEAKER_00]: elongating axial walls.
+[SPEAKER_00]: So let's investigate that a little bit
+more when we ask how that direction in
+[SPEAKER_00]: anisotropy is achieved.
+[SPEAKER_00]: So we looked at 24 hours, which is close
+to what you saw before.
+[SPEAKER_00]: We were looking at 48 with the induction.
+[SPEAKER_00]: But this is 24.
+[SPEAKER_00]: And already we can see these walls are
+more rigid.
+[SPEAKER_00]: And the fast elongating axial walls.
+[SPEAKER_00]: But even at four hours post-termination,
+when everything's growing really slowly,
+[SPEAKER_00]: we can still see that there's a difference
+already in these transverse versus axial
+[SPEAKER_00]: walls.
+[SPEAKER_00]: So this is something that's set up pretty
+early.
+[SPEAKER_00]: And it's coincident with the fact that
+that growth is always anisotropic.
+[SPEAKER_00]: You're always elongating more in length
+than you are in width.
+[SPEAKER_00]: It's just that it gets faster past 24
+hours.
+[SPEAKER_00]: And so we've done some quantification of
+this as well, which is maybe a little bit
+[SPEAKER_00]: more believable.
+[SPEAKER_00]: So at four hours, we can see that there is
+a difference between the transverse and
+[SPEAKER_00]: axial walls.
+[SPEAKER_00]: The transverse walls are more stiff.
+[SPEAKER_00]: You see everything gets a bit softer by 24
+hours, which is what I showed you before.
+[SPEAKER_00]: But you can still see that this
+maintenance of the ratio between slow and
+[SPEAKER_00]: fast growing walls is maintained.
+[SPEAKER_00]: And so you may also have noticed that
+pectin could be involved in this as well.
+[SPEAKER_00]: Because in the PME and PMEI over
+expresses, which we'll look at again,
+[SPEAKER_00]: we've actually abolished that difference.
+[SPEAKER_00]: And so now we're looking at longitudinal
+sections of hypocotyls.
+[SPEAKER_00]: And we're looking at hypocotyl cells near
+the base at four hours.
+[SPEAKER_00]: And then we're going to look at 24.
+[SPEAKER_00]: But remember, even at four hours,
+we could see this difference in the
+[SPEAKER_00]: elasticity of the cell walls.
+[SPEAKER_00]: And so what I have marked here with red
+asterisks are endosperm sections.
+[SPEAKER_00]: And then this is epidermal files marked in
+green.
+[SPEAKER_00]: It's kind of hard to orient yourself.
+[SPEAKER_00]: So what you can hopefully see is that in
+the epidermal file, these two more rigid
+[SPEAKER_00]: pectin markers have higher signal on the
+transverse walls than they tend to have on
+[SPEAKER_00]: the axial walls.
+[SPEAKER_00]: And the opposite is true for the softer
+pectin marker, LM20, where you have more
+[SPEAKER_00]: signal on the axial walls and less on the
+transverse.
+[SPEAKER_00]: Again, these are really tricky to do
+quantitatively.
+[SPEAKER_00]: But it jives pretty well with the
+mechanical measurements that we can make.
+[SPEAKER_00]: And we can look at this at 24 hours as
+well and see once these cells are starting
+[SPEAKER_00]: to elongate, we're again seeing a little
+bit more of the rigid markers on these
+[SPEAKER_00]: transverse walls here, more of the soft
+pectin on the elongating walls.
+[SPEAKER_00]: We can see it gets a little bit more
+complicated.
+[SPEAKER_00]: There is some rigid pectin on that
+elongating wall as well.
+[SPEAKER_00]: So it's not as simple as saying,
+well, if you have this pectin,
+[SPEAKER_00]: you will grow.
+[SPEAKER_00]: And if you have this pectin, you won't.
+[SPEAKER_00]: But it's really difficult right now to
+work out that quantitative relationship.
+[SPEAKER_00]: So we're working on it.
+[SPEAKER_00]: But it's pretty difficult, especially with
+these techniques.
+[SPEAKER_00]: So you have differences in elasticity
+between slow and fast growing walls.
+[SPEAKER_00]: That same difference is mirrored between
+the slow and fast growing regions of that
+[SPEAKER_00]: acropedal wave.
+[SPEAKER_00]: And we can correlate really nicely the
+chemistry of the pectin with the
+[SPEAKER_00]: elasticity of the walls and growth.
+[SPEAKER_00]: So when we go back to those PME and PMEI
+over-expressors,
+[SPEAKER_00]: we can see that the ratio between the
+transverse and axial walls has actually
+[SPEAKER_00]: disappeared.
+[SPEAKER_00]: So the non-transgenic treated with ethanol
+shows the rate difference.
+[SPEAKER_00]: But the PME, everything is rigid.
+[SPEAKER_00]: There's no difference anymore.
+[SPEAKER_00]: And the PMEI, everything is soft.
+[SPEAKER_00]: There's no difference anymore.
+[SPEAKER_00]: And you can see that before I showed you
+the length of the cells.
+[SPEAKER_00]: But now I'm actually showing you the
+length versus the width.
+[SPEAKER_00]: And you can see the PMEI cells are way
+more anisotropic.
+[SPEAKER_00]: So the ratio between the transverse and
+axial walls has actually disappeared.
+[SPEAKER_00]: So the ratio of length to width is more.
+[SPEAKER_00]: And the PME cells are less anisotropic.
+[SPEAKER_00]: So you're affecting the anisotropy as well
+as the elongation rate.
+[SPEAKER_00]: So one question that came up in the
+literature based on this observation is
+[SPEAKER_00]: whether or not elastic asymmetry is
+actually enough on its own to drive
+[SPEAKER_00]: anisotropic growth in the hypocotyl.
+[SPEAKER_00]: So if you just pretend that cellulose
+anisotropy doesn't exist, if you just have
+[SPEAKER_00]: stiffer Ross walls than you do axial
+walls, is that enough to give you
+[SPEAKER_00]: anisotropic growth?
+[SPEAKER_00]: So we've done a little bit of
+computational modeling with Henrik
+[SPEAKER_00]: Jansson's group at the Sainsbury Lab in
+Cambridge to ask this question.
+[SPEAKER_00]: And again, all the assumptions that go
+into your model change, perhaps,
+[SPEAKER_00]: what your outcomes will be.
+[SPEAKER_00]: But it looks like in our hands.
+[SPEAKER_00]: We're doing this with a finite element
+method model.
+[SPEAKER_00]: So we can prescribe material properties to
+the different cell walls.
+[SPEAKER_00]: We can say, you should be more elastic or
+less elastic than these other direction
+[SPEAKER_00]: walls and ask then if we simulate growth,
+what happens?
+[SPEAKER_00]: And it's using a modified Lockhart model.
+[SPEAKER_00]: So what happens?
+[SPEAKER_00]: We measured about a twofold difference
+between the transverse and axial walls and
+[SPEAKER_00]: elasticity.
+[SPEAKER_00]: If we add that in, the thing just
+balloons.
+[SPEAKER_00]: So that twofold difference in elasticity
+is not enough.
+[SPEAKER_00]: And maybe we're not getting the true
+measurement.
+[SPEAKER_00]: Who knows?
+[SPEAKER_00]: But if you pump it up to a 100-fold
+difference, it is enough to give you
+[SPEAKER_00]: anisotropy.
+[SPEAKER_00]: So what you're looking at for the colors
+here are how anisotropic the strain or
+[SPEAKER_00]: growth is.
+[SPEAKER_00]: And in this case, the direction of the
+anisotropy is shown here with the white
+[SPEAKER_00]: lines.
+[SPEAKER_00]: So with no nothing, just everybody's all
+the same, you end up growing more in
+[SPEAKER_00]: width.
+[SPEAKER_00]: But if you do this 100-fold difference in
+elasticity between these walls and these
+[SPEAKER_00]: walls, then you can get some elasticity.
+[SPEAKER_00]: So what we did next is we simulated some
+anisotropy from cellulose.
+[SPEAKER_00]: And in the hypocaudal, it's not
+straightforward in the way that it is in
+[SPEAKER_00]: Paul Green's original work in Nutella.
+[SPEAKER_00]: So in those instances, you have cellulose
+fibers wrapping around the girth of the
+[SPEAKER_00]: cell.
+[SPEAKER_00]: And that is meant to control the
+anisotropy.
+So what we did next is we simulated some
+anisotropy from cellulose.
+And in the hypocaudal, it's not
+straightforward in the way that is in Paul
+Green's original work in Nutella.
+But the second thing that we did was we
+simulated some anisotropy from cellulose
+fibers.
+And in the hypocaudal, it's not
+straightforward in the way that is in Paul
+Green's original work in Nutella.
+So here you have cellulose fibers supposed
+to be not only fibrous but that they're
+[SPEAKER_00]: rather smaller, and so it's meant to
+restrict expansion and width.
+[SPEAKER_00]: But if you can allow those fibers to slip
+apart, you can facilitate growth in
+[SPEAKER_00]: length.
+[SPEAKER_00]: And that's this canonical way of
+controlling anisotropy.
+[SPEAKER_00]: In some organs, that tends to be true,
+and some species, that tends to be true.
+[SPEAKER_00]: But remember, we're looking at the
+epidermis here.
+[SPEAKER_00]: And in a rabidopsis, the epidermis doesn't
+show really strong alignment of cellulose.
+[SPEAKER_00]: What we know now is that the cortex shows
+pretty strong alignment.
+[SPEAKER_00]: So what we've done in these simulations is
+not say that the epidermis itself has to
+[SPEAKER_00]: have that material cellulose anisotropy.
+[SPEAKER_00]: We're just providing it either from the
+interface of these cells or, actually,
+[SPEAKER_00]: what you'll see next is from inside layers
+of tissue.
+[SPEAKER_00]: So no matter where that information comes
+from, what happens is that you get
+[SPEAKER_00]: anisotropic growth when you have cellulose
+anisotropy.
+[SPEAKER_00]: That's good.
+[SPEAKER_00]: But if you add on this two-fold difference
+in wall elasticity, you actually get more
+[SPEAKER_00]: anisotropic growth.
+[SPEAKER_00]: It's stronger anisotropy and it's faster.
+[SPEAKER_00]: So you can sort of see that here.
+[SPEAKER_00]: This is with the two-fold elastic
+asymmetry added.
+[SPEAKER_00]: This is before growth.
+[SPEAKER_00]: And after growth, you can see this
+cylinder is a little bit longer.
+[SPEAKER_00]: And the degree of anisotropy is a little
+bit higher.
+[SPEAKER_00]: And it's even more profound if you
+simulate internal anisotropy.
+[SPEAKER_00]: But again, these numbers are kind of just
+made up.
+[SPEAKER_00]: But again, you see that additional thing.
+[SPEAKER_00]: And so what we think is that this pectine
+asymmetry in the epidermis, it's not the
+[SPEAKER_00]: only thing controlling anisotropy,
+but it's helping anisotropy to happen.
+[SPEAKER_00]: It's helping that growth to happen a
+little bit faster.
+[SPEAKER_00]: And it's making sure that those walls are
+elongating a little bit faster than these
+[SPEAKER_00]: transverse walls.
+[SPEAKER_00]: And that could be a really good example of
+a really important developmental
+[SPEAKER_00]: advantage.
+[SPEAKER_00]: So obviously, we want to know what
+regulates that anisotropy.
+[SPEAKER_00]: And I don't have an answer for you today.
+[SPEAKER_00]: But we're looking at some cytoskeletal
+dynamics and delivery and endocytosis and
+[SPEAKER_00]: exocytosis balance, but also some of these
+other modifying enzymes.
+[SPEAKER_00]: Where do they get delivered?
+[SPEAKER_00]: Where are they activated?
+[SPEAKER_00]: But we might also be interested in whether
+or not the regulation of anisotropy can
+[SPEAKER_00]: actually be functional.
+[SPEAKER_00]: So why would you want to get out of the
+ground faster?
+[SPEAKER_00]: I mean, it seems to make a lot of sense.
+[SPEAKER_00]: But let's see.
+[SPEAKER_00]: OK.
+[SPEAKER_00]: So let's go to the second point,
+which is looking at modulation of
+[SPEAKER_00]: anisotropy and growth plasticity.
+[SPEAKER_00]: So this little guy has to elongate out of
+the soil.
+[SPEAKER_00]: It makes sense you might want to do that
+quickly, right?
+[SPEAKER_00]: Because then you can photosynthesize
+sooner.
+[SPEAKER_00]: You establish yourself.
+[SPEAKER_00]: Maybe you beat some neighbors out of your
+shade competition.
+[SPEAKER_00]: You get out faster.
+[SPEAKER_00]: You establish yourself.
+[SPEAKER_00]: So everything's better for you.
+[SPEAKER_00]: But there's a lot of environmental
+variability that they're dealing with.
+[SPEAKER_00]: So what kind of soil do they have to go
+through?
+[SPEAKER_00]: Does the compaction of the soil change
+whether you'd want to grow thin and fast
+[SPEAKER_00]: or fat and slow?
+[SPEAKER_00]: How much carbon and other nutrients are
+available to you?
+[SPEAKER_00]: And maybe you want to respond to that in a
+different way.
+[SPEAKER_00]: And so there's all these complicating
+factors that go into saying, well,
+[SPEAKER_00]: maybe being faster isn't always better.
+[SPEAKER_00]: And so what we noticed in the lab is that
+if you grow a rabidopsis, this is very,
+[SPEAKER_00]: very natural.
+[SPEAKER_00]: If you grow a rabidopsis on plates with
+sucrose, their anisotropy is actually
+[SPEAKER_00]: different.
+[SPEAKER_00]: So what it looks like in this video is
+that these are shorter.
+[SPEAKER_00]: They're slower and they're shorter.
+[SPEAKER_00]: And that's kind of, you would think,
+well, maybe that's a bad idea.
+[SPEAKER_00]: But when we calculated their volume and
+their volumetric growth, what we saw is
+[SPEAKER_00]: that it was identical.
+[SPEAKER_00]: So they're growing the same amount.
+[SPEAKER_00]: They're just patricianing that time,
+my English.
+[SPEAKER_00]: I don't have an excuse.
+[SPEAKER_00]: But they're giving less growth in length
+and a little bit more in width.
+[SPEAKER_00]: So the volume maintains, but their
+patricianing, I need to stop saying that
+[SPEAKER_00]: word, is different in length and width.
+[SPEAKER_00]: So when you have sucrose, you're less
+anisotropic.
+OK.
+[SPEAKER_00]: So I can tell you that this is not based
+on ethylene, which is a possibility.
+[SPEAKER_00]: So you'll know that the triple response
+involves you getting really short and
+[SPEAKER_00]: really fat.
+[SPEAKER_00]: But if we do this in the ACS ethylene
+synthesis octuple mutant, you still get
+[SPEAKER_00]: this response.
+[SPEAKER_00]: So it's not dependent on there being
+ethylene present, which is a good control.
+[SPEAKER_00]: And it also happens no matter what kind of
+sugar you throw on it.
+[SPEAKER_00]: So we're looking at the anisotropy index.
+[SPEAKER_00]: So this will be the ratio of length to
+width.
+[SPEAKER_00]: And you can see normally they're way
+longer than they are wide.
+[SPEAKER_00]: When you put them on sucrose, that drops
+because they're getting fatter.
+[SPEAKER_00]: And it happens if you have sucrose,
+glucose, dextrose, sucrose, galactose,
+[SPEAKER_00]: trihalose.
+[SPEAKER_00]: So it doesn't appear to be specific to any
+one carbon source.
+[SPEAKER_00]: And the other interesting thing is that if
+you chop off the cotyledons, which are an
+[SPEAKER_00]: endogenous source of carbon, you mimic the
+low sucrose condition.
+[SPEAKER_00]: And if you add little grains of sand back
+on top to be a weight, that doesn't rescue
+[SPEAKER_00]: it.
+[SPEAKER_00]: So it's not as if it's because they're
+lighter, they grow faster.
+[SPEAKER_00]: We think it really is something to do with
+the available relief carbon.
+[SPEAKER_00]: And you can rescue that cotyledon removal
+non-sucrose mimic by actually adding
+[SPEAKER_00]: sucrose back in lanolin to the tip.
+[SPEAKER_00]: So it looks like it's that carbon source
+that's really important.
+[SPEAKER_00]: Now, what we don't know is how this is
+being sensed.
+[SPEAKER_00]: But there is something there that's
+changing this anisotropic ratio.
+[SPEAKER_00]: So we can see this at a cellular level as
+well.
+[SPEAKER_00]: So this is the 0% sucrose.
+[SPEAKER_00]: You can see that increase in length of
+these.
+[SPEAKER_00]: This is just looking at one cell in the
+base.
+[SPEAKER_00]: Over time, you're seeing less growth in
+length.
+[SPEAKER_00]: And also width, remember, you don't really
+see much of a wave in width in the normal
+[SPEAKER_00]: condition.
+[SPEAKER_00]: But you're seeing a little bit of a wave
+now here when you have the sucrose.
+[SPEAKER_00]: So all of a sudden, the width growth rate
+is getting regulated, perhaps,
+[SPEAKER_00]: by that same acropedal wave.
+[SPEAKER_00]: So there's an interesting shift there.
+[SPEAKER_00]: Are there cell wall changes?
+[SPEAKER_00]: And maybe they're related to pectin.
+[SPEAKER_00]: That's probably why I'm here.
+[SPEAKER_00]: Again, these can be really difficult to
+quantitate.
+[SPEAKER_00]: So we're doing our best.
+[SPEAKER_00]: But this is immuno for the LM20.
+[SPEAKER_00]: Remember, that's the softer pectin,
+what we expect to be more fluid.
+[SPEAKER_00]: And what we can see is that in the 3%
+sucrose case, we're starting to get more
+[SPEAKER_00]: signal at these transverse walls than we
+ever had before.
+[SPEAKER_00]: It's basically like an empty column in the
+0%.
+[SPEAKER_00]: And now we're getting some on these
+transverse walls.
+[SPEAKER_00]: So the ratio between the two is getting
+closer to one.
+[SPEAKER_00]: So you're getting more soft pectin on that
+wall that's now elongating a bit more and
+[SPEAKER_00]: giving you that shift to width growth.
+[SPEAKER_00]: Over length.
+[SPEAKER_00]: So you get more methylated homoglycerin
+into the transverse walls.
+[SPEAKER_00]: And the converse is also true with the
+demethylated pectin, although it's really
+[SPEAKER_00]: a little bit less obvious.
+[SPEAKER_00]: Quantitatively, we can see this.
+[SPEAKER_00]: But the quantification's, again,
+a grain of salt.
+[SPEAKER_00]: We're getting a shift away from those
+transverse walls.
+[SPEAKER_00]: So you're getting less rigid pectin there,
+more soft pectin, which might relate to
+[SPEAKER_00]: why you're getting that width growth that
+you don't normally get.
+[SPEAKER_00]: So we can see an interesting effect when
+we look with the AFM.
+[SPEAKER_00]: I forgot to change the title.
+[SPEAKER_00]: That literally makes no sense.
+[SPEAKER_00]: But we can call it figure seven.
+[SPEAKER_00]: So if you do the AFM, again, these are the
+basal cells that are elongating.
+[SPEAKER_00]: What you'll see is that these look more
+rigid than the 0% sucrose.
+[SPEAKER_00]: You can also see they're a bit fatter than
+these, which makes sense given the
+[SPEAKER_00]: measurements I've shown you.
+[SPEAKER_00]: But it also looks like we're getting rid
+of that ratio, that difference between
+[SPEAKER_00]: transverse and axial walls.
+[SPEAKER_00]: And so here's just some quantification of
+that.
+[SPEAKER_00]: So this is the 0% case where you see that
+difference.
+[SPEAKER_00]: And there's less of a difference here.
+[SPEAKER_00]: And also, everybody's more rigid.
+[SPEAKER_00]: So here's the ratio of the transverse to
+axial, which normally favors stiffer axial
+[SPEAKER_00]: transverse walls.
+[SPEAKER_00]: And here, we've kind of gotten rid of
+that.
+[SPEAKER_00]: Well, so this is kind of weird,
+though, because now I'm showing you that
+[SPEAKER_00]: the cell walls are stiffer.
+[SPEAKER_00]: But we know they're still growing
+volumetrically the same.
+[SPEAKER_00]: So if my walls are stiffer, how do I still
+end up growing the same amount even though
+[SPEAKER_00]: it's proportioned a little bit
+differently?
+[SPEAKER_00]: And so that was puzzling to us.
+[SPEAKER_00]: And so we went in and asked, well,
+is the pressure any different?
+[SPEAKER_00]: And so we're estimating pressure here
+based on Plasmalis' point.
+[SPEAKER_00]: So it's not a perfect method, but it's
+what we have.
+[SPEAKER_00]: And what you can see is that in 3%
+sucrose, the pressure is actually higher
+[SPEAKER_00]: in cells at the base when they're growing.
+[SPEAKER_00]: So the walls may be stiffer, but they
+balance that out somehow by regulating
+[SPEAKER_00]: their pressure so that the pressure to
+wall stiffness ratio is still facilitating
+[SPEAKER_00]: the same amount of growth.
+[SPEAKER_00]: And that's something, again, there's an
+interesting feedback there that we're not
+[SPEAKER_00]: sure how it's happening.
+[SPEAKER_00]: You can get that kind of dynamic actually
+out of a classical Lockhart model.
+[SPEAKER_00]: And we're doing some modeling to look at
+that.
+[SPEAKER_00]: But it's unclear what the actual mechanism
+might be in this case.
+[SPEAKER_00]: So maybe you're interested in auxin
+because it's plants.
+[SPEAKER_00]: And we know that changes in pectin can be
+effective.
+[SPEAKER_00]: So we're looking a little bit at auxin
+transporters.
+[SPEAKER_00]: And this is an example of pin 3.
+[SPEAKER_00]: So these are auxin efflux carriers.
+[SPEAKER_00]: And so they can change the direction of
+auxin flow depending on the polarity.
+[SPEAKER_00]: And so in the 0% sucrose case,
+what we get is something that's sort of
+[SPEAKER_00]: not very polar at all.
+[SPEAKER_00]: It's sort of around the whole cell.
+[SPEAKER_00]: But maybe here you can see it's a little
+bit stronger signal on the transverse
+[SPEAKER_00]: walls.
+[SPEAKER_00]: And we've done a bit of quantification
+here.
+[SPEAKER_00]: So you have more signal on transverse
+walls than you do the axial walls.
+[SPEAKER_00]: You're elongating walls with sucrose,
+which means you end up with something like
+[SPEAKER_00]: this.
+[SPEAKER_00]: So you should have more pin 3 on these
+membranes, which will drive more flow
+[SPEAKER_00]: across those walls to get more auxin flow
+across those transverse walls.
+[SPEAKER_00]: And we think that's facilitating their
+growth, perhaps through acid growth.
+[SPEAKER_00]: And this is impaired in a pin 3 mutant,
+which is good.
+[SPEAKER_00]: It's always nice to have mutants.
+[SPEAKER_00]: So are there pH changes?
+[SPEAKER_00]: We might expect that if there's more auxin
+flow across that transverse wall,
+[SPEAKER_00]: that maybe we're going to see a drop in
+pH, if you believe acid growth.
+[SPEAKER_00]: And so we've been using this apofusion
+fluorescent protein system.
+[SPEAKER_00]: And so what happens is you have RFP,
+which is pH insensitive, and GFP,
+[SPEAKER_00]: which is pH sensitive.
+[SPEAKER_00]: And you look at the ratio between the two,
+because they're both produced by the same
+[SPEAKER_00]: construct.
+[SPEAKER_00]: And they go to the same apoplastic space
+in this case.
+[SPEAKER_00]: And you say, what is the ratio between
+green and red?
+[SPEAKER_00]: And that should tell you something about
+the pH.
+[SPEAKER_00]: The pH of the system, because this will
+get lower when you have more acidic pH.
+[SPEAKER_00]: And so our rough estimates, again,
+this is sort of preliminary, is that the
+[SPEAKER_00]: pH ratio between the transverse and axial
+walls sort of is dropping in the 1.5%
+[SPEAKER_00]: sucrose.
+[SPEAKER_00]: And we sort of look at that as meaning
+that we're getting lower pH on those
+[SPEAKER_00]: walls, where more auxin is predicted to be
+flowing across.
+[SPEAKER_00]: So we think there's some acid growth
+change that's giving this difference in
+[SPEAKER_00]: width versus length.
+[SPEAKER_00]: And this is impaired in proton pump
+mutants, but also if you add vancomycin,
+[SPEAKER_00]: which is an inhibitor of these proton
+pumps.
+[SPEAKER_00]: So the summary of this part goes like
+this.
+[SPEAKER_00]: We think that there's this change in polar
+transport of auxin that changes the pH.
+[SPEAKER_00]: We think that's doing something probably
+to PMEs and PMEIs on those transverse
+[SPEAKER_00]: walls.
+[SPEAKER_00]: We also have some hints that xyloglucan
+structure is changing.
+[SPEAKER_00]: It's changing a little bit on these walls
+as well.
+[SPEAKER_00]: And it could be activating other enzymes
+like expansins, which we know are
+[SPEAKER_00]: canonically activated by changes in pH.
+[SPEAKER_00]: But the net result is we think these
+transverse walls in the sucrose condition
+[SPEAKER_00]: are growing a little bit faster than they
+normally would, which gives you this
+[SPEAKER_00]: slightly slower growing hypocotyl.
+[SPEAKER_00]: It's getting a little bit fatter.
+[SPEAKER_00]: But if you remember, I was kind of
+interested in whether it mattered that you
+[SPEAKER_00]: were a little bit slower and a little bit
+fatter.
+[SPEAKER_00]: Does anybody care?
+[SPEAKER_00]: So we've designed some tests to look at
+this.
+[SPEAKER_00]: And again, we're just starting to do this.
+[SPEAKER_00]: And so we're looking at success of
+emergence.
+[SPEAKER_00]: Because you could imagine just being
+faster, again, is awesome.
+[SPEAKER_00]: Because you get out and you start
+photosynthesizing, and you are the winner.
+[SPEAKER_00]: But if you have different substrates,
+that might not be true.
+[SPEAKER_00]: And these are not the best substrates,
+but it's what we had at the time.
+[SPEAKER_00]: So we're using coarse sand and fine sand.
+[SPEAKER_00]: So you have different particle sizes that
+you have to navigate through.
+[SPEAKER_00]: But the thickness of the layer on top of
+this seed on the plate is the same.
+[SPEAKER_00]: And we orient the seeds so they're already
+ready to go up.
+[SPEAKER_00]: They don't have to do any weird turning.
+[SPEAKER_00]: And this is the sort of thing that we see.
+[SPEAKER_00]: So when you have coarse sand, the skinny,
+fast one actually does a little bit
+[SPEAKER_00]: better.
+[SPEAKER_00]: But when you have fine sand, the slow one
+does a little bit better.
+[SPEAKER_00]: So the idea would be that it's not always
+advantageous to be fast.
+[SPEAKER_00]: It's not always advantageous to be slow.
+[SPEAKER_00]: But somehow, if you can sense it,
+sensing your environment and the carbon
+[SPEAKER_00]: availability allows you to change this
+anisotropy.
+[SPEAKER_00]: And you may be a little bit more
+successful than your friends.
+[SPEAKER_00]: But it's obviously a pretty complicated
+matrix of interactions that we're just
+[SPEAKER_00]: starting to explore.
+[SPEAKER_00]: So I'm very quickly going to tell you a
+little bit about pectin gel mechanics.
+[SPEAKER_00]: Because I've been kind of going through
+and telling you, oh, well, pectin gel is
+[SPEAKER_00]: really important.
+[SPEAKER_00]: And if it's stiffer, that changes growth.
+[SPEAKER_00]: But we want to know a little bit more
+about that as a material.
+[SPEAKER_00]: So what does that actually mean?
+[SPEAKER_00]: So how do you translate from this to the
+actual wall structure?
+[SPEAKER_00]: And the way we've been doing this is by
+really pulling stuff way out of the plant
+[SPEAKER_00]: system and just making some synthetic
+materials and testing them.
+[SPEAKER_00]: So first, I'll show you some pure pectin
+gels.
+[SPEAKER_00]: And we've developed another test with the
+AFM.
+[SPEAKER_00]: So you will probably be familiar with
+creep tests.
+[SPEAKER_00]: So these are classical tests that we're
+doing.
+[SPEAKER_00]: Where you took a section of hypocotyl,
+usually.
+[SPEAKER_00]: And you clamp it at one end.
+[SPEAKER_00]: And you throw a weight on the other end.
+[SPEAKER_00]: And you just measure the deformation over
+time.
+[SPEAKER_00]: So instead of these really fast elastic
+responses that I've been talking about all
+[SPEAKER_00]: along, what we wanted to do is actually
+look at the way that the material flowed.
+[SPEAKER_00]: Because maybe that's a little bit closer
+to growth than an elastic band.
+[SPEAKER_00]: So a good viscoelastic material to think
+about, which is essentially what we're
+[SPEAKER_00]: testing here, is a memory foam mattress,
+which I got to sleep on last night.
+[SPEAKER_00]: Thank you, Adrian.
+[SPEAKER_00]: So when you get in it, you sink a little
+bit over time.
+[SPEAKER_00]: So there's some time dependence in your
+deformation.
+[SPEAKER_00]: And when you get off, at least when I get
+off, it takes a while to come back up.
+[SPEAKER_00]: But it does come back up.
+[SPEAKER_00]: So there's this time delay that might be a
+little bit more realistically related to
+[SPEAKER_00]: growth.
+[SPEAKER_00]: And so the classical creep experiment
+involves a weight on a whole organ.
+[SPEAKER_00]: And we've simply miniaturized that using
+the AFM.
+[SPEAKER_00]: So we push and hold a force and ask how
+the material relaxes away from that.
+[SPEAKER_00]: So that's stress relaxation.
+[SPEAKER_00]: You can push and hold the deformation.
+[SPEAKER_00]: There's a couple different ways to do it.
+[SPEAKER_00]: But essentially, you're asking about that
+time deformation that happens.
+[SPEAKER_00]: And then we take the data that we get and
+we put it through a couple of different
+[SPEAKER_00]: really basic material models.
+[SPEAKER_00]: But this one works pretty well.
+[SPEAKER_00]: It's what we call a standard linear solid.
+[SPEAKER_00]: You have elasticity from these springs.
+[SPEAKER_00]: And you have the viscous flow from these
+dashpots, like a plunger and a syringe.
+[SPEAKER_00]: And you can get parameters for these
+different things out of your models.
+[SPEAKER_00]: So when we do this in pectin gels,
+what do we see?
+[SPEAKER_00]: So what we have here are pectin gels that
+have different amounts of methylation.
+[SPEAKER_00]: So this is 33% methylated.
+[SPEAKER_00]: So a lot of that is available to calcium
+cross-link.
+[SPEAKER_00]: And what we can see is that instantaneous
+stiffness, which is analogous to the
+[SPEAKER_00]: indentation modulus earlier, is high.
+[SPEAKER_00]: So the less methylation you have,
+the more calcium cross-links you can make,
+[SPEAKER_00]: the stiffer you come.
+[SPEAKER_00]: That is good.
+[SPEAKER_00]: That's what we would predict.
+[SPEAKER_00]: It's also what's been predicted from food
+science reality for a long time.
+[SPEAKER_00]: This is not new.
+[SPEAKER_00]: But what we have done is taken gels that
+have different percentages of methylation.
+[SPEAKER_00]: So for example, here, half of it is
+methylated.
+[SPEAKER_00]: And you can see it's a lot softer.
+[SPEAKER_00]: And something in between, it's not a
+linear relationship.
+[SPEAKER_00]: We've taken it another step further and
+we've remade an average 41% demethylation
+[SPEAKER_00]: by mixing 33 and 50.
+[SPEAKER_00]: And we can see that it's not quite the
+same as when the average is actually 41.
+[SPEAKER_00]: So you could imagine in a cell wall,
+it's not just that every single
+[SPEAKER_00]: hemoglobacteron in chain has exactly 50%
+methylation, but you might have some that
+[SPEAKER_00]: have 70 and some that have 30.
+[SPEAKER_00]: And what we find is that those synergistic
+combination of those things change the
+[SPEAKER_00]: material properties as well.
+[SPEAKER_00]: But what about the viscoelasticity?
+[SPEAKER_00]: So what we can pull out of this is
+something called relaxation time.
+[SPEAKER_00]: And I think what I'm going to show you is
+not the relaxation time, but I will tell
+[SPEAKER_00]: you that what happens is that the gels are
+less stiff the more methylation you have,
+[SPEAKER_00]: but they're also less viscous,
+so they're less thick.
+[SPEAKER_00]: They flow better.
+[SPEAKER_00]: And if it makes sense that growth,
+you might want your material to be more
+[SPEAKER_00]: elastic, but also have a bit more flow in
+it.
+[SPEAKER_00]: And so the way that we look at this,
+the easiest way to look at this from the
+[SPEAKER_00]: models is actually to look at the ratio of
+elasticity and viscosity.
+[SPEAKER_00]: And so because the elasticity changes,
+in order for that ratio to remain
+[SPEAKER_00]: constant, you have to have the viscosity
+changing in the opposite manner.
+[SPEAKER_00]: And so we end up knowing that as your
+pectin methylation goes down, so you have
+[SPEAKER_00]: more available for crosslinks,
+you get stiffer and you flow less.
+[SPEAKER_00]: Can we see that in a plant?
+[SPEAKER_00]: So we go back to this case where we have
+more rigid transverse walls and more
+[SPEAKER_00]: elastic axial walls, and we do these
+viscoelastic creep tests there too.
+[SPEAKER_00]: And what we can see is that we do see a
+difference in elasticity from our model,
+[SPEAKER_00]: but also in flow.
+[SPEAKER_00]: So pectin chemistry doesn't just affect
+elasticity, it's also affecting the
+[SPEAKER_00]: ability of the material to flow,
+which may be more related to growth,
+[SPEAKER_00]: but we'll see.
+[SPEAKER_00]: We still have to show that that is
+actually true.
+[SPEAKER_00]: Okay, the last thing we don't have very
+much data on yet is we're starting to
+[SPEAKER_00]: build more complex materials.
+[SPEAKER_00]: And so to do this, we use cellulose from
+this bacteria, glucinocidobacter zilinus,
+[SPEAKER_00]: that makes cellulose outside its body.
+[SPEAKER_00]: We take that cellulose and add in other
+cell wall components, so that the
+[SPEAKER_00]: architecture isn't going to be the same
+exactly as a cell wall, but hopefully we
+[SPEAKER_00]: can get some information from it.
+[SPEAKER_00]: And then we just test these big hunks of
+material for their material properties,
+[SPEAKER_00]: and we can control them a bit better than
+we can, say, in a mutant in a rabidopsis.
+[SPEAKER_00]: So here's a very brief example of some of
+the things that change.
+[SPEAKER_00]: So if you have cellulose, cellulose plus
+pectin, cellulose and xylaglucan,
+[SPEAKER_00]: you get differences in the weight,
+so the hydration, which makes sense,
+[SPEAKER_00]: pectin is a little bit wetter,
+can hold more water.
+[SPEAKER_00]: You get changes in the depths of the
+material, so actually xylaglucan looks
+[SPEAKER_00]: like it's really linking things more
+tightly, so proportionally of the same
+[SPEAKER_00]: amount of cellulose in all these gels.
+[SPEAKER_00]: It's just that you're getting a thinner
+material because of the xylaglucan,
+[SPEAKER_00]: and we have some difference in Young's
+modulus as well, but we're just starting
+[SPEAKER_00]: to explore this.
+[SPEAKER_00]: And what we're hoping is by precisely
+controlling the components in the wall,
+[SPEAKER_00]: we might get a better idea of what's
+actually happening in a plant cell wall.
+[SPEAKER_00]: My last slide, going very long,
+is that we're starting to be able to do
+[SPEAKER_00]: AFM-based mechanical measures on sections.
+[SPEAKER_00]: So if you remember, everything I've showed
+you is from the epidermis, but all those
+[SPEAKER_00]: tissue layers are connected to each other.
+[SPEAKER_00]: And so you might want to know something
+about internal cells and their mechanics.
+[SPEAKER_00]: And so what I'm showing you right now is
+the Miscampus stem cryo-sections.
+[SPEAKER_00]: They haven't gone through any fixation at
+all or embedding, except in OCT media.
+[SPEAKER_00]: And right now, we're just looking at
+vascular bundles because those are
+[SPEAKER_00]: obviously going to be really mechanically
+different.
+[SPEAKER_00]: That's a good place to start.
+[SPEAKER_00]: But we're hoping to be able to look at
+primary cell walls as well that don't have
+[SPEAKER_00]: these really rigid polymers, too.
+[SPEAKER_00]: But so you can see here, the phloem is
+softer than the sieve elements,
+[SPEAKER_00]: which are softer than the xylem.
+[SPEAKER_00]: That makes a lot of sense.
+[SPEAKER_00]: And we can see some interesting
+differences between sieve elements and
+[SPEAKER_00]: companion cells here within the phloem as
+well.
+[SPEAKER_00]: And so we can relate this to some
+interesting galactan epitopes as well
+[SPEAKER_00]: through work with Paul Knox, and that'll
+be coming out in plant fizz pretty soon.
+[SPEAKER_00]: But it just shows that if you keep pushing
+the method, hopefully we can start asking
+[SPEAKER_00]: even more questions and not just relying
+only on the epidermis.
+[SPEAKER_00]: So hopefully you'll do that when you do
+it.
+[SPEAKER_00]: OK, most of this, pretty much all of this
+work that I've talked about today,
+[SPEAKER_00]: was done at the lab in Cambridge.
+[SPEAKER_00]: But as Adrienne moved, we've moved,
+as Adrienne mentioned, we're now at UCLA.
+[SPEAKER_00]: So we're continuing the work.
+[SPEAKER_00]: These are the people who did it.
+[SPEAKER_00]: Two post-docs for us, Buda here and Tom
+Turowd, and two PhD students, JJ Ten and
+[SPEAKER_00]: Louis Kaplan.
+[SPEAKER_00]: So material scientists and mathematician,
+wild biochemists, and cell biologists.
+[SPEAKER_00]: It's a really interdisciplinary effort.
+[SPEAKER_00]: And that's our money.
+[SPEAKER_00]: Thanks very much.
+[SPEAKER_01]: Yes.
+[SPEAKER_00]: So the question is about the atomic force
+measurements and whether we're doing a
+[SPEAKER_00]: constant deformation.
+[SPEAKER_00]: It's really difficult to do that with the
+way the machines work.
+[SPEAKER_00]: So you actually have to do it with a
+constant force.
+[SPEAKER_00]: So when we do the creep tests,
+we are choosing forces that give us the
+[SPEAKER_00]: same deformation.
+[SPEAKER_02]: And how did you choose the force?
+[SPEAKER_00]: Yes.
+[SPEAKER_00]: So in the plants, what we tend to do,
+and again, this is really hand-wavy.
+[SPEAKER_00]: We tend to say, well, we want an
+indentation depth that's no more than 5%
+[SPEAKER_00]: of the depth of, say, the wall.
+[SPEAKER_00]: Because we want to make sure we're still
+in an elastic state.
+[SPEAKER_00]: We want to make sure we're still in an
+elastic regime.
+[SPEAKER_00]: But it's really hand-wavy.
+[SPEAKER_00]: Because most of the rules that have been
+used to model and determine these
+[SPEAKER_00]: parameters from these experiments are with
+solid materials.
+[SPEAKER_00]: And plant cell walls are cellular solids.
+[SPEAKER_00]: And so there's some complicated geometry
+that goes into it.
+[SPEAKER_00]: So generally, we try and get either 5% of
+the depth of the wall or 5% of the depth
+[SPEAKER_00]: of the cell, depending on the type of
+experiment.
+[SPEAKER_00]: But one of the things we're doing now is
+sticking an AFM, an appealed epidermal
+[SPEAKER_00]: layer on top of an inverted confocal,
+and actually looking at what the
+[SPEAKER_00]: deformation of the cell looks like under
+AFM.
+[SPEAKER_00]: And it's not as beautiful and
+straightforward as a Hertzian model would
+[SPEAKER_00]: want you to suggest.
+[SPEAKER_02]: One more question.
+[SPEAKER_02]: If you change the force and then do
+everything at a different constant force,
+[SPEAKER_02]: then you're checking a little more the
+longitudinal.
+[SPEAKER_02]: The higher the force, the more the
+longitudinal performance.
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: So for the gels, we've done this a little
+bit more carefully because it's a
+[SPEAKER_00]: continuous media.
+[SPEAKER_00]: And so you can look at, if you increase
+your indentation depth or force,
+[SPEAKER_00]: you can look at the linearity of the
+response and things like this.
+[SPEAKER_00]: And the gels look pretty good.
+[SPEAKER_00]: I'm a little bit worried about doing those
+kinds of experiments right now in plants,
+[SPEAKER_00]: just because what we think is happening is
+at one point, you'll deform a wall.
+[SPEAKER_00]: Then you'll be deforming the whole wall.
+[SPEAKER_00]: Then you'll be deforming those walls and
+the cross walls, and maybe the tissue
+[SPEAKER_00]: underneath it.
+[SPEAKER_00]: And so it's not as straightforward as you
+would expect based on simple material
+[SPEAKER_00]: mechanics, because you have that cellular
+architecture.
+[SPEAKER_00]: But maybe we can talk about it a bit after
+too.
+Hi.
+[SPEAKER_02]: How does the hypocotyl know to go up?
+[SPEAKER_00]: So please correct me if I'm wrong.
+[SPEAKER_00]: I believe it has to do with statoliths in
+the endoderm.
+[SPEAKER_00]: It's the endodermis in the hypocotyl.
+[SPEAKER_00]: So there's gravity-sensing
+starch-containing granules that change
+[SPEAKER_00]: probably auxin transport.
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: And then keep it growing up.
+Yeah.
+[SPEAKER_03]: Two observations.
+[SPEAKER_03]: One that follows up on what Brandy's
+question was getting at.
+[SPEAKER_03]: That is, I noticed that you had hotspots
+where the three anticlinal walls come
+[SPEAKER_03]: together.
+[SPEAKER_03]: So that makes perfect sense.
+[SPEAKER_03]: Because you've got more solid material in
+that location.
+[SPEAKER_03]: Yeah.
+[SPEAKER_03]: And you have a Poisson effect,
+kind of a mechanical constraint.
+[SPEAKER_00]: Yeah.
+[SPEAKER_03]: OK.
+[SPEAKER_03]: So the question there is, how do you
+compensate for that extent?
+[SPEAKER_03]: And the other, not question, but
+observation is that you show that when you
+[SPEAKER_03]: have more fine sand, the sucrose which
+causes an expansion, they're more
+[SPEAKER_03]: successful.
+[SPEAKER_03]: Actually, that makes sense because if you
+look at the circumferential expansion,
+[SPEAKER_03]: it propagates a fracture.
+[SPEAKER_00]: OK.
+[SPEAKER_00]: So it's better at pushing through those
+grains, which are more densely packed in
+[SPEAKER_00]: the fine grain.
+[SPEAKER_00]: Thank you.
+[SPEAKER_00]: That's very helpful.
+[SPEAKER_00]: I can go back to the first point,
+which is, and especially this has to do
+[SPEAKER_00]: when you're doing sections as well,
+an AFMM section.
+[SPEAKER_00]: So you get these sort of nice tri-junction
+middle lamellae areas where what everybody
+[SPEAKER_00]: does right now, and whether or not that's
+a good thing to do, is they assume that
+[SPEAKER_00]: you have an incompressible material.
+[SPEAKER_00]: And so all these equations, you're using a
+Poisson ratio of 0.5.
+[SPEAKER_00]: So you make a lot of assumptions.
+[SPEAKER_00]: I think that, and definitely, so the wall,
+because that geometry becomes important as
+[SPEAKER_00]: well, as you said, because you have a
+thicker amount of material, it may appear
+[SPEAKER_00]: stiffer because it has less room to move
+in.
+[SPEAKER_00]: We haven't started doing that yet,
+but there's a lot of simulations you can
+[SPEAKER_00]: do, simulated indentations in finite
+element models, which could be a way for
+[SPEAKER_00]: controlling for that.
+[SPEAKER_00]: I think that's probably what we'll do.
+[SPEAKER_00]: So we'll just make a section and indent on
+it in silico.
+[SPEAKER_03]: Yeah.
+[SPEAKER_03]: There's just one more question that I was
+interested in.
+[SPEAKER_03]: I assumed, and correct me if I'm wrong,
+that when you're talking about the
+[SPEAKER_03]: pectins, you're talking about the pectins
+within the cell wall.
+[SPEAKER_03]: The question is, what is happening in the
+middle lamellae and the galacto-euronic
+[SPEAKER_03]: acids that are binding the cells together,
+particularly where you have those three
+[SPEAKER_03]: anticlinal walls?
+[SPEAKER_00]: Those junctions.
+[SPEAKER_00]: I can repeat the question.
+[SPEAKER_00]: So it's asking, so I'm making some
+conclusions about pectin in the cell wall,
+[SPEAKER_00]: but I'm not making distinctions between
+where in the cell wall we're looking.
+[SPEAKER_00]: So the middle lamellae which is
+responsible for the adhesion of cells
+[SPEAKER_00]: together is that different than,
+say, the proximal primary cell wall to the
+[SPEAKER_00]: cell, which may be more growth regulatory.
+[SPEAKER_00]: So our measurements right now haven't been
+fine enough to really tell us the
+[SPEAKER_00]: difference between middle lamellae and
+proximal, like right next to the cell.
+[SPEAKER_00]: My postdoc for us is really interested in
+looking at cell adhesion and its
+[SPEAKER_00]: maintenance.
+[SPEAKER_00]: And so he started looking at some actin
+mutants that we can see have mechanically
+[SPEAKER_00]: different clinical differences,
+but I'm hoping that this section
+[SPEAKER_00]: technique, really fine tips, really fine
+scans, might actually let us see
+[SPEAKER_00]: differences in middle lamellae versus
+primary cell wall.
+[SPEAKER_00]: I think that's probably the best way to
+go.
+[SPEAKER_00]: In the galactan paper that's coming out in
+Plant Fizz, we can see that there's,
+[SPEAKER_00]: in a single wall, in a sieve element,
+there's a gradient of binding of the
+[SPEAKER_00]: antibody for galactan, and there's a
+gradient of mechanics across the wall.
+[SPEAKER_00]: So we're starting to be able to see that
+kind of resolution, but we don't really
+[SPEAKER_00]: have the answers yet.
+[SPEAKER_03]: Hello?
+[SPEAKER_00]: So the question is whether we've seen any
+change in plasma dismata number,
+[SPEAKER_00]: size, maybe even opening with changes in
+pectum methylation.
+[SPEAKER_00]: We haven't looked, so that is a bad answer
+for you, but it is the answer.
+[SPEAKER_00]: So we haven't looked.
+[SPEAKER_00]: One might expect that the more rigid the
+gel gets, maybe the less easy it is for
+[SPEAKER_00]: plasma dismata to dilate.
+[SPEAKER_00]: I know that there are people looking at
+the callous deposition, and we've been
+[SPEAKER_00]: doing some measurements for them on what
+callous does to the material properties of
+[SPEAKER_00]: the wall.
+[SPEAKER_00]: Because callous accumulation, maybe you
+know better than I do, callous
+[SPEAKER_00]: accumulation around plasma dismata can
+really restrict also their dilation.
+[SPEAKER_00]: But it's a question that sometimes we get
+asked, and I don't have a really good
+[SPEAKER_00]: answer for it.
+[SPEAKER_00]: I mean, I think the only way to look would
+be to ask whether some plastic movement is
+[SPEAKER_00]: different when you have the PME induction
+versus the PMEI, but we haven't done it
+yet.
+[SPEAKER_00]: Thank you for coming.
+[SPEAKER_00]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_00]: Thank you.
+[SPEAKER_00]: Thank you.
+Thank you.

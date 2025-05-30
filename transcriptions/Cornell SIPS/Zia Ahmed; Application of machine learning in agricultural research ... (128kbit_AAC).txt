@@ -1,0 +1,836 @@
+[SPEAKER_02]: This is a production of Cornell
+University.
+[SPEAKER_04]: So today I asked to give some talk about
+machine learning in digital agriculture.
+[SPEAKER_04]: What is the difference between human and
+machine?
+[SPEAKER_04]: So human learns from experience and
+machine need to be told what to do.
+[SPEAKER_04]: So is it possible we can can you get
+machine learned from experience?
+[SPEAKER_04]: The answer is yes.
+[SPEAKER_04]: That is precisely machine learning is.
+[SPEAKER_04]: So the experience of machine is called the
+data.
+[SPEAKER_04]: Now it's possible to solve some problem or
+predict something by a machine when you
+[SPEAKER_04]: change the machine with large number of
+data.
+[SPEAKER_04]: And with sophisticated statistical
+predictive models.
+[SPEAKER_04]: So perfect example is now is self driving
+car identification is spam mail.
+[SPEAKER_04]: And you speak recognition, effective web
+source and understanding the human genome.
+[SPEAKER_04]: Recently, the growth of agriculture has
+visited agriculture related fields,
+[SPEAKER_04]: generate vast amount of data.
+[SPEAKER_04]: So this is give us opportunity to apply
+predictive model.
+[SPEAKER_04]: To solve some problem in related to the
+agriculture.
+[SPEAKER_04]: So this field is mostly promising in field
+of remote sensing with proximal data set.
+[SPEAKER_04]: And also the fertilizer recommendation.
+[SPEAKER_04]: If you have a large amount of data,
+you can generate for field experiment.
+[SPEAKER_04]: And digital soil measurement.
+[SPEAKER_04]: Mapping.
+[SPEAKER_02]: Sorry.
+[SPEAKER_04]: So today I going to give some of the
+finding what I did when I was in there.
+[SPEAKER_04]: See me to in Bangladesh with me.
+[SPEAKER_04]: And also at the work, some of the work I
+did with join us with data, soil carbon
+[SPEAKER_04]: data.
+[SPEAKER_04]: So first study, we developed a special
+predictive model of Mase fertilizer
+[SPEAKER_04]: recommendation.
+[SPEAKER_04]: Using a single machine learning is called
+the random forest.
+[SPEAKER_04]: And another, I use the data set from
+Western USA soil carbon data to develop a
+[SPEAKER_04]: matter symbol learning model for a special
+interpolation of soil organic carbon.
+[SPEAKER_04]: So this is the study.
+[SPEAKER_04]: It's a lot of people involved this study.
+[SPEAKER_04]: So two international organization,
+three, four.
+[SPEAKER_04]: They meet PD, IPNS, and two national
+in-store involved this study.
+[SPEAKER_04]: So why are you doing this study?
+[SPEAKER_04]: So Mase is the second crop in Bangladesh.
+[SPEAKER_04]: Mostly growing for livestock, poultry,
+and fish.
+[SPEAKER_04]: And unfortunately, a lot of farmers apply
+unbalanced fertilization.
+[SPEAKER_04]: So mostly they apply to more nitrogen,
+less potassium, and K and other
+[SPEAKER_04]: micronutrients.
+[SPEAKER_04]: So innovative approach.
+[SPEAKER_04]: Such as site-specific nutrient management
+with integrate field-specific decision on
+[SPEAKER_04]: nutrient requirement based on indigenous
+nutrient supply capacity, recovery,
+[SPEAKER_04]: IPNC applied land, and attenable yield.
+[SPEAKER_04]: Over time, SNM approach evolved into
+simplified form of estimate fertilizer
+[SPEAKER_04]: requirement based on attenable yield and
+yield response using omission soil trials.
+[SPEAKER_04]: So recently, SNM integration into decision
+support system, they recently two tools
+[SPEAKER_04]: developed by, one is called NITEN expert,
+International Plant NITEN Institute,
+[SPEAKER_04]: and other NITEN manager, International
+Rice Institute, to recommend fertilizer
+[SPEAKER_04]: for Southeast Asia for maize and rice.
+[SPEAKER_04]: So we found that these two tools are
+perfectly welled when control experiment
+[SPEAKER_04]: were done.
+[SPEAKER_04]: But scale-up issue, there is no farmer is
+adopting this tool.
+[SPEAKER_04]: So we are trying to explore why.
+[SPEAKER_04]: So we set up an experiment in Bangladesh
+with fertilizer recommendation with this
+[SPEAKER_04]: tool, and also we monitor the farmer's
+field and farmer's management practice
+[SPEAKER_04]: around the field.
+[SPEAKER_04]: And also we have another treatment with
+BRC, National Recommendation Fertilizer.
+[SPEAKER_04]: We found that most of the cases this tool
+have some yield advantage over fertilizer
+[SPEAKER_04]: farmer's practices.
+[SPEAKER_04]: But when you compare to the National
+Recommendation, only few farmers get
+[SPEAKER_04]: higher yield with this experiment.
+[SPEAKER_04]: So why is that?
+[SPEAKER_04]: So we try to explore all of the data.
+[SPEAKER_04]: So we found that lower yield associated
+two tools are associated with
+[SPEAKER_04]: site characterization, they wrongly site
+characterized, and also set the target
+[SPEAKER_04]: yield, low target yield.
+[SPEAKER_04]: The low target yield leads to low
+fertilizer recommendation.
+[SPEAKER_04]: In most cases, we found that this tool
+recommend lower fertilizer recommendation
+[SPEAKER_04]: than National Recommendation, both in low
+and high yield target.
+[SPEAKER_04]: So about 40 percent, 40 to 20 percent
+farmers, 20 percent cases, yield target is
+[SPEAKER_04]: lower than existing farmer's yield.
+[SPEAKER_04]: So while this is the, this S&M approach,
+site experience is very sound technology.
+[SPEAKER_04]: But they are also likely be difficult to
+scale up, and especially when the large
+[SPEAKER_04]: number of emerging farmers is Bangladesh.
+[SPEAKER_04]: Moreover, identification of the factor
+that regulate the indigenous soil supply
+[SPEAKER_04]: capacity, this is the first requirement of
+fertilizer recommendation, remain
+[SPEAKER_04]: important goal to identify the most
+appropriate, especially feasible unit,
+[SPEAKER_04]: and develop a special decision support
+system for developing customized nutrient
+[SPEAKER_04]: management recommendation, farmers on the
+larger scale.
+[SPEAKER_04]: So we developed use the data, we try to
+predict, especially maize yield without
+[SPEAKER_04]: fertilizers, and with optimum fertilizer,
+also agronomic nutrient efficiency,
+[SPEAKER_04]: and using the random forest regression
+model, and assemble the tree-based machine
+[SPEAKER_04]: learning model, and using the data,
+large amount of data, nutrient coefficient
+[SPEAKER_04]: for trial, legacy soil nutrient data,
+this is the only source data we have
+[SPEAKER_04]: available in Bangladesh, legacy soil map
+data, and also use your Landsat images to
+[SPEAKER_04]: characterize the area, which was the
+potential maize area.
+[SPEAKER_04]: So this is the experimental site of 324
+across the Bangladesh, this from 2011 to
+[SPEAKER_04]: 2013.
+[SPEAKER_04]: So we have a five-triple in there,
+totally LPK jet is optimum condition,
+[SPEAKER_04]: and we sequentially reduce nitrogen P,
+and K, and zinc.
+[SPEAKER_04]: So the legacy data set uses the huge
+amount of data used, especially 60,000
+[SPEAKER_04]: data point in use.
+[SPEAKER_04]: This data was collected from 1985 to 1995
+by SRDI, BARI, BD, and BU in Bina.
+[SPEAKER_04]: So use about 50,000 topsoil after cleaning
+up the data, and we applied the
+[SPEAKER_04]: multi-dustion prigging, that is called
+normal scope transform data, and predicted
+[SPEAKER_04]: the nutrient of all the soil element.
+[SPEAKER_04]: This is the map of all the soil nutrient
+element,
+[SPEAKER_04]: and also the legacy soil maps is developed
+by UNDB FAU in soil environmental report
+[SPEAKER_04]: in 1998.
+[SPEAKER_04]: It is agroecological zone, extreme
+temperature zone, drought, dry season
+[SPEAKER_04]: drought zone, soil moisture rain capacity,
+general soil types, and so on.
+[SPEAKER_04]: After reclassification of map,
+we converted 200-dustion data.
+[SPEAKER_04]: And NOPT site, 320, we have characterized
+accordingly the soil data and this
+[SPEAKER_04]: environmental data.
+[SPEAKER_04]: Then we identified the maize area.
+[SPEAKER_04]: The maize area is not exactly the maize
+area.
+[SPEAKER_04]: It is very difficult to find out the maize
+area in Bangladesh using the landscape
+[SPEAKER_04]: data.
+[SPEAKER_04]: So we just find a potential maize growing
+area, that is when highland Robi area,
+[SPEAKER_04]: that's mean highland dry season crop area.
+[SPEAKER_04]: So it's potentially growing for the maize.
+[SPEAKER_04]: So this is the analytical approach.
+[SPEAKER_04]: So we first split the data in training and
+validation data sets.
+[SPEAKER_04]: And then we applied the feature selection
+approach.
+[SPEAKER_04]: So we applied two methods here.
+[SPEAKER_04]: One is information gain and the recursive
+feature limiting with cause validation.
+[SPEAKER_04]: So then we applied the training process.
+[SPEAKER_04]: So use random forest and train the model
+for the maize field with optimum
+[SPEAKER_04]: fertilizers.
+[SPEAKER_04]: And maize field with NPK and also the
+economic efficiency of applied NPK chain.
+[SPEAKER_04]: And then we validate with our independent
+data set, how the efficiency are to
+[SPEAKER_04]: validate the model.
+[SPEAKER_04]: And then we predict this variable in
+prediction grid.
+[SPEAKER_04]: We used several art practices in carrot,
+mostly the carrot with random forest and
+[SPEAKER_04]: random forest, SRC, and so on.
+[SPEAKER_04]: This is the first type, we give example
+how to choose.
+[SPEAKER_04]: Feature selection, minus N, yield without
+N.
+[SPEAKER_04]: This is the recursive, we can find this is
+the, this method only selected the extreme
+[SPEAKER_04]: temperature, zone, soil, P, soil calcium,
+P and nitrogen sulfurs.
+[SPEAKER_04]: And the information gain approach selected
+about eight variables.
+[SPEAKER_04]: So we had to use the common variable in
+the both method to train our model.
+[SPEAKER_04]: This is the first eight variable
+importance variable for all the,
+[SPEAKER_04]: for optimum yield and under minus NPK and
+all the efficiency.
+[SPEAKER_04]: So this is the cause validation result.
+[SPEAKER_04]: And when we validate interval data set.
+[SPEAKER_04]: Model predicted not go well about 35 to 45
+percent, 44 percent in cause validation
+[SPEAKER_04]: result.
+[SPEAKER_04]: And similarly in the, with validation data
+set.
+[SPEAKER_04]: And we get the very poor efficiency in the
+maize prediction in zinc use efficiency,
+[SPEAKER_04]: only 12 percent with validation data set.
+[SPEAKER_04]: And highest we get the yield in minus K
+plot.
+[SPEAKER_04]: So we get about 58 with cause validation
+result and also with attaining that
+[SPEAKER_04]: testing data set about 51 percent.
+[SPEAKER_04]: So then we predict this model with our
+prediction grid.
+[SPEAKER_04]: This is the map of minus yield,
+minus P, minus K, minus zinc.
+[SPEAKER_04]: We can see those all over the country.
+[SPEAKER_04]: We get the lower yield without minus N.
+[SPEAKER_04]: And this yield is very much low we get in
+the south coastal part, Riksporn area in
+[SPEAKER_04]: Bangladesh.
+[SPEAKER_04]: And favorable environment where the maize
+are expanding very rapidly, this area will
+[SPEAKER_04]: get little bit higher yield.
+[SPEAKER_04]: It's not, may not be due to the soil
+variable, it is the favorable environment.
+[SPEAKER_04]: So it's slightly amazing.
+[SPEAKER_04]: And we similarly get the highest yield in
+minus, better yield in northern part of
+[SPEAKER_04]: the country, the same area.
+[SPEAKER_04]: And also the zinc.
+[SPEAKER_04]: So this is the agronomic efficiency map,
+Kg per Kg.
+[SPEAKER_04]: So we get the similar pattern.
+[SPEAKER_04]: In northern part of the country compared
+to other part country nitrogen efficiency
+[SPEAKER_04]: is a little bit higher.
+[SPEAKER_04]: And P efficiency mostly low here in the
+calcareous low pH area calcareous belt.
+[SPEAKER_04]: And we get the very low pH potassium
+efficiency here in barring tract.
+[SPEAKER_04]: The elevated area is a very drought-prone
+area and also very little in northern part
+[SPEAKER_04]: of the country.
+[SPEAKER_04]: And zinc efficiency we get the very
+abnormal high yield.
+[SPEAKER_04]: So we get high efficiency all over the
+country.
+[SPEAKER_04]: Then we calculate how much nutrient
+requirement in the maize-grained area.
+[SPEAKER_04]: So we found that most of the northern part
+of the country, we need little bit higher
+[SPEAKER_04]: nitrogen to get the optimum yield.
+[SPEAKER_04]: And also we get the, in potassium,
+for phosphorus, we get about 20 to 30 Kg K
+[SPEAKER_04]: we need this area.
+[SPEAKER_04]: And we get the very high K remodeling
+coastal area and central part of the
+[SPEAKER_04]: country.
+[SPEAKER_04]: And potassium, we need a very more than
+160 Kg potassium in northwestern part of
+[SPEAKER_04]: the country.
+[SPEAKER_04]: So when we calculate the area,
+we found about the 124% area, they need
+[SPEAKER_04]: 150 Kg yen, that is national
+recommendation.
+[SPEAKER_04]: And for phosphorus, we found 70% area.
+[SPEAKER_04]: For potassium, we actually get very higher
+area, we need to apply more potassium in
+[SPEAKER_04]: Bangladesh, some of the most area.
+[SPEAKER_04]: These are mostly concentrated in
+southwestern part, western northwestern
+[SPEAKER_04]: part of the country.
+[SPEAKER_04]: For zinc, we need our predicted model to
+show that the zinc we need little bit
+[SPEAKER_04]: lower.
+[SPEAKER_04]: The recommendation, this is 8 Kg.
+[SPEAKER_04]: I think 4 to 6 Kg enough to get the
+optimum yield.
+[SPEAKER_04]: Then we do just some simple economic
+analysis.
+[SPEAKER_04]: This is the yield of the, under our
+current condition, as I mentioned,
+[SPEAKER_04]: this is the northern part, less
+stress-pound area, maize yield
+[SPEAKER_04]: comparatively higher, and also gross
+return also higher.
+[SPEAKER_04]: And when you calculate how much fertilizer
+cost, and use this map to calculate the
+[SPEAKER_04]: net return, if the net return is still
+higher.
+[SPEAKER_04]: This over only the fertilizer,
+we are not considering any other factor
+[SPEAKER_04]: that irrigation cost, weeding cost,
+and others.
+[SPEAKER_04]: So, we evaluate the efficacy of machine
+learning, for predictive nutrient
+[SPEAKER_04]: requirement and agronomic efficiency,
+but model explained only 32, 50%
+[SPEAKER_04]: variability may be, and 12 to 40%
+variability make agronomic nutrient
+[SPEAKER_04]: efficiency.
+[SPEAKER_04]: This low predictive part of the model is
+probably due to the uncertainty of them,
+[SPEAKER_04]: the special data use this analysis,
+because all of the soil data is developed
+[SPEAKER_04]: long time ago.
+[SPEAKER_04]: And the map where they created by FAO,
+there is a lot of a special uncertainty.
+[SPEAKER_04]: And the NOPT experiments are used,
+the data from it is not especially
+[SPEAKER_04]: balanced.
+[SPEAKER_04]: Because experiments are not set up for,
+actually for this study.
+[SPEAKER_04]: So there is some cluster, it's not fully
+captured, the variability maize growing
+[SPEAKER_04]: condition in Bangladesh.
+[SPEAKER_04]: So, model needs to be trained with new
+data set.
+[SPEAKER_04]: When you develop new data set,
+especially balanced experiment,
+[SPEAKER_04]: then we can develop the special decision
+support system for border and
+[SPEAKER_04]: region-specific recommendation law to
+reach large number of farmers.
+[SPEAKER_04]: So, we are doing, one experiment in
+Bangladesh now.
+[SPEAKER_04]: So, we selected one maize growing area.
+[SPEAKER_04]: We have 300 fields, we are doing NOPT
+experiments, and we are generating data,
+[SPEAKER_04]: all of the soil data, map data using
+remote sensing to try to test our
+[SPEAKER_04]: hypothesis.
+[SPEAKER_04]: Is it possible to develop, especially DCM,
+our decision support system for Bangladesh
+[SPEAKER_04]: and North.
+[SPEAKER_04]: Also, we are doing same kind of
+experiment, five countries in our,
+[SPEAKER_04]: CIMIT is doing, I am not anymore in CIMIT.
+[SPEAKER_04]: CIMIT is being same experiment,
+five countries in Africa, Nepal,
+[SPEAKER_04]: and India with similar approach.
+[SPEAKER_04]: They are planning to use this model that
+analysis.
+[SPEAKER_04]: So, I am also helping them to organize all
+of the model and others.
+[SPEAKER_04]: So, another study I did with, to try to
+see if we assemble multiple model,
+[SPEAKER_04]: if we get a better prediction power or
+not.
+[SPEAKER_04]: So, this study is collaborative studies in
+Cornell, I get the data from Johannes,
+[SPEAKER_04]: and also the CISO, and they are involved
+in this study.
+[SPEAKER_04]: So, what is an assemble machine learning?
+[SPEAKER_04]: This means this is, you have to assembling
+multiple model with similar
+[SPEAKER_04]: characteristics or different
+characteristics.
+[SPEAKER_04]: There is three common approach there on
+bagging.
+[SPEAKER_04]: The multiple similar model with high
+variance.
+[SPEAKER_04]: These are average to decrease the
+variance.
+[SPEAKER_04]: Most perfect example is a random forest
+and back tree.
+[SPEAKER_04]: Another is boosting, build a multiple
+increment model to decrease the bias while
+[SPEAKER_04]: keeping the variance small.
+[SPEAKER_04]: This is the gradient boosting or extreme
+gradient boosting.
+[SPEAKER_04]: So, the stacking is totally different.
+[SPEAKER_04]: Stacking, we combine multiple layer
+machine learning, we call the sub models.
+[SPEAKER_04]: This is the stacking.
+[SPEAKER_04]: So, each model predict, prediction is done
+for each model.
+[SPEAKER_04]: Then use a new model, is the model level
+one, which learn from this model and make
+[SPEAKER_04]: final prediction, end up which is better
+than any individual model.
+[SPEAKER_04]: It may be sometime not true.
+[SPEAKER_04]: Sometimes we get the loss prediction.
+[SPEAKER_04]: If models are correlated each other,
+then we get the loss prediction.
+[SPEAKER_04]: It's called the stacking.
+[SPEAKER_04]: So, this study, I used eight machine
+learning model on this simple linear,
+[SPEAKER_04]: generalized linear regression and
+tree-based assemble, bagging method,
+[SPEAKER_04]: random forest, support vector machine with
+kernel-based regression and cube-based.
+[SPEAKER_04]: It's a very new model.
+[SPEAKER_04]: This is the rule-based model.
+[SPEAKER_04]: Another is extreme gradient boosting.
+[SPEAKER_04]: And generalized linear model with
+penalized maximum likelihood.
+[SPEAKER_04]: Another is a bison-based model.
+[SPEAKER_04]: It's a bison-based additive regression
+tree.
+[SPEAKER_04]: Another is a multivariate adaptive
+regression spline.
+[SPEAKER_04]: So, this is the data I get from USG.
+[SPEAKER_04]: We get from about 475 surface soil samples
+from Colorado, Kansas, Mexico,
+[SPEAKER_04]: and Wyoming.
+[SPEAKER_04]: These samples are collected from United
+State Geological Survey.
+[SPEAKER_04]: And more or less, it was predicted using
+the mid-infrared scopography and partial
+[SPEAKER_04]: least square regression was done to
+develop predicted model by Australia.
+[SPEAKER_04]: So, we then validate totally independent
+data sets.
+[SPEAKER_04]: These same samples are analyzed by USGS
+lab.
+[SPEAKER_04]: And we use several environmental
+variables.
+[SPEAKER_04]: Among the 10 variables, elevation,
+slope, gradient, slope, length,
+[SPEAKER_04]: aspect, vertical curvature, horizontal
+curvature, topography for position index,
+[SPEAKER_04]: slope position, and climate data.
+[SPEAKER_04]: We use the mean annual air temperature,
+mean annual precipitation, bioregium
+[SPEAKER_04]: group, NVDI, National Land Co-operative,
+and some soil data we get from STAGO soil
+[SPEAKER_04]: data, K-factor, and silt and clay.
+[SPEAKER_04]: This is the overall methodologies for to
+develop the special interpolation map.
+[SPEAKER_04]: So, this is almost similar to the
+traditional regression tree, but we use
+[SPEAKER_04]: the eight machine learning model and start
+them.
+[SPEAKER_04]: First, we transform the data with a log
+transformation.
+[SPEAKER_04]: And then split the data to data set
+training and validate.
+[SPEAKER_04]: And we change the model with eight model,
+the training data set, and the predictive
+[SPEAKER_04]: model.
+[SPEAKER_04]: We then start the residual, use the simple
+keying to the residual map, and then we
+[SPEAKER_04]: use the model to develop.
+[SPEAKER_04]: And we use the treatment, and then finally
+add it up together and develop the final
+[SPEAKER_04]: predictive map.
+[SPEAKER_04]: And similarly, we validate the data,
+independent data, testing data set with
+[SPEAKER_04]: the same approach we did.
+[SPEAKER_04]: This is the data set.
+[SPEAKER_04]: This is the, when we validate the MRI
+predicted soil carbon with measured soil
+[SPEAKER_04]: carbon, we get very good prediction.
+[SPEAKER_04]: This is, this analysis done totally
+separate laboratory.
+[SPEAKER_04]: One is done in Australia predictive model,
+another USGS.
+[SPEAKER_04]: So, we get little bit under estimate value
+in your MRI predicted, but overall
+[SPEAKER_04]: prediction is good.
+[SPEAKER_04]: And this is the special data.
+Sorry.
+[SPEAKER_04]: So, with the similar approach I mentioned
+for my Mays-Hill prediction, we use the
+[SPEAKER_04]: two feature selection methods.
+[SPEAKER_04]: One is unapproved, and another is one is
+we selected first four variable from here,
+[SPEAKER_04]: and for similar eight, nine variable from
+information gain, finally we get the nine
+[SPEAKER_04]: variable.
+[SPEAKER_04]: This is the map of this nine variable used
+for training the model.
+[SPEAKER_04]: So, this is overall the K4
+cross-validation statistics when we
+[SPEAKER_04]: training the model.
+[SPEAKER_04]: So, we found that overall among the eight
+model, random forest, a Mars and bison
+[SPEAKER_04]: additive regression get performed little
+bit better than other model.
+[SPEAKER_04]: And also this model explain more
+variability soil or current carbon.
+[SPEAKER_04]: When stacking these eight model together,
+we get the, we get very low RMSE,
+[SPEAKER_04]: RMSE is less than 0.2 in log scale,
+and model explain about 72% variability of
+[SPEAKER_04]: the soil organic carbon.
+[SPEAKER_04]: So, then we extract the residual all of
+the model and do the variable analysis,
+[SPEAKER_04]: and use this and do the simple cleaning,
+and predict it with validation data set,
+[SPEAKER_04]: and check what is the model efficiency
+when you compare the validation data set.
+[SPEAKER_04]: So, using the validation data set,
+we get the similar kind of results.
+[SPEAKER_04]: When we assemble the model, we get,
+we can explain the, this is the
+[SPEAKER_04]: non-special mean.
+[SPEAKER_04]: We have not added the residual,
+and this is the special mean we have added
+[SPEAKER_04]: the residuals.
+[SPEAKER_04]: We detected through the validation data
+point, we get the little bit better when
+[SPEAKER_04]: we added the residual at the 0.72%.
+[SPEAKER_04]: And we get the very, when you compare the
+traditional ordinary cleaning,
+[SPEAKER_04]: we can get about 20% improvement,
+that is we get the 20% lower error when
+[SPEAKER_04]: you assemble the model, and overall we get
+the 20 to 70% lower error when you use the
+[SPEAKER_04]: special assemble model, meta-assemble
+model.
+[SPEAKER_04]: But we get very little improvement over
+random forest recreation cleaning,
+[SPEAKER_04]: about 2.3 or 5% or something like that.
+[SPEAKER_04]: So, then we create a prediction model.
+[SPEAKER_04]: We added up the residual map and all of
+the predicted maps together.
+[SPEAKER_04]: This is the final map.
+[SPEAKER_04]: So, we, sorry.
+[SPEAKER_04]: We get the almost, this is the
+meta-assemble map.
+[SPEAKER_04]: The meta-assemble map almost similar to
+the random forest and BART map,
+[SPEAKER_04]: but other three maps underestimate the
+actual value.
+[SPEAKER_04]: It's less than 20%, we get the almost
+similar to the actual statistics of the
+[SPEAKER_04]: data.
+[SPEAKER_04]: So, this map also explained the local
+variability of the soil organic carbon due
+[SPEAKER_04]: to the influence of environmental factors.
+[SPEAKER_04]: So, we successfully assembled eight
+machine learning model and combination of
+[SPEAKER_04]: the geostatistics to map soil organic
+large area in the western USM.
+[SPEAKER_04]: So, this model is a better, show the
+better performance than ordinary cleaning
+[SPEAKER_04]: as well cleaning with other base learner
+models or sub-models.
+[SPEAKER_04]: So, model also complement with other
+environmental information, that's the
+[SPEAKER_04]: making the special in terms of soil
+organic carbon more efficient than useful.
+[SPEAKER_04]: So, I'm done.
+[SPEAKER_04]: What's next?
+[SPEAKER_04]: I may be too early.
+[SPEAKER_00]: Thank you very much.
+[SPEAKER_00]: I was wondering, in your MACE project,
+I might have missed it or would just need
+[SPEAKER_00]: you to help me spell it out.
+[SPEAKER_00]: If there's one data product that you could
+fund to improve what would it be to make
+[SPEAKER_00]: it significantly better your predictions?
+[SPEAKER_00]: Any soil properties or what would you like
+donors to improve so that your predictions
+[SPEAKER_00]: get significantly better?
+[SPEAKER_00]: What was it most sensitive to?
+[SPEAKER_04]: Most sensitive is, of course, the soil
+variable, some of the soil variable.
+[SPEAKER_04]: And also, we have to incorporate some of
+the management decision of farmers,
+[SPEAKER_04]: what kind of fertilizer farmers applied in
+the field.
+[SPEAKER_04]: So, this year, last year, we did,
+I told before that we are conducting a
+[SPEAKER_04]: large number of farmers.
+[SPEAKER_04]: We are collecting all of the information
+of farmers' management history,
+[SPEAKER_04]: how much fertilizer they are applying to
+this field.
+[SPEAKER_04]: And also, the how did they grow previous
+rice crop, how they manage the rice.
+[SPEAKER_04]: So, there is maybe some residual effect of
+fertilizer when they applied to the rice
+[SPEAKER_04]: and they have some in the MACE crop.
+[SPEAKER_04]: In two decision support system,
+the Newton expert, Newton manager,
+[SPEAKER_04]: they need this kind of input for setting
+the target yield goal.
+[SPEAKER_04]: But most of the time, you see that when
+you ask the farmers, there is a large
+[SPEAKER_04]: possibility that they get the wrong
+answer.
+[SPEAKER_04]: Farmers don't know the reply.
+[SPEAKER_04]: They give some of the numbers,
+some of the things.
+[SPEAKER_04]: So, we are trying to develop a special
+explicit database.
+[SPEAKER_04]: So, we are using the, we use the SAR MACE,
+especially the RR MACE to predict rice
+[SPEAKER_04]: yield in the same field.
+[SPEAKER_04]: So, we have a 300 MACE field and we
+predict the rice yield.
+[SPEAKER_04]: So, no need to ask the farmers how much,
+how did we get the rice yield last year.
+[SPEAKER_04]: So, we get the data from our data.
+[SPEAKER_04]: So, I think this kind of data may be
+important to get the better prediction
+[SPEAKER_04]: models to incorporate all of the data.
+[SPEAKER_04]: So, beside the soil data and other soil
+map data, we need to know the how much
+[SPEAKER_04]: farmers is applied, what is the manage
+effect is existing with some reason,
+[SPEAKER_04]: how is it vary to reason to reason.
+[SPEAKER_04]: And we can go to the precisely Newton
+management.
+[SPEAKER_04]: Not precisely, because we cannot reach in
+every farmers.
+[SPEAKER_04]: It's impossible for farming like in
+Bangladesh, small scale farming.
+[SPEAKER_04]: So, we try to develop a landscape base or
+something block-based fertilizer
+[SPEAKER_04]: recommendation.
+[SPEAKER_04]: So, our plan was that we do a special
+decision support system.
+[SPEAKER_04]: We ask the farmer, where are you from?
+[SPEAKER_04]: And we have all of the special database.
+[SPEAKER_04]: We will generate it.
+[SPEAKER_04]: And if you extract all of the information
+from this database, and maybe we ask the
+[SPEAKER_04]: farmer, how much you want, and we get the
+fertilizer recommendation.
+[SPEAKER_04]: It will be done by the dealer who sell the
+seed, who sell the fertilizers.
+[SPEAKER_04]: And all of them will be done by the paper
+base, no computer base or something fancy
+[SPEAKER_04]: mobile base.
+[SPEAKER_04]: It looks sound, but it's not, maybe not,
+it will be takes time to work in our
+[SPEAKER_04]: country.
+[SPEAKER_04]: Because when you see, I see in my
+experiment, when I see the farmers asking
+[SPEAKER_04]: from the tap-based hardware, farmers try
+to be smart.
+[SPEAKER_04]: They want to give some more answers.
+[SPEAKER_04]: Sometimes these answers are not correct.
+[SPEAKER_04]: So, we are trying to avoid the
+sub-complication.
+[SPEAKER_02]: Thanks, that was very interesting.
+[SPEAKER_02]: A couple of questions about the soil
+carbon mapping area.
+[SPEAKER_02]: One is just a clarification, which is
+related to the calibration and the
+[SPEAKER_02]: validation set.
+[SPEAKER_02]: You looked on the map there.
+[SPEAKER_02]: Most of your data is from the calibration
+set.
+[SPEAKER_02]: So, are you confident that you can disable
+the nitrogen model when you check against
+[SPEAKER_02]: the validation set?
+[SPEAKER_02]: It looked like the validation set was very
+tiny.
+[SPEAKER_04]: No, actually we selected 20% data for
+validation.
+[SPEAKER_02]: And calibration was 50%?
+[SPEAKER_02]: 80% data.
+[SPEAKER_02]: Other side was, a number of other people
+are doing similar things, like the solar
+[SPEAKER_02]: grids project, for example, global scale.
+[SPEAKER_02]: Can you comment a little bit on how yours
+relates to these other efforts?
+[SPEAKER_04]: I just read a couple of publications
+there.
+[SPEAKER_04]: Global Soil Information System.
+[SPEAKER_04]: They published recently one paper,
+global mapping using assemble two model.
+[SPEAKER_04]: It's okay, but they did some only the
+cross-validation.
+[SPEAKER_04]: They have no validation data set and
+training data set.
+[SPEAKER_04]: They are not exploring what is the
+relationship with the carbon and the
+[SPEAKER_04]: predictor they use.
+[SPEAKER_04]: And they have no actually any approach,
+because this is a very dangerous thing in
+[SPEAKER_04]: machine learning.
+[SPEAKER_04]: Sometimes machine learning is
+overpredicted.
+[SPEAKER_04]: So, if you are not carefully select your
+predictor, most of the time we'll get the
+[SPEAKER_04]: overestimated prediction.
+[SPEAKER_04]: So, these two papers recently published,
+they have not done these things.
+[SPEAKER_04]: They used a large number of millions of
+data points and predicted carbon.
+[SPEAKER_04]: These things have happened.
+[SPEAKER_04]: This kind of global mapping of the land
+use and other things done by different
+[SPEAKER_04]: organizations.
+[SPEAKER_04]: So, when you carefully check for the
+third-order country in Africa and Asia,
+[SPEAKER_04]: we get a surprise.
+[SPEAKER_04]: Most of the analysis is wrong.
+[SPEAKER_04]: So, they have no training data set,
+nothing.
+[SPEAKER_04]: Just they get the data and do the global
+soil things and global mapping,
+[SPEAKER_04]: and most of the time they are wrong.
+[SPEAKER_04]: So, we checked this data for Bangladesh
+and Mexico.
+[SPEAKER_04]: We found this data.
+[SPEAKER_04]: The big Walmart parking lot, they classify
+as a mazeland.
+[SPEAKER_04]: And similarly in the Bangladesh.
+[SPEAKER_04]: So, they published the data in a good
+journal.
+[SPEAKER_04]: I don't know.
+[SPEAKER_04]: This is a lot of uncertainty that people
+are doing without knowing the landscape,
+[SPEAKER_04]: knowing the nothing.
+[SPEAKER_03]: I have a question kind of similar to
+Yahan's.
+[SPEAKER_03]: If you could pick any three soil variables
+and have high-resolution maps for your
+[SPEAKER_03]: mazeland, what variables would they be and
+why in this Bangladesh system?
+[SPEAKER_03]: So, what's really constraining?
+[SPEAKER_04]: We select the obvious soil carbon.
+[SPEAKER_04]: So, carbon.
+[SPEAKER_04]: And soil for Bangladesh context is
+potassium.
+[SPEAKER_04]: Because potassium now depletion is
+alarming in Bangladesh due to the waste
+[SPEAKER_04]: cultivation.
+[SPEAKER_04]: A lot of potassium is mining from the
+soil.
+[SPEAKER_04]: Another may be the pH important,
+but the soil pH, soil pH, but greatly
+[SPEAKER_04]: related to the soil pH, sometimes farmers'
+management practices.
+[SPEAKER_04]: Because when farmers apply, there's a
+residual of the soil.
+[SPEAKER_04]: It's very hard to get the available pH to
+develop predictive model.
+[SPEAKER_04]: Most of the time we get the wrong answer
+at the soil pH.
+[SPEAKER_04]: So, it's better to the stable nutrient.
+[SPEAKER_04]: There's a very little influence by soil
+chemistry and influenced by the management
+[SPEAKER_04]: and some of the mining for soil potassium
+also might be good for the soil textures.
+[SPEAKER_04]: There's some influence of soil or nutrient
+availability or nutrient depletion.
+[SPEAKER_05]: I have a question about the yield
+prediction.
+So, maybe I could get an instant,
+but how do you incorporate in the model
+[SPEAKER_01]: that we use different crop varieties?
+[SPEAKER_04]: Yeah, it's a very nice question.
+[SPEAKER_04]: Yeah, actually all of the variety we use
+here is two types, mostly hybrid maize.
+[SPEAKER_04]: So, we don't know is that a variety is
+responsible or not.
+[SPEAKER_04]: So, this experiment we did in Bangladesh,
+we supplied the seed to the farmers.
+[SPEAKER_04]: This is uncertainty due to the variety.
+[SPEAKER_04]: So, this experiment we supplied with the
+similar type of maize variety.
+[SPEAKER_04]: So, we are doing the same experiment with
+400 farmers with similar, same maize
+[SPEAKER_04]: variety.
+[SPEAKER_04]: So, it's just you know the last times we
+get some of the uncertainty due to the
+[SPEAKER_04]: variety and showing times and other
+things.
+[SPEAKER_04]: We try to use the one window of showing
+the 15 days windows of showing times.
+[SPEAKER_04]: It's very difficult to do this kind of
+experiment in the farmers field.
+[SPEAKER_01]: But can you include, for example,
+as a variable the crop variety?
+[SPEAKER_04]: So, we did some of it.
+[SPEAKER_01]: With the ranking that you get,
+you can see how much is the importance of
+[SPEAKER_01]: the crop variety compared, for example,
+to soil features.
+[SPEAKER_01]: So, you can see maybe how much you can
+improve your prediction having the data
+[SPEAKER_01]: from the crop variety.
+[SPEAKER_01]: Because I think that it's going to play a
+substantial role in the value of
+[SPEAKER_01]: prediction.
+[SPEAKER_04]: Yeah.
+[SPEAKER_04]: Yes, you are true.
+[SPEAKER_04]: Maybe we can try these things.
+[SPEAKER_04]: But most of the hybrid variety,
+those are in growing in the Bangladesh.
+[SPEAKER_04]: They have the similar types of yield
+potentiality in Bangladesh.
+[SPEAKER_04]: So, they are used mostly fine yard and
+monsanto variety.
+[SPEAKER_04]: They yield potential almost similar.
+[SPEAKER_04]: So, I maybe try to run them a model with
+the variety.
+[SPEAKER_04]: Let's see how it's going on.
+[SPEAKER_05]: For questions, please.
+Thanks.
+[SPEAKER_02]: This has been a production of Cornell
+University on the web at Cornell.edu.
+[SPEAKER_02]: Thank you.
+[SPEAKER_02]: Thank you.
+Thank you.

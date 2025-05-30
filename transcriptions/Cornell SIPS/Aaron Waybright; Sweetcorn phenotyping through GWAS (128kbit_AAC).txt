@@ -1,0 +1,458 @@
+[SPEAKER_01]: This is a production of Cornell
+University.
+[SPEAKER_01]: Our next presenter is Aaron Waibright.
+[SPEAKER_01]: Aaron's from Gettysburg, Pennsylvania,
+and he was mentored on this project by
+[SPEAKER_01]: Mike Gore with help from undergraduate
+James Chemnis and lab manager Nick
+[SPEAKER_01]: Kalisman.
+[SPEAKER_01]: After graduation, he plans to do an intern
+at CIMA in Mexico.
+[SPEAKER_01]: That's going to be great.
+[SPEAKER_01]: His seminar title is Field Teen Attempting
+Through GWAS.
+[SPEAKER_03]: Once again, my name is Aaron Waibright.
+[SPEAKER_03]: I am a senior plan science major
+graduating in a few weeks now.
+[SPEAKER_03]: And concentrating in plant breeding and
+genetics.
+[SPEAKER_03]: So the project I was working on was with
+the Gore Lab.
+[SPEAKER_03]: Yep, I got inspired to work in the Gore
+Lab by taking Dr. Michael Gore's class,
+[SPEAKER_03]: Nutritional Quality Improvement of Field
+Crops.
+[SPEAKER_03]: Most of my exposure to plant breeding thus
+far had been to maximize traits that
+[SPEAKER_03]: maximize yield.
+[SPEAKER_03]: And the approach they were taking was to
+work on traits that increase the
+[SPEAKER_03]: nutritional quality of it.
+[SPEAKER_03]: So it's kind of difficult because they're
+not as easily quantified, but ultimately
+[SPEAKER_03]: they're resulting in higher quality crops,
+which I think is something that's very
+[SPEAKER_03]: important.
+[SPEAKER_03]: So I signed on as a field assistant the
+following summer and stayed on with the
+[SPEAKER_03]: lab to continue working with the data I
+collected over the summer in a fall
+[SPEAKER_03]: research project.
+[SPEAKER_03]: So most of the work was done at Aurora,
+where a member of the Gore Lab,
+[SPEAKER_03]: Matt Messagio, a PhD student, is working
+on a breeding project.
+[SPEAKER_03]: This was the third year of the breeding
+project to increase vitamin A and E
+[SPEAKER_03]: content, and sweet corn adapted for the
+New York environment.
+[SPEAKER_03]: So I was spending most of the time working
+on that, a little bit of time working with
+[SPEAKER_03]: the field corn for another project,
+but I was gaining a lot of exposure to
+[SPEAKER_03]: phenotyping tools.
+[SPEAKER_03]: So as breeding projects become more
+expansive and as the technology really
+[SPEAKER_03]: increases a lot, we had the capability to
+collect simply a ton of data now,
+[SPEAKER_03]: which can only be can only lead to better
+results.
+[SPEAKER_03]: So I spent the majority of my time working
+with this phenotyping.
+[SPEAKER_03]: We had a mobile field book app,
+which was just a smartphone app,
+[SPEAKER_03]: and we had barcodes and scanners we were
+using to collect our phenotypic data.
+[SPEAKER_03]: So this really made it much easier back
+then, back to the days when you had to use
+[SPEAKER_03]: your ruler and write down your
+measurements.
+[SPEAKER_03]: So we took things such as flowering time,
+plant height, ear height, node counts,
+[SPEAKER_03]: et cetera.
+[SPEAKER_03]: Plant height is the trait that most
+relevant to the rest of this talk.
+[SPEAKER_03]: So we'd collected all of this data over
+the summer, and I was still really
+[SPEAKER_03]: interested, and I asked to stay on in the
+fall to work with this data to help be
+[SPEAKER_03]: involved in this breeding project,
+and I was advised by James Chamness,
+[SPEAKER_03]: someone who recently graduated and was
+also working in the Gore lab.
+[SPEAKER_03]: I wasn't, I had been learning a lot about
+genetics in school, but I was finding now
+[SPEAKER_03]: that, as Diafer mentioned, large,
+big data sets, I really had to learn a lot
+[SPEAKER_03]: about computers.
+[SPEAKER_03]: So James was very invaluable in this,
+and that was particularly relevant for
+[SPEAKER_03]: organizing the data.
+[SPEAKER_03]: After I had the data organized,
+I had to perform blup calculations,
+[SPEAKER_03]: which I will get more into later,
+and then the final ultimate step GWAS
+[SPEAKER_03]: here, which I will also explain in more
+detail.
+[SPEAKER_03]: So this here is an example of what the
+data kind of looks like after coming
+[SPEAKER_03]: through the mobile field book app.
+[SPEAKER_03]: So it's just kind of, you know,
+who collected this data?
+[SPEAKER_03]: Some metadata, as in the metadata is the
+data about the data.
+[SPEAKER_03]: So like this is when it was collected,
+the trait, and then you kind of got this
+[SPEAKER_03]: here, the barcode number for the plant,
+and the other relevance here, the relevant
+[SPEAKER_03]: measurements.
+[SPEAKER_03]: As you can tell, it's kind of messy.
+[SPEAKER_03]: It's not really particularly useful and
+not easily analyzed for a breeding
+[SPEAKER_03]: project.
+[SPEAKER_03]: So this was the end result.
+[SPEAKER_03]: It took me a lot of time to learn computer
+programming, to process all of this
+[SPEAKER_03]: instead of sorting it by hand.
+[SPEAKER_03]: So, you know, this is nice and organized.
+[SPEAKER_03]: We've got the field terms here,
+you know, and then the height measurement
+[SPEAKER_03]: there.
+[SPEAKER_03]: So I did most of this through Python,
+which was actually pretty easily
+[SPEAKER_03]: accessible.
+[SPEAKER_03]: I learned a lot of it through the C at
+computer science notes.
+[SPEAKER_03]: I never took the course, but all the notes
+are freely available through the class,
+[SPEAKER_03]: so that was definitely a big help.
+[SPEAKER_03]: And I learned a lot of computer skills
+here, you know, how to process these large
+[SPEAKER_03]: data sets that you can take years and
+years, and then too much time to process
+[SPEAKER_03]: by hand.
+[SPEAKER_03]: So one thing I really encountered,
+and this is something that I really
+[SPEAKER_03]: learned a lot about in a field trial here.
+[SPEAKER_03]: So oftentimes, the data is not perfect.
+[SPEAKER_03]: So right here, one of the example was,
+you know, should be obvious too large.
+[SPEAKER_03]: It's like, okay, is that data good?
+[SPEAKER_03]: Wrong tool use, that's concerning.
+[SPEAKER_03]: Barcode was upside down, also concerning.
+[SPEAKER_03]: So I had to go back through and check to
+make sure that this data was actually
+[SPEAKER_03]: usable, and then, you know, adding the
+necessary corrections.
+[SPEAKER_03]: So the next step, after all the data was
+in an organizable form, was to perform
+[SPEAKER_03]: blup calculations.
+[SPEAKER_03]: So the sweet corn diversity panel,
+we had planted out a bunch of different
+[SPEAKER_03]: genotypes to see how they perform in the
+New York environment.
+[SPEAKER_03]: Then, you know, we could choose from those
+for the breeding program as it progresses.
+[SPEAKER_03]: But field trials, they got a lot going on.
+[SPEAKER_03]: So like one portion of the field was like
+just riddled with corn root worm.
+[SPEAKER_03]: If you guys remember over the summer,
+there was a really big drought.
+[SPEAKER_03]: So like it's not these perfect numbers,
+these perfect values for what the value of
+[SPEAKER_03]: this plant's genotype.
+[SPEAKER_03]: So the blup calculation uses a mixed
+model.
+[SPEAKER_03]: So multiple variables, considers multiple
+variables in terms to get a standardized
+[SPEAKER_03]: value.
+[SPEAKER_03]: So like it takes in all those field terms
+I mentioned.
+[SPEAKER_03]: It kind of works that out.
+[SPEAKER_03]: So it makes a blup stands for best linear
+unbiased prediction.
+[SPEAKER_03]: So like, you know, if we can remove the
+biases from like the drought and from the
+[SPEAKER_03]: corn root worm, hopefully we can get the
+true value of this genotype, and then we
+[SPEAKER_03]: can actually consider it for the breeding
+program.
+[SPEAKER_03]: The blup wrapper, which is a program we
+used in our statistical analysis software,
+[SPEAKER_03]: considers all of these terms for
+significance and decides to see which ones
+[SPEAKER_03]: are impacting it, and then adjust the
+value, the blup value for that genotype
+[SPEAKER_03]: accordingly.
+[SPEAKER_03]: And then the REMWL is also part of this to
+reach this true value.
+[SPEAKER_03]: It gives sort of understand, it puts
+weights on like field terms, like the
+[SPEAKER_03]: field organizational statistics or the
+field, yeah, and gives you like the
+[SPEAKER_03]: necessary weights to give a true value of
+what genotypes you're considering.
+[SPEAKER_03]: So after we had, I kind of got a good
+grasp on this.
+[SPEAKER_03]: We were going to do some height trait
+analysis.
+[SPEAKER_03]: This was, we chose this because it was my
+first time working with this type of
+[SPEAKER_03]: bioinformatics process.
+[SPEAKER_03]: So this was to be a pretty straightforward
+trait, you know, wouldn't be too difficult
+[SPEAKER_03]: to assess.
+[SPEAKER_03]: So we decided to move forward with that.
+[SPEAKER_03]: So I had to learn a little bit more of
+computer skills to process this data.
+[SPEAKER_03]: So here is the result of the blups.
+[SPEAKER_03]: So this straight line here would be like,
+you know, a truly standardized line.
+[SPEAKER_03]: These little dots here are the genotype
+value.
+[SPEAKER_03]: So if it was a perfect fit, all of the
+little dots would be on the line.
+[SPEAKER_03]: But as you can see, we've got some
+trailing off here at the top and trailing
+[SPEAKER_03]: off at the bottom, meaning that even,
+you know, even with all the statistical
+[SPEAKER_03]: information we put in there, we were still
+not able to get good values for these
+[SPEAKER_03]: genotypes, good estimates of what their
+worth was.
+[SPEAKER_03]: But fortunately, because I came in later
+after three years of the breeding project
+[SPEAKER_03]: existing, I was able to draw upon 2014 and
+2015 data to bolster the strength of this
+[SPEAKER_03]: analysis.
+[SPEAKER_03]: So here are the model terms.
+[SPEAKER_03]: So like, you know, genotype, year,
+super, those are field terms.
+[SPEAKER_03]: And the program considers those,
+you know, to see which ones are impacting
+[SPEAKER_03]: it.
+[SPEAKER_03]: And we've got a much better fit here.
+[SPEAKER_03]: A little bit of trailing off, but that's
+expected.
+[SPEAKER_03]: So we could work with these values.
+[SPEAKER_03]: So now we had a good understanding of what
+each one of these genotypes was worth.
+[SPEAKER_03]: So now we decided to move on to GWAS.
+[SPEAKER_03]: GWAS stands for Genomic Wide Association
+Study.
+[SPEAKER_03]: So all the genotypes we were able to work
+with are, you know, pretty well studied,
+[SPEAKER_03]: pretty well mapped.
+[SPEAKER_03]: Plenty of SNPs, which are single
+nucleotide polymorphisms, which represent
+[SPEAKER_03]: like a known location in a genome that we
+can scan for and tag that very quickly.
+[SPEAKER_03]: So we were testing for the relevancy of
+these SNPs for plant height.
+[SPEAKER_03]: So if, you know, a bunch of the really
+tall plants had, all had the same SNPs,
+[SPEAKER_03]: like it seems like likely that those SNPs
+are linked genes that are influencing
+[SPEAKER_03]: plant height.
+[SPEAKER_03]: So we tested the SNPs relevancy here.
+[SPEAKER_03]: Each blue dot there counts as a SNP.
+[SPEAKER_03]: And if they were high above the red line,
+that indicates relevancy.
+[SPEAKER_03]: And as we can see, this was kind of
+surprising.
+[SPEAKER_03]: Most of them were high above the red line.
+[SPEAKER_03]: But because most modern maize breeding is,
+you know, you cross these lines back and
+[SPEAKER_03]: forth, there's a lot of relatedness,
+which can make SNPs seem more relevant
+[SPEAKER_03]: than they actually are.
+[SPEAKER_03]: So we corrected for this kinship.
+[SPEAKER_03]: And we got this resulting graph.
+[SPEAKER_03]: And all the SNPs here are right along the
+blue line, or right along the red line,
+[SPEAKER_03]: which actually indicates that there were
+no significant SNPs influencing plant
+[SPEAKER_03]: height.
+[SPEAKER_03]: This is a Manhattan plot.
+[SPEAKER_03]: Each one of these different colored
+portions is a chromosome.
+[SPEAKER_03]: And the height of the dot, the height of
+the SNP, indicates the relevancy of this
+[SPEAKER_03]: to plant height.
+[SPEAKER_03]: And they would have to be much higher for
+a relevant result or a relevant hit.
+[SPEAKER_03]: So this was kind of disappointing,
+but ultimately not super surprising
+[SPEAKER_03]: because plant height is a very
+quantitative trait, meaning that there are
+[SPEAKER_03]: many, many, many small genes each
+influencing the ultimate result of the
+[SPEAKER_03]: plant height.
+[SPEAKER_03]: So we were not able to identify any
+particular genes that were having a major
+[SPEAKER_03]: impact.
+[SPEAKER_03]: So once again, no significant results,
+which was kind of disappointing,
+[SPEAKER_03]: but gave me a big, a big, again,
+nice look into how science is done and
+[SPEAKER_03]: this is how, oftentimes, the results of
+these projects.
+[SPEAKER_03]: So I got a real, real feel for how,
+what's this got going on.
+[SPEAKER_03]: But it was really good for me to gain
+experience in, you know, in how a breeding
+[SPEAKER_03]: project is actually conducted.
+[SPEAKER_03]: Like I can only, you know, you can only
+get such a feel for it from learning
+[SPEAKER_03]: through the classroom.
+[SPEAKER_03]: Like the field study was definitely a
+surprise.
+[SPEAKER_03]: We really had to encounter a lot of
+obstacles and things that would change our
+[SPEAKER_03]: data and keep it from being like the
+perfect greenhouse trial experiment that's
+[SPEAKER_03]: obviously not achievable in a field study.
+[SPEAKER_03]: The data organization, I think,
+was really important to learn because
+[SPEAKER_03]: computer programming and big data,
+big bioinformatics is only going to be
+[SPEAKER_03]: more relevant in the breeding field moving
+forward.
+[SPEAKER_03]: And I was able to be involved in this
+analysis, which was, you know,
+[SPEAKER_03]: helping to decide the value of these
+genotypes.
+[SPEAKER_03]: And I look forward to learning more about,
+possibly into grad school, how to select
+[SPEAKER_03]: from that analysis what genotypes you want
+to work with moving forward.
+[SPEAKER_03]: And, yeah, bioinformatics is very
+important.
+[SPEAKER_03]: I would like to give acknowledgments to
+these members of the Gore lab,
+[SPEAKER_03]: Dr. Michael Gore, for taking me on and
+giving me the opportunity to work in his
+[SPEAKER_03]: lab with his facilities.
+[SPEAKER_03]: James Chamnitz for advising me throughout
+the project.
+[SPEAKER_03]: Nick Casmar, the lab advisor, for also
+continuing to supply a lot of advice and
+[SPEAKER_03]: helping me work through problems.
+[SPEAKER_03]: Matt Passagio, this was his project after
+all.
+[SPEAKER_03]: So, of course, I have to thank him.
+[SPEAKER_03]: And Dr. Elodie Gozabe for providing the
+blup wrapper for the lab.
+[SPEAKER_03]: The statistical analysis.
+[SPEAKER_03]: That's it.
+[SPEAKER_03]: Thank you, guys.
+[SPEAKER_03]: Any questions?
+[SPEAKER_02]: I was going to clear what made the
+analysis unbiased.
+[SPEAKER_02]: It looked like a linear model that didn't
+play with the LU, the U part.
+[SPEAKER_03]: You're talking this one here?
+[SPEAKER_03]: OK, so.
+[SPEAKER_02]: Well, whatever.
+[SPEAKER_02]: Whatever you're showing the model.
+[SPEAKER_02]: I think it was a couple of spots.
+[SPEAKER_03]: This here?
+[SPEAKER_02]: Right here, right here.
+[SPEAKER_02]: You have the Y equal to.
+[SPEAKER_02]: So, and you said it's a beyond bias
+prediction.
+[SPEAKER_02]: What makes it unbiased?
+[SPEAKER_02]: I guess I'm not clear.
+[SPEAKER_02]: It's a normal linear model.
+[SPEAKER_03]: OK, so if we planted the genotype,
+it's not a normal linear model because
+[SPEAKER_03]: it's considering multiple factors here,
+like the fixed effects and the random
+[SPEAKER_03]: effects.
+[SPEAKER_03]: So that is what make it different within a
+linear model.
+[SPEAKER_03]: If I'm answering your question.
+[SPEAKER_02]: So, in theory, you could have a best
+linear prediction and you could have a
+[SPEAKER_02]: best linear unbiased prediction.
+[SPEAKER_02]: So I'm sort of asking what might be the
+difference between the best linear
+[SPEAKER_02]: prediction and the best linear unbiased.
+[SPEAKER_02]: What makes that word unbiased show up?
+[SPEAKER_03]: Oh, yeah.
+[SPEAKER_03]: So the unbiased portion takes out the
+field study bias.
+[SPEAKER_03]: So, for example, part of the field that we
+planted out in had a cornworm,
+[SPEAKER_03]: corn rootworm.
+[SPEAKER_03]: And if we were to not correct for that,
+we would just think that those genotypes
+[SPEAKER_03]: were crap.
+[SPEAKER_03]: When really they might be valuable,
+but they just had the unfortunate luck of
+[SPEAKER_03]: being planted in a blighted portion of the
+field.
+[SPEAKER_03]: So this helps to correct for that.
+[SPEAKER_03]: Yeah, it utilizes the field blocking.
+[SPEAKER_03]: It utilizes the field blocking terms.
+[SPEAKER_02]: Could you go about two more slides forward
+again?
+[SPEAKER_02]: Sure thing.
+[SPEAKER_02]: So could you explain to me what the basis
+of that is and how you do the correction?
+[SPEAKER_02]: You said something about kinship that was
+embedded in that.
+[SPEAKER_02]: I want to understand that.
+[SPEAKER_03]: Yeah, so because a lot of these genotypes
+had lineages exchanged in their history,
+[SPEAKER_03]: in their arrival to this final product,
+they all related to some degree and were
+[SPEAKER_03]: all sharing some of the SNPs to some
+degree.
+[SPEAKER_03]: And so this was making SNPs seem more
+relevant than they actually were.
+[SPEAKER_03]: So we included a kinship matrix,
+which helps tone down the relevancy based
+[SPEAKER_03]: on how related the two genotypes,
+the genotypes were to each other.
+[SPEAKER_02]: I'm confused, then, because isn't the
+diversity panel supposed to limit that
+[SPEAKER_02]: extent?
+[SPEAKER_02]: I'm not a geneticist, obviously,
+so.
+[SPEAKER_02]: But I'm shocked if there's that much
+relationship there.
+[SPEAKER_03]: So because we were planting out maize
+lines, we planted out maize lines that
+[SPEAKER_03]: were expected to grow fairly well in this
+climate so that those types of maize lines
+[SPEAKER_03]: probably had similar backgrounds and
+ancestry to result in the same climate
+[SPEAKER_03]: adaptedness.
+[SPEAKER_00]: Yeah, go for it.
+[SPEAKER_00]: I was kind of curious.
+[SPEAKER_00]: When you were trying the normal 2q bot,
+what exactly quantum are you looking to
+[SPEAKER_00]: see if normally distributed or not?
+[SPEAKER_00]: And what relevance does that have to deal
+with whether or not the model is accurate?
+[SPEAKER_00]: I was just a little bit unclear.
+[SPEAKER_03]: OK, so we didn't expect any of these
+genotypes to be like rock stars.
+[SPEAKER_03]: They were all kind of similar.
+[SPEAKER_03]: So if one of them was suddenly so much
+better than all of the other ones,
+[SPEAKER_03]: that would be an issue.
+[SPEAKER_03]: So we wanted a nice distribution of seeing
+how they perform, which was the straight
+[SPEAKER_03]: line there.
+[SPEAKER_03]: And so after we correct unbiased the
+results, we were able to get a nice
+[SPEAKER_03]: distribution along that line, if I'm
+answering your question.
+[SPEAKER_02]: Thank you.
+[SPEAKER_01]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_01]: Thank you.
+[SPEAKER_01]: Thank you.
+Thank you.

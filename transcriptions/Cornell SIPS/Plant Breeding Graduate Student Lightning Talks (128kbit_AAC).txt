@@ -1,0 +1,1042 @@
+[SPEAKER_07]: This is a production of Cornell
+University.
+[SPEAKER_00]: Thank you.
+[SPEAKER_00]: Yes, as Emily said, my name is Erin.
+[SPEAKER_00]: I'm a fourth year PhD student in Mike
+Gorislav.
+[SPEAKER_00]: And I'm excited to talk with you all today
+about integrating data collected from
+[SPEAKER_00]: different proximal sensors for improved
+prediction of important traits.
+[SPEAKER_00]: So proximal sensors present a mechanism of
+field-based high throughput phenotyping
+[SPEAKER_00]: that saves time and labor as compared with
+manually measuring phenotypes.
+[SPEAKER_00]: So proximal sensors are those which do not
+come into direct contact with the plant
+[SPEAKER_00]: but are more close by or proximal than
+remote sensors such as satellites.
+[SPEAKER_00]: So you can see here some commonly used
+platforms for field-based proximal
+[SPEAKER_00]: sensing.
+[SPEAKER_00]: This includes unoccupied aerial vehicles
+such as drones, gantry systems,
+[SPEAKER_00]: tractors, push carts, ground rovers,
+and even smartphones.
+[SPEAKER_00]: The sensors which can be deployed on these
+different platforms include typical red,
+[SPEAKER_00]: green, blue cameras, multispectral and
+hyperspectral cameras which include
+[SPEAKER_00]: additional bands beyond those.
+[SPEAKER_00]: And then we also have lidar, thermal,
+and radar which can sense below ground
+[SPEAKER_00]: traits.
+[SPEAKER_00]: So these sensors have a broad application
+to both breeding and precision
+[SPEAKER_00]: agriculture.
+[SPEAKER_00]: They can be used to forecast end-of-season
+traits, therefore allowing selections to
+[SPEAKER_00]: be made pre-flowering and decreasing the
+breeding cycle.
+[SPEAKER_00]: Features from these data streams can be
+used in phenomic prediction where those
+[SPEAKER_00]: features replace traditional markers in
+genomic prediction.
+[SPEAKER_00]: They can also be used for building
+populations for genomic prediction,
+[SPEAKER_00]: genome-wide association studies,
+and the increased temporal resolution lens
+[SPEAKER_00]: to studying genotype bodies.
+[SPEAKER_00]: They have also been used for stress
+detection and efficient allocation of
+[SPEAKER_00]: resources in precision agriculture
+applications.
+[SPEAKER_00]: So due to the broad-reaching applications
+for breeding programs, significant
+[SPEAKER_00]: investment in studying the use of these
+different sensors and platforms for a
+[SPEAKER_00]: variety of different traits have been
+carried out.
+[SPEAKER_00]: In recent years, including productivity
+traits such as yields, biomass,
+[SPEAKER_00]: quality traits such as taste, and many
+others across a wide array of crops.
+[SPEAKER_00]: What this has ultimately led to is a large
+number of crop and trait-specific
+[SPEAKER_00]: algorithms.
+[SPEAKER_00]: In addition, these data streams are both
+very high-dimensional and complex.
+[SPEAKER_00]: A single multispectral image can have a
+couple hundred thousand pixel values for a
+[SPEAKER_00]: single plot.
+[SPEAKER_00]: And so how to effectively extract
+meaningful information from the data
+[SPEAKER_00]: becomes the challenge.
+[SPEAKER_00]: And we have ultimately relied on manual
+curation of features.
+[SPEAKER_00]: In addition, you can see there's a variety
+of different sensors which capture
+[SPEAKER_00]: wavelengths across the electromagnetic
+spectrum.
+[SPEAKER_00]: And platforms which allow capture of
+information at canopy, sub-canopy,
+[SPEAKER_00]: and below ground scales.
+[SPEAKER_00]: And while there's unique information
+contained within each of these data
+[SPEAKER_00]: streams, this data is usually used
+separately from each other and integration
+[SPEAKER_00]: is uncommon and lacks generalizability.
+[SPEAKER_00]: So as an example, on the left here we have
+a kind of pictographic representation of a
+[SPEAKER_00]: multispectral image which can be thought
+of as a grid of pixel values for each
+[SPEAKER_00]: band.
+[SPEAKER_00]: The bands kind of stacked on top of each
+other.
+[SPEAKER_00]: The most common mechanism for extracting
+information from these is by calculating
+[SPEAKER_00]: vegetation indices.
+[SPEAKER_00]: So you might be familiar with the
+normalized difference vegetation index
+[SPEAKER_00]: just calculated by taking the relative
+difference between the near-infrared and
+[SPEAKER_00]: the red bands of the image.
+[SPEAKER_00]: Ultimately reducing down to a single value
+per multispectral image.
+[SPEAKER_00]: An alternative to this is latent
+phenotyping.
+[SPEAKER_00]: So latent phenotyping is a mechanism of
+extracting features or information from
+[SPEAKER_00]: proximal sensing data streams using
+unsupervised machine learning algorithms
+[SPEAKER_00]: such as autoencoders.
+[SPEAKER_00]: So while NDVI, in this example,
+takes in just the NIR and the red band,
+[SPEAKER_00]: we're able to pass the entire image into
+the model to extract information.
+[SPEAKER_00]: In addition, where NDVI reduces down to a
+single value, we can extract a larger
+[SPEAKER_00]: number of latent features.
+[SPEAKER_00]: We specifically do this using autoencoders
+which can be conceptualized similar to
+[SPEAKER_00]: principal component analysis without the
+linearity constraints.
+[SPEAKER_00]: So it takes the input image and passes it
+through an encoder to reduce the
+[SPEAKER_00]: dimensionality and find an embedding.
+[SPEAKER_00]: That reduced space is then passed through
+an analogous network, the decoder,
+[SPEAKER_00]: to reproduce the original image.
+[SPEAKER_00]: And the model is optimized such that the
+difference between the original and the
+[SPEAKER_00]: reconstruction is minimized.
+[SPEAKER_00]: So in this way, the latent features should
+contain the necessary and sufficient
+[SPEAKER_00]: information to reconstruct the original
+image and are hopefully the most relevant
+[SPEAKER_00]: then and important features are seeing
+noise and other unimportant information.
+[SPEAKER_00]: So our goal is to make use of latent
+phenotyping to perform integration across
+[SPEAKER_00]: different sensors, preserving additional
+information that is lost with traditional
+[SPEAKER_00]: mechanisms of feature extraction and
+providing a generalizable method of
+[SPEAKER_00]: analyzing these data.
+[SPEAKER_00]: So I'll go through our end-to-end pipeline
+of data collection, processing,
+[SPEAKER_00]: and analysis through extracting and
+integrating latent features.
+[SPEAKER_00]: So we have specifically focused on
+multispectral images collected by
+[SPEAKER_00]: unoccupied aerial vehicles or drones,
+and LIDAR scans collected by unoccupied
+[SPEAKER_00]: ground vehicles or the rover here.
+[SPEAKER_00]: So the multispectral images collected
+blue, green, red, red edge, and
+[SPEAKER_00]: near-infrared bands.
+[SPEAKER_00]: Capturing that canopy-level spectral
+information, which is commonly extracted
+[SPEAKER_00]: as vegetation indices.
+[SPEAKER_00]: The LIDAR scans can be used to generate
+three-dimensional reconstructions of an
+[SPEAKER_00]: entire plot, giving sub-canopy
+architectural information.
+[SPEAKER_00]: These data were collected for maze
+hybrids, planted as part of the Genomes to
+[SPEAKER_00]: Fields initiative, for weekly collections
+from 2020 through 2021.
+[SPEAKER_00]: For each growing season, we pause rover
+collections a couple weeks post-flowering
+[SPEAKER_00]: until senescence as structural changes
+slow during that time.
+[SPEAKER_00]: Ultimately, giving a data set of about
+75,000 plot-level multispectral images and
+[SPEAKER_00]: about 35,000 plot-level cloud.
+[SPEAKER_00]: So the multispectral images are collected
+by this drone here.
+[SPEAKER_00]: You can see the camera on the bottom.
+[SPEAKER_00]: The raw images have about 80% overlap with
+each other, which allows them to be
+[SPEAKER_00]: stitched together to generate a
+field-scale image or orthomosaic.
+[SPEAKER_00]: The field-scale image can then be split
+down into our individual plot-level
+[SPEAKER_00]: images.
+[SPEAKER_00]: The LIDAR camera is on the back of the
+rover here, which drives in between the
+[SPEAKER_00]: two rows of maze.
+[SPEAKER_00]: The LIDAR scans collect the distance
+emitted light has traveled to the nearest
+[SPEAKER_00]: object.
+[SPEAKER_00]: It can be thought of as being in polar
+coordinates.
+[SPEAKER_00]: This is essentially converted into
+Cartesian coordinates to generate a
+[SPEAKER_00]: three-dimensional point cloud,
+where each point has an x, y, and z
+[SPEAKER_00]: coordinate associated with it.
+[SPEAKER_00]: Do further processing on this.
+[SPEAKER_00]: To remove erroneous points, do vertical
+flipping.
+[SPEAKER_00]: It's kind of stacking the rows on top of
+each other and then compressing that down
+[SPEAKER_00]: to a single two-dimensional image or
+density map, which can be input into an
+[SPEAKER_00]: autoencoder.
+[SPEAKER_00]: So we have trained autoencoders for both
+the multispectral images and the 2D
+[SPEAKER_00]: density maps.
+[SPEAKER_00]: You can see examples here of original
+images.
+[SPEAKER_00]: And as well as their reconstruction for
+both the MSIs and density maps.
+[SPEAKER_00]: The latent spaces can then be extracted
+from each of these trained models and
+[SPEAKER_00]: integrated.
+[SPEAKER_00]: So once these models had been trained and
+latent phenotypes had been extracted,
+[SPEAKER_00]: we wanted to first see what kind of
+information was contained within them.
+[SPEAKER_00]: So these are latent phenotypes for a
+single field in a single year.
+[SPEAKER_00]: We calculated the heritability for each of
+them in LIDAR and MSIs.
+[SPEAKER_00]: And what you can see here is the
+heritabilities range from near zero up to
+[SPEAKER_00]: about 0.9.
+[SPEAKER_00]: So we're capturing both heritable genetic
+information as well as likely
+[SPEAKER_00]: environmental information.
+[SPEAKER_00]: The latent phenotypes, once extracted and
+integrated, are then used for
+[SPEAKER_00]: characterizing manually measured
+phenotypes for the G2F fields.
+[SPEAKER_00]: So for each of the eight ground truth
+phenotypes that were collected as part of
+[SPEAKER_00]: the Genomes to Fields project,
+these were predicted by MSI latent
+[SPEAKER_00]: phenotypes for all dates in the growing
+season, LIDAR latent phenotypes for all
+[SPEAKER_00]: dates in the growing season, and then the
+integration of the two.
+[SPEAKER_00]: And these were compared against a baseline
+of 49 different vegetation indices,
+[SPEAKER_00]: calculated for all MSIs throughout the
+growing season.
+[SPEAKER_00]: And what you can see here is that
+flowering time and grain moisture,
+[SPEAKER_00]: NDBI has higher predictive ability for
+those traits.
+[SPEAKER_00]: For the remainder, the integrated latent
+phenotypes have higher predictability.
+[SPEAKER_00]: With variation on when MSI or LIDAR latent
+phenotypes are more highly predictive,
+[SPEAKER_00]: for example, you can see here ear height
+and plant height have higher
+[SPEAKER_00]: predictability from the LIDAR latent space
+as their architectural traits,
+[SPEAKER_00]: if it makes sense.
+[SPEAKER_00]: Overall, we see a 4.6 percent average
+increase in prediction accuracy for the
+[SPEAKER_00]: integrated latent space over vegetation
+indices across all traits.
+[SPEAKER_00]: Similarly, the integrated latent space
+outperforms MSI and LIDAR latent
+[SPEAKER_00]: phenotypes by an average of 5.1 percent
+and 20.8 percent respectively.
+[SPEAKER_00]: So finally, we wanted to look at how the
+prediction accuracies changed with the
+[SPEAKER_00]: addition of more information throughout
+the growing season.
+[SPEAKER_00]: So we iteratively added dates of
+information for each of the eight
+[SPEAKER_00]: phenotypes here.
+[SPEAKER_00]: So as predicted with the integrated latent
+space, we can see some prediction
+[SPEAKER_00]: accuracies don't change, for example,
+stay and count, which isn't changing over
+[SPEAKER_00]: the growing season.
+[SPEAKER_00]: So that makes sense.
+[SPEAKER_00]: Some traits which are not very easily
+predicted early in the season and only see
+[SPEAKER_00]: kind of a large bump toward the end.
+[SPEAKER_00]: But notably, there are some indices and
+traits that have reasonable prediction
+[SPEAKER_00]: accuracies pre-flowering.
+[SPEAKER_00]: So yield here sees a 0.1 increase from the
+pre-flowering predictions to the end of
+season.
+[SPEAKER_00]: Season incorporating all of the dates,
+indicating the potential for using this
+[SPEAKER_00]: data for pre-flowering forecasting.
+[SPEAKER_00]: So I would like to thank my committee,
+Mike Gore, Ali Tufan, Ying Sun,
+[SPEAKER_00]: and Margaret Smith.
+[SPEAKER_00]: I'd like to thank the Gore lab and Buckler
+lab specifically, Liam Wicks Doe and Nick
+[SPEAKER_00]: Pack for helping with the efforts of
+collecting so much of this data over five
+[SPEAKER_00]: years.
+[SPEAKER_00]: Kelly Robbins and Joe Gage for their
+assistance with modeling.
+[SPEAKER_00]: Abe Davis, Peter Michael, and Zeshi Gu for
+their assistance and incredible work on
+[SPEAKER_00]: the autoencoder modeling.
+[SPEAKER_00]: Thank you so much, and I'll take
+questions.
+[SPEAKER_00]: Yes, Charlie.
+[SPEAKER_02]: One of the traits you're looking at these
+correlations with are the traits
+[SPEAKER_02]: themselves are correlated with each other,
+right?
+[SPEAKER_02]: So like flowering time and yield.
+[SPEAKER_02]: So is there any way to kind of disentangle
+which of those the models or which of
+[SPEAKER_02]: those the latent spaces kind of capturing
+and which are like second order?
+[SPEAKER_00]: Yeah, that's a great question.
+[SPEAKER_00]: So the question was, since so many of
+these phenotypes are correlated with each
+[SPEAKER_00]: other, is there a way to disentangle which
+of the latent phenotypes are capturing and
+[SPEAKER_00]: which are just correlated with each other?
+[SPEAKER_00]: So the question.
+[SPEAKER_00]: So I think that is a great question,
+and we haven't done a lot of investigation
+[SPEAKER_00]: into which latent phenotypes are more
+highly correlated with which traits and
+[SPEAKER_00]: what they're capturing.
+[SPEAKER_00]: Ultimately, the latent phenotypes are
+still kind of a black box.
+[SPEAKER_00]: For us, and maybe relying on these
+relationships between between traits.
+[SPEAKER_00]: It's kind of a secondary kind of
+selection, but that is a very good
+[SPEAKER_00]: question.
+[SPEAKER_00]: I'll definitely look into that more.
+[SPEAKER_01]: When we fly drones, we like, you know,
+after you know, solar noon and like,
+[SPEAKER_01]: you know, cloud cover for the Lidar River,
+are there similar constraints and do those
+[SPEAKER_01]: impact how well certain data points can be
+integrated into your model?
+[SPEAKER_00]: So the question is, for flying drones and
+collecting multispectral images,
+[SPEAKER_00]: there are constraints on time of day and
+cloud cover and other conditions.
+[SPEAKER_00]: Are there similar constraints for the
+rover data?
+[SPEAKER_00]: So insofar as the data collection quality,
+there aren't really constraints.
+[SPEAKER_00]: The constraint would be around when we can
+feasibly drive the rover.
+[SPEAKER_00]: So if it's rainy, of course we can't,
+or if it has rained heavily in the past
+[SPEAKER_00]: day or two and it's too muddy,
+the tires will, you know, just kind of
+[SPEAKER_00]: spin.
+[SPEAKER_00]: So more constraints on the platform itself
+than the sensor.
+Yeah.
+[SPEAKER_03]: Very nice.
+[SPEAKER_03]: What I was wondering about, have you tried
+training between the two reps?
+[SPEAKER_03]: It'll mess up your heritability estimate,
+but if we want to say, we wanted to
+[SPEAKER_03]: capture really about genetics and kind of
+ignore some of the environmental ones,
+[SPEAKER_03]: have you been able to, does that work or
+have you tried that yet?
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: So that's a great question.
+[SPEAKER_00]: So the question is training between reps.
+[SPEAKER_00]: So using one rep as the input image and
+the second rep as the output, is that
+[SPEAKER_00]: correct?
+[SPEAKER_00]: So we haven't tried that.
+[SPEAKER_00]: So we've been, when focusing on kind of
+plot level predictions themselves,
+[SPEAKER_00]: and have looked less into kind of parsing
+out those genetic and environmental
+[SPEAKER_00]: factors within the latent features.
+[SPEAKER_00]: But that would definitely be something
+that we should look at for the next
+[SPEAKER_00]: iteration.
+[SPEAKER_03]: It would also be interesting to see if you
+could predict LIDAR, use the LIDAR to
+[SPEAKER_03]: predict the MRI and as essentially make
+the embedding space in between those two
+[SPEAKER_03]: or something.
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: Oh yeah.
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: That's a good point.
+[SPEAKER_00]: Thank you.
+[SPEAKER_05]: I didn't quite follow for latent
+phenotypes.
+[SPEAKER_05]: Is there an intuitive way you describe
+those in terms of like, okay, they're kind
+[SPEAKER_05]: of analogous to this in a PCA or like this
+in like weights in a layer.
+[SPEAKER_05]: So they're like dimensionless metrics on a
+plot level versus like a core image level.
+[SPEAKER_00]: Yes.
+[SPEAKER_00]: So yeah.
+[SPEAKER_00]: So you can think of them as like the
+principal components of some higher order
+[SPEAKER_00]: object.
+[SPEAKER_00]: That's probably the closest analogous,
+yeah, kind of conceptual way of thinking
+[SPEAKER_00]: about it.
+Yeah.
+[SPEAKER_07]: I'll do the last question.
+[SPEAKER_07]: So I know, of course, the last work with
+maze, but I was wondering with the rover,
+[SPEAKER_07]: are there any kind of like architectural
+limitations about what crops that you can
+[SPEAKER_07]: drag them through?
+[SPEAKER_00]: Yes.
+[SPEAKER_00]: That's a great question on the limitations
+of the rover, depending on the,
+[SPEAKER_00]: the architecture of the crop.
+[SPEAKER_00]: So the resolution of the LIDAR scans is on
+the order of centimeters.
+[SPEAKER_00]: So anything that is too small would not be
+able to be resolved by at least the
+[SPEAKER_00]: quality of the LIDAR camera that we are
+using.
+[SPEAKER_00]: There are likely higher resolution ones
+that could be used.
+[SPEAKER_00]: Also anything where you have what you're
+trying to measure may be blocked by kind
+[SPEAKER_00]: of lower foliage or something that might,
+because the, you know, the LIDAR is going
+[SPEAKER_00]: to bounce off of whatever it hits first.
+[SPEAKER_00]: So if you have something where you have
+lots of leaves or something and you want
+[SPEAKER_00]: to maybe get imaging of fruit that's up
+higher, the rover might not be the best
+[SPEAKER_00]: application.
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: Thank you so much.
+[SPEAKER_04]: Thank you very much.
+[SPEAKER_04]: Good afternoon, everybody.
+[SPEAKER_04]: My name is Seem and I'm a third year PhD
+student at the Small Grains Lab with
+[SPEAKER_04]: Professor Sorrells.
+[SPEAKER_04]: And today I'm going to talk about organic
+naked barley and breeding innovations for
+[SPEAKER_04]: resilience in the state of New York.
+[SPEAKER_04]: First of all, about naked barley itself,
+as one could imagine, it's the part of
+[SPEAKER_04]: naked in there means just that loss of the
+barley hull itself during the harvest
+[SPEAKER_04]: process, which is something that occurs
+naturally thanks to the loss of function
+[SPEAKER_04]: mutation in the new gene 8,000 years ago.
+[SPEAKER_04]: And this gene apparently codes the lipid
+layer that would glue together the hull
+[SPEAKER_04]: and the cariopsis.
+[SPEAKER_04]: And it's visible here as we see in the
+quick laser out here.
+[SPEAKER_04]: On the left, we see the covered barley and
+on the right, we see the naked barley or
+[SPEAKER_04]: the hullless barley.
+[SPEAKER_04]: And there are two big benefits about that.
+[SPEAKER_04]: So one of them is that when we have
+covered barley, we are relatively limited
+[SPEAKER_04]: with the use of that as if we would like
+to use covered barley in the food
+[SPEAKER_04]: products, we would need to go through lots
+of processing steps to remove the hull as
+[SPEAKER_04]: it's indigestible.
+[SPEAKER_04]: And with that, we could also lose
+important the nutritious parts like the
+[SPEAKER_04]: bran or the germ of the seed.
+[SPEAKER_04]: But with the naked barley, this is all
+going to stay in the grain after our
+[SPEAKER_04]: harvest.
+[SPEAKER_04]: And we're not going to lose any of those
+micronutrients.
+[SPEAKER_04]: And this allows those multipurpose uses
+for naked barley and making it more
+[SPEAKER_04]: digestible.
+[SPEAKER_04]: And all of this together kind of indicates
+our potential for organic and small
+[SPEAKER_04]: farmers as in healthy and an easier
+process.
+[SPEAKER_04]: Alternative in their cropping system.
+[SPEAKER_04]: And this is where we come in with the
+multi-use naked barley project for organic
+[SPEAKER_04]: systems.
+[SPEAKER_04]: That's a collaboration between five
+universities, Oregon State, UC Davis,
+[SPEAKER_04]: University of Minnesota, University of
+Wisconsin-Madison, and us here at Cornell.
+[SPEAKER_04]: And we have quite a wide variety of goals
+we're trying to achieve with that project,
+[SPEAKER_04]: most of all about educating the public.
+[SPEAKER_04]: About naked barley itself and the health
+benefits of that combined with working
+[SPEAKER_04]: together with stakeholders to build those
+markets for this naked barley products out
+[SPEAKER_04]: there.
+[SPEAKER_04]: While at those different universities,
+we test the existing churn plasm and also
+[SPEAKER_04]: generate new genetic diversity in the face
+of, or like as an example with our
+[SPEAKER_04]: breeding lines that we're trying to get
+out there that would be locally adapted to
+[SPEAKER_04]: all of those environments that we would
+like to see the naked barley be grown.
+[SPEAKER_04]: So for this, we have different kinds of
+populations in our hands to be used.
+[SPEAKER_04]: We conduct regional trials across all of
+those locations.
+[SPEAKER_04]: We have diversity panel to look into the
+genetics in a much more fine level.
+[SPEAKER_04]: And we also do have the breeding
+populations that we are growing across all
+[SPEAKER_04]: of those locations to be able to select
+for local adaptation.
+[SPEAKER_04]: And talking about local adaptation,
+the most important trait we're trying to
+[SPEAKER_04]: implement here in our breeding process in
+opposite New York is pre-harvest sprouting
+[SPEAKER_04]: resistance, which I'm gonna tell more in
+the next slide a little bit.
+[SPEAKER_04]: So pre-harvest sprouting is something that
+can be quite devastating for barley
+[SPEAKER_04]: farmers.
+[SPEAKER_04]: As an example, as a definition,
+pre-harvest sprouting is something that's
+[SPEAKER_04]: defined as a termination, unwanted
+termination of the barley grains in the
+[SPEAKER_04]: spike right before the harvest.
+[SPEAKER_04]: And as a result, causing damages to the
+grain quality and the starch and the
+[SPEAKER_04]: enzyme profile, which could end up with a
+complete yield loss and losses of profits
+[SPEAKER_04]: for the farmers.
+[SPEAKER_04]: And from the perspective of a breeder,
+it isn't relatively expensive and
+[SPEAKER_04]: complicated trait to screen.
+[SPEAKER_04]: As we see here, this is the scale we do
+screen this trait in our breeding program.
+[SPEAKER_04]: But for this to happen, we need to sample
+the spikes, try them out.
+[SPEAKER_04]: And then mist them three days in an
+artificial misting array in our greenhouse
+[SPEAKER_04]: to be able to score the level of
+germinated grains in a spike from zero to
+[SPEAKER_04]: nine.
+[SPEAKER_04]: But luckily for us, we already know a lot
+about the genetics of pre-harvest
+[SPEAKER_04]: sprouting from the work previously done in
+Sorrell's lab by several grad students.
+[SPEAKER_04]: And I'm just gonna bring some of those
+examples out here.
+[SPEAKER_04]: First of all, we had a former grad
+student, Dan Sweeney, being able to map
+[SPEAKER_04]: the genetic control of pre-harvest
+sprouting in covered background,
+[SPEAKER_04]: going from the QTL to the gene and also
+out to the allele levels.
+[SPEAKER_04]: As we see here as an example, the barley
+lines having two dormant alleles in this
+[SPEAKER_04]: QTL have an average, we have a sprouting
+score of three, but the barley lines
+[SPEAKER_04]: having two non-dormant lines have an
+average sprouting score of seven.
+[SPEAKER_04]: And some work from another student in
+Travis Rooney who was able to prove the
+[SPEAKER_04]: large effect QTL having a heterogenic
+effect in the whole background.
+[SPEAKER_04]: And also how using those large effects QTL
+alleles as fixed effects in the prediction
+[SPEAKER_04]: models improved the accuracy.
+[SPEAKER_04]: So this has motivated us to tap into the
+genetic diversity of the same genes and
+[SPEAKER_04]: alleles in the naked germplasm.
+[SPEAKER_04]: And here is where I could come with,
+come in with my proposed ideas for an
+[SPEAKER_04]: experiment with the naked barley breeding
+population, growing those same lines out
+[SPEAKER_04]: on the field in two locations,
+having them genotyped with a USDA SNP
+[SPEAKER_04]: chip, and genotyping all of those lines in
+a greenhouse to measure their pre-harvest
+[SPEAKER_04]: sprouting resistance.
+[SPEAKER_04]: And that would allow us to tap into the
+genetic diversity we have in the naked
+[SPEAKER_04]: barley germplasm.
+[SPEAKER_04]: That would also enable us to verify what
+we already know in the harvard germplasm,
+[SPEAKER_04]: like the genes, the allelic effects,
+and how often do we find those alleles in
+[SPEAKER_04]: these gene pools.
+[SPEAKER_04]: And also just to test out the predictive
+abilities with the naked germplasm.
+[SPEAKER_04]: And as an outcome of that, we do gain a
+nice insight through verification in the
+[SPEAKER_04]: naked barley background, and also
+broadening the overall understanding of
+[SPEAKER_04]: what's happening in there, and allowing
+the breeders to use them in the future for
+[SPEAKER_04]: their selections.
+[SPEAKER_04]: In this, as an example, for all those
+different breeders in the same program.
+[SPEAKER_04]: And being able to advance the materials in
+our program much faster with a good
+[SPEAKER_04]: predictive ability from the model.
+[SPEAKER_04]: And also being able to combine those local
+adaptations traits together with those
+[SPEAKER_04]: beneficial traits already in the naked
+barley to provide good varieties for local
+[SPEAKER_04]: producers here in upstate New York to grow
+them out.
+[SPEAKER_04]: And here I would just like to thank all of
+our collaborators working with this
+[SPEAKER_04]: project.
+[SPEAKER_04]: And yeah, if any questions, I'll be happy
+to take them.
+[SPEAKER_04]: Thank you.
+[SPEAKER_07]: So I was wondering, for your populations
+with the additional germplasm and SNP
+[SPEAKER_07]: chip, are you hoping to find many more
+genes associated with the resistance
+[SPEAKER_07]: pre-order starting, or more so like new
+alleles that might completely deter?
+[SPEAKER_04]: New genes, it's not that likely to.
+[SPEAKER_04]: So the question was, if I'm hoping to find
+new genes or new alleles in this naked
+[SPEAKER_04]: barley gene pool that might not be present
+in the covered barley gene pool.
+[SPEAKER_04]: And my answer to that would be,
+I think it's relatively unlikely to find
+[SPEAKER_04]: new genes.
+[SPEAKER_04]: But the diversity of alleles already
+present in those covered barley q-tails,
+[SPEAKER_04]: it's pretty wide.
+[SPEAKER_04]: I think for both of those q-tails
+together, we already have six different
+[SPEAKER_04]: alleles segregating in those.
+[SPEAKER_04]: So some alleles and allelic variation is
+highly likely to be there that I'm looking
+[SPEAKER_04]: to see.
+Yes.
+[SPEAKER_04]: Another question?
+[SPEAKER_05]: Is pre-harvest sprouting correlated or
+related to any other traits you might be
+[SPEAKER_05]: interested in?
+[SPEAKER_05]: Cooking time, mycotoxin, post-harvest
+accumulation, macronutrient profile or
+[SPEAKER_05]: anything?
+[SPEAKER_04]: So the question was, is pre-harvest
+sprouting susceptibility or resistance is
+[SPEAKER_04]: related to other quality traits?
+[SPEAKER_04]: And as far as I know, we haven't tested
+them here at the Cornell, but we do also
+[SPEAKER_04]: have collaborators in Oregon State who
+have a baking quality lab.
+[SPEAKER_04]: And they have found some signs of
+deteriorated baking quality as an example
+[SPEAKER_04]: of early on pre-harvest sprouting that has
+deteriorated the quality of the bread or
+[SPEAKER_04]: the dough they make out of it.
+[SPEAKER_04]: So yes, I think it's a pretty clear
+relationship with that.
+[SPEAKER_04]: Any other correlations or what I've seen
+on the field is relatively hard to see in
+[SPEAKER_04]: terms of what you see in the canopy or the
+spikes themselves.
+[SPEAKER_02]: Question on Zoom.
+[SPEAKER_02]: Leek asks, is naked barley more
+susceptible to insect damage?
+[SPEAKER_04]: Not that I know of.
+[SPEAKER_04]: And we have not seen that.
+[SPEAKER_04]: So naked barley is more susceptible only
+to the smut disease because the hull is,
+[SPEAKER_04]: I guess, more loose.
+[SPEAKER_04]: And I guess some of those particles of
+this fungal can access the grain in those
+[SPEAKER_04]: early stages much better.
+[SPEAKER_04]: But with other diseases, we haven't seen
+any difference with covered barley or also
+[SPEAKER_04]: with insects.
+[SPEAKER_05]: Is there a categorical difference in terms
+of nutrient profiles, like how hullless
+[SPEAKER_05]: oats are three, four percentage points
+higher in protein or anything
+[SPEAKER_05]: categorically different between naked and
+oland barley?
+[SPEAKER_04]: Yeah, so the question was about
+categorical differences in the profiles of
+[SPEAKER_04]: naked barley and card barley.
+[SPEAKER_04]: And one of those big differences is the
+beta-glucane, which is actually something
+[SPEAKER_04]: that the FDA has suggested for people to
+consume more as it improves the digestion
+[SPEAKER_04]: of people.
+[SPEAKER_04]: So this is one of those big differences.
+[SPEAKER_04]: But at the same time, it's good to keep in
+mind why it's low in a covered barley
+[SPEAKER_04]: because beta-glucane can inhibit some of
+those malting processes in the making of
+[SPEAKER_04]: malt.
+[SPEAKER_04]: So even though we want to develop those
+multi-use purpose varieties, this is kind
+[SPEAKER_04]: of a hard path to choose from.
+[SPEAKER_04]: I think with this, we need to develop
+separate varieties, one for malting and
+[SPEAKER_04]: one for really high beta-glucane.
+[SPEAKER_04]: We could advertise them like this.
+Yeah.
+[SPEAKER_08]: Yeah.
+[SPEAKER_08]: My name's Aliyah.
+[SPEAKER_08]: I'm a second year PhD student.
+[SPEAKER_08]: All of my research has to do with downy
+mildew resistance.
+[SPEAKER_08]: So with over 45 different haplotypes that
+can confer downy mildew resistance in
+[SPEAKER_08]: grapevine, there is a lot of stuff to
+phenotype.
+[SPEAKER_08]: How do I phenotype at all?
+[SPEAKER_08]: With?
+[SPEAKER_08]: Is there a laser on here?
+[SPEAKER_08]: Yes.
+[SPEAKER_08]: With the Blackbird robot.
+[SPEAKER_08]: So basically, how the scheme works is we
+go out, we collect leaf from germplasm,
+[SPEAKER_08]: either from the field or from the
+greenhouse.
+[SPEAKER_08]: We use a cork borer, hole punch them out
+to create these arrays of leaf discs.
+[SPEAKER_08]: That's also pictured here.
+[SPEAKER_08]: These leaf disc arrays will get inoculated
+and then put into the Blackbird and imaged
+[SPEAKER_08]: over a number of days to capture the
+disease progression.
+[SPEAKER_08]: These images are uploaded to a
+convolutional neural network that will
+[SPEAKER_08]: pick apart the images and give us a nice
+quantitative data set about the disease
+[SPEAKER_08]: severity on the leaf discs.
+[SPEAKER_08]: I can't talk about the Blackbird without
+showing you the beautiful images that come
+[SPEAKER_08]: off of it.
+[SPEAKER_08]: So this is a grapevine downy mildew,
+which by default has to be my favorite
+[SPEAKER_08]: pathogen.
+[SPEAKER_08]: So my whole first chapter is a metadata
+study on the Blackbird robots.
+[SPEAKER_08]: We really wanted to investigate the
+trade-off between this high data
+[SPEAKER_08]: acquisition with the data quality to make
+sure that we're conserving our data
+[SPEAKER_08]: quality.
+[SPEAKER_08]: And we wanted to know if the system was
+really robust to the types of human error
+[SPEAKER_08]: or data variation that could happen in the
+scheme.
+[SPEAKER_08]: So basically, what I had done was I have
+three real data sets that have come off of
+[SPEAKER_08]: the Blackbird that have resulted in
+disease resistance QTL publications.
+[SPEAKER_08]: I've simulated a bunch of variation onto
+those data sets.
+[SPEAKER_08]: And I basically observed how the
+significance of the LOD score changed with
+[SPEAKER_08]: those added errors in variation.
+[SPEAKER_08]: And I did things like leaf disc swaps,
+leaf disc frame shifts to kind of capture
+[SPEAKER_08]: the types of human errors that could
+happen in the arraying process,
+[SPEAKER_08]: different variation in disease severity to
+capture the types of microenvironments
+[SPEAKER_08]: that are happening in the trays that might
+impact pathogen growth, and also replicate
+[SPEAKER_08]: subsetting.
+[SPEAKER_08]: Because usually when we do these
+experiments, we have up to eight to 10
+[SPEAKER_08]: replicates.
+[SPEAKER_08]: So what did I find?
+[SPEAKER_08]: This is an example of an intermediate
+effect size QTL.
+[SPEAKER_08]: And all of these colored boxes represent
+the different flavors of variation that I
+[SPEAKER_08]: introduced in the previous slide.
+[SPEAKER_08]: Blue has to do with variation in pathogen
+growth.
+[SPEAKER_08]: The pink is the leaf disc swaps.
+[SPEAKER_08]: The orange is the leaf disc frame shifts.
+[SPEAKER_08]: And then the yellow is the replicate
+subsetting.
+[SPEAKER_08]: So basically, you look at this and you
+say, wow, the Blackbird is very robust to
+[SPEAKER_08]: the types of human errors that can happen.
+[SPEAKER_08]: But it seems to fall apart when we pick
+apart the replicate number.
+[SPEAKER_08]: That's great.
+[SPEAKER_08]: More of the story.
+[SPEAKER_08]: We were able to figure out that we are not
+compromising any data quality by our large
+[SPEAKER_08]: volumes of data acquisition.
+[SPEAKER_08]: This is supposed to be a lightning talk.
+[SPEAKER_08]: So I understand that this is a great
+overview of my chapter.
+[SPEAKER_08]: But happy to report it's been accepted to
+a focus issue of phytopathology.
+[SPEAKER_08]: Literally, this morning updated the first
+look copy.
+[SPEAKER_08]: So I'll make sure it gets in the
+newsletter.
+[SPEAKER_08]: Very excited and happy about this.
+[SPEAKER_08]: So yeah, what's the catch?
+[SPEAKER_08]: We've all been slighted by technology.
+[SPEAKER_08]: There is veteran academics probably on the
+Zoom rolling their eyes at me.
+[SPEAKER_08]: I'm praising this robot.
+[SPEAKER_08]: And for what?
+[SPEAKER_08]: There's got to be something.
+[SPEAKER_08]: And I'd like to introduce the bane of my
+dissertation, leaf hairs.
+[SPEAKER_08]: So the Blackbird is based off of RGB
+imaging, so all of the visual wavelengths
+[SPEAKER_08]: that we can see.
+[SPEAKER_08]: So if there is morphology that is
+obscuring the phenotype that you're trying
+[SPEAKER_08]: to measure, in our case, leaf hair is
+covering up the sporangia of the Denny
+[SPEAKER_08]: mildew, the robot can't see it.
+[SPEAKER_08]: So how I plan to circumvent our leaf hair
+issue is with a hyperspectral Blackbird.
+[SPEAKER_08]: This robot is called the Hyperbird.
+[SPEAKER_08]: It's a lot less pretty.
+[SPEAKER_08]: It's a lot less user-friendly than the
+Blackbird because it's a prototype.
+[SPEAKER_08]: But I'm hoping to use hyperspectral
+imaging to kind of peer through the leaf
+[SPEAKER_08]: hairs.
+[SPEAKER_08]: LOL, I wish it was that easy.
+[SPEAKER_08]: We saw from Aaron's talk that
+hyperspectral imaging is really
+[SPEAKER_08]: complicated.
+[SPEAKER_08]: So what does this actually mean?
+[SPEAKER_08]: Well, I'm hoping that the biochemical
+makeup of the host versus the pathogen is
+[SPEAKER_08]: distinct enough to where they have
+different hyperspectral signatures that
+[SPEAKER_08]: will allow me to differentiate them on a
+microscopic scale.
+[SPEAKER_08]: And it's a non-destructive method,
+which is really helpful to me,
+[SPEAKER_08]: especially when you're phenotyping things
+like disease resistance.
+[SPEAKER_08]: Yeah.
+[SPEAKER_08]: My hopes and dreams for the Hyperbird.
+[SPEAKER_08]: Number one, we have to ensure that the
+Hyperbird works.
+[SPEAKER_08]: Again, this robot is a prototype.
+[SPEAKER_08]: So we've never actually published anything
+with it.
+[SPEAKER_08]: And I hope to do that with the actual leaf
+hair themselves.
+[SPEAKER_08]: So hopefully they'll have a use.
+[SPEAKER_08]: And we have a convolutional neural network
+on the Blackbird that can also measure
+[SPEAKER_08]: leaf hair.
+[SPEAKER_08]: So I'll probably compare it to that.
+[SPEAKER_08]: Probably leaf hair will be conserved
+across vitas considering a lot of
+[SPEAKER_08]: different vitas species.
+[SPEAKER_08]: These have the same leaf hair morphology.
+[SPEAKER_08]: And then after we prove that the Hyperbird
+can work in this phenotyping scheme,
+[SPEAKER_08]: then I can do the thing that I actually
+want to do, which is discover new disease
+[SPEAKER_08]: resistance, QTL, on hairy vines.
+[SPEAKER_08]: And then maybe I'll even take it a step
+further for this last bullet point.
+[SPEAKER_08]: Make some inferences in the relationship
+between leaf hair and resistance.
+[SPEAKER_08]: This is supposed to be a lightning talk.
+[SPEAKER_08]: These three question marks symbolize the
+10-minute rant I could go on about this
+[SPEAKER_08]: kind of concept of leaf hair and
+resistance.
+[SPEAKER_08]: And does it confer resistance?
+[SPEAKER_08]: And does it not?
+[SPEAKER_08]: And is it a barrier?
+[SPEAKER_08]: And blah, blah, blah, blah, blah.
+[SPEAKER_08]: Anyway, I'll save you the rambling.
+[SPEAKER_08]: The important things are there is
+conflicting literature.
+[SPEAKER_08]: And I'm very skeptical of some of the
+phenotyping methods that these papers
+[SPEAKER_08]: have.
+[SPEAKER_08]: And we might be able to solve some
+labrusca mysteries as well.
+[SPEAKER_08]: All of these hairy leaf discs that I've
+shown you, they're labrusca.
+[SPEAKER_08]: Concord grapes are a labrusca variety.
+[SPEAKER_08]: And basically, these grapes have been
+resistant to downy mildew for over 200
+[SPEAKER_08]: years.
+[SPEAKER_08]: And no one knows why.
+[SPEAKER_08]: Is it because of the leaf hairs?
+[SPEAKER_08]: Is it because of an unknown QTL?
+[SPEAKER_08]: We don't know.
+[SPEAKER_08]: Maybe I'll find out.
+[SPEAKER_08]: And with that, I would like to acknowledge
+my whole committee and their labs,
+[SPEAKER_08]: especially Katie Gold and her lab and all
+the engineers that contribute to all these
+[SPEAKER_08]: robotics.
+[SPEAKER_08]: I'm housed at the AgriTech campus in
+Geneva.
+[SPEAKER_08]: Surya Subkota, he's been really integrated
+into all of my dissertation projects.
+[SPEAKER_08]: And to VitisGen3, not only for funding me,
+but for also just being an amazing
+[SPEAKER_08]: research group that is very collaborative
+and supportive of each other.
+[SPEAKER_08]: And with that, I will take any questions
+you might have.
+[SPEAKER_08]: Yes?
+[SPEAKER_06]: So you talked about one of your greatest
+frustrations that you've been experiencing
+[SPEAKER_06]: with the leaf hairs.
+[SPEAKER_06]: I was just wondering if there's a great
+joy or something exciting that you had in
+[SPEAKER_06]: the research.
+[SPEAKER_08]: OK, I've complained a lot.
+[SPEAKER_08]: And now Sam wants to know something that
+makes me excited.
+[SPEAKER_08]: OK, leaf hairs aren't all bad.
+[SPEAKER_08]: You can kind of see in my one picture
+here, they have great diversity.
+[SPEAKER_08]: They make the grapes really fluffy and
+cute.
+[SPEAKER_08]: I don't know.
+[SPEAKER_08]: I really like all of the research that I
+do.
+[SPEAKER_08]: And me and Lance had a conversation a
+while ago.
+[SPEAKER_08]: And he was like, oh, what's your favorite
+chapter?
+[SPEAKER_08]: What's your favorite project?
+[SPEAKER_08]: And I feel like all of my projects are
+very diverse and different.
+[SPEAKER_08]: And I feel like I like them all for
+different things, most notably my metadata
+[SPEAKER_08]: study.
+[SPEAKER_08]: It's my favorite right now because it's
+done.
+[SPEAKER_08]: So hopefully that answers your question.
+[SPEAKER_08]: I find joy in diverse things.
+[SPEAKER_08]: Yes, Ed?
+[SPEAKER_03]: When you have leaves that aren't hairy,
+is the infection, can you see it from
+[SPEAKER_03]: either side of the leaf fairly equally
+well or not?
+[SPEAKER_08]: Yeah, so Ed is asking about the phenotypic
+expression of the disease on the leaf disc
+[SPEAKER_08]: and if we can see it on both sides.
+[SPEAKER_08]: So that depends on the pathogenesis.
+[SPEAKER_08]: So my pathogen, downy mildew, only
+sporulates from the bottom of the leaf.
+[SPEAKER_08]: So on the top of the leaf in the field,
+you'll see some oil spotting or lesions.
+[SPEAKER_08]: But they won't sporulate from the top.
+[SPEAKER_08]: So on the blackbird, we always phenotype
+from the bottom.
+[SPEAKER_08]: And we always count severity as the little
+fluffy sporangia that pop out.
+[SPEAKER_08]: In terms of powdery mildew, powdery mildew
+only sporulates on the top of the leaf.
+[SPEAKER_08]: So when we do those in the blackbird
+scheme, we put them right side up to
+[SPEAKER_08]: observe.
+[SPEAKER_08]: So we don't want to get the disease from
+the top.
+[SPEAKER_08]: So again, dependent on the disease that
+you're looking at.
+[SPEAKER_03]: Because I was wondering if there's some
+way you could play with light,
+[SPEAKER_03]: its transmission, and flipping the leaf,
+training a model.
+[SPEAKER_03]: So you train on one side and the reverse
+side.
+[SPEAKER_03]: And then with transmission, if you could
+somehow pick it up.
+[SPEAKER_03]: Because I agree, the refraction off those
+leaves may be, or off the tricot may be
+[SPEAKER_03]: tricky.
+[SPEAKER_08]: Right.
+[SPEAKER_08]: Ed is offering that instead of looking
+through the leaf hairs, if I flip the disc
+[SPEAKER_08]: over and observe some type of phenotype
+from the top.
+[SPEAKER_08]: I mean, we could.
+[SPEAKER_08]: We haven't tried.
+[SPEAKER_08]: Especially for the blackbird scheme,
+they're sitting on agar.
+[SPEAKER_08]: So if you were to put dining with the
+upside down, I don't even know if that
+[SPEAKER_08]: would kill theomycete.
+[SPEAKER_08]: Because you're cutting it off from the
+outside.
+[SPEAKER_08]: You're not letting it breathe.
+[SPEAKER_08]: In the field, sure.
+[SPEAKER_08]: In the field, sure.
+[SPEAKER_08]: I could see symptoms on both sides of the
+leaves.
+[SPEAKER_08]: But I'm not sure on the blackbird system
+whether that would be feasible.
+[SPEAKER_08]: Yes.
+[SPEAKER_05]: Did you see the January paper?
+[SPEAKER_05]: It was out of Julius Kuhn where they did a
+ResNet for RGB imaging of leaf hairs.
+[SPEAKER_05]: And if so, what are your thoughts on that?
+[SPEAKER_08]: Is that the one out of JKI?
+[SPEAKER_08]: Yeah.
+[SPEAKER_08]: I have different.
+[SPEAKER_08]: I have read that one.
+[SPEAKER_08]: I do like that one.
+[SPEAKER_08]: I'm sure that's great.
+[SPEAKER_08]: We have a different CNN that was made by
+someone else.
+[SPEAKER_08]: That I have and know works.
+[SPEAKER_08]: So I'm going to train against that.
+[SPEAKER_08]: But I'm sure that one's great and fine.
+[SPEAKER_08]: I love Oliver Trapp and the people that
+work at JKI.
+[SPEAKER_08]: So again, sure, that's great.
+[SPEAKER_08]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_08]: Thank you.
+Thank you.
+Thank you.
+Thank you.

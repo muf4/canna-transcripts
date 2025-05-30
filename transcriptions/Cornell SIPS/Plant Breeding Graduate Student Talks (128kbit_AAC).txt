@@ -1,0 +1,652 @@
+[SPEAKER_03]: This is a production of Cornell
+University.
+[SPEAKER_00]: So thanks for being here.
+[SPEAKER_00]: Good afternoon, everyone.
+[SPEAKER_00]: Myself Srikant.
+[SPEAKER_00]: I'm a second year PhD grad student in
+plant breeding and genetics.
+[SPEAKER_00]: I'm from Mueller Lab.
+[SPEAKER_00]: Today, I would like to explain the project
+that I'm working on from past couple of
+[SPEAKER_00]: months.
+[SPEAKER_00]: And before diving into the project,
+I would like to explain some of the
+[SPEAKER_00]: fundamental concepts and essential to
+build this project.
+[SPEAKER_00]: So first, what exactly is a database?
+[SPEAKER_00]: So database is the system that is widely
+used across the industry and academia for
+[SPEAKER_00]: data storage, data retrieval, and data
+management.
+[SPEAKER_00]: So BreedBase.
+[SPEAKER_00]: So BreedBase is the relational database
+system that is free and open source that
+[SPEAKER_00]: our lab developers have been built over
+the years.
+[SPEAKER_00]: They added a bunch of features based on
+the plant breeding community's request.
+[SPEAKER_00]: And now, plant breeding communities,
+they can easily upload their data into the
+[SPEAKER_00]: BreedBase.
+[SPEAKER_00]: And using the analysis tools that our lab
+developers have built, they can analyze
+[SPEAKER_00]: their data and make data-driven decisions.
+[SPEAKER_00]: So using the BreedBase instance,
+our lab also involved in developing a
+[SPEAKER_00]: couple of crop databases, specifically for
+the cassava, cassava base, musa,
+[SPEAKER_00]: that's for banana, and crop for ambase,
+and sweet potato base.
+[SPEAKER_00]: And there are many other breed-based
+instances used by companies, but I cannot
+[SPEAKER_00]: list them.
+[SPEAKER_00]: With this, even in the past year,
+I worked on repetitive measurements.
+[SPEAKER_00]: In other words, you can say this as a time
+series feature.
+[SPEAKER_00]: It's basically where you have multiple
+values for a given trade that you would
+[SPEAKER_00]: like to store.
+[SPEAKER_00]: So this feature was requested from UC
+Davis breeding program.
+[SPEAKER_00]: And North Carolina State University
+breeding program.
+[SPEAKER_00]: Therefore, we implemented that.
+[SPEAKER_00]: With this now, I have a very good
+understanding of how BreedBase works and
+[SPEAKER_00]: how the process of BreedBase actually is
+implemented.
+[SPEAKER_00]: So with this knowledge and experience,
+I would like to take BreedBase to the next
+[SPEAKER_00]: level, where I would like to integrate
+artificial intelligence in the BreedBase.
+[SPEAKER_00]: So before actually diving into what AI
+application we will be building for the
+[SPEAKER_00]: BreedBase, I would like to give the brief
+statistics about that cassava base.
+[SPEAKER_00]: As I mentioned in the previous slide,
+the cassava base is one of the largest
+[SPEAKER_00]: databases as we have so far.
+[SPEAKER_00]: So as of March 2025, we have almost 240 GB
+of data in the cassava base, out of which
+[SPEAKER_00]: 12 GB is phenotypic data,
+[SPEAKER_00]: and 118 GB is of genotypic data.
+[SPEAKER_00]: And due to time constraint, I will not go
+to each component of this.
+[SPEAKER_00]: I'm not sure why this is not working.
+[SPEAKER_00]: Due to time constraint, I cannot go
+through each component.
+[SPEAKER_00]: However, I would like to pinpoint and
+mention that cassava base has been widely
+[SPEAKER_00]: used across the world in almost 550
+locations.
+[SPEAKER_00]: As you can see, this database is so much
+complex, and it's a large database.
+[SPEAKER_00]: So we often use a structured query
+language, which is called SQL language,
+[SPEAKER_00]: to communicate with the databases.
+[SPEAKER_00]: This is not the observable trait in most
+of the plant breeders or the community to
+[SPEAKER_00]: communicate with the database.
+[SPEAKER_00]: With this in mind, we would like to
+develop a chatbot for the BreedBase using
+[SPEAKER_00]: LLMs.
+[SPEAKER_00]: So first, I would like to show you the
+backend of the workflow, how it looks
+[SPEAKER_00]: after it has been implemented or deployed
+in the production site.
+[SPEAKER_00]: So imagine you are a user, and you are
+communicating with some AI.
+[SPEAKER_00]: I hope everyone has used ChatGPT or
+Googlebot, so they know, right?
+[SPEAKER_00]: So a user might ask, hey, how many trials
+do I have so far in the IAEA breeding
+[SPEAKER_00]: program?
+[SPEAKER_00]: So then, using the RAC technique that I
+will describe in the next slide,
+[SPEAKER_00]: they will extract the trial column names
+and the table names from the database for
+[SPEAKER_00]: this specific NL question that user asked
+in the interface or in the chatbot.
+[SPEAKER_00]: So these both will be provided to the
+fine-tuned LLM, and LLM will write SQL
+[SPEAKER_00]: query, which means it's another word where
+you use to communicate with the databases.
+[SPEAKER_00]: So this will eventually be executed on the
+database, and that's where you get the
+[SPEAKER_00]: output.
+[SPEAKER_00]: So in addition to showing the value that
+we retrieved from the database,
+[SPEAKER_00]: we would also like to show the generalized
+statement along with the value.
+[SPEAKER_00]: Therefore, this would be clear and concise
+information to the user, whoever is
+[SPEAKER_00]: querying.
+[SPEAKER_00]: Yes, of course, it is true that there are
+so many closed source LLMs that are
+[SPEAKER_00]: outperforming in various tasks,
+such as summarization, code generation,
+[SPEAKER_00]: and a lot many other tasks.
+[SPEAKER_00]: However, recently, Stanford NLP group have
+tested with the various closed source
+[SPEAKER_00]: models.
+[SPEAKER_00]: They fine-tuned their LLMs using those
+closed source API keys, and they found
+[SPEAKER_00]: that there is ineffectiveness in updating
+existing knowledge.
+[SPEAKER_00]: So what I mean by that is once they
+fine-tuned their models using these closed
+[SPEAKER_00]: source APIs, after that, they modified
+their data in the database.
+[SPEAKER_00]: And fine-tuned LLM couldn't be able to
+retrieve the updated data, and there are a
+[SPEAKER_00]: wide variety of reasons why this is
+happening.
+[SPEAKER_00]: But the primary reason is closed source
+LLMs doesn't have a flexibility of using
+[SPEAKER_00]: different LLM techniques on the fine-tuned
+model.
+[SPEAKER_00]: Therefore, you cannot even improve the
+model accuracy or performance.
+[SPEAKER_00]: So with this, I referred a couple of times
+about the closed source LLMs.
+[SPEAKER_00]: So primarily, those are developed from
+OpenAI, and the Google, and the Cloud
+[SPEAKER_00]: Anthropic.
+[SPEAKER_00]: And the open source LLMs are Meta,
+DeepSeq, and Microsoft.
+[SPEAKER_00]: These are primarily deployed on the
+hugging phase.
+[SPEAKER_00]: From hugging phase, you can easily deploy
+onto your local machine or the GPUs,
+[SPEAKER_00]: and then you can run them.
+[SPEAKER_00]: So for this project, we will not be using
+these closed source models.
+[SPEAKER_00]: However, we would be likely to use open
+source LLMs to build this product.
+[SPEAKER_00]: So I mentioned LLM strategy.
+[SPEAKER_00]: It's in the previous slide a couple of
+times.
+[SPEAKER_00]: First, I would like to mention about
+retrieval argument generation.
+[SPEAKER_00]: So as it is a $5 word, and it's a simple
+word, as a name it indicates, it's just
+[SPEAKER_00]: retrieving.
+[SPEAKER_00]: So basically, if a user asks some question
+in the NL interface, it retrieves the
+[SPEAKER_00]: table names or the column names with
+respect to the database to that question.
+[SPEAKER_00]: So it's not a high level of coding that is
+required to implement this technique for
+[SPEAKER_00]: this objective.
+[SPEAKER_00]: And next comes the supervised fine-tuning.
+[SPEAKER_00]: Supervised fine-tuning is time-consuming,
+and it's an iterative process.
+[SPEAKER_00]: And you need to build a training data set
+in a way that it should include all the
+[SPEAKER_00]: edge cases even.
+[SPEAKER_00]: So it's a high level of coding that is
+also required.
+[SPEAKER_00]: So next, last technique is reinforcement
+learning.
+[SPEAKER_00]: So reinforcement learning is a branch of
+ML that we actually basically train the AI
+[SPEAKER_00]: agents based on the trial and error
+method.
+[SPEAKER_00]: And it's a high level of coding that is
+required.
+[SPEAKER_00]: There is no straightforward mathematical
+framework or a mathematical formula to
+[SPEAKER_00]: directly deploy them.
+[SPEAKER_00]: You have to verify with the different
+algorithms for this.
+[SPEAKER_00]: With that, I would like to thank my PI for
+giving me an exciting opportunity to work
+[SPEAKER_00]: on this.
+[SPEAKER_00]: And also, I would like to thank John for
+giving me access to the GPUs to test it
+[SPEAKER_00]: before trying to deploy these models on
+the production side.
+[SPEAKER_00]: With that, I would like to open the floor
+to any questions.
+[SPEAKER_00]: Thank you so much.
+[SPEAKER_03]: Last slide, you listed a couple different
+strategies.
+[SPEAKER_03]: Is there any one that you want to look at
+going forward, or are you going to try all
+[SPEAKER_03]: three maybe to see which one works best?
+[SPEAKER_00]: So the question is, in this slide that I'm
+showing right now, she mentioned that I
+[SPEAKER_00]: showed here different techniques.
+[SPEAKER_00]: Do I use all of those, or do I use only
+one among the three?
+[SPEAKER_00]: So these three techniques are very
+important in order to make this objective
+[SPEAKER_00]: efficient.
+[SPEAKER_00]: So you cannot use only one.
+[SPEAKER_00]: So these three techniques are combined.
+[SPEAKER_00]: You have to combine to build this chatbot,
+meaning all these three techniques are
+[SPEAKER_00]: very useful.
+[SPEAKER_00]: So one technique is doing one job.
+[SPEAKER_00]: You have to combine all these three
+techniques.
+[SPEAKER_01]: So you're using the Casaba data set.
+[SPEAKER_01]: How hard would it be to then use another
+data set for another problem, to translate
+[SPEAKER_01]: this to another problem?
+[SPEAKER_01]: Would you have to rebuild and train the
+model all over again, or would it be easy
+[SPEAKER_00]: to change the model for a different
+problem?
+[SPEAKER_00]: The question here in the audience is,
+currently, I'm using the Casaba base for
+[SPEAKER_00]: the integration initial stage to build
+this.
+[SPEAKER_00]: Eventually, in the future, if I transfer
+to the other crop or other databases,
+[SPEAKER_00]: how easy or how hard is it?
+[SPEAKER_00]: So the simple question is, for our
+example, we have multiple crop databases.
+[SPEAKER_00]: So for Casaba base and most of the
+databases, we have the same structure.
+[SPEAKER_00]: So what I mean by structure, so the table
+names, column names, all are same across
+[SPEAKER_00]: the different crops.
+[SPEAKER_00]: Only the values or some functionality
+might change.
+[SPEAKER_00]: So if we implement Casaba base,
+and it's working fine as we expect,
+[SPEAKER_00]: so in order to scale up to the other
+databases, we need to change the table
+[SPEAKER_00]: names and the column names in those
+databases specifically to those crops in
+[SPEAKER_00]: order to make it.
+[SPEAKER_00]: Yeah, that's it.
+[SPEAKER_04]: Yeah, so my name is Luis Muzarrate.
+[SPEAKER_04]: I'm a four-year PhD student in Larry's lab
+in Cornell AgriTech in Geneva.
+[SPEAKER_04]: And today, I would like to do an updated
+summary of my work on mapping QTL and
+[SPEAKER_04]: identify candida genes for seed aeronomic
+traits in hemp F2 populations.
+[SPEAKER_04]: So to start off, I would like to,
+for some of you that are not familiar with
+[SPEAKER_04]: this crop, there are three main market
+classes in hemp, flour, fiber,
+[SPEAKER_04]: and grain.
+[SPEAKER_04]: For the flour, obviously, the end product
+is the extraction of cannabinoids for
+[SPEAKER_04]: these flours.
+[SPEAKER_04]: But for all these market classes,
+there are key traits to take into account
+[SPEAKER_04]: when considering cultivars and when
+breeding cultivars.
+[SPEAKER_04]: For the flour, per se, the idea is to
+increase the floral biomass.
+[SPEAKER_04]: So flowering time is one important trait
+to consider.
+[SPEAKER_04]: And obviously, cannabinoids as well,
+which is not something that I'm going to
+[SPEAKER_04]: cover today.
+[SPEAKER_04]: For the fiber, the idea is to harvest the
+stem.
+[SPEAKER_04]: So we also want, based on the idea that
+you can see here, for example,
+[SPEAKER_04]: is a tall, non-branchy, late flowering
+cultivar.
+[SPEAKER_04]: So one of the important traits is
+flowering time as well as biomass to
+[SPEAKER_04]: ensure that we have this accumulation of
+biomass.
+[SPEAKER_04]: And fiber quality is another important
+trait.
+[SPEAKER_04]: So from this biomass that is accumulated,
+we can remove this bast from the herd to
+[SPEAKER_04]: maximize the bast production for textiles
+or the hair production if the intent is
+[SPEAKER_04]: for construction materials.
+[SPEAKER_04]: And lastly, we have the grain.
+[SPEAKER_04]: Another market class that is embedded in
+it is the dual purpose, which stands for
+[SPEAKER_04]: production of the grain and the stock.
+[SPEAKER_04]: So you harvest the fluorescence,
+and then you harvest the stocks at the
+[SPEAKER_04]: end.
+[SPEAKER_04]: So you can get the fiber and grain as
+well.
+[SPEAKER_04]: And here, again, one of the key traits to
+consider is flowering time, because we
+[SPEAKER_04]: want to ensure that we accumulate biomass
+so this crop reaches a sufficient height
+[SPEAKER_04]: for an optimal harvest.
+[SPEAKER_04]: And it meets the goals, whether it's dual
+purpose or grain only.
+[SPEAKER_04]: And biomass as well, because we want to
+have that balance between certain
+[SPEAKER_04]: accumulation biomass for both fiber and
+grain.
+[SPEAKER_04]: And obviously, I'm not going to forget
+grain yield and seed quality.
+[SPEAKER_04]: Especially the seed quality is another
+important trait.
+[SPEAKER_04]: In this case, we are considering quality
+right now.
+[SPEAKER_04]: It's the seed size as well as the protein
+and oil content.
+[SPEAKER_04]: But speaking of seed size, so here in this
+picture, you can see the variation on seed
+[SPEAKER_04]: size that we have in our genoplasm in
+Geneva.
+[SPEAKER_04]: And from an important agronomic
+standpoint, actually, seed size could be
+[SPEAKER_04]: beneficial for a stand establishment.
+[SPEAKER_04]: From a consumer perspective, a larger seed
+will be more appealing for a consumer.
+[SPEAKER_04]: And from a processing point of view,
+we have observed that larger seeds may
+[SPEAKER_04]: lead to a better processing of these
+seeds.
+[SPEAKER_04]: So traditionally, hemp hearts that you
+see, and you can access commercially,
+[SPEAKER_04]: are seeds that are originated from
+cultivars that are not that different from
+[SPEAKER_04]: seed size that equates Bielo-Brzeski or
+Feligna-32, as you see here, or perhaps
+[SPEAKER_04]: even smaller than this.
+[SPEAKER_04]: So we're interested in looking at the
+processability of these larger seeds that
+[SPEAKER_04]: you see on the left, as well as,
+of course, the genetic mechanisms
+[SPEAKER_04]: underlying that trait of the seed size
+alone.
+[SPEAKER_04]: So this hemp grain, which is no grain,
+it's on the keen, actually.
+[SPEAKER_04]: Once it's harvested, it is processed.
+[SPEAKER_04]: And here, you can get two main components
+of these seeds, the hemp hearts,
+[SPEAKER_04]: which are actually the collions of the
+seeds, and the hemp holes.
+[SPEAKER_04]: The hemp hearts are high in protein,
+about 20% to 25% protein.
+[SPEAKER_04]: The fat is about 25% to 35%, if I'm not
+mistaken.
+[SPEAKER_04]: And the holes, which are the pericarp of
+this akin, is high in dietary fiber,
+[SPEAKER_04]: about 25% to 35% as well.
+[SPEAKER_04]: But ultimately, the end product of these
+components become into hemp seed meal,
+[SPEAKER_04]: hemp seed oil, 45 foods like baked goods,
+as well as plant-based meats and berries,
+[SPEAKER_04]: as you can see here, I left it in this
+graph.
+[SPEAKER_04]: So with all of this in mind, I established
+three objectives.
+[SPEAKER_04]: And those are to identify significant QTL
+for seed size and agronomic traits,
+[SPEAKER_04]: and to compare or determine the
+consistency of this QTL between three
+[SPEAKER_04]: populations that will represent each of
+the market classes, and identify,
+[SPEAKER_04]: hopefully, the candidate genes within the
+1.5-lod interval for each of these QTL.
+[SPEAKER_04]: So to start off, in 2021, a high
+cannabinoid F2 population was developed,
+[SPEAKER_04]: crossing a paramilitary-resistant clonal
+individual, F58, in TGCBD, clonal
+[SPEAKER_04]: individual that is
+paramilitary-susceptible.
+[SPEAKER_04]: The idea here, or the main goal of this,
+was to characterize paramilitary
+[SPEAKER_04]: resistance, I was saying.
+[SPEAKER_04]: However, other phenotypes were measured.
+[SPEAKER_04]: For this, the crossing scheme was the
+selfing of two selected F1s, generating
+[SPEAKER_04]: two F2s.
+[SPEAKER_04]: And the idea of having more than one F2 is
+so that, because hemp is highly
+[SPEAKER_04]: heterozygous, having more than one F2
+population increases our likelihood to
+[SPEAKER_04]: capture the effect of the allele present
+in the parents.
+[SPEAKER_04]: So here we have 21,004 and 21,005,
+with 366 and 304 individuals,
+[SPEAKER_04]: respectively.
+[SPEAKER_04]: Another important thing to mention is that
+the flowering time between these two
+[SPEAKER_04]: parents is about a week.
+[SPEAKER_04]: So they flower relatively, I wouldn't say
+early, but not too late, either.
+[SPEAKER_04]: For the gain population, in this case,
+we employ a dual-purpose green line.
+[SPEAKER_04]: This one is 2011, 79.
+[SPEAKER_04]: Or GBAH, 2011, 79, which is a late flower
+individual, large seeded, and crossed with
+[SPEAKER_04]: a picolo, which is a very popular Canadian
+grain cultivar that has high protein
+[SPEAKER_04]: content, that has small seed and early
+flowering.
+[SPEAKER_04]: In this case, the crossing scheme was
+developed through a seed mating of the
+[SPEAKER_04]: F1s.
+[SPEAKER_04]: And we ended up phenotyping only the
+females, 198 of them.
+[SPEAKER_04]: For the fiber, in this case, we use the
+fiber green line to GBAH.
+[SPEAKER_04]: This is a very late flowering,
+a very large seeded cultivar population.
+[SPEAKER_04]: It was crossed with the first New York
+feral population isolated, which is Logan.
+[SPEAKER_04]: This is a very early and a very small
+seeded cultivar.
+[SPEAKER_04]: In this case, we also did seed mating for
+the generation of the F2s.
+[SPEAKER_04]: But here, we phenotype and genotype
+females and males, having a total of 445
+[SPEAKER_04]: individuals.
+[SPEAKER_04]: For the creation of the linkage maps,
+we use two genotyping platforms.
+[SPEAKER_04]: For a high Canadian population,
+21,004 and 21,005, we use an Illumina
+[SPEAKER_04]: array developed by Phylos.
+[SPEAKER_04]: Here, we ended up with linkage maps that
+have 2,659 and 2,197 markers,
+[SPEAKER_04]: respectively.
+[SPEAKER_04]: Whereas for the green FI population,
+we use an Agilent SureSelect prop set that
+[SPEAKER_04]: we developed in our lab, which we named
+and select.
+[SPEAKER_04]: This actually helped us develop a greater
+linkage maps that have 748 markers for the
+[SPEAKER_04]: grain and 122 markers for the fiber.
+[SPEAKER_04]: With all this in mind, on all these
+methodologies, I decided to look at the
+[SPEAKER_04]: seed size.
+[SPEAKER_04]: In this case, we quantify that by the
+weight of 1,000 seeds or 1,000 seed weight
+[SPEAKER_04]: of TSW, as you can see here.
+[SPEAKER_04]: First, in the high Canadian population,
+21,004, we found 5 QTL that are associated
+[SPEAKER_04]: with this trait.
+[SPEAKER_04]: As you can see here, the largest peak is
+located in chromosome 1.
+[SPEAKER_04]: They explain a good proportion of the
+variants in a very small region,
+[SPEAKER_04]: relatively speaking, in the genome.
+[SPEAKER_04]: We see that the effect of the allele is
+dominant over the B allele.
+[SPEAKER_04]: For the A population, we also find a QTL
+in chromosome 1, but conversely,
+[SPEAKER_04]: this is the only QTL that we find
+explaining low proportion of the variants,
+[SPEAKER_04]: but in a very large region.
+[SPEAKER_04]: In this case, the effect of the A allele
+over the B allele seems to be additive.
+[SPEAKER_04]: For the grain, we have four QTL
+identified, and in this case, we don't
+[SPEAKER_04]: observe this.
+[SPEAKER_04]: We'll say that the largest peak is in
+chromosome 9 instead, explaining a
+[SPEAKER_04]: considerable percentage of the variants,
+sorry, but a large region, and also seems
+[SPEAKER_04]: to be additive.
+[SPEAKER_04]: In the fiber, interestingly, we only find
+two QTL, but a massive peak in chromosome
+[SPEAKER_04]: 4 that explains over 60% of the variants
+in our population.
+[SPEAKER_04]: But unfortunately, the region is quite
+large, it's 9.1 megabases, and here,
+[SPEAKER_04]: the additive effect, sorry, the effect of
+the B allele over the A allele is
+[SPEAKER_04]: additive.
+[SPEAKER_04]: Now, for the flowering time, in this case,
+for 21,004 in the high kind of population,
+[SPEAKER_04]: we find one large peak in chromosome 1,
+again, compared to the 14,000 C weight,
+[SPEAKER_04]: that explains also a good proportion of
+the variants in this small region.
+[SPEAKER_04]: The effect of this allele is, again,
+dominant, as you compared to the one
+[SPEAKER_04]: identified in the 1000 C weight.
+[SPEAKER_04]: For 21,005, we also observe another peak,
+well, two peaks, actually, but the largest
+[SPEAKER_04]: peak in chromosome 1, explaining 20% of
+the variants in a large, over 20% in a
+[SPEAKER_04]: large region, and in this case,
+the effect is additive.
+[SPEAKER_04]: For the grain, we only find one peak in
+chromosome 1 that explains over half
+[SPEAKER_04]: percent of the variants, and in this case,
+this allele seems to be additive.
+[SPEAKER_04]: And for the fiber, we observe the most QT
+identified for flowering time,
+[SPEAKER_04]: four, one, two, five, actually,
+to be precise, but again, the most,
+[SPEAKER_04]: the largest peak is in chromosome 1 with
+an additive effect, but unfortunately,
+[SPEAKER_04]: it doesn't explain that much of the
+variant.
+[SPEAKER_04]: So what you see here is highlights the
+importance of this chromosome 1 or the
+[SPEAKER_04]: presence of flowering time genes in this
+chromosome 1 in the cannabis genome,
+[SPEAKER_04]: at least for a genome that we're
+evaluating here.
+[SPEAKER_04]: And lastly, for biomass, which I would
+expect that it would coincide with the
+[SPEAKER_04]: flowering time, and for this family,
+it does, explaining proportional variants,
+[SPEAKER_04]: same with the regenerative region,
+but again, this is an additive allele
+[SPEAKER_04]: compared to the B allele.
+[SPEAKER_04]: For high cannabinoid, 2005, again,
+there's a peak here.
+[SPEAKER_04]: There are not many that explain much of
+the variants, but it's still there,
+[SPEAKER_04]: and I'm seeing the same thing in grain,
+the largest peak, or the only peak,
+[SPEAKER_04]: peak in chromosome 1 equates to the one in
+the flowering time, explaining good
+[SPEAKER_04]: proportion of the variants, but a large
+region.
+[SPEAKER_04]: But in the fiber, however, we don't
+observe that peak in chromosome 1 that
+[SPEAKER_04]: should coincide with flowering time,
+but instead is only in chromosome 6,
+[SPEAKER_04]: which is very interesting for us.
+[SPEAKER_04]: However, it doesn't explain that much of
+the variants, but it's interesting
+[SPEAKER_04]: nonetheless.
+[SPEAKER_04]: And yeah, so with that, the key takeaways
+are that the chromosomal location for the
+[SPEAKER_04]: largest effect QTL for seed size measures
+1,000 seed weight differs depending on the
+[SPEAKER_04]: location on the population that we use.
+[SPEAKER_04]: The largest effect of this QTL for
+flowering time in all population was
+[SPEAKER_04]: located in chromosome 1.
+[SPEAKER_04]: The largest effect QTL for biomass seems
+to coincide with that for flowering in all
+[SPEAKER_04]: populations except the one in fiber,
+which is in chromosome 6.
+[SPEAKER_04]: And one thing, I don't know if you caught
+it, but there seems to be a one
+[SPEAKER_04]: pleiotropic dominant effect QTL in
+chromosome 1 for this high cannabinoid
+[SPEAKER_04]: population in 2001, 2004.
+[SPEAKER_04]: So with that, I would like to thank all
+the members of Larry Smart Lab,
+[SPEAKER_04]: as well as my founding sources listed
+here, and I will welcome any questions.
+[SPEAKER_02]: A range of planting densities for hemp,
+like super dense for fiber, super sparse
+[SPEAKER_02]: for cannabinoids.
+[SPEAKER_02]: How did you pick the density or the
+densities used for this study?
+[SPEAKER_02]: And does that have like a complex,
+I mean, does that impact flowering time?
+[SPEAKER_02]: And total seed weight differently like in
+the fiber biparentals versus like the
+[SPEAKER_02]: cannabinoid or grain biparentals?
+[SPEAKER_04]: Yeah, so the question is how I decided the
+plant intensity and if that affects the
+[SPEAKER_04]: traits phenotype here.
+[SPEAKER_04]: So the plant density was wide spacing.
+[SPEAKER_04]: So for example, one trait that will
+ultimately be affected by a plant density
+[SPEAKER_04]: is yield for biomass as well as seed yield
+that's definitely affected.
+[SPEAKER_04]: Flowering time, however, does not seem to
+be affected by the plant intensity.
+[SPEAKER_04]: And the seed size does not seem to be
+affected either as well.
+[SPEAKER_04]: Emily.
+[SPEAKER_03]: So I was wondering, you have a lot of QTL
+on chromosome 1 and it might be due to the
+[SPEAKER_03]: pleiotropic effects from that one parent
+population.
+[SPEAKER_03]: Have you looked further into those QTL to
+see if it's like one major, one or two
+[SPEAKER_03]: major genes that seem to be controlling
+this effect or other QTL in like very
+[SPEAKER_03]: different locations on that chromosome?
+[SPEAKER_04]: This is why I like you, Emily.
+[SPEAKER_04]: OK.
+[SPEAKER_04]: So I did not have the time to incorporate
+this in the presentation.
+[SPEAKER_04]: So I was hoping somebody would ask that.
+[SPEAKER_04]: So we do have the actual sequence of the
+parents in this high cannabinoid
+[SPEAKER_04]: population.
+[SPEAKER_04]: And we were able to have, what is that
+called, the structural and functional
+[SPEAKER_04]: predictions of the genes located.
+[SPEAKER_04]: So what I was able is to section the
+regions of that specific QTL and compare
+[SPEAKER_04]: them with each other and see what differs.
+[SPEAKER_04]: And the one that I identify as the one
+differing is this LUC7-like protein in
+[SPEAKER_04]: chromosome 1.
+[SPEAKER_04]: And there is this gene insertion that
+causes a frame shift mutation in this
+[SPEAKER_04]: haplotype.
+[SPEAKER_04]: This LUC7-like protein is a homolog to a
+LUC7RL in the Arabidopsis.
+[SPEAKER_04]: And this seems to participate as an
+accessory protein to the U1 small nuclear
+[SPEAKER_04]: ribosome.
+[SPEAKER_04]: So it's an adenyl protein in the
+spliceosome.
+[SPEAKER_04]: So it's affected or affects the RNA
+maturation of several genes.
+[SPEAKER_04]: And a group in Germany actually validated
+this by knocking it out and testing what
+[SPEAKER_04]: is upregulated or unregulated and what
+several outcomes that they got from it,
+[SPEAKER_04]: which highlights a pleiotropic effect in
+the Arabidopsis organism.
+[SPEAKER_03]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_03]: Thank you.
+Thank you.
+Thank you.

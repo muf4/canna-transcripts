@@ -1,0 +1,6032 @@
+1
+00:00:00,299 --> 00:00:05,040
+hey everyone uh thank you for joining us
+
+2
+00:00:03,060 --> 00:00:06,660
+today my name is Brian hesterman with
+
+3
+00:00:05,040 --> 00:00:09,000
+Inspire and I'll be hosting today's
+
+4
+00:00:06,660 --> 00:00:10,919
+webinar and Q a session
+
+5
+00:00:09,000 --> 00:00:12,599
+as we learned in part one growing
+
+6
+00:00:10,919 --> 00:00:14,160
+cannabis inside a sealed room is a
+
+7
+00:00:12,599 --> 00:00:16,019
+highly complex interdisciplinary
+
+8
+00:00:14,160 --> 00:00:17,339
+challenge that Bridges engineering with
+
+9
+00:00:16,019 --> 00:00:19,739
+Biology
+
+10
+00:00:17,339 --> 00:00:22,079
+a plant is not just a biologic organism
+
+11
+00:00:19,739 --> 00:00:23,879
+it is also a physical object that is
+
+12
+00:00:22,079 --> 00:00:26,038
+subject to the same physical laws the
+
+13
+00:00:23,879 --> 00:00:27,778
+government matter such as the law of
+
+14
+00:00:26,039 --> 00:00:30,300
+conservation of energy
+
+15
+00:00:27,778 --> 00:00:31,920
+as such energy in indoor plant
+
+16
+00:00:30,300 --> 00:00:33,840
+environments is neither created nor
+
+17
+00:00:31,920 --> 00:00:35,579
+destroyed but rather converted from one
+
+18
+00:00:33,840 --> 00:00:37,680
+form to another
+
+19
+00:00:35,579 --> 00:00:39,840
+for example when light is provided to a
+
+20
+00:00:37,679 --> 00:00:41,219
+plant a small amount of that energy is
+
+21
+00:00:39,840 --> 00:00:42,600
+absorbed by the plant's leaves for
+
+22
+00:00:41,219 --> 00:00:44,340
+photosynthesis
+
+23
+00:00:42,600 --> 00:00:46,439
+and much of that energy gets converted
+
+24
+00:00:44,340 --> 00:00:48,239
+into evaporation
+
+25
+00:00:46,439 --> 00:00:50,939
+so how do we maintain an optimal water
+
+26
+00:00:48,238 --> 00:00:53,099
+balance and manage plant evaporation to
+
+27
+00:00:50,939 --> 00:00:55,198
+ensure production outputs and quality
+
+28
+00:00:53,100 --> 00:00:57,239
+are maximized while lowering costs of
+
+29
+00:00:55,198 --> 00:01:00,058
+production through efficiency and
+
+30
+00:00:57,238 --> 00:01:02,280
+reductions in labor
+
+31
+00:01:00,058 --> 00:01:03,538
+the answer to that question is it
+
+32
+00:01:02,280 --> 00:01:05,400
+depends
+
+33
+00:01:03,539 --> 00:01:07,320
+every project is different in a
+
+34
+00:01:05,400 --> 00:01:09,478
+multitude of ways
+
+35
+00:01:07,319 --> 00:01:11,099
+there is no one-size-fits-all approach
+
+36
+00:01:09,478 --> 00:01:12,420
+and there is no single manufacturer that
+
+37
+00:01:11,099 --> 00:01:14,280
+can build the right system for every
+
+38
+00:01:12,420 --> 00:01:16,560
+project
+
+39
+00:01:14,280 --> 00:01:18,599
+today's presentation is part two of our
+
+40
+00:01:16,560 --> 00:01:20,700
+two-part series and we'll be focused on
+
+41
+00:01:18,599 --> 00:01:23,099
+the engineering side of the equation the
+
+42
+00:01:20,700 --> 00:01:26,060
+system and how control is achieved we'll
+
+43
+00:01:23,099 --> 00:01:29,219
+cover General HVAC system considerations
+
+44
+00:01:26,060 --> 00:01:31,019
+hvacc system types and components and
+
+45
+00:01:29,219 --> 00:01:32,640
+we'll touch on design and implementation
+
+46
+00:01:31,019 --> 00:01:34,500
+if we have time
+
+47
+00:01:32,640 --> 00:01:36,299
+this will be new content for some and
+
+48
+00:01:34,500 --> 00:01:38,280
+review for others and the goal is to
+
+49
+00:01:36,299 --> 00:01:39,360
+provide a solid a solid foundation of
+
+50
+00:01:38,280 --> 00:01:41,280
+important environmental control
+
+51
+00:01:39,359 --> 00:01:42,900
+requirements that should be considered
+
+52
+00:01:41,280 --> 00:01:45,000
+and how Inspire can help your project
+
+53
+00:01:42,900 --> 00:01:48,240
+with a diverse lineup of purpose-built
+
+54
+00:01:45,000 --> 00:01:50,280
+HVAC systems and controls
+
+55
+00:01:48,239 --> 00:01:52,379
+okay just to quickly set the stage for
+
+56
+00:01:50,280 --> 00:01:54,478
+the presentation this talk will focus on
+
+57
+00:01:52,379 --> 00:01:56,699
+environmental control for indoor
+
+58
+00:01:54,478 --> 00:01:58,859
+cultivation only not greenhouses
+
+59
+00:01:56,700 --> 00:02:00,840
+while many of today's Concepts still
+
+60
+00:01:58,859 --> 00:02:02,399
+apply to greenhouses Greenhouse
+
+61
+00:02:00,840 --> 00:02:05,939
+environmental control strategies for
+
+62
+00:02:02,399 --> 00:02:08,219
+another talk we're also dealing with
+
+63
+00:02:05,938 --> 00:02:10,818
+sealed Grow rooms where we have complete
+
+64
+00:02:08,219 --> 00:02:13,259
+control over all growth parameters
+
+65
+00:02:10,818 --> 00:02:16,439
+there's no outdoor air and normal
+
+66
+00:02:13,259 --> 00:02:18,620
+operation in the air within the room is
+
+67
+00:02:16,439 --> 00:02:20,939
+fully recirculating
+
+68
+00:02:18,620 --> 00:02:23,039
+and that's mainly because we're
+
+69
+00:02:20,939 --> 00:02:25,079
+supplementing narrow CO2 to maximize
+
+70
+00:02:23,039 --> 00:02:26,179
+carbon assimilation and the growth rate
+
+71
+00:02:25,080 --> 00:02:28,920
+of the plant
+
+72
+00:02:26,180 --> 00:02:31,680
+these sealed rooms can be either single
+
+73
+00:02:28,919 --> 00:02:35,098
+level or multi-tier and the focus of
+
+74
+00:02:31,680 --> 00:02:36,540
+today is is on cannabis but a lot of the
+
+75
+00:02:35,098 --> 00:02:39,000
+Core Concepts that we've covered today
+
+76
+00:02:36,539 --> 00:02:41,039
+can also apply to any other crop that
+
+77
+00:02:39,000 --> 00:02:42,959
+has grown indoors
+
+78
+00:02:41,039 --> 00:02:46,318
+today's webinar will be presented by
+
+79
+00:02:42,959 --> 00:02:48,300
+inspires Adrian giovanco and inspires
+
+80
+00:02:46,318 --> 00:02:50,458
+lead applications engineer and product
+
+81
+00:02:48,300 --> 00:02:52,800
+specialist joji Singh will be joining
+
+82
+00:02:50,459 --> 00:02:54,539
+for Q a after the presentation
+
+83
+00:02:52,800 --> 00:02:57,920
+without further Ado I'll hand it over to
+
+84
+00:02:54,539 --> 00:02:57,919
+Adrian take it away AG
+
+85
+00:02:58,139 --> 00:03:01,738
+thanks Brian welcome everybody great to
+
+86
+00:03:00,300 --> 00:03:04,140
+see you all thanks for joining today
+
+87
+00:03:01,739 --> 00:03:06,300
+we've got a lot to cover so we're going
+
+88
+00:03:04,139 --> 00:03:07,439
+to jump right in this is part two the
+
+89
+00:03:06,300 --> 00:03:09,239
+system
+
+90
+00:03:07,439 --> 00:03:11,340
+I'm going to drop off camera for this
+
+91
+00:03:09,239 --> 00:03:14,840
+portion to save bandwidth but we'll come
+
+92
+00:03:11,340 --> 00:03:14,840
+back on for the Q a
+
+93
+00:03:15,840 --> 00:03:20,459
+so our primary objective is to design
+
+94
+00:03:18,300 --> 00:03:23,099
+sell and commission mechanical systems
+
+95
+00:03:20,459 --> 00:03:25,259
+that serve indoor plant environments and
+
+96
+00:03:23,098 --> 00:03:27,839
+allow for Optimum plant performance
+
+97
+00:03:25,259 --> 00:03:29,519
+secondary metabolite production and
+
+98
+00:03:27,840 --> 00:03:31,800
+long-term profitability
+
+99
+00:03:29,519 --> 00:03:34,259
+these facilities are True Manufacturing
+
+100
+00:03:31,800 --> 00:03:36,900
+factories that produce high quality food
+
+101
+00:03:34,259 --> 00:03:38,459
+Recreational Products and medicine on an
+
+102
+00:03:36,900 --> 00:03:40,739
+industrial scale
+
+103
+00:03:38,459 --> 00:03:42,239
+with homage paid to a book that we draw
+
+104
+00:03:40,739 --> 00:03:44,580
+inspiration from called plant
+
+105
+00:03:42,239 --> 00:03:46,739
+empowerment we view our role as
+
+106
+00:03:44,580 --> 00:03:49,500
+supporting plant balances not
+
+107
+00:03:46,739 --> 00:03:51,658
+controlling air conditions the real art
+
+108
+00:03:49,500 --> 00:03:54,479
+of good growing is to support the plant
+
+109
+00:03:51,658 --> 00:03:56,878
+in maintaining its balances in such a
+
+110
+00:03:54,479 --> 00:03:58,798
+way that all factors for growth are
+
+111
+00:03:56,878 --> 00:04:00,539
+optimal at the same time
+
+112
+00:03:58,799 --> 00:04:02,580
+we're here to build on our part one
+
+113
+00:04:00,539 --> 00:04:05,098
+webinar where we broke down all the
+
+114
+00:04:02,580 --> 00:04:06,840
+needs of cultivation and curing spaces
+
+115
+00:04:05,098 --> 00:04:08,878
+and as we've shared we must not do this
+
+116
+00:04:06,840 --> 00:04:11,700
+in a vacuum which is why everything we
+
+117
+00:04:08,878 --> 00:04:13,739
+do here needs to be squarely focused on
+
+118
+00:04:11,699 --> 00:04:16,079
+all the important plant focused topics
+
+119
+00:04:13,739 --> 00:04:18,120
+that we covered in part one
+
+120
+00:04:16,079 --> 00:04:20,400
+with this solid foundation let's spend
+
+121
+00:04:18,120 --> 00:04:22,379
+some time exploring the process by which
+
+122
+00:04:20,399 --> 00:04:25,918
+the most appropriate mechanical systems
+
+123
+00:04:22,379 --> 00:04:28,259
+are sized selected and controlled to
+
+124
+00:04:25,918 --> 00:04:30,299
+serve these cultivation and curing rooms
+
+125
+00:04:28,259 --> 00:04:32,100
+based on what we learned in part one the
+
+126
+00:04:30,300 --> 00:04:33,960
+mechanical systems need to have the
+
+127
+00:04:32,100 --> 00:04:36,780
+ability to do all of the things shown on
+
+128
+00:04:33,959 --> 00:04:40,739
+the slide in each room dehumidify cool
+
+129
+00:04:36,779 --> 00:04:43,258
+heat humidify enrich with CO2 clean the
+
+130
+00:04:40,740 --> 00:04:45,300
+air distribute the air for homogeneous
+
+131
+00:04:43,259 --> 00:04:48,180
+air environment and most importantly
+
+132
+00:04:45,300 --> 00:04:50,699
+collect cultivation room level data so
+
+133
+00:04:48,180 --> 00:04:52,680
+that we know what is working what needs
+
+134
+00:04:50,699 --> 00:04:54,780
+attention and how we can use feedback
+
+135
+00:04:52,680 --> 00:04:57,300
+from the plants to optimize production
+
+136
+00:04:54,779 --> 00:04:59,099
+so can one system do all these things in
+
+137
+00:04:57,300 --> 00:05:01,139
+an integrated fashion or do you need
+
+138
+00:04:59,100 --> 00:05:02,460
+separate pieces of equipment let's dig
+
+139
+00:05:01,139 --> 00:05:04,918
+into that
+
+140
+00:05:02,459 --> 00:05:06,959
+for decades HVAC equipment has been
+
+141
+00:05:04,918 --> 00:05:09,120
+designed to keep humans comfortable thus
+
+142
+00:05:06,959 --> 00:05:11,339
+the term Comfort cooling systems
+
+143
+00:05:09,120 --> 00:05:13,079
+subsequently specialized process and
+
+144
+00:05:11,339 --> 00:05:15,239
+Manufacturing environments developed to
+
+145
+00:05:13,079 --> 00:05:17,399
+require specific environments
+
+146
+00:05:15,240 --> 00:05:20,040
+since people feel temperature more than
+
+147
+00:05:17,399 --> 00:05:22,620
+humidity and since we generate heat the
+
+148
+00:05:20,040 --> 00:05:24,180
+majority of HVAC systems are designed to
+
+149
+00:05:22,620 --> 00:05:26,879
+cool only
+
+150
+00:05:24,180 --> 00:05:29,220
+additionally most process environments
+
+151
+00:05:26,879 --> 00:05:32,399
+produce a lot of heat think data centers
+
+152
+00:05:29,220 --> 00:05:35,340
+so these process oriented Solutions also
+
+153
+00:05:32,399 --> 00:05:38,339
+tend to be more sensible cooling Centric
+
+154
+00:05:35,339 --> 00:05:40,079
+indoor plant environments are special in
+
+155
+00:05:38,339 --> 00:05:42,239
+the sense that they have living and
+
+156
+00:05:40,079 --> 00:05:43,139
+breathing organisms that happen to be
+
+157
+00:05:42,240 --> 00:05:45,538
+immobile
+
+158
+00:05:43,139 --> 00:05:48,240
+so consistent ratios of temperature and
+
+159
+00:05:45,538 --> 00:05:50,459
+light on a day-to-day basis is key to
+
+160
+00:05:48,240 --> 00:05:52,199
+Performance and while you may not feel
+
+161
+00:05:50,459 --> 00:05:54,060
+it in a forest plants are giving off
+
+162
+00:05:52,199 --> 00:05:56,400
+virtually all of the moisture that their
+
+163
+00:05:54,060 --> 00:05:57,780
+Roots uptake each plant or tree is an
+
+164
+00:05:56,399 --> 00:06:00,478
+evaporative cooler
+
+165
+00:05:57,779 --> 00:06:02,219
+this dehumidification heavy load is a
+
+166
+00:06:00,478 --> 00:06:04,800
+big reason why the mechanical systems
+
+167
+00:06:02,220 --> 00:06:07,020
+that serve them must be specialized
+
+168
+00:06:04,800 --> 00:06:09,600
+on top of the large moisture removal
+
+169
+00:06:07,019 --> 00:06:11,939
+requirement these rooms also have a very
+
+170
+00:06:09,600 --> 00:06:14,100
+Dynamic load profile between lights on
+
+171
+00:06:11,939 --> 00:06:16,560
+and lights off periods and the beginning
+
+172
+00:06:14,100 --> 00:06:18,120
+stages of vegetative growth to the end
+
+173
+00:06:16,560 --> 00:06:20,038
+of the flowering cycle
+
+174
+00:06:18,120 --> 00:06:21,899
+for the flowering Cycles which dominate
+
+175
+00:06:20,038 --> 00:06:25,019
+the facility space needs in these
+
+176
+00:06:21,899 --> 00:06:27,299
+facilities the load completely flips 180
+
+177
+00:06:25,019 --> 00:06:28,859
+degrees every 12 hours
+
+178
+00:06:27,300 --> 00:06:31,020
+now there's a concept from part one
+
+179
+00:06:28,860 --> 00:06:33,600
+that's worth repeating and much like the
+
+180
+00:06:31,019 --> 00:06:35,339
+law of minimum for plant growth the
+
+181
+00:06:33,600 --> 00:06:37,800
+productivity of an indoor cultivation
+
+182
+00:06:35,339 --> 00:06:39,959
+facility is determined by its greatest
+
+183
+00:06:37,800 --> 00:06:41,939
+limiting factor or its most
+
+184
+00:06:39,959 --> 00:06:44,159
+underperforming system
+
+185
+00:06:41,939 --> 00:06:46,139
+in our experience the greatest limiting
+
+186
+00:06:44,160 --> 00:06:48,479
+factor for most indoor facilities today
+
+187
+00:06:46,139 --> 00:06:50,160
+is their mechanical systems or their
+
+188
+00:06:48,478 --> 00:06:51,959
+ability to control the temperature and
+
+189
+00:06:50,160 --> 00:06:54,120
+humidity of their rooms
+
+190
+00:06:51,959 --> 00:06:56,038
+the Improvement of mechanical systems
+
+191
+00:06:54,120 --> 00:06:57,720
+presents the greatest opportunity to
+
+192
+00:06:56,038 --> 00:07:00,060
+maximize the productivity for indoor
+
+193
+00:06:57,720 --> 00:07:01,919
+cultivation businesses and this is
+
+194
+00:07:00,060 --> 00:07:03,839
+exactly why Inspire was founded to
+
+195
+00:07:01,918 --> 00:07:06,599
+develop and deliver purpose-built
+
+196
+00:07:03,839 --> 00:07:08,579
+systems and controls that are assets and
+
+197
+00:07:06,600 --> 00:07:09,900
+valuable tools for Growers and not a
+
+198
+00:07:08,579 --> 00:07:11,699
+liability
+
+199
+00:07:09,899 --> 00:07:13,560
+now on the next slide let's explore some
+
+200
+00:07:11,699 --> 00:07:15,960
+of the specific differences between the
+
+201
+00:07:13,560 --> 00:07:19,139
+two types of facilities and systems
+
+202
+00:07:15,959 --> 00:07:20,818
+Comfort cooling HVAC and HVAC and
+
+203
+00:07:19,139 --> 00:07:23,098
+dehumidification systems meant for
+
+204
+00:07:20,819 --> 00:07:24,720
+indoor plant environments so on the left
+
+205
+00:07:23,098 --> 00:07:26,579
+side you'll see attributes for the HVAC
+
+206
+00:07:24,720 --> 00:07:28,919
+systems for Comfort Cooling and on the
+
+207
+00:07:26,579 --> 00:07:30,538
+right for indoor plant environments this
+
+208
+00:07:28,918 --> 00:07:32,519
+whole conversation starts with the need
+
+209
+00:07:30,538 --> 00:07:34,500
+for both temperature and humidity
+
+210
+00:07:32,519 --> 00:07:35,698
+control also viewed through the lens of
+
+211
+00:07:34,500 --> 00:07:37,439
+VPD
+
+212
+00:07:35,699 --> 00:07:38,579
+rather than just temperature control
+
+213
+00:07:37,439 --> 00:07:40,978
+only
+
+214
+00:07:38,579 --> 00:07:42,839
+as such plant-centric sequence of
+
+215
+00:07:40,978 --> 00:07:45,000
+operations are required to respond to
+
+216
+00:07:42,839 --> 00:07:47,219
+the needs of the living organisms whose
+
+217
+00:07:45,000 --> 00:07:48,959
+needs are constantly changing and to
+
+218
+00:07:47,220 --> 00:07:50,039
+manage the rest of the items on this
+
+219
+00:07:48,959 --> 00:07:52,079
+list
+
+220
+00:07:50,038 --> 00:07:54,779
+sensible heat ratios are very different
+
+221
+00:07:52,079 --> 00:07:58,079
+50 50 Cooling and dehumidification
+
+222
+00:07:54,779 --> 00:08:01,339
+versus 85 or 90 percent and 10 to 15
+
+223
+00:07:58,079 --> 00:08:01,339
+percent dehumidification
+
+224
+00:08:01,680 --> 00:08:05,879
+in which requires airflow in the coils
+
+225
+00:08:03,959 --> 00:08:08,219
+to be sized appropriately
+
+226
+00:08:05,879 --> 00:08:09,839
+we have high number of air changes in
+
+227
+00:08:08,220 --> 00:08:11,880
+the sense of how these spaces view air
+
+228
+00:08:09,839 --> 00:08:14,638
+changes these are 100 recirculating
+
+229
+00:08:11,879 --> 00:08:18,060
+systems but we are changing out the air
+
+230
+00:08:14,639 --> 00:08:21,478
+every two to three minutes in a 20 to 30
+
+231
+00:08:18,060 --> 00:08:23,519
+air changes per hour rate versus two to
+
+232
+00:08:21,478 --> 00:08:26,098
+three air changes per hour
+
+233
+00:08:23,519 --> 00:08:28,019
+this is a very Dynamic load between day
+
+234
+00:08:26,098 --> 00:08:31,199
+and night and that requires variable
+
+235
+00:08:28,019 --> 00:08:33,059
+capacity control both on cooling reheat
+
+236
+00:08:31,199 --> 00:08:35,278
+airflow
+
+237
+00:08:33,059 --> 00:08:36,899
+where fixed capacity is okay in many
+
+238
+00:08:35,278 --> 00:08:39,240
+cases otherwise
+
+239
+00:08:36,899 --> 00:08:41,458
+and reheat is required in order to
+
+240
+00:08:39,240 --> 00:08:43,440
+deliver room neutral air conditions and
+
+241
+00:08:41,458 --> 00:08:45,359
+keep the plants in conditions optimal
+
+242
+00:08:43,440 --> 00:08:47,760
+for growth when we eliminate
+
+243
+00:08:45,360 --> 00:08:49,860
+dehumidifiers we're needing to reheat
+
+244
+00:08:47,759 --> 00:08:51,600
+that air back up whereas in Comfort
+
+245
+00:08:49,860 --> 00:08:53,459
+cooling applications you can deliver
+
+246
+00:08:51,600 --> 00:08:56,399
+much colder air
+
+247
+00:08:53,458 --> 00:08:58,500
+and in this case CO2 is plant food and
+
+248
+00:08:56,399 --> 00:09:01,860
+costs money to introduce thus air
+
+249
+00:08:58,500 --> 00:09:03,659
+economizers are typically not applicable
+
+250
+00:09:01,860 --> 00:09:05,820
+biosiltration and air cleaning is
+
+251
+00:09:03,659 --> 00:09:08,039
+extremely important must be included the
+
+252
+00:09:05,820 --> 00:09:10,080
+state laws differ but universally strict
+
+253
+00:09:08,039 --> 00:09:12,120
+lab testing requirements and lack of
+
+254
+00:09:10,080 --> 00:09:14,639
+ability to use pesticides on this crop
+
+255
+00:09:12,120 --> 00:09:16,440
+because it is ingested can lead to large
+
+256
+00:09:14,639 --> 00:09:17,519
+crop loss resulting from pests and
+
+257
+00:09:16,440 --> 00:09:18,959
+pathogens
+
+258
+00:09:17,519 --> 00:09:20,580
+like everything in this unique
+
+259
+00:09:18,958 --> 00:09:23,099
+application the whole process is
+
+260
+00:09:20,580 --> 00:09:25,200
+interconnected by creating a culture of
+
+261
+00:09:23,100 --> 00:09:27,300
+clean and improving the cleanliness of
+
+262
+00:09:25,200 --> 00:09:29,759
+the air environment within effective
+
+263
+00:09:27,299 --> 00:09:32,039
+biofiltration systems you can reduce or
+
+264
+00:09:29,759 --> 00:09:34,500
+eliminate preventative sprays and the
+
+265
+00:09:32,039 --> 00:09:36,179
+labor costs associated with them
+
+266
+00:09:34,500 --> 00:09:37,860
+so now that we know what functions are
+
+267
+00:09:36,179 --> 00:09:39,778
+required and how the needs differ from
+
+268
+00:09:37,860 --> 00:09:41,519
+typical Comfort cooling to process
+
+269
+00:09:39,778 --> 00:09:43,620
+cooling systems
+
+270
+00:09:41,519 --> 00:09:45,720
+let's take an important sanity check
+
+271
+00:09:43,620 --> 00:09:47,039
+with regards to the cultivation business
+
+272
+00:09:45,720 --> 00:09:48,899
+needs
+
+273
+00:09:47,039 --> 00:09:50,879
+so with the complex and
+
+274
+00:09:48,899 --> 00:09:53,159
+multi-disciplinary challenge that we are
+
+275
+00:09:50,879 --> 00:09:55,320
+faced with as an environmental can as
+
+276
+00:09:53,159 --> 00:09:58,199
+environmental system Architects so to
+
+277
+00:09:55,320 --> 00:09:59,459
+speak designers and Builders and with so
+
+278
+00:09:58,200 --> 00:10:02,580
+many different types of system
+
+279
+00:09:59,458 --> 00:10:04,379
+variations to consider we must base our
+
+280
+00:10:02,580 --> 00:10:06,060
+decision-making process on the most
+
+281
+00:10:04,379 --> 00:10:08,700
+important factors first
+
+282
+00:10:06,059 --> 00:10:11,099
+key performance indicators or kpis are
+
+283
+00:10:08,700 --> 00:10:12,660
+used to set the Baseline targets and
+
+284
+00:10:11,100 --> 00:10:14,339
+they must be continuously tracked
+
+285
+00:10:12,659 --> 00:10:16,019
+starting from the first cycle
+
+286
+00:10:14,339 --> 00:10:18,000
+we like to recommend using the second
+
+287
+00:10:16,019 --> 00:10:20,039
+flower cycle as the true test of the
+
+288
+00:10:18,000 --> 00:10:21,778
+benchmarks that were set since it is
+
+289
+00:10:20,039 --> 00:10:23,939
+very challenging to load test these
+
+290
+00:10:21,778 --> 00:10:27,179
+spaces and commission them properly with
+
+291
+00:10:23,940 --> 00:10:30,000
+plants and real load before bringing in
+
+292
+00:10:27,179 --> 00:10:31,079
+your your first run and starting to
+
+293
+00:10:30,000 --> 00:10:32,879
+cultivate
+
+294
+00:10:31,080 --> 00:10:34,560
+so we suggest for our clients to really
+
+295
+00:10:32,879 --> 00:10:36,179
+try to simulate that load in the space
+
+296
+00:10:34,559 --> 00:10:37,919
+as best as possible during the
+
+297
+00:10:36,179 --> 00:10:39,479
+commissioning process but it's not
+
+298
+00:10:37,919 --> 00:10:42,059
+always practical
+
+299
+00:10:39,480 --> 00:10:43,980
+what of these attributes do cultivation
+
+300
+00:10:42,059 --> 00:10:45,838
+businesses need to succeed
+
+301
+00:10:43,980 --> 00:10:47,759
+we regularly pull cultivators and
+
+302
+00:10:45,839 --> 00:10:49,860
+cannabis business owners and out of this
+
+303
+00:10:47,759 --> 00:10:52,458
+long list the attributes that come back
+
+304
+00:10:49,860 --> 00:10:55,740
+on the top of the list are quality
+
+305
+00:10:52,458 --> 00:10:59,299
+consistency speed to Market
+
+306
+00:10:55,740 --> 00:10:59,299
+lowest operating cost
+
+307
+00:11:00,360 --> 00:11:04,079
+on the point of reduced cost of
+
+308
+00:11:02,159 --> 00:11:06,000
+production it is very important to not
+
+309
+00:11:04,078 --> 00:11:08,399
+forget about building efficiency into
+
+310
+00:11:06,000 --> 00:11:10,860
+your facility from the start and taking
+
+311
+00:11:08,399 --> 00:11:13,139
+advantage of capex offsets from the
+
+312
+00:11:10,860 --> 00:11:16,200
+utility or state to help improve
+
+313
+00:11:13,139 --> 00:11:17,939
+efficiency and reduce cost of production
+
+314
+00:11:16,200 --> 00:11:19,860
+this is where indoor and vertical
+
+315
+00:11:17,940 --> 00:11:22,260
+farming industry can truly participate
+
+316
+00:11:19,860 --> 00:11:24,419
+in the triple bottom line concept that
+
+317
+00:11:22,259 --> 00:11:25,679
+sustainable facility design can be good
+
+318
+00:11:24,419 --> 00:11:27,719
+for business
+
+319
+00:11:25,679 --> 00:11:28,859
+good for the environment and good for
+
+320
+00:11:27,720 --> 00:11:30,000
+the consumers
+
+321
+00:11:28,860 --> 00:11:31,379
+so that's been a couple of minutes
+
+322
+00:11:30,000 --> 00:11:34,799
+digging into these details around
+
+323
+00:11:31,379 --> 00:11:37,500
+efficiency and incentives for offsets
+
+324
+00:11:34,799 --> 00:11:38,578
+dehumidification is an energy intensive
+
+325
+00:11:37,500 --> 00:11:41,519
+process
+
+326
+00:11:38,578 --> 00:11:43,739
+the HVAC dehumidification systems can
+
+327
+00:11:41,519 --> 00:11:46,500
+comprise up to 50 to 60 percent of the
+
+328
+00:11:43,740 --> 00:11:48,480
+total facility energy consumption and as
+
+329
+00:11:46,500 --> 00:11:52,078
+that's rolled up that total energy
+
+330
+00:11:48,480 --> 00:11:54,959
+accounts for 20 to 40 percent of your
+
+331
+00:11:52,078 --> 00:11:57,778
+operating cost the HVAC portion of the
+
+332
+00:11:54,958 --> 00:11:59,699
+energy accounts for your total total of
+
+333
+00:11:57,778 --> 00:12:01,559
+20 to 40 percent of your total operating
+
+334
+00:11:59,700 --> 00:12:04,259
+costs costs in a cultivation facility
+
+335
+00:12:01,559 --> 00:12:06,179
+and investing in efficient HVAC and
+
+336
+00:12:04,259 --> 00:12:09,179
+dehumidification systems lowers your
+
+337
+00:12:06,179 --> 00:12:11,099
+operating cost per pound in perpetuity
+
+338
+00:12:09,179 --> 00:12:12,659
+efficient systems are what you need to
+
+339
+00:12:11,100 --> 00:12:14,879
+weather the storm of price compression
+
+340
+00:12:12,659 --> 00:12:16,379
+and supply and demand imbalances which
+
+341
+00:12:14,879 --> 00:12:19,139
+are guaranteed to happen as state
+
+342
+00:12:16,379 --> 00:12:21,000
+markets mature most existing facilities
+
+343
+00:12:19,139 --> 00:12:22,679
+today are not built to make it through
+
+344
+00:12:21,000 --> 00:12:25,259
+these challenges
+
+345
+00:12:22,679 --> 00:12:27,599
+by investing up front you can keep your
+
+346
+00:12:25,259 --> 00:12:29,399
+costs down don't expose yourself to
+
+347
+00:12:27,600 --> 00:12:30,600
+these risks by doing it right the first
+
+348
+00:12:29,399 --> 00:12:32,700
+time
+
+349
+00:12:30,600 --> 00:12:34,800
+the utility and tax incentive programs
+
+350
+00:12:32,700 --> 00:12:35,879
+offer free money and are only getting
+
+351
+00:12:34,799 --> 00:12:38,759
+better
+
+352
+00:12:35,879 --> 00:12:41,100
+custom rebates are available now in all
+
+353
+00:12:38,759 --> 00:12:43,319
+states prescriptive rebates are coming
+
+354
+00:12:41,100 --> 00:12:46,019
+in many geographies
+
+355
+00:12:43,320 --> 00:12:47,820
+Peak demand reduction incentives are
+
+356
+00:12:46,019 --> 00:12:50,220
+very significant right now in California
+
+357
+00:12:47,820 --> 00:12:52,440
+for the next year and in a number of
+
+358
+00:12:50,220 --> 00:12:54,180
+other states this could be as simple as
+
+359
+00:12:52,440 --> 00:12:56,339
+scheduling your light cycles outside of
+
+360
+00:12:54,179 --> 00:12:58,439
+the peak demand hours or implementing
+
+361
+00:12:56,339 --> 00:13:01,620
+controls retrofits
+
+362
+00:12:58,440 --> 00:13:05,040
+combined heat and power or CHP systems
+
+363
+00:13:01,620 --> 00:13:07,860
+can gain both tax incentives and utility
+
+364
+00:13:05,039 --> 00:13:10,078
+rebates for the same project which is a
+
+365
+00:13:07,860 --> 00:13:12,000
+real win-win and we see more and more
+
+366
+00:13:10,078 --> 00:13:15,719
+cultivation facilities taking advantage
+
+367
+00:13:12,000 --> 00:13:17,820
+of CHP systems as they can in many cases
+
+368
+00:13:15,720 --> 00:13:20,399
+be the most financially viable solution
+
+369
+00:13:17,820 --> 00:13:22,139
+to get a project financed and built
+
+370
+00:13:20,399 --> 00:13:25,078
+within a reasonable timeline
+
+371
+00:13:22,139 --> 00:13:26,879
+plus we get all of our reheat for free
+
+372
+00:13:25,078 --> 00:13:28,679
+a utility incentive programs are
+
+373
+00:13:26,879 --> 00:13:30,480
+developing fast so stay apprised of
+
+374
+00:13:28,679 --> 00:13:32,519
+programs in your area and connect with
+
+375
+00:13:30,480 --> 00:13:34,620
+utility providers early
+
+376
+00:13:32,519 --> 00:13:36,659
+now let's not forget that we don't
+
+377
+00:13:34,620 --> 00:13:38,778
+design efficiency into the overall
+
+378
+00:13:36,659 --> 00:13:41,639
+system just for the sake of efficiency
+
+379
+00:13:38,778 --> 00:13:44,338
+we must focus on the plant productivity
+
+380
+00:13:41,639 --> 00:13:45,600
+first and then find ways to do it
+
+381
+00:13:44,339 --> 00:13:47,160
+efficiently
+
+382
+00:13:45,600 --> 00:13:48,420
+and a little foreshadowing one for
+
+383
+00:13:47,159 --> 00:13:50,699
+what's to come today but since we
+
+384
+00:13:48,419 --> 00:13:53,639
+Embrace an integrated design approach
+
+385
+00:13:50,700 --> 00:13:54,959
+from the pre-construction stage we
+
+386
+00:13:53,639 --> 00:13:57,720
+actually can do both of those
+
+387
+00:13:54,958 --> 00:13:58,859
+successfully
+
+388
+00:13:57,720 --> 00:14:00,959
+now that we've got all the business
+
+389
+00:13:58,860 --> 00:14:04,560
+level needs ranked we have to make sure
+
+390
+00:14:00,958 --> 00:14:06,899
+that those track with you know uh mixing
+
+391
+00:14:04,559 --> 00:14:08,759
+in sustainability and efficiency and the
+
+392
+00:14:06,899 --> 00:14:11,399
+kpis and all of that we've just
+
+393
+00:14:08,759 --> 00:14:13,860
+discussed we have to make sure that that
+
+394
+00:14:11,399 --> 00:14:16,200
+is all going to jive with the system
+
+395
+00:14:13,860 --> 00:14:17,959
+considerations that the owner and client
+
+396
+00:14:16,200 --> 00:14:21,060
+are looking for
+
+397
+00:14:17,958 --> 00:14:23,399
+and the building and site design
+
+398
+00:14:21,059 --> 00:14:25,018
+constraints which you see system
+
+399
+00:14:23,399 --> 00:14:27,179
+considerations on the left and can
+
+400
+00:14:25,019 --> 00:14:29,039
+design constraints on the right Capital
+
+401
+00:14:27,179 --> 00:14:30,659
+cost and operating costs are extremely
+
+402
+00:14:29,039 --> 00:14:32,039
+important you got to get it right the
+
+403
+00:14:30,659 --> 00:14:34,139
+first time
+
+404
+00:14:32,039 --> 00:14:36,360
+HVAC is typically the largest capital
+
+405
+00:14:34,139 --> 00:14:38,940
+investment on a project and it is also
+
+406
+00:14:36,360 --> 00:14:40,740
+one of the most expensive to retrofit
+
+407
+00:14:38,940 --> 00:14:43,019
+and there are really so many different
+
+408
+00:14:40,740 --> 00:14:45,180
+competing factors here where do you go
+
+409
+00:14:43,019 --> 00:14:47,100
+through level of control efficiency
+
+410
+00:14:45,179 --> 00:14:50,099
+sustainability like we just discussed
+
+411
+00:14:47,100 --> 00:14:52,079
+the reliability durability complexity
+
+412
+00:14:50,100 --> 00:14:54,959
+maintenance requirements who's going to
+
+413
+00:14:52,078 --> 00:14:58,379
+maintain it how is your phasing set up
+
+414
+00:14:54,958 --> 00:15:00,299
+for future phases and build out
+
+415
+00:14:58,379 --> 00:15:02,338
+um and are you focused on GMP
+
+416
+00:15:00,299 --> 00:15:04,519
+cleanliness standards
+
+417
+00:15:02,339 --> 00:15:07,260
+all of that has to be
+
+418
+00:15:04,519 --> 00:15:09,419
+transitioned into how we're actually
+
+419
+00:15:07,259 --> 00:15:11,578
+going to apply this into this particular
+
+420
+00:15:09,419 --> 00:15:13,860
+building or site and these design
+
+421
+00:15:11,578 --> 00:15:15,419
+constraints are what the engineers MEP
+
+422
+00:15:13,860 --> 00:15:17,519
+engineers and Architects and other
+
+423
+00:15:15,419 --> 00:15:19,860
+design professionals have to work with
+
+424
+00:15:17,519 --> 00:15:22,980
+them these that you see on the screen
+
+425
+00:15:19,860 --> 00:15:26,339
+are some of the the items that we see
+
+426
+00:15:22,980 --> 00:15:28,620
+most often overlooked space and
+
+427
+00:15:26,339 --> 00:15:31,399
+structural limitations do you have
+
+428
+00:15:28,620 --> 00:15:34,320
+enough utility power gas are the biggest
+
+429
+00:15:31,399 --> 00:15:36,120
+water is also very important CO2
+
+430
+00:15:34,320 --> 00:15:38,519
+availability
+
+431
+00:15:36,120 --> 00:15:41,820
+property line and neighbor complaints
+
+432
+00:15:38,519 --> 00:15:44,179
+both Odor Control and noise related can
+
+433
+00:15:41,820 --> 00:15:47,639
+sink a project
+
+434
+00:15:44,179 --> 00:15:51,059
+biofiltration and pests exclusion needs
+
+435
+00:15:47,639 --> 00:15:52,440
+to be considered and very very seriously
+
+436
+00:15:51,059 --> 00:15:54,359
+in areas that are aggregate
+
+437
+00:15:52,440 --> 00:15:57,060
+agriculturally dense
+
+438
+00:15:54,360 --> 00:15:58,620
+and the controls integration error
+
+439
+00:15:57,059 --> 00:16:01,018
+distribution uniformity how we're
+
+440
+00:15:58,620 --> 00:16:02,039
+putting the facility together all takes
+
+441
+00:16:01,019 --> 00:16:04,320
+space
+
+442
+00:16:02,039 --> 00:16:05,759
+now all of these items have to be able
+
+443
+00:16:04,320 --> 00:16:07,500
+to meet the building and energy code
+
+444
+00:16:05,759 --> 00:16:10,078
+compliance as well so this is a really
+
+445
+00:16:07,500 --> 00:16:12,419
+multi multi-disciplinary challenge
+
+446
+00:16:10,078 --> 00:16:14,638
+and it's been said before but it's worth
+
+447
+00:16:12,419 --> 00:16:16,198
+repeating that it's imperative to get
+
+448
+00:16:14,639 --> 00:16:18,360
+this done right the first time because
+
+449
+00:16:16,198 --> 00:16:21,059
+of how costly and challenging it is to
+
+450
+00:16:18,360 --> 00:16:22,320
+retrofit the HVAC systems
+
+451
+00:16:21,059 --> 00:16:24,059
+so let's start looking at some different
+
+452
+00:16:22,320 --> 00:16:26,100
+types of systems that are used commonly
+
+453
+00:16:24,059 --> 00:16:28,018
+in cultivation facilities
+
+454
+00:16:26,100 --> 00:16:29,820
+the first place to start here is with
+
+455
+00:16:28,019 --> 00:16:31,919
+what we call non-integrated systems
+
+456
+00:16:29,820 --> 00:16:34,980
+these can also be called conventional
+
+457
+00:16:31,919 --> 00:16:36,838
+non-integrated decoupled or Legacy
+
+458
+00:16:34,980 --> 00:16:38,879
+systems now during prohibition
+
+459
+00:16:36,839 --> 00:16:40,680
+cultivators were forced indoors to hide
+
+460
+00:16:38,879 --> 00:16:42,838
+from law enforcement and due to that
+
+461
+00:16:40,679 --> 00:16:44,819
+illegality they could not engage
+
+462
+00:16:42,839 --> 00:16:47,699
+Engineers or commercial HVAC system
+
+463
+00:16:44,820 --> 00:16:49,500
+providers or HVAC technicians to design
+
+464
+00:16:47,698 --> 00:16:51,479
+and install mechanical systems to
+
+465
+00:16:49,500 --> 00:16:53,458
+control these spaces properly and this
+
+466
+00:16:51,480 --> 00:16:55,139
+really led to a do-it-yourself mentality
+
+467
+00:16:53,458 --> 00:16:57,119
+and propensity for using what was
+
+468
+00:16:55,139 --> 00:16:59,820
+available and specifically we're talking
+
+469
+00:16:57,120 --> 00:17:02,339
+about off-the-shelf residential
+
+470
+00:16:59,820 --> 00:17:03,540
+people Comfort cooling systems used in
+
+471
+00:17:02,339 --> 00:17:06,298
+conjunction with Standalone
+
+472
+00:17:03,539 --> 00:17:07,798
+dehumidifiers and oscillating wall fans
+
+473
+00:17:06,298 --> 00:17:09,779
+all of this gear can be bought at a
+
+474
+00:17:07,798 --> 00:17:11,519
+local Hydra shop or Home Depot
+
+475
+00:17:09,779 --> 00:17:14,039
+for the cooling equipment it can be
+
+476
+00:17:11,519 --> 00:17:17,639
+packaged rooftop units split systems
+
+477
+00:17:14,039 --> 00:17:20,220
+Mini Splits vrf systems or two pipe
+
+478
+00:17:17,640 --> 00:17:22,679
+chill water fan coils all these systems
+
+479
+00:17:20,220 --> 00:17:24,360
+are cooling devices and control off of a
+
+480
+00:17:22,679 --> 00:17:26,519
+thermostat only
+
+481
+00:17:24,359 --> 00:17:29,279
+Standalone dehumidifiers are required
+
+482
+00:17:26,519 --> 00:17:31,859
+then to augment these HVAC units and
+
+483
+00:17:29,279 --> 00:17:34,440
+they're heating only based on rejecting
+
+484
+00:17:31,859 --> 00:17:36,719
+the heat of compression from the
+
+485
+00:17:34,440 --> 00:17:39,058
+dehumidifier into the space
+
+486
+00:17:36,720 --> 00:17:40,679
+and the AC units now have to be sized
+
+487
+00:17:39,058 --> 00:17:42,599
+appropriately to remove this heat
+
+488
+00:17:40,679 --> 00:17:44,580
+rejected by the dehumidifier which is
+
+489
+00:17:42,599 --> 00:17:47,339
+roughly 30 percent additional
+
+490
+00:17:44,579 --> 00:17:48,980
+so several issues persist with this type
+
+491
+00:17:47,339 --> 00:17:51,298
+of system configuration
+
+492
+00:17:48,980 --> 00:17:53,640
+sub-optimal control
+
+493
+00:17:51,298 --> 00:17:56,220
+in this relative humidity Spike at
+
+494
+00:17:53,640 --> 00:17:58,500
+lights off every night where powdery
+
+495
+00:17:56,220 --> 00:18:01,440
+mildew and botrytus can develop
+
+496
+00:17:58,500 --> 00:18:03,599
+it we see uncontrolled microclimates and
+
+497
+00:18:01,440 --> 00:18:04,980
+uneven airflow and poor air mixing in
+
+498
+00:18:03,599 --> 00:18:07,079
+these spaces
+
+499
+00:18:04,980 --> 00:18:09,058
+they're inherently inefficient based on
+
+500
+00:18:07,079 --> 00:18:11,038
+that 30 percent extra heat load to
+
+501
+00:18:09,058 --> 00:18:13,079
+remove from the dehumidifiers as I
+
+502
+00:18:11,038 --> 00:18:15,179
+mentioned and these systems are really
+
+503
+00:18:13,079 --> 00:18:17,460
+fighting against each other because it's
+
+504
+00:18:15,179 --> 00:18:19,740
+challenging to control
+
+505
+00:18:17,460 --> 00:18:22,319
+there's pathogen risks with this type of
+
+506
+00:18:19,740 --> 00:18:24,120
+design since your technicians will be
+
+507
+00:18:22,319 --> 00:18:26,099
+working on the mechanical equipment
+
+508
+00:18:24,119 --> 00:18:26,939
+above the canopy as you see in the
+
+509
+00:18:26,099 --> 00:18:29,279
+picture
+
+510
+00:18:26,940 --> 00:18:31,558
+and condensate leaks are routinely
+
+511
+00:18:29,279 --> 00:18:35,460
+dripping into the plants which is a
+
+512
+00:18:31,558 --> 00:18:38,160
+common opportunity for water molds
+
+513
+00:18:35,460 --> 00:18:40,019
+sanitation between the Cycles is also
+
+514
+00:18:38,160 --> 00:18:41,400
+very challenging to achieve since
+
+515
+00:18:40,019 --> 00:18:43,619
+there's so much equipment in the room
+
+516
+00:18:41,400 --> 00:18:45,720
+and so many surfaces to clean
+
+517
+00:18:43,619 --> 00:18:47,939
+so these these all challenges really beg
+
+518
+00:18:45,720 --> 00:18:50,279
+the question can we do it better you
+
+519
+00:18:47,940 --> 00:18:52,200
+know as experienced HVAC Engineers we
+
+520
+00:18:50,279 --> 00:18:55,440
+know that we have the technology to do
+
+521
+00:18:52,200 --> 00:18:57,179
+it better so why wouldn't we some say
+
+522
+00:18:55,440 --> 00:18:59,160
+that the first cost savings and many
+
+523
+00:18:57,179 --> 00:19:00,240
+small redundant units are worth the
+
+524
+00:18:59,160 --> 00:19:02,700
+trade-off
+
+525
+00:19:00,240 --> 00:19:05,220
+the data tells us otherwise and the
+
+526
+00:19:02,700 --> 00:19:07,798
+industry is maturing too quickly to not
+
+527
+00:19:05,220 --> 00:19:09,900
+take advantage of today's Technologies
+
+528
+00:19:07,798 --> 00:19:11,879
+let's get into how we can mitigate these
+
+529
+00:19:09,900 --> 00:19:13,860
+challenges and hit the mark with the
+
+530
+00:19:11,880 --> 00:19:16,740
+owner requirements for their business
+
+531
+00:19:13,859 --> 00:19:18,839
+operational efficiency that we discussed
+
+532
+00:19:16,740 --> 00:19:21,900
+earlier and make it a high performance
+
+533
+00:19:18,839 --> 00:19:23,279
+and sustainable system
+
+534
+00:19:21,900 --> 00:19:24,900
+Now quickly before we move past
+
+535
+00:19:23,279 --> 00:19:26,339
+non-integrated systems for the rest of
+
+536
+00:19:24,900 --> 00:19:28,380
+the presentation I do want to mention
+
+537
+00:19:26,339 --> 00:19:30,779
+that for the hundreds and thousands of
+
+538
+00:19:28,380 --> 00:19:33,299
+rooms across North America that are
+
+539
+00:19:30,779 --> 00:19:35,879
+already built with these systems HVAC
+
+540
+00:19:33,298 --> 00:19:39,418
+controls retrofits and sub canopy
+
+541
+00:19:35,880 --> 00:19:42,840
+Airflow Systems maybe some of the best
+
+542
+00:19:39,419 --> 00:19:45,660
+ways to get reliable data and better
+
+543
+00:19:42,839 --> 00:19:47,459
+control from these existing systems and
+
+544
+00:19:45,660 --> 00:19:49,558
+to be able to apply a plant-centric
+
+545
+00:19:47,460 --> 00:19:51,538
+sequence of operations
+
+546
+00:19:49,558 --> 00:19:53,339
+put together an action plan to
+
+547
+00:19:51,538 --> 00:19:55,679
+supplement additional capacity if the
+
+548
+00:19:53,339 --> 00:19:57,779
+systems are undersized and utilize open
+
+549
+00:19:55,679 --> 00:20:00,538
+source architecture for Control Systems
+
+550
+00:19:57,779 --> 00:20:04,200
+to be able to integrate into future
+
+551
+00:20:00,538 --> 00:20:06,359
+retrofits of the full HVAC systems
+
+552
+00:20:04,200 --> 00:20:08,600
+um as additional Capital becomes
+
+553
+00:20:06,359 --> 00:20:08,599
+available
+
+554
+00:20:09,359 --> 00:20:14,099
+these controls and airflow retrofits can
+
+555
+00:20:11,819 --> 00:20:16,439
+often be supported by the utility rebate
+
+556
+00:20:14,099 --> 00:20:18,298
+programs that we touched on which really
+
+557
+00:20:16,440 --> 00:20:21,058
+helps to offset those investment costs
+
+558
+00:20:18,298 --> 00:20:25,500
+further and improves the rois
+
+559
+00:20:21,058 --> 00:20:27,418
+so now let's dig into Integrated Systems
+
+560
+00:20:25,500 --> 00:20:29,940
+here we graduate to what we term
+
+561
+00:20:27,419 --> 00:20:33,840
+integrated HVAC and dehumidification
+
+562
+00:20:29,940 --> 00:20:36,179
+systems or hvacd which highlights the
+
+563
+00:20:33,839 --> 00:20:38,519
+importance of dehumidification in this
+
+564
+00:20:36,179 --> 00:20:40,559
+process we see these also being called
+
+565
+00:20:38,519 --> 00:20:43,379
+reheat systems based on the use of hot
+
+566
+00:20:40,558 --> 00:20:45,178
+gas reheat in that case the heat is
+
+567
+00:20:43,380 --> 00:20:46,679
+recovered off the compressor that would
+
+568
+00:20:45,179 --> 00:20:49,679
+have been sent out to the condenser to
+
+569
+00:20:46,679 --> 00:20:51,360
+be rejected to ambient this is a DX or
+
+570
+00:20:49,679 --> 00:20:53,640
+direct expansion system we'll go into
+
+571
+00:20:51,359 --> 00:20:55,259
+those in more depth in a moment hydronic
+
+572
+00:20:53,640 --> 00:20:57,480
+systems are another type of integrated
+
+573
+00:20:55,259 --> 00:21:00,179
+system but we must be specific with our
+
+574
+00:20:57,480 --> 00:21:02,038
+language and naming conventions for pipe
+
+575
+00:21:00,179 --> 00:21:04,919
+hydronic system versus a two-pipe
+
+576
+00:21:02,038 --> 00:21:07,259
+hydronic system which is integrated a
+
+577
+00:21:04,919 --> 00:21:09,538
+four pipe and two pipe is a cooling only
+
+578
+00:21:07,259 --> 00:21:11,339
+supporting a non-integrated system we'll
+
+579
+00:21:09,538 --> 00:21:13,980
+get into more of this in a moment
+
+580
+00:21:11,339 --> 00:21:16,379
+as HVAC engineering professionals we
+
+581
+00:21:13,980 --> 00:21:18,599
+know that a well-engineered system is
+
+582
+00:21:16,380 --> 00:21:20,160
+the best solution when faced with such a
+
+583
+00:21:18,599 --> 00:21:23,159
+multi-faceted design and construction
+
+584
+00:21:20,160 --> 00:21:25,620
+challenge a properly designed integrated
+
+585
+00:21:23,160 --> 00:21:28,320
+system provides cooling Heating and
+
+586
+00:21:25,619 --> 00:21:29,219
+dehumidification in a single engineered
+
+587
+00:21:28,319 --> 00:21:31,259
+system
+
+588
+00:21:29,220 --> 00:21:33,360
+since all of this is happening in
+
+589
+00:21:31,259 --> 00:21:35,460
+integrated air handling units we can
+
+590
+00:21:33,359 --> 00:21:38,399
+treat all the air in each room for pests
+
+591
+00:21:35,460 --> 00:21:40,440
+and pathogens on a continuous basis and
+
+592
+00:21:38,400 --> 00:21:42,000
+keep the grow room clean with no four
+
+593
+00:21:40,440 --> 00:21:43,860
+materials to clean
+
+594
+00:21:42,000 --> 00:21:45,779
+remember that errors are being exchanged
+
+595
+00:21:43,859 --> 00:21:48,298
+every two to three minutes
+
+596
+00:21:45,779 --> 00:21:50,038
+with an integrated system we get the
+
+597
+00:21:48,298 --> 00:21:51,839
+benefits of a tightly controlled and
+
+598
+00:21:50,038 --> 00:21:53,819
+homogeneous air environment with
+
+599
+00:21:51,839 --> 00:21:56,339
+controlled transitions between photo
+
+600
+00:21:53,819 --> 00:21:58,918
+periods we get to pick up inherent
+
+601
+00:21:56,339 --> 00:22:01,079
+efficiency gains in the 30 to 40 percent
+
+602
+00:21:58,919 --> 00:22:04,140
+range compared to non-integrated systems
+
+603
+00:22:01,079 --> 00:22:06,720
+by removing Standalone dehumidifiers
+
+604
+00:22:04,140 --> 00:22:10,740
+we focus on the systems being right
+
+605
+00:22:06,720 --> 00:22:12,058
+sized and reusing energy and water in
+
+606
+00:22:10,740 --> 00:22:13,859
+any way possible
+
+607
+00:22:12,058 --> 00:22:16,379
+it really sounds too good to be true
+
+608
+00:22:13,859 --> 00:22:18,359
+right but we can balance all these
+
+609
+00:22:16,380 --> 00:22:20,220
+spinning plates with a simple and
+
+610
+00:22:18,359 --> 00:22:21,779
+elegant system design
+
+611
+00:22:20,220 --> 00:22:23,220
+first I thought it would be good to
+
+612
+00:22:21,779 --> 00:22:25,740
+quickly examine
+
+613
+00:22:23,220 --> 00:22:28,620
+two rooms from a recent client
+
+614
+00:22:25,740 --> 00:22:31,259
+side-by-side study
+
+615
+00:22:28,619 --> 00:22:33,658
+this is an example of an integrated HVAC
+
+616
+00:22:31,259 --> 00:22:35,339
+system on the top left versus a
+
+617
+00:22:33,659 --> 00:22:36,720
+conventional non-integrated system on
+
+618
+00:22:35,339 --> 00:22:38,099
+the bottom right and what the control
+
+619
+00:22:36,720 --> 00:22:40,140
+Trends look like
+
+620
+00:22:38,099 --> 00:22:43,500
+this is two different flower rooms both
+
+621
+00:22:40,140 --> 00:22:45,900
+in week four using LED lights both in a
+
+622
+00:22:43,500 --> 00:22:48,779
+two-tier racking system the same week in
+
+623
+00:22:45,900 --> 00:22:51,120
+June of last year at the same facility
+
+624
+00:22:48,779 --> 00:22:53,639
+note the relative humidity spikes of 15
+
+625
+00:22:51,119 --> 00:22:55,979
+to 20 percent every time the lights go
+
+626
+00:22:53,640 --> 00:22:58,320
+out which is a critical transition point
+
+627
+00:22:55,980 --> 00:23:00,120
+in these Dynamic spaces the relative
+
+628
+00:22:58,319 --> 00:23:01,558
+humidity line is the purple line and the
+
+629
+00:23:00,119 --> 00:23:03,658
+trend on the bottom right
+
+630
+00:23:01,558 --> 00:23:05,038
+and you can see much tighter control of
+
+631
+00:23:03,659 --> 00:23:06,659
+relative humidity through these
+
+632
+00:23:05,038 --> 00:23:09,538
+transitions
+
+633
+00:23:06,659 --> 00:23:11,580
+and with the integrated system note the
+
+634
+00:23:09,538 --> 00:23:14,158
+speed to the control points or how
+
+635
+00:23:11,579 --> 00:23:16,139
+quickly set points can be achieved
+
+636
+00:23:14,159 --> 00:23:17,700
+but the most important part with this
+
+637
+00:23:16,140 --> 00:23:19,919
+whole story is that the one on the
+
+638
+00:23:17,700 --> 00:23:22,140
+bottom right was getting 28 grams a
+
+639
+00:23:19,919 --> 00:23:24,659
+square foot of sellable flour and the
+
+640
+00:23:22,140 --> 00:23:27,000
+one on the top left is getting 55 grams
+
+641
+00:23:24,659 --> 00:23:29,100
+a square foot consistently we've got
+
+642
+00:23:27,000 --> 00:23:31,259
+double the yields with integrated
+
+643
+00:23:29,099 --> 00:23:33,240
+environmental control
+
+644
+00:23:31,259 --> 00:23:35,158
+now let's go from here to talk about the
+
+645
+00:23:33,240 --> 00:23:37,200
+different types of Integrated Systems
+
+646
+00:23:35,159 --> 00:23:39,799
+that we deploy as a comprehensive
+
+647
+00:23:37,200 --> 00:23:43,200
+Solutions provider
+
+648
+00:23:39,798 --> 00:23:45,960
+this type of system is called DX which
+
+649
+00:23:43,200 --> 00:23:47,640
+stands for direct expansion this is the
+
+650
+00:23:45,960 --> 00:23:50,038
+type of home air conditioner you likely
+
+651
+00:23:47,640 --> 00:23:52,740
+have it contains the Full Refrigeration
+
+652
+00:23:50,038 --> 00:23:55,500
+circuit in each unit or system
+
+653
+00:23:52,740 --> 00:23:57,599
+this can be a split system or a packaged
+
+654
+00:23:55,500 --> 00:23:59,880
+unit it can come in an air-cooled
+
+655
+00:23:57,599 --> 00:24:01,798
+variety with the air cooled condenser or
+
+656
+00:23:59,880 --> 00:24:04,440
+a water cooled condenser
+
+657
+00:24:01,798 --> 00:24:06,960
+and in general error code DX is the most
+
+658
+00:24:04,440 --> 00:24:09,779
+common system that we see today due to
+
+659
+00:24:06,960 --> 00:24:11,819
+lower first cost technician familiarity
+
+660
+00:24:09,779 --> 00:24:14,460
+and shorter lead times
+
+661
+00:24:11,819 --> 00:24:16,678
+however we see it transitioning to
+
+662
+00:24:14,460 --> 00:24:18,840
+hydronic systems and will continue to
+
+663
+00:24:16,679 --> 00:24:21,480
+transition more as the market matures
+
+664
+00:24:18,839 --> 00:24:23,579
+into True Manufacturing facilities at
+
+665
+00:24:21,480 --> 00:24:24,960
+scale that need to prove they
+
+666
+00:24:23,579 --> 00:24:27,119
+manufactured their products at
+
+667
+00:24:24,960 --> 00:24:28,798
+facilities that can be validated by
+
+668
+00:24:27,119 --> 00:24:31,199
+regulatory bodies
+
+669
+00:24:28,798 --> 00:24:35,339
+we advocate for our clients to be ready
+
+670
+00:24:31,200 --> 00:24:36,960
+to meet gmps if they so desire from the
+
+671
+00:24:35,339 --> 00:24:39,899
+minute they turn on their facility and
+
+672
+00:24:36,960 --> 00:24:42,960
+we we enable them to do that
+
+673
+00:24:39,900 --> 00:24:44,759
+we offer our canopy canopy plus and
+
+674
+00:24:42,960 --> 00:24:46,740
+preservation product lines in both air
+
+675
+00:24:44,759 --> 00:24:49,259
+cooled and water cooled DX systems to
+
+676
+00:24:46,740 --> 00:24:50,700
+meet our clients diverse needs you can
+
+677
+00:24:49,259 --> 00:24:52,740
+see a few different form factors
+
+678
+00:24:50,700 --> 00:24:55,500
+installed in these pictures from left to
+
+679
+00:24:52,740 --> 00:24:58,440
+right DX package unit on the left
+
+680
+00:24:55,500 --> 00:25:01,200
+to a water cooled energy recovery system
+
+681
+00:24:58,440 --> 00:25:03,000
+in the middle to an air-cooled DX split
+
+682
+00:25:01,200 --> 00:25:04,919
+system on the top right
+
+683
+00:25:03,000 --> 00:25:07,740
+and remember these are all Integrated
+
+684
+00:25:04,919 --> 00:25:09,179
+Systems but just in different flavors
+
+685
+00:25:07,740 --> 00:25:12,000
+so now let's look at the other type
+
+686
+00:25:09,179 --> 00:25:13,740
+hydraulic systems
+
+687
+00:25:12,000 --> 00:25:16,140
+terminology here like I mentioned before
+
+688
+00:25:13,740 --> 00:25:18,359
+is really important is it called chilled
+
+689
+00:25:16,140 --> 00:25:20,759
+water or hot water systems or hydronic
+
+690
+00:25:18,359 --> 00:25:22,859
+systems or you hear the terms four pipe
+
+691
+00:25:20,759 --> 00:25:24,960
+or two pipe thrown around which you see
+
+692
+00:25:22,859 --> 00:25:28,439
+in the diagram on the top right is four
+
+693
+00:25:24,960 --> 00:25:30,058
+pipes where you have in this case you
+
+694
+00:25:28,440 --> 00:25:32,340
+have six pipes because it's a water
+
+695
+00:25:30,058 --> 00:25:34,619
+cooled Chiller but on the load side to
+
+696
+00:25:32,339 --> 00:25:37,500
+the air handling units you have four
+
+697
+00:25:34,619 --> 00:25:40,199
+pipes two for cooling two for heating
+
+698
+00:25:37,500 --> 00:25:42,058
+chilled water and hot water a two pipe
+
+699
+00:25:40,200 --> 00:25:44,880
+system is only going to provide you one
+
+700
+00:25:42,058 --> 00:25:47,879
+or the other at a time so that would be
+
+701
+00:25:44,880 --> 00:25:49,799
+more in the non-integrated camp or a
+
+702
+00:25:47,880 --> 00:25:51,600
+four pipe system would allow you to do
+
+703
+00:25:49,798 --> 00:25:53,460
+integrated control
+
+704
+00:25:51,599 --> 00:25:55,980
+now these chillers and the chiller
+
+705
+00:25:53,460 --> 00:25:59,340
+plants can be air cooled or they can be
+
+706
+00:25:55,980 --> 00:26:02,700
+water cooled they can be electrically
+
+707
+00:25:59,339 --> 00:26:05,399
+driven or they can be gas driven and
+
+708
+00:26:02,700 --> 00:26:07,140
+heat recovery is available on all of
+
+709
+00:26:05,400 --> 00:26:09,960
+these types of chillers which means we
+
+710
+00:26:07,140 --> 00:26:12,538
+don't need to pay money or use resources
+
+711
+00:26:09,960 --> 00:26:15,058
+for reheat these systems are very
+
+712
+00:26:12,538 --> 00:26:17,819
+customizable to meet your site needs as
+
+713
+00:26:15,058 --> 00:26:20,038
+far as space considerations and phasing
+
+714
+00:26:17,819 --> 00:26:22,439
+and better Precision control is
+
+715
+00:26:20,038 --> 00:26:24,960
+available via modulating water valves
+
+716
+00:26:22,440 --> 00:26:27,200
+which really allow for infinite variable
+
+717
+00:26:24,960 --> 00:26:29,519
+capacity control
+
+718
+00:26:27,200 --> 00:26:33,058
+optimization opportunities exist for
+
+719
+00:26:29,519 --> 00:26:35,038
+sizing and overall system and for your
+
+720
+00:26:33,058 --> 00:26:37,319
+facility because you can size your plant
+
+721
+00:26:35,038 --> 00:26:39,778
+based on the Block load of your facility
+
+722
+00:26:37,319 --> 00:26:41,759
+rather than the peak load which allows
+
+723
+00:26:39,778 --> 00:26:44,460
+you to shave 20 to 30 percent of the
+
+724
+00:26:41,759 --> 00:26:46,379
+total capacity off of the plant
+
+725
+00:26:44,460 --> 00:26:48,360
+There's an opportunity for phasing
+
+726
+00:26:46,380 --> 00:26:50,820
+particularly with modular chillers and
+
+727
+00:26:48,359 --> 00:26:53,099
+pumps which allows for additional
+
+728
+00:26:50,819 --> 00:26:54,119
+redundancy as well as you build out your
+
+729
+00:26:53,099 --> 00:26:56,038
+plant
+
+730
+00:26:54,119 --> 00:26:57,839
+we typically see these systems being
+
+731
+00:26:56,038 --> 00:27:01,500
+chosen when the total facility size
+
+732
+00:26:57,839 --> 00:27:03,178
+reaches maybe 300 to 400 tons total
+
+733
+00:27:01,500 --> 00:27:04,980
+I want you to take note of the gas fire
+
+734
+00:27:03,179 --> 00:27:07,200
+Chiller on the bottom of the slide with
+
+735
+00:27:04,980 --> 00:27:09,599
+a partner of ours called ticogen
+
+736
+00:27:07,200 --> 00:27:12,000
+this animal uses natural gas to produce
+
+737
+00:27:09,599 --> 00:27:13,558
+chilled water with no middlemen and
+
+738
+00:27:12,000 --> 00:27:15,720
+business owners that proactively
+
+739
+00:27:13,558 --> 00:27:17,940
+understand their utility rate structure
+
+740
+00:27:15,720 --> 00:27:21,058
+and the relative costs of electricity
+
+741
+00:27:17,940 --> 00:27:23,038
+gas and water in comparison to each
+
+742
+00:27:21,058 --> 00:27:24,538
+other can make the best financial
+
+743
+00:27:23,038 --> 00:27:27,058
+decisions
+
+744
+00:27:24,538 --> 00:27:29,700
+and many times those projects end up
+
+745
+00:27:27,058 --> 00:27:31,798
+including a gas-fired Cellar plant
+
+746
+00:27:29,700 --> 00:27:33,720
+let's compare and contrast what we just
+
+747
+00:27:31,798 --> 00:27:36,778
+learned about these two types of systems
+
+748
+00:27:33,720 --> 00:27:38,460
+quickly both integrated but different
+
+749
+00:27:36,778 --> 00:27:40,798
+on the left we have the attributes
+
+750
+00:27:38,460 --> 00:27:42,840
+related to DX systems and the hydronic
+
+751
+00:27:40,798 --> 00:27:45,778
+systems are on the right we talked about
+
+752
+00:27:42,839 --> 00:27:48,058
+the individual DX circuits per room and
+
+753
+00:27:45,778 --> 00:27:50,240
+per unit and the many distributed DX
+
+754
+00:27:48,058 --> 00:27:53,399
+circuits to maintain versus
+
+755
+00:27:50,240 --> 00:27:54,419
+consolidation and fewer at a chiller
+
+756
+00:27:53,400 --> 00:27:56,519
+plant
+
+757
+00:27:54,419 --> 00:27:58,080
+we talked about good control versus
+
+758
+00:27:56,519 --> 00:28:01,319
+precise control
+
+759
+00:27:58,079 --> 00:28:03,599
+we talked about redundancy
+
+760
+00:28:01,319 --> 00:28:05,460
+and how its can be applied where a
+
+761
+00:28:03,599 --> 00:28:07,859
+direct expansion on a room by room unit
+
+762
+00:28:05,460 --> 00:28:10,620
+basis you would need an additional unit
+
+763
+00:28:07,859 --> 00:28:12,479
+on every single room rather than
+
+764
+00:28:10,619 --> 00:28:13,199
+building in redundancy into the chiller
+
+765
+00:28:12,480 --> 00:28:15,839
+plant
+
+766
+00:28:13,200 --> 00:28:18,360
+and we do have a lower first cost for
+
+767
+00:28:15,839 --> 00:28:21,899
+direct expansion systems
+
+768
+00:28:18,359 --> 00:28:24,719
+but the return on investment breaks even
+
+769
+00:28:21,900 --> 00:28:27,480
+really at about 15 to 20 000 square feet
+
+770
+00:28:24,720 --> 00:28:29,700
+of canopy and Facilities of any size
+
+771
+00:28:27,480 --> 00:28:31,500
+larger should always be looking at
+
+772
+00:28:29,700 --> 00:28:34,798
+hydronic systems
+
+773
+00:28:31,500 --> 00:28:36,240
+both systems required skilled mechanical
+
+774
+00:28:34,798 --> 00:28:39,720
+technicians
+
+775
+00:28:36,240 --> 00:28:41,640
+to maintain and both systems need
+
+776
+00:28:39,720 --> 00:28:44,220
+engaged and experienced design and
+
+777
+00:28:41,640 --> 00:28:46,259
+construction and maintenance teams this
+
+778
+00:28:44,220 --> 00:28:47,819
+is not just something for one type of
+
+779
+00:28:46,259 --> 00:28:49,500
+system or the other
+
+780
+00:28:47,819 --> 00:28:52,139
+again you're only as good as your
+
+781
+00:28:49,500 --> 00:28:54,558
+weakest link so don't let that be your
+
+782
+00:28:52,140 --> 00:28:57,538
+HVAC system or your HVAC service company
+
+783
+00:28:54,558 --> 00:29:00,119
+you know retain on a service side retain
+
+784
+00:28:57,538 --> 00:29:02,158
+a yearly contract with your service
+
+785
+00:29:00,119 --> 00:29:03,599
+company so that they can handle routine
+
+786
+00:29:02,159 --> 00:29:05,880
+preventative maintenance and be
+
+787
+00:29:03,599 --> 00:29:09,599
+available for emergencies at the best
+
+788
+00:29:05,880 --> 00:29:12,120
+rate and can prioritize availability
+
+789
+00:29:09,599 --> 00:29:13,558
+so what are the ways so what are these
+
+790
+00:29:12,119 --> 00:29:15,119
+the only real ways you know we talked
+
+791
+00:29:13,558 --> 00:29:17,519
+about these two different main types of
+
+792
+00:29:15,119 --> 00:29:19,678
+systems are there other ways that we can
+
+793
+00:29:17,519 --> 00:29:22,319
+meet this challenge it's important to
+
+794
+00:29:19,679 --> 00:29:25,200
+talk about you know there are other
+
+795
+00:29:22,319 --> 00:29:27,000
+proven Technologies out there
+
+796
+00:29:25,200 --> 00:29:28,620
+um it's there's no free lunch though
+
+797
+00:29:27,000 --> 00:29:31,200
+right and there's there's trade-offs
+
+798
+00:29:28,619 --> 00:29:33,298
+with all of these at Inspire we pride
+
+799
+00:29:31,200 --> 00:29:35,159
+ourselves in a brand agnostic approach
+
+800
+00:29:33,298 --> 00:29:37,859
+that specializes in finding the right
+
+801
+00:29:35,159 --> 00:29:40,440
+system and Enviro HVAC and controls
+
+802
+00:29:37,859 --> 00:29:42,839
+system for each project it requires
+
+803
+00:29:40,440 --> 00:29:44,580
+continuous Improvement in Innovation so
+
+804
+00:29:42,839 --> 00:29:46,139
+we're always evaluating all types of
+
+805
+00:29:44,579 --> 00:29:48,178
+Technologies to determine what our
+
+806
+00:29:46,140 --> 00:29:50,399
+clients can benefit most from
+
+807
+00:29:48,179 --> 00:29:52,620
+but Technologies need to be more than a
+
+808
+00:29:50,398 --> 00:29:54,719
+great idea or conceptual opportunity for
+
+809
+00:29:52,619 --> 00:29:57,298
+efficiency or other benefits
+
+810
+00:29:54,720 --> 00:29:59,159
+in order to be commercialized and used
+
+811
+00:29:57,298 --> 00:30:00,599
+on these facilities we must be sure
+
+812
+00:29:59,159 --> 00:30:02,520
+they're proven for this special
+
+813
+00:30:00,599 --> 00:30:04,319
+application of indoor plant environments
+
+814
+00:30:02,519 --> 00:30:07,079
+and that they can be cost effective
+
+815
+00:30:04,319 --> 00:30:09,298
+serviceable reliable
+
+816
+00:30:07,079 --> 00:30:11,158
+safe to say we're very picky about what
+
+817
+00:30:09,298 --> 00:30:12,898
+we Implement in the field our clients
+
+818
+00:30:11,159 --> 00:30:15,899
+look to us to be their subject matter
+
+819
+00:30:12,898 --> 00:30:16,558
+experts Gatekeepers and sort of a safety
+
+820
+00:30:15,898 --> 00:30:18,959
+net
+
+821
+00:30:16,558 --> 00:30:21,058
+we only look to support new Innovations
+
+822
+00:30:18,960 --> 00:30:24,058
+when we can see positive results in
+
+823
+00:30:21,058 --> 00:30:25,740
+third-party verification and see the
+
+824
+00:30:24,058 --> 00:30:27,658
+systems run in person
+
+825
+00:30:25,740 --> 00:30:29,339
+with that said there are several proven
+
+826
+00:30:27,659 --> 00:30:30,778
+dehumidification Technologies on the
+
+827
+00:30:29,339 --> 00:30:32,398
+market that we have found to offer
+
+828
+00:30:30,778 --> 00:30:35,099
+varying levels of opportunity for
+
+829
+00:30:32,398 --> 00:30:37,379
+sustainable and high performance design
+
+830
+00:30:35,099 --> 00:30:39,298
+all four of the types of energy recovery
+
+831
+00:30:37,380 --> 00:30:40,860
+devices shown on the slide have a
+
+832
+00:30:39,298 --> 00:30:43,319
+similar efficiency improvement over
+
+833
+00:30:40,859 --> 00:30:44,459
+Baseline but all have unique pros and
+
+834
+00:30:43,319 --> 00:30:46,379
+cons
+
+835
+00:30:44,460 --> 00:30:49,259
+after careful consideration and field
+
+836
+00:30:46,380 --> 00:30:52,020
+trials our canopy plus line utilizes the
+
+837
+00:30:49,259 --> 00:30:54,058
+water to water runaround coil concept to
+
+838
+00:30:52,019 --> 00:30:55,918
+recover warm room air
+
+839
+00:30:54,058 --> 00:30:58,319
+which pre-cools the dehumidification
+
+840
+00:30:55,919 --> 00:31:00,299
+coil and then subsequently reheats the
+
+841
+00:30:58,319 --> 00:31:01,619
+air off the coil as the first stage of
+
+842
+00:31:00,298 --> 00:31:03,960
+reheat
+
+843
+00:31:01,619 --> 00:31:05,879
+this results in increased efficiency for
+
+844
+00:31:03,960 --> 00:31:08,159
+the system of 30 to 50 percent over
+
+845
+00:31:05,880 --> 00:31:10,860
+Brute Force Cooling and Tighter control
+
+846
+00:31:08,159 --> 00:31:13,620
+with both air cooled DX water cooled DX
+
+847
+00:31:10,859 --> 00:31:15,658
+or 4-pipe hydronic system options
+
+848
+00:31:13,619 --> 00:31:17,759
+the biggest word of caution with any new
+
+849
+00:31:15,659 --> 00:31:19,919
+technology is the Mandate that you see
+
+850
+00:31:17,759 --> 00:31:21,119
+it in real life and can truly validate
+
+851
+00:31:19,919 --> 00:31:22,860
+the performance and claims with
+
+852
+00:31:21,119 --> 00:31:24,959
+third-party data
+
+853
+00:31:22,859 --> 00:31:26,219
+speaking of third-party testing data I
+
+854
+00:31:24,960 --> 00:31:29,819
+thought this would be a good transition
+
+855
+00:31:26,220 --> 00:31:31,919
+into one of the places where we see
+
+856
+00:31:29,819 --> 00:31:33,960
+a lot of snake oil in the Cannabis
+
+857
+00:31:31,919 --> 00:31:35,940
+industry and honestly the whole HVAC
+
+858
+00:31:33,960 --> 00:31:38,220
+industry now that we've just lived
+
+859
+00:31:35,940 --> 00:31:39,720
+through a pandemic and that is in air
+
+860
+00:31:38,220 --> 00:31:41,519
+cleaning devices
+
+861
+00:31:39,720 --> 00:31:43,500
+like to share the technology we trust
+
+862
+00:31:41,519 --> 00:31:45,480
+for our plant environments
+
+863
+00:31:43,500 --> 00:31:49,079
+what you see here is a photo catalytic
+
+864
+00:31:45,480 --> 00:31:51,538
+oxidative air cleaner or PCO for short
+
+865
+00:31:49,079 --> 00:31:54,240
+this air cleaning panel reduces the risk
+
+866
+00:31:51,538 --> 00:31:56,099
+of pests and pathogen contamination and
+
+867
+00:31:54,240 --> 00:31:58,319
+failing lab tests
+
+868
+00:31:56,099 --> 00:32:00,058
+since cultivators must pass third-party
+
+869
+00:31:58,319 --> 00:32:01,980
+quality assurance testing and provide
+
+870
+00:32:00,058 --> 00:32:04,740
+coas along with their sellable product
+
+871
+00:32:01,980 --> 00:32:07,019
+it's imperative to Monitor and regulate
+
+872
+00:32:04,740 --> 00:32:10,440
+the relatively High particulate pest
+
+873
+00:32:07,019 --> 00:32:13,319
+pathogen VOC loads Within These spaces
+
+874
+00:32:10,440 --> 00:32:15,000
+particulate capture filters of Merv 1314
+
+875
+00:32:13,319 --> 00:32:17,339
+range will typically catch particles
+
+876
+00:32:15,000 --> 00:32:19,380
+size 1 Micron and larger
+
+877
+00:32:17,339 --> 00:32:21,898
+and we don't don't forget to actually
+
+878
+00:32:19,380 --> 00:32:23,880
+change those filters on a regular basis
+
+879
+00:32:21,898 --> 00:32:25,558
+or hire a service contractor to change
+
+880
+00:32:23,880 --> 00:32:28,200
+them on a schedule
+
+881
+00:32:25,558 --> 00:32:30,359
+but PCO air cleaners are the primary
+
+882
+00:32:28,200 --> 00:32:32,100
+active biofiltration solution that we
+
+883
+00:32:30,359 --> 00:32:33,778
+incorporate in our systems in
+
+884
+00:32:32,099 --> 00:32:37,379
+conjunction with those passive filters
+
+885
+00:32:33,778 --> 00:32:40,319
+these can be in-room units or induct
+
+886
+00:32:37,380 --> 00:32:43,020
+systems or in-unit systems and typically
+
+887
+00:32:40,319 --> 00:32:45,000
+duct mounted is chosen since we're
+
+888
+00:32:43,019 --> 00:32:46,440
+already bringing all the air through
+
+889
+00:32:45,000 --> 00:32:48,599
+these systems and the ducting system
+
+890
+00:32:46,440 --> 00:32:50,759
+every two to three minutes
+
+891
+00:32:48,599 --> 00:32:53,879
+third-party testing data and validation
+
+892
+00:32:50,759 --> 00:32:56,158
+is required for all Air cool cleaning
+
+893
+00:32:53,880 --> 00:32:57,899
+technology to be considered
+
+894
+00:32:56,159 --> 00:32:59,700
+and in addition to the recirculating
+
+895
+00:32:57,898 --> 00:33:01,619
+units serving cultivation and curing
+
+896
+00:32:59,700 --> 00:33:03,778
+spaces we can apply this air cleaning
+
+897
+00:33:01,619 --> 00:33:06,119
+technology into separate Supply and
+
+898
+00:33:03,778 --> 00:33:08,759
+exhaust fan filter units that are used
+
+899
+00:33:06,119 --> 00:33:11,119
+to introduce clean outdoor air or Purge
+
+900
+00:33:08,759 --> 00:33:13,558
+gases and handle handle Odor Control
+
+901
+00:33:11,119 --> 00:33:16,199
+rebalance the gas mixture of air in the
+
+902
+00:33:13,558 --> 00:33:18,000
+sealed room or use it as an economizer
+
+903
+00:33:16,200 --> 00:33:20,399
+sequence if the outside air conditions
+
+904
+00:33:18,000 --> 00:33:22,259
+may be available
+
+905
+00:33:20,398 --> 00:33:24,479
+um or we one one spot we see this of
+
+906
+00:33:22,259 --> 00:33:26,640
+most effectively used and is is in an
+
+907
+00:33:24,480 --> 00:33:28,500
+emergency mode to be able to bring in
+
+908
+00:33:26,640 --> 00:33:30,600
+outside air as a backup for any
+
+909
+00:33:28,500 --> 00:33:32,700
+mechanical system failures that need
+
+910
+00:33:30,599 --> 00:33:34,259
+time to repair so we offer all these
+
+911
+00:33:32,700 --> 00:33:37,440
+different ancillary items with our
+
+912
+00:33:34,259 --> 00:33:40,319
+Integrated Systems as well as a la carte
+
+913
+00:33:37,440 --> 00:33:43,558
+now speaking about sub canopy air moving
+
+914
+00:33:40,319 --> 00:33:45,599
+devices I wanted to talk about airflow
+
+915
+00:33:43,558 --> 00:33:48,240
+and air movement
+
+916
+00:33:45,599 --> 00:33:50,939
+when discussing airflow in a cultivation
+
+917
+00:33:48,240 --> 00:33:52,919
+or curing room we must consider all Air
+
+918
+00:33:50,940 --> 00:33:55,080
+moving devices serving the space as a
+
+919
+00:33:52,919 --> 00:33:56,700
+complete system even if they're not
+
+920
+00:33:55,079 --> 00:33:58,918
+physically connected
+
+921
+00:33:56,700 --> 00:34:02,038
+in an integrated system the main air
+
+922
+00:33:58,919 --> 00:34:03,899
+handler or air handlers are used to
+
+923
+00:34:02,038 --> 00:34:05,819
+condition and circulate air as a
+
+924
+00:34:03,898 --> 00:34:08,098
+component of a heating ventilating and
+
+925
+00:34:05,819 --> 00:34:09,659
+air conditioning system the air handler
+
+926
+00:34:08,099 --> 00:34:11,580
+connects to ductwork that in turn
+
+927
+00:34:09,659 --> 00:34:13,679
+distributes the conditioned cool dry air
+
+928
+00:34:11,579 --> 00:34:15,480
+throughout the grow space before it
+
+929
+00:34:13,679 --> 00:34:17,519
+returns to the air handling unit
+
+930
+00:34:15,480 --> 00:34:19,858
+the movement of air through an indoor
+
+931
+00:34:17,519 --> 00:34:23,159
+grow space is imperative to maintaining
+
+932
+00:34:19,858 --> 00:34:25,019
+a healthy garden without proper airflow
+
+933
+00:34:23,159 --> 00:34:27,240
+plants may not be able to evaporate
+
+934
+00:34:25,019 --> 00:34:30,719
+water at optimal levels stunting
+
+935
+00:34:27,239 --> 00:34:33,539
+photosynthesis and carbon assimilation
+
+936
+00:34:30,719 --> 00:34:37,019
+furthermore areas of high humidity are
+
+937
+00:34:33,539 --> 00:34:39,179
+prone to pest infestation mold or mildew
+
+938
+00:34:37,019 --> 00:34:42,179
+so our goal is to create homogeneous
+
+939
+00:34:39,179 --> 00:34:44,280
+airflow throughout the entire grow space
+
+940
+00:34:42,179 --> 00:34:47,398
+fortunately we can't solely rely on the
+
+941
+00:34:44,280 --> 00:34:49,500
+HVAC system for the in-room airflow
+
+942
+00:34:47,398 --> 00:34:51,960
+since we're designing that system based
+
+943
+00:34:49,500 --> 00:34:54,659
+on maximum moisture removal as a means
+
+944
+00:34:51,960 --> 00:34:56,760
+of making the system as cost effective
+
+945
+00:34:54,659 --> 00:35:00,240
+as possible
+
+946
+00:34:56,760 --> 00:35:02,880
+however great care consideration should
+
+947
+00:35:00,239 --> 00:35:04,858
+be taken when designing the supplier and
+
+948
+00:35:02,880 --> 00:35:06,720
+return air duct configurations within
+
+949
+00:35:04,858 --> 00:35:09,059
+room layout and in-room airflow devices
+
+950
+00:35:06,719 --> 00:35:11,759
+because the room performance depends on
+
+951
+00:35:09,059 --> 00:35:14,039
+it the ductwork approaches and design
+
+952
+00:35:11,760 --> 00:35:16,859
+differ between single tier and
+
+953
+00:35:14,039 --> 00:35:19,259
+multi-tier rooms sub-canopy Airflow
+
+954
+00:35:16,858 --> 00:35:21,900
+Systems must be used in multi-tier
+
+955
+00:35:19,260 --> 00:35:23,820
+gardens you can see a cfd modeling of
+
+956
+00:35:21,900 --> 00:35:25,740
+the sub canopy system that we offer in
+
+957
+00:35:23,820 --> 00:35:28,200
+the middle of the page
+
+958
+00:35:25,739 --> 00:35:29,819
+top canopy air movement devices should
+
+959
+00:35:28,199 --> 00:35:32,519
+also be considered
+
+960
+00:35:29,820 --> 00:35:34,740
+unit performance depends on a good
+
+961
+00:35:32,519 --> 00:35:36,780
+ductwork design and installation and
+
+962
+00:35:34,739 --> 00:35:38,699
+in-room airflow devices that are
+
+963
+00:35:36,780 --> 00:35:40,740
+designed together for Optimal
+
+964
+00:35:38,699 --> 00:35:43,139
+Performance we've seen many many
+
+965
+00:35:40,739 --> 00:35:45,059
+different rooms in operation and can
+
+966
+00:35:43,139 --> 00:35:46,858
+help provide suggestions for best
+
+967
+00:35:45,059 --> 00:35:48,900
+practices in an over-the-shoulder type
+
+968
+00:35:46,858 --> 00:35:50,819
+fashion in collaboration with the
+
+969
+00:35:48,900 --> 00:35:52,800
+mechanical engineers when we become
+
+970
+00:35:50,820 --> 00:35:55,380
+engaged in projects and Equipment has
+
+971
+00:35:52,800 --> 00:35:56,940
+been purchased the cfd models in the
+
+972
+00:35:55,380 --> 00:35:59,338
+middle of the screen show one such
+
+973
+00:35:56,940 --> 00:36:00,780
+design concept that we support and in
+
+974
+00:35:59,338 --> 00:36:02,880
+this scenario we're introducing the
+
+975
+00:36:00,780 --> 00:36:04,980
+supply air into the working aisle on the
+
+976
+00:36:02,880 --> 00:36:07,140
+right hand side and sending it down the
+
+977
+00:36:04,980 --> 00:36:09,539
+racks with sub-canopy airflow fans and
+
+978
+00:36:07,139 --> 00:36:12,179
+tubes for the return hour grills to pick
+
+979
+00:36:09,539 --> 00:36:13,800
+up at the other end of each tier and
+
+980
+00:36:12,179 --> 00:36:16,319
+return the air to the air handling units
+
+981
+00:36:13,800 --> 00:36:18,780
+we typically see rack lengths of less
+
+982
+00:36:16,320 --> 00:36:21,359
+than 40 feet being best for reducing
+
+983
+00:36:18,780 --> 00:36:23,820
+microclimates and dedicated return air
+
+984
+00:36:21,358 --> 00:36:26,759
+grills locations for each tier rack
+
+985
+00:36:23,820 --> 00:36:27,900
+really help bring move the air through
+
+986
+00:36:26,760 --> 00:36:29,579
+the room
+
+987
+00:36:27,900 --> 00:36:32,039
+so with so many different permutations
+
+988
+00:36:29,579 --> 00:36:34,560
+of system configurations and ancillary
+
+989
+00:36:32,039 --> 00:36:37,440
+items to integrate how do we know that
+
+990
+00:36:34,559 --> 00:36:40,078
+the room operation will be consistent
+
+991
+00:36:37,440 --> 00:36:42,480
+well the answer is with accurate data
+
+992
+00:36:40,079 --> 00:36:45,660
+collection to inform a plant-centric
+
+993
+00:36:42,480 --> 00:36:47,519
+controls and sequence of operations
+
+994
+00:36:45,659 --> 00:36:49,199
+and we've discussed throughout the
+
+995
+00:36:47,519 --> 00:36:52,500
+presentation today typical Factory
+
+996
+00:36:49,199 --> 00:36:54,299
+control sequence are not applicable to
+
+997
+00:36:52,500 --> 00:36:55,559
+this industry as they're designed for
+
+998
+00:36:54,300 --> 00:36:57,780
+people comfort
+
+999
+00:36:55,559 --> 00:36:59,880
+we require specialized sequence of
+
+1000
+00:36:57,780 --> 00:37:01,500
+operations for cannabis and other indoor
+
+1001
+00:36:59,880 --> 00:37:03,240
+plant environments
+
+1002
+00:37:01,500 --> 00:37:05,280
+it has taken us aggregating and
+
+1003
+00:37:03,239 --> 00:37:07,199
+optimizing the control strategies over
+
+1004
+00:37:05,280 --> 00:37:09,660
+the past six plus years with a
+
+1005
+00:37:07,199 --> 00:37:11,578
+multi-disciplinary task force comprised
+
+1006
+00:37:09,659 --> 00:37:15,379
+of plant physiologists controlled
+
+1007
+00:37:11,579 --> 00:37:17,820
+Engineers HVAC Engineers crop scientists
+
+1008
+00:37:15,380 --> 00:37:20,400
+biologists and the many Channel Partners
+
+1009
+00:37:17,820 --> 00:37:22,220
+who serve the space to develop what we
+
+1010
+00:37:20,400 --> 00:37:24,300
+believe to be the first true
+
+1011
+00:37:22,219 --> 00:37:27,059
+plant-centric sequence of operation
+
+1012
+00:37:24,300 --> 00:37:29,640
+available today in the industry
+
+1013
+00:37:27,059 --> 00:37:31,320
+today we implement this standardized
+
+1014
+00:37:29,639 --> 00:37:32,819
+controller with embedded sequence of
+
+1015
+00:37:31,320 --> 00:37:35,400
+operation on all of our air handlers
+
+1016
+00:37:32,820 --> 00:37:37,320
+both hydronic and DX and these can also
+
+1017
+00:37:35,400 --> 00:37:39,780
+be deployed in a retrofit solution for
+
+1018
+00:37:37,320 --> 00:37:41,519
+non-integrated systems or onto existing
+
+1019
+00:37:39,780 --> 00:37:43,200
+integrated air handlers for lower cost
+
+1020
+00:37:41,519 --> 00:37:45,539
+retrofits
+
+1021
+00:37:43,199 --> 00:37:48,059
+all the sensor data is collected with
+
+1022
+00:37:45,539 --> 00:37:51,420
+multiple aspirated sensor boxes per tier
+
+1023
+00:37:48,059 --> 00:37:53,519
+and located within the plant canopy this
+
+1024
+00:37:51,420 --> 00:37:55,380
+data is aggregated in our controllers
+
+1025
+00:37:53,519 --> 00:37:58,019
+and connected throughout the facility
+
+1026
+00:37:55,380 --> 00:37:59,940
+with a simple ethernet based Lan which
+
+1027
+00:37:58,019 --> 00:38:02,759
+connects the field devices and allows
+
+1028
+00:37:59,940 --> 00:38:06,240
+for control based sorry cloud-based
+
+1029
+00:38:02,760 --> 00:38:09,240
+control monitoring and alarming the
+
+1030
+00:38:06,239 --> 00:38:10,139
+sequence of optimization strategies are
+
+1031
+00:38:09,239 --> 00:38:12,539
+many
+
+1032
+00:38:10,139 --> 00:38:15,960
+intelligent set point ramping smooth
+
+1033
+00:38:12,539 --> 00:38:18,480
+transitions speed of change negative and
+
+1034
+00:38:15,960 --> 00:38:19,800
+positive temperature differentials cold
+
+1035
+00:38:18,480 --> 00:38:22,380
+air dumps
+
+1036
+00:38:19,800 --> 00:38:24,780
+gas composition resets room
+
+1037
+00:38:22,380 --> 00:38:26,880
+pressurization control we've really only
+
+1038
+00:38:24,780 --> 00:38:28,500
+scratched the surface with crop searing
+
+1039
+00:38:26,880 --> 00:38:30,960
+techniques that can be implemented
+
+1040
+00:38:28,500 --> 00:38:32,539
+through the plant's environment back to
+
+1041
+00:38:30,960 --> 00:38:35,639
+an important concept from part one
+
+1042
+00:38:32,539 --> 00:38:39,119
+genotype or genetics plus environment
+
+1043
+00:38:35,639 --> 00:38:41,239
+equals phenotype everyone is after the
+
+1044
+00:38:39,119 --> 00:38:43,619
+next hot phenom
+
+1045
+00:38:41,239 --> 00:38:45,779
+environmental control is a fundamental
+
+1046
+00:38:43,619 --> 00:38:48,420
+building block to grow better cannabis
+
+1047
+00:38:45,780 --> 00:38:50,400
+and to do it more efficiently it is the
+
+1048
+00:38:48,420 --> 00:38:52,920
+critical first step in a comprehensive
+
+1049
+00:38:50,400 --> 00:38:55,440
+integrated Pest Management program that
+
+1050
+00:38:52,920 --> 00:38:56,700
+reduces pathogen pressure and labor
+
+1051
+00:38:55,440 --> 00:39:00,000
+expenditure
+
+1052
+00:38:56,699 --> 00:39:02,480
+integrated control is the best form of
+
+1053
+00:39:00,000 --> 00:39:02,480
+crop insurance
+
+1054
+00:39:03,239 --> 00:39:08,039
+you really only have one chance to do it
+
+1055
+00:39:06,119 --> 00:39:10,619
+right it could be the difference between
+
+1056
+00:39:08,039 --> 00:39:12,179
+building long-term asset value and going
+
+1057
+00:39:10,619 --> 00:39:16,559
+bankrupt frankly
+
+1058
+00:39:12,179 --> 00:39:18,838
+the industry is really on a knife's edge
+
+1059
+00:39:16,559 --> 00:39:21,299
+competition is increasing prices are
+
+1060
+00:39:18,838 --> 00:39:23,639
+plummeting margins are shrinking and you
+
+1061
+00:39:21,300 --> 00:39:25,680
+can't afford to do it wrong you can't
+
+1062
+00:39:23,639 --> 00:39:27,239
+afford not to spend the money on
+
+1063
+00:39:25,679 --> 00:39:29,578
+environmental control
+
+1064
+00:39:27,239 --> 00:39:32,338
+this is why Inspire focuses exclusively
+
+1065
+00:39:29,579 --> 00:39:33,720
+on indoor plant environments our team's
+
+1066
+00:39:32,338 --> 00:39:36,299
+passionate plant and Engineering
+
+1067
+00:39:33,719 --> 00:39:38,159
+intimacy combined with a diverse lineup
+
+1068
+00:39:36,300 --> 00:39:40,859
+of purpose-built environmental control
+
+1069
+00:39:38,159 --> 00:39:44,098
+Solutions helps ensure your cultivation
+
+1070
+00:39:40,858 --> 00:39:45,598
+environment is not your limiting factor
+
+1071
+00:39:44,099 --> 00:39:47,880
+I'd like to take this moment to thank
+
+1072
+00:39:45,599 --> 00:39:50,820
+the individuals and companies who are
+
+1073
+00:39:47,880 --> 00:39:52,680
+helping the industry grow better crops
+
+1074
+00:39:50,820 --> 00:39:55,260
+lighting providers providing the
+
+1075
+00:39:52,679 --> 00:39:56,819
+necessary photons automated fertigation
+
+1076
+00:39:55,260 --> 00:39:58,880
+companies that have allowed us to
+
+1077
+00:39:56,820 --> 00:40:01,559
+fine-tune dry backs and mineral balance
+
+1078
+00:39:58,880 --> 00:40:04,440
+racking providers that optimize room
+
+1079
+00:40:01,559 --> 00:40:06,838
+utilization data collection monitoring
+
+1080
+00:40:04,440 --> 00:40:09,539
+and control systems that allow us to see
+
+1081
+00:40:06,838 --> 00:40:12,299
+the impact of precision control in real
+
+1082
+00:40:09,539 --> 00:40:15,059
+time the education and Media Partners
+
+1083
+00:40:12,300 --> 00:40:17,160
+for sharing knowledge to the industry on
+
+1084
+00:40:15,059 --> 00:40:19,739
+the challenges of day-to-day cultivation
+
+1085
+00:40:17,159 --> 00:40:21,659
+the genetics providers that develop
+
+1086
+00:40:19,739 --> 00:40:24,059
+great cultivars and the
+
+1087
+00:40:21,659 --> 00:40:26,879
+multi-disciplinary Consultants that help
+
+1088
+00:40:24,059 --> 00:40:29,338
+bring entrepreneurs Visions to life
+
+1089
+00:40:26,880 --> 00:40:32,039
+we talk a lot about integration of
+
+1090
+00:40:29,338 --> 00:40:34,199
+temperature humidity and CO2 but it's
+
+1091
+00:40:32,039 --> 00:40:36,179
+the integration and understanding of all
+
+1092
+00:40:34,199 --> 00:40:39,358
+of these people partners and systems
+
+1093
+00:40:36,179 --> 00:40:41,219
+that make cannabis businesses successful
+
+1094
+00:40:39,358 --> 00:40:44,299
+and with that let's open it up for some
+
+1095
+00:40:41,219 --> 00:40:44,299
+questions right
+
+1096
+00:40:44,820 --> 00:40:48,359
+all right thanks Adrian lots of good
+
+1097
+00:40:47,099 --> 00:40:51,059
+info there
+
+1098
+00:40:48,358 --> 00:40:52,679
+I've got a question here uh I think they
+
+1099
+00:40:51,059 --> 00:40:54,599
+should be directed to you Joe G how do
+
+1100
+00:40:52,679 --> 00:40:56,759
+outdoor conditions and geography impact
+
+1101
+00:40:54,599 --> 00:40:58,800
+unit selection and performance yeah
+
+1102
+00:40:56,760 --> 00:41:00,540
+that's a great question because outdoor
+
+1103
+00:40:58,800 --> 00:41:03,000
+environments play a big factor in not
+
+1104
+00:41:00,539 --> 00:41:05,338
+just determining what style of units we
+
+1105
+00:41:03,000 --> 00:41:07,320
+kind of consider for the job but also
+
+1106
+00:41:05,338 --> 00:41:10,199
+what components we're going to select
+
+1107
+00:41:07,320 --> 00:41:12,660
+for the job and you know this comes this
+
+1108
+00:41:10,199 --> 00:41:14,098
+becomes really important in environments
+
+1109
+00:41:12,659 --> 00:41:16,500
+and geographies with extreme weather
+
+1110
+00:41:14,099 --> 00:41:20,400
+conditions so for example let's take the
+
+1111
+00:41:16,500 --> 00:41:22,739
+Northeast as an example Northeast as we
+
+1112
+00:41:20,400 --> 00:41:24,420
+know during winter times it can go below
+
+1113
+00:41:22,739 --> 00:41:26,879
+freezing and then during the Summers
+
+1114
+00:41:24,420 --> 00:41:29,820
+they can go above 90 sometimes even up
+
+1115
+00:41:26,880 --> 00:41:30,960
+close to the hundreds and so we have to
+
+1116
+00:41:29,820 --> 00:41:33,300
+determine do we have the right
+
+1117
+00:41:30,960 --> 00:41:36,179
+components to actually handle those
+
+1118
+00:41:33,300 --> 00:41:37,920
+extreme condition swings and have an
+
+1119
+00:41:36,179 --> 00:41:40,500
+operational units because if you don't
+
+1120
+00:41:37,920 --> 00:41:43,800
+have the right components select it for
+
+1121
+00:41:40,500 --> 00:41:46,019
+such swings you're going to see a drop
+
+1122
+00:41:43,800 --> 00:41:47,820
+in your performance for the system and
+
+1123
+00:41:46,019 --> 00:41:49,500
+then a drop in environmental control for
+
+1124
+00:41:47,820 --> 00:41:51,859
+your rooms
+
+1125
+00:41:49,500 --> 00:41:55,500
+so making sure yeah
+
+1126
+00:41:51,858 --> 00:41:58,319
+that's makes sense I think
+
+1127
+00:41:55,500 --> 00:42:02,338
+we've even seen units just stop working
+
+1128
+00:41:58,320 --> 00:42:06,180
+right when it gets to low low ambient
+
+1129
+00:42:02,338 --> 00:42:08,820
+temperatures and even and very it
+
+1130
+00:42:06,179 --> 00:42:12,179
+performs the suffers terribly at the
+
+1131
+00:42:08,820 --> 00:42:14,400
+high side right yeah 100 and I'm sure
+
+1132
+00:42:12,179 --> 00:42:16,440
+like as a lot of the listeners probably
+
+1133
+00:42:14,400 --> 00:42:18,059
+know like keeping the right sort of
+
+1134
+00:42:16,440 --> 00:42:20,940
+pressure and temperatures throughout the
+
+1135
+00:42:18,059 --> 00:42:24,179
+systems is extremely important and that
+
+1136
+00:42:20,940 --> 00:42:26,220
+becomes very suspect to I guess dropping
+
+1137
+00:42:24,179 --> 00:42:29,098
+off during these low ambient and high
+
+1138
+00:42:26,219 --> 00:42:31,500
+ambient conditions and so being able to
+
+1139
+00:42:29,099 --> 00:42:33,119
+kind of predict that and combat that
+
+1140
+00:42:31,500 --> 00:42:36,239
+beforehand when you're doing your unit
+
+1141
+00:42:33,119 --> 00:42:37,800
+selection is extremely important
+
+1142
+00:42:36,239 --> 00:42:40,439
+sounds good
+
+1143
+00:42:37,800 --> 00:42:42,599
+all right uh let's see
+
+1144
+00:42:40,440 --> 00:42:45,059
+got another one here what are some of
+
+1145
+00:42:42,599 --> 00:42:47,760
+the gotchas you've run into coming into
+
+1146
+00:42:45,059 --> 00:42:51,199
+projects early versus late and I think
+
+1147
+00:42:47,760 --> 00:42:51,200
+I'll direct that one to Adrian
+
+1148
+00:42:51,480 --> 00:42:56,820
+yeah I tried to try to Pepper a couple
+
+1149
+00:42:54,719 --> 00:42:58,379
+of them in there throughout
+
+1150
+00:42:56,820 --> 00:42:59,579
+um you know
+
+1151
+00:42:58,380 --> 00:43:01,380
+um
+
+1152
+00:42:59,579 --> 00:43:04,318
+there's there's a lot that we run into
+
+1153
+00:43:01,380 --> 00:43:06,660
+you know it we could we could talk about
+
+1154
+00:43:04,318 --> 00:43:08,338
+um we could talk about operational and
+
+1155
+00:43:06,659 --> 00:43:09,838
+and maintenance and things like that
+
+1156
+00:43:08,338 --> 00:43:12,000
+throughout the like hey make sure you
+
+1157
+00:43:09,838 --> 00:43:13,858
+change your filters routinely
+
+1158
+00:43:12,000 --> 00:43:16,019
+um we find that to be something that
+
+1159
+00:43:13,858 --> 00:43:18,539
+that happens you know that doesn't
+
+1160
+00:43:16,019 --> 00:43:21,599
+happen on a routine basis enough and and
+
+1161
+00:43:18,539 --> 00:43:23,818
+that can really impact your performance
+
+1162
+00:43:21,599 --> 00:43:25,800
+um we see you know on more on the design
+
+1163
+00:43:23,818 --> 00:43:27,420
+side if if we're sort of looking at it
+
+1164
+00:43:25,800 --> 00:43:29,519
+from that perspective
+
+1165
+00:43:27,420 --> 00:43:32,039
+um we see scope gaps
+
+1166
+00:43:29,519 --> 00:43:35,219
+um really rampant
+
+1167
+00:43:32,039 --> 00:43:37,199
+um between different uh providers of
+
+1168
+00:43:35,219 --> 00:43:39,239
+systems and
+
+1169
+00:43:37,199 --> 00:43:42,539
+um I think really effectively maybe not
+
+1170
+00:43:39,239 --> 00:43:45,179
+taking advantage of the
+
+1171
+00:43:42,539 --> 00:43:46,800
+um construction management and general
+
+1172
+00:43:45,179 --> 00:43:49,618
+contractor
+
+1173
+00:43:46,800 --> 00:43:52,859
+um trades that that exists really for
+
+1174
+00:43:49,619 --> 00:43:55,500
+that reason to to truly try to eliminate
+
+1175
+00:43:52,858 --> 00:43:56,759
+scope gaps on projects as early as
+
+1176
+00:43:55,500 --> 00:43:58,260
+possible
+
+1177
+00:43:56,760 --> 00:44:00,960
+um because those professionals are out
+
+1178
+00:43:58,260 --> 00:44:03,060
+there and exist and would do Wonders on
+
+1179
+00:44:00,960 --> 00:44:05,099
+helping to keep a project on time and on
+
+1180
+00:44:03,059 --> 00:44:08,219
+budget and avoid
+
+1181
+00:44:05,099 --> 00:44:10,440
+um unnecessary really and and very very
+
+1182
+00:44:08,219 --> 00:44:12,299
+costly and challenging change orders
+
+1183
+00:44:10,440 --> 00:44:14,760
+that end up happening
+
+1184
+00:44:12,300 --> 00:44:16,740
+um we see many facilities that don't
+
+1185
+00:44:14,760 --> 00:44:18,359
+have enough power that's that's one
+
+1186
+00:44:16,739 --> 00:44:21,000
+right off the bat
+
+1187
+00:44:18,358 --> 00:44:22,199
+um and it can be you know it depends on
+
+1188
+00:44:21,000 --> 00:44:23,639
+where you're where you're at some
+
+1189
+00:44:22,199 --> 00:44:25,439
+utilities say great we'll have it for
+
+1190
+00:44:23,639 --> 00:44:26,759
+you in a couple of months others say
+
+1191
+00:44:25,440 --> 00:44:28,200
+great we'll have it for you in a couple
+
+1192
+00:44:26,760 --> 00:44:29,880
+of years
+
+1193
+00:44:28,199 --> 00:44:31,679
+um and you know what what's your
+
+1194
+00:44:29,880 --> 00:44:33,599
+financial situation like at that
+
+1195
+00:44:31,679 --> 00:44:35,098
+particular site or building over those
+
+1196
+00:44:33,599 --> 00:44:36,539
+couple of year period that you're
+
+1197
+00:44:35,099 --> 00:44:38,099
+waiting for the utility to bring you
+
+1198
+00:44:36,539 --> 00:44:39,779
+that power that's one of the other
+
+1199
+00:44:38,099 --> 00:44:41,119
+reasons that we see
+
+1200
+00:44:39,780 --> 00:44:43,819
+um combined heat and power plant
+
+1201
+00:44:41,119 --> 00:44:46,680
+facilities uh being you know being
+
+1202
+00:44:43,818 --> 00:44:48,300
+combined heat and power uh systems being
+
+1203
+00:44:46,679 --> 00:44:50,039
+utilized at these types of facilities
+
+1204
+00:44:48,300 --> 00:44:51,480
+more often because you may have gas
+
+1205
+00:44:50,039 --> 00:44:54,599
+available where you don't have
+
+1206
+00:44:51,480 --> 00:44:56,940
+electricity and structural limitations
+
+1207
+00:44:54,599 --> 00:44:58,440
+and deficiencies is another huge one I
+
+1208
+00:44:56,940 --> 00:45:00,659
+mean you know I think we've recently had
+
+1209
+00:44:58,440 --> 00:45:01,980
+a project you know it was a six million
+
+1210
+00:45:00,659 --> 00:45:02,879
+dollar project and they found out that
+
+1211
+00:45:01,980 --> 00:45:04,559
+they were going to have to make two
+
+1212
+00:45:02,880 --> 00:45:06,599
+million dollars of structural upgrades
+
+1213
+00:45:04,559 --> 00:45:08,039
+to be able to make the project work and
+
+1214
+00:45:06,599 --> 00:45:09,480
+they said well so you know that's not
+
+1215
+00:45:08,039 --> 00:45:10,980
+that's not going to work for us so let's
+
+1216
+00:45:09,480 --> 00:45:12,838
+let's go find a different different
+
+1217
+00:45:10,980 --> 00:45:14,818
+building and facility and that all that
+
+1218
+00:45:12,838 --> 00:45:16,619
+money was down the drain up front so
+
+1219
+00:45:14,818 --> 00:45:18,800
+those are just a couple that come to
+
+1220
+00:45:16,619 --> 00:45:18,800
+mind
+
+1221
+00:45:19,380 --> 00:45:22,280
+yeah it's great
+
+1222
+00:45:24,179 --> 00:45:27,659
+uh Joe do you have anything else to add
+
+1223
+00:45:25,800 --> 00:45:29,000
+there any any
+
+1224
+00:45:27,659 --> 00:45:31,920
+yeah
+
+1225
+00:45:29,000 --> 00:45:33,420
+one that really stood out to me was just
+
+1226
+00:45:31,920 --> 00:45:35,940
+um you know facilities that kind of
+
+1227
+00:45:33,420 --> 00:45:37,740
+utilized their overall
+
+1228
+00:45:35,940 --> 00:45:39,838
+um square footage like their plot square
+
+1229
+00:45:37,739 --> 00:45:41,338
+footage for the building and then
+
+1230
+00:45:39,838 --> 00:45:43,318
+they're limited on how much clearance
+
+1231
+00:45:41,338 --> 00:45:45,000
+they have for the units like alongside
+
+1232
+00:45:43,318 --> 00:45:47,279
+the building we've seen that kind of
+
+1233
+00:45:45,000 --> 00:45:48,940
+come up a bit that people sometimes
+
+1234
+00:45:47,280 --> 00:45:51,140
+overlook
+
+1235
+00:45:48,940 --> 00:45:55,260
+[Music]
+
+1236
+00:45:51,139 --> 00:45:59,159
+yeah I'd also add issues lots of issues
+
+1237
+00:45:55,260 --> 00:46:02,040
+around sizing the HVAC systems as well
+
+1238
+00:45:59,159 --> 00:46:05,219
+around the latent and sensible the
+
+1239
+00:46:02,039 --> 00:46:08,159
+reheat the supplemental heat whether or
+
+1240
+00:46:05,219 --> 00:46:10,259
+not to use humidification at early stage
+
+1241
+00:46:08,159 --> 00:46:13,739
+flower right there's a there's a
+
+1242
+00:46:10,260 --> 00:46:15,900
+transition from Veg to flour where
+
+1243
+00:46:13,739 --> 00:46:18,479
+the humidity conditions change and you
+
+1244
+00:46:15,900 --> 00:46:20,519
+can shock the plants or you can or in
+
+1245
+00:46:18,480 --> 00:46:23,099
+early stage flower you don't have enough
+
+1246
+00:46:20,519 --> 00:46:26,219
+humidity coming off of the plants enough
+
+1247
+00:46:23,099 --> 00:46:30,359
+evaporation coming off of the plants to
+
+1248
+00:46:26,219 --> 00:46:32,578
+um give the units sufficient load so you
+
+1249
+00:46:30,358 --> 00:46:35,519
+I think Adrian and judge you guys could
+
+1250
+00:46:32,579 --> 00:46:37,859
+talk more specific about this but
+
+1251
+00:46:35,519 --> 00:46:40,139
+um being able to just just accommodating
+
+1252
+00:46:37,858 --> 00:46:42,900
+the life cycle of the plants and going
+
+1253
+00:46:40,139 --> 00:46:44,400
+from room to room there are lots of
+
+1254
+00:46:42,900 --> 00:46:45,539
+considerations that need to be made as
+
+1255
+00:46:44,400 --> 00:46:47,760
+well
+
+1256
+00:46:45,539 --> 00:46:49,800
+yeah yeah high level you just you need
+
+1257
+00:46:47,760 --> 00:46:52,020
+to be able to provision for humidifiers
+
+1258
+00:46:49,800 --> 00:46:54,839
+in your flowering spaces in order in
+
+1259
+00:46:52,019 --> 00:46:56,940
+order to do that VPD match from from Veg
+
+1260
+00:46:54,838 --> 00:46:59,039
+over to flower
+
+1261
+00:46:56,940 --> 00:47:01,019
+um and another one that I I neglected to
+
+1262
+00:46:59,039 --> 00:47:02,460
+mention I just just thought of was
+
+1263
+00:47:01,019 --> 00:47:04,259
+um the importance of tight room
+
+1264
+00:47:02,460 --> 00:47:06,179
+construction right everything that we've
+
+1265
+00:47:04,260 --> 00:47:08,640
+talked about here about environmental
+
+1266
+00:47:06,179 --> 00:47:10,259
+control can only be done if you have
+
+1267
+00:47:08,639 --> 00:47:13,379
+tight room construction and we're not
+
+1268
+00:47:10,260 --> 00:47:15,240
+losing air into external environments
+
+1269
+00:47:13,380 --> 00:47:17,640
+either through the you know the
+
+1270
+00:47:15,239 --> 00:47:19,979
+construction of the room itself or
+
+1271
+00:47:17,639 --> 00:47:21,838
+through the ductwork you know joining
+
+1272
+00:47:19,980 --> 00:47:24,980
+the air handling unit systems to the to
+
+1273
+00:47:21,838 --> 00:47:24,980
+the room itself
+
+1274
+00:47:25,679 --> 00:47:31,019
+that's a good point I think yeah the
+
+1275
+00:47:27,599 --> 00:47:33,420
+Assumption with all all of this is that
+
+1276
+00:47:31,019 --> 00:47:35,400
+you've got good construction and if
+
+1277
+00:47:33,420 --> 00:47:38,940
+you've got infiltrations and
+
+1278
+00:47:35,400 --> 00:47:42,300
+exfiltrations of heat or moisture or CO2
+
+1279
+00:47:38,940 --> 00:47:44,400
+or whatever else then the performance of
+
+1280
+00:47:42,300 --> 00:47:45,300
+your room and your facility is going to
+
+1281
+00:47:44,400 --> 00:47:47,780
+suffer
+
+1282
+00:47:45,300 --> 00:47:47,780
+you know
+
+1283
+00:47:47,880 --> 00:47:52,980
+okay uh let's see another one here uh
+
+1284
+00:47:51,659 --> 00:47:55,379
+related to the conventional
+
+1285
+00:47:52,980 --> 00:47:57,659
+non-integrated stuff is it possible to
+
+1286
+00:47:55,380 --> 00:48:00,838
+get good control of the environment with
+
+1287
+00:47:57,659 --> 00:48:02,940
+many splits and dehumidifiers uh JoJo
+
+1288
+00:48:00,838 --> 00:48:04,318
+why don't I toss that one to you yeah
+
+1289
+00:48:02,940 --> 00:48:07,380
+man that's actually a great question
+
+1290
+00:48:04,318 --> 00:48:09,539
+especially you know where the current
+
+1291
+00:48:07,380 --> 00:48:11,460
+space and how a lot of our current
+
+1292
+00:48:09,539 --> 00:48:13,259
+facilities are set up you know alone
+
+1293
+00:48:11,460 --> 00:48:15,000
+these units can definitely provide
+
+1294
+00:48:13,260 --> 00:48:17,700
+moderate control to their local
+
+1295
+00:48:15,000 --> 00:48:19,679
+environments and why not say local I
+
+1296
+00:48:17,699 --> 00:48:21,719
+mean the square footage that you usually
+
+1297
+00:48:19,679 --> 00:48:23,879
+see on these specification sheets you
+
+1298
+00:48:21,719 --> 00:48:26,039
+know they kind of think of you can kind
+
+1299
+00:48:23,880 --> 00:48:27,838
+of think of it like a hemisphere each
+
+1300
+00:48:26,039 --> 00:48:30,239
+individual Standalone or mini split is
+
+1301
+00:48:27,838 --> 00:48:33,119
+controlling their own hemisphere rather
+
+1302
+00:48:30,239 --> 00:48:35,219
+than controlling the room as a whole so
+
+1303
+00:48:33,119 --> 00:48:38,039
+inherently that's where I guess the lack
+
+1304
+00:48:35,219 --> 00:48:40,379
+of performance comes from is they're not
+
+1305
+00:48:38,039 --> 00:48:43,500
+truly integrated and they're controlling
+
+1306
+00:48:40,380 --> 00:48:45,660
+for their own local environments whereas
+
+1307
+00:48:43,500 --> 00:48:47,460
+Integrated Systems they see the unit I
+
+1308
+00:48:45,659 --> 00:48:51,420
+mean the room as a whole and are
+
+1309
+00:48:47,460 --> 00:48:53,400
+controlling accordingly to that now
+
+1310
+00:48:51,420 --> 00:48:55,680
+you know one thing that I want to say is
+
+1311
+00:48:53,400 --> 00:48:58,139
+a lot of our our customers or customers
+
+1312
+00:48:55,679 --> 00:49:00,000
+in the space that have this system
+
+1313
+00:48:58,139 --> 00:49:01,318
+already in place of an sa system I'm
+
+1314
+00:49:00,000 --> 00:49:04,019
+talking about like Mini Splits and
+
+1315
+00:49:01,318 --> 00:49:06,480
+dehumidifiers there is possibility to
+
+1316
+00:49:04,019 --> 00:49:09,420
+get that integrated control
+
+1317
+00:49:06,480 --> 00:49:12,539
+after the fact with a controls retrofit
+
+1318
+00:49:09,420 --> 00:49:15,059
+with a more plant-centric sequence of
+
+1319
+00:49:12,539 --> 00:49:17,818
+operation to integrate all those
+
+1320
+00:49:15,059 --> 00:49:19,679
+individual units as one so you're kind
+
+1321
+00:49:17,818 --> 00:49:21,358
+of making that you know a bunch of
+
+1322
+00:49:19,679 --> 00:49:23,699
+little random um split systems
+
+1323
+00:49:21,358 --> 00:49:26,159
+dehumidifiers and integrating them into
+
+1324
+00:49:23,699 --> 00:49:28,919
+one whole package now it's not as great
+
+1325
+00:49:26,159 --> 00:49:31,019
+as a truly integrated package system or
+
+1326
+00:49:28,920 --> 00:49:34,200
+a hydronic system would be but it's
+
+1327
+00:49:31,019 --> 00:49:35,699
+definitely that next step up between
+
+1328
+00:49:34,199 --> 00:49:39,838
+the two
+
+1329
+00:49:35,699 --> 00:49:41,460
+I hope I answer that to you guys
+
+1330
+00:49:39,838 --> 00:49:43,139
+yeah yeah I think that was that was
+
+1331
+00:49:41,460 --> 00:49:44,639
+great and there's a there's a comment or
+
+1332
+00:49:43,139 --> 00:49:46,139
+a question in the chat I think that is
+
+1333
+00:49:44,639 --> 00:49:48,179
+it's somewhat maybe somewhat
+
+1334
+00:49:46,139 --> 00:49:51,000
+tangentially related to this that it
+
+1335
+00:49:48,179 --> 00:49:52,858
+might be good to to to address
+
+1336
+00:49:51,000 --> 00:49:54,838
+um which is how long does the humidity
+
+1337
+00:49:52,858 --> 00:49:57,179
+Spike last in that non-integrated system
+
+1338
+00:49:54,838 --> 00:49:58,679
+and where all the other parameters held
+
+1339
+00:49:57,179 --> 00:50:00,899
+constant between the integrated system
+
+1340
+00:49:58,679 --> 00:50:02,338
+such that the difference in yield can be
+
+1341
+00:50:00,900 --> 00:50:03,119
+attributed
+
+1342
+00:50:02,338 --> 00:50:05,159
+um
+
+1343
+00:50:03,119 --> 00:50:08,579
+I mean first off
+
+1344
+00:50:05,159 --> 00:50:10,199
+um well so the the short answer is yes
+
+1345
+00:50:08,579 --> 00:50:13,619
+we did everything that we possibly could
+
+1346
+00:50:10,199 --> 00:50:16,379
+to make those two rooms side by side as
+
+1347
+00:50:13,619 --> 00:50:17,880
+um as you know really keep that as the
+
+1348
+00:50:16,380 --> 00:50:20,039
+only control variable
+
+1349
+00:50:17,880 --> 00:50:21,660
+um between them inherently there there
+
+1350
+00:50:20,039 --> 00:50:23,940
+may be some other
+
+1351
+00:50:21,659 --> 00:50:25,980
+um noise in that no doubt
+
+1352
+00:50:23,940 --> 00:50:28,559
+um there there's so many differences
+
+1353
+00:50:25,980 --> 00:50:30,780
+that go on even even on a p on a plan
+
+1354
+00:50:28,559 --> 00:50:32,759
+when you design a facility with eight
+
+1355
+00:50:30,780 --> 00:50:34,680
+identical flower rooms and then you go
+
+1356
+00:50:32,760 --> 00:50:36,180
+and you build that facility and you
+
+1357
+00:50:34,679 --> 00:50:37,919
+think that you've built them all
+
+1358
+00:50:36,179 --> 00:50:40,318
+identically
+
+1359
+00:50:37,920 --> 00:50:42,599
+um you'll end up with with some small
+
+1360
+00:50:40,318 --> 00:50:44,699
+changes and and differences between all
+
+1361
+00:50:42,599 --> 00:50:46,440
+those rooms too so it's very first off
+
+1362
+00:50:44,699 --> 00:50:47,519
+just it's very challenging to do that in
+
+1363
+00:50:46,440 --> 00:50:50,159
+general
+
+1364
+00:50:47,519 --> 00:50:52,139
+um but um the other piece of it is we
+
+1365
+00:50:50,159 --> 00:50:55,318
+would love to do more science truly
+
+1366
+00:50:52,139 --> 00:50:58,618
+scientific research and um have the
+
+1367
+00:50:55,318 --> 00:51:01,139
+ability to be very very certain about
+
+1368
+00:50:58,619 --> 00:51:03,059
+these types of types of situations
+
+1369
+00:51:01,139 --> 00:51:05,219
+um unfortunately there's not much money
+
+1370
+00:51:03,059 --> 00:51:07,859
+and propensity for it in the Cannabis
+
+1371
+00:51:05,219 --> 00:51:10,019
+space presently based on the illegality
+
+1372
+00:51:07,858 --> 00:51:13,440
+of it federally and how the funding
+
+1373
+00:51:10,019 --> 00:51:15,539
+sources for universities work that have
+
+1374
+00:51:13,440 --> 00:51:17,579
+that have controlled environment
+
+1375
+00:51:15,539 --> 00:51:19,679
+Agriculture and indoor plant environment
+
+1376
+00:51:17,579 --> 00:51:21,420
+type programs we were at a conference
+
+1377
+00:51:19,679 --> 00:51:24,179
+last week where there's a lot of these
+
+1378
+00:51:21,420 --> 00:51:26,099
+folks speaking and presenting research
+
+1379
+00:51:24,179 --> 00:51:28,739
+and things and it is starting to loosen
+
+1380
+00:51:26,099 --> 00:51:30,780
+up little by little and and hopefully
+
+1381
+00:51:28,739 --> 00:51:33,419
+we're going to make good progress here
+
+1382
+00:51:30,780 --> 00:51:35,280
+over the next year or two in that in the
+
+1383
+00:51:33,420 --> 00:51:38,818
+hopes of really being able to do true
+
+1384
+00:51:35,280 --> 00:51:40,260
+testing one side one to the other
+
+1385
+00:51:38,818 --> 00:51:42,659
+um but in specific to the to the first
+
+1386
+00:51:40,260 --> 00:51:47,700
+part of that question that humidity
+
+1387
+00:51:42,659 --> 00:51:49,618
+Spike lasts for about an hour typically
+
+1388
+00:51:47,699 --> 00:51:52,379
+um it can be you know one to two hours
+
+1389
+00:51:49,619 --> 00:51:53,338
+is is what we normally see in those
+
+1390
+00:51:52,380 --> 00:51:55,200
+situations
+
+1391
+00:51:53,338 --> 00:51:57,179
+um and we can we can definitely answer
+
+1392
+00:51:55,199 --> 00:52:00,919
+more detailed questions on that uh
+
+1393
+00:51:57,179 --> 00:52:00,919
+further offline if you like
+
+1394
+00:52:01,199 --> 00:52:06,719
+yeah lots of structural challenges with
+
+1395
+00:52:04,139 --> 00:52:10,139
+growing cannabis particularly on the
+
+1396
+00:52:06,719 --> 00:52:12,480
+federal level 20 total States now have
+
+1397
+00:52:10,139 --> 00:52:15,719
+legalized recreational
+
+1398
+00:52:12,480 --> 00:52:17,400
+adult use for above 21 and I you know
+
+1399
+00:52:15,719 --> 00:52:20,159
+what we're definitely at the critical
+
+1400
+00:52:17,400 --> 00:52:21,838
+mass in in this country and you can see
+
+1401
+00:52:20,159 --> 00:52:25,139
+it really internationally as well so I
+
+1402
+00:52:21,838 --> 00:52:28,739
+hope that that really starts to to uh
+
+1403
+00:52:25,139 --> 00:52:32,480
+um to open up money for uh for more uh
+
+1404
+00:52:28,739 --> 00:52:32,479
+more more research and development
+
+1405
+00:52:32,519 --> 00:52:37,980
+foreign
+
+1406
+00:52:34,699 --> 00:52:39,719
+for now we uh we're all doing as much as
+
+1407
+00:52:37,980 --> 00:52:41,300
+we possibly can
+
+1408
+00:52:39,719 --> 00:52:44,159
+yeah
+
+1409
+00:52:41,300 --> 00:52:46,440
+so there's another good one you want me
+
+1410
+00:52:44,159 --> 00:52:48,058
+to take this one in the chat I think is
+
+1411
+00:52:46,440 --> 00:52:49,980
+good um do you run into building
+
+1412
+00:52:48,059 --> 00:52:51,119
+department jurisdictions that push for
+
+1413
+00:52:49,980 --> 00:52:53,818
+providing
+
+1414
+00:52:51,119 --> 00:52:55,858
+um outside air as part of in this case
+
+1415
+00:52:53,818 --> 00:52:58,139
+Title 24 which is a California energy
+
+1416
+00:52:55,858 --> 00:52:59,818
+code requirement or they typically treat
+
+1417
+00:52:58,139 --> 00:53:02,098
+the rooms as processed rooms and allow
+
+1418
+00:52:59,818 --> 00:53:03,838
+for the 100 recirculation
+
+1419
+00:53:02,099 --> 00:53:05,880
+um so this actually is going to be
+
+1420
+00:53:03,838 --> 00:53:06,558
+specifically
+
+1421
+00:53:05,880 --> 00:53:08,880
+um
+
+1422
+00:53:06,559 --> 00:53:11,040
+specifically addressed in the code
+
+1423
+00:53:08,880 --> 00:53:13,800
+change that's coming in less than two
+
+1424
+00:53:11,039 --> 00:53:15,119
+months in January 2023
+
+1425
+00:53:13,800 --> 00:53:16,280
+um the
+
+1426
+00:53:15,119 --> 00:53:19,019
+um
+
+1427
+00:53:16,280 --> 00:53:21,300
+cea in general indoor plant environments
+
+1428
+00:53:19,019 --> 00:53:24,480
+will become a covered process under
+
+1429
+00:53:21,300 --> 00:53:26,160
+California Title 24 energy code which I
+
+1430
+00:53:24,480 --> 00:53:28,199
+think is will be the first time in the
+
+1431
+00:53:26,159 --> 00:53:30,358
+across the country that this process
+
+1432
+00:53:28,199 --> 00:53:31,318
+load will actually be required to be
+
+1433
+00:53:30,358 --> 00:53:35,279
+covered
+
+1434
+00:53:31,318 --> 00:53:38,099
+um in the energy code and previously up
+
+1435
+00:53:35,280 --> 00:53:41,339
+until now we've just been calling it a
+
+1436
+00:53:38,099 --> 00:53:44,519
+process room and having an exemption for
+
+1437
+00:53:41,338 --> 00:53:47,338
+the economizers uh from the current code
+
+1438
+00:53:44,519 --> 00:53:49,440
+but with this becoming a covered process
+
+1439
+00:53:47,338 --> 00:53:51,719
+there are some other stipulations that
+
+1440
+00:53:49,440 --> 00:53:54,599
+you need to meet around
+
+1441
+00:53:51,719 --> 00:53:59,759
+um reusing and or utilizing
+
+1442
+00:53:54,599 --> 00:54:01,559
+um uh waste heat and basically trying to
+
+1443
+00:53:59,760 --> 00:54:04,740
+minimize the amount of reheat energy
+
+1444
+00:54:01,559 --> 00:54:05,400
+that's used of new energy
+
+1445
+00:54:04,739 --> 00:54:08,759
+um
+
+1446
+00:54:05,400 --> 00:54:10,019
+and as a result of it becoming a covered
+
+1447
+00:54:08,760 --> 00:54:12,300
+process they're now they're
+
+1448
+00:54:10,019 --> 00:54:14,759
+understanding this sort of you know
+
+1449
+00:54:12,300 --> 00:54:16,500
+Nuance that goes against the code the
+
+1450
+00:54:14,760 --> 00:54:18,839
+way California's code is set up and so
+
+1451
+00:54:16,500 --> 00:54:22,800
+there there is an exemption for
+
+1452
+00:54:18,838 --> 00:54:24,838
+economizers written in to this new code
+
+1453
+00:54:22,800 --> 00:54:27,559
+language to allow you to not have to
+
+1454
+00:54:24,838 --> 00:54:27,558
+worry about it anymore
+
+1455
+00:54:29,338 --> 00:54:34,318
+yeah just to um kind of add to that age
+
+1456
+00:54:31,619 --> 00:54:37,440
+the heat requirement or the reheat
+
+1457
+00:54:34,318 --> 00:54:40,079
+requirement is 75 of your annual annual
+
+1458
+00:54:37,440 --> 00:54:43,280
+usage should come from on-site he
+
+1459
+00:54:40,079 --> 00:54:43,280
+recovered methods
+
+1460
+00:54:43,619 --> 00:54:49,200
+yeah yeah and and the comment from Jason
+
+1461
+00:54:46,199 --> 00:54:51,480
+is is is is great because you know
+
+1462
+00:54:49,199 --> 00:54:53,338
+there's there's there's other potential
+
+1463
+00:54:51,480 --> 00:54:55,019
+reasons to use outside air in
+
+1464
+00:54:53,338 --> 00:54:56,639
+cultivation spaces
+
+1465
+00:54:55,019 --> 00:54:58,440
+um which in his his comment was that you
+
+1466
+00:54:56,639 --> 00:55:00,239
+need you can use some outside air to
+
+1467
+00:54:58,440 --> 00:55:01,980
+purge ethylene which is a gaseous
+
+1468
+00:55:00,239 --> 00:55:03,899
+hormone which accumulates in sealed
+
+1469
+00:55:01,980 --> 00:55:06,980
+plant environment so that's another
+
+1470
+00:55:03,900 --> 00:55:09,300
+place where we'd love to see more
+
+1471
+00:55:06,980 --> 00:55:11,338
+research and development
+
+1472
+00:55:09,300 --> 00:55:13,559
+um to really help inform the way that
+
+1473
+00:55:11,338 --> 00:55:15,000
+these systems are are constructed we
+
+1474
+00:55:13,559 --> 00:55:17,519
+have the ability to bring an outside air
+
+1475
+00:55:15,000 --> 00:55:19,440
+and we treat all that air so it's really
+
+1476
+00:55:17,519 --> 00:55:21,420
+just more about you know when should we
+
+1477
+00:55:19,440 --> 00:55:24,920
+do it why should we do it how often
+
+1478
+00:55:21,420 --> 00:55:24,920
+should we do it that sort of a thing
+
+1479
+00:55:25,619 --> 00:55:29,280
+thank you
+
+1480
+00:55:26,940 --> 00:55:31,318
+that's great hopefully that helped
+
+1481
+00:55:29,280 --> 00:55:34,800
+answer some of those questions
+
+1482
+00:55:31,318 --> 00:55:38,579
+um we're we're up uh on the hour right
+
+1483
+00:55:34,800 --> 00:55:39,960
+now our Resource page uh is a page on
+
+1484
+00:55:38,579 --> 00:55:43,260
+our website that we're really proud of
+
+1485
+00:55:39,960 --> 00:55:45,720
+we've dropped a lot of a lot a lot of
+
+1486
+00:55:43,260 --> 00:55:49,740
+information on what we've learned over
+
+1487
+00:55:45,719 --> 00:55:51,899
+the last five to six years and uh lots
+
+1488
+00:55:49,739 --> 00:55:54,779
+of good resources there to to brush up
+
+1489
+00:55:51,900 --> 00:55:57,960
+on both plant related and Engineering
+
+1490
+00:55:54,780 --> 00:56:00,119
+related material as it relates to cea
+
+1491
+00:55:57,960 --> 00:56:01,858
+which by the way stands for controlled
+
+1492
+00:56:00,119 --> 00:56:02,760
+environment agriculture if anybody was
+
+1493
+00:56:01,858 --> 00:56:05,460
+wondering
+
+1494
+00:56:02,760 --> 00:56:09,359
+I think maybe we should cap it off right
+
+1495
+00:56:05,460 --> 00:56:10,858
+now but if anybody has any follow-up
+
+1496
+00:56:09,358 --> 00:56:13,019
+questions please feel free to get in
+
+1497
+00:56:10,858 --> 00:56:15,480
+touch with us we're available anytime
+
+1498
+00:56:13,019 --> 00:56:17,280
+always love to talk and really
+
+1499
+00:56:15,480 --> 00:56:18,539
+appreciate everybody spending time with
+
+1500
+00:56:17,280 --> 00:56:20,040
+us today
+
+1501
+00:56:18,539 --> 00:56:22,619
+that's just great great to see everybody
+
+1502
+00:56:20,039 --> 00:56:24,119
+thank you all for the time
+
+1503
+00:56:22,619 --> 00:56:26,160
+and uh
+
+1504
+00:56:24,119 --> 00:56:27,720
+see you soon
+
+1505
+00:56:26,159 --> 00:56:28,879
+all right thanks again everybody take
+
+1506
+00:56:27,719 --> 00:56:37,868
+care bye guys
+
+1507
+00:56:28,880 --> 00:56:37,869
+[Music]
+
+1508
+00:56:38,219 --> 00:56:40,279
+thank you
+

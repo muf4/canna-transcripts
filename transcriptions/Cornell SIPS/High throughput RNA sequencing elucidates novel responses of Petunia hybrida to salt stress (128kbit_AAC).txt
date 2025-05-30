@@ -1,0 +1,1289 @@
+[SPEAKER_00]: This is a production of Cornell
+University.
+[SPEAKER_01]: So I'll be talking about transcriptome
+analysis in Petunia under cell stress
+[SPEAKER_01]: today, which is a big part of my PhD.
+[SPEAKER_01]: And I want to start off this talk by
+introducing the problem with cell stress,
+[SPEAKER_01]: talking briefly about a particular
+mechanism that plants use to cope with
+[SPEAKER_01]: salinity, introducing you a great new
+model to study cell stress, which is
+[SPEAKER_01]: Petunia, briefly talk about genomics in
+different species, and then briefly
+[SPEAKER_01]: mention about advantages of using RNA-seq
+technology.
+[SPEAKER_01]: Then I want to walk you through the
+experimental design.
+[SPEAKER_01]: And I want to spend most of the time
+talking about the result, which I broke
+[SPEAKER_01]: down into RNA-seq without reference genome
+and expanding results with a reference
+[SPEAKER_01]: genome.
+[SPEAKER_01]: So cell stress, it is a big problem
+worldwide.
+[SPEAKER_01]: There's no surprise about that.
+[SPEAKER_01]: You can see in this map all these red
+color that are pretty widespread
+[SPEAKER_01]: throughout the world represent five grams
+of sodium chloride per liter, which is
+[SPEAKER_01]: equivalent to 90 millimolar sodium
+chloride.
+[SPEAKER_01]: It's a pretty big amount of salt,
+pretty widespread in the world.
+[SPEAKER_01]: We also see that 20% of the irrigation
+water is affected by solid stress.
+[SPEAKER_01]: So why is this a problem?
+[SPEAKER_01]: Well, salinity and drought stress are the
+primary causes of crop loss worldwide.
+[SPEAKER_01]: And sodium chloride, actually,
+it is what disrupts the normal plant
+[SPEAKER_01]: growth and development.
+[SPEAKER_01]: This is a simple experiment in which plant
+treated with sodium chlorides can show
+[SPEAKER_01]: this really retarded phenotype compared to
+the control.
+[SPEAKER_01]: Now, there's a really long list of
+detrimental consequences of sodium
+[SPEAKER_01]: chloride.
+[SPEAKER_01]: I'm just mentioning a couple here.
+[SPEAKER_01]: There's a big disrupt in mineral
+nutrition, specifically with potassium.
+[SPEAKER_01]: And there's also a more, in a cytosolic
+level, strong inhibition in enzymes.
+[SPEAKER_01]: So when I talk about sodium chloride at a
+cellular level, I basically mean when in
+[SPEAKER_01]: the cytosol you find more than 100
+millimolar sodium chloride as opposed to
+[SPEAKER_01]: less than 10 millimolar in the cytosol.
+[SPEAKER_01]: But luckily for us, plants have developed
+different mechanisms to cope with solid
+[SPEAKER_01]: stress.
+[SPEAKER_01]: And there's, again, a really long list of
+coping mechanisms.
+[SPEAKER_01]: I'm just showing you here five,
+which is restriction of salt uptake,
+[SPEAKER_01]: extrusion, and compartmentalization,
+controlling the long distance of sodium,
+[SPEAKER_01]: stabilizing membranes, and increasing
+osmotic potential, just as a long list.
+[SPEAKER_01]: Now, so I brought this up because it's an
+interesting cycle that uses one or more of
+[SPEAKER_01]: these coping mechanisms.
+[SPEAKER_01]: So sodium chloride in high concentrations
+can be perceived by unknown receptors,
+[SPEAKER_01]: which trigger the elevation of cytosolic
+calcium, a secondary messenger,
+[SPEAKER_01]: that activates this protein receptor,
+SOs3, which activates this kinase,
+[SPEAKER_01]: SOs2, which is pretty much the kinase that
+does a lot of the work in this mechanism
+[SPEAKER_01]: by phosphorylating these transporters here
+in the plasma membrane, which actually
+[SPEAKER_01]: extrude calcium pump sodium out of the
+cytosol.
+[SPEAKER_01]: This kinase, SOs2, as well, can control
+the expression of NAX, which is a
+[SPEAKER_01]: tonoplast transported the pump sodium into
+the vacuole, which will correspond to
+[SPEAKER_01]: compartmentalization.
+[SPEAKER_01]: One of the ways in which sodium gets in
+the cytosol in the first place is by
+[SPEAKER_01]: utilizing low affinity potassium
+transporter that you guys can see.
+[SPEAKER_01]: And there's a big unknown, and there's a
+lot of research going on to figure out how
+[SPEAKER_01]: this complex, SOs2, SOs3, can downregulate
+and stop this low affinity potassium
+[SPEAKER_01]: transporter.
+[SPEAKER_01]: And again, there's a lot of unknowns.
+[SPEAKER_01]: We don't know how this complex interacts
+with the high affinity potassium
+[SPEAKER_01]: transporter.
+[SPEAKER_01]: So this, of course, pathway has been
+figured out in Arabidopsis.
+[SPEAKER_01]: Most of the study that we know today in
+solid stress has come from Arabidopsis,
+[SPEAKER_01]: which is a great model for a lot of
+things, but not really for solid stress.
+[SPEAKER_01]: So we are actually suggesting that we
+should shift a little bit the pattern with
+[SPEAKER_01]: the Arabidopsis to Petunia.
+[SPEAKER_01]: And why do we say this?
+[SPEAKER_01]: Because Petunia, under solid stress,
+it really deals pretty well with solid
+[SPEAKER_01]: stress.
+[SPEAKER_01]: 1% of sodium ions by dry weight,
+it can accumulate 1% of its weight in
+[SPEAKER_01]: sodium.
+[SPEAKER_01]: Now, we did this experiment in 2011 where
+we screened the ability of 14 species to
+[SPEAKER_01]: withstand sodium chloride, and we grouped
+them in four big groups.
+[SPEAKER_01]: The most tolerant species, somewhat
+tolerant, sensitive, and extremely
+[SPEAKER_01]: sensitive.
+[SPEAKER_01]: And you can see that Petunia actually
+ranked in the most tolerant upper level.
+[SPEAKER_01]: Now, when you grow Petunias under 60,
+40, 20 millimolar sodium chloride,
+[SPEAKER_01]: really the growth and the phenotype is not
+really affected.
+[SPEAKER_01]: You see some detrimental consequences at
+80 millimolar, not really affected in
+[SPEAKER_01]: flowering, but just retarding the growth.
+[SPEAKER_01]: So we think that Petunia can be a really
+good model to further study the effect of
+[SPEAKER_01]: sodium chloride.
+[SPEAKER_01]: So Petunia is one of the members of the
+Solanaceae family, which is a pretty,
+[SPEAKER_01]: many of these Solanaceae species are gray
+for genetics and biochemical studies.
+[SPEAKER_01]: These are the parents of Petunia hybrida,
+axillaris, and inflata.
+[SPEAKER_01]: And I'm going to talk about this later
+today.
+[SPEAKER_01]: And then we have the distance-related
+tomato.
+[SPEAKER_01]: Now, when we think about Petunia as a
+model species, the first thing that we
+[SPEAKER_01]: actually think about is that it is a
+really good model for transposons,
+[SPEAKER_01]: almost as good model as maize for
+transposon elements.
+[SPEAKER_01]: There's a lot of cytogenetic analysis.
+[SPEAKER_01]: It is a great model for pigmentation and
+fluorescent and for pigs.
+[SPEAKER_01]: But we're pushing now Petunia as a model
+as well for solid stress.
+[SPEAKER_01]: Now, what has been done in terms of solid
+stress in this family?
+[SPEAKER_01]: Well, unfortunately, there hasn't been a
+lot of research conducted with the
+[SPEAKER_01]: Solanaceae family.
+[SPEAKER_01]: The most thorough study that was published
+in 2007 was a microarray in tomato,
+[SPEAKER_01]: where they screened two accession of
+tomato, this one up here.
+[SPEAKER_01]: They stressed the plant with 150
+millimolar sodium chloride and all the
+[SPEAKER_01]: sample routes.
+[SPEAKER_01]: Using the microarrays, they were able to
+identify roughly 100 ESTs that were
+[SPEAKER_01]: differentially expressed at 30 minutes of
+sodium chloride exposure, 700 ESTs at two
+[SPEAKER_01]: hours, and 1,000 ESTs at six hours.
+[SPEAKER_01]: They were able to group all these ESTs
+into different groups using genontology,
+[SPEAKER_01]: such as energy, metabolism, et cetera.
+[SPEAKER_01]: Now, this was a great approach,
+because it really changed the way that we
+[SPEAKER_01]: approach the study of sodium chloride
+looking single gene, single pathway,
+[SPEAKER_01]: to a more global, holistic point of view.
+[SPEAKER_01]: So we're doing something similar,
+in fact.
+[SPEAKER_01]: The only difference is that we're not
+using these chips anymore.
+[SPEAKER_01]: We're actually using an RNA-seq approach.
+[SPEAKER_01]: And the reason that we decided to do it
+this way is because microarrays were great
+[SPEAKER_01]: technologies in the early 2000s.
+[SPEAKER_01]: However, they are relatively low
+throughput.
+[SPEAKER_01]: They really depend on sequencing of cDNA
+and ESTs libraries.
+[SPEAKER_01]: They can be expensive and not
+quantitative.
+[SPEAKER_01]: They do have a false positive through
+cross hybridization.
+[SPEAKER_01]: And they have a really small dynamic
+range.
+[SPEAKER_01]: That is to say, transcripts that are low
+transcript, transcripts that are
+[SPEAKER_01]: transcribably low and really high,
+they're not going to be picked by the
+[SPEAKER_01]: microarray.
+[SPEAKER_01]: So instead, we decided to use a more novel
+technique, RNA-seq, which is a really high
+[SPEAKER_01]: throughput approach, where you can
+sequence millions of nucleotides of DNA in
+[SPEAKER_01]: a single run.
+[SPEAKER_01]: It is cheaper compared to a microarray.
+[SPEAKER_01]: It has a really good dynamic range.
+[SPEAKER_01]: It has more sensitivity than the
+microarray.
+[SPEAKER_01]: And it has a better coverage.
+[SPEAKER_01]: So this is the flow as to how we actually
+do the library preparation.
+[SPEAKER_01]: But I'm not going to go over that.
+[SPEAKER_01]: And this is a protocol developed by James
+Gimignoni, the BTI, which I'll talk about
+[SPEAKER_01]: in a few minutes.
+[SPEAKER_01]: OK, so what are the goals of this project?
+[SPEAKER_01]: We wanted to characterize a
+transcriptional profile of Petunia hybrida
+[SPEAKER_01]: under cell stress, 150 millimolar,
+and control.
+[SPEAKER_01]: We wanted to develop a transcriptional
+profile through a time course of gene
+[SPEAKER_01]: expression.
+[SPEAKER_01]: And we aim, as well, to understand how
+biological processes change it with cell
+[SPEAKER_01]: stress.
+[SPEAKER_01]: For the specific goals, which I'm going to
+get later today, we wanted to compare
+[SPEAKER_01]: using RNA-seq platform how gene expression
+changes with and without reference genome.
+[SPEAKER_01]: So how did we set up the experiment?
+[SPEAKER_01]: We had 18 plants growing hydroponically in
+a growth chamber, which were randomly
+[SPEAKER_01]: divided into two groups.
+[SPEAKER_01]: These are nine plants corresponding to
+control, which I color-coded with dark
+[SPEAKER_01]: green, and nine plants corresponding to
+the treated plants with 150 millimolar.
+[SPEAKER_01]: Now, when you do RNA-seq, and when you do
+basically any type of science,
+[SPEAKER_01]: it is really good to do bioreps.
+[SPEAKER_01]: And that's what we did.
+[SPEAKER_01]: We pulled one leaf from three plants.
+[SPEAKER_01]: We'll become one bioreplicate.
+[SPEAKER_01]: So we have rep one, rep two, rep three.
+[SPEAKER_01]: And we will do this at this time point,
+0, 6, and 24 hours after cell stress.
+[SPEAKER_01]: And we will do it at both control and
+treatment to control for circadian genes
+[SPEAKER_01]: or genes that are mechanically induced
+that we're not really interested in
+[SPEAKER_01]: looking.
+[SPEAKER_01]: So we did this for roots, for leaves.
+[SPEAKER_01]: And this, as it is, it is a pretty big
+experiment, a lot of RNA to extract from
+[SPEAKER_01]: different tissues.
+[SPEAKER_01]: So we decided to focus on leaves to begin
+with, and we left roots for later on.
+[SPEAKER_01]: So we did all the leaves at the beginning,
+and at these three time points,
+[SPEAKER_01]: 6, 0, and 24.
+[SPEAKER_01]: And as I said at the beginning,
+we used this protocol developed by BTI by
+[SPEAKER_01]: Giovanni's group, where we extract 12 RNA
+with the TRIZL method.
+[SPEAKER_01]: We capture messenger RNA with magnetic
+beads, which we reverse transcribe to
+[SPEAKER_01]: cDNA.
+[SPEAKER_01]: And then at this stage of the cDNA stage,
+we index the library with a barcode,
+[SPEAKER_01]: 6-nucleotide barcode with HPLC primers,
+which would give us an indexed library.
+[SPEAKER_01]: So this is the way that the protocol
+works.
+[SPEAKER_01]: This is an already optimized protocol.
+[SPEAKER_01]: Now, as we were doing this, we realized
+that ordering HPLC primers, it was quite
+[SPEAKER_01]: expensive.
+[SPEAKER_01]: So we said, well, what happens if we index
+libraries with non-HPLC primers?
+[SPEAKER_01]: So in this case, for example, we have
+these two indexed libraries.
+[SPEAKER_01]: One of them with this set of primer,
+one of these with this set of primer,
+[SPEAKER_01]: all of them coming from the same pool of
+RNA.
+[SPEAKER_01]: So they would be virtually the same except
+for the code, the 6-nucleotide code.
+[SPEAKER_01]: And we did this little side experiment
+with all the leaves to optimize this
+[SPEAKER_01]: protocol by assessing if HPLC versus
+non-HPLC would have an effect in library
+[SPEAKER_01]: preparation.
+[SPEAKER_01]: Why did we bother to do that?
+[SPEAKER_01]: Well, because if they're actually the
+same, we can treat these libraries as
+[SPEAKER_01]: technical replicas.
+[SPEAKER_01]: And of course, if we prove that this
+doesn't really affect the data,
+[SPEAKER_01]: it's a big advantage for future RNA-seq
+experiments.
+[SPEAKER_01]: So we did this for all the libraries,
+all the leaf libraries from these three
+[SPEAKER_01]: time points, generating 30 libraries
+corresponding to both technical and
+[SPEAKER_01]: biological replicates.
+[SPEAKER_01]: We pair and sequence in a single lane to
+rule out any lane primer effect in a high
+[SPEAKER_01]: seq 2000.
+[SPEAKER_01]: And we generated 196 million reads.
+[SPEAKER_01]: So how do we go about to do RNA-seq with
+all these 196 million reads that we just
+[SPEAKER_01]: generated with the Illumina high seq?
+[SPEAKER_01]: So the first question that we asked was,
+regarding to the HPLC and non-HPLC
+[SPEAKER_01]: primers, was, OK, are those samples the
+same?
+[SPEAKER_01]: If they were not, then we would just
+discard non-HPLC samples, and we would
+[SPEAKER_01]: proceed the RNA-seq without them.
+[SPEAKER_01]: Now, in our case, and I'll show you that
+it actually doesn't really matter,
+[SPEAKER_01]: they were the same.
+[SPEAKER_01]: So we proceed to demultiplex, and we
+process.
+[SPEAKER_01]: We get rid of the Illumina adapters.
+[SPEAKER_01]: We increase the Q value of the reads,
+et cetera.
+[SPEAKER_01]: And then we work with these basically
+clean reads.
+[SPEAKER_01]: Now, the second question that we had to
+ask is, well, do we have a reference
+[SPEAKER_01]: genome that we can align all the short
+reads against?
+[SPEAKER_01]: So if you have a reference genome,
+great.
+[SPEAKER_01]: You just can proceed to map and then look
+for gene expression.
+[SPEAKER_01]: If you don't have, you need to assemble,
+generate a consensus, and then you go back
+[SPEAKER_01]: to mapping.
+[SPEAKER_01]: Once you map, you generate a bound file,
+and then you can count basically reads,
+[SPEAKER_01]: which is the basics of RNA-seq and gene
+expression.
+[SPEAKER_01]: And I'm going to get to this part later
+on.
+[SPEAKER_01]: So going back to this first question,
+are these samples the same or not?
+[SPEAKER_01]: So it turns out that it doesn't really
+matter whether you use HPLC or non-HPLC
+[SPEAKER_01]: primers.
+[SPEAKER_01]: So this is a heat map of differentially
+expressed genes.
+[SPEAKER_01]: In which we're looking at how the samples
+cluster together.
+[SPEAKER_01]: So we're basically comparing the
+biological replicates, R1, R2,
+[SPEAKER_01]: R3, versus the technical replicates,
+NH and HPLC.
+[SPEAKER_01]: And you see that all the distance between
+the technical replicates, HP and NH,
+[SPEAKER_01]: it is smaller than the biological reps.
+[SPEAKER_01]: So I'm just going to zoom into this heat
+map to show you that.
+[SPEAKER_01]: Unfortunately, this says R2.
+[SPEAKER_01]: So all the technical replicates,
+HP, NH, NH, HP, are more closely related
+[SPEAKER_01]: than the biological replicates.
+[SPEAKER_01]: And you see these across all the samples.
+[SPEAKER_01]: So this was a great indication that really
+it doesn't really matter whether you use
+[SPEAKER_01]: HPLC or non-HPLC.
+[SPEAKER_01]: Now the final and most strong evidence to
+argue that you can use non-HPLC primer,
+[SPEAKER_01]: it came from the statistical analysis
+where we ran a multiple analysis of
+[SPEAKER_01]: variants between these two data sets.
+[SPEAKER_01]: And in our statistical model, we include
+primer type, HPLC, non-HPLC, time points,
+[SPEAKER_01]: 0, 6, and 24, and interaction of those.
+[SPEAKER_01]: And we looked at the cutoff of the most
+expressed transcript at 10,000 and 100,000
+[SPEAKER_01]: RPKM.
+[SPEAKER_01]: And here I'm just showing you the output
+for the expression profile of the top 10
+[SPEAKER_01]: most expressed transcript.
+[SPEAKER_01]: And you can see that both treatment and
+time points are significant, as well as
+[SPEAKER_01]: the interaction of treatment and time
+point.
+[SPEAKER_01]: But primer themselves, they actually are
+not significant.
+[SPEAKER_01]: So with this data, we were able to
+conclude that we can and we should treat
+[SPEAKER_01]: our libraries, our non-HPLC and HPLC,
+as technical replicates.
+[SPEAKER_01]: And it has the great impact by decreasing
+the cost of library preparation for future
+[SPEAKER_01]: RNA-seq experiments.
+[SPEAKER_01]: So great.
+[SPEAKER_01]: But that wasn't my research.
+[SPEAKER_01]: That was a little side project that we
+had.
+[SPEAKER_01]: The real research, it was to do RNA-seq
+with petunia and their cell stress.
+[SPEAKER_01]: And the question then becomes,
+how do we extract biological information
+[SPEAKER_01]: from these reads?
+[SPEAKER_01]: And the first problem that I had is that
+there's already 60 plant genomes sequenced
+[SPEAKER_01]: and available.
+[SPEAKER_01]: These are just some of them, Arabidopsis
+di rara, Thaliana, of course, models.
+[SPEAKER_01]: We have maize over here.
+[SPEAKER_01]: There's a couple of solanaceous,
+tomato and potato, but there's no petunia.
+[SPEAKER_01]: So in the era of next generation of
+sequencing, you have to have a reference
+[SPEAKER_01]: to align your reads.
+[SPEAKER_01]: So how do you go about if you don't have a
+reference?
+[SPEAKER_01]: So it turns out that there is a way to do
+this, which is by generating a
+[SPEAKER_01]: transcriptome by de novo assembling all
+the millions of reads that you generated
+[SPEAKER_01]: with Illumina sequencing into one final
+transcriptome.
+[SPEAKER_01]: This is, of course, a very simplified
+example.
+[SPEAKER_01]: And then we will basically treat this
+transcriptome as if it was a genome.
+[SPEAKER_01]: It is not a genome, but we will use it in
+the same way to map.
+[SPEAKER_01]: So how do we do this step?
+[SPEAKER_01]: There are different types of assemblers
+nowadays that can allow you to do this.
+[SPEAKER_01]: The first three assembler, Myra,
+GS assembler, and IA assembler,
+[SPEAKER_01]: they basically rely on overlapping DNA
+sequences and looking for consensus.
+[SPEAKER_01]: And they are actually more suited when you
+have long reads.
+[SPEAKER_01]: For my experiment, I had short reads of
+DNA.
+[SPEAKER_01]: So then we would look at these four
+assemblers down here, trans-Avis,
+[SPEAKER_01]: SOAP, Belvedet, and Trinity, which they
+don't really rely on these overlapping
+[SPEAKER_01]: consensus sequences.
+[SPEAKER_01]: They rely on really complex mathematical
+algorithm based on the Brugene graph to
+[SPEAKER_01]: generate a transcriptome.
+[SPEAKER_01]: So the way we did this is that we chose
+the three of the newest assemblers
+[SPEAKER_01]: Trinity, SOAP, and trans-Avis.
+[SPEAKER_01]: And we generated three independent
+transcriptomes.
+[SPEAKER_01]: And we would evaluate which of these
+transcriptomes would be the best and use
+[SPEAKER_01]: that transcriptome for downstream
+analysis.
+[SPEAKER_01]: So here we're looking at the comparison of
+the messenger RNA length distribution of
+[SPEAKER_01]: the different assemblers we use compared
+with tomato.
+[SPEAKER_01]: So we didn't plot transcripts longer than
+5,000 base pairs, because otherwise this
+[SPEAKER_01]: box plot would have been huge.
+[SPEAKER_01]: And so here we have the tomato
+transcriptome, which we know the median
+[SPEAKER_01]: size is roughly 1,000 base pairs for all
+the transcript.
+[SPEAKER_01]: And when using Trinity with default K-mer
+25, we obtained a really close
+[SPEAKER_01]: distribution to tomato, which was closer
+than any of these other three.
+[SPEAKER_01]: Now SOAP with K-mer 47, it was good.
+[SPEAKER_01]: It was the second best getting close to
+tomato, but it wasn't as good as Trinity.
+[SPEAKER_01]: And SOAP with the default, it wasn't
+really good.
+[SPEAKER_01]: And trans-Avis was the worst.
+[SPEAKER_01]: It didn't really recover most of the
+transcript.
+[SPEAKER_01]: So this was great.
+[SPEAKER_01]: And this allowed us to see that Trinity
+was the best de novo assembler.
+[SPEAKER_01]: Now we also looked at bioinformatics
+parameters to make sure that Trinity was
+[SPEAKER_01]: indeed the best assembler.
+[SPEAKER_01]: And when we look at contig mean size of
+all the assemblers, Trinity was by far the
+[SPEAKER_01]: best.
+[SPEAKER_01]: The contigs were almost twice as big as
+any others of the assemblers.
+[SPEAKER_01]: We had a pretty big L50.
+[SPEAKER_01]: And we have a really low N50, which is
+basically an indication as to how
+[SPEAKER_01]: fraction, how cut off the transcription
+can be.
+[SPEAKER_01]: So the lower the N50, the better.
+[SPEAKER_01]: The only really bizarre thing that we
+observed was that we identified over
+[SPEAKER_01]: 100,000 unigens with this de novo
+assembly.
+[SPEAKER_01]: And that was really fascinating.
+[SPEAKER_01]: Because at this stage, we don't know how
+many genes Petunia has.
+[SPEAKER_01]: But we know that tomato has roughly
+35,000.
+[SPEAKER_01]: So Petunia, there's no way that Petunia
+has more than twice as that, unless there
+[SPEAKER_01]: are crazy duplication gene events,
+which are really unlikely.
+[SPEAKER_01]: So this was interesting.
+[SPEAKER_01]: And I'm going to get to that in a couple
+of minutes.
+[SPEAKER_01]: But anyway, we went ahead and we annotated
+this transcriptome that we developed using
+[SPEAKER_01]: BLAST2GO.
+[SPEAKER_01]: And BLAST2GO actually uses the NCBI
+database to do all the BLAST.
+[SPEAKER_01]: And the annotation wasn't really good.
+[SPEAKER_01]: And I spent a lot of time trying to figure
+out why the annotation wasn't really good.
+[SPEAKER_01]: And then I realized that, well,
+the tomato genome is actually not on NCBI.
+[SPEAKER_01]: So I was doing the BLAST against all the
+other species except tomato.
+[SPEAKER_01]: So then we re-annotated the same
+transcriptome against the SGN database.
+[SPEAKER_01]: It's a database exclusively for
+Solanaceous that is run on BTI.
+[SPEAKER_01]: So I re-annotated using a BLASTx against
+the SGN database.
+[SPEAKER_01]: And the annotation was actually way
+better.
+[SPEAKER_01]: So we were able to annotate roughly 33,000
+unigens.
+[SPEAKER_01]: And these 32,000 map directly to the
+coding region of tomato with an average
+[SPEAKER_01]: size of roughly 1 kb.
+[SPEAKER_01]: We identify ribosomal proteins,
+a few bacterial genes.
+[SPEAKER_01]: And the large majority of the genes were
+unannotated.
+[SPEAKER_01]: We think that they correspond to variable
+5 prime and 3 prime UTI regions that are
+[SPEAKER_01]: unique to Petunia that are normally
+conserved with tomato.
+[SPEAKER_01]: And as you might recall from the
+beginning, Petunia is a great model for
+[SPEAKER_01]: transposons.
+[SPEAKER_01]: And we think that we're actually capturing
+a lot of that here.
+[SPEAKER_01]: Now, we need to keep in mind as well that
+we have this big number of unigens.
+[SPEAKER_01]: And that's because multiple unigens can
+correspond to one gene.
+[SPEAKER_01]: So this is a simple example in which we
+have a gene with four exons.
+[SPEAKER_01]: And assuming that this gene doesn't have
+any isoform, this is the only isoform,
+[SPEAKER_01]: we will see that the same correlation of
+the exons in the transcript.
+[SPEAKER_01]: And when we map, we see enough coverage of
+reads that align to exon 1 and 2.
+[SPEAKER_01]: But we do not see enough coverage from
+exon 2 to exon 3, and the same from exon 3
+[SPEAKER_01]: and exon 4.
+[SPEAKER_01]: So basically, the software, which is
+pretty smart, but it's not smart enough,
+[SPEAKER_01]: it is thinking that these are actually
+three independent genes.
+[SPEAKER_01]: So this also explains why we get big
+numbers.
+[SPEAKER_01]: Now, this big number, it's been reported.
+[SPEAKER_01]: Other people that have done our de novo
+assembly in other species, in Chinese
+[SPEAKER_01]: college, for example, find a similar
+number of unigens, which was surprising.
+[SPEAKER_01]: So anyway, we decided to use genontology
+to assign function to all these de novo
+[SPEAKER_01]: assembly transcripts that we were able to
+annotate.
+[SPEAKER_01]: And when you look at the unigens
+distribution, 50% of those are related
+[SPEAKER_01]: with both metabolic and cellular
+processes.
+[SPEAKER_01]: And 20% of the overall distribution
+correspond to response to stimulus and
+[SPEAKER_01]: biological regulation.
+[SPEAKER_01]: Now, we uploaded this transcript.
+[SPEAKER_01]: This transcript can be a great tool for
+bioinformatics purposes.
+[SPEAKER_01]: So we decided to share this.
+[SPEAKER_01]: We uploaded as a FTP file in the source.
+[SPEAKER_01]: It's called Genomic Database.
+[SPEAKER_01]: And after a few weeks that we published
+this work, we actually got a lot of emails
+[SPEAKER_01]: from people asking if we could make this
+blastable.
+[SPEAKER_01]: So whatever favorite gene that we're
+working with, they could blast it again,
+[SPEAKER_01]: the transcriptome.
+[SPEAKER_01]: So we contacted people at the SGN and
+requested if they could do a blastable.
+[SPEAKER_01]: So that was pretty cool.
+[SPEAKER_01]: So you can go now to the SGN, do a
+transcription project.
+[SPEAKER_01]: This is our work.
+[SPEAKER_01]: And you can type whatever partial sequence
+that you have for your favorite gene and
+[SPEAKER_01]: see if you can retrieve more of the gene
+itself or the annotation for it.
+[SPEAKER_01]: So this was pretty cool.
+[SPEAKER_01]: But again, that wasn't the whole purpose
+of the project.
+[SPEAKER_01]: The project was to do RNA-seq to study
+cell stress.
+[SPEAKER_01]: But we needed to go through this de novo
+assembly to have all the players to do
+[SPEAKER_01]: RNA-seq.
+[SPEAKER_01]: So now we have a reference.
+[SPEAKER_01]: And we can map using this software's bow
+tie to look for gene expression.
+[SPEAKER_01]: When you do this, you generate a BAM file.
+[SPEAKER_01]: And then using RSEM, you can count,
+normalize, and look for reads per kilobase
+[SPEAKER_01]: of exon of read maps, which is a measure,
+basically, of gene expression.
+[SPEAKER_01]: And then using this package in this
+bioconductor, DSEQ, you can look for
+[SPEAKER_01]: differential express genes.
+[SPEAKER_01]: And between these two things, the RPKM and
+the DEX, you spend a lot of time doing the
+[SPEAKER_01]: data mining.
+[SPEAKER_01]: Now, why do we need to data mine?
+[SPEAKER_01]: So this is what you get from using RSEM
+bioconductor.
+[SPEAKER_01]: It is a pretty complex matrix of numbers.
+[SPEAKER_01]: And it's really hard to make sense of it.
+[SPEAKER_01]: You can see this is, for example,
+corresponds to leaf.
+[SPEAKER_01]: When they were treated with salt under 24
+hours, you see all the RPKM values.
+[SPEAKER_01]: RSEM is bound with trinity.
+[SPEAKER_01]: So you can identify genes and different
+eye forms of the gene.
+[SPEAKER_01]: But still, this is not really intuitive.
+[SPEAKER_01]: You can make absolutely no sense of this.
+[SPEAKER_01]: And this is what you data mine.
+[SPEAKER_01]: Now, what type of data mine method do you
+use?
+[SPEAKER_01]: Well, that really depends on the type of
+research you're doing.
+[SPEAKER_01]: For our case, making sense of these
+100,000 genogenes, we decided to do look
+[SPEAKER_01]: for anomaly detection, perform a gene
+ontology analysis, cluster analysis,
+[SPEAKER_01]: and compare, basically, our data with our
+transcriptome analysis.
+[SPEAKER_01]: I'm just going to talk briefly about these
+three today.
+[SPEAKER_01]: So when we look at anomaly detection,
+you have to remember that all these
+[SPEAKER_01]: sequences were coming from leaves.
+[SPEAKER_01]: We left the roots at the minus 80 at this
+point.
+[SPEAKER_01]: And when you do leaves, you basically
+would expect that rubisco is the most
+[SPEAKER_01]: abundant enzyme in the world.
+[SPEAKER_01]: You would expect that the expression of
+rubisco is the highest in both
+[SPEAKER_01]: salt-treated and controlled leaves.
+[SPEAKER_01]: And this is what we saw.
+[SPEAKER_01]: We observed that the top 10 most expressed
+genes in terms of RPKM were all related
+[SPEAKER_01]: with the photosynthesis.
+[SPEAKER_01]: In fact, rubisco was the highest.
+[SPEAKER_01]: Now, this data, of course, is not really
+interesting.
+[SPEAKER_01]: It's just sort of to validate the RNA-seq
+data.
+[SPEAKER_01]: You don't do anything with this.
+[SPEAKER_01]: But it let us know that we're on the right
+track with the analysis.
+[SPEAKER_01]: So with the gene ontology analysis,
+we just aim to better understand how
+[SPEAKER_01]: biological processes are affected with
+soil stress.
+[SPEAKER_01]: And so as I said before, we use gene
+ontology to assign function to this
+[SPEAKER_01]: transcript.
+[SPEAKER_01]: But the real question that we were looking
+for was, how do these biological processes
+[SPEAKER_01]: change it with sodium chloride?
+[SPEAKER_01]: So we perform a statistical analysis
+Fisher test of gene ontology term
+[SPEAKER_01]: differences, where we would look for the
+dex of two time points, control 6,
+[SPEAKER_01]: salt 6.
+[SPEAKER_01]: And we will compare those against our
+universe, which is the transcriptome.
+[SPEAKER_01]: Now, there are different ways to talk
+about and represent gene ontology.
+[SPEAKER_01]: I think that the world cloud is one of the
+most simple ones to understand.
+[SPEAKER_01]: So just keep in mind that all of these are
+overrepresented goal terms that have a
+[SPEAKER_01]: significant FDR that I'm not showing.
+[SPEAKER_01]: But when we look at these two time points,
+control 6 and salt 6, we see that we have
+[SPEAKER_01]: abscisic acid and ethylene are one of the
+most overrepresented goal terms.
+[SPEAKER_01]: We also find kinases in G protein couple
+receptors as the most overrepresented goal
+[SPEAKER_01]: terms.
+[SPEAKER_01]: So all of this, actually, it makes sense.
+[SPEAKER_01]: We know that ABA and ethylene are
+distressed hormones.
+[SPEAKER_01]: So we should, of course, see an
+overrepresentation of those.
+[SPEAKER_01]: We know that kinase and GPCRs are crucial
+for signaling transduction pathways.
+[SPEAKER_01]: And we're actually seeing those.
+[SPEAKER_01]: Finding salicylic acid, it was really
+interesting because this has been reported
+[SPEAKER_01]: with more plant pathogen interaction.
+[SPEAKER_01]: So this is an interesting crosstalk
+between the biotic and abiotic type of
+[SPEAKER_01]: stress.
+[SPEAKER_01]: Now, the most interesting part of the goal
+term analysis, it wasn't this.
+[SPEAKER_01]: It was that we found 72 unique goal terms
+associated exclusively with 24 hours after
+[SPEAKER_01]: cell stress.
+[SPEAKER_01]: So all these 72 unique goal terms were not
+found at control 6.
+[SPEAKER_01]: And when we think about it, it actually
+makes sense because at this stage,
+[SPEAKER_01]: cells have been exposed to 24 hours of
+sodium chloride.
+[SPEAKER_01]: So you're actually seeing a little
+cellular damage.
+[SPEAKER_01]: And cells are trying to cope with it.
+[SPEAKER_01]: How do they do that?
+[SPEAKER_01]: One way is that they produce lipid
+biothynthesis.
+[SPEAKER_01]: You can also see that there's a lot of
+glycerol transport.
+[SPEAKER_01]: And you can also observe from this goal
+analysis that cellular biological
+[SPEAKER_01]: processes, such as DNA replication,
+DNA binding, are highly affected.
+[SPEAKER_01]: So I just want to bring these slides from
+the very beginning to show that even in
+[SPEAKER_01]: this really short list of consequences,
+we were able with this analysis to
+[SPEAKER_01]: identify how membrane stabilization and
+osmotic potential are represented here.
+[SPEAKER_01]: So this analysis was really useful for us
+to better understand the biology of the
+[SPEAKER_01]: cell stress.
+[SPEAKER_01]: And this, of course, is a really brief
+summary.
+[SPEAKER_01]: So the last thing I want to talk about
+with this first part is the cluster
+[SPEAKER_01]: analysis.
+[SPEAKER_01]: And so this is a heat map using with the
+RSEN package again, where we look at the
+[SPEAKER_01]: differential expressed transcript isoforms
+across the different time points.
+[SPEAKER_01]: And in green, you see upregulated genes
+and right downregulated genes.
+[SPEAKER_01]: And one of the interesting things about
+the heat maps is that, or clustering for
+[SPEAKER_01]: that matter, is that it allows you to
+identify patterns of biological interest.
+[SPEAKER_01]: So RSEN actually gives us 12 clusters
+here.
+[SPEAKER_01]: And you can see how they are related with
+this side with dendrogram.
+[SPEAKER_01]: And in the heat map, you see that this is
+a cell 6, cell 24, and the three control,
+[SPEAKER_01]: which, of course, it makes sense that the
+cell cluster more closely than the
+[SPEAKER_01]: controls.
+[SPEAKER_01]: And when we look at these clusters,
+there were four clusters that were highly
+[SPEAKER_01]: interesting for me.
+[SPEAKER_01]: Two subclusters, 7 and 12, were at the
+very bottom, where you can see that under
+[SPEAKER_01]: cell, there's a lot of green colors.
+[SPEAKER_01]: And under control, red color.
+[SPEAKER_01]: And then we have the largest cluster,
+two, and a small cluster up here,
+[SPEAKER_01]: where you actually see red colors under
+the cell and green colors under the
+[SPEAKER_01]: control.
+[SPEAKER_01]: So this can be confusing, but the
+interesting thing about clustering is that
+[SPEAKER_01]: we can now go and zoom into these clusters
+and look at the profile of these genes
+[SPEAKER_01]: that are behind this.
+[SPEAKER_01]: So when we look at this subcluster of
+interest, by looking at subcluster 12 and
+[SPEAKER_01]: 7, the one that were at the very bottom of
+the heat map, we see that each one of
+[SPEAKER_01]: these gray lines correspond to a single
+transcript, and the blue one corresponds
+[SPEAKER_01]: to a consensus of the cluster.
+[SPEAKER_01]: We see that under the control,
+the expression of all these genes is
+[SPEAKER_01]: pretty low.
+[SPEAKER_01]: But when cell hits the expression in
+subcluster 7 and 12, it goes dramatically
+[SPEAKER_01]: up.
+[SPEAKER_01]: In fact, we identified that these three
+irregular transcripts were chaperones that
+[SPEAKER_01]: were induced over 90 folds.
+[SPEAKER_01]: And then this was the largest subcluster,
+which wasn't really interesting.
+[SPEAKER_01]: It does show an increase in their
+expression upon cell stress, but it's not
+[SPEAKER_01]: nearly as dramatic as these two clusters.
+[SPEAKER_01]: And finally, this was interesting that we
+only find in this whole live experiment 49
+[SPEAKER_01]: transcripts that were highly expressed
+under the control, but upon cell
+[SPEAKER_01]: treatment, their expression would down
+dramatically.
+[SPEAKER_01]: Now, for our purposes of narrowing down to
+candidate genes, we looked at this
+[SPEAKER_01]: cluster, which was the most interesting
+for us.
+[SPEAKER_01]: And we had 88 transcripts that had a
+really interesting pattern that we were
+[SPEAKER_01]: interested in following.
+[SPEAKER_01]: And there were interesting transcription
+factors like this one.
+[SPEAKER_01]: But unfortunately, some of these genes had
+already been described in literature.
+[SPEAKER_01]: So when we decided to select a few
+candidate genes, of course, we narrowed it
+[SPEAKER_01]: down to those ones that were not
+previously described.
+[SPEAKER_01]: So that led us, this discrimination of
+this gene led us to narrow it down to
+[SPEAKER_01]: basically eight candidate genes,
+eight novel candidate genes that have
+[SPEAKER_01]: never been described in literature for
+cell stress.
+[SPEAKER_01]: And we grouped these candidate genes into
+two groups, basically those that were
+[SPEAKER_01]: induced at both time points, cell 6 and 7.
+[SPEAKER_01]: Cell 24, they were induced by several
+faults, actually.
+[SPEAKER_01]: And the rest of the candidate genes,
+they were induced only at 24 hours after
+[SPEAKER_01]: cell stress.
+[SPEAKER_01]: So when we look at the profiles of these
+candidate genes, I just want to draw your
+[SPEAKER_01]: attention right away to this one.
+[SPEAKER_01]: So the expression of this gene is amazing.
+[SPEAKER_01]: It is virtually zero under the control.
+[SPEAKER_01]: But at six hours of cell stress,
+it is induced by 17 faults.
+[SPEAKER_01]: And at 24 hours of cell stress,
+it is induced by almost 64.
+[SPEAKER_01]: So this makes this gene a really
+interesting candidate.
+[SPEAKER_01]: And the fact that it makes it also really
+interesting is not that it has a high
+[SPEAKER_01]: expression and induction, but also is
+unknown.
+[SPEAKER_01]: So we know that this gene maps directly to
+chromosome 3 in tomato.
+[SPEAKER_01]: But we were not able to retrieve any
+information about it.
+[SPEAKER_01]: We know that it's not a chaperone because
+we weren't able to retrieve that.
+[SPEAKER_01]: So following up this gene would be really,
+really interesting.
+[SPEAKER_01]: So these other genes are also highly
+expressed and induced.
+[SPEAKER_01]: But not nearly as dramatic as this unknown
+one.
+[SPEAKER_01]: And lastly, so the last four candidate
+genes that we selected, they were only
+[SPEAKER_01]: highly induced and highly expressed at 24
+hours.
+[SPEAKER_01]: So these genes, there are cell-sensitive
+genes that are late in the induction
+[SPEAKER_01]: process.
+[SPEAKER_01]: So lastly, I want to say that doing
+RNA-seq is great.
+[SPEAKER_01]: It allows us to identify cluster genes.
+[SPEAKER_01]: Understand a little bit of the biology of
+high stress.
+[SPEAKER_01]: But in order to make these candidate genes
+official, quote unquote, you need to do
+[SPEAKER_01]: the characterization of them.
+[SPEAKER_01]: So what we did is that we ordered a few of
+these mutants, one of the eight candidate
+[SPEAKER_01]: genes that I just showed you.
+[SPEAKER_01]: And by we genotype, trying to find the
+homozygous that has the tDNA insertion in
+[SPEAKER_01]: both alleles.
+[SPEAKER_01]: And we were able, this is only one mutant,
+we were able to identify roughly like five
+[SPEAKER_01]: lines of homozygous line for this
+genotype.
+[SPEAKER_01]: Now, following up with this part of the
+research, it really takes time.
+[SPEAKER_01]: It is a long process.
+[SPEAKER_01]: And I was running out of time.
+[SPEAKER_01]: So I'm gonna suggest that the next PhD
+student in Neil's lab maybe have a really
+[SPEAKER_01]: interesting task to follow up this gene,
+especially the unknown one.
+[SPEAKER_01]: The unknown one, it can definitely lead
+you to a plant cell type of publication.
+[SPEAKER_01]: And I also would like to see that the next
+PhD student follow up with this reverse
+[SPEAKER_01]: genetic approaches, screening the mutants,
+doing VIX.
+[SPEAKER_01]: As I said, Petunia is a great model for
+VIX.
+[SPEAKER_01]: Complementation in planta, overexpression
+with 35S and inducible promoter.
+[SPEAKER_01]: And also like a more broad type of
+research would be interesting.
+[SPEAKER_01]: We looked at only one cultivar,
+Mitchell diploid, but it would be
+[SPEAKER_01]: interesting to see if other Petunia
+hybridas perform in the same way than
+[SPEAKER_01]: this.
+[SPEAKER_01]: Just to finish up this section,
+I like to say that pretty much everything
+[SPEAKER_01]: what I just mentioned, it was published in
+PLOS-1.
+[SPEAKER_01]: The paper came out a couple of weeks ago.
+[SPEAKER_01]: And it was a big collaboration between,
+of course, Neil, myself, people in plant
+[SPEAKER_01]: biology, Orellano, who is actually now a
+faculty member at Virginia Tech,
+[SPEAKER_01]: Mike Scanlon and James Giovanoni.
+[SPEAKER_01]: And also I'd like to acknowledge two of my
+colleagues, Margaret Frank, who is now a
+[SPEAKER_01]: postdoc in the Downford Center,
+and Brian Emmett, who contributed with
+[SPEAKER_01]: really thoughtful comments, especially
+Brian, with a lot of statistical
+[SPEAKER_01]: consulting help.
+[SPEAKER_01]: So between all of them, we were able to
+publish this, and we were really excited
+[SPEAKER_01]: about it.
+[SPEAKER_01]: So the last thing that I want to talk
+about is how can we expand basically these
+[SPEAKER_01]: results now with the reference genome and
+including root samples.
+[SPEAKER_01]: So the specific goal for this was to
+compare using this platform, Illumina,
+[SPEAKER_01]: with our reference genome.
+[SPEAKER_01]: And I show you this experimental design.
+[SPEAKER_01]: And I said at the beginning that we focus
+firstly on leaves.
+[SPEAKER_01]: So now we're including everything.
+[SPEAKER_01]: We already have the sequence for leaves,
+so we just needed to include roots.
+[SPEAKER_01]: And the only different thing that we use
+now is that we use the Tuxedo package.
+[SPEAKER_01]: So in this package, basically you map all
+the rates using TopHat that runs Bowtie2
+[SPEAKER_01]: in the background to align all the rates
+to the chromosomes.
+[SPEAKER_01]: And then you use CAF links to look for all
+the aligned rates, make them into
+[SPEAKER_01]: transcript.
+[SPEAKER_01]: And then with CAF diff, you can look at
+gene expression.
+[SPEAKER_01]: So the question is, why did I bother to do
+all the de novo assembly in the first
+[SPEAKER_01]: place if you have reference genome?
+[SPEAKER_01]: So as Neil said at the beginning,
+we didn't really have a reference genome
+[SPEAKER_01]: when we first started, but it wasn't until
+late September that we started to
+[SPEAKER_01]: collaborate with the Petunia Genome
+Consortium, which allow us to use one of
+[SPEAKER_01]: the reference genomes.
+[SPEAKER_01]: So very briefly, the Petunia Genome
+Consortium, it is a really big effort
+[SPEAKER_01]: between scientists in both the US and
+Europe.
+[SPEAKER_01]: Basically, probably the most important
+people are in BTI, Lucas and Ore.
+[SPEAKER_01]: We have people in Switzerland,
+Chris Cullemeier, people in Italy,
+[SPEAKER_01]: and Tom Gerrard in the Netherlands,
+as well as Francesca.
+[SPEAKER_01]: So this was great because it really
+allowed us to use the genome as a
+[SPEAKER_01]: reference and that expand a whole lot the
+way that we can do RNA sequencing,
+[SPEAKER_01]: basically.
+[SPEAKER_01]: So what are we specifically doing with the
+Petunia Genome Project?
+[SPEAKER_01]: I can't really say much because it hasn't
+been published yet.
+[SPEAKER_01]: But one of the things that I'm looking at
+is I'm looking at molecular markers,
+[SPEAKER_01]: single nucleotide polymorphism,
+SNPs, to assess how many transcripts are
+[SPEAKER_01]: inherited from each parent to a hybridome.
+[SPEAKER_01]: For the Tuxedo analysis, what we used,
+it was this genome, the Petunia axillary
+[SPEAKER_01]: genome, because both the functional and
+structural annotation of the genome,
+[SPEAKER_01]: it was actually in better shape than in
+FLATA.
+[SPEAKER_01]: So you can actually see that here we have
+roughly 36,000 genes, which is much less
+[SPEAKER_01]: than the 100,000 that I find in the de
+novo assembly.
+[SPEAKER_01]: But using this genome as a bioinformatics
+resource, it was of great help.
+[SPEAKER_01]: So when we run the analysis using Tuxedo
+and the reference genome, we found
+[SPEAKER_01]: actually 34,000 genes, which is much,
+much more accurate than the 100,000 unit
+[SPEAKER_01]: genes that we find with the de novo.
+[SPEAKER_01]: We found 37,000 isoforms with Tuxedo and
+135,000 with de novo.
+[SPEAKER_01]: So basically, there's no question that
+running Tuxedo, it is a much more accurate
+[SPEAKER_01]: approach.
+[SPEAKER_01]: To do RNA sequencing, we identify roughly
+11,000 differential expressed genes
+[SPEAKER_01]: between root and leaf over a million
+promoters and over a million splicing
+[SPEAKER_01]: sites when we look at the Tuxedo output.
+[SPEAKER_01]: Now, one of the things that is really
+interesting with Tuxedo is that you take
+[SPEAKER_01]: everything into R, and into R,
+you really can do whatever.
+[SPEAKER_01]: You can do anything you want.
+[SPEAKER_01]: And I like to do the analogy with the cell
+cycle, because doing RNA sequencing,
+[SPEAKER_01]: it is really like the cell cycle where you
+have a lot of checkpoints and if the
+[SPEAKER_01]: checkpoint has not been satisfied,
+the cell cycle stops.
+[SPEAKER_01]: So with the RNA-seq, it's really the same.
+[SPEAKER_01]: So this is the first checkpoint for us
+where we see, how do the sample cluster
+[SPEAKER_01]: together?
+[SPEAKER_01]: So in this case, in this dendrogram,
+we see that we have two big branches,
+[SPEAKER_01]: one corresponding to root and one
+corresponding to leaf.
+[SPEAKER_01]: So this makes sense, because roots should
+be more closely related to each other than
+[SPEAKER_01]: leaves.
+[SPEAKER_01]: So if you don't see this sort of pattern,
+there is something that went wrong,
+[SPEAKER_01]: and you have to stop and go back.
+[SPEAKER_01]: And in fact, I had to do this twice,
+because one of the scripts that I wrote,
+[SPEAKER_01]: it wasn't good.
+[SPEAKER_01]: And when you look now between this branch,
+you see that the control cluster more
+[SPEAKER_01]: closely together than the cell treatment.
+[SPEAKER_01]: So this is a really good sign that you're
+on the right track.
+[SPEAKER_01]: When you look at all the biological
+replicates and the technical replicates
+[SPEAKER_01]: here, you see that they also cluster
+together.
+[SPEAKER_01]: You see all the leaf cell 24 cluster here.
+[SPEAKER_01]: So this is, again, is a good indication
+that you're doing things well.
+[SPEAKER_01]: When we look at differentially expressed
+genes, now with Tuxedo, we actually can
+[SPEAKER_01]: further look into leaves and roots.
+[SPEAKER_01]: And with this Tuxedo package, we were able
+to identify 6,700 differentially expressed
+[SPEAKER_01]: genes, some of them that were exclusively
+expressed in this early time point,
+[SPEAKER_01]: some of them were exclusively expressed in
+this later time point, and of course,
+[SPEAKER_01]: some of these decks are expressed between
+both time points.
+[SPEAKER_01]: And so with the de novo assembly,
+we were able to identify 7,000
+[SPEAKER_01]: differentially expressed genes,
+which wasn't that far off from what we
+[SPEAKER_01]: actually found here.
+[SPEAKER_01]: So that was pretty cool.
+[SPEAKER_01]: And again, we did the same thing with the
+roots.
+[SPEAKER_01]: There are specific genes induced at this
+time point and at the other time point.
+[SPEAKER_01]: Now, as I said, this is still ongoing
+research.
+[SPEAKER_01]: I don't have all the data that I'd like to
+show.
+[SPEAKER_01]: But one of the things that I'm currently
+working on is see, well, how many genes
+[SPEAKER_01]: are differentially expressed that are
+between leaf and roots.
+[SPEAKER_01]: So that's going to be interesting to know.
+[SPEAKER_01]: Lastly, so I still need to do gene
+ontology analysis for Tuxedo, do the
+[SPEAKER_01]: clustering using these two softwares,
+and talk about candidate genes.
+[SPEAKER_01]: Now, I don't have all the candidate genes,
+but we do have this one that it has a
+[SPEAKER_01]: really amazing profile.
+[SPEAKER_01]: But you can actually see that the
+expression, it remains pretty flat,
+[SPEAKER_01]: actually zero in leafs and even in roots.
+[SPEAKER_01]: But only at root cell 6, it is expressed
+over 100.
+[SPEAKER_01]: FBKM induced 24-fold.
+[SPEAKER_01]: And at root 24, it is induced by almost
+80-fold.
+[SPEAKER_01]: So the expression of this candidate gene
+is amazing.
+[SPEAKER_01]: This is the ortholog in tomato.
+[SPEAKER_01]: I need to still look at the function of
+it.
+[SPEAKER_01]: And then lastly, I just want to wrap up
+with some conclusions.
+[SPEAKER_01]: So we actually developed a really novel
+transcriptome of pituitary hybrida under
+[SPEAKER_01]: cell stress, where we identify over 1,000
+different abregulated genes.
+[SPEAKER_01]: And through clustering analysis,
+we were able to narrow it down to eight
+[SPEAKER_01]: candidate genes.
+[SPEAKER_01]: However, using Tuxedo package,
+it's really a much more accurate
+[SPEAKER_01]: bioinformatic tool that gives you a better
+representation of gene expression and
+[SPEAKER_01]: differential expressed genes.
+[SPEAKER_01]: I'm still working on finishing up with
+this Tuxedo package.
+[SPEAKER_01]: I need to do the ontology and the
+clustering.
+[SPEAKER_01]: And then one of the things that I really
+want to do is compare how do the candidate
+[SPEAKER_01]: genes from the denoble compare to the
+Tuxedo analysis.
+[SPEAKER_01]: So lastly, I'd like to acknowledge Mike
+Scanlon from Plant Biology, Marine Hanson,
+[SPEAKER_01]: and Debbie.
+[SPEAKER_01]: Debbie from MDG.
+[SPEAKER_01]: Also, all the collaboration with James
+Giovannoni.
+[SPEAKER_01]: We really appreciate that.
+[SPEAKER_01]: Orellana was the bioinformatician that
+helped us a lot with this.
+[SPEAKER_01]: He also taught me a lot of bioinformatics.
+[SPEAKER_01]: So I'm really grateful to him.
+[SPEAKER_01]: Lucas Miller, we run all the software for
+free, basically, in a huge server at the
+[SPEAKER_01]: BTI.
+[SPEAKER_01]: So that was great.
+[SPEAKER_01]: Also, the Cornell sequencing facility,
+they did a really good job.
+[SPEAKER_01]: And lastly, I want to very specially thank
+Dr. Neil Matson.
+[SPEAKER_01]: So as he said, I came in 2008.
+[SPEAKER_01]: And Nelia was young.
+[SPEAKER_01]: And this is in 2008.
+[SPEAKER_01]: So this is the stegonic.
+[SPEAKER_01]: So I just want to thank Neil for all his
+patient, all his mentoring.
+[SPEAKER_01]: He's been a great advisor, someone really
+great to work with.
+[SPEAKER_01]: And I'm basically mostly grateful,
+because he really led me wander off pretty
+[SPEAKER_01]: far away from his owner of expertise.
+[SPEAKER_01]: So he was willing to collaborate and learn
+with me, which is something that sometimes
+[SPEAKER_01]: faculty members don't do.
+[SPEAKER_01]: And I think his really kind approach to do
+that enabled us to build a stronger
+[SPEAKER_01]: network connection in Cornell.
+[SPEAKER_01]: So Dylan wasn't even in the map at this
+point.
+[SPEAKER_01]: The only weird thing about Neil,
+I have to say, is that he likes to think
+[SPEAKER_01]: in really strange places.
+[SPEAKER_01]: And this is one of them.
+[SPEAKER_01]: So when I first came, I thought maybe it
+was an American thing.
+[SPEAKER_01]: But I realized that no, it was Neil.
+[SPEAKER_01]: But anyway, he always, even in these
+places, he wanted to talk about research.
+[SPEAKER_01]: And I always was procrastinating.
+[SPEAKER_01]: And lastly, I also want to thank my
+girlfriend, Amanda, for all her support.
+[SPEAKER_01]: And of course, our dog.
+[SPEAKER_01]: And this is the last slide.
+[SPEAKER_01]: I also want to thank the Horticulture
+Department very much for these great six
+[SPEAKER_01]: years.
+[SPEAKER_01]: Also SOHO for supporting six years as
+well.
+[SPEAKER_01]: And all the biology, different bio TAs
+that I've done over the last four years
+[SPEAKER_01]: that I've been here.
+[SPEAKER_01]: Actually, Professor Trojan is here,
+who runs this bio.
+[SPEAKER_01]: And thank you.
+[SPEAKER_01]: Thank you for everything.
+[SPEAKER_01]: And if there's any question, I'm happy to
+answer that.
+[SPEAKER_04]: Is that you said 2% of your unit genes map
+to bacteria.
+[SPEAKER_04]: Do you think it's because the tunas were
+infected with certain diseases or lab
+[SPEAKER_04]: contaminants?
+[SPEAKER_04]: Yeah, that's a good question.
+[SPEAKER_04]: Where do those bacteria genes come from?
+[SPEAKER_01]: Yeah.
+[SPEAKER_01]: That's a really good question.
+[SPEAKER_01]: There's always some little percent of
+contamination.
+[SPEAKER_01]: I don't know exactly where it comes from.
+[SPEAKER_04]: Did you find any human genes suggesting?
+[SPEAKER_04]: Yeah, I think one.
+[SPEAKER_04]: Which map do you think?
+[SPEAKER_03]: At the very beginning of your talk,
+you could have a slide showing the general
+[SPEAKER_03]: response mechanisms for salt stress.
+[SPEAKER_03]: Our SOS1 and sodium proton antiporter,
+those two genes are among the upregulated
+[SPEAKER_03]: SOS1 and sodium proton antiporter.
+[SPEAKER_03]: OK.
+[SPEAKER_01]: Yeah, SOS1 is a sodium proton antiporter.
+[SPEAKER_03]: Both are upregulated.
+[SPEAKER_03]: Yeah, they are.
+[SPEAKER_03]: And are substance.
+[SPEAKER_03]: Did you find them in your research?
+[SPEAKER_01]: Oh, I did find them.
+[SPEAKER_01]: Sorry.
+[SPEAKER_01]: Actually, no.
+[SPEAKER_01]: And that's a good question.
+[SPEAKER_01]: And the answer for that is that tunas is a
+model that you really withstand salt
+[SPEAKER_01]: stress.
+[SPEAKER_01]: So we think that after 24 hours,
+you start seeing damage, but you don't see
+[SPEAKER_01]: the upregulation of these genes.
+[SPEAKER_01]: So if you want to see the sample extrusion
+mechanism here, you have to expose plants
+[SPEAKER_01]: to 48, 96 hours.
+[SPEAKER_01]: And then you will see these types of
+responses.
+[SPEAKER_02]: How long is it going to take to provide
+information to plant breeders?
+[SPEAKER_01]: That's a good question, too.
+[SPEAKER_01]: So I think it will take a long time.
+[SPEAKER_01]: Because as I said, the functional
+characterization of the gene is equally as
+[SPEAKER_01]: important as the RIC part.
+[SPEAKER_01]: So just identify a novel type of genes
+that may or may not be suitable for use as
+[SPEAKER_01]: marker for breeding, or to use for gene
+imaging.
+[SPEAKER_04]: Thank you.
+[SPEAKER_00]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_00]: Thank you.
+[SPEAKER_00]: Thank you.
+Thank you.
+Thank you.

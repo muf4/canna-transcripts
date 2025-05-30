@@ -1,0 +1,1768 @@
+1
+00:00:01,270 --> 00:00:06,650
+good morning this is I'm Bruce Bugbee
+
+2
+00:00:03,950 --> 00:00:09,138
+and today we're going to talk about air
+
+3
+00:00:06,650 --> 00:00:11,888
+temperature sensors this is really part
+
+4
+00:00:09,138 --> 00:00:15,138
+one in a series of environmental
+
+5
+00:00:11,888 --> 00:00:18,649
+measurement seminars that we've designed
+
+6
+00:00:15,138 --> 00:00:24,049
+to educate people on the key principles
+
+7
+00:00:18,649 --> 00:00:26,209
+I am joined in this effort by my
+
+8
+00:00:24,050 --> 00:00:28,329
+colleague mark blonde twist who is the
+
+9
+00:00:26,210 --> 00:00:30,439
+chief scientist for Apogee instruments
+
+10
+00:00:28,329 --> 00:00:32,558
+he isn't going to be doing the talking
+
+11
+00:00:30,439 --> 00:00:36,609
+but he and I have worked together to
+
+12
+00:00:32,558 --> 00:00:38,808
+analyze a wide range of sensors for
+
+13
+00:00:36,609 --> 00:00:40,579
+environmental measurement so we're gonna
+
+14
+00:00:38,808 --> 00:00:42,468
+start with perhaps the most fundamental
+
+15
+00:00:40,579 --> 00:00:46,609
+measurement of all which is air
+
+16
+00:00:42,469 --> 00:00:49,010
+temperature if you would ask me when I
+
+17
+00:00:46,609 --> 00:00:51,320
+was an undergraduate do you know how to
+
+18
+00:00:49,009 --> 00:00:53,178
+measure air temperature I would say yes
+
+19
+00:00:51,320 --> 00:00:55,308
+of course I know all about it if you
+
+20
+00:00:53,179 --> 00:00:56,899
+would ask me as a master's student do I
+
+21
+00:00:55,308 --> 00:00:58,849
+know how to measure air temperature and
+
+22
+00:00:56,899 --> 00:01:01,308
+I was saying yes yeah that kind of but
+
+23
+00:00:58,850 --> 00:01:04,099
+there's challenges and if you ask me as
+
+24
+00:01:01,308 --> 00:01:05,780
+a experience scientist do I know how to
+
+25
+00:01:04,099 --> 00:01:08,089
+measure air temperature and I probably
+
+26
+00:01:05,780 --> 00:01:10,790
+say something like whoo that is a really
+
+27
+00:01:08,090 --> 00:01:12,409
+challenging measurement so we're going
+
+28
+00:01:10,790 --> 00:01:16,340
+to help bring you up to the cutting edge
+
+29
+00:01:12,409 --> 00:01:18,709
+of just the sensors today to do this in
+
+30
+00:01:16,340 --> 00:01:21,260
+a separate talk we'll talk about shields
+
+31
+00:01:18,709 --> 00:01:23,509
+so this is the simplest thing what kind
+
+32
+00:01:21,260 --> 00:01:26,900
+of electronic sensors were used for air
+
+33
+00:01:23,510 --> 00:01:29,630
+temperature measurement and historically
+
+34
+00:01:26,900 --> 00:01:33,380
+we've used alcohol thermometers and
+
+35
+00:01:29,629 --> 00:01:35,479
+mercury and glass thermometers but those
+
+36
+00:01:33,379 --> 00:01:37,789
+are not electronic output you can't
+
+37
+00:01:35,480 --> 00:01:39,920
+record those you've got to have a sensor
+
+38
+00:01:37,790 --> 00:01:43,010
+that makes an electric output so we can
+
+39
+00:01:39,920 --> 00:01:45,799
+do continuous recording of it so this is
+
+40
+00:01:43,010 --> 00:01:49,430
+all about sensors that have electronic
+
+41
+00:01:45,799 --> 00:01:52,129
+output now let's jump to a picture that
+
+42
+00:01:49,430 --> 00:01:58,580
+we've made that shows sizes and types of
+
+43
+00:01:52,129 --> 00:02:00,799
+sensors here's a wide range of sizes and
+
+44
+00:01:58,579 --> 00:02:03,560
+in a minute I'll tell you why size is so
+
+45
+00:02:00,799 --> 00:02:05,750
+critical but let's just run over the
+
+46
+00:02:03,560 --> 00:02:08,989
+sizes all the way from the human hair
+
+47
+00:02:05,750 --> 00:02:13,330
+and look at the size of this 0.002
+
+48
+00:02:08,989 --> 00:02:15,759
+inches 0.06 millimeters this is tiny
+
+49
+00:02:13,330 --> 00:02:19,270
+just barely above that we can get fine
+
+50
+00:02:15,759 --> 00:02:20,979
+wire through misters that are just
+
+51
+00:02:19,270 --> 00:02:24,610
+barely thicker than a human hair now
+
+52
+00:02:20,979 --> 00:02:26,679
+these are used to in use in a syringe to
+
+53
+00:02:24,610 --> 00:02:29,350
+inject into an animal to measure
+
+54
+00:02:26,680 --> 00:02:31,780
+internal temperature of an animal but
+
+55
+00:02:29,349 --> 00:02:34,419
+boy they stay very close to air
+
+56
+00:02:31,780 --> 00:02:38,169
+temperature because they are so tiny so
+
+57
+00:02:34,419 --> 00:02:42,069
+this would be a nice sensor but this
+
+58
+00:02:38,169 --> 00:02:45,189
+sensor in our long-term studies drifts
+
+59
+00:02:42,069 --> 00:02:47,289
+it's not a stable sensor and that's a
+
+60
+00:02:45,189 --> 00:02:49,810
+critical feature of these sensors they
+
+61
+00:02:47,289 --> 00:02:53,349
+have to be rock-solid year after year
+
+62
+00:02:49,810 --> 00:02:55,719
+after year so we're not using this fine
+
+63
+00:02:53,349 --> 00:02:58,419
+wire sensor even though it's wonderfully
+
+64
+00:02:55,719 --> 00:03:02,520
+tiny because it's not solid and
+
+65
+00:02:58,419 --> 00:03:06,129
+long-term studies going up the scale
+
+66
+00:03:02,520 --> 00:03:08,709
+thermocouples are a classic electronic
+
+67
+00:03:06,129 --> 00:03:11,799
+way of measurement they're widely used
+
+68
+00:03:08,709 --> 00:03:14,080
+they're inexpensive is taken strip a
+
+69
+00:03:11,800 --> 00:03:17,500
+wire twist it like this you've got a
+
+70
+00:03:14,080 --> 00:03:20,410
+temperature sensor but they are not the
+
+71
+00:03:17,500 --> 00:03:24,280
+most accurate reference standard and for
+
+72
+00:03:20,409 --> 00:03:27,579
+long runs of wire they get expensive the
+
+73
+00:03:24,280 --> 00:03:31,120
+cost of thermocouple wire is about ten
+
+74
+00:03:27,580 --> 00:03:34,000
+times the cost of regular wire so we
+
+75
+00:03:31,120 --> 00:03:36,640
+mostly use these when we need to do lots
+
+76
+00:03:34,000 --> 00:03:39,610
+of measurements in a small distance a
+
+77
+00:03:36,639 --> 00:03:43,419
+small distance from the data logger even
+
+78
+00:03:39,610 --> 00:03:46,510
+though they can be small so then we
+
+79
+00:03:43,419 --> 00:03:50,738
+going down the list we get into the
+
+80
+00:03:46,509 --> 00:03:53,500
+category of thermistors so let's put a
+
+81
+00:03:50,739 --> 00:03:57,519
+line under thermocouples we'll call that
+
+82
+00:03:53,500 --> 00:03:59,590
+number one not thermocouples or
+
+83
+00:03:57,519 --> 00:04:04,030
+thermistor rather are number two and
+
+84
+00:03:59,590 --> 00:04:06,939
+technologies these are have a big signal
+
+85
+00:04:04,030 --> 00:04:09,759
+size they're easy to measure for years
+
+86
+00:04:06,939 --> 00:04:12,069
+these were considered not a reference
+
+87
+00:04:09,759 --> 00:04:16,689
+standard because they drifted in the
+
+88
+00:04:12,069 --> 00:04:20,379
+long term so to avoid this problem with
+
+89
+00:04:16,689 --> 00:04:23,829
+drift for years we've gone to platinum
+
+90
+00:04:20,379 --> 00:04:25,560
+resistance thermometers now lots of
+
+91
+00:04:23,829 --> 00:04:30,209
+people know these by the acronym
+
+92
+00:04:25,560 --> 00:04:36,089
+P R T platinum resistance thermometer
+
+93
+00:04:30,209 --> 00:04:38,729
+sometimes people say P R T D and that's
+
+94
+00:04:36,089 --> 00:04:39,750
+just a temperature detector those are
+
+95
+00:04:38,730 --> 00:04:45,060
+the same things
+
+96
+00:04:39,750 --> 00:04:48,180
+P R T and P R T key this one like the
+
+97
+00:04:45,060 --> 00:04:51,000
+typical PR T's is enclosed in a
+
+98
+00:04:48,180 --> 00:04:55,350
+stainless steel sheath that makes this
+
+99
+00:04:51,000 --> 00:04:59,240
+extremely rugged but it's a bigger size
+
+100
+00:04:55,350 --> 00:05:04,889
+than this thermistor slightly bigger and
+
+101
+00:04:59,240 --> 00:05:07,800
+a lot more expensive so finally to get
+
+102
+00:05:04,889 --> 00:05:10,740
+this even more rugged Apogee sells a
+
+103
+00:05:07,800 --> 00:05:12,720
+ceramic sheath thermistor which is this
+
+104
+00:05:10,740 --> 00:05:14,370
+enclosed in a big housing you could
+
+105
+00:05:12,720 --> 00:05:18,180
+drive over this with a truck
+
+106
+00:05:14,370 --> 00:05:21,329
+so for rugged places and direct burial
+
+107
+00:05:18,180 --> 00:05:22,500
+and soils this ceramic sheath thermistor
+
+108
+00:05:21,329 --> 00:05:28,099
+is a good choice
+
+109
+00:05:22,500 --> 00:05:30,870
+but what we're down to is the misters
+
+110
+00:05:28,100 --> 00:05:36,240
+particularly through misters that are
+
+111
+00:05:30,870 --> 00:05:39,240
+epoxy coated to nearly eliminate water
+
+112
+00:05:36,240 --> 00:05:41,910
+infiltration into the sensor that's what
+
+113
+00:05:39,240 --> 00:05:45,210
+kills sensors is when water gets into
+
+114
+00:05:41,910 --> 00:05:48,110
+them and the only two things that water
+
+115
+00:05:45,209 --> 00:05:51,149
+isn't get through our metal and glass
+
+116
+00:05:48,110 --> 00:05:53,669
+epoxy though is clothes the right kinds
+
+117
+00:05:51,149 --> 00:05:56,599
+of epoxy are almost as impermeable as
+
+118
+00:05:53,668 --> 00:06:00,529
+glass so this one has got a special
+
+119
+00:05:56,600 --> 00:06:03,860
+epoxy coating to make it water
+
+120
+00:06:00,529 --> 00:06:09,288
+impermeable and as a result of that
+
+121
+00:06:03,860 --> 00:06:12,270
+potentially very stable so we've got
+
+122
+00:06:09,288 --> 00:06:15,389
+thermocouples thermistors and PRTs as
+
+123
+00:06:12,269 --> 00:06:17,879
+the categories PR T's have long been
+
+124
+00:06:15,389 --> 00:06:20,728
+considered the gold standard but they
+
+125
+00:06:17,879 --> 00:06:25,589
+have a couple of disadvantages they're
+
+126
+00:06:20,728 --> 00:06:29,490
+big they're expensive and they take up a
+
+127
+00:06:25,589 --> 00:06:33,869
+lot of data logger channels let's take a
+
+128
+00:06:29,490 --> 00:06:36,629
+look at the effective size in this small
+
+129
+00:06:33,870 --> 00:06:38,550
+is better but boy these are still pretty
+
+130
+00:06:36,629 --> 00:06:42,810
+small as far as temperatures
+
+131
+00:06:38,550 --> 00:06:47,189
+sisqó so this next slide shows us the
+
+132
+00:06:42,810 --> 00:06:49,439
+effect of size on temperature rise so
+
+133
+00:06:47,189 --> 00:06:51,660
+we've got these are all thermocouples
+
+134
+00:06:49,439 --> 00:06:53,790
+now so we take the same measurement
+
+135
+00:06:51,660 --> 00:06:56,570
+technology and make it in different
+
+136
+00:06:53,790 --> 00:06:59,670
+sizes now look at the wire diameter
+
+137
+00:06:56,569 --> 00:07:02,399
+these are down here thinner than a human
+
+138
+00:06:59,670 --> 00:07:05,819
+hair in this part of the graph these are
+
+139
+00:07:02,399 --> 00:07:08,729
+all tenths of a millimeter small and
+
+140
+00:07:05,819 --> 00:07:11,310
+very small we've put these in a
+
+141
+00:07:08,730 --> 00:07:15,360
+controlled environment with typical
+
+142
+00:07:11,310 --> 00:07:18,060
+radiation loads on them and look at the
+
+143
+00:07:15,360 --> 00:07:20,370
+increase in temperature this is the
+
+144
+00:07:18,060 --> 00:07:23,009
+difference between the true air
+
+145
+00:07:20,370 --> 00:07:24,540
+temperature and what the sensor gave us
+
+146
+00:07:23,009 --> 00:07:30,029
+look at this
+
+147
+00:07:24,540 --> 00:07:33,240
+8 degrees C errors with big sensors in
+
+148
+00:07:30,029 --> 00:07:39,569
+low wind speeds this number over here U
+
+149
+00:07:33,240 --> 00:07:42,840
+is wind speed right there so these are
+
+150
+00:07:39,569 --> 00:07:48,389
+all fairly low wind speeds but they
+
+151
+00:07:42,839 --> 00:07:51,469
+occur on calm days so this is high
+
+152
+00:07:48,389 --> 00:07:54,629
+radiation coming into it this is
+
+153
+00:07:51,470 --> 00:07:56,400
+intermediate radiation the point of this
+
+154
+00:07:54,629 --> 00:07:58,290
+whole slide is these errors are dark
+
+155
+00:07:56,399 --> 00:08:01,649
+gancho on e if you're trying to get
+
+156
+00:07:58,290 --> 00:08:03,930
+within a few tenths of a degree of the
+
+157
+00:08:01,649 --> 00:08:07,469
+correct air temperature you need to have
+
+158
+00:08:03,930 --> 00:08:09,449
+a very small sensor or make sure that
+
+159
+00:08:07,470 --> 00:08:12,210
+sensor doesn't see the sunlight directly
+
+160
+00:08:09,449 --> 00:08:15,120
+these were with no shielding and we'll
+
+161
+00:08:12,209 --> 00:08:17,370
+talk about that in another seminar that
+
+162
+00:08:15,120 --> 00:08:20,970
+the value and the importance of correct
+
+163
+00:08:17,370 --> 00:08:25,889
+shielding but for now small is better
+
+164
+00:08:20,970 --> 00:08:30,300
+the errors can be enormous so let's take
+
+165
+00:08:25,889 --> 00:08:33,419
+a look at PR T's all PRTs are not
+
+166
+00:08:30,300 --> 00:08:37,460
+created equal peoples all I've got a PRT
+
+167
+00:08:33,419 --> 00:08:40,939
+what kind of a PRT here's the five
+
+168
+00:08:37,460 --> 00:08:45,509
+classes of PR T's and their accuracy
+
+169
+00:08:40,940 --> 00:08:48,200
+specifications and plus or minus 1.2
+
+170
+00:08:45,509 --> 00:08:51,840
+degrees C that is not a very accurate
+
+171
+00:08:48,200 --> 00:08:52,350
+sensor but you can go we can go all the
+
+172
+00:08:51,840 --> 00:08:55,920
+way up
+
+173
+00:08:52,350 --> 00:08:59,970
+to one-tenth din which is an extremely
+
+174
+00:08:55,919 --> 00:09:02,699
+accurate PRT so you can see these vary a
+
+175
+00:08:59,970 --> 00:09:09,389
+lot and accuracy look at how much they
+
+176
+00:09:02,700 --> 00:09:12,180
+vary in cost one X - 15 X these are
+
+177
+00:09:09,389 --> 00:09:15,899
+great but they're very expensive and
+
+178
+00:09:12,179 --> 00:09:20,789
+we'll compare these two thermistors in
+
+179
+00:09:15,899 --> 00:09:25,049
+our in our next slide we have done tests
+
+180
+00:09:20,789 --> 00:09:28,740
+on these compared to this epoxy coated
+
+181
+00:09:25,049 --> 00:09:32,129
+semester that Apogee uses to measure air
+
+182
+00:09:28,740 --> 00:09:35,100
+temperature to see how good that is so
+
+183
+00:09:32,129 --> 00:09:39,210
+right here we're gonna do this
+
+184
+00:09:35,100 --> 00:09:41,850
+comparison of thermistors to this yellow
+
+185
+00:09:39,210 --> 00:09:46,860
+bead PRT and what we're going to compare
+
+186
+00:09:41,850 --> 00:09:50,519
+in the next few slides is Class A - mr.
+
+187
+00:09:46,860 --> 00:09:53,250
+so intermediate accuracy similar
+
+188
+00:09:50,519 --> 00:09:57,539
+advertised accuracy plus a minus 0.1
+
+189
+00:09:53,250 --> 00:10:01,889
+plus a minus point point one five 0.01
+
+190
+00:09:57,539 --> 00:10:05,159
+this is still more expensive but the
+
+191
+00:10:01,889 --> 00:10:09,449
+specified a cure is similar so what we
+
+192
+00:10:05,159 --> 00:10:12,629
+did in this test is took replica class a
+
+193
+00:10:09,450 --> 00:10:15,240
+PRT s and compared them to replica
+
+194
+00:10:12,629 --> 00:10:17,850
+thermistor 's and then we cycle them up
+
+195
+00:10:15,240 --> 00:10:19,560
+and down and up and down trying to make
+
+196
+00:10:17,850 --> 00:10:21,240
+them fail if something's going to go
+
+197
+00:10:19,559 --> 00:10:23,519
+wrong they've got to take this
+
+198
+00:10:21,240 --> 00:10:25,370
+accelerated aging test it was with high
+
+199
+00:10:23,519 --> 00:10:29,699
+humidity it was the worst possible
+
+200
+00:10:25,370 --> 00:10:31,830
+scenarios so really we can get 10 or 15
+
+201
+00:10:29,700 --> 00:10:34,410
+years of aging in just three or four
+
+202
+00:10:31,830 --> 00:10:36,030
+months by doing this but we want to know
+
+203
+00:10:34,409 --> 00:10:38,659
+these are going to be stable for the
+
+204
+00:10:36,029 --> 00:10:44,039
+long term so how'd this test come out
+
+205
+00:10:38,659 --> 00:10:46,079
+well first PRT accuracies they're not
+
+206
+00:10:44,039 --> 00:10:50,279
+equally accurate over the whole range
+
+207
+00:10:46,080 --> 00:10:52,860
+here's zero C right at freezing which is
+
+208
+00:10:50,279 --> 00:10:55,889
+their peak accuracy and as we deviate
+
+209
+00:10:52,860 --> 00:10:58,470
+from that these accuracies get greater
+
+210
+00:10:55,889 --> 00:11:01,319
+and again here's the the types of
+
+211
+00:10:58,470 --> 00:11:04,950
+thermistors and their accuracy here's a
+
+212
+00:11:01,320 --> 00:11:06,960
+picture of the PRT that Apogee
+
+213
+00:11:04,950 --> 00:11:08,550
+sells and we've got one right here -
+
+214
+00:11:06,960 --> 00:11:10,129
+real then you can do the size
+
+215
+00:11:08,549 --> 00:11:12,979
+comparisons
+
+216
+00:11:10,129 --> 00:11:16,789
+Appaji uses a shielded twisted-pair
+
+217
+00:11:12,980 --> 00:11:19,379
+cable this is also a four wire ohm
+
+218
+00:11:16,789 --> 00:11:22,589
+thermistor which we'll talk about in a
+
+219
+00:11:19,379 --> 00:11:24,689
+minute but they're for scale it's there
+
+220
+00:11:22,590 --> 00:11:27,300
+it is not on the screen right at my hand
+
+221
+00:11:24,690 --> 00:11:30,360
+by the way so here's the yellow bead
+
+222
+00:11:27,299 --> 00:11:32,879
+thermistor tiny yellow bead look at the
+
+223
+00:11:30,360 --> 00:11:35,190
+difference in size pretty close but the
+
+224
+00:11:32,879 --> 00:11:37,259
+yellow bead is smaller so if it's
+
+225
+00:11:35,190 --> 00:11:41,280
+smaller stays closer to the air
+
+226
+00:11:37,259 --> 00:11:44,039
+temperature so how this tests come out
+
+227
+00:11:41,279 --> 00:11:47,759
+after beating these things up bad giving
+
+228
+00:11:44,039 --> 00:11:51,139
+them 15 years one other key point before
+
+229
+00:11:47,759 --> 00:11:54,659
+I show you the test results a thermistor
+
+230
+00:11:51,139 --> 00:11:58,379
+because it has a big signal can be
+
+231
+00:11:54,659 --> 00:12:04,379
+measured with one single ended channel
+
+232
+00:11:58,379 --> 00:12:09,809
+one I'm going to put s e on here single
+
+233
+00:12:04,379 --> 00:12:11,610
+and a channel that's an inexpensive data
+
+234
+00:12:09,809 --> 00:12:15,779
+logger channel and we can do that
+
+235
+00:12:11,610 --> 00:12:19,769
+because it has a big signal CRTs have
+
+236
+00:12:15,779 --> 00:12:23,100
+such a tiny signal at the minimum we
+
+237
+00:12:19,769 --> 00:12:27,360
+need to take two channels here on the
+
+238
+00:12:23,100 --> 00:12:31,100
+data logger but for the best accuracy we
+
+239
+00:12:27,360 --> 00:12:33,690
+need to have two differential channels a
+
+240
+00:12:31,100 --> 00:12:36,600
+four wire system to get the best
+
+241
+00:12:33,690 --> 00:12:39,060
+accuracy not only is the sensor more
+
+242
+00:12:36,600 --> 00:12:42,300
+expensive but all those channels on the
+
+243
+00:12:39,059 --> 00:12:45,629
+data logger add cost to the system each
+
+244
+00:12:42,299 --> 00:12:48,120
+channel on a data logger can be several
+
+245
+00:12:45,629 --> 00:12:50,820
+hundred dollars and this takes four of
+
+246
+00:12:48,120 --> 00:12:53,340
+them compared to one up here
+
+247
+00:12:50,820 --> 00:12:56,879
+that's an overlooked cost in this thing
+
+248
+00:12:53,340 --> 00:13:04,530
+is the cost of these channels all right
+
+249
+00:12:56,879 --> 00:13:10,439
+now what do these do here is 96 cycles
+
+250
+00:13:04,529 --> 00:13:13,230
+we went from minus 20 to plus 60 C 96
+
+251
+00:13:10,440 --> 00:13:15,840
+times up and down the thermistors are
+
+252
+00:13:13,230 --> 00:13:18,269
+shown here in blue the yellow beads the
+
+253
+00:13:15,840 --> 00:13:21,540
+pr keys are shown here
+
+254
+00:13:18,269 --> 00:13:25,129
+in red see if we can get rid of that
+
+255
+00:13:21,539 --> 00:13:29,699
+there we go these are shown here in red
+
+256
+00:13:25,129 --> 00:13:32,490
+here's the data the thermistors had a
+
+257
+00:13:29,700 --> 00:13:35,970
+slightly bigger error in the beginning
+
+258
+00:13:32,490 --> 00:13:38,789
+and you can see over the course of the
+
+259
+00:13:35,970 --> 00:13:42,389
+tests the number of cycles they drifted
+
+260
+00:13:38,789 --> 00:13:44,969
+more these are offset errors right here
+
+261
+00:13:42,389 --> 00:13:46,830
+so we can take those out and say okay if
+
+262
+00:13:44,970 --> 00:13:47,670
+they all read perfectly what would this
+
+263
+00:13:46,830 --> 00:13:51,110
+graph look like
+
+264
+00:13:47,669 --> 00:13:53,579
+so we normalize this then the
+
+265
+00:13:51,110 --> 00:13:58,800
+thermistors are rock-solid they're
+
+266
+00:13:53,580 --> 00:14:02,220
+better than the Class A PRTs so for less
+
+267
+00:13:58,799 --> 00:14:04,588
+money you can get greater accuracy with
+
+268
+00:14:02,220 --> 00:14:07,290
+this yellow bead thermistor it doesn't
+
+269
+00:14:04,589 --> 00:14:10,800
+mean all thermistors are better just one
+
+270
+00:14:07,289 --> 00:14:14,189
+just this one that has the epoxy coating
+
+271
+00:14:10,799 --> 00:14:20,278
+on it which is the one that Apogee has
+
+272
+00:14:14,190 --> 00:14:22,380
+selected to sell so now let's take a
+
+273
+00:14:20,278 --> 00:14:25,289
+look remember I said there was better
+
+274
+00:14:22,379 --> 00:14:30,149
+PRTs now let's take a look at some
+
+275
+00:14:25,289 --> 00:14:34,799
+one-tenth din PRTs how did they do these
+
+276
+00:14:30,149 --> 00:14:39,690
+are higher quality even more cycles 10
+
+277
+00:14:34,799 --> 00:14:44,429
+months 584 cycles up and down up and
+
+278
+00:14:39,690 --> 00:14:45,899
+down the class the one-tenth din PRTs
+
+279
+00:14:44,429 --> 00:14:48,599
+were much better this is rock-solid
+
+280
+00:14:45,899 --> 00:14:51,659
+these are the two replicates right here
+
+281
+00:14:48,600 --> 00:14:54,089
+those were rock-solid in this death so
+
+282
+00:14:51,659 --> 00:14:58,649
+it's possible to get good PRTs you just
+
+283
+00:14:54,089 --> 00:15:02,370
+have to pay more for them so how did
+
+284
+00:14:58,649 --> 00:15:05,120
+these compared to the thermistors here's
+
+285
+00:15:02,370 --> 00:15:07,980
+12 replicas thermistors against those
+
+286
+00:15:05,120 --> 00:15:10,649
+584 cycles and we keep going we
+
+287
+00:15:07,980 --> 00:15:14,879
+normalize them to 0 here because there's
+
+288
+00:15:10,649 --> 00:15:17,639
+some offset and the errors are less than
+
+289
+00:15:14,879 --> 00:15:20,759
+five one hundredths of a degree C in
+
+290
+00:15:17,639 --> 00:15:23,699
+drift of these sensors over time so this
+
+291
+00:15:20,759 --> 00:15:25,708
+is a more comprehensive test that helped
+
+292
+00:15:23,700 --> 00:15:29,560
+convince us that these yellow bead
+
+293
+00:15:25,708 --> 00:15:32,078
+thermistors were just rock-solid so
+
+294
+00:15:29,559 --> 00:15:34,328
+let's look at an application how good do
+
+295
+00:15:32,078 --> 00:15:37,628
+you need air temperature and how would
+
+296
+00:15:34,328 --> 00:15:40,958
+these perform in a system in a severe
+
+297
+00:15:37,629 --> 00:15:43,420
+climate it turns out we're in Logan Utah
+
+298
+00:15:40,958 --> 00:15:46,239
+so we look out the window at mountains
+
+299
+00:15:43,419 --> 00:15:49,719
+that are 10,000 feet we're five little
+
+300
+00:15:46,240 --> 00:15:52,028
+under 5,000 feet in our Valley some of
+
+301
+00:15:49,720 --> 00:15:54,819
+those mountain climates have very severe
+
+302
+00:15:52,028 --> 00:15:57,028
+weather and one of the most famous for
+
+303
+00:15:54,818 --> 00:16:00,698
+severe weather is a place called Peter
+
+304
+00:15:57,028 --> 00:16:03,578
+sinks it's in a little ball high up in
+
+305
+00:16:00,698 --> 00:16:07,508
+the mountains cold air collects in this
+
+306
+00:16:03,578 --> 00:16:09,729
+sink it gets extremely cold and it hot
+
+307
+00:16:07,509 --> 00:16:11,399
+in the summer cold inthere how cold does
+
+308
+00:16:09,730 --> 00:16:16,509
+it get look at this
+
+309
+00:16:11,399 --> 00:16:19,328
+1985 rerecorded - sixty nine point three
+
+310
+00:16:16,509 --> 00:16:24,259
+Fahrenheit up there - fifty six point
+
+311
+00:16:19,328 --> 00:16:26,669
+three see this record was the lowest
+
+312
+00:16:24,259 --> 00:16:29,220
+temperature for Utah the record all-time
+
+313
+00:16:26,669 --> 00:16:31,019
+low and it was the second coldest
+
+314
+00:16:29,220 --> 00:16:32,519
+temperature ever recorded in the
+
+315
+00:16:31,019 --> 00:16:35,990
+continental United States
+
+316
+00:16:32,519 --> 00:16:40,470
+oh great second how what was the coldest
+
+317
+00:16:35,990 --> 00:16:44,460
+Rodgers pass in Montana sixty nine point
+
+318
+00:16:40,470 --> 00:16:46,950
+seven Fahrenheit this is 1954 so these
+
+319
+00:16:44,460 --> 00:16:51,120
+are long-term records look at the
+
+320
+00:16:46,950 --> 00:16:52,620
+difference here's our second-place minus
+
+321
+00:16:51,120 --> 00:16:55,139
+sixty nine point three
+
+322
+00:16:52,620 --> 00:16:57,179
+there's the all-time record sixty nine
+
+323
+00:16:55,139 --> 00:17:00,419
+point seven you tell me how much
+
+324
+00:16:57,179 --> 00:17:03,329
+accuracy of sensors matters and extreme
+
+325
+00:17:00,419 --> 00:17:05,430
+cases when that we got second place by
+
+326
+00:17:03,330 --> 00:17:09,350
+four tenths of a degree Fahrenheit
+
+327
+00:17:05,430 --> 00:17:11,910
+that's two tenths of a degree Celsius
+
+328
+00:17:09,349 --> 00:17:15,929
+measurements matter when you're going
+
+329
+00:17:11,910 --> 00:17:18,000
+for an all-time record so at this site
+
+330
+00:17:15,930 --> 00:17:20,789
+we have set up a weather station that
+
+331
+00:17:18,000 --> 00:17:23,430
+continuously records temperatures and
+
+332
+00:17:20,789 --> 00:17:25,710
+we've done test runs with the apogee
+
+333
+00:17:23,430 --> 00:17:28,640
+sensors up here to see how they do let's
+
+334
+00:17:25,710 --> 00:17:31,289
+take a look at that site here's the site
+
+335
+00:17:28,640 --> 00:17:33,240
+this is practically summer up there
+
+336
+00:17:31,289 --> 00:17:35,460
+right if the snow really does melt off
+
+337
+00:17:33,240 --> 00:17:43,289
+in this summer but it's it's a remote
+
+338
+00:17:35,460 --> 00:17:46,319
+steer site right here is a multi-plate
+
+339
+00:17:43,289 --> 00:17:50,789
+shield that they're commonly used on
+
+340
+00:17:46,319 --> 00:17:54,329
+these and then here is the apogee
+
+341
+00:17:50,789 --> 00:17:57,629
+aspirated shield so what we're going to
+
+342
+00:17:54,329 --> 00:17:59,759
+look at is just the shield now and we're
+
+343
+00:17:57,630 --> 00:18:01,890
+going to take a look right up the bottom
+
+344
+00:17:59,759 --> 00:18:04,079
+of this like we're laying on the snow
+
+345
+00:18:01,890 --> 00:18:06,300
+looking at the bottom this is what the
+
+346
+00:18:04,079 --> 00:18:10,109
+bottom looks like and this is the
+
+347
+00:18:06,299 --> 00:18:15,269
+sensors inside of here two yellow beads
+
+348
+00:18:10,109 --> 00:18:17,339
+and two PRTs both in the same shield so
+
+349
+00:18:15,269 --> 00:18:20,000
+we can do a rigorous replicate
+
+350
+00:18:17,339 --> 00:18:23,819
+comparison of accuracy and stability
+
+351
+00:18:20,000 --> 00:18:25,829
+over a long term in this because they're
+
+352
+00:18:23,819 --> 00:18:30,599
+both fan aspirated they should both be
+
+353
+00:18:25,829 --> 00:18:33,569
+accurate how'd they do well first of all
+
+354
+00:18:30,599 --> 00:18:35,759
+how severe was the weather this is a
+
+355
+00:18:33,569 --> 00:18:38,579
+year almost a year of weather
+
+356
+00:18:35,759 --> 00:18:41,160
+up and down day and night day and night
+
+357
+00:18:38,579 --> 00:18:43,859
+this has huge swings hot in the day cold
+
+358
+00:18:41,160 --> 00:18:45,810
+at night here's last winter is two
+
+359
+00:18:43,859 --> 00:18:48,000
+winters ago we didn't get the all-time
+
+360
+00:18:45,809 --> 00:18:51,299
+record right we got to almost to minus
+
+361
+00:18:48,000 --> 00:18:54,269
+40 degrees C remember the all-time
+
+362
+00:18:51,299 --> 00:18:56,460
+record is minus 56 but it still got cold
+
+363
+00:18:54,269 --> 00:18:58,619
+in up and down then finally summer came
+
+364
+00:18:56,460 --> 00:19:01,410
+and it's not many nights it doesn't
+
+365
+00:18:58,619 --> 00:19:04,709
+freeze up there that's it's it's a cold
+
+366
+00:19:01,410 --> 00:19:07,529
+place but these swings are enormous so
+
+367
+00:19:04,710 --> 00:19:11,880
+it's sensors should get a beating up
+
+368
+00:19:07,529 --> 00:19:14,879
+there what's the data look like here's
+
+369
+00:19:11,880 --> 00:19:16,740
+that same graph with cycling temperature
+
+370
+00:19:14,880 --> 00:19:20,370
+difference between the two replicas
+
+371
+00:19:16,740 --> 00:19:23,250
+thermistors look at the scale on this
+
+372
+00:19:20,369 --> 00:19:25,919
+plus a minus one see right on top of
+
+373
+00:19:23,250 --> 00:19:29,910
+each other here's the PRTs they're also
+
+374
+00:19:25,920 --> 00:19:32,940
+very good plus or minus zero now focus
+
+375
+00:19:29,910 --> 00:19:36,120
+in on this right here this little spike
+
+376
+00:19:32,940 --> 00:19:38,460
+has happened in the spring this is
+
+377
+00:19:36,119 --> 00:19:41,189
+classic when it happens when a speck of
+
+378
+00:19:38,460 --> 00:19:43,980
+moisture gets in there could have been
+
+379
+00:19:41,190 --> 00:19:46,799
+even an insect and it got on one of the
+
+380
+00:19:43,980 --> 00:19:48,420
+sensors and cooled it off and sources
+
+381
+00:19:46,799 --> 00:19:51,149
+the average of the two and it's only
+
+382
+00:19:48,420 --> 00:19:52,980
+it's less than 1 degree C but this is
+
+383
+00:19:51,150 --> 00:19:54,900
+not measurement error this is just
+
+384
+00:19:52,980 --> 00:19:57,990
+something momentarily getting in the
+
+385
+00:19:54,900 --> 00:19:59,670
+shield and cooling off the sensor you
+
+386
+00:19:57,990 --> 00:20:01,799
+can imagine if you put an ice cube on a
+
+387
+00:19:59,670 --> 00:20:04,380
+sensor for a fraction of a second you'd
+
+388
+00:20:01,799 --> 00:20:06,480
+easily get that even a wet sponge would
+
+389
+00:20:04,380 --> 00:20:08,520
+easily get them right to 0 so that we're
+
+390
+00:20:06,480 --> 00:20:10,440
+not worried about that what we're
+
+391
+00:20:08,519 --> 00:20:13,730
+worried about is this stability and
+
+392
+00:20:10,440 --> 00:20:16,830
+let's zoom in on this just a bit now
+
+393
+00:20:13,730 --> 00:20:19,170
+just those two graphs big even a
+
+394
+00:20:16,829 --> 00:20:23,039
+narrower scale plus a minus point 4
+
+395
+00:20:19,170 --> 00:20:25,470
+degrees C the the replica thermistors
+
+396
+00:20:23,039 --> 00:20:28,470
+are very close to each other the replica
+
+397
+00:20:25,470 --> 00:20:31,230
+PRPs are close to each other these are
+
+398
+00:20:28,470 --> 00:20:35,130
+differences from the mean of all four
+
+399
+00:20:31,230 --> 00:20:38,759
+sensors so nobody was off by more than
+
+400
+00:20:35,130 --> 00:20:42,810
+about 0.1 and they were rock-solid over
+
+401
+00:20:38,759 --> 00:20:45,420
+this down your period of this test the
+
+402
+00:20:42,809 --> 00:20:48,558
+thermistors were every bit as good as
+
+403
+00:20:45,420 --> 00:20:50,600
+the pr T's for stability
+
+404
+00:20:48,558 --> 00:20:54,109
+but there's one other concern remember
+
+405
+00:20:50,599 --> 00:20:56,628
+we talked about small is better and the
+
+406
+00:20:54,109 --> 00:20:59,839
+smaller the sensor the closer it stays
+
+407
+00:20:56,628 --> 00:21:04,898
+to air temperature these are smaller
+
+408
+00:20:59,839 --> 00:21:07,509
+than these it's a round end remember are
+
+409
+00:21:04,898 --> 00:21:11,628
+not in our Show and Tell here
+
+410
+00:21:07,509 --> 00:21:15,169
+that's not much difference in size but
+
+411
+00:21:11,628 --> 00:21:16,609
+if the sun is shining on these this big
+
+412
+00:21:15,169 --> 00:21:19,970
+stainless steel one's going to heat up
+
+413
+00:21:16,609 --> 00:21:23,178
+more than that tiny little feet but
+
+414
+00:21:19,970 --> 00:21:26,210
+these are also inside a aspirated shield
+
+415
+00:21:23,179 --> 00:21:28,999
+so the Sun shouldn't matter but what
+
+416
+00:21:26,210 --> 00:21:32,240
+happened the some reflected light
+
+417
+00:21:28,999 --> 00:21:37,038
+bounced off the snow and heated these up
+
+418
+00:21:32,240 --> 00:21:39,769
+inside the screen and here's what
+
+419
+00:21:37,038 --> 00:21:44,210
+happened compared to the mean of the
+
+420
+00:21:39,769 --> 00:21:46,759
+thermistors the PRTs heated up from
+
+421
+00:21:44,210 --> 00:21:49,100
+solar radiation wasn't big it was 0.1
+
+422
+00:21:46,759 --> 00:21:55,329
+degrees C but because they were bigger
+
+423
+00:21:49,099 --> 00:21:57,558
+they were less accurate so this is two
+
+424
+00:21:55,329 --> 00:22:00,339
+examples of the same thing the to
+
+425
+00:21:57,558 --> 00:22:05,329
+replicate PRTs both of them heated up
+
+426
+00:22:00,339 --> 00:22:08,209
+this is why we really recommend using
+
+427
+00:22:05,329 --> 00:22:10,519
+this Apogee yellow bead thermistor in
+
+428
+00:22:08,210 --> 00:22:13,909
+these applications even inside of an
+
+429
+00:22:10,519 --> 00:22:18,048
+aspirated shield where they're protected
+
+430
+00:22:13,909 --> 00:22:21,440
+it saves a lot of money if you really
+
+431
+00:22:18,048 --> 00:22:23,690
+need good accuracy put in two replicas
+
+432
+00:22:21,440 --> 00:22:25,580
+yellow beads and if they only read the
+
+433
+00:22:23,690 --> 00:22:28,369
+same you need to go out and check the
+
+434
+00:22:25,579 --> 00:22:31,038
+site you've got a problem so to end to
+
+435
+00:22:28,368 --> 00:22:34,849
+replica yellow beads is far less
+
+436
+00:22:31,038 --> 00:22:38,839
+expensive than one more expensive PRT
+
+437
+00:22:34,849 --> 00:22:41,859
+here's the setup right here so with that
+
+438
+00:22:38,839 --> 00:22:45,109
+we're going to conclude this session on
+
+439
+00:22:41,859 --> 00:22:47,269
+temperature sensors and we'll follow up
+
+440
+00:22:45,109 --> 00:22:49,668
+on temperature shields in another talk
+
+441
+00:22:47,269 --> 00:22:52,058
+thanks for listening we'll see you again
+
+442
+00:22:49,669 --> 00:22:52,059
+soon
+

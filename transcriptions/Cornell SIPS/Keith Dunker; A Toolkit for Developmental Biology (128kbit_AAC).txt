@@ -1,0 +1,1436 @@
+[SPEAKER_00]: This is a production of Cornell
+University.
+[SPEAKER_03]: Let me welcome you to the Plant Biology
+section seminar.
+[SPEAKER_03]: It is my great pleasure to introduce this
+morning's speaker, Professor Keith Dunker,
+[SPEAKER_03]: who has a remarkably distinguished
+academic background.
+[SPEAKER_03]: He got his undergraduate degree in
+chemistry from the University of
+[SPEAKER_03]: California, Berkeley, and he received his
+master's and PhD in physics and biophysics
+[SPEAKER_03]: from the University of Wisconsin,
+Madison.
+[SPEAKER_03]: He also did a postdoctoral period at Yale
+University in structural biology and
+[SPEAKER_03]: molecular biology.
+[SPEAKER_03]: Keith is currently professor of
+biochemistry and molecular biology in the
+[SPEAKER_03]: School of Medicine in Indiana University,
+and he also is the leader of the
+[SPEAKER_03]: Bioinformatics Group in the School of
+Informatics and Computing.
+[SPEAKER_03]: Amongst his many academic accolades,
+he is a highly cited researcher,
+[SPEAKER_03]: according to the Thomson-Retger Survey in
+biology and biochemistry.
+[SPEAKER_03]: To date, he has over 32,000 citations.
+[SPEAKER_03]: That's a pretty good record.
+[SPEAKER_03]: On a personal note, I will say that Keith
+and I met on the internet.
+[SPEAKER_03]: I got an email from Keith asking me about
+the evolution of multicellularity,
+[SPEAKER_03]: and we got engaged in a conversation about
+intrinsically disordered proteins and
+[SPEAKER_03]: alternative splicing, and lo and behold,
+the lights turned on, and we got into a
+[SPEAKER_03]: conversation about evolutionary biology.
+[SPEAKER_03]: That has continued over, I'm very pleased
+to say, a warm and deep friendship.
+[SPEAKER_03]: We've even published a few papers
+together.
+[SPEAKER_03]: So without further ado, let me introduce
+Professor Dunker.
+[SPEAKER_03]: I'll turn this off.
+[SPEAKER_00]: Well, first I want to thank Carl for
+inviting me here, and I want to thank you
+[SPEAKER_00]: guys for showing up, and I won't be upset
+if you leave halfway through, because you
+[SPEAKER_00]: have other better things to do.
+[SPEAKER_00]: So we got started on this study of
+disordered proteins.
+[SPEAKER_00]: The first thing we did really was to build
+a predictor of disordered proteins,
+[SPEAKER_00]: and this was done in collaboration with
+Zoran Obradovich, a professor of computer
+[SPEAKER_00]: science, and Pedro Romero, his student at
+the time.
+[SPEAKER_00]: And so this is just standard method for
+developing a predictor.
+[SPEAKER_00]: You collect some structured data.
+[SPEAKER_00]: We use order and structure
+interchangeably, and some disordered
+[SPEAKER_00]: protein data.
+[SPEAKER_00]: You figure out what's different between
+what features in the sequence are
+[SPEAKER_00]: different between structure and disorder,
+and four of the major ones we found were
+[SPEAKER_00]: the very different content of aromatic
+amino acids, a very different hydropathy
+[SPEAKER_00]: Structured proteins are much more
+hydrophobic than disordered proteins.
+[SPEAKER_00]: We found that disordered proteins tended
+to have a net charge, and if you have too
+[SPEAKER_00]: much of one charge, you'll get charge
+repulsion as the protein tends to fold,
+[SPEAKER_00]: so there'll be a resistance to folding by
+having a net charge.
+[SPEAKER_00]: And finally, sequence complexity,
+which is one measure is just simply the
+[SPEAKER_00]: number of different amino acids in a
+window another measure is Shannon's
+[SPEAKER_00]: entropy over some window, and structured
+proteins tend to have a greater variety of
+[SPEAKER_00]: amino acids, and they therefore have a
+higher sequence complexity, a higher value
+[SPEAKER_00]: for Shannon's entropy.
+[SPEAKER_00]: So these and other attributes can be used
+then to predict whether a region of
+[SPEAKER_00]: protein is structured or disordered.
+[SPEAKER_00]: So then, of course, you separate the
+training and testing sets.
+[SPEAKER_00]: You train the predictor, and we've done a
+whole bunch of different models,
+[SPEAKER_00]: neural networks, support vector machines,
+logistic regression, all kinds of
+[SPEAKER_00]: prediction models we've used through the
+expertise of my collaborators,
+[SPEAKER_00]: Zoran Abradovich and his student,
+Pedro Romero.
+[SPEAKER_00]: And then you train the predictor,
+and then you validate how well the
+[SPEAKER_00]: predictor does on sample that was on data
+that was not used for training,
+[SPEAKER_00]: and then you carry out testing.
+[SPEAKER_00]: The prediction on various biological
+problems.
+[SPEAKER_00]: And we get a balanced accuracy that is
+accuracy of prediction on structure and
+[SPEAKER_00]: disorder averaged of about 70 to 75%.
+[SPEAKER_00]: This strongly depends on the data set
+you're using, both to train the predictor
+[SPEAKER_00]: and to see how well you're doing with the
+predictor.
+[SPEAKER_00]: And then there's something called an area
+under the curve and somewhere around .85,
+[SPEAKER_00]: .86.
+[SPEAKER_00]: And this tells you about this idea.
+[SPEAKER_00]: If you plot the true positive prediction
+rate versus the false positive prediction
+[SPEAKER_00]: rate, you can get an estimate of how good
+your predictor is.
+[SPEAKER_00]: It's not very strong, but anyway,
+a perfect predictor would go up here to
+[SPEAKER_00]: one and go over there, and you would have
+an area under the curve of one,
+[SPEAKER_00]: but a random predictor would go from one
+corner to the other.
+[SPEAKER_00]: It would do a diagonal, and that would
+give you an area under the curve of about
+[SPEAKER_00]: .5.
+[SPEAKER_00]: And so a predictor of this one is not
+ours, but it was a very good one at the
+[SPEAKER_00]: time of about .89.
+[SPEAKER_00]: Ours tend to be around .8786, somewhere in
+here.
+[SPEAKER_00]: And by balanced accuracy, we mean percent
+correct on structure, percent correct on
+[SPEAKER_00]: disorder, divide them by two.
+[SPEAKER_00]: And the reason for using balanced accuracy
+is that most of the data sets that we were
+[SPEAKER_00]: using would have 80% of their residues
+would be in structure and 20% would be in
+[SPEAKER_00]: disorder.
+[SPEAKER_00]: So if you just use straight accuracy,
+you could predict structure all the time
+[SPEAKER_00]: and be 80% accurate, right?
+[SPEAKER_00]: So you need to balance it out because of
+the imbalanced data set.
+[SPEAKER_00]: Okay, so anyway, this is what we did to
+start our work on these proteins.
+[SPEAKER_00]: And to give you an idea of what the
+results look like, here's a protein P53,
+[SPEAKER_00]: which is very famous as a tumor
+suppressor.
+[SPEAKER_00]: It's a transcription factor, and we see up
+is predicted to be disordered,
+[SPEAKER_00]: down is predicted to be structured,
+and .5 is the boundary line.
+[SPEAKER_00]: And for this protein, what we see is a
+long prediction of structure.
+[SPEAKER_00]: And if we go to the protein data bank,
+we in fact can find this protein
+[SPEAKER_00]: structure.
+[SPEAKER_00]: Here it's bound to DNA, and this is in
+fact the DNA binding domain of P53.
+[SPEAKER_00]: And here it's bound to four different
+protein partners.
+[SPEAKER_00]: The structure remains basically the same
+when it's bound to all four partners,
+[SPEAKER_00]: and the different partners accommodate
+different regions of this structured
+[SPEAKER_00]: protein to which they bind.
+[SPEAKER_00]: Okay, and this is a common story that we
+can repeat for hundreds of proteins,
+[SPEAKER_00]: where we predict a long region of
+structure, and in the protein data bank,
+[SPEAKER_00]: we can find a globular protein or domain
+that fits our prediction of disorder
+[SPEAKER_00]: approximately, right?
+[SPEAKER_00]: We don't get it perfectly right at the
+ends, but it's not bad.
+[SPEAKER_00]: And then here we predict disorder,
+and what we often find in the protein data
+[SPEAKER_00]: bank is correlated with our prediction of
+disorder are segments that become
+[SPEAKER_00]: structured when they bind to different
+partners.
+[SPEAKER_00]: Now look at this same region of disorder
+prediction, and incidentally this disorder
+[SPEAKER_00]: prediction has been verified by NMR and
+other methods as being actually disordered
+[SPEAKER_00]: in this protein, but our predictions of
+disorder, we see that the same segment can
+[SPEAKER_00]: bind to different protein partners.
+[SPEAKER_00]: Okay, and we'll come back to this in a
+little while.
+[SPEAKER_00]: And so many of you have seen these high
+throughput studies of protein-protein
+[SPEAKER_00]: interaction networks, where there'll be
+some proteins that are called hubs,
+[SPEAKER_00]: and these hub proteins will bind to many,
+many, many different protein partners.
+[SPEAKER_00]: We've investigated a bunch of these hubs,
+and they're using disorder and its
+[SPEAKER_00]: flexibility to be able to bind to the
+multiple protein partners.
+[SPEAKER_00]: And hub proteins are almost universally
+using disorder to be able to bind to
+[SPEAKER_00]: multiple partners, and they do that using
+their flexibility, and we will come back
+[SPEAKER_00]: to that.
+[SPEAKER_00]: We'll come back to that point again.
+[SPEAKER_00]: So what got me started on all of the study
+of disorder proteins was a seminar that
+[SPEAKER_00]: I'm gonna tell you about, and the seminar
+dealt with the signaling pathway.
+[SPEAKER_00]: And so this is in fact, think of this as
+being from a T cell, an immune cell in
+[SPEAKER_00]: mammals and others, and you get some
+stimulation of a receptor on the T cell,
+[SPEAKER_00]: and what happens is calcium levels go up,
+calcium binds to a protein called
+[SPEAKER_00]: calmodulin over here, and calmodulin then
+interacts with a protein called
+[SPEAKER_00]: calcineurin, and that interaction
+activates calcineurin.
+[SPEAKER_00]: Calcineurin, it turns out, is a serine
+threonine phosphatase, so it clips a
+[SPEAKER_00]: phosphate off of another protein called
+N-fat, and N-fat stands for nuclear factor
+[SPEAKER_00]: of activated T cells.
+[SPEAKER_00]: When the phosphate gets clipped off,
+N-fat, the dephosphorylated form,
+[SPEAKER_00]: then goes into the nucleus, and it turns
+out that, we'll see in a minute,
+[SPEAKER_00]: that N-fat doesn't have one phosphate
+sitting here.
+[SPEAKER_00]: It actually has multiple phosphates in a
+long IDP tail, intrinsically disordered
+[SPEAKER_00]: protein tail, and it actually cleaves off
+multiple phosphates, then N-fat can go
+[SPEAKER_00]: into the nucleus, and there it turns on
+multiple genes.
+[SPEAKER_00]: N-fat itself, turns out, is a
+transcription factor, and the T cells
+[SPEAKER_00]: become activated, and then this protein is
+important medically because it leads to
+[SPEAKER_00]: things like transplant rejection.
+[SPEAKER_00]: If you have a transplanted heart or a
+transplanted kidney, it gets rejected by
+[SPEAKER_00]: the recognition by these T cells that it's
+a foreign tissue, and over here,
+[SPEAKER_00]: it points out that either cyclosporin A or
+FK506, they actually interact with their
+[SPEAKER_00]: binding proteins, and then they can
+interact with calcineurin and block its
+[SPEAKER_00]: activity that blocks this activity,
+that blocks the turning on of the various
+[SPEAKER_00]: genes that activate the T cell and then
+lead to tissue rejection.
+[SPEAKER_00]: The structure was being presented by
+Kissinger, who was the presenter of this
+[SPEAKER_00]: lecture.
+[SPEAKER_00]: Incidentally, I'm going to leave this talk
+here with my host, Karl Nicklaus,
+[SPEAKER_00]: and anybody who wants copies of this talk
+can contact him, and maybe it'll even be
+[SPEAKER_00]: put up on a website locally, and so if you
+want to pull references off of this talk,
+[SPEAKER_00]: which is full of references, feel free to
+do that.
+[SPEAKER_00]: But anyway, Kissinger was telling us about
+this protein.
+[SPEAKER_00]: Here is the crystal structure that he
+determined.
+[SPEAKER_00]: We see it has what's called an
+autoinhibitory domain, and what happens is
+[SPEAKER_00]: that what you don't see in the crystal
+structure is about a 95 residue region of
+[SPEAKER_00]: disorder, so-called by the
+crystallographers, when a region of a
+[SPEAKER_00]: crystal structure, when a region of the
+protein sequence is missing, and so this
+[SPEAKER_00]: is a region of missing electron density,
+and here indicates that in addition to
+[SPEAKER_00]: containing this autoinhibitory peptide or
+domain within the disordered region,
+[SPEAKER_00]: it has a second region, which is bound by
+calmodulin, and this calmodulin binding
+[SPEAKER_00]: somehow causes this autoinhibitory peptide
+to come off, and then the phosphatase
+[SPEAKER_00]: active site is turned on.
+[SPEAKER_00]: And here's our disorder prediction applied
+to the NFAT, and these are two different
+[SPEAKER_00]: predictors, and they give a lot of
+variation in their output, but they agree
+[SPEAKER_00]: generally that this region is structured,
+and in fact, like what we've already seen
+[SPEAKER_00]: for P53, this turns out to be a structured
+domain here, this turns out to be a
+[SPEAKER_00]: disordered connector, and this turns out
+to be a second structured domain here,
+[SPEAKER_00]: and these two both bind to the particular
+recognition sites on DNA, and then this
+[SPEAKER_00]: disorder tail and this disorder tail bind
+to a variety of protein partners to
+[SPEAKER_00]: activate this thing, so we see this is a
+DNA binding domain, a transactivation
+[SPEAKER_00]: domain, another transactivation domain
+here, and then here's the nuclear
+[SPEAKER_00]: localization signal.
+[SPEAKER_00]: And the blue site, the blue residues are
+arginines and lysines, and they are the
+[SPEAKER_00]: signal that is recognized by the kaotropin
+that carries it across the nuclear
+[SPEAKER_00]: membrane to get it into the nucleus,
+and then these red serines become
+[SPEAKER_00]: phosphorylated, and so you have the
+positively charged nuclear localization
+[SPEAKER_00]: signal and that's inactivated by adding
+the phosphates to these serines,
+[SPEAKER_00]: and that blocks the nuclear localization
+signal.
+[SPEAKER_00]: And so to summarize what we're finding
+here is that here are these two proteins,
+[SPEAKER_00]: calcineurin and NFAT.
+[SPEAKER_00]: These are two key proteins in the T cell
+regulatory pathway.
+[SPEAKER_00]: They both use IDP regions for signal
+transductions.
+[SPEAKER_00]: The IDP regions in both calcineurin and
+NFAT contain short signaling segments,
+[SPEAKER_00]: a nuclear localization signal in NFAT and
+an autoinhibitory domain and a calmodulin
+[SPEAKER_00]: binding site region in the calcineurin's
+region, and the NFAT's nuclear
+[SPEAKER_00]: localization signal is turned off by
+phosphorylation and is turned on by
+[SPEAKER_00]: dephosphorylation, so phosphorylation
+regulates the NFAT signaling, okay?
+[SPEAKER_00]: And so the NFAT's 140 residue IDP region,
+region of missing electron density,
+[SPEAKER_00]: it could be a folded domain that is
+connected by a flexible link or so it
+[SPEAKER_00]: wobbles, and so that's why you don't see
+it in the X-ray diffraction analysis.
+[SPEAKER_00]: Why?
+[SPEAKER_00]: Because if you, X-ray diffraction depends
+on having identical structures replicated
+[SPEAKER_00]: and getting the diffraction from those
+identical structures.
+[SPEAKER_00]: If it's wobbling or moving around,
+then the spacing changes and then it won't
+[SPEAKER_00]: show up.
+[SPEAKER_00]: In the final structure that you get.
+[SPEAKER_00]: So it could, the missing electron density
+could either be a wobbly domain or it
+[SPEAKER_00]: could be a long disordered region.
+[SPEAKER_00]: Well, calcium calmodulin surrounds a
+significant part, as we showed earlier,
+[SPEAKER_00]: and so that suggests it's a localized
+region that's moving around rather than a
+[SPEAKER_00]: large domain that's a structured domain
+and wobbling or moving around.
+[SPEAKER_00]: And then secondly,
+[SPEAKER_00]: the calcineurin molecule, if you add a
+little bit of trypsin, it gets rapidly
+[SPEAKER_00]: digested at multiple locations and that
+rapid digestion is inhibited or prevented
+[SPEAKER_00]: by binding calcium calmodulin.
+[SPEAKER_00]: So that suggests that the calcium
+calmodulin binding site is in fact
+[SPEAKER_00]: protecting it from digestion, which is
+further evidence that this is really a
+[SPEAKER_00]: long disordered region, not a wobbly
+domain.
+[SPEAKER_00]: And so finally, the key points about this,
+again, is that the IDP functions as an
+[SPEAKER_00]: on-off switch for calcineurin.
+[SPEAKER_00]: It's activated by calcium calmodulin and
+such activation is a well-known mechanism
+[SPEAKER_00]: for at least 40 different eukaryotic
+enzymes.
+[SPEAKER_00]: Eukaryotic proteins are regulated by this
+calcium calmodulin activation and the
+[SPEAKER_00]: calcineurin is a phosphatase.
+[SPEAKER_00]: And phosphorylation, dephosphorylation is
+one of the most widely used signaling
+[SPEAKER_00]: systems in eukaryotes.
+[SPEAKER_00]: It's been estimated that something like
+70% of eukaryotic proteins are regulated
+[SPEAKER_00]: by phosphorylation, dephosphorylation.
+[SPEAKER_00]: So here you have this calcineurin's IDP
+region that sits at the nexus or at the
+[SPEAKER_00]: intersection of two very, very important
+signaling pathways.
+[SPEAKER_00]: So when I attended this seminar where all
+of this was presented, it just seemed to
+[SPEAKER_00]: me, and in my own research, I encountered
+intrinsically disordered protein,
+[SPEAKER_00]: but it just seemed to me that this was an
+extremely important protein mechanism for
+[SPEAKER_00]: signaling and regulation, just because of
+these two examples.
+[SPEAKER_00]: Calcineurin, calmodulin was important,
+and then the NFAT, the disorder,
+[SPEAKER_00]: was important.
+[SPEAKER_00]: And so after the seminar, this was on
+November 15th, 1995, we asked three
+[SPEAKER_00]: questions.
+[SPEAKER_00]: Why don't they fold?
+[SPEAKER_00]: How common are they?
+[SPEAKER_00]: And what are the functions of IDPs and IDP
+regions?
+[SPEAKER_00]: And so from 97 to present, we published on
+the order of 200 papers that provide
+[SPEAKER_00]: answers to these questions.
+[SPEAKER_00]: And I'm not gonna go through all three of
+them, but I'm gonna focus on the
+[SPEAKER_00]: functional aspects of IDPs and IDP
+regions.
+[SPEAKER_00]: And so about 10 years after this seminar
+by Kissinger, we collected, we wanted to,
+[SPEAKER_00]: we studied a large number of individual
+examples of IDPs and how they regulate
+[SPEAKER_00]: protein function, and what we show you for
+calcineurin and what we show you for NFAT
+[SPEAKER_00]: are examples of that.
+[SPEAKER_00]: But we wanted to do something more global,
+so we collected the proteins from Swiss
+[SPEAKER_00]: protein, right?
+[SPEAKER_00]: There's hundreds of thousands,
+I think right now Swiss protein is up to
+[SPEAKER_00]: several hundred thousand proteins.
+[SPEAKER_00]: And each protein in the Swiss protein
+database has functional information about
+[SPEAKER_00]: that protein.
+[SPEAKER_00]: The other thing about the Swiss proteins
+is that they've actually been isolated and
+[SPEAKER_00]: studied in laboratories.
+[SPEAKER_00]: They're not guessed proteins from sequence
+analysis or from genetic analysis,
+[SPEAKER_00]: but they've actually been isolated and
+studied.
+[SPEAKER_00]: And so we collected function-specific
+sequences.
+[SPEAKER_00]: What do we mean by that?
+[SPEAKER_00]: Well, you could collect all the proteins
+that have been identified as kinases.
+[SPEAKER_00]: You could collect all the proteins that
+have been identified as being involved in
+[SPEAKER_00]: differentiation.
+[SPEAKER_00]: You could collect all the proteins
+involved in some other functional
+[SPEAKER_00]: analysis.
+[SPEAKER_00]: So we have function-specific sequences,
+and then for a function-specific set,
+[SPEAKER_00]: we collected a thousand matching but
+random function sets of sequences.
+[SPEAKER_00]: And by matching, we mean that for the
+function-specific set, this random
+[SPEAKER_00]: function set matches in terms of the size
+of the proteins and the same number of
+[SPEAKER_00]: chains in this matching random function
+set.
+[SPEAKER_00]: Then we predict disorder for each
+function-specific set and for the thousand
+[SPEAKER_00]: random function sets.
+[SPEAKER_00]: Now it turned out the random function set,
+if we use a measure like total predicted
+[SPEAKER_00]: disorder per chain, then we could compare
+the random function sets over the thousand
+[SPEAKER_00]: random function sets.
+[SPEAKER_00]: The variation really approximates a
+Gaussian.
+[SPEAKER_00]: And so given that, we can use the z-score
+in the function-specific sets to rank them
+[SPEAKER_00]: according to the amount of predicted
+disorder, for example.
+[SPEAKER_00]: And so then you use the standard z-score,
+the value of the set minus the average
+[SPEAKER_00]: divided by the standard deviation.
+[SPEAKER_00]: Okay?
+[SPEAKER_00]: And so we centered these Gaussians on
+zero, and negative values indicates more
+[SPEAKER_00]: structure, and positive values indicates
+more disorder.
+[SPEAKER_00]: And so let's look first at the high level.
+[SPEAKER_00]: The high level functions assume associated
+with less prediction of disorder.
+[SPEAKER_00]: And so for p-values, I'll get to that in a
+minute.
+[SPEAKER_00]: So the overall data at the time we did
+this gave us, for low prediction of
+[SPEAKER_00]: disorder, for p-values in .05,
+there were 302 such examples.
+[SPEAKER_00]: Intermediate values minus .05 to .95,
+there were 170.
+[SPEAKER_00]: And for high prediction of disorder,
+where the p-values were greater than .95,
+[SPEAKER_00]: this is not like a Gaussian, these
+individual areas.
+[SPEAKER_00]: I mean, they're bimodal, with lots of them
+predicted to be structured, lots of them
+[SPEAKER_00]: predicted to be disordered, and very few
+in the middle.
+[SPEAKER_00]: And relatively few in the middle,
+for a total of 710.
+[SPEAKER_00]: Again, here's the references for these
+papers if you want to go read the details.
+[SPEAKER_00]: And so if we look at the proteins with a
+low prediction of disorder, if we look at
+[SPEAKER_00]: the high level biological processes most
+strongly associated with low prediction of
+[SPEAKER_00]: disorder, then it's what?
+[SPEAKER_00]: Biosynthesis, biosynthesis, transport,
+transport, biosynthesis, catabolism,
+[SPEAKER_00]: glycolysis, biosynthesis.
+[SPEAKER_00]: Okay, these are either transmembrane
+proteins for electron transport or
+[SPEAKER_00]: membrane transport, or these are proteins
+associated with biosynthesis or
+[SPEAKER_00]: catabolism, or glycolysis.
+[SPEAKER_00]: These are all processes that are dominated
+by enzymes.
+[SPEAKER_00]: And we know enzymes are structured.
+[SPEAKER_00]: We crystallize them, we get their
+three-dimensional structures.
+[SPEAKER_00]: We know that catalysts, for example,
+have to have a site that can stabilize the
+[SPEAKER_00]: transition state of a chemical reaction.
+[SPEAKER_00]: There are theoretical arguments that these
+sites have to be structured to sort of
+[SPEAKER_00]: stabilize the transition state,
+and all of that has to be very precise,
+[SPEAKER_00]: and so you need structure to do that.
+[SPEAKER_00]: So all of this makes perfect sense.
+[SPEAKER_00]: And look at these z-scores.
+[SPEAKER_00]: These are really pretty astoundingly large
+z-scores.
+[SPEAKER_00]: On the other hand, if you look at the
+processes most strongly associated with
+[SPEAKER_00]: the high prediction of disorder,
+what are these biological processes?
+[SPEAKER_00]: These are processes dominated by signaling
+and regulation.
+[SPEAKER_00]: What?
+[SPEAKER_00]: Differentiation, transcription,
+transcription regulation, spermatogenesis,
+[SPEAKER_00]: DNA condensation, cell cycle regulation.
+[SPEAKER_00]: So these are the kinds of biological
+processes that have associated proteins
+[SPEAKER_00]: that are extremely rich in predicted
+disorder.
+[SPEAKER_00]: So I think this is pretty simple.
+[SPEAKER_00]: And so our current biochemistry training
+of our students focuses on the structured
+[SPEAKER_00]: protein set.
+[SPEAKER_00]: And it focuses on catalysis, it focuses on
+membrane transport.
+[SPEAKER_00]: Now, if you go farther down the list,
+you get to proteins that bind to small
+[SPEAKER_00]: molecules.
+[SPEAKER_00]: Things like myoglobin, hemoglobin,
+these kinds of proteins.
+[SPEAKER_00]: And this really makes up the predominance
+of what we teach our students about.
+[SPEAKER_00]: And so I meet people today.
+[SPEAKER_00]: We started this in 1995.
+[SPEAKER_00]: I meet many people today that still have
+never heard of disordered proteins.
+[SPEAKER_00]: They've never encountered disordered
+proteins because they're studying the
+[SPEAKER_00]: structured side of the protein universe.
+[SPEAKER_00]: On the other hand, these disordered
+proteins, you have sequence to IDP
+[SPEAKER_00]: ensemble, intrinsically disordered protein
+ensemble, to function.
+[SPEAKER_00]: And they're involved in signaling and
+regulation recognition control.
+[SPEAKER_00]: The example I started with, calcineurin,
+had a piece in a disordered region that
+[SPEAKER_00]: bound to the active site of the protein
+and shut it off.
+[SPEAKER_00]: It's regulating the enzymatic function of
+that.
+[SPEAKER_00]: If we, for example, take an enzyme that
+exists in prokaryotes and an enzyme that,
+[SPEAKER_00]: that same enzyme that has evolved and now
+in eukaryotes, what we typically find,
+[SPEAKER_00]: and we're in the process of looking at
+across whole genomes to study what I'm
+[SPEAKER_00]: going to tell you now, but we found
+specific examples where the prokaryotic
+[SPEAKER_00]: enzyme is an enzyme and it's there,
+right?
+[SPEAKER_00]: And it does its enzymatic function.
+[SPEAKER_00]: If you look at the same enzyme and
+eukaryotic eukaryotes, it will be,
+[SPEAKER_00]: the sequence will be longer and it will
+have extra disordered regions that have
+[SPEAKER_00]: been added that are regulating that
+enzymatic function when you get to the
+[SPEAKER_00]: eukaryote.
+[SPEAKER_00]: Okay?
+[SPEAKER_00]: And we've seen that story multiple times.
+[SPEAKER_00]: Okay.
+[SPEAKER_00]: So we wanted to study differentiation.
+[SPEAKER_00]: It came out at the top of our list.
+[SPEAKER_00]: Of a biological function associated with
+proteins that have a lot of predicted
+[SPEAKER_00]: disorder or much more predicted disorder
+than the proteins on the bottom of the
+[SPEAKER_00]: list that have much less.
+[SPEAKER_00]: And so we selected some proteins that are
+specifically involved with cellular
+[SPEAKER_00]: differentiation.
+[SPEAKER_00]: Okay.
+[SPEAKER_00]: One collection contains sites for binding
+to DNA and for regulating DNA.
+[SPEAKER_00]: Transcription these so-called
+transcription factors.
+[SPEAKER_00]: We found proteins that bind to other
+proteins and that are involved in
+[SPEAKER_00]: regulating partner function.
+[SPEAKER_00]: These would be proteins involved in
+pathways that are used for cellular
+[SPEAKER_00]: differentiation pathways, such as the wind
+pathway, such as the notch pathway and so
+[SPEAKER_00]: on.
+[SPEAKER_00]: IDPs contain sites for post-translation or
+modification.
+[SPEAKER_00]: And these often regulate one in two.
+[SPEAKER_00]: And finally, many proteins contain,
+especially from the multicellular
+[SPEAKER_00]: organism, they contain insertions and
+deletions or indels.
+[SPEAKER_00]: And these insertions and deletions arise
+from alternative splicing.
+[SPEAKER_00]: And these are commonly involved in
+modulating both one and two.
+[SPEAKER_00]: Either DNA or protein things.
+[SPEAKER_00]: All right?
+[SPEAKER_00]: And these can add or subtract segments
+that are involved in one, two,
+[SPEAKER_00]: or three.
+[SPEAKER_00]: Okay.
+[SPEAKER_00]: So let's talk very briefly about
+transcription factor.
+[SPEAKER_00]: A few eukaryotic transcription factors
+have been known since the 1980s to contain
+[SPEAKER_00]: IDP regions.
+[SPEAKER_00]: And bioinformatics studies, too,
+came out in 2006 showing that nearly all
+[SPEAKER_00]: eukaryotic transcription factors are
+really rich in disorder.
+[SPEAKER_00]: A typical eukaryotic transcription factor
+will have 70 percent of its amino acids in
+[SPEAKER_00]: disordered regions.
+[SPEAKER_00]: Okay.
+[SPEAKER_00]: And in particular, we're going to talk for
+a minute about hox transcription factors.
+[SPEAKER_00]: And these are found from jellyfish to
+mammals.
+[SPEAKER_00]: And they regulate gene expression for body
+plan development.
+Okay.
+[SPEAKER_00]: And so the one I'll talk about has been
+studied by one of my collaborators,
+[SPEAKER_00]: Sarah Bondos, who's at Texas A&M
+University.
+[SPEAKER_00]: And she studies a particular one called
+ultrabithorax.
+[SPEAKER_00]: And it's a fruit fly transcription factor.
+[SPEAKER_00]: And it regulates this central region of
+the fruit fly.
+[SPEAKER_00]: And has been long known.
+[SPEAKER_00]: So we know most of the known direct gene
+targets.
+[SPEAKER_00]: It regulates different genes in different
+tissues.
+[SPEAKER_00]: It can activate or repress the same gene
+in different tissues.
+[SPEAKER_00]: Okay.
+[SPEAKER_00]: And so here's a study.
+[SPEAKER_00]: UBX actually collaborates with another hox
+protein called extradonical.
+[SPEAKER_00]: And they collaborate to turn on certain
+genes.
+[SPEAKER_00]: The UBX and extradonical have counterparts
+in human, whose names I don't remember.
+[SPEAKER_00]: But this crystal structure was presented
+in this paper in 1999.
+[SPEAKER_00]: And what we see is you have helix in
+extradonical.
+[SPEAKER_00]: And a similar helix in UBX that bind,
+here you have a better view of it,
+[SPEAKER_00]: that bind into a major groove.
+[SPEAKER_00]: It has, beyond this helix, it has a chain
+which is disordered.
+[SPEAKER_00]: And it has this YPWM motif that brings a
+linkage between the extradonical and the
+[SPEAKER_00]: UBX.
+[SPEAKER_00]: And links them together.
+[SPEAKER_00]: And this IDP linker enables a
+collaboration for the gene regulation.
+[SPEAKER_00]: Now it turns out that this IDP region
+actually becomes structured at least over
+[SPEAKER_00]: part of its length when it binds into the
+minor groove.
+[SPEAKER_00]: And this has been observed over and over
+for gene regulatory transcription factors.
+[SPEAKER_00]: Where they'll have a binding site that
+will have a helix.
+[SPEAKER_00]: The helix will bind to the major groove.
+[SPEAKER_00]: They'll also have a piece of disorder.
+[SPEAKER_00]: And the piece of disorder will bind into
+the minor groove.
+[SPEAKER_00]: And this is really commonly observed.
+Okay.
+[SPEAKER_00]: Now it's interesting that the YPWM motif
+can actually self-bind back onto UBX when
+[SPEAKER_00]: it's not bound to extradonical.
+[SPEAKER_00]: And when it does that, the IDP loop is
+masking this binding helix.
+[SPEAKER_00]: And actually greatly reduces the UBX
+binding affinity for DNA.
+[SPEAKER_00]: So the IDP region, and this is a work by
+Sarah Bondos, acts as a regulator of DNA
+binding.
+[SPEAKER_00]: DNA binding of UBX.
+[SPEAKER_00]: Now here we've taken the UBX sequence,
+predicted disorder, and color coded that
+[SPEAKER_00]: disorder as red for disorder.
+[SPEAKER_00]: And you see these large red spots.
+[SPEAKER_00]: And the prediction of structure is not
+very strong.
+[SPEAKER_00]: And so blue and white is sort of
+intermediate between order and disorder.
+[SPEAKER_00]: And blue is indicating prediction of
+structure.
+[SPEAKER_00]: And this YPMW motif is one of the most
+strongly structured predicted regions of
+[SPEAKER_00]: structure in this protein.
+[SPEAKER_00]: And here is the prediction for this.
+[SPEAKER_00]: Now, so, yeah, okay.
+[SPEAKER_00]: So I won't go into this much further.
+[SPEAKER_00]: But the common eukaryotic transcription
+factor will have a region predicted to be
+[SPEAKER_00]: modestly structured.
+[SPEAKER_00]: That'll be DNA binding.
+[SPEAKER_00]: It'll have other regions that are
+predicted to be disordered.
+[SPEAKER_00]: And that will regulate the binding to the
+DNA.
+[SPEAKER_00]: I think that's not a bad summary.
+[SPEAKER_00]: Now, let's talk about protein-protein
+interactions for a minute.
+[SPEAKER_00]: Earlier I presented this as an example of
+what you get when you're when you predict
+[SPEAKER_00]: on a protein and you predict regions of
+disorder.
+[SPEAKER_00]: Now here I want to go into more detail
+about this little segment of disorder that
+[SPEAKER_00]: binds to four different proteins.
+[SPEAKER_00]: And so here's the sequence blown up a bit.
+[SPEAKER_00]: When it binds to this particular protein
+partner, sirtuin, it becomes a beta sheet.
+[SPEAKER_00]: When it binds to this region, when it
+binds to this other protein here,
+[SPEAKER_00]: it becomes an alpha helix.
+[SPEAKER_00]: When it binds to this protein,
+it becomes a random coil.
+[SPEAKER_00]: When it binds to this protein,
+it becomes a random coil with a completely
+[SPEAKER_00]: different trajectory.
+[SPEAKER_00]: And yet all of these map back to the same
+region of sequence.
+[SPEAKER_00]: And this emphasizes one of the strengths
+of disordered region in terms of signaling
+[SPEAKER_00]: and regulation.
+[SPEAKER_00]: Is that the same disordered region can
+adopt a different structure and thereby
+[SPEAKER_00]: bind to a different protein partner.
+[SPEAKER_00]: So it can change its shape to fit onto the
+surface of different structured protein
+[SPEAKER_00]: partners.
+Okay.
+[SPEAKER_00]: Now if we look in more detail at these
+interactions, we can look at the buried
+[SPEAKER_00]: surface area residue by residue in this
+interaction.
+[SPEAKER_00]: And if we look at this overall pattern of
+burial, you see the pattern is very
+[SPEAKER_00]: different.
+[SPEAKER_00]: You can see kind of a helical
+relationship.
+[SPEAKER_00]: You can see up and down, up and down as it
+as it goes around in the helix.
+[SPEAKER_00]: So certain residues become more buried.
+[SPEAKER_00]: Other residues are not buried at all.
+[SPEAKER_00]: They're projecting out into the surface.
+[SPEAKER_00]: Out into the solvent.
+[SPEAKER_00]: And so you see different burial patterns
+of when it's a helix, when it's a sheet,
+[SPEAKER_00]: when it's a random coil, when it's a
+random coil.
+[SPEAKER_00]: Now these two particular residues in this
+partner and this partner show abnormally
+[SPEAKER_00]: large buried surface areas.
+[SPEAKER_00]: This turns out to be a lysine in these two
+cases.
+[SPEAKER_00]: And this lysine, you know, has very little
+burial.
+[SPEAKER_00]: Not so much burial here.
+[SPEAKER_00]: So you see a large change in burial.
+[SPEAKER_00]: But this lysine becomes acetylated.
+[SPEAKER_00]: And so you remove the positive charge and
+that lysine becomes deeply buried in a
+[SPEAKER_00]: cavity on these two surfaces.
+[SPEAKER_00]: So as we go through the protein data bank
+and we look for the same piece of disorder
+[SPEAKER_00]: being bound to different partners,
+we often find that that's modulated by the
+[SPEAKER_00]: PTM switch with binding to one partner
+with a protein post-translational
+[SPEAKER_00]: modification binding to a different
+partner without that post-translational
+[SPEAKER_00]: modification.
+[SPEAKER_00]: So we often know that post-translational
+modifications occur in disordered regions.
+[SPEAKER_00]: We know that post-translational
+modifications can regulate which partner a
+[SPEAKER_00]: protein binds to.
+[SPEAKER_00]: And so that coupling of disorder and PTMs
+can act as a switch of binding to one
+[SPEAKER_00]: protein partner versus binding to another
+protein partner.
+[SPEAKER_00]: We also know DNA binding can be affected,
+DNA binding by IDPs where you have a
+[SPEAKER_00]: region of disorder that binds to minor
+groove that's also often modulated by
+[SPEAKER_00]: PTMs.
+[SPEAKER_00]: I won't show data, but there are some
+beautiful papers showing that as you
+[SPEAKER_00]: increase the amount of phosphorylation,
+the affinity almost acts as a real stat
+[SPEAKER_00]: from tight binding with no phosphorylation
+to the tight binding to DNA with no
+[SPEAKER_00]: phosphorylation to no binding at all with
+high phosphorylation.
+[SPEAKER_00]: And you can adjust that by the number of
+phosphorylations that you introduce into
+[SPEAKER_00]: the transcription factor.
+[SPEAKER_00]: Okay,
+[SPEAKER_00]: so this is more about the phosphorylation.
+[SPEAKER_00]: Collect eukaryotic proteins with known
+sites of serine or threonine or
+[SPEAKER_00]: phosphorylation P sites.
+[SPEAKER_00]: Collect the nonphosphorylated or NP sites
+from the same proteins.
+[SPEAKER_00]: Compare the context of the P sites versus
+the NP sites for the nonphosphorylated
+[SPEAKER_00]: sites.
+[SPEAKER_00]: And what we find is that phosphocytes
+really look like, those regions really
+[SPEAKER_00]: look like IDP regions.
+[SPEAKER_00]: And the ones that are not phosphorylated
+look like, much more often like structured
+[SPEAKER_00]: proteins.
+[SPEAKER_00]: And we published this paper in 04.
+[SPEAKER_00]: Then we got together with some computer
+scientists and did a followup site where
+[SPEAKER_00]: we made a much more complicated predictor.
+[SPEAKER_00]: And it turns out that if we look at homo
+sapiens, the sites that get phosphorylated
+[SPEAKER_00]: are strongly, are much more predicted to
+be disordered.
+[SPEAKER_00]: Okay, so here's around 0.5.
+[SPEAKER_00]: Very few phosphorylation sites in regions
+predicted to be structured.
+[SPEAKER_00]: That is, prediction value is less than
+0.5.
+[SPEAKER_00]: And most of the phosphorylation sites are
+in regions predicted to be structured.
+[SPEAKER_00]: If we look at the nonphosphorylated sites,
+they have disorder predictions all over.
+[SPEAKER_00]: But much of them are in the structure
+predicted range.
+[SPEAKER_00]: This is for homo sapiens.
+[SPEAKER_00]: We get a very, very similar result for
+thaliana, for arabidopsis.
+[SPEAKER_00]: We see the same sort of pattern and so on,
+and a similar but more complicated pattern
+[SPEAKER_00]: for phosphorylation sites on tyrosine in
+homo sapiens for nonphosphorylated versus
+[SPEAKER_00]: phosphorylated.
+[SPEAKER_00]: So not quite as dramatic.
+[SPEAKER_00]: Now, it turns out that many proteins,
+how am I doing for time?
+[SPEAKER_00]: What time am I supposed to end?
+[SPEAKER_00]: 11.15?
+[SPEAKER_00]: Pardon?
+[SPEAKER_00]: Yeah, okay.
+[SPEAKER_00]: I'll probably go over a few minutes,
+but too bad.
+[SPEAKER_00]: And if you have to leave, go ahead.
+[SPEAKER_00]: Many proteins have clusters of PTMs.
+[SPEAKER_00]: And what's really interesting about these
+clusters of post-translational
+[SPEAKER_00]: modification is that different patterns of
+post-translational modification will give
+[SPEAKER_00]: different downstream signaling
+consequences.
+[SPEAKER_00]: And so David Alice has called this a
+histone code because the histone tails
+[SPEAKER_00]: have different sets of PTMs leading to
+different downstream consequences.
+[SPEAKER_00]: Yang from McGill has called this a
+molecular barcode.
+[SPEAKER_00]: These folks have called it a PTM code.
+[SPEAKER_00]: These guys called it combinatorial PTMs.
+[SPEAKER_00]: But the point is that this has been
+observed for lots of different proteins.
+[SPEAKER_00]: And we, meaning Petr Rejovich and his
+student, Vikas Peshavar, studied these PTM
+[SPEAKER_00]: clusters in large numbers of proteins,
+and they did bioinformatics extensions
+[SPEAKER_00]: that suggest that PTMs and PTM clusters in
+IDP regions are really common over
+[SPEAKER_00]: hundreds of proteins.
+[SPEAKER_00]: And that PTM codes are almost certainly
+very widely used for modulating cell
+[SPEAKER_00]: signaling.
+[SPEAKER_00]: And so these PTMs, these multiple PTMs,
+very high fraction of the time,
+[SPEAKER_00]: occur in IDP regions, and they're used
+broadly for signaling for regular
+[SPEAKER_00]: regulating signals.
+[SPEAKER_00]: Okay, now the third leg of this whole
+access is that alternative splicing of
+[SPEAKER_00]: pre-messenger RNA will give you two
+different proteins.
+[SPEAKER_00]: One with extra piece of protein that came
+about from alternatively spliced messenger
+[SPEAKER_00]: RNA.
+[SPEAKER_00]: And these pieces of protein that are
+actually added or taken away by means of
+[SPEAKER_00]: alternative splicing, they're mostly
+regions of disorder.
+[SPEAKER_00]: And here's data supporting this.
+[SPEAKER_00]: We had experimentally determined 46
+proteins with 75 alternatively spliced
+[SPEAKER_00]: regions.
+[SPEAKER_00]: And so then these are the alternatively
+spliced data sets and then here is our
+[SPEAKER_00]: predictions on this data set.
+[SPEAKER_00]: So this is experiment in terms of zero to
+20% predicted disorder.
+[SPEAKER_00]: Here's the frequency of occurrence.
+[SPEAKER_00]: This is the data.
+[SPEAKER_00]: This is the prediction, data prediction,
+20 to 40, data prediction, 40 to 60,
+[SPEAKER_00]: data prediction, 60 to 80, data
+prediction, 80 to 100%.
+[SPEAKER_00]: And then that's only 46 proteins,
+75 alternatively spliced regions.
+[SPEAKER_00]: Here we collected data from Swiss protein,
+558 proteins, 1,200 alternatively spliced
+[SPEAKER_00]: regions.
+[SPEAKER_00]: That's prediction, prediction,
+prediction, prediction, prediction,
+[SPEAKER_00]: very much like a prediction on the
+experiment.
+[SPEAKER_00]: Then here is this was in the published
+paper.
+[SPEAKER_00]: Then later we went back and got 15,000
+with Swiss protein became enlarged,
+[SPEAKER_00]: 32,000 alternatively spliced regions.
+[SPEAKER_00]: Here's our predictions for those.
+[SPEAKER_00]: These data suggest and the statistics
+indicate that we can reject the null
+[SPEAKER_00]: hypothesis with certainty.
+[SPEAKER_00]: The null hypothesis being that it's
+equally likely for an alternative spliced
+[SPEAKER_00]: region to code for structure and disorder
+and we can strongly reject that null
+[SPEAKER_00]: hypothesis.
+[SPEAKER_00]: And these data strongly suggest that
+alternatively spliced regions of messenger
+[SPEAKER_00]: RNA are strongly coding for disordered
+regions of proteins.
+[SPEAKER_00]: Okay, now what's the implication of that?
+[SPEAKER_00]: If we take a protein like BRCA1,
+it has a structured domain here.
+[SPEAKER_00]: A structured domain is there.
+[SPEAKER_00]: Here's color coded prediction of disorder,
+prediction of structure, prediction of
+[SPEAKER_00]: disorder.
+[SPEAKER_00]: Now pull down experimental experiments
+show that this disordered region binds to
+[SPEAKER_00]: lots of different proteins.
+[SPEAKER_00]: So here we have BRCA1 at the center of all
+of these interactions including DNA in
+[SPEAKER_00]: here somewhere.
+[SPEAKER_00]: Here's, oh, DNA is yellow so there's a DNA
+binding, DNA binding.
+[SPEAKER_00]: Both the DNA and proteins, here's what the
+network, so it's obviously a hub with all
+[SPEAKER_00]: these partners.
+[SPEAKER_00]: And this is a small sampling.
+[SPEAKER_00]: It binds to hundreds of more proteins.
+[SPEAKER_00]: And then if we have alternative splicing,
+it splices out this segment, the network
+[SPEAKER_00]: gets changed.
+[SPEAKER_00]: Here's another splice variant that is
+known to exist in cells.
+[SPEAKER_00]: And so here's the thing.
+[SPEAKER_00]: And so people in this area suggest that
+alternative splicing leads to a rewiring
+[SPEAKER_00]: of protein interaction networks.
+[SPEAKER_00]: It leads to a rewiring of protein DNA
+interaction networks, okay.
+[SPEAKER_00]: So this leads us to the concept that IDP
+signaling and regulation is tuned or
+[SPEAKER_00]: altered by both alternative splicing and
+by post-translational modification.
+[SPEAKER_00]: So the PTMs and especially PTM clusters
+are typically located in IDP regions and
+[SPEAKER_00]: that IDPs, alternative splicing,
+and PTMs work together to increase
+[SPEAKER_00]: signaling complexity.
+[SPEAKER_00]: And this is especially true in proteins
+associated with differentiation.
+[SPEAKER_00]: So to look at this on a high level,
+we can take complex multicellular
+[SPEAKER_00]: organisms who require cell adhesion.
+[SPEAKER_00]: Here's some proteins involved in cell
+adhesion in metazoans, communication
+[SPEAKER_00]: between cells.
+[SPEAKER_00]: Here's some nuclear hormone receptors are
+involved in this communication.
+[SPEAKER_00]: Developmental programs went a notch.
+[SPEAKER_00]: Regulation of development programs,
+say the Hawke's transcription factors.
+[SPEAKER_00]: And then getting cell-specific
+biochemistry physiology, BRCA1 would be an
+[SPEAKER_00]: example of that.
+[SPEAKER_00]: So then we, and it turns out that all of
+these proteins have been shown to use
+[SPEAKER_00]: IDPs.
+[SPEAKER_00]: And then the question is, what about
+alternative splicing?
+[SPEAKER_00]: Do they, adding complexity to these guys?
+[SPEAKER_00]: So we can do a simple search.
+[SPEAKER_00]: So on PubMed, and so here's cadherin,
+we get 28,000 hits.
+[SPEAKER_00]: Here's cadherin plus PTMs, 3,000 hits.
+[SPEAKER_00]: Cadherin plus alternative splicing,
+177 hits.
+[SPEAKER_00]: And virtually all of these are happening
+in the disordered regions of cadherin.
+[SPEAKER_00]: And then 22 contain alternative splicing
+plus PTMs.
+[SPEAKER_00]: On cadherin.
+[SPEAKER_00]: And so here you go down the list for these
+developmentally important proteins or
+[SPEAKER_00]: processes, and we get a similar pattern.
+[SPEAKER_00]: And so for proteins that are involved in
+differentiation, they have this
+[SPEAKER_00]: combination of disorder,
+post-translational modification,
+[SPEAKER_00]: and alternative splicing.
+[SPEAKER_00]: So IDPs play a key role in the functions
+important for evolution of multicellular
+[SPEAKER_00]: organisms, namely adhesion, communication,
+development, regulation of development,
+[SPEAKER_00]: and cell-specific biochemistry.
+[SPEAKER_00]: Now, what do we need to do next?
+[SPEAKER_00]: We have bits and pieces of this toolkit
+have been shown to be important for
+[SPEAKER_00]: specific regulatory and development
+proteins at specific points in space and
+[SPEAKER_00]: time.
+[SPEAKER_00]: What this field needs, I think,
+is comprehensive study of many
+[SPEAKER_00]: developmental and or regulatory proteins
+to determine the extent to which IDPs and
+[SPEAKER_00]: IDP regions, post-translational
+modifications, and alternative splicing
+[SPEAKER_00]: work together to specifically affect
+phenotype and or developmental steps to
+[SPEAKER_00]: determine how common such collaborations
+are among these proteins.
+[SPEAKER_00]: Now, Carl and I have some papers on
+specific proteins showing that all three
+[SPEAKER_00]: of these three things are active in how
+these proteins carry out their regulatory
+[SPEAKER_00]: functions related to differentiation.
+[SPEAKER_00]: And there are additional proteins,
+like we did when we began the lecture by
+[SPEAKER_00]: talking about NFAT, and we showed how an
+IDP region in NFAT contains a short
+[SPEAKER_00]: signaling segment, namely a nuclear
+localization signal.
+[SPEAKER_00]: We showed how this nuclear localization
+signal is turned off by phosphorylation
+[SPEAKER_00]: and turned on by dephosphorylation.
+[SPEAKER_00]: So it's regulated by PTMs.
+[SPEAKER_00]: We have no information about alternative
+splicing, so we did a simple search.
+[SPEAKER_00]: We searched PubMed for NFAT and
+alternative splicing, and many papers were
+[SPEAKER_00]: found showing that different alternative
+splicing isoforms led to differentially
+[SPEAKER_00]: modulation of which genes got turned on
+and off in which tissues, and that these
+[SPEAKER_00]: play also a role in development,
+not just in T-cell regulation.
+[SPEAKER_00]: And thus, NFAT utilizes the IDP
+alternative splicing PTM toolkit.
+[SPEAKER_00]: It's all there.
+[SPEAKER_00]: And so what I'm suggesting is that we need
+to look at this for many, many proteins
+[SPEAKER_00]: that are associated with signaling,
+regulation, development.
+[SPEAKER_00]: And the prediction is we'll be finding
+this combined use all over the place.
+[SPEAKER_00]: But it's a prediction.
+[SPEAKER_00]: We haven't shown this yet.
+[SPEAKER_00]: Thank you very much.
+[SPEAKER_00]: And I'm putting my email up here for a
+reason.
+[SPEAKER_00]: If you start to do any of these searches
+or if you want help with your particular
+[SPEAKER_00]: systems where you think this is certainly
+not true, let's check it out.
+[SPEAKER_00]: And it would be great if we disproved it
+for some systems.
+[SPEAKER_00]: That's fine.
+[SPEAKER_00]: But if we looked into it, we might find
+it's where you guys hadn't thought about
+[SPEAKER_00]: it, where you guys don't expect it,
+where you guys don't believe it.
+[SPEAKER_00]: And I would especially like to look at
+some of those systems where you guys don't
+[SPEAKER_00]: believe it.
+[SPEAKER_00]: And thank you very much.
+[SPEAKER_00]: Thank you.
+[SPEAKER_00]: And I'm going to sit down because I have
+knees that don't like to keep me up on
+[SPEAKER_00]: hard floors.
+[SPEAKER_00]: So if you don't mind.
+[SPEAKER_00]: Oh, don't pull it out from under me,
+please.
+[SPEAKER_04]: There's a question right over here.
+[SPEAKER_04]: Yes.
+[SPEAKER_04]: So the description of how these
+unstructured regions interact in terms of
+[SPEAKER_04]: phosphorylation and alternative splicing
+makes an awful lot of sense from sort of a
+[SPEAKER_04]: structural bias.
+[SPEAKER_04]: But the first group that you talked about
+where it seemed that there were disordered
+[SPEAKER_04]: regions that weren't involved in
+phosphorylation or alternative splicing,
+[SPEAKER_04]: the last bit you said there sort of makes
+me think, well, maybe we're not those
+[SPEAKER_04]: really are phosphorylated or alternative
+splicing.
+[SPEAKER_04]: But if they're not, it raises a really
+interesting problem from a biological
+[SPEAKER_04]: perspective.
+[SPEAKER_04]: Because if we have transcription factors
+where there's a common structure of the
+[SPEAKER_04]: transcription factor that binds to the
+same sequences of DNA to regulate several
+[SPEAKER_04]: proteins, or you have one protein that's
+got disordered regions that binds to a
+[SPEAKER_04]: whole bunch of different sequences in
+order to regulate those same proteins,
+[SPEAKER_04]: you have two very different evolutionary
+motivations for, have you thought about
+[SPEAKER_04]: that?
+[SPEAKER_04]: Or have you looked at the relative
+frequency of those two different
+[SPEAKER_04]: approaches to transcription factor
+binding?
+[SPEAKER_00]: We haven't done any kind of comparative
+work on that.
+[SPEAKER_00]: I think these are really important
+questions.
+[SPEAKER_00]: I mean, all of us are limited by time and
+money.
+[SPEAKER_00]: And so there's so many questions we
+haven't that have occurred to us that we
+[SPEAKER_00]: would like to look at.
+[SPEAKER_00]: And then we just do the ones we can with
+what we have.
+[SPEAKER_00]: And I think this last example with this
+n-fat protein, we've had this,
+[SPEAKER_00]: to our knowledge, that this n-fat protein
+is very important in this immune system
+[SPEAKER_00]: signaling for a long time.
+[SPEAKER_00]: In fact, there's four different relatives
+of n-fat.
+[SPEAKER_00]: And I haven't looked into the four genes
+in detail and so on.
+[SPEAKER_00]: We've just chosen one that's clearly
+important.
+[SPEAKER_00]: But in the various diagrams you see,
+it's got n-fat as this little structured
+[SPEAKER_00]: protein.
+[SPEAKER_00]: The DNA binding parts bound to DNA have
+been crystallized and you can see their
+[SPEAKER_00]: structures.
+[SPEAKER_00]: Here's a domain, here's a domain,
+here's a long linker between the two.
+[SPEAKER_00]: It's almost certainly unstructured when
+it's not bound to DNA.
+[SPEAKER_00]: And it becomes structured when it binds to
+DNA in the minor groove, just like these
+[SPEAKER_00]: single chain things usually look.
+[SPEAKER_00]: And then it's got all this disorder stuff
+hanging out on the side.
+[SPEAKER_00]: And we knew that it has this little
+binding region to calcineurin.
+[SPEAKER_00]: And it's got like 12 or 13 sites of
+phosphorylation, a few of which were shown
+[SPEAKER_00]: that blocked the nuclear localization
+signal.
+[SPEAKER_00]: Now, when this one piece binds to
+calcineurin, how does this one enzyme with
+[SPEAKER_00]: one little piece bind take off 12
+different phosphates?
+[SPEAKER_00]: Well, it's in a disordered region.
+[SPEAKER_00]: So I imagine it's flopping around,
+hits one, hits another, hits another.
+[SPEAKER_00]: But I don't think anybody's ever proposed
+that, but it's obvious when you look at
+[SPEAKER_00]: the disorder prediction of what might be
+going on.
+[SPEAKER_00]: And this idea that it also had an
+alternative splicing, you know,
+[SPEAKER_00]: we asked that question, and yeah,
+sure it does.
+[SPEAKER_00]: It has it in the literature.
+[SPEAKER_00]: So I think this simple idea can take
+various experimentalists a little ways to
+[SPEAKER_00]: figuring out new experiments to try in
+their respective systems.
+[SPEAKER_00]: And that's what I'm hoping will happen
+even if you want to disprove it,
+[SPEAKER_00]: even if you want to show that we're wrong.
+[SPEAKER_00]: Because I think that's the way science
+progresses.
+[SPEAKER_00]: You hear about something and you say,
+oh, this certainly can't be true.
+[SPEAKER_00]: And then we find out if it's not true in
+your system.
+[SPEAKER_00]: But we might find that it is true in some
+of your systems that you're studying.
+[SPEAKER_00]: And that would please me greatly.
+[SPEAKER_00]: In fact, I even heard a story today where
+I gave a lecture.
+[SPEAKER_00]: Somebody responded to my lecture,
+and they tried something, and they said it
+[SPEAKER_00]: really helped them with their research.
+[SPEAKER_00]: So I'm very pleased to hear stories like
+that.
+[SPEAKER_00]: I've also heard stories the other way,
+too.
+[SPEAKER_00]: Yes?
+[SPEAKER_02]: I'm curious if your protein that
+determines how much disorder there is,
+[SPEAKER_02]: is sensitive to tell if it's a pH or a
+calcium on the amount of disorder.
+[SPEAKER_00]: Yeah, no, tau, we predict it to be mostly
+disorder.
+[SPEAKER_00]: Are you talking about the tau protein
+itself, or which protein?
+[SPEAKER_02]: The program that you use to determine
+disorder.
+[SPEAKER_02]: Yeah.
+[SPEAKER_00]: We haven't tried.
+[SPEAKER_00]: I mean, we understand this can be
+important.
+[SPEAKER_00]: And there are pH-sensing proteins that may
+change their structure in response to pH.
+[SPEAKER_00]: But we haven't played with that.
+[SPEAKER_00]: Again, you pick what you can do.
+[SPEAKER_00]: But I think it's an important question.
+Pardon?
+[SPEAKER_00]: Yeah.
+Yeah.
+[SPEAKER_00]: Yes?
+[SPEAKER_01]: When you have a disorder domain in the
+protein that's interacting with another
+[SPEAKER_01]: protein, does that interaction site in
+that other protein often assume a
+[SPEAKER_01]: disordered state, or is it often ordered?
+[SPEAKER_00]: I don't really have any statistical data.
+[SPEAKER_00]: We know of many examples where two
+disordered regions get together and form
+[SPEAKER_00]: structure.
+[SPEAKER_00]: I mean, a common well-known example are
+leucine zippers.
+[SPEAKER_00]: Each leucine zipper prior to their
+interaction is disordered.
+[SPEAKER_00]: If you have a disordered region that you
+think is interacting or might be
+[SPEAKER_00]: interacting with another disordered
+region, there's a program called coils,
+[SPEAKER_00]: which predicts local regions that can form
+leucine zippers.
+[SPEAKER_00]: I would suggest that you use that program
+to see if your disordered region might be
+[SPEAKER_00]: interacting with another disordered region
+to form a coil.
+[SPEAKER_00]: Peter Wright has found two disordered
+regions that are very long that interact
+[SPEAKER_00]: with each other.
+[SPEAKER_00]: One of them he studied by NMR
+experimentally is a molten globule,
+[SPEAKER_00]: whatever that is.
+[SPEAKER_00]: It means basically a collapsed region of
+disorder with secondary structure,
+[SPEAKER_00]: but it's not stable.
+[SPEAKER_00]: Then he found another long disordered
+region that he studied by NMR.
+[SPEAKER_00]: It was completely unfolded, completely
+random coil.
+[SPEAKER_00]: When these two guys got together,
+it formed a six helix bundle that became a
+[SPEAKER_00]: beautifully structured six helix bundle
+with three helices from one region of
+[SPEAKER_00]: disorder and three helices from another
+region of disorder.
+[SPEAKER_00]: It looked like a structured protein that
+was just built by two other pieces of
+[SPEAKER_00]: protein that came together.
+[SPEAKER_00]: There's a paper a very long time ago by a
+woman named Maria Taseko where she took a
+[SPEAKER_00]: protein and I think it was, gee,
+I can't remember the protein right now,
+[SPEAKER_00]: but it's a well studied structured protein
+that you could clip it in one place with
+[SPEAKER_00]: one proteolytic enzyme.
+[SPEAKER_00]: You could clip it in another place with
+another proteolytic enzyme.
+[SPEAKER_00]: If you took these two pieces apart once
+they were clipped, if you predicted on
+[SPEAKER_00]: this protein both of these things,
+in fact we did that later, and both of
+[SPEAKER_00]: these are predicted to be structured.
+[SPEAKER_00]: They're from a well structured protein,
+but the individual halves, roughly halves,
+[SPEAKER_00]: were by NMR unstructured proteins.
+[SPEAKER_00]: You put them back together and they
+refolded into a structured protein.
+[SPEAKER_00]: Our predictors aren't going to be perfect.
+[SPEAKER_00]: For a structured protein to form structure
+it has to have the fitting of the various
+[SPEAKER_00]: parts.
+[SPEAKER_00]: If you take out a piece of structure from
+a structured protein and it doesn't have
+[SPEAKER_00]: its complement it may end up to be
+disordered even though prediction would
+[SPEAKER_00]: say it's well structured.
+[SPEAKER_00]: But anyway, did I get close to answering
+your question?
+[SPEAKER_00]: All kinds of things happen when you
+combine disorder with other disorder.
+[SPEAKER_00]: Yes?
+[SPEAKER_01]: How often do you see IEPs being conserved?
+[SPEAKER_00]: Being what?
+[SPEAKER_04]: Being conserved.
+[SPEAKER_00]: Well, I'll give you a different answer to
+your question, right?
+[SPEAKER_00]: There's this database called PFAM.
+[SPEAKER_00]: You know about PFAM?
+[SPEAKER_00]: Okay.
+[SPEAKER_00]: Well, so PFAM was found, was developed by
+finding sequences where you had high
+[SPEAKER_00]: sequence alignment.
+[SPEAKER_00]: And so you have a sequence alignment
+that's conserved.
+[SPEAKER_00]: And so this PFAM domain, you can find the
+same PFAM in different contexts,
+[SPEAKER_00]: okay?
+[SPEAKER_00]: So we would think of this as a structured
+domain that gets used in multiple
+[SPEAKER_00]: contexts.
+[SPEAKER_00]: Well, when we applied our disorder
+predictor to PFAM, some PFAMs were
+[SPEAKER_00]: predicted to be entirely disordered.
+[SPEAKER_00]: So this would be example of a conserved
+sequence which you can find in multiple
+[SPEAKER_00]: places.
+[SPEAKER_00]: Now, another group in Toronto,
+a guy named Philip Kim and his
+[SPEAKER_00]: collaborators, and there's a woman there,
+Julie Foreman Kay, who's been studying
+[SPEAKER_00]: this disorder proteins for a long time.
+[SPEAKER_00]: She's really one of the leaders in this
+field.
+[SPEAKER_00]: But Philip Kim did a proteome-wide study
+to determine to try to find conserved
+[SPEAKER_00]: regions of disorder.
+[SPEAKER_00]: And he found lots of them.
+[SPEAKER_00]: He called it constrained disorder.
+[SPEAKER_00]: Regions of disorder where the sequences
+were conserved.
+[SPEAKER_00]: In our initial study of whether sequences
+were conserved in disordered proteins,
+[SPEAKER_00]: we took a bunch of structured proteins
+that had disordered tails or disordered
+[SPEAKER_00]: loops and built the families.
+[SPEAKER_00]: And in general, the regions of disorder
+had much less sequence conservation than
+[SPEAKER_00]: the structured parts of the same proteins.
+[SPEAKER_00]: But we found a couple examples where the
+disordered regions had as much sequence
+[SPEAKER_00]: conservation as the structured regions.
+[SPEAKER_00]: So it can go that way, although that seems
+to be more rare, rare.
+[SPEAKER_03]: I think in the interest of Keith's need
+and in the interest of his voice and in
+[SPEAKER_03]: the interest of our schedule for lunch,
+I'd like to ask you to thank him again.
+[SPEAKER_00]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_00]: Thank you.
+[SPEAKER_00]: Thank you.
+Thank you.

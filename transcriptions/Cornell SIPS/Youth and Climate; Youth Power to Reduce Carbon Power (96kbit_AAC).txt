@@ -1,0 +1,463 @@
+[SPEAKER_01]: Thanks so much, James.
+[SPEAKER_01]: I'm Donna Nugger.
+[SPEAKER_01]: I'm a youth development educator with
+University of Illinois Extension.
+[SPEAKER_01]: I work with the 4-H program and youth
+activities in metro communities.
+[SPEAKER_01]: So I do things that are a little bit
+different.
+[SPEAKER_01]: Most of my world is about STEM,
+and I've found that climate change has
+[SPEAKER_01]: been one of the things that our youth are
+concerned about, they're interested in.
+[SPEAKER_01]: And they have been very motivated by some
+of the opportunities through 4-H,
+[SPEAKER_01]: through the Ag Innovators program,
+some of the STEM challenges that have been
+[SPEAKER_01]: available, and that you can get these
+things through shop 4-H.
+[SPEAKER_01]: So they are available to you.
+[SPEAKER_01]: In the last year, the science ambassadors
+who are all middle school and high school,
+[SPEAKER_01]: so they're early teens through high
+school, go out and they do teen teaching
+[SPEAKER_01]: and outreach.
+[SPEAKER_01]: They work in some of our underserved
+communities and do large walk-by
+[SPEAKER_01]: activities down to small group activities
+for smaller groups.
+[SPEAKER_01]: The group I have with me today have been
+very active in developing an app to track
+[SPEAKER_01]: carbon outputs and give alternatives on
+how to reduce your carbon outputs.
+[SPEAKER_01]: I have Ashmit Gambir, Dharmik Mudapathi,
+and Joshua George with me.
+[SPEAKER_01]: They are part of a team that was working
+on a program called BLAST.
+[SPEAKER_01]: And BLAST was offered rather in
+Naperville, which is one of our
+[SPEAKER_01]: communities in my unit, which serves three
+counties in the Chicago metropolitan area.
+[SPEAKER_01]: And BLAST is about building leadership
+around sustainable transformation.
+[SPEAKER_01]: So this was a program that teens took
+their ideas, their concerns, and developed
+[SPEAKER_01]: a program to get something done.
+[SPEAKER_01]: So these are three of the guys.
+[SPEAKER_01]: They're my coding experts because you need
+that coding for it.
+[SPEAKER_01]: And then I have another larger group of
+youth who also did a lot of research to
+[SPEAKER_01]: get the information that they needed to
+use to put it into the app.
+[SPEAKER_01]: So at this point, I'm going to turn it
+over to my 4-H team and they're going to
+[SPEAKER_01]: take over and tell you a little bit about
+what they were doing, how they just got to
+[SPEAKER_01]: that point, and about some of the coding
+that they've been teaching.
+[SPEAKER_01]: So 4-H team, you can get in and do your
+thing.
+[SPEAKER_04]: All right.
+[SPEAKER_04]: So why did we start this project?
+[SPEAKER_04]: So since all of us are soon to be computer
+science majors, we wanted to have an app
+[SPEAKER_04]: that has practical solutions for
+day-to-day applications and for it to be
+[SPEAKER_04]: easily accessible.
+[SPEAKER_04]: So whether you have an iPhone or an
+Android, we want it to be on the Apple and
+[SPEAKER_04]: Google Play Store.
+[SPEAKER_04]: So we specifically, since all of us are
+environmental activists, we wanted to have
+[SPEAKER_04]: an app that promotes sustainability.
+[SPEAKER_04]: So the three topics that we dove into are
+carbon emissions, water conservation,
+[SPEAKER_04]: and food waste.
+[SPEAKER_04]: So later on in this presentation,
+we're going to get into the specifics of
+[SPEAKER_04]: why we wanted to dive into these three
+topics and also, of course, give our,
+[SPEAKER_04]: how we implemented these solutions into
+our app and the functions of the app.
+[SPEAKER_04]: And we wanted to influence an app that
+influences the long-term generation.
+[SPEAKER_04]: So since climate change is an existing
+problem that we have and we need it to
+[SPEAKER_04]: promote sustainability.
+[SPEAKER_03]: Yeah.
+[SPEAKER_03]: So here's our timeline of our project.
+[SPEAKER_03]: As you can see, we started our first team
+meeting, and that was back in,
+[SPEAKER_03]: I think, January of 2024.
+[SPEAKER_03]: And like Ms. Nugar mentioned before,
+we're actually three out of eight people
+[SPEAKER_03]: that joined in on this project.
+[SPEAKER_03]: And from there, we actually broke off into
+a different research group.
+[SPEAKER_03]: One was carbon emissions, one was food
+waste, and also water conservation.
+[SPEAKER_03]: And from there, we actually received a
+grant from Apple.
+[SPEAKER_03]: They provided us with iPads to actually
+start on the coding processes for this
+[SPEAKER_03]: project.
+[SPEAKER_03]: And after that, we developed a prototype
+on Figma, this application where we can
+[SPEAKER_03]: kind of just outline our program without
+actually starting on coding.
+[SPEAKER_03]: So we actually started on Figma first
+before presenting at GLAST.
+[SPEAKER_03]: And I know Ms. Nugar touched upon that,
+but we were there in hopes of receiving
+[SPEAKER_03]: funding for our app.
+[SPEAKER_03]: So yeah, that was at GLAST.
+[SPEAKER_03]: And then right now, we're actually
+educating the other people in our group on
+[SPEAKER_03]: the basics of SWIFT so we can actually
+start on programming.
+[SPEAKER_03]: And our goal eventually is to get this
+published and available on the App Store.
+[SPEAKER_03]: On to our first topic, carbon emissions.
+[SPEAKER_03]: I just have some stats on the screen right
+now.
+[SPEAKER_03]: And as you can see, the average US
+passenger car emits about 2.7 metric tons
+[SPEAKER_03]: of CO2 per year.
+[SPEAKER_03]: So our goal is to try to get that number
+down.
+[SPEAKER_03]: And we can see that food transportation is
+responsible for 19% of all carbon
+[SPEAKER_03]: emissions.
+[SPEAKER_03]: So along with that, there's also a diagram
+you can see up there.
+[SPEAKER_03]: And it says that cars and vans have
+around, I think, 48% our biggest share of
+[SPEAKER_03]: CO2 emissions.
+[SPEAKER_03]: And after that, it's the freight trains
+and trucks, I believe.
+[SPEAKER_03]: So how does our app actually combat these
+problems?
+[SPEAKER_03]: So our app has two functions on the carbon
+emissions part.
+[SPEAKER_03]: And one of them is to input our ride info.
+[SPEAKER_03]: So say if you take a 20-minute car ride,
+it'll provide the output of carbon emitted
+[SPEAKER_03]: based on the time elapsed, and it'll also
+provide an alternate route of travel.
+[SPEAKER_03]: So that was our first function.
+[SPEAKER_03]: The second function is it'll provide a
+carbon footprint based on the food
+[SPEAKER_03]: packaging of any food, let's say,
+you get at the grocery store.
+[SPEAKER_03]: If you input the brand and the type of
+food, it'll output the exact carbon
+[SPEAKER_03]: footprint based on it.
+[SPEAKER_05]: The second component of our app is water
+conservation.
+[SPEAKER_05]: And so what is water conservation?
+[SPEAKER_05]: Water conservation is using water
+efficiently and effectively to provide and
+[SPEAKER_05]: prevent using water unnecessarily.
+[SPEAKER_05]: And so one of the main problem that stems
+from this is that freshwater resources are
+[SPEAKER_05]: limited.
+[SPEAKER_05]: And so we want to combat that by having
+healthy habits.
+[SPEAKER_05]: And we want to promote that by using it as
+features in our app.
+[SPEAKER_05]: And so as you can see in the pie chart,
+about 20% of the water that we use comes
+[SPEAKER_05]: from toilets, showers, faucets,
+clothes, and washrooms.
+[SPEAKER_05]: And many of these things are in our own
+household.
+[SPEAKER_05]: And so we believe that with our functions,
+we will be able to combat this usage with
+[SPEAKER_05]: our two functions.
+[SPEAKER_05]: And so our two functions are meaningful
+reminders and providing a personalized
+[SPEAKER_05]: list for the user.
+[SPEAKER_05]: And so the first one, the meaningful
+reminders.
+[SPEAKER_05]: So the user will input their water usage,
+and we want to provide the user with more
+[SPEAKER_05]: information about how to cut down their
+water usage, like what they can do and
+[SPEAKER_05]: some calculations of how much water
+they've been using and how to prevent them
+[SPEAKER_05]: from using that much water.
+[SPEAKER_05]: And so our second one, providing a
+personalized list for the user.
+[SPEAKER_05]: So we want to have personalized things for
+the user that they have inputted and based
+[SPEAKER_05]: off of their needs.
+[SPEAKER_05]: And so for example, for me, one of the
+things that I would do is I've been using
+[SPEAKER_05]: a water bucket at home to collect rain.
+[SPEAKER_05]: And I've been just storing it in that
+bucket and using it for daily tasks such
+[SPEAKER_05]: as watering plants, cleaning outdoors,
+and flushing toilets.
+[SPEAKER_05]: And I talked to my family about that.
+[SPEAKER_05]: And we found it very beneficial and
+healthy for the environment because we're
+[SPEAKER_05]: not using as much water.
+[SPEAKER_05]: And we're saving the water because we're
+collecting it from the rain.
+[SPEAKER_05]: And so some other examples are mulch and
+compost.
+[SPEAKER_05]: But the water bucket with the rain,
+that is what I found the most beneficial.
+[SPEAKER_05]: And that was something that worked for me.
+[SPEAKER_05]: And so we want to have something
+personalized like that.
+[SPEAKER_05]: And we want to use that as a function in
+our app.
+[SPEAKER_04]: All right.
+[SPEAKER_04]: So for the final topic that we dove into
+is food waste.
+[SPEAKER_04]: So these are some facts that I found
+really interesting about food waste.
+[SPEAKER_04]: So I found that one third of the world's
+food goes to waste.
+[SPEAKER_04]: So as you can see on the picture,
+on the graphic on the bottom, it shows how
+[SPEAKER_04]: 43% of homes is where our waste comes
+from.
+[SPEAKER_04]: 40% comes from restaurants, groceries,
+and food service companies.
+[SPEAKER_04]: 16% comes from farms.
+[SPEAKER_04]: And 2% comes from manufacturers.
+[SPEAKER_04]: So I just really wanted to have our app
+combat all these problems and have less
+[SPEAKER_04]: food being wasted.
+[SPEAKER_04]: So for our app function for food waste,
+we have three specific functions.
+[SPEAKER_04]: So the first one is inputting food.
+[SPEAKER_04]: So first, the user inputs whatever food
+they bought and the expiration dates of
+[SPEAKER_04]: those produce.
+[SPEAKER_04]: And then as it gets closer to the date of
+expiration, the app is going to constantly
+[SPEAKER_04]: send reminders on recently bought food.
+[SPEAKER_04]: So it's going to give you a friendly
+reminder on when the item is going to be
+[SPEAKER_04]: perished.
+[SPEAKER_04]: And then for the second app function,
+with the expiration date being passed for
+[SPEAKER_04]: the produce, the app is going to send
+specific recipes that you can make with
+[SPEAKER_04]: the expired produce.
+[SPEAKER_04]: So such as, for example, bananas.
+[SPEAKER_04]: When bananas are perished, the app would
+send a recipe of banana bread that you
+[SPEAKER_04]: could make.
+[SPEAKER_04]: So then for our third and final function
+of this app, we would have location.
+[SPEAKER_04]: So the user would input their location.
+[SPEAKER_04]: And then a 50-mile radius would be
+generated to find the nearest donation
+[SPEAKER_04]: food center.
+[SPEAKER_04]: So all these three functions contribute to
+less food waste.
+[SPEAKER_05]: We have many goals to promote a healthy
+environment and promote sustainable
+[SPEAKER_05]: habits.
+[SPEAKER_05]: And so we are planning on promoting these
+healthy habits through our app.
+[SPEAKER_05]: And so our first goal that we have is to
+continue to teach classes to other
+[SPEAKER_05]: students.
+[SPEAKER_05]: And so prior, we have succeeded in
+teaching classes as we've been going to
+[SPEAKER_05]: other schools and other offices to teach
+classes using the Swift language.
+[SPEAKER_05]: And so from the grant from Apple that our
+4-H group received, we're given many
+[SPEAKER_05]: resources such as iPads, Apple Pencils,
+while also getting their full support.
+[SPEAKER_05]: These resources were very useful for
+teaching the students.
+[SPEAKER_05]: And we're able to show the app that we're
+making with our full timeline of events to
+[SPEAKER_05]: the students.
+[SPEAKER_05]: And this allowed the students to see what
+our app was, how it worked, and what we
+[SPEAKER_05]: did to make it happen.
+[SPEAKER_05]: And so this was able to inspire the other
+students.
+[SPEAKER_05]: And they were inspired to make their own
+app.
+[SPEAKER_05]: And it was that app that they wanted to
+make was something similar to what we've
+[SPEAKER_05]: been making.
+[SPEAKER_05]: And so we spoke to some of the students,
+and they told us that they were interested
+[SPEAKER_05]: in making their own apps about
+environmental sustainability.
+[SPEAKER_05]: And that is a very big progress step that
+we wanted to make.
+[SPEAKER_05]: And that is something that we were very
+proud of as we were able to promote a
+[SPEAKER_05]: healthy change.
+[SPEAKER_05]: And so our second goal is to continue
+working on the app and to ultimately
+[SPEAKER_05]: publish it.
+[SPEAKER_05]: And so we want this app to have a big
+impact.
+[SPEAKER_05]: And once we're done with the coding,
+we'll be able to publish it on the App
+[SPEAKER_05]: Store and Google Play Store.
+[SPEAKER_05]: And this will help promote positive
+change, which is our third goal.
+[SPEAKER_05]: And so we've been doing this throughout.
+[SPEAKER_05]: We've been promoting positive change
+throughout, as I said prior, by inspiring
+[SPEAKER_05]: other students to create their own apps.
+[SPEAKER_05]: And so we believe that this is very
+necessary to promote healthy environmental
+[SPEAKER_05]: change and promote a positive impact.
+[SPEAKER_05]: People will be conserving water better,
+they'll be reducing carbon emissions,
+[SPEAKER_05]: and they'll be wasting less food while
+just making better and healthier decisions
+[SPEAKER_05]: overall.
+[SPEAKER_05]: And these will all ultimately assist us in
+reducing the impact of environmental
+[SPEAKER_05]: challenges that we face today as a world.
+[SPEAKER_05]: And we hope to bring positive change day
+by day.
+[SPEAKER_04]: Thank you for listening to our
+presentation.
+[SPEAKER_01]: I greatly appreciate your attention in
+this.
+[SPEAKER_01]: And I really want to thank and
+congratulate these young people.
+[SPEAKER_01]: They came up with these ideas themselves.
+[SPEAKER_01]: This was not created by any adults.
+[SPEAKER_01]: They came to me and said they wanted to
+take their talents and find ways to use it
+[SPEAKER_01]: to make a difference in the world.
+[SPEAKER_01]: I'm very grateful to a couple of the other
+members who are now off at college.
+[SPEAKER_01]: And they're very, very busy doing other
+things.
+[SPEAKER_01]: They were the one who got us into BLAST to
+begin with.
+[SPEAKER_01]: And they were people who were already into
+environmental issues and wanted to take
+[SPEAKER_01]: this further.
+[SPEAKER_01]: And we're grateful for all the teaching
+that these guys have been doing,
+[SPEAKER_01]: because they're providing opportunities to
+youth who otherwise would not have an
+[SPEAKER_01]: opportunity at all.
+[SPEAKER_01]: So thanks a lot.
+[SPEAKER_01]: Justin, if you have any questions,
+we're here.
+[SPEAKER_01]: We'd be happy to answer it.
+[SPEAKER_02]: So I have our questions and answers open.
+[SPEAKER_02]: And interestingly, a lot of our questions
+and answers are just outstanding,
+[SPEAKER_02]: great work.
+[SPEAKER_02]: It's a fantastic presentation.
+[SPEAKER_02]: So that's a fun way.
+[SPEAKER_02]: So a few kind of direct... Oh,
+David has a question.
+[SPEAKER_00]: Yeah, just I thought those were fantastic.
+[SPEAKER_00]: As James was just saying, I'm just kind of
+wondering how you all think this
+[SPEAKER_00]: individually might kind of help you sort
+of take your next steps in life,
+[SPEAKER_00]: your work on this, in terms of what you
+each want to move on to do after this is
+[SPEAKER_00]: finished and a success, let's say.
+[SPEAKER_05]: So we're really looking forward to
+publishing this app and promoting a
+[SPEAKER_05]: positive change.
+[SPEAKER_05]: And so that is something that we've been
+very interested in.
+[SPEAKER_05]: We've been combining this with coding as
+well.
+[SPEAKER_05]: And so coding is our very big hobby for
+all of us.
+[SPEAKER_05]: We've been teaching classes, and we're all
+planning and hoping to be computer science
+[SPEAKER_05]: majors as we apply this coming year.
+[SPEAKER_05]: And so we've been combining two of our
+interests into one.
+[SPEAKER_05]: And that is just something that we're
+really interested in.
+[SPEAKER_05]: And this positive change that we've been
+promoting, and that we've seen already
+[SPEAKER_05]: happened so far, these results that we've
+seen, we've found those outstanding,
+[SPEAKER_05]: and we just want to keep seeing more.
+[SPEAKER_05]: And we just really love the positive
+impact and change that it has.
+[SPEAKER_05]: Thank you.
+[SPEAKER_02]: So we do have another question.
+[SPEAKER_02]: Have you considered exploring info about
+the carbon footprints of, say,
+[SPEAKER_02]: larger corporations or transportation
+industries like airlines and the like to
+[SPEAKER_02]: provide information in your app for that
+as well?
+[SPEAKER_02]: I think Josh is talking, but he's muted.
+[SPEAKER_03]: Yeah, so I believe that we would be
+looking at some more larger corporations
+[SPEAKER_03]: like airlines and I think it said,
+yeah, larger corporations, airlines,
+[SPEAKER_03]: et cetera.
+[SPEAKER_03]: So right now we just started focusing on
+the driving aspect of it.
+[SPEAKER_03]: Because I think when we were looking at
+users, they'll use this app when they're
+[SPEAKER_03]: driving.
+[SPEAKER_03]: So I believe that's more in their everyday
+life.
+[SPEAKER_03]: We could incorporate something with
+airlines or even corporations,
+[SPEAKER_03]: or maybe just put an informational article
+about that.
+[SPEAKER_02]: And then from my perspective, a thing that
+I would like to hear, a lot of our
+[SPEAKER_02]: attendees in the meeting are practitioners
+similar to me or Donna.
+[SPEAKER_02]: And from your perspective, what do you
+find has been one of the more helpful
+[SPEAKER_02]: aspects, I guess, from the extension or
+the 4-H system as you've gone along in
+[SPEAKER_02]: this?
+[SPEAKER_02]: A lot of us are trying to figure out how
+to best support the young people that we
+[SPEAKER_02]: work with.
+[SPEAKER_02]: And so if you have any specific thoughts
+on that, I would appreciate it myself at
+[SPEAKER_02]: least.
+[SPEAKER_04]: Okay, so the 4-H organization really
+supports us really well with especially
+[SPEAKER_04]: Ms. Nugar.
+[SPEAKER_04]: She's been supporting us through all these
+different activities and giving us the
+[SPEAKER_04]: resources that we need to better our app
+and even our activities that we do.
+[SPEAKER_04]: With teaching and everything else.
+[SPEAKER_04]: So yeah, just supporting resources.
+[SPEAKER_04]: And yes, like with the iPads, we wouldn't
+have been able to do all this Swift coding
+[SPEAKER_04]: without the Apple grant that we got.
+[SPEAKER_04]: So just like putting our support,
+putting your support to us will just drive
+[SPEAKER_04]: us exponentially.
+[SPEAKER_02]: So providing that space for you to explore
+your interests and making sure you're
+[SPEAKER_02]: supported.
+[SPEAKER_02]: Yeah.
+[SPEAKER_02]: That's fantastic.
+[SPEAKER_02]: This has been a production of Cornell
+University on the web at Cornell.edu.
+[SPEAKER_02]: Thank you.
+[SPEAKER_02]: Thank you.
+Thank you.

@@ -1,0 +1,3320 @@
+1
+00:00:01,979 --> 00:00:06,419
+thank you appreciate it thanks good
+
+2
+00:00:04,620 --> 00:00:07,798
+morning everybody how many people went
+
+3
+00:00:06,419 --> 00:00:09,419
+to the party last night and still are
+
+4
+00:00:07,799 --> 00:00:12,420
+making it here this morning okay that's
+
+5
+00:00:09,419 --> 00:00:13,919
+pretty impressive I didn't uh so uh but
+
+6
+00:00:12,419 --> 00:00:16,618
+that's good to be here thank you so much
+
+7
+00:00:13,919 --> 00:00:18,480
+for coming uh so today's presentations
+
+8
+00:00:16,618 --> 00:00:21,600
+is like intended to talk a little bit
+
+9
+00:00:18,480 --> 00:00:22,800
+about data and not just data um for a
+
+10
+00:00:21,600 --> 00:00:24,778
+sake of talking about data but data that
+
+11
+00:00:22,800 --> 00:00:26,100
+we actually know exists
+
+12
+00:00:24,778 --> 00:00:28,739
+um but before we get started I really
+
+13
+00:00:26,100 --> 00:00:30,480
+want to thank all the uh organizers from
+
+14
+00:00:28,739 --> 00:00:31,858
+ICPC this has been a really great
+
+15
+00:00:30,480 --> 00:00:33,960
+conference this is actually our third
+
+16
+00:00:31,859 --> 00:00:36,480
+year here I also want to thank the the
+
+17
+00:00:33,960 --> 00:00:38,280
+teams working with me in metric uh for
+
+18
+00:00:36,479 --> 00:00:39,479
+getting us prepared for for this and
+
+19
+00:00:38,280 --> 00:00:41,520
+then I also want to thank all of you
+
+20
+00:00:39,479 --> 00:00:44,398
+again too for all the great panel
+
+21
+00:00:41,520 --> 00:00:46,559
+discussions and uh and and uh
+
+22
+00:00:44,399 --> 00:00:48,120
+experiences that have been shared uh
+
+23
+00:00:46,558 --> 00:00:50,038
+yesterday and I'm sure there's gonna be
+
+24
+00:00:48,119 --> 00:00:52,378
+more today in fact as we've been
+
+25
+00:00:50,039 --> 00:00:53,520
+listening to everybody talk this uh last
+
+26
+00:00:52,378 --> 00:00:55,019
+couple of days
+
+27
+00:00:53,520 --> 00:00:56,760
+um it's really started to solidify some
+
+28
+00:00:55,020 --> 00:01:00,120
+of the thinking that we have around what
+
+29
+00:00:56,759 --> 00:01:03,899
+the potential is uh here uh in Europe
+
+30
+00:01:00,119 --> 00:01:07,019
+for a larger scale commercial Market
+
+31
+00:01:03,899 --> 00:01:10,260
+that includes more medical sales and
+
+32
+00:01:07,019 --> 00:01:13,019
+also at some point adult use sales so
+
+33
+00:01:10,260 --> 00:01:14,400
+this is the agenda we're going to first
+
+34
+00:01:13,019 --> 00:01:17,579
+of all just kind of talk a little bit
+
+35
+00:01:14,400 --> 00:01:19,740
+about my background and some of the work
+
+36
+00:01:17,579 --> 00:01:22,379
+that we've done creating centralized
+
+37
+00:01:19,739 --> 00:01:23,579
+supply chain data and then we're going
+
+38
+00:01:22,379 --> 00:01:25,560
+to talk a little bit more about how that
+
+39
+00:01:23,579 --> 00:01:27,780
+data actually gets transitioned into
+
+40
+00:01:25,560 --> 00:01:30,060
+actionable insights we'll actually share
+
+41
+00:01:27,780 --> 00:01:34,460
+a little bit of information from inside
+
+42
+00:01:30,060 --> 00:01:36,840
+the system that we utilize and then
+
+43
+00:01:34,459 --> 00:01:38,039
+transition some of that into some
+
+44
+00:01:36,840 --> 00:01:41,280
+thinking about how that might actually
+
+45
+00:01:38,040 --> 00:01:43,380
+look here in Germany and then start to
+
+46
+00:01:41,280 --> 00:01:46,320
+maybe prognost a little prognosticate a
+
+47
+00:01:43,379 --> 00:01:48,899
+little bit on what a market here might
+
+48
+00:01:46,319 --> 00:01:50,459
+look like in Germany
+
+49
+00:01:48,900 --> 00:01:52,618
+so
+
+50
+00:01:50,459 --> 00:01:55,978
+um I know and we've heard it like quite
+
+51
+00:01:52,618 --> 00:01:59,459
+a few times uh this week uh that there's
+
+52
+00:01:55,978 --> 00:02:02,640
+like I think a a sense of disappointment
+
+53
+00:01:59,459 --> 00:02:05,519
+um and skepticism around the path that
+
+54
+00:02:02,640 --> 00:02:08,280
+Germany has charted for itself
+
+55
+00:02:05,519 --> 00:02:09,719
+especially since April of this year when
+
+56
+00:02:08,280 --> 00:02:11,520
+we all were kind of thinking this time
+
+57
+00:02:09,719 --> 00:02:13,199
+last year when I was presenting at the
+
+58
+00:02:11,520 --> 00:02:15,780
+same conference that there was this
+
+59
+00:02:13,199 --> 00:02:18,598
+potential for a very large German Market
+
+60
+00:02:15,780 --> 00:02:21,000
+that would then also start to encourage
+
+61
+00:02:18,598 --> 00:02:23,519
+other member states within the EU to
+
+62
+00:02:21,000 --> 00:02:25,979
+take up more canvas policy but after
+
+63
+00:02:23,520 --> 00:02:28,439
+April I think everyone and like our we
+
+64
+00:02:25,979 --> 00:02:30,539
+took a hard look at it too saw this big
+
+65
+00:02:28,439 --> 00:02:32,520
+Market potential which we knew was going
+
+66
+00:02:30,539 --> 00:02:34,378
+to be challenging really shrink and
+
+67
+00:02:32,520 --> 00:02:36,540
+almost get kicked down the road a little
+
+68
+00:02:34,378 --> 00:02:38,159
+ways where we were really starting to
+
+69
+00:02:36,539 --> 00:02:40,318
+get concerned about how soon this was
+
+70
+00:02:38,159 --> 00:02:42,659
+was going to happen and so my background
+
+71
+00:02:40,318 --> 00:02:45,659
+so you know is is both in government
+
+72
+00:02:42,659 --> 00:02:48,359
+service but also uh in the private
+
+73
+00:02:45,659 --> 00:02:50,219
+sector and in government service I was
+
+74
+00:02:48,360 --> 00:02:53,819
+the director of the Colorado marijuana
+
+75
+00:02:50,219 --> 00:02:56,759
+enforcement division in 2013 going into
+
+76
+00:02:53,818 --> 00:02:59,098
+2014 when we first started adult use
+
+77
+00:02:56,759 --> 00:03:01,799
+legalized sales there in the country
+
+78
+00:02:59,098 --> 00:03:04,738
+and at the time we had really three
+
+79
+00:03:01,800 --> 00:03:07,080
+goals uh that were preoccupying our
+
+80
+00:03:04,739 --> 00:03:08,759
+thinking the first one was to do
+
+81
+00:03:07,080 --> 00:03:11,400
+everything we could to disrupt the
+
+82
+00:03:08,759 --> 00:03:14,519
+illicit market and then supplant that
+
+83
+00:03:11,400 --> 00:03:17,219
+illicit Market with a viable commercial
+
+84
+00:03:14,519 --> 00:03:20,340
+Market that could produce a much safer
+
+85
+00:03:17,219 --> 00:03:21,719
+product at at scale to Consumers and
+
+86
+00:03:20,340 --> 00:03:23,459
+then the third one which was not
+
+87
+00:03:21,719 --> 00:03:26,340
+unimportant but was we wanted to limit
+
+88
+00:03:23,459 --> 00:03:28,080
+the amount of exposure that children had
+
+89
+00:03:26,340 --> 00:03:30,900
+to cannabis products whether they were
+
+90
+00:03:28,080 --> 00:03:34,440
+illicit products or commercialized
+
+91
+00:03:30,900 --> 00:03:36,959
+products and so that was back in 2013
+
+92
+00:03:34,439 --> 00:03:40,680
+going into 2014. those are the exact
+
+93
+00:03:36,959 --> 00:03:42,840
+same goals that we see we keep here get
+
+94
+00:03:40,680 --> 00:03:44,519
+repeated by countries that are
+
+95
+00:03:42,840 --> 00:03:45,658
+contemplating more permissive cannabis
+
+96
+00:03:44,519 --> 00:03:48,360
+policy
+
+97
+00:03:45,658 --> 00:03:50,280
+and so now since that time we've been
+
+98
+00:03:48,360 --> 00:03:52,680
+part of and I've been part of close to
+
+99
+00:03:50,280 --> 00:03:54,959
+two dozen different implementations of
+
+100
+00:03:52,680 --> 00:03:56,340
+cannabis policy and as we've seen it
+
+101
+00:03:54,959 --> 00:03:59,219
+played out we've seen a lot of different
+
+102
+00:03:56,340 --> 00:04:01,319
+approaches to that cannabis policy and
+
+103
+00:03:59,219 --> 00:04:03,539
+uh we
+
+104
+00:04:01,318 --> 00:04:05,579
+um have seen a lot of successes and a
+
+105
+00:04:03,539 --> 00:04:08,519
+lot of failures but when we lay over all
+
+106
+00:04:05,580 --> 00:04:11,760
+that experience over the pathway that
+
+107
+00:04:08,519 --> 00:04:15,000
+German Germany has stated we still see a
+
+108
+00:04:11,759 --> 00:04:18,599
+viable path forward for a commercial
+
+109
+00:04:15,000 --> 00:04:20,519
+Market at scale that can be done within
+
+110
+00:04:18,600 --> 00:04:22,460
+the confines of a scientific framework
+
+111
+00:04:20,519 --> 00:04:25,680
+that would help
+
+112
+00:04:22,459 --> 00:04:27,359
+not only address some of the the
+
+113
+00:04:25,680 --> 00:04:30,720
+concerns and the goals the government
+
+114
+00:04:27,360 --> 00:04:33,620
+has for legalization but to actually
+
+115
+00:04:30,720 --> 00:04:36,000
+build sustainable investable Marketplace
+
+116
+00:04:33,620 --> 00:04:38,399
+for cannabis in here which is great news
+
+117
+00:04:36,000 --> 00:04:39,779
+I think for everybody in the the room
+
+118
+00:04:38,399 --> 00:04:42,239
+who's really focused on kind of the
+
+119
+00:04:39,779 --> 00:04:43,799
+business side of this
+
+120
+00:04:42,240 --> 00:04:47,040
+so what I'm going to do today is I'm
+
+121
+00:04:43,800 --> 00:04:48,259
+going to use supply chain data to kind
+
+122
+00:04:47,040 --> 00:04:50,939
+of illustrate
+
+123
+00:04:48,259 --> 00:04:53,160
+and substantiate some of the things that
+
+124
+00:04:50,939 --> 00:04:55,740
+we think could be like outlined as
+
+125
+00:04:53,160 --> 00:04:58,620
+success factors for countries in Europe
+
+126
+00:04:55,740 --> 00:05:01,500
+to follow based on kind of what we know
+
+127
+00:04:58,620 --> 00:05:05,519
+from from other marketplaces
+
+128
+00:05:01,500 --> 00:05:08,240
+so sticking with the nostalgic look back
+
+129
+00:05:05,519 --> 00:05:10,978
+on my experiences in in government
+
+130
+00:05:08,240 --> 00:05:14,819
+when we first started regulating
+
+131
+00:05:10,978 --> 00:05:16,079
+cannabis uh in 2013 and 2014 for adult
+
+132
+00:05:14,819 --> 00:05:20,579
+use
+
+133
+00:05:16,079 --> 00:05:22,918
+um in Colorado we were we were cons we
+
+134
+00:05:20,579 --> 00:05:24,899
+were we were like aware of the fact that
+
+135
+00:05:22,918 --> 00:05:26,519
+there was a dearth of data that was
+
+136
+00:05:24,899 --> 00:05:28,019
+available in fact one of the first
+
+137
+00:05:26,519 --> 00:05:30,060
+things we started to realize is that
+
+138
+00:05:28,019 --> 00:05:32,459
+there were massive gaps in data where
+
+139
+00:05:30,060 --> 00:05:34,079
+people assumed there would be data so
+
+140
+00:05:32,459 --> 00:05:36,239
+for example we assumed that there was
+
+141
+00:05:34,079 --> 00:05:38,698
+data that existed already on youth
+
+142
+00:05:36,240 --> 00:05:42,680
+consumption rates or driving under the
+
+143
+00:05:38,699 --> 00:05:45,780
+under the influence of cannabis or
+
+144
+00:05:42,680 --> 00:05:47,400
+testing data Etc there was just like
+
+145
+00:05:45,779 --> 00:05:49,918
+what we what we learned is that that
+
+146
+00:05:47,399 --> 00:05:52,859
+data hadn't been collected at all during
+
+147
+00:05:49,918 --> 00:05:55,560
+the uh prior to adult use legalization
+
+148
+00:05:52,860 --> 00:05:56,840
+and so as a as a as a state and as a
+
+149
+00:05:55,560 --> 00:06:00,899
+government
+
+150
+00:05:56,839 --> 00:06:02,939
+we we became hyper focused on trying to
+
+151
+00:06:00,899 --> 00:06:04,859
+collect the right data to be able to
+
+152
+00:06:02,939 --> 00:06:08,000
+inform the market and we realized at
+
+153
+00:06:04,860 --> 00:06:10,560
+that time that we were going to have to
+
+154
+00:06:08,000 --> 00:06:12,538
+recreate the data structures to collect
+
+155
+00:06:10,560 --> 00:06:14,519
+the data and start all over with brand
+
+156
+00:06:12,538 --> 00:06:16,079
+new Baseline data which is probably to
+
+157
+00:06:14,519 --> 00:06:18,060
+some extent true in a lot of the
+
+158
+00:06:16,079 --> 00:06:20,459
+countries here in Europe
+
+159
+00:06:18,060 --> 00:06:22,319
+we are also cognizantly aware of the
+
+160
+00:06:20,459 --> 00:06:24,180
+fact that the industry was brand new
+
+161
+00:06:22,319 --> 00:06:25,919
+it's not what it didn't have the same
+
+162
+00:06:24,180 --> 00:06:28,620
+appearance that it does in a lot of ways
+
+163
+00:06:25,918 --> 00:06:31,799
+today it wasn't uncommon at all for us
+
+164
+00:06:28,620 --> 00:06:33,780
+to see handwritten labels
+
+165
+00:06:31,800 --> 00:06:35,160
+um on on on products that were being
+
+166
+00:06:33,779 --> 00:06:37,219
+sold at retail
+
+167
+00:06:35,160 --> 00:06:39,479
+um it wasn't uncommon we actually saw
+
+168
+00:06:37,220 --> 00:06:41,280
+concentrate production done in slow
+
+169
+00:06:39,478 --> 00:06:43,740
+cookers we call them crock pots in the
+
+170
+00:06:41,279 --> 00:06:46,978
+U.S or washing machines they did we saw
+
+171
+00:06:43,740 --> 00:06:49,439
+cold water extraction of of cannabis
+
+172
+00:06:46,978 --> 00:06:51,899
+concentrates in older washing machines
+
+173
+00:06:49,439 --> 00:06:54,180
+uh and and then we also saw packaging
+
+174
+00:06:51,899 --> 00:06:55,739
+that was probably more similar to what
+
+175
+00:06:54,180 --> 00:06:58,439
+you would see at a high school bake sale
+
+176
+00:06:55,740 --> 00:07:00,538
+than an actual retail Marketplace and so
+
+177
+00:06:58,439 --> 00:07:02,639
+there was a lot of business aptitudes
+
+178
+00:07:00,538 --> 00:07:04,259
+that just didn't exist at the time and
+
+179
+00:07:02,639 --> 00:07:07,019
+so we knew that this would be
+
+180
+00:07:04,259 --> 00:07:08,400
+challenging for this new Marketplace to
+
+181
+00:07:07,019 --> 00:07:10,978
+in the in the actors within the
+
+182
+00:07:08,399 --> 00:07:13,019
+marketplace to actually be able to
+
+183
+00:07:10,978 --> 00:07:15,300
+comply with a comprehensive set of
+
+184
+00:07:13,019 --> 00:07:17,339
+regulations so we we needed a tool we
+
+185
+00:07:15,300 --> 00:07:20,220
+needed a tool to have some visibility
+
+186
+00:07:17,339 --> 00:07:22,198
+into to the supply chain and we needed a
+
+187
+00:07:20,220 --> 00:07:23,340
+tool to help start collecting data so
+
+188
+00:07:22,199 --> 00:07:25,319
+that we could describe what was
+
+189
+00:07:23,339 --> 00:07:27,418
+happening in the marketplace to the
+
+190
+00:07:25,319 --> 00:07:28,800
+population writ large to demonstrate
+
+191
+00:07:27,418 --> 00:07:30,299
+that there was some credit bill and then
+
+192
+00:07:28,800 --> 00:07:33,180
+also be able to compare and contrast
+
+193
+00:07:30,300 --> 00:07:35,160
+some of that data to Showcase what was
+
+194
+00:07:33,180 --> 00:07:37,319
+happening in the industry we also were
+
+195
+00:07:35,160 --> 00:07:39,300
+really cognizant of the fact that
+
+196
+00:07:37,319 --> 00:07:42,660
+government success in this area of
+
+197
+00:07:39,300 --> 00:07:44,038
+public policy is indelibly tied to the
+
+198
+00:07:42,660 --> 00:07:45,360
+business success and so we wanted to
+
+199
+00:07:44,038 --> 00:07:47,879
+make sure that the tools were available
+
+200
+00:07:45,360 --> 00:07:49,979
+for small medium-sized businesses to be
+
+201
+00:07:47,879 --> 00:07:52,019
+able to comply what we landed on was
+
+202
+00:07:49,978 --> 00:07:54,659
+supply chain track excuse me supply
+
+203
+00:07:52,019 --> 00:07:56,939
+chain tracking and just a quick little
+
+204
+00:07:54,660 --> 00:07:58,680
+overview of how that works in almost
+
+205
+00:07:56,939 --> 00:08:01,560
+every supply chain tracking system
+
+206
+00:07:58,680 --> 00:08:02,780
+there's a physical tag that goes on
+
+207
+00:08:01,560 --> 00:08:04,918
+every plant
+
+208
+00:08:02,779 --> 00:08:06,779
+that follows that plant all the way
+
+209
+00:08:04,918 --> 00:08:08,339
+through its life cycle all the way up
+
+210
+00:08:06,779 --> 00:08:10,258
+until the point where it gets harvested
+
+211
+00:08:08,339 --> 00:08:12,000
+and then as the plant material is
+
+212
+00:08:10,259 --> 00:08:13,680
+packaged into other things like trimmed
+
+213
+00:08:12,000 --> 00:08:15,779
+to go to a manufacturer for concentrate
+
+214
+00:08:13,680 --> 00:08:18,720
+Productions or testing batches going to
+
+215
+00:08:15,779 --> 00:08:20,119
+testing facilities or buds go going to
+
+216
+00:08:18,720 --> 00:08:23,400
+storefront
+
+217
+00:08:20,120 --> 00:08:26,819
+all those those products get packaged
+
+218
+00:08:23,399 --> 00:08:28,978
+and they get transported to various
+
+219
+00:08:26,819 --> 00:08:30,300
+other license premises and it's tracked
+
+220
+00:08:28,978 --> 00:08:32,759
+all the way through the supply chain and
+
+221
+00:08:30,300 --> 00:08:34,799
+all of those data events are collected
+
+222
+00:08:32,759 --> 00:08:36,958
+from the time it's a little baby plant
+
+223
+00:08:34,799 --> 00:08:38,879
+all the way to the time it's sold at the
+
+224
+00:08:36,958 --> 00:08:41,098
+point of sale so every movement from one
+
+225
+00:08:38,879 --> 00:08:43,799
+room to the next the date of the Harvest
+
+226
+00:08:41,099 --> 00:08:45,540
+how much the yields were the results of
+
+227
+00:08:43,799 --> 00:08:48,599
+the tests how much it sold for at
+
+228
+00:08:45,539 --> 00:08:51,899
+wholesale how long it takes to transport
+
+229
+00:08:48,600 --> 00:08:53,639
+it to a a facility and then how much
+
+230
+00:08:51,899 --> 00:08:55,620
+it's sold for at the point of sale those
+
+231
+00:08:53,639 --> 00:08:57,659
+things and everything else is collected
+
+232
+00:08:55,620 --> 00:09:00,360
+along the entire supply chain so
+
+233
+00:08:57,659 --> 00:09:02,338
+government has transparency into what
+
+234
+00:09:00,360 --> 00:09:04,919
+the the licensed Community or the
+
+235
+00:09:02,339 --> 00:09:08,459
+regulated Community is reporting in and
+
+236
+00:09:04,919 --> 00:09:10,139
+businesses then can uh
+
+237
+00:09:08,458 --> 00:09:12,419
+um if the government chooses to can see
+
+238
+00:09:10,139 --> 00:09:14,399
+a lot of the aggregated data from the
+
+239
+00:09:12,419 --> 00:09:17,159
+supply chain to help make strong
+
+240
+00:09:14,399 --> 00:09:19,139
+business decisions going forward
+
+241
+00:09:17,159 --> 00:09:20,278
+so to illustrate this a little bit
+
+242
+00:09:19,139 --> 00:09:22,100
+further we're going to talk a little bit
+
+243
+00:09:20,278 --> 00:09:25,379
+more about some of the actionable data
+
+244
+00:09:22,100 --> 00:09:28,259
+that comes from uh having a centralized
+
+245
+00:09:25,379 --> 00:09:31,080
+platform where many of the stakeholders
+
+246
+00:09:28,259 --> 00:09:33,240
+within the Cannabis uh
+
+247
+00:09:31,080 --> 00:09:34,980
+um many stakeholders within the Cannabis
+
+248
+00:09:33,240 --> 00:09:36,839
+industry co-create value with one
+
+249
+00:09:34,980 --> 00:09:39,860
+another and so what we've done is we've
+
+250
+00:09:36,839 --> 00:09:42,620
+created what we would call like a sample
+
+251
+00:09:39,860 --> 00:09:45,659
+jurisdiction or fictional jurisdiction
+
+252
+00:09:42,620 --> 00:09:47,700
+to demonstrate some of uh what you can
+
+253
+00:09:45,659 --> 00:09:49,199
+see in our system and I'm going to start
+
+254
+00:09:47,700 --> 00:09:51,540
+with two slides that are going to be the
+
+255
+00:09:49,200 --> 00:09:55,620
+bookends of the supply chain one is is
+
+256
+00:09:51,539 --> 00:09:57,958
+like how much cannabis is output by a
+
+257
+00:09:55,620 --> 00:10:00,720
+particular Market followed by what does
+
+258
+00:09:57,958 --> 00:10:02,759
+adequate to in sales and so think of
+
+259
+00:10:00,720 --> 00:10:05,100
+this as a if if you're trying to like
+
+260
+00:10:02,759 --> 00:10:07,080
+frame the size of the sample Market that
+
+261
+00:10:05,100 --> 00:10:08,879
+we've created for you think of it as a
+
+262
+00:10:07,080 --> 00:10:10,580
+state that's somewhere between 10 to 12
+
+263
+00:10:08,879 --> 00:10:13,679
+million people in population
+
+264
+00:10:10,580 --> 00:10:16,019
+that has a long-standing medical program
+
+265
+00:10:13,679 --> 00:10:20,099
+and an adult use program that's been
+
+266
+00:10:16,019 --> 00:10:21,659
+ramping up since around uh 2019 for the
+
+267
+00:10:20,100 --> 00:10:23,278
+First full year and what you can see
+
+268
+00:10:21,659 --> 00:10:25,679
+here kind of looking a couple of years
+
+269
+00:10:23,278 --> 00:10:28,559
+after this Market's really been up and
+
+270
+00:10:25,679 --> 00:10:31,319
+running that the commercial Market takes
+
+271
+00:10:28,559 --> 00:10:35,039
+time to be able to supply all of the
+
+272
+00:10:31,320 --> 00:10:39,480
+inputs into the product categories so in
+
+273
+00:10:35,039 --> 00:10:41,699
+2020 we are at 181 metric tons in our in
+
+274
+00:10:39,480 --> 00:10:45,300
+our sample Market by the time we got to
+
+275
+00:10:41,700 --> 00:10:47,459
+2022 we were closer to 925 metric tons
+
+276
+00:10:45,299 --> 00:10:49,139
+so if you put that into perspective you
+
+277
+00:10:47,458 --> 00:10:50,759
+know the how cup study that was here
+
+278
+00:10:49,139 --> 00:10:53,519
+done here in Germany where they
+
+279
+00:10:50,759 --> 00:10:55,980
+estimated it at 400 metric tons this is
+
+280
+00:10:53,519 --> 00:10:58,620
+a market of like 10 to 12 million and
+
+281
+00:10:55,980 --> 00:11:01,259
+we're seeing something closer to 920
+
+282
+00:10:58,620 --> 00:11:02,759
+metric tons of cannabis produced and
+
+283
+00:11:01,259 --> 00:11:05,100
+there's a lot of reasons why there might
+
+284
+00:11:02,759 --> 00:11:07,740
+that might be it might be that that
+
+285
+00:11:05,100 --> 00:11:09,899
+edible products or concentrates take up
+
+286
+00:11:07,740 --> 00:11:12,959
+a big part of the marketplace which also
+
+287
+00:11:09,899 --> 00:11:14,339
+takes up more plant material and many
+
+288
+00:11:12,958 --> 00:11:15,899
+other different things but I think what
+
+289
+00:11:14,339 --> 00:11:18,959
+the the most important thing to
+
+290
+00:11:15,899 --> 00:11:21,240
+understand is that even if and this kind
+
+291
+00:11:18,958 --> 00:11:23,099
+of gets to my Unapologetic optimism
+
+292
+00:11:21,240 --> 00:11:24,959
+around what could happen here in Germany
+
+293
+00:11:23,100 --> 00:11:28,800
+is even if
+
+294
+00:11:24,958 --> 00:11:31,919
+uh Germany were to legalize today and
+
+295
+00:11:28,799 --> 00:11:34,620
+intend on having their initial sales uh
+
+296
+00:11:31,919 --> 00:11:35,939
+start January 1st of 2024. there is no
+
+297
+00:11:34,620 --> 00:11:37,919
+way that even the full-scale
+
+298
+00:11:35,940 --> 00:11:39,180
+legalization model would be able to
+
+299
+00:11:37,919 --> 00:11:41,399
+accommodate
+
+300
+00:11:39,179 --> 00:11:43,500
+um the demand for cannabis uh here in
+
+301
+00:11:41,399 --> 00:11:45,600
+Germany on day one it's going to take a
+
+302
+00:11:43,500 --> 00:11:47,399
+matter of years for that to be able uh
+
+303
+00:11:45,600 --> 00:11:49,560
+to ramp up and so when we think about
+
+304
+00:11:47,399 --> 00:11:52,440
+that in the context of Social Clubs and
+
+305
+00:11:49,559 --> 00:11:55,619
+model projects they could potentially
+
+306
+00:11:52,440 --> 00:11:57,120
+produce if done well and at scale in a
+
+307
+00:11:55,620 --> 00:11:59,339
+sizable enough market of somewhere
+
+308
+00:11:57,120 --> 00:12:01,560
+around five to ten twelve million people
+
+309
+00:11:59,339 --> 00:12:03,300
+uh the German of the German Market they
+
+310
+00:12:01,559 --> 00:12:06,599
+could actually like potentially produce
+
+311
+00:12:03,299 --> 00:12:09,059
+a fair amount of of the product for the
+
+312
+00:12:06,600 --> 00:12:11,278
+entire demand in Germany so to kind of
+
+313
+00:12:09,059 --> 00:12:12,599
+put this in perspective I think a lot of
+
+314
+00:12:11,278 --> 00:12:14,820
+times and again I know this is a little
+
+315
+00:12:12,600 --> 00:12:17,339
+self-serving because I have such close
+
+316
+00:12:14,820 --> 00:12:18,839
+ties to the Colorado model but it's
+
+317
+00:12:17,339 --> 00:12:21,260
+considered to be one of the more mature
+
+318
+00:12:18,839 --> 00:12:23,579
+Market places in the world for cannabis
+
+319
+00:12:21,259 --> 00:12:26,100
+and even though it's been fully
+
+320
+00:12:23,578 --> 00:12:28,919
+legalized for a number of years now
+
+321
+00:12:26,100 --> 00:12:30,899
+since 2014 when the first sales began
+
+322
+00:12:28,919 --> 00:12:33,240
+less than half of the local
+
+323
+00:12:30,899 --> 00:12:36,120
+jurisdictions in the state of Colorado
+
+324
+00:12:33,240 --> 00:12:38,278
+allow for cannabis commercialized
+
+325
+00:12:36,120 --> 00:12:40,019
+operations within the state and if you
+
+326
+00:12:38,278 --> 00:12:41,939
+look at a state like California which is
+
+327
+00:12:40,019 --> 00:12:43,500
+massive which is starting to get close
+
+328
+00:12:41,940 --> 00:12:46,500
+to like half the size of Germany in
+
+329
+00:12:43,500 --> 00:12:49,320
+terms of population it also has a local
+
+330
+00:12:46,500 --> 00:12:50,940
+approval requirement in its law and less
+
+331
+00:12:49,320 --> 00:12:53,660
+than half of those local jurisdictions
+
+332
+00:12:50,940 --> 00:12:56,459
+have allowed for for cannabis
+
+333
+00:12:53,659 --> 00:12:58,679
+commercialized activities in in their
+
+334
+00:12:56,458 --> 00:13:01,799
+jurisdictions so that means that Supply
+
+335
+00:12:58,679 --> 00:13:05,159
+in those States is coming like that goes
+
+336
+00:13:01,799 --> 00:13:06,599
+to people who live in in cities or
+
+337
+00:13:05,159 --> 00:13:08,159
+counties that do not allow for
+
+338
+00:13:06,600 --> 00:13:09,360
+commercialized cannabis they're still
+
+339
+00:13:08,159 --> 00:13:11,338
+able to supply
+
+340
+00:13:09,360 --> 00:13:12,360
+um the Cannabis that people are going to
+
+341
+00:13:11,339 --> 00:13:14,519
+consume
+
+342
+00:13:12,360 --> 00:13:16,379
+so this was one end of the bookend the
+
+343
+00:13:14,519 --> 00:13:18,240
+the inputs into the system this is the
+
+344
+00:13:16,379 --> 00:13:20,480
+other end this is the sale so if you
+
+345
+00:13:18,240 --> 00:13:24,480
+look at our sample Market
+
+346
+00:13:20,480 --> 00:13:26,899
+we see that buying patterns are also a
+
+347
+00:13:24,480 --> 00:13:29,039
+little slower to shift so overnight
+
+348
+00:13:26,899 --> 00:13:30,720
+consumers are not going to trust that
+
+349
+00:13:29,039 --> 00:13:31,679
+the commercial market and all the
+
+350
+00:13:30,720 --> 00:13:34,200
+products that are produced in that
+
+351
+00:13:31,679 --> 00:13:35,939
+market are fit for their needs and there
+
+352
+00:13:34,200 --> 00:13:37,860
+just might be supply shortages that
+
+353
+00:13:35,940 --> 00:13:40,139
+prevent that from happening but we see
+
+354
+00:13:37,860 --> 00:13:42,839
+that buying patterns also kind of follow
+
+355
+00:13:40,139 --> 00:13:47,399
+a similar trajectory where
+
+356
+00:13:42,839 --> 00:13:49,500
+uh um the the consumers are uh
+
+357
+00:13:47,399 --> 00:13:51,778
+purchasing more and more over time and
+
+358
+00:13:49,500 --> 00:13:53,339
+then businesses are ramping up or
+
+359
+00:13:51,778 --> 00:13:54,720
+scaling their operations to be able to
+
+360
+00:13:53,339 --> 00:13:56,700
+meet that but again it doesn't happen
+
+361
+00:13:54,720 --> 00:13:59,278
+overnight it takes a little bit of time
+
+362
+00:13:56,700 --> 00:14:01,680
+for this to happen
+
+363
+00:13:59,278 --> 00:14:02,639
+so this is a a bit of an eye chart so I
+
+364
+00:14:01,679 --> 00:14:04,500
+want to take a little bit of time to
+
+365
+00:14:02,639 --> 00:14:07,320
+explain it so we've looked at
+
+366
+00:14:04,500 --> 00:14:10,019
+um both all the the inputs uh to the
+
+367
+00:14:07,320 --> 00:14:11,519
+supply chain and we've looked at what
+
+368
+00:14:10,019 --> 00:14:14,578
+the total sales so now we can start
+
+369
+00:14:11,519 --> 00:14:17,100
+taking a look at the breakdown of of
+
+370
+00:14:14,578 --> 00:14:19,679
+sales or what the breakdown sales look
+
+371
+00:14:17,100 --> 00:14:21,420
+by product category so for you all in
+
+372
+00:14:19,679 --> 00:14:24,299
+the upper left-hand corner of the screen
+
+373
+00:14:21,419 --> 00:14:26,338
+is the market share per product category
+
+374
+00:14:24,299 --> 00:14:28,939
+so we have seven categories that we've
+
+375
+00:14:26,339 --> 00:14:31,560
+listed here for our sample Marketplace
+
+376
+00:14:28,940 --> 00:14:33,180
+and what we do here what we did here is
+
+377
+00:14:31,559 --> 00:14:36,299
+we took the sales
+
+378
+00:14:33,179 --> 00:14:37,859
+that we had from the previous slide and
+
+379
+00:14:36,299 --> 00:14:38,879
+we broke it down within the category so
+
+380
+00:14:37,860 --> 00:14:42,120
+you can start to get a little better
+
+381
+00:14:38,879 --> 00:14:44,639
+understanding of how much of the various
+
+382
+00:14:42,120 --> 00:14:47,639
+product categories are purchased and
+
+383
+00:14:44,639 --> 00:14:50,459
+consumed so on our slide here roughly 45
+
+384
+00:14:47,639 --> 00:14:52,740
+to 50 percent of the market has
+
+385
+00:14:50,458 --> 00:14:54,299
+consistently been with smokable Bud that
+
+386
+00:14:52,740 --> 00:14:55,519
+goes directly to the store from
+
+387
+00:14:54,299 --> 00:14:58,259
+cultivations
+
+388
+00:14:55,519 --> 00:15:00,120
+followed by concentrates and think of
+
+389
+00:14:58,259 --> 00:15:02,220
+concentrates as essentially like vaping
+
+390
+00:15:00,120 --> 00:15:04,440
+products and other types of concentrates
+
+391
+00:15:02,220 --> 00:15:07,560
+along with infused Edibles that are a
+
+392
+00:15:04,440 --> 00:15:09,500
+bit of a distant third in comparison to
+
+393
+00:15:07,559 --> 00:15:12,239
+those two
+
+394
+00:15:09,500 --> 00:15:14,399
+categories of buds and concentrate and
+
+395
+00:15:12,240 --> 00:15:17,100
+then on the right hand side because this
+
+396
+00:15:14,399 --> 00:15:19,440
+is a very important issue is you're able
+
+397
+00:15:17,100 --> 00:15:22,680
+to actually track what happens to
+
+398
+00:15:19,440 --> 00:15:24,420
+pricing of products over time so in a
+
+399
+00:15:22,679 --> 00:15:26,399
+saturated Market where we think that
+
+400
+00:15:24,419 --> 00:15:29,099
+there's overproduction of cannabis
+
+401
+00:15:26,399 --> 00:15:31,679
+oftentimes we see prices really starting
+
+402
+00:15:29,100 --> 00:15:34,199
+to decline rather than the scenario that
+
+403
+00:15:31,679 --> 00:15:36,059
+we have here where can this bud is
+
+404
+00:15:34,198 --> 00:15:38,278
+actually kind of like continuing to
+
+405
+00:15:36,059 --> 00:15:40,739
+climb throughout the first five five
+
+406
+00:15:38,278 --> 00:15:46,278
+years of legalization and we also start
+
+407
+00:15:40,740 --> 00:15:49,198
+to see concentrate Productions start to
+
+408
+00:15:46,278 --> 00:15:51,720
+decline in this particular scenario
+
+409
+00:15:49,198 --> 00:15:53,578
+now don't know exactly why that is but
+
+410
+00:15:51,720 --> 00:15:54,899
+this is giving us some information to
+
+411
+00:15:53,578 --> 00:15:57,000
+kind of like indicate that there's a
+
+412
+00:15:54,899 --> 00:15:58,320
+change or a shift in the marketplace I'm
+
+413
+00:15:57,000 --> 00:15:59,519
+just going to go back here to this slide
+
+414
+00:15:58,320 --> 00:16:01,199
+real quick
+
+415
+00:15:59,519 --> 00:16:03,539
+um speaking of the product categories
+
+416
+00:16:01,198 --> 00:16:05,939
+the the the the graph at the bottom is
+
+417
+00:16:03,539 --> 00:16:07,379
+just kind of charting out you know how
+
+418
+00:16:05,940 --> 00:16:09,899
+sales and each one of those product
+
+419
+00:16:07,379 --> 00:16:11,759
+categories has changed uh from the early
+
+420
+00:16:09,899 --> 00:16:13,559
+Inception of legalization all the way to
+
+421
+00:16:11,759 --> 00:16:15,299
+2023.
+
+422
+00:16:13,559 --> 00:16:20,159
+here we just kind of take a closer look
+
+423
+00:16:15,299 --> 00:16:21,599
+at the buds and concentrates and and
+
+424
+00:16:20,159 --> 00:16:22,799
+what's happened with those over time
+
+425
+00:16:21,600 --> 00:16:25,079
+because they seem to be kind of like
+
+426
+00:16:22,799 --> 00:16:26,819
+competing with one another for Market
+
+427
+00:16:25,078 --> 00:16:29,819
+space in this particular sample Market
+
+428
+00:16:26,820 --> 00:16:31,260
+that we created for you here and it also
+
+429
+00:16:29,820 --> 00:16:32,579
+might be on the concentrate side that
+
+430
+00:16:31,259 --> 00:16:34,379
+those have become much more popular
+
+431
+00:16:32,578 --> 00:16:36,899
+products and so they're producing more
+
+432
+00:16:34,379 --> 00:16:37,919
+and more of those and as they uh as more
+
+433
+00:16:36,899 --> 00:16:40,440
+of them are available in the supply
+
+434
+00:16:37,919 --> 00:16:42,299
+chain than uh um the prices are
+
+435
+00:16:40,440 --> 00:16:44,940
+decreasing too the bottom line though is
+
+436
+00:16:42,299 --> 00:16:47,159
+that we can always look again kind of
+
+437
+00:16:44,940 --> 00:16:48,779
+going back to this slide we can always
+
+438
+00:16:47,159 --> 00:16:52,559
+kind of look at these things to get a
+
+439
+00:16:48,778 --> 00:16:54,000
+closer look at in more detail so while
+
+440
+00:16:52,559 --> 00:16:56,219
+I'm showing you the aggregate kind of
+
+441
+00:16:54,000 --> 00:16:58,259
+bigger picture data we can drill down
+
+442
+00:16:56,220 --> 00:17:01,740
+all the way into or government can drill
+
+443
+00:16:58,259 --> 00:17:03,480
+down all the way into the the
+
+444
+00:17:01,740 --> 00:17:05,818
+um different categories of products to
+
+445
+00:17:03,480 --> 00:17:07,980
+get more insights which also is kind of
+
+446
+00:17:05,818 --> 00:17:10,980
+like uh kind of gets us to this next
+
+447
+00:17:07,980 --> 00:17:13,078
+slide though as I mentioned earlier like
+
+448
+00:17:10,980 --> 00:17:14,759
+part of the reason we want to have the
+
+449
+00:17:13,078 --> 00:17:18,240
+kind of like centralized collection
+
+450
+00:17:14,759 --> 00:17:22,379
+point for data so that we can inform and
+
+451
+00:17:18,240 --> 00:17:24,539
+evolve the policy as we see changes in
+
+452
+00:17:22,380 --> 00:17:26,579
+the marketplace that might be negatively
+
+453
+00:17:24,539 --> 00:17:28,379
+impacting businesses within the
+
+454
+00:17:26,578 --> 00:17:30,539
+community within that that regulated
+
+455
+00:17:28,380 --> 00:17:33,780
+community and one of the more common
+
+456
+00:17:30,539 --> 00:17:35,759
+things that we hear when when concerning
+
+457
+00:17:33,779 --> 00:17:38,759
+ourselves about market segments is what
+
+458
+00:17:35,759 --> 00:17:42,119
+is the impact going to be when adult use
+
+459
+00:17:38,759 --> 00:17:43,798
+is implemented on medical programs that
+
+460
+00:17:42,119 --> 00:17:46,319
+already existed beforehand and what we
+
+461
+00:17:43,798 --> 00:17:48,480
+see here is kind of like a common uh
+
+462
+00:17:46,319 --> 00:17:50,960
+pattern that we've that we've seen in a
+
+463
+00:17:48,480 --> 00:17:54,538
+lot of different states where
+
+464
+00:17:50,960 --> 00:17:58,200
+the adult use legalization as it's
+
+465
+00:17:54,538 --> 00:18:03,200
+ramping up we actually see increases in
+
+466
+00:17:58,200 --> 00:18:06,120
+patient counts and and medical sales as
+
+467
+00:18:03,200 --> 00:18:07,980
+the regulated adult youth Market is
+
+468
+00:18:06,119 --> 00:18:11,459
+really kind of starting to take hold and
+
+469
+00:18:07,980 --> 00:18:14,279
+then as the adult use sales surpass the
+
+470
+00:18:11,460 --> 00:18:17,419
+medical sales then we start to see those
+
+471
+00:18:14,279 --> 00:18:19,558
+decline back to what they were prior to
+
+472
+00:18:17,419 --> 00:18:21,720
+legalization and there could be a lot of
+
+473
+00:18:19,558 --> 00:18:22,819
+reasons for that it could have to do
+
+474
+00:18:21,720 --> 00:18:25,860
+with
+
+475
+00:18:22,819 --> 00:18:28,619
+pricing and adult use and medical being
+
+476
+00:18:25,859 --> 00:18:31,259
+in parity with one another and so
+
+477
+00:18:28,619 --> 00:18:32,599
+patients migrate back towards the adult
+
+478
+00:18:31,259 --> 00:18:35,099
+use Market
+
+479
+00:18:32,599 --> 00:18:37,678
+or like in some of our states we
+
+480
+00:18:35,099 --> 00:18:39,719
+actually see where the medical sales are
+
+481
+00:18:37,679 --> 00:18:42,120
+saying somewhat steady and that might be
+
+482
+00:18:39,720 --> 00:18:43,558
+because that the products that are
+
+483
+00:18:42,119 --> 00:18:45,659
+offered to patients are altogether
+
+484
+00:18:43,558 --> 00:18:48,779
+different than the products that are
+
+485
+00:18:45,660 --> 00:18:51,200
+offered to in the adult use market so
+
+486
+00:18:48,779 --> 00:18:52,940
+there are markets still in the U.S where
+
+487
+00:18:51,200 --> 00:18:55,440
+the the
+
+488
+00:18:52,940 --> 00:18:58,140
+medical products are more focused on
+
+489
+00:18:55,440 --> 00:19:01,558
+high potency low calories versus lower
+
+490
+00:18:58,140 --> 00:19:04,320
+potency products that are offered in the
+
+491
+00:19:01,558 --> 00:19:06,178
+uh in the in the Market at any rate if
+
+492
+00:19:04,319 --> 00:19:08,460
+you look at the the data that's down
+
+493
+00:19:06,179 --> 00:19:10,259
+towards the bottom of the slide it's a
+
+494
+00:19:08,460 --> 00:19:12,480
+it's a lot of data but it's still
+
+495
+00:19:10,259 --> 00:19:14,519
+looking at how not only are we looking
+
+496
+00:19:12,480 --> 00:19:17,160
+at the different segments and gross
+
+497
+00:19:14,519 --> 00:19:22,379
+sales but we're also looking at how
+
+498
+00:19:17,160 --> 00:19:24,360
+those different customers are are and
+
+499
+00:19:22,380 --> 00:19:27,480
+their buying patterns are shifting over
+
+500
+00:19:24,359 --> 00:19:29,699
+time so we can we can tell if a patient
+
+501
+00:19:27,480 --> 00:19:31,798
+purchases are shifting away from
+
+502
+00:19:29,700 --> 00:19:34,500
+smokable cannabis to concentrates or
+
+503
+00:19:31,798 --> 00:19:35,819
+edibles or vice versa and then we can
+
+504
+00:19:34,500 --> 00:19:37,919
+take a much closer look at what's
+
+505
+00:19:35,819 --> 00:19:40,259
+happening in the marketplace to make
+
+506
+00:19:37,919 --> 00:19:41,940
+informed decisions about that both as a
+
+507
+00:19:40,259 --> 00:19:43,200
+business but also as Government actors
+
+508
+00:19:41,940 --> 00:19:45,298
+too
+
+509
+00:19:43,200 --> 00:19:46,919
+here's a quick close or a closer look at
+
+510
+00:19:45,298 --> 00:19:49,259
+at the cultivation so going back to
+
+511
+00:19:46,919 --> 00:19:51,360
+cultivation uh one thing that I think is
+
+512
+00:19:49,259 --> 00:19:52,740
+really important to mention here is or
+
+513
+00:19:51,359 --> 00:19:56,038
+just like to kind of point out to you is
+
+514
+00:19:52,740 --> 00:19:57,599
+the the number 226 so when we put our
+
+515
+00:19:56,038 --> 00:20:00,058
+data together we ended up with actually
+
+516
+00:19:57,599 --> 00:20:02,819
+a fairly High number any cultivators
+
+517
+00:20:00,058 --> 00:20:03,960
+here in the in the audience all right so
+
+518
+00:20:02,819 --> 00:20:05,460
+you know that's a pretty high number of
+
+519
+00:20:03,960 --> 00:20:07,500
+what you probably celebrate if you had
+
+520
+00:20:05,460 --> 00:20:09,419
+226 that you packaged out of every plant
+
+521
+00:20:07,500 --> 00:20:10,798
+so that's a pretty sizable number but
+
+522
+00:20:09,419 --> 00:20:14,520
+again this is like intended to be
+
+523
+00:20:10,798 --> 00:20:16,139
+directional and give us a a like an
+
+524
+00:20:14,519 --> 00:20:18,779
+insights into what the marketplace looks
+
+525
+00:20:16,140 --> 00:20:24,299
+like so this is along the y-axis is 2018
+
+526
+00:20:18,779 --> 00:20:26,038
+to 2023 and across the x-axis is January
+
+527
+00:20:24,298 --> 00:20:28,679
+to March and this is a heat map so the
+
+528
+00:20:26,038 --> 00:20:31,259
+lighter the color the less the yields
+
+529
+00:20:28,679 --> 00:20:33,360
+were on average during that month
+
+530
+00:20:31,259 --> 00:20:36,179
+um the darker the color the higher the
+
+531
+00:20:33,359 --> 00:20:37,139
+yields were and if you look at this like
+
+532
+00:20:36,179 --> 00:20:38,820
+at a diff like from a different
+
+533
+00:20:37,140 --> 00:20:40,440
+perspective you'll see that almost every
+
+534
+00:20:38,819 --> 00:20:43,918
+September and October there's this
+
+535
+00:20:40,440 --> 00:20:45,840
+massive spike in the the number or the
+
+536
+00:20:43,919 --> 00:20:47,580
+amount of yield per plant and that
+
+537
+00:20:45,839 --> 00:20:49,199
+almost always has to do with that being
+
+538
+00:20:47,579 --> 00:20:51,178
+the time of year where outdoor
+
+539
+00:20:49,200 --> 00:20:53,700
+cultivations which are included in our
+
+540
+00:20:51,179 --> 00:20:55,200
+sample jurisdiction are harvested and
+
+541
+00:20:53,700 --> 00:20:59,700
+they tend to have a little bit higher
+
+542
+00:20:55,200 --> 00:21:01,200
+numbers so like the the takeaway from
+
+543
+00:20:59,700 --> 00:21:02,460
+this though is and what's really
+
+544
+00:21:01,200 --> 00:21:04,080
+interesting and happy to talk more
+
+545
+00:21:02,460 --> 00:21:06,480
+detail with anybody in the room about
+
+546
+00:21:04,079 --> 00:21:08,939
+this is laters we did a an analysis on
+
+547
+00:21:06,480 --> 00:21:10,558
+what this might mean for Social Clubs so
+
+548
+00:21:08,940 --> 00:21:13,140
+if a social club just say it was like
+
+549
+00:21:10,558 --> 00:21:15,899
+200 grams was the gold standard per
+
+550
+00:21:13,140 --> 00:21:18,720
+plant you harvested if you were only
+
+551
+00:21:15,900 --> 00:21:22,919
+able to do that like 65 percent of that
+
+552
+00:21:18,720 --> 00:21:26,880
+your first year in production uh and you
+
+553
+00:21:22,919 --> 00:21:29,159
+had 500 customers as part of of or 500
+
+554
+00:21:26,880 --> 00:21:30,659
+members as part of your Social Clubs and
+
+555
+00:21:29,159 --> 00:21:32,520
+assuming that those three plants that
+
+556
+00:21:30,659 --> 00:21:34,620
+you're allowed to home grow can be
+
+557
+00:21:32,519 --> 00:21:36,359
+delegated to the Social Club a social
+
+558
+00:21:34,619 --> 00:21:38,879
+club a good grower would be able to
+
+559
+00:21:36,359 --> 00:21:41,099
+harvest those three plants four times a
+
+560
+00:21:38,880 --> 00:21:42,960
+year and if they were able to do that
+
+561
+00:21:41,099 --> 00:21:44,399
+and assuming that the numbers that were
+
+562
+00:21:42,960 --> 00:21:46,919
+used using to kind of inform the
+
+563
+00:21:44,400 --> 00:21:49,798
+analysis out of our system they'd
+
+564
+00:21:46,919 --> 00:21:52,380
+actually be as big or bigger than 50
+
+565
+00:21:49,798 --> 00:21:55,200
+percent of the regulated cultivations
+
+566
+00:21:52,380 --> 00:21:56,940
+that exist in the U.S those are rough
+
+567
+00:21:55,200 --> 00:22:00,419
+rough directional numbers but Social
+
+568
+00:21:56,940 --> 00:22:02,400
+Clubs could potentially be significantly
+
+569
+00:22:00,419 --> 00:22:06,059
+sized and so that kind of gets us
+
+570
+00:22:02,400 --> 00:22:07,500
+thinking about like that that the the
+
+571
+00:22:06,058 --> 00:22:09,119
+um different schools of thought on how
+
+572
+00:22:07,500 --> 00:22:11,099
+Social Clubs should be structured going
+
+573
+00:22:09,119 --> 00:22:12,719
+forward one is is that if they can be
+
+574
+00:22:11,099 --> 00:22:15,000
+sizable that there probably should be
+
+575
+00:22:12,720 --> 00:22:17,100
+some form of sensible kind of like a
+
+576
+00:22:15,000 --> 00:22:19,140
+small scale regulation and transparency
+
+577
+00:22:17,099 --> 00:22:21,480
+of that Marketplace and then the other
+
+578
+00:22:19,140 --> 00:22:24,419
+side of it that we think about a lot is
+
+579
+00:22:21,480 --> 00:22:26,880
+is the the reality that those uh that
+
+580
+00:22:24,419 --> 00:22:29,520
+those social clubs are probably going to
+
+581
+00:22:26,880 --> 00:22:33,320
+at some point want to transition into
+
+582
+00:22:29,519 --> 00:22:36,839
+the the fully regulated for-profit model
+
+583
+00:22:33,319 --> 00:22:38,639
+so thinking strategically now uh like
+
+584
+00:22:36,839 --> 00:22:40,740
+how do we start to collect data on those
+
+585
+00:22:38,640 --> 00:22:43,080
+that we can better understand how
+
+586
+00:22:40,740 --> 00:22:45,240
+they're impacted over time when the
+
+587
+00:22:43,079 --> 00:22:47,099
+Market continues to grow with regional
+
+588
+00:22:45,240 --> 00:22:50,460
+model projects Etc
+
+589
+00:22:47,099 --> 00:22:52,319
+so uh
+
+590
+00:22:50,460 --> 00:22:54,840
+now I want to kind of transition a
+
+591
+00:22:52,319 --> 00:22:56,879
+little bit out of that but before I do
+
+592
+00:22:54,839 --> 00:22:59,038
+um what I want to just like like really
+
+593
+00:22:56,880 --> 00:23:00,600
+drive home on all the data that we just
+
+594
+00:22:59,038 --> 00:23:03,058
+looked at in the previous half a dozen
+
+595
+00:23:00,599 --> 00:23:06,000
+or so slides is that that data that
+
+596
+00:23:03,058 --> 00:23:07,619
+we've collected has been proven in every
+
+597
+00:23:06,000 --> 00:23:09,298
+state that we operate and we operate in
+
+598
+00:23:07,619 --> 00:23:11,639
+23 different states plus there's other
+
+599
+00:23:09,298 --> 00:23:13,980
+companies that do similar work to us so
+
+600
+00:23:11,640 --> 00:23:15,960
+almost every state in the U.S and Canada
+
+601
+00:23:13,980 --> 00:23:18,000
+they do some form of track and Trace
+
+602
+00:23:15,960 --> 00:23:20,759
+data and that data has been proven to be
+
+603
+00:23:18,000 --> 00:23:23,400
+evidentiary in in value and if it's
+
+604
+00:23:20,759 --> 00:23:25,500
+evidentially and very evidentiary in
+
+605
+00:23:23,400 --> 00:23:28,259
+value in a Judicial System it can also
+
+606
+00:23:25,500 --> 00:23:31,259
+certainly be used as evidence to support
+
+607
+00:23:28,259 --> 00:23:32,519
+science and and I think we've like we've
+
+608
+00:23:31,259 --> 00:23:34,619
+heard a couple of times today that's
+
+609
+00:23:32,519 --> 00:23:36,000
+very important whatever framework gets
+
+610
+00:23:34,619 --> 00:23:37,859
+adopted in the EU under current
+
+611
+00:23:36,000 --> 00:23:40,200
+circumstances for regional model
+
+612
+00:23:37,859 --> 00:23:42,538
+projects has to fit into a scientific
+
+613
+00:23:40,200 --> 00:23:45,720
+framework and we think that the data
+
+614
+00:23:42,538 --> 00:23:48,240
+that exists right now for describing
+
+615
+00:23:45,720 --> 00:23:49,740
+what happens in the markets and then
+
+616
+00:23:48,240 --> 00:23:52,859
+being able to compare it and contrast
+
+617
+00:23:49,740 --> 00:23:56,159
+between the various model projects is is
+
+618
+00:23:52,859 --> 00:23:58,979
+is uh is a is a viable path forward for
+
+619
+00:23:56,159 --> 00:24:01,620
+creating Regional model projects that
+
+620
+00:23:58,980 --> 00:24:05,400
+can be done at scale so that the market
+
+621
+00:24:01,619 --> 00:24:07,379
+is is is supports business models like
+
+622
+00:24:05,400 --> 00:24:08,940
+all of yours and it also supports
+
+623
+00:24:07,380 --> 00:24:10,740
+investment into those those business
+
+624
+00:24:08,940 --> 00:24:12,360
+models something that makes it
+
+625
+00:24:10,740 --> 00:24:13,620
+sustainable going forward
+
+626
+00:24:12,359 --> 00:24:15,740
+so
+
+627
+00:24:13,619 --> 00:24:15,739
+um
+
+628
+00:24:15,960 --> 00:24:20,400
+getting into the thought experiment on
+
+629
+00:24:18,298 --> 00:24:22,500
+Germany and to kind of elaborate a
+
+630
+00:24:20,400 --> 00:24:24,360
+little bit more on what I just shared we
+
+631
+00:24:22,500 --> 00:24:27,440
+took some sample data from our system
+
+632
+00:24:24,359 --> 00:24:30,119
+and we randomly plant uh plugged it into
+
+633
+00:24:27,440 --> 00:24:32,820
+Germany kind of like pretending that
+
+634
+00:24:30,119 --> 00:24:34,619
+Germany's been legalized or we've been
+
+635
+00:24:32,819 --> 00:24:36,960
+tracking cannabis data for for the last
+
+636
+00:24:34,619 --> 00:24:38,759
+five years and again I mentioned that
+
+637
+00:24:36,960 --> 00:24:41,340
+it's really important like from up from
+
+638
+00:24:38,759 --> 00:24:43,019
+a scientific standpoint for uh
+
+639
+00:24:41,339 --> 00:24:46,439
+government officials to be able to
+
+640
+00:24:43,019 --> 00:24:49,918
+describe and compare and contrast we've
+
+641
+00:24:46,440 --> 00:24:53,220
+randomly assigned data from different
+
+642
+00:24:49,919 --> 00:24:55,020
+areas within the U.S market into states
+
+643
+00:24:53,220 --> 00:24:56,519
+to kind of just demonstrate for you
+
+644
+00:24:55,019 --> 00:24:57,779
+please don't put a lot of stock on these
+
+645
+00:24:56,519 --> 00:24:59,220
+numbers it's like we really think that
+
+646
+00:24:57,779 --> 00:25:00,058
+there's going to be a billion dollars in
+
+647
+00:24:59,220 --> 00:25:01,740
+sales
+
+648
+00:25:00,058 --> 00:25:02,658
+um in barbaria I think we know barbaria
+
+649
+00:25:01,740 --> 00:25:05,159
+is probably
+
+650
+00:25:02,659 --> 00:25:06,840
+one of the states that may be slower to
+
+651
+00:25:05,159 --> 00:25:09,240
+take up Regional products but the the
+
+652
+00:25:06,839 --> 00:25:11,720
+idea is that you're able to use the data
+
+653
+00:25:09,240 --> 00:25:14,819
+that's collected within a shared system
+
+654
+00:25:11,720 --> 00:25:16,440
+where everyone's co-creating value and
+
+655
+00:25:14,819 --> 00:25:18,240
+be able to compare and contrast what's
+
+656
+00:25:16,440 --> 00:25:20,038
+happening in those regions and then you
+
+657
+00:25:18,240 --> 00:25:21,200
+can even take a little bit deeper dive
+
+658
+00:25:20,038 --> 00:25:23,579
+into
+
+659
+00:25:21,200 --> 00:25:25,080
+those various regions and get a better
+
+660
+00:25:23,579 --> 00:25:27,359
+understanding of what might be happening
+
+661
+00:25:25,079 --> 00:25:29,639
+with those like for example with product
+
+662
+00:25:27,359 --> 00:25:31,319
+category sales this is just one example
+
+663
+00:25:29,640 --> 00:25:32,940
+and we could look at test results we
+
+664
+00:25:31,319 --> 00:25:33,980
+could look at transports we could look
+
+665
+00:25:32,940 --> 00:25:36,298
+at
+
+666
+00:25:33,980 --> 00:25:38,640
+plant yields we could look at almost
+
+667
+00:25:36,298 --> 00:25:40,259
+anything that's in the system and we can
+
+668
+00:25:38,640 --> 00:25:41,820
+start to be able to compare and contrast
+
+669
+00:25:40,259 --> 00:25:43,440
+what's happening within those
+
+670
+00:25:41,819 --> 00:25:45,798
+jurisdictions and we think this is a
+
+671
+00:25:43,440 --> 00:25:48,120
+very important
+
+672
+00:25:45,798 --> 00:25:49,859
+aspect of creating a scientific
+
+673
+00:25:48,119 --> 00:25:52,259
+framework and we also think it kind of
+
+674
+00:25:49,859 --> 00:25:53,759
+fits into that that definition although
+
+675
+00:25:52,259 --> 00:25:55,740
+it's a little bit different way of
+
+676
+00:25:53,759 --> 00:25:58,259
+thinking than I think we've seen in
+
+677
+00:25:55,740 --> 00:26:01,079
+other attempts at adult use legalization
+
+678
+00:25:58,259 --> 00:26:02,158
+outside the U.S
+
+679
+00:26:01,079 --> 00:26:05,699
+um
+
+680
+00:26:02,159 --> 00:26:07,919
+so with that I want to uh
+
+681
+00:26:05,700 --> 00:26:11,580
+kind of like close with a couple of of
+
+682
+00:26:07,919 --> 00:26:13,740
+thoughts that we've had as we are
+
+683
+00:26:11,579 --> 00:26:15,418
+watching closely What's Happening Here
+
+684
+00:26:13,740 --> 00:26:17,640
+in Europe one is like we're actually
+
+685
+00:26:15,419 --> 00:26:19,799
+really excited about what the potential
+
+686
+00:26:17,640 --> 00:26:21,960
+is here and one of the reasons why we're
+
+687
+00:26:19,798 --> 00:26:23,900
+so excited is we've seen this replicated
+
+688
+00:26:21,960 --> 00:26:27,240
+time and time again where government
+
+689
+00:26:23,900 --> 00:26:29,940
+collaborates with the industry and other
+
+690
+00:26:27,240 --> 00:26:31,500
+uh stakeholders that exist within the
+
+691
+00:26:29,940 --> 00:26:34,919
+ecosystem
+
+692
+00:26:31,500 --> 00:26:37,079
+to support an industry's effort to
+
+693
+00:26:34,919 --> 00:26:39,720
+supplant the illicit market and replace
+
+694
+00:26:37,079 --> 00:26:42,119
+it with safer products and we've been
+
+695
+00:26:39,720 --> 00:26:45,240
+able to like we've been able to see
+
+696
+00:26:42,119 --> 00:26:47,939
+government like balance the the
+
+697
+00:26:45,240 --> 00:26:49,620
+regulatory requirements not always but
+
+698
+00:26:47,940 --> 00:26:51,960
+like in some cases be able to balance
+
+699
+00:26:49,619 --> 00:26:53,339
+those regulatory requirements with the
+
+700
+00:26:51,960 --> 00:26:54,720
+business needs like some of the
+
+701
+00:26:53,339 --> 00:26:56,519
+businesses have been successful and
+
+702
+00:26:54,720 --> 00:26:58,740
+while we recognize and we're not tone
+
+703
+00:26:56,519 --> 00:27:01,139
+deaf to the reality that
+
+704
+00:26:58,740 --> 00:27:03,240
+um the market in the U.S and a North
+
+705
+00:27:01,140 --> 00:27:05,220
+American General is is definitely
+
+706
+00:27:03,240 --> 00:27:07,500
+experiencing some hardships along with
+
+707
+00:27:05,220 --> 00:27:09,900
+some of the other economic downturn that
+
+708
+00:27:07,500 --> 00:27:12,240
+exists but we do know that if you have
+
+709
+00:27:09,900 --> 00:27:14,340
+the right data structures in place they
+
+710
+00:27:12,240 --> 00:27:16,558
+can help to inform that policy when
+
+711
+00:27:14,339 --> 00:27:17,480
+things are a little bit tougher and able
+
+712
+00:27:16,558 --> 00:27:19,798
+to
+
+713
+00:27:17,480 --> 00:27:21,599
+right-size the regulation over time no
+
+714
+00:27:19,798 --> 00:27:23,700
+matter what happens you're not going to
+
+715
+00:27:21,599 --> 00:27:25,199
+get the the regulations and the laws
+
+716
+00:27:23,700 --> 00:27:26,819
+correct the first time so you have to
+
+717
+00:27:25,200 --> 00:27:29,880
+have the right data there to be able to
+
+718
+00:27:26,819 --> 00:27:33,119
+inform how different actors within the
+
+719
+00:27:29,880 --> 00:27:35,400
+market are being impacted and you can do
+
+720
+00:27:33,119 --> 00:27:37,079
+that at the same time collaborating and
+
+721
+00:27:35,400 --> 00:27:39,360
+partnering on what's important to
+
+722
+00:27:37,079 --> 00:27:40,918
+protect Youth and public health within
+
+723
+00:27:39,359 --> 00:27:42,479
+within the market
+
+724
+00:27:40,919 --> 00:27:43,220
+and so
+
+725
+00:27:42,480 --> 00:27:45,798
+um
+
+726
+00:27:43,220 --> 00:27:48,720
+we we've seen
+
+727
+00:27:45,798 --> 00:27:51,119
+traceability platforms work successfully
+
+728
+00:27:48,720 --> 00:27:52,620
+in a lot of different markets and I've
+
+729
+00:27:51,119 --> 00:27:54,359
+put that into perspective of what's
+
+730
+00:27:52,619 --> 00:27:55,979
+Happening Here
+
+731
+00:27:54,359 --> 00:27:57,959
+um in Europe and in particular today
+
+732
+00:27:55,980 --> 00:27:59,339
+it's focusing a little bit more
+
+733
+00:27:57,960 --> 00:28:03,019
+um on Germany
+
+734
+00:27:59,339 --> 00:28:07,678
+is that research is going to be
+
+735
+00:28:03,019 --> 00:28:08,940
+key for regional model projects and we
+
+736
+00:28:07,679 --> 00:28:10,440
+think that the research can be
+
+737
+00:28:08,940 --> 00:28:12,538
+structured in such a ways where you can
+
+738
+00:28:10,440 --> 00:28:15,778
+have a scalable Regional Model Market
+
+739
+00:28:12,538 --> 00:28:17,759
+Place that's investable and and
+
+740
+00:28:15,778 --> 00:28:19,500
+sustainable and we think that that while
+
+741
+00:28:17,759 --> 00:28:20,839
+that's happening that this could also be
+
+742
+00:28:19,500 --> 00:28:24,240
+done
+
+743
+00:28:20,839 --> 00:28:26,579
+alongside of what is already a viable
+
+744
+00:28:24,240 --> 00:28:29,759
+Medical Market here in Germany that can
+
+745
+00:28:26,579 --> 00:28:31,980
+coexist alongside of the adult use
+
+746
+00:28:29,759 --> 00:28:34,400
+Market but to ensure that that's that's
+
+747
+00:28:31,980 --> 00:28:36,599
+more likely to happen
+
+748
+00:28:34,400 --> 00:28:38,580
+we think that it's important for the
+
+749
+00:28:36,599 --> 00:28:40,199
+data to be collected so you can actually
+
+750
+00:28:38,579 --> 00:28:43,139
+kind of showcase and be able to
+
+751
+00:28:40,200 --> 00:28:45,720
+demonstrate what what uh um different
+
+752
+00:28:43,140 --> 00:28:47,400
+decisions on the regulatory front of
+
+753
+00:28:45,720 --> 00:28:49,798
+kind of impact that they're having on
+
+754
+00:28:47,400 --> 00:28:52,380
+various segments of the market and and
+
+755
+00:28:49,798 --> 00:28:55,619
+in including the medical market and then
+
+756
+00:28:52,380 --> 00:28:57,620
+the last one uh just the recognizing the
+
+757
+00:28:55,619 --> 00:29:01,439
+fact that
+
+758
+00:28:57,619 --> 00:29:04,019
+every time every time with almost almost
+
+759
+00:29:01,440 --> 00:29:06,778
+without exception where there's been a
+
+760
+00:29:04,019 --> 00:29:08,220
+small allowance or a modest allowance
+
+761
+00:29:06,778 --> 00:29:12,298
+for
+
+762
+00:29:08,220 --> 00:29:15,538
+um like an unregulated non-profit uh
+
+763
+00:29:12,298 --> 00:29:17,700
+um a framework for providing cannabis
+
+764
+00:29:15,538 --> 00:29:21,298
+whether it's in a medical or whether
+
+765
+00:29:17,700 --> 00:29:23,759
+it's an adult use it always always takes
+
+766
+00:29:21,298 --> 00:29:25,019
+on the form of a commercial Market at
+
+767
+00:29:23,759 --> 00:29:26,759
+some point maybe not right out of the
+
+768
+00:29:25,019 --> 00:29:28,558
+shoot but a couple of years down the
+
+769
+00:29:26,759 --> 00:29:31,079
+road so it almost always takes on the
+
+770
+00:29:28,558 --> 00:29:34,019
+appearance of a commercial framework so
+
+771
+00:29:31,079 --> 00:29:36,359
+since we know that to be the case and
+
+772
+00:29:34,019 --> 00:29:38,220
+and and we know that Social Clubs has
+
+773
+00:29:36,359 --> 00:29:40,439
+has the potential to be one of the the
+
+774
+00:29:38,220 --> 00:29:42,659
+key policy lovers that Germany wants to
+
+775
+00:29:40,440 --> 00:29:44,460
+to pull here then
+
+776
+00:29:42,659 --> 00:29:46,380
+knowing that those are eventually going
+
+777
+00:29:44,460 --> 00:29:48,659
+to be taking on a commercial appearance
+
+778
+00:29:46,380 --> 00:29:50,940
+then now is a really good time to start
+
+779
+00:29:48,659 --> 00:29:53,880
+thinking strategically about how Social
+
+780
+00:29:50,940 --> 00:29:56,399
+Clubs can scale and grow to meet some of
+
+781
+00:29:53,880 --> 00:29:59,880
+the demand which out of the shoot but
+
+782
+00:29:56,398 --> 00:30:01,558
+also have a viable option at some point
+
+783
+00:29:59,880 --> 00:30:03,840
+in the future to be able to transition
+
+784
+00:30:01,558 --> 00:30:06,658
+into what uh we also think is likely to
+
+785
+00:30:03,839 --> 00:30:09,240
+happen which is a more full-scale adult
+
+786
+00:30:06,659 --> 00:30:12,600
+use Marketplace
+
+787
+00:30:09,240 --> 00:30:13,980
+and I'll close uh right where I started
+
+788
+00:30:12,599 --> 00:30:16,319
+which is
+
+789
+00:30:13,980 --> 00:30:18,298
+our experience tells us that
+
+790
+00:30:16,319 --> 00:30:21,418
+government's successful implementation
+
+791
+00:30:18,298 --> 00:30:23,579
+of cannabis policy is tied very closely
+
+792
+00:30:21,419 --> 00:30:26,278
+to business success so businesses are
+
+793
+00:30:23,579 --> 00:30:28,918
+not successful in a regulated framework
+
+794
+00:30:26,278 --> 00:30:31,079
+the perception is because it has it's
+
+795
+00:30:28,919 --> 00:30:33,240
+grounded in reality is that the
+
+796
+00:30:31,079 --> 00:30:35,579
+government wasn't successful and so that
+
+797
+00:30:33,240 --> 00:30:38,038
+we have to have both of those empties
+
+798
+00:30:35,579 --> 00:30:39,599
+among another like another couple
+
+799
+00:30:38,038 --> 00:30:41,460
+different sets of stakeholders that
+
+800
+00:30:39,599 --> 00:30:44,459
+exist within the ecosystem around
+
+801
+00:30:41,460 --> 00:30:47,519
+cannabis regulation to be able
+
+802
+00:30:44,460 --> 00:30:49,200
+uh to work together and collaborate for
+
+803
+00:30:47,519 --> 00:30:51,599
+the common good the public health and
+
+804
+00:30:49,200 --> 00:30:53,640
+safety concerns but also
+
+805
+00:30:51,599 --> 00:30:56,278
+um the the important aspects of creating
+
+806
+00:30:53,640 --> 00:30:57,659
+a sustainable Market uh where businesses
+
+807
+00:30:56,278 --> 00:31:00,359
+can Thrive
+
+808
+00:30:57,659 --> 00:31:03,960
+um over the Long Haul so I want to thank
+
+809
+00:31:00,359 --> 00:31:06,298
+you again uh for your time today I think
+
+810
+00:31:03,960 --> 00:31:08,640
+I'm I'm really close to being right on
+
+811
+00:31:06,298 --> 00:31:09,898
+time for uh for where we were and I want
+
+812
+00:31:08,640 --> 00:31:12,120
+to thank you again for all being here
+
+813
+00:31:09,898 --> 00:31:14,519
+this morning waking up early I really
+
+814
+00:31:12,119 --> 00:31:17,699
+appreciate you and to the extent that we
+
+815
+00:31:14,519 --> 00:31:19,440
+can uh elaborate on any of the data that
+
+816
+00:31:17,700 --> 00:31:21,960
+I showed today I'm happy to meet with
+
+817
+00:31:19,440 --> 00:31:24,419
+people one-on-one and share some of our
+
+818
+00:31:21,960 --> 00:31:26,100
+dashboards and some of our data and
+
+819
+00:31:24,419 --> 00:31:28,320
+expand on some of our thoughts we're
+
+820
+00:31:26,099 --> 00:31:30,298
+also happy to hear push back and
+
+821
+00:31:28,319 --> 00:31:32,639
+different opinions on how we think this
+
+822
+00:31:30,298 --> 00:31:34,679
+might go again I'm the Unapologetic
+
+823
+00:31:32,640 --> 00:31:36,000
+Optimist in the room when it comes to
+
+824
+00:31:34,679 --> 00:31:37,620
+what we think is possible but it's
+
+825
+00:31:36,000 --> 00:31:39,259
+grounded in a lot of the experiences
+
+826
+00:31:37,619 --> 00:31:42,658
+that we've seen
+
+827
+00:31:39,259 --> 00:31:44,038
+watching cannabis regulation unfold in a
+
+828
+00:31:42,659 --> 00:31:46,200
+couple dozen different jurisdictions so
+
+829
+00:31:44,038 --> 00:31:48,859
+thanks again for for the time Lewis
+
+830
+00:31:46,200 --> 00:31:48,860
+Koski
+

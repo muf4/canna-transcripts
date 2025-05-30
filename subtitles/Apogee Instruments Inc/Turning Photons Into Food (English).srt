@@ -1,0 +1,988 @@
+1
+00:00:01,667 --> 00:00:07,506
+I'm Bruce Bugbee. I'm a professor of crop physiology at Utah State University,
+
+2
+00:00:07,506 --> 00:00:15,478
+and this is a seminar about calculating potential yield of any agricultural commodity.
+
+3
+00:00:15,612 --> 00:00:21,951
+It was first developed for fields like this and for outdoor agriculture.
+
+4
+00:00:22,117 --> 00:00:32,479
+But over the years, we have modified this model, which is a series of calculations, to get potential yield in indoor agriculture.
+
+5
+00:00:32,479 --> 00:00:41,266
+And as we get better and better with indoor agriculture, it becomes increasingly important to understand what the potential is.
+
+6
+00:00:41,567 --> 00:00:52,274
+In this talk, in the next 20-25 minutes, I'm going to just derive the potential yield from what we call first principles.
+
+7
+00:00:52,341 --> 00:01:01,216
+But first I want to acknowledge the funding agencies for this, and NASA is a key funding agency.
+
+8
+00:01:01,216 --> 00:01:14,159
+They’ve funded the research in my lab for over 30 years, and we've been deeply indebted to NASA for allowing us to keep refining these models.
+
+9
+00:01:14,225 --> 00:01:18,429
+Recently, we also got funded by the USDA.
+
+10
+00:01:18,462 --> 00:01:28,837
+And this is a project, much more applied project, to look at the use of supplemental lighting in controlled environments.
+
+11
+00:01:28,938 --> 00:01:35,643
+This project is called the LAMP project: “Lighting Approaches to Maximize Profits.”
+
+12
+00:01:35,643 --> 00:01:41,915
+So this is a very basic research project. This is a very applied research project.
+
+13
+00:01:41,915 --> 00:01:49,954
+And back-and-forth, we zero in on the reality of what we can get for food production in controlled environments.
+
+14
+00:01:50,087 --> 00:01:56,753
+So let's now show you the units of this calculation.
+
+15
+00:01:56,753 --> 00:02:00,796
+One gram per mole of photons.
+
+16
+00:02:00,796 --> 00:02:13,400
+This is an output from the system. One gram of dry biomass, or one gram of yield, per mole of photosynthetic photons.
+
+17
+00:02:13,400 --> 00:02:18,625
+So it's output divided by input, which is the efficiency of the system.
+
+18
+00:02:18,625 --> 00:02:26,129
+Now just quickly I can show you how we derive this--and let's make sure we're on black.
+
+19
+00:02:26,129 --> 00:02:30,847
+One gram, let's put it right over here.
+
+20
+00:02:30,847 --> 00:02:50,169
+A gram per meter² of ground area per day, divided by a mole of photons per meter² of ground area per day.
+
+21
+00:02:50,180 --> 00:02:56,199
+And you can see, the meter², the days cancel out, and we get grams per mole.
+
+22
+00:02:56,199 --> 00:03:05,509
+This mole per meter² right here is called the daily light integral.
+
+23
+00:03:05,508 --> 00:03:11,657
+DLI. It's a common measurement, moles per meter squared per day.
+
+24
+00:03:11,657 --> 00:03:18,277
+This is just biomass. This is tricky calculating the exact area because we get guard row effects.
+
+25
+00:03:18,277 --> 00:03:25,834
+But these are the input parameters to this. Now, where do these come from and how can we calculate yield?
+
+26
+00:03:25,834 --> 00:03:39,086
+I want to start by examining what to any plant biologist is the most important equation in the world.
+
+27
+00:03:39,086 --> 00:03:47,449
+Now, when I show this to physicist colleagues, they're pretty sure the most important equation in the world is E = mc².
+
+28
+00:03:47,449 --> 00:03:57,499
+What do you think this is? The most important equation in the world, particularly to any life scientist? Here it is.
+
+29
+00:03:57,498 --> 00:04:01,426
+Equations are inputs, and they go to outputs.
+
+30
+00:04:01,426 --> 00:04:09,579
+Now this is in every single high school biology textbook. It's in every textbook in college.
+
+31
+00:04:09,580 --> 00:04:19,471
+We have 20 courses on college campuses that emphasize this equation. Of course it helps to know what this is.
+
+32
+00:04:19,471 --> 00:04:24,000
+That is carbohydrate, CH₂O.
+
+33
+00:04:24,000 --> 00:04:31,380
+And this equation, by now you've figured it out, this is photosynthesis.
+
+34
+00:04:31,380 --> 00:04:34,240
+So now we look at this.
+
+35
+00:04:34,240 --> 00:04:46,312
+This takes a low--let's get a different color here--this takes a low-energy gas, CO₂. We use it to put out fires. And water.
+
+36
+00:04:46,312 --> 00:04:59,745
+Two really simple molecules. Very low energy. And it makes a high-energy solid food and, well, O₂ is rocket fuel.
+
+37
+00:04:59,745 --> 00:05:07,358
+So we get two very high energy outputs from two very low energy inputs. We often we don't think about that a lot.
+
+38
+00:05:07,358 --> 00:05:13,896
+We make students memorize the stoichiometry, but the energetics of this is what's really important.
+
+39
+00:05:13,896 --> 00:05:26,923
+Now, remember the first law of thermodynamics says "energy in equals energy out".
+
+40
+00:05:29,060 --> 00:05:40,080
+Everything has to follow the first law. How do we get two really low input molecules to go to two high input molecules?
+
+41
+00:05:40,081 --> 00:05:50,737
+The answer is, in more advanced books, light. And particularly photons. And particularly 10 photons.
+
+42
+00:05:50,737 --> 00:05:58,411
+This is close to the theoretical minimum number of photons to push this equation across.
+
+43
+00:05:58,411 --> 00:06:05,766
+So, how are we going to derive grams per mole of photons from this 10 photons?
+
+44
+00:06:05,766 --> 00:06:10,185
+Every book has this in it. The advanced books have the photons.
+
+45
+00:06:10,185 --> 00:06:22,123
+This has always disturbed me that it's written like this because it doesn't capture, for our students, the magnificence of this equation and how you get these high energy outputs.
+
+46
+00:06:22,124 --> 00:06:28,449
+So, I would like to propose that we revise the way we write this equation.
+
+47
+00:06:28,449 --> 00:06:31,181
+Here's the earth… BOOM!
+
+48
+00:06:31,180 --> 00:06:39,348
+Here is our low energy inputs, and here is our high energy outputs. And it's many steps to get up there.
+
+49
+00:06:39,348 --> 00:06:46,836
+And now, how do you get uphill from low energy to high? We bring in those 10 photons… KABOOM!
+
+50
+00:06:46,836 --> 00:06:55,062
+There’s a lot of energy in those photons. Now the energy balances because the 10 photons drive it uphill.
+
+51
+00:06:55,062 --> 00:07:09,507
+When we calculate the efficiency of this, and efficiency is--I'm going to abbreviate it--I'll write it out.
+
+52
+00:07:09,507 --> 00:07:18,068
+Efficiency of any system is just the output over the input.
+
+53
+00:07:21,216 --> 00:07:29,385
+So the output is carbohydrate, and the input is 10 photons.
+
+54
+00:07:29,386 --> 00:07:41,344
+When we do this ratio, we get 30% efficient, in theory. Here it is. Theoretical maximum 30%.
+
+55
+00:07:41,343 --> 00:07:45,620
+That doesn't sound very good for a theoretical maximum.
+
+56
+00:07:45,620 --> 00:07:52,437
+And engineers look at this and say, “Oh my goodness! 30%? That's all your important equation can do?”
+
+57
+00:07:52,437 --> 00:07:54,918
+And it's bothered me for a while.
+
+58
+00:07:54,918 --> 00:08:00,895
+So then I thought, wait a minute! I look at the biochemistry, and this is not one big step.
+
+59
+00:08:00,896 --> 00:08:06,545
+This is many, many little steps. This goes to this, and then this goes to this.
+
+60
+00:08:06,545 --> 00:08:09,461
+When we start to add up all those steps,
+
+61
+00:08:09,461 --> 00:08:21,735
+if you assume there's 23 steps, and that's about right, and each step is 95% efficient, now look at the math in this.
+
+62
+00:08:22,132 --> 00:08:28,836
+If we take point .95 to the 23rd power, that's 30% efficient.
+
+63
+00:08:28,836 --> 00:08:38,119
+So we should start thinking about photosynthesis as 23-automated steps, each one's 95% efficient,
+
+64
+00:08:38,119 --> 00:08:44,889
+and out the end we get carbohydrates and food energy.
+
+65
+00:08:44,889 --> 00:08:54,427
+This is where this whole analysis comes from is this equation balancing. Now, let's look at these 10 photons.
+
+66
+00:08:54,427 --> 00:09:02,724
+That's the theoretical minimum. How close can we get to that when we measure this in a plant?
+
+67
+00:09:03,298 --> 00:09:13,298
+Here's a graph of photosynthetic photon flux density down here. Increasing light, zero is dark, go all the way up to 1,000.
+
+68
+00:09:13,298 --> 00:09:25,381
+And this is the quantum yield. So this ratio, moles of carbon fixed per mole of photons absorbed, is called quantum yield.
+
+69
+00:09:25,381 --> 00:09:35,022
+Remember I said 10? 10 is called the quantum requirement to this. So one over 10 is 0.10.
+
+70
+00:09:35,023 --> 00:09:41,862
+So same thing just different units. Now look at this. We can't quite get to 10, but we get close up here.
+
+71
+00:09:41,861 --> 00:09:50,100
+The type of plant really doesn't matter as long as it's a nice green leaf. Tomato. Spinach.
+
+72
+00:09:50,100 --> 00:10:00,480
+Different kind of tomato. In this case, Grand Rapids leaf is quite a light yellow leaf, and it had a little bit lower quantum yield.
+
+73
+00:10:00,480 --> 00:10:04,302
+Now when I say the leaf doesn't matter, purple.
+
+74
+00:10:04,302 --> 00:10:13,976
+Purple leaf lettuce, that is full of anthocyanins, and anthocyanins are a protective pigment in leaves.
+
+75
+00:10:13,976 --> 00:10:19,828
+They absorb solar energy, and they don't fix carbon in photosynthesis.
+
+76
+00:10:19,828 --> 00:10:29,375
+So when we have purple leaf cultivars, their quantum yield is fundamentally less than nice green leaf cultivars.
+
+77
+00:10:29,375 --> 00:10:36,000
+We only get to these very low, very high quantum yields and very low light.
+
+78
+00:10:36,000 --> 00:10:48,321
+So if we're gonna be more real about this, let's assume that we're growing the plants at 400 micromoles. It’s more typical.
+
+79
+00:10:48,321 --> 00:11:01,031
+And we go up here. And we go across here. And we're at a quantum yield of 0.08 and quantum requirement of 12.
+
+80
+00:11:01,030 --> 00:11:10,674
+So let's take this now and refine our model of grams per mole of photons.
+
+81
+00:11:12,000 --> 00:11:15,508
+There's 400 µmols.
+
+82
+00:11:16,769 --> 00:11:23,254
+We know that carbohydrate is 30 grams per mole. This is pretty simple.
+
+83
+00:11:23,254 --> 00:11:33,952
+Carbohydrate is 12. Hydrogen adds two. Oxygen adds 16. That's 30 grams per mole.
+
+84
+00:11:34,017 --> 00:11:49,338
+12 moles of photons gives us 30 grams of biomass, and the efficiency of this system then, output over input, is 30 grams per 12 moles = 2.5 grams.
+
+85
+00:11:49,337 --> 00:11:56,947
+This is significantly higher than what we talked about a minute ago is one gram per mole of photons.
+
+86
+00:11:56,947 --> 00:12:02,295
+What's the difference in this? The key here is that this is one way.
+
+87
+00:12:02,296 --> 00:12:14,677
+When we run this in the light, the first stable product out of photosynthesis is not just carbohydrate, it’s sucrose.
+
+88
+00:12:16,817 --> 00:12:25,603
+If we're only running at one direction, we get sucrose, and even sugarcane is not pure sucrose.
+
+89
+00:12:25,604 --> 00:12:36,860
+We have proteins in plants, lipids, lignin, cellulose, all kinds of things. How do those things get made, if we're running this only to get sucrose?
+
+90
+00:12:36,860 --> 00:12:46,248
+They get made at night, and they get made continuously by running this equation backwards.
+
+91
+00:12:46,248 --> 00:12:55,232
+This direction, and then we get ATP energy.
+
+92
+00:12:55,231 --> 00:13:00,342
+And that ATP is used to synthesize all the other things in plants.
+
+93
+00:13:00,342 --> 00:13:04,349
+When we run it backwards, we call it respiration.
+
+94
+00:13:04,350 --> 00:13:16,465
+So respiration takes about 40% of this. After we get here, about 40% is run backwards to make everything else in plants.
+
+95
+00:13:17,131 --> 00:13:28,390
+We can measure this rigorously by canopy gas exchange. This is a picture of some of our chambers.
+
+96
+00:13:28,390 --> 00:13:35,885
+They're little transparent chambers. We measure the gases coming in and out. We keep track of all the CO₂ in this system.
+
+97
+00:13:35,885 --> 00:13:42,858
+And we can keep track of the exact number of photons from minute-to-minute.
+
+98
+00:13:42,859 --> 00:13:50,182
+The exact rate of sucrose production, and then respiration. Now respiration runs in the light and the dark all the time.
+
+99
+00:13:50,182 --> 00:13:56,763
+So it's running back and forth. So we never get 2.5 grams of biomass. That would only be sucrose.
+
+100
+00:13:56,763 --> 00:14:02,228
+How efficient is respiration? 60%.
+
+101
+00:14:05,102 --> 00:14:11,575
+I'm off the edge of the screen, I need to go back--60%.
+
+102
+00:14:11,576 --> 00:14:17,240
+Respiration is net photosynthesis divided by gross photosynthesis.
+
+103
+00:14:17,240 --> 00:14:24,856
+We also call that daily carbon gain divided by gross photosynthesis. That ratio’s about 60.
+
+104
+00:14:24,856 --> 00:14:27,404
+60, how do we get up to that number?
+
+105
+00:14:27,404 --> 00:14:34,211
+Jonathan France was a PhD student with me many years ago, and he spent his whole time studying this.
+
+106
+00:14:34,211 --> 00:14:40,192
+Couldn't we make respiration more efficient? Couldn't we get this higher than 60%?
+
+107
+00:14:40,192 --> 00:14:50,067
+And we eventually did. We got it to like 65%. We couldn't improve it much. Cold nights. Long days. Continuous light.
+
+108
+00:14:50,067 --> 00:14:54,536
+We were close to fixed at 60%.
+
+109
+00:14:54,535 --> 00:15:07,707
+So now we take 2.5 grams, going this way, times 60% equals, now we're down to 1.5 grams per mole.
+
+110
+00:15:07,707 --> 00:15:15,341
+And we call this number Photon Conversion Efficacy or PCE.
+
+111
+00:15:15,341 --> 00:15:24,577
+So, in the first slide I said we can get one gram per mole of photons. This is 1.5 grams.
+
+112
+00:15:24,577 --> 00:15:34,363
+But this number assumes every photon gets absorbed by the plants. None of them bounce off. None of them hit the ground.
+
+113
+00:15:34,364 --> 00:15:38,680
+100% of the photons get absorbed. And that never happens.
+
+114
+00:15:38,679 --> 00:15:44,838
+Even in a perfect canopy, a few percent bounce off and go back up to the ceiling.
+
+115
+00:15:44,839 --> 00:15:52,752
+Some hit the walls, and even worse, some hit the ground without hitting a leaf and those are completely gone.
+
+116
+00:15:52,751 --> 00:16:04,260
+To go from this perfect system where we just have photosynthesis and respiration to a real system, we need a little more sophisticated model.
+
+117
+00:16:04,260 --> 00:16:17,000
+And that sophisticated model is called the Energy Cascade model that I've worked on with other people for many years, and we have several papers about it.
+
+118
+00:16:17,000 --> 00:16:24,961
+Here's the model. Here's our two parameters right here that we're talking about.
+
+119
+00:16:24,961 --> 00:16:35,163
+And in this typical case right here, I'm using 0.06 because if it's higher light levels, we get a little lower quantum yield.
+
+120
+00:16:35,163 --> 00:16:40,259
+But the very first step in this model is fraction of absorbed photons.
+
+121
+00:16:40,259 --> 00:16:46,304
+And we're assuming 80%. This number is more like 50% in typical field production,
+
+122
+00:16:46,304 --> 00:16:54,000
+but with high planting density and maybe systems to move the plants apart, we capture more photons.
+
+123
+00:16:54,000 --> 00:17:06,811
+80% times quantum yield times carbon use efficiency gives us biomass per mole of incident photons.
+
+124
+00:17:06,811 --> 00:17:10,260
+And finally the fourth one is called harvest index.
+
+125
+00:17:10,260 --> 00:17:16,288
+That's the ratio of usable or edible product to total plant biomass.
+
+126
+00:17:16,288 --> 00:17:27,087
+In the case of lettuce, this number is 80-85%. We don't eat the roots. We don't eat the stem base. Lettuce is almost completely edible.
+
+127
+00:17:27,087 --> 00:17:36,300
+But in typical crop plants, we're at 50%. Wheat and rice. That’d be tremendous if we could get those to 50%.
+
+128
+00:17:36,300 --> 00:17:39,525
+They're more like 40% typically.
+
+129
+00:17:39,526 --> 00:17:46,124
+So we take this. We get moles of carbon fixed per mole of photons,
+
+130
+00:17:46,124 --> 00:17:53,581
+and now we multiply by 30 grams per mole, and we're down to 0.4 grams per mole,
+
+131
+00:17:53,580 --> 00:17:59,782
+well below our one gram per mole that I advertised on that first slide.
+
+132
+00:17:59,782 --> 00:18:06,493
+So now let's look at potential. What do we have to do to get this up to one?
+
+133
+00:18:06,493 --> 00:18:15,986
+Here's a set of numbers. If we improve each one of these just slightly. We get that 80% absorbed to 90%, slight improvement.
+
+134
+00:18:15,987 --> 00:18:26,108
+Quantum yield, we get it from 0.06 to 0.08. Low light and--it's one thing to get 0.08, but keep it there over the whole lifecycle.
+
+135
+00:18:26,107 --> 00:18:31,086
+When the plants are old, try to still have this high quantum yield.
+
+136
+00:18:31,086 --> 00:18:39,966
+Improve carbon use efficiency to 0.65. Go to a very high harvest index crop. Multiply these together.
+
+137
+00:18:39,965 --> 00:18:44,851
+Now we're at one gram per mole. There's the magic one gram per mole.
+
+138
+00:18:44,852 --> 00:18:54,527
+This is the potential yield. And in some systems where we very carefully measure this, we can get one gram per mole.
+
+139
+00:18:54,527 --> 00:19:01,180
+It is not an average, it's a potential. And you've got to hit it every single day of the lifecycle.
+
+140
+00:19:01,180 --> 00:19:06,452
+Very hard to do, but it's still a potential yield.
+
+141
+00:19:06,509 --> 00:19:16,193
+Most indoor farms that we have analyzed are down around 0.4 grams per mole now.
+
+142
+00:19:16,193 --> 00:19:24,524
+Mostly because they're not absorbing all the light up here. Many of the photons don't fall on leaves.
+
+143
+00:19:24,525 --> 00:19:36,730
+By the way, this quantum yield only is achievable with very elevated CO₂. Like 1,200 parts per million. It's 400 outside.
+
+144
+00:19:36,730 --> 00:19:42,449
+That causes photorespiration. We can't have that. To get to this number you have to have high CO₂.
+
+145
+00:19:42,449 --> 00:19:51,983
+It’d be much less than this without high CO₂. But we can enriched with CO₂ in indoor agriculture.
+
+146
+00:19:51,982 --> 00:19:59,065
+This approach came from this article right here, “Exploring the Limits of Crop productivity,”
+
+147
+00:19:59,065 --> 00:20:05,770
+that I wrote with my colleague Frank Salisbury about, well 1988, that's over 30 years ago.
+
+148
+00:20:05,770 --> 00:20:11,725
+This particular article helped launch my career as a young scientist.
+
+149
+00:20:11,726 --> 00:20:17,000
+Showing the math, and then showing what we could get to in potential yield.
+
+150
+00:20:17,000 --> 00:20:24,038
+And of course we did this with wheat and kept track of all those parameters, and that was the basis of the paper.
+
+151
+00:20:24,038 --> 00:20:35,872
+So now let's look, after we calculate potential yield, let's do an economic analysis of indoor ag.
+
+152
+00:20:35,872 --> 00:20:44,779
+We know the cost of electricity. If we know we could get one gram per mole, what's the economics of this?
+
+153
+00:20:44,779 --> 00:20:50,330
+This is, what I'm going to show you on this slide now is the basis from this paper.
+
+154
+00:20:50,330 --> 00:20:59,700
+It was an article we published in “Nature.” “LEDs for photons, physiology, and food.”
+
+155
+00:20:59,701 --> 00:21:02,735
+This is just last year, 2018.
+
+156
+00:21:02,734 --> 00:21:13,735
+Assuming 10 cents a kilowatt-hour, which is a sort of a national average, cost of photons as a percent of the market price.
+
+157
+00:21:13,736 --> 00:21:24,345
+So we took the market price as high as we could get. Gourmet, premium quality lettuce. And look at this, 1% and 5%.
+
+158
+00:21:24,718 --> 00:21:34,087
+No wonder people are rushing to do indoor agriculture for leafy microgreens and for lettuce.
+
+159
+00:21:34,087 --> 00:21:48,259
+But, most of the facilities now where we have 5%, they're at more like 30% of the cost of photons as a percent of market price.
+
+160
+00:21:48,259 --> 00:21:59,712
+And that's because the systems are not yet optimized. They can run with 30% energy, but they could get down to 5%.
+
+161
+00:21:59,712 --> 00:22:03,899
+Now, let's look at tomatoes in this system.
+
+162
+00:22:03,900 --> 00:22:12,186
+Tomatoes have a much lower harvest index. You throw away the leaves and stems and roots. You only eat the tomatoes.
+
+163
+00:22:12,185 --> 00:22:18,765
+The tomatoes don't have as much water as lettuce. Lettuce is 95% water,
+
+164
+00:22:18,766 --> 00:22:24,843
+and we only need photosynthesis to grow the 5% that's dry weight. But tomatoes are much harder.
+
+165
+00:22:24,843 --> 00:22:30,706
+When we go to tomatoes we get 18%. It's harder to grow tomatoes than these.
+
+166
+00:22:30,705 --> 00:22:37,549
+Still possible, but boy, we're going to have to have optimal conditions to ever think about growing tomatoes.
+
+167
+00:22:37,549 --> 00:22:41,596
+Now let's look at other vegetables. Let's take broccoli.
+
+168
+00:22:41,596 --> 00:22:48,980
+Lots of broccoli we can't sell: stems, leaves, roots, and broccoli is more dry weight and less water.
+
+169
+00:22:48,980 --> 00:22:55,545
+And it doesn't command the premium price that lettuce and tomatoes do.
+
+170
+00:22:55,545 --> 00:23:03,009
+General vegetables, the cost of the photons is equal to the market value of the product.
+
+171
+00:23:03,009 --> 00:23:09,059
+So unless we can find a way to get consumers to pay a lot more for general vegetables,
+
+172
+00:23:09,059 --> 00:23:14,534
+including things like strawberries, it's going to be very, very difficult.
+
+173
+00:23:14,535 --> 00:23:19,823
+And by this analysis, at 10 cents a kilowatt hour, it's not going to be cost-effective.
+
+174
+00:23:19,823 --> 00:23:26,642
+The electric cost is going to be equal to the market value, and you still have labor. You have depreciation.
+
+175
+00:23:26,642 --> 00:23:30,701
+You have lots of other costs besides the photon costs.
+
+176
+00:23:30,701 --> 00:23:36,000
+Even worse--rice or wheat.
+
+177
+00:23:36,623 --> 00:23:42,021
+The value of the photons is a hundred times greater than the value of the rice and wheat.
+
+178
+00:23:42,021 --> 00:23:50,579
+We are never going to grow our staple crops without sunlight. We need free sunlight to grow these staple crops.
+
+179
+00:23:50,579 --> 00:23:57,284
+One way to look at this—the rapidly increasing cost of photons—is the market price.
+
+180
+00:23:57,285 --> 00:24:03,038
+These are high market price. These are low market price. That's what drives this cost of photons up.
+
+181
+00:24:03,038 --> 00:24:05,630
+And then secondly, the harvest index.
+
+182
+00:24:05,630 --> 00:24:14,945
+These have a high harvest index and it decreases down to 50%. There are tomato lines that are 70%.
+
+183
+00:24:14,944 --> 00:24:20,569
+So we could potentially do a little bit better with tomatoes.
+
+184
+00:24:20,569 --> 00:24:26,937
+The point here is tomatoes are much, much harder to grow though than lettuce in indoor ag.
+
+185
+00:24:27,930 --> 00:24:35,231
+Now let's do an analysis of what we could do--and this is my final set of slides in this talk--
+
+186
+00:24:35,231 --> 00:24:46,990
+what we could do with solar panels and LEDs so that we didn't have to use fossil fuels to get all that electricity.
+
+187
+00:24:46,990 --> 00:24:48,683
+Let's analyze this.
+
+188
+00:24:48,683 --> 00:25:00,221
+What we're going to compare--this is sunlight. If we do total energy in sunlight, it's 30 mega joules per meter² per day of total short wave energy
+
+189
+00:25:00,221 --> 00:25:09,210
+and 60 moles of photosynthetic photons per day. Now this is what drives the photosynthesis.
+
+190
+00:25:09,210 --> 00:25:12,773
+And the first step here is this is what drives solar panels.
+
+191
+00:25:12,772 --> 00:25:15,011
+So let's do this side first.
+
+192
+00:25:15,011 --> 00:25:23,693
+60 moles comes through a greenhouse, 70% transmission. This is a good greenhouse. It's a design goal for a greenhouse,
+
+193
+00:25:23,693 --> 00:25:30,810
+and obviously we get with this we get 42 moles, 70% of this, transmitted to the plant canopy.
+
+194
+00:25:30,810 --> 00:25:37,220
+Now let's analyze this side. First step, photovoltaic panels, 20% efficient.
+
+195
+00:25:37,220 --> 00:25:48,173
+So that's 30, goes to six moles per meter square per day. That is captured as electricity from the sun per meter² of solar panels.
+
+196
+00:25:48,173 --> 00:26:01,941
+Now we take the electricity. Put it through LEDs. Our very best LEDs can get to three micromoles per Joule of photons.
+
+197
+00:26:01,941 --> 00:26:04,534
+Micromoles of photons per Joule.
+
+198
+00:26:04,534 --> 00:26:13,024
+M is 10 to the six, this is 10 to the minus six, so this is three times six = 18.
+
+199
+00:26:13,023 --> 00:26:22,935
+18 moles of photons delivered to the plant canopy with solar photo takes. And it’s 42 here. This is a bigger number than this.
+
+200
+00:26:22,935 --> 00:26:35,530
+It takes more than two times the area of solar panels to make the equivalent of what we could get in a greenhouse with nothing. Just a glass greenhouse.
+
+201
+00:26:35,530 --> 00:26:39,075
+So I made a diagram to emphasize that point.
+
+202
+00:26:39,075 --> 00:26:47,583
+This is solar panels in a field. 2.3 acres of solar panels feeding electricity to light up one area.
+
+203
+00:26:47,583 --> 00:26:55,244
+So, we're not there for direct use of solar energy through LEDs.
+
+204
+00:26:55,243 --> 00:27:04,432
+But, you say solar panels are getting better. LEDs are getting better. Now let's calculate the potential of this.
+
+205
+00:27:04,432 --> 00:27:14,653
+What if we peer into the future and look at what solar panels could be and what LEDs could be. Can we get this ratio better?
+
+206
+00:27:14,653 --> 00:27:22,209
+Here's the same graph potential. Kept this the same, 70%. We might get this higher with special coverings.
+
+207
+00:27:22,209 --> 00:27:26,423
+But let's keep this side the same. Now we go to 30% solar panels.
+
+208
+00:27:26,423 --> 00:27:31,551
+Now these, the stuff we fly on satellites, they're expensive. They're 30%.
+
+209
+00:27:31,551 --> 00:27:40,311
+So it's possible to get these, and at some point in the future, we'll have consumer panels that are 30% efficient.
+
+210
+00:27:40,311 --> 00:27:52,747
+And the reason they're so efficient is they can use energy out here in shortwave energy by layering cells that photosynthesis can't use.
+
+211
+00:27:52,748 --> 00:28:01,884
+Photosynthesis uses this part of the curve and solar panels, by layering them, can use these low-energy, near-infrared photons.
+
+212
+00:28:01,884 --> 00:28:04,838
+So they get to 30%.
+
+213
+00:28:04,838 --> 00:28:07,942
+Now we've captured nine megajoules of electricity.
+
+214
+00:28:07,942 --> 00:28:17,586
+Now the theoretical maximum. if we had a 100% efficient LEDs, which we're really not going to get there, but we might get to 90-95%.
+
+215
+00:28:17,586 --> 00:28:24,428
+We can get close. 9.7 times 4.7 = 42.
+
+216
+00:28:24,428 --> 00:28:30,205
+So potentially we can have a system where that's 1:1.
+
+217
+00:28:30,204 --> 00:28:35,560
+The one acre of solar panels feeds one acre of plants and they don't have a greenhouse.
+
+218
+00:28:35,560 --> 00:28:41,959
+Now this is the cost of building a greenhouse versus all these high efficiency solar panels and LEDs.
+
+219
+00:28:41,960 --> 00:28:48,369
+This doesn't show economic, it just shows energy flow in this system.
+
+220
+00:28:48,368 --> 00:28:59,874
+So one final slide. This is from a recent paper that is now in review with my colleagues, Paul Kusuma and Morgan Pattison.
+
+221
+00:28:59,874 --> 00:29:06,000
+It's called “From physics to fixtures to food: Potential efficacy of LEDs.”
+
+222
+00:29:06,000 --> 00:29:13,972
+This is peering into the future. These numbers come from the chip manufacturers of LEDs.
+
+223
+00:29:13,972 --> 00:29:19,230
+Not the ones that make the fixtures, just the ones that make the chip. How good can they get those chips?
+
+224
+00:29:19,230 --> 00:29:24,677
+Here's the colors we use. We use blues, we use reds, we use far-reds, and we use whites.
+
+225
+00:29:24,678 --> 00:29:29,376
+And cool white is the most efficient of the whites. Look at these efficiencies now.
+
+226
+00:29:29,375 --> 00:29:36,170
+This is watts of photosynthetic energy out, per watt of electricity in.
+
+227
+00:29:36,170 --> 00:29:42,106
+Wow! 88% for blue LEDs. That is really impressive.
+
+228
+00:29:42,106 --> 00:29:50,426
+Whites are phosphor-converted blue. So they take blue with a phosphor, and we get white.
+
+229
+00:29:50,426 --> 00:29:58,245
+So there's some loss in that, and so whites are 80%. And the reds are less, and the far-reds are less.
+
+230
+00:29:58,246 --> 00:30:05,310
+Now this is energy. But remember energy doesn't drive photosynthesis, the number of photons do.
+
+231
+00:30:05,309 --> 00:30:12,245
+So this column is the micromoles of photons per Joule.
+
+232
+00:30:12,246 --> 00:30:25,795
+Let me review this number. This is micromoles per second over joules per second.
+
+233
+00:30:25,795 --> 00:30:33,066
+And the seconds cancel, so it is just micromoles per Joule, and a Joule per second is a watt.
+
+234
+00:30:33,066 --> 00:30:36,644
+So it simplifies to micromoles per Joule.
+
+235
+00:30:36,644 --> 00:30:44,513
+Look at these numbers, 3.3 up to 4. These are impressive numbers. We don't have fixtures this good yet,
+
+236
+00:30:44,513 --> 00:30:50,809
+but on the horizon we could see where they could get this good for these colors of light.
+
+237
+00:30:50,809 --> 00:30:56,126
+Now I got a final box here that I haven't shown you yet. What's in that box?
+
+238
+00:30:56,126 --> 00:31:00,423
+If there's efficiency shown this way. Efficacy.
+
+239
+00:31:00,423 --> 00:31:09,671
+What about the cost of these? Which do you think is the most cost-effective, the easiest to make?
+
+240
+00:31:09,671 --> 00:31:17,362
+Most lighting, almost all lighting, is for humans. And so humans need white LEDs.
+
+241
+00:31:17,362 --> 00:31:24,900
+So, the white LEDs are much much cheaper, just because of economy of scale of this.
+
+242
+00:31:24,900 --> 00:31:34,137
+So now let's look at the price. Wow! 1x for whites. And we go to 10x for reds. And 30x for these.
+
+243
+00:31:34,136 --> 00:31:40,990
+These drive the cost of fixtures, that drive the cost of what we're going to do in indoor agriculture.
+
+244
+00:31:40,990 --> 00:31:48,084
+So this is peering into the future and looking at what we can produce.
+
+245
+00:31:48,084 --> 00:31:58,372
+All of our analysis indicates that leafy greens can be very cost-effective once we get the systems optimized.
+
+246
+00:31:58,372 --> 00:32:12,256
+Tomatoes would be much harder, and things like strawberries and broccoli are extremely difficult to ever produce without free sunlight.
+
+247
+00:32:12,256 --> 00:32:17,402
+Thanks for listening. I look forward to another video with you.
+

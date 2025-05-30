@@ -1,0 +1,1040 @@
+[SPEAKER_02]: This is a production of Cornell
+University.
+[SPEAKER_00]: Good afternoon.
+[SPEAKER_00]: Thanks everybody for coming.
+[SPEAKER_00]: Today we're going to talk about sugarcane.
+[SPEAKER_00]: We're also going to talk about general
+prediction, which we're talking here,
+[SPEAKER_00]: but maybe sugarcane is something we're
+about here.
+[SPEAKER_00]: So for those of us that didn't see
+sugarcane in the field yet, that's
+[SPEAKER_00]: sugarcane.
+[SPEAKER_00]: Sugarcane, as you might know, is used for
+producing sugar.
+[SPEAKER_00]: And also another very common use of
+sugarcane is to produce ethanol,
+[SPEAKER_00]: both for human consumption and for cars
+consumption.
+[SPEAKER_00]: And that happens especially in Brazil,
+which is the largest producer of sugarcane
+[SPEAKER_00]: in the world.
+[SPEAKER_00]: Sugarcane is grown in Brazil, the top
+producer, followed by India and China.
+[SPEAKER_00]: And despite not being among the 10 most
+planted crops in the world in terms of
+[SPEAKER_00]: area, it's the one that produces the most
+in terms of total production.
+[SPEAKER_00]: And just some more interesting facts about
+sugarcane.
+[SPEAKER_00]: It's also a C4 plant.
+[SPEAKER_00]: It's a high polyploid species,
+so it's actually the varieties,
+[SPEAKER_00]: the cones that we see in the field today,
+they are hybrids from two polyploid
+[SPEAKER_00]: species, saccharinococinidone and
+saccharinococinium.
+[SPEAKER_00]: It's also out-crossing, and it's a
+commonly propagated crop.
+[SPEAKER_00]: So it's going to have some impacts on how
+we manage the breeding program.
+[SPEAKER_00]: And also it's a perennial crop,
+so harvest happens every year after a
+[SPEAKER_00]: growing season, and then growers can get
+an average of five harvests from each
+[SPEAKER_00]: crop.
+[SPEAKER_00]: So why to do genome selection for
+sugarcane?
+[SPEAKER_00]: So genome selection is being a tool that's
+working very well with quantitative
+[SPEAKER_00]: traits, and those are the ones that are
+interesting to sugarcane.
+[SPEAKER_00]: Also sugarcane has really long cycles,
+actually being considered a cycle since
+[SPEAKER_00]: the time that we do a cross until the time
+that we can do a cross again.
+[SPEAKER_00]: And actually the traits that are
+interesting are also quantitative.
+[SPEAKER_00]: That's why we went on to study how good
+can genomes have and how action works for
+[SPEAKER_00]: sugarcane.
+[SPEAKER_00]: With this overview of my presentation,
+I'm going to start describing my data
+[SPEAKER_00]: sets, both the molecular markers and the
+field data, and then present the three
+[SPEAKER_00]: main results that I have, which are
+prediction for clones, prediction for
+[SPEAKER_00]: parents, and then another way of looking
+to the molecular markers in sugarcane.
+[SPEAKER_00]: So field data.
+[SPEAKER_00]: So I'm going to give an overview of the
+breeding program in sugarcane in broad
+[SPEAKER_00]: terms.
+[SPEAKER_00]: So we think the breeding program is some
+selection stages.
+[SPEAKER_00]: We start with the first stage,
+which is actually called a family stage,
+[SPEAKER_00]: where families are planted together and
+evaluated together for traits like bricks
+[SPEAKER_00]: and weight.
+[SPEAKER_00]: Then those families that are selected,
+the plants that are selected are clonally
+[SPEAKER_00]: propagated, and then we start having a
+third stage, the initial plants are not
+[SPEAKER_00]: only propagated, but then with larger
+plots we can have a better phenotype of
+[SPEAKER_00]: the plants.
+[SPEAKER_00]: So this happens normally around two years
+to move from one stage to the other.
+[SPEAKER_00]: Then we get to the third stage,
+when we start having bigger plots where we
+[SPEAKER_00]: can have measurements that we consider
+important for selection like sucrose and
+[SPEAKER_00]: weight.
+[SPEAKER_00]: And we can see the performance of the
+varieties in a better resolution.
+[SPEAKER_00]: At the same time, here is still normally
+on a single location, and then on the
+[SPEAKER_00]: following stage, then there's further
+multiplication where plants can be
+[SPEAKER_00]: evaluated in different locations and
+actually through many more years.
+[SPEAKER_00]: So the data that I'm using here comes from
+CPC, as Mark mentioned, which is the
+[SPEAKER_00]: Sugarcane Technology Center in Brazil.
+[SPEAKER_00]: Here's the translation.
+[SPEAKER_00]: Here's the overview of the headquarters
+and also our breeding station that stays
+[SPEAKER_00]: here in the north of Brazil.
+[SPEAKER_00]: Those are some growing areas in Brazil,
+the main growing areas.
+[SPEAKER_00]: So let me go a little more in details
+about my data sets.
+[SPEAKER_00]: So I have data from two breeding cycles,
+what I'm calling cycle 5 and 06.
+[SPEAKER_00]: They follow the same scheme that I
+described before, but on the third stage,
+[SPEAKER_00]: we had the actual phenotyping that I'm
+going to describe on the first,
+[SPEAKER_00]: on the following chapter, and then used on
+the following ones.
+[SPEAKER_00]: So on the third stage, we got data that
+were on all these traits, bricks,
+[SPEAKER_00]: all fiber and weight, and also sequencing
+data from which we got SNP information.
+[SPEAKER_00]: So basically, the molecular mark
+information that we have come from the
+[SPEAKER_00]: third stage, and we have two cycles to do
+our analysis.
+[SPEAKER_00]: So just another statistics from these data
+sets.
+[SPEAKER_00]: Here, I'm showing the size of the families
+in these third stage, and we see that we
+[SPEAKER_00]: have some families that are pretty large,
+but most of them are small.
+[SPEAKER_00]: So there will be some imbalance in terms
+of the families on the third stage due to
+[SPEAKER_00]: selection.
+[SPEAKER_00]: So let's take a look at the molecular
+marker data.
+[SPEAKER_00]: So we did sequencing for genotyping from
+about 2,000 samples.
+[SPEAKER_00]: We used the technology that uses some
+probes to capture the locations in the
+[SPEAKER_00]: genome that we are actually getting our
+sequencing from.
+[SPEAKER_00]: And then from that, we got a raw data set
+of more than 200,000 SNPs that later was
+[SPEAKER_00]: further filtered out.
+[SPEAKER_00]: So we got to a final data set with 55,000
+markers in more than 1,700 clones.
+[SPEAKER_00]: A bit more on the molecular marker
+information.
+[SPEAKER_00]: So here in my initial analysis,
+I'm going to consider the SNP information
+[SPEAKER_00]: in terms of the presence or absence of the
+lews.
+[SPEAKER_00]: So basically, I'm going to use a simple
+representation where I get a distinction
+[SPEAKER_00]: between the heterozygous state from the
+homozygous state, only that.
+[SPEAKER_00]: We're going to talk more about the last
+slide.
+[SPEAKER_00]: So with the marker information,
+we estimated a relationship from the
+[SPEAKER_00]: clones.
+[SPEAKER_00]: And here I'm going to show a broad view of
+the relationship between the individuals
+[SPEAKER_00]: based on a principal component analysis.
+[SPEAKER_00]: Here, actually, those three plots are the
+same.
+[SPEAKER_00]: It's just the colors that are different.
+[SPEAKER_00]: And what I'm showing here in the colors
+are, first here, the cycles.
+[SPEAKER_00]: That's where the clones came from.
+[SPEAKER_00]: So basically, I'm showing that there's no
+particular difference between the clones
+[SPEAKER_00]: from the two certain cycles.
+[SPEAKER_00]: On the other hand, when I start putting
+colors based on which female parent or
+[SPEAKER_00]: male parent the clone came from,
+you start to see a relation between the
+[SPEAKER_00]: colors and the dots.
+[SPEAKER_00]: So basically, the structure that we can
+see among those clones is more related to
+[SPEAKER_00]: the parents that they came from,
+then from the cycles.
+[SPEAKER_00]: And that kind of makes sense when you see
+how the parents were used in the different
+[SPEAKER_00]: cycles.
+[SPEAKER_00]: We have some overlap between parents.
+[SPEAKER_00]: And also, even when the parents don't
+overlap, they are related.
+[SPEAKER_00]: Move on.
+[SPEAKER_00]: So we also have pedigree information from
+those clones that we use to estimate
+[SPEAKER_00]: relationships between the clones.
+[SPEAKER_00]: And here, I'm doing a comparison between
+the marker relationships and the pedigree
+[SPEAKER_00]: relationships.
+[SPEAKER_00]: There is an overall correlation of 0.63,
+not that high, between those estimates.
+[SPEAKER_00]: And you are able to detect some outlier
+clones that we decided to not use in the
+[SPEAKER_00]: following analysis.
+[SPEAKER_00]: Basically, they look like replicated
+individuals.
+[SPEAKER_00]: Maybe there's some mislabeling.
+[SPEAKER_00]: And then this comparison allowed us to do
+this filtering.
+[SPEAKER_00]: Those are 17 pairs.
+[SPEAKER_00]: OK, so I'm going to show the first results
+that are genome prediction for clonal
+[SPEAKER_00]: prediction.
+[SPEAKER_00]: So let me just explain what we did.
+[SPEAKER_00]: So basically, we did a two-step analysis.
+[SPEAKER_00]: The first step, we got blues based on the
+raffinotip records.
+[SPEAKER_00]: And then used those blues on the second
+step as our raffinotip to do the
+[SPEAKER_00]: predictions together with the markers and
+the pedigree information.
+[SPEAKER_00]: We are using here only data from the stage
+3.
+[SPEAKER_00]: Here are the linear models that are used
+on the first step based on a point out
+[SPEAKER_00]: that we had a term for the clones.
+[SPEAKER_00]: And also, we controlled for spatial
+relationships between the plants on the
+[SPEAKER_00]: field.
+[SPEAKER_00]: On a second stage, then you have the
+linear model with two random effects,
+[SPEAKER_00]: one that's correlated using the
+relationship derived from pedigrees and
+[SPEAKER_00]: another from the markers.
+[SPEAKER_00]: And I'm going to do a comparison later in
+which I use one term or the other.
+[SPEAKER_00]: And here's how we're doing our validation
+of the predictions.
+[SPEAKER_00]: So basically, there are going to be two
+ways to compare.
+[SPEAKER_00]: One in which I'm doing cross-validation
+with clones from the cycle 05,
+[SPEAKER_00]: which is a larger data set.
+[SPEAKER_00]: And then so basically splitting the data
+in 10 folds with six replicates.
+[SPEAKER_00]: And in another approach, we're going to
+use the whole data set from cycle 05 to
+[SPEAKER_00]: predict the values from cycle 06.
+[SPEAKER_00]: So here, before showing the results,
+I'm going to just present some broad-sense
+[SPEAKER_00]: heritability estimates from the traits
+that I'm considering here.
+[SPEAKER_00]: And I'm going to also use this to talk a
+little more about the traits that I have.
+[SPEAKER_00]: So basically, we have the ones that I
+mentioned, bricks, fiber, pole,
+[SPEAKER_00]: and weight.
+[SPEAKER_00]: But they were measured in some
+combinations of conditions that are
+[SPEAKER_00]: different.
+[SPEAKER_00]: So we have a first harvest.
+[SPEAKER_00]: And a second harvest for the stage 3 data
+set.
+[SPEAKER_00]: And also, we have the two cycles that I
+mentioned.
+[SPEAKER_00]: And we also have two seasons.
+[SPEAKER_00]: So in both cases, half the population were
+phenotyped on the beginning of the season.
+[SPEAKER_00]: That's the early set.
+[SPEAKER_00]: And then another half of the population in
+the end of the season.
+[SPEAKER_00]: That's the late season.
+[SPEAKER_00]: That's why we have so little data.
+[SPEAKER_00]: So many combinations of the traits.
+[SPEAKER_00]: And they are basically considered as
+individual traits in this analysis.
+[SPEAKER_00]: So here's the first results from crowds
+validation.
+[SPEAKER_00]: Here, then we have the four traits,
+bricks, fiber, pole, and weight.
+[SPEAKER_00]: And the first and the second harvest.
+[SPEAKER_00]: And in these bars, we have both early and
+late traits.
+[SPEAKER_00]: And you can see here that we have overall
+prediction accuracy ranging from a little
+[SPEAKER_00]: above 0.1 to close to 0.4.
+[SPEAKER_00]: And there is actually not a clear trend
+between harvest 1 and harvest 2 and
+[SPEAKER_00]: between early and late.
+[SPEAKER_00]: I cannot say that I can always predict
+better for one or the other.
+[SPEAKER_00]: And between the traits themselves,
+in this particular case, there's a little
+[SPEAKER_00]: difference between them.
+[SPEAKER_00]: But we can see that fiber is a bit better
+than weight.
+[SPEAKER_00]: In this crowd validation, we're basically
+separating the early and late sets.
+[SPEAKER_00]: But another analysis that we can do is to
+put them together.
+[SPEAKER_00]: That's what I'm showing here.
+[SPEAKER_00]: So basically, by doing these, I increase
+the training sets.
+[SPEAKER_00]: I have a larger population to do my
+training.
+[SPEAKER_00]: And then I can do prediction to both the
+same individual sets, early or late,
+[SPEAKER_00]: or then to predict them together.
+[SPEAKER_00]: In some cases, there was an increase of
+prediction accuracy.
+[SPEAKER_00]: But there is not a clear trend for all of
+that.
+[SPEAKER_00]: Especially in this case, it looks like
+there was a big increase.
+[SPEAKER_00]: And in these predictions, I'm using both
+the molecular marker and the degree in the
+[SPEAKER_00]: model.
+[SPEAKER_00]: So I have that full model with those two
+random effects.
+[SPEAKER_00]: And here, I'm comparing what I get when
+predicting only using the molecular
+[SPEAKER_00]: markers and then here only using the
+pre-degree information.
+[SPEAKER_00]: So basically, the dots here are the same
+traits that I was showing on the previous
+[SPEAKER_00]: plot.
+[SPEAKER_00]: But now, the values are the same.
+[SPEAKER_00]: Accuracy is themselves.
+[SPEAKER_00]: Then you see that there is a trend of
+higher accuracies when using the markers
+[SPEAKER_00]: in comparison to the pre-degree.
+[SPEAKER_00]: And this plot here, and this one,
+basically the difference is that I include
+[SPEAKER_00]: the previous result here with markers and
+pre-degree and compare it with only the
+[SPEAKER_00]: pre-degree.
+[SPEAKER_00]: So they look very similar, which means
+that basically, what's driving the
+[SPEAKER_00]: increase in accuracy here is the
+prediction from the markers.
+[SPEAKER_00]: So let's move to the other scheme of
+validating the general prediction,
+[SPEAKER_00]: which I'm basically using the whole cycle
+05 to predict the whole cycle 06.
+[SPEAKER_00]: So here, we see a drop in prediction
+accuracies for all of the case.
+[SPEAKER_00]: In comparison to what we had before.
+[SPEAKER_00]: And the same idea here holds.
+[SPEAKER_00]: There's not a clear trend between the
+harvest and the early and late seasons.
+[SPEAKER_00]: You can also include the early and late
+seasons together for prediction.
+[SPEAKER_00]: In this case, we get some cases,
+especially here in fiber, where there is a
+[SPEAKER_00]: bump in the prediction accuracy.
+[SPEAKER_00]: And in some cases, it's actually a big
+drop.
+[SPEAKER_00]: The same comparison here now between
+prediction using markers and pre-degree.
+[SPEAKER_00]: Now then, it's not super clear a
+distinction between.
+[SPEAKER_00]: There's not a clear advantage for using
+the markers in this comparison.
+[SPEAKER_00]: So some final remarks between these
+analysis.
+[SPEAKER_00]: So the first paper that reported general
+prediction surrogate was by Gui et al.
+[SPEAKER_00]: in 2013.
+[SPEAKER_00]: They actually had higher accuracies for
+BRICS and stock number, which are the two
+[SPEAKER_00]: traits that we have in common here.
+[SPEAKER_00]: Actually, I don't have stock number,
+but stock number is reported to be very
+[SPEAKER_00]: correlated to weight.
+[SPEAKER_00]: So maybe you can trace a comparison.
+[SPEAKER_00]: So in this case, they had similar
+heritability, but then higher accuracies.
+[SPEAKER_00]: And there is one important difference
+between their study and this one,
+[SPEAKER_00]: which is the population composition.
+[SPEAKER_00]: So in their study, they were using
+varieties and clones derived from breeding
+[SPEAKER_00]: programs all over the world.
+[SPEAKER_00]: And I think that's the main difference
+between their study and this one.
+[SPEAKER_00]: Here, we were doing a study based on
+clones derived from an actual breeding
+[SPEAKER_00]: program during the selection.
+[SPEAKER_00]: And I think that can be something to keep
+in mind when thinking about implementing
+[SPEAKER_00]: genome prediction in a breeding program
+for a hurricane.
+[SPEAKER_00]: So some other comments.
+[SPEAKER_00]: So with regard to the prediction across
+cycles, actually, we can see that there is
+[SPEAKER_00]: a lot of GBA.
+[SPEAKER_00]: So maybe that's not the best way to
+compare.
+[SPEAKER_00]: That's expected to be a drop in the
+prediction accuracy.
+[SPEAKER_00]: In the same way, here, it was interesting
+to do this comparison, because it kind of
+[SPEAKER_00]: looks like what we might observe when we
+first deploy a hurricane in a breeding
+[SPEAKER_00]: program, if we also do the phenotyping of
+the first selections.
+[SPEAKER_00]: I think if you had multiple year data,
+maybe could get some improvements in our
+[SPEAKER_00]: predictions and get a better clear view of
+the trends with regard to the GBA that's
+happening.
+[SPEAKER_00]: And then with regard to whether to use
+markers or the predegree for prediction,
+[SPEAKER_00]: we could observe an advantage in doing
+cross-validation.
+[SPEAKER_00]: And maybe this points to that if you used
+these predictions to track the same
+[SPEAKER_00]: families, then you would have a really
+clear advantage for using the markers.
+[SPEAKER_00]: In that case, we cannot do the prediction
+for using the predegree.
+[SPEAKER_00]: Okay, move on to another topic,
+which is focused on predicting parental
+[SPEAKER_00]: breeding values.
+[SPEAKER_00]: So basically, I'm using the same data set
+as before, but instead of predicting the
+[SPEAKER_00]: clone performance as I did, I'll look to
+the parents that derived those clones in
+[SPEAKER_00]: the breeding program.
+[SPEAKER_00]: And I'll estimate breeding values for them
+and also the prediction.
+[SPEAKER_00]: So in this case, we're going to do a
+single step analysis with all the records
+[SPEAKER_00]: that I have.
+[SPEAKER_00]: And I'm going to put together data from
+stage one and stage three.
+[SPEAKER_00]: In that case, we're going to have a very
+unbalanced data set in which we have
+[SPEAKER_00]: parents that have from two to more than
+200 records available in this case.
+[SPEAKER_00]: So the breeding values are going to be
+derived from a very unbalanced data set.
+[SPEAKER_00]: And also because I don't have markers on
+the parents for this data set,
+[SPEAKER_00]: I'm going to use the approach by Legara
+2009, which used what we call the
+[SPEAKER_00]: H-matrix, which is a combination between
+the pedigree relationship matrix and the
+[SPEAKER_00]: marker relationship matrix.
+[SPEAKER_00]: Basically, it can expand some of the
+marker information to the whole matrix
+[SPEAKER_00]: using this approach.
+[SPEAKER_00]: And just as a comparison here,
+when I correlated the pedigree matrix to
+[SPEAKER_00]: the H-matrix only on the set of clones
+that don't have marker information,
+[SPEAKER_00]: we're getting a correlation of 0.73.
+[SPEAKER_00]: If you remember before, we had a
+correlation of 0.63.
+[SPEAKER_00]: So they're still not super highly
+correlated.
+[SPEAKER_00]: And this kind of shows how one information
+pushed the other.
+[SPEAKER_00]: So here's my linear mix model.
+[SPEAKER_00]: There's a bunch of ladders here.
+[SPEAKER_00]: But what I want to focus is on the term G,
+which is the random effect for the
+[SPEAKER_00]: genotype.
+[SPEAKER_00]: And then this random effect will use this
+H-matrix that I'm talking about.
+[SPEAKER_00]: Actually, sometimes I'm going to use the
+H-matrix.
+[SPEAKER_00]: Sometimes I'm going to use the pedigree
+matrix.
+[SPEAKER_00]: So I'm going to do prediction using the
+H-matrix and then compare to the breeding
+[SPEAKER_00]: values derived from the A-matrix.
+[SPEAKER_00]: In this case, I'm going to do prediction
+across cycles again using all records from
+[SPEAKER_00]: 2005 to form the training sets.
+[SPEAKER_00]: And I use the parents that are only in
+2006 as my validation data sets.
+[SPEAKER_00]: So here's the results.
+[SPEAKER_00]: So basically, we have predictions in which
+I'm using the pedigree matrix.
+[SPEAKER_00]: The pedigree relationships, the H-matrix,
+and also an HW-matrix that I'm calling
+[SPEAKER_00]: here in which I form the subset of the
+data for which I have both marker and
+[SPEAKER_00]: pedigree information with both matrices.
+[SPEAKER_00]: And then in this case, there was a higher
+prediction accuracy for weight.
+[SPEAKER_00]: But in general, there was very little
+increase for using the marker information
+[SPEAKER_00]: and even a decrease when using weight.
+[SPEAKER_00]: Another comparison that I did here was to
+include in the observed data the previous
+[SPEAKER_00]: cycle, which is kind of reusing the same
+data that I'm using as training.
+[SPEAKER_00]: But that's what brings the best estimates
+for the breeding values.
+[SPEAKER_00]: And then there is a big increase in
+prediction accuracy here.
+[SPEAKER_00]: I would say that actually the real
+prediction accuracy that we might expect
+[SPEAKER_00]: is not this high.
+[SPEAKER_00]: It should be something here a little
+lower.
+[SPEAKER_00]: But I'd like to show these results so to
+have another information here.
+[SPEAKER_00]: Another comparison that we did was to look
+to the parents and see if there are some
+[SPEAKER_00]: full SIBs there.
+[SPEAKER_00]: So basically, we had a couple of families
+in the parent's data set with an average
+[SPEAKER_00]: of a bit more than five clones per family.
+[SPEAKER_00]: And we did the same estimates of
+correlation that we did before,
+[SPEAKER_00]: but now only looking to those full SIB
+families.
+[SPEAKER_00]: And in this case, we can still do a good
+prediction for what weight.
+[SPEAKER_00]: But there is a sharp decrease for breeds.
+[SPEAKER_00]: I tested actually the significance of
+this.
+[SPEAKER_00]: As you might imagine, there might be a lot
+of variation for this small number of
+families.
+[SPEAKER_00]: And actually, the standard deviations here
+are pretty high.
+[SPEAKER_00]: So if I do a t-test, it's not going to be
+significant.
+[SPEAKER_00]: So it would be interesting to do this
+analysis again with a larger number of
+[SPEAKER_00]: families or larger families.
+[SPEAKER_00]: Some remarks here.
+[SPEAKER_00]: So in this case, one interesting thing was
+to use the progeny data to do our
+[SPEAKER_00]: predictions in comparison to what we did
+before, which was the data derived from
+[SPEAKER_00]: the clones themselves.
+[SPEAKER_00]: And so by doing that, we were able to
+combine data from many states and multiple
+[SPEAKER_00]: years.
+[SPEAKER_00]: And also, the mixed models allowed,
+in spite of that, to analyze this very
+[SPEAKER_00]: unbalanced data set.
+[SPEAKER_00]: In a comparison between markers and
+pedigree prediction, we can see that,
+[SPEAKER_00]: again, we have probably a better use of
+the marker information when you look to
+[SPEAKER_00]: prediction within families.
+[SPEAKER_00]: And also, in this analysis, we could use
+this H matrix, which kind of makes it
+[SPEAKER_00]: easier to use two access information that
+we might already have in the breeding
+[SPEAKER_00]: program, but for which we don't have
+marker information yet.
+[SPEAKER_00]: So in this last section, I'm going to talk
+about something a little different.
+[SPEAKER_00]: So I said in the beginning that shuriken
+is a polyploid species.
+[SPEAKER_00]: And I was only looking to the markers in a
+very simple way, only looking to the
+[SPEAKER_00]: presence or absence of the lius there.
+[SPEAKER_00]: So actually, we know that we might have
+more information there because it's a
+[SPEAKER_00]: polyploid.
+[SPEAKER_00]: So in this section, I'd like to explore a
+bit more on the markers.
+[SPEAKER_00]: So this is a diagram that's very common to
+see in shuriken presentations that kind of
+[SPEAKER_00]: shows how the chromosomes in shuriken look
+like.
+[SPEAKER_00]: And so here, they're putting their colors
+to each of the species that forms the
+[SPEAKER_00]: hybrids.
+[SPEAKER_00]: And then the main thing that I'd like to
+point here is that, yeah, we have many
+[SPEAKER_00]: copies from each of the chromosomes.
+[SPEAKER_00]: So that's why it's polyploid.
+[SPEAKER_00]: And also, we have like aneuploidy.
+[SPEAKER_00]: So we have different numbers of ploidy
+levels for each chromosome.
+[SPEAKER_00]: And actually, this might happen even
+between clones.
+[SPEAKER_00]: So if I go to another clone, I should not
+expect that these numbers for the same
+[SPEAKER_00]: chromosomes to be the same.
+[SPEAKER_00]: So it kind of makes things a bit
+complicated here.
+[SPEAKER_00]: So here, I'm showing a bit more on detail
+on what I mean by what's happening to the
+[SPEAKER_00]: marker.
+[SPEAKER_00]: So it might happen in shuriken,
+not only the polyploid, but an
+[SPEAKER_00]: autopolyploid, that we can observe markers
+in higher dosage.
+[SPEAKER_00]: So we might have things that we observe in
+a diploid, like a single copy or absence,
+[SPEAKER_00]: but also higher dosage of the alleles.
+[SPEAKER_00]: And basically, that's the kind of
+difference that I'm missing in my previous
+[SPEAKER_00]: analysis.
+[SPEAKER_00]: It turns out that one question that we
+might have is, OK, does it matter?
+[SPEAKER_00]: Does it matter, this dosage?
+[SPEAKER_00]: It might happen that after a dosage of
+zero, it might compare to my traits of
+[SPEAKER_00]: interest and increase the presence of the
+allele in more copies.
+[SPEAKER_00]: It doesn't matter anymore.
+[SPEAKER_00]: It might happen that it really matters
+that as I get more higher dosage,
+[SPEAKER_00]: I have a higher impact on my trait,
+or something crazy might happen.
+[SPEAKER_00]: I don't know.
+[SPEAKER_00]: So basically, my point is if you don't
+look to the dosage, we are not having the
+[SPEAKER_00]: chance to look to this.
+OK.
+[SPEAKER_00]: So is it easy to look to that?
+[SPEAKER_00]: And there are reports in the literature
+that explore this idea of looking to the
+[SPEAKER_00]: marker information that you get from a
+population and try to identify in sugar
+[SPEAKER_00]: cane what's the dosage, even in the case
+of alleles that appear in higher dosage.
+[SPEAKER_00]: It turns out that it's kind of hard.
+[SPEAKER_00]: There are a lot of cases that we kind of
+don't see a clear result.
+[SPEAKER_00]: And then here I'm kind of summarizing what
+I think are the problems in looking to the
+[SPEAKER_00]: higher dosage in sugar cane.
+[SPEAKER_00]: So if you're doing an analysis of markers
+for dosage in sugar cane, first of all,
+[SPEAKER_00]: we need to know what's the dosage that we
+have on a given locus.
+[SPEAKER_00]: I mean, the maximum dosage or the ploid
+level.
+[SPEAKER_00]: But we don't know this information yet.
+[SPEAKER_00]: And maybe we could have an approach that
+through the analysis gives this ploid
+[SPEAKER_00]: level.
+[SPEAKER_00]: That's another possibility.
+[SPEAKER_00]: But it's hard to do.
+[SPEAKER_00]: Another thing is that sugar cane is a
+highly heterozygous species.
+[SPEAKER_00]: And as other plants, we might observe a
+lot of duplications of genes and so on.
+[SPEAKER_00]: So it might happen that the signal that
+we're observing here, I'm using signal to
+[SPEAKER_00]: mean the molecular marker information that
+we get.
+[SPEAKER_00]: Be it, for instance, in our case,
+the sequencing information from locus.
+[SPEAKER_00]: We want that signal to be really derived
+from every single allele that we observe
+[SPEAKER_00]: on the locus.
+[SPEAKER_00]: But due to heterozygosity, that might not
+happen.
+[SPEAKER_00]: Or you actually might get signal from more
+than one loci together when we are
+[SPEAKER_00]: clustering the sequencing information.
+[SPEAKER_00]: So there are some difficulties here.
+[SPEAKER_00]: And another is actually that we want the
+signal information, the reads that we get
+[SPEAKER_00]: from sequencing, in our case, to the
+number of reads to be a function of the
+[SPEAKER_00]: dosage.
+[SPEAKER_00]: And for instance, if we have narrow read
+sequencing, that might be a problem.
+[SPEAKER_00]: Due to sampling errors, we might get a
+different number of reads than what we
+[SPEAKER_00]: would expect from the dosage inside.
+[SPEAKER_00]: So this is challenging.
+[SPEAKER_00]: So what I'm going to do here is to try to
+avoid some of these questions.
+[SPEAKER_00]: So I'm going to do an analysis that
+simplifies how we look to the marker data,
+[SPEAKER_00]: which is to use the signal directly
+without doing any of those fancy
+[SPEAKER_00]: statistics analysis on the marker data in
+which we find the dosage itself.
+[SPEAKER_00]: I'm going to show examples of this later.
+[SPEAKER_00]: But I'm going to use that so we can test
+this question that I made a few minutes
+[SPEAKER_00]: ago.
+[SPEAKER_00]: Is it worth it to use the dosage
+information when doing quantitative
+[SPEAKER_00]: analysis in sugar cane?
+[SPEAKER_00]: Maybe it's not worth it.
+[SPEAKER_00]: So maybe a simpler analysis in which we
+just look to the presence and absence of
+[SPEAKER_00]: values, that's enough.
+[SPEAKER_00]: And we can't do better than that.
+[SPEAKER_00]: So I'd like to test the hypothesis.
+[SPEAKER_00]: And another thing is, OK, we do all these
+analysis trying to find the dosage of,
+[SPEAKER_00]: like as I showed in the literature,
+of finding the dosage information from the
+[SPEAKER_00]: markers.
+[SPEAKER_00]: And maybe if we can test that the use of
+this information is valuable, then it will
+[SPEAKER_00]: give more incentives to follow on that
+kind of analysis.
+[SPEAKER_00]: And we are going to do this through both
+GWAS and genome prediction.
+[SPEAKER_00]: So building on the previous results,
+we're going to do an analysis in which I
+[SPEAKER_00]: have the markers on a simpler
+representation, another in which that
+[SPEAKER_00]: doesn't take into account the dosage
+information, another that does,
+[SPEAKER_00]: and compare the results.
+[SPEAKER_00]: So basically, I'm going to reuse the
+information that I got before,
+[SPEAKER_00]: that we had before.
+[SPEAKER_00]: And here, I'm going to explain what I mean
+by another representation of the markers.
+[SPEAKER_00]: So I'm showing in this table four data
+points, four SNPs.
+[SPEAKER_00]: And here, I have read counts from both of
+those alleles from these SNPs.
+[SPEAKER_00]: So in one case, for instance, I have read
+counts from my reference allele,
+[SPEAKER_00]: but not from my alternative allele.
+[SPEAKER_00]: And in my what I call discrete genotype or
+discrete code, coding of the marker
+[SPEAKER_00]: information, I'll assign a value,
+let's say, zero to this case.
+[SPEAKER_00]: And when I have both alleles, I'm going to
+say it's a one.
+[SPEAKER_00]: And when I don't have one of the other
+alleles, I'll say it's a two.
+[SPEAKER_00]: That's basically what I did before.
+[SPEAKER_00]: But in this new approach, what I call a
+continuous coding of the genotype,
+[SPEAKER_00]: I'll basically get the ratio between the
+read counts from the reference allele to
+[SPEAKER_00]: the total number of reads that I have.
+[SPEAKER_00]: So I will have something that's
+continuous.
+[SPEAKER_00]: So that goes from zero to one.
+[SPEAKER_00]: And that allows me to distinguish cases
+like this.
+[SPEAKER_00]: And the assumption is that if I have a
+higher dosage, I'll have higher read
+[SPEAKER_00]: counts for that allele.
+[SPEAKER_00]: So using this assumption, we use this
+continuous genotype for the marker.
+[SPEAKER_00]: So here's an example of how that works in
+the actual data that we have.
+[SPEAKER_00]: So I'm showing here one SNP and another
+SNP.
+[SPEAKER_00]: Here's a SNP.
+[SPEAKER_00]: On top, you have the continuous coding.
+[SPEAKER_00]: And on bottom, the discrete coding.
+[SPEAKER_00]: And those are the histograms from my
+project.
+[SPEAKER_00]: I had under discrete coding just the
+values one and two.
+[SPEAKER_00]: But in the continuous coding, these
+values, that's the retrozygous,
+[SPEAKER_00]: are in a range of values that go from zero
+to one.
+[SPEAKER_00]: This is kind of flipped.
+[SPEAKER_00]: So these guys here appear here.
+[SPEAKER_00]: And this might be interesting because then
+you get a higher resolution for this.
+[SPEAKER_00]: It also gives access to information that
+we didn't have before.
+[SPEAKER_00]: I'm showing here one SNP that only had
+one.
+[SPEAKER_00]: So if you're working with a DPL,
+this will happen.
+[SPEAKER_00]: Only have heterozygous individuals in our
+proposal.
+[SPEAKER_00]: But ensure, can that happen?
+[SPEAKER_00]: At least it happens in my data set.
+[SPEAKER_00]: Basically, I throw out markers like this.
+[SPEAKER_00]: In a discrete analysis.
+[SPEAKER_00]: Between one and another.
+[SPEAKER_00]: And so what I'm going to do, I have two
+matrices.
+[SPEAKER_00]: One I'm calling D from discrete and C from
+continuous.
+[SPEAKER_00]: With markers in both representations.
+[SPEAKER_00]: And from the markers that are like this.
+[SPEAKER_00]: So with extra markers that I didn't have
+access to before.
+[SPEAKER_00]: So I had some samples that are replicated.
+[SPEAKER_00]: So I did an analysis taking into account
+that these are replicated and
+[SPEAKER_00]: non-replicated.
+[SPEAKER_00]: And compared those two distances.
+[SPEAKER_00]: To find an optimal read depth for
+filtering these SNPs.
+[SPEAKER_00]: So the optimal one is actually 80.
+[SPEAKER_00]: I used some 50 just to not lose that many
+SNPs.
+[SPEAKER_00]: But it's still 50 to get basically a
+non-significant difference here.
+[SPEAKER_00]: So using W, H is the D, C, and C2.
+[SPEAKER_00]: I did a 50 analysis on the data set.
+[SPEAKER_00]: And basically the same, I'm showing here
+the same stage three homes that I used.
+[SPEAKER_00]: We see that using discrete coding and
+continuous.
+[SPEAKER_00]: The same markers.
+[SPEAKER_00]: I got a very similar
+[SPEAKER_00]: actually we have 0.92 off diagonal
+elements in those matrices.
+[SPEAKER_00]: If I look to the two matrices,
+I actually have a lower correlation
+[SPEAKER_00]: between them.
+[SPEAKER_00]: In the first you see kind of C is slightly
+different.
+[SPEAKER_00]: It looks like we have some extra
+information that we didn't have access to
+[SPEAKER_00]: before.
+[SPEAKER_00]: So let's go to the actual tasks with this
+tool coding.
+[SPEAKER_00]: So I'm going to do, so OK.
+[SPEAKER_00]: So first the 50 plots from the draws
+analysis.
+[SPEAKER_00]: So I have, here I'm comparing the
+continuous coding and the discrete coding.
+[SPEAKER_00]: And there's not a super clear difference
+between them here.
+[SPEAKER_00]: I'm showing that I might have more
+significant loads on this side of the
+[SPEAKER_00]: tray.
+[SPEAKER_00]: I harvested too early.
+[SPEAKER_00]: And when I do a Manhattan plot,
+it becomes very messy, difficult to see a
+[SPEAKER_00]: clear trend.
+[SPEAKER_00]: So I tried to compare actually the
+continuous and discrete coding in a
+[SPEAKER_00]: slightly different manner, which is going
+over a range of thresholds instead of just
+[SPEAKER_00]: using this one.
+[SPEAKER_00]: For a range of thresholds, I count the
+number of significant hits that I have for
+[SPEAKER_00]: that threshold.
+[SPEAKER_00]: And then here in this plot, I'm showing
+the number of hits that we get.
+[SPEAKER_00]: And on red, I'm using the discrete coding
+and on C, on green, using the continuous
+[SPEAKER_00]: coding.
+[SPEAKER_00]: So we get a higher number of hits using
+the continuous coding.
+[SPEAKER_00]: That's good.
+[SPEAKER_00]: And well, actually, if you do this
+analysis here, here I'm putting together C
+[SPEAKER_00]: and C2.
+[SPEAKER_00]: So that's there for the discrete coding.
+[SPEAKER_00]: I have more markers in this case for the
+continuous coding.
+[SPEAKER_00]: But in this case, I just compare the C and
+the D matrix.
+[SPEAKER_00]: And you see we have a higher number of
+hits in that case.
+[SPEAKER_00]: So I can look to both cases.
+[SPEAKER_00]: In one case, we're getting more markers
+due to the use of the C2 matrix.
+[SPEAKER_00]: That's the markers that are not
+polymarked.
+[SPEAKER_00]: But even if I just focus on the markers
+that I have available already,
+[SPEAKER_00]: I still have an increase in the number of
+hits.
+[SPEAKER_00]: So in order to compare the modeling using
+the linear model and the game model,
+[SPEAKER_00]: I also did the same range of thresholds.
+[SPEAKER_00]: But then I just checked from markers that
+are not significant, so they're linear
+[SPEAKER_00]: modeling.
+[SPEAKER_00]: How many of them are significant for the
+game modeling?
+[SPEAKER_00]: Basically because of the likelihood is not
+directly comparable between both.
+[SPEAKER_00]: So I see here an increase in the number of
+hits, in 6% and 15% more in comparison to
+[SPEAKER_00]: the number of markers that we get from
+only using linear modeling.
+[SPEAKER_00]: So we also did general prediction.
+[SPEAKER_00]: In this case, I used the G-blob modeling,
+but also some other ways of modeling the
+[SPEAKER_00]: data, RTHS, sport vector machines,
+and random forests.
+[SPEAKER_00]: So those are the results for genomic blob
+in the four traits and the different
+[SPEAKER_00]: matrixes.
+[SPEAKER_00]: So let's focus on this one.
+[SPEAKER_00]: So in most of the case, there are slight
+improvements in using the continuous
+[SPEAKER_00]: coding.
+[SPEAKER_00]: And even when I use the C2 matrix,
+I didn't show the numbers here,
+[SPEAKER_00]: but my C2 matrix has only here we're
+talking about around 50,000 markers.
+[SPEAKER_00]: The C2 matrix has 5,000 markers.
+[SPEAKER_00]: So we still have a high prediction
+accuracy in comparison to the D matrix.
+[SPEAKER_00]: Well, not always, but in general,
+there is a little increase in prediction
+[SPEAKER_00]: accuracy.
+[SPEAKER_00]: To include the other models for genome
+prediction, I don't observe a real
+[SPEAKER_00]: improvement between the different models.
+[SPEAKER_00]: And sometimes it really works.
+[SPEAKER_00]: So I'm going to stick with the G-blob
+results here.
+[SPEAKER_00]: I also did a multi-kernel analysis to
+combine the D matrix with the C2 random
+[SPEAKER_00]: effects.
+[SPEAKER_00]: And that didn't, I'm not going to show
+here, but it didn't improve much.
+[SPEAKER_00]: So some conclusions here.
+[SPEAKER_00]: So the use of this continuous coding
+actually provided some gain in
+[SPEAKER_00]: information.
+[SPEAKER_00]: So I have more markers that were not fully
+marked before.
+[SPEAKER_00]: And also because of the relationships were
+a little different, it looks like we're
+[SPEAKER_00]: getting access to new information that we
+didn't have before.
+[SPEAKER_00]: The actual test in GWAS, we had more hits.
+[SPEAKER_00]: Genome prediction was about the same.
+[SPEAKER_00]: So it's not clear whether it was a real
+improvement in accuracy there.
+[SPEAKER_00]: But I think we can say that to use some
+forms of dosage and coding in studies for
+[SPEAKER_00]: shuriken might be beneficial.
+[SPEAKER_00]: So that's what we are actually
+investigating.
+[SPEAKER_00]: I'd like to thank some people.
+[SPEAKER_00]: So all this study was, my PhD,
+the whole program and the data,
+[SPEAKER_00]: everything comes from CPC.
+[SPEAKER_00]: And we had actually a lot of people there
+that contributed to get the data,
+[SPEAKER_00]: imagine the field records and everything.
+[SPEAKER_00]: But Karine, Francisco, and Thiago,
+they were directly involved in
+[SPEAKER_00]: establishing the framework for this
+project.
+[SPEAKER_00]: And also Michael Butterfield and William
+Burkes, they were responsible for actually
+[SPEAKER_00]: sponsoring everything here.
+[SPEAKER_00]: I'd also like to thank a lot of my special
+committee, Mark, Jean-Luc, and Kim Vu,
+[SPEAKER_00]: especially Mark, for accepting me here and
+guiding through all those years and
+[SPEAKER_00]: supporting every step.
+[SPEAKER_00]: And also I'd like to thank all the sorrows
+and the team.
+[SPEAKER_00]: They interacted a lot through those years.
+[SPEAKER_00]: I learned a lot from that.
+[SPEAKER_00]: Here I'm bringing this old picture because
+I think I have some folks that are not
+[SPEAKER_00]: here anymore.
+[SPEAKER_00]: I'd like to especially mention Deniz
+Eklemmer, Nick San Antonio, and Uch.
+[SPEAKER_00]: It's not clear that we gave a lot of input
+to my analysis.
+[SPEAKER_00]: So that's it for today.
+[SPEAKER_03]: Running a little long, but I'll take a
+question or two.
+[SPEAKER_03]: I have a question about, so your
+prediction between cycles, you talked
+[SPEAKER_03]: about the common parents.
+[SPEAKER_03]: There were a subset that were used in both
+cycles.
+[SPEAKER_03]: I'm wondering if just from those original
+predictions you did, if you ever look at
+[SPEAKER_03]: the accuracy on the cycle you were
+predicting just for the common parents,
+[SPEAKER_03]: because you should be able to predict
+within family better than just across the
+[SPEAKER_00]: whole group.
+[SPEAKER_00]: So you're suggesting to use the parents
+that I had in common.
+[SPEAKER_03]: Just to look at the accuracy, you used the
+whole training population in the
+[SPEAKER_03]: prediction, but then maybe you're
+predicting so that when you correlate with
+[SPEAKER_03]: the whole group, that's what you showed,
+but just look in those common... I
+[SPEAKER_00]: actually did that, just not showing.
+[SPEAKER_00]: There is a higher accuracy when I do that.
+[SPEAKER_00]: It's super high, but yeah, it's higher
+than that, significantly higher.
+[SPEAKER_00]: I should have included that.
+[SPEAKER_02]: Is there a concern between when you look
+at your dosage of an allele versus the
+[SPEAKER_02]: difference in a read depth region?
+[SPEAKER_02]: Are you looking at a difference in whether
+or not you have a read depth or whether or
+[SPEAKER_02]: not you have a difference in dosage?
+[SPEAKER_00]: Ideally, we would be looking to the
+dosage.
+[SPEAKER_00]: That's what we actually have in the
+plants.
+[SPEAKER_00]: It's the dosage, it's not the way it
+counts.
+[SPEAKER_00]: The thing is we don't have access to that
+information yet.
+[SPEAKER_00]: I'm not sure if we're gonna get a date.
+[SPEAKER_00]: I'm trying to here actually not propose
+that we should use the read depth as a
+[SPEAKER_00]: tool.
+[SPEAKER_00]: I think we still need to find a way to get
+the actual dosage.
+[SPEAKER_00]: What I tried to do was to try to ask a
+question.
+[SPEAKER_00]: Okay, is it worth it to look at that?
+[SPEAKER_00]: Should we do that?
+[SPEAKER_00]: Because actually I had this question when
+I got here and that's why all my initial
+[SPEAKER_00]: analysis are based only on the presence or
+absence of markers.
+[SPEAKER_00]: If I went to do an actual dosage analysis,
+probably I would be working with way fewer
+[SPEAKER_00]: markers than I have now and actually it's
+super complicated to do that.
+[SPEAKER_00]: So I'm actually not proposing to use this
+kind of way, but can we still answer some
+[SPEAKER_00]: questions by using another way to look at
+the markers?
+[SPEAKER_03]: I hate to cut this off, but we've got to
+get back out there and harvest more.
+[SPEAKER_03]: We're taking volunteers by the way.
+[SPEAKER_02]: This has been a production of Cornell
+University on the web at Cornell.edu.
+[SPEAKER_02]: Thank you.
+[SPEAKER_02]: Thank you.
+you

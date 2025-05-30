@@ -1,0 +1,1280 @@
+[SPEAKER_01]: I'm going to spend some time talking about
+at least the assemblies we have today and
+[SPEAKER_01]: where we're going, which is, you know,
+making these pan-genomes happen and
+[SPEAKER_01]: peeling these things apart into diploid
+genomes, as Seth's been saying,
+[SPEAKER_01]: and then how we can apply these to other
+medicinal organisms that are clearly on
+[SPEAKER_01]: many people's radar.
+[SPEAKER_01]: There we go.
+[SPEAKER_01]: Slide point is working.
+[SPEAKER_01]: So we're going to be talking about both
+cannabis sativa and psilocybe cubensis
+[SPEAKER_01]: today and some of the sequencing efforts
+we've put forward to these.
+[SPEAKER_01]: A bit of an outline here is we're looking
+at these pan-genome approaches as well.
+[SPEAKER_01]: We are also going to be mapping more of
+these Illumina short sequencing reads to
+[SPEAKER_01]: these pan-genomes, because you can get a
+lot done with these things, even with
+[SPEAKER_01]: short reads, once you have good
+references.
+[SPEAKER_01]: Of course, everyone prefers to have the
+longer reads, but if you're short on
+[SPEAKER_01]: dollars, the Illumina stuff can get you
+many more for the same dollar.
+[SPEAKER_01]: And a lot of the genes that are well
+mapped and understood, you can make sense
+[SPEAKER_01]: of out of these shorter reads.
+[SPEAKER_01]: And then we're also looking at ways to
+further reduce the cost from whole genome
+[SPEAKER_01]: sequencing down to just targeted regions.
+[SPEAKER_01]: If you follow the history of human
+genomics, we went through this period of
+[SPEAKER_01]: time where we were sequencing exomes,
+and that was because it could bring the
+[SPEAKER_01]: cost down to sequencing just the genes of
+interest if you wanted to survey
+[SPEAKER_01]: particular regions of the genome for even
+lower costs.
+[SPEAKER_01]: And then if you bring it one step further,
+as Seth had shown as well, we've built SNP
+[SPEAKER_01]: chips that people can use to survey 85,000
+markers in the cannabis genome.
+[SPEAKER_01]: So that you can deploy those at even
+further numbers of plants at a reduced
+[SPEAKER_01]: cost.
+[SPEAKER_01]: And the ultimate like reduction of this
+approach of surveying less and less is
+[SPEAKER_01]: then make PCR markers that can survey a
+single or five loci per assay point.
+[SPEAKER_01]: So once we have, I'm going to go over some
+of these strain seek panels that we've
+[SPEAKER_01]: recently developed and recently put public
+so that anybody can order these panels and
+[SPEAKER_01]: use them at their university if they need
+be.
+[SPEAKER_01]: So this becomes a community design panel
+that people can use.
+[SPEAKER_01]: And then we're also going to look at some
+pathways in response characteristics in
+[SPEAKER_01]: the cannabis plant, and then move over to
+other fungi that are very much interested
+[SPEAKER_01]: in this community, such as the Las B.
+[SPEAKER_01]: cubensis.
+[SPEAKER_01]: Okay, so back before the pandemic,
+which seems like yesterday, right?
+[SPEAKER_01]: We put out this Jamaican line reference
+that Seth was speaking about.
+[SPEAKER_01]: This was 1,000 times more contiguous than
+the short read assemblies that existed
+[SPEAKER_01]: before it.
+[SPEAKER_01]: But we had to use a technology from PacBio
+that isn't quite what they have today.
+[SPEAKER_01]: It's known as CLR technology, which was a
+continuous long read technology that could
+[SPEAKER_01]: do about 80 kb reads.
+[SPEAKER_01]: However, the noise rate in the reads
+alone, they're probably around 90 to 95%
+[SPEAKER_01]: accurate.
+[SPEAKER_01]: So there was a little bit more error
+inside of those reads, which can
+[SPEAKER_01]: complicate things when you're dealing with
+a very polymorphic plant.
+[SPEAKER_01]: So as a result, we really hammered this
+genome with 125x coverage.
+[SPEAKER_01]: You don't need to do this anymore.
+[SPEAKER_01]: The Hi-Fi technologies they have,
+you can do this in like 30x coverage.
+[SPEAKER_01]: And we'll touch on one of these Hi-Fi
+genomes we've done as well.
+[SPEAKER_01]: And the N50s come out around three and a
+half megabases.
+[SPEAKER_01]: And so out of reference, to the reference
+that's currently in NCBI that Seth had
+[SPEAKER_01]: hinted at being somewhat shuffled,
+we've also seen that same problem.
+[SPEAKER_01]: The N50 numbers for that are around 750
+kb.
+[SPEAKER_01]: And they piece together those contigs with
+Oxford Nanopore, which doesn't do a very
+[SPEAKER_01]: good job in repetitive regions.
+[SPEAKER_01]: It gets very, very long reads,
+but it has very high error rate.
+[SPEAKER_01]: And so you can get really confused in
+polymorphic plants piecing together the
+[SPEAKER_01]: chromosome numbers.
+[SPEAKER_01]: The chromosome numbers in NCBI have
+frequently changed as a result of us
+[SPEAKER_01]: trying to organize this picture as a
+community over time.
+[SPEAKER_01]: And some of the new references that are
+coming out are helping to clarify this.
+[SPEAKER_01]: We'll touch on one of them today.
+[SPEAKER_01]: So this is a great paper from Herb Bogan,
+who went through all of the references
+[SPEAKER_01]: that were available at the time of this
+publication.
+[SPEAKER_01]: And you'll see some of them that are
+really old were done only on Illumina and
+[SPEAKER_01]: 454, some of those we put out in 2011.
+[SPEAKER_01]: And then they get better over time as we
+graduate to these longer and longer read
+[SPEAKER_01]: sequencers.
+[SPEAKER_01]: But what you're looking at here is a
+really important quality score that Seth
+[SPEAKER_01]: had touched on, which is called a bus go
+score.
+[SPEAKER_01]: You scan these genomes for genes that you
+anticipate every particular plant should
+[SPEAKER_01]: have.
+[SPEAKER_01]: Like we just have a catalog of these.
+[SPEAKER_01]: We know that all plants should have these
+number of housekeeping genes.
+[SPEAKER_01]: And if you're missing some of those
+housekeeping genes, you probably don't
+[SPEAKER_01]: have a complete reference genome.
+[SPEAKER_01]: And of course, these databases of bus go
+genes are different for every type of
+[SPEAKER_01]: genus you attack.
+[SPEAKER_01]: So when you go into fungi, you've got to
+change your bus go database.
+[SPEAKER_01]: But what you're looking for is to have the
+least amount of green on this slide,
+[SPEAKER_01]: which are missing genes.
+[SPEAKER_01]: This is the part of the genome that you
+failed to sequence because you couldn't
+[SPEAKER_01]: assemble it correctly or it's missing for
+other biological reasons.
+[SPEAKER_01]: The region that you see in gray is
+actually what that's showing you is that
+[SPEAKER_01]: the sequencers are starting to phase the
+genome.
+[SPEAKER_01]: That means that they're splitting apart
+the maternal and the paternal haploid
+[SPEAKER_01]: group into their own unique context
+because the mother and the father genome
+[SPEAKER_01]: were different enough from a sequencing
+standpoint that the assemblers turn those
+[SPEAKER_01]: into their own unique context.
+[SPEAKER_01]: And then the blue area are all the regions
+that have been what Seth called a
+[SPEAKER_01]: synthetic haploid state.
+[SPEAKER_01]: The mother and the father genome were so
+similar, we just called one haplotypic
+[SPEAKER_01]: state, and we didn't need to split them
+apart.
+[SPEAKER_01]: So this is moving toward phasing these
+genomes.
+[SPEAKER_01]: And it's very, very important in cannabis,
+more so than it is in human, actually.
+[SPEAKER_01]: So what you can see from those slides is
+that the later the technology you used,
+[SPEAKER_01]: the more complete the reference is.
+[SPEAKER_01]: It has nothing to do with the cultivar
+that each of us chose or how smart we are.
+[SPEAKER_01]: It just happens to be with how late we
+decided to start sequencing these things
+[SPEAKER_01]: and what part of Moore's law that we were
+on.
+[SPEAKER_01]: So we did run something through Hi-Fi,
+which what Seth talked about many years
+[SPEAKER_01]: ago, and this gave us N50s, which is the
+average size of the contig.
+[SPEAKER_01]: It inflated it out to over five megabases,
+and the busco scores are getting up at
+[SPEAKER_01]: 97%.
+[SPEAKER_01]: So that's about as good as you can,
+as close to finish as you can get without
+[SPEAKER_01]: having to do a 20-year human genome
+project finishing episode.
+[SPEAKER_01]: You'll notice the human genome project
+recently closed and finished everything,
+[SPEAKER_01]: and they did that really because of these
+Hi-Fi sequencing tools.
+[SPEAKER_01]: They threw some Hi-C and some BioNano in
+there as well, but I think if you ask
+[SPEAKER_01]: those researchers, what was the number one
+thing that really changed and closed the
+[SPEAKER_01]: human genome, they would tell you it's the
+Hi-Fi sequencing chemistry that really
+[SPEAKER_01]: made that happen.
+[SPEAKER_01]: So you can take these sequences we have
+and align them to CS10, which is a type 3
+[SPEAKER_01]: plant.
+[SPEAKER_01]: Jamaica Line's a type 2 plant,
+and you can see there's not 100%
+[SPEAKER_01]: agreement.
+[SPEAKER_01]: There's some crossover here between all of
+the different homologies, and those
+[SPEAKER_01]: differences at the time, we didn't really
+understand where those true biological
+[SPEAKER_01]: differences between the plants were with
+these assembly artifacts.
+[SPEAKER_01]: I think we're beginning to appreciate that
+they may in fact be assembly artifacts as
+[SPEAKER_01]: more and more other people polish these
+same observations.
+[SPEAKER_01]: The other thing that you can see with
+Hi-Fi is you can see the length of
+[SPEAKER_01]: telomeres now.
+[SPEAKER_01]: Now this is something that was really cool
+because I have never seen 40 kb telomere
+[SPEAKER_01]: sequences before in my life, and I've been
+sequencing since 1996.
+[SPEAKER_01]: But out popped these telomeres with really
+not a whole lot of effort.
+[SPEAKER_01]: You can see they do vary based on
+chromosome.
+[SPEAKER_01]: They're quite different in length.
+[SPEAKER_01]: Some are a couple kb, some are 40 kb.
+[SPEAKER_01]: I bet this is a bit limited.
+[SPEAKER_01]: There could be some in there that are 60
+kb, but we didn't really have the read
+[SPEAKER_01]: length and Hi-Fi to be able to resolve
+them at that point.
+[SPEAKER_01]: But this is something to think about with
+cannabis incidence and to think about with
+[SPEAKER_01]: cloning age.
+[SPEAKER_01]: If you hyper clone things over time,
+the telomeres likely shrink like they do
+[SPEAKER_01]: in mammalian genomes, and this may give
+you a sense of like a molecular clock in
+[SPEAKER_01]: the plant.
+[SPEAKER_01]: Okay, so we did some work with organ CBD
+and urefins as well where we ended up
+[SPEAKER_01]: doing a lot of genotyping across an F1
+population in Jamaican lion, and that
+[SPEAKER_01]: helped us build these linkage maps.
+[SPEAKER_01]: So you can estimate that the actual
+genetic distance between two different
+[SPEAKER_01]: markers in a genome is a proxy for how
+close they'll recombine.
+[SPEAKER_01]: But really the devil's in the biology.
+[SPEAKER_01]: You have to actually go and do the
+crosses, and then you see how frequently
+[SPEAKER_01]: these things actually recombine in biology
+because the genes at the end of the
+[SPEAKER_01]: chromosomes have a tendency to cross over
+more frequently than the ones in the
+[SPEAKER_01]: centromeres.
+[SPEAKER_01]: And so these linkage maps are important to
+calibrate how likely is it that a gene
+[SPEAKER_01]: will be co-inherited with another one.
+[SPEAKER_01]: You can't just use a megabase scale on
+this.
+[SPEAKER_01]: You have to kind of convert it to
+centimorgans, and this project helped us
+[SPEAKER_01]: do that.
+[SPEAKER_01]: And these categories and buckets that you
+see in here in color are the concordance
+[SPEAKER_01]: that we have with the Hi-C assembled
+version of this genome.
+[SPEAKER_01]: This is similar to the dovetail work that
+Seth was demonstrating.
+[SPEAKER_01]: This is a chromatin capture technique that
+buckets chromosomes into the proper place
+[SPEAKER_01]: when you start with a collection of
+hundreds to thousands of contacts.
+[SPEAKER_01]: So we've got a nice understanding of that,
+thanks to some of that work.
+[SPEAKER_01]: We have a few folks in Massachusetts that
+have gone and tissue cultured this.
+[SPEAKER_01]: So yes, Jamaican lion can be tissue
+cultured.
+[SPEAKER_01]: There's nothing weird about it.
+[SPEAKER_01]: We've built snippet arrays off of this
+reference, and we've also built some of
+[SPEAKER_01]: these mini exome tools.
+[SPEAKER_01]: And I look forward to, if better
+references come out the next year,
+[SPEAKER_01]: they're perfectly phased across 100
+genomes.
+[SPEAKER_01]: It'll be a boon to the industry,
+and we'll readily adopt them because it's
+[SPEAKER_01]: a real challenging problem to work on
+references that are dated in any way.
+[SPEAKER_01]: Okay, so we have taken then an approach
+here of taking Illumina shotgun
+[SPEAKER_01]: sequencing, because it's more affordable,
+to blast through another 40 genomes and
+[SPEAKER_01]: map it to these references.
+[SPEAKER_01]: And this is in a preprint right now form
+that's up in bio archive.
+[SPEAKER_01]: And what you can gauge from here is the
+type of variation that you see amongst all
+[SPEAKER_01]: these genomes.
+[SPEAKER_01]: All right, this is more variation than we
+see in human genomes, and human genomes
+[SPEAKER_01]: are much bigger.
+[SPEAKER_01]: So there's about a variance every probably
+50 bases between the hemp lines and maybe
+[SPEAKER_01]: every 90 bases between the type one lines
+when you compare them to the Jamaican lion
+[SPEAKER_01]: reference.
+[SPEAKER_01]: And if you get into the Y chromosome,
+this thing jumps to like a variant every
+[SPEAKER_01]: 25 bases.
+[SPEAKER_01]: The Y chromosome is much more polymorphic,
+and it's the largest chromosome out there.
+[SPEAKER_01]: There's flowering genes on there.
+[SPEAKER_01]: There's a host of things in the Y
+chromosome that we have to pay attention
+[SPEAKER_01]: to.
+[SPEAKER_01]: The indels are the insertions and
+deletions.
+[SPEAKER_01]: And just be aware, the other axes up there
+that you're looking at is the indel.
+[SPEAKER_01]: Oh, missed that.
+[SPEAKER_01]: Well, we're not gonna go back.
+[SPEAKER_01]: I'll tell you about indels later.
+[SPEAKER_01]: So the two different axes there,
+one is snips and one is indels.
+[SPEAKER_01]: And there's 10 to 15 million variants from
+a single nucleotide level, and there's
+[SPEAKER_01]: millions of them from an insertion and
+deletion standpoint.
+[SPEAKER_01]: And when you get into structural
+variations, the numbers go down from there
+[SPEAKER_01]: substantially.
+[SPEAKER_01]: But there's still a large portion of the
+genome that is in structural variation.
+[SPEAKER_01]: The most obvious thing in cannabis
+genetics right now is what's known as the
+[SPEAKER_01]: BTBD allele that Etienne de Meyer
+originally described but didn't know the
+[SPEAKER_01]: genetic location of.
+[SPEAKER_01]: That's been fully resolved now.
+[SPEAKER_01]: And I'd probably argue that maybe 90,
+other than some of the exotic stuff that
+[SPEAKER_01]: Seth has in his library, most of the
+cannabis genetics out there, the THC and
+[SPEAKER_01]: CBD ratios are governed by this.
+[SPEAKER_01]: We're gonna touch on some of the rare
+things that they found as well that can be
+[SPEAKER_01]: an exception to this rule.
+[SPEAKER_01]: But basically the presence of or absence
+of CBD or THC synthase dictates the
+[SPEAKER_01]: chemotype of the plant.
+[SPEAKER_01]: With the exception that he mentioned from
+Zirpel, which is that if you clone these
+[SPEAKER_01]: genes into yeast, they make a portfolio of
+cannabinoids even though they're supposed
+[SPEAKER_01]: to be dedicated to making one.
+[SPEAKER_01]: So CBD synthase makes like a 21 or 25 to
+one ratio and can leak some THC synthase.
+[SPEAKER_01]: So we have to be careful about that.
+[SPEAKER_01]: We also have to be aware of the fact that
+there are many other cannabinoid synthase
+[SPEAKER_01]: genes in the genome and we don't know how
+much those leak yet.
+[SPEAKER_01]: But we're presuming they probably leak and
+they probably aren't specific to making a
+[SPEAKER_01]: single cannabinoid.
+[SPEAKER_01]: They probably make predominantly one
+cannabinoid by orders of magnitude but
+[SPEAKER_01]: they probably leak other ones as well.
+[SPEAKER_01]: So this heat map here is a list of the,
+did I get that right?
+[SPEAKER_01]: No, I think that's backwards, that's
+forward.
+[SPEAKER_01]: Well I don't know how to make the laser
+report to go on this but what you're
+[SPEAKER_01]: seeing on the right hand axis there are
+the cannabinoid synthase genes and you're
+[SPEAKER_01]: seeing the presence of absence of those in
+red and blue.
+[SPEAKER_01]: So the Jamaican lion references are over
+on the right and you get this kind of
+[SPEAKER_01]: light blue color because they all have
+those genes.
+[SPEAKER_01]: What you're seeing in the red and blue are
+the disappearance of certain genes or the
+[SPEAKER_01]: inclusion of them.
+[SPEAKER_01]: And what Seth had mentioned, what we had
+found a few years ago, is there is a very
+[SPEAKER_01]: large deletion that covers the
+cannabichromine synthase genes.
+[SPEAKER_01]: There's many of these genes in the
+Jamaican lion reference but when the
+[SPEAKER_01]: deletion occurs it takes out some
+neighboring genes with it and these
+[SPEAKER_01]: neighboring genes are known to be
+associated with pathogen response.
+[SPEAKER_01]: Now one approach to breeding perhaps low
+THC plants, a really clever way is
+[SPEAKER_01]: bringing in the varins.
+[SPEAKER_01]: Another way is maybe breed plants that
+have less of these other cannabinoid genes
+[SPEAKER_01]: so that you don't risk the leakage from
+these synthase genes leaking other
+[SPEAKER_01]: cannabinoids, potentially THC in your
+process.
+[SPEAKER_01]: So some people are breeding to get rid of
+the cannabichromine cassette and that if
+[SPEAKER_01]: it's possible this can back you into a
+corner and that it takes out some pathogen
+[SPEAKER_01]: response genes.
+[SPEAKER_01]: Now down the lower area in yellow on this
+map you can see that there's kind of a
+[SPEAKER_01]: scattering down there.
+[SPEAKER_01]: That means that's the part of the deletion
+that isn't consistent plant to plant and
+[SPEAKER_01]: some have variable lengths in this
+deletion which means some deletions of CBC
+[SPEAKER_01]: synthase can occur that don't knock out
+these genes.
+[SPEAKER_01]: So you gotta be careful when you go about
+trying to knock these things out.
+[SPEAKER_01]: You can also extend this to pathogen
+response genes.
+[SPEAKER_01]: On the right there's another list of
+chitinases, thalmitin-like proteins,
+[SPEAKER_01]: and an MLA.
+[SPEAKER_01]: These are things that are published in
+hops to have a big role.
+[SPEAKER_01]: Well we also had done some ISO sequencing
+in this.
+[SPEAKER_01]: That's RNA sequencing with PacBio.
+[SPEAKER_01]: What that had demonstrated as the most
+highly expressed gene in the genome were
+[SPEAKER_01]: chitinases.
+[SPEAKER_01]: These are things that dissolve fungal
+coats and fight off pathogens.
+[SPEAKER_01]: What we noticed in some work from Colorado
+Seeds is they had a copy number
+[SPEAKER_01]: amplification of some of these pathogen
+response genes.
+[SPEAKER_01]: One was a chitinase and one was a
+thalmitin-like protein.
+[SPEAKER_01]: So we took those genes, we cloned them,
+and we started running beta-gluconase
+[SPEAKER_01]: assays to look for how effective were
+these genes after we expressed them in E.
+[SPEAKER_01]: coli.
+[SPEAKER_01]: Did they still work and would they
+actually attack gluten?
+[SPEAKER_01]: And so we ran some assays that showed that
+yes the cannabis cloned enzymes do in fact
+[SPEAKER_01]: attack these glucans.
+[SPEAKER_01]: And then we started putting them down on
+petri dishes on these tabs of paper to see
+[SPEAKER_01]: if it would retard or change the growth of
+various fungi that are known to affect
+[SPEAKER_01]: cannabis.
+[SPEAKER_01]: So you can see a penicillium species
+there, a fusarium species there,
+[SPEAKER_01]: and we can in fact put these enzymes down
+and they slow the growth of these
+[SPEAKER_01]: pathogens that are known to affect
+cannabis.
+[SPEAKER_01]: Now this sounds like a great tool to spray
+on plants, but you know the hydrogen
+[SPEAKER_01]: peroxide is pretty cheap.
+[SPEAKER_01]: Enzymes like this, even though they're
+cloned in E.
+[SPEAKER_01]: coli, are very expensive.
+[SPEAKER_01]: We decided there may be a better tool for
+this that fit into our pipeline is can we
+[SPEAKER_01]: use these in our pathogen detection tools
+to actually do a better job of cracking
+[SPEAKER_01]: open yeast and mold so that our tests
+don't miss any of those things.
+[SPEAKER_01]: So here's an experiment we did where we
+just put these enzymes after they were
+[SPEAKER_01]: cloned out of the Jamaican Lion genome
+into E.
+[SPEAKER_01]: coli, expressed those enzymes,
+put them into brass, and then spiked
+[SPEAKER_01]: various different amounts of fungi in
+there to see if these enzymes would
+[SPEAKER_01]: actually liberate more of the DNA or
+whether they would kill some of these
+[SPEAKER_01]: organisms.
+[SPEAKER_01]: And we can in fact see a massive shift in
+the quantitative PCR results when we have
+[SPEAKER_01]: these enzymes present.
+[SPEAKER_01]: That tells us that we're actually doing a
+better job at retarding the growth of
+[SPEAKER_01]: these particular fungi.
+[SPEAKER_01]: This was done actually with aspergillus
+and we're getting a four to 64 fold
+[SPEAKER_01]: reduction in the amount of aspergillus
+that grows in a given time period when
+[SPEAKER_01]: these enzymes are present.
+[SPEAKER_01]: So these have now made their way into our
+kits.
+[SPEAKER_01]: They've been in the field for a while now.
+[SPEAKER_01]: Our new PathoSeq products actually have
+this enzymatic lysis involved,
+[SPEAKER_01]: or at least a derivative of this enzyme
+involved, that helps crack open these
+[SPEAKER_01]: yeast so we get a better job at actually
+surveying the pathogens when we're trying
+[SPEAKER_01]: to make safety tests for the pathogen
+field.
+[SPEAKER_01]: Yvonne's going to speak about this a bit
+more tomorrow, but these kits have now
+[SPEAKER_01]: made their way through AOAC.
+[SPEAKER_01]: At least the aspergillus, four different
+aspergillus species were through.
+[SPEAKER_01]: We're just in the process of moving total
+yeast and mold and total aerobic count
+[SPEAKER_01]: through.
+[SPEAKER_01]: But there's a lot of complexity to
+actually doing this correctly,
+[SPEAKER_01]: which she's going to touch on tomorrow.
+[SPEAKER_01]: But yes, there are genes in the cannabis
+plant that have basically given us some
+[SPEAKER_01]: wisdom on how to better survey the fungi
+that might in fact infect it, which is
+[SPEAKER_01]: quite cool.
+[SPEAKER_01]: Okay, so what can we do from the
+sequencing here?
+[SPEAKER_01]: If we're going to build a panel to focus
+on sequencing certain genes, which are the
+[SPEAKER_01]: ones that probably matter the most to the
+community?
+[SPEAKER_01]: So we put in the cannabinoid synthase
+genes, we put in the terpene synthase
+[SPEAKER_01]: genes, we put in the flavonoid genes,
+the chitinase thalmatine-like proteins,
+[SPEAKER_01]: the MLO genes, a lot of the other genes in
+the genome that have been annotated as
+[SPEAKER_01]: being pathogen resistance on Jamaican
+Lyme.
+[SPEAKER_01]: And then we also put in some flowering
+genes from both the X and the Y,
+[SPEAKER_01]: lots of markers across the Y and some
+random ones distributed across the genome
+[SPEAKER_01]: so that the SNP chips and that the
+sequencing tools that try to target these
+[SPEAKER_01]: things for lower costs are actually
+targeting some genes of really high
+[SPEAKER_01]: interest.
+[SPEAKER_01]: This is now a community design panel.
+[SPEAKER_01]: Anyone can order it and use it at their
+local university.
+[SPEAKER_01]: You don't have to necessarily sequence
+with us.
+[SPEAKER_01]: You can just get the kit yourself.
+[SPEAKER_01]: But you can use the software as well.
+[SPEAKER_01]: So this is a public software service on
+Canapedia.
+[SPEAKER_01]: You can import your samples here if you'd
+like and it will analyze it according to
+[SPEAKER_01]: the, this thing's even higher than 1605 as
+of today, but these are all the genomes
+[SPEAKER_01]: that are currently in there.
+[SPEAKER_01]: It will give you an estimate of how rare
+this genome is compared to everything
+[SPEAKER_01]: that's in the database.
+[SPEAKER_01]: It will also walk you through how much X
+to Y sequencing we see.
+[SPEAKER_01]: This might be pertinent when we start
+looking at hermaphroditic traits.
+[SPEAKER_01]: Right now, there isn't a real clear signal
+as to what genes drive this.
+[SPEAKER_01]: So we've decided that we're just gonna
+monitor how much the reads come out of
+[SPEAKER_01]: these systems that match the X or the Y
+and maybe some patterns will merge out of
+[SPEAKER_01]: understanding this.
+[SPEAKER_01]: And then we also go over those genes in
+the BTBD allele that Etienne de Meyer
+[SPEAKER_01]: described is that we wanna look at the
+coverage of these genes and the presence
+[SPEAKER_01]: of absence of these genes gives us a
+really good predictive model as to whether
+[SPEAKER_01]: you're gonna be a type 1, 2, 3,
+4, or 5 plant.
+[SPEAKER_01]: We can gauge that all from the sequencing
+alone with some minor exceptions that
+[SPEAKER_01]: we're gonna touch on here.
+[SPEAKER_01]: This is something that we frequently had
+customers come to us saying, we sequenced
+[SPEAKER_01]: with you and it's a CBG plant and you
+called it a type 1 plant.
+[SPEAKER_01]: What the hell's wrong?
+[SPEAKER_01]: And we dig into it and invariably we find
+this variant.
+[SPEAKER_01]: So by the time this happened, like the
+eighth or ninth time to us, I decided to
+[SPEAKER_01]: write a white paper about it to explain to
+everyone why this variant matters.
+[SPEAKER_01]: And when I put it up on the portal,
+I noticed from Seth maybe a week later
+[SPEAKER_01]: that they had already published about this
+a month earlier in the pandemic and I
+[SPEAKER_01]: missed the paper.
+[SPEAKER_01]: But they also find that this variant is in
+fact attenuating THC synthase.
+[SPEAKER_01]: And it's amazing because it's a single
+variant that seems to be driving this.
+[SPEAKER_01]: We've happened to find this variant is
+always in concordance or in linkage with
+[SPEAKER_01]: another variant known as P333R,
+which itself doesn't seem to have any
+[SPEAKER_01]: dysfunctional activity on the enzyme.
+[SPEAKER_01]: But this is a location in the genome that
+Zirpel had tagged as being really critical
+[SPEAKER_01]: to the glycosylation of this THC synthase
+enzyme.
+[SPEAKER_01]: And so it was very likely that the
+damaging is because it's adding a
+[SPEAKER_01]: glycosylation site to the THC synthase and
+that's probably making it a dysfunctional
+[SPEAKER_01]: version of it.
+[SPEAKER_01]: So you can't have a copy of THC synthase
+in rare cases that some of these type 4
+[SPEAKER_01]: plants have and it's completely ablated by
+having one of these polymorphisms.
+[SPEAKER_01]: So simple copy number analysis may miss
+this and you need to get some simpsons
+[SPEAKER_01]: there.
+[SPEAKER_01]: These are the eight different strains that
+kind of haunted us about this that we had
+[SPEAKER_01]: sequenced over time that have this same
+variant.
+[SPEAKER_01]: And I think one of the more interesting
+ones is Doug's varins because Doug's varin
+[SPEAKER_01]: was actually a THCV line.
+[SPEAKER_01]: So it did make some THC and it made it as
+THCV but a little bit more in THC.
+[SPEAKER_01]: So what is it doing?
+[SPEAKER_01]: Well, it turned out it's actually
+heterozygous for this variant.
+[SPEAKER_01]: It's got one copy of THC synthase that
+works.
+[SPEAKER_01]: It's got one that's broken.
+[SPEAKER_01]: And if you look at the chemotype of this,
+it also has half the amount of the
+[SPEAKER_01]: cannabinoid is actually CBG.
+[SPEAKER_01]: So there's a bottleneck in synthesis here.
+[SPEAKER_01]: When one of the genes is knocked out,
+we can't convert all the CBG into THC.
+[SPEAKER_01]: So we get a buildup of CBG and we get a
+little bit of THC and THCV as well.
+[SPEAKER_01]: Very interesting.
+[SPEAKER_01]: So as I mentioned before, the platform
+will give you some heredity information in
+[SPEAKER_01]: terms of what else these things are
+related to, if it's common, if it's
+[SPEAKER_01]: uncommon, it's rare.
+[SPEAKER_01]: The SNP chips are now integrated as well.
+[SPEAKER_01]: So if you run SNP chips with Urofin,
+we can port that data in and we can still
+[SPEAKER_01]: call the copy number variants off of SNP
+chips because there's enough variants in
+[SPEAKER_01]: these genes that we just hyper tile those
+genes and watch how many of the assays
+[SPEAKER_01]: drop out and it can give us information
+about whether it's CBD dominant,
+[SPEAKER_01]: THC dominant, and whether it's male or
+female as well.
+[SPEAKER_01]: So there's a bunch of different tools you
+can use here.
+[SPEAKER_01]: You know, the best is obviously whole
+genome sequencing.
+[SPEAKER_01]: The absolute pinnacle is what you're
+seeing Seth do is doing Hi-Fi sequencing
+[SPEAKER_01]: and building a reference.
+[SPEAKER_01]: It's more expensive and more time
+intensive and you need very good high
+[SPEAKER_01]: molecular weight DNA.
+[SPEAKER_01]: You don't always get that out of a hole
+punch from a plant.
+[SPEAKER_01]: However, you can get a variety of these
+things from like a hole punch of a plant.
+[SPEAKER_01]: A very small amount of DNA can be used for
+these short read sequencers.
+[SPEAKER_01]: And you know, there's varying degrees of
+resolution here.
+[SPEAKER_01]: There's whole genome shotgun with
+Illumina.
+[SPEAKER_01]: There's doing this 18 megabase panel with
+Illumina, it's 10 to 18 depending on how
+[SPEAKER_01]: deep you go.
+[SPEAKER_01]: And there's an 85K SNP chip that you can
+use.
+[SPEAKER_01]: Varying degrees of information that you
+can pull off of this and they all
+[SPEAKER_01]: integrate well with this canapedia tool.
+[SPEAKER_01]: So what else can you do with this?
+[SPEAKER_01]: Well, once you have a really good
+reference, you know what your pathogens
+[SPEAKER_01]: are.
+[SPEAKER_01]: And that's very important when you're
+looking for viruses because often time
+[SPEAKER_01]: viruses just look like retroviral elements
+in genomes.
+[SPEAKER_01]: So you want to have a really good
+reference so that things that don't map to
+[SPEAKER_01]: that reference, you can then go categorize
+and say, okay, what do these things look
+[SPEAKER_01]: like?
+[SPEAKER_01]: This was actually done really elegantly by
+the group at Phylos and Darcon.
+[SPEAKER_01]: They went and actually did RNA sequencing
+and they were able to assemble those
+[SPEAKER_01]: things and find new viruses.
+[SPEAKER_01]: And sometimes it's very helpful to first
+map all your reads against the references
+[SPEAKER_01]: to pull off the things that are,
+you know, that are related to the plant so
+[SPEAKER_01]: you can play with the things that are
+clearly not from the plant.
+[SPEAKER_01]: So we've gone and built lots of virus
+tools.
+[SPEAKER_01]: There's a list of them up there.
+[SPEAKER_01]: We have released these five ones so far
+and the other ones are all made.
+[SPEAKER_01]: And the reason we haven't released them is
+we've not found molecular evidence for
+[SPEAKER_01]: them yet in the plant.
+[SPEAKER_01]: Other than tobacco streak virus,
+that was just published out of Colorado.
+[SPEAKER_01]: However, it published and it was only 83%
+identical to what was found on tobacco.
+[SPEAKER_01]: So one of the lessons here is that even
+though these things share names from other
+[SPEAKER_01]: plants, often times when you find the
+virus in cannabis, it's so significantly
+[SPEAKER_01]: diverged, it probably deserves a new name.
+[SPEAKER_01]: And that's some of the problems we have is
+in releasing these assays, we don't want
+[SPEAKER_01]: to release them until we actually see the
+DNA sequence evidence of the virus that's
+[SPEAKER_01]: on the plant so we know that our primers
+actually hit them.
+[SPEAKER_01]: We have all these working on positive
+controls.
+[SPEAKER_01]: We have not found evidence of them in
+cannabis when you look at the ones that
+[SPEAKER_01]: are on the pipeline side.
+[SPEAKER_01]: The ones on the left, we actually have
+some evidence of them being in cannabis
+[SPEAKER_01]: and I'll show you some examples of this
+working really well.
+[SPEAKER_01]: So we work with a few grows across the
+country, some that were suffering from
+[SPEAKER_01]: hoplite and viroids, some that were
+suffering from lettuce chlorosis virus and
+[SPEAKER_01]: one that was actually suffering from both.
+[SPEAKER_01]: And they were quickly able to scan their
+mother plants, identify the plants that
+[SPEAKER_01]: actually had these viruses and viroids
+call them and get their grows back to a
+[SPEAKER_01]: particular place of productivity.
+[SPEAKER_01]: This worked very well and very quickly for
+them.
+[SPEAKER_01]: However, we did learn a couple lessons in
+these things.
+[SPEAKER_01]: Here's some other pictures of LCV that was
+making a real mess of some of these grows.
+[SPEAKER_01]: One lesson you learned is that the
+phenotype isn't always evidence,
+[SPEAKER_01]: right?
+[SPEAKER_01]: When you have one of these diseases,
+it doesn't manifest in like a clean,
+[SPEAKER_01]: like that's an obvious HLV and that's an
+obvious LCV.
+[SPEAKER_01]: These things sometimes have pleiotropic
+conditions and they can, each one,
+[SPEAKER_01]: each disease can look like one another.
+[SPEAKER_01]: So the visual confirmation doesn't
+necessarily tell you what it is.
+[SPEAKER_01]: The other thing that we noticed,
+in this chart here, what you're looking at
+[SPEAKER_01]: in blue are hoplite and viroid assays that
+were run across 12 different mother
+[SPEAKER_01]: plants, heirloom mother plants from Colin
+Palmer that were like 30 years old.
+[SPEAKER_01]: He did not wanna get rid of these things.
+[SPEAKER_01]: But one trend you'll see is that when the
+plants are actually infected with hoplite
+[SPEAKER_01]: and viroid, they're screaming hot with CTs
+in the 20s.
+[SPEAKER_01]: I would not advise people to be culling
+really important mother plants with very
+[SPEAKER_01]: late CTs because those could be noise from
+PCR, they could be contamination or they
+[SPEAKER_01]: could be something very interesting
+biologically that when you have something
+[SPEAKER_01]: that's 100,000-fold lower viroid content,
+you might be stumbling across a plant that
+[SPEAKER_01]: actually has some form of resistance that
+you wanna like put aside and maybe study a
+[SPEAKER_01]: little bit.
+[SPEAKER_01]: We don't wanna have happen in the
+industry.
+[SPEAKER_01]: It's aggressive use of PCR and people
+start weeding out all their mother plants
+[SPEAKER_01]: and suddenly the genetic diversity is just
+imploded.
+[SPEAKER_01]: So the CT values are really important
+right now for us to monitor these and
+[SPEAKER_01]: understand what we're looking at from a
+viroid load level.
+[SPEAKER_01]: The other thing to do is to sample more
+than once.
+[SPEAKER_01]: Okay, when we did this with Colin,
+since these plants were some of the
+[SPEAKER_01]: original like early chem-dog and sour D
+lines is we said, all right, we're gonna
+[SPEAKER_01]: PCR this thing in triplicate, we're gonna
+do it every three days and we're gonna do
+[SPEAKER_01]: that for three weeks.
+[SPEAKER_01]: So we're confident that we know this
+mother plant is toast and there's nothing
+[SPEAKER_01]: we can do other than maybe go to a tissue
+culture lab and sort it out.
+[SPEAKER_01]: If you're dealing with clones,
+this is overkill.
+[SPEAKER_01]: Maybe your clones are disposable,
+just kill them.
+[SPEAKER_01]: But if you're dealing with a really
+important heirloom mother plant,
+[SPEAKER_01]: I'd encourage you to put a lot of effort
+into making sure this thing is in fact
+[SPEAKER_01]: infected and it's not something that's a
+fluke.
+[SPEAKER_01]: Now, what was interesting about the study
+is we found this and then we surveyed the
+[SPEAKER_01]: roots, the leaves, the pentails,
+everything.
+[SPEAKER_01]: The viroid is everywhere, okay?
+[SPEAKER_01]: It's in the roots and there's probably
+some evidence.
+[SPEAKER_01]: I'm gonna gamble on this and say that I
+think we're gonna find that these things
+[SPEAKER_01]: are moving through the fungal mycelium
+network because there is evidence of
+[SPEAKER_01]: viroids moving, hop streak virus in
+particular, moving in mycelium in other
+[SPEAKER_01]: plants.
+[SPEAKER_01]: So we have to pay attention.
+[SPEAKER_01]: This might not just be about cleaning
+scissors.
+[SPEAKER_01]: If you got plants that are in the same
+root beds, be careful.
+[SPEAKER_01]: There may be a mechanism for these viroids
+to actually communicate through the fungal
+[SPEAKER_01]: mycelium network.
+[SPEAKER_01]: Now, we are also putting in some tools.
+[SPEAKER_01]: There's a group here, EugenTech,
+that has some of this running outside in
+[SPEAKER_01]: the exhibit hall that's gonna help us with
+auto-calling these PCR tools, okay?
+[SPEAKER_01]: A lot of the labs that are running
+Pathoseq are running lots of these samples
+[SPEAKER_01]: and it's a little bit cumbersome to have
+people go through all of the CT scores and
+[SPEAKER_01]: score them manually.
+[SPEAKER_01]: So this is an AI system that was really
+honed over the coronavirus pandemic where
+[SPEAKER_01]: they've gone through millions and millions
+of samples and they can readily call these
+[SPEAKER_01]: curves automatically and flag which ones
+are truly failing, which ones have the
+[SPEAKER_01]: internal controls functioning,
+that's very important, and which ones need
+[SPEAKER_01]: to be rerun.
+[SPEAKER_01]: So this will help automate a lot of the
+work that's out there.
+[SPEAKER_01]: Take a peek at it over in the booth.
+[SPEAKER_01]: Now, where else can we apply this?
+[SPEAKER_01]: Well, during the pandemic, I don't know if
+people followed this, but there's a lot of
+[SPEAKER_01]: interesting work on a compound known as
+fluvoxamine.
+[SPEAKER_01]: Fluvoxamine is an SSRI, but it's a very
+interesting SSRI that has a sigma-1
+[SPEAKER_01]: receptor activity, somewhat unique in that
+regard.
+[SPEAKER_01]: If any of you follow the DMT space,
+you know that DMT also hits a sigma-1
+[SPEAKER_01]: receptor and it's also has a serotonin
+mimimic, right?
+[SPEAKER_01]: So many people think psilocybin can
+replace some of these SSRIs.
+[SPEAKER_01]: In fact, that's been published in the New
+England Journal of Medicine.
+[SPEAKER_01]: So we got interested in sequencing this
+thing because it also has been shown to
+[SPEAKER_01]: play some interesting roles in treatment
+resistance and depression and in cancer,
+[SPEAKER_01]: terminal cancer depression.
+[SPEAKER_01]: So a wonderful presentation today out
+about using this in breast cancer.
+[SPEAKER_01]: So we called up Seth and said,
+hey, do you have any spare space in your
+[SPEAKER_01]: pack bio?
+[SPEAKER_01]: All of the universities in COVID seem to
+be shut down and they can't get us an
+[SPEAKER_01]: accurate turnaround time in using the pack
+bio.
+[SPEAKER_01]: So we sent him some high molecular weight
+DNA.
+[SPEAKER_01]: He fit it in one of the holes in one of
+his sequencers while he was doing hundreds
+[SPEAKER_01]: of other cannabis genomes and out popped
+this genome in remarkable shape after just
+[SPEAKER_01]: being on a fraction of one of his flow
+cells.
+[SPEAKER_01]: And it was actually remarkable.
+[SPEAKER_01]: The Hi-Fi sequencing on this had three of
+the chromosomes come out tip to tip
+[SPEAKER_01]: without needing to touch them at all.
+[SPEAKER_01]: That has never happened in my life in
+genomics.
+[SPEAKER_01]: There's always been an eyeball,
+a human eyeball has had to take care of a
+[SPEAKER_01]: lot of the repeat structures in any fungal
+genome.
+[SPEAKER_01]: So it's now in 13 chromosomes after we put
+some of this Hi-C data on it from phased
+[SPEAKER_01]: genomics.
+[SPEAKER_01]: So we've got a really good annotated
+reference now.
+[SPEAKER_01]: It's been published.
+[SPEAKER_01]: It's in NCBI.
+[SPEAKER_01]: It's open source for anyone to use.
+[SPEAKER_01]: And we're now beginning to tease apart the
+completeness of the genome and some of the
+[SPEAKER_01]: pathways that are in there and the one
+pathway I want to turn your attention to.
+[SPEAKER_01]: You'll see the busco scores are up there
+in the N50s.
+[SPEAKER_01]: Those are all really important to
+understand the completeness.
+[SPEAKER_01]: But there's, I think the best analogy here
+is CBG and the cannabinoids.
+[SPEAKER_01]: You know, CBG is the mother cannabinoid
+and then it gets split apart by other
+[SPEAKER_01]: enzymes.
+[SPEAKER_01]: They fight over it, decide what to make.
+[SPEAKER_01]: I think there's a similar thing going on
+in psilospy in that L-tryptophen is like
+[SPEAKER_01]: the CBG analog.
+[SPEAKER_01]: And it either makes these tryptamines that
+are psychoactive like psilocybin and
+[SPEAKER_01]: psilocin, origination, beocysteine,
+norbeocysteine.
+[SPEAKER_01]: Or it makes these beta-carbolines,
+which are monoamine oxidase inhibitors
+[SPEAKER_01]: that can impact the actual metabolism of
+the actual psychoactive compounds.
+[SPEAKER_01]: And some of the beta-carbolines are
+psychoactive themselves.
+[SPEAKER_01]: The beta-carbolines are predominantly made
+in the mycelium.
+[SPEAKER_01]: And the psilocybin is predominantly made
+in the carpophores.
+[SPEAKER_01]: So this pathway was identified by many
+people before us.
+[SPEAKER_01]: Frick et al and Bly et al had done a lot
+of work on this looking at this cassette.
+[SPEAKER_01]: Now it turns out most of the genes
+responsible for this in psilocybe cubensis
+[SPEAKER_01]: are clustered in a 20 kb cassette that
+some people even cloned into brewer's
+[SPEAKER_01]: yeast to try and have beer that makes
+psilocybin, which should be fun.
+[SPEAKER_01]: But what you can do when you have sequence
+like this, we now have 84 of these
+[SPEAKER_01]: genomes.
+[SPEAKER_01]: I think there's another 16 coming off
+machines right now.
+[SPEAKER_01]: And what you can do is look at those
+pathway genes.
+[SPEAKER_01]: This here is the PSIM gene.
+[SPEAKER_01]: This is the gene that methylates the
+tryptamine or the tryptophen.
+[SPEAKER_01]: And the map that you're looking at over
+there is a SNP EFF map that looks at how
+[SPEAKER_01]: damaging the mutation is and color codes
+it according to how damaging it is.
+[SPEAKER_01]: The really bright green ones are
+frameshift mutations.
+[SPEAKER_01]: Those are really bad.
+[SPEAKER_01]: The red ones are likely moderate mutations
+that you should pay attention to.
+[SPEAKER_01]: And the green ones are amino acid
+mutations, but they're not a really high
+[SPEAKER_01]: EFF score.
+[SPEAKER_01]: And anything that's blue is identical to
+the reference sequence.
+[SPEAKER_01]: So you can see in here that the reference
+genome that we picked, which
+[SPEAKER_01]: embarrassingly is named penis envy.
+[SPEAKER_01]: So if you think the cannabis names are
+bad, wait until you get into the mushroom
+[SPEAKER_01]: space.
+[SPEAKER_01]: But you'll see that it has a difference in
+this PSIM gene.
+[SPEAKER_01]: And maybe that's material to why it is
+known to make a lot more psilocybin than
+[SPEAKER_01]: many of the other mushrooms.
+[SPEAKER_01]: It's known to be one of the more potent
+ones.
+[SPEAKER_01]: We have now a nice phylogenetic tree of
+this.
+[SPEAKER_01]: And of course, we can readily take a
+dissection into this and start looking at
+[SPEAKER_01]: mating types.
+[SPEAKER_01]: We know about X and Y mating types.
+[SPEAKER_01]: That's very interesting.
+[SPEAKER_01]: It's very similar to mammals.
+[SPEAKER_01]: When you get into fungi, things get much
+more blurred.
+[SPEAKER_01]: We now have these kind of spectrums of
+genders that go on known as isomorphs.
+[SPEAKER_01]: In this case, we think this is tetrapolar.
+[SPEAKER_01]: And there's four different genders.
+[SPEAKER_01]: There might be six.
+[SPEAKER_01]: We're still trying to sort that out.
+[SPEAKER_01]: But this is just a picture of what some of
+those mating types look like.
+[SPEAKER_01]: Now, what are the mating types and what
+govern them?
+[SPEAKER_01]: They're governed by pheromones.
+[SPEAKER_01]: And colonies on plates will not grow into
+one another if they're wrong mating type.
+[SPEAKER_01]: And they won't form plant connections.
+[SPEAKER_01]: And they won't share nuclei when this
+happens.
+[SPEAKER_01]: And so we're now just trying to dissect
+these mating types.
+[SPEAKER_01]: I'm a little short on time to dig into
+that.
+[SPEAKER_01]: So we have a canapedia fork of this now
+that does the same thing.
+[SPEAKER_01]: It looks at coverage maps over the key
+genes that are in the pathway.
+[SPEAKER_01]: It tells you how related you are to
+everything else.
+[SPEAKER_01]: But more importantly, you can dig into
+each variant and pull up an IGV as well.
+[SPEAKER_01]: But more importantly, it also digs into
+the microbiome.
+[SPEAKER_01]: And I want to share a story with you this
+last minute about why this became very
+[SPEAKER_01]: important to us.
+[SPEAKER_01]: The microbiome of these things is
+important in growing because you can't
+[SPEAKER_01]: have bacteria around because it grows too
+fast in these things.
+[SPEAKER_01]: And the fungi grow slower.
+[SPEAKER_01]: So you want very sterile growth.
+[SPEAKER_01]: When you have these genomes, you can build
+PCR assays that do look for the
+[SPEAKER_01]: contamination.
+[SPEAKER_01]: So this is PSIM and PSIK being PCR-ed,
+looking for total aerobic count or E.
+[SPEAKER_01]: coli background genomic information that
+may be contaminating the grow.
+[SPEAKER_01]: So last few seconds, someone sent us DNA
+from this thing.
+[SPEAKER_01]: This thing grew in 16 days.
+[SPEAKER_01]: It's a monster mushroom.
+[SPEAKER_01]: The USA in Ecology had this.
+[SPEAKER_01]: We went sequencing about it.
+[SPEAKER_01]: And one thing that popped out are some
+genes that are involved in making massive
+[SPEAKER_01]: mushrooms.
+[SPEAKER_01]: It turns out psilocybe, in fact,
+has this gene.
+[SPEAKER_01]: It's on a radar.
+[SPEAKER_01]: And there's very little diversity in it,
+with the exception of what we're seeing up
+[SPEAKER_01]: there in this monster mushroom.
+[SPEAKER_01]: This BM16 happens to have something weird
+going on inside this gene.
+[SPEAKER_01]: Now, what is it?
+[SPEAKER_01]: Well, we see multiple different copies of
+this type of gene.
+[SPEAKER_01]: It's called FVCPC2.
+[SPEAKER_01]: We don't yet know if this is what is
+driving it.
+[SPEAKER_01]: But if you look through all the other
+versions of this gene in psilocedia,
+[SPEAKER_01]: what you find is that there are three
+dominant forms of this gene.
+[SPEAKER_01]: We have 77 of the strains have one version
+of the gene.
+[SPEAKER_01]: Five of the ones that are outside of
+cubensis have a different version of the
+[SPEAKER_01]: gene.
+[SPEAKER_01]: And then the Xerisense PS in Orissa,
+India, have a third version of this gene.
+[SPEAKER_01]: And the fourth version of this gene is
+unique to BM16.
+[SPEAKER_01]: But that, we think, is too good to be
+true.
+[SPEAKER_01]: That usually tells us we could have a
+contamination.
+[SPEAKER_01]: And it could be part of the microbiome.
+[SPEAKER_01]: And that's what we have to do some work to
+resolve.
+[SPEAKER_01]: These microbiome plots show us that when
+we sequence this from spores, something
+[SPEAKER_01]: else was in there.
+[SPEAKER_01]: And we can notice that from these blob
+tools plots.
+[SPEAKER_01]: So we're doing more sequencing on this now
+to see if this is real or whether it's a
+[SPEAKER_01]: contamination.
+[SPEAKER_01]: Stay tuned.
+[SPEAKER_01]: But the lesson of this is genomics is a
+very powerful tool.
+[SPEAKER_01]: You can sort a lot of things out about
+pathogen response, about yield,
+[SPEAKER_01]: and how to target the various things that
+may infect these organisms of interest.
+[SPEAKER_01]: And I want to thank all of these people
+for helping us get to here.
+[SPEAKER_01]: Oregon CBD is very noted up there because
+SES Group's been very helpful on
+[SPEAKER_01]: sequencing a lot of these things.
+[SPEAKER_01]: So I'll leave it for, I have some time for
+questions.
+[SPEAKER_01]: Thank you.
+[SPEAKER_01]: I can't quite see out there.
+[SPEAKER_01]: So I'm not, I can see there's no one at
+the microphone.
+[SPEAKER_01]: That's about all I can tell, other than
+maybe Ben.
+[SPEAKER_01]: Okay.
+[SPEAKER_01]: Do you need the, stick it?
+[SPEAKER_01]: Okay, so our next speaker, we are saddened
+to hear he's had some health issues and is
+[SPEAKER_01]: staying home for this.
+[SPEAKER_01]: But he did, despite all of this,
+put the time and effort into basically
+[SPEAKER_01]: making this presentation available so that
+we're going to have it on recording here.
+[SPEAKER_01]: This is Zameer Punja.
+[SPEAKER_01]: He has done a tremendous amount of work in
+pathogens that infect cannabis.
+[SPEAKER_01]: So it's very pertinent to what we were
+just discussing here.
+[SPEAKER_01]: He's published many of the papers in the
+field.
+[SPEAKER_01]: He's a real rock star in the field of the
+pathogens that infect cannabis.
+[SPEAKER_01]: So we're going to queue up Zameer Punja's
+presentation next.
+[SPEAKER_01]: I think we have one question before we do
+that.
+[SPEAKER_02]: Kevin, you mentioned with things that have
+the low viral count for hopslate and
+[SPEAKER_02]: viroid that maybe people should consider
+not culling and trying to keep those that
+[SPEAKER_02]: might have that specifically really hard
+to detect low viral count for hopslate and
+[SPEAKER_02]: viroid.
+[SPEAKER_02]: How do you recommend people safely
+approach that being that the virus spreads
+[SPEAKER_02]: so quickly?
+[SPEAKER_01]: Okay, so what to do about HLVD.
+[SPEAKER_01]: So we did write an article about this.
+[SPEAKER_01]: I'd point people to that.
+[SPEAKER_01]: This is going to be very assay-dependent,
+but for our assay, at least, we think
+[SPEAKER_01]: anything that's over a CT of 33 retest,
+particularly if it's a mother plant that
+[SPEAKER_01]: you care about.
+[SPEAKER_01]: If it's a clone, maybe it's not worth
+retesting because the retesting may be
+[SPEAKER_01]: more expensive than just making another
+clone.
+[SPEAKER_01]: But if it's one of your heirloom plants,
+everything under 33 we believe is
+[SPEAKER_01]: something you probably want to pull.
+[SPEAKER_01]: If you're finding something that
+consistently tests at 33, however,
+[SPEAKER_01]: I think that's very interesting because
+that's 100,000-fold lower viroid load.
+[SPEAKER_01]: And what we don't want to happen is that
+in the course of frantically screening
+[SPEAKER_01]: these plants, we rip out the plants that,
+in fact, are able to manage this.
+[SPEAKER_01]: It could be the fact that low viroid load
+is just a sign that the plant's actually
+[SPEAKER_01]: clearing this and not going to be affected
+by it from a yield standpoint.
+[SPEAKER_01]: I mean, this happens in human biology as
+well.
+[SPEAKER_01]: When you look at coronaviruses,
+a lot of people get reinfected with
+[SPEAKER_01]: coronavirus after they're already immune
+or vaccinated, and there's still a viroid
+[SPEAKER_01]: load there, but they don't get sick.
+[SPEAKER_01]: So viruses, like the presence,
+absence of them, I don't think is binaries
+[SPEAKER_01]: who want it to be.
+[SPEAKER_01]: When your immune system is clearing these
+things, there will be low levels of this
+[SPEAKER_01]: RNA that we can pick up for long periods
+of time.
+[SPEAKER_01]: Even in coronavirus testing, when you're
+positive, you're positive for 90 days,
+[SPEAKER_01]: you're only infectious for nine.
+[SPEAKER_01]: We don't understand that biology with this
+viroid yet, and so I'm just putting out a
+[SPEAKER_01]: little bit of caution there until we
+understand that biology, retest it if it's
+[SPEAKER_01]: a really important mother plant,
+maybe destroy it if it's, in fact,
+[SPEAKER_01]: a clone.
+[SPEAKER_00]: So do we have a sense of whether there's
+an entourage effect working with
+[SPEAKER_00]: psilocybin mushrooms similar to cannabis
+where it's the interaction of not just
+[SPEAKER_00]: psilocybin but other compounds that
+affects how someone feels?
+[SPEAKER_01]: Sorry, I'm jumping down because the sound
+is better down there.
+[SPEAKER_01]: So yes, is there an entourage effect,
+I think is what you're saying,
+[SPEAKER_01]: in psilocybin, and just like in the path
+of moving from olivatolic acid to CBG onto
+[SPEAKER_01]: more mature cannabinoids, the same thing
+is going on in the psilocybin pathway
+[SPEAKER_01]: where we're moving from L-tryptophen and
+we're decorating that molecule with
+[SPEAKER_01]: different methyl groups and
+phosphorylating it along the way.
+[SPEAKER_01]: So you get the spectrum of molecules like
+origination, biocysteine, psilocin,
+[SPEAKER_01]: and psilocybin.
+[SPEAKER_01]: There's also norsilocin and norbiocysteine
+that are different derivatives of these
+[SPEAKER_01]: molecules.
+[SPEAKER_01]: That's one entourage effect.
+[SPEAKER_01]: The second entourage effect I think that's
+in the mushroom that's a little bit more
+[SPEAKER_01]: interesting is that there are compounds
+like these beta-carbolines that we know
+[SPEAKER_01]: are monoamine oxidase inhibitors that
+change the way that your body metabolizes
+[SPEAKER_01]: the former ones, and some of those are
+even psychoactive themselves.
+[SPEAKER_01]: So there is an entourage in these things,
+and we don't really know which mushrooms
+[SPEAKER_01]: are making these, and our effort here is
+to try to tie the genotypes to those
+[SPEAKER_01]: particular chemotypes over time.
+[SPEAKER_01]: We want to collaborate with people that
+can do the chemotyping.
+[SPEAKER_01]: Right now we don't know a lot of people
+that can do that.
+[SPEAKER_01]: We're also hiring, so for folks out there,
+this is part of the problem we want to
+[SPEAKER_01]: solve, and we need more people for it.
+[SPEAKER_01]: Thank you.
+[SPEAKER_01]: Thank you.
+Thank you.

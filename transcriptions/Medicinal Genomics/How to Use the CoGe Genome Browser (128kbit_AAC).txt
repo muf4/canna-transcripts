@@ -1,0 +1,1000 @@
+[SPEAKER_00]: All right, so today we're going to walk
+through utilizing the Koji browser.
+[SPEAKER_00]: This is a genome browser where we have a
+lot of ties in a canapedia.
+[SPEAKER_00]: So much of the data that was in this bio
+archive pre-print we have over here is now
+[SPEAKER_00]: up in viewable in Koji.
+[SPEAKER_00]: So this consists of, well the paper had 42
+genomes, there's now 47 genomes that are
+[SPEAKER_00]: up in Koji and that number will keep
+climbing, but these are whole genome shock
+[SPEAKER_00]: guns done with Illumina all mapped to a
+pack bio generated pan trio reference.
+[SPEAKER_00]: A pan genome is just multiple genomes that
+build a reference together and we have a
+[SPEAKER_00]: maternal reference, a paternal reference
+and an offspring reference all assembled
+[SPEAKER_00]: with Pacific Biosciences here.
+[SPEAKER_00]: This is a long read sequencer that
+generates reference grade genomes and the
+[SPEAKER_00]: N50s of these genomes are very contiguous.
+[SPEAKER_00]: The most contiguous genomes that have been
+put public.
+[SPEAKER_00]: So N50 is the average size of the contigs
+in the genome and the average for these
+[SPEAKER_00]: are over a million bases or usually around
+three million bases in length and that
+[SPEAKER_00]: number goes a little bit further north if
+you get rid of some of the small contigs.
+[SPEAKER_00]: So anyway, the important thing to know
+about these genomes is they have the
+[SPEAKER_00]: highest BUSCO score out there.
+[SPEAKER_00]: BUSCO is a tool that's utilized to measure
+the completeness of genomes.
+[SPEAKER_00]: Okay, so that can be seen right here.
+[SPEAKER_00]: Here's the mother father and the
+offspring.
+[SPEAKER_00]: This is the N50 number, the average size,
+the contig lengths.
+[SPEAKER_00]: Again, this is including a lot of small
+contigs.
+[SPEAKER_00]: A lot of people like to screen out the
+things that are under 50 kb and these
+[SPEAKER_00]: numbers climb a little bit, but we've left
+them in there for completeness.
+[SPEAKER_00]: You can see the genome sizes vary.
+[SPEAKER_00]: The paternal genomes are bigger because
+they have a Y chromosome.
+[SPEAKER_00]: This one's a female and the BUSCO scores
+is the percent completeness by looking for
+[SPEAKER_00]: around 2,400 or so genes that should be in
+all plant genomes.
+[SPEAKER_00]: This is approaching the highest we've
+seen.
+[SPEAKER_00]: I don't think we've ever seen this number
+in assembly go higher than 97.8.
+[SPEAKER_00]: That's a reference that we're working on
+right now that's a little bit different
+[SPEAKER_00]: than these.
+[SPEAKER_00]: Nevertheless, this is the set of
+references we're using to map all of the
+[SPEAKER_00]: other 40 genomes against this.
+[SPEAKER_00]: Now, in addition to mapping those 40 whole
+genome shotguns against this data set,
+[SPEAKER_00]: we have done isoseq, which is single
+molecule sequencing unpacked by all of the
+[SPEAKER_00]: RNA transcripts across five tissues.
+[SPEAKER_00]: This gives us an idea of where all the
+genes are.
+[SPEAKER_00]: You can see we've got about 27,000
+maternal genes and 32,000 paternal genes.
+[SPEAKER_00]: The exome size is anywhere between 40 to
+50 megabases.
+[SPEAKER_00]: The coding size is a little smarter than
+that.
+[SPEAKER_00]: The CDS size is different than the exome
+size because the exome can have the five
+[SPEAKER_00]: prime and the three prime untranslated
+regions.
+[SPEAKER_00]: These are UTRs.
+[SPEAKER_00]: When you make an RNA molecule,
+you often include the promoter and the
+[SPEAKER_00]: terminator in the RNA, which aren't
+necessarily read into proteins.
+[SPEAKER_00]: They're just used to regulate it.
+[SPEAKER_00]: That's how the exome includes the CDS.
+[SPEAKER_00]: The CDS is always a subset of the exome.
+[SPEAKER_00]: Then if you look at how much genetic
+distance these things span across,
+[SPEAKER_00]: since genes can have large introns,
+that means these are the gaps in between
+[SPEAKER_00]: the expressed regions, or the exons.
+[SPEAKER_00]: This really spreads across 120 to 160
+megabases in the plant.
+[SPEAKER_00]: A lot of data in there to chew on.
+[SPEAKER_00]: I want to share a couple other points of
+this data set to you.
+[SPEAKER_00]: This here is a copy number map of all of
+the other genomes that we sequenced
+[SPEAKER_00]: against the Jamaican lion paternal
+reference.
+[SPEAKER_00]: This paternal reference has Y chromosomes
+in there.
+[SPEAKER_00]: You can see there's zero coverage over any
+of those contigs in all of these lines.
+[SPEAKER_00]: It turns out those ones all happen to be
+the males.
+[SPEAKER_00]: These ones we know are female.
+[SPEAKER_00]: I'm sorry, these ones all happen to be the
+females, and these ones happen to be the
+[SPEAKER_00]: males, male, female.
+[SPEAKER_00]: You can see there's coverage of those
+regions in the males, and there isn't any
+[SPEAKER_00]: of the females.
+[SPEAKER_00]: That's how we identify the Y chromosome.
+[SPEAKER_00]: It's actually a little bit bigger than
+this.
+[SPEAKER_00]: There's some portions of the Y chromosome
+that are known as the pseudo-autosomal
+[SPEAKER_00]: region, which is still recombining with
+the Y, which means the portions of Y and X
+[SPEAKER_00]: are still recombining, which means it
+still has some homology to the X
+[SPEAKER_00]: chromosome.
+[SPEAKER_00]: Down here, you can see the females have
+twice the amount of coverage on these
+[SPEAKER_00]: contigs.
+[SPEAKER_00]: They're normally covered in the males.
+[SPEAKER_00]: This is the putative X chromosome material
+as well.
+[SPEAKER_00]: The X chromosome probably entails some of
+these other areas as well.
+[SPEAKER_00]: It's usually around over 100 megabases.
+[SPEAKER_00]: When we add up everything that's going on
+in the Y, the Y is the largest chromosome
+[SPEAKER_00]: as well, so just a little bit larger than
+X.
+[SPEAKER_00]: That copy number map just helps you to
+identify which ones are definitively male
+[SPEAKER_00]: and female.
+[SPEAKER_00]: This is a pedigree that was sequenced.
+[SPEAKER_00]: We did pack biosequencing on this one,
+this one, and this one.
+[SPEAKER_00]: This one is a runt.
+[SPEAKER_00]: It's not apparent at this stage in its
+life, but you'll see some pictures for
+[SPEAKER_00]: that it's actually a runt.
+[SPEAKER_00]: We chose that as the offspring of sequence
+because we thought we might learn
+[SPEAKER_00]: something about yield in that genome since
+it seems to lack it.
+[SPEAKER_00]: Then all the other ones we put through
+Illumina sequencing and mapped it back to
+[SPEAKER_00]: the maternal or paternal reference,
+which you're going to see all of these BAM
+[SPEAKER_00]: files in this COGI database.
+[SPEAKER_00]: A couple of different aspects that you're
+welcome to read in this paper.
+[SPEAKER_00]: These are the single nucleotide
+polymorphisms and the insertions and
+[SPEAKER_00]: deletions under 50 bases that are found
+across all of the 40 genomes.
+[SPEAKER_00]: We've got the type I's, the type II's,
+and the type III's.
+[SPEAKER_00]: These are the pedigree plants up here.
+[SPEAKER_00]: The Jamaican lion family is in here.
+[SPEAKER_00]: You can see there's less variation amongst
+their own family.
+[SPEAKER_00]: That's because we're mapping the family
+back to its parents.
+[SPEAKER_00]: Of course, there's less variance that way,
+but as you begin to map hemp samples and
+[SPEAKER_00]: other type I samples against these
+genomes, you start to see much more
+[SPEAKER_00]: diversion and diversity.
+[SPEAKER_00]: You will see VCF files inside COGI that
+I'm going to show you that describe some
+[SPEAKER_00]: of this data.
+[SPEAKER_00]: This is a coverage correlation analysis of
+the whole genome sequencing data.
+[SPEAKER_00]: Note the scale here.
+[SPEAKER_00]: This is very, very highly concordant
+coverage across the genomes, but there's a
+[SPEAKER_00]: couple of genomes in here that are some of
+the most diverged genomes we've ever seen.
+[SPEAKER_00]: This is the 83 set.
+[SPEAKER_00]: This is a unique set of plants,
+minibusomes, and they may have some hops
+[SPEAKER_00]: heritage to them as well.
+[SPEAKER_00]: There's been some really interesting
+cross-breeding they've been trying to do
+[SPEAKER_00]: hops, but most of the sequence we're
+seeing is predominantly cannabis,
+[SPEAKER_00]: but you can see is, of course,
+the most divergent cannabis sequence we
+[SPEAKER_00]: have here.
+[SPEAKER_00]: Here's a picture of ADE.
+[SPEAKER_00]: You can see its leaves look like basil,
+not serrated, and it's powdery mildew
+[SPEAKER_00]: resistant.
+[SPEAKER_00]: Its neighbors that are loaded with it
+never seem to transfer it over to here.
+[SPEAKER_00]: We've also seen some of them Jamaican lion
+family.
+[SPEAKER_00]: They are powdery mildew resistant.
+[SPEAKER_00]: We probably have some pictures of that
+that we can share as well.
+[SPEAKER_00]: This is JL5, which turned into being a
+hyper-branched runt when it came out of
+[SPEAKER_00]: the growth chamber.
+[SPEAKER_00]: It was grown in the same conditions as all
+its siblings, which are towering over it
+[SPEAKER_00]: in this photo.
+[SPEAKER_00]: There's some interesting things that we
+learned about what might be driving the
+[SPEAKER_00]: lack of growth in that plant that you can
+read about more in the paper.
+[SPEAKER_00]: What you're going to see are a variety of
+heat maps that look like this throughout
+[SPEAKER_00]: the paper.
+[SPEAKER_00]: These are largely heat maps looking at
+copy number changes of DNA in the genome.
+[SPEAKER_00]: What we noticed in cannabis is that it
+loves to insert and delete copies of
+[SPEAKER_00]: genes.
+[SPEAKER_00]: In fact, this is how it did a cannabinoid
+gene expansion in the plant, as it just
+[SPEAKER_00]: kept making more copies of these things.
+[SPEAKER_00]: That's why there's upwards to 90 of these
+genes in the genome that have what looks
+[SPEAKER_00]: like an FAD binding domain and a berberine
+bridge, which is two of the
+[SPEAKER_00]: characteristics of cannabinoid synthases.
+[SPEAKER_00]: There's a PFAM domain that searches for
+these in the genome, and that number ranks
+[SPEAKER_00]: up there around 90.
+[SPEAKER_00]: Now, not all of those 90 years are active.
+[SPEAKER_00]: Some of them are broken or truncated or
+don't have the proper start and stop
+[SPEAKER_00]: codons.
+[SPEAKER_00]: We've then filtered those for a smaller
+set of genes that you'll see that we're
+[SPEAKER_00]: going to touch on in some of these slides.
+[SPEAKER_00]: Nevertheless, you can do really
+interesting studies when you have whole
+[SPEAKER_00]: genome sequencing data with very few PCR
+cycles.
+[SPEAKER_00]: That's an important aspect of doing the
+method prep here.
+[SPEAKER_00]: When you do that, you can then throw the
+data up against the Jamaican line
+[SPEAKER_00]: reference and ask which parts of the
+genome are missing, which genes are
+[SPEAKER_00]: missing, and which genes are amplified.
+[SPEAKER_00]: That's what you're looking at in this heat
+map here, is that the genes that are in
+[SPEAKER_00]: red have been amplified quite a bit,
+and the genes that are blue have been
+[SPEAKER_00]: deleted.
+[SPEAKER_00]: You can see already just in these set of
+samples here that there is a
+[SPEAKER_00]: characteristic of certain TLPs being
+deleted and certain chitinases and MLO
+[SPEAKER_00]: regions being amplified, and also some
+chitinases that have been perhaps deleted
+[SPEAKER_00]: or amplified.
+[SPEAKER_00]: What we've been doing is tracking powdery
+mildew resistance status across multiple
+[SPEAKER_00]: cultivars to see if any of these patterns
+map with resistance status.
+[SPEAKER_00]: The reason we're looking at chitinases and
+thalmatine-like proteins and MLO is these
+[SPEAKER_00]: are all the genes and hops that have been
+hunted down over the years to be involved
+[SPEAKER_00]: in powdery mildew resistance.
+[SPEAKER_00]: We already have a few candidates in here,
+genes that we believe are involved in the
+[SPEAKER_00]: powdery mildew resistance in Jamaican
+lion, and we've cloned those and expressed
+[SPEAKER_00]: them and demonstrated they actually
+destroy fungi.
+[SPEAKER_00]: Now, that being said, while we think we
+have found a reason for powdery mildew
+[SPEAKER_00]: resistance in Jamaican lion, we believe
+there's going to be convergent evolution.
+[SPEAKER_00]: When there's this many chitinases and this
+many TLPs, other plants are going to
+[SPEAKER_00]: probably find a collection of these things
+to amplify that give them resistance as
+[SPEAKER_00]: well, but may not show the same pattern
+that we see in the Jamaican lion genetics.
+[SPEAKER_00]: There's multiple ways to probably skin the
+resistance cat, and while we think we
+[SPEAKER_00]: found one of them, probably may not be
+100% reflective of resistance in other
+[SPEAKER_00]: lines.
+[SPEAKER_00]: Here's a set that we pulled out that we
+believe are playing a role.
+[SPEAKER_00]: We've cloned a few of these.
+[SPEAKER_00]: In fact, this TLP 2563 has in fact been
+cloned.
+[SPEAKER_00]: You'll see that work in this paper that
+when it is cloned, expressed in a coli,
+[SPEAKER_00]: and purified out of a coli, and then
+placed onto films that are growing
+[SPEAKER_00]: penicillium and fusarium, we get this type
+of inhibition and growth when these
+[SPEAKER_00]: chitinases and TLPs are present.
+[SPEAKER_00]: Here's a fusarium oxysporum, and it's got
+less growth over here where we've applied
+[SPEAKER_00]: some of the enzyme, then we'll put down
+here.
+[SPEAKER_00]: It tends to change the autofusarium
+expression in fusarium.
+[SPEAKER_00]: Now, fusarium is known that when you give
+it mycosides, it stops making these
+[SPEAKER_00]: pigments.
+[SPEAKER_00]: It's a sign of it going into apoptosis and
+cell death.
+[SPEAKER_00]: There's more to read about this in this
+paper, but if you really want to dig
+[SPEAKER_00]: through this data, you want to get
+familiar with COGI, which is the genome
+[SPEAKER_00]: browser that allows you to surf all this
+stuff.
+[SPEAKER_00]: Now, we left off the last tutorial talking
+about CBD and THC genetics.
+[SPEAKER_00]: This here is a heat map looking at those
+three genes that we scan in canapedia,
+[SPEAKER_00]: the inactive CBD synthase, the active CBD
+synthase, and the active CBD synthase.
+[SPEAKER_00]: You can see this type of pattern here that
+is inversely correlated and predicts the
+[SPEAKER_00]: typing of the plants.
+[SPEAKER_00]: The type 1, 2, and 3 status is completely
+predictable by the presence and absence of
+[SPEAKER_00]: these genes.
+[SPEAKER_00]: You'll notice this region is almost always
+correlated, maybe not here.
+[SPEAKER_00]: There's a little bit difference,
+but the deletion sometimes extends to be a
+[SPEAKER_00]: little bit shorter, a little bit longer in
+this region of the genome, and we get more
+[SPEAKER_00]: or less a very similar prediction with the
+gene even right next door to THC synthase.
+[SPEAKER_00]: Now, as I mentioned in the last tutorial,
+there's many other ways to knock out THC
+[SPEAKER_00]: synthase.
+[SPEAKER_00]: We have seen some type 4 plants that have
+this gene in red, making you think that
+[SPEAKER_00]: it's a type 1, 2, and plant, but it
+actually has some point mutations that
+[SPEAKER_00]: knock out really key amino acids.
+[SPEAKER_00]: I want to show you how you can take your
+VCF file from StrainSeq, load it into
+[SPEAKER_00]: Koji, and look for those things because
+right now, the tools we have in the
+[SPEAKER_00]: reports aren't digging that deep yet.
+[SPEAKER_00]: The data is there in your sequencing data,
+but our software tools haven't gotten
+[SPEAKER_00]: smart enough to go in there and identify
+the variants and decide which one's really
+[SPEAKER_00]: damaging and which one isn't to give you a
+23andMe report on every single base.
+[SPEAKER_00]: We're building that right now,
+but in the meantime, we want to enable you
+[SPEAKER_00]: to be able to load this stuff into the
+Koji genome browser and surf it yourself.
+[SPEAKER_00]: Just to give you a sense of the complexity
+that's behind this, these are a very large
+[SPEAKER_00]: set of cannabinoid synthase genes,
+39 of them with 11 other genes that are
+[SPEAKER_00]: next door neighbors to them that
+oftentimes disappear or appear with them.
+[SPEAKER_00]: They're in linkage.
+[SPEAKER_00]: When these genes get deleted, they
+sometimes delete their neighbors too.
+[SPEAKER_00]: That's important to track because if you
+breed for certain cannabinoid synthase
+[SPEAKER_00]: genes to be present or absent in your
+plants, you really keep track of the
+[SPEAKER_00]: neighbors that's dragging down with it.
+[SPEAKER_00]: This is a case here where these sets of
+genes, this is a gene on contigs.
+[SPEAKER_00]: It looks at contigs 756, right there,
+C756.
+[SPEAKER_00]: This is the cannabichromine cluster.
+[SPEAKER_00]: It's labeled as inactive THC synthase
+because that's what NCBI first learned of
+[SPEAKER_00]: this as.
+[SPEAKER_00]: It was submitted as an inactive THC
+synthase, meaning it makes very little or
+[SPEAKER_00]: no THC synthase, but it might make some.
+[SPEAKER_00]: That's something to keep your eye on.
+[SPEAKER_00]: It's now been cloned and it's known to be
+the cannabichromine synthase cluster.
+[SPEAKER_00]: You'll see that many of the lines have
+copies of this, particularly some of these
+[SPEAKER_00]: ones are, in fact, hemp lines.
+[SPEAKER_00]: When you breed for hemp lines,
+you've got to make sure that if you have a
+[SPEAKER_00]: hemp line that still has eight of these
+inactive THC synthases, they may cause a
+[SPEAKER_00]: problem.
+[SPEAKER_00]: They may leak on you and still be slightly
+active.
+[SPEAKER_00]: A lot of growers right now want to breed
+hemp lines that have this two megabase
+[SPEAKER_00]: deletion.
+[SPEAKER_00]: There is a common deletion in the
+population where this whole cassette is
+[SPEAKER_00]: knocked out.
+[SPEAKER_00]: It also happens to knock out these other
+genes on contigs 756 down here.
+[SPEAKER_00]: Our paper describes these.
+[SPEAKER_00]: These other genes here are, in fact,
+pathogen resistance genes.
+[SPEAKER_00]: They're aquaporin receptors.
+[SPEAKER_00]: They are gibberillin receptors.
+[SPEAKER_00]: They're important features that go with
+them.
+[SPEAKER_00]: You want to be careful and look at your
+plant to know if you are breeding for one
+[SPEAKER_00]: of these things, you might want to pick
+one that doesn't have as many of those
+[SPEAKER_00]: pathogen resistant genes knocked out.
+[SPEAKER_00]: This one here, Tibor, still has many of
+those pathogen resistance genes,
+[SPEAKER_00]: but it doesn't have the inactive THC
+synthase.
+[SPEAKER_00]: The cannabichromines are gone.
+[SPEAKER_00]: This is a great line to perhaps try and
+breed into a type 3 compliant hemp line.
+[SPEAKER_00]: It may not make a lot of resin.
+[SPEAKER_00]: It may need to be paired with something
+that does.
+[SPEAKER_00]: You can also see several type 1 plants
+often have the cannabichromine cluster.
+[SPEAKER_00]: You would really never know if they're
+making residual THC because you already
+[SPEAKER_00]: have a THC synthase and they're making
+plenty.
+[SPEAKER_00]: You will see a lot of plants that don't
+have the THC synthase gene, do have a CBD
+[SPEAKER_00]: synthase gene, but also have
+cannabichromine.
+[SPEAKER_00]: That may be a problem, as we mentioned in
+our last thing.
+[SPEAKER_00]: Anyway, there's a lot of cannabichromine
+genes to keep in mind as you're doing
+[SPEAKER_00]: these things and breeding because
+ultimately these are going to be the
+[SPEAKER_00]: source of pain.
+[SPEAKER_00]: Residual cannabinoid expression is not
+just related to the major genes that are
+[SPEAKER_00]: producing these things.
+[SPEAKER_00]: Many of these old genes might be producing
+other cannabinoids, rare ones,
+[SPEAKER_00]: or small amounts of THC and CBD synthase,
+which could wreak havoc in a hemp
+[SPEAKER_00]: compliance program.
+[SPEAKER_00]: Feel free to find this paper at Bioarchive
+and let's go to Koji.
+[SPEAKER_00]: If you Google Koji, COGE, comparative
+genomics, you'll end up at a site like
+[SPEAKER_00]: this.
+[SPEAKER_00]: There is a tutorial here, but I'm going to
+try and do that for you.
+[SPEAKER_00]: There's a lot of genomes in here.
+[SPEAKER_00]: You see there's 51,000 genomes in this
+thing.
+[SPEAKER_00]: There happens to be a lot of our cannabis
+genomes in here too.
+[SPEAKER_00]: If you search for cannabis genomes,
+you're going to get a lot of them.
+[SPEAKER_00]: You want to click on the one in here
+that's certified.
+[SPEAKER_00]: Right down here, there's a Jamaican lion
+mother that's been certified and there is
+[SPEAKER_00]: a male that's been certified.
+[SPEAKER_00]: The certification just means that the Koji
+team has combed over the annotations in
+[SPEAKER_00]: the genome structure and they believe it
+meets a certain standard and they
+[SPEAKER_00]: certified.
+[SPEAKER_00]: These are the best Busco score and N50
+genomes out there.
+[SPEAKER_00]: You will know we have not put them into
+chromosomes yet.
+[SPEAKER_00]: While we are playing with that,
+we're cautious on calling the chromosomes
+[SPEAKER_00]: because they're all very similar sizes.
+[SPEAKER_00]: As we just showed you, there are frequent
+two megabase deletions that may make you
+[SPEAKER_00]: miscall chromosome five versus chromosome
+six because these things are really close
+[SPEAKER_00]: in size.
+[SPEAKER_00]: When there's a two meg deletion there,
+you can quickly make chromosome six,
+[SPEAKER_00]: mistake it for chromosome five.
+[SPEAKER_00]: I'm not saying they're on five or six.
+[SPEAKER_00]: As an example, a lot of these chromosomes
+are almost identical in size and so the
+[SPEAKER_00]: deletions matter.
+[SPEAKER_00]: You may see chromosomes from us a little
+bit later this year but for the most part,
+[SPEAKER_00]: that level of resolution is a little bit
+academic at the moment.
+[SPEAKER_00]: Let's open up one of these browsers.
+[SPEAKER_00]: We're now into this genome.
+[SPEAKER_00]: It will show you there's a couple
+different annotations that we've thrown in
+[SPEAKER_00]: here.
+[SPEAKER_00]: It will also give you a handful of
+experiments that are public and available
+[SPEAKER_00]: for you to surf.
+[SPEAKER_00]: If you want to download this genome,
+right there is a download button.
+[SPEAKER_00]: There is a GFF download in here as well.
+[SPEAKER_00]: We have had some people report that
+downloading from GFS from Koji changes the
+[SPEAKER_00]: format a little bit so just be aware of
+that.
+[SPEAKER_00]: There are two different ways to download
+it.
+[SPEAKER_00]: There's through this tab and one other tab
+that when you click on the actual
+[SPEAKER_00]: experiment itself, I think when you
+download that, you get the exact file we
+[SPEAKER_00]: put in there.
+[SPEAKER_00]: If you download off of this, there might
+be some modifications that Koji added.
+[SPEAKER_00]: Two different ways to download those,
+just be aware of it.
+[SPEAKER_00]: Let's go browse this genome.
+[SPEAKER_00]: This is going to bring up what's known as
+a genome browser.
+[SPEAKER_00]: What it's going to ask you for are,
+what coordinates do you want to go to?
+[SPEAKER_00]: What part of the map are you looking for?
+[SPEAKER_00]: Here we are.
+[SPEAKER_00]: This is probably the last thing we looked
+at.
+[SPEAKER_00]: Let's just go over to let's go to THC
+synthase.
+[SPEAKER_00]: That's what everyone loves to see.
+[SPEAKER_00]: 741, I happen to know this is at 441700.
+[SPEAKER_00]: There we
+[SPEAKER_00]: go.
+[SPEAKER_00]: This shows you the ATCs and Gs.
+[SPEAKER_00]: If you're not familiar with this,
+this is an amino acid translation in three
+[SPEAKER_00]: different frames in the top strand and
+three different frames in the bottom
+[SPEAKER_00]: strand.
+[SPEAKER_00]: You can read three different frames of DNA
+when you're trying to convert it into
+[SPEAKER_00]: proteins.
+[SPEAKER_00]: These red marks are stop codons.
+[SPEAKER_00]: Usually genes don't have those.
+[SPEAKER_00]: One way to know what frame you're in is
+just look for the longest stretch.
+[SPEAKER_00]: That doesn't have any stop codons.
+[SPEAKER_00]: With THC synthase, it's pretty easy.
+[SPEAKER_00]: You can see there's a finding right there.
+[SPEAKER_00]: You go further back to the start of the
+gene.
+[SPEAKER_00]: Let's zoom out a little bit.
+[SPEAKER_00]: It's not going baby steps anymore.
+[SPEAKER_00]: There you go.
+[SPEAKER_00]: Start of the gene, stop of the gene.
+[SPEAKER_00]: If you click on this, you'll get a little
+messenger RNA with a note of what the
+[SPEAKER_00]: database thinks this is.
+[SPEAKER_00]: We've done some annotation on this and
+adjusted some of the start and stop codons
+[SPEAKER_00]: just to make sure that it's in fact what
+is seen in the literature.
+[SPEAKER_00]: You can download the sequence of it by
+hitting that fast A button if you want.
+[SPEAKER_00]: It'll do something like this.
+[SPEAKER_00]: There's the sequence.
+[SPEAKER_00]: In fact, this is what we use to clone some
+of those powdery mildew resistance genes.
+[SPEAKER_00]: We just clicked on the gene, grabbed this
+from the start codon on, sent it off to
+[SPEAKER_00]: Genscript to get it cloned and sequenced
+and expressed.
+[SPEAKER_00]: We had protein in a few weeks.
+[SPEAKER_00]: What are you looking at here?
+[SPEAKER_00]: This is, as I said, the coding sequence,
+CDS.
+[SPEAKER_00]: If you want to add more features in here,
+you can easily take that CDS and it'll add
+[SPEAKER_00]: it down here.
+[SPEAKER_00]: You can remove that track if you want.
+[SPEAKER_00]: You can remove that track if you want.
+[SPEAKER_00]: Put it back, it'll end up down here.
+[SPEAKER_00]: Then you can also see that we have all of
+these other reads here.
+[SPEAKER_00]: This here is female leaf RNA sequence.
+[SPEAKER_00]: When we did ISO-seq sequencing,
+all of these RNA molecules popped out from
+[SPEAKER_00]: the leaves that we're expressing to you.
+[SPEAKER_00]: That's to be expected.
+[SPEAKER_00]: This is a type two plant.
+[SPEAKER_00]: Below here is a whole genome shotgun of
+grape stomper, another genome that's been
+[SPEAKER_00]: aligned to this.
+[SPEAKER_00]: You can comb through this and look for
+variants if you want.
+[SPEAKER_00]: Let's get that out of here because it
+takes up a lot of memory and work with
+[SPEAKER_00]: these.
+[SPEAKER_00]: Here's TSC synthase.
+[SPEAKER_00]: Now, other things you might want to look
+at.
+[SPEAKER_00]: Well, if you had your own sample,
+you could load that into the genome
+[SPEAKER_00]: browser, a VCF file off a canapedia,
+and see where all the SNPs are in your
+[SPEAKER_00]: genome.
+[SPEAKER_00]: We're going to do that in just a moment.
+[SPEAKER_00]: Let me just show you some of the
+functionality here.
+[SPEAKER_00]: These are all the public data.
+[SPEAKER_00]: It's possible.
+[SPEAKER_00]: You can hit the structural variation file
+here.
+[SPEAKER_00]: We'll show you where are the very large
+scale insertions and deletions are on the
+[SPEAKER_00]: genome.
+[SPEAKER_00]: I don't think you're going to find any in
+Jamaican lion or over TSC synthase,
+[SPEAKER_00]: but you may find some other hits over
+here.
+[SPEAKER_00]: Here's a deletion.
+[SPEAKER_00]: It shows you its size and some of its
+attributes.
+[SPEAKER_00]: Now, let's go into TSC synthase and let's
+ask ourselves, well, what do we have in
+[SPEAKER_00]: the 40 Genomes project in terms of a VCF
+file?
+[SPEAKER_00]: VCF files are variant call formats and
+they'll have some of the SNPs.
+[SPEAKER_00]: Let me see if that peppers this with
+variants.
+[SPEAKER_00]: I don't think it does.
+[SPEAKER_00]: Let me see.
+[SPEAKER_00]: There must be another one up here that
+does that.
+[SPEAKER_00]: We have a 40 Genomes thing public.
+[SPEAKER_00]: There's annotations in here.
+[SPEAKER_00]: This may give you some of the gene calls.
+[SPEAKER_00]: It's kind of redundant.
+[SPEAKER_00]: There is some work from a group,
+I think 20 labs that did some mass spec
+[SPEAKER_00]: profiling and you can see how many of
+these genes have they actually detected a
+[SPEAKER_00]: mass spec peptide for.
+[SPEAKER_00]: In fact, TSC synthase pops out.
+[SPEAKER_00]: Now, in our experience, 98.8% of what Ben
+Osborne has found and has published we
+[SPEAKER_00]: find in the RNA set in Jamaican lion.
+[SPEAKER_00]: He found about 12,000 peptides and you saw
+from our slides over there that we have
+[SPEAKER_00]: like 27 to 32,000 genes.
+[SPEAKER_00]: Only about 40% of the RNA that we have
+found is accounted for in the protein
+[SPEAKER_00]: data.
+[SPEAKER_00]: That's not unheard of.
+[SPEAKER_00]: Some of the proteins may not be heavily
+expressed and the sensitivity of the
+[SPEAKER_00]: machine may not pick them up otherwise.
+[SPEAKER_00]: We have a variety of experiments here you
+can throw on top of this.
+[SPEAKER_00]: We have the RNA from the female flowers,
+from the leaves, from the roots.
+[SPEAKER_00]: Of course, there's not a lot of THC
+synthase expressed in the roots as you can
+[SPEAKER_00]: see down here.
+[SPEAKER_00]: Let me just get more room here.
+[SPEAKER_00]: Nothing from the roots.
+[SPEAKER_00]: The seeded female flowers.
+[SPEAKER_00]: Oh, RNA went down a little bit there.
+[SPEAKER_00]: Not to be surprised once you start putting
+seeds out, you can see the expression goes
+[SPEAKER_00]: down on THC synthase.
+[SPEAKER_00]: Not surprising.
+[SPEAKER_00]: Then there's male flowers too.
+[SPEAKER_00]: The male flowers aren't making a whole lot
+of THC synthase.
+[SPEAKER_00]: I think that's probably not surprising.
+[SPEAKER_00]: The other thing we have in here are BAM
+files.
+[SPEAKER_00]: These are binary after mapping files of
+about 50 or so strain seek samples that
+[SPEAKER_00]: are public in Canapedia.
+[SPEAKER_00]: Let's take a look at Queen Jesus.
+[SPEAKER_00]: Queen Jesus actually is not a vet.
+[SPEAKER_00]: That one's a type 3 plant.
+[SPEAKER_00]: Santhaca is a type 4 plant.
+[SPEAKER_00]: Those aren't going to have a lot of
+sequence over this.
+[SPEAKER_00]: This is a THC synthase.
+[SPEAKER_00]: Let's hit something as a type 1 so you can
+see what the sequence looks like.
+[SPEAKER_00]: Maybe Serious Happiness will be a type 1.
+[SPEAKER_00]: You can see there's some reeds that are
+covering this region.
+[SPEAKER_00]: If we zoom in on those reeds, you can see
+there's sequence coverage.
+[SPEAKER_00]: There is a region of THC synthase that is
+a little bit tricky to cover because it
+[SPEAKER_00]: has homology to a lot of other cannabinoid
+synthase genes.
+[SPEAKER_00]: It's hard to place reeds in some portions
+of it.
+[SPEAKER_00]: Sometimes the coverage might just be a
+little light there.
+[SPEAKER_00]: Let's see if we get another one that's got
+a little bit more.
+[SPEAKER_00]: There you go.
+[SPEAKER_00]: This region's all tiled, but there's
+sometimes some lack of reeds there in the
+[SPEAKER_00]: middle.
+[SPEAKER_00]: Let's pull up... Maybe Liberty Haze will
+have some depth there.
+[SPEAKER_00]: You can get a lot of these.
+[SPEAKER_00]: If you go to something like Carmagnolia,
+I'm going to bet you won't see any reeds
+[SPEAKER_00]: because this is a type 3 plant and it is
+deleted in that region.
+[SPEAKER_00]: This is the underlying data that's behind
+the plots in Canapedia.
+[SPEAKER_00]: If we did something like put a whole
+genome shotgun across this, I think what
+[SPEAKER_00]: you'll find... These are whole genome
+shotguns.
+[SPEAKER_00]: Let's find a whole genome shotgun that's a
+type 1 and see what we see.
+[SPEAKER_00]: Reeds tiled all the way across the region.
+[SPEAKER_00]: Why?
+[SPEAKER_00]: Well, a whole genome shotgun takes the
+whole genome and sequences it.
+[SPEAKER_00]: We don't have to try to fish THC synthase
+out of the genome to get coverage over it
+[SPEAKER_00]: with a hybridization capture system.
+[SPEAKER_00]: We just sequence everything.
+[SPEAKER_00]: It's a lot more expensive, but it's a lot
+more thorough.
+[SPEAKER_00]: It will miss less SNPs as a result of
+this, particularly in genes that have a
+[SPEAKER_00]: lot of homology.
+[SPEAKER_00]: You can load up all different types of
+samples here and look for variants.
+[SPEAKER_00]: Let's talk about looking at variants.
+[SPEAKER_00]: I think if you want to look at variants,
+we probably want to look at a VCF file.
+[SPEAKER_00]: Now that we're looking at your VCF file,
+I'm getting a little more serious here and
+[SPEAKER_00]: putting on a professional look.
+[SPEAKER_00]: In all seriousness, what we need to do in
+Koji is to actually load up your VCF file.
+[SPEAKER_00]: You have to have a Cyverse account in
+order to load data into Koji, but it's
+[SPEAKER_00]: really simple.
+[SPEAKER_00]: Throw out an email address, you'll get a
+Koji account in a day, and then you can
+[SPEAKER_00]: upload your own data to this browser and
+overlay it with all the data that we have
+[SPEAKER_00]: public.
+[SPEAKER_00]: The way you do that is you go over here to
+Experiments, you click New, you click New
+[SPEAKER_00]: Experiment or Load EXP, and this should
+bring up a window that allows us to load
+[SPEAKER_00]: up a file.
+[SPEAKER_00]: We're going to hit the Upload button here
+and choose a file.
+[SPEAKER_00]: You want to pick your VCF file.
+[SPEAKER_00]: There's one right there.
+[SPEAKER_00]: Now these can be a little big sometimes,
+so let's just see how well it soaks this
+[SPEAKER_00]: up.
+[SPEAKER_00]: We're in that range right now.
+[SPEAKER_00]: Once this realizes this is the VCF file,
+you hit Next, fill out some meta
+[SPEAKER_00]: information.
+[SPEAKER_00]: Now I already have a version of this
+running that we can skip to while that
+[SPEAKER_00]: thing is thinking.
+[SPEAKER_00]: This is what you'll ultimately receive
+when you're done loading it.
+[SPEAKER_00]: After the file's been loaded up,
+you'll have all this information,
+[SPEAKER_00]: and it will collect some of the metadata.
+[SPEAKER_00]: Some of the metadata it asked for,
+you can see in the background here,
+[SPEAKER_00]: it asked for a name, you could put a
+description.
+[SPEAKER_00]: We didn't put much in because it's just a
+test, a version, the site that it was
+[SPEAKER_00]: generated to, whether it's restricted.
+[SPEAKER_00]: We left it as private right here,
+so you can load your data in and you can
+[SPEAKER_00]: view it against all the data we have in
+our database privately.
+[SPEAKER_00]: You don't have to put any of your findings
+public in this regard.
+[SPEAKER_00]: That's what that looks like.
+[SPEAKER_00]: You'll see here, this is an important
+step.
+[SPEAKER_00]: I've bounced over to this step here to
+make sure that's a VCF file.
+[SPEAKER_00]: There's a lot of files you can upload,
+but you want to make sure you call it what
+[SPEAKER_00]: this is.
+[SPEAKER_00]: When you go next, it'll ask, I haven't
+really used these features yet.
+[SPEAKER_00]: This will send you an email when it's
+done, but it only takes a few minutes for
+[SPEAKER_00]: a VCF file.
+[SPEAKER_00]: It's more important for BAM files,
+it can take an hour.
+[SPEAKER_00]: There's notebook features in here that
+I've not yet explored.
+[SPEAKER_00]: When you hit Next here, it's going to
+start uploading.
+[SPEAKER_00]: I'm just going to actually cancel out of
+this because we've already done that
+[SPEAKER_00]: section over here.
+[SPEAKER_00]: Then just hit OK.
+[SPEAKER_00]: Now that we have that loaded up,
+what we can do is look for it in a lot of
+[SPEAKER_00]: the data that's up here.
+[SPEAKER_00]: I'm just going to search for it.
+[SPEAKER_00]: There we go, right there.
+[SPEAKER_00]: That's the VCF file we loaded up.
+[SPEAKER_00]: We're going to hit View Data.
+[SPEAKER_00]: We can even make it public just like that,
+real easy.
+[SPEAKER_00]: Hit Browse.
+[SPEAKER_00]: It will probably load up the genome with
+this VCF file layered against it.
+[SPEAKER_00]: Now, it's a variant call format.
+[SPEAKER_00]: That just means every line is a list of a
+coordinate of the genome with a particular
+[SPEAKER_00]: base change and some quality information
+about that base change.
+[SPEAKER_00]: For instance, how many reads are
+contributing to that base change.
+[SPEAKER_00]: When you're zoomed really far out like
+this, you start to get a density plot of
+[SPEAKER_00]: where all the polymorphisms are.
+[SPEAKER_00]: Now, let's go again to our favorite gene.
+[SPEAKER_00]: Now, if you don't recall 4417,
+I have that burned in my brain,
+[SPEAKER_00]: but you don't have to have it burned into
+your brain.
+[SPEAKER_00]: You can just go up here and say,
+I like THC.
+[SPEAKER_00]: Touch a hydro and search.
+[SPEAKER_00]: Oh, I forgot to check all these.
+[SPEAKER_00]: Then hit OK.
+[SPEAKER_00]: It will come up with a list of all the
+different THC-like genes in the contig.
+[SPEAKER_00]: I'm going to bet that one's it.
+[SPEAKER_00]: No, that's not it.
+[SPEAKER_00]: That's it right there.
+[SPEAKER_00]: That's the one that is the active THC
+synthase.
+[SPEAKER_00]: I just kind of remember that by the
+coordinate.
+[SPEAKER_00]: And let's see.
+[SPEAKER_00]: Let's get some of this in play.
+[SPEAKER_00]: We want to see what the genes are.
+[SPEAKER_00]: Feature CDS.
+[SPEAKER_00]: There we go.
+[SPEAKER_00]: Coding sequence.
+[SPEAKER_00]: Squish that back.
+[SPEAKER_00]: Zoom this out.
+[SPEAKER_00]: And what you're seeing here are different
+variants.
+[SPEAKER_00]: CDT variant at this coordinate near THC
+synthase.
+[SPEAKER_00]: You can see another one over here.
+[SPEAKER_00]: Another one over here.
+[SPEAKER_00]: Right now, if you zoom out a lot in this,
+you'll see many, many more SNFs.
+[SPEAKER_00]: And each one of those is a variant.
+[SPEAKER_00]: All right, so that's how you load your
+data into Koji.
+[SPEAKER_00]: And there's ways to load fast cues in here
+as well.
+[SPEAKER_00]: So it's a very helpful tool.
+[SPEAKER_00]: It allows you to search around the genome
+and look for particular key genes by
+[SPEAKER_00]: looking through this feature function.
+[SPEAKER_00]: There's also some other comparative
+genomic tools in here that people should
+[SPEAKER_00]: know about if you were to actually go
+back.
+[SPEAKER_00]: There's actually a tutorial on how to use
+it.
+[SPEAKER_00]: So I'm going to point you to the tutorial
+because that's probably a better way to do
+[SPEAKER_00]: it.
+[SPEAKER_00]: But there are other comparative genomic
+tools in here.
+[SPEAKER_00]: Given this is the comparative genomics
+genome browser.
+[SPEAKER_00]: If you go up to, I think, tools up here,
+you'll see those.
+[SPEAKER_00]: Like SynMap is a very good tool to do
+genome to genome alignments.
+[SPEAKER_00]: In fact, let's do one right now.
+[SPEAKER_00]: Take SynMap and align.
+[SPEAKER_00]: Now, it will only do alignments of genomes
+that have annotations on them.
+[SPEAKER_00]: And very few of them have annotations
+right now.
+[SPEAKER_00]: Maybe it's SynMap 3D.
+[SPEAKER_00]: Let me see.
+[SPEAKER_00]: Oh, that's crazy.
+[SPEAKER_00]: I don't want to do three dimensional
+genome.
+[SPEAKER_00]: All righty.
+[SPEAKER_00]: SynMap 2, we're on.
+[SPEAKER_00]: Select organisms.
+[SPEAKER_00]: So if you just go here and go cannabis,
+it's going to bring you up a lot of
+[SPEAKER_00]: different versions of cannabis.
+[SPEAKER_00]: And let's take Jamaican lion as organism
+one.
+[SPEAKER_00]: And then let's do the same over here.
+[SPEAKER_00]: Cannabis.
+[SPEAKER_00]: And let me see.
+[SPEAKER_00]: No coatings.
+[SPEAKER_00]: Let me see this one.
+[SPEAKER_00]: So CBDRX has annotations.
+[SPEAKER_00]: Purple Kush does not have annotations yet,
+although they're in NCBI.
+[SPEAKER_00]: This does not have annotations.
+[SPEAKER_00]: Maybe that one does now.
+OK.
+[SPEAKER_00]: So there.
+[SPEAKER_00]: Let's put on CBDRX.
+[SPEAKER_00]: Generate SynMap.
+[SPEAKER_00]: Now, this is going to run a program in the
+background, and it will get back to you
+[SPEAKER_00]: the map.
+[SPEAKER_00]: Now, that probably doesn't look very good
+to anyone here.
+[SPEAKER_00]: So there are some features in here that
+will make this compare them
+[SPEAKER_00]: in a more meaningful way.
+[SPEAKER_00]: If you want this at 24 and 4.
+[SPEAKER_00]: And I think the most important feature,
+it only had telochromosomes, or 10.
+[SPEAKER_00]: Let's do some KNKS.
+[SPEAKER_00]: That's always fun.
+[SPEAKER_00]: Let's give that a shot.
+[SPEAKER_00]: Now, if you've run an analysis on here,
+it will remember that and only run the
+[SPEAKER_00]: piece of your analysis that's needed,
+like this dagchainer right now.
+[SPEAKER_00]: If it's been run before and you happen to
+compare the same genomes side by side,
+[SPEAKER_00]: it'll just recall the old time that you
+ran that it has a running memory of the
+[SPEAKER_00]: analyses that you've run in the past.
+[SPEAKER_00]: But if you change any one of these
+numbers, it's going to have to rerun it.
+That
+[SPEAKER_00]: will take a little time.
+[SPEAKER_00]: Close out of some of these now.
+[SPEAKER_00]: And we may have to come back to that at a
+later time.
+[SPEAKER_00]: But this usually gives you some dot plots
+comparing one genome to another.
+[SPEAKER_00]: And you'll see some of these in our
+manuscript, actually.
+[SPEAKER_00]: So we don't have to wait for this.
+[SPEAKER_00]: But they're actually in one of our figures
+where you can see a Jamaican line lined up
+[SPEAKER_00]: to CBDRX.
+[SPEAKER_00]: It just gives you an understanding of
+which contigs in our genome are the
+[SPEAKER_00]: corresponding contigs in their genome.
+[SPEAKER_00]: And it actually gives you an Excel file
+that you can use to download if you ever
+[SPEAKER_00]: want to do comparative genomics between
+two different genomes.
+[SPEAKER_00]: So lots of good tools in there.
+[SPEAKER_00]: And we'll leave it at that and probably
+put in another tutorial on some other
+[SPEAKER_00]: functionality on this as video three.
+[SPEAKER_00]: Thank you.
+[SPEAKER_00]: Thank you.
+Thank you.

@@ -1,0 +1,5552 @@
+1
+00:00:00,030 --> 00:00:07,639
+this is a production of Cornell
+
+2
+00:00:01,709 --> 00:00:09,900
+University actually one of the things I
+
+3
+00:00:07,639 --> 00:00:17,429
+did in this presentation was tried to
+
+4
+00:00:09,900 --> 00:00:19,710
+remove most of the math there was a lot
+
+5
+00:00:17,429 --> 00:00:22,640
+of math in there so I produced a lot of
+
+6
+00:00:19,710 --> 00:00:26,310
+that and hopefully made it digestible
+
+7
+00:00:22,640 --> 00:00:28,140
+okay so yeah as John Luke introduced I
+
+8
+00:00:26,309 --> 00:00:30,868
+did my masters at New Mexico State
+
+9
+00:00:28,140 --> 00:00:32,250
+University I was working on auto
+
+10
+00:00:30,868 --> 00:00:34,710
+tetraploid alfalfa there and
+
+11
+00:00:32,250 --> 00:00:37,049
+particularly in transpiration efficiency
+
+12
+00:00:34,710 --> 00:00:40,469
+these are leaf peels just for fun you
+
+13
+00:00:37,049 --> 00:00:42,628
+can see the little stomata there and why
+
+14
+00:00:40,469 --> 00:00:45,929
+I got when I came or now I got
+
+15
+00:00:42,628 --> 00:00:50,699
+interested in G by E because I had seen
+
+16
+00:00:45,929 --> 00:00:54,030
+it right so so a little a little
+
+17
+00:00:50,700 --> 00:00:57,420
+exciting when I get in there so you can
+
+18
+00:00:54,030 --> 00:00:59,609
+see here this this is a this was a study
+
+19
+00:00:57,420 --> 00:01:01,320
+I had during my Master's it's under
+
+20
+00:00:59,609 --> 00:01:03,030
+really heavy drought conditions and
+
+21
+00:01:01,320 --> 00:01:04,640
+you'll notice the alfalfa that's going
+
+22
+00:01:03,030 --> 00:01:07,349
+right in front of it is much healthier
+
+23
+00:01:04,640 --> 00:01:10,769
+so there are differential responses to
+
+24
+00:01:07,349 --> 00:01:12,509
+environment and so I'm gonna briefly
+
+25
+00:01:10,769 --> 00:01:15,239
+talk about a little bit of the work I've
+
+26
+00:01:12,510 --> 00:01:18,950
+done with genotype and by environment
+
+27
+00:01:15,239 --> 00:01:23,429
+interaction mostly just as a plug or a
+
+28
+00:01:18,950 --> 00:01:25,890
+our package I wrote and then I'm gonna
+
+29
+00:01:23,430 --> 00:01:28,080
+move on to the part of my PhD that I'm
+
+30
+00:01:25,890 --> 00:01:31,799
+most excited about okay
+
+31
+00:01:28,079 --> 00:01:34,349
+so typically we think of genotype by or
+
+32
+00:01:31,799 --> 00:01:38,130
+typically we think of a phenotype as
+
+33
+00:01:34,349 --> 00:01:40,519
+some function of the genetics and the
+
+34
+00:01:38,129 --> 00:01:43,589
+environment in which those plants are in
+
+35
+00:01:40,519 --> 00:01:45,000
+however you know different genotypes
+
+36
+00:01:43,590 --> 00:01:47,009
+respond differently to different
+
+37
+00:01:45,000 --> 00:01:49,349
+environments and so there's really an
+
+38
+00:01:47,009 --> 00:01:51,680
+interaction term here this this is GE
+
+39
+00:01:49,349 --> 00:01:54,629
+right so there's some population mean mu
+
+40
+00:01:51,680 --> 00:01:57,140
+some genetic effects some environmental
+
+41
+00:01:54,629 --> 00:02:02,709
+effect and then some deviation from that
+
+42
+00:01:57,140 --> 00:02:06,780
+from that additive model okay and
+
+43
+00:02:02,709 --> 00:02:09,489
+so I was interested in utilizing
+
+44
+00:02:06,780 --> 00:02:11,219
+utilizing what's called an additive main
+
+45
+00:02:09,490 --> 00:02:16,020
+effects multiplicative interaction
+
+46
+00:02:11,219 --> 00:02:17,979
+popularized by Hugh Gao himself and
+
+47
+00:02:16,020 --> 00:02:19,480
+who's sitting in the audience which is
+
+48
+00:02:17,979 --> 00:02:22,810
+great to have him here so he can put me
+
+49
+00:02:19,479 --> 00:02:25,389
+out on all the things I've been wrong so
+
+50
+00:02:22,810 --> 00:02:27,580
+anyway the idea is is that you can think
+
+51
+00:02:25,389 --> 00:02:29,529
+of you can think of this problem as a
+
+52
+00:02:27,580 --> 00:02:33,100
+matrix right you have a table of
+
+53
+00:02:29,530 --> 00:02:35,590
+genotypes in some environments right so
+
+54
+00:02:33,099 --> 00:02:37,180
+here I've got a table of genotypes where
+
+55
+00:02:35,590 --> 00:02:39,280
+they're the same across all environments
+
+56
+00:02:37,180 --> 00:02:40,810
+and a table of environment effects where
+
+57
+00:02:39,280 --> 00:02:43,500
+they're the same across all genotypes
+
+58
+00:02:40,810 --> 00:02:46,780
+and then I have some deviation from that
+
+59
+00:02:43,500 --> 00:02:48,969
+ok and but so the problem with with this
+
+60
+00:02:46,780 --> 00:02:50,439
+G by E term is what we'd like to do you
+
+61
+00:02:48,969 --> 00:02:54,099
+typically want to separate out the
+
+62
+00:02:50,439 --> 00:02:55,810
+largest sources of variability as the
+
+63
+00:02:54,099 --> 00:02:58,750
+treat you know the Chronicle true G by E
+
+64
+00:02:55,810 --> 00:03:00,580
+and pull out the smaller sources is
+
+65
+00:02:58,750 --> 00:03:02,969
+error and this is particularly useful
+
+66
+00:03:00,580 --> 00:03:05,890
+when you have unreplicated field trials
+
+67
+00:03:02,969 --> 00:03:07,840
+okay so this is done through right so
+
+68
+00:03:05,889 --> 00:03:09,298
+this is a matrix right and what we can
+
+69
+00:03:07,840 --> 00:03:13,239
+do is use singular value decomposition
+
+70
+00:03:09,299 --> 00:03:16,390
+to find linear combinations of that G by
+
+71
+00:03:13,239 --> 00:03:18,819
+E matrix that are the most associated
+
+72
+00:03:16,389 --> 00:03:21,339
+with that G by E effect okay or explain
+
+73
+00:03:18,819 --> 00:03:23,049
+the bulk of the variance now estimating
+
+74
+00:03:21,340 --> 00:03:24,599
+how many of these we should pull out
+
+75
+00:03:23,049 --> 00:03:28,629
+right so we're trying to find K of them
+
+76
+00:03:24,599 --> 00:03:31,509
+is is another problem especially for
+
+77
+00:03:28,629 --> 00:03:35,919
+unreplicated data because the the G by E
+
+78
+00:03:31,509 --> 00:03:41,019
+effect and the error okay so I developed
+
+79
+00:03:35,919 --> 00:03:43,988
+a an r package called bilinear that fits
+
+80
+00:03:41,019 --> 00:03:47,709
+a me models it also fits other bilinear
+
+81
+00:03:43,989 --> 00:03:50,140
+models such as the GG e and the g reg i
+
+82
+00:03:47,709 --> 00:03:51,459
+don't know some of you may be familiar
+
+83
+00:03:50,139 --> 00:03:53,559
+with these I'm not going to talk about
+
+84
+00:03:51,459 --> 00:03:56,979
+them in great detail there's quite a bit
+
+85
+00:03:53,560 --> 00:03:59,110
+of literature on this I my my preferred
+
+86
+00:03:56,979 --> 00:04:01,590
+method is the a me because I think it's
+
+87
+00:03:59,110 --> 00:04:01,590
+most parsimonious
+
+88
+00:04:01,848 --> 00:04:08,628
+and so this this this package that I
+
+89
+00:04:04,400 --> 00:04:10,730
+wrote fits various models and can't you
+
+90
+00:04:08,628 --> 00:04:14,268
+know does some you know produces plots
+
+91
+00:04:10,729 --> 00:04:16,250
+and tests but more importantly has a
+
+92
+00:04:14,269 --> 00:04:17,870
+couple of tests for how many of these
+
+93
+00:04:16,250 --> 00:04:22,430
+dimensions we should pull out of the G
+
+94
+00:04:17,870 --> 00:04:25,269
+by a turn in particular we have an F our
+
+95
+00:04:22,430 --> 00:04:28,189
+test that was developed by P fo and 95
+
+96
+00:04:25,269 --> 00:04:30,589
+and this is great for replicated data or
+
+97
+00:04:28,189 --> 00:04:34,579
+at least data where you have a known
+
+98
+00:04:30,589 --> 00:04:36,728
+within trial variance but when we don't
+
+99
+00:04:34,579 --> 00:04:39,258
+have replicated data we can use a
+
+100
+00:04:36,728 --> 00:04:41,060
+parametric bootstrap method that was
+
+101
+00:04:39,259 --> 00:04:42,830
+developed by fork min and P so I've
+
+102
+00:04:41,060 --> 00:04:46,250
+implemented these in this our package
+
+103
+00:04:42,829 --> 00:04:48,139
+because at the time there were no are
+
+104
+00:04:46,250 --> 00:04:52,370
+packages that would fit these and I
+
+105
+00:04:48,139 --> 00:04:53,810
+think that now there's a gge at GUI or
+
+106
+00:04:52,370 --> 00:04:57,668
+something like that it's a it's a
+
+107
+00:04:53,810 --> 00:05:00,379
+graphic user interface but it is in our
+
+108
+00:04:57,668 --> 00:05:01,879
+but this this this fits both types of
+
+109
+00:05:00,379 --> 00:05:03,439
+models and and it tests and what's
+
+110
+00:05:01,879 --> 00:05:07,069
+really important is is that this can
+
+111
+00:05:03,439 --> 00:05:08,689
+handle unreplicated data now the test
+
+112
+00:05:07,069 --> 00:05:12,529
+tends to be more conservative than the
+
+113
+00:05:08,689 --> 00:05:13,759
+apart but it's really useful especially
+
+114
+00:05:12,529 --> 00:05:16,189
+for our trials where we don't
+
+115
+00:05:13,759 --> 00:05:17,629
+necessarily have replication looking
+
+116
+00:05:16,189 --> 00:05:21,439
+environment because there's been this
+
+117
+00:05:17,629 --> 00:05:24,918
+big shift to moving toward putting much
+
+118
+00:05:21,439 --> 00:05:26,930
+more lines in a trial as opposed to
+
+119
+00:05:24,918 --> 00:05:29,930
+replicating those lines many many times
+
+120
+00:05:26,930 --> 00:05:31,939
+within a trial okay and so this is
+
+121
+00:05:29,930 --> 00:05:33,470
+available on github I'm still uncertain
+
+122
+00:05:31,939 --> 00:05:34,848
+it probably needs a little bit more
+
+123
+00:05:33,470 --> 00:05:38,570
+polishing before it'll ever go on to
+
+124
+00:05:34,848 --> 00:05:40,639
+cram and but right now from github you
+
+125
+00:05:38,569 --> 00:05:44,930
+can install this directly in our using
+
+126
+00:05:40,639 --> 00:05:46,728
+the package so that's kind of fun so
+
+127
+00:05:44,930 --> 00:05:48,199
+these are just some examples for those
+
+128
+00:05:46,728 --> 00:05:51,110
+of you not familiar with a bi plot
+
+129
+00:05:48,199 --> 00:05:53,120
+essentially what you're doing is you're
+
+130
+00:05:51,110 --> 00:05:55,038
+you decompose this thing right and
+
+131
+00:05:53,120 --> 00:05:57,079
+you're looking at there's a genotype
+
+132
+00:05:55,038 --> 00:05:59,569
+dimension and an environment dimension
+
+133
+00:05:57,079 --> 00:06:02,060
+so we have the first two principal
+
+134
+00:05:59,569 --> 00:06:03,560
+components of the genotype and the first
+
+135
+00:06:02,060 --> 00:06:07,189
+two principal components related to the
+
+136
+00:06:03,560 --> 00:06:08,718
+environment okay and so I'm not going to
+
+137
+00:06:07,189 --> 00:06:10,759
+go into the details of how to interpret
+
+138
+00:06:08,718 --> 00:06:12,370
+these models in particular but basically
+
+139
+00:06:10,759 --> 00:06:15,469
+these by class are useful because
+
+140
+00:06:12,370 --> 00:06:18,199
+relationships between
+
+141
+00:06:15,470 --> 00:06:19,880
+environments or genotypes and genotypes
+
+142
+00:06:18,199 --> 00:06:22,129
+and environments are related by their
+
+143
+00:06:19,879 --> 00:06:24,079
+angles okay where where a cue angles are
+
+144
+00:06:22,129 --> 00:06:26,449
+associated with positive relationships
+
+145
+00:06:24,079 --> 00:06:30,430
+and right angles are associated with
+
+146
+00:06:26,449 --> 00:06:34,370
+independence and a negative relationship
+
+147
+00:06:30,430 --> 00:06:35,509
+right so so Helfer here help for 2014
+
+148
+00:06:34,370 --> 00:06:40,189
+here is a very different environment
+
+149
+00:06:35,509 --> 00:06:44,539
+from say khatola 16 but apparently has a
+
+150
+00:06:40,189 --> 00:06:45,769
+very independent G by E response whereas
+
+151
+00:06:44,540 --> 00:06:50,210
+these sets of environments are all
+
+152
+00:06:45,769 --> 00:06:51,500
+relatively in the G by E response okay
+
+153
+00:06:50,209 --> 00:06:53,719
+and then we can do things like we can
+
+154
+00:06:51,500 --> 00:06:57,620
+make these these winter plots that are
+
+155
+00:06:53,720 --> 00:07:01,940
+also out of Gaussian so veld 97 I
+
+156
+00:06:57,620 --> 00:07:04,610
+believe and what you what we do here is
+
+157
+00:07:01,939 --> 00:07:07,279
+we we have the main effect of the
+
+158
+00:07:04,610 --> 00:07:10,310
+genotype and then the slope is the a
+
+159
+00:07:07,279 --> 00:07:12,709
+me--one fit right that says how they
+
+160
+00:07:10,310 --> 00:07:14,569
+respond to a changing environment so
+
+161
+00:07:12,709 --> 00:07:15,649
+down here we've ranked the environments
+
+162
+00:07:14,569 --> 00:07:19,069
+and indicated them with these look like
+
+163
+00:07:15,649 --> 00:07:20,359
+triangles and then you can see that
+
+164
+00:07:19,069 --> 00:07:22,029
+there are individuals that do
+
+165
+00:07:20,360 --> 00:07:24,410
+particularly good in poor environments
+
+166
+00:07:22,029 --> 00:07:26,479
+and then their response goes down as the
+
+167
+00:07:24,410 --> 00:07:28,430
+environment decreases whereas their
+
+168
+00:07:26,480 --> 00:07:31,310
+individuals that do particularly well in
+
+169
+00:07:28,430 --> 00:07:35,540
+good environments but not particularly
+
+170
+00:07:31,310 --> 00:07:38,780
+bad environments okay so this was just
+
+171
+00:07:35,540 --> 00:07:41,180
+to kind of introduce this package we've
+
+172
+00:07:38,779 --> 00:07:43,129
+I've worked together with Lisa
+
+173
+00:07:41,180 --> 00:07:46,540
+kissing Cusack a colleague of mine in
+
+174
+00:07:43,129 --> 00:07:50,120
+Mars lab she was looking at organic
+
+175
+00:07:46,540 --> 00:07:54,140
+wheat yield trials that were replicated
+
+176
+00:07:50,120 --> 00:07:58,310
+from Vermont and North Dakota looking at
+
+177
+00:07:54,139 --> 00:08:00,829
+the response of organic grains to
+
+178
+00:07:58,310 --> 00:08:02,720
+different growing environments and she
+
+179
+00:08:00,829 --> 00:08:05,000
+found that there was significant
+
+180
+00:08:02,720 --> 00:08:06,770
+location or genotype by location effects
+
+181
+00:08:05,000 --> 00:08:08,240
+such that it made sense to have these
+
+182
+00:08:06,769 --> 00:08:11,539
+decentralized programs in these
+
+183
+00:08:08,240 --> 00:08:13,850
+different region now this this study was
+
+184
+00:08:11,540 --> 00:08:15,800
+nice because it was replicated but we
+
+185
+00:08:13,850 --> 00:08:17,930
+ended up using the parametric bootstrap
+
+186
+00:08:15,800 --> 00:08:20,389
+regardless because they tended to give
+
+187
+00:08:17,930 --> 00:08:23,800
+more biological relevant numbers of
+
+188
+00:08:20,389 --> 00:08:23,800
+interactions so typically fewer
+
+189
+00:08:27,310 --> 00:08:34,100
+dimensions
+
+190
+00:08:28,850 --> 00:08:36,529
+right so KK was low like 1 or 2 that's
+
+191
+00:08:34,100 --> 00:08:38,930
+in contrast to another paper I worked on
+
+192
+00:08:36,529 --> 00:08:40,250
+with another student from Mark's lad
+
+193
+00:08:38,929 --> 00:08:42,168
+Lundeen straw both of these students
+
+194
+00:08:40,250 --> 00:08:43,460
+have graduated this one hasn't quite
+
+195
+00:08:42,168 --> 00:08:49,549
+been submitted yet but it's very close
+
+196
+00:08:43,460 --> 00:08:51,170
+and we worked on G by E and we were able
+
+197
+00:08:49,549 --> 00:08:53,029
+to show that there were significant G by
+
+198
+00:08:51,169 --> 00:08:54,620
+E effects but in general the genetic
+
+199
+00:08:53,029 --> 00:08:56,509
+correlation across the environments that
+
+200
+00:08:54,620 --> 00:08:59,419
+she evaluated in New York were very
+
+201
+00:08:56,509 --> 00:09:03,679
+similar or was was relatively high so
+
+202
+00:08:59,419 --> 00:09:07,459
+then we were able to recommend that that
+
+203
+00:09:03,679 --> 00:09:10,429
+breeding for fruit and content could be
+
+204
+00:09:07,460 --> 00:09:12,320
+done with relatively few environments if
+
+205
+00:09:10,429 --> 00:09:15,469
+only a single environment and as well as
+
+206
+00:09:12,320 --> 00:09:18,020
+under a genomic selection scape now this
+
+207
+00:09:15,470 --> 00:09:20,029
+one we did not have replicated
+
+208
+00:09:18,019 --> 00:09:21,740
+individuals so this in this case the
+
+209
+00:09:20,029 --> 00:09:25,730
+parametric bootstrap was really
+
+210
+00:09:21,740 --> 00:09:27,649
+convenient to have ok now I'm gonna move
+
+211
+00:09:25,730 --> 00:09:30,920
+on to Ella polyploid really what I want
+
+212
+00:09:27,649 --> 00:09:33,350
+to talk about so in my second year of
+
+213
+00:09:30,919 --> 00:09:35,389
+grad school I was taking a course with
+
+214
+00:09:33,350 --> 00:09:37,970
+marks laurels that I think many of you
+
+215
+00:09:35,389 --> 00:09:41,059
+have taken it's basically a paper review
+
+216
+00:09:37,970 --> 00:09:42,740
+class and in that class we read this
+
+217
+00:09:41,059 --> 00:09:45,979
+paper by James McKee that was published
+
+218
+00:09:42,740 --> 00:09:50,090
+about in 1970s almost 50 years ago and
+
+219
+00:09:45,980 --> 00:09:53,539
+he talks about how there okay so he
+
+220
+00:09:50,090 --> 00:09:55,850
+notes that that whole genome duplication
+
+221
+00:09:53,539 --> 00:09:57,679
+events are just pervasive in the blankey
+
+222
+00:09:55,850 --> 00:10:00,409
+they're everywhere especially in
+
+223
+00:09:57,679 --> 00:10:02,359
+angiosperms right where even if you know
+
+224
+00:10:00,409 --> 00:10:03,949
+there are these paleo polyploid events
+
+225
+00:10:02,360 --> 00:10:04,700
+that happened a long time ago and then
+
+226
+00:10:03,950 --> 00:10:08,060
+there's a bunch that have happened
+
+227
+00:10:04,700 --> 00:10:10,040
+relatively recently too and he talks
+
+228
+00:10:08,059 --> 00:10:12,979
+about how there's this balance and be in
+
+229
+00:10:10,039 --> 00:10:14,929
+in creating new genetic variation but
+
+230
+00:10:12,980 --> 00:10:18,529
+then preserving particularly good sets
+
+231
+00:10:14,929 --> 00:10:21,289
+of alleles right and so so one thing he
+
+232
+00:10:18,529 --> 00:10:24,379
+notes is that a low polyploids have this
+
+233
+00:10:21,289 --> 00:10:26,480
+ability to establish homozygosity so
+
+234
+00:10:24,379 --> 00:10:28,659
+that they can keep good sets of alleles
+
+235
+00:10:26,480 --> 00:10:31,550
+but they end up being heterozygous
+
+236
+00:10:28,659 --> 00:10:33,079
+across the sub genomes now that might
+
+237
+00:10:31,549 --> 00:10:37,029
+sound a little confusing and I'm going
+
+238
+00:10:33,080 --> 00:10:40,250
+to clarify in a second and that
+
+239
+00:10:37,029 --> 00:10:42,620
+essentially this idea of a low
+
+240
+00:10:40,250 --> 00:10:44,210
+polyploidy bringing bringing
+
+241
+00:10:42,620 --> 00:10:45,710
+relatively you know closely related
+
+242
+00:10:44,210 --> 00:10:49,730
+species together into the same organism
+
+243
+00:10:45,710 --> 00:10:51,650
+allowed for multitudes of gene functions
+
+244
+00:10:49,730 --> 00:10:54,080
+that should allow for broader out
+
+245
+00:10:51,649 --> 00:10:56,090
+adaptation or you know adaptation a much
+
+246
+00:10:54,080 --> 00:10:57,980
+broader landscape because you have these
+
+247
+00:10:56,090 --> 00:11:00,820
+different combinations of alleles to
+
+248
+00:10:57,980 --> 00:11:04,240
+draw from for different genetic pathways
+
+249
+00:11:00,820 --> 00:11:08,540
+okay so a little a little on bread wheat
+
+250
+00:11:04,240 --> 00:11:11,090
+so there was the a genome ancestor and B
+
+251
+00:11:08,539 --> 00:11:13,159
+genome ancestor the a genome ancestor
+
+252
+00:11:11,090 --> 00:11:15,970
+you may know today as einkorn start the
+
+253
+00:11:13,159 --> 00:11:18,379
+same species is very closely related and
+
+254
+00:11:15,970 --> 00:11:21,740
+the B genome species is thought to be
+
+255
+00:11:18,379 --> 00:11:26,210
+extinct and which is unfortunate I wish
+
+256
+00:11:21,740 --> 00:11:28,990
+I hope that one day we find it and you
+
+257
+00:11:26,210 --> 00:11:31,400
+know roughly half a million years ago
+
+258
+00:11:28,990 --> 00:11:33,350
+there was a spontaneous cross between
+
+259
+00:11:31,399 --> 00:11:35,689
+these two closely related species and
+
+260
+00:11:33,350 --> 00:11:37,909
+they produced a tetraploid that had that
+
+261
+00:11:35,690 --> 00:11:39,410
+had both an A and a B genome right so
+
+262
+00:11:37,909 --> 00:11:41,990
+all this one you took a complete set of
+
+263
+00:11:39,409 --> 00:11:43,250
+genes from one species and a complete
+
+264
+00:11:41,990 --> 00:11:45,649
+set from another and you brought them in
+
+265
+00:11:43,250 --> 00:11:46,600
+the same organism all right and then
+
+266
+00:11:45,649 --> 00:11:49,220
+this happened again
+
+267
+00:11:46,600 --> 00:11:52,610
+roughly ten thousand years ago and maybe
+
+268
+00:11:49,220 --> 00:11:55,430
+only once with a related species called
+
+269
+00:11:52,610 --> 00:11:58,789
+a jalops how GI which contributed the G
+
+270
+00:11:55,429 --> 00:12:01,039
+excuse me of a D genome to common wheat
+
+271
+00:11:58,789 --> 00:12:04,789
+okay so now what we know of is common
+
+272
+00:12:01,039 --> 00:12:07,669
+wheat which you know bread we primarily
+
+273
+00:12:04,789 --> 00:12:10,129
+bread wheat but of course also wheat for
+
+274
+00:12:07,669 --> 00:12:13,579
+cake flour and so on and so forth has
+
+275
+00:12:10,129 --> 00:12:16,820
+three separate genomes ie three sets
+
+276
+00:12:13,580 --> 00:12:21,290
+complete sets of genes okay and I've
+
+277
+00:12:16,820 --> 00:12:23,420
+just been fascinated why what is the
+
+278
+00:12:21,289 --> 00:12:26,269
+driving mechanism for duplicating an
+
+279
+00:12:23,419 --> 00:12:28,669
+entire genome right so so a single gene
+
+280
+00:12:26,269 --> 00:12:31,039
+we imagine may get duplicated and then
+
+281
+00:12:28,669 --> 00:12:33,709
+you you can maintain function with one
+
+282
+00:12:31,039 --> 00:12:35,120
+copy and allow the other one to diverge
+
+283
+00:12:33,710 --> 00:12:36,980
+but what what is the what is the
+
+284
+00:12:35,120 --> 00:12:43,970
+advantage of having complete whole set
+
+285
+00:12:36,980 --> 00:12:45,860
+or you know of genes okay and so so so
+
+286
+00:12:43,970 --> 00:12:47,570
+here's kind of lay this out right we
+
+287
+00:12:45,860 --> 00:12:50,149
+have three genomes in a low hexaploid
+
+288
+00:12:47,570 --> 00:12:51,350
+wheat and undergoes disomic inheritance
+
+289
+00:12:50,149 --> 00:12:53,600
+which means there's no crossing over
+
+290
+00:12:51,350 --> 00:12:55,490
+between homologous chromosomes so more
+
+291
+00:12:53,600 --> 00:12:56,540
+or less the three sets maintain
+
+292
+00:12:55,490 --> 00:13:00,529
+themselves within
+
+293
+00:12:56,539 --> 00:13:04,399
+they don't they don't switch pieces it's
+
+294
+00:13:00,529 --> 00:13:06,829
+self pollinated so it can fix itself
+
+295
+00:13:04,399 --> 00:13:10,250
+right so so so it becomes completely in
+
+296
+00:13:06,830 --> 00:13:11,480
+bread and and individuals will self
+
+297
+00:13:10,250 --> 00:13:13,519
+pollinate and produce seed that is
+
+298
+00:13:11,480 --> 00:13:14,960
+genetically identical to the parent
+
+299
+00:13:13,519 --> 00:13:17,899
+right so they this is the self
+
+300
+00:13:14,960 --> 00:13:20,030
+preserving part but they maintain this
+
+301
+00:13:17,899 --> 00:13:22,879
+allelic diversity across the three
+
+302
+00:13:20,029 --> 00:13:24,709
+genome okay so this is the this is the
+
+303
+00:13:22,879 --> 00:13:26,509
+you know the new generating part right
+
+304
+00:13:24,710 --> 00:13:29,509
+so you grab you grab a whole set of
+
+305
+00:13:26,509 --> 00:13:31,009
+genes from from one species and one from
+
+306
+00:13:29,509 --> 00:13:36,769
+the other station I got two sets of
+
+307
+00:13:31,009 --> 00:13:39,350
+tools right and so I'm wondering is we
+
+308
+00:13:36,769 --> 00:13:43,669
+can we think of wheat as an immortalized
+
+309
+00:13:39,350 --> 00:13:45,620
+hybrid okay so you brought two okay and
+
+310
+00:13:43,669 --> 00:13:47,929
+so here's my here's my justification for
+
+311
+00:13:45,620 --> 00:13:50,029
+this okay so in typical hybrid
+
+312
+00:13:47,929 --> 00:13:53,449
+generation you've some sets of alleles
+
+313
+00:13:50,029 --> 00:13:56,029
+XY and Z that are in an open pollinated
+
+314
+00:13:53,450 --> 00:13:57,230
+population they get separated from one
+
+315
+00:13:56,029 --> 00:13:58,879
+another either intentionally or
+
+316
+00:13:57,230 --> 00:14:01,370
+unintentionally into two hetero duck
+
+317
+00:13:58,879 --> 00:14:02,990
+groups Group A and Group B and then when
+
+318
+00:14:01,370 --> 00:14:04,549
+you bring these back together to form
+
+319
+00:14:02,990 --> 00:14:06,409
+the hybrid you've essentially
+
+320
+00:14:04,549 --> 00:14:09,109
+established hetero zygosity at all those
+
+321
+00:14:06,409 --> 00:14:11,659
+I and you know you have these allelic
+
+322
+00:14:09,110 --> 00:14:15,440
+interaction which we believe may be
+
+323
+00:14:11,659 --> 00:14:19,789
+important for for what we observe as
+
+324
+00:14:15,440 --> 00:14:22,940
+hybrid bigger which is the which is
+
+325
+00:14:19,789 --> 00:14:24,669
+essentially the tendency for offspring
+
+326
+00:14:22,940 --> 00:14:27,670
+to be better than their than their
+
+327
+00:14:24,669 --> 00:14:29,919
+parents okay
+
+328
+00:14:27,669 --> 00:14:31,689
+so now think about the Ella polyploid
+
+329
+00:14:29,919 --> 00:14:34,269
+right we have some set of alleles in the
+
+330
+00:14:31,690 --> 00:14:35,860
+in the in the common ancestor and then
+
+331
+00:14:34,269 --> 00:14:37,990
+these are a lot you know these may
+
+332
+00:14:35,860 --> 00:14:40,930
+diverge in the in the descendant species
+
+333
+00:14:37,990 --> 00:14:43,690
+uses a and B and then you bring them
+
+334
+00:14:40,929 --> 00:14:46,419
+back together but again right so so this
+
+335
+00:14:43,690 --> 00:14:48,070
+thing becomes inbred and what you've
+
+336
+00:14:46,419 --> 00:14:50,679
+done is essentially established hetero
+
+337
+00:14:48,070 --> 00:14:53,410
+zygosity although sign but now you fix
+
+338
+00:14:50,679 --> 00:14:55,389
+this hetero zygosity because it you
+
+339
+00:14:53,409 --> 00:14:57,549
+through selfing right and the this
+
+340
+00:14:55,389 --> 00:15:00,189
+disomic inheritance so so what I'm
+
+341
+00:14:57,549 --> 00:15:03,219
+curious about is can we see evidence of
+
+342
+00:15:00,190 --> 00:15:05,440
+homie allelic interactions that are you
+
+343
+00:15:03,220 --> 00:15:07,120
+know analogous to allelic interactions
+
+344
+00:15:05,440 --> 00:15:10,630
+that we see in traditional diploid
+
+345
+00:15:07,120 --> 00:15:13,500
+hybrids okay and so to investigate this
+
+346
+00:15:10,629 --> 00:15:16,450
+I wanted to know how this played out on
+
+347
+00:15:13,500 --> 00:15:18,070
+agronomic traits now we have a winter
+
+348
+00:15:16,450 --> 00:15:21,940
+wheat breeding population here at
+
+349
+00:15:18,070 --> 00:15:24,070
+Cornell and so I kind of curated this
+
+350
+00:15:21,940 --> 00:15:28,150
+data set it's roughly 9,000 phenotypic
+
+351
+00:15:24,070 --> 00:15:29,830
+records 1,500 lines crossed about ten
+
+352
+00:15:28,149 --> 00:15:32,919
+years two to three environments per year
+
+353
+00:15:29,830 --> 00:15:36,610
+and and we have evaluated them for
+
+354
+00:15:32,919 --> 00:15:38,199
+portraits essentially in every year now
+
+355
+00:15:36,610 --> 00:15:41,409
+this is a lot of work
+
+356
+00:15:38,200 --> 00:15:43,600
+it's funny how this amount of man-hours
+
+357
+00:15:41,409 --> 00:15:46,899
+can be you know distilled down into
+
+358
+00:15:43,600 --> 00:15:47,889
+9,000 you know lines on a you know a
+
+359
+00:15:46,899 --> 00:15:50,919
+computer file somewhere
+
+360
+00:15:47,889 --> 00:15:53,980
+and I will definitely recognize people
+
+361
+00:15:50,919 --> 00:15:55,389
+who have helped put this together okay
+
+362
+00:15:53,980 --> 00:15:58,120
+so this is the data I'm going to be
+
+363
+00:15:55,389 --> 00:16:01,000
+working with to describe this
+
+364
+00:15:58,120 --> 00:16:03,250
+investigation to you so first thing I
+
+365
+00:16:01,000 --> 00:16:07,059
+was interested in is sub genome additive
+
+366
+00:16:03,250 --> 00:16:08,950
+and interaction effects we typically
+
+367
+00:16:07,059 --> 00:16:11,079
+think okay so coming back to this idea
+
+368
+00:16:08,950 --> 00:16:13,570
+we typically think of the phenotype as
+
+369
+00:16:11,080 --> 00:16:17,050
+some you know summation of all the
+
+370
+00:16:13,570 --> 00:16:18,220
+genetic effects okay on average but
+
+371
+00:16:17,049 --> 00:16:20,019
+there's no reason why we can't split
+
+372
+00:16:18,220 --> 00:16:22,420
+these into their individual sub genome
+
+373
+00:16:20,019 --> 00:16:25,299
+effects okay and we can estimate these
+
+374
+00:16:22,419 --> 00:16:28,719
+using you know a very standard genomic
+
+375
+00:16:25,299 --> 00:16:30,159
+prediction model where and I don't you
+
+376
+00:16:28,720 --> 00:16:31,810
+know ignore the math math is not
+
+377
+00:16:30,159 --> 00:16:33,309
+particularly important it's just to say
+
+378
+00:16:31,809 --> 00:16:35,079
+that here we're getting a single
+
+379
+00:16:33,309 --> 00:16:37,809
+estimate for a breeding you know for the
+
+380
+00:16:35,080 --> 00:16:40,310
+for the value of every individual based
+
+381
+00:16:37,809 --> 00:16:43,039
+on its entire genome whereas for
+
+382
+00:16:40,309 --> 00:16:45,139
+for in this model we get a different
+
+383
+00:16:43,039 --> 00:16:47,120
+estimate for each individual based on
+
+384
+00:16:45,139 --> 00:16:48,949
+the free sub genome so you get three
+
+385
+00:16:47,120 --> 00:16:52,310
+estimates right one for a one cookie one
+
+386
+00:16:48,950 --> 00:16:55,220
+for D ok and we what this is very simple
+
+387
+00:16:52,309 --> 00:16:59,689
+to do we estimate the covariance between
+
+388
+00:16:55,220 --> 00:17:01,670
+individuals using molecular markers and
+
+389
+00:16:59,690 --> 00:17:03,950
+so we can subset those markers based on
+
+390
+00:17:01,669 --> 00:17:05,990
+their native genome and then we can
+
+391
+00:17:03,950 --> 00:17:07,670
+calculate the the covariance between
+
+392
+00:17:05,990 --> 00:17:08,150
+individuals based on each separate
+
+393
+00:17:07,670 --> 00:17:11,870
+genome
+
+394
+00:17:08,150 --> 00:17:14,030
+ok for all three and and here's a
+
+395
+00:17:11,869 --> 00:17:17,208
+motivating example to think of why we
+
+396
+00:17:14,029 --> 00:17:19,250
+might be interested in this imagine we
+
+397
+00:17:17,209 --> 00:17:21,439
+had this little toy population of three
+
+398
+00:17:19,250 --> 00:17:24,588
+individuals and we want to pick two to
+
+399
+00:17:21,439 --> 00:17:27,500
+me the obvious choice might be
+
+400
+00:17:24,588 --> 00:17:29,960
+individuals one and two which have the
+
+401
+00:17:27,500 --> 00:17:31,849
+highest two values but then if we could
+
+402
+00:17:29,960 --> 00:17:33,710
+see you know for their whole genome but
+
+403
+00:17:31,849 --> 00:17:36,409
+if we could see their individual effects
+
+404
+00:17:33,710 --> 00:17:38,480
+for their sub genomes um well note that
+
+405
+00:17:36,410 --> 00:17:40,190
+they while they both have very good AMV
+
+406
+00:17:38,480 --> 00:17:42,860
+genomes they don't tend to have a very
+
+407
+00:17:40,190 --> 00:17:44,870
+good DG so when we make these guys the
+
+408
+00:17:42,859 --> 00:17:48,740
+best value we could possibly obtain is
+
+409
+00:17:44,869 --> 00:17:50,899
+12 right whereas whereas you know
+
+410
+00:17:48,740 --> 00:17:52,400
+contradictory if you included the third
+
+411
+00:17:50,900 --> 00:17:54,830
+individual with the lowest breeding
+
+412
+00:17:52,400 --> 00:17:56,269
+value right you have this potential to
+
+413
+00:17:54,829 --> 00:17:59,689
+bring it well it doesn't do very good on
+
+414
+00:17:56,269 --> 00:18:02,179
+a and P it does have and you increase
+
+415
+00:17:59,690 --> 00:18:06,980
+the the you know the maximum value from
+
+416
+00:18:02,179 --> 00:18:08,480
+that cross okay and similarly a you know
+
+417
+00:18:06,980 --> 00:18:13,279
+this is true for both of the two process
+
+418
+00:18:08,480 --> 00:18:16,019
+with it okay so and and more importantly
+
+419
+00:18:13,279 --> 00:18:17,309
+potentially we
+
+420
+00:18:16,019 --> 00:18:20,519
+look at individuals that have the exact
+
+421
+00:18:17,309 --> 00:18:22,799
+same breeding value and find ones that
+
+422
+00:18:20,519 --> 00:18:25,230
+might have particularly good sub genomes
+
+423
+00:18:22,799 --> 00:18:27,599
+that we want to incorporate for specific
+
+424
+00:18:25,230 --> 00:18:31,500
+crosses and so what I've done here is
+
+425
+00:18:27,599 --> 00:18:33,750
+I've I've I've plotted the the breeding
+
+426
+00:18:31,500 --> 00:18:35,880
+values or the or the you know the value
+
+427
+00:18:33,750 --> 00:18:38,369
+that we assigned to the individual based
+
+428
+00:18:35,880 --> 00:18:41,820
+on its whole genome or the sub genome
+
+429
+00:18:38,369 --> 00:18:43,379
+effect a B&amp;B right and then and then and
+
+430
+00:18:41,819 --> 00:18:45,899
+then I've highlighted kind of the best
+
+431
+00:18:43,380 --> 00:18:47,280
+5% of the individuals here and what I
+
+432
+00:18:45,900 --> 00:18:49,560
+want I just want to point out briefly
+
+433
+00:18:47,279 --> 00:18:52,470
+you know the the individual that has the
+
+434
+00:18:49,559 --> 00:18:54,599
+best a genome here is not the individual
+
+435
+00:18:52,470 --> 00:18:56,309
+with the best whole genome nor does it
+
+436
+00:18:54,599 --> 00:18:58,919
+have a particularly good B genome it's
+
+437
+00:18:56,309 --> 00:19:01,139
+very moderate and similarly the best B
+
+438
+00:18:58,920 --> 00:19:04,670
+genome individual right has a moderate a
+
+439
+00:19:01,140 --> 00:19:09,509
+and so these are these blue blue squares
+
+440
+00:19:04,670 --> 00:19:12,779
+and and you know the best you know best
+
+441
+00:19:09,509 --> 00:19:14,609
+individual for the D genome again has a
+
+442
+00:19:12,779 --> 00:19:16,950
+you know relatively moderate values for
+
+443
+00:19:14,609 --> 00:19:18,839
+the amv so you might say okay well let's
+
+444
+00:19:16,950 --> 00:19:20,430
+let's take you know the individuals best
+
+445
+00:19:18,839 --> 00:19:23,220
+for a and made it to the one that's the
+
+446
+00:19:20,430 --> 00:19:24,720
+best ability you know and similarly so
+
+447
+00:19:23,220 --> 00:19:26,190
+in this case for grain yield you know
+
+448
+00:19:24,720 --> 00:19:28,319
+maybe most of these individuals or at
+
+449
+00:19:26,190 --> 00:19:29,789
+least be in your pool of individuals you
+
+450
+00:19:28,319 --> 00:19:32,179
+might select to do this even if you
+
+451
+00:19:29,789 --> 00:19:34,170
+wouldn't necessarily make these crosses
+
+452
+00:19:32,180 --> 00:19:37,259
+but you can see for test weight for
+
+453
+00:19:34,170 --> 00:19:38,970
+example the best D individual it doesn't
+
+454
+00:19:37,259 --> 00:19:40,440
+have a particularly good whole genome
+
+455
+00:19:38,970 --> 00:19:42,140
+with that so it might be thrown out
+
+456
+00:19:40,440 --> 00:19:49,410
+altogether and never considered for
+
+457
+00:19:42,140 --> 00:19:52,080
+population so so what this allows us to
+
+458
+00:19:49,410 --> 00:19:53,880
+do is it allows us to select on
+
+459
+00:19:52,079 --> 00:19:55,500
+complimentary sub genomes for crossing
+
+460
+00:19:53,880 --> 00:19:58,280
+right we can bring ones that have
+
+461
+00:19:55,500 --> 00:20:00,269
+different you know good effects together
+
+462
+00:19:58,279 --> 00:20:01,500
+now you could do this with any set of
+
+463
+00:20:00,269 --> 00:20:02,819
+chromatin right you could estimate a
+
+464
+00:20:01,500 --> 00:20:06,269
+breeding value for every chromosome if
+
+465
+00:20:02,819 --> 00:20:08,839
+you want but that's this gets more
+
+466
+00:20:06,269 --> 00:20:10,829
+complicated the more of these you have
+
+467
+00:20:08,839 --> 00:20:14,579
+interestingly the other thing we could
+
+468
+00:20:10,829 --> 00:20:16,649
+do is increase in is select on sub
+
+469
+00:20:14,579 --> 00:20:18,210
+genomes specifically right like so one
+
+470
+00:20:16,650 --> 00:20:19,950
+of the problems is you'll notice the D
+
+471
+00:20:18,210 --> 00:20:23,850
+genome has significantly less variance
+
+472
+00:20:19,950 --> 00:20:26,100
+than the amb which means that when you
+
+473
+00:20:23,849 --> 00:20:27,659
+make selections based on phenotypes you
+
+474
+00:20:26,099 --> 00:20:29,039
+are making selections on the largest
+
+475
+00:20:27,660 --> 00:20:29,880
+sources of variants which are coming
+
+476
+00:20:29,039 --> 00:20:32,009
+from the AMD
+
+477
+00:20:29,880 --> 00:20:33,960
+so a lot of this work you know a lot of
+
+478
+00:20:32,009 --> 00:20:37,019
+the variation in the D genome is going
+
+479
+00:20:33,960 --> 00:20:39,000
+to get fixed just through drift and so
+
+480
+00:20:37,019 --> 00:20:40,859
+you could you could select base just on
+
+481
+00:20:39,000 --> 00:20:43,019
+them eating for example for several
+
+482
+00:20:40,859 --> 00:20:45,479
+rounds you know after say introgression
+
+483
+00:20:43,019 --> 00:20:49,259
+inter dressing from a wild species or
+
+484
+00:20:45,480 --> 00:20:51,870
+something like that but this is just
+
+485
+00:20:49,259 --> 00:20:53,250
+those were just individual sub genome X
+
+486
+00:20:51,869 --> 00:20:54,779
+right what I really care about is how
+
+487
+00:20:53,250 --> 00:20:56,788
+are these things interacting with one
+
+488
+00:20:54,779 --> 00:20:58,649
+another and we do this through using how
+
+489
+00:20:56,788 --> 00:21:00,599
+to market products of these covariances
+
+490
+00:20:58,650 --> 00:21:02,429
+the math isn't really important it's
+
+491
+00:21:00,599 --> 00:21:06,058
+just it's just that we can now get a
+
+492
+00:21:02,429 --> 00:21:08,190
+value for every individual based on its
+
+493
+00:21:06,058 --> 00:21:11,819
+interaction between a and B genome B and
+
+494
+00:21:08,190 --> 00:21:13,409
+D and the amp and the and D alright and
+
+495
+00:21:11,819 --> 00:21:15,569
+then we can estimate these variants
+
+496
+00:21:13,409 --> 00:21:16,590
+components and here what I've shown is
+
+497
+00:21:15,569 --> 00:21:20,038
+the different terms
+
+498
+00:21:16,589 --> 00:21:23,399
+a BD a by B a by D for a couple of
+
+499
+00:21:20,038 --> 00:21:25,230
+traits the the estimates are in red with
+
+500
+00:21:23,400 --> 00:21:28,740
+their standard deviations and then the
+
+501
+00:21:25,230 --> 00:21:32,190
+violin thoughts are our distributions
+
+502
+00:21:28,740 --> 00:21:33,839
+from sampling that data so we subset the
+
+503
+00:21:32,190 --> 00:21:34,830
+data we estimate those variance
+
+504
+00:21:33,839 --> 00:21:37,139
+components actually during
+
+505
+00:21:34,829 --> 00:21:38,548
+cross-validation but what we can do is
+
+506
+00:21:37,140 --> 00:21:39,659
+just see how stable is that variance
+
+507
+00:21:38,548 --> 00:21:41,548
+estimate will notice it for the most
+
+508
+00:21:39,659 --> 00:21:44,280
+part they align very well with their
+
+509
+00:21:41,548 --> 00:21:45,569
+estimates interestingly you'll notice
+
+510
+00:21:44,279 --> 00:21:47,000
+there's very different genetic
+
+511
+00:21:45,569 --> 00:21:50,490
+architecture between these two traits
+
+512
+00:21:47,000 --> 00:21:53,269
+while the B genome explains you know
+
+513
+00:21:50,490 --> 00:21:56,130
+most of the variants in both of them
+
+514
+00:21:53,269 --> 00:21:57,629
+you'll notice that here the the D genome
+
+515
+00:21:56,130 --> 00:22:00,000
+explains a lot more for plant height
+
+516
+00:21:57,630 --> 00:22:03,120
+than it does for granule and the a by D
+
+517
+00:22:00,000 --> 00:22:05,339
+and B by D interaction effects are much
+
+518
+00:22:03,119 --> 00:22:08,129
+larger than than they are in granule
+
+519
+00:22:05,339 --> 00:22:09,869
+where they're actually very small so so
+
+520
+00:22:08,130 --> 00:22:12,270
+granule doesn't have a whole lot going
+
+521
+00:22:09,869 --> 00:22:14,548
+on or sub G no interactions but we do
+
+522
+00:22:12,269 --> 00:22:17,548
+see it from play and then we can show
+
+523
+00:22:14,548 --> 00:22:21,089
+that these things some to two to the
+
+524
+00:22:17,548 --> 00:22:25,859
+same variants as the full genetic effect
+
+525
+00:22:21,089 --> 00:22:27,959
+as well as their interactions okay we
+
+526
+00:22:25,859 --> 00:22:29,788
+can incorporate these interactions into
+
+527
+00:22:27,960 --> 00:22:31,409
+a genomic prediction model and we can
+
+528
+00:22:29,788 --> 00:22:33,960
+see that when we model just the additive
+
+529
+00:22:31,409 --> 00:22:36,290
+effects of the whole genome versus the
+
+530
+00:22:33,960 --> 00:22:38,480
+three individuals and then some of them
+
+531
+00:22:36,289 --> 00:22:41,269
+you'll see that we get essentially the
+
+532
+00:22:38,480 --> 00:22:45,130
+exact same prediction accuracy for all
+
+533
+00:22:41,269 --> 00:22:47,240
+trades and and then if we incorporate
+
+534
+00:22:45,130 --> 00:22:48,110
+epistatic interactions one of the things
+
+535
+00:22:47,240 --> 00:22:51,349
+we can do is incorporate all
+
+536
+00:22:48,109 --> 00:22:53,389
+interactions or we can just incorporate
+
+537
+00:22:51,349 --> 00:22:54,829
+the interactions across the saloons
+
+538
+00:22:53,390 --> 00:22:57,259
+we'll notice that again
+
+539
+00:22:54,829 --> 00:22:59,119
+you see what we see increases in
+
+540
+00:22:57,259 --> 00:23:01,879
+prediction accuracy for all the traits
+
+541
+00:22:59,119 --> 00:23:04,219
+except for arguably grain yield here and
+
+542
+00:23:01,880 --> 00:23:05,750
+that those increases are the same
+
+543
+00:23:04,220 --> 00:23:09,079
+regardless of whether or not we're
+
+544
+00:23:05,750 --> 00:23:15,769
+modeling all pairwise or or just the
+
+545
+00:23:09,079 --> 00:23:17,869
+pairwise across sub jeans however the
+
+546
+00:23:15,769 --> 00:23:20,269
+problem is is that these things are not
+
+547
+00:23:17,869 --> 00:23:21,619
+independent right so so you know you
+
+548
+00:23:20,269 --> 00:23:23,839
+know in a population under pure
+
+549
+00:23:21,619 --> 00:23:25,039
+hardy-weinberg these these variance
+
+550
+00:23:23,839 --> 00:23:27,319
+components should be independent of each
+
+551
+00:23:25,039 --> 00:23:29,359
+other but we do have population
+
+552
+00:23:27,319 --> 00:23:31,579
+structure it's not like we see in
+
+553
+00:23:29,359 --> 00:23:33,919
+something like rice for example but you
+
+554
+00:23:31,579 --> 00:23:37,669
+know this is this is just a PC plot of
+
+555
+00:23:33,920 --> 00:23:39,050
+the genetic covariance and you know
+
+556
+00:23:37,670 --> 00:23:42,980
+where we're explaining maybe you know
+
+557
+00:23:39,049 --> 00:23:44,089
+eighteen percent or so of the of the
+
+558
+00:23:42,980 --> 00:23:47,509
+variance which is the first two
+
+559
+00:23:44,089 --> 00:23:49,099
+principal components so there is some
+
+560
+00:23:47,509 --> 00:23:51,379
+population structure in here and it's
+
+561
+00:23:49,099 --> 00:23:52,490
+Mason basically it probably mostly due
+
+562
+00:23:51,380 --> 00:23:55,730
+to the fact that with many small
+
+563
+00:23:52,490 --> 00:23:57,140
+families right so this is done you know
+
+564
+00:23:55,730 --> 00:24:00,170
+wheat is done a pedigree selection so
+
+565
+00:23:57,140 --> 00:24:02,690
+this is not some big random mating you
+
+566
+00:24:00,170 --> 00:24:04,820
+know population of cattle right there
+
+567
+00:24:02,690 --> 00:24:06,529
+are very specific crosses there are few
+
+568
+00:24:04,819 --> 00:24:11,689
+individuals from each cross that go into
+
+569
+00:24:06,529 --> 00:24:13,910
+it you know advance trial so there could
+
+570
+00:24:11,690 --> 00:24:17,720
+be confounding of estimates here and so
+
+571
+00:24:13,910 --> 00:24:20,300
+I had an attempt to try to remove the
+
+572
+00:24:17,720 --> 00:24:23,930
+largest sources of variation from the
+
+573
+00:24:20,299 --> 00:24:27,379
+marker matrix before we actually
+
+574
+00:24:23,930 --> 00:24:29,750
+calculate how related individuals are so
+
+575
+00:24:27,380 --> 00:24:32,330
+basically under hardy-weinberg these
+
+576
+00:24:29,750 --> 00:24:33,710
+variances should be independent but
+
+577
+00:24:32,329 --> 00:24:35,809
+typically in a breeding program they
+
+578
+00:24:33,710 --> 00:24:37,610
+will not be so we can take the marker
+
+579
+00:24:35,809 --> 00:24:39,500
+matrix and decompose it using singular
+
+580
+00:24:37,609 --> 00:24:41,539
+value decomposition which is obviously
+
+581
+00:24:39,500 --> 00:24:47,450
+my favorite tool because that's what we
+
+582
+00:24:41,539 --> 00:24:49,159
+used for the ami model and we can pull
+
+583
+00:24:47,450 --> 00:24:50,190
+out the first few principal components
+
+584
+00:24:49,160 --> 00:24:53,640
+as populations
+
+585
+00:24:50,190 --> 00:24:55,830
+I'm calling that Q we can reform the
+
+586
+00:24:53,640 --> 00:24:58,230
+marker matrix after we pulled that
+
+587
+00:24:55,829 --> 00:25:01,230
+population out of all of the markers at
+
+588
+00:24:58,230 --> 00:25:02,940
+the same time and we reform this by
+
+589
+00:25:01,230 --> 00:25:06,000
+setting the the the first case singular
+
+590
+00:25:02,940 --> 00:25:08,029
+values of D to 0 and and multiplying
+
+591
+00:25:06,000 --> 00:25:11,940
+right so we make this D tilde multiply
+
+592
+00:25:08,029 --> 00:25:13,649
+isn't important again but then then we
+
+593
+00:25:11,940 --> 00:25:15,029
+just incorporate our population
+
+594
+00:25:13,650 --> 00:25:18,570
+structure as a fixed effect and then we
+
+595
+00:25:15,029 --> 00:25:20,369
+have the sum of our different sub genome
+
+596
+00:25:18,569 --> 00:25:22,829
+of okay so now I can pull out this this
+
+597
+00:25:20,369 --> 00:25:24,959
+M and make a covariance from that so and
+
+598
+00:25:22,829 --> 00:25:26,819
+so forth and while having removed
+
+599
+00:25:24,960 --> 00:25:30,450
+population structure from all three of
+
+600
+00:25:26,819 --> 00:25:32,460
+them at the same time okay
+
+601
+00:25:30,450 --> 00:25:34,740
+when we do that okay so what I've done
+
+602
+00:25:32,460 --> 00:25:38,579
+here is I've plotted in the black lines
+
+603
+00:25:34,740 --> 00:25:42,359
+here showing the correlation of genetic
+
+604
+00:25:38,579 --> 00:25:45,089
+relationships estimated based on the a
+
+605
+00:25:42,359 --> 00:25:47,219
+genome and the D genome or the a genome
+
+606
+00:25:45,089 --> 00:25:48,599
+and the B genome and or the B genome of
+
+607
+00:25:47,220 --> 00:25:50,579
+the genome and you'll notice that they
+
+608
+00:25:48,599 --> 00:25:52,319
+tend to have a high correlation right
+
+609
+00:25:50,579 --> 00:25:53,669
+and that's because individuals that are
+
+610
+00:25:52,319 --> 00:25:55,169
+closely related are going to be closely
+
+611
+00:25:53,670 --> 00:25:57,840
+related to each other no matter which
+
+612
+00:25:55,170 --> 00:26:00,210
+pieces of DNA you choose to calculate
+
+613
+00:25:57,839 --> 00:26:02,099
+that relationship but also because of
+
+614
+00:26:00,210 --> 00:26:03,690
+population structure and it looks like
+
+615
+00:26:02,099 --> 00:26:06,149
+we have this nice shelf here right so
+
+616
+00:26:03,690 --> 00:26:09,000
+you know roughly around a K of maybe
+
+617
+00:26:06,150 --> 00:26:11,490
+four or five it looks like we kind of
+
+618
+00:26:09,000 --> 00:26:14,130
+hit this asymptotic relationship where
+
+619
+00:26:11,490 --> 00:26:15,269
+where where the more principal
+
+620
+00:26:14,130 --> 00:26:18,930
+components we pull out of that market
+
+621
+00:26:15,269 --> 00:26:21,029
+matrix we don't get much reduction in
+
+622
+00:26:18,930 --> 00:26:25,890
+the correlation of the relationships
+
+623
+00:26:21,029 --> 00:26:27,480
+across the subject okay we also take a
+
+624
+00:26:25,890 --> 00:26:29,100
+hit in the amount of variance in the
+
+625
+00:26:27,480 --> 00:26:33,809
+entire population or in the entire
+
+626
+00:26:29,099 --> 00:26:37,919
+matrix so we can so what I've done is
+
+627
+00:26:33,809 --> 00:26:40,259
+okay so we know we know that K appears
+
+628
+00:26:37,920 --> 00:26:41,519
+to be removing right so pulling out this
+
+629
+00:26:40,259 --> 00:26:44,450
+population structure appears to be
+
+630
+00:26:41,519 --> 00:26:47,700
+removing these various opponents but
+
+631
+00:26:44,450 --> 00:26:49,259
+through as as I increase K to I see big
+
+632
+00:26:47,700 --> 00:26:51,630
+you know changes and you'll notice for
+
+633
+00:26:49,259 --> 00:26:54,720
+the a B and the D genomes no matter what
+
+634
+00:26:51,630 --> 00:26:58,050
+the size of K for these four traits the
+
+635
+00:26:54,720 --> 00:27:01,049
+the additive values don't differ very
+
+636
+00:26:58,049 --> 00:27:02,759
+much but their interaction components do
+
+637
+00:27:01,049 --> 00:27:03,839
+have rank changes especially for these
+
+638
+00:27:02,759 --> 00:27:07,169
+different
+
+639
+00:27:03,839 --> 00:27:09,178
+four traits that are not very old
+
+640
+00:27:07,169 --> 00:27:13,080
+so it's really unclear whether or not
+
+641
+00:27:09,179 --> 00:27:14,610
+we're pulling population structure out
+
+642
+00:27:13,079 --> 00:27:17,970
+or also genetic signal right because
+
+643
+00:27:14,609 --> 00:27:20,668
+they're related to each other what I did
+
+644
+00:27:17,970 --> 00:27:23,669
+was I used the variance of the variance
+
+645
+00:27:20,669 --> 00:27:25,799
+estimates to decide whether or not we
+
+646
+00:27:23,669 --> 00:27:27,179
+should be doing this and in general
+
+647
+00:27:25,798 --> 00:27:29,879
+there is not much change in this
+
+648
+00:27:27,179 --> 00:27:31,470
+covariance okay so the variance
+
+649
+00:27:29,880 --> 00:27:33,330
+components related to the interactions
+
+650
+00:27:31,470 --> 00:27:35,548
+and have a high correlation regardless
+
+651
+00:27:33,329 --> 00:27:39,349
+of how much population structure you a
+
+652
+00:27:35,548 --> 00:27:45,929
+lot of this thing so in general this was
+
+653
+00:27:39,349 --> 00:27:47,849
+probably not there probably isn't a
+
+654
+00:27:45,929 --> 00:27:49,169
+whole lot of benefit to this or if there
+
+655
+00:27:47,849 --> 00:27:51,149
+is it's really unclear at least in this
+
+656
+00:27:49,169 --> 00:27:53,490
+population may be very important for
+
+657
+00:27:51,150 --> 00:27:57,298
+certain populations that have very
+
+658
+00:27:53,490 --> 00:28:00,210
+strict sets of population structure like
+
+659
+00:27:57,298 --> 00:28:02,548
+in rice for example but of course that's
+
+660
+00:28:00,210 --> 00:28:04,048
+a diploid okay so we estimated the
+
+661
+00:28:02,548 --> 00:28:06,710
+additive effects relatively well it's
+
+662
+00:28:04,048 --> 00:28:09,089
+not certain if we get good interactions
+
+663
+00:28:06,710 --> 00:28:10,650
+we don't lose prediction accuracy so
+
+664
+00:28:09,089 --> 00:28:12,569
+there's no reason not to do this from a
+
+665
+00:28:10,650 --> 00:28:14,340
+predictive perspective but it's unclear
+
+666
+00:28:12,569 --> 00:28:17,009
+how you would then make selections on
+
+667
+00:28:14,339 --> 00:28:19,079
+each individual right we can we can do
+
+668
+00:28:17,009 --> 00:28:20,250
+complimentary sub genome selection we
+
+669
+00:28:19,079 --> 00:28:21,750
+select individuals that particularly
+
+670
+00:28:20,250 --> 00:28:24,538
+good versus individuals have
+
+671
+00:28:21,750 --> 00:28:27,929
+particularly good B's we can select
+
+672
+00:28:24,538 --> 00:28:29,490
+certain sub genomes and what's great
+
+673
+00:28:27,929 --> 00:28:31,110
+about this method is we don't need to
+
+674
+00:28:29,490 --> 00:28:34,109
+know much about where the marker lives
+
+675
+00:28:31,109 --> 00:28:37,889
+only what genome it came from which is
+
+676
+00:28:34,109 --> 00:28:41,069
+important in crops like wheat where for
+
+677
+00:28:37,890 --> 00:28:43,049
+a long time we knew where markers
+
+678
+00:28:41,069 --> 00:28:45,808
+belonged from a perspective of what
+
+679
+00:28:43,048 --> 00:28:47,879
+chromosome they are they were on but had
+
+680
+00:28:45,808 --> 00:28:50,399
+no idea what the what their relative
+
+681
+00:28:47,880 --> 00:28:51,690
+position next one another was because
+
+682
+00:28:50,400 --> 00:28:56,070
+each of the chromosome arms was
+
+683
+00:28:51,690 --> 00:28:57,870
+assembled independently yes and this is
+
+684
+00:28:56,069 --> 00:29:00,418
+true for a lot of polyploid sequence
+
+685
+00:28:57,869 --> 00:29:02,609
+assembly is very difficult because you
+
+686
+00:29:00,419 --> 00:29:03,570
+have the right because it's replicated
+
+687
+00:29:02,609 --> 00:29:04,769
+it's like you're trying to sequence
+
+688
+00:29:03,569 --> 00:29:06,720
+three different things at the same time
+
+689
+00:29:04,769 --> 00:29:11,869
+so it's hard to assign from those way
+
+690
+00:29:06,720 --> 00:29:14,210
+okay so this paper
+
+691
+00:29:11,869 --> 00:29:16,668
+preparation is really close I'm hoping
+
+692
+00:29:14,210 --> 00:29:18,829
+we're gonna get this one out soon but I
+
+693
+00:29:16,669 --> 00:29:22,640
+want to talk about explicitly modeling
+
+694
+00:29:18,829 --> 00:29:24,769
+homie ologists relationships we can
+
+695
+00:29:22,640 --> 00:29:29,150
+consider a 2 locus model right where we
+
+696
+00:29:24,769 --> 00:29:30,859
+have a locus B say on one genome and a
+
+697
+00:29:29,150 --> 00:29:32,990
+locus see on another genome with
+
+698
+00:29:30,859 --> 00:29:36,408
+additive effects alpha B alpha C and
+
+699
+00:29:32,990 --> 00:29:37,788
+their interaction ok and so there's
+
+700
+00:29:36,409 --> 00:29:39,169
+different ways to think about how
+
+701
+00:29:37,788 --> 00:29:40,849
+epistasis works there's a classic
+
+702
+00:29:39,169 --> 00:29:43,220
+additive by additive I'm not gonna go
+
+703
+00:29:40,849 --> 00:29:45,769
+into this too much this is this is what
+
+704
+00:29:43,220 --> 00:29:48,250
+you get from multiplying marker scores
+
+705
+00:29:45,769 --> 00:29:50,509
+and anyone who's done this is probably
+
+706
+00:29:48,250 --> 00:29:52,960
+seeing this relationship your
+
+707
+00:29:50,509 --> 00:29:54,679
+contrasting you know the two homozygotes
+
+708
+00:29:52,960 --> 00:29:58,778
+little weird thing to say because
+
+709
+00:29:54,679 --> 00:30:01,809
+remember they're all as I guess from the
+
+710
+00:29:58,778 --> 00:30:03,980
+heterozygotes across the genomes right
+
+711
+00:30:01,808 --> 00:30:06,500
+you can look at the duplicate factor
+
+712
+00:30:03,980 --> 00:30:10,220
+model where essentially having a B or a
+
+713
+00:30:06,500 --> 00:30:11,359
+C gives you the effect and having both
+
+714
+00:30:10,220 --> 00:30:13,490
+of them does not give you any further
+
+715
+00:30:11,359 --> 00:30:15,349
+effect right so if this coefficient was
+
+716
+00:30:13,490 --> 00:30:17,390
+2 it would be completely additive but
+
+717
+00:30:15,349 --> 00:30:19,879
+it's it's it's only that it's the same
+
+718
+00:30:17,390 --> 00:30:20,990
+as having one or the other and I'm going
+
+719
+00:30:19,880 --> 00:30:24,110
+to introduce this idea of sub
+
+720
+00:30:20,990 --> 00:30:26,808
+functionalisation epistasis and this is
+
+721
+00:30:24,109 --> 00:30:29,418
+actually a pretty so this model is
+
+722
+00:30:26,808 --> 00:30:31,730
+flexible it allows both everything from
+
+723
+00:30:29,419 --> 00:30:34,159
+a duplicate factor all the way to an
+
+724
+00:30:31,730 --> 00:30:36,829
+additive and then beyond and so I'm
+
+725
+00:30:34,159 --> 00:30:39,740
+gonna go into this I'm going to give you
+
+726
+00:30:36,829 --> 00:30:43,908
+an example of this so you have some
+
+727
+00:30:39,740 --> 00:30:46,880
+ancestor allele a and it it is allowed
+
+728
+00:30:43,909 --> 00:30:48,080
+to change into the two descendant
+
+729
+00:30:46,880 --> 00:30:50,059
+species and when that's brought back
+
+730
+00:30:48,079 --> 00:30:51,579
+together in the allo polyploid you
+
+731
+00:30:50,058 --> 00:30:53,869
+essentially get the sum of those two
+
+732
+00:30:51,579 --> 00:30:55,879
+effects times some divergence
+
+733
+00:30:53,869 --> 00:30:58,668
+coefficient right where you can see that
+
+734
+00:30:55,880 --> 00:31:00,830
+if d equals one this is completely
+
+735
+00:30:58,669 --> 00:31:02,480
+additive if d equals half it's
+
+736
+00:31:00,829 --> 00:31:04,189
+completely redundant and if it's
+
+737
+00:31:02,480 --> 00:31:06,819
+somewhere in between a half and one it
+
+738
+00:31:04,190 --> 00:31:09,169
+there's there's some partial redundancy
+
+739
+00:31:06,819 --> 00:31:12,200
+okay and when I say partial redundancy I
+
+740
+00:31:09,169 --> 00:31:14,750
+mean I mean these genes still to some
+
+741
+00:31:12,200 --> 00:31:16,850
+extent perform similar functions such a
+
+742
+00:31:14,750 --> 00:31:20,148
+having one or the other doesn't result
+
+743
+00:31:16,849 --> 00:31:21,619
+in a total loss of function but but you
+
+744
+00:31:20,148 --> 00:31:24,199
+need both of them to have complete
+
+745
+00:31:21,619 --> 00:31:27,349
+functionality in
+
+746
+00:31:24,200 --> 00:31:31,370
+in the organism okay so this is your
+
+747
+00:31:27,349 --> 00:31:34,158
+classic epistasis plot where you have
+
+748
+00:31:31,369 --> 00:31:35,569
+you know a change from C to Big C you
+
+749
+00:31:34,159 --> 00:31:36,500
+know little C the Big C change from
+
+750
+00:31:35,569 --> 00:31:38,950
+little bita Big B
+
+751
+00:31:36,500 --> 00:31:41,388
+I'm gonna explain this using an example
+
+752
+00:31:38,950 --> 00:31:44,569
+so we had a by parental population that
+
+753
+00:31:41,388 --> 00:31:47,329
+was that where the two parents each had
+
+754
+00:31:44,569 --> 00:31:49,398
+a single dwarfing gene you know the
+
+755
+00:31:47,329 --> 00:31:51,428
+dwarf in genes from that were very
+
+756
+00:31:49,398 --> 00:31:53,178
+famous from the Green Revolution
+
+757
+00:31:51,429 --> 00:31:54,559
+essentially if you have one of these
+
+758
+00:31:53,179 --> 00:31:56,929
+dwarfing genes you're what you are
+
+759
+00:31:54,558 --> 00:31:59,720
+what's called a semi dwarf that brings
+
+760
+00:31:56,929 --> 00:32:01,100
+the height of the plant down such that
+
+761
+00:31:59,720 --> 00:32:03,919
+when you put a bunch of fertilizer on it
+
+762
+00:32:01,099 --> 00:32:05,689
+it doesn't all over which is called
+
+763
+00:32:03,919 --> 00:32:08,480
+lodging and when obviously the plants
+
+764
+00:32:05,690 --> 00:32:13,038
+all over and they lodge we are you know
+
+765
+00:32:08,480 --> 00:32:15,378
+all total grain loss so making these
+
+766
+00:32:13,038 --> 00:32:17,388
+guys short is good but you don't want to
+
+767
+00:32:15,378 --> 00:32:19,128
+make them too short okay
+
+768
+00:32:17,388 --> 00:32:22,069
+so what's interesting is this population
+
+769
+00:32:19,128 --> 00:32:23,569
+had one parent had a dwarfing gene on
+
+770
+00:32:22,069 --> 00:32:27,189
+the B genome the other one had a
+
+771
+00:32:23,569 --> 00:32:30,678
+dwarfing gene on the DG no this RHD one
+
+772
+00:32:27,190 --> 00:32:32,570
+okay now because we made this cross
+
+773
+00:32:30,679 --> 00:32:34,820
+there are double dwarfs in this
+
+774
+00:32:32,569 --> 00:32:36,950
+population so they have two mutant genes
+
+775
+00:32:34,819 --> 00:32:39,168
+that are completely different and
+
+776
+00:32:36,950 --> 00:32:41,600
+sensitive and they are tiny
+
+777
+00:32:39,169 --> 00:32:42,799
+they're super short and here we've
+
+778
+00:32:41,599 --> 00:32:44,028
+tagged them with markers that were
+
+779
+00:32:42,798 --> 00:32:45,408
+relatively close you notice it's not
+
+780
+00:32:44,028 --> 00:32:46,730
+perfect
+
+781
+00:32:45,409 --> 00:32:49,070
+but when we look at the mean of the
+
+782
+00:32:46,730 --> 00:32:50,628
+population of the double dwarf and then
+
+783
+00:32:49,069 --> 00:32:53,089
+we can look at the effect of adding a
+
+784
+00:32:50,628 --> 00:32:55,038
+wild type D allele there's a linear
+
+785
+00:32:53,089 --> 00:32:57,678
+response similarly there's a linear
+
+786
+00:32:55,038 --> 00:33:00,169
+response when we add a wild type B
+
+787
+00:32:57,679 --> 00:33:01,788
+allele to the double dwarf and now based
+
+788
+00:33:00,169 --> 00:33:05,750
+on additive 'ti you would expect the
+
+789
+00:33:01,788 --> 00:33:08,119
+mean of the the double roughly here but
+
+790
+00:33:05,750 --> 00:33:09,409
+when we observe this it is significantly
+
+791
+00:33:08,119 --> 00:33:12,888
+lower than you might expect
+
+792
+00:33:09,409 --> 00:33:13,940
+okay so there's this deviation from the
+
+793
+00:33:12,888 --> 00:33:17,089
+additive model right
+
+794
+00:33:13,940 --> 00:33:20,450
+classic episode change the slope okay
+
+795
+00:33:17,089 --> 00:33:21,980
+and so this this value Delta is how what
+
+796
+00:33:20,450 --> 00:33:24,500
+you know we can estimate this directly
+
+797
+00:33:21,980 --> 00:33:28,399
+and we can calculate this divergence
+
+798
+00:33:24,500 --> 00:33:29,690
+coefficient D okay and then essentially
+
+799
+00:33:28,398 --> 00:33:31,398
+you know this is this great example of
+
+800
+00:33:29,690 --> 00:33:33,200
+one plus one does not equal two there is
+
+801
+00:33:31,398 --> 00:33:35,289
+some functional redundancy between these
+
+802
+00:33:33,200 --> 00:33:36,400
+two genes now this
+
+803
+00:33:35,289 --> 00:33:38,079
+different from their being pure
+
+804
+00:33:36,400 --> 00:33:40,000
+redundancy in which case you would see
+
+805
+00:33:38,079 --> 00:33:43,119
+this right where this Delta is is
+
+806
+00:33:40,000 --> 00:33:44,890
+exactly you know where this this slip is
+
+807
+00:33:43,119 --> 00:33:49,779
+now flat so one or the other gives you
+
+808
+00:33:44,890 --> 00:33:51,700
+the you know the wild type and this is
+
+809
+00:33:49,779 --> 00:33:55,539
+obviously different from seeing an
+
+810
+00:33:51,700 --> 00:33:57,220
+increase in response okay so that's one
+
+811
+00:33:55,539 --> 00:33:59,829
+gene but I wanted to know do I see this
+
+812
+00:33:57,220 --> 00:34:04,269
+pattern across the genome okay
+
+813
+00:33:59,829 --> 00:34:06,549
+and so using the the international wheat
+
+814
+00:34:04,269 --> 00:34:11,860
+genome sequencing consortium refseq one
+
+815
+00:34:06,549 --> 00:34:14,679
+I was that with roughly 1100 coding
+
+816
+00:34:11,860 --> 00:34:17,370
+sequences I was able to basically
+
+817
+00:34:14,679 --> 00:34:21,700
+establish homeo allelic gene sets
+
+818
+00:34:17,369 --> 00:34:23,769
+roughly 18,000 triplicates 5000 doubles
+
+819
+00:34:21,699 --> 00:34:26,289
+so triplets means one on a when I'm b1
+
+820
+00:34:23,769 --> 00:34:28,059
+on D the expected places and then the
+
+821
+00:34:26,289 --> 00:34:31,418
+duplicates is one on a and one on B but
+
+822
+00:34:28,059 --> 00:34:33,668
+you're missing one on safety right so we
+
+823
+00:34:31,418 --> 00:34:36,819
+end up with about 23,000 homie ologist
+
+824
+00:34:33,668 --> 00:34:40,210
+sets and then I tagged those sets with
+
+825
+00:34:36,820 --> 00:34:42,220
+GPS markers so now I can track them okay
+
+826
+00:34:40,210 --> 00:34:46,869
+and I ended up with a total of about
+
+827
+00:34:42,219 --> 00:34:48,969
+10,000 markers now when we look at so
+
+828
+00:34:46,869 --> 00:34:50,380
+what what can we do we can take these we
+
+829
+00:34:48,969 --> 00:34:51,730
+can take these molecular markers and we
+
+830
+00:34:50,380 --> 00:34:54,190
+can do G walks right which is our
+
+831
+00:34:51,730 --> 00:34:56,230
+favorite thing to do here and what I've
+
+832
+00:34:54,190 --> 00:34:57,909
+done is I've plotted the the 21
+
+833
+00:34:56,230 --> 00:35:00,579
+chromosomes of wheat around the circle
+
+834
+00:34:57,909 --> 00:35:02,409
+and then I'm indicated these are like
+
+835
+00:35:00,579 --> 00:35:04,299
+Manhattan plots here so these are the
+
+836
+00:35:02,409 --> 00:35:06,009
+negative log 10 of the p-values and
+
+837
+00:35:04,300 --> 00:35:08,410
+you'll see we don't have a bunch of huge
+
+838
+00:35:06,010 --> 00:35:11,170
+hits there's a couple plant height we
+
+839
+00:35:08,409 --> 00:35:13,750
+have the dwarfing gene on 4d heading
+
+840
+00:35:11,170 --> 00:35:15,490
+date we have PPD 1 on 2d for example but
+
+841
+00:35:13,750 --> 00:35:17,739
+there's not a whole lot of large Becky
+
+842
+00:35:15,489 --> 00:35:19,359
+TL however you notice from earlier we
+
+843
+00:35:17,739 --> 00:35:22,149
+had a high prediction accuracy with BC
+
+844
+00:35:19,360 --> 00:35:23,800
+so there is genetic signal in there it's
+
+845
+00:35:22,150 --> 00:35:25,300
+just going to be that just indicates
+
+846
+00:35:23,800 --> 00:35:26,650
+that where there's many genes we're
+
+847
+00:35:25,300 --> 00:35:30,370
+looking at that are involved in this
+
+848
+00:35:26,650 --> 00:35:33,039
+similarly we don't find a whole lot of
+
+849
+00:35:30,369 --> 00:35:35,679
+quote-unquote significant homie ologist
+
+850
+00:35:33,039 --> 00:35:38,139
+HEPA static interactions and these are
+
+851
+00:35:35,679 --> 00:35:39,969
+indicated by these hoops here so you
+
+852
+00:35:38,139 --> 00:35:44,769
+know a couple on three couple on four up
+
+853
+00:35:39,969 --> 00:35:46,519
+on five couple on seven relatively few
+
+854
+00:35:44,769 --> 00:35:50,440
+however
+
+855
+00:35:46,519 --> 00:35:54,139
+um we can look at the global trend of
+
+856
+00:35:50,440 --> 00:35:56,960
+these individuals or of these low sigh
+
+857
+00:35:54,139 --> 00:35:58,670
+okay so so and then and then we can see
+
+858
+00:35:56,960 --> 00:36:01,000
+do they increase prediction actually I'm
+
+859
+00:35:58,670 --> 00:36:05,470
+gonna get to that in a couple of slides
+
+860
+00:36:01,000 --> 00:36:08,449
+what I've done here is I've plotted oh
+
+861
+00:36:05,469 --> 00:36:10,429
+my gosh I'm running low on time so what
+
+862
+00:36:08,449 --> 00:36:12,559
+I've done is I've plotted the home of
+
+863
+00:36:10,429 --> 00:36:15,619
+like one homolog say the a genome home
+
+864
+00:36:12,559 --> 00:36:19,880
+you log effect against the other homeo
+
+865
+00:36:15,619 --> 00:36:21,349
+log which is the like say the B okay and
+
+866
+00:36:19,880 --> 00:36:23,210
+then and then in color I've indicated
+
+867
+00:36:21,349 --> 00:36:24,949
+the direction of the interaction of
+
+868
+00:36:23,210 --> 00:36:30,050
+their inner their pairwise interaction
+
+869
+00:36:24,949 --> 00:36:32,299
+and their magnitude is is shown with the
+
+870
+00:36:30,050 --> 00:36:34,340
+size of the of the point here and you'll
+
+871
+00:36:32,300 --> 00:36:36,920
+notice that we see this drastic negative
+
+872
+00:36:34,340 --> 00:36:39,380
+trend between the additive effects and
+
+873
+00:36:36,920 --> 00:36:42,829
+their interaction right so if you have a
+
+874
+00:36:39,380 --> 00:36:44,809
+positive if if both of your both of your
+
+875
+00:36:42,829 --> 00:36:46,509
+alleles are positive your interaction
+
+876
+00:36:44,809 --> 00:36:50,059
+tends to be negative and vice versa
+
+877
+00:36:46,510 --> 00:36:51,470
+okay and so I was like yeah this is
+
+878
+00:36:50,059 --> 00:36:52,670
+totally showing me exactly what I
+
+879
+00:36:51,469 --> 00:36:54,559
+thought this is this is sub
+
+880
+00:36:52,670 --> 00:36:56,720
+functionalization right but this has to
+
+881
+00:36:54,559 --> 00:36:58,159
+do with how we coded this so what we
+
+882
+00:36:56,719 --> 00:37:00,049
+were doing is we were contrasting
+
+883
+00:36:58,159 --> 00:37:03,039
+genotypes you're trying to assign who
+
+884
+00:37:00,050 --> 00:37:05,900
+has you know what is the functional copy
+
+885
+00:37:03,039 --> 00:37:09,469
+and and this is using you know zero one
+
+886
+00:37:05,900 --> 00:37:12,250
+marker coding and what happens is if so
+
+887
+00:37:09,469 --> 00:37:16,339
+so to check to make sure I'm not crazy I
+
+888
+00:37:12,250 --> 00:37:18,440
+simulated a data set using the exact
+
+889
+00:37:16,340 --> 00:37:19,550
+same parameters from the original four
+
+890
+00:37:18,440 --> 00:37:20,980
+data sets using the exact same
+
+891
+00:37:19,550 --> 00:37:25,039
+parameters from the original population
+
+892
+00:37:20,980 --> 00:37:27,139
+only here I intentionally did not allow
+
+893
+00:37:25,039 --> 00:37:29,559
+them to have interactions okay but I
+
+894
+00:37:27,139 --> 00:37:32,960
+didn't touch the LD in the population
+
+895
+00:37:29,559 --> 00:37:34,699
+and you can see we still observe this
+
+896
+00:37:32,960 --> 00:37:36,500
+this trend and so I was like ah man
+
+897
+00:37:34,699 --> 00:37:38,210
+bummer this is the and this is the
+
+898
+00:37:36,500 --> 00:37:40,510
+problem is this is a multicollinearity
+
+899
+00:37:38,210 --> 00:37:43,869
+problem right so the predictors are
+
+900
+00:37:40,510 --> 00:37:43,870
+correlated to each other
+
+901
+00:37:45,179 --> 00:37:48,480
+but we can ask are they greater than
+
+902
+00:37:46,349 --> 00:37:50,730
+expected by chance and so what I did was
+
+903
+00:37:48,480 --> 00:37:54,690
+I plotted those epistatic or interaction
+
+904
+00:37:50,730 --> 00:37:57,030
+effects from the the true data and this
+
+905
+00:37:54,690 --> 00:38:00,480
+you know the additive only simulated
+
+906
+00:37:57,030 --> 00:38:02,730
+data and if if there's no effect we
+
+907
+00:38:00,480 --> 00:38:07,079
+should not see any deviation from this
+
+908
+00:38:02,730 --> 00:38:09,780
+this diagonal line and I multiplied them
+
+909
+00:38:07,079 --> 00:38:12,180
+by the inner by they're additive effect
+
+910
+00:38:09,780 --> 00:38:14,640
+sign so that if they have a negative
+
+911
+00:38:12,179 --> 00:38:15,750
+relationship they should have a low tail
+
+912
+00:38:14,639 --> 00:38:17,338
+here and if they have a positive
+
+913
+00:38:15,750 --> 00:38:19,260
+relationship they should have a tail
+
+914
+00:38:17,338 --> 00:38:21,900
+here and you'll notice for heading date
+
+915
+00:38:19,260 --> 00:38:23,849
+we see this this push down that's
+
+916
+00:38:21,900 --> 00:38:25,530
+indicating that these are more negative
+
+917
+00:38:23,849 --> 00:38:28,530
+than expected by chance unless I see
+
+918
+00:38:25,530 --> 00:38:30,089
+some for plant heights down here but you
+
+919
+00:38:28,530 --> 00:38:33,630
+know we see it reflected not a lot for
+
+920
+00:38:30,088 --> 00:38:36,989
+grain yield and it's unclear for test
+
+921
+00:38:33,630 --> 00:38:40,410
+weight it doesn't look like a whole lot
+
+922
+00:38:36,989 --> 00:38:43,889
+of signal interestingly if I remove the
+
+923
+00:38:40,409 --> 00:38:46,129
+LD pattern in the population then I see
+
+924
+00:38:43,889 --> 00:38:48,539
+this this effect is to some extent
+
+925
+00:38:46,130 --> 00:38:50,568
+emphasized again I'll come back to that
+
+926
+00:38:48,539 --> 00:38:55,019
+in a minute
+
+927
+00:38:50,568 --> 00:39:00,358
+we also ah I'm gonna skip over this okay
+
+928
+00:38:55,019 --> 00:39:02,250
+so so we looked at okay so so not a lot
+
+929
+00:39:00,358 --> 00:39:05,400
+of large effect interactions but do they
+
+930
+00:39:02,250 --> 00:39:07,739
+increase prediction accuracy we see that
+
+931
+00:39:05,400 --> 00:39:09,869
+modeling all pairwise gives us this bump
+
+932
+00:39:07,739 --> 00:39:12,259
+from the ads right additive model all
+
+933
+00:39:09,869 --> 00:39:15,000
+pairwise interactions and the homie alla
+
+934
+00:39:12,260 --> 00:39:21,000
+ggest attak interactions explain between
+
+935
+00:39:15,000 --> 00:39:22,500
+you know 60 to 75 percent of of that
+
+936
+00:39:21,000 --> 00:39:29,338
+increase now this is a very small
+
+937
+00:39:22,500 --> 00:39:31,798
+increase so for sanity's sake we also
+
+938
+00:39:29,338 --> 00:39:34,460
+sampled pairs random pairs within and
+
+939
+00:39:31,798 --> 00:39:34,460
+across the genome
+
+940
+00:39:34,659 --> 00:39:37,509
+of markers and then we looked at their
+
+941
+00:39:36,130 --> 00:39:38,740
+prediction accuracy and you'll see that
+
+942
+00:39:37,509 --> 00:39:40,750
+we actually got higher prediction
+
+943
+00:39:38,739 --> 00:39:43,419
+accuracy with these random pairs across
+
+944
+00:39:40,750 --> 00:39:45,759
+which might be like oh man did we did we
+
+945
+00:39:43,420 --> 00:39:48,159
+you know did we miss something why would
+
+946
+00:39:45,759 --> 00:39:51,130
+we expect random pairs within a genome
+
+947
+00:39:48,159 --> 00:39:52,808
+or across the sub genomes to have higher
+
+948
+00:39:51,130 --> 00:39:55,630
+prediction accuracies than the
+
+949
+00:39:52,809 --> 00:39:58,059
+homologous I if anything I would expect
+
+950
+00:39:55,630 --> 00:40:02,380
+them to be about the same and the reason
+
+951
+00:39:58,059 --> 00:40:04,930
+I think is we see an a much higher rate
+
+952
+00:40:02,380 --> 00:40:07,680
+of linkage disequilibrium so here I'm
+
+953
+00:40:04,929 --> 00:40:09,669
+plotting the leakage disequilibrium
+
+954
+00:40:07,679 --> 00:40:13,118
+parameter D Prime so it's been
+
+955
+00:40:09,670 --> 00:40:15,430
+standardized and so the the solid line
+
+956
+00:40:13,119 --> 00:40:17,140
+here is the homologous set and then the
+
+957
+00:40:15,429 --> 00:40:18,368
+dotted lines are our two random sets and
+
+958
+00:40:17,139 --> 00:40:23,469
+you notice that there's an enrichment
+
+959
+00:40:18,369 --> 00:40:25,660
+for fixation at homeo allelic sites so
+
+960
+00:40:23,469 --> 00:40:28,808
+certain pairs of homeo alleles are being
+
+961
+00:40:25,659 --> 00:40:30,639
+fixed okay and this is this you so an
+
+962
+00:40:28,809 --> 00:40:32,789
+example of this would be the dorsum
+
+963
+00:40:30,639 --> 00:40:35,348
+genes just to bring it back
+
+964
+00:40:32,789 --> 00:40:37,089
+most modern wheat varieties have a
+
+965
+00:40:35,349 --> 00:40:40,000
+single dwarfing gene because they get
+
+966
+00:40:37,088 --> 00:40:42,730
+the reduced stature that helps them
+
+967
+00:40:40,000 --> 00:40:44,230
+resist lodging but if you have both
+
+968
+00:40:42,730 --> 00:40:45,519
+dwarfing genes you're too short and
+
+969
+00:40:44,230 --> 00:40:47,920
+you're not you're not economically
+
+970
+00:40:45,518 --> 00:40:50,139
+harvestable so so what we've done is we
+
+971
+00:40:47,920 --> 00:40:52,960
+fixed pairs right we fixed pairs where
+
+972
+00:40:50,139 --> 00:40:54,518
+you have a wild-type and a mutant and a
+
+973
+00:40:52,960 --> 00:40:56,170
+mutant and a wild-type and you never
+
+974
+00:40:54,518 --> 00:40:59,798
+have a double mutant or and it's rare to
+
+975
+00:40:56,170 --> 00:41:01,480
+have double wild okay so this this may
+
+976
+00:40:59,798 --> 00:41:03,759
+be this may explain why we're seeing
+
+977
+00:41:01,480 --> 00:41:05,469
+lower prediction errors
+
+978
+00:41:03,759 --> 00:41:07,539
+additionally physical position is not
+
+979
+00:41:05,469 --> 00:41:10,268
+necessarily a good indicator of LD right
+
+980
+00:41:07,539 --> 00:41:12,130
+you know it's both position and the time
+
+981
+00:41:10,268 --> 00:41:14,919
+of those of those mutations that
+
+982
+00:41:12,130 --> 00:41:17,318
+indicate lb and I'm not going to go into
+
+983
+00:41:14,920 --> 00:41:18,970
+this into too much detail but there's
+
+984
+00:41:17,318 --> 00:41:22,808
+also some difficulty in picking specific
+
+985
+00:41:18,969 --> 00:41:26,798
+sets of markers to call homie oolagah
+
+986
+00:41:22,809 --> 00:41:28,690
+right given that given that we don't
+
+987
+00:41:26,798 --> 00:41:30,730
+know we're just using physical position
+
+988
+00:41:28,690 --> 00:41:32,740
+to assign these as opposed to say
+
+989
+00:41:30,730 --> 00:41:35,409
+linkage disequilibrium now that would be
+
+990
+00:41:32,739 --> 00:41:37,629
+really difficult to do because it's not
+
+991
+00:41:35,409 --> 00:41:38,889
+just it's not just LD between the marker
+
+992
+00:41:37,630 --> 00:41:40,690
+and the functional polymorphism but also
+
+993
+00:41:38,889 --> 00:41:43,088
+LD between marker the functional
+
+994
+00:41:40,690 --> 00:41:46,690
+polymorphism on the other arm and their
+
+995
+00:41:43,088 --> 00:41:48,579
+interaction right so this it's not a
+
+996
+00:41:46,690 --> 00:41:50,200
+problem for simple gos right
+
+997
+00:41:48,579 --> 00:41:51,699
+tagging these and it's not a problem for
+
+998
+00:41:50,199 --> 00:41:53,469
+all pairwise interactions because you
+
+999
+00:41:51,699 --> 00:41:56,559
+test everything but here we're only
+
+1000
+00:41:53,469 --> 00:41:59,859
+testing a very small subset of that okay
+
+1001
+00:41:56,559 --> 00:42:01,840
+so really so we do see these
+
+1002
+00:41:59,860 --> 00:42:04,300
+interactions tend to be less than
+
+1003
+00:42:01,840 --> 00:42:08,019
+additive for some traits that appears
+
+1004
+00:42:04,300 --> 00:42:11,650
+pretty clear homie allylic pairs pairs
+
+1005
+00:42:08,019 --> 00:42:14,469
+explain some of this increase in genetic
+
+1006
+00:42:11,650 --> 00:42:16,990
+predictability but not more so than
+
+1007
+00:42:14,469 --> 00:42:20,409
+random pairs and this may be due to LD
+
+1008
+00:42:16,989 --> 00:42:23,459
+or lo pairing so we need a better way to
+
+1009
+00:42:20,409 --> 00:42:26,529
+pair markers and in my last five minutes
+
+1010
+00:42:23,460 --> 00:42:28,360
+okay and so this this this paper is
+
+1011
+00:42:26,530 --> 00:42:29,560
+essentially written it needs to be
+
+1012
+00:42:28,360 --> 00:42:32,230
+tightened up a little bit and we're
+
+1013
+00:42:29,559 --> 00:42:33,429
+waiting for wheat genome consortium to
+
+1014
+00:42:32,230 --> 00:42:35,349
+publish their paper so that we can
+
+1015
+00:42:33,429 --> 00:42:38,190
+publish and they've had the genome
+
+1016
+00:42:35,349 --> 00:42:40,839
+available for quite some time now and
+
+1017
+00:42:38,190 --> 00:42:42,400
+they won't let anyone publish on it
+
+1018
+00:42:40,840 --> 00:42:45,130
+until they publish so anyway we're
+
+1019
+00:42:42,400 --> 00:42:48,910
+waiting for that in the last few minutes
+
+1020
+00:42:45,130 --> 00:42:50,890
+I'm gonna go into a strategy I use so I
+
+1021
+00:42:48,909 --> 00:42:52,929
+had a problem tag right so there's this
+
+1022
+00:42:50,889 --> 00:42:56,230
+question of am I having a hard time
+
+1023
+00:42:52,929 --> 00:42:57,669
+tagging specific homeo alleles with
+
+1024
+00:42:56,230 --> 00:42:59,740
+specific markers right they may not be
+
+1025
+00:42:57,670 --> 00:43:02,740
+in high LD well what if we use more than
+
+1026
+00:42:59,739 --> 00:43:04,389
+one pair right so with with with I
+
+1027
+00:43:02,739 --> 00:43:05,739
+talked about the pairwise epistasis the
+
+1028
+00:43:04,389 --> 00:43:08,679
+problem with this is a multiple test
+
+1029
+00:43:05,739 --> 00:43:10,659
+problem you have 11,000 markers or so
+
+1030
+00:43:08,679 --> 00:43:12,549
+you end up with you know 67 million
+
+1031
+00:43:10,659 --> 00:43:16,589
+tests and a bonferroni correction is
+
+1032
+00:43:12,550 --> 00:43:19,390
+really hard to see especially for
+
+1033
+00:43:16,590 --> 00:43:21,670
+interactions which tend to only have
+
+1034
+00:43:19,389 --> 00:43:23,319
+maximized variability at allele
+
+1035
+00:43:21,670 --> 00:43:25,990
+frequencies of point 5 right so as those
+
+1036
+00:43:23,320 --> 00:43:27,880
+a little frequencies go to 0 you reduce
+
+1037
+00:43:25,989 --> 00:43:30,039
+the effect of the ability to see the
+
+1038
+00:43:27,880 --> 00:43:34,210
+interaction and that variance gets
+
+1039
+00:43:30,039 --> 00:43:35,889
+partitioned to additive variance but
+
+1040
+00:43:34,210 --> 00:43:38,230
+what if we just looked at chromosome
+
+1041
+00:43:35,889 --> 00:43:40,299
+arms what if we took individual
+
+1042
+00:43:38,230 --> 00:43:42,730
+chromosome arms and looked at contrast
+
+1043
+00:43:40,300 --> 00:43:44,370
+it to see if those arms were were
+
+1044
+00:43:42,730 --> 00:43:47,440
+interacting with one another
+
+1045
+00:43:44,369 --> 00:43:48,909
+this would drastically reduce the you
+
+1046
+00:43:47,440 --> 00:43:53,650
+know now I'm only looking at 42
+
+1047
+00:43:48,909 --> 00:43:55,389
+different chromosome arms we 861 total
+
+1048
+00:43:53,650 --> 00:43:59,740
+test so the bonferroni correction is way
+
+1049
+00:43:55,389 --> 00:44:01,299
+less okay so
+
+1050
+00:43:59,739 --> 00:44:03,129
+you know again essentially what I did
+
+1051
+00:44:01,300 --> 00:44:04,630
+was I took our model and it pulled out a
+
+1052
+00:44:03,130 --> 00:44:06,550
+couple of chromosome arms and model
+
+1053
+00:44:04,630 --> 00:44:09,070
+their interaction and then we do a
+
+1054
+00:44:06,550 --> 00:44:11,200
+series of likelihood ratio tests to
+
+1055
+00:44:09,070 --> 00:44:13,090
+determine if the additive effects or the
+
+1056
+00:44:11,199 --> 00:44:18,579
+interaction or and the interaction is
+
+1057
+00:44:13,090 --> 00:44:21,220
+significant and then mmm essentially we
+
+1058
+00:44:18,579 --> 00:44:23,710
+can plot the p-values and here in light
+
+1059
+00:44:21,219 --> 00:44:25,779
+gray is the additive p-value so is the
+
+1060
+00:44:23,710 --> 00:44:26,980
+additive effect significant and in dark
+
+1061
+00:44:25,780 --> 00:44:29,019
+gray is the interaction effect
+
+1062
+00:44:26,980 --> 00:44:31,480
+significant you'll notice that that
+
+1063
+00:44:29,019 --> 00:44:33,550
+essentially so so you know these are
+
+1064
+00:44:31,480 --> 00:44:35,110
+these would be considered significant
+
+1065
+00:44:33,550 --> 00:44:37,810
+over here these are not these are
+
+1066
+00:44:35,110 --> 00:44:39,700
+essentially a p-value of one and so
+
+1067
+00:44:37,809 --> 00:44:42,190
+you'll notice for these four traits most
+
+1068
+00:44:39,699 --> 00:44:44,529
+of the at most of the chromosome arms
+
+1069
+00:44:42,190 --> 00:44:45,940
+have an additive effect a significant
+
+1070
+00:44:44,530 --> 00:44:47,769
+additive effect which makes sense that's
+
+1071
+00:44:45,940 --> 00:44:50,429
+what we expect we expect large pieces of
+
+1072
+00:44:47,769 --> 00:44:52,300
+chromatin to have effects on a phenotype
+
+1073
+00:44:50,429 --> 00:44:53,529
+but you'll notice most of the
+
+1074
+00:44:52,300 --> 00:44:54,730
+interactions are not which is good
+
+1075
+00:44:53,530 --> 00:44:55,990
+because we don't expect all of these
+
+1076
+00:44:54,730 --> 00:44:58,809
+things to be interacting with each other
+
+1077
+00:44:55,989 --> 00:45:00,159
+necessarily and then of course when
+
+1078
+00:44:58,809 --> 00:45:02,130
+these various parameters were estimated
+
+1079
+00:45:00,159 --> 00:45:04,480
+on boundary you have a problem with
+
+1080
+00:45:02,130 --> 00:45:06,010
+essentially but they end up being zero
+
+1081
+00:45:04,480 --> 00:45:08,320
+so that's where you get this really this
+
+1082
+00:45:06,010 --> 00:45:09,550
+big lump of key values instead of the
+
+1083
+00:45:08,320 --> 00:45:14,350
+uniform the expected uniform
+
+1084
+00:45:09,550 --> 00:45:16,450
+distribution okay and then I just want
+
+1085
+00:45:14,349 --> 00:45:18,670
+to show so these are the results from a
+
+1086
+00:45:16,449 --> 00:45:20,439
+bond for running correction what's
+
+1087
+00:45:18,670 --> 00:45:23,110
+interesting is we see some sites where
+
+1088
+00:45:20,440 --> 00:45:27,760
+it looks like we have you know four d
+
+1089
+00:45:23,110 --> 00:45:29,920
+six a seven D big regulator or you know
+
+1090
+00:45:27,760 --> 00:45:32,920
+some site that appears to be interacting
+
+1091
+00:45:29,920 --> 00:45:34,420
+with many loci which is maybe suggestive
+
+1092
+00:45:32,920 --> 00:45:39,099
+of some kind of gene regulator if we
+
+1093
+00:45:34,420 --> 00:45:40,119
+relax this cut off a little bit and just
+
+1094
+00:45:39,099 --> 00:45:42,009
+look at interactions that were
+
+1095
+00:45:40,119 --> 00:45:43,779
+significant at say point zero zero one
+
+1096
+00:45:42,010 --> 00:45:45,280
+just just to look at a pattern I'm not
+
+1097
+00:45:43,780 --> 00:45:48,340
+saying that these are causing I'm just
+
+1098
+00:45:45,280 --> 00:45:50,860
+curious we see that we see that this
+
+1099
+00:45:48,340 --> 00:45:53,530
+this appears you know we see these these
+
+1100
+00:45:50,860 --> 00:45:56,620
+sites where just a bunch of interactions
+
+1101
+00:45:53,530 --> 00:45:58,060
+with a single locus or single chromosome
+
+1102
+00:45:56,619 --> 00:45:59,619
+here's another one for heading day right
+
+1103
+00:45:58,059 --> 00:46:01,509
+it's it looks like it's affecting a
+
+1104
+00:45:59,619 --> 00:46:03,369
+bunch of different things and so we see
+
+1105
+00:46:01,510 --> 00:46:10,150
+some of these hotspots you know on seven
+
+1106
+00:46:03,369 --> 00:46:12,759
+seven D seven seven be here and for V or
+
+1107
+00:46:10,150 --> 00:46:16,000
+excuse me for Dean
+
+1108
+00:46:12,760 --> 00:46:18,069
+recently there was paper by young that
+
+1109
+00:46:16,000 --> 00:46:21,730
+came out last year and they also saw
+
+1110
+00:46:18,068 --> 00:46:23,739
+this enrichment at 7b and 7d so you know
+
+1111
+00:46:21,730 --> 00:46:25,650
+or these are this is essentially the
+
+1112
+00:46:23,739 --> 00:46:29,379
+same thought that there's this rotated
+
+1113
+00:46:25,650 --> 00:46:31,240
+but they saw that these two chromosomes
+
+1114
+00:46:29,380 --> 00:46:32,829
+appeared to have a lot of you know
+
+1115
+00:46:31,239 --> 00:46:34,479
+appear to be influencing a lot of
+
+1116
+00:46:32,829 --> 00:46:37,089
+regions they also saw an area on 4a
+
+1117
+00:46:34,480 --> 00:46:41,588
+which we didn't see but we saw the 4d
+
+1118
+00:46:37,088 --> 00:46:43,539
+seem to be important just looking at the
+
+1119
+00:46:41,588 --> 00:46:45,250
+homologous chromosome arms we don't see
+
+1120
+00:46:43,539 --> 00:46:47,230
+a whole lot of evidence for this this is
+
+1121
+00:46:45,250 --> 00:46:48,250
+a bonferroni correction we only were to
+
+1122
+00:46:47,230 --> 00:46:50,260
+consider all the ones they're
+
+1123
+00:46:48,250 --> 00:46:51,969
+significant it's 8.05 or their
+
+1124
+00:46:50,260 --> 00:46:53,380
+interactions we see this now you're
+
+1125
+00:46:51,969 --> 00:46:55,959
+probably wondering what the colors are
+
+1126
+00:46:53,380 --> 00:46:57,550
+the colors are due to are basically
+
+1127
+00:46:55,960 --> 00:47:00,010
+colored the relationship between the
+
+1128
+00:46:57,550 --> 00:47:01,300
+additive and the epistatic effect so if
+
+1129
+00:47:00,010 --> 00:47:02,740
+they're blue there's a positive
+
+1130
+00:47:01,300 --> 00:47:04,510
+relationship between the additive and
+
+1131
+00:47:02,739 --> 00:47:05,919
+the epistatic effect and if they're red
+
+1132
+00:47:04,510 --> 00:47:07,210
+there's a negative relationship and if
+
+1133
+00:47:05,920 --> 00:47:12,099
+they're black there's you know or gray
+
+1134
+00:47:07,210 --> 00:47:16,150
+there's no based on just a correlation
+
+1135
+00:47:12,099 --> 00:47:18,010
+coefficient and what's one of them one
+
+1136
+00:47:16,150 --> 00:47:21,670
+of the things i like to point out in my
+
+1137
+00:47:18,010 --> 00:47:24,400
+last minute is that for the for BL and
+
+1138
+00:47:21,670 --> 00:47:28,480
+for dl here has a had a really strong
+
+1139
+00:47:24,400 --> 00:47:30,579
+negative and when we when we plotted
+
+1140
+00:47:28,480 --> 00:47:31,869
+this you can see there's this drastic
+
+1141
+00:47:30,579 --> 00:47:34,568
+negative relationship between the
+
+1142
+00:47:31,869 --> 00:47:36,190
+additive effects early interaction so
+
+1143
+00:47:34,568 --> 00:47:37,239
+this might indicate this might be
+
+1144
+00:47:36,190 --> 00:47:40,780
+another indicator or some
+
+1145
+00:47:37,239 --> 00:47:42,818
+functionalisation however when we looked
+
+1146
+00:47:40,780 --> 00:47:44,619
+at this for a different trait right so
+
+1147
+00:47:42,818 --> 00:47:48,219
+this was for plant this is for plant
+
+1148
+00:47:44,619 --> 00:47:52,210
+height this is for testing there was we
+
+1149
+00:47:48,219 --> 00:47:54,250
+did not see the same pattern and when we
+
+1150
+00:47:52,210 --> 00:47:56,230
+looked at our spot where we assumed we
+
+1151
+00:47:54,250 --> 00:47:58,599
+might see the interaction of the two
+
+1152
+00:47:56,230 --> 00:48:00,369
+dwarfing genes we don't have a whole lot
+
+1153
+00:47:58,599 --> 00:48:03,190
+of them from the bee genome in our
+
+1154
+00:48:00,369 --> 00:48:08,440
+population but we don't really see much
+
+1155
+00:48:03,190 --> 00:48:10,210
+of a pattern here although there is okay
+
+1156
+00:48:08,440 --> 00:48:14,230
+so we see a lot of these interactions
+
+1157
+00:48:10,210 --> 00:48:15,670
+granule handsome few potentially it
+
+1158
+00:48:14,230 --> 00:48:17,679
+looks like we see some regions there
+
+1159
+00:48:15,670 --> 00:48:18,909
+have large ret you know large regulatory
+
+1160
+00:48:17,679 --> 00:48:21,429
+regions you can be interacting with many
+
+1161
+00:48:18,909 --> 00:48:23,679
+different low huh and we see strong
+
+1162
+00:48:21,429 --> 00:48:25,569
+relationships between some of these
+
+1163
+00:48:23,679 --> 00:48:27,699
+homologous arm pairs in
+
+1164
+00:48:25,570 --> 00:48:30,220
+hating that we may have some of these
+
+1165
+00:48:27,699 --> 00:48:32,069
+homie Ollie you know that there may be
+
+1166
+00:48:30,219 --> 00:48:34,539
+relationships between these homeo Leo's
+
+1167
+00:48:32,070 --> 00:48:36,700
+additionally I think that I think that a
+
+1168
+00:48:34,539 --> 00:48:38,849
+lot of this stuff probably is really
+
+1169
+00:48:36,699 --> 00:48:41,109
+suggestive and probably needs a lot more
+
+1170
+00:48:38,849 --> 00:48:45,579
+fine-tuning I think a lot more research
+
+1171
+00:48:41,110 --> 00:48:47,019
+can be done I imagine I imagine that
+
+1172
+00:48:45,579 --> 00:48:48,429
+there are some other populations that
+
+1173
+00:48:47,019 --> 00:48:50,110
+you could look at this and as opposed to
+
+1174
+00:48:48,429 --> 00:48:51,849
+a breeding population where you fix a
+
+1175
+00:48:50,110 --> 00:48:54,130
+lot of these interactions you could look
+
+1176
+00:48:51,849 --> 00:48:56,699
+at a synthetic wheat population which
+
+1177
+00:48:54,130 --> 00:48:58,869
+would maximize these these interactions
+
+1178
+00:48:56,699 --> 00:49:00,909
+and so I think that there is much more
+
+1179
+00:48:58,869 --> 00:49:03,699
+research needed into into how these
+
+1180
+00:49:00,909 --> 00:49:06,969
+three genomes are talking to each other
+
+1181
+00:49:03,699 --> 00:49:09,730
+to produce a phenotype and so at my pag
+
+1182
+00:49:06,969 --> 00:49:13,139
+talk was in translational genomics and
+
+1183
+00:49:09,730 --> 00:49:16,329
+it was I gave some of this information
+
+1184
+00:49:13,139 --> 00:49:19,089
+and I had to figure out how what the
+
+1185
+00:49:16,329 --> 00:49:22,119
+translation was okay so my translation
+
+1186
+00:49:19,090 --> 00:49:23,620
+is uh I will probably plays or not over
+
+1187
+00:49:22,119 --> 00:49:25,869
+the last hundred years we have been
+
+1188
+00:49:23,619 --> 00:49:28,779
+treating owl polyploid props as diploid
+
+1189
+00:49:25,869 --> 00:49:30,940
+because they undergo disomic inheritance
+
+1190
+00:49:28,780 --> 00:49:33,130
+right so you can treat them as diploid
+
+1191
+00:49:30,940 --> 00:49:36,659
+because the chromosomes pair up and
+
+1192
+00:49:33,130 --> 00:49:39,970
+segregate you know in a behaved manner
+
+1193
+00:49:36,659 --> 00:49:42,699
+but we now have the molecular tools to
+
+1194
+00:49:39,969 --> 00:49:45,939
+start to look at these things as the
+
+1195
+00:49:42,699 --> 00:49:50,169
+immortal hybrids that they are and with
+
+1196
+00:49:45,940 --> 00:49:52,450
+that I'd like to acknowledge my
+
+1197
+00:49:50,170 --> 00:49:56,050
+committee members mark Searles
+
+1198
+00:49:52,449 --> 00:50:00,639
+John Luke Yannick here mark couldn't be
+
+1199
+00:49:56,050 --> 00:50:04,210
+here today he is at a he's at CIMMYT and
+
+1200
+00:50:00,639 --> 00:50:06,699
+Jason easy some great folks in the yonex
+
+1201
+00:50:04,210 --> 00:50:09,369
+Rose lab I worked closely with Lisa
+
+1202
+00:50:06,699 --> 00:50:11,649
+kissing Cusack and Lynn bean straw on
+
+1203
+00:50:09,369 --> 00:50:15,900
+some G by E stuff I've also gotten some
+
+1204
+00:50:11,650 --> 00:50:18,000
+really good input from tars you
+
+1205
+00:50:15,900 --> 00:50:20,099
+and you che and Martin and Roberto
+
+1206
+00:50:18,000 --> 00:50:21,989
+Roberto I will point out was the first
+
+1207
+00:50:20,099 --> 00:50:23,940
+person that said hey you know you could
+
+1208
+00:50:21,989 --> 00:50:26,459
+go in and like look at those coding
+
+1209
+00:50:23,940 --> 00:50:29,369
+sequences and then see if she could find
+
+1210
+00:50:26,460 --> 00:50:31,980
+pairs and I was like oh yeah good idea
+
+1211
+00:50:29,369 --> 00:50:34,048
+and then of course without the help of
+
+1212
+00:50:31,980 --> 00:50:36,510
+the folks at the small grains David
+
+1213
+00:50:34,048 --> 00:50:39,599
+venture Amy Fox and Justin Chavez and
+
+1214
+00:50:36,510 --> 00:50:41,099
+James we're all here I couldn't have had
+
+1215
+00:50:39,599 --> 00:50:44,579
+this data to ask these questions with
+
+1216
+00:50:41,099 --> 00:50:48,329
+and so I very much appreciate their work
+
+1217
+00:50:44,579 --> 00:50:51,539
+into this as well as the relationships
+
+1218
+00:50:48,329 --> 00:50:52,230
+we developed over time yeah and thank
+
+1219
+00:50:51,539 --> 00:50:56,278
+you guys very much
+
+1220
+00:50:52,230 --> 00:50:58,380
+one last one I'm writing I'm keeping you
+
+1221
+00:50:56,278 --> 00:51:01,318
+guys late I really like to thank my
+
+1222
+00:50:58,380 --> 00:51:03,088
+family they've given me a lot of support
+
+1223
+00:51:01,318 --> 00:51:05,759
+and I couldn't have finished this
+
+1224
+00:51:03,088 --> 00:51:07,699
+without them and I would like to thank
+
+1225
+00:51:05,760 --> 00:51:11,309
+particularly my father who is here today
+
+1226
+00:51:07,699 --> 00:51:32,009
+and my girlfriend Amy who also joined us
+
+1227
+00:51:11,309 --> 00:51:34,260
+today and thank you all Skyler ization
+
+1228
+00:51:32,010 --> 00:51:36,359
+of the environment
+
+1229
+00:51:34,260 --> 00:51:40,500
+thank you sort of a minus one to plus
+
+1230
+00:51:36,358 --> 00:51:43,588
+two I said presented do you think that
+
+1231
+00:51:40,500 --> 00:51:48,210
+as a as an asymmetry and that measures
+
+1232
+00:51:43,588 --> 00:51:51,269
+that yeah that's a good question
+
+1233
+00:51:48,210 --> 00:51:56,099
+so I centered all of this data so
+
+1234
+00:51:51,269 --> 00:51:57,449
+theoretically so but what I did was I no
+
+1235
+00:51:56,099 --> 00:52:00,450
+no no I can I can explain this
+
+1236
+00:51:57,449 --> 00:52:02,308
+so what I didn't want to do was Center
+
+1237
+00:52:00,449 --> 00:52:03,838
+the data so this is all standardized
+
+1238
+00:52:02,309 --> 00:52:06,269
+data right you subtract mean and divide
+
+1239
+00:52:03,838 --> 00:52:08,239
+by the standard deviation now I could
+
+1240
+00:52:06,269 --> 00:52:10,528
+have centered within each environment
+
+1241
+00:52:08,239 --> 00:52:13,169
+but I didn't want to do that because
+
+1242
+00:52:10,528 --> 00:52:16,079
+then you are assuming that every
+
+1243
+00:52:13,170 --> 00:52:19,079
+environment has the same bearings both
+
+1244
+00:52:16,079 --> 00:52:20,970
+error and genetic variance okay so what
+
+1245
+00:52:19,079 --> 00:52:23,880
+I did instead was I centered on
+
+1246
+00:52:20,969 --> 00:52:26,848
+everything at the same time and so then
+
+1247
+00:52:23,880 --> 00:52:28,920
+if if the environment size is for
+
+1248
+00:52:26,849 --> 00:52:29,410
+example like right there might remember
+
+1249
+00:52:28,920 --> 00:52:30,970
+which three
+
+1250
+00:52:29,409 --> 00:52:32,139
+it was in was there it was a heavier on
+
+1251
+00:52:30,969 --> 00:52:35,230
+the negative side or heavier on the
+
+1252
+00:52:32,139 --> 00:52:37,750
+positive well I thought I'd seen there
+
+1253
+00:52:35,230 --> 00:52:41,079
+was debris on the houses so that could
+
+1254
+00:52:37,750 --> 00:52:43,480
+be from if there were larger trials that
+
+1255
+00:52:41,079 --> 00:52:46,299
+tended to be better trials those ones
+
+1256
+00:52:43,480 --> 00:52:47,889
+would push that whole that whole thing
+
+1257
+00:52:46,300 --> 00:52:50,560
+right because you're taking a meat
+
+1258
+00:52:47,889 --> 00:52:52,269
+so as you summarize that thing you're
+
+1259
+00:52:50,559 --> 00:52:54,610
+you're you're you're taking a single
+
+1260
+00:52:52,269 --> 00:52:55,929
+point for something that had maybe 400
+
+1261
+00:52:54,610 --> 00:52:58,960
+genotypes in it that was a particularly
+
+1262
+00:52:55,929 --> 00:53:00,789
+good environment and then another single
+
+1263
+00:52:58,960 --> 00:53:02,110
+point that maybe only had 200 genotypes
+
+1264
+00:53:00,789 --> 00:53:03,759
+that was particularly bad right so that
+
+1265
+00:53:02,110 --> 00:53:06,760
+that's going to shift that that mean
+
+1266
+00:53:03,760 --> 00:53:08,680
+point of the environmental I mean
+
+1267
+00:53:06,760 --> 00:53:10,990
+roughly they should be close to centered
+
+1268
+00:53:08,679 --> 00:53:13,929
+around zero but they weren't because I
+
+1269
+00:53:10,989 --> 00:53:15,879
+think because I Center the data as in as
+
+1270
+00:53:13,929 --> 00:53:17,169
+a whole as opposed to within environment
+
+1271
+00:53:15,880 --> 00:53:51,190
+how to done it with an environment they
+
+1272
+00:53:17,170 --> 00:53:55,090
+should evolve then smack down a zero the
+
+1273
+00:53:51,190 --> 00:53:58,300
+opportunity cost duplication is a much
+
+1274
+00:53:55,090 --> 00:54:03,450
+more conservative process than full
+
+1275
+00:53:58,300 --> 00:54:07,140
+genome colonization and yeah if the
+
+1276
+00:54:03,449 --> 00:54:09,189
+hypothesis is true which is that every
+
+1277
+00:54:07,139 --> 00:54:11,049
+basically every interest burden is
+
+1278
+00:54:09,190 --> 00:54:19,570
+undergone at least one mile maybe two or
+
+1279
+00:54:11,050 --> 00:54:23,769
+three of whole genome we gain and loss
+
+1280
+00:54:19,570 --> 00:54:29,019
+right my question is do you see the kind
+
+1281
+00:54:23,769 --> 00:54:34,719
+of preferential loss Oh mostly in these
+
+1282
+00:54:29,019 --> 00:54:38,199
+more you know he's replete polyploid
+
+1283
+00:54:34,719 --> 00:54:41,879
+that we see in the long term perspective
+
+1284
+00:54:38,199 --> 00:54:43,088
+on all of our nation that they actually
+
+1285
+00:54:41,880 --> 00:54:45,608
+get
+
+1286
+00:54:43,088 --> 00:54:48,099
+made up more than half the genes but
+
+1287
+00:54:45,608 --> 00:54:50,889
+they don't want to bother to maintain
+
+1288
+00:54:48,099 --> 00:54:55,509
+either because of your Chum
+
+1289
+00:54:50,889 --> 00:54:57,298
+they are fortunately done or maybe
+
+1290
+00:54:55,509 --> 00:55:03,568
+there's a cost to the new
+
+1291
+00:54:57,298 --> 00:55:06,998
+functionalities and you expect to see
+
+1292
+00:55:03,568 --> 00:55:10,748
+complete loss and how much loss you see
+
+1293
+00:55:06,998 --> 00:55:15,459
+even death we G right okay so to repeat
+
+1294
+00:55:10,748 --> 00:55:17,949
+the question essentially the idea is in
+
+1295
+00:55:15,460 --> 00:55:20,858
+diploid species you have genes that get
+
+1296
+00:55:17,949 --> 00:55:22,689
+duplicated and then and then those are
+
+1297
+00:55:20,858 --> 00:55:26,679
+oftentimes subsequently lost because
+
+1298
+00:55:22,690 --> 00:55:27,969
+they're unnecessary right right and so
+
+1299
+00:55:26,679 --> 00:55:30,518
+and during a whole genome duplication
+
+1300
+00:55:27,969 --> 00:55:32,798
+yeah and that happens and then do we see
+
+1301
+00:55:30,518 --> 00:55:35,018
+that same thing happen now the answer is
+
+1302
+00:55:32,798 --> 00:55:37,329
+yes in fact it happens really
+
+1303
+00:55:35,018 --> 00:55:40,149
+drastically especially very shortly
+
+1304
+00:55:37,329 --> 00:55:41,950
+after the hybridization event they
+
+1305
+00:55:40,150 --> 00:55:43,960
+usually go through this this weird G I
+
+1306
+00:55:41,949 --> 00:55:45,699
+mean this genome shock moment where
+
+1307
+00:55:43,960 --> 00:55:47,409
+they're like oh my god well how am I
+
+1308
+00:55:45,699 --> 00:55:49,598
+gonna deal with all of this right and so
+
+1309
+00:55:47,409 --> 00:55:50,920
+oftentimes big big chunks break cuz
+
+1310
+00:55:49,599 --> 00:55:52,930
+you're gonna have a lot of negative
+
+1311
+00:55:50,920 --> 00:55:55,450
+epistasis too so there's this other
+
+1312
+00:55:52,929 --> 00:55:58,778
+thing that happens where you can think
+
+1313
+00:55:55,449 --> 00:55:59,889
+of a gene from this species and a gene
+
+1314
+00:55:58,778 --> 00:56:02,858
+from that species while they work
+
+1315
+00:55:59,889 --> 00:56:04,239
+completely fine within their own species
+
+1316
+00:56:02,858 --> 00:56:05,619
+you bring them together and all of a
+
+1317
+00:56:04,239 --> 00:56:06,728
+sudden like think of like a homeo dimer
+
+1318
+00:56:05,619 --> 00:56:10,358
+for example i think this is a good
+
+1319
+00:56:06,728 --> 00:56:11,889
+example the homeo dimer is formed from
+
+1320
+00:56:10,358 --> 00:56:14,498
+the product of protein products within
+
+1321
+00:56:11,889 --> 00:56:15,940
+the two species are functional but you
+
+1322
+00:56:14,498 --> 00:56:17,759
+might have a thing where they can still
+
+1323
+00:56:15,940 --> 00:56:20,229
+bind together and form a heterodimer
+
+1324
+00:56:17,759 --> 00:56:22,719
+across these two really closely related
+
+1325
+00:56:20,228 --> 00:56:24,218
+genes that may disrupt their function so
+
+1326
+00:56:22,719 --> 00:56:26,889
+I think that when that kind of thing
+
+1327
+00:56:24,219 --> 00:56:28,659
+happens there is a there is a push to
+
+1328
+00:56:26,889 --> 00:56:31,469
+get you know to Wow
+
+1329
+00:56:28,659 --> 00:56:34,088
+I don't know about a push but there is a
+
+1330
+00:56:31,469 --> 00:56:35,920
+selective advantage to drop a lot of
+
+1331
+00:56:34,088 --> 00:56:39,328
+these really important and we do see
+
+1332
+00:56:35,920 --> 00:56:42,460
+that in fact so of the you know a
+
+1333
+00:56:39,329 --> 00:56:44,259
+hundred and ten thousand or so genes in
+
+1334
+00:56:42,460 --> 00:56:46,590
+the genome I was only able to get
+
+1335
+00:56:44,259 --> 00:56:48,449
+triplicates for like
+
+1336
+00:56:46,590 --> 00:56:51,329
+so 110,000 genome you divide that by
+
+1337
+00:56:48,449 --> 00:56:54,629
+three of roughly looking at a haploid
+
+1338
+00:56:51,329 --> 00:56:58,469
+number of 33,000 genes okay I was only
+
+1339
+00:56:54,630 --> 00:57:01,140
+able to get 18 of them that had at least
+
+1340
+00:56:58,469 --> 00:57:04,559
+three copies or no was it at least two
+
+1341
+00:57:01,139 --> 00:57:06,509
+copies yeah at least two cop no I have
+
+1342
+00:57:04,559 --> 00:57:09,239
+to go look at it okay yeah so there's
+
+1343
+00:57:06,510 --> 00:57:10,470
+you know a third of the genome has been
+
+1344
+00:57:09,239 --> 00:57:12,269
+lost and there was a bunch of
+
+1345
+00:57:10,469 --> 00:57:14,549
+Singleton's the other thing that happens
+
+1346
+00:57:12,269 --> 00:57:17,759
+is you get a lot of tandem duplications
+
+1347
+00:57:14,550 --> 00:57:19,920
+and that's 210 duplications are super
+
+1348
+00:57:17,760 --> 00:57:23,100
+interesting because they have a tendency
+
+1349
+00:57:19,920 --> 00:57:26,059
+to be Co inherited whereas duplications
+
+1350
+00:57:23,099 --> 00:57:33,269
+across chromosomes there's no there's no
+
+1351
+00:57:26,059 --> 00:58:00,269
+linkage that holds them together yeah I
+
+1352
+00:57:33,269 --> 00:58:01,889
+think most diverse team writes more so
+
+1353
+00:58:00,269 --> 00:58:03,719
+so there's a spot that essentially on
+
+1354
+00:58:01,889 --> 00:58:06,269
+the old functionalisation goes through a
+
+1355
+00:58:03,719 --> 00:58:07,709
+process of sub functionalisation where
+
+1356
+00:58:06,269 --> 00:58:08,670
+at first they start off the exact same
+
+1357
+00:58:07,710 --> 00:58:10,409
+function and then you have small
+
+1358
+00:58:08,670 --> 00:58:11,909
+mutations that change them a little bit
+
+1359
+00:58:10,409 --> 00:58:13,379
+and then eventually they develop such
+
+1360
+00:58:11,909 --> 00:58:15,359
+different pieces and I think that this
+
+1361
+00:58:13,380 --> 00:58:17,970
+is really evident when you look at genes
+
+1362
+00:58:15,360 --> 00:58:19,530
+genes have these domains right and it's
+
+1363
+00:58:17,969 --> 00:58:22,079
+interesting that you can stick these
+
+1364
+00:58:19,530 --> 00:58:24,120
+domains together and have this thing
+
+1365
+00:58:22,079 --> 00:58:26,309
+that you know so you can like it's
+
+1366
+00:58:24,119 --> 00:58:28,559
+almost like mix and match you know what
+
+1367
+00:58:26,309 --> 00:58:32,009
+do they put this poison yeah they're
+
+1368
+00:58:28,559 --> 00:58:35,190
+like Legos yeah yeah and so yeah I think
+
+1369
+00:58:32,010 --> 00:58:37,260
+it's really important and that I I would
+
+1370
+00:58:35,190 --> 00:58:42,440
+be I would be super curious to try this
+
+1371
+00:58:37,260 --> 00:58:45,750
+in a species that is kind of in-between
+
+1372
+00:58:42,440 --> 00:58:48,059
+that whole genome duplication event and
+
+1373
+00:58:45,750 --> 00:58:49,829
+being an already becoming a diploid and
+
+1374
+00:58:48,059 --> 00:58:52,969
+seeing if we could find evidence of this
+
+1375
+00:58:49,829 --> 00:58:56,069
+happening in you know across
+
+1376
+00:58:52,969 --> 00:59:00,480
+non-homologous site that really
+
+1377
+00:58:56,070 --> 00:59:13,110
+yeah they lost more let's say do you see
+
+1378
+00:59:00,480 --> 00:59:14,940
+more losses right when you bring I think
+
+1379
+00:59:13,110 --> 00:59:16,800
+you also bring a thing in there's
+
+1380
+00:59:14,940 --> 00:59:21,480
+probably a lot of stuff that's good but
+
+1381
+00:59:16,800 --> 00:59:24,900
+most of it actually so there is I would
+
+1382
+00:59:21,480 --> 00:59:28,019
+assume that much I should tabulate that
+
+1383
+00:59:24,900 --> 00:59:29,670
+I should see how many the ones I saw you
+
+1384
+00:59:28,019 --> 00:59:31,590
+know where the third copy that I didn't
+
+1385
+00:59:29,670 --> 00:59:44,880
+have was from the DG I wouldn't be
+
+1386
+00:59:31,590 --> 00:59:48,630
+surprised this has been a production of
+
+1387
+00:59:44,880 --> 00:59:51,320
+Cornell University on the web at Cornell
+
+1388
+00:59:48,630 --> 00:59:51,320
+edu
+

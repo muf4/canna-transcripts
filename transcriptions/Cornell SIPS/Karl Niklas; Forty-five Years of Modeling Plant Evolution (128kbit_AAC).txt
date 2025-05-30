@@ -1,0 +1,1510 @@
+[SPEAKER_02]: This is a production of Cornell
+University.
+[SPEAKER_00]: Well, I want to thank Adrian for a very
+generous introduction, probably
+[SPEAKER_00]: over-generous, and I want to thank you for
+coming to hear this talk, which may never
+[SPEAKER_00]: be given.
+[SPEAKER_00]: Okay, so I chose modeling as a topic for
+my presentation because it appears to be
+[SPEAKER_00]: particularly relevant and very timeless.
+[SPEAKER_00]: Well, I can share a little bit of personal
+history.
+[SPEAKER_00]: I was looking up in my diary, actually in
+my journal, and I found out that within
+[SPEAKER_00]: two days in 1978, I actually gave my
+entrance seminar to the department in this
+[SPEAKER_00]: room.
+[SPEAKER_00]: So the choice of date seems particularly
+apropos.
+[SPEAKER_00]: The difference, of course, was that the
+seating arrangement was completely
+[SPEAKER_00]: reversed.
+[SPEAKER_00]: The screen was in the back.
+[SPEAKER_00]: All the chairs face that way.
+[SPEAKER_00]: And instead of having a computer with
+PowerPoints that don't work, there was a
+[SPEAKER_00]: two-by-two slide projector.
+[SPEAKER_01]: Which did work.
+[SPEAKER_00]: Which did work, yes.
+[SPEAKER_00]: So a botanist, a zoologist, and a
+mycologist walk into a bar.
+[SPEAKER_00]: Okay, I'm not going to touch anything.
+[SPEAKER_00]: I'm just going to touch the clicker,
+okay?
+[SPEAKER_00]: Okay.
+[SPEAKER_00]: Now, I'm actually going to turn off the
+lights because I'm a morphologist and I'm
+[SPEAKER_00]: used to working in the dark.
+[SPEAKER_00]: Okay, so the reason I picked the topic is
+because it appears that modeling has taken
+[SPEAKER_00]: a new high road recently.
+[SPEAKER_00]: This is actually a quote from a 2016 NSF
+report talking about the importance of
+[SPEAKER_00]: biological modeling and the fear that it
+might actually fall between the cracks of
+[SPEAKER_00]: funding agencies.
+[SPEAKER_00]: So certainly NSF and a number of other
+funding agencies have taken note that
+[SPEAKER_00]: biological modeling is important.
+[SPEAKER_00]: And no higher authority than Wikipedia
+actually has an entrance talking about
+[SPEAKER_00]: biological modeling and the systems to a
+variety of biological disciplines.
+[SPEAKER_00]: So I think talking about modeling in
+general is particularly interesting and
+[SPEAKER_00]: relevant.
+[SPEAKER_00]: But I will tell you, when I was a graduate
+student and I started doing my first
+[SPEAKER_00]: modeling, it was actually frowned upon.
+[SPEAKER_00]: It was thought to be mostly, you know,
+smoke and mirrors.
+[SPEAKER_00]: Most people really didn't trust
+mathematics or at least not mathematics
+[SPEAKER_00]: applied to biological systems.
+[SPEAKER_00]: The only point of entry in the old days
+was really in ecology where a lot of
+[SPEAKER_00]: ecological modeling had become
+fashionable.
+[SPEAKER_00]: So what am I talking about when I actually
+am using the word modeling?
+[SPEAKER_00]: So I went to Webster's Dictionary and of
+course looked up the various definitions
+[SPEAKER_00]: for model.
+[SPEAKER_00]: You know, representation of a person,
+a thing, or a phenomenon, or a system that
+[SPEAKER_00]: can be used as an example.
+[SPEAKER_00]: So a model person, a model system.
+[SPEAKER_00]: Me, maybe.
+[SPEAKER_00]: Arabidopsis most certainly.
+[SPEAKER_00]: But the kind of definition that I want to
+use is a material visual mathematical or
+[SPEAKER_00]: computational analog used to construct a
+theory.
+[SPEAKER_00]: Now notice to construct a theory.
+[SPEAKER_00]: And notice the entrance says see also
+hypothesis or theory.
+[SPEAKER_00]: And that's what I mean by modeling,
+at least in the context of my talk.
+[SPEAKER_00]: Now what drew me to look into modeling is
+that ever since I started studying
+[SPEAKER_00]: biological systems, I've always really
+been fascinated by the relationship
+[SPEAKER_00]: between organic structure and function.
+[SPEAKER_00]: And I've been interested in that for a
+very long time, even actually as an
+[SPEAKER_00]: undergraduate major in mathematics.
+[SPEAKER_00]: Because you can't help but look at a plant
+or an animal and think about its structure
+[SPEAKER_00]: and its function that could be quantified
+using the tools of math and physics.
+[SPEAKER_00]: There's another dimension, however,
+and that is my background in PhD thesis
+[SPEAKER_00]: had to do with evolution.
+[SPEAKER_00]: And so the other axis in this interest is
+how the environment influences the
+[SPEAKER_00]: interplay between organic structure and
+function.
+[SPEAKER_00]: And the historical aspects that have led
+up to the structure function relationship.
+[SPEAKER_00]: So this actually is an interplay of at
+least four very important components that
+[SPEAKER_00]: converge on our understanding of what a
+plant, a fungus, or even a bacterium is.
+[SPEAKER_00]: So when you start looking at the
+application of the physical sciences
+[SPEAKER_00]: towards biology, being a physical
+scientist, it's actually comparatively
+[SPEAKER_00]: easy.
+[SPEAKER_00]: I made a little list here if you're an
+engineer or a physicist of what you have
+[SPEAKER_00]: to look forward to.
+[SPEAKER_00]: If you're designing a structure,
+a mechanism of some sort, you know where
+[SPEAKER_00]: that mechanism is going to function.
+[SPEAKER_00]: The workplace is already specified for
+you.
+[SPEAKER_00]: And the design specifications are
+specified for you.
+[SPEAKER_00]: How big is the machine?
+[SPEAKER_00]: How big is the structure that you're
+doing?
+[SPEAKER_00]: And the function of that structure is
+already specified a priori.
+[SPEAKER_00]: So an engineer is given a task.
+[SPEAKER_00]: Here is where you're going to build
+something.
+[SPEAKER_00]: This is what it has to do.
+[SPEAKER_00]: And you have the materials and the
+materials that are going to be used to
+[SPEAKER_00]: fabricate it.
+[SPEAKER_00]: And if they don't work, you can choose a
+different material, aluminum instead of
+[SPEAKER_00]: iron, et cetera, et cetera.
+[SPEAKER_00]: And finally, with very few exceptions,
+engineered artifacts have a single
+[SPEAKER_00]: function.
+[SPEAKER_00]: And that means that you can design a
+structure to actually maximize the
+[SPEAKER_00]: performance of that function.
+[SPEAKER_00]: Also, in physics, not in engineering,
+but certainly in engineering, one accurate
+[SPEAKER_00]: and precise measurement can actually
+suffice.
+[SPEAKER_00]: Now, biomechanics and biophysics.
+[SPEAKER_00]: Well, here is where we get into a little
+bit of trouble.
+[SPEAKER_00]: The environment is variable.
+[SPEAKER_00]: The organism has to be examined,
+and its functions have to be inferred.
+[SPEAKER_00]: We have to guess what something is doing.
+[SPEAKER_00]: Yes, a wing, a fin.
+[SPEAKER_00]: We can pretty much be sure that our guess
+is correct.
+[SPEAKER_00]: But there are many things, like,
+for example, the prickles on a rose,
+[SPEAKER_00]: these downward nasty looking things.
+[SPEAKER_00]: What are they really doing?
+[SPEAKER_00]: Are they grappling hooks?
+[SPEAKER_00]: Are they deterrent suburbivores?
+[SPEAKER_00]: Are they doing both?
+[SPEAKER_00]: The other thing is that an organism's
+materials and structure are the result of
+[SPEAKER_00]: its evolution.
+[SPEAKER_00]: It's the evolutionary legacy.
+[SPEAKER_00]: It didn't get there de novo.
+[SPEAKER_00]: It went through a whole sequence of
+events.
+[SPEAKER_00]: And finally, at least in terms of
+biomechanics, most organic structures have
+[SPEAKER_00]: multiple functions, not just single ones.
+[SPEAKER_00]: So you can't maximize the performance of
+the function.
+[SPEAKER_00]: You actually have to compromise and
+optimize.
+[SPEAKER_00]: And finally, in biophysics, multiple
+measurements are required, unlike physics.
+[SPEAKER_00]: I often tell my students, some of whom are
+here, and I'm not sure I've told them
+[SPEAKER_00]: this.
+[SPEAKER_00]: If you measure an electron accurately,
+you know the mass of an electron
+[SPEAKER_00]: throughout the universe.
+[SPEAKER_00]: If you measure a gerbil, you happen to
+know the weight of that gerbil on that day
+[SPEAKER_00]: at that time.
+[SPEAKER_00]: So we have many challenges, not the least
+of which is that many biological models
+[SPEAKER_00]: appear overly simplistic because of the
+multitude of functions that organisms,
+[SPEAKER_00]: even a single cell, has to perform.
+[SPEAKER_00]: I mean, the classic example there is a
+sumaspherical cow existing in a vacuum.
+[SPEAKER_00]: This is what a lot of us sometimes do.
+[SPEAKER_00]: Imagine a spherical plant existing in a
+vacuum.
+[SPEAKER_00]: Well, I can imagine it, but I'm never
+going to find one, I suppose.
+[SPEAKER_00]: The thing is that things have certainly
+been improved, not improved, improved.
+[SPEAKER_00]: And that is our modeling techniques are a
+lot more sophisticated with the rise of
+[SPEAKER_00]: computational sophistication, computer
+engineers now can handle data sets that,
+[SPEAKER_00]: in my day, nobody would ever accumulate
+because they knew they couldn't do a
+[SPEAKER_00]: single linear regression on it,
+because in my day, you had to do it by
+[SPEAKER_00]: hand.
+[SPEAKER_00]: The other problem that we face is that
+models can give the correct answers for
+[SPEAKER_00]: the wrong reason.
+[SPEAKER_00]: I'm giving you an example here of
+Ptolemy's astrolab, this little device
+[SPEAKER_00]: shown over here.
+[SPEAKER_00]: Completely accurate.
+[SPEAKER_00]: It could predict the motion of the
+planets, the known planets in those days.
+[SPEAKER_00]: It could predict solar and lunar eclipses
+with perfect fidelity to reality.
+[SPEAKER_00]: There's only one little problem.
+[SPEAKER_00]: It was a geocentric device.
+[SPEAKER_00]: It assumes that the Earth was in the
+center of the solar system.
+[SPEAKER_00]: So he gave you the right answers,
+but from a mechanistic understanding of
+[SPEAKER_00]: the solar system, it was totally wrong.
+[SPEAKER_00]: OK, so with all of these caveats in mind,
+I'd like to give you a few examples of the
+[SPEAKER_00]: kind of modeling that I did starting way
+back when most of you, at least the
+[SPEAKER_00]: younger ones, weren't even born.
+[SPEAKER_00]: I feel totally antiquated.
+[SPEAKER_00]: The first one I want to talk about is
+tissues and deformation.
+[SPEAKER_00]: And Adrienne mentioned that my PhD
+involved looking, at least in part,
+[SPEAKER_00]: at this strange little organism called
+protocellviniate.
+[SPEAKER_00]: And these are some SEMs.
+[SPEAKER_00]: And yes, SEMs were new when I was a
+graduate student.
+[SPEAKER_00]: We were all very excited about them.
+[SPEAKER_00]: And these are SEM micrographs of this
+fragment of this organism called
+[SPEAKER_00]: protocellviniate.
+[SPEAKER_00]: It's an upper Devonian thing.
+[SPEAKER_00]: Nobody really knows whether it's an alga,
+a liverwort, or what.
+[SPEAKER_00]: But one of the things that I was
+fascinated with was that if you look here,
+[SPEAKER_00]: you can make out cellular texture.
+[SPEAKER_00]: You can actually see how those cells seem
+to have been aligned with each other.
+[SPEAKER_00]: And I've blown it up here.
+[SPEAKER_00]: And those are little black pencil marks.
+[SPEAKER_00]: Looking at the arcs of these different
+cells.
+[SPEAKER_00]: And I said to myself, self, what can we do
+with these data?
+[SPEAKER_00]: And the new technique that I became aware
+of was called finite element analysis.
+[SPEAKER_00]: And finite element analysis is where you
+make up essentially grids with properties
+[SPEAKER_00]: within each of these areas that,
+in my particular case, were the dimensions
+[SPEAKER_00]: of these cells.
+[SPEAKER_00]: You spend many nights with a micrograph.
+[SPEAKER_00]: A microscope measuring the size and the
+shape of these cells.
+[SPEAKER_00]: And then you mesh things up.
+[SPEAKER_00]: And you create, based on the information
+that you have, a hypothetical apical
+[SPEAKER_00]: meristem.
+[SPEAKER_00]: This, by the way, is a finite element
+simulation of what I thought the meristem
+[SPEAKER_00]: looked like.
+[SPEAKER_00]: And the beauty with finite elements is
+then you can say, grow.
+[SPEAKER_00]: Make this thing bigger.
+[SPEAKER_00]: Construct what the organism might have
+looked like.
+[SPEAKER_00]: And I just want to go back one or a few
+slides and point out that you'll notice
+[SPEAKER_00]: there are things here that are very
+different in shape.
+[SPEAKER_00]: They're bilobed things and squashed
+things.
+[SPEAKER_00]: Things that look like Mickey Mouse's ears.
+[SPEAKER_00]: Until I came along, those were all
+described as separate species.
+[SPEAKER_00]: Protosalvinia ravina.
+[SPEAKER_00]: Protosalvinia arnaldii.
+[SPEAKER_00]: Protosalvinia furcata.
+[SPEAKER_00]: And I said, well, maybe my little computer
+simulation will generate one of these
+[SPEAKER_00]: things.
+[SPEAKER_00]: And I'll be vindicated to get at least
+part of a mini PhD.
+[SPEAKER_00]: Well, it turned out that the computer
+simulations told me this.
+[SPEAKER_00]: All of those fragments belong to the same
+organism.
+[SPEAKER_00]: All of them could be generated by
+manipulating the cell divisions in the
+[SPEAKER_00]: apical meristem.
+[SPEAKER_00]: And the computer simulations actually gave
+me an ontogeny for this fossil organism.
+[SPEAKER_00]: So how do you validate this?
+[SPEAKER_00]: It's just pie in the sky.
+[SPEAKER_00]: You actually go and look for the
+intermediate stages that were never given
+[SPEAKER_00]: a name, a species name.
+[SPEAKER_00]: And I got my PhD because after macerating
+tons of material, I did manage to find
+[SPEAKER_00]: intermediates.
+[SPEAKER_00]: And so my PhD committee sort of said,
+well, this is a computer simulation.
+[SPEAKER_00]: It's not really paleobotany.
+[SPEAKER_00]: But OK, leave us.
+[SPEAKER_00]: As Adrian also mentioned, I was doing some
+organic geochemistry then.
+[SPEAKER_00]: I was a dilettante.
+[SPEAKER_00]: I was just trying to learn stuff.
+[SPEAKER_00]: And we had at the University of Illinois a
+beautiful mass spec.
+[SPEAKER_00]: And so we prepared specimens, vaporized
+them, did all sorts of stuff.
+[SPEAKER_00]: And I managed to isolate a number of
+compounds that are thus far only known for
+[SPEAKER_00]: land plants.
+[SPEAKER_00]: And so it's likely, even though this has
+nothing to do with modeling, it's likely
+[SPEAKER_00]: that protosalvinia lived on land.
+[SPEAKER_00]: Does that make it not an alga?
+[SPEAKER_00]: No, because it's not mutually exclusive.
+[SPEAKER_00]: There's nothing in the definition of an
+alga that says you can't live on land.
+[SPEAKER_00]: It's just prejudice.
+[SPEAKER_00]: So I got interested then in, oh,
+no.
+[SPEAKER_00]: I see what the problem is.
+[SPEAKER_00]: The problem is we have a loose connection.
+[SPEAKER_00]: And I'm it.
+[SPEAKER_00]: I will not touch this computer again
+except to start the show.
+[SPEAKER_00]: So I was interested in, yes.
+[SPEAKER_00]: Shaking hands, because you might not know
+it, but I'm terribly nervous giving this
+[SPEAKER_00]: talk.
+[SPEAKER_00]: You're a very impressive group of people.
+[SPEAKER_00]: So I started looking at tissues later on,
+after I actually came to Cornell,
+[SPEAKER_00]: thinking about finite element analyses and
+how I could apply it to living plants.
+[SPEAKER_00]: And I was fascinated by hollow things,
+including my cranium.
+[SPEAKER_00]: But if you look at a variety of plants,
+including equizetum, you will see that
+[SPEAKER_00]: hollow stems are actually very common.
+[SPEAKER_00]: Turns out, from an engineering point of
+view, they're perfect.
+[SPEAKER_00]: Because if you bend or twist something
+like a hollow stem, if you look at the
+[SPEAKER_00]: distribution of lenses, the maximum lenses
+are always towards the outside and towards
+[SPEAKER_00]: the inside.
+[SPEAKER_00]: They're zero.
+[SPEAKER_00]: So there's no reason to have stuff on the
+inside, since it's not providing any
+[SPEAKER_00]: mechanical support of any kind.
+[SPEAKER_00]: And if you eliminate that biomass,
+you actually make the material lighter and
+[SPEAKER_00]: stronger.
+[SPEAKER_00]: And this is why a lot of things like
+bicycles and frames of airplanes are made
+[SPEAKER_00]: up of hollow tubes.
+[SPEAKER_00]: Well, anyway, what can we do with hollow
+tubes?
+[SPEAKER_00]: Well, you can bend and twist them.
+[SPEAKER_00]: And so I meshed up again.
+[SPEAKER_00]: I love finite element analysis.
+[SPEAKER_00]: And said to myself, what are the effects
+of these nodal septa?
+[SPEAKER_00]: Periodically, the internodes are separated
+by a nodal septa, a little diaphragm of
+[SPEAKER_00]: cells.
+[SPEAKER_00]: And also on many grasses, the base of the
+internodes is classed by the base of the
+[SPEAKER_00]: leaf, the leaf sheath.
+[SPEAKER_00]: And I wanted to know, well, what are the
+contributions of these things?
+[SPEAKER_00]: And so we twisted, and we bent,
+and we looked at finite element
+[SPEAKER_00]: simulations.
+[SPEAKER_00]: And it turns out that the nodal septa
+provide almost 25% of the mechanical
+[SPEAKER_00]: support of these structures.
+[SPEAKER_00]: They act as struts that actually absorb
+bending and twisting energy.
+[SPEAKER_00]: They absorb the strain energy.
+[SPEAKER_00]: And when the applied force is removed,
+they act like a spring.
+[SPEAKER_00]: They pop back into place.
+[SPEAKER_00]: And we could actually show this using real
+plants and measuring with strain gauges
+[SPEAKER_00]: the importance of those diaphragms.
+[SPEAKER_00]: One of the secretaries here many years
+ago, Joan Miller, she liked to knit.
+[SPEAKER_00]: And so I would get one of her long
+knitting needles.
+[SPEAKER_00]: I'd get one of these stems.
+[SPEAKER_00]: And I'd punch through all of the nodal
+diaphragms.
+[SPEAKER_00]: We'd measure the bending strength and the
+twisting strength.
+[SPEAKER_00]: And we'd compare that to a non-surgically
+manipulated grass or equizetum stem.
+[SPEAKER_00]: And we confirmed that 22.5% of the
+strength of those structures were the
+[SPEAKER_00]: result of the nodal diaphragm.
+[SPEAKER_00]: Another 17% is actually provided by the
+sheath that surrounds the base of the
+[SPEAKER_00]: internodes.
+[SPEAKER_00]: It acts like a girdle.
+[SPEAKER_00]: And it is, therefore, in the proper place
+to absorb most of the strain energy along
+[SPEAKER_00]: the internode.
+[SPEAKER_00]: We also then went into a whole field of
+engineering called cellular solids.
+[SPEAKER_00]: As botanists, you're all used to cellular
+solids.
+[SPEAKER_00]: If you think about parenchyma,
+it's a cellular solid.
+[SPEAKER_00]: You have a liquid phase.
+[SPEAKER_00]: That's the cytoplasm.
+[SPEAKER_00]: And you have a solid phase.
+[SPEAKER_00]: Those are the cell walls.
+[SPEAKER_00]: And it turns out that cellular solids have
+a number of properties, biomechanical
+[SPEAKER_00]: properties, that are influenced by the
+pressure of the fluid inside of the
+[SPEAKER_00]: cellular components.
+[SPEAKER_00]: Now, in engineering, styrofoams are an
+example of a cellular solid in which the
+[SPEAKER_00]: fluid phase is a gas.
+[SPEAKER_00]: In botany, the fluid phase is a liquid,
+cytoplasm.
+[SPEAKER_00]: So we did some simulations.
+[SPEAKER_00]: And we predicted the effect of the
+thickness and the radius of the cell walls
+[SPEAKER_00]: in these cellular solids.
+[SPEAKER_00]: And we submitted these to tests.
+[SPEAKER_00]: And lo and behold, a computer model could
+be validated within a 5% error.
+[SPEAKER_00]: So we're getting pretty happy with this
+kind of work, which is still being pursued
+[SPEAKER_00]: in my lab, by the way.
+[SPEAKER_00]: These are ongoing biomechanical questions.
+[SPEAKER_00]: Aerodynamics of pollination.
+[SPEAKER_00]: So now I'm switching topics.
+[SPEAKER_00]: It's another example.
+[SPEAKER_00]: Going back to my graduate days,
+I was taught these things.
+[SPEAKER_00]: These are some of the oldest known seed
+plants.
+[SPEAKER_00]: Well, these are my watercolors.
+[SPEAKER_00]: These are reconstructions of what the
+ovules looked like.
+[SPEAKER_00]: They're upper Devonian, lower
+Mississippian.
+[SPEAKER_00]: And they go by horrendous names that I had
+to memorize, like Salpingostoma
+[SPEAKER_00]: hetsonensis.
+[SPEAKER_00]: You not only had to memorize it,
+you had to be able to spell it.
+[SPEAKER_00]: Not anymore, because nobody really cares.
+[SPEAKER_00]: Well, I was taught, when I was a graduate
+student, here you see an ovule that looks
+[SPEAKER_00]: pretty much like a modern day one.
+[SPEAKER_00]: There's the micropyle.
+[SPEAKER_00]: There's the integument.
+[SPEAKER_00]: But if you look at some of these other
+little critters, this is really a
+[SPEAKER_00]: megasporangium surrounded by what looks
+like a dead squid.
+[SPEAKER_00]: And we were told as graduate students that
+this evolved from an ancestor that looked
+[SPEAKER_00]: like that, and that the coalescence of
+these squid-like tentacles and their
+[SPEAKER_00]: fusion towards the tip was a consequence
+of natural selection operating on
+[SPEAKER_00]: protection from herbivores, from little
+mandibulated terrestrial arthropods,
+[SPEAKER_00]: that would go in there and eat the little
+eggs and the little magnetic mutified.
+[SPEAKER_00]: And I thought that was a very cute story.
+[SPEAKER_00]: Except I also knew that these things were
+wind-pollinated.
+[SPEAKER_00]: Or at least I was told that they weren't
+pollinated.
+[SPEAKER_00]: It wasn't around in the Devonian,
+upper Mississippian, but not the Devonian.
+[SPEAKER_00]: So I said, self?
+[SPEAKER_00]: Yeah, this might be protection.
+[SPEAKER_00]: But what about the influence on pollen and
+so I built myself a wind tunnel.
+[SPEAKER_00]: So there's the contraction cone of the
+wind tunnel.
+[SPEAKER_00]: The fan and the regulator are all here.
+[SPEAKER_00]: And you might wonder what that tube is.
+[SPEAKER_00]: This is the big gadget that was really
+important.
+[SPEAKER_00]: This was a bubble generator.
+[SPEAKER_00]: Now what do I mean by a bubble generator?
+[SPEAKER_00]: It used a surfactant to create bubbles,
+individual bubbles, that were filled with
+[SPEAKER_00]: helium.
+[SPEAKER_00]: And you had a centrifugal device over here
+that you could actually select the size of
+[SPEAKER_00]: the bubbles that you wanted.
+[SPEAKER_00]: And the size of the bubbles that I wanted
+were bubbles that were neutrally buoyant.
+[SPEAKER_00]: In other words, the weight of the little
+soap downward was counteracted by the
+[SPEAKER_00]: lifting force of the helium.
+[SPEAKER_00]: So you could actually see a bubble hover
+in motionless air and not move.
+[SPEAKER_00]: So then you shine a big bright light on
+them.
+[SPEAKER_00]: And what you're seeing now are these
+little bubbles moving around a cylinder.
+[SPEAKER_00]: You're looking down on the cylinder.
+[SPEAKER_00]: You see the leeward side.
+[SPEAKER_00]: And you see the turbulence that's
+generated on the downwind side.
+[SPEAKER_00]: So now we had a way of visualizing airflow
+patterns.
+[SPEAKER_00]: And we needed to photograph them.
+[SPEAKER_00]: And we needed to know what they were doing
+from the top and the bottom to get a
+[SPEAKER_00]: construct for three-dimensional airflow
+patterns around these structures.
+[SPEAKER_00]: And here are some of the pictures.
+[SPEAKER_00]: I built little scale models using clay.
+[SPEAKER_00]: And there you see, in each case,
+the airflow is coming from the left to the
+[SPEAKER_00]: right.
+[SPEAKER_00]: And you see an impaction zone.
+[SPEAKER_00]: And these particles were just hitting the
+surface.
+[SPEAKER_00]: But notice there was a stagnant area where
+turbulence was being generated.
+[SPEAKER_00]: So we got a little bit excited about this.
+[SPEAKER_00]: And we did a long, many series of
+simulations.
+[SPEAKER_00]: And we looked at the airflow patterns,
+the statistical Lee most dominant airflow
+[SPEAKER_00]: patterns, especially around the receptive
+parts of these structures to see whether
+[SPEAKER_00]: or not there was a bias that might carry
+pollen towards the micropile or the
+[SPEAKER_00]: micropile-like structures.
+[SPEAKER_00]: Then we got really fancy.
+[SPEAKER_00]: And we made what we called pseudo pollen.
+[SPEAKER_00]: We could construct little things that were
+like pollen, only they were bigger so we
+[SPEAKER_00]: could see them.
+[SPEAKER_00]: And we coated the surface with sticky
+stuff.
+[SPEAKER_00]: And then we put them in a wind tunnel.
+[SPEAKER_00]: And we would see happily, would they come
+near the micropile?
+[SPEAKER_00]: Well, this was interesting.
+[SPEAKER_00]: But it was not all that exciting because
+it was not conclusive.
+[SPEAKER_00]: So then I built small little models and
+used like podium spores to see what would
+[SPEAKER_00]: happen.
+[SPEAKER_00]: And what we found was that the structure
+that looks most like modern day ovules
+[SPEAKER_00]: actually was the most efficient at
+capturing pollen around the micropolar
+[SPEAKER_00]: lip.
+[SPEAKER_00]: And this was just a statistical study in
+which we looked at the maximum pollen that
+[SPEAKER_00]: were actually towards the micropile,
+critical wind speeds.
+[SPEAKER_00]: And we found that the structures that look
+like modern day ovules were the most
+[SPEAKER_00]: efficient at the lowest wind speeds.
+[SPEAKER_00]: So this was kind of nice.
+[SPEAKER_00]: And at least it suggested that maybe the
+evolution of the integument might have
+[SPEAKER_00]: been under two pressures from natural
+selection.
+[SPEAKER_00]: One is protection and one is for capturing
+wind pollen.
+[SPEAKER_00]: Well, I got excited about this.
+[SPEAKER_00]: And I thought, well, why do I have to work
+with dead things?
+[SPEAKER_00]: I can work with living things.
+[SPEAKER_00]: There are a lot of wind pollinated things
+like pine and grasses.
+[SPEAKER_00]: Not all grasses are wind pollinated.
+[SPEAKER_00]: I think there's one that grows in the
+tropics described by Bauer that's actually
+[SPEAKER_00]: insect pollen.
+[SPEAKER_00]: I can't remember the name.
+[SPEAKER_00]: But I see Jerry Davis going like this
+rather than this.
+[SPEAKER_00]: So apparently, I'm OK.
+[SPEAKER_00]: So we started working with pine cones.
+[SPEAKER_00]: And we got a little photography,
+got a little bit better that we could
+[SPEAKER_00]: actually look at very small scale
+turbulence patterns.
+[SPEAKER_00]: And what we found here was that there were
+three things that an ovulate pine cone
+[SPEAKER_00]: does.
+[SPEAKER_00]: One is it produces cyclonic vortices that
+wrap around the orthostiches and
+[SPEAKER_00]: perostiches of the scale ovuliferous brach
+complexes.
+[SPEAKER_00]: There were also little doldrums between
+the axis of the cone and each of these
+[SPEAKER_00]: reproductive entities.
+[SPEAKER_00]: And then there was backslip kind of
+turbulence and flow.
+[SPEAKER_00]: So we got excited about this.
+[SPEAKER_00]: And we pursued it.
+[SPEAKER_00]: And the next big invention was a
+stroboscope, stroboscopic lighting.
+[SPEAKER_00]: So now we broke those streamlines into
+fragments.
+[SPEAKER_00]: And you see the successive images of my
+bubbles.
+[SPEAKER_00]: What's nice about this is since I know the
+rate at which the light is flashing,
+[SPEAKER_00]: I can measure the rate of movement.
+[SPEAKER_00]: So now I could not just look at patterns
+of airflow.
+[SPEAKER_00]: I could look at distributions of local
+velocities, which from an aerodynamic
+[SPEAKER_00]: point of view is much more impressive.
+[SPEAKER_00]: Now I just want to point out that when
+you're dealing with fluid mechanics,
+[SPEAKER_00]: you have two ways in which you can analyze
+it.
+[SPEAKER_00]: One is called an Eulerian approach.
+[SPEAKER_00]: And the other is called the Lagrangian
+approach.
+[SPEAKER_00]: What's an Eulerian approach?
+[SPEAKER_00]: It's as if you were staring out a window
+and looking at everything that came by
+[SPEAKER_00]: that little piece of space.
+[SPEAKER_00]: That's the Eulerian approach.
+[SPEAKER_00]: The other is Lagrangian.
+[SPEAKER_00]: And that is you actually follow what a
+particle is doing along its trajectory.
+[SPEAKER_00]: And we had to do both to really get an
+understanding of what was going on.
+[SPEAKER_00]: This is the Eulerian diagnosis of an
+ovulate cone.
+[SPEAKER_00]: This is velocity in meters per second.
+[SPEAKER_00]: And so you just look at a little bit of
+space.
+[SPEAKER_00]: And you look at all the pollen grains or
+all the bubbles that are passing through
+[SPEAKER_00]: that space.
+[SPEAKER_00]: And you begin to quantify what its
+material, what its fluid mechanical
+[SPEAKER_00]: behavior is.
+[SPEAKER_00]: And what we found was, yes, there was
+inertial impaction.
+[SPEAKER_00]: In other words, pollen grains would just
+hit the cone.
+[SPEAKER_00]: But what was happening is that the airflow
+patterns created by the ovulate cone
+[SPEAKER_00]: itself biased the sediment tation of the
+pollen grains on the upper surface of the
+[SPEAKER_00]: ovulate bract complexes.
+[SPEAKER_00]: So this was actually a very sophisticated
+device.
+[SPEAKER_00]: In a sense, it's a turbine.
+[SPEAKER_00]: But it's not rotating around its axis.
+[SPEAKER_00]: It's causing the air to rotate around its
+axis.
+[SPEAKER_00]: And it's biasing the distribution of those
+airflow patterns to get pollen towards
+[SPEAKER_00]: where the ovules are, which are in the
+adaxial surface of the bract.
+[SPEAKER_00]: Complex.
+[SPEAKER_00]: Well, we didn't want to just use models.
+[SPEAKER_00]: So this is a real pine cone.
+[SPEAKER_00]: This is real pine pollen.
+[SPEAKER_00]: These are photographs of the worst of our
+experiments, because there's just a cloud
+[SPEAKER_00]: here.
+[SPEAKER_00]: You might see little dots, but nothing
+conclusive.
+[SPEAKER_00]: So we refined the technique, refined the
+technique using stroboscopic lighting,
+[SPEAKER_00]: just to blow this little piece up here.
+[SPEAKER_00]: These now are the successive locations of
+a single pollen grain.
+[SPEAKER_00]: You digitize this.
+[SPEAKER_00]: You computerize this stuff.
+[SPEAKER_00]: And again, you crank out the numbers.
+[SPEAKER_00]: And you get the Lagrangian approach.
+[SPEAKER_00]: So we're looking at individual pollen
+grains moving around a real ovulate cone.
+[SPEAKER_00]: What we found out was rather surprising,
+because when you actually look at the
+[SPEAKER_00]: number of pollen grains that are hitting
+the ovules of different species of pine,
+[SPEAKER_00]: so here are the ovulate cones.
+[SPEAKER_00]: Here are the pollen grains from those
+ovulate cones.
+[SPEAKER_00]: And what you see is the pollen that is
+most successful comes from the species of
+[SPEAKER_00]: the cone to which it belongs.
+[SPEAKER_00]: So there is selective filtration.
+[SPEAKER_00]: It's a lot of noise, a lot of randomness.
+[SPEAKER_00]: But wind pollination in this case is not
+random.
+[SPEAKER_00]: It has a very deterministic component.
+[SPEAKER_00]: Then we got into computer simulations,
+real computer simulations.
+[SPEAKER_00]: These are artificial pollen grains.
+[SPEAKER_00]: We were looking at what are the dimensions
+and densities of pollen that are the
+[SPEAKER_00]: optimal for different kinds of plants.
+[SPEAKER_00]: This is a phedra.
+[SPEAKER_00]: These are the ovules of the phedra.
+[SPEAKER_00]: Those are the little pollen grains.
+[SPEAKER_00]: These are pollination droplets.
+[SPEAKER_00]: We had a lot of fun.
+[SPEAKER_00]: I don't have time to get into all of these
+stories, but I can lend you reprints.
+[SPEAKER_00]: Grasses.
+[SPEAKER_00]: OK, we did the same thing with grasses,
+using real pollen from the grasses.
+[SPEAKER_00]: And we digitized them.
+[SPEAKER_00]: And we looked at the aerodynamics around
+them.
+[SPEAKER_00]: And what we found, we were looking here at
+two.
+[SPEAKER_00]: Let me just go back.
+[SPEAKER_00]: We're looking at two different species.
+[SPEAKER_00]: One is Ceteria geniculata.
+[SPEAKER_00]: It has a very compact panicle.
+[SPEAKER_00]: The florets, flowers, are very close
+together, something like a pine cone in
+[SPEAKER_00]: overall appearance.
+[SPEAKER_00]: We also looked at this.
+[SPEAKER_00]: This is a Grostus heimalus, which has a
+very loose panicle.
+[SPEAKER_00]: You see little clusters of flowers,
+but on their individual stems.
+[SPEAKER_00]: And the fluid mechanics around these two,
+dense panicle, loose panicle, very,
+[SPEAKER_00]: very different.
+[SPEAKER_00]: OK, as you might expect.
+[SPEAKER_00]: But the other thing is we noticed that the
+loose panicle was a natural harmonic
+[SPEAKER_00]: oscillator.
+[SPEAKER_00]: Each of these little clusters of flowers
+on the stems of different length,
+[SPEAKER_00]: different stiffness, they were oscillating
+in different directions and at different
+[SPEAKER_00]: speeds.
+[SPEAKER_00]: Whereas the Ceteria panicle was
+oscillating in a very predictable natural
+[SPEAKER_00]: harmonic.
+[SPEAKER_00]: And we could actually measure the harmonic
+frequency of these things using a biaxial
+[SPEAKER_00]: optical transducer that could actually
+track the motion of this thing in all
+[SPEAKER_00]: directions.
+[SPEAKER_00]: And then you could put it through a
+Fournier analysis, and you would get the
+[SPEAKER_00]: natural harmonic, the second harmonic,
+the third harmonic.
+[SPEAKER_00]: And it turns out, let me go back.
+[SPEAKER_00]: It turns out that you could actually not
+only talk about the aerodynamics,
+[SPEAKER_00]: but we now could talk about the material
+properties of the stems, because the
+[SPEAKER_00]: natural frequency is related to the
+stiffness of the material, to Young's
+[SPEAKER_00]: modulus.
+[SPEAKER_00]: And this got us interested in solid
+mechanics and the interface between solid
+[SPEAKER_00]: and fluid mechanics.
+[SPEAKER_00]: Again, I'm just giving these examples.
+[SPEAKER_00]: I don't have time to go into all the
+detail, besides which they're
+[SPEAKER_00]: excruciatingly boring.
+[SPEAKER_00]: And they're published.
+[SPEAKER_00]: OK, so what else do you do?
+[SPEAKER_00]: Well, again, as Adrian mentioned,
+I was an undergraduate major in
+[SPEAKER_00]: mathematics.
+[SPEAKER_00]: I was always fascinated by the symmetry of
+plants.
+[SPEAKER_00]: I mean, you look at a plant, and you just
+say, it's beautiful, but it's beautiful
+[SPEAKER_00]: because in part of its symmetry.
+[SPEAKER_00]: And so I got interested in phyllotaxy,
+the arrangements of leaves.
+[SPEAKER_00]: And just to give you a few examples,
+a disticus example in Clivia, opposite
+[SPEAKER_00]: decussate in some kind of mit,
+spiral arrangement, et cetera.
+[SPEAKER_00]: There are all these beautiful symmetries
+that seem to conform to what is called a
+[SPEAKER_00]: Fibonacci series.
+[SPEAKER_00]: Phelios de Bonacci, the son of Bonacci,
+name contracted to Fibonacci.
+[SPEAKER_00]: But it's Phelios de Bonacci.
+[SPEAKER_00]: Anyway, what he did is he created these
+wonderful mathematical kind of series.
+[SPEAKER_00]: You add up the numbers, and you get the
+next number.
+[SPEAKER_00]: Then you add up the previous number to
+that number, and you get the next number,
+[SPEAKER_00]: the next number, the next number.
+[SPEAKER_00]: And you can start with any number,
+but you just use this mathematical series.
+[SPEAKER_00]: And if you make fractions of them,
+like here, and you keep increasing the
+[SPEAKER_00]: numbers, they converge on the golden mean.
+[SPEAKER_00]: You can convert these fractions into
+angles.
+[SPEAKER_00]: And so the series will always approach,
+expressed in angles, 137.5.
+[SPEAKER_00]: Or thereabouts.
+[SPEAKER_00]: And this excited mathematicians in
+botanists for hundreds of years,
+[SPEAKER_00]: basically, because the golden rule now,
+that plants have learned the golden rule.
+[SPEAKER_00]: This is why they arrange their leaves the
+way they do.
+[SPEAKER_00]: Well, it's not true.
+[SPEAKER_00]: And a long time ago, we created a little
+mathematical model for the arrangements of
+[SPEAKER_00]: leaves on a single stem.
+[SPEAKER_00]: And you need only a few parameters.
+[SPEAKER_00]: You need the deflection angle of the leaf.
+[SPEAKER_00]: You need the rotation angle of the leaf.
+[SPEAKER_00]: You need the distance between successive
+leaves.
+[SPEAKER_00]: You need the divergence angle.
+[SPEAKER_00]: That's the Fibonacci series.
+[SPEAKER_00]: And then you can play around with the
+leaf, the length of the petiole,
+[SPEAKER_00]: the width, and the length of the petiole.
+[SPEAKER_00]: We kept things simple.
+[SPEAKER_00]: All leaves are either ellipses or circles.
+[SPEAKER_00]: No low being nothing, just to see what
+would happen.
+[SPEAKER_00]: And you can create all of these different
+philotactic patterns here.
+[SPEAKER_00]: Now you're looking down on a kind of
+rosette.
+[SPEAKER_00]: You can put these mathematically into a
+computer and say, OK, the sun is going
+[SPEAKER_00]: overhead from dawn to dusk.
+[SPEAKER_00]: How much energy do these leaves
+collectively absorb?
+[SPEAKER_00]: What is their efficiency at trapping
+light?
+[SPEAKER_00]: And now you have morpho spaces.
+[SPEAKER_00]: What is a morpho space?
+[SPEAKER_00]: Well, in this case, we have the Fibonacci
+angle, the divergence angle here.
+[SPEAKER_00]: We have the amount of energy a plant can
+absorb.
+[SPEAKER_00]: And by the way, this is the angle,
+and that's the actual fraction.
+[SPEAKER_00]: So they're really the same axes.
+[SPEAKER_00]: And wherever you see this big,
+broad line here, that's the golden mean,
+[SPEAKER_00]: 137.5.
+[SPEAKER_00]: And you can see for little stubby
+rosettes, or rosettes with what look like
+[SPEAKER_00]: pizza kind of shovels, or for round
+leaves, that really the optimal is the
+[SPEAKER_00]: Fibonacci convergence series, 137.5.
+[SPEAKER_00]: But the minute you start playing with
+internodal distances, for example,
+[SPEAKER_00]: or patio lengths, things of that sort,
+the difference between all of these
+[SPEAKER_00]: divergence angles of leaf arrangement are
+washed out.
+[SPEAKER_00]: One is no better than the other.
+[SPEAKER_00]: So the only time that the golden mean
+seems to work is if you're a cabbage,
+[SPEAKER_00]: if you're a rosette, where all the leaves
+are basically shading each other.
+[SPEAKER_00]: The minute you start elongating or
+changing the geometry of the patio or
+[SPEAKER_00]: change the deflection angles of those
+leaves, it doesn't matter how you arrange
+[SPEAKER_00]: it, which is really good for Clivia
+because the leaves are in two different
+[SPEAKER_00]: rows, and it doesn't seem to bother it.
+[SPEAKER_00]: We also could simulate the effect of
+latitude and things of that sort.
+[SPEAKER_00]: And if you play with latitude,
+all of those leaf arrangements can be
+[SPEAKER_00]: equally efficient.
+[SPEAKER_00]: It really doesn't matter.
+[SPEAKER_00]: Okay.
+[SPEAKER_00]: I've got two more to go, and I'm going to
+go through it, I hope, in time.
+[SPEAKER_00]: But this is your opportunity to leave.
+[SPEAKER_00]: Okay.
+[SPEAKER_00]: So early land plant evolution.
+[SPEAKER_00]: Well, when I was taught paleo botany,
+we were all excited about the Devonian
+[SPEAKER_00]: because that's when everything seemed to
+happen.
+[SPEAKER_00]: Okay.
+[SPEAKER_00]: My professors were excited.
+[SPEAKER_00]: I was excited.
+[SPEAKER_00]: But when you look at the plants from the
+Devonian, they're actually excruciatingly
+[SPEAKER_00]: boring.
+Right?
+[SPEAKER_00]: I mean, really, if you were a taxonomist
+today, you might classify all of these
+[SPEAKER_00]: things into one family, or one something
+or another, and just give them different
+[SPEAKER_00]: generic species names, binomials.
+[SPEAKER_00]: But the beauty of these plants is that
+they're botanical tuning forks.
+[SPEAKER_00]: I can mathematically describe their
+geometry with only a few variables.
+[SPEAKER_00]: Okay.
+[SPEAKER_00]: I need to know, again, the bifurcation
+angle.
+[SPEAKER_00]: What is the angle between bifurcations?
+[SPEAKER_00]: What is the rotation angle?
+[SPEAKER_00]: And what is the probability of branching?
+[SPEAKER_00]: Other things that I could include are
+diameter and length of these elements.
+[SPEAKER_00]: And I can create a universe of all
+mathematically possible structures in a
+[SPEAKER_00]: fairly simple Cartesian coordinate system.
+[SPEAKER_00]: This is a simple morpho space.
+[SPEAKER_00]: You can go n-dimensional.
+[SPEAKER_00]: You don't have to be three-dimensional,
+right?
+[SPEAKER_00]: I mean, Descartes, there's that little
+thing.
+[SPEAKER_00]: You have x, y, z.
+[SPEAKER_00]: You know its coordinates.
+[SPEAKER_00]: Can I add other dimensions?
+[SPEAKER_00]: In other words, other parameters to
+describe the morphology?
+[SPEAKER_00]: Well, of course I can.
+[SPEAKER_00]: I can add more axes and forget about being
+three-dimensional.
+[SPEAKER_00]: The other way to deal with this almost an
+infinite number of axes is you line them
+[SPEAKER_00]: up like this.
+[SPEAKER_00]: And this point and that point and that
+point and that point and this point and
+[SPEAKER_00]: that point are all the same points.
+[SPEAKER_00]: One point.
+[SPEAKER_00]: That's an object in n-dimensional space.
+[SPEAKER_00]: So don't let anybody tell you that you
+can't plot more than three dimensions.
+[SPEAKER_00]: You can't.
+[SPEAKER_00]: It's easy.
+[SPEAKER_00]: Computers can handle this.
+[SPEAKER_00]: I can't.
+[SPEAKER_00]: There is slices through the morpho space.
+[SPEAKER_00]: Just took three slices.
+[SPEAKER_00]: So you get things like psyllodum.
+[SPEAKER_00]: You get things that look like real trees.
+[SPEAKER_00]: You get things that sort of look like
+conifers.
+[SPEAKER_00]: And then you get to things that look like
+a mess.
+[SPEAKER_00]: And years ago, I gave this talk in New
+Zealand, and I said, well, there's nothing
+[SPEAKER_00]: really like that.
+[SPEAKER_00]: And they all started laughing.
+[SPEAKER_00]: And they said, you haven't seen our
+varicating shrubs, have you?
+[SPEAKER_00]: And I said, no.
+[SPEAKER_00]: And they said, well, there are stems that
+grow inward, not outward.
+[SPEAKER_00]: And I said, well, that's them over there.
+[SPEAKER_00]: So now I have this morpho space.
+[SPEAKER_00]: What am I going to do with it?
+[SPEAKER_00]: Well, it turns out that I can quantify the
+performance of those morphologies in the
+[SPEAKER_00]: morpho space.
+[SPEAKER_00]: I can actually calculate their ability to
+intercept light, to conduct fluids,
+[SPEAKER_00]: to reproduce, and to provide mechanical
+support.
+[SPEAKER_00]: I've written books about how to do this.
+[SPEAKER_00]: So this is my gross self-advertisement.
+[SPEAKER_00]: I can give you free copies.
+[SPEAKER_00]: Nobody buys them anyway.
+[SPEAKER_00]: I could have made a fortune with this.
+[SPEAKER_00]: It is the best cure for insomnia that I
+know of.
+[SPEAKER_00]: I can't even read more than three pages
+and not stay awake.
+[SPEAKER_00]: So just to give you an idea, you move the
+sun over something like this, and you
+[SPEAKER_00]: calculate its self-shading, et cetera.
+[SPEAKER_00]: You can look at mechanical stability.
+[SPEAKER_00]: What are the moment arms, the influence of
+gravity.
+[SPEAKER_00]: I can look at the probability of
+discharging spores and the distance those
+[SPEAKER_00]: spores travel, et cetera, et cetera.
+[SPEAKER_00]: So now I can quantify the performance of
+each of those objects in the morpho space.
+[SPEAKER_00]: And what I can do is I can simulate an
+adaptive walk.
+[SPEAKER_00]: I can start someplace here, maybe the
+earliest known vascular land plant.
+[SPEAKER_00]: And I can look around in that morpho space
+next to it and say, is there anything
+[SPEAKER_00]: that's just as good or better?
+[SPEAKER_00]: And so the computer finds that morphology.
+[SPEAKER_00]: And it keeps doing this until it gets to a
+morphology that is surrounded by nothing
+[SPEAKER_00]: that's better or as good.
+[SPEAKER_00]: It's an adaptive peak.
+[SPEAKER_00]: We had to test it.
+[SPEAKER_00]: We had to know, does this really work?
+[SPEAKER_00]: So it turns out that this is Salicornia
+europa.
+[SPEAKER_00]: It's a little halophyte.
+[SPEAKER_00]: It looks like one of these boring Devonian
+plants, but it's actually an angiosperm.
+[SPEAKER_00]: But it had a trifurcating kind of
+branching pattern.
+[SPEAKER_00]: And what we found was the geometry of this
+plant changes dramatically depending upon
+[SPEAKER_00]: the density of plants, how closely they
+grow.
+[SPEAKER_00]: So we simulated density's effect on the
+ability to intercept light.
+[SPEAKER_00]: And we compared the morphology of the
+plants at different plant densities to the
+[SPEAKER_00]: morphology that the computer predicted.
+[SPEAKER_00]: And lo and behold, we were right.
+[SPEAKER_00]: Computers are wonderful things until they
+fail you.
+[SPEAKER_00]: So we said, OK, let's look at the Devonian
+plants for different functions.
+[SPEAKER_00]: And the first thing we tested is light
+interception and mechanical stability.
+[SPEAKER_00]: Can you do them simultaneously?
+[SPEAKER_00]: What happens?
+[SPEAKER_00]: There's a conflict, by the way,
+because if you want to be mechanically
+[SPEAKER_00]: stable, you want to be vertical.
+[SPEAKER_00]: If you want to maximize light
+interception, you want to lie on your
+[SPEAKER_00]: side.
+[SPEAKER_00]: So they're the opposite of each other.
+[SPEAKER_00]: You have to optimize, not maximize.
+[SPEAKER_00]: And so we started with Cooksonia.
+[SPEAKER_00]: This is the earliest known vascular plant
+fossil.
+[SPEAKER_00]: We found its location in the morpho space.
+[SPEAKER_00]: That's what the computer says Cooksonia
+looks like.
+[SPEAKER_00]: And now we go through the adaptive walk.
+[SPEAKER_00]: And we ended with that.
+[SPEAKER_00]: So just to very quickly show you what was
+happening is that the computer was
+[SPEAKER_00]: predicting with successive events to go
+from something like a rhino like plant
+[SPEAKER_00]: with equal branching to unequal branching
+to overtopping to then lateral branches
+[SPEAKER_00]: that started to planate and that looked
+something like this.
+[SPEAKER_00]: And what was really curious is that that's
+exactly what the telome theory predicts by
+[SPEAKER_00]: Zimmermann.
+[SPEAKER_00]: This is how you get megaphils.
+[SPEAKER_00]: At least that's what he thought.
+[SPEAKER_00]: Well, the computer said, yeah,
+Dr. Zimmermann, you seem to be right.
+[SPEAKER_00]: The only problem with something like this
+is it's an opaque model.
+[SPEAKER_00]: It may not be right.
+[SPEAKER_00]: It's just telling you what the basis is of
+your assumptions.
+[SPEAKER_00]: So by the way, only two functions,
+right?
+[SPEAKER_00]: Mechanics and light.
+[SPEAKER_00]: What happens if you just want to maximize
+each performance?
+[SPEAKER_00]: What happens if you put these in pairs or
+triplets?
+[SPEAKER_00]: Or what happens when you say, do them all?
+[SPEAKER_00]: So I'm not going to show you walks.
+[SPEAKER_00]: I'm going to show you the end result.
+[SPEAKER_00]: This is what happens when you have single
+functions, maximizing repeat.
+[SPEAKER_00]: Production, conservation of surface area,
+maximizing mechanical stability,
+[SPEAKER_00]: light interception.
+[SPEAKER_00]: Now, what happens when you do two
+functions?
+[SPEAKER_00]: I won't read off all of these,
+but you'll notice things are looking a
+[SPEAKER_00]: little bit more complicated.
+[SPEAKER_00]: What happens if you have three functions?
+[SPEAKER_00]: Things are getting much more complicated.
+[SPEAKER_00]: What if you do all four?
+[SPEAKER_00]: Those are all equal in their performance.
+[SPEAKER_00]: So many ways to make everything work.
+[SPEAKER_00]: Kind of fun, because what it's saying is
+if I'm a single function like a machine,
+[SPEAKER_00]: I can maximize the performance,
+my fitness.
+[SPEAKER_00]: But if I keep adding functions,
+the number of tasks increase, so do the
+[SPEAKER_00]: number of equally efficient phenotypes,
+but their global fitness is down.
+[SPEAKER_00]: This kind of explains why when you drive
+into the desert, all the desert plants
+[SPEAKER_00]: don't look the same.
+[SPEAKER_00]: Not all trees look the same.
+[SPEAKER_00]: They're equally good.
+[SPEAKER_00]: Long time to talk about this.
+[SPEAKER_00]: But imagine if you're an engineer and I
+say design a toaster.
+[SPEAKER_00]: It's going to be really good.
+[SPEAKER_00]: Now how about a toaster and a hairdryer?
+[SPEAKER_00]: So I'm not going to go on to this.
+[SPEAKER_00]: I'm going to end with this so that you can
+all have lunch.
+[SPEAKER_00]: Last thing I want to talk about is forest
+dynamics.
+[SPEAKER_00]: So real forests, very complicated,
+but it turns out that if you go into the
+[SPEAKER_00]: data and you start looking at trends
+within sizes and girths of trees in a
+[SPEAKER_00]: variety of different forests, you find
+very strict allometric relationships.
+[SPEAKER_00]: This one is the log of standing leaf mass
+versus the log of standing stem mass.
+[SPEAKER_00]: And you can see that's a log-log linear
+regression over many orders of magnitude
+[SPEAKER_00]: from forests as different as conifers and
+mixed deciduous forests.
+[SPEAKER_00]: So there are rules somehow.
+[SPEAKER_00]: The question is, what are they?
+[SPEAKER_00]: So Sean Hammond, one of my graduate
+students many years ago, had a knack for
+[SPEAKER_00]: computer simulations.
+[SPEAKER_00]: And I said, Sean, how about modeling
+forests?
+[SPEAKER_00]: And he looked at me and he said,
+will that get me a PhD?
+[SPEAKER_00]: And I said, yes.
+[SPEAKER_00]: So he said, OK.
+[SPEAKER_00]: So we started looking at rules.
+[SPEAKER_00]: And one of them was given to us by this
+gentleman many hundreds of years ago.
+[SPEAKER_00]: This is Apollonius of Tyane.
+[SPEAKER_00]: I remember his theorems from when I took
+geometry, complex geometry.
+[SPEAKER_00]: Yes.
+[SPEAKER_00]: Well, he was a little younger then.
+[SPEAKER_00]: But he was interested in how do you
+package things together?
+[SPEAKER_00]: For example, how many circles can I get
+into this kind of geometry?
+[SPEAKER_00]: He noticed, this is the arc of a circle.
+[SPEAKER_00]: That's the arc of a circle.
+[SPEAKER_00]: That's the arc of a circle.
+[SPEAKER_00]: And so he had some mathematics that we
+began to play with.
+[SPEAKER_00]: And we started introducing those rules
+into the computer simulations.
+[SPEAKER_00]: But another problem that we had was,
+how much do I give to make new leaves,
+[SPEAKER_00]: to make new roots, and new stems?
+[SPEAKER_00]: This is a banking problem.
+[SPEAKER_00]: You get so much energy in a year.
+[SPEAKER_00]: And you have to produce leaves.
+[SPEAKER_00]: You have to produce stems.
+[SPEAKER_00]: You have to produce roots.
+[SPEAKER_00]: And if you produce too many leaves with
+respect to the stem, you can fall over.
+[SPEAKER_00]: If I produce too few roots with respect to
+stems, I can fall over.
+[SPEAKER_00]: So this is the classic allocation of
+biomass, not money.
+[SPEAKER_00]: And we had a beautiful algorithm,
+starting with a little seedling.
+[SPEAKER_00]: Energy for growth.
+[SPEAKER_00]: Reproductively mature.
+[SPEAKER_00]: Yes, no.
+[SPEAKER_00]: Energy for reproduction.
+[SPEAKER_00]: Violate a physical law.
+[SPEAKER_00]: No two objects can occupy the same space.
+[SPEAKER_00]: You die.
+[SPEAKER_00]: So here are the beginning of our
+simulations.
+[SPEAKER_00]: And we were going low density,
+and then watching them grow.
+[SPEAKER_00]: Higher density, higher density,
+higher density.
+[SPEAKER_00]: And now, for all of this trauma,
+I want to show you a movie.
+[SPEAKER_00]: But first of all, I need my glasses.
+[SPEAKER_00]: Because I have to press a button,
+and I can't find it.
+[SPEAKER_00]: Not to worry.
+[SPEAKER_00]: There we go.
+[SPEAKER_00]: So what you're looking at now is a single
+propagule that is reproducing.
+[SPEAKER_00]: You're looking at it from this side and
+looking down.
+[SPEAKER_00]: That's a single seed.
+[SPEAKER_00]: And every iteration was one year.
+[SPEAKER_00]: So now, that was one propagule.
+[SPEAKER_00]: I want to show you what happens when you
+randomly scatter those seeds.
+[SPEAKER_00]: And this is going to go for over 600
+years.
+[SPEAKER_00]: Those little specks you see, those are the
+seeds that are being released from the
+[SPEAKER_00]: canopy.
+[SPEAKER_00]: Later on, you'll see some light gaps where
+an old tree dies.
+[SPEAKER_00]: And then you'll see some little puppies
+filling in.
+[SPEAKER_00]: See that?
+[SPEAKER_00]: Oh, this is so cute.
+[SPEAKER_00]: You know, you can watch it on Sunday when
+you're bored and it's snowing.
+[SPEAKER_00]: That's almost every Sunday.
+[SPEAKER_00]: But how do you test a model like this?
+[SPEAKER_00]: Oh, what am I doing?
+[SPEAKER_00]: Why isn't it going?
+[SPEAKER_00]: Oh, wait.
+[SPEAKER_00]: Now, these darn computers, I don't
+understand why they don't do what I tell
+[SPEAKER_00]: them to do.
+[SPEAKER_00]: Well, let's see if we can do it this way.
+[SPEAKER_00]: OK.
+[SPEAKER_00]: So how do you test a model?
+[SPEAKER_00]: Well, we looked around for forestry.
+[SPEAKER_00]: And it was wonderful to find this
+publication published in Italian,
+[SPEAKER_00]: University of Forenza, Italy.
+[SPEAKER_00]: Imagine, they went out into a new forest
+and measured properties for 80 years.
+[SPEAKER_00]: How many leaves?
+[SPEAKER_00]: What's the girth of the stems?
+[SPEAKER_00]: What's the height of the trees?
+[SPEAKER_00]: Over 80 years, the School of Forestry just
+had new people come in.
+[SPEAKER_00]: PhD students go out there, measure the
+forest.
+[SPEAKER_00]: So we had data.
+[SPEAKER_00]: And what we could do is we could
+parameterize our computer model for this
+[SPEAKER_00]: tree, Aby's Alba.
+[SPEAKER_00]: And now what I'm going to show you are
+graphs that look like this.
+[SPEAKER_00]: One of these symbols is the data.
+[SPEAKER_00]: And the other symbol is the prediction of
+the computer model.
+[SPEAKER_00]: Nice.
+[SPEAKER_00]: Nice.
+[SPEAKER_00]: But there's something else that came out
+that we never expected.
+[SPEAKER_00]: The computer model predicted how old the
+trees were before they would produce seed.
+[SPEAKER_00]: And that's what we found in the data set.
+[SPEAKER_00]: We had cross validation.
+[SPEAKER_00]: In other words, we had an emergent
+property that we never put into the
+[SPEAKER_00]: program.
+[SPEAKER_00]: And the program made a prediction that we
+didn't expect but happened to be true.
+[SPEAKER_00]: So what have I learned from 45 years of
+modeling?
+[SPEAKER_00]: It's fun.
+[SPEAKER_00]: But I'm going to propose a few tools,
+and then I'll be done.
+[SPEAKER_00]: How do you evaluate?
+[SPEAKER_00]: Well, you fit empirical data.
+[SPEAKER_00]: I just showed you.
+[SPEAKER_00]: And you use the technique called cross
+validation.
+[SPEAKER_00]: You look for predictions that aren't in
+the algorithm that still comply with
+[SPEAKER_00]: reality, like we did with the Aby's.
+[SPEAKER_00]: Defining a model's scope.
+[SPEAKER_00]: It's really important to know when a model
+is inapplicable.
+[SPEAKER_00]: What are the range of phenomena to handle?
+[SPEAKER_00]: You can interpolate, but the danger is to
+extrapolate.
+[SPEAKER_00]: You can't go beyond the boundaries of your
+model unless you have data to test it.
+[SPEAKER_00]: And last but not least, the appearance of
+emergent properties.
+[SPEAKER_00]: The appearance of maturation that that
+last model predicted.
+[SPEAKER_00]: The fallacy of causality is always there.
+[SPEAKER_00]: Correlation, strong positive correlations
+do not necessarily prove that you have
+[SPEAKER_00]: cause and effect.
+[SPEAKER_00]: That's always a temptation, but you have
+to resist it.
+[SPEAKER_00]: Questions, Peter?
+[SPEAKER_01]: I'd like to ask about a couple of
+parameters that I wonder if you've
+[SPEAKER_01]: considered with regard to light
+interception because some of your plants
+[SPEAKER_01]: look sort of non-modeling,
+non-physiological.
+[SPEAKER_01]: So two factors.
+[SPEAKER_01]: A, your leaves are not really opaque,
+and you mentioned that.
+[SPEAKER_01]: Were you able to look at what would happen
+when they allow 10% truth?
+[SPEAKER_01]: And the other thing is the amount of light
+exceeds what the leaf needs.
+[SPEAKER_01]: So therefore, if you tip a leaf up,
+you get actually more efficient for the
+[SPEAKER_01]: community, which illustrates what's
+happened to corn.
+[SPEAKER_01]: They've upped the yields like crazy by
+changing the leaf angles, washing in many
+[SPEAKER_01]: more plants per acre.
+[SPEAKER_00]: Both of those questions are really good.
+[SPEAKER_00]: So to answer the first one, yes.
+[SPEAKER_00]: One of the parameters would be the opacity
+of the leaf, the transmission of
+[SPEAKER_00]: photosynthetically useful radiation,
+because of course a lot of the light
+[SPEAKER_00]: coming out of it is green, and that's not
+particularly exciting.
+[SPEAKER_00]: The question of leaf orientation,
+when it comes to the canopies of trees,
+[SPEAKER_00]: the best assumption is that the leaf
+orientation is random.
+[SPEAKER_00]: Because I have a leaf like this,
+I have a leaf like this, I have a leaf
+[SPEAKER_00]: like this, and if you have more than a few
+leaves, you can basically say,
+[SPEAKER_00]: you can either model it as a frequency
+distribution, or you can just say it's all
+[SPEAKER_00]: random.
+[SPEAKER_00]: And it turns out that it doesn't really
+matter once you get to a certain size.
+[SPEAKER_00]: Because you have so many leaves,
+it doesn't have much effect.
+[SPEAKER_00]: Yeah, we looked at phenomena like that.
+[SPEAKER_00]: And latitude.
+[SPEAKER_00]: No, I never worked on corn.
+[SPEAKER_00]: It's way too boring.
+[SPEAKER_00]: No offense.
+[SPEAKER_00]: I have a question.
+[SPEAKER_04]: I was trying to ask you for some advice.
+[SPEAKER_04]: I was going to ask you for some advice.
+[SPEAKER_01]: Given the current state of computer
+science and supercomputing, what questions
+[SPEAKER_01]: does biology ask if you want to model
+today or for the next 30 years?
+[SPEAKER_00]: It depends on your discipline.
+[SPEAKER_00]: I mean, if I was into metabolomics,
+I'd be looking at metabolic systems.
+[SPEAKER_00]: If I was into genetics and development,
+it would be gene regulatory networks.
+[SPEAKER_00]: If I was into ecology, it would be
+community dynamics.
+[SPEAKER_00]: All of those are amenable to modeling.
+[SPEAKER_00]: So the model is a tool.
+[SPEAKER_00]: The important thing about a tool is you
+have to have an important question.
+[SPEAKER_00]: It's the question that drives the choice
+of tool, not the tool that drives the
+[SPEAKER_00]: selection of the question.
+[SPEAKER_00]: I'm kind of old school.
+[SPEAKER_00]: I think that was Sean Hammond's computer
+modeling.
+[SPEAKER_00]: We saw so many emergent properties,
+not just the onset of reproductivity and
+[SPEAKER_00]: maturation, but a lot of other phenomena
+that we never expected a simple model to
+[SPEAKER_00]: produce.
+[SPEAKER_00]: Like density-dependent depth, which can be
+used to model the spread of pathogens.
+[SPEAKER_00]: So yeah, there are a lot of applications,
+not just to forested communities.
+[SPEAKER_00]: Chelsea?
+[SPEAKER_02]: I feel bad because it's a regular science
+question.
+[SPEAKER_02]: It's a big picture question.
+[SPEAKER_02]: So you've got the model of the forest
+community, and then you also have the
+[SPEAKER_02]: model of the forms of the plants.
+[SPEAKER_02]: So I have two questions about this.
+[SPEAKER_02]: One is, can that be combined together so
+that you could actually model the forest
+[SPEAKER_02]: community not just looking like a single
+plant, but looking like multiple species,
+[SPEAKER_02]: and how those would interact?
+[SPEAKER_00]: Can I answer that question first?
+[SPEAKER_00]: So if you haven't heard the question is,
+can you use this kind of model not to look
+[SPEAKER_00]: at mono-specific stands, but what happens
+when you have different species
+[SPEAKER_00]: interacting?
+[SPEAKER_00]: And in fact, we did that.
+[SPEAKER_00]: We actually parameterized a number of
+different kinds of trees because we were
+[SPEAKER_00]: interested in competitive exclusion.
+[SPEAKER_00]: Do one of these things muscle out the
+other?
+[SPEAKER_00]: In very few cases, we found that
+coexistence was the rule.
+[SPEAKER_00]: What would happen, however, if you started
+with equal numbers of seeds that were
+[SPEAKER_00]: randomly distributed, you would see that
+some species would be repressed.
+[SPEAKER_00]: So their numbers would drop below 25% if
+you had four, but then they would plateau
+[SPEAKER_00]: and they would persist for as long as we
+ran the simulations.
+[SPEAKER_00]: And that's something that Sean is actually
+following up on now that he's got a
+[SPEAKER_00]: tenure-track position.
+[SPEAKER_00]: So you had another question.
+[SPEAKER_02]: So what is that related to your other
+model where you were predicting the forms?
+[SPEAKER_02]: So if you use sort of a history instead of
+the potential forms that could be there,
+[SPEAKER_02]: they're restricted in their history and
+their branching patterns and what they're
+[SPEAKER_02]: going to look like.
+[SPEAKER_02]: Can you use those two models to kind of
+inform each other?
+[SPEAKER_00]: Yes, you can.
+[SPEAKER_00]: So the question is, can you use the two
+last models that I talked about where you
+[SPEAKER_00]: had different forms?
+[SPEAKER_00]: Can you use them to fertilize one another?
+[SPEAKER_00]: You can, but when you start modeling
+something like that, you have to make a
+[SPEAKER_00]: large number of assumptions and the
+results will be very dependent on the
+assumptions.
+[SPEAKER_00]: Again, the early evolution land plant
+model is an opaque model.
+[SPEAKER_00]: It may not tell us anything about reality,
+but what it does do is it makes the
+[SPEAKER_00]: logical consequences of our assumptions
+transparent.
+[SPEAKER_00]: I will tell you that those simulations
+were done on Atari simulators,
+[SPEAKER_00]: Atari computers.
+[SPEAKER_00]: We had four Atari computers hooked up as a
+network, and some of those simulations
+[SPEAKER_00]: took months.
+[SPEAKER_00]: And this built a lot of brownouts.
+[SPEAKER_00]: You would lose the results of those
+simulations.
+[SPEAKER_00]: So it was not easy.
+[SPEAKER_00]: Now we've got big computers.
+[SPEAKER_00]: What took us months could maybe take a few
+hours.
+[SPEAKER_00]: I mean, the modeling that I did with
+finite elements with proto-salvinium,
+[SPEAKER_00]: that was using Fortran.
+[SPEAKER_00]: You know, stacks and stacks of what looked
+like postcards.
+[SPEAKER_00]: The little holes punched in.
+[SPEAKER_00]: You dropped and you were scared all over
+again.
+[SPEAKER_00]: Is that it?
+[SPEAKER_00]: Thank you for coming.
+[SPEAKER_00]: Have a lovely day.
+[SPEAKER_02]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_02]: Thank you.
+[SPEAKER_02]: Thank you.
+Thank you.

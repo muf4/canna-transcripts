@@ -1,0 +1,947 @@
+[SPEAKER_01]: This is a production of Cornell
+University.
+[SPEAKER_00]: And thank you again for coming.
+[SPEAKER_00]: So today I'll be presenting about
+applications of multi-trade and
+[SPEAKER_00]: multi-canal models for genomic selection
+in cassava.
+[SPEAKER_00]: And I'm really grateful to a lot of people
+who have like helped me to reach this
+[SPEAKER_00]: stage.
+[SPEAKER_00]: Okay, well I'll skip the outline and I'll
+tell you a little bit about cassava,
+[SPEAKER_00]: which is kind of very exciting to me.
+[SPEAKER_00]: Cassava is no longer an orphan crop.
+[SPEAKER_00]: About 263 million metric tons were
+produced in 2012.
+[SPEAKER_00]: Cassava is a starch machine, so we have
+about 90% of dry matter as carbohydrates.
+[SPEAKER_00]: And then some traces of that stuff.
+[SPEAKER_00]: Cassava is an outcrosser, producing male
+and female flowers from the same plant.
+[SPEAKER_00]: And the interesting thing is, given with
+low imputes and marginal land,
+[SPEAKER_00]: cassava is still giving some tangible
+productivity.
+[SPEAKER_00]: So it's very interesting.
+[SPEAKER_00]: This is the most interesting to me.
+[SPEAKER_00]: It's 2016, I guess, we were in China.
+[SPEAKER_00]: And we collected this information that
+China has bought about a billion US
+[SPEAKER_00]: dollars worth of cassava chips.
+[SPEAKER_00]: And that's very interesting.
+[SPEAKER_00]: It's going to drive the market.
+[SPEAKER_00]: And I think, again, the reason is that
+cassava starch is very, very, very
+[SPEAKER_00]: appealing to the food industry.
+[SPEAKER_00]: So with that, I make a jump now to my
+introduction to mixed models.
+[SPEAKER_00]: So I was introduced to mixed models by
+working with Denis at academia.
+[SPEAKER_00]: He just walked in.
+[SPEAKER_00]: And I learned a whole lot from Denis doing
+this.
+[SPEAKER_00]: So EMML has three solvers.
+[SPEAKER_00]: The first solver is a single canal solver.
+[SPEAKER_00]: By canal we mean one random effect.
+[SPEAKER_00]: And it's based on the EMMA algorithm.
+[SPEAKER_00]: The second solver is the multi-canal
+solver, which is, in fact, a wrapper on
+[SPEAKER_00]: this.
+[SPEAKER_00]: And it's based on canal averaging.
+[SPEAKER_00]: And then another interesting solver we
+have is this multi-trait solver,
+[SPEAKER_00]: which is based on the ECM algorithm that
+was developed by Zhu and Matus,
+[SPEAKER_00]: I think, in 2014.
+[SPEAKER_00]: So the interesting thing about EMML is
+that it is very flexible.
+[SPEAKER_00]: And you can adapt it to various things.
+[SPEAKER_00]: And we have actually adapted this
+multi-trait solver to different kind of
+[SPEAKER_00]: models, which I will show today.
+[SPEAKER_00]: And EMML has, in fact, been successful in
+plant breeding literature.
+[SPEAKER_00]: So the talk is structured as chapters in
+my thesis.
+[SPEAKER_00]: And the first chapter, we looked at
+accuracies of univariate and multivariate
+[SPEAKER_00]: genomic prediction models in African
+cassava.
+[SPEAKER_00]: So our motivation for these was to
+understand which models are we to use for
+[SPEAKER_00]: GS in cassava.
+[SPEAKER_00]: And then the next thing is to evaluate the
+breeding values from these models and see
+[SPEAKER_00]: what's going on.
+[SPEAKER_00]: And so for these, we had a data set,
+an interesting historic data set.
+[SPEAKER_00]: It was a multi-year multi-environment
+trial data.
+[SPEAKER_00]: It was collected from the so-called
+genetic gain at IITA, Ibadan, Nigeria.
+[SPEAKER_00]: And over a span of about 16 years,
+from 2000 to 2015, we chose these three
+[SPEAKER_00]: locations, Ubiaja, Mokwa, and Ibadan.
+[SPEAKER_00]: And in fact, these locations are very
+divergent.
+[SPEAKER_00]: This is in the rainforest.
+[SPEAKER_00]: This is closer to this.
+[SPEAKER_00]: And this is like a semi-arid location.
+[SPEAKER_00]: So they are very divergent.
+[SPEAKER_00]: And they represent areas of cassava
+production.
+[SPEAKER_00]: So we used what we call clonal evaluation
+trials, data only.
+[SPEAKER_00]: And in cassava breeding, clonal evaluation
+trials are where we impose heavy selection
+[SPEAKER_00]: on the breeding genplasm.
+[SPEAKER_00]: So CETs are mostly augmented design with
+checks, and there are no replications.
+[SPEAKER_00]: And this is because of the cassava
+biology.
+[SPEAKER_00]: We plant in stakes, so you can get enough
+stakes to do replication.
+[SPEAKER_00]: So we fit different sets of models.
+[SPEAKER_00]: In the first scenario, we fit models using
+data from a single environment,
+[SPEAKER_00]: but multiple-year data.
+[SPEAKER_00]: In the second, we fit multi-environment
+trials to capture G by A.
+[SPEAKER_00]: And we use a GBS matrix data to calculate
+the genomic relationship matrix from about
+[SPEAKER_00]: 173,000 markers.
+[SPEAKER_00]: So this is a little data on the traits we
+are dealing with and some metrics.
+[SPEAKER_00]: So this is the number of records of the
+data we have at different locations.
+[SPEAKER_00]: And these are the number of individuals.
+[SPEAKER_00]: And we had about 324 individuals across
+these locations.
+[SPEAKER_00]: So our targets are these traits,
+six traits, seedling vigor, number of
+[SPEAKER_00]: roots per hectare, fresh yield per
+hectare, dry matter, of course,
+[SPEAKER_00]: and then mean CMD.
+[SPEAKER_00]: This is a very critical trait for cassava.
+[SPEAKER_00]: And then mean CGM, which is a pest.
+[SPEAKER_00]: CGM is a pest that eats up the stakes in
+cassava.
+[SPEAKER_00]: I don't really know very much about it.
+[SPEAKER_00]: So in scenario one, we fit two interesting
+models.
+[SPEAKER_00]: The first model is the basic G block model
+we call UT.
+[SPEAKER_00]: And this is a single-trait model.
+[SPEAKER_00]: And then the genomic effects are coming
+from this distribution given the genomic
+[SPEAKER_00]: relationship matrix.
+[SPEAKER_00]: In the same vein, we fit the multi-trait
+model, which is like this.
+[SPEAKER_00]: And in this case, we have a matrix of
+traits, but then the distribution is
+[SPEAKER_00]: different.
+[SPEAKER_00]: And this is a matrix number.
+[SPEAKER_00]: The normal distribution, the matrix normal
+has a row covariance and a column
+[SPEAKER_00]: covariance.
+[SPEAKER_00]: And this is the covariance that captures
+traits by traits genetic variances and
+[SPEAKER_00]: correlations.
+[SPEAKER_00]: And this is, in fact, the eigen
+decomposition of this matrix, the genomic
+[SPEAKER_00]: relationship matrix.
+[SPEAKER_00]: And it's a simplification of the
+algorithm.
+[SPEAKER_00]: So to simplify the algorithm further,
+we use the chronicle product and then
+[SPEAKER_00]: transform this to the multivariate normal
+distribution.
+[SPEAKER_00]: And the chronicle helps to get this
+working.
+[SPEAKER_00]: But in this case, the y becomes a long
+vector of stacking the traits together.
+[SPEAKER_00]: OK.
+[SPEAKER_00]: So a couple of things here is that y is a
+stack of many traits.
+[SPEAKER_00]: And the x, which is our fixed effect,
+we use location trials, trials nested
+[SPEAKER_00]: within year, nested within year.
+[SPEAKER_00]: Locations are fixed.
+[SPEAKER_00]: And in fact, the algorithm we use can
+allow you to fix different traits,
+[SPEAKER_00]: different effects, sorry, in this x
+matrix.
+[SPEAKER_00]: And this is how it works.
+[SPEAKER_00]: So we fit this model with the ARML F90
+package, which is a member of the family
+[SPEAKER_00]: of the BLOP F90 program developed by Mr.
+Alan Koh.
+[SPEAKER_00]: And we go forward again in the next
+scenario to capture G by E in this data.
+[SPEAKER_00]: And we fit, again, two models.
+[SPEAKER_00]: One is univariate and another is
+multivariate.
+[SPEAKER_00]: And this univariate is an interesting
+model, which is a multi-canal model.
+[SPEAKER_00]: The first canal captures the genomic
+effect.
+[SPEAKER_00]: And the second canal captures the clone by
+location effect.
+[SPEAKER_00]: And in fact, what we do here is that we
+use the genomic relationship matrix for
+[SPEAKER_00]: each location, each individual in each
+location, to capture the genomic part of
+[SPEAKER_00]: the interaction, the clone by location
+interaction.
+[SPEAKER_00]: In the multi-environment model,
+we use the same traits in different
+[SPEAKER_00]: locations.
+[SPEAKER_00]: It's just like the multi-trait model.
+[SPEAKER_00]: But there are some subtool differences.
+[SPEAKER_00]: One of the differences is coming from this
+VG matrix.
+[SPEAKER_00]: In this matrix now, we capture the genetic
+variance of the same trait at different
+[SPEAKER_00]: locations in the diagonals.
+[SPEAKER_00]: And in the off-diagonals, we capture
+estimates of G by E as the covariances.
+[SPEAKER_00]: So the GEBVs from this ME model contains
+both genomic and G by E parts.
+[SPEAKER_00]: And the VE is diagonal.
+[SPEAKER_00]: The diagonal means we just allow for
+variances, variance of the traits,
+[SPEAKER_00]: error variance of the traits at different
+locations.
+[SPEAKER_00]: And we don't want correlation between
+these because there is no mechanism that
+[SPEAKER_00]: generates correlation between a trait at
+different locations.
+[SPEAKER_00]: So to match this, to compare this UE model
+with ME, we join these two together,
+[SPEAKER_00]: the genomic part and the interaction part.
+[SPEAKER_00]: As the GEBVs.
+[SPEAKER_00]: So to compute the accuracy, we feed a
+simple model that we call performance,
+[SPEAKER_00]: genetic performance model.
+[SPEAKER_00]: And this model just is like the first UT
+model.
+[SPEAKER_00]: But in this case, the difference is that
+it assumes an identity, which means that
+[SPEAKER_00]: there is no relationship between the
+individuals concerned.
+[SPEAKER_00]: And we feed these in different locations.
+[SPEAKER_00]: And we think that this captures the
+estimated total genetic value of the
+[SPEAKER_00]: individual.
+[SPEAKER_00]: So here I show results.
+[SPEAKER_00]: And in each block is a different trait.
+[SPEAKER_00]: So here is VIGO, here is CMD, here is root
+number, fresh youth.
+[SPEAKER_00]: In each column is a different location.
+[SPEAKER_00]: And the first location is a badang,
+the next is mokwa, and the other one is
+[SPEAKER_00]: upiaja.
+[SPEAKER_00]: So in red is the prediction accuracy for
+the UT model.
+[SPEAKER_00]: And in green is the prediction accuracy
+for the MT model.
+[SPEAKER_00]: So we see that in most traits,
+actually, that the accuracies of the MT
+[SPEAKER_00]: model are higher.
+[SPEAKER_00]: And in fact, we see this in almost all the
+traits.
+[SPEAKER_00]: And what we make of these, I show you a
+table of one location.
+[SPEAKER_00]: And this location is a badang showing the
+heritabilities in diagonal of these
+[SPEAKER_00]: traits.
+[SPEAKER_00]: And in the off diagonal, the genetic
+correlations for these traits.
+[SPEAKER_00]: So why do we see these accuracies there?
+[SPEAKER_00]: We see here that these traits,
+low heritability traits, we have a bunch
+[SPEAKER_00]: of low heritability traits.
+[SPEAKER_00]: And then we have these high heritability
+and maybe these medium ones.
+[SPEAKER_00]: And in fact, when you jointly analyze
+traits of low heritability with high
+[SPEAKER_00]: heritabilities, and you have a substantial
+correlation going on here, we expect that
+[SPEAKER_00]: the multi-trait accuracies will be better.
+[SPEAKER_00]: Okay, so we shift gears to the second
+scenario, which is the youth.
+[SPEAKER_00]: UE and the ME models.
+[SPEAKER_00]: And just like before, we have blocks as
+traits and then columns.
+[SPEAKER_00]: And in red is the UE and in green,
+again, is the ME model.
+[SPEAKER_00]: But in this case, we see that most of them
+are neck to neck.
+[SPEAKER_00]: In fact, and just in slight places,
+you have the ME a little ahead of it,
+[SPEAKER_00]: higher accuracy.
+[SPEAKER_00]: So we get some interesting thing in the
+genomic matrix of, in the G matrix of the
+[SPEAKER_00]: accorded VG here, of the ME model.
+[SPEAKER_00]: And this is somewhat kind of a description
+of what this is.
+[SPEAKER_00]: And if you think about, for example,
+Vigo here, here in Ubi Aja Mokwa,
+[SPEAKER_00]: this means that if we select some line,
+this means here in Ubi Aja, we expect
+[SPEAKER_00]: about 39% correlated response to selection
+in the next environment.
+[SPEAKER_00]: And we see these in all the traits.
+[SPEAKER_00]: And in fact, this gives information on a
+view of how to see G by E.
+[SPEAKER_00]: And then something interesting again is
+that you can, if you have several
+[SPEAKER_00]: environments, you can begin to cluster
+these into TPs.
+[SPEAKER_00]: Okay.
+[SPEAKER_00]: And this is a table that shows variance
+explained by the UE model.
+[SPEAKER_00]: This is the clone by location.
+[SPEAKER_00]: Variance is explained and this is for
+clone.
+[SPEAKER_00]: And I just wanted to point out here that
+these U traits have so much G by E
+[SPEAKER_00]: variances here compared to other ones.
+[SPEAKER_00]: And we know that these traits are so much
+affected by the environment.
+[SPEAKER_00]: And the same thing goes for these,
+we see here we have lower correlated
+[SPEAKER_00]: response to selections.
+[SPEAKER_00]: So in summary, what did we get from these?
+[SPEAKER_00]: We get that the empty model offers more
+accurate reading values for a single
+[SPEAKER_00]: location data.
+[SPEAKER_00]: And we see that this comes from
+significant correlations and joint
+[SPEAKER_00]: analysis of low and high heritability
+traits.
+[SPEAKER_00]: And we know that this low heritability
+traits benefit more from this analysis.
+[SPEAKER_00]: And then we also see that the ME model and
+the UE are not significantly different
+[SPEAKER_00]: actually.
+[SPEAKER_00]: But we recommend the multivariate
+environment for this because we get a lot
+[SPEAKER_00]: of information from both models.
+[SPEAKER_00]: Sorry.
+[SPEAKER_00]: So something interesting again,
+coming from the genetic correlations that
+[SPEAKER_00]: I showed you is that there is good
+prospect for concurrent improvement of
+[SPEAKER_00]: these traits in Cassava.
+[SPEAKER_00]: And in fact, these are the most,
+well, I would say these are production
+[SPEAKER_00]: traits in Cassava, really very important
+traits.
+[SPEAKER_00]: We also see something interesting is that
+CMD is negatively correlated with other
+[SPEAKER_00]: traits, which is the direction we want
+them to be.
+[SPEAKER_00]: So in the next chapter, I'll move to
+comparing selection gains from multithread
+[SPEAKER_00]: indices from these models.
+[SPEAKER_00]: And it's kind of an effort to evaluate
+more the reading values that we got from
+[SPEAKER_00]: these models.
+[SPEAKER_00]: So in literature, we see that a lot of
+models are usually evaluated by prediction
+[SPEAKER_00]: accuracies.
+[SPEAKER_00]: There's a few places where the evaluation
+is selection gains.
+[SPEAKER_00]: But in fact, this is because it's not an
+easy thing to actually do that.
+[SPEAKER_00]: They are predicted gains.
+[SPEAKER_00]: So we actually want to know how these
+models perform based on predicted gains.
+[SPEAKER_00]: And one of the problems is having to make
+these models comparable.
+[SPEAKER_00]: It's not an easy thing to make.
+[SPEAKER_00]: Even if you have independent data,
+you should have a comparable reference
+[SPEAKER_00]: framework.
+[SPEAKER_00]: And you think about which model do I use
+to make the framework?
+[SPEAKER_00]: Is it a multithread or a single trait?
+[SPEAKER_00]: Anyway, we use multithread selection
+indices in this case, to achieve this
+[SPEAKER_00]: goal.
+[SPEAKER_00]: And we compared also like before the UT,
+MT, UE and ME models.
+[SPEAKER_00]: But we added two other models to these,
+which I will explain in the next slide.
+[SPEAKER_00]: And these models if you recall the UE
+model with two canals, we have the genomic
+[SPEAKER_00]: part and the GE part.
+[SPEAKER_00]: So the UEA is just capturing the genomic
+part and leaving out the GE part.
+[SPEAKER_00]: And this is just an average of the entire
+balance.
+[SPEAKER_00]: And then we feed another model,
+which is MT, ME, which is like a matching
+[SPEAKER_00]: both ME and ME models.
+[SPEAKER_00]: This we think is an interesting model.
+[SPEAKER_00]: Two reviewers pointed out that why don't
+you do this?
+[SPEAKER_00]: It wasn't an easy thing to do.
+[SPEAKER_00]: It wasn't an easy thing to do though.
+[SPEAKER_00]: But we fit, it's just like the multithread
+model.
+[SPEAKER_00]: But in this case, we have 18 traits.
+[SPEAKER_00]: We organize these traits as trait one in
+environment one, trait two in environment
+[SPEAKER_00]: one, and in that direction.
+[SPEAKER_00]: So we had all together six by three,
+which is 18.
+[SPEAKER_00]: But then in the error part, we just use
+kind of the VE from the MT model,
+[SPEAKER_00]: which allows traits to be only correlated
+in the specific environment where they
+[SPEAKER_00]: are.
+[SPEAKER_00]: And this model is complex to fit.
+[SPEAKER_00]: It was fit in the Gibbs sampling algorithm
+of F90.
+[SPEAKER_00]: So how did we estimate gains?
+[SPEAKER_00]: So first of all, we standardize all the
+traits so that everybody has the same
+[SPEAKER_00]: stats.
+[SPEAKER_00]: And we use the same economic weights.
+[SPEAKER_00]: These are the weights and these weights
+represent 20% increase in VGO,
+[SPEAKER_00]: that 5% increase in root number,
+45% in dry matter, that 5% decrease in
+[SPEAKER_00]: CMD, mean CMD.
+[SPEAKER_00]: 45% increase in yield, fresh yield,
+and 10% decrease in MCG.
+[SPEAKER_00]: So the index was calculated as these.
+[SPEAKER_00]: So matrix multiplication of the economic
+weights with the GABVs from each model.
+[SPEAKER_00]: We selected the top 65 clones from each
+multithread index.
+[SPEAKER_00]: We estimated gain as the mean of the index
+values of these selected.
+[SPEAKER_00]: And the traits gained we estimated as the
+mean of the GABVs of the selected
+[SPEAKER_00]: individuals.
+[SPEAKER_00]: So here we have a plot.
+[SPEAKER_00]: This is Ubyaja.
+[SPEAKER_00]: This is Mokwa and this is a Baden.
+[SPEAKER_00]: And we have this box plot.
+[SPEAKER_00]: I want you to notice something that in all
+the locations, even here where we have
+[SPEAKER_00]: something like a tie, the MT model is
+doing better than the UT model.
+[SPEAKER_00]: But we see here that the UE model is doing
+much better in Ubyaja and then also
+[SPEAKER_00]: slightly better here on average in Mokwa
+and slightly better again on average at a
+[SPEAKER_00]: Baden.
+[SPEAKER_00]: Well, let's jump into the traits.
+[SPEAKER_00]: And see what was going on.
+[SPEAKER_00]: So here is Ubyaja and each block is a
+trait.
+[SPEAKER_00]: This is Vigo.
+[SPEAKER_00]: This is root number.
+[SPEAKER_00]: This is dry matter.
+[SPEAKER_00]: This is CMD.
+[SPEAKER_00]: This is fresh yield.
+[SPEAKER_00]: And this is CGM.
+[SPEAKER_00]: And again, they are colored as the same.
+[SPEAKER_00]: This is UT, MT, UEA, UE, ME, and MTME.
+[SPEAKER_00]: I would want to point out that this UE is
+more like what we do in the next gen,
+[SPEAKER_00]: the selection index we use in the next gen
+program.
+[SPEAKER_00]: So we see here in Ubyaja that the UE model
+was doing well here.
+[SPEAKER_00]: And you come to root number, which is a
+trait that has so much influence by the
+[SPEAKER_00]: environment.
+[SPEAKER_00]: ME was performing better.
+[SPEAKER_00]: And in dry matter, the ME was on average
+slightly, the ME and UEA were doing well.
+[SPEAKER_00]: So I point out here in CMD where the UE
+model was really dominating others.
+[SPEAKER_00]: We want this to go down.
+[SPEAKER_00]: So this going down is a good thing for us.
+[SPEAKER_00]: So this is a place that this model is
+dominating all this.
+[SPEAKER_00]: And then for fresh yield, it's doing
+pretty well.
+[SPEAKER_00]: And these models rank almost the same in
+this case.
+[SPEAKER_00]: So we move to Mokwa, a semi-arid region.
+[SPEAKER_00]: And we see the MTME is doing much better
+here.
+[SPEAKER_00]: With Vigo, root number, the MTME is still
+doing better.
+[SPEAKER_00]: It does a very bad job here for that.
+[SPEAKER_00]: Dry matter, again, the UE and the UEA are
+dominating for CMD here.
+[SPEAKER_00]: And in yield, again, this MTME model is
+dominating.
+[SPEAKER_00]: So we move again to Ibadan.
+[SPEAKER_00]: And again, we see the MTME, sorry,
+the ME model is kind of dominating here on
+[SPEAKER_00]: average.
+[SPEAKER_00]: And in root number is the MTME.
+[SPEAKER_00]: Here, I can rank these models one,
+two as almost same.
+[SPEAKER_00]: And then again, in CMD, the UE model is
+dominating in all locations.
+[SPEAKER_00]: So in yield, the MTME again, and in CGM,
+the UE is doing very bad here.
+[SPEAKER_00]: Actually, this should be going down.
+[SPEAKER_00]: Okay, so what do we see from here?
+[SPEAKER_00]: We see that some models have higher GABVs
+than others.
+[SPEAKER_00]: And we kind of ask a question,
+since we are using breeding values,
+[SPEAKER_00]: can we combine breeding values from
+different models together?
+[SPEAKER_00]: Well, why not?
+[SPEAKER_00]: If we are interested in making gains,
+so we try these, we replace the breeding
+[SPEAKER_00]: value for CMD from ME with that from UE.
+[SPEAKER_00]: And for dry matter and CMD at MTME in
+Mokwa, we replace with UE and UEAs.
+[SPEAKER_00]: And the same here for MTME, we replace
+with this and this.
+[SPEAKER_00]: And then we move on to see what happened.
+[SPEAKER_00]: In red is this composite index,
+I call it.
+[SPEAKER_00]: And you see it becomes superior to other
+ones.
+[SPEAKER_00]: So I know that there can be a lot of
+arguments on why this is not a good system
+[SPEAKER_00]: to evaluate these models.
+[SPEAKER_00]: There should be a separate independent
+reference to do this.
+[SPEAKER_00]: But this is just kind of showing a clue of
+what is going on in this.
+[SPEAKER_00]: And I think an ideal case would be to have
+independent reference data to be able to
+[SPEAKER_00]: evaluate these models or GABVs.
+[SPEAKER_00]: So from what we learn, we see that
+accounting for G by E is very important
+[SPEAKER_00]: for making gains in cassava.
+[SPEAKER_00]: Because of G by E, we probably need to use
+several models.
+[SPEAKER_00]: We don't know which one would be good.
+[SPEAKER_00]: And we also in this case recommend the
+multi-trait models because they have a lot
+[SPEAKER_00]: of information, multi-variate models.
+[SPEAKER_00]: They have a lot of information.
+[SPEAKER_00]: And this shows good prospects actually for
+cassava improvement.
+[SPEAKER_00]: The composite index may also be
+beneficial.
+[SPEAKER_00]: Okay, so now I make a jump to something
+else.
+[SPEAKER_00]: A GWAS-like type analysis, which is
+mapping traits.
+[SPEAKER_00]: So we have an issue in cassava breeding.
+[SPEAKER_00]: We are trying to move towards this
+beta-carotene cassava, which is sponsored
+[SPEAKER_00]: by Harvest Plus and so on.
+[SPEAKER_00]: And we call it so-called yellow cassava.
+[SPEAKER_00]: But we have a challenge in yellow cassava.
+[SPEAKER_00]: The challenge is that most of the yellow
+cassava have low levels of dry matter,
+[SPEAKER_00]: actually.
+[SPEAKER_00]: And we need to understand what is going on
+in this.
+[SPEAKER_00]: But we know already that there is a
+negative correlation between dry matter
+[SPEAKER_00]: and tuba yellowness in cassava.
+[SPEAKER_00]: So we set out to understand the genetic
+basis of this.
+[SPEAKER_00]: And here I show a plot.
+[SPEAKER_00]: This is the white cassava part.
+[SPEAKER_00]: This is the yellow part.
+[SPEAKER_00]: And this plot I borrowed from Ismail Rabi,
+which was just plotting dry matter against
+[SPEAKER_00]: yellow coloration in cassava.
+[SPEAKER_00]: So here you can see clearly that these
+populations split.
+[SPEAKER_00]: Okay.
+[SPEAKER_00]: So we developed this so-called regional
+heritability mapping procedure for
+[SPEAKER_00]: cassava.
+[SPEAKER_00]: And this procedure is a very interesting
+application of linear mixed models.
+[SPEAKER_00]: So what we do, we divide the chromosomes
+in cassava, 18 of them, into windows,
+[SPEAKER_00]: sliding windows.
+[SPEAKER_00]: And these windows are made up of hundreds
+in each.
+[SPEAKER_00]: We call these segments.
+[SPEAKER_00]: So we have these windows sliding through,
+and there is an overlap between them.
+[SPEAKER_00]: This overlap is 50 SNP overlapping with
+adjacent windows.
+[SPEAKER_00]: So we make a genomic relationship matrix
+from these segments.
+[SPEAKER_00]: We make another genomic relationship
+matrix from the whole genome SNPs.
+[SPEAKER_00]: And this is the correct for background
+effect and population structure.
+[SPEAKER_00]: We fit two models.
+[SPEAKER_00]: One null and alternative model show here.
+[SPEAKER_00]: The null model is just like the G block
+model using one canal using all the SNPs
+[SPEAKER_00]: that we have.
+[SPEAKER_00]: But in the alternative model, we fit two
+canals, one canal for the genomic segment
+[SPEAKER_00]: we want to capture, and the second canal
+correcting for background effect.
+[SPEAKER_00]: So we use likelihood ratio test to test
+for significance.
+[SPEAKER_00]: And we plot these as Manhattan plots.
+[SPEAKER_00]: So what data do we use?
+[SPEAKER_00]: We use the so-called genetic data again,
+genetic gain data again, but this time
+[SPEAKER_00]: only measured from 2013 to 2015.
+[SPEAKER_00]: We use a bivariate trait called pulp
+color, which just is, sorry, a binary
+[SPEAKER_00]: trait, which just measures whether you are
+yellow or white or maybe off white.
+[SPEAKER_00]: That's the case maybe.
+[SPEAKER_00]: So we use this to separate the population
+into two parts.
+[SPEAKER_00]: We use GBS SNPs numbering about 177,000,
+and the number of the whites were 451,
+[SPEAKER_00]: and for yellow were 262.
+[SPEAKER_00]: So phenotypes, of course, were from three
+locations, again, but we corrected these
+[SPEAKER_00]: as fixed effects.
+[SPEAKER_00]: So here we show the LD between segments,
+each segment in a chromosome, and each
+[SPEAKER_00]: color change is a different chromosome.
+[SPEAKER_00]: So here we see the kind of LD we get.
+[SPEAKER_00]: We have this low LD giving us confidence
+that when we get associations,
+[SPEAKER_00]: these associations may be real.
+[SPEAKER_00]: Okay, here we see the length of genomic
+segments in base pairs, and we see that a
+[SPEAKER_00]: lot of segments are between 300 plus
+thousand KB.
+Yeah.
+[SPEAKER_00]: Okay, so when we plot the results here,
+we see in the first plot is the white
+[SPEAKER_00]: cassava, and in the second is the yellow
+cassava.
+[SPEAKER_00]: So we see here we pick up signals in
+chromosomes, chromosome one, we pick up
+[SPEAKER_00]: from four, from five, from 10,
+from 17, and from 18, and then in yellow
+[SPEAKER_00]: we pick up only for chromosome one.
+[SPEAKER_00]: So bear in mind here also that we have
+very little sample size.
+[SPEAKER_00]: So what next do we do?
+[SPEAKER_00]: We try to see whether we can extract some
+information from the genome by doing
+[SPEAKER_00]: candidate gene analysis, and we extracted
+information on 500 KB flanking each side
+[SPEAKER_00]: of the heat we had.
+[SPEAKER_00]: We'll show later the choice of this 500
+KB, and based on literature review,
+[SPEAKER_00]: we were seeing two families coming up all
+the time, and this is glycosyl
+[SPEAKER_00]: transferases, and digging deeper into
+these is like carbohydrate enzymes of
+[SPEAKER_00]: which starch synthesis, sucrose synthesis,
+and so on and so forth are in there,
+[SPEAKER_00]: and we see another family of serentronin
+kinases, and this family red blood 3
+[SPEAKER_00]: protein kinases.
+[SPEAKER_00]: We also see invertases with neutral and
+acid, and some other plants are related
+[SPEAKER_00]: regions.
+[SPEAKER_00]: So we also looked on literature,
+and we saw that this serentronin kinases
+[SPEAKER_00]: already have transgenic studies which are
+implicated in starch.
+[SPEAKER_00]: So before I go on, I want to point out
+that our goal was not really to say that
+[SPEAKER_00]: this gene is what is causing this,
+but we kind of think that these genes may
+[SPEAKER_00]: be tagging regions which are very
+interesting for biomatter in cassava.
+[SPEAKER_00]: Okay, so how do we validate this?
+[SPEAKER_00]: Then we performed a validation for these
+serentronin kinases.
+[SPEAKER_00]: We went to the genome, and we grabbed
+everything called serentronin kinase,
+[SPEAKER_00]: or looked like this, and we extracted
+about 12 hundred genes.
+[SPEAKER_00]: We anchored it to about 7,000 SNPs,
+and we used an independent population
+[SPEAKER_00]: which was the progeny of the 100 genetic
+parents to validate these genes.
+[SPEAKER_00]: We also took randomly genes from the
+genome, about 7,000 genes, and anchored
+[SPEAKER_00]: about 7,000 SNPs as control.
+[SPEAKER_00]: Now for this, we fit this two-canal model
+again.
+[SPEAKER_00]: In the first canal is this target,
+which is the serentronin kinases,
+[SPEAKER_00]: and in the second is every other SNPs in
+the genome not this, and we get prediction
+[SPEAKER_00]: accuracies for this.
+[SPEAKER_00]: Okay, so we do this as well for other...
+We had this Cytone paper which reported
+[SPEAKER_00]: cassava genes involved in starch
+biosynthesis, so we took those genes,
+[SPEAKER_00]: excuse me, and anchored them to SNPs.
+[SPEAKER_00]: We called them cassava starch genes.
+[SPEAKER_00]: We also extracted all things called genes
+in the significant regions we had,
+[SPEAKER_00]: and these gave rise to about 2,300 SNPs.
+[SPEAKER_00]: We called them region genes.
+[SPEAKER_00]: Now based on literature, we had this 53
+list of genes that we saw that could be
+[SPEAKER_00]: implicated in starch, and we also got
+these and anchored them to SNPs,
+[SPEAKER_00]: about 400 SNPs.
+[SPEAKER_00]: We got another 53 randomly just to control
+for this, and then we went into this
+[SPEAKER_00]: region and said, oh, well, let's get those
+genes that are in this region that are not
+[SPEAKER_00]: reported in literature just to check what
+is going on, and we also anchored them to
+[SPEAKER_00]: about 300-something-plus SNPs.
+[SPEAKER_00]: So we used these as well in the same
+methodology we used for the SNR case.
+[SPEAKER_00]: So here we show the prediction accuracies
+for the snacks, for 7,000-plus genes.
+[SPEAKER_00]: It was about 50% of the prediction
+accuracy we get from the entire SNPs in
+[SPEAKER_00]: the genome.
+[SPEAKER_00]: So others were about 20-something-plus
+percent, and the random part for the
+[SPEAKER_00]: snacks was about half of what the snacks
+had.
+[SPEAKER_00]: So interestingly here, when I do the
+anchoring of the SNPs, I find out that all
+[SPEAKER_00]: the time the same SNPs come up again and
+again, which means that we are really
+[SPEAKER_00]: tagging something in the region.
+[SPEAKER_00]: So another thing we did is that we kind
+of, since Cytone has already published
+[SPEAKER_00]: these genes, we wanted to see which in our
+region that intersected with these ones
+[SPEAKER_00]: that Cytone picked up, and we saw four
+genes, two of them, one is an acid
+[SPEAKER_00]: invertase, one is a neutral invertase,
+I think so, and there is this first full
+[SPEAKER_00]: glucose isomerase, and an interesting one,
+the fructose bisphosphate aldolase.
+[SPEAKER_00]: So a quick search on these shows that
+Monsanto has a patent pending on these.
+[SPEAKER_00]: So again, we want to point out that we are
+not searching for functionality of these
+[SPEAKER_00]: genes, but we are tagging regions in the
+genome that may be implicated in dry
+[SPEAKER_00]: matter.
+[SPEAKER_00]: So this is just a plot showing all these
+genes we had and the regions where we kind
+[SPEAKER_00]: of saw what was going on.
+[SPEAKER_00]: And this is in chromosome one,
+where we had top hits and the proximity of
+[SPEAKER_00]: different genes that we selected as
+candidates.
+[SPEAKER_00]: So how do we validate the RHM procedure
+itself?
+[SPEAKER_00]: We use the so-called highly causal SNP
+methodology.
+[SPEAKER_00]: So we move into the genome, we select five
+adjacent segments by random, and on the
+[SPEAKER_00]: third segment, we choose a SNP by random
+and inflate the variance of the trade to
+[SPEAKER_00]: about 10% by adding effects.
+[SPEAKER_00]: And we make GMA3C for each of the
+segments, but when we come to the third
+[SPEAKER_00]: segment, we remove that SNP that we used
+for inflating the variance, phenotypic
+[SPEAKER_00]: variance.
+[SPEAKER_00]: We run this several times to see what was
+going on.
+[SPEAKER_00]: So this gave a clue on the span of our
+candidate gene analysis, because we could
+[SPEAKER_00]: pick up effects about two segments away
+from the place where we added this effect.
+[SPEAKER_00]: So we saw that the RHM was a good
+procedure for polygenic traits.
+[SPEAKER_00]: And in this analysis, we picked out that
+102 times out of two 1Cs, we picked the
+[SPEAKER_00]: effect that we added.
+[SPEAKER_00]: And this was about 47% power of detection
+for association.
+[SPEAKER_00]: And we think that would increase sample
+size will probably will benefit more.
+[SPEAKER_00]: So in summary, the RHM is informative for
+mapping complex traits.
+[SPEAKER_00]: Genomic segments may be employed in
+breeding.
+[SPEAKER_00]: There needs to be some research to do
+this.
+[SPEAKER_00]: And we see that there is good prospect for
+improvement of dry matter, especially
+[SPEAKER_00]: white.
+[SPEAKER_00]: And then dry matter as well is a polygenic
+trait.
+[SPEAKER_00]: Okay, so in case you have not seen yellow
+cassava, this is how it looks.
+[SPEAKER_00]: And this is white cassava.
+[SPEAKER_00]: Okay, so I move on to the next chapter,
+which is moving away, moving on from the
+[SPEAKER_00]: regional heritability mapping for one
+trait and trying to map two traits at a
+[SPEAKER_00]: time.
+[SPEAKER_00]: And in this case, we want to see how two
+traits are co-inherited together.
+[SPEAKER_00]: And here we use dry matter again,
+the yellowness, which is root color.
+[SPEAKER_00]: And then we also use fresh yield in some
+trials that they call high starch trials.
+[SPEAKER_00]: So our motivation is to see how dry matter
+and this yellowness are inherited
+[SPEAKER_00]: together.
+[SPEAKER_00]: And again, to see whether we have like
+prospects of developing yellow cassava.
+[SPEAKER_00]: So how does this work?
+[SPEAKER_00]: Does this go, the other CHM procedure
+starts by, so by fitting, I would point
+[SPEAKER_00]: out here that the ideal procedure should
+have been exactly what we did for the
+[SPEAKER_00]: regional heritability, but in a bivariate
+model.
+[SPEAKER_00]: But we tried to do that without success
+because I think probably we have so much
+[SPEAKER_00]: less data.
+[SPEAKER_00]: We could not estimate it.
+[SPEAKER_00]: So the models were not converging.
+[SPEAKER_00]: So what we did was to, look for another
+procedure to do this.
+[SPEAKER_00]: And this is the procedure.
+[SPEAKER_00]: So we feed it by very G block model,
+where we use the empty model, as we showed
+[SPEAKER_00]: before.
+[SPEAKER_00]: We use 10 principal components in the
+fixed effect part.
+[SPEAKER_00]: And before we did this, actually we
+brought out these 10 pieces and we request
+[SPEAKER_00]: them to dry matter for a start.
+[SPEAKER_00]: And for white, we didn't see much value
+for the pieces.
+[SPEAKER_00]: They were not significant.
+[SPEAKER_00]: But for yellow, we saw that these 10
+pieces were explaining about 23% of
+[SPEAKER_00]: variation going up.
+[SPEAKER_00]: So it was essential to add that.
+[SPEAKER_00]: So after fitting this bivariate model,
+we move forward immediately to calculate
+[SPEAKER_00]: snip effects from the model.
+[SPEAKER_00]: And this is done by very much by animal
+breeders, so-called snip block.
+[SPEAKER_00]: And you just back solve using the
+estimates that we got for the breeding
+[SPEAKER_00]: values, the genomic relationship matrix
+inverse, the marker matrix.
+[SPEAKER_00]: And these matrix may be used to probably
+wait snips, if you're interested in that.
+[SPEAKER_00]: So after solving for snip effects,
+we divided the genome into, on each
+[SPEAKER_00]: chromosome into three fairly equal parts.
+[SPEAKER_00]: The mean of each segment was about 18
+megabase, approximately.
+[SPEAKER_00]: So what we did was we calculated so-called
+genomic segment values from these.
+[SPEAKER_00]: Excuse me.
+[SPEAKER_00]: And genomic segment values were the marker
+matrix for the segment we're in,
+[SPEAKER_00]: multiplied by the snip effects.
+[SPEAKER_00]: So these genomic segment values were
+calculated for both traits.
+[SPEAKER_00]: And then to get a correlation,
+a genomic segment correlation,
+[SPEAKER_00]: we just correlated this genomic segment
+for the two traits we're interested in.
+[SPEAKER_00]: So in fact, this is a genetic correlation
+because we are correlating sort of,
+[SPEAKER_00]: this is a proxy, looks like a breeding
+value.
+[SPEAKER_00]: Okay, so we did this for dual traits.
+[SPEAKER_00]: We're interested in dry matter and B,
+dry matter and fresh yield.
+[SPEAKER_00]: So what data did we use?
+[SPEAKER_00]: We used the same data we were using for,
+we used for the RHM.
+[SPEAKER_00]: We applied these to the same populations
+again, white, yellow.
+[SPEAKER_00]: And in this case, we also joined them
+together, we call yellow plus white.
+[SPEAKER_00]: Okay, so we applied also for dry matter
+and fresh yield in so-called high starch
+[SPEAKER_00]: white trials.
+[SPEAKER_00]: And these are trials that had high levels
+of dry matter and good yield.
+[SPEAKER_00]: And they were planted sort of to
+understand when best to harvest.
+[SPEAKER_00]: And one set of harvest was done 12 months
+after planting.
+[SPEAKER_00]: And the second set of harvest was done 14
+months after planting.
+[SPEAKER_00]: So we plot these segment correlations
+genome-wide to see what's going on.
+[SPEAKER_00]: And then we also try to say that when
+these segment correlations are going in
+[SPEAKER_00]: the direction that the breeder wants,
+then they are favorable for what you're
+[SPEAKER_00]: looking for.
+[SPEAKER_00]: We use so-called residual resampling for
+significance testing.
+[SPEAKER_00]: Okay, I show here a plot.
+[SPEAKER_00]: Each bar represents a segment.
+[SPEAKER_00]: Change of color represents another
+chromosome.
+[SPEAKER_00]: And this is for white.
+[SPEAKER_00]: And we see that most of the segments are
+in the positive direction.
+[SPEAKER_00]: And in yellow, excuse me, in yellow,
+we see that most of the segments are going
+[SPEAKER_00]: towards the negative direction.
+[SPEAKER_00]: This is for white mixed with yellow,
+but we see a mixture of what is going on.
+[SPEAKER_00]: Okay, so we see 70% of the segments in
+white were favorable.
+[SPEAKER_00]: And in fact, from the bivariate model,
+we saw that the genomic the trait-trait
+[SPEAKER_00]: correlation was 0.14, which indicates
+progress can be made using a multi-trait
+[SPEAKER_00]: index.
+[SPEAKER_00]: So we move over to yellow, which is more
+interesting.
+[SPEAKER_00]: And we see that 81% of the segments were
+unfavorable.
+[SPEAKER_00]: And the whole genomic correlations were
+negative 0.3, indicating that developing
+[SPEAKER_00]: yellow cassava could be challenging.
+[SPEAKER_00]: So interestingly, this doesn't happen in
+the South American gemplasm.
+[SPEAKER_00]: So Sabalos has this publication and has
+been saying that just a recurrent
+[SPEAKER_00]: selection was doing very well for both
+traits in South America.
+[SPEAKER_01]: Okay, so we argue here.
+[SPEAKER_01]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_01]: Thank you.
+Thank you.
+Thank you.

@@ -1,0 +1,561 @@
+[SPEAKER_00]: So we're going to switch gears a little
+bit here and talk about cannabis from an
+[SPEAKER_00]: analytical perspective.
+[SPEAKER_00]: Again, I'm Ryan Ravenel.
+[SPEAKER_00]: I work for Hamilton Company, specifically
+for the robotics division.
+[SPEAKER_00]: And the title of my talk today is
+Automated Workflows for the Cannabis
+[SPEAKER_00]: Analytical Lab, Increasing Sample
+Throughput and Data Reliability.
+[SPEAKER_00]: So I'm first going to just kind of
+introduce Hamilton.
+[SPEAKER_00]: I promise this isn't a marketing heavy
+presentation, just so you know who
+[SPEAKER_00]: Hamilton is and what we do.
+[SPEAKER_00]: We're a global enterprise, a global
+company.
+[SPEAKER_00]: We were founded in the 1950s by Clark
+Hamilton.
+[SPEAKER_00]: Our flagship product is our syringe.
+[SPEAKER_00]: If you've ever done any kind of
+chromatography in your life, you probably
+[SPEAKER_00]: know the Hamilton syringe.
+[SPEAKER_00]: It's kind of our famous product.
+[SPEAKER_00]: But since then, Hamilton has really grown.
+[SPEAKER_00]: We provide a variety of analytical
+products and systems for the laboratory.
+[SPEAKER_00]: We sell into a variety of different
+industries.
+[SPEAKER_00]: We have robotics, as I mentioned.
+[SPEAKER_00]: Devices, consumables, customized
+solutions.
+[SPEAKER_00]: And we also do OEM agreements.
+[SPEAKER_00]: So we are original equipment manufacturers
+for a variety of companies out there.
+[SPEAKER_00]: So what I'm really going to talk today
+about is our robotics division.
+[SPEAKER_00]: And that's who I work for.
+[SPEAKER_00]: And when you think Hamilton robotics,
+what I really want you to think of are
+[SPEAKER_00]: liquid handling solutions.
+[SPEAKER_00]: So we really try to drive this home.
+[SPEAKER_00]: The simplest way to explain it is if you
+are doing any kind of liquid handling in
+[SPEAKER_00]: your assay or your workflow, you can
+probably benefit from our automation.
+[SPEAKER_00]: So we're really talking about taking away
+the lab tech who's sitting there pipetting
+[SPEAKER_00]: on a bench all day long and really putting
+that on a robot and freeing up that tech
+[SPEAKER_00]: to do other things in your lab.
+[SPEAKER_00]: So we have multiple sizes of instruments,
+multiple configurations.
+[SPEAKER_00]: We are very integration friendly.
+[SPEAKER_00]: So we integrate external devices,
+equipment from third party providers.
+[SPEAKER_00]: And integrate those into our platforms to
+really have an end to end solution for
+[SPEAKER_00]: some of the things that are done in the
+assay lab.
+[SPEAKER_00]: We also have on deck tools and devices
+that we manufacture in addition to
+[SPEAKER_00]: integrating with third party components.
+[SPEAKER_00]: And we're kind of known in the industry
+for leading in service and support.
+[SPEAKER_00]: And we have a lot of automation
+experience.
+[SPEAKER_00]: Not necessarily in the cannabis world.
+[SPEAKER_00]: This is kind of a new application and a
+new market for us.
+[SPEAKER_00]: But we do have a lot of automation
+experience in other related markets.
+[SPEAKER_00]: So I'll get into the nuts and bolts of my
+presentation.
+[SPEAKER_00]: And I'm going to talk about why we test
+cannabis and what's tested for in
+[SPEAKER_00]: cannabis.
+[SPEAKER_00]: And that may seem like a silly question to
+some.
+[SPEAKER_00]: But I don't think anybody here after all
+the talks we've heard this week,
+[SPEAKER_00]: there's no question why we should test.
+[SPEAKER_00]: Some of the concerns with cannabis,
+some of the concerns and challenges that
+[SPEAKER_00]: are actually facing laboratories right
+now, and some of the opportunities that we
+[SPEAKER_00]: think Hamilton Automation and automation
+in general can be a big help.
+[SPEAKER_00]: And then I'm going to briefly go over some
+preliminary experimental results that we
+[SPEAKER_00]: have.
+[SPEAKER_00]: Some data that's related to workflows that
+are specific to the cannabis testing
+[SPEAKER_00]: laboratory.
+[SPEAKER_00]: And wrap up with some conclusions.
+[SPEAKER_00]: So I'm going to start off my presentation
+with some really bad examples.
+[SPEAKER_00]: Product recalls are prevalent in many
+different industries.
+[SPEAKER_00]: It seems like you can't open up the paper,
+at least with once a month hearing about a
+[SPEAKER_00]: product's recall.
+[SPEAKER_00]: But I highlighted two cases because I
+think these are relevant to the medicinal
+[SPEAKER_00]: cannabis world.
+[SPEAKER_00]: Specifically, this McNeil Consumer Health
+Care.
+[SPEAKER_00]: So if you don't remember this,
+in 2010, McNeil had a massive recall of
+[SPEAKER_00]: children's over-the-counter medicine.
+[SPEAKER_00]: This affected about 130 million bottles of
+medicine.
+[SPEAKER_00]: And just to give you an idea of what was
+wrong with these products, I'm going to
+[SPEAKER_00]: read the quote.
+[SPEAKER_00]: So some of the products included in the
+recall may contain a higher concentration
+[SPEAKER_00]: of active ingredient than specified.
+[SPEAKER_00]: Others contain inactive ingredients that
+may not meet internal testing
+[SPEAKER_00]: requirements.
+[SPEAKER_00]: And others may contain tiny particles.
+[SPEAKER_00]: Well, it turns out those tiny particles
+were actually metal shards from the
+[SPEAKER_00]: equipment manufacturing line.
+[SPEAKER_00]: And that's a big deal, especially when
+you're talking about children's medicine
+[SPEAKER_00]: here.
+[SPEAKER_00]: And the other case that I wanted to
+highlight is just from last year,
+[SPEAKER_00]: you guys may have heard about this case in
+New Jersey.
+[SPEAKER_00]: And it was a case that affected the State
+Police Department up there.
+[SPEAKER_00]: So there was a lab technician there who
+obviously lost his job after this.
+[SPEAKER_00]: But he allegedly faked results in a drug
+case and drawn into question 7,800
+[SPEAKER_00]: criminal cases on which he worked.
+[SPEAKER_00]: So he's essentially accused of making up
+data.
+[SPEAKER_00]: He was observed writing test results for
+suspected marijuana that was never tested.
+[SPEAKER_00]: This is really bad.
+[SPEAKER_00]: And I don't mean this slide to really be a
+scare tactic and have everybody question
+[SPEAKER_00]: everything that's on the market.
+[SPEAKER_00]: But I think it's important to highlight
+that this does happen.
+[SPEAKER_00]: This is a real phenomenon.
+[SPEAKER_00]: And even in heavily regulated industries,
+so here we're talking about medicine and
+[SPEAKER_00]: we're talking about law enforcement,
+it happens.
+[SPEAKER_00]: And so I think it's important to highlight
+that automation and laboratory practice
+[SPEAKER_00]: are important tools that we can use to
+prevent things like this from happening.
+[SPEAKER_00]: So quality control.
+[SPEAKER_00]: All marijuana is not created equal.
+[SPEAKER_00]: I think we all know that.
+[SPEAKER_00]: That's been kind of beat to death during
+this conference.
+[SPEAKER_00]: But it's important to keep in mind,
+right?
+[SPEAKER_00]: So Dr. Meery had a great talk.
+[SPEAKER_00]: There's been other great talks here that
+really highlight that what's in your
+[SPEAKER_00]: cannabis strain, the active components,
+makes a huge difference on the condition
+[SPEAKER_00]: you're trying to achieve.
+[SPEAKER_00]: What's going to treat and the effects that
+the individual is going to feel.
+[SPEAKER_00]: So you're not going to take a pill,
+at least probably most of us here
+[SPEAKER_00]: wouldn't, take a pill which you had no
+idea what was in it.
+[SPEAKER_00]: And so it's important to have quality data
+out there that consumers can trust.
+[SPEAKER_00]: And also the other flip side of it is it's
+important to know what's in your cannabis,
+[SPEAKER_00]: but it's also important to know what's not
+in your cannabis.
+[SPEAKER_00]: So I feel bad for this guy right here.
+[SPEAKER_00]: He's kind of synonymous now with
+pesticides and cannabis.
+[SPEAKER_00]: He's the first picture that comes up when
+you Google search cannabis and pesticides.
+[SPEAKER_00]: So I blanked out his face there to give
+him a little bit of anonymity.
+[SPEAKER_00]: And I feel bad for him because it's not
+really his fault.
+[SPEAKER_00]: The case of using the wrong pesticides in
+cannabis, it's an education issue.
+[SPEAKER_00]: It's a lack of oversight issue.
+[SPEAKER_00]: So you guys may have heard in 2005,
+Colorado actually withheld up to 60,000
+[SPEAKER_00]: plants for pesticide contamination.
+[SPEAKER_00]: And the pesticide that was implicated
+there was called myclobutanil.
+[SPEAKER_00]: And what happens is this is a pesticide
+that's used for normal agricultural
+[SPEAKER_00]: products, everyday products that we
+consume.
+[SPEAKER_00]: But when it's exposed to heat,
+it forms hydrogen cyanide gas.
+[SPEAKER_00]: And if there's something you don't want to
+be smoking, it's hydrogen cyanide gas.
+[SPEAKER_00]: So again, it's kind of a knowledge and an
+experience thing.
+[SPEAKER_00]: And it's a real problem out there.
+[SPEAKER_00]: And so why are some of these problems and
+what kind of issues does a lab have to
+[SPEAKER_00]: deal with?
+[SPEAKER_00]: Well, it's always a balancing act from the
+analytical perspective.
+[SPEAKER_00]: On one side, you have producers and
+growers who have expectations.
+[SPEAKER_00]: They want cheap tests.
+[SPEAKER_00]: They want accurate tests.
+[SPEAKER_00]: And they want fast tests.
+[SPEAKER_00]: They don't want product locked up or being
+essentially burned or destroyed.
+[SPEAKER_00]: Because it fails tests.
+[SPEAKER_00]: And they don't want their product sitting
+around waiting for results so that they
+[SPEAKER_00]: can sell it.
+[SPEAKER_00]: And that makes sense.
+[SPEAKER_00]: On the other hand, you have consumers.
+[SPEAKER_00]: And they care about product safety.
+[SPEAKER_00]: They care about quality ingredients.
+[SPEAKER_00]: They care about getting the proper
+medicine for the condition that they have.
+[SPEAKER_00]: So it's really how do you as an analytical
+laboratory kind of balance these needs.
+[SPEAKER_00]: And I think that automation in general is
+a very good tool.
+[SPEAKER_00]: That we can use to kind of satisfy these.
+[SPEAKER_00]: So there's good news.
+[SPEAKER_00]: A little bit of myth busting is that
+nothing that's being done in these labs is
+[SPEAKER_00]: new.
+[SPEAKER_00]: And it's kind of interesting.
+[SPEAKER_00]: I think since this industry grew literally
+out of garages and basements, and it's
+[SPEAKER_00]: been underground for so long, that there's
+still kind of a lot of tribal knowledge,
+[SPEAKER_00]: even in the laboratory setting out there.
+[SPEAKER_00]: And a lot of kind of belief that they're
+unique and that the things they're doing
+[SPEAKER_00]: have never been done before.
+[SPEAKER_00]: But that's absolutely not true.
+[SPEAKER_00]: All the things that are being done in the
+analytical lab for cannabis is all stuff
+[SPEAKER_00]: that has been used for a long time and is
+very well established.
+[SPEAKER_00]: Yes, the application's new.
+[SPEAKER_00]: But the methods are out there.
+[SPEAKER_00]: They're using liquid and gas
+chromatography, mass spectrometry,
+[SPEAKER_00]: microbial contamination, measurement via
+whether it's PCR or plating out and doing
+[SPEAKER_00]: colony counts.
+[SPEAKER_00]: I mean, this is not new stuff.
+[SPEAKER_00]: And I think this is good news for the
+cannabis industry.
+[SPEAKER_00]: There's a lot of technology and a lot of
+knowledge out there related to the food,
+[SPEAKER_00]: agriculture, and consumer product safety
+testing markets, drug discovery markets,
+[SPEAKER_00]: the information's out there.
+[SPEAKER_00]: So what is usually done at a cannabis
+facility when they're doing testing?
+[SPEAKER_00]: Well, it depends on what state you live
+in.
+[SPEAKER_00]: Unfortunately, the regulations fluctuate
+quite wildly depending on where you are
+[SPEAKER_00]: geographically in the country.
+[SPEAKER_00]: But let's look at some of the common
+panels that are done.
+[SPEAKER_00]: So moisture content, potency analysis,
+terpene analysis, foreign matter
+[SPEAKER_00]: inspections, microbial screening,
+mycotoxin screening, which mycotoxin is
+[SPEAKER_00]: mold, residual solvent if it happens to be
+an extract or a shatter.
+[SPEAKER_00]: You don't want to probably be smoking an
+extract that has a lot of butane left over
+[SPEAKER_00]: in it, for example.
+[SPEAKER_00]: So this is important to look at.
+[SPEAKER_00]: Heavy metal screening is another one.
+[SPEAKER_00]: And that heavily relies on the type of
+fertilizer and the growing conditions that
+[SPEAKER_00]: the plants are in because they're very
+good at soaking up what's in the soil
+[SPEAKER_00]: around them.
+[SPEAKER_00]: And also, as I've already mentioned,
+the pesticide residue analysis.
+[SPEAKER_00]: So the ones I have highlighted in green
+are really amenable to automation.
+[SPEAKER_00]: I'm going to talk a little bit more about
+that.
+[SPEAKER_00]: So let's look at the protocols that are
+done in a typical potency analysis or
+[SPEAKER_00]: pesticide analysis.
+[SPEAKER_00]: Well, the workflows are very similar.
+[SPEAKER_00]: The steps that are used are things that
+are used in industries all over.
+[SPEAKER_00]: You're going to be grinding samples,
+homogenizing samples, adding extraction
+[SPEAKER_00]: solvents, vortexing and mixing your
+samples in your extraction protocol,
+[SPEAKER_00]: probably doing some kind of separation,
+whether it's a filtration or doing a solid
+[SPEAKER_00]: phase extraction, extracting your analyte
+of interest, and then doing an analysis.
+[SPEAKER_00]: So these are common things.
+[SPEAKER_00]: And these are things that Hamilton has a
+lot of experience automating.
+[SPEAKER_00]: And I'm going to talk specifically kind of
+about separation and cleanup or solid
+[SPEAKER_00]: phase extraction that's used in pesticide
+analysis.
+[SPEAKER_00]: So we have some results here, some quick
+data.
+[SPEAKER_00]: It's very brief.
+[SPEAKER_00]: But it kind of shows, it gives you guys a
+flavor for what we do and some of the
+[SPEAKER_00]: solutions that we have that are applicable
+to this market.
+[SPEAKER_00]: So in separations, we did a quick study
+here comparing three different sample
+[SPEAKER_00]: matrices.
+[SPEAKER_00]: It's flour, edible, and concentrate.
+[SPEAKER_00]: And this is done with one of our partners
+in California, a very reputable lab there.
+[SPEAKER_00]: So this is using a device that we have,
+an empty little device called our MPE
+[SPEAKER_00]: squared.
+[SPEAKER_00]: It's a horrible acronym.
+[SPEAKER_00]: I'm not going to tell you what it stands
+for.
+[SPEAKER_00]: But it's basically just a positive
+pressure extraction module.
+[SPEAKER_00]: And what you're able to do with this
+module, as you can see in the little
+[SPEAKER_00]: cartoon there, is input a filter plate,
+for example, a 96-well filter plate,
+[SPEAKER_00]: pull that into the unit, have a collection
+plate underneath it, and apply pressurized
+[SPEAKER_00]: gas.
+[SPEAKER_00]: And you can basically do a one-shot
+filtration of 96 samples.
+[SPEAKER_00]: So if you've ever done hand filtration in
+a lab, like, for example, a syringe
+[SPEAKER_00]: filter, you know it's a huge pain.
+[SPEAKER_00]: I mean, you've got to put a sample in a
+syringe.
+[SPEAKER_00]: It's usually a lure lock filter.
+[SPEAKER_00]: You've got to push it through manually.
+[SPEAKER_00]: It's kind of a pain.
+[SPEAKER_00]: So when you have something like this,
+you can do a full plate in one shot.
+[SPEAKER_00]: So we looked at a comparison between that
+traditional manual filtration with the
+[SPEAKER_00]: syringe and syringe filter.
+[SPEAKER_00]: We looked at some samples that we filtered
+on our unit and compared them.
+[SPEAKER_00]: So this is a table showing the results
+here.
+[SPEAKER_00]: The thing to take away is if you compare
+the mean values that we measured for the
+[SPEAKER_00]: analytes with the manual method compared
+to the MPE squared, we typically had
+[SPEAKER_00]: higher mean values that we were measuring.
+[SPEAKER_00]: We don't really know why this is.
+[SPEAKER_00]: But it's a trend that we consistently
+noticed.
+[SPEAKER_00]: And if you look at the standard deviation
+as a percentage of the mean, you can see
+[SPEAKER_00]: that we had a better standard deviation,
+which, at the end of the day, means your
+[SPEAKER_00]: data is more reproducible and more
+reliable.
+[SPEAKER_00]: Other things to highlight from the study
+are savings on consumables and time.
+[SPEAKER_00]: So this lab happened to tell us that they
+probably saved at least 30 seconds per
+[SPEAKER_00]: sample going with the automated method and
+40% on consumables going with the plate
+[SPEAKER_00]: and a lot less waste generation,
+for example, and a lot less manual
+[SPEAKER_00]: intervention.
+[SPEAKER_00]: Another highlight of this unit that we've
+used for solid phase extraction or a
+[SPEAKER_00]: cleanup step in pesticide analysis.
+[SPEAKER_00]: So typically when you're doing a pesticide
+analysis, you add your sample,
+[SPEAKER_00]: some kind of internal standard,
+water.
+[SPEAKER_00]: You're adding in some kind of extraction
+solvent, some salts to promote separation.
+[SPEAKER_00]: You spin it down or do a separation step.
+[SPEAKER_00]: And then you take that supernatant.
+[SPEAKER_00]: And that supernatant has to be cleaned up
+again.
+[SPEAKER_00]: So typically what happens is that
+supernatant goes into a tube manually with
+[SPEAKER_00]: some resin.
+[SPEAKER_00]: You shake it, vortex it, mix it,
+spin it down again, transfer that into
+[SPEAKER_00]: your machine for analysis.
+[SPEAKER_00]: Well, in this case, we ran that normal
+standard method.
+[SPEAKER_00]: And then we just took a plate that had the
+cleanup resin in it, directly transferred
+[SPEAKER_00]: the supernatant sample into there,
+pushed it through in our device,
+[SPEAKER_00]: and went straight to the analytical
+machine.
+[SPEAKER_00]: And so here's, again, a table summarizing
+the results.
+[SPEAKER_00]: One thing to note is the recovery,
+the pesticide recovery was significantly
+[SPEAKER_00]: lower with the automated method.
+[SPEAKER_00]: And we think there's things that can be
+done to increase that, but overall not
+[SPEAKER_00]: bad.
+[SPEAKER_00]: We have the recovery there.
+[SPEAKER_00]: And depending on what state you're in,
+how they set their limit, how they
+[SPEAKER_00]: regulate pesticides, the recovery may not
+be a huge issue.
+[SPEAKER_00]: And there's things you can do to correct
+for that, for example, with internal
+[SPEAKER_00]: standards.
+[SPEAKER_00]: But one thing to highlight about this is
+the savings on prep time.
+[SPEAKER_00]: About an hour over 96 samples.
+[SPEAKER_00]: And I know this doesn't sound like much to
+people, but we'll talk about how sample
+[SPEAKER_00]: throughput is likely going to increase
+here very soon for a lot of these labs.
+[SPEAKER_00]: There's other options that we have on our
+instruments.
+[SPEAKER_00]: And people are unaware of these,
+so I just thought I'd kind of throw them
+[SPEAKER_00]: out there.
+[SPEAKER_00]: There's companies, our collaborators
+called DPX Technologies, that actually
+[SPEAKER_00]: offers pipette tips that have resin
+prepacked in the tips.
+[SPEAKER_00]: So you can do extractions in the pipette
+tip.
+[SPEAKER_00]: You don't even have to use other sources
+of lab ware.
+[SPEAKER_00]: You basically pipette it into the tip,
+and you can do some mixing in the tip and
+[SPEAKER_00]: do a cleanup, for example, just right
+there in there.
+[SPEAKER_00]: In the tip.
+[SPEAKER_00]: So these are huge time savers.
+[SPEAKER_00]: These are cost savers.
+[SPEAKER_00]: And they eliminate a lot of manual
+intervention and a lot of these workflows.
+[SPEAKER_00]: And then genomics.
+[SPEAKER_00]: We've heard some awesome talks here about
+really the power of genomics and how
+[SPEAKER_00]: that's going to increase and how that's
+going to actually take to the next level,
+[SPEAKER_00]: I think, cannabis as a medicinal product
+when you can dial in strains that are
+[SPEAKER_00]: going to be exactly what you need to treat
+your symptoms.
+[SPEAKER_00]: So we've worked with medicinal genomics.
+[SPEAKER_00]: And also cortigen, you know, and
+automating some of their kits,
+[SPEAKER_00]: having their kits available on our
+platforms to really just, at the end of
+[SPEAKER_00]: the day, you load up your samples on the
+robot and you click go.
+[SPEAKER_00]: And you can do some of these genetic
+profiling, microbial contamination tests,
+[SPEAKER_00]: plant sex, strain identification,
+really walk away solutions.
+[SPEAKER_00]: So I'm going to wrap up here by kind of
+putting it all together.
+[SPEAKER_00]: So the point of automation is,
+you know, really there's a couple points
+[SPEAKER_00]: to make.
+[SPEAKER_00]: The speed and accuracy definitely are
+things to think about from a laboratory
+[SPEAKER_00]: perspective.
+[SPEAKER_00]: Plan for demand growth, because I'll just
+give you an example in the state of
+[SPEAKER_00]: California right now.
+[SPEAKER_00]: It's estimated that probably like five to
+six percent of the cannabis samples are
+[SPEAKER_00]: actually tested in labs.
+[SPEAKER_00]: Well, in 2018, eight months from now,
+that's going to be mandated 100 percent.
+[SPEAKER_00]: So that's a 20-fold increase in sample
+throughput.
+[SPEAKER_00]: And it's going to be very difficult to
+handle.
+[SPEAKER_00]: The point is automation has to be in the
+lab.
+[SPEAKER_00]: And I think it's very important for labs
+to consider it now, where maybe not
+[SPEAKER_00]: necessarily they don't have the sample
+throughput, but they're going to be hit
+[SPEAKER_00]: with it soon.
+[SPEAKER_00]: And you want to be familiar with the
+automation aspect of it now, before you
+[SPEAKER_00]: have 4,000 samples backlogged and you have
+people screaming at you from, you know,
+[SPEAKER_00]: from every end.
+[SPEAKER_00]: And really, some of the things that I
+talked about, you know, the dry labbing,
+[SPEAKER_00]: things like that, the scandals,
+when you have automation, you have data
+[SPEAKER_00]: tracking, you have validation,
+you have things that protect consumers at
+[SPEAKER_00]: the end of the day to prevent things like
+that from happening.
+[SPEAKER_00]: If you can go back and have a data trail,
+an audit trail, to show that things were
+[SPEAKER_00]: actually tested, I mean, you can't fight,
+you know, you can't fake that.
+[SPEAKER_00]: And reproducibility is key in this
+industry.
+[SPEAKER_00]: And we're going to see a huge demand,
+I think, in the near future.
+[SPEAKER_00]: So Hamilton's here.
+[SPEAKER_00]: We had the experience and just wanted to
+let you guys know kind of who we are and
+[SPEAKER_00]: what we do.
+[SPEAKER_00]: And just end with a quote that I think
+really aligns nicely from Joycelyn Elders,
+[SPEAKER_00]: who's former Surgeon General of the U.S.
+[SPEAKER_00]: This is from 2007.
+[SPEAKER_00]: You've probably read this.
+[SPEAKER_00]: The evidence is overwhelming that
+marijuana can relieve certain types of
+[SPEAKER_00]: pain, nausea, vomiting, other symptoms
+caused by such illnesses as MS,
+[SPEAKER_00]: cancer, AIDS, or harsh drugs sometimes
+used to treat them.
+[SPEAKER_00]: It's the same theme in the conference.
+[SPEAKER_00]: We know it works.
+[SPEAKER_00]: We know it's very efficient in treating a
+lot of things out there.
+[SPEAKER_00]: And ultimately, Hamilton is aligned with
+the cause.
+[SPEAKER_00]: We were concerned about consumer safety.
+[SPEAKER_00]: You know, we're here to protect consumers.
+[SPEAKER_00]: We push science forward.
+[SPEAKER_00]: So if we can be a part of this whole
+movement, we're here.
+[SPEAKER_00]: So thank you.
+Thank you.

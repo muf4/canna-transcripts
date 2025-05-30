@@ -1,0 +1,887 @@
+[SPEAKER_01]: I'm going to talk about net radiation,
+specifically the four components and then
+[SPEAKER_01]: selection among sensors.
+[SPEAKER_01]: Bruce will talk a bit about radiation
+frost and non-destructive measurements of
+[SPEAKER_01]: leaf chlorophyll and then I'll talk about
+hyperspectory reflectance and if we get
+[SPEAKER_01]: that far and if people are interested we
+can speak a bit about soil oxygen and
+[SPEAKER_01]: barometric pressure but we'll just see
+where we're at after we get to the end of
+[SPEAKER_01]: the reflectance stuff.
+[SPEAKER_01]: Okay yeah as long as interest is still
+there people's eyes are open at that
+[SPEAKER_01]: point.
+[SPEAKER_01]: Alright so as before if you have any
+questions please feel free to ask.
+[SPEAKER_01]: I don't have that many slides this time I
+might make use of the of the board and a
+[SPEAKER_01]: lot of what we've covered already when we
+talked about pyranometers and infrared
+[SPEAKER_01]: radiometers relates directly to net
+radiometers, the instruments that we use
+[SPEAKER_01]: to measure net radiation and so we won't
+talk maybe as much about principles of
+[SPEAKER_01]: sensors in the in the net radiation
+section.
+[SPEAKER_01]: So net radiation is just the difference
+between incoming radiation at the surface
+[SPEAKER_01]: and outgoing radiation at the surface and
+there are both short wave and long wave
+[SPEAKER_01]: components that we have to consider.
+[SPEAKER_01]: So I passed out a magnet if you don't have
+one there's more down here and you're free
+[SPEAKER_01]: to take one that has the exact same
+picture that you that you see right here.
+[SPEAKER_01]: These are typical values of the four
+different components that make up net
+[SPEAKER_01]: radiation.
+[SPEAKER_01]: This would be representative of a clear
+summer day over vegetation near solar noon
+[SPEAKER_01]: so when the Sun is in the middle of the
+sky.
+[SPEAKER_01]: So the largest component of net radiation
+is the incoming shortwave component 100
+[SPEAKER_01]: watts per meter squared is a reasonable
+value for midday in the summertime.
+[SPEAKER_01]: Then the vegetation or soil whatever is at
+the surface in the summertime usually it's
+[SPEAKER_01]: vegetation is a good absorber of shortwave
+radiation.
+[SPEAKER_01]: So a much smaller amount is being
+reflected about 200 watts per meter
+[SPEAKER_01]: squared is a good estimate for vegetation.
+[SPEAKER_01]: So the difference between these two the
+incoming shortwave minus the outgoing
+[SPEAKER_01]: shortwave is net shortwave so we have a
+positive value of 800 watts per meter
+[SPEAKER_01]: squared net shortwave at the surface.
+[SPEAKER_01]: So a term that you're probably all
+familiar with is albedo.
+[SPEAKER_01]: That's the the broadband shortwave
+reflectivity and so essentially it's just
+[SPEAKER_01]: the ratio of these two numbers.
+[SPEAKER_01]: In our example would be 200 divided by
+1000 so it's the reflected shortwave
+[SPEAKER_01]: divided by the incoming shortwave.
+[SPEAKER_01]: That would be 0.2 or 20 percent.
+[SPEAKER_01]: That's a really reasonable value for green
+vegetation when the Sun is in the middle
+[SPEAKER_01]: of the sky.
+[SPEAKER_01]: Now we switch over to the longwave side we
+also have an incoming longwave component
+[SPEAKER_01]: and an emitted longwave component.
+[SPEAKER_01]: So if the sky is cloud free and a lot of
+you are just outside with me pointing
+[SPEAKER_01]: infrared sensors up and measuring the sky
+was quite cold but we found that the
+[SPEAKER_01]: clouds were a bit warmer than the blue
+sky.
+[SPEAKER_01]: So the sky is emitting longwave radiation
+towards the surface and the surface is
+[SPEAKER_01]: emitting longwave radiation back towards
+the sky but the reason the incoming
+[SPEAKER_01]: radiation from the sky is lower than the
+emitted radiation from the surface is the
+[SPEAKER_01]: sky is colder than the ground surface.
+[SPEAKER_01]: At least it typically always is in the
+summertime especially if the sky is clear.
+[SPEAKER_01]: If it's cloudy they can be pretty close
+and these numbers can be a lot closer.
+[SPEAKER_01]: So if we were to actually take the
+measurements that we are making outside I
+[SPEAKER_01]: think a lot of us were seeing like
+negative 20 negative 30 Celsius for the
+[SPEAKER_01]: sky temperature that we were measuring
+with those infrared sensors and we put
+[SPEAKER_01]: that temperature in the Stefan-Boltzmann
+equation.
+[SPEAKER_01]: Let me just write that over here on the
+board.
+[SPEAKER_01]: It was in an early slide but just to
+remind
+[SPEAKER_01]: everyone so energy is equal to a constant
+that we use a sigma times the absolute
+[SPEAKER_01]: temperature raised to the fourth power.
+[SPEAKER_01]: So if we were to take one of our
+measurements outside we'll just say the
+[SPEAKER_01]: blue sky was negative 30 Celsius and we
+were to plug it into this equation we
+[SPEAKER_01]: would get a number that's a lot lower than
+300 watts per meter squared.
+[SPEAKER_01]: The reason why is those infrared
+radiometers we were using outside they're
+[SPEAKER_01]: only measuring the wavelengths between 8
+and 14 micron.
+[SPEAKER_01]: You remember from the infrared
+presentation that I gave this morning when
+[SPEAKER_01]: we're trying to measure temperature we
+have to have sensors that have a filter
+[SPEAKER_01]: over them that only gives us 8 to 14
+micron because that's the atmospheric
+[SPEAKER_01]: window where the sensor can effectively
+see through the atmosphere to the surface
+[SPEAKER_01]: that we're trying to measure the
+temperature of.
+[SPEAKER_01]: So when we're trying to measure net
+radiation we don't want the 8 to 14 micron
+[SPEAKER_01]: filter on our long wave radiation sensors
+because we're trying to measure all of the
+[SPEAKER_01]: radiation coming from either the
+atmosphere or the land surface.
+[SPEAKER_01]: We're not that interested in the
+temperature in other words and we don't
+[SPEAKER_01]: want to see through the atmosphere and
+measure the cold temperature.
+[SPEAKER_01]: We want to actually capture the radiation
+coming from the air molecules and the
+[SPEAKER_01]: clouds and everything that's in the air.
+[SPEAKER_01]: Long wave sensors don't have an 8 to 14
+micron sensor on them like the infrared
+[SPEAKER_01]: temperature sensor does and that's why if
+we were to plug in negative 30 Celsius
+[SPEAKER_01]: here we would wouldn't get 300 watts per
+meter squared.
+[SPEAKER_01]: I can't remember what negative 30 Celsius
+is when we plug it into the
+[SPEAKER_01]: Stefan-Boltzmann equation but it's a lot
+closer to like 150 or 200 watts per meter
+[SPEAKER_01]: squared.
+[SPEAKER_01]: That being said the sky when we're talking
+about all of the long wave wavelengths the
+[SPEAKER_01]: sky is still colder than the ground
+surface and so there's less long wave
+[SPEAKER_01]: coming in from the sky than what's being
+emitted from the surface.
+[SPEAKER_01]: In this example the net long wave
+radiation is negative 150 watts per meter
+[SPEAKER_01]: squared and so net radiation then is just
+the sum of these two numbers.
+[SPEAKER_01]: Net short wave plus net long wave gives us
+net radiation that's 650 watts per meter
+[SPEAKER_01]: squared and essentially that's what our
+equation here says.
+[SPEAKER_01]: The symbol we use for short wave is short
+wave SW and then subscript I for incoming,
+[SPEAKER_01]: subscript O for outgoing, symbol for long
+wave is LW, same subscripts.
+[SPEAKER_01]: Any ideas of what these values will look
+like for the winter over snow?
+[SPEAKER_01]: Everybody has the magnet but don't cheat.
+[SPEAKER_01]: Say it loud.
+[SPEAKER_01]: Exactly right so you're going to get a lot
+greater reflectance here because it's snow
+[SPEAKER_01]: on the surface instead of vegetation.
+[SPEAKER_01]: The albedo of snow is often around 0.7 or
+0.8 if the snow is kind of old and dirty
+[SPEAKER_01]: or like 0.8 to even 0.9 if the snow is
+fresh.
+[SPEAKER_01]: It's really reflective.
+[SPEAKER_01]: How does this one change?
+[SPEAKER_01]: We know there's going to be greater
+reflected radiation but how does this one
+[SPEAKER_01]: change in the winter?
+[SPEAKER_01]: What's that?
+[SPEAKER_01]: Yeah but you're cheating you've got the
+magnet.
+[SPEAKER_01]: No I'm kidding I'm kidding it's okay.
+[SPEAKER_01]: So we all know that the seasons change
+right and the reason the seasons change is
+[SPEAKER_01]: because the Sun angles get much lower in
+the winter versus summer and so this
+[SPEAKER_01]: number gets a lot lower just because the
+Sun is at a much lower angle it's winter.
+[SPEAKER_01]: So if this guy is lower we have less
+overall short wave coming in but we have a
+[SPEAKER_01]: much larger reflected component because we
+have snow on the surface.
+[SPEAKER_01]: What about these two?
+[SPEAKER_01]: How do they change in winter time?
+[SPEAKER_01]: So remember these ones are dependent on
+temperatures.
+[SPEAKER_01]: Yeah exactly it's colder in the winter
+than it is in the summer so that the sky
+[SPEAKER_01]: gets a little bit colder and this number
+gets smaller but not a lot but the surface
+[SPEAKER_01]: actually gets a lot colder and so this
+number gets quite a bit smaller.
+[SPEAKER_01]: So now if we look at and everybody has the
+magnet reasonable values for the middle of
+[SPEAKER_01]: the winter in the middle of the day over a
+snow covered surface.
+[SPEAKER_01]: Incoming shortwave is only about 40% of
+what it is in the summer 400 watts per
+[SPEAKER_01]: meter squared.
+[SPEAKER_01]: The reflected component is a lot bigger
+because the snow has a high albedo.
+[SPEAKER_01]: Somebody that can do math in their head
+what's 350 divided by 400 that's about
+[SPEAKER_01]: 0.85 roughly I think yeah 0.875 right so
+the albedo in this example is almost 90%
+[SPEAKER_01]: that's a high reflectivity.
+[SPEAKER_01]: Then you can see the incoming long wave
+from the sky does go down a little bit but
+[SPEAKER_01]: not as much as the outgoing long wave from
+the surface.
+[SPEAKER_01]: So essentially in the winter time the sky
+temperature and the surface temperature
+[SPEAKER_01]: are closer to the same value and they're
+both cold.
+[SPEAKER_01]: So our net shortwave here is positive 50
+our net long wave there is negative 50 and
+[SPEAKER_01]: so the net radiation is actually zero in
+this example.
+[SPEAKER_01]: So this is true of the middle of the
+winter.
+[SPEAKER_01]: What about at night what happens?
+[SPEAKER_01]: Essentially the yellow arrows and the
+yellow numbers go away.
+[SPEAKER_01]: We only have long wave at night.
+[SPEAKER_01]: So if we only have long wave at night that
+means net radiation is a negative number
+[SPEAKER_01]: at night and that's why it cools off a lot
+at night.
+[SPEAKER_01]: The surface is now losing energy to the
+atmosphere rather than gaining energy as
+[SPEAKER_01]: in the day.
+[SPEAKER_01]: So the reason that we are interested in
+measuring net radiation is it's a major
+[SPEAKER_01]: driver of surface processes.
+[SPEAKER_01]: I kind of just explained one heating and
+cooling but another one is
+[SPEAKER_01]: evapotranspiration.
+[SPEAKER_01]: So in many cases net radiation is the
+biggest driver or the biggest contributor
+[SPEAKER_01]: to evapotranspiration.
+[SPEAKER_01]: Vapor pressure deficit which Bruce talked
+about a lot this morning is another one of
+[SPEAKER_01]: the major drivers of evapotranspiration.
+[SPEAKER_01]: So there's lots of reasons that net
+radiation could be applicable especially
+[SPEAKER_01]: in environmental and ecological studies.
+[SPEAKER_01]: And so here's a slide showing the surface
+energy balance and here's a simple surface
+[SPEAKER_01]: energy balance equation.
+[SPEAKER_01]: Net radiation is a major component and so
+we won't consider the radiation terms in
+[SPEAKER_01]: too much detail.
+[SPEAKER_01]: They were on the previous slide but you've
+got incoming short wave streams and then
+[SPEAKER_01]: the outgoing the reflected short wave
+streams and long wave radiation coming
+[SPEAKER_01]: from clouds and sky whatever is in the sky
+that has a temperature is going to be
+[SPEAKER_01]: emitting long wave radiation towards the
+surface and then plants and soil whatever
+[SPEAKER_01]: is at the surface is going to be emitting
+radiation back towards the sky.
+[SPEAKER_01]: The G term is the the soil heat flux so
+the flux of energy into the ground.
+[SPEAKER_01]: The H term is the sensible heat flux the
+heat gain or loss due to conduction and
+[SPEAKER_01]: convection.
+[SPEAKER_01]: It usually is heat loss during the day
+because often the surface is warmer than
+[SPEAKER_01]: the air but not always the surface can be
+colder than the air so there can be a
+[SPEAKER_01]: sensible heat flux towards the surface.
+[SPEAKER_01]: And then the LE term is the the latent
+heat loss which is the combination of
+[SPEAKER_01]: evaporation and transpiration.
+[SPEAKER_01]: So there are other terms like
+photosynthesis would be a small
+[SPEAKER_01]: contributor and there can be heat storage
+in the plants themselves.
+[SPEAKER_01]: Typically heat storage doesn't happen in
+crops but can in forests.
+[SPEAKER_01]: So we just defined those but here's the
+real point.
+[SPEAKER_01]: The available energy and we call the
+difference between net radiation and soil
+[SPEAKER_01]: heat flux as available energy because
+that's everything that's available to do
+[SPEAKER_01]: things like evaporate water or heat the
+surface for example.
+[SPEAKER_01]: We often find when we make measurements of
+all of these terms like at eddy covariance
+[SPEAKER_01]: sites for example when we can measure
+sensible heat flux and latent heat flux
+[SPEAKER_01]: with gas analyzers and sonic anemometers
+we often find that the available energy is
+[SPEAKER_01]: not balanced by the heat fluxes at many
+measurement sites.
+[SPEAKER_01]: It should be the energy coming in should
+equal the energy going out.
+[SPEAKER_01]: So the real point is net radiation
+measurements have to be accurate for
+[SPEAKER_01]: surface energy balance studies.
+[SPEAKER_01]: So I'll talk a bit about net radiometers
+and I'll also talk a little bit about net
+[SPEAKER_01]: radiation modeling because earlier we were
+talking many routine weather stations that
+[SPEAKER_01]: we have like weather networks they're
+going to have a pyranometer on there to
+[SPEAKER_01]: measure the incoming shortwave radiation
+but a lot of times they don't have any
+[SPEAKER_01]: other radiometers.
+[SPEAKER_01]: When we were talking about photosynthetic
+radiation earlier they typically don't
+[SPEAKER_01]: weather stations typically don't have PAR
+sensors on them to measure the
+[SPEAKER_01]: photosynthetically active radiation and
+they often don't have a net radiometer on
+[SPEAKER_01]: there to measure net radiation.
+[SPEAKER_01]: You can model net radiation from incoming
+shortwave radiation and I'll talk about
+[SPEAKER_01]: that in addition to measurements of net
+radiation with net radiometers.
+[SPEAKER_01]: There are four kinds of net radiometers
+and I'll start with the most complex and
+[SPEAKER_01]: then I'll move to the simplest.
+[SPEAKER_01]: Most of the time you don't see too many of
+the intermediate types of net radiometers
+[SPEAKER_01]: usually there's four component instruments
+which are the most complex and they're
+[SPEAKER_01]: quite common or there's single component
+instruments which are the simplest and
+[SPEAKER_01]: they're quite common.
+[SPEAKER_01]: A four component net radiometer has an
+individual sensor for measuring the four
+[SPEAKER_01]: components that we just described.
+[SPEAKER_01]: So you've got an upward looking
+pyranometer that measures the incoming
+[SPEAKER_01]: shortwave.
+[SPEAKER_01]: You've got a downward looking pyranometer
+that measures the reflected shortwave.
+[SPEAKER_01]: You've got an upward looking pergeometer
+that measures the incoming longwave and
+[SPEAKER_01]: you've got a downward looking pergeometer
+that measures the emitted longwave.
+[SPEAKER_01]: Pyranometer is the name of the sensor for
+shortwave radiation measurements.
+[SPEAKER_01]: Pergeometer, kind of a funny word,
+is the name of the sensor for measuring
+[SPEAKER_01]: the longwave radiation.
+[SPEAKER_01]: So they're very similar instruments.
+[SPEAKER_01]: Both of them consist of a thermopile
+detector and Bruce talked about
+[SPEAKER_01]: thermopiles pyranometers earlier today.
+[SPEAKER_01]: Essentially it's a device that measures
+the heat difference across the top surface
+[SPEAKER_01]: and the bottom surface of the plate.
+[SPEAKER_01]: Then over top of the thermopile there's a
+black body absorber.
+[SPEAKER_01]: So the black body is just used to absorb
+all of the incident radiation on it.
+[SPEAKER_01]: Pyranometers have a glass dome over top of
+the thermopile and black body detector.
+[SPEAKER_01]: The reason for the glass dome is twofold.
+[SPEAKER_01]: One is to give it accurate cosine or
+angular response and the other is to block
+[SPEAKER_01]: all of the longwave radiation.
+[SPEAKER_01]: So for a pyranometer we're only interested
+in the shortwave wavelengths.
+[SPEAKER_01]: The glass is only transmissive to
+shortwave radiation.
+[SPEAKER_01]: So we have to put a glass dome over top of
+the black body so that it blocks the
+[SPEAKER_01]: longwave, lets the shortwave through.
+[SPEAKER_01]: Therefore the black body will only absorb
+the shortwave and the thermopile will only
+[SPEAKER_01]: measure the shortwave radiation.
+[SPEAKER_01]: So the downward looking pyranometer is the
+same thing.
+[SPEAKER_01]: It's just inverted.
+[SPEAKER_01]: It's one of them that's mounted upside
+down.
+[SPEAKER_01]: The pergeometer is very similar.
+[SPEAKER_01]: The only difference is instead of having a
+glass dome it has a silicon dome over top
+[SPEAKER_01]: of the black body.
+[SPEAKER_01]: I know what I've drawn here doesn't look
+like a dome shape.
+[SPEAKER_01]: Sometimes the pergeometers will have a
+small dome shape, other times it'll just
+[SPEAKER_01]: be a flat surface.
+[SPEAKER_01]: So it's actually a silicon window rather
+than a dome.
+[SPEAKER_01]: So the reason that we use a silicon dome
+is because it blocks the shortwave
+[SPEAKER_01]: radiation and transmits the longwave
+radiation.
+[SPEAKER_01]: A pergeometer is designed to measure
+longwave.
+[SPEAKER_01]: We have to block the shortwave and allow
+only the longwave through so that the
+[SPEAKER_01]: black body absorber can absorb it and the
+thermopile can measure it.
+[SPEAKER_01]: So here again you've got one up,
+one down to measure the short and
+[SPEAKER_01]: longwave.
+[SPEAKER_01]: Some examples of this type of net
+radiometer are the Huxaflux, that's a
+[SPEAKER_01]: Dutch company.
+[SPEAKER_01]: They both build four component instruments
+that work very well and I'll show you some
+[SPEAKER_01]: pictures in a minute.
+[SPEAKER_01]: Apogee Instruments also builds one.
+[SPEAKER_01]: I don't really have a good demo to show
+you but I will pass this around so you can
+[SPEAKER_01]: see what an instrument actually looks
+like.
+[SPEAKER_01]: So this sensor here with the white
+diffuser on the top is the upward looking
+[SPEAKER_01]: pyranometer.
+[SPEAKER_01]: I know I just said they typically have
+glass domes.
+[SPEAKER_01]: This one doesn't have a glass dome,
+it has an acrylic diffuser which is also
+[SPEAKER_01]: transmissive to the shortwave wavelengths.
+[SPEAKER_01]: The bottom pyranometer is a glass window,
+that's this one.
+[SPEAKER_01]: The two pergeometers have flat black
+windows that are made of silicon.
+[SPEAKER_01]: They look the same up and down.
+[SPEAKER_01]: You're welcome to have a look.
+[SPEAKER_00]: Yes?
+[SPEAKER_00]: For these ones?
+[SPEAKER_01]: The Huxaflux is probably, these numbers
+are going to be in US dollars so I don't
+[SPEAKER_01]: know what they would be in Australian
+dollars.
+[SPEAKER_02]: The equivalent one made in Australia is
+about $6,000 or $7,000.
+[SPEAKER_01]: Okay, so yeah that's correct, Middleton
+building ones.
+[SPEAKER_02]: And I can tell you the designs of these
+things haven't changed since I did my PhD.
+[SPEAKER_02]: You have a plastic thing here and you've
+got to pass air through the whole bit to
+[SPEAKER_02]: keep the dome up, keep the condensation
+out of it.
+[SPEAKER_02]: This is the first one, I know this is not
+a commotion to lift in an Apogee workshop
+[SPEAKER_02]: though, this is the first one since I did
+a PhD.
+[SPEAKER_02]: I've ever seen it become a realistic price
+that will actually work in the field that
+[SPEAKER_02]: you haven't almost seen before.
+[SPEAKER_02]: What's the price of the Apogee one?
+[SPEAKER_02]: I don't know, it hasn't been officially
+released.
+[SPEAKER_01]: I guess I can say the price, Peter's the
+one who sells it in Australia,
+[SPEAKER_01]: but the US list price is about $2,500.
+[SPEAKER_01]: Right, but you also have to pay for
+importation and all that stuff.
+[SPEAKER_01]: This Kippen zoning unit is about $6,000 I
+think, maybe a little higher because it
+[SPEAKER_01]: comes with a heater and ventilator on it.
+[SPEAKER_01]: The Huxaflux unit is closer to $5,000,
+I think it's between $4,500 and $5,000 US
+[SPEAKER_01]: dollars.
+[SPEAKER_01]: That gives you an idea of the price tag of
+these sensors.
+[SPEAKER_01]: In a relative sense I'll compare the price
+of all of the above because we're going to
+[SPEAKER_01]: put three more pictures like this one on
+the slide here.
+[SPEAKER_01]: The next type is a net all wave radiometer
+and this one is the simplest version.
+[SPEAKER_01]: You basically have one thermal pile and
+it's sandwiched between two black body
+[SPEAKER_01]: absorbers, one on top and one on bottom.
+[SPEAKER_01]: There's two polyethylene domes over top of
+the absorbers.
+[SPEAKER_01]: What you have is a thermal pile that's
+just outputting a signal that's
+[SPEAKER_01]: proportional to the temperature difference
+between the top surface and the bottom
+[SPEAKER_01]: surface.
+[SPEAKER_01]: That temperature difference between the
+top surface and the bottom surface is
+[SPEAKER_01]: dependent on the radiation incident on the
+top and the radiation incident on the
+[SPEAKER_01]: bottom.
+[SPEAKER_01]: The reason this is called a net all wave
+radiometer is that it's measuring each
+[SPEAKER_01]: surface, the upward looking surface and
+the downward looking surface, are
+[SPEAKER_01]: measuring all of the wavelengths at the
+same time.
+[SPEAKER_01]: It's sensitive to short wave and long wave
+together.
+[SPEAKER_01]: Polyethylene actually transmits short wave
+and long wave.
+[SPEAKER_01]: The reason for the polyethylene domes is
+just to basically be a weather barrier and
+[SPEAKER_01]: keep rain and moisture and dust and dirt
+off of the black body surface.
+[SPEAKER_01]: Not all of these net all wave radiometers
+have polyethylene domes.
+[SPEAKER_01]: Probably the most common one, at least
+historically, is this REBS.
+[SPEAKER_01]: REBS stands for radiation and energy
+balance systems, model Q star 7.1.
+[SPEAKER_01]: That's an American made instrument from
+the state of Washington.
+[SPEAKER_01]: They're used a lot, especially in past
+decades.
+[SPEAKER_01]: Now it seems like the Kippenzone and
+NR-Lite II is the most common type of
+[SPEAKER_01]: these net all wave radiometers.
+[SPEAKER_01]: The REBS has the polyethylene domes.
+[SPEAKER_01]: The Kippenzone and NR-Lite II does not.
+[SPEAKER_01]: The real challenge of polyethylene domes
+is they're flimsy and you have to keep
+[SPEAKER_01]: them pressurized off in order for them to
+not collapse.
+[SPEAKER_01]: At the same time, polyethylene is better
+at transmitting short wave than it is at
+[SPEAKER_01]: transmitting long wave.
+[SPEAKER_01]: When you get different proportions of long
+wave and short wave, say clear sky versus
+[SPEAKER_01]: cloudy sky, for example, or over
+vegetation versus over snow, it can really
+[SPEAKER_01]: influence the accuracy.
+[SPEAKER_01]: The polyethylene domes, while they can
+keep it clean and free of water,
+[SPEAKER_01]: they also have their challenges.
+[SPEAKER_01]: They have to be replaced quite often
+because they're flimsy.
+[SPEAKER_01]: Birds like to peck holes in them.
+[SPEAKER_01]: The Kippenzone and NR-Lite, in doing away
+with the polyethylene domes, they get
+[SPEAKER_01]: around at least part of the problem of the
+domes.
+[SPEAKER_01]: At the same time, when the surfaces get
+wet, the radiation balance goes way out of
+[SPEAKER_01]: whack and they don't yield accurate
+measurements until they're dry.
+[SPEAKER_01]: These ones, while they're the simplest and
+the cheapest, also are the most prone to
+[SPEAKER_01]: errors.
+[SPEAKER_01]: We just talked about prices for all of
+these.
+[SPEAKER_01]: These guys are probably $1,500 to $2,000
+US, somewhere in that range.
+[SPEAKER_01]: I won't spend nearly as much time on these
+two intermediate types just because this
+[SPEAKER_01]: is the only example of this type of
+two-component instrument that I'm aware of
+[SPEAKER_01]: and it's no longer available.
+[SPEAKER_01]: It works a lot like this one, where you
+have a single thermopile that's measuring
+[SPEAKER_01]: the net difference between what's coming
+in and what's coming out.
+[SPEAKER_01]: It's just that we separate short wave and
+long wave.
+[SPEAKER_01]: We actually have two components.
+[SPEAKER_01]: One of them is measuring net short wave.
+[SPEAKER_01]: The other one is measuring net long wave.
+[SPEAKER_01]: This was a nice instrument when it was
+available, but it didn't last very long on
+[SPEAKER_01]: the market.
+[SPEAKER_01]: The other type is also kind of like that
+one, but rather than being a net device
+[SPEAKER_01]: that only gives you one signal that's
+proportional to the difference between all
+[SPEAKER_01]: of the incoming radiation and all of the
+outgoing radiation, is that they separate
+[SPEAKER_01]: the pi radiometers.
+[SPEAKER_01]: You've got two of them.
+[SPEAKER_01]: You've got an upward looking one that's
+sensitive to both the incoming short wave
+[SPEAKER_01]: and the incoming long wave, and then a
+downward looking one that's sensitive to
+[SPEAKER_01]: both the outgoing short wave and the
+outgoing long wave.
+[SPEAKER_01]: A good example of this one is the Philipp
+Schenck model 8111.
+[SPEAKER_01]: It's a European instrument.
+[SPEAKER_01]: I believe it comes from Germany,
+maybe Switzerland.
+[SPEAKER_01]: I can't remember.
+[SPEAKER_01]: This one is not a very widely used
+instrument.
+[SPEAKER_01]: Predominantly you'll see this or that one.
+[SPEAKER_01]: I said I had some pictures.
+[SPEAKER_01]: Here's what they all look like.
+[SPEAKER_01]: The Huxaflux in the kip and then the
+Apogee that I passed around the room is in
+[SPEAKER_01]: the middle.
+[SPEAKER_01]: The major advantages of a four component
+net radiometer is that you get an
+[SPEAKER_01]: individual measurement of each one of the
+four components.
+[SPEAKER_01]: That's a major advantage because typically
+that gives you higher accuracy.
+[SPEAKER_01]: I say potentially here because four
+individual sensors also means you've got
+[SPEAKER_01]: four components that might cause problems
+like if one of them isn't calibrated
+[SPEAKER_01]: correctly that can be a problem or you've
+got four of them that might get dirty for
+[SPEAKER_01]: example.
+[SPEAKER_01]: Then we already talked about price.
+[SPEAKER_01]: These tend to be higher cost.
+[SPEAKER_01]: Just one design feature that I will
+mention with regards to the Apogee is that
+[SPEAKER_01]: it has an SDI-12 output.
+[SPEAKER_01]: We get around this need for all of those
+data logger channels.
+[SPEAKER_01]: What this means is in the center box here
+on the Apogee unit, there's a circuit
+[SPEAKER_01]: board in there.
+[SPEAKER_01]: All the outputs from the individual
+radiometers are being measured by the
+[SPEAKER_01]: analog to digital converter on that
+internal circuit board.
+[SPEAKER_01]: Then we're just digitizing those signals
+and outputting an SDI-12 measurement so
+[SPEAKER_01]: that you can plug it into one single
+digital channel on your data logger and
+[SPEAKER_01]: not have to tie up all of the analog
+channels.
+[SPEAKER_01]: Now if we look at the net all wave
+radiometers, here's the two examples that
+[SPEAKER_01]: I listed in the previous slide.
+[SPEAKER_01]: There's the polyethylene domes and that
+one's the domeless model.
+[SPEAKER_01]: Again, these domes, they're better at
+transmitting short wave than they are long
+[SPEAKER_01]: wave which can lead to errors.
+[SPEAKER_01]: They don't always stay inflated.
+[SPEAKER_01]: If they get a hole in them, they'll get
+water condensing on the inside.
+[SPEAKER_01]: It can cause big problems.
+[SPEAKER_01]: Domes need to be replaced periodically.
+[SPEAKER_01]: This one, because they're domeless,
+they're exposed to the environment.
+[SPEAKER_01]: They can get wet and dirty.
+[SPEAKER_01]: The main advantages here are it only
+requires one data logger channel to make
+[SPEAKER_01]: the measurement.
+[SPEAKER_01]: Remember, it's a single detector where the
+signal that it's outputting is
+[SPEAKER_01]: proportional to the difference between
+everything that's coming in and everything
+[SPEAKER_01]: that's going out.
+[SPEAKER_01]: So that only requires one analog
+measurement.
+[SPEAKER_01]: These do tend to be smaller and lighter
+weight so they can be easier to mount to
+[SPEAKER_01]: the level.
+[SPEAKER_01]: Again, we already talked about price.
+[SPEAKER_01]: They tend to be lower cost.
+[SPEAKER_01]: But the major disadvantages, they have
+fragile domes and they're domeless.
+[SPEAKER_01]: This domeless guy requires a wind speed
+correction because if the wind's blowing
+[SPEAKER_01]: over top of it, it can change the energy
+balance.
+[SPEAKER_01]: If you have mismatched detectors,
+that can be a big problem.
+[SPEAKER_01]: Essentially what that means is you only
+have a single sensor and you've got one
+[SPEAKER_01]: detector surface on the top side of that
+sensor or thermopile and one detector
+[SPEAKER_01]: surface on the bottom side of that
+thermopile.
+[SPEAKER_01]: They have to have the same sensitivity to
+short wave and long wave and they have to
+[SPEAKER_01]: have the same sensitivity to each other.
+[SPEAKER_01]: Otherwise, they're only accurate for the
+conditions that they're calibrated to.
+[SPEAKER_01]: If the conditions are changing like they
+do in a dynamic environment, then the
+[SPEAKER_01]: mismatched detectors, so the upward
+sensitivity doesn't match the downward
+[SPEAKER_01]: sensitivity, can lead to errors.
+[SPEAKER_01]: They tend to be higher maintenance.
+[SPEAKER_01]: For example, you have to replace the domes
+and all of the above combined lead to
+[SPEAKER_01]: lower accuracy.
+[SPEAKER_01]: So this is just a summary slide and I'll
+mention that a few years ago, before
+[SPEAKER_01]: Apogee started building net radiometers,
+we were interested in potentially selling
+[SPEAKER_01]: net radiometers from other companies.
+[SPEAKER_01]: We did an extensive field study where we
+compared several different models of net
+[SPEAKER_01]: radiometers for part of the growing season
+over a uniform turf grass field in Logan,
+[SPEAKER_01]: Utah.
+[SPEAKER_01]: So the citation to our work is here if
+you're interested in getting the paper
+[SPEAKER_01]: again, shoot me an email and I will send
+you a PDF.
+[SPEAKER_01]: But the major findings are that the four
+component net radiometers did indeed
+[SPEAKER_01]: provide the most accurate measurements,
+but I put an if in here.
+[SPEAKER_01]: You have to make sure that the radiometer
+is level and you want to make sure that
+[SPEAKER_01]: the individual sensors are clean.
+[SPEAKER_01]: The net all-wave radiometers were the
+simplest, but they did have lower accuracy
+[SPEAKER_01]: and it was due to lower sensitivity to
+long wave radiation.
+[SPEAKER_01]: The last line I think is important,
+we found that net radiometers were capable
+[SPEAKER_01]: of measuring net radiation with better
+accuracy than what's often reported in the
+[SPEAKER_01]: literature.
+[SPEAKER_01]: There's quite a few studies out there like
+energy balance studies, especially at flux
+[SPEAKER_01]: tower sites, that indicate net radiation
+uncertainty is like 10 or 20 percent.
+[SPEAKER_01]: I think if you're measuring it with a four
+component net radiometer that's well
+[SPEAKER_01]: leveled and clean, then the uncertainty is
+probably lower than what's usually
+[SPEAKER_01]: reported in the literature for net
+radiation measurements.
+[SPEAKER_01]: Any questions about measuring net
+radiation?
+[SPEAKER_01]: I'll just take a minute, I don't have any
+slides for this, but I think I can make
+[SPEAKER_01]: use of the board.
+[SPEAKER_01]: I might not even need to make use of the
+board, I think I can just explain it.
+[SPEAKER_01]: For those of you that are interested in
+modeling net radiation, again we can talk
+[SPEAKER_01]: afterwards or you can send me a follow-up
+email and I can give you more detail.
+[SPEAKER_01]: For those cases when you have weather data
+and you need net radiation but the weather
+[SPEAKER_01]: data did not include a net radiometer to
+measure the net radiation, you can model
+[SPEAKER_01]: it.
+[SPEAKER_01]: The most important component that you need
+is a measurement of the incoming shortwave
+[SPEAKER_01]: radiation from a pyranometer.
+[SPEAKER_01]: If you're looking at your fridge magnet or
+if you remember my first slide,
+[SPEAKER_01]: usually the largest component of net
+radiation is the incoming shortwave
+[SPEAKER_01]: component from the Sun.
+[SPEAKER_01]: If you have that measurement, you have at
+least a reasonable idea of net radiation
+[SPEAKER_01]: and you can model the other components.
+[SPEAKER_01]: Typically how it's done is then to take a
+published value of albedo for the surface
+[SPEAKER_01]: that you're measuring.
+[SPEAKER_01]: If it's vegetation it's going to be pretty
+low around 0.2 to maybe 0.25.
+[SPEAKER_01]: If it's snow it's going to be quite a bit
+higher.
+[SPEAKER_01]: Published values of albedo are fairly
+accurate if the surface conditions don't
+[SPEAKER_01]: change dramatically.
+[SPEAKER_01]: If you're trying to do this when the
+vegetation is always green, just
+[SPEAKER_01]: estimating or taking a published value of
+the albedo and calculating the reflected
+[SPEAKER_01]: shortwave component that way works pretty
+well.
+[SPEAKER_01]: The challenge is if you're trying to do
+this over the course of say a whole year
+[SPEAKER_01]: when you might have snow or bare soil in
+the winter time and then the crops start
+[SPEAKER_01]: to come up and you have green vegetation
+and soil mixture and then the crops fill
+[SPEAKER_01]: in and you only have green vegetation for
+the most of the growing season and then
+[SPEAKER_01]: the crops a nest and they turn yellow and
+then you harvest them.
+[SPEAKER_01]: The surface can be quite dynamic over the
+course of a whole year.
+[SPEAKER_01]: You can only use values of albedo if you
+know what it is for the surface or have a
+[SPEAKER_01]: good estimate of it and if it's not
+changing significantly.
+[SPEAKER_01]: If the surface is changing a lot then you
+have to change the albedo in your model.
+[SPEAKER_01]: The way that longwave is often estimated
+is from measurements of air temperature
+[SPEAKER_01]: and relative humidity.
+[SPEAKER_01]: Then we can predict longwave pretty well
+from equations like this.
+[SPEAKER_01]: This is the Stefan-Boltzmann equation.
+[SPEAKER_01]: Emitted energy is proportional to a
+constant times the fourth power of
+[SPEAKER_01]: temperature.
+[SPEAKER_01]: If we know reasonably well what the fourth
+power of temperature is for the surface
+[SPEAKER_01]: then we can estimate longwave relatively
+well, the components being emitted because
+[SPEAKER_01]: we know that most surfaces are black
+bodies, most land surfaces are black
+[SPEAKER_01]: bodies.
+[SPEAKER_01]: If we're working with plant canopies or
+soil or snow, the emissivity right there
+[SPEAKER_01]: in the equation, this number is going to
+be close to one.
+[SPEAKER_01]: If we have a reasonable estimate of the
+surface temperature we can estimate the
+[SPEAKER_01]: emitted longwave component, so the part
+that's going from the ground to the
+[SPEAKER_01]: atmosphere from this equation.
+[SPEAKER_01]: To estimate the incoming longwave
+component we use the exact same equation
+[SPEAKER_01]: and oftentimes we use the air temperature
+as a proxy for the sky temperature.
+[SPEAKER_01]: The challenge with doing incoming longwave
+radiation estimates is this number is the
+[SPEAKER_01]: hard one and you were asking about that
+earlier.
+[SPEAKER_01]: There's ways to estimate the emissivity
+for the atmosphere and that's where the
+[SPEAKER_01]: humidity measurement comes in.
+[SPEAKER_01]: It's usually empirical equations that
+estimate atmospheric emissivity based on
+[SPEAKER_01]: sometimes air temperature but typically
+the vapor pressure of the atmosphere.
+[SPEAKER_01]: The air can be kind of high because
+atmospheric emissivity is not always that
+[SPEAKER_01]: dependent on the vapor pressure near the
+surface.
+[SPEAKER_01]: The vapor pressure that we measure at the
+surface typically comes from a relative
+[SPEAKER_01]: humidity probe that might be two meters
+off the ground but the longwave radiation
+[SPEAKER_01]: coming from the sky is coming from the
+whole depth of atmosphere from two meters
+[SPEAKER_01]: above the ground till way up in the
+atmosphere.
+[SPEAKER_01]: If the near surface vapor pressure is
+reasonable estimate of the whole column of
+[SPEAKER_01]: water in the atmosphere, then empirically
+estimating atmospheric emissivity from
+[SPEAKER_01]: near surface vapor pressure works okay.
+[SPEAKER_01]: If the near surface vapor pressure is not
+a good estimator of the whole column of
+[SPEAKER_01]: water in the atmosphere, then the
+empirical equations don't work that well.
+[SPEAKER_01]: There are ways to model net radiation if
+it's not available but I would recommend
+[SPEAKER_01]: measuring it if you have the equipment to
+do so.
+[SPEAKER_01]: If you're interested in learning more
+about how to model net radiation,
+[SPEAKER_01]: please send me an email.
+[SPEAKER_01]: I can help with that.
+[SPEAKER_01]: There's quite a bit of information in the
+literature that's been published.
+[SPEAKER_01]: There's a really good study from about
+2007 I think, maybe 2009 where some folks
+[SPEAKER_01]: at USDA in the United States compared a
+whole bunch of different incoming longwave
+[SPEAKER_01]: radiation models and assessed the actual
+accuracy relative to measurements.
+[SPEAKER_01]: Any questions?
+[SPEAKER_01]: I believe that's all I have for net
+radiation.
+[SPEAKER_01]: Thank you so much for watching.

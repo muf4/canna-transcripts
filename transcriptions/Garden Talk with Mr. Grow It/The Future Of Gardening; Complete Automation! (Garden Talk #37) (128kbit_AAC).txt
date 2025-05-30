@@ -1,0 +1,1561 @@
+[SPEAKER_01]: Coming up on Garden Talk.
+[SPEAKER_00]: The AI is, it is people training those
+systems.
+[SPEAKER_00]: Then everyone could have the power of
+those expert opinions via computer vision
+[SPEAKER_00]: without a person actually looking
+personally at their plants.
+[SPEAKER_00]: One of them would be a pH, either increase
+or decrease.
+[SPEAKER_00]: You typically don't need both.
+[SPEAKER_00]: You'll find you want to correct one
+direction only.
+[SPEAKER_00]: I built six scales which are all Wi-Fi
+enabled or part of the system and every
+[SPEAKER_00]: minute they report their weight.
+[SPEAKER_00]: You really shouldn't actually have a
+clogging issue if you always have a
+[SPEAKER_00]: pre-filter by the way for your pump.
+[SPEAKER_00]: Automation is there to help you,
+to enable you and to do a lot of the
+[SPEAKER_00]: things that you don't want to do.
+[SPEAKER_01]: What's up everybody.
+[SPEAKER_01]: If you that don't know me, my name is
+Chris aka Mr. Grow It and you're tuned
+[SPEAKER_01]: into the Garden Talk podcast.
+[SPEAKER_01]: This episode number 37.
+[SPEAKER_01]: In this episode I interviewed Simon,
+the creator of the plant studio.
+[SPEAKER_01]: Many of you like to automate your garden
+in some way, whether that be through auto
+[SPEAKER_01]: watering, environmental controls.
+[SPEAKER_01]: There are so many different things you can
+do to automate your garden.
+[SPEAKER_01]: In this episode, we talk about the future
+of gardening, complete automation.
+[SPEAKER_01]: Simon has developed a way to just about
+completely automate your garden.
+[SPEAKER_01]: So you, the gardener, could be hands off
+most of the time.
+[SPEAKER_01]: Thanks to all of you who support this
+podcast through Patreon.
+[SPEAKER_01]: If you'd like to support, you can do so by
+going to patreon.com slash Mr. Grow It.
+[SPEAKER_01]: Before we get into it, I want to
+acknowledge that one of my goals for this
+[SPEAKER_01]: podcast is to bring zero cost for
+information about gardening all plants to
+[SPEAKER_01]: the general public.
+[SPEAKER_01]: That being said, I'd like to thank the
+sponsors of this podcast who helped make
+[SPEAKER_01]: that goal possible.
+[SPEAKER_01]: Big shout out to Dutch Pro for sponsoring
+this podcast.
+[SPEAKER_01]: Dutch Pro is a plant fertilizer company
+that has been around for over 30 years.
+[SPEAKER_01]: They have base nutrients and they also
+have additives such as PK boosters,
+[SPEAKER_01]: root stimulators, CalMag, silica,
+a nutrient optimizer, and a foiler feed.
+[SPEAKER_01]: They also have pH regulators to help
+ensure that the nutrients can be uptaken
+[SPEAKER_01]: properly.
+[SPEAKER_01]: I will leave a link to Dutch Pro's Amazon
+store down in the description section
+[SPEAKER_01]: below, and you can use coupon code
+MRGROWIT10DP for a discount on their
+[SPEAKER_01]: products.
+[SPEAKER_01]: Thanks to Spider Farmer for sponsoring
+this podcast.
+[SPEAKER_01]: They have board style LED grow lights,
+bar style LED grow lights, grow tents,
+[SPEAKER_01]: inline fans, and carbon filters.
+[SPEAKER_01]: They also have complete grow tank kits,
+which include lighting, a ventilation
+[SPEAKER_01]: system, grow pots, a trellis net,
+a timer, and a monitor for both
+[SPEAKER_01]: temperature and humidity.
+[SPEAKER_01]: Coupon code MRGROWIT5 will get you a
+discount on their products, and I'll leave
+[SPEAKER_01]: a link to their Amazon store down in the
+description below.
+[SPEAKER_01]: A big supporter of this podcast is AC
+Infinity.
+[SPEAKER_01]: They sponsor this podcast, and I use their
+products.
+[SPEAKER_01]: AC Infinity now has gardening tools and
+accessories, such as heavy duty fabric
+[SPEAKER_01]: grow pots, trimmers, grow room glasses,
+drying racks, plant ties, and trellis
+[SPEAKER_01]: nets.
+[SPEAKER_01]: They also have all of the equipment needed
+for a ventilation system.
+[SPEAKER_01]: I will leave a link to AC Infinity down in
+the description section below,
+[SPEAKER_01]: and you can use discount code MRGROWIT
+during checkout for a discount on their
+[SPEAKER_01]: products.
+[SPEAKER_01]: All right.
+[SPEAKER_01]: We are back.
+[SPEAKER_01]: Welcome to the Garden Talk Podcast.
+[SPEAKER_01]: Today I am joined with Simon.
+[SPEAKER_01]: He is the creator of The Plant Studio.
+[SPEAKER_01]: How are you doing today?
+[SPEAKER_00]: Great.
+[SPEAKER_00]: Thanks.
+[SPEAKER_00]: Thanks for having me, Chris.
+[SPEAKER_01]: Thanks for coming on.
+[SPEAKER_01]: My voice is still a bit raspy.
+[SPEAKER_01]: Apologize for that.
+[SPEAKER_01]: Luckily, Simon will be doing most of the
+talking in this episode, so you won't have
+[SPEAKER_01]: to deal with my raspiness.
+[SPEAKER_01]: Yeah, I'm excited for this one today.
+[SPEAKER_01]: We're going to be talking about the future
+of gardening, so complete automation.
+[SPEAKER_01]: You've done quite a bit of work with an
+automated system box, whatever you want to
+[SPEAKER_01]: call it, an indoor grow setup called The
+Plant Studio.
+[SPEAKER_01]: Before we get too far ahead, we're going
+to be talking all about that today and
+[SPEAKER_01]: just automation in general that can be
+applied to home grow in particular,
+[SPEAKER_01]: I feel like.
+[SPEAKER_01]: Before we get into the details on all of
+that, though, can you tell us a little bit
+[SPEAKER_01]: about yourself and how you got into this
+space?
+[SPEAKER_00]: Sure.
+[SPEAKER_00]: My name is Simon Romanski.
+[SPEAKER_00]: I live in Massachusetts.
+[SPEAKER_00]: I'm originally from England.
+[SPEAKER_00]: That's where my accent comes from.
+[SPEAKER_00]: I've been growing for a few years.
+[SPEAKER_00]: I think I got into growing.
+[SPEAKER_00]: I'm a technical person, so I think I got
+into growing when I was in Disneyland.
+[SPEAKER_00]: I think it was Epcot.
+[SPEAKER_00]: There's a ride called The Living Land,
+which is a ride that goes through a
+[SPEAKER_00]: greenhouse.
+[SPEAKER_00]: I remember looking at all these different
+methods of growing and it just looked very
+[SPEAKER_00]: technical and I was blown away by it.
+[SPEAKER_00]: In particular, I remember the aeroponics
+section.
+[SPEAKER_00]: They had these plants on this track that
+would revolve around and they would be
+[SPEAKER_00]: suspended.
+[SPEAKER_00]: They're just holding the plants and the
+roots are just dangling in the air.
+[SPEAKER_00]: Then they would take them through this
+little chamber where they would get their
+[SPEAKER_00]: mist, their water and nutrients basically.
+[SPEAKER_00]: I just was blown away the fact that plants
+could even be grown that way.
+[SPEAKER_00]: I think it's always been the technical,
+the interesting, different side of growing
+[SPEAKER_00]: that I found interesting and really what
+got me started at least.
+[SPEAKER_00]: I do think a little differently after
+growing.
+[SPEAKER_00]: It's not all about the hydroponics.
+[SPEAKER_00]: I'm definitely a fan of lots of other
+living soils and things like that,
+[SPEAKER_00]: but that's basically where I really think
+I got my start from.
+[SPEAKER_01]: Nice.
+[SPEAKER_01]: I know before we started recording,
+you talked about how you went to school.
+[SPEAKER_01]: Is it mechanical engineering or software
+engineering or can you talk to us about
+[SPEAKER_01]: that?
+[SPEAKER_00]: I went for information management and
+technology.
+[SPEAKER_00]: I went to Syracuse and it's a cross
+between computer science and management.
+[SPEAKER_00]: I always say I don't consider myself a
+programmer but more of a developer.
+[SPEAKER_00]: I like making solutions.
+[SPEAKER_00]: I don't write the drivers for stuff and
+all the super technical stuff,
+[SPEAKER_00]: but there are so many tools and frameworks
+and APIs and things out there that I love
+[SPEAKER_00]: putting stuff together in order to solve
+problems.
+[SPEAKER_00]: That's what I went to school for and it's
+been a fit for me ever since.
+[SPEAKER_01]: Gotcha.
+[SPEAKER_01]: You talk about what you just mentioned.
+[SPEAKER_01]: It kind of relates to what I used to do.
+[SPEAKER_01]: I used to work for amazon.com.
+[SPEAKER_01]: I worked in the fulfillment center for
+eight years.
+[SPEAKER_01]: I was actually in their support side of
+things too, working with worldwide
+[SPEAKER_01]: operations.
+[SPEAKER_01]: One thing that they do in their
+fulfillment centers, and I'm sure there's
+[SPEAKER_01]: some people watching this that have worked
+at Amazon or work at Amazon right now,
+[SPEAKER_01]: but they pound in your head the process
+improvement side of things like
+[SPEAKER_01]: streamlining.
+[SPEAKER_01]: My mindset has always been how do we make
+things more efficient?
+[SPEAKER_01]: How do we automate things to reduce the
+amount of labor hours that are put towards
+[SPEAKER_01]: a process?
+[SPEAKER_00]: That was actually my first job was working
+in fulfillment.
+[SPEAKER_00]: I worked at a fulfillment center and I
+liked the order and inventory management
+[SPEAKER_00]: and the backend seeing the packages and
+the orders and inventory came in and
+[SPEAKER_00]: basically what I did for those companies,
+I kind of webified them.
+[SPEAKER_00]: It was dating myself a little bit.
+[SPEAKER_00]: It was a while ago where people were still
+like the internet.
+[SPEAKER_00]: Some people didn't even have dedicated
+internet access, continuous internet
+[SPEAKER_00]: access.
+[SPEAKER_00]: I basically wrote some web tools and web
+application to allow clients to look and
+[SPEAKER_00]: check on inventory and orders themselves
+without having to call the customer
+[SPEAKER_00]: service rep because when I started,
+all these calls were coming in.
+[SPEAKER_00]: I thought, well, that's crazy.
+[SPEAKER_00]: Why are you calling?
+[SPEAKER_00]: You should be able to just look that up
+yourself.
+[SPEAKER_00]: That's kind of where I began was really
+fulfillment.
+[SPEAKER_00]: Again, I just like the solution providing.
+[SPEAKER_00]: I like going back in the warehouse because
+I worked in the front office and seeing
+[SPEAKER_00]: were those pack slips or did it make sense
+for the pick pack ship part of the
+[SPEAKER_00]: fulfillment.
+[SPEAKER_00]: That's similar also with the fulfillment.
+[SPEAKER_01]: Yeah.
+[SPEAKER_01]: So definitely some similarities there and
+then you took those skills and now you've
+[SPEAKER_01]: applied them to a horticulture,
+which is pretty cool.
+[SPEAKER_01]: Can you give us a high level overview of
+the plant studio that you've created?
+[SPEAKER_00]: Sure.
+[SPEAKER_00]: It's a cultivation machine and it's
+basically there to control everything
+[SPEAKER_00]: above the ground and below the ground.
+[SPEAKER_00]: It's not really ground pots or chambers or
+whatever your grow method is, but
+[SPEAKER_00]: basically root zone and environment above.
+[SPEAKER_00]: The whole point of it was really to
+automate as much of the time consuming
+[SPEAKER_00]: stuff as possible because when it comes to
+watering, I would forget or if I'm away or
+[SPEAKER_00]: if you're doing hydroponics and you're
+wanting to monitor the pH or water levels
+[SPEAKER_00]: and temperatures and stuff like that.
+[SPEAKER_00]: So basically I did it so that I didn't
+have to spend as much time doing the stuff
+[SPEAKER_00]: that I didn't enjoy doing.
+[SPEAKER_00]: I didn't mind the plant manipulation
+stuff, but I don't like the stuff where
+[SPEAKER_00]: you have to constantly stay on top of it
+or having to go and manually change things
+[SPEAKER_00]: in the room environmentally because the
+temperature is too high or the humidity is
+[SPEAKER_00]: off or something like that.
+[SPEAKER_00]: So that was basically my, I always say I'm
+inherently lazy, but I'll also go way out
+[SPEAKER_00]: of my way to try and automate and to
+simplify it for myself.
+[SPEAKER_01]: Gotcha.
+[SPEAKER_01]: And actually on your website, I'll mention
+it right now so people can check it out if
+[SPEAKER_01]: they want to and kind of get a visual of
+what we're about to dive deeper into.
+[SPEAKER_01]: It's www.plantstud.io.
+[SPEAKER_00]: It's plant studio, but you don't even need
+the W's.
+[SPEAKER_00]: It's plantstud.io.
+[SPEAKER_00]: And so it couldn't get the dot com,
+but you know, I kind of like the dot IO
+[SPEAKER_00]: makes sense in a way because it is all
+about, you know, input and output.
+[SPEAKER_00]: So it's plant studio with the dot before
+the IO.
+[SPEAKER_01]: So check that out.
+[SPEAKER_01]: If you are interested in that,
+I'll have the link in the description
+[SPEAKER_01]: section below on YouTube.
+[SPEAKER_01]: So you can easily access that.
+[SPEAKER_01]: There's a great video right on the
+homepage, which talks about just a ton of
+[SPEAKER_01]: things within a very short period of time
+about all this automation.
+[SPEAKER_01]: So let's dive deeper into this.
+[SPEAKER_01]: Let's start with the grow area.
+[SPEAKER_01]: What size grow space is it, you know,
+and what is the plant studio made out of?
+[SPEAKER_00]: So the grow area is, it's a five by nine
+and it has, so basically a two light setup
+[SPEAKER_00]: and it's eight feet tall because height
+always becomes a big issue when growing.
+[SPEAKER_00]: A lot of people, especially indoors,
+are limited by the height.
+[SPEAKER_00]: I'm pretty fortunate to be able to have,
+you know, pretty high ceilings.
+[SPEAKER_00]: The overall dimensions inside the grow
+machine is five by 12, but the extra three
+[SPEAKER_00]: feet of space is there to accommodate,
+you know, the air conditioning,
+[SPEAKER_00]: dehumidifier, fans, and basically the
+equipment that helps manage the
+[SPEAKER_00]: environment and gives me some space to
+actually, you know, to get inside the
+[SPEAKER_00]: machine.
+[SPEAKER_00]: To tend to the plants.
+[SPEAKER_00]: And the machine itself is, the box itself
+is made by, from insulated panels that I
+[SPEAKER_00]: came up with.
+[SPEAKER_00]: It's basically wood that is sandwiches,
+some high density insulated foam,
+[SPEAKER_00]: and then these panels slot together to
+make, you know, to make a well insulated
+[SPEAKER_00]: and sealed box.
+[SPEAKER_00]: So they, you know, it's not your typical
+stick construction like frame where people
+[SPEAKER_00]: frame it and then put it up and then
+insulate it.
+[SPEAKER_00]: These are like panels.
+[SPEAKER_01]: Okay.
+[SPEAKER_01]: So this is a sealed environment,
+just to confirm.
+[SPEAKER_01]: It's a sealed environment.
+[SPEAKER_01]: You don't have an intake vent,
+an exhaust fan.
+[SPEAKER_01]: Everything's just kind of recirculating
+within that environment.
+[SPEAKER_01]: Is that correct?
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: I actually, I learned this the hard way
+because my initial grow was, I didn't have
+[SPEAKER_00]: any, I wasn't considering any kind of air
+circulation.
+[SPEAKER_00]: I mean, that's how clueless I was.
+[SPEAKER_00]: And I went away.
+[SPEAKER_00]: I came back and I was growing tomatoes in
+the early days.
+[SPEAKER_00]: And I basically came back and it was just
+a horrible stink.
+[SPEAKER_00]: And I didn't know, I thought something was
+rotten.
+[SPEAKER_00]: And basically I realized that when you
+basically drown or just deprive the
+[SPEAKER_00]: plants, not drown actually, it's like just
+remove all the CO2 from the air.
+[SPEAKER_00]: They are not happy.
+[SPEAKER_00]: Just like we wouldn't like, you know,
+getting rid of our oxygen and they just
+[SPEAKER_00]: make an crazy smell.
+[SPEAKER_00]: So when I smell and I realized,
+I go, oh, I need to change the air.
+[SPEAKER_00]: Then I realized I had two different
+choices.
+[SPEAKER_00]: And you can either, and that's a lot of
+the choices.
+[SPEAKER_00]: It's like, do you circulate?
+[SPEAKER_00]: I mean, do you, do you have a sealed room
+or do you circulate and bring in the
+[SPEAKER_00]: outside environment?
+[SPEAKER_00]: And in the end, I just decided that a
+sealed room is just much easier to control
+[SPEAKER_00]: and to maintain because I'm not pulling
+any, I'm not dependent on an outside
+[SPEAKER_00]: environment that I'm then pulling into
+that room.
+[SPEAKER_00]: Sometimes it might make sense.
+[SPEAKER_00]: It's cooler outside.
+[SPEAKER_00]: I can bring the air in and it could cool
+it down and it's humidity builds up
+[SPEAKER_00]: quickly.
+[SPEAKER_00]: And sometimes you go, well, we've got to
+pump the air out and get rid of that extra
+[SPEAKER_00]: humidity.
+[SPEAKER_00]: But then again, you're dependent on that
+outside environment.
+[SPEAKER_00]: So the trade off though is then if you're
+dealing with temperatures, typically
+[SPEAKER_00]: you've got to be dealing with cooling
+because the lights put off heat,
+[SPEAKER_00]: it's insulated.
+[SPEAKER_00]: So now you have to cool the heat of the
+lights.
+[SPEAKER_00]: You have to cool that excess heat that
+comes off the dehumidifier because it does
+[SPEAKER_00]: still put out heat despite the fact that
+it's got the cooling side, you know,
+[SPEAKER_00]: it overall generates more than it removes.
+[SPEAKER_00]: But again, the benefit was also
+controlling the environment, not pulling
+[SPEAKER_00]: any pests or any pathogens potentially in
+the down, the tricky part is making sure
+[SPEAKER_00]: that you can size the equipment so that it
+is able to deal with, say, late stages of
+[SPEAKER_00]: growth where your plants are big and
+they're putting off a lot of, they're
+[SPEAKER_00]: transpiring a lot.
+[SPEAKER_00]: There's a lot of humidity and the lights
+are full bright, cranked up.
+[SPEAKER_00]: And, you know, that was a little tricky,
+but I would say that my one tip as far as
+[SPEAKER_00]: people being able to size correctly,
+you take the wattage of all the things
+[SPEAKER_00]: that you have in that box and then
+multiply that by four.
+[SPEAKER_00]: And then whatever number you get from that
+is basically how many BTUs you would need
+[SPEAKER_00]: to remove that you would get.
+[SPEAKER_00]: So for me, about 3,000, my machine running
+at full capacity with both lights on with
+[SPEAKER_00]: the air conditioners and the air
+conditioning and the dehumidification
+[SPEAKER_00]: running and when I'm running the large
+dehumidifier, there's about 3,000 watts
+[SPEAKER_00]: max that that runs.
+[SPEAKER_00]: So 3,000 times four, 12,000, excuse me.
+[SPEAKER_00]: And 12,000 is considered one ton.
+[SPEAKER_00]: So I have a one ton mini split and it's
+actually more than capable of cooling
+[SPEAKER_00]: because, you know, with your watts,
+that is for also heat watts, like light.
+[SPEAKER_00]: A lot of that is going into your photons
+and it's not coming off directly as heat.
+[SPEAKER_00]: So it's good to more oversize.
+[SPEAKER_00]: You don't want to go too big, but you
+definitely have to make sure that you can
+[SPEAKER_00]: keep up with the heat and the humidity in
+the, you know, sealed room.
+[SPEAKER_01]: That makes sense.
+[SPEAKER_01]: And just to reiterate, you said two lights
+that you're running, LEDs, and according
+[SPEAKER_01]: to your website, they come in at 2.3 micro
+moles per joule.
+[SPEAKER_01]: So you've got some good efficiency there.
+[SPEAKER_01]: I know people are going to be asking this.
+[SPEAKER_01]: Can you tell us what diodes and driver
+you're using for those lights?
+[SPEAKER_00]: I, you know, I don't know that I've had
+these for a few years.
+[SPEAKER_00]: They're the Fluence, um, Spyder,
+the Spyder X plus, and, uh, they don't
+[SPEAKER_00]: actually even make these bars anymore,
+which is almost unfortunate because I,
+[SPEAKER_00]: I'm definitely a big fan of the bar style
+light fixtures.
+[SPEAKER_00]: Um, because I believe it's most closely
+represents the sun.
+[SPEAKER_00]: And when it comes to like, uh,
+penetration of the light for your plants,
+[SPEAKER_00]: if you've got my whole ceiling,
+basically there's like 16 bars that go
+[SPEAKER_00]: from the back to the, you know,
+all the way across the grow area.
+[SPEAKER_00]: And the sun is basically like a giant beam
+coming down.
+[SPEAKER_00]: It's not as much as it is a spotlight.
+[SPEAKER_00]: It's a point as far as we're concerned.
+[SPEAKER_00]: The photons are coming.
+[SPEAKER_00]: Um, they, they, they're not coming from a
+point.
+[SPEAKER_00]: Um, it doesn't, it's, it makes a lot more
+sense.
+[SPEAKER_00]: And, um, the other thing I liked with the
+LEDs, um, is that you can get them a lot
+[SPEAKER_00]: closer to your plants.
+[SPEAKER_00]: Um, I, I, depending on what style of LEDs
+that you use, it will vary how much,
+[SPEAKER_00]: how many, how much your photons drop off
+based on the distance because the fluence
+[SPEAKER_00]: don't have the lenses on these,
+the diodes.
+[SPEAKER_00]: Um, I find that the drop off in your PT,
+um, PPFD is really, um, it's the,
+[SPEAKER_00]: the photon rate drops off a lot.
+[SPEAKER_00]: If you just, for every foot you,
+you bring it up.
+[SPEAKER_00]: So, you know, I do play around with
+dimming the lights, but then also being
+[SPEAKER_00]: able to bring the lights down closer to
+the canopy using electrical, less
+[SPEAKER_00]: electricity, generating less heat,
+less air conditioning to require to cool
+[SPEAKER_00]: it.
+[SPEAKER_00]: Um, but again, towards the end,
+those lights that just, just cranked up
+[SPEAKER_00]: and, uh, the plants, they, they don't
+care.
+[SPEAKER_00]: They, they want as much as you can give
+them.
+[SPEAKER_01]: Gotcha.
+[SPEAKER_01]: That makes sense.
+[SPEAKER_01]: A couple more things about the actual
+equipment and setup before we dive into
+[SPEAKER_01]: the actual platform.
+[SPEAKER_01]: So with the sealed environment,
+generally speaking, I think a lot of
+[SPEAKER_01]: people know this is you got to run CO2.
+[SPEAKER_01]: I believe you're running CO2 tanks inside
+the studio.
+[SPEAKER_01]: You probably have a, most have a
+humidifier, dehumidifier.
+[SPEAKER_01]: Can you talk to us about the equipment and
+then also air circulation?
+[SPEAKER_01]: Can you talk to us about how all of that
+is kind of set up within the space and how
+[SPEAKER_01]: the air circulation is achieved in there?
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: So, um, uh, the, the CO2 side of things,
+I have two tanks, uh, that sit outside.
+[SPEAKER_00]: They, uh, piped in and.
+[SPEAKER_00]: The CO2, which naturally drops,
+uh, there's, uh, two tubes above the fan,
+[SPEAKER_00]: which sits at one end of the, which is the
+machine side of the, the system side of
+[SPEAKER_00]: the studio that blows the CO2 and
+circulates it around as it's needed.
+[SPEAKER_00]: I have a sensor that can be raised and
+lowered, um, manually from the machine
+[SPEAKER_00]: side, um, that I keep at basically.
+[SPEAKER_00]: Canopy level.
+[SPEAKER_00]: Um, so that CO2 sensor is basically,
+I'm, I, I do run elevated CO2 levels,
+[SPEAKER_00]: um, which is a big benefit of having a
+sealed room.
+[SPEAKER_00]: And the other thing is that, um,
+because the room is so well sealed that
+[SPEAKER_00]: for an entire grow, I won't use maybe 10
+pounds of CO2.
+[SPEAKER_00]: And, uh, I think a lot of people.
+[SPEAKER_00]: Struggle with tanks saying, well,
+you know, I'm burning through tanks all
+[SPEAKER_00]: the, all the time, but when the room is
+really well sealed, um, it's, it's very,
+[SPEAKER_00]: it's a minimal overhead.
+[SPEAKER_00]: Um, I did have one at one situation where
+my tank did run out.
+[SPEAKER_00]: And, um, what I ended up doing was,
+you know, I have a secondary tank when it
+[SPEAKER_00]: detects that one tank is, is, you know,
+when, when, when the tank is on.
+[SPEAKER_00]: And the system sees that the CO2 levels on
+rising.
+[SPEAKER_00]: It will then assume that that tank is
+empty and then flip over to the,
+[SPEAKER_00]: the secondary tank, because again,
+you know, what happens if the CO2 runs out
+[SPEAKER_00]: and you don't want to just change out your
+CO2 before it totally depletes just,
+[SPEAKER_00]: uh, just in case, because, you know,
+you've got extra CO2 in there.
+[SPEAKER_00]: You might as well use it until it's gone.
+[SPEAKER_00]: So I have the redundancy on the,
+on the CO2 and the.
+[SPEAKER_00]: Air circulation currently I have a fan
+that, um, the, an oscillating fan and it's
+[SPEAKER_00]: a small room and it does really well at
+keeping pretty good airflow in there.
+[SPEAKER_00]: I also have a carbon filter and it is
+they, it pulls the air from lower down.
+[SPEAKER_00]: Um, and basically goes up.
+[SPEAKER_00]: It's a 10 inch pipe and then shoots that
+air over the, over the plants also.
+[SPEAKER_00]: So it's kind of constantly stirring.
+[SPEAKER_00]: But even with those two systems,
+I find that I think I could improve on air
+[SPEAKER_00]: circulation.
+[SPEAKER_00]: So my now, my next upgrade is I will have,
+um, two tubes going along the sides.
+[SPEAKER_00]: On the floor and along the ceiling,
+which are connected for the entire length
+[SPEAKER_00]: of the box.
+[SPEAKER_00]: And then I'll be circulating the air from
+either from the underneath and pulling
+[SPEAKER_00]: the, the cool air from underneath,
+bringing it up to the, the top.
+[SPEAKER_00]: Of the ceiling and, um, sending out that
+way across these long pipes.
+[SPEAKER_00]: So it's not just blowing out, it goes down
+the pipe and then comes out all the holes
+[SPEAKER_00]: in the pipe to give more of a,
+trying to get more of a laminar flow,
+[SPEAKER_00]: because they said with CO2, um,
+for the plants to really benefit from it,
+[SPEAKER_00]: it doesn't need a lot of agitation,
+but it just needs constant air movement.
+[SPEAKER_00]: And it's the stagnant areas within the
+canopy that become the problem.
+[SPEAKER_00]: Uh, it doesn't always require just big
+fans blasting everything, just enough slow
+[SPEAKER_00]: movement, um, and, and the plants,
+uh, supposedly fine.
+[SPEAKER_00]: That's what, that's what I've been
+reading.
+[SPEAKER_00]: I always, I do a lot of research and then
+I come up with, um, try and come up with a
+[SPEAKER_00]: solution to see if that actually helps.
+[SPEAKER_00]: And I'm still playing with the idea of,
+am I going to take the air from the top,
+[SPEAKER_00]: bring it down to the floor and let that,
+uh, you know, hot air, will that rise?
+[SPEAKER_00]: Um, or would I be better off doing it?
+[SPEAKER_00]: The other way around, but it's easy enough
+to flip the direction of the fan and I'll
+[SPEAKER_00]: be experimenting with both ways and figure
+out which, which works best, I guess.
+[SPEAKER_01]: Okay.
+[SPEAKER_01]: So that's CO2 and air circulation now for
+the humidifier and dehumidifier that's
+[SPEAKER_01]: controlling your relative humidity and
+also the heater and the air conditioner
+[SPEAKER_01]: that's controlling the temperature.
+[SPEAKER_01]: Are those pieces of equipment inside the
+box or is it outside the box?
+[SPEAKER_00]: Everything is inside because everything
+except for the CO2 is inside.
+[SPEAKER_00]: The, the tanks for the CO2 are external so
+that, and that gets pumped in.
+[SPEAKER_00]: I mean, um, all the electric work,
+um, is I have an actual, a sub panel on
+[SPEAKER_00]: the outside and then conduit that,
+um, goes into the surface mount boxes,
+[SPEAKER_00]: um, for the outlets.
+[SPEAKER_00]: And even those are sealed, um,
+with foam so that no air escapes.
+[SPEAKER_00]: Um, so.
+[SPEAKER_00]: Yeah, the dehumidifiers inside that's also
+one, currently I'm still using,
+[SPEAKER_00]: uh, your regular, a regular dehumidifier.
+[SPEAKER_00]: And I found that I, um, when the plants
+were smaller, I did better using a smaller
+[SPEAKER_00]: dehumidifier, um, so that it wasn't
+cycling as much.
+[SPEAKER_00]: And then as they get bigger, I switched to
+a larger dehumidifier.
+[SPEAKER_00]: And then if, if when, when you can also,
+the great thing with the box, it can also
+[SPEAKER_00]: be used for, for the, you know,
+post.
+[SPEAKER_00]: Post-harvest and, and the drying phase.
+[SPEAKER_00]: And when that happens, then I actually
+switched to a, um, desiccant based
+[SPEAKER_00]: dehumidifier, which is, uh, able to deal
+with the cooler temperatures.
+[SPEAKER_00]: Um, it doesn't have the volume,
+but you can have a much cooler temperature
+[SPEAKER_00]: and remove, um, I found it's just a lot
+more efficient, um, at, for power usage.
+[SPEAKER_00]: And it just works a lot better.
+[SPEAKER_00]: So I also.
+[SPEAKER_00]: I'm planning on incorporating a larger
+built-in ducted dehumidifier.
+[SPEAKER_00]: Um, so that, um, again, to, to give more
+control, uh, you can get dehumidifiers
+[SPEAKER_00]: these days that are wifi based.
+[SPEAKER_00]: So you can see if it's getting,
+you know, if your humidity is getting too
+[SPEAKER_00]: high, you could remotely go in and,
+and, and lower that.
+[SPEAKER_00]: And, um, again, with the bigger systems
+that there's always, um, a control.
+[SPEAKER_00]: Panel interface where you can then take
+some electronics and I could then take my
+[SPEAKER_00]: computers, my, my environment controller
+and have those directly control the
+[SPEAKER_00]: dehumidifier rather than just having it
+constantly on and turning it on and off
+[SPEAKER_00]: with turning the outlet on and off,
+which can be done, but isn't really an
+[SPEAKER_00]: ideal way of, of doing it.
+[SPEAKER_01]: Gotcha.
+[SPEAKER_01]: We'll get deeper into the environmental
+controller and the studio platform in a
+[SPEAKER_01]: minute here.
+[SPEAKER_01]: Last thing I want to cover is.
+[SPEAKER_01]: Can this system be used for soil,
+cocoa and, or hydroponics?
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: Cause really the, the environment itself,
+which is just your, your air temperature,
+[SPEAKER_00]: humidity, and CO2 levels doesn't really
+mind what method that you're using to
+[SPEAKER_00]: grow.
+[SPEAKER_00]: Uh, aeroponics was my initial because I
+thought, well, it's a great way.
+[SPEAKER_00]: The roots get tons of oxygen this way,
+and I don't have to deal with a media,
+[SPEAKER_00]: uh, at all.
+[SPEAKER_00]: And so that's one less thing to deal with.
+[SPEAKER_00]: And I've had great success using
+aeroponics.
+[SPEAKER_00]: Um, and it's, it is kind of a crazy way of
+growing because you, you missed the roots
+[SPEAKER_00]: for, for three seconds every three
+minutes.
+[SPEAKER_00]: And besides that, they're just dangling in
+the dark and you know, this is high
+[SPEAKER_00]: pressure aeroponics.
+[SPEAKER_00]: This is not like your typical cloner that
+has those little ray red nozzles,
+[SPEAKER_00]: um, just spraying constantly.
+[SPEAKER_00]: This is a highly atomized, um,
+mist with, um, special nozzles.
+[SPEAKER_00]: And it's that it's very fine.
+[SPEAKER_00]: And the mist, um, the emitters are at the
+bottom.
+[SPEAKER_00]: And as they, uh, they fire, they would,
+they, they, they, they circulate and it
+[SPEAKER_00]: really swirls around inside them.
+[SPEAKER_00]: It stays suspended for a while before it
+even settles.
+[SPEAKER_00]: So it's a great way of basically touching
+all the different, like all the,
+[SPEAKER_00]: the parts of the root and getting great
+coverage.
+[SPEAKER_00]: Um, but again, I, my last, my last grow
+was in cocoa, which was just a departure.
+[SPEAKER_00]: I wanted to try something different
+because I didn't want these big chambers
+[SPEAKER_00]: and plants locked into a chamber.
+[SPEAKER_00]: I wanted to have some flexibility of
+plants and being able to actually move
+[SPEAKER_00]: them around.
+[SPEAKER_00]: And, um, so I did a cocoa grow and,
+um, my, my next grow is actually going to
+[SPEAKER_00]: be using a living soil.
+[SPEAKER_00]: And I've got, uh, a whole different,
+a whole new system set up that,
+[SPEAKER_00]: that I think is going to be, um,
+interesting to see, you know, what,
+[SPEAKER_00]: what I can produce using, uh, using that
+setup.
+[SPEAKER_01]: Gotcha.
+[SPEAKER_01]: That's pretty cool that you've built in
+the flexibility to be able to use the
+[SPEAKER_01]: different types of mediums like that,
+right?
+[SPEAKER_01]: Cause they are.
+[SPEAKER_01]: There are certainly different,
+uh, in numerous ways and you've
+[SPEAKER_01]: incorporated the different ways within the
+plant studio platform.
+[SPEAKER_01]: So can you talk to us about, uh,
+plant studio platform?
+[SPEAKER_00]: Yeah, the, the platform, this is the
+almost the hardest part to understand of
+[SPEAKER_00]: the system because it's the, this is where
+it's like my, my background as a web
+[SPEAKER_00]: developer is, um, it's the computers and
+there are basic, there are three computers
+[SPEAKER_00]: inside.
+[SPEAKER_00]: The three computers for the grow system.
+[SPEAKER_00]: One of the computers is controlling the,
+um, the lights, the temperature,
+[SPEAKER_00]: the CO2 humidity managing basically
+everything above the, you know,
+[SPEAKER_00]: it's a, when do the lights come on and
+off?
+[SPEAKER_00]: Um, and, you know, what's your nighttime
+temperature?
+[SPEAKER_00]: Um, and, uh, what CO2 levels, you know,
+turning the CO2, uh, making sure the CO2
+[SPEAKER_00]: doesn't run at nighttime.
+[SPEAKER_00]: Um, so that, that, that's the environment
+controller, the reservoir controller,
+[SPEAKER_00]: separate system, totally non-dependent on
+the environment controller.
+[SPEAKER_00]: Um, that it has the, um, uh, manages or
+monitors the pH, your EC, uh, temperature,
+[SPEAKER_00]: the depth, um, sensing all the different,
+um, attributes of the, of the reservoir.
+[SPEAKER_00]: And, uh, the way it actually does that is
+I have a circulation pump and it pumps
+[SPEAKER_00]: through, uh, PVC pipe, and that's where
+the sensors are.
+[SPEAKER_00]: So instead of putting the sensors actually
+in the reservoir itself, it circulates the
+[SPEAKER_00]: reservoir and senses those variables,
+the values, um, as it does so.
+[SPEAKER_00]: And, uh, the idea was also when I do,
+um, dosing, and, and things like that,
+[SPEAKER_00]: it also serves as a, the circulator is
+also a mixing system.
+[SPEAKER_00]: And, um, it makes it easier to,
+if you wanted to switch something out,
+[SPEAKER_00]: um, and also with the reservoir level
+going up and down, how do you,
+[SPEAKER_00]: you know, keeping your sense, making sure
+your senses are always in the water is
+[SPEAKER_00]: obviously important.
+[SPEAKER_00]: So the, um, the system is able to fill and
+drain itself automatically.
+[SPEAKER_00]: And this was something that was,
+this is one of those ones where I just got
+[SPEAKER_00]: tired of trying to, you know, I didn't
+want to carry buckets around and empty it.
+[SPEAKER_00]: That's the pain that is hydroponics.
+[SPEAKER_00]: And, um, so the, um, it can drain almost
+totally empty the reservoir, but also when
+[SPEAKER_00]: it fills it, I can then specify how much I
+want to put in.
+[SPEAKER_00]: And I actually do everything based on
+liters instead of gallons.
+[SPEAKER_00]: And it's not because I'm English,
+because I did grow up with, you know,
+[SPEAKER_00]: I do, I do think of everything in gallons,
+but when it comes to dosing, everything
+[SPEAKER_00]: seems to be done in milliliters.
+[SPEAKER_00]: I mean, sometimes you would get those
+tablespoons.
+[SPEAKER_00]: Are you guys a tablespoon?
+[SPEAKER_00]: Is that a teaspoon?
+[SPEAKER_00]: And it, you know, but now it's all
+milliliters and, you know, a liter is a
+[SPEAKER_00]: thousand liters.
+[SPEAKER_00]: So it gives you a better idea of
+proportions.
+[SPEAKER_00]: Um, but again, it's been great that when I
+go to fill it up, 25 gallons is maybe
+[SPEAKER_00]: close to what it was by 80 liters or
+something like that.
+[SPEAKER_00]: So I just say 80 liters.
+[SPEAKER_00]: It just puts that water in.
+[SPEAKER_00]: And then I go and dose from there.
+[SPEAKER_00]: And so, you know, the dosing side of the
+reservoir controller, which again,
+[SPEAKER_00]: this, this little computer controls,
+I have five pumps and they, you can choose
+[SPEAKER_00]: whatever liquid you want to mix in.
+[SPEAKER_00]: And typically you'd have your A and B,
+a multi-part nutrient, and then maybe some
+[SPEAKER_00]: micro, I have a Cal Mag.
+[SPEAKER_00]: Um, and then you'd have, one of them would
+be a pH.
+[SPEAKER_00]: Um, either increase or decrease.
+[SPEAKER_00]: You typically don't need both.
+[SPEAKER_00]: You'll find that you got to drift in one,
+you know, you, you want to correct one
+[SPEAKER_00]: direction only.
+[SPEAKER_00]: So, you know, one of them is a pH adjuster
+and the other are all nutrients or
+[SPEAKER_00]: additive, um, based and those inject in
+line with that circulator.
+[SPEAKER_00]: So after it goes by your temperature,
+your pH and your EC, there is a,
+[SPEAKER_00]: you know, you'll see in the video,
+it's the, the clear acrylic, um,
+[SPEAKER_00]: piece of pipe, the drops going in,
+that's dropping into the circulation of
+[SPEAKER_00]: the, um, of where the, you know,
+where the sensors are basically.
+[SPEAKER_00]: So that's the, the, um, you know,
+the, the reservoir controller.
+[SPEAKER_00]: And, um, what's nice is the computer part
+of it then is like, I can then specify a
+[SPEAKER_00]: program and saying, all right,
+at this time, empty the reservoir,
+[SPEAKER_00]: put this many liters into it, dose this
+much into it of A, wait until you see that
+[SPEAKER_00]: the PPMs has stabilized so that you know
+that it's well mixed.
+[SPEAKER_00]: And then once you see that the,
+the, the EC has, uh, stabilized,
+[SPEAKER_00]: then go into your next, uh, your B
+nutrient.
+[SPEAKER_00]: And then once that stabilized,
+you could specify time or say,
+[SPEAKER_00]: let it see if it's stabilized before doing
+the next one.
+[SPEAKER_00]: And then it goes along.
+[SPEAKER_00]: And then with the pH, again, you can,
+uh, a lot of it is just algorithms,
+[SPEAKER_00]: different algorithms for pHing.
+[SPEAKER_00]: And, um, but the whole thing is basically
+set my reservoir up so that it's ready
+[SPEAKER_00]: then to feed the plants.
+[SPEAKER_00]: So that's the reservoir controller.
+[SPEAKER_00]: Totally independent of the environment
+controller, but then for the human side of
+[SPEAKER_00]: things, now that that's the control,
+it's like the human interface.
+[SPEAKER_00]: That's where you can manage.
+[SPEAKER_00]: It's basic, pretty basic.
+[SPEAKER_00]: I can go in and turn the lights on,
+turn the lights off, um, with a,
+[SPEAKER_00]: you know, and I could turn the fans on
+circulation pumps and what have you.
+[SPEAKER_00]: Um, so that's the, that computer is to
+control it, but then also to monitor it
+[SPEAKER_00]: because all this information, every single
+minute, the system reads every value.
+[SPEAKER_00]: And so in a day I'm getting about 40,000
+data points at every minute.
+[SPEAKER_00]: What is the temperature?
+[SPEAKER_00]: What's the EC?
+[SPEAKER_00]: What's the air temperature?
+[SPEAKER_00]: What's a CO2 level?
+[SPEAKER_00]: What's the depth of the reservoir?
+[SPEAKER_00]: Um, what's the, the, uh, air conditioner
+or the, the, the watts of the
+[SPEAKER_00]: dehumidifier?
+[SPEAKER_00]: Cause I track the power usage of things
+like the dehumidifier because that enables
+[SPEAKER_00]: me to see if I've sized it correctly.
+[SPEAKER_00]: If I see the, if I see that thing is
+peaked and running all the time,
+[SPEAKER_00]: then you're going to need a bigger
+dehumidifier.
+[SPEAKER_00]: Um, or it's set up incorrectly where it's
+short cycling because, uh, something's
+[SPEAKER_00]: blowing on it or it's, it's just not
+moving the air properly.
+[SPEAKER_00]: So the, the human interface part is again,
+it's gathering the data, but also it's
+[SPEAKER_00]: what, and again, you can see in the video,
+it shows the graphs.
+[SPEAKER_00]: It's what I'll put up in my bedroom up on
+the TV.
+[SPEAKER_00]: And I'll be, you know, live streaming,
+you know, I have his exactly showing,
+[SPEAKER_00]: you know, gauges, what, what my current pH
+is.
+[SPEAKER_00]: And if it gets too high, it can send off
+an alert, but it also changes.
+[SPEAKER_00]: So I have everything kind of green when
+things start going red.
+[SPEAKER_00]: That's a problem.
+[SPEAKER_00]: So, um, also with this human interface
+component, um, computer, it allows me to
+[SPEAKER_00]: go back at any point in time of the grow
+and see exactly at that stage.
+[SPEAKER_00]: What that environment was.
+[SPEAKER_00]: So it gives me history for analysis.
+[SPEAKER_00]: So every grow, I have all that
+information.
+[SPEAKER_00]: It might seem overkill to say,
+well, you don't need to do it every
+[SPEAKER_00]: minute, but with some of these systems and
+these time series databases and things
+[SPEAKER_00]: that they have out there, it's,
+it's not that much information.
+[SPEAKER_00]: It's not a high def 4k video that's
+streaming.
+[SPEAKER_00]: It's got more bandwidth in probably a
+minute than you'd, you'd have in an entire
+[SPEAKER_00]: grow.
+[SPEAKER_00]: So, um, if you can gather that
+information, why not have it?
+[SPEAKER_00]: And again, it's very easy to then go back
+and with the, you know, with a mouse,
+[SPEAKER_00]: I can just select a certain time span.
+[SPEAKER_00]: And it shows me all the stage,
+all the, um, the readings from all the
+[SPEAKER_00]: sensors at that point in time.
+[SPEAKER_00]: And I think it's just a really useful
+thing to have.
+[SPEAKER_00]: So that's really what people, and I spend
+my most time using is the human interface,
+[SPEAKER_00]: the other things just do their job.
+[SPEAKER_00]: I'm not that I try and, you know,
+they, they, they manage the system.
+[SPEAKER_01]: Gotcha.
+[SPEAKER_01]: You uncovered a lot there.
+[SPEAKER_01]: So you have a lot of control with this
+plant studio platform.
+[SPEAKER_01]: I mean, guys check out the video that is
+in the link in the description on the,
+[SPEAKER_01]: on the website, you'll see exactly what
+we're talking about.
+[SPEAKER_01]: What exactly, what Simon just explained
+with the graphs and so on and so forth.
+[SPEAKER_01]: Now for the reservoir controller,
+you said that's controlled on one
+[SPEAKER_01]: computer.
+[SPEAKER_01]: And it really sounds just so hands off.
+[SPEAKER_01]: I know a lot of people are probably
+listening to this and their, their ears
+[SPEAKER_01]: are really perking up because it
+completely automates feeding entirely.
+[SPEAKER_01]: And you can have several different bottles
+hooked up to this and it can dose and it
+[SPEAKER_01]: can wait for things to be stable.
+[SPEAKER_01]: Then it could do the next dose and then
+wait.
+[SPEAKER_01]: And it's just, I've never seen this level
+of automation before, you know,
+[SPEAKER_01]: particularly on the home growth side of
+things.
+[SPEAKER_01]: I know there are some commercial
+operations that are automated.
+[SPEAKER_01]: I don't know how automated they are,
+but for the most part, the fact that you
+[SPEAKER_01]: can actually control the water levels,
+right?
+[SPEAKER_01]: Your hands off on the water level,
+your hands off on dosing nutrients,
+[SPEAKER_01]: your hands off on pH, right?
+[SPEAKER_01]: And then you're even hands off when it
+comes to your environment completely,
+[SPEAKER_01]: because you have an environmental
+controller.
+[SPEAKER_01]: I was going to ask you where the probes
+are located within the space, but you
+[SPEAKER_01]: have, you have basically controller probes
+that hook up to the environmental
+[SPEAKER_01]: controller.
+[SPEAKER_01]: That's going to automatically turn on.
+[SPEAKER_01]: And off your humidifier, dehumidifier,
+air conditioner, heater in order to
+[SPEAKER_01]: control those, those measurements,
+right?
+[SPEAKER_01]: Those variables.
+[SPEAKER_01]: Where is the, the probes located for like
+CO2 and temp?
+[SPEAKER_00]: And so that's the one that is hanging.
+[SPEAKER_00]: I have conduit that goes from the
+environment controller, which is it's just
+[SPEAKER_00]: to the left of the wall mounted mini
+split.
+[SPEAKER_00]: And it basically goes along the ceiling
+right into the middle of the grow area.
+[SPEAKER_00]: So as I basically, that's not automated
+the raising and lowering of that,
+[SPEAKER_00]: that sensor, but that sensor is the
+temperature, humidity, and CO2 sensor on,
+[SPEAKER_00]: on, on a wire basically.
+[SPEAKER_00]: So that is hardwired to the environment
+controller itself.
+[SPEAKER_01]: Gotcha.
+[SPEAKER_01]: And then one other piece, which I don't,
+I think you might have briefly covered it
+[SPEAKER_01]: is it's shown in the video is it
+automatically is calculating your energy
+[SPEAKER_01]: consumption and putting a dollar sign to
+it, right?
+[SPEAKER_01]: So it's telling you literally it's having
+a water, how much water you're using,
+[SPEAKER_01]: putting a dollar amount to it,
+how much you're spending for water,
+[SPEAKER_01]: nutrients, dollar amount, electricity
+consumption, dollar amount.
+[SPEAKER_01]: So you're getting down to that granular
+level.
+[SPEAKER_00]: That will vary based obviously on where
+you live in, in the new England water here
+[SPEAKER_00]: is, is pretty cheap.
+[SPEAKER_00]: California, I know that's, that's a
+different story.
+[SPEAKER_00]: And the, the electricity is the,
+the biggest resource.
+[SPEAKER_00]: I do try, I track the, the electric,
+the CO2 usage, the water and the
+[SPEAKER_00]: nutrients, because you know, how many
+milliliters you put in of each nutrient.
+[SPEAKER_00]: I also have a database saying,
+this is the nutrient I got.
+[SPEAKER_00]: I spent this much for the nutrient and it
+has this many milliliters in it.
+[SPEAKER_00]: So I know on a per milliliter,
+how much does that nutrient cost on a per
+[SPEAKER_00]: milliliter basis?
+[SPEAKER_00]: So when I feed it, I know how much that,
+that feeding even cost, you know,
+[SPEAKER_00]: my electric, my electric cost when it is
+really cranking for me here is about $5 a
+[SPEAKER_00]: day is my, is my cost.
+[SPEAKER_00]: And by having a sealed room, the AC and
+the dehumidifier are kind of close to half
+[SPEAKER_00]: the other half of the lights.
+[SPEAKER_00]: So that is the price that you pay.
+[SPEAKER_00]: I have been thinking about, you know,
+ways of, you know, using the winter,
+[SPEAKER_00]: the cold outside.
+[SPEAKER_00]: Can I use that as a means of dehumidifying
+or cooling without directly bringing that
+[SPEAKER_00]: air in using some kind of a chiller system
+and, and making it more efficient.
+[SPEAKER_00]: However, for simplicity sake, having
+everything in the room just is definitely
+[SPEAKER_00]: the way to start.
+[SPEAKER_00]: And a sealed room, I think is a good way
+of starting.
+[SPEAKER_00]: You could always go to air exchange if,
+if it makes sense, if the environment is
+[SPEAKER_00]: conducive to that.
+[SPEAKER_00]: But again, I'm about knowing that it's
+totally controlled and not being able to
+[SPEAKER_00]: have an excuse and saying, well,
+that was a hot day and all the humidity is
+[SPEAKER_00]: being killing me.
+[SPEAKER_00]: I don't, I, you know, this, this box could
+be run in any environment as long as the
+[SPEAKER_00]: ambient environment where the reservoir is
+obviously doesn't get below freezing.
+[SPEAKER_00]: You know, I can, I have a heater,
+I have a chiller for the reservoir,
+[SPEAKER_00]: which is outside of the, the studio box
+itself.
+[SPEAKER_00]: So that, that, that's something that,
+again, I'm constantly trying to improve
+[SPEAKER_00]: the efficiency of the resources used for
+growing.
+[SPEAKER_00]: And, you know, that's why I'm also excited
+to try out the soil, doing a soil grow
+[SPEAKER_00]: next, because, you know, my, my last grow,
+I decided to put each plant on a scale.
+[SPEAKER_01]: And the scale- So I was going to ask you
+about next, as if you could talk about the
+[SPEAKER_01]: scale side of things, because that's
+pretty mind blowing as well.
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: So, and, and that, that's even changed
+from, from that grow until now.
+[SPEAKER_00]: Initially, the, the idea was how do I,
+you know, went to water plants?
+[SPEAKER_00]: A lot of people would say, well,
+you, you pick them up and you,
+[SPEAKER_00]: you get a sense of how, you know,
+the weight and gives you a better sense
+[SPEAKER_00]: than just trying to stick your finger in
+the top and feeling how dry the soil is.
+[SPEAKER_00]: And so I built six scales, which are all
+wifi enabled or part of the system.
+[SPEAKER_00]: And every minute they report their weight.
+[SPEAKER_00]: So when I fertigate, I was using these
+covers that have two misters in them and
+[SPEAKER_00]: it would water all the plants at the same
+time.
+[SPEAKER_00]: And it worked great in the beginning,
+but, and the nice thing is I could see
+[SPEAKER_00]: also by doing that, that all the plants
+were actually getting water.
+[SPEAKER_00]: If one of them were to clog, I've never
+had a clogging issue.
+[SPEAKER_00]: You really shouldn't actually have a
+clogging issue if you always have a
+[SPEAKER_00]: pre-filter by the way, for your pump.
+[SPEAKER_00]: I'd always recommend you have to put a
+pre-filter on the pump that really almost
+[SPEAKER_00]: mitigates clogging issues.
+[SPEAKER_00]: And so all the plants I could see would be
+getting a liter, a few, a couple liters
+[SPEAKER_00]: when that, when they were smaller and it
+was very accurate.
+[SPEAKER_00]: They all got the same amount.
+[SPEAKER_00]: They, their weight would all increase,
+but then as one plant would overtake and
+[SPEAKER_00]: have different water requirements of the
+other.
+[SPEAKER_00]: Now I'm like, well, I don't want to give
+them all the same amount of water.
+[SPEAKER_00]: One needs more than the other.
+[SPEAKER_00]: So I'd end up taking some of the misters
+and I'd say, Hey, give it to this guy.
+[SPEAKER_00]: So he gets extra and he gets one less.
+[SPEAKER_00]: Cause there was two misters per plant,
+but now you're going away from the whole
+[SPEAKER_00]: automation thing.
+[SPEAKER_00]: So my latest setup that I actually haven't
+run yet is a manifold.
+[SPEAKER_00]: It's like an irrigation manifold,
+but, but it's also why it's controlled by
+[SPEAKER_00]: the reservoir controller that can say send
+water only to this plant.
+[SPEAKER_00]: So now I can water each individual plant
+separately.
+[SPEAKER_00]: And what that's going to allow for is,
+you know, you can try different
+[SPEAKER_00]: experiments.
+[SPEAKER_00]: I could let some plants, if they're all
+clones, then that would be almost ideal.
+[SPEAKER_00]: Cause you could really then understand
+different watering patterns and how they
+[SPEAKER_00]: affect those plants.
+[SPEAKER_00]: Do you want to do a deep watering less
+frequently?
+[SPEAKER_00]: Small watering more frequently.
+[SPEAKER_00]: And the other part is that also,
+because it ties into the reservoir,
+[SPEAKER_00]: I could then potentially mix in the
+reservoir, a different mix potentially for
+[SPEAKER_00]: each plant.
+[SPEAKER_00]: So I could put in, and I'm actually going
+to have to downsize the reservoir a little
+[SPEAKER_00]: bit if I'm doing on an individual plant
+basis, but by with a smaller reservoir,
+[SPEAKER_00]: I could then mix up some new nutrients,
+send it to plan a, and then I can flush
+[SPEAKER_00]: that out or, you know, empty, empty,
+you know, give it all everything that's in
+[SPEAKER_00]: the reservoir, empty it out.
+[SPEAKER_00]: And then for the next plan, give it a
+different nutrient and it may be a
+[SPEAKER_00]: different quantity.
+[SPEAKER_00]: So again, you could then set up different
+tests, experiments for all these different
+[SPEAKER_00]: plants.
+[SPEAKER_00]: And that to me is a great way of doing
+your phenotype hunting because you
+[SPEAKER_00]: obviously, you know, you start with your
+genetics, but different nutrients,
+[SPEAKER_00]: what works for some might not work for
+others.
+[SPEAKER_00]: And this way, I think it's a good way of
+automating, staying consistent,
+[SPEAKER_00]: because I think a lot of people,
+when you're growing, they go, well,
+[SPEAKER_00]: I'm not going to mix up a different batch
+for each different plant.
+[SPEAKER_00]: But if it's automated, it doesn't then let
+the machine do the work.
+[SPEAKER_00]: You don't, you just sit and watch and get
+an idea of, you know, what effect that
+[SPEAKER_00]: has.
+[SPEAKER_00]: That's still coming down to the person to
+look at the plants, to see if it's a happy
+[SPEAKER_00]: plant or not, and to see what kind of
+results you get.
+[SPEAKER_00]: And that to me, as far as the gardening,
+that seems like that's the enjoyable part
+[SPEAKER_00]: of it.
+[SPEAKER_01]: That's so cool.
+[SPEAKER_01]: That's really, really cool.
+[SPEAKER_01]: So the last piece I wanted to have you
+talk about, which is really fascinating,
+[SPEAKER_01]: is the imaging computer you have that
+inspects the plant health.
+[SPEAKER_01]: Can you talk to us about that?
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: So that's actually a separate computer
+It's a really small computer that I had
+[SPEAKER_00]: hooked up to an old SLR that I had.
+[SPEAKER_00]: And, you know, they just, you want a good
+camera with a good lens that's going to
+[SPEAKER_00]: take much better pictures.
+[SPEAKER_00]: And so it's set up so that every 10
+minutes of the plant's life, they have
+[SPEAKER_00]: their picture taken.
+[SPEAKER_00]: And the idea is that it only takes their
+picture, but it also stores it on that
+monitor.
+[SPEAKER_00]: Monitoring computer.
+[SPEAKER_00]: So at any point in time, not only could I
+go back and say, what was I feeding or
+[SPEAKER_00]: what was the EC and pH, but you can also
+see how the plants looked.
+[SPEAKER_00]: And the thing that I actually found that,
+I mean, originally I did it because I
+[SPEAKER_00]: thought it was just kind of cool.
+[SPEAKER_00]: I was like, everyone likes a time lapse.
+[SPEAKER_00]: I don't know if you've seen the amazing
+fungi show on Netflix and all those time
+[SPEAKER_00]: lapses.
+[SPEAKER_00]: They're just mesmerizing.
+[SPEAKER_00]: And the cool thing is I think when you
+feed your plants, you can't see how
+[SPEAKER_00]: they're doing at that point, how they're
+responding.
+[SPEAKER_00]: But if you put it in a time lapse and you
+get to look at them over that,
+[SPEAKER_00]: even over one day, you know, you've got
+your six pictures an hour in a day,
+[SPEAKER_00]: you get to see, did they seem to respond
+well or not?
+[SPEAKER_00]: Because people seem to have a good sense
+of a happy or a non-happy plant.
+[SPEAKER_00]: And definitely seeing the growth,
+you can watch it within one day.
+[SPEAKER_00]: It's pretty easy to see growth just to
+even at a 10 minute interval pictures.
+[SPEAKER_00]: So again, it's partly for, I thought it
+was cool, but I found it really useful.
+[SPEAKER_00]: So then I am able to run a script and at
+the end of the day, it can, it can just
+[SPEAKER_00]: generate that day's time lapse,
+or I could say give me over the last three
+[SPEAKER_00]: days or from the beginning of the grow
+until now.
+[SPEAKER_00]: So I watch time lapses all the time just
+to get a feel for the plants.
+[SPEAKER_00]: And, you know, just cause it's kind of
+cool to watch also, I guess.
+[SPEAKER_01]: Yeah, that is really cool.
+[SPEAKER_01]: I don't do as many time lapses as I
+should.
+[SPEAKER_01]: A lot of people like to see the time
+lapses in videos and I don't do many of
+[SPEAKER_01]: them.
+[SPEAKER_01]: I've only done a handful of them.
+[SPEAKER_01]: I know there's a lot of content creators
+that do a lot of time lapses, but that's
+[SPEAKER_01]: really cool that you're able to add that
+into your automated system and,
+[SPEAKER_01]: you know, for plant health purposes.
+[SPEAKER_01]: So you can see how well your plant is
+doing as far as the health of the plant.
+[SPEAKER_00]: Yeah, the other part I should have
+mentioned is it's also a great way of,
+[SPEAKER_00]: again, if you have a high enough res
+picture, being able to take something and
+[SPEAKER_00]: then maybe identifying plant issues that
+you're having, deficiencies, overwatering,
+[SPEAKER_00]: is it underwatering?
+[SPEAKER_00]: Like sometimes you can look at a plant and
+you get a sense of that.
+[SPEAKER_00]: So that's also something I continue to
+grow.
+[SPEAKER_00]: I do want to get it so that I can get in
+closer on the individual leaves so that
+[SPEAKER_00]: you can start to identify what might be
+going on with the plant itself from a
+[SPEAKER_00]: health standpoint.
+[SPEAKER_00]: So that's the other aspect that I think is
+useful.
+[SPEAKER_00]: Ideally, I'd love to tie it into some kind
+of a computer vision where the system can
+[SPEAKER_00]: kind of look and go, oh, that looks like
+you've got a calcium deficiency.
+[SPEAKER_00]: That looks like that's, you know,
+it's been overwatered or underwatered or
+[SPEAKER_00]: whatever the problem may be.
+[SPEAKER_00]: And again, I know some people might say,
+well, you know, that's going to take an
+[SPEAKER_00]: expert, a person in order to be able to
+identify that.
+[SPEAKER_00]: But people have to realize, too,
+that with the computer vision,
+[SPEAKER_00]: a lot of that stuff and the AI is it is
+people training those systems.
+[SPEAKER_00]: So it really is a person takes pictures
+and they say, this is this problem and
+[SPEAKER_00]: this looks like that problem.
+[SPEAKER_00]: And after you've given the machine enough
+of those, it gets better identifying
+[SPEAKER_00]: itself.
+[SPEAKER_00]: So then everyone doesn't have to be an
+expert on that.
+[SPEAKER_00]: You can have experts who have identified
+these issues.
+[SPEAKER_00]: And then that gets then everyone could
+have the power of those expert opinions
+[SPEAKER_00]: via computer vision without a person
+actually looking personally at their
+plant.
+[SPEAKER_00]: So I do think that the AI and the machine
+learning stuff is a fascinating and
+[SPEAKER_00]: definitely a would definitely be seeing a
+lot more of that.
+[SPEAKER_00]: And it's already been done quite a bit
+also.
+[SPEAKER_01]: Nice, nice.
+[SPEAKER_01]: So when will this plant studio be
+available?
+[SPEAKER_01]: And how much does something like this
+cost?
+[SPEAKER_00]: It's not currently available,
+unfortunately.
+[SPEAKER_00]: And it's something that it's difficult
+because it requires it's a large box.
+[SPEAKER_00]: It's a large machine, but it also requires
+an electrician to bring in, you know,
+[SPEAKER_00]: a circuit.
+[SPEAKER_00]: I have a 30 amp 240 volt circuit going to
+a subpanel.
+[SPEAKER_00]: And again, I'm not an electrician,
+so I have to have an electrician hook that
+[SPEAKER_00]: up.
+[SPEAKER_00]: If you have the mini split, depending on
+the distance that you're running it,
+[SPEAKER_00]: you might have to have someone come in who
+has access who can charge it with the
+[SPEAKER_00]: required refrigerant to get that going.
+[SPEAKER_00]: So it's kind of like putting an addition
+on a house or something.
+[SPEAKER_00]: You need like these subs who can all do
+their part, you know, to get everything
+[SPEAKER_00]: going.
+[SPEAKER_00]: It's not to say I wouldn't like to get to
+that point.
+[SPEAKER_00]: And that is also why I've made a lot of
+the like the reservoir controller itself.
+[SPEAKER_00]: I made I didn't want to cut out with wood.
+[SPEAKER_00]: So I actually got a CNC machine,
+learned to use a CNC machine, designed it,
+[SPEAKER_00]: had the CNC cut all the parts out and then
+put it together.
+[SPEAKER_00]: So it was a perfect fit.
+[SPEAKER_00]: So it works well for replication.
+[SPEAKER_00]: I've never replicated it again using that
+yet.
+[SPEAKER_00]: I've still because I I've been getting
+into the details of the software and
+[SPEAKER_00]: stuff.
+[SPEAKER_00]: But, you know, and it it'd be pretty
+expensive because a lot of the components
+[SPEAKER_00]: that I use are really good.
+[SPEAKER_00]: But one thing you have to keep in mind is
+you need good sensors to get good data.
+[SPEAKER_00]: If your pH sensor is not accurate,
+it's garbage in, garbage out.
+[SPEAKER_00]: So you need good quality information.
+[SPEAKER_00]: And if you want the efficiency of the air
+conditioning, you need something that's
+[SPEAKER_00]: going to be have a high sear rating.
+[SPEAKER_00]: It'll cost you less to run it.
+[SPEAKER_00]: You could do with less expensive units and
+stuff.
+[SPEAKER_00]: So I know it's not exactly answering your
+question, but it is something that I do
+[SPEAKER_00]: think about.
+[SPEAKER_00]: And I, you know, I am definitely,
+definitely working on it for sure.
+[SPEAKER_01]: Gotcha.
+[SPEAKER_01]: Yeah.
+[SPEAKER_01]: Even if it was just individual components,
+you know, whether it be the controllers or
+[SPEAKER_01]: even like the software.
+[SPEAKER_01]: Right.
+[SPEAKER_01]: I'm sure people would love.
+[SPEAKER_01]: I'm sure people are listening to this
+salivating how the software is and how,
+[SPEAKER_01]: you know, automated it can be,
+you know, just if it was a plug and play
+[SPEAKER_01]: version where you could attach your own
+equipment that you have in your growth
+[SPEAKER_01]: space to the software.
+[SPEAKER_01]: I think that would be extremely
+beneficial.
+[SPEAKER_01]: So hope to see something like that in the
+future.
+[SPEAKER_01]: So wrapping things up, how can listeners
+find you and what do you have upcoming in
+[SPEAKER_01]: the future?
+[SPEAKER_00]: My email, my easiest way is to email me is
+my email.
+[SPEAKER_00]: Simon at romanski.com.
+[SPEAKER_00]: That's Simon at romanski.com.
+[SPEAKER_00]: Plant Studio, plantstud.io is my website.
+[SPEAKER_00]: And I'm planning on doing, I want to do
+more social media and interact more with
+[SPEAKER_00]: people like minded people out there,
+or even people who could compliment what I
+[SPEAKER_00]: do.
+[SPEAKER_00]: I don't consider myself to have a green
+thumb.
+[SPEAKER_00]: I am able to automate and I've learned a
+lot from YouTube and listening to shows
+[SPEAKER_00]: like yours as far as the more the
+cultivation side of things.
+[SPEAKER_00]: But I, you know, my angle and my what I
+bring really is the systems and the
+[SPEAKER_00]: automation to it.
+[SPEAKER_00]: So, you know, I'm basically just I also
+want to help people understand that
+[SPEAKER_00]: automation, it seems complicated.
+[SPEAKER_00]: And some people go, well, it's also prone
+to error.
+[SPEAKER_00]: And if that doesn't work, then then it's
+going to, you know, then then what's going
+[SPEAKER_00]: to happen to my grow.
+[SPEAKER_00]: But I think most people will find that it
+is there to help you to enable you and to
+[SPEAKER_00]: do a lot of the things that you don't want
+to do.
+[SPEAKER_00]: You know, I'd say don't carry a bucket of
+water from one to another.
+[SPEAKER_00]: Even something as simple like using
+something like some of these diaphragm
+[SPEAKER_00]: pumps you can get for 50 bucks that has a
+built in pressure switch so you can stick
+[SPEAKER_00]: a hose in a bucket and it self primes,
+it pumps the water and sends it to where
+[SPEAKER_00]: you want to be.
+[SPEAKER_00]: Use something like that.
+[SPEAKER_00]: Don't don't make it hard on yourself.
+[SPEAKER_00]: So use some of the stuff out there.
+[SPEAKER_00]: Make you enjoy it more.
+[SPEAKER_00]: I would start at least monitor and get get
+an inexpensive camera to look at your your
+[SPEAKER_00]: grow.
+[SPEAKER_00]: And you could even pan over to a
+temperature and humidity sensor.
+[SPEAKER_00]: That's just a standalone load sitting
+there and now you can remotely see it.
+[SPEAKER_00]: And you can get these cameras for like 35
+bucks that can pan and tilt.
+[SPEAKER_00]: They want you to get the subscription for
+it.
+[SPEAKER_00]: But if you're just doing a live view to
+check on your plants and see what the
+[SPEAKER_00]: current environment is, why not do that?
+[SPEAKER_00]: It's a very inexpensive way of being able
+to kind of have some remote access to your
+[SPEAKER_00]: grow and to give you some hopefully
+comfort that everything's going well.
+[SPEAKER_00]: So, you know, that that would be my
+advice.
+[SPEAKER_00]: For people and again, people feel free.
+[SPEAKER_00]: If any of this is interesting and would
+like to reach out to me, you know,
+[SPEAKER_00]: please do so.
+[SPEAKER_01]: I'll leave a link to Simon's Instagram
+page on Instagram as well.
+[SPEAKER_01]: I'll link that down in the description
+section below.
+[SPEAKER_01]: And also a link to the website will be
+down in the description section below.
+[SPEAKER_01]: If you enjoyed this video, click that like
+button.
+[SPEAKER_01]: If you haven't already, subscribe to the
+channel.
+[SPEAKER_01]: Release episodes every single weekend.
+[SPEAKER_01]: I'd love to know in the comments section,
+what type of automation do you have in
+[SPEAKER_01]: your garden?
+[SPEAKER_01]: Let us know down in the comments section
+below.
+[SPEAKER_01]: Lastly, if you are tuning in on Apple
+podcasts, please leave a rating and
+[SPEAKER_01]: review.
+[SPEAKER_01]: We are coming up to I believe 200 ratings
+and reviews.
+[SPEAKER_01]: So almost there.
+[SPEAKER_01]: Need your help to get there.
+[SPEAKER_01]: And thank you to everyone who has left a
+rating and review so far.
+[SPEAKER_01]: Simon, thank you so much for coming on to
+the podcast today.
+[SPEAKER_01]: This has been an eye opener and a sense to
+know that there is this automation being
+[SPEAKER_01]: worked on and things will be easier for
+people in the garden, you know,
+[SPEAKER_01]: particularly indoors.
+[SPEAKER_01]: And I'm excited for the future.
+[SPEAKER_01]: So thanks for coming on.
+[SPEAKER_00]: Thank you so much, Chris.
+[SPEAKER_00]: I really appreciate you having me on to
+talk about this stuff.
+[SPEAKER_00]: And yeah, thanks a lot.
+[SPEAKER_00]: It's been great.
+[SPEAKER_01]: Absolutely.
+[SPEAKER_01]: All right.
+[SPEAKER_01]: Enjoy the rest of your day.
+See you next time.

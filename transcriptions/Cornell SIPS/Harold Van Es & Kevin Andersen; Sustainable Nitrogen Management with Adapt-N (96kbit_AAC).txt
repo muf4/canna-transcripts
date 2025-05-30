@@ -1,0 +1,1459 @@
+[SPEAKER_02]: This is a production of Cornell
+University.
+[SPEAKER_03]: So good afternoon, everyone.
+[SPEAKER_03]: Thank you for coming.
+[SPEAKER_03]: So I thought it would be interesting to
+give an update on the Adapt 10 technology
+[SPEAKER_03]: and specifically how integration with
+other software platforms is really
+[SPEAKER_03]: critical if you want to bring this kind of
+technology to the farming community.
+[SPEAKER_03]: Before I do, I want to introduce this
+gentleman here.
+[SPEAKER_03]: He's Professor Rafael Otto.
+[SPEAKER_03]: He's been here for a few weeks now,
+but I hadn't had a chance to introduce
+[SPEAKER_03]: him.
+[SPEAKER_03]: He's a professor of soil science at the
+University of São Paulo in Brazil.
+[SPEAKER_03]: And so he's interested in this particular
+topic in improving nitrogen
+[SPEAKER_03]: recommendations.
+[SPEAKER_03]: So with that, so Kevin will do the second
+part remotely.
+[SPEAKER_03]: He is in Minnesota right now, but we
+thought it would be a great way to kind of
+[SPEAKER_03]: talk about the opportunities around this
+kind of integration.
+[SPEAKER_03]: Okay, so quick overview.
+[SPEAKER_03]: So Adapt 10, it has a bit of a history
+coming out of Cornell, out of my program,
+[SPEAKER_03]: very much a team effort.
+[SPEAKER_03]: And we rolled it out in 2008, which is
+already 16 years ago.
+[SPEAKER_03]: And then in 2013, we decided that it
+wasn't good to remain in the public space.
+[SPEAKER_03]: And so we decided to license it to a
+startup company.
+[SPEAKER_03]: And then we continued working on it and it
+became a cloud-based solution.
+[SPEAKER_03]: And we did a lot of on-farm validation of
+the technology.
+[SPEAKER_03]: Then in 2017 was a great year for us.
+[SPEAKER_03]: The startup company was acquired by Yara
+International, which is a big global crop
+[SPEAKER_03]: nutrition company.
+[SPEAKER_03]: It's a Norwegian company.
+[SPEAKER_03]: They're in like 160 countries or so.
+[SPEAKER_03]: We won a big international prize around
+the same time.
+[SPEAKER_03]: I think they were only a month apart.
+[SPEAKER_03]: So it was a very nice time.
+[SPEAKER_03]: Working also on API integration,
+so integration with other software
+[SPEAKER_03]: systems.
+[SPEAKER_03]: And then earlier this year, Yara sold the
+Adapt 10 technology to EverAg,
+[SPEAKER_03]: which is really a sort of digital
+agriculture platform.
+[SPEAKER_03]: And so they have field management
+software, but also livestock-related,
+[SPEAKER_03]: I believe, insurance and financing.
+[SPEAKER_03]: So they're a very big player in the
+digital agriculture space.
+[SPEAKER_03]: Just quickly, I'm not gonna go into
+details, but this has very much been a
+[SPEAKER_03]: multiple team efforts here at Cornell
+University, as well as when it went
+[SPEAKER_03]: commercial.
+[SPEAKER_03]: Some very talented entrepreneurs,
+software engineers, marketing people,
+[SPEAKER_03]: all of that.
+[SPEAKER_03]: And we also worked with many farmers,
+consultants in New York, in Iowa,
+[SPEAKER_03]: in North Carolina, many other places to
+validate and test and refine the system.
+[SPEAKER_03]: Okay, so why Adapt 10?
+[SPEAKER_03]: So nitrogen is by far the most problematic
+of the crop nutrients, I would say.
+[SPEAKER_03]: That's not an overstatement, I don't
+think.
+[SPEAKER_03]: From the sort of farmer perspective,
+it's costly.
+[SPEAKER_03]: The use efficiency tends to be relatively
+low, because there's a lot of losses.
+[SPEAKER_03]: And there's a lot of uncertainty around
+it, especially as it relates to weather.
+[SPEAKER_03]: And by that association also, a high
+sensitivity to climate change,
+[SPEAKER_03]: especially extreme events.
+[SPEAKER_03]: From an environmental perspective,
+five major concerns are big energy input
+[SPEAKER_03]: into cropping systems, nitrous oxide,
+of course, the big greenhouse gas concern,
+[SPEAKER_03]: groundwater nitrate levels, as well as the
+hypoxia and anoxia concerns in estuaries,
+[SPEAKER_03]: the dead zones, and then particulates
+formation from ammonia volatilization.
+[SPEAKER_03]: So a lot of concerns there.
+[SPEAKER_03]: I'm gonna go into a little bit more depth.
+[SPEAKER_03]: So when we think about the input inputs
+into the system, into a field,
+[SPEAKER_03]: you might say, we have kind of two major
+inputs.
+[SPEAKER_03]: One is through the biological pathway,
+mostly legumes or maybe some free living
+[SPEAKER_03]: bacteria.
+[SPEAKER_03]: Of course, the synthetic industrial
+process, Haber-Bosch, notably takes a lot
+[SPEAKER_03]: of energy.
+[SPEAKER_03]: Birkeland aided, by the way, is an older
+technology that was developed by Yara at
+[SPEAKER_03]: the time, Norsk Hydro.
+[SPEAKER_03]: That now has gaining some interest because
+of the interest in green ammonia using a
+[SPEAKER_03]: renewable energy.
+[SPEAKER_03]: And then of course, there's a lot of
+cycling of this organic nitrogen through
+[SPEAKER_03]: the soil organic matter or inputs or
+residues or things like that.
+[SPEAKER_03]: So you have all these different sources of
+nitrogen that you have to deal with.
+[SPEAKER_03]: And then you have a fairly complicated
+nitrogen cycle.
+[SPEAKER_03]: And I won't go into details, but you have
+all these inputs that I mentioned.
+[SPEAKER_03]: And most of the transformations that
+happen in the soil are microbially
+[SPEAKER_03]: mediated.
+[SPEAKER_03]: So that means that they're impacted by the
+environment, the temperature, water,
+[SPEAKER_03]: but also crop management practices and all
+of those kinds of things.
+[SPEAKER_03]: Most nitrogen in aerobic environments ends
+up in the nitrate form and thereby is then
+[SPEAKER_03]: subject to losses.
+[SPEAKER_03]: So either leaching losses or
+denitrification losses, both being
+[SPEAKER_03]: obviously very problematic and then these
+transformations and the associated crop
+[SPEAKER_03]: and availability can change dramatically
+in very short periods of time,
+[SPEAKER_03]: especially if you get a lot of rainfall.
+[SPEAKER_03]: So that's a challenge.
+[SPEAKER_03]: A little bit about the hypoxia zone
+because that's very relevant when you are
+[SPEAKER_03]: dealing with nitrogen, especially in corn
+production systems.
+[SPEAKER_03]: You're probably most of you are familiar
+with that, especially in the Mississippi
+[SPEAKER_03]: River basin, the large so-called dead zone
+that develops typically in the mid to late
+[SPEAKER_03]: summer.
+[SPEAKER_03]: And this past year, this is an updated
+graph, the dead zone was again about the
+[SPEAKER_03]: size of the state of New Jersey,
+very large area where basically most of
+[SPEAKER_03]: the fish are being killed because of a
+lack of oxygen.
+[SPEAKER_03]: And this is the, I should say,
+this is the level of the hypoxia task
+[SPEAKER_03]: force goal, which is less than 1,900.
+[SPEAKER_03]: square miles and they have not been able
+to reach that for quite a while.
+[SPEAKER_03]: So a lot of money being poured into it,
+but relatively few results.
+[SPEAKER_03]: The hypoxia task force is pushing the
+states to reduce their nitrogen losses and
+[SPEAKER_03]: reduce them by 45%.
+[SPEAKER_03]: That's what these two states, they're big
+corn states, of course, what their goals
+[SPEAKER_03]: are.
+[SPEAKER_03]: Long-term 45% with no timeline,
+which is very convenient.
+[SPEAKER_03]: But for 2025, they said minus 15%,
+which as far as I know has not been
+[SPEAKER_03]: reached.
+[SPEAKER_03]: I don't think that they've tried that
+hard, quite frankly.
+[SPEAKER_03]: The greenhouse gas emissions, so nitrous
+oxide is about 18% of the global
+[SPEAKER_03]: greenhouse gas emissions.
+[SPEAKER_03]: So a little less than, let's say one
+fifth.
+[SPEAKER_03]: I think what's notable is how little
+attention it gets.
+[SPEAKER_03]: And most of the attention goes to carbon
+dioxide and of course, methane.
+[SPEAKER_03]: For US ag, it's a little over 50% of the
+greenhouse gas emissions are associated
+[SPEAKER_03]: with nitrous oxide.
+[SPEAKER_03]: And that's more than the methane.
+[SPEAKER_03]: By the way, doesn't this look like a
+presidential polling result of the past
+[SPEAKER_03]: few days, especially with the red and the
+blue and all of that, but it's not.
+[SPEAKER_03]: But it seems kind of tough.
+[SPEAKER_03]: But anyway, so pretty significant,
+right?
+[SPEAKER_03]: And very little attention being paid to
+it.
+[SPEAKER_03]: For New York, sorry, you can't see it.
+[SPEAKER_03]: It has a little thing here that's a zoom
+thing.
+[SPEAKER_03]: It's about one third is nitrous oxide.
+[SPEAKER_03]: We have a lot more livestock, especially
+dairy industry in New York.
+[SPEAKER_03]: So methane is a bigger deal.
+[SPEAKER_03]: I think the nitrous oxide estimates are a
+little low for New York.
+[SPEAKER_03]: But New York is all in on the methane.
+[SPEAKER_03]: It's millions of dollars are going to
+that.
+[SPEAKER_03]: Very little as far as I know on the
+nitrous oxide issue.
+[SPEAKER_03]: Okay, so in order to understand why it's
+difficult to affect change with farmers on
+[SPEAKER_03]: nitrogen, we need to understand the risk.
+[SPEAKER_03]: So farmers are inherently risk managers.
+[SPEAKER_03]: You got to have nerves of steel to be a
+farmer these days.
+[SPEAKER_03]: So if we have here an economic optimum end
+rate, that's the perfectly right nitrogen
+[SPEAKER_03]: rate for a particular crop in a particular
+field.
+[SPEAKER_03]: And think corn, because that's our focus
+here.
+[SPEAKER_03]: So risk is probability times cost.
+[SPEAKER_03]: And we have this asymmetric risk for the
+farmer.
+[SPEAKER_03]: That is, if they under-fertilize,
+because there's uncertainty around this EO
+[SPEAKER_03]: and R, if they under-fertilize,
+it's a lot more costly to them than if
+[SPEAKER_03]: they over-fertilize, because they lose
+yield.
+[SPEAKER_03]: And especially when the grain prices are
+high, which they were a few years ago,
+[SPEAKER_03]: they don't want to lose yield.
+[SPEAKER_03]: They can't afford that.
+[SPEAKER_03]: If you over-fertilize, you wasted money on
+fertilizer.
+[SPEAKER_03]: But that's much less costly.
+[SPEAKER_03]: That's a much lower risk.
+[SPEAKER_03]: So the farmer has an incentive to always
+make sure that there's enough nitrogen
+[SPEAKER_03]: that means that they tend to apply excess
+nitrogen.
+[SPEAKER_03]: And that's just realistic.
+[SPEAKER_03]: That's just risk management on their part.
+[SPEAKER_03]: But from a societal perspective,
+it's kind of the opposite in that we like
+[SPEAKER_03]: to see farmers apply less nitrogen
+fertilizer and not over-fertilize,
+[SPEAKER_03]: because then you see a lot of losses.
+[SPEAKER_03]: Some of our work, some of the work that
+was done at Michigan State, where we've
+[SPEAKER_03]: been able to demonstrate once you exceed
+the planned uptake, you obviously have a
+[SPEAKER_03]: lot more losses.
+[SPEAKER_03]: So this is kind of opposing interests.
+[SPEAKER_03]: So what's the solution to that?
+[SPEAKER_03]: Well, from our perspective, the solution
+is to get this uncertainty down to very
+low.
+[SPEAKER_03]: Very minimal, so that we can estimate what
+is the proper nitrogen rate for your crop
+[SPEAKER_03]: in any particular field, in any particular
+year, in any particular location.
+[SPEAKER_03]: Let me get rid of that OK here.
+[SPEAKER_03]: The industry response to that has been the
+four Rs of nutrient management.
+[SPEAKER_03]: So right source, right rate, right time,
+right place.
+[SPEAKER_03]: That's what they're promoting.
+[SPEAKER_03]: Great concept, but the problem is what's
+right?
+[SPEAKER_03]: How do you define what's right?
+[SPEAKER_03]: And especially when it comes to rate,
+the problem is that the rate is defined by
+[SPEAKER_03]: the other three Rs, source, time,
+place, as well as weather and many other
+[SPEAKER_03]: factors.
+[SPEAKER_03]: So it's a complicated issue.
+[SPEAKER_03]: Just to illustrate that, this is data from
+Iowa State University that shows the
+[SPEAKER_03]: economic optimum end rate.
+[SPEAKER_03]: From many nitrogen response trials over a
+number of years and many locations,
+[SPEAKER_03]: that shows quite a distribution.
+[SPEAKER_03]: So one could ask the question,
+well, what's the correct nitrogen rate?
+[SPEAKER_03]: It's very difficult to decide that.
+[SPEAKER_03]: It can be from 50 to 250.
+[SPEAKER_03]: This is corn after soybean.
+[SPEAKER_03]: So you can throw up your hands and say,
+well, is there maybe something underlying
+[SPEAKER_03]: that causes this variability?
+[SPEAKER_03]: Now, the ISU recommendation is this one
+here, around 150.
+[SPEAKER_03]: So that would mean that in about a third
+of the cases, you would under-fertilize.
+[SPEAKER_03]: In about two thirds of the cases,
+you would over-fertilize.
+[SPEAKER_03]: So obviously, having a very generalized
+recommendation, which they do.
+[SPEAKER_03]: I mean, it's remarkable.
+[SPEAKER_03]: The state of Iowa, number one corn state,
+the recommendations is the same for every
+[SPEAKER_03]: field and every year in the state,
+every soil type, everything.
+[SPEAKER_03]: We can do better than that.
+[SPEAKER_03]: So some of the work that we did,
+starting maybe about 25 years ago,
+[SPEAKER_03]: where we started to look at this temporal
+or weather-induced variability.
+[SPEAKER_03]: So Jason Kohopka, who some of you may know
+as the associate dean of the grad school
+[SPEAKER_03]: here, he was a master student with me.
+[SPEAKER_03]: So in one case, we needed 110 kilograms
+per hectare.
+[SPEAKER_03]: In another year, we needed 220.
+[SPEAKER_03]: I mean, huge differences.
+[SPEAKER_03]: This is here at the Musgrave Farm in New
+York.
+[SPEAKER_03]: Shansukh Beji, who was a PhD student,
+started to work with the leachum model and
+[SPEAKER_03]: said, hey, wait a minute.
+[SPEAKER_03]: If we incorporate weather information,
+we can sort of simulate these effects.
+[SPEAKER_03]: And that was basically the idea behind
+ADAPTEN to say, we can make better
+[SPEAKER_03]: recommendations by incorporating these
+factors.
+[SPEAKER_03]: So more recently, some work came out of
+Illinois, where they did a meta-analysis
+[SPEAKER_03]: of many site years in the US and Eastern
+Canada, where they looked at what's the
+[SPEAKER_03]: main source of variability in this
+economic optimum end rate.
+[SPEAKER_03]: And it was basically weather, so
+especially precipitation.
+[SPEAKER_03]: Two-thirds of the variability was
+weather-related.
+[SPEAKER_03]: So you don't incorporate weather into your
+recommendations.
+[SPEAKER_03]: You miss a lot of the information that's
+critical.
+[SPEAKER_03]: Soil factors was second, about 10% to 23%.
+[SPEAKER_03]: And then they said, well, you need to also
+account for risk.
+[SPEAKER_03]: Which, of course, we had already been
+working on at that time.
+[SPEAKER_03]: But it was nice to see this confirmed,
+some of the earlier work that we did and
+[SPEAKER_03]: justification for use like a tool of
+ADAPTEN.
+[SPEAKER_03]: But most of the recommendations that are
+being used around the United States and
+[SPEAKER_03]: actually anywhere else in the world almost
+are either static or they are what we
+[SPEAKER_03]: might call dynamic and adaptive.
+[SPEAKER_03]: So static is basically the one that I just
+illustrated with Iowa State.
+[SPEAKER_03]: The official New York recommendations are
+also static.
+[SPEAKER_03]: They're relatively simplistic.
+[SPEAKER_03]: They don't account for weather as a source
+of variability.
+[SPEAKER_03]: The other category is the dynamic or
+adaptive approach.
+[SPEAKER_03]: It can be soil testing like a PSNT.
+[SPEAKER_03]: It can be canopy sensors.
+[SPEAKER_03]: Or it can be models, which is really the
+area that we sort of started to work in.
+[SPEAKER_03]: And they each have their pros and cons.
+[SPEAKER_03]: The main question, however, is does it
+give you a good recommendation?
+[SPEAKER_03]: You can have fancy equipment, but if it
+doesn't give you a good rate, then what's
+[SPEAKER_03]: the point?
+[SPEAKER_03]: So you have to prove that.
+[SPEAKER_03]: The other kind of complicating factor is
+that a lot of these recommendations are
+[SPEAKER_03]: based on very simple cropping systems like
+corn after corn or corn after soybean.
+[SPEAKER_03]: But now we're interested in more diverse
+type of cropping systems in a sort of
+[SPEAKER_03]: multi-objective environment.
+[SPEAKER_03]: We care about soil health, about carbon
+sequestration, about water quality,
+[SPEAKER_03]: about energy, about greenhouse gas
+emissions.
+[SPEAKER_03]: And so we're bringing in these more
+sustainable type cropping systems or
+[SPEAKER_03]: regenerative rotations, cover cropping,
+using more organic inputs.
+[SPEAKER_03]: We have higher yielding crop genetics.
+[SPEAKER_03]: All of those kind of things.
+[SPEAKER_03]: We have better fertilizers.
+[SPEAKER_03]: So if you just base all your
+recommendations on these very simple
+[SPEAKER_03]: systems, you're missing some of the
+technological innovations.
+[SPEAKER_03]: So that really was the whole point of
+Adapt-In.
+[SPEAKER_03]: So this here shows the Adapt-In as a
+standalone user interface, the way it was
+[SPEAKER_03]: originally offered.
+[SPEAKER_03]: So Kevin is going to be showing how this
+technology is better integrated with other
+[SPEAKER_03]: field management systems, because that's
+what farmers are using.
+[SPEAKER_03]: Farmers don't want to use a standalone
+piece of software.
+[SPEAKER_03]: They want it to be part of another piece
+of software that already has a lot of the
+[SPEAKER_03]: data in there.
+[SPEAKER_03]: So what are some of these inputs for
+Adapt-In?
+[SPEAKER_03]: And I'm not going to go into details.
+[SPEAKER_03]: Some of it is sourced automatically,
+like climate data, soils data as well.
+[SPEAKER_03]: We have our own soil databases.
+[SPEAKER_03]: And then there's user inputs on basically
+soil and crop management practices.
+[SPEAKER_03]: Fertilized applications, manure,
+et cetera.
+[SPEAKER_03]: But you'll see that some of these kind of
+regenerative practices are also included
+[SPEAKER_03]: in that cover cropping, rotations,
+organic amendments, and all of those kind
+[SPEAKER_03]: of things.
+[SPEAKER_03]: Very important.
+[SPEAKER_03]: And then the model basically discretizes
+the soil into layers.
+[SPEAKER_03]: And then it discretizes in time on a daily
+basis.
+[SPEAKER_03]: So based on daily climate data are the
+simulations that then generate a
+[SPEAKER_03]: recommendation.
+[SPEAKER_03]: So just quickly about some of the results.
+[SPEAKER_03]: And this is a graph.
+[SPEAKER_03]: It was actually developed by Jim Schepers
+from the ARS after we shared the data with
+[SPEAKER_03]: him.
+[SPEAKER_03]: And this is based on field validations
+where we had strips in a field where we
+[SPEAKER_03]: had an Adapt-In rate and we had a grower
+rate, whatever the grower used to apply.
+[SPEAKER_03]: And you see on the left side of the graph,
+those were the situations where Adapt-In
+[SPEAKER_03]: recommended less nitrogen than what the
+grower was using.
+[SPEAKER_03]: And you can see that there was virtually
+no yield loss.
+[SPEAKER_03]: On the average, no yield loss.
+[SPEAKER_03]: So the savings were with the fertilizer.
+[SPEAKER_03]: That was 83% of the cases.
+[SPEAKER_03]: In the remaining 70% of the cases,
+we Adapt-In recommended more than the
+[SPEAKER_03]: grower, but it was justified by a yield
+increase.
+[SPEAKER_03]: So this is kind of the situation that you
+want.
+[SPEAKER_03]: In most cases, you reduce your end rate,
+but you acknowledge that, especially in
+[SPEAKER_03]: wet years, you may actually need a little
+bit more nitrogen.
+[SPEAKER_03]: But overall, you can actually have
+considerable benefits in terms of profits,
+[SPEAKER_03]: both in terms of saving on fertilizer or
+avoiding yield losses.
+[SPEAKER_03]: In terms of the environmental losses,
+you can simply, by using a more precise
+[SPEAKER_03]: recommendation, you can significantly use
+your environmental losses.
+[SPEAKER_03]: So on the left is leaching losses.
+[SPEAKER_03]: Any of the dots above the one-to-one line
+meant that there was a reduction in
+[SPEAKER_03]: leaching losses from Adapt-In relative to
+growers, and the same on the right side
+[SPEAKER_03]: with the gaseous losses.
+[SPEAKER_03]: So 36% to 39% reduction simply by not
+over-fertilizing, basically, in the vast
+[SPEAKER_03]: majority of the cases, without any yield
+losses.
+[SPEAKER_03]: So we also did work with some third
+parties.
+[SPEAKER_03]: Notably, University of Nebraska has a
+great on-farm trial network, really
+[SPEAKER_03]: fantastic.
+[SPEAKER_03]: And so they were interested in testing
+Adapt-In.
+[SPEAKER_03]: And so you can see on the left there that
+for one of the fields, they had several of
+[SPEAKER_03]: the fields.
+[SPEAKER_03]: I'm just showing for one field.
+[SPEAKER_03]: And Adapt-In recommended a much lower rate
+than the canopy sensor or what the grower
+[SPEAKER_03]: was using.
+[SPEAKER_03]: But you can see that the yields are
+basically the same.
+[SPEAKER_03]: So that's a good situation, right?
+[SPEAKER_03]: Same yield with less nitrogen.
+[SPEAKER_03]: They also did some multirate trials,
+where you can determine the economic
+[SPEAKER_03]: optimum end rate.
+[SPEAKER_03]: And they compared Adapt-In with Grower,
+another commercial product that's now off
+[SPEAKER_03]: the market from Corteva, and then the
+University of Nebraska recommendations.
+[SPEAKER_03]: And you can see that Adapt-In did very
+well in terms of following that one-to-one
+[SPEAKER_03]: line, which is really what you want to do.
+[SPEAKER_03]: So it's been nice to have third parties do
+some evaluations.
+[SPEAKER_03]: Okay, before I hand it over to Kevin,
+I wanted to maybe talk about some of the
+[SPEAKER_03]: learnings from doing this, having a
+product and integrating it with commercial
+[SPEAKER_03]: software.
+[SPEAKER_03]: So first, commercialization is critical.
+[SPEAKER_03]: Adapt-In would be dead, died on the vine
+if we didn't license it and partner with a
+[SPEAKER_03]: commercial company.
+[SPEAKER_03]: Software integration, as Kevin will show,
+is critical for scaling.
+[SPEAKER_03]: If you want farmers to use it,
+you got to integrate it with other
+[SPEAKER_03]: software systems.
+[SPEAKER_03]: And these cloud-based software end
+solutions have very distinct advantages,
+[SPEAKER_03]: especially when it comes to scaling.
+[SPEAKER_03]: You don't need to buy equipment or
+anything like that.
+[SPEAKER_03]: You can scale it up relatively quickly.
+[SPEAKER_03]: So specifically for Adapt-In, Yara,
+when it was still within Yara,
+[SPEAKER_03]: the marketing department did a survey of
+Adapt-In users.
+[SPEAKER_03]: And the number one thing that they really
+valued was the scientific validity.
+[SPEAKER_03]: It does matter to them.
+[SPEAKER_03]: There's a lot of stuff out there at very
+muddy borders, but they like the
+[SPEAKER_03]: scientific validity.
+[SPEAKER_03]: The customer churn rate is relatively low.
+[SPEAKER_03]: So most people that start to use Adapt-In
+want to keep using it.
+[SPEAKER_03]: They don't say, it doesn't work,
+and they throw it to the site.
+[SPEAKER_03]: So that's good.
+[SPEAKER_03]: Third-party providers offer additional
+scaling.
+[SPEAKER_03]: So both Yara and now EverAg do work with
+what are basically competitors and say
+[SPEAKER_03]: they will make Adapt-In.
+[SPEAKER_03]: So you have that additional scaling.
+[SPEAKER_03]: And my experience is that the public
+sector really struggles with this kind of
+[SPEAKER_03]: technology.
+[SPEAKER_03]: They like the old recommendation systems
+that are very simple, and then you have
+[SPEAKER_03]: much more innovative, improved technology.
+[SPEAKER_03]: And both within the land-grant university
+system as well as state agencies,
+[SPEAKER_03]: they don't really know how to deal with
+that.
+[SPEAKER_03]: And so that's a topic for another
+discussion at some point in time.
+[SPEAKER_03]: Anyway, so with that, I'm now going to
+hand it over to Kevin, who is in
+[SPEAKER_03]: Minnesota, and he's going to do a
+demonstration of the Adapt-In tool within
+[SPEAKER_03]: the Fieldalytics field management software
+system, so within their platform.
+[SPEAKER_03]: Okay, Kevin, you can take over.
+[SPEAKER_03]: Go ahead and start sharing.
+[SPEAKER_00]: Excellent.
+[SPEAKER_00]: Thank you, Harold.
+[SPEAKER_00]: Appreciate the time.
+[SPEAKER_00]: Appreciate the invite to present
+Fieldalytics and the integration of
+[SPEAKER_00]: Adapt-In into Fieldalytics to this group.
+[SPEAKER_00]: A little bit, the history that I have that
+I think is important in my role today is I
+[SPEAKER_00]: spent 25 years in production agriculture
+in the retail setting.
+[SPEAKER_00]: Started off out of college, have a BS in
+geography with GIS.
+[SPEAKER_00]: Started off with a crop consultant,
+teaching basically university extension
+[SPEAKER_00]: people throughout the United States on how
+GPS is going to work in tractors,
+[SPEAKER_00]: how it's going to work in combines,
+and how the data is going to be used.
+[SPEAKER_00]: So I've been in this game quite a long
+time, and the thing that I've always been
+[SPEAKER_00]: working towards is efficiencies.
+[SPEAKER_00]: How do we make the tool more efficient so
+we can get it to more people?
+[SPEAKER_00]: That is one of the drivers on why I left
+retail and went to Yara with Adapt-In back
+[SPEAKER_00]: in April of 2023.
+[SPEAKER_00]: My goal was to help them understand retail
+better, understand the grower at the farm
+[SPEAKER_00]: gate better, so we can build a tool that
+could help with a lot of the issues that
+[SPEAKER_00]: Harold talked about.
+[SPEAKER_00]: The thing that really hits home is,
+Harold mentioned the EONR.
+[SPEAKER_00]: In universities and people who are
+researching, we understand that nitrogen
+[SPEAKER_00]: is finicky.
+[SPEAKER_00]: But when you try to convince the grower
+that they need to cut 40 to 50 to 60
+[SPEAKER_00]: pounds of nitrogen out of their program,
+it's a hard sell.
+[SPEAKER_00]: They had rather pay the money for the
+extra nitrogen to not have the yield loss.
+[SPEAKER_00]: So we're working in conjunction trying to
+help ease some of that pain, and this tool
+[SPEAKER_00]: has really opened up a lot of eyes,
+but we need to get to a lot more.
+[SPEAKER_00]: So if there's 96 million acres of corn in
+the United States, today we're running in
+[SPEAKER_00]: about 500,000 acres of that.
+[SPEAKER_00]: So we're not even the tip of the iceberg
+here on the number of fields and farms
+[SPEAKER_00]: that we can touch and help manage nitrogen
+better.
+[SPEAKER_00]: For the industry, for the environment,
+for everything, it's the right thing to
+[SPEAKER_00]: do.
+[SPEAKER_00]: And that's why I'm excited to take this
+job with EverAg.
+[SPEAKER_00]: As a product manager, as now I'm helping
+the developers and our modelers make
+[SPEAKER_00]: things more efficient and put into this
+software.
+[SPEAKER_00]: So I'm just going to give you a little
+rundown of the software.
+[SPEAKER_00]: Usually our software demos take two,
+sometimes three hours, depending on
+[SPEAKER_00]: questions.
+[SPEAKER_00]: So forgive me, I'm going to condense this
+into 20 minutes and do the best I can in
+[SPEAKER_00]: that 20 minutes.
+[SPEAKER_00]: So basically the software, this is a,
+we call it an FMIS, a farm management
+[SPEAKER_00]: information system.
+[SPEAKER_00]: It's not a true GIS because I can't write
+scripts in it.
+[SPEAKER_00]: I can't do a lot of third-party stuff,
+but we have grower farms and fields,
+[SPEAKER_00]: and this would be what a typical retailer
+would look like where they would have
+[SPEAKER_00]: different locations and then they would
+have, within that location, they would
+[SPEAKER_00]: have growers and then a grower would have
+farms.
+[SPEAKER_00]: And I'm going to just share this,
+my little demo farm here that I call KOA
+[SPEAKER_00]: Adapt-N.
+[SPEAKER_00]: So within that I have, I have a handful of
+different farms that I manage and I'm
+[SPEAKER_00]: looking at.
+[SPEAKER_00]: And if I were a retail agronomist or a
+grower that had access to this and I
+[SPEAKER_00]: wanted to look at my farms, I could come
+to this dashboard and I could pull up this
+[SPEAKER_00]: dashboard and quickly look through what
+are my nitrogen needs for today.
+[SPEAKER_00]: So this RX has given me a min,
+average, and max nitrogen need for each of
+[SPEAKER_00]: these fields.
+[SPEAKER_00]: So I can see this field's calling for 137
+pounds of nitrogen today.
+[SPEAKER_00]: This field's 98 pounds.
+[SPEAKER_00]: This field's 130 pounds.
+[SPEAKER_00]: And I can, I can click around and I can
+open up the map and it'll zoom to the map
+[SPEAKER_00]: and I can see what, what encompasses that
+recommendation.
+[SPEAKER_00]: I can look through, I can click on a cell
+and it'll tell me what is needed.
+[SPEAKER_00]: I can look over here and see that on the
+right side, I can see a few of the metrics
+[SPEAKER_00]: for that field, such as planning date,
+rainfall since planting.
+[SPEAKER_00]: And again, this is current day.
+[SPEAKER_00]: So we're looking at all the information
+set up.
+[SPEAKER_00]: I can see I don't have any applications
+set on this field and I got a little bit
+[SPEAKER_00]: left to do, but this is, this is the area
+that the retail agronomist or the crop
+[SPEAKER_00]: consultant will spend.
+[SPEAKER_00]: They'll come in here on a daily basis and
+look, or, you know, when it's that,
+[SPEAKER_00]: when it's on schedule to say, I need to
+see what's going on in these fields.
+[SPEAKER_00]: They'll come here just to see where that's
+at.
+[SPEAKER_00]: The real, the real power of this tool is
+having an integration with Fieldalytics is
+[SPEAKER_00]: the ability to batch process or do batch
+things in batch.
+[SPEAKER_00]: So I'm going to just come back out here to
+my grower level and I'm going to come in
+[SPEAKER_00]: here to configure fields on AdaptN.
+[SPEAKER_00]: So the first thing I can do, every field
+that I have a check mark in, I've already
+[SPEAKER_00]: enrolled into the program.
+[SPEAKER_00]: So if I, if I have a grower come and say I
+need, I want to enroll these three fields,
+[SPEAKER_00]: I can come in here.
+[SPEAKER_00]: I can say click that.
+[SPEAKER_00]: I can hit enroll.
+[SPEAKER_00]: What it does then is it starts a process
+and sends that through the API to the
+[SPEAKER_00]: AdaptN model.
+[SPEAKER_00]: It starts building out the soil types,
+the auto generated layers that Harold was
+[SPEAKER_00]: talking about.
+[SPEAKER_00]: Our goal in the future is to make more
+layers automated.
+[SPEAKER_00]: And as I click through some of these
+layers, you'll get an idea of how we might
+[SPEAKER_00]: want to do that.
+[SPEAKER_00]: But that's the start of that.
+[SPEAKER_00]: And I'm not going to hit enroll because I
+don't want to enroll any extra acres that
+[SPEAKER_00]: are enrolled.
+[SPEAKER_00]: Cause it will trigger an invoice.
+[SPEAKER_00]: So once I have the fields enrolled,
+then I can start to, I can start to
+[SPEAKER_00]: configure them.
+[SPEAKER_00]: So I can just pick a couple of fields here
+and I can go into configure selected.
+[SPEAKER_00]: So now what I'm doing is I have these two
+fields that I have not configured yet.
+[SPEAKER_00]: I have them in a role that I haven't
+configured.
+[SPEAKER_00]: I can come in and I can do them
+individually or I can do them in a batch.
+[SPEAKER_00]: So I can say, okay, my expected yield on
+these fields is 225 bushels.
+[SPEAKER_00]: I'm going to have 105 day corn.
+[SPEAKER_00]: And I plan to plant somewhere around April
+15th.
+[SPEAKER_00]: So I can look at it individually.
+[SPEAKER_00]: I can come back in after the fact and say,
+okay, I actually didn't get into this
+[SPEAKER_00]: field until April 20th.
+[SPEAKER_00]: So now I can just change that.
+[SPEAKER_00]: I can also load different yield management
+zones, so on and so forth.
+[SPEAKER_00]: But it's really easy to create a system
+where you can do multiple fields.
+[SPEAKER_00]: And this is, I could go 10 fields.
+[SPEAKER_00]: I could go 20 fields.
+[SPEAKER_00]: I could do his whole farm at this level.
+[SPEAKER_00]: So that's really a powerful thing that we
+had some of that in the past, but not to
+[SPEAKER_00]: this level.
+[SPEAKER_00]: So this allows us to batch process and
+enroll multiple fields at once.
+[SPEAKER_00]: For the purpose of showing you some
+transparency and get more granular with
+[SPEAKER_00]: the data, I'm going to zoom into just one
+field and I'm going to spend most of my
+[SPEAKER_00]: time that I have on this one field.
+[SPEAKER_00]: So the power of having an integration and
+using an API to shell out, to adapt and to
+[SPEAKER_00]: grab that information, that nitrogen rack
+is, it allows all of the data to be in one
+[SPEAKER_00]: space.
+[SPEAKER_00]: So a lot of the issues that I had as a
+user of AdaptED when I was back in retail
+[SPEAKER_00]: and a lot of the customer feedback that we
+get is that there are times when you don't
+[SPEAKER_00]: want to leave a software.
+[SPEAKER_00]: I don't want to come in here and take my
+yield data and export it.
+[SPEAKER_00]: I don't want to export my soil test
+because it's all export, import,
+[SPEAKER_00]: and you're touching things a lot of times
+that you won't have to.
+[SPEAKER_00]: So if you have this system where
+everything is sitting, then you can start
+[SPEAKER_00]: to configure the field.
+[SPEAKER_00]: So I can come in here and I can look and
+say, okay, what's my expected yield?
+[SPEAKER_00]: So on this particular field, I'm using a
+yield potential layer that I created off
+[SPEAKER_00]: of a normalized yield map.
+[SPEAKER_00]: So I can assign different yield goals to
+it here, or I can take what the data is in
+[SPEAKER_00]: my tree.
+[SPEAKER_00]: Then I start to look at population.
+[SPEAKER_00]: So this field, they didn't have a variable
+rate planter, so he just put one flat
+plant.
+[SPEAKER_00]: I can look at the prior crop.
+[SPEAKER_00]: I can change the tillage method,
+organic matter.
+[SPEAKER_00]: So I'm using my most recent soil test
+point.
+[SPEAKER_00]: I can put in an emergent state when that
+crop came up.
+[SPEAKER_00]: This field was planted May 18th,
+or March, yeah, May 18th, and it took a
+[SPEAKER_00]: while.
+[SPEAKER_00]: We were very wet this spring in southern
+Minnesota.
+[SPEAKER_00]: I can add a cover crop if there was a
+cover crop to it, so on and so forth.
+[SPEAKER_00]: So this screen gives us a lot of
+versatility.
+[SPEAKER_00]: Once all that is entered, it sends the
+data on its way, and then a rec comes
+[SPEAKER_00]: back.
+[SPEAKER_00]: And in season, this rec will update daily,
+but we shut this off around August 15th,
+[SPEAKER_00]: August 30th, just because people are not
+applying nitrogen after that day.
+[SPEAKER_00]: So if I look at this particular field,
+I can see what the setup is.
+[SPEAKER_00]: So May 13th was the planting date.
+[SPEAKER_00]: I had full emergence on May 28th.
+[SPEAKER_00]: I've had 23.4 inches of rain since
+planting.
+[SPEAKER_00]: Estimated growth stage, this stops at DT.
+[SPEAKER_00]: So one thing that we're looking for in the
+future is how do we expand this out into
+[SPEAKER_00]: the R stages, and does that make sense,
+or do we just stop it at DT and that's it?
+[SPEAKER_00]: What is the maturity class prior crop
+tillage?
+[SPEAKER_00]: Then we look at organic matter.
+[SPEAKER_00]: So this field has an organic matter range
+from 1.4 to 13.5.
+[SPEAKER_00]: Welcome to Minnesota.
+[SPEAKER_00]: This is not abnormal in the region that I
+work in, so we work a lot with different
+[SPEAKER_00]: organic matters, and that's important
+because it's a mineralization factor that
+[SPEAKER_00]: a lot of people don't take into account
+when they're figuring their nitrogen
+[SPEAKER_00]: programs.
+[SPEAKER_00]: Then our yield targets.
+[SPEAKER_00]: So this is what I want to hit on,
+why one of the major reasons why the
+[SPEAKER_00]: integration with EverEgg and Fieldalytics
+is big for ADAPTED.
+[SPEAKER_00]: So here I have a yield target.
+[SPEAKER_00]: Everybody has a yield goal going into the
+season, but it's not always attained due
+[SPEAKER_00]: to environmental factors that you can't
+control as Harold touched on.
+[SPEAKER_00]: So if I start this year, then I've got a
+266 bushel yield goal, which this field
+[SPEAKER_00]: has attained that.
+[SPEAKER_00]: It's been in the 260s.
+[SPEAKER_00]: It's not unreasonable to have that goal to
+start, but then I start to think about,
+[SPEAKER_00]: alright, I didn't plant this field until
+May 13th.
+[SPEAKER_00]: It had kind of a slow emergence.
+[SPEAKER_00]: It was cool and wet this spring,
+so how can I justify changing that rate?
+[SPEAKER_00]: Well, there's a couple different ways that
+we can do it, and it depends on what your
+[SPEAKER_00]: agronomy philosophy is.
+[SPEAKER_00]: My agronomy philosophy is I'm going to
+look at historical data to see what did
+[SPEAKER_00]: this achieve with similar years.
+[SPEAKER_00]: So there's different ways that you can
+look to see what was similar, what was
+[SPEAKER_00]: not.
+[SPEAKER_00]: One of the tools that ADAPTED has that we
+can run in the old user interface is a
+[SPEAKER_00]: multi-year comparison.
+[SPEAKER_00]: So what this shows us is what were my
+nitrogen needs for this field the past
+[SPEAKER_00]: years that it was corn, because I just
+wanted to simplify it a little bit.
+[SPEAKER_00]: I can go back to 2010 and do every year,
+but I skipped a few years, and I wanted to
+[SPEAKER_00]: look and see, okay, what's similar?
+[SPEAKER_00]: So this 2018 seems pretty similar to what
+2014 is for loss, recommendation,
+[SPEAKER_00]: and rainfall.
+[SPEAKER_00]: So then I start to look at my data and
+say, okay, what happened in 2018 in this
+[SPEAKER_00]: field?
+[SPEAKER_00]: And I can load up the 2018 yield data,
+and I can look at this and say,
+[SPEAKER_00]: hmm, well, I had 170 bushel yield average,
+and I had quite a few areas here that this
+[SPEAKER_00]: spot here was 89 bushels, this spot was 63
+bushels, over here on this little sand,
+[SPEAKER_00]: on this little wet hole is 93 bushels.
+[SPEAKER_00]: I did obtain some okay yields,
+215, 200.
+[SPEAKER_00]: So my first thought is I am going to
+reassign my yield estimates because the
+[SPEAKER_00]: 266 bushels is not accurate or realistic.
+[SPEAKER_00]: So how do I do that?
+[SPEAKER_00]: Well, I could take this past year's yield
+data, but I don't really want to do that
+[SPEAKER_00]: because it's not exactly what's going to
+happen this year.
+[SPEAKER_00]: So I'm going to go back to in-season
+imagery.
+[SPEAKER_00]: So what I'm going to do is I'm going to
+come in here, and I'm going to look
+[SPEAKER_00]: through my in-season imagery.
+[SPEAKER_00]: So imagine with me, it's July 15th,
+and the corn's about V18, V16,
+[SPEAKER_00]: and I'm going to wide drop it.
+[SPEAKER_00]: So what I would do is I would come in and
+find the most recent image closest to that
+[SPEAKER_00]: day.
+[SPEAKER_00]: Obviously, if it's July 15th, none of
+these would be populated yet.
+[SPEAKER_00]: So I'll look at this July 12th image.
+[SPEAKER_00]: And when that image comes up, it's going
+to show me the NDVI.
+[SPEAKER_00]: So now I can see what is my crop vigor in
+those spots.
+[SPEAKER_00]: And I can tell I've got almost crop
+failure or really poor leaf reflectance in
+[SPEAKER_00]: those areas.
+[SPEAKER_00]: So I can assume that these are poor
+yielding areas.
+[SPEAKER_00]: I could also go out and scout that.
+[SPEAKER_00]: I can send this to the Fieldolytics mobile
+app.
+[SPEAKER_00]: I can look at this image as I go out
+there, and I can verify on foot as well if
+[SPEAKER_00]: that's the issue.
+[SPEAKER_00]: So I'm going to use this layer.
+[SPEAKER_00]: So what I'm going to do is I'm going to
+create a new yield potential for it.
+[SPEAKER_00]: And I would come into this tool and say
+Create Yield Potential.
+[SPEAKER_00]: And I'm going to call it July 12th Yield
+Adjustment.
+[SPEAKER_00]: And I have to tell it what commodity I'm
+in.
+[SPEAKER_00]: So corn, field, and bushels per acre.
+[SPEAKER_00]: So it's taking these numbers from a
+database that Everag has generated off of
+[SPEAKER_00]: NAS data based on historic yields.
+[SPEAKER_00]: So it's saying in this field, the range is
+going to be from 178 to 276 on a normal
+[SPEAKER_00]: year, on an average year.
+[SPEAKER_00]: So I create that.
+[SPEAKER_00]: And then I can come in and look at that
+created layer.
+[SPEAKER_00]: It takes just a minute as it rasterizes
+that data.
+[SPEAKER_00]: So now I have this yield estimation layer.
+[SPEAKER_00]: And I can edit that as well because it's
+going off of averages.
+[SPEAKER_00]: And I don't feel that I'm above average or
+at average.
+[SPEAKER_00]: So I can do that two different ways.
+[SPEAKER_00]: I'm going to take this back to what I feel
+is appropriate for that season.
+[SPEAKER_00]: So now I'm going to go average yield 210.
+[SPEAKER_00]: And my range is going to be from 134 to
+232.
+[SPEAKER_00]: So I can submit that.
+[SPEAKER_00]: And now I've got a yield potential layer
+that I can load into ADAPT-N that will
+[SPEAKER_00]: change the REC accordingly based on those
+yield estimates.
+[SPEAKER_00]: So I come back into the ADAPT-N
+configuration.
+[SPEAKER_00]: And under expected yield, I'm going to
+unlock that layer.
+[SPEAKER_00]: And I'm going to change my expected yield
+average to 210.
+[SPEAKER_00]: And I'm going to use that July 12th Yield
+Adjustment.
+[SPEAKER_00]: And it's going to give me values that look
+like this.
+[SPEAKER_00]: And I'm going to say this whole,
+because I went out and scouted it,
+[SPEAKER_00]: is not going to be 143 bushels.
+[SPEAKER_00]: I'm going to take that down to 120
+bushels.
+[SPEAKER_00]: And these areas over here, I also looked
+at those because I didn't feel that those
+[SPEAKER_00]: were.
+[SPEAKER_00]: And I'm going to take those to 150.
+[SPEAKER_00]: So it gives the agronomist the opportunity
+to change things on the fly.
+[SPEAKER_00]: As they see fit.
+[SPEAKER_00]: They might say where the field where it's
+good is really good.
+[SPEAKER_00]: And then you could change that to 245,
+whatever you felt that number was.
+[SPEAKER_00]: So then you save that configuration.
+[SPEAKER_00]: And now what it's doing is hitting the
+API, sending that data to the ADAPT-N
+[SPEAKER_00]: model.
+[SPEAKER_00]: And it takes just a minute because it's
+that it tells me that my configuration was
+[SPEAKER_00]: complete and that ADAPT-N accepted the
+configuration changes.
+[SPEAKER_00]: So then it usually takes about two minutes
+for it to come back.
+[SPEAKER_00]: So in those two minutes, I'll go to
+another field.
+[SPEAKER_00]: I'll look at something else on this.
+[SPEAKER_00]: Maybe look at some statistics or try and
+figure out what my next step is with that.
+[SPEAKER_00]: Like I said, the calculations,
+there's quite a few calculations that are
+[SPEAKER_00]: being done on it.
+[SPEAKER_00]: It's no slower than if we were in the user
+interface working within the model itself.
+[SPEAKER_00]: So just give it a minute.
+[SPEAKER_00]: The other things that are really great
+about being integrated is the
+[SPEAKER_00]: transparency.
+[SPEAKER_00]: So I can look at.
+[SPEAKER_00]: My soil test I can look at my pH's and I
+can make that I can make a decision if I
+[SPEAKER_00]: want to add pH to the model or not.
+[SPEAKER_00]: Some of our users will add it
+automatically.
+[SPEAKER_00]: Others might say pretty neutral.
+[SPEAKER_00]: I'm not I'm not going to mess around with
+it.
+[SPEAKER_00]: It's just another variable.
+[SPEAKER_00]: So you could look at this and say,
+OK, in this sand area here, I've got some
+[SPEAKER_00]: pretty high pH's.
+[SPEAKER_00]: I might want to add my pH to the
+configuration if I haven't already.
+[SPEAKER_00]: So there's different different advantages
+of being in all the data in one as applied
+[SPEAKER_00]: data.
+[SPEAKER_00]: So anything that's applied to the field,
+if the if the controller is hooked up to
+[SPEAKER_00]: field elitics, then the data will come
+back into the software.
+[SPEAKER_00]: So we have access to everything in one
+spot.
+[SPEAKER_00]: And again.
+[SPEAKER_00]: So you can see part of it is back because
+the yield has changed to two seconds.
+[SPEAKER_00]: I changed to 17 because I changed those
+high high level to 245, but the rec still
+[SPEAKER_00]: is still is on its way.
+[SPEAKER_00]: But we can use what we have and it can
+come back to that.
+[SPEAKER_00]: So the user then would would then the next
+step would be to pull up the PDF off of
+[SPEAKER_00]: the field.
+[SPEAKER_00]: And what this tells tells us is what's
+going on in this field.
+[SPEAKER_00]: What is happening that would make that
+recommendation 91 pounds?
+[SPEAKER_00]: And so you can see the range of total and
+loss so we can look throughout the season
+[SPEAKER_00]: on what.
+[SPEAKER_00]: Our losses are from the men and the Max
+and the average.
+[SPEAKER_00]: Then I can break that down into a gas loss
+or a leaching loss, so I didn't have a lot
+[SPEAKER_00]: of gas loss this year.
+[SPEAKER_00]: Most of my loss came from the leaching
+state.
+[SPEAKER_00]: Which is normal to the amount of moisture
+we had.
+[SPEAKER_00]: So here I'm looking at the field capacity
+of moisture and you can see how the up and
+[SPEAKER_00]: down throughout the season.
+[SPEAKER_00]: And we were wet most of the year up until
+probably early July.
+[SPEAKER_00]: Then it dried out and we finally got back
+into the fields.
+[SPEAKER_00]: There probably wasn't a wheel turn spring
+or side dressing in southern Minnesota
+[SPEAKER_00]: from June 10th to July 4th.
+[SPEAKER_00]: Just that much rain.
+[SPEAKER_00]: So.
+[SPEAKER_00]: Here's you know the different graphs that
+we we look at.
+[SPEAKER_00]: So the grower and the and the agronomist
+can can see what's happening to this
+[SPEAKER_00]: field.
+[SPEAKER_00]: Why are we getting that if we have fall?
+[SPEAKER_00]: Application of ammonia then we look at OK,
+what's mineralizing?
+[SPEAKER_00]: Where are we getting some winter losses?
+[SPEAKER_00]: Are we getting?
+[SPEAKER_00]: You know, was it warm here so we can see
+this is not normal for Minnesota in this
+[SPEAKER_00]: February March time frame to have averages
+of 50 degrees.
+[SPEAKER_00]: Consistently, usually it's it's down here.
+[SPEAKER_00]: We only have this one.
+[SPEAKER_00]: Cold spell January February this year,
+so first for winter lovers.
+[SPEAKER_00]: It was kind of a dismal winter,
+but for people that like the warmth that
+[SPEAKER_00]: was nice.
+[SPEAKER_00]: We can break it out lost by different soil
+structure, so sand.
+[SPEAKER_00]: Leaching so this this field the two red
+spots in the field were sand, so we are
+[SPEAKER_00]: losing a lot of nitrogen on that sand.
+[SPEAKER_00]: So what do we do?
+[SPEAKER_00]: We talk to this girl or the next year and
+say maybe we pull the anhydrous bar up as
+[SPEAKER_00]: we go across those spots.
+[SPEAKER_00]: Maybe it's not worth it to put that
+nitrogen down in those areas and we we
+[SPEAKER_00]: treat it differently or we go to a all
+spring urea application variable rate and
+[SPEAKER_00]: just start with a lower rate at that
+point.
+[SPEAKER_00]: So those are all the metrics that that we
+look at when we're trying to define what
+[SPEAKER_00]: what the wreck will look like.
+[SPEAKER_00]: So now that other wreck is back.
+[SPEAKER_00]: So I can look to see now how.
+[SPEAKER_00]: The wreck is adjusted by changing that
+nitrogen that yield that yield goal.
+[SPEAKER_00]: So we were we're going to go from a 95
+pound rate to a 40 pound rate.
+[SPEAKER_00]: So now we're looking at a new
+recommendation based on.
+[SPEAKER_00]: This lower yield goal, which is more
+realistic to what the season is.
+[SPEAKER_00]: So this is where the user would go out.
+[SPEAKER_00]: And and take this to the field to apply.
+[SPEAKER_00]: And you can see the how much time do I
+have left Harold?
+[SPEAKER_03]: We're just about out of time.
+[SPEAKER_00]: Yes, OK, so I just want to do one more
+thing here.
+[SPEAKER_00]: So the main thing about this is a tool
+that's in this tool set.
+[SPEAKER_00]: That's really powerful is I'm going to
+pick this field, so I'm going to get ready
+[SPEAKER_00]: to take this to the to the field to
+spread.
+[SPEAKER_00]: And what I can do is I could come in here
+and select this adapt and only rack.
+[SPEAKER_00]: And I have a product built in here called
+just straight nitrogen, so I just call it
+[SPEAKER_00]: adapt and nitrogen need.
+[SPEAKER_00]: And what I do is I run this.
+[SPEAKER_00]: And I do a flat rate comparison.
+[SPEAKER_00]: So if you remember this field was calling
+for 40 pounds event, so I'm going to
+[SPEAKER_00]: submit this.
+[SPEAKER_00]: And this is where you would send the the
+product to the machine.
+[SPEAKER_00]: It sends direct if your machine or asset
+is connected, we can send it right to the
+[SPEAKER_00]: machine out in the field.
+[SPEAKER_00]: We don't have to do jump drives and stuff
+like that that we had to do in the old
+[SPEAKER_00]: user interface.
+[SPEAKER_00]: But what this is showing is.
+[SPEAKER_00]: The red areas are being under applied and
+the green areas are being over applied or
+[SPEAKER_00]: vice versa.
+[SPEAKER_00]: So in this 50 pound application rate.
+[SPEAKER_00]: That we're going to put on this field.
+[SPEAKER_00]: Some areas are getting 135 pounds and some
+areas should get a lot less.
+[SPEAKER_00]: Than that, and so what it does is it shows
+the farmer that if I went out with that 50
+[SPEAKER_00]: pound rate or the yeah, if I went out with
+that 50 pound rate.
+[SPEAKER_00]: Some areas I would be under applying by
+110 pounds and other areas I would over
+[SPEAKER_00]: apply by 40 pounds.
+[SPEAKER_00]: So.
+[SPEAKER_00]: By by doing a flat rate application,
+you're not putting the right product in
+[SPEAKER_00]: the right place, and that's the main
+point.
+[SPEAKER_00]: Of the four R's is.
+[SPEAKER_00]: If if I were to recommend if this person
+absolutely did not want to do variable
+[SPEAKER_00]: rate.
+[SPEAKER_00]: And they wanted to.
+[SPEAKER_00]: Maximize yield.
+[SPEAKER_00]: On this field.
+[SPEAKER_00]: The recommendation to that grower would be
+you need to be somewhere in that 120 to
+[SPEAKER_00]: 150 pound range across the field because
+you want to maximize the yield at the
+[SPEAKER_00]: highest level.
+[SPEAKER_00]: So it's it's really unfortunate that
+people are looking at.
+[SPEAKER_00]: What they can do and not utilizing the
+tools that are out there with the GPS and
+[SPEAKER_00]: variable rate application, and it's
+getting more and more.
+[SPEAKER_00]: I mean, things are coming online faster
+than ever and looking forward to where you
+[SPEAKER_00]: know the next 10 years are going to go
+with with all this technology and
+[SPEAKER_00]: automation and an AI evaluations of fields
+and data.
+[SPEAKER_00]: So maybe you don't have to go out and boot
+check it or you can use data imagery more
+[SPEAKER_00]: quickly and have more more images
+available so.
+[SPEAKER_00]: Again, yeah, appreciate the time I get
+excited when I when I think about all the
+[SPEAKER_00]: opportunities that users have now today
+with adapt in and just appreciate Cornell
+[SPEAKER_00]: and Harold.
+[SPEAKER_00]: You know, coming up with the tool and and
+hopefully we can continue the relationship
+[SPEAKER_00]: to to continue to make it better.
+[SPEAKER_00]: And one other thing that the University of
+validity is is a big deal.
+[SPEAKER_00]: Farmers want that.
+[SPEAKER_00]: That check they want that that I know what
+I'm doing is right and I'm not going to
+[SPEAKER_00]: lose you.
+[SPEAKER_03]: Great thank you very much.
+[SPEAKER_03]: I hope that gave you a little bit of a
+taste of the benefits that we have from
+[SPEAKER_03]: integration with other software and
+innovations that are happening on that end
+[SPEAKER_03]: and and how we basically can partner with
+them.
+[SPEAKER_03]: Janice, you have a question.
+[SPEAKER_02]: Celebration.
+[SPEAKER_02]: I hope you were there.
+[SPEAKER_02]: I wasn't no OK where he heralded
+unintended on one of these slides as a
+[SPEAKER_02]: cousin out of the school.
+[SPEAKER_02]: Yeah, so that's nice.
+[SPEAKER_02]: That was entering this presentation.
+[SPEAKER_02]: Really delighted to see.
+[SPEAKER_02]: So.
+[SPEAKER_02]: It was a little bit of a problem in the
+bathroom.
+[SPEAKER_02]: I sense my passive soil was discussed and
+I just want to understand this aspect of
+[SPEAKER_02]: it a little bit better.
+[SPEAKER_02]: I mean, in an organization, of course,
+you're going to get better from your
+[SPEAKER_02]: climate and all the rest.
+[SPEAKER_02]: So are you starting from a position of
+having a soil health very good on so
+[SPEAKER_02]: appropriate and then work with that model
+or how is the end supply the capacity of
+[SPEAKER_02]: the soil itself being produced?
+[SPEAKER_03]: Yeah, no, that's it.
+[SPEAKER_03]: That's a good question.
+[SPEAKER_03]: So we we we basically have kind of two
+pools that we're working with.
+[SPEAKER_03]: So one is the is the sort of organic
+matter pool and the mineralization of sort
+[SPEAKER_03]: of organic matter.
+[SPEAKER_03]: And we're basing that currently on
+basically on organic matter and texture.
+[SPEAKER_03]: So we we're not using any of the sort of
+health indicators.
+[SPEAKER_03]: That's something that I'd like to do,
+but it's not that widely measured.
+[SPEAKER_03]: So organic matter is standard soil
+testing.
+[SPEAKER_03]: The other pool is the more labor pool that
+is associated with sort of these more
+[SPEAKER_03]: recent additions.
+[SPEAKER_03]: So like a cover crop.
+[SPEAKER_03]: Kevin didn't have time to really talk
+about that, but we we worked and Matt Ryan
+[SPEAKER_03]: actually contribute.
+[SPEAKER_03]: Matt was here, right?
+[SPEAKER_03]: Yeah.
+[SPEAKER_03]: Helped and Steve Mersky as well.
+[SPEAKER_03]: That's some good data on cover crop
+management contributions or previous.
+[SPEAKER_03]: So my earlier work at the Willisboro farm
+on alfalfa contributions.
+[SPEAKER_03]: So those are kind of seen as more labile
+pools.
+[SPEAKER_03]: And then we had sort of organic matter
+pool.
+[SPEAKER_03]: So it's you know, you have to have to make
+shortcuts, right?
+[SPEAKER_03]: You have to.
+[SPEAKER_03]: So you have to focus on what what really
+matters.
+[SPEAKER_03]: And so, yeah, so that's basically manure,
+of course, is a big issue.
+[SPEAKER_03]: And, you know, being here in New York,
+we put a lot of effort into the manure
+[SPEAKER_03]: component.
+[SPEAKER_03]: And and it's interesting because the here
+in New York, especially the consultants,
+[SPEAKER_03]: so ACS, which is the big crop consulting
+company, their headquarters right here by
+[SPEAKER_03]: the airport on the foreign roads,
+they're developing new software that
+[SPEAKER_03]: focuses a little bit more on the dairy
+industry.
+[SPEAKER_03]: And so they're going to be one of the
+users of adapt and to their own ecosystem,
+[SPEAKER_03]: to their own platform, basically.
+[SPEAKER_03]: So but but yeah, the manure issue is any
+of these organic inputs, as you know,
+[SPEAKER_03]: are much tougher to deal with than sort of
+like a straight, you know, urea or,
+[SPEAKER_03]: you know, liquid solution or anything like
+that.
+[SPEAKER_03]: So I think we can take a little bit of
+pride on on that component.
+[SPEAKER_03]: At least that I think we've done a fairly
+good job.
+Yeah.
+[SPEAKER_03]: Any other questions?
+Yeah.
+[SPEAKER_01]: No,
+[SPEAKER_03]: not that I'm aware of.
+[SPEAKER_03]: We did work with Environmental Defense
+Fund a few years ago on the issue of
+[SPEAKER_03]: benchmark, the end balance benchmark.
+[SPEAKER_03]: And to see how that sort of related to
+actual recommendations and whether,
+[SPEAKER_03]: you know, you'd be able to meet a certain
+criteria or certain and balance
+[SPEAKER_03]: benchmarks.
+[SPEAKER_03]: That's about about the extent of it.
+[SPEAKER_03]: You know, it's been one of the reasons why
+we decided to go and license it is is
+[SPEAKER_03]: because it was very difficult to work with
+other universities.
+[SPEAKER_03]: They they.
+[SPEAKER_03]: So when you do an innovation, you're to
+some extent disrupting.
+[SPEAKER_03]: I mean, I don't like the term disrupting
+because it's kind of overused.
+[SPEAKER_03]: But within the U.S., we have a land grant
+university system and every state has
+[SPEAKER_03]: their own language university and has
+their own nutrient recommendations.
+[SPEAKER_03]: And we only have that with nutrient
+recommendations.
+[SPEAKER_03]: We don't have it with tillage or cover
+crop recommendations.
+[SPEAKER_03]: But nutrients, every state has their own
+recommendation system.
+[SPEAKER_03]: And so our system was much more universal.
+[SPEAKER_03]: And and so it was difficult working with
+the specialists in each of the land grant
+[SPEAKER_03]: university.
+[SPEAKER_03]: And so we said, OK, let's and let's and
+just go to commercial route.
+[SPEAKER_03]: And I'm really, really glad we did,
+because you can see the the result that if
+[SPEAKER_03]: you work with the commercial sector,
+you can really innovate and keep
+[SPEAKER_03]: innovating.
+[SPEAKER_01]: You know, it's like I wanted to.
+[SPEAKER_03]: I would need to talk to the company.
+[SPEAKER_03]: You know, the the company has an exclusive
+license so so they can sub license,
+[SPEAKER_03]: but Cornell cannot sub license to someone
+else.
+[SPEAKER_03]: But yeah, we've always worked with with
+other organizations like University of
+[SPEAKER_03]: Nebraska, Auburn University, NC State
+University.
+[SPEAKER_03]: So there the company is very open to
+collaborations.
+[SPEAKER_03]: We always are careful that because
+sometimes you have collaborators who don't
+[SPEAKER_03]: use the tool properly and then they say,
+oh, it doesn't work.
+[SPEAKER_03]: And say, no, you didn't use it properly.
+[SPEAKER_03]: So there's but yeah, in general,
+they're very open to that.
+Yeah.
+[SPEAKER_03]: Yeah.
+[SPEAKER_01]: It's a huge attribute.
+[SPEAKER_01]: Kevin demonstrates something I was
+watching.
+[SPEAKER_01]: So complex.
+[SPEAKER_01]: You're very busy.
+[SPEAKER_01]: You know, things that how we get the.
+[SPEAKER_01]: I would say that the vast majority of the
+users are these consultants, these people,
+[SPEAKER_03]: these agronomists, and they could work
+either with, you know, say a co-op,
+[SPEAKER_03]: they could be a private consultant.
+[SPEAKER_03]: Sometimes they work with a larger company.
+[SPEAKER_03]: Maybe, Kevin, you can chime in a little
+bit on that.
+[SPEAKER_03]: But I would say it's now fairly rare
+that's an individual farmer, although it
+[SPEAKER_03]: may be a larger farm that employs their
+own agronomist.
+[SPEAKER_03]: You know, it's basically, you know,
+it probably looked a lot more complicated
+[SPEAKER_03]: than than it is.
+[SPEAKER_03]: You know, there's not that steep of a
+learning curve.
+[SPEAKER_03]: But, you know, you always have to strike a
+balance between, you know, people want a
+[SPEAKER_03]: certain level of sophistication because
+they want good recommendations.
+[SPEAKER_03]: But if you have a data driven tool,
+it does require, you know, some skills to
+[SPEAKER_03]: be able to, you know, to use it
+effectively.
+[SPEAKER_03]: So, Kevin, do you have any, did you hear
+that question?
+[SPEAKER_00]: I heard a little bit of it.
+[SPEAKER_00]: It was breaking up.
+[SPEAKER_00]: But I think the gist of it was I would say
+98 percent of the acres that are run
+[SPEAKER_00]: through ADAPTEN today are done through a
+retail agronomist or a crop consultant
+[SPEAKER_00]: type of business.
+[SPEAKER_00]: And the reason is, is that farmers want
+that.
+[SPEAKER_00]: They want, they request that second
+opinion.
+[SPEAKER_00]: Just like doing their taxes.
+[SPEAKER_00]: A lot of farmers aren't going to prepare
+their own tax returns just because there's
+[SPEAKER_00]: so much detail.
+[SPEAKER_00]: And nitrogen is the same way.
+[SPEAKER_00]: A farmer wants another set of eyes and
+they want proof and data to know that
+[SPEAKER_00]: they're doing the right thing.
+[SPEAKER_00]: Farmers want to be environmentally
+sensitive.
+[SPEAKER_00]: They really do.
+[SPEAKER_00]: But they also have to do it at a cost.
+[SPEAKER_00]: And so how do we marry both of those?
+[SPEAKER_00]: Together, but I would say the majority of
+our users are crop consultant or retail
+[SPEAKER_00]: agronomists.
+[SPEAKER_03]: This has been a production of Cornell
+University on the web at Cornell.edu.
+[SPEAKER_03]: Thank you.
+[SPEAKER_03]: Thank you.
+Thank you.

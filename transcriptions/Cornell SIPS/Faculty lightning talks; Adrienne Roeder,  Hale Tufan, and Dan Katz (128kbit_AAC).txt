@@ -1,0 +1,968 @@
+[SPEAKER_04]: This is a production of Cornell
+University.
+[SPEAKER_04]: Thanks.
+[SPEAKER_04]: It's a great pleasure to be here.
+[SPEAKER_06]: Can you hear me?
+[SPEAKER_06]: Okay.
+[SPEAKER_06]: Yeah, good.
+[SPEAKER_06]: Okay.
+[SPEAKER_06]: So yeah, I'm really fascinated by size.
+[SPEAKER_06]: Size is really important and it's deeply
+fascinating question.
+[SPEAKER_06]: Size is fundamental to everything.
+[SPEAKER_06]: And it's really important for yield,
+but size is not trivially important to
+[SPEAKER_06]: yield.
+[SPEAKER_06]: You might think we want things to be
+bigger, but we only want the right part of
+[SPEAKER_06]: the plant to be bigger.
+[SPEAKER_06]: We want the grain, for instance,
+or the part of the plant we're going to
+[SPEAKER_06]: eat to be bigger, but we want the rest of
+the plant often to be smaller to fit into
+[SPEAKER_06]: more plants into the same field or the
+same growing space.
+[SPEAKER_06]: And so if you think back to the green
+revolution, one of the key things was
+[SPEAKER_06]: making smaller plants the bigger grains.
+[SPEAKER_06]: And here you can see pre-green revolution
+is larger plants, smaller grains.
+[SPEAKER_06]: Post-green revolution, you've got smaller
+plants, bigger grains.
+[SPEAKER_06]: So we need to understand size.
+[SPEAKER_06]: Breeders are very good at achieving this,
+but I think that if we actually understand
+[SPEAKER_06]: how size and shape are controlled,
+we can do even better.
+[SPEAKER_06]: And size is one of the things we really
+still don't understand that's so basic.
+[SPEAKER_06]: So my lab studies this in Arabidopsis.
+[SPEAKER_06]: We like the Arabidopsis sepals and the
+leaves for studying this.
+[SPEAKER_06]: So our sepals are green, outermost floral
+organs.
+[SPEAKER_06]: They enclose and protect the flower buds,
+so they're really defensive organs.
+[SPEAKER_06]: And one of the reasons sepals are cool is
+that they have this amazing pattern of
+[SPEAKER_06]: different cell sizes in Arabidopsis.
+[SPEAKER_06]: So they've got these giant cells,
+all colored here in red, interspersed
+[SPEAKER_06]: between smaller cells.
+[SPEAKER_06]: Another reason we chose sepals is just
+that they're on the outside of the flower,
+[SPEAKER_06]: so they're really accessible for imaging
+and manipulation.
+[SPEAKER_06]: Another reason is that there's four sepals
+in each Arabidopsis flower, so we can look
+[SPEAKER_06]: at their size within a flower and say,
+are all the sepals the same size or not?
+[SPEAKER_06]: And that's actually important for their
+function.
+[SPEAKER_06]: The sepals need to be the same size to
+keep that flower bud close and keep all
+[SPEAKER_06]: the environment, insects, everything out
+while the reproductive organs are
+[SPEAKER_06]: developing.
+[SPEAKER_06]: So sepals are a great model system.
+[SPEAKER_06]: We've now gone on to leaves, which are
+totally not a great model system,
+[SPEAKER_06]: but a lot of people care about leaves.
+[SPEAKER_06]: And guess what?
+[SPEAKER_06]: Sepals are like little leaves,
+so that makes me happy.
+[SPEAKER_06]: OK, so what we love to do in the lab is
+actually image the plants as they're
+[SPEAKER_06]: growing and try to understand how the
+growth and division of the cells is giving
+[SPEAKER_06]: rise to the size and shape of the organ.
+[SPEAKER_06]: So here we've got living plants.
+[SPEAKER_06]: This is one I did back in the day,
+taped onto a slide, and I've imaged it
+[SPEAKER_06]: every six hours and watched those sepals
+grow.
+[SPEAKER_06]: So this is a flower bud.
+[SPEAKER_06]: You can see here's one sepal, here's one
+sepal, here's one sepal.
+[SPEAKER_06]: And what you're seeing is a fluorescent
+plasma membrane marker outlining the cells
+[SPEAKER_06]: and fluorescent nuclear marker.
+[SPEAKER_06]: You can see there's all kinds of
+complexity going on.
+[SPEAKER_06]: These cells are not doing simple things.
+[SPEAKER_06]: Some cells are getting really big nuclei
+and growing a lot.
+[SPEAKER_06]: Other cells are dividing and making a ton
+of smaller cells.
+[SPEAKER_06]: And all of this is coming together to
+coordinate so the sepals are growing at
+[SPEAKER_06]: basically the same rate despite the cells
+doing all kinds of things.
+[SPEAKER_06]: Now I'm going to continue the theme of
+image analysis and say that we love to
+[SPEAKER_06]: understand this computationally,
+through computational image analysis,
+[SPEAKER_06]: this is done in collaboration with Richard
+Smith's lab with their amazing
+[SPEAKER_06]: morphographic software.
+[SPEAKER_06]: And I'll play that again.
+[SPEAKER_06]: So we've colored each cell and all of its
+daughter cells with the same color.
+[SPEAKER_06]: It doesn't want to play.
+[SPEAKER_06]: And so you can see that one green cell
+gave rise to this whole patch of green
+[SPEAKER_06]: cells.
+[SPEAKER_06]: And one red cell gave rise to this whole
+giant red cell.
+[SPEAKER_06]: And so that's how giant cells are forming.
+[SPEAKER_06]: They're growing and not dividing the whole
+time, whereas other cells are dividing.
+[SPEAKER_06]: So we can measure the growth rates.
+[SPEAKER_06]: We can measure the growth directions.
+[SPEAKER_06]: We can measure all kinds of things from
+these images and also gene expression
+[SPEAKER_06]: patterns.
+[SPEAKER_06]: So we're trying to put all of this
+together to understand how this organ is
+[SPEAKER_06]: growing.
+[SPEAKER_06]: Now we do a lot of molecular genetic work
+that I can't possibly show you in this
+[SPEAKER_06]: eight minutes.
+[SPEAKER_06]: And I come up with gene regulatory
+networks.
+[SPEAKER_06]: I don't expect you to understand anything
+about this, except that there are genes
+[SPEAKER_06]: interacting with each other, giving rise
+to something.
+[SPEAKER_06]: And that something we like to model.
+[SPEAKER_06]: And so we collaborate.
+[SPEAKER_06]: This is with Paul Formosa Jordan and his
+postdoc Nicholas Russell to model the
+[SPEAKER_06]: growth and division of these cells with
+their decision-making process based on
+[SPEAKER_06]: this gene regulatory network about whether
+they divide or grow.
+[SPEAKER_06]: And you can see we've got produce
+fluctuating up and down.
+[SPEAKER_06]: And what's coming out of this model is a
+pattern of different cell sizes,
+[SPEAKER_06]: fit like a sepal, where we've got giant
+cells, see here in purple, interspersed
+[SPEAKER_06]: between smaller cells and brown.
+[SPEAKER_06]: So you can see it's a model, give it
+credit.
+[SPEAKER_06]: It's not quite like a sepal, but we're
+still getting that pattern out of our gene
+[SPEAKER_06]: regulatory network.
+[SPEAKER_06]: One of the reasons I really love modeling
+is not when it works like this does,
+[SPEAKER_06]: but when it doesn't work.
+[SPEAKER_06]: When it doesn't work, it tells us what
+we're missing.
+[SPEAKER_06]: We're like, oh wait, we hadn't thought
+about this part, or we don't have it.
+[SPEAKER_06]: We're quite right yet.
+[SPEAKER_06]: Those never get published, but they're the
+most important models, actually.
+[SPEAKER_06]: So my lab is really focused around two
+major questions.
+[SPEAKER_06]: One is, how are cells of different sizes
+created during development?
+[SPEAKER_06]: And we're really looking at this,
+how do we form giant cells in the sepal
+[SPEAKER_06]: and the leaf, both have giant cells.
+[SPEAKER_06]: And we found this really interesting role
+for stochasticity or randomness in this
+[SPEAKER_06]: process.
+[SPEAKER_06]: We think about development as being
+deterministic.
+[SPEAKER_06]: Everything's programmed in, but actually,
+the plant in this case is using randomness
+[SPEAKER_06]: to generate this pattern.
+[SPEAKER_06]: So that's exciting to us.
+[SPEAKER_06]: The second question is sort of the flip
+side of this.
+[SPEAKER_06]: You've got all the cellular variability.
+[SPEAKER_06]: How are organs made with reproducible size
+and shape?
+[SPEAKER_06]: Spikes, variability in the cell growth,
+the cell size, cell division, gene
+[SPEAKER_06]: expression, all of these things.
+[SPEAKER_06]: And so if you look at across these
+aromidopsis flowers, you can see they all
+[SPEAKER_06]: have four sepals.
+[SPEAKER_06]: All the four sepals in each flower are the
+same size.
+[SPEAKER_06]: And they're the same across flowers.
+[SPEAKER_06]: So how does the plant do this?
+[SPEAKER_06]: How does it make this reproducible
+structure from this mess?
+[SPEAKER_06]: And then we want to apply this to
+engineering living materials.
+[SPEAKER_06]: So we have recently got a grant from the
+National Science Foundation and a big
+[SPEAKER_06]: collaborative biology integration
+institute, 12.5 million over six years,
+[SPEAKER_06]: with a huge collaboration of people led by
+Pam Soltis at University of Florida to
+[SPEAKER_06]: study polyploidy because our giant cells
+are polyploid.
+[SPEAKER_06]: They have more than one copy of the DNA.
+[SPEAKER_06]: So we want to look across organisms and
+understand what does having more copies of
+[SPEAKER_06]: the DNA do to the cells?
+[SPEAKER_06]: How does it make them bigger?
+[SPEAKER_06]: What other properties does it have?
+[SPEAKER_06]: And then we also are very interested in
+applying this to engineering living
+[SPEAKER_06]: materials.
+[SPEAKER_06]: Our materials are not sustainable.
+[SPEAKER_06]: And we'd like to actually use the
+properties of living organisms
+[SPEAKER_06]: specifically bacteria, fungi, and plants.
+[SPEAKER_06]: They have amazing properties.
+[SPEAKER_06]: And can we incorporate them into our
+materials, into our buildings,
+[SPEAKER_06]: into even our chairs, into our clothing to
+make them better?
+[SPEAKER_06]: And think about what all of these
+organisms are good at.
+[SPEAKER_06]: They use non-petroleum based energy
+sources.
+[SPEAKER_06]: They can sense.
+[SPEAKER_06]: They can adapt.
+[SPEAKER_06]: They can repair.
+[SPEAKER_06]: Think about our roads.
+[SPEAKER_06]: What do we hate about our roads?
+[SPEAKER_06]: All these potholes.
+[SPEAKER_06]: Roads cannot self-repair.
+[SPEAKER_06]: But what if we incorporated living
+materials into them so that they can
+[SPEAKER_06]: self-repair?
+[SPEAKER_06]: How awesome would that be?
+[SPEAKER_06]: That's a dream at this point.
+[SPEAKER_06]: But it's a dream we've been talking about.
+[SPEAKER_06]: Laurie Huberman is part of this,
+Engineering Living Materials Institute as
+[SPEAKER_06]: well.
+[SPEAKER_06]: And so there's a bunch of challenges.
+[SPEAKER_06]: And speaking to the plant path group,
+I think one of the big challenges is how
+[SPEAKER_06]: do we incorporate different organisms
+interacting with each other?
+[SPEAKER_06]: Because we know we're going to have to
+have many ecosystems to do this.
+[SPEAKER_06]: The challenge that most fascinates me is
+how do we engineer the shape and structure
+[SPEAKER_06]: and mechanical properties and growth of
+these organisms?
+[SPEAKER_06]: And we're starting this with a bunch of
+diatoms because they have silica-based
+[SPEAKER_06]: frustules.
+[SPEAKER_06]: And they're self-organized nanomaterials.
+[SPEAKER_06]: So look how cool these little structures
+are, how they can make them at room
+[SPEAKER_06]: temperature.
+[SPEAKER_06]: This is work by my postdoc, Trevor Cross.
+[SPEAKER_06]: And that's it.
+[SPEAKER_06]: I'd like to thank my lab for all of this
+inspirational work.
+[SPEAKER_06]: We could not do this without amazing
+collaborators both at Cornell and beyond.
+[SPEAKER_06]: And thank NIH and NSF for lots of funding.
+[SPEAKER_06]: So happy to take any questions.
+[SPEAKER_02]: Thanks, Adrian.
+[SPEAKER_02]: Any questions?
+[SPEAKER_02]: You showed some models.
+[SPEAKER_02]: And I wonder, how many parameters do the
+models that you play with have?
+[SPEAKER_06]: How many parameters of models we play with
+have?
+[SPEAKER_06]: We try to keep the parameter number as low
+as possible because you can get anything
+[SPEAKER_06]: to happen in a model if you add enough
+parameters.
+[SPEAKER_06]: So we're really trying to limit it down to
+things where we have some kind of
+[SPEAKER_06]: biological basis.
+[SPEAKER_06]: That said, there is some level of
+parameters you have to have.
+[SPEAKER_06]: And most of the time we have no biological
+information for those parameters.
+[SPEAKER_06]: So we do a lot of parameter optimization
+and look at in what regime do we get the
+[SPEAKER_06]: behavior we expect?
+[SPEAKER_06]: What regime do we get other things?
+[SPEAKER_06]: And so there's a lot to be done there.
+[SPEAKER_06]: But yeah, we're trying to keep the
+parameter number low.
+[SPEAKER_05]: That is a question I've been wondering
+about for years.
+[SPEAKER_06]: And they go hand in hand.
+[SPEAKER_06]: And we so far cannot separate those two
+things.
+[SPEAKER_06]: And I think that's one of the things I
+would love to do is separate.
+[SPEAKER_06]: We need something that actually separates
+ploidy from size.
+[SPEAKER_06]: And we don't have it, which tells you what
+a universal principle that is.
+[SPEAKER_06]: So the question is, what's cause and
+effect?
+[SPEAKER_06]: And it's totally unclear at this point.
+[SPEAKER_05]: Follow-up to the follow-up crowd here.
+[SPEAKER_05]: Is there anything that you learned about
+the filter feature from even to the best
+[SPEAKER_05]: that create giant cells in the root
+system?
+[SPEAKER_06]: Yeah, so those giant cells are unrelated
+to these giant cells.
+[SPEAKER_06]: We actually sent the molecular marker for
+these giant cells to a group that was
+[SPEAKER_06]: working on that.
+[SPEAKER_06]: And yeah, it didn't show up.
+[SPEAKER_06]: So that was disappointing slightly.
+[SPEAKER_06]: One of the things I should say about these
+giant cells is that they are little
+[SPEAKER_06]: biosynthetic factories for a lot of
+defensive compounds.
+[SPEAKER_06]: And our plants that overexpress giant
+cells are actually more resistant things
+[SPEAKER_06]: like powdery mildew.
+[SPEAKER_06]: And our plants without giant cells are
+little farms of powdery mildew.
+[SPEAKER_06]: So there is some defense response going on
+here that's really interesting.
+[SPEAKER_06]: So thank you.
+[SPEAKER_06]: Hi, everyone.
+[SPEAKER_03]: My name is Holly Tufon.
+[SPEAKER_03]: I'm an associate professor of plant
+breeding and genetics.
+[SPEAKER_03]: And just like Justine, even though she
+didn't mention it, I started with
+[SPEAKER_03]: lightening with an E.
+[SPEAKER_03]: So I thought, OK, I'll just use lights in
+my title slide.
+[SPEAKER_03]: So I'm going to give you a lightning talk
+about our work.
+[SPEAKER_03]: And it's a bit strange to be here because
+I actually did my PhD in molecular plant
+[SPEAKER_03]: pathogen interactions.
+[SPEAKER_03]: And what I do now is very different.
+[SPEAKER_03]: So in a parallel universe, this would be
+my department.
+[SPEAKER_03]: So it's nice to be home.
+[SPEAKER_03]: So I'm going to start with a premise.
+[SPEAKER_03]: This is very busy, but I'm going to give
+you the bottom line.
+[SPEAKER_03]: And that is our agri-food systems are
+driven by structural gender inequality.
+[SPEAKER_03]: What that means is from value chains
+producing, distributing to the food
+[SPEAKER_03]: environment to consumer behavior are all
+shaped by societal structural
+[SPEAKER_03]: inequalities.
+[SPEAKER_03]: This is pretty well established at this
+point.
+[SPEAKER_03]: What we also know is how women
+specifically engage in these agri-food
+[SPEAKER_03]: systems globally is shaped by their
+agency, social norms, their access and
+[SPEAKER_03]: control over resources, and so on and so
+forth.
+[SPEAKER_03]: So this schematically tells you there is a
+problem.
+[SPEAKER_03]: There's a global gender inequality in
+agri-food systems, which then shapes
+[SPEAKER_03]: outcomes from how people engage in those
+agri-food systems.
+[SPEAKER_03]: Bear with me.
+[SPEAKER_03]: I'm giving more intro slides because it's
+going to be a little bit different from
+[SPEAKER_03]: what you've watched.
+[SPEAKER_03]: So the most recent thinking in this space
+says, then if there is a problem,
+[SPEAKER_03]: how do we rectify it?
+[SPEAKER_03]: How do we change it?
+[SPEAKER_03]: What are the levers of change towards more
+equitable agri-food systems?
+[SPEAKER_03]: It tells us that we can look at
+individuals engaging in agri-food systems,
+[SPEAKER_03]: households, communities, and so on and so
+forth.
+[SPEAKER_03]: There's different layers where you can
+affect change to really rectify the
+[SPEAKER_03]: inequalities.
+[SPEAKER_03]: And these look at institutional
+inequalities, power relationships,
+[SPEAKER_03]: agencies, and social institutions.
+[SPEAKER_03]: So we're going to come back to this.
+[SPEAKER_03]: It's like a crash course in gender
+inequality in food systems.
+[SPEAKER_03]: Within that system of agri-food systems,
+innovations, agricultural innovations are
+[SPEAKER_03]: a sub-component.
+[SPEAKER_03]: We innovate.
+[SPEAKER_03]: We create new varieties.
+[SPEAKER_03]: We do mechanization so that we make
+farmers' lives easier.
+[SPEAKER_03]: But what we know now is, again,
+the latest thinking is innovations don't
+[SPEAKER_03]: exist in a vacuum.
+[SPEAKER_03]: You don't just develop a tractor and
+airdrop it.
+[SPEAKER_03]: There has to be more give and take with
+the communities who are going to adopt it.
+[SPEAKER_03]: So the latest thinking is around
+context-dependent, socio-technical
+[SPEAKER_03]: innovation bundles.
+[SPEAKER_03]: Say that three times very quickly.
+[SPEAKER_03]: What that basically means is, as you're
+innovating for an agricultural technology,
+[SPEAKER_03]: you must know where that technology will
+take place.
+[SPEAKER_03]: How in people's lives will it enter?
+[SPEAKER_03]: How will they interact with it?
+[SPEAKER_03]: So you really need that context
+dependency.
+[SPEAKER_03]: And that's where we are.
+[SPEAKER_03]: So by we, I mean the Equal Lab.
+[SPEAKER_03]: We call ourselves the Equitable
+Agricultural Research Lab.
+[SPEAKER_03]: We just set up last year.
+[SPEAKER_03]: And really, we take an agricultural
+innovation, which is crop improvement,
+[SPEAKER_03]: that's end to end from the design of a
+plant variety all the way to the release
+[SPEAKER_03]: of seed systems.
+[SPEAKER_03]: And we say, how can we really look at
+gender equality and social inclusion in
+[SPEAKER_03]: that whole process?
+[SPEAKER_03]: Now, because these are complex problems,
+we can't just do it unilaterally.
+[SPEAKER_03]: We need a group of people from very
+different backgrounds.
+[SPEAKER_03]: So our lab is kind of a hodgepodge of
+different disciplines.
+[SPEAKER_03]: And we all kind of spend half our time
+trying to communicate with each other.
+[SPEAKER_03]: But that's the only way we can solve these
+complex problems.
+[SPEAKER_03]: So we have people who have plant reading
+backgrounds, economists, anthropologists.
+[SPEAKER_03]: And we all come together.
+[SPEAKER_03]: And I'll give you examples of what that
+looks like.
+[SPEAKER_03]: We're not tethered to a geography.
+[SPEAKER_03]: We engage in a lot of different projects.
+[SPEAKER_03]: So the sites of the research tend to be
+very different, as well as crops.
+[SPEAKER_03]: We work on because it's agnostic to a
+degree.
+[SPEAKER_03]: These inequalities are pervasive.
+[SPEAKER_03]: They're not in one context.
+[SPEAKER_03]: But what brings us together is how we
+research using feminist research networks,
+[SPEAKER_03]: frameworks, and approaches, and a lot of
+transfer interdisciplinary methods.
+[SPEAKER_03]: There's not one solution to these
+problems.
+[SPEAKER_03]: And we do a lot of collaborative research.
+[SPEAKER_03]: None of this happens on our own.
+[SPEAKER_03]: We're constantly communicating,
+working with programs globally.
+[SPEAKER_03]: So to sit this on some sort of
+organization, organizational principle,
+[SPEAKER_03]: like you just seen, it's not a mess.
+[SPEAKER_03]: It's just range.
+[SPEAKER_03]: So the way I look at it is we do work on
+data generation, which basically means we
+[SPEAKER_03]: want to understand what people in
+different parts of the world and different
+[SPEAKER_03]: social heterogeneity look for in crop
+varieties.
+[SPEAKER_03]: That's what I call data collection,
+traits, bridal preferences.
+[SPEAKER_03]: How do we collect that?
+[SPEAKER_03]: We also do methodological work that says,
+how do you collect data in a way that's
+[SPEAKER_03]: more inclusive?
+[SPEAKER_03]: I'll talk about that a little bit.
+[SPEAKER_03]: We try to synthesize that up.
+[SPEAKER_03]: So we're giving the right messages to the
+plant breeding programs to say you should
+[SPEAKER_03]: care about this or that.
+[SPEAKER_03]: And then we do more analysis of the
+research itself.
+[SPEAKER_03]: That's the more fun part in my personal
+opinion.
+[SPEAKER_03]: I don't have fancy videos.
+[SPEAKER_03]: So I'm feeling a little disadvantaged.
+[SPEAKER_03]: But I'll show you some examples of our
+research.
+[SPEAKER_03]: This may be very new.
+[SPEAKER_03]: And you're probably thinking, OK,
+what does this look like?
+[SPEAKER_03]: What kind of research does this culminate
+to?
+[SPEAKER_03]: So I'll give the examples of each.
+[SPEAKER_03]: On the left, both of these graphs are on
+cassava in Nigeria.
+[SPEAKER_03]: So we do a lot of work with breeding
+programs there.
+[SPEAKER_03]: And the question the breeders often ask
+is, who wants what?
+[SPEAKER_03]: What traits matter to whom and why?
+[SPEAKER_03]: What varieties matter to whom and why?
+[SPEAKER_03]: It seems easy, very difficult.
+[SPEAKER_03]: So years and years of data have
+accumulated on what farmers want from
+[SPEAKER_03]: traits.
+[SPEAKER_03]: But what we also know is that farmers are
+not homogeneous groups.
+[SPEAKER_03]: They're very different.
+[SPEAKER_03]: Where they are, what kind of households
+they're living in, matters.
+[SPEAKER_03]: So on this rather busy plot on the left,
+we're trying to pull apart trait
+[SPEAKER_03]: preferences for these traits on the bottom
+through a heat map here that we're showing
+[SPEAKER_03]: it.
+[SPEAKER_03]: If you're a woman or a man living in a
+poor, non-poor household, food secure,
+[SPEAKER_03]: insecure, poor different regions,
+you may get different patterns of trait
+[SPEAKER_03]: preferences, right?
+[SPEAKER_03]: Breeders don't like to see this.
+[SPEAKER_03]: But we like to tell them it matters.
+[SPEAKER_03]: Context matters.
+[SPEAKER_03]: Social heterogeneity matters.
+[SPEAKER_03]: And this is for trait preferences.
+[SPEAKER_03]: What you see here is when it's called the
+placket loose tree.
+[SPEAKER_03]: And all this is telling you is these are
+varieties in rank order.
+[SPEAKER_03]: Depending on if the farmer is a man or a
+woman, and if they're interacting with a
+[SPEAKER_03]: man or a woman to process, you get
+different varietal preferences.
+[SPEAKER_03]: What does that mean?
+[SPEAKER_03]: We don't know.
+[SPEAKER_03]: But what we know is it happens.
+[SPEAKER_03]: Because again, people don't live in
+bubbles, right?
+[SPEAKER_03]: They interact with each other.
+[SPEAKER_03]: And they may have different preferences
+because of those social infections.
+[SPEAKER_03]: So the bottom line is we're trying to move
+away from these homogeneous trait buckets
+[SPEAKER_03]: and really try to understand social
+heterogeneity at the individual level.
+[SPEAKER_03]: Moving a little bit up, one thing that
+I've become really interested in is
+[SPEAKER_03]: methods.
+[SPEAKER_03]: So what this means.
+[SPEAKER_03]: So imagine you're going to a household.
+[SPEAKER_03]: You want to ask people, what kind of
+cassava do you like?
+[SPEAKER_03]: How do you do that?
+[SPEAKER_03]: That itself is a big question.
+[SPEAKER_03]: Often it's surveys.
+[SPEAKER_03]: But then you have to ask yourself,
+who is responding to the survey?
+[SPEAKER_03]: There's a lot of power in politics.
+[SPEAKER_03]: And who takes that survey?
+[SPEAKER_03]: So on the left here, you see Colonel
+Benson.
+[SPEAKER_03]: So this is a density plot where we're
+asking husbands and wives from the same
+[SPEAKER_03]: household the same question.
+[SPEAKER_03]: How many cassava varieties do you grow
+that are improved?
+[SPEAKER_03]: And then we go to the field and we take
+the leaf samples and we compare them,
+[SPEAKER_03]: right?
+[SPEAKER_03]: What you see is nobody's consistent,
+right?
+[SPEAKER_03]: The husband's responses and the wife's
+responses differ from each other.
+[SPEAKER_03]: And they both differ from the actual leaf
+tissue.
+[SPEAKER_03]: Now here, I don't want to say anyone's
+right or wrong because when we go and do
+[SPEAKER_03]: this and we ask people at the plot level,
+you get a different picture.
+[SPEAKER_03]: My point here is who you ask and how
+matters hugely for adoption rates.
+[SPEAKER_03]: Our assumptions around a variety is
+adopted or not may be based on wrong
+[SPEAKER_03]: assumptions.
+[SPEAKER_03]: Who you ask matters hugely, right?
+[SPEAKER_03]: This is work in Senegal and Calpe where we
+had five different traits.
+[SPEAKER_03]: And we asked, again, husbands and wives
+for their relative preferences.
+[SPEAKER_03]: Up here, classic, we separate men and
+women with a relative importance,
+[SPEAKER_03]: the higher the more important.
+[SPEAKER_03]: But then what we did was we took the same
+couples and we classified them by
+[SPEAKER_03]: agreement and disagreement on who makes
+decisions in the household, right?
+[SPEAKER_03]: So then we're saying, are there some
+households that are more kind of together?
+[SPEAKER_03]: And are there more households where
+there's more disagreement?
+[SPEAKER_03]: Does that matter for the choices that make
+it?
+[SPEAKER_03]: Readers don't like us when they see this
+because it does matter, right?
+[SPEAKER_03]: But again, we're trying to tease apart to
+say, how can we ask these questions so you
+[SPEAKER_03]: get good information?
+[SPEAKER_03]: Okay, this is a scoping review we did last
+year just to tell you, we looked across
+[SPEAKER_03]: all trait preference papers globally for
+all crops.
+[SPEAKER_03]: And we asked the question, how are people
+collecting information?
+[SPEAKER_03]: And what you see is it's often direct
+questions.
+[SPEAKER_03]: So when someone gets asked, what do you
+like or not?
+[SPEAKER_03]: And often we don't have data from women.
+[SPEAKER_03]: That's the gender bias in the totality of
+the data is significant.
+[SPEAKER_03]: So we don't actually have data on women's
+trait preferences.
+[SPEAKER_03]: Joss is staring at me, so I'm gonna wrap
+up here.
+[SPEAKER_03]: This is the highest level work that I
+think is really exciting where we turn the
+[SPEAKER_03]: lens back on the researchers themselves a
+little bit.
+[SPEAKER_03]: And we say we are social beings engaging
+in research.
+[SPEAKER_03]: We're not robots, right?
+[SPEAKER_03]: We have characters, we have histories,
+we have social identities.
+[SPEAKER_03]: How does that shape how we're actually
+doing research?
+[SPEAKER_03]: There's a lot of theory out there that
+shows that's true in other fields.
+[SPEAKER_03]: So we have two sets of work coming here
+looking at care responsibilities of
+[SPEAKER_03]: faculty.
+[SPEAKER_03]: How do faculty balance care
+responsibilities and their social
+[SPEAKER_03]: identities?
+[SPEAKER_03]: How does that play out?
+[SPEAKER_03]: And the second one is management
+leadership.
+[SPEAKER_03]: What does it mean to be a woman in an
+international agricultural research
+[SPEAKER_03]: ecosystem and for their management
+abilities and perceptions?
+[SPEAKER_03]: So this is a much higher level thing.
+[SPEAKER_03]: So I wanna thank my lab.
+[SPEAKER_03]: There's two main names to name here,
+and I try to put them on the spectrum of
+[SPEAKER_03]: work that we do.
+[SPEAKER_03]: And thank you for your attention.
+[SPEAKER_01]: Any questions, Pahali?
+[SPEAKER_03]: That would be good to look at.
+[SPEAKER_03]: We don't often look at soil nutrient
+status, and this is, I think, where
+[SPEAKER_03]: disciplinary practice comes in.
+[SPEAKER_03]: Often these questions are asked by
+economists.
+[SPEAKER_03]: If you look at globally how the data is
+collected, economists do these surveys a
+[SPEAKER_03]: lot.
+[SPEAKER_03]: And often it's just, I ask you the
+question, I have a box, and I ticket,
+[SPEAKER_03]: and I walk away.
+[SPEAKER_03]: What we do control for is you're running
+kind of like a regression.
+[SPEAKER_03]: You look to see if there's any covariance
+that are actually explaining some of that
+[SPEAKER_03]: variability.
+[SPEAKER_03]: So we do check if there's things that are
+bigger than the actual trait preference
+[SPEAKER_03]: itself, if that makes sense.
+[SPEAKER_03]: So yes, we do check that as much as we
+can.
+[SPEAKER_01]: I have a quick question.
+[SPEAKER_01]: So you're generating data for trait
+preference as a snapshot, right?
+[SPEAKER_01]: So contemporary.
+[SPEAKER_01]: Do you have any way of generating data on
+a trajectory historically and forward?
+[SPEAKER_03]: For the scoping review, we tried to do
+that for 50 years, all crops, to see what
+[SPEAKER_03]: are the trends in the trait preferences.
+[SPEAKER_03]: The biggest problem is ontologies.
+[SPEAKER_03]: Every study will define a trait in a
+different way.
+[SPEAKER_03]: And so extracting that and relating them
+to one another is hugely difficult,
+[SPEAKER_03]: because there's no standard for social
+research on traits.
+[SPEAKER_03]: You say yield, I say, yield size.
+[SPEAKER_03]: Someone has to decide those are equivalent
+to look at the totality of the data set.
+[SPEAKER_03]: It's something we're working on right now
+to be able to synthesize it.
+[SPEAKER_00]: Hey, everybody.
+[SPEAKER_00]: It's great to be here.
+[SPEAKER_00]: I am happy to tell you a little bit about
+my research and what I do today.
+[SPEAKER_00]: I wanted to start off with a first slide.
+[SPEAKER_00]: Let's see, let's get there.
+[SPEAKER_00]: Here we are.
+[SPEAKER_00]: Oh, this is a photo taken outside.
+[SPEAKER_00]: This was taken just yesterday.
+[SPEAKER_00]: In this photo, you can see the tower row
+lined with trees.
+[SPEAKER_00]: And I spend a lot of time thinking about
+how we interact with plants in this kind
+[SPEAKER_00]: of day-to-day level outside of these
+agricultural systems.
+[SPEAKER_00]: And in particular, I focus on the
+health-relevant interactions that we have
+[SPEAKER_00]: with these plants.
+[SPEAKER_00]: This can include everything from the
+services that these trees provide in terms
+[SPEAKER_00]: of cooling on a hot day through both
+shading and transpiration through to the
+[SPEAKER_00]: removal of air pollution, such as
+particulate matter from the air.
+[SPEAKER_00]: There's also a lot of work that shows
+really extensive mental health benefits
+[SPEAKER_00]: through exposure to green spaces and all
+sorts of other ecosystem services that are
+[SPEAKER_00]: also health-relevant.
+[SPEAKER_00]: At the same time, we have all of these
+negative interactions with plants,
+[SPEAKER_00]: everything from the release of allergenic
+pollen to the release of volatile organic
+[SPEAKER_00]: compounds like isoprene, which is a
+precursor to ozone formation.
+[SPEAKER_00]: Even in the most urban areas, we still
+have landscapes that are filled with
+[SPEAKER_00]: plants.
+[SPEAKER_00]: For example, near New York City is
+currently, 22% of it is forested.
+[SPEAKER_00]: About a year ago now, there was some local
+legislation passed to try and increase New
+[SPEAKER_00]: York City's canopy coverage of trees up to
+30%.
+[SPEAKER_00]: And one of the major justifications for
+this was people said, hey, trees really
+[SPEAKER_00]: improve public health, so let's have more
+of them.
+[SPEAKER_00]: This is not just isolated to New York
+City, and we're living at a time when
+[SPEAKER_00]: cities across the United States and the
+rest of the world, too, are also
+[SPEAKER_00]: channeling resources into planting trees
+and a little bit less into maintaining the
+[SPEAKER_00]: trees that they already have, much to the
+chagrin of urban foresters and other urban
+[SPEAKER_00]: tree professionals.
+[SPEAKER_00]: But right now, there's about $2 billion
+being put into urban forestry in the U.S.
+[SPEAKER_00]: through the Inflation Reduction Act.
+[SPEAKER_00]: However, even though one of the major
+motivations for this is improving public
+[SPEAKER_00]: health through making there be more trees,
+we don't really have a good understanding
+[SPEAKER_00]: of how many of these trees, how the
+individual trees interact with individual
+[SPEAKER_00]: people.
+[SPEAKER_00]: And so we have a lot of these large-scale
+patterns, like, hey, if a neighborhood has
+[SPEAKER_00]: a lot more green space in it, it tends to
+be cooler, but when you get down to the
+[SPEAKER_00]: level of how is this individual tree
+transpiring, how is it providing shade,
+[SPEAKER_00]: we don't have very good information at
+that granular scale, which is a problem
+[SPEAKER_00]: because those are the scales at which we
+make decisions.
+[SPEAKER_00]: We don't tend to say, oh, we're going to
+change this neighborhood.
+[SPEAKER_00]: We say, no, we're going to plant a tree
+right here, and then we make decisions
+[SPEAKER_00]: about where that tree is, what type of
+tree it is, and so on.
+[SPEAKER_00]: And so my goal and the work that's being
+done in my lab focuses on quantifying
+[SPEAKER_00]: these interactions with plants in order to
+improve the decisions that we make,
+[SPEAKER_00]: often around tree management and so on,
+but also around our behaviors as people,
+[SPEAKER_00]: too, in order to improve the health of
+people as individuals and as a broader
+[SPEAKER_00]: group as well.
+[SPEAKER_00]: So I'm just going to walk you through what
+this looks like, although you'll have to
+[SPEAKER_00]: excuse me because this is a little bit of
+a listicle right now.
+[SPEAKER_00]: Sorry, everybody.
+[SPEAKER_00]: So focus on me, not the boring text.
+[SPEAKER_00]: So one of the major projects that I have
+right now is looking at allergenic pollen
+[SPEAKER_00]: concentrations, and I'll tell you a little
+bit more about that in a moment.
+[SPEAKER_00]: Another major project that I'm working on
+is trying to understand the cooling
+[SPEAKER_00]: effects of trees in New York City on an
+individual tree scale in order to
+[SPEAKER_00]: understand what heat exposure is like,
+what the health consequences are.
+[SPEAKER_00]: In other words, how does that affect the
+number of people who are going to the
+[SPEAKER_00]: emergency department during heat waves?
+[SPEAKER_00]: And ultimately, to be able to inform
+decisions as we're making all of these,
+[SPEAKER_00]: doing all of these urban greening
+campaigns.
+[SPEAKER_00]: When you plant a tree, it lasts for a long
+time, and so we really should be figuring
+[SPEAKER_00]: this out now because the consequences of
+today's decisions are going to last with
+[SPEAKER_00]: us for decades.
+[SPEAKER_00]: As part of this project, I'm doing a lot
+of work with a postdoc in my lab,
+[SPEAKER_00]: Dave Miller, trying to use remote sensing
+to identify individual trees because you
+[SPEAKER_00]: can't do a good job of managing what you
+don't know.
+[SPEAKER_00]: And so we're using some new approaches,
+incorporating the timing of various life
+[SPEAKER_00]: history events for trees, things like when
+is it leafing out, what color does it look
+[SPEAKER_00]: like in the fall, to try and untangle this
+a little bit better.
+[SPEAKER_00]: So really using the ecology to inform some
+of the remote sensing analyses.
+[SPEAKER_00]: Some of the other projects that are
+happening in the lab now touch a little
+[SPEAKER_00]: bit on some of the associations between
+things like neighborhood income or race
+[SPEAKER_00]: and ethnicity and how that is associated
+with what trees are where.
+[SPEAKER_00]: And there end up being, it seems,
+large health consequences for some of
+[SPEAKER_00]: these things as different types of trees
+provide different services.
+[SPEAKER_00]: So those are a few of the projects that
+are happening in the lab right now.
+[SPEAKER_00]: And for the last little bit, I just want
+to walk you through an example of what one
+[SPEAKER_00]: of these projects looks like.
+[SPEAKER_00]: And so come with me to Texas now and take
+a look at Ash Juniper, which is one of the
+[SPEAKER_00]: most common trees in central Texas.
+[SPEAKER_00]: The gray things you see here are not
+clouds in the sky.
+[SPEAKER_00]: That is pollen being released from this
+tree.
+[SPEAKER_00]: Just to give you some context here,
+people begin to experience allergic
+[SPEAKER_00]: reactions to this pollen at concentrations
+as low as 10 or 20 pollen grains per cubic
+[SPEAKER_00]: meter of air.
+[SPEAKER_00]: A single pollen cone on one of these trees
+has about half a million pollen grains in
+[SPEAKER_00]: it.
+[SPEAKER_00]: And you might see up to a million pollen
+grains, or a million pollen cones,
+[SPEAKER_00]: excuse me, on one of these trees.
+[SPEAKER_00]: And so what we're trying to do is to
+understand both what the health
+[SPEAKER_00]: consequences are through epidemiological
+analyses as well as to create operational
+[SPEAKER_00]: pollen forecasts.
+[SPEAKER_00]: It turns out that most of the pollen
+forecasts that you might find through your
+[SPEAKER_00]: weather app, they're not total garbage.
+[SPEAKER_00]: They're just like the unvalidated,
+like completely, well, I'll pause for
+[SPEAKER_00]: right now on it, but there's a lot to be
+said.
+[SPEAKER_00]: I'll hold myself back.
+[SPEAKER_00]: And so some of the approaches that we take
+are doing field work.
+[SPEAKER_00]: So field campaigns to take manual
+measurements.
+[SPEAKER_00]: We also work with citizen science
+organizations, especially the National
+[SPEAKER_00]: Knowledge Network, to enlist people to
+help us take these measurements.
+[SPEAKER_00]: And then we also do a lot of scaling up to
+try and understand what is happening with
+[SPEAKER_00]: individual plants, and then to take that
+up to a site level, and ultimately to
+[SPEAKER_00]: regions or across an entire state,
+and someday, I hope, across the entire
+[SPEAKER_00]: country.
+[SPEAKER_00]: So some of the processes that we try and
+understand are fairly simple, like how
+[SPEAKER_00]: much pollen is applied to the plant
+producing.
+[SPEAKER_00]: And so Justine, I'm really excited to
+think with you about some of the methods
+[SPEAKER_00]: that you've been using because we too hate
+counting and trying to avoid it as much as
+[SPEAKER_00]: possible.
+[SPEAKER_00]: Other types of things we try and
+understand are when pollen is being
+[SPEAKER_00]: released or how it moves through the air.
+[SPEAKER_00]: I think that's most of that project.
+[SPEAKER_00]: There's a lot of cool things about the
+intricacies of the remote sensing we are
+[SPEAKER_00]: using.
+[SPEAKER_00]: But if you want to know more about it,
+you'll have to come stop by my lab.
+[SPEAKER_00]: Say hi.
+[SPEAKER_00]: We're up in Bradfield.
+[SPEAKER_00]: Looking forward to talking with you all
+more.
+Thanks.
+[SPEAKER_01]: A question.
+[SPEAKER_01]: Well, I will make an observation.
+[SPEAKER_01]: So I think it's what's exciting to see
+some of this wonderful work, urban plant
+[SPEAKER_01]: science, right?
+[SPEAKER_01]: And we've just hired a new urban plant
+ecologist, Karen Sexton.
+[SPEAKER_01]: We joined us very shortly, and I can see
+already all sorts of threads that can
+[SPEAKER_01]: connect in with you and also Justine and
+myself.
+[SPEAKER_01]: So we're sitting here and listening to
+these talks, right?
+[SPEAKER_01]: Jean-Luc.
+[SPEAKER_02]: Thanks.
+[SPEAKER_02]: This is a question.
+[SPEAKER_02]: Do you also have models with a bunch of
+parameters?
+[SPEAKER_00]: Sometimes.
+[SPEAKER_00]: It depends on the type.
+[SPEAKER_00]: We try and do some models.
+[SPEAKER_00]: So basically, a lot of this is trying to
+create predictions.
+[SPEAKER_00]: And so we are often OK with throwing a lot
+of things and seeing what sticks.
+[SPEAKER_00]: Generally, we do try and think about what
+is most biologically meaningful and take
+[SPEAKER_00]: out the things that don't have much
+predictive value.
+[SPEAKER_04]: OK, thanks.
+[SPEAKER_04]: Thanks, y'all.
+[SPEAKER_04]: This has been a production of Cornell
+University on the web at Cornell.edu.
+[SPEAKER_04]: Thank you.
+Thanks, y'all.

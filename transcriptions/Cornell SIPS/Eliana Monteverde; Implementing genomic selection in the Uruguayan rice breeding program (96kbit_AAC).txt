@@ -1,0 +1,1020 @@
+[SPEAKER_00]: This is a production of Cornell
+University.
+[SPEAKER_00]: Hello everybody, and thank you very much
+for being here.
+[SPEAKER_00]: I know it's very cold and it's early in
+the morning, so I really appreciate it.
+[SPEAKER_00]: And so Susan told you recently,
+I used to work in Uruguay at the
+[SPEAKER_00]: university.
+[SPEAKER_00]: And I had just finished my masters in
+which I did my master in genetics and
+[SPEAKER_00]: mechanisms of genetic tolerance.
+[SPEAKER_00]: Sorry, mechanisms or controlling cold
+tolerance in rice.
+[SPEAKER_00]: So I had just finished my master and I was
+looking for a PhD.
+[SPEAKER_00]: I was collaborating very closely with the
+Uruguayan Rice Breeding Program at that
+[SPEAKER_00]: time.
+[SPEAKER_00]: I never worked for the Uruguayan Breeding
+Program, but I used to collaborate a lot.
+[SPEAKER_00]: I still do.
+[SPEAKER_00]: So I was looking for a PhD, as I said.
+[SPEAKER_00]: So the Uruguayan Breeding Program is a
+small and traditional breeding program.
+[SPEAKER_00]: So what they were trying to do,
+they were trying to start thinking about
+[SPEAKER_00]: how to implement genomic selection in the
+breeding program.
+[SPEAKER_00]: And since I was around, I took that task
+and I decided to make my PhD project in
+[SPEAKER_00]: this.
+[SPEAKER_00]: So what I tried to do is to explore some
+of the aspects related to implementing
+[SPEAKER_00]: genomic selection in the rice breeding
+program.
+[SPEAKER_00]: And I don't know if I did the best choice,
+but that's how I got here.
+[SPEAKER_00]: So first of all, what and where is
+Uruguay?
+[SPEAKER_00]: Uruguay is this very tiny little country
+here in southern South America.
+[SPEAKER_00]: And as you can see here in this map,
+it's right in the limit between the
+[SPEAKER_00]: subtropical and temperate zone.
+[SPEAKER_00]: So for this reason, the Uruguayan climate
+can be classified as humid subtropical.
+[SPEAKER_00]: So we have four very well-defined seasons.
+[SPEAKER_00]: And so the most extreme, of course,
+are winter and summer.
+[SPEAKER_00]: And the winter runs from June to August,
+where the average temperature can go
+[SPEAKER_00]: between 3 to 10 degrees.
+[SPEAKER_00]: And then we have the summer season that
+runs from December to March, where the
+[SPEAKER_00]: average temperatures can be between 17 to
+28 degrees.
+[SPEAKER_00]: So for this reason, rice cycle usually
+takes over during this period.
+[SPEAKER_00]: And since temperatures during the winter
+are so low for rice, we can only have one
+[SPEAKER_00]: cycle of rice a year.
+[SPEAKER_00]: So then we usually don't tend to associate
+Uruguayan rice.
+[SPEAKER_00]: But actually, rice is not near Uruguay.
+[SPEAKER_00]: But rice is the third top export from
+Uruguay.
+[SPEAKER_00]: Uruguay is mainly an agricultural country.
+[SPEAKER_00]: So rice comes right after beef and
+soybean.
+[SPEAKER_00]: And also, Uruguay is among the top 10
+major rice exporters in the world.
+[SPEAKER_00]: And it's actually in the first place in
+Latin America.
+[SPEAKER_00]: And 95% of the rice production is
+exporters.
+[SPEAKER_00]: So we're not a rice-consuming country.
+[SPEAKER_00]: And for this reason, we have to meet very
+high standards for grain quality to be
+[SPEAKER_00]: able to export our product in the
+international market.
+[SPEAKER_00]: And also, as you can see here in this
+plot, Uruguayan's rice yield are also very
+[SPEAKER_00]: high.
+[SPEAKER_00]: They're between 8 to 10 tons per hectare.
+[SPEAKER_00]: And as we can see here in the plot,
+this is the progression of rice yields
+[SPEAKER_00]: since the 1970s, where the rice-grain
+program was first established in the
+[SPEAKER_00]: country.
+[SPEAKER_00]: And we can see how grain yields were
+increasing over time.
+[SPEAKER_00]: And this was thanks to the adoption of new
+high-yielding varieties, but also to the
+[SPEAKER_00]: investment in the adoption of new
+agricultural practices and also a lot of
+[SPEAKER_00]: machinery.
+[SPEAKER_00]: Investment.
+[SPEAKER_00]: However, no.
+[SPEAKER_00]: So as I said, the high-yielding varieties
+from Uruguay were developed by the INIA,
+[SPEAKER_00]: which is the National Agricultural
+Research Institute in Uruguay,
+[SPEAKER_00]: and the Uruguayan Rice Breeding Program
+belongs to INIA.
+[SPEAKER_00]: And this breeding program consists mainly
+of, it's divided in two main breeding
+[SPEAKER_00]: programs, which is the Tropical Japonica
+Breeding Program and the Indica Breeding
+[SPEAKER_00]: Program.
+[SPEAKER_00]: The Tropical Japonica consists mainly of
+lines that were introduced from the U.S.
+[SPEAKER_00]: in the 70s, and they were adapted to
+Uruguayan conditions.
+[SPEAKER_00]: And the Indica German Plasm consists
+mainly of varieties that were introduced
+[SPEAKER_00]: from Irri in the Philippines and Silla in
+Colombia.
+[SPEAKER_00]: And there's only three main, three
+varieties that were released by INIA
+[SPEAKER_00]: account for 92% of the planted rice area,
+anyway.
+[SPEAKER_00]: So these main three varieties are El Paso
+144 and Olimar, which are Indica
+[SPEAKER_00]: varieties.
+[SPEAKER_00]: And then there's the Tropical Japonica
+variety, which is Inia Tahuari.
+[SPEAKER_00]: So the main problem we're facing right now
+is that these varieties are reaching their
+[SPEAKER_00]: maximum yield potential.
+[SPEAKER_00]: So we are, and this was thanks to all the
+improvements we did in the agricultural
+[SPEAKER_00]: practices and machinery.
+[SPEAKER_00]: So we're really in the urge to develop new
+varieties with higher yield potential.
+[SPEAKER_00]: But also yield is not, everything in rice.
+[SPEAKER_00]: Grain quality is very important too.
+[SPEAKER_00]: And since we export most of our
+production, we really need to meet those
+[SPEAKER_00]: high standards in international markets.
+[SPEAKER_00]: So the main components of physical quality
+are length and width, which determine
+[SPEAKER_00]: which kind of grain we're having,
+either short, medium, or long grain.
+[SPEAKER_00]: And then head rice yield is a very
+important component of grain quality
+[SPEAKER_00]: because head rice yield is the weight of
+whole kernels, because nobody likes broken
+[SPEAKER_00]: kernels.
+[SPEAKER_00]: So this is very important and it really
+determines the price of the rice bag in
+[SPEAKER_00]: the market.
+[SPEAKER_00]: And then color is important and also chalk
+is another very important trait.
+[SPEAKER_00]: And chalk, because chalk really induces
+grain breakage, so it reduces head rice
+[SPEAKER_00]: yields.
+[SPEAKER_00]: And chalk is this opaque area in the
+grains that is caused by misfolding of the
+[SPEAKER_00]: amylose and amylopectin layers during
+grain peeling.
+[SPEAKER_00]: So that was, this opaque area induces
+grain breakage.
+[SPEAKER_00]: So this is a very important trait too.
+[SPEAKER_00]: And cracks are also important because they
+also induce breakage.
+[SPEAKER_00]: So we know that milling quality traits and
+yield are the traits I'm focusing here in
+[SPEAKER_00]: my project.
+[SPEAKER_00]: So, and we know these traits are
+quantitative traits.
+[SPEAKER_00]: So genomic selection could be a good
+strategy to improve these traits.
+[SPEAKER_00]: And that's what basically my project was,
+was to explore different, some of the
+[SPEAKER_00]: aspects of implementing genomic selection
+to improve both grain and milling quality
+[SPEAKER_00]: traits.
+[SPEAKER_00]: So particularly I focused on, evaluated
+the impact of accounting for G by E in our
+[SPEAKER_00]: prediction model.
+[SPEAKER_00]: Then also in the G by E area, we compare
+different ways to fit weather covariates
+[SPEAKER_00]: to feed our models and improve our
+prediction accuracies.
+[SPEAKER_00]: Also another thing, it was to use genomic
+selection to select the best combinations
+[SPEAKER_00]: of parents to cross and start new breeding
+cycles.
+[SPEAKER_00]: And this is like a bonus track of the
+thesis, which is finding genomic regions
+[SPEAKER_00]: that are associated to anthropocultural
+response when we try to develop haploid
+[SPEAKER_00]: lines for breeding.
+[SPEAKER_00]: So the first time, the first thing I'm
+gonna talk to you about is to evaluate how
+[SPEAKER_00]: to evaluate prediction accuracies for
+yield and milling quality when we account
+[SPEAKER_00]: for G by E in our germplasm.
+[SPEAKER_00]: And this is a part of our work we
+published in CropScience last year.
+[SPEAKER_00]: So there's a lot of different ways to
+account for G by E statistically.
+[SPEAKER_00]: We were focused mainly on using mixed
+models.
+[SPEAKER_00]: And so the mixed model we used had this
+general form where we have a trait,
+[SPEAKER_00]: our response variable, which is the
+measurements of the traits for all
+[SPEAKER_00]: genotypes in all environments.
+[SPEAKER_00]: Then we have our, the mean of the
+environment.
+[SPEAKER_00]: And we have this genetic component,
+which is a random genetic effects.
+[SPEAKER_00]: And this random, this genetic effects have
+a normal distribution with this covariance
+[SPEAKER_00]: structure, which can be modeled by the
+chronic product between two different
+[SPEAKER_00]: components.
+[SPEAKER_00]: One environmental component, which is this
+UE matrix here that represents the genetic
+[SPEAKER_00]: covariance between environments.
+[SPEAKER_00]: And this K is the genetic covariance
+between lines.
+[SPEAKER_00]: That's the genetic component of the model.
+[SPEAKER_00]: And there's a lot of ways to, there's a
+lot of structures for these genetic
+[SPEAKER_00]: covariance between environments.
+[SPEAKER_00]: So the two, we were focused only in two
+main structures, which are the,
+[SPEAKER_00]: actually they're kind of like opposite.
+[SPEAKER_00]: Which is the diagonal matrix and the
+unstructured matrix.
+[SPEAKER_00]: So the diagonal matrix, what it does,
+it fits one single variance per
+[SPEAKER_00]: environment.
+[SPEAKER_00]: And it treats, and then there's no
+covariance between environments.
+[SPEAKER_00]: So by this way, we're accounting is the
+same as fitting environments or treating
+[SPEAKER_00]: them as independent.
+[SPEAKER_00]: And we're not sharing information between
+environments.
+[SPEAKER_00]: Then the unstructured covariance matrix
+is, as the diagonal matrix, it fits one
+[SPEAKER_00]: single variance per environment,
+but it also fits a covariance between
+[SPEAKER_00]: pairs of environments.
+[SPEAKER_00]: So we tried to compare our prediction
+accuracies with these two methods.
+[SPEAKER_00]: The datasets we used were Tropico-Japonica
+and Indica dataset that consisted both of
+[SPEAKER_00]: 300 elite breeding lines.
+[SPEAKER_00]: And these lines were evaluated in three
+different years.
+[SPEAKER_00]: And the traits we used were yield,
+milling, yield measured in kilograms per
+[SPEAKER_00]: hectare.
+[SPEAKER_00]: Then milling yield, head rice percentage,
+and grain chauvinism.
+[SPEAKER_00]: These are the three main components of
+milling quality and plant height.
+[SPEAKER_00]: I'm gonna explain now how we phenotype
+these traits because we're gonna refer to
+[SPEAKER_00]: them along with the whole presentation.
+[SPEAKER_00]: So when we first get our harvest,
+our rice from the field, we get our,
+[SPEAKER_00]: the patty rough, the patty rice or rough
+rice.
+[SPEAKER_00]: Which is the grains that's still,
+they're still attached to the whole.
+[SPEAKER_00]: So we have to de-hole these grains to
+obtain the brown rice.
+[SPEAKER_00]: This brown rice will go then, will pass
+through the mill and it will be to obtain
+[SPEAKER_00]: the white rice.
+[SPEAKER_00]: Then after milling, we're gonna obtain,
+we're gonna obtain our white rice which
+[SPEAKER_00]: is, it constitutes of both whole kernels
+and also broken kernels.
+[SPEAKER_00]: So the total amount of both whole and
+broken kernels is the milling yield.
+[SPEAKER_00]: Relative to the original amount of rice,
+right?
+[SPEAKER_00]: Then the head rice is only when we
+separate both broken from whole kernels is
+[SPEAKER_00]: the total amount of whole kernels relative
+to the original amount of rice.
+[SPEAKER_00]: And then chauvinism is the third component
+which is measured as total chalky rice
+[SPEAKER_00]: over the total milled rice.
+[SPEAKER_00]: And chalky grain is, grain is considered
+as chalky as chalky, sorry.
+[SPEAKER_00]: When the chalky area is more than 50% of
+the total grain area.
+[SPEAKER_00]: For, so we used several cross validation
+schemes.
+[SPEAKER_00]: Here I'm gonna show you just a few of
+them.
+[SPEAKER_00]: So we have, we use a cross validation one
+and two.
+[SPEAKER_00]: Where the cross validation one is,
+fits, sorry, tries to predict lines that
+[SPEAKER_00]: were never evaluated in an environment.
+[SPEAKER_00]: So there are new lines.
+[SPEAKER_00]: And the cross validation two predicts
+lines that were evaluated in some
+[SPEAKER_00]: environments but not in others.
+[SPEAKER_00]: So here we're really using the information
+that runs through the environmental
+[SPEAKER_00]: covariance matrix.
+[SPEAKER_00]: And these are the results from the
+prediction accuracies for each trait in
+[SPEAKER_00]: the Indica data set.
+[SPEAKER_00]: And I know there's a lot of things going
+on in this part, but I want you to focus
+[SPEAKER_00]: only on these two pink bars for each year
+and each trait.
+[SPEAKER_00]: These two pink bars correspond to the
+cross validation scheme two, the one when
+[SPEAKER_00]: we try to predict lines that were,
+sorry, tested in some environments but not
+[SPEAKER_00]: in others.
+[SPEAKER_00]: Using the unstructured covariance matrix.
+[SPEAKER_00]: So then these are actually the only ones
+that are kind of like more different than
+[SPEAKER_00]: the rest.
+[SPEAKER_00]: And for tropical japonica, we see kind of
+the same trend, but it's not as pronounced
+[SPEAKER_00]: as with the Indicas.
+[SPEAKER_00]: Again, using the cross validation two with
+the unstructured covariance matrix,
+[SPEAKER_00]: we can achieve the better prediction
+accuracies.
+[SPEAKER_00]: And another cross validation scenario we
+tested and I'm gonna tell you,
+[SPEAKER_00]: wanna talk about today is when we're
+trying to predict new environments or
+[SPEAKER_00]: environments that were never evaluated
+before, right?
+[SPEAKER_00]: In our case, since environments are years,
+we're trying to predict future years.
+[SPEAKER_00]: Using the information from previous years
+and the training process.
+[SPEAKER_00]: So here we can see when predicting every
+each year for both the Indica and the
+[SPEAKER_00]: tropical japonica for each trait using the
+diagonal and the unstructured covariance
+[SPEAKER_00]: matrix.
+[SPEAKER_00]: And we can see that in each case,
+prediction accuracy is a little higher
+[SPEAKER_00]: when using the unstructured covariance
+matrix than the diagonal matrix.
+[SPEAKER_00]: So actually using this kind of,
+fitting these kinds of models that allow
+[SPEAKER_00]: us to borrow information between
+environments really helps us to predict
+[SPEAKER_00]: our lines to achieve better prediction
+accuracies.
+[SPEAKER_00]: So as a summary of this part, again,
+the unstructured models when you fit in
+[SPEAKER_00]: unstructured covariance matrices really
+usually under the cross validation two
+[SPEAKER_00]: scenario give better prediction accuracies
+than when using diagonal covariance
+[SPEAKER_00]: matrices.
+[SPEAKER_00]: And also using these types of matrices are
+beneficial when we try to predict untested
+[SPEAKER_00]: years.
+[SPEAKER_00]: And also this is also true because in the
+case of the unstructured covariant matrix,
+[SPEAKER_00]: the correlations or covariances between
+environments were very high.
+[SPEAKER_00]: So for these reasons, those high
+correlations really improve our prediction
+[SPEAKER_00]: accuracies with these types of matrices.
+[SPEAKER_00]: And this basically responds to the stable
+weather conditions and why where there's
+[SPEAKER_00]: no major weather events.
+[SPEAKER_00]: So usually, I mean, weather is stable,
+there's still variation, but there's no
+[SPEAKER_00]: big variation.
+[SPEAKER_00]: Right.
+[SPEAKER_00]: So using again, using GBAE models that
+account for GBAE and that account for
+[SPEAKER_00]: correlations between environments can be
+beneficial to predict these traits.
+[SPEAKER_00]: So now this is another study where we also
+use GBAE models.
+[SPEAKER_00]: But here what we wanted to do was to feed
+our models with weather data to be able to
+[SPEAKER_00]: model our environments in a better way.
+[SPEAKER_00]: So the objectives here were to explore
+different ways to include this weather
+[SPEAKER_00]: covariance in our model, because the
+problem that we have when we use weather
+[SPEAKER_00]: covariates can be similar than when we use
+molecular markers.
+[SPEAKER_00]: Weather covariates can be too many and
+they can be correlated.
+[SPEAKER_00]: They can be highly correlated between each
+other.
+[SPEAKER_00]: So it's not easy to fit these types of
+models.
+[SPEAKER_00]: And also another objective was to try to
+study the genetic basis of GBAE in our own
+[SPEAKER_00]: geoplasm.
+[SPEAKER_00]: So the environmental covariates we used
+where they were retrieved from the weather
+[SPEAKER_00]: station in the rice breeding program,
+like right where the lines were evaluated
+[SPEAKER_00]: in the same field.
+[SPEAKER_00]: And they consisted of either temperature,
+solar radiation, precipitation,
+[SPEAKER_00]: and they were daily measurements for all
+these different components.
+[SPEAKER_00]: And basically, we know that these
+covariates, they're not going to affect on
+[SPEAKER_00]: the same way in each state of the growth,
+the plant growth.
+[SPEAKER_00]: So we try to calculate those covariates.
+[SPEAKER_00]: So we try to short those covariates to
+different stages so we can model it more
+[SPEAKER_00]: accurately.
+[SPEAKER_00]: So we tried to divide our plants,
+sorry, the rice growth into three main
+[SPEAKER_00]: different phenological stages,
+which were vegetative, reproductive,
+[SPEAKER_00]: and maturity.
+[SPEAKER_00]: Reproductive is the powering and maturity
+is the springing stage.
+[SPEAKER_00]: So the problem is that we didn't have the
+information of what time in the field
+[SPEAKER_00]: plants were at each stage.
+[SPEAKER_00]: So what we used to calculate these stages
+was the flowering time.
+[SPEAKER_00]: And we know usually the flowering stage
+from booting to flowering takes about 35
+[SPEAKER_00]: days.
+[SPEAKER_00]: So based on these measurements,
+and we know that plants are left in the
+[SPEAKER_00]: field after flowering for about 30 days
+for grain filling, and knowing the date of
+[SPEAKER_00]: planting and the harvesting, we can
+calculate this stage for a week.
+[SPEAKER_00]: So we calculated our covariates as their
+averages over all these stages for both
+[SPEAKER_00]: the Tropical Japonica and the Indica
+datasets.
+[SPEAKER_00]: And here, the datasets we used were the
+same as in the previous work.
+[SPEAKER_00]: The only difference was that the Tropical
+Japonica dataset had two more years of
+[SPEAKER_00]: evaluation, and the traits used were grain
+yield, head rice percentage, chalking,
+[SPEAKER_00]: and height, then height, as a control for
+a trait that is not controlled by the
+[SPEAKER_00]: environment so much.
+[SPEAKER_00]: And we tried to compare two main different
+types of statistical models here.
+[SPEAKER_00]: So we have on one side the reaction norm
+models that were developed by Diego
+[SPEAKER_00]: Harpín, and the PLSR models, which PLSR
+stands for partial least square regression
+[SPEAKER_00]: models.
+[SPEAKER_00]: So for the reaction norm models,
+we tried three different models.
+[SPEAKER_00]: One that only models the genetic effects
+that were modeled using these effects at
+[SPEAKER_00]: random.
+[SPEAKER_00]: So they were modeled using the covariance
+matrix between genotypes.
+[SPEAKER_00]: Then we have a G plus W model that has a
+genotype component and an environment
+[SPEAKER_00]: component, and the environment component
+was modeled using the environmental
+[SPEAKER_00]: covariance.
+[SPEAKER_00]: Sorry, the matrix of covariance.
+[SPEAKER_00]: Sorry, the matrix of covariance between
+the environmental covariance.
+[SPEAKER_00]: And the G plus W plus GW model adds this
+interaction term between genotypes and
+[SPEAKER_00]: environment, and this term is modeled by
+using the multiplicative product between
+[SPEAKER_00]: the two relationship matrices.
+[SPEAKER_00]: On the other hand, we have the PLSR
+models, and basically what PLSR models do,
+[SPEAKER_00]: they decompose our data into latent
+variables, and these latent variables are
+[SPEAKER_00]: linear combinations of our data.
+[SPEAKER_00]: And what they try to do is to maximize the
+covariance between our response and our
+[SPEAKER_00]: predictors.
+[SPEAKER_00]: So here we try the PLSG model,
+which was only using markers as
+[SPEAKER_00]: predictors, and the PLSGW model using both
+markers and environmental covariance.
+[SPEAKER_00]: And these are the results for the,
+sorry, I don't know why they don't show up
+[SPEAKER_00]: here.
+[SPEAKER_00]: But these are the results for the
+prediction accuracies in both data sets.
+[SPEAKER_00]: And here in blue, to predict each year.
+[SPEAKER_00]: So here we're trying to predict new years.
+[SPEAKER_00]: So the bars, the blue bars here represent
+the reaction norm model, and the red and
+[SPEAKER_00]: orange bars represent the PLS.
+[SPEAKER_00]: So we can see that for the Indicas,
+and also for the Japonicas, but mostly for
+[SPEAKER_00]: the Indicas, the PLSR models gave better
+prediction accuracies or equal prediction
+[SPEAKER_00]: accuracies than the reaction norm models.
+[SPEAKER_00]: But usually this orange bar, which
+corresponds to the PLS using both
+[SPEAKER_00]: molecular markers and environmental
+covariance, they usually give a little
+[SPEAKER_00]: higher prediction accuracies.
+[SPEAKER_00]: We can see it here, too, for the
+Japonicas.
+[SPEAKER_00]: So basically, for these data sets,
+we obtained better prediction accuracies
+[SPEAKER_00]: when using these types of models,
+the PLSR models.
+[SPEAKER_00]: Also, as I said in the introduction,
+we tried to explore the genetic basis of
+[SPEAKER_00]: GVAE from our germplasm.
+[SPEAKER_00]: And what we did was we performed a GWAS
+for each year, each trait in each
+[SPEAKER_00]: environment.
+[SPEAKER_00]: Sorry, yeah, each year.
+[SPEAKER_00]: And here we could only find significant
+QTLs for head rise and chalkiness in both
+[SPEAKER_00]: data sets.
+[SPEAKER_00]: We couldn't find any significant QTLs in
+any environment for brain yield.
+[SPEAKER_00]: So what we did here, so all these QTLs
+have different effects in different
+[SPEAKER_00]: environments, right?
+[SPEAKER_00]: So what we tried to do here was to test
+all these QTLs for interaction with our
+[SPEAKER_00]: weather covariates.
+[SPEAKER_00]: And we used this model that was developed
+by Marco Malossetti, which fits a main
+[SPEAKER_00]: environment effect, a QTL main effect,
+a QTL by environmental covariance,
+[SPEAKER_00]: a covariate effect, and then there's a QTL
+by environment and the genetic effects,
+[SPEAKER_00]: which are random effects here.
+[SPEAKER_00]: And we could only find significant
+interactions for two of our QTLs in the
+[SPEAKER_00]: Indica data sets, and where both for head
+rise percentage.
+[SPEAKER_00]: And the weather covariates were mainly
+related.
+[SPEAKER_00]: First of all, we tried with all weather
+covariates, and the only ones we found
+[SPEAKER_00]: significant interaction were with
+covariates that were during the maturity
+[SPEAKER_00]: stage.
+[SPEAKER_00]: And these were weather covariates related
+to precipitation and humidity for one QTL
+[SPEAKER_00]: and for the other QTL related to
+temperature.
+[SPEAKER_00]: And basically the similar situation here
+in the tropical Japonicas, we found one
+[SPEAKER_00]: QTL for head rise percentage show
+significant interaction with environmental
+[SPEAKER_00]: covariates through maturity to related to
+precipitation and humidity.
+[SPEAKER_00]: And for chalkiness, this QTL showed
+interaction with covariates that were
+[SPEAKER_00]: related to minimum temperature and
+precipitation.
+[SPEAKER_00]: And this was unexpected because we know
+from previous studies that usually grain
+[SPEAKER_00]: chalkiness in the tropics is mainly
+affected by high temperatures.
+[SPEAKER_00]: But usually the high temperatures in the
+tropics, the ones that affect grain
+[SPEAKER_00]: chalkiness are those that are higher than
+33 degrees.
+[SPEAKER_00]: However, in Uruguay temperatures,
+maximum temperatures during grain filling
+[SPEAKER_00]: stage, they never reach 33, they're always
+lower than that.
+[SPEAKER_00]: So it could be possible that for
+chalkiness in Uruguay and also maybe in
+[SPEAKER_00]: other temperate or subtropical areas where
+temperatures are not as high as in the
+[SPEAKER_00]: tropics, maybe there's other weather
+components that might be affecting this
+[SPEAKER_00]: trait.
+[SPEAKER_00]: It could be either minimum temperature or
+also like solar radiation.
+[SPEAKER_00]: And there's some physiological studies
+within the Uruguayan germplasm that the
+[SPEAKER_00]: breeders are doing in Uruguay that also
+point to this.
+[SPEAKER_00]: So that was all about genotype by
+environment interaction.
+[SPEAKER_00]: Here we're moving to a different topic.
+[SPEAKER_00]: What we tried to do was to select,
+to explore how to use genomics prediction
+[SPEAKER_00]: to the best combinations of parents for
+breeding.
+[SPEAKER_00]: So what we try to do here was to,
+first of all, for the first objective was
+[SPEAKER_00]: we try to see how many crosses in common
+we have when we select our crosses based
+[SPEAKER_00]: only on the mean, which is easily
+predicted, and the progeny mean,
+[SPEAKER_00]: sorry, which is easily predicted by the
+mid-parent value, or by using a
+[SPEAKER_00]: combination of both the mean and the
+variance in our progeny.
+[SPEAKER_00]: The variance is a little harder to
+predict.
+[SPEAKER_00]: And to predict the variance in our
+simulated progeny through these
+[SPEAKER_00]: simulations.
+[SPEAKER_00]: And also we try to evaluate different
+selection criteria for improving
+[SPEAKER_00]: negatively correlated traits.
+[SPEAKER_00]: So usually in rice, grain yield,
+and milling quality are negatively
+[SPEAKER_00]: correlated.
+[SPEAKER_00]: So we wanted to see different ways we can
+improve all our traits simultaneously.
+[SPEAKER_00]: This was all done during simulations,
+but also we have some of the crosses that
+[SPEAKER_00]: were simulated here were actually
+performed in the greenhouse.
+[SPEAKER_00]: So we tried to compare our predictive
+values.
+[SPEAKER_00]: So this cross is the progeny from those
+crosses was actually evaluated in the
+[SPEAKER_00]: field in Uruguay.
+[SPEAKER_00]: So we tried to compare the prediction
+accuracies that we had for those crosses
+[SPEAKER_00]: with actual field data from the field.
+[SPEAKER_00]: So this is a summary of what we did.
+[SPEAKER_00]: We first started from a training
+population that consisted of 300 tropical
+[SPEAKER_00]: japonica lines, elite breeding lines.
+[SPEAKER_00]: These were planted in Uruguay.
+[SPEAKER_00]: And we firstly performed 19 crosses
+between these members of this line,
+[SPEAKER_00]: of this training population.
+[SPEAKER_00]: We brought the F1 seed here to Cornell,
+and we planted it in the greenhouse.
+[SPEAKER_00]: So these families were in the greenhouse.
+[SPEAKER_00]: And we advanced them up to F4,
+and then we genotyped everything.
+[SPEAKER_00]: Then we also performed 185 random crosses
+between these 19 families trying to cross
+[SPEAKER_00]: individuals from different families.
+[SPEAKER_00]: And the progeny, the F1 from these crosses
+was sent to Luciana for double hoplite
+[SPEAKER_00]: development, where we could only obtain 43
+double hoplites out of 185 F1 seed here.
+[SPEAKER_00]: And all these families were then sent to a
+wide field evaluation.
+[SPEAKER_00]: So this is just a description of our
+training population.
+[SPEAKER_00]: And as I said, grain yield and million
+quality has to be negatively correlated
+[SPEAKER_00]: with the rice.
+[SPEAKER_00]: And this wasn't the exception.
+[SPEAKER_00]: So here you can see that grain yield is
+negatively correlated with both milling
+[SPEAKER_00]: yield and head rice percentage.
+[SPEAKER_00]: And it's also positively correlated with
+grain chocolate.
+[SPEAKER_00]: But what we actually want to do is to
+reduce chocolate.
+[SPEAKER_00]: So this positive correlation is
+undesirable.
+[SPEAKER_00]: So to make the 19 crosses here between
+members of this training population,
+[SPEAKER_00]: we performed a cluster analysis here so we
+could detect five different groups in this
+[SPEAKER_00]: population.
+[SPEAKER_00]: And we tried to cross individuals between
+different groups as a way to preserve the
+[SPEAKER_00]: original diversity in the training
+population.
+[SPEAKER_00]: And then we tried to cross also
+individuals that were good for one trait,
+[SPEAKER_00]: good individuals that were good for the
+other trait.
+[SPEAKER_00]: So these are the results.
+[SPEAKER_00]: As I told you, we made this process in the
+field.
+[SPEAKER_00]: And I don't know why.
+[SPEAKER_00]: We brought the F1 seed here to Cornell.
+[SPEAKER_00]: We planted it in the greenhouse.
+[SPEAKER_00]: And we genotype everything.
+[SPEAKER_00]: So these are the results from the
+simulation for each trait.
+[SPEAKER_00]: So we simulated all the possible
+combinations between these 19 families.
+[SPEAKER_00]: And we calculated the mean and the
+variance of each simulated progeny.
+[SPEAKER_00]: And here we can see the mean of each
+progeny versus the progeny variance here.
+[SPEAKER_00]: So from these progenies, we tried to
+select the top 100 individuals that had
+[SPEAKER_00]: either the highest mean, which are these
+red dots here.
+[SPEAKER_00]: And I'm sorry, the reference here.
+[SPEAKER_00]: I don't know.
+[SPEAKER_00]: They got red.
+[SPEAKER_00]: And then we tried to select the top 100
+individuals that had both the top 100
+[SPEAKER_00]: progenies with the maximum yield.
+[SPEAKER_00]: I'm sorry, with the maximum mean.
+[SPEAKER_00]: Of the top 10% of the population.
+[SPEAKER_00]: So this would be a combination of
+selecting based on both mean and variance.
+[SPEAKER_00]: And in purple here, we can see the crosses
+in common between the two methods,
+[SPEAKER_00]: which are depicted here.
+[SPEAKER_00]: So here we can see that we have more
+crosses in common for grain yield than for
+[SPEAKER_00]: the other traits.
+[SPEAKER_00]: So maybe for grain yield, using just the
+mean between the parents to predict our
+[SPEAKER_00]: best process, maybe that would be a good
+option.
+[SPEAKER_00]: And it's the easiest option.
+[SPEAKER_00]: But for the million quality traits,
+we might want to evaluate whether using
+[SPEAKER_00]: the mean between the parents or a
+combination of the mean and the variance
+[SPEAKER_00]: and the progeny would be the best option.
+[SPEAKER_00]: Because we don't have so many crosses in
+common.
+[SPEAKER_00]: And here, this is to show you the
+correlated response between the traits and
+[SPEAKER_00]: the simulations, too.
+[SPEAKER_00]: So here we can see that usually,
+of course, grain yield and milling yield
+[SPEAKER_00]: between these 19 families, they have a
+negative correlation.
+[SPEAKER_00]: But between grain yield and head rise
+percentage, the correlation is not that
+[SPEAKER_00]: strong.
+[SPEAKER_00]: And we can see that, too, here.
+[SPEAKER_00]: And this is the distribution of the
+correlations between the traits across all
+[SPEAKER_00]: the progenies.
+[SPEAKER_00]: So even though this distribution is huge
+to the negative side, we can see there's
+[SPEAKER_00]: some progenies that still have a positive
+correlation.
+[SPEAKER_00]: So there's still room for improvement here
+in the population.
+[SPEAKER_00]: So what we tried to do here was to
+simulate, sorry, to try to evaluate
+[SPEAKER_00]: different selection schemes to improve
+both grain yield and quality
+[SPEAKER_00]: simultaneously.
+[SPEAKER_00]: So the first three selection schemes we
+used, they differed on the selection on
+[SPEAKER_00]: which trait we were applying the strongest
+selection pressure.
+[SPEAKER_00]: So the first one was firstly, selecting
+based on the top 10% lines based on yield.
+[SPEAKER_00]: And from there, selecting based on the
+other quality traits.
+[SPEAKER_00]: And the second one was selecting first for
+head rise and then based on the other
+[SPEAKER_00]: traits.
+[SPEAKER_00]: And the third one was selecting first for
+chalkiness, then the other two.
+[SPEAKER_00]: And then we also evaluated a
+multiplicative index where we consider all
+[SPEAKER_00]: the traits in the tenus here.
+[SPEAKER_00]: And here this x is the value for that
+progeny, is the mean for that progeny for
+[SPEAKER_00]: that trait.
+[SPEAKER_00]: And this k here is the minimum value for
+the lowest value or the highest in the
+[SPEAKER_00]: case of chalkiness for that trait across
+all progenies.
+[SPEAKER_00]: So we took the top 25 crosses that were
+selected from each selection scheme and we
+[SPEAKER_00]: calculated the mean of those progenies,
+sorry.
+[SPEAKER_00]: And we subtracted that mean from the,
+sorry, we subtracted the mean in the
+[SPEAKER_00]: training population, but that's with our
+response to selection.
+[SPEAKER_00]: And so for selection scheme one,
+we see that we had the highest response to
+[SPEAKER_00]: selection for grain yield, but the
+response to selection for the other medium
+[SPEAKER_00]: quality traits was very low.
+[SPEAKER_00]: On the other hand, using selection scheme
+two, we had a lower response for yield,
+[SPEAKER_00]: but we had a higher response for the other
+traits.
+[SPEAKER_00]: And also the second best scheme was the
+multiplicative index.
+[SPEAKER_00]: So this could be something to have in mind
+in the future when we want to,
+[SPEAKER_00]: using these types of indices, when we want
+to breed for these traits simultaneously.
+[SPEAKER_00]: Then this is, so that was with the
+simulations.
+[SPEAKER_00]: And this part is about the evaluations or
+double haploid line families in the field.
+[SPEAKER_00]: So again, as I told you, we only could
+recover 43 double haploid families out of
+[SPEAKER_00]: 185 F1 seeds.
+[SPEAKER_00]: So we didn't have the chance to choose
+which families to evaluate, which we sent
+[SPEAKER_00]: everything and everything was evaluated by
+little y.
+[SPEAKER_00]: And so we calculated the means for each
+family.
+[SPEAKER_00]: And since the problem we had here was that
+these lines arrived too late to the Y,
+[SPEAKER_00]: they arrived on December.
+[SPEAKER_00]: So they were planted late, actually three
+months after the regular rice planting
+[SPEAKER_00]: schedule.
+[SPEAKER_00]: So for this reason, we think that grain
+yield was so low.
+[SPEAKER_00]: If we compare it here, this is a meaning
+for each trait in the training population
+[SPEAKER_00]: as a reference.
+[SPEAKER_00]: So yield was very low for this line.
+[SPEAKER_00]: But on the other hand, for milling
+quality, for milling yield and head rice,
+[SPEAKER_00]: the means for these traits were actually a
+little better than the training
+[SPEAKER_00]: population.
+[SPEAKER_00]: And this was surprising for us.
+[SPEAKER_00]: The mean for grain chalkiness was very low
+compared to the training population.
+[SPEAKER_00]: It was unexpected because these lines were
+during maturity, they were in maturity
+[SPEAKER_00]: during the fall season.
+[SPEAKER_00]: So temperatures can be very low for rice.
+[SPEAKER_00]: But it's a good result because we want to
+minimize chalkiness.
+[SPEAKER_00]: These are the trait correlations between
+these families.
+[SPEAKER_00]: And the correlations are low, but again,
+since, I mean, the correlations between
+[SPEAKER_00]: yield and the other milling quality traits
+are actually non-significant.
+[SPEAKER_00]: But again, as our plants, they were
+planted late and our yield was so low
+[SPEAKER_00]: because weather conditions, we can't take
+this very, I mean, we, these plants are,
+[SPEAKER_00]: they're right now in the field that were
+planted again for a new evaluation in the
+[SPEAKER_00]: appropriate time.
+[SPEAKER_00]: So we're waiting for the data to make more
+informed decisions about the results of
+[SPEAKER_00]: this part of the analysis.
+[SPEAKER_00]: So the other, so what we try to do was to
+compare what prediction accuracy is for
+[SPEAKER_00]: these families with the actual data from
+the field.
+[SPEAKER_00]: And so what we did with, we performed
+genomic prediction.
+[SPEAKER_00]: On our lines, we had our prediction
+accuracies for families.
+[SPEAKER_00]: Then we had the evaluation from the field.
+[SPEAKER_00]: We ran both predictions and the field data
+and we compared, we took the top 10% and
+[SPEAKER_00]: we compared which ones on the top 10% for
+the predictions where it correspond,
+[SPEAKER_00]: we're also in the top 10% for the field
+evaluations.
+[SPEAKER_00]: And again, for grain yield, we could only
+find one family.
+[SPEAKER_00]: This family was in common between the two.
+[SPEAKER_00]: Two rankings.
+[SPEAKER_00]: But for, but again, since they were
+planted late, we need actually like better
+[SPEAKER_00]: data to, to examine the role of genomic
+selection for grain yield.
+[SPEAKER_00]: But here, four million quality traits,
+we found four families out of 10 were in
+[SPEAKER_00]: common between the two rankings.
+[SPEAKER_00]: And for grain chalkiness, six families out
+of 10 were common between the two
+[SPEAKER_00]: predictions, sorry, the two rankings.
+[SPEAKER_00]: So again, we are waiting for more data to
+analyze from the field, but this is
+[SPEAKER_00]: actually, this is promising for us because
+it could be a great genomic selection,
+[SPEAKER_00]: a good strategy to predict traits in
+million quality traits in rice.
+[SPEAKER_00]: So that was everything about genomic
+prediction.
+[SPEAKER_00]: Now this is a bonus track and I'm gonna go
+fast here.
+[SPEAKER_00]: But since I told you, we only,
+we could only obtain 43 double haploid
+[SPEAKER_00]: families, actually a little more,
+there were 54 double haploid families out
+[SPEAKER_00]: of 185 F1C.
+[SPEAKER_00]: So our double haploid yield was pretty
+low.
+[SPEAKER_00]: So what we tried to see, what we tried to
+do was to explore our germplasm for
+[SPEAKER_00]: anthraculture.
+[SPEAKER_00]: Anthraculture is the process to obtain
+double haploid lines in rice.
+[SPEAKER_00]: So we tried to explore our germplasm for
+genomic regions associated to
+[SPEAKER_00]: anthraculture in our tropical japonica
+lines.
+[SPEAKER_00]: And mainly, anthraculture consists of two
+main steps, which are callous induction
+[SPEAKER_00]: and plant regeneration.
+[SPEAKER_00]: And these are the two main bottlenecks of
+the process.
+[SPEAKER_00]: So, and we know also that the response to
+anthraculture is highly dependent on the
+[SPEAKER_00]: donor genotype, and usually indica lines
+are the least responsive among all lines.
+[SPEAKER_00]: Tropical japonica varieties are usually,
+are easier usually to regenerate,
+[SPEAKER_00]: but there's a big variation on response to
+anthraculture.
+[SPEAKER_00]: So our objective was to identify QTLs for
+both callous induction and plant
+[SPEAKER_00]: regeneration in our double haploid lines.
+[SPEAKER_00]: So our data set consisted of 191 lines
+that belonged to 54 double haploid
+[SPEAKER_00]: families.
+[SPEAKER_00]: This is where all the double haploid
+families we caught, we could recover after
+[SPEAKER_00]: the anthraculture process.
+[SPEAKER_00]: And the traits were cali transfer per
+dish.
+[SPEAKER_00]: This is a measure of the measurement of
+callous induction.
+[SPEAKER_00]: Number of plants regenerated per callous,
+which is an idea of, is a measurement of
+[SPEAKER_00]: plant regeneration.
+[SPEAKER_00]: And then the number of panicles per each
+regenerated plant.
+[SPEAKER_00]: This gives us an idea of the bigger,
+of our plants, because usually plants
+[SPEAKER_00]: regenerate, but not usually, but sometimes
+plants regenerate, and then we transfer
+[SPEAKER_00]: them to the greenhouse and they die,
+or they have very low yield.
+[SPEAKER_00]: And then the genotyping was done using an
+exterior library, and we had a total of
+[SPEAKER_00]: about 69,000 markers.
+[SPEAKER_00]: So, I don't know why it's so bad,
+but these are the results for,
+[SPEAKER_00]: where G was for callous induction.
+[SPEAKER_00]: And here we could identify four QTLs that
+were distributed along chromosomes two,
+[SPEAKER_00]: seven, 11, and 12.
+[SPEAKER_00]: Then for plants per callous, we could find
+a lot more QTLs.
+[SPEAKER_00]: We found a total of 12 QTLs here.
+[SPEAKER_00]: And some of these QTLs were mainly this
+one in chromosome two was also collocated
+[SPEAKER_00]: with this one for callous induction.
+[SPEAKER_00]: And these QTLs were also distributed along
+chromosomes two, three, five, six,
+[SPEAKER_00]: seven, eight, and nine.
+[SPEAKER_00]: And finally, for panicles per plant,
+we found a total of five QTLs.
+[SPEAKER_00]: And this QTL also collocated with this
+second QTL found here for plants per
+[SPEAKER_00]: callous.
+[SPEAKER_00]: So we made a literature search to find
+which QTLs for these traits were
+[SPEAKER_00]: previously reported in other studies,
+and we found a total of eight QTLs among
+[SPEAKER_00]: the ones we found were previously reported
+in other studies.
+[SPEAKER_00]: So these results are exciting.
+[SPEAKER_00]: Of course, this is the first step.
+[SPEAKER_00]: We just identified the QTLs.
+[SPEAKER_00]: Now we have to go more deeply into fine
+mapping and possibly identifying causal
+[SPEAKER_00]: genes under these QTLs.
+[SPEAKER_00]: But this is exciting.
+[SPEAKER_00]: So that's about all I wanted to tell you
+today.
+[SPEAKER_00]: This is the acknowledgement part.
+[SPEAKER_00]: So now I want to first thank my committee.
+[SPEAKER_00]: My advisors is Sima Kuch and the other
+members of my committee, Jean-Luc and
+[SPEAKER_00]: Philippe, and also Lucia, which is in
+Madison now.
+[SPEAKER_00]: I also want to thank the breeders in the
+rice breeding program in Nenia,
+[SPEAKER_00]: which we could get all the data from them.
+[SPEAKER_00]: And also the people from biotechnology and
+statistics, and also the current and
+[SPEAKER_00]: former members of the McHooch lab,
+Sandy and Cassie for taking care of my
+[SPEAKER_00]: plants and helping me with the crosses,
+and Yoshino and Francisco for helping me
+[SPEAKER_00]: with all the biotechnology, sorry,
+for the bioinformatic analysis,
+[SPEAKER_00]: and of course, Giovanni, Vishnu,
+Moni, who sadly left us too soon,
+[SPEAKER_00]: Diane and Juan David for sharing office
+time and conversation, et cetera.
+[SPEAKER_00]: So thank you very much for being here.
+[SPEAKER_00]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_00]: Thank you.
+[SPEAKER_00]: Thank you.
+Thank you.

@@ -1,0 +1,1208 @@
+1
+00:00:20,179 --> 00:00:26,518
+One of the other very key measurements is solar radiation, to any
+
+2
+00:00:26,518 --> 00:00:36,269
+input. For decades the only instruments available were expensive
+
+3
+00:00:36,270 --> 00:00:44,969
+blackbody pyranometers, then silicon-cell pyranometers became available and I
+
+4
+00:00:44,969 --> 00:00:51,289
+think we have some here. They are in the catalogs. Let's see if we got one
+
+5
+00:00:51,289 --> 00:00:59,370
+sitting here. Well this is close. This  is actually a quantum sensor but
+
+6
+00:00:59,369 --> 00:01:08,310
+but they're this size, they're tiny. Now siliconcell pyranometers are almost an
+
+7
+00:01:08,310 --> 00:01:16,109
+order of magnitude cheaper than black-body pyranometers, so all of us use
+
+8
+00:01:16,109 --> 00:01:20,938
+silicon-cell pyranometers on weather stations to get solar radiation, for our
+
+9
+00:01:20,938 --> 00:01:26,758
+Penman-Monteith models and everything else. We just say great we've just
+
+10
+00:01:26,759 --> 00:01:31,079
+saved a lot of money, but what I want to show you is the differences and the
+
+11
+00:01:31,078 --> 00:01:39,169
+errors that you get with silicon-cell pyranometers. These are not
+
+12
+00:01:39,170 --> 00:01:45,000
+widely appreciated. It's only our work comparing them rigorously back and forth
+
+13
+00:01:45,000 --> 00:01:52,978
+that we've seen these things. This comes from the fact that
+
+14
+00:01:52,978 --> 00:01:57,789
+black-body pyranometers, and you look at them and there's a glass dome and a
+
+15
+00:01:57,790 --> 00:02:05,440
+black disk, record all of the wavelength, all of the radiation over this whole
+
+16
+00:02:05,439 --> 00:02:15,159
+solar spectrum. This is the entire solar spectrum and on a typical sunny day. They
+
+17
+00:02:15,159 --> 00:02:19,900
+measure all of this these are all giant bands of absorption of water vapor and
+
+18
+00:02:19,900 --> 00:02:27,400
+the spectrum. Outside the atmosphere it's a smooth curve, but silicon-cells
+
+19
+00:02:27,400 --> 00:02:35,560
+pyranometers subsample this spectra and predict the rest. We do that all the
+
+20
+00:02:35,560 --> 00:02:39,519
+time in science we subsample things and then we predict the whole and
+
+21
+00:02:39,519 --> 00:02:48,120
+that's fine, but subsampling changes the perspective changes with atmospheric
+
+22
+00:02:48,120 --> 00:02:54,400
+humidity. What I'll show you is the data on how does atmospheric humidity
+
+23
+00:02:54,400 --> 00:03:00,189
+effect this spectra and how does it affect the accuracy of our silicon-cell
+
+24
+00:03:00,189 --> 00:03:14,769
+pyranometers. I don't know how many of these I need, but this curve
+
+25
+00:03:14,769 --> 00:03:19,150
+will relate to the next talk and photosynthetic radiation. There's so many
+
+26
+00:03:19,150 --> 00:03:25,810
+things you can see from this curve and we made a refrigerator magnet, nowadays
+
+27
+00:03:25,810 --> 00:03:30,099
+not everybody put these on refrigerators but I'm pleased I go around and people have
+
+28
+00:03:30,099 --> 00:03:34,000
+these on their filing cabinets so they can see the curve but here's a magnet.
+
+29
+00:03:34,000 --> 00:03:40,870
+You could pass around and take one, and don't put it but a disk it might
+
+30
+00:03:40,870 --> 00:03:44,590
+de-magnetize it or it might change it. This is just a curve showing this in
+
+31
+00:03:44,590 --> 00:03:50,280
+a couple different units. Here's watts per meter squared, but what happens on
+
+32
+00:03:50,280 --> 00:03:56,709
+cloudy days? Here's the whole spectrum as an introduction to radiation
+
+33
+00:03:56,709 --> 00:04:01,359
+measurements and radiation was what Apogee has cut its teeth on, our quantum
+
+34
+00:04:01,359 --> 00:04:05,710
+sensors and we're known as a radiation sensor company.
+
+35
+00:04:05,710 --> 00:04:13,030
+That's the whole curve. Now we get photosynthetically active, which is most
+
+36
+00:04:13,030 --> 00:04:18,480
+people in this room we've got 400 and 700 nm memorized, that's the range of
+
+37
+00:04:18,480 --> 00:04:23,170
+wavelengths that cause photosynthesis. It's also really close to the range of
+
+38
+00:04:23,170 --> 00:04:30,640
+wavelengths for human vision then finally down here UV. There's times and
+
+39
+00:04:30,639 --> 00:04:35,110
+we just want to measure this, but with pyranometers were measuring the whole
+
+40
+00:04:35,110 --> 00:04:39,490
+thing. It's all thermal radiation, that's what drives the change of state of water
+
+41
+00:04:39,490 --> 00:04:46,810
+from liquid to gas. Here's black-body and silicon-cells. Now look at how this
+
+42
+00:04:46,810 --> 00:04:53,259
+curve changes on a cloudy day, atmospheric water vapor not only takes
+
+43
+00:04:53,259 --> 00:05:00,730
+out these bands but it greatly reduces these bands of radiation. If you measure
+
+44
+00:05:00,730 --> 00:05:06,550
+the whole thing with the black-body pyranometer, you accurately measure this but
+
+45
+00:05:06,550 --> 00:05:13,329
+if you're only subsampling it, just look at this spectra is hardly changed
+
+46
+00:05:13,329 --> 00:05:18,639
+in the short wavelengths on a cloudy day it selectively shifts the wavelengths
+
+47
+00:05:18,639 --> 00:05:27,250
+this direction and this is the spectral response of a silicon-cell, these smaller
+
+48
+00:05:27,250 --> 00:05:38,230
+silicon cell parameters that we all use. It selectively measures this;
+
+49
+00:05:38,230 --> 00:05:43,830
+it doesn't measure this. What happens is they over measure on cloudy days
+
+50
+00:05:43,829 --> 00:05:49,120
+because they're sub sampling the part that's transmitted more. How bad is
+
+51
+00:05:49,120 --> 00:05:57,040
+this effect of oversampling? Almost ten percent, depending on how much cloudy sky
+
+52
+00:05:57,040 --> 00:06:03,010
+there is but that's a big error on cloudy days. Let's take a look at a
+
+53
+00:06:03,009 --> 00:06:10,360
+couple of cloudy days in here. Here happens to be three days when we had
+
+54
+00:06:10,360 --> 00:06:16,780
+full Sun, which is what these sensors are calibrated to and then partly cloudy and
+
+55
+00:06:16,779 --> 00:06:20,409
+then significantly cloudy here. If you
+
+56
+00:06:20,410 --> 00:06:25,570
+just look at this, it looks like the curves are really pretty close the black-body
+
+57
+00:06:25,569 --> 00:06:32,379
+and silicon-cell but when you calculate the errors almost none here
+
+58
+00:06:32,379 --> 00:06:38,050
+and that just gets bigger here. Here's where we're nine, ten, even eleven times
+
+59
+00:06:38,050 --> 00:06:42,180
+it's greater than a ten percent error.
+
+60
+00:06:42,300 --> 00:06:46,870
+You can of course correct for this if you know the effect and you know
+
+61
+00:06:46,870 --> 00:06:52,509
+the fraction of clouds, but rarely do people do this they just assume the
+
+62
+00:06:52,509 --> 00:06:58,418
+silicon-cell is correct at all times. There's a  humidity
+
+63
+00:06:58,418 --> 00:07:05,740
+effect on this on this measurement;  here's the magnitude of the
+
+64
+00:07:05,740 --> 00:07:11,370
+effect here. Again they're accurate in full sun because they're calibrated to
+
+65
+00:07:11,370 --> 00:07:21,579
+full sun. This is the same thing, data ratio of clear sky to actual and error
+
+66
+00:07:21,579 --> 00:07:25,750
+always goes high in these conditions. This is also probably a pretty good
+
+67
+00:07:25,750 --> 00:07:31,629
+example of models. This is an average of these but this should
+
+68
+00:07:31,629 --> 00:07:35,829
+taper down to zero and there's just a few data points and if you fit this with the
+
+69
+00:07:35,829 --> 00:07:40,300
+model that red line is really not very representative up here because we don't
+
+70
+00:07:40,300 --> 00:07:46,120
+have enough data to make that. But, it's an example of how we take data and make
+
+71
+00:07:46,120 --> 00:07:51,490
+a model out of it, but on severely cloudy days or significantly cloudy days it's
+
+72
+00:07:51,490 --> 00:07:58,680
+a pretty big error from silicon-cell pyranometers. The good news about this is
+
+73
+00:07:58,680 --> 00:08:05,530
+the cost of black-body pyranometers continues to come down and because of
+
+74
+00:08:05,529 --> 00:08:10,089
+these errors, we've sold a silicon-cell pyranometer for a long, long time and
+
+75
+00:08:10,089 --> 00:08:15,098
+we just help people about these errors, but because of this and because of the
+
+76
+00:08:15,098 --> 00:08:20,379
+need to make accurate solar radiation measurements on all the days, Apogee has
+
+77
+00:08:20,379 --> 00:08:28,629
+now developed a black-body pyranometer that looks like this and it doesn't
+
+78
+00:08:28,629 --> 00:08:33,219
+have these kinds of errors because of the spectra that it measures.
+
+79
+00:08:33,219 --> 00:08:43,300
+The second source of error among instruments is called cosine error, and
+
+80
+00:08:43,299 --> 00:08:48,399
+that refers to how accurately does the sensor measure all the angles of
+
+81
+00:08:48,399 --> 00:08:53,649
+radiation. You can put any light sensor out there and get some relative
+
+82
+00:08:53,649 --> 00:08:58,839
+indication of light but it is really difficult to calibrate it for light
+
+83
+00:08:58,839 --> 00:09:03,670
+coming right straight down and have it also be accurate when the light comes in
+
+84
+00:09:03,669 --> 00:09:10,208
+at a low angle. Or same thing on a cloudy day, where there's equal radiation from
+
+85
+00:09:10,208 --> 00:09:16,000
+all angles, the sensor has to accurately integrate all those angles. Here's an
+
+86
+00:09:16,000 --> 00:09:21,448
+example of low angle radiation
+
+87
+00:09:21,539 --> 00:09:28,120
+coming into this, and that's why we call this cosine correction because if it's
+
+88
+00:09:28,120 --> 00:09:33,429
+coming at this angle the sensor should read 500. It's not supposed to read a
+
+89
+00:09:33,429 --> 00:09:39,338
+thousand, that's cosine correction. Does it really read 500 if it's at that
+
+90
+00:09:39,339 --> 00:09:44,439
+angle? You have to get that correction with the optics of the sensor
+
+91
+00:09:44,438 --> 00:09:50,818
+and all radiation manufacturers work hard to get cosine correction, at least
+
+92
+00:09:50,818 --> 00:09:55,719
+the ones selling what we call research grade instruments. There's plenty of
+
+93
+00:09:55,720 --> 00:10:00,790
+pyranometers out there that are really cheap and boy they do a terrible job of
+
+94
+00:10:00,789 --> 00:10:09,309
+this. I worry about people selling cheap instruments and
+
+95
+00:10:09,309 --> 00:10:14,109
+getting the cosine really wrong and  if you know what you're doing you
+
+96
+00:10:14,110 --> 00:10:18,490
+can test this compared to a better instrument, but this cosine is one of the
+
+97
+00:10:18,490 --> 00:10:23,860
+things that some lower-cost manufacturers sometimes
+
+98
+00:10:23,860 --> 00:10:29,438
+forget. Here's all the angles coming into this thing. This is a graph of the
+
+99
+00:10:29,438 --> 00:10:36,639
+angle and error. In this case, this is a bunch of parameters and the standard
+
+100
+00:10:36,639 --> 00:10:40,870
+deviations. The morning and evening are slightly different. They're really
+
+101
+00:10:40,870 --> 00:10:47,060
+close until we get out to 75 degrees then the errors get bigger. This means
+
+102
+00:10:47,059 --> 00:10:52,609
+they're not as accurate at dawn and dusk for those measurements, but there's not
+
+103
+00:10:52,610 --> 00:10:57,860
+very much radiation out here either. It's low light, so a five percent error in low
+
+104
+00:10:57,860 --> 00:11:04,190
+light is not that big of an error in absolute terms. But you would like these
+
+105
+00:11:04,190 --> 00:11:10,520
+instruments, to be accurate all day long, and summer and winter. How about changing
+
+106
+00:11:10,519 --> 00:11:15,829
+Sun angles. We get summer angles in here and then we get winter angles over here.
+
+107
+00:11:15,830 --> 00:11:20,900
+If it's not cosine corrected, it can have a big seasonal error because they're
+
+108
+00:11:20,899 --> 00:11:32,778
+typically calibrated for summer sunlight angles. We specify these often by the
+
+109
+00:11:32,778 --> 00:11:41,200
+error out here at 75 degrees and this is an example of how companies right
+
+110
+00:11:41,200 --> 00:11:47,060
+specifications to how accurate are they out there. You can't just test one sensor
+
+111
+00:11:47,059 --> 00:11:52,009
+you got to take your entire pool of sensors with replicates and you want to
+
+112
+00:11:52,009 --> 00:11:57,588
+make sure your specification matches all your instruments not just your best
+
+113
+00:11:57,589 --> 00:12:07,339
+sensor. We specify 5% at 75 degrees and this is two times the standard
+
+114
+00:12:07,339 --> 00:12:16,270
+deviation, which is ninety-six percent of the tested sensors. Stability, this is
+
+115
+00:12:16,269 --> 00:12:22,458
+characteristic of all instruments, how stable are they long term. Humidity
+
+116
+00:12:22,458 --> 00:12:27,619
+companies have said everybody can build a humidity sensor and it's accurate on
+
+117
+00:12:27,620 --> 00:12:33,679
+day one now check it two years later three years later. All sensors drift
+
+118
+00:12:33,679 --> 00:12:42,620
+but companies work hard to minimize that drift. This is some test of silicon-cell
+
+119
+00:12:42,620 --> 00:12:48,889
+pyranometers for long-term drift compared to high-end black-body. Now, Kip and Zonen
+
+120
+00:12:48,889 --> 00:12:53,449
+sells very expensive high-end black-bodies. This is on the roof of our
+
+121
+00:12:53,450 --> 00:12:59,830
+building in Logan Utah. Multiple replicate  high-end instruments to get a very
+
+122
+00:12:59,830 --> 00:13:07,150
+accurate reference point. You can see there's two glass domes inside of these
+
+123
+00:13:07,149 --> 00:13:17,379
+to make a primary standard instrument. Here's data, now we don't show the
+
+124
+00:13:17,379 --> 00:13:22,750
+hundred pyrometers next to these but it's a big table that's checking them and
+
+125
+00:13:22,750 --> 00:13:30,159
+this is some data that were compared. the mean change was only point one percent
+
+126
+00:13:30,159 --> 00:13:35,769
+per year. On average these are very stable. I mean it's a very hard number to even
+
+127
+00:13:35,769 --> 00:13:40,470
+measure, point you have to go ten years before you even see a one-percent drift.
+
+128
+00:13:40,470 --> 00:13:47,200
+But there's some variability in these, so we had some that drifted as much as one
+
+129
+00:13:47,200 --> 00:13:52,150
+point eight percent. Now oddly enough, some went up too. They don't always drift
+
+130
+00:13:52,149 --> 00:13:57,519
+down. There's tiny changes in the optics that affect the stability of the
+
+131
+00:13:57,519 --> 00:14:04,720
+instruments. Because of this we write our specification at two percent a year drift.
+
+132
+00:14:04,720 --> 00:14:12,370
+That's all of the sensors should drift less than that even though the mean
+
+133
+00:14:12,370 --> 00:14:17,970
+is less than a tenth of a percent a year. Again I talked about this
+
+134
+00:14:17,970 --> 00:14:22,720
+accelerated aging before but to really be sure you've got quality
+
+135
+00:14:22,720 --> 00:14:27,759
+instruments you need to check long-term stability. It's one of the troubles with
+
+136
+00:14:27,759 --> 00:14:31,659
+new instruments. Everybody gets excited with new instruments. How much did the
+
+137
+00:14:31,659 --> 00:14:37,449
+manufacturer test those for long-term stability? You can't put them in an
+
+138
+00:14:37,450 --> 00:14:40,629
+environment for ten years you're depriving people of that new technology
+
+139
+00:14:40,629 --> 00:14:46,570
+but you can run accelerated aging tests to try and make them fail to get better
+
+140
+00:14:46,570 --> 00:14:52,420
+confidence that they're going to work in a range of environmentsm the tropics and
+
+141
+00:14:52,419 --> 00:14:59,469
+the cold places, warm places. That's a critical thing with research grade
+
+142
+00:14:59,470 --> 00:15:06,080
+instruments. Another little point on these, here's some frost.
+
+143
+00:15:06,080 --> 00:15:12,620
+Here we are in Sydney you don't get frost here right but but you get dew, you
+
+144
+00:15:12,620 --> 00:15:19,340
+get condensation here. Here was a morning, where we had cold warning, we had
+
+145
+00:15:19,340 --> 00:15:23,360
+frost and actually this might be a radiation frost, which we'll talk about
+
+146
+00:15:23,360 --> 00:15:30,379
+in a little bit, but these two sensors right here are clear. They're clear
+
+147
+00:15:30,379 --> 00:15:36,789
+because they're heated and with this little sensor we can put a tiny little
+
+148
+00:15:36,789 --> 00:15:42,589
+resistance heater in this and warm it up just slightly to keep condensation off
+
+149
+00:15:42,590 --> 00:15:49,460
+the sensor and to keep dew off the sensor, which we call that occlusion of the
+
+150
+00:15:49,460 --> 00:15:54,800
+optical path. If there's anything on that sensor, it's going to read incorrectly
+
+151
+00:15:54,799 --> 00:16:01,189
+and frost is huge. I got some pictures in here of snow on sensors. That's also
+
+152
+00:16:01,190 --> 00:16:07,340
+huge. It blocks, it sits on the sensor. You can buy heaters for those
+
+153
+00:16:07,340 --> 00:16:13,639
+primary standard pyranometers but now we're talking five to ten thousand
+
+154
+00:16:13,639 --> 00:16:17,629
+dollars for one instrument that's heated and ventilated to make an
+
+155
+00:16:17,629 --> 00:16:22,700
+accurate measurement versus a few hundred dollars for a tiny sensor that
+
+156
+00:16:22,700 --> 00:16:29,600
+has a heater in it. Those heaters have helped quite a bit to help people make
+
+157
+00:16:29,600 --> 00:16:35,029
+more accurate measurements in places that get condensation or in places that
+
+158
+00:16:35,029 --> 00:16:42,100
+get snow and frost. Here's an example of snow, buried under snow here and and
+
+159
+00:16:42,100 --> 00:16:47,600
+above the snow here. The sensor is also on a pedestal to keep it above so snow can't
+
+160
+00:16:47,600 --> 00:16:50,889
+stick to it.
+
+161
+00:16:51,440 --> 00:16:58,080
+Temperature affects radiation sensors. This is an example of comparative tests
+
+162
+00:16:58,080 --> 00:17:03,810
+that we've done with Li-Cor silicon-cell pyranometers and ours. There's a tiny
+
+163
+00:17:03,809 --> 00:17:11,129
+temperature effect in here. Most research grade sensors, this is a small effect
+
+164
+00:17:11,130 --> 00:17:16,650
+look at this goes from minus ten to plus 40 and the effect is only one percent.
+
+165
+00:17:16,650 --> 00:17:20,730
+Again for precision measurements, this is repeatable so you can measure
+
+166
+00:17:20,730 --> 00:17:27,509
+and correct for the temperature effect on the sensor. That depends on how
+
+167
+00:17:27,509 --> 00:17:32,089
+accurate you need the solar radiation.
+
+168
+00:17:34,579 --> 00:17:43,019
+This I think might be my last slide in this and I think we can talk
+
+169
+00:17:43,019 --> 00:17:51,170
+about net radiation next. Okay this relates to that.
+
+170
+00:17:51,170 --> 00:17:57,420
+Remember how we subsampled the solar radiation? We often want to know, turn
+
+171
+00:17:57,420 --> 00:18:02,960
+them upside down, and know reflected radiation from the ground. That's net
+
+172
+00:18:02,960 --> 00:18:09,470
+shortwave radiation. We take a carefully calibrated silicon-cell sensor
+
+173
+00:18:09,470 --> 00:18:15,420
+and it's turn it upside down and we say great now we know incoming and we'll
+
+174
+00:18:15,420 --> 00:18:22,620
+subtract outgoing, and we have net shortwave radiation. That would be wrong
+
+175
+00:18:22,619 --> 00:18:28,259
+because this sub-samples you turn it upside down and the reflected radiation
+
+176
+00:18:28,259 --> 00:18:34,589
+is different. You can get significant errors if you turn this upside down to
+
+177
+00:18:34,589 --> 00:18:39,659
+do reflected radiation and here's the magnitude of the errors fourteen percent
+
+178
+00:18:39,660 --> 00:18:46,470
+error over a grass canopy. You can see almost twenty percent errors. You
+
+179
+00:18:46,470 --> 00:18:52,380
+should never use a silicon-cell pyranometer upside down to get reflected
+
+180
+00:18:52,380 --> 00:18:58,070
+radiation. They are not calibrated for that. You have to go to a black-body
+
+181
+00:18:58,069 --> 00:19:02,109
+pyranometer, which doesn't have this source of
+
+182
+00:19:02,109 --> 00:19:07,329
+radiation. These are so inexpensive
+
+183
+00:19:07,329 --> 00:19:14,029
+everybody gets tempted to do this and  if you know this and you're
+
+184
+00:19:14,029 --> 00:19:20,779
+confident you could correct for it in software, butyou get really nervous
+
+185
+00:19:20,779 --> 00:19:27,289
+about all these fudge factors. Sometimes they can make measurements
+
+186
+00:19:27,289 --> 00:19:37,750
+worse. Question: "What about if you use it in the vertical position, not horizontal,
+
+187
+00:19:38,559 --> 00:19:43,940
+90 degrees?"
+
+188
+00:19:55,490 --> 00:20:03,170
+Okay, yes there is same thing because now you're not
+
+189
+00:20:03,170 --> 00:20:09,700
+measuring the sky it's reflected. These errors would be similar to this
+
+190
+00:20:09,700 --> 00:20:17,180
+because we're subsampling and the spectral changes.
+
+191
+00:20:17,180 --> 00:20:24,320
+Same thing as cloudes.  Yeah, we spent some time in this because lots of people
+
+192
+00:20:24,319 --> 00:20:30,700
+use these this way and you tell them not to and they still do and
+
+193
+00:20:30,700 --> 00:20:35,930
+people don't read the owners manual. They just think I like this sensor and I'm going to
+
+194
+00:20:35,930 --> 00:20:45,140
+use it. Tdone a bunch of work on
+
+195
+00:20:45,140 --> 00:20:49,130
+to characterize these errors and try and make people aware of them through workshops
+
+196
+00:20:49,130 --> 00:20:56,150
+like this, through videos online. If you know what you're doing as a research
+
+197
+00:20:56,150 --> 00:21:00,710
+scientist, you can often get away with a lower cost sensor because you know its
+
+198
+00:21:00,710 --> 00:21:05,960
+limitations. Pretty often it's people that don't know what they're doing that
+
+199
+00:21:05,960 --> 00:21:10,460
+get tempted to buy low cost sensors and then they misuse them and they can have
+
+200
+00:21:10,460 --> 00:21:18,710
+big errors. It's sad because you see it all too often. Part of what we
+
+201
+00:21:18,710 --> 00:21:22,850
+want to help you do is evaluate specifications of instruments you don't
+
+202
+00:21:22,849 --> 00:21:28,339
+need to over by expensive instruments but if you understand the specs
+
+203
+00:21:28,339 --> 00:21:33,369
+sometimes you can get away with less expensive. Often you can get away with less than
+
+204
+00:21:33,369 --> 00:21:38,689
+the highest cost instruments if you really know what you're doing and  the
+
+205
+00:21:38,690 --> 00:21:42,190
+limitations of the sensors.
+
+206
+00:21:42,549 --> 00:21:48,829
+Leveling is a big source of error. Sensors become
+
+207
+00:21:48,829 --> 00:21:52,819
+unlevel or people don't check that often enough. What if the sensor
+
+208
+00:21:52,819 --> 00:21:58,339
+starts to tilt very slightly to the Sun or away from the Sun you can quickly get
+
+209
+00:21:58,339 --> 00:22:03,259
+big errors from leveling. We spend a lot of time making really rigorous
+
+210
+00:22:03,259 --> 00:22:07,460
+leveling mounts and they all have a bubble-level, but now you got to climb in
+
+211
+00:22:07,460 --> 00:22:13,059
+your tower and look at that bubble-level to see that it's staying level.
+
+212
+00:22:13,059 --> 00:22:20,179
+Occlusion of the sensor, of the dome is a problem. Some sensors that are flat trap
+
+213
+00:22:20,180 --> 00:22:25,310
+debris. They trap water, the trap dew. That's an error, and of course you can
+
+214
+00:22:25,309 --> 00:22:29,720
+clean the sensors but how many of us do. We don't and now they read
+
+215
+00:22:29,720 --> 00:22:34,460
+ten percent low maybe until you get a a rain
+
+216
+00:22:34,460 --> 00:22:40,490
+storm and it flushes the sensor clean. Sensors that have a dome top help, a
+
+217
+00:22:40,490 --> 00:22:45,769
+lot. The water, their self-cleaning and the water tends to run off. Those
+
+218
+00:22:45,769 --> 00:22:53,029
+dome tops help keep the sensor clean, also helps keep it dry. That's
+
+219
+00:22:53,029 --> 00:22:57,829
+another nemesis of all instrument manufacturers is moisture getting in
+
+220
+00:22:57,829 --> 00:23:06,289
+their sensors causing drift or even the sensor to fail.
+
+221
+00:23:06,289 --> 00:23:11,379
+Let me go back to this.
+
+222
+00:23:13,549 --> 00:23:20,579
+If you look at high-end sensors and now
+
+223
+00:23:20,579 --> 00:23:24,480
+unfortunately we can't quite see them in this picture because these all have a
+
+224
+00:23:24,480 --> 00:23:31,170
+shield and aspirated to get peak accuracy but you see a little side port
+
+225
+00:23:31,170 --> 00:23:37,620
+with desiccant in the port. It often changes color, it is designed to change color.
+
+226
+00:23:37,619 --> 00:23:43,379
+If water vapor gets inside the sensor, you change that. We go to a
+
+227
+00:23:43,380 --> 00:23:48,780
+conference in Brussels each year, a
+
+228
+00:23:48,779 --> 00:23:54,720
+World Meteorological conference;  Kipp and Zonnen doesn't have that little disk with
+
+229
+00:23:54,720 --> 00:23:59,940
+dessicant on their sensors, and doesn't that keep your sensor dry
+
+230
+00:23:59,940 --> 00:24:05,430
+internally, keep this perfectly dry so you never had condensation. They said
+
+231
+00:24:05,430 --> 00:24:09,509
+the biggest source of leaks in our sensor was that port, that little
+
+232
+00:24:09,509 --> 00:24:14,940
+desiccant port. So we just took it out and now we have a better sea;omg and
+
+233
+00:24:14,940 --> 00:24:18,900
+it's dry when it's manufactured and we hopeit's going to stay dry for many
+
+234
+00:24:18,900 --> 00:24:23,400
+years. It's an interesting change in the development of sensors. They felt
+
+235
+00:24:23,400 --> 00:24:28,769
+like taking that out helped people make better measurements than leaving it in
+
+236
+00:24:28,769 --> 00:24:34,039
+and making them go and change the desiccant in the sensor.
+
+237
+00:24:34,039 --> 00:24:39,509
+We pot our sensors solid so there's no, in the pyranometers,
+
+238
+00:24:39,509 --> 00:24:45,150
+there's not air space. Moisture can't get in and cause problems with the measurement.
+
+239
+00:24:45,150 --> 00:24:49,340
+Question:
+
+240
+00:24:55,000 --> 00:24:59,500
+A couple things. The fundamental physics
+
+241
+00:24:59,500 --> 00:25:04,660
+of the detector change. Solar panels degrade over time and this is basically
+
+242
+00:25:04,660 --> 00:25:11,710
+a solar panel on a silicon cell that that's becoming less efficient at taking
+
+243
+00:25:11,710 --> 00:25:17,500
+sunlight and making the voltage. Changes in the optical path, tiny changes in
+
+244
+00:25:17,500 --> 00:25:24,509
+deterioration of the diffusing material over it that can become less transparent.
+
+245
+00:25:24,509 --> 00:25:29,069
+Those are the both of the biggest fundamental things. In black-body
+
+246
+00:25:29,069 --> 00:25:34,599
+pyranometers it's changes in this black surface. Nark just talked about
+
+247
+00:25:34,599 --> 00:25:40,269
+emissivity, boy they work hard to make that emissivity as close to 1.00 as
+
+248
+00:25:40,269 --> 00:25:47,589
+possible but as that ages it starts to turn gray. If it gets from 1.00 to
+
+249
+00:25:47,589 --> 00:25:54,839
+0.99 well there's a one percent error. It's not fully absorbing the
+
+250
+00:25:54,839 --> 00:26:00,548
+radiation. Really all sensors have that, just the fundamental physics
+
+251
+00:26:00,548 --> 00:26:07,569
+of aging of the object detector and solar radiation sensors are particularly
+
+252
+00:26:07,569 --> 00:26:14,220
+subject to drift, aging caused drift.
+
+253
+00:26:22,079 --> 00:26:31,359
+Question: "What happens with artifical light? Do you get any over samples?"
+
+254
+00:26:31,359 --> 00:26:38,529
+You bet you do. These are calibrated for sunlight based on that frist slide so now if you
+
+255
+00:26:38,529 --> 00:26:42,789
+wanted and lots of people do this. They put them under electric lights, which
+
+256
+00:26:42,789 --> 00:26:48,279
+have a very different spectra than sunlight so silicon pyranometers can be
+
+257
+00:26:48,279 --> 00:26:54,099
+way off with maybe fifty percent errors under electric lights because of the
+
+258
+00:26:54,099 --> 00:26:57,359
+change in the spectra.
+
+259
+00:26:57,559 --> 00:27:04,619
+Question: "What about ones specifically calibrated for the lights?" Yes, exactly it's possible to calibrate them and they're fine.
+
+260
+00:27:04,619 --> 00:27:09,209
+As long as you don't have a mix of sunlight and electric, but yes they
+
+261
+00:27:09,210 --> 00:27:14,490
+just need to be calibrated against a black-body pyrometer for that light
+
+262
+00:27:14,490 --> 00:27:18,630
+source and then they're fine because you know the spectra and you can sub sample
+
+263
+00:27:18,630 --> 00:27:26,810
+and predict all of it. I'm going to say one other thing that not on the list but
+
+264
+00:27:26,809 --> 00:27:35,429
+I'll use this sensor is an example. The cable leading to sensors, different
+
+265
+00:27:35,430 --> 00:27:41,160
+companies use different cables. You've got to get the signal from the sensor to
+
+266
+00:27:41,160 --> 00:27:49,170
+the datalogger and higher quality sensors have higher quality cables
+
+267
+00:27:49,170 --> 00:27:54,210
+coming out of them. So usually people write specifications for the
+
+268
+00:27:54,210 --> 00:27:58,289
+cable and the first dead obvious one is you want this thing to be as waterproof
+
+269
+00:27:58,289 --> 00:28:03,450
+as possible. Moisture starts to get in this, the signal even though this is
+
+270
+00:28:03,450 --> 00:28:09,960
+perfect it's not getting accurately to the datalogger. The other specification
+
+271
+00:28:09,960 --> 00:28:17,579
+that's good to look for in sensors is shielding for electromagnetic radiation
+
+272
+00:28:17,579 --> 00:28:22,139
+and that's just wrapped with tin foil and grounded at the other end so that
+
+273
+00:28:22,140 --> 00:28:25,980
+you don't get electrical interference and inside in greenhouses this can be a
+
+274
+00:28:25,980 --> 00:28:30,779
+particular problem. If they're near fluorescent lights, if they're near equipment,
+
+275
+00:28:30,779 --> 00:28:33,950
+you get electromagnetic noise picked up by the cable so we shield them.
+
+276
+00:28:33,950 --> 00:28:42,200
+That further minimizes any antenna effect of the sensor and so the
+
+277
+00:28:42,200 --> 00:28:48,019
+signal gets cleanly and clearly back to the detector so it's shielded twisted
+
+278
+00:28:48,019 --> 00:28:54,409
+pair cable is the highest quality cable so you can get the signal back
+
+279
+00:28:54,409 --> 00:29:04,970
+to the detector. Not in the recent past we used analog sensors they took an
+
+280
+00:29:04,970 --> 00:29:09,200
+environmental change they make a voltage you measure the voltage at the data
+
+281
+00:29:09,200 --> 00:29:14,960
+logger and you convert it to our units that we want. Wensors are rapidly
+
+282
+00:29:14,960 --> 00:29:21,740
+changing to digital sensors with micro processors in the sensors. The
+
+283
+00:29:21,740 --> 00:29:26,960
+measurement is made right in the head of the sensor and a digital signal is sent
+
+284
+00:29:26,960 --> 00:29:35,750
+back to the datalogger. All companies are moving to more digital sensors it
+
+285
+00:29:35,750 --> 00:29:39,648
+changes the nature of the datalogger that you measure it with, changes this
+
+286
+00:29:39,648 --> 00:29:46,788
+whole thing because of the digital signal. That's generally a good thing and
+
+287
+00:29:46,788 --> 00:29:52,190
+the cost of that technology is coming down with digital sensors. The three big
+
+288
+00:29:52,190 --> 00:30:00,669
+signals are SDI-12 (serial digital interface 12) is common in sensors,
+
+289
+00:30:00,669 --> 00:30:11,690
+Modbus is a second common one and now USB. This one happens to be a USB port. No
+
+290
+00:30:11,690 --> 00:30:15,528
+datalogger needed. You buy the sensors and plug it into your laptop then you
+
+291
+00:30:15,528 --> 00:30:21,490
+use the software and control the results on the screen.
+
+292
+00:30:21,490 --> 00:30:28,579
+The interface is changing fast in sensors and the nature of the
+
+293
+00:30:28,579 --> 00:30:33,980
+meter that you use to the sensor is changing because of that. It used to be
+
+294
+00:30:33,980 --> 00:30:37,880
+digital sensors were quite a bit more expensive but now that's much less true.
+
+295
+00:30:37,880 --> 00:30:45,080
+In general digital sensors are better because of this signal effect,
+
+296
+00:30:45,079 --> 00:30:47,699
+it's easier to send a digital signal
+
+297
+00:30:47,700 --> 00:30:52,500
+over, not easier it's more accurate to send a digital signal over a wire than
+
+298
+00:30:52,500 --> 00:30:57,619
+an analog signal, and puts the puts the burden of measurement right in the
+
+299
+00:30:57,619 --> 00:31:04,288
+sensor head. I don't know if you can have seen these options in sensors.
+
+300
+00:31:04,288 --> 00:31:08,730
+It's really just in the last few years that more digital sensors have become
+
+301
+00:31:08,730 --> 00:31:13,740
+available. They're the same sensor, same optics it's just a little microprocessor
+
+302
+00:31:13,740 --> 00:31:19,259
+in the head.
+

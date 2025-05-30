@@ -1,0 +1,1787 @@
+[SPEAKER_05]: This is a production of Cornell
+University.
+[SPEAKER_07]: I know that you heard cyber security and
+you're like, this is very different,
+[SPEAKER_07]: but I do two very disparate things.
+[SPEAKER_07]: If you have questions about cyber security
+or blockchains, that's sort of 90% of my
+[SPEAKER_07]: real job at Stanford, and I'm happy to
+answer those as well.
+[SPEAKER_07]: And this is kind of the 10% of my time
+where I wanted to get back into protein
+[SPEAKER_07]: engineering, and so I started to work with
+GFI.
+[SPEAKER_07]: GFI is kind of a think tank.
+[SPEAKER_07]: We're a completely remote organization,
+and so we don't have lab space of our own,
+[SPEAKER_07]: but we support researchers at universities
+across the world.
+[SPEAKER_07]: We fund some research, and we work with
+companies that are developing both
+[SPEAKER_07]: plant-based meat, which is what I'll talk
+to you about today, and clean meat or kind
+[SPEAKER_07]: of cell-cultured meat will be part of the
+future of replacing some of our current
+[SPEAKER_07]: animal agriculture.
+[SPEAKER_07]: So one of our reasons for doing this in
+the first place is that we project that
+[SPEAKER_07]: we're going to need to feed 10 billion
+people by about 2050, and the way that we
+[SPEAKER_07]: currently use the Earth's surface now in
+terms of how much land is devoted to
+[SPEAKER_07]: habitable land, how much ocean,
+how much glaciers, how much forest,
+[SPEAKER_07]: how much is used for agriculture,
+how much is used for livestock,
+[SPEAKER_07]: we think is not going to be a sustainable
+way of feeding this many people by 20.
+[SPEAKER_07]: We think that particularly the amount of
+crop land and the amount of grazing land
+[SPEAKER_07]: that goes toward livestock is a relatively
+inefficient use of those resources.
+[SPEAKER_07]: So you can kind of argue over whether
+these population projections are going to
+[SPEAKER_07]: be accurate, and when I was giving a talk
+at the National Academies, Stephen Chu,
+[SPEAKER_07]: who was the former Secretary of Energy,
+was like, no, no, I think that humans have
+[SPEAKER_07]: an internal kind of like quorum sensing
+mechanism and that we're going to see
+[SPEAKER_07]: populations start to decline because we
+think that people are going to kind of
+[SPEAKER_07]: look around and realize that we're not
+using our resources efficiently and like
+[SPEAKER_07]: control populations.
+[SPEAKER_07]: I'm not sure that we're seeing that
+happen.
+[SPEAKER_07]: It's hard to argue, it's hard to like kind
+of tell people that things are going to be
+[SPEAKER_07]: okay as long as we just all decide to
+start having fewer children, because I've
+[SPEAKER_07]: tried to make that argument, including at
+the National Academies, and people are
+[SPEAKER_07]: like, haha, it's too late, we're already
+in our mid-30s and 40s, we have them
+[SPEAKER_07]: already.
+[SPEAKER_07]: So I think what we need to do is we need
+to change the way that we're eating and
+[SPEAKER_07]: the way that we're feeding those people
+because we kind of need to assume that we
+[SPEAKER_07]: are going to have more people in the world
+who we are going to feed and that this is
+[SPEAKER_07]: going to be an inefficient system.
+[SPEAKER_07]: So why is it an inefficient system and
+from what kind of perspective do we think
+[SPEAKER_07]: of it as being inefficient?
+[SPEAKER_07]: If we just look at it kind of
+thermodynamically, inputs to outputs,
+[SPEAKER_07]: how many calories of feed need to go into
+making an animal and then how many
+[SPEAKER_07]: calories of food can we get out of that
+animal, we see that the majority of the
+[SPEAKER_07]: livestock that we actually all the
+livestock that we use are inefficient and
+[SPEAKER_07]: in fact, some of the primary, more
+efficient species, we're not even talking
+[SPEAKER_07]: about cows, which we know are inefficient,
+large animals, smaller animals that we
+[SPEAKER_07]: grow like pigs and chickens and fish,
+are also very inefficient in the sense
+[SPEAKER_07]: that the amount of calories in that are
+converted to calories out is somewhere
+[SPEAKER_07]: around 10 to 12%.
+[SPEAKER_07]: For cattle, it's even lower.
+[SPEAKER_07]: For cattle, it's below 10, it's about 8%.
+[SPEAKER_07]: There are some species of farmed fish that
+can get you up to like 20 or 22%,
+[SPEAKER_07]: but the way that they calculate that,
+kind of like the life cycle analysis of
+[SPEAKER_07]: the farmed fish, in often cases,
+in many cases, doesn't take into account
+[SPEAKER_07]: the nutrients that it's getting from the
+kind of surrounding ocean that the farm is
+[SPEAKER_07]: in.
+[SPEAKER_07]: So a lot of like farmed salmon they'll do
+off the coast of like Nova Scotia,
+[SPEAKER_07]: off the coast of Maine, they'll be in
+these pens that are semi-permeable,
+[SPEAKER_07]: they are able to get some nutrients from
+the surrounding ocean water and that's not
+[SPEAKER_07]: taking into account in the LCA,
+so that kind of sums up the efficiency
+[SPEAKER_07]: numbers.
+[SPEAKER_07]: And actually, they're running out of
+coastline to make farmed salmon,
+[SPEAKER_07]: so the latest thing is that they have
+bought, companies that are farming salmon
+[SPEAKER_07]: have bought plots of land in like central
+Florida, and so they're making just these
+[SPEAKER_07]: incredibly large pens on land filled with
+water, kept very cold, because salmon like
+[SPEAKER_07]: a very cold environment, even though
+they're in Florida, they're these kind of
+[SPEAKER_07]: like refrigerated, cooled tanks,
+that they're growing farmed salmon in.
+[SPEAKER_07]: So if you want to talk about inefficiency
+and about the effects on the environment,
+[SPEAKER_07]: not only do we sometimes see that in
+farmed fish, we get disease spread from
+[SPEAKER_07]: the pens into the ocean, because they're
+these semi-permeable pens, if we're going
+[SPEAKER_07]: to try to grow fish that require cold
+water on land, then we're really getting
+[SPEAKER_07]: into lower efficiencies than we think
+would be optimal for being able to feed as
+[SPEAKER_07]: many people as we're going to need to do.
+[SPEAKER_07]: So we can also talk about in terms of then
+food waste, we know that food waste is a
+[SPEAKER_07]: problem in terms of recapturing the
+nutrients that we're able to grow and
+[SPEAKER_07]: produce, and the amount of food wasted by
+consumers or in the supply chain is
+[SPEAKER_07]: dwarfed in comparison to the amount of
+food wasted in producing chicken or beef
+[SPEAKER_07]: as two of the most common animal protein
+sources.
+[SPEAKER_07]: Another way of looking at that is that we
+devote quite a lot of our land mammal
+[SPEAKER_07]: population to our pets and livestock,
+as opposed to wild animals, we also see
+[SPEAKER_07]: some habitat loss kind of off-target
+effects of growing this many sheep,
+[SPEAKER_07]: goats, pigs, horses, and cattle,
+where we're using a lot of land that could
+[SPEAKER_07]: be either used for crops or could be
+preserved for natural environments,
+[SPEAKER_07]: using it to grow livestock.
+[SPEAKER_07]: So if we think that that's a problem,
+then why do we see that global demand for
+[SPEAKER_07]: meat is increasing?
+[SPEAKER_07]: Across all categories of meat,
+based on both US and global demand,
+[SPEAKER_07]: we see that we have increased demand for
+meat due now in 2050, as well as
+[SPEAKER_07]: particularly increased demand in fast
+growing in populations and developing
+[SPEAKER_07]: economy.
+[SPEAKER_07]: Part of the reason for that is that as
+people get richer, they want to model
+[SPEAKER_07]: their diets more on traditionally Western
+diets, they want to eat more meat,
+[SPEAKER_07]: where meat is feed is a status symbol,
+and so that's why we see some of the
+[SPEAKER_07]: highest growth rates in terms of meat
+consumption in faster growing amounts.
+[SPEAKER_07]: So we're projected to eat a lot more meat
+by 2050, and particularly a lot more
+[SPEAKER_07]: chicken, and that meat is going to have to
+come from somewhere, but hopefully it
+[SPEAKER_07]: doesn't have to come from the same system
+that's being used to produce it.
+[SPEAKER_07]: Another thing I want to point out is that
+we don't actually have a protein deficit.
+[SPEAKER_07]: We're eating much more protein than we
+need, particularly in wealthy regions.
+[SPEAKER_07]: For some reason, we're not all buff and
+muscle-bound, so some of this protein is
+[SPEAKER_07]: just kind of going to waste.
+[SPEAKER_07]: But if you look at the average daily
+protein requirement across different
+[SPEAKER_07]: countries and how we're meeting that
+requirement, in many places around the
+[SPEAKER_07]: world, we would be able to meet all of
+that.
+[SPEAKER_07]: Protein requirement just with plant
+protein alone, not need to take into
+[SPEAKER_07]: account all the excess animal protein that
+we consume.
+[SPEAKER_07]: So taking that into account, we want to
+look at the idea of whether we can replace
+[SPEAKER_07]: some of the animal-based protein that
+people are using with plant-based
+[SPEAKER_07]: proteins.
+[SPEAKER_07]: So what are plant-based proteins?
+[SPEAKER_07]: This audience probably knows what those
+end up becoming.
+[SPEAKER_07]: These are some of the plant-based meat
+products and plant-based dairy products
+[SPEAKER_07]: that are currently available.
+[SPEAKER_07]: It's anything from replacing chicken and
+beef in the sandwich to replacing cheeses,
+[SPEAKER_07]: other types of plant-based dairy products,
+even additives into combined products
+[SPEAKER_07]: where you'll have some animal meat and
+some plant-based meat that are combined
+[SPEAKER_07]: into what's called a plant product.
+[SPEAKER_07]: We want, again, to look back at plant
+proteins as replacing animal proteins
+[SPEAKER_07]: because they're more sustainable,
+and they're more sustainable in terms of
+[SPEAKER_07]: land use, in terms of water consumption,
+in terms of greenhouse gas emissions.
+[SPEAKER_07]: Beef is the least efficient animal meat in
+terms of land use, but all animal meats to
+[SPEAKER_07]: the right of the dashed line perform
+worse.
+[SPEAKER_07]: In terms of all of these categories than
+plant-based foods do.
+[SPEAKER_07]: So if we want to transition some of our
+protein consumption to more sustainable
+[SPEAKER_07]: proteins, it kind of behooves us to look
+into plant proteins rather than trying to
+[SPEAKER_07]: optimize maybe the efficiency of farm pork
+or farm fish.
+[SPEAKER_07]: There's a long history of plant-based
+meat, but the history of kind of the
+[SPEAKER_07]: directed engineering of plant-based
+products really happens in the last 15 or
+[SPEAKER_07]: so years with the Beyond Burger and the
+Impossible Burger, which I'll talk about
+[SPEAKER_07]: in some of the newer products.
+[SPEAKER_07]: These companies are developing,
+but plant-based meat, we can kind of trace
+[SPEAKER_07]: back to some of the earliest known meat
+substitutes.
+[SPEAKER_07]: Things like tofu and yuba and tempeh are
+kind of in a category themselves in the
+[SPEAKER_07]: sense that when we do market analyses or
+we look at like meals and scores of
+[SPEAKER_07]: supermarket sales in terms of a
+plant-based meat category, they don't lump
+[SPEAKER_07]: tofu or tempeh or yuba into that category.
+[SPEAKER_07]: They think of them as a separate kind of a
+separate product.
+[SPEAKER_07]: So when we're talking about plant-based
+meat sales, we're talking only about
+[SPEAKER_07]: products that are like veggie burgers or
+veggie sausage that are specifically
+[SPEAKER_07]: designed to replace a particular meat
+component and not something like tofu,
+[SPEAKER_07]: but we see historically that tofu and like
+wheat, gluten, tempeh were used to replace
+[SPEAKER_07]: meat products as far back as 925 AD,
+1815 for tempeh in Indonesia.
+[SPEAKER_07]: Some of the then nut and peanut-based meat
+substitutes that were developed as well as
+[SPEAKER_07]: tofu, soy-based meat substitutes were
+aimed at a religious audience,
+[SPEAKER_07]: an audience that didn't want to eat meat
+either one day a week or for other
+[SPEAKER_07]: religious holidays.
+[SPEAKER_07]: And these started to be commercialized by
+John Kellogg and others at kind of the
+[SPEAKER_07]: start of the 20th century.
+[SPEAKER_07]: The first U.S.
+[SPEAKER_07]: meatless burger, the soy burger,
+is from 1937.
+[SPEAKER_07]: We see then the advent of textile
+manufacturing tools to produce textured
+[SPEAKER_07]: and spun soy protein fibers, the idea that
+now we can take plant proteins and make
+[SPEAKER_07]: them into textures that look a bit more
+like muscle fibers and that replicate
+[SPEAKER_07]: better the texture of the piece of meat.
+[SPEAKER_07]: And then we start to see more
+commercialization Morningstar Farms,
+[SPEAKER_07]: kind of the Boca burgers that you might
+have been familiar with in the 90s.
+[SPEAKER_07]: The FDA released in 1999 the statement
+that consumption of soy protein may reduce
+[SPEAKER_07]: the risk of heart disease.
+[SPEAKER_07]: That kind of improved marketing and
+commercialization.
+[SPEAKER_07]: And then Beyond Meat and Impossible Foods
+were both founded in the Bay Area,
+[SPEAKER_07]: both by chemists named Brown, so they are
+frequently confused, but two separate
+[SPEAKER_07]: companies.
+[SPEAKER_07]: They make the Beyond Burger and the
+Impossible Burger, which they launched
+[SPEAKER_07]: within about a year of each other.
+[SPEAKER_07]: They're also pretty confused, but we'll go
+into the differences between them and kind
+[SPEAKER_07]: of some of the strategy behind making
+these kind of more engineered plant
+[SPEAKER_07]: protein burgers.
+[SPEAKER_07]: So a lot of what GFI wants to do is
+support companies to enter into this space
+[SPEAKER_07]: and also to support research in the space.
+[SPEAKER_07]: And when we put out a call for proposals
+for plant-based researchers worldwide
+[SPEAKER_07]: doing research on either texturing of
+plant proteins, extracting plant proteins,
+[SPEAKER_07]: growing plants that have higher
+concentrations of proteins, the way that
+[SPEAKER_07]: we categorize it is in terms of this mind
+map, where we look at what goes into
+[SPEAKER_07]: making plant-based meat, everything from
+sourcing protein, isolation and
+[SPEAKER_07]: functionalization, formulation,
+processing, and then distribution.
+[SPEAKER_07]: And we look for research that's going on
+in all of these areas because we think
+[SPEAKER_07]: that we're going to need to have process
+improvements across all pieces of this
+[SPEAKER_07]: mind map in order to get to products that
+meet consumer demand in terms of taste,
+[SPEAKER_07]: price, and convenience, and are able to
+replace some of the animal-based meat
+[SPEAKER_07]: market.
+[SPEAKER_07]: So starting with ingredient sourcing,
+to make plant-based meat, we have to have
+[SPEAKER_07]: plants provide all of the raw materials,
+so not just the protein, but to provide
+[SPEAKER_07]: the carbohydrates, the fat, the
+flavorings.
+[SPEAKER_07]: I'll talk a little bit later about why
+it's particularly difficult to incorporate
+[SPEAKER_07]: plant-based fats into these products when
+comparing it to something like the fat
+[SPEAKER_07]: that's naturally present in beef or pork.
+[SPEAKER_07]: So this can involve things like crop
+engineering and breeding, genomic trait
+[SPEAKER_07]: mapping to see which parts of the plant
+genome correspond to higher protein yields
+[SPEAKER_07]: or higher bioavailability of protein.
+[SPEAKER_07]: And it also involves looking at different
+sources of protein from things like algae,
+[SPEAKER_07]: even from non-plant sources like fungi
+that we usually kind of just lump in with
+[SPEAKER_07]: plant proteins.
+[SPEAKER_07]: When we look at what proteins from plants
+are used in plant-based meat right now,
+[SPEAKER_07]: it's still predominantly soy.
+[SPEAKER_07]: Soy pea and wheat are kind of the three
+main plant proteins that are used in
+[SPEAKER_07]: plant-based meat products, and soy overall
+is the most popular.
+[SPEAKER_07]: Part of that is because soy is a complete
+protein, so when you look at analyzing a
+[SPEAKER_07]: plant protein, you look at the PD-CAS
+score, and that looks at the
+[SPEAKER_07]: concentrations of different amino acids in
+that protein, and you want something
+[SPEAKER_07]: that's close to one as possible so that it
+has all the nutritional requirements of
+[SPEAKER_07]: the amino acids that we cannot provide
+ourselves.
+[SPEAKER_07]: Soy meets that.
+[SPEAKER_07]: Soy is around .9 to one.
+[SPEAKER_07]: You can reach a PD-CAS score of one by
+combining other plant proteins,
+[SPEAKER_07]: but that kind of nutritional completeness
+of soy protein is one of the main reasons
+[SPEAKER_07]: why soy is predominantly used.
+[SPEAKER_07]: But part of it is also because plant
+proteins for a long time were used or
+[SPEAKER_07]: thought of as kind of something like a
+secondary use of these crops, and so we
+[SPEAKER_07]: have a lot of field space devoted to soy,
+devoted to wheat, devoted to corn,
+[SPEAKER_07]: to feed crops, or I mean to feed livestock
+and to grow as other crop sources,
+[SPEAKER_07]: and so that was part of the reason also
+for why we used these proteins,
+[SPEAKER_07]: even if they may not be the ones that most
+closely mimic animal proteins in terms of
+[SPEAKER_07]: the extractive form and the functionalized
+form.
+[SPEAKER_07]: Some of the studies that we're looking at
+are how nutrition profiles vary across
+[SPEAKER_07]: different grains where we might be able to
+extract not only the protein but also the
+[SPEAKER_07]: fiber and the fat from those grains to
+make more ingredients available for
+[SPEAKER_07]: plant-based meat.
+[SPEAKER_07]: So if you look at the macronutrient
+content in cereal grains, we see a variety
+[SPEAKER_07]: of protein concentrations, but then also a
+broader range of variety in terms of
+[SPEAKER_07]: fiber, fat, or oil that's available for
+extraction.
+[SPEAKER_07]: And then similarly, the micronutrient
+content, even among millets, where there's
+[SPEAKER_07]: a project that we work with at Berkeley
+that's trying to increase the cultivation
+[SPEAKER_07]: of millets, and study both the
+availability of protein in millets and
+[SPEAKER_07]: also the nutrient content of millet.
+[SPEAKER_07]: Millet is a lot more commonly grown in
+Europe, not as much in the U.S.
+[SPEAKER_07]: The reason for that that they find is that
+when they try to encourage farmers to
+[SPEAKER_07]: switch over to millet, because there's not
+a strong millet market in the U.S.,
+[SPEAKER_07]: they have trouble getting crop insurance
+for it, and then because they can't get
+[SPEAKER_07]: crop insurance for it, they don't grow it,
+so it's kind of this catch-22 cycle of
+[SPEAKER_07]: trying to get people to switch over on a
+large scale to a new cereal crop.
+[SPEAKER_07]: But some of the benefits then of trying to
+extract protein from this crop is that you
+[SPEAKER_07]: can also get the subsidiary benefit of
+having better micronutrient contents from
+[SPEAKER_07]: that crop.
+[SPEAKER_07]: And so if you want a product that has a
+high iron concentration, because you know
+[SPEAKER_07]: that iron leads to kind of like a meaty
+taste, it leads to more of like a bloody
+[SPEAKER_07]: taste, you may want to have a crop that
+has higher levels of iron to begin with.
+[SPEAKER_07]: Another way that we're trying to study the
+variability in plant proteins is through
+[SPEAKER_07]: how environmental conditions impact crop
+performance.
+[SPEAKER_07]: So even if we're growing the same crop,
+we know that pH levels and nitrogen levels
+[SPEAKER_07]: can vary quite a bit in soil, and then we
+may need to look at, for example,
+[SPEAKER_07]: for pea varieties, how growing pea
+varieties in these different soil
+[SPEAKER_07]: concentrations affects the protein
+content, which is something that's usually
+[SPEAKER_07]: not part of a general yield study.
+[SPEAKER_07]: So what we're trying to do in supporting
+this research is to optimize these crops
+[SPEAKER_07]: to improve the raw materials.
+[SPEAKER_07]: We want to improve the nutrition and the
+functionality and the performance of the
+[SPEAKER_07]: plants that we're using.
+[SPEAKER_07]: We want to improve the bioavailability of
+the protein that we're extracting.
+[SPEAKER_07]: We probably want to improve the
+concentration of the protein in that
+[SPEAKER_07]: plant, and we also want to do that in a
+way that decreases cost.
+[SPEAKER_07]: So of the projects that we support at
+these various universities, one of the
+[SPEAKER_07]: ones that's focused specifically on that
+is this one at Clemson University that's
+[SPEAKER_07]: characterizing field pea and sorghum crops
+to try and improve the protein content of
+[SPEAKER_07]: them and improve the nutrition for
+plant-based meat.
+[SPEAKER_07]: This is kind of one of the first studies
+where they're specifically selecting and
+[SPEAKER_07]: optimizing cultivars for protein
+extraction for plant-based meat.
+[SPEAKER_07]: And for protein biofortification.
+[SPEAKER_07]: Another one is looking at quinoa as a raw
+material for plant-based meat products,
+[SPEAKER_07]: trying to characterize and optimize
+existing quinoa varieties and optimize
+[SPEAKER_07]: protein extraction methods that you can
+prototype for quinoa protein products.
+[SPEAKER_07]: So quinoa is cultivated around the globe,
+and it's considered to be pretty resistant
+[SPEAKER_07]: to abiotic and abiotic stresses.
+[SPEAKER_07]: The average grain yield for quinoa is two
+and a half to three and a half tons per
+[SPEAKER_07]: hectare.
+[SPEAKER_07]: And then in the last 10 years,
+this group has conducted experiments to
+[SPEAKER_07]: cultivate quinoa in Israel, and they've
+increased that to an average grain yield
+[SPEAKER_07]: of six tons per hectare.
+[SPEAKER_07]: So they're thinking that quinoa might be a
+more sustainable crop in Israel than in
+[SPEAKER_07]: other areas where it's grown.
+[SPEAKER_07]: It could be highly commercially valuable
+there.
+[SPEAKER_07]: They're going to try to evaluate quinoa as
+a sustainable source of protein itself,
+[SPEAKER_07]: taking seeds from high-yielding quinoa
+accessions and characterizing them for
+[SPEAKER_07]: protein content, fat content, fiber
+content, looking at different extraction
+[SPEAKER_07]: methods to prepare the protein
+concentrates and protein isolates,
+[SPEAKER_07]: fiber, and defatted quinoa flour.
+[SPEAKER_07]: So that's one of the projects in Israel.
+[SPEAKER_07]: There's another company that we work with
+that's an Israeli company, Equinom.
+[SPEAKER_07]: They do crop breeding and strain
+development to improve multiple traits
+[SPEAKER_07]: simultaneously.
+[SPEAKER_07]: They were founded six years ago to have a
+breeding and seed development company.
+[SPEAKER_07]: And what they're trying to look at is ways
+of increasing protein concentration in
+[SPEAKER_07]: these plants, as well as other things like
+color and taste and amino acid composition
+[SPEAKER_07]: simultaneously.
+[SPEAKER_07]: So they've done that with yellow pea in
+about three years.
+[SPEAKER_07]: They increased the amount of protein in
+the yellow pea strain they're working with
+[SPEAKER_07]: from 16% to 20% to about 20% to 30% in the
+seed.
+[SPEAKER_07]: They also have projects with cow pea,
+fava bean, mung bean, lentil, quinoa,
+[SPEAKER_07]: with the university they're funding in
+Israel, chickpea and sesame.
+[SPEAKER_07]: So they'll collect as many cultivars and
+variants, varieties, as they can,
+[SPEAKER_07]: genotype and phenotype them.
+[SPEAKER_07]: Algorithm really just simulate all the
+potential crosses that they could do with
+[SPEAKER_07]: these varieties, make those crosses,
+and then with two to three cycles per
+[SPEAKER_07]: year, look at which end up having,
+in this case, higher protein
+[SPEAKER_07]: concentrations or better taste,
+better amino acid composition,
+[SPEAKER_07]: and iteratively narrow in on which are
+going to be the best process for,
+[SPEAKER_07]: in this case, for protein composition.
+[SPEAKER_07]: So it's not particularly directed.
+[SPEAKER_07]: They're trying to make this entire field a
+matrix of all the potential crosses that
+[SPEAKER_07]: they can make with all the varieties.
+[SPEAKER_07]: Part of the reason for that is that some
+of the crops that they're working with are
+[SPEAKER_07]: poorly characterized in terms of what
+improves protein concentration,
+[SPEAKER_07]: and they're also trying to do this in a
+relatively short time frame.
+[SPEAKER_07]: So based on the success with yellow pea,
+we're working on them to try to increase
+[SPEAKER_07]: protein concentrations in some of these
+other varieties with the hope that if we
+[SPEAKER_07]: can get the protein concentration in some
+of these varieties up to the same level as
+[SPEAKER_07]: we see protein in soybean, for example,
+or in rice and wheat, then we can start to
+[SPEAKER_07]: transition some of the uses of soy over to
+some of these other crops.
+[SPEAKER_07]: So these are some of the protein sources
+that we look at both in terms of PD-CAS
+[SPEAKER_07]: score, in terms of functionality.
+[SPEAKER_07]: For example, do they extrude well?
+[SPEAKER_07]: Are they something that has good
+whippability, that can make good
+[SPEAKER_07]: emulsifications?
+[SPEAKER_07]: So starting with soy as the benchmark
+PD-CAS level, pea has a similar PD-CAS
+[SPEAKER_07]: level and is pretty good in extrusion,
+usually low allergenicity, sometimes
+[SPEAKER_07]: non-GM, which can be important for
+entering European markets.
+[SPEAKER_07]: Protein from canola from rapeseed is
+actually very good, but it has limited
+[SPEAKER_07]: availability in terms of getting protein
+isolate.
+[SPEAKER_07]: Other pulses have lower PD-CAS scores,
+but can be in some cases combined to reach
+[SPEAKER_07]: the point of soy.
+[SPEAKER_07]: We are looking into hemp protein as well.
+[SPEAKER_07]: Sunflower protein powders that can reach
+up to 50% protein.
+[SPEAKER_07]: Corn and oats that are usually of lower
+nutritional quality, lower protein
+[SPEAKER_07]: concentrations.
+[SPEAKER_07]: There's one that I like because they have
+chosen the name for Oatene, which is very
+[SPEAKER_07]: clever of them.
+[SPEAKER_07]: And that's a 54% oat protein concentration
+that's mostly used in breakfast or
+[SPEAKER_04]: nutritional shake.
+[SPEAKER_07]: So we're looking into other sources of
+protein with the idea that we've only
+[SPEAKER_07]: looked at maybe 8% of the total available
+crops that could be used for plant
+[SPEAKER_07]: protein, and so we don't know for certain
+that those 8% that we've looked at and
+[SPEAKER_07]: characterized are going to be the best in
+terms of mimicking either the nutritional
+[SPEAKER_07]: functions of animal protein or the
+structure and formulations of animal
+[SPEAKER_07]: protein products.
+[SPEAKER_07]: So some of the other kind of underutilized
+or neglected crops that we're looking at
+[SPEAKER_07]: as sources of plant-based protein just
+based on the protein content of the plant
+[SPEAKER_07]: itself.
+[SPEAKER_07]: Winged bean protein has about 35% protein
+in the seeds.
+[SPEAKER_07]: Lentils about 25% protein by mass,
+and they also have very good gelling and
+[SPEAKER_07]: emulsification properties.
+[SPEAKER_07]: Dry broad bean, 25% protein, good
+whiffability, good foam stability.
+[SPEAKER_07]: Dry cowpea, these have up to 25% protein,
+and these form good emulsions.
+[SPEAKER_07]: Lupins have high protein content as well,
+and they have favorable properties
+[SPEAKER_07]: compared to soy beans.
+[SPEAKER_07]: They may be able to replace some of the
+soy protein in products that we're using
+[SPEAKER_07]: with lupin protein.
+[SPEAKER_07]: Some others that have been characterized
+less well.
+[SPEAKER_07]: Bambara beans have a relatively high
+protein content.
+[SPEAKER_07]: Dulce, which is this kind of red seaweed.
+[SPEAKER_07]: I'm going to talk about a project that
+studies red algae that can have between
+[SPEAKER_07]: nine and 25% protein by dry weight,
+but is one of the main aquaculture sources
+[SPEAKER_07]: of plant protein.
+[SPEAKER_07]: Mesquite beans and then duckweed,
+which is traditionally consumed as a high
+[SPEAKER_07]: protein food source and has a higher
+protein content than soy beans,
+[SPEAKER_07]: but doesn't have very good
+characterization of its functional
+[SPEAKER_07]: properties.
+[SPEAKER_07]: So we're trying to fund research into
+extracting protein from duckweed and
+[SPEAKER_07]: looking at functionalization of that as
+well.
+[SPEAKER_07]: One of the projects that we're funding in
+the US with this company called Trophic is
+[SPEAKER_07]: looking at deriving protein from red
+seaweed from macroalgae.
+[SPEAKER_07]: So the supply chain for red seaweed right
+now, there's about 18 million tons
+[SPEAKER_07]: produced and has up to 45% protein in the
+plant.
+[SPEAKER_07]: So we think that would be a good candidate
+for plant protein products as well as
+[SPEAKER_07]: because it has this kind of umami-like
+flavor profile and because it's red.
+[SPEAKER_07]: So people expect sometimes, expect like
+beef or other kind of meat products to
+[SPEAKER_07]: have that coloring.
+[SPEAKER_07]: And so being able to have that in the
+plant itself as a secondary extract.
+[SPEAKER_07]: The key challenge here is developing an
+extraction process for extracting the
+[SPEAKER_07]: protein from adults that meets cost and
+quality targets.
+[SPEAKER_07]: So this group is trying to optimize their
+protein extraction processes to meet the
+[SPEAKER_07]: quality specifications of some of the
+secondary companies that want to make
+[SPEAKER_07]: plant-based protein products out of these
+seeds.
+[SPEAKER_07]: We also look at other types of non-animal
+cell cultures.
+[SPEAKER_07]: I won't talk about these here,
+but we're also looking at using bacterial
+[SPEAKER_07]: proteins or mycoproteins sometimes in
+conjunction with plant-based proteins as
+[SPEAKER_07]: natural sources, both of protein itself
+and of flavorings, stabilizers,
+[SPEAKER_07]: pigments.
+[SPEAKER_07]: So most of the projects that we're funding
+in this area have the aim of improving the
+[SPEAKER_07]: nutritional profile of crops and
+plant-based meats.
+[SPEAKER_07]: Either using selective breeding or genetic
+modification to breed plants with higher
+[SPEAKER_07]: nutrient levels or higher protein levels
+so we can get protein extracts more
+[SPEAKER_07]: easily, get higher quality protein
+extracts either for dietary supplements or
+[SPEAKER_07]: for plant-based meat.
+[SPEAKER_07]: Another project that we funded with the
+Foundation for Food Agriculture and the
+[SPEAKER_07]: Open Philanthropy Project is trying to
+optimize the use of pulses for plant-based
+[SPEAKER_07]: meat.
+[SPEAKER_07]: So along with identifying new or
+underutilized sources of crops that we can
+[SPEAKER_07]: use, we can also optimize crops that are
+currently in use to be better for
+[SPEAKER_07]: plant-based meat to increase the amount of
+protein in them or to increase the
+[SPEAKER_07]: bioavailability of them.
+[SPEAKER_07]: This project is characterizing the
+texturization abilities and the molecular
+[SPEAKER_07]: characterizations of pulse proteins
+including where they bind to their
+[SPEAKER_07]: molecules like flavor agents, how they
+unfold during the cooking process,
+[SPEAKER_07]: and computationally which genes can be
+added or edited to produce varieties to
+[SPEAKER_07]: improve in this area.
+[SPEAKER_07]: This is too many words on one slide,
+but this is basically a two-phase research
+[SPEAKER_07]: process where in phase one they're using
+high-throughput digital phenotyping and
+[SPEAKER_07]: sequencing to functionally characterize a
+variety of pulses with a focus on
+[SPEAKER_07]: gelation, water-holding capacity,
+and fat-binding ability, which are
+[SPEAKER_07]: important for making a plant-based burger
+or product that's going to be kind of a
+[SPEAKER_07]: mixture of this protein slurry and some
+kind of plant-based fat.
+[SPEAKER_07]: They're also looking at the structuring
+ability of protein stem pulses or in these
+[SPEAKER_07]: ingredient combinations to form a fibrous
+structure that looks more like tissue that
+[SPEAKER_07]: would kind of have this meat-like
+appearance and texture.
+[SPEAKER_07]: So all of this is going to be publicly
+available online so that in the second
+[SPEAKER_07]: phase they can use that data to perform
+decision breeding to improve pulse crops
+[SPEAKER_07]: for the explicit purpose of making these
+crops better plant-based meat ingredients
+[SPEAKER_07]: and cultivating them for plant-based meat
+applications.
+[SPEAKER_07]: So there's an entire pulse council that is
+supporting this and that thinks that one
+[SPEAKER_07]: of the ways that they can improve the
+market for pulses is by selling to kind of
+[SPEAKER_07]: a growing plant-based meat market.
+[SPEAKER_07]: This exemplifies some of the ways that
+we're trying to make data collection and
+[SPEAKER_07]: analysis available to researchers more
+broadly so that we can have kind of a
+[SPEAKER_07]: database of what crops are best for
+plant-based meat, which genotypic and
+[SPEAKER_07]: phenotypic characteristics lead to higher
+protein expression levels so that people
+[SPEAKER_07]: can then go on and do studies based on
+that where they're trying to optimize
+[SPEAKER_07]: other maybe crops or other plants that we
+haven't identified as potential sources of
+[SPEAKER_07]: plant-based meat or do some of the studies
+we're talking about like with soil
+[SPEAKER_07]: condition to see which characteristics
+then improve the bioavailability of the
+[SPEAKER_07]: proteins in these crops.
+[SPEAKER_07]: Another of the projects that we're funding
+that's kind of similar to that is looking
+[SPEAKER_07]: at fermentation of oat protein for
+application in extruded meat analogs.
+[SPEAKER_07]: So fermentation can improve the flavor of
+oat protein, can produce additional
+[SPEAKER_07]: lysine, which is one of the problems with
+oat protein is that it has a limited
+[SPEAKER_07]: amount of lysine that reduces its CDCAS
+score.
+[SPEAKER_07]: Oat protein also has some anti-nutrients,
+some lectins and saponins that can be
+[SPEAKER_07]: degraded through fermentation.
+[SPEAKER_07]: Fermentation can produce
+exopolysaccharides that improve the
+[SPEAKER_07]: texture of the oat protein and it can
+increase the overall nutrition and
+[SPEAKER_07]: nutritional value.
+[SPEAKER_07]: So this group in Estonia is looking at
+exploring how fermentation can affect the
+[SPEAKER_07]: quality of oat protein and make a better
+oat protein in terms of flavor.
+[SPEAKER_07]: Other ways that we can increase protein
+yield.
+[SPEAKER_07]: And so this was not research that we
+funded.
+[SPEAKER_07]: This was just a paper that I thought was
+interesting and exemplifies some of the
+[SPEAKER_07]: ways that we can improve protein yield,
+not just through targeting protein itself,
+[SPEAKER_07]: but also through targeting plant growth.
+[SPEAKER_07]: And so this project was trying to improve
+photo respiration so that the primary
+[SPEAKER_07]: process, which is in gray, involves the
+kind of expensive breakdown of glycolate
+[SPEAKER_07]: and that they were trying to engineer
+other glyoxalate processing mechanisms
+[SPEAKER_07]: that would reduce kind of the time and the
+cost to the plant of doing that.
+[SPEAKER_07]: And they found that this greatly increased
+growth of the plant, though it's unclear
+[SPEAKER_07]: whether that is passed on to subsequent
+generations.
+[SPEAKER_07]: The main idea here is that we are also
+looking for research projects that would
+[SPEAKER_07]: improve yield of plant proteins in terms
+of increasing the size of proteins,
+[SPEAKER_07]: shortening the growing time as well,
+and not just increasing the protein
+[SPEAKER_07]: concentration in seeds or in leaves.
+[SPEAKER_07]: So once we've then chosen a plant that we
+want to use in a plant protein product,
+[SPEAKER_07]: we need better methods to isolate and
+functionalize the raw materials for making
+[SPEAKER_07]: plant-based means.
+[SPEAKER_07]: That can include better methods of protein
+fractionation or isolation, as well as
+[SPEAKER_07]: enzymatic functionalization, either
+biologically or chemically, and
+[SPEAKER_07]: hydrolyzation.
+[SPEAKER_07]: So we can either look at chemically
+isolating the raw materials that we want
+[SPEAKER_07]: to use, or we can look at using mechanical
+methods to separate the raw materials.
+[SPEAKER_07]: We can look at soaking and using solvents,
+milling or pounding to isolate various
+[SPEAKER_07]: components of the plants, using enzymes
+and extruders to restructure the plant
+[SPEAKER_07]: proteins so that they exhibit some of the
+same functional properties that we want in
+[SPEAKER_07]: animal proteins.
+[SPEAKER_07]: And many of these can be optimized for
+plant-based raw materials to improve
+[SPEAKER_07]: digestibility, taste, and texture.
+[SPEAKER_07]: When we talk about what type of plant
+protein we want to use, in some cases we
+[SPEAKER_07]: want to use protein flour, in some cases
+protein concentrate or protein isolate.
+[SPEAKER_07]: These vary based on protein content,
+based on how they're fractionated,
+[SPEAKER_07]: what kind of fat they use.
+[SPEAKER_07]: So the process by which soy protein is
+produced from soybeans can kick out either
+[SPEAKER_07]: soy flour, soy protein concentrate,
+or soy protein isolate at these different
+[SPEAKER_07]: steps.
+[SPEAKER_07]: The soybeans themselves are cracked and
+de-hulled.
+[SPEAKER_07]: The hulls can be used as a product
+themselves.
+[SPEAKER_07]: And then they're flaked, and then you can
+get soy oil from that.
+[SPEAKER_07]: And so there's kind of a multi-step
+process depending on what concentration of
+[SPEAKER_07]: protein you want to get from the soybean.
+[SPEAKER_07]: And then similarly in wheat, a multi-step
+process depending on whether you want
+[SPEAKER_07]: vital wheat gluten in your products,
+whether you want textured wheat protein,
+[SPEAKER_07]: isolated wheat protein, and what kind of
+concentration of wheat protein you want.
+[SPEAKER_07]: So optimizing this process and looking at
+other types of extrusion methods that can
+[SPEAKER_07]: either involve lower temperatures or that
+can involve higher pressure instead of
+[SPEAKER_07]: enzymatic extrusion or hydrolysis could
+improve the texture and could improve the
+[SPEAKER_07]: functionality of the resulting protein.
+[SPEAKER_07]: High pressure homogenization in particular
+we're looking at because we know that
+[SPEAKER_07]: taste is better in products that have a
+higher protein concentration, but we're
+[SPEAKER_07]: not entirely sure whether that's because
+the processing steps that are used to
+[SPEAKER_07]: improve, that are just going to
+fractionate out the plant protein involve
+[SPEAKER_07]: higher heat.
+[SPEAKER_07]: So we're looking at whether higher
+pressure can end up with a high
+[SPEAKER_07]: concentration protein product that has the
+same kind of lack of taste but doesn't
+[SPEAKER_07]: involve that heat treatment step.
+[SPEAKER_07]: From there we want to make a formulation
+from this plant protein product,
+[SPEAKER_07]: and that involves adding binders,
+adding flavorings, adding plant-based
+[SPEAKER_07]: fats, sometimes adding other ingredients
+that will improve the taste or smell of
+[SPEAKER_07]: the product.
+[SPEAKER_07]: So in terms of recapitulating the
+experience of cooking, when we're looking
+[SPEAKER_07]: at additives that are going to be flavor
+and for the most part fragrance additives,
+[SPEAKER_07]: we need something that's going to be
+stable throughout the cooking process and
+[SPEAKER_07]: that is also going to retain that same
+flavor and that fragrance profile from a
+[SPEAKER_07]: raw product through a cooked product.
+[SPEAKER_07]: So one of the reasons why Impossible Foods
+decided to launch their burger in
+[SPEAKER_07]: restaurants first was because they could
+then kind of control the way that the end
+[SPEAKER_07]: product was presented to consumers,
+the Beyond Burger being available in
+[SPEAKER_07]: grocery stores, you can take it home and
+open it and a lot of people complain that
+[SPEAKER_07]: it smells like cat food or that it has
+this kind of like off scent in its raw or
+[SPEAKER_07]: natural form.
+[SPEAKER_07]: So there's a course at Berkeley that I
+advise and we work with Jeeva Dan on
+[SPEAKER_07]: developing new flavoring agents for
+plant-based meat products.
+[SPEAKER_07]: Some of the interesting things that we
+find are that some of the molecules that
+[SPEAKER_07]: we're looking at, like there's one
+two-methyl five-butylene that smells like
+[SPEAKER_07]: citrus at low concentrations, smells like
+chicken at high concentrations.
+[SPEAKER_07]: And the idea is how can we control the
+concentration profile of this chemical and
+[SPEAKER_07]: we're adding it to a formulation that
+people are then going to cook at home or
+[SPEAKER_07]: make into meatballs at home.
+[SPEAKER_07]: Another main component of optimizing
+flavor is adding, so we'll talk about heme
+[SPEAKER_07]: in terms of the Impossible Burger and how
+they've used a soy-like hemoglobin to
+[SPEAKER_07]: recreate that kind of irony taste of like
+the bloody components of meat.
+[SPEAKER_07]: Optimizing flavor also involves adding fat
+and so one of the projects that we're
+[SPEAKER_07]: funding at Berkeley involves encapsulating
+sunflower oil in a commercially available
+[SPEAKER_07]: saponin and then lyophilizing,
+freeze-drying that, but it can be used as
+[SPEAKER_07]: a shelf stable additive to any plant-based
+meat formulation.
+[SPEAKER_07]: You can have oil that you want it to be
+encapsulated in some way because you want
+[SPEAKER_07]: it to retain its position within the
+overall kind of structure of the product
+[SPEAKER_07]: through the cooking process.
+[SPEAKER_07]: So brown beef has 40 different types of
+fats that have different melting points
+[SPEAKER_07]: and different levels of saturation.
+[SPEAKER_07]: And so throughout the cooking process,
+they'll melt at different stages.
+[SPEAKER_07]: Some of them will remain solid at the end
+of the cooking process.
+[SPEAKER_07]: Some of them melt at the very beginning.
+[SPEAKER_07]: When you're adding a plant-based fat,
+you're pretty much adding one type of fat
+[SPEAKER_07]: molecule.
+[SPEAKER_07]: You're adding sunflower oil or adding palm
+oil or something and that has a particular
+[SPEAKER_07]: melting point.
+[SPEAKER_07]: So one of the challenges is finding ways
+of encapsulating that fat such that it
+[SPEAKER_07]: will remain solid throughout the cooking
+process so it doesn't immediately just
+[SPEAKER_07]: leak out and you end up with a very dry
+plant-based burger.
+[SPEAKER_07]: Flavor and kind of off flavors in plant
+proteins are one of the main problems for
+[SPEAKER_07]: plant-based meat as well.
+[SPEAKER_07]: So we have a project that we're funding in
+China that's trying to identify what
+[SPEAKER_07]: molecules are responsible for these kinds
+of beany off flavors that are present in
+[SPEAKER_07]: pea protein.
+[SPEAKER_07]: So to identify which volatile compounds
+contribute to that beany off flavor and
+[SPEAKER_07]: then figure out ways of removing those
+compounds.
+[SPEAKER_07]: So this is primarily a project that's
+using GC mass spec to first identify which
+[SPEAKER_07]: volatiles are contributing to that off
+flavor and then see if there are easy ways
+[SPEAKER_07]: of extracting that through the process of
+producing a pea protein isolate.
+[SPEAKER_07]: Some of the other technical obstacles to
+formulation include that in muscle,
+[SPEAKER_07]: phosphates can draw protein from the meat
+matrix or from the muscle to the surface
+[SPEAKER_07]: and that can create kind of stickiness and
+help with forming a coating on top of the
+[SPEAKER_07]: meat product as it's cooking.
+[SPEAKER_07]: We're not sure if just adding phosphates
+to plant-based meats is going to have the
+[SPEAKER_07]: same functional properties A lot of times
+we add starches to plant-based meat
+[SPEAKER_07]: products as binders that can affect the
+mouthfeel of the product and then we need
+[SPEAKER_07]: to combine them with fiber in order to
+have a better texture and better
+[SPEAKER_07]: nutritional properties.
+[SPEAKER_07]: Fiber itself though absorbs water and so
+that can also affect mouthfeel even though
+[SPEAKER_07]: it's an effective texture replacer for fat
+you don't want to have too high of a fiber
+[SPEAKER_07]: concentration in your products because
+then that leads to more water absorbing
+[SPEAKER_07]: product than you may want.
+[SPEAKER_07]: So we can't fully replace starch with
+fiber in the product.
+[SPEAKER_07]: We have to figure out the optimal
+combination of starches and fibers and
+[SPEAKER_07]: proteins that are going to make something
+that has the same kind of bite and
+[SPEAKER_07]: chewiness of whatever meat product we're
+trying to replicate.
+[SPEAKER_07]: The next step then is manufacturing.
+[SPEAKER_07]: So taking this mixture of probably plant
+protein, some kind of fat, some flavoring,
+[SPEAKER_07]: some binder and taking that slurry and
+processing it and so that can include
+[SPEAKER_07]: extrusion, molding, dehydration,
+shear cells, fiber spinning, 3D printing.
+[SPEAKER_07]: As well as developing the sensing
+technology so that we can determine at
+[SPEAKER_07]: which point in for example an extrusion
+process we're getting the right texture
+[SPEAKER_07]: and under what conditions we're getting
+the right texture.
+[SPEAKER_07]: So a lot of plant-based meat is produced
+through high moisture twin screw
+[SPEAKER_07]: extrusion.
+[SPEAKER_07]: So this is kind of a machine that would be
+about like the size of something you put
+[SPEAKER_07]: on a factory floor like sometimes I put a
+person here to show you that it's not like
+[SPEAKER_07]: bench scale kind of factory scale
+extrusion.
+[SPEAKER_07]: So we put that premixed kind of protein
+slurry into a feeder and then there are
+[SPEAKER_07]: co-rotating screws that are heated as
+well.
+[SPEAKER_07]: So you can affect, you can change what
+type of protein comes out both by the
+[SPEAKER_07]: final dye that cools the product and kind
+of cuts it into shapes but also by the
+[SPEAKER_07]: rate of co-rotation of those screws,
+by the temperature, by the water
+[SPEAKER_07]: concentration.
+[SPEAKER_07]: The idea here is that we want to produce a
+textured protein similar to the way that
+[SPEAKER_07]: fiber spinning machines were originally
+used to create soy protein fibers.
+[SPEAKER_07]: We want to make soybeans or soy protein
+into products like soy curls or into
+[SPEAKER_07]: products like any of these variety of
+textures and shapes.
+[SPEAKER_07]: So these are all soy protein and what
+we're varying here is water content,
+[SPEAKER_07]: the dye, and the temperature used to
+extrude them.
+[SPEAKER_07]: One of the other projects that we're
+funding is developing real-time sensors
+[SPEAKER_07]: for extrusion because we don't really know
+when problems develop during extrusion
+[SPEAKER_07]: until they come out the other end of the
+dye.
+[SPEAKER_07]: So this could be a project that would help
+us improve the cost of diagnosing problems
+[SPEAKER_07]: with plant protein extrusion and also
+monitoring throughout the process through
+[SPEAKER_07]: ultrasonic sensing within the actual twin
+screw itself.
+[SPEAKER_07]: We can see when we're getting a better
+shape or when we're getting better fiber
+[SPEAKER_07]: structure.
+[SPEAKER_07]: Some of what we do in order to help
+companies develop these processes as well
+[SPEAKER_07]: is do kind of back of the envelope
+calculations or like economic monitoring
+[SPEAKER_07]: of what the scale they would need to
+produce would be if we want to meet
+[SPEAKER_07]: certain targets of selling to selling a
+certain amount of plant-based meat or
+[SPEAKER_07]: producing a certain amount.
+[SPEAKER_07]: So if we look at just high moisture twin
+screw extrusion, we can look at how many
+[SPEAKER_07]: kilograms per hour of plant-based meat can
+be produced in the average extruder,
+[SPEAKER_07]: how long they're run.
+[SPEAKER_07]: If we think that maybe we want 80% of
+plant-based meat products on the market in
+[SPEAKER_07]: 2020 to use extrusion, then we know about
+how many industrial scale extruders we
+[SPEAKER_07]: would need to have operating globally to
+meet that demand.
+[SPEAKER_07]: Knowing about the number of extruders that
+are operating currently, it's fewer than
+[SPEAKER_07]: 168.
+[SPEAKER_07]: I think it's about 130 or so.
+[SPEAKER_07]: So we would need to scale up the number of
+extruders that are operating.
+[SPEAKER_07]: One way we can do that is by encouraging
+companies to have better monitoring so
+[SPEAKER_07]: that it's more economically feasible for
+them to increase the amount of extrusion
+[SPEAKER_07]: that they're doing.
+[SPEAKER_07]: But another way is to use other methods
+that are maybe gentler that require lower
+[SPEAKER_07]: temperatures and extrusion.
+[SPEAKER_07]: So Wageningen University in the
+Netherlands has developed something they
+[SPEAKER_07]: were originally calling a couette cell and
+now they're calling it a shear cell.
+[SPEAKER_07]: It's kind of like an ice cream maker in
+the sense that it has this large rotating
+[SPEAKER_07]: ring on the outside and a static ring on
+the inside.
+[SPEAKER_07]: You put your protein formulation in the
+kind of barrel and the difference in
+[SPEAKER_07]: rotation between the outer rim of the
+outer rotating ring and the inner static
+[SPEAKER_07]: rim sets up this shear gradient and that
+aligns protein fibers in a way that helps
+[SPEAKER_07]: them mimic muscle fiber itself.
+[SPEAKER_07]: So this is kind of what it looks like
+coming out of the machine.
+[SPEAKER_07]: Here are some electron micrograph images
+of how the protein ends up structured in
+[SPEAKER_07]: these kind of fibrous aligned sheets.
+[SPEAKER_07]: And here's what something like the below
+image would look like when cooked.
+[SPEAKER_07]: So it kind of replicates the texture and
+the perception of fiber.
+[SPEAKER_07]: In terms of these processing methods,
+we also look at how processing affects
+[SPEAKER_07]: both the chewiness.
+[SPEAKER_07]: You can imagine that as you're rotating
+and setting up this shear gradient,
+[SPEAKER_07]: you're mixing the protein more,
+maybe making it chewier, increasing
+[SPEAKER_07]: gelation.
+[SPEAKER_07]: So we look at how heat and pressure
+throughout these processing steps affects
+[SPEAKER_07]: the hardness and the chewiness.
+[SPEAKER_07]: In this case, a grape seed protein extract
+so that we can target something that more
+[SPEAKER_07]: closely mimics an animal protein that
+we're looking to replicate.
+[SPEAKER_07]: There's also a company called Nova Meat
+that's looking into 3D printing as an
+[SPEAKER_07]: alternative to extrusion.
+[SPEAKER_07]: So they can use an ink that's a paper
+paste of rice protein, pea protein,
+[SPEAKER_07]: and seaweed.
+[SPEAKER_07]: So you can add colors and flavors.
+[SPEAKER_07]: And obviously, this is not something
+that's going to scale up to meet the
+[SPEAKER_07]: entire demand of plant-based protein that
+we have.
+[SPEAKER_07]: But you can produce custom-designed
+shapes.
+[SPEAKER_07]: And so it's an alternative to extrusion if
+you want to make something that is a very
+[SPEAKER_07]: particular shape or size.
+[SPEAKER_07]: So one of the projects that we're funding
+that's looking at texture is looking at
+[SPEAKER_07]: creating different meat-like textures by a
+combination of microstructure,
+[SPEAKER_07]: engineering, and thymistro extrusion.
+[SPEAKER_07]: And the idea here is that they would form
+kind of a plant protein matrix with one
+[SPEAKER_07]: type of protein and then precipitate a
+second protein over that, so like a pea
+[SPEAKER_07]: protein precipitated over a wheat protein
+or over a soy protein structure.
+[SPEAKER_07]: The idea is that this would help form a
+fiber-like structure that's more similar
+[SPEAKER_07]: to meat, and that's kind of a
+fiber-reinforced polymer network with a
+[SPEAKER_07]: fiber filler in this matrix.
+[SPEAKER_07]: And then their idea is that different
+meats have different fibrous textures,
+[SPEAKER_07]: and so they can better target a texture
+that mimics fish or that mimics beef or
+[SPEAKER_07]: chicken through this precipitation process
+of precipitating one protein on top of the
+[SPEAKER_07]: construct of another protein.
+[SPEAKER_07]: What proteins are used currently,
+then, when we're talking about the
+[SPEAKER_07]: Impossible Burger and the Beyond Burger?
+[SPEAKER_07]: The Impossible Burger, at least 1.0,
+uses primarily wheat protein and potato
+[SPEAKER_07]: protein.
+[SPEAKER_07]: The Beyond Burger mostly pea protein.
+[SPEAKER_07]: And what's unique about these two burgers
+or why we consider these more like the
+[SPEAKER_07]: engineered plant protein products is,
+at least in the Beyond Burger,
+[SPEAKER_07]: the use of beet juice for color,
+but more kind of interestingly in the
+[SPEAKER_07]: Impossible Burger, the use of soy,
+like hemoglobin, the heme protein that
+[SPEAKER_07]: they're actually producing in Pichia
+pestoris and this yeast.
+[SPEAKER_07]: And that was kind of a novel ingredient
+for them to produce.
+[SPEAKER_07]: So let me go ahead to like hemoglobin just
+a bit.
+[SPEAKER_07]: So like hemoglobin, this globin protein,
+what they're trying to replicate is
+[SPEAKER_07]: myoglobin in muscle tissue or,
+you know, myhemoglobin that transports
+[SPEAKER_07]: iron through the bloodstream.
+[SPEAKER_07]: Because it's an iron binding protein,
+it has this red color and it also gives it
+[SPEAKER_07]: that kind of bloody taste.
+[SPEAKER_07]: And so they originally isolated the soy
+like hemoglobin from these rhizomic
+[SPEAKER_07]: nodules on the root of the soy plant.
+[SPEAKER_07]: But that extraction process was costly and
+required way too large volumes of soy root
+[SPEAKER_07]: nodules to extract sufficient quantities.
+[SPEAKER_07]: So they ended up expressing it in yeast.
+[SPEAKER_07]: And that required them actually to go
+through an entire process of FDA approval
+[SPEAKER_07]: to demonstrate that this was not,
+in fact, a new product and that this was
+[SPEAKER_07]: safe for human health.
+[SPEAKER_07]: And so they had to do some rat studies of
+the soy like hemoglobin extracted from
+[SPEAKER_07]: yeast, as well as improving the yield that
+they would get from that process.
+[SPEAKER_07]: Originally they were doing column
+chromatography to extract the like
+[SPEAKER_07]: hemoglobin.
+[SPEAKER_07]: That was also too costly.
+[SPEAKER_07]: So they were able to then improve yield
+step by step so that they could just use
+[SPEAKER_07]: weight fractionation and kind of have
+these much larger kind of fermenters,
+[SPEAKER_07]: but kind of similar to what you would see
+like in a facility that's making beer.
+[SPEAKER_07]: So they can have, they can grow large
+quantities of the yeast, but then they
+[SPEAKER_07]: didn't have to recover the same,
+they didn't have to have like the same
+[SPEAKER_07]: standard of recovery as they would from
+column chromatography.
+[SPEAKER_07]: So if we know that the Beyond Burger and
+the Beyond Burger is using pea protein,
+[SPEAKER_07]: and we know that many plant-based burgers
+are using that type of protein,
+[SPEAKER_07]: another kind of economic analysis we can
+do is figure out how many acres of peas we
+[SPEAKER_07]: would need to grow in order to produce
+enough pea protein for the projected
+[SPEAKER_07]: amount of plant-based meat that we're
+going to require in 2030 based on the
+[SPEAKER_07]: growth of these companies.
+[SPEAKER_07]: So we can go through and look at how much
+protein we get from pea.
+[SPEAKER_07]: You know, high protein varieties are about
+25% protein.
+[SPEAKER_07]: The project I talked about in Equinom
+maybe can increase that, but right now
+[SPEAKER_07]: 25%.
+[SPEAKER_07]: And we look at what percent of protein a
+plant-based meat product is.
+[SPEAKER_07]: And then we assume what percentage of
+plant-based meat is going to use pea
+[SPEAKER_07]: protein as a predominant ingredient.
+[SPEAKER_07]: Go through some calculations to figure out
+how many acres of peas we would need to
+[SPEAKER_07]: have that we're just dedicated to
+producing pea protein for plant-based
+[SPEAKER_07]: meat.
+[SPEAKER_07]: And so that can help us project how we're
+going to need to evaluate current land
+[SPEAKER_07]: usage or how we should encourage farmers
+to either grow more peas or sell peas into
+[SPEAKER_07]: the plant-based meat market.
+[SPEAKER_07]: Another thing I want to point out here is
+that both the Beyond Burger and the
+[SPEAKER_07]: Impossible Burger use coconut oil.
+[SPEAKER_07]: The Beyond Burger also uses canola oil.
+[SPEAKER_07]: So one of the main reasons for using
+coconut oil is that it's solid at room
+[SPEAKER_07]: temperature.
+[SPEAKER_07]: And so you get that cooking process where
+you can have a fat that stays solid
+[SPEAKER_07]: throughout the process.
+[SPEAKER_07]: But when we do kind of similar scaling
+questions like this and look at the
+[SPEAKER_07]: current coconut oil market and then
+project demand for coconut oil just from
+[SPEAKER_07]: plant-based meat, we're going to reach
+kind of peak coconut in about 12 years.
+[SPEAKER_07]: So we also need to start thinking about
+how we can encourage coconut oil producers
+[SPEAKER_07]: to grow more coconuts, produce more
+coconut oil, assuming that we're going to
+[SPEAKER_07]: have similar demand trajectories for the
+Impossible Burger and Beyond Burger that
+[SPEAKER_07]: use this.
+[SPEAKER_07]: So why do we think we're going to continue
+to have similar demand trajectories for
+[SPEAKER_07]: these?
+[SPEAKER_07]: We do see increasing investment in terms
+of both plant-based meat and clean meat
+[SPEAKER_07]: year over year in terms of both deal
+volume and amount raised.
+[SPEAKER_07]: We can break that out into plant-based
+meat on the left as having raised the
+[SPEAKER_07]: highest amount with the second highest
+number of deals, plant-based egg and
+[SPEAKER_07]: plant-based dairy close behind.
+[SPEAKER_07]: Clean meat, clean eggs, clean dairy,
+because we think that those products are
+[SPEAKER_07]: still at least 10 years out.
+[SPEAKER_07]: They've raised less money.
+[SPEAKER_07]: They're kind of more exploratory.
+[SPEAKER_07]: But we see a lot of funding going into the
+development of plant-based meat,
+[SPEAKER_07]: both research funding and commercial
+funding.
+[SPEAKER_07]: And what we also see that's interesting is
+that a lot of kind of traditional meat
+[SPEAKER_07]: companies like Tyson and Cargill are also
+investing in plant-based meat with the
+[SPEAKER_07]: idea that they want to be protein
+providers and that if there are going to
+[SPEAKER_07]: be multiple sources from which people get
+their protein, they want to be part of
+[SPEAKER_07]: that market, not kind of be disrupted in
+that sense.
+[SPEAKER_07]: So I want to touch on some of that kind of
+white space ideas in plant-based protein
+[SPEAKER_07]: that we are trying to find researchers who
+are willing to work on because we have
+[SPEAKER_07]: this competitive grant proposal process
+that we run every year.
+[SPEAKER_07]: We give out $5 million in grant funding.
+[SPEAKER_07]: Or really, we give out as much money as we
+can raise to give out because we're a
+[SPEAKER_07]: nonprofit seed research project where we
+can.
+[SPEAKER_07]: But some of the ones that we are
+interested in people working on are,
+[SPEAKER_07]: like we talked about, increasing the yield
+and robustness of crops that are used for
+[SPEAKER_07]: plant-based proteins, adapting tolerance
+to climate change to expand the regions in
+[SPEAKER_07]: which these crops can be grown,
+expand their growing profile.
+[SPEAKER_07]: Improve the amino acid profile to produce
+more complete proteins in a different
+[SPEAKER_07]: variety of crops that we don't always have
+to rely on soy when we want that complete
+[SPEAKER_07]: protein.
+[SPEAKER_07]: Improve the flavor profile, definitely.
+[SPEAKER_07]: So decreasing the concentrations of
+saponins that can be bitter, isoplavones
+[SPEAKER_07]: and lipoxygenases that can lead to those
+kinds of grassy and beany off flavors.
+[SPEAKER_07]: We think that producing fats in algae
+would be a good way to both utilize algae
+[SPEAKER_07]: in terms of extracting protein from it,
+as well as using it to produce omega-3 or
+[SPEAKER_07]: omega-6 fatty acids.
+[SPEAKER_07]: We're looking at funding platforms that
+assess different characteristics of plant
+[SPEAKER_07]: proteins within processed ingredient
+batches to increase consistency of
+[SPEAKER_07]: downstream processing.
+[SPEAKER_07]: When we do tests of pea protein,
+if we imagine that we are a plant-based
+[SPEAKER_07]: meat company, we're trying to buy lots of
+pea protein.
+[SPEAKER_07]: For the most part, they include not just
+one varietal of pea, but they'll include
+[SPEAKER_07]: multiple types of yellow, in some cases
+also of green, green pea.
+[SPEAKER_07]: They're highly variable and they're not
+from one particular growing region or from
+[SPEAKER_07]: one particular set of soil characteristics
+or growth characteristics.
+[SPEAKER_07]: So we want to be able to improve the
+consistency of plant proteins that are
+[SPEAKER_07]: available so we can improve the
+consistency of the end product when it's
+[SPEAKER_07]: using something like pea protein.
+[SPEAKER_07]: In terms of functionalization,
+we're interested in projects that perform
+[SPEAKER_07]: customized processing of raw plant protein
+ingredients to the specification of a
+[SPEAKER_07]: client's functionalization desires.
+[SPEAKER_07]: Again, the inconsistency in plant proteins
+in terms of functional properties is a
+[SPEAKER_07]: hurdle for companies that are buying large
+quantities of pea protein and can't rely
+[SPEAKER_07]: on consistency batch to batch.
+[SPEAKER_07]: We are looking at projects that remove or
+mask off flavors in plant-based proteins
+[SPEAKER_07]: that can develop better tasting products.
+[SPEAKER_07]: Kind of the holy grail for plant protein
+is just a protein that doesn't taste like
+[SPEAKER_07]: anything, just hard to achieve,
+and particularly in something like soy.
+[SPEAKER_07]: We're looking at ways to maybe mask those
+types of flavors in plant-based proteins.
+[SPEAKER_07]: Looking at developing new binders,
+new plant-based fats, pre-textured
+[SPEAKER_07]: proteins, and looking at better methods of
+extrusion for creating that fibrousness in
+[SPEAKER_07]: a plant-based meat product, better sensors
+for monitoring quality of plant-based
+[SPEAKER_07]: meats through the extrusion process.
+[SPEAKER_07]: Some of the opportunities that we're also
+looking at are blended proteins.
+[SPEAKER_07]: So like Sonic makes a blended burger that
+is partially beef blended with mushrooms,
+[SPEAKER_07]: and we think that this is a way that we
+can get more plant protein ingredients
+[SPEAKER_07]: into consumer diets.
+[SPEAKER_07]: So we can have something that's a blend of
+an animal protein and plant protein,
+[SPEAKER_07]: and that will also increase our ability to
+feed 10 billion people by 2050.
+[SPEAKER_07]: And so the final kind of call to action is
+if we look at global R&D investment into
+[SPEAKER_07]: renewable energy in 2011, when this had
+captured both a lot of government funding
+[SPEAKER_07]: and a lot of private funding, we can see
+that a lot of the money that was spent
+[SPEAKER_07]: into developing renewable energy went into
+types of energy that aren't currently
+[SPEAKER_07]: being used or that weren't feasible.
+[SPEAKER_07]: We haven't been able to make biofuels
+work.
+[SPEAKER_07]: But then if we compare that to the amount
+of R&D that's gone into meat alternatives
+[SPEAKER_07]: of just about 1 billion, we have
+plant-based meat and meat alternatives
+[SPEAKER_07]: here.
+[SPEAKER_07]: And we really think that with the addition
+of more funding, both governmental funding
+[SPEAKER_07]: and industry funding, we'll be able to
+make much better plant-based meat products
+[SPEAKER_07]: and improve the development of these
+products to address a similar environment.
+[SPEAKER_07]: That's all from me.
+[SPEAKER_07]: We have one minute to lunch.
+[SPEAKER_07]: There may be questions.
+[SPEAKER_11]: Questions?
+[SPEAKER_08]: Hi.
+[SPEAKER_08]: I was wondering if there's been any
+looking into about growing protein-based
+[SPEAKER_08]: plants in marginal environments,
+because that's an argument some people in
+[SPEAKER_08]: the animal science community make about
+where beef cattle are grazed on the map.
+[SPEAKER_06]: Yeah.
+[SPEAKER_07]: Some of the projects that we're funding to
+look at how soil characteristics vary in
+[SPEAKER_07]: environments where there's a lot of growth
+of lupins and of millet is aimed at that.
+[SPEAKER_07]: We're wondering whether we can optimize
+some of these crops so they produce at
+[SPEAKER_07]: least 25% protein at soil conditions that
+normally wouldn't be used for growing
+[SPEAKER_07]: those crops.
+[SPEAKER_07]: So we're looking at that in Israel and in
+Canada and in India.
+[SPEAKER_07]: In terms of either soils with varying
+nitrogen concentrations or areas where
+[SPEAKER_07]: there's higher drought and looking at some
+of these crops that can be improved to be
+[SPEAKER_07]: drought tolerant but still retain about
+25% protein.
+[SPEAKER_07]: It's not ideal, but yeah, part of the
+projection of how many people are going to
+[SPEAKER_07]: have to feed also includes under what
+conditions we're going to have to feed
+[SPEAKER_07]: them and the idea that we're going to have
+higher temperatures and more drought.
+[SPEAKER_07]: Yeah, that increases the number of areas
+where we're going to have to grow these
+[SPEAKER_07]: crops in substandard conditions.
+[SPEAKER_10]: So I know for some of the plant-based milk
+products like almond milk, soy milk,
+[SPEAKER_10]: there's some controversy about standards
+of identity and calling it milk.
+[SPEAKER_10]: So I'm kind of curious and for the
+plant-based meats and these other
+[SPEAKER_10]: products, this industry has been around
+long enough that they haven't come up with
+[SPEAKER_10]: a better name than plant-based meat,
+but is there a standard of identity
+[SPEAKER_10]: conflict coming?
+[SPEAKER_10]: Because these products are obviously very
+diverse.
+[SPEAKER_10]: Can you comment on that at all?
+[SPEAKER_07]: Yeah, so there are several state bills
+that are pending and then Missouri passed
+[SPEAKER_07]: a bill recently to prohibit these products
+from using the term meat and so we're kind
+[SPEAKER_07]: of fighting that bill.
+[SPEAKER_07]: But on the state level, there are kind of
+cattlemen's association groups and other
+[SPEAKER_07]: like industry groups that are trying to
+restrict the use of terms like chicken or
+[SPEAKER_07]: sausage or bacon.
+[SPEAKER_07]: For the most part, because there's been
+such a long history of these products
+[SPEAKER_07]: being sold under a similar name,
+we can say that there's not consumer
+[SPEAKER_07]: confusion.
+[SPEAKER_07]: But yeah, on a state level, there are a
+couple of different bills, mostly in
+[SPEAKER_07]: states that have like large ranching
+interests or that have a lot of meat
+[SPEAKER_07]: production like Missouri and some of the
+other states where they're trying to
+[SPEAKER_07]: restrict the use of those particular like
+pork or chicken or beef terms.
+[SPEAKER_07]: We haven't come up with a really good
+alternative name, so we just kind of have
+[SPEAKER_07]: to fight that legislatively.
+[SPEAKER_01]: Hello, I wasn't sure if you might be able
+to comment on that, but there's been work
+[SPEAKER_01]: done on trying to make a vegan cheese,
+sort of like a plant-based cheese
+[SPEAKER_01]: alternative, but it seems like there has
+not been much progress.
+[SPEAKER_01]: The taste does not seem to equate to what
+milk-based cheese can be done.
+[SPEAKER_01]: Can you comment on that, what's available?
+[SPEAKER_07]: Yeah, I mean, there's a couple different
+products.
+[SPEAKER_07]: I think one of the ones that we work with
+is Miyoko's Kitchen and I'm also like
+[SPEAKER_07]: privileged because in the Bay Area we have
+access to all of these because so many of
+[SPEAKER_07]: these companies are headquartered in the
+Bay Area and so distribution both across
+[SPEAKER_07]: the country and globally is a problem,
+but most of the problem with making a
+[SPEAKER_07]: vegan cheese is in like meltability.
+[SPEAKER_07]: So we can get like spreadable cheeses or
+something that has the same kind of
+[SPEAKER_07]: texture as like feta cheese or something
+that's more like crumbly, but getting a
+[SPEAKER_07]: plant protein that melts in the same way
+and it retains fat in the same way that
+[SPEAKER_07]: dairy cheese does has been a problem.
+[SPEAKER_07]: I feel like Miyoko's does the best.
+[SPEAKER_07]: There's also like Light Life that has some
+of these Daya that's like a shredded
+[SPEAKER_07]: plant-based cheese, active R&B in terms of
+making better melting characteristics.
+[SPEAKER_05]: Hi, so there seems to be a trend within
+the food industry away from
+[SPEAKER_05]: ultra-processed products toward clean
+label foods and I'm curious if that's an
+[SPEAKER_05]: obstacle or if it's just a new point
+because higher level values of
+[SPEAKER_05]: sustainability set in or something?
+[SPEAKER_07]: Yeah, it's something that kind of industry
+struggles with as well as nutrition
+[SPEAKER_07]: because I mean both the Beyond Burger and
+the Impossible Burger like have similar
+[SPEAKER_07]: fat content to a ground beef burger and
+they're not necessarily marketed as like a
+[SPEAKER_07]: health product.
+[SPEAKER_07]: They're just marketed as something that's
+supposed to replace a meat product and
+[SPEAKER_07]: yeah for the most part anything that we're
+making is highly processed as you can see
+[SPEAKER_07]: like the protein extraction, protein
+extrusion process itself makes it in that
+[SPEAKER_07]: category.
+[SPEAKER_07]: So for the most part based on the idea
+that when we do surveys about like 1% of
+[SPEAKER_07]: the US will admit to being vegetarian and
+like half of them are probably lying and
+[SPEAKER_07]: that's a relatively small like target
+market.
+[SPEAKER_07]: So for the most part what these companies
+are trying to do is get people who are
+[SPEAKER_07]: carnivores or herpetarians to like try
+this product that's just going to be a
+[SPEAKER_07]: substitute in terms of taste and price and
+not looking as much into replacing like
+[SPEAKER_07]: the less processed foods that represent a
+smaller proportion of the market.
+[SPEAKER_07]: It's definitely a concern for like a lot
+of people that I work with because when
+[SPEAKER_07]: you work at a think tank that supports
+this like a lot of people that I work with
+[SPEAKER_07]: are vegan or vegetarian and are also
+concerned with like concerned with food
+[SPEAKER_07]: processing, concerned with eating more raw
+foods.
+[SPEAKER_07]: But I would say that's still relatively a
+niche concern as compared to taste and
+[SPEAKER_07]: price lower down on the consumer checklist
+in terms of choosing what to buy.
+[SPEAKER_03]: You mentioned that yeast fermentation
+improved the lysine content of oat
+[SPEAKER_03]: protein.
+[SPEAKER_03]: Does this work for wheat and barley too?
+[SPEAKER_07]: Oh the oat protein fermentation project?
+[SPEAKER_07]: I mean I don't see why it wouldn't but we
+haven't found researchers who are willing
+[SPEAKER_07]: to study that.
+[SPEAKER_07]: So if you would like to study that apply
+to our grant program this fall.
+[SPEAKER_07]: But yeah I mean so one of the problems
+with oat protein that they are trying to
+[SPEAKER_07]: improve is the amino acid profile and so
+that's relatively unique to oat in terms
+[SPEAKER_07]: of the lower levels of lysine.
+[SPEAKER_07]: Some of the saponin content is not present
+in wheat.
+[SPEAKER_07]: But there's nothing to say that
+fermentation wouldn't improve the taste
+[SPEAKER_07]: profile of wheat or barley as well when
+we're looking particularly in terms of how
+[SPEAKER_07]: well it can mimic wheat.
+[SPEAKER_00]: Thinking of these plant-based protein as a
+consumer product the price that it has is
+[SPEAKER_00]: it mostly due to because it's actually
+that complex to make or is it because it's
+[SPEAKER_00]: new and the company needs to survive.
+[SPEAKER_00]: So I'm kind of curious how the price would
+compare if like meat was priced as
+[SPEAKER_00]: expensively as it should given all the
+inputs that it needs.
+[SPEAKER_00]: How would it actually compete in that
+regard?
+[SPEAKER_07]: Yeah I mean all the companies are aiming
+for price parity.
+[SPEAKER_07]: The Beyond Burger is probably like a
+dollar or so per burger more expensive
+[SPEAKER_07]: than ground beef.
+[SPEAKER_07]: Some of it is to recap R&D costs.
+[SPEAKER_07]: Some of it is because the processing steps
+are more involved.
+[SPEAKER_07]: But some of the cost also comes from the
+fat that they need to add to it in terms
+[SPEAKER_07]: of the price of coconut oil.
+[SPEAKER_07]: But as they're able to scale up and so
+like as they're increasing the size of
+[SPEAKER_07]: their facilities that price should come
+down.
+[SPEAKER_07]: Actually when both Beyond and Impossible
+did a lifecycle analysis of the product
+[SPEAKER_07]: they found that not only one of the main
+contributors to water use and to
+[SPEAKER_07]: greenhouse gas emissions but also one of
+the main contributors to price was the
+[SPEAKER_07]: packaging materials that they're using.
+[SPEAKER_07]: They're trying to look into better and
+also more biodegradable trays and plastic
+[SPEAKER_07]: wraps so they can sell it in a way that it
+looks like it's packaged like it's ground
+[SPEAKER_07]: beef but in something that's more easily
+recyclable because that ended up being one
+[SPEAKER_07]: of the primary.
+[SPEAKER_07]: So that like packaging is also
+contributing to cost.
+[SPEAKER_12]: So it seems like there are many issues
+that could be helped with genetic
+[SPEAKER_12]: engineering.
+[SPEAKER_12]: I mean things like hydrogenation levels of
+non-coconut oils and fats and stuff like
+[SPEAKER_12]: that.
+[SPEAKER_12]: Is that something that you guys are sort
+of actively trying to stay away from?
+[SPEAKER_12]: So can't somebody out there make synthetic
+you know make canola make coconut oil?
+[SPEAKER_07]: Ideally yeah I mean ideally you'd be able
+to.
+[SPEAKER_07]: So that's one of the projects that's
+trying to look at algae as a way that we
+[SPEAKER_07]: can produce some of these fats
+exogenously.
+[SPEAKER_07]: Cost is probably still going to be an
+issue but yeah hopefully we can use some
+[SPEAKER_07]: kind of platform like a yeast or bacterial
+platform to produce the oils that we would
+[SPEAKER_07]: need.
+[SPEAKER_09]: Are there any other?
+[SPEAKER_09]: So in terms of nutritional quality you
+showed a graph of the different iron
+[SPEAKER_09]: contents of some crops that people are
+using for these plant-based meats.
+[SPEAKER_09]: Are they also measuring phytate levels to
+try to get at maybe some of the iron
+[SPEAKER_09]: bioavailability issues that might come
+with plants replacing meats?
+[SPEAKER_07]: Yeah particularly in like millet and
+lupins.
+[SPEAKER_07]: And in general just the bioavailability of
+the protein in the plants that we're
+[SPEAKER_07]: trying to engineer to have higher protein
+content.
+[SPEAKER_07]: And like so in the in the pea study we
+weren't just trying to increase the
+[SPEAKER_07]: percentage of protein available in the
+dried pea but also then the
+[SPEAKER_07]: bioavailability of that protein as it's
+processed or cooked.
+[SPEAKER_07]: Because we don't want to increase the
+protein concentration but not be able to
+[SPEAKER_07]: then extract that protein.
+[SPEAKER_07]: That's also part of what Equinom is
+looking into.
+[SPEAKER_11]: Maybe one last question.
+[SPEAKER_02]: Do you think that food will be affordable
+in 2050 if we use this method?
+[SPEAKER_02]: Because it's a very expensive process so I
+believe we'll have available food but do
+[SPEAKER_02]: you think it will be affordable at that
+time?
+[SPEAKER_07]: Yeah I mean yeah decreasing cost is a
+concern and we're also looking at how how
+[SPEAKER_07]: the cost of producing livestock might
+increase as we're either as either the
+[SPEAKER_07]: crops that we use to feed the livestock
+increase in price or as we're running out
+[SPEAKER_07]: of room as in the case with like fisheries
+we're running out of coastline that can be
+[SPEAKER_07]: leased to produce those fish.
+[SPEAKER_07]: So we're both trying to reduce the price
+of plant-based meat and then also looking
+[SPEAKER_07]: at maybe some kind of like intersecting
+curve of prices where we would see the
+[SPEAKER_07]: price of animal meat increase and then
+match prices.
+[SPEAKER_07]: But the like the least expensive way to
+eat would just be to eat some of these
+[SPEAKER_07]: vegetables and pulses and grains like on
+their own to not try to make them into
+[SPEAKER_07]: something like the Beyond Burger,
+the Impossible Burger.
+[SPEAKER_07]: The idea behind those is that we want to
+replace something that's agriculturally
+[SPEAKER_07]: inefficient with something that is and
+hopefully drive the price down there but
+[SPEAKER_07]: yeah as price is a concern like we can oh
+we have that graph of the different
+[SPEAKER_07]: protein levels and protein sources and so
+like yes you can meet your daily protein
+[SPEAKER_07]: requirement just with vegetable proteins
+and those are cheaper on the whole to
+[SPEAKER_07]: reduce and buy than animal based proteins.
+[SPEAKER_07]: From a purely economic standpoint like
+sure don't buy the Impossible Burger just
+[SPEAKER_07]: buy like rice and lentils and just cook
+them however you like with other
+[SPEAKER_07]: vegetables but if we want to replace meat
+in people's diets.
+[SPEAKER_07]: We have one final question from Zoom.
+[SPEAKER_11]: Andrea Beldy asks besides the process of
+oat fermentation are you also looking into
+[SPEAKER_11]: improving the quality of the protein of
+these crops by GM or other means?
+[SPEAKER_11]: That's what they asked.
+[SPEAKER_07]: Yeah yeah so like some of the studies that
+Equinom is doing are looking at improving
+[SPEAKER_07]: the concentrations and availability of
+that protein also improving the
+[SPEAKER_07]: completeness of the protein itself so yeah
+GM is one way to do that and the
+[SPEAKER_07]: particular like oat protein project is
+just looking at fermentation because
+[SPEAKER_07]: they're a lab that studies fermentation so
+they had this idea that fermentation would
+[SPEAKER_07]: be kind of like an easy and cost-effective
+way to to improve the completeness of the
+[SPEAKER_07]: oat protein and to decrease the
+concentrations of isoflavones and saponins
+[SPEAKER_07]: in the oat protein extract but certainly
+another lab may be able to improve oat
+[SPEAKER_07]: protein in a different process.
+[SPEAKER_11]: All right can we all join and thank
+Alison.
+[SPEAKER_05]: This has been a production of Cornell
+University on the web at Cornell.edu Thank
+[SPEAKER_05]: you.
+[SPEAKER_05]: Thank you.
+you

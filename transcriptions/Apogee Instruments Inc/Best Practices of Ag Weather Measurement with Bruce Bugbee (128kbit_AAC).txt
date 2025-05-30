@@ -1,0 +1,1564 @@
+[SPEAKER_00]: I'm Bruce Bugby.
+[SPEAKER_00]: I'm the president of Apogee.
+[SPEAKER_00]: I started Apogee in my garage a long time
+ago and I am currently also a professor
+[SPEAKER_00]: right up here at Utah State University for
+those of you who don't know me.
+[SPEAKER_00]: My background is plant physiology and I
+teach plant physiology.
+[SPEAKER_00]: I also teach a course in environmental
+instrumentation at the university.
+[SPEAKER_00]: These are all graduate level classes for
+students aspiring to get good at what you
+[SPEAKER_00]: guys are already good at and I tell them
+if you can get good at this people will
+[SPEAKER_00]: come because your services will be in
+great demand.
+[SPEAKER_00]: It's a background for my class.
+[SPEAKER_00]: I always divide that into three things.
+[SPEAKER_00]: Part of instrumentation is having some
+understanding of what we call the physics
+[SPEAKER_00]: of signal transduction and that means how
+does some sensor out there convert wind
+[SPEAKER_00]: into an electrical signal for a data
+logger.
+[SPEAKER_00]: How does it convert temperature,
+anything, into an electrical signal and
+[SPEAKER_00]: when students have a better understanding
+of that they can far better diagnose their
+[SPEAKER_00]: systems to understand what's going on.
+[SPEAKER_00]: A second part of it is interfacing sensors
+to data loggers and Campbell Scientific
+[SPEAKER_00]: every year very graciously donates a whole
+set of data loggers for this class and so
+[SPEAKER_00]: they get trained on Campbell's loggers,
+interfacing them, stuff like voltage
+[SPEAKER_00]: dividers and hooking them up and then the
+third part is programming the data logger.
+[SPEAKER_00]: It's been a popular class and it's too bad
+people don't teach classes like this more
+[SPEAKER_00]: because I think increasingly we see just
+give me the data.
+[SPEAKER_00]: There's high quality data and there's low
+quality data and if you don't know the
+[SPEAKER_00]: difference you're about to make bad models
+and a lot of problems.
+[SPEAKER_00]: I'm going to get to this in a second.
+[SPEAKER_00]: I thought I'd start, there's so much stuff
+we can talk about in a class like this and
+[SPEAKER_00]: I see some really knowledgeable people in
+the audience so we can have some exchange
+[SPEAKER_00]: and instead of me lecturing we can have
+some exchange of information and obviously
+[SPEAKER_00]: if you teach a whole semester class in
+this no way you can condense that into 60
+[SPEAKER_00]: minutes.
+[SPEAKER_00]: You just hit some highlights of it.
+[SPEAKER_00]: So I welcome your comments and questions
+as we go along in this.
+[SPEAKER_00]: One of the things that we get asked a lot
+at Apogee is how do you decide on what new
+[SPEAKER_00]: sensors to work on?
+[SPEAKER_00]: Usually people say could you make a sensor
+to measure this and the answer is always
+[SPEAKER_00]: yes but then our question is of course how
+many would you buy if we made that and
+[SPEAKER_00]: well I'd buy one and both of my buddies
+would buy one and you should make that.
+[SPEAKER_00]: What it really comes down to is an
+estimate of the worldwide size of the
+[SPEAKER_00]: market for some new sensors and sometimes
+it's an improvement on an old sensor and
+[SPEAKER_00]: how much R&D would it take to make the
+first one and both of those are broad
+[SPEAKER_00]: guesses and anybody affiliated with
+instrument companies goes through the same
+[SPEAKER_00]: thing and you hope that the market will be
+as big as you hope for and the R&D won't
+[SPEAKER_00]: be too much worse than you think and off
+you go into a new project.
+[SPEAKER_00]: As companies get bigger and as Apogee has
+gotten bigger we can undertake more
+[SPEAKER_00]: ambitious projects and one of them that
+you're going to see in the hallway,
+[SPEAKER_00]: I'm not necessarily going to talk about it
+here, one of them is our new weighing
+[SPEAKER_00]: precipitation gauge and we had the great
+fortune of the Bureau of Land Management
+[SPEAKER_00]: came to us and they said could you make an
+improved gauge and I'd been working with
+[SPEAKER_00]: load cells in my laboratory at the
+university for lysimeters to weigh plants
+[SPEAKER_00]: and I thought how hard can that be?
+[SPEAKER_00]: We know how to measure stuff with load
+cells.
+[SPEAKER_00]: Yeah that was over three years ago and
+we're still polishing the product.
+[SPEAKER_00]: The R&D for that has been a lot more than
+we anticipated but the market is even
+[SPEAKER_00]: bigger than we anticipated too so that's
+been an emerging cutting-edge thing for
+[SPEAKER_00]: the company.
+[SPEAKER_00]: Apogee is of course primarily a sensor
+company and we started out making
+[SPEAKER_00]: radiation sensors.
+[SPEAKER_00]: The very first product was called a
+quantum sensor which measures photons for
+[SPEAKER_00]: photosynthesis because that's right out of
+my background and at the time,
+[SPEAKER_00]: this is 20-some years ago, the only one
+that was really widely used whether it was
+[SPEAKER_00]: Sky Instruments in the UK and Lycor in the
+United States and I think back then Kipp
+[SPEAKER_00]: and Sonnen might have had one,
+I can't remember when theirs exactly
+[SPEAKER_00]: started but all of those were quite
+expensive and we realized if we could just
+[SPEAKER_00]: take a simple photodiode and hook it up to
+a voltmeter and we would have an adequate
+[SPEAKER_00]: quantum sensor and in fact this morning I
+went to the antique instrument collection
+[SPEAKER_00]: because we have some glass cases down at
+Apogee now where I've been able to display
+[SPEAKER_00]: my antique instruments which I just love
+and as the word is spread, people retire
+[SPEAKER_00]: at universities and a couple people have
+bequeathed their instrument collection to
+[SPEAKER_00]: us so we're getting better antique
+instruments.
+[SPEAKER_00]: It's really fun.
+[SPEAKER_00]: This is the first product Apogee ever
+built and it says quantum meter,
+[SPEAKER_00]: quantum is a mole of photons and the
+sensors in the top and look what it came
+[SPEAKER_00]: from, just a low-cost voltmeter.
+[SPEAKER_00]: We didn't have big startup costs and we
+just took it apart and modified the
+[SPEAKER_00]: voltmeter and made this first sensor and
+it still works and it's in the museum now
+[SPEAKER_00]: but we built it from there.
+[SPEAKER_00]: We kept upgrading this and spread out to
+other projects but because the cost was,
+[SPEAKER_00]: it didn't do anything another meter didn't
+do, it's just that it was cheaper and it
+[SPEAKER_00]: helped a lot of people and we started the
+company to do this.
+[SPEAKER_00]: Here's another thing that I grabbed out of
+the antique instrument collection.
+[SPEAKER_00]: This is my first cell phone, the pop-up
+antenna and man we thought this was such a
+[SPEAKER_00]: cool technology.
+[SPEAKER_00]: That's in the museum now.
+[SPEAKER_00]: If you get a chance it's fun.
+[SPEAKER_00]: If you like instruments and like old
+instruments it's fun to go down memory
+[SPEAKER_00]: lane and see all these things.
+[SPEAKER_00]: I think what I'd like to start with first
+is just the simplest measurement of
+[SPEAKER_00]: temperature and the simplest measurement
+of air temperature.
+[SPEAKER_00]: We got involved with this because one of
+the big selling products for Apogee is an
+[SPEAKER_00]: infrared radiation radiometer to get
+surface temperatures and it's one of our
+[SPEAKER_00]: more expensive instruments, a high-end
+instrument.
+[SPEAKER_00]: Really good at getting surface
+temperatures but what we always really
+[SPEAKER_00]: need to know to determine energy balance
+in plant canopies and irrigation
+[SPEAKER_00]: requirements of crops is the leaf to air
+temperature difference.
+[SPEAKER_00]: This is environmental science 101.
+[SPEAKER_00]: You need leaf temperature, you need air
+temperature.
+[SPEAKER_00]: What we realized was the air temperatures
+were wrong when they were measured in a
+[SPEAKER_00]: standard multi-plate static shield and
+they're wrong because the sun shines on
+[SPEAKER_00]: the shield, heats it up.
+[SPEAKER_00]: If the wind is not blowing fast enough it
+reads high and we've always known they
+[SPEAKER_00]: read high but I'll show you some data
+about how big that error can be.
+[SPEAKER_00]: The world record for the error of a static
+shield, we have a station at Peter Sinks.
+[SPEAKER_00]: I think I have a slide on Peter Sinks.
+[SPEAKER_00]: It's just up in the mountains.
+[SPEAKER_00]: It's a big bowl, low, cold air pools in
+there and we have measured the second
+[SPEAKER_00]: lowest temperature in the continental
+United States here at Peter Sinks for our
+[SPEAKER_00]: climate center group.
+[SPEAKER_00]: I can show you some data that in a minute
+but there's snow in the ground up there
+[SPEAKER_00]: and really cold so we need precision
+measurements of temperature to a tenth of
+[SPEAKER_00]: a degree C.
+[SPEAKER_00]: We also have a static shield up there and
+an apogee aspirated shield.
+[SPEAKER_00]: Not long ago we measured a 13.5 Celsius
+error.
+[SPEAKER_00]: The static shield was 13.5 Celsius warmer
+than the apogee aspirated shield.
+[SPEAKER_00]: The sensors were precise sensors in both.
+[SPEAKER_00]: Huge.
+[SPEAKER_00]: We're calling that the new world record
+for the error of a static shield but we
+[SPEAKER_00]: often see one and two degrees C
+difference.
+[SPEAKER_00]: Partly it's when there's snow in the
+ground.
+[SPEAKER_00]: The snow reflects and it bounces up from
+the bottom and it causes big errors in
+[SPEAKER_00]: static shields.
+[SPEAKER_00]: But just that simple measurement,
+wow, that's the primary measurement.
+[SPEAKER_00]: Air temperature and the primary way we
+measure it, and we have done for a long
+[SPEAKER_00]: time, can have much bigger errors than we
+realize.
+[SPEAKER_00]: So let's start with the sensor.
+[SPEAKER_00]: What sensor would you use to do measure
+temperature?
+[SPEAKER_00]: Thermocouples, but we've primarily relied
+on PRTs, platinum resistance thermometers,
+[SPEAKER_00]: to get accurate measurements of air
+temperature and these have been the gold
+[SPEAKER_00]: standard for a very long time.
+[SPEAKER_00]: But they're expensive and they're bigger.
+[SPEAKER_00]: Can we get this bigger?
+[SPEAKER_00]: Can I slide this back and make it bigger
+without screwing everything up?
+[SPEAKER_00]: We might be able to, maybe there's a cord
+but if we can't, oh yeah, there you go,
+[SPEAKER_00]: that helps.
+[SPEAKER_00]: I could have done that.
+[SPEAKER_00]: That'll help a little.
+[SPEAKER_02]: What's this thing right here?
+[SPEAKER_00]: That helps, that's good, that's good.
+[SPEAKER_00]: Now, oh there we go.
+[SPEAKER_00]: This slide, yeah thanks, let's turn those
+off, there we go.
+[SPEAKER_00]: Now we're, something we can look at.
+[SPEAKER_00]: There's some pretty fine print on this
+slide.
+[SPEAKER_00]: These slides are from a talk that I gave a
+few years ago at the American Society of
+[SPEAKER_00]: Agronomy had a special symposium on
+emerging instruments, emerging trends in
+[SPEAKER_00]: weather and we talked about temperature
+measurements.
+[SPEAKER_00]: But this is thermistors versus PRTs.
+[SPEAKER_00]: And the first point in this measurement of
+temperature is small is better.
+[SPEAKER_00]: And if you've worked with that,
+man we have used some very fine wire
+[SPEAKER_00]: thermocouples to get accurate measurements
+of temperature because they stay in
+[SPEAKER_00]: equilibrium with the air temperature
+better.
+[SPEAKER_00]: So okay, there's a human hair.
+[SPEAKER_00]: We could put a thermocouple in here and
+they get pretty small down around human
+[SPEAKER_00]: hairs as you know.
+[SPEAKER_00]: They're super fragile and hard to build
+and all that.
+[SPEAKER_00]: But we can get fine wire thermistors quite
+small now.
+[SPEAKER_00]: That thermistor is used in human and
+animal physiology.
+[SPEAKER_00]: You can inject it into living organisms
+inside of a syringe so they get
+[SPEAKER_00]: temperature.
+[SPEAKER_00]: So that's small.
+[SPEAKER_00]: Then for reference, there's a 24 gauge
+thermocouple, then epoxy bead thermistor
+[SPEAKER_00]: and then a pretty standard PRT and then a
+thermistor at the bottom inside a ceramic
+[SPEAKER_00]: sheath.
+[SPEAKER_00]: So huge range of sizes.
+[SPEAKER_00]: As we get bigger, they are less,
+they do not stay in thermal equilibrium
+[SPEAKER_00]: with the air.
+[SPEAKER_00]: And I'm not talking about response time.
+[SPEAKER_00]: It's the equilibrium temperature.
+[SPEAKER_00]: A big sensor absorbs more solar radiation
+and it always warms above the air
+[SPEAKER_00]: temperature depending on the radiation and
+the wind speed.
+[SPEAKER_00]: And sometimes we measure radiation and
+wind and back correct what the real
+[SPEAKER_00]: temperature was and pretty soon you have
+fudge factors in here and you'd like to
+[SPEAKER_00]: just have accurate sensors so you don't
+have to have a lot of fudge factors.
+[SPEAKER_00]: But there's a range of sensors.
+[SPEAKER_00]: Let's see.
+[SPEAKER_00]: I guess I'm pushing the button,
+right?
+[SPEAKER_00]: We didn't know.
+[SPEAKER_00]: Small is better.
+[SPEAKER_00]: So when we say PRTs, they are absolutely
+not created equal.
+[SPEAKER_00]: People act like they are.
+[SPEAKER_00]: Oh, I have a PRT.
+[SPEAKER_00]: Well, what kind of a PRT?
+[SPEAKER_00]: These are the five main classes,
+CBA, 1 3rd DIN, 1 10th DIN.
+[SPEAKER_00]: And there's a picture up there again.
+[SPEAKER_00]: Look at the error specifications for these
+PRTs.
+[SPEAKER_00]: The 1 10th DIN is a tremendous,
+that's a wonderful sensor, but it's 15
+[SPEAKER_00]: times as expensive as a Class C.
+[SPEAKER_00]: And oftentimes people are a little vague
+about what PRTs are.
+[SPEAKER_00]: If a PRT is in their instrument,
+they just say it's a PRT, but you need to
+[SPEAKER_00]: know what kind of a PRT.
+[SPEAKER_00]: Big differences in PRTs and accuracy.
+[SPEAKER_00]: Now, I'm going to talk about the
+disadvantages of PRTs other than cost to
+[SPEAKER_00]: get good accuracy.
+[SPEAKER_00]: Here is that epoxy bead thermistor up
+there that was shown in the first slide.
+[SPEAKER_00]: Small, generally smaller than most of the
+PRTs.
+[SPEAKER_00]: There's the accuracy spec.
+[SPEAKER_00]: This is what we call a precision
+thermistor.
+[SPEAKER_00]: This is, by the way, used for the
+reference temperature and Campbell
+[SPEAKER_00]: scientific data loggers inside the can.
+[SPEAKER_00]: Pretty good spec, 0.1 degree C.
+[SPEAKER_00]: And the relative cost is about 1x.
+[SPEAKER_00]: So if you look at this slide for very
+long, and PRTs are a very cost effective
+[SPEAKER_00]: option for measuring temperatures.
+[SPEAKER_00]: I'm sorry, thermistors, provided it's the
+right thermistor with the right specs.
+[SPEAKER_00]: This is a more expensive thermistor.
+[SPEAKER_00]: Now, historically, when I was in graduate
+school, people were cycling thermistors.
+[SPEAKER_00]: Some of the older faculty, then they would
+buy them, and they'd temperature cycle
+[SPEAKER_00]: them.
+[SPEAKER_00]: What are you doing?
+[SPEAKER_00]: I'm stabilizing it, because after I cycle
+it enough, I find it stabilizes,
+[SPEAKER_00]: and then I calibrate the thermistor.
+[SPEAKER_00]: Thermistors have come a long way in the
+past several decades.
+[SPEAKER_00]: They're much more stable, and they have
+much better accuracy standards.
+[SPEAKER_00]: And there are some papers in the
+literature with groups like NIST,
+[SPEAKER_00]: reference groups, that now are starting to
+use thermistors as reference standards for
+[SPEAKER_00]: temperatures.
+[SPEAKER_00]: PRTs are still, the expensive PRTs are
+still the gold standard, but thermistors
+[SPEAKER_00]: are much cheaper and getting really close.
+[SPEAKER_00]: That's this particular thermistor.
+[SPEAKER_00]: I think, let me make one point right here.
+[SPEAKER_00]: Thermistors can be less stable than a PRT.
+[SPEAKER_00]: There's a reason to go with a PRT,
+because of long-term stability,
+[SPEAKER_00]: but the reason thermistors drift,
+there's two reasons they drift.
+[SPEAKER_00]: High temperatures and moisture.
+[SPEAKER_00]: High temperatures means higher than 60
+degrees C, so it's not, and that starts
+[SPEAKER_00]: and they, so the high temperatures are
+warmer than our environmental
+[SPEAKER_00]: temperatures, so it's not really a
+problem.
+[SPEAKER_00]: Moisture is a problem.
+[SPEAKER_00]: If they absorb moisture, the resistance
+changes and they drift, and that can be a
+[SPEAKER_00]: killer.
+[SPEAKER_00]: So the way to get thermistors accurate is
+to encase them in a waterproof epoxy or
+[SPEAKER_00]: glass.
+[SPEAKER_00]: And this is in a waterproof epoxy,
+and I'll show you some data on the
+[SPEAKER_00]: stability of this sensor in just a minute.
+[SPEAKER_00]: So it's possible to make thermistors very
+stable.
+[SPEAKER_00]: For example, Campbell Scientific sells one
+inside of a stainless steel sheath.
+[SPEAKER_00]: I think that's called the SS, I forget the
+number, but inside a stainless steel it's
+[SPEAKER_00]: encased, so it's stable.
+[SPEAKER_00]: This particular one is not encased and
+it's stable because it's epoxy coated,
+[SPEAKER_00]: but that's a key consideration with
+thermistors.
+[SPEAKER_00]: Now consider that all the PRTs are
+resistant sensors as well.
+[SPEAKER_00]: But they're encased in stainless steel to
+keep moisture away from and keep them
+[SPEAKER_00]: stable.
+[SPEAKER_00]: So here's one of the, the next slide shows
+you a hidden cost of sensors.
+[SPEAKER_00]: And the more you work with these,
+you start to get an appreciation for this.
+[SPEAKER_00]: How many channels on a data logger does
+your sensor take up?
+[SPEAKER_00]: And now that we have digital sensors and
+evolving data loggers with digital data
+[SPEAKER_00]: loggers, wow, digital sensors allow you to
+put a lot of sensors on a smaller data
+[SPEAKER_00]: logger.
+[SPEAKER_00]: The days in which we had big lots of
+channels and multiplexers and CR7s,
+[SPEAKER_00]: we have a lot more digital sensors.
+[SPEAKER_00]: But look at what a thermistor takes up.
+[SPEAKER_00]: This is three and two, three and four wire
+resistors.
+[SPEAKER_00]: Resistance measurements.
+[SPEAKER_00]: You can measure resistance with two wires,
+which is the secondary instrument,
+[SPEAKER_00]: this is off the internet, the secondary
+instrument in this case would be a
+[SPEAKER_00]: Campbell's logger.
+[SPEAKER_00]: That's two channels.
+[SPEAKER_00]: It gets more accurate when you have a
+third wire for a reference and you have a
+[SPEAKER_00]: three wire measurement.
+[SPEAKER_00]: And to achieve those tenth of a degree C
+accuracies, you really ought to have a
+[SPEAKER_00]: four wire measurement and a four wire
+thermistor.
+[SPEAKER_00]: That's a more expensive thermistor because
+there's more wires and it takes up four
+[SPEAKER_00]: analog channels on the data logger.
+[SPEAKER_00]: So thermistors are, they're expensive from
+the standpoint of channels.
+[SPEAKER_00]: Now, of course you can digitally measure
+them and send a digital signal too.
+[SPEAKER_00]: What I want to show you now is that our
+data collected over many cycles of
+[SPEAKER_00]: accelerated aging tests to see how much
+drift we could cause in these thermistors.
+[SPEAKER_00]: Because if they drift, that's a big
+problem we need to know.
+[SPEAKER_00]: So we do accelerated aging, up and down
+temperature.
+[SPEAKER_00]: We have a tray of water in the bottom of
+the chamber.
+[SPEAKER_00]: So they freeze and they get cold and then
+they are high humidity.
+[SPEAKER_00]: So it's a very worst case scenario and we
+cycle them.
+[SPEAKER_00]: In this particular data set, 96 cycles
+minus 20 to plus 60.
+[SPEAKER_00]: This is the data.
+[SPEAKER_00]: The blue lines are those yellow bead
+thermistors.
+[SPEAKER_00]: And the red line is class A PRTs.
+[SPEAKER_00]: Now that's not the highest quality PRTs,
+but you can see the offsets and this graph
+[SPEAKER_00]: right here shows after we normalize it to
+the initial temperatures.
+[SPEAKER_00]: Those thermistors were more stable than
+that class A PRT in this test.
+[SPEAKER_00]: So it provides evidence that thermistors
+can be very stable over a long period of
+[SPEAKER_00]: time.
+[SPEAKER_00]: It's another even more rigorous test,
+10 months, 584 cycles.
+[SPEAKER_00]: This is now with high quality PRTs,
+two-replicate PRTs, deviation from the
+[SPEAKER_00]: mean.
+[SPEAKER_00]: They were both very, very accurate.
+[SPEAKER_00]: Here's the data.
+[SPEAKER_00]: 12-replicate thermistors.
+[SPEAKER_00]: It looks like the other data, but it's in
+a test.
+[SPEAKER_00]: And those thermistors were within,
+once we got rid of the offset,
+[SPEAKER_00]: they were within 0.05 C.
+[SPEAKER_00]: So the point is thermistors can be
+impressively stable if they're encased
+[SPEAKER_00]: properly.
+[SPEAKER_00]: So here's an example I talked about Peter
+Sinks.
+[SPEAKER_00]: Example of what we do with Peter Sinks.
+[SPEAKER_00]: There's a picture of it.
+[SPEAKER_00]: It's a big basin up in the mountains.
+[SPEAKER_00]: And we're sort of, if you don't have to
+live here very long and you learn this
+[SPEAKER_00]: story.
+[SPEAKER_00]: 1985, we measured minus 56.3 C at Peter
+Sinks.
+[SPEAKER_00]: It was the record low temperature for Utah
+and the second coldest temperature ever
+[SPEAKER_00]: recorded in the continental United States.
+[SPEAKER_00]: Second, yeah.
+[SPEAKER_00]: What was the first?
+[SPEAKER_00]: We're still going for that first place.
+[SPEAKER_00]: We haven't got it yet.
+[SPEAKER_00]: Global warming's not helping us.
+[SPEAKER_00]: The coldest temperature ever measured was
+minus 69.7 at Rogers Pass, Montana,
+[SPEAKER_00]: 1954.
+[SPEAKER_00]: So look at the difference.
+[SPEAKER_00]: We missed it by four.
+[SPEAKER_00]: Tenths of a degree Fahrenheit,
+the record.
+[SPEAKER_00]: So we're waiting for it.
+[SPEAKER_00]: We just love it if we got a super cold
+winter and we could get that record.
+[SPEAKER_00]: So we got a lot of instruments up there to
+do this.
+[SPEAKER_00]: This is a picture of the station up there
+with the bottom of the bowl.
+[SPEAKER_00]: And there's where we have these two yellow
+bead thermistors and two-replicate high
+[SPEAKER_00]: quality PRTs.
+[SPEAKER_00]: Those are inside of that aspirated shield
+looking up from the bottom.
+[SPEAKER_00]: I've got some data in here on the
+comparison of those.
+[SPEAKER_00]: And they've been up there for several
+years now.
+[SPEAKER_00]: I've forgotten.
+[SPEAKER_00]: Bob, do you remember how long this has
+been up there?
+[SPEAKER_00]: I don't know.
+[SPEAKER_00]: It's, I don't know, five or eight years or
+something like that.
+[SPEAKER_00]: So just replicant measurements inside an
+aspirated shield to get perspective.
+[SPEAKER_00]: And they're both tracking really closely
+within a tenth of a degree C.
+[SPEAKER_00]: So that's the story on measuring
+temperature.
+[SPEAKER_00]: We're big fans of precision thermistors.
+[SPEAKER_00]: And in fact, the Apogee aspirated shield
+has this yellow bead thermistor inside of
+[SPEAKER_00]: it for air temperature.
+[SPEAKER_00]: The next thing I want to talk about is the
+importance of aspirated shields.
+[SPEAKER_00]: Because it's one thing to have a good
+sensor.
+[SPEAKER_00]: But we mentioned a minute ago,
+if you don't have it in the right housing,
+[SPEAKER_00]: you're going to have an error from the
+housing.
+[SPEAKER_00]: Andrew Sanford's here.
+[SPEAKER_00]: Andrew, you've worked on this stuff your
+whole life.
+[SPEAKER_00]: Do you have any additional comments of
+PRTs?
+[SPEAKER_01]: Well, I need to say that most neurological
+services treat them as a reference.
+[SPEAKER_00]: They what?
+[SPEAKER_01]: They treat them as a reference instrument.
+[SPEAKER_02]: And we can't break that model.
+[SPEAKER_02]: They really know how to calibrate them.
+[SPEAKER_02]: They know how to measure them.
+[SPEAKER_02]: So I think it's good that you offer them
+when you're a shield out.
+[SPEAKER_00]: They still are a reference instrument.
+[SPEAKER_00]: I mean, as the reference instrument.
+[SPEAKER_01]: It's possible to make a bad PRT sensor.
+[SPEAKER_00]: Just be careful if you're forgetting PRTs.
+[SPEAKER_00]: This next series of slides is a separate
+talk.
+[SPEAKER_00]: And I'm going to close this and open the
+next talk here.
+[SPEAKER_00]: Let's see.
+[SPEAKER_00]: This is slides from another talk that we
+gave at another professional conference.
+[SPEAKER_00]: Mark Blonquist, if you haven't already met
+him, is here.
+[SPEAKER_00]: And he's the chief scientist at Apogee.
+[SPEAKER_00]: In Apogee, we don't decide.
+[SPEAKER_00]: We don't have vice presidents.
+[SPEAKER_00]: We have chiefs.
+[SPEAKER_00]: We have chief scientists, chief operators.
+[SPEAKER_00]: Chief operating officer.
+[SPEAKER_00]: And Ryan Lindsay is a mechanical engineer.
+[SPEAKER_00]: These are slides about the performance of
+an aspirated shield that Apogee has sold
+[SPEAKER_00]: for a while, which also took a lot longer
+to develop and refine than we thought.
+[SPEAKER_00]: But it has helped us understand the errors
+that we are all getting when we use static
+[SPEAKER_00]: shields.
+[SPEAKER_00]: Because we all use those.
+[SPEAKER_00]: They're cheap.
+[SPEAKER_00]: And there's improvements in those,
+by the way.
+[SPEAKER_00]: I mean, some static shields are better
+than others.
+[SPEAKER_00]: But if the sun is shining and the wind's
+not blowing, they're going to heat up.
+[SPEAKER_00]: So this is just a little diagram of wind
+and solar radiation and what you get with
+[SPEAKER_00]: air temperature.
+[SPEAKER_00]: So let's take a look.
+[SPEAKER_00]: This is Jonathan Wright.
+[SPEAKER_00]: He is with MetSpec in the UK.
+[SPEAKER_00]: And MetSpec is a company that's made an
+improved static shield that we have tested
+[SPEAKER_00]: extensively.
+[SPEAKER_00]: Bart Neff is at Campbell Scientific.
+[SPEAKER_00]: We deployed these in a lot of cases,
+collected a lot of data over the years.
+[SPEAKER_00]: This is a lot of text.
+[SPEAKER_00]: But it basically, it says to determine the
+quantity, the amount of error of static
+[SPEAKER_00]: shields.
+[SPEAKER_00]: Ultimately, so we can get accurate leaf to
+air temperature differences.
+[SPEAKER_00]: This is a hot topic.
+[SPEAKER_00]: And when you think about science,
+what do we do in science?
+[SPEAKER_00]: We do research.
+[SPEAKER_00]: And the word research is re-search.
+[SPEAKER_00]: We take what we thought we knew and study
+it again.
+[SPEAKER_00]: And boy, do we find a lot of stuff that we
+thought we knew and we didn't really know
+[SPEAKER_00]: it very well.
+[SPEAKER_00]: That's all of science.
+[SPEAKER_00]: So this is not just us looking at these
+errors.
+[SPEAKER_00]: There's 30 peer-reviewed papers on the
+errors of static shields over the last 15
+[SPEAKER_00]: years.
+[SPEAKER_00]: It's particularly big now.
+[SPEAKER_00]: If we're going to quantify global warming
+and air temperatures, well, we got to
+[SPEAKER_00]: measure air temperature.
+[SPEAKER_00]: And I say, look, we can solve global
+warming.
+[SPEAKER_00]: Everybody just switched to aspirated
+shields and the problem will go away
+[SPEAKER_00]: because it's going to make the earth
+appear to be cooling.
+[SPEAKER_00]: So these are a couple of comparison
+shields in this data set.
+[SPEAKER_00]: It's a multi-plate shield.
+[SPEAKER_00]: Arne Young has for long made an aspirated
+shield.
+[SPEAKER_00]: We call it the Darth Vader shield because
+of the way the helmet looks.
+[SPEAKER_00]: Opens up to get sensors in there.
+[SPEAKER_00]: Here's the problem.
+[SPEAKER_00]: It's not widely used at all because it is
+a very power-hungry fan.
+[SPEAKER_00]: It's a centrifugal blower.
+[SPEAKER_00]: You're not going to run that unless you
+have massive solar panels.
+[SPEAKER_00]: And our stations are places where we have
+low power.
+[SPEAKER_00]: So the Apogee's goal was to make an
+accurate aspirated shield that is also
+[SPEAKER_00]: very low power.
+[SPEAKER_00]: But these were some of the shields we
+compared it to.
+[SPEAKER_00]: And then statics have a humidity probe.
+[SPEAKER_00]: Now, back to Peter Sinks.
+[SPEAKER_00]: Here's some data.
+[SPEAKER_00]: Difference from the active shield.
+[SPEAKER_00]: Now, the active shield is always cooler,
+but this data is just what you might
+[SPEAKER_00]: think.
+[SPEAKER_00]: And there's the wind speed.
+[SPEAKER_00]: After the wind is three to four meters a
+second, we're down in the errors of 0.1,
+[SPEAKER_00]: 0.2 degrees C.
+[SPEAKER_00]: But the errors were much worse over snow.
+[SPEAKER_00]: So if you need to make measurements over
+snow, static shields have particular
+[SPEAKER_00]: problems because they're designed to block
+the radiation coming in from the top.
+[SPEAKER_00]: They're not designed to block reflected
+radiation.
+[SPEAKER_00]: So some of those errors get to one,
+one and a half C.
+[SPEAKER_00]: These are multiple measurements over a
+long period of time, all summarized.
+[SPEAKER_00]: Now we come back down to the valley.
+[SPEAKER_00]: And this is measurements in the backyard
+at Campbell Scientific.
+[SPEAKER_00]: Multiple types of shields, a sonic
+anemometer to get wind speed, multiple
+[SPEAKER_00]: replicates.
+[SPEAKER_00]: All of them have that small yellow bead
+thermistor inside the shield.
+[SPEAKER_00]: So they're all measuring an accurate
+temperature.
+[SPEAKER_00]: There's the met one.
+[SPEAKER_00]: There's the apogee.
+[SPEAKER_00]: Those are met spec shields.
+[SPEAKER_00]: So all the types of shields.
+[SPEAKER_00]: I won't go into all the brands,
+but there's a lot of stuff on here.
+[SPEAKER_00]: I think this data right here is just the
+temperature difference.
+[SPEAKER_00]: This is the variation of just the yellow
+bead thermistor.
+[SPEAKER_00]: And now we get to the data from,
+I can't remember, I think we ran this for
+[SPEAKER_00]: about a year in the field.
+[SPEAKER_00]: And this graph on, let's see, you're
+right, shows a similar thing that we saw
+[SPEAKER_00]: at Peter Sinks.
+[SPEAKER_00]: Only now, this is not over snow.
+[SPEAKER_00]: This was just over grass.
+[SPEAKER_00]: But now we compared a small thermistor
+inside the shield with a humidity probe in
+[SPEAKER_00]: the shield.
+[SPEAKER_00]: And that's how we all do it, is a humidity
+probe in that shield.
+[SPEAKER_00]: Well, that's thermally massive.
+[SPEAKER_00]: So that heats up more than the yellow bead
+thermistor.
+[SPEAKER_00]: And now even when we got pretty
+significant wind speeds, we still were
+[SPEAKER_00]: down around 0.2 degrees C heating from
+that humidity probe.
+[SPEAKER_00]: The fact that this line flattens out
+suggests there's some offset in that
+[SPEAKER_00]: humidity probe.
+[SPEAKER_00]: It didn't even go to zero by eight or nine
+meters a second.
+[SPEAKER_00]: But the humidity probes confound the
+problem because they're just big,
+[SPEAKER_00]: even if they have an accurate PRT in them.
+[SPEAKER_00]: More data.
+[SPEAKER_00]: We've done this in what we call the
+backyard at apogee instruments,
+[SPEAKER_00]: a big grassy area where we just,
+same as Campbell's, are set up to do
+[SPEAKER_00]: continuous testing of products,
+characterized long-term stability of them.
+[SPEAKER_00]: That's a picture taken from the roof of
+apogee of this line of shields.
+[SPEAKER_00]: We were pleased that the apogee shield
+slightly outperformed the RM Young shield,
+[SPEAKER_00]: even with a much smaller fan, almost a
+tenth of the power for the fan.
+[SPEAKER_00]: This is solar radiation and heating.
+[SPEAKER_00]: And now we're talking differences in
+tenths of a degree C among types of
+[SPEAKER_00]: aspirated shields.
+[SPEAKER_00]: So the air is getting small, but we're
+trying to get down as close as we can to
+[SPEAKER_00]: zero.
+[SPEAKER_00]: So that's an example of testing that we've
+done on temperature sensors and aspirated
+[SPEAKER_00]: shields.
+[SPEAKER_00]: The aspirated shield and the apogee
+shield, it has PWM modulation.
+[SPEAKER_00]: Running full blast, it takes 80 milliamps.
+[SPEAKER_00]: Now remember that RM Young is right around
+500 milliamps, so it's a big drop from
+[SPEAKER_00]: that.
+[SPEAKER_00]: But what we have found is you only need to
+run the fan full blast if it's no wind and
+[SPEAKER_00]: the sun is full.
+[SPEAKER_00]: So you can turn the fan down, especially
+at night.
+[SPEAKER_00]: You can turn the fan down.
+[SPEAKER_00]: If the wind is blowing, you can turn the
+fan down.
+[SPEAKER_00]: Sun's setting, turn the fan down.
+[SPEAKER_00]: So you can optimize power.
+[SPEAKER_00]: And it's not, we have many stations
+running that aspirated shield.
+[SPEAKER_00]: It's aspirated shield from a relatively
+small solar panel.
+[SPEAKER_00]: Still takes a lot more than the data
+logger, but it's much less than previous
+[SPEAKER_00]: aspirated shields.
+[SPEAKER_00]: This hasn't really caught on.
+[SPEAKER_00]: I mean, the apogee had steady sales of
+this.
+[SPEAKER_00]: But I still feel like, man, if people knew
+the errors they have, there'd be more
+[SPEAKER_00]: interest in trying to do aspirated shield
+measurements.
+[SPEAKER_00]: And frankly, I think most people just
+eliminate it right away because they say,
+[SPEAKER_00]: well, I don't have the power to run a fan
+aspirated shield.
+[SPEAKER_00]: I know they're better.
+[SPEAKER_00]: But boy, solar panels and batteries,
+you don't have to be that much bigger to
+[SPEAKER_00]: run the aspirated shield.
+[SPEAKER_00]: So that's temperature.
+[SPEAKER_00]: Just sensors and shields, just for getting
+an accurate measurement of temperature.
+[SPEAKER_00]: One of the places that aspirated shields
+have found an application is in
+[SPEAKER_00]: temperature monitoring in fruit orchards,
+where if you know anything about fruit
+[SPEAKER_00]: production, they live and die by late
+spring frost, which can kill the flowers
+[SPEAKER_00]: and wipe out their yield for the year.
+[SPEAKER_00]: And as the temperatures start to get close
+to freezing, they start wind machines,
+[SPEAKER_00]: they start running water sprinklers to
+keep their plants from freezing.
+[SPEAKER_00]: In Utah, the growers tell me those wind
+machines cost $10,000 an hour to run.
+[SPEAKER_00]: But it's worth it because the value of the
+crop is greater than the cost of the
+[SPEAKER_00]: running their wind machines.
+[SPEAKER_00]: $10,000 an hour.
+[SPEAKER_00]: Man, if they could delay turning those on
+for a half an hour, they paid for their
+[SPEAKER_00]: measurements.
+[SPEAKER_00]: They don't want to turn them on unless
+they have to.
+[SPEAKER_00]: But when they need them, they got to run
+them.
+[SPEAKER_00]: And how are they measuring temperature?
+[SPEAKER_00]: In a static shield.
+[SPEAKER_00]: OK.
+[SPEAKER_00]: And they say, well, that's at night.
+[SPEAKER_00]: It's not solar loading on the shield.
+[SPEAKER_00]: So I don't really have to have an
+aspirated shield.
+[SPEAKER_00]: I don't have the data in here.
+[SPEAKER_00]: But when we did tests in an orchard,
+these are calm nights.
+[SPEAKER_00]: They get radiation frost.
+[SPEAKER_00]: So it's calm and there's not wind to mix
+the air.
+[SPEAKER_00]: The lag time on those static shields was
+enormous.
+[SPEAKER_00]: I mean, the temperature in those was like
+a half an hour to reach the true air
+[SPEAKER_00]: temperature, whereas an aspirated shield
+was fast response.
+[SPEAKER_00]: They got the air temperature right away.
+[SPEAKER_00]: So the growers, the fruit growers,
+are increasingly using aspirated shields,
+[SPEAKER_00]: not just to get more accurate
+temperatures, but to get faster response
+[SPEAKER_00]: temperatures at night.
+[SPEAKER_00]: We also use them.
+[SPEAKER_00]: We have a network in Cache Valley.
+[SPEAKER_00]: We have a project here.
+[SPEAKER_00]: Can I turn these lights back on,
+Chris?
+[SPEAKER_00]: We're over here.
+[SPEAKER_00]: I can probably get them here.
+[SPEAKER_00]: Hold on and see.
+[SPEAKER_00]: There.
+[SPEAKER_00]: I'm just going to talk for a minute.
+[SPEAKER_00]: We have a project here in Cache Valley
+called the Atmospheric Mixing Project.
+[SPEAKER_00]: It's run through the university.
+[SPEAKER_00]: And so far, it's been largely funded with
+the gracious help of the instrument
+[SPEAKER_00]: companies.
+[SPEAKER_00]: But I don't know how many visits you guys
+have been here.
+[SPEAKER_00]: And you probably don't come in January.
+[SPEAKER_00]: But we get inversions all the time in
+January.
+[SPEAKER_00]: Cold air settles.
+[SPEAKER_00]: And that cold air sits there and it's
+trapped.
+[SPEAKER_00]: And all of our emissions stay with us.
+[SPEAKER_00]: And the air quality deteriorates.
+[SPEAKER_00]: So the state of Utah is getting a black
+eye for low air quality.
+[SPEAKER_00]: So they're starting to put more money into
+this.
+[SPEAKER_00]: We are interested in the magnitude of
+atmospheric mixing during these
+[SPEAKER_00]: inversions.
+[SPEAKER_00]: Because people think, oh, there's no
+mixing.
+[SPEAKER_00]: It's just trapped air.
+[SPEAKER_00]: So with these sensors, we have seen large
+eddies of air.
+[SPEAKER_00]: It's cold.
+[SPEAKER_00]: Cold.
+[SPEAKER_00]: And all of a sudden, the temperature jumps
+2 degrees C.
+[SPEAKER_00]: As warmer air mixes with the air.
+[SPEAKER_00]: And then it comes back down.
+[SPEAKER_00]: And you can see these patterns of air
+mixing in the valley.
+[SPEAKER_00]: And we would only see that with accurate
+measurements of air temperature with a
+[SPEAKER_00]: fast response shield.
+[SPEAKER_00]: That's another thing that's been helpful
+for us.
+[SPEAKER_00]: I've given talks about this project,
+Atmospheric Mixing.
+[SPEAKER_00]: And it's really of interest if you live
+here.
+[SPEAKER_00]: Because you want to have good air in the
+winter.
+[SPEAKER_00]: But it's a fascinating project.
+[SPEAKER_00]: We're using carbon dioxide as a tracer gas
+to look at the atmospheric mixing.
+[SPEAKER_00]: We're finding some really fascinating
+stuff.
+[SPEAKER_00]: There's more atmospheric mixing than we
+used to think.
+[SPEAKER_00]: And it's all because we've got good
+instruments out there so we can see it.
+[SPEAKER_00]: I told you to interrupt me if you had
+questions.
+[SPEAKER_00]: We're just listening.
+[SPEAKER_00]: I don't have comprehensive knowledge on
+all instruments.
+[SPEAKER_00]: But I don't want to talk about instruments
+that you're not interested in.
+[SPEAKER_00]: Let me ask you what things you're most
+interested in.
+[SPEAKER_00]: I don't have a picture in here.
+[SPEAKER_00]: But those were developed.
+[SPEAKER_00]: Part of my work at the university is
+funded by the fruit growers.
+[SPEAKER_00]: And Utah is not a major agricultural
+state.
+[SPEAKER_00]: But it is a major fruit growing state.
+[SPEAKER_00]: I think we're second in the nation for
+tart cherries, for example.
+[SPEAKER_00]: So I don't forget that a few hundred
+million dollars a year of fruit sold.
+[SPEAKER_00]: And so these guys need to do frost
+protection.
+[SPEAKER_00]: So we made this flat disc that's painted
+black to get a low-cost way to get a
+[SPEAKER_00]: surface temperature on a cold night with
+no wind.
+[SPEAKER_00]: And I think we call that the leaf and bud
+sensor.
+[SPEAKER_00]: It has just a thermistor sticking out too.
+[SPEAKER_00]: When you run the numbers from energy
+balance numbers, surface temperatures,
+[SPEAKER_00]: we've measured 9 degrees C colder than the
+air temperature at night.
+[SPEAKER_00]: 9 Celsius.
+[SPEAKER_00]: This is turf temperature now.
+[SPEAKER_00]: And one of our climate people,
+we have a station on campus that measures
+[SPEAKER_00]: this in real-time graphs.
+[SPEAKER_00]: And one of my favorite stories is one of
+our elite climate scientists.
+[SPEAKER_00]: Bruce, something is wrong with your
+numbers.
+[SPEAKER_00]: It says the turf is 9 degrees C colder
+than the air temperature.
+[SPEAKER_00]: And so one of my colleagues jumped in.
+[SPEAKER_00]: He says, let me give you a lecture on
+atmospheric physics.
+[SPEAKER_00]: That's real data.
+[SPEAKER_00]: There's nothing wrong with the sensors.
+[SPEAKER_00]: It's cooling to the air.
+[SPEAKER_00]: And so now a fruit grower doesn't really
+care what the air temperature is.
+[SPEAKER_00]: They care what their bud temperature is.
+[SPEAKER_00]: And so this is a low-cost way to estimate
+bud temperatures.
+[SPEAKER_00]: We often model it depending on wind speed
+and, well, mostly wind speed.
+[SPEAKER_00]: And sky, long wave radiation to the sky.
+[SPEAKER_00]: So that's why we sell that.
+[SPEAKER_00]: On that same note, this is something I use
+in teaching.
+[SPEAKER_00]: If you take a box, let me draw this.
+[SPEAKER_00]: See if I can draw and talk.
+[SPEAKER_00]: I know this analogy works because I've
+seen my students use it to teach other
+[SPEAKER_00]: students.
+[SPEAKER_00]: So it's stuck with them.
+[SPEAKER_00]: It's on that exact time topic.
+[SPEAKER_00]: And I've done this.
+[SPEAKER_00]: I've got pictures of doing this in my
+backyard.
+[SPEAKER_00]: Here's a big insulated box.
+[SPEAKER_00]: All insulated.
+[SPEAKER_00]: On the bottom of this, we put a little
+dish of water.
+[SPEAKER_00]: Paint it black, black saucer with water in
+it.
+[SPEAKER_00]: Now we take this at night, put it outside
+under a clear sky.
+[SPEAKER_00]: And let's take July.
+[SPEAKER_00]: So it's a good warm July night.
+[SPEAKER_00]: The temperature over here is 20 degrees C.
+[SPEAKER_00]: But this insulation prevents this from
+warming up.
+[SPEAKER_00]: This can be cellophane over the top or it
+can just be open, but there's not a lot of
+[SPEAKER_00]: wind.
+[SPEAKER_00]: Here's the question.
+[SPEAKER_00]: What happens to the temperature of the
+water in that dish on a clear sky night,
+[SPEAKER_00]: especially in the mountains here with
+close to outer space?
+[SPEAKER_00]: Dry air, very clear sky.
+[SPEAKER_00]: So you hook this up to your Campbell
+scientific data logger with one of those
+[SPEAKER_00]: precision thermistors.
+[SPEAKER_00]: You drill a tiny little hole, you measure
+it and you get the, yeah, I don't know,
+[SPEAKER_00]: the CR 100,000 X over here.
+[SPEAKER_00]: You measure that temperature.
+[SPEAKER_00]: The water starts to come in equilibrium
+with the sky temperature because of
+[SPEAKER_00]: radiation.
+[SPEAKER_00]: This is losing energy, shown here in red.
+[SPEAKER_00]: Losing energy by long wave radiation to
+the sky.
+[SPEAKER_00]: And it loses it and it loses it.
+[SPEAKER_00]: And the sky temperature, well,
+the temperature of outer space is zero
+[SPEAKER_00]: Kelvin.
+[SPEAKER_00]: Skies is really cold.
+[SPEAKER_00]: This can't warm back up because it's got
+all this insulation and there's not wind
+[SPEAKER_00]: to blow warm air in here.
+[SPEAKER_00]: It gets colder and colder.
+[SPEAKER_00]: And finally the water freezes on a warm
+summer night.
+[SPEAKER_00]: You can make water freeze.
+[SPEAKER_00]: So when I teach this, I show pictures of
+me with this setup sitting there night
+[SPEAKER_00]: with my computer and measuring this.
+[SPEAKER_00]: And you can make the water freeze.
+[SPEAKER_00]: Then the sun comes up and you cover it and
+you have a thermally, environmentally
+[SPEAKER_00]: cooled refrigerator.
+[SPEAKER_00]: And in fact, in some cases in the tropics,
+with no electricity, you can use this to
+[SPEAKER_00]: keep stuff cool.
+[SPEAKER_00]: But it's a powerful example of what
+radiation can do to surface temperatures
+[SPEAKER_00]: and why understanding radiation is
+important to understanding surface
+[SPEAKER_00]: temperatures beyond air temperature.
+[SPEAKER_00]: We get into this a lot because of our
+infrared sensor for surface temperatures.
+[SPEAKER_00]: And in this gradient from leaf to air,
+mostly for agricultural irrigation,
+[SPEAKER_00]: predicting transpiration rates of crops.
+[SPEAKER_00]: That's a long answer to the leaf and bud
+sensor.
+[SPEAKER_00]: But the leaf and bud sensor is a much
+cheaper sensor than the infrared stuff.
+[SPEAKER_00]: So for fruit growers, they can buy it.
+[SPEAKER_00]: Where do you sell them?
+[SPEAKER_01]: In New Zealand, you wouldn't believe it.
+[SPEAKER_01]: It's a T5.
+[SPEAKER_00]: Oh, really?
+[SPEAKER_00]: And they need to worry about freezing.
+[SPEAKER_00]: Yeah, good.
+[SPEAKER_00]: And they've worked for you?
+[SPEAKER_00]: That's good.
+[SPEAKER_00]: Yeah, the fruit growers in Utah use them.
+[SPEAKER_00]: Other measurements that you're stuck on?
+[SPEAKER_00]: If I don't know about it, I'll tell you.
+[SPEAKER_00]: Let me say a few things about humidity.
+[SPEAKER_00]: That might be the next most important
+parameter that we worry about.
+[SPEAKER_00]: And this is just now my broad experience
+over doing this.
+[SPEAKER_00]: When I was in graduate school a long time
+ago, capacitance chip sensors came out.
+[SPEAKER_00]: And Visala was the first to do these.
+[SPEAKER_00]: And everybody was, wow, you know,
+because we were really doing the wet bulb
+[SPEAKER_00]: psychrometers and man, all these super
+labor intensive ways to get humidity.
+[SPEAKER_00]: And capacitance sensors came out and they
+were a huge breakthrough.
+[SPEAKER_00]: But they were not so stable.
+[SPEAKER_00]: They get contaminated with some other gas.
+[SPEAKER_00]: And they go haywire.
+[SPEAKER_00]: That was 30 years ago.
+[SPEAKER_00]: And now we have multiple companies making
+these.
+[SPEAKER_00]: The coatings are much better.
+[SPEAKER_00]: The sensors are far more stable.
+[SPEAKER_00]: And now we use capacitance humidity
+sensors all over the place.
+[SPEAKER_00]: Both Campbell Scientific and Apogee have
+started selling capacitance type humidity
+[SPEAKER_00]: sensors from a company called EE
+Electronics.
+[SPEAKER_00]: And our tests with those over long-term
+periods of time indicate impressive
+[SPEAKER_00]: stability of those sensors.
+[SPEAKER_00]: So not only do we get better job new
+relief in air temperatures, but
+[SPEAKER_00]: capacitance humidity sensors have come a
+long way.
+[SPEAKER_00]: And they continue to come a long way.
+[SPEAKER_00]: Sensors getting better and cheaper.
+[SPEAKER_00]: That's one of the things that drives this
+whole enterprise is weather measurement is
+[SPEAKER_00]: the progress worldwide that we have made
+in better sensors and better electronics
+[SPEAKER_00]: to measure those sensors.
+[SPEAKER_00]: And of course, now the new frontier is
+just getting the data in the cloud and
+[SPEAKER_00]: getting it sent by wireless so you can see
+all the data and better summarize it in
+[SPEAKER_00]: real time.
+[SPEAKER_00]: My field is agriculture.
+[SPEAKER_00]: And the weather is not many disciplines
+where weather is more important than food
+[SPEAKER_00]: production.
+[SPEAKER_00]: So it's been a big thing for agricultural
+weather.
+[SPEAKER_00]: And of course, now climate change,
+effects of climate change continue to
+[SPEAKER_00]: drive it.
+[SPEAKER_00]: But it's fun to see the new developments
+in sensors every year, whether we build
+[SPEAKER_00]: them and we sell them or somebody else
+builds them.
+[SPEAKER_00]: Now I got to tell you a story.
+[SPEAKER_00]: There's an international show in Europe
+each year, Met Tech.
+[SPEAKER_00]: It's called Meteorological Technology
+International, MTI.
+[SPEAKER_00]: And it's all the major equipment
+manufacturers getting together and showing
+[SPEAKER_00]: their stuff.
+[SPEAKER_00]: So it's organized.
+[SPEAKER_00]: There's a company that organizes it.
+[SPEAKER_00]: And Apogee's gone.
+[SPEAKER_00]: So is Campbell's.
+[SPEAKER_00]: They're many years in a row.
+[SPEAKER_00]: And you get to know the organizers.
+[SPEAKER_00]: And so they go, wow.
+[SPEAKER_00]: We can't believe these instrument people,
+these meteorologists.
+[SPEAKER_00]: You guys are all talking to each other.
+[SPEAKER_00]: We do a show that's an automotive show.
+[SPEAKER_00]: And people put curtains around their booth
+because they're so confidential about what
+[SPEAKER_00]: they're doing.
+[SPEAKER_00]: They're just paranoid about their
+competitors finding out some little
+[SPEAKER_00]: secret.
+[SPEAKER_00]: And here you guys are just complimenting
+each other on the new instruments you're
+[SPEAKER_00]: building.
+[SPEAKER_00]: It's night and day different than the
+automotive people.
+[SPEAKER_00]: That makes this field so much fun.
+[SPEAKER_00]: It's so science driven.
+[SPEAKER_00]: And we're competing on good science,
+not smoking mirrors and things.
+[SPEAKER_00]: And that also pushes people to make better
+instruments, too.
+[SPEAKER_00]: Keep going.
+[SPEAKER_00]: How about solar radiation?
+[SPEAKER_00]: Another key parameter.
+[SPEAKER_00]: The classic, I have pictures in here of
+what thermopile pyranometers look like.
+[SPEAKER_00]: They were built by Epley for years and
+years.
+[SPEAKER_00]: When I was in graduate school,
+it was whoa, you got an Epley.
+[SPEAKER_00]: I haven't visited Epley, but they cannot
+have much of a science department because
+[SPEAKER_00]: they haven't released an improved
+pyranometer in a very long time.
+[SPEAKER_00]: But the shape is still the same.
+[SPEAKER_00]: White flying saucer with the glass dome
+and a black body underneath.
+[SPEAKER_00]: So Kipp and Zonen has been working on
+this.
+[SPEAKER_00]: And then right down the street is
+Huxaflux, both in the same city,
+[SPEAKER_00]: both making, competing with each other for
+the best pyranometers in the world.
+[SPEAKER_00]: And it's a big market because of solar
+photovoltaics, precisely measuring that.
+[SPEAKER_00]: But the instruments are still expensive.
+[SPEAKER_00]: So maybe 30 years, ago Lycor came out with
+a silicon pyranometer, way cheaper.
+[SPEAKER_00]: And it's calibrated to sun and you get
+close to the same accuracy for a fraction
+[SPEAKER_00]: of the cost.
+[SPEAKER_00]: And I think this is used worldwide.
+[SPEAKER_00]: So that became a standard on lots of
+weather stations.
+[SPEAKER_00]: And many, probably 20 years ago,
+Apogee also made a silicon pyranometer at
+[SPEAKER_00]: lower cost than Lycor at the same type of
+sensor to get solar radiation.
+[SPEAKER_00]: Those are fine as long as you have a sunny
+day in the same conditions that they were
+[SPEAKER_00]: calibrated in.
+[SPEAKER_00]: Because they subsample the solar spectrum.
+[SPEAKER_00]: And if any time you subsample and predict
+the whole thing, you're okay as long as
+[SPEAKER_00]: your calibration conditions don't change.
+[SPEAKER_00]: One of the tests Apogee has done is how
+accurate are those sensors on cloudy days?
+[SPEAKER_00]: The water vapor absorption bands mean that
+there's more shortwave.
+[SPEAKER_00]: What's all shortwave?
+[SPEAKER_00]: That more shorter wavelength radiation.
+[SPEAKER_00]: Those sensors can have up to a 14% error
+on a cloudy day.
+[SPEAKER_00]: Because of a spectral shift caused by
+water vapor absorption in the clouds.
+[SPEAKER_00]: And this has been really underappreciated.
+[SPEAKER_00]: So Apogee started looking at approaches to
+measure all the wavelengths without having
+[SPEAKER_00]: to use the cost of the black body
+pyranometer that is used by Kippensohn and
+[SPEAKER_00]: Huxaflux.
+[SPEAKER_00]: And a few years ago, so that we find
+things and test and test and test,
+[SPEAKER_00]: the whole roof is, not the whole roof,
+but most of the roof at Apogee is covered
+[SPEAKER_00]: with test sensors as always.
+[SPEAKER_00]: We built a staircase to go up there to
+keep doing tests.
+[SPEAKER_00]: Apogee developed a black body pyranometer
+that's small, it's a blue color,
+[SPEAKER_00]: that doesn't subsample the spectrum
+anymore.
+[SPEAKER_00]: Measures the whole thing.
+[SPEAKER_00]: Doesn't have that cloudy day error.
+[SPEAKER_00]: It's close to the same accuracy as those
+more expensive, larger black body
+[SPEAKER_00]: pyranometers by Kippensohn and Huxaflux.
+[SPEAKER_00]: We've got some on the other side of the
+door.
+[SPEAKER_00]: The guys will show them to you.
+[SPEAKER_00]: It's sold here by Campbell Scientific.
+[SPEAKER_00]: It's another story, but we had a lot of
+meetings to decide what color that should
+[SPEAKER_00]: be.
+[SPEAKER_00]: And actually, Campbell's chose the color,
+but it's a certain blue to be a trademark
+[SPEAKER_00]: color of blue.
+[SPEAKER_00]: And it's striking.
+[SPEAKER_00]: You see, that's a unique blue color.
+[SPEAKER_00]: And it says, Campbell Scientific on the
+front and you turn it around on the back
+[SPEAKER_00]: and it says, in two point font,
+it says, manufactured by Apogee
+[SPEAKER_00]: Instruments.
+[SPEAKER_00]: So we make that and Campbell's sells it in
+the United States.
+[SPEAKER_00]: That's a pretty big breakthrough.
+[SPEAKER_00]: That sensor is much lower cost,
+much smaller, digital output, compared to
+[SPEAKER_00]: the Delft Netherlands bigger sensors.
+[SPEAKER_00]: This is another example of a continuing
+march to get more cost effective
+[SPEAKER_00]: measurements, better measurements for
+lower cost, fast response, all of those
+[SPEAKER_00]: things.
+[SPEAKER_00]: Radiation has certainly been a core
+strength of Apogee, starting with quantum
+[SPEAKER_00]: sensors and pyranometers.
+[SPEAKER_00]: Once Apogee got a black body pyranometer,
+that led to the development of a net
+[SPEAKER_00]: radiometer.
+[SPEAKER_00]: And they're on the other side of the door.
+[SPEAKER_00]: But wow, perfect.
+[SPEAKER_00]: This is my helper here.
+[SPEAKER_00]: Thank you for remembering this.
+[SPEAKER_00]: There's a picture.
+[SPEAKER_00]: Net radiation is something that's so
+expensive that we've almost always modeled
+[SPEAKER_00]: it instead of try to measure it.
+[SPEAKER_00]: So we have some papers in the literature
+about the errors you get when you try and
+[SPEAKER_00]: model it.
+[SPEAKER_00]: And the sensors are big.
+[SPEAKER_00]: They're not only expensive, but they're
+heavy.
+[SPEAKER_00]: So with this new technology, we could make
+a much smaller net radiometer.
+[SPEAKER_00]: And net radiation means up and down short
+wave and up and down long wave radiation.
+[SPEAKER_00]: So there's four sensors in this.
+[SPEAKER_00]: And it gives you the full radiation energy
+balance for a canopy, for precision
+[SPEAKER_00]: measurements of all kinds of things,
+including irrigation requirements of
+[SPEAKER_00]: agricultural crops.
+[SPEAKER_00]: So to get reflected radiation,
+you can't be sub-sampling the radiation.
+[SPEAKER_00]: You need to measure it all.
+[SPEAKER_00]: So these went into this sensor.
+[SPEAKER_00]: Then you get the sensor.
+[SPEAKER_00]: And oh, remember those channels on the
+data logger?
+[SPEAKER_00]: You got four sensors.
+[SPEAKER_00]: You have four differential channels.
+[SPEAKER_00]: You've used up your whole data logger just
+to measure net radiation.
+[SPEAKER_00]: Here comes SDI-12 output, Modbus output.
+[SPEAKER_00]: This has SDI-12 output.
+[SPEAKER_00]: And all of those numbers are put into one
+and sent to the data logger.
+[SPEAKER_00]: And we were able to offer this at a
+considerably lower cost than the larger
+[SPEAKER_00]: ones.
+[SPEAKER_00]: And we had lots and lots of test data on
+this comparing them to Kippenzonen and
+[SPEAKER_00]: Huxaflux pyranometers.
+[SPEAKER_00]: This is another steady march of sensors.
+[SPEAKER_00]: And coupled with the digital output,
+so it's easier to interface this with a
+[SPEAKER_00]: data logger now.
+[SPEAKER_00]: Yeah, we're pleased.
+[SPEAKER_00]: Sometimes you build stuff, and it catches
+on.
+[SPEAKER_00]: And this is one that did.
+[SPEAKER_00]: The sales on this have been bigger than we
+thought they would be, the worldwide
+[SPEAKER_00]: sales.
+[SPEAKER_00]: Let's see, what else do I want to say
+about this?
+[SPEAKER_00]: Yeah, that comes from radiation
+measurement being a core expertise.
+[SPEAKER_00]: The long-wave radiation is the same thing
+as our infrared sensors, which are
+[SPEAKER_00]: mangaring long-wave radiation.
+[SPEAKER_00]: So the up and down long waves come from
+our expertise into a long wave.
+[SPEAKER_00]: Again, lots of testing.
+[SPEAKER_00]: Yes?
+[SPEAKER_01]: When you're testing, so FLE, they're old,
+but they seem to be quite well respected
+[SPEAKER_00]: by people I'm not familiar with.
+[SPEAKER_00]: They do.
+[SPEAKER_01]: How does the FLEG sensors compare to,
+say, FLEs?
+[SPEAKER_00]: Let me start by saying, if you get a good
+reputation, if you get a bad reputation,
+[SPEAKER_00]: it's hard to change it.
+[SPEAKER_00]: If you get a good reputation, hard to
+change it, too, for the reasons you say.
+[SPEAKER_00]: I mean, in fact, are my EPLIs in the
+museum, Chris?
+[SPEAKER_00]: I think one of them is.
+[SPEAKER_00]: I have some in my lab.
+[SPEAKER_00]: We don't use them anymore.
+[SPEAKER_00]: There's a couple problems with EPLIs.
+[SPEAKER_00]: One is really quite poor cosine response.
+[SPEAKER_00]: At the low angle light, it's either under
+measured or over measured.
+[SPEAKER_00]: And there's multiple papers in the
+literature on that.
+[SPEAKER_00]: And, man, if I was in charge of EPLI,
+I'd be going to work on fixing that
+[SPEAKER_00]: problem.
+[SPEAKER_00]: But to my knowledge, they have not.
+[SPEAKER_00]: They have not released new sensors that
+fix that problem.
+[SPEAKER_00]: That causes errors.
+[SPEAKER_00]: And this is a competitive market.
+[SPEAKER_00]: You're trying to get these numbers to 1%
+or 2% a day, and now you got a 5% cosine
+[SPEAKER_00]: error at the end of the day.
+[SPEAKER_00]: They've also had issues with temperature.
+[SPEAKER_00]: It has to be accurate over a range of
+temperatures.
+[SPEAKER_00]: Because all you're trying to do is solar
+radiation, not temperature.
+[SPEAKER_00]: That's one of the big things.
+[SPEAKER_00]: It's a thermopile device.
+[SPEAKER_00]: So that's one of the big things that
+Kippenzona and Huxaflux have made great
+[SPEAKER_00]: progress on, making their measurements
+more accurate.
+[SPEAKER_00]: So it depends on who you talk to.
+[SPEAKER_00]: I mean, if you're talking to kind of
+cutting-edge meteorologists, EPLI's sort
+[SPEAKER_00]: of in the dust.
+[SPEAKER_00]: But it depends how much you've looked at
+the new improvements of sensors over the
+[SPEAKER_00]: years.
+[SPEAKER_00]: I mean, I always think maybe they'll come
+out with something new.
+[SPEAKER_00]: But to my knowledge, they haven't.
+[SPEAKER_00]: I really do.
+[SPEAKER_01]: Oh,
+man.
+[SPEAKER_00]: Maybe if you had some network of EPLIs and
+you wanted to have consistency.
+[SPEAKER_00]: But I wouldn't recommend them for a new
+network.
+[SPEAKER_00]: Part of it is driven by the fierce
+competition between Huxaflux and
+[SPEAKER_00]: Kippenzona.
+[SPEAKER_00]: I mean, they're both in Delft in the
+Netherlands, and I don't know how far
+they've gone.
+[SPEAKER_00]: How far apart?
+[SPEAKER_00]: What are they?
+[SPEAKER_00]: Two or three kilometers apart or
+something?
+[SPEAKER_00]: Yeah, point three kilometers apart.
+[SPEAKER_00]: They've got binoculars looking at each
+other, I guess.
+[SPEAKER_00]: And then one of my favorites is Huxaflux
+comes out with an ad.
+[SPEAKER_00]: The quest for global domination is over.
+[SPEAKER_00]: Introducing the new Huxaflux.
+[SPEAKER_00]: That's the kind of competition they're in.
+[SPEAKER_00]: It's pretty fierce.
+[SPEAKER_00]: And they both make really good
+instruments.
+[SPEAKER_00]: But they're high-end, so it leaves the
+door open to come in at an intermediate
+[SPEAKER_00]: price point.
+[SPEAKER_00]: All instruments, you know, you draw a
+graph and see if I can draw this graph up
+[SPEAKER_00]: here.
+[SPEAKER_00]: This is going to be a really classic
+instrument.
+[SPEAKER_00]: And a graph always looks something like
+this.
+[SPEAKER_00]: And you really pay a lot of money to go
+from here to there.
+[SPEAKER_00]: It's, you know, those last few percent to
+get really expensive.
+[SPEAKER_00]: And none of us has an unlimited supply of
+money.
+[SPEAKER_00]: So we're always trying to pick the most
+cost-effective sensors.
+[SPEAKER_00]: And you go down in here and you get cheap.
+[SPEAKER_00]: So depending on what you're doing,
+there's a zone in there that's a real
+[SPEAKER_00]: cost-effective midpoint.
+[SPEAKER_00]: And that's certainly served Apogee well as
+identifying that for different markets.
+[SPEAKER_00]: If we could build something with this
+accuracy for this price, it'll be very
+[SPEAKER_00]: cost-effective.
+[SPEAKER_00]: And that's the case with this net
+radiometers and pyranometers is trying to
+[SPEAKER_00]: hit some point in here where we're almost
+as good at accuracy and half the cost,
+[SPEAKER_00]: that sort of thing.
+[SPEAKER_00]: But it depends on the application,
+too.
+[SPEAKER_00]: Which brings up customer support.
+[SPEAKER_00]: Man, if you can't educate your customers,
+you shouldn't be in business.
+[SPEAKER_00]: The goal is to help them make better
+measurements.
+[SPEAKER_00]: Teach them the options and don't
+inappropriately push your own stuff.
+[SPEAKER_00]: I mean, I would never say that the Apogee
+pyranometers are better than Kippenzonen
+[SPEAKER_00]: and Huxaflex.
+[SPEAKER_00]: They're not.
+[SPEAKER_00]: But they're close.
+[SPEAKER_00]: And here's the test data to show that.
+[SPEAKER_00]: The price is easy because you can look
+that number up.
+[SPEAKER_00]: But the performance requires a lot of test
+data.
+[SPEAKER_00]: And even specifications.
+[SPEAKER_00]: Oh, God, don't get me started on that.
+[SPEAKER_00]: People write these specs.
+[SPEAKER_00]: Andrew could tell you this, too.
+[SPEAKER_00]: Some companies exceed their specs
+regularly.
+[SPEAKER_00]: And frankly, Campbell Scientific is a
+company that exceeds their specs.
+[SPEAKER_00]: I can tell you a dozen stories where we
+tested specs.
+[SPEAKER_00]: And in every case, the data loggers
+exceeded the specs.
+[SPEAKER_00]: Some companies...
+[SPEAKER_00]: Oh, man, they're absurd.
+[SPEAKER_00]: They can't even come close to meeting the
+specs they publish.
+[SPEAKER_00]: This is lesser companies selling all kinds
+of things.
+[SPEAKER_00]: But the more a company tests a product,
+the better they can define the performance
+[SPEAKER_00]: and the specs.
+[SPEAKER_00]: It takes a long time to get the sensor to
+market when you're spending all that time
+[SPEAKER_00]: doing it.
+[SPEAKER_00]: So the goal is to help customers
+understand specifications and what's the
+[SPEAKER_00]: most appropriate sensor for their market.
+[SPEAKER_00]: And really, any company that can educate
+their customers has got customers for
+[SPEAKER_00]: life.
+[SPEAKER_00]: They love it that they learn from the
+people in that company and they will come
+[SPEAKER_00]: back.
+[SPEAKER_00]: Of course, you try to... If you do
+something wrong, you get to fix it.
+[SPEAKER_00]: All those sorts of things, too.
+[SPEAKER_00]: How we doing on time?
+[SPEAKER_00]: Yeah, it's too bad there's a door because
+it's nice to have the workshop.
+[SPEAKER_00]: My whole life is teaching, and I have the
+great honor to teach some really smart
+[SPEAKER_00]: graduate students.
+[SPEAKER_00]: Some of them are now working at
+Campbell's.
+[SPEAKER_00]: Well, that's true.
+[SPEAKER_00]: Some of them are working at Campbell's and
+some of them are working at Apogee.
+[SPEAKER_00]: And that's one of the things that makes
+the companies go, is access to the talent
+[SPEAKER_00]: of the university.
+[SPEAKER_00]: Lots of those people, they love living
+here.
+[SPEAKER_00]: They don't want to leave.
+[SPEAKER_00]: So they turn down higher paying jobs and
+stay here for work for the companies.
+[SPEAKER_00]: But one of the things I've learned about
+teaching is you never teach anything when
+[SPEAKER_00]: you stand up and give a lecture.
+[SPEAKER_00]: All the learning happens when you go
+outside and apply the theory that you
+[SPEAKER_00]: learned in the classroom.
+[SPEAKER_00]: Students come back all the time and they
+say, oh, man, I learned more in the first
+[SPEAKER_00]: year after I graduated than I did in my
+four years getting my bachelor's degree.
+[SPEAKER_00]: And I go, thank you.
+[SPEAKER_00]: We set you up for that.
+[SPEAKER_00]: All that theory, boom, everything clicked.
+[SPEAKER_00]: The learning happened when they did it.
+[SPEAKER_00]: And when they get to ask their own
+questions and drill it in.
+[SPEAKER_00]: So that's the way we set up lots of time
+to look at the instruments and ask
+[SPEAKER_00]: questions.
+[SPEAKER_00]: Get to know our people that do the
+customer support.
+[SPEAKER_00]: So when you need help, you know who to
+ask.
+[SPEAKER_00]: I'll be here and I'll be there.
+[SPEAKER_00]: And I'm happy to interact with you more.
+[SPEAKER_00]: I look forward to interacting with you
+more.
+[SPEAKER_00]: Thanks for coming.
+[SPEAKER_00]: I guess we have dinner after this too.
+[SPEAKER_00]: You guys are from all over the world.
+[SPEAKER_00]: It's a great honor to talk to you.
+[SPEAKER_00]: Thanks.
+[SPEAKER_00]: Thank you.
+Thank you.
+Thank you.
+Thank you.

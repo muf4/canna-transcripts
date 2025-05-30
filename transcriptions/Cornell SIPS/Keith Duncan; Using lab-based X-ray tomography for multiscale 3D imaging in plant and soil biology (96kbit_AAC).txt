@@ -1,0 +1,1702 @@
+[SPEAKER_04]: This is a production of Cornell
+University.
+[SPEAKER_00]: Jeremy, thanks, Lynn, for that wonderful
+introduction and for decades of friendship
+[SPEAKER_00]: and professional collaboration.
+[SPEAKER_00]: And thank you for the opportunity to share
+our research program at the Danforth
+[SPEAKER_00]: Center with Cornell and everyone who's
+doing some fantastic plant science here.
+[SPEAKER_00]: You might see some familiar faces,
+some familiar references to Cornell folks.
+[SPEAKER_00]: As Lynn said, I'm the director of the
+x-ray imaging facility at the Danforth
+[SPEAKER_00]: Center.
+[SPEAKER_00]: And if you are not already aware,
+the Danforth Center is the world's largest
+[SPEAKER_00]: nonprofit independent plant science
+research institute.
+[SPEAKER_00]: And we have the fortunate position to
+really look into a lot of issues in plant
+[SPEAKER_00]: science, especially food security,
+that other places don't really have the
+[SPEAKER_00]: freedom or the support to do.
+[SPEAKER_00]: I'm a research scientist in Dr. Chris
+Top's lab.
+[SPEAKER_00]: Chris is the PI.
+[SPEAKER_00]: And he started the lab in 2013 using
+phenotyping to look at root biology.
+[SPEAKER_00]: And that has expanded to include not only
+roots and genetics, but everything
+[SPEAKER_00]: surrounding the roots.
+[SPEAKER_00]: So there's a wide range of expertise that
+we share.
+[SPEAKER_00]: And as I expect, many of you here are
+starting to realize that no one lab will
+[SPEAKER_00]: have nearly enough expertise to get
+everything.
+[SPEAKER_00]: done.
+[SPEAKER_00]: You must collaborate.
+[SPEAKER_00]: You must find ways to work with your
+colleagues to really pull more of the
+[SPEAKER_00]: science out of all these projects.
+[SPEAKER_00]: So you can see the list on the left,
+plant genotypes and genetics and
+[SPEAKER_00]: phenotyping, my background in microscopy
+and imaging, there's cell biology,
+[SPEAKER_00]: there's ag engineering, chemical
+engineering, and perhaps most importantly,
+[SPEAKER_00]: is computational science, because all the
+beautiful images are mostly just greeting
+[SPEAKER_00]: cards until we can actually pull some of
+that biological information back out the
+[SPEAKER_00]: other end of these really cool 3D volumes.
+[SPEAKER_00]: So a couple different headings today.
+[SPEAKER_00]: This is lab based x ray microscopy,
+as opposed to working at a synchrotron.
+[SPEAKER_00]: The lab base makes it very, very
+accessible.
+[SPEAKER_00]: There's of course, trade offs compared to
+synchrotron imaging.
+[SPEAKER_00]: So I'll cover x ray tomography.
+[SPEAKER_00]: Folks often say it's micro CT or nano CT
+or macro.
+[SPEAKER_00]: No, that's just the resolution you're
+dealing with.
+[SPEAKER_00]: It's all the same instrument.
+[SPEAKER_00]: So we have an x ray tomography instrument,
+we have an x ray microscope, which
+[SPEAKER_00]: generates images in a slightly different
+way.
+[SPEAKER_00]: There's specific application in volume
+electron microscopy, that is using XRM as
+[SPEAKER_00]: a roadmap to show you where in your resin
+block you want to go for organelle level
+[SPEAKER_00]: volume imaging with with a serial block
+face SEM or a fibsum.
+[SPEAKER_00]: The instrumentation that does tomography
+at the nanometer scale.
+[SPEAKER_00]: We've done some really sort of exciting
+pioneering work looking at mycorrhizal
+[SPEAKER_00]: fungi in situ, which is a really big
+challenge.
+[SPEAKER_00]: And we've been recently getting into
+looking at x ray imaging of field soil to
+[SPEAKER_00]: try to see what can we understand about
+the 3D structure of soil at multiple
+[SPEAKER_00]: scales.
+[SPEAKER_00]: So to begin with, coming up on eight years
+this August, we took delivery of a large
+[SPEAKER_00]: format industrial scale x ray tomography
+instrument.
+[SPEAKER_00]: This has been a collaboration with valent
+biosciences who make a lot of of
+[SPEAKER_00]: biorationals and mycorrhizal products for
+the commercial market in addition to part
+[SPEAKER_00]: of an NSF grant.
+[SPEAKER_00]: Now, these large scale industrial
+instruments are frequently found in
+[SPEAKER_00]: automotive and aerospace.
+[SPEAKER_00]: Boeing will probably have a dozen of these
+to look at aircraft parts.
+[SPEAKER_00]: They have to do non destructive imaging of
+aircraft parts to confirm that they're in
+[SPEAKER_00]: good shape.
+[SPEAKER_00]: And having taken two different flights to
+get here, I'm glad they do that.
+[SPEAKER_00]: They know the parts are working,
+but they have to certify that all the
+[SPEAKER_00]: parts are good.
+[SPEAKER_00]: So they have very large cabinets.
+[SPEAKER_00]: They can handle very heavy weights.
+[SPEAKER_00]: They have a lot of interior space to work
+with.
+[SPEAKER_00]: And these were the advantages that we
+found in the large format instrument.
+[SPEAKER_00]: A quick review of how we generate image
+data using x ray tomography.
+[SPEAKER_00]: The setup is relatively straightforward.
+[SPEAKER_00]: You have an x ray source.
+[SPEAKER_00]: Sample sits on a turntable in the middle
+and you have a detector which collects the
+[SPEAKER_00]: image.
+[SPEAKER_00]: We broadcast x rays through the sample
+that impinges on the detector.
+[SPEAKER_00]: We'll rotate that turntable over typically
+360 degrees.
+[SPEAKER_00]: We'll collect thousands of images from
+around all those angles and then
+[SPEAKER_00]: computationally reassemble all those
+images into a 3D volume that we can now
+[SPEAKER_00]: explore electronically.
+[SPEAKER_00]: A lot of the animations that you'll see
+today, certainly the colorful ones were
+[SPEAKER_00]: done by my senior technician, Clara Lebo.
+[SPEAKER_00]: She's been developing her undergraduate
+degree in art, her master's degree in
+[SPEAKER_00]: electron microscopy and combining them to
+really make some stunning and striking
+[SPEAKER_00]: ways of presenting these 3D volumes.
+[SPEAKER_00]: The practical offshoot is we can study
+these things without tearing them apart.
+[SPEAKER_00]: If you wanted to count every seed inside
+this pepper, you could do that digitally
+[SPEAKER_00]: without having to hack it apart.
+[SPEAKER_00]: Some of the very first work we did was
+actually in collaboration with Jason Mondo
+[SPEAKER_00]: who's at Geneva.
+[SPEAKER_00]: Hopefully you're online there,
+Jason.
+[SPEAKER_00]: Hello.
+[SPEAKER_00]: They provided hundreds of grape rachises.
+[SPEAKER_00]: These are the stems left behind after the
+berries of the grape are gone.
+[SPEAKER_00]: And if you want to improve grape
+varieties, you can't just focus on making
+[SPEAKER_00]: big berries.
+[SPEAKER_00]: You need to understand the underlying 3D
+architecture of what's going to hold those
+[SPEAKER_00]: berries and the enormous amount of
+variability that already exists in these
+[SPEAKER_00]: systems.
+[SPEAKER_00]: So certainly with our eyes, we can look at
+all the different grape bunches and see
+[SPEAKER_00]: that they're very, very different.
+[SPEAKER_00]: But how do we quantify these differences?
+[SPEAKER_00]: So what we did is we scanned hundreds of
+these grape rachises.
+[SPEAKER_00]: And when you are fortunate enough to work
+with an applied mathematician like Mao Li,
+[SPEAKER_00]: whose one of her expertise areas is
+looking at topology.
+[SPEAKER_00]: How do you evaluate a 3D structure?
+[SPEAKER_00]: And so she uses something called
+persistent homology, which takes a
+[SPEAKER_00]: geodesic distance that you measure from
+one end of a complicated structure to the
+[SPEAKER_00]: other.
+[SPEAKER_00]: And the timing at which various components
+fuse into one another or disappear can be
+[SPEAKER_00]: mapped as a barcode.
+[SPEAKER_00]: And this animation illustrates as you go
+from the tips down into the central trunk
+[SPEAKER_00]: and down, the various components start to
+disappear and get melded into one.
+[SPEAKER_00]: And these can be portrayed as a barcode.
+[SPEAKER_00]: And so what that allows you to do is take
+many different complicated branching
+[SPEAKER_00]: structures and mathematically distinguish
+them using this barcode sort of
+[SPEAKER_00]: architecture.
+[SPEAKER_00]: Again, this is Mao's expertise,
+certainly not mine.
+[SPEAKER_00]: So I am exceedingly fortunate to work with
+such experts.
+[SPEAKER_00]: Margaret knows Mao very well also.
+[SPEAKER_00]: Yes?
+[SPEAKER_02]: The bell pepper that you had up there
+before, assuming that the instrument and
+[SPEAKER_02]: everything is all set up, how long does it
+take for the machine to do the scanning to
+[SPEAKER_02]: generate the information, which then
+ultimately leads to the video?
+[SPEAKER_00]: Yeah, so the question is specifically that
+bell pepper scan, how long does it take to
+[SPEAKER_00]: image?
+[SPEAKER_00]: And for that particular bell pepper,
+it was about 30 minutes.
+[SPEAKER_00]: It's relatively non-dense, relatively easy
+imaging.
+[SPEAKER_00]: So a 30-minute scan typically has 3600,
+4500 projections.
+[SPEAKER_00]: We can do it shorter.
+[SPEAKER_00]: It will be lower resolution.
+[SPEAKER_00]: We can go longer, higher resolution.
+[SPEAKER_00]: So there's a window within which we work.
+[SPEAKER_00]: But for something low density like that,
+a 30-minute scan covered that.
+[SPEAKER_00]: So jumping back into persistent homology,
+it's a way to measure all these unique 3D
+[SPEAKER_00]: scans of all these hundreds of rachises
+that we did.
+[SPEAKER_00]: So I provided all the 3D data to Mao.
+[SPEAKER_00]: She ran these 3D shapes.
+[SPEAKER_00]: We extracted surface volumes.
+[SPEAKER_00]: She put the surface volumes through a
+persistent homology measurement tool that
+[SPEAKER_00]: she engineered and then used linear
+discriminant analysis to group these
+[SPEAKER_00]: persistent homology measurements based on
+their characteristics.
+[SPEAKER_00]: And what turned out was this LDA grouping
+of all the phenotypes, all the different
+[SPEAKER_00]: 3D measurements of the great rachises.
+[SPEAKER_00]: Corresponded very nicely to the actual
+genotypes.
+[SPEAKER_00]: And it mapped very, very well.
+[SPEAKER_00]: So the very broad range of shapes actually
+linked very nicely to the differences in
+[SPEAKER_00]: the genotype.
+[SPEAKER_00]: So Mao was really the spearhead of the
+analysis side of that.
+[SPEAKER_00]: Again, I had the easy part.
+[SPEAKER_00]: I just kept putting rachises in and
+scanning them and getting these wonderful
+[SPEAKER_00]: data back from Mao showing what we were
+learning from it.
+[SPEAKER_00]: But the other thing we wanted to learn
+was, can we use this in a predictive
+[SPEAKER_00]: sense?
+[SPEAKER_00]: Can we scan actual grape bunches and start
+to incorporate the size of the berry and
+[SPEAKER_00]: the distribution of the berries along the
+grape rachis to start to come up with
+[SPEAKER_00]: modeling rules for how does a bunch of
+grapes form?
+[SPEAKER_00]: What are the rules that govern the shape?
+[SPEAKER_00]: Does it stop at a certain point?
+[SPEAKER_00]: Does it stop when it contacts?
+[SPEAKER_00]: Does it stop at a certain weight?
+[SPEAKER_00]: And these are some of the measurement data
+that went into this paper that Mao,
+[SPEAKER_00]: again, wrote.
+[SPEAKER_00]: And Jason was part of, I was a part of Dan
+Chitwood, a number of folks who really
+[SPEAKER_00]: contributed to understanding more about
+how these objects occupy 3D space.
+[SPEAKER_00]: And so again, this is just an animation
+that Mao put together that illustrates
+[SPEAKER_00]: using these rules how berries might grow
+and how they form.
+[SPEAKER_00]: But it begins with mapping the rachis
+itself and then adding the modeling
+[SPEAKER_00]: component that we got from the berries.
+[SPEAKER_00]: Sorghum panicles, sorghum is a very
+important crop for food security in many
+[SPEAKER_00]: areas of the world.
+[SPEAKER_00]: It grows often in places where corn does
+not.
+[SPEAKER_00]: From the image here, you can see that it's
+tremendous variability in panicle
+[SPEAKER_00]: architecture.
+[SPEAKER_00]: When I started at the Danforth,
+there were a few scientists who had
+[SPEAKER_00]: collections of hundreds and hundreds of
+different panicles from an association of
+[SPEAKER_00]: Mao.
+[SPEAKER_00]: And so we realized that an X-ray scan of
+an entire panicle would give us a really
+[SPEAKER_00]: data-rich information to work with.
+[SPEAKER_00]: So not only could we see every individual
+grain, but then we could also see the
+[SPEAKER_00]: underlying architecture of the panicle
+itself, all the branches that hold on to
+[SPEAKER_00]: the grains.
+[SPEAKER_00]: So again, if you're breeding sorghum and
+you want more grains, you need to
+[SPEAKER_00]: understand what the impact is on the
+supporting architecture.
+[SPEAKER_00]: And again, we're very fortunate to work
+with very talented post-docs.
+[SPEAKER_00]: Mao, again, was part of this, but Ray
+Xiao, who's now a scientist at Wageningen
+[SPEAKER_00]: in the Netherlands, they took all the
+data.
+[SPEAKER_00]: We scanned over 900 sorghum panicles.
+[SPEAKER_00]: And what they were able to do was to use
+the scan data to, as you can see from this
+[SPEAKER_00]: graph, map where along the panicle the
+most grains were deposited.
+[SPEAKER_00]: Was it most in the middle, most at the
+ends?
+[SPEAKER_00]: And how did that vary across the 900 in
+the population?
+[SPEAKER_00]: Zoom in and actually analyze the shape of
+every individual grain.
+[SPEAKER_00]: How round were they, how spherical,
+how ellipsoid, and how was that shape
+[SPEAKER_00]: range distributed across the 900
+varieties?
+[SPEAKER_00]: And then electronically remove every
+single grain, not by hand, but
+[SPEAKER_00]: electronically, and then leave behind the
+branching architecture and map that.
+[SPEAKER_00]: So now these are all mappable,
+measurable 3D trait data, phenotype data,
+[SPEAKER_00]: that can be compared using multivariate
+statistics amongst all these 900 different
+[SPEAKER_00]: varieties.
+[SPEAKER_00]: And what they found, that the conventional
+wisdom was the shape of the panicle
+[SPEAKER_00]: dictated the genetics.
+[SPEAKER_00]: And in fact, that was not the case.
+[SPEAKER_00]: You could find the same examples of
+panicle architecture across all the
+[SPEAKER_00]: genotypes.
+[SPEAKER_00]: So that was not the measure of interest.
+[SPEAKER_00]: And again, working with all-stars like
+Toby Kellogg in the field of grass and
+[SPEAKER_00]: grass biology is just one of the benefits
+of being at the Danforth, surrounded by
+[SPEAKER_00]: just really phenomenal people that raise
+your game.
+[SPEAKER_00]: Far more important than that is a
+distillery located in downtown St. Louis,
+[SPEAKER_00]: where a friend of mine, Dave Weglertz,
+makes a really spectacular sorghum
+[SPEAKER_00]: whiskey.
+[SPEAKER_00]: So if you ever get to St. Louis,
+you have to go to this distillery.
+[SPEAKER_00]: It's just four blocks from Bush Stadium,
+if you go to the ball game.
+[SPEAKER_00]: And he'd love to give you samples of the
+sorghum whiskey.
+[SPEAKER_00]: And you can see off to the side some of
+the sorghum panicles.
+[SPEAKER_00]: So always some practical input from the
+imaging that we're doing.
+[SPEAKER_00]: Again, I told you the top lab started out
+looking at corn roots and corn root
+[SPEAKER_00]: biology.
+[SPEAKER_00]: So how does one actually measure and
+phenotype maize roots, when obviously
+[SPEAKER_00]: everything important is happening below
+ground?
+[SPEAKER_00]: So we've been breeding plants as humans
+for thousands of years, but only breeding
+[SPEAKER_00]: what we can see and improve.
+[SPEAKER_00]: And along with that came root traits.
+[SPEAKER_00]: They are there.
+[SPEAKER_00]: They vary.
+[SPEAKER_00]: But we've not been able to work with them
+very efficiently.
+[SPEAKER_00]: So when you look at these 15 different
+maize root crowns, it's a very informative
+[SPEAKER_00]: region, right where the roots come
+together, the nexus, right at the soil
+[SPEAKER_00]: line.
+[SPEAKER_00]: They were all grown in the greenhouse in
+an artificial medium, in great big tree
+[SPEAKER_00]: pots.
+[SPEAKER_00]: So the environmental conditions were as
+identical as we can practically make them.
+[SPEAKER_00]: So you see the huge variety evident.
+[SPEAKER_00]: Clearly, the genes are playing a big role
+in making roots decide how to occupy 3D
+[SPEAKER_00]: space.
+[SPEAKER_00]: We want to get a handle on those genes.
+[SPEAKER_00]: We want to find a good strategy for doing
+that.
+[SPEAKER_00]: So for us, it begins with measurement.
+[SPEAKER_00]: So we'll plant breeding populations out in
+our research fields.
+[SPEAKER_00]: And then the whole lab goes out there with
+shovels and lots of coolers of water and
+[SPEAKER_00]: all sorts of bribes.
+[SPEAKER_00]: And it's literally shovel-o-mix.
+[SPEAKER_00]: A shovel will dig up a useful volume right
+around that root crown.
+[SPEAKER_00]: And then they all get brought back to the
+lab.
+[SPEAKER_00]: They get washed.
+[SPEAKER_00]: We have washing stations and dried.
+[SPEAKER_00]: And that gives us really a very rich data
+source that describes 3D architecture,
+[SPEAKER_00]: because the maize root crowns are
+relatively well-lignified at this stage.
+[SPEAKER_00]: They hold their shape pretty well.
+[SPEAKER_00]: So comparisons between genotypes are
+valid.
+[SPEAKER_00]: So what we can do is a very rapid
+three-minute scan, because we're not so
+[SPEAKER_00]: interested in the internal details.
+[SPEAKER_00]: But it gives us a great model of the 3D
+shape.
+[SPEAKER_00]: And that's what we're interested in.
+[SPEAKER_00]: How can we get 3D trait information about
+how roots occupy 3D space?
+[SPEAKER_00]: And again, I get the easy part.
+[SPEAKER_00]: I get the fun part.
+[SPEAKER_00]: I get to scan stuff and then dump
+terabytes of data on our poor
+[SPEAKER_00]: computational scientists who have to pull
+information back out.
+[SPEAKER_00]: And what they've been able to do is
+generate a number of trait extraction
+[SPEAKER_00]: pipelines.
+[SPEAKER_00]: These are computational pipelines.
+[SPEAKER_00]: The first one looks at overall,
+how does that root crown occupy 3D space?
+[SPEAKER_00]: So Ni and Mao and Tim and Ray developed
+this computational pipeline which in
+[SPEAKER_00]: stages takes a 3D volume and then
+binarizes it, skeletonizes it,
+[SPEAKER_00]: and then allows it to use the geometry
+tools available in many software packages
+[SPEAKER_00]: to map how this complicated structure
+occupies 3D space.
+[SPEAKER_00]: And any difference we see there,
+we can assume relatively equivalent
+[SPEAKER_00]: environmental conditions.
+[SPEAKER_00]: We can start to have measurements that
+differ across phenotypes.
+[SPEAKER_00]: The more measurement differences we have
+in phenotypes, let's compare that to the
+[SPEAKER_00]: actual DNA sequences where we can
+obviously see differences, but we don't
+[SPEAKER_00]: know which are the important ones.
+[SPEAKER_00]: To what degree can we use multivariate
+statistics to map the measured phenotypic
+[SPEAKER_00]: differences onto the observed sequence
+differences and start to zoom in on
+[SPEAKER_00]: potential genes that control root
+architecture?
+[SPEAKER_00]: We worked with colleagues at Washington
+University in the computer science
+[SPEAKER_00]: program, Tao Zhu's lab, and this was Dan's
+lab.
+[SPEAKER_00]: We used Dan's PhD work to develop Topo
+root, which is a different type of
+[SPEAKER_00]: pipeline that starts with the same data
+but now starts to look at individual high
+[SPEAKER_00]: fidelity root traits.
+[SPEAKER_00]: How are they branching?
+[SPEAKER_00]: Where are they branching?
+[SPEAKER_00]: How many branches?
+[SPEAKER_00]: And so we have sort of different scales of
+these pipelines to pull as much 3D trait
+[SPEAKER_00]: information out the other end as we can.
+[SPEAKER_00]: It is possible to do live plant imaging.
+[SPEAKER_00]: Again, we have the large industrial scale
+instrument, and Alex actually got his
+[SPEAKER_00]: undergraduate degree here at Cornell.
+[SPEAKER_00]: He's a PhD student in the lab.
+[SPEAKER_00]: He's got a really interesting mutant that
+is altered in its ability to make nodal
+[SPEAKER_00]: roots.
+[SPEAKER_00]: So we want to see where do nodal roots
+form or don't form.
+[SPEAKER_00]: If they don't form, did they never even
+start or did they start and abort?
+[SPEAKER_00]: What's the fate?
+[SPEAKER_00]: What's controlling?
+[SPEAKER_00]: What's the morphology of that?
+[SPEAKER_00]: So we can actually do in vivo x-ray
+imaging because these are relatively
+[SPEAKER_00]: non-dense tissues.
+[SPEAKER_00]: So that's a living core plant.
+[SPEAKER_00]: This is actually, we did this last week.
+[SPEAKER_00]: We're looking at that region right at the
+soil line because Alex is interested in
+[SPEAKER_00]: nodal root formation right in those first
+few nodes, right under the soil and then
+[SPEAKER_00]: the first node above the soil.
+[SPEAKER_00]: So that's live imaging.
+[SPEAKER_00]: The scan was just seven minutes long,
+relatively low energy.
+[SPEAKER_00]: But what it gives us is such incredibly
+rich detailed 3D information that Alex
+[SPEAKER_00]: this week is looking at tip stacks that go
+through all this.
+[SPEAKER_00]: And so he has high resolution data through
+this entire complicated region,
+[SPEAKER_00]: which will now be pretty straightforward
+for him to evaluate how many and where
+[SPEAKER_00]: nodal roots are or are not between the
+wild type and the mutant.
+[SPEAKER_00]: So this is an example of what we're doing
+immediately.
+[SPEAKER_00]: And we were fortunate enough to put
+together a book chapter specifically on
+[SPEAKER_00]: phenotyping using this large format x-ray
+tomography instrument.
+[SPEAKER_00]: But of course, we're a root lab.
+[SPEAKER_00]: We want to know what's going on
+underground.
+[SPEAKER_00]: But short of our tornado, it's difficult
+to just sort of peel back what's going on
+[SPEAKER_00]: to look directly at what's happening
+without fundamentally changing exactly
+[SPEAKER_00]: what it is we want to measure.
+[SPEAKER_00]: So we're devising systems to do in situ
+imaging of roots.
+[SPEAKER_00]: And this is what one of those setups look
+like.
+[SPEAKER_00]: It's foam core PVC.
+[SPEAKER_00]: It's relatively non-dense.
+[SPEAKER_00]: It's not the heavy stuff for construction,
+but much more lighter weight for food and
+[SPEAKER_00]: water transport.
+[SPEAKER_00]: And we use a variety of diameters.
+[SPEAKER_00]: But when you look through it, this is an
+example of a live image.
+[SPEAKER_00]: This isn't live, but it's a single 2D shot
+of a radiograph.
+[SPEAKER_00]: And it's really hard to see anything in
+this kind of view.
+[SPEAKER_00]: So we'll take, again, thousands of images
+through the entire volume and then use
+[SPEAKER_00]: computer reconstruction to rebuild the
+volume.
+[SPEAKER_00]: So this is a fly through looking from top
+to bottom.
+[SPEAKER_00]: And with our eyes, it's relatively easy to
+spot the roots, certainly the primary
+[SPEAKER_00]: roots and the secondaries.
+[SPEAKER_00]: But trying to find the laterals,
+it starts to get more difficult.
+[SPEAKER_00]: And that's always going to be the problem
+is resolution.
+[SPEAKER_00]: I'll get to that shortly.
+[SPEAKER_00]: But what this allows us to do,
+if I can see the roots, then there is
+[SPEAKER_00]: software out there that allows me to
+iteratively teach a computer how to find
+[SPEAKER_00]: and identify the roots, how to identify
+the soil, how to identify the air,
+[SPEAKER_00]: how to identify the sides of the pot,
+because I want everything removed except
+[SPEAKER_00]: to the roots.
+[SPEAKER_00]: Because if we can do that, now we have
+effectively a root crown.
+[SPEAKER_00]: We have existing pipelines.
+[SPEAKER_00]: We can put that root crown in situ scan
+through that pipeline and start to pull
+[SPEAKER_00]: out 3D root traits.
+[SPEAKER_00]: So that is the biggest hurdle that anyone
+in tomography has is segmentation.
+[SPEAKER_00]: How do you teach a computer to only
+measure what you want to see and discount
+[SPEAKER_00]: everything else?
+[SPEAKER_00]: We're getting there.
+[SPEAKER_00]: I did this particular segmentation,
+but utterly impractically, it took me
+[SPEAKER_00]: about three weeks for one volume.
+[SPEAKER_00]: Part of that is the scan size.
+[SPEAKER_00]: This is about 45 gigabytes.
+[SPEAKER_00]: Because you need all that information.
+[SPEAKER_00]: The more information, the better you can
+train the model, but the slower it goes.
+[SPEAKER_00]: So if you downsize, you now lose the
+resolution that you need to train a model.
+[SPEAKER_00]: It's a horrible trade off.
+[SPEAKER_00]: So one of the most frequently asked
+questions I ever get is, what resolution
+[SPEAKER_00]: can be achieved?
+[SPEAKER_00]: Well, on the left, on one side is a big
+pumpkin.
+[SPEAKER_00]: That's very large.
+[SPEAKER_00]: On the right is an acorn, much,
+much smaller.
+[SPEAKER_00]: The answer, of course, is it depends.
+[SPEAKER_00]: The bigger your sample, the lower the
+resolution.
+[SPEAKER_00]: That's true for all imaging and
+microscopy.
+[SPEAKER_00]: But specifically, if we're talking about
+in situ root imaging, the bigger the pot,
+[SPEAKER_00]: the more dense the material, the lower the
+resolution.
+[SPEAKER_00]: So effectively, what we're going to do is
+choose different pots based on the biology
+[SPEAKER_00]: we want.
+[SPEAKER_00]: If we just want to see where primary roots
+go, we'll use a big pot.
+[SPEAKER_00]: We'll never see laterals.
+[SPEAKER_00]: To see laterals, we have to use a much
+smaller diameter.
+[SPEAKER_00]: But that is as unusual as possible because
+the roots immediately hit the sides and
+[SPEAKER_00]: they bundle up.
+[SPEAKER_00]: And so you have to take a variety pack way
+of approaching different questions.
+[SPEAKER_00]: So resolution varies inversely with pot
+diameter.
+[SPEAKER_00]: Scan time increases with higher
+resolution.
+[SPEAKER_00]: Like I said, you can increase the number
+of projections.
+[SPEAKER_00]: You get better resolution.
+[SPEAKER_00]: But you get gigantic file sizes,
+at least 40 gigabytes per volume.
+[SPEAKER_00]: And that's just a lot of heavy lifting in
+addition to the massive problem that we
+[SPEAKER_00]: have with data management, data storage.
+[SPEAKER_00]: We've got hundreds of terabytes.
+[SPEAKER_00]: Actually, I think we're over a petabyte
+now just with the x-ray stuff.
+[SPEAKER_00]: And then what do you grow the plants in?
+[SPEAKER_00]: Ideally, you want to use field soil,
+but that's really dense.
+[SPEAKER_00]: So the more dense something is,
+the lower the resolution because you have
+[SPEAKER_00]: to blast more x-ray energy to get through.
+[SPEAKER_00]: So you use various artificial media,
+which are less dense, but sort of
+[SPEAKER_00]: departing from a natural field soil.
+[SPEAKER_00]: So again, lots and lots of trade-offs.
+[SPEAKER_00]: Resolution versus size versus time versus
+the growth medium.
+[SPEAKER_00]: And ultimately, we want to get as much as
+possible.
+[SPEAKER_00]: We've got this lovely Kieselbach volume.
+[SPEAKER_00]: And the hand-drawn images are just
+spectacular.
+[SPEAKER_00]: But again, we're getting a tiny glimpse,
+whether it's excavated root crowns or a
+[SPEAKER_00]: little in-situ pot that we grow for two or
+three weeks.
+[SPEAKER_00]: It's a proxy for what's actually
+happening.
+[SPEAKER_00]: So we're always dealing with trade-offs.
+[SPEAKER_00]: So root imaging, we can get lots of useful
+information.
+[SPEAKER_00]: And we keep sneaking up on what's actually
+happening in the field.
+[SPEAKER_00]: But we'll never get there.
+[SPEAKER_00]: There's never a physical system where
+you're going to be able to grow
+[SPEAKER_00]: field-sized plants inside the cavity.
+[SPEAKER_00]: It's the cabinet of an x-ray chamber.
+[SPEAKER_00]: You simply can't.
+[SPEAKER_00]: So we have to find as many proxies as
+possible to inform what we're doing.
+[SPEAKER_00]: The large-format instrument does hit a
+resolution limit when you want to see
+[SPEAKER_00]: very, very fine details.
+[SPEAKER_00]: And this is exemplified by this soybean
+axillary bud system.
+[SPEAKER_00]: So the live images on the phone image is
+on the left.
+[SPEAKER_00]: It's about the size of a dime,
+maybe.
+[SPEAKER_00]: But it's very complicated.
+[SPEAKER_00]: It's a very intricate structure,
+lots of different small things going on
+[SPEAKER_00]: all in one small space.
+[SPEAKER_00]: There is no microscope that will show you
+what that looks like in 3D if it's intact.
+[SPEAKER_00]: Any light microscope, you'll have to slice
+it, squash it, make it small, electron
+[SPEAKER_00]: microscopy, embed it in resin,
+and cut the little tiny blocks.
+[SPEAKER_00]: You'll never get that intact structure.
+[SPEAKER_00]: And that's where the x-ray microscope
+absolutely shines.
+[SPEAKER_00]: So this is what the inside of the system
+looks like.
+[SPEAKER_00]: Again, Valent and their parent company,
+Sumitomo Chemical, were very interested in
+[SPEAKER_00]: mycorrhizal fungi, root-soil-microbe
+interactions, as well as carbon
+[SPEAKER_00]: sequestration.
+[SPEAKER_00]: So they've been generous supporters of the
+lab, in addition to the Danforth Center
+[SPEAKER_00]: itself funding a third of this instrument.
+[SPEAKER_00]: And in fact, you can see by the labels
+that there are actually objective lenses
+[SPEAKER_00]: that you swing in.
+[SPEAKER_00]: So you can see that there are actually
+objective lenses that you swing into the
+[SPEAKER_00]: beam path in order to magnify some of the
+imaging.
+[SPEAKER_00]: So it's important to compare how
+conventional x-ray tomography generates an
+[SPEAKER_00]: image with the x-ray microscope.
+[SPEAKER_00]: So recall that conventional is just basic
+geometry of source, sample, detector.
+[SPEAKER_00]: And varying those distances changes your
+magnification and your resolution.
+[SPEAKER_00]: The x-ray microscope, you still also have
+an x-ray source, which projects x-rays
+[SPEAKER_00]: through a sample.
+[SPEAKER_00]: But what that does is the x-rays strike a
+scintillator.
+[SPEAKER_00]: The scintillator converts x-rays into
+light, and that's mounted on the front of
+[SPEAKER_00]: an objective lens.
+[SPEAKER_00]: So that's where you get the scintillator
+x-ray to light, mounted on the lens,
+[SPEAKER_00]: and that's how you generate the 3D image.
+[SPEAKER_00]: It's, unfortunately for the lab-based
+systems, a relatively inefficient process.
+[SPEAKER_00]: So the scan times take much, much longer.
+[SPEAKER_00]: Again, always trade-offs.
+[SPEAKER_00]: But what you're able to get out the other
+end is, I never get tired of it.
+[SPEAKER_00]: Every single day I come in, I get to see
+something that no one on the planet has
+[SPEAKER_00]: seen before.
+[SPEAKER_00]: And often, it's just stunning.
+[SPEAKER_00]: So if we look at this soybean axial bud,
+typically it's fixed and contrast
+[SPEAKER_00]: enhanced.
+[SPEAKER_00]: So it's not typically live imaging.
+[SPEAKER_00]: But with a large format instrument,
+this is about as good as you get.
+[SPEAKER_00]: To look at it with the x-ray microscope,
+you just get a different universe of data.
+[SPEAKER_00]: I've seen beautiful paintings and drawings
+of plant anatomy throughout my entire
+[SPEAKER_00]: career, but it was not until I sat down at
+the workstation and saw my first soybean
+[SPEAKER_00]: floret scan when I actually appreciated
+how the anthers are distributed in 3D
+[SPEAKER_00]: space right around the stigmatic surface
+and how sensible that was.
+[SPEAKER_00]: But you never get that in 3D, but here you
+do.
+[SPEAKER_00]: Developing ovules there, pollen-packed
+anthers distributed right around the
+[SPEAKER_00]: reproductive surface.
+[SPEAKER_00]: It is fixed and contrast enhanced.
+[SPEAKER_00]: So the only way you can do developmental
+studies is if you fix them over
+[SPEAKER_00]: developmental time.
+[SPEAKER_00]: So time and relative dimension in space,
+for any Doctor Who fans, TARDIS,
+[SPEAKER_00]: is part of what we have to do to try to
+get developmental series using this
+[SPEAKER_00]: imaging technology.
+[SPEAKER_00]: I was talking to Margaret earlier about
+how striking some of the 3D volumes are.
+[SPEAKER_00]: They're very impactful, but not
+necessarily scientifically useful other
+[SPEAKER_00]: than putting zooms in context of the whole
+organ.
+[SPEAKER_00]: But what those 3D volumes represent is
+what we call a fly through.
+[SPEAKER_00]: You're looking at an arbitrary dimension,
+slice by slice, and seeing every single
+[SPEAKER_00]: angle through this very complicated
+structure in very high resolution rich
+[SPEAKER_00]: detail.
+[SPEAKER_00]: You can do cell level resolution in a 3D
+space using this kind of imaging.
+[SPEAKER_00]: Again, it has to be fixed and contrast
+enhanced.
+[SPEAKER_00]: And on the side, there are some pretty
+typical contrast agents which,
+[SPEAKER_00]: with my background in electron microscopy,
+are routinely used.
+[SPEAKER_00]: Phosphatungstic acid, iodine, osmium.
+[SPEAKER_00]: Janek Stadler's lab in 2013 was the first
+one to publish any kind of survey using a
+[SPEAKER_00]: lab-based x-ray microscope, and they
+looked at a few different plant samples.
+[SPEAKER_00]: And we used that as a jumping off point to
+really expand what they first introduced
+[SPEAKER_00]: and really explore a wider range of plant
+samples and improved instrument
+[SPEAKER_00]: technology.
+[SPEAKER_00]: So Janek's lab was the one who started it,
+and we sort of benefited from their
+[SPEAKER_00]: pioneering work to really branch out into
+other things.
+[SPEAKER_00]: It's also very important.
+[SPEAKER_00]: I was telling Lynn earlier that I went to
+a botanical microscopy conference where
+[SPEAKER_00]: everybody there was a plant scientist and
+an imaging specialist, so a pretty rare
+[SPEAKER_00]: group.
+[SPEAKER_00]: All of them knew who I was.
+[SPEAKER_00]: They'd seen the papers.
+[SPEAKER_00]: In fact, we recognize each other on the
+plane over.
+[SPEAKER_00]: This is at the John Innis Center.
+[SPEAKER_00]: They knew what was going on.
+[SPEAKER_00]: They read the paper, but they still didn't
+get it until I actually stood in front of
+[SPEAKER_00]: them like this and showed them the
+animations and showed them how a sample
+[SPEAKER_00]: gets presented to the instrument before
+they could realize what was possible.
+[SPEAKER_00]: So I want to really spend some time
+showing you how these samples are prepared
+[SPEAKER_00]: and how they're presented to the
+instrument so you understand the
+[SPEAKER_00]: tremendous value of the imaging data that
+comes out the other end.
+[SPEAKER_00]: So around the Danforth Center,
+we do not have a corporate lawn.
+[SPEAKER_00]: We have an authentic Missouri prairie,
+which is fantastic, although the neighbors
+[SPEAKER_00]: complained that when are you going to cut
+your lawn?
+[SPEAKER_00]: They just didn't get it.
+[SPEAKER_00]: Now it's beautiful, wildflowers,
+and it's much more mature.
+[SPEAKER_00]: But we have asclepias.
+[SPEAKER_00]: We have milkweed everywhere.
+[SPEAKER_00]: So it was a great example to illustrate
+the step-by-step process.
+[SPEAKER_00]: So if you want to look at something,
+again, this is about the size of a,
+[SPEAKER_00]: you'd cover that with a nickel.
+[SPEAKER_00]: Large, complicated flower.
+[SPEAKER_00]: That goes into, in this case, an ethanolic
+solution of phosphatungstic acid.
+[SPEAKER_00]: The ethanol gets past all the
+hydrophobicity of a plant sample and
+[SPEAKER_00]: penetrates very, very well, although it
+takes weeks.
+[SPEAKER_00]: This is minimum of about 21 days for the
+phosphatungstic acid to penetrate and to
+[SPEAKER_00]: contrast well.
+[SPEAKER_00]: And then how do you present this really
+delicate, flimsy tissue paper-like thing
+[SPEAKER_00]: to a microscope for 12 hours and not have
+it move around?
+[SPEAKER_00]: Low melting point agarose.
+[SPEAKER_00]: In all of our labs, we have plastic tubes
+of a wide range of sizes.
+[SPEAKER_00]: So you pick the tube that fits it best,
+fill it with molten agarose, drop in your
+[SPEAKER_00]: sample after a quick rinse, and it holds
+that delicate, complicated structure in
+[SPEAKER_00]: place for a long imaging scan.
+[SPEAKER_00]: And what you're able to do is generate,
+again, very, very rich 3D volumes where
+[SPEAKER_00]: you can do multi-scale imaging without
+leaving the sample.
+[SPEAKER_00]: So low-magnification scan of the whole
+thing, identify a region of interest,
+[SPEAKER_00]: and then zoom in for a high-resolution
+scan, never having touched the sample.
+[SPEAKER_00]: Just leave it in the instrument and let
+the computer do the work.
+[SPEAKER_00]: Again, the 3D volume rendering has a great
+impact for getting people to remember what
+[SPEAKER_00]: we're able to do to illustrate the
+multi-scale imaging, putting a high-mag
+[SPEAKER_00]: region of interest within the context of
+the whole thing.
+[SPEAKER_00]: But much more impactful is the
+fly-through.
+[SPEAKER_00]: You get that cell-level resolution of the
+entire structure, but totally shocking to
+[SPEAKER_00]: me the beautiful symmetry of the sample
+itself.
+[SPEAKER_00]: Just looking, I get mesmerized watching
+this movie.
+[SPEAKER_00]: And it just makes me think of spirographs
+growing up.
+[SPEAKER_00]: So a lot of the volumes I'm going to show
+you will have the 3D volume rendering
+[SPEAKER_00]: followed by the fly-through to impress
+upon you how data-rich these volumes are.
+[SPEAKER_00]: This is from a paper we published in 22
+looking at nodule formation.
+[SPEAKER_00]: These are soybean nodules formed by
+Bradyrhizobium.
+[SPEAKER_00]: And again, the multi-scale nature,
+we can zoom in on individual bacteroids
+[SPEAKER_00]: and then put that zoom scan within the
+context of the whole nodule, where all the
+[SPEAKER_00]: bacteroids and the vasculature are really,
+really easy to visualize.
+[SPEAKER_00]: And again, with a competent computational
+scientist, you can identify all these
+[SPEAKER_00]: features.
+[SPEAKER_00]: Once they're computationally identified,
+you can measure them and start to then
+[SPEAKER_00]: compare these measurements between
+nodules, between time points, between
+[SPEAKER_00]: varieties.
+[SPEAKER_00]: You now have measurements to go along with
+these phenotypes.
+[SPEAKER_00]: And Gus did a great job segmenting this.
+[SPEAKER_00]: Some of the other ranges of studies we
+look at, again, the Danforth Center is
+[SPEAKER_00]: very well-positioned to look at food
+security crops.
+[SPEAKER_00]: And teff is one of them.
+[SPEAKER_00]: It's very popular in Eastern Africa.
+[SPEAKER_00]: Great salt tolerance, great for drought,
+lousy agronomic traits, a very willowy
+[SPEAKER_00]: stalk.
+[SPEAKER_00]: And shattering is very, very bad.
+[SPEAKER_00]: The seeds quite understandably want to
+disperse as easily as possible.
+[SPEAKER_00]: But that's lousy if you want to actually
+collect the seeds for harvest.
+[SPEAKER_00]: So shattering is a trait we wanted to get
+rid of so the seed would stay put so the
+[SPEAKER_00]: growers could harvest.
+[SPEAKER_00]: And shattering is a trait that we studied
+here, again, in 3D.
+[SPEAKER_00]: In ways with intact samples that you can't
+do just by embedding and sectioning.
+[SPEAKER_00]: Lucia was a postdoc in Malia Gan's lab.
+[SPEAKER_00]: She's now across the street at Beyer.
+[SPEAKER_00]: She's got a great job there.
+[SPEAKER_00]: But she developed some mutants in quinoa
+that showed some very good heat tolerance.
+[SPEAKER_00]: And it's the inflorescence structures and
+the pollination timing, which is often
+[SPEAKER_00]: most negatively affected by heat stress.
+[SPEAKER_00]: So what we want to be able to do is first
+map out in 3D what does normal look like,
+[SPEAKER_00]: the normal complicated inflorescence
+structure.
+[SPEAKER_00]: And then if you blast it with heat,
+how does that change the structure?
+[SPEAKER_00]: And then if you have a heat tolerant
+mutant, how does it survive that?
+[SPEAKER_00]: All to inform what heat tolerance genes
+can we get our hands on.
+[SPEAKER_00]: How can we improve all these different
+plant varieties by identifying the genes
+[SPEAKER_00]: that are most important?
+[SPEAKER_00]: And again, the 2D fly throughs just
+provide so much rich detailed information.
+[SPEAKER_00]: You can measure things now.
+[SPEAKER_00]: You can answer questions using these data.
+[SPEAKER_00]: You couldn't even ask before doing this
+kind of work.
+[SPEAKER_00]: So it's really, really powerful.
+[SPEAKER_00]: Will Viana has got some great setaria
+mutants.
+[SPEAKER_00]: He works in Jose Danini's lab at Stanford.
+[SPEAKER_00]: And they have some mutants that are
+altered in their ability to make root
+[SPEAKER_00]: primordia in setaria.
+[SPEAKER_00]: So what we're able to do is scan the
+entire nodal plexus, that really important
+[SPEAKER_00]: junction at the soil line where all the
+vasculature is coming together,
+[SPEAKER_00]: and look for the origin or not of root
+primordia.
+[SPEAKER_00]: Again, a 3D volume is great for context,
+but the power comes from the 2D slices.
+[SPEAKER_00]: What they're going to be able to do is
+segment every single cell, measure and map
+[SPEAKER_00]: every single cell in the wild type and the
+mutant and compare all those measurements.
+[SPEAKER_00]: That is just a priceless way to get at
+phenotypic information where you can link
+[SPEAKER_00]: to sequence variation.
+[SPEAKER_00]: The top lab is getting into more cover
+crop biology because of its potential for
+[SPEAKER_00]: aiding soil health.
+[SPEAKER_00]: And of course, cover crops make beautiful
+nodules, great for nitrogen management.
+[SPEAKER_00]: To what degree can we use multiscale x-ray
+microscopy imaging to inform nodule
+[SPEAKER_00]: development?
+[SPEAKER_00]: Again, situating the high magnification
+scan within the full 3D volume is cool,
+[SPEAKER_00]: but the data, the real information comes
+from these 2D slices.
+[SPEAKER_00]: This is plant biology.
+[SPEAKER_00]: I'm not allowed to get away without
+showing something Arabidopsis related.
+[SPEAKER_00]: So these are developing Arabidopsis seeds
+inside of Salik.
+[SPEAKER_00]: Again, just to illustrate the unique data
+that is available using this kind of
+[SPEAKER_00]: imaging technology.
+[SPEAKER_00]: This is from Margaret.
+[SPEAKER_00]: This is one of her samples that she left
+with me before she left the Danforth
+[SPEAKER_00]: Center.
+[SPEAKER_00]: This is a two week old tomato seedling.
+[SPEAKER_00]: It's a fly through, but again,
+what it's telling you is if you are
+[SPEAKER_00]: interested in graft biology and graft,
+whether it will take or not, graft
+[SPEAKER_00]: compatibility, this will give you a
+roadmap of the vasculature.
+[SPEAKER_00]: If you have a competent computational
+scientist to map all the vasculature,
+[SPEAKER_00]: but this is something you have available
+now.
+[SPEAKER_00]: Ceteria, shoot apical meristem.
+[SPEAKER_00]: Again, now just examples, all the
+different kinds of biological tissue in 3D
+[SPEAKER_00]: that we have access to.
+[SPEAKER_00]: Young Arabidopsis seedlings, you want to
+do phenotypic, phenotyping of an entire
+[SPEAKER_00]: structure.
+[SPEAKER_00]: This is available.
+[SPEAKER_00]: Developing Ceteria panicles.
+[SPEAKER_00]: Anything that used to be 3D with,
+or used to be with scanning electron
+[SPEAKER_00]: microscopy where you just get a 2D
+photograph of a really cool 3D structure.
+[SPEAKER_00]: You now have a full 3D map inside,
+outside, upside and down.
+[SPEAKER_00]: Any angle you want to go through,
+you have the 3D information.
+[SPEAKER_00]: Again, important to sort of remind you and
+point out the different ways in which
+[SPEAKER_00]: samples are presented to the microscope.
+[SPEAKER_00]: It helps to understand what the geometry
+is to see how will it or perhaps won't it
+[SPEAKER_00]: apply to the kinds of questions I want to
+ask.
+[SPEAKER_00]: You wouldn't put an ear of corn in there
+as such, but certainly a kernel.
+[SPEAKER_00]: It does have the capacity for large things
+and I'll show you that later, but there's
+[SPEAKER_00]: a range of things that we can put in here.
+[SPEAKER_00]: So this was a soybean root nodule.
+[SPEAKER_00]: It's suspended in agarose.
+[SPEAKER_00]: We looked at Pennycress is a very popular
+cover crop these days.
+[SPEAKER_00]: We're working on with a company called
+Covercress at the Danforth Center to breed
+[SPEAKER_00]: Pennycress to take advantage of the
+agronomic traits.
+[SPEAKER_00]: And these are dry seeds.
+[SPEAKER_00]: They're just sort of wedged in the end of
+a pipette tip with poster putty.
+[SPEAKER_00]: All sorts of creative ways just to present
+your samples to the x-ray beam.
+[SPEAKER_00]: And of course, resin embedded plant tissue
+is going to be a mainstay of what we do.
+[SPEAKER_00]: And certainly for volume EM.
+[SPEAKER_00]: We do have a flat panel in the instrument.
+[SPEAKER_00]: We can do in vivo root imaging.
+[SPEAKER_00]: So again, we grow plants in these PVC
+pipes.
+[SPEAKER_00]: This flat panel will allow us to map the
+entire root structure at high resolution,
+[SPEAKER_00]: in this case, 26 micrometer voxel
+resolution.
+[SPEAKER_00]: You'll definitely get laterals with that.
+[SPEAKER_00]: And then if you find a region of interest,
+swap in one of the objective lenses and
+[SPEAKER_00]: look at high resolution, high mag at a
+region of interest.
+[SPEAKER_00]: We're hoping to use this system now to
+adapt to looking at mycorrhizal fungi in
+[SPEAKER_00]: these larger systems.
+[SPEAKER_00]: And I'll show some of the earlier work we
+did with that shortly.
+[SPEAKER_00]: I'm often asked about phase contrast
+imaging, certainly from the synchrotron
+[SPEAKER_00]: folks, because phase can be very powerful
+at a synchrotron when you're dealing with
+[SPEAKER_00]: samples of low density and low
+differential density.
+[SPEAKER_00]: We do have the capacity to do phase
+contrast imaging in our system,
+[SPEAKER_00]: but we take a big hit on resolution.
+[SPEAKER_00]: And Zeiss does develop some AI tools to
+help sort of clean up the noise that is
+[SPEAKER_00]: expected.
+[SPEAKER_00]: But still, this was a sample, this was a
+soybean flour that was only fixed in
+[SPEAKER_00]: ethanol that immediately imaged,
+no contrast agent.
+[SPEAKER_00]: So it's possible to do imaging,
+but clearly you take a big hit in what you
+[SPEAKER_00]: can see relative to contrast enhanced
+material.
+[SPEAKER_00]: A lot of my goal is to get more people to
+think about and to take advantage of this
+[SPEAKER_00]: technology.
+[SPEAKER_00]: And this is actually a white paper that's
+free to download.
+[SPEAKER_00]: You can go to the Zeiss website and
+download this.
+[SPEAKER_00]: It tells a lot of the nuts and bolts of
+the methods and the sample development for
+[SPEAKER_00]: doing x-ray microscopy specifically for
+plant samples.
+[SPEAKER_00]: Because many plant scientists have access
+to core facilities, but don't know how to
+[SPEAKER_00]: present the sample to it.
+[SPEAKER_00]: Core facilities have x-ray microscopes.
+[SPEAKER_00]: They've never worked with plant samples.
+[SPEAKER_00]: I'm hoping that the publications that we
+have will bring a lot of that together and
+[SPEAKER_00]: really expand what everyone is in a
+position to do with x-ray imaging.
+[SPEAKER_00]: A little over a year ago, Nature came out
+with technologies to watch in 2023.
+[SPEAKER_00]: And volume EM, volume electron microscopy,
+is one of them.
+[SPEAKER_00]: And that is using various electron
+microscopes where one can do physical
+[SPEAKER_00]: sectioning in order to generate a 3D
+volume at the nanometer scale.
+[SPEAKER_00]: So there's serial block face scanning
+electron microscopes where you have an
+[SPEAKER_00]: actual physical microtome inside the
+instrument.
+[SPEAKER_00]: So you'll take a diamond knife,
+you'll cut one section image, cut image
+[SPEAKER_00]: and get maybe hundreds.
+[SPEAKER_00]: And you can get down to about 50,
+60 nanometer in section thickness.
+[SPEAKER_00]: The other alternative is a plasma focused
+ion beam where you can actually use a
+[SPEAKER_00]: laser to ablate the surface image,
+ablate image.
+[SPEAKER_00]: And you can get down to about 5 or 10
+nanometer section thickness.
+[SPEAKER_00]: So you can generate a beautiful 3D volume
+at the organ cellar scale.
+[SPEAKER_00]: And so volume EM is something we want to
+use as a roadmap to drive volume EM.
+[SPEAKER_00]: So what that looks like, here's a sample
+of actually a tobacco leaf disc embedded
+[SPEAKER_00]: in resin, mounted in the x-ray microscope.
+[SPEAKER_00]: And we'll do a scan of the entire leaf
+disc to get a roadmap.
+[SPEAKER_00]: And then you bring in some of the world's
+leading plant tissue specific imaging
+[SPEAKER_00]: folks.
+[SPEAKER_00]: This is Kirk Zemeck.
+[SPEAKER_00]: He was a postdoc in the lab.
+[SPEAKER_00]: I was at DuPont.
+[SPEAKER_00]: He's now the director of the imaging
+facility at the Danforth Center.
+[SPEAKER_00]: And it's never just the instruments.
+[SPEAKER_00]: He's got some of the most talented
+microscopists in the world working with
+[SPEAKER_00]: some of the best instruments on the
+planet.
+[SPEAKER_00]: So you bring expertise and instrumentation
+together.
+[SPEAKER_00]: And what you can do is astounding.
+[SPEAKER_00]: So Nastya Janithri and Lolita are just
+brilliant.
+[SPEAKER_00]: So we're able to do some marvelous things.
+[SPEAKER_00]: So this is a fly through of the low
+magnification x-ray scan through the
+[SPEAKER_00]: tobacco leaf disc.
+[SPEAKER_00]: And what Kirk and his team did was take my
+3D scan and identify in green this region
+[SPEAKER_00]: of interest.
+[SPEAKER_00]: And so we worked together.
+[SPEAKER_00]: I took the sample back and then did a much
+higher magnification scan of that region
+[SPEAKER_00]: of interest.
+[SPEAKER_00]: Take the data, hand it back over to them,
+and they use it as a roadmap.
+[SPEAKER_00]: And they want to look at just these
+mesophyll sections of mesophyll cells
+[SPEAKER_00]: indicated by the yellow box here.
+[SPEAKER_00]: And so that went actually to the SEM,
+which had a backscatter electron detector,
+[SPEAKER_00]: which you can actually use to invert the
+black and white, and it looks like a TEM.
+[SPEAKER_00]: That region of interest, and then using
+their technology, they zoom in on features
+[SPEAKER_00]: that they want to look at, like the purple
+box there.
+[SPEAKER_00]: And with serial block face imaging,
+they went zooming through this region.
+[SPEAKER_00]: And I think they collected about 250 or
+300 sections, each as it indicates,
+[SPEAKER_00]: 50 nanometers thick.
+[SPEAKER_00]: And again, you have a 3D volume at very,
+very high nanometer scale resolution.
+[SPEAKER_00]: So again, computational science is
+everything.
+[SPEAKER_00]: A good computational scientist now can
+identify and measure individual features
+[SPEAKER_00]: so that you can see and measure
+distribution in 3D space, total volume,
+[SPEAKER_00]: amount, different changes.
+[SPEAKER_00]: Everything is now measurable and
+accessible.
+[SPEAKER_00]: Again, the publication is out there.
+[SPEAKER_00]: The information is out there.
+[SPEAKER_00]: Please, please look into it as something
+that you might want to take advantage of.
+[SPEAKER_00]: It is there.
+[SPEAKER_00]: I promised some specific work on what
+we're doing with mycorrhizal fungi.
+[SPEAKER_00]: Most of you, I'm sure, understand that
+mycorrhizal fungi form beneficial
+[SPEAKER_00]: interactions with most plant roots in the
+world.
+[SPEAKER_00]: They exchange nutrients and water with the
+plant for photosynthetic sugars,
+[SPEAKER_00]: beneficial relationship for both.
+[SPEAKER_00]: From an imaging standpoint, we're
+interested in the purple bits,
+[SPEAKER_00]: all of the fungal structures that are out
+in the soil that colonize the root and
+[SPEAKER_00]: then start this nutrient exchange.
+[SPEAKER_00]: There has been some genuinely spectacular
+signed paper research looking at the genes
+[SPEAKER_00]: that play roles in governing these
+relationships, the exchange of carbon.
+[SPEAKER_00]: Who's benefiting?
+[SPEAKER_00]: Who's cheating?
+[SPEAKER_00]: Who's holding up their end of the bargain?
+[SPEAKER_00]: There's some really fantastic work that's
+been done all in vitro.
+[SPEAKER_00]: There's been some great imaging work.
+[SPEAKER_00]: Jen Magali, she's finishing her PhD at
+Cambridge, and she designed this beautiful
+[SPEAKER_00]: microscope slide where the plant grows on
+the edge and you can train a single root
+[SPEAKER_00]: that comes out between two glass slides.
+[SPEAKER_00]: Very elegant.
+[SPEAKER_00]: You can do great imaging work and in real
+time do dynamic imaging work with a lot of
+[SPEAKER_00]: the fluorescent tools available,
+but it's always in vitro.
+[SPEAKER_00]: This is a difficult system to look at to
+understand how these things are naturally
+[SPEAKER_00]: distributed in as natural a system as you
+can engineer.
+[SPEAKER_00]: The hyphae are transparent.
+[SPEAKER_00]: They're difficult to see.
+[SPEAKER_00]: These are a pack of hyphae just stuck in
+agarose at the bottom of a tube.
+[SPEAKER_00]: How do we make these transparent
+structures contrasty enough to see with
+[SPEAKER_00]: the electron microscope, with the X-ray
+microscope?
+[SPEAKER_00]: We look back at our experience with using
+electron microscopy and making things
+[SPEAKER_00]: contrasty.
+[SPEAKER_00]: Osmium is clearly something that,
+although challenging to work with,
+[SPEAKER_00]: is very, very effective at making
+transparent things contrasty.
+[SPEAKER_00]: With our in vitro carrot root culture,
+we were able to very clearly show that the
+[SPEAKER_00]: fungal structures both inside and outside
+the roots were very well contrasted.
+[SPEAKER_00]: We applied that to what we're calling a
+microcosm.
+[SPEAKER_00]: We can grow alfalfa or brachypodium in
+small 20 mil syringe barrels.
+[SPEAKER_00]: Roots will be colonized.
+[SPEAKER_00]: Fungal structures will grow out into the
+surrounding medium, and we can contrast
+[SPEAKER_00]: them and image them.
+[SPEAKER_00]: What you're seeing here in orange is
+fungal spores and vesicles both inside and
+[SPEAKER_00]: outside the root in the surrounding growth
+medium, as well as intra-radical hyphae
+[SPEAKER_00]: and extra-radical hyphae.
+[SPEAKER_00]: We've demonstrated this can be done.
+[SPEAKER_00]: I'm going to speed up a little bit just to
+make sure we get through in time for
+[SPEAKER_00]: questions.
+[SPEAKER_00]: Again, at the Danforth Center,
+we're surrounded by some fantastic
+[SPEAKER_00]: scientists, and Armando's got great
+experience in mycorrhizal biology.
+[SPEAKER_00]: He's developed the brachypodium system
+along with his senior tech, Mallette.
+[SPEAKER_00]: We're using that to look at colonization,
+again, in these microcosms.
+[SPEAKER_00]: The better the imaging, the more
+successful we can actually train a
+[SPEAKER_00]: computer model to identify the features we
+want to see.
+[SPEAKER_00]: Everything in yellow here is both internal
+spores as well as vesicles inside a root.
+[SPEAKER_00]: We can quantify the amount of fungus
+that's inside a colonized root in situ.
+[SPEAKER_00]: Now this opens up some really huge avenues
+to start exploring basic biology.
+[SPEAKER_00]: To what degree can we quantify fungal
+biomass in a given genotypic interaction,
+[SPEAKER_00]: particular maize genotype, particular
+brachypodium genotype?
+[SPEAKER_00]: How does that normal change with less
+phosphorus, more phosphorus, more
+[SPEAKER_00]: nitrogen?
+[SPEAKER_00]: How can we change the environment and
+alter these measurable traits?
+[SPEAKER_00]: We're also exploring other things in
+addition to osmium to see can we get away
+[SPEAKER_00]: from a volatile toxic heavy metal as
+something to visualize fungal structures.
+[SPEAKER_00]: We're looking at nanogold conjugates.
+[SPEAKER_00]: We can always conjugate things to fungal
+structures.
+[SPEAKER_00]: Can we stick enough gold particles on it
+to be able to see with the x-ray
+[SPEAKER_00]: microscope?
+[SPEAKER_00]: Of course, we're prepping a methods
+manuscript.
+[SPEAKER_00]: I'm going to wrap up with a switch from
+the plant, the roots, and the fungi to
+[SPEAKER_00]: actually the medium within which they're
+growing.
+[SPEAKER_00]: That's the soil.
+[SPEAKER_00]: With the two instruments, we can do a lot
+of multi-scale imaging.
+[SPEAKER_00]: We can use the x-ray microscope to look at
+the microbial scale.
+[SPEAKER_00]: We can look at soil aggregates.
+[SPEAKER_00]: Again, I was telling Lynn, we're
+constantly learning new techniques and new
+[SPEAKER_00]: fields.
+[SPEAKER_00]: I've had to learn soil physics over the
+past couple years in soil science.
+[SPEAKER_00]: I've learned that the aggregate is
+essentially the lowest, the smallest
+[SPEAKER_00]: currency of agricultural soil.
+[SPEAKER_00]: If you took a shovel and scoop big
+agricultural soil and just shook it
+[SPEAKER_00]: around, the smallest naturally occurring
+size of chunk that comes out is a soil
+[SPEAKER_00]: aggregate.
+[SPEAKER_00]: The size and the stability of that
+aggregate tells you a lot about the soil
+[SPEAKER_00]: health.
+[SPEAKER_00]: We can look at the actual structure of
+soil aggregate with the x-ray microscope.
+[SPEAKER_00]: Then we can look at a soil core from the
+same area, put the context of the
+[SPEAKER_00]: aggregate into the core, and then the core
+into the field.
+[SPEAKER_00]: Across scales, we can study a lot about
+the structure of actual agricultural soil.
+[SPEAKER_00]: We've got some great collaborators at
+K-State.
+[SPEAKER_00]: Chuck Rice's lab has been around for
+decades, and Carlos was spearheading this
+[SPEAKER_00]: work as a PhD student.
+[SPEAKER_00]: He's just finished.
+[SPEAKER_00]: Then Cody, Mao, Sarah, and Clara are the
+Danforth scientists who are working on
+[SPEAKER_00]: this as well.
+[SPEAKER_00]: We're comparing it to what would be a gold
+standard, the Konza prairie.
+[SPEAKER_00]: It's about 3,500 hectares of undisturbed
+tall grass prairie in Eastern Kansas.
+[SPEAKER_00]: What we want to ask is, what can we learn
+about the 3D structure of soil across
+[SPEAKER_00]: scales?
+[SPEAKER_00]: Chuck's lab has been monitoring and
+managing some research fields for now over
+[SPEAKER_00]: 34 consecutive years.
+[SPEAKER_00]: They've been using no-till compared to
+conventional tillage.
+[SPEAKER_00]: They've been using conventional chemical
+fertilizer compared to using a high
+[SPEAKER_00]: organic manure as a fertilizer.
+[SPEAKER_00]: They collected soil cores and soil
+aggregates and sent them to us for imaging
+[SPEAKER_00]: from all these different treatments.
+[SPEAKER_00]: This is a typical soil core inside the
+large format x-ray instrument and a
+[SPEAKER_00]: typical image of what you'll see.
+[SPEAKER_00]: We sub-sampled the middle to avoid some of
+the cracking artifacts in the side because
+[SPEAKER_00]: we want to measure pore space.
+[SPEAKER_00]: Those cracks are obviously going to bias
+things.
+[SPEAKER_00]: What we're doing, and this is work in
+progress, we're using these very high
+[SPEAKER_00]: resolution 3D scans of a core to map out
+pore space.
+[SPEAKER_00]: Can we differentiate between pore space
+and soil organic matter?
+[SPEAKER_00]: Mostly the answer is no.
+[SPEAKER_00]: This was always shocking to me.
+[SPEAKER_00]: I've gone to soil science meetings where
+everyone's saying, here's all the pore
+[SPEAKER_00]: space and here's all the soil organic
+material.
+[SPEAKER_00]: They've never seen the x-ray scans where
+the overlap is way too much to actually
+[SPEAKER_00]: differentiate the two.
+[SPEAKER_00]: They're losing a great deal.
+[SPEAKER_00]: We've turned Mao Li loose on this problem,
+so if anyone can solve it, she can.
+[SPEAKER_00]: We're trying to map out what are the
+differences that we can observe
+[SPEAKER_00]: structurally between the different field
+management practices, and then drop down
+[SPEAKER_00]: to a smaller scale, look at an entire soil
+aggregate.
+[SPEAKER_00]: Again, map out the pore space,
+map out the organic material, and look at
+[SPEAKER_00]: that over scale.
+[SPEAKER_00]: To what degree does the pore space map in
+the aggregate compare or not to the
+[SPEAKER_00]: equivalent treatment, but at a larger
+scale in a soil core?
+[SPEAKER_00]: Is one predictive of the other?
+[SPEAKER_00]: What can we learn across scales?
+[SPEAKER_00]: We've embedded some of the aggregates in
+resin, and we've sent some samples off
+[SPEAKER_00]: from x-ray fluorescence, and ideally maybe
+work with a synchrotron to do some zanes
+[SPEAKER_00]: to look at very subtle differences and
+elemental mapping.
+[SPEAKER_00]: But then also we could use these for
+volume electron microscopy.
+[SPEAKER_00]: Again, that's what some of this is.
+[SPEAKER_00]: The work is ongoing.
+[SPEAKER_00]: We want to compare soil pore networks
+across these treatments.
+[SPEAKER_00]: We have an Elementar mass spec system in
+the lab so we can look at and measure
+[SPEAKER_00]: absolute amount of carbon, absolute amount
+of nitrogen, and Cody's really the one
+[SPEAKER_00]: heading up this manuscript.
+[SPEAKER_00]: Lin knows I could talk for hours,
+but I won't.
+[SPEAKER_00]: I will spare you, and I will stop here and
+happily take any questions.
+[SPEAKER_00]: So we're checking the chat to see if there
+are questions from online.
+[SPEAKER_00]: Otherwise, we'll look here in the room.
+[SPEAKER_00]: Yes.
+[SPEAKER_00]: So the question is, can we get to the
+cellular level?
+[SPEAKER_00]: And the answer is yes.
+[SPEAKER_00]: Typically, the samples have to be smaller,
+but for example, this Ceteria nodal
+[SPEAKER_00]: plexus, that sample was maybe three
+millimeters tall by a millimeter in
+[SPEAKER_00]: diameter, easily achieving cellular
+resolution there.
+[SPEAKER_00]: With the soybean developing flowers,
+you can see the entire structure,
+[SPEAKER_00]: but then we could zoom in onto the
+developing ovules.
+[SPEAKER_00]: We could see synergids.
+[SPEAKER_00]: We could see polar nuclei.
+[SPEAKER_00]: So it is possible to see at the cellular
+level in that regard.
+[SPEAKER_00]: A lot of these cells in the plants are
+actually quite large.
+[SPEAKER_00]: So a lot of the stock segments,
+a lot of the grafting stuff, a lot of the
+[SPEAKER_00]: inflorescence development.
+[SPEAKER_00]: There's a lot of complicated material
+there, but it's relatively large.
+[SPEAKER_00]: So we can achieve cellular level
+resolution there.
+[SPEAKER_00]: The root nodules were another one.
+[SPEAKER_00]: But at the same time, keep in mind that
+this is just a microscope.
+[SPEAKER_00]: The most powerful lens we have is just
+40x.
+[SPEAKER_00]: And even your tabletop microscope,
+you multiply that by 10 times from the
+[SPEAKER_00]: ocular lens.
+[SPEAKER_00]: We just have a 40x lens.
+[SPEAKER_00]: So you will never see a bacterial cell.
+[SPEAKER_00]: You will see a bacteroid, which is
+essentially a plant host cell that's been
+[SPEAKER_00]: sort of taken over.
+[SPEAKER_00]: You will not see a bacterial cell.
+[SPEAKER_00]: We can see AMF spores if they're
+contrasted.
+[SPEAKER_00]: It's difficult to differentiate the hyphae
+if they're there, unless they've got a ton
+[SPEAKER_00]: of osmium on them.
+[SPEAKER_00]: So that's sort of the fade-out range.
+[SPEAKER_04]: How rapidly can you screen the little
+tubes with the brachyphonium and the
+[SPEAKER_04]: mycorrhizal fungi that were in there?
+[SPEAKER_04]: Does that take a long time to do that
+scan?
+[SPEAKER_00]: Yeah, so the question is about the
+microcosms looking at brachyphonium and
+[SPEAKER_00]: also alfalfa.
+[SPEAKER_00]: How quickly can we scan those?
+[SPEAKER_00]: So what I'll end up doing is I can do a
+relatively short scan, which is three to
+[SPEAKER_00]: four hours, but that shows me the entire
+microcosm.
+[SPEAKER_00]: Low resolution, but enough for me to see
+the bright spots of fungal material.
+[SPEAKER_00]: And then I'll set up a hyphae.
+[SPEAKER_00]: I'll do a higher magnification scan.
+[SPEAKER_00]: That will be 10 to 12 hours at least.
+[SPEAKER_00]: So those scans are quite long.
+[SPEAKER_00]: It's not good for high throughput or even
+medium throughput, but it is genuinely
+[SPEAKER_00]: unique in being able to see the
+distribution of mycorrhizal structures in
+[SPEAKER_00]: 3D in an undisturbed in situ rig.
+[SPEAKER_00]: It's not the field, but no one else is in
+a position to do this kind of 3D in situ
+[SPEAKER_00]: imaging.
+[SPEAKER_04]: And are you flooding that whole syringe
+with osmium?
+[SPEAKER_00]: Yes, and we're also taking advantage of
+the fact that osmium has a great vapor
+[SPEAKER_00]: potential.
+[SPEAKER_00]: So you can use osmium vapors to also
+contrast material.
+[SPEAKER_00]: But the other benefit of that syringe
+barrel system is it's got a lure lock.
+[SPEAKER_00]: And so I can lock that.
+[SPEAKER_00]: I can parafilm the crap out of these
+things and make sure that it's very,
+[SPEAKER_00]: very well contained.
+[SPEAKER_00]: What I am doing right now is I've got some
+microcosms that I flooded with ethanolic
+[SPEAKER_00]: phosphatungstic acid.
+[SPEAKER_00]: In vitro, that's beautiful.
+[SPEAKER_00]: You can see individual arbuscules.
+[SPEAKER_00]: It's fantastic, but it takes weeks and
+weeks.
+[SPEAKER_00]: So I've set these up.
+[SPEAKER_00]: It is absolutely flooded.
+[SPEAKER_00]: There's a meniscus on the top.
+[SPEAKER_00]: I mean, it is absolutely flooded in
+ethanolic phosphatungstic acid.
+[SPEAKER_00]: I'm going to look at it in a couple of
+months from now.
+[SPEAKER_00]: Because if I can get away from osmium,
+I definitely want to.
+[SPEAKER_00]: But short of not being able to image at
+all, the other step is going to be,
+[SPEAKER_00]: as I mentioned, using gold conjugates,
+so nanogold.
+[SPEAKER_00]: So lectins are very good in vitro.
+[SPEAKER_00]: They're good at sticking to mycorrhizal
+fungi.
+[SPEAKER_00]: And in vitro, we've shown that we can
+stick enough wheat germagglutinin
+[SPEAKER_00]: conjugated to gold nanoparticles so that
+we can see in vitro.
+[SPEAKER_00]: I don't know if it's going to be enough to
+see in situ.
+[SPEAKER_00]: It's just a bigger system and much more
+dense.
+[SPEAKER_00]: Question online.
+[SPEAKER_00]: So I know you said there are resolution
+image issues with the large scale x-ray
+[SPEAKER_00]: tomography.
+[SPEAKER_00]: What is the cutoff?
+[SPEAKER_00]: Does this extend to fine roots?
+[SPEAKER_00]: And that's, again, it's a great question.
+[SPEAKER_00]: So we can engineer the pot to be able to
+see the biology of interest that we're
+[SPEAKER_00]: interested in.
+[SPEAKER_00]: So if we want to see lateral roots,
+we'll grow something in nothing bigger
+[SPEAKER_00]: than, say, four or five centimeter
+diameter pot.
+[SPEAKER_00]: And we might just even get away from using
+field soil.
+[SPEAKER_00]: We'll use ground up clay like profile or
+turfus.
+[SPEAKER_00]: These are commercially available
+artificial growth media.
+[SPEAKER_00]: We will be able to see lateral roots in
+that example.
+[SPEAKER_00]: If we look at a larger pot, we will never
+see lateral roots.
+[SPEAKER_00]: So we can adjust pot size and growth
+medium to allow the instrument to show us
+[SPEAKER_00]: what's possible.
+[SPEAKER_00]: There's an overlap between the large
+format instrument and the x-ray
+[SPEAKER_00]: microscope.
+[SPEAKER_00]: Both have a flat panel option.
+[SPEAKER_00]: So you saw one of the images in here where
+I had a small corn plant in the x-ray
+[SPEAKER_00]: microscope.
+[SPEAKER_00]: That panel is higher resolution than the
+one in the large format instrument.
+[SPEAKER_00]: So even in that same three centimeter
+diameter PVC pipe, we'll get better
+[SPEAKER_00]: resolution in the x-ray microscope.
+[SPEAKER_00]: It's a longer scan, and it's 60 to 70
+gigabytes.
+[SPEAKER_00]: Again, always the trade-off.
+[SPEAKER_00]: If you want to see small roots in a big
+thing, it's going to cost you.
+[SPEAKER_00]: But it is possible.
+[SPEAKER_00]: Margaret?
+[SPEAKER_03]: I was just thinking about your last part
+on field soil composition and your early
+[SPEAKER_03]: work on root architecture and the
+plasticity of roots.
+[SPEAKER_03]: Are you thinking about a system where you
+can start looking at how the heterogeneity
+[SPEAKER_03]: of real soil systems is influencing that
+plasticity?
+[SPEAKER_00]: Yes, absolutely.
+[SPEAKER_00]: I was hoping to get the chance to say that
+we're working on a topsoil in Chris Top's
+[SPEAKER_00]: lab.
+[SPEAKER_00]: We're working on an authentic field soil
+that is reproducible that we can use all
+[SPEAKER_00]: the time.
+[SPEAKER_00]: Because up till now, we've only used the
+artificial media because that has been
+[SPEAKER_00]: less daunting for segmentation.
+[SPEAKER_00]: Field soil is so much more like a root
+itself.
+[SPEAKER_00]: It's just more difficult to teach the
+computer to find the roots.
+[SPEAKER_00]: But that is our goal this year especially,
+is to demonstrate that in a number of
+[SPEAKER_00]: diameters, we can grow two different maze
+genotypes where we know the root structure
+[SPEAKER_00]: is different.
+[SPEAKER_00]: The root architecture is going to be
+different.
+[SPEAKER_00]: Can we get good enough at segmentation
+where we can pull out those 3D volumes?
+[SPEAKER_00]: Now, they're root 3D volumes with nothing
+around them and plug them into our trade
+[SPEAKER_00]: extraction pipelines.
+[SPEAKER_00]: And actually see that the trade
+differences we can see by eye,
+[SPEAKER_00]: we can also measure from the in situ x-ray
+scans.
+[SPEAKER_00]: So we need to demonstrate that we can do
+that.
+[SPEAKER_00]: And then we can then step forward through
+all the different basic biology questions
+[SPEAKER_00]: from genotype to environment.
+[SPEAKER_04]: One last question.
+[SPEAKER_00]: One last question.
+[SPEAKER_00]: Yes?
+[SPEAKER_01]: Is there any work being done to build
+functional plant models, things like that,
+[SPEAKER_01]: using especially the architecture data?
+[SPEAKER_00]: Yes.
+[SPEAKER_00]: There are computational scientists and
+modeling scientists who are taking some of
+[SPEAKER_00]: these data and developing it into
+different questions.
+[SPEAKER_00]: These are collaborators we have at St.
+Louis University as well as Washington
+[SPEAKER_00]: University, both in downtown St. Louis.
+[SPEAKER_00]: So they are in computer science programs.
+[SPEAKER_00]: And very often, they are starved for data
+sets.
+[SPEAKER_00]: We've got hundreds of terabytes of data
+sets.
+[SPEAKER_00]: Please do as much as you can with these.
+[SPEAKER_00]: And a lot of that is modeling.
+[SPEAKER_00]: Tao Zhu's lab really developed,
+and this was, again, Dan Zhang did a great
+[SPEAKER_00]: job, developing a skeletonization protocol
+that sort of got around the problem of
+[SPEAKER_00]: loops, where things would loop back
+against one another and the computer would
+[SPEAKER_00]: lose it.
+[SPEAKER_00]: And so they've been able to convert that
+2D into 3D, where you could actually track
+[SPEAKER_00]: these looping structures.
+[SPEAKER_00]: So, yeah, a lot of that work is being
+done.
+[SPEAKER_00]: We've got great colleagues who are
+following that up.
+[SPEAKER_04]: All right.
+[SPEAKER_04]: Thank you.
+[SPEAKER_04]: Here we go.
+Everyone.
+[SPEAKER_04]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_04]: Thank you.
+[SPEAKER_04]: Thank you.
+Thank you.
+Thank you.

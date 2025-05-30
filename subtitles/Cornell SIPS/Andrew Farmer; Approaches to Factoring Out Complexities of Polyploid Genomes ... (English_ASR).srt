@@ -1,0 +1,5240 @@
+1
+00:00:00,030 --> 00:00:04,339
+this is a production of Cornell
+
+2
+00:00:01,709 --> 00:00:04,339
+University
+
+3
+00:00:07,169 --> 00:00:13,150
+all right thank you is apparently have a
+
+4
+00:00:11,080 --> 00:00:15,849
+lot of slides so I'm gonna try to go
+
+5
+00:00:13,150 --> 00:00:19,690
+quickly through them and I might gloss
+
+6
+00:00:15,849 --> 00:00:21,189
+over a few things but these are the
+
+7
+00:00:19,690 --> 00:00:24,970
+objectives for the talk I just want to
+
+8
+00:00:21,190 --> 00:00:27,970
+look at some basically examples that I
+
+9
+00:00:24,969 --> 00:00:29,768
+think illustrate why polyploids are
+
+10
+00:00:27,969 --> 00:00:32,439
+challenging to work with from an
+
+11
+00:00:29,768 --> 00:00:35,189
+informatics perspective and a biological
+
+12
+00:00:32,439 --> 00:00:37,960
+perspective I want to take the time to
+
+13
+00:00:35,189 --> 00:00:40,378
+use those examples to just look at some
+
+14
+00:00:37,960 --> 00:00:44,079
+of the tools and resources that we've
+
+15
+00:00:40,378 --> 00:00:46,960
+developed were adopted from other groups
+
+16
+00:00:44,079 --> 00:00:48,549
+and adapted to our needs you know using
+
+17
+00:00:46,960 --> 00:00:50,620
+them for our particular research
+
+18
+00:00:48,549 --> 00:00:54,549
+community but hoping that they'll find
+
+19
+00:00:50,619 --> 00:00:57,009
+more broad adoption and the last is
+
+20
+00:00:54,549 --> 00:00:59,439
+probably the most audacious of the three
+
+21
+00:00:57,009 --> 00:01:02,649
+bullet points but I I've been working on
+
+22
+00:00:59,439 --> 00:01:04,750
+abstract algebra as kind of a side hobby
+
+23
+00:01:02,649 --> 00:01:06,340
+and I want to try to make a case that
+
+24
+00:01:04,750 --> 00:01:10,409
+it's actually of relevance to
+
+25
+00:01:06,340 --> 00:01:13,420
+understanding how complexity develops of
+
+26
+00:01:10,409 --> 00:01:15,640
+sort of nonlinear multiplicative
+
+27
+00:01:13,420 --> 00:01:18,368
+relationships like those that come out
+
+28
+00:01:15,640 --> 00:01:20,739
+of putting two genomes together so we'll
+
+29
+00:01:18,368 --> 00:01:24,129
+see how that goes all right so just a
+
+30
+00:01:20,739 --> 00:01:28,560
+quick kind of overview of polyploidy in
+
+31
+00:01:24,129 --> 00:01:32,679
+general you know it happens all the time
+
+32
+00:01:28,560 --> 00:01:35,228
+seemingly in plants it's known to happen
+
+33
+00:01:32,680 --> 00:01:37,960
+in some other systems but waitwe in the
+
+34
+00:01:35,228 --> 00:01:39,578
+evolutionary past so if you work in
+
+35
+00:01:37,959 --> 00:01:40,929
+plants you know all about it if you
+
+36
+00:01:39,578 --> 00:01:44,559
+don't work in plants it's kind of a
+
+37
+00:01:40,930 --> 00:01:46,030
+weird little niche but you know there
+
+38
+00:01:44,560 --> 00:01:48,629
+are a lot of distinctions to be made
+
+39
+00:01:46,030 --> 00:01:51,250
+about types of polyploidy and how many
+
+40
+00:01:48,629 --> 00:01:54,789
+genomes have come together at once how
+
+41
+00:01:51,250 --> 00:01:57,700
+how recently it was and those are all
+
+42
+00:01:54,790 --> 00:01:59,049
+important for thinking about the actual
+
+43
+00:01:57,700 --> 00:02:01,180
+approach you're going to take with a
+
+44
+00:01:59,049 --> 00:02:06,149
+particular analytic solution to a
+
+45
+00:02:01,180 --> 00:02:09,069
+problem but you know and I've heard that
+
+46
+00:02:06,149 --> 00:02:11,979
+the thinking is that one of the reasons
+
+47
+00:02:09,069 --> 00:02:13,629
+why plants are so tolerant of polyploidy
+
+48
+00:02:11,979 --> 00:02:16,139
+is that most of them don't actually have
+
+49
+00:02:13,629 --> 00:02:20,379
+sex chromosomes and that facilitates the
+
+50
+00:02:16,139 --> 00:02:24,039
+combination of genomes they
+
+51
+00:02:20,379 --> 00:02:26,620
+but you know there are challenges at the
+
+52
+00:02:24,039 --> 00:02:28,150
+plant associated with actually working
+
+53
+00:02:26,620 --> 00:02:31,210
+out what to do with having multiple
+
+54
+00:02:28,150 --> 00:02:32,560
+genomes but after they've done that they
+
+55
+00:02:31,210 --> 00:02:35,170
+tend to be a little bit more resilient
+
+56
+00:02:32,560 --> 00:02:38,080
+and so a lot of a lot of crops that we
+
+57
+00:02:35,169 --> 00:02:42,939
+work with certainly have have come from
+
+58
+00:02:38,080 --> 00:02:44,680
+polyploid events possibly because the
+
+59
+00:02:42,939 --> 00:02:46,840
+gene redundancy kind of gives you new
+
+60
+00:02:44,680 --> 00:02:48,939
+opportunities we'll look at some of
+
+61
+00:02:46,840 --> 00:02:51,450
+those questions a little bit further on
+
+62
+00:02:48,939 --> 00:02:53,829
+I mean they they tend to occur in
+
+63
+00:02:51,449 --> 00:02:55,859
+extreme environments partially because
+
+64
+00:02:53,830 --> 00:02:58,120
+those environments tend to induce
+
+65
+00:02:55,860 --> 00:03:00,760
+polyploid formation but also the
+
+66
+00:02:58,120 --> 00:03:02,140
+thinking is that they are because of the
+
+67
+00:03:00,759 --> 00:03:06,280
+built-in redundancy they're better able
+
+68
+00:03:02,139 --> 00:03:07,779
+to adapt to such conditions so you know
+
+69
+00:03:06,280 --> 00:03:10,840
+as I said there are a lot of different
+
+70
+00:03:07,780 --> 00:03:12,849
+types of polyploidy so what one
+
+71
+00:03:10,840 --> 00:03:14,800
+distinguishes between a low and Auto
+
+72
+00:03:12,849 --> 00:03:17,199
+depending on whether or not the two
+
+73
+00:03:14,800 --> 00:03:20,520
+genomes that are being duplicated are
+
+74
+00:03:17,199 --> 00:03:22,659
+the same or different there's a type of
+
+75
+00:03:20,520 --> 00:03:25,330
+polyploidy that has to do with somatic
+
+76
+00:03:22,659 --> 00:03:29,949
+cells doesn't actually lead to new
+
+77
+00:03:25,330 --> 00:03:33,720
+species but you know basically mitotic
+
+78
+00:03:29,949 --> 00:03:36,159
+events not not actually separating the
+
+79
+00:03:33,719 --> 00:03:36,580
+results of genome doubling into separate
+
+80
+00:03:36,159 --> 00:03:39,419
+cells
+
+81
+00:03:36,580 --> 00:03:41,469
+that's endo polyploidy and then
+
+82
+00:03:39,419 --> 00:03:44,469
+distinctions are made you know in terms
+
+83
+00:03:41,469 --> 00:03:46,810
+of how how recent the polyploidy event
+
+84
+00:03:44,469 --> 00:03:48,759
+is and how far along the evolutionary
+
+85
+00:03:46,810 --> 00:03:51,580
+trajectory it's gotten so that it's
+
+86
+00:03:48,759 --> 00:03:54,579
+effectively become a diploid genetically
+
+87
+00:03:51,580 --> 00:03:56,800
+again and depending on whether you're an
+
+88
+00:03:54,580 --> 00:03:59,590
+auto polyploid or an a local at
+
+89
+00:03:56,800 --> 00:04:01,719
+polyploid that introduces Auto
+
+90
+00:03:59,590 --> 00:04:04,390
+polyploids basically all of their
+
+91
+00:04:01,719 --> 00:04:06,759
+chromosomes well the the homologous
+
+92
+00:04:04,389 --> 00:04:08,769
+chromosomes as we call them can
+
+93
+00:04:06,759 --> 00:04:11,289
+potentially recombine with one another
+
+94
+00:04:08,770 --> 00:04:13,590
+and so that introduces new possibilities
+
+95
+00:04:11,289 --> 00:04:18,099
+in terms of the genetics that need to be
+
+96
+00:04:13,590 --> 00:04:19,870
+thought about carefully so as Liz
+
+97
+00:04:18,100 --> 00:04:22,090
+mentioned that we're interested in
+
+98
+00:04:19,870 --> 00:04:24,639
+comparative genomics we've developed a
+
+99
+00:04:22,089 --> 00:04:27,579
+tool for basically looking at gene
+
+100
+00:04:24,639 --> 00:04:30,009
+content across species each of these
+
+101
+00:04:27,579 --> 00:04:31,478
+glyphs represents a gene it's colored in
+
+102
+00:04:30,009 --> 00:04:32,789
+terms of gene families they've been
+
+103
+00:04:31,478 --> 00:04:36,120
+associated with
+
+104
+00:04:32,790 --> 00:04:40,110
+and when you're dealing with say simple
+
+105
+00:04:36,120 --> 00:04:42,829
+species like primates and mice you have
+
+106
+00:04:40,110 --> 00:04:45,509
+nice fairly simple relationships between
+
+107
+00:04:42,829 --> 00:04:47,789
+the gene content in the various genomes
+
+108
+00:04:45,509 --> 00:04:50,069
+one-to-one relationships in general with
+
+109
+00:04:47,790 --> 00:04:52,260
+occasional presence/absence or copy
+
+110
+00:04:50,069 --> 00:04:55,680
+number variation it's it's pretty easy
+
+111
+00:04:52,259 --> 00:04:58,159
+to just pick out but when you're
+
+112
+00:04:55,680 --> 00:05:01,019
+thinking about comparisons between
+
+113
+00:04:58,160 --> 00:05:01,830
+genomes each of which has a kind of
+
+114
+00:05:01,019 --> 00:05:04,769
+separate
+
+115
+00:05:01,829 --> 00:05:07,439
+duplication history things become a lot
+
+116
+00:05:04,769 --> 00:05:09,719
+more complicated and so here we have a
+
+117
+00:05:07,439 --> 00:05:14,699
+few different species that have
+
+118
+00:05:09,720 --> 00:05:18,060
+different polyploidy histories some
+
+119
+00:05:14,699 --> 00:05:20,370
+ancient duplications that they share and
+
+120
+00:05:18,060 --> 00:05:22,199
+then more recent duplications that have
+
+121
+00:05:20,370 --> 00:05:24,959
+been separate in the different species
+
+122
+00:05:22,199 --> 00:05:27,539
+and so we've got a little track of a
+
+123
+00:05:24,959 --> 00:05:30,269
+soybean chromosome at the top we can see
+
+124
+00:05:27,540 --> 00:05:32,700
+that it's been through to whole genome
+
+125
+00:05:30,269 --> 00:05:34,250
+doublings one of the tracks is much more
+
+126
+00:05:32,699 --> 00:05:36,269
+similar that's the more recent
+
+127
+00:05:34,250 --> 00:05:40,319
+duplication event and then you've got
+
+128
+00:05:36,269 --> 00:05:42,449
+some more ancient events that are closer
+
+129
+00:05:40,319 --> 00:05:44,219
+to one another because they they're
+
+130
+00:05:42,449 --> 00:05:46,349
+doubling resulted from that more recent
+
+131
+00:05:44,220 --> 00:05:48,270
+event but further away from them even
+
+132
+00:05:46,350 --> 00:05:50,160
+even something that you tend to think of
+
+133
+00:05:48,269 --> 00:05:54,209
+as a small genome like a rabid abscess
+
+134
+00:05:50,160 --> 00:05:57,090
+has again chromosome doubling or whole
+
+135
+00:05:54,209 --> 00:06:00,029
+genome doublings involved with a lot of
+
+136
+00:05:57,089 --> 00:06:02,089
+gene loss afterwards so you can you can
+
+137
+00:06:00,029 --> 00:06:04,319
+easily see here patterns of
+
+138
+00:06:02,089 --> 00:06:06,179
+fractionation of the sub genomes that
+
+139
+00:06:04,319 --> 00:06:09,240
+resulted from these whole genome
+
+140
+00:06:06,180 --> 00:06:14,670
+duplication events tomato actually went
+
+141
+00:06:09,240 --> 00:06:16,560
+through a hex ploidy event and this this
+
+142
+00:06:14,670 --> 00:06:20,430
+tool you know basically allows you to
+
+143
+00:06:16,560 --> 00:06:21,899
+dynamically query databases for tracks
+
+144
+00:06:20,430 --> 00:06:24,509
+that have a certain gene content
+
+145
+00:06:21,899 --> 00:06:27,329
+associated with them and then pull in
+
+146
+00:06:24,509 --> 00:06:29,099
+from disparate databases tracks that
+
+147
+00:06:27,329 --> 00:06:30,990
+seem to have similar gene content in
+
+148
+00:06:29,100 --> 00:06:34,050
+terms of the gene family assignments and
+
+149
+00:06:30,990 --> 00:06:36,480
+then ultimately ask questions about the
+
+150
+00:06:34,050 --> 00:06:37,829
+evolutionary history behind genes that
+
+151
+00:06:36,480 --> 00:06:40,770
+have been aligned through synteny
+
+152
+00:06:37,829 --> 00:06:43,469
+together and they're their phylogenetic
+
+153
+00:06:40,769 --> 00:06:46,589
+relationships and so you can see that
+
+154
+00:06:43,470 --> 00:06:48,300
+out of those four for that particular
+
+155
+00:06:46,589 --> 00:06:52,849
+which was from a abscisic acid
+
+156
+00:06:48,300 --> 00:06:56,100
+responsive conscription factor family in
+
+157
+00:06:52,850 --> 00:06:57,900
+out of the soybean homeo logs three of
+
+158
+00:06:56,100 --> 00:06:59,010
+them retained that gene and it was lost
+
+159
+00:06:57,899 --> 00:07:01,799
+in one
+
+160
+00:06:59,009 --> 00:07:04,230
+similarly with tomato two were retained
+
+161
+00:07:01,800 --> 00:07:07,740
+one was lost and Arabidopsis also
+
+162
+00:07:04,230 --> 00:07:10,980
+retained two so this gives us a nice way
+
+163
+00:07:07,740 --> 00:07:13,379
+of exploring relationships among the
+
+164
+00:07:10,980 --> 00:07:16,980
+genes but the question you know that
+
+165
+00:07:13,379 --> 00:07:19,529
+still is difficult is well you know what
+
+166
+00:07:16,980 --> 00:07:21,960
+what happens to function as these things
+
+167
+00:07:19,529 --> 00:07:24,388
+have duplicated and went on their
+
+168
+00:07:21,959 --> 00:07:27,359
+separate ways and that's that's not so
+
+169
+00:07:24,389 --> 00:07:31,439
+easy to resolve so you know we're also
+
+170
+00:07:27,360 --> 00:07:33,120
+interested in well you know some some
+
+171
+00:07:31,439 --> 00:07:35,250
+polyploid species like soybean or
+
+172
+00:07:33,120 --> 00:07:37,319
+economically valuable and have a lot of
+
+173
+00:07:35,250 --> 00:07:40,220
+research that goes into them have their
+
+174
+00:07:37,319 --> 00:07:42,180
+own database resources with curators
+
+175
+00:07:40,220 --> 00:07:44,180
+pulling in information for the
+
+176
+00:07:42,180 --> 00:07:46,650
+literature can we make use of
+
+177
+00:07:44,180 --> 00:07:49,199
+comparative genomic techniques to
+
+178
+00:07:46,649 --> 00:07:51,779
+essentially take something like cow pee
+
+179
+00:07:49,199 --> 00:07:53,370
+which does not have that more recent
+
+180
+00:07:51,779 --> 00:07:56,329
+whole genome duplication event and
+
+181
+00:07:53,370 --> 00:07:59,819
+figure out you know okay do I have any
+
+182
+00:07:56,329 --> 00:08:02,490
+say snips associated with seed weight in
+
+183
+00:07:59,819 --> 00:08:05,728
+regions in this genome which I know has
+
+184
+00:08:02,490 --> 00:08:08,370
+sort of more or less two copies of genes
+
+185
+00:08:05,728 --> 00:08:12,300
+for every copy of a gene here and find
+
+186
+00:08:08,370 --> 00:08:15,750
+out well yes there there is a region
+
+187
+00:08:12,300 --> 00:08:18,478
+where I found an association between the
+
+188
+00:08:15,750 --> 00:08:20,788
+trait of interest that is similar to in
+
+189
+00:08:18,478 --> 00:08:22,740
+one of the homie August regions in
+
+190
+00:08:20,788 --> 00:08:25,199
+soybean where they also observed similar
+
+191
+00:08:22,740 --> 00:08:28,530
+variation so that's obviously a nice way
+
+192
+00:08:25,199 --> 00:08:30,538
+of taking candidate genes and figuring
+
+193
+00:08:28,529 --> 00:08:32,129
+out well you know have have I seen
+
+194
+00:08:30,538 --> 00:08:35,458
+evidence in some other species that
+
+195
+00:08:32,129 --> 00:08:38,759
+changes to this gene actually affect
+
+196
+00:08:35,458 --> 00:08:41,399
+rate of interest all right so here comes
+
+197
+00:08:38,759 --> 00:08:44,819
+the tough part making the case for
+
+198
+00:08:41,399 --> 00:08:47,850
+polynomials so just as polyploids
+
+199
+00:08:44,820 --> 00:08:52,760
+involve multiplication of kind of
+
+200
+00:08:47,850 --> 00:08:55,200
+independently behaving linear genomes
+
+201
+00:08:52,759 --> 00:08:57,389
+polynomials are kind of like that in
+
+202
+00:08:55,200 --> 00:08:58,550
+that you're taking together linear
+
+203
+00:08:57,389 --> 00:09:00,289
+factors
+
+204
+00:08:58,549 --> 00:09:02,750
+and if you think about it in this
+
+205
+00:09:00,289 --> 00:09:05,029
+direction it's pretty easy to go through
+
+206
+00:09:02,750 --> 00:09:07,070
+and use the distributive property or
+
+207
+00:09:05,029 --> 00:09:08,689
+things that you learned I was in Lansing
+
+208
+00:09:07,070 --> 00:09:10,910
+high school so I learned this for mr.
+
+209
+00:09:08,690 --> 00:09:13,820
+cotton mill you know you do the first
+
+210
+00:09:10,909 --> 00:09:15,829
+outside inside last trick and figure out
+
+211
+00:09:13,820 --> 00:09:17,870
+exactly how to do your factorization and
+
+212
+00:09:15,830 --> 00:09:19,850
+it's essentially no different no matter
+
+213
+00:09:17,870 --> 00:09:22,149
+how many factors you have you're doing a
+
+214
+00:09:19,850 --> 00:09:24,170
+combinatorial distributive
+
+215
+00:09:22,149 --> 00:09:26,029
+multiplication and you're you know
+
+216
+00:09:24,169 --> 00:09:29,839
+essentially taking the roots of the
+
+217
+00:09:26,029 --> 00:09:33,199
+equation and seeing them come out in the
+
+218
+00:09:29,840 --> 00:09:36,080
+coefficients in kind of interesting ways
+
+219
+00:09:33,200 --> 00:09:38,330
+that these are what's referred to as the
+
+220
+00:09:36,080 --> 00:09:40,490
+elementary symmetric polynomials which
+
+221
+00:09:38,330 --> 00:09:42,970
+means that it doesn't really matter how
+
+222
+00:09:40,490 --> 00:09:46,669
+you permute them you get the same result
+
+223
+00:09:42,970 --> 00:09:50,210
+and this ends up being very important in
+
+224
+00:09:46,669 --> 00:09:52,189
+terms of the theory involved in what it
+
+225
+00:09:50,210 --> 00:09:54,500
+actually means to solve a polynomial
+
+226
+00:09:52,190 --> 00:09:56,240
+equation so you know there are numerical
+
+227
+00:09:54,500 --> 00:09:59,450
+techniques that allow you to approximate
+
+228
+00:09:56,240 --> 00:10:01,940
+solutions but what algebraic people want
+
+229
+00:09:59,450 --> 00:10:05,240
+to do is to say what what is the actual
+
+230
+00:10:01,940 --> 00:10:08,600
+algorithm it can I find a formula like
+
+231
+00:10:05,240 --> 00:10:12,320
+this which I you probably remember the
+
+232
+00:10:08,600 --> 00:10:14,840
+quadratic equation you know it's it's
+
+233
+00:10:12,320 --> 00:10:16,670
+not exactly simple but it's it's fairly
+
+234
+00:10:14,840 --> 00:10:19,190
+straightforward you probably remember
+
+235
+00:10:16,669 --> 00:10:20,629
+how to get there you either memorized it
+
+236
+00:10:19,190 --> 00:10:22,760
+or you learned completing the square and
+
+237
+00:10:20,629 --> 00:10:27,139
+can read arrive it I mean it's it's not
+
+238
+00:10:22,759 --> 00:10:29,450
+too bad but once you go even to a cubic
+
+239
+00:10:27,139 --> 00:10:33,169
+equation things get really a lot harder
+
+240
+00:10:29,450 --> 00:10:33,950
+and this is a Renaissance mathematician
+
+241
+00:10:33,169 --> 00:10:37,159
+Tartaglia
+
+242
+00:10:33,950 --> 00:10:39,170
+who figured out how to deal with these
+
+243
+00:10:37,159 --> 00:10:41,389
+things by first performing a little
+
+244
+00:10:39,169 --> 00:10:44,659
+trick making and depressed cubic and
+
+245
+00:10:41,389 --> 00:10:47,330
+then eventually getting to a formula
+
+246
+00:10:44,659 --> 00:10:49,039
+that in some sense is analogous to the
+
+247
+00:10:47,330 --> 00:10:52,100
+quadratic equation but it's a lot more
+
+248
+00:10:49,039 --> 00:10:53,959
+complicated and you get you get also
+
+249
+00:10:52,100 --> 00:10:57,080
+interesting things with higher degree
+
+250
+00:10:53,960 --> 00:11:00,139
+equations like what they call cases
+
+251
+00:10:57,080 --> 00:11:03,290
+reductive lists which basically means
+
+252
+00:11:00,139 --> 00:11:07,309
+that you can have three real valued
+
+253
+00:11:03,289 --> 00:11:10,459
+roots but if they're not rational you
+
+254
+00:11:07,309 --> 00:11:13,219
+can't actually represent them
+
+255
+00:11:10,460 --> 00:11:16,070
+with this kind of representation without
+
+256
+00:11:13,220 --> 00:11:17,899
+involving imaginary numbers even though
+
+257
+00:11:16,070 --> 00:11:21,350
+the results that you get are not
+
+258
+00:11:17,899 --> 00:11:23,829
+themselves imaginary so as you start to
+
+259
+00:11:21,350 --> 00:11:27,710
+increase the number of factors of things
+
+260
+00:11:23,830 --> 00:11:30,590
+life gets interesting and going even
+
+261
+00:11:27,710 --> 00:11:32,480
+further it was it was eventually
+
+262
+00:11:30,590 --> 00:11:34,310
+demonstrated after you know people had
+
+263
+00:11:32,480 --> 00:11:35,720
+solved the cubic in the quartic it were
+
+264
+00:11:34,309 --> 00:11:38,539
+working real hard to try to solve the
+
+265
+00:11:35,720 --> 00:11:41,000
+quintic and eventually through the work
+
+266
+00:11:38,539 --> 00:11:43,759
+of a ball and yell wah they discovered
+
+267
+00:11:41,000 --> 00:11:45,980
+that in fact you can have fifth degree
+
+268
+00:11:43,759 --> 00:11:48,289
+equations and higher where you simply
+
+269
+00:11:45,980 --> 00:11:51,019
+can't represent the roots in any way
+
+270
+00:11:48,289 --> 00:11:54,349
+using that sort of representation and
+
+271
+00:11:51,019 --> 00:11:56,569
+whether or not you can get to some sort
+
+272
+00:11:54,350 --> 00:11:58,759
+of representation like that is basically
+
+273
+00:11:56,570 --> 00:12:01,370
+dependent on this notion of symmetry
+
+274
+00:11:58,759 --> 00:12:06,110
+among the roots and how how the
+
+275
+00:12:01,370 --> 00:12:07,759
+coefficients impose constraints upon the
+
+276
+00:12:06,110 --> 00:12:10,310
+roots whether you can represent
+
+277
+00:12:07,759 --> 00:12:11,809
+relationships among the roots starting
+
+278
+00:12:10,309 --> 00:12:14,359
+from what they call the field of the
+
+279
+00:12:11,809 --> 00:12:17,000
+coefficients so an example of that would
+
+280
+00:12:14,360 --> 00:12:19,039
+be cyclotomic polynomials which sort of
+
+281
+00:12:17,000 --> 00:12:21,230
+distribute themselves in the complex
+
+282
+00:12:19,039 --> 00:12:23,899
+plane around circle they have a kind of
+
+283
+00:12:21,230 --> 00:12:27,710
+a very restricted form and it can be
+
+284
+00:12:23,899 --> 00:12:29,389
+shown that any any cyclotomic you can
+
+285
+00:12:27,710 --> 00:12:32,240
+represent the roots in terms of these
+
+286
+00:12:29,389 --> 00:12:35,240
+I've specialized quadratic or not
+
+287
+00:12:32,240 --> 00:12:38,870
+quadratic but radical towers from the
+
+288
+00:12:35,240 --> 00:12:40,909
+field coefficients okay well there are
+
+289
+00:12:38,870 --> 00:12:42,620
+there are other times when taking
+
+290
+00:12:40,909 --> 00:12:44,509
+together a bunch of disparate things
+
+291
+00:12:42,620 --> 00:12:47,419
+that are simple to deal with relatively
+
+292
+00:12:44,509 --> 00:12:49,309
+simple individually and you try to put
+
+293
+00:12:47,419 --> 00:12:52,129
+them together and things get complicated
+
+294
+00:12:49,309 --> 00:12:53,929
+quickly even when you're doing kind of
+
+295
+00:12:52,129 --> 00:12:56,299
+the multiplication aspect of things so
+
+296
+00:12:53,929 --> 00:12:59,109
+this is a this is a project from which
+
+297
+00:12:56,299 --> 00:13:02,059
+many of the following examples are taken
+
+298
+00:12:59,110 --> 00:13:03,860
+an NSF funded project that we've been
+
+299
+00:13:02,059 --> 00:13:05,809
+working on to try to take a lot of
+
+300
+00:13:03,860 --> 00:13:08,600
+disparate information resources and
+
+301
+00:13:05,809 --> 00:13:10,819
+unify them in some way you know the
+
+302
+00:13:08,600 --> 00:13:11,210
+there are some technical challenge than
+
+303
+00:13:10,820 --> 00:13:13,490
+this
+
+304
+00:13:11,210 --> 00:13:14,900
+there are many sociological challenges
+
+305
+00:13:13,490 --> 00:13:17,419
+to actually getting something like this
+
+306
+00:13:14,899 --> 00:13:19,549
+to work but I won't I won't go into that
+
+307
+00:13:17,419 --> 00:13:20,899
+too much other than to say that meant
+
+308
+00:13:19,549 --> 00:13:23,719
+many of what I show would not be
+
+309
+00:13:20,899 --> 00:13:24,240
+possible without our collaboration with
+
+310
+00:13:23,720 --> 00:13:28,339
+many of these
+
+311
+00:13:24,240 --> 00:13:31,620
+groups so here's my first example
+
+312
+00:13:28,339 --> 00:13:33,839
+cultivated peanut its a recently formed
+
+313
+00:13:31,620 --> 00:13:38,490
+aloe tetraploid that was formed from a
+
+314
+00:13:33,839 --> 00:13:40,740
+few diploid wild species so the original
+
+315
+00:13:38,490 --> 00:13:43,080
+genome sequencing was done on the
+
+316
+00:13:40,740 --> 00:13:45,419
+diploid they kind of recognized early on
+
+317
+00:13:43,080 --> 00:13:47,220
+that the diploid were close enough
+
+318
+00:13:45,419 --> 00:13:49,319
+together that it would be challenging
+
+319
+00:13:47,220 --> 00:13:51,720
+using you know the tech sequencing
+
+320
+00:13:49,320 --> 00:13:54,028
+technologies available at the time if
+
+321
+00:13:51,720 --> 00:13:57,750
+you were to just sequence the tetraploid
+
+322
+00:13:54,028 --> 00:14:00,120
+directly to figure out which parts went
+
+323
+00:13:57,750 --> 00:14:04,080
+with with which sub genomes so they they
+
+324
+00:14:00,120 --> 00:14:07,139
+approached it by figuring out which of
+
+325
+00:14:04,080 --> 00:14:10,020
+which were the actual progenitor species
+
+326
+00:14:07,139 --> 00:14:11,549
+and actually one of them is for if
+
+327
+00:14:10,019 --> 00:14:13,889
+there's only one accession of this
+
+328
+00:14:11,549 --> 00:14:15,629
+species out there and they believe that
+
+329
+00:14:13,889 --> 00:14:18,659
+it was transported down into the range
+
+330
+00:14:15,629 --> 00:14:20,389
+of the other species by prehistoric
+
+331
+00:14:18,659 --> 00:14:23,309
+humans allowing allowing this
+
+332
+00:14:20,389 --> 00:14:26,250
+hybridization event that eventually led
+
+333
+00:14:23,309 --> 00:14:28,769
+to the cultivated polyploid so you can
+
+334
+00:14:26,250 --> 00:14:33,120
+see it sort of there amidst the range of
+
+335
+00:14:28,769 --> 00:14:35,338
+the other species so you get you can
+
+336
+00:14:33,120 --> 00:14:38,370
+kind of synthetically create what the
+
+337
+00:14:35,339 --> 00:14:41,040
+amphi diploid which are I think I think
+
+338
+00:14:38,370 --> 00:14:43,649
+it's just a fancy way of saying an aloe
+
+339
+00:14:41,039 --> 00:14:46,980
+tetraploid from these things that were
+
+340
+00:14:43,649 --> 00:14:50,250
+created synthetically and so that that's
+
+341
+00:14:46,980 --> 00:14:51,990
+the strategic approach and you can see
+
+342
+00:14:50,250 --> 00:14:55,409
+that there are some you know if you're
+
+343
+00:14:51,990 --> 00:14:58,889
+comparing chromosomes corresponding
+
+344
+00:14:55,409 --> 00:15:01,828
+chromosomes from the two they are
+
+345
+00:14:58,889 --> 00:15:03,419
+different structurally in some ways but
+
+346
+00:15:01,828 --> 00:15:05,729
+there's kind of a clear one-to-one
+
+347
+00:15:03,419 --> 00:15:09,328
+correspondence between the two
+
+348
+00:15:05,730 --> 00:15:11,789
+chromosomes so one one of the
+
+349
+00:15:09,328 --> 00:15:15,870
+interesting things about peanut is that
+
+350
+00:15:11,789 --> 00:15:17,219
+you know because of this extreme genetic
+
+351
+00:15:15,870 --> 00:15:18,990
+bottleneck that it went through they
+
+352
+00:15:17,220 --> 00:15:23,278
+think that there was essentially a
+
+353
+00:15:18,990 --> 00:15:26,820
+single hybridization event but ended up
+
+354
+00:15:23,278 --> 00:15:28,970
+propagating into all of the cultivars
+
+355
+00:15:26,820 --> 00:15:33,570
+that we have today
+
+356
+00:15:28,970 --> 00:15:36,570
+so it it's it's very non diverse from a
+
+357
+00:15:33,570 --> 00:15:38,230
+traditional allelic sense but
+
+358
+00:15:36,570 --> 00:15:40,960
+phenotypically there's quite a
+
+359
+00:15:38,230 --> 00:15:43,450
+University associated with things and so
+
+360
+00:15:40,960 --> 00:15:45,700
+this was kind of a question for people
+
+361
+00:15:43,450 --> 00:15:48,460
+as to how is it possible for such a
+
+362
+00:15:45,700 --> 00:15:54,960
+limited genetic base to generate all of
+
+363
+00:15:48,460 --> 00:15:57,100
+this phenotypic diversity so when they
+
+364
+00:15:54,960 --> 00:15:59,920
+this was actually something that they
+
+365
+00:15:57,100 --> 00:16:02,019
+they began to see when the diploid were
+
+366
+00:15:59,919 --> 00:16:04,389
+sequenced and compared to data that was
+
+367
+00:16:02,019 --> 00:16:08,169
+available for the tetraploid but
+
+368
+00:16:04,389 --> 00:16:12,669
+essentially what's happening is that the
+
+369
+00:16:08,169 --> 00:16:15,219
+two sub genomes within the cultivated
+
+370
+00:16:12,669 --> 00:16:19,809
+tetraploid are interacting in different
+
+371
+00:16:15,220 --> 00:16:23,680
+ways such that in some cases you have a
+
+372
+00:16:19,809 --> 00:16:25,750
+segment of one sub genome that's
+
+373
+00:16:23,679 --> 00:16:27,489
+replacing the other ones this is just a
+
+374
+00:16:25,750 --> 00:16:29,889
+representation kind of showing copy
+
+375
+00:16:27,490 --> 00:16:32,710
+number of the two different homologous
+
+376
+00:16:29,889 --> 00:16:37,330
+genomes so here here we have at the end
+
+377
+00:16:32,710 --> 00:16:39,879
+of chromosome 14 I think it is from from
+
+378
+00:16:37,330 --> 00:16:42,490
+a particular variety of peanut a place
+
+379
+00:16:39,879 --> 00:16:44,409
+where the B ancestral genome exists in
+
+380
+00:16:42,490 --> 00:16:47,680
+two copies and the a has been replaced
+
+381
+00:16:44,409 --> 00:16:48,399
+with it in other regions where a has
+
+382
+00:16:47,679 --> 00:16:50,229
+been lost
+
+383
+00:16:48,399 --> 00:16:52,929
+he has been retained or the other way
+
+384
+00:16:50,230 --> 00:16:54,700
+around so so essentially what's going
+
+385
+00:16:52,929 --> 00:16:57,399
+what seems to be going on to a large
+
+386
+00:16:54,700 --> 00:17:00,310
+extent with peanut is that different
+
+387
+00:16:57,399 --> 00:17:04,029
+patterns of this interactivity between
+
+388
+00:17:00,309 --> 00:17:06,039
+the sub genomes are generating this type
+
+389
+00:17:04,029 --> 00:17:09,009
+of phenotypic diversity and they were
+
+390
+00:17:06,039 --> 00:17:12,250
+actually able to show that they made one
+
+391
+00:17:09,009 --> 00:17:14,410
+of these synthetic crosses and kept it
+
+392
+00:17:12,250 --> 00:17:17,259
+going for a few generations and we're
+
+393
+00:17:14,410 --> 00:17:19,830
+actually able to reproduce some of this
+
+394
+00:17:17,259 --> 00:17:25,480
+phenotypic diversity with him that
+
+395
+00:17:19,829 --> 00:17:27,429
+pedigree so I thought well okay if that
+
+396
+00:17:25,480 --> 00:17:29,950
+if that's the case we've got the tif
+
+397
+00:17:27,430 --> 00:17:33,490
+Runner genome sequenced could we
+
+398
+00:17:29,950 --> 00:17:35,470
+actually see what they were showing in
+
+399
+00:17:33,490 --> 00:17:37,930
+that diagram using some of tools that
+
+400
+00:17:35,470 --> 00:17:40,029
+we've produced so here's that so called
+
+401
+00:17:37,930 --> 00:17:43,440
+genome context viewer again showing us
+
+402
+00:17:40,029 --> 00:17:45,730
+the two homologous segments of
+
+403
+00:17:43,440 --> 00:17:48,820
+cultivated peanut and then the
+
+404
+00:17:45,730 --> 00:17:51,500
+progenitor genomes and at this level you
+
+405
+00:17:48,819 --> 00:17:54,470
+could you can see some cases in which if
+
+406
+00:17:51,500 --> 00:17:57,170
+seems as though the gene content of the
+
+407
+00:17:54,470 --> 00:18:00,230
+two homologous segments is reflecting
+
+408
+00:17:57,170 --> 00:18:02,330
+the bee genome rather than the a genome
+
+409
+00:18:00,230 --> 00:18:03,829
+but you know it might it might be a
+
+410
+00:18:02,329 --> 00:18:06,490
+little difficult to argue that that
+
+411
+00:18:03,829 --> 00:18:10,129
+couldn't also just be vagaries of
+
+412
+00:18:06,490 --> 00:18:12,920
+annotation effects or miss miss
+
+413
+00:18:10,130 --> 00:18:17,000
+assemblies and things like that but if
+
+414
+00:18:12,920 --> 00:18:18,920
+you go ahead and select say if the gene
+
+415
+00:18:17,000 --> 00:18:21,859
+right at the end of the chromosomes and
+
+416
+00:18:18,920 --> 00:18:24,680
+then look at it within the context of
+
+417
+00:18:21,859 --> 00:18:27,019
+the tree you can actually see the
+
+418
+00:18:24,680 --> 00:18:29,950
+pattern fairly clearly in terms of the
+
+419
+00:18:27,019 --> 00:18:33,799
+sequence level relationships that indeed
+
+420
+00:18:29,950 --> 00:18:37,400
+in this case the bee genome genic
+
+421
+00:18:33,799 --> 00:18:40,309
+sequence is much closer to the two
+
+422
+00:18:37,400 --> 00:18:43,519
+copies from the tetraploid than the
+
+423
+00:18:40,309 --> 00:18:46,339
+other genome sequences and you can
+
+424
+00:18:43,519 --> 00:18:48,230
+interact with this tool in ways that
+
+425
+00:18:46,339 --> 00:18:50,629
+cluck claps down the tree of just those
+
+426
+00:18:48,230 --> 00:18:52,579
+genes of interest and then see that
+
+427
+00:18:50,630 --> 00:18:55,970
+reflected in the multiple sequence
+
+428
+00:18:52,579 --> 00:18:59,149
+alignment you can see various places at
+
+429
+00:18:55,970 --> 00:19:01,279
+which the a genome representative is
+
+430
+00:18:59,150 --> 00:19:08,240
+indeed different from the others at a
+
+431
+00:19:01,279 --> 00:19:10,490
+number of positions but of course if we
+
+432
+00:19:08,240 --> 00:19:13,099
+take another another gene from that same
+
+433
+00:19:10,490 --> 00:19:15,470
+region of the genome it might reside in
+
+434
+00:19:13,099 --> 00:19:18,740
+a gene family that's a little bit more
+
+435
+00:19:15,470 --> 00:19:21,460
+complicated so here again we've got the
+
+436
+00:19:18,740 --> 00:19:23,990
+B genome with the two tetraploid x'
+
+437
+00:19:21,460 --> 00:19:26,840
+taken from the same region and behaving
+
+438
+00:19:23,990 --> 00:19:29,440
+similarly in terms of tree topology but
+
+439
+00:19:26,839 --> 00:19:32,889
+there are other subclades of this tree
+
+440
+00:19:29,440 --> 00:19:36,590
+with different sorts of patterns
+
+441
+00:19:32,890 --> 00:19:39,440
+associated with them so you can you can
+
+442
+00:19:36,589 --> 00:19:41,509
+pretty easily using this tool again
+
+443
+00:19:39,440 --> 00:19:42,890
+collapse down to the set of genes that
+
+444
+00:19:41,509 --> 00:19:45,140
+may be of interest in your particular
+
+445
+00:19:42,890 --> 00:19:47,900
+context and then go in the reverse
+
+446
+00:19:45,140 --> 00:19:51,980
+direction say well let's look at their
+
+447
+00:19:47,900 --> 00:19:54,680
+genomic contexts and figure out not not
+
+448
+00:19:51,980 --> 00:19:56,299
+starting with the premise that you're
+
+449
+00:19:54,680 --> 00:19:59,000
+looking at things that are all synthetic
+
+450
+00:19:56,299 --> 00:20:02,509
+but asking the question how would I
+
+451
+00:19:59,000 --> 00:20:04,400
+group these things given their kind of
+
+452
+00:20:02,509 --> 00:20:06,829
+gene family neighborhoods inside
+
+453
+00:20:04,400 --> 00:20:08,840
+a way that I see the synthetic
+
+454
+00:20:06,829 --> 00:20:11,689
+relationships that exist among members
+
+455
+00:20:08,839 --> 00:20:13,459
+of this gene family so this I guess this
+
+456
+00:20:11,690 --> 00:20:14,960
+is the next gene down from the end of
+
+457
+00:20:13,460 --> 00:20:17,750
+the chromosome that I chose so this
+
+458
+00:20:14,960 --> 00:20:20,620
+would be our chromosome 14 genes and
+
+459
+00:20:17,750 --> 00:20:24,410
+then this is the other gene family or
+
+460
+00:20:20,619 --> 00:20:26,239
+other clades that you can see has kind
+
+461
+00:20:24,410 --> 00:20:28,490
+of a more complicated picture in terms
+
+462
+00:20:26,240 --> 00:20:31,460
+of the gene duplications within that
+
+463
+00:20:28,490 --> 00:20:32,690
+region and again you know some some of
+
+464
+00:20:31,460 --> 00:20:34,279
+the aspects of the way that those
+
+465
+00:20:32,690 --> 00:20:36,890
+sequences appear in the tree may be
+
+466
+00:20:34,279 --> 00:20:39,710
+driven by annotation sorts very facts
+
+467
+00:20:36,890 --> 00:20:42,770
+but we we believe that these sorts of
+
+468
+00:20:39,710 --> 00:20:44,059
+tools are valuable for people you know
+
+469
+00:20:42,769 --> 00:20:48,109
+who want to ask particular questions
+
+470
+00:20:44,059 --> 00:20:52,009
+that will enable them to browse the data
+
+471
+00:20:48,109 --> 00:20:53,959
+fairly effectively even in the context
+
+472
+00:20:52,009 --> 00:20:56,349
+of having these kind of fairly
+
+473
+00:20:53,960 --> 00:20:59,600
+complicated relationships between
+
+474
+00:20:56,349 --> 00:21:01,699
+between and within plant genomes so
+
+475
+00:20:59,599 --> 00:21:03,769
+we're really excited about our
+
+476
+00:21:01,700 --> 00:21:06,140
+development of this tool and hoping that
+
+477
+00:21:03,769 --> 00:21:09,019
+other groups will eventually start to
+
+478
+00:21:06,140 --> 00:21:11,420
+pick it up - alright so moving on to a
+
+479
+00:21:09,019 --> 00:21:13,690
+different example of challenges
+
+480
+00:21:11,420 --> 00:21:16,279
+associated with polyploidy this is a
+
+481
+00:21:13,690 --> 00:21:18,259
+genome sequence project that we've been
+
+482
+00:21:16,279 --> 00:21:20,509
+involved with for a number of years
+
+483
+00:21:18,259 --> 00:21:20,960
+actually more more years than I care to
+
+484
+00:21:20,509 --> 00:21:23,900
+admit
+
+485
+00:21:20,960 --> 00:21:26,539
+but it's been it's been a bit difficult
+
+486
+00:21:23,900 --> 00:21:30,190
+going both for technical and funding
+
+487
+00:21:26,539 --> 00:21:33,680
+reasons I guess but you know so we
+
+488
+00:21:30,190 --> 00:21:36,140
+alfalfa cultivated alfalfa is a species
+
+489
+00:21:33,680 --> 00:21:39,080
+that is an auto tetraploid and making
+
+490
+00:21:36,140 --> 00:21:41,030
+life more complicated still it's an out
+
+491
+00:21:39,079 --> 00:21:45,339
+crosser so there's a lot of diversity
+
+492
+00:21:41,029 --> 00:21:47,750
+within the genome itself it's related to
+
+493
+00:21:45,339 --> 00:21:49,579
+metacognitive cargo tranquila which is a
+
+494
+00:21:47,750 --> 00:21:53,240
+kind of a model of species for the
+
+495
+00:21:49,579 --> 00:21:56,689
+legumes and so you know if you if you
+
+496
+00:21:53,240 --> 00:22:00,769
+look at something like frequency spectra
+
+497
+00:21:56,690 --> 00:22:03,289
+in medicago you get a really clean
+
+498
+00:22:00,769 --> 00:22:05,359
+result showing you a sort of a plus on
+
+499
+00:22:03,289 --> 00:22:07,369
+distribution of your Kaymer frequencies
+
+500
+00:22:05,359 --> 00:22:10,099
+which is what you would expect from
+
+501
+00:22:07,369 --> 00:22:12,619
+single copy sequence content classically
+
+502
+00:22:10,099 --> 00:22:14,599
+and you can model things about genome
+
+503
+00:22:12,619 --> 00:22:16,909
+size and hetero zygosity which
+
+504
+00:22:14,599 --> 00:22:18,069
+effectively this has none using this
+
+505
+00:22:16,910 --> 00:22:20,529
+type of
+
+506
+00:22:18,069 --> 00:22:23,589
+set up when you try to do the same thing
+
+507
+00:22:20,529 --> 00:22:26,889
+with sativa things get a lot more
+
+508
+00:22:23,589 --> 00:22:28,480
+complicated in terms of the set of
+
+509
+00:22:26,890 --> 00:22:31,570
+camera Peaks that you're dealing with
+
+510
+00:22:28,480 --> 00:22:34,480
+and your attempt to fit models of those
+
+511
+00:22:31,569 --> 00:22:37,029
+kind of mixed model distributions of
+
+512
+00:22:34,480 --> 00:22:39,569
+Kaymer's present at different copy
+
+513
+00:22:37,029 --> 00:22:41,889
+numbers that you're sampling from a
+
+514
+00:22:39,569 --> 00:22:44,710
+large pool that you've generated from
+
+515
+00:22:41,890 --> 00:22:46,870
+whole genome shotgun sequencing well so
+
+516
+00:22:44,710 --> 00:22:48,669
+one thing that we did in that context
+
+517
+00:22:46,869 --> 00:22:52,319
+kind of similar maybe to the piano
+
+518
+00:22:48,669 --> 00:22:55,390
+genome there there was a diploid eyes
+
+519
+00:22:52,319 --> 00:22:57,639
+version of cultivated alfalfa that had
+
+520
+00:22:55,390 --> 00:22:59,770
+been taken from a tetraploid and made
+
+521
+00:22:57,640 --> 00:23:01,929
+into a diploid and we thought great this
+
+522
+00:22:59,769 --> 00:23:04,839
+will be simpler we can start with that
+
+523
+00:23:01,929 --> 00:23:06,548
+and then leverage it to help us with
+
+524
+00:23:04,839 --> 00:23:09,970
+when we're dealing with the tetraploid
+
+525
+00:23:06,548 --> 00:23:11,679
+itself all right so we had a we had a
+
+526
+00:23:09,970 --> 00:23:14,589
+lot of different data sets that we had
+
+527
+00:23:11,679 --> 00:23:16,150
+available or you know we started
+
+528
+00:23:14,589 --> 00:23:18,428
+thinking it would be easy with Illumina
+
+529
+00:23:16,150 --> 00:23:20,048
+sequencing and then as that proved not
+
+530
+00:23:18,429 --> 00:23:23,169
+to be the case we moved on to different
+
+531
+00:23:20,048 --> 00:23:24,940
+types of data so packed by a sequence
+
+532
+00:23:23,169 --> 00:23:27,669
+saying you I'm not exactly sure how
+
+533
+00:23:24,940 --> 00:23:29,289
+familiar you guys all are with next-gen
+
+534
+00:23:27,669 --> 00:23:31,390
+sequencing but you know there are a
+
+535
+00:23:29,289 --> 00:23:34,029
+number of different technologies not all
+
+536
+00:23:31,390 --> 00:23:35,290
+of them sequence based but they all have
+
+537
+00:23:34,029 --> 00:23:39,039
+kind of their strengths and weaknesses
+
+538
+00:23:35,289 --> 00:23:41,649
+with respect to getting at complex
+
+539
+00:23:39,039 --> 00:23:45,250
+genomes and so we've tried it tried a
+
+540
+00:23:41,650 --> 00:23:47,140
+number of things and one one thing
+
+541
+00:23:45,250 --> 00:23:50,230
+that's kind of a little bit unique about
+
+542
+00:23:47,140 --> 00:23:53,679
+Auto tetraploid z' in terms of using
+
+543
+00:23:50,230 --> 00:23:55,720
+linkage maps is that you do you do your
+
+544
+00:23:53,679 --> 00:23:58,000
+linkage mapping typically using say
+
+545
+00:23:55,720 --> 00:24:00,400
+single single dose heterozygotes would
+
+546
+00:23:58,000 --> 00:24:03,009
+be they sort of behave from that
+
+547
+00:24:00,400 --> 00:24:05,110
+perspective like diploid where it's this
+
+548
+00:24:03,009 --> 00:24:06,490
+or that segregating and you can just
+
+549
+00:24:05,109 --> 00:24:08,439
+keep your eye on the informative
+
+550
+00:24:06,490 --> 00:24:10,390
+haplotype and figure out how it's
+
+551
+00:24:08,440 --> 00:24:12,600
+segregating with other informative
+
+552
+00:24:10,390 --> 00:24:16,450
+haplotypes from the same linkage group
+
+553
+00:24:12,599 --> 00:24:18,879
+so I may be maybe trying to stretch that
+
+554
+00:24:16,450 --> 00:24:21,970
+algebraic analogy but you know as as you
+
+555
+00:24:18,880 --> 00:24:24,970
+as you think about roots of numbers that
+
+556
+00:24:21,970 --> 00:24:26,798
+are more than just square root where you
+
+557
+00:24:24,970 --> 00:24:29,710
+maybe you think about positive or
+
+558
+00:24:26,798 --> 00:24:31,650
+negative as you go to higher roots you
+
+559
+00:24:29,710 --> 00:24:33,870
+have to think about all of the different
+
+560
+00:24:31,650 --> 00:24:35,310
+directions in the complex plane that you
+
+561
+00:24:33,869 --> 00:24:37,319
+could be talking about when you're
+
+562
+00:24:35,309 --> 00:24:40,799
+talking about the the root of a number
+
+563
+00:24:37,319 --> 00:24:46,139
+so things things with genotyping get
+
+564
+00:24:40,799 --> 00:24:50,490
+more complicated as well so just trying
+
+565
+00:24:46,140 --> 00:24:54,840
+to get a handle on what the material was
+
+566
+00:24:50,490 --> 00:24:57,029
+in terms of you know what is it that
+
+567
+00:24:54,839 --> 00:24:58,730
+we're trying to assemble here do we we
+
+568
+00:24:57,029 --> 00:25:01,349
+essentially want to get eight
+
+569
+00:24:58,730 --> 00:25:04,140
+chromosomes like medicago house even
+
+570
+00:25:01,349 --> 00:25:07,919
+though we know there are 32 but for each
+
+571
+00:25:04,140 --> 00:25:11,759
+of the 32 four of them should be in some
+
+572
+00:25:07,920 --> 00:25:13,950
+sense homey oolagah stew one another but
+
+573
+00:25:11,759 --> 00:25:15,690
+at some level of diversity from one
+
+574
+00:25:13,950 --> 00:25:19,860
+another or do we really want a 32
+
+575
+00:25:15,690 --> 00:25:21,720
+chromosome sort of can genome within the
+
+576
+00:25:19,859 --> 00:25:25,319
+context of our single cultivar of
+
+577
+00:25:21,720 --> 00:25:27,089
+alfalfa you know and in some sense every
+
+578
+00:25:25,319 --> 00:25:28,409
+time you create a cross of alfalfa
+
+579
+00:25:27,089 --> 00:25:31,199
+you're gonna get a different combination
+
+580
+00:25:28,410 --> 00:25:33,090
+of these things so in some sense it's
+
+581
+00:25:31,200 --> 00:25:35,880
+kind of quixotic to try to get the
+
+582
+00:25:33,089 --> 00:25:38,220
+haplotypes but if your clone only
+
+583
+00:25:35,880 --> 00:25:40,230
+propagating at fuel you'll preserve them
+
+584
+00:25:38,220 --> 00:25:43,259
+at least and you can ask questions about
+
+585
+00:25:40,230 --> 00:25:45,839
+you know is is this technology suitable
+
+586
+00:25:43,259 --> 00:25:49,759
+for understanding issues of haplotype
+
+587
+00:25:45,839 --> 00:25:52,529
+phasing across long distances so
+
+588
+00:25:49,759 --> 00:25:55,349
+probably not surprisingly you know we
+
+589
+00:25:52,529 --> 00:25:57,899
+found that short read assemblies were
+
+590
+00:25:55,349 --> 00:26:00,209
+compressing things down a lot more
+
+591
+00:25:57,900 --> 00:26:02,640
+towards the expected haploid genome size
+
+592
+00:26:00,210 --> 00:26:06,269
+but there was a lot of fragmentation if
+
+593
+00:26:02,640 --> 00:26:08,970
+you think about your n 50 s relatives
+
+594
+00:26:06,269 --> 00:26:10,710
+and chromosome sizes they're they're not
+
+595
+00:26:08,970 --> 00:26:15,269
+looking very good even even with the
+
+596
+00:26:10,710 --> 00:26:16,860
+long read technologies the context sizes
+
+597
+00:26:15,269 --> 00:26:19,139
+that we're getting out of those are very
+
+598
+00:26:16,859 --> 00:26:22,279
+small not as small as the short reads
+
+599
+00:26:19,140 --> 00:26:24,720
+but at the level of smallness that it's
+
+600
+00:26:22,279 --> 00:26:26,879
+even challenging to kind of take some of
+
+601
+00:26:24,720 --> 00:26:30,539
+the other technologies and apply them to
+
+602
+00:26:26,880 --> 00:26:32,420
+them and the other thing is that the
+
+603
+00:26:30,539 --> 00:26:35,210
+long read assemblies you know were
+
+604
+00:26:32,420 --> 00:26:38,130
+definitely producing genomes that were
+
+605
+00:26:35,210 --> 00:26:41,130
+closer to capturing several of the
+
+606
+00:26:38,130 --> 00:26:43,680
+haplotypes not maybe all four but you
+
+607
+00:26:41,130 --> 00:26:45,059
+know and even in Kadel which we had
+
+608
+00:26:43,680 --> 00:26:47,308
+approached as a diploid
+
+609
+00:26:45,058 --> 00:26:49,259
+it would be simpler well it was in some
+
+610
+00:26:47,308 --> 00:26:51,210
+sense but still there's a lot of
+
+611
+00:26:49,259 --> 00:26:54,028
+heterozygosity there and enough that
+
+612
+00:26:51,210 --> 00:26:56,490
+with the high error rates combined with
+
+613
+00:26:54,028 --> 00:26:58,288
+the hetero zygosity there are a lot of
+
+614
+00:26:56,490 --> 00:27:01,499
+issues with actually dealing with long
+
+615
+00:26:58,288 --> 00:27:03,329
+reads and figuring out you know well is
+
+616
+00:27:01,499 --> 00:27:05,579
+this just a repeat is this Christian
+
+617
+00:27:03,329 --> 00:27:09,778
+high in highly arid sequence or is it
+
+618
+00:27:05,579 --> 00:27:13,918
+actually a divergent haplotype so anyway
+
+619
+00:27:09,778 --> 00:27:15,599
+when we when we finally kind of took one
+
+620
+00:27:13,919 --> 00:27:17,820
+of the long read assemblies as our base
+
+621
+00:27:15,599 --> 00:27:19,498
+then we started exploring kind of
+
+622
+00:27:17,819 --> 00:27:22,589
+higher-order genome scaffolding
+
+623
+00:27:19,499 --> 00:27:25,679
+technologies like optical maps or high C
+
+624
+00:27:22,589 --> 00:27:27,538
+of various flavors and what one of the
+
+625
+00:27:25,679 --> 00:27:30,059
+companies we worked with phased genomics
+
+626
+00:27:27,538 --> 00:27:31,470
+their algorithm basically you would tell
+
+627
+00:27:30,058 --> 00:27:34,109
+it how many chromosomes you wanted to
+
+628
+00:27:31,470 --> 00:27:37,409
+get out which some ways seems a little
+
+629
+00:27:34,109 --> 00:27:38,939
+bit of a danger sign but you know we
+
+630
+00:27:37,409 --> 00:27:40,740
+could tell them well we would like to
+
+631
+00:27:38,940 --> 00:27:42,470
+try it with 8 chromosomes would like to
+
+632
+00:27:40,740 --> 00:27:44,700
+try it with 32 and you can see that
+
+633
+00:27:42,470 --> 00:27:46,499
+there were there were some significant
+
+634
+00:27:44,700 --> 00:27:47,999
+differences and I will say not
+
+635
+00:27:46,499 --> 00:27:50,879
+differences that always made a lot of
+
+636
+00:27:47,999 --> 00:27:52,829
+sense to us and trying to do that I
+
+637
+00:27:50,878 --> 00:27:56,579
+talked a little bit about the camer
+
+638
+00:27:52,829 --> 00:27:58,949
+frequency spectra so you know depending
+
+639
+00:27:56,579 --> 00:28:02,249
+on how you what size you choose your cam
+
+640
+00:27:58,950 --> 00:28:05,009
+or at you will either pick up stuff that
+
+641
+00:28:02,249 --> 00:28:06,868
+is effectively single copy across all
+
+642
+00:28:05,009 --> 00:28:09,450
+the homologues and present at higher
+
+643
+00:28:06,868 --> 00:28:11,009
+frequencies and then smaller Peaks
+
+644
+00:28:09,450 --> 00:28:16,499
+representing things that are single
+
+645
+00:28:11,009 --> 00:28:19,159
+dosage or double dosage I think that you
+
+646
+00:28:16,499 --> 00:28:22,558
+know this this progression as you get
+
+647
+00:28:19,159 --> 00:28:24,269
+closer to you're using longer Kaymer's
+
+648
+00:28:22,558 --> 00:28:27,269
+and showing that your Peaks your
+
+649
+00:28:24,269 --> 00:28:27,839
+higher-order Peaks effectively are being
+
+650
+00:28:27,269 --> 00:28:29,450
+erased
+
+651
+00:28:27,839 --> 00:28:34,230
+you know it's effectively showing us
+
+652
+00:28:29,450 --> 00:28:36,720
+that they're within about 71 base pairs
+
+653
+00:28:34,230 --> 00:28:38,700
+you know you're going to get two snips
+
+654
+00:28:36,720 --> 00:28:42,600
+that actually differentiate between all
+
+655
+00:28:38,700 --> 00:28:46,259
+four haplotypes so it's it's quite a
+
+656
+00:28:42,599 --> 00:28:49,740
+complex genome to work with from an
+
+657
+00:28:46,259 --> 00:28:52,230
+assembly perspective but when you look
+
+658
+00:28:49,740 --> 00:28:55,798
+so these are the same so using 25 MERS
+
+659
+00:28:52,230 --> 00:28:58,599
+as our basis we're using kind of the
+
+660
+00:28:55,798 --> 00:29:00,759
+camer frequency plots against the
+
+661
+00:28:58,599 --> 00:29:03,579
+actual genomes that we've assembled and
+
+662
+00:29:00,759 --> 00:29:06,009
+looking to see well for Kaymer's that
+
+663
+00:29:03,579 --> 00:29:09,879
+are in this peak to capture them once as
+
+664
+00:29:06,009 --> 00:29:12,879
+expected or twice and I guess this is
+
+665
+00:29:09,880 --> 00:29:15,640
+actually the this is the peak of 4x
+
+666
+00:29:12,880 --> 00:29:17,799
+shared between all four haplotypes so
+
+667
+00:29:15,640 --> 00:29:19,690
+you might expect that to be captured at
+
+668
+00:29:17,798 --> 00:29:22,269
+4x and you know again it's not
+
+669
+00:29:19,690 --> 00:29:25,710
+surprising that what you see is that the
+
+670
+00:29:22,269 --> 00:29:30,250
+short read data tends to pick up this
+
+671
+00:29:25,710 --> 00:29:32,980
+you know single copy stuff and you know
+
+672
+00:29:30,250 --> 00:29:35,950
+some of the haplotypes are not being
+
+673
+00:29:32,980 --> 00:29:39,269
+represented so there at 0 X but it's
+
+674
+00:29:35,950 --> 00:29:42,490
+it's not really a simple picture and
+
+675
+00:29:39,269 --> 00:29:44,048
+even within Cadle where the the the
+
+676
+00:29:42,490 --> 00:29:45,880
+camera frequency plot looks a little
+
+677
+00:29:44,048 --> 00:29:47,440
+ragged because we don't have the same
+
+678
+00:29:45,880 --> 00:29:50,620
+depth of coverage because we're using
+
+679
+00:29:47,440 --> 00:29:52,690
+PacBio data which isn't as deep and you
+
+680
+00:29:50,619 --> 00:29:54,459
+can't you can't really use it prior to
+
+681
+00:29:52,690 --> 00:29:56,019
+correction which is one reason it
+
+682
+00:29:54,460 --> 00:29:58,419
+becomes less deep
+
+683
+00:29:56,019 --> 00:30:00,879
+I think things look complicated again as
+
+684
+00:29:58,419 --> 00:30:04,419
+you would expect with the hair as I
+
+685
+00:30:00,880 --> 00:30:05,950
+guess genome so boot busca analysis is
+
+686
+00:30:04,419 --> 00:30:08,380
+something that a lot of people do to
+
+687
+00:30:05,950 --> 00:30:10,960
+kind of assess how well their genomes
+
+688
+00:30:08,380 --> 00:30:12,820
+have done in terms of capturing genes
+
+689
+00:30:10,960 --> 00:30:15,579
+that are expected to be present in
+
+690
+00:30:12,819 --> 00:30:17,769
+single copy and of course whether or not
+
+691
+00:30:15,579 --> 00:30:20,079
+you expect it to be single copy as again
+
+692
+00:30:17,769 --> 00:30:22,720
+kind of relative to your expectation for
+
+693
+00:30:20,079 --> 00:30:25,298
+the ploidy level and the amount of time
+
+694
+00:30:22,720 --> 00:30:26,650
+things have had to become single copy
+
+695
+00:30:25,298 --> 00:30:29,889
+again following a whole genome
+
+696
+00:30:26,650 --> 00:30:33,659
+duplication event and you know in terms
+
+697
+00:30:29,890 --> 00:30:36,309
+of genic content again the short read
+
+698
+00:30:33,659 --> 00:30:38,559
+technologies in general well these are
+
+699
+00:30:36,308 --> 00:30:42,279
+different now assembly algorithms being
+
+700
+00:30:38,558 --> 00:30:44,259
+applied short read or long read and you
+
+701
+00:30:42,279 --> 00:30:45,819
+know again you can see that short read
+
+702
+00:30:44,259 --> 00:30:48,129
+technologies they're doing doing an okay
+
+703
+00:30:45,819 --> 00:30:50,279
+job of picking up gene content but just
+
+704
+00:30:48,130 --> 00:30:53,380
+you know basically making a single copy
+
+705
+00:30:50,279 --> 00:30:56,048
+whereas the longer read technologies are
+
+706
+00:30:53,380 --> 00:30:58,230
+picking up two or three copies of these
+
+707
+00:30:56,048 --> 00:31:02,168
+things and when you when you look at
+
+708
+00:30:58,230 --> 00:31:04,329
+genes from medicago tranquila just
+
+709
+00:31:02,169 --> 00:31:05,980
+across the board for things that you
+
+710
+00:31:04,329 --> 00:31:09,069
+wouldn't necessarily expect to be in
+
+711
+00:31:05,980 --> 00:31:11,519
+single copy you get a somewhat simpler
+
+712
+00:31:09,069 --> 00:31:16,169
+picture but definitely um
+
+713
+00:31:11,519 --> 00:31:19,349
+more mornings appearing in multiple you
+
+714
+00:31:16,170 --> 00:31:22,650
+know for four or five or higher levels
+
+715
+00:31:19,349 --> 00:31:26,189
+of employee so not not a real change but
+
+716
+00:31:22,650 --> 00:31:30,320
+kind of tendency to be able to pick
+
+717
+00:31:26,190 --> 00:31:30,320
+multi copy gene families I suppose
+
+718
+00:31:30,920 --> 00:31:37,740
+alright so we had a well we had the
+
+719
+00:31:35,789 --> 00:31:40,559
+medicago trunk hatchling genome and
+
+720
+00:31:37,740 --> 00:31:44,940
+prior evidence made from genetic Maps
+
+721
+00:31:40,559 --> 00:31:48,029
+within sativa showed us that essentially
+
+722
+00:31:44,940 --> 00:31:50,100
+the two genomes are collinear despite
+
+723
+00:31:48,029 --> 00:31:54,029
+the fact that even at the haploid genome
+
+724
+00:31:50,099 --> 00:31:56,579
+size one is quite expanded almost twice
+
+725
+00:31:54,029 --> 00:31:59,250
+as big as the other one there are a
+
+726
+00:31:56,579 --> 00:32:01,769
+couple of interesting things that turn
+
+727
+00:31:59,250 --> 00:32:04,920
+out not to really be about differences
+
+728
+00:32:01,769 --> 00:32:07,049
+between styler and Frank axilla but the
+
+729
+00:32:04,920 --> 00:32:09,360
+particular accession that was chosen for
+
+730
+00:32:07,049 --> 00:32:11,609
+the genome sequencing of trunk Atua had
+
+731
+00:32:09,359 --> 00:32:13,079
+some peculiarities and they they show up
+
+732
+00:32:11,609 --> 00:32:16,709
+when you compare it to other tran
+
+733
+00:32:13,079 --> 00:32:20,309
+quechuas but when you when you you know
+
+734
+00:32:16,710 --> 00:32:24,029
+essentially try to use trunk a chola as
+
+735
+00:32:20,309 --> 00:32:25,730
+your basis you would you would expect
+
+736
+00:32:24,029 --> 00:32:29,129
+that it would do a pretty good job of
+
+737
+00:32:25,730 --> 00:32:31,529
+showing you collinearity and depending
+
+738
+00:32:29,130 --> 00:32:34,740
+on how fragmented your assembly is you
+
+739
+00:32:31,529 --> 00:32:36,359
+know i genome dot plots are a nice way
+
+740
+00:32:34,740 --> 00:32:39,390
+of showing relationships between
+
+741
+00:32:36,359 --> 00:32:41,219
+different genomes but when you see
+
+742
+00:32:39,390 --> 00:32:43,770
+something like this where you know the
+
+743
+00:32:41,220 --> 00:32:45,900
+labels of one axis are so dense that you
+
+744
+00:32:43,769 --> 00:32:47,549
+can't even read them it basically just
+
+745
+00:32:45,900 --> 00:32:49,710
+means that you've got a lot of degrees
+
+746
+00:32:47,549 --> 00:32:51,389
+of freedom that you have to make things
+
+747
+00:32:49,710 --> 00:32:55,170
+look like diagonals and if there are
+
+748
+00:32:51,390 --> 00:32:57,090
+real structural events going on between
+
+749
+00:32:55,170 --> 00:32:59,550
+your your genomes you're not likely to
+
+750
+00:32:57,089 --> 00:33:02,730
+see them but as you as you start
+
+751
+00:32:59,549 --> 00:33:05,129
+applying more aggressive scaffolding
+
+752
+00:33:02,730 --> 00:33:08,549
+technologies then you you get the chance
+
+753
+00:33:05,130 --> 00:33:10,110
+to be wrong and you know this this is an
+
+754
+00:33:08,549 --> 00:33:11,819
+example of some of the things that we're
+
+755
+00:33:10,109 --> 00:33:14,549
+coming out of the hi-c data where
+
+756
+00:33:11,819 --> 00:33:17,189
+they're doing a pretty good job of kind
+
+757
+00:33:14,549 --> 00:33:20,579
+of figuring out which chromosome a
+
+758
+00:33:17,190 --> 00:33:22,710
+particular scaffold belongs to I'm
+
+759
+00:33:20,579 --> 00:33:24,759
+getting it in the right neighborhood but
+
+760
+00:33:22,710 --> 00:33:26,079
+effectively what they're doing even
+
+761
+00:33:24,759 --> 00:33:30,519
+when you you tell them to kind of
+
+762
+00:33:26,079 --> 00:33:34,419
+produce 32 chromosomes is not really
+
+763
+00:33:30,519 --> 00:33:37,660
+give you 32 chromosome haplotypes but
+
+764
+00:33:34,420 --> 00:33:41,140
+give you each each of the 8 chromosomes
+
+765
+00:33:37,660 --> 00:33:43,779
+in 4 pieces where each of the pieces
+
+766
+00:33:41,140 --> 00:33:45,970
+kind of represents a strange little
+
+767
+00:33:43,779 --> 00:33:48,549
+jumble of all haplotypes that you had
+
+768
+00:33:45,970 --> 00:33:50,470
+for that because the hi-c data isn't
+
+769
+00:33:48,549 --> 00:33:52,509
+really able of resolving these kind of
+
+770
+00:33:50,470 --> 00:33:54,309
+haplotype phasing issues at least not in
+
+771
+00:33:52,509 --> 00:33:57,039
+the hands of the algorithm that was
+
+772
+00:33:54,309 --> 00:33:58,389
+applied to it so just zooming in on this
+
+773
+00:33:57,039 --> 00:34:00,430
+a little bit more on one of the
+
+774
+00:33:58,390 --> 00:34:03,759
+chromosomes you can you can start to see
+
+775
+00:34:00,430 --> 00:34:05,380
+on the one hand probably some assembly
+
+776
+00:34:03,759 --> 00:34:08,050
+artifacts that are coming in and from
+
+777
+00:34:05,380 --> 00:34:09,730
+some of the scaffolding technologies I
+
+778
+00:34:08,050 --> 00:34:13,480
+would I would not expect this to be a
+
+779
+00:34:09,730 --> 00:34:15,849
+real relationship between a alfalfa
+
+780
+00:34:13,480 --> 00:34:18,360
+scaffold and trunk Angela you see
+
+781
+00:34:15,849 --> 00:34:20,529
+another one of those sort of crow's-feet
+
+782
+00:34:18,360 --> 00:34:23,039
+representations there but you can also
+
+783
+00:34:20,530 --> 00:34:26,080
+clearly see you know we are picking up
+
+784
+00:34:23,039 --> 00:34:28,539
+fairly good representation of two
+
+785
+00:34:26,079 --> 00:34:30,849
+haplotypes along you know in many cases
+
+786
+00:34:28,539 --> 00:34:35,320
+along wide stretches and in some case
+
+787
+00:34:30,849 --> 00:34:38,679
+it's a little bit more fragmented again
+
+788
+00:34:35,320 --> 00:34:41,769
+if we take if we take our original non
+
+789
+00:34:38,679 --> 00:34:43,720
+scaffold just long read technologies you
+
+790
+00:34:41,769 --> 00:34:45,940
+can start to kind of trace a picture but
+
+791
+00:34:43,719 --> 00:34:48,489
+you have a lot of degrees of freedom to
+
+792
+00:34:45,940 --> 00:34:51,250
+make make this into little you know sort
+
+793
+00:34:48,489 --> 00:34:54,219
+of line segments that are showing you
+
+794
+00:34:51,250 --> 00:34:57,730
+collinearity as you apply something like
+
+795
+00:34:54,219 --> 00:35:00,069
+optical mapping these lines become much
+
+796
+00:34:57,730 --> 00:35:02,440
+longer than more coherent and you know
+
+797
+00:35:00,070 --> 00:35:04,620
+these seem to represent appetites but
+
+798
+00:35:02,440 --> 00:35:08,590
+they're still kind of a question about
+
+799
+00:35:04,619 --> 00:35:10,089
+can you really trust that the phasing
+
+800
+00:35:08,590 --> 00:35:12,220
+that this is sort of saying that you
+
+801
+00:35:10,090 --> 00:35:14,950
+have along your haplotype is actually
+
+802
+00:35:12,219 --> 00:35:16,539
+accurate because you know by oh nano map
+
+803
+00:35:14,949 --> 00:35:18,969
+doesn't actually have sequence data
+
+804
+00:35:16,539 --> 00:35:20,920
+associated with it it's just a kind of a
+
+805
+00:35:18,969 --> 00:35:24,099
+pattern which we'll see in a another
+
+806
+00:35:20,920 --> 00:35:27,190
+slide so this this is the kind of
+
+807
+00:35:24,099 --> 00:35:30,480
+commish of haplotypes that the hi-c data
+
+808
+00:35:27,190 --> 00:35:33,300
+is producing for it for this region
+
+809
+00:35:30,480 --> 00:35:37,360
+again probably in the right general
+
+810
+00:35:33,300 --> 00:35:37,960
+vicinity but it's certainly not making a
+
+811
+00:35:37,360 --> 00:35:39,849
+single
+
+812
+00:35:37,960 --> 00:35:42,909
+here in haplotype as instructed by the
+
+813
+00:35:39,849 --> 00:35:46,420
+32 chromosomes and then if we apply a
+
+814
+00:35:42,909 --> 00:35:47,769
+high c-plus bio nano which kind of
+
+815
+00:35:46,420 --> 00:35:51,869
+allows you to make breaks where
+
+816
+00:35:47,769 --> 00:35:54,730
+necessary and you know what one one
+
+817
+00:35:51,869 --> 00:35:56,289
+limitation of the non sequence basis of
+
+818
+00:35:54,730 --> 00:35:57,909
+something like an optical map is that
+
+819
+00:35:56,289 --> 00:36:00,039
+your your scaffolds kind of have to be a
+
+820
+00:35:57,909 --> 00:36:03,429
+certain size to begin with in order for
+
+821
+00:36:00,039 --> 00:36:06,489
+them to get purchase into the genetic
+
+822
+00:36:03,429 --> 00:36:11,409
+map sorry no the optical map which I'll
+
+823
+00:36:06,489 --> 00:36:13,689
+show in another slide so this then again
+
+824
+00:36:11,409 --> 00:36:16,809
+is using using the same tool to look at
+
+825
+00:36:13,690 --> 00:36:19,599
+the haplotypes that we've derived from
+
+826
+00:36:16,809 --> 00:36:22,960
+that region and here's a just kind of
+
+827
+00:36:19,599 --> 00:36:24,490
+the crows foot sort of thing that we
+
+828
+00:36:22,960 --> 00:36:26,409
+were seeing in the dot plot looked at
+
+829
+00:36:24,489 --> 00:36:28,989
+from the genic perspective and turned on
+
+830
+00:36:26,409 --> 00:36:30,659
+its side for cattle so that that's what
+
+831
+00:36:28,989 --> 00:36:34,000
+I would consider to be an artifact
+
+832
+00:36:30,659 --> 00:36:37,108
+scaffold but we also see some kind of
+
+833
+00:36:34,000 --> 00:36:40,269
+interesting things within our alfalfa
+
+834
+00:36:37,108 --> 00:36:42,819
+blocks where you know this this is just
+
+835
+00:36:40,269 --> 00:36:44,889
+kind of a contact that the optical map
+
+836
+00:36:42,820 --> 00:36:46,240
+was not able to place probably because
+
+837
+00:36:44,889 --> 00:36:48,279
+it wasn't long enough and didn't have
+
+838
+00:36:46,239 --> 00:36:50,679
+enough restriction sites to really
+
+839
+00:36:48,280 --> 00:36:53,530
+create a pattern to put it into place
+
+840
+00:36:50,679 --> 00:36:55,690
+but you can you can basically imagine
+
+841
+00:36:53,530 --> 00:36:58,240
+that it fits right in there here's
+
+842
+00:36:55,690 --> 00:36:59,920
+another example where you have a little
+
+843
+00:36:58,239 --> 00:37:02,319
+region we didn't we didn't happen to
+
+844
+00:36:59,920 --> 00:37:04,210
+pick it up using the kind of synteny
+
+845
+00:37:02,320 --> 00:37:06,849
+based way of looking at things that
+
+846
+00:37:04,210 --> 00:37:08,588
+we're using here but another kind of
+
+847
+00:37:06,849 --> 00:37:10,660
+interesting question then again along
+
+848
+00:37:08,588 --> 00:37:13,119
+the same lines about well what what do
+
+849
+00:37:10,659 --> 00:37:16,029
+people who want to use in alfalfa genome
+
+850
+00:37:13,119 --> 00:37:17,858
+I really want out of a reference you
+
+851
+00:37:16,030 --> 00:37:19,119
+know the pretendin C would be to say
+
+852
+00:37:17,858 --> 00:37:21,279
+well let's just choose the longest
+
+853
+00:37:19,119 --> 00:37:23,680
+haplotype and kind of do a minimum
+
+854
+00:37:21,280 --> 00:37:25,900
+tiling thing and choose the most
+
+855
+00:37:23,679 --> 00:37:28,750
+contiguous and least redundant path
+
+856
+00:37:25,900 --> 00:37:30,099
+through those dot plots that we can but
+
+857
+00:37:28,750 --> 00:37:32,530
+there does seem to be a lot of evidence
+
+858
+00:37:30,099 --> 00:37:35,920
+that there's gene loss between the
+
+859
+00:37:32,530 --> 00:37:37,540
+different homologues as you know some
+
+860
+00:37:35,920 --> 00:37:39,970
+polyploid theory might lead you to
+
+861
+00:37:37,539 --> 00:37:40,869
+believe could be the case and so you
+
+862
+00:37:39,969 --> 00:37:44,199
+know if you just chose one
+
+863
+00:37:40,869 --> 00:37:46,088
+representative homolog then you might be
+
+864
+00:37:44,199 --> 00:37:48,009
+missing important gene content that was
+
+865
+00:37:46,088 --> 00:37:50,230
+actually present on another one of these
+
+866
+00:37:48,010 --> 00:37:51,790
+copies and so you know as I sort of
+
+867
+00:37:50,230 --> 00:37:52,320
+alluded to the fact that you've got kind
+
+868
+00:37:51,789 --> 00:37:54,869
+of a
+
+869
+00:37:52,320 --> 00:37:58,860
+a pan genome for the price of a single
+
+870
+00:37:54,869 --> 00:38:00,960
+genome with alfalfa and you know I'm I'm
+
+871
+00:37:58,860 --> 00:38:03,210
+thinking you know eventually we might
+
+872
+00:38:00,960 --> 00:38:05,309
+come to the place where instead of
+
+873
+00:38:03,210 --> 00:38:08,369
+thinking about single reference genomes
+
+874
+00:38:05,309 --> 00:38:10,920
+we think about consolidated references
+
+875
+00:38:08,369 --> 00:38:11,670
+that could basically take all the four
+
+876
+00:38:10,920 --> 00:38:13,769
+homologues
+
+877
+00:38:11,670 --> 00:38:16,079
+i've abstract them out into a single
+
+878
+00:38:13,769 --> 00:38:17,820
+representation that was maximally useful
+
+879
+00:38:16,079 --> 00:38:19,670
+for somebody actually trying to do
+
+880
+00:38:17,820 --> 00:38:23,190
+things in alfalfa
+
+881
+00:38:19,670 --> 00:38:24,990
+alright so optical maps turned out to be
+
+882
+00:38:23,190 --> 00:38:27,329
+a bit of a surprise for me
+
+883
+00:38:24,989 --> 00:38:28,559
+you know they I was thinking that they
+
+884
+00:38:27,329 --> 00:38:30,659
+wouldn't really have enough information
+
+885
+00:38:28,559 --> 00:38:33,170
+to be able to distinguish the homologues
+
+886
+00:38:30,659 --> 00:38:35,849
+but what we what we were seeing is that
+
+887
+00:38:33,170 --> 00:38:38,010
+when we took the original context and
+
+888
+00:38:35,849 --> 00:38:40,319
+then started placing them up against the
+
+889
+00:38:38,010 --> 00:38:41,640
+scaffolds that it would produce we saw
+
+890
+00:38:40,320 --> 00:38:43,800
+that they were kind of breaking the
+
+891
+00:38:41,639 --> 00:38:46,109
+context and distributing them across
+
+892
+00:38:43,800 --> 00:38:48,000
+different scaffolds and in a kind of a
+
+893
+00:38:46,110 --> 00:38:51,480
+pattern that suggested that maybe what
+
+894
+00:38:48,000 --> 00:38:54,989
+was going on was it was trying to make a
+
+895
+00:38:51,480 --> 00:38:58,320
+haplotype consistent phasing so this
+
+896
+00:38:54,989 --> 00:39:00,989
+this is kind of what optical maps look
+
+897
+00:38:58,320 --> 00:39:04,140
+like you sort of do an in silico
+
+898
+00:39:00,989 --> 00:39:07,319
+digestion of your sequence data that
+
+899
+00:39:04,139 --> 00:39:09,480
+you've produced where wherever you know
+
+900
+00:39:07,320 --> 00:39:11,130
+the enzymes that you're using you find
+
+901
+00:39:09,480 --> 00:39:13,110
+their cut sites and you look at the
+
+902
+00:39:11,130 --> 00:39:16,050
+pattern that this would create and then
+
+903
+00:39:13,110 --> 00:39:18,180
+you look at all of the labeled molecules
+
+904
+00:39:16,050 --> 00:39:20,370
+that you've put together using assembly
+
+905
+00:39:18,179 --> 00:39:22,919
+like techniques and look at the patterns
+
+906
+00:39:20,369 --> 00:39:26,089
+that they show and so in this case we
+
+907
+00:39:22,920 --> 00:39:30,000
+can kind of see some clear regions where
+
+908
+00:39:26,090 --> 00:39:33,390
+maps created using different enzymes are
+
+909
+00:39:30,000 --> 00:39:37,530
+showing places where you get a very
+
+910
+00:39:33,389 --> 00:39:40,409
+clear crossover between the sequence
+
+911
+00:39:37,530 --> 00:39:44,040
+scaffold showing a pattern that's
+
+912
+00:39:40,409 --> 00:39:46,079
+associated with this map up to here and
+
+913
+00:39:44,039 --> 00:39:48,599
+this map up to here and then switches
+
+914
+00:39:46,079 --> 00:39:50,069
+over to not matching this one but
+
+915
+00:39:48,599 --> 00:39:52,049
+matching this other one which hadn't
+
+916
+00:39:50,070 --> 00:39:54,150
+measured before so that seems to be
+
+917
+00:39:52,050 --> 00:39:56,310
+pretty good evidence in my mind these
+
+918
+00:39:54,150 --> 00:39:59,460
+things are actually heterozygous enough
+
+919
+00:39:56,309 --> 00:40:01,320
+that the haplit haplotypes are actually
+
+920
+00:39:59,460 --> 00:40:04,619
+fairly well distinguished even when you
+
+921
+00:40:01,320 --> 00:40:05,940
+don't have the sequence information so
+
+922
+00:40:04,619 --> 00:40:06,929
+finally you know we're
+
+923
+00:40:05,940 --> 00:40:09,150
+we're trying to make use of these
+
+924
+00:40:06,929 --> 00:40:12,538
+genetic maps and even that's been a bit
+
+925
+00:40:09,150 --> 00:40:14,309
+of a challenge because the the markers
+
+926
+00:40:12,539 --> 00:40:16,410
+that were developed were developed using
+
+927
+00:40:14,309 --> 00:40:18,059
+one of the short read assemblies and so
+
+928
+00:40:16,409 --> 00:40:21,899
+those short reader assemblies kind of
+
+929
+00:40:18,059 --> 00:40:23,730
+represent little mosaic haplotypes even
+
+930
+00:40:21,900 --> 00:40:26,130
+within the context of you know fairly
+
+931
+00:40:23,730 --> 00:40:28,588
+short stretches of most flanking
+
+932
+00:40:26,130 --> 00:40:31,140
+sequence so what you'd kind of like to
+
+933
+00:40:28,588 --> 00:40:34,199
+do is to say well you know I know this
+
+934
+00:40:31,139 --> 00:40:36,868
+was a snip chosen because it had three
+
+935
+00:40:34,199 --> 00:40:38,939
+copies and you know three of the
+
+936
+00:40:36,869 --> 00:40:40,588
+homologues at one copy of an allele and
+
+937
+00:40:38,940 --> 00:40:42,179
+the other one so what I really want to
+
+938
+00:40:40,588 --> 00:40:44,219
+do is establish you know what's the
+
+939
+00:40:42,179 --> 00:40:47,308
+informative allele which linkage group
+
+940
+00:40:44,219 --> 00:40:51,149
+did it go to and do up it within the
+
+941
+00:40:47,309 --> 00:40:53,849
+context of the linkage phased sort of
+
+942
+00:40:51,150 --> 00:40:56,700
+representation of those snips am I also
+
+943
+00:40:53,849 --> 00:40:59,099
+phasing those particular alleles within
+
+944
+00:40:56,699 --> 00:41:01,409
+the context of sequence analysis and so
+
+945
+00:40:59,099 --> 00:41:05,010
+this is showing us a dot plot where the
+
+946
+00:41:01,409 --> 00:41:07,440
+different 32 linkage groups genetically
+
+947
+00:41:05,010 --> 00:41:09,299
+are being represented and you can you
+
+948
+00:41:07,440 --> 00:41:12,750
+can see that it's it's fairly collinear
+
+949
+00:41:09,298 --> 00:41:15,298
+with a little bit of noise off the
+
+950
+00:41:12,750 --> 00:41:17,608
+diagonal showing where a particular
+
+951
+00:41:15,298 --> 00:41:20,068
+allele you know really ought to be in
+
+952
+00:41:17,608 --> 00:41:22,259
+this linkage group that was actually put
+
+953
+00:41:20,068 --> 00:41:25,739
+into a scaffold with something else that
+
+954
+00:41:22,260 --> 00:41:27,450
+it doesn't really want and then finally
+
+955
+00:41:25,739 --> 00:41:30,298
+getting down to the actual sequence
+
+956
+00:41:27,449 --> 00:41:33,028
+level of the haplotypes it was a bit of
+
+957
+00:41:30,298 --> 00:41:34,949
+a surprise to me to see that at the end
+
+958
+00:41:33,028 --> 00:41:35,730
+of the day even though we didn't really
+
+959
+00:41:34,949 --> 00:41:38,699
+end up using
+
+960
+00:41:35,730 --> 00:41:41,699
+Kadel to be kind of a substrate for
+
+961
+00:41:38,699 --> 00:41:44,519
+working on the higher level putting
+
+962
+00:41:41,699 --> 00:41:46,828
+together of the tetraploid genome when
+
+963
+00:41:44,519 --> 00:41:49,588
+you start looking at the haplotype
+
+964
+00:41:46,829 --> 00:41:51,269
+structure that you have in terms of the
+
+965
+00:41:49,588 --> 00:41:54,239
+different things appearing in these two
+
+966
+00:41:51,269 --> 00:41:57,838
+genomes there actually it seems as
+
+967
+00:41:54,239 --> 00:42:00,449
+though you're seeing in some cases at
+
+968
+00:41:57,838 --> 00:42:03,480
+least similar haplotypes resolving out
+
+969
+00:42:00,449 --> 00:42:05,730
+of those two genomes which tamaak tum' i
+
+970
+00:42:03,480 --> 00:42:07,349
+I don't I don't know that much about the
+
+971
+00:42:05,730 --> 00:42:10,048
+history of Keadle but I don't think was
+
+972
+00:42:07,349 --> 00:42:13,318
+actually really derived in any way from
+
+973
+00:42:10,048 --> 00:42:15,750
+this material so that was kind of a nice
+
+974
+00:42:13,318 --> 00:42:18,108
+result and then up here we're kind of
+
+975
+00:42:15,750 --> 00:42:19,940
+showing what a most
+
+976
+00:42:18,108 --> 00:42:23,420
+sequence alignment tool for whole
+
+977
+00:42:19,940 --> 00:42:26,059
+genomes kind of does when you try to
+
+978
+00:42:23,420 --> 00:42:29,298
+give it things that actually have
+
+979
+00:42:26,059 --> 00:42:31,160
+multiple genome copies but you're just
+
+980
+00:42:29,298 --> 00:42:32,929
+sort of saying well you know take take
+
+981
+00:42:31,159 --> 00:42:35,389
+this species and align it here and I
+
+982
+00:42:32,929 --> 00:42:37,489
+expect there to really be one region but
+
+983
+00:42:35,389 --> 00:42:40,129
+it's finding it's finding that you've
+
+984
+00:42:37,489 --> 00:42:41,900
+given it several copies of this region
+
+985
+00:42:40,130 --> 00:42:45,230
+with different characteristics it's kind
+
+986
+00:42:41,900 --> 00:42:48,588
+of just mashing them into one consensus
+
+987
+00:42:45,230 --> 00:42:54,409
+like thing that is much more nicely
+
+988
+00:42:48,588 --> 00:42:56,210
+resolved down here alright so this is
+
+989
+00:42:54,409 --> 00:42:59,118
+the kind of the last example this
+
+990
+00:42:56,210 --> 00:43:01,970
+represents more recent work that it's
+
+991
+00:42:59,119 --> 00:43:03,499
+actually just a proposal that was
+
+992
+00:43:01,969 --> 00:43:05,480
+recently submitted that we've been
+
+993
+00:43:03,498 --> 00:43:09,409
+generating a lot of preliminary data on
+
+994
+00:43:05,480 --> 00:43:13,969
+and so you know people have been looking
+
+995
+00:43:09,409 --> 00:43:18,409
+at functional genomics omics data in
+
+996
+00:43:13,969 --> 00:43:20,389
+both tissues for a long time now and one
+
+997
+00:43:18,409 --> 00:43:22,159
+will you know it's great it's powerful
+
+998
+00:43:20,389 --> 00:43:24,558
+it provides us with a lot of information
+
+999
+00:43:22,159 --> 00:43:28,909
+but one problem is that you know in fact
+
+1000
+00:43:24,559 --> 00:43:31,789
+you've got a genome that in some sense
+
+1001
+00:43:28,909 --> 00:43:33,379
+is the same in all of these parts of the
+
+1002
+00:43:31,789 --> 00:43:37,339
+plant but it's doing different things
+
+1003
+00:43:33,380 --> 00:43:42,548
+and you know when when you aggregate
+
+1004
+00:43:37,338 --> 00:43:44,480
+things together you can obviously miss
+
+1005
+00:43:42,548 --> 00:43:46,670
+interesting things that might be going
+
+1006
+00:43:44,480 --> 00:43:49,880
+into parts and sometimes you can usually
+
+1007
+00:43:46,670 --> 00:43:51,259
+just get patterns which are actually the
+
+1008
+00:43:49,880 --> 00:43:54,200
+opposite when you look across the
+
+1009
+00:43:51,259 --> 00:43:55,818
+aggregate then the things within the
+
+1010
+00:43:54,199 --> 00:43:57,768
+meaningful subgroupings that you had
+
+1011
+00:43:55,818 --> 00:44:01,608
+might might have related and that's
+
+1012
+00:43:57,768 --> 00:44:03,498
+called Simpsons Simpsons paradox so the
+
+1013
+00:44:01,608 --> 00:44:06,108
+question is you know well if we start
+
+1014
+00:44:03,498 --> 00:44:09,518
+looking at things at fine finer levels
+
+1015
+00:44:06,108 --> 00:44:14,150
+of resolution within a system a
+
+1016
+00:44:09,518 --> 00:44:16,459
+multi-cellular complex system will we be
+
+1017
+00:44:14,150 --> 00:44:17,809
+able to answer questions that we
+
+1018
+00:44:16,460 --> 00:44:19,670
+couldn't address when we were just
+
+1019
+00:44:17,809 --> 00:44:22,309
+looking at things in the aggregate and
+
+1020
+00:44:19,670 --> 00:44:26,739
+this is this is work that mark LeBeau
+
+1021
+00:44:22,309 --> 00:44:26,739
+has been spearheading
+
+1022
+00:44:26,989 --> 00:44:32,068
+so that just kind of giving a little bit
+
+1023
+00:44:30,179 --> 00:44:34,230
+more substance to what I was saying you
+
+1024
+00:44:32,068 --> 00:44:36,808
+know the root systems of these various
+
+1025
+00:44:34,230 --> 00:44:40,949
+species although they have in many cases
+
+1026
+00:44:36,809 --> 00:44:42,990
+the same cell types where cell type I'll
+
+1027
+00:44:40,949 --> 00:44:45,328
+just let you decide for yourself what
+
+1028
+00:44:42,989 --> 00:44:47,098
+that might actually mean they look
+
+1029
+00:44:45,329 --> 00:44:50,460
+pretty different in terms of their
+
+1030
+00:44:47,099 --> 00:44:53,338
+structure and the number of components
+
+1031
+00:44:50,460 --> 00:44:56,009
+of different types that they have so you
+
+1032
+00:44:53,338 --> 00:44:58,949
+can kind of easily imagine that when
+
+1033
+00:44:56,009 --> 00:45:01,469
+you're averaging out in kind of
+
+1034
+00:44:58,949 --> 00:45:04,919
+different weighted averages across these
+
+1035
+00:45:01,469 --> 00:45:07,798
+different pools you would not really be
+
+1036
+00:45:04,920 --> 00:45:10,019
+able to compare all that easily across
+
+1037
+00:45:07,798 --> 00:45:13,349
+them in meaningful ways if you wanted to
+
+1038
+00:45:10,018 --> 00:45:15,449
+say look at even if you had done a kind
+
+1039
+00:45:13,349 --> 00:45:17,970
+of a carefully controlled experiment
+
+1040
+00:45:15,449 --> 00:45:19,318
+where you defined you know what what is
+
+1041
+00:45:17,969 --> 00:45:22,709
+the section of the route that is
+
+1042
+00:45:19,318 --> 00:45:25,829
+homologous and Arabidopsis to mikado so
+
+1043
+00:45:22,710 --> 00:45:27,509
+these other things you know you may just
+
+1044
+00:45:25,829 --> 00:45:30,298
+be limited in terms of the actual
+
+1045
+00:45:27,509 --> 00:45:32,039
+biology in terms of what what averaging
+
+1046
+00:45:30,298 --> 00:45:34,288
+is happening and so when you try to do
+
+1047
+00:45:32,039 --> 00:45:36,599
+comparisons in terms of evolutionary
+
+1048
+00:45:34,289 --> 00:45:38,420
+questions you just might not really have
+
+1049
+00:45:36,599 --> 00:45:41,759
+great data to work with
+
+1050
+00:45:38,420 --> 00:45:44,190
+so recently as I'm sure many of you are
+
+1051
+00:45:41,759 --> 00:45:47,068
+aware technologies that have been around
+
+1052
+00:45:44,190 --> 00:45:50,639
+in the animal space for a number of
+
+1053
+00:45:47,068 --> 00:45:53,608
+years have just begun to be applied to
+
+1054
+00:45:50,639 --> 00:45:55,469
+plants you know it's not it's not that
+
+1055
+00:45:53,608 --> 00:45:57,889
+we're slow on the uptake it's that we've
+
+1056
+00:45:55,469 --> 00:46:00,538
+had you know real challenges in terms of
+
+1057
+00:45:57,889 --> 00:46:04,858
+cell walls and the ability to actually
+
+1058
+00:46:00,539 --> 00:46:09,089
+take plant tissue and dissociate the
+
+1059
+00:46:04,858 --> 00:46:11,518
+cells into say contexts in which you can
+
+1060
+00:46:09,088 --> 00:46:13,558
+actually do single cell biology but
+
+1061
+00:46:11,518 --> 00:46:16,469
+within the last year a number of papers
+
+1062
+00:46:13,559 --> 00:46:19,278
+have come out including John chief
+
+1063
+00:46:16,469 --> 00:46:21,449
+Williams on the previous slide who's
+
+1064
+00:46:19,278 --> 00:46:23,670
+looked at a rabbit opposite root
+
+1065
+00:46:21,449 --> 00:46:27,568
+development for many years he published
+
+1066
+00:46:23,670 --> 00:46:30,358
+a paper using proto plasting on Arab
+
+1067
+00:46:27,568 --> 00:46:34,768
+adopts of root cells and basically
+
+1068
+00:46:30,358 --> 00:46:36,480
+created a Arab adopts us root Atlas from
+
+1069
+00:46:34,768 --> 00:46:40,979
+that data as a number of groups other
+
+1070
+00:46:36,480 --> 00:46:43,920
+groups have been looking at and the eye
+
+1071
+00:46:40,980 --> 00:46:47,010
+recently made aware of an effort that's
+
+1072
+00:46:43,920 --> 00:46:49,019
+there's a workshop happening soon to
+
+1073
+00:46:47,010 --> 00:46:51,000
+kind of start thinking about what it
+
+1074
+00:46:49,019 --> 00:46:54,000
+really means to generate a plant cell
+
+1075
+00:46:51,000 --> 00:46:57,210
+Atlas similar to the sorts of atlases
+
+1076
+00:46:54,000 --> 00:46:59,338
+that are being developed in say human
+
+1077
+00:46:57,210 --> 00:47:00,929
+and mouse other systems that are a
+
+1078
+00:46:59,338 --> 00:47:03,119
+little bit more mature in terms of these
+
+1079
+00:47:00,929 --> 00:47:06,239
+technologies so I think it's a really
+
+1080
+00:47:03,119 --> 00:47:07,800
+exciting area and something that you
+
+1081
+00:47:06,239 --> 00:47:12,029
+know I'm hoping that we'll get funded to
+
+1082
+00:47:07,800 --> 00:47:15,119
+work on so Mark's approach has been a
+
+1083
+00:47:12,030 --> 00:47:17,670
+little different in that he's he's
+
+1084
+00:47:15,119 --> 00:47:20,220
+working with single nucleus data rather
+
+1085
+00:47:17,670 --> 00:47:23,430
+than single cell or protoplast in single
+
+1086
+00:47:20,219 --> 00:47:26,459
+cell data and a number of the possible
+
+1087
+00:47:23,429 --> 00:47:30,719
+advantages to doing that are enumerated
+
+1088
+00:47:26,460 --> 00:47:32,639
+here so it's one of the ways that I
+
+1089
+00:47:30,719 --> 00:47:35,209
+relate this to the basic question of
+
+1090
+00:47:32,639 --> 00:47:38,098
+polyploidy and thank Jeff Doyle for
+
+1091
+00:47:35,210 --> 00:47:41,338
+turning me on to this question about
+
+1092
+00:47:38,099 --> 00:47:43,109
+what happens you know transcriptionally
+
+1093
+00:47:41,338 --> 00:47:47,400
+with cells that have different pendopo
+
+1094
+00:47:43,108 --> 00:47:51,299
+including levels you know a lot of these
+
+1095
+00:47:47,400 --> 00:47:55,139
+platforms will have different biases in
+
+1096
+00:47:51,300 --> 00:47:57,539
+terms of cell cell sizes that they're
+
+1097
+00:47:55,139 --> 00:48:00,358
+able to actually incorporate into their
+
+1098
+00:47:57,539 --> 00:48:02,190
+micro fluidics or their droplets and so
+
+1099
+00:48:00,358 --> 00:48:03,960
+that's that's at least somewhat
+
+1100
+00:48:02,190 --> 00:48:06,150
+minimized with the use of nuclear data
+
+1101
+00:48:03,960 --> 00:48:08,880
+but I think I think at the end of the
+
+1102
+00:48:06,150 --> 00:48:12,930
+day it's probably just the fact that you
+
+1103
+00:48:08,880 --> 00:48:14,160
+don't have to tune your system as much
+
+1104
+00:48:12,929 --> 00:48:16,289
+when you're trying to go across
+
+1105
+00:48:14,159 --> 00:48:19,379
+different species working with the Knife
+
+1106
+00:48:16,289 --> 00:48:22,739
+nuclear isolation protocols so hopefully
+
+1107
+00:48:19,380 --> 00:48:24,930
+we will be at a point soon where we can
+
+1108
+00:48:22,739 --> 00:48:28,189
+actually engage in some of the
+
+1109
+00:48:24,929 --> 00:48:30,419
+comparative functional omics that we are
+
+1110
+00:48:28,190 --> 00:48:32,849
+hoping that these technologies will
+
+1111
+00:48:30,420 --> 00:48:36,510
+really start to bring to bear on these
+
+1112
+00:48:32,849 --> 00:48:39,859
+questions and we're you know we're
+
+1113
+00:48:36,510 --> 00:48:39,859
+thinking that a lot of the
+
+1114
+00:48:40,570 --> 00:48:46,039
+biological questions you know it may
+
+1115
+00:48:43,489 --> 00:48:47,839
+actually have slightly different kind of
+
+1116
+00:48:46,039 --> 00:48:49,550
+takes that you get when you're when
+
+1117
+00:48:47,840 --> 00:48:51,920
+you're restricting yourself to what's
+
+1118
+00:48:49,550 --> 00:48:53,750
+going on and nucleus but that that could
+
+1119
+00:48:51,920 --> 00:48:56,300
+be viewed you know in some cases is an
+
+1120
+00:48:53,750 --> 00:49:00,619
+advantage rather than you know possibly
+
+1121
+00:48:56,300 --> 00:49:03,110
+just a difference there are some some
+
+1122
+00:49:00,619 --> 00:49:04,279
+real challenges to you know your when
+
+1123
+00:49:03,110 --> 00:49:05,809
+you're going to the single-cell level
+
+1124
+00:49:04,280 --> 00:49:07,940
+you're already faced with challenges
+
+1125
+00:49:05,809 --> 00:49:09,799
+with really low amounts of starting
+
+1126
+00:49:07,940 --> 00:49:11,659
+material and when you when you're
+
+1127
+00:49:09,800 --> 00:49:13,940
+limiting yourself to only what's going
+
+1128
+00:49:11,659 --> 00:49:17,659
+on from the nucleus it's it's even more
+
+1129
+00:49:13,940 --> 00:49:19,280
+challenging but you know the one basic
+
+1130
+00:49:17,659 --> 00:49:21,409
+question with using the single nucleus
+
+1131
+00:49:19,280 --> 00:49:23,360
+approach is well can we even get a
+
+1132
+00:49:21,409 --> 00:49:25,909
+picture of these systems that's
+
+1133
+00:49:23,360 --> 00:49:27,380
+comparable in some ways to what's coming
+
+1134
+00:49:25,909 --> 00:49:30,469
+starting to come out of the single-cell
+
+1135
+00:49:27,380 --> 00:49:33,500
+studies and so these are the kinds of
+
+1136
+00:49:30,469 --> 00:49:35,239
+pictures that are created by some of the
+
+1137
+00:49:33,500 --> 00:49:37,550
+informatics systems associated with
+
+1138
+00:49:35,239 --> 00:49:40,909
+single-cell essentially each data point
+
+1139
+00:49:37,550 --> 00:49:43,220
+is an individual cell and they're being
+
+1140
+00:49:40,909 --> 00:49:45,049
+spread out into this kind of
+
+1141
+00:49:43,219 --> 00:49:46,639
+two-dimensional projection you you can
+
+1142
+00:49:45,050 --> 00:49:50,630
+think about this sort of like a PCA
+
+1143
+00:49:46,639 --> 00:49:52,759
+except PCAs are kind of designed to look
+
+1144
+00:49:50,630 --> 00:49:57,349
+at the dimensions that maximize variance
+
+1145
+00:49:52,760 --> 00:50:01,040
+across well what are the dimensions
+
+1146
+00:49:57,349 --> 00:50:03,139
+across which most variants occurs these
+
+1147
+00:50:01,039 --> 00:50:06,219
+techniques are a little bit more in
+
+1148
+00:50:03,139 --> 00:50:08,420
+tuned with looking at complex sorts of
+
+1149
+00:50:06,219 --> 00:50:11,179
+relationships where neighborhoods are
+
+1150
+00:50:08,420 --> 00:50:13,550
+more important T Snee was the one that
+
+1151
+00:50:11,179 --> 00:50:15,109
+people kind of started out using I first
+
+1152
+00:50:13,550 --> 00:50:17,780
+heard about it a couple of years ago tag
+
+1153
+00:50:15,110 --> 00:50:19,579
+and already it's been kind of started to
+
+1154
+00:50:17,780 --> 00:50:23,180
+be deprecated in favor of more
+
+1155
+00:50:19,579 --> 00:50:25,250
+sophisticated techniques but in any case
+
+1156
+00:50:23,179 --> 00:50:27,349
+you can see that if you if you do kind
+
+1157
+00:50:25,250 --> 00:50:30,469
+of a coke clustering that takes into
+
+1158
+00:50:27,349 --> 00:50:32,839
+account kind of possible batch effects
+
+1159
+00:50:30,469 --> 00:50:36,259
+between the different experiments and
+
+1160
+00:50:32,840 --> 00:50:39,200
+then you project them into the same
+
+1161
+00:50:36,260 --> 00:50:42,680
+space and then separate out the single
+
+1162
+00:50:39,199 --> 00:50:45,439
+cell dots from single nucleus dots you
+
+1163
+00:50:42,679 --> 00:50:46,989
+get you get a fairly you know coherent
+
+1164
+00:50:45,440 --> 00:50:49,970
+picture in terms of the overall
+
+1165
+00:50:46,989 --> 00:50:52,759
+structure where different areas are
+
+1166
+00:50:49,969 --> 00:50:54,230
+populated by both cells in nuclei
+
+1167
+00:50:52,760 --> 00:50:56,510
+but there are some things that we're
+
+1168
+00:50:54,230 --> 00:50:58,579
+picking up that don't seem to be present
+
+1169
+00:50:56,510 --> 00:51:02,540
+at all in the in the single-cell data so
+
+1170
+00:50:58,579 --> 00:51:04,550
+that it could be a case in which there
+
+1171
+00:51:02,539 --> 00:51:07,608
+are just certain cell types that are
+
+1172
+00:51:04,550 --> 00:51:11,150
+biased for whatever reason against being
+
+1173
+00:51:07,608 --> 00:51:12,409
+picked up in a fair plasting approaches
+
+1174
+00:51:11,150 --> 00:51:17,180
+that we're able to pick up with the
+
+1175
+00:51:12,409 --> 00:51:18,618
+nuclei when when it so it's you know
+
+1176
+00:51:17,179 --> 00:51:22,578
+it's fun to look at these plots
+
+1177
+00:51:18,619 --> 00:51:24,500
+sometimes it's okay if you can see four
+
+1178
+00:51:22,579 --> 00:51:25,849
+patterns but at the end of the day what
+
+1179
+00:51:24,500 --> 00:51:27,588
+you really want to do is to sort of
+
+1180
+00:51:25,849 --> 00:51:29,000
+figure out well what are these cell
+
+1181
+00:51:27,588 --> 00:51:31,190
+types and so if you're working in a
+
+1182
+00:51:29,000 --> 00:51:32,358
+rabid OPS's you know you have marker
+
+1183
+00:51:31,190 --> 00:51:34,909
+genes that have been established for
+
+1184
+00:51:32,358 --> 00:51:36,858
+cell types over many years and you can
+
+1185
+00:51:34,909 --> 00:51:39,588
+use the patterns of expression to kind
+
+1186
+00:51:36,858 --> 00:51:44,210
+of tease apart what these clusters
+
+1187
+00:51:39,588 --> 00:51:49,639
+likely represent biologically similarly
+
+1188
+00:51:44,210 --> 00:51:52,070
+in soybean which is paleo polyploid were
+
+1189
+00:51:49,639 --> 00:51:56,029
+we're able to sort of do do a similar
+
+1190
+00:51:52,070 --> 00:51:58,150
+thing figure out what the clusters
+
+1191
+00:51:56,030 --> 00:52:01,040
+represent and then start to look at
+
+1192
+00:51:58,150 --> 00:52:02,990
+effects of treatments like inoculation
+
+1193
+00:52:01,039 --> 00:52:05,150
+with sim buy on and show differential
+
+1194
+00:52:02,989 --> 00:52:07,639
+expression between the genes that are in
+
+1195
+00:52:05,150 --> 00:52:09,289
+the same cluster but being affected by
+
+1196
+00:52:07,639 --> 00:52:11,150
+the treatments differently and so I
+
+1197
+00:52:09,289 --> 00:52:14,539
+probably won't have too much time to
+
+1198
+00:52:11,150 --> 00:52:17,300
+talk about this but you know Jeff and I
+
+1199
+00:52:14,539 --> 00:52:20,809
+have worked since the early days of NGO
+
+1200
+00:52:17,300 --> 00:52:22,730
+sequencing on questions around well when
+
+1201
+00:52:20,809 --> 00:52:25,369
+you get when you get new polyploids
+
+1202
+00:52:22,730 --> 00:52:26,030
+being formed from hybridization of
+
+1203
+00:52:25,369 --> 00:52:29,869
+diploid x'
+
+1204
+00:52:26,030 --> 00:52:31,790
+and you come polyploid complexes
+
+1205
+00:52:29,869 --> 00:52:33,740
+essentially you call them Aalto until a
+
+1206
+00:52:31,789 --> 00:52:35,599
+but they're really different species
+
+1207
+00:52:33,739 --> 00:52:37,759
+different genomes different combinations
+
+1208
+00:52:35,599 --> 00:52:41,088
+of genomes what actually happens with
+
+1209
+00:52:37,760 --> 00:52:44,270
+the expression of these homeotic gene
+
+1210
+00:52:41,088 --> 00:52:46,219
+ohms together and can you access those
+
+1211
+00:52:44,269 --> 00:52:48,170
+questions using some of these sequence
+
+1212
+00:52:46,219 --> 00:52:50,659
+of sync technologies where sometimes you
+
+1213
+00:52:48,170 --> 00:52:52,190
+see you know one one homolog effectively
+
+1214
+00:52:50,659 --> 00:52:54,348
+gets suppressed and the other one is
+
+1215
+00:52:52,190 --> 00:52:56,750
+sort of dominant sometimes you get
+
+1216
+00:52:54,349 --> 00:52:58,579
+things like sub functionalisation and so
+
+1217
+00:52:56,750 --> 00:53:01,690
+we're trying to take the single-cell
+
+1218
+00:52:58,579 --> 00:53:04,010
+data and basically ask those questions
+
+1219
+00:53:01,690 --> 00:53:05,929
+by taking
+
+1220
+00:53:04,010 --> 00:53:08,090
+the data from the single cells that's
+
+1221
+00:53:05,929 --> 00:53:12,469
+been aggregated across the clusters and
+
+1222
+00:53:08,090 --> 00:53:15,079
+then defining indices that describe in
+
+1223
+00:53:12,469 --> 00:53:17,899
+terms of gene pairs related to one
+
+1224
+00:53:15,079 --> 00:53:20,509
+another through homie OG from ancient
+
+1225
+00:53:17,900 --> 00:53:22,280
+whole genome duplication events you know
+
+1226
+00:53:20,510 --> 00:53:25,700
+what what are the sorts of patterns that
+
+1227
+00:53:22,280 --> 00:53:28,190
+you can see so this is a case where for
+
+1228
+00:53:25,699 --> 00:53:29,809
+this particular gene pair sometimes one
+
+1229
+00:53:28,190 --> 00:53:31,490
+gene is the dominant partner sometimes
+
+1230
+00:53:29,809 --> 00:53:33,949
+the other gene is the dominant partner
+
+1231
+00:53:31,489 --> 00:53:36,229
+and sometimes you don't see any bias so
+
+1232
+00:53:33,949 --> 00:53:37,609
+you don't have enough read count data to
+
+1233
+00:53:36,230 --> 00:53:39,860
+really see significant bias
+
+1234
+00:53:37,610 --> 00:53:41,690
+sometimes you see clear preference one
+
+1235
+00:53:39,860 --> 00:53:43,519
+home you log over another and then
+
+1236
+00:53:41,690 --> 00:53:45,950
+similarly you know our different tissues
+
+1237
+00:53:43,519 --> 00:53:49,969
+different in terms of the ways in which
+
+1238
+00:53:45,949 --> 00:53:52,069
+they use different homologs to become
+
+1239
+00:53:49,969 --> 00:53:54,949
+the cells that they want to be through
+
+1240
+00:53:52,070 --> 00:53:56,539
+the developmental processes so finally
+
+1241
+00:53:54,949 --> 00:53:59,059
+you know in addition to transcriptomic
+
+1242
+00:53:56,539 --> 00:54:00,650
+data we're using attack seek data which
+
+1243
+00:53:59,059 --> 00:54:03,849
+really is looking at chromosome
+
+1244
+00:54:00,650 --> 00:54:07,309
+structure and how how the chromosomes
+
+1245
+00:54:03,849 --> 00:54:10,219
+remodel themselves through interaction
+
+1246
+00:54:07,309 --> 00:54:12,710
+with the histones to try to make gene
+
+1247
+00:54:10,219 --> 00:54:14,599
+expression possible so there are some
+
+1248
+00:54:12,710 --> 00:54:17,210
+integrative techniques that have been
+
+1249
+00:54:14,599 --> 00:54:19,000
+developed similar to you know what you
+
+1250
+00:54:17,210 --> 00:54:23,210
+might use when you're trying to
+
+1251
+00:54:19,000 --> 00:54:25,250
+integrate say data set from one species
+
+1252
+00:54:23,210 --> 00:54:26,929
+to data set from another species you're
+
+1253
+00:54:25,250 --> 00:54:29,659
+kind of making some assumptions about
+
+1254
+00:54:26,929 --> 00:54:31,909
+you know what expression would look like
+
+1255
+00:54:29,659 --> 00:54:33,279
+with respect to the accessibility and
+
+1256
+00:54:31,909 --> 00:54:35,299
+genes that are being expressed
+
+1257
+00:54:33,280 --> 00:54:37,070
+integrating that way and then trying to
+
+1258
+00:54:35,300 --> 00:54:38,450
+figure out what the clustering is and
+
+1259
+00:54:37,070 --> 00:54:40,670
+then you can start asking questions
+
+1260
+00:54:38,449 --> 00:54:43,250
+about differential accessibility over
+
+1261
+00:54:40,670 --> 00:54:45,320
+the attack seek data aggregator across
+
+1262
+00:54:43,250 --> 00:54:48,760
+your clusters attack seek being even
+
+1263
+00:54:45,320 --> 00:54:50,840
+more sparse than the RNA seek data is so
+
+1264
+00:54:48,760 --> 00:54:52,070
+here are the people who I haven't
+
+1265
+00:54:50,840 --> 00:54:54,769
+already mentioned and of course this
+
+1266
+00:54:52,070 --> 00:54:58,780
+talk and just like to acknowledge on the
+
+1267
+00:54:54,769 --> 00:54:58,780
+various projects take questions
+
+1268
+00:54:59,380 --> 00:55:05,239
+[Applause]
+
+1269
+00:55:25,659 --> 00:55:28,699
+[Music]
+
+1270
+00:55:29,199 --> 00:55:43,309
+so I don't think a large amount of
+
+1271
+00:55:36,889 --> 00:55:45,289
+genetic kind of are whether or not it's
+
+1272
+00:55:43,309 --> 00:55:57,829
+missing pieces that actually contribute
+
+1273
+00:55:45,289 --> 00:55:59,719
+a lot so you know I would say it's not a
+
+1274
+00:55:57,829 --> 00:56:01,789
+question we've looked at carefully yet
+
+1275
+00:55:59,719 --> 00:56:05,389
+we haven't actually done a gene
+
+1276
+00:56:01,789 --> 00:56:08,329
+annotation of the tetraploid mostly just
+
+1277
+00:56:05,389 --> 00:56:10,099
+for reasons of running out of funding so
+
+1278
+00:56:08,329 --> 00:56:11,900
+the data I was presenting was actually
+
+1279
+00:56:10,099 --> 00:56:13,670
+taking the trunk actual genes and just
+
+1280
+00:56:11,900 --> 00:56:15,740
+projecting them onto the tetrachloride
+
+1281
+00:56:13,670 --> 00:56:17,900
+showing it from that perspective so
+
+1282
+00:56:15,739 --> 00:56:19,849
+there's a little bit of guesswork
+
+1283
+00:56:17,900 --> 00:56:22,309
+involved at that but you know in terms
+
+1284
+00:56:19,849 --> 00:56:25,130
+of the seeing fairly large deletions
+
+1285
+00:56:22,309 --> 00:56:26,869
+present in genic regions when you look
+
+1286
+00:56:25,130 --> 00:56:29,780
+at individual examples I would I would
+
+1287
+00:56:26,869 --> 00:56:33,970
+guess that it's not not uncommon to see
+
+1288
+00:56:29,780 --> 00:56:52,760
+those types of mutations changes being
+
+1289
+00:56:33,969 --> 00:56:54,829
+being maintained with him finding in
+
+1290
+00:56:52,760 --> 00:57:03,650
+terms of the similarity and self
+
+1291
+00:56:54,829 --> 00:57:06,440
+clusters between right well that is a
+
+1292
+00:57:03,650 --> 00:57:08,030
+question I unfortunately can't address
+
+1293
+00:57:06,440 --> 00:57:09,800
+at this point mark mark has been very
+
+1294
+00:57:08,030 --> 00:57:11,280
+active in sort of taking the marker
+
+1295
+00:57:09,800 --> 00:57:13,920
+genes that he's
+
+1296
+00:57:11,280 --> 00:57:15,450
+studied and just establishing the
+
+1297
+00:57:13,920 --> 00:57:17,220
+identity of the cell clusters and I
+
+1298
+00:57:15,449 --> 00:57:21,239
+think you know our soybean data isn't
+
+1299
+00:57:17,219 --> 00:57:23,009
+yet that it's not as good as our Arab
+
+1300
+00:57:21,239 --> 00:57:25,109
+Dobbs data you know I said I said that
+
+1301
+00:57:23,010 --> 00:57:26,820
+the the nuclear data would involve less
+
+1302
+00:57:25,110 --> 00:57:29,340
+protocol tweaking but I think there is
+
+1303
+00:57:26,820 --> 00:57:32,730
+some protocol tweaking just in terms of
+
+1304
+00:57:29,340 --> 00:57:36,030
+basics sizes of nuclei for the larger
+
+1305
+00:57:32,730 --> 00:57:38,849
+genome he mentioned something about
+
+1306
+00:57:36,030 --> 00:57:40,740
+centrifugation being an issue so I'm
+
+1307
+00:57:38,849 --> 00:57:49,799
+imagining that there are some bursting
+
+1308
+00:57:40,739 --> 00:57:51,569
+issues that he's still working this has
+
+1309
+00:57:49,800 --> 00:57:57,320
+been a production of Cornell University
+
+1310
+00:57:51,570 --> 00:57:57,320
+on the web at Cornell edu
+

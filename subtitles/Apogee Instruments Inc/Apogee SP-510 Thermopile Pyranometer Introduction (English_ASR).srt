@@ -1,0 +1,596 @@
+1
+00:00:00,000 --> 00:00:06,028
+hi I'm mark Blanc with the scientists at
+
+2
+00:00:03,689 --> 00:00:08,429
+Apogee instruments and I'm here to talk
+
+3
+00:00:06,028 --> 00:00:11,370
+today about a relatively new product in
+
+4
+00:00:08,429 --> 00:00:15,870
+Apogee it's a new thermal pile pyrometer
+
+5
+00:00:11,369 --> 00:00:18,809
+the model number is SP 510 before I talk
+
+6
+00:00:15,869 --> 00:00:21,079
+about the specifics of the sensor I want
+
+7
+00:00:18,809 --> 00:00:23,549
+to talk a bit about the motivation for
+
+8
+00:00:21,079 --> 00:00:26,848
+creating a new thermal pile sensors
+
+9
+00:00:23,550 --> 00:00:30,028
+Apogee is traditionally manufactured and
+
+10
+00:00:26,849 --> 00:00:32,130
+marketed silicon cell pyrometers so I
+
+11
+00:00:30,028 --> 00:00:35,700
+have some data here three different
+
+12
+00:00:32,130 --> 00:00:39,510
+plots on the graph on the x-axis is
+
+13
+00:00:35,700 --> 00:00:42,059
+wavelength from about 300 to 2500
+
+14
+00:00:39,509 --> 00:00:44,429
+nanometers and on the y-axis is either
+
+15
+00:00:42,058 --> 00:00:49,259
+normalized irradiance or spectral
+
+16
+00:00:44,429 --> 00:00:53,670
+response the red data set is a clear sky
+
+17
+00:00:49,259 --> 00:00:57,599
+solar spectrum the blue data set is an
+
+18
+00:00:53,670 --> 00:01:00,120
+overcast sky solar spectrum both of
+
+19
+00:00:57,600 --> 00:01:02,460
+these data sets are normalized at 500
+
+20
+00:01:00,119 --> 00:01:05,658
+nanometers so you can see the shape
+
+21
+00:01:02,460 --> 00:01:11,099
+comparison how the spectrum changes from
+
+22
+00:01:05,659 --> 00:01:13,799
+overcast skies and clear skies the black
+
+23
+00:01:11,099 --> 00:01:17,609
+data set is the spectral sensitivity of
+
+24
+00:01:13,799 --> 00:01:21,090
+a silicon cell pyrometer and silicon is
+
+25
+00:01:17,609 --> 00:01:24,299
+sensitive from about 350 to 1100
+
+26
+00:01:21,090 --> 00:01:27,060
+nanometers so it captures much of the
+
+27
+00:01:24,299 --> 00:01:29,850
+radiation coming from the Sun but it's
+
+28
+00:01:27,060 --> 00:01:34,290
+not sensitive to the the wavelengths out
+
+29
+00:01:29,849 --> 00:01:36,839
+here beyond 1100 nanometers and when we
+
+30
+00:01:34,290 --> 00:01:38,969
+go from clear sky to overcast sky
+
+31
+00:01:36,840 --> 00:01:42,359
+conditions often that's where the
+
+32
+00:01:38,969 --> 00:01:44,099
+largest changes in the spectrum occur so
+
+33
+00:01:42,359 --> 00:01:48,180
+if a silicon cell sensor is calibrated
+
+34
+00:01:44,099 --> 00:01:50,849
+to measure accurately under clear skies
+
+35
+00:01:48,180 --> 00:01:54,479
+as the sky gets cloudier and cloudier
+
+36
+00:01:50,849 --> 00:01:55,949
+this can do introduce errors and so if
+
+37
+00:01:54,478 --> 00:01:58,500
+we have these three pieces of
+
+38
+00:01:55,950 --> 00:02:01,890
+information the clear sky spectrum an
+
+39
+00:01:58,500 --> 00:02:04,409
+overcast sky spectrum and the spectral
+
+40
+00:02:01,890 --> 00:02:07,590
+response of this sensor we can actually
+
+41
+00:02:04,409 --> 00:02:10,469
+predict what the error will be assuming
+
+42
+00:02:07,590 --> 00:02:12,569
+calibration to one of the conditions so
+
+43
+00:02:10,469 --> 00:02:14,870
+if we assume calibration to the clear
+
+44
+00:02:12,568 --> 00:02:18,119
+sky spectrum
+
+45
+00:02:14,870 --> 00:02:22,500
+the theoretical error prediction for the
+
+46
+00:02:18,120 --> 00:02:24,718
+overcast sky spectrum is about 10% so
+
+47
+00:02:22,500 --> 00:02:27,688
+what this means in practice is shown in
+
+48
+00:02:24,718 --> 00:02:29,968
+these data here and just have two
+
+49
+00:02:27,688 --> 00:02:30,840
+consecutive days from September of last
+
+50
+00:02:29,968 --> 00:02:33,509
+year
+
+51
+00:02:30,840 --> 00:02:35,819
+the black plot if you can see it
+
+52
+00:02:33,509 --> 00:02:38,009
+underneath the red one there our
+
+53
+00:02:35,818 --> 00:02:40,468
+measurements from a secondary standard
+
+54
+00:02:38,009 --> 00:02:43,289
+blackbody thermal pile pyrometer on the
+
+55
+00:02:40,468 --> 00:02:47,908
+rooftop of the apogee building then the
+
+56
+00:02:43,289 --> 00:02:51,090
+red plot is data from an Apogee SP 110
+
+57
+00:02:47,908 --> 00:02:53,098
+silicon cell pyrometer mounted next to
+
+58
+00:02:51,090 --> 00:02:56,188
+the secondary standard also on the
+
+59
+00:02:53,098 --> 00:02:59,699
+rooftop of the Apogee building so if we
+
+60
+00:02:56,188 --> 00:03:03,299
+calculate the error on a daily total
+
+61
+00:02:59,699 --> 00:03:07,858
+basis the silicon cell matched the
+
+62
+00:03:03,299 --> 00:03:11,489
+secondary standard no error on the clear
+
+63
+00:03:07,859 --> 00:03:14,129
+sky day on the cloudy day however there
+
+64
+00:03:11,489 --> 00:03:17,609
+was about an eight percent error and you
+
+65
+00:03:14,128 --> 00:03:21,378
+can see the the percent differences in
+
+66
+00:03:17,609 --> 00:03:25,229
+this lower plot here these are 15-minute
+
+67
+00:03:21,378 --> 00:03:27,509
+averages then compared relative to the
+
+68
+00:03:25,229 --> 00:03:31,139
+secondary standard to provide a error
+
+69
+00:03:27,509 --> 00:03:34,098
+measurement so these data as I mentioned
+
+70
+00:03:31,139 --> 00:03:37,049
+were collected with an Apogee SP 110
+
+71
+00:03:34,098 --> 00:03:39,688
+silicon cell pyranometers but you would
+
+72
+00:03:37,049 --> 00:03:42,000
+find similar results for any silicon
+
+73
+00:03:39,688 --> 00:03:44,340
+cell pyrometer and it's because the
+
+74
+00:03:42,000 --> 00:03:46,109
+limited spectral sensitivity of silicon
+
+75
+00:03:44,340 --> 00:03:49,829
+as we mentioned and showed on the
+
+76
+00:03:46,109 --> 00:03:53,189
+previous slide it's only silicon is only
+
+77
+00:03:49,829 --> 00:03:55,139
+sensitive from 350 to 1100 nanometers so
+
+78
+00:03:53,188 --> 00:03:58,709
+it's not capturing all the changes in
+
+79
+00:03:55,139 --> 00:04:01,009
+the solar spectrum silicon cell sensors
+
+80
+00:03:58,709 --> 00:04:04,348
+traditionally have been quite popular
+
+81
+00:04:01,008 --> 00:04:06,539
+because of their low cost they do work
+
+82
+00:04:04,348 --> 00:04:09,719
+relatively well as long as people
+
+83
+00:04:06,539 --> 00:04:11,158
+understand that these errors exist when
+
+84
+00:04:09,719 --> 00:04:14,158
+going from clear sky to cloudy
+
+85
+00:04:11,158 --> 00:04:16,798
+conditions silicon cells can be useful
+
+86
+00:04:14,158 --> 00:04:19,529
+they're often found in state Mesonet
+
+87
+00:04:16,798 --> 00:04:23,968
+networks for example or in plain of
+
+88
+00:04:19,529 --> 00:04:26,129
+array measurements for solar panels so
+
+89
+00:04:23,968 --> 00:04:27,509
+at Apogee we've often tried to to
+
+90
+00:04:26,129 --> 00:04:30,719
+maximize
+
+91
+00:04:27,509 --> 00:04:33,120
+formants and minimized price so our real
+
+92
+00:04:30,720 --> 00:04:36,780
+goal in building the new thermo-pile
+
+93
+00:04:33,120 --> 00:04:39,090
+pyranometers the SB 510 was to make
+
+94
+00:04:36,779 --> 00:04:43,079
+something that improved upon these
+
+95
+00:04:39,089 --> 00:04:45,629
+cloudy or overcast sky airs with silicon
+
+96
+00:04:43,079 --> 00:04:48,750
+cell centrists but still kept the price
+
+97
+00:04:45,629 --> 00:04:51,980
+similar to silicon so and I have one
+
+98
+00:04:48,750 --> 00:04:55,740
+here to display you can see it's small
+
+99
+00:04:51,980 --> 00:04:59,610
+compact and similarly shape to the
+
+100
+00:04:55,740 --> 00:05:03,689
+standard Apogee silicon self-censor to
+
+101
+00:04:59,610 --> 00:05:07,139
+show you how it performs we actually
+
+102
+00:05:03,689 --> 00:05:10,439
+have data for an Apogee SP 510 for the
+
+103
+00:05:07,139 --> 00:05:13,529
+exact same two days that we showed for
+
+104
+00:05:10,439 --> 00:05:18,689
+the silicon cell so again if we compare
+
+105
+00:05:13,529 --> 00:05:23,819
+daily total errors we get no error on
+
+106
+00:05:18,689 --> 00:05:26,519
+the clear day and minimal error on the
+
+107
+00:05:23,819 --> 00:05:30,269
+cloudy day only about 1% you can see
+
+108
+00:05:26,519 --> 00:05:31,919
+down here that the 15-minute periods the
+
+109
+00:05:30,269 --> 00:05:36,089
+errors are much smaller for the
+
+110
+00:05:31,920 --> 00:05:38,250
+thermo-pile sensor just to give you an
+
+111
+00:05:36,089 --> 00:05:42,109
+idea of some more of the the features
+
+112
+00:05:38,250 --> 00:05:46,250
+and performance of this particular model
+
+113
+00:05:42,110 --> 00:05:48,780
+we've had seven replicates of the SP 510
+
+114
+00:05:46,250 --> 00:05:50,970
+some prototype sensors that have been
+
+115
+00:05:48,779 --> 00:05:52,829
+deployed continuously on a rooftop for
+
+116
+00:05:50,970 --> 00:05:55,110
+three and a half years we've been
+
+117
+00:05:52,829 --> 00:05:58,529
+comparing them to secondary standard
+
+118
+00:05:55,110 --> 00:06:00,060
+Pyron ometer all of the seven replicates
+
+119
+00:05:58,529 --> 00:06:01,799
+have been stable none of them have
+
+120
+00:06:00,060 --> 00:06:04,589
+changed by more than one percent per
+
+121
+00:06:01,800 --> 00:06:07,470
+year some of the features it has a low
+
+122
+00:06:04,589 --> 00:06:09,869
+thermal offset less than five watts per
+
+123
+00:06:07,470 --> 00:06:13,770
+meter squared because it doesn't have
+
+124
+00:06:09,870 --> 00:06:16,920
+the traditional glass dome of a standard
+
+125
+00:06:13,769 --> 00:06:18,779
+thermal pile sensor has a diffuser more
+
+126
+00:06:16,920 --> 00:06:20,939
+like a silicon cell and we can better
+
+127
+00:06:18,779 --> 00:06:23,069
+thermally bond that to the thermal pile
+
+128
+00:06:20,939 --> 00:06:27,540
+detector itself and it reduces the
+
+129
+00:06:23,069 --> 00:06:30,269
+thermal offset all of the SP 510 s come
+
+130
+00:06:27,540 --> 00:06:32,730
+with internal heaters these can be
+
+131
+00:06:30,269 --> 00:06:35,039
+controlled by the user so the heater is
+
+132
+00:06:32,730 --> 00:06:38,580
+optional but the heater can certainly
+
+133
+00:06:35,040 --> 00:06:40,290
+reduce error caused by precipitation Dew
+
+134
+00:06:38,579 --> 00:06:43,289
+and frost
+
+135
+00:06:40,290 --> 00:06:45,900
+and also as I mentioned previously we've
+
+136
+00:06:43,290 --> 00:06:47,970
+targeted low-cost were offering the this
+
+137
+00:06:45,899 --> 00:06:51,449
+particular sensor and only 30 percent
+
+138
+00:06:47,970 --> 00:06:56,610
+more than the standard Apogee silicon
+
+139
+00:06:51,449 --> 00:06:59,279
+cell heated model the SP 230 so the the
+
+140
+00:06:56,610 --> 00:07:01,139
+new thermo-pile Perrin ometer from
+
+141
+00:06:59,279 --> 00:07:04,079
+Apogee instruments is really targeting
+
+142
+00:07:01,139 --> 00:07:06,060
+markets where silicon cell pyranometers
+
+143
+00:07:04,079 --> 00:07:10,979
+have been traditionally used but where
+
+144
+00:07:06,060 --> 00:07:12,899
+higher accuracy is required and also any
+
+145
+00:07:10,980 --> 00:07:15,350
+application where thermo-pile
+
+146
+00:07:12,899 --> 00:07:18,319
+pyranometers have been used in ISO
+
+147
+00:07:15,350 --> 00:07:20,460
+classification is not required
+
+148
+00:07:18,319 --> 00:07:23,750
+appreciate the opportunity to present
+
+149
+00:07:20,459 --> 00:07:23,750
+thanks for your time
+

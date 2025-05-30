@@ -1,0 +1,874 @@
+[SPEAKER_01]: This is a production of Cornell
+University.
+[SPEAKER_00]: Hello, everyone.
+[SPEAKER_00]: My name is Michael Gore.
+[SPEAKER_00]: I'm coming to you from this section of
+plant breeding and genetics.
+[SPEAKER_00]: So the question of the day, well,
+perhaps this isn't a question of the day
+[SPEAKER_00]: for you, but it's a question of the day
+for me that I will pose to you,
+[SPEAKER_00]: is that how did Mike Gore get into
+hydroprotophenotyping?
+[SPEAKER_00]: Let me go back to my days of being a
+graduate student in Edward Buckler's lab.
+[SPEAKER_00]: We had this population of 5,000 very
+common and inbred lines called the
+[SPEAKER_00]: maize-nam population.
+[SPEAKER_00]: And it took an army of people to plant and
+an army of people to phenotype.
+[SPEAKER_00]: So after all those countless days of
+having to do plant height, year height,
+[SPEAKER_00]: or flowering time out in the field,
+I began thinking of ways to do
+[SPEAKER_00]: hydroprotophenotyping.
+[SPEAKER_00]: One of the ways that we had thought about
+doing hydroprotophenotyping was perhaps
+[SPEAKER_00]: having a plane fly over the field,
+which we had.
+[SPEAKER_00]: The other way, was having a large helium
+balloon tied to a four-wheeler and pulled
+[SPEAKER_00]: through the field, and a nice expensive
+camera attached as well.
+[SPEAKER_00]: We began doing that and driving back and
+forth through the field, but sometimes the
+[SPEAKER_00]: wind would pick up and there would be some
+tension on that line.
+[SPEAKER_00]: It was a little scary, but we were all
+pretty sure that that line was strong
+[SPEAKER_00]: until one day it snapped.
+[SPEAKER_00]: And I remember our feeling when our field
+manager, Nick, calling the police and
+[SPEAKER_00]: asking them if they would shoot the
+balloon out of the sky.
+[SPEAKER_00]: I'm so thankful for humanity that they did
+not do that.
+[SPEAKER_00]: And for all we know, that camera is in
+Canada somewhere and it's being used.
+[SPEAKER_00]: But thankfully, I didn't allow my
+hydroprotophenotyping dreams to float away
+[SPEAKER_00]: that fateful day.
+[SPEAKER_00]: So in 2009, I accepted a position to work
+in the USDA in Maricopa, Arizona,
+[SPEAKER_00]: which was a great decision on my part.
+[SPEAKER_00]: The environment was very harsh for human
+and for growing plant, but I kind of
+[SPEAKER_00]: viewed it as a test track for plants.
+[SPEAKER_00]: And it's a great environment for testing
+for heat and drought stress.
+[SPEAKER_00]: And I was hired to work on cotton,
+so coming from the maze, community,
+[SPEAKER_00]: and at that time working on the first
+generation haplotype map and maze,
+[SPEAKER_00]: realizing I was going to have to dedicate
+my life to working out in the field.
+[SPEAKER_00]: Maybe the only people I would make proud
+would probably be Mark Sorrels,
+[SPEAKER_00]: because I would actually go out to the
+field.
+[SPEAKER_00]: What I didn't realize at the time when I
+had my interview there in January is it
+[SPEAKER_00]: gets really hot.
+[SPEAKER_00]: And when my family and I moved back out,
+in June there were so many four-letter
+[SPEAKER_00]: words dropped that day.
+[SPEAKER_00]: But you know what?
+[SPEAKER_00]: We adapt just like the plants.
+[SPEAKER_00]: But some of the challenges, such as when
+you think about cotton trying to
+[SPEAKER_00]: sustainably produce it, in the face of
+global climate change, the patterns of
+[SPEAKER_00]: weather are highly variable right now.
+[SPEAKER_00]: And our fresh water resources,
+especially when I was living in Arizona,
+[SPEAKER_00]: when we were drawing down the Colorado
+River, when you actually see it firsthand,
+[SPEAKER_00]: it is quite traumatic.
+[SPEAKER_00]: And here when we're looking at the cotton
+belt right here of the U.S., and this was
+[SPEAKER_00]: taken in 2011 here, this is where there
+was a co-occurrence of a severe drought.
+[SPEAKER_00]: And just to have an idea of the economic
+impact of what a drought can have,
+[SPEAKER_00]: this caused two billion of economic loss
+in cotton production.
+[SPEAKER_00]: What is some of the consequences of that?
+[SPEAKER_00]: We see it on the news, but really it's
+impacting human beings.
+[SPEAKER_00]: And so when I was hired, this is kind of
+the charge that I felt burdened with,
+[SPEAKER_00]: that I felt I had to carry, is how are we
+going to turn that engine of evolution and
+[SPEAKER_00]: plant populations fast enough to generate
+these resilient cultivars to help provide
+[SPEAKER_00]: fiber to the world, but also provide a
+source of financial income to the farmers,
+[SPEAKER_00]: such as this one in Garfield County,
+Texas.
+[SPEAKER_00]: And in 2009, we began thinking a lot about
+genomic selection.
+[SPEAKER_00]: And of course, you know, we could also
+think of recombination and CRISPR-Cas9
+[SPEAKER_00]: tying into a genomic framework.
+[SPEAKER_00]: And the whole idea is how many more
+generations can you turn per year.
+[SPEAKER_00]: And so ideally, this would result in
+faster development of more resilient
+[SPEAKER_00]: crops, and in this case, cotton.
+[SPEAKER_00]: So, of course, we have our training
+population, and we do genotyping and
+[SPEAKER_00]: phenotyping on that training population to
+train our GS model.
+[SPEAKER_00]: But phenotyping is still very important,
+because when you think about the
+[SPEAKER_00]: prediction accuracies, highly heritable
+phenotypes and high-quality phenotypes is
+[SPEAKER_00]: what's driving a lot of that GS model.
+[SPEAKER_00]: And so there's obviously a lot of
+improvements that can be made to these GS
+[SPEAKER_00]: models, where, you know, you're training
+on a phenotypic and phenotypic dataset,
+[SPEAKER_00]: and then you're trying to predict the
+phenotype of a related population that has
+[SPEAKER_00]: been only genotyped.
+[SPEAKER_00]: And phenotype is what I decided to focus
+on at that time, back in 2009.
+[SPEAKER_00]: But coming into it, we all knew that the
+classic phenotyping, as I talked about
+[SPEAKER_00]: earlier, plant breeders know how to do
+very well.
+[SPEAKER_00]: Plant breeders are very industrious in a
+sense.
+[SPEAKER_00]: They'll just hire an army, and that's how
+they get the job done.
+[SPEAKER_00]: But when you're working in an environment
+such as Arizona, which has sometimes
+[SPEAKER_00]: temperatures over 100 degrees Fahrenheit,
+you need to work a lot more intelligently,
+[SPEAKER_00]: or you won't last very long in the field.
+[SPEAKER_00]: So there's that time-intensive component
+to it.
+[SPEAKER_00]: Often, if you're doing plant physiological
+traits, the sample sizes are fairly small,
+[SPEAKER_00]: and you can only do perhaps like a few
+time points as well.
+[SPEAKER_00]: And often, from a plant breeding,
+there's obviously trait bias, in a sense.
+[SPEAKER_00]: You tend to only phenotype what you can
+visually score, or perhaps you're just
+[SPEAKER_00]: driving a combine at the end of the
+season.
+[SPEAKER_00]: And when it comes to hiring a large field
+crew, that is also very expensive.
+[SPEAKER_00]: So this is my colleague here, Mike
+Salvucci, and he introduced me to the
+[SPEAKER_00]: Lycorz 6400.
+[SPEAKER_00]: I was all enamored with it at first,
+until I realized how much of a pain it
+[SPEAKER_00]: was.
+[SPEAKER_00]: Having to work in that intense heat,
+and to realize you would sit maybe for a
+[SPEAKER_00]: half an hour in front of a couple plants,
+and you wouldn't really get that much
+[SPEAKER_00]: phenotypic data.
+[SPEAKER_00]: Some of the phenotypic data that we were
+able to get would be like transpiration
+[SPEAKER_00]: rate, and can it to be temperature.
+[SPEAKER_00]: And we also had a FLIR camera that we
+could shoot in front of these.
+[SPEAKER_00]: And here, this is pictured in Pima cotton.
+[SPEAKER_00]: If you do not know what Pima cotton is,
+it has nice, long fiber.
+[SPEAKER_00]: And that's like that high thread count
+sheets that you have.
+[SPEAKER_00]: But at that time, we were really thinking
+about, how do we do this a lot faster?
+[SPEAKER_00]: It isn't that we're lazy, we just want to
+have very large populations.
+[SPEAKER_00]: And we want to be able to really cover all
+the different developmental time points of
+[SPEAKER_00]: a plant as they're growing over the
+growing season.
+[SPEAKER_00]: And we want to be as objective as we can
+possibly be, and we want to do this at low
+[SPEAKER_00]: cost.
+[SPEAKER_00]: So there was an agricultural engineer that
+I began talking to in 2009, Pedro Andrade
+[SPEAKER_00]: Sanchez.
+[SPEAKER_00]: And in a sense, we found this tractor in
+the junkyard, and it needed a new engine,
+[SPEAKER_00]: and new tires and everything.
+[SPEAKER_00]: So here I'm showing, I think at this time,
+version two.
+[SPEAKER_00]: Version one tractor, high clearance
+tractor, we just pulled out of a junkyard
+[SPEAKER_00]: and put in a new motor.
+[SPEAKER_00]: Put some new tires on, put this toolbar
+on, and we're set to go.
+[SPEAKER_00]: So the idea of sensor fusion is,
+in a sense, combining all these different
+[SPEAKER_00]: data streams to be able to use them and
+get as much information out of in terms of
+[SPEAKER_00]: trying to understand what is the crop
+doing over these various time points of
+[SPEAKER_00]: the growing season.
+[SPEAKER_00]: And if you're imposing, in this case,
+heat and drought stress.
+[SPEAKER_00]: And some of the phenotypes that we were
+focusing on first was a vegetation index,
+[SPEAKER_00]: and that's focused up in here,
+and these are called crop circles.
+[SPEAKER_00]: We had IRTs on the tractor as well,
+and they are pointing down over the crop
+[SPEAKER_00]: right here.
+[SPEAKER_00]: And that's to do phenotyping of canopy
+temperature.
+[SPEAKER_00]: And here we have the ultrasonic
+transducers.
+[SPEAKER_00]: That's pointed right here.
+[SPEAKER_00]: And that's what we were able to do,
+canopy height.
+[SPEAKER_00]: And we had RTK GPS on the tractor.
+[SPEAKER_00]: So in a sense, we're able to re-resolve
+and deconvolute all these phenotypic data
+[SPEAKER_00]: points down to individual plants in a
+plot.
+[SPEAKER_00]: And we're able to do that entirely and
+repeatedly over the growing season.
+[SPEAKER_00]: So the first thing that you do,
+kind of as a plant breeder, is think
+[SPEAKER_00]: about, okay, we're able to collect all
+this, perhaps, gigabytes to terabytes of
+[SPEAKER_00]: phenotypic data, but is it of value?
+[SPEAKER_00]: Is it heritable?
+[SPEAKER_00]: Is it repeatable?
+[SPEAKER_00]: So one of the first things that I
+basically wanted to do is here we were
+[SPEAKER_00]: testing this on 25 Pima cultivars,
+and here we have on the Y-axis canopy
+[SPEAKER_00]: temperature and on the X-axis
+leaf-relative water content.
+[SPEAKER_00]: And what this is basically showing is this
+canopy temperature is checking with
+[SPEAKER_00]: changes in the soil-plant-water
+relationship, whereas the dry plots have a
+[SPEAKER_00]: higher canopy temperature because the
+transpiration rate is reduced of those
+[SPEAKER_00]: plants because they're trying to conserve
+water.
+[SPEAKER_00]: So the transpiration rate is shut down,
+and in turn, the canopy temperature is
+[SPEAKER_00]: increasing.
+[SPEAKER_00]: And here in the blue, these would be,
+and you can kind of view them as control
+[SPEAKER_00]: plots.
+[SPEAKER_00]: So these are the well-watered wet plots.
+[SPEAKER_00]: And the transpiration rate is high because
+these plants aren't shutting down,
+[SPEAKER_00]: and they're able to continue to cool the
+crop canopy.
+[SPEAKER_00]: And we had heard from Todd about this
+vegetation index called NDVI, which ties
+[SPEAKER_00]: in red and near-infrared.
+[SPEAKER_00]: And what this is really typically doing
+is, in a sense, quantifying biomass,
+[SPEAKER_00]: but it's also tying in leaf area index,
+chlorophyll content, and coverage of the
+[SPEAKER_00]: actual plant canopy itself.
+[SPEAKER_00]: But what we saw here over time of these 25
+Pima cultivars is the plots that are
+[SPEAKER_00]: derived from NDVI, they begin to decrease
+their NDVI value over time.
+[SPEAKER_00]: And what this response was actually
+capturing is the degree to which the
+[SPEAKER_00]: plants wilt, because here you see a Pima
+cultivar that's under intense drought,
+[SPEAKER_00]: and you can see the leaves wilt.
+[SPEAKER_00]: So this is a vegetation index that is,
+in a sense, capturing greenness.
+[SPEAKER_00]: So as the leaves droop, there's more soil
+exposed up through the canopy,
+[SPEAKER_00]: and also as the leaves wilt, they're
+changing their conformation as well,
+[SPEAKER_00]: and that's changing the pattern of leaf
+reflection as well.
+[SPEAKER_00]: And that's why those values are
+decreasing.
+[SPEAKER_00]: So this was kind of a fun way to see if
+you can plot this over time within the
+[SPEAKER_00]: actual day is capturing biomass,
+but in our eyes now, we're able to use it
+[SPEAKER_00]: to see the degree to which the plants
+actually wilt.
+[SPEAKER_00]: So we were able to also see that this
+system was repeatable over the growing
+[SPEAKER_00]: season, assuming that the canopy was
+closed and that the drip irrigation was
+[SPEAKER_00]: not clogged, because there are challenges
+when you're growing on drip irrigation and
+[SPEAKER_00]: it isn't cleared out right, you need to
+pump some sulfuric acid through there and
+[SPEAKER_00]: clean it up just right, and things begin
+flowing very well.
+[SPEAKER_00]: But as we saw is, when we were doing this
+high throughput phenotyping with the
+[SPEAKER_00]: tractor, we could easily see parts of the
+field from the response of the plants
+[SPEAKER_00]: where the drip tape was actually clogged,
+because those were the plants that were
+[SPEAKER_00]: heating up very fast, and then you would
+just pump in the sulfuric acid and clear
+[SPEAKER_00]: it out, and it cleaned it up just fine.
+[SPEAKER_00]: And so here we have the same high
+clearance tractor system, and here I'm
+[SPEAKER_00]: calling field-based high throughput plant
+phenotyping system, and it's QTL mapping
+[SPEAKER_00]: of different traits over time.
+[SPEAKER_00]: So if you haven't thought about QTL in
+this sense, you can just think of a QTL as
+[SPEAKER_00]: a quantitative trait locus, but in a
+sense, it's just a chromosomal region
+[SPEAKER_00]: controlling phenotypic variants in that
+part of the genome.
+[SPEAKER_00]: So in a sense, we have this recombinant
+inbred line population of close to 100
+[SPEAKER_00]: recombinant inbred lines, and these
+recombinant inbred lines are a mosaic of
+[SPEAKER_00]: the two parents.
+[SPEAKER_00]: In a sense, you shuffle up the genome,
+and then you're using the patterns of
+[SPEAKER_00]: recombination to track these regions of
+the genome with the phenotypic variation,
+[SPEAKER_00]: and if those particular regions of the
+genome are showing up, that's what we're
+[SPEAKER_00]: referring to as a QTL.
+[SPEAKER_00]: So here we also have our field-based high
+throughput phenotyping system.
+[SPEAKER_00]: We did these various agronomic traits,
+such as lint yield, bowl size,
+[SPEAKER_00]: and fiber quality, and thanks to Tim Seder
+at the time, we were also able to
+[SPEAKER_00]: phenotype a size-like acid concentration
+as a physiological leaf trait.
+[SPEAKER_00]: And as I was saying, this was all grown in
+drip irrigation, and we had soil neutron
+[SPEAKER_00]: probes in the field, which if you've ever
+put these in, you can feel our pain
+[SPEAKER_00]: because we would have to do these readings
+every week before and after turning on the
+[SPEAKER_00]: drip irrigation.
+[SPEAKER_00]: And the great thing about having drip
+irrigation, you can have a set time,
+[SPEAKER_00]: so in a sense, the plants are only almost
+trained very well when you're turning on
+[SPEAKER_00]: and off the drip irrigation.
+[SPEAKER_00]: And this is a shot of the actual field
+right here in Maricopa, Arizona.
+[SPEAKER_00]: So here, what this is is basically
+recapitulating a canopy temperature heat
+[SPEAKER_00]: map of the field, and each of these little
+circles or pixels right here are an actual
+[SPEAKER_00]: phenotypic data point that was taken by
+the high-clearance tractor.
+[SPEAKER_00]: And so if you recall, we have these four
+IRTs on the tractor, so we're able to do
+[SPEAKER_00]: phenotyping of four rows at a time.
+[SPEAKER_00]: And the cooler the canopy is, the bluer it
+is, and you see these little areas right
+[SPEAKER_00]: here, those are our alleys in the field
+here.
+[SPEAKER_00]: And so this is a control treatment right
+here.
+[SPEAKER_00]: So here would be the dry drought treatment
+right here.
+[SPEAKER_00]: And here, you can see the canopy
+temperature is heating up, but you can see
+[SPEAKER_00]: this part of the field right here is
+actually cooler.
+[SPEAKER_00]: And when we ran an EM38 and checked out
+the conductivity of the soil, what we had
+[SPEAKER_00]: found out, this part of the field had a
+higher clay content.
+[SPEAKER_00]: And so if you do any drought testing in
+the field, the thing you should always
+[SPEAKER_00]: understand is there's more variation for
+the soil than there are actual traits that
+[SPEAKER_00]: you're phenotyping in your plant
+populations.
+[SPEAKER_00]: So you have to control for this type of
+field variation.
+[SPEAKER_00]: In your models, or you'll just end up
+being a breeder breeding for soil type.
+[SPEAKER_00]: And you wouldn't be the first one that
+has.
+[SPEAKER_00]: So the great thing here is that canopy
+temperature turned out to be highly
+[SPEAKER_00]: heritable in this recombinant inbred line
+population, and in this case shows
+[SPEAKER_00]: transgressive segregation.
+[SPEAKER_00]: And what that transgressive variation
+actually means is you have progenies that
+[SPEAKER_00]: exceeds the phenotypic values of the
+actual parents.
+[SPEAKER_00]: And these are the two parents here,
+NM24S16 and TM1.
+[SPEAKER_00]: And these are the control plots here,
+wet.
+[SPEAKER_00]: And these are the dry plots here in red.
+[SPEAKER_00]: And you can see the control plots here,
+wet, had a heritability brought since of
+[SPEAKER_00]: 0.83.
+[SPEAKER_00]: And this is heritability of 0.9.
+[SPEAKER_00]: These heritability values generally range
+between zero and one, and they happen to
+[SPEAKER_00]: be quite high here because one thing to
+keep in mind, we were doing phenotyping at
+[SPEAKER_00]: three time points within a single day.
+[SPEAKER_00]: So it's really taking in all of that
+variance within the actual day.
+[SPEAKER_00]: And that's helping to increase the
+heritability of the phenotype itself.
+[SPEAKER_00]: And since we have the tractor,
+we can do phenotyping over the entire
+[SPEAKER_00]: growing season here.
+[SPEAKER_00]: So if you haven't thought about cotton
+growing, so here we go from seed to
+[SPEAKER_00]: perhaps eighth node, four to five weeks
+after first bloom, and then you have to
+[SPEAKER_00]: add a defoliant to force all of the leaves
+to fall off because cotton is a perennial
+[SPEAKER_00]: tree that's treated as an annual crop,
+okay?
+[SPEAKER_00]: And the great thing is, you know,
+here's when the trials are planted.
+[SPEAKER_00]: We have equal irrigation applied to both
+the wet and dry treatment.
+[SPEAKER_00]: And these are the phenotypes that we had
+targeted at four different time points,
+[SPEAKER_00]: so canopy temperature, canopy NDV,
+which just to remind you is a vegetation
+[SPEAKER_00]: index, and then canopy height.
+[SPEAKER_00]: And then we began opposing the
+differential irrigation at flowering
+[SPEAKER_00]: because we didn't want confounding because
+that's why we didn't do it early on prior
+[SPEAKER_00]: to flowering.
+[SPEAKER_00]: Because also, as a few of you probably
+know, often when people are breeding for
+[SPEAKER_00]: drought tolerance, it's actually drought
+escape, and the QTL tend to be just genes
+[SPEAKER_00]: for flowering time, and that's one thing
+that we wanted to avoid.
+[SPEAKER_00]: And then at the end of season,
+we're driving like a cotton picker through
+[SPEAKER_00]: the field and harvesting.
+[SPEAKER_00]: And so here what we have is canopy
+temperature over the whole growing season,
+[SPEAKER_00]: and then we were able to break up these
+basically days of the year into the
+[SPEAKER_00]: different developmental growth phases of
+cotton.
+[SPEAKER_00]: So here we have flowering at peak bloom,
+full development and fiber development and
+[SPEAKER_00]: elongation.
+[SPEAKER_00]: And this is at seven in the morning,
+10, a.m., 1 p.m., and 3 p.m.
+[SPEAKER_00]: And the red here is the dry treatment,
+and the blue is the wet treatment here.
+[SPEAKER_00]: And what you kind of see on this axis
+here, this is the canopy temperature here,
+[SPEAKER_00]: and as you increase the temperature in
+terms of like during the day, the
+[SPEAKER_00]: phenotypic variance is also increasing as
+well as the plants are becoming more
+[SPEAKER_00]: hotter.
+[SPEAKER_00]: And so when you think about this,
+we were able to now break up the plant
+[SPEAKER_00]: into these different developmental phases,
+and what we found is the canopy
+[SPEAKER_00]: temperature phenotypes themselves were
+more highly correlated within a plant
+[SPEAKER_00]: growth stage.
+[SPEAKER_00]: So what that's telling you is there's
+somewhat maybe of a coordination of genes
+[SPEAKER_00]: themselves within an actual plant growth
+stage.
+[SPEAKER_00]: So then this gave us the idea,
+okay, since we're seeing these patterns,
+[SPEAKER_00]: what that may suggest that there is maybe
+certain QTLs in terms of their expression
+[SPEAKER_00]: patterns turning on and off in the genome
+over the growth phase of the cotton
+[SPEAKER_00]: recombinant embryo line population,
+and some of that is perturbed by heat and
+[SPEAKER_00]: drought stress.
+[SPEAKER_00]: And in fact, that is actually what we
+found.
+[SPEAKER_00]: So here we have, what we're revealing here
+is this distinct temporal patterns of the
+[SPEAKER_00]: QTL effects that's controlling canopy
+temperature variation in this recombinant
+[SPEAKER_00]: embryo line population.
+[SPEAKER_00]: So this is the QTLs that we detected under
+the control wet treatment here.
+[SPEAKER_00]: These are the QTL that we controlled under
+the dry treatment here.
+[SPEAKER_00]: And these are the effects of the QTL that
+decreased canopy temperature here,
+[SPEAKER_00]: they're in blue, and in the red are QTL
+effects that are increasing canopy
+[SPEAKER_00]: temperature.
+[SPEAKER_00]: But what you can see here is depending on
+the age of the actual plant, that's when
+[SPEAKER_00]: QTL are actually being triggered and
+turned on.
+[SPEAKER_00]: And the intensity, if you will,
+the size of the effect of the QTL is also
+[SPEAKER_00]: partly being driven by the drought
+treatment.
+[SPEAKER_00]: And the great thing about a genome is you
+can find any possible candidate gene that
+[SPEAKER_00]: you want.
+[SPEAKER_00]: So here in this region of the cotton
+genome where we had a QTL map,
+[SPEAKER_00]: we found a gene for an ABA response
+factor.
+[SPEAKER_00]: And one of the things that I found was
+pretty exciting at the time is that the
+[SPEAKER_00]: QTL for variability in cotton leaf ABA
+content also mapped to that same region of
+[SPEAKER_00]: the genome.
+[SPEAKER_00]: And why that seems to jive is in a sense
+when you have ABA, it's contributing to
+[SPEAKER_00]: what?
+[SPEAKER_00]: The model size and how it's going to open
+and close, right?
+[SPEAKER_00]: So it's quite possible that this QTL is in
+fact contributing to variability and
+[SPEAKER_00]: variation in transpiration rate in this
+part of the genome.
+[SPEAKER_00]: And that would obviously then drive
+changes in canopy temperature.
+[SPEAKER_00]: And Dr. Duke-Pauley contributed to this
+paper.
+[SPEAKER_00]: I believe he is here.
+[SPEAKER_00]: You can ask him all about it.
+[SPEAKER_00]: And so then we also want to think about in
+terms of breeding.
+[SPEAKER_00]: And when here on the X axis here,
+we have lint yield and temperature on the
+[SPEAKER_00]: Y axis, what we have found is,
+you know, that increase in leaf
+[SPEAKER_00]: transpiration rate under drought stress
+actually contributes to higher lint yield
+[SPEAKER_00]: in a heavily irrigated hot air
+environment.
+[SPEAKER_00]: So these plants over here are the ones
+that take a risk under drought.
+[SPEAKER_00]: In a sense, they're not shutting down and
+they're continuing to have a high
+[SPEAKER_00]: transpiration rate.
+[SPEAKER_00]: And by having that, they can continue to
+fix carbon and in a sense have higher
+[SPEAKER_00]: yield.
+[SPEAKER_00]: These plants over here are the ones that
+decide to shut down, and they're going to
+[SPEAKER_00]: fix less carbon now, right?
+[SPEAKER_00]: And so they will yield less.
+[SPEAKER_00]: So in a heavily irrigated environment such
+as Al West in Arizona, you would perhaps
+[SPEAKER_00]: want a genotype such as this one right
+here.
+[SPEAKER_00]: But if you're in a dry land environment
+that's only rain fed, perhaps you would
+[SPEAKER_00]: want a genotype that's more conservative
+over in this region here.
+[SPEAKER_00]: And that will perhaps be calibrated to use
+water, only perhaps a, like, fill of the
+[SPEAKER_00]: grain or at flowering.
+[SPEAKER_00]: And what we also found is at all these
+various time points that we did
+[SPEAKER_00]: phenotyping across the field season,
+the most informative was at flowering.
+[SPEAKER_00]: Because the reason why is, after you have
+all this heat, what's going to suffer?
+[SPEAKER_00]: In this case, it's going to be the flowers
+themselves.
+[SPEAKER_00]: So if there's high heat, the pollen isn't
+going to be viable.
+[SPEAKER_00]: And if it isn't going to be viable,
+there isn't going to be seed set and there
+[SPEAKER_00]: isn't going to be any fiber.
+[SPEAKER_00]: And so here is the fun part with LIDAR.
+[SPEAKER_00]: So we're putting this on our tractor,
+and now we're trying to recreate the 3D
+[SPEAKER_00]: shape of defoliated cotton plants in the
+field.
+[SPEAKER_00]: So this is our entire field right here.
+[SPEAKER_00]: And this is one, say, like 28 foot plot of
+defoliated cotton plants.
+[SPEAKER_00]: And what you can see here is all these
+cloud points.
+[SPEAKER_00]: And Todd was touching it on cloud points.
+[SPEAKER_00]: Todd points in his talk.
+[SPEAKER_00]: And in a sense, these are recapitulating
+the actual cotton balls on the plants.
+[SPEAKER_00]: And we can actually take out, like,
+a single plant and do a Euclidean
+[SPEAKER_00]: clustering approach.
+[SPEAKER_00]: And in a sense, try to get closer to
+yield.
+[SPEAKER_00]: And here, we're just counting the cotton
+balls on the plants.
+[SPEAKER_00]: So I think there's a lot of future in
+that.
+[SPEAKER_00]: So now let's turn to deep learning,
+which we all love, and artificial
+[SPEAKER_00]: intelligence.
+[SPEAKER_00]: So since coming to Cornell, I've been
+working with some plant pathologists,
+[SPEAKER_00]: which I found are exciting people to work
+with.
+[SPEAKER_00]: And oh, hey.
+[SPEAKER_00]: Hey, Chris.
+[SPEAKER_00]: How you doing?
+[SPEAKER_00]: So one of the questions we had,
+here we have a phenotype that's caused by
+[SPEAKER_00]: this pathogen.
+[SPEAKER_00]: And this disease is northern corn leaf
+plight.
+[SPEAKER_00]: Say you hire maybe four or five
+undergrads.
+[SPEAKER_00]: You show them one leaf, and you force them
+out to go to the field.
+[SPEAKER_00]: And they have to now do phenotyping for
+NCLB.
+[SPEAKER_00]: Well, you just showed them this one,
+which has NCLB.
+[SPEAKER_00]: But they see all these other examples
+here.
+[SPEAKER_00]: Wow.
+[SPEAKER_00]: Wouldn't it be so much easier just to
+train a robot?
+[SPEAKER_00]: Well, at least that's what I thought.
+[SPEAKER_00]: But obviously, it's important to invest in
+our youth of tomorrow.
+[SPEAKER_00]: So this idea is training these
+convolutional neural networks.
+[SPEAKER_00]: So this is what you refer to as in the old
+days.
+[SPEAKER_00]: Deep learning and now AI.
+[SPEAKER_00]: So the idea is to combine this with drones
+to detect these NCLB lesions on maize
+[SPEAKER_00]: leaves in the field.
+[SPEAKER_00]: And to turn drones to just, for just being
+something fun you see flying around or
+[SPEAKER_00]: trying to tear out of my kid's hands when
+we're going to target, is that you're
+[SPEAKER_00]: actually turning them into a coworker and
+a colleague now.
+[SPEAKER_00]: So the idea is, you have your drones
+flying over top of plots of maize.
+[SPEAKER_00]: And you have your RGB 3DR iris cannon
+here.
+[SPEAKER_00]: And then here is a disease lesion.
+[SPEAKER_00]: But obviously, you don't want to take,
+as was shown earlier, perhaps like 80,000
+[SPEAKER_00]: images and try to pick these out by eye.
+[SPEAKER_00]: You want to train these CNNs and to detect
+NCLB in maize.
+[SPEAKER_00]: The challenge is we haven't evolved to the
+point where the AIs can train themselves.
+[SPEAKER_00]: But I'm sure that's coming in the future.
+[SPEAKER_00]: So here, you can just kind of view it as
+the CNN here is converting pixels into
+[SPEAKER_00]: words.
+[SPEAKER_00]: And the awesome thing, it doesn't need to
+be linear.
+[SPEAKER_00]: So you can use curves and shapes and
+everything like that.
+[SPEAKER_00]: But this is where presence, absence,
+and a human being, terrain plant
+[SPEAKER_00]: pathologists, have to classify this is a
+disease lesion or it is not.
+[SPEAKER_00]: And I've been told by the colleagues on
+this project, after they would do maybe
+[SPEAKER_00]: several hundred of these per day,
+when they would close their eyes,
+[SPEAKER_00]: they would see the disease lesions on the
+back of their eyelids when they would go
+[SPEAKER_00]: to bed at night.
+[SPEAKER_00]: So I do feel kind of horrible for that.
+[SPEAKER_00]: But it's all in the name of science.
+[SPEAKER_00]: So here we have, this was taken from,
+if you will, a person as they walk through
+[SPEAKER_00]: the field with a handheld camera.
+[SPEAKER_00]: So you can kind of view this from the
+point of view of like a ground vehicle.
+[SPEAKER_00]: And we also have all the ones from the
+drones that we're training on right now.
+[SPEAKER_00]: In this case, we trained on close to 2,000
+photos that have been classified.
+[SPEAKER_00]: So here, we have our AI.
+[SPEAKER_00]: And these are all our disease lesions
+here.
+[SPEAKER_00]: And our AI, this is kind of viewed as a
+heat map.
+[SPEAKER_00]: And if it's white, that means it has a
+probability of, in a sense, that is a
+[SPEAKER_00]: disease lesion.
+[SPEAKER_00]: If it's black, there is none where it's
+black.
+[SPEAKER_00]: And so that's when they are present.
+[SPEAKER_00]: And if they aren't present, then you
+should have an AI trained very well so
+[SPEAKER_00]: that you shouldn't detect any lesions when
+there are none present.
+[SPEAKER_00]: And in this case here, we do not find
+anything at all.
+[SPEAKER_00]: And after training on these 2,000s for
+this set that we have, we found maybe
+[SPEAKER_00]: we're only wrong maybe 2% to 3% of the
+time.
+[SPEAKER_00]: So I think we're doing pretty good.
+[SPEAKER_00]: Perhaps when we train on 10,000 more,
+we can maybe increase that even more.
+[SPEAKER_00]: So this is like a very fun experiment.
+[SPEAKER_00]: This is an active area of research in my
+lab.
+[SPEAKER_00]: And on our bread project, it's kind of the
+same concept.
+[SPEAKER_00]: And now, changing to our handheld phones.
+[SPEAKER_00]: And this is a colleague of mine where he,
+in a sense, has developed AI to detect the
+[SPEAKER_00]: disease that's infecting a cassava plant.
+[SPEAKER_00]: And in this case, a farmer or a breeder
+can take a picture of a diseased cassava
+[SPEAKER_00]: plant.
+[SPEAKER_00]: And then the AI runs on the phone.
+[SPEAKER_00]: Or actually, it can be sent to the cloud
+where it's processed there as well.
+[SPEAKER_00]: And then with a certain probability,
+it'll tell you what cassava disease it
+[SPEAKER_00]: actually has.
+[SPEAKER_00]: And in the future, for our TARA project
+that we have, we've kind of taken the
+[SPEAKER_00]: approach for trying to develop low-cost,
+autonomous field robots that can go
+[SPEAKER_00]: through the field.
+[SPEAKER_00]: And here, with our colleagues,
+the University of UIUC.
+[SPEAKER_00]: And the idea here is so you can do canopy
+reflectance, canopy temperature,
+[SPEAKER_00]: and canopy geometry.
+[SPEAKER_00]: And it's on board processing as this can
+transect like the plots in the field.
+[SPEAKER_00]: And it's recording other climatic factors
+such as like soil temperature,
+[SPEAKER_00]: air temperature as well.
+[SPEAKER_00]: So our first version 1, it'll cost about
+$200,000.
+[SPEAKER_00]: But we're very hopeful that we can get the
+price down to like $20,000.
+[SPEAKER_00]: And then we can kind of think of a world
+where we have these in everyone's hand.
+[SPEAKER_00]: And then so we're testing this on biomass
+sorghum.
+[SPEAKER_00]: And in my group, we're creating a map for
+a few hundred lines.
+[SPEAKER_00]: And the idea is we can then develop like a
+time series for like G by E.
+[SPEAKER_00]: All these variants in the HapMap across
+the genome.
+[SPEAKER_00]: And see like genes that are being turned
+on and off as I was showing with cotton.
+[SPEAKER_00]: But really be getting to factor in that G
+by E component to try to figure out why it
+[SPEAKER_00]: is being turned on and off.
+[SPEAKER_00]: And what I think about in the future where
+I kind of see my work proceeding is
+[SPEAKER_00]: breeders have a tremendous eye.
+[SPEAKER_00]: And I think at some point we can clone it
+with AI.
+[SPEAKER_00]: And when you have these autonomous
+breeding, now I'm not going to call them
+[SPEAKER_00]: autonomous breeders.
+[SPEAKER_00]: They're going to assist the breeders
+because of course we don't want to replace
+[SPEAKER_00]: the breeders.
+[SPEAKER_00]: But what we want to do is basically clone
+the breeder's eye and perhaps maybe have
+[SPEAKER_00]: maybe 10 to 20 of these very low cost
+robots per breeder.
+[SPEAKER_00]: And perhaps there's maybe some simplistic
+traits in early generation breeding such
+[SPEAKER_00]: as height plant pathology traits that if
+you have maybe tens of thousands of like
+[SPEAKER_00]: head rows or something like that,
+that these robots could actually go
+[SPEAKER_00]: through and help pinpoint and then track
+by GPS certain plants in the field.
+[SPEAKER_00]: And then if the breeder isn't happy with
+the plants that are chosen, then he or she
+[SPEAKER_00]: can just re-train the AI.
+[SPEAKER_00]: So I think we're kind of at a point now
+when we need to be having that
+[SPEAKER_00]: conversation with all the computer
+scientists, all of the robotic engineers
+[SPEAKER_00]: on campus to really push our science to a
+place that we haven't really conceived
+[SPEAKER_00]: quite yet because these things are now
+becoming possible.
+[SPEAKER_00]: And I think Cornell is at a place where we
+can drive this to become a reality.
+[SPEAKER_00]: And I would like to thank all of my
+colleagues.
+[SPEAKER_00]: And with that, I will take maybe one
+question.
+[SPEAKER_00]: So I don't want to keep you from your
+break.
+[SPEAKER_00]: And then we can resume back at 11.
+[SPEAKER_00]: All right.
+[SPEAKER_00]: Thank you.
+[SPEAKER_01]: Yeah, Tim Sutter.
+[SPEAKER_00]: When I think of my field in Aurora,
+New York, I want to build a robot that can
+[SPEAKER_00]: go out and pick every stone out of my
+field.
+[SPEAKER_00]: That's the first one I would do.
+[SPEAKER_00]: But I think the area in virotyping is
+going to be, I think, the future.
+[SPEAKER_00]: So if you can think of having maybe
+low-cost ways to sense at the plots,
+[SPEAKER_00]: like soil temperature, how much soil water
+moisture is in each plot.
+[SPEAKER_00]: And then in a certain area, you can record
+the ambient air temperature.
+[SPEAKER_00]: And like other factors over the whole
+growing season, then you can think about
+[SPEAKER_00]: doing factorial regression and trying to
+figure out what is the contribution of
+[SPEAKER_00]: these changes in the E that's contributing
+to my G and my G by E over the whole
+[SPEAKER_00]: growing season.
+[SPEAKER_00]: So I think there are some things that are
+coming out now.
+[SPEAKER_00]: But they're not cheap enough to the point
+where you're able just to put one probe
+[SPEAKER_00]: per one plot.
+[SPEAKER_00]: So perhaps you can try to characterize the
+actual variation in your field and then
+[SPEAKER_00]: use an approach to try to close that gap,
+if you will, to fill in those void areas
+[SPEAKER_00]: where you have no probe.
+[SPEAKER_00]: So that's what I think we really need to
+go towards that G by E question.
+[SPEAKER_00]: All right.
+[SPEAKER_00]: Thank you, everyone.
+[SPEAKER_00]: See you at 11.
+[SPEAKER_01]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_01]: Thank you.
+[SPEAKER_01]: Thank you.
+Thank you.
+Thank you.

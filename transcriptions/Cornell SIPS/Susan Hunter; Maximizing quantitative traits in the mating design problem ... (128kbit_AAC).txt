@@ -1,0 +1,1568 @@
+[SPEAKER_02]: This is a production of Cornell
+University.
+[SPEAKER_00]: Thank you especially to Jean-Luc for
+inviting me here.
+[SPEAKER_00]: It's a pleasure to see all the exciting
+work that you're doing.
+[SPEAKER_00]: So this is again work that I did during my
+postdoc with Ben McCloskey.
+[SPEAKER_00]: Some of you may or may not know him.
+[SPEAKER_00]: He was in nature source genetics and like
+me he's an operations research person,
+[SPEAKER_00]: so essentially an applied mathematician at
+some level.
+[SPEAKER_00]: He was a deterministic optimizer,
+graduated I believe out of Rice and a
+[SPEAKER_00]: postdoc at Columbia before he was hired in
+to help with the optimization routines
+[SPEAKER_00]: inside nature source genetics.
+[SPEAKER_00]: And so we actually interestingly met at a
+conference.
+[SPEAKER_00]: The big conference for our area is called
+INFORMS, the Institute for Operations
+[SPEAKER_00]: Research and Management Science.
+[SPEAKER_00]: And we started talking and he had plant
+problems that were relevant to the kind of
+[SPEAKER_00]: solution techniques that I was working on.
+[SPEAKER_00]: And then we discovered we're both in
+Cornell, so we might as well collaborate.
+[SPEAKER_00]: And so we did.
+[SPEAKER_00]: So this talk is a little bit difficult to
+give.
+[SPEAKER_00]: This is only the second time that I've
+given it to people who know more about
+[SPEAKER_00]: plants than about operations research.
+[SPEAKER_00]: So it is a little mathy in places because
+I'm used to giving this to an operations
+[SPEAKER_00]: research audience.
+[SPEAKER_00]: But I would rather you ask questions and
+interrupt me and I'll skip some slides if
+[SPEAKER_00]: you get totally lost.
+[SPEAKER_00]: There's a chalkboard here.
+[SPEAKER_00]: So I want you to take away something from
+the talk rather than hear myself talk if
+[SPEAKER_00]: you get too lost.
+[SPEAKER_00]: So I'd rather this be informal.
+[SPEAKER_00]: This is quite formal room, but it's not
+too different than the one I teach
+[SPEAKER_00]: probability in.
+[SPEAKER_00]: So raise your hand.
+[SPEAKER_00]: I'll try to repeat the question.
+[SPEAKER_00]: I think we might have some people online
+and we have a chalkboard so we can go at
+[SPEAKER_00]: whatever pace is comfortable for you.
+[SPEAKER_00]: So I have prepared two tutorials.
+[SPEAKER_00]: One is aimed at plant breeding people to
+say, what is simulation optimization in
+[SPEAKER_00]: the first place?
+[SPEAKER_00]: So that's the first little bit of the
+talk.
+[SPEAKER_00]: The second tutorial is a tutorial on some
+mathematics that you may find unfamiliar
+[SPEAKER_00]: that I give to everyone, including
+operations research people.
+[SPEAKER_00]: And then we'll get into the plant breeding
+part.
+[SPEAKER_00]: So we'll kind of have two little prefaces
+and then we'll go back into the main
+[SPEAKER_00]: problem that we're going to talk about.
+OK.
+[SPEAKER_00]: So for now, I'm going to assume that you
+have heard at some level of optimization.
+[SPEAKER_00]: And so what do we mean by optimization?
+[SPEAKER_00]: This is a farm management example at the
+plant breeding conference.
+[SPEAKER_00]: Bill Beavis went before me and this was
+his example and I stole it because it was
+[SPEAKER_00]: amazing.
+[SPEAKER_00]: So he's not here to explain it to you,
+but essentially you want to maximize
+[SPEAKER_00]: profit and you have some decisions that
+you can make on your farm.
+[SPEAKER_00]: So you can decide how many acres of wheat
+corn and beans I'm going to have to use
+[SPEAKER_00]: this for a pointer.
+[SPEAKER_00]: So in this notation, the X is the decision
+vector.
+[SPEAKER_00]: So the X's are things you can decide.
+[SPEAKER_00]: So how much wheat corn and beans you can
+plant, how much you sell, how many beans
+[SPEAKER_00]: you sell at a lower price and how much you
+purchase and so on.
+[SPEAKER_00]: And then you can formulate this.
+[SPEAKER_00]: We have a linear objective.
+[SPEAKER_00]: So the profit function is just a linear
+combination of the decisions that you
+make.
+[SPEAKER_00]: And you have some constraints.
+[SPEAKER_00]: So for example, the constraints might be
+that you can't plant more wheat corn and
+[SPEAKER_00]: beans than you have acres.
+[SPEAKER_00]: If you only have 500 acres, then that's
+all you can do.
+[SPEAKER_00]: So this is a classic farm management type
+problem.
+[SPEAKER_00]: In fact, many linear optimization methods
+were developed to solve these kinds of
+[SPEAKER_00]: problems and they're very old.
+[SPEAKER_00]: And so they're easy to solve.
+[SPEAKER_00]: We can solve them.
+[SPEAKER_00]: They're deterministic, so to speak.
+[SPEAKER_00]: So the profit model is linear.
+[SPEAKER_00]: We have no uncertainty whatsoever.
+[SPEAKER_00]: And this may be a good model for your
+farm.
+[SPEAKER_00]: It may be that you've been making
+decisions with this model and everything
+[SPEAKER_00]: is going great.
+[SPEAKER_00]: And so this model is of sufficient
+granularity for your choices.
+[SPEAKER_00]: You don't need anything else.
+[SPEAKER_00]: But it may be that this model is failing
+you for some reason.
+[SPEAKER_00]: And maybe what you plant is not what you
+yield in the end.
+[SPEAKER_00]: Maybe the price that you thought you could
+get is fluctuating a lot in a random way.
+[SPEAKER_00]: And so this model may not work anymore.
+[SPEAKER_00]: You may need to incorporate a different
+model with randomness.
+[SPEAKER_00]: And so you can formulate profit.
+[SPEAKER_00]: Right now, my profit will become random.
+[SPEAKER_00]: It's a random function of these things
+that I don't know.
+[SPEAKER_00]: I don't know my yield, what it's going to
+be.
+[SPEAKER_00]: I don't know what my prices are going to
+be.
+[SPEAKER_00]: And so the only thing I can do is try to
+maximize my expected profit.
+[SPEAKER_00]: So that means that in any one year,
+I don't know how I'm going to do.
+[SPEAKER_00]: But I want to do well on average across
+many years.
+[SPEAKER_00]: So I have to deal with this uncertainty in
+the yield and price.
+[SPEAKER_00]: And I formulate a profit function.
+[SPEAKER_00]: It's still a function of all my decision
+variables and the random yield and the
+[SPEAKER_00]: random price now.
+[SPEAKER_00]: And I want to maximize the expected
+profit.
+[SPEAKER_00]: So now I've turned what was a linear
+model.
+[SPEAKER_00]: Into something that is stochastic at some
+level.
+[SPEAKER_00]: So the ultimate goal is to maximize this
+expected profit.
+[SPEAKER_00]: And I still have my constraints on my
+decision variables.
+[SPEAKER_00]: Sometimes that profit function gets so
+complicated that we don't have any closed
+[SPEAKER_00]: form for it.
+[SPEAKER_00]: So you can have stochastic optimization
+problems.
+[SPEAKER_00]: Before, this could still be a linear
+function.
+[SPEAKER_00]: And I have random variables in that linear
+function.
+[SPEAKER_00]: That's possible.
+[SPEAKER_00]: But sometimes maybe you have a really
+complicated climate model that's going to
+[SPEAKER_00]: tell you your yield.
+[SPEAKER_00]: And maybe you have really complicated
+market model from some finance people
+[SPEAKER_00]: that's going to tell you about your
+prices.
+[SPEAKER_00]: And so now this thing gets extremely
+complicated.
+[SPEAKER_00]: It's maybe a high fidelity model.
+[SPEAKER_00]: It takes a long time to run it.
+[SPEAKER_00]: And so you embed the whole function inside
+a computer.
+[SPEAKER_00]: And so you have essentially a Monte Carlo
+simulation where you decide some decision
+[SPEAKER_00]: variables.
+[SPEAKER_00]: Those are your x's.
+[SPEAKER_00]: You decide what they are.
+[SPEAKER_00]: And you query the simulation model.
+[SPEAKER_00]: And you say, OK, if I decide these
+decision variables to be at these values,
+[SPEAKER_00]: what will my profit be in the first year?
+[SPEAKER_00]: Do it again.
+[SPEAKER_00]: Same decision variables.
+[SPEAKER_00]: What will my profit be in the second year?
+[SPEAKER_00]: Same thing again.
+[SPEAKER_00]: Third year.
+[SPEAKER_00]: So on.
+[SPEAKER_00]: And then you're trying to construct an
+estimator.
+[SPEAKER_00]: Construct an estimator of your expected
+profit as a function of this uncertainty
+[SPEAKER_00]: where all of your function is essentially
+living inside of a black box.
+[SPEAKER_00]: And you can only observe it with noise.
+[SPEAKER_00]: So it's corrupted by noise, so to speak.
+[SPEAKER_00]: And I've collapsed the constraints that we
+had into this notation x.
+[SPEAKER_00]: There are still some constraints.
+[SPEAKER_00]: We know them.
+[SPEAKER_00]: But our notation is just going to collapse
+them for simplicity.
+[SPEAKER_00]: So this is called a simulation
+optimization model.
+[SPEAKER_00]: This is a simulation optimization problem.
+[SPEAKER_00]: I have a simulator that has the function
+embedded inside of it.
+[SPEAKER_00]: I can query it at any decision vector
+value.
+[SPEAKER_00]: So I determine how much wheat,
+corn, and beans I want to plant.
+[SPEAKER_00]: And then I query it.
+[SPEAKER_00]: And then I change that.
+[SPEAKER_00]: And then I query it again.
+[SPEAKER_00]: But I want to actually optimize this
+function.
+[SPEAKER_00]: I want to find the decision variables that
+allow me to do well on average.
+[SPEAKER_00]: And so simulation optimization is
+optimizing a nonlinear function,
+[SPEAKER_00]: not necessarily linear anymore.
+[SPEAKER_00]: We've embedded it, and it's complicated.
+[SPEAKER_00]: With uncertainty, it's living inside of a
+Monte Carlo simulation model.
+[SPEAKER_00]: So I develop general algorithms to solve
+these kinds of problems for different
+[SPEAKER_00]: kinds of decision variables.
+[SPEAKER_00]: Your decision variables might be these
+happen to be integers.
+[SPEAKER_00]: So if there are acres, this will be a
+continuous decision variable potentially,
+[SPEAKER_00]: or maybe discrete depending on how you
+choose to model it.
+[SPEAKER_00]: You can plant 500 acres.
+[SPEAKER_00]: You can plant 550 acres, and so on.
+[SPEAKER_00]: You can divide it up however you want
+between wheat, corn, and beans.
+[SPEAKER_00]: So if I'm sitting at a particular decision
+point, how do I know which direction to
+[SPEAKER_00]: move?
+[SPEAKER_00]: To get to one that might be optimal.
+[SPEAKER_00]: And optimal in what sense?
+[SPEAKER_00]: Optimal in expectation, which is all I can
+tend to do when I have such randomness.
+[SPEAKER_00]: Okay, so I develop general algorithms for
+these kinds of problems.
+[SPEAKER_00]: And it has had major impact.
+[SPEAKER_00]: So these algorithms have been used by a
+group at Virginia Tech that solved a
+[SPEAKER_00]: vaccine allocation to control an epidemic
+in all of Seattle, where they modeled at
+[SPEAKER_00]: the person level.
+[SPEAKER_00]: So they had a network of people,
+and they said, I have some vaccine,
+[SPEAKER_00]: but I can't vaccinate everyone.
+[SPEAKER_00]: But I have a model of every person in
+Seattle, who should I vaccinate to make
+[SPEAKER_00]: sure that my expected deaths from the
+epidemic will be lowest as I can get them
+[SPEAKER_00]: over the time horizon.
+[SPEAKER_00]: And so this is a huge problem.
+[SPEAKER_00]: And we've been able to solve it,
+or the people in Virginia Tech have,
+[SPEAKER_00]: with these kinds of algorithms that we can
+develop.
+[SPEAKER_00]: Another application is brain-computer
+interfaces.
+[SPEAKER_00]: So you have some person who is connected
+through their brain to a prosthetic arm,
+[SPEAKER_00]: or some other prosthetic robot-type limb.
+[SPEAKER_00]: And they will think about how they want to
+move the arm.
+[SPEAKER_00]: And you have to take the brain waves from
+the electrodes and then figure out how
+[SPEAKER_00]: they want to move the arm, just by reading
+the brain waves.
+[SPEAKER_00]: And so there's been success in doing this
+as well.
+[SPEAKER_00]: A lot of other areas, emergency services,
+financial modeling and portfolio
+[SPEAKER_00]: optimization, manufacturing and supply
+chain, transportation, have all seen major
+[SPEAKER_00]: impact from simulation optimization,
+and hopefully also plant breeding,
+[SPEAKER_00]: as we learn to incorporate these
+techniques.
+[SPEAKER_00]: So simulation optimization is a powerful
+tool.
+[SPEAKER_00]: And I like to think of it as sitting at
+the interface of three areas.
+[SPEAKER_00]: So optimization is traditionally
+deterministic.
+[SPEAKER_00]: You add in a statistical component and
+also computer science, and you have
+[SPEAKER_00]: simulation optimization, which is
+abbreviated SO, sitting right here in the
+[SPEAKER_00]: middle.
+[SPEAKER_00]: So we pull on ideas from all these
+disciplines and sit in the interface.
+[SPEAKER_00]: And as you may expect, these problems,
+solving them is difficult.
+[SPEAKER_00]: We have uncertainty.
+[SPEAKER_00]: We may or may not have gradients.
+[SPEAKER_00]: We may not know in which direction to
+move.
+[SPEAKER_00]: So we have to deal with sampling
+efficiency and proper control of
+[SPEAKER_00]: stochastic error are the key aspects of
+these algorithms.
+[SPEAKER_00]: We have been working in this area.
+[SPEAKER_00]: The work has been developed for about over
+30 years.
+[SPEAKER_00]: And single objective simulation
+optimization problems are beginning to
+[SPEAKER_00]: have mature algorithms developed for them.
+[SPEAKER_00]: Multi-objective simulation optimization.
+[SPEAKER_00]: So for example, if you have two objectives
+and you want to identify everything that
+[SPEAKER_00]: is Pareto optimal, this is just getting
+started.
+[SPEAKER_00]: And so we'll talk some, I actually started
+working in that area because of the work
+[SPEAKER_00]: that we'll talk about today with Ben
+McCloskey.
+[SPEAKER_00]: It turned out that the problem that we had
+was bi-objective.
+[SPEAKER_00]: And so we had to create new methods to
+solve that problem.
+[SPEAKER_00]: Okay.
+[SPEAKER_00]: So now we're in math tutorial land.
+[SPEAKER_00]: So now is a good time for questions about
+simulation optimization.
+[SPEAKER_00]: What is it?
+[SPEAKER_00]: What do we do?
+[SPEAKER_00]: Okay.
+[SPEAKER_00]: Nothing yet.
+[SPEAKER_00]: Quite clear.
+[SPEAKER_00]: Excellent.
+[SPEAKER_00]: All right.
+[SPEAKER_00]: So now we'll get a little muddier.
+[SPEAKER_00]: So this is a brief primer in what's called
+large deviations theory.
+[SPEAKER_00]: And I've written here, if you get lost,
+we'll go through it.
+[SPEAKER_00]: But if you get lost, the key point is an
+unlikely event occurs in the most likely
+[SPEAKER_00]: of all the unlikely ways.
+[SPEAKER_00]: So we're going to be analyzing events that
+are unlikely.
+[SPEAKER_00]: And we want to think about how they might
+happen.
+[SPEAKER_00]: Well, the most likely way is how they're
+going to happen at some level.
+[SPEAKER_00]: So that'll be the North star when we get
+there.
+[SPEAKER_00]: But you deal with things like ordinary
+deviations all the time.
+[SPEAKER_00]: That's the central limit theorem.
+[SPEAKER_00]: So the central limit theorem says,
+if I'm estimating a mean, then my standard
+[SPEAKER_00]: error essentially is going down as order
+one over square root n, right?
+[SPEAKER_00]: And I will converge if I scale my X bar
+correctly, and I have some assumptions
+[SPEAKER_00]: satisfied, I'll converge to a normal zero.
+[SPEAKER_00]: It turns out that large deviations is
+another regime where we're worried about
+[SPEAKER_00]: deviations that are larger than you would
+typically worry about in a central limit
+[SPEAKER_00]: regime.
+[SPEAKER_00]: And so ideal many times in asymptotics,
+but as you know, by the central limit
+[SPEAKER_00]: theorem, even though it's an asymptotic
+result, it can be extremely useful.
+[SPEAKER_00]: Limits can kick in quickly.
+[SPEAKER_00]: You can get a lot of guiding principles by
+doing an asymptotic analysis.
+[SPEAKER_00]: So what is large deviations?
+[SPEAKER_00]: We know that if we have independent and
+identically distributed random variables,
+[SPEAKER_00]: X1 up to Xn, finite variance, and you
+construct the sample mean in the usual
+[SPEAKER_00]: way.
+[SPEAKER_00]: We know by the strong law of large numbers
+that that value is converging with
+[SPEAKER_00]: probability one to the true mean mu.
+[SPEAKER_00]: All right, so let's graph this what's
+going on.
+[SPEAKER_00]: I have a value mu.
+[SPEAKER_00]: And now in large deviations theory,
+I'm going to be concerned about the
+[SPEAKER_00]: probability that I observe a sample mean
+much bigger than some value that I care
+[SPEAKER_00]: about a, right?
+[SPEAKER_00]: So if I take some sample in one,
+and I plot the probability density
+[SPEAKER_00]: function of the sample mean X bar for this
+sample size in one, it might look like
+[SPEAKER_00]: this.
+[SPEAKER_00]: And if I want the probability that my
+sample mean is bigger than a, well,
+[SPEAKER_00]: I'm just going to integrate under the
+curve.
+[SPEAKER_00]: It's this.
+[SPEAKER_00]: Okay, so if I take a sample in one,
+the probability that X bar is bigger than
+[SPEAKER_00]: a is this blue part.
+[SPEAKER_00]: Now let's increase the sample.
+[SPEAKER_00]: If I increase the sample and I have an n2
+that's bigger than n1, then my density
+[SPEAKER_00]: function gets a little center.
+[SPEAKER_00]: Remember strong law of large numbers,
+it's converging to a point mass at mu.
+[SPEAKER_00]: So I have a little bit less area here.
+[SPEAKER_00]: And if I increase it further, it shrinks
+more.
+[SPEAKER_00]: So large deviations theory that we're
+going to be talking about is saying at
+[SPEAKER_00]: what rate does this area go to zero?
+[SPEAKER_00]: Because in the limit, my X bar is
+converging.
+[SPEAKER_00]: So the probability that I observe a large
+deviation event that my X bar comes all
+[SPEAKER_00]: the way up here and is estimated as bigger
+than a is going to zero.
+[SPEAKER_00]: And we want to know at what rate is it
+going to zero as my n tends to infinity.
+[SPEAKER_00]: So this picture is helpful for that.
+[SPEAKER_00]: As long as I have a light tailed
+distribution, right?
+[SPEAKER_00]: So my moment generating function is
+finite, then I have ignored this for a
+[SPEAKER_00]: moment.
+[SPEAKER_00]: Just look at the bottom.
+[SPEAKER_00]: We're saying the probability that my X bar
+is in some interval a to infinity,
+[SPEAKER_00]: so I got that large deviation event and I
+observed my X bar way out there,
+[SPEAKER_00]: is approximately e to the negative n,
+which is my sample size, times the rate
+[SPEAKER_00]: function evaluated at a.
+[SPEAKER_00]: So I can move my a around, right?
+[SPEAKER_00]: So my a could have been anywhere in here.
+[SPEAKER_00]: Let me go back to this picture.
+[SPEAKER_00]: If I move my a over here or move it up
+here, the rate is going to change,
+[SPEAKER_00]: right?
+[SPEAKER_00]: Because that tail probability is falling
+differentially depending on where my a is.
+[SPEAKER_00]: So I can plot the rate function for all
+different values of a.
+[SPEAKER_00]: And we'll do that on the next slide.
+[SPEAKER_00]: But essentially, this is saying,
+right?
+[SPEAKER_00]: So the infimum, this is called the rate
+function I of X over X and a.
+[SPEAKER_00]: Any time you see an infimum, just think
+minimum.
+[SPEAKER_00]: It's the smallest value.
+[SPEAKER_00]: Is I of a.
+[SPEAKER_00]: So now we'll come back up here.
+[SPEAKER_00]: We're going to see things that look like
+this.
+[SPEAKER_00]: Negative limit, n goes to infinity,
+1 over n log probability X bar,
+[SPEAKER_00]: n a to infinity.
+[SPEAKER_00]: Do the math in your head.
+[SPEAKER_00]: Take the log, divide by n, move a negative
+over, get a limit, and you get the I of a
+[SPEAKER_00]: popping out the other side.
+[SPEAKER_00]: So that's all that is.
+[SPEAKER_00]: We're saying under some conditions,
+the rate of decay is exponential.
+[SPEAKER_00]: And we're going to be talking about
+optimizing this term as a function of the
+[SPEAKER_00]: sample size n.
+[SPEAKER_00]: Hopefully, this will get clearer when we
+do an example.
+[SPEAKER_00]: So it turns out rate functions are
+non-negative and convex.
+[SPEAKER_00]: Convexity is good.
+[SPEAKER_00]: We like convex.
+[SPEAKER_00]: And they bottom out at 0 at the mean,
+right?
+[SPEAKER_00]: So X bar will always be either side of the
+mean, right?
+[SPEAKER_00]: So the rate there is 0, but it goes up on
+either side for normal.
+[SPEAKER_00]: So imagine the normal probability density
+function.
+[SPEAKER_00]: You had that e to the negative one half X
+minus mu over sigma squared.
+[SPEAKER_00]: That's what's coming down here as your
+rate function for a normal random
+[SPEAKER_00]: variable.
+[SPEAKER_00]: So what's going on here?
+[SPEAKER_00]: Remember, our compass is going to be the
+unlikely event occurs in the most likely
+[SPEAKER_00]: of all the unlikely ways.
+[SPEAKER_00]: So my X bar I'm worried about it being
+bigger than a.
+[SPEAKER_00]: But my X bar can be anywhere.
+[SPEAKER_00]: It could be at 3, or it could be at 4.
+[SPEAKER_00]: It could be at 200.
+[SPEAKER_00]: But what's the most likely event?
+[SPEAKER_00]: X bar is right at a, right?
+[SPEAKER_00]: So the most likely way that I'm going to
+see an X bar bigger than a is to observe X
+[SPEAKER_00]: bar at a.
+[SPEAKER_00]: All the rest of them are way, way less
+likely.
+[SPEAKER_00]: I think that's enough to be dangerous.
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: So it'll make your rate function a
+different shape.
+[SPEAKER_00]: So this is a particularly nice quadratic
+rate function.
+[SPEAKER_00]: For normals, it's symmetric.
+[SPEAKER_00]: But if you think of other distributions,
+you may have a rate function that comes
+[SPEAKER_00]: down and then goes way up like that,
+or has a different shape or asymmetry.
+[SPEAKER_00]: It will still be convex, so having that
+shape.
+[SPEAKER_00]: It'll still always have the bottom,
+the minimum occurring at the mean with a
+[SPEAKER_00]: value 0.
+[SPEAKER_00]: So the rate function form depends on the
+distribution.
+[SPEAKER_00]: OK, so now you all know about large
+deviations.
+[SPEAKER_00]: Unlikely event occurs in the most likely
+of all the unlikely ways.
+[SPEAKER_00]: So why do we care about this?
+[SPEAKER_00]: Why would we be interested in large
+deviation events in a context where we're
+[SPEAKER_00]: estimating things?
+[SPEAKER_00]: So let's suppose that we want to pick the
+parent pair that produces progeny with the
+[SPEAKER_00]: largest expected biomass.
+[SPEAKER_00]: You may have some problem like this.
+[SPEAKER_00]: And we can use Monte Carlo simulation to
+simulate the breeding and growth of
+[SPEAKER_00]: progeny from several parent pairs.
+[SPEAKER_00]: And we sample n equals 10 progeny from
+each of the three parent pairs.
+[SPEAKER_00]: And we get box plots that look like this.
+[SPEAKER_00]: So remember, we're maximizing.
+[SPEAKER_00]: So these two are better.
+[SPEAKER_00]: One and two are better than three.
+[SPEAKER_00]: And so now, if I suppose that one is truly
+the best, so it actually has the highest
+[SPEAKER_00]: mean.
+[SPEAKER_00]: I don't know it yet.
+[SPEAKER_00]: We're interested in the rate of decay of
+probabilities such as x bar 2 minus x bar
+[SPEAKER_00]: 1 is in 0 to infinity.
+[SPEAKER_00]: What does that mean?
+[SPEAKER_00]: That would mean that my x bar 2,
+even though it is not the best,
+[SPEAKER_00]: is estimated as better than the best one.
+[SPEAKER_00]: So this is, I accidentally picked the
+wrong parent pair as being the best one.
+[SPEAKER_00]: And I can control the rate of decay of
+this probability.
+[SPEAKER_00]: So one thing that's very interesting that
+comes out of literature called ranking and
+[SPEAKER_00]: selection is that ordering is
+exponentially fast, whereas estimation is
+[SPEAKER_00]: slower.
+[SPEAKER_00]: Estimation, I can estimate the true mean
+of this parent pair of the progeny they're
+[SPEAKER_00]: producing as order 1 over square root n.
+[SPEAKER_00]: That's my standard error, sigma over
+square root n.
+[SPEAKER_00]: And it's falling much slower than being
+able to tell which of one or two is
+[SPEAKER_00]: better.
+[SPEAKER_00]: Which of one or two is better is happening
+at an exponential rate.
+[SPEAKER_00]: So you can order them faster than you can
+estimate them when you're doing simulation
+[SPEAKER_00]: like this.
+[SPEAKER_00]: So the tail probability we're interested
+in is, for example, x bar 2 minus x bar 1
+[SPEAKER_00]: is in 0 to infinity, which looks like what
+we saw before.
+[SPEAKER_00]: And notice that I've varied it.
+[SPEAKER_00]: We'll expand the notation later.
+[SPEAKER_00]: But x bar 2, I may have different amount
+of samples that I spend on parent pair 1
+[SPEAKER_00]: versus parent pair 2 in terms of how I
+breed them.
+[SPEAKER_00]: I might breed 10 from this one and 30 from
+this one.
+[SPEAKER_00]: I can do that.
+[SPEAKER_00]: That affects the rate of decay.
+[SPEAKER_00]: So when we come back and we see this in
+alpha right here in the exponent,
+[SPEAKER_00]: this is going to be n scaled by the
+proportion of sample I give to that parent
+[SPEAKER_00]: pair.
+[SPEAKER_00]: And it's going to become a decision
+variable for us.
+[SPEAKER_00]: How much sample should I give across these
+parent pairs so that I can make their
+[SPEAKER_00]: ordering happen as fast as possible?
+[SPEAKER_00]: So even though this is we've gone the
+route of math, this is fairly intuitive.
+[SPEAKER_00]: If you got this plot and you have parent
+pair 1, parent pair 2, and parent pair 3,
+[SPEAKER_00]: parent pair 3 is pretty bad and you know
+it.
+[SPEAKER_00]: And then I give you 30 more samples,
+you're probably not going to give 10,
+[SPEAKER_00]: 10, 10.
+[SPEAKER_00]: Parent pair 3 is already bad.
+[SPEAKER_00]: We'd rather differentially sample to
+figure out who's better between 1 and 2.
+[SPEAKER_00]: We've just put some math on that concept
+is all we've done.
+[SPEAKER_00]: That allows us to analyze it and
+rigorously say, what is the differential
+[SPEAKER_00]: sampling scheme that we want to use?
+[SPEAKER_00]: So that is where we're going.
+[SPEAKER_00]: We'll head back into plant land for a
+little while.
+[SPEAKER_00]: More comfortable.
+[SPEAKER_00]: So suppose a farmer wants to grow one
+extreme individual.
+[SPEAKER_00]: This is the problem that Ben had.
+[SPEAKER_00]: He wanted to figure out given a population
+of breeding parent pairs, for example,
+[SPEAKER_00]: we buried the genetic effects just for
+simplicity.
+[SPEAKER_00]: We considered pairs as units on their own.
+[SPEAKER_00]: We have a single growing season.
+[SPEAKER_00]: And then the question is, how many progeny
+should be planted from each parent pair so
+[SPEAKER_00]: that we maximize the expected maximum
+biomass we observe in the field?
+[SPEAKER_00]: So we're going after that one biggest,
+tallest, largest plant.
+[SPEAKER_00]: And the idea then would be to propagate
+that into future generations.
+[SPEAKER_00]: So again, we'll borrow math.
+[SPEAKER_00]: So we're given some breeding budget B.
+[SPEAKER_00]: And we want to maximize the expected
+maximum over all of the parent pairs and
+[SPEAKER_00]: all of the children we breed from each
+parent pair of this random variable,
+[SPEAKER_00]: which is my yield.
+[SPEAKER_00]: So each child from each parent pair,
+function of weather, function of whatever
+[SPEAKER_00]: happens in the field, we observe this
+yield.
+[SPEAKER_00]: And so we want to maximize the expected
+maximum we see, subject to that we can
+[SPEAKER_00]: only breed so much in total, which is B.
+[SPEAKER_00]: And we can choose how much we breed from
+each parent pair as we go along.
+[SPEAKER_00]: So a total of Xi children will be bred
+from the i-th parent pair.
+[SPEAKER_00]: Yij of Xi is the observed trait of the
+j-th child from the i-th parent pair.
+[SPEAKER_00]: And the uncertainty could be due to
+anything you have in your model.
+[SPEAKER_00]: So genetics, soil conditions, the weather,
+whatever.
+[SPEAKER_00]: Each planting plan is assessed through
+Monte Carlo simulation.
+[SPEAKER_00]: And the granularity of the simulation that
+we used is that you essentially take a
+[SPEAKER_00]: parent pair, simulate it, out pops the
+child.
+[SPEAKER_00]: And so you get one observation from the
+progeny trait distribution of the parent
+[SPEAKER_00]: pair.
+[SPEAKER_00]: So that's the unit at which we're
+simulating.
+[SPEAKER_00]: So this problem, evaluating the objective
+function with high precision may be
+[SPEAKER_00]: expensive, because what do I have to do?
+[SPEAKER_00]: Let's suppose that I choose to breed
+equally from all the parent pairs that I
+[SPEAKER_00]: have, and that satisfies my budget
+constraint.
+[SPEAKER_00]: Well, that's one potential solution.
+[SPEAKER_00]: So I put that in my computer and I say,
+okay, now tell me what is the maximum of
+[SPEAKER_00]: the first replication?
+[SPEAKER_00]: So I did one trial and I got a maximum
+yield.
+[SPEAKER_00]: Okay, now I have to do that again,
+and then I have to do that again,
+[SPEAKER_00]: and then I have to do that again,
+just to get an estimator of this objective
+[SPEAKER_00]: function at that particular breeding
+steam.
+[SPEAKER_00]: And then maybe that didn't do as well as I
+wanted.
+[SPEAKER_00]: Now I have to play with it.
+[SPEAKER_00]: These are my decision variables.
+[SPEAKER_00]: The X's are what I can decide.
+[SPEAKER_00]: So I have to change it.
+[SPEAKER_00]: So our whole problem was how do we make
+this tractable?
+[SPEAKER_00]: How do we actually solve this on a
+computer in a way that is
+manageable?
+[SPEAKER_00]: Feasible set may be large.
+[SPEAKER_00]: You can do a lot of different things.
+[SPEAKER_00]: So Ben was telling me that a lot of his
+colleagues kept saying, well, you're going
+[SPEAKER_00]: to allocate everything to the one best
+parent pair.
+[SPEAKER_00]: There'll be one best, and you're going to
+give the entire breeding budget to that
+[SPEAKER_00]: one.
+[SPEAKER_00]: And it turns out that this is the correct
+answer, but only if your trait is
+[SPEAKER_00]: Bernoulli.
+[SPEAKER_00]: So the trait is there or not there.
+[SPEAKER_00]: So something like disease resistance.
+[SPEAKER_00]: You're resistant or you're not.
+[SPEAKER_00]: And so you will have your yij will be
+Bernoulli p.
+[SPEAKER_00]: Bernoulli is like coin tossing.
+[SPEAKER_00]: There's some probability of success each
+time you toss the coin.
+[SPEAKER_00]: And so if each parent pair is producing
+children that are Bernoulli with some
+[SPEAKER_00]: value p that depends on the parent pair,
+then we can prove that the solution is to
+[SPEAKER_00]: identify the parent pair with the highest
+probability of producing that resistant
+[SPEAKER_00]: offspring.
+[SPEAKER_00]: And then give everything to them.
+[SPEAKER_00]: So this devolves into what's called a
+ranking and selection problem,
+[SPEAKER_00]: because you don't know this probability
+for each parent pair.
+[SPEAKER_00]: You'll use Monte Carlo simulation to try
+to figure it out.
+[SPEAKER_00]: And we're trying to assign everything to
+that one identified parent pair.
+[SPEAKER_00]: So if you're interested in this problem,
+we do have methods for that.
+[SPEAKER_00]: In terms of the operations research
+audience, we decided to go with a slightly
+[SPEAKER_00]: more complicated model while he was
+worried about traits that are normally
+[SPEAKER_00]: distributed.
+[SPEAKER_00]: And it turns out that for normally
+distributed traits, you will not
+[SPEAKER_00]: necessarily give everything to one.
+[SPEAKER_00]: So let's take an example.
+[SPEAKER_00]: Remember the yij of c are the traits of
+the individual children.
+[SPEAKER_00]: They're iid normal with mean that depends
+on the parent pair and variance that
+[SPEAKER_00]: depends on the parent pair.
+[SPEAKER_00]: So if we have parent pair with normal mu1
+is 0, sigma1 is 50, parent pair 2 is mu2
+[SPEAKER_00]: is 50, sigma2 is 0.01.
+[SPEAKER_00]: So I have one sort of fat distribution
+that is high variance but low mean.
+[SPEAKER_00]: And then I have another distribution that
+is high mean but low variance.
+[SPEAKER_00]: It turns out that I am going to split the
+allocation across these parents.
+[SPEAKER_00]: So if I give everything to the low mean
+distribution here, then it turns out that
+[SPEAKER_00]: my expected max is 42, something like
+that, estimated expected maximum.
+[SPEAKER_00]: We have small standard errors.
+[SPEAKER_00]: We had to simulate these results.
+[SPEAKER_00]: If we give everything to the second one,
+then I'm going to hit that high mean.
+[SPEAKER_00]: But it'll be very near to 50.
+[SPEAKER_00]: Yeah, question.
+[SPEAKER_00]: Good question.
+[SPEAKER_00]: So we found we don't actually have
+numerics on this in particular,
+[SPEAKER_00]: but we found that it's somewhat dependent
+on the breeding budget.
+[SPEAKER_00]: So this was constructed specifically as a
+counter example so that Ben could say not
+[SPEAKER_00]: for normal and say we have to do something
+else.
+[SPEAKER_00]: So it depends on what the breeding budget
+be is.
+[SPEAKER_00]: It turns out that if you let your breeding
+budget get very large, you are going to
+[SPEAKER_00]: give all to the high variance parent pair.
+[SPEAKER_00]: Why is that?
+[SPEAKER_00]: So if we look at the split allocation that
+happens to be optimal, we're going to give
+[SPEAKER_00]: one to the high mean low variance parent
+pair.
+[SPEAKER_00]: Why?
+[SPEAKER_00]: Because we want to secure the high mean.
+[SPEAKER_00]: We can give one and get a high mean with
+pretty good certainty.
+[SPEAKER_00]: So we want to give one there.
+[SPEAKER_00]: The other two, we're going to go for broke
+on the high variance parent pair because
+[SPEAKER_00]: the high variance parent pair has the
+potential to produce with higher
+[SPEAKER_00]: probability parents out here or children
+out here in the tail.
+[SPEAKER_00]: So I'm going to give one to secure the
+high mean on the new two.
+[SPEAKER_00]: And then I'm going to give everybody else
+trying to get that extremum in the tail.
+[SPEAKER_00]: And it turns out as you're breeding budget
+gets really big, you will give everybody
+[SPEAKER_00]: to the high variance parent pair because
+you're going for that tail always.
+[SPEAKER_00]: It doesn't benefit you to give a lot to
+the lower mean one or lower standard
+[SPEAKER_00]: deviation one.
+[SPEAKER_00]: So in terms of how does it actually work
+out, I can't, I'm not entirely sure,
+[SPEAKER_00]: but I can tell you asymptotically where
+it'll go.
+[SPEAKER_00]: Often with the data that we had,
+giving all to one was an optimal strategy,
+[SPEAKER_00]: but it wasn't always Yeah.
+[SPEAKER_00]: So we're taking parents separately as a
+pair, right?
+[SPEAKER_00]: So it would be this pair produces children
+with this distribution.
+[SPEAKER_00]: And this pair produces children with this
+distribution.
+[SPEAKER_00]: Oh, I see what you're saying.
+[SPEAKER_00]: So I think you're talking about how did I
+get these parent pairs in the first place?
+[SPEAKER_02]: Is that right?
+[SPEAKER_02]: I mean, actually, I think, you know,
+this is kind of, this is kind of the right
+[SPEAKER_02]: thing.
+[SPEAKER_02]: The high one, the high mean will have the
+lower variance, right?
+[SPEAKER_02]: Right.
+[SPEAKER_02]: As the one that's the widest cross and all
+of them have the greater variance.
+[SPEAKER_02]: So I think this way, in order to be
+correct for what we do, right?
+[SPEAKER_02]: True.
+[SPEAKER_02]: Yeah.
+[SPEAKER_02]: But I'm saying that if your budget is high
+today, then your solution would be to take
+[SPEAKER_02]: the best parent and the very worst parent,
+right?
+[SPEAKER_00]: You're because you want the highest
+variance.
+[SPEAKER_00]: To get that pair.
+[SPEAKER_02]: So if you have the ability to control how
+variable this is, and you have an infinite
+[SPEAKER_00]: breeding budget, yeah, you will,
+you will try to maximize this variance and
+[SPEAKER_00]: then allocate everything to it.
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: Now that could be a very large breeding
+budget.
+[SPEAKER_00]: Okay.
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: Okay.
+[SPEAKER_00]: So I hopefully, I think I've convinced you
+that the all-to-one strategy is,
+[SPEAKER_00]: is not always optimal, at least in the
+normal trade case.
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: In terms, yes, if you could change these
+parent pairs and inch this one further,
+[SPEAKER_00]: you'll probably be allocating something to
+it.
+[SPEAKER_00]: Because it's all of a sudden it's
+producing your best, even though it's
+[SPEAKER_00]: lower variance.
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: Yes.
+[SPEAKER_00]: As opposed to multiple traits,
+we have, yeah, just one trait.
+[SPEAKER_00]: That was one extension that Ben brought
+up, that going into multiple traits will
+[SPEAKER_00]: complicate everything.
+[SPEAKER_00]: You might not have the other traits.
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: Good point.
+Yeah.
+[SPEAKER_02]: You only look at essentially one
+individual per vector of condition,
+[SPEAKER_02]: and then you choose another set.
+[SPEAKER_02]: It's a massive multiple space you're
+trying to sort of survey, and you can
+[SPEAKER_02]: essentially tell the gradient by looking
+at a single individual from each one,
+[SPEAKER_02]: or you don't see it as a whole population
+under certain conditions.
+[SPEAKER_02]: Right.
+[SPEAKER_00]: So we're going to avoid or attempt to
+avoid simulating at least that equal
+[SPEAKER_00]: allocation the entire population.
+[SPEAKER_02]: Yes.
+[SPEAKER_00]: So this would be putting some kind of
+neighborhood structure on the feasible
+[SPEAKER_02]: space.
+[SPEAKER_02]: Yes.
+Yes.
+[SPEAKER_00]: So this, we do not have a neighborhood
+structure.
+[SPEAKER_00]: We assume we don't have one.
+[SPEAKER_00]: That would be an extension that may help.
+[SPEAKER_00]: So we took a different route of assuming
+that the parent pairs are not orderable
+[SPEAKER_00]: and they don't have neighbors,
+which may be an oversimplification.
+[SPEAKER_00]: But good point.
+[SPEAKER_02]: Yes.
+[SPEAKER_00]: Yes.
+[SPEAKER_00]: Where you could sample at one and then
+say, well, I know that the people or the
+[SPEAKER_00]: plants near me are going to be similar in
+certain respects.
+[SPEAKER_00]: Okay.
+[SPEAKER_00]: So this is a tough problem to solve.
+[SPEAKER_00]: So we started thinking about how do we
+simplify it?
+[SPEAKER_00]: How do we get something that is more
+tractable?
+[SPEAKER_00]: So it turns out that as you may have
+guessed from the previous slide,
+[SPEAKER_00]: if a parent pair has a mean and variance
+that is dominated by some other parent
+[SPEAKER_00]: pairs mean and variance, you will never
+simulate, or you will never get any of the
+[SPEAKER_00]: breeding budget.
+[SPEAKER_00]: You may have to simulate to figure out
+what the mean and variance are,
+[SPEAKER_00]: but you will not allocate anything to it.
+[SPEAKER_00]: Because it's neither producing that
+extreme individual nor going for the
+[SPEAKER_00]: variance.
+[SPEAKER_00]: So efficient parent pairs are
+non-dominated in terms of their mean and
+[SPEAKER_00]: their variance.
+[SPEAKER_00]: And only parent pairs on the Pareto front
+will receive a planting budget,
+[SPEAKER_00]: non-zero in the original breeding problem
+that we talked about.
+[SPEAKER_00]: So the goal then is to somehow identify
+those on the Pareto front.
+[SPEAKER_00]: So this is just an example data set that
+Ben had or created, where the Pareto
+[SPEAKER_00]: parent pairs are sitting right here.
+[SPEAKER_00]: They're represented by circles.
+[SPEAKER_00]: So how do we identify these one,
+two, three, four, five parent pairs that
+[SPEAKER_00]: have the best mean and variance values?
+[SPEAKER_00]: And you may then wonder, well,
+wouldn't it just be the corner points?
+[SPEAKER_00]: Wouldn't these ones, the extrema,
+be the only ones to get allocation?
+[SPEAKER_00]: And again, I set my computer running and I
+have a counterexample for that too.
+[SPEAKER_00]: So prove our counterexample is the way to
+go and we have a counterexample.
+[SPEAKER_00]: So you may allocate something,
+for example, to this one.
+[SPEAKER_00]: And so you'd like to identify the entire
+Pareto front.
+[SPEAKER_00]: So what does that give us?
+[SPEAKER_00]: It gives us a reduced set to consider.
+[SPEAKER_00]: So when I'm trying to solve that original
+problem, I don't need to allocate across
+[SPEAKER_00]: 20,000 parent pairs anymore.
+[SPEAKER_00]: I only need to consider allocating across
+something less than or equal to about 25
+[SPEAKER_00]: parent pairs.
+[SPEAKER_00]: So this is reducing the dimensionality of
+the problem dramatically if you can
+[SPEAKER_00]: identify those Pareto parent pairs that
+are dominated in terms of their mean and
+[SPEAKER_00]: their variance.
+[SPEAKER_00]: So we propose a two-step solution to solve
+the mating design problem.
+[SPEAKER_00]: So n is a total simulation budget that you
+can use.
+[SPEAKER_00]: We're gonna choose n large and use a
+simulation to obtain estimators for each
+[SPEAKER_00]: parent pair.
+[SPEAKER_00]: And we're gonna construct an estimated
+Pareto set.
+[SPEAKER_00]: So we'll call that p hat.
+[SPEAKER_00]: That's a function of my simulation budget.
+[SPEAKER_00]: And then we're gonna solve an estimated
+version of the breeding problem.
+[SPEAKER_00]: We're calling it problem a hat sub p hat
+of n.
+[SPEAKER_00]: This is just, I've reformulated the
+expected maximum using the fact that we
+[SPEAKER_00]: have normal distributions.
+[SPEAKER_00]: So if you don't recognize this,
+don't worry.
+[SPEAKER_00]: It's just a parametric form.
+[SPEAKER_00]: But I don't know the mean and the variance
+in here for each parent pair, so I'm
+[SPEAKER_00]: estimating it.
+[SPEAKER_00]: So I'm just using plug-in estimators for
+all the values that I don't know and I'm
+[SPEAKER_00]: evaluating it only over our estimated
+Pareto set.
+[SPEAKER_00]: So we're gonna predetermine the estimated
+mean and variance values in my simulator
+[SPEAKER_00]: and get the estimated Pareto set and then
+solve this problem only on that set.
+[SPEAKER_00]: And it turns out that if I let my sample
+size in my simulation go to infinity,
+[SPEAKER_00]: then I will get the true optimal breeding
+budget allocation plan.
+[SPEAKER_00]: So the key is gonna be simulating enough
+that we can get these Pareto parent pairs
+[SPEAKER_00]: efficiently.
+[SPEAKER_00]: So the nice thing about this, we could
+have done other techniques.
+[SPEAKER_00]: We could have done something for an
+integer ordered space.
+[SPEAKER_00]: So the nice thing about this was that if
+the breeding budget changes, we don't need
+[SPEAKER_00]: to resimulate.
+[SPEAKER_00]: So after we run the simulation studies,
+you can change this B to be anything you
+[SPEAKER_00]: want.
+[SPEAKER_00]: And it does not affect what happens to my
+estimated mean and variance values.
+[SPEAKER_00]: So that's nice because if you're still
+unsure how many resources you have,
+[SPEAKER_00]: you can do the simulation in advance and
+not have to redo it over and over again.
+[SPEAKER_00]: The other one that was a benefit,
+Ben mentioned that the breeders were not
+[SPEAKER_00]: amenable to just implementing whatever one
+solution pops out of the simulator.
+[SPEAKER_00]: You need more than one.
+[SPEAKER_00]: They'd like to see the entire Pareto front
+for them would be nice to see what are the
+[SPEAKER_00]: good contenders and then allow them to
+incorporate other knowledge they have that
+[SPEAKER_00]: may not be in the model.
+[SPEAKER_00]: So you can present to them the entire
+Pareto front that you've identified and
+[SPEAKER_00]: then let them select from among those.
+[SPEAKER_00]: So reducing the set of parent pairs only
+to the Pareto front reduces the
+[SPEAKER_00]: complexity.
+[SPEAKER_00]: We have this master planting allocation
+problem, this problem A hat sub P hat and
+[SPEAKER_00]: Ben created a special branch and bound
+algorithm just for solving this after
+[SPEAKER_00]: we've observed the estimated mean and
+variance values out of the simulator.
+[SPEAKER_00]: So you'll simulate and then solve this
+problem.
+[SPEAKER_00]: But now we have a sub problem,
+which is how do we find the set of
+[SPEAKER_00]: estimated Pareto parent pairs efficiently?
+[SPEAKER_00]: And then there's a simulation sub sub
+problem, which is how do we allocate a
+[SPEAKER_00]: simulation budget in to find the estimated
+Pareto set P hat?
+[SPEAKER_00]: I changed the notation here.
+[SPEAKER_00]: It's no longer a function of N.
+[SPEAKER_00]: This is called multi objective ranking and
+selection.
+[SPEAKER_00]: And this is sort of how I got my start in
+working in this area because all of a
+[SPEAKER_00]: sudden we need to identify parent pairs
+that are on a Pareto front.
+[SPEAKER_00]: And so this question is the one where the
+simulation optimization, you know,
+[SPEAKER_00]: we get excited when we see problems like
+this.
+[SPEAKER_00]: So how can I create my simulation budget
+allocated to the parent pairs in an
+[SPEAKER_00]: efficient way?
+[SPEAKER_00]: And remember this is ordering,
+right?
+[SPEAKER_00]: I want to get the order right.
+[SPEAKER_00]: So if I have a procedure to estimate the
+Pareto set, N is my total simulation
+[SPEAKER_00]: budget.
+[SPEAKER_00]: And I'm going to let N alpha I be the
+proportion.
+[SPEAKER_00]: So alpha is the proportion of the total
+simulation budget that I give to the I
+[SPEAKER_00]: parent pair for estimating their mean and
+variance values.
+[SPEAKER_00]: And at the end of simulating, I'm going to
+return the estimated Pareto set,
+[SPEAKER_00]: right?
+[SPEAKER_00]: So now how can this go wrong?
+[SPEAKER_00]: Well, it can go wrong if one of my parent
+pairs that's actually on the Pareto front
+[SPEAKER_00]: is misestimated as not being there.
+[SPEAKER_00]: That's an ordering issue, just like we
+talked about in the tutorial.
+[SPEAKER_00]: Or if one of the parent pairs that is not
+in the Pareto front jumps in, again,
+[SPEAKER_00]: an ordering issue.
+[SPEAKER_00]: And so I want to find a simulation budget
+allocation that maximizes the rate of
+[SPEAKER_00]: decay of the probability that a parent
+pair is misclassified.
+[SPEAKER_00]: This is a large deviation event that a
+parent pair is misclassified.
+[SPEAKER_00]: And the unlikely event occurs in the most
+likely of all the unlikely ways.
+[SPEAKER_00]: So in order to figure out what this
+simulation budget allocation should be,
+[SPEAKER_00]: we analyze how likely all these events
+are.
+[SPEAKER_00]: So that's where we're headed very briefly.
+[SPEAKER_00]: And it gets a little nappy.
+[SPEAKER_00]: But I think you can follow.
+[SPEAKER_00]: So equal allocation is what they were
+doing.
+[SPEAKER_00]: It's expensive.
+[SPEAKER_00]: It's time and money.
+[SPEAKER_00]: Ben was running his experiments on Amazon.
+[SPEAKER_00]: And so you have to pay for those servers.
+[SPEAKER_00]: And if you're just going to brute force
+equal allocation, it can take a while.
+[SPEAKER_00]: So can we do something that is a little
+smarter?
+[SPEAKER_00]: So now we are living in the sub-sub
+problem of allocating the simulation
+[SPEAKER_00]: budget to get those Pareto parent pairs.
+[SPEAKER_00]: So some notation.
+[SPEAKER_00]: In alpha i is the proportion of sample
+allocated to parent pair i.
+[SPEAKER_00]: We have the estimator of the mean and the
+estimator of the variance.
+[SPEAKER_00]: We're going to assume normality.
+[SPEAKER_00]: So now we have the estimator of the
+variance is chi squared.
+[SPEAKER_00]: So in a lot of the work that exists on
+these types of problems, everything is
+[SPEAKER_00]: assumed to be normal.
+[SPEAKER_00]: So we needed special methods that will
+allow us to use chi square random
+[SPEAKER_00]: variables and account for that in our
+techniques.
+[SPEAKER_00]: And large deviations is particularly
+suited to doing that.
+[SPEAKER_00]: So how do we analyze these events?
+[SPEAKER_00]: So we're going to analyze it pretending we
+know everything.
+[SPEAKER_00]: And then later, we're going to plug in
+just like we did when we didn't know what
+[SPEAKER_00]: to do in the master breeding problem.
+[SPEAKER_00]: We just plugged in a mu hat in place of
+mu.
+[SPEAKER_00]: We're going to do the same thing here.
+[SPEAKER_00]: We're going to analyze it pretending we
+know everything.
+[SPEAKER_00]: And then we're going to plug in to figure
+out how to allocate our simulation budget.
+[SPEAKER_00]: So again, how does a misclassification
+event happen?
+[SPEAKER_00]: I can exclude somebody by accident or I
+can exclude somebody by accident.
+[SPEAKER_00]: The unlikely event occurs in the most
+likely of all the unlikely ways.
+[SPEAKER_00]: So I have to figure out which one is a
+higher probability event.
+[SPEAKER_00]: So in a large deviations framework,
+we're concerned with the tail
+[SPEAKER_00]: probabilities of these random variables
+that my y hats change places on the mean
+[SPEAKER_00]: objective or that my sigma hats change
+places on the variance objective.
+[SPEAKER_00]: And I'll go a little fast.
+[SPEAKER_00]: So it's the minimum of these two rates is
+the one we care about.
+[SPEAKER_00]: We have to analyze them separately.
+[SPEAKER_00]: And it's going to come down to a pairwise
+rate.
+[SPEAKER_00]: So it'll be for exclusion.
+[SPEAKER_00]: It's the minimum of the pairwise rate that
+one Pareto excludes another.
+[SPEAKER_00]: And we'll go in too deeply about each
+mathematical expression.
+[SPEAKER_00]: MCI turned out to be the misclassification
+by inclusion.
+[SPEAKER_00]: We had an issue analyzing this because of
+dependence.
+[SPEAKER_00]: So we had to reformulate it and do some
+more math.
+[SPEAKER_00]: We came up with these things called
+phantom Pareto parent pairs, where we can
+[SPEAKER_00]: write an inclusion event like an exclusion
+event and analyze it the same way.
+[SPEAKER_00]: Math, math, math.
+[SPEAKER_00]: Here's the ratio.
+[SPEAKER_00]: Great.
+[SPEAKER_00]: So the unlikely event is happening in the
+most likely of all the unlikely ways.
+[SPEAKER_00]: This is MCE.
+[SPEAKER_00]: This is MCI, misclassification by
+inclusion and misclassification by
+[SPEAKER_00]: exclusion.
+[SPEAKER_00]: And so I'm going to look at every pair and
+I'm going to say, which one is the most
+[SPEAKER_00]: likely one to exclude or include?
+[SPEAKER_00]: And between every pair, that is going to
+determine the entire rate of decay.
+[SPEAKER_00]: Now, remember, decision variables in this
+are alphas.
+[SPEAKER_00]: I can decide what proportion I give to
+each parent pair.
+[SPEAKER_00]: So those are my decision variables.
+[SPEAKER_00]: So I want to maximize this rate of decay
+subject to my alphas have to sum to one.
+[SPEAKER_00]: I can only give 100% of sample in total.
+[SPEAKER_00]: And this is a concave maximization problem
+in alpha, which we like, which means we
+[SPEAKER_00]: can solve it easier.
+[SPEAKER_00]: So what if I solve this?
+[SPEAKER_00]: Then it turns out I have some constraints.
+[SPEAKER_00]: We use a solver.
+[SPEAKER_00]: What's going to happen?
+[SPEAKER_00]: I have a hundred parent pairs here and the
+optimal simulation budget is calculated as
+[SPEAKER_00]: the solution to this problem where my
+decision variables are alpha, the
+[SPEAKER_00]: proportion to allocate to each parent pair
+in my simulation experiments.
+[SPEAKER_00]: So if I do this, and I make the size of
+the circle proportional to the amount of
+[SPEAKER_00]: allocation that each parent pair gets,
+we're going to shift it toward the Pareto
+[SPEAKER_00]: front.
+[SPEAKER_00]: So before I was doing equal allocation,
+so this guy gets as much sample as this
+[SPEAKER_00]: guy.
+[SPEAKER_00]: No, that's not smart instead.
+[SPEAKER_00]: Who's going to potentially be
+misclassified?
+[SPEAKER_00]: Well, these guys are the ones I care about
+being misclassified.
+[SPEAKER_00]: So anybody that's really close to the
+Pareto front needs to get more.
+[SPEAKER_00]: Because I have to decide are they in or
+are they out relative to their,
+[SPEAKER_00]: whoever's nearby.
+[SPEAKER_00]: This guy is bad and I know it.
+[SPEAKER_00]: So I don't need to sample very much.
+[SPEAKER_00]: So essentially what I'm doing is I have
+all these pairwise rates of decay of these
+[SPEAKER_00]: probabilities of misclassification that
+can happen.
+[SPEAKER_00]: And the alpha is going to equate the
+rates.
+[SPEAKER_00]: The optimal alpha will make sure they go
+down all at the same rate.
+[SPEAKER_00]: Will give me an allocation that looks like
+this.
+[SPEAKER_00]: And so a few more examples of shifting the
+sample up toward the Pareto front.
+[SPEAKER_00]: So again, we don't know mu and sigma,
+right?
+[SPEAKER_00]: And we need them inside the rate function.
+[SPEAKER_00]: It turns out that the rate function,
+knowing that is equivalent to knowing the
+[SPEAKER_00]: entire distribution, the mean,
+the variance, everything.
+[SPEAKER_00]: So if we don't know that, what will we do?
+[SPEAKER_00]: Well, to implement this, we'll take some
+initial amount from everyone.
+[SPEAKER_00]: The reason we have to do that is because
+we don't have the neighborhood structure.
+[SPEAKER_00]: We have not assumed that.
+[SPEAKER_00]: So we have to get some estimator of how
+everyone is doing.
+[SPEAKER_00]: Then we update the sample means and sample
+variances.
+[SPEAKER_00]: We update the estimated Pareto set and we
+solve an estimated version of the optimal
+[SPEAKER_00]: allocation problem to get that simulation
+allocation for each parent pair.
+[SPEAKER_00]: We use that as a sampling distribution
+from which we take the next Delta progeny
+[SPEAKER_00]: and we keep doing this.
+[SPEAKER_00]: So we keep updating our optimal allocation
+as we go and implement it this way.
+[SPEAKER_00]: So for this allocation, it turns out that
+we do better than our competitor.
+[SPEAKER_00]: There's only one competitor in this area.
+[SPEAKER_00]: It assumes all normal distributions.
+[SPEAKER_00]: I think the difference that we have from
+our competitor is that we're actually able
+[SPEAKER_00]: to deal with the chi squared directly.
+[SPEAKER_00]: We didn't go into detail on what's
+different about that, but the rate
+[SPEAKER_00]: function was different.
+[SPEAKER_00]: And it turns out that it allows us to do a
+little better.
+[SPEAKER_00]: And so we have some misclassification
+probabilities that as my simulation budget
+[SPEAKER_00]: is going to infinity, our allocation is
+doing much better at controlling
+[SPEAKER_00]: misclassifications.
+[SPEAKER_00]: So imagine that you just give equal
+allocation instead of doing something
+[SPEAKER_00]: intelligent.
+[SPEAKER_00]: Well, your misclassification after a
+simulation budget of 10,000 is going to be
+[SPEAKER_00]: all the way up here around two and a half
+percent of your systems misclassified.
+[SPEAKER_00]: But for the same simulation budget,
+you could have a rate of misclassification
+[SPEAKER_00]: around 1%.
+[SPEAKER_00]: So you can actually do much better by
+pulling down these probabilities.
+[SPEAKER_00]: Okay.
+[SPEAKER_00]: And so this slide is for the Ori people
+who don't know how plant breeding works.
+[SPEAKER_00]: So this is essentially saying,
+what will you do in real life?
+[SPEAKER_00]: You want to breed the largest plant.
+[SPEAKER_00]: You'll consult with a company like
+NatureSource Genetics.
+[SPEAKER_00]: You'll build a simulation model.
+[SPEAKER_00]: You'll allocate intelligently.
+[SPEAKER_00]: At the end of the algorithm, you'll
+estimate the Pareto set.
+[SPEAKER_00]: You'll estimate the mean and variance
+values.
+[SPEAKER_00]: You'll decide your budget.
+[SPEAKER_00]: You can solve the integer program for the
+master breeding problem offline with
+[SPEAKER_00]: regards to the simulation because you've
+already done all of your simulating in
+[SPEAKER_00]: advance.
+[SPEAKER_00]: And then you adjust and you breed in real
+life.
+[SPEAKER_00]: And then you breed the largest king grass
+plant.
+[SPEAKER_00]: So I have some one more slide with
+questions.
+[SPEAKER_00]: You can ask me questions, but these are
+the questions that I have for you to sort
+[SPEAKER_00]: of turn the question section on its head
+before we have to leave.
+[SPEAKER_00]: So the questions I had relate to what kind
+of simulation models do you have and what
+[SPEAKER_00]: do you use?
+[SPEAKER_00]: So there are plant level models like this,
+but there are also potentially system-wide
+[SPEAKER_00]: models that incorporate climate.
+[SPEAKER_00]: These models can be any level of
+abstraction.
+[SPEAKER_00]: So you may have things other than
+individual plant level simulations.
+[SPEAKER_00]: You can also think of simulators in
+general.
+[SPEAKER_00]: So a big data set can be a simulator.
+[SPEAKER_00]: So if you can't load the entire data set
+in your memory when you're trying to
+[SPEAKER_00]: estimate some parameters, it turns out
+that we have adaptive stochastic gradient
+[SPEAKER_00]: descent methods now that will allow you to
+load only a part of the data set to
+[SPEAKER_00]: determine if the current value of your
+parameters is good or bad or get a
+[SPEAKER_00]: derivative and move to another point
+without having to load the entire data
+[SPEAKER_00]: set.
+[SPEAKER_00]: So simulation oracle can be interpreted
+more broadly than black box, so to speak.
+[SPEAKER_00]: What are your decision variables?
+[SPEAKER_00]: What values can they take?
+[SPEAKER_00]: Is there a neighborhood structure?
+[SPEAKER_00]: What are the objective functions?
+[SPEAKER_00]: How long can you take to make a decision?
+[SPEAKER_00]: Many times in my field, we worry if it
+takes the algorithm longer than a minute
+[SPEAKER_00]: to run.
+[SPEAKER_00]: So if you have 30 days, this is
+incredible.
+[SPEAKER_00]: We can really do some things.
+[SPEAKER_00]: But it's my sense that you'll run it for
+30 days, but it better be right.
+[SPEAKER_00]: You don't want to run it for 30 days and
+it's still wrong.
+[SPEAKER_00]: And what kind of computing resources will
+the user have access to?
+[SPEAKER_00]: Will they be running on a laptop,
+on a supercomputer, things like that?
+[SPEAKER_00]: So as I've talked to people, I've gotten
+some sense of the answers to these
+[SPEAKER_00]: questions, but these are the big ones.
+[SPEAKER_00]: And we have maybe a little bit of time for
+questions from me.
+[SPEAKER_00]: So we're maximizing both.
+[SPEAKER_00]: So the idea, I'm not sure I understood
+your question, but the idea is,
+[SPEAKER_00]: it's harder to tell who's on the Pareto
+front when you're close to it,
+[SPEAKER_00]: right?
+[SPEAKER_00]: If I'm over here, it's pretty easy to tell
+that I'm bad.
+[SPEAKER_00]: So I want to allocate more of my
+simulation budget in the area where it
+[SPEAKER_00]: might be good.
+[SPEAKER_02]: Exactly.
+[SPEAKER_00]: So if you have two parent pairs that are
+producing children with means and
+[SPEAKER_00]: variances that are right very close to
+each other, and you really want to get the
+[SPEAKER_00]: best one, you're going to have to spend a
+lot of sample to figure out which one is
+[SPEAKER_00]: the best one.
+[SPEAKER_00]: As opposed to ones that are already.
+[SPEAKER_00]: Exactly.
+[SPEAKER_02]: So if you didn't involve the sample,
+and somebody dropped a pound of grain,
+[SPEAKER_02]: or mixed two, or actually the seeding,
+that whole group's part of the field.
+[SPEAKER_02]: So you're going to have awesome and
+errors, right?
+[SPEAKER_02]: And so I guess, so it's trying to figure
+out how do we have our ways to deal with
+[SPEAKER_02]: errors where we're crude ones,
+where we just trim off, and if it's a
+[SPEAKER_02]: skew, we just trim, and then we put it in
+and do some silences, but I guess does the
+[SPEAKER_02]: simulation ever know which data points
+might be corrupt?
+[SPEAKER_00]: So I think the concise answer is no.
+[SPEAKER_00]: I view that as sort of a human in the
+loop, where you would have some knowledge
+[SPEAKER_00]: that somebody corrupted this data,
+and now I have to fix it.
+[SPEAKER_00]: Everything that I've done so far assumes
+that the model is correct, the data was
+[SPEAKER_00]: collected correctly.
+[SPEAKER_00]: It's hard for an algorithm, I think,
+because what's really going on here,
+[SPEAKER_00]: this is coming out of the simulator.
+[SPEAKER_00]: So you would have already collected your
+data, and you would have already hopefully
+[SPEAKER_00]: cleaned it and built an as correct
+simulator as you could get.
+[SPEAKER_00]: And so we're assuming that what's coming
+out of the simulator is at some level,
+[SPEAKER_00]: if we keep sampling forever, we'll
+converge to the truth.
+[SPEAKER_00]: So even though that may not be accurate.
+[SPEAKER_01]: Yeah, question.
+[SPEAKER_00]: Yes.
+[SPEAKER_00]: There is.
+[SPEAKER_00]: So it's only just now being done.
+[SPEAKER_00]: In the multi objective context,
+in the single objective context for this
+[SPEAKER_00]: same problem, if we just had one
+objective, there's something called an
+[SPEAKER_00]: indifference zone.
+[SPEAKER_00]: And the indifference zone is backing up
+from the best by a certain amount and
+[SPEAKER_00]: saying, if these two systems are within or
+parent pairs are within Delta,
+[SPEAKER_00]: I don't care.
+[SPEAKER_00]: Don't worry about detecting that
+difference.
+[SPEAKER_00]: So there is some work in the multi
+objective context.
+[SPEAKER_00]: It's a little more complicated.
+[SPEAKER_00]: To specify when you're in potentially high
+dimensions, what that Delta would be.
+[SPEAKER_00]: Or you could imagine it might be a box.
+[SPEAKER_00]: There is some work on how to allocate so
+that you don't spend all your budget
+[SPEAKER_00]: trying to decide between these two guys.
+[SPEAKER_00]: Yeah, so that is definitely an issue.
+[SPEAKER_00]: But the key word there is indifference
+zone.
+[SPEAKER_00]: If you walk around in my community and you
+talk about indifference zone, everybody
+[SPEAKER_00]: will know what you're talking about.
+[SPEAKER_00]: So these are different problems because I
+may not know how many are in the
+[SPEAKER_00]: indifference zone.
+[SPEAKER_00]: So if I'm maximizing and I back up from
+the maximum, there could be a hundred in
+[SPEAKER_00]: there versus saying, I want the top in
+designs is what we call it.
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: And there is in one objective,
+there's also a lot of literature on
+[SPEAKER_00]: getting the top.
+[SPEAKER_00]: We call it top in multi objective.
+[SPEAKER_00]: It's brand new that area.
+[SPEAKER_00]: So we don't have those methods yet.
+[SPEAKER_00]: Exactly.
+[SPEAKER_00]: We could do that.
+[SPEAKER_00]: That is one way to go.
+[SPEAKER_00]: I think one of the reasons Ben did not
+favor that.
+[SPEAKER_00]: So the question is, we have this
+optimization problem.
+[SPEAKER_00]: This one, why not just sample to solve
+this directly?
+[SPEAKER_00]: And we could, uh, the thing that will come
+out of this, if you do that is you will
+[SPEAKER_00]: get the optimal breeding budget and not
+really any other information.
+[SPEAKER_00]: You'll get the optimal breeding budget.
+[SPEAKER_00]: You'll get the value, an estimator for the
+value of the objective function as well.
+[SPEAKER_00]: But in terms of getting a subset of parent
+pairs that might be competitive,
+[SPEAKER_00]: you won't get that.
+[SPEAKER_00]: You won't get estimators for the mean and
+variance values of those parent pairs.
+[SPEAKER_00]: And if someone changes the breeding
+budget, you'll have to redo all the
+[SPEAKER_00]: simulation.
+[SPEAKER_00]: So you, and because I enjoy integer
+ordered problems, this would be fun.
+[SPEAKER_00]: But I think in terms of the specific
+context that Ben was looking at doing it
+[SPEAKER_00]: this way turned out to work better.
+[SPEAKER_00]: Yeah.
+[SPEAKER_02]: But good question.
+[SPEAKER_00]: Oh, I think I see.
+[SPEAKER_00]: So we actually can prove that if we
+estimate the set correctly, that none of
+[SPEAKER_00]: the breeding budget will go to anybody
+that is outside the Pareto set.
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: So that was a condition of reducing the
+feasible set to this, this value.
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: But again, you, so this all assumes your
+model is correct and that is doing what
+[SPEAKER_00]: you want it to do.
+[SPEAKER_00]: Because whatever's in this Pareto set is
+going to depend on your model.
+[SPEAKER_02]: So I
+[SPEAKER_02]: don't mind, but thanks again.
+[SPEAKER_02]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_02]: Thank you.
+[SPEAKER_02]: Thank you.
+Thank you.

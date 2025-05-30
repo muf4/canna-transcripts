@@ -1,0 +1,90 @@
+[SPEAKER_00]: Hi, my name is Skyler Smith.
+[SPEAKER_00]: I work with the integrator and technical
+support team here at Apti Instruments,
+[SPEAKER_00]: and we're here to talk about connecting
+our SP214 pyranometer to the SMA Cluster
+[SPEAKER_00]: Controller, a very popular controller for
+use in commercial solar applications.
+[SPEAKER_00]: The SP214 is an irradiant sensor in order
+to see the watts per meter squared
+[SPEAKER_00]: available from the Sun.
+[SPEAKER_00]: So, the first thing to note is the SP214
+comes like this with a 4-inch pigtail to
+[SPEAKER_00]: connect to.
+[SPEAKER_00]: So, the sensor does need to be powered,
+24 volts power supply.
+[SPEAKER_00]: So, you need to know where your power
+supply is and then how far away that is
+[SPEAKER_00]: from your X8 terminal on the Cluster
+Controller.
+[SPEAKER_00]: Depending upon the distance, you may need
+to split the jacket like so, and we have
+[SPEAKER_00]: the red and black over here that will
+power the sensor, and the green and white
+[SPEAKER_00]: which are the sensor output that will
+connect into the controller.
+[SPEAKER_00]: So, we'll go ahead and right here,
+in our example, we'll connect the red into
+[SPEAKER_00]: the positive on the power supply.
+[SPEAKER_00]: So, we just slide that down in there,
+and this is just a regular screw on
+[SPEAKER_00]: terminal.
+[SPEAKER_00]: So, we will slide it in and tighten that
+down.
+[SPEAKER_00]: And then the black will go in the
+negative, and same thing, we will just
+[SPEAKER_00]: tighten him down.
+Okay.
+[SPEAKER_00]: And then over here on the controller
+itself, we are on X8 and the top row is
+[SPEAKER_00]: A2.
+[SPEAKER_00]: So, we're going to go in A2 for the white
+conductor, A3 for the green conductor,
+[SPEAKER_00]: and these are just push-in terminals,
+so they just push in.
+[SPEAKER_00]: And then our shield, we will go into
+A4.
+Okay.
+[SPEAKER_00]: So, that's how you wire up the sensor
+itself.
+[SPEAKER_00]: The next step is to change the
+installation curve, and you do that
+[SPEAKER_00]: through the user interface for the SMA
+Cluster Controller.
+[SPEAKER_00]: And so, once you have that interface
+pulled up on your computer, navigate to
+[SPEAKER_00]: meteorology, and then go to environmental,
+and then go to irradiance sensor,
+[SPEAKER_00]: and then go to characteristic curve.
+[SPEAKER_00]: And when you're there, you just need to
+change it to 0 to 1250 watts per meter
+[SPEAKER_00]: squared.
+[SPEAKER_00]: And as a reminder, this is a 4 to 20
+milliamp sensor.
+[SPEAKER_00]: The other way that you can look at this is
+on the controller itself.
+[SPEAKER_00]: If you scroll down a number of times,
+then you get to analog inputs.
+[SPEAKER_00]: Analog current input number one on the top
+there is showing us what the data is
+[SPEAKER_00]: reading from the sensor.
+[SPEAKER_00]: And in our example here, it's reading 4.01
+milliamp, which is correct for our studio.
+[SPEAKER_00]: There is very little light.
+[SPEAKER_00]: And if we hit down two more times,
+we can see the installation converting
+[SPEAKER_00]: that to one watts per meter squared.
+[SPEAKER_00]: Should be correct.
+[SPEAKER_00]: For normal applications, you'll probably
+be reading between 7 to 11 milliamps,
+[SPEAKER_00]: depending on your time of day and
+location.
+[SPEAKER_00]: That concludes our SP214 pyranometer
+connecting to the SMA Cluster Controller.
+[SPEAKER_00]: Be sure to watch our other segment on
+connecting our TS100 aspirated radiation
+[SPEAKER_00]: shield to the Cluster Controller to get
+very accurate ambient air temperature
+[SPEAKER_00]: readings.
+[SPEAKER_00]: Thank you.
+Thanks for watching.

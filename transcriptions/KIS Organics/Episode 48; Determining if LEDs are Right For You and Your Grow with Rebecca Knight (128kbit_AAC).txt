@@ -1,0 +1,1739 @@
+[SPEAKER_01]: Welcome to the Cannabis Cultivation and
+Science podcast.
+[SPEAKER_01]: I'm your host, Tad Hussey of Kiss
+Organics.
+[SPEAKER_01]: This is the podcast where we discuss the
+cutting edge of organic growing from a
+[SPEAKER_01]: science-based perspective and draw on top
+experts from around the industry to share
+[SPEAKER_01]: their wisdom and knowledge.
+[SPEAKER_01]: Now, before starting the podcast,
+I wanted to just touch on the current
+[SPEAKER_01]: situation with phylos.
+[SPEAKER_01]: I did reach out initially for an interview
+and was told it was going to happen.
+[SPEAKER_01]: I then posted for questions on my
+Instagram, only to spend the next two
+[SPEAKER_01]: weeks trying to get a response back
+regarding setting up the interview.
+[SPEAKER_01]: At the time of this recording,
+it appears I'm not going to be able to get
+[SPEAKER_01]: them on the podcast to answer some of the
+hard questions that many of you had
+[SPEAKER_01]: regarding their latest announcements.
+[SPEAKER_01]: I do think that the Reggie Gaudino podcast
+was timely in helping explain exactly what
+[SPEAKER_01]: the data can and can't be used for when
+you use a genomics lab.
+[SPEAKER_01]: I plan on releasing a video here in the
+next two weeks with a discussion on the
+[SPEAKER_01]: subject with Eleanor from Candor and
+Nelson from Poetry of Plants, as I think
+[SPEAKER_01]: this is a really important topic and has a
+lot of implications regarding the future
+[SPEAKER_01]: of cannabis breeding and cultivation.
+[SPEAKER_01]: On a similar thread, the Cultivation
+Classic is in Portland on May 17th and May
+[SPEAKER_01]: 18th.
+[SPEAKER_01]: I'm going to try and attend that Saturday.
+[SPEAKER_01]: It's a great event.
+[SPEAKER_01]: If you're concerned about the relationship
+to phylos, please go read their latest
+[SPEAKER_01]: statements on their Instagram page.
+[SPEAKER_01]: Their website is cultivationclassic.cc.
+[SPEAKER_01]: Check it out.
+[SPEAKER_01]: Now, my guest this week was really great
+in explaining to me some of the equations
+[SPEAKER_01]: and calculations around lighting and
+answering some questions I had about LEDs.
+[SPEAKER_01]: My guest this week is Rebecca Knight.
+[SPEAKER_01]: Rebecca is the senior application engineer
+at BIOS Lighting.
+[SPEAKER_01]: She is a research and development
+scientist with experience in a broad range
+[SPEAKER_01]: of fields, science, engineering,
+marketing, and business development.
+[SPEAKER_01]: She holds a PhD in plant biology from the
+University of Texas, a master's of science
+[SPEAKER_01]: in agriculture and biological engineering
+from Purdue, and chemical engineering and
+[SPEAKER_01]: Japanese undergraduate degrees.
+[SPEAKER_01]: She is passionate about vertical farming,
+horticultural LEDs, plant secondary
+[SPEAKER_01]: metallic pathway gene expression,
+and sustainable food production.
+[SPEAKER_01]: As the senior application engineer,
+she works closely with the sales team
+[SPEAKER_01]: using her photo biology research
+background and love of analytics to
+[SPEAKER_01]: provide integration and cultivation
+expertise.
+[SPEAKER_01]: Now on to the podcast.
+[SPEAKER_01]: Hey, Rebecca.
+[SPEAKER_01]: Thanks for coming on the show.
+[SPEAKER_00]: Hi, Tad.
+[SPEAKER_00]: Thanks for having me.
+[SPEAKER_00]: Yeah.
+[SPEAKER_01]: Let's start off by giving listeners a
+little bit of an idea of your background
+[SPEAKER_01]: and how you got into LED lighting.
+[SPEAKER_00]: Well, I've always been a very technical
+person.
+[SPEAKER_00]: I did my undergrad in chemical
+engineering.
+[SPEAKER_00]: And then after working for a few years in
+semiconductors, I decided to devote my
+[SPEAKER_00]: life to energy efficiency and went to
+Purdue to study agricultural engineering.
+[SPEAKER_00]: Where the thought was to really research
+how to best use biomass and bio waste for
+[SPEAKER_00]: fuel, fuel and also replacing
+petrochemical products.
+[SPEAKER_00]: And so in sort of a roundabout way,
+that led me into looking at microalgae.
+[SPEAKER_00]: And microalgae led me into deep diving
+into photosynthesis and what drives
+[SPEAKER_00]: different biochemical pathways in
+photosynthesis.
+[SPEAKER_00]: So for my PhD, I ended up at University of
+Texas.
+[SPEAKER_00]: Where I was researching a, it's a single
+cell organism, blue-green algae known as
+[SPEAKER_00]: Thermocynicococcus.
+[SPEAKER_00]: And it's a heat loving cyanobacteria that
+I used to really focus on what types of
+[SPEAKER_00]: environmental stimuli affect.
+[SPEAKER_00]: I was looking at the terpenoid pathway,
+but I was also looking at gene expression.
+[SPEAKER_00]: So the idea being that if I could control
+the environmental stimuli in such a way to
+[SPEAKER_00]: treat or trigger different biochemical
+pathways, I could generate hydrocarbons
+[SPEAKER_00]: that could then excrete and be captured
+and utilized in the petrochemical
+[SPEAKER_00]: industry.
+[SPEAKER_00]: So this led me to learning about,
+I needed to build my own photo
+[SPEAKER_00]: bioreactors.
+[SPEAKER_00]: And so to do so, and I also wanted to
+control over light wavelengths.
+[SPEAKER_00]: And so I got to do some soldering and I
+figured out how to build some LED panels.
+[SPEAKER_00]: And actually used an old Ticketmaster
+ticket printing machine as my photo
+[SPEAKER_00]: bioreactor shell.
+[SPEAKER_00]: And built the panels, built the,
+what's called a chemostat in order to,
+[SPEAKER_00]: I had control mechanisms to monitor and
+relay back the information from the growth
+[SPEAKER_00]: of the microalgae.
+[SPEAKER_00]: But I also took samples and changed the
+conditions.
+[SPEAKER_00]: I did perturbations with light temperature
+and pH.
+[SPEAKER_00]: And so all of this really led me to become
+really fond of LEDs and LED technology.
+[SPEAKER_00]: And also the effect that LEDs can have on
+photosynthesis and on secondary
+[SPEAKER_00]: metabolites.
+[SPEAKER_00]: And so this led to ending up in controlled
+environment agriculture, where I'm now
+[SPEAKER_00]: working with growers and looking at light.
+[SPEAKER_00]: And my title is Senior Application
+Engineer.
+[SPEAKER_00]: So I work with growers of bioslighting.
+[SPEAKER_00]: We help to optimize their growing
+situation.
+[SPEAKER_00]: I help with calculations and make sure
+that we're setting up the optimal lighting
+[SPEAKER_00]: condition for what they're trying to
+achieve, depending on developmental stage
+[SPEAKER_00]: and crop.
+[SPEAKER_00]: And so I've been with bioslighting for
+about two years.
+[SPEAKER_00]: And I've worked with other lighting
+companies as well.
+[SPEAKER_00]: And it's just a huge passion of mine,
+indoor farming, vertical growing.
+[SPEAKER_00]: Intelligent greenhouse systems.
+[SPEAKER_00]: It's all really exciting to me.
+[SPEAKER_00]: And so it's kind of an interesting way
+that I got into this, but it really has to
+[SPEAKER_00]: do with my desire to save energy,
+to look at the big picture, the process
+[SPEAKER_00]: engineering, but also more recently to
+understand the science behind light and
+[SPEAKER_00]: how light affects biochemical pathways.
+[SPEAKER_01]: Wow.
+[SPEAKER_01]: That is quite the background.
+[SPEAKER_01]: I would love to have you back on maybe to
+talk about microalgae at some point.
+[SPEAKER_01]: That's something that I've heard a lot
+about, but I haven't really done a lot of
+[SPEAKER_01]: research on.
+[SPEAKER_01]: But it seems like a fascinating topic and
+something that might have a lot of
+[SPEAKER_01]: applications in the horticulture industry.
+[SPEAKER_00]: I would love to.
+[SPEAKER_01]: Cool.
+[SPEAKER_01]: Well, let's dive into the lighting stuff
+then right now.
+[SPEAKER_01]: So let's talk a little bit.
+[SPEAKER_01]: One of the topics that you brought up that
+would be really good is determining if
+[SPEAKER_01]: LEDs are right for you and your grow.
+[SPEAKER_01]: So let's just start with the basics.
+[SPEAKER_01]: So what exactly is an LED?
+[SPEAKER_00]: So an LED is composed of semiconductor
+materials that are sandwiched together.
+[SPEAKER_00]: So a semiconductor, and so I like to
+imagine like a sandwich.
+[SPEAKER_00]: So each piece of bread would be a
+different piece of semiconductor.
+[SPEAKER_00]: And a semiconductor is, it's not a metal,
+so it doesn't have free ranging electrons
+[SPEAKER_00]: that can move around.
+[SPEAKER_00]: And it's not an insulator like plastic or
+styrofoam.
+[SPEAKER_00]: Whereas it doesn't have free electrons,
+it's somewhere in between.
+[SPEAKER_00]: So you take these two pieces of bread and
+you place them together.
+[SPEAKER_00]: And one piece has extra electrons added to
+it, and another piece has electrons
+[SPEAKER_00]: removed from it.
+[SPEAKER_00]: So when you put these together,
+what happens is some of them cross over
+[SPEAKER_00]: and it creates what's called a depletion
+region.
+[SPEAKER_00]: So it's like a place where it's sort of a
+barrier.
+[SPEAKER_00]: And so what happens is, when you apply
+voltage to that sandwich, what happens is
+[SPEAKER_00]: that depletion region shrinks.
+[SPEAKER_00]: So it's kind of like a check valve,
+a semiconductor, or I should say a diode
+[SPEAKER_00]: is what I'm referring to now.
+[SPEAKER_00]: A diode is like a check valve because it
+has that depletion region in between.
+[SPEAKER_00]: So when you apply voltage to that,
+what happens is the high energy electrons
+[SPEAKER_00]: that have been doped on the N side will
+jump over, well the depletion region
+[SPEAKER_00]: shrinks, and then they jump over to the
+side that's missing the electrons,
+[SPEAKER_00]: the P-doped side.
+[SPEAKER_00]: And based on a law called Planck's Law,
+that gap in energy releases energy in the
+[SPEAKER_00]: form of a photon.
+[SPEAKER_00]: And it has to do with the types of
+chemicals that have been doped in the two
+[SPEAKER_00]: pieces of bread, the two sides.
+[SPEAKER_00]: But essentially, material scientists and
+chemists have been able to figure out the
+[SPEAKER_00]: different chemicals to dope into these
+semiconductor materials such that we can
+[SPEAKER_00]: now make just about any color.
+[SPEAKER_00]: We can make just about any color of a
+photon come out of that band gap.
+[SPEAKER_00]: And so that's a really exciting thing.
+[SPEAKER_00]: It used to be, I think red was the first
+one it showed up on.
+[SPEAKER_00]: On our remote controls.
+[SPEAKER_00]: But now we can make just about any color
+in the visible spectrum and in non-visible
+[SPEAKER_00]: spectrum.
+[SPEAKER_00]: And so that's how it works.
+[SPEAKER_00]: And not all of these photon emissions are
+identical efficiencies.
+[SPEAKER_00]: So depending on the materials that are in
+the chip, they could be less efficient
+[SPEAKER_00]: than other ones.
+[SPEAKER_00]: But they are similar in that they form a
+band.
+[SPEAKER_00]: So they form kind of a peak that has a
+point at the top, which is the highest
+[SPEAKER_00]: intensity.
+[SPEAKER_00]: And it's typically very narrow band.
+[SPEAKER_00]: And so when you place different colors of
+these light emitting diodes on the same
+[SPEAKER_00]: board, you then get this accumulated
+effect of a light spectrum.
+[SPEAKER_00]: And there's also additional things people
+add to the secondary optics or primary or
+[SPEAKER_00]: secondary optics to change the angle that
+the photons are coming out of that are
+[SPEAKER_00]: released.
+[SPEAKER_00]: But also they will sometimes add coatings
+like phosphor, which will do things to
+[SPEAKER_00]: that narrow band peak, like level it off
+or kind of drop it to maybe lower energy
+[SPEAKER_00]: wavelengths.
+[SPEAKER_00]: So in the end, you have this ability to
+put together narrow peaks, but you also
+[SPEAKER_00]: can add chemistries to the optics in order
+to change how that light's emitted.
+[SPEAKER_00]: And you can basically come up with any
+spectrum you desire.
+[SPEAKER_00]: And some of the benefits of LEDs are
+they're very small.
+[SPEAKER_00]: They're much more efficient than legacy
+lighting technologies, which typically
+[SPEAKER_00]: have to go through gas discharge.
+[SPEAKER_00]: And they are used up faster.
+[SPEAKER_00]: The ignited energy is used up quickly.
+[SPEAKER_00]: So having this kind of solid state
+technology, it's very efficient.
+[SPEAKER_00]: The downside is it's expensive.
+[SPEAKER_00]: It's expensive to make semiconductors.
+[SPEAKER_00]: It's expensive to do the optics and to
+manufacture them.
+[SPEAKER_00]: So the prices are going down, but it's
+still a much more expensive option up
+[SPEAKER_00]: front than some legacy lighting.
+[SPEAKER_00]: So yeah, that's a general overview.
+[SPEAKER_01]: So when you're saying legacy lighting,
+what you're referring to is things like
+[SPEAKER_01]: high pressure sodium, metal halide,
+compact fluorescent lighting, those types
+[SPEAKER_01]: of lighting technologies?
+[SPEAKER_00]: Yes, that's correct.
+[SPEAKER_00]: And the way that those work is they have a
+gas which is ignited by an arc.
+[SPEAKER_00]: The arc has to come from a ballast,
+which creates a high voltage.
+[SPEAKER_00]: And then once that high voltage is set and
+the gas is ignited, in the case of high
+[SPEAKER_00]: pressure sodium, the mercury then turns
+into a vapor state and stays lit.
+[SPEAKER_00]: So one of the differences between LEDs and
+those types of fixtures is that they
+[SPEAKER_00]: require that ballast that can control the
+initial spark, but also the maintenance
+[SPEAKER_00]: energy required for the bulb to stay lit.
+[SPEAKER_00]: So that's another major difference between
+the legacy lighting and solid state
+[SPEAKER_00]: technology like LEDs.
+[SPEAKER_01]: Well, let's talk a little bit about
+efficiency then, because one of the things
+[SPEAKER_01]: that came to light recently for me was
+visiting a facility with a PAR meter.
+[SPEAKER_01]: And we'll talk a little bit more about
+these types of measurements, but they were
+[SPEAKER_01]: at 400 PPFD at Canopy thinking they were
+at a thousand because the bulbs in their
+[SPEAKER_01]: double-ended Gavitas hadn't been replaced
+in quite a while.
+[SPEAKER_01]: And so they didn't realize that this was
+going on, which is a pretty significant
+[SPEAKER_01]: drop in light intensity.
+[SPEAKER_01]: So how efficient are a lot of these LED
+lights in terms of maintaining a spectrum
+[SPEAKER_01]: in light intensity over time?
+[SPEAKER_00]: Well, that's a really great observation
+and example because one of the major
+[SPEAKER_00]: differences between LEDs and HPS and metal
+halide is that over time, the metal halide
+[SPEAKER_00]: and HPS, they tend to have a higher
+depreciation rate.
+[SPEAKER_00]: And so some of it has to do with the way
+in which they emit light because it's
+[SPEAKER_00]: burning through the gas that's inside the
+bulb and over time that depreciates,
+[SPEAKER_00]: but also there's other things.
+[SPEAKER_00]: So for instance, LEDs tend to be a little
+bit more anti-static.
+[SPEAKER_00]: So they tend to resist dust accumulation
+better than HPS or metal halide.
+[SPEAKER_00]: And you would be surprised how much dust
+and debris can actually drop light
+[SPEAKER_00]: emission from a fixture.
+[SPEAKER_00]: And so if you imagine putting your
+sunglasses in a grow room, the next day or
+[SPEAKER_00]: two days later, you're probably going to
+need to wipe them off before you wear
+[SPEAKER_00]: them.
+[SPEAKER_00]: And that's just because in the grow room,
+there's moisture and debris.
+[SPEAKER_00]: And so over time, you might not see that
+when you look at the lights directly,
+[SPEAKER_00]: but there's accumulation that's actually
+dropping your light output.
+[SPEAKER_00]: And there tends to be more of that with
+legacy lighting.
+[SPEAKER_00]: So you have both the drop in efficiency
+over time that's much faster than with
+[SPEAKER_00]: solid state technology, but you also have
+more dust accumulation.
+[SPEAKER_00]: And if you're not relamping and replacing
+the lamps fast enough, then it could
+[SPEAKER_00]: definitely impact your grow operation and
+your productivity.
+[SPEAKER_01]: So that makes a very good case for having
+a PAR meter in your growing facility or
+[SPEAKER_01]: having access to one.
+[SPEAKER_01]: But can we talk a little bit about what
+you're measuring when you use a PAR meter?
+[SPEAKER_00]: Sure.
+[SPEAKER_00]: It's definitely recommended to have a
+light meter that measures PAR.
+[SPEAKER_00]: And that's photosynthetically active
+radiation.
+[SPEAKER_00]: So you want to be able to measure how much
+light is within that range to,
+[SPEAKER_00]: as you mentioned, see how it's changing
+over time.
+[SPEAKER_00]: Also, confirm that you're getting uniform
+light onto the canopy and make sure that
+[SPEAKER_00]: you're getting the amount of light that
+you're expecting.
+[SPEAKER_00]: So I like to describe light.
+[SPEAKER_00]: I like to describe photons.
+[SPEAKER_00]: And it's a little bit, this is over my
+head because I'm not a physicist,
+[SPEAKER_00]: but light can be thought of as a particle,
+even though it doesn't technically have a
+[SPEAKER_00]: mass.
+[SPEAKER_00]: I like to think of it as a particle.
+[SPEAKER_00]: So I like to use the analogy of rain.
+[SPEAKER_00]: And when I talk about PPFD, which is the
+photosynthetic photon flux density,
+[SPEAKER_00]: it's like how many drops of rain you have
+in a square meter per second.
+[SPEAKER_00]: So in terms of PPFD, the units are the
+micromoles of photons per meter squared
+[SPEAKER_00]: per second.
+[SPEAKER_00]: And we use micromoles because you don't
+want to have to say one times 10 to the
+[SPEAKER_00]: sixth moles of photons.
+[SPEAKER_00]: Per meter squared per second.
+[SPEAKER_00]: And we use moles because it just so
+happens that that unit, which is 10,
+[SPEAKER_00]: oh boy, I believe it's 10 to the 23rd.
+[SPEAKER_00]: It's Avogadro's number.
+[SPEAKER_00]: That gives us nice values.
+[SPEAKER_00]: That brings down the numbers in the
+hundreds as opposed to way too big to use
+[SPEAKER_00]: on a daily basis.
+[SPEAKER_00]: So we use the unit micromoles as a way to
+shorten the number.
+[SPEAKER_00]: And so now we have nice ranges to work
+with.
+[SPEAKER_00]: 800 to 1,000 for bloom, for example,
+is a common range.
+[SPEAKER_00]: So for measuring that light, you
+definitely want to have a light meter that
+[SPEAKER_00]: can measure the number of particles that
+you're getting of those photons per meter
+[SPEAKER_00]: squared per second.
+[SPEAKER_01]: So we're using the PAR meter to not only
+look at light intensity, but also light
+[SPEAKER_01]: distribution.
+[SPEAKER_01]: So we can look at to make sure there's no,
+I mean, we call them hotspots with HPS
+[SPEAKER_01]: lighting back in the day.
+[SPEAKER_01]: I don't know if it's the same with LEDs.
+[SPEAKER_01]: But just determining that we have an even
+canopy of light across the entire,
+[SPEAKER_01]: I guess, the lighting space.
+[SPEAKER_00]: Absolutely.
+[SPEAKER_00]: You also can use your PAR meter to measure
+within the canopy.
+[SPEAKER_00]: It's amazing how quickly light is consumed
+in the first few centimeters of a canopy.
+[SPEAKER_00]: So you might just, out of curiosity,
+test to see how your light is penetrating
+[SPEAKER_00]: through the canopy.
+[SPEAKER_00]: You might want to make sure that you're
+adjusting your lights so that they hit
+[SPEAKER_00]: mostly onto the canopy and not wasted.
+[SPEAKER_00]: For example, if you have grow beds,
+you wouldn't want your grow light to hit
+[SPEAKER_00]: the walkways or the walls, for example.
+[SPEAKER_00]: So there's many reasons why you would want
+to have a light meter.
+[SPEAKER_00]: And if you would like, I can talk about
+how you can do basic calculations.
+[SPEAKER_00]: But then you could use your light meter to
+confirm light levels.
+[SPEAKER_01]: Yes, I would definitely like to go into
+that.
+[SPEAKER_01]: One question I had before we do is,
+how do I, as a consumer, determine
+[SPEAKER_01]: differences in LED technology?
+[SPEAKER_01]: Because if I go to a trade show nowadays,
+there's probably 10 different companies at
+[SPEAKER_01]: that trade show all selling LED lights.
+[SPEAKER_01]: And they range from purple spectrum to
+adjustable full spectrum to what people
+[SPEAKER_01]: are calling full spectrum lighting.
+[SPEAKER_01]: They range in size and intensity.
+[SPEAKER_01]: How do we make this an apples to apples
+comparison as a consumer?
+[SPEAKER_01]: What questions should we be asking of a
+lighting company when we're trying to
+[SPEAKER_01]: decide a pretty major expense for a
+facility?
+[SPEAKER_00]: Well, I think I have a unique background
+in that I studied photosynthesis in some
+[SPEAKER_00]: of the most basic microorganisms on Earth.
+[SPEAKER_00]: So cyanobacteria are essentially what
+became the chloroplast in the land plant.
+[SPEAKER_00]: So when I studied cyanobacteria,
+what I found was that the light,
+[SPEAKER_00]: the spectrum, it did matter whether it was
+red or blue or how much green I was using.
+[SPEAKER_00]: In my research, I did look at spectrum.
+[SPEAKER_00]: And it did have some differences on
+photosynthesis.
+[SPEAKER_00]: But one chart that I like to show in
+presentations that I think really
+[SPEAKER_00]: exemplifies how land plants have evolved
+is a chart that compares simple organisms
+[SPEAKER_00]: like cyanobacteria, and then later
+microalgae, and then later land plants.
+[SPEAKER_00]: And it shows how, as you go up in
+complexity, the light absorption of the
+[SPEAKER_00]: more complicated organisms, it broadens
+out.
+[SPEAKER_00]: And it makes sense that it broadens out to
+a more even spectrum because you now have
+[SPEAKER_00]: additional biomass that's reflecting and
+refracting light as the light travels
+[SPEAKER_00]: through the tissue to get to the
+photosynthetic centers which are inside
+[SPEAKER_00]: the chloroplast.
+[SPEAKER_00]: You also have more complicated antenna.
+[SPEAKER_00]: So you have a variety of pigments as
+accessory pigments that are helping the
+[SPEAKER_00]: light drop down into the photosystem.
+[SPEAKER_00]: And so from my research and from what I've
+seen in the literature, as you get into
+[SPEAKER_00]: land plants, you can get away with a broad
+spectrum.
+[SPEAKER_00]: And so I'm convinced that broad spectrum
+is the way to go, but it's not just from
+[SPEAKER_00]: the scientific literature.
+[SPEAKER_00]: It also is so much easier on humans.
+[SPEAKER_00]: It's so much easier for us to be able to
+observe plants, look at them, see them
+[SPEAKER_00]: when you have a broad spectrum than it is
+when you have just red and blue,
+[SPEAKER_00]: which is a very harsh light for people.
+[SPEAKER_00]: So I'm a big proponent of broad spectrum.
+[SPEAKER_00]: And then when it comes to additional
+lighting, there are light responses that
+[SPEAKER_00]: are not related to photosynthesis.
+[SPEAKER_00]: They're more related to developmental
+growth.
+[SPEAKER_00]: Those are photomorphogenic responses.
+[SPEAKER_00]: And certain light wavelengths will
+definitely trigger photoreceptors that are
+[SPEAKER_00]: involved in photomorphogenic responses.
+[SPEAKER_00]: However, it's really hard to make
+statements that, for example, a particular
+[SPEAKER_00]: user of UV light will definitely cause
+additional secondary metabolites A and B,
+[SPEAKER_00]: or profile changes to C and D,
+in a higher productivity.
+[SPEAKER_00]: Because oftentimes, treatments that cause
+stress also drop overall plant
+[SPEAKER_00]: productivity.
+[SPEAKER_00]: So it's a balance, just like with
+microalgae, it's a balance between
+[SPEAKER_00]: figuring out ways to get the cells or the
+plants to grow really, really strong and
+[SPEAKER_00]: then maybe trigger a particular type of
+biochemical response.
+[SPEAKER_00]: But there's so much complexity with life.
+[SPEAKER_00]: And there's so much complexity with even
+microalgae, even cyanobacteria,
+[SPEAKER_00]: that it's hard to give blanket statements
+on how particular wavelengths will affect
+[SPEAKER_00]: productivity and profiles of particular
+secondary metabolites.
+[SPEAKER_00]: So my suggestion, then, is go with a light
+that gives you good overall efficiency,
+[SPEAKER_00]: or efficacy, as they call it.
+[SPEAKER_00]: And go with one that's a broad spectrum,
+so it's easier on your eyes, but also it's
+[SPEAKER_00]: absolutely going to be utilized by land
+plants.
+[SPEAKER_00]: And look for companies that make good
+products.
+[SPEAKER_00]: So make sure that they've had outside
+testing.
+[SPEAKER_00]: Make sure they're accredited.
+[SPEAKER_00]: All of those things are really important.
+[SPEAKER_00]: Make sure they know what they're talking
+about when it comes to photobiology and
+[SPEAKER_00]: light.
+[SPEAKER_00]: And try to learn about the quality of the
+fixtures themselves.
+[SPEAKER_00]: Make sure that they're built strong and
+industrial strength.
+[SPEAKER_00]: Because you don't want to invest that much
+money in lights that will not last long.
+[SPEAKER_00]: It's a big investment.
+[SPEAKER_00]: So you want to make sure that you go with
+a company that you know makes a good
+[SPEAKER_00]: product.
+[SPEAKER_01]: Now, visually, can we see differences in
+full spectrum lighting?
+[SPEAKER_01]: I assume there is differences,
+slight differences at least, that may not
+[SPEAKER_01]: be visible by the human eye.
+[SPEAKER_01]: Is that accurate?
+[SPEAKER_00]: Oh, sure.
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: If one spectrum has a little bit more,
+if you look at a spectrum, you'll see it
+[SPEAKER_00]: ranges in nanometers.
+[SPEAKER_00]: And that's the width of the particle,
+the photon particle, and its movement
+[SPEAKER_00]: through space.
+[SPEAKER_00]: But as you look at that range,
+like 300 to 700, you can actually see
+[SPEAKER_00]: differences with your eye.
+[SPEAKER_00]: So if one company has a broad peak,
+more in the orange area, you'll see
+[SPEAKER_00]: slightly more orangish look in the room.
+[SPEAKER_00]: But as long as it's got a decent amount of
+green, maybe even in the yellows,
+[SPEAKER_00]: that will help significantly for plant
+visualization and making sure you can see
+[SPEAKER_00]: the plants.
+[SPEAKER_00]: In case there's any type of disease
+outbreak, you want to be able to look at
+[SPEAKER_00]: the plants.
+[SPEAKER_00]: If you have only blue and red,
+then it makes it very difficult.
+[SPEAKER_00]: The plants will look gray or black.
+[SPEAKER_00]: And it makes it hard to visualize them
+when you have your grow lights on.
+[SPEAKER_01]: Is it fair to say, then, that at this
+point in time, when comparing full
+[SPEAKER_01]: spectrum light, it's really that every LED
+company has a slightly different take on
+[SPEAKER_01]: what they feel like is optimal right now
+for plant growth?
+[SPEAKER_00]: I think so.
+[SPEAKER_00]: So my personal take is I want to save
+energy.
+[SPEAKER_00]: I want to get the biggest productivity
+from the plant with the least amount of
+[SPEAKER_00]: electricity going in.
+[SPEAKER_00]: So for me, it's not so much about whether
+the green broad peak is centered on 555 or
+[SPEAKER_00]: 556.
+[SPEAKER_00]: It's that we make a good product that
+lasts a long time, that gives a good broad
+[SPEAKER_00]: range of light so that the plants can grow
+most efficiently as possible.
+[SPEAKER_00]: So I think I can say that for my company
+stance as well.
+[SPEAKER_00]: But we're really about making a good,
+solid product that grows plants well.
+[SPEAKER_00]: And we're not really in the business of
+determining exactly which nanometer
+[SPEAKER_00]: wavelengths might affect one particular
+cultivar under one set of conditions.
+[SPEAKER_00]: We really want to make a good,
+solid light that lasts a long time but is
+[SPEAKER_00]: also efficient.
+[SPEAKER_00]: That's been our motivation and our aim.
+[SPEAKER_01]: Yeah, you alluded to a good point there,
+that there's a lot of variables going on
+[SPEAKER_01]: outside of lighting that all affect plant
+growth.
+[SPEAKER_01]: And it really is a culmination of all of
+these variables, whether it's soil or
+[SPEAKER_01]: nutrients or environmental conditions that
+will affect the plant's growth and even
+[SPEAKER_01]: the cultivar itself.
+[SPEAKER_01]: So from a lighting perspective,
+you're just trying to give what you guys
+[SPEAKER_01]: feel is optimal for a variety of
+conditions and environments.
+[SPEAKER_00]: Absolutely.
+[SPEAKER_00]: Yeah, the genotype has a huge part in it.
+[SPEAKER_00]: And there's so much we don't understand
+about gene expression and how all of these
+[SPEAKER_00]: millions of chemical reactions are
+connected.
+[SPEAKER_00]: So it's important for us as a lighting
+manufacturer to make a solid light that
+[SPEAKER_00]: provides a broad spectrum that we know
+plants can utilize.
+[SPEAKER_01]: OK, well, let's talk a little about these
+calculations that you mentioned.
+[SPEAKER_01]: So how do you calculate fixture efficacy?
+[SPEAKER_00]: So fixture efficacy is a great one to use
+when you're comparing different lighting
+[SPEAKER_00]: options.
+[SPEAKER_00]: So the way you would calculate that is you
+would divide the output of the light by
+[SPEAKER_00]: the amount of watts that go into it.
+[SPEAKER_00]: So the output of a grow light should be
+given in units of micromole per second.
+[SPEAKER_00]: So earlier, we talked about the PPFD.
+[SPEAKER_00]: And that's the micromoles of photons per
+meter squared per second.
+[SPEAKER_00]: Well, the light puts out a set amount of
+light.
+[SPEAKER_00]: And in the case of horticultural lighting,
+it's given in units of PPF, photosynthetic
+[SPEAKER_00]: photon flux, or micromoles per second.
+[SPEAKER_00]: So first red flag would be if the lighting
+company doesn't provide that information.
+[SPEAKER_00]: That should be on their spec sheets and
+their website.
+[SPEAKER_00]: That's measured by putting the light into
+a light collecting sphere.
+[SPEAKER_00]: And the sphere measures the absolute
+amount of light that comes off of that
+[SPEAKER_00]: fixture.
+[SPEAKER_00]: So you take that value, the micromoles per
+second, and you divide it by the amount of
+[SPEAKER_00]: watts that go into the light.
+[SPEAKER_00]: So all of this should be done second party
+testing.
+[SPEAKER_00]: But it never hurts to plug in your own
+watt meter.
+[SPEAKER_00]: Just confirm of the wattage if you're
+running calculations on fixtures that you
+[SPEAKER_00]: currently own.
+[SPEAKER_00]: So you can always just plug in a watt
+meter into the kilowatt is one brand I
+[SPEAKER_00]: like to use.
+[SPEAKER_00]: Plug it into the wall, and you get the
+actual amount of watts that are being used
+[SPEAKER_00]: by that device.
+[SPEAKER_00]: So in the case of LEDs, they range from
+the micromoles per second divided by the
+[SPEAKER_00]: watts, which is joules per second.
+[SPEAKER_00]: They range from around two to more recent
+LEDs are coming out in the almost up to
+[SPEAKER_00]: three micromoles per second divided by
+joules per second, which is micromoles per
+[SPEAKER_00]: joule.
+[SPEAKER_00]: So the efficacy is given in units of
+micromoles per joule.
+[SPEAKER_00]: And for HBS and metal halide, they tend to
+be lower just because of the nature of the
+[SPEAKER_00]: light.
+[SPEAKER_00]: But that's one way that you can compare
+between different lighting systems in
+[SPEAKER_00]: terms of their efficacy.
+[SPEAKER_00]: It's simply doing the light output divided
+by the watts in.
+[SPEAKER_01]: And I assume that difference there is put
+off in heat, essentially, because there's
+[SPEAKER_01]: no energy loss.
+[SPEAKER_01]: It's a basic law of thermodynamics,
+I assume.
+[SPEAKER_01]: So the difference there is coming off of
+the light somehow with the HBS.
+[SPEAKER_01]: Heat transfer as energy, is that right?
+[SPEAKER_00]: So to get the same amount of photons out,
+you need less wattage in for an LED light.
+[SPEAKER_00]: And so the difference is just how much
+difference you have on that conversion
+[SPEAKER_00]: from electrical energy into photon
+emission.
+[SPEAKER_01]: Sure.
+[SPEAKER_01]: I guess what I'm wondering, I'm not
+phrasing this very well.
+[SPEAKER_01]: So we have this set amount of energy
+coming into the light.
+[SPEAKER_01]: The measure of efficiency is how effective
+that light is at transferring that
+[SPEAKER_01]: electrical energy into photons.
+[SPEAKER_00]: Exactly.
+[SPEAKER_01]: Yep.
+[SPEAKER_01]: That's right.
+[SPEAKER_01]: So where is the extra energy going?
+[SPEAKER_01]: Is that what the heat is that's put off by
+more typically with HBS or metal halide
+[SPEAKER_01]: lights?
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: So it is.
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: The general answer would be, yes.
+[SPEAKER_00]: LEDs, they still do have micro levels of
+heat on the chip themselves.
+[SPEAKER_00]: But they also have, you'll see LEDs will
+either have passive or active cooling
+[SPEAKER_00]: because the boards and the electrical
+components generate some heat.
+[SPEAKER_00]: But yes, that's right.
+[SPEAKER_00]: The HBS and metal halide lights,
+they generate more heat because of the way
+[SPEAKER_00]: in which they're igniting the gas.
+[SPEAKER_00]: And there's a lot of wasted heat in that
+process of converting electricity into
+[SPEAKER_00]: photons.
+[SPEAKER_00]: That's right.
+[SPEAKER_01]: Now I've heard some growers talk more
+recently about heat coming off of the
+[SPEAKER_01]: light onto the leaf surface itself as a
+benefit for that plant versus controlling
+[SPEAKER_01]: it environmentally more through your HVAC
+system.
+[SPEAKER_01]: Have you seen any research on that showing
+that somehow this heat exchanger or heat
+[SPEAKER_01]: from the light itself along with the
+photons is somehow more beneficial than in
+[SPEAKER_01]: a controlled environment like that?
+[SPEAKER_00]: I've heard that as well.
+[SPEAKER_00]: But I haven't seen the research myself.
+[SPEAKER_00]: So I would love to learn more about it.
+[SPEAKER_00]: If more heat turns out to be the answer to
+certain cultivars and that is beneficial,
+[SPEAKER_00]: there are other ways to generate heat
+that's more efficient than the waste heat
+[SPEAKER_00]: from the HBS, for example.
+[SPEAKER_00]: So it still could be cost effective.
+[SPEAKER_00]: And it still could give you a return on
+investment if you considered switching to
+[SPEAKER_00]: LEDs.
+[SPEAKER_00]: Or doing LEDs instead of HBS and adding
+that heat in another way.
+[SPEAKER_00]: So I would say it's interesting.
+[SPEAKER_00]: I would love to see more data in the
+literature about that.
+[SPEAKER_00]: And sometimes I've heard it has to do the
+directionality of the heat.
+[SPEAKER_00]: And people are looking at different ways
+to add heat in certain areas of the plant.
+[SPEAKER_00]: But if it's in general, if it's just the
+heating of the plant of the room,
+[SPEAKER_00]: then I highly recommend using a more
+efficient LED light and then maintaining
+[SPEAKER_00]: that heat with HVAC.
+[SPEAKER_00]: It's much more efficient that way.
+[SPEAKER_01]: And that's another benefit of LEDs is in
+the sense that you can go with it's a
+[SPEAKER_01]: lower load on your HVAC system because
+there is less heat being generated.
+[SPEAKER_01]: Because typically you're battling heat in
+most systems, right?
+[SPEAKER_00]: Yes, absolutely.
+[SPEAKER_00]: So you save on the initial conversion
+process.
+[SPEAKER_00]: And then you also save on the HVAC as
+well.
+[SPEAKER_01]: Great.
+[SPEAKER_01]: So how do you calculate PPFD from photo
+period in DLI?
+[SPEAKER_00]: So in order to calculate the photon flux
+density, let's say that you know what the
+[SPEAKER_00]: DLI, the daily light integral is for the
+plant that you're growing.
+[SPEAKER_00]: And you know your photo period.
+[SPEAKER_00]: You can calculate what light intensity you
+would need for that.
+[SPEAKER_00]: That photo period.
+[SPEAKER_00]: So for example, let's just assume that the
+plant you're growing has a DLI.
+[SPEAKER_00]: And this is a very high daily light
+integral of 60 moles per meter squared per
+[SPEAKER_00]: day.
+[SPEAKER_00]: This is on the very high end.
+[SPEAKER_00]: But it turns out that plants have an
+optimal amount of light that they need to
+[SPEAKER_00]: receive in a day.
+[SPEAKER_00]: They can receive that light, of course,
+within boundaries.
+[SPEAKER_00]: But they can receive that light in a
+shorter time period at a more intense
+[SPEAKER_00]: PPFD.
+[SPEAKER_00]: Or they can receive it in a longer time
+period at a less intense PPFD.
+[SPEAKER_00]: So in order to calculate what your PPFD
+would be, if you know the DLI and you know
+[SPEAKER_00]: how long you're going to run the light,
+then there's a set PPFD that you're going
+[SPEAKER_00]: to target.
+[SPEAKER_00]: So to do the calculation, what you would
+do is you would take your DLI,
+[SPEAKER_00]: which is 60 moles, 60 moles per meter
+squared per day.
+[SPEAKER_00]: And I usually will just do the conversions
+as fractions.
+[SPEAKER_00]: And so you need to convert those units to
+end up with PPFD.
+[SPEAKER_00]: So to do so, you need to convert one day
+equals 18 hours, in your case,
+[SPEAKER_00]: because you're running it for 18 hours.
+[SPEAKER_00]: You convert one hour equals 3,600 seconds.
+[SPEAKER_00]: And then you would convert one mole is 1
+times 10 to the sixth micromoles.
+[SPEAKER_00]: So I'd be happy to draw this out or share
+this with the audience later, if you would
+[SPEAKER_00]: like.
+[SPEAKER_00]: But when you do these calculations,
+you end up with 60 times 1 times 10 to the
+[SPEAKER_00]: sixth, then divided by 18 times 3,600.
+[SPEAKER_00]: And you end up with 925.9 PPFD,
+or 925.9 micromoles per meter squared per
+[SPEAKER_00]: second.
+[SPEAKER_00]: So what that tells you is, if you are
+limited by a photo period of 18 hours,
+[SPEAKER_00]: and that's what you're going to be
+running, and you know that your plant
+[SPEAKER_00]: needs so much light, you know that it
+needs, in this case, 60 moles per meter
+[SPEAKER_00]: squared per day, you now know that that
+light intensity is going to need to be
+[SPEAKER_00]: 925.9 or so micromoles per meter squared
+per second.
+[SPEAKER_00]: And that's when you can take your light
+meter and make sure that your light is
+[SPEAKER_00]: coming out that bright.
+[SPEAKER_00]: Any less than that, and you're not
+utilizing the plant to its full capacity.
+[SPEAKER_00]: More than that, and you're stressing the
+plant.
+[SPEAKER_00]: And so the DLI has been determined for a
+variety of crops.
+[SPEAKER_00]: And you can find that information in AGRA
+extension papers.
+[SPEAKER_00]: Purdue, Cornell, different universities
+have published the DLI for different
+[SPEAKER_00]: plants.
+[SPEAKER_00]: And when you know the DLI, it really helps
+you to determine how to optimize your
+[SPEAKER_00]: light levels.
+[SPEAKER_00]: And definitely, you'll want the light
+meter to confirm those light levels.
+[SPEAKER_01]: Now, I saw a study.
+[SPEAKER_01]: Well, before I get into that, let me just
+say that we'll put some of this
+[SPEAKER_01]: information on the podcast page for people
+who want to look at those numbers a little
+[SPEAKER_01]: bit more.
+[SPEAKER_01]: I realize that was a lot of calculations.
+[SPEAKER_01]: So what I was wondering, though,
+in terms of DLI, I did see a trial by
+[SPEAKER_01]: Allison Justice, who I've had on the
+podcast, where she looked at light levels
+[SPEAKER_01]: of 800 PPFD, 1,000 PPFD, and 1,200 PPFD
+across a specific cultivar of cannabis and
+[SPEAKER_01]: found that this is a quick summary of the
+research.
+[SPEAKER_01]: Basically, that in terms of yield versus
+the amount of wattage or efficiency of
+[SPEAKER_01]: that yield, 1,000 was the most effective
+out of all.
+[SPEAKER_01]: And at 1,200, they got slightly more
+yield.
+[SPEAKER_01]: But the cost to receive that yield was
+higher in electricity that offset the cost
+[SPEAKER_01]: of the value of it.
+[SPEAKER_01]: So you're throwing out the number 925.
+[SPEAKER_01]: Is that sort of the DLI that you guys are
+using for cannabis right now?
+[SPEAKER_01]: Or do you have any research on what's
+optimal for cannabis?
+[SPEAKER_00]: Well, that number is based on an example
+calculation of 60 DLI with 18-hour light
+[SPEAKER_00]: cycles.
+[SPEAKER_00]: But we've seen a variety of grow
+conditions.
+[SPEAKER_00]: And we've seen, it depends on the
+developmental stage.
+[SPEAKER_00]: So yeah, we've seen a whole range.
+[SPEAKER_00]: Even with Bloom, we've seen ranging from
+350 to 1,200.
+[SPEAKER_00]: So I think a lot of that has to do with
+the grower and all the other parameters
+[SPEAKER_00]: you're using and how they all interact,
+the cultivar, all of that.
+[SPEAKER_00]: So we will help with providing ranges.
+[SPEAKER_00]: And we also help to specify out,
+for instance, greenhouses based on the
+[SPEAKER_00]: average amount of DLI that the greenhouse
+should receive based on the location and
+[SPEAKER_00]: how much additional lighting they would
+need to meet the basic requirements of the
+[SPEAKER_00]: plants that they're growing.
+[SPEAKER_00]: But in terms of what we recommend,
+it's a conversation we have with the
+[SPEAKER_00]: grower to find out how they've been
+growing.
+[SPEAKER_00]: And then it's also that combined with what
+we've seen.
+[SPEAKER_00]: So it's kind of a big range.
+[SPEAKER_00]: So I hate to give an exact number.
+[SPEAKER_00]: But I think earlier I'd mentioned a lot of
+people kind of use that range 800 to 1,000
+[SPEAKER_00]: for Bloom.
+[SPEAKER_01]: Yeah, that's fair.
+[SPEAKER_01]: I think it's important.
+[SPEAKER_01]: I mean, I was just thinking about this
+while you were talking.
+[SPEAKER_01]: Just the addition of supplementation of
+CO2 will affect that.
+[SPEAKER_01]: It will affect growth rates and I assume
+photosynthesis rates, meaning you could
+[SPEAKER_01]: run probably a higher PPFD in rooms that
+are controlled with the addition of CO2.
+[SPEAKER_01]: And proper nutrient management and
+fertigation would come into play.
+[SPEAKER_01]: VPD, which is something that I'm having
+someone on to cover here real soon that
+[SPEAKER_01]: I'm excited about to talk further into
+about VPD.
+[SPEAKER_01]: But yes, exactly.
+[SPEAKER_01]: Then all of these factors will help
+determine your DLI.
+[SPEAKER_01]: And maybe it's important at some level to
+do a little bit of experimentation in your
+[SPEAKER_01]: facility to determine what's optimal for
+your environmental conditions.
+[SPEAKER_00]: Yes, definitely.
+[SPEAKER_01]: Great.
+[SPEAKER_01]: So let's talk a little bit about
+determining ROI and what you're calling
+[SPEAKER_01]: TCO, which was a term I had never heard of
+before.
+[SPEAKER_00]: So TCO stands for total cost of ownership.
+[SPEAKER_00]: And ROI calculations, they can be very
+detailed and very complicated,
+[SPEAKER_00]: but they can also be sort of more general,
+back of the envelope type calculations
+[SPEAKER_00]: just to get started.
+[SPEAKER_00]: So I always recommend, since I'm an
+engineer at heart, I'm always looking for
+[SPEAKER_00]: the simplest model that helps me get what
+I need.
+[SPEAKER_00]: So I always recommend start with something
+pretty simple for your return on
+[SPEAKER_00]: investment calculations.
+[SPEAKER_00]: Just see where you are ballpark-wise.
+[SPEAKER_00]: That's kind of my strategy.
+[SPEAKER_00]: So when you're doing an ROI comparison
+with LEDs versus HPS, for example,
+[SPEAKER_00]: you're going to want to divide it up into
+a few different sections.
+[SPEAKER_00]: And ROI, just to remind everyone,
+is basically going to be the amount of
+[SPEAKER_00]: time it takes for the difference in
+upfront cost to equal the savings in
+[SPEAKER_00]: operation of the lights.
+[SPEAKER_00]: So when that ratio becomes identical,
+at that time point, that's going to be
+[SPEAKER_00]: when you've reached your return on
+investment.
+[SPEAKER_00]: Now, again, it can include a lot of
+additional items.
+[SPEAKER_00]: And you should, before you make a
+purchase, definitely go through and
+[SPEAKER_00]: consider all of the specifics of your
+operation.
+[SPEAKER_00]: To make sure that it's right for you.
+[SPEAKER_00]: But a really kind of general comparison
+would be something like, in order to match
+[SPEAKER_00]: light levels, you would look at how many
+lights are required for the LED versus how
+[SPEAKER_00]: many lights are required for the HPS in
+terms of identical light output.
+[SPEAKER_00]: And you would take that difference as the
+difference in upfront cost.
+[SPEAKER_00]: So now you have your upfront cost
+difference, your initial fixture cost
+[SPEAKER_00]: difference.
+[SPEAKER_00]: The second part of the equation,
+which is how much you're saving in
+[SPEAKER_00]: operational costs, can get complicated.
+[SPEAKER_00]: But some of the major items you'll need to
+take into account will be how much it
+[SPEAKER_00]: costs to light and cool those rooms.
+[SPEAKER_00]: And so for that, you would just take the
+amount of wattage that goes into the
+[SPEAKER_00]: number of fixtures that you're using.
+[SPEAKER_00]: And you would multiply that by how much
+you pay in electricity for both the HPS
+[SPEAKER_00]: system and also the LED light system.
+[SPEAKER_00]: For a really general kind of rule of thumb
+estimation on the HVAC, what we do is we
+[SPEAKER_00]: multiply the wattage by a third.
+[SPEAKER_00]: So it's a very general way to calculate
+how much cooling you will need.
+[SPEAKER_00]: But if you multiply the amount of total
+wattage by one third, it gives you a
+[SPEAKER_00]: general amount of energy or cost
+associated with cooling.
+[SPEAKER_00]: So obviously, the LED light system will be
+less wattage overall.
+[SPEAKER_00]: And so that number is going to be less.
+[SPEAKER_00]: Now, it might be more weighted on the LED
+light system because you do have less heat
+[SPEAKER_00]: coming out.
+[SPEAKER_00]: And then you need to consider what are the
+maintenance costs of the HPS system versus
+[SPEAKER_00]: the LED light system.
+[SPEAKER_00]: So typically, there's very little
+maintenance cost with LED lighting,
+[SPEAKER_00]: whereas with HPS, you need to calculate
+how much it costs to replace the bulbs and
+[SPEAKER_00]: how much the bulbs cost.
+[SPEAKER_00]: So in the end, you end up with a very
+simple calculation.
+[SPEAKER_00]: You end up with your operational cost per
+year or per month and whatever units you
+[SPEAKER_00]: decide to use.
+[SPEAKER_00]: And you can then determine how many months
+it takes for that savings and operational
+[SPEAKER_00]: cost to reach the difference in total
+initial cost.
+[SPEAKER_00]: That's how you would run an ROI.
+[SPEAKER_01]: Now, one factor in all of this as you were
+going through that list was that I like to
+[SPEAKER_01]: factor in is yield.
+[SPEAKER_01]: So the calculations you gave were assuming
+identical yields across HPS in this case.
+[SPEAKER_01]: Let's say double ended HPS versus LEDs.
+[SPEAKER_01]: I've seen some research that shows high
+quality LEDs can out yield double ended
+[SPEAKER_01]: HPS.
+[SPEAKER_01]: But what are you seeing in the field on
+this?
+[SPEAKER_00]: So I'm seeing some research that LED can
+can outperform HPS.
+[SPEAKER_00]: But I'm also seeing research HPS
+outperforms LED.
+[SPEAKER_00]: So from my perspective, it's about light.
+[SPEAKER_00]: It's about a broad spectrum.
+[SPEAKER_00]: And if you're switching from HPS to LED,
+there's definitely going to be
+[SPEAKER_00]: environmental changes that can make that
+switch difficult.
+[SPEAKER_00]: So a lot of aspects of those plants will
+have to adapt.
+[SPEAKER_00]: They may have been selected under HPS for
+many generations.
+[SPEAKER_00]: So they've almost adapted to HPS spectrum.
+[SPEAKER_00]: So there's a lot that the plants might
+have to adapt to when you switch.
+[SPEAKER_00]: So it might seem like switching to a broad
+spectrum is worse for the plants,
+[SPEAKER_00]: for a grower that's used to HPS.
+[SPEAKER_00]: But from a scientific standpoint,
+photons are photons.
+[SPEAKER_00]: They come into the system.
+[SPEAKER_00]: They get funneled into one particular
+wavelength, which drives the splitting of
+[SPEAKER_00]: water.
+[SPEAKER_00]: And plants can absorb such a wide range.
+[SPEAKER_00]: So I think it's tough to say one way or
+the other.
+[SPEAKER_00]: I like to just compare photons to photons.
+[SPEAKER_00]: So if you know how much light comes out,
+what the total output is of an HPS system,
+[SPEAKER_00]: and you're doing a comparison,
+do an equal apples to apples comparison.
+[SPEAKER_00]: Of photons in both systems, and figure out
+what would be the ROI when you compare in
+[SPEAKER_00]: that way.
+[SPEAKER_00]: That's been my experience, and that's sort
+of my view of it.
+[SPEAKER_00]: Now, I know a lot of growers will prefer
+one or the other.
+[SPEAKER_00]: They prefer maybe HPS over LEDs.
+[SPEAKER_00]: And that's OK.
+[SPEAKER_00]: But there's ways to, if you wanted to save
+energy, you could even look into
+[SPEAKER_00]: checkerboarding or replacing half of your
+HPS with LEDs, for example, especially if
+[SPEAKER_00]: you're offered an incentive that would
+make that cost effective.
+[SPEAKER_00]: So there's ways to switch that aren't just
+a complete jump from HPS to LED.
+[SPEAKER_00]: But it's tough to say.
+[SPEAKER_00]: I've seen studies and papers and case
+studies of my papers in both ways.
+[SPEAKER_00]: So I think it just a lot depends on the
+other environmental parameters,
+[SPEAKER_00]: the genetics, and also maybe those plants
+have been adapted to HPS for so long that
+[SPEAKER_00]: it's going to take a few cycles for the
+plants to adapt, but the growers to also
+[SPEAKER_00]: adapt the environmental conditions.
+[SPEAKER_01]: Let's talk about that for a little bit.
+[SPEAKER_01]: That transition, I think, is really
+challenging.
+[SPEAKER_01]: It's something I was talking about
+recently with just Jennifer from your
+[SPEAKER_01]: company.
+[SPEAKER_01]: So when I'm working with someone who has
+double-ended HPS and has been using it for
+[SPEAKER_01]: a long time, and they want to integrate in
+some of these LED solutions, how does that
+[SPEAKER_01]: work?
+[SPEAKER_01]: I know you have to dial back the lights.
+[SPEAKER_01]: I recently visited a facility that had,
+I kid you not, they told me it was over
+[SPEAKER_01]: $400,000 in LED lights that were just
+turned off.
+[SPEAKER_01]: They were all wired in, but they didn't
+know how to use them, and they had another
+[SPEAKER_01]: lighting guy come in and tell them,
+oh, man, your PPFD levels are way too low.
+[SPEAKER_01]: Turn on these LED lights.
+[SPEAKER_01]: Because they had single-ended fixtures
+that they're running in that facility,
+[SPEAKER_01]: single-ended HPS that they've been
+running, and their PPFD levels were quite
+[SPEAKER_01]: low.
+[SPEAKER_01]: And so this lighting guy told them to just
+turn on all the LED lights.
+[SPEAKER_01]: And so they did and absolutely fried their
+plants.
+[SPEAKER_01]: And I walked in.
+[SPEAKER_01]: I was like, yeah, I've heard that you
+cannot transition rapidly from plants that
+[SPEAKER_01]: are used to HPS light to a
+higher-intensity LED light.
+[SPEAKER_01]: You have to really work it up slowly so
+the plants can adjust.
+[SPEAKER_01]: So I guess my question is, what's best
+practice right now for making that
+[SPEAKER_01]: transition?
+[SPEAKER_01]: Does it need to be done during the
+vegetative cycle?
+[SPEAKER_01]: How long do the plants need to be at a
+lower light intensity?
+[SPEAKER_01]: What should we be aiming for for PAR
+levels when we're trying to switch plants
+[SPEAKER_01]: over?
+[SPEAKER_01]: And then you mentioned it might take a
+couple cycles.
+[SPEAKER_01]: What's a general range of time it takes
+for plants to really start to thrive under
+[SPEAKER_01]: a different lighting spectrum?
+[SPEAKER_00]: Well, definitely, you don't want to shock
+the plants when it comes to the DLI,
+[SPEAKER_00]: so how much light the plants are getting,
+but also the intensity.
+[SPEAKER_00]: So I'll give you one example of a time
+when plants can get really shocked.
+[SPEAKER_00]: And that is when they go from veg to
+flower.
+[SPEAKER_00]: When they're going from veg to flower,
+they're dropping their photo period.
+[SPEAKER_00]: And that drop in photo period,
+but then oftentimes, the DLI for flower is
+[SPEAKER_00]: higher.
+[SPEAKER_00]: And so the grower will want to increase
+the PPFD in order to match the DLI with a
+[SPEAKER_00]: shorter photo period.
+[SPEAKER_00]: So it could be a pretty big shock to the
+plants.
+[SPEAKER_00]: So what we're seeing is a lot of growers
+these days, when they've switched to LED,
+[SPEAKER_00]: they're taking care in that initial
+transition stage between flower and bloom
+[SPEAKER_00]: to make sure that the plants aren't being
+shocked with a higher intensity light for
+[SPEAKER_00]: a shorter period.
+[SPEAKER_00]: So you can do that by running the light at
+a lower intensity over slightly ramping
+[SPEAKER_00]: up.
+[SPEAKER_00]: Also, we're seeing in a large operations,
+even with LEDs, you'll have a heat load
+[SPEAKER_00]: when the lights come on and off.
+[SPEAKER_00]: And so for those periods, sometimes too,
+the growers are ramping up in intensity so
+[SPEAKER_00]: that the light period isn't just straight
+on, but it kind of ramps up in order for
+[SPEAKER_00]: HVAC to not have to be shocked.
+[SPEAKER_00]: And so those are some trends that I'm
+seeing these days.
+[SPEAKER_00]: In terms of switching from HPS to LED,
+we have growers that just completely make
+[SPEAKER_00]: the switch all across the board and do
+just fine.
+[SPEAKER_00]: We have growers that will switch one room.
+[SPEAKER_00]: We know growers that switch half a room.
+[SPEAKER_00]: And some of them or some will do
+checkerboarding.
+[SPEAKER_00]: But it's kind of all over the place.
+[SPEAKER_00]: If a grower is not used to growing with
+LEDs, then I would say do one room or a
+[SPEAKER_00]: portion of the room.
+[SPEAKER_00]: And just to feel more comfortable,
+see how it goes.
+[SPEAKER_00]: And always measure light levels to make
+sure that you're providing the same amount
+[SPEAKER_00]: of light, because you just want to
+minimize the shock to the plants.
+[SPEAKER_00]: So definitely, it sounds like the plants
+that were in that environment that you
+[SPEAKER_00]: observed, they got pretty shocked.
+[SPEAKER_00]: They didn't have time to alter their
+biochemistry.
+[SPEAKER_00]: Plants, just like when we go through a
+process, when we injure ourselves,
+[SPEAKER_00]: it takes a while to heal or for things to
+work out.
+[SPEAKER_00]: Plants have to adjust the number of
+chloroplasts or the orientation of certain
+[SPEAKER_00]: organelles within the chloroplast.
+[SPEAKER_00]: So all of these things can take time.
+[SPEAKER_00]: And if you change conditions rapidly,
+sometimes the plants can't catch up.
+[SPEAKER_00]: And instead, that extra energy can be
+damaging.
+[SPEAKER_01]: Yeah.
+[SPEAKER_01]: So do you have a recommendation,
+then?
+[SPEAKER_01]: How long does it take a plant to adjust
+its cuticle layer, the amount of
+[SPEAKER_01]: chloroplast that it has, all of these
+things?
+[SPEAKER_01]: So what would be a good general guideline?
+[SPEAKER_01]: And I realize this is very general.
+[SPEAKER_01]: But if I were to be adding some LED lights
+in a room to plants that had been used to
+[SPEAKER_01]: being grown under HPS, should I aim for
+turning down the light to 50% of what it
+[SPEAKER_01]: normally is for a few days?
+[SPEAKER_01]: And then I can go up 10% every few days?
+[SPEAKER_01]: Or what's a good range for growers to aim
+for if they're starting out?
+[SPEAKER_00]: Well, I can only really speak to what I
+would do.
+[SPEAKER_00]: And since I live in Texas, I don't have my
+own grow operation.
+[SPEAKER_00]: Not yet.
+[SPEAKER_00]: But what I would do is I would start off
+for the transition from veg to flour,
+[SPEAKER_00]: I would start off at 50%.
+[SPEAKER_00]: And then I would probably ramp it up
+within that first week.
+[SPEAKER_00]: But it takes close observation.
+[SPEAKER_00]: You really want to watch your plants and
+see how they're doing.
+[SPEAKER_00]: If that works just fine, maybe the next
+cycle I would ramp it up a little bit
+[SPEAKER_00]: faster.
+[SPEAKER_00]: But yeah, it's harder for a plant that's
+been damaged to recover.
+[SPEAKER_00]: So you want to try to minimize photo
+damage and maybe aim on the slower ramp if
+[SPEAKER_00]: possible.
+[SPEAKER_01]: Are there signs that the plant is
+receiving less light than it should be?
+[SPEAKER_01]: What do you typically see?
+[SPEAKER_01]: I know stretching is something that people
+talk about, where you have a greater
+[SPEAKER_01]: distance there.
+[SPEAKER_01]: Sorry, inner node distance is what I'm
+referring to.
+[SPEAKER_01]: But what do you see for signs of less than
+optimal light levels?
+[SPEAKER_01]: It's very obvious when you put too high of
+light intensity on a plant.
+[SPEAKER_00]: That's right.
+[SPEAKER_00]: It's harder to measure the other way.
+[SPEAKER_00]: So the way in which DLIs are generated is
+they're figured out based on optimal light
+levels.
+[SPEAKER_00]: They're determined by biomass
+productivity.
+[SPEAKER_00]: So at the end of the cycle or at the end
+of the day, the plant is weighed and
+[SPEAKER_00]: determined to know whether or not it grew
+more or less.
+[SPEAKER_00]: And if it grew less at the lower level,
+then it means that the higher level is
+[SPEAKER_00]: better.
+[SPEAKER_00]: So besides, as you mentioned, stretching
+and inner node distance, in terms of DLI
+[SPEAKER_00]: calculations, and the papers that I refer
+to from Agri Extension, they typically
+[SPEAKER_00]: provide the methods they use to calculate
+DLI for different plants.
+[SPEAKER_00]: And usually it's leafy greens or vine
+crops, but they'll explain how they did
+[SPEAKER_00]: the measurement.
+[SPEAKER_00]: So you can see and do those measurements
+yourself to determine the optimal DLI for
+[SPEAKER_00]: your particular cultivar.
+[SPEAKER_00]: But yeah, I think you're correct.
+[SPEAKER_00]: It's hard to know when you're not
+providing enough light.
+[SPEAKER_00]: And keep in mind all the other parameters
+that can be interacting as well.
+[SPEAKER_00]: If those are not ideal or if there's too
+much of something else, that could also
+[SPEAKER_00]: make the plants more sensitized to light.
+[SPEAKER_00]: So you have to really look closely and
+watch your plants and learn through
+[SPEAKER_00]: repetition.
+[SPEAKER_00]: And trial and close observation.
+[SPEAKER_01]: So what are you seeing in terms of the
+future of LED lighting and lighting
+[SPEAKER_01]: spectrum?
+[SPEAKER_01]: It seems like lighting spectrum is sort of
+the next big, I don't know, the great west
+[SPEAKER_01]: of where technology is headed.
+[SPEAKER_01]: I guess what are you seeing from growers
+and research facilities on LED lighting in
+[SPEAKER_01]: terms of far red or increasing blue light?
+[SPEAKER_01]: Blue or green light in a room?
+[SPEAKER_00]: So I might be unpopular when I say that
+for overall plant growth, I think the
+[SPEAKER_00]: industry is doing a good job with
+different broad spectrum lighting options.
+[SPEAKER_00]: So I think we're already doing great on
+the overall plant growth photosynthesis
+[SPEAKER_00]: side.
+[SPEAKER_00]: For the production of secondary
+metabolites, maybe changing profile or
+[SPEAKER_00]: increasing biochemistry or flux down one
+pathway or another, there could be
+[SPEAKER_00]: definite responses to certain wavelengths
+of light.
+[SPEAKER_00]: But those could take years to determine.
+[SPEAKER_00]: It will be very much based on the gene
+expression of that plant.
+[SPEAKER_00]: And I know just from my own research that
+oftentimes changing the environmental
+[SPEAKER_00]: stimuli in order to drive the production
+of one compound or another, it oftentimes
+[SPEAKER_00]: has a detrimental effect on the overall
+productivity of that organism,
+[SPEAKER_00]: or it can result in shorter life spans.
+[SPEAKER_00]: So I think it's going to be looking at the
+big picture, and it's going to be a lot of
+[SPEAKER_00]: experimentation.
+[SPEAKER_00]: And I would love to see a lot more genetic
+fingerprinting and understanding more
+[SPEAKER_00]: about how cannabis plants, how their gene
+expression works.
+[SPEAKER_00]: I think there's research now just starting
+to be done on that.
+[SPEAKER_00]: So I think it's going to take a while
+before we figure out some general rules
+[SPEAKER_00]: when it comes to particular wavelengths of
+light and how that might affect profiles
+[SPEAKER_00]: of different compounds.
+[SPEAKER_00]: But in the meantime, I would say please
+experiment.
+[SPEAKER_00]: Try things.
+[SPEAKER_00]: We're not seeing ourselves.
+[SPEAKER_00]: We're not seeing a significant amount of
+rigorous research.
+[SPEAKER_00]: Or literature suggesting that certain UV
+wavelengths are producing a large amount
+[SPEAKER_00]: of cannabinoids, for example.
+[SPEAKER_00]: Same thing with infrared.
+[SPEAKER_00]: But that doesn't mean it's not true or
+it's not out there.
+[SPEAKER_00]: I'm always wanting to find that kind of
+research.
+[SPEAKER_00]: So definitely, if you can, publish your
+results.
+[SPEAKER_00]: Teach the world about this amazing
+research.
+[SPEAKER_00]: I think that would be incredible.
+[SPEAKER_00]: But for now, I think we're, as a company,
+as a lighting manufacturer, we're really
+[SPEAKER_00]: focused on helping customers get the most
+out of the lighting.
+[SPEAKER_00]: And for us, that means giving them a solid
+fixture that has good efficiency and is
+[SPEAKER_00]: durable.
+[SPEAKER_00]: And also making sure that they use the
+appropriate amount of light, that they're
+[SPEAKER_00]: not getting too many fixtures for their
+operation.
+[SPEAKER_00]: But they're also not too little in terms
+of light levels.
+[SPEAKER_00]: At this point, I'm not in the area of
+researching specific wavelengths.
+[SPEAKER_00]: So I can't speak to it.
+[SPEAKER_00]: But I am on the lookout.
+[SPEAKER_00]: And I hope that we can get something out
+there soon in the scientific community and
+[SPEAKER_00]: the grower community that helps us know
+maybe where we should be going as a
+[SPEAKER_00]: lighting manufacturer.
+[SPEAKER_00]: One more thing I want to point out,
+too, is on the UV side, I've looked into
+[SPEAKER_00]: UV for LEDs for quite a while.
+[SPEAKER_00]: And the reason is because as many growers,
+I want to try it.
+[SPEAKER_00]: I want to see how it might work and
+experiment with it.
+[SPEAKER_00]: The challenge for LEDs, however,
+is, as I was talking earlier about solid
+[SPEAKER_00]: state technology and how light's emitted
+from the diode, the chips that can emit
+[SPEAKER_00]: light in the UV range are not very
+efficient from a solid state standpoint.
+[SPEAKER_00]: And not only that, but the wavelengths
+that are emitted are very powerful.
+[SPEAKER_00]: And so the primary and secondary optics
+that are required for LED chips that are
+[SPEAKER_00]: in the UV range need to be very strong
+material, sometimes like quartz and other
+materials.
+[SPEAKER_00]: Other types of really strong material.
+[SPEAKER_00]: Otherwise, they'll become brittle or
+you'll have really fast depreciation in
+[SPEAKER_00]: light.
+[SPEAKER_00]: And so even if UV is something you want to
+do, from an experimental standpoint,
+[SPEAKER_00]: it makes sense to do LEDs.
+[SPEAKER_00]: But I just don't see it as an option that
+would make sense at this point to do UV
+[SPEAKER_00]: LEDs.
+[SPEAKER_00]: I just think the technology is not quite
+there.
+[SPEAKER_00]: And there are other ways to get UV,
+like lizard lamps and so on.
+[SPEAKER_00]: So I think if somebody wanted to
+experiment UV and find stuff that's
+[SPEAKER_00]: amazing, or maybe if they want to
+experiment, we could always make a UV LED
+[SPEAKER_00]: for experimental purposes.
+[SPEAKER_00]: But for commercial reasons, we've chosen
+to stick with a really solid wide spectrum
+[SPEAKER_00]: for our fixtures.
+[SPEAKER_01]: Well, let's talk a little bit about your
+company now.
+[SPEAKER_01]: We haven't talked about BIOS really at
+all.
+[SPEAKER_01]: Can you tell me a little bit about what
+BIOS is and the types of light that you
+[SPEAKER_01]: guys make?
+[SPEAKER_00]: Sure.
+[SPEAKER_00]: So BIOS Lighting, its headquarters are in
+Melbourne, Florida.
+[SPEAKER_00]: And that's because several of the founders
+are from NASA.
+[SPEAKER_00]: And Neil Yorio is probably our best known
+NASA scientist.
+[SPEAKER_00]: He was there for over 20 years doing
+photobiology research.
+[SPEAKER_00]: For deep space habitation.
+[SPEAKER_00]: And he's very well known in the industry,
+in the controlled environment ag industry.
+[SPEAKER_00]: So Neil is there in Melbourne,
+Florida.
+[SPEAKER_00]: And we also have a team of agricultural
+engineers and scientists there as well.
+[SPEAKER_00]: I'm located in Austin, Texas.
+[SPEAKER_00]: And we have salespeople around the
+country.
+[SPEAKER_00]: So some of the things that make us
+different than some of the other LED
+[SPEAKER_00]: lighting companies are, we, from the get
+go, we decided to cover the lights.
+[SPEAKER_00]: So we use a shadow proof glass to cover
+our lights, which makes them a bit
+[SPEAKER_00]: heavier.
+[SPEAKER_00]: And it also, it drops the efficacy a
+little bit from the get go because we have
+[SPEAKER_00]: that cover.
+[SPEAKER_00]: But we decided to do it because we're all
+kind of nerdy.
+[SPEAKER_00]: We're all very engineering minded.
+[SPEAKER_00]: And we wanted a product that lasts.
+[SPEAKER_00]: We wanted something that we could be
+really proud about that was durable,
+[SPEAKER_00]: commercial grade, strong.
+[SPEAKER_00]: And so we decided early on to make that
+product development decision that all of
+[SPEAKER_00]: our lights are covered.
+[SPEAKER_00]: So that makes us different.
+[SPEAKER_00]: And it's a little bit of a harder sell
+because it forces us to have a little bit
+[SPEAKER_00]: of a lower efficacy.
+[SPEAKER_00]: But we're still up there and we have a lot
+of fantastic customers all across North
+[SPEAKER_00]: America.
+[SPEAKER_00]: We have several fixtures that range from a
+very thin panel that goes into a vertical
+[SPEAKER_00]: racking system, which we call the Icarus
+VI.
+[SPEAKER_00]: And all of our fixtures are no tools
+required.
+[SPEAKER_00]: They just go right in.
+[SPEAKER_00]: This one has a bracket that slides right
+into a pallet racking.
+[SPEAKER_00]: And it's easy to clean and keep,
+it's got great ingress protection.
+[SPEAKER_00]: The glass I should mention, not only does
+it protect the electronics and make
+[SPEAKER_00]: waterproof, but it also, allows you to
+clean the light.
+[SPEAKER_00]: So sometimes if you, I mentioned earlier
+about light degradation and if you can't
+[SPEAKER_00]: wipe the LEDs, if they're in a potting
+material or they're in some kind of
+[SPEAKER_00]: extruded plastic, you can't actually clean
+the LEDs off.
+[SPEAKER_00]: It's hard to wipe them down.
+[SPEAKER_00]: So by having this glass surface,
+all of our lights are easily cleaned so
+[SPEAKER_00]: that you can maintain the full light
+output that when you first opened it up.
+[SPEAKER_00]: So we have light, we have fixtures that go
+over open bed, one's called the Icarus
+[SPEAKER_00]: GI2.
+[SPEAKER_00]: And by the way, we're engineers.
+[SPEAKER_00]: So we, all of them are called Icarus.
+[SPEAKER_00]: We haven't thought of a new name yet,
+but we also have greenhouse light called
+[SPEAKER_00]: the Icarus TI.
+[SPEAKER_00]: And that's a linear design.
+[SPEAKER_00]: And what's unique about that is we
+incorporated a heat pipe.
+[SPEAKER_00]: It's like a mini distillation column along
+the side of the fixture, which is an
+[SPEAKER_00]: encapsulated low chain alcohol,
+continuously condensing and re-evaporating
+[SPEAKER_00]: to allow for like really amazing heat
+exchange without any moving parts.
+[SPEAKER_00]: So we're able to have one of the brightest
+greenhouse fixtures on the market,
+[SPEAKER_00]: but you can touch it.
+[SPEAKER_00]: So that's pretty amazing.
+[SPEAKER_00]: And then we have, we have bars that we
+call the Icarus LI and those are daisy
+[SPEAKER_00]: chain.
+[SPEAKER_00]: So they're all sellable.
+[SPEAKER_00]: They're selling like hotcakes.
+[SPEAKER_00]: I mean, we can't keep up, it seems like,
+but we're doing great.
+[SPEAKER_00]: But the LI are really popular in all types
+of applications, a lot of vertical
+[SPEAKER_00]: farming.
+[SPEAKER_00]: Sometimes people are putting them,
+they're changing the orientation for inter
+[SPEAKER_00]: canopy lighting.
+[SPEAKER_00]: We're using them in between towers.
+[SPEAKER_00]: All types of stuff can be done.
+[SPEAKER_00]: They're very lightweight and cost
+effective.
+[SPEAKER_00]: And so those are a lot of fun.
+[SPEAKER_00]: And so as a company, we're just very
+focused on engineering.
+[SPEAKER_00]: And a lot of us have PhDs in either
+engineering or science or both.
+[SPEAKER_00]: And it's just a great company to work for.
+[SPEAKER_00]: I love it.
+[SPEAKER_00]: It's really fun for me every day.
+[SPEAKER_00]: And although I work out of Austin,
+Texas, I'm constantly working with my team
+[SPEAKER_00]: all across the country and we go to a lot
+of shows.
+[SPEAKER_00]: So definitely look for us at different
+events.
+[SPEAKER_00]: And yeah, we've sort of played on the fact
+that we're a little nerdy because we
+[SPEAKER_00]: didn't do so great on marketing for a few
+years.
+[SPEAKER_00]: We were really behind on the marketing.
+[SPEAKER_00]: And so we finally just owned up to it.
+[SPEAKER_00]: And we have an ad in the Cannabis Business
+Times where I think the title says,
+[SPEAKER_00]: we're not cool.
+[SPEAKER_00]: And it really is us.
+[SPEAKER_00]: It's just us being us.
+[SPEAKER_00]: We're not flashy.
+[SPEAKER_00]: We're not really slick in that way,
+but we make a really good product.
+[SPEAKER_01]: Yeah, I love the NASA connection.
+[SPEAKER_01]: I've just always had a fascination with
+NASA since I was a child.
+[SPEAKER_01]: And so I think that's really cool.
+[SPEAKER_01]: And then I love the idea that you can
+clean your lights.
+[SPEAKER_01]: People are spraying stuff in rooms and
+some of that material goes up.
+[SPEAKER_01]: And being able to keep your light fixtures
+clean at maximum efficiency is,
+[SPEAKER_01]: I think, really a huge feature,
+being waterproof like that.
+[SPEAKER_01]: And I want to mention that we are setting
+up a trial right now at Goldleaf Gardens
+[SPEAKER_01]: with my good friends Nate and Ben over
+there.
+[SPEAKER_01]: So we'll have some more data coming out
+about these lights here soon that we hope
+[SPEAKER_01]: to share.
+[SPEAKER_01]: And Rebecca is working with us on setting
+that trial up.
+[SPEAKER_01]: So I'm excited for that.
+[SPEAKER_01]: I need to add bios to our website.
+[SPEAKER_01]: I haven't done that yet.
+[SPEAKER_01]: But we are working with them too on some
+custom lighting solutions along with
+[SPEAKER_01]: Fluence.
+[SPEAKER_01]: And then when we talked about PAR meters,
+we do have the Sun System PAR meter on our
+[SPEAKER_01]: website.
+[SPEAKER_01]: I know that has some Apogee components.
+[SPEAKER_01]: But when we talk about top of the line PAR
+meters or light meters, Apogee is the name
+[SPEAKER_01]: that I keep hearing.
+[SPEAKER_01]: And I'll be adding them to the website too
+as a possibility.
+[SPEAKER_01]: But those are all what I've found from my
+research to be really good companies.
+[SPEAKER_01]: And I've heard great things about bios
+over the years from growers who are using
+[SPEAKER_01]: it.
+[SPEAKER_01]: And we've set up a few facilities with
+your lights too.
+[SPEAKER_01]: So was there anything else you wanted to
+add before we sign off for the day?
+[SPEAKER_01]: I really appreciate you sort of explaining
+some of this LED stuff to us.
+[SPEAKER_00]: It's been my pleasure.
+[SPEAKER_00]: I love talking about this.
+[SPEAKER_00]: And I've been putting material on the
+website.
+[SPEAKER_00]: So if you want to find more, we have it on
+our website, which is bioslighting.com.
+[SPEAKER_00]: But also, I encourage anyone, they can
+reach out to me and email me if they have
+[SPEAKER_00]: questions or want to learn more about the
+company or have a particular application
+[SPEAKER_00]: question.
+[SPEAKER_00]: And so my email is my first initial last
+name, R-K-N-I-G-H-T at bioslighting.com.
+[SPEAKER_00]: So we're more than happy to talk and
+answer any questions you might have.
+[SPEAKER_01]: Yeah, if you don't want to do all those
+calculations yourself, I'm sure Rebecca
+[SPEAKER_01]: can help you with that.
+[SPEAKER_01]: And I'll put the email address and all the
+information and including some of the
+[SPEAKER_01]: calculations that we talked about on the
+podcast page for listeners.
+[SPEAKER_01]: So, Rebecca, thank you for your time
+today.
+[SPEAKER_01]: I really enjoyed it.
+[SPEAKER_01]: And I look forward to talking to you again
+soon.
+[SPEAKER_00]: Thank you so much, Ted.
+[SPEAKER_00]: This was a lot of fun.
+[SPEAKER_01]: That was Rebecca Knight with BIOS
+Lighting, and you are listening to the
+[SPEAKER_01]: Cannabis Cultivation and Science podcast.
+[SPEAKER_01]: If you are interested in more information
+regarding BIOS, please reach out to me
+[SPEAKER_01]: directly at tadd at kissorganics.com.
+[SPEAKER_01]: I love the NASA connection and they're
+another solid company in the LED space
+[SPEAKER_01]: that's worth considering when looking at
+lighting solutions for your growing needs.
+[SPEAKER_01]: Thanks for checking out the podcast.
+See you next time.

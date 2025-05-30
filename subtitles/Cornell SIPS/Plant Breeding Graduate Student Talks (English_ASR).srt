@@ -1,0 +1,2392 @@
+1
+00:00:01,120 --> 00:00:05,879
+This is a production of Cornell
+
+2
+00:00:02,879 --> 00:00:05,878
+University.
+
+3
+00:00:07,918 --> 00:00:11,599
+So thanks for being here. Uh good
+
+4
+00:00:09,839 --> 00:00:13,439
+afternoon everyone. Myself Shriant. I'm
+
+5
+00:00:11,599 --> 00:00:15,960
+a second year PhD grad student in plant
+
+6
+00:00:13,439 --> 00:00:18,559
+building and genetics. I'm from Mueller
+
+7
+00:00:15,960 --> 00:00:20,080
+Lab. Today before I would like to
+
+8
+00:00:18,559 --> 00:00:21,839
+explain the project that I'm working on
+
+9
+00:00:20,079 --> 00:00:23,518
+from past couple of months and before
+
+10
+00:00:21,839 --> 00:00:24,960
+diving into the project we would like to
+
+11
+00:00:23,518 --> 00:00:27,278
+I would like to explain some of the
+
+12
+00:00:24,960 --> 00:00:29,599
+fundamental concepts and essential to
+
+13
+00:00:27,278 --> 00:00:31,359
+build this project. So first what
+
+14
+00:00:29,599 --> 00:00:33,280
+exactly is a database? So database is
+
+15
+00:00:31,359 --> 00:00:35,520
+the system that is widely used across
+
+16
+00:00:33,280 --> 00:00:37,558
+the industry and academia for data
+
+17
+00:00:35,520 --> 00:00:39,920
+storage, data retrieval and data
+
+18
+00:00:37,558 --> 00:00:41,359
+management. So breedbase. So breedbase
+
+19
+00:00:39,920 --> 00:00:43,200
+is the relational database system that
+
+20
+00:00:41,359 --> 00:00:44,719
+is free and open source that our lab
+
+21
+00:00:43,200 --> 00:00:47,280
+developers have been built over the
+
+22
+00:00:44,719 --> 00:00:48,800
+years. They added a bunch of features uh
+
+23
+00:00:47,280 --> 00:00:50,800
+based on the brand building communities
+
+24
+00:00:48,799 --> 00:00:52,479
+request and now uh brand building
+
+25
+00:00:50,799 --> 00:00:54,399
+communities they can easily upload their
+
+26
+00:00:52,479 --> 00:00:56,398
+data into the breedbase and using the
+
+27
+00:00:54,399 --> 00:00:58,160
+analysis tools that our lab developers
+
+28
+00:00:56,399 --> 00:01:01,359
+have built they can analyze their data
+
+29
+00:00:58,159 --> 00:01:03,599
+and make datadriven decisions.
+
+30
+00:01:01,359 --> 00:01:05,359
+So using the breedbased instance our lab
+
+31
+00:01:03,600 --> 00:01:07,599
+also involved in developing a couple of
+
+32
+00:01:05,359 --> 00:01:09,920
+crop databases uh specifically for the
+
+33
+00:01:07,599 --> 00:01:12,879
+casawava casawa base musa that's for
+
+34
+00:01:09,920 --> 00:01:15,118
+banana am crop for ambase and sweet
+
+35
+00:01:12,879 --> 00:01:16,798
+database and there are many other crop
+
+36
+00:01:15,118 --> 00:01:20,079
+breedbased instances used by companies
+
+37
+00:01:16,799 --> 00:01:21,920
+but I cannot list them with this even in
+
+38
+00:01:20,079 --> 00:01:23,280
+the past year I worked on repetive
+
+39
+00:01:21,920 --> 00:01:26,079
+measurements in other words you can say
+
+40
+00:01:23,280 --> 00:01:28,000
+this as a time series feature uh it's
+
+41
+00:01:26,079 --> 00:01:29,519
+basically where you have a multiple
+
+42
+00:01:28,000 --> 00:01:31,200
+values for a given trade that you would
+
+43
+00:01:29,519 --> 00:01:32,879
+like to store. So this feature was
+
+44
+00:01:31,200 --> 00:01:34,400
+requested from UC Davis breeding program
+
+45
+00:01:32,879 --> 00:01:36,158
+and North Carolina State University
+
+46
+00:01:34,400 --> 00:01:38,240
+breeding program. Uh that therefore
+
+47
+00:01:36,159 --> 00:01:39,920
+we've implemented that. So with this now
+
+48
+00:01:38,239 --> 00:01:41,920
+I have a very good understanding of how
+
+49
+00:01:39,920 --> 00:01:44,159
+breedbase works and how the process of
+
+50
+00:01:41,920 --> 00:01:45,840
+breedbase actually is implemented. So
+
+51
+00:01:44,159 --> 00:01:47,280
+with this knowledge I would uh knowledge
+
+52
+00:01:45,840 --> 00:01:49,118
+and experience I would like to take
+
+53
+00:01:47,280 --> 00:01:50,320
+breedbase to the next level where I
+
+54
+00:01:49,118 --> 00:01:52,959
+would like to integrate artificial
+
+55
+00:01:50,319 --> 00:01:54,879
+intelligence in the breedbase. So before
+
+56
+00:01:52,959 --> 00:01:56,798
+actually diving into the what AI
+
+57
+00:01:54,879 --> 00:01:58,319
+application we will be building in uh
+
+58
+00:01:56,799 --> 00:02:00,880
+for the breedbase I would like to give
+
+59
+00:01:58,319 --> 00:02:02,559
+the uh brief statistics about the casava
+
+60
+00:02:00,879 --> 00:02:04,239
+base. As I mentioned in the previous
+
+61
+00:02:02,560 --> 00:02:06,799
+slide casavase is one of the largest
+
+62
+00:02:04,239 --> 00:02:09,758
+database as we have so far. So as of
+
+63
+00:02:06,799 --> 00:02:13,920
+March 2025 we have almost 240 GB of data
+
+64
+00:02:09,758 --> 00:02:16,079
+in the casava base out of which oh oh
+
+65
+00:02:13,919 --> 00:02:20,159
+sorry yeah out of which uh 12 GB is a
+
+66
+00:02:16,080 --> 00:02:21,239
+phenotypicing data. uh and uh why it is
+
+67
+00:02:20,159 --> 00:02:23,919
+not
+
+68
+00:02:21,239 --> 00:02:25,920
+working. Okay. Yeah. 118 GB is of
+
+69
+00:02:23,919 --> 00:02:27,359
+genotypic data and due to time
+
+70
+00:02:25,919 --> 00:02:28,839
+constraint I'll not go to the each
+
+71
+00:02:27,360 --> 00:02:31,400
+component of
+
+72
+00:02:28,840 --> 00:02:34,239
+this. I'm not sure why this is not
+
+73
+00:02:31,400 --> 00:02:35,599
+working. Okay. Yeah. Due to constraint I
+
+74
+00:02:34,239 --> 00:02:37,120
+cannot go through the each component.
+
+75
+00:02:35,598 --> 00:02:39,518
+However, I would like to pinpoint and
+
+76
+00:02:37,120 --> 00:02:41,280
+mention that Kasaw has been widely used
+
+77
+00:02:39,519 --> 00:02:43,519
+across the world in almost 550
+
+78
+00:02:41,280 --> 00:02:45,039
+locations. As you can see this database
+
+79
+00:02:43,519 --> 00:02:47,280
+is so much complex and it's a large
+
+80
+00:02:45,039 --> 00:02:48,639
+database, right? So we often use a
+
+81
+00:02:47,280 --> 00:02:50,479
+structured query language which is
+
+82
+00:02:48,639 --> 00:02:52,318
+called SQL language to communicate with
+
+83
+00:02:50,479 --> 00:02:54,079
+the databases. This is not the
+
+84
+00:02:52,318 --> 00:02:56,000
+observable trait in most of the plant
+
+85
+00:02:54,080 --> 00:02:57,599
+breeders or the community right to
+
+86
+00:02:56,000 --> 00:03:00,318
+communicate with the database. With this
+
+87
+00:02:57,598 --> 00:03:02,158
+in mind we would like to build a yeah we
+
+88
+00:03:00,318 --> 00:03:04,039
+would like to develop a chatbot uh for
+
+89
+00:03:02,158 --> 00:03:06,560
+the breed base using
+
+90
+00:03:04,039 --> 00:03:08,719
+LLMs. So first uh I would like to show
+
+91
+00:03:06,560 --> 00:03:10,719
+you the back end or the workflow how it
+
+92
+00:03:08,719 --> 00:03:12,719
+looks after it has been implemented or
+
+93
+00:03:10,719 --> 00:03:14,479
+deployed in the production site. So
+
+94
+00:03:12,719 --> 00:03:17,120
+imagine you are a user and you are
+
+95
+00:03:14,479 --> 00:03:19,598
+communicating with some AI. I hope
+
+96
+00:03:17,120 --> 00:03:21,759
+everyone have used chat GPT or Google B.
+
+97
+00:03:19,598 --> 00:03:23,759
+So they know right. So user might ask
+
+98
+00:03:21,759 --> 00:03:26,158
+hey how many trials do I have so far in
+
+99
+00:03:23,759 --> 00:03:27,840
+IIA breeding program. So then using the
+
+100
+00:03:26,158 --> 00:03:30,318
+rack technique that I'll describe in the
+
+101
+00:03:27,840 --> 00:03:32,560
+next slide uh they will extract the
+
+102
+00:03:30,318 --> 00:03:34,560
+trial uh column names and the table
+
+103
+00:03:32,560 --> 00:03:36,799
+names from the database for this
+
+104
+00:03:34,560 --> 00:03:39,120
+specific uh NL question that user asked
+
+105
+00:03:36,799 --> 00:03:40,560
+in the interface or in the chatbot. So
+
+106
+00:03:39,120 --> 00:03:44,000
+these both will be provided to the
+
+107
+00:03:40,560 --> 00:03:45,920
+fine-tuned LLM and LLM will write uh SQL
+
+108
+00:03:44,000 --> 00:03:47,759
+query which means it's another word
+
+109
+00:03:45,919 --> 00:03:50,399
+where you use to communicate with the
+
+110
+00:03:47,759 --> 00:03:52,479
+databases. So this will eventually be uh
+
+111
+00:03:50,400 --> 00:03:54,879
+executed on the database and that where
+
+112
+00:03:52,479 --> 00:03:56,878
+you get the output. So we do not like uh
+
+113
+00:03:54,878 --> 00:03:58,719
+we in addition to showing the value from
+
+114
+00:03:56,878 --> 00:04:00,719
+that we retrieved from the database we
+
+115
+00:03:58,719 --> 00:04:02,158
+would also like to show the generalized
+
+116
+00:04:00,719 --> 00:04:03,519
+statement along with the value.
+
+117
+00:04:02,158 --> 00:04:06,239
+Therefore this would be clear and
+
+118
+00:04:03,519 --> 00:04:08,158
+concise information to the user whoever
+
+119
+00:04:06,239 --> 00:04:10,799
+is querying.
+
+120
+00:04:08,158 --> 00:04:12,158
+Right. Uh yeah, of course it is true
+
+121
+00:04:10,799 --> 00:04:14,239
+that there are so many closed source
+
+122
+00:04:12,158 --> 00:04:15,919
+LLMs uh that are outperforming in
+
+123
+00:04:14,239 --> 00:04:17,439
+various tasks such as summarization,
+
+124
+00:04:15,919 --> 00:04:19,839
+code generation and lot many other
+
+125
+00:04:17,439 --> 00:04:22,240
+tasks. However, recently Stanford NLP
+
+126
+00:04:19,839 --> 00:04:24,000
+group have tested uh with the fi uh
+
+127
+00:04:22,240 --> 00:04:26,400
+various closed source models. They
+
+128
+00:04:24,000 --> 00:04:28,240
+fine-tuned their LLMs using those closed
+
+129
+00:04:26,399 --> 00:04:30,079
+source API keys and they found that
+
+130
+00:04:28,240 --> 00:04:31,680
+there is ineffectiveness in upgrading
+
+131
+00:04:30,079 --> 00:04:33,439
+existing knowledge. So what I mean by
+
+132
+00:04:31,680 --> 00:04:36,319
+that is once they fine-tuned their
+
+133
+00:04:33,439 --> 00:04:38,160
+models using this closed source APIs uh
+
+134
+00:04:36,319 --> 00:04:40,560
+after after that they modified their
+
+135
+00:04:38,160 --> 00:04:42,080
+data in the database and fine-tuned LLM
+
+136
+00:04:40,560 --> 00:04:43,600
+couldn't able to retrieve the updated
+
+137
+00:04:42,079 --> 00:04:45,519
+data and there are wide variety of
+
+138
+00:04:43,600 --> 00:04:48,160
+reason why this is happening but the
+
+139
+00:04:45,519 --> 00:04:50,639
+primary reason is uh closed source close
+
+140
+00:04:48,160 --> 00:04:53,520
+source LLM doesn't have a flexibility of
+
+141
+00:04:50,639 --> 00:04:55,360
+using different LLM techniques on the
+
+142
+00:04:53,519 --> 00:04:57,478
+fine-tuned model therefore you cannot
+
+143
+00:04:55,360 --> 00:05:00,080
+even improve the model accuracy or
+
+144
+00:04:57,478 --> 00:05:01,439
+performance right so with this uh I
+
+145
+00:05:00,079 --> 00:05:03,439
+referred a couple of times about the
+
+146
+00:05:01,439 --> 00:05:05,519
+closedource LLMs. So primarily those are
+
+147
+00:05:03,439 --> 00:05:08,160
+developed from open AI and the Google
+
+148
+00:05:05,519 --> 00:05:10,240
+and the cloud anthropic and the open
+
+149
+00:05:08,160 --> 00:05:11,919
+source LLMs are meta deepseek and
+
+150
+00:05:10,240 --> 00:05:13,280
+Microsoft. These are primarily deployed
+
+151
+00:05:11,918 --> 00:05:14,879
+on the hugging phase. From hugging phase
+
+152
+00:05:13,279 --> 00:05:16,879
+you can easily deploy onto your local
+
+153
+00:05:14,879 --> 00:05:19,680
+machine or the GPUs and then you can run
+
+154
+00:05:16,879 --> 00:05:21,120
+them. So for this project we will not be
+
+155
+00:05:19,680 --> 00:05:23,038
+using these closed source models.
+
+156
+00:05:21,120 --> 00:05:26,160
+However, we would be likely to use open
+
+157
+00:05:23,038 --> 00:05:28,079
+source LLMs uh to build this project. So
+
+158
+00:05:26,160 --> 00:05:29,919
+I mentioned LLM strategies in the
+
+159
+00:05:28,079 --> 00:05:31,680
+previous slide a couple of times, right?
+
+160
+00:05:29,918 --> 00:05:33,519
+uh first I would like to uh mention
+
+161
+00:05:31,680 --> 00:05:35,360
+about retrieval argument generation. So
+
+162
+00:05:33,519 --> 00:05:37,279
+as it is a $5 word and it's a simple
+
+163
+00:05:35,360 --> 00:05:39,280
+word as a name it indicates it's just a
+
+164
+00:05:37,279 --> 00:05:41,198
+retrieving. So basically if user ask
+
+165
+00:05:39,279 --> 00:05:43,038
+some question in the NL interface it
+
+166
+00:05:41,199 --> 00:05:45,120
+retrieves the table names or the column
+
+167
+00:05:43,038 --> 00:05:48,000
+names with respect to the database to
+
+168
+00:05:45,120 --> 00:05:49,600
+that question uh uh yeah to that
+
+169
+00:05:48,000 --> 00:05:51,120
+question. So it's not a high level of
+
+170
+00:05:49,600 --> 00:05:53,680
+coding that is required to implement
+
+171
+00:05:51,120 --> 00:05:55,280
+this technique or this objective. And
+
+172
+00:05:53,680 --> 00:05:57,360
+next comes the supervised fine tuning.
+
+173
+00:05:55,279 --> 00:05:59,599
+Supervised fine is a time consuming and
+
+174
+00:05:57,360 --> 00:06:02,319
+it's a iterative process and it's you
+
+175
+00:05:59,600 --> 00:06:04,400
+need to build a a training data set in a
+
+176
+00:06:02,319 --> 00:06:06,719
+way that it should include all the edge
+
+177
+00:06:04,399 --> 00:06:08,638
+cases even. So it's a high level of
+
+178
+00:06:06,720 --> 00:06:10,080
+coding that is also required. So next
+
+179
+00:06:08,639 --> 00:06:12,160
+last technique is reinforcement
+
+180
+00:06:10,079 --> 00:06:15,038
+learning. So reinforcement learning is a
+
+181
+00:06:12,160 --> 00:06:17,840
+branch of ML that is that we actually
+
+182
+00:06:15,038 --> 00:06:19,599
+basically use the AI train the AI agents
+
+183
+00:06:17,839 --> 00:06:21,038
+based on the trial and error method and
+
+184
+00:06:19,600 --> 00:06:22,479
+it's a high level of coding that is
+
+185
+00:06:21,038 --> 00:06:24,879
+required. There is no straightforward
+
+186
+00:06:22,478 --> 00:06:27,038
+mathematical framework or a mathematical
+
+187
+00:06:24,879 --> 00:06:28,159
+uh formula to directly deploy them. You
+
+188
+00:06:27,038 --> 00:06:31,680
+have to verify with a different
+
+189
+00:06:28,160 --> 00:06:33,199
+algorithms for this. With that, yeah,
+
+190
+00:06:31,680 --> 00:06:34,720
+with that I would like to thank my PI
+
+191
+00:06:33,199 --> 00:06:36,319
+for giving me exciting opportunity to
+
+192
+00:06:34,720 --> 00:06:38,400
+work on this and also I would like to
+
+193
+00:06:36,319 --> 00:06:41,199
+thank John for giving me access to the
+
+194
+00:06:38,399 --> 00:06:44,239
+GPUs to test it before trying to deploy
+
+195
+00:06:41,199 --> 00:06:45,520
+these uh models on the uh production
+
+196
+00:06:44,240 --> 00:06:47,360
+side. With that, I would like to open
+
+197
+00:06:45,519 --> 00:06:49,599
+the floor to any questions. Thank you so
+
+198
+00:06:47,360 --> 00:06:51,919
+much.
+
+199
+00:06:49,600 --> 00:06:54,400
+Yeah, last slide you listed a couple
+
+200
+00:06:51,918 --> 00:06:56,079
+different strategies. Is there any one
+
+201
+00:06:54,399 --> 00:06:57,839
+that you want to look at going forward
+
+202
+00:06:56,079 --> 00:07:00,399
+or are you going to try all three maybe
+
+203
+00:06:57,839 --> 00:07:02,079
+to see which one works best? Yeah, so
+
+204
+00:07:00,399 --> 00:07:04,399
+the question is uh in this slide that
+
+205
+00:07:02,079 --> 00:07:06,318
+I'm showing right now uh she mentioned
+
+206
+00:07:04,399 --> 00:07:08,318
+that I'm I showed here different
+
+207
+00:07:06,319 --> 00:07:10,720
+techniques, right? Uh do I use all of
+
+208
+00:07:08,319 --> 00:07:12,479
+those or do I use only one among among
+
+209
+00:07:10,720 --> 00:07:14,000
+the three? So these three techniques are
+
+210
+00:07:12,478 --> 00:07:15,758
+very important in order to make this
+
+211
+00:07:14,000 --> 00:07:18,000
+objective efficient. So you cannot use
+
+212
+00:07:15,759 --> 00:07:20,240
+only one. So these three techniques are
+
+213
+00:07:18,000 --> 00:07:22,160
+combined to build this chatbot. Meaning
+
+214
+00:07:20,240 --> 00:07:24,639
+all these three uh techniques are very
+
+215
+00:07:22,160 --> 00:07:26,639
+useful. So it's doing one one technique
+
+216
+00:07:24,639 --> 00:07:29,199
+is doing one job. You have to combine
+
+217
+00:07:26,639 --> 00:07:32,160
+all these three techniques.
+
+218
+00:07:29,199 --> 00:07:35,280
+Yeah. Like so you're using the cassava
+
+219
+00:07:32,160 --> 00:07:37,360
+data set to how hard would it be to then
+
+220
+00:07:35,279 --> 00:07:38,799
+use another data set for another crop
+
+221
+00:07:37,360 --> 00:07:40,160
+like to translate this to another crop?
+
+222
+00:07:38,800 --> 00:07:41,759
+Would you have to rebuild and train the
+
+223
+00:07:40,160 --> 00:07:44,560
+model all over again or would it be
+
+224
+00:07:41,759 --> 00:07:46,479
+easily trans? Yeah. uh the question here
+
+225
+00:07:44,560 --> 00:07:48,399
+in the audience is uh currently I'm
+
+226
+00:07:46,478 --> 00:07:50,879
+using the casava base for the initial
+
+227
+00:07:48,399 --> 00:07:52,560
+stage to build this uh if we eventually
+
+228
+00:07:50,879 --> 00:07:55,120
+in the future if I transfer to the other
+
+229
+00:07:52,560 --> 00:07:57,519
+crop or other databases how easy or how
+
+230
+00:07:55,120 --> 00:07:59,120
+hard is it so the simple question is for
+
+231
+00:07:57,519 --> 00:08:01,279
+our example we have a multiple crop
+
+232
+00:07:59,120 --> 00:08:03,439
+databases right so for casava base and
+
+233
+00:08:01,279 --> 00:08:05,439
+most of the databases we have a same
+
+234
+00:08:03,439 --> 00:08:07,439
+structure so what I mean by structure so
+
+235
+00:08:05,439 --> 00:08:09,759
+the table names column names all are
+
+236
+00:08:07,439 --> 00:08:11,759
+same across the uh different crops only
+
+237
+00:08:09,759 --> 00:08:14,000
+the values or some functionality might
+
+238
+00:08:11,759 --> 00:08:16,160
+change right so if you implement Kazava
+
+239
+00:08:14,000 --> 00:08:17,918
+base and it working fine as we expect.
+
+240
+00:08:16,160 --> 00:08:19,919
+So in order to scale up to the other
+
+241
+00:08:17,918 --> 00:08:21,519
+databases, we need to change the table
+
+242
+00:08:19,918 --> 00:08:24,639
+names and the column names in those
+
+243
+00:08:21,519 --> 00:08:26,680
+databases to specifically to those crops
+
+244
+00:08:24,639 --> 00:08:29,199
+in order to make it. Yeah, that's a
+
+245
+00:08:26,680 --> 00:08:31,280
+problem. Um yeah, so my name is Chris
+
+246
+00:08:29,199 --> 00:08:34,959
+Merate. I'm a fourth year uh PhD student
+
+247
+00:08:31,279 --> 00:08:37,199
+in Lar's lab uh in Cornell uh agreech in
+
+248
+00:08:34,958 --> 00:08:39,119
+Geneva. And today I would like to do an
+
+249
+00:08:37,200 --> 00:08:42,560
+updated summary of my work on mapping
+
+250
+00:08:39,120 --> 00:08:44,679
+QTL and identify u candy genes for seed
+
+251
+00:08:42,559 --> 00:08:47,439
+aeronomic traits in hemp F2 my
+
+252
+00:08:44,679 --> 00:08:49,519
+populations. So to start off I would
+
+253
+00:08:47,440 --> 00:08:51,680
+like to for for some of you that are not
+
+254
+00:08:49,519 --> 00:08:55,200
+familiar with this crop there are three
+
+255
+00:08:51,679 --> 00:08:57,679
+main market classes in hemp flour fiber
+
+256
+00:08:55,200 --> 00:08:59,839
+and grain. Uh for the flower obviously
+
+257
+00:08:57,679 --> 00:09:01,838
+the um the end product is the struction
+
+258
+00:08:59,839 --> 00:09:03,600
+of canabonoids for these flowers. Uh but
+
+259
+00:09:01,839 --> 00:09:05,200
+for all these market market classes
+
+260
+00:09:03,600 --> 00:09:07,040
+there are key traits to take into
+
+261
+00:09:05,200 --> 00:09:09,759
+account when considering cultivars and
+
+262
+00:09:07,039 --> 00:09:12,079
+when breeding um cultivars for the
+
+263
+00:09:09,759 --> 00:09:15,278
+flower per se uh the idea is to increase
+
+264
+00:09:12,080 --> 00:09:17,519
+the floral biomass. So flowering uh time
+
+265
+00:09:15,278 --> 00:09:19,519
+is one important trait to consider and
+
+266
+00:09:17,519 --> 00:09:21,039
+obviously canabonoids as well uh which
+
+267
+00:09:19,519 --> 00:09:23,120
+is not something that I'm going to cover
+
+268
+00:09:21,039 --> 00:09:25,360
+today. For the fiber the ideal is to
+
+269
+00:09:23,120 --> 00:09:26,959
+harvest the stem. So we also want based
+
+270
+00:09:25,360 --> 00:09:29,200
+on the eotype you can see here for
+
+271
+00:09:26,958 --> 00:09:31,439
+example is a tall non-branchy late
+
+272
+00:09:29,200 --> 00:09:32,879
+flowering cultivar. So one of the
+
+273
+00:09:31,440 --> 00:09:34,480
+important traits is flowering time as
+
+274
+00:09:32,879 --> 00:09:37,360
+well as biomass to ensure that we have
+
+275
+00:09:34,480 --> 00:09:38,959
+this accumulation of biomass and fiber
+
+276
+00:09:37,360 --> 00:09:41,120
+quality is another important trait. So
+
+277
+00:09:38,958 --> 00:09:44,559
+from this biomass that is accumulated we
+
+278
+00:09:41,120 --> 00:09:47,440
+can remove this bus from the herd for
+
+279
+00:09:44,559 --> 00:09:49,199
+the um uh to maximize the bass
+
+280
+00:09:47,440 --> 00:09:50,880
+production for textiles or the hair
+
+281
+00:09:49,200 --> 00:09:53,440
+production if the intent is for
+
+282
+00:09:50,879 --> 00:09:55,600
+construction materials. And lastly we
+
+283
+00:09:53,440 --> 00:09:57,360
+have the grain. Another market classes
+
+284
+00:09:55,600 --> 00:09:59,360
+that is embedded in it is the dual
+
+285
+00:09:57,360 --> 00:10:01,120
+purpose which stands for production of
+
+286
+00:09:59,360 --> 00:10:03,278
+the grain and the stock. So you harvest
+
+287
+00:10:01,120 --> 00:10:05,519
+the inflloresence and then you harvest
+
+288
+00:10:03,278 --> 00:10:09,360
+the stocks at the end. Uh so you can get
+
+289
+00:10:05,519 --> 00:10:11,839
+fiber and um and grain as well. Uh and
+
+290
+00:10:09,360 --> 00:10:13,839
+here the again one of the mark the key
+
+291
+00:10:11,839 --> 00:10:15,680
+traits to consider is flowering time
+
+292
+00:10:13,839 --> 00:10:17,360
+because we want to ensure that we
+
+293
+00:10:15,679 --> 00:10:19,000
+accumulate biomass so this crop reaches
+
+294
+00:10:17,360 --> 00:10:23,919
+a sufficient height for an optimal
+
+295
+00:10:19,000 --> 00:10:27,519
+harvest. Um and uh for incred sorry and
+
+296
+00:10:23,919 --> 00:10:30,799
+in mets meat sorry the uh goals whether
+
+297
+00:10:27,519 --> 00:10:32,959
+it's dual purpose or grain only um and
+
+298
+00:10:30,799 --> 00:10:34,559
+biomass as well because we want to have
+
+299
+00:10:32,958 --> 00:10:36,879
+that balance between certain
+
+300
+00:10:34,559 --> 00:10:39,518
+accumulation biomass for both fiber and
+
+301
+00:10:36,879 --> 00:10:42,240
+grain and obviously I'm not going to uh
+
+302
+00:10:39,519 --> 00:10:43,679
+forget grain yield and seed quality
+
+303
+00:10:42,240 --> 00:10:45,919
+especially the seat quality is another
+
+304
+00:10:43,679 --> 00:10:47,759
+important trait in this case what we are
+
+305
+00:10:45,919 --> 00:10:49,599
+considering quality right now is the
+
+306
+00:10:47,759 --> 00:10:50,799
+seat size as well as the protein oil
+
+307
+00:10:49,600 --> 00:10:54,240
+content
+
+308
+00:10:50,799 --> 00:10:55,599
+But speaking of um seat size, so here in
+
+309
+00:10:54,240 --> 00:10:57,839
+this picture you can see the variation
+
+310
+00:10:55,600 --> 00:11:00,759
+on seat size that we have in our general
+
+311
+00:10:57,839 --> 00:11:03,519
+plasm in Geneva. Um and from the
+
+312
+00:11:00,759 --> 00:11:04,720
+importance standpoint actually seat size
+
+313
+00:11:03,519 --> 00:11:06,639
+could be beneficial for stand
+
+314
+00:11:04,720 --> 00:11:08,480
+establishment. Uh from a consumer
+
+315
+00:11:06,639 --> 00:11:10,399
+perspective a larger seat will be more
+
+316
+00:11:08,480 --> 00:11:12,800
+appealing for a consumer and from a
+
+317
+00:11:10,399 --> 00:11:15,039
+processing point of view this we have uh
+
+318
+00:11:12,799 --> 00:11:18,000
+observed that larger seats may lead to a
+
+319
+00:11:15,039 --> 00:11:19,679
+better processing of these seeds. So
+
+320
+00:11:18,000 --> 00:11:21,519
+traditionally hemp hearts that you see
+
+321
+00:11:19,679 --> 00:11:23,359
+and you can access commercially are
+
+322
+00:11:21,519 --> 00:11:27,600
+seats that originate from cultivars that
+
+323
+00:11:23,360 --> 00:11:31,039
+are not that different from
+
+324
+00:11:27,600 --> 00:11:32,800
+um seat size that equates beli or felina
+
+325
+00:11:31,039 --> 00:11:34,639
+32 that you see here or perhaps even
+
+326
+00:11:32,799 --> 00:11:37,039
+smaller than this. So we're interested
+
+327
+00:11:34,639 --> 00:11:38,480
+in uh looking at the processability of
+
+328
+00:11:37,039 --> 00:11:40,639
+these larger seats that you see on the
+
+329
+00:11:38,480 --> 00:11:43,920
+left as well as of course the genetic
+
+330
+00:11:40,639 --> 00:11:47,679
+mechanisms underlying that um trait or
+
+331
+00:11:43,919 --> 00:11:49,120
+the seat size alone. So this hemp grain
+
+332
+00:11:47,679 --> 00:11:52,159
+which is no grain it's on a kein
+
+333
+00:11:49,120 --> 00:11:54,480
+actually uh once it's harvested it is uh
+
+334
+00:11:52,159 --> 00:11:56,159
+processed um and here you can you can
+
+335
+00:11:54,480 --> 00:11:58,399
+get two main components of the seeds the
+
+336
+00:11:56,159 --> 00:12:00,319
+hemp hearts which are actually the kons
+
+337
+00:11:58,399 --> 00:12:03,600
+of the seeds and the hemp holes the hemp
+
+338
+00:12:00,320 --> 00:12:07,600
+hearts are high in protein uh about 20
+
+339
+00:12:03,600 --> 00:12:09,519
+20 to 25% protein the fat is about 25 to
+
+340
+00:12:07,600 --> 00:12:12,480
+35 if I'm not mistaken and the holes
+
+341
+00:12:09,519 --> 00:12:15,440
+which are the perarb of this uh akin is
+
+342
+00:12:12,480 --> 00:12:17,839
+high in dietary fiber about 25 to 35% as
+
+343
+00:12:15,440 --> 00:12:20,160
+well But ultimately the end product of
+
+344
+00:12:17,839 --> 00:12:22,320
+these components become into hemp seed
+
+345
+00:12:20,159 --> 00:12:24,480
+meal, hemp seed oil, fortified foods
+
+346
+00:12:22,320 --> 00:12:26,240
+like baked goods as well as plant-based
+
+347
+00:12:24,480 --> 00:12:28,879
+meats and dairies that you can see here
+
+348
+00:12:26,240 --> 00:12:31,120
+highlighted in this um this graph. So
+
+349
+00:12:28,879 --> 00:12:33,120
+with all of this in mind, I established
+
+350
+00:12:31,120 --> 00:12:35,120
+three objectives and those are to
+
+351
+00:12:33,120 --> 00:12:37,919
+identify significant QTL for seat size
+
+352
+00:12:35,120 --> 00:12:39,679
+and aloromic traits and to compare uh or
+
+353
+00:12:37,919 --> 00:12:42,319
+determine the consistency of this QTL
+
+354
+00:12:39,679 --> 00:12:44,479
+between three populations that will
+
+355
+00:12:42,320 --> 00:12:46,079
+represent each of the market classes and
+
+356
+00:12:44,480 --> 00:12:48,159
+identify hopefully the candidate genes
+
+357
+00:12:46,078 --> 00:12:49,078
+within the 1.5 low interval for each of
+
+358
+00:12:48,159 --> 00:12:53,199
+these
+
+359
+00:12:49,078 --> 00:12:55,759
+QTL. So to start off uh in 2021 a high
+
+360
+00:12:53,200 --> 00:12:57,759
+canominoid F2 population was developed
+
+361
+00:12:55,759 --> 00:13:00,399
+crossing an parameial resistant colonial
+
+362
+00:12:57,759 --> 00:13:02,799
+individual of 58 NGCBD
+
+363
+00:13:00,399 --> 00:13:04,879
+um chron individual that is parameible.
+
+364
+00:13:02,799 --> 00:13:06,879
+The idea here or the main uh goal of
+
+365
+00:13:04,879 --> 00:13:08,879
+this uh was to characterize parame
+
+366
+00:13:06,879 --> 00:13:11,439
+resistance as I was saying however other
+
+367
+00:13:08,879 --> 00:13:13,519
+phenotypes were measured. uh for this
+
+368
+00:13:11,440 --> 00:13:16,720
+the crossing scheme was the selfing of
+
+369
+00:13:13,519 --> 00:13:18,720
+two uh selected F1s generating two f2s
+
+370
+00:13:16,720 --> 00:13:20,240
+and the idea of having more than one f2
+
+371
+00:13:18,720 --> 00:13:22,160
+is so that because h is highly
+
+372
+00:13:20,240 --> 00:13:23,919
+heterrozygous having more than one
+
+373
+00:13:22,159 --> 00:13:25,759
+population increases our likelihood to
+
+374
+00:13:23,919 --> 00:13:29,120
+capture the effect of alo present in the
+
+375
+00:13:25,759 --> 00:13:31,720
+parents. So here we have 214 and 215
+
+376
+00:13:29,120 --> 00:13:33,759
+with 366 and 304 individuals
+
+377
+00:13:31,720 --> 00:13:35,040
+respectively. U another important thing
+
+378
+00:13:33,759 --> 00:13:36,240
+to mention is that the flowering time
+
+379
+00:13:35,039 --> 00:13:39,439
+between these two parents is about a
+
+380
+00:13:36,240 --> 00:13:41,639
+week. Um so they probably relatively um
+
+381
+00:13:39,440 --> 00:13:44,000
+I want to say early but not too late
+
+382
+00:13:41,639 --> 00:13:46,240
+either. Uh for the green population in
+
+383
+00:13:44,000 --> 00:13:50,360
+this case we employ a dualpurpose green
+
+384
+00:13:46,240 --> 00:13:53,440
+line. Uh this one is 201179 or GBH 2011
+
+385
+00:13:50,360 --> 00:13:55,440
+1179 which is a late flower individual
+
+386
+00:13:53,440 --> 00:13:58,000
+large seeded compared and crossed with a
+
+387
+00:13:55,440 --> 00:14:00,000
+picodo which is a very popular Canadian
+
+388
+00:13:58,000 --> 00:14:03,839
+uh grain cultivar that has high protein
+
+389
+00:14:00,000 --> 00:14:05,759
+content that has u small seed and early
+
+390
+00:14:03,839 --> 00:14:08,320
+flowering. In this case, the custom
+
+391
+00:14:05,759 --> 00:14:10,879
+scheme was developed to a sip mating of
+
+392
+00:14:08,320 --> 00:14:15,278
+uh the F1s and we ended up phenotyping
+
+393
+00:14:10,879 --> 00:14:17,919
+only the females uh 198 of them. For the
+
+394
+00:14:15,278 --> 00:14:23,039
+fiber uh in this case we use fiber bre
+
+395
+00:14:17,919 --> 00:14:26,078
+to GBA 19 uh 1024. This is a very late
+
+396
+00:14:23,039 --> 00:14:28,319
+flowering a very large seated um uh
+
+397
+00:14:26,078 --> 00:14:30,559
+cultivar population and was crossed with
+
+398
+00:14:28,320 --> 00:14:33,199
+the first New York uh feral population
+
+399
+00:14:30,559 --> 00:14:35,359
+isolated which is Logan. uh this is a
+
+400
+00:14:33,198 --> 00:14:38,078
+very early and a very small seated uh
+
+401
+00:14:35,360 --> 00:14:39,919
+cultivar. In this case, we also did se
+
+402
+00:14:38,078 --> 00:14:42,559
+mating for the generation of the F2s.
+
+403
+00:14:39,919 --> 00:14:46,319
+But here we phenotype and genotype uh
+
+404
+00:14:42,559 --> 00:14:47,479
+females and males having a total of 445
+
+405
+00:14:46,320 --> 00:14:49,519
+um
+
+406
+00:14:47,480 --> 00:14:51,278
+individuals. For the creation of the
+
+407
+00:14:49,519 --> 00:14:53,839
+linkage maps, we use two genotypic
+
+408
+00:14:51,278 --> 00:14:55,838
+platforms uh genotyping platform sorry.
+
+409
+00:14:53,839 --> 00:14:59,040
+Uh for a high calamina population uh
+
+410
+00:14:55,839 --> 00:15:01,839
+21,04 and 21,05 we use an illuminina
+
+411
+00:14:59,039 --> 00:15:04,759
+array developed by Pho. uh here we ended
+
+412
+00:15:01,839 --> 00:15:08,720
+up with linkage maps that have uh
+
+413
+00:15:04,759 --> 00:15:10,639
+2,659 and 2,197 markers respectively.
+
+414
+00:15:08,720 --> 00:15:12,720
+Whereas for the grain FI population we
+
+415
+00:15:10,639 --> 00:15:14,560
+use an agulant sure select props set
+
+416
+00:15:12,720 --> 00:15:19,519
+that we developed in our lab which we
+
+417
+00:15:14,559 --> 00:15:21,439
+named hand select um and um this
+
+418
+00:15:19,519 --> 00:15:24,078
+eventually uh help us develop or create
+
+419
+00:15:21,440 --> 00:15:27,199
+a linkage linkage maps that have 748
+
+420
+00:15:24,078 --> 00:15:30,159
+markers for the grain and 922 markers
+
+421
+00:15:27,198 --> 00:15:31,759
+for the fiber. So with all this in mind
+
+422
+00:15:30,159 --> 00:15:34,159
+uh on all these methodologies so I
+
+423
+00:15:31,759 --> 00:15:37,120
+decided to look at the seat size in this
+
+424
+00:15:34,159 --> 00:15:40,078
+case we quantify that by the weight of
+
+425
+00:15:37,120 --> 00:15:43,639
+10,000 seats or thousand sew as you can
+
+426
+00:15:40,078 --> 00:15:49,039
+see here first in the high population
+
+427
+00:15:43,639 --> 00:15:50,879
+2004 we found uh five QTL that um are
+
+428
+00:15:49,039 --> 00:15:53,198
+associated with this trait and as you
+
+429
+00:15:50,879 --> 00:15:54,958
+can see here the uh largest peak is
+
+430
+00:15:53,198 --> 00:15:56,719
+located in chromosome one that explain a
+
+431
+00:15:54,958 --> 00:15:59,119
+good portion of the variance and it's a
+
+432
+00:15:56,720 --> 00:16:01,680
+very small region relatively speaking uh
+
+433
+00:15:59,120 --> 00:16:05,198
+in the genome and we see that the effect
+
+434
+00:16:01,679 --> 00:16:08,239
+of the AL is dominant over the B al for
+
+435
+00:16:05,198 --> 00:16:10,078
+the population we also find uh a QTL in
+
+436
+00:16:08,240 --> 00:16:12,000
+chromosome one but conversely this is
+
+437
+00:16:10,078 --> 00:16:13,919
+the only QDL that we find explaining low
+
+438
+00:16:12,000 --> 00:16:15,759
+proportion of the variance but in a very
+
+439
+00:16:13,919 --> 00:16:18,519
+large region and in this case the effect
+
+440
+00:16:15,759 --> 00:16:21,919
+of the AL over the B al seems to be
+
+441
+00:16:18,519 --> 00:16:23,600
+additive for the grain we have four QTL
+
+442
+00:16:21,919 --> 00:16:25,838
+identified and in this case we don't
+
+443
+00:16:23,600 --> 00:16:27,680
+observe this we observe that the largest
+
+444
+00:16:25,839 --> 00:16:30,320
+effect the largest uh peak is in
+
+445
+00:16:27,679 --> 00:16:32,638
+chromosome 9 instead explaining uh a
+
+446
+00:16:30,320 --> 00:16:34,320
+considerable a considerable part of
+
+447
+00:16:32,639 --> 00:16:36,440
+percentage of the variance sorry but a
+
+448
+00:16:34,320 --> 00:16:38,399
+large region and also seems to be
+
+449
+00:16:36,440 --> 00:16:41,120
+additive and in the fiber very interest
+
+450
+00:16:38,399 --> 00:16:43,360
+inly we only find two QTL but a massive
+
+451
+00:16:41,120 --> 00:16:45,759
+peak in chromosome 4 that explains over
+
+452
+00:16:43,360 --> 00:16:47,600
+60% of the variance in a population and
+
+453
+00:16:45,759 --> 00:16:50,320
+but unfortunately the region is quite
+
+454
+00:16:47,600 --> 00:16:52,399
+large it's 9.1 megabases and here the
+
+455
+00:16:50,320 --> 00:16:55,079
+additive effect uh sorry the effect of
+
+456
+00:16:52,399 --> 00:16:58,399
+the B al over the AL is
+
+457
+00:16:55,078 --> 00:17:01,758
+additive now for the flowering time. Um
+
+458
+00:16:58,399 --> 00:17:04,078
+this in this case we for 214 in the high
+
+459
+00:17:01,759 --> 00:17:06,880
+can population we find one large peak in
+
+460
+00:17:04,078 --> 00:17:09,519
+chromosome one again compared to the um
+
+461
+00:17:06,880 --> 00:17:10,959
+the one forc weight uh that explains
+
+462
+00:17:09,519 --> 00:17:13,439
+also a good proportion of the variance
+
+463
+00:17:10,959 --> 00:17:17,679
+and it's a small region uh the effect of
+
+464
+00:17:13,439 --> 00:17:19,759
+this alil is again dominant um as you uh
+
+465
+00:17:17,679 --> 00:17:23,759
+compared to the one identified in the
+
+466
+00:17:19,759 --> 00:17:25,519
+tasan ce uh for 215 uh we also also
+
+467
+00:17:23,759 --> 00:17:26,798
+observe another peak well two peaks
+
+468
+00:17:25,519 --> 00:17:29,038
+actually but the largest peak in
+
+469
+00:17:26,798 --> 00:17:32,000
+chromosome one explaining 20% of the
+
+470
+00:17:29,038 --> 00:17:34,240
+variance in a large over 20% in a large
+
+471
+00:17:32,000 --> 00:17:36,880
+region. Um and in this case the effect
+
+472
+00:17:34,240 --> 00:17:40,240
+is additive. For the grain, we only find
+
+473
+00:17:36,880 --> 00:17:42,400
+one um peak in chromosome one that
+
+474
+00:17:40,240 --> 00:17:45,000
+explains over half% of the variance. And
+
+475
+00:17:42,400 --> 00:17:47,519
+in this case, this alil seems to be
+
+476
+00:17:45,000 --> 00:17:49,359
+additive. And for the fiber, we observe
+
+477
+00:17:47,519 --> 00:17:53,279
+the most UT identified for flowering
+
+478
+00:17:49,359 --> 00:17:57,439
+time uh four one to five actually to be
+
+479
+00:17:53,279 --> 00:17:59,359
+precise. But again uh the most um the
+
+480
+00:17:57,440 --> 00:18:01,279
+largest peak is in chromosome one uh
+
+481
+00:17:59,359 --> 00:18:02,479
+with an additive effect uh but
+
+482
+00:18:01,279 --> 00:18:04,480
+unfortunately doesn't explain that much
+
+483
+00:18:02,480 --> 00:18:06,480
+of the varian. So what you see here uh
+
+484
+00:18:04,480 --> 00:18:07,679
+is highlights the importance of this
+
+485
+00:18:06,480 --> 00:18:09,519
+chromosome one or the presence of
+
+486
+00:18:07,679 --> 00:18:12,320
+flowering time genes in this uh
+
+487
+00:18:09,519 --> 00:18:13,759
+chromosome one u in the cannabis genome
+
+488
+00:18:12,319 --> 00:18:17,038
+at least for gen that we're evaluating
+
+489
+00:18:13,759 --> 00:18:19,599
+here and lastly for biomass which uh I
+
+490
+00:18:17,038 --> 00:18:21,679
+would expect that will coincide with the
+
+491
+00:18:19,599 --> 00:18:24,798
+flowering time and for this family it
+
+492
+00:18:21,679 --> 00:18:27,679
+does uh proportional variance uh same
+
+493
+00:18:24,798 --> 00:18:30,000
+with the genetic region but again this
+
+494
+00:18:27,679 --> 00:18:34,559
+uh is an additive alil uh compared to
+
+495
+00:18:30,000 --> 00:18:36,400
+the B al uh for hikabinoid 2005 uh again
+
+496
+00:18:34,558 --> 00:18:37,599
+there's a peak here there's no there are
+
+497
+00:18:36,400 --> 00:18:40,160
+not many doesn't explain much of the
+
+498
+00:18:37,599 --> 00:18:42,558
+variance but it's still there and I'm
+
+499
+00:18:40,160 --> 00:18:44,160
+seeing the same thing in grain larger uh
+
+500
+00:18:42,558 --> 00:18:46,639
+the largest peak or the only peak in
+
+501
+00:18:44,160 --> 00:18:48,880
+chromosome one equates to the one in the
+
+502
+00:18:46,640 --> 00:18:51,360
+flowering time uh explaining compression
+
+503
+00:18:48,880 --> 00:18:53,600
+of the variance but a large region but
+
+504
+00:18:51,359 --> 00:18:56,240
+in the fiber however uh we don't observe
+
+505
+00:18:53,599 --> 00:18:58,079
+that peak in chromosome one that should
+
+506
+00:18:56,240 --> 00:19:00,558
+coincide with flowering time but instead
+
+507
+00:18:58,079 --> 00:19:02,079
+is only uh in chromosome 6 which is very
+
+508
+00:19:00,558 --> 00:19:05,038
+interesting for us however doesn't
+
+509
+00:19:02,079 --> 00:19:07,399
+explain than much of the variance but um
+
+510
+00:19:05,038 --> 00:19:10,720
+uh is interesting
+
+511
+00:19:07,400 --> 00:19:12,720
+nonetheless and yeah so with that uh the
+
+512
+00:19:10,720 --> 00:19:14,880
+key takeaways are that the chromosomal
+
+513
+00:19:12,720 --> 00:19:17,200
+location for largest effect QTL for seat
+
+514
+00:19:14,880 --> 00:19:18,720
+size measure as a thousand C weight uh
+
+515
+00:19:17,200 --> 00:19:20,720
+differs depending on the location on the
+
+516
+00:19:18,720 --> 00:19:22,640
+population that we use uh the largest
+
+517
+00:19:20,720 --> 00:19:24,240
+effect of this QTL for flowering time in
+
+518
+00:19:22,640 --> 00:19:26,960
+all population was located in chromosome
+
+519
+00:19:24,240 --> 00:19:28,480
+one the largest effect UTL for biomass
+
+520
+00:19:26,960 --> 00:19:30,480
+seems to coincide with that for flower
+
+521
+00:19:28,480 --> 00:19:32,160
+in all populations except the one in
+
+522
+00:19:30,480 --> 00:19:34,240
+fiber which in chromosome
+
+523
+00:19:32,160 --> 00:19:36,160
+And one thing I don't know if you if you
+
+524
+00:19:34,240 --> 00:19:38,319
+caught it, but there seems to be a one
+
+525
+00:19:36,160 --> 00:19:40,080
+plyotropic dominant effect QTL in
+
+526
+00:19:38,319 --> 00:19:42,119
+chromosome one for this high canal
+
+527
+00:19:40,079 --> 00:19:45,519
+population in
+
+528
+00:19:42,119 --> 00:19:47,759
+214. Um so with that I would like to
+
+529
+00:19:45,519 --> 00:19:49,279
+thank all the members of the lar lab as
+
+530
+00:19:47,759 --> 00:19:51,038
+well as my founders funding sources
+
+531
+00:19:49,279 --> 00:19:54,000
+listed here and I will welcome any
+
+532
+00:19:51,038 --> 00:19:57,038
+questions.
+
+533
+00:19:54,000 --> 00:19:59,519
+The big range of planting densities for
+
+534
+00:19:57,038 --> 00:20:02,319
+hemp like super dense for fiber, super
+
+535
+00:19:59,519 --> 00:20:05,359
+sparse for canonoids. How'd you pick the
+
+536
+00:20:02,319 --> 00:20:07,839
+density or the densities used for this
+
+537
+00:20:05,359 --> 00:20:11,439
+study? And does that have like a complex
+
+538
+00:20:07,839 --> 00:20:13,519
+I mean does that impact impact flowering
+
+539
+00:20:11,440 --> 00:20:16,240
+time and total seedling differently like
+
+540
+00:20:13,519 --> 00:20:18,798
+in the fiber by parentals versus like
+
+541
+00:20:16,240 --> 00:20:20,798
+the canonoid or grain by parentals?
+
+542
+00:20:18,798 --> 00:20:23,519
+Yeah. So the question is if how I
+
+543
+00:20:20,798 --> 00:20:27,759
+decided the planting density and if that
+
+544
+00:20:23,519 --> 00:20:30,960
+affects the traits uh phenotype here. Um
+
+545
+00:20:27,759 --> 00:20:32,640
+so the plant density was y spacing. So
+
+546
+00:20:30,960 --> 00:20:34,159
+for example, one trait that will
+
+547
+00:20:32,640 --> 00:20:38,320
+ultimately be affected by a plant
+
+548
+00:20:34,159 --> 00:20:41,280
+density is yield uh for biomass as well
+
+549
+00:20:38,319 --> 00:20:43,359
+as um seed yield. That's definitely
+
+550
+00:20:41,279 --> 00:20:44,639
+affects flowering time however does not
+
+551
+00:20:43,359 --> 00:20:46,959
+seem to be affected by the plant
+
+552
+00:20:44,640 --> 00:20:50,400
+intensity. Uh and the seed size does not
+
+553
+00:20:46,960 --> 00:20:52,480
+seem to be affected either as well.
+
+554
+00:20:50,400 --> 00:20:54,240
+So I was wondering you have a lot of QTL
+
+555
+00:20:52,480 --> 00:20:56,159
+on chromosome one and you said it might
+
+556
+00:20:54,240 --> 00:20:58,079
+be due to the pleotropic effects from
+
+557
+00:20:56,159 --> 00:21:00,159
+that one parent population. Have you
+
+558
+00:20:58,079 --> 00:21:02,720
+looked further into those QTL to see if
+
+559
+00:21:00,159 --> 00:21:04,400
+it's like one major one or two major
+
+560
+00:21:02,720 --> 00:21:06,400
+genes that seem to be controlling this
+
+561
+00:21:04,400 --> 00:21:08,159
+effect or are there QTL in like very
+
+562
+00:21:06,400 --> 00:21:11,519
+different locations on that chromosome?
+
+563
+00:21:08,159 --> 00:21:12,880
+This is why I like you Emily. Okay, so I
+
+564
+00:21:11,519 --> 00:21:14,400
+did not have the time to incorporate
+
+565
+00:21:12,880 --> 00:21:16,880
+this in the presentation. So I was
+
+566
+00:21:14,400 --> 00:21:18,880
+hoping somebody will ask that. Uh I do
+
+567
+00:21:16,880 --> 00:21:20,960
+so we do have the sequencing the actual
+
+568
+00:21:18,880 --> 00:21:24,240
+sequence of the parents in this hikino
+
+569
+00:21:20,960 --> 00:21:27,120
+population. Um and we were able to have
+
+570
+00:21:24,240 --> 00:21:28,480
+um uh what is that called? um the
+
+571
+00:21:27,119 --> 00:21:30,319
+structural and functional predictions of
+
+572
+00:21:28,480 --> 00:21:33,038
+the genes located. So what I was able is
+
+573
+00:21:30,319 --> 00:21:35,599
+to section the regions of that specific
+
+574
+00:21:33,038 --> 00:21:38,480
+uh QTL and compare them each other with
+
+575
+00:21:35,599 --> 00:21:40,480
+each other and see what differs. And the
+
+576
+00:21:38,480 --> 00:21:42,480
+one that I identify as the one differing
+
+577
+00:21:40,480 --> 00:21:44,640
+is this Luke 7 like protein in
+
+578
+00:21:42,480 --> 00:21:46,720
+chromosome one. Uh and there is this G
+
+579
+00:21:44,640 --> 00:21:50,080
+insertion that causes a frame mutation
+
+580
+00:21:46,720 --> 00:21:54,120
+frame shift mutation uh in this habype.
+
+581
+00:21:50,079 --> 00:21:58,359
+Um this looks like protein is um oh
+
+582
+00:21:54,119 --> 00:22:02,879
+sorry um it it's
+
+583
+00:21:58,359 --> 00:22:05,199
+um uh homal to a luke 7 RL in the
+
+584
+00:22:02,880 --> 00:22:07,440
+arabidopsis um and this seems to
+
+585
+00:22:05,200 --> 00:22:10,400
+participate as an accessory protein to
+
+586
+00:22:07,440 --> 00:22:12,880
+the U1 uh small nuclear ribbonuclear
+
+587
+00:22:10,400 --> 00:22:16,559
+protein in the splyosome so it affect
+
+588
+00:22:12,880 --> 00:22:19,360
+it's it's affected or affects the
+
+589
+00:22:16,558 --> 00:22:20,480
+um RNA maturation of several genes and
+
+590
+00:22:19,359 --> 00:22:22,639
+group ineneral Germany actually
+
+591
+00:22:20,480 --> 00:22:25,200
+validated this by knocking it out,
+
+592
+00:22:22,640 --> 00:22:28,320
+knocking it out and testing like what is
+
+593
+00:22:25,200 --> 00:22:31,200
+uh upregulated regulated and what um
+
+594
+00:22:28,319 --> 00:22:33,678
+several um outcomes that they got from
+
+595
+00:22:31,200 --> 00:22:38,720
+that which uh highlights a plyotropic
+
+596
+00:22:33,679 --> 00:22:41,120
+effect um in the raidopsis um organism.
+
+597
+00:22:38,720 --> 00:22:46,360
+This has been a production of Cornell
+
+598
+00:22:41,119 --> 00:22:46,359
+University on the web at cornell.edu.
+

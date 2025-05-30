@@ -1,0 +1,464 @@
+1
+00:00:00,030 --> 00:00:04,140
+well my name is Skyler Smith here at
+
+2
+00:00:02,220 --> 00:00:07,048
+Apogee instruments and today we're going
+
+3
+00:00:04,139 --> 00:00:09,808
+to talk about how to wire up the St 150
+
+4
+00:00:07,049 --> 00:00:12,570
+ambient air temperature sensor the CS
+
+5
+00:00:09,808 --> 00:00:15,449
+240 back of panel module temperature
+
+6
+00:00:12,570 --> 00:00:17,940
+sensor and the TS 100 aspirated
+
+7
+00:00:15,449 --> 00:00:20,879
+radiation shield to the SMA cluster
+
+8
+00:00:17,940 --> 00:00:23,189
+controller all these components are part
+
+9
+00:00:20,879 --> 00:00:25,169
+of our pv 100 monitoring package from
+
+10
+00:00:23,189 --> 00:00:25,948
+Apogee instruments which also includes
+
+11
+00:00:25,170 --> 00:00:29,279
+the pyrometer
+
+12
+00:00:25,949 --> 00:00:31,080
+the SP 214 which is part of a different
+
+13
+00:00:29,278 --> 00:00:32,850
+wiring video and so if you're looking
+
+14
+00:00:31,079 --> 00:00:35,308
+for wiring instructions on that just
+
+15
+00:00:32,850 --> 00:00:37,800
+click on the comments below and then you
+
+16
+00:00:35,308 --> 00:00:42,030
+can find that video so let's start with
+
+17
+00:00:37,799 --> 00:00:43,949
+the CS 240 and this is what the back of
+
+18
+00:00:42,030 --> 00:00:45,359
+module temperature sensor looks like
+
+19
+00:00:43,950 --> 00:00:47,670
+right there's got a little bit of
+
+20
+00:00:45,359 --> 00:00:49,710
+adhesive and then it will also come with
+
+21
+00:00:47,670 --> 00:00:52,800
+some captain tape to be able to mount
+
+22
+00:00:49,710 --> 00:00:57,299
+that on the back of your panel so the
+
+23
+00:00:52,799 --> 00:01:00,899
+wiring for this it comes with seven
+
+24
+00:00:57,299 --> 00:01:03,569
+conductors here to black to red to white
+
+25
+00:01:00,899 --> 00:01:05,219
+and a shield for our application
+
+26
+00:01:03,570 --> 00:01:07,079
+connecting to the SMA cluster controller
+
+27
+00:01:05,219 --> 00:01:09,239
+we'll just go ahead and bend down the
+
+28
+00:01:07,079 --> 00:01:10,950
+black conductors because we don't need
+
+29
+00:01:09,239 --> 00:01:14,009
+them so I mean if you want to trim them
+
+30
+00:01:10,950 --> 00:01:17,820
+off whatever your needs are so we'll
+
+31
+00:01:14,010 --> 00:01:21,600
+start with the shield and we're going to
+
+32
+00:01:17,819 --> 00:01:23,758
+be working on terminal x seven down here
+
+33
+00:01:21,599 --> 00:01:26,489
+we're going to start on row B which is
+
+34
+00:01:23,759 --> 00:01:30,000
+the bottom one and so the first terminal
+
+35
+00:01:26,489 --> 00:01:32,819
+here is going to be the shield and then
+
+36
+00:01:30,000 --> 00:01:35,009
+the next one is going to be the white
+
+37
+00:01:32,819 --> 00:01:36,478
+conductor and it actually doesn't matter
+
+38
+00:01:35,009 --> 00:01:38,728
+which white conductor you can choose
+
+39
+00:01:36,478 --> 00:01:41,219
+either and then the next one is going to
+
+40
+00:01:38,728 --> 00:01:44,368
+be a red conductor and again it doesn't
+
+41
+00:01:41,219 --> 00:01:47,849
+matter you can choose either then we can
+
+42
+00:01:44,368 --> 00:01:51,750
+choose the other white conductor that
+
+43
+00:01:47,849 --> 00:01:56,759
+goes in the fourth one and then the last
+
+44
+00:01:51,750 --> 00:01:59,280
+one is the other red now the way we can
+
+45
+00:01:56,759 --> 00:02:00,540
+check our self here is if our cluster
+
+46
+00:01:59,280 --> 00:02:03,180
+controller is powered up we can just
+
+47
+00:02:00,540 --> 00:02:07,229
+push down until we get to meteorology
+
+48
+00:02:03,180 --> 00:02:09,060
+and then we can see our second one says
+
+49
+00:02:07,228 --> 00:02:11,310
+module temperature and it's giving us a
+
+50
+00:02:09,060 --> 00:02:13,110
+reading right now and it is it looks
+
+51
+00:02:11,310 --> 00:02:13,770
+like an accurate reading so we know that
+
+52
+00:02:13,110 --> 00:02:16,230
+that is why
+
+53
+00:02:13,770 --> 00:02:18,450
+up correctly now we're going to talk
+
+54
+00:02:16,229 --> 00:02:20,549
+about the SP 150 and be an air
+
+55
+00:02:18,449 --> 00:02:24,109
+temperature sensor and this is what it
+
+56
+00:02:20,550 --> 00:02:27,450
+looks like you can see our class a PRT
+
+57
+00:02:24,110 --> 00:02:30,240
+so we'll just slide that back into the
+
+58
+00:02:27,449 --> 00:02:32,789
+TS 100 shield there if you do order the
+
+59
+00:02:30,240 --> 00:02:34,860
+pv 100 package it will come already pre
+
+60
+00:02:32,789 --> 00:02:38,429
+glued into the port that goes in the
+
+61
+00:02:34,860 --> 00:02:40,650
+side of the TS 100 shield so this one
+
+62
+00:02:38,430 --> 00:02:45,030
+comes with 5 conductors comes with a
+
+63
+00:02:40,650 --> 00:02:46,950
+shield a red a black a green and a white
+
+64
+00:02:45,030 --> 00:02:50,550
+and we'll just be using all five of
+
+65
+00:02:46,949 --> 00:02:53,179
+these conductors so we're now on x7 row
+
+66
+00:02:50,550 --> 00:02:55,920
+a so we're going to start right here and
+
+67
+00:02:53,180 --> 00:02:58,770
+we're going to put the shield in first
+
+68
+00:02:55,919 --> 00:03:02,780
+in the first terminal the second one is
+
+69
+00:02:58,770 --> 00:03:02,780
+going to be the white conductor
+
+70
+00:03:05,709 --> 00:03:11,019
+the next one is going to be the black
+
+71
+00:03:08,180 --> 00:03:11,019
+conductor
+
+72
+00:03:14,439 --> 00:03:23,810
+then we have the green conductor into
+
+73
+00:03:17,810 --> 00:03:29,900
+the fourth terminal there and then we
+
+74
+00:03:23,810 --> 00:03:31,878
+have the red conductor and again once
+
+75
+00:03:29,900 --> 00:03:34,400
+that's all connected we can just scroll
+
+76
+00:03:31,878 --> 00:03:36,560
+down here and we can see our ambient
+
+77
+00:03:34,400 --> 00:03:39,289
+temperature and it is giving us a
+
+78
+00:03:36,560 --> 00:03:42,199
+believable reading last thing we need to
+
+79
+00:03:39,289 --> 00:03:43,909
+do today is power the fan on our cs100
+
+80
+00:03:42,199 --> 00:03:45,679
+and it's really important to use an
+
+81
+00:03:43,909 --> 00:03:47,780
+active shield when you're taking you to
+
+82
+00:03:45,680 --> 00:03:50,360
+ambient air temperature measurements and
+
+83
+00:03:47,780 --> 00:03:52,669
+we have on our other video the pv 100
+
+84
+00:03:50,360 --> 00:03:55,069
+video some graphs that show the data we
+
+85
+00:03:52,669 --> 00:03:57,859
+collected on active radiation shields
+
+86
+00:03:55,068 --> 00:03:59,598
+versus those passive shields so to power
+
+87
+00:03:57,860 --> 00:04:02,930
+the fan on this it needs the 12 volt
+
+88
+00:03:59,598 --> 00:04:05,359
+power supply included in the pv 100 is
+
+89
+00:04:02,930 --> 00:04:08,599
+this little DC to DC converter that
+
+90
+00:04:05,360 --> 00:04:12,260
+takes 24 volts DC which is also already
+
+91
+00:04:08,598 --> 00:04:17,750
+available and converts it to 12 volts so
+
+92
+00:04:12,259 --> 00:04:21,439
+the conductors from the TS 100 there are
+
+93
+00:04:17,750 --> 00:04:23,089
+seven of them we can bend down all but
+
+94
+00:04:21,439 --> 00:04:24,649
+the red in the black we only need the
+
+95
+00:04:23,089 --> 00:04:28,459
+red and the black for our application
+
+96
+00:04:24,649 --> 00:04:30,799
+and then so connected already to the
+
+97
+00:04:28,459 --> 00:04:34,250
+converter is the 24 volts powered off
+
+98
+00:04:30,800 --> 00:04:38,689
+the 24 24 volt power supply so we will
+
+99
+00:04:34,250 --> 00:04:42,788
+go ahead and the middle one here we will
+
+100
+00:04:38,689 --> 00:04:42,788
+connect the black conductor to
+
+101
+00:04:46,649 --> 00:04:55,409
+and then the one on the end will be our
+
+102
+00:04:50,100 --> 00:04:58,090
+read to power up to 12 volts on the fan
+
+103
+00:04:55,410 --> 00:05:00,540
+and as we slide him in and tighten them
+
+104
+00:04:58,089 --> 00:05:03,759
+down we can hear the fan we can also
+
+105
+00:05:00,540 --> 00:05:04,900
+fill the air coming off the fan and we
+
+106
+00:05:03,759 --> 00:05:06,389
+know we're getting those accurate
+
+107
+00:05:04,899 --> 00:05:09,069
+ambient air temperature measurements
+
+108
+00:05:06,389 --> 00:05:11,409
+thank you very much for watching how to
+
+109
+00:05:09,069 --> 00:05:14,290
+wire up the st 150 ambient air
+
+110
+00:05:11,410 --> 00:05:16,720
+temperature sensor the CS 240 back of
+
+111
+00:05:14,290 --> 00:05:19,060
+panel module temperature sensor and then
+
+112
+00:05:16,720 --> 00:05:20,950
+powering the TS 100 aspirated radiation
+
+113
+00:05:19,060 --> 00:05:22,420
+shield if you have any questions feel
+
+114
+00:05:20,949 --> 00:05:26,099
+free to leave them in the comments below
+
+115
+00:05:22,420 --> 00:05:26,100
+thank you very much for watching
+
+116
+00:05:28,839 --> 00:05:30,899
+you
+

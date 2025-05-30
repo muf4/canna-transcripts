@@ -1,0 +1,1501 @@
+[SPEAKER_02]: Hey, everyone.
+[SPEAKER_02]: Thank you for joining us today.
+[SPEAKER_02]: My name is Brian Hesterman with Inspire,
+and I'll be hosting today's webinar and Q
+[SPEAKER_02]: &A session.
+[SPEAKER_02]: As we learned in part one, growing
+cannabis inside a sealed room is a highly
+[SPEAKER_02]: complex interdisciplinary challenge that
+bridges engineering with biology.
+[SPEAKER_02]: A plant is not just a biologic organism,
+it is also a physical object that is
+[SPEAKER_02]: subject to the same physical laws that
+govern matter, such as the law of
+[SPEAKER_02]: conservation of energy.
+[SPEAKER_02]: As such, energy and indoor plant
+environments is neither created nor
+[SPEAKER_02]: destroyed, but rather converted from one
+form to another.
+[SPEAKER_02]: For example, when light is provided to a
+plant, a small amount of that energy is
+[SPEAKER_02]: absorbed by the plant's leaves for
+photosynthesis, and much of that energy
+[SPEAKER_02]: gets converted into evaporation.
+[SPEAKER_02]: So how do we maintain an optimal water
+balance and manage plant evaporation to
+[SPEAKER_02]: ensure production outputs and quality are
+maximized while lowering costs of
+[SPEAKER_02]: production through efficiency and
+reductions in labor?
+[SPEAKER_02]: The answer to that question is,
+it depends.
+[SPEAKER_02]: Every project is different in a multitude
+of ways.
+[SPEAKER_02]: There is no one-size-fits-all approach,
+and there is no single manufacturer that
+[SPEAKER_02]: can build the right system for every
+project.
+[SPEAKER_02]: Today's presentation is part two of our
+two-part series, and we'll be focused on
+[SPEAKER_02]: the engineering side of the equation,
+the system and how control is achieved.
+[SPEAKER_02]: We'll cover general HVAC system
+considerations, HVAC system types and
+[SPEAKER_02]: conditions, HVAC components, and we'll
+touch on design and implementation if we
+[SPEAKER_02]: have time.
+[SPEAKER_02]: This will be new content for some and
+review for others, and the goal is to
+[SPEAKER_02]: provide a solid foundation of important
+environmental control requirements that
+[SPEAKER_02]: should be considered and how INSPIRE can
+help your project with a diverse lineup of
+[SPEAKER_02]: purpose-built HVAC systems and controls.
+[SPEAKER_02]: Okay, just to quickly set the stage for
+the presentation, this talk will focus on
+[SPEAKER_02]: environmental control for indoor
+cultivation only, not greenhouses.
+[SPEAKER_02]: While many of today's concepts still apply
+to greenhouses, greenhouse environmental
+[SPEAKER_02]: control strategies are for another talk.
+[SPEAKER_02]: We're also dealing with sealed grow rooms
+where we have complete control over all
+[SPEAKER_02]: growth parameters.
+[SPEAKER_02]: There's no outdoor air normal operation,
+and the air within the room is fully
+[SPEAKER_02]: recirculating, and that's mainly because
+we're supplementing the air with CO2 to
+[SPEAKER_02]: maximize carbon assimilation and the
+growth rate of the plant.
+[SPEAKER_02]: These sealed rooms can be either single
+level or multi-tier, and the focus of
+[SPEAKER_02]: today is on cannabis, but a lot of the
+core concepts that we've covered today can
+[SPEAKER_02]: also apply to any other crop that has
+grown indoors.
+[SPEAKER_02]: Today's webinar will be presented by
+INSPIRE's Adrian Giovenco, and INSPIRE's
+[SPEAKER_02]: lead applications engineer and product
+specialist, Joji Singh, will be joining
+[SPEAKER_02]: for Q&A after the presentation.
+[SPEAKER_02]: Without further ado, I'll hand it over to
+Adrian.
+[SPEAKER_02]: Adrian, take it away, G.
+[SPEAKER_01]: Thanks, Brian.
+[SPEAKER_01]: Welcome, everybody.
+[SPEAKER_01]: Great to see you all.
+[SPEAKER_01]: Thanks for joining today.
+[SPEAKER_01]: We've got a lot to cover, so we're going
+to jump right in.
+[SPEAKER_01]: This is part two, the system.
+[SPEAKER_01]: I'm going to drop off camera for this
+portion to save bandwidth, but we'll come
+[SPEAKER_01]: back on for the Q&A.
+[SPEAKER_01]: So our primary objective is to design,
+sell, and commission mechanical systems
+[SPEAKER_01]: that serve indoor plant environments and
+allow for optimum plant performance,
+[SPEAKER_01]: secondary metabolite production,
+and long-term profitability.
+[SPEAKER_01]: These facilities are true manufacturing
+factories that produce high-quality food,
+[SPEAKER_01]: recreational products, and medicine on an
+industrial scale.
+[SPEAKER_01]: With homage paid to a book that we draw
+inspiration from called Plant Empowerment,
+[SPEAKER_01]: we view our role as supporting plant
+balances, not controlling air conditions.
+[SPEAKER_01]: The real art of good growing is to support
+the plant in maintaining its balances in
+[SPEAKER_01]: such a way that all factors for growth are
+optimal at the same time.
+[SPEAKER_01]: We're here to build on our part one
+webinar where we broke down all the needs
+[SPEAKER_01]: of cultivation and curing spaces.
+[SPEAKER_01]: And as we've shared, we must not do this
+in a vacuum, which is why everything we do
+[SPEAKER_01]: here needs to be squarely focused on all
+the important plant-focused topics that we
+[SPEAKER_01]: covered in part one.
+[SPEAKER_01]: With this solid foundation, let's spend
+some time exploring the process by which
+[SPEAKER_01]: the most appropriate mechanical systems
+are sized, selected, and controlled to
+[SPEAKER_01]: serve these cultivation and curing rooms.
+[SPEAKER_01]: Based on what we learned in part one,
+the mechanical systems need to have the
+[SPEAKER_01]: ability to do all of the things shown on
+the slide in each room.
+[SPEAKER_01]: Dehumidify, cool, heat, humidify,
+enrich with CO2, clean the air,
+[SPEAKER_01]: distribute the air for homogeneous air
+environment, and most importantly,
+[SPEAKER_01]: collect cultivation room-level data so
+that we know what is working, what needs
+[SPEAKER_01]: attention, and how we can use feedback
+from the plants to optimize production.
+[SPEAKER_01]: So can one system do all these things in
+an integrated fashion, or do you need
+[SPEAKER_01]: separate pieces of equipment?
+[SPEAKER_01]: Let's dig into that.
+[SPEAKER_01]: For decades, HVAC equipment has been
+designed to keep humans comfortable,
+[SPEAKER_01]: thus the term comfort cooling systems.
+[SPEAKER_01]: Subsequently, specialized process and
+manufacturing environments developed to
+[SPEAKER_01]: require specific environments.
+[SPEAKER_01]: Since people feel temperature more than
+humidity, and since we generate heat,
+[SPEAKER_01]: the majority of HVAC systems are designed
+to cool only.
+[SPEAKER_01]: Additionally, most process environments
+produce a lot of heat, think data centers.
+[SPEAKER_01]: So these process-oriented solutions also
+tend to be more sensible cooling-centric.
+[SPEAKER_01]: Indoor plant environments are special in
+the sense that they have living and
+[SPEAKER_01]: breathing organisms that happen to be
+immobile.
+[SPEAKER_01]: So consistent ratios of temperature and
+light on a day-to-day basis is key to
+[SPEAKER_01]: performance.
+[SPEAKER_01]: And while you may not feel it in a forest,
+plants are giving off virtually all of the
+[SPEAKER_01]: moisture that their roots uptake.
+[SPEAKER_01]: Each plant or tree is an evaporative
+cooler.
+[SPEAKER_01]: This dehumidification heavy load is a big
+reason why the mechanical systems that
+[SPEAKER_01]: serve them must be specialized.
+[SPEAKER_01]: On top of the large moisture removal
+requirement, these rooms also have a very
+[SPEAKER_01]: dynamic load profile between lights on and
+lights off periods, and the beginning
+[SPEAKER_01]: stages of vegetative growth to the end of
+the flowering cycle.
+[SPEAKER_01]: For the flowering cycles, which dominate
+the facility space needs in these
+[SPEAKER_01]: facilities, the load can be completely
+flipped 180 degrees every 12 hours.
+[SPEAKER_01]: There's a concept from part one that's
+worth repeating, and much like the law of
+[SPEAKER_01]: minimum for plant growth, the productivity
+of an indoor cultivation facility is
+[SPEAKER_01]: determined by its greatest limiting
+factor, or its most underperforming
+[SPEAKER_01]: system.
+[SPEAKER_01]: In our experience, the greatest limiting
+factor for most indoor facilities today is
+[SPEAKER_01]: their mechanical systems, or their ability
+to control the temperature and humidity of
+[SPEAKER_01]: their rooms.
+[SPEAKER_01]: The improvement of mechanical systems
+presents the greatest opportunity to
+[SPEAKER_01]: maximize the productivity for indoor
+cultivation businesses.
+[SPEAKER_01]: And this is exactly why Inspire was
+founded, to develop and deliver
+[SPEAKER_01]: purpose-built systems and controls that
+are assets and valuable tools for growers
+[SPEAKER_01]: and not a liability.
+[SPEAKER_01]: Now on the next slide, let's explore some
+of the specific differences between the
+[SPEAKER_01]: two types of facilities and systems,
+comfort cooling HVAC and HVAC and
+[SPEAKER_01]: dehumidification system meant for indoor
+plant environments.
+[SPEAKER_01]: So on the left side, you'll see the
+attributes for the HVAC systems for
+[SPEAKER_01]: comfort cooling, and on the right for
+indoor plant environments.
+[SPEAKER_01]: This whole conversation starts with the
+need for both temperature and humidity
+[SPEAKER_01]: control, also viewed through the lens of
+VPD, rather than just temperature control
+[SPEAKER_01]: only.
+[SPEAKER_01]: As such, plant-centric sequence of
+operations are required to respond to the
+[SPEAKER_01]: needs of the living organisms,
+whose needs are constantly changing,
+[SPEAKER_01]: and to manage the rest of the items on
+this list.
+[SPEAKER_01]: Sensible heat ratios are very different.
+[SPEAKER_01]: 50-50 cooling and dehumidification versus
+85 or 90% and 10 to 15% dehumidification,
+[SPEAKER_01]: in which requires airflow in the coils to
+be sized appropriately.
+[SPEAKER_01]: We have high number of air changes in the
+sense of how these spaces view air
+[SPEAKER_01]: changes.
+[SPEAKER_01]: These are 100% recirculating systems,
+but we are changing out the air every two
+[SPEAKER_01]: to three minutes in a 20 to 30 air changes
+per hour rate versus two to three air
+[SPEAKER_01]: changes.
+[SPEAKER_01]: This is a very dynamic load between day
+and night, and that requires variable
+[SPEAKER_01]: capacity control, both on cooling,
+reheat, airflow, where fixed capacity is
+[SPEAKER_01]: okay in many cases otherwise.
+[SPEAKER_01]: And reheat is required in order to deliver
+room-neutral air conditions and keep the
+[SPEAKER_01]: plants in conditions optimal for growth.
+[SPEAKER_01]: When we eliminate dehumidifiers,
+we're needing to reheat that air back up,
+[SPEAKER_01]: whereas in comfort cooling applications,
+you can deliver much colder air.
+[SPEAKER_01]: And in this case, CO2 is plant food and
+costs money to introduce.
+[SPEAKER_01]: Thus, air economizers are typically not
+applicable.
+[SPEAKER_01]: Biofiltration and air cleaning is
+extremely important and must be included.
+[SPEAKER_01]: The state laws differ, but universally,
+strict lab testing requirements and lack
+[SPEAKER_01]: of ability to use pesticides on this crop
+because it is ingested can lead to large
+[SPEAKER_01]: crop loss resulting from pests and
+pathogens.
+[SPEAKER_01]: Like everything in this unique
+application, the whole process is
+[SPEAKER_01]: interconnected by creating a culture of
+clean and improving the cleanliness of the
+[SPEAKER_01]: air environment within effective
+biofiltration systems.
+[SPEAKER_01]: You can reduce or eliminate preventative
+sprays and the labor costs associated with
+[SPEAKER_01]: them.
+[SPEAKER_01]: So now that we know what functions are
+required and how the needs differ from
+[SPEAKER_01]: typical comfort cooling to process cooling
+systems, let's take an important sanity
+[SPEAKER_01]: check with regards to the cultivation
+business needs.
+[SPEAKER_01]: So with the complex and multidisciplinary
+challenge that we are faced with as an
+[SPEAKER_01]: environmental system architect,
+so to speak, designers and builders,
+[SPEAKER_01]: and with so many different types of system
+variations to consider, we must base our
+[SPEAKER_01]: decision making process on the most
+important factors first.
+[SPEAKER_01]: Key performance indicators or KPIs are
+used to set the baseline targets,
+[SPEAKER_01]: and they must be continuously tracked
+starting from the first cycle.
+[SPEAKER_01]: We like to recommend using the second
+flower cycle as the true test of the
+[SPEAKER_01]: benchmarks that were set, since it is very
+challenging to load test these spaces and
+[SPEAKER_01]: commission them properly with plants and
+real load before bringing in your first
+[SPEAKER_01]: run and starting to cultivate.
+[SPEAKER_01]: So we suggest for our clients to really
+try to simulate that load in the space as
+[SPEAKER_01]: best as possible during the commissioning
+process, but it's not always practical.
+[SPEAKER_01]: What of these attributes do cultivation
+businesses need to succeed?
+[SPEAKER_01]: We regularly poll cultivators and cannabis
+business owners, and out of this long
+[SPEAKER_01]: list, the attributes that come back on the
+top of the list are quality, consistency,
+[SPEAKER_01]: speed to market, lowest operating cost,
+safety.
+[SPEAKER_01]: On the point of reduced cost of
+production, it is very important to not
+[SPEAKER_01]: forget about building efficiency into your
+facility from the start and taking
+[SPEAKER_01]: advantage of CAPEX offsets from the
+utility or state to help improve
+[SPEAKER_01]: efficiency and reduce cost of production.
+[SPEAKER_01]: This is where indoor and vertical farming
+industry can truly participate in the
+[SPEAKER_01]: triple bottom line concept that
+sustainable facility design can be good
+[SPEAKER_01]: for business, good for the environment,
+and good for the consumers.
+[SPEAKER_01]: So let's spend a couple of minutes digging
+into these details around efficiency and
+[SPEAKER_01]: incentives for offsets.
+[SPEAKER_01]: Dehumidification is an energy intensive
+process.
+[SPEAKER_01]: The HVAC dehumidification systems can
+comprise up to 50 to 60% of the total
+[SPEAKER_01]: facility energy consumption.
+[SPEAKER_01]: And as that's rolled up, that total energy
+accounts for 20 to 40% of your operating
+[SPEAKER_01]: costs.
+[SPEAKER_01]: The HVAC portion of the energy accounts
+for your total of 20 to 40% of your total
+[SPEAKER_01]: operating costs in a cultivation facility.
+[SPEAKER_01]: And investing in efficient HVAC and
+dehumidification systems lowers your
+[SPEAKER_01]: operating costs per pound in perpetuity.
+[SPEAKER_01]: Efficient systems are what you need to
+weather the storm of price compression and
+[SPEAKER_01]: supply and demand imbalances, which are
+guaranteed to happen as state markets
+[SPEAKER_01]: mature.
+[SPEAKER_01]: Most existing facilities today are not
+built to make it through these challenges.
+[SPEAKER_01]: By investing upfront, you can keep your
+costs down.
+[SPEAKER_01]: Don't expose yourself to these risks by
+doing it right the first time.
+[SPEAKER_01]: The utility and tax incentive programs
+offer free money and are only getting
+[SPEAKER_01]: better.
+[SPEAKER_01]: Custom rebates are available now in all
+states.
+[SPEAKER_01]: Prescriptive rebates are coming in many
+geographies.
+[SPEAKER_01]: Peak demand reduction incentives are very
+significant right now in California for
+[SPEAKER_01]: the next year and in a number of other
+states.
+[SPEAKER_01]: This could be as simple as scheduling your
+light cycles outside of the peak demand
+[SPEAKER_01]: hours or implementing controls retrofits.
+[SPEAKER_01]: Combined heat and power or CHP systems can
+gain both tax incentives and utility
+[SPEAKER_01]: rebates for the same project, which is a
+real win-win.
+[SPEAKER_01]: And we see more and more cultivation
+facilities taking advantage of CHP systems
+[SPEAKER_01]: as they can, in many cases, be the most
+financially viable solution to get a
+[SPEAKER_01]: project financed and built within a
+reasonable timeline.
+[SPEAKER_01]: Plus, we get all of our reheat for free.
+[SPEAKER_01]: The utility incentive programs are
+developing fast to stay apprised of
+[SPEAKER_01]: programs in your area and connect with the
+utility providers early.
+[SPEAKER_01]: Now, let's not forget that we don't design
+efficiency into the overall system just
+[SPEAKER_01]: for the sake of efficiency.
+[SPEAKER_01]: We must focus on the plant productivity
+first and then find ways to do it
+[SPEAKER_01]: efficiently.
+[SPEAKER_01]: And a little foreshadowing for what's to
+come today, but since we embrace an
+[SPEAKER_01]: integrated design approach, from the
+pre-construction stage, we actually can do
+[SPEAKER_01]: both of those successfully.
+[SPEAKER_01]: Now that we've got all the business level
+needs ranked, we have to make sure that
+[SPEAKER_01]: those track with mixing in sustainability
+and efficiency and the KPIs and all of
+[SPEAKER_01]: that we just discussed, we have to make
+sure that that is all going to jive with
+[SPEAKER_01]: the system considerations that the owner
+and client are looking for and the
+[SPEAKER_01]: building and site design constraints,
+which you see system considerations on the
+[SPEAKER_01]: left and design constraints on the right.
+[SPEAKER_01]: Capital costs and operating costs are
+extremely important.
+[SPEAKER_01]: You've got to get it right the first time.
+[SPEAKER_01]: HVAC is typically the largest capital
+investment on a project, and it is also
+[SPEAKER_01]: one of the most expensive to retrofit.
+[SPEAKER_01]: And there are really so many different
+competing factors here, whether you go
+[SPEAKER_01]: through level of control, efficiency,
+sustainability, like we just discussed,
+[SPEAKER_01]: the reliability, durability, complexity,
+maintenance requirements, who's going to
+[SPEAKER_01]: maintain it, how is your phasing set up
+for future phases and build out?
+[SPEAKER_01]: And are you focused on GMP cleanliness
+standards?
+[SPEAKER_01]: All of that has to be transitioned into
+how we're actually going to apply this
+[SPEAKER_01]: into this particular building or site.
+[SPEAKER_01]: And these design constraints are what the
+engineers, MEP engineers and architects
+[SPEAKER_01]: and other design professionals have to
+work with them.
+[SPEAKER_01]: These that you see on the screen are some
+of the the items that we see most often
+[SPEAKER_01]: overlooked.
+[SPEAKER_01]: Space and structural limitations.
+[SPEAKER_01]: Do you have enough utility?
+[SPEAKER_01]: Power, gas are the biggest.
+[SPEAKER_01]: Water is also very important.
+[SPEAKER_01]: CO2 availability.
+[SPEAKER_01]: Property line and neighbor complaints,
+both odor control and noise related,
+[SPEAKER_01]: can sink a project.
+[SPEAKER_01]: Biofiltration and pest exclusion needs to
+be considered and very, very, very
+[SPEAKER_01]: seriously in areas that are agriculturally
+dense.
+[SPEAKER_01]: And the controls, integration,
+air distribution, uniformity, how we're
+[SPEAKER_01]: putting the facility together all take
+space.
+[SPEAKER_01]: Now, all of these items have to be able to
+meet the building and energy code
+[SPEAKER_01]: compliance as well.
+[SPEAKER_01]: So this is a really multidisciplinary
+challenge.
+[SPEAKER_01]: And it's been said before, but it's worth
+repeating that it's imperative to get this
+[SPEAKER_01]: done right the first time because of how
+costly and challenging it is to retrofit
+[SPEAKER_01]: the HVAC systems.
+[SPEAKER_01]: So let's start looking at some different
+types of systems that are used commonly in
+[SPEAKER_01]: cultivation facilities.
+[SPEAKER_01]: The first place to start here is with what
+we call non-integrated systems.
+[SPEAKER_01]: These can also be called conventional,
+non-integrated, decoupled or legacy
+[SPEAKER_01]: systems.
+[SPEAKER_01]: During prohibition, cultivators were
+forced indoors to hide from law
+[SPEAKER_01]: enforcement.
+[SPEAKER_01]: And due to that illegality, they could not
+engage engineers or commercial HVAC system
+[SPEAKER_01]: providers or HVAC technicians to design
+and install mechanical systems to control
+[SPEAKER_01]: these spaces.
+[SPEAKER_01]: And this really led to a do-it-yourself
+mentality and propensity for using what
+[SPEAKER_01]: was available.
+[SPEAKER_01]: And specifically, we're talking about
+off-the-shelf residential people comfort
+[SPEAKER_01]: cooling systems used in conjunction with
+standalone dehumidifiers and oscillating
+[SPEAKER_01]: wall fans.
+[SPEAKER_01]: All of this gear can be bought at a local
+hydra shop or home depot.
+[SPEAKER_01]: For the cooling equipment, it can be
+packaged rooftop units, split systems,
+[SPEAKER_01]: mini splits, VRF systems, or two-pipe
+chill water fan coils.
+[SPEAKER_01]: All these systems are cooling devices and
+control off of a thermostat only.
+[SPEAKER_01]: Standalone dehumidifiers are required then
+to augment these HVAC units.
+[SPEAKER_01]: And they're heating only based on
+rejecting the heat of compression from the
+[SPEAKER_01]: dehumidifier into the space.
+[SPEAKER_01]: And the AC units now have to be sized
+appropriately to remove this heat rejected
+[SPEAKER_01]: by the dehumidifier, which is roughly 30%
+additional.
+[SPEAKER_01]: Several issues persist with this type of
+system configuration.
+[SPEAKER_01]: Suboptimal control in this relative
+humidity spike at lights off every night
+[SPEAKER_01]: where powdery mildew and botrytis can
+develop.
+[SPEAKER_01]: We see uncontrolled microclimates and
+uneven airflow and poor air mixing in
+[SPEAKER_01]: these spaces.
+[SPEAKER_01]: They're inherently inefficient based on
+that 30% extra heat load to remove from
+[SPEAKER_01]: the dehumidifiers, as I mentioned.
+[SPEAKER_01]: And these systems are really fighting
+against each other because it's
+[SPEAKER_01]: challenging to control.
+[SPEAKER_01]: There's pathogen risk.
+[SPEAKER_01]: There are risks with this type of design,
+since your technicians will be working on
+[SPEAKER_01]: the mechanical equipment above the canopy,
+as you see in the picture.
+[SPEAKER_01]: And condensate leaks are routinely
+dripping into the plants, which is a
+[SPEAKER_01]: common opportunity for water molds.
+[SPEAKER_01]: Sanitation between the cycles is also very
+challenging to achieve, since there's so
+[SPEAKER_01]: much equipment in the room and so many
+surfaces to clean.
+[SPEAKER_01]: So these all challenges really beg the
+question, can we do it better?
+[SPEAKER_01]: As experienced HVAC engineers,
+we know that we have the technology to do
+[SPEAKER_01]: it better.
+[SPEAKER_01]: So why wouldn't we?
+[SPEAKER_01]: Some say that the first cost savings and
+many small redundant units are worth the
+[SPEAKER_01]: trade off.
+[SPEAKER_01]: The data tells us otherwise, and the
+industry is maturing too quickly to not
+[SPEAKER_01]: take advantage of today's technologies.
+[SPEAKER_01]: Let's get into how we can mitigate these
+challenges and hit the mark with the owner
+[SPEAKER_01]: requirements for their business
+operational efficiency that we discussed
+[SPEAKER_01]: earlier and maybe make it a high
+performance and sustainable system.
+[SPEAKER_01]: Now quickly before we move past
+non-integrated systems for the rest of the
+[SPEAKER_01]: presentation, I do want to mention that
+for the hundreds and thousands of rooms
+[SPEAKER_01]: across North America that are already
+built with these systems, HVAC controls
+[SPEAKER_01]: retrofits and sub-canopy airflow systems
+may be some of the best ways to get
+[SPEAKER_01]: reliable data and better control from
+these existing systems and to be able to
+[SPEAKER_01]: apply a plant-centric sequence of
+operations, put together an action plan to
+[SPEAKER_01]: supplement additional capacity if the
+systems are undersized, and utilize open
+[SPEAKER_01]: source architecture for control systems to
+be able to integrate into future retrofits
+[SPEAKER_01]: of the full HVAC systems as additional
+capital becomes available.
+[SPEAKER_01]: These controls and airflow retrofits can
+often be supported by the utility rebate
+[SPEAKER_01]: programs that we touched on, which really
+helps to offset those investment costs
+[SPEAKER_01]: further and improves the ROIs.
+[SPEAKER_01]: Now let's dig into integrated systems.
+[SPEAKER_01]: Here we graduate to what we term
+integrated HVAC and dehumidification
+[SPEAKER_01]: systems or HVACD, which highlights the
+importance of dehumidification in this
+[SPEAKER_01]: process.
+[SPEAKER_01]: We see these also being called reheat
+systems based on the use of hot gas
+[SPEAKER_01]: reheat.
+[SPEAKER_01]: In that case, the heat is recovered off
+the compressor that would have been sent
+[SPEAKER_01]: out to the condenser to be rejected.
+[SPEAKER_01]: The HVAC system is integrated to ambient,
+and this is a DX or direct expansion
+[SPEAKER_01]: system.
+[SPEAKER_01]: We'll go into those more depth in a
+moment.
+[SPEAKER_01]: Hydronic systems are another type of
+integrated system, but we must be specific
+[SPEAKER_01]: with our language and naming conventions.
+[SPEAKER_01]: Four-pipe hydronic system versus a
+two-pipe hydronic system, which is
+[SPEAKER_01]: integrated a four-pipe and two-pipe is a
+cooling only supporting a non-integrated
+[SPEAKER_01]: system.
+[SPEAKER_01]: We'll get into more of this in a moment.
+[SPEAKER_01]: As HVAC engineering professionals,
+we know that a well-engineered system is
+[SPEAKER_01]: the best solution when faced with such a
+multifaceted design and construction
+[SPEAKER_01]: challenge.
+[SPEAKER_01]: A properly designed integrated system
+provides cooling, heating, and
+[SPEAKER_01]: dehumidification in a single engineered
+system.
+[SPEAKER_01]: Since all of this is happening in
+integrated air handling units,
+[SPEAKER_01]: we can treat all the air in each room for
+pests and pathogens on a continuous basis
+[SPEAKER_01]: and keep the grow room clean with no
+foreign materials to clean.
+[SPEAKER_01]: Remember that air is being exchanged every
+two to three minutes.
+[SPEAKER_01]: With an integrated system, we get the
+benefits of a tightly controlled and
+[SPEAKER_01]: homogeneous air environment with
+controlled transitions between photo
+[SPEAKER_01]: periods.
+[SPEAKER_01]: We get to pick up inherent efficiency
+gains in the 30 to 40% range compared to
+[SPEAKER_01]: non-integrated systems by removing
+standalone dehumidifiers.
+[SPEAKER_01]: We focus on the systems being right-sized
+and reusing energy and water in any way
+[SPEAKER_01]: possible.
+[SPEAKER_01]: It really sounds too good to be true,
+right?
+[SPEAKER_01]: But we can balance all these spinning
+plates with a simple and elegant system
+[SPEAKER_01]: design.
+[SPEAKER_01]: First, I thought it would be good to
+quickly examine two rooms from a recent
+[SPEAKER_01]: client side-by-side study.
+[SPEAKER_01]: This is an example of an integrated HVAC
+system on the top left versus a
+[SPEAKER_01]: conventional non-integrated system on the
+bottom right and what the control trends
+[SPEAKER_01]: look like.
+[SPEAKER_01]: This is two different flower rooms,
+both in week four using LED lights,
+[SPEAKER_01]: both in a two-tier racking system the same
+week in June of last year at the same
+[SPEAKER_01]: facility.
+[SPEAKER_01]: Note the relative humidity spikes of 15 to
+20% every time the lights go out,
+[SPEAKER_01]: which is a critical transition point in
+these dynamic spaces.
+[SPEAKER_01]: The relative humidity line is the purple
+line in the trend on the bottom right.
+[SPEAKER_01]: And you can see much tighter control of
+relative humidity through these
+[SPEAKER_01]: transitions with the integrated system.
+[SPEAKER_01]: Note the speed to the control points or
+how quickly set points can be achieved.
+[SPEAKER_01]: But the most important part of this whole
+story is that the one on the bottom right
+[SPEAKER_01]: was getting 28 grams a square foot of
+sellable flower and the one on the top
+[SPEAKER_01]: left is getting 55 grams a square foot
+consistently.
+[SPEAKER_01]: We've got double the yields with
+integrated environmental control.
+[SPEAKER_01]: Now let's go from here to talk about the
+different types of integrated systems that
+[SPEAKER_01]: we deploy as a comprehensive solutions
+provider.
+[SPEAKER_01]: This type of system is called DX,
+which stands for direct expansion.
+[SPEAKER_01]: This is the type of home air conditioner
+you likely have.
+[SPEAKER_01]: It contains the full refrigeration circuit
+in each unit or system.
+[SPEAKER_01]: This can be a split system or a packaged
+unit.
+[SPEAKER_01]: It can come in an air-cooled variety with
+the air-cooled condenser or a water-cooled
+[SPEAKER_01]: condenser.
+[SPEAKER_01]: And in general, air-cooled DX is the most
+common system that we see today due to
+[SPEAKER_01]: lower first cost, technician familiarity,
+and shorter lead times.
+[SPEAKER_01]: However, we see it transitioning to
+hydraulic systems and will continue to
+[SPEAKER_01]: transition more as the market matures into
+true manufacturing facilities at scale
+[SPEAKER_01]: that need to prove they manufactured their
+products at facilities that can be
+[SPEAKER_01]: validated by regulatory bodies.
+[SPEAKER_01]: We advocate for our clients to be ready to
+meet GMPs if they so desire from the
+[SPEAKER_01]: minute they turn on their facility and we
+enable them to do that.
+[SPEAKER_01]: We offer our Canopy, Canopy Plus and
+Preservation product lines in both
+[SPEAKER_01]: air-cooled and water-cooled DX systems to
+meet our clients diverse needs.
+[SPEAKER_01]: And you can see a few different form
+factors installed in these pictures from
+[SPEAKER_01]: left to right.
+[SPEAKER_01]: DX package unit on the left to a
+water-cooled energy recovery system in the
+[SPEAKER_01]: middle to an air-cooled DX split system on
+the top right.
+[SPEAKER_01]: And remember, these are all integrated
+systems, but just in different flavors.
+[SPEAKER_01]: So now let's look at the other type,
+hydronic systems.
+[SPEAKER_01]: Terminology here, like I mentioned,
+before is really important.
+[SPEAKER_01]: These are called chilled water or hot
+water systems or hydronic systems,
+[SPEAKER_01]: or you hear the terms four-pipe or
+two-pipe thrown around.
+[SPEAKER_01]: What you see in the diagram on the top
+right is four pipes, where you have,
+[SPEAKER_01]: in this case, you have six pipes because
+it's a water-cooled chiller, but on the
+[SPEAKER_01]: load side to the air-handling units,
+you have four pipes, two for cooling,
+[SPEAKER_01]: two for heating, chilled water and hot
+water.
+[SPEAKER_01]: A two-pipe system is only going to provide
+you one or the other at a time.
+[SPEAKER_01]: So that would be more in the
+non-integrated camp or a four-pipe system
+[SPEAKER_01]: would allow you to do integrated control.
+[SPEAKER_01]: Now these chillers and the chiller plants
+can be air-cooled or they can be
+[SPEAKER_01]: water-cooled.
+[SPEAKER_01]: They can be electrically driven or they
+can be gas-driven.
+[SPEAKER_01]: And heat recovery is available on all of
+these types of chillers, which means we
+[SPEAKER_01]: don't need to pay money or use resources
+for reheat.
+[SPEAKER_01]: These systems are very customizable to
+meet your site needs as far as space
+[SPEAKER_01]: considerations and phasing, and better
+precision control is available via
+[SPEAKER_01]: modulating water valves, which really
+allow for infinite variable capacity
+[SPEAKER_01]: control.
+[SPEAKER_01]: Optimization opportunities exist for
+sizing an overall system and for your
+[SPEAKER_01]: facility because you can size your plant
+based on the block load of your facility
+[SPEAKER_01]: rather than the peak load, which allows
+you to shave 20 to 30 percent of the total
+[SPEAKER_01]: capacity off of the plant.
+[SPEAKER_01]: There's an opportunity for phasing,
+particularly with modular chillers and
+[SPEAKER_01]: pumps, which allows for additional
+redundancy as well as you build out your
+[SPEAKER_01]: plant.
+[SPEAKER_01]: We typically see these systems being
+chosen when the total facility size
+[SPEAKER_01]: reaches maybe 300 to 400 tons total.
+[SPEAKER_01]: Now I want you to take note of the
+gas-fired chiller on the bottom of the
+[SPEAKER_01]: slide with a partner of ours called
+TicoGen.
+[SPEAKER_01]: This animal uses natural gas to produce
+chilled water with no middleman and
+[SPEAKER_01]: business owners that proactively
+understand their utility rate structure
+[SPEAKER_01]: and the relative costs of electricity,
+gas, and water in comparison to each other
+[SPEAKER_01]: can make the best financial decisions,
+and many times those projects end up
+[SPEAKER_01]: including a gas-fired chiller plant.
+[SPEAKER_01]: Let's compare and contrast what we just
+learned about these two types of systems
+[SPEAKER_01]: quickly, both integrated but different.
+[SPEAKER_01]: On the left we have the attributes related
+to DX systems and the hydronic systems are
+[SPEAKER_01]: on the right.
+[SPEAKER_01]: We talked about the individual DX circuits
+per room and per unit and the many
+[SPEAKER_01]: distributed DX circuits to maintain versus
+consolidation and fewer at a chiller
+[SPEAKER_01]: plant.
+[SPEAKER_01]: We talked about good control versus
+precise control.
+[SPEAKER_01]: We talked about redundancy and how it can
+be applied where a direct expansion on a
+[SPEAKER_01]: room-by-room unit basis you would need an
+additional unit on every single room
+[SPEAKER_01]: rather than building in redundancy into
+the chiller plant.
+[SPEAKER_01]: And we do have a lower first cost for
+direct expansion systems but the return on
+[SPEAKER_01]: investment breaks even really at about 15
+to 20,000 square feet of canopy and
+[SPEAKER_01]: facilities of any size larger should
+always be looking at hydronic systems.
+[SPEAKER_01]: Both systems required skilled mechanical
+technicians to maintain and both systems
+[SPEAKER_01]: need engaged and experienced design and
+construction and maintenance teams.
+[SPEAKER_01]: This is not just something for one type of
+system or the other.
+[SPEAKER_01]: Again you're only as good as your weakest
+link so don't let that be your HVAC system
+[SPEAKER_01]: or your HVAC service company.
+[SPEAKER_01]: Retain on a service side, retain a yearly
+contract with your service company so that
+[SPEAKER_01]: they can handle routine preventative
+maintenance and be available for
+[SPEAKER_01]: emergencies at the best rate and can
+prioritize availability.
+[SPEAKER_01]: So what are the ways, are these the only
+real ways you know we talked about these
+[SPEAKER_01]: two different main types of systems,
+are there other ways that we can meet this
+[SPEAKER_01]: challenge?
+[SPEAKER_01]: It's important to talk about you know
+there are other proven technologies out
+[SPEAKER_01]: there.
+[SPEAKER_01]: There's no free lunch though right and
+there's trade-offs with all of these.
+[SPEAKER_01]: At Inspire we pride ourselves in a brand
+agnostic approach that specializes in
+[SPEAKER_01]: finding the right system and HVAC and
+controls system for each project.
+[SPEAKER_01]: It requires continuous improvement and
+innovation so we're always evaluating all
+[SPEAKER_01]: types of technologies to determine what
+our clients can benefit most from.
+[SPEAKER_01]: But technologies need to be more than a
+great idea or conceptual opportunity for
+[SPEAKER_01]: efficiency or other benefits.
+[SPEAKER_01]: In order to be commercialized and used on
+these facilities we must be sure they're
+[SPEAKER_01]: proven for this special application of
+indoor plant environments and that they
+[SPEAKER_01]: can be cost-effective, serviceable,
+reliable.
+[SPEAKER_01]: Dave to say we're very picky about what we
+implement in the field and our clients
+[SPEAKER_01]: look to us to be their subject matter
+experts, gatekeepers and sort of a safety
+[SPEAKER_01]: net.
+[SPEAKER_01]: We only look to support new innovations
+when we can see positive results in
+[SPEAKER_01]: third-party verification and see the
+systems run in person.
+[SPEAKER_01]: With that said there are several proven
+dehumidification technologies on the
+[SPEAKER_01]: market that we have found to offer varying
+levels of opportunity for sustainable and
+[SPEAKER_01]: high performance design.
+[SPEAKER_01]: All four of the types of energy recovery
+devices shown on this slide have a similar
+[SPEAKER_01]: efficiency improvement over baseline but
+all have unique pros and cons.
+[SPEAKER_01]: After careful consideration and field
+trials our Canopy Plus line utilizes the
+[SPEAKER_01]: water-to-water runaround coil concept to
+recover warm room air which pre-cools the
+[SPEAKER_01]: dehumidification coil and then
+subsequently reheats the air off the coil
+[SPEAKER_01]: as the first stage of reheat.
+[SPEAKER_01]: This results in increased efficiency for
+the system of 30 to 50 percent over brute
+[SPEAKER_01]: force cooling and tighter control with
+both air-cooled DX, water-cooled DX or
+[SPEAKER_01]: four-pipe hydronic systems.
+[SPEAKER_01]: The biggest word of caution with any new
+technology is the mandate that you see it
+[SPEAKER_01]: in real life and can truly validate the
+performance and claims with third-party
+[SPEAKER_01]: data.
+[SPEAKER_01]: Speaking of third-party testing data,
+I thought this would be a good transition
+[SPEAKER_01]: into one of the places where we see a lot
+of snake oil in the cannabis industry and
+[SPEAKER_01]: honestly the whole HVAC industry now that
+we've just lived through a pandemic and
+[SPEAKER_01]: that is in air cleaning devices.
+[SPEAKER_01]: I'd like to share the technology we trust
+for our plant environment What you see
+[SPEAKER_01]: here is a photocatalytic oxidative air
+cleaner or PCO for short.
+[SPEAKER_01]: This air cleaning panel reduces the risk
+of pests and pathogen contamination and
+[SPEAKER_01]: failing lab tests.
+[SPEAKER_01]: Since cultivators must pass third-party
+quality assurance testing and provide COAs
+[SPEAKER_01]: along with their sellable product,
+it's imperative to monitor and regulate
+[SPEAKER_01]: the relatively high particulate pest
+pathogen VOC loads within these spaces.
+[SPEAKER_01]: Particulate capture filters of mercury
+13-14 range will typically catch particle
+[SPEAKER_01]: size one micron and larger and we don't
+forget to actually change those filters on
+[SPEAKER_01]: a regular basis or hire a service
+contractor to change them on a schedule.
+[SPEAKER_01]: But PCO air cleaners are the primary
+active biofiltration solution that we
+[SPEAKER_01]: incorporate in our systems in conjunction
+with those passive filters.
+[SPEAKER_01]: These can be in-room units or in-duct
+systems or in-unit systems and typically
+[SPEAKER_01]: duct mounted is chosen since we're already
+bringing all the air through these systems
+[SPEAKER_01]: in the ducting system every two to three
+minutes.
+[SPEAKER_01]: Third-party testing data and validation is
+required for all air cleaning technology
+[SPEAKER_01]: to be considered.
+[SPEAKER_01]: And in addition to the recirculating units
+serving cultivation and curing spaces,
+[SPEAKER_01]: we can apply this air cleaning technology
+into separate supply and exhaust fan
+[SPEAKER_01]: filter units that are used to introduce
+clean outdoor air or purge gases and
+[SPEAKER_01]: handle odor control, rebalance the gas
+mixture of air in the sealed room,
+[SPEAKER_01]: or use it as an economizer sequence if the
+outside air conditions may be available.
+[SPEAKER_01]: One spot we see this most effectively used
+in is in an emergency mode to be able to
+[SPEAKER_01]: bring in outside air as a backup for any
+mechanical system failures that need time
+[SPEAKER_01]: to repair.
+[SPEAKER_01]: So we offer all these different ancillary
+items with our integrated systems as well
+[SPEAKER_01]: as a la carte.
+[SPEAKER_01]: Now speaking about sub canopy air moving
+devices, I wanted to talk about airflow
+[SPEAKER_01]: and air movement.
+[SPEAKER_01]: When discussing airflow in a cultivation
+or curing room, we must consider all air
+[SPEAKER_01]: moving devices serving the space as a
+complete system, even if they're not
+[SPEAKER_01]: physically connected.
+[SPEAKER_01]: In an integrated system, the main air
+handler or air handlers are used to
+[SPEAKER_01]: condition and circulate air as a component
+of a heating, ventilating, and air
+[SPEAKER_01]: conditioning system.
+[SPEAKER_01]: The air handler connects to duct work that
+in turn distributes the conditioned cool
+[SPEAKER_01]: dry air throughout the grow space before
+it returns to the air handling unit.
+[SPEAKER_01]: The movement of air through an indoor grow
+space is imperative to maintaining a
+[SPEAKER_01]: healthy garden.
+[SPEAKER_01]: Without proper airflow, plants may not be
+able to evaporate water at optimal levels,
+[SPEAKER_01]: stunting photosynthesis and carbon
+assimilation.
+[SPEAKER_01]: Furthermore, areas of high humidity are
+prone to pest infestation, mold,
+[SPEAKER_01]: or mildew.
+[SPEAKER_01]: So our goal is to create homogeneous
+airflow throughout the entire grow space.
+[SPEAKER_01]: Fortunately, we can't solely rely on the
+HVAC system for the in-room airflow since
+[SPEAKER_01]: we're designing that system based on
+maximum moisture removal as a means of
+[SPEAKER_01]: making the system as cost effective as
+possible.
+[SPEAKER_01]: However, great care consideration should
+be taken when designing the supplier and
+[SPEAKER_01]: return air duct configurations within room
+layout and in-room airflow devices because
+[SPEAKER_01]: the room performance depends on it.
+[SPEAKER_01]: The duct work approaches and designs
+differ between single-tier and multi-tier
+[SPEAKER_01]: rooms.
+[SPEAKER_01]: Sub-canopy airflow systems must be used in
+multi-tier gardens.
+[SPEAKER_01]: You can see a CFD modeling of the
+sub-canopy system that we offer in the
+[SPEAKER_01]: middle of the page.
+[SPEAKER_01]: Top canopy air movement devices should
+also be considered.
+[SPEAKER_01]: Unit performance depends on a good duct
+work design and installation and in-room
+[SPEAKER_01]: airflow devices that are designed together
+for optimal performance.
+[SPEAKER_01]: We've seen many, many different rooms in
+operation and can help provide suggestions
+[SPEAKER_01]: for best practices in an over-the-shoulder
+type fashion in collaboration with the
+[SPEAKER_01]: mechanical engineers when we become
+engaged in projects and equipment has been
+[SPEAKER_01]: purchased.
+[SPEAKER_01]: The CFD models in the middle of the screen
+show one such design concept that we
+[SPEAKER_01]: support.
+[SPEAKER_01]: In this scenario, we're introducing the
+supplier into the working aisle on the
+[SPEAKER_01]: right-hand side and sending it down the
+racks with sub-canopy airflow fans and
+[SPEAKER_01]: tubes for the return air grills to pick up
+at the other end of each tier.
+[SPEAKER_01]: And return the air to the air handling
+units.
+[SPEAKER_01]: We typically see rack lengths of less than
+40 feet being best for reducing
+[SPEAKER_01]: microclimates and dedicated return air
+grills locations for each tier rack really
+[SPEAKER_01]: help bring, move the air through the room.
+[SPEAKER_01]: So with so many different permutations of
+system configurations and ancillary items
+[SPEAKER_01]: to integrate, how do we know that the room
+operation will be consistent?
+[SPEAKER_01]: Well, the answer is with accurate data
+collection to inform a plant-centric
+[SPEAKER_01]: controls and sequence of operations.
+[SPEAKER_01]: And we've discussed throughout the
+presentation today, typical factory
+[SPEAKER_01]: control sequence are not applicable to
+this industry as they're designed for
+[SPEAKER_01]: people comfort.
+[SPEAKER_01]: We require specialized sequence of
+operations for cannabis and other indoor
+[SPEAKER_01]: plant environments.
+[SPEAKER_01]: It has taken us aggregating and optimizing
+the control strategies over the past six
+[SPEAKER_01]: plus years with a multidisciplinary task
+force comprised of plant physiologists,
+[SPEAKER_01]: controlled engineers, HVAC engineers,
+crop scientists, biologists, and the many
+[SPEAKER_01]: channel partners who serve the space to
+develop what we believe to be the first
+[SPEAKER_01]: true plant-centric sequence of operation
+available today in the industry.
+[SPEAKER_01]: Today, we implement this standardized
+controller with embedded sequence of
+[SPEAKER_01]: operation on all of our air handlers,
+both hydronic and DX.
+[SPEAKER_01]: And these can also be deployed in a
+retrofit solution for non-integrated
+[SPEAKER_01]: systems or onto existing integrated air
+handlers for lower cost.
+[SPEAKER_01]: All the sensor data is collected with
+multiple aspirated sensor boxes per tier
+[SPEAKER_01]: and located within the plant canopy.
+[SPEAKER_01]: This data is aggregated in our controllers
+and connected throughout the facility with
+[SPEAKER_01]: a simple ethernet-based LAN, which
+connects the field devices and allows for
+[SPEAKER_01]: cloud-based control, monitoring,
+and alarming.
+[SPEAKER_01]: And the sequence of optimization
+strategies are many.
+[SPEAKER_01]: Intelligent set-point ramping,
+smooth transitions, speed of change,
+[SPEAKER_01]: negative and positive temperature
+differentials, cold air dumps,
+[SPEAKER_01]: gas composition resets, room
+pressurization control.
+[SPEAKER_01]: We've really only scratched the surface
+with crop-steering techniques that can be
+[SPEAKER_01]: implemented through the plant's
+environment.
+[SPEAKER_01]: And back to an important concept from part
+one, genotype or genetics plus environment
+[SPEAKER_01]: equals phenotype.
+[SPEAKER_01]: Everyone is after the next hot phenotype.
+[SPEAKER_01]: Environmental control is a fundamental
+building block to grow better cannabis and
+[SPEAKER_01]: to do it more efficiently.
+[SPEAKER_01]: It is the critical first step in a
+comprehensive integrated pest management
+[SPEAKER_01]: program that reduces pathogen pressure and
+labor expenditure.
+[SPEAKER_01]: Integrated control is the best form of
+crop insurance.
+[SPEAKER_01]: You really only have one chance to do it
+right.
+[SPEAKER_01]: It could be the difference between
+building long-term asset value and going
+[SPEAKER_01]: bankrupt, frankly.
+[SPEAKER_01]: The industry is really on a knife's edge.
+[SPEAKER_01]: Competition is increasing, prices are
+plummeting, margins are shrinking,
+[SPEAKER_01]: and you can't afford to do it wrong.
+[SPEAKER_01]: You can't afford not to spend the money on
+environmental control.
+[SPEAKER_01]: This is why Inspire focuses exclusively on
+indoor plant environments.
+[SPEAKER_01]: Our team's passionate plant and
+engineering intimacy combined with a
+[SPEAKER_01]: diverse lineup of purpose-built
+environmental control solutions helps
+[SPEAKER_01]: ensure your cultivation environment is not
+your limiting factor.
+[SPEAKER_01]: I'd like to take this moment to thank the
+individuals and companies who are helping
+[SPEAKER_01]: the industry grow better crops.
+[SPEAKER_01]: Lighting providers providing the necessary
+photons, automated fertigation companies
+[SPEAKER_01]: that have allowed us to fine-tune drybacks
+and mineral balance, racking providers
+[SPEAKER_01]: that optimize room utilization,
+data collection, monitoring, and control
+[SPEAKER_01]: systems that allow us to see the impact of
+precision control in real time,
+[SPEAKER_01]: the education and media partners for
+sharing knowledge to the industry on the
+[SPEAKER_01]: challenges of day-to-day cultivation,
+the genetics providers that develop great
+[SPEAKER_01]: cultivars, and the multidisciplinary
+consultants that help bring entrepreneurs'
+[SPEAKER_01]: visions to life.
+[SPEAKER_01]: We talk a lot about integration of
+temperature, humidity, and CO2,
+[SPEAKER_01]: but it's the integration and understanding
+of all of these people, partners,
+[SPEAKER_01]: and systems that make cannabis businesses
+successful.
+[SPEAKER_01]: And with that, let's open it up for some
+questions.
+Right?
+[SPEAKER_02]: All right.
+[SPEAKER_02]: Thanks, Adrian.
+[SPEAKER_02]: Lots of good info there.
+[SPEAKER_02]: I've got a question here I think that
+should be directed to you, Joji.
+[SPEAKER_02]: How do outdoor conditions and geography
+impact unit selection and performance?
+[SPEAKER_00]: Yeah, that's a great question because
+outdoor environments play a big factor in
+[SPEAKER_00]: not just determining what style of units
+we kind of consider for the job,
+[SPEAKER_00]: but also what components we're going to
+select for the job.
+[SPEAKER_00]: And, you know, this becomes really
+important in environments and geographies
+[SPEAKER_00]: with extreme weather conditions.
+[SPEAKER_00]: So, for example, let's take the Northeast
+as an example.
+[SPEAKER_00]: Northeast, as we know, during winter
+times, they can go below freezing,
+[SPEAKER_00]: and then during the summers, they can go
+above 90, sometimes even up close to the
+[SPEAKER_00]: hundreds.
+[SPEAKER_00]: And so we have to determine, do we have
+the right components to actually handle
+[SPEAKER_00]: those extreme condition swings and have an
+operational units?
+[SPEAKER_00]: Because if you don't have the right
+components selected for such swings,
+[SPEAKER_00]: you're going to see a drop in your
+performance for the system and then a drop
+[SPEAKER_00]: in environmental control for your rooms.
+[SPEAKER_02]: So making sure, yeah.
+[SPEAKER_02]: That makes sense.
+[SPEAKER_02]: I think we've even seen units just stop
+working, right, when it gets to low
+[SPEAKER_02]: ambient temperatures and even very
+performance that suffers terribly.
+[SPEAKER_02]: At the high side, right?
+[SPEAKER_00]: Yeah, 100%.
+[SPEAKER_00]: And I'm sure like, as a lot of the
+listeners probably know, like keeping the
+[SPEAKER_00]: right sort of pressure and temperatures
+throughout the systems is extremely
+[SPEAKER_00]: important.
+[SPEAKER_00]: And that becomes very suspect to,
+I guess, dropping off during these low
+[SPEAKER_00]: ambient and high ambient conditions.
+[SPEAKER_00]: And so being able to kind of predict that
+and combat that beforehand when you're
+[SPEAKER_00]: doing your unit selection is extremely
+important.
+[SPEAKER_02]: Sounds good.
+[SPEAKER_02]: All right, let's see.
+[SPEAKER_02]: Got another one here.
+[SPEAKER_02]: What are some of the gotchas you've run
+into coming into projects early versus
+[SPEAKER_02]: late?
+[SPEAKER_02]: And I think I'll direct that one to
+Adrian.
+[SPEAKER_01]: Yeah, I tried to pepper a couple of them
+in there throughout.
+[SPEAKER_01]: There's a lot that we run into.
+[SPEAKER_01]: We could talk about operational and
+maintenance and things like that
+[SPEAKER_01]: throughout the like, hey, make sure you
+change your filters routinely.
+[SPEAKER_01]: We find that to be something that happens,
+that doesn't happen on a routine basis
+[SPEAKER_01]: enough.
+[SPEAKER_01]: And that can really impact your
+performance.
+[SPEAKER_01]: What we see more on the design side,
+if we're sort of looking at it from that
+[SPEAKER_01]: perspective, we see scope gaps really
+rampant between different providers of
+[SPEAKER_01]: systems.
+[SPEAKER_01]: And I think really effectively maybe not
+taking advantage of the construction
+[SPEAKER_01]: management and general contractor trade
+that exists really for that reason,
+[SPEAKER_01]: to truly try to eliminate scope gaps on
+projects as early as possible.
+[SPEAKER_01]: Because those professionals are out there
+and exist and would do wonders on helping
+[SPEAKER_01]: to keep a project on time and on budget
+and avoid unnecessary and very,
+[SPEAKER_01]: very costly and challenging change orders
+that end up happening.
+[SPEAKER_01]: We see many facilities that don't have
+enough power.
+[SPEAKER_01]: That's one right off the bat.
+[SPEAKER_01]: And it can be, it depends on where you're
+at.
+[SPEAKER_01]: Some utilities say, great, we'll have it
+for you in a couple of months.
+[SPEAKER_01]: Others say, great, we'll have it for you
+in a couple of years.
+[SPEAKER_01]: And what's your financial situation like
+at that particular site or building over
+[SPEAKER_01]: those couple of year period that you're
+waiting for the utilities to bring you
+[SPEAKER_01]: that power?
+[SPEAKER_01]: And so one of the other reasons that we
+see combined heat and power plant
+[SPEAKER_01]: facilities being, combined heat and power
+systems being utilized at these types of
+[SPEAKER_01]: facilities more often, because you may
+have gas available where you don't have
+[SPEAKER_01]: electricity.
+[SPEAKER_01]: And structural limitations and
+deficiencies is another huge one.
+[SPEAKER_01]: I mean, I think we recently had a project,
+it was a $6 million project and they found
+[SPEAKER_01]: out that they were gonna have to make $2
+million of structural upgrades to be able
+[SPEAKER_01]: to make the project work and then they
+said, well, that's not gonna work for us.
+[SPEAKER_01]: So let's go find a different building and
+facility.
+[SPEAKER_01]: And all that money was down the drain
+upfront.
+[SPEAKER_01]: So those are just a couple that come to
+mind.
+[SPEAKER_02]: Yeah, that's great.
+[SPEAKER_02]: Joe, do you have anything else to add
+there?
+[SPEAKER_00]: Yeah, I think one that really stood out to
+me was just facilities that kind of
+[SPEAKER_00]: utilize their overall square footage,
+like their square footage for the building
+[SPEAKER_00]: and then they're limited on how much
+clearance they have for the units,
+[SPEAKER_00]: like alongside the building.
+[SPEAKER_00]: We've seen that kind of come up a bit that
+people sometimes overlook.
+[SPEAKER_02]: Yeah, I'd also add issues, lots of issues
+around sizing the HVAC systems as well
+[SPEAKER_02]: around the latent insensible, the reheat,
+the supplemental heat, whether or not to
+[SPEAKER_02]: use humidification at early stages of
+stage flower, right?
+[SPEAKER_02]: There's a transition from veg to flower
+where the humidity conditions change and
+[SPEAKER_02]: you can shock the plants or in early stage
+flower, you don't have enough humidity
+[SPEAKER_02]: coming off of the plants, enough
+evaporation coming off of the plants to
+[SPEAKER_02]: give the units sufficient load.
+[SPEAKER_02]: So I think Adrian and Joe, you guys could
+talk more specific about this,
+[SPEAKER_02]: but being able to, just accommodating the
+life cycle of the plants and going from
+[SPEAKER_02]: room to room, there are lots of
+considerations that need to be made as
+[SPEAKER_02]: well.
+[SPEAKER_01]: Yeah, high level, you need to be able to
+provision for humidifiers in your
+[SPEAKER_01]: flowering spaces in order to do that VPD
+match from veg over to flower.
+[SPEAKER_01]: And another one that I neglected to
+mention and just thought of was the
+[SPEAKER_01]: importance of tight room construction,
+right?
+[SPEAKER_01]: Everything that we've talked about here
+about environmental control can only be
+[SPEAKER_01]: done if you have tight room construction
+and we're not losing air into external
+[SPEAKER_01]: environments, either through the
+construction of the room itself or through
+[SPEAKER_01]: the duct work, joining the air handling
+unit systems to the room itself.
+[SPEAKER_02]: That's a good point.
+[SPEAKER_02]: I think, yeah, the assumption with all of
+this is that you've got good construction
+[SPEAKER_02]: and if you've got infiltrations and
+exfiltrations of heat or moisture,
+[SPEAKER_02]: or CO2 or whatever else, then the
+performance of your room and your facility
+[SPEAKER_02]: is gonna suffer.
+[SPEAKER_02]: Okay, let's see, another one here related
+to the conventional non-integrated stuff.
+[SPEAKER_02]: Is it possible to get good control of the
+environment with mini splits and
+[SPEAKER_02]: dehumidifiers?
+[SPEAKER_02]: Joji, why don't I toss that one to you?
+[SPEAKER_00]: Yeah, man, that's actually a great
+question, especially where the current
+[SPEAKER_00]: space and how a lot of our current
+facilities are set up.
+[SPEAKER_00]: Alone, these units can definitely provide
+moderate control to their local
+[SPEAKER_00]: environments.
+[SPEAKER_00]: And when I say local, I mean the square
+footage that you usually see on these
+[SPEAKER_00]: specification sheets.
+[SPEAKER_00]: They kind of think of, you can kind of
+think of it like a hemisphere.
+[SPEAKER_00]: Each individual standalone or mini split
+is controlling their own hemisphere rather
+[SPEAKER_00]: than controlling the room as a whole.
+[SPEAKER_00]: So inherently, that's where I guess the
+lack of performance comes from is that
+[SPEAKER_00]: they're not truly integrated and they're
+controlling for their own local
+[SPEAKER_00]: environments.
+[SPEAKER_00]: Whereas integrated systems, they see the
+unit, I mean the room as a whole and are
+[SPEAKER_00]: controlling accordingly to that.
+[SPEAKER_00]: Now, one thing that I wanna say is a lot
+of our customers or customers in the space
+[SPEAKER_00]: that have this system already in place.
+[SPEAKER_00]: When I say system, I'm talking about like
+mini splits and dehumidifiers.
+[SPEAKER_00]: There is possibility to get that
+integrated control after the fact with a
+[SPEAKER_00]: controls retrofit, with a more
+plan-centric sequence of operation to
+[SPEAKER_00]: integrate all those individual units as
+one.
+[SPEAKER_00]: So you're kind of making that a bunch of
+little random split systems, dehumidifiers
+[SPEAKER_00]: and integrating them into one whole
+package.
+[SPEAKER_00]: Now, it's not as great as a truly
+integrated package system or a hydronic
+[SPEAKER_00]: system would be, but it's definitely that
+next step up between the two.
+[SPEAKER_00]: I hope I answer that to you guys.
+[SPEAKER_01]: Yeah.
+[SPEAKER_01]: Yeah, I think that was great.
+[SPEAKER_01]: And there's a comment or a question in the
+chat.
+[SPEAKER_01]: I think that it's somewhat tangentially
+related to this that it might be good to
+[SPEAKER_01]: address, which is how long does the
+humidity spike last in that non-integrated
+[SPEAKER_01]: system?
+[SPEAKER_01]: And were all the other parameters held
+constant between the integrated system
+[SPEAKER_01]: such that the difference in yield can be
+attributed?
+[SPEAKER_01]: I mean, first off, the short answer is
+yes, we did everything that we possibly
+[SPEAKER_01]: could to make those two rooms
+side-by-side, really keep that as the only
+[SPEAKER_01]: control variable between them.
+[SPEAKER_01]: Inherently, there may be some other noise
+in that, no doubt.
+[SPEAKER_01]: There's so many differences that go on.
+[SPEAKER_01]: Even on a plan when you design a facility
+with eight identical flower rooms,
+[SPEAKER_01]: and then you go and you build that
+facility and you think, I think that
+[SPEAKER_01]: you've built them all identically,
+you'll end up with some small changes and
+[SPEAKER_01]: differences between all those rooms too.
+[SPEAKER_01]: So first off, it's just very challenging
+to do that in general.
+[SPEAKER_01]: But the other piece of it is we would love
+to do more truly scientific research and
+[SPEAKER_01]: have the ability to be very, very certain
+about these types of situations.
+[SPEAKER_01]: Unfortunately, there's not much money and
+propensity for it in the cannabis space
+[SPEAKER_01]: presently based on the illegality of it
+federally and how the funding sources for
+[SPEAKER_01]: universities work that have controlled
+environment agriculture and indoor plant
+[SPEAKER_01]: environment type programs.
+[SPEAKER_01]: We were at a conference last week where
+there's a lot of these folks speaking and
+[SPEAKER_01]: presenting research and things,
+and it is starting to loosen up little by
+[SPEAKER_01]: little.
+[SPEAKER_01]: And hopefully we're gonna make good
+progress here over the next year or two in
+[SPEAKER_01]: that in the hopes of really being able to
+do true testing one side, one to the
+[SPEAKER_01]: other.
+[SPEAKER_01]: But in specific to the first part of that
+question, that humidity spike lasts for
+[SPEAKER_01]: about an hour, typically.
+[SPEAKER_01]: It can be one to two hours is what we
+normally see in those situations.
+[SPEAKER_01]: And we can definitely answer more detailed
+questions on that further offline if you
+[SPEAKER_01]: like.
+[SPEAKER_02]: Yeah, lots of structural challenges with
+growing cannabis, particularly on the
+[SPEAKER_02]: federal level.
+[SPEAKER_01]: 20 total states now have legalized
+recreational adult use for above 21.
+[SPEAKER_01]: We're definitely at the critical mass in
+this country, and you can see it really
+[SPEAKER_01]: internationally as well.
+[SPEAKER_01]: So I hope that that really starts to open
+up money for more research and
+[SPEAKER_01]: development.
+[SPEAKER_02]: Yep, yep.
+[SPEAKER_02]: For now, we're all doing as much as we
+possibly can.
+[SPEAKER_02]: So let's see.
+[SPEAKER_01]: There's another good one.
+[SPEAKER_01]: I'm gonna take this one in the chat I
+think is good.
+[SPEAKER_01]: Do you run into building department
+jurisdictions that push for providing
+[SPEAKER_01]: outside air as part of, in this case,
+Title 24, which is a California energy
+[SPEAKER_01]: code requirement?
+[SPEAKER_01]: Or do they typically treat the rooms as
+process rooms and allow for the 100%
+[SPEAKER_01]: recirculation?
+[SPEAKER_01]: So this actually is going to be
+specifically addressed in the code change
+[SPEAKER_01]: that's coming in less than two months.
+[SPEAKER_01]: In January, 2023,
+[SPEAKER_01]: the CEA in general, indoor plant
+environments will become a covered process
+[SPEAKER_01]: under California Title 24 energy code,
+which I think will be the first time
+[SPEAKER_01]: across the country that this process load
+will actually be required to be covered in
+[SPEAKER_01]: the energy code.
+[SPEAKER_01]: And previously up until now, we've just
+been calling it a process room and having
+[SPEAKER_01]: an exemption for the economizers from the
+current code.
+[SPEAKER_01]: But with this becoming a covered process,
+there are some other stipulations that you
+[SPEAKER_01]: need to meet around reusing or utilizing
+waste heat and basically trying to
+[SPEAKER_01]: minimize the amount of reheating heat
+energy that's used of new energy.
+[SPEAKER_01]: And as a result of it becoming a covered
+process, they're now they're understanding
+[SPEAKER_01]: this sort of nuance that goes against the
+code, the way California's code is set up.
+[SPEAKER_01]: And so there is an exemption for
+economizers written in to this new code
+[SPEAKER_01]: language to allow you to not have to worry
+about it anymore.
+[SPEAKER_00]: Yeah, just to kind of add to that age,
+the heat requirement or the reheat
+[SPEAKER_00]: requirement is 75% of your annual usage
+should come from onsite heat recovered
+[SPEAKER_00]: methods.
+[SPEAKER_01]: Yeah, and the comment from Jason is great
+because there's other potential reasons to
+[SPEAKER_01]: use outside air in cultivation spaces,
+which his comment was that you can use
+[SPEAKER_01]: some outside air to purge ethylene,
+which is a gaseous hormone which
+[SPEAKER_01]: accumulates in sealed plant environments.
+[SPEAKER_01]: So that's another place where we'd love to
+see more research and development to
+[SPEAKER_01]: really help inform the way that these
+systems are constructed.
+[SPEAKER_01]: We have the ability to bring in outside
+air and we treat all that air.
+[SPEAKER_01]: So it's really just more about when should
+we do it?
+[SPEAKER_01]: Why should we do it?
+[SPEAKER_01]: How often should we do it?
+[SPEAKER_01]: That sort of a thing.
+[SPEAKER_02]: Yeah, that's great.
+[SPEAKER_02]: Hopefully that helped answer some of those
+questions.
+[SPEAKER_02]: We're up on the hour right now.
+[SPEAKER_02]: Our resource page is a page on our website
+that we're really proud of.
+[SPEAKER_02]: We've dropped a lot of information on what
+we've learned over the last five to six
+[SPEAKER_02]: years and lots of good resources there to
+brush up on both plant related and
+[SPEAKER_02]: engineering related material as it relates
+to CEA, which by the way, stands for
+[SPEAKER_02]: controlled environment agriculture,
+if anybody was wondering.
+[SPEAKER_02]: I think maybe we should cap it off.
+[SPEAKER_02]: Right now, but if anybody has any follow
+up questions, please feel free to get in
+[SPEAKER_02]: touch with us.
+[SPEAKER_02]: We're available anytime.
+[SPEAKER_02]: Always love to talk and really appreciate
+everybody spending time with us today.
+[SPEAKER_01]: That's just great.
+[SPEAKER_01]: Great to see everybody.
+[SPEAKER_01]: Thank you all for the time.
+[SPEAKER_01]: And see you soon.
+[SPEAKER_02]: Alright, thanks again everybody.
+[SPEAKER_02]: Take care.
+[SPEAKER_00]: Bye guys.
+Bye.

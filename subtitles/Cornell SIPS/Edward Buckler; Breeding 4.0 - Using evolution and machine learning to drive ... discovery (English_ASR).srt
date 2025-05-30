@@ -1,0 +1,5524 @@
+1
+00:00:00,000 --> 00:00:05,669
+this is a production of Cornell
+
+2
+00:00:01,709 --> 00:00:07,470
+University but what I want to tell you a
+
+3
+00:00:05,669 --> 00:00:09,719
+little bit about is how we're starting
+
+4
+00:00:07,469 --> 00:00:11,820
+to use some of the concepts of evolution
+
+5
+00:00:09,718 --> 00:00:14,298
+and machine learning and combining those
+
+6
+00:00:11,820 --> 00:00:16,890
+together to really figure out and drive
+
+7
+00:00:14,298 --> 00:00:19,019
+functional variant discovery and what we
+
+8
+00:00:16,890 --> 00:00:21,000
+hope will eventually become breeding 4.0
+
+9
+00:00:19,019 --> 00:00:22,198
+I want to first highlight that the work
+
+10
+00:00:21,000 --> 00:00:24,809
+I'll be telling you about today who's
+
+11
+00:00:22,199 --> 00:00:26,130
+been supported by usda-ars in the
+
+12
+00:00:24,809 --> 00:00:29,939
+National Science Foundation
+
+13
+00:00:26,129 --> 00:00:31,919
+but the real thought and efforts behind
+
+14
+00:00:29,939 --> 00:00:33,329
+all of this type of work is coming from
+
+15
+00:00:31,920 --> 00:00:34,980
+an incredible group of collaborators
+
+16
+00:00:33,329 --> 00:00:39,030
+I've had the pleasure of collaborating
+
+17
+00:00:34,979 --> 00:00:40,049
+with over the years sir Miller was
+
+18
+00:00:39,030 --> 00:00:41,579
+helping me count up all of our
+
+19
+00:00:40,049 --> 00:00:43,320
+collaborators over the years and we've
+
+20
+00:00:41,579 --> 00:00:47,160
+actually collaborated with like 1,200
+
+21
+00:00:43,320 --> 00:00:50,189
+people now over the last 20 years and
+
+22
+00:00:47,159 --> 00:00:52,439
+that working across that global
+
+23
+00:00:50,189 --> 00:00:54,659
+community it's been such a pleasure to
+
+24
+00:00:52,439 --> 00:00:56,159
+learn from everybody and to make
+
+25
+00:00:54,659 --> 00:00:58,648
+progress in this and this is some of our
+
+26
+00:00:56,159 --> 00:01:02,099
+current collaborators right now that
+
+27
+00:00:58,649 --> 00:01:04,890
+have helped shape our thinking I want to
+
+28
+00:01:02,100 --> 00:01:06,750
+give you all a little feel for where
+
+29
+00:01:04,890 --> 00:01:09,569
+we're driving to and that comes out of
+
+30
+00:01:06,750 --> 00:01:11,670
+our labs mission and so our labs mission
+
+31
+00:01:09,569 --> 00:01:13,889
+the very first one element is a very
+
+32
+00:01:11,670 --> 00:01:15,930
+straightforward one what's the genetic
+
+33
+00:01:13,890 --> 00:01:19,650
+basis of natural diversity simple to say
+
+34
+00:01:15,930 --> 00:01:22,320
+hard to figure out but essentially how
+
+35
+00:01:19,650 --> 00:01:24,390
+does it change in DNA get converted into
+
+36
+00:01:22,319 --> 00:01:27,539
+a change out in the field something we
+
+37
+00:01:24,390 --> 00:01:29,400
+can see and work with with models of
+
+38
+00:01:27,540 --> 00:01:32,700
+those we can then apply that knowledge
+
+39
+00:01:29,400 --> 00:01:35,100
+to help breed crops for the US and for
+
+40
+00:01:32,700 --> 00:01:36,900
+the world and so I won't be talking a
+
+41
+00:01:35,099 --> 00:01:38,908
+lot about what we're doing there but we
+
+42
+00:01:36,900 --> 00:01:41,159
+try to use our understanding and the top
+
+43
+00:01:38,909 --> 00:01:44,130
+part to help people across the world
+
+44
+00:01:41,159 --> 00:01:46,290
+build an engineering and IT systems to
+
+45
+00:01:44,129 --> 00:01:49,170
+help breed crops the world and then
+
+46
+00:01:46,290 --> 00:01:51,630
+finally we do all this in the context of
+
+47
+00:01:49,170 --> 00:01:53,879
+what should we discover in what crops
+
+48
+00:01:51,629 --> 00:01:57,179
+should we breed in order to reduce the
+
+49
+00:01:53,879 --> 00:01:59,609
+environmental impact of agriculture so
+
+50
+00:01:57,180 --> 00:02:01,640
+I've also in the last couple months been
+
+51
+00:01:59,609 --> 00:02:05,489
+given a number of talks down in
+
+52
+00:02:01,640 --> 00:02:08,159
+Washington DC and so frequently I'm
+
+53
+00:02:05,489 --> 00:02:09,840
+asked what is breeding okay and that
+
+54
+00:02:08,159 --> 00:02:12,299
+actually is a harder question that I
+
+55
+00:02:09,840 --> 00:02:13,680
+thought initially because you know we
+
+56
+00:02:12,300 --> 00:02:15,840
+all around here think we
+
+57
+00:02:13,680 --> 00:02:19,140
+breeding is but this is the definition I
+
+58
+00:02:15,840 --> 00:02:20,729
+came up with and essentially we view
+
+59
+00:02:19,139 --> 00:02:23,429
+this as the design and selection of
+
+60
+00:02:20,729 --> 00:02:25,590
+organisms for human purposes and so if
+
+61
+00:02:23,430 --> 00:02:28,200
+you start asking you know what could we
+
+62
+00:02:25,590 --> 00:02:30,718
+apply breeding to and if you go through
+
+63
+00:02:28,199 --> 00:02:35,250
+the UN sustainable development goals
+
+64
+00:02:30,718 --> 00:02:36,810
+they lay out 17 goals that are critical
+
+65
+00:02:35,250 --> 00:02:39,000
+across the globe for the next 20 years
+
+66
+00:02:36,810 --> 00:02:41,009
+and where could breeding contribute to
+
+67
+00:02:39,000 --> 00:02:42,959
+each one of these and it turns out that
+
+68
+00:02:41,009 --> 00:02:44,818
+breeding can contribute I'm not saying
+
+69
+00:02:42,959 --> 00:02:47,459
+it's the dominant element or anything it
+
+70
+00:02:44,818 --> 00:02:50,009
+can play a role in 10 out of the 17
+
+71
+00:02:47,459 --> 00:02:52,560
+sustainable development goals so the
+
+72
+00:02:50,009 --> 00:02:54,298
+reason that I'm interested in taking
+
+73
+00:02:52,560 --> 00:02:56,908
+quantitative genetics and applied it to
+
+74
+00:02:54,299 --> 00:02:59,129
+breeding is because the leverage of what
+
+75
+00:02:56,908 --> 00:03:01,048
+we can do and impact the globe is so
+
+76
+00:02:59,128 --> 00:03:03,750
+great and so I think if each of us is
+
+77
+00:03:01,049 --> 00:03:07,290
+can play a little role in figuring out
+
+78
+00:03:03,750 --> 00:03:09,539
+how we can solve some of these 17 issues
+
+79
+00:03:07,289 --> 00:03:11,750
+we can have a real impact across the
+
+80
+00:03:09,539 --> 00:03:11,750
+globe
+
+81
+00:03:14,259 --> 00:03:17,329
+[Music]
+
+82
+00:03:18,859 --> 00:03:27,780
+maybe it's 11 of them I think excellent
+
+83
+00:03:22,919 --> 00:03:30,479
+question so in terms of the evolution of
+
+84
+00:03:27,780 --> 00:03:32,938
+plant breeding though where if we come
+
+85
+00:03:30,479 --> 00:03:34,620
+from as its mentioned I have this
+
+86
+00:03:32,938 --> 00:03:36,568
+background in archaeology so I always
+
+87
+00:03:34,620 --> 00:03:38,519
+think about what reading is and
+
+88
+00:03:36,568 --> 00:03:42,750
+quantitative genetics from this very
+
+89
+00:03:38,519 --> 00:03:44,759
+long time depth and so 10,000 years ago
+
+90
+00:03:42,750 --> 00:03:47,310
+we I would say we started out was called
+
+91
+00:03:44,758 --> 00:03:50,429
+breeding 1.0 which are using phenotypic
+
+92
+00:03:47,310 --> 00:03:51,359
+selection to decide what species should
+
+93
+00:03:50,430 --> 00:03:53,400
+be domesticated
+
+94
+00:03:51,359 --> 00:03:55,759
+there's a quarter-million species plant
+
+95
+00:03:53,400 --> 00:03:58,379
+species out there about 5000 of them
+
+96
+00:03:55,758 --> 00:04:00,089
+have been domesticated to some degree
+
+97
+00:03:58,378 --> 00:04:02,310
+and people were really testing out
+
+98
+00:04:00,090 --> 00:04:04,348
+species level diversity in applying
+
+99
+00:04:02,310 --> 00:04:06,329
+selection to some of those species to
+
+100
+00:04:04,348 --> 00:04:08,789
+really drive them into new and different
+
+101
+00:04:06,329 --> 00:04:09,299
+Corrections starting a little over 100
+
+102
+00:04:08,789 --> 00:04:10,709
+years ago
+
+103
+00:04:09,299 --> 00:04:12,780
+I think the key element was we started
+
+104
+00:04:10,709 --> 00:04:14,878
+having controlled trials where we
+
+105
+00:04:12,780 --> 00:04:16,139
+controlled the genetics out of that came
+
+106
+00:04:14,878 --> 00:04:19,019
+or understanding of quantitative
+
+107
+00:04:16,139 --> 00:04:20,639
+genetics experimental design but really
+
+108
+00:04:19,019 --> 00:04:25,139
+the key elements and allowing us to make
+
+109
+00:04:20,639 --> 00:04:27,360
+progress and those statistics arises out
+
+110
+00:04:25,139 --> 00:04:29,728
+of our knowledge of plant breeding
+
+111
+00:04:27,360 --> 00:04:31,050
+our desire to do plant breeding and of
+
+112
+00:04:29,728 --> 00:04:33,658
+course equipment and tools like
+
+113
+00:04:31,050 --> 00:04:35,460
+harvesters really help drive our ability
+
+114
+00:04:33,658 --> 00:04:39,060
+to provide and produce selection
+
+115
+00:04:35,459 --> 00:04:41,209
+effectively then a little over of almost
+
+116
+00:04:39,060 --> 00:04:43,740
+20 years ago now genomic selection
+
+117
+00:04:41,209 --> 00:04:45,959
+arises where we're essentially using
+
+118
+00:04:43,740 --> 00:04:49,668
+anonymous markers across the genome to
+
+119
+00:04:45,959 --> 00:04:54,120
+really drive selection and produce crops
+
+120
+00:04:49,668 --> 00:04:55,978
+faster and better now for most
+
+121
+00:04:54,120 --> 00:04:57,959
+sophisticated breeding programs across
+
+122
+00:04:55,978 --> 00:05:00,149
+the globe and major companies genomic
+
+123
+00:04:57,959 --> 00:05:02,609
+selection is now the norm it's being
+
+124
+00:05:00,149 --> 00:05:04,378
+applied in all of our major crops in
+
+125
+00:05:02,610 --> 00:05:06,240
+each of those companies but I think one
+
+126
+00:05:04,379 --> 00:05:08,218
+of the challenges we have across the
+
+127
+00:05:06,240 --> 00:05:10,740
+nation and across the globe is to make
+
+128
+00:05:08,218 --> 00:05:13,379
+sure genomic selection breeding 3.0 gets
+
+129
+00:05:10,740 --> 00:05:15,658
+applied to those 5,000 other species
+
+130
+00:05:13,379 --> 00:05:17,218
+that have been domesticated or to all
+
+131
+00:05:15,658 --> 00:05:19,560
+the environments and all the breeding
+
+132
+00:05:17,218 --> 00:05:21,028
+efforts across the rest of the globe so
+
+133
+00:05:19,560 --> 00:05:23,759
+although I'll be talking most about
+
+134
+00:05:21,028 --> 00:05:24,778
+bringing 4.0 today we also do spend a
+
+135
+00:05:23,759 --> 00:05:26,340
+lot of time and I think our whole
+
+136
+00:05:24,778 --> 00:05:29,069
+community should spend a lot of time
+
+137
+00:05:26,339 --> 00:05:30,269
+making sure that breeding 3.0 gets
+
+138
+00:05:29,069 --> 00:05:33,479
+applied everywhere
+
+139
+00:05:30,269 --> 00:05:35,939
+so finally breeding 4.0 is really about
+
+140
+00:05:33,478 --> 00:05:38,158
+designing genomes and in order to do
+
+141
+00:05:35,939 --> 00:05:40,158
+this you have to identify the causative
+
+142
+00:05:38,158 --> 00:05:42,509
+nucleotides that are underlined
+
+143
+00:05:40,158 --> 00:05:45,329
+quantitative and complex trait variation
+
+144
+00:05:42,509 --> 00:05:47,158
+and then we could imagine using an
+
+145
+00:05:45,329 --> 00:05:50,098
+editing technology and our understanding
+
+146
+00:05:47,158 --> 00:05:52,050
+of physiology and molecular biology it's
+
+147
+00:05:50,098 --> 00:05:53,968
+really drive things forward and I'll
+
+148
+00:05:52,050 --> 00:05:56,278
+talk about how we're doing some efforts
+
+149
+00:05:53,968 --> 00:06:00,478
+to help us identify those positive
+
+150
+00:05:56,278 --> 00:06:02,639
+nucleotides so when I think about where
+
+151
+00:06:00,478 --> 00:06:05,310
+variation comes from I think the first
+
+152
+00:06:02,639 --> 00:06:08,400
+place we can think about it is you know
+
+153
+00:06:05,310 --> 00:06:11,009
+every generation 90 new mutations occur
+
+154
+00:06:08,399 --> 00:06:12,778
+and in the case of maize and some of
+
+155
+00:06:11,009 --> 00:06:14,310
+those are adaptive some of those are
+
+156
+00:06:12,778 --> 00:06:16,259
+deleterious and the most of them were
+
+157
+00:06:14,310 --> 00:06:19,110
+neutral and fundamentally the question
+
+158
+00:06:16,259 --> 00:06:21,000
+that our group is trying to ask is of
+
+159
+00:06:19,110 --> 00:06:23,669
+those 90 mutations that arise every
+
+160
+00:06:21,000 --> 00:06:24,899
+generation and they maybe are of course
+
+161
+00:06:23,668 --> 00:06:26,878
+are passed on generation after
+
+162
+00:06:24,899 --> 00:06:29,668
+generation for thousands even millions
+
+163
+00:06:26,879 --> 00:06:32,218
+of years which follow into each of these
+
+164
+00:06:29,668 --> 00:06:33,899
+different categories and that's what
+
+165
+00:06:32,218 --> 00:06:35,968
+we're trying to ask and trying to get
+
+166
+00:06:33,899 --> 00:06:39,088
+and figure that out as easily and fast
+
+167
+00:06:35,968 --> 00:06:41,189
+as we possibly can and why I care about
+
+168
+00:06:39,088 --> 00:06:43,170
+speed and cost is for
+
+169
+00:06:41,189 --> 00:06:45,689
+there's a lot of genetic variation out
+
+170
+00:06:43,170 --> 00:06:47,699
+there indicate a small sample of maze
+
+171
+00:06:45,689 --> 00:06:49,350
+lines they capture about 80 million
+
+172
+00:06:47,699 --> 00:06:53,339
+different genetic variants across the
+
+173
+00:06:49,350 --> 00:06:55,500
+genome and we think there's on the order
+
+174
+00:06:53,339 --> 00:06:57,419
+of a few hundred thousand functional
+
+175
+00:06:55,500 --> 00:06:59,129
+variants that are really contributing to
+
+176
+00:06:57,420 --> 00:07:01,439
+most of the phenotypic variation out
+
+177
+00:06:59,129 --> 00:07:03,360
+there the question is how do we go from
+
+178
+00:07:01,439 --> 00:07:06,029
+the top of that funnel to the bottom of
+
+179
+00:07:03,360 --> 00:07:08,970
+that funnel as cheaply and inexpensively
+
+180
+00:07:06,029 --> 00:07:11,250
+as possible and so it really is a cost
+
+181
+00:07:08,970 --> 00:07:13,350
+question of efficiency to move from the
+
+182
+00:07:11,250 --> 00:07:15,660
+top to the bottom so we've worked on a
+
+183
+00:07:13,350 --> 00:07:17,310
+lot of different methodologies across
+
+184
+00:07:15,660 --> 00:07:19,080
+here and I'll talk about a couple of
+
+185
+00:07:17,310 --> 00:07:21,209
+them today with special emphasis on
+
+186
+00:07:19,079 --> 00:07:23,219
+using conservation expression and
+
+187
+00:07:21,209 --> 00:07:26,569
+machine learning to get from the top to
+
+188
+00:07:23,220 --> 00:07:29,430
+the bottom and I want to start out with
+
+189
+00:07:26,569 --> 00:07:31,349
+highlighting that evolution has turned
+
+190
+00:07:29,430 --> 00:07:33,689
+out to probably be the most powerful
+
+191
+00:07:31,350 --> 00:07:35,100
+tool we have for figuring out what our
+
+192
+00:07:33,689 --> 00:07:36,660
+functional variants across the genome
+
+193
+00:07:35,100 --> 00:07:37,710
+and of course this shouldn't come to
+
+194
+00:07:36,660 --> 00:07:41,010
+surprise to anybody
+
+195
+00:07:37,709 --> 00:07:43,469
+Jib Jansky 50 or 60 years ago reminded
+
+196
+00:07:41,009 --> 00:07:45,110
+us of this that nothing in biology makes
+
+197
+00:07:43,470 --> 00:07:47,100
+sense except in the light of evolution
+
+198
+00:07:45,110 --> 00:07:49,919
+but just to give you a kind of a
+
+199
+00:07:47,100 --> 00:07:52,439
+quantitative example how powerful
+
+200
+00:07:49,918 --> 00:07:56,519
+evolution is at identifying things let's
+
+201
+00:07:52,439 --> 00:07:59,579
+think about field trials so a decade or
+
+202
+00:07:56,519 --> 00:08:03,149
+so ago we did then create the maze name
+
+203
+00:07:59,579 --> 00:08:06,060
+population it had 5000 inbred lines and
+
+204
+00:08:03,149 --> 00:08:08,399
+through a lot of work we created them we
+
+205
+00:08:06,060 --> 00:08:10,230
+groom outed for example one experiment
+
+206
+00:08:08,399 --> 00:08:13,139
+eight location lots of clones at each
+
+207
+00:08:10,230 --> 00:08:16,530
+one and effectively we were able to map
+
+208
+00:08:13,139 --> 00:08:19,319
+a five kernel per plant difference down
+
+209
+00:08:16,529 --> 00:08:20,939
+to the level of an individual gene okay
+
+210
+00:08:19,319 --> 00:08:23,939
+so that in may regard seems like that's
+
+211
+00:08:20,939 --> 00:08:25,439
+a pretty good mapping accuracy and
+
+212
+00:08:23,939 --> 00:08:30,089
+everything but how is that compared to
+
+213
+00:08:25,439 --> 00:08:32,070
+evolution and so well so the key thing
+
+214
+00:08:30,089 --> 00:08:34,379
+to realize about evolution is it's
+
+215
+00:08:32,070 --> 00:08:37,020
+really the integration of billions of
+
+216
+00:08:34,379 --> 00:08:38,309
+years of field trials you know every
+
+217
+00:08:37,019 --> 00:08:41,038
+individual is competing
+
+218
+00:08:38,309 --> 00:08:43,559
+it's either surviving or not or dying to
+
+219
+00:08:41,038 --> 00:08:46,110
+the passions gametes on and so in the
+
+220
+00:08:43,559 --> 00:08:48,750
+diverse species for example maize if we
+
+221
+00:08:46,110 --> 00:08:51,600
+sample a thousand different maize lines
+
+222
+00:08:48,750 --> 00:08:54,419
+for capturing about three million years
+
+223
+00:08:51,600 --> 00:08:54,840
+of evolutionary time by a Sam having a
+
+224
+00:08:54,419 --> 00:08:58,009
+sample
+
+225
+00:08:54,840 --> 00:09:00,690
+of a thousand lines those thousand
+
+226
+00:08:58,009 --> 00:09:02,250
+extant lines are the product of
+
+227
+00:09:00,690 --> 00:09:03,750
+populations that had an effective
+
+228
+00:09:02,250 --> 00:09:07,440
+population size of nearly a hundred
+
+229
+00:09:03,750 --> 00:09:10,230
+thousand individuals and the key thing
+
+230
+00:09:07,440 --> 00:09:16,320
+is selection can see a difference of one
+
+231
+00:09:10,230 --> 00:09:18,120
+kernel out out of 250 plants so in
+
+232
+00:09:16,320 --> 00:09:20,370
+comparison to what we were able to do in
+
+233
+00:09:18,120 --> 00:09:25,110
+a very large field experiment it's about
+
+234
+00:09:20,370 --> 00:09:26,370
+1,200 times more sensitive than than
+
+235
+00:09:25,110 --> 00:09:28,860
+what we can do in a large build
+
+236
+00:09:26,370 --> 00:09:31,379
+experiment because it effectively we
+
+237
+00:09:28,860 --> 00:09:34,440
+have the time and evolution to integrate
+
+238
+00:09:31,379 --> 00:09:36,120
+across all those different events now
+
+239
+00:09:34,440 --> 00:09:38,130
+what's the problem with using evolution
+
+240
+00:09:36,120 --> 00:09:40,080
+the big issue is we don't really know
+
+241
+00:09:38,129 --> 00:09:42,240
+what the conditions were under which
+
+242
+00:09:40,080 --> 00:09:45,090
+selection operated so that's the great
+
+243
+00:09:42,240 --> 00:09:46,470
+weakness of using evolution but we've
+
+244
+00:09:45,090 --> 00:09:48,930
+also gotten in the last couple decades
+
+245
+00:09:46,470 --> 00:09:50,850
+getting pretty good at identifying what
+
+246
+00:09:48,929 --> 00:09:53,250
+regions of the genome have been the
+
+247
+00:09:50,850 --> 00:09:55,409
+product of domestication or the targets
+
+248
+00:09:53,250 --> 00:09:57,240
+of domestication and in those regions we
+
+249
+00:09:55,409 --> 00:09:59,309
+actually know those are are the regions
+
+250
+00:09:57,240 --> 00:10:01,320
+where the rules of selection have
+
+251
+00:09:59,309 --> 00:10:03,419
+changed all right when we talk about a
+
+252
+00:10:01,320 --> 00:10:07,010
+domestication locus what that really is
+
+253
+00:10:03,419 --> 00:10:08,879
+is a location in the genome where
+
+254
+00:10:07,009 --> 00:10:09,659
+selection is going in a different
+
+255
+00:10:08,879 --> 00:10:12,720
+direction
+
+256
+00:10:09,659 --> 00:10:16,709
+today and under human selection and it
+
+257
+00:10:12,720 --> 00:10:18,180
+was under natural selection and so in
+
+258
+00:10:16,710 --> 00:10:20,490
+the case of maze which is probably our
+
+259
+00:10:18,179 --> 00:10:22,439
+most highly domesticated crop out there
+
+260
+00:10:20,490 --> 00:10:24,330
+there's about a thousand domestication
+
+261
+00:10:22,440 --> 00:10:27,480
+or improvement Llosa across the genome
+
+262
+00:10:24,330 --> 00:10:29,610
+which is about 4% of all the genes out
+
+263
+00:10:27,480 --> 00:10:31,830
+there so from one point of view you know
+
+264
+00:10:29,610 --> 00:10:33,930
+we can't be sure what's going on there
+
+265
+00:10:31,830 --> 00:10:36,720
+what the we can't use evolution as a
+
+266
+00:10:33,929 --> 00:10:39,689
+guide necessarily to pick out what is
+
+267
+00:10:36,720 --> 00:10:41,820
+the correct direction to take those loci
+
+268
+00:10:39,690 --> 00:10:44,760
+but what this does suggest is that the
+
+269
+00:10:41,820 --> 00:10:47,100
+other 96% of the genome essentially the
+
+270
+00:10:44,759 --> 00:10:48,600
+rules that have played for the last few
+
+271
+00:10:47,100 --> 00:10:51,450
+million years are probably the same
+
+272
+00:10:48,600 --> 00:10:55,259
+rules and important directions that are
+
+273
+00:10:51,450 --> 00:10:57,360
+important today photosynthesis in may
+
+274
+00:10:55,259 --> 00:11:00,149
+still operates pretty much by the same
+
+275
+00:10:57,360 --> 00:11:04,590
+rules as it did a million years ago five
+
+276
+00:11:00,149 --> 00:11:06,659
+million years ago and so on so if we use
+
+277
+00:11:04,590 --> 00:11:08,879
+that knowledge to try to figure out
+
+278
+00:11:06,659 --> 00:11:11,698
+deleterious variants
+
+279
+00:11:08,879 --> 00:11:14,129
+we've used essentially evolutionary
+
+280
+00:11:11,698 --> 00:11:17,870
+conservation to work down this trail and
+
+281
+00:11:14,129 --> 00:11:21,799
+so let me explain how we do that well
+
+282
+00:11:17,870 --> 00:11:24,419
+the first thing about in order used
+
+283
+00:11:21,799 --> 00:11:26,278
+conservation we were using it to trying
+
+284
+00:11:24,419 --> 00:11:28,919
+to tackle a question about what's the
+
+285
+00:11:26,278 --> 00:11:32,730
+what produces deleterious mutations and
+
+286
+00:11:28,919 --> 00:11:34,679
+then what produces heterosis and why we
+
+287
+00:11:32,730 --> 00:11:38,039
+care about deleterious mutations is if
+
+288
+00:11:34,679 --> 00:11:39,208
+over 100 years ago geneticists figured
+
+289
+00:11:38,039 --> 00:11:41,578
+out that essentially deleterious
+
+290
+00:11:39,208 --> 00:11:43,138
+mutations are likely the product or what
+
+291
+00:11:41,578 --> 00:11:45,388
+produced had a roast is a hybrid vigor
+
+292
+00:11:43,139 --> 00:11:47,009
+and essentially we complement them and
+
+293
+00:11:45,389 --> 00:11:49,110
+we get it out hybrid vigor out of the
+
+294
+00:11:47,009 --> 00:11:51,899
+system and of course amazed home a seed
+
+295
+00:11:49,110 --> 00:11:53,699
+industry has grown out of this and so I
+
+296
+00:11:51,899 --> 00:11:55,620
+think the question of what is the basis
+
+297
+00:11:53,698 --> 00:11:57,689
+of heterosis it's pretty much a solved
+
+298
+00:11:55,620 --> 00:11:59,698
+question for the last hundred years the
+
+299
+00:11:57,690 --> 00:12:01,529
+question that has not been solved is
+
+300
+00:11:59,698 --> 00:12:03,539
+what are the individual nucleotides
+
+301
+00:12:01,528 --> 00:12:06,299
+across the genome that contribute to
+
+302
+00:12:03,539 --> 00:12:08,669
+heterosis so the basic process we've
+
+303
+00:12:06,299 --> 00:12:10,439
+understood for a century but what are
+
+304
+00:12:08,669 --> 00:12:12,958
+those individual deleterious mutations
+
+305
+00:12:10,440 --> 00:12:15,630
+and so a former postdoc in the group
+
+306
+00:12:12,958 --> 00:12:17,609
+yeah Eli Rogers Melnick tackled this by
+
+307
+00:12:15,629 --> 00:12:20,879
+asking the question let me take the
+
+308
+00:12:17,610 --> 00:12:23,278
+maize genome and line it up across a
+
+309
+00:12:20,879 --> 00:12:25,278
+wide range of other species and identify
+
+310
+00:12:23,278 --> 00:12:28,409
+what regions of the genome are conserved
+
+311
+00:12:25,278 --> 00:12:30,389
+across this wide range of species and he
+
+312
+00:12:28,409 --> 00:12:32,250
+lined up maize for everything all the
+
+313
+00:12:30,389 --> 00:12:34,620
+way out to arouser topsis and grapes and
+
+314
+00:12:32,250 --> 00:12:36,600
+so on and what he found is about 10% of
+
+315
+00:12:34,620 --> 00:12:38,578
+the genome was Allina belen constrained
+
+316
+00:12:36,600 --> 00:12:40,680
+I'd highlight the most of what he's
+
+317
+00:12:38,578 --> 00:12:43,258
+talking about are the genes these are
+
+318
+00:12:40,679 --> 00:12:45,688
+the energetic regulatory regions do not
+
+319
+00:12:43,259 --> 00:12:48,480
+align across this range of diversity
+
+320
+00:12:45,688 --> 00:12:51,649
+it's pretty much just genes that align
+
+321
+00:12:48,480 --> 00:12:54,000
+at this scale so but he was able
+
+322
+00:12:51,649 --> 00:12:56,429
+base-pair by base-pair able to ask the
+
+323
+00:12:54,000 --> 00:12:58,289
+question how conserve is every base out
+
+324
+00:12:56,429 --> 00:13:00,778
+there and then if you see a genetic
+
+325
+00:12:58,289 --> 00:13:02,849
+polymorphism at a base that's incredibly
+
+326
+00:13:00,778 --> 00:13:05,068
+conserved across this entire phylogeny
+
+327
+00:13:02,850 --> 00:13:07,589
+the odds that are deleterious or
+
+328
+00:13:05,068 --> 00:13:09,328
+substantially increased so the same type
+
+329
+00:13:07,589 --> 00:13:11,399
+of process is also now being used by
+
+330
+00:13:09,328 --> 00:13:14,278
+people in human genetics to identify a
+
+331
+00:13:11,399 --> 00:13:17,068
+disease low sigh and so on and so I
+
+332
+00:13:14,278 --> 00:13:20,159
+applied that to our question here in
+
+333
+00:13:17,068 --> 00:13:22,229
+maize and we have a very strong prior of
+
+334
+00:13:20,159 --> 00:13:24,419
+what we think should happen we
+
+335
+00:13:22,230 --> 00:13:26,250
+there's mutations we know that the key
+
+336
+00:13:24,419 --> 00:13:28,439
+way to get rid of deleterious mutations
+
+337
+00:13:26,250 --> 00:13:30,779
+is through recombination that breaks
+
+338
+00:13:28,440 --> 00:13:32,970
+things up and then essentially selection
+
+339
+00:13:30,779 --> 00:13:34,829
+can eliminate them and so we expect to
+
+340
+00:13:32,970 --> 00:13:36,540
+see a pattern such that in low
+
+341
+00:13:34,830 --> 00:13:38,250
+recombination regions of the genome we
+
+342
+00:13:36,539 --> 00:13:40,379
+have a buildup of deleterious mutations
+
+343
+00:13:38,250 --> 00:13:43,139
+and in high recombination regions of the
+
+344
+00:13:40,379 --> 00:13:45,659
+genome we have fewer and that's exactly
+
+345
+00:13:43,139 --> 00:13:46,590
+what we saw is that in low recombination
+
+346
+00:13:45,659 --> 00:13:49,289
+we had a buildup of deleterious
+
+347
+00:13:46,590 --> 00:13:51,090
+mutations and in high recombination we
+
+348
+00:13:49,289 --> 00:13:54,240
+had fewer oh I do want to highlight
+
+349
+00:13:51,090 --> 00:13:55,670
+though there are still lots of
+
+350
+00:13:54,240 --> 00:13:58,230
+deleterious mutations in high
+
+351
+00:13:55,669 --> 00:14:01,139
+recombination regions of the genome the
+
+352
+00:13:58,230 --> 00:14:03,269
+genome the zig feel about ninety
+
+353
+00:14:01,139 --> 00:14:05,429
+mutations are occurring every generation
+
+354
+00:14:03,269 --> 00:14:07,319
+and they're all across the genome pretty
+
+355
+00:14:05,429 --> 00:14:08,789
+much evenly across that genome and so
+
+356
+00:14:07,320 --> 00:14:10,590
+and the genes are in the high
+
+357
+00:14:08,789 --> 00:14:12,509
+recombination region so yes there's a
+
+358
+00:14:10,590 --> 00:14:14,190
+buildup the population genetic
+
+359
+00:14:12,509 --> 00:14:16,649
+prediction that we are able to purge
+
+360
+00:14:14,190 --> 00:14:18,840
+selfish mutations better and high
+
+361
+00:14:16,649 --> 00:14:20,699
+recombination is true but there are
+
+362
+00:14:18,840 --> 00:14:23,340
+still deleterious mutations everywhere
+
+363
+00:14:20,700 --> 00:14:27,300
+just because the pressure of mutation is
+
+364
+00:14:23,340 --> 00:14:28,950
+so strong and so you know I then lined
+
+365
+00:14:27,299 --> 00:14:30,419
+up a lot of those deleterious mutations
+
+366
+00:14:28,950 --> 00:14:32,400
+with a couple different aspects of the
+
+367
+00:14:30,419 --> 00:14:34,740
+genome and the first one he wanted to
+
+368
+00:14:32,399 --> 00:14:36,600
+test was how did this line up where with
+
+369
+00:14:34,740 --> 00:14:39,659
+where people had previously mapped
+
+370
+00:14:36,600 --> 00:14:42,180
+heterosis in maize and in the early
+
+371
+00:14:39,659 --> 00:14:45,179
+1990s Charlie Stuber had identified that
+
+372
+00:14:42,179 --> 00:14:47,370
+the center or para centromeric region of
+
+373
+00:14:45,179 --> 00:14:51,509
+chromosome 5 exhibited the highest level
+
+374
+00:14:47,370 --> 00:14:53,970
+of heterosis in maize and so Eli took
+
+375
+00:14:51,509 --> 00:14:56,189
+his model del judge mutations took them
+
+376
+00:14:53,970 --> 00:14:59,160
+at from across chromosome five and
+
+377
+00:14:56,190 --> 00:15:00,690
+that's exactly what he saw a buildup of
+
+378
+00:14:59,159 --> 00:15:02,370
+deleterious mutations right in the pair
+
+379
+00:15:00,690 --> 00:15:05,250
+of centromeric region of the genome and
+
+380
+00:15:02,370 --> 00:15:07,379
+far less buildup across the rest of it
+
+381
+00:15:05,250 --> 00:15:08,639
+the green is the recombination rate and
+
+382
+00:15:07,379 --> 00:15:10,799
+as you'll see in maize we have a very
+
+383
+00:15:08,639 --> 00:15:12,629
+low recombination rate all across that
+
+384
+00:15:10,799 --> 00:15:14,639
+pair of centromeric region and so it's
+
+385
+00:15:12,629 --> 00:15:16,439
+very difficult for the genome to purge
+
+386
+00:15:14,639 --> 00:15:21,059
+these deleterious mutations in those
+
+387
+00:15:16,440 --> 00:15:23,870
+regions but so the pattern in our
+
+388
+00:15:21,059 --> 00:15:28,379
+agreement with heterosis for this
+
+389
+00:15:23,870 --> 00:15:29,700
+analysis made a lot of sense so this but
+
+390
+00:15:28,379 --> 00:15:31,439
+as I mentioned the way we were doing
+
+391
+00:15:29,700 --> 00:15:34,320
+their conservation analysis we really
+
+392
+00:15:31,440 --> 00:15:36,510
+could only look at essentially genes and
+
+393
+00:15:34,320 --> 00:15:38,970
+conserved pretty much protein
+
+394
+00:15:36,509 --> 00:15:41,069
+conserve proteins there and so the
+
+395
+00:15:38,970 --> 00:15:42,329
+second question we would ask is whether
+
+396
+00:15:41,070 --> 00:15:45,269
+or not we were seeing the same type of
+
+397
+00:15:42,328 --> 00:15:47,219
+patterns looking at RNA and expression
+
+398
+00:15:45,269 --> 00:15:49,289
+patterns some other analysis we had done
+
+399
+00:15:47,220 --> 00:15:51,450
+that suggested about half of phenotypic
+
+400
+00:15:49,289 --> 00:15:53,278
+variation is the product of expression
+
+401
+00:15:51,450 --> 00:15:56,759
+differences half of it's from coding
+
+402
+00:15:53,278 --> 00:15:58,828
+differences and so is the genome able to
+
+403
+00:15:56,759 --> 00:16:01,828
+purge deleterious mutations better in
+
+404
+00:15:58,828 --> 00:16:04,620
+these expression domain or does it do
+
+405
+00:16:01,828 --> 00:16:05,879
+worse at that and so this is where Carl
+
+406
+00:16:04,620 --> 00:16:08,448
+crumbling a former graduate student
+
+407
+00:16:05,879 --> 00:16:11,730
+worked on this question in the real
+
+408
+00:16:08,448 --> 00:16:13,769
+element and key from doing this analysis
+
+409
+00:16:11,730 --> 00:16:16,980
+is we need to collect enough expression
+
+410
+00:16:13,769 --> 00:16:19,350
+data to from enough different lines that
+
+411
+00:16:16,980 --> 00:16:22,680
+we could determine what was a rare and
+
+412
+00:16:19,350 --> 00:16:25,879
+aberrant expression pattern and so what
+
+413
+00:16:22,679 --> 00:16:28,679
+he did is he got robot roboticized
+
+414
+00:16:25,879 --> 00:16:31,350
+3 prime RNA seek profiling up and
+
+415
+00:16:28,679 --> 00:16:33,539
+running guide down for about 25 bucks of
+
+416
+00:16:31,350 --> 00:16:36,019
+sample and he was then able to profile
+
+417
+00:16:33,539 --> 00:16:39,389
+nearly 2,000 samples for their RNA
+
+418
+00:16:36,019 --> 00:16:41,100
+levels and with that large data set we
+
+419
+00:16:39,389 --> 00:16:43,620
+then essentially had expression measures
+
+420
+00:16:41,100 --> 00:16:46,170
+on tens of millions of different genes
+
+421
+00:16:43,620 --> 00:16:48,209
+and alleles all across this panel that
+
+422
+00:16:46,169 --> 00:16:50,549
+effectively allowed us start asking
+
+423
+00:16:48,208 --> 00:16:54,088
+questions about what are rare expression
+
+424
+00:16:50,549 --> 00:16:56,458
+patterns and the hypothesis he wanted to
+
+425
+00:16:54,089 --> 00:16:58,769
+test was one that Greg Gibson had laid
+
+426
+00:16:56,458 --> 00:17:02,309
+out and for Human Genetics and
+
+427
+00:16:58,769 --> 00:17:05,220
+essentially the hypothesis is following
+
+428
+00:17:02,309 --> 00:17:07,798
+and the test is is following so we kind
+
+429
+00:17:05,220 --> 00:17:11,699
+of expect low expression if you've been
+
+430
+00:17:07,798 --> 00:17:14,548
+expression patterns out for each gene if
+
+431
+00:17:11,699 --> 00:17:16,470
+rare alleles and deleterious alleles are
+
+432
+00:17:14,548 --> 00:17:18,750
+playing an important role what we expect
+
+433
+00:17:16,470 --> 00:17:20,370
+to see is that essentially low
+
+434
+00:17:18,750 --> 00:17:22,588
+expression will be the product of lots
+
+435
+00:17:20,369 --> 00:17:24,178
+of rare alleles and high expression will
+
+436
+00:17:22,588 --> 00:17:24,688
+also be the product of lots of rare
+
+437
+00:17:24,179 --> 00:17:29,009
+alleles
+
+438
+00:17:24,689 --> 00:17:31,200
+well intermediate expression well you
+
+439
+00:17:29,009 --> 00:17:34,019
+know won't have an enrichment of rare
+
+440
+00:17:31,200 --> 00:17:36,029
+alleles and so this is the basic pattern
+
+441
+00:17:34,019 --> 00:17:37,529
+you would expect if you think that rare
+
+442
+00:17:36,029 --> 00:17:40,798
+alleles and deleterious alleles are
+
+443
+00:17:37,529 --> 00:17:43,168
+driving extremes in expression and so
+
+444
+00:17:40,798 --> 00:17:46,440
+what's the alternative hypothesis to
+
+445
+00:17:43,169 --> 00:17:49,770
+this well the alternative is that common
+
+446
+00:17:46,440 --> 00:17:50,470
+alleles actually get stacked up in a way
+
+447
+00:17:49,769 --> 00:17:52,629
+so it's
+
+448
+00:17:50,470 --> 00:17:54,370
+the extremes are being are the product
+
+449
+00:17:52,630 --> 00:17:56,800
+of lots of different common alleles and
+
+450
+00:17:54,369 --> 00:17:58,959
+so is that like they'd be common well
+
+451
+00:17:56,799 --> 00:18:01,329
+across the whole genome when we see
+
+452
+00:17:58,960 --> 00:18:04,090
+extremes in phenotype like flowering
+
+453
+00:18:01,329 --> 00:18:06,099
+time it's a is the product of dozens of
+
+454
+00:18:04,089 --> 00:18:08,859
+genes with essentially if relatively
+
+455
+00:18:06,099 --> 00:18:10,389
+common alleles gain stacked up in order
+
+456
+00:18:08,859 --> 00:18:12,490
+to produce those extremes of extreme
+
+457
+00:18:10,390 --> 00:18:14,320
+early flowering is the product of lots
+
+458
+00:18:12,490 --> 00:18:16,450
+of common alleles being stacked up the
+
+459
+00:18:14,319 --> 00:18:18,399
+extreme late flowering is deprived again
+
+460
+00:18:16,450 --> 00:18:21,670
+of lots of common alleles being stacked
+
+461
+00:18:18,400 --> 00:18:23,560
+up so a genome-wide scale that's the
+
+462
+00:18:21,670 --> 00:18:25,390
+pattern we actually do see common
+
+463
+00:18:23,559 --> 00:18:27,399
+alleles in general or what are
+
+464
+00:18:25,390 --> 00:18:29,590
+contributing to a lot of our extremes
+
+465
+00:18:27,400 --> 00:18:31,840
+and phenotypes but at the level of an
+
+466
+00:18:29,589 --> 00:18:33,759
+individual gene recombination is of
+
+467
+00:18:31,839 --> 00:18:36,939
+course very limited there's a limited
+
+468
+00:18:33,759 --> 00:18:39,879
+amount of recombination in each from a
+
+469
+00:18:36,940 --> 00:18:43,059
+regulatory region and so this is a type
+
+470
+00:18:39,880 --> 00:18:45,280
+of area for extremes maybe the product
+
+471
+00:18:43,059 --> 00:18:48,279
+actually of a buildup of deleterious
+
+472
+00:18:45,279 --> 00:18:49,930
+mutations and so in Greg Gibson's model
+
+473
+00:18:48,279 --> 00:18:52,720
+what we would expect to see is
+
+474
+00:18:49,930 --> 00:18:53,980
+essentially a u-shape plot here if you
+
+475
+00:18:52,720 --> 00:18:57,819
+were to apply out the average number of
+
+476
+00:18:53,980 --> 00:18:59,500
+rare alleles on the Y and then on the X
+
+477
+00:18:57,819 --> 00:19:01,240
+we go from low expression to high
+
+478
+00:18:59,500 --> 00:19:04,150
+expression we expect to see a u like
+
+479
+00:19:01,240 --> 00:19:07,690
+this if rare alleles are driving things
+
+480
+00:19:04,150 --> 00:19:09,790
+and that's exactly what Karl saw so when
+
+481
+00:19:07,690 --> 00:19:14,380
+he profile using these different maze
+
+482
+00:19:09,789 --> 00:19:15,909
+lines essentially low expression where
+
+483
+00:19:14,380 --> 00:19:17,590
+we see low expression we see this more
+
+484
+00:19:15,910 --> 00:19:19,870
+than doubling and the number of rare
+
+485
+00:19:17,589 --> 00:19:22,089
+alleles and we do also see an increase
+
+486
+00:19:19,869 --> 00:19:24,099
+in high expression as the product of an
+
+487
+00:19:22,089 --> 00:19:26,049
+increased number of rare alleles so both
+
+488
+00:19:24,099 --> 00:19:28,119
+extremes seem to be pushed by rare
+
+489
+00:19:26,049 --> 00:19:30,789
+alleles asymmetry between these two
+
+490
+00:19:28,119 --> 00:19:32,559
+suggests that rare and deleterious
+
+491
+00:19:30,789 --> 00:19:35,079
+alleles it's easier to knockdown
+
+492
+00:19:32,559 --> 00:19:37,659
+expression than it is to increase
+
+493
+00:19:35,079 --> 00:19:40,000
+expression so both directions we see
+
+494
+00:19:37,660 --> 00:19:41,890
+that extreme on both sides and so where
+
+495
+00:19:40,000 --> 00:19:43,990
+you really want to be is somewhere here
+
+496
+00:19:41,890 --> 00:19:47,410
+in the middle that's the sweet spot
+
+497
+00:19:43,990 --> 00:19:49,299
+where expression is it's somewhere in
+
+498
+00:19:47,410 --> 00:19:52,480
+the middle you don't want to be at
+
+499
+00:19:49,299 --> 00:19:55,419
+either of those two extremes and that
+
+500
+00:19:52,480 --> 00:19:58,569
+basic hypothesis about extremes and the
+
+501
+00:19:55,420 --> 00:20:00,910
+wind essentially the optimal organism is
+
+502
+00:19:58,569 --> 00:20:02,769
+an organism that essentially has balance
+
+503
+00:20:00,910 --> 00:20:04,179
+expression everywhere is effectively the
+
+504
+00:20:02,769 --> 00:20:06,398
+dosage hypothesis
+
+505
+00:20:04,179 --> 00:20:08,619
+Jim Burt's allure has been advocating
+
+506
+00:20:06,398 --> 00:20:12,668
+this for a number of years as the basis
+
+507
+00:20:08,618 --> 00:20:15,548
+of mace heterosis and it works well with
+
+508
+00:20:12,669 --> 00:20:17,679
+a model you're with deleterious mutation
+
+509
+00:20:15,548 --> 00:20:20,499
+since and so on but essentially let me
+
+510
+00:20:17,679 --> 00:20:21,730
+explain the model essentially and if you
+
+511
+00:20:20,499 --> 00:20:25,569
+have balanced expression into all your
+
+512
+00:20:21,730 --> 00:20:28,179
+genes your protein complexes your
+
+513
+00:20:25,569 --> 00:20:30,970
+metabolism everything else is kind of
+
+514
+00:20:28,179 --> 00:20:33,700
+that goes as expected that produces a
+
+515
+00:20:30,970 --> 00:20:36,940
+healthy plant if you have extremes in
+
+516
+00:20:33,700 --> 00:20:39,730
+expression your protein complexes don't
+
+517
+00:20:36,940 --> 00:20:41,350
+form correctly metabolites you get
+
+518
+00:20:39,730 --> 00:20:43,149
+buildup of the wrong metabolites to the
+
+519
+00:20:41,349 --> 00:20:45,548
+wrong time points you essentially are
+
+520
+00:20:43,148 --> 00:20:48,099
+wasting energy all over the place if you
+
+521
+00:20:45,548 --> 00:20:50,740
+are not in the center everywhere and
+
+522
+00:20:48,099 --> 00:20:53,888
+that produces weak and inefficient
+
+523
+00:20:50,740 --> 00:20:56,079
+organisms and so in order to be optimal
+
+524
+00:20:53,888 --> 00:21:01,209
+you should be average everywhere that's
+
+525
+00:20:56,079 --> 00:21:04,589
+kind of is the key element there and so
+
+526
+00:21:01,210 --> 00:21:07,360
+that's what the basic model in heterosis
+
+527
+00:21:04,589 --> 00:21:08,980
+works just fine with this type of model
+
+528
+00:21:07,359 --> 00:21:13,868
+that essentially be averaged everywhere
+
+529
+00:21:08,980 --> 00:21:15,730
+and you will be highly vigorous and so
+
+530
+00:21:13,868 --> 00:21:19,028
+what Carl did is he came up with a very
+
+531
+00:21:15,730 --> 00:21:20,710
+simple statistic of just cumulative
+
+532
+00:21:19,028 --> 00:21:22,808
+dysregulation across every gene in the
+
+533
+00:21:20,710 --> 00:21:24,519
+genome he didn't give any genes greater
+
+534
+00:21:22,808 --> 00:21:27,628
+weight or a different way from what we
+
+535
+00:21:24,519 --> 00:21:30,759
+know that's very naive but essentially
+
+536
+00:21:27,628 --> 00:21:34,178
+communitive dysregulation does correlate
+
+537
+00:21:30,759 --> 00:21:36,519
+with see weight or yield he also used an
+
+538
+00:21:34,179 --> 00:21:39,548
+approach where he created a statistic
+
+539
+00:21:36,519 --> 00:21:43,028
+based on the deviations in expression in
+
+540
+00:21:39,548 --> 00:21:44,558
+order to try to predict the amount of
+
+541
+00:21:43,028 --> 00:21:46,659
+variance explained in seed weight and
+
+542
+00:21:44,558 --> 00:21:49,450
+here he was able to find anywhere from
+
+543
+00:21:46,659 --> 00:21:53,440
+20 to 30 percent of seed whey is being
+
+544
+00:21:49,450 --> 00:21:55,379
+explained by this dysregulation these
+
+545
+00:21:53,440 --> 00:21:57,669
+patterns of dysregulation so we think
+
+546
+00:21:55,378 --> 00:22:00,459
+think that maybe about half of
+
+547
+00:21:57,669 --> 00:22:03,820
+phenotypic variation is coming out of
+
+548
+00:22:00,460 --> 00:22:05,440
+processes that involve these dosage
+
+549
+00:22:03,819 --> 00:22:07,990
+aspects of essentially not having
+
+550
+00:22:05,440 --> 00:22:10,360
+balanced dosage at each gene the genome
+
+551
+00:22:07,990 --> 00:22:13,230
+is perdu producing a lot of the
+
+552
+00:22:10,359 --> 00:22:15,849
+phenotypic variation that is out there
+
+553
+00:22:13,230 --> 00:22:17,569
+okay now I told you about those two
+
+554
+00:22:15,849 --> 00:22:19,759
+different approaches that we were using
+
+555
+00:22:17,569 --> 00:22:21,349
+from the top to the bottom but if we
+
+556
+00:22:19,759 --> 00:22:23,779
+really want to get down to individual
+
+557
+00:22:21,349 --> 00:22:25,429
+nucleotides so that we know we can start
+
+558
+00:22:23,779 --> 00:22:27,470
+talking about editing and so on how do
+
+559
+00:22:25,430 --> 00:22:29,210
+we get there part of the problem with
+
+560
+00:22:27,470 --> 00:22:32,240
+all these deleterious mutations is that
+
+561
+00:22:29,210 --> 00:22:34,549
+they're rare it's very difficult to map
+
+562
+00:22:32,240 --> 00:22:36,410
+rare things okay and we don't want to
+
+563
+00:22:34,549 --> 00:22:37,940
+spend a whole bunch of time taking every
+
+564
+00:22:36,410 --> 00:22:40,550
+rare allele that's out there and III
+
+565
+00:22:37,940 --> 00:22:43,460
+Singh it's a little frequency and order
+
+566
+00:22:40,549 --> 00:22:45,859
+in order to map it and so this is where
+
+567
+00:22:43,460 --> 00:22:48,289
+machine learning comes in where we're
+
+568
+00:22:45,859 --> 00:22:51,649
+effectively learning the rules of how
+
+569
+00:22:48,289 --> 00:22:53,869
+the genome works so we can spot these
+
+570
+00:22:51,650 --> 00:22:57,470
+rare and deleterious mutations all
+
+571
+00:22:53,869 --> 00:22:59,000
+across the genome and we've been are
+
+572
+00:22:57,470 --> 00:23:00,740
+starting to think and apply this all
+
+573
+00:22:59,000 --> 00:23:02,690
+across essentially the central dogma and
+
+574
+00:23:00,740 --> 00:23:05,180
+beyond but what I'll be talking to you
+
+575
+00:23:02,690 --> 00:23:07,160
+about today is how we're using machine
+
+576
+00:23:05,180 --> 00:23:10,430
+learning to model both chromatin
+
+577
+00:23:07,160 --> 00:23:13,970
+structure and expression patterns in
+
+578
+00:23:10,430 --> 00:23:16,759
+maize and actually amazing sorghum and
+
+579
+00:23:13,970 --> 00:23:19,850
+so you know why are we talking about
+
+580
+00:23:16,759 --> 00:23:21,410
+machine learning well you know obviously
+
+581
+00:23:19,849 --> 00:23:25,099
+it's a it's a hot topic you're hearing
+
+582
+00:23:21,410 --> 00:23:27,170
+about it all the time you know you can
+
+583
+00:23:25,099 --> 00:23:29,689
+be photographing or machine learning
+
+584
+00:23:27,170 --> 00:23:32,240
+models will identify you incredibly
+
+585
+00:23:29,690 --> 00:23:35,720
+quickly you walk underneath the camera
+
+586
+00:23:32,240 --> 00:23:38,150
+it knows exactly who you are and the
+
+587
+00:23:35,720 --> 00:23:40,579
+fact that that can be done and could be
+
+588
+00:23:38,150 --> 00:23:42,440
+done for us you know why can't shouldn't
+
+589
+00:23:40,579 --> 00:23:46,009
+we apply these incredible tools to
+
+590
+00:23:42,440 --> 00:23:47,570
+understanding molecular biology too and
+
+591
+00:23:46,009 --> 00:23:49,460
+the key reason machine learning does
+
+592
+00:23:47,569 --> 00:23:51,769
+work though is it allows us to process
+
+593
+00:23:49,460 --> 00:23:54,289
+massive amounts of data it allows us
+
+594
+00:23:51,769 --> 00:23:56,720
+really to generalize rules from one
+
+595
+00:23:54,289 --> 00:23:58,399
+portion of the genome to the rest it
+
+596
+00:23:56,720 --> 00:24:00,500
+allows us to generalize rules from a
+
+597
+00:23:58,400 --> 00:24:04,340
+reference genotype so all the other
+
+598
+00:24:00,500 --> 00:24:06,710
+genotypes and finally if the model is
+
+599
+00:24:04,339 --> 00:24:08,599
+robust enough if we can be used to
+
+600
+00:24:06,710 --> 00:24:11,360
+really determine if it given genetic
+
+601
+00:24:08,599 --> 00:24:13,429
+variant matters and I think some of the
+
+602
+00:24:11,359 --> 00:24:15,589
+pushback on machine learning has been
+
+603
+00:24:13,430 --> 00:24:18,920
+historically that people especially in
+
+604
+00:24:15,589 --> 00:24:22,429
+the basic science world is that it's a
+
+605
+00:24:18,920 --> 00:24:24,769
+black box model okay and absolutely you
+
+606
+00:24:22,430 --> 00:24:26,630
+can treat machine learning entirely in a
+
+607
+00:24:24,769 --> 00:24:28,639
+black as a black box model and not
+
+608
+00:24:26,630 --> 00:24:31,549
+understand the underlying biology that
+
+609
+00:24:28,640 --> 00:24:32,960
+goes under is underlying it
+
+610
+00:24:31,548 --> 00:24:34,819
+as I'll show you we've been doing a lot
+
+611
+00:24:32,960 --> 00:24:36,919
+more work to essentially once you create
+
+612
+00:24:34,819 --> 00:24:39,470
+the model try to probe the model and ask
+
+613
+00:24:36,919 --> 00:24:41,179
+the question what's going on what did it
+
+614
+00:24:39,470 --> 00:24:44,499
+learn and now can they teach us
+
+615
+00:24:41,179 --> 00:24:47,389
+something about what was going on there
+
+616
+00:24:44,499 --> 00:24:49,308
+so I'm going to tell you about a series
+
+617
+00:24:47,388 --> 00:24:51,048
+of models and these were developed by
+
+618
+00:24:49,308 --> 00:24:53,178
+three great postdocs in the group
+
+619
+00:24:51,048 --> 00:24:56,028
+Katherine Mejia hi Wong and Jacob
+
+620
+00:24:53,179 --> 00:24:58,639
+Washburn and the models are fairly
+
+621
+00:24:56,028 --> 00:25:02,028
+straightforward to explain what we
+
+622
+00:24:58,638 --> 00:25:04,579
+wanted to do was take sequence and in
+
+623
+00:25:02,028 --> 00:25:07,849
+just sequence so no other annotation on
+
+624
+00:25:04,579 --> 00:25:10,638
+the sequence we don't want to know what
+
+625
+00:25:07,849 --> 00:25:12,709
+methylation SAS is we don't want to know
+
+626
+00:25:10,638 --> 00:25:14,599
+what the chrome any of the chromatin
+
+627
+00:25:12,710 --> 00:25:17,778
+structure I just want to take sequence
+
+628
+00:25:14,599 --> 00:25:20,658
+and from that be able to predict the
+
+629
+00:25:17,778 --> 00:25:23,089
+following is the chromatin open what
+
+630
+00:25:20,659 --> 00:25:25,249
+transcription factor binds there is it a
+
+631
+00:25:23,089 --> 00:25:28,278
+pseudo gene and what is the expression
+
+632
+00:25:25,249 --> 00:25:30,288
+level of The Associated gene next to
+
+633
+00:25:28,278 --> 00:25:32,388
+that sequence and the second class of
+
+634
+00:25:30,288 --> 00:25:35,749
+models is if I have two homologous
+
+635
+00:25:32,388 --> 00:25:38,329
+sequences and I differ differentiate the
+
+636
+00:25:35,749 --> 00:25:40,278
+expression of allele a versus a lil B
+
+637
+00:25:38,329 --> 00:25:42,378
+and figure out which one has the greater
+
+638
+00:25:40,278 --> 00:25:44,569
+level of expression so those are the
+
+639
+00:25:42,378 --> 00:25:47,298
+five models we've been exploring last
+
+640
+00:25:44,569 --> 00:25:49,778
+year and essentially we're using a
+
+641
+00:25:47,298 --> 00:25:51,819
+couple different approaches the first is
+
+642
+00:25:49,778 --> 00:25:54,048
+coming from natural language processing
+
+643
+00:25:51,819 --> 00:25:56,298
+very similar to when you type something
+
+644
+00:25:54,048 --> 00:25:58,128
+into Google and it's trying to process
+
+645
+00:25:56,298 --> 00:26:01,038
+your language and figure out what you're
+
+646
+00:25:58,128 --> 00:26:03,378
+after and what we've done here
+
+647
+00:26:01,038 --> 00:26:05,089
+Catherines work on these Kaymer language
+
+648
+00:26:03,378 --> 00:26:07,459
+based approaches you're breaking a
+
+649
+00:26:05,089 --> 00:26:09,168
+sequence into k-mers and then as I'll
+
+650
+00:26:07,460 --> 00:26:11,419
+show you your tree is essentially a bag
+
+651
+00:26:09,169 --> 00:26:12,710
+of words that we're modeling and then
+
+652
+00:26:11,419 --> 00:26:15,499
+the second class of models are these
+
+653
+00:26:12,710 --> 00:26:17,600
+convolutional neural Nets historically
+
+654
+00:26:15,499 --> 00:26:22,129
+they've been used to essentially do
+
+655
+00:26:17,599 --> 00:26:24,618
+image processing and we're essentially
+
+656
+00:26:22,128 --> 00:26:27,769
+converting sequences and ordered images
+
+657
+00:26:24,618 --> 00:26:29,839
+and then we're using the CNN's processed
+
+658
+00:26:27,769 --> 00:26:31,909
+them at different scales and then using
+
+659
+00:26:29,839 --> 00:26:34,939
+neural nets to integrate these processed
+
+660
+00:26:31,909 --> 00:26:37,759
+sequences so a little bit more detail on
+
+661
+00:26:34,940 --> 00:26:40,429
+what the camer bag of word type models
+
+662
+00:26:37,759 --> 00:26:43,069
+are so let's take DNA and effectively
+
+663
+00:26:40,429 --> 00:26:45,769
+it's a bet could be treated as a bag of
+
+664
+00:26:43,069 --> 00:26:49,279
+words very short sequences or the came
+
+665
+00:26:45,769 --> 00:26:52,879
+we take those we count them up and then
+
+666
+00:26:49,279 --> 00:26:54,379
+we can essentially fit them in a
+
+667
+00:26:52,880 --> 00:26:57,679
+regression model to make a prediction
+
+668
+00:26:54,380 --> 00:26:59,870
+and a bag of words model is no more
+
+669
+00:26:57,679 --> 00:27:03,320
+complicated than that the vector based
+
+670
+00:26:59,869 --> 00:27:05,899
+ones which rely on the ordering of the
+
+671
+00:27:03,319 --> 00:27:07,639
+words is more complicated and some more
+
+672
+00:27:05,900 --> 00:27:09,350
+powerful but essentially the bag of
+
+673
+00:27:07,640 --> 00:27:11,630
+words one is as simple it's just
+
+674
+00:27:09,349 --> 00:27:16,279
+counting up Kaymer's and fitting it to a
+
+675
+00:27:11,630 --> 00:27:17,690
+regression model okay when we need to
+
+676
+00:27:16,279 --> 00:27:19,730
+talk about the convolutional neural nets
+
+677
+00:27:17,690 --> 00:27:22,610
+we're essentially taking a sequence and
+
+678
+00:27:19,730 --> 00:27:24,920
+each base pair is getting Rhian coded
+
+679
+00:27:22,609 --> 00:27:26,419
+and so what you're seeing is essentially
+
+680
+00:27:24,920 --> 00:27:29,090
+we're making a black and white picture
+
+681
+00:27:26,420 --> 00:27:32,090
+where A's are encoded here Caesar
+
+682
+00:27:29,089 --> 00:27:34,279
+encoded there and then from that we take
+
+683
+00:27:32,089 --> 00:27:36,379
+convolutions and what convolutions are
+
+684
+00:27:34,279 --> 00:27:38,420
+doing is that they're looking across
+
+685
+00:27:36,380 --> 00:27:40,880
+that image and trying to highlight
+
+686
+00:27:38,420 --> 00:27:42,679
+various features at certain scales that
+
+687
+00:27:40,880 --> 00:27:46,400
+then can be passed on to the neural nets
+
+688
+00:27:42,679 --> 00:27:50,120
+and so those convolutions that you probe
+
+689
+00:27:46,400 --> 00:27:51,620
+the regions summarize that information
+
+690
+00:27:50,119 --> 00:27:54,049
+there and then once we have those
+
+691
+00:27:51,619 --> 00:27:57,169
+convolutions with neural nets we can
+
+692
+00:27:54,049 --> 00:27:59,389
+relate those convolutions to any trait
+
+693
+00:27:57,170 --> 00:28:01,640
+or attribute in our case we want to
+
+694
+00:27:59,390 --> 00:28:05,390
+relate that sequence to expression
+
+695
+00:28:01,640 --> 00:28:06,710
+levels and so a little bit more about
+
+696
+00:28:05,390 --> 00:28:07,970
+how we measure whether or not we've been
+
+697
+00:28:06,710 --> 00:28:10,700
+able to create machine learning mouths
+
+698
+00:28:07,970 --> 00:28:13,670
+or have any good already and use we use
+
+699
+00:28:10,700 --> 00:28:15,799
+whatever known as the ROC curves or
+
+700
+00:28:13,670 --> 00:28:17,509
+receiver operating characteristic curves
+
+701
+00:28:15,799 --> 00:28:19,039
+and essentially these are just ways to
+
+702
+00:28:17,509 --> 00:28:21,890
+count how well you're doing and
+
+703
+00:28:19,039 --> 00:28:24,409
+measuring comparing your truths and
+
+704
+00:28:21,890 --> 00:28:26,690
+false positive rates and essentially the
+
+705
+00:28:24,410 --> 00:28:28,970
+way we've set them up for the this talk
+
+706
+00:28:26,690 --> 00:28:31,759
+here our random expectation is along the
+
+707
+00:28:28,970 --> 00:28:33,679
+diagonal and we expect that to
+
+708
+00:28:31,759 --> 00:28:37,670
+essentially produce an area under the
+
+709
+00:28:33,679 --> 00:28:39,470
+curve or a ROC curve of about 0.5 if we
+
+710
+00:28:37,670 --> 00:28:41,690
+have a perfect classifier the table it
+
+711
+00:28:39,470 --> 00:28:44,600
+of completely differentiate to two
+
+712
+00:28:41,690 --> 00:28:46,910
+separate classes with no errors we it'll
+
+713
+00:28:44,599 --> 00:28:49,399
+follow along there and essentially its
+
+714
+00:28:46,910 --> 00:28:51,440
+area under the curve would be 100% and
+
+715
+00:28:49,400 --> 00:28:52,970
+so this is one way we measure whether or
+
+716
+00:28:51,440 --> 00:28:57,259
+not we've been able to create a machine
+
+717
+00:28:52,970 --> 00:28:59,480
+learning model that is of value and so
+
+718
+00:28:57,259 --> 00:29:01,910
+Katherine took this type of model
+
+719
+00:28:59,480 --> 00:29:04,309
+was using the chip seek data from the
+
+720
+00:29:01,910 --> 00:29:07,640
+transcription factor fee of for to train
+
+721
+00:29:04,309 --> 00:29:09,529
+on and she was able to using that bag of
+
+722
+00:29:07,640 --> 00:29:11,690
+words model be able to create a model
+
+723
+00:29:09,529 --> 00:29:15,889
+that had very high levels of accuracy at
+
+724
+00:29:11,690 --> 00:29:18,230
+0.99 and ascend she was almost perfectly
+
+725
+00:29:15,890 --> 00:29:20,030
+classified where each of those
+
+726
+00:29:18,230 --> 00:29:21,980
+transcription factors were binding all
+
+727
+00:29:20,029 --> 00:29:25,420
+across the genome and it wasn't just
+
+728
+00:29:21,980 --> 00:29:28,490
+that transcription factor she's used the
+
+729
+00:29:25,420 --> 00:29:30,710
+chip seek data from not at one also very
+
+730
+00:29:28,490 --> 00:29:33,920
+high levels of accuracy we had emanation
+
+731
+00:29:30,710 --> 00:29:35,750
+open chromatin data that she was able to
+
+732
+00:29:33,920 --> 00:29:38,480
+use and again it was able to Train very
+
+733
+00:29:35,750 --> 00:29:40,640
+good models there and then she also was
+
+734
+00:29:38,480 --> 00:29:43,370
+able to classify core promoter sequences
+
+735
+00:29:40,640 --> 00:29:45,710
+with high levels of accuracy so
+
+736
+00:29:43,369 --> 00:29:47,419
+essentially we and she's been able to
+
+737
+00:29:45,710 --> 00:29:49,970
+now repeat this for about a hundred
+
+738
+00:29:47,420 --> 00:29:53,420
+other transcription factors with other
+
+739
+00:29:49,970 --> 00:29:55,549
+collaborators and effectively we can now
+
+740
+00:29:53,420 --> 00:29:57,440
+create machine learning models that
+
+741
+00:29:55,549 --> 00:30:00,250
+model where transcription factors going
+
+742
+00:29:57,440 --> 00:30:02,450
+to bind with high levels of accuracy and
+
+743
+00:30:00,250 --> 00:30:03,890
+essentially start annotating all sorts
+
+744
+00:30:02,450 --> 00:30:06,470
+of other genomes with it especially
+
+745
+00:30:03,890 --> 00:30:08,750
+within maize but one of the questions we
+
+746
+00:30:06,470 --> 00:30:11,059
+did want to ask is how good are these
+
+747
+00:30:08,750 --> 00:30:13,220
+models transferable from maize to say
+
+748
+00:30:11,059 --> 00:30:13,909
+other species and so Katherine asked
+
+749
+00:30:13,220 --> 00:30:16,850
+that question
+
+750
+00:30:13,910 --> 00:30:18,920
+she took her core promoter model and so
+
+751
+00:30:16,849 --> 00:30:22,579
+it was great in maize but then she took
+
+752
+00:30:18,920 --> 00:30:24,320
+it to sorghum yeah it was okay it's not
+
+753
+00:30:22,579 --> 00:30:26,359
+you know the transferability from mesa
+
+754
+00:30:24,319 --> 00:30:28,669
+sorghum wasn't as great as we would have
+
+755
+00:30:26,359 --> 00:30:30,139
+hoped there now we know strategies about
+
+756
+00:30:28,670 --> 00:30:31,820
+how we could make a model that work
+
+757
+00:30:30,140 --> 00:30:33,800
+across both of them the key element is
+
+758
+00:30:31,819 --> 00:30:35,779
+we would probably train across both
+
+759
+00:30:33,799 --> 00:30:37,909
+maize and sorghum simultaneously rather
+
+760
+00:30:35,779 --> 00:30:40,579
+than just training on one species at a
+
+761
+00:30:37,910 --> 00:30:44,540
+time but some of the models for example
+
+762
+00:30:40,579 --> 00:30:46,669
+her not at one model for maize it
+
+763
+00:30:44,539 --> 00:30:48,649
+actually had superb transfer ability all
+
+764
+00:30:46,670 --> 00:30:51,590
+the way to rice so that when transferred
+
+765
+00:30:48,650 --> 00:30:54,410
+65 million years without a problem so
+
+766
+00:30:51,589 --> 00:30:55,939
+each of these models some have high
+
+767
+00:30:54,410 --> 00:30:57,740
+levels of transfer ability some don't
+
+768
+00:30:55,940 --> 00:31:01,160
+but there are strategies for figuring
+
+769
+00:30:57,740 --> 00:31:04,849
+out and improving the transfer ability
+
+770
+00:31:01,160 --> 00:31:07,040
+across species these camera models are
+
+771
+00:31:04,849 --> 00:31:09,379
+also really we talked about the black
+
+772
+00:31:07,039 --> 00:31:13,220
+box aspect all of that was pretty much
+
+773
+00:31:09,380 --> 00:31:15,830
+black box you can open up the models
+
+774
+00:31:13,220 --> 00:31:18,829
+okay how did the model figure out that
+
+775
+00:31:15,829 --> 00:31:20,839
+this is a core promotor and so of course
+
+776
+00:31:18,829 --> 00:31:22,849
+we know the Tata box should play an
+
+777
+00:31:20,839 --> 00:31:24,649
+important role in defining a core
+
+778
+00:31:22,849 --> 00:31:26,808
+promoter sequence and so what she's
+
+779
+00:31:24,650 --> 00:31:29,298
+plotted out here is essentially the
+
+780
+00:31:26,808 --> 00:31:30,859
+weight of each Kaymer and there's
+
+781
+00:31:29,298 --> 00:31:32,720
+thousands of Kaymer she was looking at
+
+782
+00:31:30,859 --> 00:31:35,178
+but these are the Tata light cameras and
+
+783
+00:31:32,720 --> 00:31:37,669
+the most important ones for defining a
+
+784
+00:31:35,179 --> 00:31:39,350
+core promoter are listed here as you see
+
+785
+00:31:37,669 --> 00:31:40,788
+they line up right next to where the
+
+786
+00:31:39,349 --> 00:31:43,788
+transcriptional start site is so
+
+787
+00:31:40,788 --> 00:31:45,769
+essentially this black box model the way
+
+788
+00:31:43,788 --> 00:31:48,920
+it learned how transcription starts and
+
+789
+00:31:45,769 --> 00:31:50,529
+in maize was finding the tata box and
+
+790
+00:31:48,920 --> 00:31:52,669
+[Music]
+
+791
+00:31:50,529 --> 00:31:54,168
+learning essentially the rules that of
+
+792
+00:31:52,669 --> 00:31:56,900
+course obviously everybody's known this
+
+793
+00:31:54,169 --> 00:31:59,960
+for years but it was able to learn
+
+794
+00:31:56,900 --> 00:32:04,100
+effectively the right rules on how this
+
+795
+00:31:59,960 --> 00:32:08,259
+worked ok we've also though found that
+
+796
+00:32:04,099 --> 00:32:10,788
+training models can be tricky and
+
+797
+00:32:08,259 --> 00:32:12,829
+machine learning models they're
+
+798
+00:32:10,788 --> 00:32:16,129
+incredibly proud they can learn and
+
+799
+00:32:12,829 --> 00:32:17,569
+memorize virtually anything the question
+
+800
+00:32:16,130 --> 00:32:20,690
+is whether or not it's letting what you
+
+801
+00:32:17,569 --> 00:32:23,240
+wanted to learn and this is where the
+
+802
+00:32:20,690 --> 00:32:26,210
+last six months or so we've been really
+
+803
+00:32:23,240 --> 00:32:28,400
+doing a lot more work to make sure we're
+
+804
+00:32:26,210 --> 00:32:31,340
+training on the attributes of the models
+
+805
+00:32:28,400 --> 00:32:33,110
+that we really care about and turned out
+
+806
+00:32:31,339 --> 00:32:34,699
+that a lot of our models especially when
+
+807
+00:32:33,109 --> 00:32:37,308
+we went across lots of different genes
+
+808
+00:32:34,700 --> 00:32:40,069
+our models were effectively able to
+
+809
+00:32:37,308 --> 00:32:41,960
+memorize the evolutionary history of how
+
+810
+00:32:40,069 --> 00:32:44,240
+every genes relate to every other team
+
+811
+00:32:41,960 --> 00:32:46,038
+okay which isn't you know that's an
+
+812
+00:32:44,240 --> 00:32:47,509
+interesting evolutionary story but
+
+813
+00:32:46,038 --> 00:32:49,759
+doesn't teach you the rules of how
+
+814
+00:32:47,509 --> 00:32:51,769
+malleco biology works and exactly how a
+
+815
+00:32:49,759 --> 00:32:54,650
+promoter works we didn't want to just
+
+816
+00:32:51,769 --> 00:32:56,480
+memorize evolution so what we've done is
+
+817
+00:32:54,650 --> 00:32:58,880
+we've started to think through how can
+
+818
+00:32:56,480 --> 00:33:01,730
+we use evolution as our aid not
+
+819
+00:32:58,880 --> 00:33:03,650
+something we just memorize and so we've
+
+820
+00:33:01,730 --> 00:33:05,538
+set up two different ways of setting up
+
+821
+00:33:03,650 --> 00:33:07,940
+our training versus our testing the
+
+822
+00:33:05,538 --> 00:33:09,829
+first one I want a group set up was
+
+823
+00:33:07,940 --> 00:33:11,929
+essentially gene family guided training
+
+824
+00:33:09,829 --> 00:33:13,668
+where you train on one set of gene
+
+825
+00:33:11,929 --> 00:33:15,919
+families so you take half the gene
+
+826
+00:33:13,669 --> 00:33:17,780
+families across mate and you train on
+
+827
+00:33:15,919 --> 00:33:20,179
+them but you hide all the other gene
+
+828
+00:33:17,779 --> 00:33:22,668
+families but you test if your model is
+
+829
+00:33:20,179 --> 00:33:24,350
+doing very well with a group of gene
+
+830
+00:33:22,669 --> 00:33:26,720
+families the model has never seen before
+
+831
+00:33:24,349 --> 00:33:28,548
+if you are learning things
+
+832
+00:33:26,720 --> 00:33:30,140
+that are transferable to gene families
+
+833
+00:33:28,548 --> 00:33:32,329
+you've never seen before then it's
+
+834
+00:33:30,140 --> 00:33:34,909
+likely a good model it just hasn't just
+
+835
+00:33:32,329 --> 00:33:37,730
+memorized recent evolution in order to
+
+836
+00:33:34,909 --> 00:33:39,860
+figure things out and the second way to
+
+837
+00:33:37,730 --> 00:33:42,650
+do it is to essentially take a couple
+
+838
+00:33:39,859 --> 00:33:45,019
+related species to one another and
+
+839
+00:33:42,650 --> 00:33:48,288
+essentially compare the orthologs
+
+840
+00:33:45,019 --> 00:33:49,639
+against one another in order to do the
+
+841
+00:33:48,288 --> 00:33:51,230
+cassette of the contrast there and
+
+842
+00:33:49,640 --> 00:33:53,480
+that's what we call the ortholog
+
+843
+00:33:51,230 --> 00:33:57,019
+contrast training model I'll go into
+
+844
+00:33:53,480 --> 00:34:00,140
+that and Jacob Washburn has been leading
+
+845
+00:33:57,019 --> 00:34:01,490
+the effort in those types of analyses so
+
+846
+00:34:00,140 --> 00:34:03,799
+in that first one
+
+847
+00:34:01,490 --> 00:34:05,599
+hi everyone to ask the question can he
+
+848
+00:34:03,798 --> 00:34:07,519
+train a model to identify what are the
+
+849
+00:34:05,599 --> 00:34:09,199
+pseudo genes across the genome and which
+
+850
+00:34:07,519 --> 00:34:12,050
+are the genes that are highly expressed
+
+851
+00:34:09,199 --> 00:34:14,809
+and so normally he's taking the promoter
+
+852
+00:34:12,050 --> 00:34:17,769
+sequence the utrs about 50 and her base
+
+853
+00:34:14,809 --> 00:34:21,259
+pairs up there 1,500 base pairs on the
+
+854
+00:34:17,769 --> 00:34:23,269
+3-prime utr and beyond beyond the
+
+855
+00:34:21,260 --> 00:34:24,980
+terminator throwing that into a model
+
+856
+00:34:23,269 --> 00:34:28,009
+letting the convolutional neural net
+
+857
+00:34:24,980 --> 00:34:30,800
+then predict expression levels and what
+
+858
+00:34:28,010 --> 00:34:32,629
+he did is he took a data set where we
+
+859
+00:34:30,800 --> 00:34:34,879
+had expression across 66 different
+
+860
+00:34:32,628 --> 00:34:36,829
+tissues and took the maximal expression
+
+861
+00:34:34,878 --> 00:34:40,159
+level and he asked the question kenny
+
+862
+00:34:36,829 --> 00:34:42,079
+differentiate between the genes that are
+
+863
+00:34:40,159 --> 00:34:44,329
+never expressed versus the genes that
+
+864
+00:34:42,079 --> 00:34:46,128
+are expressed that's the combination of
+
+865
+00:34:44,329 --> 00:34:50,210
+these two or just the really highly
+
+866
+00:34:46,128 --> 00:34:51,829
+expressed genes and i preempt this next
+
+867
+00:34:50,210 --> 00:34:54,139
+slide we're a lot better at
+
+868
+00:34:51,829 --> 00:34:56,148
+differentiating between this group
+
+869
+00:34:54,139 --> 00:34:58,220
+versus that group and differentiating
+
+870
+00:34:56,148 --> 00:35:01,809
+between here and all of these but the
+
+871
+00:34:58,219 --> 00:35:03,588
+model is still quite good and
+
+872
+00:35:01,809 --> 00:35:06,858
+essentially when you try to
+
+873
+00:35:03,588 --> 00:35:10,429
+differentiate between off versus high he
+
+874
+00:35:06,858 --> 00:35:12,108
+has about an 80% accuracy there and if
+
+875
+00:35:10,429 --> 00:35:13,639
+you just use either the promoter or the
+
+876
+00:35:12,108 --> 00:35:15,469
+terminator sequence and if you combine
+
+877
+00:35:13,639 --> 00:35:15,858
+the two together we get a substantial
+
+878
+00:35:15,469 --> 00:35:18,199
+boost
+
+879
+00:35:15,858 --> 00:35:21,409
+so essentially signal for whether or not
+
+880
+00:35:18,199 --> 00:35:23,719
+the gene is on or a high is coming from
+
+881
+00:35:21,409 --> 00:35:26,329
+both the 5 Prime and 3 prime end of the
+
+882
+00:35:23,719 --> 00:35:32,179
+gene and we can create a pretty good
+
+883
+00:35:26,329 --> 00:35:33,829
+model classify each of those the the
+
+884
+00:35:32,179 --> 00:35:35,358
+second question that we were interested
+
+885
+00:35:33,829 --> 00:35:36,920
+in is which allele is more highly
+
+886
+00:35:35,358 --> 00:35:40,610
+expressed here we're taking two
+
+887
+00:35:36,920 --> 00:35:42,680
+homologous sequences and from a person
+
+888
+00:35:40,610 --> 00:35:44,300
+quantitative genetics background this is
+
+889
+00:35:42,679 --> 00:35:46,909
+really kind of the fundamental question
+
+890
+00:35:44,300 --> 00:35:49,850
+I have of molecular biology I want to
+
+891
+00:35:46,909 --> 00:35:52,039
+know a given variant does it change does
+
+892
+00:35:49,849 --> 00:35:54,619
+it make something go up does it make it
+
+893
+00:35:52,039 --> 00:35:56,509
+go down or does it have no effect those
+
+894
+00:35:54,619 --> 00:35:58,219
+are the once I have to get down to the
+
+895
+00:35:56,510 --> 00:35:59,570
+right side of those then I can throw it
+
+896
+00:35:58,219 --> 00:36:00,980
+into a more complex model of
+
+897
+00:35:59,570 --> 00:36:04,010
+quantitative genetics and parameterize
+
+898
+00:36:00,980 --> 00:36:06,969
+everything so this is the salah' model I
+
+899
+00:36:04,010 --> 00:36:10,700
+really want to use in order to
+
+900
+00:36:06,969 --> 00:36:13,159
+parameterize the entire genome and the
+
+901
+00:36:10,699 --> 00:36:15,349
+way Jacob has gone about this is
+
+902
+00:36:13,159 --> 00:36:17,359
+essentially reframing it using these
+
+903
+00:36:15,349 --> 00:36:19,279
+orthologs and I mentioned we're
+
+904
+00:36:17,360 --> 00:36:21,110
+essentially comparing the orthologs in
+
+905
+00:36:19,280 --> 00:36:23,240
+two different portions or two different
+
+906
+00:36:21,110 --> 00:36:24,740
+species training on them and then
+
+907
+00:36:23,239 --> 00:36:27,079
+testing on a different set there so
+
+908
+00:36:24,739 --> 00:36:28,579
+instead of just having one sequence and
+
+909
+00:36:27,079 --> 00:36:30,860
+fruit making a prediction of phenotype
+
+910
+00:36:28,579 --> 00:36:33,380
+we're taking two sequences and comparing
+
+911
+00:36:30,860 --> 00:36:35,360
+them and what we found is that rather
+
+912
+00:36:33,380 --> 00:36:37,369
+than actually predicting exactly the
+
+913
+00:36:35,360 --> 00:36:38,930
+difference in expression we're most
+
+914
+00:36:37,369 --> 00:36:41,539
+interested in really predicting whether
+
+915
+00:36:38,929 --> 00:36:43,789
+or not it went up or went down and I'll
+
+916
+00:36:41,539 --> 00:36:45,380
+also highlight that we found out that
+
+917
+00:36:43,789 --> 00:36:47,739
+there's a lot of genes especially when
+
+918
+00:36:45,380 --> 00:36:49,789
+we have to compare between species that
+
+919
+00:36:47,739 --> 00:36:51,559
+very subtle differences in the
+
+920
+00:36:49,789 --> 00:36:53,480
+expression we're not very good at
+
+921
+00:36:51,559 --> 00:36:55,699
+predicting whether or not a gene went up
+
+922
+00:36:53,480 --> 00:36:57,829
+or down slightly between major sorghum
+
+923
+00:36:55,699 --> 00:36:59,869
+but if we take a look at the top twenty
+
+924
+00:36:57,829 --> 00:37:01,909
+or twenty percent of the genes that
+
+925
+00:36:59,869 --> 00:37:03,710
+really moved up and down in an
+
+926
+00:37:01,909 --> 00:37:06,049
+expression between maize and sorghum or
+
+927
+00:37:03,710 --> 00:37:08,659
+logs then we have a very good prediction
+
+928
+00:37:06,050 --> 00:37:11,060
+accuracy okay and some of this is maybe
+
+929
+00:37:08,659 --> 00:37:12,230
+our ability to be able to really tell
+
+930
+00:37:11,059 --> 00:37:14,269
+whether or not something went up or down
+
+931
+00:37:12,230 --> 00:37:19,219
+isn't great if the expression
+
+932
+00:37:14,269 --> 00:37:21,320
+differences are really slight so Jacob
+
+933
+00:37:19,219 --> 00:37:24,859
+took this model very similar to what
+
+934
+00:37:21,320 --> 00:37:27,080
+high exactly the same way that I broke
+
+935
+00:37:24,860 --> 00:37:28,550
+up the sequences here but he's
+
+936
+00:37:27,079 --> 00:37:30,349
+essentially taking two genes in the
+
+937
+00:37:28,550 --> 00:37:33,380
+model and then letting the convolutional
+
+938
+00:37:30,349 --> 00:37:36,650
+neural ad pick out which hot ortholog is
+
+939
+00:37:33,380 --> 00:37:40,280
+more highly expressed and so the pattern
+
+940
+00:37:36,650 --> 00:37:42,860
+here was was somewhat different so the
+
+941
+00:37:40,280 --> 00:37:45,740
+first thing to highlight is that the
+
+942
+00:37:42,860 --> 00:37:47,570
+promoter five prime end versus three
+
+943
+00:37:45,739 --> 00:37:48,649
+prime end it was really the three prime
+
+944
+00:37:47,570 --> 00:37:50,840
+end that was giving us much more
+
+945
+00:37:48,650 --> 00:37:52,910
+information than the promoter was and we
+
+946
+00:37:50,840 --> 00:37:54,470
+didn't get much improvement by combining
+
+947
+00:37:52,909 --> 00:37:56,838
+the two of them together
+
+948
+00:37:54,469 --> 00:37:59,629
+and as I mentioned we if we only look at
+
+949
+00:37:56,838 --> 00:38:01,578
+the 20% of the genes and really a big
+
+950
+00:37:59,630 --> 00:38:03,380
+expression differences then we have a
+
+951
+00:38:01,579 --> 00:38:04,700
+really accurate model there's real
+
+952
+00:38:03,380 --> 00:38:07,700
+subtle differences between maize and
+
+953
+00:38:04,699 --> 00:38:09,679
+sorghum we're not able to pick those out
+
+954
+00:38:07,699 --> 00:38:11,929
+particularly well but if there's a big
+
+955
+00:38:09,679 --> 00:38:14,029
+difference we can create a classifier
+
+956
+00:38:11,929 --> 00:38:15,649
+that's actually really accurate but the
+
+957
+00:38:14,030 --> 00:38:18,800
+interesting thing is most of the signal
+
+958
+00:38:15,650 --> 00:38:21,108
+was coming from the Terminator and of
+
+959
+00:38:18,800 --> 00:38:23,150
+the sequences and to plot that out again
+
+960
+00:38:21,108 --> 00:38:25,219
+we can once we've created these models
+
+961
+00:38:23,150 --> 00:38:27,588
+we can go through base pair by base pair
+
+962
+00:38:25,219 --> 00:38:29,539
+and ask what did the model learn what
+
+963
+00:38:27,588 --> 00:38:32,029
+base pairs were most important for
+
+964
+00:38:29,539 --> 00:38:33,679
+making that prediction and so that's
+
+965
+00:38:32,030 --> 00:38:35,930
+what you're seeing here is essentially
+
+966
+00:38:33,679 --> 00:38:37,759
+these are called saliency Maps and what
+
+967
+00:38:35,929 --> 00:38:39,588
+they're doing is they're telling us what
+
+968
+00:38:37,760 --> 00:38:42,740
+base pair by base pair is providing the
+
+969
+00:38:39,588 --> 00:38:44,838
+most information and high expression and
+
+970
+00:38:42,739 --> 00:38:47,449
+it turned out when we do that ortholog
+
+971
+00:38:44,838 --> 00:38:49,909
+contrast model the the sequence is right
+
+972
+00:38:47,449 --> 00:38:52,429
+before the Terminator sequence were the
+
+973
+00:38:49,909 --> 00:38:55,909
+most important for determining the
+
+974
+00:38:52,429 --> 00:38:57,980
+expression levels Wow if we look at
+
+975
+00:38:55,909 --> 00:39:00,289
+pseudogenes five prime utrs were most
+
+976
+00:38:57,980 --> 00:39:01,639
+important and so on so we are learning
+
+977
+00:39:00,289 --> 00:39:03,349
+that you know for each of these
+
+978
+00:39:01,639 --> 00:39:05,118
+different models to proportion to the
+
+979
+00:39:03,349 --> 00:39:06,559
+gene seem to be most important for
+
+980
+00:39:05,119 --> 00:39:10,760
+explaining this so what this is
+
+981
+00:39:06,559 --> 00:39:13,400
+suggesting is the model that I was
+
+982
+00:39:10,760 --> 00:39:15,400
+working on was really asking questions
+
+983
+00:39:13,400 --> 00:39:18,349
+about how different classes of genes
+
+984
+00:39:15,400 --> 00:39:19,818
+control their regulation that seems to
+
+985
+00:39:18,349 --> 00:39:22,250
+be an issue that's substantially
+
+986
+00:39:19,818 --> 00:39:25,750
+regulated by the five prime UTR the
+
+987
+00:39:22,250 --> 00:39:30,588
+promoter sequence and so on how to
+
+988
+00:39:25,750 --> 00:39:32,929
+define tuning of how one gene changes
+
+989
+00:39:30,588 --> 00:39:34,789
+its expression through evolutionary time
+
+990
+00:39:32,929 --> 00:39:37,818
+seems to be coming more from the three
+
+991
+00:39:34,789 --> 00:39:41,210
+prime UTR side so whether the gene is on
+
+992
+00:39:37,818 --> 00:39:43,429
+or off by prime whether that exact
+
+993
+00:39:41,210 --> 00:39:45,619
+amount of expression that's left on and
+
+994
+00:39:43,429 --> 00:39:47,358
+the fine-tuning of it and what makes the
+
+995
+00:39:45,619 --> 00:39:49,180
+difference between maize and sorghum may
+
+996
+00:39:47,358 --> 00:39:52,940
+well be coming from the three prime UTR
+
+997
+00:39:49,179 --> 00:39:57,169
+side of things so at least that's our
+
+998
+00:39:52,940 --> 00:39:59,510
+current hypothesis so I want to end up
+
+999
+00:39:57,170 --> 00:40:01,400
+here though is can we also probe these
+
+1000
+00:39:59,510 --> 00:40:02,839
+models and get down to that level we're
+
+1001
+00:40:01,400 --> 00:40:06,079
+really starting to ask the question can
+
+1002
+00:40:02,838 --> 00:40:08,449
+we edit and Kathryn took one of her
+
+1003
+00:40:06,079 --> 00:40:10,609
+models she lined up her day
+
+1004
+00:40:08,449 --> 00:40:12,828
+and her models nodded one against
+
+1005
+00:40:10,608 --> 00:40:15,858
+empirical data the sir Hakes group
+
+1006
+00:40:12,829 --> 00:40:17,480
+produced a decade ago and where they
+
+1007
+00:40:15,858 --> 00:40:20,059
+tweaked individual base pairs and then
+
+1008
+00:40:17,480 --> 00:40:21,980
+did a competition assay to ask do these
+
+1009
+00:40:20,059 --> 00:40:23,570
+individual base pairs matter and what
+
+1010
+00:40:21,980 --> 00:40:25,608
+you'll see is that where she predicts
+
+1011
+00:40:23,570 --> 00:40:28,088
+high regulatory probabilities that's
+
+1012
+00:40:25,608 --> 00:40:30,670
+what we see and where she predicts lo
+
+1013
+00:40:28,088 --> 00:40:33,380
+and these individual base pair changes
+
+1014
+00:40:30,670 --> 00:40:36,079
+they line up with the competition assays
+
+1015
+00:40:33,380 --> 00:40:38,088
+so I think we've gotten to a level where
+
+1016
+00:40:36,079 --> 00:40:40,519
+these machine learning models can be
+
+1017
+00:40:38,088 --> 00:40:42,380
+trained that they have the sensitivity
+
+1018
+00:40:40,519 --> 00:40:44,719
+to ask a question if one or two bases
+
+1019
+00:40:42,380 --> 00:40:48,588
+are changed here that that's likely to
+
+1020
+00:40:44,719 --> 00:40:51,858
+produce an effect so what are the limits
+
+1021
+00:40:48,588 --> 00:40:53,358
+of our current models so if there's
+
+1022
+00:40:51,858 --> 00:40:55,848
+deleterious models I was telling you
+
+1023
+00:40:53,358 --> 00:40:57,679
+about they're good at splitting neutral
+
+1024
+00:40:55,849 --> 00:40:59,180
+from functional and what do I mean by
+
+1025
+00:40:57,679 --> 00:41:01,309
+that let's say there's 80 million
+
+1026
+00:40:59,179 --> 00:41:03,529
+variants out there I think we're at a
+
+1027
+00:41:01,309 --> 00:41:05,630
+stage we're at least four amino acids I
+
+1028
+00:41:03,530 --> 00:41:08,510
+can tell you these are the 2,000 or
+
+1029
+00:41:05,630 --> 00:41:10,519
+3,000 bad amino acids out there so from
+
+1030
+00:41:08,510 --> 00:41:12,260
+one point of view we separated 3,000
+
+1031
+00:41:10,519 --> 00:41:15,139
+away from 80 million that seems really
+
+1032
+00:41:12,260 --> 00:41:17,329
+good we're not very good at telling you
+
+1033
+00:41:15,139 --> 00:41:19,909
+among those last 3,000 which is the
+
+1034
+00:41:17,329 --> 00:41:23,140
+worst one okay we're not very good at
+
+1035
+00:41:19,909 --> 00:41:25,879
+ranking within those last three thousand
+
+1036
+00:41:23,139 --> 00:41:27,710
+we're also when we go across this much
+
+1037
+00:41:25,880 --> 00:41:31,160
+diversity we're missing the regulatory
+
+1038
+00:41:27,710 --> 00:41:33,829
+landscape how maze is controlling this
+
+1039
+00:41:31,159 --> 00:41:36,170
+expression versus rabbitov sis things
+
+1040
+00:41:33,829 --> 00:41:37,700
+have changed so dramatically that the
+
+1041
+00:41:36,170 --> 00:41:41,329
+rule we can't learn all the rules from
+
+1042
+00:41:37,699 --> 00:41:43,730
+rabbitov sis how each individual gene is
+
+1043
+00:41:41,329 --> 00:41:45,920
+being expressed and made and of course
+
+1044
+00:41:43,730 --> 00:41:48,349
+we have very diverse physiology so how
+
+1045
+00:41:45,920 --> 00:41:50,420
+are we working to get around that well
+
+1046
+00:41:48,349 --> 00:41:52,700
+initially we only had four species of
+
+1047
+00:41:50,420 --> 00:41:55,099
+Andrew pagana and so what we're doing
+
+1048
+00:41:52,699 --> 00:41:56,838
+now is we've just got started in our
+
+1049
+00:41:55,099 --> 00:41:58,550
+project that's been funded by the
+
+1050
+00:41:56,838 --> 00:42:00,769
+National Science Foundation with my
+
+1051
+00:41:58,550 --> 00:42:01,430
+colleagues toby kellogg matt Huffer jeff
+
+1052
+00:42:00,769 --> 00:42:03,380
+ross abara
+
+1053
+00:42:01,429 --> 00:42:05,809
+adam steeple and cheese son and we're
+
+1054
+00:42:03,380 --> 00:42:09,289
+gonna focus on one clade and so why do
+
+1055
+00:42:05,809 --> 00:42:11,929
+we care about focusing on a clade well I
+
+1056
+00:42:09,289 --> 00:42:13,909
+mentioned initially that Mays we've
+
+1057
+00:42:11,929 --> 00:42:15,618
+learned a lot from Ace but we with a
+
+1058
+00:42:13,909 --> 00:42:17,000
+thousand genomes for the sequencing we
+
+1059
+00:42:15,619 --> 00:42:19,550
+only capture about three million years
+
+1060
+00:42:17,000 --> 00:42:22,340
+of evolution if we were to apply that
+
+1061
+00:42:19,550 --> 00:42:26,030
+same thousand GM's worth of information
+
+1062
+00:42:22,340 --> 00:42:27,890
+across this entire plate from say 900
+
+1063
+00:42:26,030 --> 00:42:30,860
+different Andrew pagana we would capture
+
+1064
+00:42:27,889 --> 00:42:34,099
+1.5 billion years of evolutionary time
+
+1065
+00:42:30,860 --> 00:42:36,410
+okay so we've dramatically increased the
+
+1066
+00:42:34,099 --> 00:42:38,119
+total amount of time by 300 fold that
+
+1067
+00:42:36,409 --> 00:42:40,670
+we're now sampling I was telling you how
+
+1068
+00:42:38,119 --> 00:42:42,739
+sensitive evolution is at detecting
+
+1069
+00:42:40,670 --> 00:42:46,909
+Fitness differences but now we've
+
+1070
+00:42:42,739 --> 00:42:49,519
+turbocharged it now we have 300 times
+
+1071
+00:42:46,909 --> 00:42:53,029
+more information and the key thing is
+
+1072
+00:42:49,519 --> 00:42:54,650
+within this clade they all share nad PC
+
+1073
+00:42:53,030 --> 00:42:56,660
+for photosynthesis they're all the same
+
+1074
+00:42:54,650 --> 00:42:59,360
+roughly and the big scheme of things the
+
+1075
+00:42:56,659 --> 00:43:01,909
+same physiology and similar
+
+1076
+00:42:59,360 --> 00:43:03,680
+developmental patterns so we're not
+
+1077
+00:43:01,909 --> 00:43:05,239
+trying to make models that work all the
+
+1078
+00:43:03,679 --> 00:43:07,669
+way out to arrive at ops we're working
+
+1079
+00:43:05,239 --> 00:43:09,379
+with a group of grasses that untrain
+
+1080
+00:43:07,670 --> 00:43:13,789
+system says many of them all look very
+
+1081
+00:43:09,380 --> 00:43:17,150
+similar to one another okay but they've
+
+1082
+00:43:13,789 --> 00:43:18,710
+adapted all over the planet so one way
+
+1083
+00:43:17,150 --> 00:43:22,250
+to view this is this is really
+
+1084
+00:43:18,710 --> 00:43:24,349
+saturation evolutionary analysis every
+
+1085
+00:43:22,250 --> 00:43:27,050
+ancestral base pair here has actually
+
+1086
+00:43:24,349 --> 00:43:28,789
+been mutated 50 times somewhere coming
+
+1087
+00:43:27,050 --> 00:43:31,160
+out here into those 900 different
+
+1088
+00:43:28,789 --> 00:43:34,610
+species so every base pair has been
+
+1089
+00:43:31,159 --> 00:43:36,139
+whacked by evolution and mutations all
+
+1090
+00:43:34,610 --> 00:43:38,150
+over the place and so we can actually
+
+1091
+00:43:36,139 --> 00:43:39,949
+start measuring and constraint directly
+
+1092
+00:43:38,150 --> 00:43:43,160
+these species although they
+
+1093
+00:43:39,949 --> 00:43:44,929
+developmentally look very similar i've
+
+1094
+00:43:43,159 --> 00:43:48,199
+actually adapted to an incredible range
+
+1095
+00:43:44,929 --> 00:43:51,259
+of also environmental adaptations from
+
+1096
+00:43:48,199 --> 00:43:54,710
+ross to very hot temperatures throughout
+
+1097
+00:43:51,260 --> 00:43:57,890
+the environments to essentially in
+
+1098
+00:43:54,710 --> 00:44:00,019
+swamps and so from across this entire
+
+1099
+00:43:57,889 --> 00:44:01,819
+species we can learn how these species
+
+1100
+00:44:00,019 --> 00:44:05,570
+have adapted to some Ahlers diverse
+
+1101
+00:44:01,820 --> 00:44:08,780
+environmental adaptations and so we're
+
+1102
+00:44:05,570 --> 00:44:11,269
+working to essentially sample sequence
+
+1103
+00:44:08,780 --> 00:44:13,400
+analyze all 900 of those species genomes
+
+1104
+00:44:11,269 --> 00:44:14,989
+in the next several years and we really
+
+1105
+00:44:13,400 --> 00:44:17,720
+see that evolution and machine learning
+
+1106
+00:44:14,989 --> 00:44:19,489
+we will be bringing those together where
+
+1107
+00:44:17,719 --> 00:44:22,069
+we see that evolution provides us this
+
+1108
+00:44:19,489 --> 00:44:24,529
+nearly infinite level of mutagenesis it
+
+1109
+00:44:22,070 --> 00:44:26,210
+provides us an ability to see Fitness
+
+1110
+00:44:24,530 --> 00:44:29,210
+effects that are a thousandfold more
+
+1111
+00:44:26,210 --> 00:44:30,769
+powerful than field experiments and it
+
+1112
+00:44:29,210 --> 00:44:32,780
+provides this incredible range of
+
+1113
+00:44:30,769 --> 00:44:34,400
+environmental histories well machine
+
+1114
+00:44:32,780 --> 00:44:36,200
+learning is allowing us to scale to
+
+1115
+00:44:34,400 --> 00:44:38,088
+genome sizes learning can
+
+1116
+00:44:36,199 --> 00:44:39,588
+generalized and we can throw virtually
+
+1117
+00:44:38,088 --> 00:44:42,469
+anything into a machine learning model
+
+1118
+00:44:39,588 --> 00:44:46,250
+so heterogeneous inputs can go in and we
+
+1119
+00:44:42,469 --> 00:44:48,348
+can still make sense of it so these are
+
+1120
+00:44:46,250 --> 00:44:50,480
+the may the tools we have handed here
+
+1121
+00:44:48,349 --> 00:44:52,579
+here and this is where we're working a
+
+1122
+00:44:50,480 --> 00:44:54,409
+lot now is to figure out what are the
+
+1123
+00:44:52,579 --> 00:44:57,010
+most intelligent ways to combine all
+
+1124
+00:44:54,409 --> 00:44:59,779
+these together so we can identify
+
+1125
+00:44:57,010 --> 00:45:01,400
+prioritize those individual snips so
+
+1126
+00:44:59,780 --> 00:45:03,530
+that we can go from a place where we
+
+1127
+00:45:01,400 --> 00:45:05,900
+have models of how each of the various
+
+1128
+00:45:03,530 --> 00:45:08,000
+steps and that central dog will work all
+
+1129
+00:45:05,900 --> 00:45:10,309
+the way out to physiology we can then
+
+1130
+00:45:08,000 --> 00:45:12,380
+test those hypotheses based on how they
+
+1131
+00:45:10,309 --> 00:45:14,539
+work in standing variation if they work
+
+1132
+00:45:12,380 --> 00:45:17,690
+well we go ahead and we start editing
+
+1133
+00:45:14,539 --> 00:45:19,369
+and selecting away so I want to end here
+
+1134
+00:45:17,690 --> 00:45:21,920
+that a lot of folks my group have
+
+1135
+00:45:19,369 --> 00:45:23,539
+contributed to these ideas I highlighted
+
+1136
+00:45:21,920 --> 00:45:26,119
+many of the people the postdocs and
+
+1137
+00:45:23,539 --> 00:45:29,088
+students who produce a lot of exact data
+
+1138
+00:45:26,119 --> 00:45:30,800
+sets I was talking about but my group
+
+1139
+00:45:29,088 --> 00:45:34,429
+and all those great collaborations and
+
+1140
+00:45:30,800 --> 00:45:35,780
+Babli we've been probably really three
+
+1141
+00:45:34,429 --> 00:45:37,730
+people in the group really helped bring
+
+1142
+00:45:35,780 --> 00:45:39,829
+everything together and that Center for
+
+1143
+00:45:37,730 --> 00:45:43,170
+May Peter Bradbury and Sarah Miller and
+
+1144
+00:45:39,829 --> 00:45:50,050
+I'd be happy to take some questions
+
+1145
+00:45:43,170 --> 00:45:50,050
+[Applause]
+
+1146
+00:45:52,300 --> 00:46:05,089
+seems like a moving car right so I mean
+
+1147
+00:46:02,900 --> 00:46:06,980
+yeah so the question is how do you
+
+1148
+00:46:05,088 --> 00:46:10,549
+change four different developmental time
+
+1149
+00:46:06,980 --> 00:46:12,800
+points and everything so it's you've a
+
+1150
+00:46:10,550 --> 00:46:17,269
+venturi right now everything is at the
+
+1151
+00:46:12,800 --> 00:46:20,200
+same developmental stage okay and so the
+
+1152
+00:46:17,269 --> 00:46:23,630
+models we've created are at it for a
+
+1153
+00:46:20,199 --> 00:46:25,699
+developmental state okay or stage and so
+
+1154
+00:46:23,630 --> 00:46:27,740
+amazing sorghum we can still grow those
+
+1155
+00:46:25,699 --> 00:46:29,659
+two plants side-by-side one another we
+
+1156
+00:46:27,739 --> 00:46:32,379
+can collect expression data side-by-side
+
+1157
+00:46:29,659 --> 00:46:34,279
+for one another and make sense of them
+
+1158
+00:46:32,380 --> 00:46:36,740
+one of the good things though about
+
+1159
+00:46:34,280 --> 00:46:38,960
+expression the data sets are so rich you
+
+1160
+00:46:36,739 --> 00:46:41,029
+can stage one another against yeah
+
+1161
+00:46:38,960 --> 00:46:43,400
+there's so many orthologs so it is
+
+1162
+00:46:41,030 --> 00:46:44,869
+possible to stage models against one
+
+1163
+00:46:43,400 --> 00:46:46,940
+another and just from the empirical data
+
+1164
+00:46:44,869 --> 00:46:49,160
+you can frequently figure out where you
+
+1165
+00:46:46,940 --> 00:46:50,240
+are in development where you are in
+
+1166
+00:46:49,159 --> 00:46:52,190
+various stages so I think
+
+1167
+00:46:50,239 --> 00:46:53,750
+long term though the models absolutely
+
+1168
+00:46:52,190 --> 00:46:56,360
+need to be generalized through the
+
+1169
+00:46:53,750 --> 00:46:58,340
+dynamic you know time changes and that's
+
+1170
+00:46:56,360 --> 00:47:08,869
+not something we've were interested in
+
+1171
+00:46:58,340 --> 00:47:10,670
+we have not I'm sure there will be
+
+1172
+00:47:08,869 --> 00:47:12,460
+situations where the models will not
+
+1173
+00:47:10,670 --> 00:47:16,400
+work as well for certain developmental
+
+1174
+00:47:12,460 --> 00:47:18,019
+aspects but you know I think a lot of
+
+1175
+00:47:16,400 --> 00:47:20,300
+them you know a lot of the development
+
+1176
+00:47:18,019 --> 00:47:22,460
+is you know it's it is timing here
+
+1177
+00:47:20,300 --> 00:47:24,050
+they're stretched out or extended a
+
+1178
+00:47:22,460 --> 00:47:25,429
+little bit more and that produces the
+
+1179
+00:47:24,050 --> 00:47:28,039
+phenotypic effect that you were seeing
+
+1180
+00:47:25,429 --> 00:47:31,279
+but some of the basic patterns and
+
+1181
+00:47:28,039 --> 00:47:32,840
+regulation are pretty similar I mean the
+
+1182
+00:47:31,280 --> 00:47:34,670
+fact that a lot of our maize and sorghum
+
+1183
+00:47:32,840 --> 00:47:36,559
+models the fact that we can even train a
+
+1184
+00:47:34,670 --> 00:47:38,570
+model and expression that's between
+
+1185
+00:47:36,559 --> 00:47:57,590
+maize and photographs really well says
+
+1186
+00:47:38,570 --> 00:47:59,059
+the rules are pretty much the same we're
+
+1187
+00:47:57,590 --> 00:48:00,710
+beneficial alleles much much more
+
+1188
+00:47:59,059 --> 00:48:05,299
+valuable than a gene that everyone
+
+1189
+00:48:00,710 --> 00:48:08,320
+already has right okay yeah so I think
+
+1190
+00:48:05,300 --> 00:48:11,269
+you know the the question is about rare
+
+1191
+00:48:08,320 --> 00:48:14,510
+rare advantageous or adaptive alleles
+
+1192
+00:48:11,269 --> 00:48:16,340
+well so first off there's a certain
+
+1193
+00:48:14,510 --> 00:48:18,880
+level we're never going to capture every
+
+1194
+00:48:16,340 --> 00:48:22,160
+adaptive mutation that's out there but
+
+1195
+00:48:18,880 --> 00:48:23,780
+most adaptive mutations are if they're
+
+1196
+00:48:22,159 --> 00:48:25,699
+really truly our adapter for that
+
+1197
+00:48:23,780 --> 00:48:28,400
+population they will be common there
+
+1198
+00:48:25,699 --> 00:48:31,279
+well but like if you have like a manic
+
+1199
+00:48:28,400 --> 00:48:32,660
+stress like a new one you know a gene
+
+1200
+00:48:31,280 --> 00:48:36,640
+which functions like formerly worked
+
+1201
+00:48:32,659 --> 00:48:36,639
+really great against this nematode
+
+1202
+00:48:37,210 --> 00:48:44,480
+change oh yeah and I agree it's
+
+1203
+00:48:41,929 --> 00:48:47,179
+situations where you have very rapidly
+
+1204
+00:48:44,480 --> 00:48:51,559
+changing you know a Red Queen situation
+
+1205
+00:48:47,179 --> 00:48:54,769
+like biotic stress I think the different
+
+1206
+00:48:51,559 --> 00:48:56,210
+approaches really need to be used figure
+
+1207
+00:48:54,769 --> 00:48:57,320
+out what are the useful alleles they're
+
+1208
+00:48:56,210 --> 00:49:01,460
+Red Queen
+
+1209
+00:48:57,320 --> 00:49:03,950
+I would say is not yeah is this is not
+
+1210
+00:49:01,460 --> 00:49:05,960
+the approach to go find those alleles
+
+1211
+00:49:03,949 --> 00:49:07,579
+I think there are other approaches that
+
+1212
+00:49:05,960 --> 00:49:09,769
+would be far more advantageous for
+
+1213
+00:49:07,579 --> 00:49:11,449
+figuring out disease less items than
+
+1214
+00:49:09,769 --> 00:49:16,009
+this but I would say most of the abiotic
+
+1215
+00:49:11,449 --> 00:49:20,119
+stresses they are yes they may fluctuate
+
+1216
+00:49:16,010 --> 00:49:22,340
+from year to year but over deep time all
+
+1217
+00:49:20,119 --> 00:49:24,469
+the organisms have seen drought they've
+
+1218
+00:49:22,340 --> 00:49:26,450
+seen flooding and things like that so a
+
+1219
+00:49:24,469 --> 00:49:28,699
+lot of those alleles are maintained at
+
+1220
+00:49:26,449 --> 00:49:30,829
+reasonable frequencies and over a
+
+1221
+00:49:28,699 --> 00:49:33,559
+wide-enough panel you'll be able to find
+
+1222
+00:49:30,829 --> 00:49:37,340
+that that allele is adaptive it's common
+
+1223
+00:49:33,559 --> 00:49:39,619
+somewhere and it isn't truly R it may be
+
+1224
+00:49:37,340 --> 00:49:42,140
+rare in your little panel but if it
+
+1225
+00:49:39,619 --> 00:49:43,429
+really is adaptive and you are sampling
+
+1226
+00:49:42,139 --> 00:49:46,190
+as much diversity to say the entire
+
+1227
+00:49:43,429 --> 00:49:55,639
+range of pagani it'll become in a number
+
+1228
+00:49:46,190 --> 00:49:58,700
+of places yeah binding sites so since
+
+1229
+00:49:55,639 --> 00:50:03,409
+the AUC is so high nine nine eight that
+
+1230
+00:49:58,699 --> 00:50:07,549
+must be some features of that or the
+
+1231
+00:50:03,409 --> 00:50:13,099
+connection between the binding sites
+
+1232
+00:50:07,550 --> 00:50:16,070
+sure friends or common features that's
+
+1233
+00:50:13,099 --> 00:50:19,130
+it I don't know if Kathryn is here the
+
+1234
+00:50:16,070 --> 00:50:19,610
+ones that I know were Kathryn here no
+
+1235
+00:50:19,130 --> 00:50:22,280
+okay
+
+1236
+00:50:19,610 --> 00:50:23,510
+the ones that were not very high anybody
+
+1237
+00:50:22,280 --> 00:50:25,100
+else in lab wants to correct me feel
+
+1238
+00:50:23,510 --> 00:50:27,170
+free the ones that were not high
+
+1239
+00:50:25,099 --> 00:50:30,259
+generally the chip seek experiments were
+
+1240
+00:50:27,170 --> 00:50:33,680
+pretty bad okay so the biggest thing
+
+1241
+00:50:30,260 --> 00:50:37,300
+we've seen for the improvement of the
+
+1242
+00:50:33,679 --> 00:50:40,099
+quality of the models is replication of
+
+1243
+00:50:37,300 --> 00:50:42,350
+numerous chip seek experiments and when
+
+1244
+00:50:40,099 --> 00:50:44,150
+they are replicated and you line up the
+
+1245
+00:50:42,349 --> 00:50:47,210
+experiment over and over again those
+
+1246
+00:50:44,150 --> 00:50:48,740
+sites can be modeled really well so the
+
+1247
+00:50:47,210 --> 00:50:51,490
+neat thing also Kathryn has done is
+
+1248
+00:50:48,739 --> 00:50:53,869
+she's been able to take those models and
+
+1249
+00:50:51,489 --> 00:50:55,459
+compare you know for these hundreds
+
+1250
+00:50:53,869 --> 00:50:57,319
+transcription factors compare how what
+
+1251
+00:50:55,460 --> 00:50:59,210
+the model looks like against each one
+
+1252
+00:50:57,320 --> 00:51:00,740
+for each transcription factor and the
+
+1253
+00:50:59,210 --> 00:51:01,340
+families of transcription factors fall
+
+1254
+00:51:00,739 --> 00:51:05,179
+out of it
+
+1255
+00:51:01,340 --> 00:51:07,610
+so suggesting that essentially it really
+
+1256
+00:51:05,179 --> 00:51:15,049
+is learning the basic processes by which
+
+1257
+00:51:07,610 --> 00:51:17,480
+these TX are binding yep yes thank you
+
+1258
+00:51:15,050 --> 00:51:20,210
+so much I'm just looking at
+
+1259
+00:51:17,480 --> 00:51:22,969
+do you think there's a change across the
+
+1260
+00:51:20,210 --> 00:51:25,699
+time future mutations and other factors
+
+1261
+00:51:22,969 --> 00:51:28,519
+so does it mean the product that we have
+
+1262
+00:51:25,699 --> 00:51:31,669
+today even their existence for diseases
+
+1263
+00:51:28,519 --> 00:51:33,500
+for us the same we'll also have a change
+
+1264
+00:51:31,670 --> 00:51:37,579
+for tomorrow a that the was--or it's a
+
+1265
+00:51:33,500 --> 00:51:41,150
+beta and then is that way of stopping or
+
+1266
+00:51:37,579 --> 00:51:49,250
+minimizing this changes across time and
+
+1267
+00:51:41,150 --> 00:51:51,289
+then looking for this so I think the
+
+1268
+00:51:49,250 --> 00:51:54,980
+question of whether or not you know we
+
+1269
+00:51:51,289 --> 00:51:56,690
+reduced her own mutation rate higher
+
+1270
+00:51:54,980 --> 00:51:57,920
+eukaryotes have you know there is
+
+1271
+00:51:56,690 --> 00:51:59,900
+actually probably a fairly strong
+
+1272
+00:51:57,920 --> 00:52:03,200
+selection to keep down that mutation
+
+1273
+00:51:59,900 --> 00:52:05,780
+rate as low as it possibly can and it's
+
+1274
+00:52:03,199 --> 00:52:08,089
+probably about of what at least this
+
+1275
+00:52:05,780 --> 00:52:12,380
+type of flim erase biology can pull off
+
+1276
+00:52:08,090 --> 00:52:13,970
+so I don't know that knocking that I
+
+1277
+00:52:12,380 --> 00:52:17,240
+mean selection has tried to do that
+
+1278
+00:52:13,969 --> 00:52:21,019
+really hard to make incredibly high
+
+1279
+00:52:17,239 --> 00:52:23,089
+fidelity glimmer aces and so I'm not
+
+1280
+00:52:21,019 --> 00:52:24,739
+convinced that that's an easy target to
+
+1281
+00:52:23,090 --> 00:52:27,410
+do is to reduce the total mutation rate
+
+1282
+00:52:24,739 --> 00:52:29,809
+we can screen DNA sequencing that was so
+
+1283
+00:52:27,409 --> 00:52:32,089
+cheap you can essentially screen through
+
+1284
+00:52:29,809 --> 00:52:33,679
+things and just throw out novel me to
+
+1285
+00:52:32,090 --> 00:52:34,850
+any novel mutation though it looks kind
+
+1286
+00:52:33,679 --> 00:52:37,608
+of bad so if you're working in a large
+
+1287
+00:52:34,849 --> 00:52:40,900
+breeding company that you know that is
+
+1288
+00:52:37,608 --> 00:52:46,569
+not a crazy idea that that's how you
+
+1289
+00:52:40,900 --> 00:52:50,450
+things out okay so it was the over the
+
+1290
+00:52:46,570 --> 00:52:51,800
+yeah evolution is I think this kind of
+
+1291
+00:52:50,449 --> 00:52:55,009
+goes back to that the same type of
+
+1292
+00:52:51,800 --> 00:53:00,769
+question that evolution is not always a
+
+1293
+00:52:55,010 --> 00:53:03,200
+great guide for picking out these
+
+1294
+00:53:00,769 --> 00:53:05,349
+abiotic red queen type disease issues
+
+1295
+00:53:03,199 --> 00:53:07,969
+okay that doesn't mean machine learning
+
+1296
+00:53:05,349 --> 00:53:11,000
+couldn't be incredibly powerful for
+
+1297
+00:53:07,969 --> 00:53:14,029
+predicting what ligands are gonna come
+
+1298
+00:53:11,000 --> 00:53:15,500
+together and what you're gonna do that
+
+1299
+00:53:14,030 --> 00:53:18,200
+so I think there's all sorts of black
+
+1300
+00:53:15,500 --> 00:53:20,900
+box types of things or you could have
+
+1301
+00:53:18,199 --> 00:53:22,730
+machine learning you know predicting you
+
+1302
+00:53:20,900 --> 00:53:24,440
+know how to deal with disease resistance
+
+1303
+00:53:22,730 --> 00:53:25,969
+but it's not using exactly the same
+
+1304
+00:53:24,440 --> 00:53:28,010
+evolution that you may use evolutionary
+
+1305
+00:53:25,969 --> 00:53:31,000
+time they're generate the diversity but
+
+1306
+00:53:28,010 --> 00:53:31,000
+it becomes a different question
+
+1307
+00:53:34,940 --> 00:53:53,088
+like essentially the region well that's
+
+1308
+00:53:48,239 --> 00:53:55,739
+why Pioneer hired Eli Rodgers Melnick so
+
+1309
+00:53:53,088 --> 00:53:59,338
+whether or not we could fix heterosis in
+
+1310
+00:53:55,739 --> 00:54:00,719
+the so I mean I think the first question
+
+1311
+00:53:59,338 --> 00:54:07,619
+is whether or not we'll be allowed to
+
+1312
+00:54:00,719 --> 00:54:11,699
+edit okay so there are those issues and
+
+1313
+00:54:07,619 --> 00:54:16,220
+I think that's you know how yeah that
+
+1314
+00:54:11,699 --> 00:54:16,219
+how society will allow that but then
+
+1315
+00:54:16,309 --> 00:54:20,970
+there are going to be I mean you'll
+
+1316
+00:54:19,349 --> 00:54:22,829
+always be able to make a hybrid that is
+
+1317
+00:54:20,969 --> 00:54:25,679
+better and whatever in Bret you've just
+
+1318
+00:54:22,829 --> 00:54:27,869
+made so just because of distributions so
+
+1319
+00:54:25,679 --> 00:54:30,058
+and there are a few low side across the
+
+1320
+00:54:27,869 --> 00:54:32,880
+genome I have no doubt that are truly
+
+1321
+00:54:30,059 --> 00:54:35,510
+over dominant rather than being the
+
+1322
+00:54:32,880 --> 00:54:38,160
+product of dosage pattern or dominance
+
+1323
+00:54:35,510 --> 00:54:39,960
+type point so I think hybrids will
+
+1324
+00:54:38,159 --> 00:54:43,618
+always be better whether or not though
+
+1325
+00:54:39,960 --> 00:54:46,108
+it looks right now amazed hybrid has two
+
+1326
+00:54:43,619 --> 00:54:47,940
+times the yield of its inbreds or three
+
+1327
+00:54:46,108 --> 00:54:57,029
+times those yields of its inbred whether
+
+1328
+00:54:47,940 --> 00:54:58,349
+or not they're I don't you know I think
+
+1329
+00:54:57,030 --> 00:55:24,900
+we can get there I don't know how
+
+1330
+00:54:58,349 --> 00:55:27,240
+quickly will get their genome
+
+1331
+00:55:24,900 --> 00:55:32,568
+rearranging so you don't actually have
+
+1332
+00:55:27,239 --> 00:55:40,919
+genes in all the more accessible
+
+1333
+00:55:32,568 --> 00:55:43,679
+combination no no and I think this is
+
+1334
+00:55:40,920 --> 00:55:46,769
+where maybe didn't emphasize this enough
+
+1335
+00:55:43,679 --> 00:55:49,409
+that a the pair centromeric increase we
+
+1336
+00:55:46,769 --> 00:55:51,239
+see it and it's absolutely the there of
+
+1337
+00:55:49,409 --> 00:55:53,250
+these delatour's mutations but there are
+
+1338
+00:55:51,239 --> 00:55:56,699
+deleterious mutations everywhere okay
+
+1339
+00:55:53,250 --> 00:55:59,579
+and they are enriched in the pair
+
+1340
+00:55:56,699 --> 00:56:01,259
+centromeric regions but most the genes
+
+1341
+00:55:59,579 --> 00:56:03,300
+are still out at the arms and they are
+
+1342
+00:56:01,260 --> 00:56:05,460
+still having lots of deleterious
+
+1343
+00:56:03,300 --> 00:56:08,068
+mutations another thing that Eli figured
+
+1344
+00:56:05,460 --> 00:56:10,108
+out was there's a process bias gene
+
+1345
+00:56:08,068 --> 00:56:11,789
+conversion is actually maintaining
+
+1346
+00:56:10,108 --> 00:56:13,858
+deleterious mutations at high
+
+1347
+00:56:11,789 --> 00:56:16,800
+recombination regions of the genome at
+
+1348
+00:56:13,858 --> 00:56:19,139
+fairly moderate frequencies so there are
+
+1349
+00:56:16,800 --> 00:56:21,809
+other processes that are out there that
+
+1350
+00:56:19,139 --> 00:56:23,789
+are deleterious mutations are everywhere
+
+1351
+00:56:21,809 --> 00:56:25,079
+there just happen to be enriched in a
+
+1352
+00:56:23,789 --> 00:56:27,389
+pair of centromere agreed and so you
+
+1353
+00:56:25,079 --> 00:56:29,849
+would still I mean we see heterosis it's
+
+1354
+00:56:27,389 --> 00:56:31,348
+enriched in the that chromosome five but
+
+1355
+00:56:29,849 --> 00:56:36,240
+we see the evidence of how two roses
+
+1356
+00:56:31,349 --> 00:56:38,280
+everywhere so it's not yeah one so my
+
+1357
+00:56:36,239 --> 00:56:43,558
+question do you think that hybrids would
+
+1358
+00:56:38,280 --> 00:56:54,000
+be a natural situation then you wouldn't
+
+1359
+00:56:43,559 --> 00:56:55,559
+see expect Richmond I mean I mean I mean
+
+1360
+00:56:54,000 --> 00:56:57,568
+I think you know because of Dodgers
+
+1361
+00:56:55,559 --> 00:57:00,630
+mutation for example most polyploidy
+
+1362
+00:56:57,568 --> 00:57:02,369
+okay I think that's an extant is the
+
+1363
+00:57:00,630 --> 00:57:06,630
+product of escaping from deleterious
+
+1364
+00:57:02,369 --> 00:57:10,588
+mutations okay so that's a that's a way
+
+1365
+00:57:06,630 --> 00:57:12,720
+to temporarily get away from deleterious
+
+1366
+00:57:10,588 --> 00:57:14,699
+mutation build-up now over deep time
+
+1367
+00:57:12,719 --> 00:57:16,558
+this is where you you look at the total
+
+1368
+00:57:14,699 --> 00:57:18,000
+number of polyploid that have been
+
+1369
+00:57:16,559 --> 00:57:20,819
+successful in evolutionary time in
+
+1370
+00:57:18,000 --> 00:57:23,088
+plants you know in deep evolution adds
+
+1371
+00:57:20,818 --> 00:57:25,409
+50 different events but at any one time
+
+1372
+00:57:23,088 --> 00:57:27,599
+there's tens of thousands of poly
+
+1373
+00:57:25,409 --> 00:57:29,338
+players that are evolving it allows you
+
+1374
+00:57:27,599 --> 00:57:33,859
+to short-term escape from deleterious
+
+1375
+00:57:29,338 --> 00:57:33,858
+mutations for a few thousand years but
+
+1376
+00:57:45,400 --> 00:57:52,470
+[Laughter]
+
+1377
+00:57:48,440 --> 00:57:57,480
+are you against it yeah okay we can
+
+1378
+00:57:52,469 --> 00:58:05,519
+swing talk later okay
+
+1379
+00:57:57,480 --> 00:58:09,240
+thank you this has been a production of
+
+1380
+00:58:05,519 --> 00:58:12,139
+Cornell University on the web at cornell
+
+1381
+00:58:09,239 --> 00:58:12,139
+edu
+

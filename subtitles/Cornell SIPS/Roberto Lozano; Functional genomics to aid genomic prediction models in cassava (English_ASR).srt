@@ -1,0 +1,2924 @@
+1
+00:00:00,000 --> 00:00:04,339
+this is a production of Cornell
+
+2
+00:00:01,709 --> 00:00:04,339
+University
+
+3
+00:00:07,990 --> 00:00:13,250
+so yeah I'm gonna I'm really excited to
+
+4
+00:00:10,609 --> 00:00:14,509
+talk to you about a little of the
+
+5
+00:00:13,250 --> 00:00:17,030
+research that I've been doing the last
+
+6
+00:00:14,509 --> 00:00:19,460
+four years and a half here and
+
+7
+00:00:17,030 --> 00:00:22,970
+everything will go around this idea of
+
+8
+00:00:19,460 --> 00:00:26,449
+using functional genomics to help
+
+9
+00:00:22,969 --> 00:00:30,140
+dynamic prediction dynamic selection
+
+10
+00:00:26,449 --> 00:00:33,079
+models in Kassala okay and back in 2013
+
+11
+00:00:30,140 --> 00:00:36,049
+I was about to get interview by John
+
+12
+00:00:33,079 --> 00:00:38,539
+Luke through Skype and I had no idea
+
+13
+00:00:36,049 --> 00:00:41,479
+what dynamic selection was so I started
+
+14
+00:00:38,539 --> 00:00:43,429
+looking at the literature and what I'm
+
+15
+00:00:41,479 --> 00:00:45,859
+pretty sure happened with most of you
+
+16
+00:00:43,429 --> 00:00:48,649
+trying to approach genomic selection
+
+17
+00:00:45,859 --> 00:00:53,269
+we're haunted by this scheme that I
+
+18
+00:00:48,649 --> 00:00:55,689
+don't even need to explain this however
+
+19
+00:00:53,270 --> 00:00:58,309
+at the time didn't help me to understand
+
+20
+00:00:55,689 --> 00:01:02,899
+these models were working so I came with
+
+21
+00:00:58,308 --> 00:01:05,390
+a scheme out of my own briefly you have
+
+22
+00:01:02,899 --> 00:01:07,969
+phenotypes and genotypes of a training
+
+23
+00:01:05,390 --> 00:01:10,129
+population and combining these two
+
+24
+00:01:07,969 --> 00:01:12,679
+elements you will build a prediction
+
+25
+00:01:10,129 --> 00:01:15,500
+model but here I'm depicting it as a
+
+26
+00:01:12,680 --> 00:01:19,189
+wormhole because I didn't have any idea
+
+27
+00:01:15,500 --> 00:01:22,310
+what was happening here so what I did
+
+28
+00:01:19,188 --> 00:01:24,769
+know was that the DNA of a none
+
+29
+00:01:22,310 --> 00:01:27,710
+phenotype Kesava was traveling through
+
+30
+00:01:24,769 --> 00:01:31,039
+space and time to give us genomic
+
+31
+00:01:27,709 --> 00:01:32,809
+expected breeding values that is
+
+32
+00:01:31,040 --> 00:01:35,570
+basically your expectation or your
+
+33
+00:01:32,810 --> 00:01:39,399
+prediction on how that unfiltered
+
+34
+00:01:35,569 --> 00:01:42,228
+cassava is gonna perform on the future
+
+35
+00:01:39,399 --> 00:01:44,689
+okay so what I did understand at the at
+
+36
+00:01:42,228 --> 00:01:47,859
+the moment was that my mission within
+
+37
+00:01:44,688 --> 00:01:50,898
+the project was to use functional
+
+38
+00:01:47,859 --> 00:01:53,030
+genomics as a proxy to understand the
+
+39
+00:01:50,899 --> 00:01:57,109
+biology behind the phenotype that we're
+
+40
+00:01:53,030 --> 00:02:00,290
+trying to predict and see where and you
+
+41
+00:01:57,109 --> 00:02:03,500
+know try to test whether the inclusion
+
+42
+00:02:00,290 --> 00:02:08,050
+of this extra element in the prediction
+
+43
+00:02:03,500 --> 00:02:11,750
+model will be a positive one okay so
+
+44
+00:02:08,050 --> 00:02:14,930
+today I have three topics for you we'll
+
+45
+00:02:11,750 --> 00:02:16,789
+go through all of them but yes important
+
+46
+00:02:14,930 --> 00:02:18,360
+things that all of them will go around
+
+47
+00:02:16,789 --> 00:02:24,750
+this idea of this
+
+48
+00:02:18,360 --> 00:02:31,860
+in biology dynamic prediction models so
+
+49
+00:02:24,750 --> 00:02:33,930
+again but button on 2013 IIE is you know
+
+50
+00:02:31,860 --> 00:02:36,480
+I was neon cassava and I went to the
+
+51
+00:02:33,930 --> 00:02:38,310
+databases trying to find genomic
+
+52
+00:02:36,479 --> 00:02:40,099
+information and casaya was a really
+
+53
+00:02:38,310 --> 00:02:43,259
+orphan group they're wearing a lot of
+
+54
+00:02:40,099 --> 00:02:45,030
+genomic resources or genomic research
+
+55
+00:02:43,259 --> 00:02:47,969
+than other time i was really interested
+
+56
+00:02:45,030 --> 00:02:48,990
+in working with biotic stresses so I
+
+57
+00:02:47,969 --> 00:02:52,020
+went to a database
+
+58
+00:02:48,990 --> 00:02:54,600
+checking for resistant genes in cassava
+
+59
+00:02:52,020 --> 00:02:56,570
+and I couldn't find it so with Martha
+
+60
+00:02:54,599 --> 00:03:01,650
+the time we throw it as an opportunity
+
+61
+00:02:56,569 --> 00:03:03,810
+to both get these that is that mine and
+
+62
+00:03:01,650 --> 00:03:07,739
+contribute a little bit to the growing
+
+63
+00:03:03,810 --> 00:03:10,560
+genomic libraries of cassava so we
+
+64
+00:03:07,739 --> 00:03:12,719
+identify this family of game the NBA
+
+65
+00:03:10,560 --> 00:03:16,199
+star family that is known to be the
+
+66
+00:03:12,719 --> 00:03:17,819
+biggest resistant in family in plants we
+
+67
+00:03:16,199 --> 00:03:20,549
+did some phylogenetics and most
+
+68
+00:03:17,819 --> 00:03:24,719
+importantly we mapped them into their
+
+69
+00:03:20,550 --> 00:03:27,510
+position of the in chromosome and this
+
+70
+00:03:24,719 --> 00:03:29,549
+data later helped other scientists to
+
+71
+00:03:27,509 --> 00:03:32,179
+make sense out of their game was results
+
+72
+00:03:29,549 --> 00:03:36,180
+for example this is a publication by
+
+73
+00:03:32,180 --> 00:03:41,150
+Ismail Kondo a collaborator he found a
+
+74
+00:03:36,180 --> 00:03:44,129
+couple of of QTL or brown string disease
+
+75
+00:03:41,150 --> 00:03:45,989
+one of them being in chromosome 11 and
+
+76
+00:03:44,129 --> 00:03:48,569
+you have to believe me here what it used
+
+77
+00:03:45,989 --> 00:03:50,969
+to mean he on day on the pick it
+
+78
+00:03:48,569 --> 00:03:53,519
+collocates nicely with a small cluster
+
+79
+00:03:50,969 --> 00:03:57,780
+of NBA cell erogenous and some
+
+80
+00:03:53,519 --> 00:04:00,780
+collaborators from Kenya now are
+
+81
+00:03:57,780 --> 00:04:04,469
+evaluating using knockouts with pre
+
+82
+00:04:00,780 --> 00:04:07,169
+spare and complementation assays - you
+
+83
+00:04:04,469 --> 00:04:10,609
+know validate these candidate genes as
+
+84
+00:04:07,169 --> 00:04:13,399
+they resist so yeah that's
+
+85
+00:04:10,610 --> 00:04:16,459
+nice and again that was polished in 2015
+
+86
+00:04:13,400 --> 00:04:18,858
+but the years passed and Kisame stopped
+
+87
+00:04:16,459 --> 00:04:21,108
+being an orphan crop suddenly in the
+
+88
+00:04:18,858 --> 00:04:25,279
+span of two or three years there were
+
+89
+00:04:21,108 --> 00:04:28,159
+lots of research going on we have a nice
+
+90
+00:04:25,279 --> 00:04:31,009
+haplotype mild thanks to remove and the
+
+91
+00:04:28,160 --> 00:04:34,850
+batter lab plenty of transcriptomics
+
+92
+00:04:31,009 --> 00:04:37,639
+studies a better genome with a really
+
+93
+00:04:34,850 --> 00:04:40,120
+nice rnaseq guided a notation we have
+
+94
+00:04:37,639 --> 00:04:45,079
+even methylation data and a plethora of
+
+95
+00:04:40,120 --> 00:04:47,418
+tools so from now on we switch a little
+
+96
+00:04:45,079 --> 00:04:50,750
+bit from doing the you know the genomic
+
+97
+00:04:47,418 --> 00:04:53,689
+resources generator to be more like data
+
+98
+00:04:50,750 --> 00:04:56,350
+scavengers and try to use all these to
+
+99
+00:04:53,689 --> 00:05:00,560
+put them in the indigent prediction
+
+100
+00:04:56,350 --> 00:05:02,419
+frameworks okay let's make a stop here
+
+101
+00:05:00,560 --> 00:05:06,709
+and I'm going to talk a little bit about
+
+102
+00:05:02,418 --> 00:05:09,740
+which models we'll be using in the rest
+
+103
+00:05:06,709 --> 00:05:13,189
+of my talk spoiler alert we won't be
+
+104
+00:05:09,740 --> 00:05:16,610
+used in any fancy Bayesian or machine
+
+105
+00:05:13,189 --> 00:05:19,819
+learning algorithms we what we will be
+
+106
+00:05:16,610 --> 00:05:23,930
+using is just different modifications of
+
+107
+00:05:19,819 --> 00:05:25,399
+the good old model okay for those that
+
+108
+00:05:23,930 --> 00:05:27,769
+don't know what you like model is
+
+109
+00:05:25,399 --> 00:05:32,149
+basically a mixed model feed on the
+
+110
+00:05:27,769 --> 00:05:34,668
+basis of individuals rather than but
+
+111
+00:05:32,149 --> 00:05:36,639
+using a covariance matrix that is
+
+112
+00:05:34,668 --> 00:05:37,819
+calculated as the genomic relationship
+
+113
+00:05:36,639 --> 00:05:40,189
+okay
+
+114
+00:05:37,819 --> 00:05:44,329
+and this incorporate is genetic random
+
+115
+00:05:40,189 --> 00:05:47,120
+effects you basically calculate the year
+
+116
+00:05:44,329 --> 00:05:50,750
+I am using all the markers available in
+
+117
+00:05:47,120 --> 00:05:55,759
+2014 however this group from a surprise
+
+118
+00:05:50,750 --> 00:06:00,500
+and safe and company we're interested in
+
+119
+00:05:55,759 --> 00:06:03,439
+studying how splitting or partitioning
+
+120
+00:06:00,500 --> 00:06:06,228
+the genomic regions into functional
+
+121
+00:06:03,439 --> 00:06:08,509
+elements let's say Colin radios UTA
+
+122
+00:06:06,228 --> 00:06:12,860
+radians from other videos would
+
+123
+00:06:08,509 --> 00:06:15,349
+influence this model and as you know
+
+124
+00:06:12,860 --> 00:06:17,720
+develop models and any model that will
+
+125
+00:06:15,350 --> 00:06:20,300
+with most of the models that will work
+
+126
+00:06:17,720 --> 00:06:22,310
+with with engineered predictions where
+
+127
+00:06:20,300 --> 00:06:23,699
+we have lots of predictors and a few
+
+128
+00:06:22,310 --> 00:06:25,339
+individuals have
+
+129
+00:06:23,699 --> 00:06:29,009
+we'll find a way how to deal with
+
+130
+00:06:25,339 --> 00:06:32,029
+collinearity and overfeeding so GTL
+
+131
+00:06:29,009 --> 00:06:35,039
+abuse shrinkage we're all most of the
+
+132
+00:06:32,029 --> 00:06:38,879
+snip effects will are random and our
+
+133
+00:06:35,040 --> 00:06:41,220
+Shrunk it towards zero and this
+
+134
+00:06:38,879 --> 00:06:43,589
+shrinkage severity will be a function of
+
+135
+00:06:41,220 --> 00:06:46,410
+the numbers of his needs in the model
+
+136
+00:06:43,589 --> 00:06:48,619
+the idea of these guys was what if we
+
+137
+00:06:46,410 --> 00:06:51,570
+partition the genome in different random
+
+138
+00:06:48,620 --> 00:06:54,300
+effects genetic random effects and I'm
+
+139
+00:06:51,569 --> 00:06:57,540
+from now I'm just gonna call these guys
+
+140
+00:06:54,300 --> 00:07:01,650
+as Colonel and if one of these kernels
+
+141
+00:06:57,540 --> 00:07:05,280
+is enriched for coastal variance due to
+
+142
+00:07:01,649 --> 00:07:07,169
+biological priors I have this might
+
+143
+00:07:05,279 --> 00:07:10,949
+result in an increase in prediction
+
+144
+00:07:07,170 --> 00:07:12,780
+occurs why because if you are relaxing
+
+145
+00:07:10,949 --> 00:07:16,110
+the shrinkage severity you are allowing
+
+146
+00:07:12,779 --> 00:07:20,939
+more markers into that partition having
+
+147
+00:07:16,110 --> 00:07:22,620
+a vigorous okay so this is basically the
+
+148
+00:07:20,939 --> 00:07:24,089
+rationale that I'm gonna use on the
+
+149
+00:07:22,620 --> 00:07:26,149
+models playing throughout my
+
+150
+00:07:24,089 --> 00:07:29,689
+presentation
+
+151
+00:07:26,149 --> 00:07:32,569
+the second nice thing well useful thing
+
+152
+00:07:29,689 --> 00:07:35,449
+about this research was that a goose a
+
+153
+00:07:32,569 --> 00:07:37,969
+fan collaborators determined that we
+
+154
+00:07:35,449 --> 00:07:41,080
+need to have level sequence imputation
+
+155
+00:07:37,970 --> 00:07:44,600
+when you are using dynamic partitioning
+
+156
+00:07:41,079 --> 00:07:46,909
+methodologies basically the estimation
+
+157
+00:07:44,600 --> 00:07:49,639
+of is a percentage of any hurt abilities
+
+158
+00:07:46,910 --> 00:07:55,550
+will be really bad if you just use
+
+159
+00:07:49,639 --> 00:08:00,949
+genotype is in comparison when you use
+
+160
+00:07:55,550 --> 00:08:03,259
+genotype holding on imputation mark okay
+
+161
+00:08:00,949 --> 00:08:05,750
+so yeah this is a little of the
+
+162
+00:08:03,259 --> 00:08:10,250
+background that we will be going on so
+
+163
+00:08:05,750 --> 00:08:12,709
+just keep this in mind now the second
+
+164
+00:08:10,250 --> 00:08:16,699
+topic that I want to talk about is the
+
+165
+00:08:12,709 --> 00:08:19,698
+the the actually a case study how my
+
+166
+00:08:16,699 --> 00:08:22,009
+first approach to use biology to improve
+
+167
+00:08:19,699 --> 00:08:23,960
+genomic prediction as I told you it was
+
+168
+00:08:22,009 --> 00:08:26,899
+really interested in working with a
+
+169
+00:08:23,959 --> 00:08:30,888
+diseases abiotic stresses so casts
+
+170
+00:08:26,899 --> 00:08:33,379
+around a strict disease was really
+
+171
+00:08:30,889 --> 00:08:35,538
+attractive to me so in this study I
+
+172
+00:08:33,379 --> 00:08:40,278
+tried to use whole genome imputation and
+
+173
+00:08:35,538 --> 00:08:44,230
+a transcriptomics study show you to
+
+174
+00:08:40,278 --> 00:08:48,080
+increase the performance of this model
+
+175
+00:08:44,230 --> 00:08:49,879
+just briefly cassava brown string
+
+176
+00:08:48,080 --> 00:08:53,690
+disease goes like a sovereign's trick
+
+177
+00:08:49,879 --> 00:08:56,149
+virus and it's a really awful disease
+
+178
+00:08:53,690 --> 00:08:59,720
+okay symptoms in leaves you have
+
+179
+00:08:56,149 --> 00:09:01,639
+chlorosis on the secondary veins but the
+
+180
+00:08:59,720 --> 00:09:04,910
+most important thing is that you have
+
+181
+00:09:01,639 --> 00:09:08,179
+root rot on the tuber that make them
+
+182
+00:09:04,909 --> 00:09:11,559
+inedible even for animal feed and they
+
+183
+00:09:08,179 --> 00:09:16,819
+are transmitted by white flies in
+
+184
+00:09:11,559 --> 00:09:19,039
+persistent way okay so that's that's our
+
+185
+00:09:16,820 --> 00:09:21,379
+model now so let's go back to my
+
+186
+00:09:19,039 --> 00:09:23,899
+previous scheme and I'll show you how
+
+187
+00:09:21,379 --> 00:09:27,769
+I'm gonna incorporate the different
+
+188
+00:09:23,899 --> 00:09:29,929
+elements into this case so for example
+
+189
+00:09:27,769 --> 00:09:33,799
+the phenotypes evaluated now will be
+
+190
+00:09:29,929 --> 00:09:35,750
+cvsd related traits measure on leaves
+
+191
+00:09:33,799 --> 00:09:37,769
+and roots three months six months and
+
+192
+00:09:35,750 --> 00:09:40,409
+one year after planting
+
+193
+00:09:37,769 --> 00:09:45,169
+genotypes will be GBS marcus's will be
+
+194
+00:09:40,409 --> 00:09:49,069
+imputed given sequence the wormhole
+
+195
+00:09:45,169 --> 00:09:52,860
+prediction model will be a multi-car and
+
+196
+00:09:49,070 --> 00:09:55,920
+the the genomics data will be
+
+197
+00:09:52,860 --> 00:09:59,519
+transcriptomics studies util information
+
+198
+00:09:55,919 --> 00:10:01,259
+and related traits okay so now let's
+
+199
+00:09:59,519 --> 00:10:04,819
+plane a little bit of each of these
+
+200
+00:10:01,259 --> 00:10:07,950
+components in the phenotypes we use
+
+201
+00:10:04,820 --> 00:10:13,110
+we're basically on leaves and roots a
+
+202
+00:10:07,950 --> 00:10:16,250
+categorical in rows from 1 to 5 our high
+
+203
+00:10:13,110 --> 00:10:21,240
+throughput phenotype in scheme
+
+204
+00:10:16,250 --> 00:10:24,299
+Alfred is here ah da da da the
+
+205
+00:10:21,240 --> 00:10:27,060
+phenotypes okay the genotypes we
+
+206
+00:10:24,299 --> 00:10:30,809
+recognized with this was safe paper the
+
+207
+00:10:27,059 --> 00:10:35,759
+necessity of going from 40,000 markers
+
+208
+00:10:30,809 --> 00:10:38,129
+that we were obtaining a with DVS to
+
+209
+00:10:35,759 --> 00:10:40,319
+millions of markers through whole genome
+
+210
+00:10:38,129 --> 00:10:42,710
+imputation and how was this possible
+
+211
+00:10:40,320 --> 00:10:46,110
+it's not a lot that we are inventing
+
+212
+00:10:42,710 --> 00:10:50,310
+markers that were in type we use this
+
+213
+00:10:46,110 --> 00:10:52,379
+scheme of all denomination that uses the
+
+214
+00:10:50,309 --> 00:10:57,929
+Hofmann that was produced by the buckler
+
+215
+00:10:52,379 --> 00:11:03,210
+lab 241 individuals including cultivated
+
+216
+00:10:57,929 --> 00:11:06,779
+cassava while hybrids and while cassava
+
+217
+00:11:03,210 --> 00:11:10,080
+relatives and those were deep sequence
+
+218
+00:11:06,779 --> 00:11:13,860
+238 so we have a nice haplotype maps of
+
+219
+00:11:10,080 --> 00:11:16,530
+those 204 individuals and while we are
+
+220
+00:11:13,860 --> 00:11:20,009
+performing here is that when we have GBS
+
+221
+00:11:16,529 --> 00:11:21,659
+we have a bunch of markers but we also
+
+222
+00:11:20,009 --> 00:11:24,750
+have a lots of interrelation those of
+
+223
+00:11:21,659 --> 00:11:27,120
+sites that were missing and what the
+
+224
+00:11:24,750 --> 00:11:30,480
+whole genome imputation algorithm does
+
+225
+00:11:27,120 --> 00:11:32,899
+is try to infer which of these regions
+
+226
+00:11:30,480 --> 00:11:36,930
+we a belongs to which of these
+
+227
+00:11:32,899 --> 00:11:38,370
+haplotypes and gate most importantly
+
+228
+00:11:36,929 --> 00:11:41,429
+they the boundaries
+
+229
+00:11:38,370 --> 00:11:43,950
+once it has the most probable haplotype
+
+230
+00:11:41,429 --> 00:11:46,559
+of each region it will just until the
+
+231
+00:11:43,950 --> 00:11:49,230
+missing genotypes with the ones present
+
+232
+00:11:46,559 --> 00:11:50,888
+in the hub and that's how you go from
+
+233
+00:11:49,230 --> 00:11:53,678
+CVS or
+
+234
+00:11:50,889 --> 00:11:59,139
+markers to millions of markers using
+
+235
+00:11:53,678 --> 00:12:01,028
+this hubbub information and now you will
+
+236
+00:11:59,139 --> 00:12:04,778
+tell me your word you don't need
+
+237
+00:12:01,028 --> 00:12:07,328
+millions of marker to perform a genomic
+
+238
+00:12:04,778 --> 00:12:10,088
+selection we all know that the problem
+
+239
+00:12:07,328 --> 00:12:12,099
+was that him in my approach I was
+
+240
+00:12:10,089 --> 00:12:13,689
+interested in Italian different videos
+
+241
+00:12:12,100 --> 00:12:16,989
+in the genome that might be important
+
+242
+00:12:13,688 --> 00:12:20,289
+and then if I use only the 42 K markers
+
+243
+00:12:16,989 --> 00:12:26,489
+from DVS I could only touch around 30%
+
+244
+00:12:20,289 --> 00:12:30,818
+of it then if I did be real imputation
+
+245
+00:12:26,489 --> 00:12:34,629
+imputation I get to 70% and finally I
+
+246
+00:12:30,818 --> 00:12:36,278
+stopped with impute - that is for me at
+
+247
+00:12:34,629 --> 00:12:38,589
+least a verified you know impute a
+
+248
+00:12:36,278 --> 00:12:41,980
+l'heure and I could get markers that
+
+249
+00:12:38,589 --> 00:12:43,749
+will be tying close to 92% of it so
+
+250
+00:12:41,980 --> 00:12:49,269
+that's the only reason why I keep this
+
+251
+00:12:43,749 --> 00:12:52,589
+this this methodology together with
+
+252
+00:12:49,269 --> 00:12:56,558
+those information from the elusive paper
+
+253
+00:12:52,589 --> 00:12:59,709
+so yeah now we have phenotypes we have
+
+254
+00:12:56,558 --> 00:13:03,610
+genotypes we need a population for this
+
+255
+00:12:59,708 --> 00:13:05,768
+our population this is a graph of the 18
+
+256
+00:13:03,610 --> 00:13:07,808
+chromosomes and including the eldest or
+
+257
+00:13:05,769 --> 00:13:10,028
+the mean LD score you don't know what I
+
+258
+00:13:07,808 --> 00:13:12,969
+mean LD score is just do graph each
+
+259
+00:13:10,028 --> 00:13:15,850
+marker and then calculate the R square
+
+260
+00:13:12,970 --> 00:13:18,309
+of that marker with all the markers in a
+
+261
+00:13:15,850 --> 00:13:20,918
+beam of one mega base and then you
+
+262
+00:13:18,308 --> 00:13:24,368
+divide that by the number of markers in
+
+263
+00:13:20,918 --> 00:13:27,220
+that beam and you plot all of them and
+
+264
+00:13:24,369 --> 00:13:30,610
+it gives you a sense of local LD
+
+265
+00:13:27,220 --> 00:13:34,839
+patterns you can see here a cassava has
+
+266
+00:13:30,610 --> 00:13:40,058
+like a funky pattern of hi LD close to
+
+267
+00:13:34,839 --> 00:13:42,699
+the telomeres but there is a second here
+
+268
+00:13:40,058 --> 00:13:44,139
+I'm plotting this a classical indicate
+
+269
+00:13:42,698 --> 00:13:46,208
+the only thing that I'm doing
+
+270
+00:13:44,139 --> 00:13:49,269
+differently here is that I'm coloring
+
+271
+00:13:46,208 --> 00:13:52,298
+chromosome 1 and chromosome 4 in a
+
+272
+00:13:49,269 --> 00:13:55,149
+yellow and red respectively because they
+
+273
+00:13:52,298 --> 00:13:57,308
+have fun recent integration that doesn't
+
+274
+00:13:55,149 --> 00:14:00,818
+have a lot of recombination so that's
+
+275
+00:13:57,308 --> 00:14:01,879
+why what is dragging this this funky LD
+
+276
+00:14:00,818 --> 00:14:07,129
+putter
+
+277
+00:14:01,879 --> 00:14:11,149
+hi our squares even when the markers are
+
+278
+00:14:07,129 --> 00:14:14,088
+position really far away in the group
+
+279
+00:14:11,149 --> 00:14:17,209
+okay so we have markers with the
+
+280
+00:14:14,089 --> 00:14:21,190
+phenotypes we have a population and this
+
+281
+00:14:17,210 --> 00:14:23,900
+is our bio biological data okay this a
+
+282
+00:14:21,190 --> 00:14:27,830
+transcriptomics a study was performed by
+
+283
+00:14:23,899 --> 00:14:29,778
+Teddy amuse and polish in 2017 and she
+
+284
+00:14:27,830 --> 00:14:33,139
+basically grabbed two contrasting
+
+285
+00:14:29,778 --> 00:14:37,639
+genotypes Nami conga resistance to Susie
+
+286
+00:14:33,139 --> 00:14:42,379
+and Albert's really susceptible and she
+
+287
+00:14:37,639 --> 00:14:44,980
+grafted these varieties with infected
+
+288
+00:14:42,379 --> 00:14:47,419
+science and non-infected science and
+
+289
+00:14:44,980 --> 00:14:50,930
+evaluated differentially gene expressed
+
+290
+00:14:47,419 --> 00:14:53,449
+across seven different angles six hours
+
+291
+00:14:50,929 --> 00:14:58,809
+after grafting 24 hours after grafting
+
+292
+00:14:53,450 --> 00:15:01,550
+48 hours and so on until 54 days and
+
+293
+00:14:58,809 --> 00:15:04,759
+what we observe here is that the
+
+294
+00:15:01,549 --> 00:15:06,649
+resistant plant in yellow has a lot of
+
+295
+00:15:04,759 --> 00:15:09,799
+differential expression she's really
+
+296
+00:15:06,649 --> 00:15:14,028
+aware that it's been infected while they
+
+297
+00:15:09,799 --> 00:15:16,819
+Albert's plan insusceptible has like a
+
+298
+00:15:14,028 --> 00:15:19,759
+really mild response at 6 hours and then
+
+299
+00:15:16,820 --> 00:15:21,820
+nothing non difference between the the
+
+300
+00:15:19,759 --> 00:15:24,528
+transcriptional pattern between the
+
+301
+00:15:21,820 --> 00:15:26,690
+control and the infected ones in all
+
+302
+00:15:24,528 --> 00:15:30,110
+these time points it just start reacting
+
+303
+00:15:26,690 --> 00:15:32,480
+when it's it's basically too late so
+
+304
+00:15:30,110 --> 00:15:34,129
+then we we start thinking how can we use
+
+305
+00:15:32,480 --> 00:15:37,190
+distress photonic data
+
+306
+00:15:34,129 --> 00:15:40,220
+wait the genomic prediction models and
+
+307
+00:15:37,190 --> 00:15:45,950
+we had several hypotheses the first
+
+308
+00:15:40,220 --> 00:15:48,230
+hypothesis was just brute force so yeah
+
+309
+00:15:45,950 --> 00:15:50,600
+let's just use all the differential
+
+310
+00:15:48,230 --> 00:15:53,240
+expressions and compare the accuracy
+
+311
+00:15:50,600 --> 00:15:55,430
+that we have through the whole genome
+
+312
+00:15:53,240 --> 00:15:57,889
+imputation this is the full model I will
+
+313
+00:15:55,429 --> 00:16:00,679
+always be comparing the accuracies with
+
+314
+00:15:57,889 --> 00:16:03,769
+the full model at the last column this
+
+315
+00:16:00,679 --> 00:16:06,049
+is cvsd measure on leaves six months
+
+316
+00:16:03,769 --> 00:16:08,028
+after planting and this is measuring
+
+317
+00:16:06,049 --> 00:16:11,000
+roots and the model that we are running
+
+318
+00:16:08,028 --> 00:16:12,830
+here is a to colonel model one of the
+
+319
+00:16:11,000 --> 00:16:15,200
+colonel will cover all these needs that
+
+320
+00:16:12,830 --> 00:16:18,680
+are differentially expressed genes and
+
+321
+00:16:15,200 --> 00:16:23,430
+the other a colonel will have the rest
+
+322
+00:16:18,679 --> 00:16:28,259
+of the everything so as n
+
+323
+00:16:23,429 --> 00:16:31,199
+force approach usually happens it didn't
+
+324
+00:16:28,259 --> 00:16:33,960
+have a good result the prediction
+
+325
+00:16:31,200 --> 00:16:37,230
+accuracies were basically similar as
+
+326
+00:16:33,960 --> 00:16:39,500
+they the ones when you will just use the
+
+327
+00:16:37,230 --> 00:16:41,730
+whole genome imputation full data set
+
+328
+00:16:39,500 --> 00:16:45,240
+then we generally we try to be a little
+
+329
+00:16:41,730 --> 00:16:48,570
+bit smarter about it and we had this
+
+330
+00:16:45,240 --> 00:16:50,610
+idea that maybe those genes that have a
+
+331
+00:16:48,570 --> 00:16:53,339
+positive interaction between genotype
+
+332
+00:16:50,610 --> 00:16:56,940
+and inoculation status inoculation
+
+333
+00:16:53,339 --> 00:16:59,720
+status beam if the plan was control or
+
+334
+00:16:56,940 --> 00:17:03,540
+inoculated could have a better effect a
+
+335
+00:16:59,720 --> 00:17:05,670
+major effect on day on day on the
+
+336
+00:17:03,539 --> 00:17:07,949
+resistance phenomena so we fit this
+
+337
+00:17:05,670 --> 00:17:10,019
+model where expression the gene
+
+338
+00:17:07,949 --> 00:17:12,480
+expression of each genes will be
+
+339
+00:17:10,019 --> 00:17:15,389
+explained by rapes plus a three-way
+
+340
+00:17:12,480 --> 00:17:17,650
+interaction of genotype inoculation
+
+341
+00:17:15,390 --> 00:17:20,110
+status and time
+
+342
+00:17:17,650 --> 00:17:23,019
+and we extracted those genes Loreen here
+
+343
+00:17:20,109 --> 00:17:27,459
+that had an positively significant
+
+344
+00:17:23,019 --> 00:17:32,410
+interaction between G by I okay
+
+345
+00:17:27,460 --> 00:17:34,690
+um similar to the last a picture we
+
+346
+00:17:32,410 --> 00:17:38,200
+calculated yet Nam ik accuracy the
+
+347
+00:17:34,690 --> 00:17:43,180
+prediction accuracies for this model in
+
+348
+00:17:38,200 --> 00:17:45,960
+rate we have they a three colonel model
+
+349
+00:17:43,180 --> 00:17:47,799
+that was filled with these G by I games
+
+350
+00:17:45,960 --> 00:17:50,380
+partitioning two chromosome 11
+
+351
+00:17:47,799 --> 00:17:52,720
+chromosome four and the rest of the you
+
+352
+00:17:50,380 --> 00:17:54,520
+know here we also incorporated the fact
+
+353
+00:17:52,720 --> 00:17:57,960
+that we know that in chromosome 11 and
+
+354
+00:17:54,519 --> 00:18:02,500
+or there were big big to deal okay and
+
+355
+00:17:57,960 --> 00:18:06,940
+we also fit a model with random a random
+
+356
+00:18:02,500 --> 00:18:09,940
+genes in the same a proportion and what
+
+357
+00:18:06,940 --> 00:18:12,789
+we saw is that our model is doing better
+
+358
+00:18:09,940 --> 00:18:15,580
+than random for separating leaves and
+
+359
+00:18:12,789 --> 00:18:18,159
+roots but we are know still not doing
+
+360
+00:18:15,579 --> 00:18:21,399
+better than when test using the basic
+
+361
+00:18:18,160 --> 00:18:24,300
+development so yeah now the second
+
+362
+00:18:21,400 --> 00:18:27,940
+hypothesis didn't quite will work yet so
+
+363
+00:18:24,299 --> 00:18:30,639
+then we have a third hypothesis but if
+
+364
+00:18:27,940 --> 00:18:34,090
+state of using the differential express
+
+365
+00:18:30,640 --> 00:18:37,540
+genes we just use a clustering method
+
+366
+00:18:34,089 --> 00:18:41,049
+whole genome now we're 18 co-expression
+
+367
+00:18:37,539 --> 00:18:43,779
+network analysis to try to mine
+
+368
+00:18:41,049 --> 00:18:47,619
+important games unless focusing in this
+
+369
+00:18:43,779 --> 00:18:51,509
+part of the of the slide the colors are
+
+370
+00:18:47,619 --> 00:18:52,979
+a little off but it's fine too
+
+371
+00:18:51,509 --> 00:18:54,660
+better idea of what weighted yuko
+
+372
+00:18:52,980 --> 00:18:57,450
+expression middle or analysis is doing
+
+373
+00:18:54,660 --> 00:19:00,750
+it yes it's just clustering genes that
+
+374
+00:18:57,450 --> 00:19:04,620
+have a similar expression pattern and if
+
+375
+00:19:00,750 --> 00:19:06,539
+you go today to the black model here and
+
+376
+00:19:04,619 --> 00:19:10,439
+you'll have to believe me because the
+
+377
+00:19:06,539 --> 00:19:13,379
+colors are off this black module has
+
+378
+00:19:10,440 --> 00:19:16,170
+genes that are expressed only in the
+
+379
+00:19:13,380 --> 00:19:19,470
+enemy conga genotype and then we have
+
+380
+00:19:16,170 --> 00:19:21,390
+another tsiyon module that are mostly
+
+381
+00:19:19,470 --> 00:19:26,190
+expressed in Alberts
+
+382
+00:19:21,390 --> 00:19:29,690
+okay this should be way rather more read
+
+383
+00:19:26,190 --> 00:19:34,230
+the colors are a little off but anyway
+
+384
+00:19:29,690 --> 00:19:37,289
+we get a bunch of modules with this
+
+385
+00:19:34,230 --> 00:19:38,370
+technique and again we try our technique
+
+386
+00:19:37,289 --> 00:19:40,440
+of two turns
+
+387
+00:19:38,369 --> 00:19:42,779
+let's get the genes that are within our
+
+388
+00:19:40,440 --> 00:19:45,180
+module and everything else in the genome
+
+389
+00:19:42,779 --> 00:19:50,849
+and compare them with the last column
+
+390
+00:19:45,180 --> 00:19:53,279
+that will be they not very good results
+
+391
+00:19:50,849 --> 00:19:55,949
+the only one that was doing better than
+
+392
+00:19:53,279 --> 00:19:59,490
+the whole a model was this model rates
+
+393
+00:19:55,950 --> 00:20:01,650
+and only for three months so no really
+
+394
+00:19:59,490 --> 00:20:03,660
+good results of it at the time so we
+
+395
+00:20:01,650 --> 00:20:07,210
+come up with a four hypothesis that was
+
+396
+00:20:03,660 --> 00:20:08,710
+basically desperation and
+
+397
+00:20:07,210 --> 00:20:12,190
+mix different sources of information
+
+398
+00:20:08,710 --> 00:20:15,460
+trying to beat the performance we hold
+
+399
+00:20:12,190 --> 00:20:17,980
+in our imputation and we did it but with
+
+400
+00:20:15,460 --> 00:20:21,940
+you know from ranging from one point six
+
+401
+00:20:17,980 --> 00:20:24,429
+seven to two point five percent overall
+
+402
+00:20:21,940 --> 00:20:27,880
+prediction accuracy so it wasn't a big
+
+403
+00:20:24,429 --> 00:20:31,179
+game but it was a little game and we
+
+404
+00:20:27,880 --> 00:20:35,350
+have several options why this approach
+
+405
+00:20:31,179 --> 00:20:38,200
+didn't work as as we were expecting
+
+406
+00:20:35,349 --> 00:20:40,599
+there is a thing of the trade a genetic
+
+407
+00:20:38,200 --> 00:20:42,399
+architecture these cvsd resistant in
+
+408
+00:20:40,599 --> 00:20:44,648
+these populations have big qtls
+
+409
+00:20:42,398 --> 00:20:49,178
+and may be trying to mine information
+
+410
+00:20:44,648 --> 00:20:53,288
+out of the RNA seek data is not really
+
+411
+00:20:49,179 --> 00:20:55,809
+viable because of those two bqp else our
+
+412
+00:20:53,288 --> 00:20:59,048
+imputation accuracy was performing a
+
+413
+00:20:55,808 --> 00:21:01,710
+half map that only 140 individuals there
+
+414
+00:20:59,048 --> 00:21:04,990
+is issues with a phenotype in platform
+
+415
+00:21:01,710 --> 00:21:07,120
+they transcriptomics experiment it was
+
+416
+00:21:04,990 --> 00:21:08,710
+only performing two varieties that might
+
+417
+00:21:07,119 --> 00:21:12,058
+not be representative of the population
+
+418
+00:21:08,710 --> 00:21:15,278
+and we're working him and finally they
+
+419
+00:21:12,058 --> 00:21:17,859
+the transcriptomic experiment was used
+
+420
+00:21:15,278 --> 00:21:20,740
+it was infected using only one strain of
+
+421
+00:21:17,859 --> 00:21:23,019
+the virus not with the two and what
+
+422
+00:21:20,740 --> 00:21:25,269
+usually happens in feeling reality that
+
+423
+00:21:23,019 --> 00:21:27,639
+there is a co-infection of Ugandan
+
+424
+00:21:25,269 --> 00:21:30,058
+cassava and streak virus and cassava
+
+425
+00:21:27,640 --> 00:21:37,350
+Brown Street
+
+426
+00:21:30,058 --> 00:21:37,349
+ok ok ok
+
+427
+00:21:37,720 --> 00:21:42,808
+hmm what was sorry
+
+428
+00:21:48,630 --> 00:21:54,100
+yeah one of the things that was also
+
+429
+00:21:51,099 --> 00:21:57,609
+disturbing me until that point was that
+
+430
+00:21:54,099 --> 00:22:00,129
+we were only looking for important genes
+
+431
+00:21:57,609 --> 00:22:03,279
+all important regions within the genes
+
+432
+00:22:00,130 --> 00:22:07,210
+and the gene gimmick region is only a
+
+433
+00:22:03,279 --> 00:22:09,009
+tiny part of the whole genome for the
+
+434
+00:22:07,210 --> 00:22:13,048
+hotel genome there are functional
+
+435
+00:22:09,009 --> 00:22:15,730
+elements happen outside of the genes and
+
+436
+00:22:13,048 --> 00:22:20,589
+yeah the motivation for doing this third
+
+437
+00:22:15,730 --> 00:22:23,919
+part of this is work it was this article
+
+438
+00:22:20,589 --> 00:22:26,529
+during a raid on 2014 by Manolis Kellis
+
+439
+00:22:23,919 --> 00:22:29,559
+from the encode project there was a lot
+
+440
+00:22:26,529 --> 00:22:34,149
+of troubles because the guys from the
+
+441
+00:22:29,558 --> 00:22:37,029
+ink could say 80% of the human genome is
+
+442
+00:22:34,150 --> 00:22:38,980
+transcribed so 80% of the human genome
+
+443
+00:22:37,029 --> 00:22:42,668
+is functional no and then there were
+
+444
+00:22:38,980 --> 00:22:44,319
+lots of the evolutionary you cannot say
+
+445
+00:22:42,669 --> 00:22:47,890
+that because you are not under the light
+
+446
+00:22:44,319 --> 00:22:50,859
+of evolution that can be true I mean the
+
+447
+00:22:47,890 --> 00:22:53,410
+the guys from encode found evidence for
+
+448
+00:22:50,859 --> 00:22:56,229
+80% of the Y in the human you know it
+
+449
+00:22:53,410 --> 00:22:58,210
+was transcribed but we also have to
+
+450
+00:22:56,230 --> 00:23:01,179
+consider all the Arabians we have
+
+451
+00:22:58,210 --> 00:23:03,819
+genetic evidence that is basically that
+
+452
+00:23:01,179 --> 00:23:06,429
+that generate phenotype what you find
+
+453
+00:23:03,819 --> 00:23:09,029
+when you run a new was and you have also
+
+454
+00:23:06,429 --> 00:23:11,048
+evolutionary evidence meaning that
+
+455
+00:23:09,029 --> 00:23:13,240
+regions in the genome that are
+
+456
+00:23:11,048 --> 00:23:17,019
+constrained by evolution are more
+
+457
+00:23:13,240 --> 00:23:19,089
+probable probable functional so yeah in
+
+458
+00:23:17,019 --> 00:23:22,029
+in the like so is this I was also
+
+459
+00:23:19,089 --> 00:23:25,109
+interested in trying to find functional
+
+460
+00:23:22,029 --> 00:23:28,869
+elements outside of the cassava genome
+
+461
+00:23:25,109 --> 00:23:31,029
+so that brings up to this expanding the
+
+462
+00:23:28,869 --> 00:23:36,609
+cassava functional genome using pro C
+
+463
+00:23:31,029 --> 00:23:40,000
+and valine 2015 journalist from Cornell
+
+464
+00:23:36,609 --> 00:23:43,599
+biotech published this article that kind
+
+465
+00:23:40,000 --> 00:23:48,450
+of exciting me a little bit she was
+
+466
+00:23:43,599 --> 00:23:50,500
+doing this nascent RNA sequencing and
+
+467
+00:23:48,450 --> 00:23:53,110
+the important thing you need to know
+
+468
+00:23:50,500 --> 00:23:55,569
+about these nation techniques is that
+
+469
+00:23:53,109 --> 00:23:57,399
+allows you to sequence the RNA that are
+
+470
+00:23:55,569 --> 00:24:00,970
+inside a nucleus
+
+471
+00:23:57,400 --> 00:24:04,240
+so you can sequence the mRNAs before
+
+472
+00:24:00,970 --> 00:24:07,660
+being spliced but you can also sequence
+
+473
+00:24:04,240 --> 00:24:11,500
+all those unstable RNAs that are later
+
+474
+00:24:07,660 --> 00:24:15,670
+degraded in the in the cytoplasm okay
+
+475
+00:24:11,500 --> 00:24:20,859
+and by doing that John and collaborators
+
+476
+00:24:15,670 --> 00:24:22,539
+found that in promoters for example my
+
+477
+00:24:20,859 --> 00:24:24,669
+him that this is your promoter your gene
+
+478
+00:24:22,539 --> 00:24:26,710
+is this part of course you have a
+
+479
+00:24:24,670 --> 00:24:29,558
+transcript going on the only side of the
+
+480
+00:24:26,710 --> 00:24:32,380
+game but what he found was that that
+
+481
+00:24:29,558 --> 00:24:34,379
+there was an unstable RNA also being
+
+482
+00:24:32,380 --> 00:24:38,140
+transcribed on the opposite direction
+
+483
+00:24:34,380 --> 00:24:41,200
+more importantly she discovered that in
+
+484
+00:24:38,140 --> 00:24:45,309
+enhancer regions outside of the genes
+
+485
+00:24:41,200 --> 00:24:48,069
+there was a similar pattern surrounding
+
+486
+00:24:45,308 --> 00:24:52,509
+the the enhancer will be transcription
+
+487
+00:24:48,069 --> 00:24:57,279
+of of small RNAs in both directions and
+
+488
+00:24:52,509 --> 00:24:58,539
+those RNAs will call enhancer RNA the
+
+489
+00:24:57,279 --> 00:25:00,970
+next year
+
+490
+00:24:58,539 --> 00:25:04,240
+Charles Danko in collaboration also with
+
+491
+00:25:00,970 --> 00:25:06,789
+Alan cylinder list publish this Dirac
+
+492
+00:25:04,240 --> 00:25:10,269
+method it was a machine learning a super
+
+493
+00:25:06,789 --> 00:25:14,619
+vector regression machine that will
+
+494
+00:25:10,269 --> 00:25:18,519
+allow you to based on that nasan RNA
+
+495
+00:25:14,619 --> 00:25:20,979
+sequencing identify transcription
+
+496
+00:25:18,519 --> 00:25:23,619
+regulatory elements including promoters
+
+497
+00:25:20,980 --> 00:25:25,509
+and enhance and that's what I believe
+
+498
+00:25:23,619 --> 00:25:28,509
+hey maybe we can apply this idea to
+
+499
+00:25:25,509 --> 00:25:31,619
+cassava and identify enhancers that
+
+500
+00:25:28,509 --> 00:25:35,980
+might be important to explain phenotypes
+
+501
+00:25:31,619 --> 00:25:39,279
+outside of of the games so I was super
+
+502
+00:25:35,980 --> 00:25:43,349
+excited with John we were starting to do
+
+503
+00:25:39,279 --> 00:25:48,099
+the planning and everything and in 2016
+
+504
+00:25:43,349 --> 00:25:50,740
+they publish this article in using nests
+
+505
+00:25:48,099 --> 00:25:54,459
+and RNA in Arabi Topsy's and it was the
+
+506
+00:25:50,740 --> 00:25:56,230
+first study that was performed on lunch
+
+507
+00:25:54,460 --> 00:25:58,750
+and it was really disappointed at the
+
+508
+00:25:56,230 --> 00:26:01,390
+time because they say you know in plants
+
+509
+00:25:58,750 --> 00:26:03,369
+there is lack of Ahaz rnase lack of a
+
+510
+00:26:01,390 --> 00:26:06,220
+directional transcription lack of
+
+511
+00:26:03,369 --> 00:26:08,439
+promoter proximal posting i plants are
+
+512
+00:26:06,220 --> 00:26:09,789
+completely different than mammals and
+
+513
+00:26:08,440 --> 00:26:11,860
+other metazoans
+
+514
+00:26:09,789 --> 00:26:14,109
+so I was really sad because we were in
+
+515
+00:26:11,859 --> 00:26:15,869
+the middle of an experiment trying to
+
+516
+00:26:14,109 --> 00:26:19,000
+identify these enhancers
+
+517
+00:26:15,869 --> 00:26:21,189
+using the enhancer RNA is that according
+
+518
+00:26:19,000 --> 00:26:23,470
+to these people were completely absent
+
+519
+00:26:21,190 --> 00:26:24,970
+in plant but you know we were in the
+
+520
+00:26:23,470 --> 00:26:29,710
+middle of the experiment so we just kept
+
+521
+00:26:24,970 --> 00:26:31,630
+going yeah
+
+522
+00:26:29,710 --> 00:26:33,579
+so I'll explain a little bit of this
+
+523
+00:26:31,630 --> 00:26:35,560
+meta-gene clothes so this is what would
+
+524
+00:26:33,579 --> 00:26:37,869
+happen in the human around the
+
+525
+00:26:35,559 --> 00:26:40,059
+transcription start site so this is
+
+526
+00:26:37,869 --> 00:26:42,069
+where they polymerize the first attaches
+
+527
+00:26:40,059 --> 00:26:45,490
+and then start transcribing back in this
+
+528
+00:26:42,069 --> 00:26:48,220
+direction so you'll have the
+
+529
+00:26:45,490 --> 00:26:51,299
+transcription of the RNA and this peak
+
+530
+00:26:48,220 --> 00:26:54,940
+at the beginning is called the posting
+
+531
+00:26:51,299 --> 00:26:57,129
+phenomenon okay so we're basically the
+
+532
+00:26:54,940 --> 00:26:58,720
+polymerases are attached to the
+
+533
+00:26:57,130 --> 00:27:01,030
+beginning of the in and they are just
+
+534
+00:26:58,720 --> 00:27:05,620
+waiting for an additional stimuli to
+
+535
+00:27:01,029 --> 00:27:07,359
+start transcription so and also there is
+
+536
+00:27:05,619 --> 00:27:10,299
+this bi-directional transcription on the
+
+537
+00:27:07,359 --> 00:27:12,069
+stable RNA in the opposite direction in
+
+538
+00:27:10,299 --> 00:27:15,480
+our ovide offices however they observed
+
+539
+00:27:12,069 --> 00:27:17,649
+two things there is no posting
+
+540
+00:27:15,480 --> 00:27:23,880
+they're just transcription and there is
+
+541
+00:27:17,650 --> 00:27:27,550
+no bi-directional transcription okay so
+
+542
+00:27:23,880 --> 00:27:29,560
+we were in the middle of experiment and
+
+543
+00:27:27,549 --> 00:27:31,509
+I feel that sometimes when you try to
+
+544
+00:27:29,559 --> 00:27:33,159
+understand a new molecular technique the
+
+545
+00:27:31,509 --> 00:27:35,650
+better thing to understand is go through
+
+546
+00:27:33,160 --> 00:27:38,190
+the protocol so I will just walk you
+
+547
+00:27:35,650 --> 00:27:42,519
+guys through the protocol a little bit
+
+548
+00:27:38,190 --> 00:27:44,559
+so grow speaker Pro see our it goes for
+
+549
+00:27:42,519 --> 00:27:47,410
+global or precision random sequencing
+
+550
+00:27:44,559 --> 00:27:50,710
+and what this means a methyl down it
+
+551
+00:27:47,410 --> 00:27:52,360
+does is it will sequence RNA that are
+
+552
+00:27:50,710 --> 00:27:55,990
+attached to the polymerase
+
+553
+00:27:52,359 --> 00:27:58,959
+inside and so you start with a cleansing
+
+554
+00:27:55,990 --> 00:28:01,319
+here then you have to
+
+555
+00:27:58,960 --> 00:28:05,259
+nuclei so you will only have the nucleus
+
+556
+00:28:01,319 --> 00:28:08,129
+and you go up here once you have the
+
+557
+00:28:05,259 --> 00:28:12,369
+nucleus you disrupt the nuclear membrane
+
+558
+00:28:08,130 --> 00:28:15,130
+remove the nucleotides the arena and
+
+559
+00:28:12,369 --> 00:28:18,879
+nucleotides and put lots of biotinylated
+
+560
+00:28:15,130 --> 00:28:23,020
+entities into the solution and then lay
+
+561
+00:28:18,880 --> 00:28:25,570
+the conditions of the cell culture so
+
+562
+00:28:23,019 --> 00:28:27,940
+that the polymerase can will be able to
+
+563
+00:28:25,569 --> 00:28:32,908
+incorporate these nucleotides at least
+
+564
+00:28:27,940 --> 00:28:35,620
+two positions okay then since those
+
+565
+00:28:32,909 --> 00:28:38,260
+entities are biotinylated you will just
+
+566
+00:28:35,619 --> 00:28:40,959
+use a stripper reading with read those
+
+567
+00:28:38,259 --> 00:28:44,319
+and then you just create follow the
+
+568
+00:28:40,960 --> 00:28:48,240
+steps to create a regular nds library
+
+569
+00:28:44,319 --> 00:28:48,240
+you will end up with the strand-specific
+
+570
+00:28:48,960 --> 00:29:00,579
+nascent RNA seek libraries so first
+
+571
+00:28:55,829 --> 00:29:02,439
+result we wanted to check if was that if
+
+572
+00:29:00,579 --> 00:29:04,269
+the things of Surfing arriv'd offices
+
+573
+00:29:02,440 --> 00:29:06,580
+were the same as we were observing
+
+574
+00:29:04,269 --> 00:29:10,058
+cassava and the first thing that we have
+
+575
+00:29:06,579 --> 00:29:12,460
+service at the cassava nascent RNA
+
+576
+00:29:10,058 --> 00:29:14,980
+profile around the transcription start
+
+577
+00:29:12,460 --> 00:29:19,149
+site is a hybrid between our video
+
+578
+00:29:14,980 --> 00:29:20,829
+system see there is posting it means by
+
+579
+00:29:19,148 --> 00:29:25,379
+this peak but there is lack of
+
+580
+00:29:20,829 --> 00:29:28,139
+bi-directional transcription if
+
+581
+00:29:25,380 --> 00:29:30,270
+go to the termination side or sorry the
+
+582
+00:29:28,140 --> 00:29:32,280
+polyadenylation site at the end of the
+
+583
+00:29:30,269 --> 00:29:35,519
+gene then we see that the cassava
+
+584
+00:29:32,279 --> 00:29:38,250
+profile looks quite similar to the
+
+585
+00:29:35,519 --> 00:29:40,950
+reveals profile and when the humans
+
+586
+00:29:38,250 --> 00:29:45,000
+don't have this pic at the end of the
+
+587
+00:29:40,950 --> 00:29:47,039
+games so if we you see the start of the
+
+588
+00:29:45,000 --> 00:29:50,809
+a gene looks like this if you look for
+
+589
+00:29:47,039 --> 00:29:54,000
+the end of the game it looks like this
+
+590
+00:29:50,809 --> 00:29:55,619
+when one of the things that that the
+
+591
+00:29:54,000 --> 00:29:58,490
+arrival of these people say that was
+
+592
+00:29:55,619 --> 00:30:02,369
+that there are no pausing in plants and
+
+593
+00:29:58,490 --> 00:30:05,099
+then in cassava we found Ossining plants
+
+594
+00:30:02,369 --> 00:30:07,679
+then they say there is no bi-directional
+
+595
+00:30:05,099 --> 00:30:10,019
+transcription and I kind of saw this
+
+596
+00:30:07,680 --> 00:30:12,330
+little bump here and say okay let's try
+
+597
+00:30:10,019 --> 00:30:14,609
+to find some genes that might have this
+
+598
+00:30:12,329 --> 00:30:16,470
+bi-directional transcription and of
+
+599
+00:30:14,609 --> 00:30:20,669
+course I found some examples that have
+
+600
+00:30:16,470 --> 00:30:24,120
+it this is an IDE image of the iron is a
+
+601
+00:30:20,670 --> 00:30:26,550
+nascent RNA secretes the gene is going
+
+602
+00:30:24,119 --> 00:30:29,459
+in that direction you have the posting
+
+603
+00:30:26,549 --> 00:30:32,519
+peak and the transcription but you also
+
+604
+00:30:29,460 --> 00:30:34,860
+have this bi-directional transcription
+
+605
+00:30:32,519 --> 00:30:37,289
+in the opposite direction so they
+
+606
+00:30:34,859 --> 00:30:40,649
+reversed by directional transcription at
+
+607
+00:30:37,289 --> 00:30:43,259
+least in cassava in a way less amount
+
+608
+00:30:40,650 --> 00:30:47,550
+than what was observed in humans but
+
+609
+00:30:43,259 --> 00:30:50,000
+there wasn't so I asked myself like what
+
+610
+00:30:47,549 --> 00:30:52,879
+if if cassava can have bi-directional
+
+611
+00:30:50,000 --> 00:30:58,140
+transcription missing some genes may be
+
+612
+00:30:52,880 --> 00:31:02,010
+there so i annotate peaks in intergenic
+
+613
+00:30:58,140 --> 00:31:04,980
+regions first using chromatin
+
+614
+00:31:02,009 --> 00:31:06,900
+immunoprecipitation pick polar in Homer
+
+615
+00:31:04,980 --> 00:31:09,329
+and I found this pattern of
+
+616
+00:31:06,900 --> 00:31:12,810
+bi-directional transcription across
+
+617
+00:31:09,329 --> 00:31:15,089
+these elements that were outside games
+
+618
+00:31:12,809 --> 00:31:17,579
+so I say okay maybe if I found those
+
+619
+00:31:15,089 --> 00:31:20,159
+elements I can still run the this
+
+620
+00:31:17,579 --> 00:31:22,049
+support vector regression model that was
+
+621
+00:31:20,160 --> 00:31:24,000
+training mammals to identified
+
+622
+00:31:22,049 --> 00:31:26,639
+transcription regulatory elements
+
+623
+00:31:24,000 --> 00:31:30,559
+outside the genes I run it I found the
+
+624
+00:31:26,640 --> 00:31:32,880
+same pattern and now I found 9660 five
+
+625
+00:31:30,559 --> 00:31:36,569
+elements that were transcribed outside
+
+626
+00:31:32,880 --> 00:31:38,970
+again having these specific patterns
+
+627
+00:31:36,569 --> 00:31:40,859
+so they kind of look like enhancers at
+
+628
+00:31:38,970 --> 00:31:43,679
+the moment so I try to further
+
+629
+00:31:40,859 --> 00:31:46,229
+characterize them and we had some
+
+630
+00:31:43,679 --> 00:31:49,019
+methylation that available so I wanted
+
+631
+00:31:46,230 --> 00:31:51,210
+to blow the methylation on in the three
+
+632
+00:31:49,019 --> 00:31:55,649
+different contexts around this video
+
+633
+00:31:51,210 --> 00:31:59,190
+okay this is a and let me explain you a
+
+634
+00:31:55,648 --> 00:32:05,609
+little bit these graphs goes from 0% to
+
+635
+00:31:59,190 --> 00:32:09,870
+100% of an element and then 3kv upstream
+
+636
+00:32:05,609 --> 00:32:12,959
+and 3kv downstream okay this is a random
+
+637
+00:32:09,869 --> 00:32:14,878
+set of regions across the genome so this
+
+638
+00:32:12,960 --> 00:32:19,048
+is how methylation loosing cassava in
+
+639
+00:32:14,878 --> 00:32:22,138
+the CH h context in the CPG context and
+
+640
+00:32:19,048 --> 00:32:25,138
+in the CH D context this is the pattern
+
+641
+00:32:22,138 --> 00:32:28,949
+that you observe across genes really low
+
+642
+00:32:25,138 --> 00:32:31,699
+methylation in the promoter and in the
+
+643
+00:32:28,950 --> 00:32:35,399
+termination and CPG methylation and
+
+644
+00:32:31,700 --> 00:32:38,298
+interestingly they the elements that we
+
+645
+00:32:35,398 --> 00:32:41,339
+found outside genes had this methylation
+
+646
+00:32:38,298 --> 00:32:47,278
+pattern similar to what is observed in
+
+647
+00:32:41,339 --> 00:32:49,199
+genes but a little inflated for then I
+
+648
+00:32:47,278 --> 00:32:51,778
+was interested also in check how
+
+649
+00:32:49,200 --> 00:32:54,870
+conserve this elements were in my mind
+
+650
+00:32:51,778 --> 00:32:58,829
+enhancer had to be conserved and I was
+
+651
+00:32:54,869 --> 00:33:00,989
+kind of wrong so in yellow you see these
+
+652
+00:32:58,829 --> 00:33:03,388
+are grapes course so basically the
+
+653
+00:33:00,990 --> 00:33:08,388
+higher the girls for the most concern
+
+654
+00:33:03,388 --> 00:33:12,269
+those regions are across closely related
+
+655
+00:33:08,388 --> 00:33:16,469
+species including jatropha flux and
+
+656
+00:33:12,269 --> 00:33:19,700
+normal so basically use again from 0% to
+
+657
+00:33:16,470 --> 00:33:24,629
+100% of the feature we're analyzing
+
+658
+00:33:19,700 --> 00:33:27,808
+yellow is genes super conserve blue is
+
+659
+00:33:24,628 --> 00:33:30,569
+random sequences and in orange
+
+660
+00:33:27,808 --> 00:33:32,069
+it was our enhancer can be a genes and
+
+661
+00:33:30,569 --> 00:33:35,278
+we have served here that they are
+
+662
+00:33:32,069 --> 00:33:37,169
+actually you have non conserved so I was
+
+663
+00:33:35,278 --> 00:33:41,160
+a little worried then I
+
+664
+00:33:37,170 --> 00:33:44,370
+I read this this research was done 2016
+
+665
+00:33:41,160 --> 00:33:46,320
+I believe where they studied enhancer
+
+666
+00:33:44,369 --> 00:33:50,389
+evolution across 20 mammalian species
+
+667
+00:33:46,319 --> 00:33:57,049
+and then found that mammalian a inhale a
+
+668
+00:33:50,390 --> 00:34:00,180
+enhancers are rapidly evolving sequences
+
+669
+00:33:57,049 --> 00:34:02,609
+quoting them enhancers are rarely
+
+670
+00:34:00,180 --> 00:34:04,620
+conserved across these mammals unbiased
+
+671
+00:34:02,609 --> 00:34:06,889
+mapping leaks candidate enhancers with
+
+672
+00:34:04,619 --> 00:34:09,449
+lineage-specific positive selection
+
+673
+00:34:06,890 --> 00:34:11,220
+there's a little bit of evidence on top
+
+674
+00:34:09,449 --> 00:34:14,759
+of Aryans that this thing that we found
+
+675
+00:34:11,219 --> 00:34:18,959
+might actually be enhancers and the last
+
+676
+00:34:14,760 --> 00:34:21,480
+test that we we want to try is okay if
+
+677
+00:34:18,960 --> 00:34:24,059
+they they the enhancers might be
+
+678
+00:34:21,480 --> 00:34:25,918
+important to explain a phenotype they
+
+679
+00:34:24,059 --> 00:34:30,929
+should be explaining more phenotypic
+
+680
+00:34:25,918 --> 00:34:34,408
+variants in any population for for
+
+681
+00:34:30,929 --> 00:34:37,320
+example yield components so we we made a
+
+682
+00:34:34,409 --> 00:34:38,909
+test we have a portion of my genome
+
+683
+00:34:37,320 --> 00:34:41,070
+invented a host year Calista cassava
+
+684
+00:34:38,909 --> 00:34:43,829
+genome because a small portion one
+
+685
+00:34:41,070 --> 00:34:46,769
+percent of the genome is represented by
+
+686
+00:34:43,829 --> 00:34:50,029
+this enhancer can be a genes what I did
+
+687
+00:34:46,769 --> 00:34:53,639
+is select all the markers inside here i
+
+688
+00:34:50,030 --> 00:34:56,820
+LD protected them so any marker Dell
+
+689
+00:34:53,639 --> 00:35:00,059
+that would have an R square higher than
+
+690
+00:34:56,820 --> 00:35:02,100
+point nine in a hundred and fifty K
+
+691
+00:35:00,059 --> 00:35:05,639
+region across then I would just asana
+
+692
+00:35:02,099 --> 00:35:07,710
+and then I will a build an another
+
+693
+00:35:05,639 --> 00:35:10,949
+kernel with the rest of the game and I
+
+694
+00:35:07,710 --> 00:35:13,980
+will compare what I have here with my
+
+695
+00:35:10,949 --> 00:35:16,049
+new hypothesis of a random set of
+
+696
+00:35:13,980 --> 00:35:18,869
+markers that have the same distribution
+
+697
+00:35:16,050 --> 00:35:22,200
+of the enhancer that I found also
+
+698
+00:35:18,869 --> 00:35:25,589
+protected by a frail D and the second
+
+699
+00:35:22,199 --> 00:35:27,509
+card and when we found when the when we
+
+700
+00:35:25,590 --> 00:35:29,820
+run the genomic partitioning and a
+
+701
+00:35:27,510 --> 00:35:32,370
+percentage of phenotypic variance is
+
+702
+00:35:29,820 --> 00:35:35,160
+explained for several traits on the
+
+703
+00:35:32,369 --> 00:35:37,739
+enhancer region some blue to random
+
+704
+00:35:35,159 --> 00:35:40,259
+reels in orange it is for most of the
+
+705
+00:35:37,739 --> 00:35:42,809
+trace dry matter contain fresh yield
+
+706
+00:35:40,260 --> 00:35:45,030
+fruit a number root weight and should
+
+707
+00:35:42,809 --> 00:35:47,699
+wait they are explaining way more
+
+708
+00:35:45,030 --> 00:35:50,860
+phenotypic variance than the random sets
+
+709
+00:35:47,699 --> 00:35:53,859
+the only tray that this is not working
+
+710
+00:35:50,860 --> 00:35:57,099
+is for CMD and it kind of makes sense
+
+711
+00:35:53,860 --> 00:35:58,450
+the blue dot is hidden behind but it
+
+712
+00:35:57,099 --> 00:36:01,989
+makes sense because seeing this is
+
+713
+00:35:58,449 --> 00:36:08,969
+regulated by both probably a single
+
+714
+00:36:01,989 --> 00:36:12,189
+locus with a massive QTL well yeah
+
+715
+00:36:08,969 --> 00:36:14,789
+so yeah the is we've made a case where
+
+716
+00:36:12,190 --> 00:36:19,119
+we found these these elements outside
+
+717
+00:36:14,789 --> 00:36:21,340
+genes that are transcribed are not
+
+718
+00:36:19,119 --> 00:36:24,609
+evolutionary conserved - a specific
+
+719
+00:36:21,340 --> 00:36:27,840
+methylation pattern and explain more
+
+720
+00:36:24,610 --> 00:36:31,900
+phenotypic variants that it's random
+
+721
+00:36:27,840 --> 00:36:34,990
+counterparts so we we kind of think that
+
+722
+00:36:31,900 --> 00:36:37,329
+this might be enhancers and this will be
+
+723
+00:36:34,989 --> 00:36:41,469
+a really nice method to identify them in
+
+724
+00:36:37,329 --> 00:36:43,750
+plants and I think that's it
+
+725
+00:36:41,469 --> 00:36:47,739
+thank you very much it was a really a
+
+726
+00:36:43,750 --> 00:36:49,750
+big big big big team efforts when I went
+
+727
+00:36:47,739 --> 00:36:52,299
+to you land actually I really understood
+
+728
+00:36:49,750 --> 00:36:58,829
+the effort that is put into getting one
+
+729
+00:36:52,300 --> 00:36:58,830
+of your data sales are so yeah
+
+730
+00:37:02,210 --> 00:37:11,030
+this has been a production of Cornell
+
+731
+00:37:05,250 --> 00:37:11,030
+University on the web at Cornell edu
+

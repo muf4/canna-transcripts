@@ -1,0 +1,981 @@
+[SPEAKER_01]: This is a production of Cornell
+University.
+[SPEAKER_01]: So I'm pleased to introduce today's
+speaker, Stefan Ventalila.
+[SPEAKER_01]: Before I go through the formal
+introduction, though, I wanted to
+[SPEAKER_01]: introduce some work that he did in my lab
+earlier on.
+[SPEAKER_01]: So Stefan actually came to Cornell to work
+in the Tanksley lab, where he stayed for a
+[SPEAKER_01]: couple of years.
+[SPEAKER_01]: And then he came to my lab to work on the
+project I'm about to describe.
+[SPEAKER_01]: To explain what he did, I have to explain
+how I got tenure.
+[SPEAKER_01]: Because this slide explains what I did
+during my assistant professorship.
+[SPEAKER_01]: Because he came to my lab right after
+that.
+[SPEAKER_01]: So we were interested in this question of
+cytoplasmic male sterility and nuclear
+[SPEAKER_01]: encoded fertility restoration.
+[SPEAKER_01]: This is one of the reproductive isolation
+methods that plants use.
+[SPEAKER_01]: At the time, I was an assistant professor
+We didn't actually know what cytoplasmic
+[SPEAKER_01]: genome was encoding this trait of
+cytoplasmic male sterility, whether it was
+[SPEAKER_01]: chloroplast or mitochondria.
+[SPEAKER_01]: We didn't know what gene was doing this.
+[SPEAKER_01]: And we also didn't know anything about
+this nuclear encoded fertility restoration
+[SPEAKER_01]: gene that could restore the pollen
+development to this plant.
+[SPEAKER_01]: So what my lab did was look in petunia to
+try to find the gene that was encoding
+[SPEAKER_01]: cytoplasmic male sterility.
+[SPEAKER_01]: So if you have a fertile line with the
+recessive allele of the RF gene,
+[SPEAKER_01]: it's fertile.
+[SPEAKER_01]: If you have a recessive allele with the
+CMS cytoplasm, it's sterile.
+[SPEAKER_01]: You can see the lack of pollen development
+in the middle one.
+[SPEAKER_01]: And then if you have one copy of the
+fertility restore, you get a normal
+[SPEAKER_01]: fertile plant.
+[SPEAKER_01]: So what we found was that there was a
+toxic protein encoded by an abnormal gene
+[SPEAKER_01]: in mitochondrial DNA in that sterile
+plant.
+[SPEAKER_01]: And the RF allele prevents the expression
+of this toxic protein.
+[SPEAKER_01]: So that's what we knew.
+[SPEAKER_01]: And that's how I got tenure was that
+finding.
+[SPEAKER_01]: But then when I came here and Stefan
+joined the lab, we wanted to find out what
+[SPEAKER_01]: the RF gene was.
+[SPEAKER_01]: At that time, we didn't know what RF genes
+were.
+[SPEAKER_01]: So what Stefan did was an amazing effort
+to try to identify that RF gene in
+[SPEAKER_01]: petunia, which is our model system.
+[SPEAKER_01]: At the time, there was no genome for
+petunia.
+[SPEAKER_01]: There was no high throughput sequencing.
+[SPEAKER_01]: There were almost no genetic resources.
+[SPEAKER_01]: So Stefan had to develop those all from
+scratch, including a buyback library,
+[SPEAKER_01]: all the markers.
+[SPEAKER_01]: And after an effort that took three
+successive two-year USDA grants,
+[SPEAKER_01]: he was able to figure out what the RF gene
+encoded.
+[SPEAKER_01]: He found that it encoded a
+pentatrichopeptide repeat protein.
+[SPEAKER_01]: This was the founding member of this
+protein family for these restorers.
+[SPEAKER_01]: And it's now known that most restore genes
+in plants are so-called PPR proteins.
+[SPEAKER_01]: You're going to be hearing more about them
+in today's seminar.
+[SPEAKER_01]: Because in organelles, it's a small world.
+[SPEAKER_01]: But these proteins are now known to be a
+large family when they bind proteins that
+[SPEAKER_01]: control organelle gene expression.
+[SPEAKER_01]: And this protein turns off the expression
+of that toxic gene and that toxic protein.
+[SPEAKER_01]: So Stefan then moved from working on this
+petunia RF project to working on RNA
+[SPEAKER_01]: editing.
+[SPEAKER_01]: And that's what he's going to describe
+today.
+[SPEAKER_01]: Stefan got his bachelor's degree in
+biochemistry at the University of Science
+[SPEAKER_01]: and Technology in Montpellier,
+France, and an MS degree in agronomic
+[SPEAKER_01]: science at the agronomy school in
+Toulouse, and then a PhD in molecular
+[SPEAKER_01]: genetics at Université Claude-Bernard-Leon
+in France.
+[SPEAKER_01]: As I mentioned, he came to Tanksley's lab
+first, then my lab.
+[SPEAKER_01]: And he's recently been promoted to be a
+research scientist in the Department of
+[SPEAKER_01]: Molecular Biology and Genetics.
+[SPEAKER_00]: Thanks, Maureen, for this very nice
+introduction.
+[SPEAKER_00]: OK, now I have my little tool.
+[SPEAKER_00]: The show can start.
+[SPEAKER_00]: So I'm going to tell you today about
+unraveling the complexity of plant RNA
+[SPEAKER_00]: editing machinery.
+[SPEAKER_00]: And in the first slide, I just an overview
+of my talk with a little background about
+[SPEAKER_00]: what plant RNA editing is, and then how we
+identify some of the components of this
+[SPEAKER_00]: plant's editosome, which is the molecular
+machinery responsible for this
+[SPEAKER_00]: modification.
+[SPEAKER_00]: And we use the three different approach,
+genetics, biochemistry approach,
+[SPEAKER_00]: and then what I call homology.
+[SPEAKER_00]: And I will illustrate what I mean by that
+during the talk.
+[SPEAKER_00]: And in the last part of my talk,
+I'll tell you about new editing factors,
+[SPEAKER_00]: which have not been published yet,
+and the future direction that I want to
+[SPEAKER_00]: take my research on.
+[SPEAKER_00]: Oh, it's not because I'm not using the
+right one.
+[SPEAKER_00]: OK.
+[SPEAKER_00]: So RNA editing is a common theme.
+[SPEAKER_00]: It's one type of RNA processing.
+[SPEAKER_00]: And it occurs in many, many species under
+very different mechanisms.
+[SPEAKER_00]: So it happens in virus, trypanosome,
+squid, plant, which is going to be the
+[SPEAKER_00]: topic of my talk today, and even as a
+human being.
+[SPEAKER_00]: In a plant, it's a post transcriptional
+modification.
+[SPEAKER_00]: Some transcripts here, they are cited in
+being modified to a uredine.
+[SPEAKER_00]: And this is restricted to only the
+organelle genome.
+[SPEAKER_00]: So here, the arabidopsis is the plant
+model I'm working on.
+[SPEAKER_00]: And so in the chloroplast, about 40 Cs are
+modified to a uredine.
+[SPEAKER_00]: And in mitochondria, it's the same
+phenomenon, except it's much more
+[SPEAKER_00]: frequent.
+[SPEAKER_00]: Over 600 Cs are modified to a uredine in
+the mitochondrial genome.
+[SPEAKER_00]: And the reaction that is responsible for
+this is a deamination.
+[SPEAKER_00]: Where the amino acid here in the citidine
+is replaced by a keto group.
+[SPEAKER_00]: And thus, the citidine is modified to a
+uredine.
+[SPEAKER_00]: So very often, people are wondering why
+plants edit.
+[SPEAKER_00]: And so in plants, in the plant world,
+this is a corrective mechanism that allows
+[SPEAKER_00]: the plant to have a functional protein.
+[SPEAKER_00]: Because the amino acid after editing is
+actually encoded in a more conserved amino
+[SPEAKER_00]: acid.
+[SPEAKER_00]: And also, it can create start or stop
+codon.
+[SPEAKER_00]: And here, I give you an example of a
+plastic transcript and the HD,
+[SPEAKER_00]: where the start codon in the ACG.
+[SPEAKER_00]: So it's not a start codon.
+[SPEAKER_00]: But upon editing, the C is modified to a
+uredine.
+[SPEAKER_00]: And thus, a start codon is created.
+[SPEAKER_00]: And that allows, of course, the protein to
+be translated.
+[SPEAKER_00]: So this is an important mechanism for
+plant development.
+[SPEAKER_00]: Because no editing or start codon will
+start codon, no protein.
+[SPEAKER_00]: And so the loss of editing really results
+in many different and various phenotypes,
+[SPEAKER_00]: depending on where it occurs.
+[SPEAKER_00]: So here in this example, this is an
+editing mutant, which is unable to edit a
+[SPEAKER_00]: specific C on the transcript that encodes
+the plastic RNA polymerase.
+[SPEAKER_00]: And as a result, this mutant, you can see,
+is virulent and is not autotroph and has
+[SPEAKER_00]: to be on a sucrose medium.
+[SPEAKER_00]: But in our favorite mutant in the lab,
+so this mutant plant is unable to edit a
+[SPEAKER_00]: specific C on the ACG plastic transcript.
+[SPEAKER_00]: And you can see that there's no abuse
+phenotype associated with this defect in
+[SPEAKER_00]: editing compared to the wild type.
+[SPEAKER_00]: And here, I give another example.
+[SPEAKER_00]: And this is a mitochondrial mutant in
+editing.
+[SPEAKER_00]: So this little plant is unable to edit two
+Cs on transcript that encodes a small
+[SPEAKER_00]: ribosomal protein.
+[SPEAKER_00]: And as a result, there's a translational
+defect.
+[SPEAKER_00]: And so this plant shows, obviously,
+a slow-growth phenotype.
+[SPEAKER_00]: And then when the defect in editing occurs
+in very important position in the
+[SPEAKER_00]: essential gene, it's embryo lethal.
+[SPEAKER_00]: The plant is not able to make it.
+[SPEAKER_00]: So I told you in the introduction that not
+all the Cs are edited to uredine.
+[SPEAKER_00]: There's specificity.
+[SPEAKER_00]: Only 40 Cs are edited in the plastic and
+around 600.
+[SPEAKER_00]: So definitely not all the Cs are edited.
+[SPEAKER_00]: And so this specificity is really
+dependent upon two elements.
+[SPEAKER_00]: First, there's a C element, which is a
+small ribonucleotide sequence,
+[SPEAKER_00]: which is upstream of the Cs to be edited.
+[SPEAKER_00]: And so in this little figure, I show that
+these Cs don't have these C elements,
+[SPEAKER_00]: so they won't be edited.
+[SPEAKER_00]: These C possess these C elements.
+[SPEAKER_00]: And so it will be modified to a uredine.
+[SPEAKER_00]: But that's only a part of the equation.
+[SPEAKER_00]: The other, obviously, is a trans factor
+that's going to recognize the C element,
+[SPEAKER_00]: binds to the C element, and then process
+the C and modify it to a uredine.
+[SPEAKER_00]: And so in this complicated slide that was
+done some time ago by a postdoc in the
+[SPEAKER_00]: lab, Charles, this slide showed that this
+trans factor that we call plant editosome
+[SPEAKER_00]: is actually a small protein complex.
+[SPEAKER_00]: So what Charles did, he extracts protein
+from chloroplast and then size
+[SPEAKER_00]: fractionated them on the size exclusion
+chromatography.
+[SPEAKER_00]: And so this is all the fraction from the
+big one to the small one.
+[SPEAKER_00]: And then he assay each fraction for
+editing activity.
+[SPEAKER_00]: And so I don't want to go into detail into
+the assay.
+[SPEAKER_00]: It just, for you to understand,
+is that these bands, the more intense
+[SPEAKER_00]: these bands and the more active for
+editing is the fraction.
+[SPEAKER_00]: And so this band, the number 13,
+is where the band is the most intense.
+[SPEAKER_00]: Here is just a quantification of this
+band.
+[SPEAKER_00]: And this band, again, is comprised between
+200 and 400 kilodalton, thus demonstrating
+[SPEAKER_00]: that this plant editosome is a small
+protein complex.
+[SPEAKER_00]: And so the game in the lab was trying to
+find the components of this plant
+[SPEAKER_00]: editosome.
+[SPEAKER_00]: And because I'm a geneticist, at that time
+I was working on things.
+[SPEAKER_00]: On CMS, but I also developed this as a
+side project.
+[SPEAKER_00]: And these are different assayations of
+Arabidopsis, short from above.
+[SPEAKER_00]: And the point of this slide is just to
+show you how diverse these plants are in
+[SPEAKER_00]: the size and morphology of their rosette
+leaves.
+[SPEAKER_00]: And so looking at this plant, I thought
+that maybe also they were differing in the
+[SPEAKER_00]: way they edit their seeds.
+[SPEAKER_00]: And actually, that was a good guess.
+[SPEAKER_00]: Otherwise, I won't talk about it.
+[SPEAKER_00]: And so with a previous, that was years
+ago, over 10 years ago, with a postdoc in
+[SPEAKER_00]: the lab, Anne-Laure Chatenier,
+we studied this particular transcript,
+[SPEAKER_00]: CCB206, which is called also CCNB.
+[SPEAKER_00]: And we were interested and we focused on
+this transcript because it's the
+[SPEAKER_00]: transcript that possessed the highest
+number of edited seeds, that's about 40.
+[SPEAKER_00]: So in one experiment, we could potentially
+look for a difference between these two
+[SPEAKER_00]: widely used assayations, Landsberg and
+Columbia, at 40 position along the
+[SPEAKER_00]: transcript.
+[SPEAKER_00]: And here is an electrophoretogram.
+[SPEAKER_00]: And you can see that this position,
+the Columbia, is more edited than the
+[SPEAKER_00]: Erechta because the T peak is higher in
+Columbia than it is in the Landsberg
+[SPEAKER_00]: Erechta.
+[SPEAKER_00]: And once you have a difference in parental
+assayation, that's almost the end of the
+[SPEAKER_00]: story, not really, but in Arabidopsis
+because then you can use many genetic
+[SPEAKER_00]: resources.
+[SPEAKER_00]: Other people have crossed these two,
+these two guys.
+[SPEAKER_00]: And so you can use the progeny to study
+the segregation of these differential
+[SPEAKER_00]: extent in the progeny.
+[SPEAKER_00]: And that's what we did several times.
+[SPEAKER_00]: And here, I'll just show you an example.
+[SPEAKER_00]: So we found that one of the gene
+controlling this differential editing
+[SPEAKER_00]: extent was actually in this area.
+[SPEAKER_00]: Which is on chromosome two.
+[SPEAKER_00]: And with Walter Knight, who was an
+undergrad doing honor thesis with me.
+[SPEAKER_00]: What Walter did, he screened many,
+many hundreds of progeny coming from the
+[SPEAKER_00]: cross between Landsberg and Columbia.
+[SPEAKER_00]: And these are these progeny, these plants.
+[SPEAKER_00]: And they are recombinant because they have
+inherited part of their genome from,
+[SPEAKER_00]: I'm going to try so to shake, from
+Landsberg in blue and part from Columbia
+[SPEAKER_00]: in red.
+[SPEAKER_00]: And then what Walter did, he assay the
+editing extent of all these progeny,
+[SPEAKER_00]: these recombinant plants.
+[SPEAKER_00]: And so again, if they were edited like
+Columbia, they were red.
+[SPEAKER_00]: Like Erechta, blue.
+[SPEAKER_00]: And then it's an easy regression of the
+phenotype and the genotype.
+[SPEAKER_00]: You just have to look at matching colors.
+[SPEAKER_00]: And the matching colors are just between
+these two recombination points.
+[SPEAKER_00]: And there, there was only one gene that we
+call REM1 for required for efficiency of
+[SPEAKER_00]: mitochondrial editing.
+[SPEAKER_00]: So we were pretty convinced because there
+was only one gene that was the gene.
+[SPEAKER_00]: And this gene, again, is a PPR,
+as Maureen told you in the introduction.
+[SPEAKER_00]: The restoration of fertility is also a
+PPR.
+[SPEAKER_00]: PPR because pentatrichopeptid repeat,
+that's the only term I'm going to tell it.
+[SPEAKER_00]: It's composed by repeat, which are 35
+amino acid long.
+[SPEAKER_00]: And in addition, this protein contains
+some extra motif of the C-terminus.
+[SPEAKER_00]: And so in order to demonstrate that this
+gene was really, this protein was an
+[SPEAKER_00]: editing factor, we looked at a mutant,
+a tDNA insertional mutant, and we found
+[SPEAKER_00]: one.
+[SPEAKER_00]: And then we compared the level of editing
+extent in the homozygous mutant,
+[SPEAKER_00]: which are the tDNA, which disrupt the
+expression of this gene, and the
+[SPEAKER_00]: homozygous wild type.
+[SPEAKER_00]: And yes, there was a significant
+difference in the level of editing extent
+[SPEAKER_00]: for this particular site.
+[SPEAKER_00]: Thus, demonstrating that REM1 was really
+the editing factor recognizing this
+[SPEAKER_00]: mitochondrial site.
+[SPEAKER_00]: So that illustrates the genetic approach,
+which was pretty cumbersome.
+[SPEAKER_00]: So here, so we're going to build up the
+model as a puzzle.
+[SPEAKER_00]: So these PPR protein, and I don't have
+time to show you the evidence,
+[SPEAKER_00]: but they are the one that are the
+recognition factor.
+[SPEAKER_00]: They recognize the C element and bind to
+it.
+[SPEAKER_00]: And they are found both in the chloroplast
+and in the mitochondrial site.
+[SPEAKER_00]: But they are other component, because I
+told you at the very beginning that we
+[SPEAKER_00]: knew that this editosome is about 200 and
+400 kilodalton.
+[SPEAKER_00]: And the size of the PPR is way below that.
+[SPEAKER_00]: So we knew that there were other
+components.
+[SPEAKER_00]: And so the way we decided to chase these
+components, and that's a work that I did
+[SPEAKER_00]: in collaboration with Wade Heller,
+who used to be a BCMB student in the lab.
+[SPEAKER_00]: So what Wade did, he put a flag on one of
+our favorite PPR recognition factor called
+[SPEAKER_00]: REM1.
+[SPEAKER_00]: And then using antibody against this REM1,
+he was able to immunoprecipitate the whole
+[SPEAKER_00]: complex.
+[SPEAKER_00]: And then with the collaboration with the
+Van Wink lab, we were able to identify one
+[SPEAKER_00]: of the components of this complex as being
+REAP1 for RNA editing factor interacting
+[SPEAKER_00]: protein 1.
+[SPEAKER_00]: And so because this REAP1 was a member of
+this complex, obviously we wanted to know
+[SPEAKER_00]: whether it was also an editing factor.
+[SPEAKER_00]: And so as usual, we looked at tDNA
+mutants, and we found two.
+[SPEAKER_00]: One which was in this entron.
+[SPEAKER_00]: And as I told you before, obviously this
+protein, this gene is an essential gene
+[SPEAKER_00]: because we were unable to recover
+homozygous mutants for this mutant.
+[SPEAKER_00]: But luckily for us, we had also tDNA
+inserted in the promoter, and we were able
+[SPEAKER_00]: to recover homozygous mutants.
+[SPEAKER_00]: And you can see that this plant is very
+effective in its development.
+[SPEAKER_00]: And then by using bulk sequencing,
+we analyzed all the editome, meaning all
+[SPEAKER_00]: the edited Cs in the chloroplast,
+the plastid, and in the mitochondria.
+[SPEAKER_00]: And what we found was that this mutant was
+affected in about a third of these plastid
+[SPEAKER_00]: editing site, meaning that the level of
+editing in the mutant for this site was
+[SPEAKER_00]: much reduced compared to the wild type.
+[SPEAKER_00]: But more importantly, about 3 quarter of
+the site in the mitochondria were
+[SPEAKER_00]: affected.
+[SPEAKER_00]: And about 100 was really the level of
+editing was not even detectable by bulk
+[SPEAKER_00]: sequencing.
+[SPEAKER_00]: It was gone.
+[SPEAKER_00]: And that was a very exciting result
+because it was the first time that a
+[SPEAKER_00]: component of this plant editosome was not
+a PPR protein.
+[SPEAKER_00]: RIP1 is not a PPR protein.
+[SPEAKER_00]: So then we wanted to know because the PPR,
+I told you, binds, recognize and bind the
+[SPEAKER_00]: RNA.
+[SPEAKER_00]: So we were wondering how the specificity
+work for RIP1 towards its targets because
+[SPEAKER_00]: it doesn't affect all the Cs, many Cs,
+but not all of them.
+[SPEAKER_00]: And that was a work that was done by Tao.
+[SPEAKER_00]: Tao Sun was a previous plant bio grad
+student working in the lab.
+[SPEAKER_00]: And what Tao showed by using East2Hybrid
+that actually the recognition of RIP1 for
+[SPEAKER_00]: its target was mediated through its
+interaction with the recognition factor.
+[SPEAKER_00]: And so in order to make you understand
+what I just said, I have this little
+[SPEAKER_00]: animation where here you can see that in
+the chloroplast Tao showed that RIP1
+[SPEAKER_00]: interacts with RIP1, it also interacts
+with another recognition factor called
+[SPEAKER_00]: CR28.
+[SPEAKER_00]: I'm not responsible for all this name.
+[SPEAKER_00]: But then RIP1 doesn't interact with CR21.
+[SPEAKER_00]: And so in the mutant, RIP1 is not there
+anymore or is very reduced.
+[SPEAKER_00]: And then only the sites for which RIP1
+interacts with the recognition factor are
+[SPEAKER_00]: affected in the mutant.
+[SPEAKER_00]: The sites for which RIP1 doesn't interact
+with the recognition factor don't see
+[SPEAKER_00]: their editing level affected in the
+mutant.
+[SPEAKER_00]: And what's true in the chloroplast is true
+also in the plastid.
+[SPEAKER_00]: And Tao showed also that RIP1 was able to
+homodimerize by East2Hybrid.
+[SPEAKER_00]: So that's all the story that the second
+part was to illustrate the biochemical
+[SPEAKER_00]: approach in order to identify components
+of the plant's editosome.
+[SPEAKER_00]: And now I'm going to tell you about the
+homology.
+[SPEAKER_00]: And what I mean by that is that RIP1 is a
+member of a small family of protein in
+[SPEAKER_00]: Arabidopsis.
+[SPEAKER_00]: There are nine members.
+[SPEAKER_00]: So RIP1, which we found was involved in
+mitochondria and plastid editing.
+[SPEAKER_00]: And there's all these factors.
+[SPEAKER_00]: And I identify them by using software.
+[SPEAKER_00]: And this block, we call it the RIP motif.
+[SPEAKER_00]: It's just a homology block.
+[SPEAKER_00]: We don't know really what the function.
+[SPEAKER_00]: Obviously, they are important because they
+are conserved in the RIP family.
+[SPEAKER_00]: And then, of course, we were wondering,
+are any of these other proteins also
+[SPEAKER_00]: editing factors?
+[SPEAKER_00]: And this time, instead of using bulk
+sequencing, I developed a method based on
+[SPEAKER_00]: next generation sequencing to analyze
+mutant or silent tissue from this other
+[SPEAKER_00]: gene.
+[SPEAKER_00]: And so briefly, it's a very easy method
+where I use a specific primer for all the
+[SPEAKER_00]: organelle genes.
+[SPEAKER_00]: So is the RNA.
+[SPEAKER_00]: And some RNA are edited more than other.
+[SPEAKER_00]: And then I do RT-PCR.
+[SPEAKER_00]: And then these things are cDNA,
+whether you would transform in T.
+[SPEAKER_00]: And then I shear the cDNA and use these
+shear fragments to build up Illumina
+[SPEAKER_00]: library.
+[SPEAKER_00]: And then I just align these reads on the
+genome.
+[SPEAKER_00]: And then I just count, really,
+the number of red being T or blue being C.
+[SPEAKER_00]: And the ratio of red to blue gives me a
+very accurate measure of the level of
+[SPEAKER_00]: editing.
+[SPEAKER_00]: And that's a collaboration that I did with
+Robert Bukowski, who's a bioinformatician
+[SPEAKER_00]: here.
+[SPEAKER_00]: So I used this method to analyze the
+mutant and the silent tissue in this other
+[SPEAKER_00]: member.
+[SPEAKER_00]: And I found that RIP2 and RIP9 were
+plastic editing factor, while RIP3 and
+[SPEAKER_00]: RIP8 were mitochondrial editing factor.
+[SPEAKER_00]: But also, using this motif to integrate
+the database, I found that there was this
+[SPEAKER_00]: weird protein that we called OM1 for
+organelle RNA recognition motif containing
+[SPEAKER_00]: protein 1.
+[SPEAKER_00]: And it's a weird one because it has a
+duplicated RIP domain, which is also
+[SPEAKER_00]: truncated.
+[SPEAKER_00]: You can see that some of the blocks are
+missing.
+[SPEAKER_00]: And in addition, it has a motif at the c
+terminus, which is called an RN for RNA
+[SPEAKER_00]: recognition motif.
+[SPEAKER_00]: And so we were, of course, interested to
+know whether this OM1 also was an editing
+[SPEAKER_00]: factor.
+[SPEAKER_00]: And so as usual, we looked at the tDNA
+mutant in the first exon.
+[SPEAKER_00]: And so you can see that this plant is
+really morphologically OK.
+[SPEAKER_00]: But when we surveyed the editum,
+we found that the mitochondrial editum was
+[SPEAKER_00]: not affected.
+[SPEAKER_00]: But the platyletum was affected in this
+mutant.
+[SPEAKER_00]: And about 2 thirds of the editing site
+were reduced in the mutant, with 12 sites
+[SPEAKER_00]: which had a major loss of editing.
+[SPEAKER_00]: And again, we were interested.
+[SPEAKER_00]: So I told you, I don't know if you
+remember, but this protein here has two
+[SPEAKER_00]: parts, a RIP-RIP.
+[SPEAKER_00]: That's how we identified it.
+[SPEAKER_00]: And the RN.
+[SPEAKER_00]: And we were curious to know which part is
+important for the editing ability of this
+[SPEAKER_00]: protein.
+[SPEAKER_00]: And again, that's work that was done by
+Tao.
+[SPEAKER_00]: So here I show the 12 sites that are
+severely reduced in their editing stand in
+[SPEAKER_00]: the mutant.
+[SPEAKER_00]: So the blue bar is the level of editing in
+the wild type, but very high.
+[SPEAKER_00]: And in the mutant, very low.
+[SPEAKER_00]: And so what Tao did was to transiently
+transform protoplasm for the mutant,
+[SPEAKER_00]: first with the RIP-RIP domain.
+[SPEAKER_00]: And when he did that, nothing really
+happened.
+[SPEAKER_00]: And when he did the same experiment with
+the RN, he was able to complement most of
+[SPEAKER_00]: the site, at least partially.
+[SPEAKER_00]: And so that was the end to our surprise,
+actually, because we were expecting more
+[SPEAKER_00]: the RIP-RIP to be involved in editing.
+[SPEAKER_00]: Because that's how we identified this
+protein.
+[SPEAKER_00]: But actually, to our surprise,
+it's the RN part of this protein.
+[SPEAKER_00]: That was responsible for the editing
+ability of this protein.
+[SPEAKER_00]: And then, as for RIP-1, Tao, using these
+two hybrids, studied how this OM1 was
+[SPEAKER_00]: recognizing its target.
+[SPEAKER_00]: And it's the same story as for OM1.
+[SPEAKER_00]: The recognition is mediated through its
+interaction with a known recognition
+[SPEAKER_00]: factor, which are PPR.
+[SPEAKER_00]: And so again, in the mutant, when OM1 goes
+down, only the sites for which OM1
+[SPEAKER_00]: interacts with the PPR see their editing
+extent go down in the mutant, not this
+[SPEAKER_00]: one.
+[SPEAKER_00]: Because again, OM1 doesn't interact with
+rare one.
+[SPEAKER_00]: And also Tao showed that OM1 was
+interacting with other known editing
+[SPEAKER_00]: factor from the RIP family, RIP-1 and
+RIP-2.
+[SPEAKER_00]: So now, we just add other parts in the
+puzzle.
+[SPEAKER_00]: The RIP members, the OM1 for the
+chloroplast.
+[SPEAKER_00]: And if I put OM1 touching the RNA in this
+model, it's because with collaboration
+[SPEAKER_00]: with the Barkham lab, I've shown that this
+OM1 has some specificity for the RNA
+[SPEAKER_00]: target.
+[SPEAKER_00]: And this is a gel shift assay.
+[SPEAKER_00]: And you can see this is one of the targets
+of OM1.
+[SPEAKER_00]: And there's a nice shift compared to a
+non-target.
+[SPEAKER_00]: And this now, we have a new student,
+Andrew, in the lab, who's going to study
+[SPEAKER_00]: more deeply the recognition and the
+binding of OM1 for its RNA target.
+[SPEAKER_00]: OK.
+[SPEAKER_00]: So this is for the chloroplast.
+[SPEAKER_00]: What about the mito?
+[SPEAKER_00]: So again, the finding of this RN being
+involved in editing opened a new whole
+[SPEAKER_00]: area for us to explore, because the RN is
+a very frequent motif in the protein
+[SPEAKER_00]: world.
+[SPEAKER_00]: And in Arabidopsis, there's about 200
+proteins that contain this RN.
+[SPEAKER_00]: And so we could use brute force and test
+these 200 proteins.
+[SPEAKER_00]: That's too much work.
+[SPEAKER_00]: And so we're trying to be smart.
+[SPEAKER_00]: And what we did was a phylogenetic
+analysis based on the RN motif of all
+[SPEAKER_00]: these proteins in Arabidopsis.
+[SPEAKER_00]: So this RN motif is about 80 amino acids.
+[SPEAKER_00]: And what we observed was OM1, this new
+editing factor, was part of this specific
+[SPEAKER_00]: clade containing about 20 members.
+[SPEAKER_00]: And obviously, the question then was,
+are these also potential editing factors?
+[SPEAKER_00]: So we got a grant with Maureen that just
+ended up for which Maureen was the main PI
+[SPEAKER_00]: and was the co-PI.
+[SPEAKER_00]: But luckily for us, we just got a new
+grant for which now I'm the PI and Maureen
+[SPEAKER_00]: is the co-PI.
+[SPEAKER_00]: And so here, now I'm going to show you the
+work from Xiaowen, who was a grad student
+[SPEAKER_00]: in the lab and who just finished.
+[SPEAKER_00]: And so she studied this clade of OM
+protein.
+[SPEAKER_00]: And so that's another way to represent all
+these proteins.
+[SPEAKER_00]: So with the funding father is OM1.
+[SPEAKER_00]: So it has the RIP domain, this RM,
+and all the other protein which belong to
+[SPEAKER_00]: this clade.
+[SPEAKER_00]: And they do because the RM found in this
+other OM are very similar to the RM found
+[SPEAKER_00]: in OM1.
+[SPEAKER_00]: And so what Xiaowen shown during her PhD
+was that OM2, OM3, and OM4 were
+[SPEAKER_00]: mitochondrial editing factor.
+[SPEAKER_00]: And OM6 is a plastic editing factor.
+[SPEAKER_00]: And OM6 has not been published yet.
+[SPEAKER_00]: And I'll talk about that at the end of my
+talk.
+[SPEAKER_00]: And some of these other members also
+possess extra domain, glycine-rich domain.
+[SPEAKER_00]: So here, I'm just going to show you an
+example of Xiaowen work.
+[SPEAKER_00]: Again, same story.
+[SPEAKER_00]: How to demonstrate that OM3 was a
+mitochondrial editing factor.
+[SPEAKER_00]: She looked at the mutant.
+[SPEAKER_00]: And she got a mutant in this exon.
+[SPEAKER_00]: And then she compared the level of editing
+in mitochondrial site.
+[SPEAKER_00]: Actually, this OM3 is involved in the
+control of editing of 20% of the
+[SPEAKER_00]: mitochondrial site overall.
+[SPEAKER_00]: Over 100 sites.
+[SPEAKER_00]: But here, I'll just show only two.
+[SPEAKER_00]: So here is the level of editing extent in
+the wild type, in green, and in magenta,
+[SPEAKER_00]: in the mutant.
+[SPEAKER_00]: And you can see there's a very significant
+difference level of editing extent between
+[SPEAKER_00]: the wild type and the mutant.
+[SPEAKER_00]: And the same is true for this other site.
+[SPEAKER_00]: Then what Xiaowen did was to complement
+these mutants by putting functional OM3
+[SPEAKER_00]: under the control of 35% as promoter.
+[SPEAKER_00]: And you can see that she was able to
+restore the level of editing and increase
+[SPEAKER_00]: it very significantly when compared to the
+mutant.
+[SPEAKER_00]: The level of editing goes from around 40%
+for this site to about 85% to 90% in the
+[SPEAKER_00]: transgenic plant.
+[SPEAKER_00]: And then we were wondering, I told you
+that for OM1, what was important was the
+[SPEAKER_00]: RM motif and not the reprip.
+[SPEAKER_00]: And OM3 has two motif as the RM and the
+glycine-rich domain.
+[SPEAKER_00]: And then we, of course, were wondering
+whether it was the same story as for OM1,
+[SPEAKER_00]: whether it was the RM domain or the
+glycine-rich domain that was important for
+[SPEAKER_00]: the editing ability of this protein.
+[SPEAKER_00]: And so what Xiaowen did was to,
+again, so here's the mutant for a specific
+[SPEAKER_00]: site.
+[SPEAKER_00]: And it's low-edited, about 15%.
+[SPEAKER_00]: When Xiaowen put the whole full-length
+OM3, she's able to restore the editing
+[SPEAKER_00]: level to 45%.
+[SPEAKER_00]: And when she used only the RM,
+again, she's able to significantly
+[SPEAKER_00]: increase the level of editing extent.
+[SPEAKER_00]: Thus, again, demonstrating that what's
+important for the editing ability of this
+[SPEAKER_00]: protein is the RM motif.
+[SPEAKER_00]: OK.
+[SPEAKER_00]: And then, as usual, she was interested to
+know whether these new editing factors was
+[SPEAKER_00]: part of the editosome and was interacting
+with other non-editing factor.
+[SPEAKER_00]: And here, I'll just show you an example.
+[SPEAKER_00]: She used BiFC for B-molecular fluorescence
+complementation.
+[SPEAKER_00]: And so she put half a fluorophore on each
+part of the protein that she wants to
+[SPEAKER_00]: study the interaction on three,
+in this case, RIP1.
+[SPEAKER_00]: And if they interact, then it will bring
+the two parts close enough so that they
+[SPEAKER_00]: are able to fluoresce.
+[SPEAKER_00]: And so then she did that in Nicosiana.
+[SPEAKER_00]: And this is a negative control.
+[SPEAKER_00]: So these are, in red, are the
+autofluorescence from the chloroplast,
+[SPEAKER_00]: from the chlorophyll.
+[SPEAKER_00]: And here is a close-up.
+[SPEAKER_00]: You can see that this nice spot
+fluorescence when she did this experiment,
+[SPEAKER_00]: demonstrating that OM3 and RIP1 can
+interact in planta.
+[SPEAKER_00]: So now, what's true for a protein for
+chloroplast is true also for mitochondria.
+[SPEAKER_00]: So you have PPR, you have RIP,
+and you have also OM.
+[SPEAKER_00]: And then there's still an interrogation
+mark here, as you can see.
+[SPEAKER_00]: And that was a work done again by Tao.
+[SPEAKER_00]: He used the same strategy as Wade did.
+[SPEAKER_00]: But he put a flag on the OM1 and
+immunoprecipitated it.
+[SPEAKER_00]: And then, again, with a collaboration with
+the class van Wyk, we determined by mass
+[SPEAKER_00]: spectrometry that one of these proteins
+that was pulled down with OM1 was OZ1.
+[SPEAKER_00]: OZ1 for organelle zinc finger 1,
+because this protein contained a zinc
+[SPEAKER_00]: finger motif.
+[SPEAKER_00]: And because OZ1 was immunoprecipitated
+with OM1, again, we were wondering whether
+[SPEAKER_00]: OZ1 was an editing factor.
+[SPEAKER_00]: And as usual, we looked at the tDNA
+insertional mutant.
+[SPEAKER_00]: And this time, unlike OM1, this mutant is
+not very happy.
+[SPEAKER_00]: That's the mutant here.
+[SPEAKER_00]: So it's albino, it's small, and it has to
+be grown on sucrose medium.
+[SPEAKER_00]: And when we looked at the abitum of this
+mutant, what we found is that the majority
+[SPEAKER_00]: of the plastid editing site were affected
+in this mutant.
+[SPEAKER_00]: And because this OZ1 was identified
+through its interaction with OM1,
+[SPEAKER_00]: we were wondering whether there was
+overlap in the site under the control of
+[SPEAKER_00]: these two editing factor.
+[SPEAKER_00]: And yes, actually the majority of the
+site, 21, see their editing sense severely
+[SPEAKER_00]: affected in both the OM1 and the OZ1
+mutant.
+[SPEAKER_00]: So OZ1 belongs to a small family of
+protein.
+[SPEAKER_00]: There's four members.
+[SPEAKER_00]: And again, this is a little diagram of how
+they look like with the homology block.
+[SPEAKER_00]: And the only really known motif is,
+as I told before, is a zinc finger motif
+[SPEAKER_00]: in this light blue turquoise.
+[SPEAKER_00]: OZ1 possesses two of these zinc finger
+motif.
+[SPEAKER_00]: Sorry, OZ1.
+[SPEAKER_00]: OZ2 has two.
+[SPEAKER_00]: OZ3 has three.
+[SPEAKER_00]: And OZ4 has four.
+[SPEAKER_00]: And then, of course, the obvious question
+to ask, because it works for REAP,
+[SPEAKER_00]: it works for OM, are these other members
+also editing factors?
+[SPEAKER_00]: So now, I hope I convinced you that the
+plant's editosome are complex protein,
+[SPEAKER_00]: small but complex, which contain several
+protein.
+[SPEAKER_00]: And that also, they contain the same
+protein in both the mitochondrial
+[SPEAKER_00]: editosome and the chloroplast.
+[SPEAKER_00]: PPR, which are the recognition factor that
+bind to the target.
+[SPEAKER_00]: REAP, OM, and OZ.
+[SPEAKER_00]: OZ has been just demonstrated in the
+chloroplast editosome, not yet.
+[SPEAKER_00]: In the mitochondria.
+[SPEAKER_00]: OK.
+[SPEAKER_00]: So now, in the last part of my talk,
+I'm going to tell you about a new plastic
+[SPEAKER_00]: editing factor, OM6.
+[SPEAKER_00]: Yes.
+[SPEAKER_00]: And OM6, actually, from the start,
+we had a strong presumption that this was
+[SPEAKER_00]: also an editing factor, because the RM
+found in this protein is the most similar
+[SPEAKER_00]: to OM1.
+[SPEAKER_00]: So again, what we did was to study editing
+mutant, sorry, mutant, tDNA, insertional
+[SPEAKER_00]: mutant.
+[SPEAKER_00]: And when we used STSPCR-Seq, this next
+generation-based approach to study the
+[SPEAKER_00]: editome of these mutants, we found that
+there was no mitochondrial editing defect,
+[SPEAKER_00]: but there was plastic editing defect.
+[SPEAKER_00]: So again, here in green is a level of
+editing extent in the wild type,
+[SPEAKER_00]: in magenta, in the mutant for this
+particular protein, OM6.
+[SPEAKER_00]: And you can see that there's a strong
+reduction of editing extent for this site,
+[SPEAKER_00]: ACCD.
+[SPEAKER_00]: From 100%, it goes to 30%.
+[SPEAKER_00]: Even more pronounced for this site,
+PSBF77, for which the editing goes from
+[SPEAKER_00]: 100% to 5%.
+[SPEAKER_00]: And here, just to show you that it's not
+affecting this other site, for which
+[SPEAKER_00]: there's the same level of editing extent
+in the wild type and in the mutant.
+[SPEAKER_00]: And it is another way to represent the
+reduction.
+[SPEAKER_00]: It's the difference reported to the value
+of the wild type.
+[SPEAKER_00]: So you can see that the site that
+experienced the most drastic reduction is
+[SPEAKER_00]: this site on PSBF.
+[SPEAKER_00]: And these mutants show a slow-growth
+phenotype and also a defect in their
+[SPEAKER_00]: photosynthetic efficiency.
+[SPEAKER_00]: And so as we were working on these
+mutants, actually, we found out that
+[SPEAKER_00]: another group was working on this mutant,
+Yan Lu.
+[SPEAKER_00]: But she's a photosynthetic person,
+so she did not use the same screen to
+[SPEAKER_00]: identify this mutant.
+[SPEAKER_00]: And that's her work.
+[SPEAKER_00]: Basically, this weird fluorescent shows
+that this mutant is affected in this
+[SPEAKER_00]: photosynthetic efficiency.
+[SPEAKER_00]: Again, Xiaowen showed that OM6 was part of
+this plastic editosome.
+[SPEAKER_00]: By studying its interaction with
+non-editing factors by FC.
+[SPEAKER_00]: And here, I just show a few examples of
+OM6 interacting with RIP1 here and there,
+[SPEAKER_00]: or with OZ1 here and there.
+[SPEAKER_00]: And so I told you that mostly there's two
+sites which are affected in the mutant,
+[SPEAKER_00]: ICCD and PSBF.
+[SPEAKER_00]: And there's a phenotype, too.
+[SPEAKER_00]: And so the question was, which site is
+responsible for the phenotype?
+[SPEAKER_00]: And we had strong presumption that it was
+the PSBF defect in editing because we had
+[SPEAKER_00]: a mutant in the lab which is affected in
+the ICCD.
+[SPEAKER_00]: And I show you a picture at the very
+beginning of the talk.
+[SPEAKER_00]: And there's no phenotype associated with
+these mutants.
+[SPEAKER_00]: So in order to demonstrate that the PSBF
+defect in editing was responsible for this
+[SPEAKER_00]: phenotype, small growth, and
+photosynthetic deficiency, what Yan did
+[SPEAKER_00]: was a pretty cool experiment.
+[SPEAKER_00]: She took PSBF with a T genomically
+encoded.
+[SPEAKER_00]: And she transformed a plant, the mutant.
+[SPEAKER_00]: And so you can see here, it's translated.
+[SPEAKER_00]: And here in green is a transit peptide
+that allows the protein to go in the
+[SPEAKER_00]: chloroplast.
+[SPEAKER_00]: And again, this red meaning that this
+protein is already edited.
+[SPEAKER_00]: And then by doing that, she was able to at
+least partially complement the defect.
+[SPEAKER_00]: The morphological defect, where you can
+see you have to trust me.
+[SPEAKER_00]: But even though these transgenic plants
+are not at the level of the wild type,
+[SPEAKER_00]: they are much better and much bigger than
+the mutant.
+[SPEAKER_00]: And also their photosynthetic efficiency,
+even though it's not at the level of the
+[SPEAKER_00]: wild type, is much better than the mutant.
+[SPEAKER_00]: And so in other words, demonstrating that
+the defect of PSBF editing is the one
+[SPEAKER_00]: responsible for the morphological defect.
+[SPEAKER_00]: We observe in these mutants.
+[SPEAKER_00]: So in summary, I hope that today I
+convince you that the plant elitosome is
+[SPEAKER_00]: complex and contain at least four protein
+families for the plastid.
+[SPEAKER_00]: So the PPR, which are the recognition.
+[SPEAKER_00]: Sorry.
+[SPEAKER_00]: The PPR, the REAPs, which are also called
+Morse, the Orms, and the Oz.
+[SPEAKER_00]: But only three protein families have been
+identified so far in the mitochondria.
+[SPEAKER_00]: Editosome, and they are the same.
+[SPEAKER_00]: The PPR, the morph, or REAPs, and the
+Orms.
+[SPEAKER_00]: Also, the plant elitosome is really
+diverse in its composition.
+[SPEAKER_00]: Not only in the PPR that they contain,
+because the PPR differ for every site,
+[SPEAKER_00]: because they are really the recognition
+factor.
+[SPEAKER_00]: But also in regards to these other
+components, the Orm or the REAP.
+[SPEAKER_00]: And for instance, so today I told you
+about two Orms, the Orm 1 and Orm 6,
+[SPEAKER_00]: which are plastidizing factor.
+[SPEAKER_00]: And the sites under the control are
+different.
+[SPEAKER_00]: The two sites mostly affected by the Orm 6
+mutant are not affected by the Orm 1
+[SPEAKER_00]: mutant.
+[SPEAKER_00]: So in other words, they are elitosome,
+plastid elitosome that contain Orm 1,
+[SPEAKER_00]: and other that contain Orm 6, depending on
+which side they're going to modify.
+[SPEAKER_00]: And Orm 6 is a unusual Orm protein,
+because it really recognize a very small
+[SPEAKER_00]: number of targets, only really two,
+mostly two.
+[SPEAKER_00]: When all the other Orms be plastid,
+or mitochondria, or really recognize and
+[SPEAKER_00]: affect many, many, many sites.
+[SPEAKER_01]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_01]: Thank you.
+[SPEAKER_01]: Thank you.
+[SPEAKER_01]: Thank you.
+Thank you.

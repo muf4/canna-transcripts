@@ -1,0 +1,1194 @@
+[SPEAKER_00]: This is a production of Cornell
+University.
+[SPEAKER_01]: Thank you, Vinay, for the introduction.
+[SPEAKER_01]: Thank you, Franny, for the invitation.
+[SPEAKER_01]: And indeed, I'm very grateful to Vinay and
+Alan Lacksoe, who have given me a very
+[SPEAKER_01]: interesting context to think about for
+these last five years, grounded some of
+[SPEAKER_01]: our naive ideas about plant physiology and
+its relation to engineering.
+[SPEAKER_01]: And so it's nice to be here and see more
+of the faces of horticulture at Cornell.
+[SPEAKER_01]: So I'm going to tell you about models of
+transport processes in xylem and phloem.
+[SPEAKER_01]: And as I wrote in my abstract,
+these are both mathematical models and
+[SPEAKER_01]: physical models.
+[SPEAKER_01]: No plants, though.
+[SPEAKER_01]: No plant models.
+[SPEAKER_01]: But we'll try to make connections to what
+is observed in plants.
+[SPEAKER_01]: And I have questions for you about what
+might or might not be observable and what
+[SPEAKER_01]: might be interesting questions to pose
+with these models.
+[SPEAKER_01]: And so this is the work of a large number
+of people in the group, a former postdoc,
+[SPEAKER_01]: Dave Sessoms, Vinay, who's about to finish
+and go off to start his own lab,
+[SPEAKER_01]: Olivier Vincent, who's a current postdoc,
+Michael Santiago here in the audience,
+[SPEAKER_01]: a PhD student in mechanical engineering,
+Eric Huber, another PhD in mechanical
+[SPEAKER_01]: engineering, and Jean Comptet,
+who was a summer student who worked with
+[SPEAKER_01]: me and with Bob Turgeon on the first
+example I'm going to speak to you about.
+[SPEAKER_01]: So first, I want to say that we were
+inspired by plants.
+[SPEAKER_01]: And I was just telling Neil that as you
+look at a plant, you actually see an
+[SPEAKER_01]: engineering system.
+[SPEAKER_01]: You see the engineering processes.
+[SPEAKER_01]: There's quite a lot of translation that
+has to be done.
+[SPEAKER_01]: But once that translation is done,
+a lot of the processes from the molecular
+[SPEAKER_01]: through the macroscopic map onto chemical
+engineering in particular.
+[SPEAKER_01]: And so we've been interested in
+transpiration and the material science of
+[SPEAKER_01]: what makes transpiration possible.
+[SPEAKER_01]: I'm going to speak to you very briefly
+about a question about regulating flow in
+[SPEAKER_01]: the xylem and in more detail about sugar
+translocation, the flow and loading
+[SPEAKER_01]: process, and then show you a physical and
+mathematical model of how failure occurs
+[SPEAKER_01]: and how failure is coupled within the
+complex architecture of the xylem.
+[SPEAKER_01]: And then point to, for example,
+recovery as an open challenge for us and
+[SPEAKER_01]: for plant science to consider.
+[SPEAKER_01]: So how do I get money for this?
+[SPEAKER_01]: I guess it's important.
+[SPEAKER_01]: Well, in fact, plants do things that we
+don't do or we don't do well.
+[SPEAKER_01]: And so for example, the transpiration
+process, if it could be coupled into the
+[SPEAKER_01]: right materials, could be the basis for a
+heat transfer technology that would be
+[SPEAKER_01]: extendable out to building scale,
+vehicle scale, and could be very valuable.
+[SPEAKER_01]: And the Air Force pays us to look at
+questions about how to use liquids under
+[SPEAKER_01]: tension in the context of heat transfer.
+[SPEAKER_01]: You've heard from Vinay and from Alan
+Lacso about a microtechnology that could
+[SPEAKER_01]: be a basis for communicating with plants.
+[SPEAKER_01]: By measuring water potential, by
+controlling liquids in the way that plants
+[SPEAKER_01]: control it.
+[SPEAKER_01]: A topic that we're just beginning with a
+new student is the extraordinary process
+[SPEAKER_01]: that plants use to live with their roots
+outside of the water table to be able to
+[SPEAKER_01]: extract the pure liquid water that they
+need to live from subsaturated soils.
+[SPEAKER_01]: That's a kind of truly magical seeming
+process from an engineer's point of view,
+[SPEAKER_01]: a type of reverse reverse osmosis that we
+simply don't do.
+[SPEAKER_01]: And it would be very nice if we could.
+[SPEAKER_01]: So I'm going to tell you today,
+though, about our thinking about plant
+[SPEAKER_01]: processes.
+[SPEAKER_01]: And I'll try to keep it in the plant
+context as much as possible.
+[SPEAKER_01]: And in particular, I'm going to talk first
+about down, about getting the loading
+[SPEAKER_01]: process.
+[SPEAKER_01]: And this is a topic that I pursued with
+Bob Turgeon.
+[SPEAKER_01]: And you'll see that he has a very strong
+imprint on this field and on our
+[SPEAKER_01]: particular question.
+[SPEAKER_01]: And then very briefly about questions of
+local control of permeability that may be
+[SPEAKER_01]: part of manipulating flow within the
+xylem.
+[SPEAKER_01]: And finally, this question of cavitation
+in mimics of xylem, the segmented
+[SPEAKER_01]: structure of the xylem tissue.
+[SPEAKER_01]: So I'm going to jump right into flow and
+loading and give you an overview here with
+[SPEAKER_01]: a cartoon from Bob.
+[SPEAKER_01]: A publication a few years ago of Bob that
+reviews the ideas of some plastic passive
+[SPEAKER_01]: loading, where it's a purely diffusive
+process with continuous synthesis,
+[SPEAKER_01]: generates a gradient in concentration,
+diffusing into an intermediary cell in the
+[SPEAKER_01]: sieve elements, and pulling in water and
+driving flow.
+[SPEAKER_01]: A version, a kind of hybrid active passive
+process, which is quite intriguing that I
+[SPEAKER_01]: believe is Bob's invention.
+[SPEAKER_01]: His baby is a trapping mechanism where
+biological energy is expended in the
+[SPEAKER_01]: middle of a passive process to presumably
+increase the gradient in sucrose
+[SPEAKER_01]: concentration and improve translocation
+rates, for example.
+[SPEAKER_01]: And finally, I think the most familiar
+active process where you have ATPase
+[SPEAKER_01]: actually pumping, again, directly using
+the chemical energy to invert this
+[SPEAKER_01]: gradient and drive translocation.
+[SPEAKER_01]: And so this is one of the signatures that
+Bob and others use of something other than
+[SPEAKER_01]: passive, is that a passive species is
+obliged to bring sucrose concentration,
+[SPEAKER_01]: or photosynthate more generally,
+concentrations high everywhere in the
+[SPEAKER_01]: mesophyll in order to drive this
+concentration gradient, to drive passive
+[SPEAKER_01]: diffusion.
+[SPEAKER_01]: Whereas these two active mechanisms have a
+way of segregating sugars to avoid having
+[SPEAKER_01]: the entire leaf bathed in high
+concentrations of photosynthate.
+[SPEAKER_01]: And one of the important ideas that
+motivates the thinking about loading and
+[SPEAKER_01]: loading strategies is the idea you don't
+want your leaves with excessive
+[SPEAKER_01]: photosynthate concentrations because it
+leaves you as an attractive leaf green
+[SPEAKER_01]: thing to eat for species.
+[SPEAKER_01]: And I'm sure there are other ideas out
+there, but that's the one that's stuck in
+[SPEAKER_01]: my mind.
+[SPEAKER_01]: And so in general, these active mechanisms
+minimize the photosynthate concentrations
+[SPEAKER_01]: and should, although it's hard to get
+direct evidence, change the translocation
+[SPEAKER_01]: rate or the export loading rate.
+[SPEAKER_01]: So I'm going to show you some recent work,
+or relatively recent work from the Turgen
+[SPEAKER_01]: lab, where they, I think, get the most
+convincing picture of this polymer
+[SPEAKER_01]: trapping process.
+[SPEAKER_01]: And so here we have this enzyme that is
+going to do a so-called polymerization or
+[SPEAKER_01]: oligomerization of the sucrose to create,
+in particular, stachios, a four sugar
+[SPEAKER_01]: species, and somehow keep it segregated
+here and influence translocation.
+[SPEAKER_01]: And so this is an example where the Turgen
+group identified one of the players in
+[SPEAKER_01]: this oligomerization process and was able
+to knock it down.
+[SPEAKER_01]: And what we see here is that, indeed,
+this species is a polymerizer,
+[SPEAKER_01]: oligomerizer, has significantly more of
+these raffinose family oligosaccharides in
+[SPEAKER_01]: the leaves than a passive loader,
+which has essentially none, and they
+[SPEAKER_01]: successfully knock down this
+oligomerization.
+[SPEAKER_01]: And the consequences of this were that the
+knockdown case failed to get rid of all
+[SPEAKER_01]: that photosynthate and ended up with these
+very high concentrations of the classic
+[SPEAKER_01]: passive loader.
+[SPEAKER_01]: And further, this had consequences on the
+global health of this knockdown case.
+[SPEAKER_01]: So this is a strong suggestion that this
+oligomerization process is part of
+[SPEAKER_01]: improving the translocation efficiency,
+allowing the plant to drive export without
+[SPEAKER_01]: building up excessive concentrations of
+photosynthetic product.
+[SPEAKER_01]: I'd also note, I don't have it on the
+slide, but they nicely demonstrated in
+[SPEAKER_01]: this paper that these enzymes were
+localized in the so-called intermediary
+[SPEAKER_01]: cell or companion cell of the phloem.
+[SPEAKER_01]: So the phenomenon, again, for this
+particular loading process is that it's
+[SPEAKER_01]: simplistic, unlike the classic active
+process.
+[SPEAKER_01]: It goes through plasmodesmata.
+[SPEAKER_01]: It has this enzymatic conversion,
+which you can think of as a kind of a
+[SPEAKER_01]: bootstrap.
+[SPEAKER_01]: It seems like a bootstrapping process on
+top of a passive mechanism.
+[SPEAKER_01]: We're putting an energy in an odd place in
+this.
+[SPEAKER_01]: It's pump.
+[SPEAKER_01]: It has this characteristic segregation of
+sugars in the intermediary cell and
+[SPEAKER_01]: appears to have more efficient
+translocation.
+[SPEAKER_01]: So the questions are, we'd like to build a
+model that would couple two water
+[SPEAKER_01]: relations.
+[SPEAKER_01]: And I'm going to emphasize that I think
+it's crucial that you couple all the way
+[SPEAKER_01]: to the xylem to think about how loading
+occurs.
+[SPEAKER_01]: So we have to add ingredients over here in
+terms of coupling to the xylem.
+[SPEAKER_01]: The impact of polymerization and
+segregation on rates of translocation,
+[SPEAKER_01]: the relationship between, in particular,
+pumping, the ability to export
+[SPEAKER_01]: efficiently, and segregate.
+[SPEAKER_01]: Is this segregation part of the mode of
+operation of this trapping mechanism?
+[SPEAKER_01]: And we can then look towards putting some
+constraints on what the plasmodesmata must
+[SPEAKER_01]: be like.
+[SPEAKER_01]: Again, this is simplistic.
+[SPEAKER_01]: We don't think of plasmodesmata as being
+very specific pore proteins that have the
+[SPEAKER_01]: ability to select between two small
+molecules, like sucrose and stachios.
+[SPEAKER_01]: But here they seem to be.
+[SPEAKER_01]: And so we can be good to think about what
+a plasmodesmata in this particular class
+[SPEAKER_01]: of plasmodesmata must look like.
+[SPEAKER_01]: So with guidance from Bob, I took images
+like this showing intermediary cell
+[SPEAKER_01]: mesophyll and phloem.
+[SPEAKER_01]: And this being the special membrane that
+contains these special plasmodesmata.
+[SPEAKER_01]: And we built a new cartoon inspired by
+Bob's original cartoon.
+[SPEAKER_01]: But in particular, it's particular
+additional ingredients like being coupled
+[SPEAKER_01]: to the xylem at a well-defined,
+typically negative, water potential.
+[SPEAKER_01]: And here we have the potential to be
+drawing in water directly into the
+[SPEAKER_01]: mesophyll and water into the intermediary
+cell where the enzyme is processing the
+[SPEAKER_01]: sucrose into oligomers, with the eventual
+possibility that this is not, which you
+[SPEAKER_01]: wouldn't expect it to be, a perfect
+osmotic membrane to select between sucrose
+[SPEAKER_01]: and stachios.
+[SPEAKER_01]: And so this has hydraulics in it.
+[SPEAKER_01]: It's going to have flows.
+[SPEAKER_01]: There are going to be flow speeds.
+[SPEAKER_01]: There are going to be fees.
+[SPEAKER_01]: Eventually, I'm not going to have them out
+explicitly, but we're going to get to some
+[SPEAKER_01]: reflection coefficients, effective
+reflection coefficients for this
+[SPEAKER_01]: plasmodesmata membrane that's acting like
+an osmotic membrane.
+[SPEAKER_01]: We're going to account for diffusion.
+[SPEAKER_01]: I'm going to run the enzymatic kinematics
+at 0th order, V max.
+[SPEAKER_01]: We can do this with full Michaelis-Menten,
+but I'm going to run it at 0th order.
+[SPEAKER_01]: And then we're keeping track of stachios,
+sucrose.
+[SPEAKER_01]: And this concentration of enzyme is
+embedded in this enzymatic rate.
+[SPEAKER_01]: So just to remind you again that
+underneath everything I'm going to show
+[SPEAKER_01]: you, we have a simple but a hydraulic
+architecture of these two components of
+[SPEAKER_01]: the leaf with a plasmodesmable membrane,
+each coupled to the xylem and then coupled
+[SPEAKER_01]: down to an unloading zone somewhere in the
+root or fruit or somewhere else.
+[SPEAKER_01]: We're going to keep this very simple.
+[SPEAKER_01]: In fact, we're going to just say that
+unloading is not limiting.
+[SPEAKER_01]: We're going to keep the unloading,
+the root pressure, in some sense,
+[SPEAKER_01]: in the flow.
+[SPEAKER_01]: It's going to be 0.
+[SPEAKER_01]: It's going to be easy to unload.
+[SPEAKER_01]: But putting in loading limitations is a
+possibility.
+[SPEAKER_01]: So what is the Munch mechanism?
+[SPEAKER_01]: Go back to the beginning.
+[SPEAKER_01]: Passive mechanism is the Munch hypothesis.
+[SPEAKER_01]: So I'm going to start by a reduced version
+of our model.
+[SPEAKER_01]: Right now, this is just the passive.
+[SPEAKER_01]: It's passive because I don't have any
+enzymes in here.
+[SPEAKER_01]: And I'm going to, for now, just allow
+sucrose to passively diffuse across this
+[SPEAKER_01]: membrane, not allow water to be loaded
+into the mesophyll.
+[SPEAKER_01]: And think about what controls the
+concentration of sucrose that pulls in
+[SPEAKER_01]: water and drives the Munch pump.
+[SPEAKER_01]: And so this is the four equations.
+[SPEAKER_01]: That's all there will be.
+[SPEAKER_01]: There are four unknowns here.
+[SPEAKER_01]: I need to know the flow rates of sucrose,
+the flow rate of sucrose and of water
+[SPEAKER_01]: concentration in the intermediary cell.
+[SPEAKER_01]: And I'll just point out that in these
+coupled equations, there is the classic
+[SPEAKER_01]: Munch process, which is to say there is
+sucrose getting to this pocket that's
+[SPEAKER_01]: coupled to the water potential.
+[SPEAKER_01]: We have to have an osmotic strength that
+can overcome the water potential.
+[SPEAKER_01]: And a piece that isn't often considered is
+that I'm going to emphasize is this
+[SPEAKER_01]: conservation of sucrose is that the same
+thing that Munch is trying to give you,
+[SPEAKER_01]: which is flow to carry your sucrose,
+is sweeping away your concentration
+[SPEAKER_01]: gradient so that the concentration that
+driving that osmotic process is inversely
+[SPEAKER_01]: proportional to the flow that it's
+creating.
+[SPEAKER_01]: So there's that coupling that is crucial
+in closing the Munch process.
+[SPEAKER_01]: And in fact, Jean Conte, who built this
+model, identified a dimensionless group.
+[SPEAKER_01]: And this is one of the things that we do
+in our field is to try to group the
+[SPEAKER_01]: parameters in a way that characterizes a
+process.
+[SPEAKER_01]: And in particular, this loss of
+concentration due to the water flow is a
+[SPEAKER_01]: competition between the flow of water and
+the diffusive flow of sugar.
+[SPEAKER_01]: And it can be written like this.
+[SPEAKER_01]: It's got the permeabilities, the hydraulic
+permeabilities, a characteristic
+[SPEAKER_01]: difference in pressure.
+[SPEAKER_01]: This is a negative number.
+[SPEAKER_01]: It's being overcome by this osmotic
+number.
+[SPEAKER_01]: And this is a diffusion coefficient for
+this membrane, a so-called mass transfer
+[SPEAKER_01]: coefficient.
+[SPEAKER_01]: And so this captures the impact of
+convection on the trapping process.
+[SPEAKER_01]: And I'm going to show that it's a useful
+number to have.
+[SPEAKER_01]: So here's a case where we're going to
+consider that the plant has a desired
+[SPEAKER_01]: turgor, say, in its mesophyll.
+[SPEAKER_01]: It keeps the levels of sucrose in the
+mesophyll at a constant level.
+[SPEAKER_01]: And we're going to ask, what happens when
+I turn on the reaction rate?
+[SPEAKER_01]: Q polymerization is going to be a
+homogeneous reaction rate turning sucrose
+[SPEAKER_01]: into stachios.
+[SPEAKER_01]: And so first, I'm going to turn on the
+polymerization with a low phloem.
+[SPEAKER_01]: In fact, this is a high phloem process.
+[SPEAKER_01]: I have this backwards.
+[SPEAKER_01]: So that there's lots of flow.
+[SPEAKER_01]: Our so-called flushing number is bigger
+than one.
+[SPEAKER_01]: And what we find is that absolutely we
+benefit from the trapping mechanism.
+[SPEAKER_01]: By consuming, I'm going to the extreme
+where the enzymes are fast enough that I
+[SPEAKER_01]: use up all the sucrose it diffuses across.
+[SPEAKER_01]: And of course, in the munch picture,
+here the red line being the concentration
+[SPEAKER_01]: of sucrose between the mesophyll and the
+intermediary cell, if I use up all the
+[SPEAKER_01]: sucrose, I absolutely improve the rate at
+which I move sucrose into the phloem.
+[SPEAKER_01]: So trapping with high flow rate,
+low flow rate, it's definitely going to
+[SPEAKER_01]: improve.
+[SPEAKER_01]: Polymerization, let's say,
+oligomerization, will definitely improve
+[SPEAKER_01]: the rate of export relative to no
+oligomerization.
+[SPEAKER_01]: But there's no segregation in this case.
+[SPEAKER_01]: I'm getting rid of all of the
+photosynthate that gets into the
+[SPEAKER_01]: intermediary cell before it can pile up.
+[SPEAKER_01]: So here we have a polymer without
+trapping.
+[SPEAKER_01]: And it is useful, but it doesn't.
+[SPEAKER_01]: I'm showing you Apple on a so-called
+purely passive loader.
+[SPEAKER_01]: If I turn it on, on the other hand,
+in the presence of a large resistance,
+[SPEAKER_01]: here I have this, I was thinking
+resistance here, a small permeability for
+[SPEAKER_01]: the rest of the transport phloem,
+I get both.
+[SPEAKER_01]: I can use up all my sucrose, drive more
+diffusion, higher loading rates.
+[SPEAKER_01]: But also, if I'm not flushing it away too
+quickly, I can end up with segregation and
+[SPEAKER_01]: characteristic this type of picture of the
+loading and segregation of the
+[SPEAKER_01]: photosynthate into the phloem elements.
+[SPEAKER_01]: So we've looked at this in a variety of
+scenarios.
+[SPEAKER_01]: Here I'm just showing the ratio this is
+looking at segregation, the ratio of
+[SPEAKER_01]: intermediary cell concentration total of
+all sugars versus in the mesofil as a
+[SPEAKER_01]: function of the flow rate, the
+non-dimensional flow rate.
+[SPEAKER_01]: And we see that we can get very large
+segregation, but we can also have
+[SPEAKER_01]: polymerization going on without any
+segregation.
+[SPEAKER_01]: Here mesofil concentration below
+intermediary cell.
+[SPEAKER_01]: On the other hand, and this is,
+I think, an important conclusion from this
+[SPEAKER_01]: model, under any circumstance here,
+increasing the polymerization rate
+[SPEAKER_01]: increases the equivalent sucrose export
+rate.
+[SPEAKER_01]: It is always a good idea to polymerize,
+whether you segregate or not.
+[SPEAKER_01]: And I'll just say briefly that I've shown
+this in the simplest case, but if we go
+[SPEAKER_01]: back to a full connection, full water
+relation, in a sense, and the possibility
+[SPEAKER_01]: of having intermediate reflection
+coefficients for this plasmadecimal
+[SPEAKER_01]: membrane, these same trends hold.
+[SPEAKER_01]: And these are almost identical looking
+plots.
+[SPEAKER_01]: And our understanding right now is that
+localized polymerization always is
+[SPEAKER_01]: beneficial from the point of view of
+export, but does not depend on
+[SPEAKER_01]: segregation.
+[SPEAKER_01]: So this is a question for Bob.
+[SPEAKER_01]: Why segregate?
+[SPEAKER_01]: And I'm going to tell you just the next
+few slides, segregating is not trivial.
+[SPEAKER_01]: You've got to turn these plasmadecimal
+into an osmotic membrane.
+[SPEAKER_01]: So it seems to suggest that there's some
+other reason to segregate that doesn't
+[SPEAKER_01]: have to do with improving the rate of
+export.
+[SPEAKER_01]: So that's something that we've been
+discussing.
+[SPEAKER_01]: We need to continue to discuss,
+but I'll be interested in if there are any
+[SPEAKER_01]: suggestions.
+[SPEAKER_01]: So one interesting idea that emerged from
+Jean's model is, and here Bob pulled
+[SPEAKER_01]: together this set of data showing that a
+lot of passive loaders, in particular
+[SPEAKER_01]: trees, which surprisingly you'd think
+trees are always classified, the big guys
+[SPEAKER_01]: who have to export over meters and meters
+and meters, are all passive.
+[SPEAKER_01]: But they do polymerize.
+[SPEAKER_01]: They oligomerize.
+[SPEAKER_01]: They oligomerize, they don't segregate.
+[SPEAKER_01]: But what Jean has shown in this model is
+that any polymerization is good
+[SPEAKER_01]: polymerization.
+[SPEAKER_01]: You're taking away that sucrose,
+increasing that gradient.
+[SPEAKER_01]: And so there's some possibility that these
+guys are another version of polymer
+[SPEAKER_01]: trappers that take advantage of the
+increased translocation efficiency without
+[SPEAKER_01]: worrying about segregation.
+[SPEAKER_01]: So I'm going to now just finish with this
+topic with questions about the
+[SPEAKER_01]: plasmodesmina.
+[SPEAKER_01]: So I've alluded to this that it's not
+obvious.
+[SPEAKER_01]: We usually think a plasmodesmina is being
+big, big pores, many molecules across.
+[SPEAKER_01]: So how are we distinguishing between a
+sucrose and a stachyose, which a
+[SPEAKER_01]: reasonable hydraulic dimension of a
+sucrose would be one.
+[SPEAKER_01]: One nanometer and a stachyose just 1.4 in
+diameter.
+[SPEAKER_01]: And this is a micrograph of the special
+type of plasmodesmina that are found in
+[SPEAKER_01]: these trappers.
+[SPEAKER_01]: But it's still a pretty big structure.
+[SPEAKER_01]: And of course, we're thinking about this
+as an annular lumen.
+[SPEAKER_01]: We're thinking about a substructure.
+[SPEAKER_01]: But it's not easy to see how you get
+selectivity based on that.
+[SPEAKER_01]: So we're going to try to build a simple
+model.
+[SPEAKER_01]: And this is partly to check an idea that
+Bob first mentioned to us in our first
+[SPEAKER_01]: conversation, which is that partly this
+could be hydrodynamic selectivity.
+[SPEAKER_01]: We're going to have a pressure gradient,
+a water potential gradient in particular,
+[SPEAKER_01]: between the mesophyll and the intermediary
+cell.
+[SPEAKER_01]: And this is going to drive a convective
+flow through that same pore through which
+[SPEAKER_01]: sucrose and stachyose are trying to
+diffuse.
+[SPEAKER_01]: Sucrose is going to be going with the
+flow.
+[SPEAKER_01]: Stachyose is going to be trying to diffuse
+against the flow.
+[SPEAKER_01]: So to the extent that you can bootstrap
+this system and get it going, it's going
+[SPEAKER_01]: to be tending to give you the selectivity.
+[SPEAKER_01]: It's going to be tending to exclude
+stachyose from back diffusing.
+[SPEAKER_01]: And that's what this first, this is for
+the very generic diffusion and convection,
+[SPEAKER_01]: Poiseuille flow through a pipe appropriate
+for macroscale.
+[SPEAKER_01]: What it says is even if we have no,
+absolutely no mechanism for selectivity,
+[SPEAKER_01]: for the guys who are trying to back
+diffuse, we can get to a ratio.
+[SPEAKER_01]: There would be a ratio of the pore size to
+the solute size at which you will go from
+[SPEAKER_01]: back diffusion to convective expulsion of
+the stachyose.
+[SPEAKER_01]: So this is a purely hydrodynamic
+convection-based mechanism by which you
+[SPEAKER_01]: could have this apparent selectivity and
+segregation.
+[SPEAKER_01]: Now we've gone on, there are, we've picked
+the simplest model to take into account
+[SPEAKER_01]: essentially just sterics of the pore with
+a dimension R and a solute that has a
+[SPEAKER_01]: dimension that's not far from R.
+[SPEAKER_01]: And what we find is, and this impacts as R
+changes, it impacts both the solvent and
+[SPEAKER_01]: the solute.
+[SPEAKER_01]: And what we can find is at very small
+ratios of pore to solute, so saying that
+[SPEAKER_01]: the pore is just 1.5 fold what the solute
+is, we can find that also that this steric
+[SPEAKER_01]: selectivity, steric reflection coefficient
+can give us an inhibit back flow of the
+[SPEAKER_01]: stachyose.
+[SPEAKER_01]: And interestingly, this same model of
+hindered, so-called hindered transport by
+[SPEAKER_01]: Dean et al.
+[SPEAKER_01]: actually had very large pore sizes.
+[SPEAKER_01]: Again, can give us a purely convective
+mechanism for selectivity.
+[SPEAKER_01]: So I'm going to summarize the findings of
+this in this state diagram.
+[SPEAKER_01]: I'm bringing back our flushing parameter,
+keeping track of the importance of
+[SPEAKER_01]: convection through from the xylem to the
+phloem, and keeping track of one
+[SPEAKER_01]: non-dimensional geometrical piece of
+information, the pore size to the solute
+[SPEAKER_01]: size.
+[SPEAKER_01]: And these are for, these boundaries are,
+these lines are boundaries between a huge
+[SPEAKER_01]: sea of non-segregating cases and a very
+small set of parameters that give us
+[SPEAKER_01]: segregation.
+[SPEAKER_01]: This is what I mean by it's not easy to
+segregate.
+[SPEAKER_01]: To segregate with a, in the presence of,
+with this hindered transport model,
+[SPEAKER_01]: you have to be at very low through flow
+rates of water and very small ratios of
+water.
+[SPEAKER_01]: The pore to the solute size.
+[SPEAKER_01]: So if we take on a typical ratio of
+stachyose to sucrose of 1.4, the pore has
+[SPEAKER_01]: to just be a couple nanometers across.
+[SPEAKER_01]: And let me just remind you that the pore
+is not, this is a picture that Bob pointed
+[SPEAKER_01]: us to of this annular region with
+obstructions in the form of proteins.
+[SPEAKER_01]: That are coming, the plasma has two
+membranes, it's this annular region that's
+[SPEAKER_01]: free, and these, what we can think of as
+nano channels and not just micro channels,
+[SPEAKER_01]: passing in between this obstacle course of
+protruding proteins.
+[SPEAKER_01]: As far as we know, this is about how well
+we understand that architecture.
+[SPEAKER_01]: This blurry transmission electron
+micrograph.
+[SPEAKER_01]: What we're pointing to here is that within
+that bone or if we're going to see
+[SPEAKER_01]: segregation, we're going to be at these,
+those effective openings between those
+[SPEAKER_01]: proteins are going to be very small
+indeed.
+[SPEAKER_01]: I'll just point out that if we avoid
+hindrance, purely convective segregation
+[SPEAKER_01]: can occur, but only for unrealistically
+large differences in the size of the two
+[SPEAKER_01]: solutes.
+[SPEAKER_01]: We can open up another region where
+segregation occurs but it's pointing again
+[SPEAKER_01]: to the need for some sort of selectivity.
+[SPEAKER_01]: At this point, I'm putting it into the
+difference in size of these two molecules,
+[SPEAKER_01]: which is not realistic.
+[SPEAKER_01]: To summarize, I think you don't have to go
+far in terms of building a model on top of
+[SPEAKER_01]: munch type ideas, but you do need to bring
+in water relations.
+[SPEAKER_01]: You do need to bring in the xylem.
+[SPEAKER_01]: You do need to bring in the convection
+that is the through convection that is
+[SPEAKER_01]: from the xylem down into the transport
+flow.
+[SPEAKER_01]: Importantly, oligomerization is always a
+good idea if you're a passive loader with
+[SPEAKER_01]: some plastic paths.
+[SPEAKER_01]: It always makes sense to do that.
+[SPEAKER_01]: Maybe a bunch of passive loaders that we
+have not been thought of in this way are
+[SPEAKER_01]: in fact taking advantage of this.
+[SPEAKER_01]: On the other hand, segregation is a
+mystery from my point of view right now.
+[SPEAKER_01]: Bob's going to have to explain it to me.
+[SPEAKER_01]: Finally, plasmodesmina in some sense can
+be brought down to a scale where they act
+[SPEAKER_01]: like a poor protein, like a selective poor
+protein.
+[SPEAKER_01]: To do that, you, not surprisingly,
+have to get down to a molecular scale.
+[SPEAKER_01]: Right now, we have essentially a billiard
+ball kind of model of transport to a
+[SPEAKER_01]: plasmodesmina, but it points to the need,
+in particular, you can't just have
+[SPEAKER_01]: convective selectivity.
+[SPEAKER_01]: You do need some what is essentially a
+chemical-like selectivity in that
+[SPEAKER_01]: plasmodesminal membrane.
+[SPEAKER_01]: Are there any questions right now?
+[SPEAKER_01]: I'm just going to speed ahead.
+[SPEAKER_01]: I'm just going to go very briefly through
+an idea that we explored with Michael
+[SPEAKER_01]: Santiago and Vinay that is an observation
+in the literature that the border pit
+[SPEAKER_01]: membrane membranes change their
+permeability as a function of the
+[SPEAKER_01]: composition of the xylem sap.
+[SPEAKER_01]: One proposal for why they might be doing
+this is that the plant could actually be
+[SPEAKER_01]: modifying the composition of the xylem sap
+to change the permeability of its xylem
+[SPEAKER_01]: and direct flows within the xylem tissue,
+conductive tissue, to deal with,
+[SPEAKER_01]: for example, gradients in composition of
+the soil, water potential, thermal
+[SPEAKER_01]: gradients.
+[SPEAKER_01]: And so this is an observation of Martin
+Zimmerman in the 70s.
+[SPEAKER_01]: It was followed up by Maciek Zwinecki and
+Missy Holbrook a little over 10 years ago
+[SPEAKER_01]: and very cleanly showed that with respect
+to ionic strength, millimolars of ionic
+[SPEAKER_01]: strength, the permeability of xylem
+tissue, which is supposed to be this
+[SPEAKER_01]: passive conduit, in fact, changes.
+[SPEAKER_01]: And for example, resistance goes down as
+ionic strength goes up.
+[SPEAKER_01]: Resistance goes down with pH going down.
+[SPEAKER_01]: So we're coupling to some chemical
+characteristics of the xylem.
+[SPEAKER_01]: And an important piece of this work is
+that they isolated passage through an
+[SPEAKER_01]: individual border pit membrane and showed
+that this remained true.
+[SPEAKER_01]: And so they pinpointed the border pit
+membrane as the source of this
+[SPEAKER_01]: variability.
+[SPEAKER_01]: They had a very clean story.
+[SPEAKER_01]: They got into science.
+[SPEAKER_01]: That's you have to have a clean story.
+[SPEAKER_01]: Since then, the story is not so clean.
+[SPEAKER_01]: In particular, Kosher and many others have
+found that there are species in which this
+[SPEAKER_01]: so-called ion effect is backwards,
+zero, and so on.
+[SPEAKER_01]: And so what we're seeing, just to clarify,
+what we're seeing here is the flow rate.
+[SPEAKER_01]: And here, a normalized flow rate with
+respect to the zero ionic strength case.
+[SPEAKER_01]: So I'm just going to point out that,
+and you can see this in the paper that
+[SPEAKER_01]: just came out, that we looked at an
+explanation of this based on what's
+[SPEAKER_01]: so-called the electrokinetic phenomenon.
+[SPEAKER_01]: And I'm pointing this out partly to remind
+you or make you aware of the fact that
+[SPEAKER_01]: there are electric fields in plants during
+transpiration.
+[SPEAKER_01]: Why?
+[SPEAKER_01]: Well, because plant tissues are charged,
+essentially all tissues.
+[SPEAKER_01]: All materials are charged in the presence
+of water.
+[SPEAKER_01]: Plant tissues are going to be negative
+because of carboxylic acid groups in
+[SPEAKER_01]: particular.
+[SPEAKER_01]: And as you convect through a pore,
+for example, through the border pit
+[SPEAKER_01]: membrane, you're going to carry the
+counter ions that are associated with the
+[SPEAKER_01]: charged tissue from one end to the other.
+[SPEAKER_01]: You're going to lead to a polarization in
+the electrolyte.
+[SPEAKER_01]: That is going to create an electric field.
+[SPEAKER_01]: And what we're looking at here in the
+so-called electroviscous effect,
+[SPEAKER_01]: that electric field actually drives a net
+flow back and reduces the amount of total
+[SPEAKER_01]: flow you get for a given pressure
+difference across the system.
+[SPEAKER_01]: Whether this is important to any of you or
+to anybody, this particular electroviscous
+[SPEAKER_01]: effect, I don't know.
+[SPEAKER_01]: But we could have tens of millivolts,
+maybe 100 millivolts voltage difference.
+[SPEAKER_01]: Over very small distances within the
+xylem.
+[SPEAKER_01]: And of course, that's the polarization of
+a plasma membrane.
+[SPEAKER_01]: So there's the potential to actually,
+for these electrical effects, couple the
+[SPEAKER_01]: flow to be part of, for example,
+signaling.
+[SPEAKER_01]: So I'll just show that this model,
+there's a big cloud.
+[SPEAKER_01]: We reduced somewhat from the literature on
+these effects.
+[SPEAKER_01]: But in taking the ones that had a large,
+large range of the relative permeability
+[SPEAKER_01]: for the charged channel versus an
+uncharged channel as a function of ionic
+[SPEAKER_01]: strength.
+[SPEAKER_01]: And what we took here, our predictions are
+this dotted line and this solid line.
+[SPEAKER_01]: This is the lowest end of the range of
+surface charge that we could find to be
+[SPEAKER_01]: reasonable for tissues in the xylem and on
+the border pit.
+[SPEAKER_01]: This is the high end of the range of
+surface potential.
+[SPEAKER_01]: Or surface charge density.
+[SPEAKER_01]: And what we see is that a reasonable part
+of this cloud fits our predictions.
+[SPEAKER_01]: And one important aspect of our
+predictions is that it's non-monotonic,
+[SPEAKER_01]: this electroviscous effect.
+[SPEAKER_01]: As we lower ionic strength into the tens
+of millimolar range, the viscosity grows.
+[SPEAKER_01]: We have lower permeability.
+[SPEAKER_01]: And then it plateaus and rises up slightly
+again as we go towards the ionized water.
+[SPEAKER_01]: And so what we can conclude from this is
+not that this is the mechanism for the ion
+[SPEAKER_01]: effect, but that it absolutely is going to
+be present, whether it's dominant or not.
+[SPEAKER_01]: We propose some experiments that can
+distinguish them.
+[SPEAKER_01]: And we're hoping we or someone else is
+going to do them.
+[SPEAKER_01]: But I think, again, the bottom line is
+that there are certainly effects possible.
+[SPEAKER_01]: For electric fields in xylem tissue,
+and they could be part of signaling,
+[SPEAKER_01]: potentially part of a refilling process,
+or translocation.
+[SPEAKER_01]: So I'm going to finish with our synthetic
+models of plants.
+[SPEAKER_01]: Some simple structure like this we call a
+tree.
+[SPEAKER_01]: And it's got two zones where it can
+exchange with the outside world.
+[SPEAKER_01]: If it's a zone that is wetter,
+we'll call the root.
+[SPEAKER_01]: A zone that's drier, we'll call the leaf.
+[SPEAKER_01]: And then we're moving this in the silicon
+so that, for example, we can measure
+[SPEAKER_01]: things quantitatively about the state of
+water in this system.
+[SPEAKER_01]: And so we can start putting in
+architectural features like the segmented
+[SPEAKER_01]: quality of xylem.
+[SPEAKER_01]: And so I'll first give you a little update
+on what Vinay's been up to.
+[SPEAKER_01]: And tell you about one version of this
+synthetic tree we call a tensiometer.
+[SPEAKER_01]: And essentially, it's a leaf coupled to a
+pressure transducer.
+[SPEAKER_01]: And the context that Vinay has told you
+about is that this is what a tensiometer
+[SPEAKER_01]: is called today.
+[SPEAKER_01]: We'd like one to extend the range of
+function by several orders of magnitude
+[SPEAKER_01]: and the form factor so that, for example,
+this can become an embeddable technology.
+[SPEAKER_01]: And so the key to this, and this is what
+we do, is to find materials that can act
+[SPEAKER_01]: like the mesophyll in relation to
+transpiration.
+[SPEAKER_01]: And in particular, hold onto water with a
+meniscus that has very high radius of
+[SPEAKER_01]: curvature, very small radius of curvature.
+[SPEAKER_01]: Order a few nanometers so that we can get
+to capillary pressure differences between
+[SPEAKER_01]: the liquid and the gas outside of tens to
+hundreds of megapascals.
+[SPEAKER_01]: So by going into silicon, we can also
+build transducers direct to get electrical
+[SPEAKER_01]: signals as a function of stress.
+[SPEAKER_01]: And these are very well-behaved mechanical
+systems that give us simple signal and can
+[SPEAKER_01]: be calibrated against well-defined
+pressures.
+[SPEAKER_01]: And one of the exciting things that's the
+first results to come out of this is to
+[SPEAKER_01]: truly visualize water and stress well
+beyond what's believed to occur in the
+[SPEAKER_01]: plant world.
+[SPEAKER_01]: And so this is an example of a calibrated
+device where here's the voltage across
+[SPEAKER_01]: this sensor.
+[SPEAKER_01]: And here's the pressure across this
+sensor.
+[SPEAKER_01]: And here's one where Vinay just put it on
+the bench and allowed it to dry in a very
+[SPEAKER_01]: dry atmosphere.
+[SPEAKER_01]: And much to our pleasure, it failed.
+[SPEAKER_01]: But it failed at over 300 bars,
+over 30 megapascals.
+[SPEAKER_01]: And so we think this, in any context of
+creating liquids under tension,
+[SPEAKER_01]: this is the largest negative pressure that
+has ever been measured.
+[SPEAKER_01]: And certainly in the context of plants,
+a plant-like mechanism of a porous
+[SPEAKER_01]: membrane coupling to a low water
+potential, this is a strong support of
+[SPEAKER_01]: Dixon-Knight.
+[SPEAKER_01]: Dixon and Jolie and Ashkenazi and all the
+others who put forward cohesion tension
+[SPEAKER_01]: theory over 100 years ago.
+[SPEAKER_01]: One of the nice things I'll show you a few
+times in such a system is that we can also
+[SPEAKER_01]: watch the consequences of tension.
+[SPEAKER_01]: And so this is one of these pockets of
+liquid during the moment when failure
+[SPEAKER_01]: occurs.
+[SPEAKER_01]: And what you can see here is dramatically
+the extremely violent event that
+[SPEAKER_01]: cavitation or embolization is.
+[SPEAKER_01]: So what you see is that a turbulent flow
+emerges in a 25 micron gap that's a few
+[SPEAKER_01]: millimeters wide here.
+[SPEAKER_01]: We can also see, for better or for worse,
+this is violent enough that it starts to
+[SPEAKER_01]: actually damage our silicon and glass
+structure.
+[SPEAKER_01]: Around the edge, it starts to be bond.
+[SPEAKER_01]: And so that's a nice opportunity.
+[SPEAKER_01]: In terms of being useful, this is the
+anomaly.
+[SPEAKER_01]: This over 300 bars is an anomaly.
+[SPEAKER_01]: But we actually have some 15, 20 runs with
+running these things to their stability
+[SPEAKER_01]: limit.
+[SPEAKER_01]: They all go to over 10 megapascals.
+[SPEAKER_01]: So it gives us a sense of a new technology
+to couple the plants.
+[SPEAKER_01]: In the laboratory, they're starting to be
+very well-behaved.
+[SPEAKER_01]: And this is work of Michael Santiago.
+[SPEAKER_01]: In fact, what this gives us is a new
+measure of the thermodynamics of water
+[SPEAKER_01]: under tension, which has only been
+measured along, in fact, this isotherm.
+[SPEAKER_01]: And what we can see is that a calibrated
+tensiometer agrees with the equation of
+[SPEAKER_01]: state, the international equation of
+state, at 20 degrees.
+[SPEAKER_01]: There's important questions about the
+international equation of state of water
+[SPEAKER_01]: as you go to cooler temperatures.
+[SPEAKER_01]: And that's one of the opportunities.
+[SPEAKER_01]: Vinay actually just got one of these into
+soil from the Venice lab.
+[SPEAKER_01]: And what you can see is he got a
+tensiometer that's going to take nine bars
+[SPEAKER_01]: in a drying soil, which is, again,
+showing that we're now at a completely
+[SPEAKER_01]: different regime for tensiometry than is
+currently accessible.
+[SPEAKER_01]: I'll also point out it wasn't fast.
+[SPEAKER_01]: It was a slow experiment.
+[SPEAKER_01]: And that is one of the challenges that we
+can address within this format by changing
+[SPEAKER_01]: the geometry of the system.
+[SPEAKER_01]: So I'll just point out, we are interested
+in people with large stress questions,
+[SPEAKER_01]: deserts, trees.
+[SPEAKER_01]: We would like excuses to be going to 100
+bars in the soil or in your plant.
+[SPEAKER_01]: So let us know.
+[SPEAKER_01]: So I'm going to finish with the questions
+about failure, about cavitation,
+[SPEAKER_01]: and how it occurs.
+[SPEAKER_01]: And I'm going to point to you this nice
+meta-analysis across many studies that
+[SPEAKER_01]: shows, surprisingly, how many species live
+right at their 50% loss of conductivity
+[SPEAKER_01]: line.
+[SPEAKER_01]: And even those that don't, they live at
+some 25% of loss of conductivity,
+[SPEAKER_01]: which says that plants every single day
+are embolizing, cavitating, and
+[SPEAKER_01]: recovering.
+[SPEAKER_01]: And very recently, in this room,
+we saw the group from Davis tell us about
+[SPEAKER_01]: direct visualization of embolisms within
+xylem vessels.
+[SPEAKER_01]: And even more intriguingly, refilling in
+real time within vessels.
+[SPEAKER_01]: Of course, we're not all lucky enough to
+have Lawrence Berkeley lab across the
+[SPEAKER_01]: street.
+[SPEAKER_01]: And what most people do, including Vinay
+with Alan Lacksoe and Taryn up in Geneva,
+[SPEAKER_01]: is to measure acoustically a non-invasive
+method of getting information out about
+[SPEAKER_01]: the failure modes within the xylem tissue.
+[SPEAKER_01]: And so this is just a collection on great
+vine of the number of acoustic events
+[SPEAKER_01]: versus water potential in a vine.
+[SPEAKER_01]: And interestingly, what would be nice is
+if we could learn more from these
+[SPEAKER_01]: non-invasive techniques.
+[SPEAKER_01]: Is there some way to do statistics and
+learn about the dynamics in such a way
+[SPEAKER_01]: that we could do the inverse problem?
+[SPEAKER_01]: We get the sound.
+[SPEAKER_01]: We hear it.
+[SPEAKER_01]: Can we learn about the local architecture
+that created it and the dynamics that
+[SPEAKER_01]: created it?
+[SPEAKER_01]: So for example, in this data, what we'll
+see is that there are times when it
+[SPEAKER_01]: pulses.
+[SPEAKER_01]: There'll be huge events, and then nothing,
+and then huge events, and then nothing.
+[SPEAKER_01]: Interesting also, there's a power law
+distribution in event sizes.
+[SPEAKER_01]: Like avalanches or stock market crashes,
+there's some interesting dynamics that
+[SPEAKER_01]: defines the size of these events.
+[SPEAKER_01]: So one of the things that we've been doing
+with this synthetic system is to create
+[SPEAKER_01]: these segmented architecture, where we
+have here vessel elements coupled through
+[SPEAKER_01]: the same nanoporous silicon to other
+vessel elements, and then coupled to the
+[SPEAKER_01]: outside world, where we can generate
+stresses by presenting low water
+[SPEAKER_01]: potential.
+[SPEAKER_01]: And so what we're looking at here is three
+full cavities.
+[SPEAKER_01]: One is in the midst of cavitating,
+and then this guy's empty.
+[SPEAKER_01]: And so I'm going to show you some movies
+like this, now looking from the top over a
+[SPEAKER_01]: big array.
+[SPEAKER_01]: And what we're doing is we're drying these
+out into an 85% relative humidity
+[SPEAKER_01]: atmosphere.
+[SPEAKER_01]: And what we were very pleased to see is
+that we have these isolated events.
+[SPEAKER_01]: This is robustness.
+[SPEAKER_01]: This is the proposal, the textbook
+proposal for why xylem remains segmented,
+[SPEAKER_01]: so that a cavitation event doesn't spread
+in an uncontrolled manner along the full
+[SPEAKER_01]: length of the xylem.
+[SPEAKER_01]: And that, indeed, is what we see.
+[SPEAKER_01]: The dynamics is more complicated than
+that.
+[SPEAKER_01]: We definitely do have some propensity to
+drive, to cavitate more near the high
+[SPEAKER_01]: stress zones, but there's this very rough
+drying front that we see.
+[SPEAKER_01]: And so this is surprising in a physical
+science context.
+[SPEAKER_01]: A material, if you start extracting liquid
+from it, you'd think it should dry from
+[SPEAKER_01]: the outside, where the stresses are
+largest.
+[SPEAKER_01]: More interestingly, if you watch this in
+detail, what you'll see is that,
+[SPEAKER_01]: in fact, it's doing something very
+regular.
+[SPEAKER_01]: We're pulling in a steady manner,
+and it's responding.
+[SPEAKER_01]: In fact, in a series of avalanches,
+very controlled avalanches that occur of a
+[SPEAKER_01]: similar size and a timing that seems to be
+very strictly controlled by something.
+[SPEAKER_01]: So something's going on to couple these
+failure events.
+[SPEAKER_01]: And this just shows that these
+correlations of this time trail of
+[SPEAKER_01]: avalanches goes out towards tens of
+minutes to an hour.
+[SPEAKER_01]: So one thing is that we can also hear
+these same events.
+[SPEAKER_01]: In fact, using the same acoustic
+transducer that goes into the field,
+[SPEAKER_01]: we can hear these events.
+[SPEAKER_01]: They create a strong acoustic ultrasonic
+shock.
+[SPEAKER_01]: And in fact, it has very similar
+signatures to the ones that we see from
+[SPEAKER_01]: woody species.
+[SPEAKER_01]: And so our first hypothesis was that these
+events are triggering each other.
+[SPEAKER_01]: One cavitation event sends an acoustic
+signal and triggers another, or another
+[SPEAKER_01]: series of them.
+[SPEAKER_01]: Unfortunately, though, what I show here
+are correlations on the scale of five,
+[SPEAKER_01]: 10 minutes.
+[SPEAKER_01]: The ring down of one of these acoustic
+events is just a millisecond.
+[SPEAKER_01]: So these do have, there's interest in the
+fact that they create acoustic signals,
+[SPEAKER_01]: but it can't be what's coupling these
+events.
+[SPEAKER_01]: So when we went back to our data and
+looked more closely, and in particular,
+[SPEAKER_01]: started to look at spatial information
+about these correlations, what we saw was
+[SPEAKER_01]: that if we plotted the position between
+two subsequent events versus the time
+[SPEAKER_01]: between those subsequent events,
+we actually had this cloud with a very
+[SPEAKER_01]: clear hole in it.
+[SPEAKER_01]: That within this zone, an event that
+occurs at time zero inhibits a second
+[SPEAKER_01]: cavitation event for this period of time
+over this distance.
+[SPEAKER_01]: And in fact, when we look at this envelope
+on this inhibited zone, it in fact has a
+[SPEAKER_01]: square root of time behavior that suggests
+a diffusive phenomenon.
+[SPEAKER_01]: So in fact, what we think, and we're quite
+convinced now, is of hydraulic suppression
+[SPEAKER_01]: of adjacent events.
+[SPEAKER_01]: And this, I think, relates to interesting
+ideas about why plants do go to 25%,
+[SPEAKER_01]: 50% of their cavitation possibility in a
+given day.
+[SPEAKER_01]: And so very quickly, what we can write
+down, and this will be true for plants as
+[SPEAKER_01]: well, is a diffusion equation for pressure
+in this medium, in the xylem tissue.
+[SPEAKER_01]: Any porous medium will have some
+elasticity.
+[SPEAKER_01]: In this case, in our very rigid material,
+it's elasticity of water and a
+[SPEAKER_01]: permeability, which is its Darcy
+permeability.
+[SPEAKER_01]: And together, these create a diffusion
+constant for pressure.
+[SPEAKER_01]: And pressure solves the time-dependent
+diffusion equation.
+[SPEAKER_01]: And in this problem, this time-dependent
+diffusion is coupled to the kinetics of
+[SPEAKER_01]: cavitation, which is a function of the
+pressure that's being diffused around.
+[SPEAKER_01]: And so this shows what our understanding
+of this process is.
+[SPEAKER_01]: So here, this is Eric Huber's model of
+those equations I just showed.
+[SPEAKER_01]: And what we saw is the pressure drop
+coming in from the edge, creating a
+[SPEAKER_01]: cavitation event in this first cavity.
+[SPEAKER_01]: That then sent out a wave.
+[SPEAKER_01]: Before the wave could reach it,
+the wave is going out of suppression.
+[SPEAKER_01]: These two guys cavitated before that
+suppression wave could come and meet them.
+[SPEAKER_01]: They all then spread out, refill the
+medium with water that's freed up by the
+[SPEAKER_01]: cavitation event, and thus suppress
+further cavitation events for a period of
+[SPEAKER_01]: time.
+[SPEAKER_01]: And so we believe this now is from this
+type of model of our same experiment.
+[SPEAKER_01]: And we see essentially a one-to-one match
+of the dynamics we get in our experimental
+[SPEAKER_01]: system and with this coupled pressure
+diffusion reaction process.
+[SPEAKER_01]: And so I think what's important is that
+I've seen this proposed in the literature.
+[SPEAKER_01]: This is an example of the xylem water
+serving as a reservoir of water for the
+[SPEAKER_01]: tissue that doesn't cavitate.
+[SPEAKER_01]: So you have vulnerable zones.
+[SPEAKER_01]: They cavitate, and they give you water to
+release tension transiently in the rest of
+[SPEAKER_01]: the plant.
+[SPEAKER_01]: So I'll finish up.
+[SPEAKER_01]: To connect this back, the inverse problem,
+we now have one explanation for why we
+[SPEAKER_01]: might see these periodic events in
+acoustic data at times.
+[SPEAKER_01]: We don't have an explanation for this
+power law of distribution.
+[SPEAKER_01]: But there's a nice possibility now to look
+at other architectures, try to understand
+[SPEAKER_01]: the dynamics and design criteria for xylem
+tissue.
+[SPEAKER_01]: And what I'm showing here is, in fact,
+this same system will refill.
+[SPEAKER_01]: We have tricks to get this system to mimic
+refilling.
+[SPEAKER_01]: And that's an opportunity to look at some
+of the proposals for how xylem repairs.
+[SPEAKER_01]: So I'll finish with these reminders.
+[SPEAKER_01]: I'll explain to you that your choice of
+species to study, there are excellent
+[SPEAKER_01]: engineers and inspiration.
+[SPEAKER_01]: There are opportunities for technologies,
+both to interface with plants and to go
+[SPEAKER_01]: out into other places in the world.
+[SPEAKER_01]: And then models, both mathematical and
+physical.
+[SPEAKER_01]: Like all models are wrong, but potentially
+can be useful to constrain the way you
+[SPEAKER_01]: think about a system that you have a lack
+of information on.
+[SPEAKER_01]: So with that, I'd like to again
+acknowledge in particular Vinay and
+[SPEAKER_01]: Michael, Olivier, Jean, and Eric for their
+direct participation in this work.
+[SPEAKER_01]: And thank you, and I'd be happy to take
+any questions.
+[SPEAKER_00]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_00]: Thank you.
+[SPEAKER_00]: Thank you.
+[SPEAKER_00]: Thank you.
+[SPEAKER_00]: Thank you.
+Thank you.

@@ -1,0 +1,3968 @@
+1
+00:00:00,599 --> 00:00:04,240
+this is a production of Cornell
+
+2
+00:00:07,200 --> 00:00:13,559
+University um so yeah hi everyone I'm
+
+3
+00:00:10,240 --> 00:00:16,118
+Pete Selby um I am the brappy project
+
+4
+00:00:13,558 --> 00:00:19,320
+coordinator um and the team of one on
+
+5
+00:00:16,118 --> 00:00:22,240
+the brappy project officially um and I'm
+
+6
+00:00:19,320 --> 00:00:24,240
+here to talk about the brappy project um
+
+7
+00:00:22,239 --> 00:00:27,559
+as well as you know little bit the
+
+8
+00:00:24,239 --> 00:00:30,239
+broader scope of um system integration
+
+9
+00:00:27,559 --> 00:00:33,199
+and and interoperability so um yeah
+
+10
+00:00:30,239 --> 00:00:35,640
+we'll we'll start we'll start there um
+
+11
+00:00:33,200 --> 00:00:37,719
+so you know there's lots of different
+
+12
+00:00:35,640 --> 00:00:42,000
+ways to connect systems to make they
+
+13
+00:00:37,719 --> 00:00:44,840
+make sure they work together um and I
+
+14
+00:00:42,000 --> 00:00:48,519
+see you know one one axis of this is is
+
+15
+00:00:44,840 --> 00:00:50,320
+on a scale of uh automation like how how
+
+16
+00:00:48,520 --> 00:00:52,359
+automatically do systems connect to each
+
+17
+00:00:50,320 --> 00:00:55,000
+other and are are interoperable between
+
+18
+00:00:52,359 --> 00:00:58,320
+each other and so on one side you've got
+
+19
+00:00:55,000 --> 00:01:00,000
+you know flat files or paper files that
+
+20
+00:00:58,320 --> 00:01:01,960
+you're sharing with each other and and
+
+21
+00:01:00,000 --> 00:01:04,319
+you know sharing data between different
+
+22
+00:01:01,960 --> 00:01:06,280
+organizations and different systems on
+
+23
+00:01:04,319 --> 00:01:08,359
+the other side you've got you know
+
+24
+00:01:06,280 --> 00:01:10,118
+complete data Federation where every
+
+25
+00:01:08,359 --> 00:01:13,359
+tool knows how to talk to every other
+
+26
+00:01:10,118 --> 00:01:17,478
+tool and uh you know all data is
+
+27
+00:01:13,359 --> 00:01:19,959
+available everywhere all the time um and
+
+28
+00:01:17,478 --> 00:01:23,719
+most systems nowadays end up somewhere
+
+29
+00:01:19,959 --> 00:01:25,438
+in the middle um so you know what what
+
+30
+00:01:23,719 --> 00:01:30,438
+one of the goals of the brappy project
+
+31
+00:01:25,438 --> 00:01:32,158
+is to try and uh sort of push the the uh
+
+32
+00:01:30,438 --> 00:01:34,478
+breeding environments and and the
+
+33
+00:01:32,159 --> 00:01:40,320
+scientific environment into more of an
+
+34
+00:01:34,478 --> 00:01:42,799
+automated data sharing uh system um yeah
+
+35
+00:01:40,319 --> 00:01:46,319
+so uh like I said this is this is what a
+
+36
+00:01:42,799 --> 00:01:48,520
+lot of the systems looked like when I
+
+37
+00:01:46,319 --> 00:01:51,118
+first came on board in terms of
+
+38
+00:01:48,519 --> 00:01:54,078
+interoperability they were somewhat
+
+39
+00:01:51,118 --> 00:01:59,680
+interoperable but it was a lot of manual
+
+40
+00:01:54,078 --> 00:02:01,438
+effort um so uh yeah you can see um you
+
+41
+00:01:59,680 --> 00:02:03,479
+know know I would consider these two
+
+42
+00:02:01,438 --> 00:02:05,118
+applications interoperable you can share
+
+43
+00:02:03,478 --> 00:02:07,159
+data between them and you can you know
+
+44
+00:02:05,118 --> 00:02:09,239
+make them work together but it's kind of
+
+45
+00:02:07,159 --> 00:02:11,760
+a hassle you're you know
+
+46
+00:02:09,239 --> 00:02:14,680
+exporting um you know some sort of Excel
+
+47
+00:02:11,759 --> 00:02:18,120
+file some flat file from one system
+
+48
+00:02:14,680 --> 00:02:20,120
+maybe manipulating that uh manually
+
+49
+00:02:18,120 --> 00:02:24,360
+along the way so that it can be imported
+
+50
+00:02:20,120 --> 00:02:27,480
+into another system this works but it's
+
+51
+00:02:24,360 --> 00:02:30,519
+slow and error prone and and just sort
+
+52
+00:02:27,479 --> 00:02:33,840
+of ugly um
+
+53
+00:02:30,519 --> 00:02:35,360
+so uh yeah and then sort of talking
+
+54
+00:02:33,840 --> 00:02:38,959
+thinking about that talking about the
+
+55
+00:02:35,360 --> 00:02:41,640
+different types of uh
+
+56
+00:02:38,959 --> 00:02:44,719
+interoperability um again this is sort
+
+57
+00:02:41,639 --> 00:02:47,479
+of another dimension of this uh problem
+
+58
+00:02:44,719 --> 00:02:49,199
+uh talking about semantic
+
+59
+00:02:47,479 --> 00:02:50,799
+interoperability you know making sure
+
+60
+00:02:49,199 --> 00:02:53,479
+that the words and the data mean the
+
+61
+00:02:50,800 --> 00:02:55,400
+same thing that's really important for
+
+62
+00:02:53,479 --> 00:02:56,799
+humans and and scientists understand
+
+63
+00:02:55,400 --> 00:02:59,480
+each other there's a lot of work in that
+
+64
+00:02:56,800 --> 00:03:02,120
+area you know ontologies and um that
+
+65
+00:02:59,479 --> 00:03:04,399
+sort of thing um but then as you sort of
+
+66
+00:03:02,120 --> 00:03:05,920
+go down looking at syntactic and
+
+67
+00:03:04,400 --> 00:03:08,120
+protocol interoperability this is
+
+68
+00:03:05,919 --> 00:03:10,598
+looking at the structure of the data and
+
+69
+00:03:08,120 --> 00:03:14,200
+the protocol in which it's transferred
+
+70
+00:03:10,598 --> 00:03:17,318
+we as humans are pretty good at sort of
+
+71
+00:03:14,199 --> 00:03:19,719
+just figuring that out if you've got um
+
+72
+00:03:17,318 --> 00:03:21,280
+two pieces of data that are structured
+
+73
+00:03:19,719 --> 00:03:23,280
+slightly differently but they look the
+
+74
+00:03:21,280 --> 00:03:24,799
+same thing you they look like the same
+
+75
+00:03:23,280 --> 00:03:26,799
+thing as a human we can just sort of
+
+76
+00:03:24,799 --> 00:03:31,719
+figure that out that's a lot tougher
+
+77
+00:03:26,799 --> 00:03:33,680
+problem for uh software um um so that's
+
+78
+00:03:31,719 --> 00:03:36,039
+uh sort of one of the one of the areas
+
+79
+00:03:33,680 --> 00:03:39,959
+we're trying to address with the brappy
+
+80
+00:03:36,039 --> 00:03:42,840
+project um is getting some standards
+
+81
+00:03:39,959 --> 00:03:45,080
+around uh the syntax and the protocols
+
+82
+00:03:42,840 --> 00:03:49,719
+for uh moving data back and forth so it
+
+83
+00:03:45,080 --> 00:03:49,719
+can happen uh more
+
+84
+00:03:49,919 --> 00:03:56,639
+automatically okay um so what is the
+
+85
+00:03:52,878 --> 00:04:00,359
+breeding API the brappy project
+
+86
+00:03:56,639 --> 00:04:04,279
+um so brappy
+
+87
+00:04:00,360 --> 00:04:07,280
+is a standardized restful web service
+
+88
+00:04:04,280 --> 00:04:09,400
+API specification for communicating
+
+89
+00:04:07,280 --> 00:04:12,000
+breeding data and I'll jump into each
+
+90
+00:04:09,400 --> 00:04:13,879
+one of those terms just so we all have a
+
+91
+00:04:12,000 --> 00:04:17,399
+clear Baseline of what we're talking
+
+92
+00:04:13,878 --> 00:04:21,159
+about here um so starting with an API
+
+93
+00:04:17,399 --> 00:04:25,159
+what's an API um so uh all of us are
+
+94
+00:04:21,160 --> 00:04:27,360
+familiar with um use interacting with a
+
+95
+00:04:25,160 --> 00:04:30,759
+user interface when we're talking about
+
+96
+00:04:27,360 --> 00:04:33,000
+software um this might be uh you know a
+
+97
+00:04:30,759 --> 00:04:36,120
+graphical user interface or some command
+
+98
+00:04:33,000 --> 00:04:38,639
+line or or whatever but it's how you as
+
+99
+00:04:36,120 --> 00:04:42,160
+a person as a user interact with a piece
+
+100
+00:04:38,639 --> 00:04:45,120
+of software give it data receive data
+
+101
+00:04:42,160 --> 00:04:48,560
+back give it commands that sort of thing
+
+102
+00:04:45,120 --> 00:04:51,399
+an API is exactly the
+
+103
+00:04:48,560 --> 00:04:56,120
+same uh set of functionality but
+
+104
+00:04:51,399 --> 00:04:58,638
+designed to be from um one system to
+
+105
+00:04:56,120 --> 00:05:01,759
+another one piece of software to another
+
+106
+00:04:58,639 --> 00:05:03,840
+um so you know the one piece of software
+
+107
+00:05:01,759 --> 00:05:07,120
+can issue commands to another send data
+
+108
+00:05:03,839 --> 00:05:10,119
+retrieve data um all
+
+109
+00:05:07,120 --> 00:05:13,160
+programmatically uh through through an
+
+110
+00:05:10,120 --> 00:05:15,639
+API but it does exactly you know exactly
+
+111
+00:05:13,160 --> 00:05:17,759
+the same set of uh tools and
+
+112
+00:05:15,639 --> 00:05:20,000
+interactions that you might need uh for
+
+113
+00:05:17,759 --> 00:05:23,879
+a user
+
+114
+00:05:20,000 --> 00:05:26,199
+interface um yeah next we'll talk about
+
+115
+00:05:23,879 --> 00:05:28,199
+uh web services web services pretty
+
+116
+00:05:26,199 --> 00:05:30,079
+straightforward it's a service available
+
+117
+00:05:28,199 --> 00:05:36,400
+on a web
+
+118
+00:05:30,079 --> 00:05:39,198
+um so uh yeah generally speaking um web
+
+119
+00:05:36,399 --> 00:05:42,120
+services sort of take this this form in
+
+120
+00:05:39,199 --> 00:05:45,680
+the the cartoon on the right here um
+
+121
+00:05:42,120 --> 00:05:47,519
+you've got uh some uh service consumer
+
+122
+00:05:45,680 --> 00:05:50,400
+often called a client you've got a
+
+123
+00:05:47,519 --> 00:05:53,959
+service provider often called a server
+
+124
+00:05:50,399 --> 00:05:58,799
+um and you're building a request sending
+
+125
+00:05:53,959 --> 00:06:00,478
+the request across some Network um to
+
+126
+00:05:58,800 --> 00:06:02,400
+the service provider provider service
+
+127
+00:06:00,478 --> 00:06:05,719
+provider choose on that request and
+
+128
+00:06:02,399 --> 00:06:08,598
+spits out some response that goes back
+
+129
+00:06:05,720 --> 00:06:11,319
+uh to the to the service consumer so um
+
+130
+00:06:08,598 --> 00:06:13,120
+this this this typically with web
+
+131
+00:06:11,319 --> 00:06:15,520
+services not always but typically with
+
+132
+00:06:13,120 --> 00:06:17,038
+web services you'll have this Loop of
+
+133
+00:06:15,519 --> 00:06:20,918
+communication
+
+134
+00:06:17,038 --> 00:06:23,560
+um the the request response Loop uh for
+
+135
+00:06:20,918 --> 00:06:25,918
+for every interaction between the two
+
+136
+00:06:23,560 --> 00:06:25,918
+the two
+
+137
+00:06:26,000 --> 00:06:31,759
+systems
+
+138
+00:06:27,519 --> 00:06:33,359
+um and yeah rest restfulness so uh rest
+
+139
+00:06:31,759 --> 00:06:35,240
+stands for representational State
+
+140
+00:06:33,360 --> 00:06:36,879
+transfer don't need to worry about
+
+141
+00:06:35,240 --> 00:06:40,918
+remembering that everyone just calls it
+
+142
+00:06:36,879 --> 00:06:42,959
+rest um but it is a flavor of web
+
+143
+00:06:40,918 --> 00:06:44,318
+service um there are a couple of
+
+144
+00:06:42,959 --> 00:06:48,638
+different flavors of web service but
+
+145
+00:06:44,319 --> 00:06:53,560
+rest is by far uh you know the the most
+
+146
+00:06:48,639 --> 00:06:58,759
+popular right now um and uh rest is
+
+147
+00:06:53,560 --> 00:07:00,759
+built on um the well-known HTP standards
+
+148
+00:06:58,759 --> 00:07:03,639
+um so all the
+
+149
+00:07:00,759 --> 00:07:05,479
+same uh underlying functionality and
+
+150
+00:07:03,639 --> 00:07:08,199
+protocols that you use to browse the web
+
+151
+00:07:05,478 --> 00:07:10,000
+every day um rest just builds right on
+
+152
+00:07:08,199 --> 00:07:11,840
+top of that but instead of passing web
+
+153
+00:07:10,000 --> 00:07:15,360
+pages back and forth it's passing data
+
+154
+00:07:11,839 --> 00:07:19,079
+back and forth um and typically that
+
+155
+00:07:15,360 --> 00:07:21,800
+data is represented as uh Json and Json
+
+156
+00:07:19,079 --> 00:07:23,800
+data structures um it doesn't have to be
+
+157
+00:07:21,800 --> 00:07:26,439
+but when we're talking about brappy Ry
+
+158
+00:07:23,800 --> 00:07:29,918
+defines everything in terms of Json so
+
+159
+00:07:26,439 --> 00:07:33,199
+um that's uh that's what we'll be
+
+160
+00:07:29,918 --> 00:07:36,240
+talking about going forward um so that's
+
+161
+00:07:33,199 --> 00:07:39,360
+sort of the the the technical part of
+
+162
+00:07:36,240 --> 00:07:41,680
+the um brappy
+
+163
+00:07:39,360 --> 00:07:44,360
+definition this is the really important
+
+164
+00:07:41,680 --> 00:07:47,800
+part that I I try to
+
+165
+00:07:44,360 --> 00:07:49,400
+emphasize um on on every talk that I
+
+166
+00:07:47,800 --> 00:07:53,199
+give
+
+167
+00:07:49,399 --> 00:07:57,598
+um brappy is a standardized
+
+168
+00:07:53,199 --> 00:08:00,280
+specification um so uh it's a defined
+
+169
+00:07:57,598 --> 00:08:04,240
+set of um
+
+170
+00:08:00,279 --> 00:08:06,638
+um standard data models and uh
+
+171
+00:08:04,240 --> 00:08:11,639
+structures for communicating this sort
+
+172
+00:08:06,639 --> 00:08:13,879
+of data um that standard was uh is
+
+173
+00:08:11,639 --> 00:08:19,519
+defined and maintained by the community
+
+174
+00:08:13,879 --> 00:08:23,960
+that uses it um and uh at its core rappy
+
+175
+00:08:19,519 --> 00:08:26,639
+is a technical specification um
+
+176
+00:08:23,959 --> 00:08:28,758
+so that's that's a really important
+
+177
+00:08:26,639 --> 00:08:31,879
+piece to understand and something that I
+
+178
+00:08:28,759 --> 00:08:34,200
+used to get you know back in 2017 when I
+
+179
+00:08:31,879 --> 00:08:38,120
+was first taking on this uh people were
+
+180
+00:08:34,200 --> 00:08:40,839
+asking me like oh give me give me the
+
+181
+00:08:38,120 --> 00:08:43,080
+the tool give me a link to download
+
+182
+00:08:40,839 --> 00:08:45,240
+brappy so I can be brappy compliant I
+
+183
+00:08:43,080 --> 00:08:48,080
+was like it doesn't work like that were
+
+184
+00:08:45,240 --> 00:08:49,720
+just we're just looking at a
+
+185
+00:08:48,080 --> 00:08:52,200
+specification a set of technical
+
+186
+00:08:49,720 --> 00:08:54,560
+documents that outline what the standard
+
+187
+00:08:52,200 --> 00:08:56,278
+is it's up to you to go you know
+
+188
+00:08:54,559 --> 00:08:58,239
+implement it in your own system in your
+
+189
+00:08:56,278 --> 00:09:01,519
+own tool connect it in you know whatever
+
+190
+00:08:58,240 --> 00:09:03,680
+way you develop your soft software um
+
+191
+00:09:01,519 --> 00:09:05,560
+and so I I try to make this point uh
+
+192
+00:09:03,679 --> 00:09:08,039
+really strongly every presentation I get
+
+193
+00:09:05,559 --> 00:09:10,919
+to uh you know get the get the right
+
+194
+00:09:08,039 --> 00:09:13,919
+message across about what brappy is now
+
+195
+00:09:10,919 --> 00:09:15,838
+that said there is as Kelly mentioned a
+
+196
+00:09:13,919 --> 00:09:18,159
+large community around Bry there are
+
+197
+00:09:15,839 --> 00:09:20,920
+tools to build that are already built to
+
+198
+00:09:18,159 --> 00:09:23,719
+help implement the specification there
+
+199
+00:09:20,919 --> 00:09:25,759
+are lots of tools available you know for
+
+200
+00:09:23,720 --> 00:09:27,399
+um reading and writing and interacting
+
+201
+00:09:25,759 --> 00:09:29,519
+with the specification already so you
+
+202
+00:09:27,399 --> 00:09:31,839
+don't have to start from scratch but
+
+203
+00:09:29,519 --> 00:09:34,159
+this is this is sort of the key the core
+
+204
+00:09:31,839 --> 00:09:35,680
+the core component of rppi is just this
+
+205
+00:09:34,159 --> 00:09:41,278
+technical
+
+206
+00:09:35,679 --> 00:09:44,078
+Spectrum um yeah so if we look at the uh
+
+207
+00:09:41,278 --> 00:09:45,958
+specification as a whole uh this is a
+
+208
+00:09:44,078 --> 00:09:48,559
+little bit difficult to see on the
+
+209
+00:09:45,958 --> 00:09:52,319
+slides I think maybe the one on the left
+
+210
+00:09:48,559 --> 00:09:54,199
+is a little clear to see but um yeah so
+
+211
+00:09:52,320 --> 00:09:58,120
+this uh is a
+
+212
+00:09:54,200 --> 00:10:00,480
+highlevel uh picture of um all the
+
+213
+00:09:58,120 --> 00:10:04,039
+different cont Concepts that grappy
+
+214
+00:10:00,480 --> 00:10:05,959
+supports the different domains um we
+
+215
+00:10:04,039 --> 00:10:11,399
+broke it up into these four different
+
+216
+00:10:05,958 --> 00:10:14,679
+modules uh core which mostly talks about
+
+217
+00:10:11,399 --> 00:10:16,200
+um trial and study management uh
+
+218
+00:10:14,679 --> 00:10:18,159
+germplasm talks about everything
+
+219
+00:10:16,200 --> 00:10:20,360
+germplasm genotyping everything
+
+220
+00:10:18,159 --> 00:10:22,439
+genotyping and phenotyping everything
+
+221
+00:10:20,360 --> 00:10:25,278
+phenotyping um we broke it up into these
+
+222
+00:10:22,440 --> 00:10:27,600
+four modules purely for organizational
+
+223
+00:10:25,278 --> 00:10:29,600
+sake they all interact the same way all
+
+224
+00:10:27,600 --> 00:10:31,240
+these different uh
+
+225
+00:10:29,600 --> 00:10:32,278
+objects you know interact with each
+
+226
+00:10:31,240 --> 00:10:34,320
+other you can see the different
+
+227
+00:10:32,278 --> 00:10:36,200
+connections across the different modules
+
+228
+00:10:34,320 --> 00:10:39,360
+but it was a lot easier to keep things
+
+229
+00:10:36,200 --> 00:10:41,839
+organized and keep myself sane when I'm
+
+230
+00:10:39,360 --> 00:10:45,839
+looking for stuff within the
+
+231
+00:10:41,839 --> 00:10:48,399
+specification um and yeah you can see
+
+232
+00:10:45,839 --> 00:10:51,760
+the the variety of different topics and
+
+233
+00:10:48,399 --> 00:10:54,679
+and Concepts each one of these Concepts
+
+234
+00:10:51,759 --> 00:10:56,838
+listed up here um has a full set of
+
+235
+00:10:54,679 --> 00:10:59,879
+metadata associated with it you know
+
+236
+00:10:56,839 --> 00:11:02,720
+it's all part of the specification um
+
+237
+00:10:59,879 --> 00:11:03,320
+and you know I'll I'll emphasize this at
+
+238
+00:11:02,720 --> 00:11:06,560
+the
+
+239
+00:11:03,320 --> 00:11:08,440
+end on ry. org our website you can go
+
+240
+00:11:06,559 --> 00:11:10,078
+look the full specification and dive
+
+241
+00:11:08,440 --> 00:11:13,600
+down into each one of these elements to
+
+242
+00:11:10,078 --> 00:11:16,599
+see sort of the full set of metadata um
+
+243
+00:11:13,600 --> 00:11:16,600
+buried in each one of
+
+244
+00:11:18,278 --> 00:11:25,039
+them okay
+
+245
+00:11:20,519 --> 00:11:27,278
+so roughly how does this work um so yeah
+
+246
+00:11:25,039 --> 00:11:31,199
+we we talked about that request response
+
+247
+00:11:27,278 --> 00:11:36,240
+Loop uh ear for sort of a generic web
+
+248
+00:11:31,200 --> 00:11:40,440
+service um this is uh sort of a typical
+
+249
+00:11:36,240 --> 00:11:43,680
+picture of what you might find for um
+
+250
+00:11:40,440 --> 00:11:47,320
+two applications interacting via brappy
+
+251
+00:11:43,679 --> 00:11:49,599
+um and I have bolded here a couple of
+
+252
+00:11:47,320 --> 00:11:51,278
+different sections so the these two
+
+253
+00:11:49,600 --> 00:11:54,639
+application Stacks applications are
+
+254
+00:11:51,278 --> 00:11:56,559
+typically built in layers um so uh
+
+255
+00:11:54,639 --> 00:11:58,039
+you've got the the client application
+
+256
+00:11:56,559 --> 00:12:00,239
+which has you know maybe some user
+
+257
+00:11:58,039 --> 00:12:03,958
+interface that's that you're interacting
+
+258
+00:12:00,240 --> 00:12:05,560
+with um some controller and then these
+
+259
+00:12:03,958 --> 00:12:08,958
+these two bolded sections here's the
+
+260
+00:12:05,559 --> 00:12:13,638
+request Builder and the response Handler
+
+261
+00:12:08,958 --> 00:12:16,599
+um these two pieces are responsible for
+
+262
+00:12:13,639 --> 00:12:19,360
+taking the internal data structures of
+
+263
+00:12:16,600 --> 00:12:22,959
+the client application and mapping them
+
+264
+00:12:19,360 --> 00:12:24,600
+to the brappy specification version um
+
+265
+00:12:22,958 --> 00:12:26,399
+so whatever you use internally you keep
+
+266
+00:12:24,600 --> 00:12:27,920
+using that internally for your own stuff
+
+267
+00:12:26,399 --> 00:12:31,000
+but as soon as you're trying to send a
+
+268
+00:12:27,919 --> 00:12:33,078
+request out you need to map it transform
+
+269
+00:12:31,000 --> 00:12:36,078
+it into the brappy
+
+270
+00:12:33,078 --> 00:12:37,638
+structure send out that request with the
+
+271
+00:12:36,078 --> 00:12:40,879
+HTTP
+
+272
+00:12:37,639 --> 00:12:43,240
+service um that's going to hit the the
+
+273
+00:12:40,879 --> 00:12:47,120
+API layer of the service application of
+
+274
+00:12:43,240 --> 00:12:48,879
+the server side application um and be
+
+275
+00:12:47,120 --> 00:12:50,600
+consumed and then again we've got this
+
+276
+00:12:48,879 --> 00:12:53,240
+object mapping layer which is
+
+277
+00:12:50,600 --> 00:12:56,519
+responsible for doing the reverse taking
+
+278
+00:12:53,240 --> 00:13:00,120
+the the brappy object that it's received
+
+279
+00:12:56,519 --> 00:13:01,959
+in Json and convert in it mapping it to
+
+280
+00:13:00,120 --> 00:13:03,799
+whatever they use internally for their
+
+281
+00:13:01,958 --> 00:13:06,799
+own data structure so these two
+
+282
+00:13:03,799 --> 00:13:08,319
+applications don't have to use the same
+
+283
+00:13:06,799 --> 00:13:10,039
+types of data structures they don't have
+
+284
+00:13:08,320 --> 00:13:13,440
+to be written in the same programming
+
+285
+00:13:10,039 --> 00:13:17,639
+language um because the data is being
+
+286
+00:13:13,440 --> 00:13:20,360
+transferred using this uh standard you
+
+287
+00:13:17,639 --> 00:13:22,039
+know written in Json and and uh
+
+288
+00:13:20,360 --> 00:13:23,800
+transferred over
+
+289
+00:13:22,039 --> 00:13:26,198
+HTTP
+
+290
+00:13:23,799 --> 00:13:29,120
+um they they just need to have this
+
+291
+00:13:26,198 --> 00:13:31,319
+mapping layer to uh convert from the own
+
+292
+00:13:29,120 --> 00:13:34,039
+internal standard to the to the brappy
+
+293
+00:13:31,320 --> 00:13:36,079
+spec um and then again you know the
+
+294
+00:13:34,039 --> 00:13:37,838
+reverse happens on the response so the
+
+295
+00:13:36,078 --> 00:13:40,319
+server choose on the request does
+
+296
+00:13:37,839 --> 00:13:41,680
+something about it sends a response back
+
+297
+00:13:40,320 --> 00:13:44,360
+Maps it into
+
+298
+00:13:41,679 --> 00:13:45,879
+brappy sends the brappy response back
+
+299
+00:13:44,360 --> 00:13:47,959
+and the client response Handler knows
+
+300
+00:13:45,879 --> 00:13:51,078
+how to consume that read that as brappy
+
+301
+00:13:47,958 --> 00:13:54,039
+and turn it into its own internal
+
+302
+00:13:51,078 --> 00:13:55,559
+spec um so that's you know there are
+
+303
+00:13:54,039 --> 00:13:58,000
+lots of different use cases we'll talk
+
+304
+00:13:55,559 --> 00:13:59,559
+about later you know about how you can
+
+305
+00:13:58,000 --> 00:14:01,120
+put these sorts of things together and
+
+306
+00:13:59,559 --> 00:14:03,958
+what these two applications might look
+
+307
+00:14:01,120 --> 00:14:08,078
+like but this is sort of the general
+
+308
+00:14:03,958 --> 00:14:10,119
+flow excuse me of mapping um brappy data
+
+309
+00:14:08,078 --> 00:14:13,198
+structures back and
+
+310
+00:14:10,120 --> 00:14:15,278
+forth um okay so yeah let's talk about
+
+311
+00:14:13,198 --> 00:14:18,679
+why do we need brappy we're back to this
+
+312
+00:14:15,278 --> 00:14:21,639
+uh uh manual interoperability
+
+313
+00:14:18,679 --> 00:14:26,278
+cartoon have here um yeah we've already
+
+314
+00:14:21,639 --> 00:14:30,519
+sort of discussed this it's slow and uh
+
+315
+00:14:26,278 --> 00:14:32,480
+messy and you know uh potentially uh
+
+316
+00:14:30,519 --> 00:14:34,600
+insecure depending on you know what
+
+317
+00:14:32,480 --> 00:14:37,039
+you're where you're putting these
+
+318
+00:14:34,600 --> 00:14:39,600
+files um so let's change the picture a
+
+319
+00:14:37,039 --> 00:14:41,639
+little bit and try and automate this so
+
+320
+00:14:39,600 --> 00:14:43,600
+now we've got a lot less user
+
+321
+00:14:41,639 --> 00:14:45,639
+interaction no you know a lot less users
+
+322
+00:14:43,600 --> 00:14:49,120
+are touching the data to to manipulate
+
+323
+00:14:45,639 --> 00:14:54,360
+it in any way um we've got our brappy
+
+324
+00:14:49,120 --> 00:14:57,000
+layers um here and now just from the
+
+325
+00:14:54,360 --> 00:14:59,399
+second application our user can request
+
+326
+00:14:57,000 --> 00:15:01,159
+data from the first application it gets
+
+327
+00:14:59,399 --> 00:15:04,078
+automatically mapped transferred and
+
+328
+00:15:01,159 --> 00:15:05,838
+mapped again and now the the user can
+
+329
+00:15:04,078 --> 00:15:08,559
+interact with that data however it needs
+
+330
+00:15:05,839 --> 00:15:10,600
+to and we don't even need to store it
+
+331
+00:15:08,559 --> 00:15:12,439
+here you know in the in this previous
+
+332
+00:15:10,600 --> 00:15:14,079
+picture we're basically making a copy of
+
+333
+00:15:12,440 --> 00:15:16,720
+the data storing it somewhere else so
+
+334
+00:15:14,078 --> 00:15:19,319
+that we can manipulate it here we can
+
+335
+00:15:16,720 --> 00:15:22,320
+transfer the data it can live on the
+
+336
+00:15:19,320 --> 00:15:25,120
+first application and and stay there and
+
+337
+00:15:22,320 --> 00:15:27,040
+the user can use it interact with it
+
+338
+00:15:25,120 --> 00:15:28,959
+maybe store off a copy if they need to
+
+339
+00:15:27,039 --> 00:15:31,719
+but that's not required anymore or they
+
+340
+00:15:28,958 --> 00:15:33,078
+can uh you know just maybe they're just
+
+341
+00:15:31,720 --> 00:15:34,839
+trying to read the data maybe it's just
+
+342
+00:15:33,078 --> 00:15:36,399
+for reference maybe you know they just
+
+343
+00:15:34,839 --> 00:15:38,160
+need to perform some calculation and
+
+344
+00:15:36,399 --> 00:15:41,399
+then store that calculation whatever it
+
+345
+00:15:38,159 --> 00:15:45,120
+is um they don't need to make a copy of
+
+346
+00:15:41,399 --> 00:15:48,639
+it and uh it flows flows
+
+347
+00:15:45,120 --> 00:15:52,839
+automatically um so you can do this sort
+
+348
+00:15:48,639 --> 00:15:56,480
+of setup with any API um you know that
+
+349
+00:15:52,839 --> 00:15:59,440
+the API is it is itself what automates
+
+350
+00:15:56,480 --> 00:16:01,879
+this process um and this this data flow
+
+351
+00:15:59,440 --> 00:16:04,920
+between the two applications the extra
+
+352
+00:16:01,879 --> 00:16:06,559
+little piece that brappy brings is the
+
+353
+00:16:04,919 --> 00:16:10,479
+spe the standard the standard
+
+354
+00:16:06,559 --> 00:16:13,599
+specification so now um we can swap out
+
+355
+00:16:10,480 --> 00:16:15,120
+one application for another and it
+
+356
+00:16:13,600 --> 00:16:16,480
+should still work exactly the same
+
+357
+00:16:15,120 --> 00:16:20,278
+because all these applications are
+
+358
+00:16:16,480 --> 00:16:23,039
+talking the same language um uh using
+
+359
+00:16:20,278 --> 00:16:24,759
+using the brappy specification um and we
+
+360
+00:16:23,039 --> 00:16:27,000
+can swap it out for a different type of
+
+361
+00:16:24,759 --> 00:16:28,879
+application um you know it's some sort
+
+362
+00:16:27,000 --> 00:16:33,278
+of data warehouse in this case instead
+
+363
+00:16:28,879 --> 00:16:35,439
+of uh another um uh website whatever it
+
+364
+00:16:33,278 --> 00:16:38,120
+is because they're all talking the same
+
+365
+00:16:35,440 --> 00:16:41,000
+the same uh data structures talking the
+
+366
+00:16:38,120 --> 00:16:43,799
+same language um we can easily
+
+367
+00:16:41,000 --> 00:16:43,799
+interchange those
+
+368
+00:16:45,120 --> 00:16:50,399
+out um I should say in theory this
+
+369
+00:16:48,879 --> 00:16:52,318
+doesn't always work in practice but it's
+
+370
+00:16:50,399 --> 00:16:56,240
+a good starting
+
+371
+00:16:52,318 --> 00:17:00,278
+point um yeah so uh let's talk about
+
+372
+00:16:56,240 --> 00:17:05,078
+some of the uh appli ation and impacts
+
+373
+00:17:00,278 --> 00:17:08,439
+um that we've had already um there are a
+
+374
+00:17:05,078 --> 00:17:10,078
+number of solved use cases and the the
+
+375
+00:17:08,439 --> 00:17:11,519
+the ones I put up on the screen here
+
+376
+00:17:10,078 --> 00:17:12,678
+there're they're a bunch of solved use
+
+377
+00:17:11,519 --> 00:17:15,318
+cases but the ones I put up on the
+
+378
+00:17:12,679 --> 00:17:19,759
+screen here were specifically um these
+
+379
+00:17:15,318 --> 00:17:23,399
+were specifically chosen uh from our
+
+380
+00:17:19,759 --> 00:17:27,359
+first uh grant our first funding Grant
+
+381
+00:17:23,400 --> 00:17:30,559
+we set out um you know to try and solve
+
+382
+00:17:27,359 --> 00:17:31,839
+a a small set use cases with grappy and
+
+383
+00:17:30,558 --> 00:17:34,839
+say you know these are the ones we're
+
+384
+00:17:31,839 --> 00:17:37,480
+definitely going to tackle um and we
+
+385
+00:17:34,839 --> 00:17:41,240
+succeeded um so these These are the the
+
+386
+00:17:37,480 --> 00:17:44,038
+three or four that we uh you know
+
+387
+00:17:41,240 --> 00:17:46,240
+originally set out for and succeeded on
+
+388
+00:17:44,038 --> 00:17:48,319
+there are you know lots of other use
+
+389
+00:17:46,240 --> 00:17:50,319
+cases now and we'll look at that in in a
+
+390
+00:17:48,319 --> 00:17:51,798
+second but um these are some of the
+
+391
+00:17:50,319 --> 00:17:56,480
+basic ones
+
+392
+00:17:51,798 --> 00:17:59,839
+so uh first of all um looking at data
+
+393
+00:17:56,480 --> 00:18:04,679
+collection so uh did a lot of work with
+
+394
+00:17:59,839 --> 00:18:08,079
+the KSU field book uh folks um pheno
+
+395
+00:18:04,679 --> 00:18:11,440
+apps as they're they're now called um
+
+396
+00:18:08,079 --> 00:18:16,158
+and basically adding uh
+
+397
+00:18:11,440 --> 00:18:19,480
+rappy uh capabilities to the fieldbook
+
+398
+00:18:16,159 --> 00:18:22,520
+app so now uh people in the field they
+
+399
+00:18:19,480 --> 00:18:24,839
+can um you know just from from the app
+
+400
+00:18:22,519 --> 00:18:27,319
+they can download direct from whatever
+
+401
+00:18:24,839 --> 00:18:30,079
+database they're using uh get the field
+
+402
+00:18:27,319 --> 00:18:31,480
+layout and everything downloaded right
+
+403
+00:18:30,079 --> 00:18:33,038
+into their and and all the traits
+
+404
+00:18:31,480 --> 00:18:35,759
+they're working on downloaded right into
+
+405
+00:18:33,038 --> 00:18:38,119
+their app they go out collect whatever
+
+406
+00:18:35,759 --> 00:18:41,240
+data they need press the button and it
+
+407
+00:18:38,119 --> 00:18:44,199
+all gets pushed back up to the server um
+
+408
+00:18:41,240 --> 00:18:47,839
+this is sort of the primary example of
+
+409
+00:18:44,200 --> 00:18:50,159
+the the manual data transfer I was
+
+410
+00:18:47,839 --> 00:18:54,158
+talking about earlier where they they
+
+411
+00:18:50,159 --> 00:18:56,679
+used to have to download a file put it
+
+412
+00:18:54,159 --> 00:18:58,360
+on some cloud service or email it to
+
+413
+00:18:56,679 --> 00:19:00,880
+themselves bring it onto their phone
+
+414
+00:18:58,359 --> 00:19:02,519
+phone upload it into the app and then
+
+415
+00:19:00,880 --> 00:19:05,039
+reverse that process to get it back to
+
+416
+00:19:02,519 --> 00:19:07,599
+the server um so yeah that was a that
+
+417
+00:19:05,038 --> 00:19:11,079
+was a big win to be able to do that
+
+418
+00:19:07,599 --> 00:19:14,678
+automatically um via
+
+419
+00:19:11,079 --> 00:19:18,439
+brappy um this is another one in terms
+
+420
+00:19:14,679 --> 00:19:21,000
+of uh sample management managing samples
+
+421
+00:19:18,440 --> 00:19:24,400
+specifically going off to um some some
+
+422
+00:19:21,000 --> 00:19:29,079
+genotyping lab um and you know making
+
+423
+00:19:24,400 --> 00:19:31,440
+sure that the sample metadata uh remains
+
+424
+00:19:29,079 --> 00:19:33,480
+consistent between all the different uh
+
+425
+00:19:31,440 --> 00:19:37,558
+labs and applications that are involved
+
+426
+00:19:33,480 --> 00:19:40,000
+in this um we worked with a couple of
+
+427
+00:19:37,558 --> 00:19:43,399
+different genotyping Labs uh to make
+
+428
+00:19:40,000 --> 00:19:45,640
+sure we had the right uh standards that
+
+429
+00:19:43,400 --> 00:19:48,360
+would interact with their systems um
+
+430
+00:19:45,640 --> 00:19:50,320
+built these data structures so that um
+
+431
+00:19:48,359 --> 00:19:53,359
+from some sample management tool you
+
+432
+00:19:50,319 --> 00:19:55,839
+could send all the metadata
+
+433
+00:19:53,359 --> 00:19:58,959
+automatically along with your physical s
+
+434
+00:19:55,839 --> 00:20:01,759
+shipment of samples to whatever lab
+
+435
+00:19:58,960 --> 00:20:04,840
+they would have all the metadata um you
+
+436
+00:20:01,759 --> 00:20:09,240
+know exact copy of whatever you had and
+
+437
+00:20:04,839 --> 00:20:11,519
+then that uh copy of of sample metadata
+
+438
+00:20:09,240 --> 00:20:13,000
+could also go to your uh genotyping
+
+439
+00:20:11,519 --> 00:20:17,279
+database wherever you're storing your
+
+440
+00:20:13,000 --> 00:20:19,440
+final uh genotype results um you know
+
+441
+00:20:17,279 --> 00:20:21,960
+along with some some automated
+
+442
+00:20:19,440 --> 00:20:24,120
+functionalities to get the the results
+
+443
+00:20:21,960 --> 00:20:27,798
+from the lab to the database wherever
+
+444
+00:20:24,119 --> 00:20:31,798
+that might live um so that was that was
+
+445
+00:20:27,798 --> 00:20:34,720
+a big success um this is one that's uh
+
+446
+00:20:31,798 --> 00:20:37,440
+still being actively worked on and and
+
+447
+00:20:34,720 --> 00:20:41,798
+implemented right now
+
+448
+00:20:37,440 --> 00:20:44,440
+um the the basic idea being um
+
+449
+00:20:41,798 --> 00:20:48,639
+pulling uh data from from a number of
+
+450
+00:20:44,440 --> 00:20:52,480
+different data sources uh into some some
+
+451
+00:20:48,640 --> 00:20:54,520
+kind of uh analytics engine um run your
+
+452
+00:20:52,480 --> 00:20:57,480
+your models your calculations whatever
+
+453
+00:20:54,519 --> 00:21:00,918
+you're trying to do um and provide an
+
+454
+00:20:57,480 --> 00:21:04,159
+output so again just trying to avoid
+
+455
+00:21:00,919 --> 00:21:07,640
+moving physical files into some sort of
+
+456
+00:21:04,159 --> 00:21:10,960
+calculation engine um and have this be
+
+457
+00:21:07,640 --> 00:21:14,240
+an automated flow so when you've got uh
+
+458
+00:21:10,960 --> 00:21:15,640
+you know regular breeding processes that
+
+459
+00:21:14,240 --> 00:21:18,679
+you know you're going to run these same
+
+460
+00:21:15,640 --> 00:21:21,440
+calculations every year every month
+
+461
+00:21:18,679 --> 00:21:23,278
+whatever um you've got this automated
+
+462
+00:21:21,440 --> 00:21:26,038
+flow to just do it at a press of a
+
+463
+00:21:23,278 --> 00:21:30,558
+button pull the data in run your
+
+464
+00:21:26,038 --> 00:21:32,000
+analytics and present the the report um
+
+465
+00:21:30,558 --> 00:21:33,879
+like I said there's a couple of couple
+
+466
+00:21:32,000 --> 00:21:37,480
+of different projects actively working
+
+467
+00:21:33,880 --> 00:21:40,679
+on this right now um and and setting up
+
+468
+00:21:37,480 --> 00:21:40,679
+this this type of
+
+469
+00:21:40,720 --> 00:21:50,600
+functionality and finally the braps um
+
+470
+00:21:45,000 --> 00:21:54,240
+so braps uh I I had been working uh on
+
+471
+00:21:50,599 --> 00:21:59,278
+the brappy project for maybe six months
+
+472
+00:21:54,240 --> 00:22:00,839
+and uh Lucas Mueller um came running
+
+473
+00:21:59,278 --> 00:22:03,480
+into my
+
+474
+00:22:00,839 --> 00:22:06,119
+office and he he just stood in my
+
+475
+00:22:03,480 --> 00:22:07,120
+doorway and went we need PRS and then
+
+476
+00:22:06,119 --> 00:22:10,000
+ran
+
+477
+00:22:07,119 --> 00:22:12,558
+away and I said
+
+478
+00:22:10,000 --> 00:22:14,759
+what um but it it turned out to be a
+
+479
+00:22:12,558 --> 00:22:18,399
+really good idea once I caught him and
+
+480
+00:22:14,759 --> 00:22:21,679
+and had him explain um
+
+481
+00:22:18,400 --> 00:22:23,440
+so the the concept around BRS is there
+
+482
+00:22:21,679 --> 00:22:26,360
+little
+
+483
+00:22:23,440 --> 00:22:28,720
+self-contained uh applications that run
+
+484
+00:22:26,359 --> 00:22:32,959
+entirely on the brappy back
+
+485
+00:22:28,720 --> 00:22:34,480
+um and so someone can write a lot of
+
+486
+00:22:32,960 --> 00:22:36,278
+them are are written in JavaScript they
+
+487
+00:22:34,480 --> 00:22:37,960
+don't have to be but a lot of them are
+
+488
+00:22:36,278 --> 00:22:40,759
+little JavaScript web apps that you can
+
+489
+00:22:37,960 --> 00:22:44,880
+just plug into your own website um and
+
+490
+00:22:40,759 --> 00:22:47,640
+as long as you've got the um you know
+
+491
+00:22:44,880 --> 00:22:50,720
+the the brappy data sources implemented
+
+492
+00:22:47,640 --> 00:22:54,600
+to that the app requires um you have
+
+493
+00:22:50,720 --> 00:22:57,640
+this new functionality so yeah um uh
+
+494
+00:22:54,599 --> 00:22:58,759
+different um visualizations pedigree
+
+495
+00:22:57,640 --> 00:23:02,520
+viewers
+
+496
+00:22:58,759 --> 00:23:06,278
+um sort of the one buried there is a
+
+497
+00:23:02,519 --> 00:23:07,798
+um plot mapper you know over over a real
+
+498
+00:23:06,278 --> 00:23:11,359
+um
+
+499
+00:23:07,798 --> 00:23:13,558
+geolocation um so yeah the these these
+
+500
+00:23:11,359 --> 00:23:15,319
+were really cool and one of the other
+
+501
+00:23:13,558 --> 00:23:19,119
+cool things about this is it it touches
+
+502
+00:23:15,319 --> 00:23:22,399
+on sort of a a big data concept where um
+
+503
+00:23:19,119 --> 00:23:24,839
+instead of moving your data let your
+
+504
+00:23:22,400 --> 00:23:28,159
+data live where it is because it's
+
+505
+00:23:24,839 --> 00:23:29,558
+really big and a pain to move instead
+
+506
+00:23:28,159 --> 00:23:32,679
+bring your applications bring your
+
+507
+00:23:29,558 --> 00:23:35,119
+software to the data um and so this was
+
+508
+00:23:32,679 --> 00:23:37,038
+another you know we're not just sharing
+
+509
+00:23:35,119 --> 00:23:39,199
+data within the Rapid Community we're
+
+510
+00:23:37,038 --> 00:23:41,038
+actually sharing applications because
+
+511
+00:23:39,200 --> 00:23:43,519
+those are a lot easier to move and to
+
+512
+00:23:41,038 --> 00:23:46,798
+implement other places um so this was
+
+513
+00:23:43,519 --> 00:23:48,359
+this was a really cool uh concept that
+
+514
+00:23:46,798 --> 00:23:50,679
+that we've been developing and there
+
+515
+00:23:48,359 --> 00:23:53,918
+there are a number of PRS available now
+
+516
+00:23:50,679 --> 00:23:56,880
+and a few more that are being developed
+
+517
+00:23:53,919 --> 00:24:00,159
+by various members of the
+
+518
+00:23:56,880 --> 00:24:02,559
+community um yeah and I'll quickly touch
+
+519
+00:24:00,159 --> 00:24:07,120
+on you know the I mentioned there's a
+
+520
+00:24:02,558 --> 00:24:10,119
+lot more use cases um uh within the
+
+521
+00:24:07,119 --> 00:24:13,439
+community right now these are some of
+
+522
+00:24:10,119 --> 00:24:16,439
+them um there's a whole page on bie.org
+
+523
+00:24:13,440 --> 00:24:18,519
+that lists out the compatible software
+
+524
+00:24:16,440 --> 00:24:20,798
+that people have volunteered to register
+
+525
+00:24:18,519 --> 00:24:23,798
+there's still more that people haven't
+
+526
+00:24:20,798 --> 00:24:25,398
+put on there yet um but yeah we've
+
+527
+00:24:23,798 --> 00:24:28,158
+started building a list of all the
+
+528
+00:24:25,398 --> 00:24:30,398
+different compatible software packages
+
+529
+00:24:28,159 --> 00:24:32,600
+and applications that are brappy
+
+530
+00:24:30,398 --> 00:24:34,479
+compatible right now um so yeah
+
+531
+00:24:32,599 --> 00:24:36,798
+encourage you to go check that out on on
+
+532
+00:24:34,480 --> 00:24:39,240
+brappy it should be pretty easy to find
+
+533
+00:24:36,798 --> 00:24:42,918
+the the compatible software
+
+534
+00:24:39,240 --> 00:24:45,558
+page um and you know none of this would
+
+535
+00:24:42,919 --> 00:24:48,440
+be possible without the brappy community
+
+536
+00:24:45,558 --> 00:24:51,918
+so I'll I'll end on on sort of an
+
+537
+00:24:48,440 --> 00:24:56,320
+overview of the the brappy community
+
+538
+00:24:51,919 --> 00:24:59,159
+um uh we've got uh roughly
+
+539
+00:24:56,319 --> 00:25:01,439
+37 uh part partner organizations
+
+540
+00:24:59,159 --> 00:25:03,000
+registered partner organizations it's
+
+541
+00:25:01,440 --> 00:25:05,399
+really easy to become a partner
+
+542
+00:25:03,000 --> 00:25:07,200
+organization you send me the logo for
+
+543
+00:25:05,398 --> 00:25:08,879
+your organization and I put it on the
+
+544
+00:25:07,200 --> 00:25:10,440
+website and there you are you're
+
+545
+00:25:08,880 --> 00:25:14,880
+registered
+
+546
+00:25:10,440 --> 00:25:16,558
+um yeah roughly uh you know 200 to
+
+547
+00:25:14,880 --> 00:25:19,559
+250
+
+548
+00:25:16,558 --> 00:25:22,480
+um uh plant breeders software developers
+
+549
+00:25:19,558 --> 00:25:25,200
+data managers you know other expert
+
+550
+00:25:22,480 --> 00:25:27,798
+scientists in their field um all working
+
+551
+00:25:25,200 --> 00:25:31,319
+together building the software that's
+
+552
+00:25:27,798 --> 00:25:33,599
+that's compatible um helping build the
+
+553
+00:25:31,319 --> 00:25:36,000
+the standards you know we we really need
+
+554
+00:25:33,599 --> 00:25:37,759
+to come we we really needed to come
+
+555
+00:25:36,000 --> 00:25:39,919
+together as a community to decide on
+
+556
+00:25:37,759 --> 00:25:42,798
+what these standards were U make sure
+
+557
+00:25:39,919 --> 00:25:45,080
+that they're useful for everyone um
+
+558
+00:25:42,798 --> 00:25:48,798
+that's you know one of one of my rules
+
+559
+00:25:45,079 --> 00:25:51,119
+if someone comes to me uh with a new
+
+560
+00:25:48,798 --> 00:25:52,918
+idea for a new concept or or new piece
+
+561
+00:25:51,119 --> 00:25:55,918
+of metadata they want to add to the
+
+562
+00:25:52,919 --> 00:25:57,679
+standard I you know try and tease out of
+
+563
+00:25:55,919 --> 00:25:59,200
+them first is this going to be use
+
+564
+00:25:57,679 --> 00:26:02,960
+useful for you or is this going to be
+
+565
+00:25:59,200 --> 00:26:06,440
+useful for everyone else um and usually
+
+566
+00:26:02,960 --> 00:26:09,720
+if I can find two or three different
+
+567
+00:26:06,440 --> 00:26:12,240
+organizations that all agree that yes
+
+568
+00:26:09,720 --> 00:26:14,319
+this new piece would be useful then
+
+569
+00:26:12,240 --> 00:26:16,399
+we'll start working on adding it if it's
+
+570
+00:26:14,319 --> 00:26:19,720
+just one group saying oh we need this
+
+571
+00:26:16,398 --> 00:26:22,678
+thing in the spec then maybe we'll hold
+
+572
+00:26:19,720 --> 00:26:24,319
+off until until it becomes more
+
+573
+00:26:22,679 --> 00:26:28,200
+useful
+
+574
+00:26:24,319 --> 00:26:31,439
+um uh yeah we also have a a full
+
+575
+00:26:28,200 --> 00:26:34,558
+um uh Advisory Board six elected
+
+576
+00:26:31,440 --> 00:26:37,038
+officials from the uh from members of
+
+577
+00:26:34,558 --> 00:26:40,678
+the community uh make up that Advisory
+
+578
+00:26:37,038 --> 00:26:42,240
+Board um and uh they're they're one of
+
+579
+00:26:40,679 --> 00:26:45,240
+the driving forces that sort of
+
+580
+00:26:42,240 --> 00:26:47,599
+represent the community um help me make
+
+581
+00:26:45,240 --> 00:26:49,319
+quick decisions on on you know building
+
+582
+00:26:47,599 --> 00:26:52,959
+out the spec um they're one of the
+
+583
+00:26:49,319 --> 00:26:54,480
+resources I go to when I'm you know you
+
+584
+00:26:52,960 --> 00:26:56,240
+know I'm not an expert in plant breeding
+
+585
+00:26:54,480 --> 00:26:58,558
+I'm a software guy so if there are
+
+586
+00:26:56,240 --> 00:27:00,440
+questions on the science of it or what
+
+587
+00:26:58,558 --> 00:27:02,798
+makes sense how to how to construct the
+
+588
+00:27:00,440 --> 00:27:05,320
+spec um they're generally the group that
+
+589
+00:27:02,798 --> 00:27:05,319
+I go to
+
+590
+00:27:05,398 --> 00:27:11,519
+first um this is a slide I like showing
+
+591
+00:27:09,200 --> 00:27:14,720
+uh just uh showing the the different
+
+592
+00:27:11,519 --> 00:27:16,839
+organizations that uh we've worked with
+
+593
+00:27:14,720 --> 00:27:18,759
+um Kelly wasn't joking when he said you
+
+594
+00:27:16,839 --> 00:27:21,720
+know traveling all over the world uh
+
+595
+00:27:18,759 --> 00:27:23,759
+visiting these different uh groups and
+
+596
+00:27:21,720 --> 00:27:26,000
+the the different science and different
+
+597
+00:27:23,759 --> 00:27:28,119
+software they're they're all producing
+
+598
+00:27:26,000 --> 00:27:32,798
+um it's yeah it's very exciting to see
+
+599
+00:27:28,119 --> 00:27:32,798
+it all on one uh global
+
+600
+00:27:33,038 --> 00:27:39,759
+map um and finally the the hackathons um
+
+601
+00:27:37,200 --> 00:27:41,278
+so one of
+
+602
+00:27:39,759 --> 00:27:44,119
+the
+
+603
+00:27:41,278 --> 00:27:46,240
+primary ways that this community gets
+
+604
+00:27:44,119 --> 00:27:48,119
+together and and stays together is
+
+605
+00:27:46,240 --> 00:27:52,960
+through hackathons we've run hackathons
+
+606
+00:27:48,119 --> 00:27:57,359
+about twice a year um post covid uh
+
+607
+00:27:52,960 --> 00:27:58,480
+we're doing uh one iners and one virtual
+
+608
+00:27:57,359 --> 00:28:03,119
+uh each
+
+609
+00:27:58,480 --> 00:28:05,960
+year um and yeah this this was you know
+
+610
+00:28:03,119 --> 00:28:09,798
+an opportunity for all of these folks to
+
+611
+00:28:05,960 --> 00:28:12,679
+get together talk in person um you know
+
+612
+00:28:09,798 --> 00:28:14,158
+build projects with each other you know
+
+613
+00:28:12,679 --> 00:28:17,519
+during that week the hackathons are
+
+614
+00:28:14,159 --> 00:28:20,080
+usually a week long um and we all get to
+
+615
+00:28:17,519 --> 00:28:21,960
+see each other in person and uh build
+
+616
+00:28:20,079 --> 00:28:23,960
+all these different tools together and
+
+617
+00:28:21,960 --> 00:28:26,679
+talk about the specification and come up
+
+618
+00:28:23,960 --> 00:28:29,640
+with new ideas um our most recent
+
+619
+00:28:26,679 --> 00:28:33,038
+inperson hack on was uh this past spring
+
+620
+00:28:29,640 --> 00:28:35,159
+in South Carolina um our most recent
+
+621
+00:28:33,038 --> 00:28:37,679
+hackathon at all was actually a virtual
+
+622
+00:28:35,159 --> 00:28:39,559
+one that just wrapped up at the end of
+
+623
+00:28:37,679 --> 00:28:42,759
+October
+
+624
+00:28:39,558 --> 00:28:45,759
+um it's tough to get group photos from
+
+625
+00:28:42,759 --> 00:28:48,839
+virtual hackathons though
+
+626
+00:28:45,759 --> 00:28:52,960
+um yeah and
+
+627
+00:28:48,839 --> 00:28:56,879
+um uh bunch of resources here um if
+
+628
+00:28:52,960 --> 00:28:58,360
+anyone's interested in learning more um
+
+629
+00:28:56,880 --> 00:29:02,000
+like I said you know all this is
+
+630
+00:28:58,359 --> 00:29:02,000
+available on ri.org
+
+631
+00:29:02,079 --> 00:29:07,398
+um and uh yeah there's a there's a
+
+632
+00:29:05,640 --> 00:29:09,919
+contact page you can join our mailing
+
+633
+00:29:07,398 --> 00:29:13,038
+list or our slack Channel um if you want
+
+634
+00:29:09,919 --> 00:29:15,919
+to get more involved um and I'll leave
+
+635
+00:29:13,038 --> 00:29:21,079
+it there if there are any
+
+636
+00:29:15,919 --> 00:29:23,320
+questions um that's a good question so
+
+637
+00:29:21,079 --> 00:29:24,720
+um generally speaking there needs to be
+
+638
+00:29:23,319 --> 00:29:26,599
+a mapping layer because we're usually
+
+639
+00:29:24,720 --> 00:29:28,440
+working with systems that already exist
+
+640
+00:29:26,599 --> 00:29:29,839
+and we're adding crappy to them so we
+
+641
+00:29:28,440 --> 00:29:32,360
+don't want to you know redesign their
+
+642
+00:29:29,839 --> 00:29:34,639
+whole storage system just to to make
+
+643
+00:29:32,359 --> 00:29:37,158
+them compatible so most of the time
+
+644
+00:29:34,640 --> 00:29:39,880
+we're talking about mapping and and uh
+
+645
+00:29:37,159 --> 00:29:44,840
+making things compatible um there are a
+
+646
+00:29:39,880 --> 00:29:46,840
+couple of projects um going on now
+
+647
+00:29:44,839 --> 00:29:50,278
+somewhat recent projects where people
+
+648
+00:29:46,839 --> 00:29:54,278
+are taking the brappy specification and
+
+649
+00:29:50,278 --> 00:29:57,159
+adapting it for uh a database schema
+
+650
+00:29:54,278 --> 00:30:00,519
+basically um and then in that way it's
+
+651
+00:29:57,159 --> 00:30:01,919
+it's a much more direct translation um
+
+652
+00:30:00,519 --> 00:30:05,200
+and so there are there are some of these
+
+653
+00:30:01,919 --> 00:30:09,000
+projects where you can like download the
+
+654
+00:30:05,200 --> 00:30:11,278
+um the the brappy schema database and
+
+655
+00:30:09,000 --> 00:30:13,398
+it'll spin up a full full database with
+
+656
+00:30:11,278 --> 00:30:15,720
+all the brappy compatibilities built
+
+657
+00:30:13,398 --> 00:30:18,599
+into it um but that you know again
+
+658
+00:30:15,720 --> 00:30:21,360
+that's starting a new database from
+
+659
+00:30:18,599 --> 00:30:23,519
+scratch which not everyone is interested
+
+660
+00:30:21,359 --> 00:30:29,240
+in doing so some of
+
+661
+00:30:23,519 --> 00:30:29,240
+both yeah so is
+
+662
+00:30:35,119 --> 00:30:40,000
+you can pretty much plug in whatever you
+
+663
+00:30:36,919 --> 00:30:41,679
+want um breed base and the breed Bas
+
+664
+00:30:40,000 --> 00:30:46,519
+crew they've been part of the project
+
+665
+00:30:41,679 --> 00:30:48,240
+since the beginning um and so um it's
+
+666
+00:30:46,519 --> 00:30:50,159
+sort of interesting that different
+
+667
+00:30:48,240 --> 00:30:54,480
+groups H you know have different
+
+668
+00:30:50,159 --> 00:30:58,159
+approaches to implementing brappy so uh
+
+669
+00:30:54,480 --> 00:31:00,200
+breed based what they opted for was you
+
+670
+00:30:58,159 --> 00:31:02,960
+know full implementation of the brappy
+
+671
+00:31:00,200 --> 00:31:05,440
+spec just get it all out there and and
+
+672
+00:31:02,960 --> 00:31:07,960
+ready other databases are saying you
+
+673
+00:31:05,440 --> 00:31:10,798
+know selecting well for this specific
+
+674
+00:31:07,960 --> 00:31:12,159
+use case we only need these five brappy
+
+675
+00:31:10,798 --> 00:31:12,839
+calls so those are the five we're going
+
+676
+00:31:12,159 --> 00:31:16,880
+to
+
+677
+00:31:12,839 --> 00:31:20,759
+implement um so you know it has pluses
+
+678
+00:31:16,880 --> 00:31:24,799
+and minuses um so breed base has a full
+
+679
+00:31:20,759 --> 00:31:26,240
+Suite of rappy end points but um some of
+
+680
+00:31:24,798 --> 00:31:29,119
+them haven't been tested yet some of
+
+681
+00:31:26,240 --> 00:31:34,240
+them just aren't used ever uh versus you
+
+682
+00:31:29,119 --> 00:31:36,199
+know um BMS uh has a more concrete set
+
+683
+00:31:34,240 --> 00:31:40,359
+that are well tested but it's a smaller
+
+684
+00:31:36,200 --> 00:31:41,880
+set of of endpoints um yeah and there's
+
+685
+00:31:40,359 --> 00:31:44,959
+there's a number of different databases
+
+686
+00:31:41,880 --> 00:31:47,278
+and and hopefully more adding as we as
+
+687
+00:31:44,960 --> 00:31:47,278
+we go
+
+688
+00:31:56,159 --> 00:32:02,919
+forward
+
+689
+00:31:59,159 --> 00:32:06,120
+um so a lot of Mo I would say most of
+
+690
+00:32:02,919 --> 00:32:09,038
+the time people have an existing
+
+691
+00:32:06,119 --> 00:32:11,278
+database they're working with and you
+
+692
+00:32:09,038 --> 00:32:12,879
+know that'll either be a database that
+
+693
+00:32:11,278 --> 00:32:15,359
+I've worked with before and so they have
+
+694
+00:32:12,880 --> 00:32:17,320
+some rappy compatibility already or
+
+695
+00:32:15,359 --> 00:32:19,199
+it'll be a new database and I'll try and
+
+696
+00:32:17,319 --> 00:32:23,038
+start working with them to to get them
+
+697
+00:32:19,200 --> 00:32:24,480
+the the compatibility um there have been
+
+698
+00:32:23,038 --> 00:32:26,759
+a couple of times where people have come
+
+699
+00:32:24,480 --> 00:32:30,159
+to me asking for recommendations for for
+
+700
+00:32:26,759 --> 00:32:31,319
+data and I try to stay very neutral um
+
+701
+00:32:30,159 --> 00:32:34,639
+you
+
+702
+00:32:31,319 --> 00:32:36,319
+know yeah no no no I I I try to stay
+
+703
+00:32:34,638 --> 00:32:38,199
+very neutral and I lay out sort of the
+
+704
+00:32:36,319 --> 00:32:40,038
+pluses and minuses of of each of the
+
+705
+00:32:38,200 --> 00:32:42,399
+systems that are within the community
+
+706
+00:32:40,038 --> 00:32:45,319
+you know trying to get a feel for what
+
+707
+00:32:42,398 --> 00:32:46,918
+they're working on and what would uh
+
+708
+00:32:45,319 --> 00:32:49,000
+what would best fit their their
+
+709
+00:32:46,919 --> 00:32:51,679
+situation so I I really try to stay very
+
+710
+00:32:49,000 --> 00:32:51,679
+neutral
+
+711
+00:32:56,038 --> 00:32:59,038
+there
+
+712
+00:33:26,200 --> 00:33:28,960
+personally
+
+713
+00:33:33,278 --> 00:33:35,679
+yeah yeah
+
+714
+00:33:36,679 --> 00:33:43,798
+yeah that's a great question um so first
+
+715
+00:33:41,000 --> 00:33:47,720
+would be come talk to me and see if I
+
+716
+00:33:43,798 --> 00:33:50,759
+can help out um I do have some spare
+
+717
+00:33:47,720 --> 00:33:53,440
+development time that I can uh you know
+
+718
+00:33:50,759 --> 00:33:56,720
+I can assist people getting started um
+
+719
+00:33:53,440 --> 00:33:58,960
+but I can't maintain every every system
+
+720
+00:33:56,720 --> 00:33:58,960
+um
+
+721
+00:34:03,558 --> 00:34:09,358
+uh
+
+722
+00:34:06,240 --> 00:34:13,480
+um they yeah they had they had the
+
+723
+00:34:09,358 --> 00:34:19,199
+resources and and yeah in particular um
+
+724
+00:34:13,480 --> 00:34:21,240
+so we we worked with um them and dart to
+
+725
+00:34:19,199 --> 00:34:23,638
+try and build the initial standard
+
+726
+00:34:21,239 --> 00:34:25,078
+together trying to make you know the the
+
+727
+00:34:23,639 --> 00:34:27,119
+standard that would work for both of
+
+728
+00:34:25,079 --> 00:34:29,960
+those systems and then you know expand
+
+729
+00:34:27,119 --> 00:34:32,240
+did as as other groups came on board um
+
+730
+00:34:29,960 --> 00:34:33,679
+and so that they got it just because
+
+731
+00:34:32,239 --> 00:34:35,638
+they were part you know they were they
+
+732
+00:34:33,679 --> 00:34:40,760
+were the guinea pigs to to help develop
+
+733
+00:34:35,639 --> 00:34:43,878
+this um it it shouldn't take too much
+
+734
+00:34:40,760 --> 00:34:47,560
+effort to become brappy compatible um
+
+735
+00:34:43,878 --> 00:34:50,000
+one of the biggest time syncs is the the
+
+736
+00:34:47,559 --> 00:34:51,639
+concept mapping which isn't you know a
+
+737
+00:34:50,000 --> 00:34:54,719
+technical activity that's you know
+
+738
+00:34:51,639 --> 00:34:58,119
+that's a sit down with a whiteboard and
+
+739
+00:34:54,719 --> 00:35:00,519
+and map Concepts um and map names you
+
+740
+00:34:58,119 --> 00:35:03,800
+know and terms um and that's definitely
+
+741
+00:35:00,519 --> 00:35:05,400
+something that I can help with and um so
+
+742
+00:35:03,800 --> 00:35:07,359
+yeah you know basically just sitting
+
+743
+00:35:05,400 --> 00:35:09,519
+down saying okay what does your system
+
+744
+00:35:07,358 --> 00:35:12,358
+look like what does brappy look like and
+
+745
+00:35:09,519 --> 00:35:14,199
+figure out what that is then actually
+
+746
+00:35:12,358 --> 00:35:17,400
+implementing that code is pretty
+
+747
+00:35:14,199 --> 00:35:20,399
+straightforward once you get a sense for
+
+748
+00:35:17,400 --> 00:35:20,400
+um what the mapping
+
+749
+00:35:21,719 --> 00:35:32,000
+is and uh T3 is breed based now right uh
+
+750
+00:35:27,960 --> 00:35:33,920
+they I don't know if it's being used
+
+751
+00:35:32,000 --> 00:35:36,400
+right now but there was some work in
+
+752
+00:35:33,920 --> 00:35:39,200
+breed base to actually connected up to
+
+753
+00:35:36,400 --> 00:35:43,838
+like cornal genotyping and and that so
+
+754
+00:35:39,199 --> 00:35:43,838
+so one half of that problem is solved
+
+755
+00:35:44,519 --> 00:35:52,719
+already so um there is one endpoint that
+
+756
+00:35:49,719 --> 00:35:55,078
+I ask everyone Implement and that's
+
+757
+00:35:52,719 --> 00:35:58,199
+called server info and basically that
+
+758
+00:35:55,079 --> 00:36:00,640
+tells people what what brappy endpoints
+
+759
+00:35:58,199 --> 00:36:03,919
+that they have implemented so if you you
+
+760
+00:36:00,639 --> 00:36:06,318
+know I I choked the first time you know
+
+761
+00:36:03,920 --> 00:36:07,800
+way back when I built my first test
+
+762
+00:36:06,318 --> 00:36:11,599
+brappy server to just sort of get a
+
+763
+00:36:07,800 --> 00:36:14,160
+handle on it I made a single server info
+
+764
+00:36:11,599 --> 00:36:15,960
+endpoint and said I don't serve any
+
+765
+00:36:14,159 --> 00:36:19,519
+other brappy end points and said look
+
+766
+00:36:15,960 --> 00:36:24,039
+I'm brappy compliant um so that's that's
+
+767
+00:36:19,519 --> 00:36:26,400
+like the the bare minimum um and then I
+
+768
+00:36:24,039 --> 00:36:28,119
+I I don't really want there to be a
+
+769
+00:36:26,400 --> 00:36:30,119
+course set because you know everyone's
+
+770
+00:36:28,119 --> 00:36:31,960
+got different needs everyone's using it
+
+771
+00:36:30,119 --> 00:36:35,519
+in in slightly different ways and
+
+772
+00:36:31,960 --> 00:36:37,318
+different use cases so um you know as
+
+773
+00:36:35,519 --> 00:36:39,559
+long as they've got that one end point
+
+774
+00:36:37,318 --> 00:36:41,519
+telling the rest of the world which ones
+
+775
+00:36:39,559 --> 00:36:42,920
+they they are compatible with and what
+
+776
+00:36:41,519 --> 00:36:45,679
+version they're compatible with and all
+
+777
+00:36:42,920 --> 00:36:49,440
+that sort of thing um I think that's
+
+778
+00:36:45,679 --> 00:36:54,358
+that's fine it's been fine so far
+
+779
+00:36:49,440 --> 00:36:55,800
+um uh and I I really try to uh you know
+
+780
+00:36:54,358 --> 00:37:00,719
+one one of the other questions people
+
+781
+00:36:55,800 --> 00:37:03,560
+come to me with is um uh which metadata
+
+782
+00:37:00,719 --> 00:37:06,519
+fields in the spec are required and
+
+783
+00:37:03,559 --> 00:37:08,639
+there are actually very few metadata
+
+784
+00:37:06,519 --> 00:37:10,960
+Fields within the specification that are
+
+785
+00:37:08,639 --> 00:37:13,639
+required from a brappy point of view
+
+786
+00:37:10,960 --> 00:37:16,639
+because each different use case is going
+
+787
+00:37:13,639 --> 00:37:18,358
+to require different fields so you know
+
+788
+00:37:16,639 --> 00:37:20,000
+most of those fields aren't required but
+
+789
+00:37:18,358 --> 00:37:22,920
+if you want to connect to fieldbook
+
+790
+00:37:20,000 --> 00:37:24,800
+field books got its own set of wrappy
+
+791
+00:37:22,920 --> 00:37:27,119
+fields that it reads from and so those
+
+792
+00:37:24,800 --> 00:37:28,560
+are going to be required um if you're
+
+793
+00:37:27,119 --> 00:37:31,358
+trying to connect to fieldbook that sort
+
+794
+00:37:28,559 --> 00:37:34,759
+of thing so that that flexibility has
+
+795
+00:37:31,358 --> 00:37:34,759
+worked well so
+
+796
+00:37:36,199 --> 00:37:40,759
+far
+
+797
+00:37:37,838 --> 00:37:44,358
+yeah specific question you know
+
+798
+00:37:40,760 --> 00:37:44,359
+anys experimental
+
+799
+00:37:55,599 --> 00:38:02,318
+Des that the search
+
+800
+00:37:59,800 --> 00:38:04,240
+function that's that's definitely one of
+
+801
+00:38:02,318 --> 00:38:08,960
+the search functions
+
+802
+00:38:04,239 --> 00:38:11,879
+um uh you know ask me or join our slack
+
+803
+00:38:08,960 --> 00:38:15,920
+and sort of ask the the community um you
+
+804
+00:38:11,880 --> 00:38:17,800
+know in general um the uh the
+
+805
+00:38:15,920 --> 00:38:21,079
+compatibility the compatible software
+
+806
+00:38:17,800 --> 00:38:23,800
+page has a search function in it um so
+
+807
+00:38:21,079 --> 00:38:25,000
+you know all the all the different and
+
+808
+00:38:23,800 --> 00:38:27,440
+this this
+
+809
+00:38:25,000 --> 00:38:29,880
+is something I'm actively pushing the
+
+810
+00:38:27,440 --> 00:38:31,760
+community towards is is getting their
+
+811
+00:38:29,880 --> 00:38:33,440
+software posted on there because I know
+
+812
+00:38:31,760 --> 00:38:35,319
+that there are tools and applications
+
+813
+00:38:33,440 --> 00:38:37,599
+that aren't on the website yet but I
+
+814
+00:38:35,318 --> 00:38:39,358
+just have to track people down and get
+
+815
+00:38:37,599 --> 00:38:43,240
+all the information I need to put them
+
+816
+00:38:39,358 --> 00:38:47,000
+on there um so actively working on that
+
+817
+00:38:43,239 --> 00:38:50,879
+to sort of expand that set um but yeah I
+
+818
+00:38:47,000 --> 00:38:53,280
+mean th those if you're just looking for
+
+819
+00:38:50,880 --> 00:38:55,880
+some tool to do something those are
+
+820
+00:38:53,280 --> 00:39:00,440
+going to be the first few places to look
+
+821
+00:38:55,880 --> 00:39:03,318
+um and then uh you know we might find a
+
+822
+00:39:00,440 --> 00:39:05,519
+tool that's similar or close and then
+
+823
+00:39:03,318 --> 00:39:08,519
+it's working with those developers or
+
+824
+00:39:05,519 --> 00:39:12,759
+you know whoever to to expand on
+
+825
+00:39:08,519 --> 00:39:12,759
+that any other questions yeah
+
+826
+00:39:25,440 --> 00:39:28,440
+star
+
+827
+00:39:29,920 --> 00:39:36,280
+yeah so um that's a good question so for
+
+828
+00:39:33,679 --> 00:39:39,719
+most of the
+
+829
+00:39:36,280 --> 00:39:42,800
+um the the end users uh who aren't
+
+830
+00:39:39,719 --> 00:39:45,358
+interested in in programming
+
+831
+00:39:42,800 --> 00:39:48,000
+um yeah they're you know they're they're
+
+832
+00:39:45,358 --> 00:39:50,719
+going to benefit most from the different
+
+833
+00:39:48,000 --> 00:39:53,239
+tools and capabilities um and sort of
+
+834
+00:39:50,719 --> 00:39:56,879
+the automated interoperability between
+
+835
+00:39:53,239 --> 00:39:58,838
+these different systems um so in theory
+
+836
+00:39:56,880 --> 00:40:01,358
+they shouldn't even know that brappy
+
+837
+00:39:58,838 --> 00:40:03,239
+exists or that that's happening in the
+
+838
+00:40:01,358 --> 00:40:07,440
+background
+
+839
+00:40:03,239 --> 00:40:10,759
+um uh one of the other ways though is um
+
+840
+00:40:07,440 --> 00:40:14,079
+I know you know this but uh khed is
+
+841
+00:40:10,760 --> 00:40:18,599
+working on a tool called qbm um which is
+
+842
+00:40:14,079 --> 00:40:20,880
+an r package that um basically takes the
+
+843
+00:40:18,599 --> 00:40:22,400
+the brappy end points and wraps them in
+
+844
+00:40:20,880 --> 00:40:24,480
+something that a breeder is more
+
+845
+00:40:22,400 --> 00:40:26,800
+familiar with or or you know our
+
+846
+00:40:24,480 --> 00:40:30,960
+developer is more familiar with um and
+
+847
+00:40:26,800 --> 00:40:34,560
+so the the qbm package is designed to be
+
+848
+00:40:30,960 --> 00:40:36,079
+able to basically get data automatically
+
+849
+00:40:34,559 --> 00:40:40,199
+into your R scripts whatever you're
+
+850
+00:40:36,079 --> 00:40:41,800
+trying to develop um without knowing all
+
+851
+00:40:40,199 --> 00:40:44,159
+the inner workings of grappy happening
+
+852
+00:40:41,800 --> 00:40:46,000
+on the in the background but still using
+
+853
+00:40:44,159 --> 00:40:48,639
+that to to get all that data from a
+
+854
+00:40:46,000 --> 00:40:50,519
+database um so yeah coule couple of
+
+855
+00:40:48,639 --> 00:40:52,159
+different options there in terms
+
+856
+00:40:50,519 --> 00:40:55,159
+of
+
+857
+00:40:52,159 --> 00:40:58,318
+um what what the users might know about
+
+858
+00:40:55,159 --> 00:40:58,318
+in terms of of
+
+859
+00:41:25,239 --> 00:41:28,239
+yeah
+
+860
+00:41:28,920 --> 00:41:36,920
+um so so yeah the it depends um there uh
+
+861
+00:41:35,159 --> 00:41:39,279
+we did you know put a lot of thought
+
+862
+00:41:36,920 --> 00:41:42,599
+into efficiency it's it's always a
+
+863
+00:41:39,280 --> 00:41:46,079
+balancing act between um you know making
+
+864
+00:41:42,599 --> 00:41:49,920
+data access efficient versus flexible um
+
+865
+00:41:46,079 --> 00:41:52,640
+so yeah you can uh get a you know a very
+
+866
+00:41:49,920 --> 00:41:54,240
+efficient data pipeline but not have
+
+867
+00:41:52,639 --> 00:41:56,559
+many options in terms of what you
+
+868
+00:41:54,239 --> 00:41:59,719
+actually want a query so we're always
+
+869
+00:41:56,559 --> 00:42:02,559
+trying to keep that balance of um making
+
+870
+00:41:59,719 --> 00:42:06,039
+the the rappy end points flexible but
+
+871
+00:42:02,559 --> 00:42:09,039
+also efficient and uh I think for the
+
+872
+00:42:06,039 --> 00:42:11,279
+most part we've hit it but um you know
+
+873
+00:42:09,039 --> 00:42:13,800
+different use cases may be easier or
+
+874
+00:42:11,280 --> 00:42:17,519
+harder depending on um what exactly
+
+875
+00:42:13,800 --> 00:42:20,760
+you're trying to do um you know we we
+
+876
+00:42:17,519 --> 00:42:24,199
+have uh you know as you know we've
+
+877
+00:42:20,760 --> 00:42:29,720
+worked with some some Enterprise systems
+
+878
+00:42:24,199 --> 00:42:32,439
+uh already um and you know trying to uh
+
+879
+00:42:29,719 --> 00:42:34,679
+get sort of larger scale data flows
+
+880
+00:42:32,440 --> 00:42:36,318
+going um and there there are some
+
+881
+00:42:34,679 --> 00:42:38,639
+techniques that have actually been added
+
+882
+00:42:36,318 --> 00:42:41,079
+to later versions of the spec to to make
+
+883
+00:42:38,639 --> 00:42:43,558
+that a little bit easier um and a little
+
+884
+00:42:41,079 --> 00:42:46,559
+bit more efficient in terms of how how
+
+885
+00:42:43,559 --> 00:42:48,040
+data is being transferred um and that's
+
+886
+00:42:46,559 --> 00:42:50,680
+something I'm always keeping an eye out
+
+887
+00:42:48,039 --> 00:42:53,599
+for is is fixing those sorts of problems
+
+888
+00:42:50,679 --> 00:42:58,159
+within the within the specification um
+
+889
+00:42:53,599 --> 00:42:58,160
+yeah I hope that answers your question
+
+890
+00:42:58,760 --> 00:43:07,119
+uh different versions of the
+
+891
+00:43:00,039 --> 00:43:09,960
+specification yeah um so we try to so
+
+892
+00:43:07,119 --> 00:43:12,880
+the basically there's each rappy version
+
+893
+00:43:09,960 --> 00:43:15,358
+is a has a major and a minor version so
+
+894
+00:43:12,880 --> 00:43:17,960
+um the current version of rppi is 2.1
+
+895
+00:43:15,358 --> 00:43:20,239
+right now try to keep backwards
+
+896
+00:43:17,960 --> 00:43:23,800
+compatibility maintained for all the
+
+897
+00:43:20,239 --> 00:43:25,279
+minor versions but major versions might
+
+898
+00:43:23,800 --> 00:43:26,640
+might lose some of that backwards
+
+899
+00:43:25,280 --> 00:43:29,720
+compatibility so
+
+900
+00:43:26,639 --> 00:43:33,039
+as long as someone's working in the
+
+901
+00:43:29,719 --> 00:43:34,719
+2.x range then all the end points should
+
+902
+00:43:33,039 --> 00:43:37,159
+be backwards compatible with each other
+
+903
+00:43:34,719 --> 00:43:39,480
+and and able to interact um but you know
+
+904
+00:43:37,159 --> 00:43:42,118
+as soon as you go back to one or or up
+
+905
+00:43:39,480 --> 00:43:43,960
+to three or whatever then you might lose
+
+906
+00:43:42,119 --> 00:43:45,400
+some of that compatibility so trying to
+
+907
+00:43:43,960 --> 00:43:48,559
+keep ranges of
+
+908
+00:43:45,400 --> 00:43:51,960
+compatibility um but still be able to
+
+909
+00:43:48,559 --> 00:43:55,079
+progress the the the
+
+910
+00:43:51,960 --> 00:43:58,079
+specification all right any other
+
+911
+00:43:55,079 --> 00:43:58,079
+questions
+
+912
+00:43:59,318 --> 00:44:02,558
+yes say
+
+913
+00:44:11,358 --> 00:44:17,279
+again um yeah so there's there's uh
+
+914
+00:44:14,599 --> 00:44:18,680
+metadata for defining locations and sort
+
+915
+00:44:17,280 --> 00:44:22,160
+of defining the the different
+
+916
+00:44:18,679 --> 00:44:26,000
+environment um we don't you know there
+
+917
+00:44:22,159 --> 00:44:28,000
+are plenty of uh apis and specification
+
+918
+00:44:26,000 --> 00:44:29,679
+or weather data already we didn't want
+
+919
+00:44:28,000 --> 00:44:32,239
+to reinvent that wheel so it's more
+
+920
+00:44:29,679 --> 00:44:33,639
+about identifying the location and the
+
+921
+00:44:32,239 --> 00:44:36,279
+type you know sort of the general type
+
+922
+00:44:33,639 --> 00:44:39,199
+of environment and then uh adding
+
+923
+00:44:36,280 --> 00:44:42,359
+connectors to you know say specific
+
+924
+00:44:39,199 --> 00:44:44,759
+weather data or or that sort of thing um
+
+925
+00:44:42,358 --> 00:44:46,759
+but yeah it is it is part of the
+
+926
+00:44:44,760 --> 00:44:49,119
+specification to Define this is where I
+
+927
+00:44:46,760 --> 00:44:52,240
+am this is the type General type of
+
+928
+00:44:49,119 --> 00:44:52,240
+environment that I'm dealing
+
+929
+00:44:53,079 --> 00:45:00,800
+with um so nothing in the spec
+
+930
+00:44:56,838 --> 00:45:02,759
+specifically for microbiomes yet um but
+
+931
+00:45:00,800 --> 00:45:04,640
+that's just because no one in the
+
+932
+00:45:02,760 --> 00:45:07,800
+community has approached me about adding
+
+933
+00:45:04,639 --> 00:45:11,078
+it um so you know this is this is how
+
+934
+00:45:07,800 --> 00:45:13,440
+New Concepts get added to grappy is uh
+
+935
+00:45:11,079 --> 00:45:16,280
+someone says I have a new use case but I
+
+936
+00:45:13,440 --> 00:45:18,960
+really need this microbiome data to be
+
+937
+00:45:16,280 --> 00:45:20,800
+part of it to to make it effective I
+
+938
+00:45:18,960 --> 00:45:22,599
+bring that to The Wider Community
+
+939
+00:45:20,800 --> 00:45:24,800
+somebody else goes oh yeah that would be
+
+940
+00:45:22,599 --> 00:45:26,920
+really useful and then you know we work
+
+941
+00:45:24,800 --> 00:45:28,920
+together to build out the the
+
+942
+00:45:26,920 --> 00:45:31,599
+specification and and add it to the spec
+
+943
+00:45:28,920 --> 00:45:33,519
+so it's a somewhat slow process to add
+
+944
+00:45:31,599 --> 00:45:37,400
+things to the actual
+
+945
+00:45:33,519 --> 00:45:39,838
+specification as a software engineer my
+
+946
+00:45:37,400 --> 00:45:42,760
+biggest concern is to make working
+
+947
+00:45:39,838 --> 00:45:45,159
+software um so if you've got a use case
+
+948
+00:45:42,760 --> 00:45:47,040
+that needs microbiome data you know that
+
+949
+00:45:45,159 --> 00:45:49,838
+uses brappy everywhere else but you need
+
+950
+00:45:47,039 --> 00:45:51,639
+this extra little piece just go add the
+
+951
+00:45:49,838 --> 00:45:53,519
+extra little piece we'll catch up with
+
+952
+00:45:51,639 --> 00:45:57,279
+the specification later and you'll have
+
+953
+00:45:53,519 --> 00:46:00,159
+a you know a slightly modified brappy
+
+954
+00:45:57,280 --> 00:46:01,880
+endpoint um for handling your data doing
+
+955
+00:46:00,159 --> 00:46:05,279
+whatever you need to do to talk to this
+
+956
+00:46:01,880 --> 00:46:07,760
+other system um and then you know that
+
+957
+00:46:05,280 --> 00:46:09,079
+in itself if you've got a working system
+
+958
+00:46:07,760 --> 00:46:12,400
+that has a
+
+959
+00:46:09,079 --> 00:46:14,960
+modified data structure that proves to
+
+960
+00:46:12,400 --> 00:46:16,639
+me that yes this data structure can work
+
+961
+00:46:14,960 --> 00:46:18,440
+for this use case and that's even more
+
+962
+00:46:16,639 --> 00:46:22,039
+proof for to add it to the rest of the
+
+963
+00:46:18,440 --> 00:46:23,800
+spec for the community so um yeah
+
+964
+00:46:22,039 --> 00:46:26,318
+nothing nothing about microbiomes yet
+
+965
+00:46:23,800 --> 00:46:28,359
+but yeah if you've got a use case
+
+966
+00:46:26,318 --> 00:46:30,599
+uh that the wider community be
+
+967
+00:46:28,358 --> 00:46:34,598
+interested in let me
+
+968
+00:46:30,599 --> 00:46:37,440
+know right yeah so um yeah like I said
+
+969
+00:46:34,599 --> 00:46:39,400
+we have a general sense of what the
+
+970
+00:46:37,440 --> 00:46:41,838
+environment is so we've you know got a
+
+971
+00:46:39,400 --> 00:46:47,800
+general soil type and sort of what's
+
+972
+00:46:41,838 --> 00:46:51,279
+going on um but nothing that specific
+
+973
+00:46:47,800 --> 00:46:53,720
+um uh and sort of depending on what
+
+974
+00:46:51,280 --> 00:46:55,760
+you're trying to do um there's there's a
+
+975
+00:46:53,719 --> 00:46:57,679
+pretty robust system for making obser
+
+976
+00:46:55,760 --> 00:47:02,119
+observations and tying that to
+
+977
+00:46:57,679 --> 00:47:03,399
+ontologies so you might you know have uh
+
+978
+00:47:02,119 --> 00:47:06,240
+some
+
+979
+00:47:03,400 --> 00:47:09,680
+observation um some some trait or some
+
+980
+00:47:06,239 --> 00:47:11,318
+variable defined as like the the soil
+
+981
+00:47:09,679 --> 00:47:14,318
+content or the M you know some piece of
+
+982
+00:47:11,318 --> 00:47:17,318
+the microbiome whatever um some trait
+
+983
+00:47:14,318 --> 00:47:19,279
+that you're measuring in the field uh
+
+984
+00:47:17,318 --> 00:47:21,639
+regularly those measurements could
+
+985
+00:47:19,280 --> 00:47:26,079
+definitely be recorded within the brappy
+
+986
+00:47:21,639 --> 00:47:31,000
+spec um but uh sort of not not def it
+
+987
+00:47:26,079 --> 00:47:33,839
+its own concept just as more
+
+988
+00:47:31,000 --> 00:47:39,079
+uh not fpic but just more observation
+
+989
+00:47:33,838 --> 00:47:39,078
+data um collected uh as part of a
+
+990
+00:47:43,199 --> 00:47:48,960
+study this has been a production of
+
+991
+00:47:45,838 --> 00:47:51,960
+Cornell University on the web at
+
+992
+00:47:48,960 --> 00:47:51,960
+cornell.edu
+

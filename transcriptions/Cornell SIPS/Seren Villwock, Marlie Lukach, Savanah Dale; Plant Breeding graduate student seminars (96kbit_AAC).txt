@@ -1,0 +1,1198 @@
+[SPEAKER_01]: This is a production of Cornell
+University.
+[SPEAKER_00]: Okay.
+[SPEAKER_00]: My name is Sarah and I'm going to talk
+about preliminary results today for a
+[SPEAKER_00]: multivariate genomic wide association
+study for carotenoids and dry matter,
+[SPEAKER_00]: which are two negatively correlated traits
+in cassava.
+[SPEAKER_00]: So you've probably know that cassava is a
+really important food security crop.
+[SPEAKER_00]: It feeds over 800 million people globally.
+[SPEAKER_00]: It's a really important source of
+calories, mostly through carbohydrates,
+[SPEAKER_00]: but it's pretty low in micronutrients.
+[SPEAKER_00]: And so populations that rely heavily on
+cassava-based diets often have high rates
+[SPEAKER_00]: of vitamin deficiencies, including vitamin
+A deficiency, which affects one in four
+[SPEAKER_00]: children in Sub-Saharan Africa.
+[SPEAKER_00]: There are some yellow cassava varieties
+that accumulate carotenoids, some of which
+[SPEAKER_00]: are cleaved in the human body to form
+vitamin A.
+[SPEAKER_00]: So they're called pro-vitamin A
+carotenoids.
+[SPEAKER_00]: And what's great about yellow cassava is
+that it can provide a sustainable source
+[SPEAKER_00]: of pro-vitamin A for people in Sub-Saharan
+Africa.
+[SPEAKER_00]: And because of this, breeders have been
+investing over the last 20 years in
+[SPEAKER_00]: breeding improved varieties of yellow
+cassava that can provide pro-vitamin A and
+[SPEAKER_00]: meet other agronomic trait needs.
+[SPEAKER_00]: Unfortunately, there is a trade-off
+between carotenoids and dry matter
+[SPEAKER_00]: content.
+[SPEAKER_00]: Dry matter content, I'll abbreviate DM,
+throughout this presentation.
+[SPEAKER_00]: It's a really important driver of consumer
+acceptance.
+[SPEAKER_00]: It influences the dry yields for flour and
+also the textural properties of cassava.
+[SPEAKER_00]: And it's one of the key traits to target
+for improving for yellow cassava
+[SPEAKER_00]: varieties.
+[SPEAKER_00]: So this negative correlation, it's been
+persistent in the African breeding
+[SPEAKER_00]: programs, and that's been a problem for
+producing high dry matter varieties that
+[SPEAKER_00]: also have high carotenoids.
+[SPEAKER_00]: Previous GWAS studies have identified that
+there's a locus on chromosome 1,
+[SPEAKER_00]: which is associated with both carotenoids
+measured here by a chromometer and also
+[SPEAKER_00]: dry matter content.
+[SPEAKER_00]: Because there is a strong candidate gene
+at this locus for both carotenoids,
+[SPEAKER_00]: which is phytoin synthase 2, the key
+rate-limiting enzyme in carotenoid
+[SPEAKER_00]: synthesis, and also sucrose synthase,
+a separate candidate gene that's likely to
+[SPEAKER_00]: influence dry matter content, it's thought
+that this locus represents a genetic
+[SPEAKER_00]: linkage between these two genes,
+and that's driving the negative
+[SPEAKER_00]: correlation between the traits.
+[SPEAKER_00]: There's also been molecular studies
+looking at the transgenic expression of
+[SPEAKER_00]: PSY2 that suggests it has a pleiotropic
+effect on both carotenoids and dry matter.
+[SPEAKER_00]: So there's a bit of conflicting evidence
+in cassava for whether linkage or
+[SPEAKER_00]: pleiotropy is driving this relationship.
+[SPEAKER_00]: And the objective of most of my research
+is trying to understand the genetic
+[SPEAKER_00]: relationship between carotenoids and dry
+matter and implications for developing
+[SPEAKER_00]: breeding strategies that can help us
+increase both carotenoids and dry matter.
+[SPEAKER_00]: So there's a few different hypotheses
+about how these traits are related,
+[SPEAKER_00]: both at the chromosome 1 locus or
+genome-wide.
+[SPEAKER_00]: So first for linkage, it's the idea that
+there are two separate loci that are
+[SPEAKER_00]: closely spaced together that separately
+affect carotenoids and dry matter.
+[SPEAKER_00]: There could also be horizontal pleiotropy
+or biological pleiotropy where a single
+[SPEAKER_00]: locus affects both carotenoids and dry
+matter directly or mediated.
+[SPEAKER_00]: And then there could be vertical
+pleiotropy where a single locus affects
+[SPEAKER_00]: carotenoids, which then, because of
+physiological connections, affects dry
+[SPEAKER_00]: matter or vice versa.
+[SPEAKER_00]: And so testing which of these
+relationships fits at chromosome 1 is
+[SPEAKER_00]: important.
+[SPEAKER_00]: And if we think that it might be vertical
+pleiotropy, which seems more likely than
+[SPEAKER_00]: horizontal pleiotropy in this case,
+we'd also expect that other loci that
+[SPEAKER_00]: affect carotenoids genome-wide would have
+a similar association with dry matter if
+[SPEAKER_00]: they do have an inherent trait
+relationship.
+[SPEAKER_00]: So for this study, we're doing a
+multivariate genome-wide association study
+[SPEAKER_00]: to look at loci genome-wide.
+[SPEAKER_00]: Using a multivariate analysis,
+we can increase statistical power by
+[SPEAKER_00]: taking advantage of the correlation
+between traits.
+[SPEAKER_00]: And we can also test hypotheses about the
+distribution of jointly associated loci
+[SPEAKER_00]: across the genome.
+[SPEAKER_00]: So we want to know if there are multiple
+loci that are jointly associated with both
+[SPEAKER_00]: traits besides just the chromosome 1 locus
+that we already know about.
+[SPEAKER_00]: And if so, whether those jointly
+associated loci affect the traits in
+[SPEAKER_00]: opposite directions, more often than
+expected by chance, which would suggest
+[SPEAKER_00]: that there is an inherent relationship
+between the two traits.
+[SPEAKER_00]: So for this study, we genotyped 378
+accessions sampled from the yellow cassava
+[SPEAKER_00]: breeding population at the International
+Institute of Tropical Agriculture in Ibad
+[SPEAKER_00]: in Nigeria.
+[SPEAKER_00]: And Dr. Elizabeth Parks is the breeder who
+has been working in that population.
+[SPEAKER_00]: And they have, together with her team
+there, they have collected child data over
+[SPEAKER_00]: the last several years, which include
+carotenoids measured by spectrometer,
+[SPEAKER_00]: which is a quantitative method that's
+improved from previous color chart methods
+[SPEAKER_00]: that are more qualitative and also dry
+matter content.
+[SPEAKER_00]: And with this data, we are using two
+methods.
+[SPEAKER_00]: The first is a multivariate linear model,
+which is more of a traditional GWAS.
+[SPEAKER_00]: And the second is a Bayesian model
+comparison, which is going to help us
+[SPEAKER_00]: interpret the results of these
+associations.
+[SPEAKER_00]: So for the first method, for the
+multivariate linear mixed models,
+[SPEAKER_00]: we're doing a two-step approach.
+[SPEAKER_00]: First, we calculate blups.
+[SPEAKER_00]: And then we test associations between SNPs
+and blups, accounting for relatedness,
+[SPEAKER_00]: population structure, and the major effect
+locus on chromosome 1 that we already know
+[SPEAKER_00]: about.
+[SPEAKER_00]: In terms of the linear model, the first
+step looks like this.
+[SPEAKER_00]: Where we account for trial effects and
+calculate blups using boxcox transformed
+[SPEAKER_00]: phenotypes that they're normalized.
+[SPEAKER_00]: And then we take those blups and put them
+in an association model where we have,
+[SPEAKER_00]: in addition to the effect of the SNP,
+we're also accounting for genome-wide
+[SPEAKER_00]: relationships, also the relationships of
+the haplotypes at the PSY2 locus and the
+[SPEAKER_00]: haplotypes at a region in chromosome 1
+where there are integration diagnostic
+[SPEAKER_00]: markers, or IDMs.
+[SPEAKER_00]: And those are tagging a haplotype that
+causes a lot of population structure on
+[SPEAKER_00]: chromosome 1 and is also known to affect
+dry matter.
+[SPEAKER_00]: So we account for those effects so that we
+can try and reduce confounding from
+[SPEAKER_00]: population structure and also identify
+loci other than the major effect that we
+[SPEAKER_00]: already know about.
+[SPEAKER_00]: So for this Manhattan plot, there's the
+negative log 10p values from those
+[SPEAKER_00]: associations on the y-axis.
+[SPEAKER_00]: The cutoff here, the dotted line,
+represents a modified Bonferroni cutoff,
+[SPEAKER_00]: which is calculated with alpha of 0.05 and
+the estimated number of effective SNPs.
+[SPEAKER_00]: And you can see that there are multiple
+peaks above this significance threshold,
+[SPEAKER_00]: not just on chromosome 1, which suggests
+there are joint associations in other
+[SPEAKER_00]: parts of the genome as well.
+[SPEAKER_00]: What's challenging about this more
+traditional multivariate GWAS approach is
+[SPEAKER_00]: that when you have a single p-value for
+these associations, it's difficult to
+[SPEAKER_00]: interpret whether that SNP is associated
+because it affects both traits jointly,
+[SPEAKER_00]: or if it really just affects one trait.
+[SPEAKER_00]: These associations can represent strong
+associations with carotenoids and or dry
+[SPEAKER_00]: matter.
+[SPEAKER_00]: So even if it's a very strong association
+with one trait, it might get picked up
+[SPEAKER_00]: here as well.
+[SPEAKER_00]: So to help us interpret this, we're using
+a method by Matthew Stevens called
+[SPEAKER_00]: multivariate Bayesian imputation-based
+association mapping.
+[SPEAKER_00]: And the idea behind this approach is to
+compare models that bin the two phenotypes
+[SPEAKER_00]: into these three possible partitions that
+are directly associated with the SNP,
+[SPEAKER_00]: indirectly associated with the SNP via
+correlation with the other trait,
+[SPEAKER_00]: or unassociated with the SNP.
+[SPEAKER_00]: And so it calculates probability for each
+of these possible partitions and a Bayes
+[SPEAKER_00]: factor, which represents the support for a
+particular partition compared with the
+[SPEAKER_00]: null, which would be that neither trait is
+associated with a given SNP.
+[SPEAKER_00]: So then how this looks in practice,
+because the Stevens algorithm doesn't
+[SPEAKER_00]: allow you to fit covariates, we have to do
+it in two steps again.
+[SPEAKER_00]: So the first step is similar to the
+previous model I showed, where we are
+[SPEAKER_00]: accounting for the effect of the PSY2
+haplotype, the chromosome one
+[SPEAKER_00]: introgression, and also the rest of the
+genome relationships using a leave one
+[SPEAKER_00]: chromosome out approach, where we're
+taking the residuals from this model for
+[SPEAKER_00]: which one chromosome has been left out,
+and then fitting that with the SNPs on
+[SPEAKER_00]: that chromosome.
+[SPEAKER_00]: Which were left out.
+[SPEAKER_00]: And so for each SNP, we can then see which
+partition has the highest Bayes factor,
+[SPEAKER_00]: representing which model fits the data the
+best in this case.
+[SPEAKER_00]: So in this figure, it's the same Manhattan
+plot I showed earlier from the
+[SPEAKER_00]: multivariate linear mixed models.
+[SPEAKER_00]: And the color that's overlaid on top is
+representing the top Bayes factor that
+[SPEAKER_00]: came out of the BIMBAM approach.
+[SPEAKER_00]: So in red are SNPs, which their highest
+Bayes factor was corresponding to the
+[SPEAKER_00]: direct direct partition, which is that the
+SNP is directly associated with both
+[SPEAKER_00]: carotenoids and dry matter.
+[SPEAKER_00]: There's also a peak that's in green,
+which represents the partition where the
+[SPEAKER_00]: SNP is directly associated with
+carotenoids and indirectly associated with
+[SPEAKER_00]: dry matter.
+[SPEAKER_00]: So once you account for the effect of
+carotenoids, there's no residual effect
+[SPEAKER_00]: for dry matter.
+[SPEAKER_00]: We can also look at the effect direction
+of these SNPs.
+[SPEAKER_00]: So in red are SNPs that their effect
+estimate for carotenoids and dry matter
+[SPEAKER_00]: are in opposite directions, and the blue
+color is for the same direction.
+[SPEAKER_00]: So you can see that all of the SNPs which
+fall above the significance threshold are
+[SPEAKER_00]: in red, which means that they affect the
+traits in opposite directions.
+[SPEAKER_00]: So in conclusion, it looks like we have
+significantly associated loci that affect
+[SPEAKER_00]: both carotenoids and dry matter in
+opposite directions that are across the
+[SPEAKER_00]: genome, not just on chromosome one,
+which suggests that there's a genome wide
+[SPEAKER_00]: negative relationship.
+[SPEAKER_00]: The direct direct model fits best for most
+of the jointly associated loci except for
+[SPEAKER_00]: the one on chromosome 10.
+[SPEAKER_00]: And also there's still a peak on
+chromosome one, even after accounting for
+[SPEAKER_00]: the PSY2 haplotype.
+[SPEAKER_00]: So this suggests that there might be
+multiple causal loci in that region on
+[SPEAKER_00]: chromosome one.
+[SPEAKER_00]: And our next steps are to evaluate
+candidate genes and follow up on some of
+[SPEAKER_00]: these pleiotropy hypotheses using other
+methods like a network analysis that we're
+[SPEAKER_00]: doing.
+[SPEAKER_00]: I'd like to thank my committee and the
+IATA Kusaba breeding unit team who
+[SPEAKER_00]: collected this field data over the years.
+[SPEAKER_00]: Led by Dr. Parks and Dr. Gabby Emponjo.
+[SPEAKER_00]: And this is a picture of some of my lab
+mates at the next GenKusaba conference
+[SPEAKER_00]: last year.
+[SPEAKER_00]: Thank you.
+[SPEAKER_00]: Any questions?
+[SPEAKER_00]: Ed?
+[SPEAKER_04]: Really nice work.
+[SPEAKER_04]: I was wondering if it's possible to get
+access to data on ABA if it's kind of like
+[SPEAKER_04]: a pan carotenoid thing shuttling how much
+gets into ABA that would, you know,
+[SPEAKER_04]: kind of thing.
+[SPEAKER_04]: I think I just waited a million months for
+this to happen.
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: Ed was asking if it's possible to get ABA
+abscisic acid data, which is downstream of
+[SPEAKER_00]: beta carotene and is one of the possible
+mechanisms for which carotenoid pathway
+[SPEAKER_00]: might affect the dry matter and starch
+pathways.
+[SPEAKER_00]: We don't have large data sets on that,
+but the data that there are for where
+[SPEAKER_00]: abscisic acid is measured shows that
+there's a positive.
+[SPEAKER_00]: Association between total carotene content
+and abscisic acid.
+[SPEAKER_00]: And with lower dry matter, so the
+correlations support that idea,
+[SPEAKER_00]: but it's very hard to.
+[SPEAKER_00]: I think test abscisic acid in a high
+throughput manner, although Tim Sutter may
+[SPEAKER_00]: have different ideas.
+[SPEAKER_00]: So the starch, there's two starch
+biosynthesis genes near PSY2 and
+[SPEAKER_00]: chromosome one that have been hypothesized
+as candidate genes.
+[SPEAKER_00]: The first one is sucrose synthase,
+which.
+[SPEAKER_00]: Is bidirectional in converting sucrose
+into starch.
+[SPEAKER_00]: There's also another enzyme called UDP
+glucose pyrophosphorylase that's involved
+[SPEAKER_00]: in the starch pathway, and those are both
+really close to the vitamin synthase two
+[SPEAKER_00]: gene.
+[SPEAKER_00]: So either of them are likely candidate
+genes to affect starch synthesis,
+[SPEAKER_00]: but there have been no variants tested.
+[SPEAKER_00]: In those genes that are potentially
+causal.
+[SPEAKER_04]: Great, thanks for your answer,
+Sarah.
+[SPEAKER_03]: Other questions.
+[SPEAKER_03]: Yes, just want to clarify the definition
+from the vertical phleotropy.
+[SPEAKER_03]: Does that mean sequential?
+[SPEAKER_00]: Yeah, so the question was clarifying
+vertical phleotropy.
+So.
+[SPEAKER_00]: Sorry, so for horizontal phleotropy or
+biological phleotropy, the idea is that.
+[SPEAKER_00]: A variant like phytoin synthase two has a
+direct effect on dry matter.
+[SPEAKER_00]: Which in this case is kind of hard to
+imagine, but there's other.
+[SPEAKER_00]: Cases in which it might be possible to
+find a gene like a transcription factor
+[SPEAKER_00]: that has direct effects on multiple
+separate traits for vertical phleotropy.
+[SPEAKER_00]: The idea is that there's a single variant,
+for example, in PSY2 that affects
+[SPEAKER_00]: carotenoids, which we know it does.
+[SPEAKER_00]: And then because carotenoids might affect
+dry matter, for example, through the
+[SPEAKER_00]: abscisic acid.
+[SPEAKER_00]: Acid connection that Ed mentioned,
+then that variant would also affect dry
+[SPEAKER_00]: matter, but only via its effect on
+carotenoids.
+[SPEAKER_00]: And so once you account for the effect of
+the SNP on carotenoids, there's no more
+[SPEAKER_00]: effect on dry matter separate from that.
+[SPEAKER_00]: So that makes it.
+[SPEAKER_03]: Maybe simplify it to say horizontal is
+more like a parallel and the vertical is
+[SPEAKER_03]: more like a sequential.
+[SPEAKER_00]: Yes, yeah, horizontal is like parallel,
+vertical is like sequential.
+[SPEAKER_00]: Thank you, we can pass it to the next
+slide.
+[SPEAKER_00]: Next speaker.
+[SPEAKER_01]: Alrighty, many of you already know that
+much of my research has to do with gourds.
+[SPEAKER_01]: And today I'm going to specifically focus
+on bottle gourds.
+[SPEAKER_01]: As part of my research, I'm characterizing
+USDA legendary collection.
+[SPEAKER_01]: Okay, so first I want to talk about the
+area I'm focusing on.
+[SPEAKER_01]: So most of my work is dealing with
+Southeast Asia.
+[SPEAKER_01]: And there's a lot of discussion on how to
+define Southeast Asia as a region by
+[SPEAKER_01]: scholars, whether it really should be its
+own region, whether we should think about
+[SPEAKER_01]: it kind of between regions as a connector.
+[SPEAKER_01]: But for my purposes, we're going to talk
+about Southeast Asia in these 11
+[SPEAKER_01]: countries, mostly focusing on mainland
+Southeast Asia.
+[SPEAKER_01]: So Cambodia, Vietnam, Thailand,
+Myanmar and Laos, but a little bit in the
+[SPEAKER_01]: Philippines, and also in Indonesia.
+[SPEAKER_01]: So why bottle gourds?
+[SPEAKER_01]: So to me, bottle gourds are really
+interesting because it's believed to be
+[SPEAKER_01]: one of the first domesticated crops in the
+entire world.
+[SPEAKER_01]: And I believe part of this is due its
+duality.
+[SPEAKER_01]: So bottle gourds are quite unique because
+you can eat the leaves, you can eat the
+[SPEAKER_01]: flowers, you can eat the fruits.
+[SPEAKER_01]: But when the fruit matures and the plant
+senesces, it has a very thick rind.
+[SPEAKER_01]: And this rind can be used for many
+different things.
+[SPEAKER_01]: Now, traditionally, if you might have some
+familiar with bottle gourds, the most
+[SPEAKER_01]: common thing to think about is its use for
+holding water.
+[SPEAKER_01]: So we might think of a bottle gourd
+something like this, where we might cut a
+[SPEAKER_01]: hole in the spout.
+[SPEAKER_01]: We might cut a hole in the side to allow
+air to come through.
+[SPEAKER_01]: And we would use this as a drinking
+vessel.
+[SPEAKER_01]: So I have some show and tell, so I'm going
+to pass some things around for you guys to
+[SPEAKER_01]: see.
+[SPEAKER_01]: But when we look at the history of bottle
+gourds in Southeast Asia, it's quite
+[SPEAKER_01]: diverse the different uses.
+[SPEAKER_03]: I'm going to keep doing that.
+[SPEAKER_01]: Oh, my video's not going to play.
+[SPEAKER_01]: OK.
+[SPEAKER_01]: So one of the uses you see across
+especially mainland Southeast Asia is its
+[SPEAKER_01]: use of musical instruments.
+[SPEAKER_01]: So in most countries, you can find these
+instruments by different names.
+[SPEAKER_01]: So we have classification such as the
+zither.
+[SPEAKER_01]: So the idea is you have this long stick
+that has strings attached.
+[SPEAKER_01]: It can be maybe one string.
+[SPEAKER_01]: It could be up to six to eight strings,
+depending on the country of origin.
+[SPEAKER_01]: But the really important thing in most
+gourd instruments is that it acts as a
+[SPEAKER_01]: resonator.
+[SPEAKER_01]: And a lot of instruments actually come
+from gourds originally, so things like
+[SPEAKER_01]: banjos.
+[SPEAKER_01]: We have these Vietnamese lutes played by
+these thai women, where the base of the
+[SPEAKER_01]: instrument is the gourd.
+[SPEAKER_01]: And it also can be used kind of as an
+amplifier with the human body.
+[SPEAKER_01]: So in the case of the zither here,
+we're going to use our imaginations.
+[SPEAKER_01]: But if this is my gourd resonator,
+I can hold this to my chest.
+[SPEAKER_01]: It's going to be cut in half.
+[SPEAKER_01]: And as I play it, this will act as a
+resonator.
+[SPEAKER_01]: And then also my chest is a resonator to
+increase the volume.
+[SPEAKER_01]: So before we have electronics in the
+pre-modern era, or playing musical
+[SPEAKER_01]: instruments, gourds are our natural
+amplifiers so we can play to a large
+[SPEAKER_01]: audience and everyone can hear us.
+[SPEAKER_01]: A second use that you might think of
+gourds being used as is garments.
+[SPEAKER_01]: So two of the more common examples is in
+the Philippines, these Taubungal hats.
+[SPEAKER_01]: And also in West Papua as kotika.
+[SPEAKER_01]: So this would be a common gourd you might
+use for these traditional Filipino hats.
+[SPEAKER_01]: Typically, again, you cut these in half.
+[SPEAKER_01]: You'd braid up some reed to act as a soft
+interior.
+[SPEAKER_01]: And depending on where you're going to
+wear it, you might just keep it plain and
+[SPEAKER_01]: use some sort of resin to preserve it and
+wear out in the field.
+[SPEAKER_01]: Or if you're going to wear this for a
+special occasion, you might carve into it
+[SPEAKER_01]: great designs.
+[SPEAKER_01]: You might paint it.
+[SPEAKER_01]: And unfortunately, a lot of times due to
+imperial powers in a lot of these
+[SPEAKER_01]: Southeast Asian countries to be colonized,
+many of these practices are dying out.
+[SPEAKER_01]: So this Filipino man, Teofilo Garcia,
+he is one of the last people actually
+[SPEAKER_01]: making these hats in all of the
+Philippines.
+[SPEAKER_01]: Same thing with the use of the kotika in
+West Papua.
+[SPEAKER_01]: It's very important culturally.
+[SPEAKER_01]: This is the traditional garment that men
+will wear.
+[SPEAKER_01]: You might use something like this to make
+your kotika.
+[SPEAKER_01]: Depending on the shape you want,
+which correlates to tribal identity,
+[SPEAKER_01]: you may keep it curled.
+[SPEAKER_01]: You probably don't want it this curled.
+[SPEAKER_01]: But typically, you might wrap this around
+a log.
+[SPEAKER_01]: If you want it straight, you would tie a
+small rock to the end so it grows
+[SPEAKER_01]: straight.
+[SPEAKER_01]: Then once you get your desired shape,
+you are going to harvest your gourd,
+[SPEAKER_01]: put it on coals, gut it out, and then you
+let it smoke in the roof of the men's
+[SPEAKER_01]: house until it's preserved.
+[SPEAKER_01]: After that, you might decorate it.
+[SPEAKER_01]: So here are these kanok warriors.
+[SPEAKER_01]: I believe this one has a braided rattan
+covering.
+[SPEAKER_01]: This one's a little bit more simple in
+design.
+[SPEAKER_01]: People might put furs on it.
+[SPEAKER_01]: They might paint them.
+[SPEAKER_01]: And part of it is for use whether you're
+at a festival versus working out in the
+[SPEAKER_01]: field.
+[SPEAKER_01]: And part of it is also the tribal
+identity, as I said before.
+[SPEAKER_01]: So another place we see gourds is as
+amulets and as relics.
+[SPEAKER_01]: And this photo here is one I actually took
+in Thailand when I was visiting a farm
+[SPEAKER_01]: that grows bala gourds, which there they
+called namtao.
+[SPEAKER_01]: And they're seen as a sort of protector.
+[SPEAKER_01]: So at each corner of their house,
+they actually had one of these gourds
+[SPEAKER_01]: hanging.
+[SPEAKER_01]: And it's supposed to kind of ward out evil
+into their farm and keep their plants
+[SPEAKER_01]: growing well.
+[SPEAKER_01]: And although this is not part of Southeast
+Asia, there are also a lot of Chinese
+[SPEAKER_01]: communities that over the centuries have
+come to live in Southeast Asia.
+[SPEAKER_01]: And in many of the Chinatowns and other
+communities, you can find these,
+[SPEAKER_01]: especially near New Year's, where in
+China, from what I was told by the ladies,
+[SPEAKER_01]: is typically bala gourds are meant to
+bring good fortune to you.
+[SPEAKER_01]: So you might hang a bala gourd in your
+house or in a cart to bring your family
+[SPEAKER_01]: more money for the New Year.
+[SPEAKER_01]: Another way that bala gourds are in
+Southeast Asia, sort of this religious
+[SPEAKER_01]: folklore area, is in these people of the
+gourds stories.
+[SPEAKER_01]: So there's this idea that mostly mainland
+Southeast Asia, that people actually came
+[SPEAKER_01]: from the gourds.
+[SPEAKER_01]: And depending on how the people exited the
+gourds, says something about the social
+[SPEAKER_01]: ranking of people.
+[SPEAKER_01]: So in one mythology, the gourd is pierced
+toward twice, once just kind of drilled
+[SPEAKER_01]: and once with a hot iron rod.
+[SPEAKER_01]: Out of the side that's just drilled,
+come people of lighter complexion.
+[SPEAKER_01]: Out of the side that's charred,
+come people with darker complexion.
+[SPEAKER_01]: And from this and the way they come out,
+kind of talks about how people are viewed
+[SPEAKER_01]: at that time.
+[SPEAKER_01]: And these myths change over time.
+[SPEAKER_01]: So in some of the older versions,
+you see more traditional communities of
+[SPEAKER_01]: Southeast Asia.
+[SPEAKER_01]: Named, and once you get into more modern
+eras, you might start to see Americans and
+[SPEAKER_01]: French and other people being added into
+the stories as people from different
+[SPEAKER_01]: countries come into Southeast Asia.
+[SPEAKER_01]: Another place is in architecture.
+[SPEAKER_01]: So here we have the Baipuja Pagoda in
+Myanmar, and also Wat Kutau in Chiang Mai.
+[SPEAKER_01]: And besides the architecture, you can also
+see these shapes in a lot of pottery as
+[SPEAKER_01]: well.
+[SPEAKER_01]: So if you can use some of your
+imagination, a bottle gourd, something
+[SPEAKER_01]: like this might have inspired this lot.
+[SPEAKER_01]: And maybe something like this would be the
+inspiration for the Baipuja Pagoda.
+[SPEAKER_01]: But as you look across Southeast Asia,
+you can start to see all these
+[SPEAKER_01]: similarities to the bottle gourd.
+[SPEAKER_01]: So I'm telling you all these historical
+uses of bottle gourds, but what does this
+[SPEAKER_01]: really have to do with plant breeding?
+[SPEAKER_01]: Well, when plant breeding is defined,
+we also think about things about
+[SPEAKER_01]: maximizing positive genetic traits,
+higher production, resistance to pests,
+[SPEAKER_01]: pathogens, and drought.
+[SPEAKER_01]: But what does plant breeding really mean?
+[SPEAKER_01]: So one thing I'd like everybody to do at
+the end of this presentation is take out a
+[SPEAKER_01]: piece of paper and write down your
+definition of plant breeding and think
+[SPEAKER_01]: about what plant breeding really means to
+each of you.
+[SPEAKER_01]: Because when I read some of these
+definitions that tend to be more
+[SPEAKER_01]: technical, it's not quite how I envision
+plant breeding.
+[SPEAKER_01]: And when I think about plant breeding,
+I feel like the missing link in some of
+[SPEAKER_01]: these definitions is the people.
+[SPEAKER_01]: Yes, having resistance to diseases,
+drought tolerance does help people in a
+[SPEAKER_01]: way, but it doesn't really think
+holistically about how that those changes
+[SPEAKER_01]: change the systems they go into.
+[SPEAKER_01]: So as I've been characterizing the USDA
+bottle gourd collection and taking some of
+[SPEAKER_01]: these coursework in Southeast Asia
+history, it's really changed my
+[SPEAKER_01]: perspective of how I think about plant
+breeding.
+[SPEAKER_01]: So just to give a few examples of things
+I've started thinking about.
+[SPEAKER_01]: So one is thinking about how gene flow and
+bottlenecks mimics how this crop has been
+[SPEAKER_01]: transported to different countries.
+[SPEAKER_01]: Can we look at some of these trade routes
+between countries in Southeast Asia,
+[SPEAKER_01]: but also to Africa, to China, to Europe,
+and see how these crops are moving and
+[SPEAKER_01]: maybe see points of genetic diversity or
+mutations.
+[SPEAKER_01]: Another thing with characterizing is some
+of these uses have phenotypes that we
+[SPEAKER_01]: might not first think about.
+[SPEAKER_01]: Using a gourd as a resonator, well,
+what makes a good resonator is a phenotype
+[SPEAKER_01]: that we should be capturing that's
+important to people.
+[SPEAKER_01]: It's not something I probably would have
+thought of firsthand, but there's all
+[SPEAKER_01]: these traits that may be very important to
+these communities culturally that we're
+[SPEAKER_01]: not capturing.
+[SPEAKER_01]: If we don't capture them in the germplasm
+diversity, there's a potential that these
+[SPEAKER_01]: traits will no longer exist.
+[SPEAKER_01]: And here thinking again about culture,
+and a lot of these can kind of relate into
+[SPEAKER_01]: plant breeding.
+[SPEAKER_01]: So obviously we think most about food,
+but thinking about folk art and
+[SPEAKER_01]: celebrations, that's maybe not something
+we first think about in plant breeding,
+[SPEAKER_01]: but these things are really important to
+different communities.
+[SPEAKER_01]: So with that, thank you for listening to
+my presentation.
+[SPEAKER_01]: And do you guys have any questions?
+[SPEAKER_01]: Yeah, Trev.
+[SPEAKER_04]: Any idea for how much of the gourd in the
+entrance, let's say, are characterized
+[SPEAKER_04]: already in combination with this thing?
+[SPEAKER_04]: Did you say some majority still remains to
+be characterized?
+[SPEAKER_04]: So,
+[SPEAKER_01]: I mean, I can only speak to what the USDA
+has, because that's what I've mostly been
+[SPEAKER_01]: working with.
+[SPEAKER_01]: There's a lot of phenotypes present,
+and there is about 174 accessions that are
+[SPEAKER_01]: currently available that we used in the
+trials.
+[SPEAKER_01]: And I guess one of the benefits,
+slash some of the hard things working
+[SPEAKER_01]: sometimes with the USDA germplasm,
+is it's not always uniform.
+[SPEAKER_01]: And a lot of it, the accessions are a
+little bit more like populations than they
+[SPEAKER_01]: are like a breeding line or a cultivar.
+[SPEAKER_01]: So I think because of that, we're
+capturing a lot more of the diversity.
+[SPEAKER_01]: Unfortunately, there's still, like,
+we only had one or two accessions from
+[SPEAKER_01]: Southeast Asia.
+[SPEAKER_01]: I think we still capture some of that
+diversity we see in Southeast Asia,
+[SPEAKER_01]: but I don't know if maybe there's
+different mutations that are causing maybe
+[SPEAKER_01]: the same trait that we're not capturing
+looking at like the genetic diversity
+[SPEAKER_01]: standpoint.
+[SPEAKER_01]: One thing I'm trying to do is start
+looking at germplasm collections in other
+[SPEAKER_01]: countries and think about maybe capturing
+the genetic diversity and working with
+[SPEAKER_01]: them.
+[SPEAKER_01]: But I guess that's kind of my concern is
+there's definitely certain countries that
+[SPEAKER_01]: are, like, very represented and ones that
+have very low representation.
+[SPEAKER_01]: And I mean, if you don't have it,
+you don't know what's really there and if
+[SPEAKER_01]: it's really something different or if it's
+really the same as what is it from these
+[SPEAKER_01]: other countries.
+[SPEAKER_01]: Any other questions?
+[SPEAKER_01]: Ed?
+[SPEAKER_04]: I guess you can talk pretty much about
+using it for fishing.
+[SPEAKER_05]: Fishing?
+[SPEAKER_04]: Yeah, as a Bob in ANS.
+[SPEAKER_04]: But I was thinking archeology many,
+many years ago.
+[SPEAKER_04]: This is what the argument was to reuse
+this early scientific fishing.
+[SPEAKER_04]: Is that still a whole, you know,
+this is not homework.
+[SPEAKER_04]: Yeah.
+[SPEAKER_01]: Yeah.
+[SPEAKER_01]: When I wrote the paper related to this
+talk for my class, I didn't really get
+[SPEAKER_01]: anything for fishing.
+[SPEAKER_01]: As far as Southeast Asia, I have heard
+about using them in bobbers and I think
+[SPEAKER_01]: people still do quite often.
+[SPEAKER_01]: And I think part of that might just be
+like the sources I was able to access.
+[SPEAKER_01]: And I wish I could like look at more
+archives, but I only speak a little bit of
+[SPEAKER_01]: Thai.
+[SPEAKER_01]: But I think if I was able to kind of go
+into those archives and look more,
+[SPEAKER_01]: I would be able to find a much larger
+diversity of their uses as well.
+[SPEAKER_01]: This is something I think about a lot.
+[SPEAKER_01]: So most of the collection comes from
+Africa, I believe, Zimbabwe, and then from
+[SPEAKER_01]: India.
+[SPEAKER_01]: And then there's kind of a smattering of
+things from the Middle East, a couple from
+[SPEAKER_01]: Southeast Asia, and a few from Europe.
+[SPEAKER_01]: There are a couple collections.
+[SPEAKER_01]: I believe the World Vegetable Center has
+quite a few quite a few accessions from
+[SPEAKER_01]: Southeast Asia.
+[SPEAKER_01]: So there's a potential that that area is
+maybe a little bit more covered,
+[SPEAKER_01]: but just not in USDA context.
+[SPEAKER_01]: Other countries, I'm not so sure of.
+[SPEAKER_01]: And there is use of bog words on every
+single continent, except for maybe
+[SPEAKER_01]: Antarctica.
+[SPEAKER_01]: But not into the grias I think it's used
+in Africa and through Asia.
+[SPEAKER_01]: I'm very interested in doing exploration,
+especially to see what farmers are still
+[SPEAKER_01]: currently using.
+[SPEAKER_01]: Unfortunately, from my experience trying
+to submit plant exploration proposals,
+[SPEAKER_01]: it's quite difficult.
+[SPEAKER_01]: And one of the really big barriers is they
+want you to have experience going a plant
+[SPEAKER_01]: exploration, but there's very few people
+left who have gone these explorations and
+[SPEAKER_01]: would like to continue doing them.
+[SPEAKER_01]: So I would say that's kind of the big
+barrier right now for doing some more
+[SPEAKER_01]: collections.
+[SPEAKER_01]: But I think just doing some more work
+figuring out what maybe smaller collection
+[SPEAKER_01]: exists may not need to actually do a plant
+exploration.
+[SPEAKER_05]: Great.
+[SPEAKER_05]: Thank you for your answer.
+[SPEAKER_03]: Yeah.
+[SPEAKER_03]: Just wondering, your seminar is fantastic.
+[SPEAKER_03]: It reminded me a little bit of like last
+week.
+[SPEAKER_03]: I really love this.
+[SPEAKER_03]: It's very diverse at the top.
+[SPEAKER_03]: So I'm wondering, for your dissertation,
+what do you see other chapters of the
+[SPEAKER_03]: vision over our scope?
+[SPEAKER_01]: Oh, that's a good question.
+[SPEAKER_01]: So I'm still kind of debating how I want
+to split my dissertation.
+[SPEAKER_01]: So part of the work I'm doing,
+I want to create a formal crop
+[SPEAKER_01]: characterization guide for bottle gourds
+because there are no formal crop
+[SPEAKER_01]: descriptors.
+[SPEAKER_01]: And as I've been going through previous
+studies that look at bottle gourds,
+[SPEAKER_01]: it's really hard to tell whether this
+shape is really the same shape where
+[SPEAKER_01]: they're talking about something slightly
+different.
+[SPEAKER_01]: So I'm hoping that that will be a chapter.
+[SPEAKER_01]: For the USDA collection, we took leaf
+tissue samples for Darseq.
+[SPEAKER_01]: So hoping to look at allele frequency and
+hopefully run a GWAS as well.
+[SPEAKER_01]: The third chapter is a little bit up in
+the air.
+[SPEAKER_01]: There's potential.
+[SPEAKER_01]: I kind of would like to talk about some of
+the cultural aspects of this because I
+[SPEAKER_01]: think it's a really important thing.
+[SPEAKER_01]: I've been trying to do a lot of research
+looking at the care and fair principles.
+[SPEAKER_01]: And maybe trying to write something
+talking about this project and those
+[SPEAKER_01]: principles and thinking about
+characterizing these more traditional
+[SPEAKER_01]: vegetable crops.
+OK.
+[SPEAKER_02]: Thank you for the introduction,
+Charlie.
+[SPEAKER_02]: Once again, I am Savannah Dale.
+[SPEAKER_02]: I am from Mike Moore and Joyce Van
+Exelabs.
+[SPEAKER_02]: And today, I'm going to be telling you
+about some work that I've been doing,
+[SPEAKER_02]: adapting a practical haplotype graph for
+imputation in sweet corn.
+[SPEAKER_02]: So sort of to give you some background,
+on this work, low vitamin intake is a
+[SPEAKER_02]: modern food challenge in the USA.
+[SPEAKER_02]: And by low vitamin intake, I don't mean
+clinical levels of low vitamin intake,
+[SPEAKER_02]: but sub-recommended levels of vitamin
+intake.
+[SPEAKER_02]: So a few compounds that we're really
+interested in in sweet corn are provitamin
+[SPEAKER_02]: A carotenoids, antioxidant carotenoids,
+and vitamin C.
+[SPEAKER_02]: And vitamin E.
+[SPEAKER_02]: So these compounds, when you don't get
+enough of these in your diet, what can
+[SPEAKER_02]: happen is you can have increased risks of
+conditions such as blindness, maternal
+[SPEAKER_02]: mortality, or increased risk of
+cardiovascular disease.
+[SPEAKER_02]: And sweet corn offers a great opportunity
+for addressing some of these issues
+[SPEAKER_02]: because sweet corn is a very popularly
+consumed vegetable in the US.
+[SPEAKER_02]: As of 2019, it was the sixth most consumed
+vegetable, according to the USDA.
+[SPEAKER_02]: And it also has natural variation for
+these fresh kernel nutrient quality
+[SPEAKER_02]: traits, including vitamin E and
+carotenoids.
+[SPEAKER_02]: So previous work that has been done in the
+Gore lab has used a sweet corn and bread
+[SPEAKER_02]: association, and breadline association
+panel that was created by Bill Tracy and
+[SPEAKER_02]: Matt Visagio.
+[SPEAKER_02]: And this was used to identify inbred lines
+that had desirable alleles for genes that
+[SPEAKER_02]: we know contribute to these fresh kernel
+nutritional quality traits.
+[SPEAKER_02]: So after we selected these inbred lines
+with desirable alleles, what we did was
+[SPEAKER_02]: created F1 bi-parental populations.
+[SPEAKER_02]: And from here, for the rest of our
+breeding pipeline, we are selfing these to
+[SPEAKER_02]: the F5 generation, at which point we will
+conduct yield and quality testing and
+[SPEAKER_02]: generate high-vitamin inbred lines.
+[SPEAKER_02]: However, as every plant breeder knows,
+we are constrained by time and space.
+[SPEAKER_02]: So what we want to do to speed up this
+pipeline is integrate marker-based
+[SPEAKER_02]: selection in early generations.
+[SPEAKER_02]: So keep in mind these will be highly
+heterozygous, individuals that we want to
+[SPEAKER_02]: perform the selection in, ideally our F2
+generation.
+[SPEAKER_02]: And this necessitates a method for
+efficient genotype imputation.
+[SPEAKER_02]: So this is where the practical haplotype
+graph, which was created in the Buckler
+[SPEAKER_02]: lab, comes into play.
+[SPEAKER_02]: This can be used to accurately impute
+genotypes from SCIM sequence data.
+[SPEAKER_02]: So just to give you a very, very brief
+overview of a Ph.D.
+[SPEAKER_02]: I wish I had more time to go into this.
+[SPEAKER_02]: But a Ph.D.
+[SPEAKER_02]: is when we say graph, this is what we mean
+by the graph.
+[SPEAKER_02]: It is a graph of different consensus
+sequences that have been created from a
+[SPEAKER_02]: starting panel, in this case a pangenome
+of different maze accessions for each
+[SPEAKER_02]: region in the genome.
+[SPEAKER_02]: And the number of regions is variable
+depending on who creates the Ph.D.
+[SPEAKER_02]: and also what the end user wants.
+[SPEAKER_02]: So the way this works is we would start
+out with our reference genome here.
+[SPEAKER_02]: So for maze, this would be something like
+B73.
+[SPEAKER_02]: And then a low coverage whole genome
+sequence genome, this would be the
+[SPEAKER_02]: accession that we want to impute.
+[SPEAKER_02]: And the reference, we would align this to
+the reference.
+[SPEAKER_02]: This reference genome is the same
+reference genome that was used to create
+[SPEAKER_02]: the Ph.D.
+[SPEAKER_02]: that I showed you.
+[SPEAKER_02]: So what happens is we split our low
+coverage or SCIM sequencing data into the
+[SPEAKER_02]: same regions that the Ph.D.
+[SPEAKER_02]: includes.
+[SPEAKER_02]: And then we can actually compare each
+region where we have known data.
+[SPEAKER_02]: So this would be the orange block,
+the green block, and the blue block.
+[SPEAKER_02]: We can compare these to our Ph.D.
+[SPEAKER_02]: Say this is, okay, this is most similar to
+the orange block in the Ph.D.
+[SPEAKER_02]: itself.
+[SPEAKER_02]: The green block is most similar to the
+green block, the green consensus sequence
+[SPEAKER_02]: in the Ph.D.
+[SPEAKER_02]: And the blue block is the same as this
+blue consensus sequence.
+[SPEAKER_02]: But we have this area of missing data here
+in our SCIM sequencing.
+[SPEAKER_02]: And what we want to do is use the Ph.D.
+[SPEAKER_02]: to predict or impute what this missing
+data is.
+[SPEAKER_02]: So the Ph.D.
+[SPEAKER_02]: uses this graph of consensus sequences and
+uses a hidden Markov model and a Vitterbi
+[SPEAKER_02]: algorithm to actually predict the most
+likely path through these consensus
+[SPEAKER_02]: sequences to then predict, okay,
+this is the most likely haplotype that we
+[SPEAKER_02]: see in this region where we're missing
+information.
+[SPEAKER_02]: So then we can fill in the blanks,
+so to speak.
+[SPEAKER_02]: But the use of a Ph.D.
+[SPEAKER_02]: raises a lot of questions.
+[SPEAKER_02]: And I think the biggest one is,
+does the Ph.D.
+[SPEAKER_02]: that you're using need to include your
+population founders?
+[SPEAKER_02]: So that's the big question for me.
+[SPEAKER_02]: I've been working with the Buckler Lab
+using their Mays pangenome Ph.D.,
+[SPEAKER_02]: but this doesn't include any of my sweet
+corn population founders.
+[SPEAKER_02]: So is there enough genetic representation
+in it to perform imputation in my
+[SPEAKER_02]: population?
+[SPEAKER_02]: So what I'm starting out with is I have
+nine sweet corn and bread founders,
+[SPEAKER_02]: which I have 72x WGS data for.
+[SPEAKER_02]: My four bi-parental populations of about
+200 individuals each, which I have 0.8x
+[SPEAKER_02]: WGS data for.
+[SPEAKER_02]: And then I have this control IA 453 line
+from the Rezende Lab, which I have 22x WGS
+[SPEAKER_02]: data for.
+[SPEAKER_02]: And then I, like I said, I'm using an
+existing Mays pangenome Ph.D.
+[SPEAKER_02]: from the Buckler Lab.
+[SPEAKER_02]: And then I want to impute genotypes for my
+populations at the end.
+[SPEAKER_02]: But I need to test if this Ph.D.
+[SPEAKER_02]: has enough genetic representation to
+accurately impute genotypes in my F2
+[SPEAKER_02]: progeny.
+[SPEAKER_02]: So to start with, I am using this method
+this pipeline that I have here to input my
+[SPEAKER_02]: nine inbred sweet corn founders.
+[SPEAKER_02]: So I'm not doing anything with my F2s at
+this point, just to clarify, as well as my
+[SPEAKER_02]: control line.
+[SPEAKER_02]: And this is very high coverage whole
+genome sequencing data.
+[SPEAKER_02]: I aligned it to the Mays pangenome.
+[SPEAKER_02]: So this is my reference genome.
+[SPEAKER_02]: And then I'm using the existing Mays
+pangenome Ph.D.
+[SPEAKER_02]: to predict haplotype paths or impute
+genotypes for my founders and my control
+[SPEAKER_02]: line here.
+[SPEAKER_02]: And this IA 453 is my control line because
+it is one of the three sweet corn
+[SPEAKER_02]: accessions that were used to create the
+pangenome Ph.D.
+[SPEAKER_02]: So ideally, it would perform better than
+any of my lines.
+[SPEAKER_02]: So once I have these predicted haplotype
+paths, I'm converting them into
+[SPEAKER_02]: pseudo-references, which is a term that Ed
+very wonderfully gave to me.
+[SPEAKER_02]: So thank you.
+[SPEAKER_02]: Ed, if you're still here.
+[SPEAKER_02]: And then aligning these pseudo-references,
+which is basically just a FASTA of my
+[SPEAKER_02]: predicted genomes for each of these lines,
+to the actual sequence data.
+[SPEAKER_02]: And then I'm calling variance from those
+alignments.
+[SPEAKER_02]: So what this is doing is allowing me to
+look at the differences between the
+[SPEAKER_02]: predicted sequence and the actual
+sequence.
+[SPEAKER_02]: So if the imputation works perfectly,
+I would expect there to be no difference
+[SPEAKER_02]: between my actual data and my imputed
+data.
+[SPEAKER_02]: But what we can more realistically expect
+is that in my pseudo-reference,
+[SPEAKER_02]: the imputed founder sequence, there will
+be gaps or missed calls in the sequence.
+[SPEAKER_02]: So what I did, I ran the pipeline that
+I've shared with you so far.
+[SPEAKER_02]: And then I looked at the number of SNPs
+that were called.
+[SPEAKER_02]: So these are the number of variance
+between the actual and imputed sequence.
+[SPEAKER_02]: And got a lot of information, but we're
+still working on how to really interpret
+[SPEAKER_02]: this.
+[SPEAKER_02]: What does this mean?
+[SPEAKER_02]: But I'd like to draw your attention
+specifically to I subsectioned out this
+[SPEAKER_02]: graph and converted it to show SNP
+percentages.
+[SPEAKER_02]: So on this y-axis, I have SNP rate,
+or percentage of SNPs, of all base pairs
+[SPEAKER_02]: that were imputed, how many are imputed
+incorrectly.
+[SPEAKER_02]: So this is ranging from a little under
+0.0006% up to 0.0017% incorrect
+[SPEAKER_02]: imputations.
+[SPEAKER_02]: Oh, I would also like to point out this IA
+453, again, is my control line.
+[SPEAKER_02]: And this is what I expected to perform the
+best.
+[SPEAKER_02]: So when we're interpreting these,
+we want them to all be 0.
+[SPEAKER_02]: Everything should be 0 in this graph.
+[SPEAKER_02]: If it was a perfect imputation,
+that's not what we're seeing.
+[SPEAKER_02]: And I'm also seeing my control line did
+not perform as well as I would have
+[SPEAKER_02]: expected it to.
+[SPEAKER_02]: And I hypothesized that this could be due
+to the representation of sweet corn that
+[SPEAKER_02]: is in the pangenome Ph.D.
+[SPEAKER_02]: Particularly, so here's my control line,
+which, again, is one of the sweet corn
+[SPEAKER_02]: lines that were made used to create the
+pangenome Ph.D., along with P39 and IL14H.
+[SPEAKER_02]: What I would have expected is that FA56A,
+which is my founder that performed the
+[SPEAKER_02]: best out of everything, would be more
+closely related to one of the sweet corn
+[SPEAKER_02]: lines that was used to create the
+pangenome Ph.D.
+[SPEAKER_02]: But that's not what I'm seeing based on
+this phylogenetic tree that was created by
+[SPEAKER_02]: Vincent Calantonio, formerly of the Risen
+Day Lab.
+[SPEAKER_02]: So thank you, Vincent.
+[SPEAKER_02]: So that is my hypothesis.
+[SPEAKER_02]: So what I'm doing now, I've showed you
+this pipeline and just a few of my results
+[SPEAKER_02]: from my work so far.
+[SPEAKER_02]: And I am actually adding that information
+from I use the variance, so those
+[SPEAKER_02]: differences or miscalled SNPs,
+between my imputed and my actual
+[SPEAKER_02]: sequences, added that information back
+into the Ph.D.
+[SPEAKER_02]: So now we have an updated pangenome Ph.D.
+[SPEAKER_02]: with information from my sweet corn
+founders.
+[SPEAKER_02]: And I'm performing the same steps again.
+[SPEAKER_02]: And what I would expect to see is,
+this is what we saw before, where I have
+[SPEAKER_02]: these pseudo references, where I have gaps
+and mistakes.
+[SPEAKER_02]: I would expect to still see some mistakes
+in the new imputation that I'm generating.
+[SPEAKER_02]: But fewer, because the Ph.D.
+[SPEAKER_02]: database has been updated with new
+information.
+[SPEAKER_02]: Unfortunately, I have not completed this
+at this stage, so you guys will have to
+[SPEAKER_02]: stay tuned for later.
+[SPEAKER_02]: But the eventual goal is to then use the
+existing Ph.D., an updated version of the
+[SPEAKER_02]: Ph.D., as well as another very commonly
+used method of imputation.
+[SPEAKER_02]: And compare these and their imputation
+accuracy in my F2 progeny sequences,
+[SPEAKER_02]: my SCIM sequence data.
+[SPEAKER_02]: So with that, I would like to thank the
+Gore lab, the Rizende lab, the Buckler
+[SPEAKER_02]: lab, especially for all of their help with
+this work, and all of my funding sources.
+[SPEAKER_02]: And I will take any questions at this
+time.
+[SPEAKER_02]: Yeah, Travis.
+[SPEAKER_02]: Yeah, that's a really good question.
+[SPEAKER_02]: So the question was, am I looking at
+distributions of error rates, whether
+[SPEAKER_02]: they're occurring in genic regions or
+intergenic regions?
+[SPEAKER_02]: What regions of the genome are we seeing
+the most error and imputation in?
+[SPEAKER_02]: And the answer is yes.
+[SPEAKER_02]: I will be doing that, but I have not done
+that so far.
+[SPEAKER_02]: So that's a really good question,
+because if the errors are occurring in
+[SPEAKER_02]: mostly intergenic regions, it might not
+matter.
+[SPEAKER_02]: And this is a very good point for Ph.D.
+[SPEAKER_02]: users, is how much accuracy do you
+actually need to be able to get the data
+[SPEAKER_02]: that you need for your project?
+[SPEAKER_02]: So that's a question that I want to answer
+with my work.
+[SPEAKER_02]: But also, especially in my case,
+we know if we have some particular loci
+[SPEAKER_02]: that we're interested in, if we have good
+imputation in those loci, then we're
+[SPEAKER_02]: probably OK to move forward.
+[SPEAKER_02]: So thank you.
+[SPEAKER_02]: Good question.
+[SPEAKER_02]: Yes, Ed.
+[SPEAKER_04]: Again, I really like that.
+[SPEAKER_04]: But yeah, I wonder if at the chromosomal
+scale, it'd be very interesting to keep a
+[SPEAKER_04]: variant error in the cluster.
+[SPEAKER_04]: Because I think there's a lot of hidden
+markup models.
+[SPEAKER_04]: Absolutely.
+[SPEAKER_04]: If we were reading the genome in FADMAP,
+we'd probably go off the rails.
+And it's a good evidence from the cluster.
+[SPEAKER_04]: Yeah.
+[SPEAKER_02]: Thank you, Ed, which, again, is supporting
+what Travis said, that looking at where
+[SPEAKER_02]: these mistakes are occurring is really
+important.
+[SPEAKER_02]: And also, if these are occurring in rare
+alleles, which this is also a really good
+[SPEAKER_02]: point, because part of this is if you are
+really looking at rare alleles,
+[SPEAKER_02]: then you want to have a low error rate in
+your rare alleles.
+[SPEAKER_02]: But in particular, that's important when
+you're looking at very highly heterozygous
+[SPEAKER_02]: lines, like I am as well.
+[SPEAKER_01]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_01]: Thank you.
+[SPEAKER_01]: Thank you.
+Thank you.

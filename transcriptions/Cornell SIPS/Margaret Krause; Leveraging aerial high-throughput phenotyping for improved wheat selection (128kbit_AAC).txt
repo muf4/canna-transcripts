@@ -1,0 +1,413 @@
+[SPEAKER_02]: This is a production of Cornell
+University.
+[SPEAKER_00]: And first off today, live from Mexico,
+we're going to have Margaret Krauss,
+[SPEAKER_00]: and she's going to tell us about
+leveraging aerial high throughput
+[SPEAKER_00]: phenotyping for improved early generation
+selection in wheat.
+[SPEAKER_00]: Take it away.
+[SPEAKER_02]: OK, thank you so much to the organizers
+for setting this up today on Zoom.
+[SPEAKER_02]: To start off, giving a little background,
+on aerial high throughput phenotyping,
+[SPEAKER_02]: this relies heavily on the concept of
+light reflected off of the crop canopy.
+[SPEAKER_02]: And recent developments in the remote
+sensing, imaging, and aerospace industries
+[SPEAKER_02]: have given us a wide range of technologies
+to use to acquire these phenotypes.
+[SPEAKER_02]: And we're using quite a number of them
+here at CIMIT to look at different
+[SPEAKER_02]: problems in plant breeding and genetics.
+[SPEAKER_02]: But today, I will just be focusing on
+unmanned aerial systems, or UASs,
+[SPEAKER_02]: as well as multispectral sensors,
+which give us reflectance at a small
+[SPEAKER_02]: number of wavelengths in the light
+spectrum.
+[SPEAKER_02]: In our case, we get five.
+[SPEAKER_02]: And from this information, we can
+calculate what are called vegetation
+[SPEAKER_02]: indices.
+[SPEAKER_02]: It's been well characterized in the
+literature that vegetation indices can be
+[SPEAKER_02]: useful proxies for things like overall
+plant health, response to stress,
+[SPEAKER_02]: changes in phenology, et cetera.
+[SPEAKER_02]: So we're interested in those for
+potentially using them to select at the
+[SPEAKER_02]: early stage in wheat.
+[SPEAKER_02]: I am calculating and working with quite a
+number of them.
+[SPEAKER_02]: But for this presentation, I'll just be
+working with NDVI, which is a ratio of
+[SPEAKER_02]: reflectance in the near infrared and red
+regions of the spectrum.
+[SPEAKER_02]: So a little bit of background on the CIMIT
+breeding program.
+[SPEAKER_02]: Some of you might be familiar with their
+method of selected bulking.
+[SPEAKER_02]: So plants are selected in bulk between the
+F2 and F3 of five generations.
+[SPEAKER_02]: And the F6 is really the first time when
+they're selected and harvested
+[SPEAKER_02]: individually.
+[SPEAKER_02]: And then they're planted in small two row
+plots that are one meter in length.
+[SPEAKER_02]: And these are unreplicated.
+[SPEAKER_02]: A couple of weeks ago, we just finished
+hand planting 38,000 of them.
+[SPEAKER_02]: So it's a lot of work.
+[SPEAKER_02]: And we could theoretically measure grain
+yield at this stage.
+[SPEAKER_02]: But trait heritability is low and not
+reliable for selection.
+[SPEAKER_02]: In addition, we don't really have the
+machine or manpower to harvest and weigh
+[SPEAKER_02]: that many samples.
+[SPEAKER_02]: So at this stage, we're still working with
+visual selection.
+[SPEAKER_02]: And then those lines move on into the
+first year of replicated yield trials.
+[SPEAKER_02]: It could potentially be beneficial to have
+accurate predictions of grain yield at the
+[SPEAKER_02]: F7 small plot stage.
+[SPEAKER_02]: And that's what we're trying to look at
+with aerial phenotyping.
+[SPEAKER_02]: So we've kind of designed an experiment to
+ask this question.
+[SPEAKER_02]: Can we use phenotyping to select at the
+early generation stage?
+[SPEAKER_02]: And we designed the experiment so that it
+would be kind of integrated into the
+[SPEAKER_02]: breeding program and not use a lot of
+extra resources.
+[SPEAKER_02]: So the breeders went through the F7 small
+plots in 2016 to select lines to move on
+[SPEAKER_02]: into the large replicated yield trials in
+2017.
+[SPEAKER_02]: We went through and selected a subset of
+those 1,080 lines and planted them again
+[SPEAKER_02]: as unreplicated one meter small plots.
+[SPEAKER_02]: So these lines were planted twice in 2016.
+[SPEAKER_02]: Both as small plots and as large yield
+plots.
+[SPEAKER_02]: We used a Matrice 100 UAS by DJI equipped
+with a Micasense red edge multispectral
+[SPEAKER_02]: sensor to phenotype the plots at multiple
+time points during the growing season.
+[SPEAKER_02]: We also assessed yield in both the small
+and large plots.
+[SPEAKER_02]: Again, we don't normally assess yield in
+small plots.
+[SPEAKER_02]: We did so this year for the purpose of
+this experiment.
+[SPEAKER_02]: I want to take you guys through some of
+the steps of the aerial phenotyping and
+[SPEAKER_02]: imaging pipeline that we use at CIMIT
+because there are a lot of considerations
+[SPEAKER_02]: that we have to get right in order to get
+usable phenotypes out at the end.
+[SPEAKER_02]: Before we can even fly, there are a few
+things to do and one of those things is to
+[SPEAKER_02]: make and place ground control points in
+the field.
+[SPEAKER_02]: These need to stay in one place throughout
+the growing season and they need to be
+[SPEAKER_02]: visible to the sensor.
+[SPEAKER_02]: Once we've collected their RTK GPS
+coordinates with our RTK system,
+[SPEAKER_02]: we can use that information to assign
+physical locations to each of the images,
+[SPEAKER_02]: which is critical to being able to stitch
+them together.
+[SPEAKER_02]: We also need to create a flight plan for
+the UAS and we do that in a software
+[SPEAKER_02]: called Mission Planner.
+[SPEAKER_02]: Again, in order to stitch the images,
+they have to have sufficient overlap.
+[SPEAKER_02]: So we shoot for 80% overlap and 75% side
+lap and we can program that into the
+[SPEAKER_02]: flight plan.
+[SPEAKER_02]: The altitude, speed of the UAS and capture
+rate of the sensor can also affect the
+[SPEAKER_02]: overall quality of the image.
+[SPEAKER_02]: And we fly the Micasense at 30 meters at
+12 kilometers per hour and the sensor has
+[SPEAKER_02]: a capture rate of one image per second.
+[SPEAKER_02]: On the day of the flight, there's a lot of
+things to remember to bring out to the
+[SPEAKER_02]: field.
+[SPEAKER_02]: Batteries are actually a big bottleneck
+for us.
+[SPEAKER_02]: We bring out multiple SD cards for the
+images and a computer to store them on at
+[SPEAKER_02]: the end.
+[SPEAKER_02]: We run an app on a tablet that will
+control the UAV and it runs the flight
+[SPEAKER_02]: plan mostly automatically, so there's very
+little manual control of the UAS that's
+[SPEAKER_02]: needed.
+[SPEAKER_02]: Before every takeoff, we also take images
+of a calibration panel.
+[SPEAKER_02]: Calibrating the images is really important
+because atmospheric conditions on the day
+[SPEAKER_02]: of the flight can affect the amount of
+light that's captured by the sensor.
+[SPEAKER_02]: So what we do is we measure the true
+values of the calibration panel with a
+[SPEAKER_02]: spectroradiometer and then compare those
+to values taken on the day of the flight
+[SPEAKER_02]: and create a model that will calibrate all
+of the images prior to stitching.
+[SPEAKER_02]: This is really important if you want to
+compare phenotypes on different dates and
+[SPEAKER_02]: track growth throughout the growing
+season.
+[SPEAKER_02]: We stitch all the images together using a
+software called Pix4D and the composite
+[SPEAKER_02]: image that comes out is called an
+orthomosaic.
+[SPEAKER_02]: I've put up our orthomosaic of the small
+plots area from one time point and I've
+[SPEAKER_02]: taken out a section for you to see up
+close what it looks like.
+[SPEAKER_02]: That little white thing in there is a
+ground control point.
+[SPEAKER_02]: Our final resolution is one to two
+centimeters per pixel, so it's pretty
+[SPEAKER_02]: good.
+[SPEAKER_02]: Again, these are the one meter plots,
+so they're fairly small.
+[SPEAKER_02]: To extract the data, we use ArcGIS and
+first thing we create a soil vegetation
+[SPEAKER_02]: mask using a maximum likelihood
+classification.
+[SPEAKER_02]: So this will assign a binary value to
+pixels that are either soil or vegetation.
+[SPEAKER_02]: We can apply that mask back to the
+original image and remove any data
+[SPEAKER_02]: associated with soil.
+[SPEAKER_02]: And then the last step is to draw polygons
+around the plots and calculate plot level
+[SPEAKER_02]: statistics on the data bound by the
+polygon.
+[SPEAKER_02]: So there are a lot of considerations that
+go into this and hopefully if you do it
+[SPEAKER_02]: right, you can get good quality results
+and that's what we think we're starting to
+[SPEAKER_02]: see here.
+[SPEAKER_02]: In both the small and the large plots,
+we had higher heritability for all of our
+[SPEAKER_02]: NDVI time points than we did for yields.
+[SPEAKER_02]: So that's promising.
+[SPEAKER_02]: In terms of yield, we had a correlation of
+0.3 between the small and large plots.
+[SPEAKER_02]: That's about what we expected and in both
+experiments, we saw significant
+[SPEAKER_02]: correlations between NDVI and yield.
+[SPEAKER_02]: It was a little bit greater in the large
+plots due to their size.
+[SPEAKER_02]: The relationship that we're really
+interested in, however, is between small
+[SPEAKER_02]: plot NDVI and large plot yield and here
+we're seeing that it's 0.43, so that's
+[SPEAKER_02]: pretty good.
+[SPEAKER_02]: I looked at this in terms of correlated
+response to selection.
+[SPEAKER_02]: So in this case, the correlated trait is
+actually large plot yield and we could
+[SPEAKER_02]: theoretically select off of small plot
+NDVI or small plot yield and we're seeing
+[SPEAKER_02]: that the NDVI is twice as effective.
+[SPEAKER_02]: The reason for this is because it has
+higher heritability and it has a higher
+[SPEAKER_02]: correlation with large plot yield than
+small plot yield.
+[SPEAKER_02]: So these are looking promising as a
+selection tool.
+[SPEAKER_02]: I also did some multi-trait genomic
+prediction work and this is work sort of
+[SPEAKER_02]: following Jessica's initial work using
+HTTP traits as secondary traits in GS and
+[SPEAKER_02]: the setup that I use is a little bit
+complicated, so I wanted to go through it.
+[SPEAKER_02]: The training set that I used was 80% of
+the lines.
+[SPEAKER_02]: The target trait was large plot yield and
+the secondary trait was large plot NDVI.
+[SPEAKER_02]: So we fit this model using pedigrees and
+then for the test set, we used the
+[SPEAKER_02]: remaining 20% of lines.
+[SPEAKER_02]: Yield was hidden this time.
+[SPEAKER_02]: And small plot NDVI was actually the
+secondary trait.
+[SPEAKER_02]: So the predictions that we got out,
+we correlated back to large plot yield.
+[SPEAKER_02]: So the idea of doing this is you could fit
+a model using the large plots where you
+[SPEAKER_02]: have both yield and NDVI available and
+then use it to predict the small plots
+[SPEAKER_02]: where you only have NDVI and assess what
+their yield would be as if they were
+[SPEAKER_02]: planted as large plots.
+[SPEAKER_02]: So I've plotted the results along the
+bottom in white and we're looking at
+[SPEAKER_02]: multiple time points for the NDVI.
+[SPEAKER_02]: So I tried to show where those are in
+relation to the phenology of the trials.
+[SPEAKER_02]: That's what the top two graphs are.
+[SPEAKER_02]: CIMIT has a huge aerial phenotyping
+program.
+[SPEAKER_02]: I think we did more aerial phenotyping
+last season than any CG center has ever
+[SPEAKER_02]: done.
+[SPEAKER_02]: We have a lot of different experiments
+going on.
+[SPEAKER_02]: So unfortunately, those things as well as
+changes in the weather and
+[SPEAKER_02]: responsibilities in the field prevented us
+from phenotyping both trials on the same
+[SPEAKER_02]: date.
+[SPEAKER_02]: We also had a lot more phenotyping dates
+that we had assessed, but several of them
+[SPEAKER_02]: didn't make it through our quality control
+pipeline.
+[SPEAKER_02]: So these are the dates that we have.
+[SPEAKER_02]: We have two in the small plots and four in
+the large plots.
+[SPEAKER_02]: You can see in the results that adding
+NDVI as a secondary trait doesn't improve
+[SPEAKER_02]: over the univariate case in most cases,
+but it does so twice, most notably when
+[SPEAKER_02]: both the small and large plots were
+phenotyped on March 13th.
+[SPEAKER_02]: We know that NDVI is sensitive to
+phenology.
+[SPEAKER_02]: So this coming season, we will be paying a
+lot more attention to trying to phenotype
+[SPEAKER_02]: these trials at the same time.
+[SPEAKER_02]: We got them planted on the exact same date
+this year, so that's really good.
+[SPEAKER_02]: We just want to make sure that we're doing
+our best so that we're not comparing
+[SPEAKER_02]: apples to oranges.
+[SPEAKER_02]: One more thing I want to say about this is
+in this experiment, the training set and
+[SPEAKER_02]: the test set, were assessed within the
+same breeding cycle, but if we were to do
+[SPEAKER_02]: this in practice, the training and test
+sets would be one to two breeding cycles
+[SPEAKER_02]: removed.
+[SPEAKER_02]: So it's possible that what we're seeing
+here is a little bit of within cycle cross
+[SPEAKER_02]: validation bias, which is characterized in
+the literature, and that NDVI could
+[SPEAKER_02]: actually be more beneficial than what
+we're seeing, but we have not assessed
+[SPEAKER_02]: that yet.
+[SPEAKER_02]: So some quick take-home messages.
+[SPEAKER_02]: The small plot aerial NDVI traits tend to
+be more heritable than yield They are
+[SPEAKER_02]: predictive of yield in the large plots,
+and their correlated response is twice as
+[SPEAKER_02]: effective as the small plot yield.
+[SPEAKER_02]: With our multi-trait GS, NDVI does have
+the potential to improve accuracy,
+[SPEAKER_02]: but timing around the phenology appears to
+be really important, and we will be taking
+[SPEAKER_02]: steps to improve that this coming year.
+[SPEAKER_02]: So that's what I have for you guys today,
+and I'd like to thank my committee,
+[SPEAKER_02]: especially my advisors, Mark and Mike.
+[SPEAKER_02]: At CIMIT, I'm working with Dr. Jose Croce,
+who's in biometrics, but as you can see
+[SPEAKER_02]: from the photos, there are a lot of other
+people who help make this phenotyping
+[SPEAKER_02]: possible.
+[SPEAKER_02]: This project has also been heavily
+supported by Kansas State.
+[SPEAKER_02]: Jesse has been co-advising the project.
+[SPEAKER_02]: His UAS technician, Bridge Brown,
+who's pictured there, taught me how to
+[SPEAKER_02]: fly, and Atina has been helping with some
+of the image processing.
+[SPEAKER_02]: And of course, I wouldn't be in Mexico
+without my funding sources, so thank you
+[SPEAKER_02]: to USAID and their U.S.
+[SPEAKER_02]: Borlactols and Global Food Security Grant,
+as well.
+[SPEAKER_02]: As well as the National Science Foundation
+Grant.
+[SPEAKER_02]: So I'm happy to interact with you guys for
+a couple minutes if we still have time.
+[SPEAKER_02]: So thanks again to the organizers.
+[SPEAKER_00]: Thanks, Margaret.
+[SPEAKER_00]: Questions?
+[SPEAKER_00]: Yeah, or I could run the mic, too.
+[SPEAKER_00]: Yeah, Tier.
+[SPEAKER_03]: Can you hear me, Margaret?
+[SPEAKER_03]: Sorry.
+[SPEAKER_03]: So Donald Obergetter, when you're taking
+NDVI images, is the lack of greenness and
+[SPEAKER_03]: that kind of being robust versus not
+robust, healthy versus not healthy,
+[SPEAKER_03]: is that drought, heat, nitrogen,
+stress, all three of them, other things?
+[SPEAKER_03]: I mean, like what fundamentally is the,
+like, yeah, I guess what is the stress
+[SPEAKER_03]: tolerance or stress resistance or whatnot
+that is being reflected in NDVI?
+[SPEAKER_03]: What are you selecting on, like,
+in terms of that?
+[SPEAKER_02]: Yeah, so in terms of that, for this
+particular experiment, it's probably just
+[SPEAKER_02]: going to be a lot to do with biomass in
+the small plots, you know, germination,
+[SPEAKER_02]: things like that.
+[SPEAKER_02]: But we are using these technologies at
+CIMIT in our other environments.
+[SPEAKER_02]: And so we have a drought experiment.
+[SPEAKER_02]: We have a heat experiment.
+[SPEAKER_02]: And in those experiments, we see a lot of
+difference, a lot more variation in NDVI
+[SPEAKER_02]: that would be linked to those things.
+[SPEAKER_01]: Margaret, this is Dan.
+[SPEAKER_01]: Could you flip back a couple slides to the
+prediction accuracies on the... Yeah,
+[SPEAKER_01]: so on March 13th, do you think the higher
+prediction accuracy there is an artifact
+[SPEAKER_01]: of being scored on the same day in large
+and small plots?
+[SPEAKER_01]: Because it's just kind of an arbitrary
+time in grain fill.
+[SPEAKER_01]: Or do you think that's actually
+legitimate?
+[SPEAKER_02]: So what we've been seeing is that the time
+points that tend to be the most predictive
+[SPEAKER_02]: in our program tend to be during grain
+filling.
+[SPEAKER_02]: And we haven't necessarily focused all of
+our phenotyping efforts to just focus on
+[SPEAKER_02]: the grain fill stage, because I think the
+breeders are interested in having
+[SPEAKER_02]: phenotypes from earlier in the season and
+certainly it takes time to process the
+[SPEAKER_02]: imagery.
+[SPEAKER_02]: So to have phenotypes in the hands of the
+breeders at the time that they're going
+[SPEAKER_02]: through selections, you might have to
+start earlier.
+[SPEAKER_02]: So that's something that it'll be
+interesting to see what the results come
+[SPEAKER_02]: out as next season.
+[SPEAKER_02]: If it's only grain filling, that is the
+time when we can phenotype effectively.
+[SPEAKER_00]: Well, if there's no more questions,
+let's all thank Margaret.
+[SPEAKER_02]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_02]: Thank you.
+Thank you.
+Thank you.

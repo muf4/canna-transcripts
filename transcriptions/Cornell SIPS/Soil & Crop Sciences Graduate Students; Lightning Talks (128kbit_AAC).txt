@@ -1,0 +1,1004 @@
+[SPEAKER_06]: This is a production of Cornell
+University.
+[SPEAKER_03]: Hello, everyone.
+[SPEAKER_03]: Thanks for coming.
+[SPEAKER_03]: My name is Philip Lanza.
+[SPEAKER_03]: I'm a PhD candidate with Louie in the
+Farmers Data Lab.
+[SPEAKER_03]: We work with farmers to kind of help them
+experiment a little better, get more value
+[SPEAKER_03]: from their experiments, more or less.
+[SPEAKER_03]: So I'm going to talk about, first,
+some of the projects I'm working on,
+[SPEAKER_03]: and at the end, go over some more of the
+stuff our lab does.
+[SPEAKER_03]: What I'm working on is applying
+observational research techniques to
+[SPEAKER_03]: agronomic systems.
+[SPEAKER_03]: They work well in medical trials where
+things are complex.
+[SPEAKER_03]: The data is kind of messy.
+[SPEAKER_03]: There are data-driven approaches.
+[SPEAKER_03]: And the big thing that we need to do this
+is context.
+[SPEAKER_03]: So in medical, it would be like,
+does this person smoke?
+[SPEAKER_03]: What's their age range?
+[SPEAKER_03]: All these things.
+[SPEAKER_03]: In farming, we use relevant biophysical
+and environmental data that let us kind of
+[SPEAKER_03]: objectively say, OK, well, this happened.
+[SPEAKER_03]: What context did it happen in?
+[SPEAKER_03]: So the challenge to that in the project is
+one is a way to help get this data to
+[SPEAKER_03]: where we can use it.
+[SPEAKER_03]: The next is showing something we can do
+with these data.
+[SPEAKER_03]: And the last is doing some analysis to
+show that it can kind of help,
+[SPEAKER_03]: hopefully, improve experimental
+interpretation and that sort of thing.
+[SPEAKER_03]: So the first thing I did was design a
+system to help us get all these contextual
+[SPEAKER_03]: data.
+[SPEAKER_03]: So any kind of agronomically relevant
+environmental data, like weather,
+[SPEAKER_03]: terrain data, soil data, all these things,
+this lets you do it in an easy-to-use
+[SPEAKER_03]: interface.
+[SPEAKER_03]: It's web-based.
+[SPEAKER_03]: You pull it down, and it generates
+everything in a consistent format.
+[SPEAKER_03]: Next thing, building an in-season anomaly
+detection system to identify areas at
+[SPEAKER_03]: subfield scale.
+[SPEAKER_03]: Right now, 3-meter resolution of anomalous
+crop response.
+[SPEAKER_03]: So given all these covariates,
+it should be responding this way based
+[SPEAKER_03]: upon NDVI.
+[SPEAKER_03]: This isn't.
+[SPEAKER_03]: And then identify that.
+[SPEAKER_03]: So then one, we can identify these areas
+and send scouts out there to find them or
+[SPEAKER_03]: find out this experiment had a bunch of
+bad areas, so maybe it may not be the
+[SPEAKER_03]: best.
+[SPEAKER_03]: Last thing, I'm doing a comparison using
+the anomaly data on a commonly accepted
+[SPEAKER_03]: correlation of the great soil health
+versus yield.
+[SPEAKER_03]: I'm using production environment soil
+health data from Joseph and Harold's
+[SPEAKER_03]: group, which thanks for letting me use.
+[SPEAKER_03]: And then I'm going to analyze it where
+areas have no anomalies versus varying
+[SPEAKER_03]: degrees in C.
+[SPEAKER_03]: My assumption is that no anomalous areas
+will be stronger correlation than that can
+[SPEAKER_03]: show.
+[SPEAKER_03]: When we account for these things,
+we can get better experimental design and
+[SPEAKER_03]: plan things better and just account for
+uncertainty.
+[SPEAKER_03]: So lastly, we're a farmers data lab.
+[SPEAKER_03]: This is the website.
+[SPEAKER_03]: If you like QR codes, here's the QR code.
+[SPEAKER_03]: We're transdisciplinary.
+[SPEAKER_03]: We co-create solutions with farmers using
+agronomy, data science, GIS, social
+[SPEAKER_03]: science.
+[SPEAKER_03]: Here's some cool lab numbers.
+[SPEAKER_03]: We have a new postdoc, Abdel.
+[SPEAKER_03]: We're growing.
+[SPEAKER_03]: We're getting some new members in the
+fall.
+[SPEAKER_03]: I'm looking forward to working with.
+[SPEAKER_03]: And if you have any questions about what
+I'm doing or what we're doing,
+[SPEAKER_03]: I'll take them now.
+[SPEAKER_03]: Philip, how many farmers are you working
+with?
+[SPEAKER_03]: I'd say like 12 right now.
+[SPEAKER_03]: Is that right?
+[SPEAKER_09]: We have 24 sites for farmers.
+[SPEAKER_03]: So we're trying to grow.
+[SPEAKER_03]: If you have any farmers who might want to
+work with us, let us know.
+[SPEAKER_03]: Do you anticipate increasing that in the
+future?
+[SPEAKER_03]: Is that something that's expanding?
+[SPEAKER_03]: Or is 12 a good number?
+[SPEAKER_03]: From my point of view, the more,
+the better.
+[SPEAKER_03]: A lot of the techniques I use are data
+driven.
+[SPEAKER_03]: So the more, the better.
+[SPEAKER_03]: Right now, our forums cover a lot of the
+state.
+[SPEAKER_03]: But the more representation you have,
+the better data you get.
+[SPEAKER_03]: And then the more people we work with,
+the more people we can help, hopefully.
+[SPEAKER_10]: What types of cropping systems are you
+working with?
+[SPEAKER_10]: What farm is growing?
+[SPEAKER_10]: And roughly, how large are the farms that
+you're working?
+[SPEAKER_03]: Yeah, sure.
+[SPEAKER_03]: A lot of dairy farms are growing.
+[SPEAKER_03]: Grain corn, stover corn.
+[SPEAKER_03]: The anomaly detection stuff, I'm going to
+be working with soybeans.
+[SPEAKER_03]: But pretty much any grain crop.
+[SPEAKER_03]: That's what I'm trying to work with until
+we can work with other higher value crops,
+[SPEAKER_03]: maybe in a couple years or so.
+[SPEAKER_03]: Yeah, field crops, agronomy.
+[SPEAKER_02]: Thank you very much.
+[SPEAKER_02]: You said that you're using this
+information so you can design better
+[SPEAKER_02]: experiments.
+[SPEAKER_02]: That, to me, doesn't seem like the kicker.
+[SPEAKER_02]: You kind of want to get that out to the
+farmer.
+[SPEAKER_02]: So how are you actually making that
+linkage and taking this information to
+[SPEAKER_02]: inform the farming community itself?
+[SPEAKER_03]: Sure.
+[SPEAKER_03]: Well, one example, what we work with is a
+little different.
+[SPEAKER_03]: We don't impose experimental design.
+[SPEAKER_03]: We work with endogenous experimentation.
+[SPEAKER_03]: So the farmer, some do side by side
+strips, which is great.
+[SPEAKER_03]: Other ones we've worked with in the past
+have designed their, say, control around
+[SPEAKER_03]: the border of a field, which, as we know,
+isn't like standard growing conditions.
+[SPEAKER_03]: But what I'm saying with the context,
+we can pull down this to give us objective
+[SPEAKER_03]: data that we can then use to kind of
+explain a little more about what's going
+[SPEAKER_03]: on.
+[SPEAKER_03]: And then the anomaly, we can go in the
+past, and say, OK, well, this experiment
+[SPEAKER_03]: didn't turn out exactly how we thought.
+[SPEAKER_03]: Looking at these anomalous areas,
+maybe their treatment area had a bunch of
+[SPEAKER_03]: them within it.
+[SPEAKER_03]: So it wouldn't be kind of standard crop
+response, which we can use to say,
+[SPEAKER_03]: OK, well, we'd better interpret this.
+[SPEAKER_03]: Going forward, if we consistently identify
+anomalous areas, and maybe it's probably a
+[SPEAKER_03]: biophysical cause, if we do help them
+design their experiments, say,
+[SPEAKER_03]: hey, don't put your thing here,
+put it here.
+[SPEAKER_03]: So did that kind of answer?
+[SPEAKER_02]: That helps a lot.
+[SPEAKER_02]: And you're working right with them in the
+first instance.
+[SPEAKER_03]: Sure, sure, sure.
+[SPEAKER_03]: All right.
+[SPEAKER_03]: Thanks, everyone.
+[SPEAKER_06]: So my name is Becky Stupp.
+[SPEAKER_06]: I am a first year master's student
+studying in Tony DiTomasso's lab.
+[SPEAKER_06]: And I'm here to talk about my thesis
+project, which is optimizing field margin
+[SPEAKER_06]: management for weed control and ecosystem
+services.
+[SPEAKER_06]: So why would a farmer want to plant
+something in the margin of their field?
+[SPEAKER_06]: So biodiversity plantings are very well
+studied at this point.
+[SPEAKER_06]: They improve biodiversity across multiple
+trophic levels, as well as provide various
+[SPEAKER_06]: ecosystem services, such as nutrient
+cycling, water filtration, and more
+[SPEAKER_06]: famously, pollination and biocontrol of
+crop pests by providing habitat for
+[SPEAKER_06]: beneficial arthropods.
+[SPEAKER_06]: And while the seeds can be prohibitively
+expensive at times, historically,
+[SPEAKER_06]: funding for these plantings has been
+available to growers through programs like
+[SPEAKER_06]: the NRCS Conservation Stewardship Program.
+[SPEAKER_06]: I am not sure about the current status of
+that.
+[SPEAKER_06]: But we know from talking to the NRCS that
+New York farmers tend to put these
+[SPEAKER_06]: plantings way out in a corner of their
+field rather than close to their crop
+[SPEAKER_06]: monoculture.
+[SPEAKER_06]: So what are some barriers to farmer
+adoption that we're facing?
+[SPEAKER_06]: Right off the bat, there's a lack of
+research about how field margin plantings
+[SPEAKER_06]: affect weed communities within the crop.
+[SPEAKER_06]: Especially in New York state, a lot of
+this research happens over in Europe.
+[SPEAKER_06]: So we're not really sure what might happen
+with this.
+[SPEAKER_06]: And additionally, farmers have raised
+concerns to members of our research group,
+[SPEAKER_06]: such as, are these plantings going to act
+as reservoirs for weeds?
+[SPEAKER_06]: And is there a chance that these
+beneficial plants might move into the crop
+[SPEAKER_06]: and then act as weeds?
+[SPEAKER_06]: So in order to address these concerns,
+I am comparing weed and arthropod
+[SPEAKER_06]: communities in both planted and
+conventional margins.
+[SPEAKER_06]: So I have two corn fields, one up in
+Musgrave, one down the road in Varna.
+[SPEAKER_06]: And I've established wildflower plantings
+and grass plantings, which are either
+[SPEAKER_06]: mowed according to NRCS guidelines for
+weed suppression when they reach a certain
+[SPEAKER_06]: height, or they're left unmanaged for the
+rest of the season.
+[SPEAKER_06]: I also have unplanted conventional
+margins, which are mowed when they reach a
+[SPEAKER_06]: certain height.
+[SPEAKER_06]: Some are mowed every three weeks,
+regardless of height.
+[SPEAKER_06]: And some are sprayed at the same time as
+the corn, so at about V3.
+[SPEAKER_06]: And this is done to just mimic what
+farmers are actually doing at this point
+[SPEAKER_06]: in time.
+[SPEAKER_06]: So one thing that I want to get into
+before I start talking about my actual
+[SPEAKER_06]: results from the first year is that these
+are often perennial plantings.
+[SPEAKER_06]: And they don't do much during the first
+year.
+[SPEAKER_06]: So over here on the left, we have an
+example of great establishment.
+[SPEAKER_06]: Most of those plants are wildflowers,
+but you'll notice a lack of actual
+[SPEAKER_06]: flowers.
+[SPEAKER_06]: And we know from previous research in this
+lab that arthropods tend to show up more
+[SPEAKER_06]: when there are actual flowers rather than
+the species itself.
+[SPEAKER_06]: All that to say, arthropod minors did not
+differ across treatments in this year.
+[SPEAKER_06]: Also, if you're going to have a weed
+eaters problem, it's typically going to be
+[SPEAKER_06]: in the first year because the native
+perennials do tend to be all competed by
+[SPEAKER_06]: aggressive annual weeds.
+[SPEAKER_06]: So this is the density during the first
+year of establishment, so the number of
+[SPEAKER_06]: weeds in half meter squared quadrats.
+[SPEAKER_06]: And as you can see in July, the main
+difference that we're seeing is that the
+[SPEAKER_06]: glyphosate has significantly less weeds
+than any of these planted treatments on
+[SPEAKER_06]: the right.
+[SPEAKER_06]: But by the time you get to September,
+there's basically no difference across
+[SPEAKER_06]: treatments.
+[SPEAKER_06]: And from an agronomic perspective,
+I would argue that September is the more
+[SPEAKER_06]: important month to be looking at because
+that's when a lot of our problematic weeds
+[SPEAKER_06]: will be going to seed.
+[SPEAKER_06]: We also collected biomass data.
+[SPEAKER_06]: So the red is the broadleaf weeds,
+green is grass weeds.
+[SPEAKER_06]: On this side are the conventional
+unplanted margins, and this side is the
+[SPEAKER_06]: planted margins.
+[SPEAKER_06]: And you'll notice that each half has two
+tall bars and two short bars.
+[SPEAKER_06]: I know this is a complicated graph for
+this presentation.
+[SPEAKER_06]: But the main difference here is the
+mowing, which is pretty intuitive.
+[SPEAKER_06]: There's less biomass when you mow.
+[SPEAKER_06]: But we're also not really seeing a
+difference in the unplanted versus planted
+[SPEAKER_06]: strips.
+[SPEAKER_06]: So if you're a farmer and you're concerned
+about weeds in your margin plantings,
+[SPEAKER_06]: at least in the first year, it's looking
+like those fears are thankfully fairly
+[SPEAKER_06]: unfounded, as long as you're following
+NRCS mowing guidelines.
+[SPEAKER_06]: I'm also continuing a project from a
+previous graduate student in our lab,
+[SPEAKER_06]: Sophie Westbrook.
+[SPEAKER_06]: She was looking at how the seeding rates
+impact establishment.
+[SPEAKER_06]: And I just wanted to show you what these
+plantings look like about three years in
+[SPEAKER_06]: once they're actually established.
+[SPEAKER_06]: We are also starting to see very
+ecologically important species,
+[SPEAKER_06]: like butterfly milkweed, start to show up,
+which we haven't seen in previous years.
+[SPEAKER_06]: And we're supporting fairly healthy
+arthropod communities.
+[SPEAKER_06]: So thank you.
+Yeah?
+[SPEAKER_09]: How does the implantation work?
+[SPEAKER_09]: Is it broadcasted?
+[SPEAKER_09]: Yes, it is.
+[SPEAKER_09]: Are you definition you there?
+[SPEAKER_06]: So yeah, we have been broadcast seeding.
+[SPEAKER_06]: I know some companies do drill seed.
+[SPEAKER_06]: But especially with the grass seeds,
+there tends to be issues with them going
+[SPEAKER_06]: through the hopper because they're kind of
+fluffy.
+[SPEAKER_11]: Really great talk, Becky.
+[SPEAKER_11]: I'm wondering, has there been any work
+mixing annual and perennial wildflowers
+[SPEAKER_11]: within a mixture so that you can see the
+benefits of the first year?
+[SPEAKER_06]: Not in our region that I'm aware of.
+[SPEAKER_04]: You said, like, not a lot of benefits from
+the first year.
+[SPEAKER_04]: I was thinking, like, that's covering the
+soil, right?
+[SPEAKER_04]: That's like land cover.
+[SPEAKER_04]: So that's like we talk about, like,
+protecting our soil.
+[SPEAKER_04]: That's a really nice benefit to have.
+Yeah.
+[SPEAKER_04]: It's not doing what the NRCS is maybe the
+main purpose.
+[SPEAKER_06]: That's a good point.
+[SPEAKER_00]: Hello, everyone.
+[SPEAKER_00]: My name is Pritaman Bajwa.
+[SPEAKER_00]: And I'm a first year PhD student with Dr.
+Vipin Kumar.
+[SPEAKER_00]: And today, I'll be presenting you some of
+the studies that we conducted last year as
+[SPEAKER_00]: the integrated weed management approach in
+corn and soybean.
+[SPEAKER_00]: So corn and soybean are one of the major
+crops.
+[SPEAKER_00]: And weeds are one of the most significant
+pests causing the yield reductions.
+[SPEAKER_00]: But what farmers are doing these days,
+they are heavily reliant on the chemical
+[SPEAKER_00]: weed control.
+[SPEAKER_00]: So last year, 96% of the corn fields and
+98% of the soybean fields received the
+[SPEAKER_00]: herbicide applications, which is huge.
+[SPEAKER_00]: And with this amount of overreliance,
+there is a problem of herbicide
+[SPEAKER_00]: resistance.
+[SPEAKER_00]: So there are currently 533 unique cases of
+herbicide resistant weeds globally to 168
+[SPEAKER_00]: different herbicides.
+[SPEAKER_00]: And also, since last three decades,
+we have no new mode of action for the
+[SPEAKER_00]: herbicides.
+[SPEAKER_00]: And over the top, we have new problems.
+[SPEAKER_00]: The palmarum wrenth and waterhemp,
+which are the most problematic weeds in
+[SPEAKER_00]: the Midwest, they have been recently
+identified in the Northeastern states,
+[SPEAKER_00]: including New York.
+[SPEAKER_00]: And New York populations have reported the
+glyphosate resistance and also potential
+[SPEAKER_00]: multiple resistance to HPPD and
+photosystem II inhibitors.
+[SPEAKER_00]: So what is the need?
+[SPEAKER_00]: Today, we are heavily reliant on chemical
+weed control.
+[SPEAKER_00]: But it is a time that we switch to a more
+balanced approach for the long-term
+[SPEAKER_00]: environmental and economical
+sustainability.
+[SPEAKER_00]: So keeping that in mind, we designed some
+of the studies.
+[SPEAKER_00]: The first study, we are looking at the
+cover crop termination timings,
+[SPEAKER_00]: along with the herbicide strategies for
+the wheat suppression in corn.
+[SPEAKER_00]: So we had two termination timings,
+early termination and planting queen.
+[SPEAKER_00]: Early termination, we terminated the cover
+crop two weeks prior to the corn
+[SPEAKER_00]: plantation.
+[SPEAKER_00]: And in the planting green, we planted corn
+in the standing cover crop, and we
+[SPEAKER_00]: terminated three days after the corn
+plantation.
+[SPEAKER_00]: So it is said that more the amount of
+biomass is related to more wheat
+[SPEAKER_00]: suppression.
+[SPEAKER_00]: So at the time of termination,
+we have approximately two and a half times
+[SPEAKER_00]: higher cover crop biomass in the planting
+green, which we also observed in the wheat
+[SPEAKER_00]: suppression.
+[SPEAKER_00]: So this is the first is the early
+termination with Roundup, no pre or post
+[SPEAKER_00]: herbicides.
+[SPEAKER_00]: And this is the planting green with the
+effective pre and post herbicide.
+[SPEAKER_00]: And in another objective, we are looking
+at the three-way approach with the culture
+[SPEAKER_00]: practices, with the cover crops.
+[SPEAKER_00]: Then in-season targeting the weeds with
+the pre and post herbicides.
+[SPEAKER_00]: And in later season, we are targeting
+weeds with the seed impact.
+[SPEAKER_00]: So we know the cover crops and herbicides
+a little bit.
+[SPEAKER_00]: A little bit about the seed impact mill.
+[SPEAKER_00]: So seed impact mill.
+[SPEAKER_00]: Seed impact mill, it is the attachment
+behind the combine that it has these
+[SPEAKER_00]: mills, which rotate at a very high speed.
+[SPEAKER_00]: So they pulverize the wheat seeds coming
+along with the chaff.
+[SPEAKER_00]: So main objective is the wheat seed bank
+management so that the weeds that are
+[SPEAKER_00]: harvested, they don't go to the wheat seed
+bank and become problematic for the coming
+[SPEAKER_00]: seasons.
+[SPEAKER_00]: And for the third objective, we are
+comparing different non-chemical and
+[SPEAKER_00]: chemical treatments for the wheat seed
+bank management.
+[SPEAKER_00]: We are using the interomore and electric
+weeder with the mat and seed impact mill
+[SPEAKER_00]: and herbicides.
+[SPEAKER_00]: So seed impact mill, I have already
+discussed a little bit about the
+[SPEAKER_00]: interomore.
+[SPEAKER_00]: My videos are not working.
+[SPEAKER_00]: So interomore, it has the blades here,
+rotating blades, which rotate at
+[SPEAKER_00]: approximately 1,800 RPM, targeting the
+weeds in between the crop rows.
+[SPEAKER_00]: So this is how the treatments look like
+after the application.
+[SPEAKER_00]: So this needs the video.
+[SPEAKER_00]: So this is the electric weeder,
+the weed zapper that we are using.
+[SPEAKER_00]: This is the generator behind the tractor.
+[SPEAKER_00]: And it gets the energy from the PTO shaft
+of the tractor.
+[SPEAKER_00]: And the copper rod in front of a tractor,
+it gets electrified, which targets the
+weeds.
+[SPEAKER_00]: Which are above the soybean canopy.
+[SPEAKER_00]: So this is how the damage done to the
+weeds.
+[SPEAKER_00]: This is the velvet leaf.
+[SPEAKER_00]: And this is the stem of the lamb squatter,
+completely smoked out.
+[SPEAKER_00]: So a bunch of herbicide studies also we
+are conducting.
+[SPEAKER_00]: So here we are evaluating the crop safety
+and the weed control with the different
+[SPEAKER_00]: doses of the metribuzin.
+[SPEAKER_00]: So metribuzin is a pre-emergent herbicide.
+[SPEAKER_00]: So we plant the soybean, we spray the
+herbicide before the crop emergence.
+[SPEAKER_00]: So 280 grams per hectare and 420 grams,
+this is the normal field rate the farmer
+[SPEAKER_00]: use.
+[SPEAKER_00]: But they complain that there are some weed
+escapes with that.
+[SPEAKER_00]: So we are evaluating the different doses,
+where we can optimize the metribuzin rates
+[SPEAKER_00]: and we also not harm the crop.
+[SPEAKER_00]: So we observe that when we go higher,
+we have a good weed control.
+[SPEAKER_00]: But when we go much higher than the label
+rate, we have the lower stand count and
+[SPEAKER_00]: also the reduced growth.
+[SPEAKER_00]: So these are the pictures five weeks after
+the spray.
+[SPEAKER_00]: And these are the same treatments eight
+weeks after the spray.
+[SPEAKER_00]: So you can see we have a good control here
+as compared to the non-treated.
+[SPEAKER_00]: And we are also conducting some of the
+herbicide studies with the different pre-
+[SPEAKER_00]: and post-herbicides in corn.
+[SPEAKER_00]: So waterhemp as I already discussed,
+this is the picture near the Rochester.
+[SPEAKER_00]: In the farmer field, this is the amount of
+infestation.
+[SPEAKER_00]: So we are conducting a bunch of pre- and
+post-herbicide studies in the corn.
+[SPEAKER_00]: Thank you.
+[SPEAKER_02]: Time for one or two questions.
+[SPEAKER_02]: Thank you very much.
+[SPEAKER_02]: Certainly at the higher rates in the last
+pictures that you showed us, you're
+[SPEAKER_02]: getting good control.
+[SPEAKER_02]: But can you discuss what that means both
+economically and environmentally to go to
+[SPEAKER_02]: those higher rates?
+[SPEAKER_00]: Economically, it will increase the cost,
+of course.
+[SPEAKER_02]: For this particular chemical?
+[SPEAKER_00]: I don't think so.
+[SPEAKER_00]: Because metribuzin is a very common
+herbicide and it's not very costly.
+[SPEAKER_00]: Environmentally, there are many studies
+that people are conducting with different
+[SPEAKER_00]: herbicides that how the soil microbiota is
+affecting.
+[SPEAKER_00]: But we are not conducting this soil
+microbiota studies with that.
+[SPEAKER_07]: So you mentioned at the beginning of your
+presentation that there hasn't been much
+[SPEAKER_07]: improvement on weed management for 30
+years.
+[SPEAKER_07]: What are the big picture reasons for that?
+[SPEAKER_00]: I said that there is no new model fraction
+like herbicides.
+[SPEAKER_00]: So it is because it is very costly.
+[SPEAKER_00]: It has to spend millions of millions of
+dollars for the new mode of actions.
+[SPEAKER_00]: So that is why the companies like Bayer
+and Corteva, they are not releasing new
+[SPEAKER_00]: herbicide.
+[SPEAKER_00]: They are just mixing different mode of
+actions, like HPPD with the atrazine.
+[SPEAKER_00]: They are releasing the new formulations
+instead of new chemical.
+[SPEAKER_00]: Because it's very costly and it's very
+time consuming.
+[SPEAKER_00]: It take like seven, eight years to
+release.
+[SPEAKER_01]: So hello, everyone.
+[SPEAKER_01]: My name is Chen Xifeng, and I'm currently
+a first year PhD student in Dr. Ichiro's
+[SPEAKER_01]: lab.
+[SPEAKER_01]: Today I'm going to talk about my research
+project, which is about the apparent
+[SPEAKER_01]: versus intrinsic temperature sensitivity
+of soil respiration.
+[SPEAKER_01]: So why soil respiration?
+[SPEAKER_01]: Because it's almost the largest
+terrestrial carbon emission, which emits
+[SPEAKER_01]: about 60 to 80 pedigrees of carbon per
+year from the landing to the atmosphere,
+[SPEAKER_01]: which makes up almost half of the total
+terrestrial carbon efflux.
+[SPEAKER_01]: And in the meanwhile, it also affects the
+soil organic carbon storage capacity.
+[SPEAKER_01]: And more importantly, the carbon emitted
+from soil respiration is growing rapidly
+[SPEAKER_01]: through year, which indicates its higher
+and higher importance in global carbon
+[SPEAKER_01]: cycling.
+[SPEAKER_01]: So how soil respiration will respond to
+changing climates?
+[SPEAKER_01]: For example, the changing temperatures or
+precipitations.
+[SPEAKER_01]: So intrinsically, if we consider the
+chemical essence of soil respiration,
+[SPEAKER_01]: it's basically a bunch of different
+organic compounds are oxidized to produce
+[SPEAKER_01]: carbon dioxide and other products.
+[SPEAKER_01]: And this process is highly influenced by
+the temperature.
+[SPEAKER_01]: And one explanation is the Arrhenius
+theory, which is shown in the left figure.
+[SPEAKER_01]: So in this theory, the temperature will
+not only influence the molecular energy
+[SPEAKER_01]: distribution, but also it will influence
+the activation energy, which is the Ea in
+[SPEAKER_01]: the figure.
+[SPEAKER_01]: And hence, it will influence the chemical
+reaction rate and makes the reaction rate
+[SPEAKER_01]: increase exponentially with temperature.
+[SPEAKER_01]: But if we consider the enzyme catalysis in
+these reactions, the processes may be more
+[SPEAKER_01]: complicated as shown in the upper right
+figure.
+[SPEAKER_01]: So in this case, there may be optimal
+temperatures for the reaction rate to
+[SPEAKER_01]: reach the maximum.
+[SPEAKER_01]: So other than these various intrinsic
+temperature sensitivities of soil
+[SPEAKER_01]: respiration, there are also multiple
+environmental constraints, such as the
+[SPEAKER_01]: soil moisture and soil aggregation,
+which can modify the intrinsic temperature
+[SPEAKER_01]: sensitivity of soil respiration.
+[SPEAKER_01]: And moreover, if we consider the
+collective response from multiple
+[SPEAKER_01]: processes in soil respiration,
+the observed temperature response,
+[SPEAKER_01]: which is the apparent temperature
+response, may be much different from the
+[SPEAKER_01]: intrinsic ones.
+[SPEAKER_01]: So the question here is, should there be
+one or multiple functions for the
+[SPEAKER_01]: intrinsic temperature sensitivity in
+different ecosystems?
+[SPEAKER_01]: So several arguments for this question.
+[SPEAKER_01]: There are several cases.
+[SPEAKER_01]: If the biochemical pathways governing the
+soil respiration and soil organic carbon
+[SPEAKER_01]: compositions are all the similar in
+different ecosystems, then there should be
+[SPEAKER_01]: similar intrinsic temperature function,
+which is also assumed in most of the
+[SPEAKER_01]: biogeochemical models.
+[SPEAKER_01]: But in the real world, the case may be
+different, because they may have different
+[SPEAKER_01]: biochemical pathways and organic carbon
+compositions, which can lead to quite
+[SPEAKER_01]: different intrinsic temperature functions.
+[SPEAKER_01]: And to solve these questions, we've
+collected the soil respiration
+[SPEAKER_01]: observations from several incubation
+experiments.
+[SPEAKER_01]: And the results do show a different
+temperature response for the soil
+[SPEAKER_01]: respiration.
+[SPEAKER_01]: So in some cases, the soil respiration
+increases exponentially, as shown in the
+[SPEAKER_01]: red figure, with temperature.
+[SPEAKER_01]: But in other cases, the soil respiration
+may respond sigmoidly or in the model to
+[SPEAKER_01]: the temperature.
+[SPEAKER_01]: So based on these results, we would like
+to calculate the intrinsic temperature
+[SPEAKER_01]: response from the incubation data to see
+if there's universal function type or
+[SPEAKER_01]: there are different kinds of intrinsic
+function types for different ecosystems.
+[SPEAKER_01]: And the follow-up question is that if
+there's different intrinsic temperature
+[SPEAKER_01]: functions, what's the reason cause this
+difference?
+[SPEAKER_01]: And after we get this information from the
+incubation data sets, we can furthermore
+[SPEAKER_01]: incorporate this temperature function into
+the biogeochemical models to further
+[SPEAKER_01]: simulate the field measurements of soil
+respiration.
+[SPEAKER_01]: And that's what we're going to do in the
+near future.
+[SPEAKER_01]: OK, thanks for listening.
+[SPEAKER_01]: Any questions?
+[SPEAKER_01]: Any suggestions?
+[SPEAKER_01]: Yeah, please.
+[SPEAKER_08]: Interesting stuff.
+[SPEAKER_08]: I was wondering what you're thinking about
+the time scales at which the incubation
+[SPEAKER_08]: occurs versus some of the time scales that
+you're interested in.
+[SPEAKER_08]: In other words, is short-term warming over
+the course of, say, hours or days,
+[SPEAKER_08]: is that going to have different processes
+than, say, responses to longer-term
+[SPEAKER_08]: warming?
+[SPEAKER_01]: Yeah, I think time scale is quite an
+important factor to influence the
+[SPEAKER_01]: temperature sensitivity because they will
+sometimes influence the substrate
+[SPEAKER_01]: availability, the carbon quality,
+such kind of things.
+[SPEAKER_01]: And the incubation data set we have right
+now, our cooperators collected right now,
+[SPEAKER_01]: focusing mainly on short-term incubation,
+not like for incubation for several years
+[SPEAKER_01]: or decades.
+[SPEAKER_01]: So basically, the incubation time scale is
+from several months to the longest and
+[SPEAKER_01]: maybe one year or two years, and not so
+long-term response, not so long-term time
+[SPEAKER_01]: scale.
+[SPEAKER_01]: But I believe there may be different
+temperature sensitivities in a longer time
+[SPEAKER_01]: scale.
+[SPEAKER_01]: Yeah, please.
+[SPEAKER_02]: This is in the nature of carbon between
+the different experimental units,
+[SPEAKER_02]: or were they all similar?
+[SPEAKER_01]: Sorry, could you please?
+[SPEAKER_02]: CO2 evolution from your soil incubation
+that's going to be based on the carbon
+[SPEAKER_02]: compounds that you have in the soil,
+right?
+[SPEAKER_02]: So were they equivalent across your
+different treatments, or are you looking
+[SPEAKER_02]: specifically at the behavior of different
+complexities of carbon within your system?
+[SPEAKER_01]: I see.
+[SPEAKER_01]: So basically, I'm working on the mixture
+of all kinds of different carbon
+[SPEAKER_01]: compounds.
+[SPEAKER_01]: So currently, we cannot separate different
+carbon substrates.
+[SPEAKER_01]: And to see if they have different
+temperature functions.
+[SPEAKER_01]: So basically, in the incubation data set,
+they have a soil sample, which is sampled
+[SPEAKER_01]: from a particular set.
+[SPEAKER_01]: And it's kind of hard to separate
+different kinds of carbon in the soil.
+[SPEAKER_01]: But I think that's a good idea.
+[SPEAKER_01]: Maybe in the near future, we can work on
+that.
+[SPEAKER_00]: Thank you.
+[SPEAKER_05]: Right.
+[SPEAKER_05]: Well, good afternoon, everyone.
+[SPEAKER_05]: Before I start, on behalf of my peers,
+I want to thank you.
+[SPEAKER_05]: This is an awesome turnout.
+[SPEAKER_05]: Look at this.
+[SPEAKER_05]: This is awesome.
+[SPEAKER_05]: Yeah, it really means a lot for everyone
+showing up supporting the first-year
+[SPEAKER_05]: cohort.
+[SPEAKER_05]: Community is so important right now,
+as Dr. Buckley alluded to.
+[SPEAKER_05]: So this is awesome to see everyone showing
+support.
+[SPEAKER_05]: So my name is Nazir Adam Sharifi.
+[SPEAKER_05]: Feel free to call me Adam.
+[SPEAKER_05]: I'm a first-year MS PhD student in the
+Sustainable Cropping Systems Lab under Dr.
+[SPEAKER_05]: Matthew Ryan.
+[SPEAKER_05]: I'm excited to follow Chenxi's
+presentation and give an introduction to
+[SPEAKER_05]: my own research on no-till corn
+production.
+[SPEAKER_05]: So in the Sustainable Cropping Systems
+Lab, we do a lot of work in organic
+[SPEAKER_05]: no-till rolled crimp systems.
+[SPEAKER_05]: Essentially, what that means is we plant a
+cover crop in the fall, allowing it to
+[SPEAKER_05]: grow in overwinter until it reaches a
+suitable growth stage for termination.
+[SPEAKER_05]: Then we go in with a roller crimper,
+which is a steel drum with blunt blades
+[SPEAKER_05]: mounted on front of a tractor to terminate
+that cover crop while simultaneously
+[SPEAKER_05]: planting our cash crop with a no-till
+planter.
+[SPEAKER_05]: And then after a few months, if all goes
+well, the goal is to have a healthy cash
+[SPEAKER_05]: crop with the mulch serving as a
+protective layer to increase water
+[SPEAKER_05]: infiltration and reduce runoff.
+[SPEAKER_05]: The mulch also acts as a physical barrier
+to suppress weed growth without the use of
+[SPEAKER_05]: tillage.
+[SPEAKER_05]: So based on our research, we truly believe
+that no-till farming through the
+[SPEAKER_05]: integration of rolled crimp cover crops
+has great potential to enhance field crop
+[SPEAKER_05]: production, not only for organic farmers,
+but for the broader agricultural
+[SPEAKER_05]: community.
+[SPEAKER_05]: Currently, there's a wealth of studies
+that exist on no-till soybean planted into
+[SPEAKER_05]: cover crops, with our lab contributing
+heavily to that literature.
+[SPEAKER_05]: However, research on no-till corn planted
+into cover crops remains limited with
+[SPEAKER_05]: previous work-facing systems and meeting
+the cropping system's demand.
+[SPEAKER_05]: So in the Sustainable Cropping Systems
+Lab, we developed a 256-plot surface
+[SPEAKER_05]: response experiment to explore organic
+no-till performance under different
+[SPEAKER_05]: cropping system designs.
+[SPEAKER_05]: This approach is valuable for
+understanding how multiple variables,
+[SPEAKER_05]: such as nitrogen rates and seeding rates,
+interact and influence response variables
+[SPEAKER_05]: like weed biomass or corn yield under
+different rolled crimp cover crops.
+[SPEAKER_05]: So in our study, we examined field corn
+planted into two rolled crimp cover crop
+[SPEAKER_05]: mixtures, a hairy vetch oat and a hairy
+vetch cereal rye mixture.
+[SPEAKER_05]: We also tested the impact of supplemental
+weed management through the presence and
+[SPEAKER_05]: absence of inner-row mowing.
+[SPEAKER_05]: So the inner-row mower features five
+individual mowing units that's designed to
+[SPEAKER_05]: cut between the crop row and operating
+above the mulch surface.
+[SPEAKER_05]: And additionally, we evaluated a range of
+corn seeding rates and side-dress nitrogen
+[SPEAKER_05]: rates.
+[SPEAKER_05]: So there's a lot of things that one can do
+with such an awesome data set.
+[SPEAKER_05]: And one avenue I'm exploring is a
+relatively new approach to analyze surface
+[SPEAKER_05]: response experiments, and that's piecewise
+structural equation modeling, or PSEM.
+[SPEAKER_05]: I'm particularly excited about PSEM
+because it provides a holistic view of the
+[SPEAKER_05]: agro-ecosystem, making it ideal to
+understand ecosystem interactions.
+[SPEAKER_05]: It's a tool widely used by pure
+ecologists.
+[SPEAKER_05]: So what you see here is a simplified model
+of the interactions that we expect to
+[SPEAKER_05]: occur in our organic no-till corn system.
+[SPEAKER_05]: Let's take a quick look at how these
+factors are connected.
+[SPEAKER_05]: So increasing corn density boosts yield,
+as does increasing side-dress nitrogen.
+[SPEAKER_05]: However, side-dress nitrogen can also
+benefit weeds, which increases weed
+[SPEAKER_05]: biomass.
+[SPEAKER_05]: And then more weeds negatively impacts
+yields, while higher corn density
+[SPEAKER_05]: suppresses those weeds through
+competition.
+[SPEAKER_05]: And this is the general framework,
+but what happens when we apply this to a
+[SPEAKER_05]: hairy vetch oat system with in-row mowing?
+[SPEAKER_05]: What about without in-row mowing?
+[SPEAKER_05]: How do these interactions begin to shift?
+[SPEAKER_05]: And take a quick look at some preliminary
+results.
+[SPEAKER_05]: So let's start by looking at the hairy
+vetch oat system without in-row mowing.
+[SPEAKER_05]: In this model, a solid line indicates a
+significant effect, while a dotted line
+[SPEAKER_05]: represents a non-significant effect based
+on p-values.
+[SPEAKER_05]: So in the hairy vetch oat system without
+in-row mowing, side-dress nitrogen doesn't
+[SPEAKER_05]: significantly affect weed biomass.
+[SPEAKER_05]: But what I want to focus on more here is
+this finding, the significant negative
+[SPEAKER_05]: impact of weed biomass on corn yield.
+[SPEAKER_05]: This reveals a key system constraint,
+while hairy vetch, a legume cover crop
+[SPEAKER_05]: providing high nitrogen to that corn,
+it lacks sufficient above-ground biomass
+[SPEAKER_05]: during the field season to effectively
+suppress weeds.
+[SPEAKER_05]: But by adding the in-row mower for
+supplemental weed management, we achieve
+[SPEAKER_05]: an exciting outcome where weed biomass no
+longer significantly affects yield.
+[SPEAKER_05]: These preliminary findings validate the
+in-row mower as an effective tillage-free
+[SPEAKER_05]: weed control tactic for field corn.
+[SPEAKER_05]: And for simplicity, I previously omitted
+p-values and standardized coefficients,
+[SPEAKER_05]: but they offer very valuable insights.
+[SPEAKER_05]: These coefficients quantify the influence
+between system components.
+[SPEAKER_05]: So here we can see that corn density and
+side-dress nitrogen have relatively
+[SPEAKER_05]: similar impact on yield, as shown by their
+comparable values.
+[SPEAKER_05]: But how, again, might this change in a
+nitrogen-starved system where maybe hairy
+[SPEAKER_05]: cereal rye is integrated into that cover
+crop mix?
+[SPEAKER_05]: Will yield become a more strong driver of
+yield in this system?
+[SPEAKER_05]: These are the questions that we can begin
+to answer with PSEM.
+[SPEAKER_05]: So moving forward, I'm excited to dive
+deeper into this data and carry out a
+[SPEAKER_05]: streamlined version of the study to
+examine these interactions across
+[SPEAKER_05]: different site locations.
+[SPEAKER_05]: Thank you so much for your time.
+[SPEAKER_05]: And these are my acknowledgments.
+[SPEAKER_05]: More than happy to take any questions if
+we have time.
+[SPEAKER_09]: Yeah.
+Yeah.
+[SPEAKER_05]: You're hitting me on all the spots that
+hurt.
+[SPEAKER_05]: So yeah, timing is critical, right?
+[SPEAKER_05]: And when you have a mixture, you're trying
+to aim for critical timing of termination.
+[SPEAKER_05]: If you don't terminate it at the right
+time, it can come back up.
+[SPEAKER_05]: Or if you terminate it too late,
+it can reproduce seeds and infest your
+[SPEAKER_05]: seeds.
+[SPEAKER_05]: So timing is critical.
+[SPEAKER_05]: And yeah, it's kind of like in hairy bech
+oat and a cereal rye mixture.
+[SPEAKER_05]: We try to aim between 50% to 100% anthesis
+of that cereal rye.
+[SPEAKER_05]: And then mid to late that flowering stage
+of that hairy bech.
+[SPEAKER_05]: So it's kind of finding the nice
+in-between of where can we get the best
+[SPEAKER_05]: kill of both of them.
+[SPEAKER_05]: But excellent question, yeah.
+[SPEAKER_04]: Enrique?
+Wow.
+[SPEAKER_05]: These are good questions.
+[SPEAKER_05]: Yeah.
+Yeah.
+[SPEAKER_05]: Emergence is something that I'm actually
+really interested in.
+[SPEAKER_05]: So I was an undergrad actually at Cornell
+University and research assistant in the
+[SPEAKER_05]: Ryan Lab freshman year.
+[SPEAKER_05]: And I see a lot around our experiences.
+[SPEAKER_05]: Emergence is always an issue.
+[SPEAKER_05]: And I am really maybe technologically
+optimist here, but hoping that some good
+[SPEAKER_05]: planting technology can cut through these
+thick cover crop mulches.
+[SPEAKER_05]: Because they provide so much, as I said,
+weed suppression and water infiltration
+[SPEAKER_05]: and soil erosion, which is a huge,
+huge problem, especially in the Northeast.
+[SPEAKER_05]: So technological optimist maybe.
+[SPEAKER_05]: But yeah, emergence is something to
+consider.
+[SPEAKER_10]: Yeah.
+[SPEAKER_10]: In one of your figures, I was just
+thinking where you see an improvement in
+[SPEAKER_10]: corn yield or whatever crop yield at the
+end and potential decrease in weed
+[SPEAKER_10]: biomass.
+[SPEAKER_10]: You include the interim mower.
+[SPEAKER_10]: Do those benefits outweigh what would be
+the additional cost?
+[SPEAKER_10]: Of actually renting or owning an interim
+mower for a farmer?
+[SPEAKER_05]: Great question.
+[SPEAKER_05]: If it's not profitable, why even use it?
+[SPEAKER_05]: I really hope to conduct a profitability
+analysis.
+[SPEAKER_05]: I feel like all experience now is so
+important.
+[SPEAKER_05]: If it's useful for the farmer,
+it has to be profitable.
+[SPEAKER_05]: So that's something I'm hoping to look at
+in terms of a profitability analysis
+[SPEAKER_05]: comparing the different treatment
+combinations.
+[SPEAKER_11]: Off the top of your head, which
+combination of cover crop, nitrogen,
+[SPEAKER_11]: interim mowing, not interim mowing,
+led to the highest yield.
+[SPEAKER_05]: Wow.
+[SPEAKER_05]: Good question.
+Yeah.
+[SPEAKER_05]: So I can, maybe.
+[SPEAKER_05]: So it's Harry Betts oat treatment combined
+with interim mowing at a seeding rate of
+[SPEAKER_05]: 45,000 seeds per acre and a nitrogen rate
+of 56 kilograms of nitrogen per hectare.
+I'll do that.
+[SPEAKER_05]: Yeah.
+[SPEAKER_05]: Yeah, do that.
+[SPEAKER_05]: Do that and you'll get hopefully perfect
+yields.
+[SPEAKER_05]: Yeah, but maybe I should preface.
+[SPEAKER_05]: This is in the very early stages,
+right?
+[SPEAKER_05]: No-till organic corn is not widely
+practiced, so that's why this stuff is
+[SPEAKER_05]: important to maybe push it forward and
+fill the gaps of knowledge that we have in
+[SPEAKER_05]: this system.
+[SPEAKER_09]: Thank you.
+[SPEAKER_06]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_06]: Thank you.
+[SPEAKER_06]: Thank you.
+Thank you.

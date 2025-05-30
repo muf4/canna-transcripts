@@ -1,0 +1,974 @@
+[SPEAKER_02]: This is a production of Cornell
+University.
+[SPEAKER_00]: So yeah, hi, everyone.
+[SPEAKER_00]: I'm Pete Selby.
+[SPEAKER_00]: I am the Brappy Project Coordinator and
+the team of one on the Brappy Project
+[SPEAKER_00]: officially.
+[SPEAKER_00]: And I'm here to talk about the Brappy
+Project as well as a little bit the
+[SPEAKER_00]: broader scope of system integration and
+interoperability.
+[SPEAKER_00]: So yeah, we'll start there.
+[SPEAKER_00]: So there's lots of different ways to
+connect systems to make sure they work
+[SPEAKER_00]: together.
+[SPEAKER_00]: And I see one axis of this is on a scale
+of automation, like how automatically do
+[SPEAKER_00]: systems connect to each other and are
+interoperable between each other.
+[SPEAKER_00]: And so on one side, you've got flat files
+or paper files that you're sharing with
+[SPEAKER_00]: each other and sharing data between
+different organizations.
+[SPEAKER_00]: And different systems.
+[SPEAKER_00]: On the other side, you've got complete
+data federation where every tool knows how
+[SPEAKER_00]: to talk to every other tool.
+[SPEAKER_00]: And all data is available everywhere all
+the time.
+[SPEAKER_00]: And most systems nowadays end up somewhere
+in the middle.
+[SPEAKER_00]: So one of the goals of the Brappy Project
+is to try and sort of push the breeding
+[SPEAKER_00]: environments and the scientific
+environment into more of an automated data
+[SPEAKER_00]: sharing system.
+[SPEAKER_00]: Yeah, so like I said, this is what a lot
+of the systems looked like when I first
+[SPEAKER_00]: came on board.
+[SPEAKER_00]: In terms of interoperability, they were
+somewhat interoperable, but it was a lot
+[SPEAKER_00]: of manual effort.
+[SPEAKER_00]: So yeah, you can see, I would consider
+these two applications interoperable.
+[SPEAKER_00]: You can share data between them and you
+can make them work together, but it's kind
+[SPEAKER_00]: of a hassle.
+[SPEAKER_00]: You're exporting some sort of Excel file,
+some flat file from one system,
+[SPEAKER_00]: maybe manipulating that manually along the
+way so that it can be imported into
+[SPEAKER_00]: another system.
+[SPEAKER_00]: This works, but it's slow and error prone
+and just sort of ugly.
+[SPEAKER_00]: So yeah, and then sort of thinking about
+that, talking about the different types of
+[SPEAKER_00]: interoperability.
+[SPEAKER_00]: Again, this is sort of another dimension
+of this problem.
+[SPEAKER_00]: Talking about semantic interoperability,
+making sure that the words and the data
+[SPEAKER_00]: mean the same thing.
+[SPEAKER_00]: That's really important for humans and
+scientists to understand each other.
+[SPEAKER_00]: There's a lot of work in that area.
+[SPEAKER_00]: And ontologies and that sort of thing.
+[SPEAKER_00]: But then as you sort of go down,
+looking at syntactic and protocol
+[SPEAKER_00]: interoperability, this is looking at the
+structure of the data and the protocol in
+[SPEAKER_00]: which it's transferred.
+[SPEAKER_00]: We as humans are pretty good at sort of
+just figuring that out.
+[SPEAKER_00]: If you've got two pieces of data that are
+structured slightly differently,
+[SPEAKER_00]: but they look the same thing, they look
+like the same thing as a human,
+[SPEAKER_00]: we can just sort of figure that out.
+[SPEAKER_00]: That's a lot tougher problem.
+[SPEAKER_00]: For software, so that's sort of one of the
+areas we're trying to address with the
+[SPEAKER_00]: BRAPI project is getting some standards
+around the syntax and the protocols for
+[SPEAKER_00]: moving data back and forth so it can
+happen more automatically.
+[SPEAKER_00]: OK, so what is the breeding API,
+the BRAPI project?
+[SPEAKER_00]: So BRAPI is a standardized RESTful web
+service API specification for
+[SPEAKER_00]: communicating breeding data.
+[SPEAKER_00]: And I'll jump into each one of those terms
+just so we all have a clear baseline of
+[SPEAKER_00]: what we're talking about here.
+[SPEAKER_00]: So starting with an API, what's an API?
+[SPEAKER_00]: So all of us are familiar with interacting
+with a user.
+[SPEAKER_00]: User interface, when we're talking about
+software, this might be a graphical user
+[SPEAKER_00]: interface or some command line or
+whatever.
+[SPEAKER_00]: But it's how you as a person, as a user,
+interact with a piece of software,
+[SPEAKER_00]: give it data, receive data back,
+give it commands, that sort of thing.
+[SPEAKER_00]: An API is exactly the same set of
+functionality, but designed to be from one
+[SPEAKER_00]: system to another, one piece of software
+to another.
+[SPEAKER_00]: So one piece of software can issue
+commands to another, send data,
+[SPEAKER_00]: retrieve data, all programmatically
+through an API.
+[SPEAKER_00]: But it does exactly the same set of tools
+and interactions that you might need for a
+[SPEAKER_00]: user interface.
+[SPEAKER_00]: Yeah, next we'll talk about web services.
+[SPEAKER_00]: Web services, pretty straightforward.
+[SPEAKER_00]: It's a service available on a web.
+[SPEAKER_00]: So yeah, generally speaking, web services
+sort of take this form in the cartoon on
+[SPEAKER_00]: the right here.
+[SPEAKER_00]: You've got some service consumer,
+often called a client.
+[SPEAKER_00]: You've got a service provider,
+often called a server.
+[SPEAKER_00]: And you're building a request,
+sending the request across some network to
+[SPEAKER_00]: the service provider.
+[SPEAKER_00]: Service provider choose on that request
+and spits out some response that goes back
+[SPEAKER_00]: to the service consumer.
+[SPEAKER_00]: So typically with web services,
+not always, but typically with web
+[SPEAKER_00]: services, you'll have this loop of
+communication, the request response loop
+[SPEAKER_00]: for every interaction between the two
+systems.
+[SPEAKER_00]: And yeah, REST, restfulness.
+[SPEAKER_00]: So REST stands for representational state
+transfer.
+[SPEAKER_00]: Don't need to worry about remembering
+that.
+[SPEAKER_00]: Everyone just calls it REST.
+[SPEAKER_00]: But it is a flavor of web service.
+[SPEAKER_00]: There are a couple of different flavors of
+web service, but REST is by far the most
+[SPEAKER_00]: popular right now.
+[SPEAKER_00]: And REST is built on the well-known HTTP
+standards.
+[SPEAKER_00]: So all the same underlying functionality
+and protocols that you use to browse the
+[SPEAKER_00]: web every day.
+[SPEAKER_00]: REST just builds right on top of that.
+[SPEAKER_00]: But instead of passing web pages back and
+forth, it's passing data back and forth.
+[SPEAKER_00]: And typically that data is represented as
+JSON and JSON data structures.
+[SPEAKER_00]: It doesn't have to be, but when we're
+talking about BRAPy, BRAPy defines
+[SPEAKER_00]: everything.
+[SPEAKER_00]: in terms of JSON.
+[SPEAKER_00]: So that's what we'll be talking about
+going forward.
+[SPEAKER_00]: So that's sort of the technical part of
+the BRAPy definition.
+[SPEAKER_00]: This is the really important part that I
+try to emphasize on every talk that I
+[SPEAKER_00]: give.
+[SPEAKER_00]: BRAPy is a standardized specification.
+[SPEAKER_00]: So it's a defined set of standard data
+models and structures for communicating
+[SPEAKER_00]: this sort of data.
+[SPEAKER_00]: And that standard is defined and
+maintained by the community that uses it.
+[SPEAKER_00]: And at its core, BRAPy is a technical
+specification.
+[SPEAKER_00]: So that's a really important piece to
+understand.
+[SPEAKER_00]: And something that I used to get back in
+2017 when I was first taking on this,
+[SPEAKER_00]: people were asking me like, oh,
+give me the tool, give me a link to
+[SPEAKER_00]: download BRAPy so I can be BRAPy
+compliant.
+[SPEAKER_00]: I was like, it doesn't work like that.
+[SPEAKER_00]: We're just looking at a specification,
+a set of technical documents that outline
+[SPEAKER_00]: what the standard is.
+[SPEAKER_00]: It's up to you to go implement it in your
+own system, in your own tool, connect it
+[SPEAKER_00]: in whatever way you develop your software.
+[SPEAKER_00]: And so I try to make this point really
+strongly every presentation I get to get
+[SPEAKER_00]: the right message across about what BRAPy
+is.
+[SPEAKER_00]: Now, that said, there is, as Kelly
+mentioned, a large community around BRAPy.
+[SPEAKER_00]: There are tools that are already built to
+help implement the specification.
+[SPEAKER_00]: There are lots of tools available for
+reading and writing and interacting with
+[SPEAKER_00]: the specification already.
+[SPEAKER_00]: So you don't have to start from scratch.
+[SPEAKER_00]: But this is sort of the key.
+[SPEAKER_00]: The core component of BRAPy is just this
+technical spectrum.
+[SPEAKER_00]: Yeah, so if we look at the specification
+as a whole, it's a little bit difficult to
+[SPEAKER_00]: see on the slides, I think.
+[SPEAKER_00]: Maybe the one on the left is a little
+clearer to see.
+[SPEAKER_00]: But yeah, so this is a high-level picture
+of all the different concepts that BRAPy
+[SPEAKER_00]: supports, the different domains.
+[SPEAKER_00]: We broke it up into these four different
+modules.
+[SPEAKER_00]: Core, which mostly talks about trial and
+study management.
+[SPEAKER_00]: Germplasm talks about everything
+germplasm, genotyping, everything
+[SPEAKER_00]: genotyping, and phenotyping.
+[SPEAKER_00]: Everything phenotyping.
+[SPEAKER_00]: We broke it up into these four modules
+purely for organizational sake.
+[SPEAKER_00]: They all interact the same way.
+[SPEAKER_00]: All these different objects interact with
+each other.
+[SPEAKER_00]: You can see the different connections
+across the different modules.
+[SPEAKER_00]: But it was a lot easier to keep things
+organized and keep myself sane when I'm
+[SPEAKER_00]: looking for stuff within the
+specification.
+[SPEAKER_00]: And yeah, you can see the variety of
+different topics and concepts.
+[SPEAKER_00]: Each one of these concepts listed up here
+has a full set of metadata associated with
+[SPEAKER_00]: it.
+[SPEAKER_00]: It's all part of the specification.
+[SPEAKER_00]: And I'll emphasize this at the end.
+[SPEAKER_00]: On BRAPy.org, our website, you can go look
+at the full specification and dive down
+[SPEAKER_00]: into each one of these elements to see the
+full set of metadata buried in each one of
+[SPEAKER_00]: them.
+[SPEAKER_00]: OK.
+[SPEAKER_00]: So roughly, how does this work?
+[SPEAKER_00]: So yeah, we talked about that request
+response loop earlier for sort of a
+[SPEAKER_00]: generic web service.
+[SPEAKER_00]: This is sort of a typical picture of what
+you might find for two applications
+[SPEAKER_00]: interacting via BRAPy.
+[SPEAKER_00]: And I have bolded here a couple of
+different things.
+[SPEAKER_00]: So these two application stacks,
+applications are typically built in
+[SPEAKER_00]: layers.
+[SPEAKER_00]: So you've got the client application,
+which has maybe some user interface that
+[SPEAKER_00]: you're interacting with, some controller.
+[SPEAKER_00]: And then these two bolded sections here is
+the request builder and the response
+[SPEAKER_00]: handler.
+[SPEAKER_00]: These two pieces are responsible for
+taking the internal data structures of the
+[SPEAKER_00]: client application.
+[SPEAKER_00]: And mapping them to the BRAPy
+specification version.
+[SPEAKER_00]: So whatever you use internally,
+you keep using that internally for your
+[SPEAKER_00]: own stuff.
+[SPEAKER_00]: But as soon as you're trying to send a
+request out, you need to map it,
+[SPEAKER_00]: transform it into the BRAPy structure.
+[SPEAKER_00]: Send out that request with the HTTP
+service.
+[SPEAKER_00]: That's going to hit the API layer of the
+server side application and be consumed.
+[SPEAKER_00]: And then again, we've got this object
+mapping layer, which is responsible for
+[SPEAKER_00]: doing the reverse.
+[SPEAKER_00]: Taking the BRAPy object that it's received
+in JSON and converting it, mapping it to
+[SPEAKER_00]: whatever they use internally for their own
+data structures.
+[SPEAKER_00]: So these two applications don't have to
+use the same types of data structures.
+[SPEAKER_00]: They don't have to be written in the same
+programming language.
+[SPEAKER_00]: Because the data is being transferred
+using this standard, written in JSON and
+[SPEAKER_00]: transferred over HTTP.
+[SPEAKER_00]: They just need to have this mapping layer
+to convert from their own internal
+[SPEAKER_00]: standard to the BRAPy spec.
+[SPEAKER_00]: And then again, the reverse happens on the
+response.
+[SPEAKER_00]: So the server chooses on the request,
+does something about it, sends a response
+[SPEAKER_00]: back, maps it into BRAPy, sends the BRAPy
+response back, and the client response
+[SPEAKER_00]: handler knows how to consume that,
+read that as BRAPy and turn it into its
+[SPEAKER_00]: own internal spec.
+[SPEAKER_00]: So there are lots of different use cases.
+[SPEAKER_00]: We'll talk about later about how you can
+put these sorts of things together and
+[SPEAKER_00]: what these two applications might look
+like.
+[SPEAKER_00]: But this is sort of the general flow of
+mapping BRAPy data structures back and
+[SPEAKER_00]: forth.
+[SPEAKER_00]: So yeah, let's talk about why do we need
+BRAPy.
+[SPEAKER_00]: We're back to this manual interface.
+[SPEAKER_00]: Interoperability cartoon we have here.
+[SPEAKER_00]: Yeah, we've already sort of discussed
+this.
+[SPEAKER_00]: It's slow and messy and potentially
+insecure, depending on where you're
+[SPEAKER_00]: putting these files.
+[SPEAKER_00]: So let's change the picture a little bit
+and try and automate this.
+[SPEAKER_00]: So now we've got a lot less user
+interaction.
+[SPEAKER_00]: A lot less users are touching the data to
+manipulate it in any way.
+[SPEAKER_00]: We've got our BRAPy layers here.
+[SPEAKER_00]: And now just from the second application,
+our user can request data from the first
+[SPEAKER_00]: application.
+[SPEAKER_00]: It gets automatically mapped, transferred,
+and mapped again.
+[SPEAKER_00]: And now the user can interact with that
+data however it needs to.
+[SPEAKER_00]: And we don't even need to store it here.
+[SPEAKER_00]: In this previous picture, we're basically
+making a copy of the data, storing it
+[SPEAKER_00]: somewhere else so that we can manipulate
+it.
+[SPEAKER_00]: Here we can transfer the data.
+[SPEAKER_00]: It can live on the first application and
+stay there.
+[SPEAKER_00]: And the user can use it, interact with it,
+maybe store off a copy if they need to.
+[SPEAKER_00]: But that's not required anymore.
+[SPEAKER_00]: Maybe they're just trying to read the
+data.
+[SPEAKER_00]: Maybe it's just for reference.
+[SPEAKER_00]: Maybe they just need to perform some
+calculation and then store that
+[SPEAKER_00]: calculation.
+[SPEAKER_00]: Whatever it is, they don't need to make a
+copy of it.
+[SPEAKER_00]: And it flows automatically.
+[SPEAKER_00]: So you can do this sort of setup with any
+API.
+[SPEAKER_00]: The API is itself what automates this
+process and this data flow between the two
+[SPEAKER_00]: applications.
+[SPEAKER_00]: The extra little piece that BRAPy brings
+is the standard, the standard
+[SPEAKER_00]: specification.
+[SPEAKER_00]: So now we can swap out one application for
+another.
+[SPEAKER_00]: And it should still work exactly the same.
+[SPEAKER_00]: Because all these applications are talking
+the same language using the BRAPy
+[SPEAKER_00]: specification.
+[SPEAKER_00]: And we can swap it out for a different
+type of application.
+[SPEAKER_00]: Some sort of data warehouse in this case
+instead of another website.
+[SPEAKER_00]: Whatever it is, because they're all
+talking the same data structures,
+[SPEAKER_00]: talking the same language, we can easily
+interchange those out.
+[SPEAKER_00]: I should say, in theory.
+[SPEAKER_00]: This doesn't always work in practice,
+but it's a good starting point.
+[SPEAKER_00]: Yeah, so let's talk about some of the
+applications and impacts that we've had
+[SPEAKER_00]: already.
+[SPEAKER_00]: There are a number of solved use cases.
+[SPEAKER_00]: And the ones I put up on the screen here,
+there are a bunch of solved use cases.
+[SPEAKER_00]: But the ones I put up on the screen here
+were specifically used.
+[SPEAKER_00]: These were specifically chosen from our
+first grant, our first funding grant.
+[SPEAKER_00]: We set out to try and solve a small set of
+use cases with BRAPy and say, these are
+[SPEAKER_00]: the ones we're definitely going to tackle.
+[SPEAKER_00]: And we succeeded.
+[SPEAKER_00]: So these are the three or four that we
+originally set out for and succeeded on.
+[SPEAKER_00]: There are lots of other use cases now.
+[SPEAKER_00]: And we'll look at that in a second.
+[SPEAKER_00]: But these are some of the basic ones.
+[SPEAKER_00]: So first of all, looking at data
+collection.
+[SPEAKER_00]: So did a lot of work with the KSU
+Fieldbook folks.
+[SPEAKER_00]: FinoApps, as they're now called.
+[SPEAKER_00]: And basically adding BRAPy capabilities to
+the Fieldbook app.
+[SPEAKER_00]: So now people in the field, they can,
+just from the app, they can download
+[SPEAKER_00]: direct from whatever database they're
+using, get the field layout and everything
+[SPEAKER_00]: downloaded right into there and all the
+traits they're working on downloaded right
+[SPEAKER_00]: into their app.
+[SPEAKER_00]: They go out, collect whatever data they
+need, press a button, and it all gets
+[SPEAKER_00]: pushed back up to the server.
+[SPEAKER_00]: This is sort of the primary example of the
+manual data transfer I was talking about
+[SPEAKER_00]: earlier, where they used to have to
+download a file, put it on some cloud
+[SPEAKER_00]: service or email it to themselves,
+bring it onto their phone, upload it into
+[SPEAKER_00]: the app, and then reverse that process to
+get it back to the server.
+[SPEAKER_00]: So yeah, that was a big win to be able to
+do that automatically via BRAPy.
+[SPEAKER_00]: This is another one.
+[SPEAKER_00]: In terms of sample management,
+managing samples specifically going off to
+[SPEAKER_00]: some genotyping lab and making sure that
+the sample metadata remains consistent
+[SPEAKER_00]: between all the different labs and
+applications that are involved in this.
+[SPEAKER_00]: We worked with a couple of different
+genotyping labs to make sure we had the
+[SPEAKER_00]: right standards that would integrate with
+their systems, built these data structures
+[SPEAKER_00]: so that from some sample management tool,
+you could send all the metadata
+[SPEAKER_00]: automatically along with your physical
+shipment of samples to whatever lab.
+[SPEAKER_00]: They would have all the metadata,
+exact copy of whatever you had,
+[SPEAKER_00]: and then that copy of sample metadata
+could also go to your genotyping database,
+[SPEAKER_00]: wherever you're storing your final
+genotype results, along with some
+[SPEAKER_00]: automated functionalities to get the
+results from the lab to the database,
+[SPEAKER_00]: wherever that might live.
+[SPEAKER_00]: So that was a big success.
+[SPEAKER_00]: This is one that's still being actively
+worked on and implemented right now.
+[SPEAKER_00]: The basic idea being pulling data from a
+number of different data sources into some
+[SPEAKER_00]: kind of analytics engine, run your models,
+your calculations, whatever you're trying
+[SPEAKER_00]: to do, and provide an output.
+[SPEAKER_00]: So again, just trying to avoid moving
+physical files into some sort of
+[SPEAKER_00]: calculation engine and have this be an
+automated flow.
+[SPEAKER_00]: So when you've got regular breeding
+processes that you know you're gonna run
+[SPEAKER_00]: these same calculations every year,
+every month, whatever, you've got this
+[SPEAKER_00]: automated flow to just do it at a press of
+a button, pull the data in, run your
+[SPEAKER_00]: analytics, and present the report.
+[SPEAKER_00]: Like I said, there's a couple of different
+projects actively working on this right
+[SPEAKER_00]: now and setting up this type of
+functionality.
+[SPEAKER_00]: And finally, the BRAPs.
+[SPEAKER_00]: So BRAPs, I had been working on the BRAPI
+project for maybe six months and Lucas
+[SPEAKER_00]: Mueller came running into my office and he
+just stood in my doorway and went,
+[SPEAKER_00]: we need BRAPs, and then ran away.
+[SPEAKER_00]: And I said, what?
+[SPEAKER_00]: But it turned out to be a really good
+idea.
+[SPEAKER_00]: Once I caught him and had him explain.
+[SPEAKER_00]: So the concept around BRAPs is they're
+little self-contained applications that
+[SPEAKER_00]: run entirely on the BRAPI spec.
+[SPEAKER_00]: So someone can write, a lot of them are
+written in JavaScript.
+[SPEAKER_00]: They don't have to be, but a lot of them
+are little JavaScript web apps that you
+[SPEAKER_00]: can just plug into your own website.
+[SPEAKER_00]: And as long as you've got the BRAPI data
+sources implemented that the app requires,
+[SPEAKER_00]: you have this new functionality.
+[SPEAKER_00]: So yeah, different visualizations,
+pedigree viewer, sort of the one buried
+[SPEAKER_00]: there is a plot mapper over a real
+geolocation.
+[SPEAKER_00]: So yeah, these were really cool.
+[SPEAKER_00]: And one of the other cool things about
+this is it touches on sort of a big data
+[SPEAKER_00]: concept where instead of moving your data,
+let your data live where it is because
+[SPEAKER_00]: it's really big and a pain to move.
+[SPEAKER_00]: Instead, bring your applications,
+bring your software to the data.
+[SPEAKER_00]: And so this was another, we're not just
+sharing data within the BRAPI community,
+[SPEAKER_00]: we're actually sharing applications
+because those are a lot easier to move and
+[SPEAKER_00]: to implement other places.
+[SPEAKER_00]: So this was a really cool concept that
+we've been developing and there are a
+[SPEAKER_00]: number of BRAPs available now and a few
+more that are being developed by various
+[SPEAKER_00]: members of the community.
+[SPEAKER_00]: Yeah, and I'll quickly touch on,
+I mentioned there's a lot more use cases
+[SPEAKER_00]: within the community right now.
+[SPEAKER_00]: These are some of them.
+[SPEAKER_00]: There's a whole page on BRAPI.org that
+lists out the compatible software that
+[SPEAKER_00]: people have volunteered to register.
+[SPEAKER_00]: There's still more that people haven't put
+on there yet.
+[SPEAKER_00]: But yeah, we've started building a list of
+all the different compatible software
+[SPEAKER_00]: packages and applications that are BRAPI
+compatible right now.
+[SPEAKER_00]: So yeah, I encourage you to go check that
+out on BRAPI.
+[SPEAKER_00]: It should be pretty easy to find the
+compatible software page.
+[SPEAKER_00]: And none of this would be possible without
+the BRAPI community.
+[SPEAKER_00]: So I'll end on sort of an overview of the
+BRAPI community.
+[SPEAKER_00]: We've got roughly 37 registered partner
+organizations.
+[SPEAKER_00]: It's really easy to become a partner
+organization.
+[SPEAKER_00]: You send me the logo for your organization
+and I put it on the website and there you
+are.
+[SPEAKER_00]: You're registered.
+[SPEAKER_00]: Yeah, roughly 200 to 250 plant breeders,
+software developers, data managers,
+[SPEAKER_00]: other expert scientists in their field all
+working together, building the software
+[SPEAKER_00]: that's compatible, helping build the
+standards.
+[SPEAKER_00]: We really needed to come together as a
+community to decide on what these
+[SPEAKER_00]: standards were, make sure that they're
+useful for everyone.
+[SPEAKER_00]: That's one of my rules.
+[SPEAKER_00]: If someone comes to me with a new idea for
+a new concept or new piece of metadata
+[SPEAKER_00]: they want to add to the standard,
+I try and tease out of them first,
+[SPEAKER_00]: is this going to be useful for you or is
+this going to be useful for everyone else?
+[SPEAKER_00]: And usually if I can find two or three
+different organizations that all agree
+[SPEAKER_00]: that yes, this new piece would be useful,
+then we'll start working on adding it.
+[SPEAKER_00]: If it's just one group saying,
+oh, we need this thing in the spec,
+[SPEAKER_00]: then maybe we'll hold off until it becomes
+more useful.
+[SPEAKER_00]: Yeah, we also have a full advisory board,
+six elected officials from members of the
+[SPEAKER_00]: community make up that advisory board.
+[SPEAKER_00]: And they're one of the driving forces that
+sort of represent the community,
+[SPEAKER_00]: help me make quick decisions on building
+out the spec.
+[SPEAKER_00]: They're one of the resources I go to when
+I'm, I'm not an expert in plant breeding,
+[SPEAKER_00]: I'm a software guy.
+[SPEAKER_00]: So if there are questions on the science
+of it or what makes sense, how to
+[SPEAKER_00]: construct the spec, they're generally the
+group that I go to first.
+[SPEAKER_00]: This is a slide I like showing,
+just showing the different organizations
+[SPEAKER_00]: that we've worked with.
+[SPEAKER_00]: Kelly wasn't joking when he said,
+traveling all over the world, visiting
+[SPEAKER_00]: these different groups and the different
+science and the different software they're
+[SPEAKER_00]: all producing.
+[SPEAKER_00]: It's, yeah, it's very exciting to see it
+all on one global map.
+[SPEAKER_00]: And finally, the hackathons.
+[SPEAKER_00]: So one of the primary ways that this
+community gets together and stays together
+[SPEAKER_00]: is through hackathons.
+[SPEAKER_00]: We've run hackathons about twice a year.
+[SPEAKER_00]: Post COVID, we're doing one in person and
+one virtual each year.
+[SPEAKER_00]: And yeah, this was an opportunity for all
+of these folks to get together,
+[SPEAKER_00]: talk in person, build projects with each
+other during that week.
+[SPEAKER_00]: The hackathons are usually a week long and
+we all get to see each other in person and
+[SPEAKER_00]: build all these different tools together
+and talk about the specification and come
+[SPEAKER_00]: up with new ideas.
+[SPEAKER_00]: Our most recent in-person hackathon was
+this past spring in South Carolina.
+[SPEAKER_00]: Our most recent hackathon at all was
+actually a virtual one that just wrapped
+[SPEAKER_00]: up at the end of October.
+[SPEAKER_00]: It's tough to get group photos from
+virtual hackathons though.
+[SPEAKER_00]: Yeah, and a bunch of resources here.
+[SPEAKER_00]: If anyone's interested in learning more,
+like I said, all of this is available on
+[SPEAKER_00]: brappy.org.
+[SPEAKER_00]: And yeah, there's a contact page.
+[SPEAKER_00]: You can join our mailing list or our Slack
+channel if you want to get more involved.
+[SPEAKER_00]: And I'll leave it there if there are any
+questions.
+[SPEAKER_00]: That's a good question.
+[SPEAKER_00]: So generally speaking, there needs to be a
+mapping layer because we're usually
+[SPEAKER_00]: working with systems that already exist
+and we're adding Brappy to them.
+[SPEAKER_00]: So we don't wanna redesign their whole
+storage system just to make them
+[SPEAKER_00]: compatible.
+[SPEAKER_00]: So most of the time we're talking about
+mapping and making things compatible.
+[SPEAKER_00]: There are a couple of projects going on
+now, somewhat recent projects where people
+[SPEAKER_00]: are taking the Brappy specification and
+adapting it for a database schema,
+[SPEAKER_00]: basically.
+[SPEAKER_00]: And then in that way, it's a much more
+direct translation.
+[SPEAKER_00]: And so there are some of these projects
+where you can download the Brappy schema
+[SPEAKER_00]: database and it'll spin up a full database
+with all the Brappy compatibilities built
+[SPEAKER_00]: into it.
+[SPEAKER_00]: But again, that's starting a new database
+from scratch, which not everyone is
+[SPEAKER_00]: interested in doing.
+[SPEAKER_00]: So, summable.
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: You can pretty much plug in whatever you
+want.
+[SPEAKER_00]: BreedBase and the BreedBase crew,
+they've been part of the project since the
+[SPEAKER_00]: beginning.
+[SPEAKER_00]: And so it's sort of interesting that
+different groups have different approaches
+[SPEAKER_00]: to implementing Brappy.
+[SPEAKER_00]: So BreedBase, what they opted for was full
+implementation of the Brappy spec,
+[SPEAKER_00]: just get it all out there and ready.
+[SPEAKER_00]: Other databases are saying, selecting,
+well, for this specific use case,
+[SPEAKER_00]: we only need these five Brappy calls.
+[SPEAKER_00]: So those are the five we're gonna
+implement.
+[SPEAKER_00]: So it has pluses and minuses.
+[SPEAKER_00]: So BreedBase has a full suite of Brappy
+endpoints, but some of them haven't been
+[SPEAKER_00]: tested yet.
+[SPEAKER_00]: Some of them just aren't used ever.
+[SPEAKER_00]: Versus BMS has a more concrete set that
+are well tested, but it's a smaller set of
+[SPEAKER_00]: endpoints.
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: And there's a number of different
+databases and hopefully more adding as we
+[SPEAKER_00]: go forward.
+[SPEAKER_00]: So a lot of, I would say most of the time,
+people have an existing database they're
+[SPEAKER_00]: working with.
+[SPEAKER_00]: And that'll either be a database that I've
+worked with before.
+[SPEAKER_00]: And so they have some Brappy compatibility
+already, or it'll be a new database and
+[SPEAKER_00]: I'll try and start working with them to
+get them the compatibility.
+[SPEAKER_00]: There have been a couple of times where
+people have come to me asking for
+[SPEAKER_00]: recommendations for database and I try to
+stay very neutral.
+[SPEAKER_00]: Yeah, no, no, no.
+[SPEAKER_00]: I try to stay very neutral and I lay out
+sort of the pluses and minuses of each of
+[SPEAKER_00]: the systems that are within the community,
+trying to get a feel for what they're
+[SPEAKER_00]: working on and what would best fit their
+situation.
+[SPEAKER_00]: So I really try to stay very neutral.
+Yeah.
+[SPEAKER_01]: Can I turn to somebody and say,
+hey, can you help me with this?
+[SPEAKER_01]: Yeah,
+[SPEAKER_01]: yeah, yeah.
+[SPEAKER_00]: That's a great question.
+[SPEAKER_00]: So first would be come talk to me and see
+if I can help out.
+[SPEAKER_00]: I do have some spare development time that
+I can assist people getting started,
+[SPEAKER_00]: but I can't maintain every system.
+[SPEAKER_00]: Yeah, they had the resources and yeah,
+in particular, so we worked with them and
+[SPEAKER_00]: Dart to try and build the initial standard
+together, trying to make the standard that
+[SPEAKER_00]: would work for both of those systems and
+then expand it as other groups came on
+[SPEAKER_00]: board.
+[SPEAKER_00]: And so they got it just because they were
+the guinea pigs to help develop this.
+[SPEAKER_00]: It shouldn't take too much effort to
+become Brappy compatible.
+[SPEAKER_00]: One of the biggest time sinks is the
+concept mapping, which isn't a technical
+[SPEAKER_00]: activity.
+[SPEAKER_00]: That's a sit down with a whiteboard and
+map concepts and map names and terms.
+[SPEAKER_00]: And that's definitely something that I can
+help with.
+[SPEAKER_00]: And so, yeah, basically just sitting down
+and saying, okay, what does your system
+[SPEAKER_00]: look like?
+[SPEAKER_00]: What does Brappy look like?
+[SPEAKER_00]: And figure out what that is.
+[SPEAKER_00]: Then actually implementing that code is
+pretty straightforward once you get a
+[SPEAKER_00]: sense for what the mapping is.
+[SPEAKER_00]: And T3 is breed-based now, right?
+[SPEAKER_00]: They, I don't know if it's being used
+right now, but there was some work in
+[SPEAKER_00]: breed-based to actually connect it up to
+like Cornell genotyping and that.
+[SPEAKER_00]: So one half of that problem is solved
+already.
+[SPEAKER_00]: So there is one endpoint that I ask
+everyone implement and that's called
+[SPEAKER_00]: server info.
+[SPEAKER_00]: And basically that tells people what
+Brappy endpoints that they have
+[SPEAKER_00]: implemented.
+[SPEAKER_00]: So if you, I joked the first time,
+way back when I built my first test to
+[SPEAKER_00]: Brappy server to just sort of get a handle
+on it, I made a single server info
+[SPEAKER_00]: endpoint.
+[SPEAKER_00]: And said, I don't serve any other Brappy
+endpoints.
+[SPEAKER_00]: And said, look, I'm Brappy compliant.
+[SPEAKER_00]: So that's like the bare minimum.
+[SPEAKER_00]: And then I don't really want there to be a
+core set because everyone's got different
+[SPEAKER_00]: needs.
+[SPEAKER_00]: Everyone's using it in slightly different
+ways and different use cases.
+[SPEAKER_00]: So as long as they've got that one
+endpoint telling the rest of the world
+[SPEAKER_00]: which ones they are compatible with and
+what version they're compatible with,
+[SPEAKER_00]: and all that sort of thing.
+[SPEAKER_00]: I think that's fine, it's been fine so
+far.
+[SPEAKER_00]: And I really try to, one of the other
+questions people come to me with is which
+[SPEAKER_00]: metadata fields in the spec are required?
+[SPEAKER_00]: And there are actually very few metadata
+fields within the specification that are
+[SPEAKER_00]: required from a Brappy point of view
+because each different use case is gonna
+[SPEAKER_00]: require different fields.
+[SPEAKER_00]: So most of those fields aren't required,
+but if you want to connect a field book,
+[SPEAKER_00]: field book's got its own set of Brappy
+fields that it reads from.
+[SPEAKER_00]: And so those are gonna be required if
+you're trying to connect a field book,
+[SPEAKER_00]: that sort of thing.
+[SPEAKER_00]: So that flexibility has worked well so
+far.
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: That's definitely one of the search
+functions.
+[SPEAKER_00]: Ask me or join our Slack and sort of ask
+the community in general.
+[SPEAKER_00]: The compatible software page has a search
+function in it.
+[SPEAKER_00]: So all the different, and this is
+something I'm actively pushing the
+[SPEAKER_00]: community towards is getting their
+software posted on there because I know
+[SPEAKER_00]: that there are tools and applications that
+aren't on the website yet, but I just have
+[SPEAKER_00]: to track people down and get all the
+information I need to put them on there.
+[SPEAKER_00]: So actively working on that to sort of
+expand that set.
+[SPEAKER_00]: But yeah, if you're just looking for some
+tool to do something, those are gonna be
+[SPEAKER_00]: the first few places to look.
+[SPEAKER_00]: And then we might find a tool that's
+similar or close, and then it's working
+[SPEAKER_00]: with those developers or whoever to expand
+on that.
+[SPEAKER_00]: Any other questions?
+[SPEAKER_00]: Yeah, start.
+[SPEAKER_00]: Yeah, so that's a good question.
+[SPEAKER_00]: So for most of the end users who aren't
+interested in programming, yeah,
+[SPEAKER_00]: they're gonna benefit most from the
+different tools and capabilities and sort
+[SPEAKER_00]: of the automated interoperability between
+these different systems.
+[SPEAKER_00]: So in theory, they shouldn't even know
+that breppy exists or that it's happening
+[SPEAKER_00]: in the background.
+[SPEAKER_00]: One of the other ways though is,
+I know you know this, but Khaled is
+[SPEAKER_00]: working on a tool called QBMS,
+which is an R package that basically takes
+[SPEAKER_00]: the breppy endpoints and wraps them in
+something that a breeder is more familiar
+[SPEAKER_00]: with or our developers more familiar with.
+[SPEAKER_00]: And so the QBMS package is designed to be
+able to basically get data automatically
+[SPEAKER_00]: into your R scripts, whatever you're
+trying to develop without knowing all the
+[SPEAKER_00]: inner workings of breppy happening in the
+background, but still using that to get
+[SPEAKER_00]: all that data from a database.
+[SPEAKER_00]: So yeah, a couple of different options
+there in terms of what the users might
+[SPEAKER_00]: know about in terms of breppy.
+[SPEAKER_00]: So yeah, it depends.
+[SPEAKER_00]: We did put a lot of thought into
+efficiency.
+[SPEAKER_00]: It's always a balancing act between making
+data access efficient versus flexible.
+[SPEAKER_00]: So yeah, you can get a very efficient data
+pipeline, but not have many options in
+[SPEAKER_00]: terms of what you actually want to query.
+[SPEAKER_00]: So we're always trying to keep that
+balance of making the breppy endpoints
+[SPEAKER_00]: flexible, but also efficient.
+[SPEAKER_00]: And I think for the most part we've hit
+it, but different use cases may be easier
+[SPEAKER_00]: or harder depending on what exactly you're
+trying to do.
+[SPEAKER_00]: We have, as you know, we've worked with
+some enterprise systems already and trying
+[SPEAKER_00]: to get sort of larger scale data flows
+going.
+[SPEAKER_00]: And there are some techniques that have
+actually been added to later versions of
+[SPEAKER_00]: the spec to make that a little bit easier
+and a little bit more efficient in terms
+[SPEAKER_00]: of how data is being transferred.
+[SPEAKER_00]: And that's something I'm always keeping an
+eye out for is fixing those sorts of
+[SPEAKER_00]: problems within the specification.
+[SPEAKER_00]: I hope that answers your question.
+[SPEAKER_00]: Different versions of the specification,
+yeah.
+[SPEAKER_00]: So we try to, so basically each breppy
+version has a major and a minor version.
+[SPEAKER_00]: So the current version of breppy is 2.1
+right now.
+[SPEAKER_00]: Try to keep backwards compatibility
+maintained for all the minor versions,
+[SPEAKER_00]: but major versions might lose some of that
+backwards compatibility.
+[SPEAKER_00]: So as long as someone's working in the 2.x
+range, then all the endpoints should be
+[SPEAKER_00]: backwards compatible with each other and
+able to interact.
+[SPEAKER_00]: But as soon as you go back to one or up to
+three or whatever, then you might lose
+[SPEAKER_00]: some of that compatibility.
+[SPEAKER_00]: So trying to keep ranges of compatibility,
+but still be able to progress the
+[SPEAKER_00]: specification.
+[SPEAKER_00]: Any other questions?
+Yeah.
+[SPEAKER_00]: Say again.
+[SPEAKER_00]: Yeah, so there's metadata for defining
+locations and sort of defining the
+[SPEAKER_00]: different environment.
+[SPEAKER_00]: There are plenty of APIs and specification
+for weather data already.
+[SPEAKER_00]: We didn't want to reinvent that wheel,
+so it's more about identifying the
+[SPEAKER_00]: location and the type.
+[SPEAKER_00]: Sort of the general type of environment
+and then adding connectors to say specific
+[SPEAKER_00]: weather data or that sort of thing.
+[SPEAKER_00]: But yeah, it is part of the specification
+to define this is where I am.
+[SPEAKER_00]: This is the type, general type of
+environment that I'm dealing with.
+[SPEAKER_00]: So nothing in the spec specifically for
+microbiomes yet, but that's just because
+[SPEAKER_00]: no one in the community has approached me
+about adding it.
+[SPEAKER_00]: So this is how new concepts get added to
+BRAPy is someone says, I have a new use
+[SPEAKER_00]: case, but I really need this microbiome
+data to be part of it to make it
+[SPEAKER_00]: effective.
+[SPEAKER_00]: I bring that to the wider community.
+[SPEAKER_00]: Somebody else goes, oh yeah, that would be
+really useful.
+[SPEAKER_00]: And then we've worked together to build
+out the specification and add it to the
+[SPEAKER_00]: spec.
+[SPEAKER_00]: So it's a somewhat slow process to add
+things to the actual specification.
+[SPEAKER_00]: As a software engineer, my biggest concern
+is to make working software.
+[SPEAKER_00]: So if you've got a use case that needs
+microbiome data that uses BRAPy everywhere
+[SPEAKER_00]: else, but you need this extra little
+piece, just go add the extra little piece.
+[SPEAKER_00]: We'll catch up with the specification
+later and you'll have a slightly modified
+[SPEAKER_00]: BRAPy endpoint for handling your data,
+doing whatever you need to do to talk to
+[SPEAKER_00]: this other system.
+[SPEAKER_00]: And then that in itself, if you've got a
+working system that has a modified data
+[SPEAKER_00]: structure, that proves to me that yes,
+this data structure can work for this use
+[SPEAKER_00]: case.
+[SPEAKER_00]: And that's even more proof to add it to
+the rest of the spec for the community.
+[SPEAKER_00]: So yeah, nothing about microbiomes yet,
+but yeah, if you've got a use case that
+[SPEAKER_00]: the wider community be interested in,
+let me know.
+[SPEAKER_00]: Right, yeah, so yeah, like I said,
+we have a general sense of what the
+[SPEAKER_00]: environment is.
+[SPEAKER_00]: So we've got a general soil type and
+what's going on, but nothing that
+[SPEAKER_00]: specific.
+[SPEAKER_00]: And depending on what you're trying to do,
+there's a pretty robust system for making
+[SPEAKER_00]: observations and tying that to ontologies.
+[SPEAKER_00]: So you might have some observation,
+some trait or some variable defined as
+[SPEAKER_00]: like the soil content or some piece of the
+microbiome, whatever, some trait that
+[SPEAKER_00]: you're measuring in the field regularly.
+[SPEAKER_00]: Those measurements could definitely be
+recorded within the BRAPy spec,
+[SPEAKER_00]: but sort of not defined into its own
+concepts just as more not phenotype,
+[SPEAKER_00]: but just more observation data collected
+as part of a study.
+[SPEAKER_02]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_02]: Thank you.
+Thank you.
+Thank you.

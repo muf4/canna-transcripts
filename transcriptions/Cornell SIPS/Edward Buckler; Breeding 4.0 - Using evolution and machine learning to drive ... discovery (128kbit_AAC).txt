@@ -1,0 +1,1590 @@
+[SPEAKER_05]: This is a production of Cornell
+University.
+[SPEAKER_06]: But what I want to tell you a little bit
+about is how we're starting to use some of
+[SPEAKER_06]: the concepts of evolution and machine
+learning and combining those together to
+[SPEAKER_06]: really figure out and drive functional
+variant discovery and what we hope will
+[SPEAKER_06]: eventually become breeding 4.0.
+[SPEAKER_06]: I want to first highlight that the work
+I'll be telling you about today has been
+[SPEAKER_06]: supported by USDA ARS and the National
+Science Foundation, but the real thought
+[SPEAKER_06]: and efforts behind all of this type of
+work is coming from the incredible group
+[SPEAKER_06]: of collaborators I've had the pleasure of
+collaborating with over the years.
+[SPEAKER_06]: Sarah Miller was helping me count up all
+of our collaborators over the years,
+[SPEAKER_06]: and we've actually collaborated with like
+1,200 people now over the last 20 years,
+[SPEAKER_06]: and working across that global community
+has been such a pleasure to learn from
+[SPEAKER_06]: everybody and to make progress in this.
+[SPEAKER_06]: And this is some of our current
+collaborators right now that have helped
+[SPEAKER_06]: us shape our thinking.
+[SPEAKER_06]: I want to give you all a little feel for
+where we're driving to, and that comes out
+[SPEAKER_06]: of our lab's mission.
+[SPEAKER_06]: And so our lab's mission, the very first
+one element is a very straightforward one.
+[SPEAKER_06]: What's the genetic basis of natural
+diversity?
+[SPEAKER_06]: Simple to say, hard to figure out.
+[SPEAKER_06]: But essentially, how does it change in DNA
+get converted into a change out in the
+[SPEAKER_06]: field, something we can see and work with?
+[SPEAKER_06]: With models of those, we can then apply
+that knowledge to help breed crops for the
+[SPEAKER_06]: U.S.
+[SPEAKER_06]: and for the world.
+[SPEAKER_06]: And so I won't be talking a lot about what
+we're doing there, but we try to use our
+[SPEAKER_06]: understanding at the top part to help
+people across the world build engineering
+[SPEAKER_06]: and IT systems to help breed crops to the
+world.
+[SPEAKER_06]: And then finally, we do all this in the
+context of what should we discover and
+[SPEAKER_06]: what crops should we breed in order to
+reduce the environmental impact of
+[SPEAKER_06]: agriculture.
+[SPEAKER_06]: So I've also, in the last couple months,
+been giving a number of talks down in
+[SPEAKER_06]: Washington D.C.
+[SPEAKER_06]: And so frequently I'm asked, what is
+breeding?
+[SPEAKER_06]: And that actually is a harder question
+than I thought initially, because we all
+[SPEAKER_06]: around here think we know what breeding
+is.
+[SPEAKER_06]: But this is the definition I came up with.
+[SPEAKER_06]: And essentially, we view this as the
+design and selection of organisms for
+[SPEAKER_06]: human purposes.
+[SPEAKER_06]: And so if you start asking, what could we
+apply breeding to?
+[SPEAKER_06]: And if you go through the UN Sustainable
+Development Goals, they lay out 17 goals
+[SPEAKER_06]: that are critical across the globe for the
+next 20 years.
+[SPEAKER_06]: And where could breeding contribute to
+each one of these?
+[SPEAKER_06]: And it turns out that breeding can
+contribute.
+[SPEAKER_06]: I'm not saying it's the dominant element
+or anything, but it can play a role in 10
+[SPEAKER_06]: out of the 17 Sustainable Development
+Goals.
+[SPEAKER_06]: So the reason that I'm interested in
+taking quantitative genetics and applying
+[SPEAKER_06]: it to breeding is because the leverage of
+what we can do and impact the globe is so
+[SPEAKER_06]: great.
+[SPEAKER_06]: And so I think if each of us can play a
+little role in figuring out how we can
+[SPEAKER_06]: solve some of these 17 issues,
+we can have a real impact across the
+[SPEAKER_06]: globe.
+[SPEAKER_03]: Is there any reason you don't have number
+four or four?
+[SPEAKER_06]: Quality education.
+[SPEAKER_06]: Maybe it's 11 of them, I think.
+[SPEAKER_06]: Excellent question.
+[SPEAKER_06]: So in terms of the evolution of plant
+breeding, though, where have we come from?
+[SPEAKER_06]: As was mentioned, I have this background
+in archaeology, so I always think about
+[SPEAKER_06]: what breeding is in quantitative genetics
+from this very long time depth.
+[SPEAKER_06]: And so 10,000 years ago, I would say we
+started out what was called Breeding 1.0.
+[SPEAKER_06]: We were using phenotypic selection to
+decide what species should be
+[SPEAKER_06]: domesticated.
+[SPEAKER_06]: There's a quarter million plant species
+out there.
+[SPEAKER_06]: About 5,000 of them have been domesticated
+to some degree.
+[SPEAKER_06]: And people were really testing out species
+level diversity.
+[SPEAKER_06]: And applying selection to some of those
+species to really drive them into new and
+[SPEAKER_06]: different directions.
+[SPEAKER_06]: Starting a little over 100 years ago,
+I think the key element was we started
+[SPEAKER_06]: having controlled trials, where we
+controlled the genetics.
+[SPEAKER_06]: Out of that came our understanding of
+quantitative genetics, experimental
+[SPEAKER_06]: design, were really the key elements in
+allowing us to make progress.
+[SPEAKER_06]: And those statistics rises out of our
+knowledge of plant breeding and our desire
+[SPEAKER_06]: to do plant breeding.
+[SPEAKER_06]: And of course, equipment and tools like
+harvesters really help drive our ability
+[SPEAKER_06]: to provide and produce selection
+effectively.
+[SPEAKER_06]: Then a little over almost 20 years ago
+now, genomic selection arises,
+[SPEAKER_06]: where we're essentially using anonymous
+markers across the genome to really drive
+[SPEAKER_06]: selection and produce crops faster and
+better.
+[SPEAKER_06]: Now, for our most sophisticated breeding
+programs across the globe and major
+[SPEAKER_06]: companies, genomic selection is now the
+norm.
+[SPEAKER_06]: It's being applied in all of our major
+crops and each of those companies.
+[SPEAKER_06]: But I think one of the challenges we have
+across the nation and across the globe is
+[SPEAKER_06]: to make sure genomic selection,
+breeding 3.0, gets applied to those 5,000
+[SPEAKER_06]: other species that have been domesticated
+or to all the environments and all of the
+[SPEAKER_06]: breeding efforts across the rest of the
+globe.
+[SPEAKER_06]: So although I'll be talking most about
+breeding 4.0 today, we also do spend a lot
+[SPEAKER_06]: of time and I think our whole community
+should spend a lot of time making sure
+[SPEAKER_06]: that breeding 3.0 gets applied everywhere.
+[SPEAKER_06]: So finally, breeding 4.0 is really about
+designing genomes.
+[SPEAKER_06]: And in order to do this, you have to
+identify the causative nucleotides that
+[SPEAKER_06]: are underlying quantitative and complex
+trait variation.
+[SPEAKER_06]: And then we can imagine using editing
+technology and our understanding of
+[SPEAKER_06]: physiology and molecular biology to really
+drive things forward.
+[SPEAKER_06]: And I'll talk about how we're doing some
+efforts to help us identify those
+[SPEAKER_06]: causative nucleotides.
+[SPEAKER_06]: So when I think about where variation
+comes from, I think the first place to
+[SPEAKER_06]: kind of think about it is every
+generation, 90 new mutations occur.
+[SPEAKER_06]: And in the case of maize, and some of
+those are adaptive, some of those are
+[SPEAKER_06]: deleterious, and the most of them are
+neutral.
+[SPEAKER_06]: And fundamentally, the question that our
+group is trying to ask is of those 90
+[SPEAKER_06]: mutations that arise every generation,
+and they of course are passed on
+[SPEAKER_06]: generation after generation for thousands,
+even millions of years, which fall into
+[SPEAKER_06]: each of these different categories.
+[SPEAKER_06]: And that's what we're trying to ask and
+trying to figure that out as easily and
+[SPEAKER_06]: fast as we possibly can.
+[SPEAKER_06]: And why I care about speed and cost is
+because there's a lot of genetic variation
+[SPEAKER_06]: out there.
+[SPEAKER_06]: In a small sample of maize lines,
+they capture about 80 million different
+[SPEAKER_06]: genetic variants across the genome.
+[SPEAKER_06]: And we think there's on the order of a few
+hundred thousand functional variants that
+[SPEAKER_06]: are really contributing to most of the
+phenotypic variation out there.
+[SPEAKER_06]: The question is, how do we go from the top
+of that funnel to the bottom of that
+[SPEAKER_06]: funnel as cheaply and inexpensively as
+possible?
+[SPEAKER_06]: And so it really is a question of
+efficiency to move from the top to the
+[SPEAKER_06]: bottom.
+[SPEAKER_06]: So we've worked on a lot of the different
+methodologies across here, and I'll talk
+[SPEAKER_06]: about a couple of them today with special
+emphasis on using conservation,
+[SPEAKER_06]: expression, and machine learning to get
+from the top to the bottom.
+[SPEAKER_06]: And I want to start out with highlighting
+that evolution has turned out to probably
+[SPEAKER_06]: be the most powerful tool we have for
+figuring out what are functional variants
+[SPEAKER_06]: across the genome.
+[SPEAKER_06]: And of course, this shouldn't come as a
+surprise to anybody.
+[SPEAKER_06]: Jansky, 50 or 60 years ago, reminded us of
+this, that nothing in biology makes sense
+[SPEAKER_06]: except in the light of evolution.
+[SPEAKER_06]: But just to give you kind of a
+quantitative example of how powerful
+[SPEAKER_06]: evolution is at identifying things,
+let's think about field trials.
+[SPEAKER_06]: So a decade or so ago, we created the
+maize name population.
+[SPEAKER_06]: It had 5,000 inbred lines.
+[SPEAKER_06]: And through a lot of work, we created
+them.
+[SPEAKER_06]: We grew them out at, for example,
+one experiment, eight location,
+[SPEAKER_06]: lots of clones of each one.
+[SPEAKER_06]: And effectively, we were able to map a
+five kernel per plant difference down to
+[SPEAKER_06]: the level of an individual gene.
+[SPEAKER_06]: So that, in many regards, seems like
+that's a pretty good mapping accuracy and
+[SPEAKER_06]: everything.
+[SPEAKER_06]: But how does that compare to evolution?
+[SPEAKER_06]: And so, well, so the key thing to realize
+about evolution is it's really the
+[SPEAKER_06]: integration of billions of years of field
+trials.
+[SPEAKER_06]: You know, every individual is competing.
+[SPEAKER_06]: It's either surviving or not or dying to
+the passions gametes on.
+[SPEAKER_06]: And so in a diverse species, for example,
+maize, we sample a thousand different
+[SPEAKER_06]: maize lines.
+[SPEAKER_06]: We're capturing about three million years
+of evolutionary time by having a sample of
+[SPEAKER_06]: a thousand lines.
+[SPEAKER_06]: Those thousand excellent lines are the
+product of populations that had an
+[SPEAKER_06]: effective population size of nearly
+100,000 individuals.
+[SPEAKER_06]: And the key thing is selection can see a
+difference of one kernel out of 250
+[SPEAKER_06]: plants.
+[SPEAKER_06]: So in comparison to what we were able to
+do in a very large field experiment,
+[SPEAKER_06]: it's about 1,200 times more sensitive than
+what we can do in a large field
+experiment.
+[SPEAKER_06]: Because it's effectively, we have the time
+and evolution to integrate across all
+[SPEAKER_06]: those different events.
+[SPEAKER_06]: Now, what's the problem with using
+evolution?
+[SPEAKER_06]: The big issue is we don't really know what
+the conditions were under which selection
+[SPEAKER_06]: operated.
+[SPEAKER_06]: And so that's the great weakness of using
+evolution.
+[SPEAKER_06]: But we've also gotten in the last couple
+of decades, getting pretty good at
+[SPEAKER_06]: identifying what regions of the genome
+have been the product of domestication or
+[SPEAKER_06]: the targets of domestication.
+[SPEAKER_06]: And in those regions, we actually know
+those are the regions where the rules of
+[SPEAKER_06]: selection have changed.
+[SPEAKER_06]: When we talk about a domestication locus,
+what that really is, is a region of the
+[SPEAKER_06]: genome where selection is going in a
+different direction today under human
+[SPEAKER_06]: selection than it was under natural
+selection.
+[SPEAKER_06]: And so in the case of maize, which is
+probably our most highly domesticated crop
+[SPEAKER_06]: out there, there's about a thousand
+domestication or improvement loci across
+[SPEAKER_06]: the genome, which is about 4%.
+[SPEAKER_06]: Of all the genes out there.
+[SPEAKER_06]: So from one point of view, no,
+we can't be sure what's going on there.
+[SPEAKER_06]: We can't use evolution as a guide
+necessarily to pick out what is the
+[SPEAKER_06]: correct direction to take those loci.
+[SPEAKER_06]: But what this does suggest is that the
+other 96% of the genome, essentially the
+[SPEAKER_06]: rules that have played for the last few
+million years are probably the same rules
+[SPEAKER_06]: and important directions that are
+important today.
+[SPEAKER_06]: Photosynthesis in maize still operates
+pretty much by the same rules as it did a
+[SPEAKER_06]: million years ago, five million years ago,
+and so on.
+[SPEAKER_06]: So as we use that knowledge to try to
+figure out deleterious variants,
+[SPEAKER_06]: we've used essentially evolutionary
+conservation to work down this trail.
+[SPEAKER_06]: And so let me explain how we do that.
+[SPEAKER_06]: Well, the first thing about in order to
+use conservation, we were using it to try
+[SPEAKER_06]: to tackle a question about what produces
+deleterious mutations and then what
+[SPEAKER_06]: produces heterosis.
+[SPEAKER_06]: And why we care about deleterious
+mutations is over a hundred years ago,
+[SPEAKER_06]: geneticists figured out that essentially
+deleterious mutations are likely the
+[SPEAKER_06]: product or what produce heterosis and
+hybrid vigor.
+[SPEAKER_06]: And essentially we compliment them and we
+get it out hybrid vigor out of the system.
+[SPEAKER_06]: And of course, a whole maize seed industry
+has grown out of this.
+[SPEAKER_06]: And so I think the question of what is the
+basis of heterosis is pretty much a solved
+[SPEAKER_06]: question.
+[SPEAKER_06]: For the last hundred years, the question
+that has not been solved is what are the
+[SPEAKER_06]: individual nucleotides across the genome
+that contribute to heterosis?
+[SPEAKER_06]: So the basic process we've understood for
+a century, but what are those individual
+[SPEAKER_06]: deleterious mutations?
+[SPEAKER_06]: And so a former postdoc in the group,
+Eli Rogers-Melanick tackled this by asking
+[SPEAKER_06]: the question, let me take the maize genome
+and line it up across a wide range of
+[SPEAKER_06]: other species and identify what regions of
+the genome are conserved.
+[SPEAKER_06]: Across this wide range of species.
+[SPEAKER_06]: And he lined up maize for everything all
+the way out to rabbitopsis and grapes and
+[SPEAKER_06]: so on.
+[SPEAKER_06]: And what he found is about 10% of the
+genome was alignable and constrained.
+[SPEAKER_06]: I'd highlight that most of what he's
+talking about are the genes.
+[SPEAKER_06]: The intergenetic regulatory regions do not
+align across this range of diversity.
+[SPEAKER_06]: It's pretty much just genes that align at
+this scale.
+[SPEAKER_06]: But he was able, base pair by base pair,
+able to ask the question how conserved is
+[SPEAKER_06]: every base out there.
+[SPEAKER_06]: And then if you see a genetic polymorphism
+at a base that's incredibly conserved
+[SPEAKER_06]: across this entire phylogeny, the odds
+that are deleterious are substantially
+[SPEAKER_06]: increased.
+[SPEAKER_06]: And so the same type of process is also
+now being used by people in human genetics
+[SPEAKER_06]: to identify disease loci and so on.
+[SPEAKER_06]: And so Eli applied that to our question
+here in maize.
+[SPEAKER_06]: And we have a very strong prior of what we
+think should happen with deleterious
+[SPEAKER_06]: mutations.
+[SPEAKER_06]: We know that the key way to get rid of
+deleterious mutations is through
+[SPEAKER_06]: recombination that breaks things up and
+then essentially selection can eliminate
+[SPEAKER_06]: them.
+[SPEAKER_06]: And so we expect to see a pattern such
+that in low recombination regions of the
+[SPEAKER_06]: genome, we have a buildup of deleterious
+mutations and in high recombination
+[SPEAKER_06]: regions of the genome, we have fewer.
+[SPEAKER_06]: And that's exactly what we saw is that in
+low recombination, we had a buildup of
+[SPEAKER_06]: deleterious mutations and in the high
+recombination, we had fewer of them.
+[SPEAKER_06]: I do want to highlight though that there
+are still lots of deleterious mutations in
+[SPEAKER_06]: high recombination regions of the genome.
+[SPEAKER_06]: About 90 mutations are occurring every
+generation and they're all across the
+[SPEAKER_06]: genome, pretty much evenly across that
+genome.
+[SPEAKER_06]: And the genes are in the high
+recombination region.
+[SPEAKER_06]: So yes, there's a buildup.
+[SPEAKER_06]: The population genetic prediction that we
+are able to purge deleterious mutations
+[SPEAKER_06]: better in high recombination is true,
+but there are still deleterious mutations
+[SPEAKER_06]: everywhere just because the pressure of
+mutation is so strong.
+[SPEAKER_06]: And so Eli then lined up a lot of those
+deleterious mutations with a couple of
+[SPEAKER_06]: different aspects of the genome.
+[SPEAKER_06]: And the first one he wanted to test was
+how did this line up with people who had
+[SPEAKER_06]: previously mapped heterosis in maize.
+[SPEAKER_06]: And in the early 1990s, Charlie Stuber had
+identified that the paracentromeric region
+[SPEAKER_06]: of chromosome five exhibited the highest
+level of heterosis in maize.
+[SPEAKER_06]: And so Eli took his model of deleterious
+mutations, took a map from across
+[SPEAKER_06]: chromosome five, and that's exactly what
+he saw.
+[SPEAKER_06]: A buildup of deleterious mutations right
+in the paracentromeric region of the
+[SPEAKER_06]: genome and a far less buildup across the
+rest of it.
+[SPEAKER_06]: The green is the recombination rate.
+[SPEAKER_06]: And as you'll see in maize, we have a very
+low recombination rate all across that
+[SPEAKER_06]: paracentromeric region.
+[SPEAKER_06]: And so it's very difficult for the genome
+to purge these deleterious mutations in
+[SPEAKER_06]: those regions.
+[SPEAKER_06]: So the pattern in our agreement with
+heterosis for this analysis made a lot of
+[SPEAKER_06]: sense.
+[SPEAKER_06]: But as I mentioned, the way we were doing
+those conservation analysis, we really
+[SPEAKER_06]: could only look at essentially genes and
+conserve pretty much protein, conserve
+[SPEAKER_06]: proteins there.
+[SPEAKER_06]: And so the second question we wanted to
+ask is whether or not we were seeing the
+[SPEAKER_06]: same type of patterns looking at RNA and
+expression patterns.
+[SPEAKER_06]: Some other analysis we had done that
+suggested about half of phenotypic
+[SPEAKER_06]: variation is the product of expression
+differences, half of it's from coding.
+[SPEAKER_06]: And so is the genome able to purge
+deleterious mutations better in these
+[SPEAKER_06]: expression domain or does it do worse at
+that?
+[SPEAKER_06]: And so this is where Carl Krumling,
+a former graduate student, worked on this
+[SPEAKER_06]: question.
+[SPEAKER_06]: And the real element and key from doing
+this analysis is we needed to collect
+[SPEAKER_06]: enough expression data from enough
+different lines that we could determine
+[SPEAKER_06]: what was a rare and aberrant expression
+pattern.
+[SPEAKER_06]: And so what he did, is he got robotized
+three prime RNA-seq profiling up and
+[SPEAKER_06]: running, got it down for about 25 bucks a
+sample, and he was then able to profile
+[SPEAKER_06]: nearly 2,000 samples for their RNA levels.
+[SPEAKER_06]: And with that large data set, we then
+essentially had expression measures on
+[SPEAKER_06]: tens of millions of different genes and
+alleles all across this panel.
+[SPEAKER_06]: That effectively allowed us to start
+asking questions about what are rare
+[SPEAKER_06]: expression patterns.
+[SPEAKER_06]: And the hypothesis he wanted to test was
+one that Greg Gibson had laid out in human
+[SPEAKER_06]: genetics, and essentially the hypothesis
+is as following, and the test is as
+[SPEAKER_06]: following.
+[SPEAKER_06]: So we kind of expect low expression,
+if you bin expression patterns out for
+[SPEAKER_06]: each gene, if rare alleles and deleterious
+alleles are playing an important role,
+[SPEAKER_06]: what we expect to see is that essentially
+low expression will be the product of lots
+[SPEAKER_06]: of rare alleles and high expression will
+also be the product of lots of rare
+[SPEAKER_06]: alleles.
+[SPEAKER_06]: Well, intermediate expression won't have
+an enrichment of rare alleles.
+[SPEAKER_06]: And so this is the basic pattern you would
+expect if you think that rare alleles and
+[SPEAKER_06]: deleterious alleles are driving extremes
+in expression.
+[SPEAKER_06]: And so what's the alternative hypothesis
+to this?
+[SPEAKER_06]: Well, the alternative is that common
+alleles actually get stacked up in a way
+[SPEAKER_06]: such that the extremes are the product of
+lots of different common alleles.
+[SPEAKER_06]: And so is that likely to be common?
+[SPEAKER_06]: Well, across the whole genome,
+when we see extremes in phenotype like
+[SPEAKER_06]: flowering time, it is the product of
+dozens of genes with essentially
+[SPEAKER_06]: relatively common alleles getting stacked
+up in order to produce those extremes.
+[SPEAKER_06]: Of extreme early flowering is the product
+of lots of common alleles being stacked
+[SPEAKER_06]: up.
+[SPEAKER_06]: Extreme late flowering is the product,
+again, of lots of common alleles being
+[SPEAKER_06]: stacked up.
+[SPEAKER_06]: So genome-wide scale, that's the pattern
+we actually do see.
+[SPEAKER_06]: Common alleles in general are what are
+contributing to a lot of our extremes in
+[SPEAKER_06]: phenotypes.
+[SPEAKER_06]: But at the level of an individual gene,
+recombination is, of course, very limited.
+[SPEAKER_06]: There's a limited amount of recombination
+in each regulatory region.
+[SPEAKER_06]: And so this is a type of area where
+extremes may be the product actually of a
+[SPEAKER_06]: build up of deleterious mutations.
+[SPEAKER_06]: And so in Greg Gibson's model,
+what we would expect to see is essentially
+[SPEAKER_06]: a U-shaped plot here.
+[SPEAKER_06]: If you were to plot out the average number
+of rare alleles on the Y and then on the
+[SPEAKER_06]: X, we go from low expression to high
+expression.
+[SPEAKER_06]: We expect to see a U like this,
+if rare alleles are driving things.
+[SPEAKER_06]: And that's exactly what Carl saw.
+[SPEAKER_06]: So when he profiled using these different
+maze lines, essentially low expression,
+[SPEAKER_06]: where we see low expression, we see this
+more than doubling in the number of rare
+[SPEAKER_06]: alleles.
+[SPEAKER_06]: And we do also see an increase in high
+expression is the product of an increased
+[SPEAKER_06]: number of rare alleles.
+[SPEAKER_06]: So both extremes seem to be pushed by rare
+alleles.
+[SPEAKER_06]: The asymmetry between these two suggests
+that rare and deleterious alleles,
+[SPEAKER_06]: it's easier to knock down expression than
+it is to increase expression.
+[SPEAKER_06]: So both directions, we see that extreme on
+both sides.
+[SPEAKER_06]: And so where you really want to be is
+somewhere here in the middle.
+[SPEAKER_06]: That's the sweet spot where expression is.
+[SPEAKER_06]: Somewhere in the middle, you don't want to
+be at either of those two extremes.
+[SPEAKER_06]: And that basic hypothesis about extremes,
+and the optimal organism is an organism
+[SPEAKER_06]: that essentially has balanced expression
+everywhere, is effectively the dosage
+[SPEAKER_06]: hypothesis.
+[SPEAKER_06]: Jim Bertzler has been advocating this for
+a number of years as the basis of maze
+[SPEAKER_06]: heterosis.
+[SPEAKER_06]: And it works well with a model with
+deleterious mutations and so on.
+[SPEAKER_06]: But essentially, let me explain the model.
+[SPEAKER_06]: Essentially, if you have balanced
+expression at all your genes, your protein
+[SPEAKER_06]: complexes, your metabolism, everything
+else goes as expected.
+[SPEAKER_06]: That produces a healthy plant.
+[SPEAKER_06]: If you have extremes in expression,
+your protein complexes don't form
+[SPEAKER_06]: correctly, metabolites, you get built up
+with the wrong metabolites at the wrong
+[SPEAKER_06]: time points.
+[SPEAKER_06]: You essentially are wasting energy all
+over the place if you are not in the
+[SPEAKER_06]: center everywhere.
+[SPEAKER_06]: And that produces weak and inefficient
+organisms.
+[SPEAKER_06]: And so in order to be optimal,
+you should be average everywhere.
+[SPEAKER_06]: That is the key element there.
+[SPEAKER_06]: And so that's what the basic model in
+heterosis works just fine with this type
+[SPEAKER_06]: of model that essentially be average
+everywhere, and you will be highly
+[SPEAKER_06]: vigorous.
+[SPEAKER_06]: And so what Carl did is he came up with a
+very simple statistic of just cumulative
+[SPEAKER_06]: dysregulation across every gene in the
+genome.
+[SPEAKER_06]: He didn't give any genes greater weight or
+a different weight from one another.
+[SPEAKER_06]: We know that's very naive.
+[SPEAKER_06]: But essentially, cumulative dysregulation
+does correlate with seed weight or yield.
+[SPEAKER_06]: He also used an approach where he created
+a statistic based on the deviations in
+[SPEAKER_06]: expression in order to try to predict the
+amount of variance explained in seed
+[SPEAKER_06]: weight.
+[SPEAKER_06]: And here he was able to find anywhere from
+20 to 30% of seed weight is being
+[SPEAKER_06]: explained by this dysregulation,
+these patterns of dysregulation.
+[SPEAKER_06]: So we think that maybe about half of
+phenotypic variation is coming out of
+[SPEAKER_06]: processes that involve these dosage
+aspects of essentially not having balanced
+[SPEAKER_06]: dosage at each gene in the genome is
+producing a lot of the phenotypic
+[SPEAKER_06]: variation that is out there.
+[SPEAKER_06]: OK, now I told you about those two
+different approaches that we were using to
+[SPEAKER_06]: get from the top to the bottom.
+[SPEAKER_06]: But if we really want to get down to
+individual nucleotides so that we can
+[SPEAKER_06]: start talking about editing and so on,
+how do we get there?
+[SPEAKER_06]: Part of the problem with all these
+deleterious mutations is that they're
+[SPEAKER_06]: rare.
+[SPEAKER_06]: It's very difficult to map rare things.
+[SPEAKER_06]: And we don't want to spend a whole bunch
+of time taking every rare allele that's
+[SPEAKER_06]: out there and increasing its allele
+frequency in order to map it.
+[SPEAKER_06]: And so this is where machine learning
+comes in, where we're effectively learning
+[SPEAKER_06]: the rules of how the genome works so we
+can spot these rare and deleterious
+[SPEAKER_06]: mutations all across the genome.
+[SPEAKER_06]: And we've been starting to think and apply
+this all across essentially the central
+[SPEAKER_06]: dogma and beyond.
+[SPEAKER_06]: But what I'll be talking to you about
+today is how we're using machine learning
+[SPEAKER_06]: to model both chromatin structure and
+expression patterns in maize, actually in
+[SPEAKER_06]: maize and sorghum.
+[SPEAKER_06]: And so why are we talking about machine
+learning?
+[SPEAKER_06]: Well, obviously, it's a hot topic.
+[SPEAKER_06]: You're hearing about it all the time.
+[SPEAKER_06]: You can be photographed, and machine
+learning models will identify you
+[SPEAKER_06]: incredibly quickly.
+[SPEAKER_06]: You walk underneath a camera, it knows
+exactly who you are.
+[SPEAKER_06]: And the fact that that can be done and can
+be done for us, why shouldn't we apply
+[SPEAKER_06]: these incredible tools to understanding
+molecular biology too?
+[SPEAKER_06]: And the key reason machine learning does
+well at work though is it allows us to
+[SPEAKER_06]: process massive amounts of data.
+[SPEAKER_06]: It allows us really to generalize rules
+from one portion of the genome to the
+[SPEAKER_06]: rest.
+[SPEAKER_06]: It allows us to generalize rules from a
+reference genotype to all the other
+[SPEAKER_06]: genotypes.
+[SPEAKER_06]: And finally, if the model is robust
+enough, it can be used to really determine
+[SPEAKER_06]: if a given genetic variant matters.
+[SPEAKER_06]: And I think some of the pushback on
+machine learning has been historically
+[SPEAKER_06]: that people, especially in the basic
+science world, is that it's a black box
+[SPEAKER_06]: model.
+[SPEAKER_06]: And absolutely, you can treat machine
+learning entirely as a black box model and
+[SPEAKER_06]: not understand the underlying biology that
+is underlying it.
+[SPEAKER_06]: But as I'll show you, we've been doing a
+lot more work to essentially, once you
+[SPEAKER_06]: create the model, try to probe the model
+and ask the question, what's going on?
+[SPEAKER_06]: What did it learn?
+[SPEAKER_06]: And now, can it teach us something about
+what was going on there?
+[SPEAKER_06]: So I'm going to tell you about a series of
+models and these were developed by three
+[SPEAKER_06]: great post-docs in the group, Katherine
+Mejia, Hai Wong, and Jacob Washburn.
+[SPEAKER_06]: And the models are fairly straightforward
+to explain.
+[SPEAKER_06]: What we wanted to do was take sequence and
+just sequence.
+[SPEAKER_06]: So no other annotation on the sequence.
+[SPEAKER_06]: We don't want to know what methylation
+status is.
+[SPEAKER_06]: We don't want to know what the chromatin
+structure.
+[SPEAKER_06]: I just want to take sequence and from
+that, be able to predict the following.
+[SPEAKER_06]: Is the chromatin open?
+[SPEAKER_06]: What transcription factor binds there?
+[SPEAKER_06]: Is it a pseudogene?
+[SPEAKER_06]: And what is the expression level of the
+associated gene next to that sequence?
+[SPEAKER_06]: And the second class of models is,
+if I have two homologous sequences,
+[SPEAKER_06]: can I differentiate the expression of
+allele A versus allele B and figure out
+[SPEAKER_06]: which one has the greater level of
+expression?
+[SPEAKER_06]: So those are the five models we've been
+exploring the last year.
+[SPEAKER_06]: And essentially, we're using a couple of
+different approaches.
+[SPEAKER_06]: The first is coming from natural language
+processing.
+[SPEAKER_06]: Very similar to when you type something
+into Google and it's trying to process
+[SPEAKER_06]: your language and figure out what you're
+after.
+[SPEAKER_06]: And what we've done here, Katherine's
+worked on these Kamer language-based
+[SPEAKER_06]: approaches.
+[SPEAKER_06]: You're breaking a sequence into Kamers and
+then, as I'll show you, you're treating it
+[SPEAKER_06]: as essentially a bag of words that we're
+modeling.
+[SPEAKER_06]: And then the second class of models are
+these convolutional neural nets.
+[SPEAKER_06]: Historically, they've been used to
+essentially do image processing.
+[SPEAKER_06]: And we're essentially converting sequences
+into ordered images.
+[SPEAKER_06]: And then we're using the CNNs to process
+them at different scales and then using
+[SPEAKER_06]: neural nets to integrate these process
+sequences.
+[SPEAKER_06]: So a little bit more detail on what the
+Kamer bag of word type models are.
+[SPEAKER_06]: So let's take DNA and effectively,
+it could be treated as a bag of words,
+[SPEAKER_06]: very short sequences or the Kamers.
+[SPEAKER_06]: We take those.
+[SPEAKER_06]: We count them up.
+[SPEAKER_06]: And then we can essentially fit them in a
+regression model to make a prediction.
+[SPEAKER_06]: And a bag of words model is no more
+complicated than that.
+[SPEAKER_06]: The vector-based ones, which rely on the
+ordering of the words, is more complicated
+[SPEAKER_06]: and more powerful.
+[SPEAKER_06]: But essentially, the bag of words one is
+as simple as just counting up Kamers and
+[SPEAKER_06]: fitting it to a regression model.
+[SPEAKER_06]: When we talk about the convolutional
+neural nets, we're essentially taking a
+[SPEAKER_06]: sequence.
+[SPEAKER_06]: And each base pair is getting re-encoded.
+[SPEAKER_06]: And so what you're seeing is essentially
+we're making a black and white picture
+[SPEAKER_06]: where A's are encoded here, C's are
+encoded there.
+[SPEAKER_06]: And then from that, we take convolutions.
+[SPEAKER_06]: And what convolutions are doing is that
+they're looking across that image and
+[SPEAKER_06]: trying to highlight various features at
+certain scales that then can be passed on
+[SPEAKER_06]: to the neural nets.
+[SPEAKER_06]: And so those convolutions essentially
+probe the regions, summarize that
+[SPEAKER_06]: information there.
+[SPEAKER_06]: And then once we have those convolutions
+with neural nets, we can relate those
+[SPEAKER_06]: convolutions to any trait or attribute.
+[SPEAKER_06]: In our case, we want to relate that
+sequence to expression levels.
+[SPEAKER_06]: And so a little bit more about how we
+measure whether or not we've been able to
+[SPEAKER_06]: create machine learning models of any good
+or any use.
+[SPEAKER_06]: We use what are known as the rock curves
+or receiver-operating characteristic
+[SPEAKER_06]: curves.
+[SPEAKER_06]: And essentially, these are just ways to
+count how well you're doing in comparing
+[SPEAKER_06]: your trues and false positive rates.
+[SPEAKER_06]: And essentially, the way we've set them up
+for this talk here, our random expectation
+[SPEAKER_06]: is along the diagonal.
+[SPEAKER_06]: And we expect that to essentially produce
+an area under the curve or a rock curve of
+[SPEAKER_06]: about 0.5.
+[SPEAKER_06]: If we have a perfect classifier that's
+able to completely differentiate two
+[SPEAKER_06]: separate classes with no errors,
+it'll follow along there.
+[SPEAKER_06]: And essentially, its area under the curve
+would be 100%.
+[SPEAKER_06]: And so this is one way we measure whether
+or not we've been able to create a machine
+[SPEAKER_06]: learning model that is of value.
+[SPEAKER_06]: And so Katherine took this type of model.
+[SPEAKER_06]: She was using the ChIP-seq data from the
+transcription factor FIA4 to train on.
+[SPEAKER_06]: And she was able to, using that bag of
+words model, be able to create a model
+[SPEAKER_06]: that had very high levels of accuracy at
+0.99 and essentially was almost perfectly
+[SPEAKER_06]: classifying where each of those
+transcription factors were binding all
+[SPEAKER_06]: across the genome.
+[SPEAKER_06]: And it wasn't just that transcription
+factor.
+[SPEAKER_06]: She used the ChIP-seq data from not at
+one, also very high levels of accuracy.
+[SPEAKER_06]: We had MNA's open chromatin data that she
+was able to use.
+[SPEAKER_06]: And again, it was able to train very good
+models there.
+[SPEAKER_06]: And then she also was able to classify
+core promoter sequences with high levels
+[SPEAKER_06]: of accuracy.
+[SPEAKER_06]: So essentially, and she's been able to now
+repeat this for about 100 other
+[SPEAKER_06]: transcription factors with other
+collaborators.
+[SPEAKER_06]: And effectively, we can now create machine
+learning models that model where
+[SPEAKER_06]: transcription factor is going to bind with
+high levels of accuracy and be able to
+[SPEAKER_06]: essentially start annotating all sorts of
+other genomes with it, especially within
+[SPEAKER_06]: maze.
+[SPEAKER_06]: But one of the questions we did want to
+ask is how good are these models
+[SPEAKER_06]: transferable from maze to say other
+species?
+[SPEAKER_06]: And so Katherine asked that question.
+[SPEAKER_06]: She took her core promoter model and so it
+was great in maze.
+[SPEAKER_06]: But then she took it to sorghum.
+[SPEAKER_06]: It was OK.
+[SPEAKER_06]: The transferability from maze to sorghum
+wasn't as great as we would have hoped
+[SPEAKER_06]: there.
+[SPEAKER_06]: Now, we know strategies about how we could
+make a model that work across both of
+[SPEAKER_06]: them.
+[SPEAKER_06]: The key element is we would probably train
+across both maze and sorghum
+[SPEAKER_06]: simultaneously rather than just training
+on one species at a time.
+[SPEAKER_06]: But some of the models, for example,
+her not at one model for maze,
+[SPEAKER_06]: it actually had superb transferability.
+[SPEAKER_06]: All the way to rice.
+[SPEAKER_06]: So that one transferred 65 million years
+without a problem.
+[SPEAKER_06]: So each of these models, some have high
+levels of transferability, some don't.
+[SPEAKER_06]: But there are strategies for figuring out
+and improving the transferability across
+[SPEAKER_06]: species.
+[SPEAKER_06]: These k-mer models are also really,
+we talk about the black box aspect.
+[SPEAKER_06]: All of that was pretty much black box.
+[SPEAKER_06]: You can open up the models and ask,
+OK, how did the model figure out that this
+[SPEAKER_06]: is a core promoter?
+[SPEAKER_06]: And so of course, we know the Tata box
+should play an important role in defining
+[SPEAKER_06]: a core promoter sequence.
+[SPEAKER_06]: And so what she's plotted out here is
+essentially the weight of each k-mer.
+[SPEAKER_06]: And there's thousands of k-mers she was
+looking at.
+[SPEAKER_06]: But these are the Tata-like k-mers.
+[SPEAKER_06]: And the most important ones for defining a
+core promoter are listed here.
+[SPEAKER_06]: As you see, they line up right next to
+where the transcriptional start site is.
+[SPEAKER_06]: So essentially, this black box model,
+the way it learned how transcription
+[SPEAKER_06]: starts in Mays was finding the Tata box
+and learning essentially the rules that,
+[SPEAKER_06]: of course, obviously everybody's known
+this for years.
+[SPEAKER_06]: But it was able to learn effectively the
+right rules on how this works.
+[SPEAKER_06]: OK, we've also, though, found that
+training models can be tricky.
+[SPEAKER_06]: And machine learning models, they're
+incredibly powerful.
+[SPEAKER_06]: They can learn and memorize virtually
+anything.
+[SPEAKER_06]: The question is whether or not it's
+learning what you want it to learn.
+[SPEAKER_06]: And this is where the last six months or
+so, we've been really doing a lot more
+[SPEAKER_06]: work to make sure we're training on the
+attributes of the models that we really
+[SPEAKER_06]: care about.
+[SPEAKER_06]: And it turned out that a lot of our
+models, especially when we went across
+[SPEAKER_06]: lots of different genes, our models were
+effectively able to memorize the
+[SPEAKER_06]: evolutionary history of how every gene is
+related to every other gene, OK?
+[SPEAKER_06]: Which isn't, you know, that's an
+interesting evolutionary story,
+[SPEAKER_06]: but doesn't teach you the rules of how
+molecular biology works and exactly how a
+[SPEAKER_06]: promoter works.
+[SPEAKER_06]: We didn't want to just memorize evolution.
+[SPEAKER_06]: So what we've done is we've started to
+think through how can we use evolution as
+[SPEAKER_06]: our aid, not something we just memorize.
+[SPEAKER_06]: And so we've set up two different ways of
+setting up our training versus our
+[SPEAKER_06]: testing.
+[SPEAKER_06]: The first one, Ai Wang and the group set
+up was essentially gene family guided
+[SPEAKER_06]: training, where you train on one set of
+gene families.
+[SPEAKER_06]: So you take half the gene families across
+mates and you train on them, but you hide
+[SPEAKER_06]: all the other gene families.
+[SPEAKER_06]: But you test if your model is doing very
+well with a group of gene families the
+[SPEAKER_06]: model has never seen before.
+[SPEAKER_06]: If you are learning things that are
+transferable to gene families you've never
+[SPEAKER_06]: seen before, then it's likely a good
+model.
+[SPEAKER_06]: It hasn't just memorized recent evolution
+in order to figure things out.
+[SPEAKER_06]: And the second way to do it is to
+essentially take a couple related species
+[SPEAKER_06]: to one another.
+[SPEAKER_06]: And essentially compare the orthologs
+against one another in order to set up the
+[SPEAKER_06]: contrast there.
+[SPEAKER_06]: And that's what we call the ortholog
+contrast training model.
+[SPEAKER_06]: I'll go into that.
+[SPEAKER_06]: And Jacob Washburn has been leading the
+effort in those types of analyses.
+[SPEAKER_06]: So in that first one, Ai wanted to ask the
+question, can he train a model to identify
+[SPEAKER_06]: what are the pseudogenes across the genome
+and which are the genes that are highly
+[SPEAKER_06]: expressed?
+[SPEAKER_06]: And so normally he's taking the promoter
+sequence the UTRs, about 1500 base pairs
+[SPEAKER_06]: up there, 1500 base pairs from the 3-prime
+UTR and beyond the terminator,
+[SPEAKER_06]: throwing that into a model, letting the
+convolutional neural net then predict
+[SPEAKER_06]: expression levels.
+[SPEAKER_06]: And what he did is he took a data set
+where we had expression across 66
+[SPEAKER_06]: different tissues and took the maximal
+expression level and he asked the
+[SPEAKER_06]: question, can he differentiate between the
+genes that are never expressed versus the
+[SPEAKER_06]: genes that are expressed, that's the
+combination of these two, or just the
+[SPEAKER_06]: really highly expressed genes?
+[SPEAKER_06]: And I'll preempt this.
+[SPEAKER_06]: Next slide.
+[SPEAKER_06]: We're a lot better at differentiating
+between this group versus that group than
+[SPEAKER_06]: differentiating between here and all of
+these.
+[SPEAKER_06]: But the model is still quite good.
+[SPEAKER_06]: And essentially when you try to
+differentiate between off versus high,
+[SPEAKER_06]: he has about an 80% accuracy there.
+[SPEAKER_06]: And if you just use either the promoter or
+the terminator, terminator sequence,
+[SPEAKER_06]: and if you combine the two of them
+together, we get a substantial boost.
+[SPEAKER_06]: So essentially signal for whether or not
+the gene is on or high is coming from both
+[SPEAKER_06]: the 5-prime and 3-prime end of the gene.
+[SPEAKER_06]: And we can create a pretty good model,
+classify each of those.
+[SPEAKER_06]: The second question that we were
+interested in is which allele is more
+[SPEAKER_06]: highly expressed?
+[SPEAKER_06]: Here we're taking two homologous
+sequences.
+[SPEAKER_06]: And from a person with a quantitative
+genetics background, this is really kind
+[SPEAKER_06]: of the fundamental question I have of
+molecular biology.
+[SPEAKER_06]: I want to know a given variant,
+does it change, does it make something go
+[SPEAKER_06]: up, does it make it go down, or does it
+have no effect?
+[SPEAKER_06]: Once I get down to the right side of
+those, then I can throw it into a more
+[SPEAKER_06]: complex model of quantitative genetics and
+parameterize everything.
+[SPEAKER_06]: So this is the style of model I really
+want to use in order to parameterize the
+[SPEAKER_06]: entire genome.
+[SPEAKER_06]: And the way Jacob has gone about this,
+is essentially reframing it using these
+[SPEAKER_06]: orthologs.
+[SPEAKER_06]: And I mentioned we're essentially
+comparing the orthologs in two different
+[SPEAKER_06]: species, training on them, and then
+testing on a different set there.
+[SPEAKER_06]: So instead of just having one sequence and
+making a prediction of phenotype,
+[SPEAKER_06]: we're taking two sequences and comparing
+them.
+[SPEAKER_06]: And what we found is that rather than
+actually predicting exactly the difference
+[SPEAKER_06]: in expression, we're most interested in
+really predicting whether or not it went
+[SPEAKER_06]: up or went down.
+[SPEAKER_06]: And I will also highlight that we found
+out that there's a lot of genes,
+[SPEAKER_06]: especially when we have to compare between
+species, that very subtle differences in
+[SPEAKER_06]: expression.
+[SPEAKER_06]: We're not very good at predicting whether
+or not a gene went up or down slightly
+[SPEAKER_06]: between major sorghum.
+[SPEAKER_06]: But if we take a look at the top 20% of
+the genes that really moved up and down in
+[SPEAKER_06]: the expression between maize and sorghum
+orthologs, then we have very good
+[SPEAKER_06]: prediction accuracy.
+[SPEAKER_06]: And some of this may be our ability to
+really tell whether or not something went
+[SPEAKER_06]: up or down isn't great if the expression
+differences are really slight.
+[SPEAKER_06]: So Jacob took this model, very similar to
+what Hai, or exactly the same way that Hai
+[SPEAKER_06]: broke up the sequences here.
+[SPEAKER_06]: But he's essentially taking two genes in
+the model and then letting the
+[SPEAKER_06]: convolutional neural net pick out which
+ortholog is more highly expressed.
+[SPEAKER_06]: And so the pattern here was somewhat
+different.
+[SPEAKER_06]: So the first thing to highlight is that
+the promoter 5'N versus 3'N, it was really
+[SPEAKER_06]: the 3'N that was giving us much more
+information than the promoter was.
+[SPEAKER_06]: And we didn't get much improvement by
+combining the two of them together.
+[SPEAKER_06]: And as I mentioned, if we only look at the
+20% of the genes and really a big
+[SPEAKER_06]: expression differences, then we have a
+really accurate model.
+[SPEAKER_06]: There's real subtle differences between
+maize and sorghum.
+[SPEAKER_06]: We're not able to pick those out
+particularly well.
+[SPEAKER_06]: But if there's a big difference,
+we can create a classifier that's actually
+[SPEAKER_06]: really accurate.
+[SPEAKER_06]: But the interesting thing is most of the
+signal was coming from the terminator end
+[SPEAKER_06]: of the sequences.
+[SPEAKER_06]: And to plot that out, again, once we've
+created these models, we can go through
+[SPEAKER_06]: base pair by base pair and ask,
+what did the model learn?
+[SPEAKER_06]: What base pairs were most important for
+making that prediction?
+[SPEAKER_06]: And so that's what you're seeing here is
+essentially these are called saliency
+[SPEAKER_06]: maps.
+[SPEAKER_06]: And what they're doing is they're telling
+us what base pair by base pair is
+[SPEAKER_06]: providing the most information and high
+expression.
+[SPEAKER_06]: And it turned out when we do that ortholog
+contrast model, that the sequences right
+[SPEAKER_06]: before the terminator sequence were the
+most important for determining the
+[SPEAKER_06]: expression levels.
+[SPEAKER_06]: While if we look at pseudogenes,
+5' UTRs were most important, and so on.
+[SPEAKER_06]: So we are learning that for each of these
+different models, different portions of
+[SPEAKER_06]: the gene seem to be most important for
+explaining this.
+[SPEAKER_06]: So what this is suggesting is the model
+that I was working on was really asking
+[SPEAKER_06]: questions about how different classes of
+genes control their regulation.
+[SPEAKER_06]: That seems to be an issue that's
+substantially regulated by the 5' UTR,
+[SPEAKER_06]: the promoter sequence, and so on.
+[SPEAKER_06]: The fine tuning of how one gene changes
+its expression through evolutionary time
+[SPEAKER_06]: seems to be coming more from the 3' UTR
+side.
+[SPEAKER_06]: So whether the gene is on or off,
+5', whether that exact amount of
+[SPEAKER_06]: expression that's left on in the fine
+tuning of it, and what makes the
+[SPEAKER_06]: difference between maize and sorghum,
+may well be coming from the 3' UTR side of
+[SPEAKER_06]: things.
+[SPEAKER_06]: So at least that's our current hypothesis.
+[SPEAKER_06]: So I want to end up here, though,
+is can we also probe these models and get
+[SPEAKER_06]: down to that level where we're really
+starting to ask the question, can we edit?
+[SPEAKER_06]: And Katherine took one of her models.
+[SPEAKER_06]: She lined up her data and her model of not
+at one against empirical data that Sarah
+[SPEAKER_06]: Hakes group produced a decade ago,
+and where they tweaked individual base
+[SPEAKER_06]: pairs and then did a competition assay to
+ask, do these individual base pairs
+[SPEAKER_06]: matter?
+[SPEAKER_06]: And what you'll see is that where she
+predicts high regulatory probabilities,
+[SPEAKER_06]: that's what we see, and where she predicts
+low in these individual base pair changes,
+[SPEAKER_06]: they line up with the competition assays.
+[SPEAKER_06]: So I think we've gotten to a level where
+these machine learning models can be true
+[SPEAKER_06]: brain, that they have the sensitivity to
+ask the question, if one or two bases are
+[SPEAKER_06]: changed here, that's likely to produce an
+effect.
+[SPEAKER_06]: So what are the limits of our current
+models?
+[SPEAKER_06]: So those deleterious models I was telling
+you about, they're good at splitting
+[SPEAKER_06]: neutral from functional.
+[SPEAKER_06]: And what do I mean by that?
+[SPEAKER_06]: Let's say there's 80 million variants out
+there.
+[SPEAKER_06]: I think we're at a stage where,
+at least for amino acids, I can tell you
+[SPEAKER_06]: these are the 2,000 or 3,000 bad amino
+acids out there.
+[SPEAKER_06]: So from one point of view, we separated
+3,000 away from 80 million, that seems
+[SPEAKER_06]: really good.
+[SPEAKER_06]: We're not very good at telling you among
+those last 3,000, which is the worst one.
+[SPEAKER_06]: Okay, we're not very good at ranking
+within those last 3,000.
+[SPEAKER_06]: We're also, when we go across this much
+diversity, we're missing the regulatory
+[SPEAKER_06]: landscape.
+[SPEAKER_06]: How Mays is controlling its expression
+versus Arabidopsis, things have changed so
+[SPEAKER_06]: dramatically that the rule, we can't learn
+all the rules from Arabidopsis on how each
+[SPEAKER_06]: individual gene is being expressed in
+Mays.
+[SPEAKER_06]: And of course, we have very diverse
+physiology.
+[SPEAKER_06]: So how are we working to get around that?
+[SPEAKER_06]: Well, initially we only had four species
+of the anthropogoniae.
+[SPEAKER_06]: And so what we're doing now is we've just
+got started on a project that's been
+[SPEAKER_06]: funded by the National Science Foundation
+with my colleagues, Toby Kellogg,
+[SPEAKER_06]: Matt Hufford, Jeff Ross-Avara,
+Adam Siepland, Chi Sun.
+[SPEAKER_06]: And we're gonna focus on one clade.
+[SPEAKER_06]: And so why do we care about focusing on a
+clade?
+[SPEAKER_06]: Well, I mentioned initially that Mays,
+we've learned a lot from Mays,
+[SPEAKER_06]: but with 1,000 genomes worth of
+sequencing, we only capture about 3
+[SPEAKER_06]: million years of evolution.
+[SPEAKER_06]: If we were to apply that same 1,000
+genomes worth of information across this
+[SPEAKER_06]: entire clade from, say, 900 different
+anthropogoniae, we would capture 1.5
+[SPEAKER_06]: billion years of evolutionary time.
+[SPEAKER_06]: Okay?
+[SPEAKER_06]: So we've dramatically increased the total
+amount of time by 300 fold that we're now
+[SPEAKER_06]: sampling.
+[SPEAKER_06]: And I was telling you how sensitive
+evolution is at detecting fitness
+[SPEAKER_06]: differences.
+[SPEAKER_06]: But now we've turbocharged it.
+[SPEAKER_06]: Now we have 300 times more information.
+[SPEAKER_06]: And the key thing is within this clade,
+they all share NADP C4 photosynthesis.
+[SPEAKER_06]: They're all roughly in the big scheme of
+things, the same physiology and similar
+[SPEAKER_06]: developmental patterns.
+[SPEAKER_06]: So we're not trying to make models that
+work all the way out to our rabbit ops.
+[SPEAKER_06]: We're working with a group of grasses that
+are untrained systematists.
+[SPEAKER_06]: Many of them all look very similar to one
+another.
+Okay?
+[SPEAKER_06]: But they have adapted all over the planet.
+[SPEAKER_06]: So one way to view this is this is really
+saturation evolutionary analysis.
+[SPEAKER_06]: Every ancestral base pair here has
+actually been mutated 50 times somewhere
+[SPEAKER_06]: coming out here into those 900 different
+species.
+[SPEAKER_06]: So every base pair has been whacked by
+mutations all over the place.
+[SPEAKER_06]: And so we can actually start measuring
+constraint directly.
+[SPEAKER_06]: These species, although they
+developmentally look very similar,
+[SPEAKER_06]: have actually adapted to an incredible
+range of also environmental adaptations
+[SPEAKER_06]: from frost to very hot temperatures,
+drought environments to essentially in
+[SPEAKER_06]: swamps.
+[SPEAKER_06]: And so from across this entire species,
+we can learn how these species have
+[SPEAKER_06]: adapted to some of those diverse
+environmental adaptations.
+[SPEAKER_06]: And so we're working to essentially
+sample, sequence, analyze all 900 of those
+[SPEAKER_06]: species genomes in the next several years.
+[SPEAKER_06]: And we really see that evolution and
+machine learning, we will be bringing
+[SPEAKER_06]: those together where we see that evolution
+provides us this near infinite level of
+[SPEAKER_06]: mutagenesis.
+[SPEAKER_06]: It provides us an ability to see fitness
+effects that are a thousand fold more
+[SPEAKER_06]: powerful than field experiments.
+[SPEAKER_06]: And they have provided this incredible
+range of environmental histories.
+[SPEAKER_06]: While machine learning is allowing us to
+scale to genome sizes, learning can be
+[SPEAKER_06]: generalized, and we can throw virtually
+anything into a machine learning model.
+[SPEAKER_06]: So heterogeneous inputs can go in,
+and we can still make sense of it.
+[SPEAKER_06]: So these are the tools we have here.
+[SPEAKER_06]: And this is where we're working a lot now
+is to figure out what are the most
+[SPEAKER_06]: intelligent ways to combine all these
+together.
+[SPEAKER_06]: So we can identify prioritize those
+individual snips, so that we can go from a
+[SPEAKER_06]: place where we have models of how each of
+the various steps in that central dogma
+[SPEAKER_06]: work, although we have to physiology,
+we can then test those hypotheses based on
+[SPEAKER_06]: how they work in standing variation.
+[SPEAKER_06]: If they work well, we go ahead and we
+start editing and selecting away.
+[SPEAKER_06]: So I want to end here that a lot of folks
+in my group have contributed to these
+[SPEAKER_06]: ideas.
+[SPEAKER_06]: I highlighted many of the people,
+the postdocs and students who produced a
+[SPEAKER_06]: lot of exact data sets I was talking
+about.
+[SPEAKER_06]: But my group and all those great
+collaborations and data sets we've been a
+[SPEAKER_06]: product of are really three people in the
+group really helped bring everything
+[SPEAKER_06]: together.
+[SPEAKER_06]: And that's Cinta Verme, Peter Bradbury,
+and Sarah Miller.
+[SPEAKER_06]: And I'd be happy to take some questions.
+[SPEAKER_05]: So each sample that you're putting into
+these models seems like a moving target,
+right?
+[SPEAKER_05]: Developmentally speaking, tissue cells,
+how do you control for that?
+[SPEAKER_06]: Right.
+[SPEAKER_06]: So I mean, so the question is,
+how do you change through different
+[SPEAKER_06]: developmental time points and everything?
+[SPEAKER_06]: So essentially, the way we've been
+treating it right now, everything is at
+[SPEAKER_06]: the same developmental stage, okay?
+[SPEAKER_06]: And so the models we've created are for a
+developmental stage.
+[SPEAKER_06]: And so in maize and sorghum, we can still
+grow those two plants side by side,
+[SPEAKER_06]: one another.
+[SPEAKER_06]: We can collect expression data side by
+side for one another and make sense of
+[SPEAKER_06]: them.
+[SPEAKER_06]: One of the good things though about
+expression, the data sets are so rich,
+[SPEAKER_06]: you can stage one another against so many
+orthologs.
+[SPEAKER_06]: So it is possible to stage models against
+one another.
+[SPEAKER_06]: And just from the empirical data,
+you can frequently figure out where you
+[SPEAKER_06]: are in development, where you are in
+various stages.
+[SPEAKER_06]: So I think long term though, the models
+absolutely need to be generalized through
+[SPEAKER_06]: the dynamic time changes.
+[SPEAKER_06]: And that's not something we're interested
+in, we have not worked on.
+[SPEAKER_05]: Does that become a problem when you're
+going to other species that may not
+[SPEAKER_05]: develop as sorghum or maize does?
+[SPEAKER_06]: I'm sure there'll be situations where the
+models will not work as well for certain
+[SPEAKER_06]: developmental aspects.
+[SPEAKER_06]: But I think a lot of them, a lot of the
+development is, it is timing here,
+[SPEAKER_06]: they're stretched out or extended a little
+bit more and that produces the phenotypic
+[SPEAKER_06]: effect that we're seeing.
+[SPEAKER_06]: But some of the basic patterns in
+regulation are pretty similar.
+[SPEAKER_06]: I mean, the fact that a lot of our maize
+and sorghum models, the fact that we can
+[SPEAKER_06]: even train a model on expression that's
+between maize and sorghum really well,
+[SPEAKER_06]: says the rules are pretty much the same.
+[SPEAKER_00]: Yeah.
+[SPEAKER_00]: I'm sorry, so I mean, the V4 that you
+described has a lot of purging rare
+[SPEAKER_00]: deleterious of mules, but not really,
+like it doesn't really involve mining for
+[SPEAKER_00]: and spreading and fixing rare beneficial
+mules.
+[SPEAKER_00]: And I was wondering specifically about
+biotic stress, where a rare beneficial
+[SPEAKER_00]: mule is much, much more valuable than a
+gene that everyone already has,
+[SPEAKER_00]: because that's probably already worthless.
+[SPEAKER_00]: Right.
+[SPEAKER_06]: Yeah.
+[SPEAKER_06]: So I think the question is about rare
+advantageous for adaptive alleles.
+[SPEAKER_06]: Well, so first off, there's a certain
+level where we're never going to be able
+[SPEAKER_06]: to capture every adaptive mutation that's
+out there.
+[SPEAKER_06]: But most adaptive mutations, if they
+really truly are adaptive for that
+[SPEAKER_06]: population, they will be common there.
+[SPEAKER_00]: But if you have a biotic stress,
+like a new one, or a gene which formerly
+[SPEAKER_00]: worked really great against soybeans,
+it's not a toad, a few years ago,
+[SPEAKER_00]: it's now worthless because of the change
+in the target.
+[SPEAKER_06]: Oh, yeah.
+[SPEAKER_06]: And I agree.
+[SPEAKER_06]: Situations where you have very rapidly
+changing, a Red Queen situation like
+[SPEAKER_06]: biotic stress, I think different
+approaches really need to be used to
+[SPEAKER_06]: figure out what are the useful alleles
+there.
+[SPEAKER_06]: Red Queen, I would say, is not,
+yeah, this is not the approach to go find
+[SPEAKER_06]: those alleles.
+[SPEAKER_06]: I think there are other approaches that
+would be far more advantageous for
+[SPEAKER_06]: figuring out disease low-sides.
+[SPEAKER_06]: But I would say most of the abiotic
+stresses, they are, yes, they may
+[SPEAKER_06]: fluctuate from year to year, but over a
+deep time, all the organisms have seen
+[SPEAKER_06]: drought.
+[SPEAKER_06]: They've seen flooding and things like
+that.
+[SPEAKER_06]: So a lot of those alleles are maintained
+at reasonable frequencies and over a wide
+[SPEAKER_06]: enough panel, you'll be able to find that
+that allele is adaptive and it's common
+[SPEAKER_06]: somewhere.
+[SPEAKER_06]: And it may be rare in your little panel,
+but if it really is adaptive and you are
+[SPEAKER_06]: sampling as much diversity to say the
+entire anthropogony, it'll be common in a
+[SPEAKER_06]: number of places.
+[SPEAKER_04]: Yeah, Russ.
+[SPEAKER_04]: So on the transcription factors,
+transcription factor binding sites,
+[SPEAKER_04]: so since the AUC is so high, 0.99,
+there must be some features that are
+[SPEAKER_04]: really indicative of that particular
+binding site.
+[SPEAKER_04]: So between the transcription factor
+binding sites that showed a high AUC
+[SPEAKER_04]: versus those that did not, are there any
+trends or common features?
+[SPEAKER_06]: I don't know if Catherine is here.
+[SPEAKER_06]: The ones that, I know we're, is Catherine
+here?
+[SPEAKER_06]: No, okay.
+[SPEAKER_06]: The ones that were not very high,
+anybody else in the lab wants to correct
+[SPEAKER_06]: me, feel free.
+[SPEAKER_06]: The ones that were not high, generally the
+ChIP-seq experiments were pretty bad.
+[SPEAKER_06]: Okay, so the biggest thing we've seen for
+the improvement of the quality of the
+[SPEAKER_06]: models is replication of numerous ChIP-seq
+experiments.
+[SPEAKER_06]: And when they are replicated and you line
+up the experiments over and over again,
+[SPEAKER_06]: those sites can be modeled really well.
+[SPEAKER_06]: So the neat thing also Catherine has done
+is she's been able to take those models
+[SPEAKER_06]: and compare, for these 100 transcription
+factors, compare what the model looks like
+[SPEAKER_06]: against each one, for each transcription
+factor.
+[SPEAKER_06]: And the families of transcription factors
+fall out of it.
+[SPEAKER_06]: So suggesting that essentially it really
+is learning the basic processes by which
+[SPEAKER_06]: these TFs are binding.
+Yeah.
+[SPEAKER_02]: Yeah, as far as your presentation,
+thank you so much.
+[SPEAKER_02]: I'm just looking at, do you think there's
+a change across the time due to mutations
+[SPEAKER_02]: and other factors?
+[SPEAKER_02]: So does it mean the products that we have
+today, like if they are resistant for
+[SPEAKER_02]: diseases or are the same, will also have a
+change for tomorrow either to the worse or
+[SPEAKER_02]: the better?
+[SPEAKER_02]: And then is there a way of stopping or
+minimizing these changes across time?
+[SPEAKER_02]: And then if you're looking for resistance.
+[SPEAKER_06]: So I think the question of whether or not
+can we reduce total mutation rate.
+[SPEAKER_06]: Higher eukaryotes, there is actually
+probably a fairly strong selection to keep
+[SPEAKER_06]: down that mutation rate as low as it
+possibly can.
+[SPEAKER_06]: And it's probably about what at least this
+type of polymerase biology can pull off.
+[SPEAKER_06]: So I don't know that knocking down,
+I mean, selection has tried to do that
+[SPEAKER_06]: really hard to make incredibly high
+fidelity polymerases.
+[SPEAKER_06]: And so I'm not convinced that that's an
+easy target to do is to reduce the total
+[SPEAKER_06]: mutation rate.
+[SPEAKER_06]: We can screen DNA sequencing that was so
+cheap, you can essentially screen through
+[SPEAKER_06]: things and just throw out any novel
+mutation that looks kind of bad.
+[SPEAKER_06]: So if you're working in a large breeding
+company, that is not a crazy idea that
+[SPEAKER_06]: that's how you purge things out.
+[SPEAKER_06]: I think this kind of goes back to the same
+type of question, that evolution is not
+[SPEAKER_06]: always a great guide for picking out these
+abiotic red queen type disease issues.
+[SPEAKER_06]: That doesn't mean machine learning
+couldn't be incredibly powerful for
+[SPEAKER_06]: predicting what ligands are going to come
+together and if you're going to do that.
+[SPEAKER_06]: So I think there's all sorts of black box
+types of things that you could have
+[SPEAKER_06]: machine learning predicting how to deal
+with disease resistance, but it's not
+[SPEAKER_06]: using exactly the same evolution.
+[SPEAKER_06]: You may use evolutionary time to generate
+the diversity, but it becomes a different
+[SPEAKER_06]: question.
+[SPEAKER_06]: Well, that's why Pioneer hired Eli Rogers
+Mellon.
+[SPEAKER_06]: So whether or not we could fix heterosis.
+[SPEAKER_06]: So I mean, I think the first question is
+whether or not we'll be allowed to edit.
+[SPEAKER_06]: So there are those issues and I think
+that's how society will allow that.
+[SPEAKER_06]: But then there are going to be,
+I mean, you'll always be able to make a
+[SPEAKER_06]: hybrid that is better than whatever inbred
+you just made.
+[SPEAKER_06]: So just because of distributions.
+[SPEAKER_06]: And there are a few loci across the
+genome, I have no doubt.
+[SPEAKER_06]: That are truly over dominant rather than
+being the product of a dosage pattern or
+[SPEAKER_06]: dominance type one.
+[SPEAKER_06]: So I think hybrids will always be better.
+[SPEAKER_06]: Whether or not though it looks right now,
+a maize hybrid has two times the yield of
+[SPEAKER_06]: its inbreds or three times its yields of
+its inbred, whether or not it will close
+[SPEAKER_06]: down to only 50% better or 30% better and
+how quickly we can get there.
+[SPEAKER_06]: I think we can get there.
+[SPEAKER_06]: I don't know how quickly we'll get there.
+[SPEAKER_03]: So I think it's the role of hybrids in
+evolution.
+[SPEAKER_03]: So I mean, I personally like your concept
+of the ethereal mutations.
+[SPEAKER_03]: I think it's a very central meaning.
+[SPEAKER_03]: We just don't know the way to break it is
+by our combination.
+[SPEAKER_03]: But you know, there are hybrids in natural
+system.
+[SPEAKER_03]: And so if there are so much better,
+I mean, I can see over billions of years,
+[SPEAKER_03]: genome rearranging.
+[SPEAKER_03]: So you don't actually have genes in the
+pericentromeric regions.
+[SPEAKER_03]: Are they more accessible to the
+combination?
+[SPEAKER_03]: I mean, we see it in the muter.
+[SPEAKER_03]: So that's possible to do.
+[SPEAKER_06]: Yeah, no, no.
+[SPEAKER_06]: And I think this is where, and maybe I
+didn't emphasize this enough, that
+[SPEAKER_06]: pericentromeric increase, we see it.
+[SPEAKER_06]: And it's absolutely there of these
+deleterious mutations.
+[SPEAKER_06]: But there are deleterious mutations
+everywhere.
+[SPEAKER_06]: And they're enriched in the
+pericentromeric regions.
+[SPEAKER_06]: But most of the genes are still out at the
+arms.
+[SPEAKER_06]: And they're still having lots of
+deleterious mutations.
+[SPEAKER_06]: Another thing that Eli figured out was
+there are processes, bias gene conversion
+[SPEAKER_06]: is actually maintaining deleterious
+mutations at high recombination regions of
+[SPEAKER_06]: the genome at fairly moderate frequencies.
+[SPEAKER_06]: So there are other processes that are out
+there.
+[SPEAKER_06]: So deleterious mutations are everywhere.
+[SPEAKER_06]: They just happen to be enriched in the
+pericentromeric region.
+[SPEAKER_06]: So you would still, I mean, we see
+heterosis.
+[SPEAKER_06]: It's enriched.
+[SPEAKER_06]: It's enriched in that chromosome 5.
+[SPEAKER_06]: But we see the evidence of heterosis
+everywhere.
+[SPEAKER_06]: So it's not, yeah, one of them.
+[SPEAKER_03]: So my question is, if you think that
+hybrids would have higher fitness in a
+[SPEAKER_03]: natural situation, then you wouldn't
+expect to see an enrichment of deleterious
+[SPEAKER_03]: mutations.
+[SPEAKER_03]: Maybe it's still less philosophical.
+[SPEAKER_03]: We can talk later.
+[SPEAKER_06]: I mean, I think because of deleterious
+mutation, for example, most polyploidy,
+[SPEAKER_06]: I think that extant is the product of
+escaping from deleterious mutations.
+[SPEAKER_06]: So that's a way to temporarily get away
+from deleterious mutation buildup.
+[SPEAKER_06]: Now, over deep time, this is where you
+look at the total number of polyploidy
+[SPEAKER_06]: that have been successful in evolutionary
+time implants.
+[SPEAKER_06]: In deep evolution, it's 50 different
+events.
+[SPEAKER_06]: But any one time, there's tens of
+thousands of polyploidy that are evolving
+[SPEAKER_06]: and allows you to short-term escape from
+deleterious mutations for a few thousand
+[SPEAKER_06]: years.
+[SPEAKER_03]: But those polyploids, I'm not sure if I
+would agree, because the effect of
+[SPEAKER_03]: polyploidy is going down the line.
+[SPEAKER_03]: It's not immediate.
+[SPEAKER_03]: Immediately, they're really bad.
+[SPEAKER_06]: I think some people would argue against
+that.
+[SPEAKER_06]: OK, we can talk later.
+[SPEAKER_06]: Any other questions?
+[SPEAKER_06]: OK, great.
+[SPEAKER_06]: Thank you all.
+[SPEAKER_05]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_05]: Thank you.
+[SPEAKER_05]: Thank you.
+Thank you.

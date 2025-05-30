@@ -1,0 +1,825 @@
+[SPEAKER_03]: This is a production of Cornell
+University.
+[SPEAKER_03]: Thank you for the very nice introduction.
+[SPEAKER_03]: This is a quick seminar overview.
+[SPEAKER_03]: I'm first going to talk about disease
+resistance breeding in the Cornell Great
+[SPEAKER_03]: Breeding Program.
+[SPEAKER_03]: Then I'm going to talk about three topics
+that made up my dissertation.
+[SPEAKER_03]: The first is using computer vision to
+detect or quantify downy mildew and leaf
+[SPEAKER_03]: chycones.
+[SPEAKER_03]: The next part will be to integrate genetic
+information SNPs, in this case,
+[SPEAKER_03]: with multiple phenotypes in something
+called a Bayesian network.
+[SPEAKER_03]: And finally, I'll talk about accounting
+for spatial effects in field data with
+[SPEAKER_03]: grapevines.
+[SPEAKER_03]: So just an overview of grapes.
+[SPEAKER_03]: They're perennial, clonally propagated.
+[SPEAKER_03]: There are two main groups that we work
+with, vitus munifera, which is the
+[SPEAKER_03]: European grapevine.
+[SPEAKER_03]: It's susceptible to virtually every
+disease, but it has very good wine
+[SPEAKER_03]: quality, as well as certain table grape
+attributes that we want.
+[SPEAKER_03]: And the other group is various vitus
+species that are native to North America.
+[SPEAKER_03]: And so these species are resistant to
+nearly every disease.
+[SPEAKER_03]: However, they have really poor wine
+quality.
+[SPEAKER_03]: However, sometimes we do want their table
+grape characteristics.
+[SPEAKER_03]: And so the goal of the program is to merge
+the best of both worlds to obtain hybrids
+[SPEAKER_03]: that have a high disease resistance,
+as well as high wine quality or table
+[SPEAKER_03]: grape resistance.
+[SPEAKER_03]: So how grape breeding works in the coronal
+process we terminate.
+[SPEAKER_03]: Then we have certain markers for traits,
+such as disease resistance.
+[SPEAKER_03]: Then those seedlings are transplanted into
+the vineyard.
+[SPEAKER_03]: After years of multi-location,
+multi-year trials evaluating for field
+[SPEAKER_03]: disease resistance, as well as wine
+quality, the best of those selections are
+[SPEAKER_03]: released as cultivars.
+[SPEAKER_03]: So the first part I'll be talking about is
+computer vision.
+[SPEAKER_03]: So what is computer vision?
+[SPEAKER_03]: It's using algorithms to extract
+information from images that's usually
+[SPEAKER_03]: extracted using human vision.
+[SPEAKER_03]: And so the pros is that this method is
+high throughput, you get a lot of data
+[SPEAKER_03]: fast, that you could obtain quantitative
+phenotypes, and that there's a lot of
+[SPEAKER_03]: high-level programming libraries that are
+available in order to implement these
+[SPEAKER_03]: algorithms.
+[SPEAKER_03]: For example, the one I used is called
+OpenCV or Open Computer Vision.
+[SPEAKER_03]: Some negatives with this method is that
+it's time-consuming to develop,
+[SPEAKER_03]: and it requires technical knowledge from
+the end users, which the phytopathologists
+[SPEAKER_03]: or breeders in this case.
+[SPEAKER_03]: So a little about down in the middle,
+this is how it looks like.
+[SPEAKER_03]: So on the left-hand side is the back seal.
+[SPEAKER_03]: This is the side of the leaf, and this is
+where the oh my seed infects through a
+[SPEAKER_03]: stomata, and you obtain sporulation.
+[SPEAKER_03]: And essentially, for a vitus minifera,
+you need to spray about every two weeks if
+[SPEAKER_03]: it's a really rainy year.
+[SPEAKER_03]: And so it's commonly thought that this
+kind of intensive pesticide application is
+[SPEAKER_03]: no longer sustainable.
+[SPEAKER_03]: Now I'll talk about the genetic resources
+that I've used to evaluate this method.
+[SPEAKER_03]: The first is, or both of them are
+interspecific F1 hybrids.
+[SPEAKER_03]: The first is vitus rupestris bihorizon.
+[SPEAKER_03]: So vitus rupestris is a Native American
+vitus species.
+[SPEAKER_03]: And horizon is an interspecific cross that
+has vitus minifera in its background,
+[SPEAKER_03]: as well as other vitus species.
+[SPEAKER_03]: And so for both of these, we have genetic
+maps available.
+[SPEAKER_03]: So there's about 6,000 SNPs, and the
+population size is 160.
+[SPEAKER_03]: So I'll call this family RH.
+[SPEAKER_03]: And the other family is horizon by vitus
+scenario.
+[SPEAKER_03]: Again, vitus scenario is a wild vitus
+species.
+[SPEAKER_03]: And what's special about this family is
+that it has the back seal leaf chaikongs.
+[SPEAKER_03]: So there's two images of leaf discs per
+family.
+[SPEAKER_03]: The left-hand one is prior to inoculation,
+and on the right-hand side is the leaf
+[SPEAKER_03]: disc that what it looks like, the same
+leaf disc after inoculation.
+[SPEAKER_03]: So you could see both of them,
+the sporulation on both, but it's much
+[SPEAKER_03]: harder to see on the leaf disc when it has
+leaf chaikongs.
+[SPEAKER_03]: And that's because the leaf chaikongs are
+white and the sporulation is white,
+[SPEAKER_03]: so it's difficult to differentiate them.
+[SPEAKER_03]: And so the idea that I'll use is using the
+computer vision rating prior to
+[SPEAKER_03]: inoculation as a covariate to control for
+the leaf chaikongs.
+[SPEAKER_03]: And so the particular assay that we use is
+a leaf disc assay.
+[SPEAKER_03]: So basically, we took leaf discs from the
+field, made leaf discs, and plated them on
+[SPEAKER_03]: an auger dish.
+[SPEAKER_03]: And the leaf discs correspond to
+genotypes.
+[SPEAKER_03]: The experimental design, here it's for the
+RH family.
+[SPEAKER_03]: We have controls, and we did this over two
+years, 2015 and 2016.
+[SPEAKER_03]: In 2015, we had three experiments.
+[SPEAKER_03]: In 2016, we had two.
+[SPEAKER_03]: For each experiment, there was a time
+series collection of data from three DPI,
+[SPEAKER_03]: or days post inoculation to six DPI,
+or sometimes it was four DPI to seven DPI
+[SPEAKER_03]: if we didn't see sporulation after the
+DPI.
+[SPEAKER_03]: So we collected four leaves from each
+genotype and from each leaf we extracted
+[SPEAKER_03]: two leaf discs.
+[SPEAKER_03]: So for each experiment, we had about 1,400
+leaf discs.
+[SPEAKER_03]: And so the only difference between the RH
+family and the HC family experimental
+[SPEAKER_03]: design is that in 2015, we only had two
+experiments for the HC family,
+[SPEAKER_03]: and that was just due to lack of time.
+[SPEAKER_03]: So we compared the computer vision rating
+with a manual rating.
+[SPEAKER_03]: So this is the scale.
+[SPEAKER_03]: It's a one to five scale where one is no
+sporulation, and five is dense
+[SPEAKER_03]: sporulation.
+[SPEAKER_03]: So how we did the computer vision with the
+algorithm did is that you have this input
+[SPEAKER_03]: image, and what we want to do is remove
+the background, the auger from it,
+[SPEAKER_03]: as well as detect the leaf discs.
+[SPEAKER_03]: And so this requires some user input of
+parameters.
+[SPEAKER_03]: And so the next thing that we want to do
+is if you notice on the second row of the
+[SPEAKER_03]: leaf discs, there's greater illumination
+than in the first row.
+[SPEAKER_03]: And we had to correct for that.
+[SPEAKER_03]: And somebody called a Wallace filter,
+which I won't go into, but essentially
+[SPEAKER_03]: normalizes the illumination across an
+image.
+[SPEAKER_03]: And then we could detect the or phenotype,
+which in this case is the amount of white
+[SPEAKER_03]: pixels in a leaf disc divided by the area
+of a leaf disc.
+[SPEAKER_03]: So now I'll go into the results.
+[SPEAKER_03]: First, I'll just explain one experiment.
+[SPEAKER_03]: So here is the computer vision ratings on
+the left hand side.
+[SPEAKER_03]: So this cyan color is three days post
+inoculation.
+[SPEAKER_03]: And so you could see it's very close to
+zero, as you would expect.
+[SPEAKER_03]: And then four days we get kind of the
+distribution moves up.
+[SPEAKER_03]: And as you get further along in the days
+post inoculation, the distribution keeps
+[SPEAKER_03]: moving forward.
+[SPEAKER_03]: And it's relatively normally distributed.
+[SPEAKER_03]: However, compare this to the manual
+sporulation ratings.
+[SPEAKER_03]: You could see at 3 DPI, it's skewed all
+the way to the one rating.
+[SPEAKER_03]: And as you get further along, it skews
+towards the five.
+[SPEAKER_03]: And so the ratings here are the average of
+eight.
+[SPEAKER_03]: Leaf discs for a particular genotype,
+for an experiment.
+[SPEAKER_03]: So here are all the other distributions.
+[SPEAKER_03]: And you could see that the trend is
+similar across experiments, where it's
+[SPEAKER_03]: relatively normally distributed in the
+computer vision ratings, but very skewed.
+[SPEAKER_03]: In the manual sporulation ratings.
+[SPEAKER_03]: Looking at the correlations between the
+methods, we see that the correlations are
+[SPEAKER_03]: very high.
+[SPEAKER_03]: And so this shows that our computer vision
+method is accurate in obtaining a good
+[SPEAKER_03]: phenotype.
+[SPEAKER_03]: And you can see when we average across
+genotypes, the correlation increases,
+[SPEAKER_03]: which is what we would expect.
+[SPEAKER_03]: So now going on to the computer,
+for the HC family.
+[SPEAKER_03]: So this family had leaf trichomes.
+[SPEAKER_03]: And so the computer vision ratings were
+the ratings after accounting for the leaf
+[SPEAKER_03]: trichome computer vision ratings,
+which were simply the computer vision
+[SPEAKER_03]: ratings at two days post inoculation,
+prior to any sporulation on the leaf
+[SPEAKER_03]: discs.
+[SPEAKER_03]: And so you could see that it's not as
+clear in the computer vision
+[SPEAKER_03]: distributions, that there is a general
+trend of increasing percent sporulation.
+[SPEAKER_03]: However, it's not as clearly defined.
+[SPEAKER_03]: And for example, in the first experiment,
+at seven days post inoculation,
+[SPEAKER_03]: it kind of moves down instead of being
+close to five and six, which are the blue
+[SPEAKER_03]: and purple in the first graph.
+[SPEAKER_03]: However, for the manual sporulation
+ratings are again skewed, or in the case
+[SPEAKER_03]: of the first experiment, it's just
+uniformly distributed.
+[SPEAKER_03]: Looking at the correlations, they were
+much lower.
+[SPEAKER_03]: Averaging across genotypes helped increase
+the correlations a little bit,
+[SPEAKER_03]: but not by a lot.
+[SPEAKER_03]: And for one experiment, all the days post
+inoculation correlations weren't
+[SPEAKER_03]: significantly different than zero.
+[SPEAKER_03]: And the reason for that is, we didn't get
+a good rating of, essentially the computer
+[SPEAKER_03]: vision rating didn't do a good job in
+obtaining the leaf trichome, a true
+[SPEAKER_03]: rating.
+[SPEAKER_03]: And so the use of the covariate didn't
+really work in that case.
+[SPEAKER_03]: And so one way to improve it would be to
+standardize illumination to maybe improve
+[SPEAKER_03]: obtaining that leaf trichome rating to use
+as a covariate.
+[SPEAKER_03]: There's a summary looking at the rating of
+processing times over 1,400 leaflets.
+[SPEAKER_03]: The manual visual rating took three hours,
+while the computer vision method took 20
+[SPEAKER_03]: minutes.
+[SPEAKER_03]: So there's a great improvement in how much
+you could phenotype.
+[SPEAKER_03]: And if you want more information about
+this, the phytopathology paper is out for
+[SPEAKER_03]: this research, and all the code is on my
+GitHub in the link shown below.
+[SPEAKER_03]: So some future directions in this
+research.
+[SPEAKER_03]: There's a comment by Martin the last time
+I gave this talk about how if you see that
+[SPEAKER_03]: because of this parameter search,
+you need to set parameters where you
+[SPEAKER_03]: detect all the leaflets at the same time,
+which is relatively easy to do for the RH
+[SPEAKER_03]: family, but there are problems with it for
+the HC family.
+[SPEAKER_03]: You still get the detected circles that
+are much smaller.
+[SPEAKER_03]: In some cases.
+[SPEAKER_03]: So this method that's recently been
+published, ELSDC, played around with it
+[SPEAKER_03]: and seems like a good way to remove this
+parameter search.
+[SPEAKER_03]: Another direction to go into is to
+generalize phenotype detection.
+[SPEAKER_03]: For example, in my case, I'm detecting
+white pixels over what if the disease was
+[SPEAKER_03]: red.
+[SPEAKER_03]: If we could model the pixels as coming
+from particular clusters, then it could
+[SPEAKER_03]: generalize this method.
+[SPEAKER_03]: So reviewing the phenotypes we obtained
+for these two families, we have the manual
+[SPEAKER_03]: and computer vision sporulation ratings.
+[SPEAKER_03]: Going forward, I'll just talk about the
+manual.
+[SPEAKER_03]: Sporulation ratings because of the kind of
+problems we've had in the HC family with
+[SPEAKER_03]: these ratings.
+[SPEAKER_03]: And we also, as I mentioned, collected the
+leaf trichome ratings at two days post
+[SPEAKER_03]: inoculation.
+[SPEAKER_03]: And we also collected hypersensitive
+response or RH ratings, which were
+[SPEAKER_03]: collected two days post inoculation before
+any sporulation.
+[SPEAKER_03]: And essentially, the rating scale is the
+detection of black dots, which represent
+[SPEAKER_03]: necrosis.
+[SPEAKER_03]: So a rating of five has dense necrosis.
+[SPEAKER_03]: So one of the questions is, what phenotype
+should we use for QTL detection?
+[SPEAKER_03]: We have eight ratings per genotype per
+experiment.
+[SPEAKER_03]: And how we integrate this?
+[SPEAKER_03]: Is with a mixed model.
+[SPEAKER_03]: So our response in this case is the
+average of eight ratings, our fixed
+[SPEAKER_03]: effects, the intercept, the experiments
+within years, and the leaf trichome
+[SPEAKER_03]: ratings.
+[SPEAKER_03]: And the leaf trichome ratings only for the
+computer vision ratings for the HC family.
+[SPEAKER_03]: Then we have a random effect of the
+reading value or the genotypes,
+[SPEAKER_03]: which here we assume that all the
+genotypes are independent.
+[SPEAKER_03]: And we include a genotype by year effects,
+again, assuming that the years are
+independent.
+[SPEAKER_03]: And we fit this using MREBEL, which is an
+R package.
+[SPEAKER_03]: So the simplest QTL detection is just
+using a single phenotype.
+[SPEAKER_03]: So I'll use the term phenotype,
+but I'm really going to use the reading
+[SPEAKER_03]: value as the response variable in this
+case.
+[SPEAKER_03]: So the basic idea is you scan the genetic
+map for significant SNPs, and you include
+[SPEAKER_03]: them in your model.
+[SPEAKER_03]: And you keep doing this until no more SNPs
+are significant.
+[SPEAKER_03]: So for example, this equation where you
+end up with a particular phenotype equals
+[SPEAKER_03]: an intercept plus SNP1 multiplied by the
+effect of SNP1 plus SNP33 multiplied by
+[SPEAKER_03]: the effect of SNP33 plus the error term.
+[SPEAKER_03]: Where the SNPs are fixed effects.
+[SPEAKER_03]: And we did this with our QTL, again,
+an R package.
+[SPEAKER_03]: And one issue with this stuff is that the
+QTL are often not robust when you have a
+[SPEAKER_03]: small population size.
+[SPEAKER_03]: So in this case, we only have 160
+individuals.
+[SPEAKER_03]: So say you remove 10% or 10%, you might
+end up with different QTL.
+[SPEAKER_03]: So we want ideally a method that provides
+robust QTL because we're going to invest a
+[SPEAKER_03]: lot of effort in using them for marker
+assisted selection.
+[SPEAKER_03]: So in order to essentially understand how
+phenotypes affect phenotypes or how SNPs
+[SPEAKER_03]: affect multiple phenotypes, one thing we
+could do is adjust that prior method and
+[SPEAKER_03]: simply scan for the most significant SNP
+or phenotype.
+[SPEAKER_03]: And so you could end up with a model
+that's some phenotype one is the response
+[SPEAKER_03]: and is explained by phenotype two.
+[SPEAKER_03]: For example, so in order to do this,
+we need to be sure that we include effects
+[SPEAKER_03]: that only kind of make sense, make
+biological or mechanistic sense.
+[SPEAKER_03]: So for example, if we have leaf tricones
+equal or being affected by sporulation in
+[SPEAKER_03]: this case, that doesn't make sense because
+leaf tricones were present on the leaf
+[SPEAKER_03]: prior to inoculation.
+[SPEAKER_03]: And so that model will not make sense.
+[SPEAKER_03]: And so we wouldn't consider it.
+[SPEAKER_03]: And so an effective way to do that
+multiple phenotype analysis is by using
+[SPEAKER_03]: something known as Bayesian networks.
+[SPEAKER_03]: And so what you're doing here is you're
+adding effects in something called a
+[SPEAKER_03]: greedy manner until an additional longer
+increases the network's Bayesian
+[SPEAKER_03]: information criterion or BIC.
+[SPEAKER_03]: So I'll explain a few terms in that
+sentence.
+[SPEAKER_03]: The first is what is a network?
+[SPEAKER_03]: It's multiple separate linear models,
+one per phenotype.
+[SPEAKER_03]: So these will just only be fixed effect
+linear models.
+[SPEAKER_03]: The BIC is the likelihood of a particular
+model subtracted by a penalization term,
+[SPEAKER_03]: which is a function of the possible
+population size and the number of
+[SPEAKER_03]: parameters in that model.
+[SPEAKER_03]: The network's BIC is simply a sum of the
+individual models, individual model BICs.
+[SPEAKER_03]: And greedy addition means the addition of
+an effect to a particular model that
+[SPEAKER_03]: increases the network's BIC the most.
+[SPEAKER_03]: And so the reason they're called Bayesian
+networks is simply because we're using the
+[SPEAKER_03]: Bayesian information criterion.
+[SPEAKER_03]: So now I'll give an example of how this is
+done.
+[SPEAKER_03]: So assume we have two phenotypes,
+sporulation and HR or hypersensitive
+[SPEAKER_03]: response and two SNPs.
+[SPEAKER_03]: And so these orange arrows represent all
+possible effects.
+[SPEAKER_03]: So immediately we'll not attempt to
+account for the effect of sporulation on
+[SPEAKER_03]: HR because HR appears prior to
+sporulation.
+[SPEAKER_03]: And we do not allow phenotypes to affect
+genotypes.
+[SPEAKER_03]: So then we essentially go one by one with
+these effects and ask which one increases
+[SPEAKER_03]: the network's BIC the greatest.
+[SPEAKER_03]: And this is a hypothetical example.
+[SPEAKER_03]: So the SNP2 affects it the most.
+[SPEAKER_03]: And we do this again, estimating every
+effect and asking which one increased the
+[SPEAKER_03]: BIC the most.
+[SPEAKER_03]: So it's this one in this case.
+[SPEAKER_03]: Then it's this one.
+[SPEAKER_03]: And then we come up to a point where no
+addition of any of these arrows increases
+[SPEAKER_03]: the BIC of the model.
+[SPEAKER_03]: And so you're left with the two models
+which this network represents,
+[SPEAKER_03]: which is that sporulation is affected by
+HR, which is this arrow, and SNP2.
+[SPEAKER_03]: And HR is affected by SNP2 only.
+[SPEAKER_03]: And so SNP2 has a clear show effect
+affecting both sporulation and HR.
+[SPEAKER_03]: So this method is too computationally
+intensive to do with thousands of SNPs.
+[SPEAKER_03]: So we select a non-redundant set of SNPs
+for each phenotype.
+[SPEAKER_03]: And the name of that set is called the
+Markov blanket.
+[SPEAKER_03]: So we'll have one Markov blanket for each
+phenotype.
+[SPEAKER_03]: So then we construct 1,000 networks using
+random sets of 90% of the genotypes used
+[SPEAKER_03]: for both RH and HC families.
+[SPEAKER_03]: Then we merge all the networks in one
+where we only keep the effects that
+[SPEAKER_03]: appeared in at least 50% of the networks.
+[SPEAKER_03]: And we do this with the BM learn package
+in R.
+[SPEAKER_03]: So the results for the RH family.
+[SPEAKER_03]: So you could simply represent any linear
+model in this network representation.
+[SPEAKER_03]: So I'll just do that for the single
+phenotype QTL analysis results.
+[SPEAKER_03]: And so the difference only here is that
+the phenotypes will not affect each other
+[SPEAKER_03]: in the single phenotype analysis.
+[SPEAKER_03]: So what we see in the BAC network is that
+there is no effect of HR on sporulation,
+[SPEAKER_03]: which is the only possible phenotype
+interaction that I allowed.
+[SPEAKER_03]: And that the SNPs generally found are in
+the same chromosome, so QTL are similar.
+[SPEAKER_03]: However, the main difference is that in
+the single phenotype QTL analysis,
+[SPEAKER_03]: the sporulation trade had many more QTL
+found for it than in the BAC network.
+[SPEAKER_03]: So it's a little bit more interesting in
+the HC family where we found that these
+[SPEAKER_03]: typhoons have a negative effect,
+this red arrow, on sporulation and HR.
+[SPEAKER_03]: And HR had a positive effect on
+sporulation.
+[SPEAKER_03]: And so we don't know why this is the case,
+but for the leaf chycone, negative effects
+[SPEAKER_03]: on the disease phenotypes, it's
+hypothesized that it forms a physical
+[SPEAKER_03]: barrier between the spores of the oomycese
+and the stomata on the abaxial side of the
+[SPEAKER_03]: leaf.
+[SPEAKER_03]: And that would prevent spores from
+germinating.
+[SPEAKER_03]: Looking at the single phenotype QTL
+analysis, it's somewhat uninformative
+[SPEAKER_03]: because all the phenotypes were explained
+by the same two QTL in chromosomes 5 and
+[SPEAKER_03]: 8.
+[SPEAKER_03]: So the question is, you know, what's
+really going on there?
+[SPEAKER_03]: And the BAC network kind of explains that.
+[SPEAKER_03]: But otherwise, the QTL are similar,
+and you could see that 7 effect on
+[SPEAKER_03]: sporulation is found here, and the QTL on
+chromosome 6 effect on HR is also found.
+[SPEAKER_03]: To summarize this, the disease resistance
+in the two families is controlled by
+[SPEAKER_03]: multiple QTL, and they only account for a
+small percent of the phenotypic variants.
+[SPEAKER_03]: That breeding for leaf trichomes,
+as well as other QTL, could possibly lead
+[SPEAKER_03]: to durable resistance.
+[SPEAKER_03]: Again, because you have that physiological
+type of, physiological barrier mechanism
+[SPEAKER_03]: and, say, a mechanism that's biochemical,
+where there's, say, necrosis occurring to
+[SPEAKER_03]: stop infection.
+[SPEAKER_03]: BAC networks are one way to integrate
+multiple phenotypes with genetic data,
+[SPEAKER_03]: as we've seen.
+[SPEAKER_03]: And one question is, are BAC networks
+better models?
+[SPEAKER_03]: So in order to do this, we would need to
+perform cross-validation.
+[SPEAKER_03]: So I haven't done that formally,
+but preliminary data experiments do
+[SPEAKER_03]: suggest that BAC networks are better than
+just using single phenotypes.
+[SPEAKER_03]: So now I'll move on to accounting for
+spatial effects in vineyards.
+[SPEAKER_03]: So as I mentioned, we commonly phenotype
+in the field, as opposed to in the lab,
+[SPEAKER_03]: as the previous methods did.
+[SPEAKER_03]: And it's commonly done in unreplicated
+vineyards, although not in all cases.
+[SPEAKER_03]: So some assumptions one can make is that
+the phenotypes that we measure are the
+[SPEAKER_03]: best representation of the breeding
+values.
+[SPEAKER_03]: Another assumption is that the phenotypes
+are corrupted by a complex function of
+[SPEAKER_03]: soil, microclimate, and genetics.
+[SPEAKER_03]: This is likely the case.
+[SPEAKER_03]: However, the problem with this is that we
+really don't have the data to fit this
+[SPEAKER_03]: model, because we do not have
+meter-by-meter soil data in our vineyards.
+[SPEAKER_03]: So one could use the location of the vines
+as a proxy for that effect.
+[SPEAKER_03]: And so that's essentially what we're going
+to do here.
+[SPEAKER_03]: We're, again, going to use a mixed model.
+[SPEAKER_03]: Here, the response would be, corrupted
+phenotypes, or what I'll call corrupted
+[SPEAKER_03]: phenotypes, which is simply the phenotypes
+that are measured in the field.
+[SPEAKER_03]: And that's going to be explained by some
+spatial effects.
+[SPEAKER_03]: And the noise will be our uncorrupted
+phenotypes.
+[SPEAKER_03]: And so the spatial effects will be
+controlled by this L matrix.
+[SPEAKER_03]: It's somewhat similar to a genetic
+relationship matrix.
+[SPEAKER_03]: Instead of this matrix being a function of
+snips, it's going to be a function of the
+[SPEAKER_03]: location of the vines in the field.
+[SPEAKER_03]: And so there's a number of ways you can
+encode this.
+[SPEAKER_03]: But I'll just talk about two.
+[SPEAKER_03]: One is called a moving average covariance
+model.
+[SPEAKER_03]: And the other is an autoregressive.
+[SPEAKER_03]: And they're commonly used in time series
+analysis.
+[SPEAKER_03]: So to explain these models, I'll have a
+really simplified example where I have
+[SPEAKER_03]: four vines in a row.
+[SPEAKER_03]: And I'm going to see what covariances
+these various models give.
+[SPEAKER_03]: So the simplest one is called a moving
+average one model, where you're only
+[SPEAKER_03]: modeling the covariance between adjacent
+vines.
+[SPEAKER_03]: And you could see the encoding of the L
+matrix here, where this A, which is a
+[SPEAKER_03]: value between 0 and 1, is the covariance
+between the first and second vines and
+[SPEAKER_03]: goes down the diagonal.
+[SPEAKER_03]: So this can be represented here.
+[SPEAKER_03]: So a moving average two model is a little
+more complex, where neighboring vines are
+[SPEAKER_03]: explained by A plus A times B.
+[SPEAKER_03]: Again, B is a value between 0 and 1 that
+we're going to optimize for.
+[SPEAKER_03]: And the covariance between the first and
+third vines is a value of B.
+[SPEAKER_03]: And here's a corresponding covariance
+matrix.
+[SPEAKER_03]: An autoregressive one is simply saying
+that there's an exponential decline or an
+[SPEAKER_03]: exponential decay of covariance as you go
+further along.
+[SPEAKER_03]: So neighboring vines have covariance of A.
+[SPEAKER_03]: Then between the first and third is A
+squared.
+[SPEAKER_03]: And between the first and fourth is A
+cubed.
+[SPEAKER_03]: And so because A is between 0 and 1,
+as you go further along, you're going to
+[SPEAKER_03]: have covariances closer to 0.
+[SPEAKER_03]: So then you have an autoregressive two,
+which is a little more complicated.
+[SPEAKER_03]: Essentially, the easiest way to think of
+it is combining two autoregressive one
+[SPEAKER_03]: covariances.
+[SPEAKER_03]: And so again, you have this B.
+[SPEAKER_03]: A parameter now.
+[SPEAKER_03]: However, if you set B equal to 0,
+it's going to revert back to an AR1
+[SPEAKER_03]: covariance.
+[SPEAKER_03]: And so here, this L1 is simply this value,
+and L0 is 1.
+[SPEAKER_03]: And so the covariances are related to the
+previous covariances.
+[SPEAKER_03]: So to evaluate how well these models
+perform, I have a data set, which is,
+[SPEAKER_03]: again, an F1 interspecific cross similar
+to the previous crosses I've explained.
+[SPEAKER_03]: There are six rows here and 110 vines
+within a row.
+[SPEAKER_03]: I'm only going to model the covariances
+within a row because of the small number
+[SPEAKER_03]: of rows that we have.
+[SPEAKER_03]: There's 475 vines that have been put
+together.
+[SPEAKER_03]: This is the phenotype for powdery mildew
+on a 1 to 5 scale in 2002.
+[SPEAKER_03]: And 350 of them have genetic data.
+[SPEAKER_03]: So how I'm going to do this evaluation is
+I'm going to fit that mixed model that I
+[SPEAKER_03]: explained previously.
+[SPEAKER_03]: And with the uncorrupted phenotypes,
+I'm going to do a QTL analysis.
+[SPEAKER_03]: And I'm also going to leave 10% out
+cross-validation.
+[SPEAKER_03]: So what that means, I'm going to use 90%
+of the phenotypes that have genetic data
+[SPEAKER_03]: in this model.
+[SPEAKER_03]: And so this model is essentially G-bluff,
+which is, again, another mixed model,
+[SPEAKER_03]: where similarly how we had that spatial
+covariance matrix, we now just have the
+[SPEAKER_03]: genetic covariance matrix as explained by
+Van Raden.
+[SPEAKER_03]: And then we predict the test genotypes
+with the parameters estimated from that
+[SPEAKER_03]: model.
+[SPEAKER_03]: And we're going to compute an accuracy
+score, which is the Pearson correlation
+[SPEAKER_03]: between the predicted and true uncorrupted
+or corrupted phenotypes.
+[SPEAKER_03]: So looking at the results, the spatially
+unadjusted and adjusted phenotypes
+[SPEAKER_03]: detected the same 3 QTL in the same
+locations.
+[SPEAKER_03]: Looking at the genome-wide prediction
+results, the accuracies, there was an
+[SPEAKER_03]: increase, whether using an MA1 or any
+moving average or autoregressive
+[SPEAKER_03]: covariance function.
+[SPEAKER_03]: However, the standard deviations were
+quite high.
+[SPEAKER_03]: And so this increase was not statistically
+significant.
+[SPEAKER_03]: Looking at how well the covariance matrix
+fit the data, an AR1 and an AR2 here fit
+[SPEAKER_03]: the best.
+[SPEAKER_03]: But they actually fit the same,
+because the AR2 reverted to an AR1 because
+[SPEAKER_03]: the B parameter was set to 0 during
+optimization of, in this case,
+[SPEAKER_03]: the log-marginal likelihood.
+[SPEAKER_03]: This is what REML optimizes, or what REML
+is.
+[SPEAKER_03]: So I have two more data sets.
+[SPEAKER_03]: In this case, I do not have genetic data.
+[SPEAKER_03]: So I'm just looking at how well the
+covariance matrices fit the data.
+[SPEAKER_03]: So again, they're both F1 interspecific
+crosses.
+[SPEAKER_03]: The first one has four rows, 76 binds per
+row.
+[SPEAKER_03]: Again, only modeling covariances within
+rows.
+[SPEAKER_03]: About 300 binds were genotype,
+again, for powdery mildew in 2017.
+[SPEAKER_03]: The second vineyard had three rows,
+61 binds within rows.
+[SPEAKER_03]: About 200 binds, second year binds,
+were phenotype for height.
+[SPEAKER_03]: And so these binds were never trimmed.
+[SPEAKER_03]: And so you could phenotype for height in
+this case.
+[SPEAKER_03]: So the results here is that AR2 covariance
+functions the best because they had the
+[SPEAKER_03]: greatest log-marginal likelihood.
+[SPEAKER_03]: So to summarize, the 2002 powdery mildew
+data set did not show a significant
+[SPEAKER_03]: benefit just for phenotypes.
+[SPEAKER_03]: However, it would be good to have some
+more vineyard data where we could look
+[SPEAKER_03]: into this, especially one where the
+standard deviation isn't so high.
+[SPEAKER_03]: And that their processes usually fit
+vineyard data better than moving average
+[SPEAKER_03]: processes.
+[SPEAKER_03]: So just going back to our overview of
+grapevine breeding, where this research
+[SPEAKER_03]: fits in.
+[SPEAKER_03]: The high throughput phenotyping using
+computer vision helps us obtain faster
+[SPEAKER_03]: phenotypes for our F1 families.
+[SPEAKER_03]: And this is where we get our markers that
+we use for marker-assisted selection.
+[SPEAKER_03]: And accounting for spatial effects could
+possibly lead to more representative
+[SPEAKER_03]: accurate QTL or ratings in the field.
+[SPEAKER_03]: And the Bayesian networks, for example,
+could suggest what phenotypes we should
+[SPEAKER_03]: generally breed for if we want disease
+resistance.
+[SPEAKER_03]: I'd like to acknowledge Bruce Reich for
+giving me the independence to conduct the
+[SPEAKER_03]: research that interested me.
+[SPEAKER_03]: Lance Hale-Davidson and Michael Gore for
+helping me flesh out my research and for
+[SPEAKER_03]: being on my committee, and everyone else
+here for helping me out with my research.
+[SPEAKER_03]: And I'd like to thank my funding sources
+by this time, which was funded by the USDA
+[SPEAKER_03]: NIFA grant and the Charles R.
+[SPEAKER_03]: Bullis Plant Hybridization Endowment and
+the Michael Nolan Endowment Fund.
+[SPEAKER_03]: Thank you, and I'll take any questions.
+[SPEAKER_02]: Let me ask one question, Constantine.
+[SPEAKER_02]: Do you think the work that you did on the
+Bayesian network analysis, do you think
+[SPEAKER_02]: that could have been applied to many past
+studies and QTL analyses in vitus,
+[SPEAKER_02]: or do you see that applicable to most QTL
+analyses?
+[SPEAKER_03]: No, because in most cases, we only had,
+or I feel most studies only had one
+[SPEAKER_03]: phenotype.
+[SPEAKER_03]: And I don't think there's a benefit when
+there's just a single phenotype.
+[SPEAKER_03]: I think the model will be very similar to
+what you get with that single phenotype
+[SPEAKER_03]: QTL analysis.
+[SPEAKER_01]: Did you try using multiple rows instead of
+just within row?
+[SPEAKER_01]: Spatial adjustment.
+[SPEAKER_03]: Accounting for the six.
+[SPEAKER_01]: So you said you had multiple rows.
+[SPEAKER_03]: Yeah.
+[SPEAKER_01]: Did you try combining the information in
+those rows in your spatial analysis?
+[SPEAKER_03]: Yeah, and it actually decreased.
+[SPEAKER_03]: Again, it wasn't significant just because
+of the high standard deviation.
+[SPEAKER_03]: But I think the issue there is that we
+would have to, so I guess I didn't mention
+[SPEAKER_03]: this, is that the space between binds
+within a row is different than the space
+[SPEAKER_03]: between rows.
+[SPEAKER_03]: And so we're going to need different A and
+B parameters when we fit between row
+[SPEAKER_03]: covariances.
+[SPEAKER_03]: And since we only have six binds,
+or sorry, because we only have six rows,
+[SPEAKER_03]: those parameters are likely not to be
+really well estimated, which I feel is
+[SPEAKER_03]: what happened.
+[SPEAKER_04]: Yeah.
+[SPEAKER_04]: How common are those trichomes on various
+species that are used or looked at for
+[SPEAKER_04]: both mycid and mucous systems?
+[SPEAKER_03]: Yeah, so technically, Bitis vinifera has
+leaf trichomes, but they're practically
+[SPEAKER_03]: not seen as shown in the leafless image.
+[SPEAKER_03]: But those really dense leaf trichomes,
+they are never present in Bitis vinifera.
+[SPEAKER_03]: They're present in certain Bitis species,
+like scenario and labrusca, just to name
+[SPEAKER_03]: two.
+[SPEAKER_03]: I think there it's the most common.
+[SPEAKER_03]: So it's not all wild species have these
+dense leaf trichomes, but just some do.
+[SPEAKER_02]: The interesting thing about the trichomes
+is that there have been some other studies
+[SPEAKER_02]: just on the inheritance of trichomes too.
+[SPEAKER_02]: I think some of them, some of your
+analyses pointed to the inheritance
+[SPEAKER_02]: patterns of trichomes and they're also
+related to the ecological niche in which
+[SPEAKER_02]: certain types of predatory mites exist on
+great leaves.
+[SPEAKER_02]: We actually encourage certain predatory
+mites to live on great leaves just by
+[SPEAKER_02]: breeding for higher trichome densities,
+the dematia densities.
+[SPEAKER_03]: OK, well.
+[SPEAKER_03]: Do you have a question?
+[SPEAKER_03]: OK.
+[SPEAKER_03]: Well, if there's no more questions,
+thank you for coming to my seminar.
+[SPEAKER_01]: This has been a production of Cornell
+University on the web at cornell.edu.
+[SPEAKER_01]: Thank you.
+[SPEAKER_01]: Thank you.
+Thank you.
